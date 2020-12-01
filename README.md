@@ -10,4 +10,5 @@ Updates to the csv data files and unit description folder should be obtained fro
 
 ## Thanks
 
+Larz, for continuing to maintain the executable datamining scripts.
 The many people who have thrown ideas and feedback my way, and who have been willing to jump in and play with it!

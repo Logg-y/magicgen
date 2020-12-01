@@ -9,6 +9,7 @@ import copy
 import sys
 import nationals
 import traceback
+import argparse
 from spellstructures import utils
 
 from fileparser import *
