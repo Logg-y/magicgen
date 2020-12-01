@@ -1,0 +1,75 @@
+#neweffect "Raise Greater Foulspawn"
+#effect 1
+#damage -10
+#spec 0
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#scalefatiguemult 20
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Summon Greater Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are always the strongest results of crossbreeding."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#skipchance 50
+#end
+
+#neweffect "Raise Greater Foulspawn Ritual"
+#effect 10001
+#damage -10
+#spec 0
+#power 2
+#nreff 1001
+#pathlevel 1
+#fatiguecost 500
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Summon Greater Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are always the strongest results of crossbreeding."
+
+#spelltype 20
+
+#scalerate 2
+#scalefatiguemult 80
+#end
+
+#neweffect "Remote summon Greater Foulspawn"
+#effect 10038
+#provrange 4
+#damage -10
+#spec 0
+#power 4
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 300
+#scalefatiguemult 60
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Send Greater Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are always the strongest results of crossbreeding."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

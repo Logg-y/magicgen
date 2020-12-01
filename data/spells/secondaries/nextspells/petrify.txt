@@ -1,0 +1,100 @@
+#neweffect "Minor Petrification"
+#effect 99
+#damage 999
+#spec 25165952
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#pathlevel 1
+#explspr 10121
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Petrification"
+#name 2 "Minor Petrification"
+#name 4 "Minor Petrification"
+#name 8 "Minor Petrification"
+#name 16 "Minor Petrification"
+#name 32 "Minor Petrification"
+#name 64 "Minor Petrification"
+#name 128 "Minor Petrification"
+#name 256 "Minor Petrification"
+
+#end
+
+
+#neweffect "Greater Petrification"
+#effect 99
+#damage 999
+#spec 8392832
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#pathlevel 1
+#explspr 10121
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "$Additional$ Petrification"
+#name 2 "$Additional$ Petrification"
+#name 4 "$Additional$ Petrification"
+#name 8 "$Additional$ Petrification"
+#name 16 "$Additional$ Petrification"
+#name 32 "$Additional$ Petrification"
+#name 64 "$Additional$ Petrification"
+#name 128 "$Additional$ Petrification"
+#name 256 "$Additional$ Petrification"
+
+#end
+
+
+#neweffect "Smite Petrification"
+#effect 99
+#damage 999
+#spec 8392832
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#pathlevel 1
+#explspr 10121
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "$Additional$ Petrification"
+#name 2 "$Additional$ Petrification"
+#name 4 "$Additional$ Petrification"
+#name 8 "$Additional$ Petrification"
+#name 16 "$Additional$ Petrification"
+#name 32 "$Additional$ Petrification"
+#name 64 "$Additional$ Petrification"
+#name 128 "$Additional$ Petrification"
+#name 256 "$Additional$ Petrification"
+
+#end

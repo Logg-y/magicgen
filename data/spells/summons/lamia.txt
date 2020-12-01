@@ -1,0 +1,104 @@
+#neweffect "Summon lamia"
+#effect 1
+#damage 394
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#scalefatiguemult 30
+#sound 44
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Lamias"
+#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an impressive rate."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "lamia ritual"
+#effect 10001
+#damage 394
+#spec 0
+#power 6
+#nreff 1003
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Summon NAMEPREFIX Lamias"
+#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an impressive rate."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#scalerate 1
+#end
+
+#neweffect "Lamia Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 394
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Lamia Attack"
+#descr 64 "The caster summons a lamia and directs it to seek out an ambush an enemy commander. Lamias are strange serpent women that regenerate health at an impressive rate."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote lamias"
+#effect 10038
+#provrange 4
+#damage 394
+#spec 0
+#power 6
+#maxpower 9
+#nreff 1005
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+
+#name 64 "Send NAMEPREFIX Lamias"
+#descr 64 "The caster summons lamias and directs them to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1
+#end

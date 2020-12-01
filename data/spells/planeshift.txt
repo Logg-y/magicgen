@@ -1,0 +1,95 @@
+#neweffect "Planeshift Kokytos"
+#effect 108
+#damage -13
+#spec 16512
+#schools 2
+
+#spelltype 66
+
+#scalerate 0
+-- #scalecost 1.6
+
+#aoe 0
+#power 9
+#maxpower 9
+#pathlevel 4
+#sound 18
+#explspr 10253
+#fatiguecost 200
+#precision 100
+#range 35
+
+#paths 128
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 128 "Claws of Kokytos"
+#descr 128 "A gate is opened and the target is instantly thrown into Kokytos, the icy realm of Devils. This effect cannot be resisted by any means and being sent to Kokytos means certain death for most mortals."
+
+
+#end
+
+#neweffect "Planeshift Inferno"
+#effect 108
+#damage -12
+#spec 16512
+#schools 2
+
+#spelltype 66
+
+#scalerate 0
+-- #scalecost 1.6
+
+#aoe 0
+#power 9
+#maxpower 9
+#pathlevel 4
+#sound 18
+#explspr 10252
+#fatiguecost 200
+#precision 100
+#range 35
+
+#paths 128
+#secondarypaths 1
+#secondarypathchance 100
+
+#name 128 "Infernal Prison"
+#descr 128 "A gate is opened and the target is instantly thrown into the Inferno, the realm of Devils. This effect cannot be resisted by any means and being sent to the Inferno means certain death for most mortals."
+
+
+#end
+
+#neweffect "Planeshift Void"
+#effect 108
+#damage -11
+#spec 16793728
+#schools 32
+
+#spelltype 66
+
+#scalerate 0
+-- #scalecost 1.6
+
+#aoe 0
+#power 9
+#maxpower 9
+#pathlevel 4
+#sound 31
+#explspr 10251
+#fatiguecost 100
+#precision 100
+#range 35
+
+#paths 144
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 16 "Void Portal"
+#name 128 "Void Portal"
+#descr 16 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
+#descr 128 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
+#details "This spell offers a difficult MR check to resist its effects."
+
+
+#end

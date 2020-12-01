@@ -1,0 +1,107 @@
+#neweffect "Summon aeles1"
+#effect 1
+#damage 572
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 40
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 85
+
+#details "The elementals are size 1."
+#name 2 "Summon NAMEPREFIX Tiny Air %Elemental%"
+#descr 2 "The caster summons forth ARTICLE tiny air %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "aeles1 ritual"
+#effect 10001
+#damage 572
+#spec 0
+#power 4
+#nreff 5001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 75
+
+#details "The elementals are size 1."
+#name 2 "Summon NAMEPREFIX Tiny Air Elementals"
+#descr 2 "The caster summons forth tiny air elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+
+#scalerate 2
+#end
+
+#neweffect "aeles1 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 572
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#details "The elementals are size 1."
+#name 2 "NAMEPREFIX Tiny Air Attack"
+#descr 2 "The caster summons forth a tiny air elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon aeles1"
+#effect 10038
+#provrange 4
+#damage 572
+#spec 0
+#power 5
+#maxpower 9
+#nreff 5001
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#details "The elementals are size 1."
+#name 2 "Send NAMEPREFIX Tiny Air Elementals"
+#descr 2  "The caster summons forth tiny air elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end

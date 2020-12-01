@@ -1,0 +1,104 @@
+#neweffect "Poison Cloud"
+#effect 3007
+#damage 1
+#spec 8396928
+#aoe 1004
+#power 5
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10297
+#sound 42
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "$poisonous$ cloud"
+#descr 64 "Creates a cloud of $poisonous$ gas. Spending time within it will quickly prove fatal to most living creatures."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 2.0
+#pathlevel 3
+#schools 4
+#end
+
+#neweffect "Fire Cloud"
+#effect 3002
+#damage 1005
+#spec 96
+#aoe 1004
+#power 4
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10162
+#sound 42
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$flame$ cloud"
+#descr 1 "Creates a cloud of flammable gas and sets it alight. Creatures within it will be rapidly burned by the flames."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+#end
+
+#neweffect "Freezing Cloud"
+#effect 4002
+#damage 1
+#spec 640
+#aoe 1003
+#power 4
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10056
+#sound 42
+
+#paths 4
+#secondarypaths 2
+
+#name 4 "$freezing$ $mist$"
+#descr 4 "Creates a cloud of icy mist. Creatures within will rapidly be harmed by the cold."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+#end
+
+
+#neweffect "Cloud of Death"
+#effect 4002
+#damage 1002
+#spec 528512
+#aoe 1003
+#power 5
+#precision -3
+#range 30
+#fatiguecost 20
+#explspr 10160
+#sound 23
+
+#paths 32
+#secondarypaths 0
+
+#name 32 "$mist$ of Death"
+#descr 32 "A deadly grey cloud will form upon the battlefield. Anyone standing in the cloud will wither and die unless able to leave it. The cloud will remain on the battlefield for some time before dissolving."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+#end

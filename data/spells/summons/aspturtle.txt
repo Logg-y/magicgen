@@ -1,0 +1,104 @@
+#neweffect "Call aspturtle"
+#effect 1
+#damage 1234
+#spec 41959424
+#power 6
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 100
+#scalefatiguemult 50
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Summon NAMEPREFIX Asp %Turtle%"
+#descr 4 "The caster summons ARTICLE_N asp %turtle% to fight for him. Asp turtles are terrifying sea monsters with large protective shells that trample their enemies."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "aspturtle ritual"
+#effect 10001
+#damage 1234
+#spec 41959424
+#power 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+
+#paths 4
+#secondarypaths 4
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Asp %Turtle%"
+#descr 4 "The caster summons ARTICLE_N asp %turtle% to fight for him. Asp turtles are terrifying sea monsters with large protective shells that trample their enemies."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 520
+
+#scalerate 2
+#end
+
+#neweffect "aspturtle Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1234
+#spec 41959424
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 75
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Asp %Turtle% Attack"
+#descr 4 "The caster summons ARTICLE_N asp %turtle% to attack a hostile commander in a distant province. Asp turtles are terrifying sea monsters with large protective shells that trample their enemies."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon aspturtle"
+#effect 10038
+#provrange 4
+#damage 1234
+#spec 41959424
+#power 6
+#maxpower 11
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#onlygeodst 2052
+
+#skipchance 90
+#paths 4
+#secondarypaths 4
+
+#name 4 "Send NAMEPREFIX Asp %Turtle%"
+#descr 4 "The caster summons ARTICLE_N asp %turtle% to attack a distant province. Asp turtles are terrifying sea monsters with large protective shells that trample their enemies."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+#end

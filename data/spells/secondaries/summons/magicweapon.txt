@@ -1,0 +1,48 @@
+#newsecondary "Summon MWeap 1"
+
+#anysummon 1
+
+#paths 16
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon MWeap 1"
+#descr "The summoned %creature% %is% enchanted with magic, increasing %its% magic resistance and making %its% weapons magical."
+
+#end
+
+#newsecondary "Summon MWeap 2"
+
+#anysummon 1
+
+#paths 16
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon MWeap 2"
+#descr "The summoned %creature% %is% enchanted with magic, increasing %its% magic resistance and making %its% weapons magical."
+
+#end
+
+
+#newsecondary "Summon MWeap 3"
+
+#anysummon 1
+
+#paths 16
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon MWeap 3"
+#descr "The summoned %creature% %is% enchanted with magic, increasing %its% magic resistance and making %its% weapons magical."
+
+#end

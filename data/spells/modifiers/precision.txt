@@ -1,0 +1,21 @@
+#newmodifier "Accurate"
+
+-- evo
+#spelltype 2
+
+#power -1
+
+#precision 5
+
+#skipchance 10
+
+#req nonscalingrange < 100
+#req nonscalingrange > 15
+#req precision < 100
+#req nonscalingaoe < 650
+-- not ritual
+#req spelltype !& 4
+
+-- #descr "This spell is abnormally accurate and is less likely to land away from where the caster intended."
+
+#end

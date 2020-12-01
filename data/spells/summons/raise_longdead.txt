@@ -1,0 +1,103 @@
+#neweffect "Raise Longdead"
+#effect 1
+#damage -2
+#spec 8388608
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#explspr 10232
+#sound 43
+#schools 16
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Raise Longdead"
+#descr 32 "The caster enchants the bones of the long dead, forming ARTICLE %skeleton% to fight for him. Skeletons created by this spell are only weakly bound and do not persist once the battle ends."
+
+#spelltype 528
+
+#power 1
+#scalerate 0.85
+-- #scalecost 1.0
+#pathlevel 1
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "Raise Longdead Ritual"
+#effect 10001
+#damage -2
+#spec 8388608
+#power 1
+#nreff 3004
+#pathlevel 1
+#fatiguecost 300
+#schools 16
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Reanimation"
+#descr 32 "The caster enchants the bones of the long dead, forming ARTICLE %skeleton% to fight for him."
+
+#spelltype 20
+
+#scalerate 2
+#scalefatiguemult 7
+#end
+
+-- NOT USABLE because it says "suddenly a huge om these attacks. appeared out of nowhere and attacked..."
+
+-- #neweffect "Longdead Remote Assassination"
+-- #effect 10050
+-- #provrange 4
+-- #damage -2
+-- #spec 8388608
+-- #power 4
+-- #maxpower 4
+-- #nreff 1
+-- #pathlevel 3
+-- #fatiguecost 300
+-- #schools 16
+-- #skipchance 80
+-- 
+-- #paths 32
+-- #secondarypaths 32
+-- 
+-- #name 32 "Attack of the Dead"
+-- #descr 32 "The caster enchants the bones of the long dead in a distant province, then sends them to ambush a commander found there. "
+-- 
+-- #spelltype 4
+-- 
+-- #scalerate 0.7
+-- #end
+
+#neweffect "Remote summon longdead"
+#effect 10038
+#provrange 4
+#damage -2
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 3010
+#pathlevel 3
+#fatiguecost 400
+#schools 16
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Remote reanimation"
+#descr 32 "The caster enchants the bones of the long dead in a distance province. "
+
+#spelltype 20
+
+#scalerate 2.0
+#end

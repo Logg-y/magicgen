@@ -1,0 +1,61 @@
+#neweffect "Summon Golem"
+
+#effect 10021
+#damage 471
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#chassisvalue 1500
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 8
+
+#skipchance 0
+
+#paths 24
+#secondarypaths 24
+#secondarypathchance 99
+
+
+#name 16 "Construct NAMEPREFIX Golem"
+#name 8 "Construct NAMEPREFIX Golem"
+#descr 16 "The caster constructs a Golem from clay and magically animates it. The Golem is physically strong and has some skill in astral magic."
+#descr 8 "The caster constructs a Golem from clay and magically animates it. The Golem is physically strong and has some skill in astral magic."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Golem Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 471
+#spec 0
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 8
+#fatiguecost 800
+#chassisvalue 300
+#schools 8
+#skipchance 26
+#nogeodst 2052
+
+#skipchance 31
+
+#paths 24
+#secondarypaths 24
+#secondarypathchance 99
+
+#name 16 "NAMEPREFIX Golem Attack"
+#name 8 "NAMEPREFIX Golem Attack"
+#descr 16 "The caster constructs a Golem from clay in a distant province and magically animates it. The golem attacks a commander found there, before reverting back to inanimate clay. The Golem is physically strong and has some skill in astral magic."
+#descr 8 "The caster constructs a Golem from clay in a distant province and magically animates it. The golem attacks a commander found there, before reverting back to inanimate clay. The Golem is physically strong and has some skill in astral magic."
+#spelltype 4
+
+#end

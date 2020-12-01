@@ -1,0 +1,39 @@
+#neweffect "Charged Body"
+#effect 23
+#damage 16384
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0.4
+
+#aoe 0
+#power -1
+#maxpower 9
+#pathlevel 1
+#explspr 10028
+#sound 24
+#range 10
+#fatiguecost 5
+#skipchance 20
+
+#paths 2
+#secondarypaths 2
+
+#namecond aoe <= 1 2 "charged body"
+#namecond aoe <= 1 2 "electrified body"
+
+#namecond2 666 > aoe > 1 2 "group charged bodies"
+#namecond2 666 > aoe > 1 2 "group electrified bodies"
+
+#namecond aoe == 666 2 "mass charged bodies"
+#namecond aoe == 666 2 "mass electrified bodies"
+
+#details "The first melee attack against charged units inflict 20AN shock damage to both the attacker and the attacked."
+
+#descr 2 "Fills the %body% of SUBJECT with electrical charge. Upon being struck the charge is dissipated, striking both the attacker and the attacked with deadly lightning. As such it is unadvisable to cast this spell on recipients that are not shock resistant."
+
+#end
+

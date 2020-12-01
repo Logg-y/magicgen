@@ -1,0 +1,39 @@
+#neweffect "Haste"
+#effect 23
+#damage 4
+#spec 549453952
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 1.0
+
+#aoe 0
+#power -2
+#maxpower 6
+#pathlevel 1
+#explspr 10231
+#sound 31
+#range 10
+#fatiguecost 10
+#skipchance 30
+
+
+#paths 66
+#secondarypaths 66
+
+#namecond aoe < 2 2 "Swiftness of the Wind"
+#namecond aoe < 2 64 "Swiftness of the Hare"
+
+#namecond aoe >= 2 2 "Haste of the Wind"
+#namecond aoe >= 2 64 "Haste"
+
+#details "Doubles combat speed."
+
+#descr 2 "SUBJECT %is% imbued with the swiftness of the wind, allowing them to move faster."
+#descr 64 "SUBJECT %is% imbued with the swiftness of nimble animals, allowing them to move faster."
+
+#end
+

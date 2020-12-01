@@ -1,0 +1,343 @@
+#neweffect "Remote Palisades"
+#effect 10063
+#provrange 4
+#damage 1
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 2700
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+-- air
+-- earth
+-- death
+-- nature
+#paths 106
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+#spelltype 4
+
+#name 8 "Construct Palisades"
+#descr 8 "The caster magically and rapidly constructs palisades in the targeted province."
+#name 2 "Avian Palisade Construction"
+#descr 2 "The caster directs thousands of birds to rapidly construct a fortification from small pieces of wood in the targeted province. The resulting palisades are a serviceable defensive structure. The birds are free to return to their usual activities once the structure is complete."
+#name 64 "Animal Palisade Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from pieces of wood in the targeted province. The resulting palisades are a serviceable defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Palisade Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from pieces of wood in the targeted province. The resulting palisades are a serviceable defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated palisades have the following attributes:\n\nAdministration: 15\nCommander point bonus: 0\nRecruitment point bonus:50%\nSupplies: 100\nWall integrity: 100"
+
+#end
+
+#neweffect "Remote Fortress"
+#effect 10063
+#provrange 4
+#damage 2
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+-- air
+-- earth
+-- death
+-- nature
+#paths 106
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Fortress"
+#descr 8 "The caster magically and rapidly constructs a fortress from stone in the targeted province."
+#name 2 "Avian Fortress Construction"
+#descr 2 "The caster directs thousands of birds to rapidly construct a fortification from small stones in the targeted province. The resulting fortress is a strong defensive structure. The birds are free to return to their usual activities once the structure is complete."
+#name 64 "Animal Fortress Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from pieces of stone in the targeted province. The resulting fortress is a strong defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Fortress Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from pieces of wood in the targeted province. The resulting fortress is a strong defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated fortress has the following attributes:\n\nAdministration: 30\nCommander point bonus: 1\nRecruitment point bonus:75%\nSupplies: 500\nWall integrity: 250"
+#spelltype 4
+#end
+
+#neweffect "Remote Castle"
+#effect 10063
+#provrange 4
+#damage 3
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+-- air
+-- earth
+-- death
+-- nature
+#paths 106
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Castle"
+#descr 8 "The caster magically and rapidly constructs a castle from stone in the targeted province."
+#name 2 "Avian Castle Construction"
+#descr 2 "The caster directs thousands of birds to rapidly construct a fortification from small stones in the targeted province. The resulting castle is a strong defensive structure. The birds are free to return to their usual activities once the structure is complete."
+#name 64 "Animal Castle Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from pieces of stone in the targeted province. The resulting castle is a strong defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Castle Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from pieces of wood in the targeted province. The resulting castle is a strong defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated castle has the following attributes:\n\nAdministration: 45\nCommander point bonus: 1\nRecruitment point bonus:100%\nSupplies: 1500\nWall integrity: 500"
+#spelltype 4
+#end
+
+#neweffect "Remote Citadel"
+#effect 10063
+#provrange 4
+#damage 3
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 6000
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+-- air
+-- earth
+-- death
+-- nature
+#paths 106
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Citadel"
+#descr 8 "The caster magically and rapidly constructs a citadel from stone in the targeted province."
+#name 2 "Avian Citadel Construction"
+#descr 2 "The caster directs thousands of birds to rapidly construct a fortification from small stones in the targeted province. The resulting citadel is a strong defensive structure. The birds are free to return to their usual activities once the structure is complete."
+#name 64 "Animal Citadel Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from pieces of stone in the targeted province. The resulting citadel is a strong defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Citadel Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from pieces of wood in the targeted province. The resulting citadel is a strong defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated citadel has the following attributes:\n\nAdministration: 60\nCommander point bonus: 2\nRecruitment point bonus:125%\nSupplies: 5000\nWall integrity: 750"
+#spelltype 4
+#end
+
+#neweffect "Remote Grand Citadel"
+#effect 10063
+#provrange 4
+#damage 3
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 6800
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+-- air
+-- earth
+-- death
+-- nature
+#paths 106
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Grand Citadel"
+#descr 8 "The caster magically and rapidly constructs a grand citadel from stone in the targeted province."
+#name 2 "Avian Grand Citadel Construction"
+#descr 2 "The caster directs an incredible number of birds to rapidly construct a fortification from small stones in the targeted province. The resulting grand citadel is a strong defensive structure. The birds are free to return to their usual activities once the structure is complete."
+#name 64 "Animal Grand Citadel Construction"
+#descr 64 "The caster directs an incredible number of local animals to rapidly construct a fortification from pieces of stone in the targeted province. The resulting grand citadel is a strong defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Grand Citadel Construction"
+#descr 32 "The caster animates thousands of dead creatures to rapidly construct a fortification from pieces of wood in the targeted province. The resulting grand citadel is a strong defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated grand citadel has the following attributes:\n\nAdministration: 70\nCommander point bonus: 2\nRecruitment point bonus:150%\nSupplies: 7500\nWall integrity: 1000"
+#spelltype 4
+#end
+
+
+#neweffect "Remote Rockwalls"
+#effect 10063
+#provrange 4
+#damage 5
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 2700
+#schools 8
+#onlygeodst 2052
+#onlyfriendlydst 1
+
+-- earth
+-- death
+-- nature
+#paths 104
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Rock Walls"
+#descr 8 "The caster magically and rapidly constructs rock walls in the targeted province."
+#name 64 "Animal Rock Walls Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from stone in the targeted province. The resulting rock walls are a serviceable defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Rock Walls Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from stone in the targeted province. The resulting rock walls are a serviceable defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated rock walls have the following attributes:\n\nAdministration: 15\nCommander point bonus: 0\nRecruitment point bonus:50%\nSupplies: 100\nWall integrity: 100"
+#spelltype 4
+#end
+
+
+#neweffect "Remote Fortress UW"
+#effect 10063
+#provrange 4
+#damage 6
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools 8
+#onlygeodst 2052
+#onlyfriendlydst 1
+
+-- earth
+-- death
+-- nature
+#paths 104
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 8 "Construct Fortress"
+#descr 8 "The caster magically and rapidly constructs a fortress in the targeted province."
+#name 64 "Animal Fortress Construction"
+#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from stone in the targeted province. The resulting fortress is a serviceable defensive structure. The animals are free to return to their usual activities once the structure is complete."
+#name 32 "Undead Fortress Construction"
+#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from stone in the targeted province. The resulting fortress is a serviceable defensive structure. The undead return to their original dead state once the structure is complete."
+#details "The generated fortress has the following attributes:\n\nAdministration: 30\nCommander point bonus: 1\nRecruitment point bonus:75%\nSupplies: 500\nWall integrity: 250"
+#spelltype 4
+#end
+
+
+
+#neweffect "Remote Icewalls"
+#effect 10063
+#provrange 4
+#damage 20
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 2700
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 4 "Construct Ice Walls"
+#descr 4 "The caster carefully chills the air in the targeted province to produce a fortification made from frozen condensation. The ice walls are sensitive to temperature, and reversibly lose immediate effectiveness upon heat exposure. Additionally, they may be permanently damaged and eventually destroyed from extended exposure to heat."
+#details "The generated ice walls have the following attributes:\n\nAdministration: 11 (+1.5 per cold scale)\nCommander point bonus: 0\nRecruitment point bonus:50%\nSupplies: 70 (+10 per cold scale)\nWall integrity: 70 (+10 per cold scale)"
+#spelltype 4
+#end
+
+#neweffect "Remote Ice Fortress"
+#effect 10063
+#provrange 4
+#damage 21
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 4 "Construct Ice Fortress"
+#descr 4 "The caster carefully chills the air in the targeted province to produce a fortification made from frozen condensation. The ice fortress is sensitive to temperature, and will reversibly lose immediate effectiveness upon heat exposure. Additionally, it may be permanently damaged and eventually destroyed from extended exposure to heat."
+#details "The generated ice fortress has the following attributes:\n\nAdministration: 21 (+3 per cold scale)\nCommander point bonus: 1\nRecruitment point bonus:75%\nSupplies: 350 (+50 per cold scale)\nWall integrity: 175 (+25 per cold scale)"
+#spelltype 4
+#end
+
+#neweffect "Remote Ice Castle"
+#effect 10063
+#provrange 4
+#damage 22
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 4 "Construct Ice Castle"
+#descr 4 "The caster carefully chills the air in the targeted province to produce a fortification made from frozen condensation. The ice castle is sensitive to temperature, and will reversibly lose immediate effectiveness upon heat exposure. Additionally, it may be permanently damaged and eventually destroyed from extended exposure to heat."
+#details "The generated ice castle has the following attributes:\n\nAdministration: 32 (+4 per cold scale)\nCommander point bonus: 1\nRecruitment point bonus:100%\nSupplies: 1050 (+150 per cold scale)\nWall integrity: 350 (+50 per cold scale)"
+#spelltype 4
+#end
+
+#neweffect "Remote Ice Citadel"
+#effect 10063
+#provrange 4
+#damage 23
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 6000
+#schools 8
+#nogeodst 2052
+#onlyfriendlydst 1
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+#skipchance 80
+
+#name 4 "Construct Ice Citadel"
+#descr 4 "The caster carefully chills the air in the targeted province to produce a mighty fortification made from frozen condensation. The ice citadel is sensitive to temperature, and will reversibly lose immediate effectiveness upon heat exposure. Additionally, it may be permanently damaged and eventually destroyed from extended exposure to heat."
+#details "The generated ice citadel has the following attributes:\n\nAdministration: 42 (+6 per cold scale)\nCommander point bonus: 2\nRecruitment point bonus:125%\nSupplies: 3500 (+500 per cold scale)\nWall integrity: 525 (+75 per cold scale)"
+#spelltype 4
+#end

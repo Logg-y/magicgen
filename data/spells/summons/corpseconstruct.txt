@@ -1,0 +1,113 @@
+#neweffect "Summon corpse construct"
+#effect 1
+#damage 534
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 43
+#schools 8
+
+#paths 34
+#secondarypaths 34
+#secondarypathchance 90
+
+
+#name 2 "Create NAMEPREFIX Corpse %Construct%"
+#name 32 "Create NAMEPREFIX Corpse %Construct%"
+#descr 2 "The caster creates ARTICLE corpse %construct% to fight for him. Corpse constructs are corpses brought back to life by electrical charge."
+#descr 32 "The caster creates ARTICLE corpse %construct% to fight for him. Corpse constructs are corpses brought back to life by electrical charge."
+
+#spelltype 528
+
+#scalerate 0.7
+#skipchance 50
+#end
+
+#neweffect "corpse construct ritual"
+#effect 10001
+#damage 534
+#spec 8388608
+#power 3
+#nreff 2001
+#pathlevel 2
+#fatiguecost 200
+#schools 8
+
+#paths 34
+#secondarypaths 34
+#secondarypathchance 90
+
+#name 2 "Create NAMEPREFIX Corpse %Construct%"
+#name 32 "Create NAMEPREFIX Corpse %Construct%"
+#descr 2 "The caster creates ARTICLE corpse %construct% to fight for him. Corpse constructs are corpses brought back to life by electrical charge."
+#descr 32 "The caster creates ARTICLE corpse %construct% to fight for him. Corpse constructs are corpses brought back to life by electrical charge."
+
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 20
+
+#skipchance 50
+#scalerate 4
+#end
+
+#neweffect "corpseconstruct Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 534
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 8
+#skipchance 90
+
+#paths 34
+#secondarypaths 34
+#secondarypathchance 90
+
+#name 2 "NAMEPREFIX Corpse Construct Ambush"
+#name 32 "NAMEPREFIX Corpse Construct Ambush"
+#descr 32 "The caster creates ARTICLE corpse construct to ambush a commander in a distant land. Corpse constructs are corpses brought back to life by electrical charge."
+#descr 2 "The caster creates ARTICLE corpse construct to ambush a commander in a distant land. Corpse constructs are corpses brought back to life by electrical charge."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon corpseconstruct"
+#effect 10038
+#provrange 4
+#damage 534
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 2004
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 34
+#secondarypaths 34
+#secondarypathchance 90
+
+#name 32 "Send NAMEPREFIX Corpse %Construct%"
+#name 2 "Send NAMEPREFIX Corpse %Construct%"
+#descr 32 "The caster creates and sends ARTICLE corpse %construct% to a distant land. Corpse constructs are corpses brought back to life by electrical charge."
+#descr 2 "The caster creates and sends ARTICLE corpse %construct% to a distant land. Corpse constructs are corpses brought back to life by electrical charge."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 20
+#end

@@ -1,0 +1,203 @@
+#neweffect "Lifedrain single target"
+#copyspell "Drain Life"
+#effect 103
+#damage 1010
+#spec 545276032
+#schools 2
+
+#spelltype 66
+
+#scalerate 2
+-- #scalecost 1.6
+
+#aoe 0
+#power 5
+#maxpower 9
+#pathlevel 4
+#sound 18
+#fatiguecost 10
+#precision 25
+#range 30
+
+#skipexplspr 1
+#skipflightspr 1
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Drain Life"
+#descr 32 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+
+#end
+
+#neweffect "Lifedrain aoe"
+#copyspell "Drain Life"
+#effect 103
+#damage 1010
+#spec 545276032
+#schools 2
+
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.6
+
+#skipexplspr 1
+#skipflightspr 1
+
+#aoe 1
+#power 6
+#maxpower 9
+#pathlevel 4
+#sound 18
+#fatiguecost 20
+#precision 25
+#range 30
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Drain Life"
+#descr 32 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+
+#end
+
+#neweffect "Lifedrain single target blood"
+#copyspell "Leech"
+#effect 103
+#damage 1020
+#spec 545276032
+#schools 2
+
+#spelltype 66
+
+#scalerate 2
+-- #scalecost 1.6
+
+#skipexplspr 1
+#skipflightspr 1
+
+#aoe 1
+#power 7
+#maxpower 9
+#pathlevel 1
+#sound 18
+#fatiguecost 100
+#precision 25
+#range 30
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Leech Life"
+#descr 128 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+
+#end
+
+#neweffect "Lifedrain aoe blood"
+#copyspell "Leech"
+#effect 103
+#damage 1010
+#spec 545276032
+#schools 2
+
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.6
+
+#skipexplspr 1
+#skipflightspr 1
+
+#aoe 1
+#power 6
+#maxpower 9
+#pathlevel 2
+#sound 18
+#fatiguecost 100
+#precision 25
+#range 30
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Leech Life"
+#descr 128 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+
+#end
+
+#neweffect "Lifedrain battlefield"
+#copyspell "Drain Life"
+#effect 103
+#damage 1
+#spec 545280128
+#schools 2
+
+#skipexplspr 1
+#skipflightspr 1
+
+#spelltype 66
+
+#scalerate 0.75
+-- #scalecost 1.6
+
+#aoe 666
+#power 7
+#maxpower 9
+#pathlevel 4
+#sound 18
+#fatiguecost 200
+#precision 25
+#range 30
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Drain Life"
+#descr 32 "The caster drains the life force of everyone on the battlefield, adding it to his own health and endurance."
+
+
+#end
+
+#neweffect "Lifedrain battlefield blood"
+#copyspell "Leech"
+#effect 103
+#damage 1
+#spec 537399424
+#schools 2
+
+#spelltype 66
+
+#scalerate 0.75
+-- #scalecost 1.6
+
+#skipexplspr 1
+#skipflightspr 1
+
+#aoe 666
+#power 5
+#maxpower 9
+#pathlevel 4
+#sound 18
+#fatiguecost 400
+#precision 25
+#range 30
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Bloodletting"
+#descr 128 "With this arduous spell, the mage tries to drain blood from everyone in the vicinity. All drained blood will be added to the mage's life force."
+
+
+#end

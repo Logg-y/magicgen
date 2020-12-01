@@ -1,0 +1,22 @@
+#neweffect "Murdering Winter"
+#copyspell "Murdering Winter"
+#effect 10041
+#damage 8
+#spec 8405632
+#provrange 4
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#schools 4
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 4 "Murdering Winter"
+#descr 4 "A sudden, furious blizzard will strike an enemy army camp in a province of the mage's choice. The blizzard is very powerful and will kill most normal men unless they are located in a hot province. The spell will be extremely powerful if it is cast in a very cold province and almost useless if cast in a very hot province. The spell has a very large area of effect and most of the enemy army is likely to be affected. Commanders have access to the good tents and will take reduced damage from the cold."
+
+#spelltype 4
+#end

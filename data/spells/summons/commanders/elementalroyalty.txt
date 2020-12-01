@@ -1,0 +1,199 @@
+#neweffect "Summon air royal"
+#effect 10089
+#damage 7
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 100
+
+#details "There are three commanders that can be called with this spell."
+#name 2 "Queen of Elemental Air"
+#descr 2 "The caster calls on the supernatural forces of the sky itself and summons one of the three Queens of Elemental Air. The Queens are masters of Air magic, can fly and are ethereal in nature."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon earth royal"
+#effect 10089
+#damage 4
+#spec 8388608
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 100
+#donotsetextraspellpath 1
+#extraspell "Summon air royal"
+
+#details "There are two commanders that can be called with this spell."
+#name 8 "King of Elemental Earth"
+#descr 8 "The caster calls upon the supernatural forces of the Earth itself and summons one of the Kings of Elemental Earth. There were once three such beings, but since Pedoseion was tainted with blood sacrifices, there are but two Kings left. The Kings are masters of Earth magic in addition to being physically powerful."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon water royal"
+#effect 10089
+#damage 6
+#spec 41943040
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 100
+#donotsetextraspellpath 1
+#extraspell "Summon earth royal"
+
+#details "There are three commanders that can be called with this spell."
+#name 4 "Queen of Elemental Water"
+#descr 4 "The caster calls the supernatural forces of the sea itself and summons one of the three Queens of Elemental Water. The Queens are masters of Water magic and difficult to damage when they are underwater. Unless they are completely killed in one combat round, they will heal all their wounds at the end of each round. Only one of the three Queens is able to leave the sea."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon fire royal"
+#effect 10089
+#damage 8
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 1
+
+#paths 1
+#secondarypaths 1 
+
+#skipchance 0
+#donotsetextraspellpath 1
+#extraspell "Summon water royal"
+
+#details "There are two commanders that can be called with this spell."
+#name 1 "King of Elemental Fire"
+#descr 1 "The caster calls upon the supernatural forces of Fire itself and summons one of the Kings of Elemental Fire. There were once three such beings, but since the fall of Catharsis, there are but two. The Kings are masters of Fire magic and are surrounded by blazing flames."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+
+
+#neweffect "Summon king of banefires"
+#effect 10089
+#damage 9
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 1
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There is only one commander that can be called with this spell."
+#name 1 "King of Banefires"
+#name 32 "King of Banefires"
+#descr 1 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
+#descr 32 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+
+#neweffect "Summon king of banefires"
+#effect 10089
+#damage 9
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 1
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There is only one commander that can be called with this spell."
+#name 1 "King of Banefires"
+#name 32 "King of Banefires"
+#descr 1 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
+#descr 32 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon father illearth"
+#effect 10089
+#damage 5
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 1
+
+#paths 136
+#secondarypaths 136
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There is only one commander that can be called with this spell."
+#name 8 "Father Illearth"
+#name 128 "Father Illearth"
+#descr 128 "The Blood mage spills sacrificial blood on the ground to awaken Pedoseion, the fallen King of Elemental Earth. The spirit is horribly tainted by the blood and has lost some of its connection with the Earth. In return, however, Pedoseion has gained knowledge of the power and cravings of Blood."
+#descr 8 "The Earth mage awakens Pedoseion, the fallen King of Elemental Earth. The spirit is horribly tainted by the blood and has lost some of its connection with the Earth. In return, however, Pedoseion has gained knowledge of the power and cravings of Blood."
+
+#spelltype 4
+
+#scalerate 0
+#end

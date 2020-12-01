@@ -1,0 +1,66 @@
+#neweffect "Space Warp"
+#effect 20
+#damage 30
+#spec 25444352
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#pathlevel 1
+#explspr 10277
+#fatiguecost 20
+#range 5025
+
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Space Warp"
+#name 2 "Space Warp"
+#name 4 "Space Warp"
+#name 8 "Space Warp"
+#name 16 "Space Warp"
+#name 32 "Space Warp"
+#name 64 "Space Warp"
+#name 128 "Space Warp"
+#name 256 "Space Warp"
+
+#end
+
+
+#neweffect "Space Warp Smite"
+#effect 20
+#damage 30
+#spec 8671232
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 1
+#pathlevel 1
+#explspr 10277
+#fatiguecost 20
+#range 5025
+
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Space Warp"
+#name 2 "Space Warp"
+#name 4 "Space Warp"
+#name 8 "Space Warp"
+#name 16 "Space Warp"
+#name 32 "Space Warp"
+#name 64 "Space Warp"
+#name 128 "Space Warp"
+#name 256 "Space Warp"
+
+#end

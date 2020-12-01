@@ -1,0 +1,94 @@
+#newweaponmod "Armloss"
+-- weapon not magic
+#req spec & 2097152
+-- not AN
+#req spec !& 128
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 335
+#spec -2097152
+#nameprefix "Armsevering"
+#end
+
+#newweaponmod "Eyeloss"
+-- weapon not magic
+#req spec & 2097152
+-- not AN
+#req spec !& 128
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 333
+#spec -2097152
+#nameprefix "Eyeseeking"
+#end
+
+#newweaponmod "Limp"
+-- weapon not magic
+#req spec & 2097152
+-- not AN
+#req spec !& 128
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 421
+#spec -2097152
+#nameprefix "Hamstringing"
+#end
+
+#newweaponmod "Disease"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 414
+#spec -2097152
+#nameprefix "Pestilent"
+#end
+
+#newweaponmod "Chestwound"
+-- weapon not magic
+#req spec & 2097152
+-- not AN
+#req spec !& 128
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 150
+#spec -2097152
+#nameprefix "Chestseeking"
+#end
+
+#newweaponmod "Feeblemind"
+-- weapon not magic
+#req spec & 2097152
+-- not AN
+#req spec !& 128
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 156
+#spec -2097152
+#nameprefix "Feebleminding"
+#end
+
+
+#newweaponmod "Shrink"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 544
+#spec -2097152
+#nameprefix "Shrinking"
+#end

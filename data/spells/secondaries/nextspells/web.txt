@@ -1,0 +1,34 @@
+#neweffect "Web Secondary"
+#effect 11
+#damage 536870912
+#spec 4398058061824
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10304
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Web"
+#name 2 "$Additional$ Web"
+#name 4 "$Additional$ Web"
+#name 8 "$Additional$ Web"
+#name 16 "$Additional$ Web"
+#name 32 "$Additional$ Web"
+#name 64 "$Additional$ Web"
+#name 128 "$Additional$ Web"
+#name 256 "$Additional$ Web"
+
+
+#end

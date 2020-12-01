@@ -1,0 +1,15 @@
+#newsecondary "Summon Coldfatigueweapon"
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Coldfatigueweapon"
+#descr "The summoned %creature% %is% able to chill and fatigue enemies with attacks."
+
+#end

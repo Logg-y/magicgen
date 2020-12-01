@@ -1,0 +1,258 @@
+#neweffect "Communion Master"
+#effect 10
+#damage 536870912
+#spec 8404992
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 1
+
+#aoe 0
+#power 1
+#maxpower 2
+#pathlevel 1
+#explspr 10274
+#sound 31
+#range 10
+#fatiguecost 20
+#extraspell "Communion Slave"
+#alwaysgenerate 1
+
+
+#paths 255
+#secondarypaths 1
+
+
+#namecond aoe < 1 1 "Focusing Pyre"
+#namecond aoe >= 1 1 "Focusing Pyre"
+#descr 1 "SUBJECT lights ARTICLE magical %fire%, which can burn even when underwater. The %pyre% may be used as ARTICLE mental %focus% for other mages, allowing those controlling the %pyre% to harness the magical powers of the %one% focusing."
+
+#namecond aoe < 1 2 "Listener of Wind"
+#namecond aoe >= 1 2 "Listeners of Winds"
+#descr 2 "Attunes SUBJECT to the surrounding air, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the atmosphere above."
+
+#namecond aoe < 1 4 "Sense the Waters"
+#namecond aoe >= 1 4 "Sensations of Water"
+#descr 4 "Attunes SUBJECT to surrounding water and water vapour, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the liquids of their surroundings."
+
+#namecond aoe < 1 32 "Spirit Nexus"
+#namecond aoe >= 1 32 "Spiritual Nexus"
+#descr 32 "By connecting with the spirits of the dead, SUBJECT may harness the magical power of those who surrender themselves to the spirits."
+
+#namecond aoe < 1 64 "Focus of Gaia"
+#namecond aoe >= 1 64 "Focus of Gaia"
+#descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT may harness the magical power of those who surrender themselves to the presence."
+
+#namecond aoe < 1 8 "Reader of Earth"
+#namecond aoe < 1 16 "Communion Master"
+#namecond aoe < 1 128 "Sabbath Master"
+
+
+#namecond aoe >= 1 8 "Readers of Earth"
+#namecond aoe >= 1 16 "Communion Masters"
+#namecond aoe >= 1 128 "Sabbath Masters"
+
+#details "Grants communion master."
+
+#descr 8 "Connects SUBJECT to the Earth, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the land below."
+#descr 16 "Connects SUBJECT to the communion, allowing them to harness powers from the minds of their communion slaves."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
+
+#end
+
+#neweffect "Communion Slave"
+#effect 10
+#damage 1073741824
+#spec 8404992
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 1
+
+#pathperresearch 0.0
+
+
+#aoe 0
+#power 1
+#maxpower 90
+#pathlevel 1
+#explspr 10273
+#sound 31
+#range 10
+#fatiguecost 20
+#skipchance 100
+
+
+#paths 255
+#secondarypaths 1
+
+#namecond aoe < 1 1 "Focus upon Flames"
+#namecond aoe >= 1 1 "Focus upon Flames"
+#descr 1 "SUBJECT focuses and searches for magical pyres lit by other mages. This allows those controlling the pyre to harness the magical powers of SUBJECT."
+
+#namecond aoe < 1 2 "Whisper upon the Wind"
+#namecond aoe >= 1 2 "Whispers upon the Wind"
+#descr 2 "SUBJECT surrenders PRONOUN_POS mind to the air surrounding the battlefield. This allows their magical power to be harnessed by friendly mages listening to the wind."
+
+#namecond aoe < 1 4 "Aqueous Connection"
+#namecond aoe >= 1 4 "Aqueous Connections"
+#descr 4 ""SUBJECT surrenders PRONOUN_POS mind to the water and water vapour on the battlefield. This allows their magical power to be harnessed by friendly mages connected to the water."
+
+#namecond aoe < 1 32 "Spiritual Communion"
+#namecond aoe >= 1 32 "Spiritual Communion"
+#descr 32 "By connecting with the spirits of the dead, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the spirits."
+
+#namecond aoe < 1 64 "Supplicant of Gaia"
+#namecond aoe >= 1 64 "Supplicant of Gaia"
+#descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the presence."
+
+#namecond aoe < 1 8 "Supplicant of Earth"
+#namecond aoe < 1 16 "Communion Slave"
+#namecond aoe < 1 128 "Sabbath Slave"
+
+#namecond aoe >= 1 8 "Supplicants of Earth"
+#namecond aoe >= 1 16 "Communion Slaves"
+#namecond aoe >= 1 128 "Sabbath Slaves"
+
+#details "Grants communion slave."
+
+#descr 8 "Connects SUBJECT to the Earth, allowing the power of PRONOUN %mind% to be harnessed by those prepared to read from the land."
+#descr 16 "Connects SUBJECT to the communion, allowing PRONOUN masters to harness PRONOUN magical powers."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% forced into becoming ARTICLE %slaves% for the Sabbath. Sabbath masters can then draw power from the minds of their slaves."
+
+#end
+
+
+
+#neweffect "Communion Master AoE"
+#effect 10
+#damage 536870912
+#spec 8404992
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 6
+-- #scalecost 1
+
+#aoe 1
+#power 6
+#maxpower 7
+#pathlevel 1
+#explspr 10274
+#sound 31
+#range 0
+#fatiguecost 20
+#extraspell "Communion Slave Type2"
+
+#paths 255
+#secondarypaths 1
+
+#namecond aoe < 1 1 "Focusing Pyre"
+#namecond aoe >= 1 1 "Focusing Pyre"
+#descr 1 "SUBJECT lights ARTICLE magical %fire%, which can burn even when underwater. The %pyre% may be used as ARTICLE mental %focus% for other mages, allowing those controlling the %pyre% to harness the magical powers of the %one% focusing."
+
+#namecond aoe < 1 2 "Listener of Wind"
+#namecond aoe >= 1 2 "Listeners of Winds"
+#descr 2 "Attunes SUBJECT to the surrounding air, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the atmosphere above."
+
+#namecond aoe < 1 4 "Sense the Waters"
+#namecond aoe >= 1 4 "Sensations of Water"
+#descr 4 "Attunes SUBJECT to surrounding water and water vapour, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the liquids of their surroundings."
+
+#namecond aoe < 1 32 "Spirit Nexus"
+#namecond aoe >= 1 32 "Spiritual Nexus"
+#descr 32 "By connecting with the spirits of the dead, SUBJECT may harness the magical power of those who surrender themselves to the spirits."
+
+#namecond aoe < 1 64 "Focus of Gaia"
+#namecond aoe >= 1 64 "Focus of Gaia"
+#descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT may harness the magical power of those who surrender themselves to the presence."
+
+
+#namecond aoe < 1 8 "Reader of Earth"
+#namecond aoe < 1 16 "Communion Master"
+#namecond aoe < 1 128 "Sabbath Master"
+
+#namecond aoe >= 1 8 "Readers of Earth"
+#namecond aoe >= 1 16 "Communion Masters"
+#namecond aoe >= 1 128 "Sabbath Masters"
+
+#details "Grants communion master."
+
+#descr 8 "Connects SUBJECT to the Earth, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the land below."
+#descr 16 "Connects SUBJECT to the communion, allowing them to harness powers from the minds of their communion slaves."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
+
+#end
+
+
+#neweffect "Communion Slave Type2"
+#effect 10
+#damage 1073741824
+#spec 8404992
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 1
+
+#aoe 0
+#power 6
+#maxpower 50
+#pathlevel 1
+#explspr 10273
+#sound 31
+#range 0
+#fatiguecost 20
+#skipchance 100
+
+
+#pathperresearch 0.0
+
+#paths 255
+#secondarypaths 1
+
+#namecond aoe < 1 1 "Focus upon Flames"
+#namecond aoe >= 1 1 "Focus upon Flames"
+#descr 1 "SUBJECT focuses and searches for magical pyres lit by other mages. This allows those controlling the pyre to harness the magical powers of SUBJECT."
+
+#namecond aoe < 1 2 "Whisper upon the Wind"
+#namecond aoe >= 1 2 "Whispers upon the Wind"
+#descr 2 "SUBJECT surrenders PRONOUN_POS mind to the air surrounding the battlefield. This allows their magical power to be harnessed by friendly mages listening to the wind."
+
+#namecond aoe < 1 4 "Aqueous Connection"
+#namecond aoe >= 1 4 "Aqueous Connections"
+#descr 4 ""SUBJECT surrenders PRONOUN_POS mind to the water and water vapour on the battlefield. This allows their magical power to be harnessed by friendly mages connected to the water."
+
+#namecond aoe < 1 32 "Spiritual Communion"
+#namecond aoe >= 1 32 "Spiritual Communion"
+#descr 32 "By connecting with the spirits of the dead, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the spirits."
+
+#namecond aoe < 1 64 "Supplicant of Gaia"
+#namecond aoe >= 1 64 "Supplicant of Gaia"
+#descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the presence."
+
+#namecond aoe < 1 8 "Supplicant of Earth"
+#namecond aoe < 1 16 "Communion Slave"
+#namecond aoe < 1 128 "Sabbath Slave"
+
+#namecond aoe >= 1 8 "Supplicants of Earth"
+#namecond aoe >= 1 16 "Communion Slaves"
+#namecond aoe >= 1 128 "Sabbath Slaves"
+
+#details "Grants communion slave."
+
+#descr 8 "Connects SUBJECT to the Earth, allowing the power of PRONOUN %mind% to be harnessed by those prepared to read from the land."
+#descr 16 "Connects SUBJECT to the communion, allowing PRONOUN masters to harness PRONOUN magical powers."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% forced into becoming ARTICLE %slaves% for the Sabbath. Sabbath masters can then draw power from the minds of their slaves."
+
+#end

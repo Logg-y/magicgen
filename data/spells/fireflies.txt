@@ -1,0 +1,30 @@
+#neweffect "Fire Flies"
+#copyspell "Fire Flies"
+#effect 2
+#damage 6
+#spec 96
+#schools 4
+
+#spelltype 18
+
+#scalerate 7
+#scalefatigueexponent -0.5
+-- #scalecost 0.6
+
+#nreff 2004
+#aoe 0
+#power 0
+#maxpower 4
+#pathlevel 1
+#flightspr 10146
+#sound 16
+#fatiguecost 20
+#range 5025
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 1 "Fire Flies"
+#descr 1 "Several burning sparks shoot forth from the wizard's hand. The sparks have very limited armor penetration and will be ineffective against armored troops."
+#end

@@ -1,0 +1,106 @@
+#neweffect "summon ogre"
+#effect 1
+#damage 2135
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 40
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Summon NAMEPREFIX %Ogre%"
+#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+
+#spelltype 528
+
+#scalerate 0.85
+#scalefatiguemult 20
+-- #scalecost 1.0
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "Raise ogre Ritual"
+#effect 10001
+#damage 2135
+#spec 0
+#power 3
+#nreff 2004
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#spelltype 20
+
+#scalefatiguemult 40
+
+#name 8 "Summon NAMEPREFIX %Ogre%"
+#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+
+#scalerate 2
+#end
+
+#neweffect "ogre Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2135
+#spec 0
+#nogeodst 2052
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX %Ogre% Attack"
+#descr 8 "The caster summons ARTICLE_N ogre to attack a hostile commander in a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+
+
+#spelltype 4
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon ogre"
+#effect 10038
+#provrange 4
+#damage 2135
+#spec 8388608
+#power 4
+#maxpower 9
+#nreff 2009
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#scalefatiguemult 40
+
+#name 8 "Send NAMEPREFIX %Ogre%"
+#descr 8 "The caster summons ARTICLE_N ogre to attack a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

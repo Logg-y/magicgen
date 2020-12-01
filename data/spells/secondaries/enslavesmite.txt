@@ -1,0 +1,23 @@
+#newsecondary "Enslave Smite"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- various damage types
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe == 0
+
+-- not ritual
+#req spelltype !& 4
+#req path == 256
+
+
+#nextspell "Enslave Smite"
+
+#descr "The divine power unleashed allows the priest to attempt to enslave their target."
+#end

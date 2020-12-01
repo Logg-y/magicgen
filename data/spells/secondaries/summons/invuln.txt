@@ -1,0 +1,15 @@
+#newsecondary "Summon invuln"
+
+#anysummon 1
+
+#paths 32
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Invuln"
+#descr "The summoned %creature% %is% coated in stygian energy, making %it% highly resistant to mundane weapons."
+
+#end

@@ -1,0 +1,15 @@
+#newsecondary "Summon Petrifyweapon"
+
+#anysummon 1
+
+#paths 8
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.9
+
+#unitmod "Summon Petrifyweapon"
+#descr "The summoned %creature% %is% able to turn enemies to stone upon wounding them. The victim may however resist this effect."
+
+#end

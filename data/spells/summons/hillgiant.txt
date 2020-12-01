@@ -1,0 +1,110 @@
+#neweffect "Summon hillgiant"
+#effect 1
+#damage 2230
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 90
+
+#name 8 "Summon NAMEPREFIX Hill %Giant%"
+#descr 8 "The caster summons ARTICLE hill %giant%. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 60
+#end
+
+#neweffect "hill ritual"
+#effect 10001
+#damage 2230
+#spec 0
+#power 6
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 90
+
+#name 8 "Summon NAMEPREFIX Hill %Giant%"
+#descr 8 "The caster summons ARTICLE hill %giant%. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."
+
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 60
+
+#scalerate 4
+#end
+
+#neweffect "hillgiant Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2230
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 90
+
+#name 8 "NAMEPREFIX Hill Giant Attack"
+#descr 8 "The caster summons ARTICLE hill %giant% to attack a hostile commander in a distant province. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote hillgiant"
+#effect 10038
+#provrange 4
+#damage 2230
+#spec 0
+#power 4
+#maxpower 9
+#nreff 1003
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 60
+
+#name 8 "Send NAMEPREFIX Hill %Giant%"
+#descr 8 "The caster summons ARTICLE hill %giant% to attack a hostile commander in a distant province. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."
+
+#spelltype 20
+
+#scalerate 4
+#end

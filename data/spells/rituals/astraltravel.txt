@@ -1,0 +1,22 @@
+#neweffect "Astral Travel"
+#copyspell "Astral Travel"
+#effect 10077
+#damage 1
+#spec 8388608
+#power 9
+#maxpower 9
+#provrange 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 2500
+#schools 32
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Astral Travel"
+#descr 16 "The caster creates a rift in the fabric of space, allowing him to step through with all troops under his command and enter a distant province."
+
+#spelltype 4
+#end

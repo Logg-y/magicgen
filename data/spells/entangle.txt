@@ -1,0 +1,35 @@
+#neweffect "Entangle"
+#effect 11
+#damage 64
+#spec 8404992
+#schools 1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.5
+
+#aoe 0
+#power -2
+#pathlevel 1
+#explspr 10189
+#sound 31
+#fatiguecost 10
+#range 5010
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe <= 5 64 "Tangle Vines"
+#namecond aoe <= 5 64 "Entanglement"
+
+#namecond 5 < aoe < 600 64 "Wild Growth"
+
+#namecond aoe > 600 64 "Relentless Vines"
+
+#details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+
+#descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and entangle a SIZE area."
+
+#end
+

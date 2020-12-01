@@ -1,0 +1,53 @@
+#newweaponmod "Weakpoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 50
+#nameprefix "Poisonous"
+#end
+
+#newweaponmod "Strongpoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 51
+#nameprefix "Poisonous"
+#end
+
+#newweaponmod "Deathpoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 52
+#nameprefix "Poisonous"
+#end
+
+#newweaponmod "Debilpoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 53
+#nameprefix "Poisonous"
+#end
+
+#newweaponmod "Weakparapoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 624
+#nameprefix "Poisonous"
+#end
+
+#newweaponmod "Strongparapoison"
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 54
+#nameprefix "Poisonous"
+#end

@@ -1,0 +1,65 @@
+#neweffect "Additional Shock"
+#effect 2
+#damage 2
+#spec 2176
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10244
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Shock"
+#name 2 "$Additional$ Shock"
+#name 4 "$Additional$ Shock"
+#name 8 "$Additional$ Shock"
+#name 16 "$Additional$ Shock"
+#name 32 "$Additional$ Shock"
+#name 64 "$Additional$ Shock"
+#name 128 "$Additional$ Shock"
+#name 256 "$Additional$ Shock"
+
+#end
+
+#neweffect "Additional Shock Holy"
+#effect 2
+#damage 10
+#spec 2176
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#explspr 10244
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Shock"
+#name 2 "$Additional$ Shock"
+#name 4 "$Additional$ Shock"
+#name 8 "$Additional$ Shock"
+#name 16 "$Additional$ Shock"
+#name 32 "$Additional$ Shock"
+#name 64 "$Additional$ Shock"
+#name 128 "$Additional$ Shock"
+#name 256 "$Additional$ Shock"
+
+#end

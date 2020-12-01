@@ -1,0 +1,103 @@
+#neweffect "Summon apparition"
+#effect 1
+#damage 677
+#spec 8388608
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 60
+#sound 31
+#schools 1
+#ainocast 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX %Apparition%"
+#descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch. Casting this spell may disease the caster or anyone nearby."
+
+#spelltype 528
+#ainocast 1
+
+#scalerate 1
+#end
+
+#neweffect "apparition ritual"
+#effect 10001
+#damage 677
+#spec 8388608
+#power 5
+#nreff 2001
+#pathlevel 2
+#fatiguecost 500
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX %Apparition%"
+#descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+
+#scalerate 4
+#end
+
+#neweffect "Apparition Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 677
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX %Apparition% Attack"
+#descr 32 "The caster summons ARTICLE_N %apparition% to attack a hostile commander in a distant province. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon apparition"
+#effect 10038
+#provrange 4
+#damage 677
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 2001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX %Apparition%"
+#descr 32 "The caster summons ARTICLE_N %apparition% to attack a hostile commander in a distant province. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end

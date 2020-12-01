@@ -1,0 +1,104 @@
+#neweffect "Summon salamander"
+#effect 1
+#damage 213
+#spec 0
+#power 3
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 80
+#scalefatiguemult 40
+#sound 26
+#schools 1
+
+#paths 1
+#secondarypaths 1
+
+#skipchance 90
+
+#name 1 "Summon NAMEPREFIX %Salamander%"
+#descr 1 "Summons ARTICLE %salamander% to fight for the caster. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Salamander ritual"
+#effect 10001
+#damage 213
+#spec 0
+#power 2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "Summon NAMEPREFIX %Salamander%"
+#descr 1 "Summons ARTICLE %salamander% to fight for the caster. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+
+#scalerate 2
+#end
+
+#neweffect "Salamander Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 213
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 400
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX Salamander Attack"
+#descr 1 "Summons ARTICLE %salamander% to ambush a hostile in a distant lands. The salamander has a very good chance of killing a commander that is not resistant to fire. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon salamanders"
+#effect 10038
+#provrange 4
+#damage 213
+#spec 0
+#power 3
+#maxpower 9
+#nreff 1002
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 1
+#secondarypaths 1
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+
+#name 1 "Send NAMEPREFIX Salamanders"
+#descr 1 "Summons ARTICLE %salamander% to attack distant lands. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

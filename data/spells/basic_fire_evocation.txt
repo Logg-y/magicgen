@@ -1,0 +1,147 @@
+#neweffect "Small Heat Shock"
+#effect 3
+#damage 2010
+#spec 160
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 2
+#power 1
+#name 1 "Area Heat Shock"
+#name 2 "Area Heat Shock"
+#name 4 "Area Heat Shock"
+#name 8 "Area Heat Shock"
+#name 16 "Area Heat Shock"
+#name 32 "Area Heat Shock"
+#name 64 "Area Heat Shock"
+#name 128 "Area Heat Shock"
+#end
+
+
+#neweffect "Fire Evo Projectile"
+#effect 2
+#damage 2018
+-- firedmg, AP
+#spec 96
+-- evo
+#aoe 1
+#schools 4
+#range 40
+#precision 1
+#nextspell "Small Heat Shock"
+#flightspr 10073
+#explspr 10113
+#sound 123
+#fatiguecost 20
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "%$ball$% of $fire$"
+#name 1 "$fire$ %$ball$%"
+#name 4 "%blast% of heat"
+#name 2 "%blast% of heat"
+#name 8 "$fire$ %$ball$% from $underground$"
+#name 16 "$fire$ %$ball$% from beyond"
+#name 128 "$infernal$ $fire$ %$ball$%"
+
+#descr 2 "ARTICLE blast of heated air %is% launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
+#descr 4 "ARTICLE blast of heated air %is% created by drawing the cold out of the air. This is inaccurate but may severely burn SUBJECT."
+#descr 1 "ARTICLE %$ball$% of fire %is% launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
+#descr 8 "Heat from the earth is formed into ARTICLE %$ball$% and launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
+#descr 16 "Heat from somewhere in time and space is focused into ARTICLE %$ball$% and launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
+#descr 128 "$BLOOD_INTRO$, ARTICLE %$ball$% of fire %is% conjured and launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 38
+
+#power 1
+#scalerate 1
+#pathlevel 2
+#end
+
+#neweffect "Fire Evo Instant"
+#effect 2
+#damage 2010
+#spec 96
+#aoe 1003
+#power 4
+#precision 1
+#range 30
+#pathlevel 2
+#fatiguecost 20
+#explspr 10011
+#sound 123
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "Falling %$fire$%"
+#name 2 "Falling %$fire$%"
+#name 4 "Falling %$fire$%"
+#name 8 "%$fire$% from $underground$"
+#name 16 "%$fire$% from beyond"
+#name 128 "$infernal$ %$fire$%"
+#descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
+#descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
+#descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
+#descr 8 "Heat from the earth is gathered and brought upon a SIZE area of the caster's choosing. The resulting flames may badly burn enemies within."
+#descr 16 "Heat from somewhere in time and space is focused into a SIZE area of the caster's choosing. The resulting flames may badly burn enemies within."
+#descr 128 "$BLOOD_INTRO$, the caster directs infernal flames upon a group of his enemies. This may badly burn SUBJECT."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 8
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Scaling Heat Shock"
+#effect 3
+#damage 2010
+#spec 160
+#schools -1
+-- evo, scale aoe
+#spelltype 34
+#scalerate 2
+#explspr 10257
+#aoe 2
+#power 1
+#name 1 "Area Heat Shock"
+#name 2 "Area Heat Shock"
+#name 4 "Area Heat Shock"
+#name 8 "Area Heat Shock"
+#name 16 "Area Heat Shock"
+#name 32 "Area Heat Shock"
+#name 64 "Area Heat Shock"
+#name 128 "Area Heat Shock"
+#end
+
+
+#neweffect "Fire Evo Pillar"
+#effect 2
+#damage 2018
+#spec 96
+#aoe 1
+#power 4
+#precision 1
+#range 100
+#pathlevel 2
+#fatiguecost 20
+#explspr 10242
+#sound 123
+
+#paths 129
+#secondarypaths 1
+#nextspell "Scaling Heat Shock"
+#name 1 "Pillar of %$fire$%"
+#name 128 "Pillar of $infernal$ %$fire$%"
+#descr 1 "This spell creates a huge column of fire that strikes from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
+#descr 128 "$BLOOD_INTRO$, the caster creates a huge column of fire that strikes from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
+
+-- evo-like, battlefield allowed, scale dmg
+#spelltype 66
+#scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end

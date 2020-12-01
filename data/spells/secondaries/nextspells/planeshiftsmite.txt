@@ -1,0 +1,33 @@
+#neweffect "Planeshift Smite"
+#effect 108
+#damage -11
+#spec 8409216
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10251
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Send to Void"
+#name 2 "Send to Void"
+#name 4 "Send to Void"
+#name 8 "Send to Void"
+#name 16 "Send to Void"
+#name 32 "Send to Void"
+#name 64 "Send to Void"
+#name 128 "Send to Void"
+#name 256 "Send to Void"
+
+#end

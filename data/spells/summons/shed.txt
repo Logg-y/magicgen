@@ -1,0 +1,112 @@
+#neweffect "Summon shed"
+#effect 1
+#damage 2073
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#sound 31
+#schools 1
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 95
+
+#skipchance 75
+
+#name 128 "Bind NAMEPREFIX %Shed%"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to fight for him. Shedim are able to unleash blasts of lightning. This spell binds the %demon% only weakly and so will allow any surviving demons to return to their home plane when the battle is over."
+#scalefatiguemult 100
+#spelltype 528
+
+#scalerate 0.7
+#end
+
+#neweffect "shed ritual"
+#effect 10001
+#damage 2073
+#spec 0
+#power 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 1
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 95
+
+#skipchance 60
+
+#name 128 "Bind NAMEPREFIX %Shed%"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to fight for him. Shedim are able to unleash blasts of lightning."
+
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 620
+
+#scalerate 4
+#end
+
+#neweffect "shed Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2073
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 700
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 95
+
+#name 128 "NAMEPREFIX Shed Ambush"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to kill an enemy commander in a distant province. Shedim can unleash blasts of lightning."
+
+#skipchance 90
+
+#spelltype 4
+
+#end
+
+#neweffect "remote shed"
+#effect 10038
+#provrange 4
+#damage 2073
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 95
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 110
+
+#name 128 "Send NAMEPREFIX %Shed%"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to attack a distant province. Shedim can unleash blasts of lightning."
+
+#spelltype 20
+
+#scalerate 4
+#end

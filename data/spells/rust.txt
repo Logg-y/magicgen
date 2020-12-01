@@ -1,0 +1,64 @@
+#neweffect "Rust Equipment"
+#effect 11
+#damage 2199023255552
+#spec 8388608
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+#scalefatigueexponent -0.33
+
+#aoe 0
+#power -2
+#maxpower 2
+#pathlevel 1
+#explspr 10053
+#sound 31
+#fatiguecost 5
+#range 5030
+
+-- E, W
+#paths 12
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "Rust"
+#name 8 "Rust"
+#descr 4 "The caster rusts the armour of SUBJECT. This makes it weaker and more prone to becoming damaged when struck."
+#descr 8 "The caster rusts the armour of SUBJECT. This makes it weaker and more prone to becoming damaged when struck."
+#end
+
+#neweffect "Rust Battlefield"
+#effect 11
+#damage 2199023255552
+#spec 8388608
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 3
+#maxpower 3
+#pathlevel 3
+#explspr 10053
+#sound 31
+#fatiguecost 100
+#range 5010
+
+-- E, W
+#paths 12
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "Mass Rust"
+#name 8 "Mass Rust"
+#descr 4 "The caster rusts the armour of everyone on the battlefield. This makes it weaker and more prone to becoming damaged when struck."
+#descr 8 "The caster rusts the armour of everyone on the battlefield. This makes it weaker and more prone to becoming damaged when struck."
+#end

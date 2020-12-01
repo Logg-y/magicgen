@@ -1,0 +1,36 @@
+#neweffect "Regen"
+#effect 10
+#damage 32
+#spec 545275904
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.0
+
+#aoe 0
+#power 2
+#maxpower 8
+#pathlevel 2
+#explspr 10027
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe < 2 64 "Regeneration"
+#namecond2 2 <= aoe < 20 64 "Regeneration"
+
+#namecond2 20 <= aoe <= 666 64 "Mass Regeneration"
+
+#details "Grants 10% regeneration."
+
+#descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#end
+

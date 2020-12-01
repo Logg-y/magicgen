@@ -1,0 +1,104 @@
+#neweffect "Summon undine"
+#effect 1
+#damage 360
+#spec 41959424
+#power 3
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#sound 44
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Undines"
+#descr 4 "The caster calls forth several undines to fight for him. Undines are water spirits who serve Thalassa."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "undine ritual"
+#effect 10001
+#damage 360
+#spec 41959424
+#power 3
+#nreff 1004
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Undines"
+#descr 4 "The caster calls forth several undines to fight for him. Undines are water spirits who serve Thalassa."
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 70
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+#neweffect "undine Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 360
+#spec 41959424
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#onlygeodst 2052
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Undines Attack"
+#descr 4 "The caster calls an undine to search the sea for a hostile commander to attack."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon undine"
+#effect 10038
+#provrange 4
+#damage 360
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 1006
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#onlygeodst 2052
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Send NAMEPREFIX Undines"
+#descr 4 "The caster calls forth several undines to attack a distant province. Undines are water spirits who serve Thalassa."
+
+#spelltype 20
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 70
+
+#scalerate 2.0
+#end
+

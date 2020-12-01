@@ -1,0 +1,15 @@
+#newunitmod "Summon Airshield Lesser"
+#req airshield == -1
+#req prot < 10
+#set airshield 40
+#nameprefix "Windwrapped"
+#descr "This particular CREATURE is surrounded by magical winds which may block incoming projectiles."
+#end
+
+#newunitmod "Summon Airshield"
+#req airshield == -1
+#req prot < 10
+#set airshield 80
+#nameprefix "Windwrapped"
+#descr "This particular CREATURE is surrounded by magical winds which may block incoming projectiles."
+#end

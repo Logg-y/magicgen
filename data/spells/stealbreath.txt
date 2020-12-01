@@ -1,0 +1,63 @@
+#neweffect "Stealbreath"
+#effect 3
+#damage 5035
+#spec 537481344
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+-- #scalecost 1.6
+
+#aoe 0
+#power 2
+#maxpower 6
+#pathlevel 1
+#explspr 10265
+#sound 52
+#fatiguecost 20
+#precision 5
+#range 5020
+
+#paths 2
+#secondarypaths 2
+
+#namecond aoe < 1 2 "Steal Breath"
+
+#namecond aoe >= 1 2 "Theft of Breath"
+
+#descr 2 "The %victim% of this spell will have the breath stolen from them. Catching their breath will require quite an effort and the leave the %victim% exhausted."
+
+#end
+
+#neweffect "Battlefield Stealbreath"
+#effect 3
+#damage 5035
+#spec 554254464
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10265
+#sound 52
+#fatiguecost 200
+#precision 100
+#range 100
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Mass Breath Theft"
+
+#descr 2 "The caster attempts to steal the breath of all of his enemies. Catching their breath will require quite an effort and the leave the %victim% exhausted."
+
+#end

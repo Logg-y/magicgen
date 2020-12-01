@@ -1,0 +1,101 @@
+#neweffect "Summon manikin"
+#effect 1
+#damage 313
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 43
+#schools 16
+
+#paths 32
+#secondarypaths 64
+
+#skipchance 75
+
+#name 32 "Raise NAMEPREFIX %Manikin%"
+#descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."
+
+#spelltype 528
+
+#scalerate 0.7
+#end
+
+#neweffect "Manikin ritual"
+#effect 10001
+#damage 313
+#spec 8388608
+#power 3
+#nreff 3006
+#pathlevel 2
+#fatiguecost 300
+#schools 16
+
+#paths 32
+#secondarypaths 64
+
+#skipchance 75
+
+#name 32 "Raise NAMEPREFIX Manikins"
+#descr 32 "The caster enchants the bones of ARTICLE long dead %human% and enchants vines to control them. The resulting beings may put the living to sleep with their magical vines."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+
+#scalerate 2
+#end
+
+#neweffect "Manikin Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 313
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 16
+#skipchance 90
+
+#paths 32
+#secondarypaths 64
+
+#name 32 "NAMEPREFIX Manikin Ambush"
+#descr 32 "The caster enchants the bones of a long dead human and enchants vines to control them. The newly summoned manikin then seeks out and attacks an enemy commander in the targeted province. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon manikin"
+#effect 10038
+#provrange 4
+#damage 313
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 3016
+#pathlevel 3
+#fatiguecost 200
+#schools 16
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Raise NAMEPREFIX Manikins"
+#descr 32 "The caster enchants the bones of ARTICLE long dead %human%, enchants vines to control them, and sends them to a distant province. The resulting beings may put the living to sleep with their magical vines."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end

@@ -1,0 +1,87 @@
+#neweffect "Call Wraith Lord mounted"
+
+#effect 1
+#damage 182
+#spec 0
+#power 6
+#precision -100
+#nreff 2
+#pathlevel 3
+#chassisvalue 60
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX Wraith %Lord%"
+#descr 32 "The caster summons ARTICLE mounted %Wraith Lord% to fight for him on the battlefield. The %Wraith Lord% %is% ARTICLE mighty %warrior% riding an undead horse, but %has% no skill in magic and will leave once the battle is over."
+
+#scalefatiguemult 40
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Wraith Lord mounted"
+
+#effect 10021
+#damage 182
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 2
+#fatiguecost 1700
+#chassisvalue 1700
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 8
+#secondarypaths 8
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX Wraith Lord"
+#descr 32 "The caster summons ARTICLE mounted %Wraith Lord% to fight for him. This %Wraith Lord% %is% a mighty warrior riding an undead horse, but has no skill in magic. He is immortal and will rapidly "
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Wraith Lord mounted Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 182
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#chassisvalue 50
+#schools 1
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Wraith Lord Attack"
+#descr 32 "The caster summons ARTICLE mounted %Wraith Lord% to attack a hostile commander in a distant land.  The %Wraith Lord% %is% ARTICLE mighty %warrior% riding an undead horse, but %has% no skill in magic."
+
+#spelltype 4
+
+#end

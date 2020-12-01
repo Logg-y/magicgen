@@ -1,0 +1,31 @@
+#neweffect "Incinerate"
+#effect 2
+#damage 2008
+#spec 36028797027369120
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 9
+#pathlevel 2
+#explspr 10167
+#sound 16
+#precision 100
+#fatiguecost 20
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "Incinerate"
+#name 128 "Incinerate"
+#descr 1 "SUBJECT %is% consumed by flames from the inside. Armor does not protect against this spell. It can target victims over long distances and it is one of the very few Fire spells that can be used underwater."
+#descr 128 "$BLOOD_INTRO$, SUBJECT is consumed by flames from the inside. Armor does not protect against this spell. It can target victims over long distances and can be used underwater."
+
+#end

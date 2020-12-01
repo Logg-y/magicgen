@@ -1,0 +1,52 @@
+#neweffect "Call Animals"
+-- Deliberately making this high research as randomness could be unfair if given a HoS-scale version
+
+#effect 9043
+#damage -5
+#spec 0
+#power 7
+#precision -2
+#nreff 3
+#pathlevel 6
+#fatiguecost 400
+#sound 44
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Call Otherwordly Animals"
+#descr 64 "The caster calls for animals from other worlds to assist him in battle. The resulting waves of animals rush from the side of the battlefield to attack the caster's enemies, though they will return to their homes after the battle. The nature of the animals summoned is totally random, be it mundane, civilised or magical beasts."
+
+#spelltype 528
+
+#scalerate 1.4
+#skipchance 50
+#end
+
+-- This is the rather more boring summon local animals effect
+#neweffect "summonanimals ritual"
+#effect 10068
+#damage 403
+#spec 0
+#power 1
+#nreff 3005
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 75
+
+#name 64 "Summon Animals"
+#descr 64 "The caster summons animals from the local area to fight for him. The types of animals that respond to the call depends on the local terrain."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 10
+
+#scalerate 4
+#end

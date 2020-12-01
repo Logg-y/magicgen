@@ -1,0 +1,47 @@
+#newsecondary "Summon awe"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Awe"
+#descr "The summoned %creature% %is% surrounded by ARTICLE_N %aura% of splendour that may halt attackers in their tracks."
+
+#end
+
+#newsecondary "Summon animalawe"
+
+#anysummon 1
+
+#paths 64
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+
+#unitmod "Summon Animalawe"
+#descr "The summoned %creature% %is% surrounded by ARTICLE_N %aura% of splendour that may halt attacking animals in their tracks."
+
+#end
+
+#newsecondary "Summon Sunawe"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Sunawe"
+#descr "The summoned %creature% %is% surrounded by ARTICLE_N %aura% of splendour that may halt attacking animals in their tracks. This ability is only effective if the sun is visible."
+
+#end

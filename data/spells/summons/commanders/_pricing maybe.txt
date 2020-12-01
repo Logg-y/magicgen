@@ -1,0 +1,9 @@
+--40 gems x3x3 +/- various modifiers (homesick etc) (for powerful mages obviously getting +str etc shouldn't change their price)
+--17 gems x2x1
+--25 gems x3
+--8 gems x1
+--12 gems x2
+
+
+-- x2x2 22gem circle master
+--x2x2u1 25gem adept of the silver order

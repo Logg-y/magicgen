@@ -1,0 +1,105 @@
+#neweffect "Summon diseasedemon"
+#effect 1
+#damage 1662
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths 129
+
+#skipchance 90
+#ainocast 1
+#name 128 "Summon NAMEPREFIX Disease %Demon%"
+#descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE disease %demon% to aid him in battle. The disease demon spreads disease to all nearby, possibly including the caster if he is not resistant to magic."
+
+#spelltype 528
+
+#scalefatiguemult 270
+#scalerate 1
+#end
+
+#neweffect "diseasedemon ritual"
+#effect 10001
+#damage 1662
+#spec 0
+#power 3
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Bind NAMEPREFIX Disease %Demon%"
+#descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE disease %demon% to aid him in battle. The disease demon spreads disease to all nearby."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 450
+
+#scalerate 3
+#end
+
+#neweffect "diseasedemon Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1662
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "NAMEPREFIX Disease Demon Attack"
+#name 128 "Infernal NAMEPREFIX Disease"
+#descr 128 "$BLOOD_INTRO$, the caster binds a disease demon to ambush an enemy commander. The disease demon is a powerful combatant, and even if it survives there is a high chance the target will suffer from a disease."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote diseasedemon"
+#effect 10038
+#provrange 4
+#damage 1662
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 5
+#fatiguecost 800
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 350
+
+#name 128 "Send NAMEPREFIX Disease %Demon%"
+#descr 128 "$BLOOD_INTRO$, the caster summons a group of disease demons to attack a distant province."
+
+#spelltype 20
+
+#scalerate 3
+#end

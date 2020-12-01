@@ -1,0 +1,63 @@
+#neweffect "Returning"
+#effect 15
+#damage 1
+#spec 12599424
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 0
+#power 2
+#pathlevel 2
+#maxpower 7
+#explspr 10159
+#sound 1
+#fatiguecost 200
+#range 0
+
+#paths 16
+#secondarypaths 16
+
+#namecond aoe == 0 16 "Returning"
+#namecond aoe == 1 16 "Teleportation"
+
+#namecond2 1 < aoe < 30 16 "Group Teleportation"
+#namecond aoe > 600 16 "Vortex of Returning"
+
+#descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death."
+
+#end
+
+#neweffect "Returning Other"
+#effect 15
+#damage 1
+#spec 17592194711680
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 9
+-- #scalecost 1.5
+#range 5020
+
+#aoe 0
+#power 6
+#pathlevel 3
+#explspr 10251
+#sound 28
+#fatiguecost 20
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Forced Returning"
+
+#descr 16 "The caster attempts to force SUBJECT into a rift in space that takes them back to their capital. The travel is instantaneous, but there is a chance that individuals may become lost in the Void. This spell is certain death if the capital of the %victim% is not under their control."
+#details "Each victim is allowed a difficult MR check to avoid the effect."
+
+#end

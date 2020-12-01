@@ -1,0 +1,108 @@
+#neweffect "Summon ice devil"
+#effect 10089
+#damage 1
+#spec 0
+#power 6
+#maxpower 6
+#precision -2
+#nreff 1
+#pathlevel 6
+#fatiguecost 8800
+#schools 1
+
+#paths 128
+#secondarypaths 4
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There are six commanders that can be called with this spell."
+#name 128 "Bind Ice Devil"
+#descr 128 "The Blood mage sacrifices several blood slaves to contact and bind one of the six Ice Devils. Each Ice Devil is the ruler of one of the six icy realms of Kokytos, the cold lands of the Inferno. Their large bodies are composed of ice and they are constantly surrounded by a wind of infernal cold. Ice Devils are powerful mages of Water, but it is their physical might that sets them apart as generals of the Infernal wars."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon arch devil"
+#effect 10089
+#damage 2
+#spec 0
+#power 7
+#maxpower 7
+#precision -2
+#nreff 1
+#pathlevel 6
+#fatiguecost 9900
+#schools 1
+
+#paths 128
+#secondarypaths 1
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There are five commanders that can be called with this spell."
+#name 128 "Bind Arch Devil"
+#descr 128 "The Blood mage sacrifices several blood slaves to contact and bind one of the five Arch Devils to serve him. Arch Devils are the lords of the fiery regions of the Inferno. Winged and powerful, they lead the armies of the Inferno. They wield terrible weapons and can use their barbed tails to lash out at enemies, but it is their skill with Fire magic that makes them truly fearsome. Arch Devils radiate heat and are impervious to flames. Once an Arch Devil dies, it returns whence it came and can be summoned once again."
+
+#spelltype 4
+
+#scalerate 0
+#end
+
+#neweffect "Summon heliophagus"
+#effect 10089
+#damage 3
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 11100
+#schools 1
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#skipchance 0
+
+#details "There are four commanders that can be called with this spell."
+#name 128 "Bind Heliophagus"
+#descr 128 "The Blood mage sacrifices several blood slaves to contact and bind one of the four Heliophagii to serve him. Winged and powerful, the Heliophagii lead the armies of the Abyss. They are composed of darkness, but their claws and horns are golden and enchanted. Their ability to become invisible in shadows makes them truly horrible. Heliophagii are skilled in Blood magic. Once a Heliophagus dies, it returns to the Abyss and can be summoned once again."
+
+#spelltype 4
+
+#scalerate 0
+#end	
+
+
+#neweffect "Summon demon lord"
+#effect 10089
+#damage 10
+#spec 0
+#power 9
+#maxpower 9
+#precision -2
+#nreff 1
+#pathlevel 8
+#fatiguecost 15000
+#schools 1
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#skipchance 0
+
+#details "There are six commanders that can be called with this spell."
+#name 128 "Bind Demon Lord"
+#descr 128 "The Blood mage performs a beastly ritual, sacrificing vast numbers of slaves in an attempt to contact and bind one of the Demon Lords. There are but a few of these infernal rulers and their powers are shrouded in mystery."
+
+#spelltype 4
+
+#scalerate 0
+#end	

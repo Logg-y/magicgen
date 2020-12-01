@@ -1,0 +1,46 @@
+#newsecondary "Freeze"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+#req damage != 268435456
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Freezing"
+
+#descr "Creatures affected by this are also frozen, causing them to gain fatigue each turn."
+
+#end
+
+
+#newsecondary "Freeze damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power -1
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+#req damage != 268435456
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Freezing"
+
+#descr "Creatures affected by this are also frozen, causing them to gain fatigue each turn."
+
+#end

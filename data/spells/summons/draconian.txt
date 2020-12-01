@@ -1,0 +1,104 @@
+#neweffect "Summon draconian"
+#effect 1
+#damage 593
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 50
+#scalefatiguemult 20
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 75
+
+#name 2 "Summon NAMEPREFIX %Draconian%"
+#descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."
+
+#spelltype 528
+
+#scalerate 0.75
+#end
+
+#neweffect "draconian ritual"
+#effect 10001
+#damage 593
+#spec 0
+#power 5
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 75
+
+#name 2 "Summon NAMEPREFIX %Draconian%"
+#descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+
+#scalerate 4
+#end
+
+#neweffect "draconian Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 593
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Draconian Ambush"
+#descr 2 "The caster summons ARTICLE %draconian% to attack an enemy commander in a distant land. The draconian is a large, scaly humanoid with wings instead of arms."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon draconian"
+#effect 10038
+#provrange 4
+#damage 593
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1002
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Send NAMEPREFIX %Draconian%"
+#descr 2 "The caster summons ARTICLE %draconian% to attack a distant land. The draconian is a large, scaly humanoid with wings instead of arms."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

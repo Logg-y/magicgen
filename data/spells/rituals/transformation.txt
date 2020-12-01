@@ -1,0 +1,20 @@
+#neweffect "Transformation"
+#effect 10044
+#damage 1
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 2
+#fatiguecost 700
+#schools 2
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Transformation"
+#descr 64 "The caster is transformed into a random monster or animal. Some monsters, such as fire drakes, are closely attuned to an element or other magical path. If the caster successfully transforms into such a being he might gain magic power. Also the casters new body is young and healthy. The transformation is not without risk, however, as the caster's mind and body may be damaged in the process. Sometimes a failed transformation can result in the form of a mindless being and usually mind and magic abilities are lost as a result. But sometimes a being with powerful magic can retain his magic ability as the magic is too strong to let the absence of a mind stop it."
+#details "The caster transforms into a young monster, but lost limbs are still lost after the transformation. The chance of failure is 20% reduced or increased by the Luck/Misfortune scale value. If cast under water the transformation results in a water being."
+#spelltype 4
+#end

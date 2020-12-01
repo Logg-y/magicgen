@@ -1,0 +1,79 @@
+#neweffect "Banefire Decay"
+#effect 11
+#damage 256
+#spec 4224
+#schools -1
+#paths -1
+#name 32 "Decay"
+#spelltype 2
+#scalerate 0
+#aoe 1
+#power 1
+#name 1 "Banefire Decay"
+#name 32 "Banefire Decay"
+#end
+
+
+#neweffect "Banefire Projectile"
+#effect 2
+#damage 2028
+-- AP
+#spec 64
+-- evo
+#aoe 1
+#schools 4
+#range 5030
+#precision 4
+#nextspell "Banefire Decay"
+#flightspr 10067
+#explspr 10262
+#sound 16
+#fatiguecost 20
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+
+#name 32 "Banefire %Ball%"
+#name 1 "Banefire %Ball%"
+
+#descr 1 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr 32 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 38
+
+#power 5
+#scalerate 1
+#pathlevel 3
+#end
+
+#neweffect "Banefire Instant"
+#effect 2
+#damage 5040
+#spec 64
+#aoe 1
+#power 6
+#precision 1
+#range 5030
+#pathlevel 4
+#fatiguecost 30
+#explspr 10127
+#sound 16
+#nextspell "Banefire Decay"
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+
+#name 32 "Banefire"
+#name 1 "Banefire"
+
+#descr 1 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr 32 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end

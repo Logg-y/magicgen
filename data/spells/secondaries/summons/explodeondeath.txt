@@ -1,0 +1,32 @@
+#newsecondary "Summon Explode on Death"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 30
+
+#unitmod "Summon Explode on Death"
+#descr "The summoned %creature% %is% imbued with fire magic that causes %it% to explode when killed."
+
+#end
+
+
+#newsecondary "Summon Large Explode on Death"
+
+#anysummon 1
+
+#paths 1
+#power -2
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 70
+
+#unitmod "Summon Large Explode on Death"
+#descr "The summoned %creature% %is% imbued with fire magic that causes %it% to violently explode when killed."
+
+#end

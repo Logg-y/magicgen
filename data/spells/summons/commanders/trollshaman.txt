@@ -1,0 +1,58 @@
+#neweffect "Call Troll Shaman"
+
+#effect 21
+#damage 2220
+#spec 0
+#power 7
+#precision -100
+#nreff 1
+#pathlevel 6
+#chassisvalue 20
+#range 6
+#fatiguecost 80
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Summon NAMEPREFIX Troll %Shaman%"
+#descr 64 "The caster summons ARTICLE %Troll Shaman% to fight for him on the battlefield. The %Troll Shaman% is large, strong, and skilled in nature and death magic, but will leave once the battle is over."
+
+#scalefatiguemult 80
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Troll Shaman"
+
+#effect 10021
+#damage 2220
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 3000
+#chassisvalue 700
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Summon NAMEPREFIX Troll Shaman"
+#descr 64 "The caster summons ARTICLE %Troll Shaman% to fight for him. The %Troll Shaman% is skilled in death and nature magic and regenerates as all trolls do."
+
+#spelltype 20
+
+#scalerate 1
+#end

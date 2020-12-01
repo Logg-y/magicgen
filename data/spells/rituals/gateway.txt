@@ -1,0 +1,22 @@
+#neweffect "Gateway"
+#copyspell "Gateway"
+#effect 10080
+#damage 1
+#spec 8388608
+#power 5
+#maxpower 5
+#provrange 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 1000
+#schools 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Gateway"
+#descr 16 "The caster creates a rift in the fabric of space, allowing him to step through with all troops under his command and enter a distant laboratory that has been prepared for the gateway. The gateway can only lead to a lab controlled by the same nation, and it closes as soon as the troops have passed through."
+
+#spelltype 4
+#end

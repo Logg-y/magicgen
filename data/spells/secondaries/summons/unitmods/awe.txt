@@ -1,0 +1,26 @@
+#newunitmod "Summon Awe"
+#req awe == -1
+#req sunawe == -1
+#req animalawe == -1
+#set awe 1
+#nameprefix "Awesome"
+#descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks."
+#end
+
+#newunitmod "Summon Animalawe"
+#req awe == -1
+#req sunawe == -1
+#req animalawe == -1
+#set animalawe 1
+#nameprefix "Primal"
+#descr "This particular CREATURE is surrounded by an aura of splendour which may stop attacking animals in their tracks."
+#end
+
+#newunitmod "Summon Sunawe"
+#req awe == -1
+#req sunawe == -1
+#req animalawe == -1
+#set sunawe 1
+#nameprefix "Suntouched"
+#descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks. This ability is only active when the sun is visible."
+#end

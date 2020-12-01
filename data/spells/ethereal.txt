@@ -1,0 +1,38 @@
+#neweffect "Ethereal"
+#effect 10
+#damage 134217728
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 2.2
+
+#aoe 0
+#power 4
+#pathlevel 1
+#explspr 10002
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+-- astral
+#paths 16
+#secondarypaths 16
+
+#details "Ethereal: 75% chance to negate non-magical damage. Allows movement through walls."
+
+#namecond aoe < 2 16 "Body Ethereal"
+
+#namecond2 2 <= aoe < 666 16 "Ethereal Warriors"
+
+#namecond aoe == 666 16 "Ethereal Army"
+
+
+#descr 16 "The %body% of SUBJECT %is% made transparent and ghostlike."
+
+#end
+

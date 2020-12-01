@@ -1,0 +1,98 @@
+#newunitmod "Summon Immortality F3"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead == -1
+#req inanimate == -1
+#set immortal 1
+#fireres 10
+#set reformtime 0
+#nameprefix "Phoenixtouched"
+#descr "This particular CREATURE has been touched by a phoenix, making it more resistant to fire and allowing it to reform its body in the place it was summoned."
+#end
+
+#newunitmod "Summon Immortality F1"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead == -1
+#req inanimate == -1
+#set immortal 1
+#fireres 10
+#set reformtime -2
+#nameprefix "Phoenixtouched"
+#descr "This particular CREATURE has been touched by a phoenix, making it more resistant to fire and allowing it to quickly reform its body in the place it was summoned."
+#end
+
+#newunitmod "Summon Immortality FDom"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead == -1
+#req inanimate == -1
+#set domimmortal 1
+#fireres 10
+#nameprefix "Phoenixtouched"
+#descr "This particular CREATURE has been touched by a phoenix, making it more resistant to fire and allowing it to reform its body in the place it was summoned. This ability only works if killed within the dominion of its God."
+#end
+
+#newunitmod "Summon Immortality 3"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req inanimate == -1
+#set immortal 1
+#set reformtime 0
+#nameprefix "Immortal"
+#descr "This particular CREATURE has been magically given the ability to defy death, allowing it to reform its body in the place it was summoned."
+#end
+
+#newunitmod "Summon Immortality 1"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req inanimate == -1
+#set immortal 1
+#set reformtime -2
+#nameprefix "Immortal"
+#descr "This particular CREATURE has been magically given the ability to defy death, allowing it to quickly reform its body in the place it was summoned."
+#end
+
+#newunitmod "Summon Immortality Dom"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req inanimate == -1
+#set domimmortal 1
+#nameprefix "Immortal"
+#descr "This particular CREATURE has been magically given the ability to defy death, allowing it to reform its body in the place it was summoned. This ability only works if killed within the dominion of its God."
+#end
+
+#newunitmod "Summon Immortality Spring"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead == -1
+#req inanimate == -1
+#set springimmortal 1
+#nameprefix "Springtouched"
+#descr "This particular CREATURE has been given the ability to regenerate its body every spring."
+#end
+
+#newunitmod "Summon Undead Reforming"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead == 1
+#set reform 50
+#nameprefix "Reforming"
+#descr "This particular CREATURE has the ability to sometimes pull its eviscerated body parts back together and continue fighting."
+#end

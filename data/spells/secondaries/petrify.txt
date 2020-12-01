@@ -1,0 +1,119 @@
+#newsecondary "Petrification"
+
+-- evo only
+#spelltype 2
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+#paths 8
+#power 0
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Minor Petrification"
+
+#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#end
+
+#newsecondary "Greater Petrification"
+
+-- evo only
+#spelltype 2
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+#paths 8
+#power -1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Greater Petrification"
+
+#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#end
+
+
+#newsecondary "Petrification Damaging"
+
+-- evo only
+#spelltype 2
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+#paths 8
+#power 0
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Minor Petrification"
+
+#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#end
+
+#newsecondary "Greater Petrification damaging"
+
+-- evo only
+#spelltype 2
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- okay for holy
+
+#paths 8
+#power -1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Greater Petrification"
+
+#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#end
+
+#newsecondary "Smite petrification"
+
+-- evo only
+#spelltype 2
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe == 0
+#req paths == 256
+
+#paths 8
+#power -1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Smite Petrification"
+
+#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#end

@@ -1,0 +1,906 @@
+#neweffect "Arcane Nexus"
+#effect 10081
+#damage 19
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 8
+#fatiguecost 15000
+#schools 16
+
+#unique 1
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Arcane Nexus"
+#descr 16 "This mighty enchantment absorbs magical energies worldwide to replenish the caster's magical resources. Half of all magic gems used to cast spells and to create magic items will be absorbed into the Arcane Nexus and converted into astral pearls at a two to one ratio. The purity of Astral and Blood magic makes it impossible for the Nexus to absorb any magic when these types of spells are cast, but all other types of magic will have some of their power absorbed by the Nexus. Even when no spells are cast or no items are forged, the Nexus will absorb some ambient magic energy from the world."
+#details "Gathers Astral pearls equal to a quarter of all magic gems used for rituals and forging. Power from astral pearls and blood slaves are not gathered."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Astral Corruption"
+#effect 10081
+#damage 57
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 11
+#fatiguecost 16600
+#schools 16
+#unique 1
+#paths 128
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 128 "Astral Corruption"
+#descr 128 "This horrible ritual is the cause of Blood magic being banned in ancient times. With an awesome sacrifice, the fabric of astral space becomes tainted with blood. All spell casting uses the tainted Arcana and attracts the attention of Horrors. Every time a non-Blood magic ritual is cast or a magic item is forged, there is a chance that a Horror will follow the arcane flow and attack the mage."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Blood Vortex"
+#effect 10081
+#damage 87
+#spec 0
+#power 7
+#nreff 1
+#pathlevel 7
+#maxpower 7
+#fatiguecost 16600
+#schools 16
+#unique 1
+#paths 128
+#secondarypaths 128
+
+#name 128 "Blood Vortex"
+#descr 128 "This horrifying ritual creates the blood vortex. A churning pool of polluted blood that roars horrible yet terribly alluring songs. The song of the vortex is heard by all mortals in the world, whispering sweet melodies of death and carnage, beckoning all people to come bask in its crimson presence. Its song is especially strongly felt by those whose blood is suitable for blood rituals, summoning them to the site of the ritual. The mortals that enter its presence stare dumbfounded on the waves and swirls in the vortex, or throw themselves heedlessly to drown in the bloody swirls. The master of the ritual then collects suitable victims to use in other rituals. Eventually, when no life is left in the world around the vortex, it dries out and dies. Provinces with strong influences of order will be less affected by the beckoning and those with strong turmoil influences will be more drawn to the vortex."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Burden of Time"
+#effect 10081
+#damage 29
+#spec 8388608
+#power 5
+#nreff 1
+#pathlevel 5
+#maxpower 5
+#fatiguecost 7000
+#schools 32
+#unique 1
+#paths 32
+#secondarypaths 32
+
+#name 32 "Burden of Time"
+#descr 32 "This evil enchantment will make everyone in the world age at a highly accelerated rate. Unrest will increase in the entire world and soldiers will soon become crippled and useless. While this enchantment is active, the world will become more and more desolate until everyone dies."
+#details "Worldwide Population loss about -2%, slightly reduced or increased by growth/death scales, worldwide Unrest +d4, aging for units greatly increased."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Celestial Rainbow"
+#effect 10081
+#damage 90
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 9
+#fatiguecost 8000
+#schools 4
+#unique 1
+#paths 68
+#secondarypaths 68
+#secondarypathchance 90
+
+#name 64 "Celestial Rainbow"
+#name 4 "Celestial Rainbow"
+#descr 4 "This ritual creates a rainbow large enough to be seen from everywhere in the world. The mage can direct where he wants the rainbow to appear and by doing this huge amounts of gold can easily be collected at the base of the rainbow. While the rainbow is in place luck will increase in all the caster's provinces. Once the luck is positive in a province the luck of the rainbow will protect it from hostile spells. The more luck in a province, the greater chance of hostile spells failing."
+#descr 64 "This ritual creates a rainbow large enough to be seen from everywhere in the world. The mage can direct where he wants the rainbow to appear and by doing this huge amounts of gold can easily be collected at the base of the rainbow. While the rainbow is in place luck will increase in all the caster's provinces. Once the luck is positive in a province the luck of the rainbow will protect it from hostile spells. The more luck in a province, the greater chance of hostile spells failing."
+#details "Gold: about 500 each month. Luck scale +2. Dome Protection: 10% per luck scale level."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Dark Skies"
+#effect 10081
+#damage 32
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 32
+#unique 1
+#paths 2
+#secondarypaths 2
+#secondarypathchance 90
+
+#name 2 "Dark Skies"
+#descr 2 "Black clouds billow forth and cover the lands of your Dominion. All enemies under your Dominion will perceive the heavens as dark and oppressing. The stronger the Dominion is, the more fearful the skies. The dark skies severely lower the morale of those affected. The darkness also gives slightly lowered attack and defense skills to units without darkvision."
+#details "Enemy morale lowered by 1 for each point of dominion. Slight darkness in battles."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Earth Blood Deep Well"
+#effect 10081
+#damage 48
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 16
+#unique 1
+#paths 8
+#secondarypaths 8
+#secondarypathchance 90
+
+#name 8 "Earth Blood Deep Well"
+#descr 8 "A well, deeper than any other, is created. This well does not bring water, but rather blood from the Earth itself. This Earth Blood is then made into magical Earth gems that can be used for magic rituals. This global enchantment lasts until it is dispelled or the caster dies."
+#details "Generates 20 earth gems per month."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Enchanted Forests"
+#effect 10081
+#damage 24
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 7
+#fatiguecost 9000
+#schools 17
+#unique 1
+#paths 64
+#secondarypaths 64
+#secondarypathchance 90
+
+#name 64 "Enchanted Forests"
+#descr 64 "All forests will start to whisper the hymns to the pretender that controls this enchantment. This will spread dominion to the places where false pretenders were worshiped. When a forest has the right dominion it will start to attack instead of whispering hymns. Enemies in that province or neighboring provinces will be attacked by creatures of the awakening forest."
+#details "All forests under neutral or enemy dominion act as if they were temples of the caster's pretender. When the dominion has become friendly it stops spreading. Forests with friendly dominion will spontaneously spawn attacks from forest beings in the province or its neighbors if controlled by an enemy. A strong dominion or high Growth scale helps the effectiveness of the attacks and Wastelands are never attacked by the forest creatures."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Eternal Pyre"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 17
+#unique 1
+#paths 1
+#secondarypaths 1
+#secondarypathchance 90
+
+#name 1 "Eternal Pyre"
+#descr 1 "A huge blazing pyre lights up the landscape. It never burns out and the embers of the pyre will absorb the heat and can be harvested as magical gems imbued with the fiery power of the pyre."
+#details "Generates 20 fire gems per month."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Fata Morgana"
+#effect 10081
+#damage 53
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 9000
+#schools 17
+#unique 1
+#paths 2
+#secondarypaths 2
+#secondarypathchance 90
+
+#name 2 "Fata Morgana"
+#descr 2 "Under the fata morgana life seems much easier and everyone is happy. Phantasmal Warriors will assist the local defence in defending the province against invaders. If the entire province should not be hidden from the enemy, enemy scouts will be still be tricked by the illusions and likely give incorrect reports about armies present. All provinces in friendly dominion will be affected by the fata morgana."
+#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. False scout reports."
+
+#spelltype 4
+#scalerate 0
+#end	
+
+#neweffect "Forge of the Ancients"
+#effect 10081
+#damage 20
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 8000
+#schools 8
+#unique 1
+#paths 8
+#secondarypaths 8
+#secondarypathchance 90
+
+#name 8 "Forge of the Ancients"
+#descr 8 "The ancient forge of the Great One's servants is reconstructed. The magic of the forge will reduce the need for magic essence when forging magic items. It also enables mages to create more powerful items."
+#details "All magic items forged have their gem cost reduced by 20%. All mages craft items as if they had the ability Master smith +1."
+
+#spelltype 4
+#scalerate 0
+#end	
+
+#neweffect "Foul Air"
+#effect 10081
+#damage 10
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 7500
+#schools 32
+#unique 1
+#paths 34
+#secondarypaths 34
+#secondarypathchance 100
+
+#name 2 "Foul Air"
+#name 32 "Foul Air"
+#descr 2 "The air will become polluted by a deadly disease when this enchantment is cast. Anyone who is wounded will instantly become diseased due to the foul air. This enchantment affects all land provinces in the entire world and will last until dispelled or the caster dies. Unrest will increase worldwide while the enchantment is active."
+#descr 32 "The air will become polluted by a deadly disease when this enchantment is cast. Anyone who is wounded will instantly become diseased due to the foul air. This enchantment affects all land provinces in the entire world and will last until dispelled or the caster dies. Unrest will increase worldwide while the enchantment is active."
+#details "Worldwide Unrest +d4."
+
+#spelltype 4
+#scalerate 0
+#end	
+
+#neweffect "Gale Gate"
+#effect 10081
+#damage 49
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 7500
+#schools 32
+#unique 1
+#paths 2
+#secondarypaths 2
+#secondarypathchance 100
+
+#name 2 "Gale Gate"
+#descr 2 "The caster opens a rift in space creating a gate into a realm of storms. Huge amounts of aerial magic are effectively channeled through this gate, producing twenty Air gems each turn. Not all of the powers of the Gale Gate can be harnessed though. Hurricanes and storms will be randomly unleashed upon provinces not controlled by the caster."
+#details "Grants 20 air gems per turn."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Ghost Ship Armada"
+#effect 10081
+#damage 43
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 7
+#fatiguecost 6000
+#schools 16
+#unique 1
+#paths 36
+#secondarypaths 36
+#secondarypathchance 100
+
+#name 4 "Ghost Ship Armada"
+#name 32 "Ghost Ship Armada"
+#descr 4 "This spell will awaken the dead Admiral Torgrin and make him fight for your cause. The Admiral will attack random coastal provinces controlled by your enemies and plunder it. The gold will be returned to the caster of the enchantment and the dead will be used to build up the armada. Once enough people have been killed the Admiral will create a new ghost armada. If the main armada with Admiral Torgrin is defeated no new armadas will be created. Once all armadas are defeated the enchantment will dissipate."
+#descr 32 "This spell will awaken the dead Admiral Torgrin and make him fight for your cause. The Admiral will attack random coastal provinces controlled by your enemies and plunder it. The gold will be returned to the caster of the enchantment and the dead will be used to build up the armada. Once enough people have been killed the Admiral will create a new ghost armada. If the main armada with Admiral Torgrin is defeated no new armadas will be created. Once all armadas are defeated the enchantment will dissipate."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Gift of Health"
+#effect 10081
+#damage 30
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 16
+#unique 1
+#paths 64
+#secondarypaths 64
+#secondarypathchance 100
+
+#name 64 "Gift of Health"
+#descr 64 "This gift grants excellent health to all loyal subjects inside the God's Dominion. The gifted ones receive extra hit points, grow old more slowly and may even heal permanent afflictions."
+#details "HP +10% per dominion. Chance of healing afflictions: about 10% per dominion. Aging reduced by half."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Gift of Nature's Bounty"
+#effect 10081
+#damage 27
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 7000
+#schools 16
+#unique 1
+#paths 64
+#secondarypaths 64
+#secondarypathchance 100
+
+#name 64 "Gift of Nature's Bounty"
+#descr 64 "All life in the God's Dominion is blessed. Grain grows more quickly, the mustard tastes better, the ducks are fatter and all living creatures mate and give birth to young. The income of lands under the God's Dominion is greatly increased."
+#details "Income: +20% per dominion."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Guardians of the Deep"
+#effect 10081
+#damage 52
+#spec 41943040
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 6
+#fatiguecost 6000
+#schools 1
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Guardians of the Deep"
+#descr 4 "Sea monsters will help the local militia defend underwater provinces for as long as this spell is in effect. The defending monsters are dependent on the terrain and type of sea. The monsters require some small degree of leadership and guidance, so a small local defence is required for the enchantment to have any effect, but sometimes a group of monsters can emerge and attack enemy provinces under your dominion. The global enchantment will last until it is dispelled or the caster dies."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Haunted Forest"
+#effect 10081
+#damage 27
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 6000
+#schools 16
+#unique 1
+#paths 96
+#secondarypaths 96
+#secondarypathchance 100
+
+#name 64 "Haunted Forest"
+#name 32 "Haunted Forest"
+#descr 64 "Vines will merge with anyone killed in the God's Dominion, creating an undead Manikin. The Manikin will fight any enemies of the God for a short while before it is totally dissolved by the vines. Undead or inanimate beings are not affected by the spell."
+#descr 32 "Vines will merge with anyone killed in the God's Dominion, creating an undead Manikin. The Manikin will fight any enemies of the God for a short while before it is totally dissolved by the vines. Undead or inanimate beings are not affected by the spell."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Lure of the Deep"
+#effect 10081
+#damage 50
+#spec 41943040
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 7000
+#schools 32
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Lure of the Deep"
+#descr 4 "Sirens will start to emerge from the deeps when this powerful enchantment is cast. The Sirens will sing to enemy troops and lure them down to certain death in the deeps. The lure is most persuasive in coastal and sea provinces with strong friendly Dominion. Inland provinces are not affected at all. Nations that can recruit Sirens will find that this is cheaper while this enchantment is in effect. This global enchantment can only be cast in an underwater laboratory."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Maelstrom"
+#effect 10081
+#damage 47
+#spec 41943040
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 4
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Maelstrom"
+#descr 4 "A huge magical maelstrom is created in a sea. The maelstrom constantly sucks in huge amounts of water and filters out its magical essence. This results in a huge amount of magic gems for the caster."
+#details "Grants 15 Water, 5 astral, 3 air and 1 of each other gem type each month."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Mechanical Militia"
+#effect 10081
+#damage 51
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 8000
+#schools 8
+#unique 1
+#paths 8
+#secondarypaths 8
+#secondarypathchance 100
+
+#name 8 "Mechanical Militia"
+#descr 8 "Mechanical Men will help the local militia defend their provinces as long as this spell is in effect. The constructs require leadership and guidance, so a small local defence is required for the enchantment to have any effect. The global enchantment will last until it is dispelled or the caster dies."
+#details "Province Defense 1+: +1 Mechanical Man. Province Defense 20+: +1 Iron Fly."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Mother Oak"
+#effect 10081
+#damage 46
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 18
+#unique 1
+#paths 64
+#secondarypaths 64
+#secondarypathchance 100
+
+#name 64 "Mother Oak"
+#descr 64 "The oldest and mightiest of all oaks in the realm is enchanted to become the greatest oak there ever was. The Mother Oak produces magical acorns that can be harvested and made into Nature gems."
+#details "Generates 10 nature gems per turn."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Perpetual Storm"
+#effect 10081
+#damage 16
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 7000
+#schools 8
+#unique 1
+#paths 130
+#secondarypaths 2
+#secondarypathchance 100
+
+#name 2 "Perpetual Storm"
+#name 128 "Perpetual Storm"
+#descr 2 "An enormous storm will rage constantly over the entire world. This will reduce the income of all land provinces. Supplies are scarce, as transportation is difficult and sailing and flying is impossible. All mountain passes are unusable during the perpetual storm and shooting in battle is very difficult. Evocations cast upon distant provinces might fail as the magical gale pushes the projectiles out of their trajectory."
+#descr 128 "An enormous storm will rage constantly over the entire world. This will reduce the income of all land provinces. Supplies are scarce, as transportation is difficult and sailing and flying is impossible. All mountain passes are unusable during the perpetual storm and shooting in battle is very difficult. Evocations cast upon distant provinces might fail as the magical gale pushes the projectiles out of their trajectory."
+#details "All battles are affected by storm. Income -20%. Map movement costs are increased by 2. Far-attack spells such as Fires from Afar have a 25% chance of missing their targets. Seeking Arrow has a 75% chance of missing its target. Underwater and cave provinces are not affected."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Purgatory"
+#effect 10081
+#damage 26
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 6000
+#schools 32
+#unique 1
+#paths 1
+#secondarypaths 1
+#secondarypathchance 100
+
+#name 1 "Purgatory"
+#descr 1 "Holy fire will strike undead enemy creatures in the God's Dominion. The more powerful the Dominion, the more undead will be killed."
+#details "All hostile undead beings have Dominion * 10% chance of being hit by 18 AP fire damage."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Riches from Beneath"
+#effect 10081
+#damage 35
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 7000
+#schools 16
+#unique 1
+#paths 8
+#secondarypaths 8
+#secondarypathchance 100
+
+#name 8 "Riches from Beneath"
+#descr 8 "This enchantment transform mining from something harsh and dangerous to a really uplifting experience. The miners can carve out gold and iron with their knives and the stone is extra soft where the valuable ore veins are as if the mountain is trying to guide them. The enchantment only works within friendly dominion and a higher dominion score will make it more effective. The enchantment gives a major boost to resource production and a minor boost to gold production, both increases depend on the resource value of the province. Also all magic sites that are income yielding mines will have their income up to doubled."
+#details "Resources: +20% * dominion (max +100%). Province Income: +4% * resource value * dominion (max dominion 5). Income from mines + 20% * dominion (max +100%)."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Sea of Ice"
+#effect 10081
+#damage 28
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 18
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Sea of Ice"
+#descr 4 "All lakes, seas and rivers in the world are frozen by this powerful enchantment. This makes travel between land and sea impossible, except by magical means such as teleportation. The frozen seas also prevent all means of sailing."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Second Sun"
+#effect 10081
+#damage 41
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 8
+#fatiguecost 8000
+#schools 4
+#unique 1
+#paths 1
+#secondarypaths 1
+#secondarypathchance 100
+
+#name 1 "Second Sun"
+#descr 1 "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed."
+#details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate."
+
+#spelltype 4
+#scalerate 0
+#end
+
+
+#neweffect "Stellar Focus"
+#effect 10081
+#damage 54
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#schools 16
+#unique 1
+#paths 16
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 16 "Stellar Focus"
+#descr 16 "This spell focuses the light of the night sky into a crystal sphere. The light in the sphere is so intense and pure that pearls will start to grow from it."
+#details "Generates 5 astral pearls per month."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Strands of Arcane Power"
+#effect 10081
+#damage 79
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 7000
+#schools 4
+#unique 1
+#paths 16
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 16 "Strands of Arcane Power"
+#descr 16 "This mighty enchantment enables the caster to project his mind to many distant places at once, via strands of arcane power. While projected, the caster will only be able to sense and affect magic, but this still makes it possible to search for magic sites and enemy mages. The caster will be able to project himself into all provinces that have a friendly Dominion. Magic sites are more elusive when searching in this way and a very powerful mage is required to find those that are well hidden. Mages are usually able to stay hidden from the projected mind if they have a good magic resistance value. If an Astral mage is found, a battle of the minds will ensue. Only one will leave it with their mind intact. Non-astral mages cannot try to retaliate, but neither do they risk losing their sanity in the process. However, they will be subjected to a minor Mind Burn attack if they are found. If the caster becomes feebleminded the enchantment will dissipate."
+#details "Mind Burn: 10 AN dmg (MR negates), penetration bonuses makes the MR test harder."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Eyes of God"
+#effect 10081
+#damage 15
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 16
+#unique 1
+#paths 16
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 16 "The Eyes of God"
+#descr 16 "This enchantment enables the mage to see all provinces in the world. Dominions can be seen in great detail and so can discovered magic sites, but income cannot be determined exactly. Inside the God's own Dominion troop movements can be seen in great detail and enemy illusions and phantasms are dispelled on the battlefield. Patrolling units will find it much easier to detect enemy scouts and to quell unrest. The historic records for all nations can be accessed and everyone on the Hall of Fame can be inspected."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Kindly Ones"
+#effect 10081
+#damage 80
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 7
+#fatiguecost 4000
+#schools 1
+#unique 1
+#paths 65
+#secondarypaths 65
+#secondarypathchance 100
+
+#name 1 "The Kindly Ones"
+#name 64 "The Kindly Ones"
+#descr 1 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills those who have killed many people, the seconds one hunts those who use blood magic and the third one hunts people at random. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
+#descr 64 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills those who have killed many people, the seconds one hunts those who use blood magic and the third one hunts people at random. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Looming Hell"
+#effect 10081
+#damage 43
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 7
+#fatiguecost 8800
+#schools 1
+#unique 1
+#paths 128
+#secondarypaths 128
+#secondarypathchance 100
+
+#name 128 "The Looming Hell"
+#descr 128 "Devils will appear in the dreams of some unfortunate enemies whenever they try to sleep. These Devils, through various threats, will try to persuade their victims to sell their souls and join in the killing of their own commander. The strength of the threats depends on the strength of the God's Dominion, but extreme courage is always required to defy the Devils. The Devils are totally powerless if they are unable to persuade any victims, which may well happen should the enemy commander be more feared than they are."
+#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear)."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Wrath of God"
+#effect 10081
+#damage 14
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 7
+#fatiguecost 7000
+#schools 4
+#unique 1
+#paths 18
+#secondarypaths 18
+#secondarypathchance 100
+
+#name 16 "The Wrath of God"
+#name 2 "The Wrath of God"
+#descr 16 "With this enchantment, lighting will strike the enemies of the God, no matter where they are. However, the lightning bolts strike most powerfully in provinces where the God has a strong Dominion. In provinces with a high turmoil scale more thunderbolts strike and enemies under water or inside caves are not affected."
+#descr 2 "With this enchantment, lighting will strike the enemies of the God, no matter where they are. However, the lightning bolts strike most powerfully in provinces where the God has a strong Dominion. In provinces with a high turmoil scale more thunderbolts strike and enemies under water or inside caves are not affected."
+#details "Hit chance per month: 2% + 2% * dominion + turmoil (minimum 1% chance). Damage: 9 AN."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Thetis Blessing"
+#effect 10081
+#damage 59
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 18
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Thetis' Blessing"
+#descr 4 "Allows all troops in the world to enter the sea and breathe under water. Fighting below the surface will still be a little awkward for those not used to it, but at least it will be doable."
+#details "Poor Amphibian penalty: -50% combat speed, Att -3, Def -3, Enc +1."
+
+#spelltype 4
+#scalerate 0
+#end
+
+
+
+#neweffect "Utterdark"
+#effect 10081
+#damage 56
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 9
+#fatiguecost 10000
+#schools 18
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 100
+#unique 1
+#name 32 "Utterdark"
+#descr 32 "The world is covered by a blanket of utter darkness. All living beings must use torches to see even a few feet in front of themselves. During the perpetual night, forces of darkness and roaming shades will attack enemy provinces."
+#details "Worldwide Income and Resources -90%. Caves and deep seas are exempt from the income reduction. All battles are fought under Darkness -6. Demons, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+
+#spelltype 4
+#scalerate 0
+#end
+
+
+
+#neweffect "Vengeful Water"
+#effect 10081
+#damage 93
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 7
+#fatiguecost 8000
+#schools 32
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Vengeful Water"
+#descr 4 "Water in friendly dominion will animate and try to kill enemy commanders whenever possible. The elemental is stronger in provinces with a rich water supply than in dry provinces."
+#details "Chance of elemental attacking: 5% + dominion * 2%."
+
+#spelltype 4
+#scalerate 0
+#end
+
+
+#neweffect "Well of Misery"
+#effect 10081
+#damage 33
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 51
+#unique 1
+#paths 32
+#secondarypaths 32
+#secondarypathchance 100
+
+#name 32 "Well of Misery"
+#descr 32 "This mighty ritual is a blessing to units across the world. Diseases, old age, suffering and pains are all drained of some of their essence. All malign energies are siphoned from the world and concentrated in the Well of Misery, effectively giving the caster a huge income of magical gems of Death. Each month 21 death gems are generated. Tax revenue is also slightly increased in all provinces of the world."
+#details "Generates 21 Death gems each month. Increases income worldwide by +10%."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Wild Hunt"
+#effect 10081
+#damage 75
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 100
+#unique 1
+#name 64 "Wild Hunt"
+#descr 64 "The caster unleashes the Wild Hunt upon the world. The Hunt is led by Herne the Lord of the Hunt, an ancient deity of the wild roaming the woodlands in search of those who have offended the wild and its inhabitants. When the Hunt has been called, powerful priests of enemy faiths will be hunted down for as long as the Lord is not slain."
+#details "The Wild Hunt targets enemy priests located in forest provinces. Apart from the main hunt led by Herne the Lord of the Hunt, there are two lesser hunts without the Lord."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Wrath of the Sea"
+#effect 10081
+#damage 18
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 7000
+#schools 1
+#unique 1
+#paths 4
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Wrath of the Sea"
+#descr 4 "The sea will rise and flood all coastal provinces. Provinces that are struck by the flood will have their income reduced."
+#details "Coastal provinces and provinces with lakes will get income -30%"
+
+#spelltype 4
+#scalerate 0
+#end

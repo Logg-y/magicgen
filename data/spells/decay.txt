@@ -1,0 +1,68 @@
+#neweffect "Decay"
+#effect 11
+#damage 256
+#spec 8392704
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 0.6
+
+#aoe 0
+#power 1
+#pathlevel 1
+#maxpower 6
+#explspr 10197
+#sound 23
+#fatiguecost 20
+#range 5020
+#precision 100
+
+#paths 32
+#secondarypaths 32
+
+#namecond aoe == 0 32 "Decay"
+
+#namecond2 0 < aoe < 600 32 "Burden of Age"
+#namecond aoe > 600 32 "Wind of Death"
+
+#descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+
+#end
+
+#neweffect "Mass Decay"
+#effect 11
+#damage 256
+#spec 25165824
+#schools 32
+
+-- evo-like
+#spelltype 2
+
+#scalerate 2
+-- #scalecost 0.6
+
+#aoe 666
+#power 7
+#pathlevel 6
+#maxpower 7
+#explspr 10197
+#sound 23
+#fatiguecost 300
+#range 5020
+#precision 100
+
+#paths 32
+#secondarypaths 32
+
+#namecond aoe == 0 32 "Decay"
+
+#namecond2 0 < aoe < 600 32 "Burden of Age"
+#namecond aoe > 600 32 "Wind of Death"
+
+#descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+
+#end
+

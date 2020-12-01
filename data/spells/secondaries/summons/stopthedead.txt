@@ -1,0 +1,15 @@
+#newsecondary "Summon stopthedead"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Stopthedead"
+#descr "Undead wounded by the attacks of the %creature% may become paralyzed."
+
+#end

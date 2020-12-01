@@ -1,0 +1,37 @@
+#neweffect "False Fetters"
+#effect 11
+#damage 131072
+#spec 8409088
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.2
+-- #scalecost 0.6
+
+#aoe 0
+#power -1
+#pathlevel 1
+#explspr 10045
+#sound 42
+#fatiguecost 10
+#range 5010
+
+#paths 130
+#secondarypaths 2
+
+#namecond aoe < 666 2 "$illusory$ $fetters$"
+#namecond aoe < 666 128 "$illusory$ $fetters$"
+
+#namecond aoe == 665 2 "Shackled Army"
+#namecond aoe == 665 128 "Shackled Army"
+
+#namecond aoe == 663 2 "Shackled Army"
+#namecond aoe == 663 128 "Shackled Army"
+
+#descr 2 "$illusory$ $fetters$ spring into existence around the ankles of SUBJECT. Their magic must be overcome in order to take actions."
+#descr 128 "$BLOOD_INTRO$, infernal powers bind the ankles of SUBJECT with $illusory$ $fetters$. Their magic must be overcome in order to take actions."
+
+#end
+

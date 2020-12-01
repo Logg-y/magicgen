@@ -1,0 +1,62 @@
+#neweffect "Polymorph Frog"
+#effect 54
+#damage 2222
+#spec 546197504
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 5
+-- #scalecost 2.5
+
+#aoe 0
+#power 5
+#pathlevel 3
+#explspr 10001
+#sound 29
+#fatiguecost 20
+#range 5015
+#precision 100
+
+-- only nature
+#paths 64
+#secondarypaths 64
+
+#name 64 "Curse of the Frog"
+
+#descr 64 "The caster causes SUBJECT to become a frog for the rest of PRONOUN_POS %life%."
+
+#end
+
+#neweffect "Polymorph Insect"
+#effect 54
+#damage -9
+#spec 546197504
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 5
+-- #scalecost 2.5
+
+#aoe 0
+#power 5
+#pathlevel 3
+#explspr 10001
+#sound 29
+#fatiguecost 20
+#range 5015
+#precision 100
+
+-- only nature
+#paths 64
+#secondarypaths 64
+
+#name 64 "Curse of the Insect"
+
+#descr 64 "The caster causes SUBJECT to become a random bug for the rest of PRONOUN_POS %life%."
+
+#end
+

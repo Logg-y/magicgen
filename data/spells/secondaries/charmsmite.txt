@@ -1,0 +1,24 @@
+#newsecondary "Charm Smite"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe == 0
+
+-- not ritual
+#req spelltype !& 4
+#req path == 256
+
+
+#nextspell "Charm Smite"
+
+#descr "The energy focused by the priest allows him to attempt to alter the allegiance of his target if he survives."
+
+#end

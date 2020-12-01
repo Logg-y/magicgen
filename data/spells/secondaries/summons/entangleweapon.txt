@@ -1,0 +1,15 @@
+#newsecondary "Summon Entangleweapon"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.9
+
+#unitmod "Summon Entangleweapon"
+#descr "The summoned %creature% %is% able to trap enemies in vines upon being wounded by its attacks."
+
+#end

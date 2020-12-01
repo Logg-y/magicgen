@@ -1,0 +1,117 @@
+#neweffect "Summon bogbeast"
+#effect 1
+#damage 578
+#spec 0
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#scalefatiguemult 20
+#sound 31
+#schools 1
+
+#paths 68
+#secondarypaths 68
+#secondarypathchance 80
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Bog %Beast%"
+#name 64 "Summon NAMEPREFIX Bog %Beast%"
+#descr 64 "The caster summons ARTICLE bog %beast% to fight for him. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+#descr 4 "The caster summons ARTICLE bog %beast% to fight for him. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+
+#spelltype 528
+
+#scalerate 1
+#ainocast 1
+#end
+
+#neweffect "bogbeast ritual"
+#effect 10001
+#damage 578
+#spec 0
+#power 4
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 68
+#secondarypaths 68
+#secondarypathchance 80
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Bog %Beast%"
+#name 64 "Summon NAMEPREFIX Bog %Beast%"
+#descr 64 "The caster summons ARTICLE bog %beast% to fight for him. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+#descr 4 "The caster summons ARTICLE bog %beast% to fight for him. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+
+#scalerate 4
+#end
+
+#neweffect "bogbeast Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 578
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 68
+#secondarypaths 68
+#secondarypathchance 80
+
+#name 4 "NAMEPREFIX Bog %Beast% Attack"
+#name 64 "NAMEPREFIX Bog %Beast% Attack"
+#descr 64 "The caster sends ARTICLE bog %beast% to ambush an enemy commander in a distant province. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+#descr 4 "The caster sends ARTICLE bog %beast% to ambush an enemy commander in a distant province. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon bogbeast"
+#effect 10038
+#provrange 4
+#damage 578
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 68
+#secondarypaths 68
+#secondarypathchance 80
+
+#name 4 "Send NAMEPREFIX Bog %Beast%"
+#name 64 "Send NAMEPREFIX Bog %Beast%"
+#descr 64 "The caster sends ARTICLE bog %beast% to attack a distant province. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+#descr 4 "The caster sends ARTICLE bog %beast% to attack a distant province. The bog beast is a cold-blooded creature that spits poison, and is surrounded by poisonous gas at all times."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

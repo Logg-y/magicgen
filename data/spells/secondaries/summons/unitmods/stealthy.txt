@@ -1,0 +1,7 @@
+#newunitmod "Summon Stealthy"
+#req stealthy == -1
+#req immobile == -1
+#set stealthy 0
+#nameprefix "Stealthy"
+#descr "This particular CREATURE has been imbued by magic that enables it to hide from view."
+#end

@@ -1,0 +1,79 @@
+#neweffect "Raise Ghoul Ritual"
+#effect 10001
+#damage 198
+#spec 8388608
+#power 1
+#nreff 3005
+#pathlevel 1
+#fatiguecost 100
+#schools 2
+
+#skipchance 20
+
+#paths 32
+#secondarypaths 32
+
+#scalefatigueexponent 0.4
+#scalefatiguemult 40
+
+#name 32 "Raise NAMEPREFIX Ghouls"
+#descr 32 "The caster transforms several beings into undead ghouls."
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+
+#neweffect "Longdead Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 198
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 16
+#skipchance 80
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Ghoul Attack"
+#descr 32 "The caster raises the newly dead and sends it to attack a commander in a distant province. If it survives the encounter, the magic animating it unravels, leaving only the corpse."
+
+#spelltype 4
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon ghouls"
+#effect 10038
+#provrange 4
+#nogeodst 2052
+#damage 198
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 3010
+#pathlevel 3
+#fatiguecost 300
+#schools 16
+
+#scalefatigueexponent 0.4
+#scalefatiguemult 40
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Arouse Hunger"
+#descr 32 "The caster converts a number of beings in the targeted province into ghouls."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

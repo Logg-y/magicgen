@@ -1,0 +1,31 @@
+#neweffect "Damage Reversal"
+#effect 500
+#damage 202
+#spec 16384
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 1.4
+
+#aoe 0
+#power 8
+#maxpower 12
+#pathlevel 1
+#explspr 10216
+#sound 31
+#range 10
+#fatiguecost 100
+
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Damage Reversal"
+
+#descr 128 "This spell will bring the ultimate protection for SUBJECT in battle. Whenever PRONOUN is wounded, the damage is transferred to the one who tried to wound him. Magic resistance might prevent this from taking effect, so the mage is not fully invulnerable. This method of protection is also rumored to be used by some of the most powerful and magically attuned beings."
+
+#end
+

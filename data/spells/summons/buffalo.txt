@@ -1,0 +1,109 @@
+#neweffect "Summon buffalo"
+#effect 1
+#damage 3009
+#spec 0
+#power 4
+#precision -2
+#nreff 2
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#schools 1
+#scalefatiguemult 20
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Buffalo"
+#descr 64 "The caster summons ARTICLE buffalo. Buffalo are large and trample enemies, but are rather vulnerable to magic."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "buffalo ritual"
+#effect 10001
+#damage 3009
+#spec 0
+#power 4
+#nreff 2001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Buffalo"
+#descr 64 "The caster summons ARTICLE buffalo. Buffalo are large and trample enemies, but are rather vulnerable to magic."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#scalerate 4
+#end
+
+#neweffect "buffalo Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 3009
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 400
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Buffalo Attack"
+#descr 64 "The caster summons ARTICLE buffalo to attack a hostile commander in a distant land. Buffalo are large and trample enemies, but are rather vulnerable to magic."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote buffalo"
+#effect 10038
+#provrange 4
+#damage 3009
+#spec 0
+#power 4
+#maxpower 9
+#nreff 2003
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#name 64 "Send NAMEPREFIX Buffalo"
+#descr 64 "The caster summons ARTICLE buffalo to attack a distant land. Buffalo are large and trample enemies, but are rather vulnerable to magic."
+
+
+#spelltype 20
+
+#scalerate 4
+#end

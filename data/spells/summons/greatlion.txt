@@ -1,0 +1,108 @@
+#neweffect "Summon greatlion"
+#effect 1
+#damage 628
+#spec 0
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Great %Lion%"
+#descr 64 "The caster summons ARTICLE great %lion%. These lions are large and ferocious."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "greatlion ritual"
+#effect 10001
+#damage 628
+#spec 0
+#power 3
+#nreff 1001
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Great %Lion%"
+#descr 64 "The caster summons ARTICLE great %lion%. These lions are large and ferocious."
+
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 15
+
+#scalerate 4
+#end
+
+#neweffect "greatlion Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Great Lion Attack"
+#descr 64 "The caster summons ARTICLE great %lion% to ambush a hostile commander in a distant province. These lions are large and ferocious."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote greatlion"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 0
+#power 4
+#maxpower 9
+#nreff 3003
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 15
+
+#name 64 "Send NAMEPREFIX Great %Lion%"
+#descr 64 "The caster summons ARTICLE great %lion% to attack a distant province. These lions are large and ferocious."
+
+#spelltype 20
+
+#scalerate 4
+#end

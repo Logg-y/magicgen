@@ -1,0 +1,32 @@
+#neweffect "Minor Fear"
+#effect 4
+#damage 2
+#spec 8388736
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10140
+#sound 22
+
+#spelltype 2
+
+
+#paths 32
+#secondarypaths 32
+
+#name 1 "Minor Fear"
+#name 2 "Minor Fear"
+#name 4 "Minor Fear"
+#name 8 "Minor Fear"
+#name 16 "Minor Fear"
+#name 32 "Minor Fear"
+#name 64 "Minor Fear"
+#name 128 "Minor Fear"
+#name 256 "Minor Fear"
+
+#end

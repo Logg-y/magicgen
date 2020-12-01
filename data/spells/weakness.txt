@@ -1,0 +1,61 @@
+#neweffect "Weakness"
+#effect 67
+#damage 3
+#spec 8409216
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#aoe 0
+#power 2
+#maxpower 8
+#pathlevel 1
+#explspr 10197
+#sound 31
+#fatiguecost 20
+#range 5020
+
+#paths 32
+#secondarypaths 0
+
+#name 32 "Weakness"
+#descr 32 "The mage damages the life force of the %target% making %it% permanently weaker."
+#details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+
+#end
+
+#neweffect "Mass Weakness"
+#effect 67
+#damage 2
+#spec 25182336
+#schools 2
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 6
+#explspr 10197
+#sound 31
+#fatiguecost 300
+#precision 100
+#range 20
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Mass Weakness"
+
+#descr 32 "The caster attempts damage the life force of the all his enemies, making them permanently weaker."
+#details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+
+#end

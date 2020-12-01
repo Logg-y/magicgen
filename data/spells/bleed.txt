@@ -1,0 +1,65 @@
+#neweffect "Bleeding"
+#effect 11
+#damage 8192
+#spec 537415808
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.3
+-- #scalecost 1.6
+
+#aoe 0
+#power 1
+#maxpower 5
+#pathlevel 2
+#explspr 10123
+#sound 31
+#fatiguecost 40
+#precision 0
+#range 5025
+
+-- AWD
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Bleed"
+#descr 128 "This spell causes blood to pour out of the nose, ears and mouth of the %victim%. The effect is a prolonged and painful death. Magic resistance can negate the effect."
+
+
+#end
+
+
+
+#neweffect "Battlefield Bleed"
+#effect 11
+#damage 8192
+#spec 554188928
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 5
+#explspr 10123
+#sound 41
+#fatiguecost 300
+#precision 100
+#range 100
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Mass Bleed"
+#descr 128 "The caster attempts to cause all his enemies to bleed profusely.  The effect is a prolonged and painful death."
+
+#end

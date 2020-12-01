@@ -1,0 +1,47 @@
+#newsecondary "Summon stoneskin"
+
+#anysummon 1
+
+#paths 8
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Stoneskin"
+#descr "The %hide% of the summoned %creature% %is% turned to stone. This makes them resistant to physical damage, but vulnerable to cold."
+
+#end
+
+#newsecondary "Summon ironskin"
+
+#anysummon 1
+
+#paths 8
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Ironskin"
+#descr "The %hide% of the summoned %creature% %is% turned to iron. This makes them very resistant to physical damage, but vulnerable to shock."
+
+#end
+
+#newsecondary "Summon barkskin"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon Barkskin"
+#descr "The %hide% of the summoned %creature% %is% turned to bark. This makes them somewhat resistant to physical damage, but vulnerable to fire."
+
+#end

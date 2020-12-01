@@ -1,0 +1,38 @@
+#neweffect "Protforce"
+#effect 10
+#damage 549755813888
+#spec 16384
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0.75
+-- #scalecost 1.6
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10224
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+-- a, e/a, w/a
+#paths 14
+#secondarypaths 2
+#secondarypathchance 98
+
+#details "Protective Force 20: 50% chance to add 20 protection when hit by attacks."
+
+#name 2 "Protective Force"
+#name 4 "Ice Shield"
+#name 8 "Rock Shield"
+
+#descr 2 "The caster surrounds SUBJECT with swirling winds that carry various debris. The debris partially blocks half of attacks."
+#descr 4 "The caster surrounds SUBJECT with swirling winds that carry a large chunk of ice. The ice partially blocks half of attacks."
+#descr 8 "The caster surrounds SUBJECT with swirling winds that carry a large chunk of rock. The rock partially blocks half of attacks."
+
+#end
+

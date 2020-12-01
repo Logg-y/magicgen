@@ -1,0 +1,10 @@
+#newweaponmod "Webweapon"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#set secondaryeffect 261
+#spec -2097152
+#nameprefix "Webweaving"
+#end

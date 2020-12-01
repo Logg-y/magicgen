@@ -1,0 +1,31 @@
+#newsecondary "Summon Paralysisweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Paralysisweapon"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes paralysed if they fail to resist the effect."
+
+#end
+
+#newsecondary "Summon Greaterparalysisweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Greaterparalysisweapon"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes paralysed if they fail to resist the effect."
+
+#end

@@ -1,0 +1,103 @@
+#neweffect "Summon deer"
+#effect 1
+#damage 2228
+#spec 0
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 15
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 95
+
+#name 64 "Summon NAMEPREFIX Deer"
+#descr 64 "The caster summons forth ARTICLE deer. Deer are not known for their battlefield prowess, but they can still fight back with their antlers."
+
+#spelltype 528
+
+#scalerate 2
+#end
+
+#neweffect "deer ritual"
+#effect 10001
+#damage 2228
+#spec 0
+#power 1
+#nreff 4002
+#pathlevel 1
+#fatiguecost 100
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 75
+
+#name 64 "Summon NAMEPREFIX Deer"
+#descr 64 "The caster summons forth ARTICLE deer. Deer are not known for their battlefield prowess, but they can still fight back with their antlers."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 5
+
+#scalerate 5
+#end
+
+#neweffect "deer Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2228
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Deer Attack"
+#descr 64 "The caster directs an ordinary deer to attack a hostile commander in a distant province. The deer is quite unlikely to kill anything, however if it somehow survives the encounter it will return to normal deer activities."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon deer"
+#effect 10038
+#provrange 4
+#damage 2228
+#spec 0
+#power 4
+#maxpower 9
+#nreff 4005
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Send NAMEPREFIX Deer"
+#descr 64 "The caster summons forth ARTICLE deer to attack a distant province. Deer are not known for their battlefield prowess, but they can still fight back with their antlers."
+
+#spelltype 20
+
+#scalerate 5
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end

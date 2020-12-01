@@ -1,0 +1,114 @@
+#neweffect "Teleport"
+#copyspell "Teleport"
+#effect 10019
+#damage 1
+#spec 8388608
+#provrange 6
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 32
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Teleport"
+#descr 16 "With this spell, the mage can transport himself to almost any province in the world, only those very very far away are out of range for this ritual."
+
+#spelltype 4
+#end
+
+
+
+#neweffect "Cloud Trapeze"
+#copyspell "Cloud Trapeze"
+#effect 10095
+#damage 1
+#spec 0
+#provrange 5
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 16
+
+#paths 10
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Cloud Trapeze"
+#name 8 "Tunnel through Earth"
+#descr 8 "The caster burrows into the ground at incredible speed, emerging in a faraway province."
+#descr 2 "The caster swings himself up and away with incredible speed, landing in a province far away. Although much faster than normal flying, the caster does not really teleport and can have the path blocked by impassable mountain ranges or the Sea of Ice global enchantment."
+#details "Immobile units cannot cast this spell."
+
+#spelltype 4
+#end
+
+#neweffect "Forest Travel"
+#copyspell "Cloud Trapeze"
+#effect 10095
+#damage 1
+#spec 0
+#provrange 5
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 16
+#onlygeosrc 128
+#onlygeodst 128
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Faery Trod"
+#descr 64 "The mage travels into a magic forest to find a Faery Trod. He follows this strange path through faerie lands and will eventually arrive in a distant province. Due to travelling alone, he can use his magic to ensure that he always leaves the faerie lands where he intended to."
+#details "Immobile units cannot cast this spell."
+
+#spelltype 4
+#end
+
+
+
+#neweffect "Underworld Spirit Attack"
+#copyspell "Soul Slay"
+-- attack caster
+#effect 10112
+#damage 9999
+-- MR negates, AN, internal damage
+#spec 36028797018968192
+#schools -1
+#paths -1
+#name 32 "Underworld Spirit Attack"
+#end
+
+#neweffect "Underworld Travel"
+#copyspell "Cloud Trapeze"
+#effect 10095
+#damage 1
+#spec 8388608
+#provrange 10
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#schools 32
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Underworld Travel"
+#descr 32 "All lands are connected to the Underworld and every location in the Underworld corresponds to a location in the lands of the living, but time passes differently in the Underworld. By traveling in the Underworld, great distances can be covered in a short period of time. The mage enters the underworld alone and travels to a destination of his choosing, though the denizens of the underworld will attempt to prevent him from leaving."
+#details "Immobile units cannot cast this spell. The caster must succeed at a MR check or join the dead permanently, even if he is immortal. The difficulty of the MR check is lowered by 1 for every 2 levels of death over 2."
+#nextspell "Underworld Spirit Attack"
+#spelltype 4
+#end

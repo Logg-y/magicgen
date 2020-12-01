@@ -1,0 +1,15 @@
+#newsecondary "Summon Decayweapon"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Decayweapon"
+#descr "Creatures wounded by the summoned %creature% will begin to wither and die if they fail to resist the effect."
+
+#end

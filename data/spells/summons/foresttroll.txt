@@ -1,0 +1,102 @@
+#neweffect "Summon forest troll"
+#effect 1
+#damage 2219
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 50
+#scalefatiguemult 20
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 75
+
+#name 64 "Summon NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "forest troll ritual"
+#effect 10001
+#damage 2219
+#spec 0
+#power 5
+#nreff 1001
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 75
+
+#name 64 "Summon NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+
+#scalerate 4
+#end
+
+#neweffect "forest troll Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2219
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX %forest troll% Attack"
+#descr 64 "The caster summons ARTICLE %forest troll% to attack a hostile commander in a distant province. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon forest troll"
+#effect 10038
+#provrange 4
+#damage 2219
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Send NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll% to attack a distant province. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 30
+#end

@@ -1,0 +1,102 @@
+#neweffect "Summon false horror"
+#effect 1
+#damage 448
+#spec 8388608
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 40
+#scalefatiguemult 10
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 75
+
+#name 2 "Summon NAMEPREFIX False %Horror%"
+#descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
+
+#spelltype 528
+
+#scalerate 0.7
+#end
+
+#neweffect "false horror ritual"
+#effect 10001
+#damage 448
+#spec 8388608
+#power 5
+#nreff 2002
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 75
+
+#name 2 "Summon NAMEPREFIX False %Horror%"
+#descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 25
+
+#scalerate 3
+#end
+
+#neweffect "falsehorror Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 448
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX False Horror Ambush"
+#descr 2 "The caster summons a phantasmal horror and sends it to ambush an enemy commander. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon falsehorror"
+#effect 10038
+#provrange 4
+#damage 448
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 2001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Send NAMEPREFIX False Horrors"
+#descr 2 "The caster summons false horros and sends them to a distant province."
+
+#spelltype 20
+
+#scalerate 3.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 25
+#end

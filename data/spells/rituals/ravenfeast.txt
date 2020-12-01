@@ -1,0 +1,24 @@
+#neweffect "Raven Feast"
+#effect 10135
+#provrange 5
+#damage 100
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#paths 34
+#secondarypaths 34
+
+#name 2 "Raven Feast"
+#name 32 "Raven Feast"
+#descr 2 "The caster summons an unkindness of ravens and sends them into a distant province to feast upon the newly dead. The ravens consume the rotting corpses and return to be slaughtered for the raw death essence they then contain. Provinces struck by plagues or containing recent battlefields can give the caster large amounts of Death gems. All unburied dead in a province are consumed. Enemy provinces can be targeted."
+#descr 32 "The caster summons an unkindness of ravens and sends them into a distant province to feast upon the newly dead. The ravens consume the rotting corpses and return to be slaughtered for the raw death essence they then contain. Provinces struck by plagues or containing recent battlefields can give the caster large amounts of Death gems. All unburied dead in a province are consumed. Enemy provinces can be targeted."
+#details "The ravens return sqrt(corpses)/2 death gems."
+#spelltype 4
+
+#end

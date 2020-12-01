@@ -1,0 +1,52 @@
+#newsecondary "Slow"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 68719476736
+
+
+#nextspell "Slow Secondary"
+
+#descr "Residual energy from this spell slows the time around those in the affected area."
+
+#end
+
+
+#newsecondary "Slow damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy okay
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 68719476736
+
+
+#nextspell "Slow Secondary"
+
+#descr "Residual energy from this spell slows the time around those in the affected area."
+
+#end
+
+

@@ -1,0 +1,44 @@
+#neweffect "Slime Secondary"
+#effect 11
+#damage 134217728
+#spec 20480
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10256
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slime"
+#name 2 "$Additional$ Slime"
+#name 4 "$Additional$ Slime"
+#name 8 "$Additional$ Slime"
+#name 16 "$Additional$ Slime"
+#name 32 "$Additional$ Slime"
+#name 64 "$Additional$ Slime"
+#name 128 "$Additional$ Slime"
+#name 256 "$Additional$ Slime"
+
+#name 1 "$Create$ Slime"
+#name 2 "$Create$ Slime"
+#name 4 "$Create$ Slime"
+#name 8 "$Create$ Slime"
+#name 16 "$Create$ Slime"
+#name 32 "$Create$ Slime"
+#name 64 "$Create$ Slime"
+#name 128 "$Create$ Slime"
+#name 256 "$Create$ Slime"
+
+
+#end

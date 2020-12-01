@@ -1,0 +1,104 @@
+#neweffect "Summon winter wolf"
+#effect 1
+#damage 511
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#sound 31
+#schools 1
+#scalefatiguemult 30
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Winter %Wolf%"
+#descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "winterwolf ritual"
+#effect 10001
+#damage 511
+#spec 0
+#power 5
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Winter %Wolf%"
+#descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 55
+
+#scalerate 4
+#end
+
+#neweffect "winterwolf Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 511
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Winter Wolf Ambush"
+#descr 4 "The caster summons ARTICLE spectral winter %wolf% to ambush a commander in a distant land. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon winterwolf"
+#effect 10038
+#provrange 4
+#damage 511
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1002
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Send NAMEPREFIX Winter %Wolf%"
+#descr 4 "The caster summons ARTICLE spectral winter %wolf% and sends them to a distant province. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 55
+#end

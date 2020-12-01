@@ -1,0 +1,15 @@
+#newsecondary "Summon Corrosionweapon"
+
+#anysummon 1
+
+#paths 12
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon Corrosionweapon"
+#descr "The summoned %creature% %is% able to rust armour with its attacks."
+
+#end

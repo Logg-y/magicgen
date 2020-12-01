@@ -1,0 +1,32 @@
+#neweffect "Poison Projectile"
+#effect 7
+#damage 2010
+#spec 8320
+#aoe 1
+#power 3
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 20
+#explspr 10139
+#flightspr 10079
+#sound 83
+
+-- #paths 4+32+64
+#paths 100
+#secondarypaths 64
+
+#name 4 "Vile Water"
+#name 32 "Decaying Fluid"
+#name 64 "$poisonous$ %bolt%"
+#descr 4 "Projects ARTICLE poisonous %bolt% formed of stale water at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
+
+#spelltype 18
+
+#power 1
+#scalerate 1
+#pathlevel 2
+#schools 4
+#end

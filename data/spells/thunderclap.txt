@@ -1,0 +1,46 @@
+#neweffect "Thunderclap Battlefright"
+#effect 11
+#damage 2097152
+-- easy mr
+-- not mindless
+#spec 25313280
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 1
+#scalerate 0
+#power 2
+#name 2 "Shake Nerves"
+#name 2 "Additional Fright"
+#end
+
+#neweffect "Thunderclap"
+#effect 128
+#damage 100
+#spec 8540288
+#aoe 1
+#power 2
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 20
+#explspr 10102
+#sound 27
+#skipchance 30
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Thunderclap"
+#descr 2 "The caster creates a massive thunderclap around SUBJECT. Whilst this does not physically hurt the enemies, they may be stunned. Additionally, being exposed to the thunderclap is frightening and may permanently affect those of weaker mind who experience it."
+
+#maxpower 8
+
+#nextspell "Thunderclap Battlefright"
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1.2
+#schools 4
+#end

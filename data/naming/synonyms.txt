@@ -1,0 +1,56 @@
+blood_intro2	By drawing on previous contracts made with infernal powers
+blood_intro2	Drawing on the essence of his own magically enriched blood
+
+blood_intro	By offering blood to a dark power
+blood_intro	Through sacrificing blood to hellish forces
+
+
+
+fire	flame
+fire	fire
+
+ball	sphere
+ball	orb
+ball	glob
+ball	ball
+
+underground	underground
+underground	beneath
+underground	below
+underground	the depths
+
+mist	mist
+mist	vapor
+mist	fog
+
+shield	shield
+shield	ward
+shield	fend
+
+illusory	false
+illusory	illusory
+illusory	phantasmal
+
+fetters	fetters
+fetters	shackles
+fetters	manacles
+fetters	bonds
+fetters	chains
+
+marble	marble
+marble	stone
+marble	rock
+marble	granite
+
+iron	steel
+iron	iron
+
+purifying	purifying
+purifying	cleansing
+
+syllable	syllable
+syllable	word
+syllable	utterance
+
+additional	additional
+additional	extra

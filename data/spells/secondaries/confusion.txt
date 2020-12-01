@@ -1,0 +1,77 @@
+#newsecondary "Confusion"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 17179869184
+
+
+#nextspell "Confusion Secondary"
+
+#descr "Residual energy from this spell affects the moinds of those in the targeted area, making them confused and prone to fighting their friends."
+
+#end
+
+
+#newsecondary "Confusion damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+-- holy okay
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 17179869184
+
+
+#nextspell "Confusion Secondary"
+
+#descr "Residual energy from this spell affects the moinds of those in the targeted area, making them confused and prone to fighting their friends."
+
+#end
+
+#newsecondary "Confusion for Banishment only"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths == 256
+-- holy okay
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 17179869184
+
+
+#nextspell "Confusion Secondary"
+
+#descr "The holy power unleashed alters the behaviour of the undead, sometimes causing them to act erratically."
+
+#end
+

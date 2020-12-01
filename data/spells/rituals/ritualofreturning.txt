@@ -1,0 +1,20 @@
+#neweffect "Ritual of Returning"
+#effect 10023
+#damage 8388608
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 16
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Ritual of Returning"
+#descr 16 "The mage will return to the home citadel at once if he is wounded. The spell lasts until the mage actually has been wounded and returned home. This ritual will result in swift death for a mage if the home citadel has been conquered by the enemy."
+
+#spelltype 4
+#end

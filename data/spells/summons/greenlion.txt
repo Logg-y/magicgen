@@ -1,0 +1,103 @@
+#neweffect "Summon greenlion"
+#effect 1
+#damage 1983
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 1
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Green %Lion%"
+#descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
+#scalefatiguemult 80
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "greenlion ritual"
+#effect 10001
+#damage 1983
+#spec 0
+#power 5
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 4
+#secondarypaths 1
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Green %Lion%"
+#descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+
+#scalerate 4
+#end
+
+#neweffect "greenlion Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1983
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 4
+#secondarypaths 1
+
+#name 4 "NAMEPREFIX Green %Lion% Ambush"
+#descr 4 "The caster summons ARTICLE spectral green %lion% to ambush a hostile commander in a distant land. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon greenlion"
+#effect 10038
+#provrange 4
+#damage 1983
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 1
+
+#name 4 "Send NAMEPREFIX Green %Lion%"
+#descr 4 "The caster summons ARTICLE spectral green %lion% to attack a distant land. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+#end

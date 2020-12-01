@@ -1,0 +1,23 @@
+#newunitmod "Summon MWeap 1"
+#weaponmod "Magicweapon"
+#req mr < 6
+#mr 7
+#nameprefix "Enchanted"
+#descr "This particular CREATURE is enchanted to make it more resistant to magic."
+#end
+
+#newunitmod "Summon MWeap 2"
+#weaponmod "Magicweapon"
+#req mr < 8
+#mr 5
+#nameprefix "Enchanted"
+#descr "This particular CREATURE is enchanted to make it more resistant to magic."
+#end
+
+#newunitmod "Summon MWeap 3"
+#weaponmod "Magicweapon"
+#req mr >= 8
+#mr 4
+#nameprefix "Enchanted"
+#descr "This particular CREATURE is enchanted to make it more resistant to magic."
+#end

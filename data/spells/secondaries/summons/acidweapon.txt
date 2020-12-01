@@ -1,0 +1,15 @@
+#newsecondary "Summon Acidweapon"
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Acidweapon"
+#descr "The summoned %creature% are able to coat %its% weapons in highly corrosive acid."
+
+#end

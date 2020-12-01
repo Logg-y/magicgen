@@ -1,0 +1,47 @@
+#newsecondary "Entanglement"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 64
+
+#nextspell "Entanglement"
+
+#descr "Residual energy from this spell calls vines from the earth and entangles those affected."
+
+#end
+
+
+#newsecondary "Entanglement damaging"
+
+-- evo only
+#spelltype 2
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy ok
+
+
+#paths 64
+#power 0
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 64
+
+#nextspell "Entanglement"
+
+#descr "Residual energy from this spell calls vines from the earth and entangles those affected."
+
+#end

@@ -1,0 +1,65 @@
+#neweffect "Additional Fire"
+#effect 2
+#damage 2
+#spec 36028797027369120
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+#neweffect "Additional Fire Holy"
+#effect 2
+#damage 10
+#spec 36028797027369120
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end

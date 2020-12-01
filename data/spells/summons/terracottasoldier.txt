@@ -1,0 +1,104 @@
+#neweffect "Summon terracotta soldier"
+#effect 1
+#damage 2134
+#spec 8388608
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 31
+#schools 1
+
+#paths 1
+#secondarypaths 8
+
+#skipchance 75
+#scalefatiguemult 10
+
+#name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
+#descr 1 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent 0.4
+#end
+
+#neweffect "terracottasoldier ritual"
+#effect 10001
+#damage 2134
+#spec 8388608
+#power 5
+#nreff 1003
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 1
+#secondarypaths 4
+
+#skipchance 75
+
+#name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
+#descr 1 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
+
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#scalerate 4
+#end
+
+#neweffect "terracottasoldier Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2134
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#paths 1
+#secondarypaths 4
+
+#name 1 "NAMEPREFIX Terracotta %Soldier% Attack"
+#descr 1 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE terracotta %soldier%. The terracotta soldier attacks an enemy commander found there, and then crumbles to dust after the battle. Terracotta soldiers are highly resistant to fire."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon terracottasoldier"
+#effect 10038
+#provrange 4
+#damage 2134
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1006
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#skipchance 90
+
+#paths 1
+#secondarypaths 4
+
+#name 1 "Send NAMEPREFIX Terracotta %Soldier%"
+#descr 1 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE terracotta %soldier%. The terracotta soldiers attack anything found there. Terracotta soldiers are highly resistant to fire."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end

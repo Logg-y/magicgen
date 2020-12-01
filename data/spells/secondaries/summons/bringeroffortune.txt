@@ -1,0 +1,39 @@
+#newsecondary "Summon Bringeroffortune"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 16
+#power -3
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 200
+
+#unitmod "Summon Bringeroffortune"
+#descr "The summoned %creature% will bring good fortune to the province where they are located."
+
+#end
+
+#newsecondary "Summon Bringerofmisfortune"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 16
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 270
+
+#unitmod "Summon Bringerofmisfortune"
+#descr "The summoned %creature% will bring bad fortune and disaster to the province where they are located."
+
+#end

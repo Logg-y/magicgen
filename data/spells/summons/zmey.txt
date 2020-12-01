@@ -1,0 +1,104 @@
+#neweffect "Call zmey"
+#effect 1
+#damage 1940
+#spec 0
+#power 6
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 60
+#scalefatiguemult 20
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "Summon NAMEPREFIX Zmey"
+#descr 1 "The caster summons ARTICLE zmey to fight for him. The zmey is a three headed dragon that can breathe fire on its enemies."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "zmey ritual"
+#effect 10001
+#damage 1940
+#spec 0
+#power 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#schools 1
+
+#paths 1
+#secondarypaths 1
+#skipchance 75
+
+#name 1 "Summon NAMEPREFIX Zmey"
+#descr 1 "The caster summons ARTICLE zmey to fight for him. The zmey is a three headed dragon that can breathe fire on its enemies."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 180
+
+#scalerate 2
+#end
+
+#neweffect "zmey Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1940
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 75
+#nogeodst 2052
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX Zmey Attack"
+#descr 1 "The caster summons ARTICLE zmey to attack a hostile commander in a distant province. The zmey is a three headed dragon that can breathe fire on its enemies."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon zmey"
+#effect 10038
+#provrange 4
+#damage 1940
+#spec 0
+#power 6
+#maxpower 11
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+#paths 1
+#secondarypaths 1
+
+#name 1 "Send NAMEPREFIX Zmey"
+#descr 1 "The caster summons ARTICLE zmey to attack a distant province. The zmey is a three headed dragon that can breathe fire on its enemies."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 180
+#end

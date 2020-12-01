@@ -1,0 +1,28 @@
+#neweffect "Time Stop"
+#effect 133
+#damage 104
+#spec 8392704
+#schools 2
+
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 0.6
+
+#aoe 0
+#power 8
+#maxpower 8
+#pathlevel 6
+#explspr 10305
+#sound 31
+#fatiguecost 100
+
+-- W, D
+#paths 16
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 16 "Time Stop"
+#descr 16 "This powerful alteration will slow down time to almost a standstill for everyone but the caster. Any ongoing effects like regeneration or heat clouds will also be slowed down, regardless if they affect the caster or not."
+#details "Time Slow: 90%. Duration: about 5 rounds of combat. There can only be one time stop in effect at once, a new one will replace an ongoing one."
+#end

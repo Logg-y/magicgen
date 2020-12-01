@@ -1,0 +1,102 @@
+#neweffect "Summon war troll"
+#effect 1
+#damage 1037
+#spec 0
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 50
+#scalefatiguemult 30
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 75
+
+#name 8 "Summon NAMEPREFIX %war troll%"
+#descr 8 "The caster summons ARTICLE %war troll%. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "war troll ritual"
+#effect 10001
+#damage 1037
+#spec 0
+#power 6
+#nreff 1001
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 75
+
+#name 8 "Summon NAMEPREFIX %war troll%"
+#descr 8 "The caster summons ARTICLE %war troll%. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#scalerate 4
+#end
+
+#neweffect "war troll Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1037
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX %war troll% Attack"
+#descr 8 "The caster summons ARTICLE %war troll% to attack a hostile commander in a distant province. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon war troll"
+#effect 10038
+#provrange 4
+#damage 1037
+#spec 0
+#power 6
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Send NAMEPREFIX %war troll%"
+#descr 8 "The caster summons ARTICLE %war troll% to attack a distant province. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 30
+#end

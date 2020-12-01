@@ -1,0 +1,86 @@
+#neweffect "Call Black Servant"
+
+#effect 1
+#damage 434
+#spec 0
+#power 1
+#precision -100
+#nreff 1
+#pathlevel 1
+#chassisvalue 40
+#range 6
+#fatiguecost 50
+#sound 31
+#schools 1
+
+#skipchance 16
+
+--ASN
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX Black %Servant%"
+#descr 32 "The death mage summons ARTICLE %Black Servant% to join him in battle. The %Black Servant% will leave once the battle is over."
+
+#scalefatiguemult 35
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Black Servant"
+
+#effect 10021
+#damage 434
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#chassisvalue 200
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 32
+#secondarypaths 32
+
+
+#name 32 "Summon NAMEPREFIX Black Servant"
+#descr 32 "The death mage summons a Black Servant. Black Servants are stealthy and ethereal and serve well as scouts."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Black Servant Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 434
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#chassisvalue 20
+#schools 1
+#skipchance 26
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX Black Servant"
+#descr 32 "The death mage sends a black servant to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end

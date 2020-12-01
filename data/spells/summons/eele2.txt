@@ -1,0 +1,107 @@
+#neweffect "Summon eeles2"
+#effect 1
+#damage 497
+#spec 0
+#power 3
+#precision -2
+#nreff 2
+#pathlevel 1
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 85
+
+#details "The elementals are size 2."
+#name 8 "Summon NAMEPREFIX Small Earth %Elemental%"
+#descr 8 "The caster summons forth ARTICLE small earth %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "eeles2 ritual"
+#effect 10001
+#damage 497
+#spec 0
+#power 3
+#nreff 3001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 75
+
+#details "The elementals are size 2."
+#name 8 "Summon NAMEPREFIX Small Earth Elementals"
+#descr 8 "The caster summons forth small earth elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#scalerate 2
+#end
+
+#neweffect "eeles2 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 497
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 8
+#secondarypaths 8
+
+#details "The elementals are size 2."
+#name 8 "NAMEPREFIX Small Earth Attack"
+#descr 8 "The caster summons forth a small earth elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon eeles2"
+#effect 10038
+#provrange 4
+#damage 497
+#spec 0
+#power 4
+#maxpower 9
+#nreff 3001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#details "The elementals are size 2."
+#name 8 "Send NAMEPREFIX Small Earth Elementals"
+#descr 8 "The caster summons forth small earth elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end

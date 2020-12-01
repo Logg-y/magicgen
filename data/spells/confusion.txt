@@ -1,0 +1,65 @@
+#neweffect "Confusion"
+#effect 11
+#damage 17179869184
+#spec 8540160
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 4
+#maxpower 7
+#pathlevel 3
+#explspr 10207
+#sound 31
+#fatiguecost 20
+#precision 100
+#range 5015
+
+#paths 16
+#secondarypaths 16
+
+#namecond aoe < 1 16 "Confusion"
+
+#namecond2 1 < aoe < 5 16 "Wave of Confusion"
+#namecond2 5 < aoe < 600 16 "Confused Mob"
+#namecond2 600 < aoe < 700 16 "Mass Confusion"
+
+#descr 16 "SUBJECT %is% made confused and may attack nearby friendlies."
+
+#end
+
+#neweffect "Mass Confusion"
+#effect 11
+#damage 17179869184
+#spec 25575424
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 6
+#explspr 10207
+#sound 31
+#fatiguecost 300
+#precision 100
+#range 20
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Mass Confusion"
+
+#descr 16 "The caster attempts to confuse all of his enemies. This spell should cause massive infighting amongst the caster's enemies."
+
+#end

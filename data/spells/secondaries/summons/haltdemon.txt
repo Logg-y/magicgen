@@ -1,0 +1,15 @@
+#newsecondary "Summon Haltdemon"
+
+#anysummon 1
+
+#paths 20
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon Haltdemon"
+#descr "Demons wounded by the weapons of the summoned %creature% becomes paralysed if they fail to resist the effect."
+
+#end

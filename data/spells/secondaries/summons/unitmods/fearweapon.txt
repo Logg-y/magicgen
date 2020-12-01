@@ -1,0 +1,13 @@
+#newunitmod "Summon Fearweapon"
+#weaponmod "Fearweapon"
+#nameprefix "Frightening"
+#req trample == -1
+#descr "This particular CREATURE frightens those wounded by its attacks, making them more likely to flee."
+#end
+
+#newunitmod "Summon Fearweapongreater"
+#weaponmod "Greaterfearweapon"
+#nameprefix "Terrifying"
+#req trample == -1
+#descr "This particular CREATURE terrifies those wounded by its attacks, making them more likely to flee."
+#end

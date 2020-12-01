@@ -1,0 +1,31 @@
+#neweffect "Blood Burst"
+#effect 2
+#damage 1010
+#spec 537411712
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.75
+-- #scalecost 1.6
+
+#aoe 1
+#power 1
+#maxpower 9
+#pathlevel 2
+#explspr 10118
+#sound 31
+#fatiguecost 200
+#precision 5
+#range 35
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Blood Burst"
+#descr 128 "This spell causes the victims' blood to explode. Neither armor nor magic resistance can protect the targets."
+
+
+#end

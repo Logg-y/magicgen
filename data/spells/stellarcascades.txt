@@ -1,0 +1,27 @@
+#neweffect "Stellar Cascades"
+
+#effect 3
+#damage 35
+#spec 2305843009213694016
+#aoe 1
+#power 3
+#precision 100
+#range 5025
+#pathlevel 1
+#fatiguecost 10
+#explspr 10250
+#sound 41
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 16 "Stellar Cascades"
+
+#descr 16 "Light from a stellar body will shower down upon a group of enemies. Everyone caught in the shower of light will become exhausted as the light sucks energy through their skin."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 3
+-- #scalecost 0.3
+#schools 4
+#end

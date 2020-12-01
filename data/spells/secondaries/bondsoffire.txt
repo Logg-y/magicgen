@@ -1,0 +1,50 @@
+#newsecondary "Bonds of Fire"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
+
+
+#nextspell "Bonds of Fire Secondary"
+
+#descr "Residual energy from this spell attempts to form burning $fetters$ around the legs of those affected, making them temporarily unable to move."
+
+#end
+
+
+#newsecondary "Bonds of Fire damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy okay
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
+
+
+#nextspell "Bonds of Fire Secondary"
+
+#descr "Residual energy from this spell attempts to form burning $fetters$ around the legs of those affected, making them temporarily unable to move."
+
+#end

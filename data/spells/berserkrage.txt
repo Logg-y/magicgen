@@ -1,0 +1,36 @@
+#neweffect "BerserkRage"
+#effect 10
+#damage 256
+#spec 140738037940352
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 3.3
+-- #scalecost 1.6
+
+#aoe 0
+#power 3
+#maxpower 7
+#pathlevel 1
+#explspr 10017
+#sound 31
+#fatiguecost 20
+#precision 100
+#range 20
+
+#ainocast 1
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe < 1 64 "Berserk Rage"
+
+#namecond2 1 < aoe < 5 64 "Berserk Wave"
+#namecond2 5 < aoe < 600 64 "Berserk Mob"
+#namecond2 600 < aoe < 700 64 "Mass Berserking"
+
+#descr 64 "The caster forces SUBJECT to go berserk."
+
+#end

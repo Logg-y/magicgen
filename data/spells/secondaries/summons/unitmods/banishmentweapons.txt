@@ -1,0 +1,13 @@
+#newunitmod "Summon Dimensionalshiftweapon"
+#weaponmod "Dimensionalshiftweapon"
+#nameprefix "Dimensional"
+#req trample == -1
+#descr "This particular CREATURE has had its weapons enchanted and can send those wounded to the Void if they fail to resist."
+#end
+
+#newunitmod "Summon Infernobanishweapon"
+#weaponmod "Infernobanishweapon"
+#nameprefix "Infernal"
+#req trample == -1
+#descr "This particular CREATURE has had its weapons enchanted and can send those wounded to Inferno if they fail to resist."
+#end

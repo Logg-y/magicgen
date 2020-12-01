@@ -1,0 +1,30 @@
+#newsecondary "Summon Fearweapon"
+
+#anysummon 1
+
+#paths 32
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Fearweapon"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes slightly frightened and will be more prone to fleeing."
+
+#end
+#newsecondary "Summon Fearweapongreater"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Fearweapongreater"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes extremely frightened and will be more prone to fleeing."
+
+#end

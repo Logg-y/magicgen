@@ -1,0 +1,93 @@
+#neweffect "Gift of Reason Livingonly"
+#copyspell "Gift of Reason"
+#effect 10039
+#damage 1
+-- uwok, not demon, mindless, undead, inanimate
+#spec 814350336
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 500
+#schools 32
+
+#paths 112
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Tactical Insight"
+#descr 16 "With the aid of magic, the caster quickly teaches a living subject various aspects of strategy and command that enables him to lead troops up to his innate ability. If the subject had innate magical powers, those too will become fully realised upon receipt of this spell."
+#name 32 "Knowledge of the Dead"
+#descr 32 "With the aid of summoned spirits, the caster quickly teaches a living subject various aspects of strategy and command that enables him to lead troops up to his innate ability. If the subject had innate magical powers, those too will become fully realised upon receipt of this spell."
+#name 64 "Mental Spark"
+#descr 64 "With a magical touch, the caster grants a living subject a keen mind. This allows him to quickly learn the necessary aspects of strategy and command to allow him to lead troops up to his innate ability. If the subject had innate magical powers, those too will become fully realised upon receipt of this spell."
+
+#spelltype 4
+#end
+
+#neweffect "Gift of Reason"
+#copyspell "Gift of Reason"
+#effect 10039
+#damage 1
+#spec 8519680
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools 32
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Gift of Reason"
+#descr 64 "This gift grants commander status and a sharp intellect to any one being. The target unit must be in the same province as the caster. Mindless units cannot be affected by the spell."
+
+#spelltype 4
+#end
+
+#neweffect "Divine Name"
+#copyspell "Divine Name"
+#effect 10039
+#damage 1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools 32
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Divine Name"
+#descr 16 "The caster inscribes a divine name on a piece of paper and places it in the head of a mindless being. The being is gifted with an artificial mind and commanding abilities. The caster can also inscribe the name on the forehead of a willing target, increasing his mental faculties and making him a commander."
+
+#spelltype 4
+#end
+
+#neweffect "Infernal Promotion"
+#copyspell "Divine Name"
+#effect 10039
+#damage 1
+-- demon only
+#spec 8912904
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 1000
+#schools 32
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 128 "Infernal Promotion"
+#descr 128 "The caster makes a demon the subject of a ritual, with much blood sacrifice. The demon is imbued with the powers of command and gains the ability to command troops."
+
+#spelltype 4
+#end

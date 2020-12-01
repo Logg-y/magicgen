@@ -1,0 +1,49 @@
+#neweffect "Barkskin"
+#effect 10
+#damage 16
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.15
+
+#aoe 0
+#power 0
+#maxpower 7
+#pathlevel 1
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 5
+
+
+-- fire, water, nature, death
+#paths 101
+#secondarypaths 64
+
+#details "Barkskin: Grants natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
+
+#namecond aoe < 2 1 "Desiccated Skin"
+#namecond aoe < 2 4 "Desiccated Skin"
+#namecond aoe < 2 32 "Desiccated Skin"
+#namecond aoe < 2 64 "Barkskin"
+
+#namecond2 2 <= aoe < 666 1 "Desiccated Warriors"
+#namecond2 2 <= aoe < 666 4 "Desiccated Warriors"
+#namecond2 2 <= aoe < 666 32 "Desiccated Warriors"
+#namecond2 2 <= aoe < 666 64 "Wooden Warriors"
+
+#namecond aoe == 666 1 "Desiccated Army"
+#namecond aoe == 666 4 "Desiccated Army"
+#namecond aoe == 666 32 "Desiccated Army"
+#namecond aoe == 666 64 "Wooden Army"
+
+#descr 1 "Through a harmless but intense burst of heat, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
+#descr 4 "Through a harmless process of water withdrawal, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
+#descr 32 "Through a harmless and reversible process, the skin of SUBJECT becomes withered, dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
+#descr 64 "The skin of SUBJECT becomes thick and tough like bark. This provides some protection from damage, but the bark is also somewhat flammable."
+
+#end
+

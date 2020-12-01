@@ -1,0 +1,101 @@
+#neweffect "summon clockworksoldier"
+#effect 1
+#damage 2321
+#spec 8388608
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#explspr 10232
+#sound 31
+#schools 8
+
+#skipchance 75
+#paths 8
+#secondarypaths 8
+
+#name 8 "Construct NAMEPREFIX Clockwork %Soldier%"
+#descr 8 "The caster quickly forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless."
+#scalefatiguemult 40
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#schools 16
+#end
+
+#neweffect "clockworksoldier Ritual"
+#effect 10001
+#damage 2321
+#spec 8388608
+#power 1
+#nreff 2003
+#pathlevel 2
+#fatiguecost 400
+#schools 8
+
+#skipchance 75
+#spelltype 20
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Construct NAMEPREFIX Clockwork %Soldier%"
+#descr 8 "The caster forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless on the battlefield."
+
+#scalerate 2
+
+#scalefatiguemult 60
+#end
+
+#neweffect "clockworksoldier Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2321
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 8
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Clockwork %Soldier% Attack"
+#descr 8 "The caster forms ARTICLE clockwork %soldier% from metal in a distant province. The %soldier% then attacks a random enemy commander there, crumbling to useless metal after the battle. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless on the battlefield."
+
+#spelltype 4
+
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon clockworksoldier"
+#effect 10038
+#provrange 4
+#damage 2321
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 2003
+#pathlevel 3
+#fatiguecost 400
+#schools 8
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Send NAMEPREFIX Clockwork %Soldier%"
+#descr 8 "The caster forms ARTICLE clockwork %soldier% from metal in a distant province. The %soldier% then attack anything there, crumbling to useless metal after the battle. The clockwork %soldier% is difficult to destroy and is quite damaging, but it will quickly run out of power and become motionless on the battlefield."
+
+#spelltype 20
+
+#scalerate 2.0
+#scalefatiguemult 60
+#end

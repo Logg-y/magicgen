@@ -1,0 +1,53 @@
+#neweffect "Lesser Swarm"
+#effect 1
+#damage -9
+#spec 8388608
+#power 0
+#maxpower 4
+#precision -2
+#nreff 2
+#pathlevel 1
+#fatiguecost 20
+#sound 44
+#schools 2
+
+#paths 64
+#secondarypaths 64
+
+#namecond nreff < 3020 64 "Swarm"
+#namecond nreff >= 3020 64 "Creeping Doom"
+#descr 64 "The caster magically enlarges a small number of insects."
+
+#spelltype 528
+
+#scalerate 2
+-- #scalecost 1.0
+#skipchance 50
+#end
+
+#neweffect "Swarm"
+#effect 1
+#damage -9
+#spec 8388608
+#power 4
+#precision -2
+#nreff 3012
+#pathlevel 1
+#fatiguecost 100
+#sound 44
+#schools 2
+
+#paths 64
+#secondarypaths 64
+
+#namecond nreff < 3020 64 "Swarm"
+#namecond nreff >= 3020 64 "Creeping Doom"
+#descr 64 "The caster magically enlarges a large number of insects."
+
+#spelltype 528
+
+#scalerate 7
+#scalefatigueexponent -0.4
+#skipchance 50
+-- #scalecost 1.0
+#end

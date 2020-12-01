@@ -1,0 +1,66 @@
+#newsecondary "Shock"
+
+-- evo only
+#spelltype 2
+
+#paths 2
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Shock"
+
+#descr "Residual energy from this spell dissipates in the form of electrical charge, giving a minor shock to those in the affected area."
+
+#end
+
+#newsecondary "Shock damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 2
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Shock"
+
+#descr "Residual energy from this spell dissipates in the form of electrical charge, giving a minor shock to those in the affected area."
+
+#end
+
+
+#newsecondary "Shock smite"
+
+-- evo only
+#spelltype 2
+
+#paths 2
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req aoe == 0
+#req paths == 256
+
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Shock Holy"
+
+#descr "Residual energy from this spell dissipates in the form of electrical charge, giving a strong shock to those in the affected area."
+
+#end

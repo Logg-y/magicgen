@@ -1,0 +1,26 @@
+#neweffect "Beckoning"
+#copyspell "Beckoning"
+#effect 10094
+#damage 666
+#spec 8392704
+#power 6
+#maxpower 9
+#provrange 4
+#nreff 5025
+#pathlevel 5
+#fatiguecost 1500
+#schools 32
+#nogeodst 2052
+#onlygeodst 128
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Beckoning"
+#descr 64 "The caster awakens the forces of the wild, which call out to lure the unwary. Those who fall prey vanish into the woodlands, never to be seen again. The Beckoning will only work in forests and forest beings are immune to the call. Those who are strong of mind or duty will resist the call."
+#details "Up to EFFECTIVENREFF + NREFFSCALING per additional caster level units in target province must succeed with either a difficult MR check or a difficult morale check or wander off into the wilderness. Units with forest survival ignore the spell."
+
+#spelltype 20
+#scalerate 5
+#end

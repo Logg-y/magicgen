@@ -1,0 +1,43 @@
+#neweffect "Vine Arrow Entangle"
+#effect 11
+#damage 64
+#spec 10502272
+#schools -1
+#paths -1
+#scalerate 0
+#aoe 0
+#spelltype 42
+#name 64 "Entangle"
+#power 0
+#end
+
+#neweffect "Vine Arrow"
+#copyspell "Vine Arrow"
+#effect 2
+#damage 2013
+#spec 274877906944
+#schools 4
+
+#spelltype 18
+
+#scalerate 1.5
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 0
+#power 2
+#maxpower 8
+#pathlevel 1
+#flightspr 419
+#sound 64
+#fatiguecost 20
+#range 5025
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 95
+#nextspell "Vine Arrow Entangle"
+#name 64 "Vine %Arrow%"
+#descrcond nreff == 1 64 "The caster shoots an enchanted Vine Arrow against his enemies. The arrow will come alive and entangle anyone who is hit."
+#descrcond nreff > 1 64 "The caster shoots a several enchanted Vine Arrows against his enemies. The arrows will come alive and entangle anyone who is hit."
+#end

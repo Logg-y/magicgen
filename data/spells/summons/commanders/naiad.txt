@@ -1,0 +1,66 @@
+#neweffect "Call Naiad"
+
+#effect 21
+#damage 1226
+#spec 0
+#power 6
+#precision -100
+#nreff 1
+#pathlevel 5
+#chassisvalue 5
+#range 6
+#fatiguecost 160
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 68
+#secondarypaths 68
+#secondarypathchance 98
+
+#name 4 "Call NAMEPREFIX %Naiad%"
+#name 64 "Call NAMEPREFIX %Naiad%"
+#descr 4 "The caster summons ARTICLE %Naiad% to join him in battle. The %Naiad% will leave once the battle is over."
+#descr 64 "The caster summons ARTICLE %Naiad% to join him in battle. The %Naiad% will leave once the battle is over."
+
+#scalefatiguemult 120
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Naiad"
+
+#effect 10021
+#damage 1226
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 4000
+#chassisvalue 2
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 31
+
+
+#paths 68
+#secondarypaths 68
+#secondarypathchance 98
+
+#name 4 "Summon NAMEPREFIX %Naiad%"
+#name 64 "Summon NAMEPREFIX %Naiad%"
+#descr 4 "The caster summons ARTICLE %Naiad%. The %Naiad% is skiled in water and nature magic, but quickly withers and dies if it leaves its home."
+#descr 64 "The caster summons ARTICLE %Naiad%. The %Naiad% is skiled in water and nature magic, but quickly withers and dies if it leaves its home."
+#spelltype 20
+
+#scalerate 1
+#end
+

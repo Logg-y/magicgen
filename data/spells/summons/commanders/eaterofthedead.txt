@@ -1,0 +1,28 @@
+#neweffect "Summon eater of the dead"
+#effect 10093
+#damage 994
+#spec 0
+#power 8
+#maxpower 8
+#precision -2
+#nreff 1
+#pathlevel 7
+#fatiguecost 2000
+#schools 1
+
+#paths 48
+#secondarypaths 48
+#secondarypathchance 100
+
+#skipchance 0
+
+#details "There is only one commander that can be summoned with this spell."
+#name 16 "Call the Eater of the Dead"
+#name 32 "Call the Eater of the Dead"
+#descr 32 "The Death mage uses ancient and unholy rituals to call forth the Eater of the Dead, a dreadful being once banished to the Void by the previous Pantokrator."
+#descr 16 "The Astral mage uses ancient and unholy rituals to call forth the Eater of the Dead, a dreadful being once banished to the Void by the previous Pantokrator."
+
+#spelltype 4
+
+#scalerate 0
+#end

@@ -1,0 +1,15 @@
+#newsecondary "Summon Psychicdamageweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Psychicdamageweapon"
+#descr "The summoned %creature% %is% able to launch a psychic blast into the mind of targets wounded by %its% attacks."
+
+#end

@@ -1,0 +1,66 @@
+#neweffect "Enslave"
+#effect 28
+#damage 999
+#spec 8540288
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 6
+#maxpower 8
+#pathlevel 4
+#explspr 10208
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#namecond aoe < 1 16 "Enslave Mind"
+
+#namecond2 1 <= aoe < 25 16 "Enslave Group"
+#namecond2 26 <= aoe < 600 16 "Enslave Squad"
+
+#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
+
+#end
+
+
+
+#neweffect "Battlefield Enslave"
+#effect 28
+#damage 999
+#spec 25575552
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 8
+#explspr 10208
+#sound 41
+#fatiguecost 800
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Master Enslave"
+
+#descr 16 "The caster attempts to enslave all of his foes at once. Unless resisted, they will lose all command and magical powers they have, and fight for the caster."
+
+#end

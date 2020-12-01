@@ -1,0 +1,108 @@
+#neweffect "Summon illearth3"
+#effect 1
+#damage 2283
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 200
+#sound 31
+#schools 1
+#scalefatiguemult 40
+#paths 128
+#secondarypaths 8
+#secondarypathchance 95
+
+#skipchance 85
+
+#details "The elementals are size 3."
+#name 128 "Summon NAMEPREFIX Lesser %Illearth%"
+#descr 128 "$BLOOD_INTRO$, the caster summons forth ARTICLE moderately sized %illearth%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "illearth3 ritual"
+#effect 10001
+#damage 2283
+#spec 8388608
+#power 5
+#nreff 2001
+#pathlevel 3
+#fatiguecost 1100
+#schools 1
+
+#paths 128
+#secondarypaths 8
+#secondarypathchance 95
+#skipchance 75
+
+#details "The elementals are size 3."
+#name 128 "Summon NAMEPREFIX Lesser Illearths"
+#descr 128 "$BLOOD_INTRO$, the caster summons forth moderately sized illearths."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+
+#scalerate 2
+#end
+
+#neweffect "illearth3 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2283
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#skipchance 90
+
+#details "The elementals are size 3."
+#paths 128
+#secondarypaths 8
+#secondarypathchance 95
+
+#name 128 "NAMEPREFIX Lesser Illearth Attack"
+#descr 128 "$BLOOD_INTRO$, the caster summons forth a moderately sized illearth to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon illearth3"
+#effect 10038
+#provrange 4
+#damage 2283
+#spec 8388608
+#power 6
+#maxpower 9
+#nreff 2001
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 8
+#secondarypathchance 95
+
+#details "The elementals are size 3."
+#name 128 "Send NAMEPREFIX Lesser Illearths"
+#descr 128 "$BLOOD_INTRO$, the caster summons forth moderately sized illearths to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+#end

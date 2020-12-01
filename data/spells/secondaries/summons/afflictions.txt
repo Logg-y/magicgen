@@ -1,0 +1,111 @@
+#newsecondary "Summon Armloss"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Armloss"
+#descr "Anyone wounded by the weapons of the summoned %creature% immediately loses an arm due to magical discharge."
+
+#end
+
+#newsecondary "Summon Eyeloss"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2
+
+#unitmod "Summon Eyeloss"
+#descr "Anyone wounded by the weapons of the summoned %creature% immediately loses an eye due to magical discharge."
+
+#end
+
+#newsecondary "Summon Limp"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Limp"
+#descr "Anyone wounded by the weapons of the summoned %creature% immediately gains a limp due to magical discharge."
+
+#end
+
+#newsecondary "Summon Disease"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Disease"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes diseased unless they resist the effect."
+
+#end
+
+#newsecondary "Summon Chestwound"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.0
+
+#unitmod "Summon Chestwound"
+#descr "Anyone wounded by the weapons of the summoned %creature% immediately gains a chest wound from magical discharge."
+
+#end
+
+#newsecondary "Summon Feeblemind"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.7
+
+#unitmod "Summon Feeblemind"
+#descr "Anyone wounded by the weapons of the summoned %creature% suffers a magical discharge in their mind, resulting in them becoming feebleminded."
+
+#end
+
+#newsecondary "Summon Shrink"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Shrink"
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes permanently shrunken unless they resist the magical effect."
+
+#end

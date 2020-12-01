@@ -1,0 +1,76 @@
+#neweffect "gargoyle ritual"
+#effect 10001
+#damage 2368
+#spec 8388608
+#power 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools 8
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 50
+
+#name 8 "Summon NAMEPREFIX %Gargoyle%"
+#descr 8 "The caster forms and enchants ARTICLE winged %monster% from stone. The animated %statue% can fly and %is% incredibly difficult to harm with physical damage."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+
+#scalerate 4
+#end
+
+#neweffect "gargoyle Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2368
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 600
+#schools 8
+#skipchance 75
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Gargoyle Ambush"
+#descr 8 "The caster forms stone in a distant province into a winged monster and enchants it to attack an enemy commander. The victim will not know who cast this on them, and the gargoyle crumbles to duet if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon gargoyle"
+#effect 10038
+#provrange 4
+#damage 2368
+#spec 8388608
+#power 4
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 8
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Send NAMEPREFIX %Gargoyle%"
+#descr 8 "The caster forms and enchants ARTICLE winged %monster% from stone in a distant province. The animated %statue% can fly and %is% incredibly difficult to harm with physical damage."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 200
+#end

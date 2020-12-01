@@ -1,0 +1,84 @@
+#neweffect "Sailor's Death"
+#effect 2
+#damage 3005
+#spec 36028797556428928
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 2
+#maxpower 6
+#pathlevel 2
+#explspr 10125
+#sound 31
+#fatiguecost 20
+#precision 1
+#range 100
+
+-- AWD
+#paths 38
+#secondarypaths 38
+#secondarypathchance 5
+
+#namecond aoe < 1 4 "Sailor's Death"
+#namecond aoe >= 1 4 "Sailors' Death"
+#name 4 "Drown"
+
+#name 2 "Suffocate"
+#name 2 "Asphyxiate"
+
+#name 32 "Suffocate"
+#name 32 "Asphyxiate"
+
+#descr 2 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 4 "The caster attempts to fill the lungs of SUBJECT with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 32 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+
+#end
+
+
+
+#neweffect "Battlefield Sailor's death"
+#effect 2
+#damage 1010
+#spec 36028797573202048
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 5
+#explspr 10204
+#sound 41
+#fatiguecost 200
+#precision 100
+#range 100
+
+#paths 38
+#secondarypaths 38
+#secondarypathchance 5
+
+#name 4 "Mass Drowning"
+
+#name 2 "Mass Suffocation"
+#name 2 "Mass Asphyxiation"
+
+#name 32 "Mass Suffocation"
+#name 32 "Mass Asphyxiation"
+
+#descr 2 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 4 "The caster attempts to fill the lungs of all his enemies with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 32 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+
+#end

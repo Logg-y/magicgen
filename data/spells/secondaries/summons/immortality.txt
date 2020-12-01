@@ -1,0 +1,175 @@
+#newsecondary "Summon Immortality F3"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 1
+#power -2
+
+#mult fatiguecost 4
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality F3"
+#descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to gradually return from the dead where this spell was cast."
+
+#end
+
+#newsecondary "Summon Immortality F1"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 1
+#power -3
+
+#mult fatiguecost 6
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality F1"
+#descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to quickly return from the dead where this spell was cast."
+
+#end
+
+#newsecondary "Summon Immortality FDom"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 1
+#power -1
+
+#mult fatiguecost 3
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality FDom"
+#descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to return from the dead where this spell was cast. This effect only works if the %creature% died in friendly dominion."
+
+#end
+
+#newsecondary "Summon Immortality 3"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 96
+#power -2
+
+#mult fatiguecost 4
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality 3"
+#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast."
+
+#end
+
+#newsecondary "Summon Immortality 1"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 96
+#power -3
+
+#mult fatiguecost 6
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality 1"
+#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to quickly return from the dead where this spell was cast."
+
+#end
+
+#newsecondary "Summon Immortality Dom"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 96
+#power -1
+
+#mult fatiguecost 3
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality Dom"
+#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast. This is only successful if the %creature% died in friendly dominion."
+
+#end
+
+#newsecondary "Summon Immortality Spring"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 64
+#power -1
+
+#mult fatiguecost 4
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Immortality Spring"
+#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast. This reforming process takes place in the spring, when plants and new life flourish across the land."
+
+#end
+
+#newsecondary "Summon Undead Reforming"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 32
+#power 0
+
+#mult fatiguecost 1.9
+#magicpathvaluescaling 0.05
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Undead Reforming"
+#descr "The summoned %creature% can reform their destroyed undead %body% sometimes when destroyed."
+
+#end

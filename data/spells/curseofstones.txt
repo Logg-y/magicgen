@@ -1,0 +1,35 @@
+#neweffect "Curse of Stones"
+#copyspell "Curse of Stones"
+#effect 11
+#damage 32
+#spec 8409088
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.5
+-- #scalecost 0.6
+
+#aoe 1003
+#power 0
+#pathlevel 1
+#explspr 10270
+#sound 31
+#fatiguecost 10
+#range 5020
+
+#paths 8
+#secondarypaths 8
+
+#namecond aoe > 666 8 "Burden of Earth"
+
+#namecond aoe == 665 8 "Curse of Stones"
+
+#namecond aoe == 663 8 "Curse of Stones"
+
+#descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
+#details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3."
+
+#end
+

@@ -1,0 +1,263 @@
+#neweffect "Small Shock"
+#effect 2
+#damage 1
+#spec 2176
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 1
+#scalerate 0
+#power 2
+#name 1 "$Additional$ Shock"
+#name 2 "$Additional$ Shock"
+#name 4 "$Additional$ Shock"
+#name 8 "$Additional$ Shock"
+#name 16 "$Additional$ Shock"
+#name 32 "$Additional$ Shock"
+#name 64 "$Additional$ Shock"
+#name 128 "$Additional$ Shock"
+#name 1 "$Additional$ Jolt"
+#name 2 "$Additional$ Jolt"
+#name 4 "$Additional$ Jolt"
+#name 8 "$Additional$ Jolt"
+#name 16 "$Additional$ Jolt"
+#name 32 "$Additional$ Jolt"
+#name 64 "$Additional$ Jolt"
+#name 128 "$Additional$ Jolt"
+
+#end
+
+
+#neweffect "Shock Evo Small"
+#effect 2
+#damage 3008
+#spec 8407168
+#aoe 0
+#power 2
+#nreff 1
+#maxpower 9
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 10
+-- little strike
+#explspr 10219
+#sound 27
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE $bolt$ of lightning $is$ called from the $sky$ upon some enemies."
+#descr 16 "ARTICLE $bolt$ of lightning $is$ called from the $sky$ upon some enemies."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE $charge$ down from the $sky$ upon his enemies."
+
+#maxpower 6
+
+#nextspell "Small Shock"
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+
+#neweffect "Large Shock"
+#effect 2
+#damage 2
+#spec 2176
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 6
+#scalerate 2
+#power 4
+#name 1 "$Additional$ Shock"
+#name 2 "$Additional$ Shock"
+#name 4 "$Additional$ Shock"
+#name 8 "$Additional$ Shock"
+#name 16 "$Additional$ Shock"
+#name 32 "$Additional$ Shock"
+#name 64 "$Additional$ Shock"
+#name 128 "$Additional$ Shock"
+#name 1 "$Additional$ Jolt"
+#name 2 "$Additional$ Jolt"
+#name 4 "$Additional$ Jolt"
+#name 8 "$Additional$ Jolt"
+#name 16 "$Additional$ Jolt"
+#name 32 "$Additional$ Jolt"
+#name 64 "$Additional$ Jolt"
+#name 128 "$Additional$ Jolt"
+
+#end
+
+
+#neweffect "Shock Evo Large"
+#effect 2
+#damage 3017
+#spec 2176
+#aoe 1
+#power 4
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 50
+#explspr 10241
+#sound 27
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Thunder Strike"
+#name 16 "Thunder Strike"
+#name 128 "Thunder Strike"
+#descr 2 "A bolt of lightning is called from the $sky$ upon some enemies."
+#descr 16 "A bolt of lightning is called from the $sky$ upon some enemies."
+#descr 128 "$BLOOD_INTRO$, the caster directs a charge down from the $sky$ upon his enemies."
+
+#maxpower 6
+
+#nextspell "Large Shock"
+
+-- evo-like, scale dmg
+#spelltype 66
+#scalerate 1
+#schools 4
+#end
+
+
+#neweffect "Shock Evo Chain"
+#effect 134
+#damage 2001
+#spec 8390784
+#aoe 1
+#power 3
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 20
+#sound 114
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 5
+
+#paths 138
+#secondarypaths 2
+
+#name 2 "Chain Lightning"
+#name 8	"Charge Ground"
+#name 128 "Chain Lightning"
+#descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby."
+#descr 8 "Electrical charge is brought from $underground$ to the battlefield. This then discharges on its own accord, damaging and arcing to anything nearby."
+#descr 128 "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to sustain an electrical charge. The %charge% then discharges on %its% own accord, damaging and arcing to anything nearby."
+
+
+-- evo, scale aoe
+#spelltype 34
+#scalerate 0.6
+-- #scalecost 1.4
+#schools 4
+#end
+
+#neweffect "Shock Evo Chain Projectile"
+#effect 134
+#damage 2001
+#spec 8390784
+#aoe 2
+#power 3
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 20
+#flightspr 10307
+#sound 114
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 5
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Orb Lightning"
+#descr 2 "The mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
+
+
+-- evo, scale aoe
+#spelltype 34
+#scalerate 0.7
+-- #scalecost 1.4
+#schools 4
+#end
+
+
+#neweffect "Shock Evo Multichain"
+#effect 134
+#damage 2001
+#spec 8390784
+#aoe 1
+#power 5
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 20
+#sound 114
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 10
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Unending Chain Lightning"
+#descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby. The charge created by this particular spell persists for an exceptionally large number of bounces."
+
+
+-- evo, scale numbounces
+#spelltype 130
+#scalerate 2
+-- #scalecost 1.4
+#schools 4
+#end
+
+#neweffect "Shock Evo Chaincloud"
+#effect 9134
+#damage 1003
+#spec 8390784
+#aoe 1
+#power 7
+#precision 1
+#range 50
+#pathlevel 3
+#fatiguecost 100
+#explspr 10241
+#sound 27
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 4
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Fountain of Lightning"
+#descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. Charges are then free to flow out of this point for some time after its creation, shocking those nearby."
+
+
+-- evo, scale numbounces
+#spelltype 130
+#scalerate 0.7
+-- #scalecost 1.4
+#schools 4
+#end

@@ -1,0 +1,7 @@
+#newmodifier "Do Nothing"
+
+-- both evo and buff
+#spelltype 0
+-- #skipchance 20
+#skipchance 0
+#end

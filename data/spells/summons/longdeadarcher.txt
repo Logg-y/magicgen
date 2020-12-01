@@ -1,0 +1,112 @@
+#neweffect "Summon longdead archer"
+#effect 1
+#damage 535
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 43
+#schools 16
+
+#paths 32
+#secondarypaths 1
+#secondarypathchance 40
+
+
+#name 1 "Raise NAMEPREFIX Longdead %Archer%"
+#name 32 "Raise NAMEPREFIX Longdead %Archer%"
+#descr 1 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+#descr 32 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+
+#spelltype 528
+
+#scalerate 1
+#skipchance 50
+#end
+
+#neweffect "longdeadarcher ritual"
+#effect 10001
+#damage 535
+#spec 8388608
+#power 3
+#nreff 3004
+#pathlevel 2
+#fatiguecost 400
+#schools 16
+
+#paths 32
+#secondarypaths 1
+#secondarypathchance 40
+
+#name 1 "Raise NAMEPREFIX Longdead %Archer%"
+#name 32 "Raise NAMEPREFIX Longdead %Archer%"
+#descr 1 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+#descr 32 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+
+#skipchance 50
+#scalerate 4
+#end
+
+#neweffect "longdeadarcher Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 535
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 8
+#skipchance 90
+
+#paths 32
+#secondarypaths 1
+#secondarypathchance 40
+
+#name 1 "NAMEPREFIX Longdead Archer Ambush"
+#name 32 "NAMEPREFIX Longdead Archer Ambush"
+#descr 32 "The caster raises ARTICLE longdead %archer% to ambush a commander in a distant province. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age. The enchanted bones of the archer will disintegrate after the battle if it is not destroyed by its opponent."
+#descr 1 "The caster raises ARTICLE longdead %archer% to ambush a commander in a distant province. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age. The enchanted bones of the archer will disintegrate after the battle if it is not destroyed by its opponent."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon longdeadarcher"
+#effect 10038
+#provrange 4
+#damage 535
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 3006
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 1
+#secondarypathchance 40
+
+#name 1 "Send NAMEPREFIX Longdead %Archer%"
+#name 32 "Send NAMEPREFIX Longdead %Archer%"
+#descr 1 "The caster raises ARTICLE longdead %archer% to attack a distant land. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+#descr 32 "The caster raises ARTICLE longdead %archer% to attack a distant land. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end

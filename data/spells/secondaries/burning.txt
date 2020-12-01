@@ -1,0 +1,49 @@
+#newsecondary "Ignite"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- no additional burning for burning spells
+#req damage != 512
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Burning"
+
+#descr "Creatures affected by this also burst into flames."
+
+#end
+
+
+#newsecondary "Ignite damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+--#req paths != 256
+
+
+-- no additional burning for burning spells
+#req damage != 512
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Burning"
+
+#descr "Creatures affected by this also burst into flames."
+
+#end

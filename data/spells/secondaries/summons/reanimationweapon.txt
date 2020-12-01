@@ -1,0 +1,15 @@
+#newsecondary "Summon Reanimationweapon"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Reanimationweapon"
+#descr "The summoned %creature% %is% able to reanimate those killed by its attacks as soulless."
+
+#end

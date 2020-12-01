@@ -1,0 +1,77 @@
+#neweffect "Banishment"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+
+#paths 256
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 1 "Incineration of the Unclean"
+#name 1 "$Purifying$ Flame"
+#name 1 "Ashes to Ashes"
+#name 2 "Wind of Memories"
+#name 2 "$Purifying$ Strikes"
+#name 4 "$Purifying$ Water"
+#name 8 "Pull from the Grave"
+#name 8 "Bury the Dead"
+#name 16 "Otherworldly Purge"
+#name 16 "Stellar Decree"
+#name 16 "Purifying Power"
+#name 32 "Deathly Deconstruction"
+#name 32 "Decree of the Underworld"
+#name 64 "Final Rest"
+#name 64 "Natural End"
+#name 128 "Banish the Bloodless"
+#descr 256 "With this prayer the priest smites undead beings with the power of his God. The undead will take damage unless they manage to resist the banishment."
+
+#spelltype 2
+#end
+
+#neweffect "Smite"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#fatiguecost 0
+#explspr 10302
+#schools 1
+
+#paths 256
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Fire"
+#name 2 "Heavenly Strike"
+#name 2 "Shocking Death"
+#name 2 "$Syllable$ of Lightning"
+#name 4 "$Syllable$ of Rivers"
+#name 4 "Watery Death"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt."
+
+#spelltype 2
+#end

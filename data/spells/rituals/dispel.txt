@@ -1,0 +1,22 @@
+#neweffect "Dispel"
+#copyspell "Dispel"
+#effect 10030
+#damage 8388608
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 3000
+#schools 16
+#alwaysgenerate 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Dispel"
+#descr 16 "This enchantment enables a mage to destroy an active global enchantment. The power of global enchantments is often boosted with the use of additional gems. This number of gems must be matched in order for the dispel to work."
+
+#spelltype 4
+#end

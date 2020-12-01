@@ -1,0 +1,23 @@
+#neweffect "Stygian Paths"
+#copyspell "Stygian Paths"
+#effect 10090
+#damage 1
+#spec 8388608
+#power 8
+#maxpower 8
+#provrange 10
+#nreff 1
+#pathlevel 5
+#fatiguecost 1300
+#schools 32
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Stygian Paths"
+#descr 32 "All lands are connected to the Underworld and every location in the Underworld corresponds to a location in the lands of the living, but time passes differently in the Underworld. By traveling in the Underworld, great distances can be covered in a short period of time. When this ritual is cast, a gateway into the realm of the dead is opened. The necromancer then leads his followers on dark paths through the Underworld to emerge in a faraway province. The journey, however, is not free from risk: no one is allowed to leave the lands of the dead. Everyone using the Stygian paths risks injury or even death by poisoning, spirit attacks or fates even worse. Stealthy units are less likely to be detected by the guardians of the Underworld."
+#details "Spirit attacks: 1 AN dmg + death MR attack. Stealthy units have only 20% chance of being attacked. Caster can not take advantage of stealth."
+
+#spelltype 4
+#end

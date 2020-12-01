@@ -1,0 +1,71 @@
+#newsecondary "Decay"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 4
+
+#nextspell "Minor Decay"
+
+
+#descr "Residual energy from this spell causes those affected to start decaying."
+
+#end
+
+#newsecondary "Decay damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 4
+
+#nextspell "Minor Decay"
+
+#descr "Residual energy from this spell causes those affected to start decaying."
+
+#end
+
+#newsecondary "Decay smite"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe == 0
+#req paths == 256
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 4
+
+#nextspell "Minor Decay Smite"
+
+#descr "The deathly energy focused by the priest causes those harmed to start decaying. The decay can be resisted but it is difficult to do so."
+
+#end
+

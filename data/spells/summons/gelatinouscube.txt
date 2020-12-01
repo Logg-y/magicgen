@@ -1,0 +1,102 @@
+#neweffect "Summon gelatinouscube"
+#effect 1
+#damage 2159
+#spec 8388608
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 50
+#scalefatiguemult 20
+
+#name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
+#descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "gelatinouscube ritual"
+#effect 10001
+#damage 2159
+#spec 8388608
+#power 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 200
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
+#descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 150
+
+#scalerate 2
+#end
+
+#neweffect "gelatinouscube Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2159
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 90
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Gelatinous Cube Attack"
+#descr 4 "The caster summons forth ARTICLE gelantinous %cube% to attack a hostile commander in a distant province. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon gelatinouscube"
+#effect 10038
+#provrange 4
+#damage 2159
+#spec 8388608
+#power 6
+#maxpower 9
+#nreff 1001
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Send NAMEPREFIX Gelatinous %Cube%"
+#descr 4 "The caster summons forth ARTICLE gelantinous %cube% to attack a hostile commander in a distant province. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 150
+#end

@@ -1,0 +1,15 @@
+#newsecondary "Summon Deathwail"
+
+#anysummon 1
+
+#paths 16
+#power 0
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 80
+
+#unitmod "Summon Deathwail"
+#descr "The summoned %creature% will release a psychic wail upon death, paralyzing those nearby that fail to resist."
+
+#end

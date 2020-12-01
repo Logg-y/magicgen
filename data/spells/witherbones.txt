@@ -1,0 +1,28 @@
+#neweffect "Wither Bones"
+#effect 2
+#damage 3012
+#spec 276824200
+#aoe 1
+#power 1
+#precision 0
+#range 30
+#pathlevel 1
+#fatiguecost 20
+#explspr 10209
+#sound 84
+#paths 48
+#secondarypaths 32
+#secondarypathchance 0
+#name 16 "Unravel Undead"
+#name 32 "Wither Bones"
+#name 32 "Dust to Dust"
+
+#descr 16 "The spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+#descr 32 "The spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 32
+#end

@@ -1,0 +1,103 @@
+#neweffect "Summon shade beast"
+#effect 1
+#damage 442
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 30
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX Shade %Beast%"
+#descr 32 "The caster summons ARTICLE black %hound% from the shadow realm. Shade beasts are dark, ethereal dog-like creatures."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent 0.4
+#scalefatiguemult 10
+#end
+
+#neweffect "shadebeast ritual"
+#effect 10001
+#damage 442
+#spec 8388608
+#power 5
+#nreff 2001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX Shade %Beast%"
+#descr 32 "The caster summons ARTICLE black %hound% from the shadow realm. Shade beasts are dark, ethereal dog-like creatures."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#scalerate 4
+#end
+
+#neweffect "shadebeast Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 442
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shade Beast Ambush"
+#descr 32 "The caster summons a shade beast from ths shadow realm and sends it to ambush an enemy commander. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon shadebeast"
+#effect 10038
+#provrange 4
+#damage 442
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 2004
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX Shade Beasts"
+#descr 32 "The caster summons shade beasts from the shadow realm and sends them to a distant province."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end

@@ -1,0 +1,36 @@
+#neweffect "Encase in Ice Smite"
+#effect 609
+#damage 299
+#spec 8404992
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10134
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Ice Cage"
+#name 2 "$Additional$ Ice Cage"
+#name 4 "$Additional$ Ice Cage"
+#name 8 "$Additional$ Ice Cage"
+#name 16 "$Additional$ Ice Cage"
+#name 32 "$Additional$ Ice Cage"
+#name 64 "$Additional$ Ice Cage"
+#name 128 "$Additional$ Ice Cage"
+#name 256 "$Additional$ Ice Cage"
+
+
+
+
+#end

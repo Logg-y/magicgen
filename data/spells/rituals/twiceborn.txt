@@ -1,0 +1,21 @@
+#neweffect "Twiceborn"
+#copyspell "Twiceborn"
+#effect 10023
+#damage 1
+#spec 814219264
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 500
+#schools 16
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Twiceborn"
+#descr 32 "With this ritual, the necromancer enchants his own body to protect himself from death. If the necromancer is slain, he is revived as a Wight Mage in the province where the ritual was cast, possibly gaining dark insights in the process. For the ritual to work, the province it was cast in must be in friendly hands when the necromancer dies. This spell requires more power to affect large beings and the cost of casting the ritual is increased with the caster's size. Undead, demons, plants or inanimates cannot be twiceborned."
+#details "When the caster dies, he returns as a wight mage at the location where the spell was cast. There is a 20% chance of gaining +1 death magic, to a maximum of D4. Being killed by soul slay negates this effect."
+#spelltype 4
+#end

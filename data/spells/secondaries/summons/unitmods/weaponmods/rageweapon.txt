@@ -1,0 +1,11 @@
+#newweaponmod "Rageweapon"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 622
+#spec -2097152
+#nameprefix "Enraging"
+#end

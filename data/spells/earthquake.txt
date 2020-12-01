@@ -1,0 +1,43 @@
+#neweffect "Cave Collapse"
+#copyspell "Cave Collapse"
+#effect 2
+#damage 20
+#spec 3145792
+#schools -1
+#paths -1
+#name 8 "Cave Collapse"
+#spelltype 2
+#scalerate 0
+#aoe 664
+#power 1
+#end
+
+#neweffect "Earthquake"
+#copyspell "Earthquake"
+#effect 2
+#damage 8
+#spec 70368747323456
+#aoe 666
+#power 5
+#maxpower 9
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#sound 16
+
+#nextspell "Cave Collapse"
+#paths 8
+#secondarypaths 8
+
+#skipflightspr 1
+#name 8 "Earthquake"
+#descr 8 "With a thundering boom, the ground heaves and erupts, throwing soldiers into crevices that close after a few seconds. If cast in a cave province the effects are devastating."
+
+
+#spelltype 66
+
+#scalerate 1
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+#end

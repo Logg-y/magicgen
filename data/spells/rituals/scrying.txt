@@ -1,0 +1,37 @@
+#neweffect "Scry"
+#effect 10085
+#provrange 5
+#damage 36
+#spec 8388608
+#power 5
+#maxpower 2
+#nreff 1
+#pathlevel 2
+#fatiguecost 299
+#schools 32
+
+-- fire
+-- air
+-- water
+-- astral
+-- nature
+#paths 95
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Burning Vision"
+#descr 1 "The caster enchants a magical pyre to provide images of a distant province. The more gems spent on creating the pyre, the longer it will last."
+#name 2 "Eyes of the Birds"
+#descr 2 "The caster enlists the aid of birds to provide information about a distant province. Every month, birds will report from the faraway land and provide details of what they found there. The more gems spent on casting this spell, the longer birds will continue to provide information."
+#name 4 "Scrying Pool"
+#descr 4 "The mage will enchant a pool of water to provide images of a province far away. The more magic gems spent on the scrying pool, the longer it will last. The information gained by scrying is much more accurate than a normal scout can provide."
+#name 8 "Crystal Gazing"
+#descr 8 "The caster enchants a crystal to be filled with images of a distant province. The more gems spent on enchanting the crystal, the longer its images will last."
+#name 16 "Astral Window"
+#descr 16 "The caster opens an arcane rift through which he can observe distant lands. The rift closes after a while, but the duration can be prolonged if extra magic gems are used in the casting. Each casting of this ritual allows the mage to scry on one province. The information gained by this spell is much more accurate than a normal scout can provide."
+#name 64 "Eyes of Animals"
+#descr 64 "The caster enlists the aid of animals to provide information about a distant province. Every month, animals will report from the faraway land and provide details of what they found there. The more gems spent on casting this spell, the longer animals will continue to provide information."
+
+
+#spelltype 4
+#end

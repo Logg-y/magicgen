@@ -1,0 +1,32 @@
+#newsecondary "Summon Dimensionalshiftweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Dimensionalshiftweapon"
+#descr "The summoned %creature% %is% able to send enemies to the Void with %its% attacks."
+
+#end
+
+
+#newsecondary "Summon Infernobanishweapon"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Infernobanishweapon"
+#descr "The summoned %creature% %is% able to send enemies to Inferno with %its% attacks."
+
+#end

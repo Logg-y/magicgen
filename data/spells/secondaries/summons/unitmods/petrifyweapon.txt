@@ -1,0 +1,6 @@
+#newunitmod "Summon Petrifyweapon"
+#weaponmod "Petrifyweapon"
+#nameprefix "Stonetouch"
+#req trample == -1
+#descr "This particular CREATURE is filled with earthen magic and may turn enemies it attacks to stone."
+#end

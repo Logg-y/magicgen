@@ -1,0 +1,104 @@
+#neweffect "Summon imp"
+#effect 1
+#damage 303
+#spec 0
+#power 1
+#precision -2
+#nreff 2003
+#pathlevel 1
+#fatiguecost 100
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths 128
+
+#skipchance 60
+
+#name 128 "Summon NAMEPREFIX Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several imps from Inferno to aid him in battle."
+
+#spelltype 528
+
+#scalerate 1.1
+#scalefatiguemult 15
+#end
+
+#neweffect "imp ritual"
+#effect 10001
+#damage 303
+#spec 0
+#power 2
+#nreff 1002
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Summon NAMEPREFIX Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several imps from Inferno to aid him in battle."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 100
+
+#scalerate 2
+#end
+
+#neweffect "Imp Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 303
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "NAMEPREFIX Imp Attack"
+#descr 128 "$BLOOD_INTRO$, the caster binds an imp to ambush an enemy commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote imps"
+#effect 10038
+#provrange 4
+#damage 303
+#spec 0
+#power 3
+#maxpower 9
+#nreff 2004
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 35
+
+#name 128 "Send NAMEPREFIX Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons a group of imps to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2
+#end

@@ -1,0 +1,117 @@
+#neweffect "Poison Res +10"
+#effect 10
+#damage 16777216
+#spec 12582912
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.4
+-- #scalecost 0.7
+
+
+#aoe 0
+#power -1
+#pathlevel 1
+#explspr 10017
+#sound 31
+#range 15
+#fatiguecost 10
+#maxpower 7
+
+
+-- death, nature, blood
+#paths 224
+#secondarypaths 0
+
+#name 32 "Resist Poison"
+#name 64 "Resist Poison"
+#name 128 "Resist Poison"
+#descr 32 "SUBJECT %is% made slightly resistant to poisons."
+#descr 64 "SUBJECT %is% made slightly resistant to poisons."
+#descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer slight resistance to poisons."
+
+#details "Grants +10 poison resistance."
+
+#end
+
+#neweffect "Poison Res +15"
+#effect 514
+#damage 200
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0.9
+-- #scalecost 0.7
+
+
+#aoe 0
+#power 2
+#pathlevel 2
+#explspr 10017
+#sound 31
+#range 15
+#fatiguecost 20
+#maxpower 8
+
+
+-- air, earth
+#paths 224
+#secondarypaths 0
+
+#name 32 "Protection from Poison"
+#name 64 "Protection from Poison"
+#name 128 "Protection from Poison"
+#descr 32 "SUBJECT %is% made highly resistant to poisons."
+#descr 64 "SUBJECT %is% made highly resistant to poisons."
+#descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer significant resistance to poisons."
+
+
+
+#details "Grants +15 poison resistance."
+
+#end
+
+#neweffect "Poison Res +20"
+#effect 519
+#damage 200
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0.5
+#scalefatiguemult 3
+-- #scalecost 0.7
+
+
+#aoe 0
+#power 4
+#pathlevel 2
+#explspr 10017
+#sound 31
+#range 15
+#fatiguecost 20
+#maxpower 9
+
+
+-- air, earth
+#paths 224
+#secondarypaths 0
+
+#name 32 "Greater Protection from Poison"
+#name 64 "Greater Protection from Poison"
+#name 128 "Greater Protection from Poison"
+#descr 32 "SUBJECT %is% made extremely resistant to poisons."
+#descr 64 "SUBJECT %is% made extremely resistant to poisons."
+#descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer exceptional resistance to all kinds of poisons."
+
+
+#details "Grants +20 poison resistance."
+
+#end

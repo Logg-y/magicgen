@@ -1,0 +1,197 @@
+-- seems to be 1-9 for normal searching
+-- then 2**(path+6) for combined flags
+
+-- 128 fire
+-- 256 air
+-- 512 water
+-- 1024 earth
+-- 2048 astral
+-- 4096 death
+-- 8192 nature
+-- 16384 blood
+-- 32768 holy?
+
+#neweffect "Voice of Tiamat"
+#effect 10048
+#provrange 4
+#damage 51
+#spec 41943040
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 800
+#schools 33
+#onlyfriendlydst 1
+#nolandtrace 1
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Voice of Tiamat"
+#descr 4 "The caster conjures up the dreams of Tiamat, the Raging Sea. She has knowledge of all that lies underneath the sea. The voice of her dreams, when rightly interpreted, reveals all sites of Elemental power in a sea. The dreams will find their way to everyone living in that province and the magical sites will no longer be secret. This spell can only be cast under water."
+
+#spelltype 4
+
+#end
+
+#neweffect "Acashic Knowledge"
+#effect 10048
+#provrange 4
+#damage 55
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 1400
+#schools 33
+#onlyfriendlydst 1
+
+-- astral
+-- air
+-- nature
+-- death
+#paths 114
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Acashic Knowledge"
+#descr 16 "This spell lets the caster tap information from the memory of the Spheres to reveal the presence of all magical sites in a given province. The spell cannot be used to find magic sites in enemy provinces."
+#name 64 "Knowledge of Animals"
+#descr 64 "The caster communes with the animals living in a distant province. The animals have fully explored their homeland and share with the caster knowledge of all the interesting and unusual places they have discovered, including all magical sites in the province."
+#name 2 "Knowledge of the Birds"
+#descr 2 "The caster entreats the birds of a distant province to come to him and share their knowledge of their homeland. The birds are numerous and have scoured every part of their home for any unusual sites of magical power."
+#name 32 "Knowledge of the Dead"
+#descr 32 "The caster communes with dead being in a distant province. The dead share with him their knowledge of the local area, including the locations of any long-forgotten magical sites."
+
+#spelltype 4
+
+#end
+
+#neweffect "Acashic Knowledge Blood"
+#effect 10048
+#provrange 4
+#damage 55
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 2500
+#schools 1
+#onlyfriendlydst 1
+
+#skipchance 80
+#paths 128
+#secondarypaths 128
+
+#name 128 "Demonic Knowledge"
+#descr 128 "The caster offers blood to devils in return for knowledge. Devils seek out and search a province with their supernatural knowledge, and return with details of all sites of magical power in a province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Water+Blood remote"
+#effect 10048
+#provrange 4
+#damage 16896
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 600
+#schools 33
+#onlyfriendlydst 1
+
+#paths 128
+#secondarypaths 4
+#secondarypathchance 100
+#skipchance 80
+
+#name 128 "Knowledge of Kokytos"
+#descr 128 "The caster offers blood to the demonic denizens of Kokytos in exchange for knowledge. The ice fiends return with knowledge of all sites of blood and water power in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Fire+Blood remote"
+#effect 10048
+#provrange 4
+#damage 16512
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 600
+#schools 33
+#onlyfriendlydst 1
+
+#paths 128
+#secondarypaths 1
+#secondarypathchance 100
+#skipchance 80
+
+#name 128 "Knowledge of Inferno"
+#name 128 "Infernal Knowledge"
+#descr 128 "The caster offers blood to the demonic denizens of Inferno in exchange for knowledge. The devils return with knowledge of all sites of blood and fire power in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Air+Blood remote"
+#effect 10048
+#provrange 4
+#damage 16640
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 600
+#schools 33
+#onlyfriendlydst 1
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 100
+#skipchance 80
+
+#name 128 "Knowledge of Pazuzu"
+#descr 128 "The caster offers blood to the demonic servants of Pazuzu in exchange for knowledge. The servants return with knowledge of all sites of blood and air power in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Earth+Blood remote"
+#effect 10048
+#provrange 4
+#damage 17408
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 600
+#schools 33
+#onlyfriendlydst 1
+
+#paths 128
+#secondarypaths 8
+#secondarypathchance 100
+#skipchance 80
+
+#name 128 "Knowledge of Pedoseidon"
+#descr 128 "The caster offers blood to the demonic servants of Pedoseidon in exchange for knowledge. The servants return with knowledge of all sites of blood and earth power in a distant province."
+
+#spelltype 4
+
+#end
+

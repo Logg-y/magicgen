@@ -1,0 +1,43 @@
+#neweffect "Resist Magic"
+#effect 10
+#damage 67108864
+#spec 12582912
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 5
+-- #scalecost 1.0
+
+#aoe 1
+#power 1
+#maxpower 4
+#pathlevel 1
+#explspr 10236
+#sound 41
+#range 10
+#fatiguecost 20
+
+--FAWES
+#paths 31
+#secondarypaths 0
+
+#namecond aoe == 1 16 "Resist Magic"
+#name 1 "Burning Will"
+#name 2 "Clarity of Thought"
+#name 4 "Swift Resolve"
+#name 8 "Iron Will"
+
+#namecond aoe <= 666 16 "Antimagic"
+
+#details "+4 magic resistance."
+
+#descr 1 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 2 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#end
+

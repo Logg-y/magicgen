@@ -1,0 +1,87 @@
+#neweffect "Call Shura"
+
+#effect 1
+#damage 1256
+#spec 0
+#power 3
+#precision -100
+#nreff 1
+#pathlevel 2
+#chassisvalue 60
+#range 6
+#fatiguecost 60
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX %Shura%"
+#descr 32 "The caster summons ARTICLE %Shura% to fight for him on the battlefield. The %Shura% %is% ARTICLE powerful undead general surrounded by a freezing wind, but will leave once the battle is over."
+
+#scalefatiguemult 60
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Shura"
+
+#effect 10021
+#damage 1256
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 700
+#chassisvalue 400
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 8
+#secondarypaths 8
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX Shura"
+#descr 32 "The caster summons ARTICLE %Shura% to fight for him. The %Shura% %is% an powerful undead general and is surrounded by a freezing wind."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Shura Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1256
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#chassisvalue 80
+#schools 1
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shura Attack"
+#descr 32 "The caster summons ARTICLE %Shura% to attack a hostile commander in a distant land. The %Shura% %is% a powerful undead general surrounded by a freezing wind."
+
+#spelltype 4
+
+#end

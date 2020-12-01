@@ -1,0 +1,22 @@
+#neweffect "Melancholia"
+#copyspell "Melancholia"
+#effect 10086
+#damage 72
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 1200
+#schools 32
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Melancholia"
+#descr 8 "The caster curses a province with melancholia. The populace becomes depressed, cynical and listless. Peasants don't care about harvesting and let their livestock wander. Craftsmen only work when they feel like it and soldiers tend to desert unless whipped into obedience. Even the temples are left untended. The Dominion of the local god will decrease."
+#details "Scale of Sloth is set to 3. Dominion is reduced by 1-2. All units in the province must make a MR check vs 10 and a morale check vs 10. If they fail both they desert."
+
+#spelltype 4
+#end

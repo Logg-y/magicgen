@@ -1,0 +1,33 @@
+#neweffect "Confusion Secondary"
+#effect 11
+#damage 17179869184
+#spec 8540160
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10207
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Additional Confusion"
+#name 2 "Additional Confusion"
+#name 4 "Additional Confusion"
+#name 8 "Additional Confusion"
+#name 16 "Additional Confusion"
+#name 32 "Additional Confusion"
+#name 64 "Additional Confusion"
+#name 128 "Additional Confusion"
+#name 256 "Additional Confusion"
+
+#end

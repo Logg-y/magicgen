@@ -1,0 +1,23 @@
+#newweaponmod "Fearweapon"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 440
+#spec -2097152
+#nameprefix "Frightening"
+#end
+
+#newweaponmod "Greaterfearweapon"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 139
+#spec -2097152
+#nameprefix "Terrifying"
+#end

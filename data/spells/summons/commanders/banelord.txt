@@ -1,0 +1,87 @@
+#neweffect "Call Bane Lord"
+
+#effect 1
+#damage 998
+#spec 0
+#power 5
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 60
+#range 6
+#fatiguecost 60
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX Bane %Lord%"
+#descr 32 "The caster summons ARTICLE %Bane Lord% to fight for him on the battlefield. The %Bane Lord% %is% ARTICLE powerful undead %general% surrounded by a freezing wind, but will leave once the battle is over."
+
+#scalefatiguemult 40
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Bane Lord"
+
+#effect 10021
+#damage 998
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 700
+#chassisvalue 700
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 8
+#secondarypaths 8
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Summon NAMEPREFIX Bane Lord"
+#descr 32 "The caster summons ARTICLE %Bane Lord% to fight for him. The %Bane Lord% %is% an powerful undead %general% and is surrounded by a freezing wind."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Bane Lord Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 998
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#chassisvalue 80
+#schools 1
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Bane Lord Attack"
+#descr 32 "The caster summons ARTICLE %Bane Lord% to attack a hostile commander in a distant land. The %Bane Lord% %is% a powerful undead %general% surrounded by a freezing wind."
+
+#spelltype 4
+
+#end

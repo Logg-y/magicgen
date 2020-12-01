@@ -1,0 +1,22 @@
+#neweffect "Blood Feast"
+#copyspell "Blood Feast"
+#effect 10118
+#damage 50
+#spec 536870912
+#power 3
+#maxpower 3
+#nreff 5015
+#pathlevel 2
+#fatiguecost 500
+#schools 32
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 128 "Blood Feast"
+#descr 128 "The caster has learned the recuperative secrets of cannibalism. In a gruesome ritual lasting a month he consumes the blood and feast of ritually purified sacrifices. The blood feast requires copious amount of flesh and blood of unpurified victims as well however, so the populace in the province where the caster resides is slaughtered in great quantities. The flesh and blood of the victims rejuvenates the caster, healing him of all or at least most afflictions. Bloodmages who partakes too often in blood feasts often develop uncontrollable cravings for human flesh. The ritual does not work on inanimate beings."
+#details "Removes up to 10 afflictions, kills up to 750 population, 25% chance to develop cravings"
+
+#spelltype 4
+#end

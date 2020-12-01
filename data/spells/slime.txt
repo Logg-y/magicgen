@@ -1,0 +1,66 @@
+#neweffect "Slime Projectile"
+#copyspell "Slime"
+#effect 11
+#damage 134217728
+#spec 20480
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 1
+#power -1
+#precision 2
+#maxpower 9
+#pathlevel 1
+#flightspr 404
+#explspr 10256
+#sound 106
+#fatiguecost 20
+#range 5025
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "Slime %$Ball$%"
+#descr 4 "The caster hurls ARTICLE %ball% of sticky goo at his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#details "Slimed targets have their att/def/combat speed halved."
+#end
+
+
+#neweffect "Slime Instant"
+#effect 11
+#damage 134217728
+#spec 20480
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 1
+#power 1
+#precision 2
+#maxpower 9
+#pathlevel 2
+#explspr 10256
+#sound 107
+#fatiguecost 20
+#range 5025
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "Slime"
+#descr 4 "The caster conjures sticky goo all over his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#details "Slimed targets have their att/def/combat speed halved."
+#end

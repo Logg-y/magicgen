@@ -1,0 +1,73 @@
+#neweffect "Call Alchemist"
+
+#effect 21
+#damage 551
+#spec 0
+#power 4
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 5
+#range 6
+#fatiguecost 60
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 88
+#secondarypaths 9
+#secondarypathchance 95
+#pathskipchance 64 80
+
+#name 8 "Call NAMEPREFIX %Alchemist%"
+#name 16 "Teleport NAMEPREFIX %Alchemist%"
+#name 64 "Charm NAMEPREFIX %Alchemist%"
+#descr 8 "The earth mage lets out a call for ARTICLE %Alchemist% to join him in battle. The %Alchemist% will leave once the battle is over."
+#descr 16 "The caster teleports ARTICLE %Alchemist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Alchemist% will leave once the battle is over."
+#descr 64 "The caster attracts ARTICLE %Alchemist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Alchemist% will leave once the battle is over."
+
+#scalefatiguemult 60
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Alchemist"
+
+#effect 10021
+#damage 551
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 1500
+#chassisvalue 220
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 31
+
+#paths 88
+#secondarypaths 9
+#secondarypathchance 95
+#pathskipchance 64 80
+
+
+#name 8 "Call NAMEPREFIX Alchemist"
+#name 16 "Teleport NAMEPREFIX Alchemist"
+#name 64 "Charm NAMEPREFIX Alchemist"
+#descr 8 "The earth mage lets out a call for ARTICLE %Alchemist%. Alchemists are mages of fire, astral and earth and are especially capable at producing gold from gems."
+#descr 16 "The caster teleports ARTICLE %Alchemist% to him and convinces PRONOUN to fight for him."
+#descr 64 "The caster attracts ARTICLE %Alchemist% to him and convinces PRONOUN to fight for him."
+
+#spelltype 20
+
+#scalerate 1
+#end
+

@@ -1,0 +1,6 @@
+#newunitmod "Summon Weaknessweapon"
+#weaponmod "Weaknessweapon"
+#nameprefix "Weakening"
+#req trample == -1
+#descr "This particular CREATURE permanently weakens those wounded by its attacks, unless they resist the effect."
+#end

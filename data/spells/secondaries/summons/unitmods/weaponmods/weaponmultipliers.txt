@@ -1,0 +1,38 @@
+#newweaponmod "DmgVsUndead"
+-- weapon not already AP or AN
+#req spec !& 64
+#req spec !& 128
+#req spec & 2097152
+#spec -2097152
+#effect != 24
+#effect == 2
+#extracommand dt_holy
+-- no special effects on weapon already
+#nameprefix "Holy"
+#end
+
+#newweaponmod "DmgVsMagic"
+-- weapon not already AP or AN
+#req spec !& 64
+#req spec !& 128
+#req spec & 2097152
+#spec -2097152
+#effect != 73
+#effect == 2
+#extracommand dt_magic
+-- no special effects on weapon already
+#nameprefix "Unraveling"
+#end
+
+#newweaponmod "DmgVsDemonsOnly"
+-- weapon not already AP or AN
+#req spec !& 64
+#req spec !& 128
+#req spec & 2097152
+#spec -2097152
+#effect != 107
+#effect == 2
+#extracommand dt_demon
+-- no special effects on weapon already
+#nameprefix "Demonslaying"
+#end

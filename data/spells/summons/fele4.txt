@@ -1,0 +1,107 @@
+#neweffect "Summon feles4"
+#effect 1
+#damage 596
+#spec 0
+#power 4
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+
+#skipchance 85
+#scalefatiguemult 40
+#details "The elementals are size 4."
+#name 1 "Summon NAMEPREFIX Large Fire %Elemental%"
+#descr 1 "The caster summons forth ARTICLE large fire %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "feles4 ritual"
+#effect 10001
+#damage 596
+#spec 0
+#power 4
+#nreff 2001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+
+#skipchance 75
+
+#details "The elementals are size 4."
+#name 1 "Summon NAMEPREFIX Large Fire Elementals"
+#descr 1 "The caster summons forth large fire elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+
+#scalerate 2
+#end
+
+#neweffect "feles4 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 596
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 1 
+#secondarypaths 1 
+
+#details "The elementals are size 4."
+#name 1 "NAMEPREFIX Large Fire Attack"
+#descr 1 "The caster summons forth a large fire elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon feles4"
+#effect 10038
+#provrange 4
+#damage 596
+#spec 0
+#power 6
+#maxpower 9
+#nreff 1003
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 1 
+#secondarypaths 1 
+
+#details "The elementals are size 4."
+#name 1 "Send NAMEPREFIX Large Fire Elementals"
+#descr 1 "The caster summons forth large fire elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#end

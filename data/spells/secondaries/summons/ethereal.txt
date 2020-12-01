@@ -1,0 +1,15 @@
+#newsecondary "Summon ethereal"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Ethereal"
+#descr "The summoned %creature% %is% imbued with magic that renders it ethereal, allowing it to often ignore mundane weapons and obstacles."
+
+#end

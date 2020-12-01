@@ -1,0 +1,109 @@
+#neweffect "Summon largelobster"
+#effect 1
+#damage 2273
+#spec 41959424
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 30
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 4
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Large %Lobster%"
+#descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 2
+#end
+
+#neweffect "largelobster ritual"
+#effect 10001
+#damage 2273
+#spec 41959424
+#power 2
+#nreff 2003
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 64
+#secondarypaths 4
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Large %Lobster%"
+#descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#scalerate 4
+#end
+
+#neweffect "largelobster Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2273
+#spec 41959424
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#onlygeodst 2052
+
+#paths 64
+#secondarypaths 4
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Large Lobster Attack"
+#descr 64 "The caster summons ARTICLE large %lobster% to attack a hostile commander in a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote largelobster"
+#effect 10038
+#provrange 4
+#damage 2273
+#spec 41959424
+#power 4
+#maxpower 9
+#nreff 2008
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#onlygeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 4
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 30
+
+#name 64 "Send NAMEPREFIX Large %Lobster%"
+#descr 64 "The caster summons ARTICLE large %lobster% to attack a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+
+
+#spelltype 20
+
+#scalerate 4
+#end

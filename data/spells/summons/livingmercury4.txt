@@ -1,0 +1,111 @@
+#neweffect "Summon livingmercury4"
+#effect 1
+#damage 2516
+#spec 8388608
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+#ainocast 1
+
+#skipchance 85
+#scalefatiguemult 110
+
+#details "The elementals are size 4."
+#name 4 "Summon NAMEPREFIX Large Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE large living %mercury%. They will fight for him until the battle ends. Living mercuries are surrounded by clouds of toxic fumes that may harm the caster unless he is resistant."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "livingmercury4 ritual"
+#effect 10001
+#damage 2516
+#spec 8388608
+#power 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#skipchance 75
+
+#details "The elementals are size 4."
+#name 4 "Summon NAMEPREFIX Large Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE large living %mercury%."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 230
+
+#scalerate 2
+#end
+
+#neweffect "livingmercury4 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2516
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+#skipchance 90
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 4."
+#name 4 "NAMEPREFIX Large Living %Mercury% Attack"
+#descr 4 "The caster summons forth ARTICLE large living %mercury% to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon livingmercury4"
+#effect 10038
+#provrange 4
+#damage 2516
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1
+#pathlevel 4
+#fatiguecost 200
+#schools 1
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 4."
+#name 4 "Send NAMEPREFIX Large Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE large living %mercury% to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 230
+#end

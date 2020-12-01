@@ -1,0 +1,21 @@
+#newmodifier "Less Fatigue"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 10
+-- not battlesummoned commander
+#req effect != 21
+
+#req effect < 1000
+#req fatiguecost >= 100
+-- stuff I don't want this to apply to I can set 199 fatigue for
+-- AKA magic duel, reinvigoration
+#req fatiguecost < 199
+
+#fatiguecost -70
+
+#pathlevel 0
+#power -4
+
+#end

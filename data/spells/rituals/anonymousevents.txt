@@ -1,0 +1,333 @@
+-- I can't find a mod command for "only castable once per province"
+-- hence copyspells
+
+#neweffect "Baleful Star"
+#copyspell "Baleful Star"
+#effect 10042
+#provrange 5
+#damage 5
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 2
+
+#paths 16
+#secondarypaths 16
+
+#spelltype 4
+#descr 16 "The caster invokes the great Maleficent and forces the evil star to take a conjunctive position in the heavens above one province, causing unfortunate events and evil deeds to occur. Anyone exposed to the evil star risks getting cursed for the rest of his life."
+#name 16 "Baleful Star"
+#details "Increases misfortune by 3. Curses 10% of units in the target province. +30 Unrest."
+
+#end
+
+#neweffect "Black Death"
+#copyspell "Black Death"
+#effect 10042
+#provrange 5
+#damage 1
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 1500
+#schools 32
+
+#paths 32
+#secondarypaths 32
+
+#spelltype 4
+#name 32 "Black Death"
+#descr 32 "The necromancer curses a province with the Black Death. This plague will kill thousands upon thousands of people. The spell is targeted at the general population and will probably not affect the military units in the province."
+#details "Kills 50% population. Diseases 10% of units. Unrest +10."
+#end
+
+#neweffect "Blight"
+#copyspell "Blight"
+#effect 10042
+#provrange 5
+#damage 9
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 2
+#nogeodst 2052
+
+#paths 40
+#secondarypaths 40
+
+#spelltype 4
+#name 32 "Blight"
+#name 8 "Blight"
+#descr 32 "The caster unleashes a blight upon a distant province. Five percent of the population will die, unrest increases and eighty pounds of gold must be used to feed the starving."
+#details "Population -5%, Unrest +15, Gold -80."
+#end
+
+#neweffect "Breath of the Desert"
+#copyspell "Breath of the Desert"
+#effect 10042
+#provrange 5
+#damage 13
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 2
+#nogeodst 2052
+
+#paths 3
+#secondarypaths 3
+
+#spelltype 4
+#name 1 "Breath of the Desert"
+#name 2 "Breath of the Desert"
+#descr 1 "The caster curses a distant province with a dramatic rise in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
+#descr 2 "The caster curses a distant province with a dramatic rise in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
+#details "Population -5%, Heat+3."
+#end
+
+#neweffect "Hurricane"
+#copyspell "Hurricane"
+#effect 10042
+#provrange 5
+#damage 7
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 2
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#spelltype 4
+#name 2 "Hurricane"
+#descr 2 "The caster unleashes a violent hurricane upon a province, devastating the countryside. The hurricane will appear as a natural event. Unrest will increase and part of the population will die."
+#details "Population -3%, Unrest +25."
+#end
+
+#neweffect "Locust Swarm"
+#copyspell "Locust Swarms"
+#effect 10042
+#provrange 5
+#damage 8
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#spelltype 4
+#name 64 "Locust Swarms"
+#descr 64 "The caster unleashes swarms of locusts upon a province. The locusts will cause panic, consume crops and cause the loss of taxes. The swarms will appear as a natural event."
+#details "Income -50%, Unrest +20."
+#end
+
+#neweffect "Monster Boar"
+#copyspell "Monster Boar"
+#effect 10042
+#provrange 5
+#damage 11
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#spelltype 4
+#name 64 "Monster Boar"
+#descr 64 "The caster summons a monster boar and sends it to a distant province to ravage the land. The boar is a descendant of the monster boars sent by the Lady of the Hunt to ravage the farmlands of obnoxious peasants. The boar will cause unrest in the province until it is found and slain."
+#details "The boar adds 15 unrest per turn until killed."
+#end
+
+
+
+#neweffect "Raging Hearts"
+#copyspell "Raging Hearts"
+#effect 10042
+#provrange 5
+#damage 2
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 32
+
+#paths 1
+#secondarypaths 1
+
+#spelltype 4
+#name 1 "Raging Hearts"
+#descr 1 "Fury will start to grow in the hearts of all people in an entire province. Those affected will soon start to kill and plunder their fellow citizens. A mage can target any province of his choice and those affected will not know who has cast this spell on them."
+#details "-5% population, +60 Unrest"
+#end
+
+#neweffect "Rain of Toads"
+#copyspell "Rain of Toads"
+#effect 10042
+#provrange 5
+#damage 6
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 2000
+#schools 1
+
+#paths 128
+#secondarypaths 64
+#secondarypathchance 100
+#nogeodst 2052
+
+#spelltype 4
+#name 128 "Rain of Toads"
+#descr 128 "The caster creates a horrible omen, turning the falling rain in a target province into toads. The target province will suffer from unrest and misfortune. Soldiers stationed in the province will risk becoming diseased when dead toads fester in the wells."
+#details "Unrest +40, misfortune +3, disease chance 4%. Reported as a random event."
+#end
+
+#neweffect "Send Dream Horror"
+#copyspell "Send Dream Horror"
+#effect 10042
+#provrange 5
+#damage 12
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 1400
+#schools 1
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 90
+
+#spelltype 4
+#name 128 "Send Dream Horror"
+#descr 128 "The caster sends a Defiler of Dreams to attack a distant province. The Dream Horror will project nightmares and feed on the emotional distress of its victims. Unrest will increase in the province until the Horror is found and slain. Dealing with horrors is not without risk however and the caster of this ritual might attract some unwanted attention."
+#details "Unrest +30, summons a stealthy defiler of dreams in the province which causes +20 unrest per turn. Reported as a random event. Casting this spell has a 20% chance of horror marking the caster."
+#end
+
+#neweffect "Tidal Wave"
+#copyspell "Tidal Wave"
+#effect 10042
+#provrange 5
+#damage 10
+#spec 8688608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 1500
+#schools 4
+#nogeodst 2052
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 90
+
+#spelltype 4
+#name 4 "Tidal Wave"
+#descr 4 "The caster unleashes a huge tidal wave upon a distant province, destroying the lands and killing the people."
+#details "Unrest +50, -30% population."
+#end
+
+#neweffect "Volcanic Eruption"
+#copyspell "Volcanic Eruption"
+#effect 10042
+#provrange 5
+#damage 4
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 1300
+#schools 4
+
+#paths 9
+#secondarypaths 9
+#secondarypathchance 90
+
+#spelltype 4
+#name 1 "Volcanic Eruption"
+#name 8 "Volcanic Eruption"
+#descr 1 "The caster unleashes a volcanic eruption upon a distant province, destroying the lands and killing one third of the population."
+#descr 8 "The caster unleashes a volcanic eruption upon a distant province, destroying the lands and killing one third of the population."
+#details "Unrest +30, -30% population."
+#end
+
+#neweffect "Wolven Winter"
+#copyspell "Wolven Winter"
+#effect 10042
+#provrange 5
+#damage 3
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 2
+#nogeodst 2052
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 90
+
+#spelltype 4
+#name 4 "Wolven Winter"
+#descr 4 "The caster curses a distant province with a dramatic fall in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
+#details "-5% population, +3 cold."
+#end
+
+#neweffect "Wrath of Pazuzu"
+#copyspell "Wrath of Pazuzu"
+#effect 10042
+#provrange 5
+#damage 14
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 1500
+#schools 2
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 90
+
+#spelltype 4
+#name 128 "Wrath of Pazuzu"
+#descr 128 "The caster unleashes an infernal tempest from the realm of Pazuzu upon a province. The storm is anything but natural and Shedim, servants of Pazuzu, can be heard bellowing in the gale. The storm causes unrest and devastation upon a province.."
+#details "Unrest +35, population -4%. Reported as a random event.."
+#end

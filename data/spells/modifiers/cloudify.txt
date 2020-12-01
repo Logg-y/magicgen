@@ -1,0 +1,56 @@
+#newmodifier "Cloud"
+
+-- evo
+#spelltype 2
+
+#power -3
+#effect 4000
+
+#givecloudsfx 1
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+-- chain lightning
+#req effect != 134
+#req effect < 1000
+-- not magic duel
+#req effect != 27
+
+#skipchance 10
+
+#req nonscalingaoe < 650
+-- not ritual
+#req spelltype !& 4
+
+#descr "This spell forms a cloud on the battlefield and all those within it are rapidly subjected to the spell's effects."
+
+#end
+
+
+#newmodifier "Cloud buffs"
+
+-- buff
+#spelltype 1
+
+#power -2
+#effect 4000
+
+#givecloudsfx 1
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req effect < 1000
+
+#skipchance 10
+
+#req nonscalingaoe < 650
+-- not ritual
+#req spelltype !& 4
+
+#descr "This spell forms a cloud on the battlefield and applies its effects to those who enter the cloud."
+
+#end

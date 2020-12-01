@@ -1,0 +1,16 @@
+#newmodifier "Longer Range"
+
+-- evo only
+#spelltype 2
+
+#power -1
+#skipchance 20
+
+#range 5015
+#req nonscalingrange < 100
+-- not ritual
+#req spelltype !& 4
+
+-- #descr "This spell has an exceptionally long reach."
+
+#end

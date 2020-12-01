@@ -1,0 +1,41 @@
+#neweffect "Fire Shield"
+#effect 23
+#damage 32768
+#spec 16384
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.4
+
+#aoe 0
+#power 3
+#maxpower 9
+#pathlevel 1
+#explspr 10034
+#sound 16
+#range 10
+#fatiguecost 20
+
+
+#paths 129
+#secondarypaths 1
+
+#namecond aoe < 2 1 "Fire Shield"
+#namecond aoe < 2 128 "Infernal Shield"
+
+#namecond aoe >= 2 1 "Barriers of Fire"
+#namecond aoe >= 2 128 "Infernal Barriers"
+
+#namecond aoe >= 660 1 "Burning Army"
+#namecond aoe >= 660 128 "Infernal Army"
+
+#details "Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
+
+#descr 1 "Surrounds SUBJECT with fire, causing melee attackers to be burned."
+#descr 128 "$BLOOD_INTRO$, the caster surrounds SUBJECT with infernal flames, causing melee attackers to be burned."
+
+#end
+

@@ -1,0 +1,6 @@
+#newunitmod "Summon Rageweapon"
+#weaponmod "Rageweapon"
+#nameprefix "Enraging"
+#req trample == -1
+#descr "This particular CREATURE has been magically altered to induce rage in creatures it wounds."
+#end

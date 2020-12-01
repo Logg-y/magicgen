@@ -1,0 +1,87 @@
+#neweffect "Call Harvester of Sorrows"
+
+#effect 1
+#damage 491
+#spec 0
+#power 5
+#precision -100
+#nreff 1
+#pathlevel 2
+#chassisvalue 80
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX %Harvester% of Sorrows"
+#descr 32 "The death mage summons ARTICLE %Harvester% of Sorrows to join him in battle. The Harvester% of Sorrows will leave once the battle is over."
+
+#scalefatiguemult 80
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Harvester of Sorrows"
+
+#effect 10021
+#damage 491
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#chassisvalue 2000
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 31
+
+#paths 32
+#secondarypaths 32
+
+
+#name 32 "Summon NAMEPREFIX Harvester of Sorrows"
+#descr 32 "The death mage summons a Harvester of Sorrows. Harvesters of Sorrows are large, stealthy spirits which cause the land around them to wither and die."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Harvester of Sorrows Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 491
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#chassisvalue 350
+#schools 1
+#skipchance 26
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX Harvester of Sorrows"
+#descr 32 "The death mage sends a Harvester of Sorrows to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end

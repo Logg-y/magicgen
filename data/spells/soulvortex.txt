@@ -1,0 +1,37 @@
+#neweffect "Soul Vortex"
+#effect 23
+#damage 2048
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 5
+
+
+#aoe 0
+#power 6
+#pathlevel 3
+#explspr 10122
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+-- death, blood
+#paths 160
+#secondarypaths 32
+
+#namecond aoe < 1 32 "Soul Vortex"
+#namecond aoe < 1 128 "Vampiric Aura"
+
+#namecond aoe >= 1 32 "Soul Vortex"
+#namecond aoe >= 1 128 "Vampiric Aura"
+
+#descr 32 "SUBJECT begins to suck in the souls of nearby living creatures, healing and reinvigorating PRONOUN."
+#descr 128 "$BLOOD_INTRO$, SUBJECT is granted a vampiric aura that sucks in the souls of nearby living creatures. The stolen energy is used to heal and reinvigorate PRONOUN."
+
+#end
+

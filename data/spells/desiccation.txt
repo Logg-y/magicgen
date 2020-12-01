@@ -1,0 +1,70 @@
+#neweffect "Desiccation"
+#effect 500
+#damage 250
+#spec 537399424
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.3
+-- #scalecost 0.6
+
+#aoe 0
+#power -1
+#maxpower 6
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 5
+#secondarypaths 4
+
+#details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage."
+
+#namecond aoe >= 0 1 "Dehydrate"
+#namecond aoe >= 0 4 "Dessication"
+
+#descr 1 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
+#descr 4 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
+
+#end
+
+#neweffect "Mass Dessication"
+#effect 500
+#damage 250
+#spec 554434688
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 6
+#explspr 10196
+#sound 23
+#fatiguecost 300
+#range 5025
+
+
+#paths 5
+#secondarypaths 4
+
+#details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage."
+
+#namecond aoe > 0 1 "Dryness of the Desert"
+#namecond aoe > 0 4 "Curse of the Desert"
+
+#descr 1 "The caster afflicts his enemies with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
+#descr 4 "The caster afflicts his enemies with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
+
+#end
+

@@ -1,0 +1,43 @@
+#neweffect "Chill Aura"
+#effect 10
+#damage 8192
+#spec 12599296
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.0
+
+
+-- Seems bugged and will only cast if battlefield wide
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 1
+#explspr 10022
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 164
+#secondarypaths 4
+
+#namecond aoe < 2 4 "Chill of Winter"
+#namecond aoe < 2 32 "Chill of the Grave"
+#namecond aoe < 2 128 "Chill from Kokytos"
+
+#namecond aoe >= 2 4 "Warriors of Winter"
+#namecond aoe >= 2 32 "Warriors from the Grave"
+#namecond aoe >= 2 128 "Warriors from Kokytos""
+
+#details "Grants chill aura."
+
+#descr 4 "SUBJECT %is% imbued with the chill of winter, fatiguing and freezing those nearby who are not resistant."
+#descr 32 "SUBJECT %is% imbued with the chill of the grave, fatiguing and freezing those nearby who are not resistant."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% imbued with the cold of Kokytos, fatiguing and freezing those nearby who are not resistant."
+
+#end
+

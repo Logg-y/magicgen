@@ -1,0 +1,23 @@
+#newsecondary "Encase in ice smite"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+-- various damage types
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe == 0
+
+-- not ritual
+#req spelltype !& 4
+#req path == 256
+
+
+#nextspell "Encase in Ice Smite"
+
+#descr "The divine power unleashed allows the priest to surround the target with a cage of ice."
+#end

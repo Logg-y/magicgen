@@ -1,0 +1,54 @@
+#newsecondary "Rage"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 11
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Rage"
+
+#descr "Residual heat from this spell may enrage those caught within its area of effect."
+
+#end
+
+
+#newsecondary "Rage damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 11
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Rage"
+
+#descr "Residual heat from this spell may enrage those caught within its area of effect."
+
+#end

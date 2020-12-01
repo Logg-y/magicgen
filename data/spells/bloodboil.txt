@@ -1,0 +1,98 @@
+#neweffect "Blood Boil"
+#effect 2
+#damage 1010
+#spec 36028797564768384
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 1066
+
+#scalerate 1.5
+-- #scalecost 1.6
+
+#aoe 0
+#power 1
+#maxpower 9
+#pathlevel 2
+#explspr 10255
+#sound 31
+#fatiguecost 50
+#precision 3
+#range 35
+
+#paths 128
+#secondarypaths 1
+#secondarypathchance 100
+
+#skipchance 66
+
+#name 128 "Blood Boil"
+#descr 128 "This spell causes the victims' blood to boil. This spell uses much power from the Path of Fire and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+
+
+#end
+
+#neweffect "Blood Freeze"
+#effect 2
+#damage 1010
+#spec 36028797564768384
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 1066
+
+#scalerate 1.5
+-- #scalecost 1.6
+
+#aoe 0
+#power 1
+#maxpower 9
+#pathlevel 2
+#explspr 10255
+#sound 31
+#fatiguecost 50
+#precision 3
+#range 35
+
+#paths 128
+#secondarypaths 4
+#secondarypathchance 100
+
+#skipchance 66
+
+
+#name 128 "Blood Freeze"
+#descr 128 "This spell causes the victims' blood to freeze. This spell uses much power from the Path of Water and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+#end
+
+#neweffect "Blood Shock"
+#effect 2
+#damage 1010
+#spec 36028797564768384
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 1066
+
+#scalerate 1.5
+-- #scalecost 1.6
+
+#aoe 0
+#power 1
+#maxpower 9
+#pathlevel 2
+#explspr 10255
+#sound 31
+#fatiguecost 50
+#precision 3
+#range 35
+
+#paths 128
+#secondarypaths 2
+#secondarypathchance 100
+
+#skipchance 66
+
+#name 128 "Blood Shock"
+#descr 128 "This spell causes the victims' blood to be suddenly charged with electricity. This spell uses much power from the Path of Air and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+#end

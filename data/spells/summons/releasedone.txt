@@ -1,0 +1,114 @@
+#neweffect "Summon releasedone"
+#effect 1
+#damage 2525
+#spec 8388608
+#power 3
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#scalefatiguemult 40
+#sound 31
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 85
+
+#name 32 "Animate Ancient Bones"
+#name 8 "Animate Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 528
+
+#scalerate 0.75
+#end
+
+#neweffect "releasedone ritual"
+#effect 10001
+#damage 2525
+#spec 8388608
+#power 6
+#nreff 1004
+#pathlevel 5
+#fatiguecost 500
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 75
+
+#name 32 "Animate Ancient Bones"
+#name 8 "Animate Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 90
+
+#scalerate 2
+#end
+
+#neweffect "releasedone Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2525
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#schools 16
+#skipchance 90
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "Ancient Bones Attack"
+#name 8 "Ancient Bones Attack"
+#descr 32 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
+#descr 8 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon releasedone"
+#effect 10038
+#provrange 4
+#damage 2525
+#spec 8388608
+#power 6
+#maxpower 9
+#nreff 1005
+#pathlevel 5
+#fatiguecost 400
+#schools 16
+
+#skipchance 90
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "Send Ancient Bones"
+#name 8 "Send Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 90
+#end

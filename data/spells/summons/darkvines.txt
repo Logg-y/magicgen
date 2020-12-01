@@ -1,0 +1,103 @@
+#neweffect "Summon darkvines"
+#effect 1
+#damage 330
+#spec 0
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 200
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths 64
+
+#skipchance 90
+
+#name 128 "Summon NAMEPREFIX Dark Vines"
+#descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
+
+#spelltype 528
+#scalefatiguemult 160
+#scalerate 0.7
+#end
+
+#neweffect "darkvines ritual"
+#effect 10001
+#damage 330
+#spec 0
+#power 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+
+#paths 128
+#secondarypaths 64
+
+#name 128 "Summon NAMEPREFIX Dark Vines"
+#descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 420
+
+#scalerate 1
+#end
+
+#neweffect "darkvines Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 330
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 600
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 64
+
+#name 128 "Vine Attack"
+#descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight ambush an enemy commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote darkvines"
+#effect 10038
+#provrange 4
+#damage 330
+#spec 0
+#power 6
+#maxpower 9
+#nreff 3
+#pathlevel 5
+#fatiguecost 800
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 200
+
+#name 128 "Send Vines"
+#descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines attack a distant province."
+
+#spelltype 20
+
+#scalerate 1
+#end

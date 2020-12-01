@@ -1,0 +1,65 @@
+TODO
+
+add +5 natprot spell
+add unholy power spell
+remote assassin stalker
+
+From magicgen_testing pack creation to v1.0.0:
+
+touch spell range increased to 3
+touch spells now 100 precision for the purposes of AI casting scores (they wouldn't really miss before this change)
+touch spells given AI cast mod of +40%
+skipchance for all combat summoned mages increased dramatically (was 21-31%, now 70%)
+fixed fatigue cost for battlesummon released sage (400 base fatigue to 120)
+reduced prices for summoned magus and alchemist (ritualsummons to 15 gems from 25, battle fatigue cost from 80 to 60)
+standardised x1 mage battlesummon costs to 60 fatigue each, notably summoning revenants is now more expensive and pyromancers are cheaper
+reduced fatigue increase for slow casting spell modifier, given AI cast mod of -50%
+increased fatigue reduction for short ranged (10 range) spells
+75% casting time effect disabled
+50% casting time effect research modifier decreased from +2 to +1, given AI cast mod of +25%
+25% casting time effect research modifier decreased from +4 to +2, given AI cast mod of +40%
+10% casting time effect research modifier decreased from +6 to +3, given AI cast mod of +70% 
+commmunion master's aoe version now has 0 range to stop the AI deciding to cast it on normal troops
+various minor text fixes that are not important enough to list
+added -40% AI cast mod to blade wind and the AP form
+added -30% AI cast mod to the fear spell effect
+added -30% AI cast mod to the blind spell effect
+mage summon spells (both in combat and rituals) are now only 20% as likely to be assigned astral or nature as a casting path if the mage doesn't have the respective paths
+summoned commanders and units with secondary effects' name prefixes now show them in spell names
+Reduced the fatigue multiplier and research penalty for most unit secondary effects
+Reduced fatigue cost and/or path requirements for most battle summons
+Added shatter as a possible spell effect
+Added various summoned units: minotaur, troll, caveman, war troll, troll moose knight, winged monkey, forest troll, kydnid, troll guard, kappa, ox-head, horse-face, elephant, ker, hound of twilight, khalkotauros, lampad, bukavac, various tiers of crossbreeds
+Added summoned commanders: ker, lampad
+Added curse of stones
+Range 10 modifier skip chance increased from 20% to 70% (same as touch spells now)
+Air shield base research -2 from 0
+Berserk rage now doesn't get AI cast
+Charge body scale rate reduced, base research -1 from 1
+Lowest tier of resistance spells base research -1 from 1
+Combustion base research 0 from 2, scaling rate reduced slightly
+Damage armour lesser base research 0 from 2, scale rate reduced
+Damage armour greater base research 8 from 9
+Desiccation base research -1 from 1, scale rate reduced
+Earth meld base research 0 from 1
+Entanglement base research -2 from 1, base aoe 0 from 1
+False fetters base aoe 0 from 3, path level 1 from 2, research -1 from 2
+Fascination base research -1 from 1
+Flight base research 0 from 2
+Swiftness base research -2 from 1
+Stygian skin base research 0 from 3, pathlevel 1 from 2
+Numbness base research -2 from 2
+Added AoE reinvigoration
+Rust base research -2 from 1
+Rust base range 35 from 15
+Strength boost base research 0 from 1
+Slime projectile base research -1 from 1
+Slime instant base research 1 from 3
+Added spell secondary effects: curse of stones, confusion, bonds of fire, slime, slow, web
+Most of the above are also valid banish effects, as well as control undead
+Added smite effects: charm, encase in ice, enslave, polymorph, send to void
+Heat aura now gives fire resist too
+Fixed poison barbs summon modifier so it should work now
+Stone rain damage scaling reduced from 3 to 2
+Casting foul vapours no longer puts up meteor shower
+Casting quagmire no longer puts up friendly currents

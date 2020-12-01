@@ -1,0 +1,15 @@
+#newsecondary "Summon Rageweapon"
+
+#anysummon 1
+
+#paths 65
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Rageweapon"
+#descr "The summoned %creature% %is% able to make enemies angry upon wounding them. Angry enemies may strike at nearby friends, but the victim may however resist this effect."
+
+#end

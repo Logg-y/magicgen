@@ -1,0 +1,102 @@
+#neweffect "Raise shadowsoldier"
+#effect 1
+#damage 675
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 40
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX Shadow %Soldier%"
+#descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm. These shadows are similar to dispossessed spirits, but are considerably more skilled."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#pathlevel 1
+#schools 16
+#scalefatiguemult 20
+#skipchance 50
+#end
+
+#neweffect "Raise shadowsoldier Ritual"
+#effect 10001
+#damage 675
+#spec 8388608
+#power 3
+#nreff 3002
+#pathlevel 1
+#fatiguecost 100
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX Shadow %Soldier%"
+#descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm. These shadows are similar to dispossessed spirits, but are considerably more skilled."
+
+#spelltype 20
+#scalerate 2
+#scalefatiguemult 40
+#end
+
+#neweffect "shadowsoldier Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 675
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools 1
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shadow %Soldier% Attack"
+#descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm and sends it to attack a hostile commander in a distant province. These shadows are similar to dispossessed spirits, but are considerably more skilled."
+
+
+#spelltype 4
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon shadowsoldier"
+#effect 10038
+#provrange 4
+#damage 675
+#spec 8388608
+#power 4
+#maxpower 9
+#nreff 3006
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX Shadow %Soldier%"
+#descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm and sends it to attack a distant province. These shadows are similar to dispossessed spirits, but are considerably more skilled."
+
+#spelltype 20
+
+#scalerate 2.0
+#scalefatiguemult 60
+#end

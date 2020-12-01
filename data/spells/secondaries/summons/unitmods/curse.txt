@@ -1,0 +1,13 @@
+#newunitmod "Summon Curseweapon"
+#weaponmod "Curseweapon"
+#nameprefix "Cursed"
+#req trample == -1
+#descr "This particular CREATURE can lay magical curses on those wounded by its attacks."
+#end
+
+#newunitmod "Summon Curseluckweapon"
+#weaponmod "Curseluckweapon"
+#nameprefix "Fateweaving"
+#req trample == -1
+#descr "This particular CREATURE magically alters the fate of those wounded by its attacks, making them temporarily easier to hit and harm in combat."
+#end

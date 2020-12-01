@@ -1,0 +1,3 @@
+#newsecondary "Do Nothing"
+#skipchance 0
+#end

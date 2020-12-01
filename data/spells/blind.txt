@@ -1,0 +1,35 @@
+#neweffect "Blind"
+#effect 11
+#damage 4096
+#spec 8409088
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 25
+
+#aoe 0
+#power 6
+#pathlevel 1
+#explspr 10036
+#sound 40
+#fatiguecost 20
+#range 5015
+#precision 100
+#aicastmod -30
+
+-- fire + death + blood
+#paths 161
+#secondarypaths 33
+
+#name 1 "Blind"
+#name 32 "Eyeloss"
+#name 128 "Claim eyes"
+
+#descr 1 "Bright sparks render SUBJECT permanently blind, unless they resist the spell."
+#descr 32 "Unless resisted, this spell permanently blinds SUBJECT."
+#descr 128 "$BLOOD_INTRO$, the caster promises the vision of SUBJECT to infernal powers."
+
+#end
+

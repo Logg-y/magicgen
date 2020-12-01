@@ -1,0 +1,16 @@
+#newsecondary "Summon Berserking"
+
+#anysummon 1
+
+#paths 65
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#magicpathvaluescaling -0.5
+
+#unitmod "Summon Berserking"
+#descr "The summoned %creature% %is% very angry and will go berserk if provoked."
+
+#end

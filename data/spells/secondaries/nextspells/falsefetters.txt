@@ -1,0 +1,33 @@
+#neweffect "Illusionary Shackles"
+#effect 11
+#damage 131072
+#spec 8409088
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10045
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Illusionary $Fetters$"
+#name 2 "Illusionary $Fetters$"
+#name 4 "Illusionary $Fetters$"
+#name 8 "Illusionary $Fetters$"
+#name 16 "Illusionary $Fetters$"
+#name 32 "Illusionary $Fetters$"
+#name 64 "Illusionary $Fetters$"
+#name 128 "Illusionary $Fetters$"
+#name 256 "Illusionary $Fetters$"
+
+#end

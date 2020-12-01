@@ -1,0 +1,28 @@
+#neweffect "Rain Stones oneshot"
+#copyspell "Rain stone"
+#skipflightspr 1
+#effect 2
+#damage 2007
+#spec 549757911040
+#aoe 2010
+#power 3
+#precision 0
+#range 5025
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#paths 12
+#secondarypaths 2
+#secondarypathchance 60
+#name 8 "Stone Rain"
+#name 4 "Frozen Rain"
+
+#descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit in the head by hailstones. Due to the speed at which the hail strikes, victims are caught by surprise and shields are no defence. More powerful casters can create larger hailstones."
+#descr 8 "The caster creates a brief shower of large stones over a SIZE area. Being in the area tends to result in getting hit in the head by rocks. Due to the speed at which the stones strike, victims are caught by surprise and shields are no defence. More powerful casters can call larger stones."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end

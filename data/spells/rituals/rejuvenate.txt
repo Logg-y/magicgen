@@ -1,0 +1,21 @@
+#neweffect "Rejuvenate"
+#copyspell "Rejuvenate"
+#effect 10101
+#damage -50
+#spec 537395200
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 1
+#fatiguecost 500
+#schools 32
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 128 "Rejuvenate"
+#descr 128 "The mage drenches himself in the blood of ten young girls in an attempt to become younger. Each offered girl will make the caster ten years younger."
+
+#spelltype 4
+#end

@@ -1,0 +1,102 @@
+#neweffect "Summon fiend of darkness"
+#effect 1
+#damage 88
+#spec 0
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#sound 26
+#schools 16
+
+#paths 128
+#secondarypaths 128
+#scalefatiguemult 120
+
+#name 128 "Summon %Fiend% of Darkness"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They fly and become significantly stronger under cover of darkness."
+
+#spelltype 528
+
+#scalerate 0.7
+#skipchance 50
+#end
+
+#neweffect "Fiend of Darkness ritual"
+#effect 10001
+#damage 88
+#spec 0
+#power 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 400
+#schools 16
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 350
+
+#name 128 "Bind %Fiend% of Darkness"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They are stealthy, fly, and become significantly stronger under cover of darkness."
+
+#spelltype 20
+
+#skipchance 50
+#scalerate 1
+#end
+
+#neweffect "Fiend of Darkness Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 88
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 16
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Fiend Ambush"
+#descr 128 "$BLOOD_INTRO$, the caster binds a Fiend of Darkness and sends it to a distant province to ambush an enemy commander. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon fiends"
+#effect 10038
+#provrange 4
+#damage 88
+#spec 0
+#power 3
+#maxpower 9
+#nreff 1001
+#pathlevel 4
+#fatiguecost 500
+#schools 16
+#nogeodst 2052
+
+#skipchance 90
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 60
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Send Fiends of Darkness"
+#descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss and sends it to a distant province. They are stealthy, fly, and become significantly stronger under cover of darkness."
+
+#spelltype 20
+
+#scalerate 1
+#end

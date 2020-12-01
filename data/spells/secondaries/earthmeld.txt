@@ -1,0 +1,95 @@
+#newsecondary "Earthmeld"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+#nextspell "Grip of the Earth"
+
+#descr "Residual energy from this spell pulls those in the affected area into the ground."
+
+#end
+
+#newsecondary "Earthmeld Greater"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -1
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+#nextspell "Greater Grip of the Earth"
+
+#descr "Residual energy from this spell pulls those in the affected area into the ground."
+
+#end
+
+
+
+
+#newsecondary "Earthmeld damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power 0
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+#nextspell "Grip of the Earth"
+
+#descr "Residual energy from this spell pulls those in the affected area into the ground."
+
+#end
+
+#newsecondary "Earthmeld Greater damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -1
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy okay
+-- (banishment)
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+#nextspell "Greater Grip of the Earth"
+
+#descr "Residual energy from this spell pulls those in the affected area into the ground."
+
+#end

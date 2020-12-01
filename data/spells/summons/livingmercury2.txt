@@ -1,0 +1,111 @@
+#neweffect "Summon livingmercury2"
+#effect 1
+#damage 2518
+#spec 8388608
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+#scalefatiguemult 40
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+#ainocast 1
+
+#skipchance 85
+
+
+#details "The elementals are size 2."
+#name 4 "Summon NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury%. They will fight for him until the battle ends. Living mercuries are surrounded by clouds of toxic fumes that may harm the caster unless he is resistant."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "livingmercury2 ritual"
+#effect 10001
+#damage 2518
+#spec 8388608
+#power 4
+#nreff 2001
+#pathlevel 2
+#fatiguecost 700
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#skipchance 75
+
+#details "The elementals are size 2."
+#name 4 "Summon NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury%."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+
+#scalerate 2
+#end
+
+#neweffect "livingmercury2 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2518
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 400
+#schools 1
+#skipchance 90
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 2."
+#name 4 "NAMEPREFIX Small Living %Mercury% Attack"
+#descr 4 "The caster summons forth ARTICLE small living %mercury% to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon livingmercury2"
+#effect 10038
+#provrange 4
+#damage 2518
+#spec 8388608
+#power 4
+#maxpower 9
+#nreff 2001
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#skipchance 90
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 2."
+#name 4 "Send NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury% to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#end

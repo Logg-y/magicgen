@@ -1,0 +1,36 @@
+#neweffect "Flight"
+#effect 10
+#damage 131072
+#spec 16384
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.6
+-- #scalecost 0.7
+-- #scalefatigueexponent 1.8
+
+#aoe 0
+#power 0
+#maxpower 7
+#pathlevel 1
+#explspr 10005
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 2
+#secondarypaths 2
+
+#namecond aoe < 2 2 "Flight"
+
+#namecond2 2 <= aoe < 666 2 "Group Flight"
+
+#namecond aoe == 666 2 "Mass Flight"
+
+#descr 2 "Grants SUBJECT the ability to fly."
+
+#end
+

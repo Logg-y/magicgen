@@ -1,0 +1,31 @@
+#neweffect "Liquify"
+#effect 2
+#damage 999
+#spec 10489856
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#aoe 0
+#power 4
+#maxpower 9
+#pathlevel 3
+#explspr 10121
+#sound 31
+#fatiguecost 20
+#range 5010
+
+-- W, D
+#paths 36
+#secondarypaths 4
+#secondarypathchance 95
+
+#name 4 "Liquify"
+#name 32 "Liquify"
+#descr 4 "The caster turns the substance of SUBJECT into an oozing pool of liquid. Death is certain if the spell is not resisted, however ethereal beings are unlikely to be affected."
+#descr 32 "The caster turns the substance of SUBJECT into an oozing pool of liquid. Death is certain if the spell is not resisted, however ethereal beings are unlikely to be affected."
+#end

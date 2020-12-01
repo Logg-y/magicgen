@@ -1,0 +1,89 @@
+#newunitmod "Summon Poisonbarbs"
+#req barbs == -1
+#req ethereal == -1
+#set poisonbarbs 5
+#nameprefix "Barbed"
+#descr "This particular CREATURE is covered in poisonous barbs. Striking it with a short weapon may be unadvisable."
+#end
+
+#newunitmod "Summon Poisonskin"
+#req poisonskin == -1
+#req inanimate == -1
+#req ethereal == -1
+#set poisonskin 20
+#nameprefix "Foulskinned"
+#descr "This particular CREATURE continuously produces a toxin on its skin. Coming into direct contact with it may be unadvisable."
+#end
+
+#newunitmod "Summon Fireshield"
+#req fireshield == -1
+#req aquatic == -1
+#set fireshield 8
+#fireres 6
+#set speciallook 1
+#nameprefix "Flamewreathed"
+#descr "This particular CREATURE is constantly surrounded by magical flames. Trying to strike it will result in being burned."
+#end
+
+#newunitmod "Summon Banefireshield"
+#req banefireshield == -1
+#req aquatic == -1
+#set banefireshield 8
+#set speciallook 1
+#nameprefix "Darkflame"
+#descr "This particular CREATURE is constantly surrounded by dark magical flames. Trying to strike it will result in being burned and decayed. Due to the dark nature of the flames, fire resistance offers no protection."
+#end
+
+#newunitmod "Summon Acidshield"
+#req acidsplash == -1
+#set acidsplash 8
+#nameprefix "Acid"
+#descr "This particular CREATURE is imbued with magical acid. Trying to strike it will release a harmful splash of acid."
+#end
+
+#newunitmod "Summon Fateweaving"
+#set curseluckshield 0
+#nameprefix "Fateweaving"
+#descr "This particular CREATURE can alter the fates of those that try to strike it. Attackers that fail to resist suffer cursed luck for a few rounds of battle."
+#end
+
+#newunitmod "Summon Overcharge"
+#set overcharged 1
+#nameprefix "Overcharged"
+#shockres 6
+#descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a jolt."
+#end
+
+#newunitmod "Summon Eyevengeance"
+#req eyeloss == -1
+#set eyeloss 0
+#nameprefix "Sightclaiming"
+#descr "This particular CREATURE is imbued with magic and has the ability to emit blinding flashes of light. Those attacking in melee will lose an eye if they fail to resist."
+#end
+
+#newunitmod "Summon Horrormark"
+#set horrormark 1
+#nameprefix "Horrormarking"
+#descr "This particular CREATURE has the ability to attract the attention of horrors. Those attacking in melee will gain a horror mark if they fail to resist."
+#end
+
+#newunitmod "Summon Entangle"
+#req vineshield == -1
+#set vineshield 1
+#nameprefix "Vineweaving"
+#descr "This particular CREATURE has the ability to rapidly call vines from the earth. Those attacking in melee will become entangled if they fail to resist."
+#end
+
+#newunitmod "Summon Bloodvengeance"
+#req bloodvengeance == -1
+#set bloodvengeance 0
+#nameprefix "Woundsharing"
+#descr "This particular CREATURE has the ability to attempt to force its attackers to share its wounds. The attacker may resist this effect."
+#end
+
+#newunitmod "Summon Damagereversal"
+#req damagerev == -1
+#set damagerev 0
+#nameprefix "Woundmirroring"
+#descr "This particular CREATURE has the ability to attempt to redirect any damage taken onto its attacker. The attacker may resist this effect."
+#end

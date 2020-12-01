@@ -1,0 +1,53 @@
+#newsecondary "Desiccation"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 250
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Desiccation"
+
+#descr "Residual energy from this spell draws water out of creatures in the affected area, which may induce additional fatigue."
+
+#end
+
+
+#newsecondary "Desiccation damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy ok, but it will only be on banishment I guess
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 250
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Desiccation"
+
+#descr "Residual energy from this spell draws water out of creatures in the affected area, which may induce additional fatigue."
+
+#end

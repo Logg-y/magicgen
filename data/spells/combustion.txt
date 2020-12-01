@@ -1,0 +1,36 @@
+#neweffect "Combustion"
+#effect 11
+#damage 512
+#spec 16416
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.35
+
+#aoe 0
+#power 0
+#pathlevel 1
+#explspr 10131
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#namecond aoe < 660 1 "Combustion"
+#namecond aoe < 660 128 "Infernal Flames"
+
+#namecond aoe >= 660 1 "Conflagration"
+#namecond aoe >= 660 128 "Wind of Inferno"
+
+#details "Burning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
+#descr 1 "A SIZE area is set on fire. This will cause creatures caught within to gradually lose health, though it is unlikely to be fatal, especially in cold or rain."
+#descr 128 "$BLOOD_INTRO$, the heat of Inferno sets a SIZE area on fire. This will cause creatures caught within to gradually lose health, though it is unlikely to be fatal, especially in cold or rain."
+
+#end
+

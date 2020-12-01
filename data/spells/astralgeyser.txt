@@ -1,0 +1,40 @@
+#neweffect "Astral Geyser Burst"
+#effect 2
+#damage 2
+#spec 4224
+#schools -1
+#paths -1
+#name 16 "Astral Geyser Burst"
+#spelltype 42
+#scalerate 2
+#aoe 1
+#power 2
+#end
+
+#neweffect "Astral Geyser"
+
+#effect 600
+#damage 261
+#spec 8519808
+#aoe 1
+#power 2
+#precision 0
+#range 5035
+#pathlevel 2
+#fatiguecost 20
+#explspr 10251
+#sound 41
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+#nextspell "Astral Geyser Burst"
+#name 16 "Astral Geyser"
+
+#descr 16 "Tiny holes are blasted into the astral space. Rays of astral energy will blast out of the holes and anyone hit will be severely horror marked. Anyone in the vicinity of the astral energy rays will get hit by deadly residual magic."
+
+-- evo-like, scale effect number
+#spelltype 258
+#scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end

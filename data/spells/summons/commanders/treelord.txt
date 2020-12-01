@@ -1,0 +1,27 @@
+#neweffect "Summon treelord"
+#copyspell "Awaken Treelord"
+#effect 10114
+#damage 11
+#provrange 4
+#spec 0
+#power 7
+#maxpower 7
+#precision -2
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#schools 17
+
+#paths 64
+#secondarypaths 0
+
+#skipchance 0
+
+#details "There are three commanders that can be called with this spell."
+#name 64 "Awaken Treelord"
+#descr 64 "The Treelords are ancient living trees that were once vibrant and very powerful. Now they are dormant, becoming slower in mind and body with every passing year. These decaying Treelords can be reawakened by the use of Nature magic. A reawakened Treelord will serve its awakener until it dies. Treelords have very long lifespans."
+
+#spelltype 4
+
+#scalerate 0
+#end

@@ -1,0 +1,108 @@
+#neweffect "Summon feles3"
+#effect 1
+#damage 597
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+#scalefatiguemult 20
+#skipchance 85
+
+#details "The elementals are size 3."
+#name 1 "Summon NAMEPREFIX Lesser Fire %Elemental%"
+#descr 1 "The caster summons forth ARTICLE moderately sized fire %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "feles3 ritual"
+#effect 10001
+#damage 597
+#spec 0
+#power 5
+#nreff 2002
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+
+
+#skipchance 75
+
+#details "The elementals are size 3."
+#name 1 "Summon NAMEPREFIX Lesser Fire Elementals"
+#descr 1 "The caster summons forth moderately sized fire elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+
+#scalerate 2
+#end
+
+#neweffect "feles3 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 597
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#details "The elementals are size 3."
+#paths 1 
+#secondarypaths 1 
+#nogeodst 2052
+
+#name 1 "NAMEPREFIX Lesser Fire Attack"
+#descr 1 "The caster summons forth a moderately sized fire elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon feles3"
+#effect 10038
+#provrange 4
+#damage 597
+#spec 0
+#power 6
+#maxpower 9
+#nreff 2001
+#pathlevel 4
+#fatiguecost 400
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 1 
+#secondarypaths 1 
+
+#details "The elementals are size 3."
+#name 1 "Send Fire Elementals"
+#descr 1 "The caster summons forth moderately sized fire elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+#end

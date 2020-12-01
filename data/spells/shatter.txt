@@ -1,0 +1,25 @@
+#neweffect "Shatter"
+#effect 2
+#damage 5020
+#spec 8405120
+#aoe 0
+#power 5
+#precision 100
+#range 20
+#pathlevel 3
+#fatiguecost 20
+#explspr 10214
+#sound 40
+#paths 8
+#secondarypaths 8
+#secondarypathchance 0
+#name 8 "Shatter"
+
+#descr 8 "This spell shatters metal, stone, wood, and similar materials. Constructs and other inanimate beings affected by the spell will take tremendous damage, but it has no effect against living beings."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 32
+#end

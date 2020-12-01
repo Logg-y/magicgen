@@ -1,0 +1,76 @@
+#neweffect "siegegolem ritual"
+#effect 10001
+#damage 760
+#spec 8388608
+#power 9
+#nreff 1
+#pathlevel 4
+#fatiguecost 1000
+#schools 8
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 50
+
+#name 8 "Summon NAMEPREFIX Siege %Golem%"
+#descr 8 "The caster forms and enchants ARTICLE giant %golem% from stone. The animated %golem% %is% incredibly difficult to harm with physical damage and inflicts immense damage to structures or other inanimate beings."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+
+#scalerate 2
+#end
+
+#neweffect "siegegolem Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 760
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 6
+#fatiguecost 900
+#schools 8
+#skipchance 75
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Siege Golem Ambush"
+#descr 8 "The caster enchants a siege golem in a distant province to attack an enemy commander. The victim will not know who cast this on them, and the golem crumbles to dust if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon siegegolem"
+#effect 10038
+#provrange 4
+#damage 760
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 8
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Send NAMEPREFIX Siege %Golem%"
+#descr 8 "The caster forms and enchants ARTICLE siege %golems% from stone in a distant province. The %golem% %is% highly resistant to physical damagee."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 420
+#end

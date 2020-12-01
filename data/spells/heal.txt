@@ -1,0 +1,34 @@
+#neweffect "Heal"
+#effect 13
+#damage 5030
+#spec 549453952
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 1
+
+#scalefatigueexponent -0.5
+#casttime 25
+#aoe 1
+#power 3
+#pathlevel 1
+#explspr 10303
+#sound 29
+#fatiguecost 15
+#range 5015
+#precision 5
+
+-- only nature
+#paths 64
+#secondarypaths 64
+
+#namecond aoe == 1 64 "Heal"
+#namecond aoe < 660 64 "Heal Area"
+#namecond aoe >= 660 64 "Heal Army"
+
+#descr 64 "The wounds of troops across a SIZE area are healed."
+
+#end

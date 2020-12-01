@@ -1,0 +1,100 @@
+#newsecondary "Paralysis"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- not ritual
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+#nextspell "Minor Paralysis"
+
+#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+
+#end
+
+#newsecondary "Greater Paralysis"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+-- not ritual
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+#nextspell "Greater Paralysis"
+
+#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+
+#end
+
+
+#newsecondary "Paralysis damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+-- not ritual
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+#nextspell "Minor Paralysis"
+
+#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+
+#end
+
+#newsecondary "Greater Paralysis damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+-- not ritual
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy ok
+
+#nextspell "Greater Paralysis"
+
+#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+
+#end
+
+#newsecondary "Greater Paralysis smite"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+-- not ritual
+#req nonscalingdamage < 15
+#req nonscalingaoe == 0
+#req paths == 256
+-- holy ok
+
+#nextspell "Greater Paralysis Smite"
+
+#descr "Residual energy from this spell strikes the minds of those affected, causing paralysis if not resisted."
+
+#end

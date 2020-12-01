@@ -1,0 +1,14 @@
+#newunitmod "Summon Lifedrainweapon"
+#weaponmod "Lifedrainweapon"
+#nameprefix "Vampiric"
+#req trample == -1
+#descr "This particular CREATURE drains the life of those wounded by its attacks."
+#end
+
+
+#newunitmod "Summon Lifedrainweapon2"
+#weaponmod "Lifedrainweapon2"
+#nameprefix "Vampiric"
+#req trample == -1
+#descr "This particular CREATURE drains the life of those wounded by its attacks."
+#end

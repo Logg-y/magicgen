@@ -1,0 +1,22 @@
+#neweffect "Flames from the Sky"
+#copyspell "Flames from the Sky"
+#effect 10041
+#damage 1010
+#spec 16480
+#provrange 3
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#schools 4
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Flames from the Sky"
+#descr 1 "With this spell, the mage hurls a maelstrom of flaming spheres towards an enemy province. The flame storm will strike an enemy army camp within the province with enormous force. Most likely, the majority of the units present in the camp will die from this powerful attack, but since the entire army is rarely gathered in one camp at a given time, only half of the target province's army can be expected to be struck by the flames."
+
+#spelltype 4
+#end

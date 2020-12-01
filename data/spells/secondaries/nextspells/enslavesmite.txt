@@ -1,0 +1,34 @@
+#neweffect "Enslave Smite"
+#effect 28
+#damage 999
+#spec 8540288
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10208
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Enslave"
+#name 2 "Enslave"
+#name 4 "Enslave"
+#name 8 "Enslave"
+#name 16 "Enslave"
+#name 32 "Enslave"
+#name 64 "Enslave"
+#name 128 "Enslave"
+#name 256 "Enslave"
+
+
+#end

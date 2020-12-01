@@ -1,0 +1,34 @@
+-- 
+-- #neweffect "Purifying Flames"
+-- -- attack caster
+-- #effect 10112
+-- #damage 20
+-- -- AN fire
+-- #spec 160
+-- #schools -1
+-- #paths -1
+-- #name 1 "Purifying Flames"
+-- #end
+-- 
+-- 
+-- #neweffect "Pyre of Catharsis"
+-- #copyspell "Pyre of Catharsis"
+-- #effect 10132
+-- #damage 1
+-- #spec 576460752840294400
+-- #power 5
+-- #maxpower 5
+-- #nreff 1
+-- #pathlevel 3
+-- #fatiguecost 200
+-- #schools 32
+-- 
+-- #paths 1
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- 
+-- #name 1 "Pyre of Catharsis"
+-- #descr 1 "Catharsis was once the spirit of the Purifying Flames. He would cleanse bodily sicknesses of those who exposed themselves to his flames. Since his corruption by the Daevas and the wicked Mainyus he no longer controls the Purifying Flames and any powerful fire mage can wield his flames. With this ritual the caster sets himself ablaze on a pyre of Purifying Flames. The flames burns away any diseases he carries, but the caster is likely to suffer terribly from the flames unless properly protected."
+-- #nextspell "Purifying Flames"
+-- #spelltype 4
+-- #end

@@ -1,0 +1,186 @@
+-- seems to be 1-9 for normal searching
+-- then 2**(path+3) for combined flags
+
+#neweffect "Remote Search Fire"
+#effect 10048
+#provrange 4
+#damage 0
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 32
+#onlyfriendlydst 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "Augury"
+#descr 1 "The caster pours oil on a pile of soil from a distant province and sets it ablaze. The flickering flames will reveal all hidden sites of fiery power in the province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Air"
+#effect 10048
+#provrange 4
+#damage 1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 32
+#onlyfriendlydst 1
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Auspex"
+#descr 2 "The caster listens to the winds and observes the flight of birds. The winds will carry legends of magical places and ancient storms. If the winds are correctly interpreted, the caster gains knowledge of sites of Air power in a distant province. This spell cannot be cast at an enemy province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Water"
+#effect 10048
+#provrange 4
+#damage 2
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Voice of Apsu"
+#descr 4 "The caster conjures the dreams of Apsu, the Fresh Water Underneath. He has knowledge of all sweet water. The voice of his dreams, when rightly interpreted, reveals sites of Water power located above the surface. The dreams will find their way to everyone living in the targeted province and the magical sites will no longer be hidden."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Earth"
+#effect 10048
+#provrange 4
+#damage 3
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Gnome Lore"
+#descr 8 "The caster bestows the knowledge of the gnomes upon himself and uses it to find places of Earth power. The spell will find all magic Earth sites in a friendly province of the caster's choice."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Astral"
+#effect 10048
+#provrange 4
+#damage 4
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Arcane Probing"
+#descr 16 "The caster projects his astral self in an attempt to locate sites of Astral power. This spell can only be used to search for magic in friendly provinces."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Death"
+#effect 10048
+#provrange 4
+#damage 5
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Dark Knowledge"
+#descr 32 "The caster summons a spirit of the Underworld and coerces it to reveal knowledge of sites of Death in a distant province. The spell can not be used to find magic in enemy provinces."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Nature"
+#effect 10048
+#provrange 4
+#damage 6
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Haruspex"
+#descr 64 "The caster opens the bellies of newly slaughtered animals and observes their livers. The state of the livers reveals distant locations of Nature power."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote Search Blood"
+#effect 10048
+#provrange 4
+#damage 6
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 33
+#onlyfriendlydst 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Bowl of Blood"
+#descr 128 "The caster fills a bowl with blood, mixes it with soil from a distant land and observes the five signs. The signs will reveal all sites of blood power in that province."
+
+#spelltype 4
+
+#end

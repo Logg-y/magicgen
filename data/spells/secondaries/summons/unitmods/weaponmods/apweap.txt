@@ -1,0 +1,8 @@
+#newweaponmod "APweap"
+-- weapon not already AP or AN
+#req spec !& 64
+#req spec !& 128
+-- no special effects on weapon already
+#spec 64
+#nameprefix "Piercing"
+#end

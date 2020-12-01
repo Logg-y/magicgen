@@ -1,0 +1,105 @@
+#neweffect "Call monsterfish"
+#effect 1
+#damage 1664
+#spec 41959424
+#power 6
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#scalefatiguemult 80
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Summon NAMEPREFIX Monster Fish"
+#descr 4 "The caster summons ARTICLE monster fish to fight for him. Monster fish are gigantic fish which can swallow smaller creatures."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "monsterfish ritual"
+#effect 10001
+#damage 1664
+#spec 41959424
+#power 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+
+#paths 4
+#secondarypaths 4
+#skipchance 75
+
+#name 4 "Summon NAMEPREFIX Monster Fish"
+#descr 4 "The caster summons ARTICLE monster fish to fight for him. Monster fish are gigantic fish which can swallow smaller creatures."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+
+#scalerate 2
+#end
+
+#neweffect "monsterfish Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1664
+#spec 41959424
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 75
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Monster Fish Attack"
+#descr 4 "The caster summons ARTICLE monster fish to attack a hostile commander in a distant land. Monster fish are gigantic fish which can swallow smaller creatures."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon monsterfish"
+#effect 10038
+#provrange 4
+#damage 1664
+#spec 41959424
+#power 6
+#maxpower 11
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 90
+
+#name 4 "Send NAMEPREFIX Monster Fish"
+#descr 4 "The caster summons ARTICLE monster fish to attack a hostile commander in a distant land. Monster fish are gigantic fish which can swallow smaller creatures."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+#end

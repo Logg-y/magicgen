@@ -1,0 +1,15 @@
+#newsecondary "Summon Deathcurse"
+
+#anysummon 1
+
+#paths 32
+#power 0
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 80
+
+#unitmod "Summon Deathcurse"
+#descr "Anyone killing the summoned %creature% will suffer %its% curse for the rest of their life."
+
+#end

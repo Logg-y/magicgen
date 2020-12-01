@@ -1,0 +1,885 @@
+#neweffect "Light of the Northern Star"
+#effect 81
+#damage 40
+#spec  	8404992
+#schools 1
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 4
+#maxpower 4
+#pathlevel 3
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 16
+#secondarypaths 0
+
+#name 16 "Light of the Northern Star"
+#descr 16 "This spell makes all wizards on the battlefield more powerful in Astral magic."
+#details "Astral magic bonus +1 to the entire battlefield."
+
+#end
+
+#neweffect "Howl"
+#effect 81
+#damage 88
+#spec  	0
+#schools 1
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 3
+#sound 26
+#fatiguecost 300
+#range 0
+
+#paths 64
+#secondarypaths 0
+
+#name 64 "Howl"
+#descr 64 "The caster summons a pack of wolves to aid him in battle. The wolves will come from all directions and may even attack the enemy from behind."
+#details "This spell is twice as effective if used in forest or mountain terrain."
+
+#end
+
+#neweffect "Shark Attack"
+#effect 81
+#damage 78
+#spec 41943040
+#schools 1
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 3
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 68
+#secondarypaths 0
+
+#name 4 "Shark Attack"
+#name 64 "Shark Attack"
+#descr 4 "The caster attracts sharks to the smell of blood in the water. For the duration of the battle, there is a chance that a shark will arrive whenever a living being is wounded. The sharks are stupid, but the spell is strong enough to make them attack enemies more often than friends."
+#descr 64 "The caster attracts sharks to the smell of blood in the water. For the duration of the battle, there is a chance that a shark will arrive whenever a living being is wounded. The sharks are stupid, but the spell is strong enough to make them attack enemies more often than friends."
+
+#end
+
+#neweffect "Solar Eclipse"
+#effect 81
+#damage 97
+#spec 0
+#schools 2
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 4
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 17
+#secondarypaths 17
+#secondarypathchance 95
+
+#name 1 "Solar Eclipse"
+#name 16 "Solar Eclipse"
+#descr 1 "The spell will blot out the sun, but only for a little while and in a limited area. It is enough to make a battlefield as dark as the night and will impair all units without darkvision."
+#descr 16 "The spell will blot out the sun, but only for a little while and in a limited area. It is enough to make a battlefield as dark as the night and will impair all units without darkvision."
+#details "Darkness: -3 att/def/prec."
+
+#end
+
+#neweffect "Darkness"
+#effect 81
+#damage 77
+#spec 0
+#schools 2
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 400
+#range 0
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Darkness"
+#descr 32 "The battlefield is covered in a blanket of darkness that even render torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
+#details "Darkness: -6 att/def/prec."
+
+#end
+
+#neweffect "Rain"
+#copyspell "Rain"
+#effect 81
+#damage 7
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 3
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 4 "Rain"
+#descr 4 "This spell creates a heavy rain upon the battlefield. This makes it harder to fly and the heat effects of Abysians and other hot creatures are severely reduced. Fire magic is more difficult to use during heavy rain, as all non-underwater If it is cold it will snow instead. Snow does not increase the fatigue for fire spells, but it does reduce some heat effects although less so than rain."
+
+#end
+
+#neweffect "Mist"
+#copyspell "Mist"
+#effect 81
+#damage 70
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 3
+#maxpower 3
+#pathlevel 3
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 6
+#secondarypaths 6
+#secondarypathchance 20
+
+#name 4 "Mist"
+#name 2 "Mist"
+#descr 4 "The caster creates a dense mist across the battle field that makes it difficult to see far. The mist will limit the precision of all spells and missiles."
+#descr 2 "The caster creates a dense mist across the battle field that makes it difficult to see far. The mist will limit the precision of all spells and missiles."
+#details "Base precision is halved."
+
+#end
+
+#neweffect "Storm"
+#copyspell "Storm"
+#effect 81
+#damage 1
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 4
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 2 "Storm"
+#descr 2 "Creates a rain storm or blizzard on the battlefield. Makes flying impossible and shooting difficult. A rain storm will also make it more difficult to use Fire magic."
+#details "Precision reduced by half, 50% of missiles lost. Storms also incur the effects of the spell Rain."
+#end
+
+#neweffect "Wailing Winds"
+#copyspell "Wailing Winds"
+#effect 81
+#damage 12
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 8
+#maxpower 8
+#pathlevel 5
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 34
+#secondarypaths 34
+#secondarypathchance 100
+
+#name 2 "Wailing Winds"
+#name 32 "Wailing Winds"
+#descr 2 "The necromancer releases a wind of horrible screams and sighs. All enemies hearing the wailing will feel their spirits sink and have their hearts gripped with fear. The spell affects the whole battlefield until the battle is over or the caster is killed."
+#descr 32 "The necromancer releases a wind of horrible screams and sighs. All enemies hearing the wailing will feel their spirits sink and have their hearts gripped with fear. The spell affects the whole battlefield until the battle is over or the caster is killed."
+#details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield is struck by a strength 1 fear spell that only affects enemies."
+#end
+
+
+
+#neweffect "Wrathful Skies"
+#copyspell "Wrathful Skies"
+#effect 81
+#damage 34
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 5
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 2 "Wrathful Skies"
+#descr 2 "The sky turns dark and lightning strikes all over the battlefield. This spell is most effective during a storm."
+#details "Every 320 ticks (or 23.4375 times per round), 0.3% of the battlefield is struck for 15AN shock damage. An active storm doubles the area struck."
+#end
+
+
+#neweffect "Acid Storm"
+#copyspell "Acid Storm"
+#effect 81
+#damage 11
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 5
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 5
+#secondarypaths 5
+#secondarypathchance 0
+
+#name 1 "Acid Storm"
+#name 4 "Acid Storm"
+#descr 1 "The whole battlefield is showered in highly corrosive fluids pouring down from the heavens."
+#descr 4 "The whole battlefield is showered in highly corrosive fluids pouring down from the heavens."
+#details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck for 3 AP acid damage."
+#end
+
+#neweffect "Fire Storm"
+#copyspell "Fire Storm"
+#effect 81
+#damage 25
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 5
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 1
+#secondarypaths 1
+#secondarypathchance 0
+
+#name 1 "Fire Storm"
+#descr 1 "A massive storm of fire is unleashed on the battlefield. Everyone on the battlefield will be burned to cinders within minutes. The storm lasts for the duration of the battle or until the fire mage dies."
+#details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck for 6 AP fire damage."
+#end
+
+#neweffect "Rain of Stones"
+#copyspell "Rain of Stones"
+#effect 81
+#damage 102
+#spec 562949953421312
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 4
+#maxpower 4
+#pathlevel 4
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 8
+#secondarypaths 2
+#secondarypathchance 80
+
+#name 8 "Rain of Stones"
+#descr 8 "The sky blackens and rumbling sounds echo over the battlefield. Stones and small rocks begin to fall from the heavens, striking down soldiers. Shield and other things that protect vs arrows will also protect soldiers from getting hit by the rocks. Most of the falling stones will result in head hits."
+#details "Every 320 ticks (or 23.4375 times per round), 1% of the battlefield is struck with a stone that strikes one creature in the square for 5 mundane blunt damage."
+#end
+
+#neweffect "Astral Tempest"
+#copyspell "Astral Tempest"
+#effect 81
+#damage 3
+#spec 8388608
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 7
+#maxpower 7
+#pathlevel 5
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 16 "Astral Tempest"
+#descr 16 "The caster unleashes an astral storm upon the battlefield. The storm is physically undetectable, but every unit that is not mindless takes damage as the storm rips the very souls from their bodies. Spellcasting is extra difficult during the astral tempest and all non mindless magic users will have trouble casting spells unless they have very high magic resistance."
+#details "Every 320 ticks (or 23.4375 times per round), 2% of the battlefield is struck with 1 AN magic damage, with a MR check to negate it. Additionally, strikes a different 4% of the battlefield with an effect that interrupts spellcasting, with a difficult MR check to prevent it."
+#end
+
+#neweffect "Meteor Shower"
+#copyspell "Meteor Shower"
+#effect 81
+#damage 103
+#spec 0
+#schools 4
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 8
+#maxpower 8
+#pathlevel 6
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 24
+#secondarypaths 24
+#secondarypathchance 90
+
+#name 8  "Meteor Shower"
+#name 16 "Meteor Shower"
+#descr 16 "This spell should only be cast as a last resort as it will likely kill the friendly forces as well as the enemy ones. After being cast strange whizzing sound will emanate from the heavens and soon nothing but the loud impacts from meteors will be heard."
+#descr 8 "This spell should only be cast as a last resort as it will likely kill the friendly forces as well as the enemy ones. After being cast strange whizzing sound will emanate from the heavens and soon nothing but the loud impacts from meteors will be heard."
+#details "Every 320 ticks (or 23.4375 times per round), makes five independent rolls with a 15% chance for each to succeed. Each success drops a meteor on a random square of the battlefield, striking those in the square for 150 magical blunt damage."
+#end
+
+#neweffect "Foul Vapors"
+#copyspell "Foul Vapors"
+#effect 81
+#damage 45
+#spec 8388608
+#schools 20
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 5
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 64
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 64 "Foul Vapors"
+#descr 64 "Poisonous gas will begin to seep from the ground shortly after this spell is cast. The gas will rise over a large area, covering the entire battlefield, and will continue to seep for the duration of the battle."
+#details "Every 320 ticks (or 23.4375 times per round), strikes 1% of the battlefield with 5 AN poison damage."
+#end
+
+#neweffect "Friendly Currents"
+#copyspell "Friendly Currents"
+#effect 81
+#damage 2
+#spec 41943040
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 3
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 4 "Friendly Currents"
+#descr 4 "This spell makes the water currents aid the caster and all his allies. Those aided by this spell can move further every turn and are less exhausted by fighting. This spell can only be cast underwater."
+#end
+
+#neweffect "Quagmire"
+#copyspell "Quagmire"
+#effect 81
+#damage 85
+#spec 0
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 4 "Quagmire"
+#descr 4 "Water will start to seep from the ground that will quickly become soft and difficult to traverse. The battleground is turned into a swamp and most units will get penalized for fighting there. The enchantment lasts for the entire battle or until the caster dies."
+#details "All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed."
+#end
+
+#neweffect "Grip of Winter"
+#copyspell "Grip of Winter"
+#effect 81
+#damage 9
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 4 "Grip of Winter"
+#descr 4 "The entire battlefield is harrowed by enormous cold. This cold quickly renders all units on the battlefield unconscious, after which death is certain. The Grip of Winter is most effective in cold provinces."
+#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. Does nothing if Heat from Hell is active."
+#end
+
+
+#neweffect "Heat from Hell"
+#copyspell "Heat from Hell"
+#effect 81
+#damage 6
+#spec 0
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 1
+#secondarypaths 1
+#secondarypathchance 0
+
+#name 1 "Heat from Hell"
+#descr 1 "The entire battlefield is struck by heat worse than that of the hottest of deserts. This heat soon renders all units on the battlefield unconscious, after which death is certain. This spell is most effective in warm provinces."
+#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN fire fatigue damage. The damage dealt is 5 + Cold scale, -3 if it is raining. Does nothing if Grip of Winter is active."
+#end
+
+#neweffect "Solar Brilliance"
+#copyspell "Solar Brilliance"
+#effect 81
+#damage 21
+#spec 0
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 7
+#maxpower 7
+#pathlevel 5
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 16 "Solar Brilliance"
+#descr 16 "The sun starts to shine with a brilliance that destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
+#details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield must make an easy MR check or become blinded. Additionally, undead in a different 5% of the battlefield must make an easy MR check or suffer 5 AP magical damage."
+#end
+
+#neweffect "Mists of Deception"
+#copyspell "Mists of Deception"
+#effect 81
+#damage 71
+#spec 0
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 200
+#range 0
+
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 2 "Mists of Deception"
+#descr 2 "This powerful enchantment creates a magic mist on the battlefield. From this mist, phantasmal soldiers and beings will emerge to battle nearby enemies. More phantasms will appear if the caster is very powerful. The mist will limit sight and the range of all spells and missiles."
+#details "Phantasms appearing each turn: 1 per caster level. Also incurs the effects of Mist (halved base precision)."
+#end
+
+#neweffect "Rigor Mortis"
+#copyspell "Rigor Mortis"
+#effect 81
+#damage 4
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 4
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Rigor Mortis"
+#descr 32 "The necromancer causes the joints of both friends and enemies to stiffen as their bodies suffer the fate of the newly dead. There is no immediate cure for the spell, but it ends after the battle."
+#details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck with 10AN magical fatigue damage. Undead and inanimates are immune to this effect."
+#end
+
+#neweffect "Relief"
+#copyspell "Relief"
+#effect 81
+#damage 84
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 5
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Relief"
+#descr 64 "This battle enchantment reduces the fatigue of all friendly units on the battlefield. It lasts until the battle ends or the caster is killed."
+#details "AN fatigue reduction roll +1."
+#end
+
+
+#neweffect "Demon Cleansing"
+#copyspell "Demon Cleansing"
+#effect 81
+#damage 83
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 9
+#maxpower 9
+#pathlevel 5
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 4 "Demon Cleansing"
+#descr 4 "This spell is the bane of demons. When this enchantment is active, all demons will take double damage from all attacks."
+#details "The damage is doubled before protection rolls."
+#end
+
+#neweffect "Fields of the Dead"
+#copyspell "Fields of the Dead"
+#effect 81
+#damage 96
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 7
+#maxpower 7
+#pathlevel 5
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Fields of the Dead"
+#descr 32 "The necromancer releases the powers of the underworld and reanimates bodies and bones across the entire battlefield. Ever more walking dead will emerge from the ground. Recently killed soldiers might reawaken and do battle against their former friends."
+#end
+
+#neweffect "Growing Fury"
+#copyspell "Growing Fury"
+#effect 81
+#damage 13
+#spec 8388608
+#schools 32
+
+#spelltype 2048
+#unique 1
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 4
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Growing Fury"
+#descr 64 "A growing fury will affect all friendly units on the battlefield. They will find themselves becoming more and more ferocious and will go berserk at the slightest provocation, even if they are not usually able to do so."
+#end
+
+#neweffect "The Ravenous Swarm"
+#copyspell "The Ravenous Swarm"
+#effect 81
+#damage 92
+#spec 0
+#schools 32
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 5
+#maxpower 5
+#pathlevel 3
+#sound 31
+#fatiguecost 100
+#range 0
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Ravenous Swarm"
+#descr 64 "This spell is sometimes used by nature mages to combat the undead. It is part of the natural order that the living finds sustenance from the dead, and with this spell the nature mage utilizes that and imbues a swarm of bugs with frenzied power and appetite to devour the walking dead. The swarm will consume the undead one after each other until the battle ends. Should the swarm fail to locate the dead it will start to eat the living instead."
+#details "One undead target gets 7 AN holy dmg each combat round. If the target dies a new undead target is randomly chosen."
+#end
+
+#neweffect "Soul Drain"
+#copyspell "Soul Drain"
+#effect 81
+#damage 5
+#spec 8519680
+#schools 32
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 8
+#maxpower 8
+#pathlevel 7
+#sound 31
+#fatiguecost 500
+#range 0
+
+#paths 48
+#secondarypaths 48
+#secondarypathchance 100
+
+#name 16 "Soul Drain"
+#name 32 "Soul Drain"
+#descr 16 "The caster creates a well of unlife on the battlefield and opens a channel between himself and the well. Every soul on the battlefield takes damage as their psychic energies rush from their bodies into the well to heal and reinvigorate the caster."
+#descr 32 "The caster creates a well of unlife on the battlefield and opens a channel between himself and the well. Every soul on the battlefield takes damage as their psychic energies rush from their bodies into the well to heal and reinvigorate the caster."
+#details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck with 2 AN magical life stealing. A successful MR check negates the damage."
+#end
+
+#neweffect "Blood Rain"
+#copyspell "Blood Rain"
+#effect 81
+#damage 68
+#spec 0
+#schools 32
+#unique 1
+#spelltype 2048
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 7
+#maxpower 7
+#pathlevel 3
+#sound 31
+#fatiguecost 300
+#range 0
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Blood Rain"
+#descr 128 "Blood pours down over the battlefield, lowering everyone's morale."
+#details "Morale -4 for everyone on the battlefield"
+#end
+
+
+

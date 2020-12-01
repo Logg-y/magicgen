@@ -1,0 +1,53 @@
+#newsecondary "Fear"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 4
+
+#nextspell "Minor Fear"
+
+-- not demons/undead only
+#req spec !& 8
+
+#descr "Residual energy from this spell strikes fear into the hearts of those in the area."
+
+#end
+
+#newsecondary "Fear damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 4
+
+#nextspell "Minor Fear"
+
+-- not demons/undead only
+#req spec !& 8
+
+#descr "Residual energy from this spell strikes fear into the hearts of those in the area."
+
+#end

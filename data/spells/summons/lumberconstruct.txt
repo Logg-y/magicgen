@@ -1,0 +1,76 @@
+#neweffect "lumberconstruct ritual"
+#effect 10001
+#damage 476
+#spec 8388608
+#power 5
+#nreff 2
+#pathlevel 2
+#fatiguecost 200
+#schools 8
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 50
+
+#name 64 "Summon NAMEPREFIX Lumber %Construct%"
+#descr 64 "The caster forms and enchants ARTICLE giant %construct% from wood. The animated %construct% %is% quite difficult to destroy with physical damage."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+
+#scalerate 2
+#end
+
+#neweffect "lumberconstruct Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 476
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 8
+#skipchance 75
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Lumber Construct Ambush"
+#descr 64 "The caster enchants a pile of wood in a distant province to attack an enemy commander. The victim will not know who cast this on them, and the lumber construct created collapses back into wood if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon lumberconstruct"
+#effect 10038
+#provrange 4
+#damage 476
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 4
+#fatiguecost 200
+#schools 16
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Send NAMEPREFIX Lumber %Construct%"
+#descr 64 "The caster forms and enchants ARTICLE giant %construct% from wood in a distant province. The animated %construct% %is% quite difficult to destroy with physical damage."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+#end

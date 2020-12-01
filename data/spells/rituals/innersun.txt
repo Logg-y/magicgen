@@ -1,0 +1,25 @@
+#neweffect "Inner Sun"
+#effect 10023
+#damage 67108864
+#spec 8929280
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#schools 2
+
+-- fire
+#paths 17
+#secondarypaths 17
+#secondarypathchance 90
+
+#name 1 "Inner Sun"
+#name 16 "Inner Sun"
+#descr 1 "The caster fills himself with stellar power, causing him to explode when killed. The explosion harms nearby demonic and undead beings."
+#descr 16 "The caster fills himself with stellar power, causing him to explode when killed. The explosion harms nearby demonic and undead beings."
+#details "Explodes on death with area of effect 35. Undead or demons caught in the explosion take 15 AN magical damge, which can be negated by magic resistant."
+
+#spelltype 4
+
+#end

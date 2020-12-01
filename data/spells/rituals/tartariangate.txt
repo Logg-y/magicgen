@@ -1,0 +1,21 @@
+#neweffect "Tartarian Gate"
+#copyspell "Tartarian Gate"
+#effect 10076
+#damage 10
+#spec 0
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 1000
+#schools 1
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Tartarian Gate"
+#descr 32 "The caster opens a gate to Tartarus and releases a dead Titan or Monstrum imprisoned in that horrible place. The Titans were gods in ancient times, but were defeated and imprisoned in Tartarus aeons ago. The dead Titan once had tremendous powers, but the imprisonment in the realm of perpetual pain might have destroyed the mind of the ancient god."
+
+#spelltype 4
+#end

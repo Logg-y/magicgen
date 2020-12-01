@@ -1,0 +1,25 @@
+#neweffect "Opposition"
+#effect 2
+#damage 999
+#spec 8409104
+#aoe 0
+#power 6
+#precision 100
+#range 5020
+#pathlevel 3
+#fatiguecost 20
+#explspr 10233
+#sound 41
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+#name 16 "Opposition"
+
+#descr 16 "The caster creates a supernatural force diametrically opposed to ARTICLE targeted magical %being%. If the spell is powerful enough, the magical %being% will be disenchanted and cease to exist."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 16
+#end

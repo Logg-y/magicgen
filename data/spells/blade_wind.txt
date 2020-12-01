@@ -1,0 +1,72 @@
+#neweffect "Blade Wind"
+#effect 2
+#damage 1012
+#spec 1099513724928
+#aoe 0
+#power 2
+#maxpower 4
+#precision 2
+#nreff 4010
+#range 5020
+#pathlevel 2
+#fatiguecost 20
+#flightspr 304
+#sound 42
+#aicastmod -40
+#skipchance 30
+
+-- #paths 8+128
+#paths 136
+#secondarypaths 8
+
+#name 8 "$blade$ wind"
+#name 8 "$blade$ shower"
+#name 8 "$blade$ storm"
+#name 128 "$infernal$ blades"
+#descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are not magical and are stopped by most armour."
+#descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are not magical and are stopped by most armour."
+
+#spelltype 18
+
+#scalerate 3
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+#end
+
+#neweffect "Blade Wind AP"
+#effect 2
+#damage 1012
+-- AP, slash, iron
+#spec 1099578736704
+#aoe 0
+#power 4
+#maxpower 8
+#precision 2
+#nreff 4010
+#range 5020
+#pathlevel 2
+#fatiguecost 20
+#flightspr 304
+#sound 42
+#aicastmod -40
+#skipchance 30
+
+-- #paths 8+128
+#paths 136
+#secondarypaths 8
+
+#name 8 "$blade$ wind"
+#name 8 "$blade$ shower"
+#name 8 "$blade$ storm"
+#name 128 "$infernal$ blades"
+#descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
+#descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
+
+#spelltype 18
+
+#scalerate 3
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+#end

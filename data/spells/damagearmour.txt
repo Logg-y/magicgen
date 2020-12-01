@@ -1,0 +1,77 @@
+#neweffect "Damage Armor"
+#effect 138
+#damage 10
+#spec 8388736
+#schools 2
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.3
+-- #scalecost 1.6
+
+#aoe 1
+#power 0
+#maxpower 7
+#pathlevel 1
+#explspr 10058
+#sound 31
+#fatiguecost 20
+#precision 3
+#range 30
+
+-- FWE
+#paths 13
+#secondarypaths 13
+
+#name 1 "Warp Armour"
+#name 4 "Warp Armour"
+#name 8 "Warp Armour"
+
+#descr 1 "The caster heats part of the armour of SUBJECT, causing it to warp and distort. This does not harm the %victim%, but may damage or destroy PRONOUN_POS armour."
+#descr 4 "The caster cools part of the armour of SUBJECT, causing it to warp and distort. This does not harm the %victim%, but may damage or destroy PRONOUN_POS armour."
+#descr 8 "The caster causes fractures in the armour of SUBJECT, causing it to become damaged. This does not harm the %victim%, but may damage or destroy PRONOUN_POS armour."
+
+
+#details "Rolls DAMAGE+DRN vs 0+DRN (or 10+DRN if the armour is magical). Success damages the armour (-20% protection). Damaging already damaged armour breaks it (-50% protection). Armour conferred by magic items is completely unaffected." 
+#end
+
+
+#neweffect "Damage Armor Greater"
+#effect 123
+#damage 10
+#spec 8388736
+#schools 2
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+#scalefatiguemult 4
+-- #scalecost 1.6
+
+#aoe 1
+#power 8
+#maxpower 9
+#pathlevel 4
+#explspr 10058
+#sound 31
+#fatiguecost 100
+#precision 3
+#range 30
+
+-- FWE
+#paths 13
+#secondarypaths 13
+
+#name 1 "Greater Warp Armour"
+#name 4 "Greater Warp Armour"
+#name 8 "Greater Warp Armour"
+
+#descr 1 "The caster rapidly heats part of the armour of SUBJECT, causing it to violently warp and distort. This does not harm the %victim%, but may destroy PRONOUN_POS armour, even if it was forged by mages."
+#descr 4 "The caster rapidly cools part of the armour of SUBJECT, causing it to violently warp and distort. This does not harm the %victim%, but may destroy PRONOUN_POS armour, even if it was forged by mages."
+#descr 8 "The caster causes massive fractures in the armour of SUBJECT, causing it to become damaged and potentially destroyed. This does not harm the %victim%, but may damage or destroy PRONOUN_POS armour, even if it was forged by mages."
+
+
+#details "Rolls DAMAGE+DRN vs 0+DRN (or 10+DRN if the armour is magical, or 10+(construction*2) if the armour is a magic item). Success outright destroys the armour (-50% protection) or magic item if successful." 
+#end

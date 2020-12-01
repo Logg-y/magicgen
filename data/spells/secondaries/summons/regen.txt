@@ -1,0 +1,15 @@
+#newsecondary "Summon regen"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Regen"
+#descr "The summoned %creature% %is% filled with magic that rapidly closes their wounds."
+
+#end

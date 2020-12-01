@@ -1,0 +1,110 @@
+#neweffect "Summon gryphon"
+#effect 1
+#damage 2131
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 60
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 90
+
+#name 2 "Summon NAMEPREFIX %Gryphon%"
+#descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
+
+#spelltype 528
+#scalefatiguemult 20
+
+#scalerate 1
+#end
+
+#neweffect "gryphon ritual"
+#effect 10001
+#damage 2131
+#spec 0
+#power 3
+#nreff 2001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 90
+
+#name 2 "Summon NAMEPREFIX %Gryphon%"
+#descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#scalerate 4
+#end
+
+#neweffect "gryphon Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2131
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 90
+
+#name 2 "NAMEPREFIX %Gryphon% Attack"
+#descr 2 "The caster summons ARTICLE %gryphon% to attack a hostile commander in a distant province. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote gryphon"
+#effect 10038
+#provrange 4
+#damage 2131
+#spec 0
+#power 4
+#maxpower 9
+#nreff 2001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#name 2 "Send NAMEPREFIX %Gryphon%"
+#descr 2 "The caster summons ARTICLE %gryphon% to attack a hostile commander in a distant province. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
+
+
+#spelltype 20
+
+#scalerate 4
+#end

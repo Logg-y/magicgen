@@ -1,0 +1,31 @@
+#newsecondary "Summon Darkvision"
+
+#anysummon 1
+
+#paths 96
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Darkvision"
+#descr "The summoned %creature% %is% accustomed to travelling at night and can see very well in the dark."
+
+#end
+
+#newsecondary "Summon Spiritsight"
+
+#anysummon 1
+
+#paths 48
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+
+#unitmod "Summon Spiritsight"
+#descr "The summoned %creature% %is% able to see into the spirit realm and see creatures as they truly are."
+
+#end

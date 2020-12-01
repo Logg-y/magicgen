@@ -1,0 +1,25 @@
+#neweffect "Seeking Arrow"
+#copyspell "Seeking Arrow"
+#effect 10040
+#damage 8
+#spec 274886312064
+#provrange 3
+#power 3
+#maxpower 9
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 16
+
+#paths 2
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Seeking Arrow"
+#descr 2 "The caster sends an enchanted arrow across the world to find a suitable heart to penetrate. The arrow will target one leader in a province of the caster's choice."
+#details "The arrow inflicts DAMAGE AN magical piercing damage and always hits the chest. Air shield can negate the effect."
+
+#spelltype 68
+#scalerate 0.75
+#scalefatiguemult 40
+#end

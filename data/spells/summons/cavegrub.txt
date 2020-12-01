@@ -1,0 +1,103 @@
+#neweffect "Summon cavegrub"
+#effect 1
+#damage 2526
+#spec 0
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 50
+#sound 31
+#schools 1
+#scalefatiguemult 20
+#paths 8
+#secondarypaths 8
+
+#skipchance 90
+
+#name 8 "Summon NAMEPREFIX Cave %Grub%"
+#descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "cavegrub ritual"
+#effect 10001
+#damage 2526
+#spec 0
+#power 2
+#nreff 1001
+#pathlevel 1
+#fatiguecost 300
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 60
+
+#name 8 "Summon NAMEPREFIX Cave %Grub%"
+#descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+
+#scalerate 2
+#end
+
+#neweffect "cavegrub Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2526
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Cave %Grub% Attack"
+#descr 8 "The caster summons forth ARTICLE cave %grub% to attack a hostile commander in a distant land. Cave grubs can bite their opponents and produce corrosive saliva."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon cavegrub"
+#effect 10038
+#provrange 4
+#damage 2526
+#spec 0
+#power 6
+#maxpower 9
+#nreff 2001
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Send NAMEPREFIX Cave %Grub%"
+#descr 8 "The caster summons forth ARTICLE cave %grub% to attack a distant land. Cave grubs can bite their opponents and produce corrosive saliva."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end

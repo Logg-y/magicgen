@@ -1,0 +1,29 @@
+#newunitmod "Summon Pooramphibian"
+#req pooramphibian == -1
+#req amphibian == -1
+#req aquatic == -1
+#req uwdamage == -1
+#set pooramphibian 1
+#nameprefix "Amphibious"
+#descr "This particular CREATURE has been imbued by magic that allows it to breathe underwater, though it will suffer moderate penalties while doing so."
+#end
+
+#newunitmod "Summon amphibian"
+#req pooramphibian == -1
+#req amphibian == -1
+#req aquatic == -1
+#set amphibian 1
+#req uwdamage == -1
+#nameprefix "Amphibious"
+#descr "This particular CREATURE has been imbued by magic that allows it to breathe perfectly underwater, allowing it to fight without penalties."
+#end
+
+#newunitmod "Summon aquatic on land"
+#req pooramphibian == -1
+#req amphibian == -1
+#req aquatic == 1
+#set amphibian 1
+#req landdamage == -1
+#nameprefix "Amphibious"
+#descr "This particular CREATURE has been imbued by magic that allows it to breathe perfectly when above water."
+#end

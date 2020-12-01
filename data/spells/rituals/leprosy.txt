@@ -1,0 +1,23 @@
+#neweffect "Leprosy"
+#copyspell "Leprosy"
+#effect 10064
+#damage 1
+#spec 545787904
+#power 6
+#maxpower 6
+#provrange 4
+#nreff 1
+#pathlevel 5
+#fatiguecost 1000
+#schools 1
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Leprosy"
+#descr 32 "The mage conjures forth a wasting disease upon an enemy army in a distant province. Diseased targets will never regain any lost hit points and will take damage every season they are alive. Undead, demons and inanimate beings are not affected by this spell."
+#details "50% of the units in the targeted province must make a MR check or get diseased."
+
+#spelltype 4
+#end

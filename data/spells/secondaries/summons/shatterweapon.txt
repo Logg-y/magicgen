@@ -1,0 +1,15 @@
+#newsecondary "Summon Shatterweapon"
+
+#anysummon 1
+
+#paths 8
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 3
+
+#unitmod "Summon Shatterweapon"
+#descr "Constructs wounded by the attacks of the %creature% experience massive structural damage."
+
+#end

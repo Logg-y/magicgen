@@ -1,0 +1,66 @@
+#newsecondary "Fire"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Fire"
+
+#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+
+#end
+
+#newsecondary "Fire damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Fire"
+
+#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+
+#end
+
+
+#newsecondary "Fire smite"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#req nonscalingdamage < 15
+#req aoe == 0
+#req paths == 256
+
+-- not ritual
+#req spelltype !& 4
+
+#nextspell "Additional Fire Holy"
+
+#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+
+#end

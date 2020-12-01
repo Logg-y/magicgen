@@ -1,0 +1,103 @@
+#neweffect "Summon phantasmal knight"
+#effect 1
+#damage 696
+#spec 8388608
+#power 2
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 10
+#explspr 10275
+#sound 42
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 70
+
+#name 2 "Summon NAMEPREFIX Phantasmal $Knight$"
+#descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These knights are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatiguemult 5
+#end
+
+#neweffect "Phantasmal knight ritual"
+#effect 10001
+#damage 696
+#spec 8388608
+#power 3
+#nreff 4006
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Summon NAMEPREFIX Phantasmal $Knight$"
+#descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 8
+
+#scalerate 4
+#end
+
+#neweffect "Phantasmal knight Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 696
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools 1
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Phantasmal knight Attack"
+#descr 2 "Summons a phantasmal knight to ambush an enemy commander. This is very unlikely to succeed against anyone who can cast spells or wields magic weapons."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote phantasmal knight"
+#effect 10038
+#provrange 4
+#damage 696
+#spec 8388608
+#power 4
+#maxpower 9
+#nreff 4016
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 2
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+
+#name 2 "Send NAMEPREFIX Phantasmal Knights"
+#descr 2 "Summons a group of phantasmal knights to attack a distant province."
+
+#spelltype 20
+
+#scalerate 5
+#end

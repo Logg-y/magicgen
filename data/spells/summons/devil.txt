@@ -1,0 +1,104 @@
+#neweffect "Summon devil"
+#effect 1
+#damage 304
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths 129
+
+#skipchance 90
+
+#name 128 "Summon %Devil%"
+#descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE %devil% from Inferno to aid him in battle."
+
+#spelltype 528
+
+#scalerate 0.7
+#scalefatiguemult 250
+#end
+
+#neweffect "devil ritual"
+#effect 10001
+#damage 304
+#spec 0
+#power 3
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Bind %Devil%"
+#descr 128 "$BLOOD_INTRO$, the caster ARTICLE %devil% from Inferno to aid him in battle."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 430
+
+#scalerate 1
+#end
+
+#neweffect "Devil Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 304
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 600
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Devil Attack"
+#descr 128 "$BLOOD_INTRO$, the caster binds a devil to ambush an enemy commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote devils"
+#effect 10038
+#provrange 4
+#damage 304
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 5
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 250
+
+#name 128 "Send %Devil%"
+#descr 128 "$BLOOD_INTRO$, the caster summons a group of devils to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1
+#end

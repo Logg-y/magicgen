@@ -1,0 +1,26 @@
+#neweffect "Solar Rays"
+#copyspell "Solar Rays"
+#effect 2
+#damage 3008
+#spec 268435528
+#aoe 1
+#power 2
+#precision 100
+#range 5030
+#pathlevel 2
+#fatiguecost 20
+#explspr 10323
+#sound 41
+#paths 16
+#secondarypaths 16
+#secondarypathchance 0
+#name 16 "Solar Rays"
+
+#descr 16 "This spell calls down rays of fire from the sun that set undead targets ablaze."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end

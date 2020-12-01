@@ -1,0 +1,67 @@
+#neweffect "Web Projectile"
+#copyspell "Web"
+#effect 11
+#damage 536870912
+#spec  	4398057013248
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 2
+#power 2
+#precision 2
+#maxpower 9
+#pathlevel 1
+#flightspr 10278
+#explspr 10277
+#sound 42
+#fatiguecost 20
+#range 2023
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 64 "Project Web"
+#name 64 "Web %Glob%"
+#descr 64 "The mage projects a mass of sticky webs that will trap enemies. Very large or strong beings will not be hindered by the web."
+#details "Str +DRN vs 22 to get free."
+#end
+
+
+#neweffect "Web Instant"
+#effect 11
+#damage 536870912
+#spec  	4398057013248
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 2
+#power 4
+#precision 2
+#maxpower 9
+#pathlevel 3
+#explspr 102787
+#sound 42
+#fatiguecost 20
+#range 2023
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 64 "Weave Web"
+#descr 64 "The mage weaves webs around SUBJECT, trapping them. Very large or strong beings will not be hindered by the web."
+#details "Str +DRN vs 22 to get free."
+#end

@@ -1,0 +1,109 @@
+#neweffect "Call catoblepas"
+#effect 1
+#damage 1290
+#spec 0
+#power 6
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 200
+#scalefatiguemult 120
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 32
+#secondarypathchance 90
+#ainocast 1
+
+#name 4 "Summon NAMEPREFIX Catoblepas"
+#descr 4 "The caster summons ARTICLE catoblepas to fight for him. Catoblepas are swamp-dwelling bulls that exude poisonous gas and have a death gaze which affects units in a massive area. Casting this spell may be dangerous to the caster if he is not resistant to the poison cloud."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "catoblepas ritual"
+#effect 10001
+#damage 1290
+#spec 0
+#power 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 700
+#schools 1
+
+#paths 4
+#secondarypaths 32
+#secondarypathchance 90
+
+#name 4 "Summon NAMEPREFIX Catoblepas"
+#descr 4 "The caster summons ARTICLE catoblepas to fight for him. Catoblepas are swamp-dwelling bulls that exude poisonous gas and have a death gaze which affects units in a massive area."
+#skipchance 75
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 520
+
+#scalerate 2
+#end
+
+#neweffect "catoblepas Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1290
+#spec 0
+#nogeodst 2052
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 75
+
+#paths 4
+#secondarypaths 32
+#secondarypathchance 90
+
+#name 4 "NAMEPREFIX Catoblepas Attack"
+#descr 4 "The caster summons ARTICLE %catoblepas% to attack a hostile commander in a distant province. Catoblepas are swamp-dwelling bulls that exude poisonous gas and have a death gaze which affects units in a massive area."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon catoblepas"
+#effect 10038
+#provrange 4
+#damage 1290
+#spec 8388608
+#power 6
+#maxpower 11
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 16
+#onlygeodst 2052
+
+#skipchance 90
+#paths 4
+#secondarypaths 32
+#secondarypathchance 90
+
+#name 4 "Send NAMEPREFIX Catoblepas"
+#descr 4 "The caster summons ARTICLE %catoblepas% to attack a distant province. Catoblepas are swamp-dwelling bulls that exude poisonous gas and have a death gaze which affects units in a massive area."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+#end

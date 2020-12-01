@@ -1,0 +1,33 @@
+#neweffect "Bonds of Fire Secondary"
+#effect 11
+#damage 65536
+#spec 20480
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10203
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Burning $Fetters$"
+#name 2 "Burning $Fetters$"
+#name 4 "Burning $Fetters$"
+#name 8 "Burning $Fetters$"
+#name 16 "Burning $Fetters$"
+#name 32 "Burning $Fetters$"
+#name 64 "Burning $Fetters$"
+#name 128 "Burning $Fetters$"
+#name 256 "Burning $Fetters$"
+
+#end

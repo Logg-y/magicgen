@@ -1,0 +1,66 @@
+#neweffect "Call Gnome"
+
+#effect 21
+#damage 345
+#spec 0
+#power 4
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 5
+#range 6
+#fatiguecost 120
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 72
+#secondarypaths 72
+#secondarypathchance 90
+
+#name 8 "Summon NAMEPREFIX %Gnome%"
+#name 64 "Summon NAMEPREFIX %Gnome%"
+#descr 8 "The earth mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
+#descr 64 "The nature mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
+
+#scalefatiguemult 120
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Gnome"
+
+#effect 10021
+#damage 345
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 2400
+#chassisvalue 220
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 16
+
+#paths 72
+#secondarypaths 72
+#secondarypathchance 90
+
+#name 8 "Summon NAMEPREFIX Gnome"
+#name 64 "Summon NAMEPREFIX Gnome"
+#descr 8 "The earth mage summons a gnome. Gnomes are strange magical creatures which are difficult to find and are skilled mages of earth and nature."
+#descr 64 "The nature mage summons a gnome. Gnomes are strange magical creatures which are difficult to find and are skilled mages of earth and nature."
+
+#spelltype 20
+
+#scalerate 1
+#end
+

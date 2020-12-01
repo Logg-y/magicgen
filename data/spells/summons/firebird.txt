@@ -1,0 +1,106 @@
+#neweffect "Summon firebird"
+#effect 1
+#damage 1946
+#spec 0
+#power 4
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 50
+#sound 26
+#schools 1
+
+#paths 1
+#secondarypaths 16
+#scalefatiguemult 20
+
+#skipchance 90
+
+#name 1 "Summon NAMEPREFIX %Firebird%"
+#descr 1 "Summons ARTICLE %firebird% to fight for the caster. The firebird is a glowing bird that can create small bursts of flames."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "firebird ritual"
+#effect 10001
+#damage 1946
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+
+#paths 1
+#secondarypaths 16
+#secondarypathchance 95
+
+#name 1 "Summon NAMEPREFIX %Firebird%"
+#descr 1 "Summons ARTICLE %firebird% to fight for the caster. The firebird is a glowing bird that can create small bursts of flames, and brings fortune to wherever it dwells."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 185
+
+#scalerate 2
+#end
+
+#neweffect "firebird Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1946
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 1
+#secondarypaths 16
+
+#name 1 "NAMEPREFIX Firebird Attack"
+#descr 1 "Summons ARTICLE %firebird% to attack a hostile commander in a distant province. The firebird is a glowing bird that can create small bursts of flames."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon firebird"
+#effect 10038
+#provrange 4
+#damage 1946
+#spec 0
+#power 3
+#maxpower 9
+#nreff 2002
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 1
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+
+#name 1 "Send NAMEPREFIX Firebirds"
+#descr 1 "Summons ARTICLE %firebird% to attack a distant province. The firebird is a glowing bird that can create small bursts of flames."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

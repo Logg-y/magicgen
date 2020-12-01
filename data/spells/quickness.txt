@@ -1,0 +1,41 @@
+#neweffect "Quickness"
+#effect 10
+#damage 262144
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.5
+
+#aoe 0
+#power 2
+#pathlevel 1
+#explspr 10025
+#sound 31
+#range 10
+#fatiguecost 20
+#maxpower 8
+
+
+-- water, astral
+#paths 20
+#secondarypaths 4
+
+#namecond aoe == 0 16 "Quicken Self"
+#namecond aoe == 0 4 "Quicken Self"
+
+#namecond2 1 <= aoe < 666 16 "Quickness"
+#namecond2 1 <= aoe < 666 4 "Quickness"
+
+#namecond aoe == 666 16 "Quickening"
+#namecond aoe == 666 4 "Quickening"
+
+#details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
+
+#descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
+#descr 4 "The speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
+
+#end
+

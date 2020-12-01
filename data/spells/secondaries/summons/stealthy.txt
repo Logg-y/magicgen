@@ -1,0 +1,22 @@
+#newsecondary "Summon Stealthy"
+
+-- ritual summon only
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+#paths 82
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+#magicpathvaluescaling 0.05
+
+#unitmod "Summon Stealthy"
+#descr "The summoned %creature% %is% imbued with magic that shows it how to effectively hide from prying eyes."
+
+#end

@@ -1,0 +1,101 @@
+#neweffect "Summon wight"
+#effect 1
+#damage 533
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#sound 43
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Revive NAMEPREFIX %Wight%"
+#descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "wight ritual"
+#effect 10001
+#damage 533
+#spec 8388608
+#power 5
+#nreff 1001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Revive NAMEPREFIX %Wight%"
+#descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+
+#scalerate 4
+#end
+
+#neweffect "wight Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 533
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Wight Ambush"
+#descr 32 "The caster summons ARTICLE %wight% to ambush a commander in a distant land. Wights are powerful undead wielding bane blades."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon wight"
+#effect 10038
+#provrange 4
+#damage 533
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX %Wight%"
+#descr 32 "The caster summons ARTICLE %wight% to attack a distant province. Wights are powerful undead wielding bane blades."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

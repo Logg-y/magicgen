@@ -1,0 +1,71 @@
+#neweffect "Call Ice Druid"
+
+#effect 21
+#damage 309
+#spec 0
+#power 4
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 5
+#range 6
+#fatiguecost 80
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 84
+#secondarypaths 4
+#pathskipchance 16 80
+
+#name 4 "Call NAMEPREFIX Ice %Druid%"
+#name 16 "Teleport NAMEPREFIX Ice %Druid%"
+#name 64 "Charm NAMEPREFIX Ice %Druid%"
+#descr 4 "The water mage lets out a call for ARTICLE %Ice Druid% to join him in battle. The %Ice Druid% will leave once the battle is over."
+#descr 16 "The caster teleports ARTICLE %Ice Druid% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Ice Druid% will leave once the battle is over."
+#descr 64 "The caster attracts ARTICLE %Ice Druid% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Ice Druid% will leave once the battle is over."
+
+#scalefatiguemult 80
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Ice Druid"
+
+#effect 10021
+#damage 309
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 2200
+#chassisvalue 20
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 31
+#pathskipchance 16 80
+
+#paths 84
+#secondarypaths 4
+
+
+#name 4 "Call NAMEPREFIX Ice Druid"
+#name 16 "Teleport NAMEPREFIX Ice Druid"
+#name 64 "Charm NAMEPREFIX Ice Druid"
+#descr 4 "The water mage lets out a call for ARTICLE %Ice Druid%. Ice Druids are mages of water and nature."
+#descr 16 "The caster teleports ARTICLE %Ice Druid% to him and convinces PRONOUN to fight for him."
+#descr 64 "The caster attracts ARTICLE %Ice Druid% to him and convinces PRONOUN to fight for him."
+
+#spelltype 20
+
+#scalerate 1
+#end
+

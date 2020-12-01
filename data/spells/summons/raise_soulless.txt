@@ -1,0 +1,28 @@
+#neweffect "Raise Soulless"
+#effect 1
+#damage -3
+#spec 8388608
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#explspr 10232
+#sound 43
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Raise Soulless"
+#descr 32 "The caster raises ARTICLE soulless %being% from the recently dead."
+
+#spelltype 528
+
+#power 1
+#scalerate 1
+-- #scalecost 1.0
+#pathlevel 1
+#schools 16
+#skipchance 50
+#end
+

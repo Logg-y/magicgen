@@ -1,0 +1,62 @@
+#newsecondary "Summon Pooramphibian"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 6
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#magicpathvaluescaling 0.1
+
+#unitmod "Summon Pooramphibian"
+#descr "The summoned %creature% %is% imbued with magic that allows %it% to breathe underwater, though %it% will suffer moderate penalties whilst underwater."
+
+#end
+
+#newsecondary "Summon fullamphibian"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 6
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+#magicpathvaluescaling 0.1
+
+#unitmod "Summon amphibian"
+#descr "The summoned %creature% %is% imbued with magic that allows %it% to breathe perfectly underwater, allowing %it% to fight without penalty."
+
+#end
+
+#newsecondary "Summon aquatic on land"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 6
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+#magicpathvaluescaling 0.1
+
+#unitmod "Summon aquatic on land"
+#descr "The summoned %creature% %is% imbued with magic that allows %it% to survive perfectly well even above water."
+
+#end

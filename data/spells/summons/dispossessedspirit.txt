@@ -1,0 +1,99 @@
+#neweffect "Raise dispossessed"
+#effect 1
+#damage 674
+#spec 8388608
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX Dispossessed %Spirit%"
+#descr 32 "The caster traps the %soul% of ARTICLE recently dead %human%, preventing PRONOUN from reaching the underworld. The resulting %spirit% %is% confused and weak, but their touch can still paralyze their victims."
+
+#spelltype 528
+
+#power 1
+#scalerate 0.85
+-- #scalecost 1.0
+#pathlevel 1
+#schools 16
+#skipchance 50
+#end
+
+#neweffect "Raise dispossessed Ritual"
+#effect 10001
+#damage 674
+#spec 8388608
+#power 1
+#nreff 4003
+#pathlevel 1
+#fatiguecost 200
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX Dispossessed %Spirit%"
+#descr 32 "The caster traps the %soul% of ARTICLE recently dead %human%, preventing PRONOUN from reaching the underworld. The resulting %spirit% %is% confused and weak, but their touch can still paralyze their victims."
+#spelltype 20
+
+#scalerate 2
+#end
+
+#neweffect "dispossessed Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 674
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Spirit Attack"
+#descr 32 "The caster traps the soul of a recently dead human, preventing it from reaching the underworld, and sends it to haunt a hostile commander in a distant province. The resulting spirit is confused and weak, but its touch can still paralyze its victim."
+
+#spelltype 4
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon dispossessed"
+#effect 10038
+#provrange 4
+#damage 674
+#spec 8388608
+#power 3
+#maxpower 9
+#nreff 3010
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX Dispossessed %Spirit%"
+#descr 32 "The caster traps the %soul% of ARTICLE recently dead %human%, preventing PRONOUN from reaching the underworld. The %spirit% %is% directed to haunt a distant land instead. The resulting %spirit% %is% confused and weak, but their touch can still paralyze their victims."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

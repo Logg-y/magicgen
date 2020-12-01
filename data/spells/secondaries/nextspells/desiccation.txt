@@ -1,0 +1,34 @@
+#neweffect "Minor Desiccation"
+#effect 500
+#damage 250
+#spec 554172544
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#aoe 1
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Desiccation"
+#name 2 "Minor Desiccation"
+#name 4 "Minor Desiccation"
+#name 8 "Minor Desiccation"
+#name 16 "Minor Desiccation"
+#name 32 "Minor Desiccation"
+#name 64 "Minor Desiccation"
+#name 128 "Minor Desiccation"
+#name 256 "Minor Desiccation"
+
+#end

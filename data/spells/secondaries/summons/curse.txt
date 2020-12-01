@@ -1,0 +1,32 @@
+#newsecondary "Summon Curseweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Curseweapon"
+#descr "Creatures wounded by the summoned %creature% become permanently cursed and are more likely to suffer afflictions."
+
+#end
+
+
+#newsecondary "Summon Curseluckweapon"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Curseluckweapon"
+#descr "Creatures wounded by the summoned %creature% briefly have their luck reduced heavily, temporarily making them easier to strike and harm in combat."
+
+#end

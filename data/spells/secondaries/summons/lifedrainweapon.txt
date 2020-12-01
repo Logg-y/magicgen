@@ -1,0 +1,31 @@
+#newsecondary "Summon Lifedrainweapon"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Lifedrainweapon"
+#descr "The summoned %creature% %is% able to drain the life of victims with %its% attacks."
+
+#end
+
+#newsecondary "Summon Lifedrainweapon2"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Lifedrainweapon"
+#descr "The summoned %creature% %is% able to drain the life of victims with %its% attacks."
+
+#end

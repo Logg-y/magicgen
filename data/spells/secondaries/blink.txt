@@ -1,0 +1,74 @@
+#newsecondary "Blink"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+#req effect != 2
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req effect < 1000
+#req nonscalingaoe >= 1
+
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Space Warp"
+
+#descr "Residual energy from this spell warps space and may teleport those affected to another location on the battlefield."
+
+#end
+
+
+#newsecondary "Blink damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+#req nonscalingdamage < 15
+#req nonscalingaoe >= 1
+-- holy ok
+
+-- not cloud spells
+#req effect < 1000
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Space Warp"
+
+#descr "Residual energy from this spell warps space and may teleport those affected to another location on the battlefield."
+
+#end
+
+#newsecondary "Blink smite"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power 0
+
+#req nonscalingdamage < 15
+#req nonscalingaoe == 0
+#req paths == 256
+-- holy ok
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nextspell "Space Warp Smite"
+
+#descr "Residual energy from this spell warps space and may teleport the target another location on the battlefield."
+
+#end

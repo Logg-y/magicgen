@@ -1,0 +1,34 @@
+#neweffect "Charm Smite"
+#effect 29
+#damage 999
+#spec 8540288
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10213
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Charm"
+#name 2 "Charm"
+#name 4 "Charm"
+#name 8 "Charm"
+#name 16 "Charm"
+#name 32 "Charm"
+#name 64 "Charm"
+#name 128 "Charm"
+#name 256 "Charm"
+
+
+#end

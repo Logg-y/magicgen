@@ -1,0 +1,26 @@
+#newunitmod "Summon Stoneskin"
+#req prot < 12
+#req ethereal == -1
+#set prot 15
+#coldres -4
+#nameprefix "Stone"
+#descr "This particular CREATURE has had its skin turned to stone, making it difficult to harm with physical damage but more vulnerable to cold."
+#end
+
+#newunitmod "Summon Ironskin"
+#req prot < 17
+#req ethereal == -1
+#set prot 20
+#shockres -4
+#nameprefix "Iron"
+#descr "This particular CREATURE has had its skin turned to iron, making it very difficult to harm with physical damage but more vulnerable to shock."
+#end
+
+#newunitmod "Summon Barkskin"
+#req prot < 7
+#req ethereal == -1
+#set prot 10
+#fireres -4
+#nameprefix "Bark"
+#descr "This particular CREATURE has had its skin turned to bark, making it somewhat difficult to harm with physical damage but more vulnerable to fire."
+#end

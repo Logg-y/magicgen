@@ -1,0 +1,6 @@
+#newunitmod "Summon Decayweapon"
+#weaponmod "Decayweapon"
+#nameprefix "Withering"
+#descr "This particular CREATURE is touched by dark magic, causing those wounded by its weapons to rapidly wither and die if the effect is not resisted."
+#req trample == -1
+#end

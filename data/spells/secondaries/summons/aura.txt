@@ -1,0 +1,112 @@
+#newsecondary "Summon chillaura"
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Chillaura"
+#descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
+
+#end
+
+#newsecondary "Summon heataura"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Heataura"
+#descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
+
+#end
+
+#newsecondary "Summon Poisonaura"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Poisonaura"
+#descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
+
+#end
+
+#newsecondary "Summon Diseaseaura"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.55
+
+#unitmod "Summon Diseaseaura"
+#descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
+
+#end
+
+
+#newsecondary "Summon Mindslime"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Mindslime"
+#descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
+
+#end
+
+#newsecondary "Summon Sleepaura"
+
+#anysummon 1
+
+#paths 64
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+
+#unitmod "Summon Sleepaura"
+#descr "Enemies around the summoned %creature% rapidly fall into a magical slumber. Those that fail to resist fall asleep."
+
+#end
+
+#newsecondary "Summon Fearaura"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Fearaura"
+#descr "Enemies around the summoned %creature% become magically frightened and may flee the battle."
+
+#end

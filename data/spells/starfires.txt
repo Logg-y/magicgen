@@ -1,0 +1,30 @@
+#neweffect "Star Fires"
+#copyspell "Star Fires"
+#effect 2
+#damage 1004
+#spec 128
+#schools 4
+
+#spelltype 18
+
+#scalerate 1
+-- #scalecost 0.6
+
+#nreff 1001
+#aoe 0
+#power 1
+#precision 2
+#maxpower 8
+#pathlevel 1
+#explspr 10306
+#sound 16
+#fatiguecost 20
+#range 5025
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 16 "Star Fires"
+#descr 16 "The caster focuses the lights of several stellar bodies and projects them onto his enemies."
+#end

@@ -1,0 +1,8 @@
+#newunitmod "Summon Recuperation"
+#req heal == -1
+-- don't give this to 1hp garbage
+#req hp > 10
+#req woundfend == -1
+#set heal 1
+#descr "This particular CREATURE has been imbued by magic that allows it heal wounds and afflictions over time."
+#end

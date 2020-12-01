@@ -1,0 +1,246 @@
+#neweffect "Fire Power"
+#effect 23
+#damage 262144
+#spec 16384
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10034
+#sound 16
+#range 0
+#fatiguecost 20
+#maxpower 5
+
+
+-- fire, blood
+#paths 129
+#secondarypaths 1
+
+#name 1 "Phoenix Power"
+#name 128 "Infernal Power"
+
+#details "Grants +1 fire magic."
+
+#descr 1 "The power of fire is channeled into SUBJECT, allowing %the% %mage% to cast more powerful fire spells." 
+#descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful fire spells." 
+
+#end
+
+
+
+#neweffect "Water Power"
+#effect 23
+#damage 524288
+#spec 8404992
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10025
+#sound 9
+#range 0
+#fatiguecost 20
+#maxpower 5
+
+
+-- water, blood
+#paths 132
+#secondarypaths 4
+
+#name 4 "Water Power"
+#name 128 "Power from Kokytos"
+
+#details "Grants +1 water magic."
+
+#descr 4 "The power of water is channeled into SUBJECT, allowing %the% %mage% to cast more powerful water spells." 
+#descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful water spells." 
+
+#end
+
+
+
+#neweffect "Storm Power"
+#effect 23
+#damage 8192
+#spec 4210688
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+#aoe 0
+#power 2
+#pathlevel 1
+#explspr 10216
+#sound 64
+#range 0
+#fatiguecost 20
+#maxpower 4
+
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Storm Power"
+
+#details "Grants +1 air magic during a storm."
+
+#descr 2 "The power of storms is channeled into SUBJECT, allowing %the% %mage% to cast more powerful air spells during a storm." 
+
+#end
+
+
+
+#neweffect "Nature Power"
+#effect 23
+#damage 1048576
+#spec 8404992
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10024
+#sound 29
+#range 0
+#fatiguecost 20
+#maxpower 5
+
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Power of Gaia"
+
+#details "Grants +1 nature magic."
+
+#descr 64 "The power of Gaia is channeled into SUBJECT, allowing %the% %mage% to cast more powerful nature spells." 
+
+#end
+
+#neweffect "Earth Power"
+#effect 23
+#damage 4096
+#spec 8404992
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10192
+#sound 45
+#range 0
+#fatiguecost 20
+#maxpower 5
+
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Earth Power"
+
+#details "Grants +1 earth magic and +4 reinvigoration."
+
+#descr 8 "The power of Earth is channeled into SUBJECT, allowing %the% %mage% to cast more powerful earth spells and be continuously reinvigorated by the earth's power." 
+
+#end
+
+#neweffect "Power of the Spheres"
+#effect 23
+#damage 128
+#spec 8404992
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#maxpower 3
+#pathlevel 1
+#explspr 10190
+#sound 31
+#range 0
+#fatiguecost 100
+
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Power of the Spheres"
+
+#details "Grants +1 to all schools of magic."
+
+#descr 16 "This spell makes the caster more powerful in all paths of magic." 
+
+#end
+
+
+#neweffect "Hellpower"
+#effect 23
+#damage 131072
+#spec 16384
+#schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 0.7
+
+#aoe 0
+#power 2
+#maxpower 2
+#pathlevel 3
+#explspr 10172
+#sound 31
+#range 0
+#fatiguecost 300
+#ainocast 1
+
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Hell Power"
+
+#descr 128 "By sacrificing a large number of blood slaves, the caster attracts attention from the Netherworld. Fiends from beyond grant the caster tremendous physical and magical power for one battle. The price for this power is unwanted attention from other Horrors. For every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster."
+
+#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4."
+
+#end
+

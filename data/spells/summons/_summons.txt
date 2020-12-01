@@ -1,0 +1,208 @@
+--              -2	longdead
+--              -3	soulless
+--              -4	ghouls
+--              -5	random animal (box of monsters)
+--              -6	lesser horror
+--              -7	greater horror
+--              -8	doom horror
+--              -9	random bugs
+--              -10	random good crossbreeds
+--              -11	random bad crossbreeds
+--              -12	random crossbreeds, 3% good
+--              -13	adventurer
+--              -14	dungeon monsters
+--              -18	probably the ghost mages at 1539-1540
+--              88	fiend of darkness	
+--              189	longdead horseman
+--              210	giant lobster
+--              213	salamander
+--              284	wolf
+--              297	phantasmal warrior
+--              298	phantasmal wolf
+--              303	imp
+--              304	devil
+--              313	manikin
+--              314	mandragora
+--              330	dark vines
+--              360	undine
+--              361	vine man
+--              362	vine ogre
+--              393	lammashta
+--              394	lamia
+--              403	horned serpent
+--              405	vampire
+--              408-413	water elemental
+--              430	black harpy
+--              433	bone fiend
+--              434	black servant
+--              438	kraken
+--              442	shade beast
+--              448	false horror
+--              449	frost fiend
+--              452	behemoth
+--              474	living statue
+--              475	crusher
+--              476	lumber construct
+--              489	demon knight
+--              493-498	earth elemental
+--              511	winter wolf
+--              512	fall bear
+--              513	spring hawk
+--              514	kithironic lion
+--              515	summer lion
+--              517	black hawk
+--              520	wyvern
+--              521	abomination
+--              522	cave drake
+--              523	fire drake
+--              524	scorpion beast
+--              526	serpent fiend
+--              527	will o the wisp
+--              528	corpse candle
+--              531	iron dragon
+--              532	mechanical man
+--              533	wight
+--              534	corpse construct
+--              535	longdead banefire archer
+--              536	longdead buccaneer
+--              542	stone monstra
+--              549	boar
+--              561	earth gnome
+--              562	sylph
+--              564	sea troll
+--              565	sea serpent
+--              566	ghost
+--              567-572 air elemental
+--              578	bog beast
+--              579	ice drake
+--              592	sprite
+--              593	draconian
+--              594-599	fire elemental
+--              628	great lion
+--              632	storm demon
+--              633	werewolf
+--        NO	634	handmaiden of death [skipped as it's virtually a lammashta]
+--              638	spine devil
+--              639	kraken king
+--              640	magma child
+
+--				I guess I should leave the lemurian national freespawn alone
+--				other stuff looks like it should be fair game at least
+--              672	spectral velite [skip]
+--              673	spectral hastatus [skip]
+--              674	dispossesed spirit
+--              675	shadow soldier
+--              676	shade
+--              677	apparition
+--              682	spectral standard [skip]
+
+
+--              694	great bear
+--              695	phantasmal beast
+--              696	phantasmal knight
+--              736	ether warrior
+--              760	siege golem
+--              768	watcher
+--              781	juggernaut
+--              782	giant spider
+--              811	succubus [skip]
+--              814	fire snake
+--              815	small shark
+--              816	shark
+--              817	clayman
+--              831-836	ice elemental [skip]
+--              843	shade lord 
+--              884	great spider
+--              942	iron pig
+--              925	tarrasque
+--              932	woodland spirit
+--              982	clockwork horror
+--              1062	sea stag
+--              1063	leocampus
+--              1064	sea dog
+--              1084	moose
+--              1099	poison golem
+--              1140	tiger
+--              1224	dire wolf
+--              1234	asp turtle
+--              1235/6	leviathan
+--              1256	shura [skipped, should be commander, desc states general]
+--              1290	catoblepas
+--              1380	great hawk
+--              1381	great eagle
+--              1388	ziz
+--              1412	amphiptere
+--              1560	dog
+--              1662	disease demon
+--              1664	monster fish
+--              1840	hydra hatchling
+--              1940	zmey
+--              1946	firebird
+--              1947	simargl
+--              1983	green lion
+--              2073	shed
+--              2125	shadow [skip, same stats as shadow soldier #675]
+--              2130	manticore
+--              2131	gryphon
+--              2132	leogryph
+--              2133	lioness
+--              2134	terracotta soldier
+--              2135	ogre
+--              2136	great boar
+--              2159	gelatinous cube
+--              2185	crocodile
+--              2196	swamp drake
+--              2225	fire ant
+--              2226	killer mantis
+--              2227	goat
+--              2228	deer
+--              2229	forest giant	(see shaman 2640)
+--              2230	hill giant	(see shaman 2641)
+--              2231	yeti	(see shaman 2642)
+--              2251	ancient presence
+--              2273	large lobster
+--              2280-2285	illearth
+--              2286	fiery imp
+--              2287	shadow imp
+--              2321	clockwork soldier
+--              2322	shark [skip, same as 816]
+--              2339	shadow triton [skip, basically dupe]
+--              2340	shadow soldier [skip, of 675]
+--              2368	gargoyle
+--              2512	cave cow
+--              2513	cave spider
+--              2514	cave crab
+--              2515-2519	living mercury
+--              2526	cave grub
+--              2529	cave drake [skip, it's a dupe and this one costs upkeep]
+--              2794	demonic locust
+--              2854	flame jelly
+--              2976	algae man
+--              3009	buffalo
+--              3065	marble lion
+--              3232	iron fly
+--              3233	phantasmal archer
+
+
+-- 234 minotaur
+-- 518 troll
+-- 1615 caveman
+-- war troll
+-- winged monkey
+-- forest troll
+-- troll moose knight
+-- kydnid
+-- troll guard
+-- kappa
+-- horse face
+-- ox head
+-- elephant
+-- ker
+-- hound of twilight
+-- khalkotauros
+-- red cattle
+-- lampad
+-- bukavac
+-- random good crossbreed -10
+-- random bad crossbreed -11
+-- 3% good, 97% bad crossbreed -12

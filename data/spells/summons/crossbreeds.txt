@@ -1,0 +1,73 @@
+#neweffect "Raise Foulspawn"
+#effect 1
+#damage -12
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Summon Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
+
+#spelltype 528
+
+#scalerate 0.85
+-- #scalecost 1.0
+#skipchance 50
+#end
+
+#neweffect "Raise Foulspawn Ritual"
+#effect 10001
+#damage -12
+#spec 0
+#power 3
+#nreff 3004
+#pathlevel 1
+#fatiguecost 300
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Summon Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
+
+#spelltype 20
+
+#scalerate 2
+#scalefatiguemult 7
+#end
+
+#neweffect "Remote summon Foulspawn"
+#effect 10038
+#provrange 4
+#damage -12
+#spec 0
+#power 5
+#maxpower 9
+#nreff 3010
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#skipchance 95
+
+#name 64 "Send Foulspawn"
+#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
+
+#spelltype 20
+
+#scalerate 2.0
+#end

@@ -1,0 +1,31 @@
+#neweffect "Arcane Bolt"
+#copyspell "Arcane Bolt"
+#effect 2
+#damage 1008
+#spec 8388752
+#schools 4
+
+#spelltype 18
+
+#scalerate 2
+#scalefatigueexponent -0.5
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 0
+#power 1
+#precision 3
+#maxpower 8
+#pathlevel 2
+#flightspr 10068
+#sound 31
+#fatiguecost 20
+#range 5035
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 16 "Arcane Bolt"
+#descr 16 "The caster fires ARTICLE_N astral %bolt% that %is% deadly for magic beings but harmless for most creatures."
+#end

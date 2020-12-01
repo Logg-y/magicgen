@@ -1,0 +1,68 @@
+#neweffect "Soul Slay"
+#copyspell "Soul Slay"
+#effect 2
+#damage 999
+#spec 8540160
+#schools 32
+#aicastmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 0
+#power 5
+#maxpower 8
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#namecond aoe < 1 16 "Soul Slay"
+
+#namecond2 1 <= aoe < 600 16 "Soul Sundering"
+
+#descr 16 "The caster tries to rip the %soul% of SUBJECT from PRONOUN_POS %body%. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
+
+#end
+
+
+
+#neweffect "Battlefield Soul Slay"
+#copyspell "Soul Slay"
+#effect 2
+#damage 999
+#spec 25575552
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 7
+#explspr 10206
+#sound 41
+#fatiguecost 500
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Mass Soul Rip"
+
+#descr 16 "The caster attempts to rip the souls from all his foes. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
+
+#end

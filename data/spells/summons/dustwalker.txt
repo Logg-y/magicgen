@@ -1,0 +1,115 @@
+#neweffect "Summon dustwalker"
+#effect 1
+#damage 1981
+#spec 0
+#power 6
+#precision -2
+#nreff 3
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 85
+
+#name 32 "Animate Desert Bones"
+#name 8 "Animate Desert Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+#descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+
+#spelltype 528
+
+#scalerate 0.75
+#end
+
+#neweffect "dustwalker ritual"
+#effect 10001
+#damage 1981
+#spec 0
+#power 6
+#nreff 1004
+#pathlevel 5
+#fatiguecost 500
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 75
+
+#name 32 "Animate Desert Bones"
+#name 8 "Animate Desert Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+#descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 90
+
+#scalerate 2
+#end
+
+#neweffect "dustwalker Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1981
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#schools 16
+#skipchance 90
+#nogeodst 2052
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "Desert Bones Attack"
+#name 8 "Desert Bones Attack"
+#descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack an enemy commander in a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+#descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack an enemy commander in a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon dustwalker"
+#effect 10038
+#provrange 4
+#damage 1981
+#spec 0
+#power 6
+#maxpower 9
+#nreff 1006
+#pathlevel 5
+#fatiguecost 400
+#schools 16
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "Send Desert Bones"
+#name 8 "Send Desert Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+#descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 90
+#end

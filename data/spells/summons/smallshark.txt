@@ -1,0 +1,112 @@
+#neweffect "Summon smallshark"
+#effect 1
+#damage 815
+#spec 41959424
+#power 0
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 10
+#sound 31
+#schools 1
+
+#paths 68
+#secondarypaths 68
+
+#skipchance 75
+
+#name 64 "Summon NAMEPREFIX Small %Shark%"
+#name 4 "Summon NAMEPREFIX Small %Shark%"
+#descr 4 "The caster summons ARTICLE small %shark% to fight for him. Their small size and agility makes them difficult to hit, but they are quite ineffective against anything wearing armour."
+#descr 64 "The caster summons ARTICLE small %shark% to fight for him. Their small size and agility makes them difficult to hit, but they are quite ineffective against anything wearing armour."
+
+#spelltype 528
+
+#scalerate 9
+#end
+
+#neweffect "smallshark ritual"
+#effect 10001
+#damage 815
+#spec 41959424
+#power 1
+#nreff 6005
+#pathlevel 1
+#fatiguecost 100
+#schools 1
+
+#paths 68
+#secondarypaths 68
+
+#skipchance 75
+
+#name 64 "Summon NAMEPREFIX Small %Shark%"
+#name 4 "Summon NAMEPREFIX Small %Shark%"
+#descr 4 "The caster summons ARTICLE small %shark% to fight for him. Their small size and agility makes them difficult to hit, but they are quite ineffective against anything wearing armour."
+#descr 64 "The caster summons ARTICLE small %shark% to fight for him. Their small size and agility makes them difficult to hit, but they are quite ineffective against anything wearing armour."
+
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 3
+
+#scalerate 4
+#end
+
+#neweffect "smallshark Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 815
+#spec 41959424
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools 1
+#skipchance 90
+#onlygeodst 2052
+
+#paths 68
+#secondarypaths 68
+
+#name 64 "NAMEPREFIX Small %Shark% Attack"
+#name 4 "NAMEPREFIX Small %Shark% Attack"
+#descr 4 "The caster summons ARTICLE small %shark% to attack a hostile commander in a distant province. Their small size and agility makes them difficult to hit, but they are quite ineffective against victims wearing armour."
+#descr 64 "The caster summons ARTICLE small %shark% to attack a hostile commander in a distant province. Their small size and agility makes them difficult to hit, but they are quite ineffective against victims wearing armour."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon smallshark"
+#effect 10038
+#provrange 4
+#damage 815
+#spec 41959424
+#power 2
+#maxpower 9
+#nreff 6012
+#pathlevel 1
+#fatiguecost 300
+#schools 1
+#onlygeodst 2052
+
+#skipchance 90
+
+#paths 68
+#secondarypaths 68
+
+#name 64 "Send NAMEPREFIX Small %Shark%"
+#name 4 "Send NAMEPREFIX Small %Shark%"
+#descr 4 "The caster summons ARTICLE small %shark% to attack a distant province. Their small size and agility makes them difficult to hit, but they are quite ineffective against victims wearing armour."
+#descr 64 "The caster summons ARTICLE small %shark% to attack a distant province. Their small size and agility makes them difficult to hit, but they are quite ineffective against victims wearing armour."
+
+#spelltype 20
+
+#scalerate 9
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 3
+#end

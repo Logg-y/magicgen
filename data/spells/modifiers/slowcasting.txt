@@ -1,0 +1,60 @@
+-- #newmodifier "Slow Casting"
+-- 
+-- -- any
+-- #spelltype 0
+-- 
+-- #power 1
+-- #skipchance 50
+-- 
+-- #casttime 100
+-- #scalefatigueexponent 0.4
+-- -- not ritual
+-- #req spelltype !& 4
+-- 
+-- -- #descr "This spell is potent, but slow to cast."
+-- 
+-- #end
+
+#newmodifier "Slower Casting"
+
+-- any
+#spelltype 0
+
+#power 1
+#skipchance 50
+
+#aicastmod -50
+
+#mult casttime 2.0
+#mult fatiguecost 1.2
+-- not ritual
+#req spelltype !& 4
+#req fatiguecost < 100
+
+-- #descr "This spell is potent, but very slow to cast."
+
+#end
+
+-- Spells with only a single battlefield wide variant don't suffer anything from fatigue exponent
+-- so this will force such spells to get +1 gem (and likely also +1 path)
+
+#newmodifier "Slower Casting 100fat"
+
+-- any
+#spelltype 0
+
+#aicastmod -50
+
+#power 1
+#skipchance 50
+
+#mult casttime 2.0
+-- not ritual
+#req spelltype !& 4
+#mult fatiguecost 1.4
+#pathlevel 1
+#req fatiguecost >= 100
+
+-- #descr "This spell is potent, but very slow to cast."
+
+#end

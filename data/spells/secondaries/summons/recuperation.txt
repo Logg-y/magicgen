@@ -1,0 +1,20 @@
+#newsecondary "Summon Recuperation"
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#magicpathvaluescaling 0.02
+
+#unitmod "Summon Recuperation"
+#descr "The summoned %creature% %is% imbued with magic that allows it to heal wounds and afflictions over time."
+
+#end

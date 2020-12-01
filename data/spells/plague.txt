@@ -1,0 +1,100 @@
+#neweffect "Lesser Plague"
+#effect 11
+#damage 8
+#spec 545787904
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 1
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10211
+#sound 22
+#fatiguecost 100
+#precision 100
+#range 30
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Plague"
+
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
+
+#descr 32 "The caster attempts to spread a magical plague to a small number of victims. If any fail to resist, it will rapidly spread to anything living nearby."
+
+#end
+
+#neweffect "Greater Plague"
+#effect 11
+#damage 8
+#spec 17592731828224
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 1
+#power 8
+#maxpower 8
+#pathlevel 5
+#explspr 10211
+#sound 22
+#fatiguecost 200
+#precision 100
+#range 30
+
+#paths 32
+#secondarypaths 32
+
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
+
+#name 32 "Pestilent Plague"
+
+#descr 32 "The caster attempts to spread a magical plague to a small number of victims. Resisting it is difficult, upon failure it will rapidly spread to anything living nearby."
+
+#end
+
+#neweffect "Mass Plague"
+#effect 11
+#damage 8
+#spec 562561024
+#schools 32
+
+-- evo
+#spelltype 2
+
+#scalerate 3
+-- #scalecost 1.6
+
+
+-- even 5% of field may be too strong
+#aoe 662
+#power 9
+#maxpower 9
+#pathlevel 6
+#explspr 10211
+#sound 22
+#fatiguecost 600
+#precision 100
+#range 30
+
+#paths 32
+#secondarypaths 32
+
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. This spell strikes 10% of the battlefield."
+
+#name 32 "Contagious Spread"
+
+#descr 32 "The caster attempts to spread a magical plague to the entire battlefield. Those who resist the plague will likely soon catch it from their infected friends."
+
+#end

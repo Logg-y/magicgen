@@ -1,0 +1,26 @@
+#newsecondary "Unlife Dmg"
+
+-- evo only
+#spelltype 2
+
+#skipchance 80
+
+#paths 32
+#power 0
+#scalefatigueexponent 0.3
+#pathperresearch 0.1
+#req effect == 2
+-- not ritual
+#req spelltype !& 4
+
+-- not for holy
+#req paths != 256
+
+-- not demons/undead only
+#req spec !& 8
+
+#set effect 74
+
+#descr "This spell is imbued with dark magic that causes those slain to become reanimated as soulless."
+
+#end

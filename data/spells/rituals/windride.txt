@@ -1,0 +1,22 @@
+#neweffect "Wind Ride"
+#effect 10049
+#provrange 3
+#damage 100
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 1
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Wind Ride"
+#descr 2 "The Air mage summons a whirlwind in a province of his choice. The whirlwind will try to find a commander in the province and transport him one province closer to where the Air mage is located. This spell is an effective way to rescue cornered commanders, but it can also be a very effective way to get enemy commanders out of the way. Creatures may fall from the whirlwind without being moved, else they will certainly fall after being moved a short distance. Being pulled into the caster's province by this spell is however entirely safe. Large or ethereal creatures cannot be lifted, nor can experienced earth mages."
+#details "Picks a random non-stealthy commander in the targeted province to move. This fails and the spell is wasted if the chosen victim is size 6, is ethereal, or has earth 4 or higher. Next, the victim has a size-dependent chance to be moved one province towards the caster (as below) which, if the victim is hostile, is further reduced by 10% for each level they have in Air magic. Finally, if the victim cannot fly and did not finish in the caster's province, they suffer size-dependent magical AN untyped falling damage. The full falling damage is reduced by 5 per level of air magic the target has, and is then halved if the victim was not moved out of their initial province. Some bodyguards of the victim may also be moved, but are never subject to the falling damage.\n\nThe effect of size on the movement chance and the full falling damage is as follows:\n\nSize 1 - 95% - 15\nSize 2 - 95% - 25\nSize 3 - 90% - 30\nSize 4 - 75% - 35\nSize 5 - 50% - 40"
+#spelltype 4
+
+#end

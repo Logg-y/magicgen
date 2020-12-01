@@ -1,0 +1,33 @@
+#neweffect "Polymorph Smite"
+#effect 54
+#damage -9
+#spec 546197504
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10001
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Polymorph"
+#name 2 "Polymorph"
+#name 4 "Polymorph"
+#name 8 "Polymorph"
+#name 16 "Polymorph"
+#name 32 "Polymorph"
+#name 64 "Polymorph"
+#name 128 "Polymorph"
+#name 256 "Polymorph"
+
+#end

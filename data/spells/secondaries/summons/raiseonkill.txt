@@ -1,0 +1,16 @@
+#newsecondary "Summon Raiseonkill"
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+#magicpathvaluescaling 0.05
+
+#unitmod "Summon Raiseonkill"
+#descr "The summoned %creature% may reanimate living creatures as soulless."
+
+#end

@@ -1,0 +1,86 @@
+#neweffect "Cursed Luck"
+#effect 504
+#spec 8667136
+#aoe 1
+#schools -1
+#paths -1
+#damage 255
+#name 16 "Cursed Luck"
+#end
+
+
+#neweffect "Curse"
+#effect 11
+#damage 2
+#spec 8404992
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3.7
+-- #scalecost 0.6
+
+#aoe 1
+#power 2
+#maxpower 7
+#pathlevel 2
+#explspr 10200
+#sound 23
+#range 50
+#fatiguecost 20
+
+
+#paths 144
+#secondarypaths 16
+
+#namecond aoe < 2 16 "Curse"
+#namecond aoe < 2 128 "Infernal Curse"
+
+#namecond aoe >= 2 16 "Curse"
+#namecond aoe >= 2 128 "Infernal Curse"
+
+#namecond aoe >= 660 16 "Doom"
+#namecond aoe >= 660 128 "Infernal Misfortune"
+
+#descr 16 "Lays a permanent curse on SUBJECT, making PRONOUN more likely to suffer permanent wounds. They will temporarily become unlucky, becoming more likely to be hit and hurt."
+#descr 128 "$BLOOD_INTRO$, the caster consorts with infernal power to lay a permanent curse on SUBJECT, making PRONOUN more likely to suffer permanent wounds. They will temporarily become unlucky, becoming more likely to be hit and hurt."
+
+#nextspell "Cursed Luck"
+
+#end
+
+#neweffect "Curse Battlefield"
+#effect 11
+#damage 2
+#spec 8667136
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 4
+-- #scalecost 0.5
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 4
+#explspr 10200
+#sound 23
+#range 50
+#fatiguecost 200
+
+
+#paths 144
+#secondarypaths 16
+
+#namecond aoe >= 660 16 "Doom"
+#namecond aoe >= 660 128 "Infernal Misfortune"
+
+#descr 16 "Permanently curses the enemy army, making them more likely to suffer afflictions. Additionally, removes any good luck and makes them more likely to be hit and hurt for the next few rounds of combat."
+#descr 128 "$BLOOD_INTRO$, the caster consorts with infernal power to curse the whole enemy army, making them more likely to suffer afflictions. Additionally, removes any good luck and makes them more likely to be hit and hurt for the next few rounds of combat."
+
+#nextspell "Cursed Luck"
+
+#end

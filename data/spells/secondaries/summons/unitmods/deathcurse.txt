@@ -1,0 +1,7 @@
+#newunitmod "Summon Deathcurse"
+#req deathcurse == -1
+#req spiritsight == -1
+#set deathcurse 1
+#nameprefix "Cursebearing"
+#descr "This particular CREATURE carries a curse which will be placed on the creature that kills it."
+#end

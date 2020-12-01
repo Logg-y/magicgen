@@ -1,0 +1,27 @@
+#neweffect "vampire ritual"
+#effect 10001
+#damage 405
+#spec 0
+#power 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 900
+#schools 1
+
+#paths 128
+#secondarypaths 32
+#secondarypathchance 95
+
+#name 128 "Summon %Vampire%"
+#descr 128 "$BLOOD_INTRO$, the caster curses ARTICLE %human% with vampirism. They become immortal and highly resistant to normal weapons."
+
+#spelltype 20
+
+#skipchance 10
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 820
+
+#scalerate 2
+#end
+

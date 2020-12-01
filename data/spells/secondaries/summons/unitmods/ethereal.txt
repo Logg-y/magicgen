@@ -1,0 +1,6 @@
+#newunitmod "Summon Ethereal"
+#req ethereal == -1
+#set ethereal 1
+#nameprefix "Ethereal"
+#descr "This particular CREATURE has been altered by magic, making it able to pass through obstacles and difficult to strike with mundane weaponry."
+#end

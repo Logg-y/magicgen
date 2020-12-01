@@ -1,0 +1,29 @@
+#neweffect "Summon Shadow Imp"
+
+#effect 10021
+#damage 2287
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#chassisvalue 30
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 128
+#secondarypaths 128
+
+
+#name 128 "Summon NAMEPREFIX Shadow Imp"
+#descr 128 "$BLOOD_INTRO$, the caster summons a Shadow Imp. Shadow Imps are stealthy and are good at scouting."
+
+#spelltype 20
+
+#scalerate 1
+#end

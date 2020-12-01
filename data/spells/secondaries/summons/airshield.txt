@@ -1,0 +1,31 @@
+#newsecondary "Summon airshield lesser"
+
+#anysummon 1
+
+#paths 2
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Airshield Lesser"
+#descr "The summoned %creature% %is% surrounded by winds which protect %it% from missiles."
+
+#end
+
+#newsecondary "Summon airshield"
+
+#anysummon 1
+
+#paths 2
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Airshield"
+#descr "The summoned %creature% %is% surrounded by winds which protect %it% from missiles."
+
+#end

@@ -1,0 +1,61 @@
+#neweffect "Call Revenant"
+
+#effect 21
+#damage 396
+#spec 0
+#power 3
+#precision -100
+#nreff 1
+#pathlevel 2
+#chassisvalue 5
+#range 6
+#fatiguecost 40
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX %Revenant%"
+#descr 32 "The death mage summons ARTICLE %Revenant% to join him in battle. The %Revenant% will leave once the battle is over."
+
+#scalefatiguemult 40
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Revenant"
+
+#effect 10021
+#damage 396
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 700
+#chassisvalue 20
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 0
+
+#paths 32
+#secondarypaths 32
+
+
+#name 32 "Summon NAMEPREFIX Revenant"
+#descr 32 "The death mage summons a revenant. Revenants are corpses possessed by underworld spirits and have slight skill in death magic."
+
+#spelltype 20
+
+#scalerate 1
+#end
+

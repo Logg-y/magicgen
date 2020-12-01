@@ -1,0 +1,104 @@
+#neweffect "Summon shadowimp"
+#effect 1
+#damage 2287
+#spec 0
+#power 1
+#precision -2
+#nreff 1003
+#pathlevel 1
+#fatiguecost 100
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths 128
+
+#skipchance 60
+
+#name 128 "Summon NAMEPREFIX Shadow Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several shadow imps from Inferno to aid him in battle. These imps cannot fly, but become more powerful in darkness."
+
+#spelltype 528
+
+#scalerate 1.1
+#scalefatiguemult 15
+#end
+
+#neweffect "shadowimp ritual"
+#effect 10001
+#damage 2287
+#spec 0
+#power 2
+#nreff 1001
+#pathlevel 2
+#fatiguecost 600
+#schools 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Summon NAMEPREFIX Shadow Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several shadow imps from Inferno to aid him in battle. These imps cannot fly, but become more powerful in darkness."
+
+#spelltype 20
+
+#skipchance 90
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 55
+
+#scalerate 2
+#end
+
+#neweffect "shadowimp Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2287
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "NAMEPREFIX Shadow Imp Attack"
+#descr 128 "$BLOOD_INTRO$, the caster binds a shadow imp to ambush an enemy commander. These imps cannot fly, but become more powerful in darkness."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote shadowimps"
+#effect 10038
+#provrange 4
+#damage 2287
+#spec 0
+#power 3
+#maxpower 9
+#nreff 1010
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 35
+
+#name 128 "Send NAMEPREFIX Shadow Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons a group of shadow imps to attack a distant province. These imps cannot fly, but become more powerful in darkness."
+
+#spelltype 20
+
+#scalerate 2
+#end

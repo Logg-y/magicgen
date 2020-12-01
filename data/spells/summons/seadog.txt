@@ -1,0 +1,107 @@
+#neweffect "Summon seadog"
+#effect 1
+#damage 1064
+#spec 8388608
+#power 1
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 10
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Sea %Dog%"
+#descr 64 "The caster summons ARTICLE sea %dog%. Sea dogs are amphibious creatures that bite their enemies."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "seadog ritual"
+#effect 10001
+#damage 1064
+#spec 41959424
+#power 2
+#nreff 3005
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Sea %Dog%"
+#descr 64 "The caster summons ARTICLE sea %dog%. Sea dogs are amphibious creatures that bite their enemies."
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 15
+
+#scalerate 4
+#end
+
+#neweffect "seadog Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1064
+#spec 41959424
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#onlygeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Sea Dog Attack"
+#descr 64 "The caster summons ARTICLE sea %dog% to ambush a hostile commander in a distant province. Sea dogs are amphibious creatures that bite their enemies."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote seadog"
+#effect 10038
+#provrange 4
+#damage 1064
+#spec 41959424
+#power 4
+#maxpower 9
+#nreff 3011
+#pathlevel 3
+#fatiguecost 200
+#schools 1
+#onlygeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 15
+
+#name 64 "Send NAMEPREFIX Sea %Stag%"
+#descr 64 "The caster summons ARTICLE sea %dog% to attack a distant province. Sea dogs are amphibious creatures that bite their enemies."
+
+#spelltype 20
+
+#scalerate 4
+#end

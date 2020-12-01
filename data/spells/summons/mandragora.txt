@@ -1,0 +1,102 @@
+#neweffect "Summon mandragora"
+#effect 1
+#damage 314
+#spec 8388608
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 50
+#scalefatiguemult 20
+#sound 43
+#schools 16
+
+#paths 32
+#secondarypaths 64
+
+#skipchance 75
+
+#name 32 "Raise NAMEPREFIX Mandragora"
+#descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."
+
+#spelltype 528
+
+#scalerate 2
+#end
+
+#neweffect "mandragora ritual"
+#effect 10001
+#damage 314
+#spec 8388608
+#power 5
+#nreff 1004
+#pathlevel 3
+#fatiguecost 600
+#schools 16
+
+#paths 32
+#secondarypaths 64
+
+#skipchance 75
+
+#name 32 "Raise NAMEPREFIX Mandragora"
+#descr 32 "The caster enchants the bones of ARTICLE long dead %human% and enchants vines to control them. The resulting beings may put the living to sleep with their magical vines."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+
+#scalerate 2
+#end
+
+#neweffect "mandragora Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 314
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 16
+#skipchance 90
+
+#paths 32
+#secondarypaths 64
+
+#name 32 "NAMEPREFIX Mandragora Ambush"
+#descr 32 "The caster enchants the bones of a long dead human and enchants vines to control them. The newly summoned mandragora then seeks out and attacks an enemy commander in the targeted province. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon Mandragora"
+#effect 10038
+#provrange 4
+#damage 314
+#spec 8388608
+#power 6
+#maxpower 9
+#nreff 1006
+#pathlevel 4
+#fatiguecost 400
+#schools 16
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Raise NAMEPREFIX Mandragora"
+#descr 32 "The caster enchants the bones of ARTICLE long dead %human%, enchants vines to control them, and sends them to a distant province. The resulting beings may put the living to sleep with their magical vines."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end

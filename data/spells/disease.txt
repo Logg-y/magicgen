@@ -1,0 +1,61 @@
+#neweffect "DiseaseThings"
+#effect 11
+#damage 1
+#spec 545796096
+#aoe 1
+#power 1
+#maxpower 7
+#precision 2
+#range 30
+#pathlevel 1
+#fatiguecost 30
+#explspr 10199
+#sound 42
+#paths 97
+#secondarypaths 97
+#secondarypathchance 80
+#name 1 "Fever"
+#name 32 "Deathly Fever"
+#name 64 "Deathly Fever"
+
+#descr 1 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr 32 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr 64 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 2
+-- #scalecost 0.3
+#schools 32
+#end
+
+#neweffect "Mass Disesae"
+#effect 11
+#damage 1
+#spec 562569216
+#aoe 666
+#power 8
+#maxpower 8
+#precision 2
+#range 30
+#pathlevel 5
+#fatiguecost 200
+#explspr 10199
+#sound 42
+#paths 97
+#secondarypaths 97
+#secondarypathchance 80
+#name 1 "Mass Fever"
+#name 32 "Mass Deathly Fever"
+#name 64 "Mass Deathly Fever"
+
+#descr 1 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr 32 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr 64 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 2
+-- #scalecost 0.3
+#schools 32
+#end

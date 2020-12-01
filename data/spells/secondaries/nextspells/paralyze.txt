@@ -1,0 +1,96 @@
+#neweffect "Minor Paralysis"
+#effect 66
+#damage 2008
+#spec 8540288
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10205
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Minor Paralysis"
+#name 2 "Minor Paralysis"
+#name 4 "Minor Paralysis"
+#name 8 "Minor Paralysis"
+#name 16 "Minor Paralysis"
+#name 32 "Minor Paralysis"
+#name 64 "Minor Paralysis"
+#name 128 "Minor Paralysis"
+#name 256 "Minor Paralysis"
+
+#end
+
+#neweffect "Greater Paralysis"
+#effect 66
+#damage 3015
+#spec 8540288
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10205
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "$Additional$ Paralysis"
+#name 2 "$Additional$ Paralysis"
+#name 4 "$Additional$ Paralysis"
+#name 8 "$Additional$ Paralysis"
+#name 16 "$Additional$ Paralysis"
+#name 32 "$Additional$ Paralysis"
+#name 64 "$Additional$ Paralysis"
+#name 128 "$Additional$ Paralysis"
+#name 256 "$Additional$ Paralysis"
+
+#end
+
+
+#neweffect "Greater Paralysis Smite"
+#effect 66
+#damage 3020
+#spec 8540288
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#explspr 10205
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "$Additional$ Paralysis"
+#name 2 "$Additional$ Paralysis"
+#name 4 "$Additional$ Paralysis"
+#name 8 "$Additional$ Paralysis"
+#name 16 "$Additional$ Paralysis"
+#name 32 "$Additional$ Paralysis"
+#name 64 "$Additional$ Paralysis"
+#name 128 "$Additional$ Paralysis"
+#name 256 "$Additional$ Paralysis"
+
+#end

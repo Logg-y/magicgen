@@ -1,0 +1,47 @@
+#newsecondary "Summon DmgVsUndead"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 3
+
+#unitmod "Summon DmgVsUndead"
+#descr "The weapons used by the summoned %creature% are imbued with holy power and are especially effective against undead or demonic beings."
+
+#end
+
+#newsecondary "Summon DmgVsMagic"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2
+
+#unitmod "Summon DmgVsMagic"
+#descr "The weapons used by the summoned %creature% are imbued with astral power and especially effective against magic beings."
+
+#end
+
+#newsecondary "Summon DmgVsDemonsOnly"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.5
+
+#unitmod "Summon DmgVsDemonsOnly"
+#descr "The weapons used by the summoned %creature% are imbued with holy power and are especially effective against demonic beings."
+
+#end

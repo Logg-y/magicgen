@@ -1,0 +1,34 @@
+#neweffect "Petrification"
+#effect 99
+#damage 999
+#spec 8388736
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+-- #scalecost 0.7
+
+#aoe 0
+#power 5
+#pathlevel 4
+#explspr 10121
+#sound 45
+#fatiguecost 35
+#range 5010
+#precision 100
+
+#paths 8
+#secondarypaths 8
+
+#namecond aoe == 0 8 "Petrification"
+#namecond2 1 < aoe < 20 8 "Petrify Group"
+#namecond aoe >= 20 8 "Mass Petrification"
+
+#details "Petrified targets have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#descr 8 "The caster temporarily turns creatures within a SIZE area to stone. There is no resisting this effect. Instead of reverting to their original form, petrified creatures may crumble to dust."
+
+#end
+

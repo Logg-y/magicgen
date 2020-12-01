@@ -1,0 +1,352 @@
+#newmodifier "Touch Range Damage"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#set precision 100
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- something that is instantaneously killy
+#req effect == 2
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+
+#newmodifier "Touch Range Unlifedamage"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- something that is instantaneously killy
+#req effect == 74
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#set flightspr -1
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+#end
+
+#newmodifier "Touch Range Lifedrain"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- something that is instantaneously killy
+#req effect == 103
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Paralyze"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 66
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Falsefetters"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 11
+#req damage == 131072
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Earthmeld"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 11
+#req damage == 16384
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Enslave"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 28
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Charm"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+#set precision 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 29
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Sleep"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+#set precision 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#aicastmod 40
+
+#skipchance 70
+
+#req effect == 11
+#req effect == 1024
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+
+#newmodifier "Touch Range Fascination"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+#set precision 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#skipchance 70
+#aicastmod 40
+
+#req effect == 128
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Forced Returning"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#casttime -75
+#aicastmod 40
+#req2 10 <= nonscalingrange <= 100
+#set precision 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#skipchance 70
+
+#req effect == 15
+#req spec == 17592194711680
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Blink Enemies"
+
+-- evo only
+#spelltype 2
+
+#power 2
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+#set precision 100
+-- not ritual
+#req spelltype !& 4
+#set flightspr -1
+#nobattlefield
+#skipchance 70
+#aicastmod 40
+
+#req effect == 20
+#req spec == 8667136
+
+#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+
+-- #descr "This spell has a devastating effect but a shorter range."
+
+#end

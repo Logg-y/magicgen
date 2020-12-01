@@ -1,0 +1,27 @@
+#newmodifier "Lowered Path"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 10
+-- not battlesummoned commander
+#req effect != 21
+
+#pathlevel -1
+#power -2
+
+#end
+
+#newmodifier "Lowered Path 2"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 10
+-- not battlesummoned commander
+#req effect != 21
+
+#pathlevel -2
+#power -4
+
+#end

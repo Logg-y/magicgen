@@ -1,0 +1,29 @@
+#neweffect "Life for a Life"
+#effect 2
+#damage 5005
+#spec 536887424
+#schools 2
+
+#spelltype 66
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 5
+#maxpower 9
+#pathlevel 2
+#sound 18
+#fatiguecost 100
+#precision 100
+#range 100
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Life for a Life"
+#descr 128 "The Blood mage sacrifices a virgin and in exchange one of his foes on the battlefield is slain. Inanimate beings are immune to this spell, everyone else will take severe and irresistible damage from it."
+
+
+#end

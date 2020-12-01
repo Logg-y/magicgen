@@ -1,0 +1,13 @@
+#newunitmod "Summon Shockweapon"
+#weaponmod "Shockweapon"
+#shockres 5
+#nameprefix "Shocking"
+#descr "This particular CREATURE is filled with electricity and shocks enemies it strikes."
+#end
+
+#newunitmod "Summon Chainshockweapon"
+#weaponmod "Chainshockweapon"
+#shockres 6
+#nameprefix "Shocking"
+#descr "This particular CREATURE is filled with electricity and shocks enemies it strikes. The charge then leaps to other nearby targets."
+#end

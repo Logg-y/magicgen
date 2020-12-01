@@ -1,0 +1,116 @@
+#neweffect "Summon magmachild"
+#effect 1
+#damage 640
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 50
+#scalefatiguemult 20
+#sound 31
+#schools 1
+
+#paths 9
+#secondarypaths 9
+#secondarypathchance 50
+
+#skipchance 75
+
+#name 8 "Summon NAMEPREFIX Magma %Child%"
+#name 1 "Summon NAMEPREFIX Magma %Child%"
+#descr 8 "The caster summons ARTICLE magma %child% to fight for him. Magma children are beings of magma that serve Rhuax."
+#descr 1 "The caster summons ARTICLE magma %child% to fight for him. Magma children are beings of magma that serve Rhuax."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "magmachild ritual"
+#effect 10001
+#damage 640
+#spec 0
+#power 4
+#nreff 2001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 9
+#secondarypaths 9
+#secondarypathchance 50
+
+#skipchance 75
+
+#name 8 "Summon NAMEPREFIX Magma %Child%"
+#name 1 "Summon NAMEPREFIX Magma %Child%"
+#descr 8 "The caster summons ARTICLE magma %child% to fight for him. Magma children are beings of magma that serve Rhuax."
+#descr 1 "The caster summons ARTICLE magma %child% to fight for him. Magma children are beings of magma that serve Rhuax."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+
+#scalerate 4
+#end
+
+#neweffect "magmachild Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 640
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 9
+#secondarypaths 9
+#secondarypathchance 50
+
+#name 8 "NAMEPREFIX Magma Child Ambush"
+#name 1 "NAMEPREFIX Magma Child Ambush"
+#descr 1 "The caster summons ARTICLE magma %child% to ambush a commander in a distant land. Magma children are beings of magma that serve Rhuax."
+#descr 8 "The caster summons ARTICLE magma %child% to ambush a commander in a distant land. Magma children are beings of magma that serve Rhuax."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon magmachild"
+#effect 10038
+#provrange 4
+#damage 640
+#spec 0
+#power 4
+#maxpower 9
+#nreff 2003
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 9
+#secondarypaths 9
+#secondarypathchance 50
+
+#name 8 "Send NAMEPREFIX Magma %Child%"
+#name 1 "Send NAMEPREFIX Magma %Child%"
+#descr 8 "The caster summons ARTICLE magma %child% to attack a distant land. Magma children are beings of magma that serve Rhuax."
+#descr 1 "The caster summons ARTICLE magma %child% to attack a distant land. Magma children are beings of magma that serve Rhuax."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

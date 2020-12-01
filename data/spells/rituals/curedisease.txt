@@ -1,0 +1,21 @@
+#neweffect "Cure Disease"
+#copyspell "Cure Disease"
+#effect 10131
+#damage 1
+#spec 545259520
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#schools 32
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Cure Disease"
+#descr 64 "This ritual cures a unit from disease, an affliction that otherwise is certain to result in a quick and early death. The target unit must be in the same province as the caster."
+
+#spelltype 4
+#end

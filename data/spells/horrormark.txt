@@ -1,0 +1,133 @@
+#neweffect "Horror Mark Single Target"
+#effect 600
+#damage 261
+#spec 8536064
+#schools 32
+
+-- evo, scale effect number
+#spelltype 258
+
+#scalerate 2
+#scalefatigueexponent -0.25
+-- #scalecost 0.6
+
+#aoe 0
+#power 1
+#maxpower 9
+#pathlevel 2
+#explspr 10201
+#sound 28
+#range 50
+#fatiguecost 20
+#precision 100
+
+#skipchance 50
+
+
+#paths 144
+#secondarypaths 16
+
+#namecond aoe < 2 16 "Horror Mark"
+#namecond aoe < 2 128 "Mark from Beyond"
+
+#descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+#descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+
+#descrcond2 605 <= effect <= 615 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is moderate in strength and will attract only slight attention."
+#descrcond2 605 <= effect <= 615 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is moderate in strength and will attract only slight attention."
+
+#descrcond2 616 <= effect <= 635 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong and will attract moderate attention."
+#descrcond2 616 <= effect <= 635 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong and will attract moderate attention."
+
+#descrcond2 636 <= effect <= 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong, the %victim% can expect otherworldly visits within months."
+#descrcond2 636 <= effect <= 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong, the %victim% can expect otherworldly visits within months."
+
+#descrcond effect > 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
+#descrcond effect > 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks.  The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
+#details "The target gains EFFECTNUMBER_ADDITIVE horror mark(s)."
+
+#end
+
+#neweffect "Horror Mark AoE"
+#effect 600
+#damage 261
+#spec 8536064
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 8
+-- #scalecost 0.1
+
+#aoe 1
+#power 2
+#maxpower 4
+#pathlevel 2
+#explspr 10201
+#sound 28
+#range 50
+#fatiguecost 20
+#precision 100
+
+#skipchance 50
+
+
+#paths 144
+#secondarypaths 16
+
+#namecond aoe < 2 16 "Horror Mark"
+#namecond aoe < 2 128 "Mark from Beyond"
+
+#namecond aoe >= 2 16 "Horror Marks"
+#namecond aoe >= 2 128 "Marks from Beyond"
+
+#descr 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+#descr 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+#details "The targets gain one horror mark."
+#end
+
+#neweffect "Horror Mark AoE Stronger"
+#effect 600
+#damage 261
+#spec 8536064
+#schools 32
+
+-- evo, scale effect number
+#spelltype 258
+
+#scalerate 1.5
+-- #scalecost 1
+
+#aoe 666
+#power 5
+#maxpower 9
+#pathlevel 4
+#explspr 10201
+#sound 28
+#range 50
+#fatiguecost 100
+
+
+#paths 144
+#secondarypaths 16
+
+#namecond aoe >= 2 16 "Horror Marks"
+#namecond aoe >= 2 128 "Marks from Beyond"
+
+#descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+#descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
+
+#descrcond2 605 <= effect <= 615 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is moderate in strength and will attract only slight attention."
+#descrcond2 605 <= effect <= 615 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is moderate in strength and will attract only slight attention."
+
+#descrcond2 616 <= effect <= 635 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong and will attract moderate attention."
+#descrcond2 616 <= effect <= 635 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong and will attract moderate attention."
+
+#descrcond2 636 <= effect <= 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong, the %victim% can expect otherworldly visits within months."
+#descrcond2 636 <= effect <= 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is strong, the %victim% can expect otherworldly visits within months."
+
+#descrcond effect > 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
+#descrcond effect > 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks.  The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
+#details "The targets gain EFFECTNUMBER_ADDITIVE horror mark(s)."
+#end

@@ -1,0 +1,324 @@
+#neweffect "Ironwalls"
+#copyspell "Iron Walls"
+#effect 10082
+#damage 69
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 1000
+#schools 2
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Iron Walls"
+#descr 8 "The caster transforms the stone walls of a castle into iron walls, making it almost impregnable. The enchantment will end if the caster is killed."
+#details "Fort defence increase: 1000 points. Lasts 1 turn, plus an extra turn for every additional gem spent."
+
+#spelltype 4
+#end
+
+#neweffect "Trade Wind"
+#copyspell "Trade Wind"
+#effect 10082
+#damage 95
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 16
+
+#paths 2
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Trade Wind"
+#descr 2 "The caster creates a perpetual stable wind in a coastal province that enables merchants to quickly sail to and from the province. The trade wind will increases the income from the province. The enchantment will dissipate if the province is lost."
+#details "Coastal province income +25%. Lasts 1 turn, plus an extra turn for every additional gem spent."
+
+#spelltype 4
+#end
+
+
+#neweffect "Vafur Flames"
+#copyspell "Vafur Flames"
+#effect 10082
+#damage 73
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 16
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Vafur Flames"
+#descr 1 "This spell recreates the legendary enchantment of Asgård. The fortress is surrounded by a ring wall of enchanted flames. The flames are able to read the intentions of those who approach and will let friends pass safely through. Flying or ethereal beings are able to through the flames."
+#details "If the fort is stormed, creates a wall of flames several squares in front of the walls. Enemies entering squares in the wall take 15AP fire damage. Lasts 1 turn, plus an extra turn for every additional gem spent."
+
+#spelltype 4
+#end
+
+#neweffect "Vafur Flames Permanent"
+#copyspell "Vafur Flames"
+#effect 10084
+#damage 73
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1000
+#schools 16
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Vafur Flames"
+#descr 1 "This spell recreates the legendary enchantment of Asgård. The fortress is surrounded by a ring wall of enchanted flames. The flames are able to read the intentions of those who approach and will let friends pass safely through. Flying or ethereal beings are able to through the flames. The effect of this spell is permanent."
+#details "If the fort is stormed, creates a wall of flames several squares in front of the walls. Enemies entering squares in the wall take 15AP fire damage."
+
+#spelltype 4
+#end
+
+
+#neweffect "Infernal Circle"
+#copyspell "Infernal Circle"
+#effect 10082
+#damage 89
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 16
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 128 "Infernal Circle"
+#descr 128 "The caster creates a circle with infernal symbols drawn in the blood of virgins. Blood rituals cast from the circle with have their range increased."
+#details "Increases blood ritual range by one province. Lasts 1 turn, plus an extra turn for every additional gem spent."
+
+#spelltype 4
+#end
+
+#neweffect "Blood Fecundity"
+#copyspell "Blood Fecundity"
+#effect 10082
+#damage 67
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 1000
+#schools 16
+
+#paths 128
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 128 "Blood Fecundity"
+#descr 128 "The mage performs a great blood ceremony in order to increase the fertility of the land. The growth scale of the province will be increased for as long as the ritual lasts."
+#details "Increases growth by 2. Lasts 1 turn, plus an extra turn for every additional gem spent."
+#end
+
+#neweffect "Blood Fecundity nonblood"
+#copyspell "Blood Fecundity"
+#effect 10082
+#damage 67
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 16
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Rite of Fertility"
+#descr 64 "The mage performs a great rite in order to increase the fertility of the land. The growth scale of the province will be increased for as long as the ritual lasts."
+#details "Increases growth by 2. Lasts 1 turn, plus an extra turn for every additional gem spent."
+
+#spelltype 4
+#end
+
+
+#neweffect "Lion Sentinels"
+#copyspell "Lion Sentinels"
+#effect 10084
+#damage 105
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 1000
+#schools 16
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Lion Sentinels"
+#descr 8 "The caster sculpts eleven statues of lions and enchants them with powerful magic. Ten of them are placed outside the castle walls and the eleventh on the courtyard. Order and prosperity flowers as the lions sentinels protect the inhabitants and guard them from harm. Should the castle be attacked the lions will come to life and attack the besieging army. The lions are magical beings and require magical leadership. Should the lion in the courtyard be destroyed the lions will crumble, unless a mage can take command over the remaining lions."
+#details "Eleven Marble Lions guard the fortress if the castle is stormed, starting battle just outside the walls. The enchantment also increases the order scale by +1."
+
+#spelltype 4
+#end
+
+
+
+#neweffect "Frost Dome"
+#copyspell "Frost Dome"
+#effect 10082
+#damage 62
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 16
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 4 "Frost Dome"
+#descr 4 "A frost dome is created over the entire province where the spell is cast. Any spells cast into this dome will trigger the deadly trap. A powerful frost blast will find its way to the enemy mage and freeze him to death. Every spell cast into the dome has a 30 percent chance of being destroyed by the frost dome. The more magic gems put into the spell, the longer it will last. If the mage who cast the dome dies, it will dissolve instantly."
+#details "Dome Protection: 30%. Dome Trap: d15 AN cold dmg. Friendly spells will also be blocked."
+
+#spelltype 4
+#end
+
+#neweffect "Forest Dome"
+#copyspell "Forest Dome"
+#effect 10084
+#damage 66
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 700
+#schools 16
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Forest Dome"
+#descr 4 "Vegetation will grow into a dome that covers the entire province where the spell is cast. The dome will protect the province from many spells that originate outside the warded province. If left undisturbed, the forest dome will last forever. However, if a Fire spell is absorbed by the dome, it may catch fire and be destroyed. If the caster dies, the dome will wither and die."
+#details "Dome Protection 30%. Destroyed by Fire Spells. Friendly spells will also be blocked."
+
+#spelltype 4
+#end
+
+#neweffect "Dome of Solid Air"
+#copyspell "Dome of Solid Air"
+#effect 10084
+#damage 61
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 1700
+#schools 16
+
+#paths 2
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Dome of Solid Air"
+#descr 2 "A dome made out of air is created over the entire province the mage is in. The dome will protect the province from many spells that originate outside the warded province. While undisturbed, the spell will last indefinitely, but if a spell passes through the dome, or if the mage who cast the dome dies, it will shatter instantly."
+#details "Dome Protection 80%. Destroyed if it fails to block a spell. Friendly spells will also be blocked."
+
+#spelltype 4
+#end
+
+#neweffect "Dome of Flaming Death"
+#copyspell "Dome of Flaming Death"
+#effect 10082
+#damage 60
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 16
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Dome of Flaming Death"
+#descr 1 "An invisible web of Fire magic is created over the entire province where this spell is cast. Any enemy spells cast into the protected province will trigger the deadly trap. A powerful blast of fire will find its way to the enemy mage and burn him and possibly also the laboratory to cinders. The more magic gems put into the spell, the longer the dome lasts. If the mage who cast the dome dies, the dome dissolves instantly. The dome does not stop enemy spells that pass through it, but it may stop the enemy mage from ever casting spells again."
+#details "Dome Trap: 2d20 AP fire dmg. The luck scale of the receiving province reduces the chance of having the laboratory burnt down."
+
+#spelltype 4
+#end
+
+#neweffect "Dome of Corruption"
+#copyspell "Dome of Corruption"
+#effect 10082
+#damage 67
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 1500
+#schools 16
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 90
+
+#name 128 "Dome of Corruption"
+#descr 128 "The caster seals a pact with Horrors. The Horrors create a dome that protects the province from most spells that originate from outside the warded province. Trying to cast a spell through this dome is very dangerous and might drive the casting mage insane. A good side effects of the dome is that it exudes magic and will raise the magic scales of the province considerably, making it easy for mages to do their research. The pact has a downside too, which will become apparent to mages living under the dome. The creators of the dome will occasionally attack and consume a mage. The dome will dissolve instantly if the caster of this ritual dies."
+#details "Dome Protection: 75%. Dome Trap: Feeblemind, magic resistance negates. Magic Scale +2. Friendly spells will also be blocked."
+
+#spelltype 4
+#end
+
+#neweffect "Dome of Arcane Warding"
+#copyspell "Dome of Arcane Warding"
+#effect 10082
+#damage 64
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 900
+#schools 16
+
+#paths 16
+#secondarypaths 16
+#secondarypathchance 90
+
+#name 16 "Dome of Arcane Warding"
+#descr 128 "An astral dome is created over the entire province that the mage is located in. The dome will protect the province from many spells that originate from outside the warded province. The more magic gems put into the spell, the longer it will last. If the mage dies, the dome dissolves instantly. The dome has a 50 percent chance of stopping each spell that tries to pass through it."
+#details "Dome Protection: 50%. Friendly spells will also be blocked."
+
+#spelltype 4
+#end

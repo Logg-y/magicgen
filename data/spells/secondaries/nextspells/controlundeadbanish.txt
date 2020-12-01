@@ -1,0 +1,44 @@
+#neweffect "Control Undead Secondary"
+#effect 28
+#damage 999
+#spec 17592463130760
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 1
+#pathlevel 1
+#explspr 10207
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Command Undead"
+#name 2 "Command Undead"
+#name 4 "Command Undead"
+#name 8 "Command Undead"
+#name 16 "Command Undead"
+#name 32 "Command Undead"
+#name 64 "Command Undead"
+#name 128 "Command Undead"
+#name 256 "Command Undead"
+
+#name 1 "Control Undead"
+#name 2 "Control Undead"
+#name 4 "Control Undead"
+#name 8 "Control Undead"
+#name 16 "Control Undead"
+#name 32 "Control Undead"
+#name 64 "Control Undead"
+#name 128 "Control Undead"
+#name 256 "Control Undead"
+
+
+#end

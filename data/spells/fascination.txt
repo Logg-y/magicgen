@@ -1,0 +1,34 @@
+#neweffect "Fascination"
+#effect 128
+#damage 100
+#spec 8540288
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 4.3
+-- #scalecost 0.6
+#scalefatigueexponent -0.2
+
+#aoe 0
+#power -1
+#maxpower 6
+#pathlevel 1
+#explspr 10207
+#sound 42
+#fatiguecost 10
+#range 5010
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe < 666 64 "Fascination"
+
+#namecond aoe >= 666 64 "Fascinate Army"
+
+#descr 64 "The caster tries to project images and scents in the consciousness of SUBJECT. Should it succeed PRONOUN will be distracted for a short while and hopefully enable someone to strike the enemy down."
+#details "Those that fail to resist are stunned for a round."
+
+#end
+

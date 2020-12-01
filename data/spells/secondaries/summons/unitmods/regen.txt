@@ -1,0 +1,7 @@
+#newunitmod "Summon Regen"
+#req regeneration == -1
+#req hp > 10
+#set regeneration 10
+#nameprefix "Regenerating"
+#descr "This particular CREATURE has been filled with magical energy which rapidly heals wounds it suffers."
+#end

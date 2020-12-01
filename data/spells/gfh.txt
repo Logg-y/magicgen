@@ -1,0 +1,35 @@
+#neweffect "Gifts from Heaven"
+#copyspell "Gifts from Heaven"
+#effect 2
+#damage 150
+#spec 549755813888
+#aoe 1
+#power 4
+#maxpower 9
+#precision -3
+#nreff 1
+#range 100
+#pathlevel 4
+#fatiguecost 40
+#sound 89
+
+-- F S E
+#paths 25
+#secondarypaths 25
+
+#skipflightspr 1
+
+#name 1 "Fiery %Comet%"
+#name 8 "%Rock% from the Heavens"
+#name 16 "%Gift% from Heaven"
+#descr 1 "The caster alters the trajectory of ARTICLE %comet% from above the world, sending the %comet% toward his enemies. Being hit by ARTICLE %comet% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
+#descr 8 "The caster alters the trajectory of ARTICLE %rock% from above the world, sending the %rock% toward his enemies. Being hit by ARTICLE %rock% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
+#descr 16 "The caster alters the trajectory of ARTICLE %meteor% from above the world, sending the %meteor% toward his enemies. Being hit by ARTICLE %meteor% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
+
+#spelltype 18
+
+#scalerate 0.7
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+#end

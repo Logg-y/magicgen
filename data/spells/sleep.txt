@@ -1,0 +1,65 @@
+#neweffect "Sleep"
+#effect 11
+#damage 1024
+#spec 545935488
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 2
+#maxpower 6
+#pathlevel 2
+#explspr 10016
+#sound 29
+#fatiguecost 20
+#precision 100
+#range 35
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe < 1 64 "Sleep"
+
+#namecond2 1 < aoe < 5 64 "Wave of Slumber"
+#namecond2 5 < aoe < 600 64 "Slumbering Squadron"
+#namecond2 600 < aoe < 700 64 "Mass Slumber"
+
+#descr 64 "The caster attempts to put SUBJECT into a magically induced sleep."
+
+#end
+
+#neweffect "Battlefield Sleep"
+#effect 11
+#damage 1024
+#spec 25575552
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 5
+#explspr 10016
+#sound 29
+#fatiguecost 300
+#precision 100
+#range 100
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Mass Slumber"
+
+#descr 64 "The caster attempts to put all his foes into a magically induced sleep."
+
+#end

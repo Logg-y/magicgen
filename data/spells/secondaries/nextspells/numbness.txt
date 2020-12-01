@@ -1,0 +1,31 @@
+#neweffect "Additional Freezing"
+#effect 11
+#damage 268435456
+#spec 8405504
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#pathlevel 1
+#explspr 10134
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Freezing"
+#name 2 "$Additional$ Freezing"
+#name 4 "$Additional$ Freezing"
+#name 8 "$Additional$ Freezing"
+#name 16 "$Additional$ Freezing"
+#name 32 "$Additional$ Freezing"
+#name 64 "$Additional$ Freezing"
+#name 128 "$Additional$ Freezing"
+#name 256 "$Additional$ Freezing"
+
+#end

@@ -1,0 +1,33 @@
+#newsecondary "Summon Shockweapon"
+
+#anysummon 1
+
+#paths 2
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.2
+
+#req trample == -1
+#unitmod "Summon Shockweapon"
+#descr "The summoned %creature% %is% able to shock enemies with attacks."
+
+#end
+
+#newsecondary "Summon Chainshockweapon"
+
+#anysummon 1
+
+#paths 2
+#power -2
+
+#req trample == -1
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.6
+
+#unitmod "Summon Chainshockweapon"
+#descr "The summoned %creature% %is% able to shock enemies with attacks. The charge then jumps to other nearby creatures."
+
+#end

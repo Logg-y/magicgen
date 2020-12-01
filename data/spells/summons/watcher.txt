@@ -1,0 +1,109 @@
+#neweffect "Summon watcher"
+#effect 1
+#damage 768
+#spec 0
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 150
+#sound 31
+#schools 24
+
+#paths 2
+#secondarypaths 8
+#secondarypathchance 95
+
+#skipchance 50
+
+#name 2 "Construct NAMEPREFIX %Watcher%"
+#descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting %watcher% %is% difficult to kill and %is% able to blast enemies with lightning."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 100
+#end
+
+#neweffect "watcher ritual"
+#effect 10001
+#damage 768
+#spec 0
+#power 6
+#nreff 1001
+#pathlevel 4
+#fatiguecost 1100
+#schools 24
+
+#paths 2
+#secondarypaths 8
+#secondarypathchance 95
+
+#skipchance 55
+
+#name 2 "Construct NAMEPREFIX %Watcher%"
+#descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting watcher is difficult to kill and blasts enemies with lightning."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 150
+
+#scalerate 2
+#end
+
+#neweffect "watcher Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 768
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 600
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 8
+#secondarypathchance 95
+
+#name 2 "NAMEPREFIX %Watcher% ambush"
+#descr 2 "An inanimate statue in a target province bursts into life and begins blasting a hostile commander with magic. The statue is difficult to damage, but reverts back to its inanimate state after the battle."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon watcher"
+#effect 10038
+#provrange 4
+#damage 768
+#spec 0
+#power 6
+#maxpower 9
+#nreff 1001
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 2
+#secondarypaths 8
+#secondarypathchance 95
+
+
+#name 2 "Send NAMEPREFIX %Watcher%"
+#descr 2 "The caster fills inanimate %statue% in a target province with energy, causing them to attack forces there with lightning bolts."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 150
+#end

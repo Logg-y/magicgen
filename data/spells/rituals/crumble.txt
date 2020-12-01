@@ -1,0 +1,21 @@
+#neweffect "Crumble"
+#effect 10070
+#provrange 4
+#damage -25125
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 6
+#fatiguecost 2000
+#schools 2
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Crumble"
+#descr 8 "The caster unleashes great power upon a besieged castle. The walls of the castle will fall apart and debris will crash down upon the unwary defenders."
+#details "The walls will take 250 points of damage +25 points for each additional Earth skill level. 50% of the defenders must roll for defence or take 3 AP blunt damage."
+#spelltype 4
+#end

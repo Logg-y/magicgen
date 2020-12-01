@@ -1,0 +1,15 @@
+#newunitmod "Summon Bringeroffortune"
+#req bringeroffortune == -1
+#set bringeroffortune 2
+#nameprefix "Benevolent"
+#descr "This particular CREATURE brings good fortune to wherever it is located."
+#end
+
+
+#newunitmod "Summon Bringerofmisfortune"
+#req bringeroffortune == -1
+#req stealthy >= 0
+#set bringeroffortune -2
+#nameprefix "Malevolent"
+#descr "This particular CREATURE brings bad fortune and disasters to wherever it is located."
+#end

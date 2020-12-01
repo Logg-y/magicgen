@@ -1,0 +1,5 @@
+#newunitmod "Summon Psychicdamageweapon"
+#weaponmod "Psychicdamageweapon"
+#req trample == -1
+#descr "This particular CREATURE blasts the minds of those wounded by its attacks."
+#end

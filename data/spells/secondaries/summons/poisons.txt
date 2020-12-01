@@ -1,0 +1,97 @@
+#newsecondary "Summon Weakpoison"
+
+#anysummon 1
+
+#paths 64
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Weakpoison"
+#descr "The summoned %creature% %is% able to weakly poison enemies with attacks."
+
+#end
+
+
+#newsecondary "Summon Strongpoison"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Strongpoison"
+#descr "The summoned %creature% %is% able to poison enemies with attacks."
+
+#end
+
+#newsecondary "Summon Deathpoison"
+
+#anysummon 1
+
+#paths 64
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.9
+
+#unitmod "Summon Deathpoison"
+#descr "The summoned %creature% %is% able to strongly poison enemies with attacks."
+
+#end
+
+
+#newsecondary "Summon Debilpoison"
+
+#anysummon 1
+
+#paths 64
+#power 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Debilpoison"
+#descr "The summoned %creature% %is% able to weakly poison enemies with attacks."
+
+#end
+
+#newsecondary "Summon Weakparapoison"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Weakparapoison"
+#descr "The summoned %creature% %is% able to poison enemies with attacks."
+
+#end
+
+#newsecondary "Summon Strongparapoison"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Strongparapoison"
+#descr "The summoned %creature% %is% able to strongly poison enemies with attacks. This poison is magical in nature, and may be resisted like other forms of magic."
+
+#end

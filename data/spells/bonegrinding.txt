@@ -1,0 +1,117 @@
+#neweffect "Bonebreak Cripple"
+#effect 11
+#damage 16777216
+#spec 27263104
+#schools -1
+#paths -1
+#scalerate 0
+#aoe 1
+#spelltype 42
+#name 32 "Cripple"
+#power 2
+#end
+
+#neweffect "Bonebreak Limp"
+#effect 11
+#damage 262144
+#spec 27263104
+#schools -1
+#paths -1
+#scalerate 0
+#aoe 1
+#spelltype 42
+#name 32 "Limp"
+#power 2
+#nextspell "Bonebreak Cripple"
+#end
+
+#neweffect "Bone Breaking"
+#effect 2
+#damage 3
+#spec 10485888
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#nextspell "Bonebreak Limp"
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 1
+#power 3
+#maxpower 7
+#pathlevel 2
+#explspr 10122
+#sound 31
+#fatiguecost 20
+#range 5010
+
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 32 "Break Bones"
+#descr 32 "The caster violently snaps the bones of SUBJECT. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
+#end
+
+
+
+
+#neweffect "Bone Grinding Cripple"
+#effect 11
+#damage 16777216
+#spec 27263104
+#schools -1
+#paths -1
+#scalerate 0
+#aoe 663
+#spelltype 42
+#name 32 "Cripple"
+#power 2
+#end
+
+#neweffect "Bone Grinding Limp"
+#effect 11
+#damage 262144
+#spec 27263104
+#schools -1
+#paths -1
+#scalerate 0
+#aoe 666
+#spelltype 42
+#name 32 "Limp"
+#power 2
+#nextspell "Bone Grinding Cripple"
+#end
+
+
+#neweffect "Bone Grinding"
+#effect 2
+#damage 3
+#spec 10485888
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 6
+#explspr 10122
+#sound 31
+#fatiguecost 200
+#range 5010
+#nextspell "Bone Grinding Limp"
+-- W, D
+#paths 32
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 32 "Bone Grinding"
+#descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
+#end

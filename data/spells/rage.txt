@@ -1,0 +1,72 @@
+#neweffect "Rage"
+#effect 11
+#damage 128
+#spec 8540160
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 3
+#maxpower 7
+#pathlevel 2
+#explspr 10023
+#sound 9
+#fatiguecost 20
+#precision 100
+#range 5015
+
+#paths 65
+#secondarypaths 65
+
+#namecond aoe < 1 1 "Rage"
+#namecond aoe < 1 64 "Rage"
+
+#namecond2 1 < aoe < 5 1 "Wave of Rage"
+#namecond2 1 < aoe < 5 64 "Wave of Rage"
+#namecond2 5 < aoe < 600 1 "Angry Mob"
+#namecond2 5 < aoe < 600 64 "Angry Mob"
+#namecond2 600 < aoe < 700 1 "Mass Enrage"
+#namecond2 600 < aoe < 700 64 "Mass Enrage"
+
+#descr 1 "Heat makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
+#descr 64 "The caster makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
+
+#end
+
+#neweffect "Mass Rage"
+#effect 11
+#damage 128
+#spec 25575424
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 6
+#explspr 10023
+#sound 9
+#fatiguecost 300
+#precision 100
+#range 5015
+
+#paths 65
+#secondarypaths 65
+
+#name 1 "Mass Enrage"
+#name 64 "Mass Enrage"
+
+#descr 1 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
+#descr 64 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
+
+#end

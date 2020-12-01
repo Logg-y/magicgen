@@ -1,0 +1,46 @@
+#neweffect "Mossbody"
+#effect 23
+#damage 8
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 1.8
+
+#aoe 0
+#power 4
+#pathlevel 2
+#explspr 10005
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+-- water, nature, death
+#paths 100
+#secondarypaths 68
+
+#details "Mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison cloud dealing 1AN damage with an AoE of 4."
+
+#namecond aoe < 2 4 "Algaebody"
+#namecond aoe < 2 32 "Putrid Flesh"
+#namecond aoe < 2 64 "Mossbody"
+
+#namecond2 2 <= aoe < 666 4 "Algae Warriors"
+#namecond2 2 <= aoe < 666 32 "Putrid Warriors"
+#namecond2 2 <= aoe < 666 64 "Moss Warriors"
+
+#namecond aoe == 666 4 "Army of Algae"
+#namecond aoe == 666 32 "Putrid Army"
+#namecond aoe == 666 64 "Army of Moss"
+
+
+#descr 4 "The %body% of SUBJECT %is% covered in algae-rich water. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
+#descr 32 "Decaying matter is used to coat the %body% of SUBJECT. This foul layer of putrid flesh provides and additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
+#descr 64 "The %body% of SUBJECT %is% covered in moss. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
+
+#end
+

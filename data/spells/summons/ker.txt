@@ -1,0 +1,136 @@
+#neweffect "Summon ker"
+#effect 1
+#damage 3127
+#spec 0
+#power 4
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 60
+#scalefatiguemult 20
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX %ker%"
+#descr 32 "The caster summons ARTICLE %ker% to fight for him. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Ker Commander Ritual"
+
+#effect 10021
+#damage 3127
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 1400
+#chassisvalue 200
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 31
+
+#paths 160
+#secondarypaths 32
+
+
+#name 32 "Summon NAMEPREFIX Ker"
+#name 128 "Summon NAMEPREFIX Ker"
+#descr 32 "The death mage summons ARTICLE Ker from the underworld. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks. Additionally, it possesses some skill in death and blood magic."
+#descr 128 "The blood mage summons ARTICLE Ker from the underworld. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks. Additionally, it possesses some skill in death and blood magic."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "ker ritual"
+#effect 10001
+#damage 3127
+#spec 0
+#power 5
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX %ker%"
+#descr 32 "The caster summons ARTICLE %ker% to fight for him. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+
+#scalerate 4
+#end
+
+#neweffect "ker Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 3127
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX ker Ambush"
+#descr 32 "The caster summons ARTICLE %ker% to ambush a commander in a distant land. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon ker"
+#effect 10038
+#provrange 4
+#damage 3127
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX %ker%"
+#descr 32 "The caster summons ARTICLE %ker% to attack a distant province. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

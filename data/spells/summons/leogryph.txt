@@ -1,0 +1,111 @@
+#neweffect "Summon leogryph"
+#effect 1
+#damage 2132
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 40
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+#scalefatiguemult 10
+
+#name 64 "Summon NAMEPREFIX %Leogryph%"
+#descr 64 "The caster summons ARTICLE %leogryph%. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "leogryph ritual"
+#effect 10001
+#damage 2132
+#spec 0
+#power 4
+#nreff 1001
+#pathlevel 2
+#fatiguecost 200
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX %Leogryph%"
+#descr 64 "The caster summons ARTICLE %leogryph%. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
+
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 60
+
+#scalerate 4
+#end
+
+#neweffect "leogryph Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2132
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Leogryph Attack"
+#descr 64 "The caster summons ARTICLE %leogryph% to attack a hostile commander in a distant land. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote leogryph"
+#effect 10038
+#provrange 4
+#damage 2132
+#spec 0
+#power 5
+#maxpower 9
+#nreff 4001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 60
+
+#name 64 "Send NAMEPREFIX %Leogryph%"
+#descr 64 "The caster summons ARTICLE %leogryph% to attack a distant land. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
+
+
+#spelltype 20
+
+#scalerate 4
+#end

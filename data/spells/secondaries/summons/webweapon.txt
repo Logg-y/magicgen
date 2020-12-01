@@ -1,0 +1,15 @@
+#newsecondary "Summon webweapon"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Webweapon"
+#descr "Anyone wounded by the attacks of the %creature% may become caught in sticky webs."
+
+#end

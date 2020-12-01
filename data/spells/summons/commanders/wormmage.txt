@@ -1,0 +1,61 @@
+#neweffect "Call Worm Mage"
+
+#effect 21
+#damage 2217
+#spec 8388608
+#power 6
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 20
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 32
+
+#skipchance 70
+
+--ASN
+#paths 64
+#secondarypaths 64
+
+#name 64 "Call NAMEPREFIX Worm %Mage%"
+#descr 64 "The caster summons ARTICLE Worm %Mage% onto the battlefield and uses magic to convince PRONOUN to fight for him. Worm mages are potent nature mages and constantly shed flying insects, but they will leave after the battle."
+
+#scalefatiguemult 170
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Worm Mage"
+
+#effect 10021
+#damage 2217
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 3200
+#chassisvalue 20
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 32
+
+#skipchance 31
+
+#paths 64
+#secondarypaths 64
+
+
+
+#name 64 "Summon NAMEPREFIX Worm Mage"
+#descr 64 "The caster summons ARTICLE %Worm Mage%. The Worm Mage is an immortal nature mage."
+
+#spelltype 20
+
+#scalerate 1
+#end

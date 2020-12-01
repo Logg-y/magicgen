@@ -1,0 +1,55 @@
+#neweffect "Mistform"
+#effect 23
+#damage 65536
+-- uw ok, friendlies only
+#spec 12582912
+-- alt
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 3
+
+#aoe 0
+#power 3
+#maxpower 8
+#pathlevel 2
+#explspr 10002
+#sound 52
+#fatiguecost 10
+
+#paths 150
+#secondarypaths 6
+
+#details "Mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+
+#namecond aoe < 1 2 "$mist$body"
+#namecond aoe < 1 2 "$mist$form"
+#namecond aoe < 1 4 "$mist$body"
+#namecond aoe < 1 4 "$mist$form"
+#namecond aoe < 1 16 "$mist$body"
+#namecond aoe < 1 16 "$mist$form"
+#namecond aoe < 1 128 "$mist$body"
+#namecond aoe < 1 128 "$mist$form"
+
+#namecond2 1 <= aoe < 15 2 "$mist$ warriors"
+#namecond aoe >= 15 2 "army of $mist$"
+
+#namecond2 1 <= aoe < 15 4 "$mist$ warriors"
+#namecond aoe >= 15 4 "army of $mist$"
+
+#namecond2 1 <= aoe < 15 16 "$mist$ warriors"
+#namecond aoe >= 15 16 "army of $mist$"
+
+#namecond2 1 <= aoe < 15 128 "$mist$ warriors"
+#namecond aoe >= 15 128 "army of $mist$"
+
+#descr 2 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
+#descr 4 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
+#descr 16 "The matter comprising the %body% of SUBJECT is tranformed into fine $mist$-like substance. This renders PRONOUN highly resistant to $non-magical$ damage."
+#descr 128 "$BLOOD_INTRO$, the %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
+
+
+#end
+

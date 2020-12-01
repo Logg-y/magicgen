@@ -1,0 +1,32 @@
+#neweffect "Charm"
+#effect 29
+#damage 999
+#spec 8540288
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 7
+#maxpower 15
+#pathlevel 3
+#explspr 10213
+#sound 41
+#fatiguecost 30
+#precision 100
+#range 25
+
+#paths 64
+#secondarypaths 64
+
+#namecond aoe < 1 64 "Charm"
+
+#namecond2 1 < aoe < 600 64 "Charming Whispers"
+
+#descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
+
+#end

@@ -1,0 +1,7 @@
+#newunitmod "Summon Slaymagicweapon"
+#weaponmod "Slaymagicweapon"
+#req magicbeing == -1
+#nameprefix "Magicbane"
+#req trample == -1
+#descr "This particular CREATURE has the capability to rapidly dissolve magical creatures it wounds."
+#end

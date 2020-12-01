@@ -1,0 +1,109 @@
+#neweffect "Summon werewolf"
+#effect 1
+#damage 633
+#spec 0
+#power 3
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 50
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 30
+#end
+
+#neweffect "werewolf ritual"
+#effect 10001
+#damage 633
+#spec 0
+#power 4
+#nreff 1001
+#pathlevel 2
+#fatiguecost 200
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "Summon NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+
+#spelltype 20
+
+#skipchance 60
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#scalerate 4
+#end
+
+#neweffect "werewolf Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+#skipchance 90
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 90
+
+#name 64 "NAMEPREFIX Were%wolf% Attack"
+#descr 64 "The caster summons ARTICLE were%wolf% in a distant land to attack an enemy commander. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote werewolf"
+#effect 10038
+#provrange 4
+#damage 633
+#spec 0
+#power 5
+#maxpower 9
+#nreff 2001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#name 64 "Send NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf% to attack a distant land. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 20
+
+#scalerate 4
+#end

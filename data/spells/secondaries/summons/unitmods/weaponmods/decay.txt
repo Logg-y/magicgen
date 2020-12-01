@@ -1,0 +1,11 @@
+#newweaponmod "Decayweapon"
+-- weapon not magic
+#req spec & 2097152
+-- no special effects on weapon already
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffect 64
+#spec -2097152
+#nameprefix "Withering"
+#end

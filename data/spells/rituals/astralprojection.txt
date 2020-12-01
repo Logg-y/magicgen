@@ -1,0 +1,22 @@
+#neweffect "Astral Projection"
+#copyspell "Astral Projection"
+#effect 10085
+#damage 37
+#provrange 7
+#spec 8388608
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 1
+#fatiguecost 200
+#schools 4
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Astral Projection"
+#descr 16 "The caster's mind is separated from his body and travels the Astral Planes in search of military information. His mind and body are connected with a silvery cord, which can be detected by unfriendly Astral mages. Once detected, the cord of the mage can be severed - a traumatic experience indeed. Each casting of this ritual allows the mage to scry on one province. The use of extra astral pearls increases the duration of the ritual."
+#details "Duration: 1 month + 1 / extra astral pearl. Astral cord detection chance = 40% * enemy mage's astral level."
+#spelltype 4
+#end

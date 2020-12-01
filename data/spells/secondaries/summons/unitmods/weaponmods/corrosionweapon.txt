@@ -1,0 +1,11 @@
+#newweaponmod "Corrosionweapon"
+-- weapon not already AP or AN
+#req spec & 2097152
+#spec -2097152
+#req secondaryeffectid == 0
+#req secondaryeffectalwaysid == 0
+#req aoe == 0
+#set secondaryeffectalways 604
+-- no special effects on weapon already
+#nameprefix "Corrosive"
+#end

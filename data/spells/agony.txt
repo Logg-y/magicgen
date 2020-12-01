@@ -1,0 +1,46 @@
+#neweffect "Agony Fear"
+#effect 4
+#damage 4
+#spec 128
+#schools -1
+#paths -1
+#name 188 "Major Fear"
+#spelltype 2
+#scalerate 0
+#aoe 1
+#power 1
+#end
+
+
+#neweffect "Agony"
+#nextspell "Agony Fear"
+#effect 2
+#damage 1
+#spec  	537399424
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 1.6
+
+#aoe 2001
+#power 2
+#maxpower 9
+#pathlevel 2
+#explspr 10043
+#sound 31
+#fatiguecost 200
+#precision 2
+#range 40
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Agony"
+#descr 128 "The mage kills one or more blood slaves in an extremely painful way and transfers their pain onto a large number of enemies. Being struck by this pain is unbearable and has a truly devastating effect on morale. Undead units are not affected by this spell."
+
+
+#end

@@ -1,0 +1,101 @@
+#neweffect "Summon behemoth"
+#effect 1
+#damage 452
+#spec 8388608
+#power 5
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 100
+#sound 43
+#schools 16
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 90
+
+#name 32 "Summon NAMEPREFIX %Behemoth%"
+#descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates ARTICLE %behemoth%, ARTICLE giant undead %elephant% that can trample enemies."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "behemoth ritual"
+#effect 10001
+#damage 452
+#spec 8388608
+#power 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 16
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 75
+
+#name 32 "Summon NAMEPREFIX %Behemoth%"
+#descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates a behemoth, a giant undead elephant that tramples enemies."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 220
+
+#scalerate 1
+#end
+
+#neweffect "behemoth Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 452
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 16
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Behemoth Ambush"
+#descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates a behemoth, a giant undead elephant that tramples enemies, that is sent to a distant land to ambush an unsuspecting commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon behemoth"
+#effect 10038
+#provrange 4
+#damage 452
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 16
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX %Behemoth%"
+#descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates ARTICLE %behemoth%, ARTICLE giant undead %elephant% that can trample enemies. The %behemoth% %is% sent to a distant province."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 150
+#end

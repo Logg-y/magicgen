@@ -1,0 +1,59 @@
+#newunitmod "Summon Chillaura"
+#req cold == -1
+#req heat == -1
+#req aquatic == -1
+#set cold 3
+#coldres 8
+#nameprefix "Glacial"
+#descr "This particular CREATURE is surrounded by magical chilling winds. Nearby creatures may become fatigued from the cold."
+#end
+
+#newunitmod "Summon Heataura"
+#req cold == -1
+#req heat == -1
+#req aquatic == -1
+#set heat 3
+#fireres 8
+#nameprefix "Infernal"
+#descr "This particular CREATURE is surrounded by dry, hot winds. Nearby creatures may become fatigued from the heat."
+#end
+
+#newunitmod "Summon Poisonaura"
+#req poisoncloud == -1
+#set poisoncloud 3
+#poisonres 11
+#nameprefix "Noxious"
+#descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
+#end
+
+#newunitmod "Summon Diseaseaura"
+#req diseasecloud == -1
+-- block secondshape as the second shape will not get disease res
+#req secondshape == -1
+#set diseasecloud 3
+#set diseaseres 100
+#nameprefix "Infectious"
+#descr "This particular CREATURE carries many virulent diseases which it is immune to. Nearby creatures will become diseased unless they successfully resist."
+#end
+
+#newunitmod "Summon Mindslime"
+#req mindslime == -1
+#set mindslime 3
+#voidsanity 11
+#nameprefix "Invasive"
+#descr "This particular CREATURE attacks the minds of those nearby, slowing them if they fail to resist."
+#end
+
+#newunitmod "Summon Sleepaura"
+#req sleepaura == -1
+#set sleepaura 3
+#nameprefix "Wearying"
+#descr "This particular CREATURE is surrounded by sleeping fog, putting nearby enemies into a magical sleep unless they resist."
+#end
+
+#newunitmod "Summon Fearaura"
+#req fear == -1
+#set fear 5
+#nameprefix "Terrifying"
+#descr "This particular CREATURE is magically terrifying, which may cause enemies nearby to flee in terror."
+#end

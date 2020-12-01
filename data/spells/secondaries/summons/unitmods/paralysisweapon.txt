@@ -1,0 +1,13 @@
+#newunitmod "Summon Paralysisweapon"
+#weaponmod "Paralysisweapon"
+#nameprefix "Paralyzing"
+#req trample == -1
+#descr "This particular CREATURE is touched by magic that paralyses those struck by its weapons if they fail to resist the effect."
+#end
+
+#newunitmod "Summon Greaterparalysisweapon"
+#weaponmod "Greaterparalysisweapon"
+#nameprefix "Paralyzing"
+#req trample == -1
+#descr "This particular CREATURE is touched by magic that paralyses those struck by its weapons if they fail to resist the effect."
+#end

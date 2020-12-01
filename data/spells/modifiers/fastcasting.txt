@@ -1,0 +1,79 @@
+#newmodifier "Minor Fast Casting"
+
+-- any
+#spelltype 0
+
+#power -1
+
+#mult casttime 0.75
+#skipchance 100
+
+-- not ritual
+#req spelltype !& 4
+
+-- #descr "This spell is somewhat fast to cast."
+
+#end
+
+#newmodifier "Fast Casting"
+
+-- any
+#spelltype 0
+
+#power -1
+
+#aicastmod 25
+
+#mult casttime 0.5
+#skipchance 55
+
+-- not ritual
+#req spelltype !& 4
+
+-- #descr "This spell is faster to cast than most other spells."
+
+#end
+
+
+#newmodifier "Faster Casting"
+
+-- any
+#spelltype 0
+
+#power -2
+#skipchance 55
+
+#aicastmod 40
+
+#mult casttime 0.25
+#mult fatiguecost 0.75
+#req fatiguecost > 15
+
+#req fatiguecost < 100
+-- not ritual
+#req spelltype !& 4
+
+-- #descr "This spell is extremely fast to cast."
+
+#end
+
+
+#newmodifier "Insanely Fast Casting"
+
+-- any
+#spelltype 0
+
+#aicastmod 70
+
+#power -3
+
+#mult fatiguecost 0.5
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end

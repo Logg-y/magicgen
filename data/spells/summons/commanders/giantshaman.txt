@@ -1,0 +1,61 @@
+#neweffect "Call Giant Shaman"
+
+#effect 21
+#damage 2640
+#spec 0
+#power 5
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 10
+#range 6
+#fatiguecost 140
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 70
+
+--ASN
+#paths 64
+#secondarypaths 64
+
+#name 64 "Call NAMEPREFIX Giant %Shaman%"
+#descr 64 "The caster summons ARTICLE %Giant Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Giant Shamans are potent nature mages and physically powerful, but they will leave after the battle."
+
+#scalefatiguemult 120
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Giant Shaman"
+
+#effect 10021
+#damage 2640
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#fatiguecost 3100
+#pathlevel 5
+#chassisvalue 600
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 3
+
+#paths 64
+#secondarypaths 64
+
+
+
+#name 64 "Summon NAMEPREFIX Giant Shaman"
+#descr 64 "The caster summons ARTICLE %Giant Shaman%. The Giant Shaman is a strong nature mage and is physically powerful."
+
+#spelltype 20
+
+#scalerate 1
+#end

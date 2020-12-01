@@ -1,0 +1,36 @@
+#neweffect "Bonds of Fire"
+#effect 11
+#damage 65536
+#spec 16416
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 4
+-- #scalecost 0.6
+
+#aoe 0
+#power 1
+#pathlevel 1
+#explspr 10203
+#sound 64
+#fatiguecost 20
+#range 5025
+
+#paths 129
+#secondarypaths 1
+
+#details "Trying to escape requires a morale check vs 21. Failure results in 3AN fire damage."
+
+#namecond aoe == 0 1 "$Fetters$ of Fire"
+#namecond aoe == 0 128 "$Fetters$ from Inferno"
+
+#namecond aoe > 0 1 "Prison of Fire"
+#namecond aoe > 0 128 "Prison from Inferno"
+
+#descr 1 "Shackles of fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
+#descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
+
+#end
+

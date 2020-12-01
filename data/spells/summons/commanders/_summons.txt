@@ -1,0 +1,296 @@
+--              -13	adventurer
+--              -18	probably the ghost mages at 1539-1540
+--				92	cloud mage
+--				93	wind master
+--				94	conjurer
+--				95	circle master
+--				96	azure initiate
+--				97	azure mage
+--				98	pyromancer
+--				99	adept of pyriphlegeton
+--				100	adept of the silver order
+--				101	adept of the golden order
+--				103	hydromancer
+--				106	shadow seer
+--				122	bloodhenge druid
+--				156	cyclops
+--				178	lich
+--				181	wraith lord
+--				182	pathless mounted wraith lord
+--				185	bane
+--				188	mound king
+--				302	wizard
+--				309	ice druid
+--				310	necromancer
+--				312	wizard [done]
+--				338	enchanter
+--				339	sorcerer
+--				340	crystal mage
+--				341	illusionist
+--				342	moon mage
+--				343	sorceress
+--				344	sorceress
+--				345	gnome
+--				363	enchantress
+--				364	enchantress
+--				389	fire lord
+--				391	grey lord
+--				396	revenant
+--				434	black servant
+--				404	vampire lord
+--				471	golem
+--				477	adept of the iron order
+--				479	lore master
+--				480	magus
+--				481	high magus
+--				491	harvester of sorrows
+--				519	troll king
+--				551	alchemist
+--				552	animist
+--				559	sleeper
+--				580	sea king
+--				609	lamia queen
+--				620	draconian chief
+--				627	faery queen
+--				630	elludian moon mage
+--				641	ancient mandragora [this guy is unique!]
+--				737	ether lord
+--				875 warrior mage
+--				931	ivy king
+--				964	lord of fertility
+--				994	eater of the dead [is unique]
+--				998	bane lord [done]
+--				999	wizard of the crescent moon
+--				1040	bishop fish
+--				1200	unfrozen mage
+--				1201	unfrozen lord
+--				1226	naiad
+--				1256	shura
+--				1477	kokythiad
+--				1952	likho
+--				1978	dust priest
+--				2217	worm mage
+--				2220	troll shaman
+--				2221	troll seithberender
+--				2245	sorcerer of the sands
+--				2287	shadow imp
+--				2358	wormwood witch
+--				2361	black witch
+--				2362	blackrose sorceress
+--				2522	released sage
+--				2523	released king
+--				2534	dragon
+--				2543	mage of spring
+--				2544	mage of summer
+--				2545	mage of autumn
+--				2546	mage of winter
+--				2619	harab seraph
+--				2626	flame spirit
+--				2640	giant shaman [forest]
+--				2641	giant sorcerer [hill?]
+--				2642	yeti shaman
+--				3066	hamadryad
+--				3350	damned boatswain
+--				439	mound fiend
+
+-- uniques
+-- ele royalty
+-- (including illearth and banefires)
+-- eater of the dead
+-- the various blood uniques
+-- tree lord
+-- eater of the dead
+
+
+
+--		-- unique
+--		109	dagon
+--		120	moloch
+--		138	gorgon
+--		157	mother of monsters
+--		158	oracle
+--		159	monument
+--		269	wyrm
+--		294	nerid
+--		383	prince of death
+--		384	neter of crafts
+--		385	neteret of joy
+--		386	neter of the sun
+--		387	neteret of many names
+--		388	neter of chaos
+--		401	bitch queen
+--		472	statue of order
+--		499	nataraja
+--		501	allfather
+--		546	void lurker
+--		600	titan of war and wisdom
+--		602	titan of heaven
+--		603	teotl of rain
+--		604	teotl of the night
+--		605	son of niefel
+--		606	great mother
+--		607	baphomet
+--		608	phoenix
+--		652	void lord
+--		653	serpent king
+--		655	scorpion king
+--		656	fountain of blood
+--		657	monolith
+--		661	shedu
+--		779	ramhead serpent
+--		812	lord of the wild
+--		862	vampire queen
+--		872	ghost king
+--		905	jade emprah
+--		957	lord of the desert sun
+--		958	colossal hed
+--		961	titan of the sea
+--		973	ancient kraken
+--		978	great black bull
+--		979	great white bull
+--		1025	divine glyph
+--		1096	destroyer of worlds
+--		1097	lord of the summer plague
+--		1098	asynja
+--		1229	son of fenrer (retinue)
+--		1230	titan of the forge
+--		1231	drakaina
+--		1232	old man of the sea
+--		1233	lord of the waves
+--		1339	nyorai
+--		1340	tiwaz of war
+--		1341	devi of darkness
+--		1342	titan of rivers
+--		1343	titan of love
+--		1344	devi of good fortune
+--		1345	celestial general
+--		1346	colossal fetish
+--		1348	titan of serpents and medicine
+--		1349	devourer of souls
+--		1370	volla of the bountiful forest
+--		1371	titan of death and rebirth
+--		1372	annunaki of the sky
+--		1373	annunaki of sweet water
+--		1374	annunaki of the morning star
+--		1378	lord of the forest
+--		1379	keeper of the bridge
+--		1384	solar disc
+--		1402	polypal queen
+--		1561	father of winters
+--		1581	risen oracle
+--		1590	ageless olm
+--		2082	son of the fallen
+--		2137	urmahlullu
+--		2138	sphinx
+--		2202	great siddha
+--		2234	irminsul
+--		2239	asynja
+--		2431	titan of the underworld
+--		2434	teteo inan
+--		2435	annunaki of love and war
+--		2436	annunaki of the moon
+--		2437	annunaki of growth and rebirth
+--		2438	annunaki of the underworld
+--		2440	sea dragon
+--		2442	teotl of war
+--		2443	teotl of the sky
+--		2444	teotl of the underworld
+--		2445	neter of the underworld
+--		2446	neter of kings
+--		2447	idol of men
+--		2448	idol of beasts
+--		2449	idol of sorcery
+--		2450	horned one
+--		2457	bodhisattva of mercy
+--		2460	statue of fertility
+--		2461	statue of the bloody mother
+--		2462	golden idol
+--		2463	statue of war
+--		2464	neter of the moon
+--		2466	kamadhenu
+--		2552	ahura of wisdom
+--		2553	ahura of the oath
+--		2554	ahura of the waters
+--		2555	spenta maiynu
+--		2556	celestial carp
+--		2608	azi
+--		2610	angra mainyu
+--		2611	gannag menog
+--		2627	daeva of wrath
+--		2685	viracocha
+--		2686	apu inti
+--		2693	heavenly condor
+--		2698	apu illapa
+--		2699	ayar
+--		2755	hun came
+--		2756	bolon ti ku
+--		2764	hun balam
+--		2777	demon macaw
+--		2783	drakon
+--		2784	thrice horned boar
+--		2785	solar eagle
+--		2786	celestial gryphon
+--		2787	celestial lion
+--		2788	man eater
+--		2789	raven of the underworld
+--		2790	myrmecoleon
+--		2791	erf snek
+--		2792	solar serpent
+--		2793	serpent of chaos
+--		2795	dog of the underworld
+--		2796	hound of hades
+--		2797	hierocosphinx
+--		2798	criosphinx
+--		2799	wadjet
+--		2800	ormr
+--		2801	linnormr
+--		2849	father of monsters
+--		2850	statue of the underworld
+--		2851	titan of wind and waves
+--		2855	floating mind
+--		2856	son of the sea
+--		2958	golden lion
+--		2960	apkallu
+--		2980	uttervast
+--		3072	kami of the sun
+--		3073	kami of the moon
+--		3074	kami of storms
+--		3079	duiu of thunder
+--		3080	duiu of farming
+--		3081	duiu of war
+--		3082	matrona of the healing spring (retinue)
+--		3086	deives of the sun
+--		3088	dharmapala of the underworld
+--		3124	titan of forethought
+--		3203	titan of the hunt
+--		3208	titan of the spring
+--		3209	titan of growth
+--		3329	betyl of the sun
+--		3330	betyl of writing
+--		3331	betyl of the stars
+--		3344	statue of beginnings
+--		3345	wooden colossus
+--		3368	bronze colossus
+--		3369	ilahat of fate
+--		3370	ilahat of might
+--		3386	ilah of the sky
+--		3387	ilah of the sacred mountain
+--		3388	ilah of the moon
+--		3394	serpent of the underworld
+--		3395	demiurge
+--		3396	king in yellow
+--		3416	great archon
+--		
+--		
+--		-- repeat
+--		179	master lich
+--		180	demilich
+--		215	virtue
+--		265	dragon ice
+--		266	dragon swamp
+--		395	lich queen
+--		643	bog mummy
+--		320	saurolich
+--		644	dracolich
+--		1026	carrion dragon
+--		1428	bakemono kunshu

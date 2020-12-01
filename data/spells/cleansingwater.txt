@@ -1,0 +1,27 @@
+#neweffect "Cleansing Water"
+#copyspell "Cleansing Water"
+#skipflightspr 1
+#effect 2
+#damage 2001
+#spec 138
+#aoe 2001
+#power 6
+#precision 0
+#range 5025
+#pathlevel 2
+#fatiguecost 20
+#explspr 10065
+#sound 30
+#paths 4
+#secondarypaths 4
+#secondarypathchance 0
+#name 4 "Cleansing Water"
+
+#descr 4 "The caster projects a torrent of water against undead enemies. The cleansing water will damage undead beings and demons, but not other magical beings."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end

@@ -1,0 +1,15 @@
+#newunitmod "Summon Darkvision"
+#req darkvision == -1
+#req spiritsight == -1
+#set darkvision 100
+#nameprefix "Nightstalking"
+#descr "This particular CREATURE is accustomed to being active at night and has exceptional vision in the dark."
+#end
+
+#newunitmod "Summon Spiritsight"
+#req darkvision == -1
+#req spiritsight == -1
+#set spiritsight 1
+#nameprefix "Trueseeing"
+#descr "This particular CREATURE can magically perceieve things as they truly are."
+#end

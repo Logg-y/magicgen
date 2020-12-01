@@ -1,0 +1,65 @@
+#neweffect "Additional Cold"
+#effect 2
+#damage 2
+#spec 36028797564240512
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ $Chill$"
+#name 2 "$Additional$ $Chill$"
+#name 4 "$Additional$ $Chill$"
+#name 8 "$Additional$ $Chill$"
+#name 16 "$Additional$ $Chill$"
+#name 32 "$Additional$ $Chill$"
+#name 64 "$Additional$ $Chill$"
+#name 128 "$Additional$ $Chill$"
+#name 256 "$Additional$ $Chill$"
+
+#end
+
+#neweffect "Additional Cold Holy"
+#effect 2
+#damage 10
+#spec 36028797564240512
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ $Chill$"
+#name 2 "$Additional$ $Chill$"
+#name 4 "$Additional$ $Chill$"
+#name 8 "$Additional$ $Chill$"
+#name 16 "$Additional$ $Chill$"
+#name 32 "$Additional$ $Chill$"
+#name 64 "$Additional$ $Chill$"
+#name 128 "$Additional$ $Chill$"
+#name 256 "$Additional$ $Chill$"
+
+#end

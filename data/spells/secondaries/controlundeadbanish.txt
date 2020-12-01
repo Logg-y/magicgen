@@ -1,0 +1,24 @@
+#newsecondary "Control Undead Banishment"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#req effect != 103
+#req effect != 74
+#req effect != 73
+#req nonscalingaoe >= 1
+
+-- not ritual
+#req spelltype !& 4
+#req path == 256
+
+
+#nextspell "Control Undead Secondary"
+
+#descr "The strike at the undead allows the priest to attempt to take control of them."
+
+#end
