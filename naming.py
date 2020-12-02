@@ -150,4 +150,4 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
         print("New spell {}{}{}".format('"', string, '"'))
         utils.spellnames.append(string)
 
-    return (string)
+    return string

@@ -1,6 +1,5 @@
 import os
 import re
-import traceback
 
 import spellstructures
 
@@ -8,34 +7,36 @@ simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype"
 simple_params_str = ["nextspell", "details","copyspell", "extraspell"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult"]
 
+
 def readEffectFile(fp):
 	"Read one file and return all the spell effects within."
 	try:
 		lineno = None
 		out = {}
-		#ineff = False
+		# ineff = False
 		curreff = None
 		with open(fp, "r") as f:
 			for lineno, line in enumerate(f):
 				line = line.strip()
 				if line == "": continue
 				if line.startswith("--"): continue
-				
+
 				if line.startswith("#neweffect"):
 					if curreff is not None:
-						raise spellstructures.ParseError(f"{fp} line {lineno}: Unexpected #neweffect (still parsing previous effect)")
+						raise spellstructures.ParseError(
+							f"{fp} line {lineno}: Unexpected #neweffect (still parsing previous effect)")
 					m = re.match("#neweffect\W+\"(.*)\"\W*$", line)
 					if m is None:
 						raise spellstructures.ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
 					curreff = spellstructures.SpellEffect(fp)
 					curreff.name = m.groups()[0]
-				
+
 				else:
 					if curreff is None:
 						raise spellstructures.ParseError(f"{fp} line {lineno}: Expected a #neweffect line")
-					
+
 					sorted = False
-					
+
 					# Params to simply copy
 					for simple in simple_params_int:
 						m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
@@ -44,9 +45,9 @@ def readEffectFile(fp):
 							setattr(curreff, simple, pval)
 							sorted = True
 							break
-							
+
 					if sorted: continue
-					
+
 					for simple in simple_params_str:
 						m = re.match(f"#{simple}" + "\\W+?\"(.*)\"\\W*", line)
 						if m is not None:
@@ -54,9 +55,9 @@ def readEffectFile(fp):
 							setattr(curreff, simple, pval)
 							sorted = True
 							continue
-							
+
 					if sorted: continue
-					
+
 					for simple in simple_params_float:
 						m = re.match(f"#{simple}\W+?([-.0-9]*)\W*$", line)
 						if m is not None:
@@ -64,12 +65,13 @@ def readEffectFile(fp):
 							setattr(curreff, simple, pval)
 							sorted = True
 							continue
-							
+
 					if sorted: continue
-					
-						
+
 					if line.startswith("#namecond"):
-						m = re.match('#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
+						m = re.match(
+							'#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
+							line)
 						if m is not None:
 							cond = spellstructures.NameCond()
 							cond.val2 = m.groups()[0]
@@ -83,7 +85,7 @@ def readEffectFile(fp):
 								curreff.nameconds[cond.path] = []
 							curreff.nameconds[cond.path].append(cond)
 							continue
-					
+
 						m = re.match('#namecond\\W+(.+)[ \t]+([<>=&!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
 							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
@@ -97,9 +99,11 @@ def readEffectFile(fp):
 							curreff.nameconds[cond.path] = []
 						curreff.nameconds[cond.path].append(cond)
 						continue
-						
+
 					if line.startswith("#descrcond"):
-						m = re.match('#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
+						m = re.match(
+							'#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
+							line)
 						if m is not None:
 							cond = spellstructures.NameCond()
 							cond.val2 = m.groups()[0]
@@ -113,7 +117,7 @@ def readEffectFile(fp):
 								curreff.descrconds[cond.path] = []
 							curreff.descrconds[cond.path].append(cond)
 							continue
-						
+
 						m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
 							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #descrcond")
@@ -127,14 +131,14 @@ def readEffectFile(fp):
 							curreff.descrconds[cond.path] = []
 						curreff.descrconds[cond.path].append(cond)
 						continue
-						
+
 					if line.startswith("#descr"):
 						m = re.match('#descr\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
 							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #descr")
 						curreff.descriptions[int(m.groups()[0])] = m.groups()[1]
 						continue
-						
+
 					if line.startswith("#pathskipchance"):
 						m = re.match('#pathskipchance\\W+([0-9]*)\\W+([0-9]*)', line)
 						if m is None:
@@ -143,7 +147,7 @@ def readEffectFile(fp):
 						skipchance = int(m.groups()[1])
 						curreff.pathskipchances[path] = skipchance
 						continue
-						
+
 					if line.startswith("#name"):
 						m = re.match('#name\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
@@ -153,13 +157,12 @@ def readEffectFile(fp):
 							curreff.names[path] = []
 						curreff.names[path].append(m.groups()[1])
 						continue
-					
+
 					if line.startswith("#end"):
 						out[curreff.name] = curreff
 						curreff = None
 						continue
-						
-					
+
 					raise spellstructures.ParseError(f"{fp} line {lineno}: Unrecognised content: {line}")
 		return out
 	except:
@@ -167,7 +170,8 @@ def readEffectFile(fp):
 			raise spellstructures.ParseError(f"Failed to read {fp}, failed at line {lineno}")
 		else:
 			raise spellstructures.ParseError(f"Failed to read {fp}, undetermined line")
-				
+
+
 def readEffectsFromDir(dir):
 	out = spellstructures.spelleffects
 	new = []
@@ -183,4 +187,3 @@ def readEffectsFromDir(dir):
 	for key in new:
 		o[key] = out[key]
 	return o
-	

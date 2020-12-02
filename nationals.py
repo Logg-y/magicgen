@@ -1,9 +1,12 @@
-import re
-import csv
 import copy
+import csv
+import re
+
 from spellstructures import utils
 
 nationals = {}
+
+
 # test
 
 class NationalMage(object):
