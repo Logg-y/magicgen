@@ -3,6 +3,7 @@ import copy
 import csv
 import random
 import sys
+import os
 
 import fileparser
 import nationals
@@ -15,6 +16,14 @@ START_ID = 1300
 ver = "1.0.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
+
+def _writetoconsole(line):
+    """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
+    this be converted to exe with --window to avoid the console coming up.
+    For some reason after doing that, sys.stderr has to be flushed after every line to allow the GUI process
+    to pick it up"""
+    sys.stderr.write(line)
+    sys.stderr.flush()
 
 
 def rollspells(**options):
@@ -30,9 +39,14 @@ def rollspells(**options):
         if modname is None:
             modname = random.random()
 
-        with open(f"magicgen-{modname}.dm", "w") as f:
+        if not os.path.isdir("./output"):
+            os.mkdir("./output")
+
+        outfp = os.path.join("./output", f"magicgen-{modname}.dm")
+
+        with open(outfp, "w") as f:
             l = []
-            sys.stderr.write("Parsing data files...\n")
+            _writetoconsole("Parsing data files...\n")
             fileparser.readModifiersFromDir(r".\data\spells\modifiers")
             fileparser.readSecondariesFromDir(r".\data\spells\secondaries")
             fileparser.readSecondariesFromDir(r".\data\spells\secondaries\summons")
@@ -56,17 +70,20 @@ def rollspells(**options):
                 if sp.nextspell != "":
                     sp.nextspell = s[sp.nextspell]
 
+            researchmod = options.get("researchmodifier", 0)
+
             for school in [1, 2, 4, 8, 16, 32, 64]:
                 schoolname = utils.SchoolFlags(school).name
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
                     spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.33))
-                for research in range(0, 10):
+                for research in range(0+researchmod, 10+researchmod):
                     if school == 8 and research in [2, 4, 6, 8]:
                         # construction crafting levels don't get spells
                         continue
-                    sys.stderr.write(
+                    _writetoconsole(
                         f"Generating {spellsperlevel} spells at research {research} for school {schoolname}...\n")
+                    sys.stderr.flush()
                     effectpool = copy.copy(s)
                     for x in range(0, spellsperlevel):
                         while 1:
@@ -74,7 +91,7 @@ def rollspells(**options):
                             if len(effectpool) == 0:
                                 print(
                                     f"WARNING: no valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
-                                sys.stderr.write(
+                                _writetoconsole(
                                     f"No more valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
                                 break
                             sp = effectpool[random.choice(list(effectpool.keys()))]
@@ -119,7 +136,7 @@ def rollspells(**options):
                     l.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path, blockmodifier=True,
                                                 allowskipchance=False, **options))
 
-            sys.stderr.write("Generating national spells...\n")
+            _writetoconsole("Generating national spells...\n")
 
             # Generate some national spells
             nationals.readVanilla()
@@ -127,14 +144,14 @@ def rollspells(**options):
             nationcount = len(list(nationals.nationals.keys()))
             for index, nation in enumerate(list(nationals.nationals.keys())):
                 if (index + 1) % 20 == 0:
-                    sys.stderr.write(f"Progress: Beginning nation {index + 1} of {nationcount}...\n")
+                    _writetoconsole(f"Progress: Beginning nation {index + 1} of {nationcount}...\n")
                 successfuleffectnames = []
                 print(f"Generating spells for nation {nation}")
                 for x in range(0, options.get("nationalspells", 12)):
                     chosencomm = random.choice(nationals.nationals[nation])
                     # researchlevel = random.randint(1, 9)
                     effectpool = copy.copy(s)
-                    researchlevelstotry = list(range(1, 10))
+                    researchlevelstotry = list(range(1+researchmod, 10+researchmod))
                     random.shuffle(researchlevelstotry)
                     researchlevel = researchlevelstotry.pop(0)
                     while 1:
@@ -143,6 +160,7 @@ def rollspells(**options):
 
                         # avoid duplicates, either in this national set or with stuff in the generic set
                         if (choseneffect.name not in successfuleffectnames) and (
+                                researchlevel in generatedeffectsatlevels) and (
                                 choseneffect.name not in generatedeffectsatlevels[researchlevel]):
                             allowedpaths = [utils.PathFlags(2 ** x) for x in utils.breakdownflag(choseneffect.paths)]
                             if len(allowedpaths) > 0:
@@ -187,8 +205,8 @@ def rollspells(**options):
                             researchlevel = researchlevelstotry.pop(0)
                             effectpool = copy.copy(s)
 
-            sys.stderr.write(f"Writing output magicgen-{modname}.dm...\n")
-            f.write('#modname "MagicGen{}"{}'.format(modname, "\n"))
+            _writetoconsole(f"Writing output {outfp}...\n")
+            f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
             # f.write("#clearallspells\n\n\n")
             for x in range(1, 1 + START_ID):
                 if x not in spellstokeep:
@@ -204,7 +222,7 @@ def rollspells(**options):
                     f.write(spell.output())
             f.flush()
             f.close()
-            sys.stderr.write(f"Finished writing magicgen-{modname}.dm!\n")
+            _writetoconsole(f"Finished writing magicgen-{modname}.dm!\n")
     sys.stdout = sys.stderr
 
 
@@ -217,7 +235,10 @@ class Option(object):
         self.default = default
 
     def toArgparse(self, parser):
-        parser.add_argument(self.optname, help=self.help, type=self.type, default=self.default)
+        if self.type is not None:
+            parser.add_argument(self.optname, help=self.help, type=self.type, default=self.default)
+        else:
+            parser.add_argument(self.optname, help=self.help, default=self.default)
 
     def askInConsole(self):
         print("\n\n-----------------------")
@@ -279,6 +300,33 @@ def main():
     opts.append(Option("-nationalspells",
                        help="Number of national spells to try to make per nation. These spells will be directed towards the paths the nation has access to.",
                        type=int, default=12))
+    opts.append(Option("-secondarychance",
+                       help="Percentage chance of spells generating with a secondary effect. Does not apply to summoning spells.",
+                       type=int, default=20))
+    opts.append(Option("-summonsecondarychance",
+                       help="Percentage chance of summoning spells generating with a secondary effect. Does not apply to other spells.",
+                       type=int, default=20))
+
+    opts.append(Option("-researchmodifier",
+                       help="Research modifier: Subtracts this value from the research level of spells generated. Large values will make strong spells available at lower research than normal.",
+                       type=int, default=0))
+
+    opts.append(Option("-pathlevelmodflat",
+                       help="Path level modifier: Adds this value to the path level requirement of all spells generated (to a minimum of 1). Negative values will make spells easier to cast.",
+                       type=int, default=0))
+
+    opts.append(Option("-pathlevelmodmult",
+                       help="Path level modifier: Multiplies the level requirement of all spells generated by this value. Values less than 1 will make spells easier to cast.",
+                       type=float, default=1.0))
+
+    opts.append(Option("-fatiguemodflat",
+                       help="Fatigue modifier: Adds this value to the fatigue cost of all spells generated (to a minimum of 0). Negative values will make spells easier to cast.",
+                       type=int, default=0))
+
+    opts.append(Option("-fatiguemodmult",
+                       help="Path level modifier: Multiplies the fatigue cost of all spells generated by this value. Values less than 1 will make spells easier to cast.",
+                       type=float, default=1.0))
+
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",
                default=None))
@@ -291,9 +339,9 @@ def main():
             opt.toArgparse(parser)
 
         parser.add_argument("-run",
-                            help="Pass this if you want to run commmand line mode and not be forced into guided interactive!",
+                            help="Pass this if you want to run command line mode and not be forced into guided interactive!",
                             default=None)
-        args, unknown = parser.parse_known_args()
+        args = parser.parse_args()
         rollspells(**vars(args))
     else:
         print(f"MagicGen v{ver}: Procedural generator for Dom5 spellbooks!")
@@ -308,15 +356,14 @@ def main():
         try:
             rollspells(**args)
         except:
-            sys.stderr.write(fileparser.traceback.format_exc())
-            sys.stderr.write("\nErrors during generation. Press ENTER to exit.")
-            input()
+            _writetoconsole(fileparser.traceback.format_exc())
             return
         print("Complete. Press ENTER to exit.")
         input()
 
 
 if __name__ == "__main__":
+    print(sys.argv)
     main()
 
 # These are old functions I used to do some mass edits on my summon data files...
