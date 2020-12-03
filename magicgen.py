@@ -268,7 +268,8 @@ class Option(object):
 def main():
     opts = []
     opts.append(
-        Option("-spellsperlevel", help="Number of spells to try making at each research level", type=int, default=14))
+        Option("-spellsperlevel", help="Number of spells to try generating at each research level", type=int,
+               default=14))
     opts.append(Option("-constructionfactor",
                        help="Construction will get only this proportion of the normal number of spells. This is intended to be less than 1.0.",
                        type=float, default=0.33))
@@ -292,7 +293,7 @@ def main():
         parser.add_argument("-run",
                             help="Pass this if you want to run commmand line mode and not be forced into guided interactive!",
                             default=None)
-        args = parser.parse_args()
+        args, unknown = parser.parse_known_args()
         rollspells(**vars(args))
     else:
         print(f"MagicGen v{ver}: Procedural generator for Dom5 spellbooks!")
