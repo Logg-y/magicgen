@@ -132,3 +132,6 @@ dmypy.json
 log.txt
 magicgen/
 magicgen.zip
+
+# pycharm things
+.idea/
