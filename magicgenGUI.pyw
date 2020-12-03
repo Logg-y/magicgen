@@ -9,15 +9,9 @@ import PySimpleGUI as sg
 
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
-          "pathlevelmodmult"]
+          "pathlevelmodmult", "outputfolder"]
 proc = None
 outputqueue = queue.Queue()
-
-
-def log(t):
-    logfile = open("tmp.txt", "w")
-    logfile.write(t)
-
 
 def output_polling_thread(timeout=0.1):
     """
@@ -36,7 +30,6 @@ def output_polling_thread(timeout=0.1):
             if len(content) > 0:
                 outputqueue.put(content)
         else:
-            print("poll thread exit")
             break
 
 
@@ -57,25 +50,34 @@ def spawn_worker_process(**kwargs):
     path = os.path.join(os.getcwd(), "magicgen")
     outputqueue.put(f"Passing parameters: {paramlist}\n")
 
-    log(f"start subprocess, {paramlist}, {os.getcwd()}, {tmp}")
     proc = subprocess.Popen(
         paramlist, shell=False, cwd=os.getcwd(), bufsize=1,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         stdin=subprocess.PIPE,  # PyInstaller needs this or attempting the call throws "failed to execute script"
         universal_newlines=True)
-    log("start subprocess was okay")
     return proc
 
+UP_ARROW = "˄"
+DOWN_ARROW = "˅"
+
+defaultfolder = os.path.join(os.getcwd(), "outputs")
 
 def main():
     global proc
     sg.theme("DarkBrown")
-    layout = [
-        [sg.Text('')],
+
+    output_left_col = [[
+    sg.Text("Output Folder: ", k="-OutputFolderLabel-", pad=(7,5), size=(10, 1)),
+    sg.InputText(os.path.join(os.getcwd(), "outputs"), k="-outputfolder-", pad=(0,0), size=(43, 1))
+    ]]
+
+    basic_category = [
         [sg.Text('Name of the mod. If left blank a rather unhelpful number will be generated at random.',
                  size=(50, 2), relief="ridge"),
          sg.InputText(key='-modname-', size=(50, 1))],
+        [sg.Column(output_left_col),
+         sg.FolderBrowse(initial_folder=defaultfolder, k="-FolderBrowser-")],
         [sg.Text('Number of spells to generate at each research level (14)', size=(50, 1), relief="ridge"),
          sg.InputText(key='-spellsperlevel-', size=(4, 1), default_text=14)],
         [sg.Text(
@@ -93,6 +95,11 @@ def main():
             ' For example: C:/Users/[User]/AppData/Roaming/Dominions5/mods/magicgen.dm',
 
             size=(50, 4), relief="ridge"), sg.Multiline(key='-modlist-', size=(50, 5))],
+
+
+        ]
+
+    adv_category = [
         [sg.Text('What percentage of non-summoning spells will generate with a secondary effect. (20)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-secondarychance-', size=(4, 1), default_text=20)],
@@ -101,8 +108,10 @@ def main():
             size=(50, 2), relief="ridge"),
             sg.InputText(key='-summonsecondarychance-', size=(4, 1), default_text=50)],
         [sg.Text(
-            'Research modifier: This number is subtracted from the research level of all spells, making them easier to '
-            'cast. A value of 1 will make spells easier to cast, a value of -1 harder. (0)',
+            'Research modifier: This number is subtracted from the research level of all spells, making more powerful '
+            'spells appear at lower research. A value of 5 will make spells that are normally research 9 appear at '
+            'research 5 instead. A value of -1 here will make spells normally research 9 inaccessible, and level 9 '
+            'will instead be filled by spells that would normally generate at research 8. (0)',
             size=(50, 3), relief="ridge"),
             sg.InputText(key='-researchmodifier-', size=(4, 1), default_text=0)],
 
@@ -136,21 +145,35 @@ def main():
             size=(50, 5), relief="ridge"),
             sg.InputText(key='-fatiguemodmult-', size=(4, 1), default_text=1.0)],
 
-        [sg.Button('Generate', size=(7, 1)), sg.Button('Quit', size=(7, 1)), ],
-        [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
+        ]
+
+
+
+    layout = [[sg.Text("Welcome to the MagicGen UI!", k="-welcome-", font=("arial", 40))],
+        [sg.Text(UP_ARROW, k="-ToggleBasicOptionsArrow-", enable_events=True),
+            sg.Text("Basic Options", enable_events=True, k="-ToggleBasicOptionsLabel-", font=("arial", 20))],
+              [sg.pin(sg.Column(basic_category, k="-BasicOptions-"))],
+              [sg.Text(DOWN_ARROW, k="-ToggleAdvOptionsArrow-", enable_events=True),
+               sg.Text("Advanced Options", enable_events=True, k="-ToggleAdvOptionsLabel-", font=("arial", 20))],
+              [sg.pin(sg.Column(adv_category, k="-AdvOptions-", visible=False))],
+              [sg.Button('Generate', size=(7, 1)), sg.Button('Quit', size=(7, 1))],
+              [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
+
+
+
+    visibility = {"BasicOptions":True, "AdvOptions":False}
 
     window = sg.Window('MagicGen GUI', layout)
+
     # Event Loop to process "events" and get the "values" of the inputs
     generating = False
     while True:
         event, values = window.read(timeout=100)
-
         if event == sg.WIN_CLOSED or event == 'Quit':
             break
 
         if generating:
             if proc is not None:
-                print("Getlines")
                 while 1:
                     try:
                         new = outputqueue.get_nowait().strip()
@@ -177,6 +200,14 @@ def main():
             outputthread = threading.Thread(target=output_polling_thread)
             outputthread.start()
 
+        for section in ["AdvOptions", "BasicOptions"]:
+            if event.startswith(f"-Toggle{section}"):
+                newvis = not visibility[section]
+                visibility[section] = newvis
+                window[f"-Toggle{section}Arrow-"].update(UP_ARROW if newvis else DOWN_ARROW)
+                window[f"-{section}-"].update(visible=newvis)
+                break
+
             # output = proc.__str__().replace('\\r\\n', '\n')
         # sg.popup_scrolled(output, font='Courier 10', size=(100, 20), location=(960, 390),
         #                   title='MagicGen console log')
@@ -185,5 +216,4 @@ def main():
 
 
 if __name__ == "__main__":
-    log("starting")
     main()

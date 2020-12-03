@@ -31,6 +31,7 @@ if __name__ == "__main__":
     shutil.copy("weapons.csv", "magicgen/weapons.csv")
     shutil.copytree("data", "magicgen/data")
     shutil.copytree("unitdescr", "magicgen/unitdescr")
+    os.mkdir("magicgen/output")
 
     zipf = zipfile.ZipFile("magicgen.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("magicgen"):
