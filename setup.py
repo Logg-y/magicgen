@@ -11,10 +11,14 @@ if __name__ == "__main__":
         shutil.rmtree("dist")
     if os.path.isdir("magicgen"):
         shutil.rmtree("magicgen")
-    os.system("pyinstaller magicgen.py --onefile")
+    os.system("pyinstaller magicgen.py --onefile --window")
     # ugly for permissions
-    time.sleep(10)
+    #time.sleep(3)
     os.rename("dist", "magicgen")
+    os.system("pyinstaller magicgenGUI.pyw --onefile")
+    #time.sleep(3)
+    shutil.copy("dist/magicgenGUI.exe", "magicgen/magicgenGUI.exe")
+
     shutil.copy("LICENSE", "magicgen/LICENSE")
     shutil.copy("docs.md", "magicgen/docs.md")
     shutil.copy("readme.md", "magicgen/readme.md")
@@ -27,6 +31,7 @@ if __name__ == "__main__":
     shutil.copy("weapons.csv", "magicgen/weapons.csv")
     shutil.copytree("data", "magicgen/data")
     shutil.copytree("unitdescr", "magicgen/unitdescr")
+    os.mkdir("magicgen/output")
 
     zipf = zipfile.ZipFile("magicgen.zip", "w", zipfile.ZIP_DEFLATED)
     for root, dirs, files in os.walk("magicgen"):

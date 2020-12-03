@@ -238,6 +238,8 @@ class SpellEffect(object):
 		
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
+
+
 		"""
         if isnextspell:
             print(f"Starting nextspell: {self.name}")
@@ -532,6 +534,11 @@ class SpellEffect(object):
             s.path1level += math.floor(
                 (mod.pathperresearch + self.pathperresearch + secondary.pathperresearch) * actualpowerlvl)
 
+            s.path1level += options.get("pathlevelmodflat", 0)
+            s.path1level *= options.get("pathlevelmodmult", 1.0)
+            s.path1level = max(1, s.path1level)
+            s.path1level = math.floor(s.path1level)
+
             # extrapaths = math.ceil(scaleamt / self.scaleperpath)
             # s.path1level += extrapaths
 
@@ -556,11 +563,11 @@ class SpellEffect(object):
                 s.modcmdsbefore += extraspell.rollSpell(researchlevel, forceschool=s.school, forcepath=s.path1,
                                                         isnextspell=True, blockmodifier=False, setparams=setparams,
                                                         forcedmodifier=mod, forcepathlevel=s.path1level,
-                                                        allowskipchance=False).output()
+                                                        allowskipchance=False, **options).output()
             else:
                 s.modcmdsbefore += extraspell.rollSpell(researchlevel, forceschool=s.school, isnextspell=True,
                                                         blockmodifier=False, setparams=setparams, forcedmodifier=mod,
-                                                        forcepathlevel=s.path1level, allowskipchance=False).output()
+                                                        forcepathlevel=s.path1level, allowskipchance=False, **options).output()
 
         # scaling fatiguecost per effect
         flatnumeffects = s.nreff % 1000
@@ -638,7 +645,7 @@ class SpellEffect(object):
             return self.rollSpell(researchlevel, forceschool=forceschool, forcepath=forcepath, isnextspell=isnextspell,
                                   forcesecondaryeff=forcesecondaryeff, blocksecondary=blocksecondary,
                                   allowblood=allowblood, allowskipchance=allowskipchance, setparams=setparams,
-                                  forcepathlevel=forcepathlevel, forcedmodifier=forcedmodifier)
+                                  forcepathlevel=forcepathlevel, forcedmodifier=forcedmodifier, **options)
 
         # Forced modifier overrides
         for attrib, val in mod.setcommands:
@@ -702,7 +709,7 @@ class SpellEffect(object):
                                                                                                   forcepath=s.path1,
                                                                                                   isnextspell=True,
                                                                                                   blockmodifier=True,
-                                                                                                  setparams=setparams)
+                                                                                                  setparams=setparams, **options)
                                 if tmp.nextspell is None:
                                     print("ERROR: failed to generate nextspell")
                                     return None
@@ -854,6 +861,14 @@ class SpellEffect(object):
 
         # print (s.p())
         self.generated += 1
+
+        # Implement research level modifier options
+        s.researchlevel -= options.get("researchmodifier", 0)
+
+        s.fatiguecost += options.get("fatiguemodflat", 0)
+        s.fatiguecost *= options.get("fatiguemodmult", 1.0)
+        s.fatiguecost = math.floor(s.fatiguecost)
+        s.fatiguecost = max(0, s.fatiguecost)
 
         # If aoe is x% of field, nextspells seem to need it too?
         if 660 < s.aoe < 670:

@@ -4,6 +4,11 @@ add +5 natprot spell
 add unholy power spell
 remote assassin stalker
 
+
+since 1.0.0
+
+cloudify is no longer a valid modifier on self-only spells such as communions
+
 From magicgen_testing pack creation to v1.0.0:
 
 touch spell range increased to 3
