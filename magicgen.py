@@ -13,7 +13,7 @@ from spellstructures import utils
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 START_ID = 1300
-ver = "1.0.0"
+ver = "1.1.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -39,6 +39,8 @@ def rollspells(**options):
         if modname is None:
             modname = random.random()
 
+        if not os.path.isdir("./output"):
+            os.mkdir("./output")
         outputfolder = options.get("outputfolder", "./output")
 
         outfp = os.path.join(outputfolder, f"magicgen-{modname}.dm")
