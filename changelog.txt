@@ -3,11 +3,15 @@ TODO
 add +5 natprot spell
 add unholy power spell
 remote assassin stalker
+in-battle horror seed effect
+unique summons
+globals
 
+NEW IN v1.1.0
 
-since 1.0.0
-
-cloudify is no longer a valid modifier on self-only spells such as communions
+Cloudify is no longer a valid modifier on self-only spells such as communions
+Added new banishments (cloud, special fire explosion and chain lightning)
+Added generation UI
 
 From magicgen_testing pack creation to v1.0.0:
 
