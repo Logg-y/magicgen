@@ -143,5 +143,4 @@ class UnitMod(object):
         if len(extrashapechain) > 0 and interesting:
             print(f"spell dmg is {spell.damage}")
             print(out)
-        # raise Exception
         return out

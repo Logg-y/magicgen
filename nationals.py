@@ -7,8 +7,6 @@ from spellstructures import utils
 nationals = {}
 
 
-# test
-
 class NationalMage(object):
     def __init__(self):
         self.guaranteedpaths = 0

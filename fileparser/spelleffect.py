@@ -13,7 +13,6 @@ def readEffectFile(fp):
 	try:
 		lineno = None
 		out = {}
-		# ineff = False
 		curreff = None
 		with open(fp, "r") as f:
 			for lineno, line in enumerate(f):

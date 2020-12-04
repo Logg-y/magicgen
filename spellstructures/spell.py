@@ -122,9 +122,6 @@ class Spell(object):
             out += '#nextspell "{}"{}'.format(self.nextspell.name, "\n")
         if self.flightspr is not None:
             out += f"#flightspr {self.flightspr}\n"
-        else:
-            # out += "#flightspr -1\n"
-            pass
         if self.explspr is not None:
             out += f"#explspr {self.explspr}\n"
         if self.maxbounces > 0:
@@ -157,7 +154,7 @@ class Spell(object):
 
         if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
             out += self.nextspell.output()
-        return (out)
+        return out
 
 
 class SpellEffect(object):
@@ -219,7 +216,7 @@ class SpellEffect(object):
         self.smite = 0
 
     def __repr__(self):
-        return (f"SpellEffect({self.name})")
+        return f"SpellEffect({self.name})"
 
     def rollSpell(self, researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None,
                   blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None,
@@ -240,9 +237,8 @@ class SpellEffect(object):
 		
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
-
-
 		"""
+
         if isnextspell:
             print(f"Starting nextspell: {self.name}")
 
@@ -307,14 +303,8 @@ class SpellEffect(object):
         else:
             modlist = list(utils.modifiers.keys())
             random.shuffle(modlist)
-            # allowedmods = []
-            # for mod in modlist:
-            #	if utils.modifiers[mod].compatibility(self, researchlevel):
-            #		allowedmods.append(mod)
             mod = None
-            # s.comments.append("Allowed modifiers: " + ",".join(allowedmods))
             while mod is None:
-                # print(f"check mod {modlist[0]}")
                 m = utils.modifiers[modlist.pop(0)]
                 if m.compatibility(self, researchlevel, isnextspell):
                     if random.random() * 100 < m.skipchance:
@@ -326,7 +316,6 @@ class SpellEffect(object):
                 if len(modlist) == 0:
                     print(f"No valid modifiers for {self.name} at research {researchlevel}")
                     raise Exception(f"No valid modifiers for {self.name} at research {researchlevel}")
-                    # return None
 
                     raise ValueError(f"No valid modifiers for {self.name}")
         secondarylist = list(utils.secondaries.keys())
@@ -337,11 +326,6 @@ class SpellEffect(object):
         if self.effect in [1, 10001, 10050, 10038, 21, 10021]:
             options["secondarychance"] = options.get("summonsecondarychance", 50)
 
-        # allowedsecondaries = []
-        # for seccheck in secondarylist:
-        #	if utils.secondaries[seccheck].compatibility(self, mod, researchlevel):
-        #		allowedsecondaries.append(seccheck)
-        # s.comments.append("Allowed secondaries: " + ",".join(allowedsecondaries))
         if blocksecondary:
             secondary = utils.secondaries["Do Nothing"]
         elif forcesecondaryeff is None and random.random() * 100 >= options.get("secondarychance", 20):
@@ -353,15 +337,12 @@ class SpellEffect(object):
                 if toconsider.compatibility(self, mod, researchlevel):
                     if forcesecondaryeff is None:
                         if random.random() * 100 < toconsider.skipchance:
-                            # print("Failed skipchance")
                             secondarylist.append(toconsider.name)
                         else:
-                            # print(f"Using secondary {toconsider.name}")
                             secondary = toconsider
                             break
                     else:
                         # Make sure its path matches what was asked for
-                        # print(toconsider.name, toconsider.paths, forcesecondaryeff)
                         if toconsider.paths & forcesecondaryeff:
                             # ignore skipchance for this
                             print(f"Using secondary {toconsider.name}")
@@ -370,7 +351,6 @@ class SpellEffect(object):
                         else:
                             print("Bad paths for forced secondary")
                 if len(secondarylist) == 0:
-                    # print(f"No valid secondaries for {self.name} at research {researchlevel}")
                     print(f"Failed to generate {self.name} at {researchlevel}: no valid secondaries")
                     return None
 
@@ -380,14 +360,12 @@ class SpellEffect(object):
         # Also, Nextspells without a scale rate should still be allowed
         if researchlevel + mod.power + secondary.power < self.power and self.paths != 256 and not (
                 isnextspell and self.scalerate == 0):
-            # print("bad power")
             print(f"Failed to generate {self.name} at {researchlevel}: final power level too low")
             return None
 
         if researchlevel + mod.power + secondary.power > self.maxpower and self.paths != 256 and not (
                 isnextspell and self.scalerate == 0):
             print(f"Failed to generate {self.name} at {researchlevel}: final power level too high")
-            # print("bad power")
             return None
 
         s.name = self.name + " " + str(random.randint(-9999, 9999))
@@ -475,7 +453,6 @@ class SpellEffect(object):
             scaleamt = 0
             for x in range(0, actualpowerlvl):
                 scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
-            # print(f"final scaleamt is {scaleamt}")
             scaleamt = math.floor(scaleamt)
 
             # scale the thing
@@ -491,14 +468,10 @@ class SpellEffect(object):
                         if not self.spec & 4194304:
                             s.spec |= 4194304
                 elif self.spelltype & SpellTypes.BUFF:
-                    # if s.aoe > 5:
-                    #	s.aoe = int(5*(s.aoe // 5.0))
                     pass
 
                 elif self.spelltype & SpellTypes.EVOCATION:
                     tmp = s.aoe % 1000
-                    # if tmp > 5:
-                    #	s.aoe = int(5*(s.aoe // 5.0))
                     if self.spelltype & SpellTypes.ALLOW_BATTLEFIELD and not mod.nobattlefield and not secondary.nobattlefield:
                         tmp = s.aoe % 1000
                         if tmp >= 120:
@@ -544,9 +517,6 @@ class SpellEffect(object):
             s.path1level = max(1, s.path1level)
             s.path1level = math.floor(s.path1level)
 
-            # extrapaths = math.ceil(scaleamt / self.scaleperpath)
-            # s.path1level += extrapaths
-
             s.fatiguecost += 10 * actualpowerlvl
             print(f"Power level: Added {10 * actualpowerlvl} to fatigue cost, it is now {s.fatiguecost}")
 
@@ -572,7 +542,8 @@ class SpellEffect(object):
             else:
                 s.modcmdsbefore += extraspell.rollSpell(researchlevel, forceschool=s.school, isnextspell=True,
                                                         blockmodifier=False, setparams=setparams, forcedmodifier=mod,
-                                                        forcepathlevel=s.path1level, allowskipchance=False, **options).output()
+                                                        forcepathlevel=s.path1level, allowskipchance=False,
+                                                        **options).output()
 
         # scaling fatiguecost per effect
         flatnumeffects = s.nreff % 1000
@@ -714,7 +685,8 @@ class SpellEffect(object):
                                                                                                   forcepath=s.path1,
                                                                                                   isnextspell=True,
                                                                                                   blockmodifier=True,
-                                                                                                  setparams=setparams, **options)
+                                                                                                  setparams=setparams,
+                                                                                                  **options)
                                 if tmp.nextspell is None:
                                     print("ERROR: failed to generate nextspell")
                                     return None
@@ -733,7 +705,6 @@ class SpellEffect(object):
         # And takes slaves.
         if s.path1 == PathFlags.BLOOD and s.school != -1:
             if not (self.spelltype & SpellTypes.ALLOW_NO_SLAVE_COST):
-                # s.fatiguecost = max(s.fatiguecost, 100)
                 pass
             s.school = SchoolFlags.BLOOD
             s.sound = 32  # this is the blood spell sound that they ALL get
@@ -775,7 +746,6 @@ class SpellEffect(object):
 
             s.details = s.details.strip()
 
-        # s.descr += f" Generated with modifier {mod.name}."
         s.descr = s.descr.strip()
         s.details = s.details.replace("\\n", "\n")
         scale = s.nreff // 1000
@@ -842,7 +812,6 @@ class SpellEffect(object):
                 if len(names) == 0:
                     print("Had to give up on this spell because no names were valid")
                     return None
-        # s.name = naming.parsestring(names[0], plural=plural, aoe=s.aoe, spelltype=self.spelltype, titlecase=True)
 
         s.comments.append(f"Generated with effect {self.name} at research level {researchlevel}")
         s.comments.append(f"Chosen modifier is {mod.name}")
@@ -877,7 +846,6 @@ class SpellEffect(object):
             elif s.path1 == 128:
                 s.explspr = 10043
 
-        # print (s.p())
         self.generated += 1
 
         # Implement research level modifier options

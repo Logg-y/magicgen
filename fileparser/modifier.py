@@ -14,7 +14,6 @@ modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefati
 def readModifierFile(fp):
     "Read one file and return all the spell modifiers within."
     out = {}
-    # ineff = False
     curreff = None
     with open(fp, "r") as f:
         for lineno, line in enumerate(f):

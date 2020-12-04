@@ -17,7 +17,6 @@ class NameCond(object):
         self.val = self.val.strip()
         val = int(self.val)
         if self.val2 is not None:
-            # print(f"#cond2 {self.val2} {self.op2} {paramval} {self.op} {self.val}")
             val2 = int(self.val2)
             good = False
             self.op2 = self.op2.strip()
@@ -37,8 +36,6 @@ class NameCond(object):
             if not good:
                 return False
 
-        # print(f"param to test was {self.param}")
-        # print(f"test: {paramval} {self.op} {self.val}")
         if self.op == ">":
             return paramval > val
         elif self.op == "==":
