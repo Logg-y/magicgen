@@ -1,9 +1,8 @@
+import os
+import queue
 import subprocess
 import sys
 import threading
-import os
-import time
-import queue
 
 import PySimpleGUI as sg
 
@@ -12,6 +11,7 @@ CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "
           "pathlevelmodmult", "outputfolder"]
 proc = None
 outputqueue = queue.Queue()
+
 
 def output_polling_thread(timeout=0.1):
     """
@@ -58,18 +58,20 @@ def spawn_worker_process(**kwargs):
         universal_newlines=True)
     return proc
 
+
 UP_ARROW = "˄"
 DOWN_ARROW = "˅"
 
 defaultfolder = os.path.join(os.getcwd(), "output")
+
 
 def main():
     global proc
     sg.theme("DarkBrown")
 
     output_left_col = [[
-    sg.Text("Output Folder: ", k="-OutputFolderLabel-", pad=(7,5), size=(10, 1)),
-    sg.InputText(os.path.join(os.getcwd(), "output"), k="-outputfolder-", pad=(0,0), size=(43, 1))
+        sg.Text("Output Folder: ", k="-OutputFolderLabel-", pad=(7, 5), size=(10, 1)),
+        sg.InputText(os.path.join(os.getcwd(), "output"), k="-outputfolder-", pad=(0, 0), size=(43, 1))
     ]]
 
     basic_category = [
@@ -96,8 +98,7 @@ def main():
 
             size=(50, 4), relief="ridge"), sg.Multiline(key='-modlist-', size=(50, 5))],
 
-
-        ]
+    ]
 
     adv_category = [
         [sg.Text('What percentage of non-summoning spells will generate with a secondary effect. (20)', size=(50, 2),
@@ -112,7 +113,7 @@ def main():
             'spells appear at lower research. A value of 5 will make spells that are normally research 9 appear at '
             'research 5 instead. A value of -1 here will make spells normally research 9 inaccessible, and level 9 '
             'will instead be filled by spells that would normally generate at research 8. (0)',
-            size=(50, 3), relief="ridge"),
+            size=(50, 6), relief="ridge"),
             sg.InputText(key='-researchmodifier-', size=(4, 1), default_text=0)],
 
         [sg.Text(
@@ -145,13 +146,11 @@ def main():
             size=(50, 5), relief="ridge"),
             sg.InputText(key='-fatiguemodmult-', size=(4, 1), default_text=1.0)],
 
-        ]
+    ]
 
-
-
-    layout = [[sg.Text("Welcome to the MagicGen UI!", k="-welcome-", font=("arial", 40))],
-        [sg.Text(UP_ARROW, k="-ToggleBasicOptionsArrow-", enable_events=True),
-            sg.Text("Basic Options", enable_events=True, k="-ToggleBasicOptionsLabel-", font=("arial", 20))],
+    layout = [[sg.Text("Welcome to MagicGen!", k="-welcome-", font=("arial", 40))],
+              [sg.Text(UP_ARROW, k="-ToggleBasicOptionsArrow-", enable_events=True),
+               sg.Text("Basic Options", enable_events=True, k="-ToggleBasicOptionsLabel-", font=("arial", 20))],
               [sg.pin(sg.Column(basic_category, k="-BasicOptions-"))],
               [sg.Text(DOWN_ARROW, k="-ToggleAdvOptionsArrow-", enable_events=True),
                sg.Text("Advanced Options", enable_events=True, k="-ToggleAdvOptionsLabel-", font=("arial", 20))],
@@ -159,11 +158,8 @@ def main():
               [sg.Button('Generate', size=(7, 1)), sg.Button('Quit', size=(7, 1))],
               [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
 
-
-
-    visibility = {"BasicOptions":True, "AdvOptions":False}
-
-    window = sg.Window('MagicGen GUI', layout)
+    visibility = {"BasicOptions": True, "AdvOptions": False}
+    window = sg.Window('MagicGen: Generating New Spellbooks Since 1986!', layout)
 
     # Event Loop to process "events" and get the "values" of the inputs
     generating = False
@@ -194,8 +190,6 @@ def main():
                 argval = values[f"-{argname}-"]
                 if argval.strip() != "":
                     clargdict[argname] = argval
-            # genthread = threading.Thread(target=process_thread, kwargs=clargdict, daemon=False)
-            # genthread.start()
             spawn_worker_process(**clargdict)
             outputthread = threading.Thread(target=output_polling_thread)
             outputthread.start()
@@ -207,10 +201,6 @@ def main():
                 window[f"-Toggle{section}Arrow-"].update(UP_ARROW if newvis else DOWN_ARROW)
                 window[f"-{section}-"].update(visible=newvis)
                 break
-
-            # output = proc.__str__().replace('\\r\\n', '\n')
-        # sg.popup_scrolled(output, font='Courier 10', size=(100, 20), location=(960, 390),
-        #                   title='MagicGen console log')
 
     window.close()
 

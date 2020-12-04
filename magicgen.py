@@ -1,9 +1,9 @@
 import argparse
 import copy
 import csv
+import os
 import random
 import sys
-import os
 
 import fileparser
 import nationals
@@ -17,6 +17,7 @@ ver = "1.0.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
+
 def _writetoconsole(line):
     """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
     this be converted to exe with --window to avoid the console coming up.
@@ -29,7 +30,6 @@ def _writetoconsole(line):
 def rollspells(**options):
     with open("log.txt", "w") as logfile:
         sys.stdout = logfile
-        # sys.stderr = logfile
         with open("spells.csv", "r") as f:
             r = csv.DictReader(f, delimiter="\t")
             for line in r:
@@ -71,7 +71,7 @@ def rollspells(**options):
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
                     spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.33))
-                for research in range(0+researchmod, 10+researchmod):
+                for research in range(0 + researchmod, 10 + researchmod):
                     if school == 8 and research in [2, 4, 6, 8]:
                         # construction crafting levels don't get spells
                         continue
@@ -124,7 +124,7 @@ def rollspells(**options):
                     print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
 
             # Make holy spells
-            _writetoconsole("holyspell")
+            _writetoconsole("Generating holyspells \n")
             holy = fileparser.readEffectsFromDir(r".\data\spells\holy")
             for spelltype in ["banishment", "smite"]:
                 for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
@@ -135,10 +135,8 @@ def rollspells(**options):
                     # skipchance not passing just means throwing it to the end
                     while 1:
                         effectname = effectlist.pop(0)
-                        _writetoconsole("holyspell try\n")
                         spelleff = holy[effectname]
                         if spelleff.secondarypaths & path and (getattr(spelleff, spelltype) > 0):
-                            _writetoconsole("effect valid\n")
                             if random.random() * 100 < spelleff.skipchance:
                                 # failed skipchance, go to the end
                                 effectlist.append(effectname)
@@ -146,22 +144,17 @@ def rollspells(**options):
 
                                 # force secondary effect on themed spells that don't have a next spell
                                 # these specmasks are extra effect and extra effect on damage
-                                _writetoconsole(f"len is {len(spelleff.nextspell)} ")
-                                _writetoconsole(f"effname is {effectname}, path is {path}\n")
                                 if len(spelleff.nextspell) == 0 and (
                                         (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
                                     l.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
                                                                 blockmodifier=True,
                                                                 allowskipchance=False, **options))
-                                    _writetoconsole(f"holyspell made something with a nextspell {l[-1].name} with {effectname}\n")
                                 else:  # block secondaries on things that DO have a nextspell built in
                                     l.append(
                                         spelleff.rollSpell(spelleff.power, blocksecondary=True,
                                                            blockmodifier=True,
                                                            allowskipchance=False, **options))
-                                    _writetoconsole(f"holyspell made something without nextspell {l[-1].name} with {effectname}\n")
                                 break
-
 
             _writetoconsole("Generating national spells...\n")
 
@@ -176,9 +169,8 @@ def rollspells(**options):
                 print(f"Generating spells for nation {nation}")
                 for x in range(0, options.get("nationalspells", 12)):
                     chosencomm = random.choice(nationals.nationals[nation])
-                    # researchlevel = random.randint(1, 9)
                     effectpool = copy.copy(s)
-                    researchlevelstotry = list(range(1+researchmod, 10+researchmod))
+                    researchlevelstotry = list(range(1 + researchmod, 10 + researchmod))
                     random.shuffle(researchlevelstotry)
                     researchlevel = researchlevelstotry.pop(0)
                     while 1:
@@ -201,7 +193,9 @@ def rollspells(**options):
                                 if primarypath is not None:
                                     allowblood = (primarypath == 128 or chosencomm.allpaths & 128)
                                     print(
-                                        f"Try generating national spell for {nation} with effect {choseneffect.name}, primarypath={primarypath}, secondaries={chosencomm.allpaths}, there are {len(effectpool)} effects")
+                                        f"Try generating national spell for {nation} with effect {choseneffect.name}, "
+                                        f"primarypath={primarypath}, secondaries={chosencomm.allpaths}, there are "
+                                        f"{len(effectpool)} effects")
                                     for attempt in range(0, 2):
                                         if attempt == 0:
                                             spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
@@ -217,7 +211,6 @@ def rollspells(**options):
                                             l.append(spell)
                                             succeeded = True
                                             successfuleffectnames.append(copy.copy(choseneffect.name))
-                                            # print(f"Successful names now {successfuleffectnames}")
                                             break
 
                         if succeeded:
@@ -234,7 +227,6 @@ def rollspells(**options):
 
             _writetoconsole(f"Writing output {outfp}...\n")
             f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
-            # f.write("#clearallspells\n\n\n")
             for x in range(1, 1 + START_ID):
                 if x not in spellstokeep:
                     f.write(f"#selectspell {x}\n")
@@ -245,7 +237,6 @@ def rollspells(**options):
             print(f"There are {len(l)} spells to write!")
             for spell in l:
                 if spell is not None:
-                    # print(spell.name)
                     f.write(spell.output())
             f.flush()
             f.close()
@@ -396,69 +387,3 @@ def main():
 if __name__ == "__main__":
     print(sys.argv)
     main()
-
-# These are old functions I used to do some mass edits on my summon data files...
-
-# def editfolder(folder):
-#	for f in os.listdir(folder):
-#		if not os.path.isdir(os.path.join(folder, f)):
-#			with open(os.path.join(folder, f)) as realf:
-#				lines = []
-#				for line in realf:
-#					lines.append(line)
-#				insertions = {}
-#				foundchance = False
-#				for i, line in enumerate(lines):
-#					m = re.match("#skipchance (.*)", line)
-#					if m is not None:
-#						realchance = 100-int(m.groups()[0])
-#						realchance = int(realchance/2)
-#						newskipchance = 100-realchance
-#						lines[i] = f"#skipchance {newskipchance}\n"
-#						print(f"{f}: edit skipchance {m.groups()[0]} to {newskipchance}")
-#						foundchance = True
-#					if line.startswith("#end") and not foundchance:
-#						realchance = 100-0
-#						realchance = int(realchance/2)
-#						newskipchance = 100-realchance
-#						insertions[i] = f"#skipchance {newskipchance}\n"
-#						print(f"{f}: insert skipchance {newskipchance} at {i}")
-#					elif line.startswith("#end"):
-#						foundchance = False
-#
-#
-#				for k, v in insertions.items():
-#					lines.insert(k, v)
-#
-#			with open(os.path.join(folder, f), "w") as realf:
-#				for line in lines:
-#					realf.write(line)
-#
-# def editfolder2(folder):
-#	for f in os.listdir(folder):
-#		if not os.path.isdir(os.path.join(folder, f)):
-#			with open(os.path.join(folder, f)) as realf:
-#				lines = []
-#				for line in realf:
-#					lines.append(line)
-#				insertions = {}
-#				foundchance = False
-#				for i, line in enumerate(lines):
-#					m = re.match("#skipchance (.*)", line)
-#					if m is not None:
-#						newskipchance = int(int(m.groups()[0])/3)
-#						lines[i] = f"#skipchance {newskipchance}\n"
-#						print(f"{f}: edit skipchance {m.groups()[0]} to {newskipchance}")
-#						foundchance = True
-#					if line.startswith("#end") and not foundchance:
-#						pass
-#					elif line.startswith("#end"):
-#						foundchance = False
-#
-#
-#				for k, v in insertions.items():
-#					lines.insert(k, v)
-#
-#			with open(os.path.join(folder, f), "w") as realf:
-#				for line in lines:
-#					realf.write(line)

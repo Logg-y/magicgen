@@ -121,10 +121,7 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             pluralised = pluraliser.pluralise(text)
         else:
             pluralised = text
-        # print(string)
-        # print(text, pluralised)
         string = re.sub(f"%{text}%", pluralised, string)
-    # print(string)
 
     # remove double spaces
     string = string.replace("  ", " ")

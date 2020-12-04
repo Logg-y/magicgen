@@ -12,7 +12,6 @@ secondary_params_float = []
 def readUnitMod(fp):
 	"Read one file and return all the spell modifiers within."
 	out = {}
-	#ineff = False
 	curreff = None
 	with open(fp, "r") as f:
 		for lineno, line in enumerate(f):
@@ -65,7 +64,6 @@ def readUnitMod(fp):
 						continue
 
 				if sorted: continue
-
 
 				if line.startswith("#descrcond"):
 					m = re.match('#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)\\W+"(.*)"', line)

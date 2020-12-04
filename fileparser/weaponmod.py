@@ -12,7 +12,6 @@ secondary_params_float = []
 def readWeaponModFile(fp):
     "Read one file and return all the weapon modifiers within."
     out = {}
-    # ineff = False
     curreff = None
     with open(fp, "r") as f:
         for lineno, line in enumerate(f):
