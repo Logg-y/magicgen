@@ -61,7 +61,7 @@ def spawn_worker_process(**kwargs):
 UP_ARROW = "˄"
 DOWN_ARROW = "˅"
 
-defaultfolder = os.path.join(os.getcwd(), "outputs")
+defaultfolder = os.path.join(os.getcwd(), "output")
 
 def main():
     global proc
@@ -69,7 +69,7 @@ def main():
 
     output_left_col = [[
     sg.Text("Output Folder: ", k="-OutputFolderLabel-", pad=(7,5), size=(10, 1)),
-    sg.InputText(os.path.join(os.getcwd(), "outputs"), k="-outputfolder-", pad=(0,0), size=(43, 1))
+    sg.InputText(os.path.join(os.getcwd(), "output"), k="-outputfolder-", pad=(0,0), size=(43, 1))
     ]]
 
     basic_category = [

@@ -10,7 +10,7 @@ import nationals
 from spellstructures import utils
 
 # List of spells to not push to uncastable: these are only divine spells
-spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190, 151, 170]
+spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 START_ID = 1300
 ver = "1.0.0"
@@ -63,11 +63,6 @@ def rollspells(**options):
             # Keep track of which effects have been done at which research levels
             # this is because we don't want to duplicate any with national spells
             generatedeffectsatlevels = {}
-
-            for k in s:
-                sp = s[k]
-                if sp.nextspell != "":
-                    sp.nextspell = s[sp.nextspell]
 
             researchmod = options.get("researchmodifier", 0)
 
@@ -129,11 +124,44 @@ def rollspells(**options):
                     print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
 
             # Make holy spells
+            _writetoconsole("holyspell")
             holy = fileparser.readEffectsFromDir(r".\data\spells\holy")
-            for name, spelleff in holy.items():
-                for path in [1, 2, 4, 8, 16, 32, 64, 128]:
-                    l.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path, blockmodifier=True,
-                                                allowskipchance=False, **options))
+            for spelltype in ["banishment", "smite"]:
+                for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
+                    effectpool = copy.copy(holy)
+                    effectlist = list(effectpool.keys())
+                    random.shuffle(effectlist)
+                    # Make a list of effects, go through them in sequence
+                    # skipchance not passing just means throwing it to the end
+                    while 1:
+                        effectname = effectlist.pop(0)
+                        _writetoconsole("holyspell try\n")
+                        spelleff = holy[effectname]
+                        if spelleff.secondarypaths & path and (getattr(spelleff, spelltype) > 0):
+                            _writetoconsole("effect valid\n")
+                            if random.random() * 100 < spelleff.skipchance:
+                                # failed skipchance, go to the end
+                                effectlist.append(effectname)
+                            else:
+
+                                # force secondary effect on themed spells that don't have a next spell
+                                # these specmasks are extra effect and extra effect on damage
+                                _writetoconsole(f"len is {len(spelleff.nextspell)} ")
+                                _writetoconsole(f"effname is {effectname}, path is {path}\n")
+                                if len(spelleff.nextspell) == 0 and (
+                                        (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
+                                    l.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
+                                                                blockmodifier=True,
+                                                                allowskipchance=False, **options))
+                                    _writetoconsole(f"holyspell made something with a nextspell {l[-1].name} with {effectname}\n")
+                                else:  # block secondaries on things that DO have a nextspell built in
+                                    l.append(
+                                        spelleff.rollSpell(spelleff.power, blocksecondary=True,
+                                                           blockmodifier=True,
+                                                           allowskipchance=False, **options))
+                                    _writetoconsole(f"holyspell made something without nextspell {l[-1].name} with {effectname}\n")
+                                break
+
 
             _writetoconsole("Generating national spells...\n")
 

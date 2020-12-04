@@ -215,6 +215,8 @@ class SpellEffect(object):
         self.donotsetextraspellpath = 0
         self.aicastmod = 0
         self.pathskipchances = {}
+        self.banishment = 0
+        self.smite = 0
 
     def __repr__(self):
         return (f"SpellEffect({self.name})")
@@ -258,8 +260,11 @@ class SpellEffect(object):
             print(f"Failed to generate {self.name} at {researchlevel}: effect is unique and already exists")
             return None
 
+        if isinstance(self.nextspell, str) and len(self.nextspell) > 0:
+            self.nextspell = utils.spelleffects[self.nextspell]
+
         # Don't make lots of generations from the same effect
-        if allowskipchance and self.generated > 0:
+        if allowskipchance and not isnextspell and self.generated > 0:
             tot = 0
             for x in range(0, self.generated):
                 tot += (x + 1) * 8
@@ -790,8 +795,18 @@ class SpellEffect(object):
         names = self.names.get(s.path1, [])[:]
 
         # Banishes and smites need to get a name out of their path
-        if self.paths == 256 and forcesecondaryeff is not None:
-            names = self.names.get(forcesecondaryeff, [])[:]
+        if self.paths == 256:
+            godpath = forcesecondaryeff
+            if forcesecondaryeff is None:
+                if self.secondarypaths != 0:
+                    godpath = self.secondarypaths
+                else:
+                    raise ValueError(f"Couldn't work out god path for holy spell {self.name} passed "
+                                     f"with forcesecondaryeff {forcesecondaryeff} - this probably this holy effect"
+                                     f" starts with a nextspell and ambiguous secondary paths. To fix"
+                                     f" make secondary path for this effect NOT a compound of multiiple paths ")
+
+            names = self.names.get(godpath, [])[:]
             # The above will have scaled holy stuff which we don't want
             # override everything for holy spells here
             s.path1level = self.pathlevel
@@ -799,7 +814,10 @@ class SpellEffect(object):
             s.path2 = -1
             s.researchlevel = 0
             s.school = SchoolFlags.DIVINE
-            s.godpathspell = int(math.log(forcesecondaryeff, 2))
+            s.godpathspell = int(math.log(godpath, 2))
+            # 256 means pure holy, aka force the backup of -1 so it's used when you have no god paths >=4
+            if godpath == 256:
+                s.godpathspell = -1
 
         # see which nameconds, if any, match, and add to the name pool
         for x in self.nameconds.get(s.path1, []):
