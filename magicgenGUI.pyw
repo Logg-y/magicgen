@@ -12,6 +12,8 @@ CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "
 proc = None
 outputqueue = queue.Queue()
 
+ver = "v1.1.1"
+
 
 def output_polling_thread(timeout=0.1):
     """
@@ -159,7 +161,7 @@ def main():
               [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
 
     visibility = {"BasicOptions": True, "AdvOptions": False}
-    window = sg.Window('MagicGen: Generating New Spellbooks Since 1986!', layout)
+    window = sg.Window(f"MagicGen {ver}: Generating New Spellbooks Since 1986!", layout)
 
     # Event Loop to process "events" and get the "values" of the inputs
     generating = False
