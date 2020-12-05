@@ -13,6 +13,7 @@
 #explspr 10232
 #sound 43
 #schools 1
+#ainocast 1
 
 #skipchance 70
 

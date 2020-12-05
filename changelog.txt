@@ -7,6 +7,12 @@ in-battle horror seed effect
 unique summons
 globals
 
+NEW IN v1.1.1
+
+"Unending" chain lightning scaling rate inreased by 50%.
+Foulspawn and greater foulspawn rituals made higher research and have higher path requirement, they were previously WAY too strong.
+Battlesummoned mages now always cost a gem. This is mainly to prevent recursive issues with summoning spells that can cast a pathboosting spell and then make more copies of themselves.
+
 NEW IN v1.1.0
 
 Cloudify is no longer a valid modifier on self-only spells such as communions

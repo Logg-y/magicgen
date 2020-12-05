@@ -31,7 +31,7 @@
 #spec 0
 #power 3
 #nreff 3004
-#pathlevel 1
+#pathlevel 2
 #fatiguecost 300
 #schools 1
 
@@ -45,7 +45,7 @@
 #spelltype 20
 
 #scalerate 2
-#scalefatiguemult 7
+#scalefatiguemult 10
 #end
 
 #neweffect "Remote summon Foulspawn"
@@ -63,6 +63,8 @@
 #paths 64
 #secondarypaths 64
 #skipchance 95
+
+#scalefatiguemult 5
 
 #name 64 "Send Foulspawn"
 #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."

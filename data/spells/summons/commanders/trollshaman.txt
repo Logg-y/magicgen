@@ -5,14 +5,15 @@
 #spec 0
 #power 7
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 6
 #chassisvalue 20
 #range 6
-#fatiguecost 80
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
+
 
 #skipchance 70
 

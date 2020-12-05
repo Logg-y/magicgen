@@ -30,9 +30,9 @@
 #effect 10001
 #damage -10
 #spec 0
-#power 2
+#power 5
 #nreff 1001
-#pathlevel 1
+#pathlevel 3
 #fatiguecost 500
 #schools 1
 
@@ -54,10 +54,10 @@
 #provrange 4
 #damage -10
 #spec 0
-#power 4
+#power 6
 #maxpower 9
 #nreff 1001
-#pathlevel 3
+#pathlevel 4
 #fatiguecost 300
 #scalefatiguemult 60
 #schools 1

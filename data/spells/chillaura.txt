@@ -13,13 +13,13 @@
 
 -- Seems bugged and will only cast if battlefield wide
 #aoe 666
-#power 8
-#maxpower 8
-#pathlevel 1
+#power 7
+#maxpower 7
+#pathlevel 3
 #explspr 10022
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 100
 
 
 #paths 164

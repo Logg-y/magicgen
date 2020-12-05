@@ -225,7 +225,7 @@
 
 -- evo, scale numbounces
 #spelltype 130
-#scalerate 2
+#scalerate 3
 -- #scalecost 1.4
 #schools 4
 #end

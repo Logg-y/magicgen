@@ -5,11 +5,11 @@
 #spec 0
 #power 3
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 5
 #range 6
-#fatiguecost 60
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
