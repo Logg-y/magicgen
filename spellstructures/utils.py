@@ -8,7 +8,8 @@ secondaries = {}
 unitmods = {}
 weaponmods = {}
 
-spellnames = []
+spellnames = {}
+spellqualifiers = ["Greater ", "Improved ", "Advanced ", "Masterful ", "Perfected ", "Flawless ", "Ultimate "]
 
 # The IDs to start making STUFF at.
 SPELL_ID = 1310

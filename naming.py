@@ -55,65 +55,66 @@ pluraliser = Pluraliser()
 
 def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell=None, isspell=False):
     aoe = aoe % 1000
+    parsedname = string
     # print(f"mode is plural: {plural}")
     if plural:
-        string = string.replace("ARTICLE_N", "")
-        string = string.replace("ARTICLE", "")
-        string = string.replace("PRONOUN_POS", "their")
-        string = string.replace("PRONOUN_SUB", "they")
-        string = string.replace("PRONOUN", "them")
+        parsedname = parsedname.replace("ARTICLE_N", "")
+        parsedname = parsedname.replace("ARTICLE", "")
+        parsedname = parsedname.replace("PRONOUN_POS", "their")
+        parsedname = parsedname.replace("PRONOUN_SUB", "they")
+        parsedname = parsedname.replace("PRONOUN", "them")
     else:
-        string = string.replace("ARTICLE_N", "an")
-        string = string.replace("ARTICLE", "a")
-        string = string.replace("PRONOUN_POS", "his")
-        string = string.replace("PRONOUN_SUB", "he")
-        string = string.replace("PRONOUN", "him")
+        parsedname = parsedname.replace("ARTICLE_N", "an")
+        parsedname = parsedname.replace("ARTICLE", "a")
+        parsedname = parsedname.replace("PRONOUN_POS", "his")
+        parsedname = parsedname.replace("PRONOUN_SUB", "he")
+        parsedname = parsedname.replace("PRONOUN", "him")
 
     if spelltype & spellstructures.SpellTypes.BUFF:
         if aoe == 0:
-            string = string.replace("SUBJECT", "the caster")
-            string = string.replace("SIZE", "tiny")
+            parsedname = parsedname.replace("SUBJECT", "the caster")
+            parsedname = parsedname.replace("SIZE", "tiny")
         elif aoe < 5:
-            string = string.replace("SUBJECT", "a $few$ soldiers")
-            string = string.replace("SIZE", "small")
+            parsedname = parsedname.replace("SUBJECT", "a $few$ soldiers")
+            parsedname = parsedname.replace("SIZE", "small")
         elif aoe < 20:
-            string = string.replace("SUBJECT", "many soldiers")
-            string = string.replace("SIZE", "large")
+            parsedname = parsedname.replace("SUBJECT", "many soldiers")
+            parsedname = parsedname.replace("SIZE", "large")
         elif aoe < 50:
-            string = string.replace("SUBJECT", "a large group of soldiers")
-            string = string.replace("SIZE", "massive")
+            parsedname = parsedname.replace("SUBJECT", "a large group of soldiers")
+            parsedname = parsedname.replace("SIZE", "massive")
         else:
-            string = string.replace("SUBJECT", "the entire army")
-            string = string.replace("SIZE", "massive")
+            parsedname = parsedname.replace("SUBJECT", "the entire army")
+            parsedname = parsedname.replace("SIZE", "massive")
     elif spelltype & spellstructures.SpellTypes.EVOCATION:
         if aoe == 0:
-            string = string.replace("SUBJECT", "one enemy")
-            string = string.replace("SIZE", "tiny")
+            parsedname = parsedname.replace("SUBJECT", "one enemy")
+            parsedname = parsedname.replace("SIZE", "tiny")
         elif aoe < 5:
-            string = string.replace("SUBJECT", "a $few$ enemies")
-            string = string.replace("SIZE", "small")
+            parsedname = parsedname.replace("SUBJECT", "a $few$ enemies")
+            parsedname = parsedname.replace("SIZE", "small")
         elif aoe < 20:
-            string = string.replace("SUBJECT", "many enemies")
-            string = string.replace("SIZE", "large")
+            parsedname = parsedname.replace("SUBJECT", "many enemies")
+            parsedname = parsedname.replace("SIZE", "large")
         elif aoe < 80:
-            string = string.replace("SUBJECT", "a massive group of enemies")
-            string = string.replace("SIZE", "massive")
+            parsedname = parsedname.replace("SUBJECT", "a massive group of enemies")
+            parsedname = parsedname.replace("SIZE", "massive")
         else:
-            string = string.replace("SUBJECT", "the entire battlefield")
-            string = string.replace("SIZE", "enormous")
+            parsedname = parsedname.replace("SUBJECT", "the entire battlefield")
+            parsedname = parsedname.replace("SIZE", "enormous")
 
     while 1:
-        m = re.search("[$](.+?)[$]", string)
+        m = re.search("[$](.+?)[$]", parsedname)
         if m is None:
             break
         text = m.groups()[0]
         pluralised = synonyms.get(text)
         # print(string)
-        string = re.sub(f"[$]{text}[$]", pluralised, string)
+        parsedname = re.sub(f"[$]{text}[$]", pluralised, parsedname)
     # print(string)
 
     while 1:
-        m = re.search("%(.+?)%", string)
+        m = re.search("%(.+?)%", parsedname)
         if m is None:
             break
         text = m.groups()[0]
@@ -121,15 +122,15 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             pluralised = pluraliser.pluralise(text)
         else:
             pluralised = text
-        string = re.sub(f"%{text}%", pluralised, string)
+        parsedname = re.sub(f"%{text}%", pluralised, parsedname)
 
     # remove double spaces
-    string = string.replace("  ", " ")
-    string = string.strip()
-    string = string[0].upper() + string[1:]
+    parsedname = parsedname.replace("  ", " ")
+    parsedname = parsedname.strip()
+    parsedname = parsedname[0].upper() + parsedname[1:]
 
     if titlecase:
-        words = string.split(" ")
+        words = parsedname.split(" ")
         out = ""
         for pos, word in enumerate(words):
             if word.lower() not in ["a", "in", "from", "and", "of", "for", "the", "after", "before"] or pos == 0:
@@ -137,14 +138,77 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             else:
                 out += word.lower()
             out += " "
-        string = out.strip()
+        parsedname = out.strip()
 
     if isspell:
-        while string in utils.spellnames:
-            string = string + " "
-            if len(string) > 35:
-                raise NameTooLongException(f"Spell name {string} too long")
-        print("New spell {}{}{}".format('"', string, '"'))
-        utils.spellnames.append(string)
+        parsedname = adjustnameofspellname(parsedname, spell)
 
-    return string
+    return parsedname
+
+
+def adjustnameofspellname(parsedname, spell):
+    if len(parsedname) > 35:
+        raise NameTooLongException(f"Spell name {parsedname} too long")
+    while parsedname in utils.spellnames:
+        # Compare current spell to existing names in utils.spellnames[string]
+        # Adjust name
+        comparespell = utils.spellnames[parsedname]
+
+        if comparespell is None:
+            parsedname = parsedname + " "
+        else:
+            if comparespell.researchlevel > spell.researchlevel:
+                attempttomovespellname(comparespell)
+                break
+            else:
+                parsedname = replacecurrentqualifier(parsedname)
+
+        if len(parsedname) > 35:
+            raise NameTooLongException(f"Spell name {parsedname} too long")
+    print("New spell {}{}{}".format('"', parsedname, '"'))
+    utils.spellnames[parsedname] = spell
+    return parsedname
+
+
+def attempttomovespellname(spell):
+    tmp = replacecurrentqualifier(spell.name)
+    if len(tmp) > 35:
+        raise NameTooLongException(f"Spell name {tmp} too long")
+    while tmp in utils.spellnames:
+        comparespell = utils.spellnames[tmp]
+        if comparespell.researchlevel > spell.researchlevel:
+            attempttomovespellname(comparespell)
+            break
+        else:
+            tmp = replacecurrentqualifier(tmp)
+
+    if len(tmp) > 35:
+        raise NameTooLongException(f"Spell name {tmp} too long")
+    spell.name = tmp
+    utils.spellnames[spell.name] = spell
+
+
+def replacecurrentqualifier(parsedname):
+    # Find current qualifier
+    noqualifier = True
+    # Search for currently applied qualifier
+    for qualifier in utils.spellqualifiers:
+        regexp = re.compile("(" + qualifier + ")")
+        matches = regexp.match(parsedname)
+        if matches:
+            # Find next higher qualifier
+            # replace current qualifier with next highest
+            newqualifier = returnnexthighestqualifier(matches.group())
+            parsedname = newqualifier + parsedname[matches.end():]
+            noqualifier = False
+            break
+    if noqualifier:
+        parsedname = utils.spellqualifiers[0] + parsedname
+    return parsedname
+
+
+def returnnexthighestqualifier(qualifier):
+    curindex = utils.spellqualifiers.index(qualifier)
+    if curindex + 1 >= len(utils.spellqualifiers):
+        return "Ultra" + qualifier
+    return utils.spellqualifiers[curindex + 1]
