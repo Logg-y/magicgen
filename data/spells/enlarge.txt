@@ -62,11 +62,11 @@
 
 #details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move."
 
-#namecond aoe < 1 64 "Greater Enlargement"
+#namecond aoe < 1 64 "Titanic Enlargement"
 
-#namecond2 1 <= aoe < 600 64 "Group Greater Enlargement"
+#namecond2 1 <= aoe < 600 64 "Group Titanic Enlargement"
 #namecond aoe > 600 64 "Army of Titans"
-#namecond aoe > 600 64 "Mass Greater Enlargement"
+#namecond aoe > 600 64 "Mass Titanic Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle. The size changes induced by this spell are radical, turning even an average man into a towering giant."
 

@@ -106,10 +106,10 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Greater Protection from Cold"
-#name 4 "Greater Protection from Cold"
-#name 32 "Greater Protection from Cold"
-#name 128 "Greater Protection from Cold"
+#name 1 "Cold Warding"
+#name 4 "Cold Warding"
+#name 32 "Cold Warding"
+#name 128 "Cold Warding"
 #descr 1 "SUBJECT %is% made extremely resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made extremely resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 32 "SUBJECT %is% made extremely resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."

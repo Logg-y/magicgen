@@ -50,6 +50,7 @@ class Spell(object):
         self.modcmdsbefore = ""
         self.restricted = None
         self.aicastmod = 0
+        self.isnextspell = False
 
     def p(self):
         print(f"name {self.name}")
@@ -390,6 +391,9 @@ class SpellEffect(object):
         s.nolandtrace = self.nolandtrace
         s.onlygeosrc = self.onlygeosrc
         s.aicastmod = self.aicastmod
+        if self.isnextspell:
+            s.isnextspell = True
+
         if setparams is not None:
             for key, val in setparams.items():
                 setattr(s, key, val)
@@ -709,7 +713,7 @@ class SpellEffect(object):
         if not (self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = min(999, s.fatiguecost)
 			
-		descrs = []
+        descrs = []
         for x in self.descrconds.get(s.path1, []):
             if x.test(s):
                 # blood description changes if it doesn't require a slave to cast

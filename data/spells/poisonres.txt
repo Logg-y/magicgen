@@ -104,9 +104,9 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Greater Protection from Poison"
-#name 64 "Greater Protection from Poison"
-#name 128 "Greater Protection from Poison"
+#name 32 "Poison Warding"
+#name 64 "Poison Warding"
+#name 128 "Poison Warding"
 #descr 32 "SUBJECT %is% made extremely resistant to poisons."
 #descr 64 "SUBJECT %is% made extremely resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer exceptional resistance to all kinds of poisons."

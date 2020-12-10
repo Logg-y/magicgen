@@ -64,9 +64,9 @@
 #paths 13
 #secondarypaths 13
 
-#name 1 "Greater Warp Armour"
-#name 4 "Greater Warp Armour"
-#name 8 "Greater Warp Armour"
+#name 1 "Destroy Armour"
+#name 4 "Destroy Armour"
+#name 8 "Destroy Armour"
 
 #descr 1 "The caster rapidly heats part of the armour of SUBJECT, causing it to violently warp and distort. This does not harm the %victim%, but may destroy PRONOUN_POS armour, even if it was forged by mages."
 #descr 4 "The caster rapidly cools part of the armour of SUBJECT, causing it to violently warp and distort. This does not harm the %victim%, but may destroy PRONOUN_POS armour, even if it was forged by mages."

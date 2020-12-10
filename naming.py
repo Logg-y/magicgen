@@ -140,7 +140,9 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             out += " "
         parsedname = out.strip()
 
-    if isspell:
+    # Don't give prefixes to nextspells, this messes up the progression massively
+    # ... or to nationals, at least for now
+    if isspell and not spell.isnextspell and spell.restricted is None:
         parsedname = adjustnameofspellname(parsedname, spell)
 
     return parsedname
@@ -154,6 +156,7 @@ def adjustnameofspellname(parsedname, spell):
         # Adjust name
         comparespell = utils.spellnames[parsedname]
 
+        # None means it's a vanilla spell
         if comparespell is None:
             parsedname = parsedname + " "
         else:
@@ -179,9 +182,10 @@ def attempttomovespellname(spell):
         if comparespell.researchlevel > spell.researchlevel:
             attempttomovespellname(comparespell)
             break
+        # should this be checking if research levels are the same and matching names?
+        # probably, but doing so would be wonky
         else:
             tmp = replacecurrentqualifier(tmp)
-
     if len(tmp) > 35:
         raise NameTooLongException(f"Spell name {tmp} too long")
     spell.name = tmp

@@ -102,9 +102,9 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Greater Protection from Fire"
-#name 4 "Greater Protection from Fire"
-#name 128 "Greater Protection from Fire"
+#name 1 "Fire Warding"
+#name 4 "Fire Warding"
+#name 128 "Fire Warding"
 #descr 1 "SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 4 "SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."

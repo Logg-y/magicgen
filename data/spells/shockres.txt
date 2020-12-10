@@ -99,8 +99,8 @@
 #paths 10
 #secondarypaths 0
 
-#name 2 "Greater Protection from Lightning"
-#name 8 "Greater Protection from Lightning"
+#name 2 "Lightning Warding"
+#name 8 "Lightning Warding"
 #descr 2 "SUBJECT %is% made extremely resistant to shocking and lightning effects."
 #descr 8 "SUBJECT %is% made extremely resistant to shocking and lightning effects."
 
