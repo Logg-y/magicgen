@@ -33,7 +33,7 @@ def rollspells(**options):
         with open("spells.csv", "r") as f:
             r = csv.DictReader(f, delimiter="\t")
             for line in r:
-                utils.spellnames.append(line["name"])
+                utils.spellnames[line["name"]] = None
 
         modname = options.get("modname", None)
         if modname is None:

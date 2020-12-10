@@ -807,7 +807,7 @@ class SpellEffect(object):
                     name = name.replace("NAMEPREFIX", "")
 
                     s.name = naming.parsestring(name, plural=plural, aoe=s.aoe, spelltype=self.spelltype,
-                                                titlecase=True, isspell=True)
+                                                titlecase=True, isspell=True, spell=s)
                     break
                 except naming.NameTooLongException:
                     pass
