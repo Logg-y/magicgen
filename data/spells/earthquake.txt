@@ -38,6 +38,5 @@
 
 #scalerate 1
 -- #scalecost 0.15
-#pathlevel 2
 #schools 4
 #end

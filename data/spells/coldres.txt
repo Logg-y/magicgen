@@ -18,7 +18,7 @@
 #sound 31
 #range 15
 #fatiguecost 10
-#maxpower 7
+#maxpower 5
 
 
 -- fire, blood, water, death
@@ -58,7 +58,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 8
+#maxpower 9
 
 
 -- fire, blood, water

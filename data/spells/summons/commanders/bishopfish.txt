@@ -43,6 +43,7 @@
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
 #schools 1
+#alwaysgenerate 1
 
 #skipchance 0
 

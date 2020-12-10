@@ -136,7 +136,7 @@
 #damage 2001
 #spec 8390784
 #aoe 1
-#power 3
+#power 4
 #precision 1
 #range 50
 #pathlevel 2
@@ -170,7 +170,7 @@
 #effect 134
 #damage 2001
 #spec 8390784
-#aoe 2
+#aoe 1
 #power 3
 #precision 1
 #range 50

@@ -63,7 +63,7 @@
 #neweffect "Planeshift Void"
 #effect 108
 #damage -11
-#spec 16793728
+#spec 17592186060928
 #schools 32
 
 #spelltype 66

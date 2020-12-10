@@ -3,7 +3,7 @@
 -- evo only
 #spelltype 2
 
-#skipchance 70
+#skipchance 90
 
 #power 1
 #mult fatiguecost 0.5

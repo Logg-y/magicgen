@@ -1,0 +1,25 @@
+#neweffect "Stalker Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 629
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#chassisvalue 80
+#schools 1
+#nogeodst 2052
+
+#skipchance 26
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Stalker Attack"
+#descr 16 "The caster summons ARTICLE %Stalker% to attack a hostile commander in a distant land. Elludian Stalkers are powerful ethereal assassins."
+
+#spelltype 4
+
+#end

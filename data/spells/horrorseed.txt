@@ -1,0 +1,65 @@
+#neweffect "Horror Seed Lesser"
+#effect 500
+#damage 289
+#spec 8540160
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.8
+-- #scalecost 1.1
+
+#aoe 0
+#power 4
+#maxpower 11
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 100
+#precision 100
+#range 100
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 128 "Dormant %Horror%"
+
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Units afflicted with horrors gradually spread curses and horror marks to units in their province. Eventually they burst into a lesser horror, instantly killing their host and attacking anything in the province."
+#details "Applies the secondary effect of horror seed if the spell is not resisted."
+
+#end
+
+#neweffect "Horror Seed Greater"
+#effect 501
+#damage 289
+#spec 8540160
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 0
+#power 8
+#maxpower 16
+#pathlevel 4
+#explspr 10206
+#sound 41
+#fatiguecost 100
+#precision 100
+#range 100
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 128 "Horror Infestation"
+
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Horrors incited by this spell are infectious, and gradually spread their influence to other units in the same province. The secondary horrors spread only horror marks and curses and do not replicate further, but they will cause the unit to burst into a lesser horror after some time. If the unit housing the primary infectious horror is slain, a greater horror is instantly released to wreak havoc on the battlefield."
+#details "Applies the primary effect of horror seed if the spell is not resisted."
+
+#end

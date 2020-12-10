@@ -1,11 +1,34 @@
 TODO
 
-add +5 natprot spell
-add unholy power spell
-remote assassin stalker
-in-battle horror seed effect
-unique summons
 globals
+unique summons
+
+
+NEW IN v1.1.2
+
+Earthquake now correctly requires E4 (was E2 due to a mistake on my part).
+Slightly increased the cost of ritual summoned bukavac - I didn't see the AP tentacles when pricing these.
+Ritual summon bishop fish will always generate.
+Corrected the maximum level of the lowest tier of resist spells so that higher research, ludicrously priced versions don't appear with duplicate effects.
+Mid tier resist spells can now generate a 100% battlefield version at research 9.
+Life after death can no longer generate a self targeting version.
+Projectile chain lightning base aoe reduced from 2 to 1
+Nonprojectile chain lightning base level increased from 3 to 4
+Fixed send to void to have a hard MR check as stated in the text (and intended), it was incorrectly offering an easy MR check
+Added +5 natprot spells for animals and undead.
+Added undead-only regen.
+Added a twist fate and fools luck combination buff.
+Noted that phoenix pyre also gives +5 fire resistance in an attempt to lower chain reactions.
+Added regular and greater enlargement.
+Added stalker as a remote assassination.
+Added +5 fear as a buff.
+Added in-battle horror seed effects.
+Summons with heat aura are now prefixed "hot" instead of "infernal" to better distinguish them from the inferno banishment effect.
+4 gem in battle spells now have the correct base cast time of 225%.
+Path level increase per research for mistform reduced from 0.66 to 0.33.
+Wave warriors scale rate increased slightly to make battlefield wide generate at research 8.
+All drain life effects now have 50% skipchance.
+Skipchance for range 10 and 3 spells 90%, from 70%.
 
 NEW IN v1.1.1
 

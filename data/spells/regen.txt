@@ -34,3 +34,40 @@
 
 #end
 
+
+#neweffect "Regen Undead only"
+#effect 23
+#damage 536870912
+#spec 276840456
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.0
+
+#aoe 0
+#power 2
+#maxpower 8
+#pathlevel 2
+#explspr 10027
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 32
+#secondarypaths 32
+
+#namecond aoe < 2 32 "Reforming Flesh"
+#namecond2 2 <= aoe < 20 32 "Reforming Flesh"
+
+#namecond2 20 <= aoe <= 666 32 "Undead Reformation"
+
+#details "Grants 10% regeneration to undead, even if they are inanimate."
+
+#descr 32 "Grants all undead in a SIZE area the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#end
+

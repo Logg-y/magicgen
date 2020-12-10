@@ -1,0 +1,73 @@
+#neweffect "Enlargement"
+#effect 10
+#damage 2147483648
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 10
+
+#aoe 0
+#power 1
+#pathlevel 1
+#maxpower 8
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 64
+#secondarypaths 1
+
+#details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
+
+#namecond aoe < 1 64 "Enlarge Self"
+
+#namecond2 1 <= aoe < 600 64 "Group Enlargement"
+#namecond aoe > 600 64 "Army of Giants"
+#namecond aoe > 600 64 "Mass Enlargement"
+
+#descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
+
+#end
+
+#neweffect "Enlargement Greater"
+#effect 10
+#damage 1101659111424
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 10
+
+#aoe 0
+#power 4
+#pathlevel 3
+#maxpower 11
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths 64
+#secondarypaths 1
+
+#details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move."
+
+#namecond aoe < 1 64 "Greater Enlargement"
+
+#namecond2 1 <= aoe < 600 64 "Group Greater Enlargement"
+#namecond aoe > 600 64 "Army of Titans"
+#namecond aoe > 600 64 "Mass Greater Enlargement"
+
+#descr 64 "SUBJECT %is% magically enlarged for the rest of the battle. The size changes induced by this spell are radical, turning even an average man into a towering giant."
+
+#end

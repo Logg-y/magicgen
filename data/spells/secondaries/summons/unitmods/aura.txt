@@ -14,7 +14,7 @@
 #req aquatic == -1
 #set heat 3
 #fireres 8
-#nameprefix "Infernal"
+#nameprefix "Hot"
 #descr "This particular CREATURE is surrounded by dry, hot winds. Nearby creatures may become fatigued from the heat."
 #end
 

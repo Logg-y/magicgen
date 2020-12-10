@@ -43,3 +43,61 @@
 
 #end
 
+#neweffect "Foolsluck nextspell"
+#effect 23
+#damage 4294967296
+#spec 8404992
+#schools -1
+#aoe 1
+
+#name 16 "Fools' Luck"
+#name 128 "Fools' Luck"
+#end
+
+
+#neweffect "Twist Fate foolsluck combo"
+#effect 23
+#damage 1
+#spec 8404992
+#schools 2
+#ainocast 1
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.5
+
+#aoe 0
+#power 4
+#maxpower 9
+#pathlevel 1
+#explspr 10046
+#sound 31
+#range 10
+#fatiguecost 10
+
+#paths 144
+#secondarypaths 16
+
+#details "Applies both twist fate and fools' luck. Twist fate negates the first successful hit. Fools' luck alternates between preventing and doubling incoming damage."
+
+#namecond aoe < 1 16 "extended twist fate"
+#namecond aoe < 1 16 "extended averted fate"
+#namecond aoe < 2 16 "extended cheat fate"
+#namecond aoe < 1 128 "extended infernal protection"
+
+#namecond2 1 <= aoe < 666 16 "group extended twisted fate"
+#namecond2 1 <= aoe < 666 16 "group extended averted fate"
+#namecond2 1 <= aoe < 666 16 "group extended cheated fate"
+#namecond2 1 <= aoe < 666 128 "group extended infernal protection"
+
+#namecond aoe == 666 16 "mass extended twisted fate"
+#namecond aoe == 666 16 "mass extended averted fate"
+#namecond aoe == 666 16 "mass extended cheated fate"
+#namecond aoe == 666 128 "mass extended infernal protection"
+
+#descr 16 "Greatly alters the future fate of SUBJECT, protecting PRONOUN from harm. This is not without risk: although several successful hits are negated, subsequent hits may suddenly appear twice as damaging."
+#descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from harm strike. This is not without risk: although several successful hits are negated, subsequent hits may suddenly appear twice as damaging."
+
+#end
+

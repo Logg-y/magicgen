@@ -19,7 +19,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
 
@@ -48,7 +48,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #set flightspr -1
 
@@ -79,7 +79,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
 
@@ -106,7 +106,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 66
 
@@ -135,7 +135,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 11
 #req damage == 131072
@@ -165,7 +165,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 11
 #req damage == 16384
@@ -195,7 +195,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 28
 
@@ -224,7 +224,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 29
 
@@ -253,7 +253,7 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 70
+#skipchance 90
 
 #req effect == 11
 #req effect == 1024

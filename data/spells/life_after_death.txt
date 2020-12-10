@@ -10,7 +10,7 @@
 #scalerate 1
 -- #scalecost 1
 
-#aoe 0
+#aoe 1
 #power 2
 #maxpower 9
 #pathlevel 1

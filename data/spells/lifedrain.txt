@@ -9,6 +9,7 @@
 
 #scalerate 2
 -- #scalecost 1.6
+#skipchance 50
 
 #aoe 0
 #power 5
@@ -46,6 +47,7 @@
 
 #skipexplspr 1
 #skipflightspr 1
+#skipchance 50
 
 #aoe 1
 #power 6
@@ -80,6 +82,7 @@
 
 #skipexplspr 1
 #skipflightspr 1
+#skipchance 50
 
 #aoe 1
 #power 7
@@ -114,6 +117,7 @@
 
 #skipexplspr 1
 #skipflightspr 1
+#skipchance 50
 
 #aoe 1
 #power 6
@@ -148,6 +152,7 @@
 
 #scalerate 0.75
 -- #scalecost 1.6
+#skipchance 50
 
 #aoe 666
 #power 7
@@ -182,6 +187,7 @@
 
 #skipexplspr 1
 #skipflightspr 1
+#skipchance 50
 
 #aoe 666
 #power 5

@@ -9,7 +9,7 @@ from .utils import SpellTypes, PathFlags, SchoolFlags
 # This seems to be how dominions autocalcs cast time
 # keys are simply gems required
 # 9 is a guess as I couldn't be bothered to mod a spell in for what seemed like an obvious progression
-casttimes = {0: 100, 1: 125, 2: 175, 3: 200, 4: 200, 5: 250, 6: 275, 7: 300, 8: 325, 9: 350}
+casttimes = {0: 100, 1: 125, 2: 175, 3: 200, 4: 225, 5: 250, 6: 275, 7: 300, 8: 325, 9: 350}
 
 
 class Spell(object):
@@ -526,7 +526,7 @@ class SpellEffect(object):
             scaleexponent = (mod.scalefatigueexponent + self.scalefatigueexponent + secondary.scalefatigueexponent)
             if scaleamt != 0.0 and scaleexponent > 0.0:
                 s.fatiguecost += (scaleamt ** scaleexponent)
-                print(f"Exponent: Added {scaleamt ** scaleexponent} to fatigue cost, it is now {s.fatiguecost}")
+                print(f"Exponent: Added {scaleamt ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
 
         if self.nextspell != "":
             s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondary.power, forceschool=forceschool,
@@ -561,17 +561,7 @@ class SpellEffect(object):
         if self.spelltype & SpellTypes.EVOCATION:
             plural = True if (s.aoe > 1 or s.nreff > 1) else False
 
-        descrs = []
-        for x in self.descrconds.get(s.path1, []):
-            if x.test(s):
-                # blood description changes if it doesn't require a slave to cast
-                if s.fatiguecost < 100:
-                    descrs.append(x.text.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$"))
-                else:
-                    descrs.append(x.text)
-
-        if len(descrs) == 0:
-            descrs.append(self.descriptions.get(s.path1, "This spell and path combination have no description!"))
+        
         # See if the secondary effect we took has a path requirement that we fail to meet
         if secondary.paths > 0:
             if not (secondary.paths & s.path1):
@@ -718,6 +708,18 @@ class SpellEffect(object):
         # Fatigue cost should not exceed 999 for non rituals
         if not (self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = min(999, s.fatiguecost)
+			
+		descrs = []
+        for x in self.descrconds.get(s.path1, []):
+            if x.test(s):
+                # blood description changes if it doesn't require a slave to cast
+                if s.fatiguecost < 100:
+                    descrs.append(x.text.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$"))
+                else:
+                    descrs.append(x.text)
+
+        if len(descrs) == 0:
+            descrs.append(self.descriptions.get(s.path1, "This spell and path combination have no description!"))
 
         # write a description
         s.descr = naming.parsestring(random.choice(descrs), plural=plural, aoe=s.aoe, spelltype=self.spelltype, spell=s)

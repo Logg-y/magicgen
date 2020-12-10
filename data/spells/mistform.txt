@@ -8,6 +8,7 @@
 
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
+#pathperresearch -0.33
 
 #scalerate 3
 
