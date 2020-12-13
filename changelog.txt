@@ -27,8 +27,18 @@ Summons with heat aura are now prefixed "hot" instead of "infernal" to better di
 4 gem in battle spells now have the correct base cast time of 225%.
 Path level increase per research for mistform reduced from 0.66 to 0.33.
 Wave warriors scale rate increased slightly to make battlefield wide generate at research 8.
-All drain life effects now have 50% skipchance.
-Skipchance for range 10 and 3 spells 90%, from 70%.
+All drain life effects now have 50% skipchance. Due to the large number of different but very similar drain life effects, these were very prevalent at high levels.
+Skipchance for range 10 and 3 spells now 90%, from 70%.
+Introduced name variety to reduce the number of spells with the same name at different research levels. National spells aren't affected by this though.
+Renamed a few spell effects to accommodate the above naming scheme.
+Blight now gets a proper description when generating with earth primary path.
+Slightly increased fatigue scaling for fascination. This has only a significant impact on higher level variants.
+Spell scaling now rounds up. This shouldn't make much visible difference in most cases, however.
+Middle and high tier resist spells now scale significantly faster.
+Thunder strike path level increased to 3 from 2.
+Shock evocations are now 80% less likely to be astral instead of air.
+25% casting time effect research modifier increased from +2 to +3, given AI cast mod of +40%
+10% casting time effect research modifier increased from +3 to +5, given AI cast mod of +70% 
 
 NEW IN v1.1.1
 

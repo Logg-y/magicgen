@@ -140,21 +140,35 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             out += " "
         parsedname = out.strip()
 
-    # Don't give prefixes to nextspells, this messes up the progression massively
+    # Don't give prefixes to nextspells, this makes no sense as they tend not to change much
     # ... or to nationals, at least for now
     if isspell and not spell.isnextspell and spell.restricted is None:
-        parsedname = adjustnameofspellname(parsedname, spell)
+        parsedname = adjustnameofspell(parsedname, spell)
+    elif isspell:
+        parsedname = padspellname(parsedname)
+
+    if isspell:
+        utils.spellnames.append(parsedname)
 
     return parsedname
 
+def padspellname(name):
+    while name in utils.spellnames:
+        name = name + " "
+        if len(name) > 35:
+            raise NameTooLongException(f"Tried to pad spell name {name} over 35 characters")
+    return(name)
 
-def adjustnameofspellname(parsedname, spell):
+def adjustnameofspell(parsedname, spell):
     if len(parsedname) > 35:
         raise NameTooLongException(f"Spell name {parsedname} too long")
-    while parsedname in utils.spellnames:
+    if spell.parenteffect not in utils.spellnamesbyeffect:
+        utils.spellnamesbyeffect[spell.parenteffect] = {}
+    spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
+    while parsedname in spelleffectdict:
         # Compare current spell to existing names in utils.spellnames[string]
         # Adjust name
-        comparespell = utils.spellnames[parsedname]
+        comparespell = spelleffectdict[parsedname]
 
         # None means it's a vanilla spell
         if comparespell is None:
@@ -168,17 +182,21 @@ def adjustnameofspellname(parsedname, spell):
 
         if len(parsedname) > 35:
             raise NameTooLongException(f"Spell name {parsedname} too long")
+    spelleffectdict[parsedname] = spell
+    parsedname = padspellname(parsedname)
     print("New spell {}{}{}".format('"', parsedname, '"'))
-    utils.spellnames[parsedname] = spell
     return parsedname
 
 
 def attempttomovespellname(spell):
+    utils.spellnames.remove(spell.name)
     tmp = replacecurrentqualifier(spell.name)
     if len(tmp) > 35:
         raise NameTooLongException(f"Spell name {tmp} too long")
-    while tmp in utils.spellnames:
-        comparespell = utils.spellnames[tmp]
+    spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
+    del spelleffectdict[spell.name.strip()]
+    while tmp in spelleffectdict:
+        comparespell = spelleffectdict[tmp]
         if comparespell.researchlevel > spell.researchlevel:
             attempttomovespellname(comparespell)
             break
@@ -188,8 +206,11 @@ def attempttomovespellname(spell):
             tmp = replacecurrentqualifier(tmp)
     if len(tmp) > 35:
         raise NameTooLongException(f"Spell name {tmp} too long")
+    spelleffectdict[tmp] = spell
+    tmp = padspellname(tmp)
     spell.name = tmp
-    utils.spellnames[spell.name] = spell
+    utils.spellnames.append(spell.name)
+
 
 
 def replacecurrentqualifier(parsedname):

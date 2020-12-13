@@ -66,6 +66,7 @@
 #spelltype 4
 #name 32 "Blight"
 #name 8 "Blight"
+#descr 8 "The caster unleashes a blight upon a distant province. Five percent of the population will die, unrest increases and eighty pounds of gold must be used to feed the starving."
 #descr 32 "The caster unleashes a blight upon a distant province. Five percent of the population will die, unrest increases and eighty pounds of gold must be used to feed the starving."
 #details "Population -5%, Unrest +15, Gold -80."
 #end

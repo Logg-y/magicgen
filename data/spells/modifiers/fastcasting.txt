@@ -40,7 +40,7 @@
 -- any
 #spelltype 0
 
-#power -2
+#power -3
 #skipchance 55
 
 #aicastmod 40
@@ -65,7 +65,7 @@
 
 #aicastmod 70
 
-#power -3
+#power -5
 
 #mult fatiguecost 0.5
 #req fatiguecost > 15

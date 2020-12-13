@@ -12,7 +12,7 @@ CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "
 proc = None
 outputqueue = queue.Queue()
 
-ver = "v1.1.1"
+ver = "v1.1.2"
 
 
 def output_polling_thread(timeout=0.1):

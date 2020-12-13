@@ -45,6 +45,8 @@
 #explspr 10219
 #sound 27
 
+#pathskipchance 16 80
+
 #paths 146
 #secondarypaths 2
 
@@ -105,13 +107,14 @@
 #power 4
 #precision 1
 #range 50
-#pathlevel 2
+#pathlevel 3
 #fatiguecost 50
 #explspr 10241
 #sound 27
 
 #paths 146
 #secondarypaths 2
+#pathskipchance 16 80
 
 #name 2 "Thunder Strike"
 #name 16 "Thunder Strike"
@@ -150,6 +153,7 @@
 
 #paths 138
 #secondarypaths 2
+#pathskipchance 8 80
 
 #name 2 "Chain Lightning"
 #name 8	"Charge Ground"

@@ -45,7 +45,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.9
+#scalerate 1.1
 -- #scalecost 0.7
 
 
@@ -85,7 +85,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.5
+#scalerate 0.9
 #scalefatiguemult 3
 -- #scalecost 0.7
 

@@ -51,6 +51,7 @@ class Spell(object):
         self.restricted = None
         self.aicastmod = 0
         self.isnextspell = False
+        self.parenteffect = None
 
     def p(self):
         print(f"name {self.name}")
@@ -391,6 +392,7 @@ class SpellEffect(object):
         s.nolandtrace = self.nolandtrace
         s.onlygeosrc = self.onlygeosrc
         s.aicastmod = self.aicastmod
+        s.parenteffect = self
         if self.isnextspell:
             s.isnextspell = True
 
@@ -457,7 +459,7 @@ class SpellEffect(object):
             scaleamt = 0
             for x in range(0, actualpowerlvl):
                 scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
-            scaleamt = math.floor(scaleamt)
+            scaleamt = math.ceil(scaleamt)
 
             # scale the thing
             if self.spelltype & SpellTypes.POWER_SCALES_AOE:
