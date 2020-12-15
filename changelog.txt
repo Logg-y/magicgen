@@ -39,6 +39,10 @@ Thunder strike path level increased to 3 from 2.
 Shock evocations are now 80% less likely to be astral instead of air.
 25% casting time effect research modifier increased from +2 to +3, given AI cast mod of +40%
 10% casting time effect research modifier increased from +3 to +5, given AI cast mod of +70% 
+Updated data files (base units) to 5.51, this means that sea stags will generate with the newly corrected weapon
+Prevented various data fields being filled with decimals.
+Prevented storm power, vine arrow and bonds of fire from playing a sound effect which starts a new instance of the ingame music.
+
 
 NEW IN v1.1.1
 

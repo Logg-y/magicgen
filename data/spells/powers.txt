@@ -91,7 +91,7 @@
 #power 2
 #pathlevel 1
 #explspr 10216
-#sound 64
+#sound 24
 #range 0
 #fatiguecost 20
 #maxpower 4

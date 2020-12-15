@@ -551,6 +551,12 @@ class SpellEffect(object):
                                                         forcepathlevel=s.path1level, allowskipchance=False,
                                                         **options).output()
 
+		# Remove decimal stuff
+        s.nreff = math.floor(s.nreff)
+        s.damage = math.floor(s.damage)
+        s.maxbounces = math.floor(s.maxbounces)
+        s.effect = math.floor(s.effect)
+
         # scaling fatiguecost per effect
         flatnumeffects = s.nreff % 1000
         scalenumeffects = s.nreff // 1000

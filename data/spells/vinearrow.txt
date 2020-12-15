@@ -29,7 +29,7 @@
 #maxpower 8
 #pathlevel 1
 #flightspr 419
-#sound 64
+#sound 31
 #fatiguecost 20
 #range 5025
 
