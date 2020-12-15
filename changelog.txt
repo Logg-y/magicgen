@@ -42,6 +42,7 @@ Shock evocations are now 80% less likely to be astral instead of air.
 Updated data files (base units) to 5.51, this means that sea stags will generate with the newly corrected weapon
 Prevented various data fields being filled with decimals.
 Prevented storm power, vine arrow and bonds of fire from playing a sound effect which starts a new instance of the ingame music.
+Fixed the crossbreeding ritual so it actually works now.
 
 
 NEW IN v1.1.1

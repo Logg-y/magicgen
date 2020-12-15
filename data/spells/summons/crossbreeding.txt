@@ -1,6 +1,6 @@
 #neweffect "Cross Breeding"
 #copyspell "Cross Breeding"
-#effect 10065
+#effect 10035
 #damage 1
 #spec 0
 #power 3
