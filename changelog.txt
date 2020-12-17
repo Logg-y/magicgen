@@ -39,11 +39,15 @@ Thunder strike path level increased to 3 from 2.
 Shock evocations are now 80% less likely to be astral instead of air.
 25% casting time effect research modifier given AI cast mod of +40%
 10% casting time effect research modifier given AI cast mod of +70% 
-Split the 25% and 10% fast casting effects for damaging, damaging projectile, and nondamaging spells.
+Split the 25% and 10% fast casting effects for damaging, damaging projectile, nondamaging hostile, and nonhostile
 25% casting time effect research modifier for damaging nonprojectile spells increased from +2 to +4
-25% casting time effect research modifier for damaging projectile spells spells increased from +2 to +3
-10% casting time effect research modifier for damaging nonprojectile spells increased from +3 to +7
+25% casting time effect research modifier for damaging projectile spells increased from +2 to +3
+25% casting time effect research modifier for nondamaging hostile spells increased from +2 to +3
+10% casting time effect research modifier for damaging nonprojectile spells increased from +3 to +8
 10% casting time effect research modifier for damaging projectile spells increased from +3 to +5
+10% casting time effect research modifier for nondamaging hostile spells increased from +3 to +5
+10% casting time effect research modifier for nonhostile spells increased from +3 to +4
+Added 16% cast time modifiers. This is to go between 25% (4 spells per round) and 10% (10 spells per round), sitting at a happy medium of 6.25 (thanks Arcvasti for the suggestion)
 Updated data files (base units) to 5.51, this means that sea stags will generate with the newly corrected weapon
 Prevented various data fields being filled with decimals.
 Prevented storm power, vine arrow and bonds of fire from playing a sound effect which starts a new instance of the ingame music.

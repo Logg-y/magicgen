@@ -59,7 +59,7 @@
 #end
 
 
-#newmodifier "Faster Casting Nondamaging"
+#newmodifier "Faster Casting Not evo"
 
 -- any
 #spelltype 0
@@ -69,6 +69,28 @@
 #reqdamaging 0
 
 #power -2
+
+#mult fatiguecost 0.75
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#end
+
+#newmodifier "Faster Casting Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aicastmod 70
+
+#reqdamaging 0
+
+#power -3
 
 #mult fatiguecost 0.75
 #req fatiguecost > 15
@@ -102,6 +124,99 @@
 
 #end
 
+-----------------------------------
+
+#newmodifier "16pc cast Damaging Projectile"
+
+-- evo only
+#spelltype 2
+
+#aicastmod 70
+
+#power -4
+
+#reqdamaging 1
+
+#req flightspr > 0
+
+#mult fatiguecost 0.6
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#end
+
+
+#newmodifier "16pc cast Not evo"
+
+-- any
+#spelltype 0
+
+#aicastmod 70
+
+#reqdamaging 0
+
+#power -3
+
+#mult fatiguecost 0.6
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#end
+
+#newmodifier "16pc cast Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aicastmod 70
+
+#reqdamaging 0
+
+#power -4
+
+#mult fatiguecost 0.6
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#end
+
+
+#newmodifier "16pc cast Damaging Nonprojectile"
+
+-- evo only
+#spelltype 2
+
+#aicastmod 70
+
+#reqdamaging 1
+
+#power -6
+
+#mult fatiguecost 0.6
+#req fatiguecost > 15
+#req fatiguecost < 100
+#req flightspr <= -1
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+
+#end
+
+
+-----------------------------------
+
 
 
 #newmodifier "Insanely Fast Casting Damaging Projectile"
@@ -128,7 +243,7 @@
 #end
 
 
-#newmodifier "Insanely Fast Casting Nondamaging"
+#newmodifier "Insanely Fast Casting Not Evo"
 
 -- any
 #spelltype 0
@@ -137,7 +252,33 @@
 
 #reqdamaging 0
 
-#power -3
+-- not evo
+#req spelltype !& 2
+
+#power -4
+
+#mult fatiguecost 0.5
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end
+
+
+#newmodifier "Insanely Fast Casting Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aicastmod 70
+
+#reqdamaging 0
+
+#power -5
 
 #mult fatiguecost 0.5
 #req fatiguecost > 15
@@ -158,7 +299,7 @@
 
 #aicastmod 70
 
-#power -7
+#power -8
 #reqdamaging 1
 
 #mult fatiguecost 0.5
