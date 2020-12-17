@@ -362,6 +362,8 @@ These parameters are just flatly added to the values on the parent spelleffect.
  * This becomes an invalid modifier for spells with an aoe of X% of the battlefield.
 \#givecloudsfx
  * Changes the explosion sfx of the spell to something appropriate for a cloud of that path. Intended to go with modifiers that change a spell into a cloud spell (and increase effect number appropriately).
+\#reqdamaging
+ * If 0, the spell cannot have a damaging effect number. If any value greater than zero, the spell must have a damaging effect number. If left untouched or set to -1, no limit is imposed.
  
 ## Secondary Effects
 

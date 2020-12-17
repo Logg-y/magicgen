@@ -1,11 +1,13 @@
 from .utils import SpellTypes
 
 
+DAMAGING_SPELL_EFFECTS = [2, 103, 74, 73]
+
 class SpellModifier(object):
     def __init__(self):
         self.params = ["power", "spelltype", "range", "precision", "damage", "aoe", "casttime", "nreff", "skipchance",
                        "fatiguecost", "maxbounces", "scalecost", "scalerate", "pathperresearch", "scalefatigueexponent",
-                       "effect", "aicastmod"]
+                       "effect", "aicastmod", "reqdamaging"]
         self.aicastmod = 0
         self.power = 0
         self.spelltype = 0
@@ -21,6 +23,7 @@ class SpellModifier(object):
         self.pathlevel = 0
         self.effect = 0
         self.givecloudsfx = 0
+        self.reqdamaging = -1
 
         self.scalecost = 0.0
         self.scalerate = 0.0
@@ -48,7 +51,15 @@ class SpellModifier(object):
         if self.nobattlefield:
             if 660 <= eff.aoe <= 670:
                 return False
-
+                
+        if self.reqdamaging != -1:
+            if self.reqdamaging > 0:
+                if eff.effect not in DAMAGING_SPELL_EFFECTS:
+                    return False
+            if self.reqdamaging == 0:
+                if eff.effect in DAMAGING_SPELL_EFFECTS: 
+                    return False
+                
         for flag in SpellTypes:
             if self.spelltype & flag and not (eff.spelltype & flag):
                 return False

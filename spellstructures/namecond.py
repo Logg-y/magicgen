@@ -13,7 +13,7 @@ class NameCond(object):
         if not hasattr(spell, self.param.strip()):
             paramval = -1
         else:
-            paramval = getattr(spell, self.param.strip())
+            paramval = getattr(spell, self.param.strip())	
         self.val = self.val.strip()
         val = int(self.val)
         if self.val2 is not None:

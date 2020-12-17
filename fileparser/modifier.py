@@ -6,7 +6,7 @@ from spellstructures import ParseError
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
-                       "aicastmod"]
+                       "aicastmod", "reqdamaging"]
 modifier_params_str = []
 modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent"]
 
@@ -100,7 +100,7 @@ def readModifierFile(fp):
                     continue
 
                 if line.startswith("#req"):
-                    m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)', line)
+                    m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*?([0-9]+)', line)
                     if m is not None:
                         cond = spellstructures.NameCond()
                         cond.val2 = m.groups()[0]
@@ -112,7 +112,7 @@ def readModifierFile(fp):
                         curreff.reqs.append(cond)
                         continue
 
-                    m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)', line)
+                    m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*?([0-9]+)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #req")
                     cond = spellstructures.NameCond()
@@ -124,7 +124,7 @@ def readModifierFile(fp):
                     continue
 
                 if line.startswith("#set"):
-                    m = re.match('#set\\W+(.*?)\\W*([-0-9]+)', line)
+                    m = re.match('#set\\W+(.*?)\\W*?([-0-9]+)', line)
                     if m is not None:
                         param = m.groups()[0]
                         val = int(m.groups()[1])
@@ -133,7 +133,7 @@ def readModifierFile(fp):
                     raise ParseError(f"{fp} line {lineno}: bad #set")
 
                 if line.startswith("#mult"):
-                    m = re.match('#mult\\W+(.*?)\\W*([-0-9.]+)', line)
+                    m = re.match('#mult\\W+(.*?)\\W*?([-0-9.]+)', line)
                     if m is not None:
                         param = m.groups()[0]
                         val = float(m.groups()[1])

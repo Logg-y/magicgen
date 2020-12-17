@@ -100,7 +100,7 @@ def readSecondaryFile(fp):
                     continue
 
                 if line.startswith("#req"):
-                    m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)', line)
+                    m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*?([0-9]+)', line)
                     if m is not None:
                         cond = spellstructures.NameCond()
                         cond.val2 = m.groups()[0]
@@ -112,7 +112,7 @@ def readSecondaryFile(fp):
                         curreff.reqs.append(cond)
                         continue
 
-                    m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)', line)
+                    m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*?([0-9]+)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #req")
                     cond = spellstructures.NameCond()
