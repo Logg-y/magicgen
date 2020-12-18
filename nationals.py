@@ -83,8 +83,8 @@ def readVanilla():
 
 def readMods(modstring):
     mods = modstring.strip().split(",")
-    print(mods)
     for mod in mods:
+        mod = mod.strip()
         if mod.strip() == "":
             continue
         with open(mod, "r") as f:

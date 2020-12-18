@@ -13,7 +13,7 @@ from spellstructures import utils
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 START_ID = 1300
-ver = "1.2.0"
+ver = "1.2.1"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 

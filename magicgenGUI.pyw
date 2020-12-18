@@ -19,7 +19,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v1.2.0"
+ver = "v1.2.1"
 
 
 def output_polling_thread(timeout=0.1):
@@ -55,7 +55,7 @@ def spawn_worker_process(**kwargs):
     paramlist += ["-run", "1"]
 
     if nationselection is not None:
-        paramlist += ["-nationlist", ",".join(map(str, nationselection))]
+        paramlist += ["-nationlist", ",".join(map(str, nationselection)).strip()]
 
     for key, paramval in kwargs.items():
         paramlist.append(f"-{key}")
