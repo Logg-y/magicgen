@@ -13,7 +13,7 @@ from spellstructures import utils
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 START_ID = 1300
-ver = "1.1.2"
+ver = "1.2.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -28,6 +28,12 @@ def _writetoconsole(line):
 
 
 def rollspells(**options):
+    if options.get("nationlist", "") == "":
+        options["nationlist"] = None
+    else:
+        options["nationlist"] = options["nationlist"].split(",")
+        options["nationlist"] = list(map(lambda x: int(x.strip()), options["nationlist"]))
+
     with open("log.txt", "w") as logfile:
         sys.stdout = logfile
         with open("spells.csv", "r") as f:
@@ -163,8 +169,10 @@ def rollspells(**options):
             # Generate some national spells
             nationals.readVanilla()
             nationals.readMods(options.get("modlist", ""))
-            nationcount = len(list(nationals.nationals.keys()))
-            for index, nation in enumerate(list(nationals.nationals.keys())):
+            if options["nationlist"] is None:
+                options["nationlist"] = list(nationals.nationals.keys())
+            nationcount = len(options["nationlist"])
+            for index, nation in enumerate(options["nationlist"]):
                 if (index + 1) % 20 == 0:
                     _writetoconsole(f"Progress: Beginning nation {index + 1} of {nationcount}...\n")
                 successfuleffectnames = []
@@ -350,6 +358,10 @@ def main():
     opts.append(Option("-outputfolder",
                        help="Folder to put the created .dm in",
                        type=str, default="./output"))
+
+    opts.append(Option("-nationlist",
+                       help="A list of nation IDs, separated by commas. If provided, national spells will only be generated for these nations.",
+                       type=str, default=""))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",

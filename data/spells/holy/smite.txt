@@ -8,6 +8,7 @@
 #aoe 0
 #nreff 1
 #pathlevel 3
+#precision 100
 #fatiguecost 0
 #explspr 10302
 #schools 1
@@ -50,6 +51,7 @@
 #pathlevel 3
 #fatiguecost 0
 #explspr 10302
+#precision 100
 #schools 1
 #sound 30
 #smite 1

@@ -5,9 +5,20 @@ import re
 from spellstructures import utils
 
 nationals = {}
+nationinfo = {}
+
+
+class Nation(object):
+    "Container for modded nation info, used for the UI only"
+    def __init__(self, id):
+        self.era = None
+        self.name = None
+        self.epithet = None
+        self.id = id
 
 
 class NationalMage(object):
+    "Container for a single national mage and its path access"
     def __init__(self):
         self.guaranteedpaths = 0
         self.randompaths = 0
@@ -71,12 +82,14 @@ def readVanilla():
 
 
 def readMods(modstring):
-    mods = modstring.split(",")
+    mods = modstring.strip().split(",")
+    print(mods)
     for mod in mods:
         if mod.strip() == "":
             continue
         with open(mod, "r") as f:
             lastnation = None
+            foundnationend = True
             lastunit = None
             lastsite = None
             lastobj = None
@@ -99,7 +112,9 @@ def readMods(modstring):
                 if m is not None:
                     print(f"Parsed selectnation {m.groups()[0]}")
                     lastnation = int(m.groups()[0])
+                    foundnationend = False
                     nationals[lastnation] = []
+                    nationinfo[lastnation] = Nation(lastnation)
 
                 m = re.match("#newsite (\\d*)", line)
                 if m is not None:
@@ -111,6 +126,13 @@ def readMods(modstring):
                     if m.groups()[0] not in sitenames:
                         print(f"Attach site name {m.groups()[0]} to {lastsite}")
                         sitenames[m.groups()[0]] = lastsite
+
+                    if not foundnationend:
+                        nationinfo[lastnation].name = m.groups()[0]
+
+                m = re.match("#era (.*)", line)
+                if m is not None:
+                    nationinfo[lastnation].era = int(m.groups()[0])
 
                 m = re.match("#homecom (\\d*)", line)
                 if m is not None:
@@ -137,7 +159,13 @@ def readMods(modstring):
                     print(f"found disableoldnations")
                     for x in range(0, 120):
                         if x in nationals:
-                            del nationals[x]
+                            if x not in nationinfo:
+                                del nationals[x]
+
+                if line.strip() == "#end":
+                    if not foundnationend:
+                        print(f"found nation end")
+                        foundnationend = True
 
                 m = re.match("#magicskill (\\d*) (\\d*)", line)
                 if m is not None:

@@ -3,16 +3,23 @@ import queue
 import subprocess
 import sys
 import threading
+import nationals
+import csv
+import re
 
 import PySimpleGUI as sg
 
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
           "pathlevelmodmult", "outputfolder"]
+
+ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
+
 proc = None
+nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v1.1.2"
+ver = "v1.2.0"
 
 
 def output_polling_thread(timeout=0.1):
@@ -36,7 +43,7 @@ def output_polling_thread(timeout=0.1):
 
 
 def spawn_worker_process(**kwargs):
-    global proc
+    global proc, nationselection
     # Should double for release and testing
     # and hopefully also work on unix...
     tmp = os.path.join(os.getcwd(), "magicgen.exe")
@@ -46,6 +53,10 @@ def spawn_worker_process(**kwargs):
         paramlist = ["python", "magicgen.py"]
 
     paramlist += ["-run", "1"]
+
+    if nationselection is not None:
+        paramlist += ["-nationlist", ",".join(map(str, nationselection))]
+
     for key, paramval in kwargs.items():
         paramlist.append(f"-{key}")
         paramlist.append(f"{paramval}")
@@ -65,6 +76,128 @@ UP_ARROW = "˄"
 DOWN_ARROW = "˅"
 
 defaultfolder = os.path.join(os.getcwd(), "output")
+
+NATIONS_PER_ROW = 3
+
+
+def display_nationchoice(modstring):
+    global nationselection
+    # Reparse mod nations
+    nationals.nationinfo = {}
+    nationals.readVanilla()
+    nationals.readMods(modstring)
+    # Build layout
+    elementlists = {1: [], 2: [], 3: []}
+    # Keep the element keys for each category to enable the select/deselect buttons
+    categorykeys = {1: [], 2: [], 3: []}
+    # vanilla nations
+    with open("nations.csv", "r", encoding="u8") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for line in reader:
+            eraint = int(line["era"])
+            if nationselection is None:
+                ticked = True
+            elif int(line["id"]) in nationselection:
+                ticked = True
+            else:
+                ticked = False
+            # Store as lambda to actually instantiate later
+            # This seems to evaluate format strings when called, so fix them now
+            text = f"{ERA_PREFIXES.get(eraint, '???')} {line['name']}"
+            key = f"-NationPick{line['id']}-"
+            box = lambda a=text, b=key, c=ticked: sg.Checkbox(a, k=b, default=c)
+            if eraint not in elementlists:
+                elementlists[eraint] = []
+            elementlists[eraint].append(box)
+            categorykeys[eraint].append(key)
+    # mod nations
+    for natid, modnation in nationals.nationinfo.items():
+        uirow = []
+        text = f"{ERA_PREFIXES.get(modnation.era, '???')} {modnation.name}"
+        key = f"-NationPick{modnation.id}-"
+        if nationselection is None:
+            ticked = True
+        elif modnation.id in nationselection:
+            ticked = True
+        else:
+            ticked = False
+        boxbuilder = lambda a=text, b=key, c=ticked: sg.Checkbox(a, k=b, default=c)
+        elementlists[modnation.era].append(boxbuilder)
+        categorykeys[modnation.era].append(key)
+
+    # Make columns of these, otherwise the horizontal alignment is nonexistent
+    categories = {}
+    for eraint, elementlist in elementlists.items():
+        categories[eraint] = []
+        allcolumns = []
+        for colindex in range(0, NATIONS_PER_ROW):
+            columncontents = []
+            elementindex = colindex
+            while True:
+                if elementindex >= len(elementlist):
+                    break
+                # Instantiate the lambdas prepared earlier
+                columncontents.append([elementlist[elementindex]()])
+                elementindex += NATIONS_PER_ROW
+            allcolumns.append(
+                sg.Column(columncontents, k=f"-Era{eraint}NationColumn{colindex}-", vertical_alignment="top"))
+        categories[eraint].append(allcolumns)
+
+    layout = [
+        [sg.Text("Select the nations to generate national spells for.", k="-NationPickIntroLabel-")],
+        [sg.Button("Select All"), sg.Button("Deselect All")],
+    ]
+
+    for eraid in categories:
+        eraname = ERA_PREFIXES.get(eraid, "???")
+        layout += [[sg.Text(DOWN_ARROW, k=f"-ToggleEra{eraid}Arrow-", enable_events=True),
+                    sg.Text(f"{eraname} Nations", enable_events=True, k=f"-ToggleEra{eraid}Text-", font=("arial", 20))]]
+        categories[eraid].insert(0, [sg.Button(f"Select All {eraname}", k=f"-SelectAllEra{eraid}-"),
+                                     sg.Button(f"Deselect All {eraname}", k=f"-DeselectAllEra{eraid}-")])
+        layout += [[sg.pin(sg.Column(categories[eraid], k=f"-Era{eraid}Category-", visible=False))]]
+
+    layout += [[sg.Button("Close")]]
+
+    visibility = {}
+
+    window = sg.Window(f"Select Nations", layout)
+    while True:
+        event, values = window.read(timeout=100)
+        if event is None:
+            break
+
+        # Update selections
+        nationselection = []
+        for era in range(1, 4):
+            boxkeys = categorykeys[era]
+            for key in boxkeys:
+                if values[key]:
+                    m = re.match("-NationPick([0-9]*)-", key)
+                    nationid = int(m.groups()[0])
+                    nationselection.append(nationid)
+
+        if event == "Close":
+            break
+        if event.startswith("-ToggleEra"):
+            eratoggled = int(event[10])
+            newvis = not visibility.get(eratoggled, False)
+            visibility[eratoggled] = newvis
+            window[f"-Era{eratoggled}Category-"].update(visible=newvis)
+            window[f"-ToggleEra{eratoggled}Arrow-"].update(UP_ARROW if newvis else DOWN_ARROW)
+        if event in ["Select All", "Deselect All"]:
+            selectionstate = event == "Select All"
+            for era in range(1, 4):
+                keys = categorykeys[era]
+                for key in keys:
+                    window[key].update(value=selectionstate)
+        if event.startswith("-SelectAllEra") or event.startswith("-DeselectAllEra"):
+            selectionstate = event.startswith("-SelectAllEra")
+            # last character is another dash, so -2 is the era id
+            era = int(event[-2])
+            keys = categorykeys[era]
+            for key in keys:
+                window[key].update(value=selectionstate)
+    window.close()
 
 
 def main():
@@ -99,6 +232,7 @@ def main():
             ' For example: C:/Users/[User]/AppData/Roaming/Dominions5/mods/magicgen.dm',
 
             size=(50, 4), relief="ridge"), sg.Multiline(key='-modlist-', size=(50, 5))],
+        [sg.Button("Select Nations for National Spells")],
 
     ]
 
@@ -195,6 +329,9 @@ def main():
             spawn_worker_process(**clargdict)
             outputthread = threading.Thread(target=output_polling_thread)
             outputthread.start()
+
+        if event == "Select Nations for National Spells":
+            display_nationchoice(values["-modlist-"])
 
         for section in ["AdvOptions", "BasicOptions"]:
             if event.startswith(f"-Toggle{section}"):

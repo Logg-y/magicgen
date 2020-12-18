@@ -3,6 +3,10 @@ TODO
 globals
 unique summons
 
+NEW IN v1.2.0
+
+Smites are now 100 precision as they are in vanilla.
+The interface now offers a choice of the nations to generate national spells for. Now people who want to have large numbers of national spells on a small selection of nations can do so!
 
 NEW IN v1.1.2
 
