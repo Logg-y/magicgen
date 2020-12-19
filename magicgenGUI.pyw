@@ -11,7 +11,7 @@ import PySimpleGUI as sg
 
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
-          "pathlevelmodmult", "outputfolder"]
+          "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 
@@ -19,7 +19,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v1.2.1"
+ver = "v1.2.2"
 
 
 def output_polling_thread(timeout=0.1):
@@ -284,6 +284,21 @@ def main():
 
     ]
 
+    id_category = [
+        [sg.Text('These settings change the starting ID used for each of the listed moddable objects. Change these'
+                 ' only when using MagicGen in combination with other mods. They should be set to ranges outside of '
+                 'those used by the other mods in the game.', size=(100, 2))],
+        [sg.Text('Starting Spell ID. (Allowed range for modded spells is 1300-3999)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-spellidstart-', size=(4, 1), default_text=1300)],
+        [sg.Text('Starting Monster ID. (Allowed range for modded units is 3500-8999)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-unitidstart-', size=(4, 1), default_text=3500)],
+        [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800+)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
+    ]
+
     layout = [[sg.Text("Welcome to MagicGen!", k="-welcome-", font=("arial", 40))],
               [sg.Text(UP_ARROW, k="-ToggleBasicOptionsArrow-", enable_events=True),
                sg.Text("Basic Options", enable_events=True, k="-ToggleBasicOptionsLabel-", font=("arial", 20))],
@@ -291,10 +306,13 @@ def main():
               [sg.Text(DOWN_ARROW, k="-ToggleAdvOptionsArrow-", enable_events=True),
                sg.Text("Advanced Options", enable_events=True, k="-ToggleAdvOptionsLabel-", font=("arial", 20))],
               [sg.pin(sg.Column(adv_category, k="-AdvOptions-", visible=False))],
+              [sg.Text(DOWN_ARROW, k="-ToggleIDOptionsArrow-", enable_events=True),
+               sg.Text("Configure IDs", enable_events=True, k="-ToggleIDOptionsLabel-", font=("arial", 20))],
+              [sg.pin(sg.Column(id_category, k="-IDOptions-", visible=False))],
               [sg.Button('Generate', size=(7, 1)), sg.Button('Quit', size=(7, 1))],
               [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
 
-    visibility = {"BasicOptions": True, "AdvOptions": False}
+    visibility = {"BasicOptions": True, "AdvOptions": False, "IDOptions":False}
     window = sg.Window(f"MagicGen {ver}: Generating New Spellbooks Since 1986!", layout)
 
     # Event Loop to process "events" and get the "values" of the inputs
@@ -333,7 +351,7 @@ def main():
         if event == "Select Nations for National Spells":
             display_nationchoice(values["-modlist-"])
 
-        for section in ["AdvOptions", "BasicOptions"]:
+        for section in ["AdvOptions", "BasicOptions", "IDOptions"]:
             if event.startswith(f"-Toggle{section}"):
                 newvis = not visibility[section]
                 visibility[section] = newvis

@@ -3,6 +3,11 @@ TODO
 globals
 unique summons
 
+NEW IN v1.2.2
+
+The interface now allows the input of various start IDs so that they can be chosen to not conflict with other mods in use.
+Fixed the name of Kokythiad ritual summons when it has death as its primary path. 
+
 NEW IN v1.2.1
 
 Hopefully fixed an "invalid argument" error caused when trying to generate national spells when specifying mods.

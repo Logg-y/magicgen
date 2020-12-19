@@ -55,9 +55,9 @@
 #secondarypathchance 98
 
 #name 4 "Summon NAMEPREFIX %Kokythiad%"
-#name 64 "Summon NAMEPREFIX %Kokythiad%"
+#name 32 "Summon NAMEPREFIX %Kokythiad%"
 #descr 4 "The caster summons ARTICLE %Kokythiad%. The %Kokythiad% is skiled in water and death magic."
-#descr 64 "The caster summons ARTICLE %Kokythiad%. The %Kokythiad% is skiled in water and death magic."
+#descr 32 "The caster summons ARTICLE %Kokythiad%. The %Kokythiad% is skiled in water and death magic."
 #spelltype 20
 
 #scalerate 1

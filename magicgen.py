@@ -12,8 +12,9 @@ from spellstructures import utils
 # List of spells to not push to uncastable: these are only divine spells
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
+# All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "1.2.1"
+ver = "1.2.2"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -28,6 +29,10 @@ def _writetoconsole(line):
 
 
 def rollspells(**options):
+    utils.WEAPON_ID = options.get("weaponidstart", 800)
+    utils.MONSTER_ID = options.get("unitidstart", 3500)
+    utils.SPELL_ID = options.get("spellidstart", 1300)
+
     if options.get("nationlist", "") == "":
         options["nationlist"] = None
     else:
@@ -362,6 +367,18 @@ def main():
     opts.append(Option("-nationlist",
                        help="A list of nation IDs, separated by commas. If provided, national spells will only be generated for these nations.",
                        type=str, default=""))
+
+    opts.append(Option("-spellidstart",
+                       help="Starting Spell ID. (Allowed range for modded spells is 1300-3999)",
+                       type=int, default=1300))
+
+    opts.append(Option("-unitidstart",
+                       help="Starting Monster ID. (Allowed range for modded units is 3500-8999)",
+                       type=int, default=3500))
+
+    opts.append(Option("-weaponidstart",
+                       help="Starting Weapon ID. (Allowed range for modded weapons is 800+)",
+                       type=int, default=800))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",
