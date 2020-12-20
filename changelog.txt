@@ -3,6 +3,11 @@ TODO
 globals
 unique summons
 
+NEW IN v1.2.3
+
+Added a button to the UI that tries to autodetect good starting IDs based on the mods loaded.
+Correctly noted the maximum number of modded weapons.
+
 NEW IN v1.2.2
 
 The interface now allows the input of various start IDs so that they can be chosen to not conflict with other mods in use.

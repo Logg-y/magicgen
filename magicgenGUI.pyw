@@ -199,6 +199,18 @@ def display_nationchoice(modstring):
                 window[key].update(value=selectionstate)
     window.close()
 
+def detectids(window, modlist):
+    "Detect sensible starting IDs based on the mods."
+    nationals.readMods(modlist)
+    startunitid = max(nationals.monsterids) + 1
+    startweaponid = max(nationals.weaponids) + 1
+    startspellid = max(nationals.spellids) + 1
+    window["-spellidstart-"].update(value=str(startspellid))
+    window["-weaponidstart-"].update(value=str(startweaponid))
+    window["-unitidstart-"].update(value=str(startunitid))
+    print(startunitid, startweaponid, startspellid)
+    print(nationals.monsterids)
+
 
 def main():
     global proc
@@ -294,9 +306,10 @@ def main():
         [sg.Text('Starting Monster ID. (Allowed range for modded units is 3500-8999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-unitidstart-', size=(4, 1), default_text=3500)],
-        [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800+)', size=(50, 2),
+        [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800-1999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
+        [sg.Button("Autodetect Good Starting IDs")],
     ]
 
     layout = [[sg.Text("Welcome to MagicGen!", k="-welcome-", font=("arial", 40))],
@@ -311,6 +324,7 @@ def main():
               [sg.pin(sg.Column(id_category, k="-IDOptions-", visible=False))],
               [sg.Button('Generate', size=(7, 1)), sg.Button('Quit', size=(7, 1))],
               [sg.Multiline("", autoscroll=True, size=(100, 7), key="-OUTPUT-")]]
+
 
     visibility = {"BasicOptions": True, "AdvOptions": False, "IDOptions":False}
     window = sg.Window(f"MagicGen {ver}: Generating New Spellbooks Since 1986!", layout)
@@ -358,6 +372,9 @@ def main():
                 window[f"-Toggle{section}Arrow-"].update(UP_ARROW if newvis else DOWN_ARROW)
                 window[f"-{section}-"].update(visible=newvis)
                 break
+
+        if event == "Autodetect Good Starting IDs":
+            detectids(window, values["-modlist-"]);
 
     window.close()
 

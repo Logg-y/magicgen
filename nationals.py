@@ -7,6 +7,10 @@ from spellstructures import utils
 nationals = {}
 nationinfo = {}
 
+spellids = []
+weaponids = []
+monsterids = []
+
 
 class Nation(object):
     "Container for modded nation info, used for the UI only"
@@ -82,7 +86,11 @@ def readVanilla():
 
 
 def readMods(modstring):
+    global monsterids, weaponids, spellids
     mods = modstring.strip().split(",")
+    monsterids = [3499]
+    weaponids = [799]
+    spellids = [1299]
     for mod in mods:
         mod = mod.strip()
         if mod.strip() == "":
@@ -98,15 +106,51 @@ def readMods(modstring):
             sitenames = {}
             startsites = {}
             nationalunits = {}
+
             for line in f:
                 if line.strip() == "": continue
+                line = line.strip()
                 m = re.match("#newmonster (\\d*)", line)
+                if m is None:
+                    m = re.match("#selectmonster (\\d*)", line)
                 if m is not None:
                     if lastunit is not None:
                         units[lastunit] = lastobj
                     print(f"Parsed newmonster {m.groups()[0]}")
+
                     lastunit = int(m.groups()[0])
+                    monsterids.append(int(m.groups()[0]))
                     lastobj = NationalMage()
+                elif line.startswith("#newmonster"):
+                    newid = max(monsterids) + 1
+                    monsterids.append(newid)
+
+
+
+                m = re.match("#newspell (\\d*)", line)
+                if m is None:
+                    m = re.match("#selectspell (\\d*)", line)
+                if m is not None:
+                    newid = int(m.groups()[0])
+                    spellids.append(newid)
+                    print(f"Parsed spell {newid}")
+                elif line.startswith("#newspell"):
+                    newid = max(spellids) + 1
+                    print(f"Parsed spell with implied id {newid}")
+                    spellids.append(newid)
+
+                m = re.match("#newweapon (\\d*)", line)
+                if m is None:
+                    m = re.match("#selectweapon (\\d*)", line)
+                if m is not None:
+                    print(m.groups())
+                    print(line)
+                    newid = int(m.groups()[0])
+                    weaponids.append(newid)
+                elif line.startswith("#newweapon"):
+                    newid = max(weaponids) + 1
+                    weaponids.append(newid)
+
 
                 m = re.match("#selectnation (\\d*)", line)
                 if m is not None:
