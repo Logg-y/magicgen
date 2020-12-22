@@ -3,10 +3,12 @@ TODO
 globals
 unique summons
 
+
 NEW IN v1.2.3
 
 Added a button to the UI that tries to autodetect good starting IDs based on the mods loaded.
 Correctly noted the maximum number of modded weapons.
+Fixed number of bolts in fires from afar description (thanks Mergele).
 
 NEW IN v1.2.2
 
