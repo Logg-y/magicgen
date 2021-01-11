@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 128
 
-#skipchance 60
+#skipchance 88
 
 #name 128 "Summon NAMEPREFIX Shadow Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons several shadow imps from Inferno to aid him in battle. These imps cannot fly, but become more powerful in darkness."
@@ -42,7 +42,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 85
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 55
@@ -61,7 +61,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 94
 #nogeodst 2052
 
 #paths 128
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 94
 
 #paths 128
 #secondarypaths 128

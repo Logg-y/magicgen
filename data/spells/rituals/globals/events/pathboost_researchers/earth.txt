@@ -1,0 +1,18 @@
+#neweventset "Pathboosts researchers earth"
+#scaleparam "req_domchance" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 2
+#req_targorder 4
+#req_0popok
+#nolog
+#msg "While reading a magical tome, a researcher suddenly gained deeper knowledge of earth!"
+#pathboost 2
+#end

@@ -1,8 +1,67 @@
 TODO
 
-globals
 unique summons
+add a toggle for wiping national spells
+ranged summon spells
+edge of field summons
 
+NEW IN v2.0.0
+
+Internally there is now support for event based spells. This means there are now some new additions, as well as groundwork for more...
+
+Added global enchantment effects:
+	Scaling gem generators (except for blood)
+	A free patroller in every owned province in friendly dominion
+	Drown the world in hungry animals that eat lots of supplies
+	Generates good events based on dominion strength
+	Various levels of finding extra magic items
+	Various variations of random pathboost on mages/commanders/researchers
+	Finds and generates mines and mineral deposits
+	Scale modifying effects
+	Global that grants XP to commanders
+	Freespawn random summonable units (including the modifiers magicgen normally puts on things)
+	Freespawn random summonable commanders
+
+Lesser changes and fixes:
+	Bowl of Blood now searches blood (it was nature, thanks r2 for this)
+	Corrected the numbers in the UI description for the research modifier advanced option
+	Spring immortality summon modifier now works
+	Looming hell now applies the correct global effect, previously it was ghost ship armada
+	Switched around vanilla gem generator globals' stats to fit in with the new scaling ones:
+		Stellar focus research level reduced from 7 to 5.
+		Mother oak research level increased from 5 to 6
+		Eternal pyre research level increased from 6 to 7
+		Gale gate research level increased from 6 to 7, gem cost increased from 75A to 80A
+		Maelstrom research level decreased from 8 to 7
+		Well of misery research level decreased from 8 to 7
+		(Earth blood deep well and blood vortex are unchanged)
+	Fixed a naming bug that caused creation to fail if messing with the research level adjuster.
+	Added error checks triggered if generated unit/weapon IDs go beyond the limits that the game will accept
+	Lowered path modifiers no longer apply to global enchantments
+	Summon modifiers that make weapons magical can now be applied to weapons that are already magical
+	Many minor spell name and description grammar fixes
+	Rebalanced skipchances for most summons to make the new conjuration globals appear at a reasonable frequency
+	Spells that tried to generate with a path level of over 9 now are set to 9, rather than the game being left to interpret their path level as 1 instead
+	Units with secondshapes can no longer get the immortality summon modifier, as this would cause them to always return in their weakest shape regardless of what they died as (this primarily affects size 2+ elementals)
+	Fixed error when specifically trying to generate mages for a nation that doesn't have any nationals
+	Added yellow details text to murdering winter
+	Added aim/wind guide precision spells because they somehow didn't make it in the first pass
+	Added ranged modifier for non-commander summoning spells
+	Added battlefield edge summoning spells
+	Added cloud extension modifier for cloud spells
+	
+Balance:
+	Cave drake remote attack creature count increased by 2 from 1/+1 to 3/+1
+	Reduced the path level scaling rates for the following effects:
+		Haste: -50%
+		Rust: -50%
+	Chain lightning fatigue cost 30 from 20, path level 3 from 2, research level 4 from 3 (thanks to the relevent testers for showing me why this was OTT)
+	Fear range reduced from 50 to 25 + 5/level
+	Crusher remote attack number of units increased from 1 to 3, cost per additional unit lowered from 250 to 100 fatigue
+	Clayman remote attack cost per additional unit lowered from 50 to 20 fatigue
+	Living statue remote attack spawns 4 less per cast
+	Reduced the path level for astral corruption from 11 to 9
+	Reduced the cost per additional effect of battlesummoned mages by 50%, making large summonings of them cost less gems to cast
 
 NEW IN v1.2.3
 

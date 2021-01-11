@@ -1,0 +1,178 @@
+#neweffect "Growth boost 1"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 192
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth boost 1"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 64 "Gift of Fertility"
+#name 128 "Fertility of Blood"
+
+#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase slightly."
+#descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase slightly."
+#details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +2-3 of neutral."
+#end
+
+#neweffect "Growth boost 2"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 4500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 192
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth boost 2"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 64 "Gift of Fertility"
+#name 128 "Fertility of Blood"
+
+#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase."
+#descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase."
+#details "Each friendly province has two independent rolls at 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +4 of neutral."
+#end
+
+
+
+#neweffect "Growth boost 3"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 5500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 192
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth boost 3"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 64 "Gift of Fertility"
+#name 128 "Fertility of Blood"
+
+#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase significantly."
+#descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase significantly."
+#details "Each friendly province has three independent rolls at 40% chance per point of friendly dominion to gain +1 Growth.  In practice, scales settle around +5 of neutral."
+#end
+
+
+
+#neweffect "Growth theft 1"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 6000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 32
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth theft 1"
+
+#spelltype 4
+#scalerate 0
+
+
+#name 32 "Theft of Growth"
+
+#descr 32 "The life and fertility are drained out of hostile provinces and channeled into friendly ones. This results in a reduction in Death in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance to gain +1 Growth. Each hostile province has a 50% chance to gain a corresponding amount of Death."
+#end
+
+
+#neweffect "Growth theft 2"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 10
+#maxpower 10
+#nreff 1
+#pathlevel 5
+#fatiguecost 8000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 32
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth theft 2"
+
+#spelltype 4
+#scalerate 0
+
+#name 32 "Theft of Growth"
+
+#descr 32 "The life and fertility are drained out of hostile provinces and channeled into friendly ones. This results in a reduction in Death in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance to gain +2 Growth. Each hostile province has a 50% chance to gain a corresponding amount of Death."
+#end
+
+
+#neweffect "Growth theft 3"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 12
+#maxpower 12
+#nreff 1
+#pathlevel 5
+#fatiguecost 10000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 32
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Growth theft 3"
+
+#spelltype 4
+#scalerate 0
+
+#name 32 "Theft of Growth"
+
+#descr 32 "The life and fertility are drained out of hostile provinces and channeled into friendly ones. This results in a reduction in Death in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance to gain +3 Growth. Each hostile province has a 50% chance to gain a corresponding amount of Death."
+#end
+

@@ -23,6 +23,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
+#noadditionalnextspells 1
 #sound 16
 
 #nextspell "Cave Collapse"

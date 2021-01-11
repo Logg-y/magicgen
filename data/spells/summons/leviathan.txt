@@ -24,7 +24,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "leviathan ritual"
@@ -43,7 +43,7 @@
 
 #name 32 "Summon NAMEPREFIX %Leviathan%"
 #descr 32 "The caster summons ARTICLE %leviathan% to fight for him. Leviathans are reanimated sea creatures which are terrifying to behold, and can trample their enemies."
-#skipchance 75
+#skipchance 97
 
 #spelltype 20
 
@@ -64,7 +64,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 16
-#skipchance 75
+#skipchance 97
 
 #paths 32
 #secondarypaths 4
@@ -90,7 +90,7 @@
 #schools 16
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 #paths 32
 #secondarypaths 4
 #secondarypathchance 90

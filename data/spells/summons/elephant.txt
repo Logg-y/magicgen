@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %elephant%"
 #descr 64 "The caster summons ARTICLE_N %elephant% to fight for him. The elephant is a massive wild animal that tramples its enemies underneath its massive legs, but it is vulnerable to magic as well as prone to running away."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %elephant%"
 #descr 64 "The caster summons ARTICLE_N %elephant% to fight for him. The elephant is a massive wild animal that tramples its enemies underneath its massive legs, but it is vulnerable to magic as well as prone to running away."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

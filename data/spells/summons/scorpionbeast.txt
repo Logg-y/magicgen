@@ -14,7 +14,7 @@
 #paths 9
 #secondarypaths 9
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Scorpion %Beast%"
 #name 8 "Summon NAMEPREFIX Scorpion %Beast%"
@@ -39,7 +39,7 @@
 #paths 9
 #secondarypaths 9
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Scorpion %Beast%"
 #name 8 "Summon NAMEPREFIX Scorpion %Beast%"
@@ -65,7 +65,7 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 9
@@ -93,7 +93,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 9
 #secondarypaths 9

@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Vine %Man%"
 #descr 64 "The caster enchants vines and forms them into ARTICLE humanoid %shape%. The resulting vine %man% will fight for the caster, but will then return to the ground at the end of the battle."
@@ -36,7 +36,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Vine Men"
 #descr 64 "The caster enchants vines and forms them into ARTICLE humanoid %shape%. The resulting vine %man% will fight for the caster."
@@ -60,7 +60,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -84,7 +84,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

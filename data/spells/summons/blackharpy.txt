@@ -13,7 +13,7 @@
 #paths 66
 #secondarypaths 66
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX Black Harpies"
 #name 64 "Summon NAMEPREFIX Black Harpies"
@@ -38,7 +38,7 @@
 #paths 66
 #secondarypaths 66
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX Black Harpies"
 #name 64 "Summon NAMEPREFIX Black Harpies"
@@ -47,7 +47,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 20
@@ -66,7 +66,7 @@
 #pathlevel 2
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 66
@@ -94,7 +94,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 66
 #secondarypaths 66

@@ -19,6 +19,7 @@
 #range 10
 #fatiguecost 10
 #skipchance 30
+#pathperresearch -0.33
 
 
 #paths 66

@@ -3,14 +3,14 @@
 #nameprefix "Holy"
 #req demon == -1
 #req undead == -1
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons imbued with holy power and is especially effective against undead or demonic beings."
 #end
 
 #newunitmod "Summon DmgVsMagic"
 #weaponmod "DmgVsMagic"
 #nameprefix "Unraveling"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons imbued with astral power and is especially effective against magic beings."
 #end
 
@@ -18,6 +18,6 @@
 #weaponmod "DmgVsDemonsOnly"
 #nameprefix "Demonslaying"
 #req demon == -1
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons imbued with holy power and is especially effective against demonic beings."
 #end

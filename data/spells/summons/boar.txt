@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar%. These boar are fairly timid and will not trample opponents."
@@ -36,14 +36,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar%. These boar are fairly timid and will not trample opponents."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 15
@@ -62,13 +62,13 @@
 #pathlevel 2
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Boar Attack"
 #descr 64 "The caster summons ARTICLE wild %boar% to ambush a hostile commander in a distant province. This boar is fairly timid and will not trample opponents."
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

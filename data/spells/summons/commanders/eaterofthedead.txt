@@ -14,7 +14,7 @@
 #secondarypaths 48
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There is only one commander that can be summoned with this spell."
 #name 16 "Call the Eater of the Dead"

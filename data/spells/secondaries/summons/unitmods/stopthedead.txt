@@ -1,6 +1,6 @@
 #newunitmod "Summon Stopthedead"
 #weaponmod "Stopthedead"
 #nameprefix "Ghostrending"
-#req trample == -1
+#req trample <= 0
 #descr "Undead wounded by attacks from this CREATURE may become paralyzed."
 #end

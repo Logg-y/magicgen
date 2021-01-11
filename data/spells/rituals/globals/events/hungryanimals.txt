@@ -1,0 +1,38 @@
+#neweventset "Hungry Animals"
+
+#selectunitmod "Hungry Animals"
+#allowedunitmod "Hungry Animals"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Hungry animals create units"
+#nolog
+#notext
+#nation -2
+#req_ench ENCHANTID
+#2d6units UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Hungry Animals destroy"
+#nolog
+#notext
+#nation -2
+#req_noench ENCHANTID
+#req_monster UNITID
+#kill2d6mon UNITID
+#end
+
+#newevent
+#rarity 5
+#req_rare 5
+#msg "A hungry animal has attacked one of your commanders!"
+#nolog
+#req_ench ENCHANTID
+#req_fort 0
+#req_land 1
+#assassin UNITID
+#end

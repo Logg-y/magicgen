@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Wolf%"
 #descr 64 "Summons ARTICLE %wolf% to fight for the caster."
@@ -41,7 +41,7 @@
 
 #spelltype 20
 
-#skipchance 70
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 5
@@ -60,7 +60,7 @@
 #pathlevel 3
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -86,7 +86,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

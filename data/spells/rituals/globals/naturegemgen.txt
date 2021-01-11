@@ -1,0 +1,125 @@
+#neweffect "Naturegengem 2d6"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#schools 49
+#unique 1
+#paths 64
+#skipchance 80
+#secondarypaths 64
+#secondarypathchance 90
+#eventset "Naturegemgen 2d6"
+
+#name 64 "Treasures of the Animals"
+#descr 64 "The caster reaches out to all animal life across the world, calling them to share their treasures with him. Whilst most of these are objects of no material value, occasionally an animal returns with several magical nature gems."
+#details "Generates 2d6 nature gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+-- too close to moak
+-- #neweffect "Naturegengem 3d6"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 6
+-- #maxpower 6
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 5000
+-- #schools 17
+-- #unique 1
+-- #paths 32
+-- #skipchance 65
+-- #secondarypaths 32
+-- #secondarypathchance 90
+-- #eventset "Naturegemgen 3d6"
+-- 
+-- #name 32 "Essence of the Departed"
+-- #descr 32 "The essence of the dead and dying across the world are focused and directed by the caster. This allows him to shape the essence into a small of number magical gems."
+-- #details "Generates 3d6 death gems per month, so long as there is a friendly province that is not under siege."
+-- 
+-- #spelltype 4
+-- #scalerate 0
+-- #end
+
+#neweffect "Naturegengem 6d6"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 8000
+#schools 50
+#unique 1
+#paths 64
+#skipchance 80
+#secondarypaths 64
+#secondarypathchance 90
+#eventset "Naturegemgen 6d6"
+
+#name 64 "Lesser Enchanted Plants"
+#descr 64 "The caster imbues the soil of friendly provinces with magic. Whilst this does affect the growth of plants, it causes some to bear magical fruit which can be processed into nature gems."
+#details "Generates 6d6 nature gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Naturegengem 9d6"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 11000
+#schools 50
+#unique 1
+#paths 64
+#skipchance 80
+#secondarypaths 64
+#secondarypathchance 90
+#eventset "Naturegemgen 9d6"
+
+#name 64 "Enchanted Plants"
+#descr 64 "The caster imbues the soil of friendly provinces with magic. Whilst this does affect the growth of plants, it causes some to bear magical fruit which can be processed into a large number of nature gems."
+#details "Generates 9d6 nature gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Naturegengem 12d6"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 15000
+#schools 50
+#unique 1
+#paths 64
+#skipchance 80
+#secondarypaths 64
+#secondarypathchance 90
+#eventset "Naturegemgen 12d6"
+
+#name 64 "Greater Enchanted Plants"
+#descr 64 "The caster imbues the soil of friendly provinces with magic. Whilst this does affect the growth of plants, it causes some to bear magical fruit which can be processed into a massive number of nature gems."
+#details "Generates 12d6 nature gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end

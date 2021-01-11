@@ -14,7 +14,7 @@
 #secondarypaths 9
 #secondarypathchance 90
 
-#skipchance 90
+#skipchance 97
 #scalefatiguemult 80
 #name 8 "Summon NAMEPREFIX %Khalkotauros%"
 #name 1 "Summon NAMEPREFIX %Khalkotauros%"
@@ -40,7 +40,7 @@
 #secondarypaths 9
 #secondarypathchance 90
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX %Khalkotauros%"
 #name 1 "Summon NAMEPREFIX %Khalkotauros%"
@@ -67,7 +67,7 @@
 #pathlevel 5
 #fatiguecost 700
 #schools 8
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 9
@@ -96,7 +96,7 @@
 #schools 8
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 9
 #secondarypaths 9

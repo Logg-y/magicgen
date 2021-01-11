@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 32
 #secondarypaths 32
@@ -22,7 +22,7 @@
 #name 32 "Summon NAMEPREFIX Lich"
 #descr 32 "The caster summons ARTICLE %Lich% to fight for him on the battlefield. The %Lich% %is% a powerful undead death mage, but will leave once the battle is over."
 
-#scalefatiguemult 100
+#scalefatiguemult 50
 #spelltype 528
 
 #scalerate 1
@@ -44,7 +44,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 8
 #secondarypaths 8

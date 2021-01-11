@@ -9,7 +9,7 @@
 #req damage > 0
 #mult fatiguecost 2.2
 
-#req trample == -1
+#req trample <= 0
 #unitmod "Summon Shockweapon"
 #descr "The summoned %creature% %is% able to shock enemies with attacks."
 
@@ -22,7 +22,7 @@
 #paths 2
 #power -2
 
-#req trample == -1
+#req trample <= 0
 -- not montag
 #req damage > 0
 #mult fatiguecost 2.6

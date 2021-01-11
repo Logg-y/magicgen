@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 112
@@ -25,11 +25,11 @@
 #name 32 "Call NAMEPREFIX Black %Witch%"
 #name 16 "Teleport NAMEPREFIX Black %Witch%"
 #name 64 "Charm NAMEPREFIX Black %Witch%"
-#descr 32 "The death mage lets out a call for ARTICLE %Black Witch% to join him in battle. The %Black Witch% will leave once the battle is over."
-#descr 16 "The caster teleports ARTICLE %Black Witch% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Black Witch% will leave once the battle is over."
-#descr 64 "The caster attracts ARTICLE %Black Witch% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Black Witch% will leave once the battle is over."
+#descr 32 "The death mage lets out a call for ARTICLE Black %Witch% to join him in battle. The Black %Witch% will leave once the battle is over."
+#descr 16 "The caster teleports ARTICLE Black %Witch% onto the battlefield and uses magic to convince PRONOUN to fight for him. The Black %Witch% will leave once the battle is over."
+#descr 64 "The caster attracts ARTICLE Black %Witch% onto the battlefield and uses magic to convince PRONOUN to fight for him. The Black %Witch% will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1
@@ -51,7 +51,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 #pathskipchance 16 80
 #paths 112
 #secondarypaths 32
@@ -60,9 +60,9 @@
 #name 32 "Call NAMEPREFIX Black Witch"
 #name 16 "Teleport NAMEPREFIX Black Witch"
 #name 64 "Charm NAMEPREFIX Black Witch"
-#descr 32 "The death mage lets out a call for ARTICLE %Black Witch%. Black Witchs are mages of death and nature."
-#descr 16 "The caster teleports ARTICLE %Black Witch% to him and convinces PRONOUN to fight for him."
-#descr 64 "The caster attracts ARTICLE %Black Witch% to him and convinces PRONOUN to fight for him."
+#descr 32 "The death mage lets out a call for ARTICLE Black %Witch%. Black Witchs are mages of death and nature."
+#descr 16 "The caster teleports ARTICLE Black %Witch% to him and convinces PRONOUN to fight for him."
+#descr 64 "The caster attracts ARTICLE Black %Witch% to him and convinces PRONOUN to fight for him."
 
 #spelltype 20
 

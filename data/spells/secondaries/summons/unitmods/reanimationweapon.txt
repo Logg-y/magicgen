@@ -1,7 +1,7 @@
 #newunitmod "Summon Reanimationweapon"
 #weaponmod "Reanimationweapon"
 #nameprefix "Reanimating"
-#req trample == -1
+#req trample <= 0
 #set undeadleader 1
 #descr "This particular CREATURE reanimates those killed by its attacks as soulless."
 #end

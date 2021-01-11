@@ -1,48 +1,48 @@
 #newunitmod "Summon Armloss"
 #weaponmod "Armloss"
 #nameprefix "Armsevering"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to immediately sever an arm from anyone wounded by them."
 #end
 
 #newunitmod "Summon Eyeloss"
 #weaponmod "Eyeloss"
 #nameprefix "Eyeseeking"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to immediately damage an eye of anyone wounded by them."
 #end
 
 #newunitmod "Summon Limp"
 #weaponmod "Limp"
 #nameprefix "Hamstringing"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to immediately wound the legs of anyone hurt by them, causing a limp."
 #end
 
 #newunitmod "Summon Disease"
 #weaponmod "Disease"
 #nameprefix "Pestilent"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to afflict anyone wounded by them with a disease, unless they resist the magical effect."
 #end
 
 #newunitmod "Summon Chestwound"
 #weaponmod "Chestwound"
 #nameprefix "Chestseeking"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to immediately wound the chest of anyone hurt by them."
 #end
 
 #newunitmod "Summon Feeblemind"
 #weaponmod "Feeblemind"
 #nameprefix "Feebleminding"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to immediately deterioriate the brain of anyone hurt by them."
 #end
 
 #newunitmod "Summon Shrink"
 #weaponmod "Shrink"
 #nameprefix "Shrinking"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically altered to permanently shrink anyone wounded by them."
 #end

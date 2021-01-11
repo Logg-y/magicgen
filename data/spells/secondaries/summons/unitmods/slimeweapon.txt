@@ -1,6 +1,6 @@
 #newunitmod "Summon Slimeweapon"
 #weaponmod "Slimeweapon"
 #nameprefix "Slimy"
-#req trample == -1
+#req trample <= 0
 #descr "Anyone wounded by attacks from this CREATURE risks being caught in slime. This is a magical effect and may be resisted."
 #end

@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalerate 1
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "longdeadarcher ritual"
@@ -50,7 +50,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 
-#skipchance 50
+#skipchance 97
 #scalerate 4
 #end
 
@@ -65,7 +65,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 8
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 1
@@ -92,7 +92,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 1

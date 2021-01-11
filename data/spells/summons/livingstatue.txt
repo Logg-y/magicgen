@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 90
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Living %Statue%"
 #descr 8 "The caster quickly forms and enchants ARTICLE living %statue% from the earth. The %statue% will crumble back to earth after the battle."
@@ -40,7 +40,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 60
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Living %Statue%"
 #descr 8 "The caster forms and enchants ARTICLE living %statue% from earth. The %statue% %is% highly resistant to physical damage."
@@ -64,7 +64,7 @@
 #pathlevel 5
 #fatiguecost 400
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -83,12 +83,12 @@
 #spec 8388608
 #power 5
 #maxpower 9
-#nreff 2005
+#nreff 2001
 #pathlevel 4
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

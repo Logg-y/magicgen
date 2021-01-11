@@ -21,7 +21,7 @@
 #spelltype 528
 
 #scalerate 1
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Call Horror"
@@ -46,7 +46,7 @@
 
 #spelltype 528
 
-#skipchance 50
+#skipchance 97
 #scalerate 1
 #end
 
@@ -74,7 +74,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE lesser %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
 
 #spelltype 20
-#skipchance 50
+#skipchance 97
 
 #scalerate 2.0
 #end
@@ -101,7 +101,7 @@
 #name 128 "Send %Horror%"
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
 
-#skipchance 50
+#skipchance 97
 #spelltype 20
 
 #scalerate 2.0

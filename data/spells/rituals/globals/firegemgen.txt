@@ -1,0 +1,125 @@
+#neweffect "Firegengem 2d6"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#schools 50
+#unique 1
+#paths 1
+#skipchance 80
+#secondarypaths 1
+#secondarypathchance 90
+#eventset "Firegemgen 2d6"
+
+#name 1 "Eternal Candle"
+#descr 1 "The caster lights a small, magical pyre. It never burns out and the embers of the pyre will absorb the heat across the landscape. The embers can then be harvested for magical gems imbued with the fiery power of the pyre."
+#details "Generates 2d6 fire gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Firegengem 3d6"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 50
+#unique 1
+#paths 1
+#skipchance 80
+#secondarypaths 1
+#secondarypathchance 90
+#eventset "Firegemgen 3d6"
+
+#name 1 "Eternal Brazier"
+#descr 1 "The caster lights a modestly sized magical pyre. It never burns out and the embers of the pyre will absorb the heat across the landscape. The embers can then be harvested for magical gems imbued with the fiery power of the pyre."
+#details "Generates 3d6 fire gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+-- This is basically eternal pyre kinda power
+-- #neweffect "Firegengem 6d6"
+-- #effect 10081
+-- #damage 17
+-- #spec 0
+-- #power 7
+-- #maxpower 7
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8000
+-- #schools 50
+-- #unique 1
+-- #paths 1
+-- #skipchance 65
+-- #secondarypaths 1
+-- #secondarypathchance 90
+-- #eventset "Firegemgen 6d6"
+-- 
+-- #name 1 "Eternal Pyre"
+-- #descr 1 "The caster lights a large magical pyre. It never burns out and the embers of the pyre will absorb the heat across the landscape. The embers can then be harvested for magical gems imbued with the fiery power of the pyre."
+-- #details "Generates 1d6 fire gems per month, so long as there is a friendly province that is not under siege."
+-- 
+-- #spelltype 4
+-- #scalerate 0
+-- #end
+
+#neweffect "Firegengem 9d6"
+#effect 10081
+#damage 17
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 11000
+#schools 50
+#unique 1
+#paths 1
+#skipchance 80
+#secondarypaths 1
+#secondarypathchance 90
+#eventset "Firegemgen 9d6"
+
+#name 1 "Eternal Blaze"
+#descr 1 "The caster lights a massive magical pyre. It never burns out and the embers of the pyre will absorb the heat across the landscape. The embers can then be harvested for magical gems imbued with the fiery power of the pyre."
+#details "Generates 9d6 fire gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Firegengem 12d6"
+#effect 10081
+#damage 17
+#spec 0
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 15000
+#schools 50
+#unique 1
+#paths 1
+#skipchance 80
+#secondarypaths 1
+#secondarypathchance 90
+#eventset "Firegemgen 12d6"
+
+#name 1 "Eternal Inferno"
+#descr 1 "The caster lights a magical pyre of immense proportions. It never burns out and the embers of the pyre will absorb the heat across the landscape. The embers can then be harvested for magical gems imbued with the fiery power of the pyre."
+#details "Generates 12d6 fire gems per month, so long as there is a friendly province that is not under siege."
+
+#spelltype 4
+#scalerate 0
+#end

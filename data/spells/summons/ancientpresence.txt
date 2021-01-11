@@ -15,7 +15,7 @@
 #secondarypaths 64
 #secondarypathchance 95
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Ancient %Presence%"
 #descr 4 "The caster summons an ancient presence from a dark and distant swamp. It is huge and can devour those who come near."
@@ -39,7 +39,7 @@
 #secondarypaths 64
 #secondarypathchance 95
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Ancient %Presence%"
 #descr 4 "The caster summons an ancient presence from a dark and distant swamp. It is huge and can devour those who come near."
@@ -63,7 +63,7 @@
 #pathlevel 7
 #fatiguecost 1600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 4
@@ -89,7 +89,7 @@
 #fatiguecost 800
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 64

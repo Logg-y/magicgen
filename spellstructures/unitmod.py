@@ -8,8 +8,8 @@ from . import utils
 # which means they can be a LOT simpler
 # Most stuff should be handled in the SecondaryEffect
 
-flags_to_mod_cmds = {"def_":"def", "explodeondeath":"deathfire", "acidsplash":"acidshield", "vineshield":"entangle", "deathwail":"deathparalyze", "undeadleader":"undcommand", "poisonbarbs":"poisonskin"}
-argless_cmds = ["eyeloss", "horrormark", "aquatic", "amphibian", "pooramphibian", "flying", "illusion", "heal", "ethereal", "immortal", "domimmortal", "springimmortal", "entangle", "spiritsight", "deathcurse", "noundeadleader"]
+flags_to_mod_cmds = {"def_":"def", "explodeondeath":"deathfire", "acidsplash":"acidshield", "vineshield":"entangle", "deathwail":"deathparalyze", "undeadleader":"undcommand", "poisonbarbs":"poisonskin", "invisibility":"invisible"}
+argless_cmds = ["eyeloss", "horrormark", "aquatic", "amphibian", "pooramphibian", "flying", "illusion", "heal", "ethereal", "immortal", "domimmortal", "springimmortal", "entangle", "spiritsight", "deathcurse", "noundeadleader", "invisible", "invisibility"]
 
 class UnitMod(object):
     def __init__(self):
@@ -18,16 +18,30 @@ class UnitMod(object):
         self.descr = ""
         self.nameprefix = ""
         self.weaponmod = ""
+        self.landok = 0
+        self.uwok = 0
 
         self.reqs = []
         self.setcommands = []
         self.multcommands = []
 
+        # The event unitmod code relies on having some way to pull the parent unit id back
+        # which this sorts out
+        self.lastparentid = None
+        self.lastunitname = None
+
     def compatibility(self, unit):
         # print(f"{self.name} testing against {unit.id} {unit.name}")
         for r in self.reqs:
             if not r.test(unit):
-                # print("missing req")
+                return False
+
+        if self.landok:
+            if unit.aquatic != -1:
+                return False
+
+        if self.uwok:
+            if unit.aquatic != -1 and unit.amphibian != -1 and unit.pooramphibian != -1:
                 return False
 
         # I cannot support shrink or growhp
@@ -44,17 +58,41 @@ class UnitMod(object):
 
     def apply(self, spelleffect, spell):
         "Apply this unit mod to the given spell of type spelleffect."
-        unitnr = spell.damage
-        return self.applytounit(spelleffect, spell, unitnr, {})
+        # Globals with events apply this through the eventset instead
+        if spelleffect.eventset is None:
+            unitnr = spell.damage
+            return self.applytounitid(spell, unitnr)
+        return ""
 
-    def applytounit(self, spelleffect, spell, unitnr, extrashapechain={}):
+    def applytounitid(self, spell, unitnr, extrashapechain=None, additionals_firstshape=None):
+        """Apply this effect to the given unitnr, returning mod code for the new unit.
+
+        spell can be None. If given, spell.damage is set to the correct unit ID for the new unit.
+        extrashapechain should not be set manually as it is used to track wounded shapes and make them all
+        join together neatly
+
+        additionals_firstshape should be a dict of {modcommand:value} that is appended to the first shape ONLY.
+        So far this is used for things like adding units to montags and giving them a montagweight.
+        The modcommand given should INCLUDE A HASH.
+        """
+        # Turns out that value given as default arguments are not created fresh every call
+        # which is an interesting bit of python trivia I didn't know before I wrote this
+        # needless to say, this persisting between calls created all kinds of weird abominations
+        # of creatures that would turn into each other
+        if extrashapechain is None:
+            extrashapechain = {}
+
         u = unit.get(unitnr)
+        return self.applytounit(spell, u, extrashapechain, additionals_firstshape=additionals_firstshape)
+
+    def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None):
 
         u.descr += " " + self.descr
         u.descr = u.descr.replace("CREATURE", u.name)
         u.descr = naming.parsestring(u.descr)
         u.name = self.nameprefix + " " + u.name
         u.name = u.name.strip()
+        self.lastunitname = u.name
 
         out = ""
 
@@ -67,14 +105,20 @@ class UnitMod(object):
                     wpn.origid = wpnreplacements[wpn.origid]
             out += wpnoutput
 
+        if utils.MONSTER_ID >= 9000:
+            raise ValueError("New Monster ID is too high for Dominions! Consider lowering montag sizes.")
+
         out += f"-- Modified unit {u.origid} with unitmod {self.name}\n"
         out += f"#newmonster {utils.MONSTER_ID}\n"
         # Update the spell to summon the new creature
         # needless to say, don't do this if the current monster is a secondshape something caused by running in recursive mode1
         # or the spell will be left summoning the last thing in the secondshape chain
         if len(extrashapechain) == 0:
-            print("is first pass, fixed spell.damage")
-            spell.damage = utils.MONSTER_ID
+            if spell is not None:
+                print("is first pass, fixed spell.damage")
+                spell.damage = utils.MONSTER_ID
+            else:
+                self.lastparentid = utils.MONSTER_ID
         utils.MONSTER_ID += 1
         out += f"#copystats {u.origid}\n"
         out += f"#copyspr {u.origid}\n"
@@ -121,7 +165,6 @@ class UnitMod(object):
                 out += f"#weapon {wpn.origid}\n"
 
         secondshapeextra = ""
-        interesting = len(extrashapechain) == 0
         # Second shape needs to propagate
         for x in ["shapechange", "firstshape", "secondshape", "secondtmpshape", "forestshape", "plainshape",
                   "foreignshape", "homeshape", "domshape", "notdomshape", "springshape", "summershape", "autumnshape",
@@ -130,17 +173,18 @@ class UnitMod(object):
                 uid = getattr(u, x)
                 if uid not in extrashapechain and uid > 0:
                     extrashapechain[uid] = copy(utils.MONSTER_ID)
-                    print(f"UID {uid} is a {x} of {unitnr}, applying to that too...")
-                    secondshapeextra += self.applytounit(spelleffect, spell, uid, extrashapechain)
+                    print(f"UID {uid} is a {x} of {u.name}, applying to that too...")
+                    secondshapeextra += self.applytounitid(spell, uid, extrashapechain)
                 if uid in extrashapechain and uid > 0:
                     # update this creature's secondshape or whatever with the new creature
                     out += f"#{x} {extrashapechain[uid]}\n"
+
+        if additionals_firstshape is not None:
+            for modcmd, val in additionals_firstshape.items():
+                out += f"{modcmd} {val}\n"
 
         out += "#end\n\n"
 
         out += secondshapeextra
 
-        if len(extrashapechain) > 0 and interesting:
-            print(f"spell dmg is {spell.damage}")
-            print(out)
         return out

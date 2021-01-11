@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 #scalefatiguemult 80
 
 #name 4 "Summon NAMEPREFIX %Bukavac%"
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %Bukavac%"
 #descr 4 "The caster summons forth ARTICLE %bukavac%. The bukavac is a large sea monster from Rus that tramples its enemies."
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 4
@@ -87,7 +87,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

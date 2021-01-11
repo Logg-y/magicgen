@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 4
 #secondarypaths 4
@@ -22,7 +22,7 @@
 #name 4 "Summon NAMEPREFIX Bishop Fish"
 #descr 4 "The caster summons ARTICLE Bishop Fish to fight for him on the battlefield. The Bishop Fish is a humanoid fish with great priestly power, but will leave once the battle is over."
 
-#scalefatiguemult 80
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #schools 1
 #alwaysgenerate 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 4
 #secondarypaths 4

@@ -15,7 +15,7 @@
 #schools 1
 #ainocast 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 32
 #secondarypaths 32
@@ -25,7 +25,7 @@
 #name 32 "Soul Trap"
 #descr 32 "The caster traps the %soul% of ARTICLE %hero% from the realm of the dead and pulls PRONOUN into the battle. Souls trapped by this spell could have belonged to either a warrior or a mage, but will return to the realm of the dead after the battle."
 
-#scalefatiguemult 80
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1

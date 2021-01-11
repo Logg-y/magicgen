@@ -23,7 +23,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "zmey ritual"
@@ -38,7 +38,7 @@
 
 #paths 1
 #secondarypaths 1
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Zmey"
 #descr 1 "The caster summons ARTICLE zmey to fight for him. The zmey is a three headed dragon that can breathe fire on its enemies."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 75
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -88,7 +88,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 #paths 1
 #secondarypaths 1
 

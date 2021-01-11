@@ -1,6 +1,6 @@
 #newunitmod "Summon Entangleweapon"
 #weaponmod "Entangleweapon"
 #nameprefix "Entangling"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons enchanted and can trap those wounded in magical vines."
 #end

@@ -2,8 +2,7 @@
 -- weapon not already AP or AN
 #req spec !& 64
 #req spec !& 128
-#req spec & 2097152
-#spec -2097152
+#setweaponmagic 1
 #effect != 24
 #effect == 2
 #extracommand dt_holy
@@ -15,8 +14,7 @@
 -- weapon not already AP or AN
 #req spec !& 64
 #req spec !& 128
-#req spec & 2097152
-#spec -2097152
+#setweaponmagic 1
 #effect != 73
 #effect == 2
 #extracommand dt_magic
@@ -28,8 +26,7 @@
 -- weapon not already AP or AN
 #req spec !& 64
 #req spec !& 128
-#req spec & 2097152
-#spec -2097152
+#setweaponmagic 1
 #effect != 107
 #effect == 2
 #extracommand dt_demon

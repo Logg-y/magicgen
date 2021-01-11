@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 128 "Summon NAMEPREFIX Dark Vines"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
@@ -41,7 +41,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 420
@@ -60,7 +60,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 128
@@ -86,7 +86,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 128

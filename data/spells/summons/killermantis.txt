@@ -15,7 +15,7 @@
 #secondarypathchance 80
 
 #scalefatiguemult 2
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Killer Mantis"
 #descr 64 "Summons ARTICLE killer mantis to fight for the caster. The killer mantis is an exceptionally large insect."
@@ -44,7 +44,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -63,7 +63,7 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

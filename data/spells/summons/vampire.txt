@@ -17,7 +17,7 @@
 
 #spelltype 20
 
-#skipchance 10
+#skipchance 91
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 820

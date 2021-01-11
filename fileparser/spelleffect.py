@@ -3,8 +3,8 @@ import re
 
 import spellstructures
 
-simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "smite"]
-simple_params_str = ["nextspell", "details","copyspell", "extraspell"]
+simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance"]
+simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult"]
 
 

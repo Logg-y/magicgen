@@ -24,7 +24,7 @@
 #pathlevel 1
 #schools 16
 #scalefatiguemult 20
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Raise shadowsoldier Ritual"
@@ -37,7 +37,7 @@
 #fatiguecost 100
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -61,7 +61,7 @@
 #pathlevel 3
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -87,7 +87,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

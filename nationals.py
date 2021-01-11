@@ -91,6 +91,8 @@ def readMods(modstring):
     monsterids = [3499]
     weaponids = [799]
     spellids = [1299]
+    eventcodes = [-99]
+    montagids = [1000]
     for mod in mods:
         mod = mod.strip()
         if mod.strip() == "":
@@ -125,7 +127,23 @@ def readMods(modstring):
                     newid = max(monsterids) + 1
                     monsterids.append(newid)
 
+                m = re.match("#montag (\\d*)", line)
+                if m is not None:
+                    newid = int(m.groups()[0])
+                    montagids.append(newid)
+                    print(f"Parsed montag {newid}")
 
+                m = re.match("#code (.*)", line)
+                if m is None:
+                    m = re.match("#code2 (.*)", line)
+                if m is None:
+                    m = re.match("#codedelay (.*)", line)
+                if m is None:
+                    m = re.match("#codedelay2 (.*)", line)
+                if m is not None:
+                    newid = int(m.groups()[0])
+                    eventcodes.append(newid)
+                    print(f"Parsed event code {newid}")
 
                 m = re.match("#newspell (\\d*)", line)
                 if m is None:

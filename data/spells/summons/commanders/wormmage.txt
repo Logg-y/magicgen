@@ -14,7 +14,7 @@
 #sound 31
 #schools 32
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 64
@@ -23,7 +23,7 @@
 #name 64 "Call NAMEPREFIX Worm %Mage%"
 #descr 64 "The caster summons ARTICLE Worm %Mage% onto the battlefield and uses magic to convince PRONOUN to fight for him. Worm mages are potent nature mages and constantly shed flying insects, but they will leave after the battle."
 
-#scalefatiguemult 170
+#scalefatiguemult 85
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 32
 
-#skipchance 31
+#skipchance 77
 
 #paths 64
 #secondarypaths 64

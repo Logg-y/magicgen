@@ -11,7 +11,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 50
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Lumber %Construct%"
 #descr 64 "The caster forms and enchants ARTICLE giant %construct% from wood. The animated %construct% %is% quite difficult to destroy with physical damage."
@@ -35,7 +35,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 8
-#skipchance 75
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -59,7 +59,7 @@
 #fatiguecost 200
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

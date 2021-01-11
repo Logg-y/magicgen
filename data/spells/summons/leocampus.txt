@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Leocampus%"
 #descr 64 "The caster summons ARTICLE %leocampus%. The leocampus is an underwater lion, attacking with bites and claws."
@@ -36,14 +36,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Leocampus%"
 #descr 64 "The caster summons ARTICLE %leocampus%. The leocampus is an underwater lion, attacking with bites and claws."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -62,13 +62,13 @@
 #pathlevel 2
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Leocampus Attack"
 #descr 64 "The caster summons ARTICLE %leocampus% to ambush a hostile commander in a distant province. The leocampus is an underwater lion, attacking with bites and claws."
@@ -90,7 +90,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

@@ -1,0 +1,24 @@
+#neweffect "Global Curses"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 48
+#unique 1
+#paths 32
+#skipchance 60
+#secondarypaths 32
+#secondarypathchance 99
+#eventset "Global Curses"
+
+#name 32 "Curses of the Vengeful"
+#descr 32 "The necromancer calls upon the spirits of the departed to spread curses across the world. This effect is focused upon the caster's dominion, and will primarily curse hostile units found there. However, this enchantment rouses spirits across the entire world which may utter curses upon anyone, regardless of who or where they are."
+#details "Hostile provinces in the caster's dominion have 5% of their units cursed per point of dominion. Every turn, there is a 50% chance per province that 1% of units there also become cursed."
+
+#spelltype 4
+#scalerate 0
+#end

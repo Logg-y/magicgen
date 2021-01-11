@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 8
@@ -23,7 +23,7 @@
 #name 8 "Call NAMEPREFIX Giant %Sorcerer%"
 #descr 8 "The caster summons ARTICLE %Giant Sorcerer% onto the battlefield and uses magic to convince PRONOUN to fight for him. Giant Sorcerers are potent earth mages and physically powerful, but they will leave after the battle."
 
-#scalefatiguemult 150
+#scalefatiguemult 75
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 3
+#skipchance 68
 
 #paths 8
 #secondarypaths 8

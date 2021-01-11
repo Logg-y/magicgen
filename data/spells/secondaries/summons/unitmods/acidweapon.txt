@@ -1,6 +1,6 @@
 #newunitmod "Summon Acidweapon"
 #weaponmod "Acidweapon"
 #nameprefix "Acidic"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has its weapons coated in magical acid that harms anyone struck."
 #end

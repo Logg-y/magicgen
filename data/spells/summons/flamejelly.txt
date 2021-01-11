@@ -13,7 +13,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #scalefatiguemult 20
 
@@ -38,7 +38,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Flame %Jelly%"
 #descr 1 "The caster calls forth ARTICLE flame %jelly% to fight for him. Flame jellies are very resistant to magic and are surrounded by strange heat and flames, but are very vulnerable to physical damage."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 #paths 1
 #secondarypaths 1
@@ -88,7 +88,7 @@
 
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 1

@@ -1,35 +1,35 @@
 #newunitmod "Summon Weakpoison"
 #weaponmod "Weakpoison"
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has been altered to produce a weak poison that coats its weapons."
 #end
 
 #newunitmod "Summon Strongpoison"
 #weaponmod "Strongpoison"
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has been altered to produce a poison that coats its weapons."
 #end
 
 #newunitmod "Summon Deathpoison"
 #weaponmod "Deathpoison"
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has been altered to produce a potent poison that coats its weapons."
 #end
 
 #newunitmod "Summon Debilpoison"
 #weaponmod "Debilpoison"
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has been altered to produce a debilitating poison that coats its weapons."
 #end
 
 #newunitmod "Summon Weakparapoison"
 #weaponmod "Weakparapoison"
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has been altered to produce a debilitating poison that coats its weapons."
 #end
 
@@ -37,5 +37,5 @@
 #weaponmod "Strongparapoison"
 #descr "This particular CREATURE has been altered to produce a debilitating poison that coats its weapons. This poison is magical in nature and can be resisted in the same way as other effects."
 #nameprefix "Poisonous"
-#req trample == -1
+#req trample <= 0
 #end

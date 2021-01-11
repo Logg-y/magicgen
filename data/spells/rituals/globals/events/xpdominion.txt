@@ -1,0 +1,57 @@
+#neweventset "XP dominion"
+
+#scaleparam "xp" 1.0
+
+#end
+
+#newevent
+#rarity 5
+#msg "XP dominion triggers"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 10
+#req_0popok
+#nolog
+#notext
+#nation -2
+#xp 4
+#end
+
+#newevent
+#rarity 5
+#msg "XP dominion triggers"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 10
+#req_0popok
+#nolog
+#notext
+#nation -2
+#xp 4
+#end
+
+#newevent
+#rarity 5
+#msg "XP dominion triggers"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 10
+#req_0popok
+#nolog
+#notext
+#nation -2
+#xp 4
+#end
+
+#newevent
+#rarity 5
+#msg "XP dominion triggers"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 10
+#req_0popok
+#nolog
+#notext
+#nation -2
+#xp 4
+#end

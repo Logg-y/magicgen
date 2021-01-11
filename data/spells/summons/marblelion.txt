@@ -13,7 +13,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 90
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Marble %Lion%"
 #descr 8 "The caster quickly forms and enchants ARTICLE %statue% of ARTICLE %lion% from the earth. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy. The %statue% will crumble back to earth after the battle."
@@ -36,7 +36,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 60
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Marble %Lion%"
 #descr 8 "The caster forms and enchants ARTICLE %statue% of ARTICLE %lion% from stone. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy and that is an exceptionally watchful patroller."
@@ -60,7 +60,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -84,7 +84,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Great %Lion%"
 #descr 64 "The caster summons ARTICLE great %lion%. These lions are large and ferocious."
@@ -36,7 +36,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Great %Lion%"
 #descr 64 "The caster summons ARTICLE great %lion%. These lions are large and ferocious."
@@ -44,7 +44,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 15
@@ -63,13 +63,13 @@
 #pathlevel 2
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Great Lion Attack"
 #descr 64 "The caster summons ARTICLE great %lion% to ambush a hostile commander in a distant province. These lions are large and ferocious."
@@ -91,7 +91,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

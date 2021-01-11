@@ -1,6 +1,4 @@
 #newweaponmod "Magicweapon"
--- weapon not magic
-#req spec & 2097152
-#spec -2097152
+#setweaponmagic 1
 #nameprefix "Enchanted"
 #end

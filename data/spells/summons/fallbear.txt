@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
@@ -37,7 +37,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 8
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

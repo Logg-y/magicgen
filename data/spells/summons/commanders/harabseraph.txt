@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 34
@@ -25,7 +25,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 #descr 2 "The air mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 
-#scalefatiguemult 100
+#scalefatiguemult 50
 #spelltype 528
 
 #scalerate 1
@@ -47,7 +47,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 
 #paths 34
 #secondarypaths 34

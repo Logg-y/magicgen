@@ -13,7 +13,7 @@
 #paths 68
 #secondarypaths 68
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Small %Shark%"
 #name 4 "Summon NAMEPREFIX Small %Shark%"
@@ -38,7 +38,7 @@
 #paths 68
 #secondarypaths 68
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Small %Shark%"
 #name 4 "Summon NAMEPREFIX Small %Shark%"
@@ -65,7 +65,7 @@
 #pathlevel 3
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 68
@@ -93,7 +93,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 68
 #secondarypaths 68

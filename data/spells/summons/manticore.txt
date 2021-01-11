@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Manticore%"
 #descr 64 "The caster summons ARTICLE %manticore% to fight for him. The manticore is a large man-eating beast with a large poisonous stinger. The stinger can also launch poisonous barbs at enemies."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Manticore%"
 #descr 64 "The caster summons ARTICLE %manticore% to fight for him. The manticore is a large man-eating beast with a large poisonous stinger. The stinger can also launch poisonous barbs at enemies."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 8

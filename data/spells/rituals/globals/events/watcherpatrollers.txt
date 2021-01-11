@@ -1,0 +1,61 @@
+#neweventset "Watcher Patrollers"
+
+#usefixedunitid 768
+#selectunitmod "Watcher Patroller"
+#allowedunitmod "Watcher Patroller"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Watcher patrollers create unit"
+#nolog
+#notext
+#nation -2
+#req_land 1
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_nomonster UNITID
+#req_targmnr UNITID
+-- Province owner in disciples
+#com UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Watcher patroller destroy due to dispel"
+#nolog
+#notext
+#nation -2
+#req_noench ENCHANTID
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Watcher patroller destroy due to hostile dom"
+#nolog
+#notext
+#nation -2
+#req_mydominion 0
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Watcher patroller destroy due to stolen enchantment"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end

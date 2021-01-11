@@ -25,7 +25,7 @@
 
 #scalerate 0.85
 -- #scalecost 1.0
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "poisongolem ritual"
@@ -42,7 +42,7 @@
 #secondarypaths 40
 #secondarypathchance 95
 
-#skipchance 50
+#skipchance 97
 
 #name 32 "Construct NAMEPREFIX Poison Golem"
 #name 8 "Construct NAMEPREFIX Poison Golem"
@@ -68,7 +68,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 8
-#skipchance 75
+#skipchance 97
 
 #paths 40
 #secondarypaths 40
@@ -95,7 +95,7 @@
 #fatiguecost 300
 #schools 8
 
-#skipchance 90
+#skipchance 97
 #paths 40
 #secondarypaths 40
 #secondarypathchance 95

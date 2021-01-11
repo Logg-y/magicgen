@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch. Casting this spell may disease the caster or anyone nearby."
@@ -38,7 +38,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -86,7 +86,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

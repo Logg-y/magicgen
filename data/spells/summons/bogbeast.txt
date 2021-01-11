@@ -15,7 +15,7 @@
 #secondarypaths 68
 #secondarypathchance 80
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Bog %Beast%"
 #name 64 "Summon NAMEPREFIX Bog %Beast%"
@@ -42,7 +42,7 @@
 #secondarypaths 68
 #secondarypathchance 80
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Bog %Beast%"
 #name 64 "Summon NAMEPREFIX Bog %Beast%"
@@ -68,7 +68,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 68
@@ -97,7 +97,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 68
 #secondarypaths 68

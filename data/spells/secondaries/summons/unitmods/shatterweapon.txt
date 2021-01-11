@@ -1,6 +1,6 @@
 #newunitmod "Summon Shatterweapon"
 #weaponmod "Shatterweapon"
 #nameprefix "Shattering"
-#req trample == -1
+#req trample <= 0
 #descr "Constructs wounded by attacks from this CREATURE suffer massive structural damage."
 #end

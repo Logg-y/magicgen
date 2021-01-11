@@ -42,7 +42,7 @@
 #end
 
 #newunitmod "Summon Fateweaving"
-#set curseluckshield 0
+#set curseluckshield 1
 #nameprefix "Fateweaving"
 #descr "This particular CREATURE can alter the fates of those that try to strike it. Attackers that fail to resist suffer cursed luck for a few rounds of battle."
 #end
@@ -56,7 +56,7 @@
 
 #newunitmod "Summon Eyevengeance"
 #req eyeloss == -1
-#set eyeloss 0
+#set eyeloss 1
 #nameprefix "Sightclaiming"
 #descr "This particular CREATURE is imbued with magic and has the ability to emit blinding flashes of light. Those attacking in melee will lose an eye if they fail to resist."
 #end
@@ -76,14 +76,14 @@
 
 #newunitmod "Summon Bloodvengeance"
 #req bloodvengeance == -1
-#set bloodvengeance 0
+#set bloodvengeance 1
 #nameprefix "Woundsharing"
 #descr "This particular CREATURE has the ability to attempt to force its attackers to share its wounds. The attacker may resist this effect."
 #end
 
 #newunitmod "Summon Damagereversal"
 #req damagerev == -1
-#set damagerev 0
+#set damagerev 1
 #nameprefix "Woundmirroring"
 #descr "This particular CREATURE has the ability to attempt to redirect any damage taken onto its attacker. The attacker may resist this effect."
 #end

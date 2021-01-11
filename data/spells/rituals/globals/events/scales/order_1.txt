@@ -1,0 +1,16 @@
+#neweventset "Order boost 1"
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 40
+#req_0popok
+#nolog
+#notext
+#msg "Order boost"
+#decscale 0
+#end

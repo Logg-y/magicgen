@@ -13,7 +13,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
@@ -37,14 +37,14 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "NAMEPREFIX %Gryphon% Attack"
 #descr 2 "The caster summons ARTICLE %gryphon% to attack a hostile commander in a distant province. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
@@ -92,7 +92,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2

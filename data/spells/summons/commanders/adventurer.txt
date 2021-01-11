@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 -- literally anything that isn't blood
 #paths 127
@@ -37,7 +37,7 @@
 #descr 16 "The caster teleports ARTICLE nearby %adventurer% to the battlefield and alters PRONOUN_POS mind to assist in battle. The spell will wear off after battle if the adventurer survives the conflict."
 #descr 64 "The caster draws ARTICLE nearby %adventurer% to the battlefield and charms PRONOUN to assist in battle. The spell will wear off after battle if the adventurer survives the conflict."
 
-#scalefatiguemult 40
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

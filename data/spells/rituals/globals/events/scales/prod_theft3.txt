@@ -1,0 +1,26 @@
+#neweventset "Productivity theft 3"
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_0popok
+#nolog
+#notext
+#msg "+prod from theft"
+#decscale3 1
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_ench ENCHANTID
+#req_hostileench ENCHANTID
+#req_0popok
+#nolog
+#notext
+#msg "prod stolen"
+#incscale3 1
+#end

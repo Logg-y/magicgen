@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX %troll moose knight%"
 #descr 8 "The caster summons ARTICLE %troll moose knight%. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
@@ -37,7 +37,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX %troll moose knight%"
 #descr 8 "The caster summons ARTICLE %troll moose knight%. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
@@ -60,7 +60,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 8
@@ -85,7 +85,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

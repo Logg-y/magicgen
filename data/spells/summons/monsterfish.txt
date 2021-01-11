@@ -23,7 +23,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "monsterfish ritual"
@@ -38,7 +38,7 @@
 
 #paths 4
 #secondarypaths 4
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Monster Fish"
 #descr 4 "The caster summons ARTICLE monster fish to fight for him. Monster fish are gigantic fish which can swallow smaller creatures."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 1
-#skipchance 75
+#skipchance 97
 #onlygeodst 2052
 
 #paths 4
@@ -91,7 +91,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Send NAMEPREFIX Monster Fish"
 #descr 4 "The caster summons ARTICLE monster fish to attack a hostile commander in a distant land. Monster fish are gigantic fish which can swallow smaller creatures."

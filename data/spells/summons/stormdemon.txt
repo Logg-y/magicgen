@@ -14,7 +14,7 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#skipchance 75
+#skipchance 94
 
 #name 128 "Bind Storm %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to fight for him. Storm demons are ethereal and unleash blasts of lightning. This spell binds the %demon% only weakly and so will allow any surviving demons to return to their home plane when the battle is over."
@@ -38,7 +38,7 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#skipchance 60
+#skipchance 82
 
 #name 128 "Bind Storm %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to fight for him. Storm demons are ethereal and unleash blasts of lightning."
@@ -46,7 +46,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 82
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 420
@@ -65,7 +65,7 @@
 #pathlevel 6
 #fatiguecost 700
 #schools 1
-#skipchance 90
+#skipchance 94
 #nogeodst 2052
 
 #paths 128
@@ -75,7 +75,7 @@
 #name 128 "Storm %Demon% Ambush"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to kill an enemy commander in a distant province. Storm demons are ethereal and unleash blasts of lightning."
 
-#skipchance 90
+#skipchance 94
 
 #spelltype 4
 
@@ -94,7 +94,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 94
 
 #paths 128
 #secondarypaths 2

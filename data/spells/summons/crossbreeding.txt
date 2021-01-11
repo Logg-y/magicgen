@@ -20,5 +20,5 @@
 #spelltype 20
 #scalefatiguemult 7
 #scalerate 5
-#skipchance 50
+#skipchance 97
 #end

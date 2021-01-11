@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %Yeti%"
 #descr 4 "The caster summons ARTICLE %yeti%. Yetis are large humanoids which are surrounded by icy winds."
@@ -37,14 +37,14 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %Yeti%"
 #descr 4 "The caster summons ARTICLE %yeti%. Yetis are large humanoids which are surrounded by icy winds."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 60
@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "NAMEPREFIX %Yeti% Attack"
 #descr 4 "The caster summons ARTICLE %yeti% to attack a hostile commander in a distant province. Yetis are large humanoids which are surrounded by icy winds."
@@ -91,7 +91,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

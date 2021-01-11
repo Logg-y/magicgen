@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Vine %Ogre%"
 #descr 64 "The caster enchants vines and forms them into ARTICLE large humanoid %shape%. The resulting vine %ogre% will fight for the caster, but will then return to the ground at the end of the battle."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Vine Ogres"
 #descr 64 "The caster enchants vines and forms them into ARTICLE large humanoid %shape%. The resulting vine %ogre% will fight for the caster."
@@ -61,7 +61,7 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -85,7 +85,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

@@ -9,6 +9,7 @@
 #req damage > 0
 #mult fatiguecost 1.5
 #magicpathvaluescaling 0.1
+#req immobile <= 0
 
 #unitmod "Summon Flying"
 #descr "The summoned %creature% %is% imbued with magic that allows %it% to fly."

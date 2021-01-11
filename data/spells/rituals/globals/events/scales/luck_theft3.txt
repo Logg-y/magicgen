@@ -1,0 +1,26 @@
+#neweventset "Luck theft 3"
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_0popok
+#nolog
+#notext
+#msg "+Luck from theft"
+#decscale3 4
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_ench ENCHANTID
+#req_hostileench ENCHANTID
+#req_0popok
+#nolog
+#notext
+#msg "Luck stolen"
+#incscale3 4
+#end

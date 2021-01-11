@@ -1,0 +1,35 @@
+#newmodifier "Extended Cloud 3"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 30
+
+#req effect < 7000
+#req effect > 1000
+#effect 3000
+
+#mult fatiguecost 1.5
+
+#pathlevel 0
+#power -3
+
+#end
+
+#newmodifier "Extended Cloud 5"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 30
+
+#req effect < 5000
+#req effect > 1000
+#effect 5000
+
+#mult fatiguecost 1.9
+
+#pathlevel 0
+#power -4
+
+#end

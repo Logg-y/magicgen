@@ -15,7 +15,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %lampad%"
 #descr 32 "The caster summons ARTICLE %lampad% to fight for him. The lampad is a nymph of the underworld that wields a torch of banefire."
@@ -39,7 +39,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %lampad%"
 #descr 32 "The caster summons ARTICLE %lampad% to fight for him. The lampad is a nymph of the underworld that wields a torch of banefire."
@@ -63,7 +63,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 32
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

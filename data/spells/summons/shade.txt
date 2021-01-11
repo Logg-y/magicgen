@@ -23,7 +23,7 @@
 -- #scalecost 1.0
 #schools 16
 #scalefatiguemult 30
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Raise shade Ritual"
@@ -38,7 +38,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -63,7 +63,7 @@
 #pathlevel 3
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -91,7 +91,7 @@
 #fatiguecost 500
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.3
 #scalefatiguemult 50

@@ -15,7 +15,7 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#skipchance 90
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Ziz"
 #descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
@@ -39,7 +39,7 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#skipchance 90
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Ziz"
 #descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
@@ -47,7 +47,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 50
@@ -66,13 +66,13 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 16
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 32
 #secondarypaths 2
 #secondarypathchance 95
-#skipchance 90
+#skipchance 97
 
 #name 32 "NAMEPREFIX Ziz Attack"
 #descr 32 "The caster enchants the bones of ARTICLE great %eagle% in a distant province and grants them new life. The newly animated ziz attacks a hostile commander there and then returns to its original dead state after the battle. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
@@ -95,7 +95,7 @@
 #schools 16
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 2

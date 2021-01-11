@@ -23,7 +23,7 @@
 #scalefatiguemult 20
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Raise ogre Ritual"
@@ -36,7 +36,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -63,7 +63,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

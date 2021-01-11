@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Green %Lion%"
 #descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
@@ -36,7 +36,7 @@
 #paths 4
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Green %Lion%"
 #descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
@@ -60,7 +60,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 4
@@ -86,7 +86,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 1

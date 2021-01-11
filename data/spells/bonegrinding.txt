@@ -42,6 +42,7 @@
 #maxpower 7
 #pathlevel 2
 #explspr 10122
+#noadditionalnextspells 1
 #sound 31
 #fatiguecost 20
 #range 5010
@@ -106,6 +107,7 @@
 #sound 31
 #fatiguecost 200
 #range 5010
+#noadditionalnextspells 1
 #nextspell "Bone Grinding Limp"
 -- W, D
 #paths 32

@@ -1,0 +1,19 @@
+#neweventset "Pathboosts samepath air"
+#scaleparam "req_domchance" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_rare 40
+#req_targpath1 1
+#req_0popok
+#nolog
+#msg "A mage has suddenly gained deeper knowledge of air!"
+#pathboost 1
+#end

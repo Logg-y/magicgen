@@ -11,7 +11,8 @@ import PySimpleGUI as sg
 
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
-          "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart"]
+          "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "montagidstart",
+          "eventcodestart", "montagscale"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 
@@ -19,7 +20,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v1.2.2"
+ver = "v2.0.0"
 
 
 def output_polling_thread(timeout=0.1):
@@ -205,11 +206,13 @@ def detectids(window, modlist):
     startunitid = max(nationals.monsterids) + 1
     startweaponid = max(nationals.weaponids) + 1
     startspellid = max(nationals.spellids) + 1
+    starteventid = min(nationals.eventcodes) - 1
+    startmontagid = max(nationals.montagids) + 1
     window["-spellidstart-"].update(value=str(startspellid))
     window["-weaponidstart-"].update(value=str(startweaponid))
     window["-unitidstart-"].update(value=str(startunitid))
-    print(startunitid, startweaponid, startspellid)
-    print(nationals.monsterids)
+    window["-eventcodestart-"].update(value=str(starteventid))
+    window["-montagidstart-"].update(value=str(startmontagid))
 
 
 def main():
@@ -259,7 +262,7 @@ def main():
         [sg.Text(
             'Research modifier: This number is subtracted from the research level of all spells, making more powerful '
             'spells appear at lower research. A value of 5 will make spells that are normally research 9 appear at '
-            'research 5 instead. A value of -1 here will make spells normally research 9 inaccessible, and level 9 '
+            'research 4 instead. A value of -1 here will make spells normally research 9 inaccessible, and level 9 '
             'will instead be filled by spells that would normally generate at research 8. (0)',
             size=(50, 6), relief="ridge"),
             sg.InputText(key='-researchmodifier-', size=(4, 1), default_text=0)],
@@ -309,7 +312,17 @@ def main():
         [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800-1999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
+        [sg.Text('Starting Montag ID. (Allowed range for modded weapons is 1000-100000)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-montagidstart-', size=(4, 1), default_text=1000)],
+        [sg.Text('Starting Event Code. (Allowed range for these is -300 to -5000)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-eventcodestart-', size=(4, 1), default_text=-300)],
         [sg.Button("Autodetect Good Starting IDs")],
+        [sg.Text('Scale the number of units in montags. Lower this if experiencing "monster ID too high" errors. '
+                 'Increase to make random unit pools larger.', size=(50, 3),
+                 relief="ridge"),
+         sg.InputText(key='-montagscale-', size=(4, 1), default_text=1.0)],
     ]
 
     layout = [[sg.Text("Welcome to MagicGen!", k="-welcome-", font=("arial", 40))],

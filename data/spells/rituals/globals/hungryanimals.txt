@@ -1,0 +1,49 @@
+#neweffect "Hungry Animals"
+#effect 10081
+#damage 17
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 7000
+#schools 48
+#unique 1
+#paths 64
+#skipchance 70
+#secondarypaths 64
+#secondarypathchance 99
+#eventset "Hungry Animals"
+
+#name 64 "Rise of the %CREATURE%"
+#descr 64 "The world rapidly becomes filled with %CREATURE%s from an unknown source. These animals are possessed with a supernatural hunger and will do anything to obtain food, including stealing from farms and storehouses or even waylaying those travelling through the wilderness. This causes widespread unrest as well as greatly restricting the amount of supplies available to feed troops. This effect persists until the enchantment ends, though the magical creatures will gradually disappear once this occurs."
+#details "Every province on the map spawns 2d6 hungry creatures each turn. Each creature consumes 8 additional supplies and causes 0.1 unrest per turn. There is a 5% chance per province for a commander in a non-forted non-independent province to be the victim of an assassination attempt. When the enchantment ends, 2d6 hungry creatures are removed from each province per turn."
+
+#spelltype 4
+#scalerate 0
+#end
+
+#neweffect "Hungry Animals UW"
+#effect 10081
+#damage 17
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 7000
+#schools 48
+#unique 1
+#paths 64
+#skipchance 30
+#secondarypaths 64
+#secondarypathchance 99
+#eventset "Hungry Animals UW"
+
+#name 64 "Rise of the %CREATURE%"
+#descr 64 "The world rapidly becomes filled with %CREATURE% from an unknown source. These animals are possessed with a supernatural hunger and will do anything to obtain food, including stealing from farms and storehouses or even waylaying those travelling through the wilderness. This causes widespread unrest as well as greatly restricting the amount of supplies available to feed troops. This effect persists until the enchantment ends, though the magical creatures will gradually disappear once this occurs."
+#details "Every province on the map spawns 2d6 hungry creatures each turn. Each creature consumes 8 additional supplies and causes 0.1 unrest per turn. There is a 5% chance per province for a commander in a non-forted non-independent province to be the victim of an assassination attempt. When the enchantment ends, 2d6 hungry creatures are removed from each province per turn."
+
+#spelltype 4
+#scalerate 0
+#end

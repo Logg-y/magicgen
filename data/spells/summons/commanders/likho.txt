@@ -14,7 +14,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 32
 #secondarypaths 32
@@ -41,7 +41,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 26
+#skipchance 76
 
 #paths 32
 #secondarypaths 32

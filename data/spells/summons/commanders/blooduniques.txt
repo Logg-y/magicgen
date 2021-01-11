@@ -14,7 +14,7 @@
 #secondarypaths 4
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There are six commanders that can be called with this spell."
 #name 128 "Bind Ice Devil"
@@ -41,7 +41,7 @@
 #secondarypaths 1
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There are five commanders that can be called with this spell."
 #name 128 "Bind Arch Devil"
@@ -68,7 +68,7 @@
 #secondarypaths 0
 #secondarypathchance 0
 
-#skipchance 0
+#skipchance 67
 
 #details "There are four commanders that can be called with this spell."
 #name 128 "Bind Heliophagus"
@@ -96,7 +96,7 @@
 #secondarypaths 0
 #secondarypathchance 0
 
-#skipchance 0
+#skipchance 67
 
 #details "There are six commanders that can be called with this spell."
 #name 128 "Bind Demon Lord"

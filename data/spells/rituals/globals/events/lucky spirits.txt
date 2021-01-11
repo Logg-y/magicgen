@@ -1,0 +1,21 @@
+#neweventset "Lucky Spirits"
+
+-- dispossessed spirit
+#usefixedunitid 674
+#allowedunitmod "Lucky Spirits"
+#scaleparam "req_domchance" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#msg "lucky spirit spawn"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#notext
+#nolog
+#stealthcom UNITID
+#end

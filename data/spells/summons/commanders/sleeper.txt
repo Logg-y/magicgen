@@ -16,7 +16,7 @@
 
 #pathskipchance 16 80
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 64
@@ -51,7 +51,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 6
+#skipchance 69
 
 #pathskipchance 16 80
 
@@ -83,10 +83,10 @@
 #fatiguecost 400
 #chassisvalue 20
 #schools 1
-#skipchance 26
+#skipchance 76
 #nogeodst 2052
 
-#skipchance 31
+#skipchance 77
 
 #paths 64
 #secondarypaths 64

@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 6
@@ -25,7 +25,7 @@
 #descr 2 "The caster summons ARTICLE %Yeti Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Yeti Shamans are potent air and water mages and physically powerful, but they will leave after the battle."
 #descr 4 "The caster summons ARTICLE %Yeti Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Yeti Shamans are potent air and water mages and physically powerful, but they will leave after the battle."
 
-#scalefatiguemult 80
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1
@@ -47,7 +47,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 3
+#skipchance 68
 
 #paths 6
 #secondarypaths 6

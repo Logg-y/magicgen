@@ -1,7 +1,7 @@
 #newunitmod "Summon Plagueweapon"
 #set diseaseres 100
 #weaponmod "Plagueweapon"
-#req trample == -1
+#req trample <= 0
 #nameprefix "Plaguebearing"
 #descr "This particular CREATURE carries an immensely virulent plague. Anyone wounded by its attacks will become infected with a plague which will rapidly spread to other nearby creatures."
 #end

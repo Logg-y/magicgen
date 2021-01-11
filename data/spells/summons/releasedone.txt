@@ -15,7 +15,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 85
+#skipchance 97
 
 #name 32 "Animate Ancient Bones"
 #name 8 "Animate Ancient Bones"
@@ -41,7 +41,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Animate Ancient Bones"
 #name 8 "Animate Ancient Bones"
@@ -67,7 +67,7 @@
 #pathlevel 5
 #fatiguecost 400
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 40
 #secondarypaths 40
@@ -94,7 +94,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 40
 #secondarypaths 40

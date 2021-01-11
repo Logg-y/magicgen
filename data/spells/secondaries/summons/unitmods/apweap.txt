@@ -1,6 +1,6 @@
 #newunitmod "Summon APweap"
 #weaponmod "APweap"
 #nameprefix "Piercing"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons magically sharpened, allowing them to more easily bypass armour."
 #end

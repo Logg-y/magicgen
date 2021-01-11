@@ -1,0 +1,31 @@
+#newunitmod "Hungry Animals"
+#req animal > 0
+-- pls no elephants
+#req size < 5
+#req hp < 30
+#req prot < 10
+#set incunrest 1
+#set supplybonus -8
+#landok 1
+-- no more winged monkeys, they'd be too hard for most nations to send to death
+#req magicbeing <= 0
+-- please don't actually make USEFUL things (simargl)
+#req patrolbonus <= 0
+#set homesick 30
+#nameprefix "Ravenous"
+#end
+
+#newunitmod "Hungry Animals UW"
+#req animal > 0
+-- pls no elephants
+#req size < 5
+#req hp < 30
+#req prot < 10
+#set incunrest 1
+#set supplybonus -8
+#uwok 1
+#req magicbeing <= 0
+#req patrolbonus <= 0
+#set homesick 30
+#nameprefix "Ravenous"
+#end

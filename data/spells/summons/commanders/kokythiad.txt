@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 36
@@ -26,7 +26,7 @@
 #descr 4 "The caster summons ARTICLE %Kokythiad% to join him in battle. The %Kokythiad% will leave once the battle is over."
 #descr 32 "The caster summons ARTICLE %Kokythiad% to join him in battle. The %Kokythiad% will leave once the battle is over."
 
-#scalefatiguemult 120
+#scalefatiguemult 60
 #spelltype 528
 
 #scalerate 1
@@ -48,7 +48,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 
 #paths 36
 #secondarypaths 36

@@ -7,6 +7,7 @@ modifiers = {}
 secondaries = {}
 unitmods = {}
 weaponmods = {}
+eventsets = {}
 
 spellnames = []
 spellnamesbyeffect = {}
@@ -16,11 +17,42 @@ spellqualifiers = ["Improved ", "Advanced ", "Masterful ", "Perfected ", "Flawle
 SPELL_ID = 1310
 WEAPON_ID = 810
 MONSTER_ID = 3550
+ENCHANTMENT_ID = 500
+EVENT_CODE = -100
+MONTAG_ID = 1001
+
+MONTAG_SCALE = 1.0
 
 
 class ParseError(Exception):
     pass
 
+UNITMOD_TO_SECONDARY_CACHE = {}
+
+def unitmodToSecondary(unitmod, fallback=True):
+    """Return the secondary effect that uses the unitmod. If fallback,
+    returns Do Nothing if there isn't one, else raises an error."""
+    if unitmod.name in UNITMOD_TO_SECONDARY_CACHE:
+        secondary = UNITMOD_TO_SECONDARY_CACHE[unitmod.name]
+        if secondary is None and fallback:
+            secondary = secondaries["Do Nothing"]
+        elif secondary is None:
+            raise ValueError(f"Couldn't find secondary effect for unitmod {unitmod.name}")
+        return secondary
+    else:
+        for name, secondary in secondaries.items():
+            if secondary.unitmod == unitmod.name:
+                UNITMOD_TO_SECONDARY_CACHE[unitmod.name] = secondary
+                return(secondary)
+                break
+
+        UNITMOD_TO_SECONDARY_CACHE[unitmod.name] = None
+
+        if secondary.unitmod != unitmod.name and fallback:
+            print(f"Couldn't find secondary effect for unitmod {unitmod.name} - convert to Do Nothing")
+            secondary = secondaries["Do Nothing"]
+            return secondary
+        raise ValueError(f"Couldn't find secondary effect for unitmod {unitmod.name}")
 
 def _selectFlag(flagpool, allowed):
     "From flagpool, chooses one bitflag at random which is specified in allowed. Returns None if there were no flags to return"

@@ -4,7 +4,7 @@ import re
 import spellstructures
 
 secondary_params_int = ["att", "def_", "len", "nratt", "ammo", "secondaryeffectid", "secondaryeffectalwaysid", "effect",
-                        "damage", "spec", "range", "aoe"]
+                        "damage", "spec", "range", "aoe", "setweaponmagic"]
 secondary_params_str = ["nameprefix"]
 secondary_params_float = []
 

@@ -14,14 +14,14 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 32
 #secondarypaths 32
 
 #name 32 "Call NAMEPREFIX %Harvester% of Sorrows"
-#descr 32 "The death mage summons ARTICLE %Harvester% of Sorrows to join him in battle. The Harvester% of Sorrows will leave once the battle is over."
+#descr 32 "The death mage summons ARTICLE %Harvester% of Sorrows to join him in battle. The %Harvester% of Sorrows will leave once the battle is over."
 
 #scalefatiguemult 80
 #spelltype 528
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 
 #paths 32
 #secondarypaths 32
@@ -71,10 +71,10 @@
 #fatiguecost 500
 #chassisvalue 350
 #schools 1
-#skipchance 26
+#skipchance 76
 #nogeodst 2052
 
-#skipchance 26
+#skipchance 76
 
 #paths 32
 #secondarypaths 32

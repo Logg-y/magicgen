@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 129
 
-#skipchance 90
+#skipchance 97
 #ainocast 1
 #name 128 "Summon NAMEPREFIX Disease %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE disease %demon% to aid him in battle. The disease demon spreads disease to all nearby, possibly including the caster if he is not resistant to magic."
@@ -42,7 +42,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 450
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 128
@@ -88,7 +88,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 128

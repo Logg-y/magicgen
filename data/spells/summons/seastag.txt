@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag%. Sea stags are the underwater equivalent of deer: they attack with their antlers."
@@ -37,14 +37,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag%. Sea stags are the underwater equivalent of deer: they attack with their antlers."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -63,13 +63,13 @@
 #pathlevel 2
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Sea Stag Attack"
 #descr 64 "The caster summons ARTICLE sea %stag% to ambush a hostile commander in a distant province. Sea stags are the underwater equivalent of deer: they attack with their antlers."
@@ -91,7 +91,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

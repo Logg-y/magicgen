@@ -14,7 +14,7 @@
 #secondarypaths 128
 #secondarypathchance 95
 
-#skipchance 75
+#skipchance 97
 
 #name 128 "Bind NAMEPREFIX Demonic %Locust%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to fight for him. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger. This spell binds the %locust% only weakly and so will allow any surviving locusts to return to their home plane when the battle is over."
@@ -38,7 +38,7 @@
 #secondarypaths 128
 #secondarypathchance 95
 
-#skipchance 60
+#skipchance 97
 
 #name 128 "Bind NAMEPREFIX Demonic %Locust%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to fight for him. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger. Their cries rapidly lower dominion in the province where they are located."
@@ -46,7 +46,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 640
@@ -65,7 +65,7 @@
 #pathlevel 6
 #fatiguecost 800
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 128
@@ -75,7 +75,7 @@
 #name 128 "NAMEPREFIX Demonic %Locust% Ambush"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to kill an enemy commander in a distant province. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger."
 
-#skipchance 90
+#skipchance 97
 
 #spelltype 4
 
@@ -94,7 +94,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 128

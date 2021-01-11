@@ -15,7 +15,7 @@
 #secondarypathchance 90
 #ainocast 1
 
-#skipchance 85
+#skipchance 97
 #scalefatiguemult 160
 
 #details "The elementals are size 5."
@@ -41,7 +41,7 @@
 #secondarypaths 8
 #secondarypathchance 90
 
-#skipchance 75
+#skipchance 97
 
 #details "The elementals are size 5."
 #name 4 "Summon NAMEPREFIX Huge Living %Mercury%"
@@ -66,7 +66,7 @@
 #pathlevel 4
 #fatiguecost 700
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 8
@@ -92,7 +92,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 8

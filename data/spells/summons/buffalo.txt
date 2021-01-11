@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Buffalo"
 #descr 64 "The caster summons ARTICLE buffalo. Buffalo are large and trample enemies, but are rather vulnerable to magic."
@@ -36,14 +36,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Buffalo"
 #descr 64 "The caster summons ARTICLE buffalo. Buffalo are large and trample enemies, but are rather vulnerable to magic."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -62,13 +62,13 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Buffalo Attack"
 #descr 64 "The caster summons ARTICLE buffalo to attack a hostile commander in a distant land. Buffalo are large and trample enemies, but are rather vulnerable to magic."
@@ -91,7 +91,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

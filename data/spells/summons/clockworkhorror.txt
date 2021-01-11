@@ -11,7 +11,7 @@
 #sound 31
 #schools 8
 
-#skipchance 75
+#skipchance 97
 #paths 8
 #secondarypaths 8
 
@@ -35,7 +35,7 @@
 #fatiguecost 400
 #schools 8
 
-#skipchance 75
+#skipchance 97
 #spelltype 20
 
 #paths 8
@@ -60,7 +60,7 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 8
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -86,7 +86,7 @@
 #fatiguecost 400
 #schools 8
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

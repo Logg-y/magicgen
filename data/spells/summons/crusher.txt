@@ -11,7 +11,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX %Crusher%"
 #descr 8 "The caster forms and enchants ARTICLE giant %statue% from stone. The animated %statue% %is% incredibly difficult to harm with physical damage."
@@ -35,7 +35,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 8
-#skipchance 75
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -54,12 +54,12 @@
 #spec 8388608
 #power 5
 #maxpower 9
-#nreff 1
+#nreff 3
 #pathlevel 4
 #fatiguecost 300
 #schools 8
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -72,5 +72,5 @@
 #scalerate 4
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 250
+#scalefatiguemult 100
 #end

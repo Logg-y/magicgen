@@ -81,6 +81,7 @@
 #req reform == -1
 #req undead == -1
 #req inanimate == -1
+#set immortal 1
 #set springimmortal 1
 #nameprefix "Springtouched"
 #descr "This particular CREATURE has been given the ability to regenerate its body every spring."

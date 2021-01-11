@@ -7,6 +7,10 @@
 -- not battlesummoned commander
 #req effect != 21
 
+-- not global enchantment
+#req effect != 10081
+
+
 #pathlevel -1
 #power -2
 
@@ -20,6 +24,9 @@
 #skipchance 10
 -- not battlesummoned commander
 #req effect != 21
+
+-- not global enchantment
+#req effect != 10081
 
 #pathlevel -2
 #power -4

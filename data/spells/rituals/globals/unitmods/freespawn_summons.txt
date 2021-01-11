@@ -1,0 +1,32 @@
+#newunitmod "Freespawn Summons lesser"
+#req size < 3
+#req hp < 11
+#req prot < 10
+#landok 1
+-- no simargl
+#req patrolbonus <= 0
+-- no kydnid
+#req awe < 3
+#end
+
+#newunitmod "Freespawn Summons lesser UW"
+#req size < 3
+#req hp < 11
+#req prot < 5
+#uwok 1
+-- no simargl
+#req patrolbonus <= 0
+-- no kydnid
+#req awe < 3
+#end
+
+
+#newunitmod "Freespawn Commanders"
+#req hp >= 10
+#landok 1
+#end
+
+#newunitmod "Freespawn Commanders UW"
+#req hp >= 10
+#uwok 1
+#end

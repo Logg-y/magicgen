@@ -23,7 +23,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Raise moose Ritual"
@@ -36,7 +36,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -59,7 +59,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -86,7 +86,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

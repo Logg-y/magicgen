@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalerate 0.7
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "corpse construct ritual"
@@ -51,7 +51,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 20
 
-#skipchance 50
+#skipchance 97
 #scalerate 4
 #end
 
@@ -66,7 +66,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 8
-#skipchance 90
+#skipchance 97
 
 #paths 34
 #secondarypaths 34
@@ -93,7 +93,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 34
 #secondarypaths 34

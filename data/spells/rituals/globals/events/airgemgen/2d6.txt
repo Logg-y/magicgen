@@ -1,0 +1,11 @@
+#neweventset "Airgemgen 2d6"
+#end
+
+#newevent
+#rarity 5
+#req_permonth 1
+#msg "Birds have returned with several magical gems."
+#2d6vis 1
+#nolog
+#req_myench ENCHANTID
+#end

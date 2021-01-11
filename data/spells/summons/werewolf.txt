@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Were%wolf%"
 #descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Were%wolf%"
 #descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
@@ -45,7 +45,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 70
@@ -64,13 +64,13 @@
 #pathlevel 2
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Were%wolf% Attack"
 #descr 64 "The caster summons ARTICLE were%wolf% in a distant land to attack an enemy commander. Werewolves regenerate and are very difficult to harm with mundane weaponry."
@@ -92,7 +92,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 85
+#skipchance 97
 #scalefatiguemult 40
 #details "The elementals are size 4."
 #name 4 "Summon NAMEPREFIX Large Water %Elemental%"
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #details "The elementals are size 4."
 #name 4 "Summon NAMEPREFIX Large Water Elementals"
@@ -62,7 +62,7 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4
@@ -87,7 +87,7 @@
 #fatiguecost 500
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 1
@@ -23,7 +23,7 @@
 #name 1 "Call NAMEPREFIX Flame %Spirit%"
 #descr 1 "The caster summons ARTICLE Flame %Spirit% onto the battlefield and uses magic to convince PRONOUN to fight for him. Flame Spirits are potent fire mages, but they will leave after the battle."
 
-#scalefatiguemult 120
+#scalefatiguemult 60
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 3
+#skipchance 68
 
 #paths 1
 #secondarypaths 1

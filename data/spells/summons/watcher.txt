@@ -14,7 +14,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 50
+#skipchance 97
 
 #name 2 "Construct NAMEPREFIX %Watcher%"
 #descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting %watcher% %is% difficult to kill and %is% able to blast enemies with lightning."
@@ -39,7 +39,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 55
+#skipchance 97
 
 #name 2 "Construct NAMEPREFIX %Watcher%"
 #descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting watcher is difficult to kill and blasts enemies with lightning."
@@ -63,7 +63,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 2
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 8

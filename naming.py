@@ -175,6 +175,7 @@ def adjustnameofspell(parsedname, spell):
             parsedname = parsedname + " "
         else:
             if comparespell.researchlevel > spell.researchlevel:
+                print(f"{comparespell.name} is higher research level than this {spell.name}, try moving it")
                 attempttomovespellname(comparespell)
                 break
             else:
@@ -182,8 +183,9 @@ def adjustnameofspell(parsedname, spell):
 
         if len(parsedname) > 35:
             raise NameTooLongException(f"Spell name {parsedname} too long")
-    spelleffectdict[parsedname] = spell
+
     parsedname = padspellname(parsedname)
+    spelleffectdict[parsedname] = spell
     print("New spell {}{}{}".format('"', parsedname, '"'))
     return parsedname
 
@@ -194,10 +196,12 @@ def attempttomovespellname(spell):
     if len(tmp) > 35:
         raise NameTooLongException(f"Spell name {tmp} too long")
     spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
-    del spelleffectdict[spell.name.strip()]
+    print(f"spelleffectdict is {spelleffectdict}")
+    del spelleffectdict[spell.name]
     while tmp in spelleffectdict:
         comparespell = spelleffectdict[tmp]
         if comparespell.researchlevel > spell.researchlevel:
+            print(f"{comparespell.name} is higher research level than this {spell.name}, try moving it")
             attempttomovespellname(comparespell)
             break
         # should this be checking if research levels are the same and matching names?
@@ -215,6 +219,7 @@ def attempttomovespellname(spell):
 
 def replacecurrentqualifier(parsedname):
     # Find current qualifier
+    print(f"replace current qualifier for {parsedname}")
     noqualifier = True
     # Search for currently applied qualifier
     for qualifier in utils.spellqualifiers:
@@ -229,6 +234,7 @@ def replacecurrentqualifier(parsedname):
             break
     if noqualifier:
         parsedname = utils.spellqualifiers[0] + parsedname
+    print(f"got {parsedname}")
     return parsedname
 
 

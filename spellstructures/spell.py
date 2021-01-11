@@ -52,6 +52,9 @@ class Spell(object):
         self.aicastmod = 0
         self.isnextspell = False
         self.parenteffect = None
+        # This is used only for storing the unit object for eventsets
+        # as they use compounded unitmods, this is where the intermediate goes
+        self.globaleventunit = None
 
     def p(self):
         print(f"name {self.name}")
@@ -216,6 +219,10 @@ class SpellEffect(object):
         self.pathskipchances = {}
         self.banishment = 0
         self.smite = 0
+        self.eventset = None
+        self.noadditionalnextspells = 0
+        self.basescale = 0
+        self.secondaryeffectskipchance = 0
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -333,6 +340,9 @@ class SpellEffect(object):
         elif forcesecondaryeff is None and random.random() * 100 >= options.get("secondarychance", 20):
             print(f"Failed secondary effect chance of {options.get('secondarychance', 20)}")
             secondary = utils.secondaries["Do Nothing"]
+        elif forcesecondaryeff is None and random.random() * 100 <= self.secondaryeffectskipchance:
+            print(f"Secondary effect skipchance of {self.secondaryeffectskipchance}")
+            secondary = utils.secondaries["Do Nothing"]
         else:
             while secondary is None:
                 toconsider = utils.secondaries[secondarylist.pop(0)]
@@ -440,6 +450,9 @@ class SpellEffect(object):
             break
 
         if forcepath is not None:
+            if allowskipchance and random.random() * 100 <= self.pathskipchances.get(forcepath, 0):
+                print(f"Forced path was {forcepath}, failed this pathskipchance")
+                return None
             print(f"Forced path to {forcepath}")
             s.path1 = forcepath
 
@@ -452,8 +465,30 @@ class SpellEffect(object):
 
         scaleamt = 1
 
+        # See if the secondary effect we took has a path requirement that we fail to meet
+        # (decide on offpath here if there will be one!)
+        if secondary.paths > 0:
+            if not (secondary.paths & s.path1):
+                s.path2 = utils._selectFlag(PathFlags, secondary.paths)
+                print(f"Forced to take offpath {s.path2} due to secondary effect")
+
+        # Chance to roll a secondary path (if the secondary effect we picked doesn't demand one)
+        if random.random() * 100 < self.secondarypathchance and s.path2 < 0:
+            if self.secondarypaths > 0 and s.path1level >= 2 and self.secondarypaths != s.path1:
+                p = self.secondarypaths
+                if p & s.path1:
+                    p -= s.path1
+                if p > 0:
+                    while 1:
+                        s.path2 = utils._selectFlag(PathFlags, p)
+                        if s.path2 != s.path1:
+                            if random.random() * 100 > self.pathskipchances.get(s.path2, 0):
+                                break
+
         # only do this if there is something to scale
-        if self.spelltype & SpellTypes.POWER_SCALES_AOE or self.spelltype & SpellTypes.POWER_SCALES_DAMAGE or self.spelltype & SpellTypes.POWER_SCALES_NREFF or self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES or self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO:
+        if self.spelltype & SpellTypes.POWER_SCALES_AOE or self.spelltype & SpellTypes.POWER_SCALES_DAMAGE or \
+                self.spelltype & SpellTypes.POWER_SCALES_NREFF or self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES \
+                or self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO or self.eventset is not None:
             actualpowerlvl = (researchlevel - self.power) + mod.power + secondary.power
 
             scaleamt = 0
@@ -506,10 +541,16 @@ class SpellEffect(object):
                 print(f"scale effect number by {scaleamt}")
                 s.effect += scaleamt
 
-            scaleamt *= self.scalecost
-            print(f"scaleamt now {scaleamt} after being multiplied by scalecost {self.scalecost}")
-            if scaleamt > 0:
-                scaleamt += 1  # otherwise the case where scaleamt = 1 yields no fatigue increase!
+            # Event set wants the scaleamt before it is messed with
+            if self.eventset is not None:
+                realeventset = utils.eventsets[self.eventset]
+                eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
+                s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
+
+            scaleamt2 = scaleamt * self.scalecost
+            print(f"scaleamt now {scaleamt2} after being multiplied by scalecost {self.scalecost}")
+            if scaleamt2 > 0:
+                scaleamt2 += 1  # otherwise the case where scaleamt = 1 yields no fatigue increase!
 
             print(
                 f"Scaling path calc is {mod.pathperresearch + self.pathperresearch + secondary.pathperresearch} * {actualpowerlvl}")
@@ -526,13 +567,13 @@ class SpellEffect(object):
             s.fatiguecost += 10 * actualpowerlvl
             print(f"Power level: Added {10 * actualpowerlvl} to fatigue cost, it is now {s.fatiguecost}")
 
-            s.fatiguecost += scaleamt * self.scalefatiguemult
-            print(f"Fatiguemult: Added {scaleamt * self.scalefatiguemult} to fatigue cost, it is now {s.fatiguecost}")
+            s.fatiguecost += scaleamt2 * self.scalefatiguemult
+            print(f"Fatiguemult: Added {scaleamt2 * self.scalefatiguemult} to fatigue cost, it is now {s.fatiguecost}")
 
             scaleexponent = (mod.scalefatigueexponent + self.scalefatigueexponent + secondary.scalefatigueexponent)
-            if scaleamt != 0.0 and scaleexponent > 0.0:
-                s.fatiguecost += (scaleamt ** scaleexponent)
-                print(f"Exponent: Added {scaleamt ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
+            if scaleamt2 != 0.0 and scaleexponent > 0.0:
+                s.fatiguecost += (scaleamt2 ** scaleexponent)
+                print(f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
 
         if self.nextspell != "":
             s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondary.power, forceschool=forceschool,
@@ -573,32 +614,17 @@ class SpellEffect(object):
         if self.spelltype & SpellTypes.EVOCATION:
             plural = True if (s.aoe > 1 or s.nreff > 1) else False
 
-        
-        # See if the secondary effect we took has a path requirement that we fail to meet
-        if secondary.paths > 0:
-            if not (secondary.paths & s.path1):
-                s.path2 = utils._selectFlag(PathFlags, secondary.paths)
-                print(f"Forced to take offpath {s.path2} due to secondary effect")
-                # to be able to have an offpath the path requirement needs to be shifted to 2
-                if s.path1level <= 1:
-                    s.path1level = max(2, s.path1level)
-                    # this is about all that can be done to compensate
-                    if s.fatiguecost != 100:  # don't go from 1 gem to 0 gems
-                        s.fatiguecost /= 2
+        # If we have an offpath, do offpath things
+        if s.path2 > 0:
+            # to be able to have an offpath the path requirement needs to be shifted to 2
+            if s.path1level <= 1:
+                s.path1level = max(2, s.path1level)
+                # this is about all that can be done to compensate
+                if 200 > s.fatiguecost >= 100:  # don't go from 1 gem to 0 gems
+                    s.fatiguecost /= 2
 
-        # Consider splitting paths
-        if random.random() * 100 < self.secondarypathchance and s.path2 < 0:
-            if self.secondarypaths > 0 and s.path1level >= 2 and self.secondarypaths != s.path1:
-                p = self.secondarypaths
-                if p & s.path1:
-                    p -= s.path1
-                if p > 0:
-                    while 1:
-                        s.path2 = utils._selectFlag(PathFlags, p)
-                        if s.path2 != s.path1:
-                            if random.random() * 100 > self.pathskipchances.get(s.path2, 0):
-                                break
 
+        # Divert levels into secondary path, if applicable
         if s.path2 >= 0:
             # How many levels to divert?
             maxdivert = math.floor(s.path1level / 2)
@@ -734,7 +760,14 @@ class SpellEffect(object):
             descrs.append(self.descriptions.get(s.path1, "This spell and path combination have no description!"))
 
         # write a description
-        s.descr = naming.parsestring(random.choice(descrs), plural=plural, aoe=s.aoe, spelltype=self.spelltype, spell=s)
+        descrchoice = random.choice(descrs)
+        # Fix unit names for stuff created from events
+        if self.eventset is not None:
+            realeventset = utils.eventsets[self.eventset]
+            if realeventset.lastunitname is not None:
+                descrchoice = descrchoice.replace("CREATURE", realeventset.lastunitname)
+
+        s.descr = naming.parsestring(descrchoice, plural=plural, aoe=s.aoe, spelltype=self.spelltype, spell=s)
 
         s.descr = s.descr.strip() + " "
         moddescrs = secondary.descrs[:]
@@ -773,6 +806,10 @@ class SpellEffect(object):
         s.details = s.details.replace("DAMAGESCALING", str(scale))
         s.details = s.details.replace("DAMAGE", str(s.damage))
 
+        # for globals: use aoe to denote the base amount
+        finalglobalscaling = int(self.basescale + scaleamt)
+        s.details = s.details.replace("SCALEAMT", str(finalglobalscaling))
+
         s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
 
         # take shallow copy to avoid doing bad things to later spells using the same self
@@ -786,9 +823,9 @@ class SpellEffect(object):
                     godpath = self.secondarypaths
                 else:
                     raise ValueError(f"Couldn't work out god path for holy spell {self.name} passed "
-                                     f"with forcesecondaryeff {forcesecondaryeff} - this probably this holy effect"
+                                     f"with forcesecondaryeff {forcesecondaryeff} - probably means this holy effect"
                                      f" starts with a nextspell and ambiguous secondary paths. To fix"
-                                     f" make secondary path for this effect NOT a compound of multiiple paths ")
+                                     f" make secondary path for this effect NOT a compound of multiple paths ")
 
             names = self.names.get(godpath, [])[:]
             # The above will have scaled holy stuff which we don't want
@@ -817,6 +854,12 @@ class SpellEffect(object):
                         um = utils.unitmods[secondary.unitmod]
                         name = name.replace("NAMEPREFIX", um.nameprefix)
                     name = name.replace("NAMEPREFIX", "")
+
+                    # Fix unit names for stuff created from events
+                    if self.eventset is not None:
+                        realeventset = utils.eventsets[self.eventset]
+                        if realeventset.lastunitname is not None:
+                            name = name.replace("CREATURE", realeventset.lastunitname)
 
                     s.name = naming.parsestring(name, plural=plural, aoe=s.aoe, spelltype=self.spelltype,
                                                 titlecase=True, isspell=True, spell=s)
@@ -886,5 +929,15 @@ class SpellEffect(object):
         # print("Too many spells. Dominions will reject this mod.")
         s.id = utils.SPELL_ID
         utils.SPELL_ID += 1
+
+        # Sanity check: the game doesn't like spells with a path requirement of over 9 and makes them become 1 instead
+        s.path1level = min(9, s.path1level)
+        s.path2level = min(9, s.path2level)
+
+
+        # Fill in placeholders in modcmdsbefore
+        # This is event stuff
+        s.modcmdsbefore = s.modcmdsbefore.replace("SPELLNAME", s.name)
+
 
         return s

@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 32
@@ -23,7 +23,7 @@
 #name 32 "Call NAMEPREFIX %Lampad%"
 #descr 32 "The caster summons ARTICLE %lampad% to fight for him. The lampad is a nymph of the underworld that wields a torch of banefire, with some skill in death, astral and nature magic."
 
-#scalefatiguemult 140
+#scalefatiguemult 70
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 
 #paths 32
 #secondarypaths 32

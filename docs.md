@@ -234,7 +234,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
  * As #paths, but allowed paths for the secondary path requirement
 			
 \#skipchance
- * percentage chance (0-100) to not give a spell of this type when requested and a directive to make something else instead.
+ * percentage chance (0-100) to not give a spell of this type when requested and a directive to make something else instead. Note that if not enough spells generate at a given research level, it attempts a second run ignoring skipchances.
 	
 \#nextspell "<spell effect name>"
  * This is NOT what the mod manual normally uses for nextspell!
@@ -317,6 +317,19 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#scalefatiguemult X (default 0)
  * Adds X fatigue for each total scaling value. Typically used for summoning spells to make their cost scale sensibly.
  
+\#noadditionalnextspells (default 0)
+ * If greater than zero, secondary effects which confer nextspells are not allowed. This is typically intended for cases where extra nextspells are not desired such as on earthquake (as they will be added after cave collapse and only trigger in caves).
+ 
+\#eventset "eventset name"
+ * Applies the given event set to this spell. This should be used to make global or local enchantments or spells that trigger a remote event. See below for more on event sets.
+ 
+\#basescale X
+ * For use with globale enchantments with scaling parameters. This should be the base value of the scaling parameters.
+ 
+\#secondaryeffectskipchance X
+ * An additional X% chance to skip secondary effects for this spell effect.
+  
+
 ## Modifiers
 
 ### Simple Additions
@@ -351,17 +364,24 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#desrcond
 \#desrcond2
  * Both function similarly to the effects of the same name on spell effects. The exception is that this is appended to the end of the normal description.
+
 \#req <param> <op> <value>
+
 \#req2 <val2> <op1> <param> <op2> <val2>
  * Functions in much the same way as \#descrcond and similar functions. All requirements must be satisfied for a modifier to be considered valid.
+
 \#set <param> <value>
  * Sets the specified parameter on the FINAL SPELL to the given value. For instance, \#set range 1 would give the spell a range of 1, regardless of whatever range or range scaling the original effect had.
+
 \#mult <param> <value>
  * Multiplies the specified parameter on the final spell by the given value. \#mult range 1.5 would increase range by 1.5 times.
+
 \#nobattlefield
  * This becomes an invalid modifier for spells with an aoe of X% of the battlefield.
+
 \#givecloudsfx
  * Changes the explosion sfx of the spell to something appropriate for a cloud of that path. Intended to go with modifiers that change a spell into a cloud spell (and increase effect number appropriately).
+
 \#reqdamaging
  * If 0, the spell cannot have a damaging effect number. If any value greater than zero, the spell must have a damaging effect number. If left untouched or set to -1, no limit is imposed.
  
@@ -402,12 +422,16 @@ These function the same as the modifiers.
 
 \#anysummon 1
  * This is shorthand for making summon only secondary effects. Specifically this is a condition which only allows the modifier to apply to spell effects with effect numbers that are one of: 1, 10001, 10050, 10038, 21, 10021
+
 \#fatiguecostpereffect
  * This adds a flat fatigue cost per effect on the final spell. Good for summon effects that should be charged per unit made, for example death explosions or bringer of fortune.
+
 \#nextspell
  * Adds a nextspell to the main spell effect.
+
 \#unitmod
  * Uses a unitmod to modify the summoned unit. The unitmod's requirements are checked and will prevent the secondary effect being used if it is not. Using this on something that is not a summon will cause very strange things to happen.
+
 \#magicpathvaluescaling (default 0.0)
  * This allows certain unit traits to scale cost of magic paths, just as \#chassisvalue on effects causes most of them to be exempt. Essentially, each summoned commander is made of a "chassis value" (determined with the command) and the "magic value" (which is the unit's full cost minus the chassis value). This command adds (\#magicpathvaluescaling \* chassis magic value) to the fatigue cost of the spell. This is useful for things such as immortality which have a value on human mages with an otherwise physically weak chassis.
  
@@ -422,7 +446,9 @@ would add +5 to the reaper value of the unit.
 Additionally, the following are supported:
 
 \#descr "String"
+
 \#descrcond <param> <op> <value> "String"
+
 \#descrcond2 <val1> <op> <param> <op2> <val2> "String"
  * This appends to the modified unit's description. Note that path identifiers need not be used here.
  
@@ -434,6 +460,12 @@ Additionally, the following are supported:
  
 \#set <param> value
  * This works as above, except it expects unit parameters.
+ 
+\#landok 1
+ * If set, aquatic creatures are not allowed.
+ 
+\#uwok 1
+ * If set, only creatures with any kind of amphibiousness or aquatic are allowed.
 
 ## Weapon Modifiers
 
@@ -462,6 +494,45 @@ Additionally, the following are supported:
  
 \#extracommand "string"
  * Adds the given strings as extra raw mod commands. I cannot remember what I used this for but something needed it!
+ 
+\#setweaponmagic 1
+ * If present, the weapon will be set to magical if it wasn't already. Useful to avoid needing two different weaponmods (one for magic, one for nonmagic that adds to spec) if you want to make a weapon magical...
+ 
+## Event Sets
+
+These files should begin \#neweventset "name". Commands listed below should be used here. Then \#end should be used, followed by the raw event mod code. This means each file can at most contain one event set.
+
+Each event set can have at most one unitid associated with it. This can be specified with \#usefixedunitid, \#selectunitmod, or just omitted.
+
+\#requiredcodes X (default 0)
+ * This event requires X codes. These are dynamically assigned. To reference codes used, use CODE1 CODE2 CODE3 in the raw event code and they will be replaced accordingly.
+ 
+\#usefixedunitid X
+ * If set, the event will always use X as a base unit ID. Unitmods may still be applied to it.
+ 
+\#desiredmontagsize X
+ * If set, a montag will be created with a dummy unit set to firstshape to the montag. X denotes the desired number of things in the montag
+ 
+\#restrictunitstospellpaths 1
+ * If set, only units with summoning spells corresponding pathed summoning spells are valid to throw into a montag. The same goes with secondary effects. This is used to make fire globals spawn things that are normally fire summons.
+ 
+\#mincreaturepower X
+ * Set the minimum research level to take summoned units from. This is increased by 1 for every level over the minimum level the parent spell generated. For instance, a research 5 global with a mincreaturepower of 1 would draw from summoning spells with a research level of 4 when it generates at research 9.
+ 
+\#maxcreaturepower X
+ * As mincreaturepower, except it's the upper bound.
+ 
+\#secondaryeffectchance X
+ * Has a X% chance to apply an eligible secondary effect to a unit created in the montag.
+ 
+\#selectunitmod "Unit Mod"
+ * The name of a unit mod to use to pick summons. This is not actually applied, it is rather used as an eligibility test. This does for instance allow only units with <10 hp or that can survive underwater to be picked for a summoning global.
+ 
+\#allowedunitmod "Unit Mod"
+ * The named unit mod can be applied to monsters generated by this event set. This can be used multiple times, and only unitmods included AND that have a corresponding secondary effect can be used.
+ 
+\#scaleparam "param" 1.0
+ * This causes the named param to be scaled with the scale factor of the parent spell. The float value after the named param is a multiplier. For instance, \#scaleparam "req_rare 2.0" will increase the value of all req_rares in the event block by 2 multiplied by the spell scaling rate. This command can be used multiple times.
  
 		
 # Strings

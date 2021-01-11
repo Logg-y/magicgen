@@ -14,7 +14,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "1.2.2"
+ver = "2.0.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -32,6 +32,9 @@ def rollspells(**options):
     utils.WEAPON_ID = options.get("weaponidstart", 800)
     utils.MONSTER_ID = options.get("unitidstart", 3500)
     utils.SPELL_ID = options.get("spellidstart", 1300)
+    utils.EVENT_CODE = options.get("eventcodestart", -300)
+    utils.MONTAG_ID = options.get("montagidstart", 1001)
+    utils.MONTAG_SCALE = options.get("montagscale", 1.0)
 
     if options.get("nationlist", "") == "":
         options["nationlist"] = None
@@ -70,6 +73,9 @@ def rollspells(**options):
             s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\summons")}
             s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\summons\commanders")}
             s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\rituals")}
+            s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\rituals\globals")}
+            fileparser.readEventSetsFromDir(r".\data\spells\rituals\globals\events")
+            fileparser.readUnitModsFromDir(r".\data\spells\rituals\globals\unitmods")
 
             s = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
 
@@ -92,27 +98,40 @@ def rollspells(**options):
                         f"Generating {spellsperlevel} spells at research {research} for school {schoolname}...\n")
                     sys.stderr.flush()
                     effectpool = copy.copy(s)
+                    # First do everything with skipchances, if that fails to make all the spells
+                    # do a second run ignoring them
+                    allowskipchance = True
                     for x in range(0, spellsperlevel):
                         while 1:
                             spell = None
                             if len(effectpool) == 0:
+                                if allowskipchance:
+                                    allowskipchance = False
+                                    effectpool = copy.copy(s)
+                                    continue
                                 print(
                                     f"WARNING: no valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
                                 _writetoconsole(
                                     f"No more valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
                                 break
                             sp = effectpool[random.choice(list(effectpool.keys()))]
+                            del effectpool[sp.name]
+                            # Prevent duplicartes in the second round of ignoreing skipchances
+                            if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
+                                continue
+
                             # These are the things used to denote things that should be nextspell ONLY
                             if sp.paths > 0 and sp.schools > 0:
                                 # Special rules for blood
                                 if school == 64:
                                     if sp.paths & 128:
-                                        spell = sp.rollSpell(research, forcepath=128, allowblood=True, **options)
+                                        spell = sp.rollSpell(research, forcepath=128, allowblood=True,
+                                                             allowskipchance=allowskipchance, **options)
 
                                 elif sp.schools & school:
-                                    spell = sp.rollSpell(research, forceschool=school, allowblood=False, **options)
+                                    spell = sp.rollSpell(research, forceschool=school, allowblood=False,
+                                                         allowskipchance=allowskipchance, **options)
 
-                            del effectpool[sp.name]
 
                             if spell is not None:
                                 l.append(spell)
@@ -183,6 +202,9 @@ def rollspells(**options):
                 successfuleffectnames = []
                 print(f"Generating spells for nation {nation}")
                 for x in range(0, options.get("nationalspells", 12)):
+                    if nation not in nationals.nationals or len(nationals.nationals[nation]) == 0:
+                        print(f"Nation {nation} has no national mages!")
+                        break
                     chosencomm = random.choice(nationals.nationals[nation])
                     effectpool = copy.copy(s)
                     researchlevelstotry = list(range(1 + researchmod, 10 + researchmod))
@@ -379,6 +401,19 @@ def main():
     opts.append(Option("-weaponidstart",
                        help="Starting Weapon ID. (Allowed range for modded weapons is 800+)",
                        type=int, default=800))
+
+    opts.append(Option("-eventcodestart",
+                       help="Starting Event Code. (Allowed range for these is -300 to -5000)",
+                       type=int, default=800))
+
+    opts.append(Option("-montagidstart",
+                       help="Starting Montag ID. (Allowed range for modded weapons is 1000-100000)",
+                       type=int, default=800))
+
+    opts.append(Option("-montagscale",
+                       help='Scale the number of units in montags. '
+                            'Lower this if experiencing "monster ID too high" errors.',
+                       type=float, default=1.0))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",

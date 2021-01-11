@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Kraken"
 #descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Kraken"
 #descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 4
@@ -88,7 +88,7 @@
 
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

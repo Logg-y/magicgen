@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 85
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
@@ -37,7 +37,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 88
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 95
+#skipchance 97
 #nogeodst 2052
 
 #paths 32
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 95
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

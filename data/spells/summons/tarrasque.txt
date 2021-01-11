@@ -15,7 +15,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Tarrasque%"
 #descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours. For that reason, casting this spell may not be advisable if the caster or those around him are not poison resistant. The tarrasque leaves after the battle."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Tarrasque%"
 #descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours."
@@ -61,7 +61,7 @@
 #pathlevel 7
 #fatiguecost 1000
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

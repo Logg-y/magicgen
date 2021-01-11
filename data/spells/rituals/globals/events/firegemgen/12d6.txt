@@ -1,0 +1,14 @@
+#neweventset "Firegemgen 12d6"
+#end
+
+#newevent
+#rarity 5
+#req_permonth 1
+#msg "In the embers of the SPELLNAME, a massive number of fire gems were found!"
+#4d6vis 0
+#3d6vis 0
+#3d6vis 0
+#2d6vis 0
+#nolog
+#req_myench ENCHANTID
+#end

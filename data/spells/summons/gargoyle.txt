@@ -11,7 +11,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX %Gargoyle%"
 #descr 8 "The caster forms and enchants ARTICLE winged %monster% from stone. The animated %statue% can fly and %is% incredibly difficult to harm with physical damage."
@@ -35,7 +35,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 8
-#skipchance 75
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -59,7 +59,7 @@
 #fatiguecost 300
 #schools 8
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

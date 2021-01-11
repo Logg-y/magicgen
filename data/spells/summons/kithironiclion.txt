@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Kithaironic %Lion%"
 #descr 64 "The caster summons ARTICLE kithaironic %lion% to fight for him. The kithaironic lion has a unnaturally thick hide."
@@ -38,7 +38,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Kithaironic %Lion%"
 #descr 64 "The caster summons ARTICLE kithaironic %lion% to fight for him. The kithaironic lion has a unnaturally thick hide."
@@ -62,7 +62,7 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -88,7 +88,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

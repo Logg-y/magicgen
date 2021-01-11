@@ -21,7 +21,7 @@
 #spelltype 528
 
 #scalerate 1.4
-#skipchance 50
+#skipchance 97
 #end
 
 -- This is the rather more boring summon local animals effect
@@ -38,7 +38,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon Animals"
 #descr 64 "The caster summons animals from the local area to fight for him. The types of animals that respond to the call depends on the local terrain."

@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Sprite%"
 #descr 64 "The caster summons ARTICLE %sprite%. Sprites are small faeries which shoot exhausting elf shots at enemies."
@@ -38,7 +38,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %Sprite%"
 #descr 64 "The caster summons ARTICLE %sprite%. Sprites are small faeries which shoot exhausting elf shots at enemies."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 100
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64
@@ -86,7 +86,7 @@
 #fatiguecost 200
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

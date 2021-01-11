@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 8
 #secondarypaths 8
@@ -22,7 +22,7 @@
 #name 8 "Summon NAMEPREFIX Cyclops"
 #descr 8 "The caster summons ARTICLE %Cyclops% from deep below the earth to fight for him on the battlefield. The %Cyclops% is difficult to harm and skilled in earth magic, but will leave once the battle is over."
 
-#scalefatiguemult 150
+#scalefatiguemult 75
 #spelltype 528
 
 #scalerate 1
@@ -44,7 +44,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 8
 #secondarypaths 8

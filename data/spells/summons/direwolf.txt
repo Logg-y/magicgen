@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Dire %Wolf%"
 #descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
@@ -36,14 +36,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Dire %Wolf%"
 #descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 35
@@ -62,13 +62,13 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX Dire %Wolf% Attack"
 #descr 64 "The caster summons ARTICLE dire %wolf% to attack a hostile commander in a distant province. Dire wolves are large and mighty wolves."
@@ -91,7 +91,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

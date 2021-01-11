@@ -14,7 +14,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Summer %Lion%"
 #descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
@@ -37,7 +37,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Summer %Lion%"
 #descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 1

@@ -1,7 +1,7 @@
 #newunitmod "Summon Haltdemon"
 #weaponmod "Haltdemon"
 #nameprefix "Apotropaic"
-#req trample == -1
+#req trample <= 0
 #req demon == -1
 #descr "This particular CREATURE has had its weapons magically altered to afflict any demons struck with paralysis."
 #end

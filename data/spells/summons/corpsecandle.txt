@@ -15,7 +15,7 @@
 #secondarypaths 33
 #secondarypathchance 90
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Corpse %Candle%"
 #name 32 "Summon NAMEPREFIX Corpse %Candle%"
@@ -41,7 +41,7 @@
 #secondarypaths 33
 #secondarypathchance 90
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Corpse %Candle%"
 #name 32 "Summon NAMEPREFIX Corpse %Candle%"
@@ -67,7 +67,7 @@
 #pathlevel 5
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 33
@@ -96,7 +96,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 33
 #secondarypaths 33

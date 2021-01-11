@@ -12,6 +12,7 @@
 #aoe 0
 #power -2
 #pathlevel 1
+#maxpower 8
 #explspr 10189
 #sound 31
 #fatiguecost 10

@@ -19,7 +19,6 @@
 #fatiguecost 20
 #range 5025
 
-
 #paths 5
 #secondarypaths 4
 

@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX Simargl"
 #descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog."
@@ -36,7 +36,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX Simargl"
 #descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog that is exceptional at patrolling."
@@ -44,7 +44,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 70
@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 90
+#skipchance 97
 
 #name 2 "NAMEPREFIX Simargl Attack"
 #descr 2 "The caster summons ARTICLE simargl to attack a hostile commander in a distant province. The simargl is a small winged dog."
@@ -92,7 +92,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2

@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 8
 #secondarypathchance 95
-#skipchance 85
+#skipchance 97
 
 #details "The elementals are size 1."
 #name 128 "Summon NAMEPREFIX Tiny %Illearth%"
@@ -38,7 +38,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 75
+#skipchance 97
 
 #details "The elementals are size 1."
 #name 128 "Summon NAMEPREFIX Tiny Illearths"
@@ -63,7 +63,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 8
@@ -89,7 +89,7 @@
 #fatiguecost 600
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 8

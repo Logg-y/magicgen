@@ -1,0 +1,172 @@
+#neweffect "Productivity boost 1"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity boost 1"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 16 "Productive Populace"
+
+#descr 16 "This enchantment inspires those living in friendly dominion to be more productive and contribute more to the war efforts. Productivity scales in friendly dominion increase slightly."
+#details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 Productivity. In practice, scales settle around +2-3 of neutral."
+#end
+
+#neweffect "Productivity boost 2"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 4500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity boost 2"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 16 "Productive Populace"
+
+#descr 16 "This enchantment inspires those living in friendly dominion to be more productive and contribute more to the war efforts. Productivity scales in friendly dominion increase."
+#details "Each friendly province has two independent rolls at 40% chance per point of friendly dominion to gain +1 Productivity. In practice, scales settle around +4 of neutral."
+#end
+
+
+
+#neweffect "Productivity boost 3"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 6
+#fatiguecost 5500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity boost 3"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 16 "Productive Populace"
+
+#descr 16 "This enchantment inspires those living in friendly dominion to be more productive and contribute more to the war efforts. Productivity scales in friendly dominion increase significantly."
+#details "Each friendly province has three independent rolls at 40% chance per point of friendly dominion to gain +1 Productivity. In practice, scales settle around +5 of neutral."
+#end
+
+
+
+#neweffect "Productivity theft 1"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 6000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity theft 1"
+
+#spelltype 4
+#scalerate 0
+
+
+#name 16 "Redirect Sloth"
+
+#descr 16 "The sloth and laziness of the poplace is redirected to those living in hostile lands. This results in a reduction in sloth in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance to gain +1 Productivity. Each hostile province has a 50% chance to gain a corresponding amount of Sloth."
+#end
+
+
+#neweffect "Productivity theft 2"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 10
+#maxpower 10
+#nreff 1
+#pathlevel 5
+#fatiguecost 8000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity theft 2"
+
+#spelltype 4
+#scalerate 0
+
+#name 16 "Redirect Sloth"
+
+#descr 16 "The sloth and laziness of the poplace is redirected to those living in hostile lands. This results in a reduction in sloth in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance togain +2 Productivity. Each hostile province has a 50% chance to gain a corresponding amount of Sloth."
+#end
+
+
+#neweffect "Productivity theft 3"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 12
+#maxpower 12
+#nreff 1
+#pathlevel 5
+#fatiguecost 10000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 16
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Productivity theft 3"
+
+#spelltype 4
+#scalerate 0
+
+#name 16 "Redirect Sloth"
+
+#descr 16 "The sloth and laziness of the poplace is redirected to those living in hostile lands. This results in a reduction in sloth in friendly lands, and a corresponding increase in hostile provinces."
+#details "Every turn, each friendly province has a 50% chance to gain +3 Productivity. Each hostile province has a 50% chance to gain a corresponding amount of Sloth."
+#end
+

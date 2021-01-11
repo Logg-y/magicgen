@@ -1,6 +1,6 @@
 #newunitmod "Summon Corrosionweapon"
 #weaponmod "Corrosionweapon"
 #nameprefix "Corrosive"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE has had its weapons covered in a magical substance that corrodes the armour of those hit."
 #end

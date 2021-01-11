@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 50
+#skipchance 97
 #scalefatiguemult 20
 
 #name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4
@@ -85,7 +85,7 @@
 #fatiguecost 600
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

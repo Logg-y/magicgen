@@ -11,6 +11,8 @@
 #req fatiguecost >= 100
 -- stuff I don't want this to apply to I can set 199 fatigue for
 -- AKA magic duel, reinvigoration
+#req effect != 8
+#req effect != 27
 #req fatiguecost < 199
 
 #fatiguecost -70

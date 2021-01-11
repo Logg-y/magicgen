@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Swamp %Drake%"
 #descr 64 "The caster summons ARTICLE swamp %drake% to fight for him. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX Swamp %Drake%"
 #descr 64 "The caster summons ARTICLE swamp %drake% to fight for him. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

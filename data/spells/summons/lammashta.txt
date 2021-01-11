@@ -13,7 +13,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 8
+#skipchance 91
 
 #name 32 "Summon NAMEPREFIX Lammashtas"
 #descr 32 "The caster summons some Lammashtas to the battle. These are spirits that serve the Lord of the Underworld and not their summoner, making them hostile to all on the battlefield."

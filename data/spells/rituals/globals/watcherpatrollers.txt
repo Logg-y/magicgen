@@ -1,0 +1,26 @@
+#neweffect "Watcher Patrollers"
+#effect 10081
+#damage 17
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 7
+#fatiguecost 7000
+#schools 24
+#unique 1
+#paths 10
+#skipchance 0
+#secondarypaths 10
+#secondarypathchance 99
+#eventset "Watcher Patrollers"
+
+#name 8 "Omnipresent Watchers"
+#name 2 "Omnipresent Watchers"
+#descr 8 "This potent enchantment causes watchers to rapidly form in provinces that are friendly and that are in friendly dominion. These watchers are excellent patrollers and blast attackers with lightning, but they cannot move and will quickly fall apart if the caster dies or the enchantment is dispelled."
+#descr 2 "This potent enchantment causes watchers to rapidly form in provinces that are friendly and that are in friendly dominion. These watchers are excellent patrollers and blast attackers with lightning, but they cannot move and will quickly fall apart if the caster dies or the enchantment is dispelled."
+#details "Gives a free watcher commander in provinces with friendly dominion. These watchers are destroyed when the enchantment ends. Any individual watcher is also destroyed if friendly dominion leaves its province."
+
+#spelltype 4
+#scalerate 0
+#end

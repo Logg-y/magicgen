@@ -14,7 +14,7 @@
 #secondarypaths 32
 #scalefatiguemult 20
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to fight for him. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
@@ -35,12 +35,12 @@
 #schools 1
 
 
-#skipchance 75
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to fight for him. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -84,7 +84,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

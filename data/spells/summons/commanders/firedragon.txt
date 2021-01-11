@@ -9,12 +9,12 @@
 #pathlevel 6
 #chassisvalue 100
 #range 6
-#fatiguecost 250
+#fatiguecost 200
 #explspr 10232
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 1
 #secondarypaths 1
@@ -22,7 +22,7 @@
 #name 1 "Summon NAMEPREFIX Fire %Dragon%"
 #descr 1 "The caster summons ARTICLE %Fire Dragon% to fight for him on the battlefield. The %Fire Dragon% is physically mighty and very skilled in fire magic, but will leave once the battle is over."
 
-#scalefatiguemult 200
+#scalefatiguemult 100
 #spelltype 528
 
 #scalerate 1
@@ -44,7 +44,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 1
 #secondarypaths 1
@@ -71,7 +71,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 26
+#skipchance 76
 
 #paths 1
 #secondarypaths 1

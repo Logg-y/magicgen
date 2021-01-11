@@ -31,6 +31,7 @@ class WeaponMod(object):
         self.range = 0
         self.aoe = 0
         self.nameprefix = ""
+        self.setweaponmagic = 0
 
         self.reqs = []
         self.setcommands = []
@@ -62,6 +63,9 @@ class WeaponMod(object):
             if self.compatibility(wpn) and wpn.origid not in replacements:
                 out += f"-- Modified weapon {wpn.origid} with weaponmod {self.name}\n"
                 out += f"#newweapon {utils.WEAPON_ID}\n"
+                if utils.WEAPON_ID >= 2000:
+                    raise ValueError("Modded weapon ID is too high - consider reducing the number of modified"
+                                     " creatures generated!")
                 replacements[wpn.origid] = copy(utils.WEAPON_ID)
                 utils.WEAPON_ID += 1
                 out += f"#copyweapon {wpn.origid}\n"
@@ -91,6 +95,10 @@ class WeaponMod(object):
                     newparamval = getattr(wpn, param) * paramv
                     modcmd = flags_to_mod_cmds.get(param, param)
                     out += f"#{modcmd} {newparamval}\n"
+
+                if self.setweaponmagic:
+                    if spec & 2097152:
+                        spec -= 2097152
 
                 breakdown = breakdownflag(spec)
 

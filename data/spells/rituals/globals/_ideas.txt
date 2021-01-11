@@ -1,0 +1,28 @@
+-- gemgens
+-- 	Free watcher commander (homesick 100) in every province
+-- 	Hordes of hungry animals
+-- 	Random good events in friendly provinces
+-- 	Random item finds in friendly provinces
+-- 	Random pathboost in friendly provinces
+	-- any mages get + something they already have skill in
+	-- only things with 0 in the path get the boost
+	-- the above, but only researchers (which means only mages or the rare researchers with divine insights etc can get it)
+-- finds and generates mines
+-- Scale alterations
+	-- +turmoil in fire, astral
+	-- +order in water, astral
+	-- prod in astral
+	-- sloth in astral
+	-- growth in nature, blood
+	-- death in uh yeah death
+	-- luck in astral
+	-- misfortune in astral
+	-- magic in astral/blood
+	-- most stealing spells would be astral/blood
+-- curse spreading global
+-- gain xp in dominion
+
+-- Creatures spawning
+	-- units
+	-- commanders
+	

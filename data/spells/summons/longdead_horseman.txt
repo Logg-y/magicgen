@@ -13,7 +13,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Raise NAMEPREFIX Longdead Horse%man%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %horse% and %rider% and forces them to fight for him. This spell is only temporary and the bones will collapse at the end of the battle."
@@ -36,7 +36,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Raise NAMEPREFIX Longdead Horse%man%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %horse% and %rider% and forces them to fight for him."
@@ -60,7 +60,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -84,7 +84,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

@@ -15,7 +15,7 @@
 #schools 1
 
 
-#skipchance 70
+#skipchance 90
 
 #paths 64
 #secondarypaths 64
@@ -23,7 +23,7 @@
 #name 64 "Summon NAMEPREFIX Troll %Shaman%"
 #descr 64 "The caster summons ARTICLE %Troll Shaman% to fight for him on the battlefield. The %Troll Shaman% is large, strong, and skilled in nature and death magic, but will leave once the battle is over."
 
-#scalefatiguemult 80
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 64
 #secondarypaths 64

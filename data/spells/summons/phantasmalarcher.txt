@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 70
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX Phantasmal %Archer%"
 #descr 2 "Summons ARTICLE phantasmal %archer% to fight for the caster. These archers are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
@@ -43,7 +43,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 8
@@ -62,7 +62,7 @@
 #pathlevel 3
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2
@@ -86,7 +86,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2

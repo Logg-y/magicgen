@@ -15,7 +15,7 @@
 #secondarypaths 9
 #secondarypathchance 50
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Magma %Child%"
 #name 1 "Summon NAMEPREFIX Magma %Child%"
@@ -41,7 +41,7 @@
 #secondarypaths 9
 #secondarypathchance 50
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Magma %Child%"
 #name 1 "Summon NAMEPREFIX Magma %Child%"
@@ -67,7 +67,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 9
@@ -96,7 +96,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 9
 #secondarypaths 9

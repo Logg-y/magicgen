@@ -1,20 +1,16 @@
 #newweaponmod "Lifedrainweapon"
--- weapon not magic
-#req spec & 2097152
+#setweaponmagic 1
 #effect == 2
 #extracommand dt_weapondrain
-#spec -2097152
 #nameprefix "Vampiric"
 #end
 
 #newweaponmod "Lifedrainweapon2"
--- weapon not magic
-#req spec & 2097152
+#setweaponmagic 1
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
 #req aoe == 0
 #set secondaryeffect 384
-#spec -2097152
 #nameprefix "Vampiric"
 #end

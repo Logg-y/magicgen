@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 90
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Mechanical %Man%"
 #descr 8 "The caster quickly forms and enchants ARTICLE mechanical %man% from the metal below the battlefield. The %man% will crumble back to earth after the battle."
@@ -38,7 +38,7 @@
 #secondarypaths 8
 
 
-#skipchance 60
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Mechanical %Man%"
 #descr 8 "The caster forms and enchants ARTICLE mechanical %man% from metal. They are quite resistant to both physical and elemental damage."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 400
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8
@@ -86,7 +86,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

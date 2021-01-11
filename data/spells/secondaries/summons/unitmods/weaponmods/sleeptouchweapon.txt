@@ -1,11 +1,9 @@
 #newweaponmod "Sleeptouchweapon"
--- weapon not magic
-#req spec & 2097152
+#setweaponmagic 1
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
 #set secondaryeffect 387
-#spec -2097152
 #req aoe == 0
 #nameprefix "Fatiguing"
 #end

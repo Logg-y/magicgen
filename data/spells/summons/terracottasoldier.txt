@@ -13,7 +13,7 @@
 #paths 1
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 #scalefatiguemult 10
 
 #name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
@@ -38,7 +38,7 @@
 #paths 1
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
@@ -63,7 +63,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 4
@@ -87,7 +87,7 @@
 #fatiguecost 500
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 4

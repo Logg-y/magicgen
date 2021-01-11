@@ -1,0 +1,135 @@
+#neweventset "Global Curses"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -1
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -2
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -3
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -4
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -5
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -6
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -7
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -8
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -9
+#curse 5
+#end
+
+
+#newevent
+#rarity 5
+#msg "Curse spread, hostile province in friendly dom"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_enchdom ENCHANTID
+#req_maxdominion -10
+#curse 5
+#end
+
+#newevent
+#rarity 5
+#req_ench ENCHANTID
+#req_rare 50
+#curse 1
+#nolog
+#notext
+#msg "Curse 1% global"
+#end
+

@@ -1,0 +1,62 @@
+#neweffect "Magic boost 1"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 144
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Magic boost 1"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 16 "Magical Permeation"
+#name 128 "Magical Permeation"
+
+#descr 16 "This enchantment opens tiny pores to the Void within friendly dominion. Raw magical energy can then diffuse into the world, making research and spellcasting less arduous. However, creatures from beyond will mark those who spend time exposed to the Void."
+#descr 128 "Through a large blood sacrifice, the caster opens tiny pores to the Void within friendly dominion. Raw magical energy can then diffuse into the world, making research and spellcasting less arduous. However, creatures from beyond will mark those who spend time exposed to the Void."
+#details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 Magic. In practice, scales settle around +2-3 of neutral. In each affected province, there is a 50% chance that one random commander gains a horror mark."
+#end
+
+#neweffect "Magic boost 3"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 5500
+#scalefatiguemult 430
+#schools 32
+#unique 1
+#paths 144
+#skipchance 95
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Magic boost 3"
+
+#basescale 40
+#spelltype 4
+#scalerate 0
+
+#name 16 "Channels to the Void"
+#name 128 "Channels to the Void"
+
+#descr 16 "This enchantment opens many pores to the Void within friendly dominion. Raw magical energy can then diffuse into the world, making research and spellcasting less arduous. However, creatures from beyond will mark those who spend time exposed to the Void."
+#descr 128 "Through a large blood sacrifice, the caster opens tiny pores to the Void within friendly dominion. Raw magical energy can then diffuse into the world, making research and spellcasting less arduous. However, creatures from beyond will mark those who spend time exposed to the Void."
+#details "Each friendly province has three chances of a 40% chance per point of friendly dominion to gain +1 Magic. In practice, scales settle around +5 of neutral. In each affected province, one random commander gains a horror mark."
+#end
+
+
+

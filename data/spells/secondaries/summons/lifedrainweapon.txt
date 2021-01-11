@@ -25,7 +25,7 @@
 #req damage > 0
 #mult fatiguecost 1.8
 
-#unitmod "Summon Lifedrainweapon"
+#unitmod "Summon Lifedrainweapon2"
 #descr "The summoned %creature% %is% able to drain the life of victims with %its% attacks."
 
 #end

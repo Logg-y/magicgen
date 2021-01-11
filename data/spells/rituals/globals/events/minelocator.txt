@@ -1,0 +1,213 @@
+#neweventset "Mine Locator"
+#scaleparam "req_domchance" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_rare 20
+#req_0popok
+#nolog
+#req_freesites 1
+#msg "Where there used to be nothing but rock, copper has been discovered!"
+-- copper deposit
+#addsite 1069
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#req_rare 20
+#nolog
+#req_freesites 1
+#msg "Where there used to be nothing but rock, gold has been discovered!"
+-- gold deposit
+#addsite 1067
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#req_rare 20
+#nolog
+#req_freesites 1
+#msg "Where there used to be nothing but rock, iron has been discovered!"
+-- iron deposit
+#addsite 1070
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#req_rare 20
+#nolog
+#req_freesites 1
+#msg "Where there used to be nothing but rock, silver has been discovered!"
+-- silver deposit
+#addsite 1068
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#req_rare 20
+#nolog
+#req_freesites 1
+#msg "Where there used to be nothing but rock, gems have been discovered!"
+-- gem deposit
+#addsite 511
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "A hidden gold mine has been discovered! [Hidden Gold Mine]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "Magical flooded mines have been located! [Flooded Mine]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "A cave filled with magical minerals has been discovered! [Mineral Cave]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "A deposit of magical minerals has been discovered! [Mineral Deposit]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "Great fingers of magical minerals have been found on the seabed! [Mineral Fingers]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "An incredibly deep mine, deeper than any in the history of the world has been found. In its depths are magical gems! [The Deepest Mine]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "A cavern with walls of glowing magical gems was discovered! [Gemwall Cavern]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "A cavern filled with magical crystals discovered! [Crystal Cavern]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "Gem deposits have been discovered! [Gem Deposits]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "Hidden gem deposits have been discovered! [Hidden Gem Deposits]"
+#revealsite
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_hiddensite 1
+#msg "Hidden gold deposits have been discovered! [Hidden Gold Deposit]"
+#revealsite
+#end

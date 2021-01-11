@@ -23,7 +23,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "aspturtle ritual"
@@ -38,7 +38,7 @@
 
 #paths 4
 #secondarypaths 4
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Asp %Turtle%"
 #descr 4 "The caster summons ARTICLE_N asp %turtle% to fight for him. Asp turtles are terrifying sea monsters with large protective shells that trample their enemies."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 1
-#skipchance 75
+#skipchance 97
 #onlygeodst 2052
 
 #paths 4
@@ -88,7 +88,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 #paths 4
 #secondarypaths 4
 

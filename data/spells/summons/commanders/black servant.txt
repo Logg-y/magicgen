@@ -13,7 +13,7 @@
 #sound 31
 #schools 1
 
-#skipchance 16
+#skipchance 72
 
 --ASN
 #paths 32
@@ -44,7 +44,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 0
+#skipchance 67
 
 #paths 32
 #secondarypaths 32
@@ -70,10 +70,10 @@
 #fatiguecost 300
 #chassisvalue 20
 #schools 1
-#skipchance 26
+#skipchance 76
 #nogeodst 2052
 
-#skipchance 26
+#skipchance 76
 
 #paths 32
 #secondarypaths 32

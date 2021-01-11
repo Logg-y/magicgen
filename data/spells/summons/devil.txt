@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 129
 
-#skipchance 90
+#skipchance 94
 
 #name 128 "Summon %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE %devil% from Inferno to aid him in battle."
@@ -42,7 +42,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 82
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 430
@@ -61,7 +61,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 94
 #nogeodst 2052
 
 #paths 128
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 128
 #secondarypaths 128

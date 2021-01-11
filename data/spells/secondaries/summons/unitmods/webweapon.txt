@@ -1,6 +1,6 @@
 #newunitmod "Summon Webweapon"
 #weaponmod "Webweapon"
 #nameprefix "Webspinning"
-#req trample == -1
+#req trample <= 0
 #descr "Anyone wounded by attacks from this CREATURE may become caught in sticky webs."
 #end

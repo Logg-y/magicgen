@@ -14,7 +14,7 @@
 #secondarypaths 64
 #secondarypathchance 80
 
-#skipchance 90
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Fire %Ant%"
 #descr 1 "Summons ARTICLE fire %ant% to fight for the caster. Fire ants are extremely large ants with a poisonous stinger."
@@ -44,7 +44,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 60
@@ -63,7 +63,7 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 1

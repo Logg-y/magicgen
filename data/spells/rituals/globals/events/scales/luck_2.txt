@@ -1,0 +1,29 @@
+#neweventset "Luck boost 2"
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 40
+#req_0popok
+#nolog
+#notext
+#msg "Luck boost"
+#decscale 4
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 40
+#req_0popok
+#nolog
+#notext
+#msg "Luck boost"
+#decscale 4
+#end

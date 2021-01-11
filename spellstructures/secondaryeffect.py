@@ -43,13 +43,24 @@ class SpellSecondaryEffect(object):
 
     def compatibility(self, eff, modifier, researchlevel):
         "Return True if this secondary is compatible with the given SpellEffect."
-        # This is done by the main processing loop now
+        # Skipchance is done by the main processing loop now
         # it makes determining if there are legal modifiers for a spell a LOT better
+
+        # see if the event list allows this unitmod
+        # if yes then we need to be allowed, ignoring all the other reqs
+        if eff.eventset is not None:
+            realeventset = utils.eventsets[eff.eventset]
+            if self.unitmod in realeventset.allowedunitmods:
+                return True
+
 
         # Check reqs to begin with
         for r in self.reqs:
             if not r.test(eff):
                 return False
+				
+        if self.nextspell != "" and eff.noadditionalnextspells > 0:
+            return False
 
         if self.anysummon:
             if eff.effect in [1, 10001, 10050, 10038, 21, 10021]:

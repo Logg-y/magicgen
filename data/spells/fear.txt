@@ -16,7 +16,7 @@
 #explspr 10140
 #sound 22
 #fatiguecost 5
-#range 50
+#range 5025
 #precision 100
 
 #aicastmod -30

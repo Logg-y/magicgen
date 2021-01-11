@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %forest troll%"
 #descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
@@ -37,7 +37,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX %forest troll%"
 #descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
@@ -60,7 +60,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -85,7 +85,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

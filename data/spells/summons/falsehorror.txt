@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 75
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX False %Horror%"
 #descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
@@ -37,7 +37,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 75
+#skipchance 97
 
 #name 2 "Summon NAMEPREFIX False %Horror%"
 #descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2
@@ -85,7 +85,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 2
 #secondarypaths 2

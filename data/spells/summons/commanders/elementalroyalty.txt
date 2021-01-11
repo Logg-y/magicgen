@@ -13,7 +13,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 100
+#skipchance 99
 
 #details "There are three commanders that can be called with this spell."
 #name 2 "Queen of Elemental Air"
@@ -39,7 +39,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 100
+#skipchance 99
 #donotsetextraspellpath 1
 #extraspell "Summon air royal"
 
@@ -67,7 +67,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 100
+#skipchance 99
 #donotsetextraspellpath 1
 #extraspell "Summon earth royal"
 
@@ -95,7 +95,7 @@
 #paths 1
 #secondarypaths 1 
 
-#skipchance 0
+#skipchance 67
 #donotsetextraspellpath 1
 #extraspell "Summon water royal"
 
@@ -126,7 +126,7 @@
 #secondarypaths 33
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There is only one commander that can be called with this spell."
 #name 1 "King of Banefires"
@@ -156,7 +156,7 @@
 #secondarypaths 33
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There is only one commander that can be called with this spell."
 #name 1 "King of Banefires"
@@ -185,7 +185,7 @@
 #secondarypaths 136
 #secondarypathchance 100
 
-#skipchance 0
+#skipchance 67
 
 #details "There is only one commander that can be called with this spell."
 #name 8 "Father Illearth"

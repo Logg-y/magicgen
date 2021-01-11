@@ -22,7 +22,7 @@
 
 #scalerate 2
 -- #scalecost 1.0
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Swarm"
@@ -48,6 +48,6 @@
 
 #scalerate 7
 #scalefatigueexponent -0.4
-#skipchance 50
+#skipchance 97
 -- #scalecost 1.0
 #end

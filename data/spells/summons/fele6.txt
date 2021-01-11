@@ -13,7 +13,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 50
+#skipchance 97
 
 #scalefatiguemult 80
 
@@ -39,7 +39,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 75
+#skipchance 97
 
 #details "The elementals are size 6."
 #name 1 "Summon NAMEPREFIX Massive Fire Elementals"
@@ -64,7 +64,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1 
@@ -91,7 +91,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1 
 #secondarypaths 1 

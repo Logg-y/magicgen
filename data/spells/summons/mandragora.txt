@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Raise NAMEPREFIX Mandragora"
 #descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."
@@ -37,7 +37,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Raise NAMEPREFIX Mandragora"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %human% and enchants vines to control them. The resulting beings may put the living to sleep with their magical vines."
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 16
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 64
@@ -85,7 +85,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

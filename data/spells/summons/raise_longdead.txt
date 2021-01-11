@@ -24,7 +24,7 @@
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
-#skipchance 50
+#skipchance 40
 #end
 
 #neweffect "Raise Longdead Ritual"
@@ -37,7 +37,7 @@
 #fatiguecost 300
 #schools 16
 
-#skipchance 90
+#skipchance 82
 
 #paths 32
 #secondarypaths 32
@@ -89,7 +89,7 @@
 #fatiguecost 400
 #schools 16
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

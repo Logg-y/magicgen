@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Undines"
 #descr 4 "The caster calls forth several undines to fight for him. Undines are water spirits who serve Thalassa."
@@ -36,7 +36,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Undines"
 #descr 4 "The caster calls forth several undines to fight for him. Undines are water spirits who serve Thalassa."
@@ -60,7 +60,7 @@
 #pathlevel 5
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 #paths 4
 #secondarypaths 4
@@ -86,7 +86,7 @@
 
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

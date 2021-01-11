@@ -1,0 +1,16 @@
+#newmodifier "Ranged Summon"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 50
+-- not battlesummoned commander, this would be mages (yikes)
+#req effect == 1
+
+#req effect < 1000
+#set range 5030
+
+#pathlevel 0
+#power -1
+
+#end

@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 #scalefatiguemult 20
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %kydnid%"
 #descr 4 "The caster summons ARTICLE %kydnid%. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."
@@ -36,14 +36,14 @@
 #paths 4 
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %kydnid%"
 #descr 4 "The caster summons ARTICLE %kydnid%. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
@@ -62,11 +62,11 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #paths 4
 #secondarypaths 4 
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "NAMEPREFIX %kydnid% Attack"
 #descr 4 "The caster summons ARTICLE %kydnid% to attack a hostile commander in a distant province. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."
@@ -88,7 +88,7 @@
 #fatiguecost 200
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4 

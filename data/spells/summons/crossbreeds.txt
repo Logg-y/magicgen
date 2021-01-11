@@ -13,7 +13,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 95
+#skipchance 97
 
 #name 64 "Summon Foulspawn"
 #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
@@ -22,7 +22,7 @@
 
 #scalerate 0.85
 -- #scalecost 1.0
-#skipchance 50
+#skipchance 97
 #end
 
 #neweffect "Raise Foulspawn Ritual"
@@ -37,7 +37,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 95
+#skipchance 97
 
 #name 64 "Summon Foulspawn"
 #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
@@ -62,7 +62,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 95
+#skipchance 97
 
 #scalefatiguemult 5
 

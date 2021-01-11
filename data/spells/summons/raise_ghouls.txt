@@ -8,7 +8,7 @@
 #fatiguecost 100
 #schools 2
 
-#skipchance 20
+#skipchance 94
 
 #paths 32
 #secondarypaths 32
@@ -36,7 +36,7 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 16
-#skipchance 80
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -65,7 +65,7 @@
 #scalefatigueexponent 0.4
 #scalefatiguemult 40
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

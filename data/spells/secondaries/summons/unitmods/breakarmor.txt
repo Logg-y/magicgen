@@ -1,6 +1,6 @@
 #newunitmod "Summon Breakarmor"
 #weaponmod "Breakarmor"
 #nameprefix "Destructive"
-#req trample == -1
+#req trample <= 0
 #descr "Constructs wounded by attacks from this CREATURE have their armour warped and damaged by magical discharge. This effect is potent enough to affect and destroy magical armour forged by mages."
 #end

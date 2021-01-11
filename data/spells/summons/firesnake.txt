@@ -14,7 +14,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."
@@ -37,7 +37,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 75
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -88,7 +88,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 1

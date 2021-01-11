@@ -13,7 +13,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Shade %Beast%"
 #descr 32 "The caster summons ARTICLE black %hound% from the shadow realm. Shade beasts are dark, ethereal dog-like creatures."
@@ -38,7 +38,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Shade %Beast%"
 #descr 32 "The caster summons ARTICLE black %hound% from the shadow realm. Shade beasts are dark, ethereal dog-like creatures."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -86,7 +86,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

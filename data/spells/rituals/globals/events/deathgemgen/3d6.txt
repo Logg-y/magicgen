@@ -1,0 +1,11 @@
+#neweventset "Deathgemgen 3d6"
+#end
+
+#newevent
+#rarity 5
+#req_permonth 1
+#msg "A small number of death gems have been created from the focused essence of the dead."
+#3d6vis 5
+#nolog
+#req_myench ENCHANTID
+#end

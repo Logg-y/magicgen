@@ -1,7 +1,7 @@
 #newunitmod "Summon Fireweapon"
 #weaponmod "Fireweapon"
 #fireres 5
-#req trample == -1
+#req trample <= 0
 #nameprefix "Flametouched"
 #descr "This particular CREATURE is filled with fire magic and burns enemies it strikes."
 #end

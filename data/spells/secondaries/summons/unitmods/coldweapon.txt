@@ -2,6 +2,6 @@
 #weaponmod "Coldfatigueweapon"
 #coldres 5
 #nameprefix "Coldtouched"
-#req trample == -1
+#req trample <= 0
 #descr "This particular CREATURE is filled with chill magic and chills and fatigues enemies it strikes."
 #end

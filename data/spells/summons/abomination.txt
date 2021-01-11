@@ -14,7 +14,7 @@
 #secondarypaths 20
 #secondarypathchance 100
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %Abomination%"
 #name 16 "Summon NAMEPREFIX %Abomination%"
@@ -40,7 +40,7 @@
 #secondarypaths 20
 #secondarypathchance 80
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX %Abomination%"
 #name 16 "Summon NAMEPREFIX %Abomination%"
@@ -66,7 +66,7 @@
 #pathlevel 7
 #fatiguecost 1000
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 20
 #secondarypaths 20
@@ -93,7 +93,7 @@
 #fatiguecost 800
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 20
 #secondarypaths 20

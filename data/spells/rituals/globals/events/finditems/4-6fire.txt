@@ -1,0 +1,17 @@
+#neweventset "Find items 4-6 fire"
+#scaleparam "req_domchance" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 2
+#req_0popok
+#nolog
+#msg "Metal at an enchanted forge tranformed itself into a powerful magical item."
+#magicitem 4
+#end

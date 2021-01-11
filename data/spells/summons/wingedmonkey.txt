@@ -14,7 +14,7 @@
 #secondarypaths 80
 #secondarypathchance 70
 
-#skipchance 90
+#skipchance 97
 
 #name 16 "Summon NAMEPREFIX Winged Monkies"
 #name 64 "Summon NAMEPREFIX Winged Monkies"
@@ -42,7 +42,7 @@
 #secondarypathchance 70
 #scalefatiguemult 10
 
-#skipchance 90
+#skipchance 97
 
 #name 16 "Summon NAMEPREFIX Winged Monkies"
 #name 64 "Summon NAMEPREFIX Winged Monkies"
@@ -51,7 +51,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 20
@@ -70,7 +70,7 @@
 #pathlevel 2
 #fatiguecost 200
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 80
@@ -99,7 +99,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 80
 #secondarypaths 80

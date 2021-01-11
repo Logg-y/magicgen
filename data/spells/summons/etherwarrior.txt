@@ -14,7 +14,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 50
+#skipchance 97
 
 #name 16 "Summon NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."
@@ -37,7 +37,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 55
+#skipchance 97
 
 #name 16 "Summon NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."
@@ -61,7 +61,7 @@
 #pathlevel 5
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 16
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 16
 #secondarypaths 16

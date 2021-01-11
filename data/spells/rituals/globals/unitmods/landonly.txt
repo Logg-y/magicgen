@@ -1,0 +1,3 @@
+#newunitmod "Land OK"
+#landok 1
+#end

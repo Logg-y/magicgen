@@ -13,7 +13,7 @@
 #paths 1 
 #secondarypaths 1 
 #scalefatiguemult 20
-#skipchance 85
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 1 "Summon NAMEPREFIX Lesser Fire %Elemental%"
@@ -38,7 +38,7 @@
 #secondarypaths 1 
 
 
-#skipchance 75
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 1 "Summon NAMEPREFIX Lesser Fire Elementals"
@@ -63,7 +63,7 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #details "The elementals are size 3."
 #paths 1 
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1 
 #secondarypaths 1 

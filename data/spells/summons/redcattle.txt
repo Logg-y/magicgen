@@ -13,7 +13,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 #scalefatiguemult 20
 
 #name 64 "Summon NAMEPREFIX red cattle"
@@ -37,14 +37,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "Summon NAMEPREFIX red cattle"
 #descr 64 "The caster summons ARTICLE red cattle. Red cattle are large bulls touched by the demon lord Geryon, making them resistant to fire and magic."
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 60
@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 90
+#skipchance 97
 
 #name 64 "NAMEPREFIX red cattle Attack"
 #descr 64 "The caster summons ARTICLE red cattle to attack a hostile commander in a distant land. Red cattle are large bulls touched by the demon lord Geryon, making them resistant to fire and magic."
@@ -92,7 +92,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

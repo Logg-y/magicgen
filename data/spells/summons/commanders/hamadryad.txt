@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 64
@@ -23,7 +23,7 @@
 #name 64 "Call NAMEPREFIX %Hamadryad%"
 #descr 64 "The caster summons ARTICLE %Hamadryad% onto the battlefield and uses magic to convince PRONOUN to fight for him. Hamadryads are immobile nature mages, but they will leave after the battle."
 
-#scalefatiguemult 120
+#scalefatiguemult 60
 #spelltype 528
 
 #scalerate 1
@@ -45,7 +45,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 3
+#skipchance 68
 
 #paths 64
 #secondarypaths 64
@@ -53,7 +53,7 @@
 
 
 #name 64 "Summon NAMEPREFIX Hamadryad"
-#descr 64 "The caster summons ARTICLE %Hamadryad%. The Hamadryad is an immobile nature mage and is difficult to desroy."
+#descr 64 "The caster summons ARTICLE %Hamadryad%. The Hamadryad is an immobile nature mage and is difficult to destroy."
 
 #spelltype 20
 
@@ -74,7 +74,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 31
+#skipchance 77
 
 #paths 64
 #secondarypaths 64

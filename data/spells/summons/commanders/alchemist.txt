@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 --ASN
 #paths 88
@@ -29,7 +29,7 @@
 #descr 16 "The caster teleports ARTICLE %Alchemist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Alchemist% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Alchemist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Alchemist% will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1
@@ -51,7 +51,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 77
 
 #paths 88
 #secondarypaths 9

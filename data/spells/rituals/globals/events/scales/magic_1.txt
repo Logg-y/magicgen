@@ -1,0 +1,30 @@
+#neweventset "Magic boost 1"
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 40
+#req_0popok
+#nolog
+#notext
+#msg "Magic boost"
+#decscale 5
+#end
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_0popok
+#req_rare 50
+#req_targmindless 0
+#nolog
+#notext
+#msg "Magic boost mark"
+#gainmark
+#end

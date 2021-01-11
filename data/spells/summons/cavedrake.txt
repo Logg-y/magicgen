@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Cave %Drake%"
 #descr 8 "The caster summons ARTICLE cave %drake% to fight for him. The cave drake is a large cold-blooded beast with thick scales."
@@ -37,7 +37,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Cave %Drake%"
 #descr 8 "The caster summons ARTICLE cave %drake% to fight for him. The cave drake is a large cold-blooded beast with thick scales."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 8
@@ -81,13 +81,13 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 1001
+#nreff 3001
 #pathlevel 3
 #fatiguecost 500
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

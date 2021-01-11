@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 70
+#skipchance 90
 
 #paths 64
 #secondarypaths 64
@@ -22,7 +22,7 @@
 #name 64 "Summon NAMEPREFIX %Lord% of Fertility"
 #descr 64 "The caster summons ARTICLE %Lord of Fertility% to fight for him on the battlefield. The %Lord of Fertility% %is% physically large and strong, and %is% skilled in earth and nature magic; but will leave once the battle is over."
 
-#scalefatiguemult 100
+#scalefatiguemult 50
 #spelltype 528
 
 #scalerate 1
@@ -44,7 +44,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 30
+#skipchance 77
 
 #paths 64
 #secondarypaths 64

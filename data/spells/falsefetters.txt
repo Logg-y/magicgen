@@ -27,6 +27,9 @@
 #namecond aoe == 665 2 "Shackled Army"
 #namecond aoe == 665 128 "Shackled Army"
 
+#namecond aoe == 666 2 "Shackled Army"
+#namecond aoe == 666 128 "Shackled Army"
+
 #namecond aoe == 663 2 "Shackled Army"
 #namecond aoe == 663 128 "Shackled Army"
 

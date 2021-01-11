@@ -14,7 +14,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 90
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX %Salamander%"
 #descr 1 "Summons ARTICLE %salamander% to fight for the caster. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."
@@ -42,7 +42,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 25
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 1

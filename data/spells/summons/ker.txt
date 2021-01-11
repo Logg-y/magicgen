@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %ker%"
 #descr 32 "The caster summons ARTICLE %ker% to fight for him. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
@@ -40,7 +40,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 31
+#skipchance 94
 
 #paths 160
 #secondarypaths 32
@@ -69,7 +69,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX %ker%"
 #descr 32 "The caster summons ARTICLE %ker% to fight for him. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
@@ -93,7 +93,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 32
@@ -119,7 +119,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

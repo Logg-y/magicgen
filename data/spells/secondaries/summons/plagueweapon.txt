@@ -8,6 +8,7 @@
 -- not montag
 #req damage > 0
 #mult fatiguecost 3.0
+#req trample <= 0
 
 #unitmod "Summon Plagueweapon"
 #descr "Anyone wounded by attacks from the summoned %creature% becomes infected with an extremely virulent magical plague which will quickly spread to anyone nearby."

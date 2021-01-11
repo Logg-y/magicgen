@@ -140,10 +140,11 @@
 #spec 8390784
 #aoe 1
 #power 4
+#maxpower 15
 #precision 1
 #range 50
-#pathlevel 2
-#fatiguecost 20
+#pathlevel 3
+#fatiguecost 30
 #sound 114
 #nreff 1
 
@@ -175,11 +176,12 @@
 #damage 2001
 #spec 8390784
 #aoe 1
-#power 3
+#power 4
+#maxpower 15
 #precision 1
 #range 50
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 30
 #flightspr 10307
 #sound 114
 #nreff 1
@@ -209,6 +211,7 @@
 #spec 8390784
 #aoe 1
 #power 5
+#maxpower 15
 #precision 1
 #range 50
 #pathlevel 2
@@ -240,6 +243,7 @@
 #spec 8390784
 #aoe 1
 #power 7
+#maxpower 15
 #precision 1
 #range 50
 #pathlevel 3

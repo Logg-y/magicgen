@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 90
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Kraken King"
 #descr 4 "The caster calls forth ARTICLE kraken %king% to fight his enemies. The kraken king is a mighty beast of the oceans."
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Kraken King"
 #descr 4 "The caster calls forth ARTICLE kraken %king% to fight his enemies. The kraken king is a mighty beast of the oceans."
@@ -62,7 +62,7 @@
 #pathlevel 6
 #fatiguecost 600
 #schools 1
-#skipchance 90
+#skipchance 97
 #onlygeodst 2052
 
 #paths 4
@@ -89,7 +89,7 @@
 
 #onlygeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

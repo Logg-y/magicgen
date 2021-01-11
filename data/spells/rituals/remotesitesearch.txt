@@ -165,7 +165,7 @@
 #neweffect "Remote Search Blood"
 #effect 10048
 #provrange 4
-#damage 6
+#damage 7
 #spec 0
 #power 3
 #maxpower 3

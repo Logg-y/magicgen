@@ -1,0 +1,282 @@
+#neweffect "Freespawn Summons"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 15
+#nreff 1
+#pathlevel 6
+#fatiguecost 6000
+#scalefatiguemult 500
+#schools 1
+#paths 255
+#skipchance 0
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons"
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+#pathskipchance 128 85
+
+#name 1 "Portals of Fire"
+#name 2 "Portals of Air"
+#name 4 "Portals of Water"
+#name 8 "Portals of Earth"
+#name 16 "Otherworldly Portals"
+#name 32 "Deathly Portals"
+#name 64 "Gaia's Portals"
+#name 128 "Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly land province, there is a 10% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end
+
+#neweffect "Freespawn Summons pow4"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#scalefatiguemult 300
+#schools 1
+-- Water currently has no legal summons for this spell
+#paths 251
+#skipchance 0
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons pow4"
+
+#pathskipchance 128 85
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+#name 1 "Minor Portals of Fire"
+#name 2 "Minor Portals of Air"
+#name 4 "Minor Portals of Water"
+#name 8 "Minor Portals of Earth"
+#name 16 "Minor Otherworldly Portals"
+#name 32 "Minor Deathly Portals"
+#name 64 "Gaia's Minor Portals"
+#name 128 "Minor Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly land province, there is a 1% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end
+
+#neweffect "Freespawn Summons pow5"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4200
+#scalefatiguemult 400
+#schools 1
+#paths 235
+#skipchance 0
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons pow5"
+
+#pathskipchance 128 85
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+
+-- Things this can make
+
+-- wolf
+-- phantasmal somethings
+-- most size 1 elementals
+
+-- DON'T be astral
+-- not water
+
+#name 1 "Lesser Portals of Fire"
+#name 2 "Lesser Portals of Air"
+#name 4 "Lesser Portals of Water"
+#name 8 "Lesser Portals of Earth"
+#name 16 "Lesser Otherworldly Portals"
+#name 32 "Lesser Deathly Portals"
+#name 64 "Gaia's Lesser Portals"
+#name 128 "Lesser Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly land province, there is a 3% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end
+
+
+
+
+
+
+
+#neweffect "Freespawn Summons UW"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 6
+#maxpower 15
+#nreff 1
+#pathlevel 6
+#fatiguecost 6000
+#scalefatiguemult 500
+#schools 1
+#paths 68
+#skipchance 80
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons UW"
+
+#pathskipchance 128 85
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+#name 1 "Portals of Fire"
+#name 2 "Portals of Air"
+#name 4 "Portals of Water"
+#name 8 "Portals of Earth"
+#name 16 "Otherworldly Portals"
+#name 32 "Deathly Portals"
+#name 64 "Gaia's Portals"
+#name 128 "Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly underwater province, there is a 10% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end
+
+#neweffect "Freespawn Summons pow4 UW"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#scalefatiguemult 300
+#schools 1
+#paths 68
+#skipchance 80
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons pow4 UW"
+
+#pathskipchance 128 85
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+
+#name 1 "Minor Portals of Fire"
+#name 2 "Minor Portals of Air"
+#name 4 "Minor Portals of Water"
+#name 8 "Minor Portals of Earth"
+#name 16 "Minor Otherworldly Portals"
+#name 32 "Minor Deathly Portals"
+#name 64 "Gaia's Minor Portals"
+#name 128 "Minor Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open infrequently across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly underwater province, there is a 1% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end
+
+#neweffect "Freespawn Summons pow5 UW"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4200
+#scalefatiguemult 400
+#schools 1
+#paths 68
+#skipchance 80
+#secondarypaths 127
+#secondarypathchance 50
+#eventset "Freespawn Summons pow5 UW"
+
+#pathskipchance 128 85
+
+-- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+#secondaryeffectskipchance 80
+
+
+#name 1 "Lesser Portals of Fire"
+#name 2 "Lesser Portals of Air"
+#name 4 "Lesser Portals of Water"
+#name 8 "Lesser Portals of Earth"
+#name 16 "Lesser Otherworldly Portals"
+#name 32 "Lesser Deathly Portals"
+#name 64 "Gaia's Lesser Portals"
+#name 128 "Lesser Infernal Portals"
+#descr 1 "This enchantment causes fiery portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 2 "This enchantment causes thunderous portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 4 "This enchantment causes watery portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 8 "This enchantment causes earthen portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 16 "This enchantment causes otherworldly portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 32 "This enchantment causes deathly portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 64 "This enchantment causes portals of nature to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#descr 128 "This enchantment causes infernal portals to open occasionally across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
+#details "In each friendly underwater province, there is a 3% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+
+#spelltype 4
+#scalerate 1
+#end

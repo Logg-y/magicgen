@@ -13,7 +13,7 @@
 #paths 8
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Clay%man%"
 #descr 8 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE clay%man%. Claymen are able to quickly close wounds inflicted on them."
@@ -37,7 +37,7 @@
 #paths 8
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Clay%man%"
 #descr 8 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE clay%man%. Claymen are able to quickly close wounds inflicted on them."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 4
@@ -86,7 +86,7 @@
 #fatiguecost 500
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 4
@@ -99,5 +99,5 @@
 #scalerate 4
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 50
+#scalefatiguemult 30
 #end

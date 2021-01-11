@@ -13,7 +13,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Shade %Lord%"
 #descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to fight for him. Shade lords are powerful ethereal undead which can strike through their victims' armour."
@@ -35,12 +35,12 @@
 #schools 1
 
 
-#skipchance 75
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Summon NAMEPREFIX Shade %Lord%"
 #descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to fight for him. Shade lords are powerful ethereal undead which can strike through their victims' armour."
@@ -62,7 +62,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32
@@ -85,7 +85,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 32
 #secondarypaths 32

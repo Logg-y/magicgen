@@ -14,7 +14,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 85
+#skipchance 97
 
 #name 32 "Desert Bones Attack"
 #name 8 "Desert Bones Attack"
@@ -40,7 +40,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 75
+#skipchance 97
 
 #name 32 "Send Desert Bones"
 #name 8 "Send Desert Bones"
@@ -66,7 +66,7 @@
 #pathlevel 5
 #fatiguecost 400
 #schools 16
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 40
@@ -95,7 +95,7 @@
 #schools 16
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 40
 #secondarypaths 40

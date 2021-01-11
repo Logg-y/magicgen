@@ -14,7 +14,7 @@
 #secondarypaths 32
 #secondarypathchance 80
 
-#skipchance 90
+#skipchance 94
 
 #name 128 "Summon Bone %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE bone %fiend% from the underworld to aid him in battle."
@@ -46,7 +46,7 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 85
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 320
@@ -65,7 +65,7 @@
 #pathlevel 4
 #fatiguecost 400
 #schools 1
-#skipchance 90
+#skipchance 94
 #nogeodst 2052
 
 #paths 128
@@ -92,7 +92,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 94
 
 #paths 128
 #secondarypaths 32

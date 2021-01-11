@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Sea %Troll%"
 #descr 4 "The caster summons ARTICLE sea %troll% to fight for him. Sea trolls are a variant of trolls with softer skin but increased regenerative capability when underwater."
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 75
+#skipchance 97
 
 #name 4 "Summon NAMEPREFIX Sea %Troll%"
 #descr 4 "The caster summons ARTICLE sea %troll% to fight for him. Sea trolls are a variant of trolls with softer skin but increased regenerative capability when underwater."
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4
@@ -85,7 +85,7 @@
 #fatiguecost 300
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

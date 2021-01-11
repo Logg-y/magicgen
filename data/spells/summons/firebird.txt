@@ -14,7 +14,7 @@
 #secondarypaths 16
 #scalefatiguemult 20
 
-#skipchance 90
+#skipchance 97
 
 #name 1 "Summon NAMEPREFIX %Firebird%"
 #descr 1 "Summons ARTICLE %firebird% to fight for the caster. The firebird is a glowing bird that can create small bursts of flames."
@@ -44,7 +44,7 @@
 
 #spelltype 20
 
-#skipchance 90
+#skipchance 97
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 185
@@ -63,7 +63,7 @@
 #pathlevel 4
 #fatiguecost 300
 #schools 1
-#skipchance 90
+#skipchance 97
 #nogeodst 2052
 
 #paths 1
@@ -89,7 +89,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 90
+#skipchance 97
 
 #paths 1
 #secondarypaths 16

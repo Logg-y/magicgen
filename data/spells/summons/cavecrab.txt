@@ -14,7 +14,7 @@
 #secondarypaths 4
 #secondarypathchance 90
 #scalefatiguemult 20
-#skipchance 50
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Cave %Crab%"
 #descr 8 "The caster summons forth ARTICLE cave %crab%. Cave crabs have massive pincers which will easily cut through any armour, but are very vulnerable to magic."
@@ -38,7 +38,7 @@
 #secondarypaths 4
 #secondarypathchance 90
 
-#skipchance 75
+#skipchance 97
 
 #name 8 "Summon NAMEPREFIX Cave %Crab%"
 #descr 8 "The caster summons forth ARTICLE cave %crab%. Cave crabs have massive pincers which will easily cut through any armour, but are very vulnerable to magic."
@@ -62,7 +62,7 @@
 #pathlevel 5
 #fatiguecost 500
 #schools 1
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 4
@@ -87,7 +87,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 90
+#skipchance 97
 
 #paths 8
 #secondarypaths 4
