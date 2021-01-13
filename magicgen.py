@@ -14,7 +14,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.0.0"
+ver = "2.0.1"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 

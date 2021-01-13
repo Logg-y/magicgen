@@ -87,7 +87,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 94
+#skipchance 99.9
 
 #paths 128
 #secondarypaths 128

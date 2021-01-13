@@ -6,6 +6,7 @@ import threading
 import nationals
 import csv
 import re
+import traceback
 
 import PySimpleGUI as sg
 
@@ -20,7 +21,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v2.0.0"
+ver = "v2.0.1"
 
 
 def output_polling_thread(timeout=0.1):
@@ -393,4 +394,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except:
+        with open("magicgenGUIerror.txt", "w") as f:
+            f.write(traceback.format_exc())

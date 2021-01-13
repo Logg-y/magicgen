@@ -62,7 +62,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 97
+#skipchance 99.9
 
 #scalefatiguemult 5
 

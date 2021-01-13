@@ -88,15 +88,15 @@
 #provrange 4
 #damage 3171
 #spec 0
-#power 6
+#power 7
 #maxpower 9
-#nreff 1001
+#nreff 1
 #pathlevel 4
 #fatiguecost 600
 #schools 8
 #nogeodst 2052
 
-#skipchance 97
+#skipchance 99.9
 
 #paths 9
 #secondarypaths 9

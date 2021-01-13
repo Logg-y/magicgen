@@ -10,6 +10,8 @@ nationinfo = {}
 spellids = []
 weaponids = []
 monsterids = []
+eventcodes = []
+montagids = []
 
 
 class Nation(object):
@@ -86,18 +88,18 @@ def readVanilla():
 
 
 def readMods(modstring):
-    global monsterids, weaponids, spellids
+    global monsterids, weaponids, spellids, eventcodes, montagids
     mods = modstring.strip().split(",")
     monsterids = [3499]
     weaponids = [799]
     spellids = [1299]
-    eventcodes = [-99]
+    eventcodes = [-299]
     montagids = [1000]
     for mod in mods:
         mod = mod.strip()
         if mod.strip() == "":
             continue
-        with open(mod, "r") as f:
+        with open(mod, "r", encoding="u8") as f:
             lastnation = None
             foundnationend = True
             lastunit = None
@@ -110,11 +112,13 @@ def readMods(modstring):
             nationalunits = {}
 
             for line in f:
+                if "--" in line:
+                    line = line[0:line.find("--")].strip()
                 if line.strip() == "": continue
                 line = line.strip()
-                m = re.match("#newmonster (\\d*)", line)
+                m = re.match("#newmonster (\\d+)", line)
                 if m is None:
-                    m = re.match("#selectmonster (\\d*)", line)
+                    m = re.match("#selectmonster (\\d+)", line)
                 if m is not None:
                     if lastunit is not None:
                         units[lastunit] = lastobj
@@ -127,27 +131,27 @@ def readMods(modstring):
                     newid = max(monsterids) + 1
                     monsterids.append(newid)
 
-                m = re.match("#montag (\\d*)", line)
+                m = re.match("#montag (\\d+)", line)
                 if m is not None:
                     newid = int(m.groups()[0])
                     montagids.append(newid)
                     print(f"Parsed montag {newid}")
 
-                m = re.match("#code (.*)", line)
+                m = re.match("#code (.+)", line)
                 if m is None:
-                    m = re.match("#code2 (.*)", line)
+                    m = re.match("#code2 (.+)", line)
                 if m is None:
-                    m = re.match("#codedelay (.*)", line)
+                    m = re.match("#codedelay (.+)", line)
                 if m is None:
-                    m = re.match("#codedelay2 (.*)", line)
+                    m = re.match("#codedelay2 (.+)", line)
                 if m is not None:
                     newid = int(m.groups()[0])
                     eventcodes.append(newid)
                     print(f"Parsed event code {newid}")
 
-                m = re.match("#newspell (\\d*)", line)
+                m = re.match("#newspell (\\d+)", line)
                 if m is None:
-                    m = re.match("#selectspell (\\d*)", line)
+                    m = re.match("#selectspell (\\d+)", line)
                 if m is not None:
                     newid = int(m.groups()[0])
                     spellids.append(newid)
@@ -157,9 +161,9 @@ def readMods(modstring):
                     print(f"Parsed spell with implied id {newid}")
                     spellids.append(newid)
 
-                m = re.match("#newweapon (\\d*)", line)
+                m = re.match("#newweapon (\\d+)", line)
                 if m is None:
-                    m = re.match("#selectweapon (\\d*)", line)
+                    m = re.match("#selectweapon (\\d+)", line)
                 if m is not None:
                     print(m.groups())
                     print(line)
@@ -170,7 +174,7 @@ def readMods(modstring):
                     weaponids.append(newid)
 
 
-                m = re.match("#selectnation (\\d*)", line)
+                m = re.match("#selectnation (\\d+)", line)
                 if m is not None:
                     print(f"Parsed selectnation {m.groups()[0]}")
                     lastnation = int(m.groups()[0])
@@ -183,7 +187,7 @@ def readMods(modstring):
                     print(f"Parsed newsite {m.groups()[0]}")
                     lastsite = int(m.groups()[0])
 
-                m = re.match("#name [\"](.*)[\"]", line)
+                m = re.match("#name [\"](.+)[\"]", line)
                 if m is not None:
                     if m.groups()[0] not in sitenames:
                         print(f"Attach site name {m.groups()[0]} to {lastsite}")
@@ -192,25 +196,25 @@ def readMods(modstring):
                     if not foundnationend:
                         nationinfo[lastnation].name = m.groups()[0]
 
-                m = re.match("#era (.*)", line)
+                m = re.match("#era (.+)", line)
                 if m is not None:
                     nationinfo[lastnation].era = int(m.groups()[0])
 
-                m = re.match("#homecom (\\d*)", line)
+                m = re.match("#homecom (\\d+)", line)
                 if m is not None:
                     if lastsite not in siteunits:
                         siteunits[lastsite] = []
                     siteunits[lastsite].append(int(m.groups()[0]))
                     print(f"Assign Commander {m.groups()[0]} to site {lastsite}")
 
-                m = re.match("#startsite [\"](.*)[\"]", line)
+                m = re.match("#startsite [\"](.+)[\"]", line)
                 if m is not None:
                     if lastnation not in startsites:
                         startsites[lastnation] = []
                     print(f"Assign startsite {m.groups()[0]} as belonging to {lastnation}")
                     startsites[lastnation].append(m.groups()[0])
 
-                m = re.match("#addreccom (\\d*)", line)
+                m = re.match("#addreccom (\\d+)", line)
                 if m is not None:
                     if lastnation not in nationalunits:
                         nationalunits[lastnation] = []
@@ -229,14 +233,14 @@ def readMods(modstring):
                         print(f"found nation end")
                         foundnationend = True
 
-                m = re.match("#magicskill (\\d*) (\\d*)", line)
+                m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:
                     path = int(m.groups()[0])
                     if path not in utils.breakdownflag(lastobj.guaranteedpaths):
                         print(f"Give guaranteed path {path} to current commander")
                         lastobj.guaranteedpaths += 2 ** path
 
-                m = re.match("#custommagic (\\d*) (\\d*)", line)
+                m = re.match("#custommagic (\\d+) (\\d+)", line)
                 if m is not None:
                     mask = int(m.groups()[0])
                     for path in [0, 1, 2, 3, 4, 5, 6, 7, 8]:
@@ -247,9 +251,15 @@ def readMods(modstring):
 
         for nation, sitelist in startsites.items():
             for sitename in sitelist:
+                if sitename not in sitenames:
+                    print(f"Warning: didn't parse site called {sitename}, skipped")
+                    continue
                 site = sitenames[sitename]
                 if site in siteunits:
                     for unit in siteunits[site]:
+                        if unit not in units:
+                            print(f"Warning: Site apparently allows unit {unit} but this is not a modded unit, ignored")
+                            continue
                         obj = units[unit]
                         obj.update()
                         if obj.guaranteedpaths > 0 or obj.randompaths > 0:
@@ -257,6 +267,9 @@ def readMods(modstring):
 
         for nation, unitlist in nationalunits.items():
             for unit in unitlist:
+                if unit not in units:
+                    print(f"Unit {unit} not found in parsed mod, skipped")
+                    continue
                 obj = units[unit]
                 obj.update()
                 if obj.guaranteedpaths > 0 or obj.randompaths > 0:

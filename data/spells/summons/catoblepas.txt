@@ -92,7 +92,7 @@
 #schools 16
 #onlygeodst 2052
 
-#skipchance 97
+#skipchance 99.9
 #paths 4
 #secondarypaths 32
 #secondarypathchance 90

@@ -81,13 +81,13 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 1002
+#nreff 1000
 #pathlevel 3
 #fatiguecost 400
 #schools 1
 #nogeodst 2052
 
-#skipchance 97
+#skipchance 99.9
 
 #paths 2
 #secondarypaths 2

@@ -85,7 +85,7 @@
 #schools 16
 #nogeodst 2052
 
-#skipchance 97
+#skipchance 99.9
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40

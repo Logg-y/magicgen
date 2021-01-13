@@ -96,7 +96,7 @@
 #schools 16
 #nogeodst 2052
 
-#skipchance 97
+#skipchance 99.9
 
 #paths 36
 #secondarypaths 36

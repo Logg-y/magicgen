@@ -65,7 +65,7 @@
 #scalefatigueexponent 0.4
 #scalefatiguemult 40
 
-#skipchance 97
+#skipchance 99.9
 
 #paths 32
 #secondarypaths 32

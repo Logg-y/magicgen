@@ -2,8 +2,23 @@ TODO
 
 unique summons
 add a toggle for wiping national spells
-ranged summon spells
-edge of field summons
+
+NEW IN v2.0.1
+
+Changes:
+	All remote summons are now a LOT rarer. This means your conjuration trees should get filled up with things other than tons and tons of remote anonymous summons. National spells are still fair game for these, however.
+	Fixed the autodetect IDs button (the addition of event codes and montags broke this)
+	More robust mod file parsing that should hopefully crash less!
+	GUI crashes now try to write a error text file which might be helpful when mod parsing goes bad again
+
+Unintentional behaviour fixes:
+	All sea dog rituals can now be cast on land. Previously, only the battle summon could be
+	Poison barbs summon modifier now correctly applies poison barbs and not poison skin
+
+Balance:
+	Khalkhotauros remote attack research level up to 7, no longer spawns extra per caster level
+	Spring hawk remote attack spawns -2 hawks per cast
+	
 
 NEW IN v2.0.0
 

@@ -83,11 +83,17 @@ class SpellModifier(object):
 
         finalnreff = self.nreff + (eff.nreff % 1000)
         if finalnreff <= 0:
-            return False
+            scaled = self.nreff + eff.nreff
+            # if exactly some multiple of 1000 it's fine as that is x per level
+            if scaled < 1000: 
+                return False
 
         finalaoe = self.aoe + (eff.aoe % 1000)
         if finalaoe < 0:
-            return False
+            scaled = self.aoe + eff.aoe
+            # if exactly some multiple of 1000 it's fine as that is x per level
+            if scaled < 1000:
+                return False
 
         finalbounces = self.maxbounces + eff.maxbounces
         if finalbounces < 0:

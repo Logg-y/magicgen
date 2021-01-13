@@ -62,7 +62,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 97
+#skipchance 99.9
 
 #name 64 "Send Lesser Foulspawn"
 #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are always the weakest results of crossbreeding."
