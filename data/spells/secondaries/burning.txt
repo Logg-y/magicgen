@@ -11,6 +11,7 @@
 #req effect != 74
 #req effect != 73
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 
 -- no additional burning for burning spells
 #req damage != 512
@@ -34,6 +35,7 @@
 
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 --#req paths != 256
 
 

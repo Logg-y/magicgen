@@ -435,6 +435,9 @@ These function the same as the modifiers.
 \#magicpathvaluescaling (default 0.0)
  * This allows certain unit traits to scale cost of magic paths, just as \#chassisvalue on effects causes most of them to be exempt. Essentially, each summoned commander is made of a "chassis value" (determined with the command) and the "magic value" (which is the unit's full cost minus the chassis value). This command adds (\#magicpathvaluescaling \* chassis magic value) to the fatigue cost of the spell. This is useful for things such as immortality which have a value on human mages with an otherwise physically weak chassis.
  
+\#offensiveeffect 1
+ * If set, this modifier will only apply to spells whose scaling AoE is calculated as less than `3*((L(L+1))/2)` where L is the research level of the spell. This is to stop mass rust getting stronger secondary effects than its primary is!
+
 ## Unit Modifiers
 
 These accept inspector tags. For instance:

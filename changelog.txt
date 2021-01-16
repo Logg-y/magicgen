@@ -3,6 +3,14 @@ TODO
 unique summons
 add a toggle for wiping national spells
 
+NEW IN v2.0.2
+
+Balance:
+	Offensive secondary effects can no longer apply to low level large AoE nondamaging spells. This means that things like mass rust can no longer come with secondary burning or decay at research levels as low as 3!
+	Specifically, the maximum base AoE allowed is 3*((L(L+1))/2) where L is the research level of the spell.
+	
+	Longdead horseman remote attack reduced by 3 flat units and 1 per caster level
+
 NEW IN v2.0.1
 
 Changes:

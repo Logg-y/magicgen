@@ -9,6 +9,7 @@
 #req effect != 74
 #req effect != 73
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 
 #paths 8
 #power 0

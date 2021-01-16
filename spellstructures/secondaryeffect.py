@@ -23,6 +23,7 @@ class SpellSecondaryEffect(object):
         self.maxbounces = 0
         self.pathlevel = 0
         self.paths = 0
+        self.offensiveeffect = 0
 
         self.scalecost = 0.0
         self.scalerate = 0.0
@@ -53,11 +54,13 @@ class SpellSecondaryEffect(object):
             if self.unitmod in realeventset.allowedunitmods:
                 return True
 
-
         # Check reqs to begin with
         for r in self.reqs:
             if not r.test(eff):
                 return False
+
+
+
 				
         if self.nextspell != "" and eff.noadditionalnextspells > 0:
             return False
@@ -136,6 +139,17 @@ class SpellSecondaryEffect(object):
             u = unit.get(eff.damage)
             umod = utils.unitmods[self.unitmod]
             if not umod.compatibility(u):
+                return False
+
+        # aoe limit so that mass rust doesn't get decay/burning etc
+        if self.offensiveeffect != 0:
+            maxbaseaoe = 3 * ((researchlevel * (researchlevel + 1)) / 2)
+            finalpower = researchlevel - eff.power
+            # this is quadratic, negative power differentials (from slower casting etc) should be considered 0
+            finalpower = max(0, finalpower)
+            scaleamt = eff.scalerate * ((finalpower * (finalpower + 1)) / 2)
+            finalaoe = (eff.aoe % 1000) + scaleamt
+            if finalaoe > maxbaseaoe:
                 return False
 
         return True

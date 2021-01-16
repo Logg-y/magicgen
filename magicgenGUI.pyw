@@ -21,7 +21,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v2.0.1"
+ver = "v2.0.2"
 
 
 def output_polling_thread(timeout=0.1):

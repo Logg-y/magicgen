@@ -12,6 +12,7 @@
 #req effect != 73
 #req effect < 1000
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 
 
 -- not ritual
@@ -35,6 +36,7 @@
 
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 -- holy ok
 
 -- not cloud spells
