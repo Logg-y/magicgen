@@ -11,7 +11,7 @@
 
 #unitmod "Summon Airshield Lesser"
 #descr "The summoned %creature% %is% surrounded by winds which protect %it% from missiles."
-
+#details "Creatures summoned with this spell have 40% air shield."
 #end
 
 #newsecondary "Summon airshield"
@@ -27,5 +27,6 @@
 
 #unitmod "Summon Airshield"
 #descr "The summoned %creature% %is% surrounded by winds which protect %it% from missiles."
+#details "Creatures summoned with this spell have 80% air shield."
 
 #end

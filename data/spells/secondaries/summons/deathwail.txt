@@ -7,9 +7,10 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 80
+#fatiguecostpereffect 65
 
 #unitmod "Summon Deathwail"
 #descr "The summoned %creature% will release a psychic wail upon death, paralyzing those nearby that fail to resist."
+#details "When the creatures die, they emit a psychic wail over 5 squares. Those in the area of effect must make a magic resistance check or take 20 paralysis damage."
 
 #end

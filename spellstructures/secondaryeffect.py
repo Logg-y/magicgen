@@ -33,6 +33,7 @@ class SpellSecondaryEffect(object):
         self.nobattlefield = False
         self.nextspell = ""
         self.anysummon = False
+        self.details = ""
 
         self.reqs = []
         self.descrs = []

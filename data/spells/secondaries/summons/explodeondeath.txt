@@ -7,10 +7,11 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 30
+#fatiguecostpereffect 60
 
 #unitmod "Summon Explode on Death"
 #descr "The summoned %creature% %is% imbued with fire magic that causes %it% to explode when killed."
+#details "When the creatures die, they emit a burst of fire over 5 squares. Those in the area of effect take 10 AP fire damage."
 
 #end
 
@@ -24,9 +25,10 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 70
+#fatiguecostpereffect 100
 
 #unitmod "Summon Large Explode on Death"
 #descr "The summoned %creature% %is% imbued with fire magic that causes %it% to violently explode when killed."
+#details "When the creatures die, they emit a burst of fire over 10 squares. Those in the area of effect take 10 AP fire damage."
 
 #end

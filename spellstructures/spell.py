@@ -607,6 +607,35 @@ class SpellEffect(object):
         # don't make spells uncastable at the minimum level
         if not self.spelltype & SpellTypes.RITUAL:
             if s.fatiguecost > 100 * s.path1level:
+                reductionfactor = (100*s.path1level) / s.fatiguecost
+                if realnumeffects > 1:
+                    desirednumeffects = max(1, math.floor(realnumeffects * reductionfactor))
+                    numeffectstolose = realnumeffects - desirednumeffects
+                    # Take from scaling first
+                    while 1:
+                        # can't reduce scaling if it would drop below the number to lose
+                        if numeffectstolose < s.path1level:
+                            break
+                        # don't reduce scaling below 1 if it existed
+                        if (s.nreff // 1000) <= 1:
+                            break
+                        if numeffectstolose == 0:
+                            break
+                        s.nreff -= 1000
+                        numeffectstolose -= s.path1level
+
+                    while 1:
+                        # Don't reduce the flat number of effects below 0
+                        if (s.nreff % 1000) == 0:
+                            break
+                        if numeffectstolose == 0:
+                            break
+                        s.nreff -= 1
+                        numeffectstolose -= 1
+
+                    s.comments.append(f"Reduce number of effects from {realnumeffects} to fit cost "
+                                      f"reduction scale of {reductionfactor}")
+
                 s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
                 s.fatiguecost = min(s.fatiguecost, 100 * s.path1level)
 
@@ -792,6 +821,8 @@ class SpellEffect(object):
             s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
 
             s.details = s.details.strip()
+
+        s.details += " " + secondary.details
 
         s.descr = s.descr.strip()
         s.details = s.details.replace("\\n", "\n")

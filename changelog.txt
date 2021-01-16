@@ -3,6 +3,20 @@ TODO
 unique summons
 add a toggle for wiping national spells
 
+NEW IN v2.0.3
+
+Additions:
+
+Changes:
+	Added yellow text to spells that summon exploding units to list the area of effect outside of the inspector.
+	Units with disease explosion now gain 100% disease resistance.
+	Poison projectile evos now scale AoE like other evocations (rather than number of projectiles).
+	Summons (or other spells with high number of effects) that would have obnoxiously high gem costs now proportionally reduce the number of effects along with the gem costs.
+
+Balance:
+	Slightly increased cost of ritual summoned bane, bane lord and shura commanders.
+	Increased fatigue cost of the explode-on-death summon modifier by ~50%
+
 NEW IN v2.0.2
 
 Balance:

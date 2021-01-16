@@ -23,7 +23,7 @@
 #descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned."
 #descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
 
-#spelltype 18
+#spelltype 34
 
 #power 1
 #scalerate 1

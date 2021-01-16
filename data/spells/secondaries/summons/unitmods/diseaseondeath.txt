@@ -1,6 +1,7 @@
 #newunitmod "Summon Disease on Death"
 #req deathdisease <= 0
 #set deathdisease 5
+#set diseaseres 100
 #req secondshape == -1
 #nameprefix "Putrid"
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
@@ -10,6 +11,7 @@
 #req deathdisease <= 0
 #req secondshape == -1
 #set deathdisease 10
+#set diseaseres 100
 #nameprefix "Putrid"
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a large putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
 #end

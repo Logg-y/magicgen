@@ -7,7 +7,7 @@ from spellstructures.utils import ParseError
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",
                         "fatiguecostpereffect", "anysummon", "offensiveeffect"]
-secondary_params_str = ["nextspell", "unitmod"]
+secondary_params_str = ["nextspell", "unitmod", "details"]
 secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"]
 
 

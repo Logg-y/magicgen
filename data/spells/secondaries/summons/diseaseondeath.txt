@@ -11,6 +11,7 @@
 
 #unitmod "Summon Disease on Death"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a putrid cloud of disease when killed."
+#details "When the creatures die, they emit a burst of disease over 5 squares. Those that fail a magic resistance check in the area of effect become diseased."
 
 #end
 
@@ -28,5 +29,6 @@
 
 #unitmod "Summon Large Disease on Death"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a large $putrid$ cloud of disease when killed."
+#details "When the creatures die, they emit a burst of disease over 10 squares. Those that fail a magic resistance check in the area of effect become diseased."
 
 #end

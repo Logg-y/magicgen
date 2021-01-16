@@ -92,6 +92,7 @@ Perhaps to illustrate how things work, it would be worth walking through a spell
 #schools 4
 #end
 ```
+
 ## Scaling with research levels
 
 As mentioned above, power scaling is nonlinear. The total scaling value which is then added to the defined base values, is given by:
@@ -135,6 +136,8 @@ Next, the fatigue cost is modified by:
 ```
 
 Which is responsible for making large scaling values of stuff more expensive.
+
+For combat spells only, this is then reduced to 100x the path level of the spell (to make it castable at the level mentioned). For spells with an increased number of effects, the number of effects is reduced proportionally - this stops very expensive modifier summoning spells from desiring >10 gems a cast and being reduced to 2 due to the path level. 
 
 It is then rounded down to various round values to make some nicer looking numbers on the eyes. Specifically this rounds to a multiple of 100 if the spell is over 100 fatigue, or a multiple of 5 if under.
 
@@ -410,6 +413,7 @@ These function the same as the modifiers.
 \#skipchance
 \#spelltype
 \#descr
+\#details
 \#descrcond
 \#descrcond2
 \#req
