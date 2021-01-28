@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action scales turmoil"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+#req path1 != 128
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Turmoil"
+#noun "Chaos"
+#verb "Chaotic"
+#verb "Tumultuous"
+
+#moduledescr "The populace of affected provinces becomes filled with chaos and turmoil."
+#moduledetails "Increases the turmoil scale of the province by 1."
+
+
+#end
+
+#incscale 0
+#msg "Offensive global add turmoil"
+#notext
+#nolog

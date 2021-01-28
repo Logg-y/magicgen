@@ -16,7 +16,7 @@
 
 #neweffect "Acid Evo Projectile"
 #effect 2
-#damage 2014
+#damage 2009
 -- firedmg, AP
 #spec 2199023255616
 -- evo
@@ -50,10 +50,10 @@
 
 #neweffect "Acid Evo Instant"
 #effect 2
-#damage 2010
+#damage 2006
 #spec 2199023255616
-#aoe 1003
-#power 4
+#aoe 1000
+#power 2
 #precision 3
 #range 30
 #pathlevel 2
@@ -73,7 +73,104 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 8
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+
+#neweffect "Acid Evo Instant 25pc"
+#effect 2
+#damage 1002
+#spec 2199023255616
+#aoe 665
+#power 7
+#maxpower 7
+#skipchance 50
+#precision 3
+#range 30
+#pathlevel 6
+#fatiguecost 200
+#explspr 10180
+#sound 16
+#nextspell "Acid Rust"
+#paths 5
+#secondarypaths 5
+#secondarypathchance 100
+
+#name 1 "Acid Rain"
+#name 4 "Acid Rain"
+
+#descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Acid Evo Instant 50pc"
+#effect 2
+#damage 1002
+#spec 2199023255616
+#aoe 663
+#power 8
+#maxpower 8
+#skipchance 50
+#precision 3
+#range 30
+#pathlevel 6
+#fatiguecost 300
+#explspr 10180
+#sound 16
+#nextspell "Acid Rust"
+#paths 5
+#secondarypaths 5
+#secondarypathchance 100
+
+#name 1 "Acid Rain"
+#name 4 "Acid Rain"
+
+#descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Acid Evo Instant 100pc"
+#effect 2
+#damage 1002
+#spec 2199023255616
+#aoe 666
+#power 10
+#maxpower 10
+#skipchance 50
+#precision 3
+#range 30
+#pathlevel 7
+#fatiguecost 400
+#explspr 10180
+#sound 16
+#nextspell "Acid Rust"
+#paths 5
+#secondarypaths 5
+#secondarypathchance 100
+
+#name 1 "Acid Rain"
+#name 4 "Acid Rain"
+
+#descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
 -- #scalecost 0.3
 #schools 4
 #end

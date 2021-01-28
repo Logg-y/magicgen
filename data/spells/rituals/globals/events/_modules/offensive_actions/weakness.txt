@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action weakness"
+#minpowerlevel -2
+#maxpowerlevel -2
+
+#req path1 != 1
+#req path1 != 16
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Atrophy"
+#verb "Weakening"
+
+#moduledescr "SUBJECT may be affected by malign magic and become weakened."
+#moduledetails "Affected commanders gain the weakness affliction."
+
+
+#end
+
+#req_targgod 0
+#gainaff 1048576	
+#msg "One of your commanders was affected by foul magic and became weakened."
+#nolog

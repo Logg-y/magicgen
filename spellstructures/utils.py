@@ -8,6 +8,8 @@ secondaries = {}
 unitmods = {}
 weaponmods = {}
 eventsets = {}
+# For storing which eventsets are in each module group
+eventmodulegroups = {}
 
 spellnames = []
 spellnamesbyeffect = {}

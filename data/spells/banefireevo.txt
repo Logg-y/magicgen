@@ -64,6 +64,7 @@
 #paths 33
 #secondarypaths 33
 #secondarypathchance 100
+#scalefatiguemult 4
 
 #name 32 "Banefire"
 #name 1 "Banefire"

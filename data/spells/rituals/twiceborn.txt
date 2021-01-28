@@ -1,7 +1,7 @@
 #neweffect "Twiceborn"
 #copyspell "Twiceborn"
 #effect 10023
-#damage 1
+#damage 4194304
 #spec 814219264
 #power 4
 #maxpower 4

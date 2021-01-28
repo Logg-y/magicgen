@@ -32,7 +32,7 @@ class Spell(object):
         self.nextspell = ""
         self.details = None
         self.name = "Unnamed"
-        self.descr = "This spelleffect and path combination was given no descr!"
+        self.descr = ""
         self.flightspr = None
         self.explspr = None
         self.sound = None
@@ -260,6 +260,10 @@ class SpellEffect(object):
             if random.random() < 0.75:
                 print(f"Failed as 75% to have less blood combat spells")
                 return None
+            # Even less likely if they have other primary paths
+            if self.paths != 128 and random.random() < 0.5:
+                print(f"Failed as 50% to fail other path combat spells")
+                return None
 
         if self.unique and self.generated > 0:
             print(f"Failed to generate {self.name} at {researchlevel}: effect is unique and already exists")
@@ -403,6 +407,8 @@ class SpellEffect(object):
         s.onlygeosrc = self.onlygeosrc
         s.aicastmod = self.aicastmod
         s.parenteffect = self
+        if s.details is None:
+            s.details = ""
         if self.isnextspell:
             s.isnextspell = True
 
@@ -517,16 +523,10 @@ class SpellEffect(object):
                         tmp = s.aoe % 1000
                         if tmp >= 120:
                             s.aoe = 666
-                            if s.details is None: s.details = ""
-                            s.details += "\nThis spell strikes 100% of the battlefield."
                         elif tmp >= 100:
                             s.aoe = 663
-                            if s.details is None: s.details = ""
-                            s.details += "\nThis spell strikes 50% of the battlefield."
                         elif tmp >= 80:
                             s.aoe = 665
-                            if s.details is None: s.details = ""
-                            s.details += "\nThis spell strikes 25% of the battlefield."
 
             if self.spelltype & SpellTypes.POWER_SCALES_DAMAGE:
                 print(f"scale damage by {scaleamt}")
@@ -545,6 +545,8 @@ class SpellEffect(object):
             if self.eventset is not None:
                 realeventset = utils.eventsets[self.eventset]
                 eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
+                if eventsetcmds is None:
+                    return None
                 s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
 
             scaleamt2 = scaleamt * self.scalecost
@@ -843,6 +845,17 @@ class SpellEffect(object):
 
         s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
 
+        if s.aoe == 666:
+            s.details += " This spell strikes 100% of the battlefield."
+        elif s.aoe == 663:
+            s.details += " This spell strikes 50% of the battlefield."
+        elif s.aoe == 665:
+            s.details += " This spell strikes 25% of the battlefield."
+        elif s.aoe == 664:
+            s.details += " This spell strikes 10% of the battlefield."
+        elif s.aoe == 662:
+            s.details += " This spell strikes 5% of the battlefield."
+
         # take shallow copy to avoid doing bad things to later spells using the same self
         names = self.names.get(s.path1, [])[:]
 
@@ -969,6 +982,10 @@ class SpellEffect(object):
         # Fill in placeholders in modcmdsbefore
         # This is event stuff
         s.modcmdsbefore = s.modcmdsbefore.replace("SPELLNAME", s.name)
-
+        # the game crashes out if any details are empty strings
+        s.details = s.details.strip()
+        if s.details == "":
+            s.details = None
+        print(s.details)
 
         return s

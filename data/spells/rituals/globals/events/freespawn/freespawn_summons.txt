@@ -131,7 +131,7 @@
 #msg "freespawn summons"
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 10
+#req_domchance 5
 #req_0popok
 #req_land 1
 #nation -2

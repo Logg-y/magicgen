@@ -1,0 +1,64 @@
+#neweventset "Offensive Global cond preacher"
+#minpowerlevel -5
+#maxpowerlevel 0
+
+#scaleparam "req_rare" 5
+
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Missionaries"
+#noun "Preachers"
+#verb "Holy"
+#verb "Religious"
+
+#textrepl "SUBJECT" "Preachers"
+
+#moduledescr "This enchantment affects all those spreading the word of the Pretenders."
+#moduledetails "Every turn, each province makes five checks for a preaching commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 6
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 6
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 6
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 6
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 6

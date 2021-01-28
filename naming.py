@@ -54,6 +54,9 @@ pluraliser = Pluraliser()
 
 
 def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell=None, isspell=False):
+    # This is needed for the variable descriptions in modular globals
+    if len(string) == 0:
+        return string
     aoe = aoe % 1000
     parsedname = string
     # print(f"mode is plural: {plural}")

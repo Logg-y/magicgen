@@ -31,7 +31,7 @@
 
 #neweffect "Shock Evo Small"
 #effect 2
-#damage 3008
+#damage 2008
 #spec 8407168
 #aoe 0
 #power 2
@@ -45,7 +45,7 @@
 #explspr 10219
 #sound 27
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #paths 146
 #secondarypaths 2
@@ -53,8 +53,8 @@
 #name 2 "Lightning %bolt%"
 #name 16 "Lightning %bolt%"
 #name 128 "Lightning %bolt%"
-#descr 2 "ARTICLE $bolt$ of lightning $is$ called from the $sky$ upon some enemies."
-#descr 16 "ARTICLE $bolt$ of lightning $is$ called from the $sky$ upon some enemies."
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE $charge$ down from the $sky$ upon his enemies."
 
 #maxpower 6
@@ -114,7 +114,7 @@
 
 #paths 146
 #secondarypaths 2
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 2 "Thunder Strike"
 #name 16 "Thunder Strike"
@@ -210,12 +210,12 @@
 #damage 2001
 #spec 8390784
 #aoe 1
-#power 5
+#power 6
 #maxpower 15
 #precision 1
 #range 50
-#pathlevel 2
-#fatiguecost 20
+#pathlevel 3
+#fatiguecost 30
 #sound 114
 #nreff 1
 
@@ -232,7 +232,7 @@
 
 -- evo, scale numbounces
 #spelltype 130
-#scalerate 3
+#scalerate 3.6
 -- #scalecost 1.4
 #schools 4
 #end
@@ -269,3 +269,373 @@
 -- #scalecost 1.4
 #schools 4
 #end
+
+
+
+#neweffect "Shock Evo Small 5pc"
+#effect 2
+#damage 1002
+#spec 8407168
+#aoe 662
+#power 7
+#maxpower 7
+#skipchance 50
+#nreff 1
+#precision 1
+#range 50
+#pathlevel 5
+#fatiguecost 200
+-- little strike
+#explspr 10219
+#sound 27
+
+#pathskipchance 16 95
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
+
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+#neweffect "Shock Evo Small 10pc"
+#effect 2
+#damage 1002
+#spec 8407168
+#aoe 664
+#power 8
+#maxpower 8
+#skipchance 20
+#nreff 1
+#precision 1
+#range 50
+#pathlevel 5
+#fatiguecost 300
+-- little strike
+#explspr 10219
+#sound 27
+
+#pathskipchance 16 95
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
+
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+#neweffect "Shock Evo Small 25pc"
+#effect 2
+#damage 1002
+#spec 8407168
+#aoe 665
+#power 9
+#maxpower 9
+#skipchance 20
+#nreff 1
+#precision 1
+#range 50
+#pathlevel 6
+#fatiguecost 400
+-- little strike
+#explspr 10219
+#sound 27
+
+#pathskipchance 16 95
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
+
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+#neweffect "Shock Evo Small 50pc"
+#effect 2
+#damage 1002
+#spec 8407168
+#aoe 663
+#power 10
+#maxpower 10
+#skipchance 20
+#nreff 1
+#precision 1
+#range 50
+#pathlevel 6
+#fatiguecost 500
+-- little strike
+#explspr 10219
+#sound 27
+
+#pathskipchance 16 95
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
+
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+#neweffect "Shock Evo Small 100pc"
+#effect 2
+#damage 1002
+#spec 8407168
+#aoe 666
+#power 1
+#maxpower 13
+#skipchance 20
+#nreff 1
+#precision 1
+#range 50
+#pathlevel 7
+#fatiguecost 600
+-- little strike
+#explspr 10219
+#sound 27
+
+#pathskipchance 16 95
+
+#paths 146
+#secondarypaths 2
+
+#name 2 "Lightning %bolt%"
+#name 16 "Lightning %bolt%"
+#name 128 "Lightning %bolt%"
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
+
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+
+
+
+-- #neweffect "Shock Evo Chain 5pc"
+-- #effect 134
+-- #damage 2
+-- #spec 8390784
+-- #aoe 662
+-- #power 9
+-- #maxpower 9
+-- #precision 1
+-- #range 50
+-- #pathlevel 5
+-- #fatiguecost 200
+-- #sound 114
+-- #nreff 1
+-- 
+-- #skipchance 50
+-- 
+-- #maxbounces 3
+-- 
+-- #paths 138
+-- #secondarypaths 2
+-- #pathskipchance 8 95
+-- 
+-- #name 2 "Chain Lightning"
+-- #name 8	"Charge Ground"
+-- #name 128 "Chain Lightning"
+-- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- 
+-- -- evo, scale aoe
+-- #spelltype 34
+-- #scalerate 0.6
+-- -- #scalecost 1.4
+-- #schools 4
+-- #end
+-- 
+-- #neweffect "Shock Evo Chain 10pc"
+-- #effect 134
+-- #damage 2
+-- #spec 8390784
+-- #aoe 664
+-- #power 11
+-- #maxpower 11
+-- #precision 1
+-- #range 50
+-- #pathlevel 5
+-- #fatiguecost 300
+-- #sound 114
+-- #nreff 1
+-- 
+-- #skipchance 50
+-- 
+-- #maxbounces 3
+-- 
+-- #paths 138
+-- #secondarypaths 2
+-- #pathskipchance 8 95
+-- 
+-- #name 2 "Chain Lightning"
+-- #name 8	"Charge Ground"
+-- #name 128 "Chain Lightning"
+-- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- 
+-- -- evo, scale aoe
+-- #spelltype 34
+-- #scalerate 0.6
+-- -- #scalecost 1.4
+-- #schools 4
+-- #end
+-- 
+-- #neweffect "Shock Evo Chain 25pc"
+-- #effect 134
+-- #damage 2
+-- #spec 8390784
+-- #aoe 665
+-- #power 13
+-- #maxpower 13
+-- #precision 1
+-- #range 50
+-- #pathlevel 6
+-- #fatiguecost 400
+-- #sound 114
+-- #nreff 1
+-- 
+-- #skipchance 50
+-- 
+-- #maxbounces 3
+-- 
+-- #paths 138
+-- #secondarypaths 2
+-- #pathskipchance 8 95
+-- 
+-- #name 2 "Chain Lightning"
+-- #name 8	"Charge Ground"
+-- #name 128 "Chain Lightning"
+-- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- 
+-- -- evo, scale aoe
+-- #spelltype 34
+-- #scalerate 0.6
+-- -- #scalecost 1.4
+-- #schools 4
+-- #end
+-- 
+-- #neweffect "Shock Evo Chain 50pc"
+-- #effect 134
+-- #damage 2
+-- #spec 8390784
+-- #aoe 663
+-- #power 15
+-- #maxpower 15
+-- #precision 1
+-- #range 50
+-- #pathlevel 6
+-- #fatiguecost 600
+-- #sound 114
+-- #nreff 1
+-- 
+-- #skipchance 50
+-- 
+-- #maxbounces 3
+-- 
+-- #paths 138
+-- #secondarypaths 2
+-- #pathskipchance 8 95
+-- 
+-- #name 2 "Chain Lightning"
+-- #name 8	"Charge Ground"
+-- #name 128 "Chain Lightning"
+-- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- 
+-- -- evo, scale aoe
+-- #spelltype 34
+-- #scalerate 0.6
+-- -- #scalecost 1.4
+-- #schools 4
+-- #end
+-- 
+-- #neweffect "Shock Evo Chain 100pc"
+-- #effect 134
+-- #damage 2
+-- #spec 8390784
+-- #aoe 666
+-- #power 18
+-- #maxpower 18
+-- #precision 1
+-- #range 50
+-- #pathlevel 7
+-- #fatiguecost 700
+-- #sound 114
+-- #nreff 1
+-- 
+-- #skipchance 50
+-- 
+-- #maxbounces 3
+-- 
+-- #paths 138
+-- #secondarypaths 2
+-- #pathskipchance 8 95
+-- 
+-- #name 2 "Chain Lightning"
+-- #name 8	"Charge Ground"
+-- #name 128 "Chain Lightning"
+-- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
+-- 
+-- -- evo, scale aoe
+-- #spelltype 34
+-- #scalerate 0.6
+-- -- #scalecost 1.4
+-- #schools 4
+-- #end

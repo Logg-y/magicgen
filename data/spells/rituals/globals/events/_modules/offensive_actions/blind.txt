@@ -1,0 +1,25 @@
+#neweventset "Offensive Global action blind"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 != 16
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Blindness"
+#verb "Blinding"
+
+#moduledescr "SUBJECT may be affected by malign magic and become blinded."
+#moduledetails "Affected commanders become blinded."
+
+
+#end
+
+#req_targgod 0
+#gainaff 4096
+#msg "One of your commanders was affected by foul magic and became blind."
+#nolog

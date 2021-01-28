@@ -29,6 +29,7 @@
 #namecond aoe > 600 16 "Vortex of Returning"
 
 #descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death."
+#details "The chance of being lost in the void is 7%."
 
 #end
 
@@ -58,6 +59,6 @@
 #name 16 "Forced Returning"
 
 #descr 16 "The caster attempts to force SUBJECT into a rift in space that takes them back to their capital. The travel is instantaneous, but there is a chance that individuals may become lost in the Void. This spell is certain death if the capital of the %victim% is not under their control."
-#details "Each victim is allowed a difficult MR check to avoid the effect."
+#details "Each victim is allowed a difficult MR check to avoid the effect. The chance of being lost in the void is 7%."
 
 #end

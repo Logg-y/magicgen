@@ -26,3 +26,35 @@
 	-- units
 	-- commanders
 	
+-- 5% 5+ caps at min + 5
+-- Flat chance per province, always checked (affects commanders at random) 3 5x 5% 5+
+-- 		Prevented by any mage of the same path as the spell (affects commanders at random) 0 5x 5% 5+
+-- 		Any commander belonging to the province owner is sneaking/hiding in the province -1 5x 5% 5+
+-- 		Any commander is patrolling -1 5x 5% 5+
+-- 		Any commander is researching 1 3x 5% 5+
+-- 		Any commander is preaching -3 5x 5% 5+
+-- 		Any commander is site searching 0 3x 5% 5+
+-- 		Any commander is blood hunting 0 3x 5% 5+
+-- 		Any commander is calling god -2 5x 5% 5+
+-- 		Any commander is constructing a fort -1 1x 5% 5+
+-- 	Possible effects (note that gods are not valid targets for any effect that affects a commander):
+-- 		Scale alterations 2
+-- 		Add unrest 0+ (10 unr, 5 per extra)
+-- 		The commander is the victim of an assassination attempt 1+ unit tier
+-- 		The commander becomes diseased 3
+-- 		The commander becomes cursed 0
+-- 		The commander becomes blinded 1
+-- 		The commander gains a limp 0
+-- 		The commander loses an eye 0
+-- 		The commander suffers permanent weakness 1
+-- 		The commander gains battle fright 1
+-- 		The commander gains a chest wound 1 
+-- 		The commander becomes crippled 1
+-- 		The commander gains a never healing wound 0
+-- 		The commander becomes mute 3
+-- 		The commander becomes shrunken 1
+-- 		The commander gains a horror mark 0
+-- 		The commander loses an arm 2
+-- 		The commander becomes banished to another plane 5
+-- 		The commander becomes transformed into a bad physical shape 2
+-- 		The commander suffers some amount of AN poison damage 0+ (5 dmg + 1 per extra)

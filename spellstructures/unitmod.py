@@ -183,6 +183,12 @@ class UnitMod(object):
             for modcmd, val in additionals_firstshape.items():
                 out += f"{modcmd} {val}\n"
 
+        # Special case: Do nothing should firstshape to the original unit
+        # This makes montags built with Do Nothing-modified units quickly transform to their normal version
+        # which means double click correctly selects all of them amongst other things
+        if self.name == "Do Nothing":
+            out += f"#firstshape {u.id}\n"
+
         out += "#end\n\n"
 
         out += secondshapeextra

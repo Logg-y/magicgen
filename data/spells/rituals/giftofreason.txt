@@ -21,6 +21,7 @@
 #descr 32 "With the aid of summoned spirits, the caster quickly teaches a living subject various aspects of strategy and command that enables him to lead troops up to his innate ability. If the subject had innate magical powers, those too will become fully realised upon receipt of this spell."
 #name 64 "Mental Spark"
 #descr 64 "With a magical touch, the caster grants a living subject a keen mind. This allows him to quickly learn the necessary aspects of strategy and command to allow him to lead troops up to his innate ability. If the subject had innate magical powers, those too will become fully realised upon receipt of this spell."
+#details "This spell does not function on demons, undead, mindless, or inanimate units."
 
 #spelltype 4
 #end

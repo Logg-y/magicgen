@@ -1,0 +1,47 @@
+#neweventset "Offensive Global cond researcher"
+#minpowerlevel 1
+#maxpowerlevel 6
+
+#scaleparam "req_rare" 5
+
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Academia"
+#noun "Learning"
+#verb "Studious"
+#verb "Scholarly"
+#verb "Intellectual"
+
+#textrepl "SUBJECT" "Researchers"
+
+#moduledescr "This enchantment affects all those undertaking research in the pursuit of magical knowledge."
+#moduledetails "Every turn, each province makes three checks for a researching commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 4
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 4
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 4

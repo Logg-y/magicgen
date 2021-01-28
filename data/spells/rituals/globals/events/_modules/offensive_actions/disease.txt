@@ -1,0 +1,25 @@
+#neweventset "Offensive Global action disease"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Pestilence"
+#verb "Pestilent"
+
+#moduledescr "SUBJECT may be affected by malign magic and become diseased."
+#moduledetails "Affected commanders become diseased."
+
+
+#end
+
+#req_targgod 0
+#gainaff 1
+#msg "One of your commanders was affected by foul magic and became diseased."
+#nolog

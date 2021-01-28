@@ -1,0 +1,44 @@
+#neweventset "Offensive Global cond bloodhunter"
+#minpowerlevel -3
+#maxpowerlevel 2
+
+#scaleparam "req_rare" 5
+
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Bloodseekers"
+#verb "Bloodseeking"
+
+#textrepl "SUBJECT" "Blood hunters"
+
+#moduledescr "This enchantment affects all those searching for appropriate blood sacrifices."
+#moduledetails "Every turn, each province makes three checks for a blood hunting commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 8
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 8
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 8

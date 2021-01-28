@@ -12,7 +12,7 @@
 
 #aoe 1
 #power 7
-#maxpower 7
+#maxpower 8
 #pathlevel 4
 #explspr 10211
 #sound 22
@@ -44,8 +44,8 @@
 -- #scalecost 1.6
 
 #aoe 1
-#power 8
-#maxpower 8
+#power 9
+#maxpower 10
 #pathlevel 5
 #explspr 10211
 #sound 22
@@ -79,8 +79,8 @@
 
 -- even 5% of field may be too strong
 #aoe 662
-#power 9
-#maxpower 9
+#power 11
+#maxpower 11
 #pathlevel 6
 #explspr 10211
 #sound 22
@@ -91,7 +91,7 @@
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. This spell strikes 10% of the battlefield."
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
 
 #name 32 "Contagious Spread"
 

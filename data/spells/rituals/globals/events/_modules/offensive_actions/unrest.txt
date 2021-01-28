@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action unrest"
+#minpowerlevel 0
+#maxpowerlevel 6
+
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Unrest"
+#verb "Enraging"
+
+#scaleparam "unrest" 3
+#modulebasescale 5
+
+#moduledescr "The populace of affected provinces becomes enraged and disorderly."
+#moduledetails "Increases the unrest of the province by SCALEAMT."
+
+
+#end
+
+#unrest 5
+#msg "Offensive global add unrest"
+#notext
+#nolog

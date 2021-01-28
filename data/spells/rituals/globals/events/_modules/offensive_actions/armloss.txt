@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action armloss"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Disasters"
+#verb "Disastrous"
+#verb "Catastrophic"
+
+#moduledescr "SUBJECT may lose arms in catastrophic accidents."
+#moduledetails "Affected commanders lose an arm."
+
+
+#end
+
+#req_targgod 0
+#gainaff 1073741824
+#msg "One of your commanders has lost an arm in a catastrophic accident."
+#nolog

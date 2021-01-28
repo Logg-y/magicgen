@@ -25,7 +25,7 @@
 
 #nreff 1
 #aoe 0
-#power 2
+#power 1
 #maxpower 8
 #pathlevel 1
 #flightspr 419

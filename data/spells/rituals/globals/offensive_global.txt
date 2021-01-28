@@ -1,0 +1,96 @@
+#neweffect "Offensive Global"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 50
+#paths 255
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Offensive Global"
+#alwaysgenerate 1
+
+#name 32 "Some kind of offensive global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 600
+#end
+
+#neweffect "Offensive Global2"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 50
+#paths 255
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Offensive Global"
+#alwaysgenerate 1
+
+#name 32 "Some kind of offensive global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 600
+#end
+
+
+#neweffect "Offensive Global3"
+#effect 10081
+#damage 17
+#spec 0
+#power 5
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#schools 50
+#paths 255
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Offensive Global"
+#alwaysgenerate 1
+
+#name 32 "Some kind of offensive global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 600
+#end

@@ -8,6 +8,9 @@ from . import montagbuilder
 
 UNITMOD_TO_SECONDARY_CACHE = {}
 
+def _getscaleamt(L, rate):
+    return rate * ((L*(L + 1)) / 2)
+
 class EventSet(object):
     def __init__(self):
         self.selectunitmod = None
@@ -22,29 +25,244 @@ class EventSet(object):
         self.desiredmontagsize = -1
         self.secondaryeffectchance = None
 
-
-
         self.name = ""
 
         self.requiredcodes = 0
         self.scaleparams = {}
+        self.modules = {}
+        self.modulegroup = None
+        self.incompatibilities = []
 
         self.rawdata = ""
 
         # For passing the unit name back...
         self.lastunitname = None
 
-    def formatdata(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl):
-        "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
-        output = copy.copy(self.rawdata)
+        # The below is for module reqs ONLY
+        self.reqs = []
+        self.minpowerlevel = None
+        self.maxpowerlevel = None
+        self.nouns = []
+        self.verbs = []
+        self.textrepls = {}
+        self.moduledescr = ""
+        self.moduledetails = ""
+        self.modulebasescale = None
+        self.makedummymonster = 1
+        self.moduleskipchance = 0
 
+        self.moduletailingcode = ""
+
+
+    def moduleCompatibility(self, current, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modules,
+                           selection):
+        islast = False
+        if len(selection) + 1 == len(self.modules):
+            islast = True
+
+        for req in current.reqs:
+            if not req.test(spell):
+                print(f"Module {current.name} is not compatible: missing req")
+                return False
+
+        for realmod in selection:
+            if current.name in realmod.incompatibilities:
+                print(f"Module {current.name} is not compatible: specific incompatibilities")
+                return False
+
+        if islast:
+            totalmin = 0
+            totalmax = 0
+            for realmod in selection:
+                totalmin += realmod.minpowerlevel
+                totalmax += realmod.maxpowerlevel
+            totalmin += current.minpowerlevel
+            totalmax += current.maxpowerlevel
+
+            if totalmin <= actualpowerlvl <= totalmax:
+                pass
+            else:
+                print(f"Module {current.name} is not compatible: power level out of range")
+                return False
+
+        print(f"Module {current.name} is compatible!")
+        return True
+
+
+    def _pickmodules(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modules, selection=None):
+        "Recursive module picker."
+        if selection is None:
+            selection = []
+        if len(modules) == 0:
+            return []
+        # shallow copy
+        considerations = utils.eventmodulegroups[modules[0]][:]
+        remainingmodules = modules[1:]
+        random.shuffle(considerations)
+        while 1:
+            if len(considerations) == 0:
+                print(f"No more considerations for {self.name} on effect {spelleffect.name}")
+                return None
+            current = considerations.pop(0)
+            if random.random() * 100 < current.moduleskipchance:
+                if len(considerations) > 0:
+                    considerations.append(current)
+                    continue
+
+            if self.moduleCompatibility(current, spelleffect, spell, scaleamt,
+                                        secondaryeffect, actualpowerlvl, modules, selection):
+                if len(remainingmodules) == 0:
+                    return [current]
+                else:
+                    proposedselection = selection[:]
+                    proposedselection.append(current)
+                    print(f"Pick {current.name}, begin recursive with {[x.name for x in proposedselection]}")
+                    remainder = self._pickmodules(spelleffect, spell, scaleamt,
+                                             secondaryeffect, actualpowerlvl, remainingmodules, proposedselection)
+                    if remainder is not None:
+                        return [current] + remainder
+
+
+    def _assignPowerLevels(self, modulepicks, modulesbypowerlevel, powerlevelsleft, picksleft=None):
+        # Start with smallest deviations, as there is less chance to backtrack on a choice
+
+
+        powerlevels = list(modulesbypowerlevel.keys())
+        powerlevels.sort()
+
+        if picksleft == 0:
+            return {}
+
+        # Find the module to assign this call
+        done = False
+        for powerlevel in powerlevels:
+            for module in modulesbypowerlevel[powerlevel]:
+                if module in modulepicks:
+                    done = True
+                    break
+
+            if done:
+                break
+
+        # Sanity
+        if not done:
+            raise ValueError(f"Eventset {self.name} can't find a module in the list! {modulepicks}")
+        print(f"There are {powerlevelsleft} power levels left")
+        powerlevelrange = list(range(0, powerlevel+1))
+        random.shuffle(powerlevelrange)
+
+        nextassignment = modulepicks[:]
+        nextassignment.remove(module)
+
+
+        while 1:
+            if len(powerlevelrange) == 0:
+                raise ValueError(f"No power level to assign to {module.name} for {self.name}?")
+            attempt = powerlevelrange.pop(0)
+            attempt += module.minpowerlevel
+            if picksleft == 1:
+                attempt = powerlevelsleft
+                print(f"This is the last module, attempt to assign all {attempt} left")
+            print(f"Attempt to assign {attempt} power levels")
+            powerlevelsleft -= attempt
+
+            ret = self._assignPowerLevels(nextassignment, modulesbypowerlevel, powerlevelsleft, picksleft - 1)
+            if ret is not None:
+                ret[module.name] = attempt
+                return ret
+            powerlevelsleft += attempt
+
+            if picksleft == 1:
+                return None
+
+        return None
+
+
+
+    def formatdata(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, enchantid=None):
+        "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
+        print(f"Begin formatdata for {self.name}")
+        output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
+                 + copy.copy(self.rawdata)
+
+        # Get an enchant ID first, as any submodules need to know it
         # These are various local and global enchantment effect IDs
         if spelleffect.effect in [10081, 10082, 10083, 10084, 10085, 10086]:
             # only take an enchant id if the spell actually wants one
             if "ENCHANTID" in output:
-                output = output.replace("ENCHANTID", str(utils.ENCHANTMENT_ID))
-                spell.damage = copy.copy(utils.ENCHANTMENT_ID)
-                utils.ENCHANTMENT_ID += 1
+                if enchantid is None:
+                    enchantid = copy.copy(utils.ENCHANTMENT_ID)
+                    utils.ENCHANTMENT_ID += 1
+                output = output.replace("ENCHANTID", str(enchantid))
+                spell.damage = copy.copy(enchantid)
+
+        # Work out the modules we are going to use, if any, and modify actualpowerlvl accordingly
+
+        moduledata = {}
+        realmodules = []
+        replacements = []
+
+        for replacement, modulename in self.modules.items():
+            realmodule = utils.eventmodulegroups[modulename]
+            realmodules.append(realmodule)
+            replacements.append(replacement)
+
+        modulelist = list(self.modules.values())
+
+        modulepicks = self._pickmodules(spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modulelist)
+        if modulepicks is None:
+            return None
+        print(f"Module picks are {modulepicks}")
+
+        # Decide on the power levels for each module
+        minpowerlevel = 0
+        maxpowerlevel = 0
+        # The picking process makes sure that actualpowerlvl is somewhere between the min and max
+        modulesbypowerlevel = {}
+        for module in modulepicks:
+            minpowerlevel += module.minpowerlevel
+            maxpowerlevel += module.maxpowerlevel
+            dev = module.maxpowerlevel - module.minpowerlevel
+            if dev not in modulesbypowerlevel:
+                modulesbypowerlevel[dev] = []
+            modulesbypowerlevel[dev].append(module)
+
+        powerlevelsleft = actualpowerlvl
+
+        # Recursively find a solution that all modules accept
+        # this is quite unoptimised and will get increasingly bad as you add more modules
+        # due to testing the same thing in different orders
+        powerlevelassignments = self._assignPowerLevels(modulepicks, modulesbypowerlevel, powerlevelsleft, len(modulelist))
+        print(f"Power assignments picks are {powerlevelassignments}")
+
+        tailcode = ""
+
+        for i, module in enumerate(modulepicks):
+            replacement = replacements[i]
+            powerlevel = powerlevelassignments[module.name]
+            moduledata[replacement] = module.formatdata(spelleffect, spell,
+                                                        _getscaleamt(powerlevel-module.minpowerlevel, spelleffect.scalerate),
+                                                        secondaryeffect, powerlevel, enchantid)
+            if moduledata[replacement] is None:
+                print(f"ERROR: formatdata for module {module.name} failed")
+                return None
+            tailcode += module.moduletailingcode + "\n"
+
+
+        print("enter repl loop")
+        while 1:
+            replmade = False
+            for replacement, data in moduledata.items():
+                for replacement2, data2 in moduledata.items():
+                    if replacement2 in data:
+                        moduledata[replacement] = data.replace(replacement2, data2)
+                        replmade = True
+                        break
+                if replmade:
+                    break
+            if not replmade:
+                break
+        print("leave repl loop")
 
         for codeindex in range(0, self.requiredcodes):
             # Replacement of codes should be done backwards
@@ -66,16 +284,16 @@ class EventSet(object):
                     # I don't THINK there are any legal float params for events
                     # but could be mistaken here...
                     newparamval = int((scaleweight * scaleamt) + oldparamval)
-                    print(f"Scaled event param {paramname} with weight {scaleweight} by {scaleweight*scaleamt}")
-                    currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line, count=1)
+                    print(f"Scaled event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
+                    currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line,
+                                             count=1)
             output = "\n".join(currlist)
 
-
-        numtogenerate = max(1, math.floor(self.desiredmontagsize*utils.MONTAG_SCALE))
+        numtogenerate = max(1, math.floor(self.desiredmontagsize * utils.MONTAG_SCALE))
 
         if numtogenerate > 1:
             montag = montagbuilder.MontagBuilder()
-            montag.makedummymonster = True
+            montag.makedummymonster = self.makedummymonster
 
         for n in range(0, numtogenerate):
 
@@ -93,7 +311,7 @@ class EventSet(object):
                 # start by building a pool of spelleffects that we could use
 
                 for effname, effect in utils.spelleffects.items():
-                    if effect.effect == 10001: #ritual summon
+                    if effect.effect == 10001:  # ritual summon
                         unitid = effect.damage
                         unitobj = unit.get(unitid)
 
@@ -119,14 +337,19 @@ class EventSet(object):
 
             print(f"Spell paths for this generation are {spell.path1} and {spell.path2}")
 
+
             while 1:
                 if len(effectpool) > 0:
                     chosensummoneffect = effectpool.pop(0)
                     print(f"Consider effect {chosensummoneffect}, {len(effectpool)} remain after this ")
                     unittouse = chosensummoneffect.damage
+                    if unittouse < 0:
+                        print(f"Discard effect {chosensummoneffect}: it makes montag {unittouse}")
+                        continue
 
                 elif unittouse is None:
-                    raise Exception(f"EventSet {self.name} called by {spelleffect.name} found no valid unit summon")
+                    # raise Exception(f"EventSet {self.name} called by {spelleffect.name} found no valid unit summon")
+                    print(f"ERROR: {self.name} called by {spelleffect.name} found not valid unit summon")
                     return None
 
                 if len(self.allowedunitmods) > 0 and unittouse is not None:
@@ -157,20 +380,28 @@ class EventSet(object):
                                 # Find the parent secondary effect to test it for paths
                                 secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
 
+                                # Montags are only allowed do nothing
+                                if unittouse < 0 and secondary.name != "Do Nothing":
+                                    print(f"Block secondary {secondary.name}: summons montag {unittouse} "
+                                          f"so only Do Nothing allowed")
+                                    continue
+
                                 if self.restrictunitstospellpaths > 0:
                                     # Allow Do Nothing through!
-                                    print(f"Check secondary...")
                                     if secondary is not None and secondary.paths != 0:
-                                        print(f"secondary has paths {secondary.paths}")
-                                        if not (spell.path1 & secondary.paths) and not (spell.path2 & secondary.paths):
+                                        primarypathmatch = spell.path1 & secondary.paths
+                                        secondarypathmatch = spell.path2 & secondary.paths
+                                        if spell.path2 <= 0:
+                                            secondarypathmatch = False
+                                        if not primarypathmatch and not secondarypathmatch:
                                             print(f"Discarded secondary {secondary.name}: needs paths {spell.path1} or "
-                                                  f"{spell.path2}, {len(unitmodlist)} remain")
+                                                  f"{spell.path2} (allowed is {secondary.paths}), {len(unitmodlist)}"
+                                                  f" remain")
                                             continue
-
 
                                 # Enforce power restrictions
                                 if self.mincreaturepower > -1 and self.maxcreaturepower > -1:
-                                    finalcreaturepower = chosensummoneffect.power + secondary.power
+                                    finalcreaturepower = chosensummoneffect.power - secondary.power
                                     minpower = self.mincreaturepower + actualpowerlvl
                                     maxpower = self.maxcreaturepower + actualpowerlvl
                                     if finalcreaturepower > maxpower or finalcreaturepower < minpower:
@@ -194,6 +425,7 @@ class EventSet(object):
 
                             if bad:
                                 # There was no unitmod, start by finding another chassis
+                                unittouse = None
                                 continue
 
                     if numtogenerate == 1:
@@ -221,7 +453,7 @@ class EventSet(object):
                             chassiscostmod = chosensummoneffect.chassisvaluepercent * basecostper * (fatiguemult - 1.0)
                             costper = int(
                                 basecostper *
-                                    (chosensummoneffect.magicvaluepercent + chosensummoneffect.chassisvaluepercent)
+                                (chosensummoneffect.magicvaluepercent + chosensummoneffect.chassisvaluepercent)
                                 + magiccostmod + chassiscostmod)
                             costper += secondary.fatiguecostpereffect
                         elif secondary is None:
@@ -232,23 +464,77 @@ class EventSet(object):
 
                         basepower = chosensummoneffect.power
 
-
                         montag.add(unittouse, secondary, costper)
                         generateokay = True
-
 
                 if unittouse is not None and numtogenerate == 1:
                     output = output.replace("UNITID", str(unittouse))
                     output = f"-- EventSet {self.name} called by {spelleffect.name} generated with unitid {unittouse}\n\n"
 
-
                 if generateokay:
                     break
 
+        if self.modulegroup is not None:
+            print(f"Writing module description for {self.name}")
+            if self.modulebasescale is not None:
+                realscaleamt = self.modulebasescale
+                # bit of a dodge, assume that you only have one scale param
+                val = None
+                for key, value in self.scaleparams.items():
+                    if val is None:
+                        val = value
+                    if val != value and "SCALEAMT" in self.moduledetails:
+                        raise NotImplementedError(f"Module {self.name} has a SCALEAMT in its details and more than one "
+                                                  f"different parameter scale rate - unsupported operation")
+
+                if val is None:
+                    val = 1
+                realscaleamt += (val * scaleamt)
+                realscaleamt = int(realscaleamt)
+            else:
+                realscaleamt = f"[Missing modulebasescale for module {self.name}]"
+
+            spell.descr = spell.descr + " " + self.moduledescr
+            spell.details = spell.details + " " + self.moduledetails.replace("SCALEAMT", str(realscaleamt))
+        else:
+            # do module textrepl stuff
+            for module in modulepicks:
+                for symbol, replacement in module.textrepls.items():
+                    spell.descr = spell.descr.replace(symbol, replacement)
+
+            print(f"Attempt naming: number of modules picked = {len(modulepicks)}")
+            if len(modulepicks) > 0:
+                # Pick noun and verb name combo
+                # the usual shallow copy + pop stuff is probably okay
+                picks = modulepicks[:]
+                random.shuffle(picks)
+                try:
+                    noun = random.choice(picks.pop(0).nouns)
+                    print(f"Selected noun is {noun}")
+                    verb = random.choice(picks.pop(0).verbs)
+                    print(f"Selected verb is {verb}")
+                    # Write the name into the parent spelleffect
+                    # this is necessary so it goes through all the normal name logic that protects against
+                    spelleffect.names[spell.path1] = [f"{verb} {noun}"]
+                except IndexError:
+                    # random.choice on empty list
+                    print(f"One of the modules in {[x.name for x in modulepicks]} was missing a noun or verb,"
+                          f" skip name assignment")
+                    pass
+                # ONLY do this if modules were picked, other eventset spells set this normally
+                spelleffect.descriptions[spell.path1] = spell.descr
+
         if numtogenerate > 1:
             result = montag.process()
-            output += result.modcmds
-            output = output.replace("UNITID", str(result.dummymonsterid))
+            resultcmds = result.modcmds
+            if self.makedummymonster:
+                output = output.replace("UNITID", str(result.dummymonsterid))
+            else:
+                output = output.replace("UNITID", str(-1*result.montagid))
+            if self.modulegroup is None:
+                output += resultcmds
+            else:
+                self.moduletailingcode += resultcmds
             if result.numcreatures > 10:
                 for line in result.weightingstring.split("\n"):
                     output = output + "--" + line + "\n"
@@ -258,6 +544,20 @@ class EventSet(object):
             else:
                 spell.details += "\n" + result.weightingstring
 
+        # module replacements
+
+
+        while 1:
+            replmade = False
+            for replacement, data in moduledata.items():
+                if replacement in output:
+                    output = output.replace(replacement, data)
+                    replmade = True
+                    break
+            if not replmade:
+                break
+
+        output += tailcode
 
 
         return output

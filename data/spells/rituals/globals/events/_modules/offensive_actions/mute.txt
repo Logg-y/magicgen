@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action mute"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 8
+#req path1 != 4
+#req path1 != 16
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Silence"
+#verb "Silent"
+
+#moduledescr "SUBJECT may have their voices permanently damaged by malign magic, becoming mute."
+#moduledetails "Affected commanders become mute."
+
+
+#end
+
+#req_targgod 0
+#gainaff 4194304	
+#msg "One of your commanders has mysteriously lost their voice."
+#nolog

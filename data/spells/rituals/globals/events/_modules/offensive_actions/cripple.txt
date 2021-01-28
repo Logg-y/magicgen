@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action cripple"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 16
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Disasters"
+#verb "Disastrous"
+#verb "Catastrophic"
+
+#moduledescr "SUBJECT become very likely to suffer unfortunate and extreme accidents such as tripping over objects or falling off ledges. That resulting injuries result in being crippled."
+#moduledetails "Affected commanders become crippled."
+
+
+#end
+
+#req_targgod 0
+#gainaff 16777216
+#msg "One of your commanders has tripped over, suffering extreme injuries! They have become crippled."
+#nolog

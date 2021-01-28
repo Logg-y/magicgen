@@ -14,7 +14,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.0.3"
+ver = "2.1.0"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -264,6 +264,9 @@ def rollspells(**options):
 
             _writetoconsole(f"Writing output {outfp}...\n")
             f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
+            f.write("#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
+                '"', ver, len(l), '"')
+            )
             for x in range(1, 1 + START_ID):
                 if x not in spellstokeep:
                     f.write(f"#selectspell {x}\n")

@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action horrormark"
+#minpowerlevel -4
+#maxpowerlevel -4
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Taint"
+#verb "Tainted"
+
+#moduledescr "SUBJECT may become marked by otherworldly creatures."
+#moduledetails "Affected commanders gain a horror mark."
+
+
+#end
+
+#req_targgod 0
+#gainmark	
+#msg "Horror marking global"
+#notext
+#nolog

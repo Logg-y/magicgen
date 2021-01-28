@@ -1,0 +1,25 @@
+#neweventset "Offensive Global action limp"
+#minpowerlevel -2
+#maxpowerlevel -2
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 32
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Mishaps"
+#verb "Accident Inducing"
+
+#moduledescr "SUBJECT become very likely to suffer unfortunate accidents, such as tripping over objects, that leave them with a limp."
+#moduledetails "Affected commanders gain a limp."
+
+
+#end
+
+#req_targgod 0
+#gainaff 262144
+#msg "One of your commanders has tripped over and injured themselves! They are left with a limp."
+#nolog

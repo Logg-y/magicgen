@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action neverhealingwound"
+#minpowerlevel -2
+#maxpowerlevel -2
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 16
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Wounds"
+#verb "Wounding"
+
+#moduledescr "SUBJECT become very likely to suffer unfortunate accidents causing permanent injuries."
+#moduledetails "Affected commanders gain a never healing wound."
+
+
+#end
+
+#req_targgod 0
+#gainaff 67108864
+#msg "One of your commanders has been involved in an accident and become wounded."
+#nolog

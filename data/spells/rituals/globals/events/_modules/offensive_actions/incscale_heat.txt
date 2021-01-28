@@ -1,0 +1,22 @@
+#neweventset "Offensive Global action scales heat"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 1
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Heat"
+#verb "Exothermic"
+#verb "Burning"
+
+#moduledescr "The ambient temperature in affected provinces mysteriously increases."
+#moduledetails "Increases the heat scale of the province by 1."
+
+
+#end
+
+#decscale 2
+#msg "Offensive global add heat"
+#notext
+#nolog

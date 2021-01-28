@@ -1,7 +1,95 @@
 TODO
 
 unique summons
-add a toggle for wiping national spells
+add a toggle for wiping vanilla national spells
+a global that does good transformations
+a spell that transforms you interestingly
+a flag that makes spells always cost gems under all circumstances for magic explodes style generations
+global blood spell cost increaser
+ritual that picks a random commander in the province, pathboosting it and banishing it
+astral harpoon in spell form
+check mind hunt to see if I can add that back
+
+
+
+NEW IN v2.1.0: Revisiting Evocation and Nasty Globals
+
+Having seen even low level evos delete entire squares of fully armoured stuff, it seems a few things need to be turned down some. Test games seem to be showing that it's currently best to pretend buffs no longer exist, so it seemed something needed to be done about that.
+When buffing them this was always going to be a possible issue, but based on test games it seems that might have been somewhat excessive... 
+These numbers still result in evocation generations with power somewhat over vanilla, but not what they used to be.
+
+
+Additions:
+	Added various offensive global enchantment effects. The system that makes these is modular and generally applies a chance to do bad things to all provinces across the world, including the caster's.
+	The conditions and effects are matched at random to create a spell of appropriate strength.
+	Possible conditions:
+		Flat chance per province, always checked (affects commanders at random)
+		Prevented by any mage of the same path as the spell (affects commanders at random)
+		Any commander is patrolling
+		Any commander is researching
+		Any commander is preaching
+		Any commander is site searching
+		Any commander is blood hunting
+		Any commander is calling god
+		Any commander is constructing a fort
+	Possible effects (note that gods are not valid targets for any effect that affects a commander):
+		Scale alterations
+		Add unrest
+		The commander is the victim of an assassination attempt
+		The commander becomes diseased
+		The commander becomes cursed
+		The commander becomes blinded
+		The commander gains a limp
+		The commander loses an eye
+		The commander suffers permanent weakness
+		The commander gains battle fright
+		The commander gains a chest wound
+		The commander becomes crippled
+		The commander gains a never healing wound
+		The commander becomes mute
+		The commander becomes shrunken
+		The commander gains a horror mark
+		The commander loses an arm
+		The commander becomes banished to another plane
+		The commander becomes transformed into a bad physical shape
+		The commander suffers some amount of AN poison damage
+		
+
+Balance:
+	Mass plague research level increased from 9 to 11. I have not seen this in use but testing shows it would murder everything...
+	Scaling direct casted plague max research level increased accordingly from 8 to 10.
+	Plague summon modifier research level penalty increased from -3 to -6. I didn't realise this effect didn't come with a MR check(!)
+	Fireball damage reduced from 18/2+ to 9/2+, base research increased from 1 to 2
+	Cold projectile damage reduced from 21/3+ to 9/2+, is now AP
+	Acid projectile damage reduced from 14/2+ to 9/2+
+	Falling frost AoE reduced from 3/1+ to 0/1+, base research reduced from 4 to 2, scale rate reduced from 8 (!) to 1, damage reduced from 18/2+ to 6/2+, is now AP
+	Falling fires AoE reduced from 3/1+ to 0/1+, base research reduced from 4 to 2, scale rate reduced from 8 (!) to 1, damage reduced from 10/2+ to 6/2+
+	Acid Rain AoE reduced from 3/1+ to 0/1+, base research reduced from 4 to 2, scale rate reduced from 8 to 1, damage reduced from 10/2+ to 6/2+.
+	Banefire fatigue cost per additional AoE increased.
+	Vine arrow research level reduced from 2 to 1.
+	Damage done by instant rain of stones spells reduced by 2.
+	Added some x% of battlefield evocations, weakened from their normal damage as follows:
+		Falling fires (2/1+ AP): 25% at research 7, 50% at 8, 100% at 10
+		Falling frost (2/1+ AP): 25% at research 7, 50% at 8, 100% at 10
+		Acid rain (2/1+ AP): 25% at research 7, 50% at 8, 100% at 10
+		Lightning bolt (2/1+ AN): 5% at research 7, 10% at 8, 25% at 9, 50% at 10, 100% at 13
+	Halved the spawn chance of research 6+ freespawn globals.
+		
+Changes:
+	Generated mods now have a description indicating what version of MagicGen they were made with.
+	Combat spells of other paths are 50% less likely to appear in blood.
+	Montags with duplicate creatures now no longer list the same creature twice
+	Creatures put into montags without modification now instantly transform into their original forms rather than remaining the special, newly modded version
+	Added rather heavily detailed (but still incomplete) yellow details text for horror mark
+	Added the chance of ending up in the void from returning effects (7%)
+	
+Fixes:
+	Mineral Transmuation no longer generates with astral or blood as a secondary path
+	Fixed the logic that sometimes caused overpowered modifiers to be assigned to low level globals
+	Fixed the logic that was causing single path globals to get secondary effects of a myriad of random paths
+	Globals now no longer try to assign modifiers to montags, causing mother ghuls to appear.
+	Corrected Twiceborn #damage value, previously it applied twist fate
+
 
 NEW IN v2.0.3
 

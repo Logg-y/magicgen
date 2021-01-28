@@ -30,7 +30,7 @@
 #nextspell "Astral Geyser Burst"
 #name 16 "Astral Geyser"
 
-#descr 16 "Tiny holes are blasted into the astral space. Rays of astral energy will blast out of the holes and anyone hit will be severely horror marked. Anyone in the vicinity of the astral energy rays will get hit by deadly residual magic."
+#descr 16 "Tiny holes are blasted into the astral space. Rays of astral energy will blast out of the holes and anyone hit will be horror marked. Anyone in the vicinity of the astral energy rays will get hit by deadly residual magic."
 
 -- evo-like, scale effect number
 #spelltype 258

@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action scales drain"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Drain"
+#verb "Mundane"
+
+#moduledescr "The land in affected provinces has magic sucked out of it."
+#moduledetails "Increases the drain scale of the province by 1."
+
+
+#end
+
+#incscale 5
+#msg "Offensive global add drain"
+#notext
+#nolog

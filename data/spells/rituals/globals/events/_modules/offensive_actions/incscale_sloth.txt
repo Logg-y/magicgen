@@ -1,0 +1,23 @@
+#neweventset "Offensive Global action scales sloth"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Sloth"
+#noun "Idleness"
+#verb "Lazy"
+#verb "Slothful"
+
+#moduledescr "The populace of affected provinces becomes filled with laziness."
+#moduledetails "Increases the sloth scale of the province by 1."
+
+
+#end
+
+#incscale 1
+#msg "Offensive global add sloth"
+#notext
+#nolog

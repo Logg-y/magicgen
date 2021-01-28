@@ -1,0 +1,64 @@
+#neweventset "Offensive Global cond not blood"
+#minpowerlevel 1
+#maxpowerlevel 5
+
+#scaleparam "req_rare" 5
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Corruption"
+#verb "Bloodbound"
+
+#textrepl "SUBJECT" "Random commanders"
+
+#moduledescr "This enchantment affects commanders across the world, but its effects cannot touch those where a blood mage is present."
+#moduledetails "Every turn, each province without a blood mage makes five checks for any commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+
+#rarity 5
+#req_ench ENCHANTID
+#req_0popok
+#req_nopathblood 1
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_nopathblood 1
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_nopathblood 1
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_nopathblood 1
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_nopathblood 1
+#req_ench ENCHANTID
+#req_rare 5

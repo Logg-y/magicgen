@@ -17,8 +17,8 @@
 #name 32 "Wither Bones"
 #name 32 "Dust to Dust"
 
-#descr 16 "The spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
-#descr 32 "The spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+#descr 16 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+#descr 32 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42

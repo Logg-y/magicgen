@@ -15,12 +15,23 @@ class MontagBuilder(object):
         self.unitlist = []
         self.maxcostratio = -1.0
         self.makedummymonster = False
+        # Dict: <index of unitlist>:<number of times it was added>
+        self.numberofcopies = {}
     def add(self, unitid, secondaryeffect, costratio):
         """Add a unit to the montag with the given secondary effect. Cost ratio should be a pessimistic estimate of:
 
         gems / number of effects
         (IE: the cost in gems per one creature)
         """
+
+        for i, data in enumerate(self.unitlist):
+            unitid2 = data[0]
+            secondaryeffect2 = data[1]
+            costratio2 = data[2]
+            if unitid2 == unitid and secondaryeffect2 == secondaryeffect and costratio2 == costratio:
+                self.numberofcopies[i] = self.numberofcopies.get(i, 1) + 1
+                return
+
         self.unitlist.append((unitid, secondaryeffect, costratio))
         self.maxcostratio = max(self.maxcostratio, costratio)
     def process(self):
@@ -30,7 +41,14 @@ class MontagBuilder(object):
         weighttotal = 0
         maxweight = 0
         # quickly get the weight total, it is useful later
-        for unitid, secondary, costratio in self.unitlist:
+        for i, data in enumerate(self.unitlist):
+            unitid = data[0]
+            secondaryeffect = data[1]
+            # Adjust for multiple copies of the same thing
+            costratio = data[2]
+            duplicates = self.numberofcopies.get(i, 1)
+            costratio = max(1, math.floor(costratio/duplicates))
+
             montagweight = math.floor(self.maxcostratio / costratio)
             # the mod command only accept 1-100
             montagweight = max(1, min(100, montagweight))
@@ -45,7 +63,14 @@ class MontagBuilder(object):
                              " or reducing the number of montags that are being created")
         utils.MONTAG_ID += 1
         out.weightingstring = f"Details of Montag#{out.montagid}\n\n"
-        for unitid, secondary, costratio in self.unitlist:
+        for i, data in enumerate(self.unitlist):
+            unitid = data[0]
+            secondary = data[1]
+            # Adjust for multiple copies of the same thing
+            costratio = data[2]
+            duplicates = self.numberofcopies.get(i, 1)
+            costratio = max(1, math.floor(costratio / duplicates))
+
             montagweight = math.floor((weightmultiplier*self.maxcostratio)/costratio)
             # the mod command only accept 1-100
             montagweight = max(1, min(100, montagweight))

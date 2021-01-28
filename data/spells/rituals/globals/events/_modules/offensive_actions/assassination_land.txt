@@ -1,0 +1,138 @@
+#neweventset "Offensive Global action assassinations land only"
+#minpowerlevel 4
+#maxpowerlevel 13
+
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Ambushing"
+#verb "Assault"
+
+#moduledescr "SUBJECT may suddenly find themselves attacked by a magical beast."
+#moduledetails "Affected commanders may be attacked by a magical monster. This can only happen in land provinces."
+
+#selectunitmod "Land OK"
+#desiredmontagsize 10
+#restrictunitstospellpaths 1
+
+#moduleskipchance 45
+
+#mincreaturepower 0
+#maxcreaturepower 1
+#makedummymonster 0
+
+
+
+#allowedunitmod "Do Nothing"
+#allowedunitmod "Summon Chillaura"
+#allowedunitmod "Summon Heataura"
+#allowedunitmod "Summon Poisonaura"
+#allowedunitmod "Summon Diseaseaura"
+#allowedunitmod "Summon Mindslime"
+#allowedunitmod "Summon Overcharge"
+#allowedunitmod "Summon Sleepaura"
+#allowedunitmod "Summon Fearaura"
+#allowedunitmod "Summon Poisonbarbs"
+#allowedunitmod "Summon Acidweapon"
+#allowedunitmod "Summon Armloss"
+#allowedunitmod "Summon Eyeloss"
+#allowedunitmod "Summon Limp"
+#allowedunitmod "Summon Disease"
+#allowedunitmod "Summon Chestwound"
+#allowedunitmod "Summon Feeblemind"
+#allowedunitmod "Summon Shrink"
+#allowedunitmod "Summon Airshield"
+#allowedunitmod "Summon Airshield Lesser"
+#allowedunitmod "Summon APweap"
+#allowedunitmod "Summon Awe"
+#allowedunitmod "Summon Animalawe"
+#allowedunitmod "Summon Sunawe"
+#allowedunitmod "Summon Dimensionalshiftweapon"
+#allowedunitmod "Summon Infernobanishweapon"
+#allowedunitmod "Summon Breakarmor"
+#allowedunitmod "Summon Bringeroffortune"
+#allowedunitmod "Summon Bringerofmisfortune"
+#allowedunitmod "Summon Coldfatigueweapon"
+#allowedunitmod "Summon Corrosionweapon"
+#allowedunitmod "Summon Curseweapon"
+#allowedunitmod "Summon Curseluckweapon"
+#allowedunitmod "Summon Darkvision"
+#allowedunitmod "Summon Spiritsight"
+#allowedunitmod "Summon Deathcurse"
+#allowedunitmod "Summon Deathwail"
+#allowedunitmod "Summon Decayweapon"
+#allowedunitmod "Summon Disease on Death"
+#allowedunitmod "Summon Large Disease on Death"
+#allowedunitmod "Summon Entangleweapon"
+#allowedunitmod "Summon Ethereal"
+#allowedunitmod "Summon Explode on Death"
+#allowedunitmod "Summon Large Explode on Death"
+#allowedunitmod "Summon Fearweapon"
+#allowedunitmod "Summon Fearweapongreater"
+#allowedunitmod "Summon Fireweapon"
+#allowedunitmod "Summon Flying"
+#allowedunitmod "Summon Glamour"
+#allowedunitmod "Summon Haltdemon"
+#allowedunitmod "Summon Undead Reforming"
+#allowedunitmod "Summon Invuln"
+#allowedunitmod "Summon Lifedrainweapon"
+#allowedunitmod "Summon Lifedrainweapon2"
+#allowedunitmod "Summon MWeap 1"
+#allowedunitmod "Summon MWeap 2"
+#allowedunitmod "Summon MWeap 3"
+#allowedunitmod "Summon Paralysisweapon"
+#allowedunitmod "Summon Greaterparalysisweapon"
+#allowedunitmod "Summon Petrifyweapon"
+#allowedunitmod "Summon Plagueweapon"
+#allowedunitmod "Summon Weakpoison"
+#allowedunitmod "Summon Strongpoison"
+#allowedunitmod "Summon Deathpoison"
+#allowedunitmod "Summon Debilpoison"
+#allowedunitmod "Summon Weakparapoison"
+#allowedunitmod "Summon Strongparapoison"
+#allowedunitmod "Summon Psychicdamageweapon"
+#allowedunitmod "Summon Rageweapon"
+#allowedunitmod "Summon Raiseonkill"
+#allowedunitmod "Summon Reanimationweapon"
+#allowedunitmod "Summon Regen"
+#allowedunitmod "Summon Coldpower"
+#allowedunitmod "Summon Heatpower"
+#allowedunitmod "Summon Deathpower"
+#allowedunitmod "Summon Growthpower"
+#allowedunitmod "Summon Darkpower"
+#allowedunitmod "Summon Shatterweapon"
+#allowedunitmod "Summon Poisonskin"
+#allowedunitmod "Summon Fireshield"
+#allowedunitmod "Summon Banefireshield"
+#allowedunitmod "Summon Acidshield"
+#allowedunitmod "Summon Fateweaving"
+#allowedunitmod "Summon Eyevengeance"
+#allowedunitmod "Summon Horrormark"
+#allowedunitmod "Summon Entangle"
+#allowedunitmod "Summon Bloodvengeance"
+#allowedunitmod "Summon Damagereversal"
+#allowedunitmod "Summon Shockweapon"
+#allowedunitmod "Summon Chainshockweapon"
+#allowedunitmod "Summon Stoneskin"
+#allowedunitmod "Summon Ironskin"
+#allowedunitmod "Summon Barkskin"
+#allowedunitmod "Summon Slaymagicweapon"
+#allowedunitmod "Summon Sleeptouchweapon"
+#allowedunitmod "Summon Slimeweapon"
+#allowedunitmod "Summon Stopthedead"
+#allowedunitmod "Summon Weaknessweapon"
+#allowedunitmod "Summon DmgVsUndead"
+#allowedunitmod "Summon DmgVsMagic"
+#allowedunitmod "Summon DmgVsDemonsOnly"
+#allowedunitmod "Summon Webweapon"
+
+
+
+
+#end
+
+#req_targgod 0
+#assassin UNITID
+#req_land 1
+#msg "One of your commanders was suddenly attacked by a strange monster!"
+#nolog

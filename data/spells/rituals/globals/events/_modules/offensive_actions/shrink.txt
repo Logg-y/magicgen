@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action shrink"
+#minpowerlevel -2
+#maxpowerlevel -2
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Shrinkage"
+#verb "Diminuative"
+#verb "Shrinking"
+
+#moduledescr "SUBJECT may have their bodies permanently shrunken by malign magic."
+#moduledetails "Affected commanders become shrunken."
+
+
+#end
+
+#req_targgod 0
+#gainaff 4194304	
+#msg "One of your commanders has mysteriously decreased in size!"
+#nolog

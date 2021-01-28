@@ -1,0 +1,24 @@
+#neweventset "Offensive Global action scales death"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Decay"
+#noun "Withering"
+#verb "Decay"
+#verb "Dying"
+#verb "Withering"
+
+#moduledescr "The land in affected provinces withers and becomes less able to sustain life."
+#moduledetails "Increases the death scale of the province by 1."
+
+
+#end
+
+#incscale 3
+#msg "Offensive global add death"
+#notext
+#nolog

@@ -1,0 +1,21 @@
+#neweventset "Offensive Global action banishment void"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Misadventure"
+#verb "Misled"
+
+#moduledescr "SUBJECT may suddenly find themselves lost in the Void."
+#moduledetails "Affected commanders become banished to the Void."
+
+
+#end
+
+#req_targgod 0
+#banished -11
+#msg "One of your commanders has slipped into the Void!"
+#nolog

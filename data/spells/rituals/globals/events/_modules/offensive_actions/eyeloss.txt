@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action eyeloss"
+#minpowerlevel -1
+#maxpowerlevel -1
+
+#req path1 != 1
+#req path1 != 16
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Ocular Destruction"
+#verb "Eyeclaiming"
+#verb "Sightclaiming"
+
+#moduledescr "SUBJECT may be affected by malign magic and lose an eye."
+#moduledetails "Affected commanders lose an eye."
+
+
+#end
+
+#req_targgod 0
+#gainaff 524288	
+#msg "One of your commanders was affected by foul magic and lost an eye."
+#nolog

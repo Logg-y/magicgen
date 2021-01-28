@@ -4,8 +4,8 @@ import re
 import spellstructures
 from spellstructures.utils import ParseError
 
-secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths", "mincreaturepower", "maxcreaturepower", "secondaryeffectchance"]
-secondary_params_str = ["selectunitmod"]
+secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths", "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel", "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance"]
+secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails"]
 secondary_params_float = []
 
 
@@ -80,6 +80,67 @@ def readEventSet(fp):
                     curreff.scaleparams[m.groups()[0]] = float(m.groups()[1])
                     continue
 
+                # the trailing space here is NEEDED
+                # or this trips all the other #module* params and tries to RE them and fails
+                if line.startswith("#module "):
+                    m = re.match('#module\\W+"(.*?)"\\W+?"(.*?)"', line)
+                    if m is None:
+                        raise spellstructures.ParseError(f"{fp} line {lineno}: bad #module")
+                    curreff.modules[m.groups()[0]] = m.groups()[1]
+                    continue
+
+                if line.startswith("#textrepl"):
+                    m = re.match('#textrepl\\W+"(.*?)"\\W+?"(.*?)"', line)
+                    if m is None:
+                        raise spellstructures.ParseError(f"{fp} line {lineno}: bad #textrepl")
+                    curreff.textrepls[m.groups()[0]] = m.groups()[1]
+                    continue
+
+                if line.startswith("#incompatible"):
+                    m = re.match('#incompatible\\W+"(.*?)"', line)
+                    if m is None:
+                        raise spellstructures.ParseError(f"{fp} line {lineno}: bad #incompatible")
+                    curreff.incompatibilities.append(m.groups()[0])
+                    continue
+
+                if line.startswith("#noun"):
+                    m = re.match('#noun\\W+"(.*?)"', line)
+                    if m is None:
+                        raise spellstructures.ParseError(f"{fp} line {lineno}: bad #noun")
+                    curreff.nouns.append(m.groups()[0])
+                    continue
+
+                if line.startswith("#verb"):
+                    m = re.match('#verb\\W+"(.*?)"', line)
+                    if m is None:
+                        raise spellstructures.ParseError(f"{fp} line {lineno}: bad #noun")
+                    curreff.verbs.append(m.groups()[0])
+                    continue
+
+                if line.startswith("#req"):
+                    m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*?([0-9]+)', line)
+                    if m is not None:
+                        cond = spellstructures.NameCond()
+                        cond.val2 = m.groups()[0]
+                        cond.op2 = m.groups()[1]
+                        cond.param = m.groups()[2]
+                        cond.op = m.groups()[3]
+                        cond.val = m.groups()[4]
+                        cond.text = ""
+                        curreff.reqs.append(cond)
+                        continue
+
+                    m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*?([0-9]+)', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #req")
+                    cond = spellstructures.NameCond()
+                    cond.param = m.groups()[0]
+                    cond.op = m.groups()[1]
+                    cond.val = m.groups()[2]
+                    cond.text = ""
+                    curreff.reqs.append(cond)
+                    continue
+
                 if line.startswith("#end"):
                     out = curreff
                     parsingrawmodcode = True
@@ -101,3 +162,7 @@ def readEventSetsFromDir(dir):
                 if c.name in out:
                     raise ParseError(f"EventSet named {c.name} already exists and was redefined in {f}")
                 out[c.name] = c
+                if c.modulegroup is not None:
+                    if c.modulegroup not in spellstructures.eventmodulegroups:
+                        spellstructures.eventmodulegroups[c.modulegroup] = []
+                    spellstructures.eventmodulegroups[c.modulegroup].append(c)

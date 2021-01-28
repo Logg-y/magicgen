@@ -12,7 +12,7 @@
 
 #paths 8
 #skipchance 30
-#secondarypaths 144
+#secondarypaths 8
 #secondarypathchance 30
 #eventset "Mine Locator"
 

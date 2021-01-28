@@ -1,0 +1,24 @@
+#neweventset "Offensive Global action scales cold"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 4
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Chill"
+#noun "Cold"
+#verb "Endothermic"
+#verb "Freezing"
+#verb "Chilling"
+
+#moduledescr "The ambient temperature in affected provinces mysteriously decreases."
+#moduledetails "Increases the cold scale of the province by 1."
+
+
+#end
+
+#incscale 2
+#msg "Offensive global add cold"
+#notext
+#nolog

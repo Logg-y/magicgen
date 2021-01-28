@@ -36,7 +36,7 @@
 #descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
 #descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
 #descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
-#details "In each friendly land province, there is a 10% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+#details "In each friendly land province, there is a 5% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 
 #spelltype 4
 #scalerate 1
@@ -185,7 +185,7 @@
 #descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
 #descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
 #descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a small number of creatures to come out of the portals where they await further orders. The creatures may be magically altered and somewhat different to their usual states."
-#details "In each friendly underwater province, there is a 10% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
+#details "In each friendly underwater province, there is a 5% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 
 #spelltype 4
 #scalerate 1

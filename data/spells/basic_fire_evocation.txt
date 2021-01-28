@@ -20,7 +20,7 @@
 
 #neweffect "Fire Evo Projectile"
 #effect 2
-#damage 2018
+#damage 2009
 -- firedmg, AP
 #spec 96
 -- evo
@@ -55,17 +55,17 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 38
 
-#power 1
+#power 2
 #scalerate 1
 #pathlevel 2
 #end
 
 #neweffect "Fire Evo Instant"
 #effect 2
-#damage 2010
+#damage 2006
 #spec 96
-#aoe 1003
-#power 4
+#aoe 1000
+#power 2
 #precision 1
 #range 30
 #pathlevel 2
@@ -91,7 +91,7 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 8
+#scalerate 1
 -- #scalecost 0.3
 #schools 4
 #end
@@ -142,6 +142,121 @@
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 66
 #scalerate 2
+-- #scalecost 0.3
+#schools 4
+#end
+
+
+#neweffect "Fire Evo 25pc"
+#effect 2
+#damage 1002
+#spec 96
+#aoe 665
+#power 7
+#maxpower 7
+#precision 1
+#range 30
+#pathlevel 5
+#fatiguecost 200
+#explspr 10011
+#sound 123
+#skipchance 50
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "Falling %$fire$%"
+#name 2 "Falling %$fire$%"
+#name 4 "Falling %$fire$%"
+#name 8 "%$fire$% from $underground$"
+#name 16 "%$fire$% from beyond"
+#name 128 "$infernal$ %$fire$%"
+#descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
+#descr 8 "Heat from the earth is gathered and brought upon a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 16 "Heat from somewhere in time and space is focused into a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 128 "$BLOOD_INTRO$, the caster directs infernal flames upon a group of his enemies. This may badly burn SUBJECT."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Fire Evo 50pc"
+#effect 2
+#damage 1002
+#spec 96
+#aoe 663
+#power 8
+#maxpower 8
+#precision 1
+#range 30
+#pathlevel 5
+#fatiguecost 300
+#explspr 10011
+#sound 123
+#skipchance 50
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "Falling %$fire$%"
+#name 2 "Falling %$fire$%"
+#name 4 "Falling %$fire$%"
+#name 8 "%$fire$% from $underground$"
+#name 16 "%$fire$% from beyond"
+#name 128 "$infernal$ %$fire$%"
+#descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
+#descr 8 "Heat from the earth is gathered and brought upon a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 16 "Heat from somewhere in time and space is focused into a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 128 "$BLOOD_INTRO$, the caster directs infernal flames upon a group of his enemies. This may badly burn SUBJECT."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Fire Evo 100pc"
+#effect 2
+#damage 1002
+#spec 96
+#aoe 666
+#power 10
+#maxpower 10
+#precision 1
+#range 30
+#pathlevel 6
+#fatiguecost 400
+#explspr 10011
+#sound 123
+#skipchance 50
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "Falling %$fire$%"
+#name 2 "Falling %$fire$%"
+#name 4 "Falling %$fire$%"
+#name 8 "%$fire$% from $underground$"
+#name 16 "%$fire$% from beyond"
+#name 128 "$infernal$ %$fire$%"
+#descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
+#descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
+#descr 8 "Heat from the earth is gathered and brought upon a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 16 "Heat from somewhere in time and space is focused into a SIZE area of the caster's choosing. The resulting flames may badly burn all those within."
+#descr 128 "$BLOOD_INTRO$, the caster directs infernal flames upon a group of his enemies. This may badly burn SUBJECT."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
 -- #scalecost 0.3
 #schools 4
 #end

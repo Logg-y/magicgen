@@ -1,7 +1,7 @@
 #neweffect "Cold Evo Projectile"
 #effect 2
-#damage 3021
-#spec 512
+#damage 2009
+#spec 576
 #aoe 1
 #power 2
 #precision 1
@@ -40,10 +40,10 @@
 
 #neweffect "Cold Evo Instant"
 #effect 2
-#damage 2018
-#spec 512
+#damage 2006
+#spec 576
 #aoe 1003
-#power 4
+#power 2
 #precision 1
 #range 30
 #pathlevel 2
@@ -69,7 +69,126 @@
 
 
 #spelltype 42
-#scalerate 8
+#scalerate 1
 -- #scalecost 0.3
 #schools 4
 #end
+
+
+#neweffect "Cold Evo Instant 25pc"
+#effect 2
+#damage 1002
+#spec 576
+#aoe 665
+#power 7
+#maxpower 7
+#precision 1
+#range 30
+#pathlevel 5
+#fatiguecost 200
+#explspr 10008
+#skipchance 50
+#sound 21
+
+#paths 164
+#secondarypaths 4
+
+#name 1 "Falling $frost$"
+#name 2 "Falling $frost$"
+#name 4 "Falling $frost$"
+#name 16 "Falling $frost$"
+#name 32 "Deathly $frost$"
+#name 128 "Falling $frost$"
+#descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 16 "Heat is drawn out of the air above the battlefield into another plane, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 32 "The chill of the grave draws heat out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 128 "$BLOOD_INTRO$, heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Cold Evo Instant 50pc"
+#effect 2
+#damage 1002
+#spec 576
+#aoe 663
+#power 8
+#maxpower 8
+#precision 1
+#range 30
+#pathlevel 5
+#fatiguecost 300
+#explspr 10008
+#skipchance 50
+#sound 21
+
+#paths 164
+#secondarypaths 4
+
+#name 1 "Falling $frost$"
+#name 2 "Falling $frost$"
+#name 4 "Falling $frost$"
+#name 16 "Falling $frost$"
+#name 32 "Deathly $frost$"
+#name 128 "Falling $frost$"
+#descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 16 "Heat is drawn out of the air above the battlefield into another plane, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 32 "The chill of the grave draws heat out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 128 "$BLOOD_INTRO$, heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Cold Evo Instant 100pc"
+#effect 2
+#damage 1002
+#spec 576
+#aoe 666
+#power 10
+#maxpower 10
+#precision 1
+#range 30
+#pathlevel 6
+#fatiguecost 400
+#explspr 10008
+#skipchance 50
+#sound 21
+
+#paths 164
+#secondarypaths 4
+
+#name 1 "Falling $frost$"
+#name 2 "Falling $frost$"
+#name 4 "Falling $frost$"
+#name 16 "Falling $frost$"
+#name 32 "Deathly $frost$"
+#name 128 "Falling $frost$"
+#descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 16 "Heat is drawn out of the air above the battlefield into another plane, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 32 "The chill of the grave draws heat out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+#descr 128 "$BLOOD_INTRO$, heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
+
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+

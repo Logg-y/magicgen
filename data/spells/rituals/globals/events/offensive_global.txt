@@ -1,0 +1,11 @@
+#neweventset "Offensive Global"
+
+#module "CONDITION" "Offensive Global Condition"
+#module "EFFECT" "Offensive Global Effect"
+
+#end
+
+#newevent
+CONDITION
+EFFECT
+#end

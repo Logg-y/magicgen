@@ -1,0 +1,21 @@
+#neweventset "Offensive Global action scales misfortune"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Misfortune"
+#verb "Unfortunate"
+
+#moduledescr "The land in affected provinces is twisted by the enchantment, making it become more unlucky."
+#moduledetails "Increases the misfortune scale of the province by 1."
+
+
+#end
+
+#incscale 4
+#msg "Offensive global add misfortune"
+#notext
+#nolog

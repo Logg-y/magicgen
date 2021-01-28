@@ -23,7 +23,7 @@
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
 
-#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase slightly."
+#descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase slightly."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase slightly."
 #details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +2-3 of neutral."
 #end
@@ -53,7 +53,7 @@
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
 
-#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase."
+#descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase."
 #details "Each friendly province has two independent rolls at 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +4 of neutral."
 #end
@@ -85,7 +85,7 @@
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
 
-#descr 16 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase significantly."
+#descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase significantly."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase significantly."
 #details "Each friendly province has three independent rolls at 40% chance per point of friendly dominion to gain +1 Growth.  In practice, scales settle around +5 of neutral."
 #end

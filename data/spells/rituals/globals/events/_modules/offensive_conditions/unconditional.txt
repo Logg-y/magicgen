@@ -1,0 +1,59 @@
+#neweventset "Offensive Global cond unconditional"
+#minpowerlevel 3
+#maxpowerlevel 8
+
+#scaleparam "req_rare" 5
+
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Existence"
+#verb "Global"
+#verb "Worldwide"
+
+#textrepl "SUBJECT" "Random commanders"
+
+#moduledescr "This enchantment affects commanders across the world."
+#moduledetails "Every turn, each province makes five checks for any commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+
+#rarity 5
+#req_ench ENCHANTID
+#req_0popok
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5

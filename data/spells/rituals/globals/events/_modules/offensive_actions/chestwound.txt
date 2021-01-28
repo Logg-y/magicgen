@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action chestwound"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 != 1
+#req path1 != 16
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Wounds"
+#verb "Wounding"
+
+#moduledescr "SUBJECT may be struck in the chest by malign magic."
+#moduledetails "Affected commanders gain a chest wound."
+
+
+#end
+
+#req_targgod 0
+#gainaff 8388608	
+#msg "One of your commanders was wounded in the chest by foul magic!"
+#nolog

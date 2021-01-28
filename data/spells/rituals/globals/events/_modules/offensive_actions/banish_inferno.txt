@@ -1,0 +1,20 @@
+#neweventset "Offensive Global action banishment inferno"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 128
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Misadventure"
+#verb "Misled"
+
+#moduledescr "SUBJECT may suddenly find themselves lost in Inferno."
+#moduledetails "Affected commanders become banished to Inferno."
+
+#end
+
+#req_targgod 0
+#banished -12
+#msg "One of your commanders has slipped into Inferno!"
+#nolog

@@ -1,0 +1,46 @@
+#neweventset "Offensive Global cond sitesearcher"
+#minpowerlevel -5
+#maxpowerlevel 0
+
+#scaleparam "req_rare" 5
+
+
+#modulegroup "Offensive Global Condition"
+
+#noun "Exploration"
+#noun "Investigation"
+#verb "Exploratory"
+#verb "Investigational"
+
+#textrepl "SUBJECT" "Site searchers"
+
+#moduledescr "This enchantment affects all those looking for sites of magical power."
+#moduledetails "Every turn, each province makes three checks for a site searching commander, each with a SCALEAMT percent chance of occuring."
+
+#modulebasescale 5
+
+#end
+
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 7
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 7
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_0popok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 7

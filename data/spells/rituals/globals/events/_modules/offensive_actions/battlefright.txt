@@ -1,0 +1,25 @@
+#neweventset "Offensive Global action fright"
+#minpowerlevel -1
+#maxpowerlevel -1
+
+#req path1 != 1
+#req path1 != 16
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Terror"
+#verb "Frightening"
+
+#moduledescr "SUBJECT may be affected by malign magic and suffer from lasting cowardice."
+#moduledetails "Affected commanders gain the battle fright affliction."
+
+
+#end
+
+#req_targgod 0
+#gainaff 2097152
+#msg "One of your commanders was affected by foul magic and is now frightened for their life."
+#nolog

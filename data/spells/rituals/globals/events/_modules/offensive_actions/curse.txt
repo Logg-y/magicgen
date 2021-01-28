@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action curse"
+#minpowerlevel -2
+#maxpowerlevel -2
+
+#req path1 != 1
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+#req path1 != 32
+#req path1 != 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Curses"
+#verb "Cursed"
+
+#moduledescr "SUBJECT may be affected by malign magic and become cursed."
+#moduledetails "Affected commanders become cursed."
+
+
+#end
+
+#req_targgod 0
+#gainaff 2
+#msg "One of your commanders was affected by foul magic and became cursed."
+#nolog
