@@ -9,6 +9,8 @@ global blood spell cost increaser
 ritual that picks a random commander in the province, pathboosting it and banishing it
 check mind hunt to see if I can add that back
 
+v2.1.2: Fix for astral harpoon effect ending up in construction
+
 
 NEW IN v2.1.1: Remote summoning nerfs
 

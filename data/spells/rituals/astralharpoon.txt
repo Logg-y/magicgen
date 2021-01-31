@@ -9,7 +9,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 500
-#schools 8
+#schools 4
 #unique 1
 
 #paths 16
