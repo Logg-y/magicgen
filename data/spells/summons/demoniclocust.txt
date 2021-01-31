@@ -63,7 +63,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 6
-#fatiguecost 800
+#fatiguecost 1600
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -87,26 +87,26 @@
 #damage 2794
 #spec 0
 #power 5
-#maxpower 9
+#maxpower 15
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1200
+#fatiguecost 3400
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 210
+#scalefatiguemult 260
 
 #name 128 "Send NAMEPREFIX Demonic %Locust%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to attack a distant province. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger."
 
 #spelltype 20
 
-#scalerate 2
+#scalerate 1
 #end

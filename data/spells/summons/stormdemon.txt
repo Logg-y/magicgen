@@ -63,7 +63,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 6
-#fatiguecost 700
+#fatiguecost 1600
 #schools 1
 #skipchance 94
 #nogeodst 2052
@@ -90,18 +90,18 @@
 #maxpower 9
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 3600
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 2
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 110
+#scalefatiguemult 450
 
 #name 128 "Send Storm %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to attack a distant province. Storm demons are ethereal and unleash blasts of lightning."

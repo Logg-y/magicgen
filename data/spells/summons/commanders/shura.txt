@@ -69,7 +69,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 5
-#fatiguecost 400
+#fatiguecost 700
 #chassisvalue 80
 #schools 1
 #nogeodst 2052

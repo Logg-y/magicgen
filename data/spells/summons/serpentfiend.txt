@@ -59,7 +59,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 6
-#fatiguecost 400
+#fatiguecost 1000
 #schools 1
 #skipchance 94
 #nogeodst 2052
@@ -83,17 +83,17 @@
 #maxpower 9
 #nreff 1001
 #pathlevel 3
-#fatiguecost 800
+#fatiguecost 2800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatiguemult 300
 
 #name 128 "Send Serpent %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of serpent fiends to attack a distant province."

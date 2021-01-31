@@ -3,6 +3,7 @@
 #damage -12
 #spec 0
 #power 3
+#maxpower 3
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -25,51 +26,51 @@
 #skipchance 97
 #end
 
-#neweffect "Raise Foulspawn Ritual"
-#effect 10001
-#damage -12
-#spec 0
-#power 3
-#nreff 3004
-#pathlevel 2
-#fatiguecost 300
-#schools 1
+-- #neweffect "Raise Foulspawn Ritual"
+-- #effect 10001
+-- #damage -12
+-- #spec 0
+-- #power 3
+-- #nreff 3004
+-- #pathlevel 2
+-- #fatiguecost 300
+-- #schools 1
+-- 
+-- #paths 64
+-- #secondarypaths 64
+-- #skipchance 97
+-- 
+-- #name 64 "Summon Foulspawn"
+-- #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
+-- 
+-- #spelltype 20
+-- 
+-- #scalerate 2
+-- #scalefatiguemult 10
+-- #end
 
-#paths 64
-#secondarypaths 64
-#skipchance 97
-
-#name 64 "Summon Foulspawn"
-#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
-
-#spelltype 20
-
-#scalerate 2
-#scalefatiguemult 10
-#end
-
-#neweffect "Remote summon Foulspawn"
-#effect 10038
-#provrange 4
-#damage -12
-#spec 0
-#power 5
-#maxpower 9
-#nreff 3010
-#pathlevel 3
-#fatiguecost 400
-#schools 1
-
-#paths 64
-#secondarypaths 64
-#skipchance 99.9
-
-#scalefatiguemult 5
-
-#name 64 "Send Foulspawn"
-#descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
-
-#spelltype 20
-
-#scalerate 2.0
-#end
+-- #neweffect "Remote summon Foulspawn"
+-- #effect 10038
+-- #provrange 4
+-- #damage -12
+-- #spec 0
+-- #power 5
+-- #maxpower 9
+-- #nreff 3010
+-- #pathlevel 3
+-- #fatiguecost 400
+-- #schools 1
+-- 
+-- #paths 64
+-- #secondarypaths 64
+-- #skipchance 99.6
+-- 
+-- #scalefatiguemult 5
+-- 
+-- #name 64 "Send Foulspawn"
+-- #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are nearly always the weakest results of crossbreeding."
+-- 
+-- #spelltype 20
+-- 
+-- #scalerate 2.0
+-- #end

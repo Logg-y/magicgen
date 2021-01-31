@@ -60,7 +60,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 400
 #schools 1
 #skipchance 97
 
@@ -81,23 +81,23 @@
 #spec 8388608
 #power 4
 #maxpower 9
-#nreff 4016
+#nreff 3004
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 800
 #schools 1
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 2
 #secondarypaths 2
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 25
+#scalefatiguemult 5
 
 #name 2 "Send NAMEPREFIX Phantasmal Beasts"
 #descr 2 "Summons a group of phantasmal beasts to attack a distant province."
 
 #spelltype 20
 
-#scalerate 5
+#scalerate 3
 #end

@@ -29,9 +29,9 @@
 #damage 413
 #spec 8388608
 #power 4
-#nreff 5001
+#nreff 3001
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 500
 #schools 1
 
 #paths 4
@@ -56,11 +56,11 @@
 #provrange 4
 #damage 413
 #spec 8388608
-#power 5
-#maxpower 5
+#power 6
+#maxpower 6
 #nreff 1
-#pathlevel 3
-#fatiguecost 100
+#pathlevel 4
+#fatiguecost 400
 #schools 1
 #skipchance 97
 
@@ -82,12 +82,12 @@
 #spec 8388608
 #power 5
 #maxpower 9
-#nreff 5001
+#nreff 3001
 #pathlevel 4
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 4
 #secondarypaths 4
@@ -101,5 +101,5 @@
 #scalerate 2.0
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 35
+#scalefatiguemult 30
 #end

@@ -59,7 +59,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 400
+#fatiguecost 600
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -81,24 +81,24 @@
 #spec 0
 #power 3
 #maxpower 9
-#nreff 1002
+#nreff 1000
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 1
 #secondarypaths 1
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 25
+#scalefatiguemult 120
 
 #name 1 "Send NAMEPREFIX Salamanders"
 #descr 1 "Summons ARTICLE %salamander% to attack distant lands. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."
 
 #spelltype 20
 
-#scalerate 2.0
+#scalerate 1
 #end

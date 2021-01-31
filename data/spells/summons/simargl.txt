@@ -61,7 +61,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 300
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -88,17 +88,17 @@
 #maxpower 9
 #nreff 2004
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 2
 #secondarypaths 2
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 30
+#scalefatiguemult 40
 
 #name 2 "Send NAMEPREFIX Simargl"
 #descr 2 "The caster summons ARTICLE simargl to attack a distant province. The simargl is a small winged dog."

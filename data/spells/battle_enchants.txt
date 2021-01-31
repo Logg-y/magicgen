@@ -50,7 +50,7 @@
 
 #name 64 "Howl"
 #descr 64 "The caster summons a pack of wolves to aid him in battle. The wolves will come from all directions and may even attack the enemy from behind."
-#details "This spell is twice as effective if used in forest or mountain terrain."
+#details "Every 320 ticks, 1d3 wolves appear at the edge of the battlefield. If cast in forest or mountain terrain, 1d6 appear instead. These die rolls may explode."
 
 #end
 
@@ -557,7 +557,7 @@
 
 #name 4 "Grip of Winter"
 #descr 4 "The entire battlefield is harrowed by enormous cold. This cold quickly renders all units on the battlefield unconscious, after which death is certain. The Grip of Winter is most effective in cold provinces."
-#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. Does nothing if Heat from Hell is active."
+#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. The presence of a snow storm (either natural, or through the spell Storm in cold scales) adds 2 to the damage. Does nothing if Heat from Hell is active."
 #end
 
 
@@ -703,7 +703,7 @@
 
 #name 64 "Relief"
 #descr 64 "This battle enchantment reduces the fatigue of all friendly units on the battlefield. It lasts until the battle ends or the caster is killed."
-#details "AN fatigue reduction roll +1."
+#details "Every 320 ticks (or 23.4375 times a round), 6% of alied units get a AN fatigue reduction roll of 1."
 #end
 
 

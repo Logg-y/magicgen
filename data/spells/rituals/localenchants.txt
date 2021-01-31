@@ -272,7 +272,7 @@
 
 #name 1 "Dome of Flaming Death"
 #descr 1 "An invisible web of Fire magic is created over the entire province where this spell is cast. Any enemy spells cast into the protected province will trigger the deadly trap. A powerful blast of fire will find its way to the enemy mage and burn him and possibly also the laboratory to cinders. The more magic gems put into the spell, the longer the dome lasts. If the mage who cast the dome dies, the dome dissolves instantly. The dome does not stop enemy spells that pass through it, but it may stop the enemy mage from ever casting spells again."
-#details "Dome Trap: 2d20 AP fire dmg. The luck scale of the receiving province reduces the chance of having the laboratory burnt down."
+#details "Dome Trap: 2d20 AP fire dmg. The chance of burning down the lab is 10% plus 1% per misfortune scale in the targeted province."
 
 #spelltype 4
 #end

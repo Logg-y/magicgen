@@ -61,7 +61,7 @@
 #maxpower 9
 #nreff 1
 #pathlevel 7
-#fatiguecost 1600
+#fatiguecost 2000
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -71,7 +71,7 @@
 #secondarypathchance 95
 
 #name 4 "NAMEPREFIX Ancient %Presence% Attack"
-#descr 4 "The caster summons an ancient presence from a dark and distant swamp to attack a hostile commander in a distant land. It is huge and can devour those who come near."
+#descr 4 "The caster summons an ancient presence from a dark and distant swamp to attack a hostile commander in a distant land. It is huge and will devour those who come near."
 
 #spelltype 4
 
@@ -83,13 +83,13 @@
 #damage 2251
 #spec 8388608
 #power 9
-#maxpower 9
+#maxpower 16
 #nreff 1
 #pathlevel 7
-#fatiguecost 800
+#fatiguecost 2000
 #schools 1
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 4
 #secondarypaths 64
@@ -100,8 +100,8 @@
 
 #spelltype 20
 
-#scalerate 4
+#scalerate 1
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatiguemult 1000
 #end

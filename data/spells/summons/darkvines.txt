@@ -58,7 +58,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 6
-#fatiguecost 600
+#fatiguecost 1900
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -79,20 +79,20 @@
 #damage 330
 #spec 0
 #power 6
-#maxpower 9
+#maxpower 16
 #nreff 3
 #pathlevel 5
-#fatiguecost 800
+#fatiguecost 2900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 200
+#scalefatiguemult 400
 
 #name 128 "Send Vines"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines attack a distant province."

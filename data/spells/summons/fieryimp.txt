@@ -62,7 +62,7 @@
 #maxpower 4
 #nreff 1
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 900
 #schools 1
 #skipchance 94
 #nogeodst 2052
@@ -84,25 +84,25 @@
 #spec 0
 #power 3
 #maxpower 9
-#nreff 4001
+#nreff 3001
 #pathlevel 3
-#fatiguecost 600
+#fatiguecost 2800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 1
 #secondarypathchance 90
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 35
+#scalefatiguemult 110
 
 #name 128 "Send NAMEPREFIX Fiery Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of fiery imps to attack a distant province.  These particular imps cannot fly but are surrounded by a shield of flames."
 
 #spelltype 20
 
-#scalerate 2
+#scalerate 4
 #end

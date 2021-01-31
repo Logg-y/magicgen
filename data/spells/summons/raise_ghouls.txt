@@ -18,6 +18,7 @@
 
 #name 32 "Raise NAMEPREFIX Ghouls"
 #descr 32 "The caster transforms several beings into undead ghouls."
+#details "This results in no harm to any living beings or any loss of population."
 
 #spelltype 20
 
@@ -25,7 +26,7 @@
 #end
 
 
-#neweffect "Longdead Remote Assassination"
+#neweffect "ghoul Remote Assassination"
 #effect 10050
 #provrange 4
 #damage 198
@@ -34,7 +35,7 @@
 #maxpower 4
 #nreff 1
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 400
 #schools 16
 #skipchance 97
 
@@ -57,21 +58,22 @@
 #spec 8388608
 #power 3
 #maxpower 9
-#nreff 3010
+#nreff 5025
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 16
 
-#scalefatigueexponent 0.4
-#scalefatiguemult 40
+-- #scalefatigueexponent 0.4
+#scalefatiguemult 3
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 32
 #secondarypaths 32
 
 #name 32 "Arouse Hunger"
 #descr 32 "The caster converts a number of beings in the targeted province into ghouls."
+#details "This results in no harm to any living beings or any loss of population."
 
 #spelltype 20
 

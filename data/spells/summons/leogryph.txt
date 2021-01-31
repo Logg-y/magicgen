@@ -62,7 +62,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 500
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -87,19 +87,19 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 4001
+#nreff 3003
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatiguemult 40
 
 #name 64 "Send NAMEPREFIX %Leogryph%"
 #descr 64 "The caster summons ARTICLE %leogryph% to attack a distant land. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."

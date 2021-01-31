@@ -61,7 +61,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 3
-#fatiguecost 600
+#fatiguecost 1300
 #schools 1
 #skipchance 97
 
@@ -84,12 +84,12 @@
 #spec 8388608
 #power 6
 #maxpower 9
-#nreff 2001
+#nreff 1003
 #pathlevel 4
-#fatiguecost 600
+#fatiguecost 2200
 #schools 1
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 8
@@ -104,5 +104,5 @@
 #scalerate 2.0
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatiguemult 260
 #end

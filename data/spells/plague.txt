@@ -25,7 +25,7 @@
 
 #name 32 "Plague"
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
 
 #descr 32 "The caster attempts to spread a magical plague to a small number of victims. If any fail to resist, it will rapidly spread to anything living nearby."
 
@@ -56,7 +56,7 @@
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves.""
 
 #name 32 "Pestilent Plague"
 
@@ -91,7 +91,7 @@
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round."
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves.""
 
 #name 32 "Contagious Spread"
 

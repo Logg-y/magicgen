@@ -60,7 +60,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 400
 #schools 1
 #skipchance 97
 #onlygeodst 2052
@@ -84,21 +84,21 @@
 #spec 8388608
 #power 4
 #maxpower 9
-#nreff 3011
+#nreff 6030
 #pathlevel 3
 #fatiguecost 200
 #schools 1
 #onlygeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 15
+--#scalefatigueexponent 0.5
+-- #scalefatiguemult 15
 
-#name 64 "Send NAMEPREFIX Sea %Stag%"
+#name 64 "Send NAMEPREFIX Sea %Dog%"
 #descr 64 "The caster summons ARTICLE sea %dog% to attack a distant province. Sea dogs are amphibious creatures that bite their enemies."
 
 #spelltype 20

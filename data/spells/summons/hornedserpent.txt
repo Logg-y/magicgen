@@ -84,17 +84,17 @@
 #maxpower 9
 #nreff 2001
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 25
+#scalefatiguemult 100
 
 #name 64 "Send Horned Serpents"
 #descr 64 "The caster summons horned serpents and directs them to attack a distant province."

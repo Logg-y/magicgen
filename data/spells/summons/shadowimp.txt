@@ -59,7 +59,7 @@
 #maxpower 4
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 300
 #schools 1
 #skipchance 94
 #nogeodst 2052
@@ -81,19 +81,19 @@
 #spec 0
 #power 3
 #maxpower 9
-#nreff 1010
+#nreff 2006
 #pathlevel 3
-#fatiguecost 600
+#fatiguecost 2800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 35
+#scalefatiguemult 40
 
 #name 128 "Send NAMEPREFIX Shadow Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of shadow imps to attack a distant province. These imps cannot fly, but become more powerful in darkness."

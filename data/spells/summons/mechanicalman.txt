@@ -60,7 +60,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 5
-#fatiguecost 400
+#fatiguecost 500
 #schools 16
 #skipchance 97
 
@@ -83,10 +83,10 @@
 #maxpower 9
 #nreff 2007
 #pathlevel 4
-#fatiguecost 400
+#fatiguecost 800
 #schools 16
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 8
 #secondarypaths 8

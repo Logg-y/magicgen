@@ -64,7 +64,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 700
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -90,20 +90,20 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 1002
+#nreff 1001
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 2
 #secondarypaths 64
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 50
+#scalefatiguemult 110
 
 #name 2 "Send NAMEPREFIX %Amphiptere%"
 #descr 2 "The caster summons ARTICLE_N %amphiptere% to attack a distant land. The amphiptere is a winged serpent which can spit poison."
@@ -112,5 +112,5 @@
 
 #spelltype 20
 
-#scalerate 4
+#scalerate 1
 #end

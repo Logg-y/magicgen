@@ -62,7 +62,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 500
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -86,24 +86,24 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 2001
+#nreff 1000
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 70
+#scalefatiguemult 140
 
 #name 64 "Send NAMEPREFIX Were%wolf%"
 #descr 64 "The caster summons ARTICLE were%wolf% to attack a distant land. Werewolves regenerate and are very difficult to harm with mundane weaponry."
 
 #spelltype 20
 
-#scalerate 4
+#scalerate 2
 #end

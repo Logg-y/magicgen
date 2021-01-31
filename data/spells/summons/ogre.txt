@@ -61,7 +61,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 500
 #schools 1
 #skipchance 97
 
@@ -84,18 +84,18 @@
 #spec 8388608
 #power 4
 #maxpower 9
-#nreff 2009
+#nreff 2005
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 8
 #secondarypaths 8
 
-#scalefatiguemult 40
+#scalefatiguemult 22
 
 #name 8 "Send NAMEPREFIX %Ogre%"
 #descr 8 "The caster summons ARTICLE_N ogre to attack a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."

@@ -60,7 +60,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 400
 #schools 1
 #skipchance 97
 #onlygeodst 2052
@@ -84,13 +84,13 @@
 #spec 41959424
 #power 4
 #maxpower 9
-#nreff 1008
+#nreff 2004
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 #onlygeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64

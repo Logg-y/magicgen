@@ -31,7 +31,7 @@
 #power 8
 #nreff 2001
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 500
 #schools 1
 
 #paths 4
@@ -61,7 +61,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 700
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -85,19 +85,19 @@
 #spec 0
 #power 4
 #maxpower 9
-#nreff 2006
+#nreff 2001
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 4
 #secondarypaths 4
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatiguemult 50
 
 #name 4 "Send NAMEPREFIX %Yeti%"
 #descr 4 "The caster summons ARTICLE %yeti% to attack a distant province. Yetis are large humanoids which are surrounded by icy winds."

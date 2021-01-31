@@ -60,7 +60,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 4
-#fatiguecost 500
+#fatiguecost 700
 #schools 1
 #skipchance 97
 
@@ -82,10 +82,10 @@
 #maxpower 9
 #nreff 1001
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 32
 #secondarypaths 32
@@ -94,8 +94,8 @@
 #descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to attack a distant province. Shade lords are powerful ethereal undead which can strike through their victims' armour."
 #spelltype 20
 
-#scalerate 4
+#scalerate 2
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 60
+#scalefatiguemult 100
 #end

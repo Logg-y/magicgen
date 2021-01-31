@@ -64,7 +64,7 @@
 #maxpower 3
 #nreff 1
 #pathlevel 2
-#fatiguecost 100
+#fatiguecost 400
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -88,19 +88,19 @@
 #spec 0
 #power 4
 #maxpower 9
-#nreff 3010
+#nreff 7010
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 66
 #secondarypaths 66
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 20
+-- #scalefatigueexponent 0.5
+-- #scalefatiguemult 20
 
 #name 64 "Send NAMEPREFIX Black Harpies"
 #name 2 "Send NAMEPREFIX Black Harpies"

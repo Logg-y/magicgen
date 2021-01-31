@@ -60,7 +60,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 5
-#fatiguecost 600
+#fatiguecost 1500
 #schools 1
 #skipchance 97
 #onlygeodst 2052
@@ -81,25 +81,25 @@
 #damage 1664
 #spec 41959424
 #power 6
-#maxpower 11
+#maxpower 16
 #nreff 1
 #pathlevel 4
-#fatiguecost 300
+#fatiguecost 1200
 #schools 1
 #onlygeodst 2052
 
 #paths 4
 #secondarypaths 4
 
-#skipchance 99.9
+#skipchance 99.6
 
 #name 4 "Send NAMEPREFIX Monster Fish"
 #descr 4 "The caster summons ARTICLE monster fish to attack a hostile commander in a distant land. Monster fish are gigantic fish which can swallow smaller creatures."
 
 #spelltype 20
 
-#scalerate 4
+#scalerate 1
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 250
+#scalefatiguemult 450
 #end

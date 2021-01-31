@@ -61,7 +61,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 400
+#fatiguecost 500
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -86,17 +86,17 @@
 #maxpower 9
 #nreff 2002
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 1400
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 1
 #secondarypaths 1
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 25
+#scalefatiguemult 45
 
 #name 1 "Send NAMEPREFIX Fire Ants"
 #descr 1 "Summons ARTICLE fire %ant% to attack a distant province. Fire ants are extremely large ants with a poisonous stinger."

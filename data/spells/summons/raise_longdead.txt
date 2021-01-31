@@ -84,20 +84,21 @@
 #spec 8388608
 #power 3
 #maxpower 9
-#nreff 3010
+#nreff 4010
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 16
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 32
 #secondarypaths 32
 
 #name 32 "Remote reanimation"
-#descr 32 "The caster enchants the bones of the long dead in a distance province. "
+#descr 32 "The caster enchants the bones of the long dead in a distant province. "
 
 #spelltype 20
 
 #scalerate 2.0
+#scalefatiguemult 5
 #end

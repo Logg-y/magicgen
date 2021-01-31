@@ -59,7 +59,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 500
 #schools 1
 #skipchance 97
 
@@ -82,13 +82,13 @@
 #spec 8388608
 #power 4
 #maxpower 9
-#nreff 2010
+#nreff 2002
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
@@ -97,7 +97,7 @@
 #descr 64 "The caster calls ARTICLE %spirit% out of nearby trees in a distant land. The spirits immediately attack the province, and then return to their trees if they survive the encounter. Woodland spirits are stunningly beautiful ethereal beings that regenerate wounds at an incredible rate."
 
 #spelltype 20
-#scalefatiguemult 40
+#scalefatiguemult 50
 
 #scalerate 2.0
 #end

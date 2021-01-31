@@ -14,7 +14,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.0"
+ver = "2.1.1"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -451,7 +451,6 @@ def main():
             return
         print("Complete. Press ENTER to exit.")
         input()
-
 
 if __name__ == "__main__":
     print(sys.argv)

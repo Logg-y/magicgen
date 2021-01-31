@@ -76,7 +76,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 400
+#fatiguecost 700
 #chassisvalue 20
 #schools 1
 #skipchance 76

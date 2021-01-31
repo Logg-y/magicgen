@@ -31,7 +31,7 @@
 #power 2
 #nreff 2003
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 400
 #schools 1
 
 #paths 64
@@ -87,17 +87,17 @@
 #maxpower 9
 #nreff 2008
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 1600
 #schools 1
 #onlygeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 4
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 30
+#scalefatiguemult 50
 
 #name 64 "Send NAMEPREFIX Large %Lobster%"
 #descr 64 "The caster summons ARTICLE large %lobster% to attack a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."

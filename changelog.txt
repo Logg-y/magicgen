@@ -7,10 +7,33 @@ a spell that transforms you interestingly
 a flag that makes spells always cost gems under all circumstances for magic explodes style generations
 global blood spell cost increaser
 ritual that picks a random commander in the province, pathboosting it and banishing it
-astral harpoon in spell form
 check mind hunt to see if I can add that back
 
 
+NEW IN v2.1.1: Remote summoning nerfs
+
+This mostly concerns balance for remote assassinations and attacks. Pricing things by eye was always going to be a mess, and sure enough it absolutely was one. Before this things had only been changed following game usage: the stuff here is a result of not terribly comprehensive testing, aimed at making the effect/cost ratio a lot more consistent. At the very least, these spells are much more likely to now be bad rather than absurdly overpowered.
+
+The idea here is that ~8 gem remote attacks should be able to take 6pd somewhat reliably. Due to scaling, high pathed casters can probably achieve more, but getting high path casters is not something that is necessarily easy.
+
+Additions:
+
+Astral Harpoon's effect (complate with descriptive yellow text!), for 5 gems.
+
+Text improvements:
+
+Noted the actual chance for lab explosion on dome of flaming death (10% plus/minus one per misfortune/luck scale in the province where the dome is)
+Made lure of the deep's yellow text clearer.
+Added the 10% curse chances to horror seed's yellow text
+Added details (yellow text) to plague and soul vortex that explain exactly what they do
+Added the actual gold created by Celestial Rainbow (it's 300 + 4d100+)
+Added the actual number of wolves summoned by howl
+Added the interaction between snowstorms and grip of winter
+Added the percent of the battlefield hit by relief
+
+Balance:
+
+Changes to very nearly every remote attack and assassination
 
 NEW IN v2.1.0: Revisiting Evocation and Nasty Globals
 
@@ -80,7 +103,7 @@ Changes:
 	Combat spells of other paths are 50% less likely to appear in blood.
 	Montags with duplicate creatures now no longer list the same creature twice
 	Creatures put into montags without modification now instantly transform into their original forms rather than remaining the special, newly modded version
-	Added rather heavily detailed (but still incomplete) yellow details text for horror mark
+	Added rather heavily detailed (but still incomplete) yellow details text for horror seed
 	Added the chance of ending up in the void from returning effects (7%)
 	
 Fixes:

@@ -60,7 +60,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 3
-#fatiguecost 100
+#fatiguecost 400
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -87,17 +87,17 @@
 #maxpower 9
 #nreff 5001
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 15
+#scalefatiguemult 25
 
 #name 64 "Send NAMEPREFIX Giant %Spider%"
 #descr 64 "The caster sends ARTICLE giant %spider% to attack a distant province. The giant spider has a venomous bite, but has little resistance to magic."

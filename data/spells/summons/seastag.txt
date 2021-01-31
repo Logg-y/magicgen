@@ -61,7 +61,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 400
 #schools 1
 #skipchance 97
 #onlygeodst 2052
@@ -85,19 +85,19 @@
 #spec 41959424
 #power 4
 #maxpower 9
-#nreff 2009
+#nreff 4009
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 #onlygeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 30
+--#scalefatigueexponent 0.5
+-- #scalefatiguemult 30
 
 #name 64 "Send NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag% to attack a distant province. Sea stags are the underwater equivalent of deer: they attack with their antlers."

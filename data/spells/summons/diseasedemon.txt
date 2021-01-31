@@ -59,7 +59,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 5
-#fatiguecost 600
+#fatiguecost 1400
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -81,14 +81,14 @@
 #damage 1662
 #spec 0
 #power 5
-#maxpower 9
+#maxpower 15
 #nreff 1001
 #pathlevel 5
-#fatiguecost 800
+#fatiguecost 4000
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
@@ -101,5 +101,5 @@
 
 #spelltype 20
 
-#scalerate 3
+#scalerate 1
 #end

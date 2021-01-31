@@ -27,10 +27,10 @@
 #effect 10001
 #damage 549
 #spec 0
-#power 2
-#nreff 2005
-#pathlevel 3
-#fatiguecost 300
+#power 1
+#nreff 4005
+#pathlevel 2
+#fatiguecost 100
 #schools 1
 
 #paths 64
@@ -46,7 +46,7 @@
 #skipchance 97
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 15
+#scalefatiguemult 5
 
 #scalerate 4
 #end
@@ -60,7 +60,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 2
-#fatiguecost 100
+#fatiguecost 300
 #schools 1
 #skipchance 97
 #nogeodst 2052
@@ -84,19 +84,20 @@
 #spec 0
 #power 4
 #maxpower 9
-#nreff 3006
+-- Yes, this is deliberate, in testing 60 boars would reliably lose vs 6pd
+#nreff 9050
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 15
+--#scalefatigueexponent 0.5
+--#scalefatiguemult 3
 
 #name 64 "Send NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar% to attack a distant province. These boar are fairly timid and will not trample opponents."

@@ -59,7 +59,7 @@
 #maxpower 4
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 800
 #schools 1
 #skipchance 94
 #nogeodst 2052
@@ -83,17 +83,17 @@
 #maxpower 9
 #nreff 2004
 #pathlevel 3
-#fatiguecost 700
+#fatiguecost 2900
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 128
 #secondarypaths 128
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 35
+#scalefatiguemult 70
 
 #name 128 "Send NAMEPREFIX Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of imps to attack a distant province."

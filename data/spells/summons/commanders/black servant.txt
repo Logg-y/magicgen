@@ -63,11 +63,11 @@
 #provrange 4
 #damage 434
 #spec 0
-#power 5
-#maxpower 5
+#power 7
+#maxpower 7
 #nreff 1
 #pathlevel 5
-#fatiguecost 300
+#fatiguecost 600
 #chassisvalue 20
 #schools 1
 #skipchance 76

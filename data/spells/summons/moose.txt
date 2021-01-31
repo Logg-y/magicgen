@@ -57,7 +57,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 500
 #schools 1
 #skipchance 97
 
@@ -82,11 +82,11 @@
 #maxpower 9
 #nreff 2010
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.9
+#skipchance 99.6
 
 #paths 64
 #secondarypaths 64
@@ -95,6 +95,7 @@
 #descr 64 "The caster calls ARTICLE moose to attack a distant land. Moose are strong and attack with both feet and antlers."
 
 #spelltype 20
+#scalefatiguemult 20
 
 #scalerate 2.0
 #end

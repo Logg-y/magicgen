@@ -1,0 +1,24 @@
+#neweffect "Astral Harpoon"
+#copyspell "Astral Harpoon"
+#effect 10113
+#damage 1
+#spec 8392704
+#provrange 5
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 8
+#unique 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Astral Tether"
+#descr 16 "The mage sends out an astral cord through the Void which seeks out a commander in a distant land. Those of strong mind may be able to resist the touch of the cord and escape the effects of the spell. Upon connecting with a victim, the caster attempts to pull back the cord, which is largely a physical effort. The victim may however attempt to pull the other end of the cord, potentially bringing the caster towards him instead."
+#details "Astral Harpoon: A random commander in the targeted province is selected and makes a MR check. Should they fail, they immediately take 5AN magical damage. If the commander is unteleportable or this damage kills them, the spell ends. Otherwise, both the caster and target make rolls of Strength + Astral Level + DRN. The caster wins a tie. The loser is immediately teleported to the winner's location."
+
+#spelltype 4
+#end
