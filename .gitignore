@@ -136,3 +136,9 @@ magicgen.zip
 # pycharm things
 .idea/
 outputs/
+
+# Nuitka leftovers
+*.exe
+*.dll
+magicgen.build/
+magicgengui.build/

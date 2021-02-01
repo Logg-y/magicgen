@@ -10,11 +10,16 @@ if __name__ == "__main__":
         shutil.rmtree("dist")
     if os.path.isdir("magicgen"):
         shutil.rmtree("magicgen")
-    os.system("pyinstaller magicgen.py --onefile --window")
-    # ugly for permissions
-    os.rename("dist", "magicgen")
-    os.system("pyinstaller magicgenGUI.pyw --onefile")
-    shutil.copy("dist/magicgenGUI.exe", "magicgen/magicgenGUI.exe")
+        
+    os.mkdir("magicgen")
+        
+    os.system("python -m nuitka --follow-imports magicgen.py")
+    
+    shutil.copy("magicgen.exe", "magicgen/magicgen.exe")
+
+    os.system("python -m nuitka --follow-imports --windows-disable-console magicgengui.pyw")
+    shutil.copy("magicgenGUI.exe", "magicgen/magicgenGUI.exe")
+    shutil.copy("python38.dll", "magicgen/python38.dll")
 
     shutil.copy("LICENSE", "magicgen/LICENSE")
     shutil.copy("docs.md", "magicgen/docs.md")
@@ -26,6 +31,7 @@ if __name__ == "__main__":
     shutil.copy("fort_leader_types_by_nation.csv", "magicgen/fort_leader_types_by_nation.csv")
     shutil.copy("spells.csv", "magicgen/spells.csv")
     shutil.copy("weapons.csv", "magicgen/weapons.csv")
+    shutil.copy("nations.csv", "magicgen/nations.csv")
     shutil.copytree("data", "magicgen/data")
     shutil.copytree("unitdescr", "magicgen/unitdescr")
     os.mkdir("magicgen/output")
