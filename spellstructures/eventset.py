@@ -4,7 +4,7 @@ import re
 import random
 import math
 from spellstructures import unit
-from . import montagbuilder
+import montagbuilder
 
 UNITMOD_TO_SECONDARY_CACHE = {}
 

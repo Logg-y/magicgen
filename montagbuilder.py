@@ -1,4 +1,4 @@
-from . import utils
+from spellstructures import utils
 import math
 
 class MontagResult(object):

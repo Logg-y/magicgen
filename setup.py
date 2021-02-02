@@ -1,44 +1,112 @@
 import os
 import shutil
 import zipfile
+import time
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
 
-    if os.path.isdir("build"):
-        shutil.rmtree("build")
-    if os.path.isdir("dist"):
-        shutil.rmtree("dist")
-    if os.path.isdir("magicgen"):
-        shutil.rmtree("magicgen")
-        
-    os.mkdir("magicgen")
-        
-    os.system("python -m nuitka --follow-imports magicgen.py")
-    
-    shutil.copy("magicgen.exe", "magicgen/magicgen.exe")
+#    if os.path.isdir("build"):
+#        shutil.rmtree("build")
+#    if os.path.isdir("dist"):
+#        shutil.rmtree("dist")
+#    if os.path.isdir("magicgen"):
+#        shutil.rmtree("magicgen")
+#        
+#    os.mkdir("magicgen")
+#        
+#    os.system("python -m nuitka --standalone --python-flag=no_site magicgen.py")
+#    
+#    shutil.copy("magicgen.dist/magicgen.exe", "magicgen/magicgen.exe")
+#
+#
+#    os.system("python -m nuitka --standalone --python-flag=no_site --plugin-enable=tk-inter magicgengui.pyw")
+#    shutil.copytree("magicgengui.dist", "magicgen/")
+#    for f in os.listdir("magicgen"):
+#        if f.startswith("api-ms") or f in ["ucrtbase.dll", "vcruntime140.dll"]:
+#            os.unlink(os.path.join("magicgen", f))
+#
+#    shutil.copy("LICENSE", "magicgen/LICENSE")
+#    shutil.copy("docs.md", "magicgen/docs.md")
+#    shutil.copy("readme.md", "magicgen/readme.md")
+#    shutil.copy("changelog.txt", "magicgen/changelog.txt")
+#
+#    shutil.copy("baseu.csv", "magicgen/baseu.csv")
+#    shutil.copy("effects_weapons.csv", "magicgen/effects_weapons.csv")
+#    shutil.copy("fort_leader_types_by_nation.csv", "magicgen/fort_leader_types_by_nation.csv")
+#    shutil.copy("spells.csv", "magicgen/spells.csv")
+#    shutil.copy("weapons.csv", "magicgen/weapons.csv")
+#    shutil.copy("nations.csv", "magicgen/nations.csv")
+#    shutil.copytree("data", "magicgen/data")
+#    shutil.copytree("unitdescr", "magicgen/unitdescr")
+#    os.mkdir("magicgen/output")
+#
+#    zipf = zipfile.ZipFile("magicgen.zip", "w", zipfile.ZIP_DEFLATED)
+#    for root, dirs, files in os.walk("magicgen"):
+#        for file in files:
+#            zipf.write(os.path.join(root, file))
+#
+#    zipf.close()
+#
 
-    os.system("python -m nuitka --follow-imports --windows-disable-console magicgengui.pyw")
-    shutil.copy("magicgenGUI.exe", "magicgen/magicgenGUI.exe")
-    shutil.copy("python38.dll", "magicgen/python38.dll")
+import cx_Freeze
 
-    shutil.copy("LICENSE", "magicgen/LICENSE")
-    shutil.copy("docs.md", "magicgen/docs.md")
-    shutil.copy("readme.md", "magicgen/readme.md")
-    shutil.copy("changelog.txt", "magicgen/changelog.txt")
+if os.path.isdir("build"):
+    shutil.rmtree("build")
+	
+import re
 
-    shutil.copy("baseu.csv", "magicgen/baseu.csv")
-    shutil.copy("effects_weapons.csv", "magicgen/effects_weapons.csv")
-    shutil.copy("fort_leader_types_by_nation.csv", "magicgen/fort_leader_types_by_nation.csv")
-    shutil.copy("spells.csv", "magicgen/spells.csv")
-    shutil.copy("weapons.csv", "magicgen/weapons.csv")
-    shutil.copy("nations.csv", "magicgen/nations.csv")
-    shutil.copytree("data", "magicgen/data")
-    shutil.copytree("unitdescr", "magicgen/unitdescr")
-    os.mkdir("magicgen/output")
+# Apparently importing the actual script that is built is bad practice and may cause issues
+ver = None
+with open("magicgen.py", "r") as f:
+	for line in f:
+		m = re.match('ver = "(.*)"', line)
+		if m is not None:
+			ver = m.groups()[0]
+			print(f"Found version: {ver}")
+			break
+			
+if ver is None:
+	raise Exception("Failed to find version")
 
-    zipf = zipfile.ZipFile("magicgen.zip", "w", zipfile.ZIP_DEFLATED)
-    for root, dirs, files in os.walk("magicgen"):
-        for file in files:
-            zipf.write(os.path.join(root, file))
+build_exe_options = {"include_msvcr":False, "excludes":["distutils", "test"]}
 
-    zipf.close()
+cx_Freeze.setup(name="MagicGen", version=ver, description="MagicGen: A procedural spellbook generator for Dominions 5", options={"build_exe":build_exe_options}, executables=[cx_Freeze.Executable("magicgen.py"), cx_Freeze.Executable("magicgengui.pyw", base="Win32GUI")])
+
+# Permissions.
+time.sleep(5)
+
+buildfilename = os.listdir("build")[0]
+os.rename(f"build/{buildfilename}", f"build/magicgen-{ver}")
+
+for root, dirs, files in os.walk(f"build/magicgen-{ver}"):
+	for file in files:
+		if file.startswith("api-ms") or file in ["ucrtbase.dll", "vcruntime140.dll"]:
+			print(f"Strip file {file} from output")
+			os.unlink(os.path.join(f"build/magicgen-{ver}", file))
+		elif "api-ms" in file:
+			print(file)
+
+shutil.copy("LICENSE", f"build/magicgen-{ver}/LICENSE")
+shutil.copy("docs.md", f"build/magicgen-{ver}/docs.md")
+shutil.copy("readme.md", f"build/magicgen-{ver}/readme.md")
+shutil.copy("changelog.txt", f"build/magicgen-{ver}/changelog.txt")
+
+shutil.copy("baseu.csv", f"build/magicgen-{ver}/baseu.csv")
+shutil.copy("effects_weapons.csv", f"build/magicgen-{ver}/effects_weapons.csv")
+shutil.copy("fort_leader_types_by_nation.csv", f"build/magicgen-{ver}/fort_leader_types_by_nation.csv")
+shutil.copy("spells.csv", f"build/magicgen-{ver}/spells.csv")
+shutil.copy("weapons.csv", f"build/magicgen-{ver}/weapons.csv")
+shutil.copy("nations.csv", f"build/magicgen-{ver}/nations.csv")
+shutil.copytree("data", f"build/magicgen-{ver}/data")
+shutil.copytree("unitdescr", f"build/magicgen-{ver}/unitdescr")
+os.mkdir(f"build/magicgen-{ver}/output")
+
+# change working dir so the /build folder doesn't end up in the zip
+os.chdir("build")
+
+zipf = zipfile.ZipFile(f"magicgen-{ver}.zip", "w", zipfile.ZIP_DEFLATED)
+for root, dirs, files in os.walk(f"magicgen-{ver}"):
+    for file in files:
+        zipf.write(os.path.join(root, file))
+
+zipf.close()

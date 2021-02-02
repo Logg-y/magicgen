@@ -11,8 +11,8 @@ check mind hunt to see if I can add that back
 
 v2.1.3:
 
-Switched to building executables with Nuitka rather than PyInstaller - this should also mean that final download sizes decrease slightly
-Added nations.csv to the distribution output - I don't quite know how I managed to miss this, but it would likely cause issues somewhere
+Switched to building executables with cx_Freeze rather than PyInstaller - this means the output gets a few additional bits and pieces but otherwise should be functionally identical
+Added nations.csv to the distribution - I don't quite know how I managed to miss this, but it would likely cause issues somewhere
 
 
 v2.1.2: Fix for astral harpoon effect ending up in construction
