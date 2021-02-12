@@ -15,9 +15,6 @@ from nationalmage import NationalMage, MagePathRandom
 
 nations: Dict[int, Nation] = {}  # map nation id to nation
 
-nationals = {}
-nationinfo = {}
-
 spellids = []
 weaponids = []
 monsterids: List[int] = []

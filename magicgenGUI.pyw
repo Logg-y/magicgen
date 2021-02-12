@@ -113,7 +113,7 @@ def display_nationchoice(modstring):
             elementlists[eraint].append(box)
             categorykeys[eraint].append(key)
     # mod nations
-    for natid, modnation in nationals.nationinfo.items():
+    for natid, modnation in nationals.nations.items():
         uirow = []
         text = f"{ERA_PREFIXES.get(modnation.era, '???')} {modnation.name}"
         key = f"-NationPick{modnation.id}-"
