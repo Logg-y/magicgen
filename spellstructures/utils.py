@@ -77,6 +77,28 @@ def breakdownflag(flag):
         n += 1
 
 
+def pathstotext(path: int) -> str:
+    acc = ""
+    if path & PathFlags.FIRE:
+        acc += "F"
+    if path & PathFlags.AIR:
+        acc += "A"
+    if path & PathFlags.WATER:
+        acc += "W"
+    if path & PathFlags.EARTH:
+        acc += "E"
+    if path & PathFlags.ASTRAL:
+        acc += "S"
+    if path & PathFlags.DEATH:
+        acc += "D"
+    if path & PathFlags.NATURE:
+        acc += "N"
+    if path & PathFlags.BLOOD:
+        acc += "B"
+    if acc == "":
+        acc += "_"
+    return acc
+
 class PathFlags(enum.IntFlag):
     NONE = -1
     FIRE = 1

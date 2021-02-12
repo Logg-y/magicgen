@@ -2,42 +2,27 @@ import copy
 import csv
 import re
 
+from typing import (
+    Dict,
+    List, Union,
+)
+
+from site import Site
+
 from spellstructures import utils
+from nation import Nation
+from nationalmage import NationalMage, MagePathRandom
+
+nations: Dict[int, Nation] = {}  # map nation id to nation
 
 nationals = {}
 nationinfo = {}
 
 spellids = []
 weaponids = []
-monsterids = []
+monsterids: List[int] = []
 eventcodes = []
 montagids = []
-
-
-class Nation(object):
-    "Container for modded nation info, used for the UI only"
-    def __init__(self, id):
-        self.era = None
-        self.name = None
-        self.epithet = None
-        self.id = id
-
-
-class NationalMage(object):
-    "Container for a single national mage and its path access"
-    def __init__(self):
-        self.guaranteedpaths = 0
-        self.randompaths = 0
-        self.allpaths = 0
-
-    def update(self):
-        self.allpaths = 0
-        # get rid of holy levels
-        if self.guaranteedpaths & 256: self.guaranteedpaths -= 256
-        if self.randompaths & 256: self.randompaths -= 256
-        for flag in utils.breakdownflag(self.guaranteedpaths) + utils.breakdownflag(self.randompaths):
-            if not self.allpaths & 2 ** flag:
-                self.allpaths += 2 ** flag
 
 
 def readVanilla():
@@ -45,11 +30,11 @@ def readVanilla():
     with open("fort_leader_types_by_nation.csv", "r") as datacsv:
         reader = csv.DictReader(datacsv, delimiter="\t")
         for line in reader:
-            nation = int(line["nation_number"])
+            nationid = int(line["nation_number"])
             unit = int(line["monster_number"])
-            if nation not in nationalunits:
-                nationalunits[nation] = []
-            nationalunits[nation].append(unit)
+            if nationid not in nationalunits:
+                nationalunits[nationid] = []
+            nationalunits[nationid].append(unit)
 
     # Get their info
     unitdata = {}
@@ -58,33 +43,31 @@ def readVanilla():
         for line in reader:
             unitdata[int(line["id"])] = copy.copy(line)
 
-    for nation, units in nationalunits.items():
-        if nation not in nationals:
-            nationals[nation] = []
+    for nationid, units in nationalunits.items():
+        if nationid not in nations:
+            nations[nationid] = Nation(nationid)
         for unitid in units:
             if unitid in unitdata:
                 dataline = unitdata[unitid]
-                obj = NationalMage()
-                for index, key in enumerate(["F", "A", "W", "E", "S", "D", "N", "B", "H"]):
+                mage: NationalMage = NationalMage()
+                for index, key in enumerate(["F", "A", "W", "E", "S", "D", "N", "B"]):
                     if dataline[key] != "":
-                        obj.guaranteedpaths += 2 ** index
+                        mage.addsinglemagic(2 ** index, int(dataline[key]))
 
-                for n in range(1, 5):
+                for n in range(1, 7):
                     if dataline[f"mask{n}"] == "":
                         break
-                    mask = int(dataline[f"mask{n}"])
-                    for exponent in range(7, 16):
-                        val = 2 ** exponent
-                        if mask & val:
-                            zeroedval = 2 ** (exponent - 7)
-                            if not (obj.randompaths & zeroedval):
-                                obj.randompaths += zeroedval
+                    mask = int(dataline[f"mask{n}"]) >> 7
+                    chance = int(dataline[f"rand{n}"])
+                    instances = int(dataline[f"nbr{n}"])
+                    link = int(dataline[f"link{n}"])
+                    for i in range(instances):
+                        mage.addrandom(MagePathRandom(chance=chance, link=link, paths=mask))
 
-                # get rid of holy levels and calc obj.allpaths
-                obj.update()
+                mage.name = dataline[f"name"]
 
-                if obj.guaranteedpaths > 0 or obj.randompaths > 0:
-                    nationals[nation].append(obj)
+                if mage.ismage():
+                    nations[nationid].addmage(mage)
 
 
 def readMods(modstring):
@@ -97,44 +80,51 @@ def readMods(modstring):
     montagids = [1000]
     for mod in mods:
         mod = mod.strip()
-        if mod.strip() == "":
+        if mod == "":
             continue
         with open(mod, "r", encoding="u8") as f:
-            lastnation = None
-            foundnationend = True
-            lastunit = None
-            lastsite = None
-            lastobj = None
-            units = {}
-            siteunits = {}
-            sitenames = {}
-            startsites = {}
-            nationalunits = {}
+            currentsite: Union[Site, None] = None
+            sites: Dict[int, Site] = {}
+            sitenames: Dict[str, int] = {}
+            # TODO Sites that are defined after nations with them as startsite
+
+            currentnation: Union[Nation, None] = None
+            currentunit: Union[NationalMage,None] = None
+
+            units: Dict[int, NationalMage] = {}
 
             for line in f:
                 if "--" in line:
                     line = line[0:line.find("--")].strip()
-                if line.strip() == "": continue
                 line = line.strip()
+                if line == "": continue
+
                 m = re.match("#newmonster (\\d+)", line)
                 if m is None:
                     m = re.match("#selectmonster (\\d+)", line)
                 if m is not None:
-                    if lastunit is not None:
-                        units[lastunit] = lastobj
-                    print(f"Parsed newmonster {m.groups()[0]}")
-
-                    lastunit = int(m.groups()[0])
-                    monsterids.append(int(m.groups()[0]))
-                    lastobj = NationalMage()
+                    unitid = int(m.groups()[0])
+                    print(f"Parsed newmonster {unitid}")
+                    if unitid not in units:
+                        units[unitid] = NationalMage()
+                        units[unitid].id = unitid
+                        monsterids.append(unitid)
+                    currentunit = units[unitid]
                 elif line.startswith("#newmonster"):
                     newid = max(monsterids) + 1
+                    units[newid] = NationalMage()
                     monsterids.append(newid)
+                    currentunit = units[newid]
+                    currentunit.id = newid
 
                 m = re.match("#montag (\\d+)", line)
                 if m is not None:
+                    del units[currentunit.id]
+                    montagids.remove(currentunit.id)
                     newid = int(m.groups()[0])
                     montagids.append(newid)
+                    units[newid] = currentunit
+                    currentunit.id = newid
                     print(f"Parsed montag {newid}")
 
                 m = re.match("#code (.+)", line)
@@ -173,104 +163,82 @@ def readMods(modstring):
                     newid = max(weaponids) + 1
                     weaponids.append(newid)
 
-
                 m = re.match("#selectnation (\\d+)", line)
                 if m is not None:
-                    print(f"Parsed selectnation {m.groups()[0]}")
-                    lastnation = int(m.groups()[0])
-                    foundnationend = False
-                    nationals[lastnation] = []
-                    nationinfo[lastnation] = Nation(lastnation)
+                    nationid = int(m.groups()[0])
+                    print(f"Parsed selectnation {nationid}")
+                    if nationid not in nations:
+                        nations[nationid] = Nation(nationid)
+                    currentnation = nations[nationid]
 
                 m = re.match("#newsite (\\d*)", line)
                 if m is not None:
-                    print(f"Parsed newsite {m.groups()[0]}")
-                    lastsite = int(m.groups()[0])
+                    siteid = int(m.groups()[0])
+                    print(f"Parsed newsite {siteid}")
+                    currentsite = Site(siteid)
+                    sites[siteid] = currentsite
 
                 m = re.match("#name [\"](.+)[\"]", line)
                 if m is not None:
-                    if m.groups()[0] not in sitenames:
-                        print(f"Attach site name {m.groups()[0]} to {lastsite}")
-                        sitenames[m.groups()[0]] = lastsite
-
-                    if not foundnationend:
-                        nationinfo[lastnation].name = m.groups()[0]
+                    name = m.groups()[0]
+                    if currentsite is not None:
+                        print(f"Attach site name {name} to {currentsite}")
+                        currentsite.name = name
+                        sitenames[name] = currentsite.id
+                    elif currentnation is not None:
+                        print(f"Attach nation name {name} to {currentnation}")
+                        currentnation.name = name
 
                 m = re.match("#era (.+)", line)
                 if m is not None:
-                    nationinfo[lastnation].era = int(m.groups()[0])
+                    currentnation.era = int(m.groups()[0])
 
                 m = re.match("#homecom (\\d+)", line)
                 if m is not None:
-                    if lastsite not in siteunits:
-                        siteunits[lastsite] = []
-                    siteunits[lastsite].append(int(m.groups()[0]))
-                    print(f"Assign Commander {m.groups()[0]} to site {lastsite}")
+                    unitid = int(m.groups()[0])
+                    currentsite.mages.append(units[unitid])
+                    print(f"Assign Commander {unitid} to site {currentsite}")
 
                 m = re.match("#startsite [\"](.+)[\"]", line)
                 if m is not None:
-                    if lastnation not in startsites:
-                        startsites[lastnation] = []
-                    print(f"Assign startsite {m.groups()[0]} as belonging to {lastnation}")
-                    startsites[lastnation].append(m.groups()[0])
+                    name = m.groups()[0]
+                    currentnation.sites.append(sites[sitenames[name]])
+                    print(f"Assign startsite {name} as belonging to {currentnation}")
 
                 m = re.match("#addreccom (\\d+)", line)
                 if m is not None:
-                    if lastnation not in nationalunits:
-                        nationalunits[lastnation] = []
-                    print(f"{m.groups()[0]} is a recruitable commander of {lastnation}")
-                    nationalunits[lastnation].append(int(m.groups()[0]))
+                    unitid = int(m.groups()[0])
+                    print(f"{unitid} is a recruitable commander of {currentnation}")
+                    currentnation.addmage(units[unitid])
 
                 if line.strip() == "#disableoldnations":
                     print(f"found disableoldnations")
                     for x in range(0, 120):
-                        if x in nationals:
-                            if x not in nationinfo:
-                                del nationals[x]
+                        del nations[x]
 
                 if line.strip() == "#end":
-                    if not foundnationend:
-                        print(f"found nation end")
-                        foundnationend = True
+                    print(f"Found #end")
+                    currentnation = None
+                    currentsite = None
+                    currentunit = None
 
                 m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:
-                    path = int(m.groups()[0])
-                    if path not in utils.breakdownflag(lastobj.guaranteedpaths):
-                        print(f"Give guaranteed path {path} to current commander")
-                        lastobj.guaranteedpaths += 2 ** path
+                    path = int(int(m.groups()[0]))
+                    level = int(m.groups()[1])
+                    print(f"Give guaranteed path {path} of strength {level} to current commander")
+                    currentunit.addsinglemagic(path, level)
 
                 m = re.match("#custommagic (\\d+) (\\d+)", line)
                 if m is not None:
-                    mask = int(m.groups()[0])
-                    for path in [0, 1, 2, 3, 4, 5, 6, 7, 8]:
-                        if mask & 2 ** (path + 7):
-                            if path not in utils.breakdownflag(lastobj.randompaths):
-                                print(f"Give random path {path} to current commander")
-                                lastobj.randompaths += 2 ** path
-
-        for nation, sitelist in startsites.items():
-            for sitename in sitelist:
-                if sitename not in sitenames:
-                    print(f"Warning: didn't parse site called {sitename}, skipped")
-                    continue
-                site = sitenames[sitename]
-                if site in siteunits:
-                    for unit in siteunits[site]:
-                        if unit not in units:
-                            print(f"Warning: Site apparently allows unit {unit} but this is not a modded unit, ignored")
-                            continue
-                        obj = units[unit]
-                        obj.update()
-                        if obj.guaranteedpaths > 0 or obj.randompaths > 0:
-                            nationals[nation].append(obj)
-
-        for nation, unitlist in nationalunits.items():
-            for unit in unitlist:
-                if unit not in units:
-                    print(f"Unit {unit} not found in parsed mod, skipped")
-                    continue
-                obj = units[unit]
-                obj.update()
-                if obj.guaranteedpaths > 0 or obj.randompaths > 0:
-                    nationals[nation].append(obj)
+                    mask = int(m.groups()[0]) >> 7
+                    chancemask = int(m.groups()[1])
+                    if chancemask > 100:
+                        chance = 100
+                        link = int(chancemask / 100)
+                    else:
+                        link = 1
+                        chance = chancemask
+                    random = MagePathRandom(paths=mask, chance=chance, link=link)
+                    print(f"Give random path {mask} to current commander")
+                    currentunit.addrandom(random)
