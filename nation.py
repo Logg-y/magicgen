@@ -20,7 +20,6 @@ class Nation(object):
         self.sites: List[Site] = []
         self.mages: List[NationalMage] = []
 
-
     def addmage(self, mage: NationalMage):
         if (mage not in self.mages):
             self.mages.append(mage)
@@ -33,11 +32,26 @@ class Nation(object):
         for mage in self.mages:
             for i in range(0, 8):
                 weights[2 ** i] += mage.getlevelinpath(2 ** i)
+            for random in mage.randoms:
+                randomweight = float(random.chance * random.link)
+                randompaths = random.getpossiblepaths()
+                randomweight = randomweight / len(randompaths)
+                for i in randompaths:
+                    weights[i] += randomweight
 
         # _writetoconsole(f"Mages:{self.mages}\nWeights:{weights}")
 
-        # TODO include randoms
-        return weights
+        # touch up output for compatability
+        output: Dict[int, int] = {}
+        hasweight = False
+        for i in weights:
+            output[i] = int(round(weights[i]))
+            if output[i] != 0:
+                hasweight = True
+        if not hasweight:  # If all weights are 0 set all to 1
+            for i in output:
+                output[i] = 1
+        return output
 
     def getcommanderwithpath(self, path: int) -> Union[NationalMage, None]:
         random.shuffle(self.mages)
@@ -57,5 +71,5 @@ class Nation(object):
         acc += "]"
         return acc
 
-    # def printmages(self):
-    # _writetoconsole(self.totext() + "\n")
+    def hasmages(self) -> bool:
+        return len(self.mages) > 0

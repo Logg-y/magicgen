@@ -255,10 +255,11 @@ def _rollpathfornationalspell(nation: Nation) -> int:
     for i, weight in pathweights.items():
         totalweights += weight
     if totalweights == 0:
-        _writetoconsole(f"Failed calculating values.\n"
+        _writetoconsole(f"Failed calculating national spell path weights.\n"
                         f"Nation: {nation.totext()}\n"
                         f"Weights: {pprint.pformat(pathweights)}\n"
                         f"Total Weight: {totalweights}")
+        raise ValueError
     initialroll = roll = random.randrange(0, totalweights, 1)
     for path, weight in pathweights.items():
         if roll < weight:
@@ -266,6 +267,7 @@ def _rollpathfornationalspell(nation: Nation) -> int:
         roll -= weight
     _writetoconsole(f"Attempted and failed to roll for weighted path\n  Rolled {initialroll}\n  Total weight: "
                     f"{totalweights}\n  Weights: {pprint.pformat(pathweights)}\n")
+    raise ValueError
 
 
 def _selectresearchlevel(researchlevelstotry: List[int], generatedeffectsatlevels: Dict[int, List[str]]) -> int:
@@ -293,11 +295,13 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
         if index % 20 == 0:
             _writetoconsole(f"Progress: Beginning nation {index} of {nationcount}...\n")
         index += 1
+        if not nation.hasmages():
+            _writetoconsole(f"Skipping nation {nation.totext()} because no national mages were found")
+            continue
         effectpool = copy.copy(spelleffects)
         numberofgeneratedspells[nationid] = 0
 
         while numberofgeneratedspells[nationid] < targetnumberofnationalspells:
-            # TODO escape when no national mages (or all pathweights = 0)
             primarypath = _rollpathfornationalspell(nation)
             # _writetoconsole(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n")
 
@@ -336,7 +340,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             for attempt in range(0, 2):
                 if attempt == 0:
                     spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                   forcesecondaryeff=commander.getpossiblepaths(),
+                                                   forcesecondaryeff=commander.getpossiblepathsmask(),
                                                    allowblood=allowblood, allowskipchance=False,
                                                    setparams={"restricted": nation}, **options)
                 else:

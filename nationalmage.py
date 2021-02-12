@@ -11,6 +11,12 @@ class MagePathRandom(object):
         self.link: int = link  # amount of levels it gives
         self.paths: int = paths  # path mask
 
+    def getpossiblepaths(self) -> List[int]:
+        acc = []
+        for i in range(0, 8):
+            if self.paths & (2 **i):
+                acc.append(2 ** i)
+        return acc
 
 class NationalMage(object):
     "Container for a single national mage and its path access"
@@ -45,7 +51,7 @@ class NationalMage(object):
                 return True
         return (self.pathmask & path) != 0
 
-    def getpossiblepaths(self) -> int:
+    def getpossiblepathsmask(self) -> int:
         acc: int = self.pathmask
         for random in self.randoms:
             acc |= random.paths
