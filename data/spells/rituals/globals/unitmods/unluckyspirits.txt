@@ -1,0 +1,12 @@
+#newunitmod "Unlucky Spirits"
+-- This is responsible for the timer of 3 turns
+#landdamage 30
+#uwdamage 30
+#set bringeroffortune -20
+#set stealthy 999
+#set invisibility 1
+#set hp 10
+-- become mindless in case mind hunt somehow makes its way into magicgen
+#set morale 50
+#nameprefix "Disastrous"
+#end

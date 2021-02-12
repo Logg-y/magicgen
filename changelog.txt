@@ -1,13 +1,99 @@
 TODO
 
 unique summons
-add a toggle for wiping vanilla national spells
-a global that does good transformations
-a spell that transforms you interestingly
 a flag that makes spells always cost gems under all circumstances for magic explodes style generations
-global blood spell cost increaser
-ritual that picks a random commander in the province, pathboosting it and banishing it
 check mind hunt to see if I can add that back
+
+Test modular events, make sure things didn't break
+
+
+Commanders:
+
+Sailing
+#teleport
+#falsearmy
+fortune teller
+pd organiser
+scale alterations
+farcaster
+inspiring researchers
+fixed forge bonus
+temp gems
+pearl cultivator
+carcass collector
+master smith, ritual master
+fast casting
+inspirational
+
+
+corpse eater: hpoverslow and deadhp
+
+add the valid unit modifiers to globals
+
+bleeding spell
+test things
+
+
+v2.1.4:
+
+ADDITIONS:
+
+Added an option to scale the cost of blood rituals
+Added options to allow not clearing vanilla generic and/or national spells (thanks Megu for providing the national spell list here!)
+Telestic animate summons (both ritual and in battle) have made a return - somehow these escaped the initial summon pass
+Added a modular global effect that spawns bad events in the affected provinces
+Added a ranged swallowing spell for nature
+Added a global that transforms commanders within friendly dominion
+
+NEW SUMMON MODIFICATIONS:
+
+Power of the turning year
+Invisibility
+Formation Fighter
+Unsurroundable
+Enlargement and shrinkage
+Sailing
+Teleportation
+False army
+Defence organiser
+Scale alterations
+Far caster
+Inspiring researcher
+Fixed forge bonus (1 only)
+Temp gems for appropriate paths
+Pearl cultivator
+Carcass collector
+Master smith
+Ritual master
+Fast casting
+Corpse eater
+Inspirational
+
+
+CHANGES:
+
+The recuperation and glamour summon modifiers now have name prefixes (thanks Arcvasti)
+Fire ants, firebirds, killer mantis, and salamanders no longer make the howl noise when summoned in battle
+Heat aura is no longer cast off script to eliminate the risk of unfortunate and unexpected burning
+Most mages are now given some value of #indepspells, which lets them use spells up to the listed research level. By default, most chassis' spell lists are hardcoded and perhaps upsurprisingly removing generic spells caused them to have nothing to cast. The values given are an attempt to keep to vanilla power. This will increase generation time considerably if BaseU.csv is changed.
+Increased the default montag size multiplier to 2.0. This means that summoning globals spawn a wider variety of units.
+Increased the chassis value of most summoned mages. This should have little to no effect visible effect on generation, but was necessary for the enlargement modifiers
+Unit descriptions are now cached in memory. This decreases generation time somewhat
+
+DETAILS (yellow text) IMPROVEMENTS:
+
+Burden of time now lists the chance to age units - it is (41 + 4*death scale)%
+Added for bonds of fire (morale + DRN > 21 to escape, 3 AN fire damage when this happens)
+Added for false fetters (MR + DRN > 20 to escape)
+Added for slime (MR + DRN > 21 to end)
+Added details of marking and attacks for Dome of Corruption
+Added for Astral Corruption
+
+FIXES:
+
+The weapon modifiers bestowing multiplicative damage, partial life drain, granting the AP modifier, or reanimating as soulless no longer apply to weapons which did not do standard damage to begin with. These effects would otherwise cause these weapons to inflict the altered damage type instead of their original function.
+Transformation global enchantments can no longer affect immobile commanders
+Summon modifiers with conditions now check against all of the unit's alternate forms as well
 
 v2.1.3:
 

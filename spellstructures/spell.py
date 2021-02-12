@@ -978,6 +978,10 @@ class SpellEffect(object):
         s.path1level = min(9, s.path1level)
         s.path2level = min(9, s.path2level)
 
+        # Blood ritual cost multiplier
+        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & utils.SpellTypes.RITUAL):
+            s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
+
 
         # Fill in placeholders in modcmdsbefore
         # This is event stuff

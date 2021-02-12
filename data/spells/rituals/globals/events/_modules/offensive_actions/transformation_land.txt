@@ -139,5 +139,6 @@
 #req_targgod 0
 #transform UNITID
 #req_land 1
+#req_targimmobile 0
 #msg "One of your commanders has suddenly turned into a strange creature!"
 #nolog

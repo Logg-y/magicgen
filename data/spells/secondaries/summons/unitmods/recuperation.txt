@@ -4,5 +4,6 @@
 #req hp > 10
 #req woundfend == -1
 #set heal 1
+#nameprefix "Recuperating"
 #descr "This particular CREATURE has been imbued by magic that allows it heal wounds and afflictions over time."
 #end

@@ -1,6 +1,6 @@
 #newweaponmod "Lifedrainweapon"
 #setweaponmagic 1
-#effect == 2
+#req effect == 2
 #extracommand dt_weapondrain
 #nameprefix "Vampiric"
 #end

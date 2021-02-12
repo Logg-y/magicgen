@@ -4,17 +4,19 @@ import csv
 import os
 import random
 import sys
+import binascii
 
 import fileparser
 import nationals
 from spellstructures import utils
+from spellstructures import unit
 
 # List of spells to not push to uncastable: these are only divine spells
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.3"
+ver = "2.1.4"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -29,6 +31,7 @@ def _writetoconsole(line):
 
 
 def rollspells(**options):
+    global spellstokeep
     utils.WEAPON_ID = options.get("weaponidstart", 800)
     utils.MONSTER_ID = options.get("unitidstart", 3500)
     utils.SPELL_ID = options.get("spellidstart", 1300)
@@ -262,17 +265,116 @@ def rollspells(**options):
                             researchlevel = researchlevelstotry.pop(0)
                             effectpool = copy.copy(s)
 
-            _writetoconsole(f"Writing output {outfp}...\n")
+            _writetoconsole(f"Beginning to write output {outfp}...\n")
             f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
             f.write("#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
                 '"', ver, len(l), '"')
             )
-            for x in range(1, 1 + START_ID):
-                if x not in spellstokeep:
+
+            nationalspells = []
+
+            with open("Dom5-natspells-list.txt", "r") as natspells:
+                foundheader = False
+                for line in natspells:
+                    if not foundheader:
+                        if line.startswith("--"):
+                            foundheader = True
+                        continue
+                    if line.strip() == "":
+                        continue
+                    nationalspells.append(int(line.strip()))
+
+
+            if not bool(options.get("clearvanillanationalspells", 1)):
+                spellstokeep += nationalspells
+
+            _writetoconsole(f"Hiding vanilla spells...\n")
+            for x in range(1, 3501):
+                removespell = x not in spellstokeep
+                if removespell and bool(options.get("clearvanillagenericspells")) == False:
+                    if x not in nationalspells:
+                        removespell = False
+                if removespell:
                     f.write(f"#selectspell {x}\n")
                     f.write(f"#school -1\n")
                     f.write(f"#researchlevel -1\n")
                     f.write(f"#end\n")
+
+
+            # add #indepspells to casters
+            if bool(options.get("clearvanillagenericspells")):
+                # Check crc32 for saved BaseU.csv
+                crcokay = False
+                with open("indepspells.dm", "r") as indepspells:
+                    indepspellscontent = indepspells.read()
+                    crc = indepspellscontent.split("\n")[0][2:].strip()
+                    with open("BaseU.csv", "rb") as baseu:
+                        baseucontent = baseu.read()
+                        baseucrc = str(binascii.crc32(baseucontent))
+                    if crc == baseucrc:
+                        crcokay = True
+                        indepspells.seek(0)
+                        for line in indepspells:
+                            f.write(line)
+
+                if not crcokay:
+                    _writetoconsole(f"BaseU CRC {baseucrc} did not match precalced CRC {crc}!"
+                                    f" Regenerating indepspells.dm...\n")
+                    indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
+                                         f"mod files when magicgen clears vanilla generic spells.\n" \
+                                         f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
+                                         f"- this is saved as generating this from scratch takes several minutes\n"
+                    for unitid in range(0, 3500):
+                        if unitid % 100 == 0:
+                            _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
+                        try:
+                            unitobj = unit.get(unitid)
+                        except Exception:
+                            pass
+                        # leave illwinter-set values intact
+                        if hasattr(unitobj, "indepspells"):
+                            if int(getattr(unitobj, "indepspells")) > 0:
+                                continue
+                        indeplevel = None
+
+                        if hasattr(unitobj, "startdom"):
+                            if int(getattr(unitobj, "startdom")) > 0:
+                                indeplevel = 7
+
+                        if indeplevel is None:
+                            totalmagiclevel = 0
+                            for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
+                                if getattr(unitobj, path, "") <= 0:
+                                    continue
+                                pathval = int(getattr(unitobj, path, 0))
+                                if pathval > 0:
+                                    totalmagiclevel += pathval
+
+                            for n in range(1, 5):
+                                mask = f"mask{n}"
+
+                                if getattr(unitobj, mask, "") == "":
+                                    break
+                                mask = int(getattr(unitobj, mask, 0))
+                                nbr = int(getattr(unitobj, f"nbr{n}"))
+                                # This assumes you get ALL of your randoms, no matter how rare
+                                totalmagiclevel += nbr
+
+                            if totalmagiclevel >= 3:
+                                indeplevel = 5
+                            elif totalmagiclevel == 2:
+                                indeplevel = 4
+                            elif totalmagiclevel == 1:
+                                indeplevel = 3
+
+                        if indeplevel is not None:
+                            indepspellscontent += f"#selectmonster {unitid}\n"
+                            indepspellscontent += f"#indepspells {indeplevel}\n"
+                            indepspellscontent += f"#end\n"
+                    with open("indepspells.dm", "w") as indepspells:
+                        indepspells.write(indepspellscontent)
+                        f.write(indepspellscontent)
+
 
             print(f"There are {len(l)} spells to write!")
             for spell in l:
@@ -417,6 +519,19 @@ def main():
                        help='Scale the number of units in montags. '
                             'Lower this if experiencing "monster ID too high" errors.',
                        type=float, default=1.0))
+
+    opts.append(Option("-bloodcostscale",
+                       help='Blood ritual spell costs are multiplied by this value. '
+                            'Set to a value greater than 1.0 if you believe MagicGen blood is too strong.',
+                       type=float, default=1.0))
+
+    opts.append(Option("-clearvanillanationalspells",
+                       help='If set to 1, vanilla national spells will all be removed. ',
+                       type=int, default=1))
+
+    opts.append(Option("-clearvanillagenericspells",
+                       help='If set to 1, vanilla national spells will all be removed. ',
+                       type=int, default=1))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",

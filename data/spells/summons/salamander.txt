@@ -8,7 +8,7 @@
 #pathlevel 2
 #fatiguecost 80
 #scalefatiguemult 40
-#sound 26
+#sound 31
 #schools 1
 
 #paths 1

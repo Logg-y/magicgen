@@ -1,0 +1,15 @@
+#newsecondary "Summon Power of the Turning Year"
+
+#anysummon 1
+
+#paths 15
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.5
+
+#unitmod "Summon Power of Turning Year"
+#descr "The summoned %creature% %is% more powerful in the height of each season."
+
+#end

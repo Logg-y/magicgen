@@ -1,0 +1,111 @@
+#newsecondary "Summon Formationfighter 2"
+
+#anysummon 1
+
+#paths 0
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+
+#unitmod "Summon Formationfighter 2"
+#descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 3"
+
+#anysummon 1
+
+#paths 0
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.325
+
+#unitmod "Summon Formationfighter 3"
+#descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 4"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.45
+
+#unitmod "Summon Formationfighter 4"
+#descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 5"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.45
+
+#unitmod "Summon Formationfighter 5"
+#descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 6"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.45
+
+#unitmod "Summon Formationfighter 6"
+#descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 2 greater"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Formationfighter 2 greater"
+#descr "The summoned %creature% %is% very adept at fighting in proximity with others, and can fit more units into one square."
+
+#end
+
+#newsecondary "Summon Formationfighter 3 greater"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.45
+
+#unitmod "Summon Formationfighter 3 greater"
+#descr "The summoned %creature% %is% very adept at fighting in proximity with others, and can fit more units into one square."
+
+#end

@@ -1,0 +1,6 @@
+#newunitmod "Summon Unsurroundable"
+#req unsurr == -1
+#set unsurr 2
+#nameprefix "Aware"
+#descr "This particular CREATURE has been magically made more aware of its surroundings, making it more effective at defending itself from multiple assailants."
+#end
