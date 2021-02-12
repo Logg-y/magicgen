@@ -3,8 +3,9 @@ import copy
 import csv
 import os
 import random
-import sys
 import binascii
+import sys
+
 
 import fileparser
 import nationals
