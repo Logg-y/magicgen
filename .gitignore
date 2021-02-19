@@ -127,8 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-*.dm
+output/*.dm
 log.txt
 magicgen/
 magicgen.zip
@@ -140,5 +139,3 @@ outputs/
 # Nuitka leftovers
 *.exe
 *.dll
-magicgen.build/
-magicgengui.build/

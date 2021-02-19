@@ -131,6 +131,54 @@
 #allowedunitmod "Summon DmgVsDemonsOnly"
 #allowedunitmod "Summon Webweapon"
 
+#allowedunitmod "Summon Power of Turning Year"
+#allowedunitmod "Summon Invisibility"
+#allowedunitmod "Summon Formationfighter 2"
+#allowedunitmod "Summon Formationfighter 3"
+#allowedunitmod "Summon Formationfighter 4"
+#allowedunitmod "Summon Formationfighter 5"
+#allowedunitmod "Summon Formationfighter 6"
+#allowedunitmod "Summon Formationfighter 2 greater"
+#allowedunitmod "Summon Formationfighter 3 greater"
+#allowedunitmod "Summon Unsurroundable"
+#allowedunitmod "Summon Enlarge 1"
+#allowedunitmod "Summon Enlarge 2"
+#allowedunitmod "Summon Enlarge 3"
+#allowedunitmod "Summon Enlarge 4"
+#allowedunitmod "Summon Shrink 1"
+#allowedunitmod "Summon Shrink 2"
+#allowedunitmod "Summon Teleport"
+
+#allowedunitmod "Summon Falsearmy Large"
+#allowedunitmod "Summon Falsearmy Large2"
+#allowedunitmod "Summon Falsearmy Small"
+#allowedunitmod "Summon Falsearmy Small2"
+#allowedunitmod "Summon Farcaster 25"
+#allowedunitmod "Summon Farcaster 50"
+#allowedunitmod "Summon Inspiring Researcher"
+#allowedunitmod "Summon Fixed Forge Bonus"
+#allowedunitmod "Summon Percentage Forge Bonus"
+#allowedunitmod "Summon Tempfiregems 1"
+#allowedunitmod "Summon Tempfiregems 2"
+#allowedunitmod "Summon Tempairgems 1"
+#allowedunitmod "Summon Tempairgems 2"
+#allowedunitmod "Summon Tempwatergems 1"
+#allowedunitmod "Summon Tempwatergems 2"
+#allowedunitmod "Summon Tempearthgems 1"
+#allowedunitmod "Summon Tempearthgems 2"
+#allowedunitmod "Summon Tempastralgems 1"
+#allowedunitmod "Summon Tempastralgems 2"
+#allowedunitmod "Summon Tempdeathgems 1"
+#allowedunitmod "Summon Tempdeathgems 2"
+#allowedunitmod "Summon Tempnaturegems 1"
+#allowedunitmod "Summon Tempnaturegems 2"
+#allowedunitmod "Summon Pearlcultivator"
+#allowedunitmod "Summon Carcasscollector"
+#allowedunitmod "Summon Fastcaster 25"
+#allowedunitmod "Summon Fastcaster 50"
+
+#allowedunitmod "Summon Corpseeater Cmdr"
+
 
 
 
@@ -139,5 +187,6 @@
 #req_targgod 0
 #transform UNITID
 #req_land 1
+#req_targimmobile 0
 #msg "One of your commanders has suddenly turned into a strange creature!"
 #nolog

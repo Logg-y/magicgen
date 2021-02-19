@@ -1,0 +1,55 @@
+#newunitmod "Summon Formationfighter 2"
+#req formationfighter == -1
+#req size == 2
+#set formationfighter 2
+#nameprefix "Organised"
+#descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 3"
+#req formationfighter == -1
+#req size == 3
+#set formationfighter 3
+#nameprefix "Organised"
+#descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 4"
+#req formationfighter == -1
+#req size == 4
+#set formationfighter 4
+#nameprefix "Organised"
+#descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 5"
+#req formationfighter == -1
+#req size == 5
+#set formationfighter 5
+#nameprefix "Organised"
+#descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 6"
+#req formationfighter == -1
+#req size == 6
+#set formationfighter 6
+#nameprefix "Organised"
+#descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 2 greater"
+#req formationfighter == -1
+#req size == 2
+#set formationfighter 4
+#nameprefix "Organised"
+#descr "This particular CREATURE is extremely adept at fighting when surrounded by its comrades and can form more dense formations."
+#end
+
+#newunitmod "Summon Formationfighter 3 greater"
+#req formationfighter == -1
+#req size == 3
+#set formationfighter 6
+#nameprefix "Organised"
+#descr "This particular CREATURE is extremely adept at fighting when surrounded by its comrades and can form more dense formations."
+#end

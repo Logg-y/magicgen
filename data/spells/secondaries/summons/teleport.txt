@@ -1,0 +1,15 @@
+#newsecondary "Summon Teleport"
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Teleport"
+#descr "The summoned %creature% %is% able to instantly teleport across great distances."
+
+#end

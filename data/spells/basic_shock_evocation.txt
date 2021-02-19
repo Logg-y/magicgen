@@ -425,7 +425,7 @@
 #damage 1002
 #spec 8407168
 #aoe 666
-#power 1
+#power 13
 #maxpower 13
 #skipchance 20
 #nreff 1

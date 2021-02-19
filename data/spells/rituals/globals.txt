@@ -39,6 +39,7 @@
 
 #name 128 "Astral Corruption"
 #descr 128 "This horrible ritual is the cause of Blood magic being banned in ancient times. With an awesome sacrifice, the fabric of astral space becomes tainted with blood. All spell casting uses the tainted Arcana and attracts the attention of Horrors. Every time a non-Blood magic ritual is cast or a magic item is forged, there is a chance that a Horror will follow the arcane flow and attack the mage."
+#details "Increases the impact of most horror-related activities, but does not stack with the Cataclysm. Pretenders have a 0.5% chance per turn to be attacked by the Eater of Gods, even if not horror marked. Heroes (in the Hall of Fame) have a 0.2% chance per turn to be attacked by the Hunter of Heroes.\nForging and ritual attack probability approximately ((Mage's Horror Marks * 20) + 1 - Province's Drain scale + number of gems spent) / 35. Items costing multiple gem types are evaluated separately."
 
 #spelltype 4
 #scalerate 0
@@ -81,7 +82,7 @@
 
 #name 32 "Burden of Time"
 #descr 32 "This evil enchantment will make everyone in the world age at a highly accelerated rate. Unrest will increase in the entire world and soldiers will soon become crippled and useless. While this enchantment is active, the world will become more and more desolate until everyone dies."
-#details "Worldwide Population loss about -2%, slightly reduced or increased by growth/death scales, worldwide Unrest +d4, aging for units greatly increased."
+#details "Worldwide Population loss about -2%, slightly reduced or increased by growth/death scales, worldwide Unrest +d4. Units have a (41 + 4*Death scale)% chance to be aged 1d4 years (non-exploding)."
 
 #spelltype 4
 #scalerate 0
@@ -732,7 +733,7 @@
 
 #name 128 "The Looming Hell"
 #descr 128 "Devils will appear in the dreams of some unfortunate enemies whenever they try to sleep. These Devils, through various threats, will try to persuade their victims to sell their souls and join in the killing of their own commander. The strength of the threats depends on the strength of the God's Dominion, but extreme courage is always required to defy the Devils. The Devils are totally powerless if they are unable to persuade any victims, which may well happen should the enemy commander be more feared than they are."
-#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear)."
+#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear). There is a 5% chance per point of dominion for any given check to not count to the limit of 5."
 
 #spelltype 4
 #scalerate 0

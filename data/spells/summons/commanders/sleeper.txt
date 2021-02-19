@@ -45,7 +45,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 600
-#chassisvalue 400
+#chassisvalue 600
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

@@ -2,4 +2,5 @@
 #req illusion == -1
 #set illusion 1
 #descr "This particular CREATURE has been imbued by magic that causes it to project distorted images of itself, making it hard to see or hit in combat."
+#nameprefix "Illusory"
 #end

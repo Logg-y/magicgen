@@ -31,6 +31,7 @@
 
 #descr 1 "Shackles of fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
 #descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
+#details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
 #end
 

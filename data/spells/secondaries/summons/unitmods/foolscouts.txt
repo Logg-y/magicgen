@@ -1,0 +1,6 @@
+#newunitmod "Summon Foolscouts"
+#set foolscouts 20
+#nameprefix "Disguising"
+#req leader >= 60
+#descr "This particular CREATURE is able to magically alter the appearance of units under its command, making them all look the same to prying eyes."
+#end

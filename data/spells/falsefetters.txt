@@ -35,6 +35,7 @@
 
 #descr 2 "$illusory$ $fetters$ spring into existence around the ankles of SUBJECT. Their magic must be overcome in order to take actions."
 #descr 128 "$BLOOD_INTRO$, infernal powers bind the ankles of SUBJECT with $illusory$ $fetters$. Their magic must be overcome in order to take actions."
+#details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
 
 #end
 

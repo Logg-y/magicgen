@@ -5,6 +5,7 @@ from copy import copy
 from . import weapon
 
 cache = {}
+descriptioncache = {}
 
 
 class Unit(object):
@@ -22,6 +23,7 @@ class Unit(object):
 
     @staticmethod
     def from_line(line):
+        global descriptioncache
         self = Unit()
         self.line = line
         id = int(line["id"])
@@ -41,10 +43,14 @@ class Unit(object):
                 self.weapons.append(weapon.get(getattr(self, f"wpn{x}")))
 
         self.descr = ""
-        fp = os.path.join("./unitdescr", f"{str(self.origid).zfill(4)}.txt")
-        if os.path.isfile(fp):
-            with open(fp, "r") as f:
-                self.descr = f.read()
+        if self.id in descriptioncache:
+            self.descr = copy(descriptioncache[self.id])
+        else:
+            fp = os.path.join("./unitdescr", f"{str(self.origid).zfill(4)}.txt")
+            if os.path.isfile(fp):
+                with open(fp, "r") as f:
+                    self.descr = f.read()
+            descriptioncache[self.id] = copy(self.descr)
         return self
 
 

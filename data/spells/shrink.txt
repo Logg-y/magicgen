@@ -1,0 +1,66 @@
+#neweffect "Shrinkage"
+#effect 11
+#damage 4294967296	
+#spec 8671232
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.3
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 6
+#pathlevel 2
+#explspr 10041
+#sound 31
+#fatiguecost 15
+#precision 4
+#range 5025
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Shrink"
+#descr 64 "This spell causes SUBJECT to become permanently shrunken."
+#details "Shrunken: -1 Size, -30% HP, -3 Strength, -2 Map Move, +1 Defence Skill."
+
+
+
+#end
+
+
+
+#neweffect "Battlefield Shrinkage"
+#effect 11
+#damage 4294967296	
+#spec 25182208
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0
+-- #scalecost 0
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 5
+#explspr 10041
+#sound 31
+#fatiguecost 200
+#precision 100
+#range 100
+
+#paths 128
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 128 "Mass Shrinkage"
+#descr 128 "The caster attempts to cause all creatures on the battlefield to become permenantly shrunken."
+#details "Shrunken: -1 Size, -30% HP, -3 Strength, -2 Map Move, +1 Defence Skill."
+#end

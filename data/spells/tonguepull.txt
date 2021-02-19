@@ -1,0 +1,69 @@
+#neweffect "Tongue Swallow"
+#effect 116
+#damage 1
+#spec 9453696
+#schools -1
+
+#spelltype 66
+
+#scalerate 0
+-- #scalecost 1.6
+#skipchance 0
+
+#aoe 0
+#power 0
+#maxpower 20
+#pathlevel 1
+#sound 18
+#fatiguecost 10
+#precision 100
+#range 100
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+
+#name 64 "Tongue Swallow"
+
+
+#end
+
+#neweffect "Tongue Spell"
+#copyspell "Leech"
+#effect 2
+#damage 1010
+#spec 3458764513828945984
+#schools 34
+
+#spelltype 66
+
+#scalerate 1
+#scalefatigueexponent -0.33
+-- #scalecost 1.6
+#skipchance 50
+
+#aoe 0
+#power 3
+#maxpower 9
+#pathlevel 2
+#sound 18
+#fatiguecost 20
+#precision 7
+#range 5025
+
+#skipexplspr 1
+#skipflightspr 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#nextspell "Tongue Swallow"
+
+#name 64 "Tongue Pull"
+#descr 64 "The caster's tongue suddenly grows to immense proportions and rapidly lashes out towards a target. The magical tongue attempts to physically attack its victim. If this is successful, the tongue attempts to ensnare and rapidly pull the target into their mouth, swallowing them whole. Only victims smaller than the caster may be swallowed."
+#details "Initially inflicts untyped AP magical damage, MR check for half damage. Inflicting damage triggers the swallowing portion of the tongue, which does not affect those larger than or the same size as the caster. This can be resisted by making a defence skill check against 3d6 (exploding), not including penalties from fatigue or modifiers from weapons. This spell does not confer any digestive ability, and those swallowed will remain inside the caster until combat ends (at which point they die) or the caster is killed (which triggers their release)."
+
+
+#end

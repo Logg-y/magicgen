@@ -1,0 +1,354 @@
+#newsecondary "Summon Tempfiregems 1"
+
+#paths 0
+#power -1
+
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempfiregems 1"
+#descr "The summoned %creature% %is% strongly attuned to the path of Fire and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary fire gem."
+
+#end
+
+#newsecondary "Summon Tempfiregems 2"
+
+#paths 0
+#power -2
+
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempfiregems 2"
+#descr "The summoned %creature% %is% strongly attuned to the path of Fire and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary fire gems."
+
+#end
+
+
+#newsecondary "Summon Tempairgems 1"
+
+#paths 0
+#power -1
+
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempairgems 1"
+#descr "The summoned %creature% %is% strongly attuned to the path of Air and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary air gem."
+
+#end
+
+#newsecondary "Summon Tempairgems 2"
+
+#paths 0
+#power -2
+
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempairgems 2"
+#descr "The summoned %creature% %is% strongly attuned to the path of Air and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary air gems."
+
+#end
+
+#newsecondary "Summon Tempwatergems 1"
+
+#paths 0
+#power -1
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempwatergems 1"
+#descr "The summoned %creature% %is% strongly attuned to the path of Water and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary water gem."
+
+#end
+
+#newsecondary "Summon Tempwatergems 2"
+
+#paths 0
+#power -2
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempwatergems 2"
+#descr "The summoned %creature% %is% strongly attuned to the path of Water and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary water gems."
+
+#end
+
+#newsecondary "Summon Tempearthgems 1"
+
+#paths 0
+#power -1
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempearthgems 1"
+#descr "The summoned %creature% %is% strongly attuned to the path of Earth and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary earth gem."
+
+#end
+
+#newsecondary "Summon Tempearthgems 2"
+
+#paths 0
+#power -2
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempearthgems 2"
+#descr "The summoned %creature% %is% strongly attuned to the path of Earth and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary earth gems."
+
+#end
+
+#newsecondary "Summon Tempastralgems 1"
+
+#paths 0
+#power -1
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempastralgems 1"
+#descr "The summoned %creature% %is% strongly attuned to the Astral plane and may draw upon this in the place of using a magical pearl in battle."
+#details "The creature gains 1 temporary astral pearl."
+
+#end
+
+#newsecondary "Summon Tempastralgems 2"
+
+#paths 0
+#power -2
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempastralgems 2"
+#descr "The summoned %creature% %is% strongly attuned to Astral plane and may draw upon this in the place of using a magical pearl in battle."
+#details "The creature gains 2 temporary astral pearls."
+
+#end
+
+#newsecondary "Summon Tempdeathgems 1"
+
+#paths 0
+#power -1
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempdeathgems 1"
+#descr "The summoned %creature% %is% strongly attuned to the plane of Death and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary death gem."
+
+#end
+
+#newsecondary "Summon Tempdeathgems 2"
+
+#paths 0
+#power -2
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempdeathgems 2"
+#descr "The summoned %creature% %is% strongly attuned to the plane of Death and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary death gems."
+
+#end
+
+#newsecondary "Summon Tempnaturegems 1"
+
+#paths 0
+#power -1
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Tempnaturegems 1"
+#descr "The summoned %creature% %is% strongly attuned to Nature and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 1 temporary nature gem."
+
+#end
+
+#newsecondary "Summon Tempnaturegems 2"
+
+#paths 0
+#power -2
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 800
+
+#unitmod "Summon Tempnaturegems 2"
+#descr "The summoned %creature% %is% strongly attuned to Nature and may draw upon this in the place of using a magical gem in battle."
+#details "The creature gains 2 temporary nature gems."
+
+#end

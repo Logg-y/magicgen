@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 1
 #fatiguecost 20
-#sound 26
+#sound 31
 #schools 1
 
 #paths 64

@@ -7,7 +7,7 @@
 #precision -100
 #nreff 1
 #pathlevel 4
-#chassisvalue 7
+#chassisvalue 50
 #range 6
 #fatiguecost 150
 #explspr 10232

@@ -7,7 +7,7 @@
 #precision -100
 #nreff 1
 #pathlevel 3
-#chassisvalue 5
+#chassisvalue 40
 #range 6
 #fatiguecost 140
 #explspr 10232
@@ -45,8 +45,8 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 2200
-#chassisvalue 20
+#fatiguecost 2400
+#chassisvalue 300
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

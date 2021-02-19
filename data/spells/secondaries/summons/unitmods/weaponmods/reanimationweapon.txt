@@ -1,6 +1,6 @@
 #newweaponmod "Reanimationweapon"
 #setweaponmagic 1
-#effect == 2
+#req effect == 2
 #extracommand dt_raise
 #nameprefix "Reanimating"
 #end

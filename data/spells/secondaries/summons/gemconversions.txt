@@ -1,0 +1,58 @@
+#newsecondary "Summon Pearlcultivator"
+
+#anysummon 1
+
+-- unitmod requires water
+#paths 16
+#power -3
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 500
+
+#unitmod "Summon Pearlcultivator"
+#descr "The summoned %creature% %is% able to cultivate magical pearls from water gems."
+#details "The creature gains pearl cultivator 3."
+
+#end
+
+#newsecondary "Summon Carcasscollector"
+
+#anysummon 1
+
+-- unitmod requires nature
+#paths 32
+#power -3
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 500
+
+#unitmod "Summon Carcasscollector"
+#descr "The summoned %creature% %is% able to plant nature gems into animals, and then perform a ritual sacrifice. This process converts the nature gems into death gems."
+#details "The creature gains carcass collector 3."
+
+#end
