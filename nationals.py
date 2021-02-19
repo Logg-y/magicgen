@@ -168,6 +168,16 @@ def readMods(modstring):
                         nations[nationid] = Nation(nationid)
                     currentnation = nations[nationid]
 
+                m = re.match("#newnation", line)
+                if m is not None:
+                    newid = -1
+                    while newid in nations:
+                        newid -= 1
+                    print(f"Parsed newnation, assigned id {newid}")
+                    if newid not in nations:
+                        nations[newid] = Nation(newid)
+                    currentnation = nations[newid]
+
                 m = re.match("#newsite (\\d*)", line)
                 if m is not None:
                     siteid = int(m.groups()[0])

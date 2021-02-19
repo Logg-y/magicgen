@@ -296,7 +296,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             _writetoconsole(f"Progress: Beginning nation {index} of {nationcount}...\n")
         index += 1
         if not nation.hasmages():
-            _writetoconsole(f"Skipping nation {nation.totext()} because no national mages were found")
+            _writetoconsole(f"Skipping nation {nation.totext()} because no national mages were found\n")
             continue
         effectpool = copy.copy(spelleffects)
         numberofgeneratedspells[nationid] = 0
@@ -337,32 +337,39 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             #    f"primarypath={utils.pathstotext(primarypath)}, secondaries={commander.getpossiblepaths()}, there are "
             #    f"{len(effectpool)} effects available\n")
             spell: Union[Spell, None] = None
-            for attempt in range(0, 2):
-                if attempt == 0:
-                    spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                   forcesecondaryeff=commander.getpossiblepathsmask(),
-                                                   allowblood=allowblood, allowskipchance=False,
-                                                   setparams={"restricted": nation}, **options)
-                else:
-                    spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                   blocksecondary=True, allowblood=allowblood,
-                                                   allowskipchance=False,
-                                                   setparams={"restricted": nation}, **options)
-                    NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
-                if spell is not None:
-                    NationalSpellGenerationInfoCollector.numberofgeneratedspells += 1
-                    generatedspells.append(spell)
-                    numberofgeneratedspells[nationid] += 1
-                    # _writetoconsole("Spell successfully generated\n")
-                    break
+            creationattempts: int = 0
+            while (spell is None) & (creationattempts < 20):
+                creationattempts += 1
+                for attempt in range(0, 2):
+                    if attempt == 0:
+                        spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
+                                                       forcesecondaryeff=commander.getpossiblepathsmask(),
+                                                       allowblood=allowblood, allowskipchance=False,
+                                                       setparams={"restricted": nation}, **options)
+                    else:
+                        spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
+                                                       blocksecondary=True, allowblood=allowblood,
+                                                       allowskipchance=False,
+                                                       setparams={"restricted": nation}, **options)
+                        NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
 
             # Only one national spell per effect
             del effectpool[choseneffect.name]
 
-            if (len(effectpool) == 0) and (spell is None):
-                raise ValueError(
-                    f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
-                    f"randoms={commander.getrandompathpossibles()}")
+            if spell is None:
+                if len(effectpool) == 0:
+                    raise ValueError(
+                        f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
+                        f"randoms={commander.getrandompathpossibles()}")
+                else:
+                    # _writetoconsole(f"failed to generate spell for effect {choseneffect.name}\n")
+                    break
+
+            generatedspells.append(spell)
+            numberofgeneratedspells[nationid] += 1
+            # _writetoconsole("Spell successfully generated\n")
+
+
     _writetoconsole(
         f"Attempted to generated {targetnumberofnationalspells} national spells for {nationcount} nations.\n")
     NationalSpellGenerationInfoCollector.print()
