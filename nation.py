@@ -25,33 +25,38 @@ class Nation(object):
             self.mages.append(mage)
 
     def getpathweights(self) -> Dict[int, int]:
-        weights: Dict[int, int] = {}
+        mageweights: Dict[NationalMage, float] = self.getmagetotalweightdistribution()
+        weights: Dict[int, float] = {}
         for i in range(0, 8):
-            weights[2 ** i] = 0
+            weights[2 ** i] = 0.0
 
         for mage in self.mages:
             for i in range(0, 8):
-                weights[2 ** i] += mage.getlevelinpath(2 ** i)
-            for random in mage.randoms:
-                randomweight = float(random.chance * random.link)
-                randompaths = random.getpossiblepaths()
-                randomweight = randomweight / len(randompaths)
-                for i in randompaths:
-                    weights[i] += randomweight
+                weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage]
 
         # _writetoconsole(f"Mages:{self.mages}\nWeights:{weights}")
+        return self.sanitizeweights(weights)
 
+    def sanitizeweights(self, unsanatizedweights: Dict[int, int] ):
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
-        for i in weights:
-            output[i] = int(round(weights[i]))
+        for i in unsanatizedweights:
+            output[i] = int(round(unsanatizedweights[i]))
             if output[i] != 0:
                 hasweight = True
         if not hasweight:  # If all weights are 0 set all to 1
             for i in output:
                 output[i] = 1
         return output
+
+    def getmagetotalweightdistribution(self) -> Dict[NationalMage, float]:
+        acc: Dict[NationalMage, float] = {}
+        for i in self.mages:
+            acc[i] = 0.0
+        for mage in acc:
+            acc[mage] = mage.gettotalpathsamount() * 2 - 1
+        return acc
 
     def getcommanderwithpath(self, path: int) -> Union[NationalMage, None]:
         random.shuffle(self.mages)

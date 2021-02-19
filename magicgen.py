@@ -343,7 +343,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
                 for attempt in range(0, 2):
                     if attempt == 0:
                         spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                       forcesecondaryeff=commander.getpossiblepathsmask(),
+                                                       forcesecondaryeff=commander.gettotalpossiblepathsmask(),
                                                        allowblood=allowblood, allowskipchance=False,
                                                        setparams={"restricted": nation}, **options)
                     else:
@@ -360,7 +360,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
                 if len(effectpool) == 0:
                     raise ValueError(
                         f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
-                        f"randoms={commander.getrandompathpossibles()}")
+                        f"randoms={commander.getrandomspossiblepathmask()}")
                 else:
                     # _writetoconsole(f"failed to generate spell for effect {choseneffect.name}\n")
                     break
