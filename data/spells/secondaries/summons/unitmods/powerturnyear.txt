@@ -5,7 +5,7 @@
 #req fallpower == -1
 #req springpower == -1
 #req summerpower == -1
-#set poweroftheturningyear 2
+#set yearturn 2
 #nameprefix "Seasonal"
 #descr "This particular CREATURE is attuned to the four seasons, and becomes more powerful in the height of any season."
 #end

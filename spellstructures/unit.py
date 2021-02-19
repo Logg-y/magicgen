@@ -23,6 +23,7 @@ class Unit(object):
 
     @staticmethod
     def from_line(line):
+        global descriptioncache
         self = Unit()
         self.line = line
         id = int(line["id"])

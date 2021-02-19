@@ -790,6 +790,7 @@
 
 #name 64 "Growing Fury"
 #descr 64 "A growing fury will affect all friendly units on the battlefield. They will find themselves becoming more and more ferocious and will go berserk at the slightest provocation, even if they are not usually able to do so."
+#details "Affects all friendly units on the field every 320 ticks, or 23.4375 times a round. Units with a berserker value immediately go berserk, as do all those whose current hitpoints are lower than their maximum. Other units are 5% to go berserk each check. As with regular berserking, mindless, slave vessels, and most mounted units are unaffected."
 #end
 
 #neweffect "The Ravenous Swarm"

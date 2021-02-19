@@ -1,0 +1,6 @@
+#newunitmod "Summon Inspiring Researcher"
+#set inspiringres 1
+#nameprefix "Inspiring"
+#reqmage 1
+#descr "This particular CREATURE is very effective at encouraging others in the same province to research more efficiently."
+#end

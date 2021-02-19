@@ -1,0 +1,13 @@
+#newunitmod "Summon Pearlcultivator"
+#set pearlcultivator 3
+#nameprefix "Cultivating"
+#req W >= 1
+#descr "This particular CREATURE understands how to cultivate magical pearls from water gems."
+#end
+
+#newunitmod "Summon Carcasscollector"
+#set carcasscollector 3
+#nameprefix "Slaughtering"
+#req N >= 1
+#descr "This particular CREATURE understands how to plant nature gems into animals, and then perform a ritual sacrifice upon them, converting nature gems into death gems in the process."
+#end

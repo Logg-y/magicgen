@@ -12,7 +12,7 @@
 
 #aoe 0
 #power 1
-#maxpower 5
+#maxpower 6
 #pathlevel 2
 #explspr 10123
 #sound 31
@@ -28,6 +28,8 @@
 #name 128 "Bleed"
 #descr 128 "This spell causes blood to pour out of the nose, ears and mouth of the %victim%. The effect is a prolonged and painful death. Magic resistance can negate the effect."
 
+
+#details "Bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
 
 #end
 
@@ -51,7 +53,7 @@
 #pathlevel 5
 #explspr 10123
 #sound 41
-#fatiguecost 300
+#fatiguecost 200
 #precision 100
 #range 100
 
@@ -60,6 +62,8 @@
 #secondarypathchance 0
 
 #name 128 "Mass Bleed"
-#descr 128 "The caster attempts to cause all his enemies to bleed profusely.  The effect is a prolonged and painful death."
+#descr 128 "The caster attempts to cause all his enemies to bleed profusely. The effect is a prolonged and painful death."
+
+#details "Bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
 
 #end

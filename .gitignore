@@ -127,8 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-*.dm
+output/*.dm
 log.txt
 magicgen/
 magicgen.zip

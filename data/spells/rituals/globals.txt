@@ -733,7 +733,7 @@
 
 #name 128 "The Looming Hell"
 #descr 128 "Devils will appear in the dreams of some unfortunate enemies whenever they try to sleep. These Devils, through various threats, will try to persuade their victims to sell their souls and join in the killing of their own commander. The strength of the threats depends on the strength of the God's Dominion, but extreme courage is always required to defy the Devils. The Devils are totally powerless if they are unable to persuade any victims, which may well happen should the enemy commander be more feared than they are."
-#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear)."
+#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear). There is a 5% chance per point of dominion for any given check to not count to the limit of 5."
 
 #spelltype 4
 #scalerate 0

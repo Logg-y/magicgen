@@ -1,0 +1,13 @@
+#newunitmod "Summon Fixed Forge Bonus"
+#set fixforgebonus 1
+#nameprefix "Artisanal"
+#reqmage 1
+#descr "This particular CREATURE is very efficient when making magical items and consumes less gems in their construction."
+#end
+
+#newunitmod "Summon Percentage Forge Bonus"
+#set forgebonus 20
+#nameprefix "Artisanal"
+#reqmage 1
+#descr "This particular CREATURE is very efficient when making magical items and consumes less gems in their construction."
+#end

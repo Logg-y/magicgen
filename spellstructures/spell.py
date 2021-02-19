@@ -707,7 +707,7 @@ class SpellEffect(object):
             if attrib == "fatiguecost" and self.chassisvalue is not None:
                 print(
                     f"magicvalpercent {self.magicvaluepercent}, magicpathvaluescaling {secondary.magicpathvaluescaling}, chassisvaluepercent {self.chassisvaluepercent}")
-                magiccostmod = self.magicvaluepercent * s.fatiguecost * secondary.magicpathvaluescaling * val
+                magiccostmod = self.magicvaluepercent * s.fatiguecost * secondary.magicpathvaluescaling * (val - 1.0)
                 chassiscostmod = self.chassisvaluepercent * s.fatiguecost * (val - 1.0)
                 newval = int(
                     s.fatiguecost * (self.magicvaluepercent + self.chassisvaluepercent) + magiccostmod + chassiscostmod)
@@ -766,7 +766,8 @@ class SpellEffect(object):
             if not (self.spelltype & SpellTypes.ALLOW_NO_SLAVE_COST):
                 pass
             s.school = SchoolFlags.BLOOD
-            s.sound = 32  # this is the blood spell sound that they ALL get
+            if s.fatiguecost > 100:
+                s.sound = 32  # this is the blood spell sound that they ALL get
 
             # assume that blood rituals with non-blood primary path possibilities have numbers balanced for
             # gems and not slaves so multiply by 2
@@ -774,9 +775,15 @@ class SpellEffect(object):
                 if self.paths != 128:
                     s.fatiguecost *= 2
 
+        s.fatiguecost += options.get("fatiguemodflat", 0)
+        s.fatiguecost *= options.get("fatiguemodmult", 1.0)
+        s.fatiguecost = math.floor(s.fatiguecost)
+        s.fatiguecost = max(0, s.fatiguecost)
+
         # Fatigue cost should not exceed 999 for non rituals
         if not (self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = min(999, s.fatiguecost)
+
 			
         descrs = []
         for x in self.descrconds.get(s.path1, []):
@@ -788,7 +795,10 @@ class SpellEffect(object):
                     descrs.append(x.text)
 
         if len(descrs) == 0:
-            descrs.append(self.descriptions.get(s.path1, "This spell and path combination have no description!"))
+            fallbackdescr = self.descriptions.get(s.path1, "This spell and path combination have no description!")
+            if s.fatiguecost < 100:
+                fallbackdescr = fallbackdescr.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$")
+            descrs.append(fallbackdescr)
 
         # write a description
         descrchoice = random.choice(descrs)
@@ -952,10 +962,7 @@ class SpellEffect(object):
         # Implement research level modifier options
         s.researchlevel -= options.get("researchmodifier", 0)
 
-        s.fatiguecost += options.get("fatiguemodflat", 0)
-        s.fatiguecost *= options.get("fatiguemodmult", 1.0)
-        s.fatiguecost = math.floor(s.fatiguecost)
-        s.fatiguecost = max(0, s.fatiguecost)
+
 
         # If aoe is x% of field, nextspells seem to need it too?
         if 660 < s.aoe < 670:
@@ -990,6 +997,5 @@ class SpellEffect(object):
         s.details = s.details.strip()
         if s.details == "":
             s.details = None
-        print(s.details)
 
         return s

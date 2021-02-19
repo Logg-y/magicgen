@@ -1,6 +1,6 @@
 #newunitmod "Summon Invisibility"
-#req invisibility == -1
-#set invisibility 1
+#req invisible == -1
+#set invisible 1
 #set stealthy 40
 #nameprefix "Invisible"
 #descr "This particular CREATURE has been magically made invisible, and can only be seen by those with spirit sight."
