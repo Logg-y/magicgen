@@ -1,4 +1,4 @@
-#neweffect "Offensive Global"
+#neweffect "Offensive Global in Alteration"
 #effect 10081
 #damage 17
 #spec 0
@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
-#schools 50
+#schools 2
 #paths 255
 #skipchance 0
 #secondarypaths 0
@@ -28,9 +28,12 @@
 #spelltype 4
 #scalerate 1
 #scalefatiguemult 600
+
+#pathskipchance 128 60
+
 #end
 
-#neweffect "Offensive Global2"
+#neweffect "Offensive Global in Enchantment"
 #effect 10081
 #damage 17
 #spec 0
@@ -39,13 +42,15 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
-#schools 50
+#schools 16
 #paths 255
 #skipchance 0
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
 #alwaysgenerate 1
+
+#pathskipchance 128 60
 
 #name 32 "Some kind of offensive global"
 #descr 1 ""
@@ -63,7 +68,7 @@
 #end
 
 
-#neweffect "Offensive Global3"
+#neweffect "Offensive Global in Thaum"
 #effect 10081
 #damage 17
 #spec 0
@@ -72,13 +77,15 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
-#schools 50
+#schools 32
 #paths 255
 #skipchance 0
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
 #alwaysgenerate 1
+
+#pathskipchance 128 60
 
 #name 32 "Some kind of offensive global"
 #descr 1 ""

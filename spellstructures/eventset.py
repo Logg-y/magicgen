@@ -256,7 +256,6 @@ class EventSet(object):
 
 
 
-        print("enter repl loop")
         while 1:
             replmade = False
             for replacement, data in moduledata.items():
@@ -270,7 +269,6 @@ class EventSet(object):
                     break
             if not replmade:
                 break
-        print("leave repl loop")
 
 
 
@@ -305,8 +303,6 @@ class EventSet(object):
             montag = montagbuilder.MontagBuilder()
             montag.makedummymonster = self.makedummymonster
 
-        print(f"my output is {output}")
-
         for n in range(0, numtogenerate):
 
             # Find a unit to use
@@ -325,6 +321,9 @@ class EventSet(object):
                 for effname, effect in utils.spelleffects.items():
                     if effect.effect == 10001:  # ritual summon
                         unitid = effect.damage
+                        # no montags
+                        if unitid < 0:
+                            continue
                         unitobj = unit.get(unitid)
 
                         if self.restrictunitstospellpaths > 0:
@@ -368,16 +367,20 @@ class EventSet(object):
                     # If rollSpell enforces a secondary effect (unlikely), use that
                     if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
                         realunitmod = utils.unitmods[secondaryeffect.unitmod]
+                        unitobj = unit.get(unittouse)
+                        if not realunitmod.compatibility(unitobj):
+                            print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
+                            continue
                         output = f"-- EventSet {self.name} applied secondary effect unitmod {realunitmod.name} " \
                                  f"to {unittouse}\n\n" + output
                         secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
                     else:
                         # Find a secondary effect to use for this creature
-                        # shallow copy
                         if self.secondaryeffectchance is not None and random.random() * 100 > self.secondaryeffectchance:
                             realunitmod = utils.unitmods["Do Nothing"]
                             secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
                         else:
+                            # shallow copy
                             unitmodlist = self.allowedunitmods[:]
                             random.shuffle(unitmodlist)
                             bad = False
@@ -490,8 +493,6 @@ class EventSet(object):
 
                 if generateokay:
                     break
-
-        print(f"reemy ouput is {output}")
 
         if self.modulegroup is not None:
             print(f"Writing module description for {self.name}")

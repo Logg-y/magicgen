@@ -12,7 +12,7 @@
 
 #aoe 0
 #power -2
-#maxpower 4
+#maxpower 3
 #pathlevel 1
 #explspr 10224
 #sound 31
@@ -46,3 +46,49 @@
 
 #end
 
+
+#neweffect "Aim Battlefield"
+#effect 10
+#damage 4
+#spec 8404992
+-- alt ench
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#aoe 666
+#power 4
+#maxpower 4
+#pathlevel 3
+#explspr 10224
+#sound 31
+#range 10
+#fatiguecost 100
+
+#paths 194
+#secondarypaths 2
+
+#details "Grants +5 precision."
+
+#namecond aoe <= 1 2 "Aim"
+#namecond aoe <= 1 64 "Eagle Eyes"
+#namecond aoe <= 1 64 "Hawk Eyes"
+#namecond aoe <= 1 64 "Keen Eyes"
+#namecond aoe <= 1 128 "Infernal Accuracy"
+
+#namecond2 1 < aoe < 66 2 "Group Aim"
+#namecond2 1 < aoe < 66 64 "Gift of the Eagle"
+#namecond2 1 < aoe < 66 64 "Gift of the Hawk"
+#namecond2 1 < aoe < 66 2 "True Shots"
+#namecond2 1 < aoe < 66 128 "Infernal Accuracy"
+
+#namecond aoe == 666 2 "Wind Guide"
+#namecond aoe == 666 64 "Eagle Eyed Army"
+#namecond aoe == 666 128 "Mass Infernal Accuracy"
+
+#descr 2 "SUBJECT gains great appreciation of the way the wind is blowing across the battlefield, allowing PRONOUN to be more accurate with ranged attacks."
+#descr 64 "SUBJECT gains the vision of a keen-eyed bird, allowing PRONOUN to be more accurate with ranged attacks."
+#descr 128 "$BLOOD_INTRO$, infernal creatures alter the aim of SUBJECT to make them considerably more accurate."
+
+#end

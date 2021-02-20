@@ -5,7 +5,6 @@
 #req path1 != 1
 #req path1 != 2
 #req path1 != 4
-#req path1 != 8
 #req path1 != 32
 
 #modulegroup "Offensive Global Effect"

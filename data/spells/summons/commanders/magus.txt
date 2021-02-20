@@ -15,7 +15,7 @@
 #schools 1
 #pathskipchance 64 80
 
-#skipchance 90
+#skipchance 95.0
 
 --ASN
 #paths 80

@@ -16,7 +16,7 @@
 #pathskipchance 64 80
 #pathskipchance 16 80
 
-#skipchance 90
+#skipchance 95.0
 
 --ASN
 #paths 84

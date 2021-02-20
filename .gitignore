@@ -139,3 +139,5 @@ outputs/
 # Nuitka leftovers
 *.exe
 *.dll
+
+magicgenGUIerror.txt

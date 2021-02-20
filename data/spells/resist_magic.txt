@@ -12,7 +12,7 @@
 
 #aoe 1
 #power 1
-#maxpower 4
+#maxpower 3
 #pathlevel 1
 #explspr 10236
 #sound 41
@@ -40,4 +40,46 @@
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 
 #end
+
+#neweffect "Resist Magic battlefield"
+#effect 10
+#damage 67108864
+#spec 12582912
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 5
+-- #scalecost 1.0
+
+#aoe 666
+#power 4
+#maxpower 4
+#pathlevel 3
+#explspr 10236
+#sound 41
+#range 10
+#fatiguecost 100
+
+--FAWES
+#paths 31
+#secondarypaths 0
+
+#name 16 "Antimagic"
+#name 1 "Incendiary Will"
+#name 2 "Perfection of Thought"
+#name 4 "Crystalline Resolve"
+#name 8 "Steel Will"
+
+#details "+4 magic resistance."
+
+#descr 1 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 2 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#end
+
 

@@ -62,13 +62,13 @@
 #pathlevel 2
 #fatiguecost 300
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Boar Attack"
 #descr 64 "The caster summons ARTICLE wild %boar% to ambush a hostile commander in a distant province. This boar is fairly timid and will not trample opponents."

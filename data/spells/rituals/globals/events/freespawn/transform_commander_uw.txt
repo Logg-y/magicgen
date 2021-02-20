@@ -176,10 +176,11 @@
 
 #newevent
 #rarity 5
-#msg "transform commander"
+#msg "transform commander uw"
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
+#req_domchance 5
+#req_targorder 7
 #req_0popok
 #req_land 0
 #req_commander 1

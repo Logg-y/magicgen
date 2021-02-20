@@ -14,7 +14,7 @@
 #sound 31
 #schools 40
 
-#skipchance 90
+#skipchance 95.0
 #ainocast 1
 
 #paths 16

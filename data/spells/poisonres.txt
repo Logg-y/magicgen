@@ -36,6 +36,44 @@
 
 #end
 
+#neweffect "Poison Res +10 battlefield"
+#effect 10
+#damage 16777216
+#spec 12582912
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.4
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 5
+#pathlevel 3
+#explspr 10017
+#sound 31
+#range 15
+#fatiguecost 100
+#maxpower 5
+
+
+-- death, nature, blood
+#paths 224
+#secondarypaths 0
+
+#name 32 "Reduced Metabolism"
+#name 64 "Poison Fend"
+#name 128 "Poison Fend"
+#descr 32 "SUBJECT %is% made slightly resistant to poisons."
+#descr 64 "SUBJECT %is% made slightly resistant to poisons."
+#descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer slight resistance to poisons."
+
+#details "Grants +10 poison resistance."
+
+#end
+
 #neweffect "Poison Res +15"
 #effect 514
 #damage 200
@@ -56,7 +94,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 8
 
 
 -- air, earth
@@ -75,6 +113,48 @@
 #details "Grants +15 poison resistance."
 
 #end
+
+#neweffect "Poison Res +15 battlefield"
+#effect 514
+#damage 200
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.1
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 9
+#pathlevel 4
+#explspr 10017
+#sound 31
+#range 15
+#fatiguecost 200
+#maxpower 9
+
+
+-- air, earth
+#paths 224
+#secondarypaths 0
+
+#name 32 "Metabolism of Undeath"
+#name 64 "Serpent's Blessing"
+#name 128 "Serpent's Blessing"
+#descr 32 "SUBJECT %is% made highly resistant to poisons."
+#descr 64 "SUBJECT %is% made highly resistant to poisons."
+#descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer significant resistance to poisons."
+
+
+
+#details "Grants +15 poison resistance."
+
+#end
+
+
 
 #neweffect "Poison Res +20"
 #effect 519
@@ -97,7 +177,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 11
 
 
 -- air, earth

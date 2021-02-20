@@ -75,6 +75,8 @@
 #paths 0
 #power 1
 
+#skipchance 66
+
 -- not montag
 #req damage > 0
 #mult fatiguecost 0.86
@@ -93,6 +95,8 @@
 
 #paths 0
 #power 2
+
+#skipchance 66
 
 -- not montag
 #req damage > 0

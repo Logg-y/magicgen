@@ -14,7 +14,7 @@
 #sound 31
 #schools 16
 
-#skipchance 90
+#skipchance 95.0
 
 --ASN
 #paths 32

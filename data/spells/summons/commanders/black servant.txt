@@ -70,10 +70,10 @@
 #fatiguecost 600
 #chassisvalue 20
 #schools 1
-#skipchance 76
+#skipchance 99
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 32
 #secondarypaths 32

@@ -1,6 +1,6 @@
 #neweventset "Offensive Global cond fortbuild"
-#minpowerlevel -6
-#maxpowerlevel -1
+#minpowerlevel -8
+#maxpowerlevel -3
 
 #scaleparam "req_rare" 5
 

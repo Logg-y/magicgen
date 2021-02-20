@@ -15,7 +15,7 @@
 #schools 1
 #ainocast 1
 
-#skipchance 90
+#skipchance 95.0
 
 #paths 32
 #secondarypaths 32

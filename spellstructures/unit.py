@@ -18,8 +18,8 @@ class Unit(object):
             reader = csv.DictReader(f, delimiter="\t")
             for line in reader:
                 if int(line["id"]) == id:
-                    break
-            return Unit.from_line(line)
+                    return Unit.from_line(line)
+        raise ValueError(f"Unit {id} not found")
 
     @staticmethod
     def from_line(line):

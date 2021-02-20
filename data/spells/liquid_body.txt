@@ -12,12 +12,52 @@
 
 #aoe 0
 #power 4
-#maxpower 8
+#maxpower 7
 #pathlevel 1
 #explspr 10023
 #sound 31
 #range 10
 #fatiguecost 20
+
+
+-- water
+#paths 4
+#secondarypaths 4
+
+#details "Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+
+#namecond aoe < 2 4 "Liquid Body"
+
+#namecond2 2 <= aoe < 666 4 "Liquid Warriors"
+#namecond2 2 <= aoe < 666 4 "Wave Warriors"
+
+#namecond aoe == 666 4 "Liquid Army"
+#namecond aoe == 666 4 "Army of the Waves"
+
+#descr 4 "The body of SUBJECT is magically converted into a liquid-like substance. This provides considerable protection from physical damage and permanent wounds, but slows PRONOUN down and weakens PRONOUN."
+
+#end
+
+#neweffect "Liquid Body battlefield"
+#effect 10
+#damage 2680059592704
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2.6
+
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 4
+#explspr 10023
+#sound 31
+#range 10
+#fatiguecost 100
 
 
 -- water

@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 700
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Forest Giant Attack"
 #descr 64 "The caster summons ARTICLE forest %giant% to attack a hostile commander in a distant province. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."

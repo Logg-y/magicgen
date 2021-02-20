@@ -222,7 +222,7 @@
 
 #name 2 "Fata Morgana"
 #descr 2 "Under the fata morgana life seems much easier and everyone is happy. Phantasmal Warriors will assist the local defence in defending the province against invaders. If the entire province should not be hidden from the enemy, enemy scouts will be still be tricked by the illusions and likely give incorrect reports about armies present. All provinces in friendly dominion will be affected by the fata morgana."
-#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. False scout reports."
+#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. 50% chance to hide all units from scouts in friendly dominion, otherwise the number of units is multiplied by a random number between 0 and 5."
 
 #spelltype 4
 #scalerate 0

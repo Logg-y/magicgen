@@ -12,12 +12,48 @@
 
 #aoe 0
 #power 3
-#maxpower 9
+#maxpower 8
 #pathlevel 1
 #explspr 10022
 #sound 41
 #range 10
 #fatiguecost 20
+
+
+#paths 16
+#secondarypaths 16
+
+#namecond aoe < 2 16 "Astral Shield"
+
+#namecond2 2 <= aoe < 40 16 "Group Astral Shield"
+#namecond2 40 <= aoe < 700 16 "Mass Astral Shield"
+
+#details "Melee attackers take 12 + astral mage level paralysis damage, reduced by weapon length. Magic resistance negates the effect."
+
+#descr 16 "Grants SUBJECT a shield of astral energy. Trying to attack in melee through the shield may apply paralysis to the attacker."
+
+#end
+
+#neweffect "Astral Shield battlefield"
+#effect 23
+#damage 268435456
+#spec 8404992
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.4
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 5
+#explspr 10022
+#sound 41
+#range 10
+#fatiguecost 300
 
 
 #paths 16

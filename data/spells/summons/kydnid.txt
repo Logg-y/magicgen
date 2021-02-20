@@ -62,11 +62,11 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 1
-#skipchance 97
+#skipchance 99
 #paths 4
 #secondarypaths 4 
 
-#skipchance 97
+#skipchance 99
 
 #name 4 "NAMEPREFIX %kydnid% Attack"
 #descr 4 "The caster summons ARTICLE %kydnid% to attack a hostile commander in a distant province. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."

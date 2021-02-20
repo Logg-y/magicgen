@@ -7,12 +7,12 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
+#scalerate 1.7
 -- #scalecost 1
 
 #aoe 1
 #power 2
-#maxpower 9
+#maxpower 6
 #pathlevel 1
 #explspr 10317
 #sound 31
@@ -24,6 +24,37 @@
 #secondarypaths 32
 
 #name 32 "Life after Death"
+
+#descr 32 "SUBJECT is given a second chance to live if they were to fall in the current battle. They will return as ARTICLE soulless %being%."
+
+#end
+
+#neweffect "Life after Death battlefield"
+#effect 10
+#damage 2097152
+#spec 12713984
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10317
+#sound 31
+#range 10
+#fatiguecost 300
+
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Arisen Army"
 
 #descr 32 "SUBJECT is given a second chance to live if they were to fall in the current battle. They will return as ARTICLE soulless %being%."
 

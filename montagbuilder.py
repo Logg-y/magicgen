@@ -47,15 +47,16 @@ class MontagBuilder(object):
             # Adjust for multiple copies of the same thing
             costratio = data[2]
             duplicates = self.numberofcopies.get(i, 1)
-            costratio = max(1, math.floor(costratio/duplicates))
+            costratio = max(1, costratio/duplicates)
 
             montagweight = math.floor(self.maxcostratio / costratio)
-            # the mod command only accept 1-100
+            # the mod command only accepts 1-100
             montagweight = max(1, min(100, montagweight))
             maxweight = max(maxweight, montagweight)
             weighttotal += montagweight
-        weightmultiplier = math.floor(100 / maxweight)
+        weightmultiplier = 100 / maxweight
         weighttotal *= weightmultiplier
+        weighttotal = math.floor(weighttotal)
 
         if utils.MONTAG_ID > 100000:
             # This is probably never ever going to happen but hey
@@ -69,7 +70,7 @@ class MontagBuilder(object):
             # Adjust for multiple copies of the same thing
             costratio = data[2]
             duplicates = self.numberofcopies.get(i, 1)
-            costratio = max(1, math.floor(costratio / duplicates))
+            costratio = max(1, costratio / duplicates)
 
             montagweight = math.floor((weightmultiplier*self.maxcostratio)/costratio)
             # the mod command only accept 1-100

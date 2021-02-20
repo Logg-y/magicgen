@@ -339,7 +339,7 @@
 #neweffect "Farstrike nature"
 #effect 2
 #damage 6
-#spec 563499719720961
+#spec 1153485004326567937
 #schools 4
 
 -- evo, battlefield allowed, scale aoe

@@ -62,7 +62,7 @@
 #pathlevel 6
 #fatiguecost 1100
 #schools 1
-#skipchance 97
+#skipchance 99
 #onlygeodst 2052
 
 #paths 4

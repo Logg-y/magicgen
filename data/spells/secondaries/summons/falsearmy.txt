@@ -12,6 +12,8 @@
 -- commander only
 #req effect != 10001
 #req effect != 1
+-- ritual only
+#req effect > 10000
 
 -- not montag
 #req damage > 0
@@ -37,6 +39,8 @@
 -- commander only
 #req effect != 10001
 #req effect != 1
+-- ritual only
+#req effect > 10000
 
 
 -- not montag
@@ -63,6 +67,8 @@
 -- commander only
 #req effect != 10001
 #req effect != 1
+-- ritual only
+#req effect > 10000
 
 #fatiguecostpereffect 200
 
@@ -90,6 +96,8 @@
 -- commander only
 #req effect != 10001
 #req effect != 1
+-- ritual only
+#req effect > 10000
 
 
 -- not montag

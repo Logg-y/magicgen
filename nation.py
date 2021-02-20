@@ -6,7 +6,7 @@ from typing import (
 )
 import random
 
-from site import Site
+from nationalsite import Site
 
 
 class Nation(object):
@@ -73,3 +73,6 @@ class Nation(object):
 
     def hasmages(self) -> bool:
         return len(self.mages) > 0
+
+    def __repr__(self):
+        return(f"Nation({self.name}, id {self.id})")

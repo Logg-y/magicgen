@@ -241,7 +241,7 @@ class SpellEffect(object):
 		blockmodifier: if True, only "Do Nothing" is allowed as a modifier (for holy spells)
 		blocksecondary: if True, only "Do Nothing" is allowed as a secondary effect
 		allowblood: if True, can assign blood paths and to the blood school
-		allowskipchance: if False, skipchances of any value less than 100 (IE: 100% skip) will be ignored
+		allowskipchance: if False, skipchances of any value less than 100 (IE: 100% skip) will be ignored. Blood combat spell skipping bypasses this
 		setparams: a dict of params to set on the created Spell object
 		
 		secondarychance: int of % chance to roll a secondary effect
@@ -255,14 +255,15 @@ class SpellEffect(object):
             print(f"Failed to generate {self.name} at {researchlevel}: random skipchance")
             return None
 
-        if self.effect < 10000 and allowskipchance and forcepath == 128 and not isnextspell:
+        # bypasses allowskipchance
+        if self.effect < 10000 and forcepath == 128 and not isnextspell:
             # Gimme less combat blood spells
-            if random.random() < 0.75:
-                print(f"Failed as 75% to have less blood combat spells")
+            if random.random() < 0.92:
+                print(f"Failed as 92% to have less blood combat spells")
                 return None
             # Even less likely if they have other primary paths
-            if self.paths != 128 and random.random() < 0.5:
-                print(f"Failed as 50% to fail other path combat spells")
+            if self.paths != 128 and random.random() < 0.75:
+                print(f"Failed as 75% to fail other path combat spells")
                 return None
 
         if self.unique and self.generated > 0:
@@ -277,6 +278,7 @@ class SpellEffect(object):
             tot = 0
             for x in range(0, self.generated):
                 tot += (x + 1) * 8
+            tot = min(98, tot)
             if random.random() * 100 < tot:
                 print(f"Skipped based on {self.generated} previous generations")
                 return None
@@ -901,6 +903,7 @@ class SpellEffect(object):
                 names.append(x.text)
 
         if len(names) > 0:
+            print(f"Begin naming for this spell, path is {s.path1}...")
             while 1:
                 try:
                     name = names.pop(random.randint(0, len(names) - 1))
@@ -989,6 +992,13 @@ class SpellEffect(object):
         if s.path1 == 128 and (s.effect > 10000 or self.spelltype & utils.SpellTypes.RITUAL):
             s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
 
+        # Free rituals are a big fat NOPE.
+        if s.effect > 10000 and s.fatiguecost < 100:
+            s.fatiguecost = 100
+
+        # Blood combat spells get more fatigue if they don't cost a slave
+        if s.path1 == 128 and s.fatiguecost < 100:
+            s.fatiguecost *= 2
 
         # Fill in placeholders in modcmdsbefore
         # This is event stuff

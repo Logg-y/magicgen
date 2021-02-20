@@ -8,7 +8,7 @@ from . import utils
 # which means they can be a LOT simpler
 # Most stuff should be handled in the SecondaryEffect
 
-flags_to_mod_cmds = {"def_":"def", "explodeondeath":"deathfire", "acidsplash":"acidshield", "vineshield":"entangle", "deathwail":"deathparalyze", "undeadleader":"undcommand", "poisonbarbs":"poisonarmor", "invisibility":"invisible", "poweroftheturningyear":"yearturn"}
+flags_to_mod_cmds = {"def_":"def", "explodeondeath":"deathfire", "acidsplash":"acidshield", "vineshield":"entangle", "deathwail":"deathparalyze", "undeadleader":"undcommand", "poisonbarbs":"poisonarmor", "invisibility":"invisible", "poweroftheturningyear":"yearturn", "graphicsize":"drawsize"}
 argless_cmds = ["eyeloss", "horrormark", "aquatic", "amphibian", "pooramphibian", "flying", "illusion", "heal", "ethereal", "immortal", "domimmortal", "springimmortal", "entangle", "spiritsight", "deathcurse", "noundeadleader", "invisible", "invisibility"]
 
 class UnitMod(object):
@@ -70,6 +70,7 @@ class UnitMod(object):
             wpnmod = utils.weaponmods[self.weaponmod]
             if not wpnmod.compatibilityunit(unitobj):
                 return False
+        tested.append(unitobj.id)
 
         # Must recursively check for eligibility on all subshapes too
         for x in ["shapechange", "firstshape", "secondshape", "secondtmpshape", "forestshape", "plainshape",
@@ -78,10 +79,10 @@ class UnitMod(object):
             if hasattr(unitobj, x):
                 uid = getattr(unitobj, x)
                 if uid not in tested and uid > 0:
-                    tested = tested + [uid]
                     unittottest = unit.get(uid)
                     if not self.compatibility(unittottest, tested=tested):
                         return False
+
 
         return True
 

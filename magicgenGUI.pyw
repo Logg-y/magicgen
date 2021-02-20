@@ -333,7 +333,7 @@ def main():
         [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800-1999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
-        [sg.Text('Starting Montag ID. (Allowed range for modded weapons is 1000-100000)', size=(50, 2),
+        [sg.Text('Starting Montag ID. (Allowed range for these is 1000-100000)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-montagidstart-', size=(4, 1), default_text=1000)],
         [sg.Text('Starting Event Code. (Allowed range for these is -300 to -5000)', size=(50, 2),
@@ -416,6 +416,7 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except:
+    except Exception as e:
         with open("magicgenGUIerror.txt", "w") as f:
             f.write(traceback.format_exc())
+        raise e

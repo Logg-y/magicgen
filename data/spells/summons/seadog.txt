@@ -62,13 +62,13 @@
 #pathlevel 2
 #fatiguecost 400
 #schools 1
-#skipchance 97
+#skipchance 99
 #onlygeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Sea Dog Attack"
 #descr 64 "The caster summons ARTICLE sea %dog% to ambush a hostile commander in a distant province. Sea dogs are amphibious creatures that bite their enemies."

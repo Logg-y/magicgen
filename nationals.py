@@ -7,7 +7,7 @@ from typing import (
     List, Union,
 )
 
-from site import Site
+from nationalsite import Site
 
 from spellstructures import utils
 from nation import Nation
@@ -116,12 +116,8 @@ def readMods(modstring):
 
                 m = re.match("#montag (\\d+)", line)
                 if m is not None:
-                    del units[currentunit.id]
-                    montagids.remove(currentunit.id)
                     newid = int(m.groups()[0])
                     montagids.append(newid)
-                    units[newid] = currentunit
-                    currentunit.id = newid
                     print(f"Parsed montag {newid}")
 
                 m = re.match("#code (.+)", line)
@@ -211,7 +207,8 @@ def readMods(modstring):
                 if line.strip() == "#disableoldnations":
                     print(f"found disableoldnations")
                     for x in range(0, 120):
-                        del nations[x]
+                        if x in nations:
+                            del nations[x]
 
                 if line.strip() == "#end":
                     print(f"Found #end")

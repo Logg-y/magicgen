@@ -7,11 +7,11 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
+#scalerate 1.6
 
 #aoe 0
 #power 0
-#maxpower 6
+#maxpower 5
 #pathlevel 1
 #explspr 10058
 #sound 31
@@ -28,6 +28,40 @@
 
 #namecond aoe >= 1 8 "Earthen $Strength$"
 #namecond aoe >= 1 128 "Infernal $Strength$"
+
+#descr 8 "SUBJECT receives increased strength."
+#descr 128 "$BLOOD_INTRO$, SUBJECT receives demonic strength."
+
+#end
+
+
+#neweffect "Strength Buff battlefield"
+#effect 10
+#damage 128
+#spec 8388608
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+
+#aoe 666
+#power 6
+#maxpower 6
+#pathlevel 4
+#explspr 10058
+#sound 31
+#range 10
+#fatiguecost 200
+
+#paths 136
+#secondarypaths 8
+
+#details "Grants +4 strength."
+
+#name 8 "Army of Might"
+#name 128 "Rush of Strength"
 
 #descr 8 "SUBJECT receives increased strength."
 #descr 128 "$BLOOD_INTRO$, SUBJECT receives demonic strength."

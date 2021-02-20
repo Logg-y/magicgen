@@ -12,7 +12,8 @@
 
 #aoe 0
 #power 8
-#maxpower 12
+-- this falls short of 100% field (aoe 21)
+#maxpower 14
 #pathlevel 1
 #explspr 10216
 #sound 31

@@ -14,7 +14,7 @@
 #aoe 1
 #power 1
 #pathlevel 2
-#maxpower 7
+#maxpower 6
 #explspr 10193
 #sound 31
 #range 10
@@ -36,4 +36,44 @@
 #descr 8 "The armor of SUBJECT is imbued with magic, making it temporarily stronger." 
 
 #end
+
+#neweffect "Toughened Armor battlefield"
+#effect 10
+#damage 64
+#spec 12582912
+#schools 8
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.5
+#scalefatigueexponent 1.3
+#pathperresearch 0.35
+
+#aoe 666
+#power 7
+#pathlevel 4
+#maxpower 7
+#explspr 10193
+#sound 31
+#range 10
+#fatiguecost 200
+
+
+-- erf
+#paths 8
+#secondarypaths 8
+
+#namecond aoe == 1 8 "Temper Armor"
+
+#namecond2 1 < aoe < 666 8 "Toughen Steel"
+
+#namecond aoe == 666 8 "Legions of Steel"
+
+#details "+3 protection to all armor parts."
+
+#descr 8 "The armor of SUBJECT is imbued with magic, making it temporarily stronger." 
+
+#end
+
 

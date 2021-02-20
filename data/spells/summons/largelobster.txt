@@ -63,13 +63,13 @@
 #pathlevel 2
 #fatiguecost 300
 #schools 1
-#skipchance 97
+#skipchance 99
 #onlygeodst 2052
 
 #paths 64
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Large Lobster Attack"
 #descr 64 "The caster summons ARTICLE large %lobster% to attack a hostile commander in a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."

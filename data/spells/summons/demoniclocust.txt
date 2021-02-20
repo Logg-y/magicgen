@@ -65,7 +65,7 @@
 #pathlevel 6
 #fatiguecost 1600
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 128
@@ -75,7 +75,7 @@
 #name 128 "NAMEPREFIX Demonic %Locust% Ambush"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to kill an enemy commander in a distant province. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger."
 
-#skipchance 97
+#skipchance 99
 
 #spelltype 4
 

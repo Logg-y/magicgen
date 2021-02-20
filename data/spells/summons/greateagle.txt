@@ -64,13 +64,13 @@
 #pathlevel 3
 #fatiguecost 700
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "NAMEPREFIX Great Eagle Attack"
 #descr 2 "The caster sends ARTICLE great %eagle% to attack a hostile commander in a distant province. The great eagle is large and attacks enemies with its beak and talons."

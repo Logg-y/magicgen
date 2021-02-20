@@ -64,13 +64,13 @@
 #pathlevel 2
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Leogryph Attack"
 #descr 64 "The caster summons ARTICLE %leogryph% to attack a hostile commander in a distant land. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
