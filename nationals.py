@@ -85,6 +85,9 @@ def readMods(modstring):
             sitenames: Dict[str, int] = {}
             # TODO Sites that are defined after nations with them as startsite
 
+            nationstartsites: Dict[Nation, List[Union[int, str]]] = {}
+            sitecommanders: Dict[Site, List[Union[int, str]]] = {}
+
             currentnation: Union[Nation, None] = None
             currentunit: Union[NationalMage,None] = None
 
@@ -203,13 +206,18 @@ def readMods(modstring):
                 m = re.match("#homecom (\\d+)", line)
                 if m is not None:
                     unitid = int(m.groups()[0])
-                    currentsite.mages.append(units[unitid])
+                    if currentsite not in sitecommanders:
+                        sitecommanders[currentsite] = []
+                    sitecommanders[currentsite].append(unitid)
                     print(f"Assign Commander {unitid} to site {currentsite}")
 
                 m = re.match("#startsite [\"](.+)[\"]", line)
                 if m is not None:
                     name = m.groups()[0]
-                    currentnation.sites.append(sites[sitenames[name]])
+                    if currentnation not in nationstartsites:
+                        nationstartsites[currentnation] = []
+                    nationstartsites[currentnation].append(name)
+
                     print(f"Assign startsite {name} as belonging to {currentnation}")
 
                 m = re.match("#addreccom (\\d+)", line)
@@ -249,3 +257,14 @@ def readMods(modstring):
                     random = MagePathRandom(paths=mask, chance=chance, link=link)
                     print(f"Give random path {mask} to current commander")
                     currentunit.addrandom(random)
+
+            for nation in nationstartsites:
+                for siteid in nationstartsites[nation]:
+                    nation.sites.append(sites[sitenames[siteid]])
+
+            for site in sitecommanders:
+                 for unitid in sitecommanders[site]:
+                        site.mages.append(units[unitid])
+
+
+

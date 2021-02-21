@@ -1,5 +1,10 @@
 import enum
 import random
+import sys
+from typing import (
+    Dict,
+    List,
+)
 
 # This gets populated later by the file parser
 spelleffects = {}
@@ -138,3 +143,21 @@ class SpellTypes(enum.IntFlag):
     BATTLESUMMON = 512
     ALLOW_NO_SLAVE_COST = 1024
     BATTLE_ENCHANT = 2048
+
+
+def _writetoconsole(line):
+    """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
+    this be converted to exe with --window to avoid the console coming up.
+    For some reason after doing that, sys.stderr has to be flushed after every line to allow the GUI process
+    to pick it up"""
+    sys.stderr.write(line)
+    sys.stderr.flush()
+
+
+def normalizemapkeys(mapin: Dict) -> map:
+    acc = 0
+    for i in mapin:
+        acc += mapin[i]
+    for i in mapin:
+        mapin[i] = mapin[i] / acc
+    return mapin

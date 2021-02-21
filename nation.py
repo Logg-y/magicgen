@@ -1,3 +1,4 @@
+import debugkeys
 from nationalmage import NationalMage
 from typing import (
     Dict,
@@ -5,6 +6,7 @@ from typing import (
     Union,
 )
 import random
+from spellstructures import utils
 
 from site import Site
 
@@ -34,10 +36,12 @@ class Nation(object):
             for i in range(0, 8):
                 weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage]
 
-        # _writetoconsole(f"Mages:{self.mages}\nWeights:{weights}")
-        return self.sanitizeweights(weights)
+        debugkeys.debuglog(f"Mages:{[i.totext() for i in self.mages]}\n"
+                           f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
+                           , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
+        return self._sanitizeweights(weights)
 
-    def sanitizeweights(self, unsanatizedweights: Dict[int, int] ):
+    def _sanitizeweights(self, unsanatizedweights: Dict[int, int]):
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
@@ -61,12 +65,13 @@ class Nation(object):
     def getcommanderwithpath(self, path: int) -> Union[NationalMage, None]:
         random.shuffle(self.mages)
         for mage in self.mages:
-            if (mage.hasaccesstopath(path)):
+            debugkeys.debuglog(f"Testing {mage.totext()} for {utils.pathstotext(path)}: {mage.hasaccesstopath(path)}", debugkeys.debugkeys.MAGESELECTIONFORPATHFORNATIONALSPELL)
+            if mage.hasaccesstopath(path):
                 return mage
-        return None
+        raise ValueError(f"Could not find mage for path {utils.pathstotext(path)} in {self.totext()}")
 
     def totext(self):
-        acc = f"mages for {self.id}:["
+        acc = f"mages for {self.name} (ID:{self.id}):["
         k = 0
         for i in self.mages:
             if k != 0:

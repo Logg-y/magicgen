@@ -4,6 +4,7 @@ from typing import (
 )
 from spellstructures import PathFlags, utils
 import sys
+import debugkeys
 
 class MagePathRandom(object):
     def __init__(self, chance, link, paths):
@@ -102,9 +103,9 @@ class NationalMage(object):
         self.pathweightsinitialised = True
         for i in range(0, 8):
             self.pathweights[2 ** i] = self.getaveragelevelinpath(2 ** i)
-        s = sum(self.pathweights)
-        self.pathweights = [float(i)/s for i in self.pathweights]
-        self.pathweights = [(i + 0.5) ** 2 for i in self.pathweights]
-        s = sum(self.pathweights)
-        self.pathweights = [float(i) / s for i in self.pathweights]
+        self.pathweights = utils.normalizemapkeys(self.pathweights)
+        for i in self.pathweights:
+            self.pathweights[i] = (self.pathweights[i] + 0.5) ** 2
+        self.pathweights = utils.normalizemapkeys(self.pathweights)
+
 

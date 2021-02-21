@@ -12,6 +12,7 @@ import nationals
 from nation import Nation
 from nationalmage import NationalMage
 from spellstructures import utils, SpellEffect, Spell
+import debugkeys
 
 # List of spells to not push to uncastable: these are only divine spells
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
@@ -24,12 +25,7 @@ ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
 
 def _writetoconsole(line):
-    """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
-    this be converted to exe with --window to avoid the console coming up.
-    For some reason after doing that, sys.stderr has to be flushed after every line to allow the GUI process
-    to pick it up"""
-    sys.stderr.write(line)
-    sys.stderr.flush()
+    utils._writetoconsole(line)
 
 
 def rollspells(**options):
@@ -293,7 +289,9 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
         if nationid not in nationstogeneratefor:
             continue
         if index % 20 == 0:
-            _writetoconsole(f"Progress: Beginning nation {index} of {nationcount}...\n")
+            _writetoconsole(f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n")
+        else:
+            debugkeys.debuglog(f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
         index += 1
         if not nation.hasmages():
             _writetoconsole(f"Skipping nation {nation.totext()} because no national mages were found\n")
@@ -303,7 +301,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
 
         while numberofgeneratedspells[nationid] < targetnumberofnationalspells:
             primarypath = _rollpathfornationalspell(nation)
-            # _writetoconsole(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n")
+            debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
 
             # choose researchlevel
             researchlevelstotry: List[int] = list(range(1 + researchmod, 10 + researchmod))
@@ -318,7 +316,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
 
             # Select effect for spell
             choseneffect: Union[SpellEffect, None] = None
-            # _writetoconsole(f"Selecting national spell effect\n")
+            debugkeys.debuglog(f"Selecting national spell effect\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
             while choseneffect is None:
                 NationalSpellGenerationInfoCollector.effectschecked += 1
                 choseneffect = effectpool[random.choice(list(effectpool.keys()))]
@@ -326,10 +324,10 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
                 if ((primarypath & choseneffect.paths) == 0) or (  # Wrong path
                         choseneffect.name in generatedeffectsatlevels[
                     researchlevel]):  # effect incompatible for this level
-                    # _writetoconsole(f"Discarding current effect: {choseneffect.name}\n")
+                    debugkeys.debuglog(f"Discarding current effect: {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
                     choseneffect = None
                     NationalSpellGenerationInfoCollector.effectsdiscarded += 1
-            # _writetoconsole(f"Selected effect: {choseneffect.name}\n")
+            debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
 
             # Roll for spell
             # _writetoconsole(
@@ -362,12 +360,12 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
                         f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
                         f"randoms={commander.getrandomspossiblepathmask()}")
                 else:
-                    # _writetoconsole(f"failed to generate spell for effect {choseneffect.name}\n")
+                    debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
                     break
 
             generatedspells.append(spell)
             numberofgeneratedspells[nationid] += 1
-            # _writetoconsole("Spell successfully generated\n")
+            debugkeys.debuglog("Spell successfully generated\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
 
 
     _writetoconsole(
