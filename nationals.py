@@ -22,9 +22,8 @@ eventcodes = []
 montagids = []
 
 
-def read_vanilla():
-    nationalunits = {}
-    with open("fort_leader_types_by_nation.csv", "r") as datacsv:
+def _read_vanilla_unit_nation_map_file(path:str, nationalunits):
+    with open(path, "r") as datacsv:
         reader = csv.DictReader(datacsv, delimiter="\t")
         for line in reader:
             nationid = int(line["nation_number"])
@@ -32,6 +31,13 @@ def read_vanilla():
             if nationid not in nationalunits:
                 nationalunits[nationid] = []
             nationalunits[nationid].append(unit)
+
+
+def read_vanilla():
+    nationalunits = {}
+    _read_vanilla_unit_nation_map_file("fort_leader_types_by_nation.csv", nationalunits)
+    _read_vanilla_unit_nation_map_file("coast_leader_types_by_nation.csv", nationalunits)
+    _read_vanilla_unit_nation_map_file("nonfort_leader_types_by_nation.csv", nationalunits)
 
     # Get their info
     unitdata = {}
