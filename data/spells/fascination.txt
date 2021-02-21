@@ -9,7 +9,7 @@
 
 #scalerate 4.3
 -- #scalecost 0.6
-#scalefatigueexponent -0.15
+#scalefatigueexponent -0.07
 
 #aoe 0
 #power -1

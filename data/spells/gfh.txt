@@ -9,7 +9,7 @@
 #precision -3
 #nreff 1
 #range 100
-#pathlevel 4
+#pathlevel 3
 #fatiguecost 40
 #sound 89
 
@@ -30,6 +30,5 @@
 
 #scalerate 0.7
 -- #scalecost 0.15
-#pathlevel 2
 #schools 4
 #end

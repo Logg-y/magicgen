@@ -442,7 +442,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
         debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
                            debugkeys.debugkeys.NATIONALSPELLGENERATION)
         availableeffectpool = copy.copy(spelleffects)
-
+        
         primarypath: int = _roll_path_for_national_spell(nation)
         debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
                            debugkeys.debugkeys.NATIONALSPELLGENERATION)

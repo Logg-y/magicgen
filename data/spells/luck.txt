@@ -10,7 +10,7 @@
 #scalerate 1.3
 
 #aoe 0
-#power 1
+#power 2
 #pathlevel 1
 #explspr 10001
 #sound 31
