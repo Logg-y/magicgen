@@ -6,29 +6,29 @@ from spellstructures import PathFlags, utils
 import sys
 import debugkeys
 
+
 class MagePathRandom(object):
     def __init__(self, chance, link, paths):
         self.chance: int = chance  # chance for generating
         self.link: int = link  # amount of levels it gives
         self.paths: int = paths  # path mask
 
-    def getpossiblepaths(self) -> List[int]:
+    def get_possible_paths(self) -> List[int]:
         acc = []
         for i in range(0, 8):
             if self.paths & (2 **i):
                 acc.append(2 ** i)
         return acc
 
-    def getnumberofpossiblepaths(self) -> int:
+    def get_number_of_possible_paths(self) -> int:
         acc: int = 0
         for i in range(0, 8):
             if self.paths & (2 ** i):
                 acc += 1
         return acc
 
-
-    def canrandompath(self, path: PathFlags) -> bool:
-        return path in self.getpossiblepaths()
+    def can_random_into_path(self, path: PathFlags) -> bool:
+        return path in self.get_possible_paths()
 
     def __repr__(self):
         return f"MagePathRandom(Paths={self.paths}, link={self.link}, chance={self.chance})"
@@ -48,54 +48,54 @@ class NationalMage(object):
             self.pathweights[2 ** i] = 0
         self.pathweightsinitialised: bool = False
 
-    def addrandom(self, random: MagePathRandom):
+    def add_magic_random(self, random: MagePathRandom):
         self.randoms.append(random)
 
-    def addsinglemagic(self, pathmask: int, level: int):
+    def add_magic_path(self, pathmask: int, level: int):
         self.pathmask |= (pathmask & 255)  # Filter out holy levels
         self.pathlevels[pathmask] = level
 
-    def canhaveblood(self) -> bool:
+    def can_have_blood(self) -> bool:
         for random in self.randoms:
             if random.paths & PathFlags.BLOOD:
                 return True
         return (self.pathmask & PathFlags.BLOOD) != 0
 
-    def ismage(self) -> bool:
+    def is_mage(self) -> bool:
         return (self.pathmask != 0) | (len(self.randoms) != 0)
 
-    def hasaccesstopath(self, path: int) -> bool:
+    def has_access_to_path(self, path: int) -> bool:
         for random in self.randoms:
             if random.paths & path:
                 return True
         return (self.pathmask & path) != 0
 
-    def gettotalpossiblepathsmask(self) -> int:
+    def get_total_possible_paths_mask(self) -> int:
         acc: int = self.pathmask
         for random in self.randoms:
             acc |= random.paths
         return acc
 
-    def getrandomspossiblepathmask(self) -> int:
+    def get_possible_randoms_pathmask(self) -> int:
         acc: int = 0
         for random in self.randoms:
             acc |= random.paths
         return acc
 
-    def getguaranteedlevelinpath(self, path: int) -> int:
+    def get_guaranteed_level_in_path(self, path: int) -> int:
         return self.pathlevels[path]
 
-    def totext(self) -> str:
-        return f"({self.name},{utils.pathstotext(self.pathmask)},{utils.pathstotext(self.getrandomspossiblepathmask())})"
+    def to_text(self) -> str:
+        return f"({self.name},{utils.pathstotext(self.pathmask)},{utils.pathstotext(self.get_possible_randoms_pathmask())})"
 
-    def getaveragelevelinpath(self, path: PathFlags) -> float:
+    def get_average_level_in_path(self, path: PathFlags) -> float:
         acc: float = float(self.pathlevels[path])
         for random in self.randoms:
-            if random.canrandompath(path):
-                acc += random.link * random.chance / random.getnumberofpossiblepaths() / 100
+            if random.can_random_into_path(path):
+                acc += random.link * random.chance / random.get_number_of_possible_paths() / 100
         return acc
 
-    def gettotalpathsamount(self) -> float:
+    def get_total_paths_amount(self) -> float:
         acc: float = 0.0
         for i in self.pathlevels:
             acc += self.pathlevels[i]
@@ -103,17 +103,17 @@ class NationalMage(object):
             acc += random.chance * random.link
         return acc
 
-    def getweightfractionforpath(self, path: PathFlags) -> float:
+    def get_weight_fraction_for_path(self, path: PathFlags) -> float:
         if not self.pathweightsinitialised:
-            self._calculatepathweightproportions()
+            self._calculate_pathweight_proportions()
         return self.pathweights[path]
 
-    def _calculatepathweightproportions(self):
-        debugkeys.debuglog(f"Generating pathweights for mage {self.totext()}",
+    def _calculate_pathweight_proportions(self):
+        debugkeys.debuglog(f"Generating pathweights for mage {self.to_text()}",
                            debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         self.pathweightsinitialised = True
         for i in range(0, 8):
-            self.pathweights[2 ** i] = self.getaveragelevelinpath(2 ** i)
+            self.pathweights[2 ** i] = self.get_average_level_in_path(2 ** i)
         debugkeys.debuglog(f"Average levels (default weight) in paths: " +
                            str([utils.pathstotext(i) + " " + str(self.pathweights[i]) for i in self.pathweights]),
                            debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)

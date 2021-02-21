@@ -22,7 +22,7 @@ eventcodes = []
 montagids = []
 
 
-def readVanilla():
+def read_vanilla():
     nationalunits = {}
     with open("fort_leader_types_by_nation.csv", "r") as datacsv:
         reader = csv.DictReader(datacsv, delimiter="\t")
@@ -49,7 +49,7 @@ def readVanilla():
                 mage: NationalMage = NationalMage()
                 for index, key in enumerate(["F", "A", "W", "E", "S", "D", "N", "B"]):
                     if dataline[key] != "":
-                        mage.addsinglemagic(2 ** index, int(dataline[key]))
+                        mage.add_magic_path(2 ** index, int(dataline[key]))
 
                 for n in range(1, 7):
                     if dataline[f"mask{n}"] == "":
@@ -59,15 +59,15 @@ def readVanilla():
                     instances = int(dataline[f"nbr{n}"])
                     link = int(dataline[f"link{n}"])
                     for i in range(instances):
-                        mage.addrandom(MagePathRandom(chance=chance, link=link, paths=mask))
+                        mage.add_magic_random(MagePathRandom(chance=chance, link=link, paths=mask))
 
                 mage.name = dataline[f"name"]
 
-                if mage.ismage():
-                    nations[nationid].addmage(mage)
+                if mage.is_mage():
+                    nations[nationid].add_mage(mage)
 
 
-def readMods(modstring):
+def read_mods(modstring):
     global monsterids, weaponids, spellids, eventcodes, montagids
     mods = modstring.strip().split(",")
     monsterids = [3499]
@@ -218,7 +218,7 @@ def readMods(modstring):
                 if m is not None:
                     unitid = int(m.groups()[0])
                     print(f"{unitid} is a recruitable commander of {currentnation}")
-                    currentnation.addmage(units[unitid])
+                    currentnation.add_mage(units[unitid])
 
                 if line.strip() == "#disableoldnations":
                     print(f"found disableoldnations")
@@ -239,7 +239,7 @@ def readMods(modstring):
                     path = 2**int(int(m.groups()[0]))
                     level = int(m.groups()[1])
                     print(f"Give guaranteed path {path} of strength {level} to current commander")
-                    currentunit.addsinglemagic(path, level)
+                    currentunit.add_magic_path(path, level)
 
                 m = re.match("#custommagic (\\d+) (\\d+)", line)
                 if m is not None:
@@ -253,7 +253,7 @@ def readMods(modstring):
                         chance = chancemask
                     random = MagePathRandom(paths=mask, chance=chance, link=link)
                     print(f"Give random path {mask} to current commander")
-                    currentunit.addrandom(random)
+                    currentunit.add_magic_random(random)
 
             for nation in nationstartsites:
                 for siteid in nationstartsites[nation]:

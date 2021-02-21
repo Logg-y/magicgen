@@ -6,7 +6,7 @@ from typing import (
     Union,
 )
 import random
-from spellstructures import utils
+from spellstructures import utils,  Spell
 
 from nationalsite import Site
 
@@ -21,69 +21,63 @@ class Nation(object):
         self.id: int = id
         self.sites: List[Site] = []
         self.mages: List[NationalMage] = []
+        self.nationalspells: List[Spell] = []
 
-    def addmage(self, mage: NationalMage):
-        if (mage not in self.mages):
+    def add_mage(self, mage: NationalMage):
+        if mage not in self.mages:
             self.mages.append(mage)
 
-    def getpathweights(self) -> Dict[int, int]:
-        mageweights: Dict[NationalMage, float] = self.getmagetotalweightdistribution()
-        weights: Dict[int, float] = {}
-        for i in range(0, 8):
-            weights[2 ** i] = 0.0
-
-        for mage in self.mages:
-            for i in range(0, 8):
-                weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage] * 100
+    def get_pathweights(self) -> Dict[int, int]:
+        mageweights: Dict[NationalMage, float] = self._get_natspell_weight_distribution_for_mages()
+        weights: Dict[int, float] = self._calculate_raw_pathweights(mageweights)
+        weights: Dict[int, int] = {i: int(round(weights[i]))for i in weights}
 
         debugkeys.debuglog(f"Pathweights for nation {self.name} (ID{self.id})\n"
-                           f"Mages:{[i.totext() for i in self.mages]}\n"                                                                              
+                           f"Mages:{[i.to_text() for i in self.mages]}\n"                                                                              
                            f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
-        return self._sanitizeweights(weights)
+        return weights
 
-    def _sanitizeweights(self, unsanitizedweights: Dict[int, float]) -> Dict[int, int]:
-        # touch up output for compatability
-        output: Dict[int, int] = {}
-        hasweight = False
-        for i in unsanitizedweights:
-            output[i] = int(round(unsanitizedweights[i]))
-            if output[i] != 0:
-                hasweight = True
-        if not hasweight:  # If all weights are 0 set all to 1
-            for i in output:
-                output[i] = 1
-        return output
+    def _calculate_raw_pathweights(self, mageweights) -> Dict[int, float]:
+        weights: Dict[int, float] = {2 ** i: 0 for i in range(0, 8)}
+        for mage in self.mages:
+            for i in range(0, 8):
+                weights[2 ** i] += mage.get_weight_fraction_for_path(2 ** i) * mageweights[mage] * 100
+        return weights
 
-    def getmagetotalweightdistribution(self) -> Dict[NationalMage, float]:
+    def _get_natspell_weight_distribution_for_mages(self) -> Dict[NationalMage, float]:
         acc: Dict[NationalMage, float] = {}
-        for i in self.mages:
-            acc[i] = 0.0
-        for mage in acc:
-            acc[mage] = mage.gettotalpathsamount() * 2 - 1
+        for mage in self.mages:
+            if mage not in acc:
+                acc[mage] = 0.0
+            acc[mage] = mage.get_total_paths_amount() * 2 - 1
         return acc
 
-    def getcommanderwithpath(self, path: int) -> Union[NationalMage, None]:
+    def get_commander_with_path(self, path: int) -> Union[NationalMage, None]:
         random.shuffle(self.mages)
         for mage in self.mages:
-            debugkeys.debuglog(f"Testing {mage.totext()} for {utils.pathstotext(path)}: {mage.hasaccesstopath(path)}", debugkeys.debugkeys.MAGESELECTIONFORPATHFORNATIONALSPELL)
-            if mage.hasaccesstopath(path):
+            debugkeys.debuglog(f"Testing {mage.to_text()} for {utils.pathstotext(path)}: {mage.has_access_to_path(path)}", debugkeys.debugkeys.MAGESELECTIONFORPATHFORNATIONALSPELL)
+            if mage.has_access_to_path(path):
                 return mage
-        raise ValueError(f"Could not find mage for path {utils.pathstotext(path)} in {self.totext()}")
+        raise ValueError(f"Could not find mage for path {utils.pathstotext(path)} in {self.to_text()}")
 
-    def totext(self):
+    def to_text(self):
         acc = f"mages for {self.name} (ID:{self.id}):["
         k = 0
         for i in self.mages:
             if k != 0:
                 acc += ", "
             k += 1
-            acc += i.totext()
+            acc += i.to_text()
         acc += "]"
         return acc
 
-    def hasmages(self) -> bool:
+    def has_mages(self) -> bool:
         return len(self.mages) > 0
 
-    def __repr__(self):
-        return(f"Nation({self.name}, id {self.id})")
+    def __str__(self):
+        return f"Nation({self.name}, id {self.id})"
+
+    def register_national_spell(self, spell: Spell):
+        if spell is not None:
+            self.nationalspells.append(spell)

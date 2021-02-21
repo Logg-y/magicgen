@@ -32,6 +32,8 @@ def _writetoconsole(line):
     this be converted to exe with --window to avoid the console coming up.
     For some reason after doing that, sys.stderr has to be flushed after every line to allow the GUI process
     to pick it up"""
+    if not line.endswith("\n"):
+        line += "\n"
     sys.stderr.write(line)
     sys.stderr.flush()
 
@@ -157,7 +159,8 @@ def rollspells(**options):
                 for name, spelleff in s.items():
                     if spelleff.alwaysgenerate > 0 and not spelleff.generated:
                         print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
-                        spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower), allowskipchance=False,
+                        spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower),
+                                                   allowskipchance=False,
                                                    **options)
                         if spell is not None:
                             l.append(spell)
@@ -198,15 +201,19 @@ def rollspells(**options):
                                 break
 
             # Generate some national spells
-            nationals.readVanilla()
-            nationals.readMods(options.get("modlist", ""))
-            if "nationlist" not in options:
+            _writetoconsole("Reading vanilla nations\n")
+            nationals.read_vanilla()
+            _writetoconsole("Finished reading vanilla nations\n")
+            if len(options.get("modlist", "")) > 0:
+                _writetoconsole("Reading mod nations\n")
+                nationals.read_mods(options.get("modlist", ""))
+                _writetoconsole("Finished reading mod nations\n")
+            if options.get("nationlist") not in options:
                 options["nationlist"] = list(nationals.nations.keys())
             elif options["nationlist"] is None:
                 options["nationlist"] = list(nationals.nations.keys())
             nationstogeneratefor = options["nationlist"]
-            generateNationalSpells(
-                modlist=options.get("modlist", ""),
+            generate_national_spells(
                 targetnumberofnationalspells=options.get("nationalspells", 12),
                 spelleffects=s,
                 researchmod=researchmod,
@@ -236,7 +243,6 @@ def rollspells(**options):
                         continue
                     nationalspells.append(int(line.strip()))
 
-
             if not bool(options.get("clearvanillanationalspells", 1)):
                 spellstokeep += nationalspells
 
@@ -251,7 +257,6 @@ def rollspells(**options):
                     f.write(f"#school -1\n")
                     f.write(f"#researchlevel -1\n")
                     f.write(f"#end\n")
-
 
             # add #indepspells to casters
             if bool(options.get("clearvanillagenericspells")):
@@ -313,10 +318,11 @@ def rollspells(**options):
 
                                 mask = int(getattr(unitobj, mask, 0))
                                 randomchance = int(getattr(unitobj, f"rand{n}", 0))
-                                nbr = max(0,int(getattr(unitobj, f"nbr{n}")))
+                                nbr = max(0, int(getattr(unitobj, f"nbr{n}")))
                                 if randomchance > 0:
-                                    randomaverage += nbr * (randomchance/100)
-                                    print(f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
+                                    randomaverage += nbr * (randomchance / 100)
+                                    print(
+                                        f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
                                     print(f"\ttotal random path value now {randomaverage}")
 
                             totalmagiclevel += math.floor(randomaverage)
@@ -335,7 +341,6 @@ def rollspells(**options):
                     with open("indepspells.dm", "w") as indepspells:
                         indepspells.write(indepspellscontent)
                         f.write(indepspellscontent)
-
 
             print(f"There are {len(l)} spells to write!")
             for spell in l:
@@ -361,130 +366,178 @@ class NationalSpellGenerationInfoCollector:
                         f"{NationalSpellGenerationInfoCollector.spellrollsrepeated} spellrolls were unsuccessful\n")
 
 
-def _rollpathfornationalspell(nation: Nation) -> int:
-    pathweights = nation.getpathweights()
+def _roll_path_for_national_spell(nation: Nation) -> int:
+    pathweights = nation.get_pathweights()
     totalweights = 0
     for i, weight in pathweights.items():
         totalweights += weight
     if totalweights == 0:
-        _writetoconsole(f"Failed calculating national spell path weights.\n"
-                        f"Nation: {nation.totext()}\n"
-                        f"Weights: {pprint.pformat(pathweights)}\n"
-                        f"Total Weight: {totalweights}")
-        raise ValueError
+        raise ValueError(f"Failed calculating national spell path weights.\n"
+                         f"Nation: {nation.to_text()}\n"
+                         f"Weights: {pprint.pformat(pathweights)}\n"
+                         f"Total Weight: {totalweights}")
     initialroll = roll = random.randrange(0, totalweights, 1)
     for path, weight in pathweights.items():
         if roll < weight:
+            debugkeys.debuglog(f"Selected path {utils.pathstotext(path)} from weights {pathweights.items()}, "
+                               f"rolled {initialroll}",
+                               debugkeys.debugkeys.NATIONALSPELLGENERATION |
+                               debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
             return path
         roll -= weight
-    _writetoconsole(f"Attempted and failed to roll for weighted path\n  Rolled {initialroll}\n  Total weight: "
-                    f"{totalweights}\n  Weights: {pprint.pformat(pathweights)}\n")
-    raise ValueError
+    raise ValueError(f"Attempted and failed to roll for weighted path\n  Rolled {initialroll}\n  Total weight: "
+                     f"{totalweights}\n  Weights: {pprint.pformat(pathweights)}\n")
 
 
-def _selectresearchlevel(researchlevelstotry: List[int], generatedeffectsatlevels: Dict[int, List[str]]) -> int:
+def _select_research_level(researchmod: int, generatedeffectsatlevels: Dict[int, List[str]]) -> int:
+    researchlevelstotry: List[int] = list(range(1 + researchmod, 10 + researchmod))
+    random.shuffle(researchlevelstotry)
     while len(researchlevelstotry) > 0:
         researchlevel = researchlevelstotry.pop(0)
         if researchlevel in generatedeffectsatlevels:
+            debugkeys.debuglog(f"Selecting researchlevel {researchlevel}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
             return researchlevel
+    raise ValueError(f"Failed to select research level for spell")
 
 
-def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spelleffects: Dict[str, SpellEffect],
-                           researchmod: int,
-                           generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
-                           nationstogeneratefor: List[int], options: Dict[str, str]):
+def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
+                                      researchlevel: int, primarypath, allowblood: bool, secondarypathoptions: int,
+                                      options: Dict[str, str]) -> Union[Spell, None]:
+    # Roll for spell
+    spell: Union[Spell, None] = None
+    creationattempts: int = 0
+    while (spell is None) and (creationattempts < 20):
+        creationattempts += 1
+        for attempt in range(0, 2):
+            if attempt == 0:
+                spell = spelleffect.rollSpell(researchlevel, forcepath=primarypath,
+                                              forcesecondaryeff=secondarypathoptions,
+                                              allowblood=allowblood, allowskipchance=False,
+                                              setparams={"restricted": nation.id}, **options)
+            else:
+                spell = spelleffect.rollSpell(researchlevel, forcepath=primarypath,
+                                              blocksecondary=True, allowblood=allowblood,
+                                              allowskipchance=False,
+                                              setparams={"restricted": nation.id}, **options)
+                NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
+            if spell is not None:
+                break
+    return spell
+
+
+def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generatedeffectsatlevels: Dict[int, List[str]],
+                   researchlevel: int) -> SpellEffect:
+    choseneffect: Union[SpellEffect, None] = None
+    effectstocheck: List[str] = list(effectpool.keys())
+    random.shuffle(effectstocheck)
+    while choseneffect is None:
+        if len(effectstocheck) == 0:
+            raise ValueError
+        NationalSpellGenerationInfoCollector.effectschecked += 1
+        choseneffect = effectpool[effectstocheck.pop(0)]
+        # Check that effect is available
+        debugkeys.debuglog(f"Checking effect {choseneffect.name}\n"
+                           f"Primary path supposed: {utils.pathstotext(primarypath)}\n"
+                           f"Already generated effects: {generatedeffectsatlevels}\n"
+                           f"Current research level: {researchlevel}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        if ((primarypath & choseneffect.paths) == 0) or (  # Wrong path
+                choseneffect.name in generatedeffectsatlevels[researchlevel]):  # effect incompatible for this level
+            debugkeys.debuglog(f"Discarding current effect: {choseneffect.name}\n",
+                               debugkeys.debugkeys.NATIONALSPELLGENERATION)
+            choseneffect = None
+            NationalSpellGenerationInfoCollector.effectsdiscarded += 1
+    debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    return choseneffect
+
+
+def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: Dict[str, SpellEffect],
+                                generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                                targetnumberofnationalspells: int, options: Dict[str, str]):
+    debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    availableeffectpool = copy.copy(spelleffects)
+
+    primarypath: int = _roll_path_for_national_spell(nation)
+    debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
+                       debugkeys.debugkeys.NATIONALSPELLGENERATION)
+
+    # Select a commander to generate this spell for
+    commander: NationalMage = nation.get_commander_with_path(primarypath)
+
+    # calculate if blood shall be allowed as path in the spell
+    allowblood = commander.can_have_blood()
+
+    # Select effect for spell
+    debugkeys.debuglog(f"Selecting national spell effect\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    while len(nation.nationalspells) < targetnumberofnationalspells:
+        researchlevel = _select_research_level(researchmod, generatedeffectsatlevels)
+        try:
+            choseneffect = _choose_effect(
+                effectpool=availableeffectpool,
+                primarypath=primarypath,
+                generatedeffectsatlevels=generatedeffectsatlevels,
+                researchlevel=researchlevel
+            )
+        except ValueError:
+            raise ValueError(
+                f"Couldn't make a national spell for nation {nation.name} (ID:{nation.id}), guaranteed={commander.pathlevels}, "
+                f"randoms={commander.get_possible_randoms_pathmask()}, no effect available")
+
+        debugkeys.debuglog(
+            f"Try generating national spell for nation {nation.id} with effect {choseneffect.name}, "
+            f"primarypath={utils.pathstotext(primarypath)}, secondaries={commander.get_total_possible_paths_mask()}, there are "
+            f"{len(availableeffectpool)} effects available\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        spell = _try_to_generate_a_national_spell(
+            nation=nation,
+            spelleffect=choseneffect,
+            researchlevel=researchlevel,
+            primarypath=primarypath,
+            allowblood=allowblood,
+            options=options,
+            secondarypathoptions=commander.get_total_possible_paths_mask()
+        )
+
+        # Only one national spell per effect
+        del availableeffectpool[choseneffect.name]
+        if spell is None:
+            debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n",
+                               debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        else:
+            generatedspells.append(spell)
+            nation.register_national_spell(spell)
+            debugkeys.debuglog("Spell successfully generated\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+
+
+def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Dict[str, SpellEffect],
+                             researchmod: int,
+                             generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                             nationstogeneratefor: List[int], options: Dict[str, str]):
     _writetoconsole("Generating national spells...\n")
 
     # Initialize national mage map
     nationcount = len(nationstogeneratefor)
     index = 0  # used for progress report
-    numberofgeneratedspells: Dict[int, int] = {}
-    # for i in nationals.nations:
-    #    nationals.nations[i].printmages()
     for nationid, nation in nationals.nations.items():
         if nationid not in nationstogeneratefor:
             continue
+        beginningnationlogtext = "Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n"
         if index % 20 == 0:
-            _writetoconsole(f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n")
-        else:
-            debugkeys.debuglog(f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+            _writetoconsole(beginningnationlogtext)
+        debugkeys.debuglog(beginningnationlogtext, debugkeys.debugkeys.NATIONALSPELLGENERATION)
         index += 1
-        if not nation.hasmages():
-            _writetoconsole(f"Skipping nation {nation.totext()} because no national mages were found\n")
+
+        if not nation.has_mages():
+            _writetoconsole(f"Skipping nation {nation.to_text()} because no national mages were found\n")
             continue
-        effectpool = copy.copy(spelleffects)
-        numberofgeneratedspells[nationid] = 0
 
-        while numberofgeneratedspells[nationid] < targetnumberofnationalspells:
-            primarypath = _rollpathfornationalspell(nation)
-            debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-
-            # choose researchlevel
-            researchlevelstotry: List[int] = list(range(1 + researchmod, 10 + researchmod))
-            random.shuffle(researchlevelstotry)
-            researchlevel = _selectresearchlevel(researchlevelstotry, generatedeffectsatlevels)
-
-            # Select a commander to generate this spell for
-            commander: NationalMage = nation.getcommanderwithpath(primarypath)
-
-            # calculate if blood shall be allowed as path in the spell
-            allowblood = commander.canhaveblood()
-
-            # Select effect for spell
-            choseneffect: Union[SpellEffect, None] = None
-            debugkeys.debuglog(f"Selecting national spell effect\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-            while choseneffect is None:
-                NationalSpellGenerationInfoCollector.effectschecked += 1
-                choseneffect = effectpool[random.choice(list(effectpool.keys()))]
-                # Check that effect is available
-                if ((primarypath & choseneffect.paths) == 0) or (  # Wrong path
-                        choseneffect.name in generatedeffectsatlevels[
-                    researchlevel]):  # effect incompatible for this level
-                    debugkeys.debuglog(f"Discarding current effect: {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-                    choseneffect = None
-                    NationalSpellGenerationInfoCollector.effectsdiscarded += 1
-            debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-
-            # Roll for spell
-            # _writetoconsole(
-            #    f"Try generating national spell for nation {nation.id} with effect {choseneffect.name}, "
-            #    f"primarypath={utils.pathstotext(primarypath)}, secondaries={commander.getpossiblepaths()}, there are "
-            #    f"{len(effectpool)} effects available\n")
-            spell: Union[Spell, None] = None
-            creationattempts: int = 0
-            while (spell is None) and (creationattempts < 20):
-                creationattempts += 1
-                for attempt in range(0, 2):
-                    if attempt == 0:
-                        spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                       forcesecondaryeff=commander.gettotalpossiblepathsmask(),
-                                                       allowblood=allowblood, allowskipchance=False,
-                                                       setparams={"restricted": nationid}, **options)
-                    else:
-                        spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
-                                                       blocksecondary=True, allowblood=allowblood,
-                                                       allowskipchance=False,
-                                                       setparams={"restricted": nationid}, **options)
-                        NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
-                    if spell is not None:
-                        break
-
-            # Only one national spell per effect
-            del effectpool[choseneffect.name]
-
-            if spell is None:
-                if len(effectpool) == 0:
-                    raise ValueError(
-                        f"Couldn't make a national spell for nation {nationid}, guaranteed={commander.pathlevels}, "
-                        f"randoms={commander.getrandomspossiblepathmask()}")
-                else:
-                    debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-                    break
-
-            generatedspells.append(spell)
-            numberofgeneratedspells[nationid] += 1
-            debugkeys.debuglog("Spell successfully generated\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
-
+        _generate_spells_for_nation(
+            nation=nation,
+            researchmod=researchmod,
+            spelleffects=spelleffects,
+            generatedeffectsatlevels=generatedeffectsatlevels,
+            generatedspells=generatedspells,
+            options=options,
+            targetnumberofnationalspells=targetnumberofnationalspells
+        )
 
     _writetoconsole(
         f"Attempted to generate {targetnumberofnationalspells} national spells per nation for {nationcount} nations.\n")

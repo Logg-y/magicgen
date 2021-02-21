@@ -86,8 +86,8 @@ def display_nationchoice(modstring):
     global nationselection
     # Reparse mod nations
     nationals.nationinfo = {}
-    nationals.readVanilla()
-    nationals.readMods(modstring)
+    nationals.read_vanilla()
+    nationals.read_mods(modstring)
     # Build layout
     elementlists = {1: [], 2: [], 3: []}
     # Keep the element keys for each category to enable the select/deselect buttons
@@ -203,7 +203,7 @@ def display_nationchoice(modstring):
 
 def detectids(window, modlist):
     "Detect sensible starting IDs based on the mods."
-    nationals.readMods(modlist)
+    nationals.read_mods(modlist)
     startunitid = max(nationals.monsterids) + 1
     startweaponid = max(nationals.weaponids) + 1
     startspellid = max(nationals.spellids) + 1
