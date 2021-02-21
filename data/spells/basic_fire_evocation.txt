@@ -123,7 +123,7 @@
 #damage 2018
 #spec 96
 #aoe 1
-#power 4
+#power 5
 #precision 1
 #range 100
 #pathlevel 2

@@ -232,8 +232,8 @@
 
 -- evo, scale numbounces
 #spelltype 130
-#scalerate 5
-#scalefatigueexponent -0.33
+#scalerate 4.3
+#scalefatigueexponent -0.1
 -- #scalecost 1.4
 #schools 4
 #end

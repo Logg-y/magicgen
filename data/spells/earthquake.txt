@@ -23,16 +23,16 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
-#noadditionalnextspells 1
+--#noadditionalnextspells 1
 #sound 16
 
-#nextspell "Cave Collapse"
+--#nextspell "Cave Collapse"
 #paths 8
 #secondarypaths 8
 
 #skipflightspr 1
 #name 8 "Earthquake"
-#descr 8 "With a thundering boom, the ground heaves and erupts, throwing soldiers into crevices that close after a few seconds. If cast in a cave province the effects are devastating."
+#descr 8 "With a thundering boom, the ground heaves and erupts, throwing soldiers into crevices that close after a few seconds."
 #details "The defence checking mechanism of this spell causes each affected unit to roll their defence skill, not including weapon modifiers or fatigue, vs 3d6 exploding. The defender wins ties."
 
 
