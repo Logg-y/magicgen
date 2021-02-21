@@ -28,7 +28,12 @@ ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
 
 def _writetoconsole(line):
-    utils._writetoconsole(line)
+    """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
+    this be converted to exe with --window to avoid the console coming up.
+    For some reason after doing that, sys.stderr has to be flushed after every line to allow the GUI process
+    to pick it up"""
+    sys.stderr.write(line)
+    sys.stderr.flush()
 
 
 def rollspells(**options):
