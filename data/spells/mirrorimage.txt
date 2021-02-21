@@ -12,10 +12,49 @@
 #aoe 0
 #power 2
 #pathlevel 1
+#maxpower 7
 #explspr 10035
 #sound 31
 #range 10
 #fatiguecost 10
+
+
+#paths 2
+#secondarypaths 2
+
+#namecond aoe <= 1 2 "Mirror Image"
+#namecond aoe <= 1 2 "$Illusory$ Images"
+
+#namecond2 1 < aoe < 666 2 "$Illusory$ Soldiers"
+
+#namecond aoe == 666 2 "$Illusory$ Army"
+
+#details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
+
+#descr 2 "$Illusory$ images are of SUBJECT are created. The additional images are distracting and may take hits in place of PRONOUN real %body%."
+
+#end
+
+
+#neweffect "Mirror Image battlefield"
+#effect 23
+#damage 16777216
+#spec 8405120
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.2
+
+#aoe 666
+#power 8
+#pathlevel 4
+#maxpower 8
+#explspr 10035
+#sound 31
+#range 10
+#fatiguecost 200
 
 
 #paths 2

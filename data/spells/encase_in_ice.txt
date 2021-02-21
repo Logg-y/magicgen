@@ -15,7 +15,7 @@
 #pathlevel 2
 #explspr 10134
 #sound 21
-#fatiguecost 20
+#fatiguecost 40
 #range 5015
 
 -- fire + air + water + blood
@@ -58,7 +58,7 @@
 #pathlevel 3
 #explspr 10134
 #sound 21
-#fatiguecost 20
+#fatiguecost 80
 #range 5015
 
 -- fire + air + water + blood

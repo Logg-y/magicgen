@@ -185,6 +185,9 @@ class EventSet(object):
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
                  + copy.copy(self.rawdata)
 
+        self.moduletailingcode = ""
+
+
         # Get an enchant ID first, as any submodules need to know it
         # These are various local and global enchantment effect IDs
         if spelleffect.effect in [10081, 10082, 10083, 10084, 10085, 10086]:
@@ -211,6 +214,7 @@ class EventSet(object):
 
         modulepicks = self._pickmodules(spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modulelist)
         if modulepicks is None:
+            print(f"ERROR: No module picks for {self.name}")
             return None
         print(f"Module picks are {modulepicks}")
 
@@ -246,15 +250,18 @@ class EventSet(object):
             if moduledata[replacement] is None:
                 print(f"ERROR: formatdata for module {module.name} failed")
                 return None
+            print(f"Add {len(moduledata[replacement])} bytes of replacement code from module {module.name} to tag {replacement}")
+            print(f"Add {len(module.moduletailingcode)} bytes of tail code from module {module.name}")
             tailcode += module.moduletailingcode + "\n"
 
 
-        print("enter repl loop")
+
         while 1:
             replmade = False
             for replacement, data in moduledata.items():
                 for replacement2, data2 in moduledata.items():
                     if replacement2 in data:
+                        print(f"Made one replacement for module symbol {replacement2} with length {len(data2)}")
                         moduledata[replacement] = data.replace(replacement2, data2)
                         replmade = True
                         break
@@ -262,7 +269,8 @@ class EventSet(object):
                     break
             if not replmade:
                 break
-        print("leave repl loop")
+
+
 
         for codeindex in range(0, self.requiredcodes):
             # Replacement of codes should be done backwards
@@ -313,6 +321,9 @@ class EventSet(object):
                 for effname, effect in utils.spelleffects.items():
                     if effect.effect == 10001:  # ritual summon
                         unitid = effect.damage
+                        # no montags
+                        if unitid < 0:
+                            continue
                         unitobj = unit.get(unitid)
 
                         if self.restrictunitstospellpaths > 0:
@@ -356,16 +367,21 @@ class EventSet(object):
                     # If rollSpell enforces a secondary effect (unlikely), use that
                     if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
                         realunitmod = utils.unitmods[secondaryeffect.unitmod]
+                        unitobj = unit.get(unittouse)
+                        if not realunitmod.compatibility(unitobj):
+                            print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
+                            unittouse = None
+                            continue
                         output = f"-- EventSet {self.name} applied secondary effect unitmod {realunitmod.name} " \
                                  f"to {unittouse}\n\n" + output
                         secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
                     else:
                         # Find a secondary effect to use for this creature
-                        # shallow copy
                         if self.secondaryeffectchance is not None and random.random() * 100 > self.secondaryeffectchance:
                             realunitmod = utils.unitmods["Do Nothing"]
                             secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
                         else:
+                            # shallow copy
                             unitmodlist = self.allowedunitmods[:]
                             random.shuffle(unitmodlist)
                             bad = False
@@ -432,7 +448,11 @@ class EventSet(object):
                         unitcode = realunitmod.applytounitid(None, unittouse)
                         unittouse = realunitmod.lastparentid
                         self.lastunitname = realunitmod.lastunitname
-                        output = unitcode + "\n\n" + output
+                        if self.modulegroup is None:
+                            output = unitcode + "\n\n" + output
+                        else:
+                            self.moduletailingcode += unitcode + "\n"
+
                         generateokay = True
                     else:
                         # work out the effective fatigue cost
@@ -469,7 +489,8 @@ class EventSet(object):
 
                 if unittouse is not None and numtogenerate == 1:
                     output = output.replace("UNITID", str(unittouse))
-                    output = f"-- EventSet {self.name} called by {spelleffect.name} generated with unitid {unittouse}\n\n"
+                    output = f"-- EventSet {self.name} called by {spelleffect.name} generated with unitid " \
+                             f"{unittouse}\n\n" + output
 
                 if generateokay:
                     break
@@ -535,29 +556,35 @@ class EventSet(object):
                 output += resultcmds
             else:
                 self.moduletailingcode += resultcmds
-            if result.numcreatures > 10:
+            if result.numcreatures > 16:
                 for line in result.weightingstring.split("\n"):
                     output = output + "--" + line + "\n"
                 output += "\n"
-                spell.details += "\n" + f'For details on the creatures and weightings of this spell, search ' \
-                                        f'the mod file for "Montag#{result.montagid}".'
+                spell.details += "\n" + f"For details on the creatures and weightings of this spell, search " \
+                                        f"the mod file for 'Montag#{result.montagid}'."
             else:
                 spell.details += "\n" + result.weightingstring
 
         # module replacements
 
-
         while 1:
             replmade = False
             for replacement, data in moduledata.items():
                 if replacement in output:
+                    print(output)
+                    print(f"Latereplace made one replacement for module symbol {replacement} with length {len(data)}")
                     output = output.replace(replacement, data)
+                    print(output)
                     replmade = True
                     break
             if not replmade:
                 break
 
-        output += tailcode
+        if self.modulegroup is None:
+            output += tailcode
+        else:
+            self.moduletailingcode += tailcode
 
-
+        print(f"EventSet {self.name} returning {len(output)} bytes of content")
+        print(output)
         return output

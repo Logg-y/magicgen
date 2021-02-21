@@ -1,0 +1,13 @@
+#newunitmod "Summon Farcaster 25"
+#set allrange 1
+#nameprefix "Farcasting"
+#reqmage 1
+#descr "This particular CREATURE is able to project its spells further than normal."
+#end
+
+#newunitmod "Summon Farcaster 50"
+#set allrange 2
+#nameprefix "Farcasting"
+#reqmage 1
+#descr "This particular CREATURE is able to project its spells much further than normal."
+#end

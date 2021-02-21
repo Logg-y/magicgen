@@ -62,11 +62,11 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #paths 4
 #secondarypaths 4 
 
-#skipchance 97
+#skipchance 99
 
 #name 4 "NAMEPREFIX %kappa% Attack"
 #descr 4 "The caster summons ARTICLE %kappa% to attack a hostile commander in a distant province. The kappa is a scaled humanoid with a turtle shell which tires easily on land."

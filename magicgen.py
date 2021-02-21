@@ -4,7 +4,10 @@ import csv
 import os
 import pprint
 import random
+import binascii
 import sys
+import math
+import traceback
 from typing import Dict, List, Union
 
 import fileparser
@@ -19,7 +22,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.3"
+ver = "2.1.4"
 
 ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -29,6 +32,7 @@ def _writetoconsole(line):
 
 
 def rollspells(**options):
+    global spellstokeep
     utils.WEAPON_ID = options.get("weaponidstart", 800)
     utils.MONSTER_ID = options.get("unitidstart", 3500)
     utils.SPELL_ID = options.get("spellidstart", 1300)
@@ -144,18 +148,19 @@ def rollspells(**options):
                             break
 
             # Always generated effects
-            for name, spelleff in s.items():
-                if spelleff.alwaysgenerate > 0 and not spelleff.generated:
-                    print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
-                    spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower), allowskipchance=False,
-                                               **options)
-                    if spell is not None:
-                        l.append(spell)
-                elif spelleff.alwaysgenerate > 0:
-                    print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
+            if options.get("clearvanillagenericspells", 1):
+                for name, spelleff in s.items():
+                    if spelleff.alwaysgenerate > 0 and not spelleff.generated:
+                        print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
+                        spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower), allowskipchance=False,
+                                                   **options)
+                        if spell is not None:
+                            l.append(spell)
+                    elif spelleff.alwaysgenerate > 0:
+                        print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
 
             # Make holy spells
-            _writetoconsole("Generating holyspells \n")
+            _writetoconsole("Generating holy spells...\n")
             holy = fileparser.readEffectsFromDir(r".\data\spells\holy")
             for spelltype in ["banishment", "smite"]:
                 for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
@@ -187,8 +192,6 @@ def rollspells(**options):
                                                            allowskipchance=False, **options))
                                 break
 
-            _writetoconsole("Generating national spells...\n")
-
             # Generate some national spells
             nationals.readVanilla()
             nationals.readMods(options.get("modlist", ""))
@@ -208,18 +211,126 @@ def rollspells(**options):
                 nationstogeneratefor=nationstogeneratefor,
             )
 
-            _writetoconsole(f"Writing output {outfp}...\n")
+            _writetoconsole(f"Beginning to write output {outfp}...\n")
             f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
             f.write(
                 "#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
                     '"', ver, len(l), '"')
             )
-            for x in range(1, 1 + START_ID):
-                if x not in spellstokeep:
+
+            nationalspells = []
+
+            with open("Dom5-natspells-list.txt", "r") as natspells:
+                foundheader = False
+                for line in natspells:
+                    if not foundheader:
+                        if line.startswith("--"):
+                            foundheader = True
+                        continue
+                    if line.strip() == "":
+                        continue
+                    nationalspells.append(int(line.strip()))
+
+
+            if not bool(options.get("clearvanillanationalspells", 1)):
+                spellstokeep += nationalspells
+
+            _writetoconsole(f"Hiding vanilla spells...\n")
+            for x in range(1, 3501):
+                removespell = x not in spellstokeep
+                if removespell and bool(options.get("clearvanillagenericspells")) == False:
+                    if x not in nationalspells:
+                        removespell = False
+                if removespell:
                     f.write(f"#selectspell {x}\n")
                     f.write(f"#school -1\n")
                     f.write(f"#researchlevel -1\n")
                     f.write(f"#end\n")
+
+
+            # add #indepspells to casters
+            if bool(options.get("clearvanillagenericspells")):
+                # Check crc32 for saved BaseU.csv
+                crcokay = False
+                if os.path.isfile("indepspells.dm"):
+                    with open("indepspells.dm", "r") as indepspells:
+                        indepspellscontent = indepspells.read()
+                        crc = indepspellscontent.split("\n")[0][2:].strip()
+                        with open("BaseU.csv", "rb") as baseu:
+                            baseucontent = baseu.read()
+                            baseucrc = str(binascii.crc32(baseucontent))
+                        if crc == baseucrc:
+                            crcokay = True
+                            indepspells.seek(0)
+                            for line in indepspells:
+                                f.write(line)
+
+                if not crcokay:
+                    _writetoconsole(f"BaseU CRC {baseucrc} did not match precalced CRC {crc}!"
+                                    f" Regenerating indepspells.dm...\n")
+                    indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
+                                         f"mod files when magicgen clears vanilla generic spells.\n" \
+                                         f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
+                                         f"- this is saved as generating this from scratch takes several minutes\n"
+                    for unitid in range(0, 3500):
+                        if unitid % 100 == 0:
+                            _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
+                        try:
+                            unitobj = unit.get(unitid)
+                        except Exception:
+                            print(f"Error trying to get uid {unitid}")
+                            print(traceback.format_exc());
+                            continue
+                        # leave illwinter-set values intact
+                        if hasattr(unitobj, "indepspells"):
+                            if int(getattr(unitobj, "indepspells")) > 0:
+                                continue
+                        indeplevel = None
+
+                        if hasattr(unitobj, "startdom"):
+                            if int(getattr(unitobj, "startdom")) > 0:
+                                indeplevel = 7
+
+                        if indeplevel is None:
+                            totalmagiclevel = 0
+                            for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
+                                if getattr(unitobj, path, "") <= 0:
+                                    continue
+                                pathval = int(getattr(unitobj, path, 0))
+                                if pathval > 0:
+                                    totalmagiclevel += pathval
+                                    print(f"Unit {unitid} has {path} level {pathval}")
+
+                            randomaverage = 0
+
+                            for n in range(1, 5):
+                                mask = f"mask{n}"
+
+                                mask = int(getattr(unitobj, mask, 0))
+                                randomchance = int(getattr(unitobj, f"rand{n}", 0))
+                                nbr = max(0,int(getattr(unitobj, f"nbr{n}")))
+                                if randomchance > 0:
+                                    randomaverage += nbr * (randomchance/100)
+                                    print(f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
+                                    print(f"\ttotal random path value now {randomaverage}")
+
+                            totalmagiclevel += math.floor(randomaverage)
+
+                            if totalmagiclevel >= 3:
+                                indeplevel = 5
+                            elif totalmagiclevel == 2:
+                                indeplevel = 4
+                            elif totalmagiclevel == 1:
+                                indeplevel = 3
+
+                        if indeplevel is not None:
+                            indepspellscontent += f"#selectmonster {unitid}\n"
+                            indepspellscontent += f"#indepspells {indeplevel}\n"
+                            indepspellscontent += f"#end\n"
+                    with open("indepspells.dm", "w") as indepspells:
+                        indepspells.write(indepspellscontent)
+                        f.write(indepspellscontent)
+
 
             print(f"There are {len(l)} spells to write!")
             for spell in l:
@@ -242,7 +353,7 @@ class NationalSpellGenerationInfoCollector:
         _writetoconsole(f"{NationalSpellGenerationInfoCollector.numberofgeneratedspells} were generated successfully.\n"
                         f"{NationalSpellGenerationInfoCollector.effectschecked} effects were checked. "
                         f"{NationalSpellGenerationInfoCollector.effectsdiscarded} effects were discarded.\n"
-                        f"{NationalSpellGenerationInfoCollector.spellrollsrepeated} spellrolls were unsuccessfull\n")
+                        f"{NationalSpellGenerationInfoCollector.spellrollsrepeated} spellrolls were unsuccessful\n")
 
 
 def _rollpathfornationalspell(nation: Nation) -> int:
@@ -336,20 +447,22 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             #    f"{len(effectpool)} effects available\n")
             spell: Union[Spell, None] = None
             creationattempts: int = 0
-            while (spell is None) & (creationattempts < 20):
+            while (spell is None) and (creationattempts < 20):
                 creationattempts += 1
                 for attempt in range(0, 2):
                     if attempt == 0:
                         spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
                                                        forcesecondaryeff=commander.gettotalpossiblepathsmask(),
                                                        allowblood=allowblood, allowskipchance=False,
-                                                       setparams={"restricted": nation}, **options)
+                                                       setparams={"restricted": nationid}, **options)
                     else:
                         spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
                                                        blocksecondary=True, allowblood=allowblood,
                                                        allowskipchance=False,
-                                                       setparams={"restricted": nation}, **options)
+                                                       setparams={"restricted": nationid}, **options)
                         NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
+                    if spell is not None:
+                        break
 
             # Only one national spell per effect
             del effectpool[choseneffect.name]
@@ -357,7 +470,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             if spell is None:
                 if len(effectpool) == 0:
                     raise ValueError(
-                        f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
+                        f"Couldn't make a national spell for nation {nationid}, guaranteed={commander.pathlevels}, "
                         f"randoms={commander.getrandomspossiblepathmask()}")
                 else:
                     debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
@@ -369,7 +482,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
 
 
     _writetoconsole(
-        f"Attempted to generated {targetnumberofnationalspells} national spells for {nationcount} nations.\n")
+        f"Attempted to generate {targetnumberofnationalspells} national spells per nation for {nationcount} nations.\n")
     NationalSpellGenerationInfoCollector.print()
 
 
@@ -506,6 +619,19 @@ def main():
                        help='Scale the number of units in montags. '
                             'Lower this if experiencing "monster ID too high" errors.',
                        type=float, default=1.0))
+
+    opts.append(Option("-bloodcostscale",
+                       help='Blood ritual spell costs are multiplied by this value. '
+                            'Set to a value greater than 1.0 if you believe MagicGen blood is too strong.',
+                       type=float, default=1.0))
+
+    opts.append(Option("-clearvanillanationalspells",
+                       help='If set to 1, vanilla national spells will all be removed. ',
+                       type=int, default=1))
+
+    opts.append(Option("-clearvanillagenericspells",
+                       help='If set to 1, vanilla national spells will all be removed. ',
+                       type=int, default=1))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",

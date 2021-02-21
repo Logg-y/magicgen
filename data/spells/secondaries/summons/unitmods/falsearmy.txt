@@ -1,0 +1,23 @@
+#newunitmod "Summon Falsearmy Large"
+#falsearmy 20
+#nameprefix "Projecting"
+#descr "This particular CREATURE projects illusory images of the army around it, causing scouts to report a larger force than is truly present."
+#end
+
+#newunitmod "Summon Falsearmy Large2"
+#falsearmy 50
+#nameprefix "Projecting"
+#descr "This particular CREATURE projects many illusory images of the army around it, causing scouts to report a much larger force than is truly present."
+#end
+
+#newunitmod "Summon Falsearmy Small"
+#falsearmy -20
+#nameprefix "Concealing"
+#descr "This particular CREATURE projects illusory images of the terrain around it to hide the army, causing scouts to report a smaller force than is truly present."
+#end
+
+#newunitmod "Summon Falsearmy Small2"
+#falsearmy -50
+#nameprefix "Concealing"
+#descr "This particular CREATURE projects illusory images of the terrain around it to hide the army, causing scouts to report a smaller force than is truly present."
+#end

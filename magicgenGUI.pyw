@@ -13,7 +13,7 @@ import PySimpleGUI as sg
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
           "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "montagidstart",
-          "eventcodestart", "montagscale"]
+          "eventcodestart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 
@@ -21,7 +21,7 @@ proc = None
 nationselection = None
 outputqueue = queue.Queue()
 
-ver = "v2.1.3"
+ver = "v2.1.4"
 
 
 def output_polling_thread(timeout=0.1):
@@ -298,6 +298,26 @@ def main():
             size=(50, 5), relief="ridge"),
             sg.InputText(key='-fatiguemodmult-', size=(4, 1), default_text=1.0)],
 
+        [sg.Text(
+            'Clear Vanilla generic spells: If non-zero, all vanilla non-national spells will be cleared. (1)'
+            ,
+            size=(50, 2), relief="ridge"),
+            sg.InputText(key='-clearvanillagenericspells-', size=(4, 1), default_text=1)],
+
+        [sg.Text(
+            'Clear Vanilla national spells: If non-zero, all vanilla national spells will be cleared. (1)'
+            ,
+            size=(50, 2), relief="ridge"),
+            sg.InputText(key='-clearvanillanationalspells-', size=(4, 1), default_text=1)],
+
+        [sg.Text(
+            'Blood Ritual slave cost multiplier: Set to a value greater than 1.0 if you think MagicGen blood '
+            'rituals are too cheap and need to have their cost increased proportionally. Values less than '
+            '1.0 will make the blood rituals cheaper. (1.0)'
+            ,
+            size=(50, 4), relief="ridge"),
+            sg.InputText(key='-bloodcostscale-', size=(4, 1), default_text=1.0)],
+
     ]
 
     id_category = [
@@ -313,7 +333,7 @@ def main():
         [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800-1999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
-        [sg.Text('Starting Montag ID. (Allowed range for modded weapons is 1000-100000)', size=(50, 2),
+        [sg.Text('Starting Montag ID. (Allowed range for these is 1000-100000)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-montagidstart-', size=(4, 1), default_text=1000)],
         [sg.Text('Starting Event Code. (Allowed range for these is -300 to -5000)', size=(50, 2),
@@ -323,7 +343,7 @@ def main():
         [sg.Text('Scale the number of units in montags. Lower this if experiencing "monster ID too high" errors. '
                  'Increase to make random unit pools larger.', size=(50, 3),
                  relief="ridge"),
-         sg.InputText(key='-montagscale-', size=(4, 1), default_text=1.0)],
+         sg.InputText(key='-montagscale-', size=(4, 1), default_text=1.5)],
     ]
 
     layout = [[sg.Text("Welcome to MagicGen!", k="-welcome-", font=("arial", 40))],
@@ -396,6 +416,7 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except:
+    except Exception as e:
         with open("magicgenGUIerror.txt", "w") as f:
             f.write(traceback.format_exc())
+        raise e

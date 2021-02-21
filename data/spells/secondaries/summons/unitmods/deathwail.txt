@@ -1,7 +1,7 @@
 #newunitmod "Summon Deathwail"
-#req deathwail == -1
+#req deathparalyze == -1
 #req spiritsight == -1
-#set deathwail 5
+#set deathparalyze 5
 #nameprefix "Vengeful"
 #descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
 #end

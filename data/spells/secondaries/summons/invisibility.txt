@@ -1,0 +1,16 @@
+#newsecondary "Summon Invisibility"
+
+#anysummon 1
+
+#paths 18
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.4
+#magicpathvaluescaling 0.05
+
+#unitmod "Summon Invisibility"
+#descr "The summoned %creature% %is% magically turned invisible and cannot be seen without spirit sight. This also enables sneaking."
+
+#end

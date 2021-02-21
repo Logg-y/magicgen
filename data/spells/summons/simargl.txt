@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 300
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "NAMEPREFIX Simargl Attack"
 #descr 2 "The caster summons ARTICLE simargl to attack a hostile commander in a distant province. The simargl is a small winged dog."

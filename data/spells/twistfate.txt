@@ -11,12 +11,58 @@
 
 #aoe 0
 #power 0
-#maxpower 7
+#maxpower 5
 #pathlevel 1
 #explspr 10046
 #sound 31
 #range 10
 #fatiguecost 10
+
+#paths 144
+#secondarypaths 16
+
+#details "Twist fate: the next instance of damage is prevented."
+
+#namecond aoe < 1 16 "twist fate"
+#namecond aoe < 1 16 "averted fate"
+#namecond aoe < 2 16 "cheat fate"
+#namecond aoe < 1 128 "infernal protection"
+
+#namecond2 1 <= aoe < 666 16 "group twisted fate"
+#namecond2 1 <= aoe < 666 16 "group averted fate"
+#namecond2 1 <= aoe < 666 16 "group cheated fate"
+#namecond2 1 <= aoe < 666 128 "group infernal protection"
+
+#namecond aoe == 666 16 "mass twisted fate"
+#namecond aoe == 666 16 "mass averted fate"
+#namecond aoe == 666 16 "mass cheated fate"
+#namecond aoe == 666 128 "mass infernal protection"
+
+#descr 16 "Alters the future fate of SUBJECT, protecting PRONOUN from a single strike."
+#descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from a single strike."
+
+#end
+
+
+#neweffect "Twist Fate battlefield"
+#effect 23
+#damage 1
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.3
+
+#aoe 666
+#power 6
+#maxpower 6
+#pathlevel 3
+#explspr 10046
+#sound 31
+#range 10
+#fatiguecost 100
 
 #paths 144
 #secondarypaths 16

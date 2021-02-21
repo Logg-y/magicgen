@@ -43,4 +43,3 @@
 #descr 64 "The %body% of SUBJECT %is% covered in moss. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
 
 #end
-

@@ -1,59 +1,17 @@
+# This script should NOT BE EXECUTED DIRECTLY
+# use "python setup.py build" instead (this is how you correctly invoke cx_freeze)
+
 import os
 import shutil
 import zipfile
 import time
-
-#if __name__ == "__main__":
-
-#    if os.path.isdir("build"):
-#        shutil.rmtree("build")
-#    if os.path.isdir("dist"):
-#        shutil.rmtree("dist")
-#    if os.path.isdir("magicgen"):
-#        shutil.rmtree("magicgen")
-#        
-#    os.mkdir("magicgen")
-#        
-#    os.system("python -m nuitka --standalone --python-flag=no_site magicgen.py")
-#    
-#    shutil.copy("magicgen.dist/magicgen.exe", "magicgen/magicgen.exe")
-#
-#
-#    os.system("python -m nuitka --standalone --python-flag=no_site --plugin-enable=tk-inter magicgengui.pyw")
-#    shutil.copytree("magicgengui.dist", "magicgen/")
-#    for f in os.listdir("magicgen"):
-#        if f.startswith("api-ms") or f in ["ucrtbase.dll", "vcruntime140.dll"]:
-#            os.unlink(os.path.join("magicgen", f))
-#
-#    shutil.copy("LICENSE", "magicgen/LICENSE")
-#    shutil.copy("docs.md", "magicgen/docs.md")
-#    shutil.copy("readme.md", "magicgen/readme.md")
-#    shutil.copy("changelog.txt", "magicgen/changelog.txt")
-#
-#    shutil.copy("baseu.csv", "magicgen/baseu.csv")
-#    shutil.copy("effects_weapons.csv", "magicgen/effects_weapons.csv")
-#    shutil.copy("fort_leader_types_by_nation.csv", "magicgen/fort_leader_types_by_nation.csv")
-#    shutil.copy("spells.csv", "magicgen/spells.csv")
-#    shutil.copy("weapons.csv", "magicgen/weapons.csv")
-#    shutil.copy("nations.csv", "magicgen/nations.csv")
-#    shutil.copytree("data", "magicgen/data")
-#    shutil.copytree("unitdescr", "magicgen/unitdescr")
-#    os.mkdir("magicgen/output")
-#
-#    zipf = zipfile.ZipFile("magicgen.zip", "w", zipfile.ZIP_DEFLATED)
-#    for root, dirs, files in os.walk("magicgen"):
-#        for file in files:
-#            zipf.write(os.path.join(root, file))
-#
-#    zipf.close()
-#
-
+import re
 import cx_Freeze
 
 if os.path.isdir("build"):
     shutil.rmtree("build")
 	
-import re
+
 
 # Apparently importing the actual script that is built is bad practice and may cause issues
 ver = None
@@ -77,6 +35,10 @@ time.sleep(5)
 
 buildfilename = os.listdir("build")[0]
 os.rename(f"build/{buildfilename}", f"build/magicgen-{ver}")
+
+# cx_Freeze tries to include a bunch of dlls that Windows users may not have permissions to distribute
+# but should be present on any recent system (and available through the MS VC redistributables if not)
+# therefore clear them from the distribution
 
 for root, dirs, files in os.walk(f"build/magicgen-{ver}"):
 	for file in files:

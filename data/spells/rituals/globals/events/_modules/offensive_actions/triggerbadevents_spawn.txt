@@ -1,0 +1,16 @@
+#neweventset "Offensive Global action trigger bad event spawn"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#modulegroup "Unlucky Spirits"
+
+#usefixedunitid 674
+#allowedunitmod "Unlucky Spirits"
+
+
+#end
+
+#msg "unlucky spirit spawn"
+#notext
+#nolog
+#stealthcom UNITID

@@ -65,7 +65,7 @@
 #pathlevel 6
 #fatiguecost 1800
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 128
@@ -75,7 +75,7 @@
 #name 128 "NAMEPREFIX Shed Ambush"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to kill an enemy commander in a distant province. Shedim can unleash blasts of lightning."
 
-#skipchance 97
+#skipchance 99
 
 #spelltype 4
 

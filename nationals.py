@@ -7,7 +7,7 @@ from typing import (
     List, Union,
 )
 
-from site import Site
+from nationalsite import Site
 
 from spellstructures import utils
 from nation import Nation
@@ -119,12 +119,8 @@ def readMods(modstring):
 
                 m = re.match("#montag (\\d+)", line)
                 if m is not None:
-                    del units[currentunit.id]
-                    montagids.remove(currentunit.id)
                     newid = int(m.groups()[0])
                     montagids.append(newid)
-                    units[newid] = currentunit
-                    currentunit.id = newid
                     print(f"Parsed montag {newid}")
 
                 m = re.match("#code (.+)", line)
@@ -155,8 +151,6 @@ def readMods(modstring):
                 if m is None:
                     m = re.match("#selectweapon (\\d+)", line)
                 if m is not None:
-                    print(m.groups())
-                    print(line)
                     newid = int(m.groups()[0])
                     weaponids.append(newid)
                 elif line.startswith("#newweapon"):
@@ -229,7 +223,8 @@ def readMods(modstring):
                 if line.strip() == "#disableoldnations":
                     print(f"found disableoldnations")
                     for x in range(0, 120):
-                        del nations[x]
+                        if x in nations:
+                            del nations[x]
 
                 if line.strip() == "#end":
                     print(f"Found #end")
@@ -239,7 +234,9 @@ def readMods(modstring):
 
                 m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:
-                    path = int(int(m.groups()[0]))
+                    # In normal dominions modding, path flags are 0-7, just for this I converted them into their
+                    # 2^n bitmask form
+                    path = 2**int(int(m.groups()[0]))
                     level = int(m.groups()[1])
                     print(f"Give guaranteed path {path} of strength {level} to current commander")
                     currentunit.addsinglemagic(path, level)

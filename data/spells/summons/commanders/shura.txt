@@ -38,7 +38,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#chassisvalue 700
+#chassisvalue 1000
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
@@ -74,7 +74,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 32
 #secondarypaths 32

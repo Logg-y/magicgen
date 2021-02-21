@@ -9,12 +9,12 @@
 #pathlevel 3
 #range 6
 #fatiguecost 100
-#chassisvalue 5
+#chassisvalue 25
 #explspr 10274
 #sound 31
 #schools 1
 
-#skipchance 90
+#skipchance 95.0
 
 -- literally anything that isn't blood
 #paths 127
@@ -53,7 +53,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#chassisvalue 20
+#chassisvalue 100
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
 #schools 1

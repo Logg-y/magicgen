@@ -1,7 +1,7 @@
 #newunitmod "Summon Poisonbarbs"
-#req barbs == -1
+#req poisonarmor == -1
 #req ethereal == -1
-#set poisonbarbs 5
+#set poisonarmor 5
 #nameprefix "Barbed"
 #descr "This particular CREATURE is covered in poisonous barbs. Striking it with a short weapon may be unadvisable."
 #end
@@ -35,8 +35,8 @@
 #end
 
 #newunitmod "Summon Acidshield"
-#req acidsplash == -1
-#set acidsplash 8
+#req acidshield == -1
+#set acidshield 8
 #nameprefix "Acid"
 #descr "This particular CREATURE is imbued with magical acid. Trying to strike it will release a harmful splash of acid."
 #end
@@ -68,8 +68,8 @@
 #end
 
 #newunitmod "Summon Entangle"
-#req vineshield == -1
-#set vineshield 1
+#req entangle == -1
+#set entangle 1
 #nameprefix "Vineweaving"
 #descr "This particular CREATURE has the ability to rapidly call vines from the earth. Those attacking in melee will become entangled if they fail to resist."
 #end

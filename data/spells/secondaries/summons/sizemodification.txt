@@ -1,0 +1,108 @@
+-- Guess I am using x**1.3 * 1.15 ** x
+
+#newsecondary "Summon Enlarge 1"
+
+#anysummon 1
+
+#paths 0
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.15
+
+#unitmod "Summon Enlarge 1"
+#descr "The summoned %creature% %is% somewhat larger than normal."
+
+#end
+
+#newsecondary "Summon Enlarge 2"
+
+#anysummon 1
+
+#paths 0
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 3.25
+
+#unitmod "Summon Enlarge 2"
+#descr "The summoned %creature% %is% significantly larger than normal."
+
+#end
+
+#newsecondary "Summon Enlarge 3"
+
+#anysummon 1
+
+#paths 0
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 6.34
+
+#unitmod "Summon Enlarge 3"
+#descr "The summoned %creature% %is% much larger than normal."
+
+#end
+
+#newsecondary "Summon Enlarge 4"
+
+#anysummon 1
+
+#paths 0
+#power -4
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 10.6
+
+#unitmod "Summon Enlarge 4"
+#descr "The summoned %creature% %is% gigantic, towering over normal creatures of %its% kind."
+
+#end
+
+
+#newsecondary "Summon Shrink 1"
+
+#anysummon 1
+
+-- NOT in battle summon commander
+#req effect != 21
+
+#paths 0
+#power 1
+
+#skipchance 66
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 0.86
+
+#unitmod "Summon Shrink 1"
+#descr "The summoned %creature% %is% somewhat smaller than normal."
+
+#end
+
+#newsecondary "Summon Shrink 2"
+
+#anysummon 1
+
+-- NOT in battle summon commander
+#req effect != 21
+
+#paths 0
+#power 2
+
+#skipchance 66
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 0.308
+
+#unitmod "Summon Shrink 2"
+#descr "The summoned %creature% %is% much smaller than normal."
+
+#end

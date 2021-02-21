@@ -63,13 +63,13 @@
 #pathlevel 2
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Great Lion Attack"
 #descr 64 "The caster summons ARTICLE great %lion% to ambush a hostile commander in a distant province. These lions are large and ferocious."

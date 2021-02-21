@@ -133,6 +133,17 @@
 #allowedunitmod "Summon DmgVsDemonsOnly"
 #allowedunitmod "Summon Webweapon"
 
+#allowedunitmod "Summon Power of Turning Year"
+#allowedunitmod "Summon Invisibility"
+#allowedunitmod "Summon Unsurroundable"
+#allowedunitmod "Summon Enlarge 1"
+#allowedunitmod "Summon Enlarge 2"
+#allowedunitmod "Summon Enlarge 3"
+#allowedunitmod "Summon Enlarge 4"
+#allowedunitmod "Summon Shrink 1"
+#allowedunitmod "Summon Shrink 2"
+#allowedunitmod "Summon Teleport"
+
 
 
 

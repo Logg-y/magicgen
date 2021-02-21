@@ -3,8 +3,7 @@
 #req spec !& 64
 #req spec !& 128
 #setweaponmagic 1
-#effect != 24
-#effect == 2
+#req effect == 2
 #extracommand dt_holy
 -- no special effects on weapon already
 #nameprefix "Holy"
@@ -15,8 +14,7 @@
 #req spec !& 64
 #req spec !& 128
 #setweaponmagic 1
-#effect != 73
-#effect == 2
+#req effect == 2
 #extracommand dt_magic
 -- no special effects on weapon already
 #nameprefix "Unraveling"
@@ -27,8 +25,7 @@
 #req spec !& 64
 #req spec !& 128
 #setweaponmagic 1
-#effect != 107
-#effect == 2
+#req effect == 2
 #extracommand dt_demon
 -- no special effects on weapon already
 #nameprefix "Demonslaying"

@@ -7,11 +7,12 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
+#scalerate 1.6
 -- #scalecost 2.2
 
 #aoe 0
 #power 4
+#maxpower 10
 #pathlevel 1
 #explspr 10002
 #sound 31

@@ -14,7 +14,7 @@
 #sound 31
 #schools 1
 
-#skipchance 90
+#skipchance 95.0
 
 --ASN
 #paths 68
@@ -42,7 +42,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 4000
-#chassisvalue 2
+#chassisvalue 20
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

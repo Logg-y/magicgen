@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 700
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "NAMEPREFIX %Gryphon% Attack"
 #descr 2 "The caster summons ARTICLE %gryphon% to attack a hostile commander in a distant province. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."

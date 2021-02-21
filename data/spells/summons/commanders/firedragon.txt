@@ -7,14 +7,14 @@
 #precision -100
 #nreff 1
 #pathlevel 6
-#chassisvalue 100
+#chassisvalue 130
 #range 6
 #fatiguecost 200
 #explspr 10232
 #sound 31
 #schools 1
 
-#skipchance 90
+#skipchance 95.0
 
 #paths 1
 #secondarypaths 1
@@ -71,7 +71,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 1
 #secondarypaths 1

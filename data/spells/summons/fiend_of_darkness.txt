@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#sound 26
+#sound 31
 #schools 16
 
 #paths 128
@@ -59,7 +59,7 @@
 #pathlevel 4
 #fatiguecost 1500
 #schools 16
-#skipchance 94
+#skipchance 99
 #nogeodst 2052
 
 #paths 128

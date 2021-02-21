@@ -66,13 +66,13 @@
 #pathlevel 3
 #fatiguecost 800
 #schools 16
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 32
 #secondarypaths 2
 #secondarypathchance 95
-#skipchance 97
+#skipchance 99
 
 #name 32 "NAMEPREFIX Ziz Attack"
 #descr 32 "The caster enchants the bones of ARTICLE great %eagle% in a distant province and grants them new life. The newly animated ziz attacks a hostile commander there and then returns to its original dead state after the battle. The ziz is a reanimated great eagle which is terrifying and can fly in storms."

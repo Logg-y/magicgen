@@ -65,7 +65,7 @@
 #damage 2006
 #spec 96
 #aoe 1000
-#power 2
+#power 3
 #precision 1
 #range 30
 #pathlevel 2

@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+#scalefatiguemult 1350
 #schools 50
 
 #paths 8

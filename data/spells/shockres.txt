@@ -18,7 +18,7 @@
 #sound 31
 #range 15
 #fatiguecost 10
-#maxpower 5
+#maxpower 4
 
 
 -- air, earth
@@ -27,6 +27,43 @@
 
 #name 2 "Resist Lightning"
 #name 8 "Resist Lightning"
+#descr 2 "SUBJECT %is% made slightly resistant to shocking and lightning effects."
+#descr 8 "SUBJECT %is% made slightly resistant to shocking and lightning effects."
+
+#details "Grants +5 shock resistance."
+
+#end
+
+
+#neweffect "Shock Res +5 battlefield"
+#effect 10
+#damage 2048
+#spec 12582912
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.4
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 5
+#pathlevel 3
+#explspr 10015
+#sound 31
+#range 15
+#fatiguecost 100
+#maxpower 5
+
+
+-- air, earth
+#paths 10
+#secondarypaths 0
+
+#name 2 "Thunder Fend"
+#name 8 "Thunder Fend"
 #descr 2 "SUBJECT %is% made slightly resistant to shocking and lightning effects."
 #descr 8 "SUBJECT %is% made slightly resistant to shocking and lightning effects."
 
@@ -54,6 +91,43 @@
 #sound 31
 #range 15
 #fatiguecost 20
+#maxpower 8
+
+
+-- air, earth
+#paths 10
+#secondarypaths 0
+
+#name 2 "Protection from Shocks"
+#name 8 "Protection from Shocks"
+#descr 2 "SUBJECT %is% made highly resistant to shocking and lightning effects."
+#descr 8 "SUBJECT %is% made highly resistant to shocking and lightning effects."
+
+
+#details "Grants +10 shock resistance."
+
+#end
+
+#neweffect "Shock Res +10 battlefield"
+#effect 509
+#damage 199
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.1
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 9
+#pathlevel 4
+#explspr 10015
+#sound 31
+#range 15
+#fatiguecost 200
 #maxpower 9
 
 
@@ -61,8 +135,8 @@
 #paths 10
 #secondarypaths 0
 
-#name 2 "Protection from Lightning"
-#name 8 "Protection from Lightning"
+#name 2 "Blessing of Storms"
+#name 8 "Ground Army"
 #descr 2 "SUBJECT %is% made highly resistant to shocking and lightning effects."
 #descr 8 "SUBJECT %is% made highly resistant to shocking and lightning effects."
 
@@ -92,7 +166,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 11
 
 
 -- air, earth

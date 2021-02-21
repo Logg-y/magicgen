@@ -7,14 +7,14 @@
 #precision -100
 #nreff 1
 #pathlevel 4
-#chassisvalue 7
+#chassisvalue 60
 #range 6
 #fatiguecost 180
 #explspr 10232
 #sound 31
 #schools 1
 
-#skipchance 90
+#skipchance 95.0
 
 --ASN
 #paths 66
@@ -41,7 +41,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 4000
-#chassisvalue 200
+#chassisvalue 500
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

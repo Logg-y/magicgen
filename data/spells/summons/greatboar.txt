@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 600
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Great %Boar% Attack"
 #descr 64 "The caster summons ARTICLE great %boar% to attack a hostile commander in a distant land. Great boars are large and trample enemies, but are rather vulnerable to magic."

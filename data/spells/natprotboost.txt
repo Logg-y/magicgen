@@ -7,16 +7,51 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.15
+#scalerate 1.5
 
 #aoe 1
 #power 1
-#maxpower 7
+#maxpower 6
 #pathlevel 1
 #explspr 10184
 #sound 31
 #range 10
 #fatiguecost 5
+
+
+-- n
+#paths 64
+#secondarypaths 64
+
+#details "Grants +5 natural protection to animals, applied before any other protection affecting buffs."
+
+#namecond aoe < 2 64 "Thickened Hide"
+#namecond2 2 <= aoe < 666 64 "Sturdy Hides"
+#namecond aoe == 666 64 "Thickened Horde"
+
+#descr 64 "The hides of animals in a SIZE area become thicker. This makes them more resilient to most types of damage."
+
+#end
+
+#neweffect "Natprotboost Animals battlefield"
+#effect 10
+#damage 70368744177664
+#spec 281474985115648
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.15
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 3
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 100
 
 
 -- n
@@ -43,13 +78,13 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.15
+#scalerate 1.5
 
 #aoe 0
 #power 0
-#maxpower 7
+#maxpower 6
 #pathlevel 1
-#explspr 10184
+#explspr 10197
 #sound 31
 #range 10
 #fatiguecost 5
@@ -69,3 +104,38 @@
 
 #end
 
+
+#neweffect "Natprotboost Undead battlefield"
+#effect 10
+#damage 70368744177664
+#spec 276840456
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.5
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 3
+#explspr 10197
+#sound 31
+#range 10
+#fatiguecost 100
+
+
+-- d
+#paths 32
+#secondarypaths 32
+
+#details "Grants +5 natural protection to undead, applied before any other protection affecting buffs."
+
+#namecond aoe < 2 32 "Strengthen Bones"
+#namecond2 2 <= aoe < 666 32 "Sturdy Bones"
+#namecond aoe == 666 32 "Reinforced Bone Horde"
+
+#descr 32 "The bones or hides of undead in a SIZE area become thicker. This makes them more resilient to most types of damage."
+
+#end

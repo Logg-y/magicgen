@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
-#chassisvalue 5
+#chassisvalue 300
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
@@ -20,7 +20,7 @@
 #secondarypaths 32
 
 #name 32 "Summon NAMEPREFIX Likho"
-#descr 32 "The caster summons ARTICLE %Likho%. The %Likho% %is% a stealthy crone that is not useful inf combat, but she brings unrest and misfortune wherever she goes."
+#descr 32 "The caster summons ARTICLE %Likho%. The %Likho% %is% a stealthy crone that is not useful in combat, but she brings unrest and misfortune wherever she goes."
 
 #spelltype 20
 
@@ -41,7 +41,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 32
 #secondarypaths 32

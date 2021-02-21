@@ -12,12 +12,58 @@
 
 #aoe 0
 #power 0
-#maxpower 7
+#maxpower 6
 #pathlevel 1
 #explspr 10168
 #sound 31
 #range 10
 #fatiguecost 20
+
+
+-- water, earth, death
+#paths 36
+#secondarypaths 36
+#secondarypathchance 99
+
+#details "Grants Invulnerability 15."
+
+#namecond aoe < 10 32 "Stygian %Skin%"
+#namecond aoe < 10 32 "Stygian Flesh"
+#namecond aoe < 10 4 "Stygian %Skin%"
+#namecond aoe < 10 4 "Stygian Flesh"
+
+#namecond2 10 <= aoe < 666 32 "Stygian Warriors"
+#namecond2 10 <= aoe < 666 4 "Stygian Warriors"
+
+#namecond aoe == 666 32 "Stygian Army"
+#namecond aoe == 666 4 "Stygian Army"
+
+
+#descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
+#descr 32 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
+
+#end
+
+#neweffect "Stygian Skins battlefield"
+#effect 23
+#damage 17179869184
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.0
+-- #scalecost 1.6
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 3
+#explspr 10168
+#sound 31
+#range 10
+#fatiguecost 200
 
 
 -- water, earth, death
@@ -54,7 +100,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
+#scalerate 1.2
 -- #scalecost 1.6
 
 #aoe 0
@@ -83,3 +129,44 @@
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
 
 #end
+
+
+#neweffect "Invuln battlefield"
+#effect 23
+#damage 2
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.2
+-- #scalecost 1.6
+
+#aoe 666
+#power 10
+#maxpower 10
+#pathlevel 5	
+#explspr 10168
+#sound 31
+#range 10
+#fatiguecost 300
+
+
+-- water, earth, death
+#paths 32
+#secondarypaths 32
+
+#details "Grants Invulnerability 25."
+
+#namecond aoe < 10 32 "Invulnerability"
+
+#namecond2 10 <= aoe < 666 32 "Invulnerable Warriors"
+
+#namecond aoe == 666 32 "Invulnerable Army"
+
+
+#descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
+
+#end
+

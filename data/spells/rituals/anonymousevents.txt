@@ -143,7 +143,6 @@
 #end
 
 #neweffect "Monster Boar"
-#copyspell "Monster Boar"
 #effect 10042
 #provrange 5
 #damage 11
@@ -219,11 +218,11 @@
 #provrange 5
 #damage 12
 #spec 0
-#power 5
-#maxpower 5
+#power 7
+#maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 1400
+#fatiguecost 1600
 #schools 1
 
 #paths 128

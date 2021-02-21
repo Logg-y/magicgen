@@ -29,7 +29,7 @@
 
 #name 4 "Slime %$Ball$%"
 #descr 4 "The caster hurls ARTICLE %ball% of sticky goo at his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved."
+#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 #end
 
 
@@ -62,5 +62,5 @@
 
 #name 4 "Slime"
 #descr 4 "The caster conjures sticky goo all over his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved."
+#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 #end

@@ -18,7 +18,7 @@
 #sound 31
 #range 15
 #fatiguecost 10
-#maxpower 5
+#maxpower 4
 
 
 -- fire, blood, water, death
@@ -29,6 +29,46 @@
 #name 4 "Resist Cold"
 #name 32 "Resist Cold"
 #name 128 "Resist Cold"
+#descr 1 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
+#descr 4 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
+#descr 32 "SUBJECT %is% made slightly resistant to the chill of the grave. This also causes affected units to thaw faster if frozen."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
+
+#details "Grants +5 cold resistance."
+
+#end
+
+#neweffect "Cold Res +5 battlefield"
+#effect 10
+#damage 4096
+#spec 12582912
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.4
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 5
+#pathlevel 3
+#explspr 10005
+#sound 31
+#range 15
+#fatiguecost 100
+#maxpower 5
+
+
+-- fire, blood, water, death
+#paths 165
+#secondarypaths 0
+
+#name 1 "Inner Heat"
+#name 4 "Frost Fend"
+#name 32 "Frost Fend"
+#name 128 "Frost Fend"
 #descr 1 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 4 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 32 "SUBJECT %is% made slightly resistant to the chill of the grave. This also causes affected units to thaw faster if frozen."
@@ -78,6 +118,49 @@
 
 #end
 
+
+#neweffect "Cold Res +10 battlefield"
+#effect 509
+#damage 201
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.1
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 9
+#pathlevel 4
+#explspr 10005
+#sound 31
+#range 15
+#fatiguecost 200
+#maxpower 9
+
+
+-- fire, blood, water
+#paths 165
+#secondarypaths 0
+
+#name 1 "Inner Fire"
+#name 1 "Warriors of Muspelheim"
+#name 4 "Glacial Blessing"
+#name 32 "Glacial Blessing"
+#name 128 "Blessing of Kokytos"
+#descr 1 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
+#descr 4 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
+#descr 4 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
+
+#details "Grants +10 cold resistance."
+
+#end
+
+
 #neweffect "Cold Res +15"
 #effect 514
 #damage 201
@@ -99,7 +182,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 11
 
 
 -- fire, blood, water

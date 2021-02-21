@@ -61,13 +61,13 @@
 #pathlevel 4
 #fatiguecost 800
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 99
 
 #name 4 "NAMEPREFIX Ice %Drake% Attack"
 #descr 4 "The caster sends ARTICLE ice %drake% to attack a hostile commander in a distant land. The ice drake is a large cold-blooded beast that breathes freezing $mist$."

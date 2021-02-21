@@ -18,7 +18,7 @@
 #sound 31
 #range 15
 #fatiguecost 10
-#maxpower 5
+#maxpower 4
 
 
 -- fire, blood, water
@@ -28,6 +28,44 @@
 #name 1 "Resist Fire"
 #name 4 "Resist Fire"
 #name 128 "Resist Fire"
+#descr 1 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
+#descr 4 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
+
+#details "Grants +5 fire resistance."
+
+#end
+
+#neweffect "Fire Res +5 battlefield"
+#effect 10
+#damage 1024
+#spec 12582912
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.4
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 5
+#pathlevel 3
+#explspr 10014
+#sound 31
+#range 15
+#fatiguecost 100
+#maxpower 5
+
+
+-- fire, blood, water
+#paths 133
+#secondarypaths 0
+
+#name 1 "Fire Fend"
+#name 4 "Inner Chill"
+#name 128 "Fire Fend"
 #descr 1 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 4 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
@@ -56,7 +94,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 8
 
 
 -- fire, blood, water
@@ -66,6 +104,44 @@
 #name 1 "Protection from Fire"
 #name 4 "Protection from Fire"
 #name 128 "Protection from Fire"
+#descr 1 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
+#descr 4 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
+
+#details "Grants +10 fire resistance."
+
+#end
+
+#neweffect "Fire Res +10 battlefield"
+#effect 509
+#damage 198
+#spec 12599296
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.1
+-- #scalecost 0.7
+
+
+#aoe 666
+#power 9
+#pathlevel 4
+#explspr 10014
+#sound 31
+#range 15
+#fatiguecost 200
+#maxpower 9
+
+
+-- fire, blood, water
+#paths 133
+#secondarypaths 0
+
+#name 1 "Incendiary Blessing"
+#name 4 "Warriors of Niefelheim"
+#name 128 "Blessing of Inferno"
 #descr 1 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 4 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
@@ -95,7 +171,7 @@
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 9
+#maxpower 11
 
 
 -- fire, blood, water

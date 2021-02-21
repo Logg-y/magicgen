@@ -1,0 +1,111 @@
+#newsecondary "Summon Falsearmy Large"
+
+#anysummon 1
+
+#paths 17
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- ritual only
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 200
+
+#unitmod "Summon Falsearmy Large"
+#descr "The summoned %creature% %is% able to project illusory images of the army around them, making enemy scouts report a larger army than truly exists."
+#details "The creature adds 20 units to hostile scout reports."
+
+#end
+
+#newsecondary "Summon Falsearmy Large2"
+
+#anysummon 1
+
+#paths 17
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- ritual only
+#req effect > 10000
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Falsearmy Large2"
+#descr "The summoned %creature% %is% able to project vast numbers of illusory images of the army around them, making enemy scouts report a much larger army than truly exists."
+#details "The creature adds 50 units to hostile scout reports."
+
+#end
+
+#newsecondary "Summon Falsearmy Small"
+
+#anysummon 1
+
+#paths 17
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- ritual only
+#req effect > 10000
+
+#fatiguecostpereffect 200
+
+
+-- not montag
+#req damage > 0
+
+#unitmod "Summon Falsearmy Small"
+#descr "The summoned %creature% %is% able to project illusions that hide the surrounding army, making enemy scouts report a smaller army than truly exists."
+#details "The creature hides 20 units from hostile scout reports."
+
+#end
+
+#newsecondary "Summon Falsearmy Small2"
+
+#anysummon 1
+
+#paths 17
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- ritual only
+#req effect > 10000
+
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 400
+
+#unitmod "Summon Falsearmy Small2"
+#descr "The summoned %creature% %is% able to project vast illusions that hide the surrounding army, making enemy scouts report a much smaller army than truly exists."
+#details "The creature hides 50 units from hostile scout reports."
+
+#end

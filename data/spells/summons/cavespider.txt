@@ -62,13 +62,13 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 8 
 #secondarypaths 8 
 
-#skipchance 97
+#skipchance 99
 
 #name 8 "NAMEPREFIX Cave %Spider% Attack"
 #descr 8 "The caster summons ARTICLE cave %spider% to attack a hostile commander in a distant province. The cave spider is a strange spider from beneath the earth. Much like surface spiders, it can spit webs."

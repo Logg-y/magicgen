@@ -8,7 +8,7 @@ from typing import (
 import random
 from spellstructures import utils
 
-from site import Site
+from nationalsite import Site
 
 
 class Nation(object):
@@ -41,12 +41,12 @@ class Nation(object):
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return self._sanitizeweights(weights)
 
-    def _sanitizeweights(self, unsanatizedweights: Dict[int, int]):
+    def sanitizeweights(self, unsanitizedweights: Dict[int, int] ):
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
-        for i in unsanatizedweights:
-            output[i] = int(round(unsanatizedweights[i]))
+        for i in unsanitizedweights:
+            output[i] = int(round(unsanitizedweights[i]))
             if output[i] != 0:
                 hasweight = True
         if not hasweight:  # If all weights are 0 set all to 1
@@ -83,3 +83,6 @@ class Nation(object):
 
     def hasmages(self) -> bool:
         return len(self.mages) > 0
+
+    def __repr__(self):
+        return(f"Nation({self.name}, id {self.id})")

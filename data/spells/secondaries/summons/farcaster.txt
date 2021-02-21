@@ -1,0 +1,55 @@
+#newsecondary "Summon Farcaster 25"
+
+#anysummon 1
+
+#paths 0
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 1.15
+
+#unitmod "Summon Farcaster 25"
+#descr "The summoned %creature% %is% able to project spells further than normal."
+#details "The creature gains +1/25% far casting for all magic paths."
+
+#end
+
+#newsecondary "Summon Farcaster 50"
+
+#anysummon 1
+
+#paths 0
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 1.3
+
+#unitmod "Summon Farcaster 50"
+#descr "The summoned %creature% %is% able to project spells much further than normal."
+#details "The creature gains +2/50% far casting for all magic paths."
+
+#end

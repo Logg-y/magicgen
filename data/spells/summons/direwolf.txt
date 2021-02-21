@@ -62,13 +62,13 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Dire %Wolf% Attack"
 #descr 64 "The caster summons ARTICLE dire %wolf% to attack a hostile commander in a distant province. Dire wolves are large and mighty wolves."

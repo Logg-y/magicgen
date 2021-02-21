@@ -1,0 +1,59 @@
+#neweffect "Call Telestic Animate"
+
+#effect 21
+#damage 473
+#spec 8388608
+#power 3
+#precision -100
+#nreff 3
+#pathlevel 2
+#chassisvalue 33
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 40
+
+#skipchance 95.0
+#ainocast 1
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Create NAMEPREFIX Telestic %Animates%"
+#descr 16 "The caster rapidly creates ARTICLE Telestic %Animate% to assist on the battlefield. Telestic animates are immobile statues of wood imbued with great priestly powers, which may render them ineffective against many opponents."
+
+#scalefatiguemult 20
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Telestic Animate ritual"
+
+#effect 10021
+#damage 473
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#chassisvalue 400
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 220
+#schools 40
+
+#skipchance 67
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Assemble NAMEPREFIX Telestic %Animate%"
+#descr 16 "The caster creates ARTICLE telestic %animate%. Telestic animates are wooden statues filled with great priestly power, but they cannot be moved."
+
+#spelltype 20
+
+#scalerate 1
+#end

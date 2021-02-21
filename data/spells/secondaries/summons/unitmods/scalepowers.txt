@@ -38,7 +38,7 @@
 
 #newunitmod "Summon Darkpower"
 #req darkpower == -1
-#set darkpower 1
+#set darkpower 2
 #set darkvision 100
 #nameprefix "Cavedwelling"
 #descr "This particular CREATURE is accustomed to living in caves, and fights more effectively in darkness."

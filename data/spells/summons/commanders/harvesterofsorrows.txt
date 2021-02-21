@@ -7,7 +7,7 @@
 #precision -100
 #nreff 1
 #pathlevel 2
-#chassisvalue 80
+#chassisvalue 100
 #range 6
 #fatiguecost 100
 #explspr 10232
@@ -71,10 +71,10 @@
 #fatiguecost 500
 #chassisvalue 350
 #schools 1
-#skipchance 76
+#skipchance 99
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 32
 #secondarypaths 32

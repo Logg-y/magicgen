@@ -77,8 +77,8 @@
 #name 32 "Mass Suffocation"
 #name 32 "Mass Asphyxiation"
 
-#descr 2 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
-#descr 4 "The caster attempts to fill the lungs of all his enemies with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 2 "The caster attempts to prevent all living beings on the battlefield from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 4 "The caster attempts to fill the lungs of all living beings on the battlefield with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 32 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 
 #end

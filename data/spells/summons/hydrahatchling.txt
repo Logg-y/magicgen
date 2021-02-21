@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 600
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Hydra %Hatchling% Attack"
 #descr 64 "The caster summons ARTICLE hydra %hatchling% to attack a hostile commander in a distant province. Hydra hatchlings are small, weak and young, but are still surrounded by a cloud of noxious vapour."

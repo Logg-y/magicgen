@@ -63,13 +63,13 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "NAMEPREFIX Great Spider Attack"
 #descr 64 "The caster sends ARTICLE great %spider% to attack a hostile commander in a distant province. The great spider has a venomous bite and can tangle enemies in webs, but has little resistance to magic."

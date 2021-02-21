@@ -8,11 +8,11 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
-#chassisvalue 80
+#chassisvalue 300
 #schools 1
 #nogeodst 2052
 
-#skipchance 76
+#skipchance 99
 
 #paths 16
 #secondarypaths 16

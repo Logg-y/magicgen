@@ -1,0 +1,17 @@
+#newsecondary "Summon Unsurroundable"
+
+#anysummon 1
+
+#paths 18
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+-- uselses in assassinations
+#req effect != 10050
+
+#unitmod "Summon Unsurroundable"
+#descr "The summoned %creature% %is% exceptionally aware of %its% surroundings and are better able to deal with being under attack from multiple assailants."
+
+#end

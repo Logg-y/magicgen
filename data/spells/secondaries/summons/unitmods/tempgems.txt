@@ -1,0 +1,103 @@
+#newunitmod "Summon Tempfiregems 1"
+#set tmpfiregems 1
+#nameprefix "Attuned"
+#req F >= 2
+#descr "This particular CREATURE is attuned to the path of Fire and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempfiregems 2"
+#set tmpfiregems 2
+#nameprefix "Attuned"
+#req F >= 3
+#descr "This particular CREATURE is attuned to the path of Fire and may draw upon this in place of using a magic gem in battle."
+#end
+
+
+
+#newunitmod "Summon Tempairgems 1"
+#set tmpairgems 1
+#nameprefix "Attuned"
+#req A >= 2
+#descr "This particular CREATURE is attuned to the path of Air and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempairgems 2"
+#set tmpairgems 2
+#nameprefix "Attuned"
+#req A >= 3
+#descr "This particular CREATURE is attuned to the path of Air and may draw upon this in place of using a magic gem in battle."
+#end
+
+
+#newunitmod "Summon Tempwatergems 1"
+#set tmpwatergems 1
+#nameprefix "Attuned"
+#req W >= 2
+#descr "This particular CREATURE is attuned to the path of Water and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempwatergems 2"
+#set tmpwatergems 2
+#nameprefix "Attuned"
+#req W >= 3
+#descr "This particular CREATURE is attuned to the path of Water and may draw upon this in place of using a magic gem in battle."
+#end
+
+
+#newunitmod "Summon Tempearthgems 1"
+#set tmpearthgems 1
+#nameprefix "Attuned"
+#req E >= 2
+#descr "This particular CREATURE is attuned to the path of Earth and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempearthgems 2"
+#set tmpearthgems 2
+#nameprefix "Attuned"
+#req E >= 3
+#descr "This particular CREATURE is attuned to the path of Earth and may draw upon this in place of using a magic gem in battle."
+#end
+
+
+#newunitmod "Summon Tempastralgems 1"
+#set tmpastralgems 1
+#nameprefix "Attuned"
+#req S >= 2
+#descr "This particular CREATURE is attuned to the Astral plane and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempastralgems 2"
+#set tmpastralgems 2
+#nameprefix "Attuned"
+#req S >= 3
+#descr "This particular CREATURE is attuned to the Astral plane and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempdeathgems 1"
+#set tmpdeathgems 1
+#nameprefix "Attuned"
+#req D >= 2
+#descr "This particular CREATURE is attuned to the plane of Death and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempdeathgems 2"
+#set tmpdeathgems 2
+#nameprefix "Attuned"
+#req D >= 3
+#descr "This particular CREATURE is attuned to the plane of Death and may draw upon this in place of using a magic gem in battle."
+#end
+
+
+#newunitmod "Summon Tempnaturegems 1"
+#set tmpnaturegems 1
+#nameprefix "Attuned"
+#req N >= 2
+#descr "This particular CREATURE is attuned to Nature and may draw upon this in place of using a magic gem in battle."
+#end
+
+#newunitmod "Summon Tempnaturegems 2"
+#set tmpnaturegems 2
+#nameprefix "Attuned"
+#req N >= 3
+#descr "This particular CREATURE is attuned to Nature and may draw upon this in place of using a magic gem in battle."
+#end

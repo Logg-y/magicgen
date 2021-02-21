@@ -13,11 +13,48 @@
 #aoe 0
 #power 1
 #pathlevel 1
-#maxpower 8
+#maxpower 7
 #explspr 10184
 #sound 31
 #range 10
 #fatiguecost 20
+
+
+#paths 64
+#secondarypaths 1
+
+#details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
+
+#namecond aoe < 1 64 "Enlarge Self"
+
+#namecond2 1 <= aoe < 600 64 "Group Enlargement"
+#namecond aoe > 600 64 "Army of Giants"
+#namecond aoe > 600 64 "Mass Enlargement"
+
+#descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
+
+#end
+
+#neweffect "Enlargement Battlefield"
+#effect 10
+#damage 2147483648
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 10
+
+#aoe 666
+#power 7
+#pathlevel 4
+#maxpower 7
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 100
 
 
 #paths 64

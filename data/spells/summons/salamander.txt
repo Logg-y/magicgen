@@ -8,7 +8,7 @@
 #pathlevel 2
 #fatiguecost 80
 #scalefatiguemult 40
-#sound 26
+#sound 31
 #schools 1
 
 #paths 1
@@ -61,7 +61,7 @@
 #pathlevel 4
 #fatiguecost 600
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 1

@@ -3,9 +3,7 @@
 #maxpowerlevel 0
 
 #req path1 != 1
-#req path1 != 2
 #req path1 != 4
-#req path1 != 16
 #req path1 != 64
 
 #modulegroup "Offensive Global Effect"

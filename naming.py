@@ -143,9 +143,19 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             out += " "
         parsedname = out.strip()
 
+
     # Don't give prefixes to nextspells, this makes no sense as they tend not to change much
     # ... or to nationals, at least for now
     if isspell and not spell.isnextspell and spell.restricted is None:
+        print(f"Beginning naming for {parsedname}...")
+        # Vanilla spells need a trailing space to avoid name clashing
+        # name clashes are bad: all spells sharing names also share descriptions
+        # and sharing with vanilla is ESPECIALLY bad as any items that cast the vanilla named spell seem to always
+        # switch to using the modded one instead
+        if parsedname in utils.spellnames and (spell.parenteffect not in utils.spellnamesbyeffect or
+                                               parsedname not in utils.spellnamesbyeffect[spell.parenteffect]):
+            parsedname += " "
+            print("Spell seems to be vanilla, add a trailing space")
         parsedname = adjustnameofspell(parsedname, spell)
     elif isspell:
         parsedname = padspellname(parsedname)
@@ -168,21 +178,18 @@ def adjustnameofspell(parsedname, spell):
     if spell.parenteffect not in utils.spellnamesbyeffect:
         utils.spellnamesbyeffect[spell.parenteffect] = {}
     spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
+    print(f"There are {len(spelleffectdict)} spells of this effect already...")
     while parsedname in spelleffectdict:
         # Compare current spell to existing names in utils.spellnames[string]
         # Adjust name
         comparespell = spelleffectdict[parsedname]
 
-        # None means it's a vanilla spell
-        if comparespell is None:
-            parsedname = parsedname + " "
+        if comparespell.researchlevel > spell.researchlevel:
+            print(f"existing '{comparespell.name}' is higher research level than this {spell.name}, try moving it")
+            attempttomovespellname(comparespell)
+            break
         else:
-            if comparespell.researchlevel > spell.researchlevel:
-                print(f"{comparespell.name} is higher research level than this {spell.name}, try moving it")
-                attempttomovespellname(comparespell)
-                break
-            else:
-                parsedname = replacecurrentqualifier(parsedname)
+            parsedname = replacecurrentqualifier(parsedname)
 
         if len(parsedname) > 35:
             raise NameTooLongException(f"Spell name {parsedname} too long")
@@ -201,20 +208,29 @@ def attempttomovespellname(spell):
     spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
     print(f"spelleffectdict is {spelleffectdict}")
     del spelleffectdict[spell.name]
-    while tmp in spelleffectdict:
-        comparespell = spelleffectdict[tmp]
-        if comparespell.researchlevel > spell.researchlevel:
-            print(f"{comparespell.name} is higher research level than this {spell.name}, try moving it")
-            attempttomovespellname(comparespell)
-            break
-        # should this be checking if research levels are the same and matching names?
-        # probably, but doing so would be wonky
-        else:
-            tmp = replacecurrentqualifier(tmp)
-    if len(tmp) > 35:
-        raise NameTooLongException(f"Spell name {tmp} too long")
+    try:
+        while tmp in spelleffectdict:
+            comparespell = spelleffectdict[tmp]
+            if comparespell.researchlevel > spell.researchlevel:
+                print(f"'{comparespell.name}' is higher research level than this {spell.name}, try moving it")
+                attempttomovespellname(comparespell)
+                break
+            # should this be checking if research levels are the same and matching names?
+            # probably, but doing so would be wonky
+            else:
+                # Raises NameTooLongException on failure
+                tmp = replacecurrentqualifier(tmp)
+        tmp = padspellname(tmp)
+        if len(tmp) > 35:
+            print(f"Error trying to find a new name for {spell.name}: propsed name {tmp} was too long!")
+            raise NameTooLongException(f"Proposed name {tmp} too long")
+    except NameTooLongException as exc:
+        # Put everything back to how it was or weird errors can arise due to fact these were changed
+        utils.spellnames.append(spell.name)
+        spelleffectdict[spell.name] = spell
+        raise exc
+
     spelleffectdict[tmp] = spell
-    tmp = padspellname(tmp)
     spell.name = tmp
     utils.spellnames.append(spell.name)
 
@@ -238,6 +254,8 @@ def replacecurrentqualifier(parsedname):
     if noqualifier:
         parsedname = utils.spellqualifiers[0] + parsedname
     print(f"got {parsedname}")
+    if len(parsedname) > 35:
+        raise NameTooLongException(f"Qualifier replacement for spell with new name {parsedname} has become too long")
     return parsedname
 
 

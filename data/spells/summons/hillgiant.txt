@@ -64,13 +64,13 @@
 #pathlevel 3
 #fatiguecost 900
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 99
 
 #name 8 "NAMEPREFIX Hill Giant Attack"
 #descr 8 "The caster summons ARTICLE hill %giant% to attack a hostile commander in a distant province. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."

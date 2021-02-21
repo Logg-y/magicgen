@@ -60,7 +60,7 @@
 #pathlevel 3
 #fatiguecost 500
 #schools 8
-#skipchance 97
+#skipchance 99
 
 #paths 8
 #secondarypaths 8

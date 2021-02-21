@@ -66,14 +66,14 @@
 #pathlevel 3
 #fatiguecost 700
 #schools 1
-#skipchance 97
+#skipchance 99
 #nogeodst 2052
 
 #paths 2
 #secondarypaths 64
 #secondarypathchance 95
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "NAMEPREFIX Amphiptere Attack"
 #descr 2 "The caster summons ARTICLE_N %amphiptere% to attack a hostile commander in a distant land. The amphiptere is a winged serpent which can spit poison."
