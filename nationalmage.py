@@ -19,6 +19,14 @@ class MagePathRandom(object):
                 acc.append(2 ** i)
         return acc
 
+    def getnumberofpossiblepaths(self) -> int:
+        acc: int = 0
+        for i in range(0, 8):
+            if self.paths & (2 ** i):
+                acc += 1
+        return acc
+
+
     def canrandompath(self, path: PathFlags) -> bool:
         return path in self.getpossiblepaths()
 
@@ -81,12 +89,10 @@ class NationalMage(object):
         return f"({self.name},{utils.pathstotext(self.pathmask)},{utils.pathstotext(self.getrandomspossiblepathmask())})"
 
     def getaveragelevelinpath(self, path: PathFlags) -> float:
-        acc: float = self.pathlevels[path]
+        acc: float = float(self.pathlevels[path])
         for random in self.randoms:
             if random.canrandompath(path):
-                randomweight = float(random.chance * random.link)
-                randompaths = random.getpossiblepaths()
-                acc += randomweight / len(randompaths)
+                acc += random.link * random.chance / random.getnumberofpossiblepaths() / 100
         return acc
 
     def gettotalpathsamount(self) -> float:
@@ -103,16 +109,31 @@ class NationalMage(object):
         return self.pathweights[path]
 
     def _calculatepathweightproportions(self):
+        debugkeys.debuglog(f"Generating pathweights for mage {self.totext()}",
+                           debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         self.pathweightsinitialised = True
         for i in range(0, 8):
             self.pathweights[2 ** i] = self.getaveragelevelinpath(2 ** i)
+        debugkeys.debuglog(f"Average levels (default weight) in paths: " +
+                           str([utils.pathstotext(i) + " " + str(self.pathweights[i]) for i in self.pathweights]),
+                           debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         s = sum(self.pathweights.values())
+        debugkeys.debuglog(f"Total weights sum {s}",
+                           debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         # Avoid ZeroDivisionError for non mages
         if s == 0.0:
+            debugkeys.debuglog(f"No weight, therefore skipping adjustment",
+                               debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
             return
-        s = sum(self.pathweights.values())
-        for pathflag, weight in self.pathweights.items():
+        for pathflag, weight in self.pathweights.items():  # Normalize
             self.pathweights[pathflag] = float(weight) / s
+
+        debugkeys.debuglog(f"Adjusted weights: " +
+                           str([utils.pathstotext(i) + " " + str(self.pathweights[i]) for i in self.pathweights]),
+                           debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
+        s = sum(self.pathweights.values())
+        debugkeys.debuglog(f"Total weights sum {s}",
+                           debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
 
     def __repr__(self):
         if len(self.randoms) > 3:

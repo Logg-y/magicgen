@@ -3,8 +3,8 @@ from spellstructures import utils
 
 class debugkeys:
     NATIONALSPELLGENERATIONWEIGHTING = True
-    NATIONALSPELLGENERATION = True
-    MAGESELECTIONFORPATHFORNATIONALSPELL = True
+    NATIONALSPELLGENERATION = False
+    MAGESELECTIONFORPATHFORNATIONALSPELL = False
 
 
 def debuglog(line, *debugareas):

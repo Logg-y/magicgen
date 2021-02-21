@@ -34,14 +34,14 @@ class Nation(object):
 
         for mage in self.mages:
             for i in range(0, 8):
-                weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage]
+                weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage] * 100
 
         debugkeys.debuglog(f"Mages:{[i.totext() for i in self.mages]}\n"
                            f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return self._sanitizeweights(weights)
 
-    def _sanitizeweights(self, unsanitizedweights: Dict[int, int] ):
+    def _sanitizeweights(self, unsanitizedweights: Dict[int, float]) -> Dict[int, int]:
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
