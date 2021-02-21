@@ -14,4 +14,4 @@ def debuglog(line, *debugareas):
     for i in debugareas:
         dolog |= i
     if dolog:
-        utils._writetoconsole(line)
+        print(line)

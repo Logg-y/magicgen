@@ -41,7 +41,7 @@ class Nation(object):
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return self._sanitizeweights(weights)
 
-    def sanitizeweights(self, unsanitizedweights: Dict[int, int] ):
+    def _sanitizeweights(self, unsanitizedweights: Dict[int, int] ):
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
