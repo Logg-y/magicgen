@@ -36,7 +36,8 @@ class Nation(object):
             for i in range(0, 8):
                 weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage] * 100
 
-        debugkeys.debuglog(f"Mages:{[i.totext() for i in self.mages]}\n"
+        debugkeys.debuglog(f"Pathweights for nation {self.name} (ID{self.id})\n"
+                           f"Mages:{[i.totext() for i in self.mages]}\n"                                                                              
                            f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return self._sanitizeweights(weights)
