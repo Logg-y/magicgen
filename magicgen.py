@@ -53,12 +53,15 @@ def rollspells(**options):
         options["nationlist"] = options["nationlist"].split(",")
         options["nationlist"] = list(map(lambda x: int(x.strip()), options["nationlist"]))
 
+
     with open("log.txt", "w") as logfile:
         sys.stdout = logfile
         with open("spells.csv", "r") as f:
             r = csv.DictReader(f, delimiter="\t")
             for line in r:
                 utils.spellnames.append(line["name"])
+
+        print(f"Nationlist is {options['nationlist']}")
 
         modname = options.get("modname", None)
         if modname is None:
@@ -208,9 +211,7 @@ def rollspells(**options):
                 _writetoconsole("Reading mod nations\n")
                 nationals.read_mods(options.get("modlist", ""))
                 _writetoconsole("Finished reading mod nations\n")
-            if options.get("nationlist") not in options:
-                options["nationlist"] = list(nationals.nations.keys())
-            elif options["nationlist"] is None:
+            if options["nationlist"] is None:
                 options["nationlist"] = list(nationals.nations.keys())
             nationstogeneratefor = options["nationlist"]
             generate_national_spells(
@@ -504,6 +505,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
         else:
             generatedspells.append(spell)
             nation.register_national_spell(spell)
+            NationalSpellGenerationInfoCollector.numberofgeneratedspells += 1
             debugkeys.debuglog("Spell successfully generated\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
 
 
@@ -515,11 +517,12 @@ def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Di
 
     # Initialize national mage map
     nationcount = len(nationstogeneratefor)
+    print(f"Nations to generate for: {nationstogeneratefor}")
     index = 0  # used for progress report
     for nationid, nation in nationals.nations.items():
         if nationid not in nationstogeneratefor:
             continue
-        beginningnationlogtext = "Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n"
+        beginningnationlogtext = f"Progress: Beginning nation {index} {nation.name} ({nation.id}) of {nationcount}...\n"
         if index % 20 == 0:
             _writetoconsole(beginningnationlogtext)
         debugkeys.debuglog(beginningnationlogtext, debugkeys.debugkeys.NATIONALSPELLGENERATION)

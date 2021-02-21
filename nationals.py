@@ -193,9 +193,10 @@ def read_mods(modstring):
                         print(f"Attach nation name {name} to {currentnation}")
                         currentnation.name = name
 
-                m = re.match("#era (.+)", line)
+                m = re.match("#era\\W*(.+)", line)
                 if m is not None:
                     currentnation.era = int(m.groups()[0])
+                    print(f"Set Era for nation {currentnation.id} to {currentnation.era}")
 
                 m = re.match("#homecom (\\d+)", line)
                 if m is not None:
