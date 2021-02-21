@@ -354,16 +354,12 @@ def rollspells(**options):
 
 
 class NationalSpellGenerationInfoCollector:
-    effectschecked: int = 0
-    effectsdiscarded: int = 0
     spellrollsrepeated: int = 0
     numberofgeneratedspells: int = 0
 
     @staticmethod
     def print():
         _writetoconsole(f"{NationalSpellGenerationInfoCollector.numberofgeneratedspells} were generated successfully.\n"
-                        f"{NationalSpellGenerationInfoCollector.effectschecked} effects were checked. "
-                        f"{NationalSpellGenerationInfoCollector.effectsdiscarded} effects were discarded.\n"
                         f"{NationalSpellGenerationInfoCollector.spellrollsrepeated} spellrolls were unsuccessful\n")
 
 
@@ -406,7 +402,6 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
                                       options: Dict[str, str]) -> Union[Spell, None]:
     # Roll for spell
     for creationattempts in range(0, 20):
-        creationattempts += 1
         spell: Union[Spell, None] = spelleffect.rollSpell(researchlevel, forcepath=primarypath,
                                                           forcesecondaryeff=secondarypathoptions,
                                                           allowblood=allowblood, allowskipchance=False,
@@ -432,8 +427,7 @@ def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generat
     if len(availableeffects) == 0:
         raise ValueError("No Spelleffect found available")
 
-    random.shuffle(availableeffects)
-    choseneffect: Union[SpellEffect] = availableeffects.pop(0)
+    choseneffect: Union[SpellEffect] = availableeffects[random.randrange(0, len(availableeffects))]
     debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n"
                        f"Primary path: {utils.pathstotext(primarypath)}\n"
                        f"Already generated effects: {generatedeffectsatlevels}\n"
