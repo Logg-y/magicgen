@@ -34,15 +34,15 @@ class Nation(object):
             for i in range(0, 8):
                 weights[2 ** i] += mage.getweightfractionforpath(2 ** i) * mageweights[mage]
 
-        # _writetoconsole(f"Mages:{self.mages}\nWeights:{weights}")
+        print(f"Mages:{self.mages}\nWeights:{weights}")
         return self.sanitizeweights(weights)
 
-    def sanitizeweights(self, unsanatizedweights: Dict[int, int] ):
+    def sanitizeweights(self, unsanitizedweights: Dict[int, int] ):
         # touch up output for compatability
         output: Dict[int, int] = {}
         hasweight = False
-        for i in unsanatizedweights:
-            output[i] = int(round(unsanatizedweights[i]))
+        for i in unsanitizedweights:
+            output[i] = int(round(unsanitizedweights[i]))
             if output[i] != 0:
                 hasweight = True
         if not hasweight:  # If all weights are 0 set all to 1

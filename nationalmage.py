@@ -21,6 +21,9 @@ class MagePathRandom(object):
     def canrandompath(self, path: PathFlags) -> bool:
         return path in self.getpossiblepaths()
 
+    def __repr__(self):
+        return f"MagePathRandom(Paths={self.paths}, link={self.link}, chance={self.chance})"
+
 class NationalMage(object):
     "Container for a single national mage and its path access"
     def __init__(self):
@@ -102,9 +105,15 @@ class NationalMage(object):
         self.pathweightsinitialised = True
         for i in range(0, 8):
             self.pathweights[2 ** i] = self.getaveragelevelinpath(2 ** i)
-        s = sum(self.pathweights)
-        self.pathweights = [float(i)/s for i in self.pathweights]
-        self.pathweights = [(i + 0.5) ** 2 for i in self.pathweights]
-        s = sum(self.pathweights)
-        self.pathweights = [float(i) / s for i in self.pathweights]
+        s = sum(self.pathweights.values())
+        # Avoid ZeroDivisionError for non mages
+        if s == 0.0:
+            return
+        s = sum(self.pathweights.values())
+        for pathflag, weight in self.pathweights.items():
+            self.pathweights[pathflag] = float(weight) / s
 
+    def __repr__(self):
+        if len(self.randoms) > 3:
+            return(f"NationalMage({self.id}, paths={self.pathlevels}, randoms={self.randoms[:2]})")
+        return(f"NationalMage({self.id}, paths={self.pathlevels}, randoms={self.randoms}")

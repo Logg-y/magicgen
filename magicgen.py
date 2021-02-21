@@ -196,8 +196,6 @@ def rollspells(**options):
                                                            allowskipchance=False, **options))
                                 break
 
-            _writetoconsole("Generating national spells...\n")
-
             # Generate some national spells
             nationals.readVanilla()
             nationals.readMods(options.get("modlist", ""))
@@ -442,7 +440,7 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
                     # _writetoconsole(f"Discarding current effect: {choseneffect.name}\n")
                     choseneffect = None
                     NationalSpellGenerationInfoCollector.effectsdiscarded += 1
-            # _writetoconsole(f"Selected effect: {choseneffect.name}\n")
+            print(f"Selected effect: {choseneffect.name}\n")
 
             # Roll for spell
             # _writetoconsole(
@@ -451,20 +449,22 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             #    f"{len(effectpool)} effects available\n")
             spell: Union[Spell, None] = None
             creationattempts: int = 0
-            while (spell is None) & (creationattempts < 20):
+            while (spell is None) and (creationattempts < 20):
                 creationattempts += 1
                 for attempt in range(0, 2):
                     if attempt == 0:
                         spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
                                                        forcesecondaryeff=commander.gettotalpossiblepathsmask(),
                                                        allowblood=allowblood, allowskipchance=False,
-                                                       setparams={"restricted": nation}, **options)
+                                                       setparams={"restricted": nationid}, **options)
                     else:
                         spell = choseneffect.rollSpell(researchlevel, forcepath=primarypath,
                                                        blocksecondary=True, allowblood=allowblood,
                                                        allowskipchance=False,
-                                                       setparams={"restricted": nation}, **options)
+                                                       setparams={"restricted": nationid}, **options)
                         NationalSpellGenerationInfoCollector.spellrollsrepeated += 1
+                    if spell is not None:
+                        break
 
             # Only one national spell per effect
             del effectpool[choseneffect.name]
@@ -472,20 +472,20 @@ def generateNationalSpells(modlist: str, targetnumberofnationalspells: int, spel
             if spell is None:
                 if len(effectpool) == 0:
                     raise ValueError(
-                        f"Couldn't make a national spell for nation {nation}, guaranteed={commander.pathlevels}, "
+                        f"Couldn't make a national spell for nation {nationid}, guaranteed={commander.pathlevels}, "
                         f"randoms={commander.getrandomspossiblepathmask()}")
                 else:
-                    # _writetoconsole(f"failed to generate spell for effect {choseneffect.name}\n")
-                    break
-
-            spell.restricted = nationid
-            generatedspells.append(spell)
-            numberofgeneratedspells[nationid] += 1
-            # _writetoconsole("Spell successfully generated\n")
+                    print(f"failed to generate spell for effect {choseneffect.name}\n")
+                    pass
+            else:
+                generatedspells.append(spell)
+                numberofgeneratedspells[nationid] += 1
+                NationalSpellGenerationInfoCollector.numberofgeneratedspells += 1
+                # _writetoconsole("Spell successfully generated\n")
 
 
     _writetoconsole(
-        f"Attempted to generate {targetnumberofnationalspells} national spells for {nationcount} nations.\n")
+        f"Attempted to generate {targetnumberofnationalspells} national spells per nation for {nationcount} nations.\n")
     NationalSpellGenerationInfoCollector.print()
 
 

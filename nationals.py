@@ -148,8 +148,6 @@ def readMods(modstring):
                 if m is None:
                     m = re.match("#selectweapon (\\d+)", line)
                 if m is not None:
-                    print(m.groups())
-                    print(line)
                     newid = int(m.groups()[0])
                     weaponids.append(newid)
                 elif line.startswith("#newweapon"):
@@ -228,7 +226,9 @@ def readMods(modstring):
 
                 m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:
-                    path = int(int(m.groups()[0]))
+                    # In normal dominions modding, path flags are 0-7, just for this I converted them into their
+                    # 2^n bitmask form
+                    path = 2**int(int(m.groups()[0]))
                     level = int(m.groups()[1])
                     print(f"Give guaranteed path {path} of strength {level} to current commander")
                     currentunit.addsinglemagic(path, level)

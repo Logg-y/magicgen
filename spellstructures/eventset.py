@@ -370,6 +370,7 @@ class EventSet(object):
                         unitobj = unit.get(unittouse)
                         if not realunitmod.compatibility(unitobj):
                             print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
+                            unittouse = None
                             continue
                         output = f"-- EventSet {self.name} applied secondary effect unitmod {realunitmod.name} " \
                                  f"to {unittouse}\n\n" + output

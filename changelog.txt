@@ -78,6 +78,7 @@ Consistently prevented blood spells that do not cost slaves talking about blood 
 Corrected some rounding issues in montag weight calculations, which would result in the total weight displayed being inaccurate and the percentages for each unit not summing to 100%
 Fixed monster boar spells retaining their national ties
 Fixed a bug that caused the prefix applying code to not apply to spells that share names with vanilla spells
+Fixed a bug that caused generation to enter an infinite loop
 
 v2.1.3:
 
