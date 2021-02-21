@@ -421,7 +421,7 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
 def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generatedeffectsatlevels: Dict[int, List[str]],
                    researchlevel: int) -> SpellEffect:
     availableeffects = list(filter(lambda x: ((primarypath & x.paths) != 0) and  # Matching path
-                                             (x.name not in generatedeffectsatlevels[researchlevel]),
+                                             (x.name in generatedeffectsatlevels[researchlevel]),
                                    # not already created
                                    effectpool.values()))
     if len(availableeffects) == 0:
