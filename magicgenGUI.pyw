@@ -124,6 +124,8 @@ def display_nationchoice(modstring):
         else:
             ticked = False
         boxbuilder = lambda a=text, b=key, c=ticked: sg.Checkbox(a, k=b, default=c)
+        if modnation.era is None:
+            continue
         elementlists[modnation.era].append(boxbuilder)
         categorykeys[modnation.era].append(key)
 
@@ -176,7 +178,10 @@ def display_nationchoice(modstring):
                 if values[key]:
                     m = re.match("-NationPick([0-9]*)-", key)
                     nationid = int(m.groups()[0])
-                    nationselection.append(nationid)
+                    # nations without an era set will not appear in the selector
+                    # because they aren't full nations! don't make nationals for them!
+                    if nationid not in nationals.nations or nationals.nations[nationid].era is not None:
+                        nationselection.append(nationid)
 
         if event == "Close":
             break
