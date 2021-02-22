@@ -1,6 +1,6 @@
 from typing import List
 
-from nationalmage import NationalMage
+from Entities.nationalmage import NationalMage
 
 
 class Site(object):

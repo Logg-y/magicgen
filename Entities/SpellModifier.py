@@ -1,5 +1,4 @@
-from .utils import SpellTypes
-
+from Enums.SpellTypes import SpellTypes
 
 DAMAGING_SPELL_EFFECTS = [2, 103, 74, 73]
 

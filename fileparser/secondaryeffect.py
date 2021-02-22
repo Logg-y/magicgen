@@ -1,8 +1,10 @@
 import os
 import re
 
-import spellstructures
-from spellstructures.utils import ParseError
+from Entities.namecond import NameCond
+from Entities.secondaryeffect import SpellSecondaryEffect
+from Exceptions.ParseError import ParseError
+from Services.utils import secondaries
 
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",
@@ -27,7 +29,7 @@ def readSecondaryFile(fp):
                 m = re.match("#newsecondary\W+\"(.*)\"\W*$", line)
                 if m is None:
                     raise ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
-                curreff = spellstructures.SpellSecondaryEffect()
+                curreff = SpellSecondaryEffect()
                 curreff.name = m.groups()[0]
 
             else:
@@ -71,7 +73,7 @@ def readSecondaryFile(fp):
                     m = re.match('#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)\\W+"(.*)"',
                                  line)
                     if m is not None:
-                        cond = spellstructures.NameCond()
+                        cond = NameCond()
                         cond.val2 = m.groups()[0]
                         cond.op2 = m.groups()[1]
                         cond.param = m.groups()[2]
@@ -84,7 +86,7 @@ def readSecondaryFile(fp):
                     m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #descrcond")
-                    cond = spellstructures.NameCond()
+                    cond = NameCond()
                     cond.param = m.groups()[0]
                     cond.op = m.groups()[1]
                     cond.val = m.groups()[2]
@@ -102,7 +104,7 @@ def readSecondaryFile(fp):
                 if line.startswith("#req"):
                     m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*?([0-9]+)', line)
                     if m is not None:
-                        cond = spellstructures.NameCond()
+                        cond = NameCond()
                         cond.val2 = m.groups()[0]
                         cond.op2 = m.groups()[1]
                         cond.param = m.groups()[2]
@@ -115,7 +117,7 @@ def readSecondaryFile(fp):
                     m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*?([0-9]+)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #req")
-                    cond = spellstructures.NameCond()
+                    cond = NameCond()
                     cond.param = m.groups()[0]
                     cond.op = m.groups()[1]
                     cond.val = m.groups()[2]
@@ -155,7 +157,7 @@ def readSecondaryFile(fp):
 
 
 def readSecondariesFromDir(dir):
-    out = spellstructures.secondaries
+    out = secondaries
     for f in os.listdir(dir):
         if f.endswith(".txt"):
             c = readSecondaryFile(os.path.join(dir, f))

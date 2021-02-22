@@ -1,14 +1,6 @@
-from spellstructures import utils
+from DataObject.MontagResult import MontagResult
+from Services import utils
 import math
-
-class MontagResult(object):
-    "Container to hold MontagBuilder results"
-    def __init__(self):
-        self.modcmds = ""
-        self.weightingstring = ""
-        self.numcreatures = 0
-        self.montagid = None
-        self.dummymonsterid = None
 
 class MontagBuilder(object):
     def __init__(self):

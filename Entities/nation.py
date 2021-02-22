@@ -1,14 +1,15 @@
-import debugkeys
-from nationalmage import NationalMage
+from Entities.spell import Spell
+from Enums.DebugKeys import debugkeys
+from Services import DebugLogger, utils
+from Entities.nationalmage import NationalMage
 from typing import (
     Dict,
     List,
     Union,
 )
 import random
-from spellstructures import utils,  Spell
 
-from nationalsite import Site
+from Entities.nationalsite import Site
 
 
 class Nation(object):
@@ -32,11 +33,11 @@ class Nation(object):
         weights: Dict[int, float] = self._calculate_raw_pathweights(mageweights)
         weights: Dict[int, int] = {i: int(round(weights[i]))for i in weights}
 
-        debugkeys.debuglog(f"Pathweights for nation {self.name} (ID{self.id})\n"
+        DebugLogger.debuglog(f"Pathweights for nation {self.name} (ID{self.id})\n"
                            f"Mages:{[i.to_text() for i in self.mages]}\n"
                            f"MageWeights: {mageweights}\n"
-                           f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
-                           , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
+                           f"Weights:{[str(utils.pathstotext(i)) + ' ' + str(weights[i]) + ', ' for i in weights]}"
+                             , debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return weights
 
     def _calculate_raw_pathweights(self, mageweights) -> Dict[int, float]:
@@ -57,7 +58,7 @@ class Nation(object):
     def get_commander_with_path(self, path: int) -> Union[NationalMage, None]:
         random.shuffle(self.mages)
         for mage in self.mages:
-            debugkeys.debuglog(f"Testing {mage.to_text()} for {utils.pathstotext(path)}: {mage.has_access_to_path(path)}", debugkeys.debugkeys.MAGESELECTIONFORPATHFORNATIONALSPELL)
+            DebugLogger.debuglog(f"Testing {mage.to_text()} for {utils.pathstotext(path)}: {mage.has_access_to_path(path)}", debugkeys.MAGESELECTIONFORPATHFORNATIONALSPELL)
             if mage.has_access_to_path(path):
                 return mage
         raise ValueError(f"Could not find mage for path {utils.pathstotext(path)} in {self.to_text()}")

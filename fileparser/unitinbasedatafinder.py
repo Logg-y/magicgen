@@ -2,29 +2,29 @@ import csv
 import os
 from copy import copy
 
-from . import weapon
+from Entities import weapon
 
 cache = {}
 descriptioncache = {}
 
 
-class Unit(object):
+class UnitInBaseDataFinder(object):
     def __init__(self):
         pass
 
     @staticmethod
     def from_id(id):
-        with open("BaseU.csv", "r") as f:
+        with open("data/BaseU.csv", "r") as f:
             reader = csv.DictReader(f, delimiter="\t")
             for line in reader:
                 if int(line["id"]) == id:
-                    return Unit.from_line(line)
+                    return UnitInBaseDataFinder.from_line(line)
         raise ValueError(f"Unit {id} not found")
 
     @staticmethod
     def from_line(line):
         global descriptioncache
-        self = Unit()
+        self = UnitInBaseDataFinder()
         self.line = line
         id = int(line["id"])
         self.origid = id
@@ -59,7 +59,7 @@ def get(id):
     # but also making deepcopy methods for objects is really annoying
     # so probably easiest to save the file line
     if id in cache:
-        return Unit.from_line(copy(cache[id]))
-    u = Unit.from_id(id)
+        return UnitInBaseDataFinder.from_line(copy(cache[id]))
+    u = UnitInBaseDataFinder.from_id(id)
     cache[id] = copy(u.line)
     return u

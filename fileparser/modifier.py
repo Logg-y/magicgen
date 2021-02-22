@@ -1,8 +1,9 @@
 import os
 import re
 
-import spellstructures
-from spellstructures import ParseError
+from Entities import SpellModifier
+from Entities.namecond import NameCond
+from Exceptions.ParseError import ParseError
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
@@ -27,7 +28,7 @@ def readModifierFile(fp):
                 m = re.match("#newmodifier\W+\"(.*)\"\W*$", line)
                 if m is None:
                     raise ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
-                curreff = spellstructures.SpellModifier()
+                curreff = SpellModifier.SpellModifier()
                 curreff.name = m.groups()[0]
 
             else:
@@ -71,7 +72,7 @@ def readModifierFile(fp):
                     m = re.match('#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)\\W+"(.*)"',
                                  line)
                     if m is not None:
-                        cond = spellstructures.NameCond()
+                        cond = NameCond()
                         cond.val2 = m.groups()[0]
                         cond.op2 = m.groups()[1]
                         cond.param = m.groups()[2]
@@ -84,7 +85,7 @@ def readModifierFile(fp):
                     m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #descrcond")
-                    cond = spellstructures.NameCond()
+                    cond = NameCond()
                     cond.param = m.groups()[0]
                     cond.op = m.groups()[1]
                     cond.val = m.groups()[2]
@@ -102,7 +103,7 @@ def readModifierFile(fp):
                 if line.startswith("#req"):
                     m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*?([0-9]+)', line)
                     if m is not None:
-                        cond = spellstructures.NameCond()
+                        cond = NameCond()
                         cond.val2 = m.groups()[0]
                         cond.op2 = m.groups()[1]
                         cond.param = m.groups()[2]
@@ -115,7 +116,7 @@ def readModifierFile(fp):
                     m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*?([0-9]+)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #req")
-                    cond = spellstructures.NameCond()
+                    cond = NameCond()
                     cond.param = m.groups()[0]
                     cond.op = m.groups()[1]
                     cond.val = m.groups()[2]
@@ -155,7 +156,8 @@ def readModifierFile(fp):
 
 
 def readModifiersFromDir(dir):
-    out = spellstructures.modifiers
+    from Services.utils import modifiers
+    out = modifiers
     for f in os.listdir(dir):
         if f.endswith(".txt"):
             c = readModifierFile(os.path.join(dir, f))

@@ -1,6 +1,7 @@
-from . import unit
-from . import utils
-from .utils import PathFlags, SpellTypes
+from Enums.PathFlags import PathFlags
+from Enums.SpellTypes import SpellTypes
+from Services.utils import unitmods, eventsets
+from fileparser import unitinbasedatafinder
 
 
 class SpellSecondaryEffect(object):
@@ -51,7 +52,7 @@ class SpellSecondaryEffect(object):
         # see if the event list allows this unitmod
         # if yes then we need to be allowed, ignoring all the other reqs
         if eff.eventset is not None:
-            realeventset = utils.eventsets[eff.eventset]
+            realeventset = eventsets[eff.eventset]
             if self.unitmod in realeventset.allowedunitmods:
                 return True
 
@@ -73,7 +74,7 @@ class SpellSecondaryEffect(object):
                 elif eff.effect in [10021]:
                     # Block weapon mods on permanent summon commanders
                     if self.unitmod != "":
-                        unitmod = utils.unitmods[self.unitmod]
+                        unitmod = unitmods[self.unitmod]
                         if unitmod.weaponmod != "":
                             return False
             else:
@@ -137,8 +138,8 @@ class SpellSecondaryEffect(object):
                 return False
 
         if self.unitmod != "":
-            u = unit.get(eff.damage)
-            umod = utils.unitmods[self.unitmod]
+            u = unitinbasedatafinder.get(eff.damage)
+            umod = unitmods[self.unitmod]
             if not umod.compatibility(u):
                 return False
 

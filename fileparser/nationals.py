@@ -7,11 +7,11 @@ from typing import (
     List, Union,
 )
 
-from nationalsite import Site
+from DataObject.MagePathRandom import MagePathRandom
+from Entities.nationalsite import Site
 
-from spellstructures import utils
-from nation import Nation
-from nationalmage import NationalMage, MagePathRandom
+from Entities.nation import Nation
+from Entities.nationalmage import NationalMage
 
 nations: Dict[int, Nation] = {}  # map nation id to nation
 
@@ -35,13 +35,13 @@ def _read_vanilla_unit_nation_map_file(path:str, nationalunits):
 
 def read_vanilla():
     nationalunits = {}
-    _read_vanilla_unit_nation_map_file("fort_leader_types_by_nation.csv", nationalunits)
-    _read_vanilla_unit_nation_map_file("coast_leader_types_by_nation.csv", nationalunits)
-    _read_vanilla_unit_nation_map_file("nonfort_leader_types_by_nation.csv", nationalunits)
+    _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/fort_leader_types_by_nation.csv", nationalunits)
+    _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/coast_leader_types_by_nation.csv", nationalunits)
+    _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/nonfort_leader_types_by_nation.csv", nationalunits)
 
     # Get their info
     unitdata = {}
-    with open("BaseU.csv", "r") as datacsv:
+    with open("data/BaseU.csv", "r") as datacsv:
         reader = csv.DictReader(datacsv, delimiter="\t")
         for line in reader:
             unitdata[int(line["id"])] = copy.copy(line)

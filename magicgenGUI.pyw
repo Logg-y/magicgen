@@ -3,7 +3,7 @@ import queue
 import subprocess
 import sys
 import threading
-import nationals
+from fileparser import nationals
 import csv
 import re
 import traceback
@@ -93,7 +93,7 @@ def display_nationchoice(modstring):
     # Keep the element keys for each category to enable the select/deselect buttons
     categorykeys = {1: [], 2: [], 3: []}
     # vanilla nations
-    with open("nations.csv", "r", encoding="u8") as f:
+    with open("data/nations.csv", "r", encoding="u8") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for line in reader:
             eraint = int(line["era"])

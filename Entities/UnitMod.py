@@ -1,8 +1,7 @@
 from copy import copy
 
-import naming
-from spellstructures import unit
-from . import utils
+from Services import naming, utils
+from fileparser import unitinbasedatafinder
 
 # Weaponmods are called only from SecondaryEffects
 # which means they can be a LOT simpler
@@ -10,6 +9,7 @@ from . import utils
 
 flags_to_mod_cmds = {"def_":"def", "explodeondeath":"deathfire", "acidsplash":"acidshield", "vineshield":"entangle", "deathwail":"deathparalyze", "undeadleader":"undcommand", "poisonbarbs":"poisonarmor", "invisibility":"invisible", "poweroftheturningyear":"yearturn", "graphicsize":"drawsize"}
 argless_cmds = ["eyeloss", "horrormark", "aquatic", "amphibian", "pooramphibian", "flying", "illusion", "heal", "ethereal", "immortal", "domimmortal", "springimmortal", "entangle", "spiritsight", "deathcurse", "noundeadleader", "invisible", "invisibility"]
+
 
 class UnitMod(object):
     def __init__(self):
@@ -79,7 +79,7 @@ class UnitMod(object):
             if hasattr(unitobj, x):
                 uid = getattr(unitobj, x)
                 if uid not in tested and uid > 0:
-                    unittottest = unit.get(uid)
+                    unittottest = unitinbasedatafinder.get(uid)
                     if not self.compatibility(unittottest, tested=tested):
                         return False
 
@@ -112,7 +112,7 @@ class UnitMod(object):
         if extrashapechain is None:
             extrashapechain = {}
 
-        u = unit.get(unitnr)
+        u = unitinbasedatafinder.get(unitnr)
         return self.applytounit(spell, u, extrashapechain, additionals_firstshape=additionals_firstshape)
 
     def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None):

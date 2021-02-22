@@ -1,7 +1,10 @@
 import os
 import re
 
-import spellstructures
+from Entities.SpellEffect import SpellEffect
+from Entities.namecond import NameCond
+from Exceptions.ParseError import ParseError
+from Services import utils
 
 simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance"]
 simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset"]
@@ -22,17 +25,17 @@ def readEffectFile(fp):
 
 				if line.startswith("#neweffect"):
 					if curreff is not None:
-						raise spellstructures.ParseError(
+						raise ParseError(
 							f"{fp} line {lineno}: Unexpected #neweffect (still parsing previous effect)")
 					m = re.match("#neweffect\W+\"(.*)\"\W*$", line)
 					if m is None:
-						raise spellstructures.ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
-					curreff = spellstructures.SpellEffect(fp)
+						raise ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
+					curreff = SpellEffect(fp)
 					curreff.name = m.groups()[0]
 
 				else:
 					if curreff is None:
-						raise spellstructures.ParseError(f"{fp} line {lineno}: Expected a #neweffect line")
+						raise ParseError(f"{fp} line {lineno}: Expected a #neweffect line")
 
 					sorted = False
 
@@ -72,7 +75,7 @@ def readEffectFile(fp):
 							'#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
 							line)
 						if m is not None:
-							cond = spellstructures.NameCond()
+							cond = NameCond()
 							cond.val2 = m.groups()[0]
 							cond.op2 = m.groups()[1]
 							cond.param = m.groups()[2]
@@ -87,8 +90,8 @@ def readEffectFile(fp):
 
 						m = re.match('#namecond\\W+(.+)[ \t]+([<>=&!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
-							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
-						cond = spellstructures.NameCond()
+							raise ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
+						cond = NameCond()
 						cond.param = m.groups()[0]
 						cond.op = m.groups()[1]
 						cond.val = m.groups()[2]
@@ -104,7 +107,7 @@ def readEffectFile(fp):
 							'#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
 							line)
 						if m is not None:
-							cond = spellstructures.NameCond()
+							cond = NameCond()
 							cond.val2 = m.groups()[0]
 							cond.op2 = m.groups()[1]
 							cond.param = m.groups()[2]
@@ -119,8 +122,8 @@ def readEffectFile(fp):
 
 						m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
-							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #descrcond")
-						cond = spellstructures.NameCond()
+							raise ParseError(f"{fp} line {lineno}: bad #descrcond")
+						cond = NameCond()
 						cond.param = m.groups()[0]
 						cond.op = m.groups()[1]
 						cond.val = m.groups()[2]
@@ -134,14 +137,14 @@ def readEffectFile(fp):
 					if line.startswith("#descr"):
 						m = re.match('#descr\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
-							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #descr")
+							raise ParseError(f"{fp} line {lineno}: bad #descr")
 						curreff.descriptions[int(m.groups()[0])] = m.groups()[1]
 						continue
 
 					if line.startswith("#pathskipchance"):
 						m = re.match('#pathskipchance\\W+([0-9]*)\\W+([0-9]*)', line)
 						if m is None:
-							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #pathskipchance")
+							raise ParseError(f"{fp} line {lineno}: bad #pathskipchance")
 						path = int(m.groups()[0])
 						skipchance = int(m.groups()[1])
 						curreff.pathskipchances[path] = skipchance
@@ -150,7 +153,7 @@ def readEffectFile(fp):
 					if line.startswith("#name"):
 						m = re.match('#name\\W+([0-9]*)\\W+"(.*)"', line)
 						if m is None:
-							raise spellstructures.ParseError(f"{fp} line {lineno}: bad #name")
+							raise ParseError(f"{fp} line {lineno}: bad #name")
 						path = int(m.groups()[0])
 						if path not in curreff.names:
 							curreff.names[path] = []
@@ -162,24 +165,24 @@ def readEffectFile(fp):
 						curreff = None
 						continue
 
-					raise spellstructures.ParseError(f"{fp} line {lineno}: Unrecognised content: {line}")
+					raise ParseError(f"{fp} line {lineno}: Unrecognised content: {line}")
 		return out
 	except:
 		if lineno is not None:
-			raise spellstructures.ParseError(f"Failed to read {fp}, failed at line {lineno}")
+			raise ParseError(f"Failed to read {fp}, failed at line {lineno}")
 		else:
-			raise spellstructures.ParseError(f"Failed to read {fp}, undetermined line")
+			raise ParseError(f"Failed to read {fp}, undetermined line")
 
 
 def readEffectsFromDir(dir):
-	out = spellstructures.spelleffects
+	out = utils.spelleffects
 	new = []
 	for f in os.listdir(dir):
 		if f.endswith(".txt"):
 			c = readEffectFile(os.path.join(dir, f))
 			for key in c:
 				if key in out:
-					raise spellstructures.ParseError(f"Spell named {key} already exists and was redefined in {f}")
+					raise ParseError(f"Spell named {key} already exists and was redefined in {f}")
 				out[key] = c[key]
 				new.append(key)
 	o = {}

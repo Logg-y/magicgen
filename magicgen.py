@@ -11,11 +11,15 @@ import traceback
 from typing import Dict, List, Union
 
 import fileparser
-import nationals
-from nation import Nation
-from nationalmage import NationalMage
-from spellstructures import utils, SpellEffect, Spell
-import debugkeys
+from Entities.SpellEffect import SpellEffect
+from Entities.nation import Nation
+from Entities.nationalmage import NationalMage
+from Entities.spell import Spell
+from Enums.DebugKeys import debugkeys
+from Enums.PathFlags import PathFlags
+from Enums.SchoolFlags import SchoolFlags
+from Services import utils, DebugLogger
+from fileparser import nationals, unitinbasedatafinder
 
 # List of spells to not push to uncastable: these are only divine spells
 spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
@@ -24,8 +28,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 START_ID = 1300
 ver = "2.1.4"
 
-ALL_PATH_FLAGS = [utils.PathFlags(2 ** x) for x in range(0, 8)]
-
+ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
 def _writetoconsole(line):
     """Because PyInstaller and PySimpleGUI don't play nice unless specifying STDIN as well, I had to make
@@ -56,7 +59,7 @@ def rollspells(**options):
 
     with open("log.txt", "w") as logfile:
         sys.stdout = logfile
-        with open("spells.csv", "r") as f:
+        with open("data/spells.csv", "r") as f:
             r = csv.DictReader(f, delimiter="\t")
             for line in r:
                 utils.spellnames.append(line["name"])
@@ -91,7 +94,7 @@ def rollspells(**options):
             fileparser.readEventSetsFromDir(r".\data\spells\rituals\globals\events")
             fileparser.readUnitModsFromDir(r".\data\spells\rituals\globals\unitmods")
 
-            s: Dict[str, SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
+            s: Dict[str, fileparser.SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
 
             # Keep track of which effects have been done at which research levels
             # this is because we don't want to duplicate any with national spells
@@ -100,7 +103,7 @@ def rollspells(**options):
             researchmod = options.get("researchmodifier", 0)
 
             for school in [1, 2, 4, 8, 16, 32, 64]:
-                schoolname = utils.SchoolFlags(school).name
+                schoolname = SchoolFlags(school).name
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
                     spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.33))
@@ -267,7 +270,7 @@ def rollspells(**options):
                     with open("indepspells.dm", "r") as indepspells:
                         indepspellscontent = indepspells.read()
                         crc = indepspellscontent.split("\n")[0][2:].strip()
-                        with open("BaseU.csv", "rb") as baseu:
+                        with open("data/BaseU.csv", "rb") as baseu:
                             baseucontent = baseu.read()
                             baseucrc = str(binascii.crc32(baseucontent))
                         if crc == baseucrc:
@@ -287,7 +290,7 @@ def rollspells(**options):
                         if unitid % 100 == 0:
                             _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
                         try:
-                            unitobj = unit.get(unitid)
+                            unitobj = unitinbasedatafinder.get(unitid)
                         except Exception:
                             print(f"Error trying to get uid {unitid}")
                             print(traceback.format_exc());
@@ -376,10 +379,10 @@ def _roll_path_for_national_spell(nation: Nation) -> int:
     initialroll = roll = random.randrange(0, totalweights, 1)
     for path, weight in pathweights.items():
         if roll < weight:
-            debugkeys.debuglog(f"Selected path {utils.pathstotext(path)} from weights {pathweights.items()}, "
+            DebugLogger.debuglog(f"Selected path {utils.pathstotext(path)} from weights {pathweights.items()}, "
                                f"rolled {initialroll}",
-                               debugkeys.debugkeys.NATIONALSPELLGENERATION |
-                               debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
+                                 debugkeys.NATIONALSPELLGENERATION,
+                                 debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
             return path
         roll -= weight
     raise ValueError(f"Attempted and failed to roll for weighted path\n  Rolled {initialroll}\n  Total weight: "
@@ -393,7 +396,7 @@ def _select_research_level(researchmod: int, generatedeffectsatlevels: Dict[int,
     researchlevel = researchlevelstotry.pop(0)
     if len(researchlevelstotry) == 0:
         raise ValueError(f"Failed to select research level for spell")
-    debugkeys.debuglog(f"Selecting researchlevel {researchlevel}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    DebugLogger.debuglog(f"Selecting researchlevel {researchlevel}", debugkeys.NATIONALSPELLGENERATION)
     return researchlevel
 
 
@@ -428,26 +431,26 @@ def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, already
         raise ValueError("No Spelleffect found available")
 
     choseneffect: Union[SpellEffect] = availableeffects[random.randrange(0, len(availableeffects))]
-    debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n"
+    DebugLogger.debuglog(f"Selected effect: {choseneffect.name}\n"
                        f"Primary path: {utils.pathstotext(primarypath)}\n"
                        f"Already generated effects: {alreadygeneratedeffectsatlevels}\n"
-                       f"Current research level: {researchlevel}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+                       f"Current research level: {researchlevel}", debugkeys.NATIONALSPELLGENERATION)
     return choseneffect
 
 
 def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: Dict[str, SpellEffect],
                                 alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
                                 targetnumberofnationalspells: int, options: Dict[str, str]):
-    debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
-                       debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    DebugLogger.debuglog(f"Generating spells for nation: {nation.to_text()}",
+                         debugkeys.NATIONALSPELLGENERATION)
     if not nation.has_mages():
         _writetoconsole(f"Skipping nation {nation.to_text()} because no national mages were found\n")
         return
     availableeffectpool = copy.copy(spelleffects)
     while len(nation.nationalspells) < targetnumberofnationalspells:
         primarypath: int = _roll_path_for_national_spell(nation)
-        debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
-                           debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        DebugLogger.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
+                             debugkeys.NATIONALSPELLGENERATION)
 
         # Select a commander to generate this spell for
         commander: NationalMage = nation.get_commander_with_path(primarypath)
@@ -456,7 +459,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
         allowblood = commander.can_have_blood()
 
         # Select effect for spell
-        debugkeys.debuglog(f"Selecting national spell effect\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        DebugLogger.debuglog(f"Selecting national spell effect\n", debugkeys.NATIONALSPELLGENERATION)
 
         researchlevel = _select_research_level(researchmod, alreadygeneratedeffectsatlevels)
         try:
@@ -476,10 +479,10 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
                 f"Available effects: {availableeffectpool}\n"
                 f"No effect available\n")
 
-        debugkeys.debuglog(
+        DebugLogger.debuglog(
             f"Try generating national spell for nation {nation.id} with effect {choseneffect.name}, "
             f"primarypath={utils.pathstotext(primarypath)}, secondaries={commander.get_total_possible_paths_mask()}, there are "
-            f"{len(availableeffectpool)} effects available\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+            f"{len(availableeffectpool)} effects available\n", debugkeys.NATIONALSPELLGENERATION)
         spell = _try_to_generate_a_national_spell(
             nation=nation,
             spelleffect=choseneffect,
@@ -490,13 +493,13 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
             secondarypathoptions=commander.get_total_possible_paths_mask()
         )
         if spell is None:
-            debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n",
-                               debugkeys.debugkeys.NATIONALSPELLGENERATION)
+            DebugLogger.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n",
+                                 debugkeys.NATIONALSPELLGENERATION)
         else:
             generatedspells.append(spell)
             nation.register_national_spell(spell)
             NationalSpellGenerationInfoCollector.numberofgeneratedspells += 1
-            debugkeys.debuglog("Spell successfully generated\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
+            DebugLogger.debuglog("Spell successfully generated\n", debugkeys.NATIONALSPELLGENERATION)
 
 
 def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Dict[str, SpellEffect],
@@ -515,7 +518,7 @@ def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Di
         beginningnationlogtext = f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n"
         if index % 20 == 0:
             _writetoconsole(beginningnationlogtext)
-        debugkeys.debuglog(beginningnationlogtext, debugkeys.debugkeys.NATIONALSPELLGENERATION)
+        DebugLogger.debuglog(beginningnationlogtext, debugkeys.NATIONALSPELLGENERATION)
         index += 1
 
         _generate_spells_for_nation(
@@ -709,7 +712,7 @@ def main():
         try:
             rollspells(**args)
         except:
-            _writetoconsole(fileparser.traceback.format_exc())
+            _writetoconsole(traceback.format_exc())
             return
         print("Complete. Press ENTER to exit.")
         input()

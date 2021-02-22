@@ -1,0 +1,3 @@
+
+class NameTooLongException(Exception):
+    pass

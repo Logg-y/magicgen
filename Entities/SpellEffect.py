@@ -1,165 +1,12 @@
-import copy
 import math
 import random
 
-import naming
-from . import utils
-from .utils import SpellTypes, PathFlags, SchoolFlags
-
-# This seems to be how dominions autocalcs cast time
-# keys are simply gems required
-# 9 is a guess as I couldn't be bothered to mod a spell in for what seemed like an obvious progression
-casttimes = {0: 100, 1: 125, 2: 175, 3: 200, 4: 225, 5: 250, 6: 275, 7: 300, 8: 325, 9: 350}
-
-
-class Spell(object):
-    def __init__(self):
-        self.name = ""
-        self.effect = -1
-        self.damage = -1
-        self.spec = 0
-        self.school = -1
-        self.aoe = 0
-        self.range = 0
-        self.nreff = 1
-        self.precision = 0
-        self.path1 = -1
-        self.path2 = -1
-        self.path1level = -1
-        self.path2level = -1
-        self.fatiguecost = 0
-        self.researchlevel = -1
-        self.nextspell = ""
-        self.details = None
-        self.name = "Unnamed"
-        self.descr = ""
-        self.flightspr = None
-        self.explspr = None
-        self.sound = None
-        self.maxbounces = 0
-        self.nolandtrace = 0
-        self.onlyfriendlydst = 0
-        self.onlygeosrc = 0
-        self.copyspell = None
-        self.casttime = None
-        self.provrange = None
-        self.onlygeodst = None
-        self.nogeodst = None
-        self.godpathspell = None
-        self.comments = []
-        self.modcmdsbefore = ""
-        self.restricted = None
-        self.aicastmod = 0
-        self.isnextspell = False
-        self.parenteffect = None
-        # This is used only for storing the unit object for eventsets
-        # as they use compounded unitmods, this is where the intermediate goes
-        self.globaleventunit = None
-
-    def p(self):
-        print(f"name {self.name}")
-        print(f"effect {self.effect}")
-        print(f"damage {self.damage}")
-        print(f"spec {self.spec}")
-        print(f"school {self.school}")
-        print(f"aoe {self.aoe}")
-        print(f"nreff {self.nreff}")
-        print(f"path1level {self.path1level}")
-        print(f"path1 {self.path1}")
-        print(f"fatiguecost {self.fatiguecost}")
-        print("\n" * 3)
-
-    def output(self):
-        # self.p()
-        debugmode = False
-        if debugmode:
-            self.name = self.name + " {}".format(self.researchlevel)
-            self.researchlevel = min(0, self.researchlevel)
-        out = ""
-
-        for comment in self.comments:
-            out += f"-- {comment}\n"
-
-        out += self.modcmdsbefore
-
-        # this spec is "next effect on damage" which ALWAYS calls the next spell id and not the thing you ask for
-        if self.nextspell != "" and self.nextspell is not None and not (self.spec & 1152921504606846976):
-            out += self.nextspell.output()
-
-        # They MUST have consecutive IDs
-        # because of the way I generate them they are normally backwards
-        # so this swaps them back round the right way
-        if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
-            firstid = copy.copy(self.nextspell.id)
-            myid = copy.copy(self.id)
-            self.id = firstid
-            self.nextspell.id = myid
-
-        out += f"#newspell {self.id}\n"
-        if self.copyspell is not None:
-            out += '#copyspell "{}"{}'.format(self.copyspell, "\n")
-        out += "#name \"" + self.name + "\"\n"
-        out += f"#effect {self.effect}\n"
-        out += f"#damage {self.damage}\n"
-        out += f"#spec {self.spec}\n"
-        if self.school > -1:
-            out += f"#school {int(math.log(self.school, 2))}\n"
-        else:
-            out += "#school -1\n"
-        out += f"#aoe {self.aoe}\n"
-        out += f"#range {self.range}\n"
-        out += f"#nreff {self.nreff}\n"
-        out += f"#precision {self.precision}\n"
-        out += '#descr "{}"{}'.format(self.descr.strip(), "\n")
-        out += '#path 0 {}{}'.format(int(math.log(self.path1, 2)), "\n")
-        out += f"#researchlevel {self.researchlevel}\n"
-        out += f"#pathlevel 0 {self.path1level}\n"
-        if self.path2 != -1 and self.path2level > -1:
-            out += f"#path 1 {int(math.log(self.path2, 2))}\n"
-            out += f"#pathlevel 1 {self.path2level}\n"
-        else:
-            out += "#path 1 -1\n"
-            out += "#pathlevel 1 0\n"
-        out += f"#fatiguecost {self.fatiguecost}\n"
-        if self.details is not None and len(self.details) > 0:
-            out += '#details "{}"{}'.format(self.details.strip(), "\n")
-        if self.nextspell != "" and self.nextspell is not None and not (self.spec & 1152921504606846976):
-            out += '#nextspell "{}"{}'.format(self.nextspell.name, "\n")
-        if self.flightspr is not None:
-            out += f"#flightspr {self.flightspr}\n"
-        if self.explspr is not None:
-            out += f"#explspr {self.explspr}\n"
-        if self.maxbounces > 0:
-            out += f"#maxbounces {self.maxbounces}\n"
-        if self.sound is not None:
-            out += f"#sound {self.sound}\n"
-        if self.casttime is not None:
-            out += f"#casttime {self.casttime}\n"
-        if self.provrange is not None:
-            out += f"#provrange {self.provrange}\n"
-        if self.onlygeodst is not None:
-            out += f"#onlygeodst {self.onlygeodst}\n"
-        if self.nogeodst is not None:
-            out += f"#nogeodst {self.nogeodst}\n"
-        if self.ainocast > 0:
-            out += f"#ainocast {self.ainocast}\n"
-        if self.nolandtrace > 0:
-            out += f"#nolandtrace {self.nolandtrace}\n"
-        if self.onlyfriendlydst > 0:
-            out += f"#onlyfriendlydst {self.onlyfriendlydst}\n"
-        if self.onlygeosrc > 0:
-            out += f"#onlygeosrc {self.onlygeosrc}\n"
-        if self.godpathspell is not None:
-            out += f"#godpathspell {self.godpathspell}\n"
-        if self.restricted is not None:
-            out += f"#restricted {self.restricted}\n"
-        if self.aicastmod != 0:
-            out += f"#aicastmod {self.aicastmod}\n"
-        out += "#end\n\n"
-
-        if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
-            out += self.nextspell.output()
-        return out
+from Entities.spell import Spell
+from Entities import spell
+from Enums.PathFlags import PathFlags
+from Enums.SchoolFlags import SchoolFlags
+from Enums.SpellTypes import SpellTypes
+from Services import utils, naming
 
 
 class SpellEffect(object):
@@ -231,7 +78,7 @@ class SpellEffect(object):
                   blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None,
                   forcedmodifier=None, forcepathlevel=None, **options):
         """Return a Spell on success, or None if it couldn't be done.
-		
+
 		researchlevel: the research level this spell should be for
 		forceschool: the generated spell will be forced into a research school
 		forcepath: the primary path will be forced into the given value
@@ -243,7 +90,7 @@ class SpellEffect(object):
 		allowblood: if True, can assign blood paths and to the blood school
 		allowskipchance: if False, skipchances of any value less than 100 (IE: 100% skip) will be ignored. Blood combat spell skipping bypasses this
 		setparams: a dict of params to set on the created Spell object
-		
+
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
 		"""
@@ -577,7 +424,8 @@ class SpellEffect(object):
             scaleexponent = (mod.scalefatigueexponent + self.scalefatigueexponent + secondary.scalefatigueexponent)
             if scaleamt2 != 0.0 and scaleexponent > 0.0:
                 s.fatiguecost += (scaleamt2 ** scaleexponent)
-                print(f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
+                print(
+                    f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
 
         if self.nextspell != "":
             s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondary.power, forceschool=forceschool,
@@ -596,7 +444,7 @@ class SpellEffect(object):
                                                         forcepathlevel=s.path1level, allowskipchance=False,
                                                         **options).output()
 
-		# Remove decimal stuff
+            # Remove decimal stuff
         s.nreff = math.floor(s.nreff)
         s.damage = math.floor(s.damage)
         s.maxbounces = math.floor(s.maxbounces)
@@ -611,7 +459,7 @@ class SpellEffect(object):
         # don't make spells uncastable at the minimum level
         if not self.spelltype & SpellTypes.RITUAL:
             if s.fatiguecost > 100 * s.path1level:
-                reductionfactor = (100*s.path1level) / s.fatiguecost
+                reductionfactor = (100 * s.path1level) / s.fatiguecost
                 if realnumeffects > 1:
                     desirednumeffects = max(1, math.floor(realnumeffects * reductionfactor))
                     numeffectstolose = realnumeffects - desirednumeffects
@@ -656,7 +504,6 @@ class SpellEffect(object):
                 if 200 > s.fatiguecost >= 100:  # don't go from 1 gem to 0 gems
                     s.fatiguecost /= 2
 
-
         # Divert levels into secondary path, if applicable
         if s.path2 >= 0:
             # How many levels to divert?
@@ -672,7 +519,7 @@ class SpellEffect(object):
             s.range = 0
         # Assign cast time
         if s.casttime is None:
-            s.casttime = casttimes.get(int(s.fatiguecost / 100), 100)
+            s.casttime = spell.casttimes.get(int(s.fatiguecost / 100), 100)
 
         # Reasons to try generating again:
         # if our path level has been reduced below 1 by mods
@@ -786,7 +633,6 @@ class SpellEffect(object):
         if not (self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = min(999, s.fatiguecost)
 
-			
         descrs = []
         for x in self.descrconds.get(s.path1, []):
             if x.test(s):
@@ -965,8 +811,6 @@ class SpellEffect(object):
         # Implement research level modifier options
         s.researchlevel -= options.get("researchmodifier", 0)
 
-
-
         # If aoe is x% of field, nextspells seem to need it too?
         if 660 < s.aoe < 670:
             tmp = s.nextspell
@@ -989,7 +833,7 @@ class SpellEffect(object):
         s.path2level = min(9, s.path2level)
 
         # Blood ritual cost multiplier
-        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & utils.SpellTypes.RITUAL):
+        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
 
         # Free rituals are a big fat NOPE.

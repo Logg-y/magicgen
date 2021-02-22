@@ -1,7 +1,10 @@
 import os
 import re
 
-import spellstructures
+from Entities.namecond import NameCond
+from Entities.weaponmod import WeaponMod
+from Exceptions.ParseError import ParseError
+from Services.utils import weaponmods
 
 secondary_params_int = ["att", "def_", "len", "nratt", "ammo", "secondaryeffectid", "secondaryeffectalwaysid", "effect",
                         "damage", "spec", "range", "aoe", "setweaponmagic"]
@@ -25,7 +28,7 @@ def readWeaponModFile(fp):
                 m = re.match("#newweaponmod\W+\"(.*)\"\W*$", line)
                 if m is None:
                     raise ParseError(f"{fp} line {lineno}: Expected a weapon mod name, none was found")
-                curreff = spellstructures.WeaponMod()
+                curreff = WeaponMod()
                 curreff.name = m.groups()[0]
 
             else:
@@ -68,7 +71,7 @@ def readWeaponModFile(fp):
                 if line.startswith("#req"):
                     m = re.match('#req2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>=!]+)\\W*([0-9]*)', line)
                     if m is not None:
-                        cond = spellstructures.NameCond()
+                        cond = NameCond()
                         cond.val2 = m.groups()[0]
                         cond.op2 = m.groups()[1]
                         cond.param = m.groups()[2]
@@ -81,7 +84,7 @@ def readWeaponModFile(fp):
                     m = re.match('#req\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #req")
-                    cond = spellstructures.NameCond()
+                    cond = NameCond()
                     cond.param = m.groups()[0]
                     cond.op = m.groups()[1]
                     cond.val = m.groups()[2]
@@ -125,7 +128,7 @@ def readWeaponModFile(fp):
 
 
 def readWeaponModsFromDir(dir):
-    out = spellstructures.weaponmods
+    out = weaponmods
     for f in os.listdir(dir):
         if f.endswith(".txt"):
             c = readWeaponModFile(os.path.join(dir, f))

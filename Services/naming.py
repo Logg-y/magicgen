@@ -1,53 +1,10 @@
-import random
 import re
 
-import spellstructures
-from spellstructures import utils
-
-
-class NameTooLongException(Exception):
-    pass
-
-
-class Pluraliser(object):
-    def __init__(self):
-        self.exceptions = {}
-        with open("./data/naming/plurals.txt") as f:
-            for line in f:
-                if line.strip() == "": continue
-                c = line.split("\t")
-                self.exceptions[c[0]] = c[1].strip()
-
-    def pluralise(self, word):
-        if word.lower() in self.exceptions:
-            return self.exceptions[word.lower()].strip()
-        else:
-            if word.lower()[-1] == "y":
-                word = word[:-1] + "ies"
-                return word
-            if word.lower()[-1] != "s":
-                word = word + "s"
-                return word
-            return word
-
-
-class Synonyms(object):
-    def __init__(self):
-        self.synonyms = {}
-        with open("./data/naming/synonyms.txt") as f:
-            for line in f:
-                if line.strip() == "": continue
-                c = line.split("\t")
-                if c[0] not in self.synonyms:
-                    self.synonyms[c[0]] = []
-                self.synonyms[c[0]].append(c[1].strip())
-
-    # print(self.synonyms)
-    def get(self, word):
-        if word.lower() not in self.synonyms:
-            return word
-        return random.choice(self.synonyms[word.lower()]).strip()
-
+from Enums.SpellTypes import SpellTypes
+from Exceptions.NameTooLongException import NameTooLongException
+from Services import utils
+from Services.Pluraliser import Pluraliser
+from Services.Synonyms import Synonyms
 
 synonyms = Synonyms()
 pluraliser = Pluraliser()
@@ -73,7 +30,7 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
         parsedname = parsedname.replace("PRONOUN_SUB", "he")
         parsedname = parsedname.replace("PRONOUN", "him")
 
-    if spelltype & spellstructures.SpellTypes.BUFF:
+    if spelltype & SpellTypes.BUFF:
         if aoe == 0:
             parsedname = parsedname.replace("SUBJECT", "the caster")
             parsedname = parsedname.replace("SIZE", "tiny")
@@ -89,7 +46,7 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
         else:
             parsedname = parsedname.replace("SUBJECT", "the entire army")
             parsedname = parsedname.replace("SIZE", "massive")
-    elif spelltype & spellstructures.SpellTypes.EVOCATION:
+    elif spelltype & SpellTypes.EVOCATION:
         if aoe == 0:
             parsedname = parsedname.replace("SUBJECT", "one enemy")
             parsedname = parsedname.replace("SIZE", "tiny")

@@ -1,15 +1,16 @@
-from . import utils
 import copy
 import re
 import random
 import math
-from spellstructures import unit
-import montagbuilder
+from fileparser import unitinbasedatafinder
+from Services import montagbuilder, utils
 
 UNITMOD_TO_SECONDARY_CACHE = {}
 
+
 def _getscaleamt(L, rate):
     return rate * ((L*(L + 1)) / 2)
+
 
 class EventSet(object):
     def __init__(self):
@@ -324,7 +325,7 @@ class EventSet(object):
                         # no montags
                         if unitid < 0:
                             continue
-                        unitobj = unit.get(unitid)
+                        unitobj = unitinbasedatafinder.get(unitid)
 
                         if self.restrictunitstospellpaths > 0:
                             if not (effect.paths & spell.path1):
@@ -367,7 +368,7 @@ class EventSet(object):
                     # If rollSpell enforces a secondary effect (unlikely), use that
                     if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
                         realunitmod = utils.unitmods[secondaryeffect.unitmod]
-                        unitobj = unit.get(unittouse)
+                        unitobj = unitinbasedatafinder.get(unittouse)
                         if not realunitmod.compatibility(unitobj):
                             print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
                             unittouse = None
@@ -429,7 +430,7 @@ class EventSet(object):
                                           f"final power was {finalcreaturepower} and desired was between "
                                           f"{minpower} and {maxpower}")
 
-                                unitobj = unit.get(unittouse)
+                                unitobj = unitinbasedatafinder.get(unittouse)
                                 if not realunitmod.compatibility(unitobj):
                                     continue
 

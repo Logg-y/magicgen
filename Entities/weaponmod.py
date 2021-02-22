@@ -1,7 +1,7 @@
 from copy import copy
 
-from . import utils
-from .utils import breakdownflag
+from Services import utils
+from Services.utils import breakdownflag
 
 # Weaponmods are called only from UnitMods which in turn come from SecondaryEffects
 # which means they can be a LOT simpler, in fact the only thing that really needs checking
