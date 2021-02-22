@@ -16,7 +16,7 @@
 #textrepl "SUBJECT" "Those constructing fortifications"
 
 #moduledescr "This enchantment affects all those directing construction of large fortifications."
-#moduledetails "Every turn, each province makes three checks for a commander building or upgrading a fort, each with a SCALEAMT percent chance of occuring."
+#moduledetails "Every turn, each province makes one check for a commander building or upgrading a fort, each with a SCALEAMT percent chance of occuring."
 
 #modulebasescale 15
 
@@ -27,23 +27,4 @@
 #req_ench ENCHANTID
 #req_rare 15
 #req_targorder 20
-EFFECT
-#end
 
-#newevent
-#rarity 5
-#req_0popok
-#req_ench ENCHANTID
-#req_rare 15
-#req_targorder 20
-EFFECT
-#end
-
-#newevent
-#rarity 5
-#req_0popok
-#req_ench ENCHANTID
-#req_rare 15
-#req_targorder 20
-EFFECT
-#end

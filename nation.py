@@ -33,7 +33,8 @@ class Nation(object):
         weights: Dict[int, int] = {i: int(round(weights[i]))for i in weights}
 
         debugkeys.debuglog(f"Pathweights for nation {self.name} (ID{self.id})\n"
-                           f"Mages:{[i.to_text() for i in self.mages]}\n"                                                                              
+                           f"Mages:{[i.to_text() for i in self.mages]}\n"
+                           f"MageWeights: {mageweights}\n"
                            f"Weights:{[str(utils.pathstotext(i)) + ' '  + str(weights[i]) + ', '  for i in weights]}"
                            , debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         return weights

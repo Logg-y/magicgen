@@ -120,7 +120,7 @@ class NationalMage(object):
         for i in self.pathlevels:
             acc += self.pathlevels[i]
         for random in self.randoms:
-            acc += random.chance * random.link
+            acc += (random.chance/100) * random.link
         return acc
 
     def get_weight_fraction_for_path(self, path: PathFlags) -> float:
@@ -133,7 +133,7 @@ class NationalMage(object):
                            debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
         self.pathweightsinitialised = True
         for i in range(0, 8):
-            self.pathweights[2 ** i] = self.get_average_level_in_path(2 ** i)
+            self.pathweights[2 ** i] = self.get_average_level_in_path(2 ** i) ** 1.5
         debugkeys.debuglog(f"Average levels (default weight) in paths: " +
                            str([utils.pathstotext(i) + " " + str(self.pathweights[i]) for i in self.pathweights]),
                            debugkeys.debugkeys.NATIONALSPELLGENERATIONWEIGHTING)
@@ -158,4 +158,4 @@ class NationalMage(object):
     def __repr__(self):
         if len(self.randoms) > 3:
             return(f"NationalMage({self.id}, paths={self.pathlevels}, randoms={self.randoms[:2]})")
-        return(f"NationalMage({self.id}, paths={self.pathlevels}, randoms={self.randoms}")
+        return(f"NationalMage({self.id}, paths={self.pathlevels}, randoms={self.randoms})")
