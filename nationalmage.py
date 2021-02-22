@@ -32,10 +32,10 @@ class MagePathRandom(object):
 
     def to_text(self) -> str:
         acc = ""
-        if self.chance <= 100:
+        if self.link == 1:
             acc += f"{self.chance}%"
         else:
-            acc += f"{self.chance / 100}x"
+            acc += f"{self.link}x"
         acc += f"{utils.pathstotext(self.paths)}"
         return acc
 
