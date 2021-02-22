@@ -1,7 +1,7 @@
 #newunitmod "Summon Berserking"
 #req berserk == -1
 #req mind < 1
-#req morale < 50
+#req mor < 50
 #req hp > 10
 #req immobile == -1
 #set berserk 3

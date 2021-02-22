@@ -1,3 +1,5 @@
+import debugkeys
+
 class NameCond(object):
     def __init__(self):
         self.param = None
@@ -22,6 +24,7 @@ class NameCond(object):
             self.op2 = self.op2.strip()
             # val2 op2 paramval op1 val1
             # 1 < paramval < 3
+            descrstring = f"test: {val2} ({self.val2}) {self.op2} {paramval} ({self.param}) {self.op} {val} ({self.val})"
 
             if self.op2 == ">":
                 good = val2 > paramval
@@ -34,23 +37,32 @@ class NameCond(object):
             else:
                 raise Exception(f"Unknown operator: {self.op2}")
             if not good:
+                debugkeys.debuglog(descrstring + " -> false", debugkeys.debugkeys.CONDITIONTESTING)
                 return False
 
+        descrstring = f"condition test: {paramval} ({self.param}) {self.op} {val}"
+
+        returnval = None
+
         if self.op == ">":
-            return paramval > val
+            returnval = paramval > val
         elif self.op == "==":
-            return paramval == val
+            returnval = paramval == val
         elif self.op == "<":
-            return paramval < val
+            returnval = paramval < val
         elif self.op == ">=":
-            return paramval >= val
+            returnval = paramval >= val
         elif self.op == "<=":
-            return paramval <= val
+            returnval = paramval <= val
         elif self.op == "!=":
-            return paramval != val
+            returnval = paramval != val
         elif self.op == "&":
-            return bool(paramval & val)
+            returnval = bool(paramval & val)
         elif self.op == "!&":
-            return not bool(paramval & val)
-        else:
+            returnval = not bool(paramval & val)
+
+        if returnval is None:
             raise Exception(f"Unknown operator: {self.op}")
+
+        debugkeys.debuglog(f"{descrstring} -> {returnval}", debugkeys.debugkeys.CONDITIONTESTING)
+        return returnval
