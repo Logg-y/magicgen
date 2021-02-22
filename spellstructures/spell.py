@@ -481,7 +481,7 @@ class SpellEffect(object):
                 print(f"Forced to take offpath {s.path2} due to secondary effect")
 
         # Chance to roll a secondary path (if the secondary effect we picked doesn't demand one)
-        if random.random() * 100 < self.secondarypathchance and s.path2 < 0:
+        if random.random() * 100 < self.secondarypathchance and s.path2 < 0 and forcesecondaryeff is None:
             if self.secondarypaths > 0 and s.path1level >= 2 and self.secondarypaths != s.path1:
                 p = self.secondarypaths
                 if p & s.path1:

@@ -421,7 +421,7 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
 def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generatedeffectsatlevels: Dict[int, List[str]],
                    researchlevel: int) -> SpellEffect:
     availableeffects = list(filter(lambda x: ((primarypath & x.paths) != 0) and  # Matching path
-                                             (x.name in generatedeffectsatlevels[researchlevel]),
+                                             (x.name not in generatedeffectsatlevels[researchlevel]),
                                    # not already created
                                    effectpool.values()))
     if len(availableeffects) == 0:
@@ -442,7 +442,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
         debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
                            debugkeys.debugkeys.NATIONALSPELLGENERATION)
         availableeffectpool = copy.copy(spelleffects)
-        
+
         primarypath: int = _roll_path_for_national_spell(nation)
         debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
                            debugkeys.debugkeys.NATIONALSPELLGENERATION)
