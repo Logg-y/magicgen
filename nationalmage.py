@@ -30,8 +30,18 @@ class MagePathRandom(object):
     def can_random_into_path(self, path: PathFlags) -> bool:
         return path in self.get_possible_paths()
 
+    def to_text(self) -> str:
+        acc = ""
+        if self.link == 1:
+            acc += f"{self.chance}%"
+        else:
+            acc += f"{self.link}x"
+        acc += f"{utils.pathstotext(self.paths)}"
+        return acc
+
     def __repr__(self):
         return f"MagePathRandom(Paths={self.paths}, link={self.link}, chance={self.chance})"
+
 
 class NationalMage(object):
     "Container for a single national mage and its path access"
@@ -86,7 +96,17 @@ class NationalMage(object):
         return self.pathlevels[path]
 
     def to_text(self) -> str:
-        return f"({self.name},{utils.pathstotext(self.pathmask)},{utils.pathstotext(self.get_possible_randoms_pathmask())})"
+        acc = f"{self.name}; "
+        for i in filter(lambda x: self.pathlevels[x] > 0, self.pathlevels):
+            acc += f"{self.pathlevels[i]}{utils.pathstotext(i)}"
+        acc += "; "
+        index = 0
+        for i in self.randoms:
+            if index != 0:
+                acc += ", "
+            index += 1
+            acc += f"{i.to_text()}"
+        return acc
 
     def get_average_level_in_path(self, path: PathFlags) -> float:
         acc: float = float(self.pathlevels[path])

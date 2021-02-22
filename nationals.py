@@ -198,6 +198,9 @@ def read_mods(modstring):
                     elif currentnation is not None:
                         print(f"Attach nation name {name} to {currentnation}")
                         currentnation.name = name
+                    elif currentunit is not None:
+                        print(f"Attach unit name {name} to {currentunit}")
+                        currentunit.name = name
 
                 m = re.match("#era\\W*(.+)", line)
                 if m is not None:

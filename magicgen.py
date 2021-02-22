@@ -219,7 +219,7 @@ def rollspells(**options):
                 spelleffects=s,
                 researchmod=researchmod,
                 options=options,
-                generatedeffectsatlevels=generatedeffectsatlevels,
+                alreadygeneratedeffectsatlevels=generatedeffectsatlevels,
                 generatedspells=l,
                 nationstogeneratefor=nationstogeneratefor,
             )
@@ -418,11 +418,11 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
     return None
 
 
-def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generatedeffectsatlevels: Dict[int, List[str]],
+def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, alreadygeneratedeffectsatlevels: Dict[int, List[str]],
                    researchlevel: int) -> SpellEffect:
     availableeffects = list(filter(lambda x: ((primarypath & x.paths) != 0) and  # Matching path
-                                             (x.name in generatedeffectsatlevels[researchlevel]),
-                                   # not already created
+                                             (x.name not in alreadygeneratedeffectsatlevels[researchlevel]),
+                                   # generic with same effect not already existing in same researchlevel
                                    effectpool.values()))
     if len(availableeffects) == 0:
         raise ValueError("No Spelleffect found available")
@@ -430,19 +430,21 @@ def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generat
     choseneffect: Union[SpellEffect] = availableeffects[random.randrange(0, len(availableeffects))]
     debugkeys.debuglog(f"Selected effect: {choseneffect.name}\n"
                        f"Primary path: {utils.pathstotext(primarypath)}\n"
-                       f"Already generated effects: {generatedeffectsatlevels}\n"
+                       f"Already generated effects: {alreadygeneratedeffectsatlevels}\n"
                        f"Current research level: {researchlevel}", debugkeys.debugkeys.NATIONALSPELLGENERATION)
     return choseneffect
 
 
 def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: Dict[str, SpellEffect],
-                                generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                                alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
                                 targetnumberofnationalspells: int, options: Dict[str, str]):
+    debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
+                       debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    if not nation.has_mages():
+        _writetoconsole(f"Skipping nation {nation.to_text()} because no national mages were found\n")
+        return
+    availableeffectpool = copy.copy(spelleffects)
     while len(nation.nationalspells) < targetnumberofnationalspells:
-        debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
-                           debugkeys.debugkeys.NATIONALSPELLGENERATION)
-        availableeffectpool = copy.copy(spelleffects)
-        
         primarypath: int = _roll_path_for_national_spell(nation)
         debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
                            debugkeys.debugkeys.NATIONALSPELLGENERATION)
@@ -456,18 +458,23 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
         # Select effect for spell
         debugkeys.debuglog(f"Selecting national spell effect\n", debugkeys.debugkeys.NATIONALSPELLGENERATION)
 
-        researchlevel = _select_research_level(researchmod, generatedeffectsatlevels)
+        researchlevel = _select_research_level(researchmod, alreadygeneratedeffectsatlevels)
         try:
             choseneffect = _choose_effect(
                 effectpool=availableeffectpool,
                 primarypath=primarypath,
-                generatedeffectsatlevels=generatedeffectsatlevels,
+                alreadygeneratedeffectsatlevels=alreadygeneratedeffectsatlevels,
                 researchlevel=researchlevel
             )
+            # Only one attempt an effect per nation
+            del availableeffectpool[choseneffect.name]
         except ValueError:
             raise ValueError(
-                f"Couldn't make a national spell for nation {nation.name} (ID:{nation.id}), guaranteed={commander.pathlevels}, "
-                f"randoms={commander.get_possible_randoms_pathmask()}, no effect available")
+                f"Couldn't make a national spell for nation {nation.name} (ID:{nation.id})\n"
+                f"Primarypath={utils.pathstotext(primarypath)}\n"
+                f"Researchlevel={researchlevel}\n "
+                f"Available effects: {availableeffectpool}\n"
+                f"No effect available\n")
 
         debugkeys.debuglog(
             f"Try generating national spell for nation {nation.id} with effect {choseneffect.name}, "
@@ -482,9 +489,6 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
             options=options,
             secondarypathoptions=commander.get_total_possible_paths_mask()
         )
-
-        # Only one national spell per effect
-        del availableeffectpool[choseneffect.name]
         if spell is None:
             debugkeys.debuglog(f"Failed to generate spell for effect {choseneffect.name}\n",
                                debugkeys.debugkeys.NATIONALSPELLGENERATION)
@@ -497,7 +501,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
 
 def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Dict[str, SpellEffect],
                              researchmod: int,
-                             generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                             alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
                              nationstogeneratefor: List[int], options: Dict[str, str]):
     _writetoconsole("Generating national spells...\n")
 
@@ -514,15 +518,11 @@ def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Di
         debugkeys.debuglog(beginningnationlogtext, debugkeys.debugkeys.NATIONALSPELLGENERATION)
         index += 1
 
-        if not nation.has_mages():
-            _writetoconsole(f"Skipping nation {nation.to_text()} because no national mages were found\n")
-            continue
-
         _generate_spells_for_nation(
             nation=nation,
             researchmod=researchmod,
             spelleffects=spelleffects,
-            generatedeffectsatlevels=generatedeffectsatlevels,
+            alreadygeneratedeffectsatlevels=alreadygeneratedeffectsatlevels,
             generatedspells=generatedspells,
             options=options,
             targetnumberofnationalspells=targetnumberofnationalspells

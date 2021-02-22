@@ -2,9 +2,9 @@ from spellstructures import utils
 
 
 class debugkeys:
-    NATIONALSPELLGENERATIONWEIGHTING = False
+    NATIONALSPELLGENERATIONWEIGHTING = True
     NATIONALSPELLGENERATION = True
-    MAGESELECTIONFORPATHFORNATIONALSPELL = False
+    MAGESELECTIONFORPATHFORNATIONALSPELL = True
 
 
 def debuglog(line, *debugareas):
