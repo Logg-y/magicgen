@@ -1,4 +1,6 @@
-import debugkeys
+from Enums.DebugKeys import debugkeys
+from Services.DebugLogger import debuglog
+
 
 class NameCond(object):
     def __init__(self):
@@ -37,7 +39,7 @@ class NameCond(object):
             else:
                 raise Exception(f"Unknown operator: {self.op2}")
             if not good:
-                debugkeys.debuglog(descrstring + " -> false", debugkeys.debugkeys.CONDITIONTESTING)
+                debuglog(descrstring + " -> false", debugkeys.CONDITIONTESTING)
                 return False
 
         descrstring = f"condition test: {paramval} ({self.param}) {self.op} {val}"
@@ -64,5 +66,5 @@ class NameCond(object):
         if returnval is None:
             raise Exception(f"Unknown operator: {self.op}")
 
-        debugkeys.debuglog(f"{descrstring} -> {returnval}", debugkeys.debugkeys.CONDITIONTESTING)
+        debuglog(f"{descrstring} -> {returnval}", debugkeys.CONDITIONTESTING)
         return returnval
