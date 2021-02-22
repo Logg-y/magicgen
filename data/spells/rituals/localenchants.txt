@@ -120,7 +120,7 @@
 #neweffect "Blood Fecundity"
 #copyspell "Blood Fecundity"
 #effect 10082
-#damage 67
+#damage 94
 #spec 0
 #power 4
 #maxpower 4
@@ -141,7 +141,7 @@
 #neweffect "Blood Fecundity nonblood"
 #copyspell "Blood Fecundity"
 #effect 10082
-#damage 67
+#damage 94
 #spec 0
 #power 4
 #maxpower 4

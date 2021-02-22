@@ -65,6 +65,7 @@
 #descr 2 "The caster entreats the birds of a distant province to come to him and share their knowledge of their homeland. The birds are numerous and have scoured every part of their home for any unusual sites of magical power."
 #name 32 "Knowledge of the Dead"
 #descr 32 "The caster communes with dead being in a distant province. The dead share with him their knowledge of the local area, including the locations of any long-forgotten magical sites."
+#details "Reveals all magic sites in the targeted province."
 
 #spelltype 4
 

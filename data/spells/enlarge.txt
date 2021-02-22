@@ -95,7 +95,7 @@
 
 
 #paths 64
-#secondarypaths 1
+#secondarypaths 0
 
 #details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move."
 

@@ -18,8 +18,10 @@
 
 #spelltype 528
 
+#scalefatigueexponent -0.4
+
 #power 1
-#scalerate 1
+#scalerate 2
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16

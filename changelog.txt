@@ -79,6 +79,8 @@ Corrected some rounding issues in montag weight calculations, which would result
 Fixed monster boar spells retaining their national ties
 Fixed a bug that caused the prefix applying code to not apply to spells that share names with vanilla spells
 Fixed a bug that caused generation to enter an infinite loop
+Fixed shatter working on non-inanimates as well
+Fixed blood fecundity applying dome of corruption instead
 
 v2.1.3:
 

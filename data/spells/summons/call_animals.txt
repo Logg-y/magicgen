@@ -21,7 +21,7 @@
 #spelltype 528
 
 #scalerate 1.4
-#skipchance 97
+#skipchance 95
 #end
 
 -- This is the rather more boring summon local animals effect
