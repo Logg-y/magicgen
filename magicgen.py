@@ -438,10 +438,10 @@ def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, generat
 def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: Dict[str, SpellEffect],
                                 generatedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
                                 targetnumberofnationalspells: int, options: Dict[str, str]):
+    debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
+                       debugkeys.debugkeys.NATIONALSPELLGENERATION)
+    availableeffectpool = copy.copy(spelleffects)
     while len(nation.nationalspells) < targetnumberofnationalspells:
-        debugkeys.debuglog(f"Generating spells for nation: {nation.to_text()}",
-                           debugkeys.debugkeys.NATIONALSPELLGENERATION)
-        availableeffectpool = copy.copy(spelleffects)
 
         primarypath: int = _roll_path_for_national_spell(nation)
         debugkeys.debuglog(f"Attempting to generate for primary path {utils.pathstotext(primarypath)}\n",
@@ -466,8 +466,11 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
             )
         except ValueError:
             raise ValueError(
-                f"Couldn't make a national spell for nation {nation.name} (ID:{nation.id}), guaranteed={commander.pathlevels}, "
-                f"randoms={commander.get_possible_randoms_pathmask()}, no effect available")
+                f"Couldn't make a national spell for nation {nation.name} (ID:{nation.id})\n"
+                f"Primarypath={utils.pathstotext(primarypath)}\n"
+                f"Researchlevel={researchlevel}\n "
+                f"Available effects: {generatedeffectsatlevels}\n"
+                f"No effect available\n")
 
         debugkeys.debuglog(
             f"Try generating national spell for nation {nation.id} with effect {choseneffect.name}, "
