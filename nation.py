@@ -68,7 +68,7 @@ class Nation(object):
             if k != 0:
                 acc += ", "
             k += 1
-            acc += i.to_text()
+            acc += "(" + i.to_text() + ")"
         acc += "]"
         return acc
 
