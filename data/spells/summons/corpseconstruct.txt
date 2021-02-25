@@ -10,9 +10,9 @@
 #sound 43
 #schools 8
 
-#paths 34
+#paths 32
 #secondarypaths 34
-#secondarypathchance 90
+#secondarypathchance 100
 
 
 #name 2 "Create NAMEPREFIX Corpse %Construct%"

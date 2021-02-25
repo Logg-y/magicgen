@@ -9,6 +9,9 @@ from Enums.SpellTypes import SpellTypes
 from Services import utils, naming
 
 
+# Prevent generation of more than this many effects in a single path that add to permanent slot usage
+PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH = 2
+
 class SpellEffect(object):
     def __init__(self, fp):
         self.fp = fp
@@ -70,6 +73,7 @@ class SpellEffect(object):
         self.noadditionalnextspells = 0
         self.basescale = 0
         self.secondaryeffectskipchance = 0
+        self.permanentslotusage = 0
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -94,6 +98,14 @@ class SpellEffect(object):
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
 		"""
+        if setparams is None:
+            isnational = False
+        else:
+            isnational = "restricted" in setparams
+
+        if isnational and self.permanentslotusage:
+            print(f"Fail {self.name} as this is a national generation and the effect wants to fill permanent slots")
+            return None
 
         if isnextspell:
             print(f"Starting nextspell: {self.name}")
@@ -105,12 +117,12 @@ class SpellEffect(object):
         # bypasses allowskipchance
         if self.effect < 10000 and forcepath == 128 and not isnextspell:
             # Gimme less combat blood spells
-            if random.random() < 0.92:
-                print(f"Failed as 92% to have less blood combat spells")
+            if random.random() < 0.85:
+                print(f"Failed as 85% to have less blood combat spells")
                 return None
             # Even less likely if they have other primary paths
-            if self.paths != 128 and random.random() < 0.75:
-                print(f"Failed as 75% to fail other path combat spells")
+            if self.paths != 128 and random.random() < 0.95:
+                print(f"Failed as 95% to fail other path combat spells")
                 return None
 
         if self.unique and self.generated > 0:
@@ -296,17 +308,36 @@ class SpellEffect(object):
             print(f"Failed to generate {self.name} at {researchlevel}: blood guard against infinite loop")
             return None
 
-        while 1:
-            s.path1 = utils._selectFlag(PathFlags, self.paths)
-            if s.path1 == 128 and not allowblood:
-                continue
-            if random.random() * 100 <= self.pathskipchances.get(s.path1, 0):
-                continue
-            break
+        possibleillwinterpaths = utils.breakdownflag(511 & self.paths)
+        random.shuffle(possibleillwinterpaths)
+        print(f"Possible path with illwinter ids are {possibleillwinterpaths}")
+
+        if forcepath is None:
+            while 1:
+                if len(possibleillwinterpaths) == 0:
+                    print(f"Failed to generate: no valid paths")
+                    return None
+                s.path1 = 2**possibleillwinterpaths.pop(0)
+                if s.path1 == 128 and not allowblood:
+                    continue
+                if random.random() * 100 <= self.pathskipchances.get(s.path1, 0) and len(possibleillwinterpaths) > 0:
+                    possibleillwinterpaths.append(s.path1)
+                    continue
+                # Effects taking permanent slots need to be limited in number to avoid mechanic abuse
+                if self.permanentslotusage \
+                        and utils.permanent_slot_spells_by_path.get(s.path1, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
+                    print(f"Path {s.path1} not allowed due to permanent slot taking spell limit")
+                    continue
+                print(f"Accepting path {s.path1}")
+                break
 
         if forcepath is not None:
             if allowskipchance and random.random() * 100 <= self.pathskipchances.get(forcepath, 0):
                 print(f"Forced path was {forcepath}, failed this pathskipchance")
+                return None
+            if self.permanentslotusage \
+                    and utils.permanent_slot_spells_by_path.get(forcepath, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
+                print(f"Attempted to forcepath into a path that has too many permanent spell effects")
                 return None
             print(f"Forced path to {forcepath}")
             s.path1 = forcepath
@@ -701,6 +732,7 @@ class SpellEffect(object):
         finalglobalscaling = int(self.basescale + scaleamt)
         s.details = s.details.replace("SCALEAMT", str(finalglobalscaling))
 
+        s.details = s.details.replace("EFFECTNUMBER_5XX", str((s.effect % 1000) - 499))
         s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
 
         if s.aoe == 666:
@@ -851,5 +883,10 @@ class SpellEffect(object):
         s.details = s.details.strip()
         if s.details == "":
             s.details = None
+
+        # Add to permenant slot taking spell counts if appropriate
+        if self.permanentslotusage:
+            utils.permanent_slot_spells_by_path[s.path1] = utils.permanent_slot_spells_by_path.get(s.path1, 0) + 1
+            print(f"Path {s.path1}: num permanent slots now {utils.permanent_slot_spells_by_path.get(s.path1, 0)}")
 
         return s

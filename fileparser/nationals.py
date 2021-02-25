@@ -27,10 +27,40 @@ def _read_vanilla_unit_nation_map_file(path:str, nationalunits):
         reader = csv.DictReader(datacsv, delimiter="\t")
         for line in reader:
             nationid = int(line["nation_number"])
-            unit = int(line["monster_number"])
+            unitid = int(line["monster_number"])
             if nationid not in nationalunits:
                 nationalunits[nationid] = []
-            nationalunits[nationid].append(unit)
+            nationalunits[nationid].append(unitid)
+
+def _read_vanilla_cap_only_site_recruits(nationalunits):
+    startsites_to_nations: Dict[int, List[int]] = {}
+    with open("data/attributes_by_nation.csv") as datacsv:
+        reader = csv.DictReader(datacsv, delimiter="\t")
+        for line in reader:
+            # attrib 52 is starting site
+            attrib_int = int(line["attribute"])
+            if attrib_int == 52:
+                siteid = int(line["raw_value"])
+                nationid = int(line["nation_number"])
+                if siteid not in startsites_to_nations:
+                    startsites_to_nations[siteid] = []
+                startsites_to_nations[siteid].append(nationid)
+
+    with open("data/MagicSites.csv") as datacsv:
+        reader = csv.DictReader(datacsv, delimiter="\t")
+        for line in reader:
+            siteid = int(line["id"])
+            if siteid in startsites_to_nations:
+                for n in range(1, 6):
+                    key = f"hcom{n}"
+                    if len(line[key]) == 0:
+                        break
+                    if siteid not in startsites_to_nations:
+                        continue
+                    unitid = int(line[key])
+                    for nationid in startsites_to_nations[siteid]:
+                        nationalunits[nationid].append(unitid)
+
 
 
 def read_vanilla():
@@ -38,6 +68,8 @@ def read_vanilla():
     _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/fort_leader_types_by_nation.csv", nationalunits)
     _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/coast_leader_types_by_nation.csv", nationalunits)
     _read_vanilla_unit_nation_map_file("data/VanillaLeaderMaps/nonfort_leader_types_by_nation.csv", nationalunits)
+
+    _read_vanilla_cap_only_site_recruits(nationalunits)
 
     # Get their info
     unitdata = {}

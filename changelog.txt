@@ -3,7 +3,7 @@ TODO
 unique summons
 a flag that makes spells always cost gems under all circumstances for magic explodes style generations
 check mind hunt to see if I can add that back
-
+try ritual soulless animation as it looks like it should work
 
 test a bit of everything, esp modular events
 
@@ -19,6 +19,8 @@ Added a ranged swallowing spell for nature
 Added a global that transforms sitesearching friendly commanders inside dominion
 A spell that permanently shrinks targets
 Added various variations on farstrike that go with other paths
+Added various (but uncommon) effects that permanently add some kind of ability to the caster
+Added a soulless-raising ritual
 
 NEW SUMMON MODIFICATIONS:
 
@@ -53,6 +55,7 @@ Modular globals should now be split more evenly across research schools rather t
 Added an explicit battlefield wide version of most buffs. This is to make full battlefield buffs be generated more frequently again. This also meant I could reserve certain sound effects for field wide versions (such as Luck)
 Changed national spell generation logic to better fit national mages (thanks to the person who submitted nearly all the code for this who I believe still wants to remain anonymous)
 Opened up many modular global effects to other paths. This is for the sake of variety!
+National mages for vanilla nation now includes specific terrain and cap only recruits
 
 DETAILS (yellow text) IMPROVEMENTS:
 
@@ -81,6 +84,8 @@ Fixed a bug that caused the prefix applying code to not apply to spells that sha
 Fixed a bug that caused generation to enter an infinite loop
 Fixed shatter working on non-inanimates as well
 Fixed blood fecundity applying dome of corruption instead
+Fixed in battle corpse construct summons generating without a path that provides undead leadership
+Fixed glamoured unit modifier's research penalty being +1 research (allowing more powerful creatures) instead of -1 (weaker)
 
 v2.1.3:
 

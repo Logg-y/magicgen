@@ -106,7 +106,10 @@ class Spell(object):
         out += f"#nreff {self.nreff}\n"
         out += f"#precision {self.precision}\n"
         out += '#descr "{}"{}'.format(self.descr.strip(), "\n")
-        out += '#path 0 {}{}'.format(int(math.log(self.path1, 2)), "\n")
+        if self.path1 > 0:
+            out += '#path 0 {}{}'.format(int(math.log(self.path1, 2)), "\n")
+        else:
+            out += '#path 0 {}{}'.format(int(self.path1), "\n")
         out += f"#researchlevel {self.researchlevel}\n"
         out += f"#pathlevel 0 {self.path1level}\n"
         if self.path2 != -1 and self.path2level > -1:

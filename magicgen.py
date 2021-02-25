@@ -515,7 +515,7 @@ def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Di
     for nationid, nation in nationals.nations.items():
         if nationid not in nationstogeneratefor:
             continue
-        beginningnationlogtext = f"Progress: Beginning nation {index} ({nation.name}) of {nationcount}...\n"
+        beginningnationlogtext = f"Progress: Beginning nation {index} of {nationcount}...\n"
         if index % 20 == 0:
             _writetoconsole(beginningnationlogtext)
         DebugLogger.debuglog(beginningnationlogtext, debugkeys.NATIONALSPELLGENERATION)

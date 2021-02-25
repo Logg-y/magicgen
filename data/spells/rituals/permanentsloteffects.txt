@@ -1,0 +1,618 @@
+-- s	UPGRADE_ETHEREAL_TO_TRUE=260,
+-- e	PETRIFY_ATTACKERS=104,
+-- nb	wish strength bonus  291
+-- sb	ALL_PLANE_RETURNING=435,
+-- feb	gold maker 452
+-- 
+-- any	FAST_CASTING=613,
+-- f	INSPIRATIONAL=368,
+-- n	beastmaster 369
+-- n	HEALER_AUTO=354,
+-- db	%_MORE_LIKELY_TO_CAUSE_AFFLICTIONS=301,
+-- d	REANIMATE_ON_KILL=514,
+-- eb	REINVIGORATION=117,
+-- s	ASTRAL_FETTERS=563,
+-- nb	RECUPERATION=568,
+-- d	??SPECIAL_PASSIVE_REANIMATOR=466,
+-- a	STORM_IMMUNITY=175,
+-- aw	GIFT_OF_WATER_BREATHING=111,
+-- e	siege bonus 125
+-- e	MASON=594,
+-- s 	DISBELIEVE=295 at large value
+
+
+#neweffect "Permanent effect true ethereal"
+#effect 10524
+#damage 260
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 3
+#fatiguecost 2000
+#schools 18
+#unique 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Otherwordly Incorporeality"
+#descr 16 "This ritual permanently displaces part of the caster's body to the Astral plane. When he is made ethereal by any means, this displacement makes him harder to hit with any magical effect in addition to the usual protections conferred by etherealness."
+#details "Permanently grants 25% True Ethereal (has a 25% chance to negate magical damage), which is activated only when the unit possesses regular etherealness as well. Multiple castings of this spell are not cumulative."
+
+#skipchance 97
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect petrify attackers"
+#effect 10500
+#damage 104
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#schools 18
+#unique 1
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Gaze of the Gorgon"
+#descr 8 "This ritual permanently grants the caster the ability the to petrify those who attempt to attack him in melee."
+#details "Those attacking in melee have a 75% chance to be struck by a MRN petrification effect. Multiple castings of this spell are not cumulative."
+
+#skipchance 97
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect wish strength bonus"
+#effect 10501
+#damage 291
+#spec 8388608
+#power 7
+#maxpower 12
+#nreff 1
+#pathlevel 2
+#fatiguecost 1000
+#scalefatiguemult 900
+#schools 18
+#unique 1
+
+--nb
+#paths 192
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Strength of Distilled Life"
+#name 128 "Pact of Physical Might"
+#descr 64 "By distilling and consuming the power of magical gems, the nature mage permanently grants themselves immense physical power. They will become stronger, much harder to kill, and slightly more proficient at fighting."
+#descr 128 "$BLOOD_INTRO$, the caster permanently gains immense physical power. They will become stronger, much harder to kill, and slightly more proficient at fighting."
+#details "Applies EFFECTNUMBER_5XX points of the Wish strength buff to the caster. Each point grants +5 max HP, +2 strength, +0.5 attack and defence skills, and +0.5 precision. Fractional bonuses are rounded down. Multiple castings of this spell are not cumulative."
+
+#skipchance 92
+#permanentslotusage 1
+#scalerate 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect all plane returning"
+#effect 10569
+#damage 435
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 18
+#unique 1
+
+#paths 144
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Astral Beacon"
+#name 128 "Pact of Returning"
+#descr 16 "The caster lights a personal astral beacon in the current plane. Should he find himself sent to another plane of existence, he will very rapidly be able to seek the beacon and escape. Unfortunately, this does not help him return to a safe location."
+#descr 128 "$BLOOD_INTRO$, the caster gains experience of how to traverse other planes. Should he find himself sent to another plane of existence, he will be able ot use this experience to very rapidly return to his home plane. Unfortunately, this does not help him return to a safe location, and the personal nature of the experience gained renders it unable to be transferred to others."
+#details "Permanently grants the caster a flat +70% chance per turn to escape other planes. Multiple castings of this spell are not cumulative."
+
+#skipchance 97
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect gold maker"
+#effect 10509
+#damage 452
+#spec 8388608
+#power 4
+#maxpower 8
+#nreff 1
+#pathlevel 2
+#fatiguecost 800
+#scalefatiguemult 70
+#schools 18
+#unique 1
+
+--feb
+#paths 137
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Glittering Alchemy"
+#name 8 "Glittering Alchemy"
+#name 128 "Pact of Gold"
+#descr 1 "By experimenting with magical gems, the caster learns how to convert modest amounts of base metal into gold. This is a slow and complex process however and only a certain amount may be produced each month."
+#descr 8 "By experimenting with magical gems, the caster learns how to convert modest amounts of base metal into gold. This is a slow and complex process however and only a certain amount may be produced each month."
+#descr 128 "$BLOOD_INTRO$, the caster gains understanding that allows him of converting base metal into gold. This is a slow and complex process however and only a certain amount may be produced each month."
+#details "The caster permanently produces +EFFECTNUMBER_5XX gold per turn. Multiple castings of this spell are not cumulative."
+
+#skipchance 92
+#permanentslotusage 1
+#scalerate 5
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect fast casting"
+#effect 10509
+#damage 613
+#spec 8388608
+#power 4
+#maxpower 8
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#scalefatiguemult 30
+#schools 18
+#unique 1
+
+#paths 255
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Flames of Haste"
+#name 2 "Swiftness of Wind"
+#name 4 "Torrential Casting"
+#name 8 "Earthen Competence"
+#name 16 "Otherworldly Haste"
+#name 32 "Deathly Haste"
+#name 64 "Natural Haste"
+#name 128 "Pact of Haste"
+#descr 1 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 2 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 4 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 8 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 16 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 32 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 64 "Through the consumption of magical gems, the caster becomes faster at weaving magic and casting spells."
+#descr 128 "$BLOOD_INTRO$, the caster becomes faster at weaving magic and casting spells."
+#details "The caster permanently casts combat spells EFFECTNUMBER_5XX percent faster. Multiple castings of this spell are not cumulative."
+
+#scalerate 5
+#skipchance 97
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+
+#neweffect "Permanent effect inspirational"
+#effect 10500
+#damage 368
+#spec 8388608
+#power 4
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#scalefatiguemult 300
+#schools 18
+#unique 1
+
+#paths 1
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Inspirational Aura"
+#descr 1 "Through the consumption of magical gems, the caster permanently radiates an aura of inspiration that causes troops under his command to be less likely to rout."
+#details "The caster permanently gains inspirational +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
+
+#scalerate 0.5
+#skipchance 97
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect beastmaster"
+#effect 10500
+#damage 369
+#spec 8388608
+#power 4
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#scalefatiguemult 300
+#schools 18
+#unique 1
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Primal Connection"
+#descr 64 "Through the consumption of magical gems, the caster permanently gains a connection to animals of all kinds. He can inspire them to become braver and less likely to rout in battle."
+#details "The caster permanently gains beastmaster +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
+
+#scalerate 0.6
+#skipchance 97
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect autohealer"
+#effect 10500
+#damage 354
+#spec 8388608
+#power 7
+#maxpower 10
+#nreff 1
+#pathlevel 3
+#fatiguecost 1800
+#scalefatiguemult 1500
+#schools 18
+#unique 1
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Healing Lore"
+#descr 64 "Through the consumption of magical gems, the caster permanently gains an understanding of how to heal the wounded with magic."
+#details "The caster permanently gains healer EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
+
+#scalerate 1
+#skipchance 97
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect afflictionchanceboost"
+#effect 10599
+#damage 301
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 200
+#scalefatiguemult 100
+#schools 18
+#unique 1
+
+#paths 160
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Art of Cruelty"
+#name 128 "Pact of Cruelty"
+#descr 32 "Through the consumption of magical gems, the caster permanently gains an understanding of how to cruelly inflict more afflictions upon foes he wounds."
+#descr 128 "$BLOOD_INTRO$, the caster permanently gains an understanding of how to cruelly inflict more afflictions upon foes he wounds."
+#details "Creatures wounded by the caster are twice as likely to suffer an affliction. Multiple castings of this spell are not cumulative."
+
+#scalerate 1
+#skipchance 97
+#permanentslotusage 1
+
+-- ritual
+#spelltype 4
+#end
+
+#neweffect "Permanent effect reanimate on kill"
+#effect 10599
+#damage 514
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 800
+#schools 18
+#unique 1
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Raise the Slain"
+#descr 32 "Through the consumption of magical gems, the caster permanently gains an understanding of how to raise living beings he kills as soulless."
+#details "Creatures killed by the caster become reanimated as soulless. This is a permanent effect and multiple castings of this spell are not cumulative."
+
+#scalerate 0
+#skipchance 90
+#permanentslotusage 1
+
+-- ritual
+#spelltype 4
+#end
+
+#neweffect "Permanent effect reinvigoration"
+#effect 10504
+#damage 117
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1
+#pathlevel 2
+#fatiguecost 1000
+#scalefatiguemult 180
+#schools 18
+#unique 1
+
+#paths 136
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Earthen Reinvigoration"
+#name 128 "Pact of Reinvigoration"
+#descr 8 "Through the consumption of magical gems, the caster permanently gains a connection to the earth that constantly reinvigorates him."
+#descr 128 "$BLOOD_INTRO$, the caster becomes tireless and very resistant to fatigue."
+#details "The caster permanently gains +EFFECTNUMBER_5XX reinvigoration. Multiple castings of this spell are not cumulative."
+
+#scalerate 1
+#skipchance 95
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect astral fetters"
+#effect 10500
+#damage 563
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 1800
+#schools 18
+#unique 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Astral Snare"
+#descr 16 "Through the consumption of magical gems, the caster permanently projects an astral barrier around him. This prevents most creatures around him from using any means of teleportation by warping space."
+#details "The caster permanently gains the Astral Fetters ability. This prevents all Astral teleportation effects in battle, but has no effect on creatures with Void Sanity. Multiple castings of this spell are not cumulative."
+
+#scalerate 0
+#skipchance 80
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect recuperation"
+#effect 10500
+#damage 568
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 1200
+#schools 18
+#unique 1
+
+#paths 192
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 64 "Regenerative Body"
+#name 128 "Pact of Healing"
+#descr 64 "Through the consumption of magical gems, the caster's body gains an unbelievable ability to heal otherwise permanent afflictions and ailments. This ability does however fail to function if the caster is old."
+#descr 128 "$BLOOD_INTRO$, the caster's body gains an unbelievable ability to heal otherwise permanent afflictions and ailments. This ability does however fail to function if the caster is old."
+#details "The caster permanently gains Recuperation."
+
+#scalerate 0
+#skipchance 92
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+
+#neweffect "Permanent effect passive reanimator"
+#effect 10509
+#damage 466
+#spec 8388608
+#power 4
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 500
+#scalefatiguemult 40
+#schools 18
+#unique 1
+
+#paths 32
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "Aura of Reanimation"
+#descr 32 "Through the consumption of magical gems, the caster permanently gains the ability to passively reanimated corpses in his current province as soulless."
+#details "Each turn, the caster passively reanimates up to EFFECTNUMBER_5XX corpses in his current province. Multiple castings of this spell are not cumulative."
+
+#scalerate 5
+#skipchance 92
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect storm immunity"
+#effect 10500
+#damage 175
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 18
+#unique 1
+
+#paths 2
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Storm Attunement"
+#descr 2 "Through the consumption of magical gems, the caster permanently gains an understanding of storms and their turbulent effects on air flow."
+#details "The caster permanently gains Storm Immunity, allowing flight in storms, removing the precision penalty, and preventing the double fatigue cost usually incurred by flying in rain or snow."
+
+#scalerate 0
+#skipchance 92
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect gift of water breathing"
+#effect 10509
+#damage 111
+#spec 8388608
+#power 3
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#scalefatiguemult 200
+#schools 18
+#unique 1
+
+#paths 6
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 2 "Air of Sustaining"
+#name 4 "Sustaining Air"
+#descr 2 "Through the consumption of magical gems, the caster gains the ability to support a limited number of air breathing creatures underwater."
+#descr 4 "Through the consumption of magical gems, the caster gains the ability to support a limited number of air breathing creatures underwater."
+#details "The caster pemanently gains Gift of Water Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
+
+#scalerate 5
+#skipchance 92
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+
+#neweffect "Permanent effect siege bonus"
+#effect 10519
+#damage 125
+#spec 8388608
+#power 3
+#maxpower 8
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+#scalefatiguemult 20
+#schools 18
+#unique 1
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Secrets of Shattering Earth"
+#descr 8 "Through the consumption of magical gems, the caster gains the ability to greatly damage stone structures in his vicinity."
+#details "The caster pemanently gains +EFFECTNUMBER_5XX siege bonus. Multiple castings of this spell are not cumulative."
+
+#scalerate 5
+#skipchance 92
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Permanent effect mason"
+#effect 10500
+#damage 594
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 6
+#fatiguecost 5000
+#schools 18
+#unique 1
+
+#paths 8
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Architectural Inspiration"
+#descr 8 "Through the consumption of magical gems, the caster permanently gains great insights into construction that allow him to build bigger and mightier forts than would otherwise be possible."
+#details "The caster permanently becomes a Mason."
+
+#scalerate 0
+#skipchance 97
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
+#neweffect "Permanent effect disbelieve"
+#effect 10599
+#damage 295
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 21
+#pathlevel 3
+#fatiguecost 1500
+#schools 18
+#unique 1
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 16 "Dispel Illusions"
+#descr 16 "Through the consumption of magical gems, the caster's presence permanently projects a magical power that attempts to unravel all illusions."
+#details "The caster permanently gains Disbelieve 100, causing them to very rapidly hit neary squares with a MRN effect that does 999 damage to illusory creatures. Multiple casts of this spell are not cumulative."
+
+#scalerate 0
+#skipchance 90
+#permanentslotusage 1
+
+#spelltype 4
+#end
+
