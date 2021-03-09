@@ -22,7 +22,7 @@
 #name 32 "Summon NAMEPREFIX Mound %King%"
 #descr 32 "The caster summons ARTICLE %Mound King% to fight for him on the battlefield. The %Mound King% %is% ARTICLE_N undead general, but will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 5
 #spelltype 528
 
 #scalerate 1

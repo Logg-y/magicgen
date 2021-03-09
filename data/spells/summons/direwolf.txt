@@ -97,7 +97,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatiguemult 20
 
 #name 64 "Summon NAMEPREFIX Dire %Wolf%"
 #descr 64 "The caster summons ARTICLE dire %wolf% to attack a distant province. Dire wolves are large and mighty wolves."

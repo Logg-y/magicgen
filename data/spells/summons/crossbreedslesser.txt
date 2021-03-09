@@ -70,5 +70,5 @@
 #spelltype 20
 
 #scalerate 2.0
-#scalefatiguemult 5
+#scalefatiguemult 4
 #end

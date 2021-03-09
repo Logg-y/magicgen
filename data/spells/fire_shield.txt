@@ -59,6 +59,7 @@
 #sound 16
 #range 10
 #fatiguecost 200
+#unique 1
 
 
 #paths 129

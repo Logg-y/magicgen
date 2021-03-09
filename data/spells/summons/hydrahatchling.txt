@@ -98,7 +98,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 100
+#scalefatiguemult 40
 
 #name 64 "Send NAMEPREFIX Hydra %Hatchling%"
 #descr 64 "The caster summons ARTICLE hydra %hatchling% to attack a distant province. Hydra hatchlings are small, weak and young, but are still surrounded by a cloud of noxious vapour."

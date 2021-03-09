@@ -80,6 +80,7 @@
 #explspr 10002
 #sound 52
 #fatiguecost 300
+#unique 1
 
 #paths 150
 #secondarypaths 6

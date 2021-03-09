@@ -6,7 +6,7 @@
 #power 3
 #precision -100
 #nreff 2
-#pathlevel 3
+#pathlevel 2
 #chassisvalue 45
 #range 6
 #fatiguecost 100
@@ -29,7 +29,7 @@
 #descr 16 "The caster teleports ARTICLE_N %Illusionist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Illusionist% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE_N %Illusionist% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Illusionist% will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

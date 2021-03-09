@@ -6,7 +6,7 @@
 #power 5
 #precision -100
 #nreff 1
-#pathlevel 5
+#pathlevel 4
 #chassisvalue 50
 #range 6
 #fatiguecost 160
@@ -28,7 +28,7 @@
 #descr 32 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 #descr 64 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 50
 #spelltype 528
 
 #scalerate 1

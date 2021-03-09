@@ -56,6 +56,7 @@
 #range 15
 #fatiguecost 100
 #maxpower 5
+#unique 1
 
 
 -- air, earth
@@ -113,6 +114,7 @@
 #damage 199
 #spec 12599296
 #schools 18
+#unique 1
 
 -- buff, battlefield allowed, scale aoe
 #spelltype 41

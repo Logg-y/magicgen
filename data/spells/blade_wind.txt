@@ -3,13 +3,13 @@
 #damage 1012
 #spec 1099513724928
 #aoe 0
-#power 2
-#maxpower 4
+#power 3
+#maxpower 5
 #precision 2
 #nreff 4010
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 30
 #flightspr 304
 #sound 42
 #aicastmod -40
@@ -40,13 +40,13 @@
 -- AP, slash, iron
 #spec 1099578736704
 #aoe 0
-#power 4
-#maxpower 8
+#power 5
+#maxpower 9
 #precision 2
-#nreff 4010
+#nreff 2001
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 40
 #flightspr 304
 #sound 42
 #aicastmod -40

@@ -98,7 +98,7 @@
 #secondarypaths 2
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 100
+#scalefatiguemult 25
 
 #name 2 "Send NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon% to attack a hostile commander in a distant province. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."

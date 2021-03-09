@@ -6,7 +6,7 @@
 #power 7
 #precision -100
 #nreff 1
-#pathlevel 6
+#pathlevel 5
 #chassisvalue 130
 #range 6
 #fatiguecost 200
@@ -22,7 +22,7 @@
 #name 1 "Summon NAMEPREFIX Fire %Dragon%"
 #descr 1 "The caster summons ARTICLE %Fire Dragon% to fight for him on the battlefield. The %Fire Dragon% is physically mighty and very skilled in fire magic, but will leave once the battle is over."
 
-#scalefatiguemult 100
+#scalefatiguemult 60
 #spelltype 528
 
 #scalerate 1

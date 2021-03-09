@@ -64,7 +64,7 @@
 #schools 16
 
 -- #scalefatigueexponent 0.4
-#scalefatiguemult 3
+#scalefatiguemult 10
 
 #skipchance 99.6
 

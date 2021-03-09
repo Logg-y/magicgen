@@ -52,7 +52,7 @@
 #provrange 4
 #damage 760
 #spec 8388608
-#power 5
+#power 7
 #maxpower 9
 #nreff 1
 #pathlevel 4
@@ -72,5 +72,5 @@
 #scalerate 1
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 1000
+#scalefatiguemult 800
 #end

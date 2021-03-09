@@ -595,7 +595,7 @@
 #spec 8388608
 #power 7
 #maxpower 7
-#nreff 21
+#nreff 1
 #pathlevel 3
 #fatiguecost 1500
 #schools 18
@@ -614,5 +614,47 @@
 #permanentslotusage 1
 
 #spelltype 4
+#end
+
+#neweffect "Permanent effect extra arms"
+#effect 10500
+#damage 361
+#spec 8388608
+#power 5
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 1100
+#scalefatiguemult 500
+#schools 32
+
+-- esdnb
+#paths 248
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Artificial %Arm%"
+#descr 8 "The caster forges magical ARTICLE_N %arm% and permanently grafts it to himself. This allows him full use of the additional arm to carry magical items."
+
+#name 16 "Telekinesis"
+#descr 16 "The caster consumes gems in a ritual to permanently gain limited telekinetic powers. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+
+#name 32 "Undead %Arm%"
+#descr 32 "The caster magically forms ARTICLE undead %arm%, and then attaches %it% to his body permanently. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+
+#name 64 "Grow %Arm%"
+#descr 64 "The caster magically grows ARTICLE_N %arm% from his body. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+
+#name 128 "Graft %Arm%"
+#descr 128 "The caster magically removes ARTICLE_N arms from sacrificial slaves and grafts %it% permanently to his body. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+
+#details "The caster permanently gains EFFECTNUMBER_5XX arms, to a maximum of 6 arms total. Multiple castings of this spell are not cumulative."
+
+#scalerate 1
+#skipchance 85
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
 #end
 

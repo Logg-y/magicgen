@@ -35,7 +35,7 @@
 -- buff
 #spelltype 1
 
-#power -2
+#power -1
 #effect 4000
 
 #givecloudsfx 1
@@ -47,7 +47,7 @@
 #req effect < 1000
 #req range > 0
 
-#skipchance 10
+#skipchance 30
 
 #req nonscalingaoe < 650
 -- not ritual

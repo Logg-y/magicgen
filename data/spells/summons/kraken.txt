@@ -43,7 +43,7 @@
 #descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
 
 #scalefatigueexponent 0.7
-#scalefatiguemult 130
+#scalefatiguemult 100
 
 #spelltype 20
 
@@ -99,7 +99,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.7
-#scalefatiguemult 180
+#scalefatiguemult 80
 
 #scalerate 1
 #end

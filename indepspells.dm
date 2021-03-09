@@ -1,4 +1,4 @@
---2763690543
+--59546179
 -- This file (indepspells.dm) is transcluded into generated mod files when magicgen clears vanilla generic spells.
 -- The above is the CRC of the BaseU.csv file used to generate this file - this is saved as generating this from scratch takes several minutes
 #selectmonster 41

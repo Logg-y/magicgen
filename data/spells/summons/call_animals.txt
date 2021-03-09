@@ -1,14 +1,14 @@
 #neweffect "Call Animals"
 -- Deliberately making this high research as randomness could be unfair if given a HoS-scale version
 
-#effect 9043
+#effect 43
 #damage -5
 #spec 0
-#power 7
+#power 4
 #precision -2
 #nreff 3
-#pathlevel 6
-#fatiguecost 400
+#pathlevel 3
+#fatiguecost 100
 #sound 44
 #schools 1
 
@@ -20,8 +20,9 @@
 
 #spelltype 528
 
-#scalerate 1.4
-#skipchance 95
+#scalerate 1.6
+#scalefatiguemult 18
+#skipchance 90
 #end
 
 -- This is the rather more boring summon local animals effect
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 92
 
 #name 64 "Summon Animals"
 #descr 64 "The caster summons animals from the local area to fight for him. The types of animals that respond to the call depends on the local terrain."

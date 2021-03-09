@@ -5,7 +5,7 @@
 #spec 0
 #power 4
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 100
 #range 6
@@ -23,7 +23,7 @@
 #name 2 "Call NAMEPREFIX %Draconian Chief%"
 #descr 2 "The caster summons ARTICLE %Draconian Chief% to join him in battle. The %Draconian Chief% will leave once the battle is over."
 
-#scalefatiguemult 80
+#scalefatiguemult 35
 #spelltype 528
 
 #scalerate 1

@@ -98,7 +98,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatiguemult 40
 
 #name 64 "Send NAMEPREFIX red cattle"
 #descr 64 "The caster summons ARTICLE red cattle to attack a distant land. Red cattle are large bulls touched by the demon lord Geryon, making them resistant to fire and magic."

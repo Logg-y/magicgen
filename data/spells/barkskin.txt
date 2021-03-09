@@ -67,6 +67,7 @@
 #sound 31
 #range 10
 #fatiguecost 100
+#unique 1
 
 
 -- fire, water, nature, death

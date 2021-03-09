@@ -6,7 +6,7 @@
 #power 3
 #precision -100
 #nreff 1
-#pathlevel 3
+#pathlevel 2
 #chassisvalue 60
 #range 6
 #fatiguecost 60
@@ -25,7 +25,7 @@
 #descr 32 "The caster summons ARTICLE %Unfrozen Lord% to fight for him on the battlefield. The %Unfrozen Lord% %is% ARTICLE powerful undead general surrounded by a freezing wind, but will leave once the battle is over."
 #descr 4 "The caster summons ARTICLE %Unfrozen Lord% to fight for him on the battlefield. The %Unfrozen Lord% %is% ARTICLE powerful undead general surrounded by a freezing wind, but will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

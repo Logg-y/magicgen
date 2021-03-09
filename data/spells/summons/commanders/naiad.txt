@@ -6,7 +6,7 @@
 #power 6
 #precision -100
 #nreff 1
-#pathlevel 5
+#pathlevel 4
 #chassisvalue 5
 #range 6
 #fatiguecost 160

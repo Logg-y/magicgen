@@ -6,10 +6,10 @@
 #power 7
 #precision -100
 #nreff 1
-#pathlevel 5
+#pathlevel 4
 #chassisvalue 60
 #range 6
-#fatiguecost 160
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1

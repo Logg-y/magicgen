@@ -68,6 +68,7 @@
 #sound 31
 #range 10
 #fatiguecost 200
+#unique 1
 
 
 -- water, earth, death

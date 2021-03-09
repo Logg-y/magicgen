@@ -6,7 +6,7 @@
 #power 5
 #precision -100
 #nreff 1
-#pathlevel 5
+#pathlevel 4
 #chassisvalue 20
 #range 6
 #fatiguecost 100
@@ -25,7 +25,7 @@
 #descr 2 "The caster summons ARTICLE %Yeti Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Yeti Shamans are potent air and water mages and physically powerful, but they will leave after the battle."
 #descr 4 "The caster summons ARTICLE %Yeti Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Yeti Shamans are potent air and water mages and physically powerful, but they will leave after the battle."
 
-#scalefatiguemult 40
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

@@ -98,7 +98,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 35
+#scalefatiguemult 20
 
 #name 64 "Send NAMEPREFIX %Tiger%"
 #descr 64 "The caster summons ARTICLE %tiger% to attack a distant province. Tigers attack with their teeth and claws."

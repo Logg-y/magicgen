@@ -16,65 +16,67 @@
 #end
 
 
-#newmodifier "Edge of Field Summon linger 4"
+-- these effects propagate down communions, can't have them
 
--- both evo and buff
-#spelltype 0
-
-#skipchance 30
--- not battlesummoned commander, this would be mages (yikes)
-#req effect == 1
-
--- This gives you 16x as much summoned stuff as you'd normally get
-#set effect 4043
-
-#pathlevel 0
-#power -5
-
-#mult fatiguecost 3.1
-
-
-#descr "The summoned creatures gradually appear at the edges of the battlefield over a short period of time. In total, 12 times the listed number of creatures appear."
-
-#end
-
-#newmodifier "Edge of Field Summon linger 6"
-
--- both evo and buff
-#spelltype 0
-
-#skipchance 30
--- not battlesummoned commander, this would be mages (yikes)
-#req effect == 1
-
--- This gives you 18x as much summoned stuff as you'd normally get
-#set effect 6043
-
-#pathlevel 0
-#power -6
-#mult fatiguecost 4.6
-
-#descr "The summoned creatures gradually appear at the edges of the battlefield over a moderate period of time. In total, 18 times the listed number of creatures appear."
-
-#end
-
-#newmodifier "Edge of Field Summon linger 9"
-
--- both evo and buff
-#spelltype 0
-
-#skipchance 30
--- not battlesummoned commander, this would be mages (yikes)
-#req effect == 1
-
--- This gives you 36x as much summoned stuff as you'd normally get
-#set effect 9043
-
-#pathlevel 0
-#power -7
-
-#mult fatiguecost 6.1
-
-#descr "The summoned creatures gradually appear at the edges of the battlefield over a long period of time. In total, 27 times the listed number of creatures appear."
-
-#end
+-- #newmodifier "Edge of Field Summon linger 4"
+-- 
+-- -- both evo and buff
+-- #spelltype 0
+-- 
+-- #skipchance 30
+-- -- not battlesummoned commander, this would be mages (yikes)
+-- #req effect == 1
+-- 
+-- -- This gives you 16x as much summoned stuff as you'd normally get
+-- #set effect 4043
+-- 
+-- #pathlevel 0
+-- #power -5
+-- 
+-- #mult fatiguecost 3.1
+-- 
+-- 
+-- #descr "The summoned creatures gradually appear at the edges of the battlefield over a short period of time. In total, 12 times the listed number of creatures appear."
+-- 
+-- #end
+-- 
+-- #newmodifier "Edge of Field Summon linger 6"
+-- 
+-- -- both evo and buff
+-- #spelltype 0
+-- 
+-- #skipchance 30
+-- -- not battlesummoned commander, this would be mages (yikes)
+-- #req effect == 1
+-- 
+-- -- This gives you 18x as much summoned stuff as you'd normally get
+-- #set effect 6043
+-- 
+-- #pathlevel 0
+-- #power -6
+-- #mult fatiguecost 4.6
+-- 
+-- #descr "The summoned creatures gradually appear at the edges of the battlefield over a moderate period of time. In total, 18 times the listed number of creatures appear."
+-- 
+-- #end
+-- 
+-- #newmodifier "Edge of Field Summon linger 9"
+-- 
+-- -- both evo and buff
+-- #spelltype 0
+-- 
+-- #skipchance 30
+-- -- not battlesummoned commander, this would be mages (yikes)
+-- #req effect == 1
+-- 
+-- -- This gives you 36x as much summoned stuff as you'd normally get
+-- #set effect 9043
+-- 
+-- #pathlevel 0
+-- #power -7
+-- 
+-- #mult fatiguecost 6.1
+-- 
+-- #descr "The summoned creatures gradually appear at the edges of the battlefield over a long period of time. In total, 27 times the listed number of creatures appear."
+-- 
+-- #end

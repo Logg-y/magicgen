@@ -97,7 +97,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.7
-#scalefatiguemult 80
+#scalefatiguemult 50
 
 #scalerate 2.0
 #end

@@ -96,7 +96,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 75
+#scalefatiguemult 27
 
 #name 64 "Send NAMEPREFIX Killer Mantis"
 #descr 64 "Summons ARTICLE killer mantis to attack a distant land. The killer mantis is an exceptionally large insect."

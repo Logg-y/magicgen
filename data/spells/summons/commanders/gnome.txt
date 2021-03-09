@@ -6,7 +6,7 @@
 #power 4
 #precision -100
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #chassisvalue 20
 #range 6
 #fatiguecost 120
@@ -26,7 +26,7 @@
 #descr 8 "The earth mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
 #descr 64 "The nature mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 35
 #spelltype 528
 
 #scalerate 1

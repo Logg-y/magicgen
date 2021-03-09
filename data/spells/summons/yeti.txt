@@ -97,7 +97,7 @@
 #secondarypaths 4
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 50
+#scalefatiguemult 40
 
 #name 4 "Send NAMEPREFIX %Yeti%"
 #descr 4 "The caster summons ARTICLE %yeti% to attack a distant province. Yetis are large humanoids which are surrounded by icy winds."

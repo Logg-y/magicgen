@@ -101,7 +101,7 @@
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 450
+#scalefatiguemult 320
 
 #name 128 "Send Storm %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to attack a distant province. Storm demons are ethereal and unleash blasts of lightning."

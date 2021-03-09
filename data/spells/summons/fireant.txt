@@ -96,7 +96,7 @@
 #secondarypaths 1
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 45
+#scalefatiguemult 40
 
 #name 1 "Send NAMEPREFIX Fire Ants"
 #descr 1 "Summons ARTICLE fire %ant% to attack a distant province. Fire ants are extremely large ants with a poisonous stinger."

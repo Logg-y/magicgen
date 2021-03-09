@@ -23,7 +23,7 @@
 #name 32 "Call NAMEPREFIX Damned %Boatswain%"
 #descr 32 "The death mage reanimates ARTICLE %Damned Boatswain% to join him in battle. The %Damned Boatswain% will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

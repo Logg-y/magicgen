@@ -1,14 +1,13 @@
 #neweffect "Call Dungeon Creatures"
--- Deliberately making this high research as randomness could be unfair if given a HoS-scale version
 
-#effect 3043
+#effect 43
 #damage -14
 #spec 0
-#power 7
+#power 4
 #precision -2
-#nreff 3
-#pathlevel 5
-#fatiguecost 400
+#nreff 2
+#pathlevel 3
+#fatiguecost 100
 #sound 43
 #schools 1
 
@@ -17,10 +16,10 @@
 
 #name 8 "Unearth Dungeon"
 #descr 8 "The caster seeks out and opens nearby dungeons, calling the monsters within to his location. The monsters are not happy to be coerced into battle in this way and will return to their homes once the battle is over."
-#details "A total of 9 times the listed number of creatures are summoned at the edge of the battlefield."
 
 #spelltype 528
 
 #scalerate 1.4
-#skipchance 95
+#scalefatiguemult 30
+#skipchance 90
 #end

@@ -98,7 +98,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 140
+#scalefatiguemult 50
 
 #name 64 "Send NAMEPREFIX Were%wolf%"
 #descr 64 "The caster summons ARTICLE were%wolf% to attack a distant land. Werewolves regenerate and are very difficult to harm with mundane weaponry."

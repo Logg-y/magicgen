@@ -97,7 +97,7 @@
 #secondarypaths 4
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 50
+#scalefatiguemult 25
 
 #name 64 "Send NAMEPREFIX Large %Lobster%"
 #descr 64 "The caster summons ARTICLE large %lobster% to attack a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."

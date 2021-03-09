@@ -98,7 +98,7 @@
 #secondarypaths 2
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatiguemult 20
 
 #name 2 "Send NAMEPREFIX Simargl"
 #descr 2 "The caster summons ARTICLE simargl to attack a distant province. The simargl is a small winged dog."

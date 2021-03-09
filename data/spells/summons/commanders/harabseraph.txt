@@ -6,7 +6,7 @@
 #power 4
 #precision -100
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #chassisvalue 40
 #range 6
 #fatiguecost 100
@@ -25,7 +25,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 #descr 2 "The air mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 
-#scalefatiguemult 50
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1

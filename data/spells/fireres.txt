@@ -57,6 +57,7 @@
 #range 15
 #fatiguecost 100
 #maxpower 5
+#unique 1
 
 
 -- fire, blood, water
@@ -133,6 +134,7 @@
 #range 15
 #fatiguecost 200
 #maxpower 9
+#unique 1
 
 
 -- fire, blood, water

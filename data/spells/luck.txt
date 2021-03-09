@@ -59,6 +59,7 @@
 #range 10
 #fatiguecost 400
 #maxpower 8
+#unique 1
 
 
 -- astral, blood

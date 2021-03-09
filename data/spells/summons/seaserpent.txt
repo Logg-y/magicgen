@@ -98,5 +98,5 @@
 #scalerate 1
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 100
+#scalefatiguemult 40
 #end

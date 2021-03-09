@@ -3,9 +3,41 @@ TODO
 unique summons
 a flag that makes spells always cost gems under all circumstances for magic explodes style generations
 check mind hunt to see if I can add that back
-try ritual soulless animation as it looks like it should work
+make dynamic scaling
 
-test a bit of everything, esp modular events
+mrn buffs
+investigate leprosy with diff damage values for other afflictions
+
+
+v2.1.5:
+
+
+ADDITIONS:
+
+Added a spell that permanently gives the caster extra arms
+
+DETAILS:
+
+Yellow text improvements to solar brilliance (the damage portion affects demons too)
+Added yellow text to blood vortex
+
+OTHER CHANGES:
+
+Default setting for construction spell multiplier up to 0.45 from 0.33. This means that with the default 14 spells per level, 6 will generate per level instead of 4.
+
+BALANCE:
+
+AP blade wind +1 research, number of projectiles reduced from 10++++ to 1++ (to iron darts level)
+Temper Armour base path reduced from 2 to 1
+Cloudified buffs -2 research to -1 research, slightly less common
+Reduced scaling costs for many remote attack spells that became prohibitively expensive in high level versions
+Slightly reduced scaling costs for many in-battle mage summons that got really expensive in high level veersions
+Increased cost of stalker assassination from 3 to 6 gems, it got missed when I did all the others
+Unearth dungeon and call animals are now considerably easier to cast but produce less creatures.
+
+FIXES:
+
+Removed all instance of lingering battlefield edge summons as they would propagate down communions (thanks Red Rob for telling me this).
 
 v2.1.4:
 

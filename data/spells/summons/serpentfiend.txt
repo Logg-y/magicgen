@@ -93,7 +93,7 @@
 #secondarypaths 128
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 300
+#scalefatiguemult 140
 
 #name 128 "Send Serpent %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of serpent fiends to attack a distant province."

@@ -20,6 +20,8 @@
 
 #spelltype 528
 
+#scalefatiguemult 5
+
 #scalerate 0.7
 #end
 
@@ -97,5 +99,5 @@
 #scalerate 3.0
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 50
+#scalefatiguemult 20
 #end

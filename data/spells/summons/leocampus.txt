@@ -96,7 +96,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatiguemult 20
 
 #name 64 "Send NAMEPREFIX %Leocampus%"
 #descr 64 "The caster summons ARTICLE %leocampus% to attack a distant province. The leocampus is an underwater lion, attacking with bites and claws."

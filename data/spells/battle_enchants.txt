@@ -616,7 +616,7 @@
 
 #name 16 "Solar Brilliance"
 #descr 16 "The sun starts to shine with a brilliance that destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
-#details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield must make an easy MR check or become blinded. Additionally, undead in a different 5% of the battlefield must make an easy MR check or suffer 5 AP magical damage."
+#details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield must make an easy MR check or become blinded. Additionally, undead and demons in a different 5% of the battlefield must make an easy MR check or suffer 5 AP magical damage."
 #end
 
 #neweffect "Mists of Deception"

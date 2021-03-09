@@ -97,7 +97,7 @@
 #descr 64 "The caster calls ARTICLE %spirit% out of nearby trees in a distant land. The spirits immediately attack the province, and then return to their trees if they survive the encounter. Woodland spirits are stunningly beautiful ethereal beings that regenerate wounds at an incredible rate."
 
 #spelltype 20
-#scalefatiguemult 50
+#scalefatiguemult 25
 
 #scalerate 2.0
 #end

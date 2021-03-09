@@ -97,7 +97,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 30
+#scalefatiguemult 10
 
 #name 64 "Send NAMEPREFIX %Lioness%"
 #descr 64 "The caster summons ARTICLE %lioness% to attack a distant province. These lions are large and ferocious."

@@ -97,7 +97,7 @@
 #secondarypathchance 90
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 110
+#scalefatiguemult 60
 
 #name 128 "Send NAMEPREFIX Fiery Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of fiery imps to attack a distant province.  These particular imps cannot fly but are surrounded by a shield of flames."

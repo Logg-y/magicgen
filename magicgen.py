@@ -26,7 +26,7 @@ spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.4"
+ver = "2.1.5"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -106,7 +106,7 @@ def rollspells(**options):
                 schoolname = SchoolFlags(school).name
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
-                    spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.33))
+                    spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.45))
                 for research in range(0 + researchmod, 10 + researchmod):
                     if school == 8 and research in [2, 4, 6, 8]:
                         # construction crafting levels don't get spells
@@ -603,7 +603,7 @@ def main():
                default=14))
     opts.append(Option("-constructionfactor",
                        help="Construction will get only this proportion of the normal number of spells. This is intended to be less than 1.0.",
-                       type=float, default=0.33))
+                       type=float, default=0.45))
     opts.append(Option("-modlist",
                        help="A list of .dm file paths, separated by commas. Files in the list will be scanned and nations defined in them will get national spells.",
                        type=str, default=""))

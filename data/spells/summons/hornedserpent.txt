@@ -94,7 +94,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 100
+#scalefatiguemult 30
 
 #name 64 "Send Horned Serpents"
 #descr 64 "The caster summons horned serpents and directs them to attack a distant province."

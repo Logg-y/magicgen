@@ -29,7 +29,7 @@
 #descr 16 "The caster teleports ARTICLE %Lore Master% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Lore Master% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Lore Master% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Lore Master% will leave once the battle is over."
 
-#scalefatiguemult 40
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

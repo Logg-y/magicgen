@@ -106,7 +106,7 @@
 #secondarypathchance 70
 
 --#scalefatigueexponent 0.5
-#scalefatiguemult 15
+#scalefatiguemult 7
 
 #name 64 "Send NAMEPREFIX Winged Monkies"
 #name 16 "Send NAMEPREFIX Winged Monkies"

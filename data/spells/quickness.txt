@@ -58,6 +58,7 @@
 #range 10
 #fatiguecost 300
 #maxpower 8
+#unique 1
 
 
 -- water, astral

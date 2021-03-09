@@ -103,7 +103,7 @@
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 110
+#scalefatiguemult 60
 
 #name 2 "Send NAMEPREFIX %Amphiptere%"
 #descr 2 "The caster summons ARTICLE_N %amphiptere% to attack a distant land. The amphiptere is a winged serpent which can spit poison."

@@ -65,7 +65,7 @@
 #skipchance 99
 #nogeodst 2052
 
-#paths 2 
+#paths 2
 #secondarypaths 2 
 
 #details "The elementals are size 6."
@@ -103,5 +103,5 @@
 #scalerate 1.0
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 400
+#scalefatiguemult 110
 #end

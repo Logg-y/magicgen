@@ -6,7 +6,7 @@
 #power 5
 #precision -100
 #nreff 1
-#pathlevel 3
+#pathlevel 2
 #chassisvalue 25
 #range 6
 #fatiguecost 80
@@ -22,7 +22,7 @@
 #name 4 "Summon NAMEPREFIX Bishop Fish"
 #descr 4 "The caster summons ARTICLE Bishop Fish to fight for him on the battlefield. The Bishop Fish is a humanoid fish with great priestly power, but will leave once the battle is over."
 
-#scalefatiguemult 40
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

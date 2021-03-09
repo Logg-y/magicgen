@@ -5,8 +5,8 @@
 #spec 8388608
 #power 3
 #precision -100
-#nreff 3
-#pathlevel 2
+#nreff 1000
+#pathlevel 3
 #chassisvalue 33
 #range 6
 #fatiguecost 100
@@ -23,7 +23,7 @@
 #name 16 "Create NAMEPREFIX Telestic %Animates%"
 #descr 16 "The caster rapidly creates ARTICLE Telestic %Animate% to assist on the battlefield. Telestic animates are immobile statues of wood imbued with great priestly powers, which may render them ineffective against many opponents."
 
-#scalefatiguemult 20
+#scalefatiguemult 15
 #spelltype 528
 
 #scalerate 1

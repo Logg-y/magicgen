@@ -19,6 +19,7 @@
 #range 0
 #fatiguecost 20
 #maxpower 5
+#scalefatigueexponent -0.15
 
 
 -- fire, blood
@@ -57,6 +58,7 @@
 #range 0
 #fatiguecost 20
 #maxpower 5
+#scalefatigueexponent -0.15
 
 
 -- water, blood
@@ -95,6 +97,7 @@
 #range 0
 #fatiguecost 20
 #maxpower 4
+#scalefatigueexponent -0.15
 
 
 #paths 2
@@ -130,6 +133,7 @@
 #range 0
 #fatiguecost 20
 #maxpower 5
+#scalefatigueexponent -0.15
 
 
 #paths 64
@@ -163,6 +167,7 @@
 #range 0
 #fatiguecost 20
 #maxpower 5
+#scalefatigueexponent -0.15
 
 
 #paths 8
@@ -195,7 +200,7 @@
 #explspr 10190
 #sound 31
 #range 0
-#fatiguecost 100
+#fatiguecost 150
 
 
 #paths 16

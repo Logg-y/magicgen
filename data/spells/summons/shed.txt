@@ -101,7 +101,7 @@
 #secondarypathchance 95
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 500
+#scalefatiguemult 400
 
 #name 128 "Send NAMEPREFIX %Shed%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to attack a distant province. Shedim can unleash blasts of lightning."

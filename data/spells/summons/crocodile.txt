@@ -97,7 +97,7 @@
 #secondarypaths 64
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatiguemult 28
 
 #name 64 "Send NAMEPREFIX %Crocodile%"
 #descr 64 "The caster summons ARTICLE %crocodile% to attack a distant province. The crocodile is a large but slow cold-blooded predator."

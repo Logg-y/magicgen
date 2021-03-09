@@ -6,7 +6,7 @@
 #power 7
 #precision -100
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #chassisvalue 60
 #range 6
 #fatiguecost 130
@@ -22,7 +22,7 @@
 #name 64 "Summon NAMEPREFIX Ivy %King%"
 #descr 64 "The caster summons ARTICLE %Ivy King% to fight for him on the battlefield. The Ivy King is a large being of vines that is skilled in nature magic, but will leave once the battle is over."
 
-#scalefatiguemult 50
+#scalefatiguemult 35
 #spelltype 528
 
 #scalerate 1

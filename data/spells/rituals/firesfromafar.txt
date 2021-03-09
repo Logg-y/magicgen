@@ -15,9 +15,9 @@
 #secondarypathchance 0
 #skipchance 50
 
-#name 1 "Fires from Afar"
+#name 1 "Barrage of Embers"
 #descr 1 "The mage fires a row of flame bolts towards an enemy army camp located in a province far away. The more units present in the camp, the greater the chance of hitting a target. The spell can also be used to harass a besieging force or the defenders of a castle. A scout or a scrying spell will be required to see whether the spell was successful or not."
-#details "There are EFFECTIVENREFF bolts, each of which has at least a 20% chance of hitting someone. Those who are hit suffer 7 points of armor-piercing fire damage, plus one per level of fire magic. The chance to be hit is higher if there are more than 10 eligible targets in the province, and will be 100% if there are more than 60 such targets. The caster will not get a report on the results of the attack without a spy in the province."
+#details "There are EFFECTIVENREFF bolts. The chance of each bolt hitting is 20% or (25 * number of units in the targeted province)/number of bolts, whichever is higher. Those who are hit suffer 7 points of armor-piercing fire damage, plus one per level of fire magic. The caster will not get a report on the results of the attack without a spy in the province."
 
 #spelltype 20
 #scalerate 2
@@ -44,7 +44,7 @@
 
 #name 1 "Fires from Afar"
 #descr 1 "The mage fires a row of flame bolts towards an enemy army camp located in a province far away. The more units present in the camp, the greater the chance of hitting a target. The spell can also be used to harass a besieging force or the defenders of a castle. A scout or a scrying spell will be required to see whether the spell was successful or not."
-#details "There are 15 bolts, each of which has at least a 20% chance of hitting someone. Those who are hit suffer DAMAGE points of armor-piercing fire damage. The chance to be hit is higher if there are more than 10 eligible targets in the province, and will be 100% if there are more than 60 such targets. The caster will not get a report on the results of the attack without a spy in the province."
+#details "There are 15 bolts. Those who are hit suffer DAMAGE points of armor-piercing fire damage. The chance of each bolt hitting is 20% or (25 * number of units in the targeted province)/number of bolts, whichever is higher. The caster will not get a report on the results of the attack without a spy in the province."
 
 #spelltype 68
 #scalerate 1

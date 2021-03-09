@@ -57,6 +57,7 @@
 #range 15
 #fatiguecost 100
 #maxpower 5
+#unique 1
 
 
 -- death, nature, blood
@@ -135,7 +136,7 @@
 #range 15
 #fatiguecost 200
 #maxpower 9
-
+#unique 1
 
 -- air, earth
 #paths 224

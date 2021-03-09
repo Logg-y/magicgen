@@ -13,7 +13,7 @@
 
 #aoe 1
 #power 1
-#pathlevel 2
+#pathlevel 1
 #maxpower 6
 #explspr 10193
 #sound 31
@@ -57,7 +57,8 @@
 #explspr 10193
 #sound 31
 #range 10
-#fatiguecost 200
+#fatiguecost 100
+#unique 1
 
 
 -- erf

@@ -22,7 +22,7 @@
 #name 32 "Summon NAMEPREFIX %Shura%"
 #descr 32 "The caster summons ARTICLE %Shura% to fight for him on the battlefield. The %Shura% %is% ARTICLE powerful undead general surrounded by a freezing wind, but will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1

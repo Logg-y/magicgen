@@ -23,7 +23,7 @@
 #name 64 "Call NAMEPREFIX Worm %Mage%"
 #descr 64 "The caster summons ARTICLE Worm %Mage% onto the battlefield and uses magic to convince PRONOUN to fight for him. Worm mages are potent nature mages and constantly shed flying insects, but they will leave after the battle."
 
-#scalefatiguemult 85
+#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 1

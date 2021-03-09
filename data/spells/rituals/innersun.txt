@@ -18,7 +18,7 @@
 #name 16 "Inner Sun"
 #descr 1 "The caster fills himself with stellar power, causing him to explode when killed. The explosion harms nearby demonic and undead beings."
 #descr 16 "The caster fills himself with stellar power, causing him to explode when killed. The explosion harms nearby demonic and undead beings."
-#details "Explodes on death with area of effect 35. Undead or demons caught in the explosion take 15 AN magical damge, which can be negated by magic resistant."
+#details "Explodes on death with area of effect 35. Undead or demons caught in the explosion take 15 AN magical damge, which can be negated by magic resistance."
 
 #spelltype 4
 

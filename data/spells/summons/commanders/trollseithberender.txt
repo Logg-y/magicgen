@@ -6,10 +6,10 @@
 #power 7
 #precision -100
 #nreff 1
-#pathlevel 6
+#pathlevel 4
 #chassisvalue 40
 #range 6
-#fatiguecost 150
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
@@ -26,7 +26,7 @@
 #descr 32 "The caster summons ARTICLE %Troll Seithberender% to fight for him on the battlefield. The %Troll Seithberender% is large, strong, and skilled in astral and death magic, but will leave once the battle is over."
 #descr 64 "The caster summons ARTICLE %Troll Seithberender% to fight for him on the battlefield. The %Troll Seithberender% is large, strong, and skilled in astral and death magic, but will leave once the battle is over."
 
-#scalefatiguemult 70
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1

@@ -99,7 +99,7 @@
 #secondarypaths 2
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatiguemult 22
 
 #name 2 "Send NAMEPREFIX Great %Hawk%"
 #descr 2 "The caster sends ARTICLE great %hawk% to attack a distant province. The great hawk is large and attacks enemies with its beak and talons."

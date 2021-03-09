@@ -5,7 +5,7 @@
 #spec 8388608
 #power 5
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #range 6
 #fatiguecost 100
@@ -25,7 +25,7 @@
 #name 32 "Soul Trap"
 #descr 32 "The caster traps the %soul% of ARTICLE %hero% from the realm of the dead and pulls PRONOUN into the battle. Souls trapped by this spell could have belonged to either a warrior or a mage, but will return to the realm of the dead after the battle."
 
-#scalefatiguemult 40
+#scalefatiguemult 15
 #spelltype 528
 
 #scalerate 1
