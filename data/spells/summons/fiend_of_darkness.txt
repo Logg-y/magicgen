@@ -14,7 +14,7 @@
 #secondarypaths 128
 #scalefatiguemult 120
 
-#name 128 "Summon %Fiend% of Darkness"
+#name 128 "Summon NAMEPREFIX %Fiend% of Darkness"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They fly and become significantly stronger under cover of darkness."
 
 #spelltype 528
@@ -39,7 +39,7 @@
 #scalefatigueexponent 0.7
 #scalefatiguemult 350
 
-#name 128 "Bind %Fiend% of Darkness"
+#name 128 "Bind NAMEPREFIX %Fiend% of Darkness"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They are stealthy, fly, and become significantly stronger under cover of darkness."
 
 #spelltype 20
@@ -65,7 +65,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Fiend Ambush"
+#name 128 "NAMEPREFIX Fiend Ambush"
 #descr 128 "$BLOOD_INTRO$, the caster binds a Fiend of Darkness and sends it to a distant province to ambush an enemy commander. The victim will not know who cast this spell on them."
 
 #spelltype 4
@@ -93,7 +93,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Send Fiends of Darkness"
+#name 128 "Send NAMEPREFIX Fiends of Darkness"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss and sends it to a distant province. They are stealthy, fly, and become significantly stronger under cover of darkness."
 
 #spelltype 20

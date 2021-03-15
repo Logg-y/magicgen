@@ -25,7 +25,7 @@
 #descr 1 "The caster alters the trajectory of ARTICLE %comet% from above the world, sending the %comet% toward his enemies. Being hit by ARTICLE %comet% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
 #descr 8 "The caster alters the trajectory of ARTICLE %rock% from above the world, sending the %rock% toward his enemies. Being hit by ARTICLE %rock% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
 #descr 16 "The caster alters the trajectory of ARTICLE %meteor% from above the world, sending the %meteor% toward his enemies. Being hit by ARTICLE %meteor% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
-
+#details "In addition to usual inaccuracy applied by precision, meteors will strike anywhere in a 3x3 box centred on where the caster intended."
 #spelltype 18
 
 #scalerate 0.7

@@ -15,7 +15,7 @@
 
 #skipchance 94
 
-#name 128 "Summon %Devil%"
+#name 128 "Summon NAMEPREFIX %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE %devil% from Inferno to aid him in battle."
 
 #spelltype 528
@@ -37,7 +37,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Bind %Devil%"
+#name 128 "Bind NAMEPREFIX %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster ARTICLE %devil% from Inferno to aid him in battle."
 
 #spelltype 20
@@ -67,7 +67,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Devil Attack"
+#name 128 "NAMEPREFIX Devil Attack"
 #descr 128 "$BLOOD_INTRO$, the caster binds a devil to ambush an enemy commander."
 
 #spelltype 4
@@ -95,7 +95,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 250
 
-#name 128 "Send %Devil%"
+#name 128 "Send NAMEPREFIX %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of devils to attack a distant province."
 
 #spelltype 20

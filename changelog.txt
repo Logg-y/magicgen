@@ -7,7 +7,9 @@ make dynamic scaling
 
 mrn buffs
 investigate leprosy with diff damage values for other afflictions
-
+pd boosting global effect
+pd lowering modular global
+morale boosting spells
 
 v2.1.5:
 

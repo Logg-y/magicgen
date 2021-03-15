@@ -15,7 +15,7 @@
 
 #skipchance 97
 
-#name 128 "Summon Serpent %Fiend%"
+#name 128 "Summon NAMEPREFIX Serpent %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE serpent %fiend% from the Abyss to aid him in battle."
 
 #spelltype 528
@@ -37,7 +37,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Bind Serpent %Fiend%"
+#name 128 "Bind NAMEPREFIX Serpent %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE serpent %fiend% from the Abyss to aid him in battle."
 
 #spelltype 20
@@ -67,7 +67,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Serpent Fiend Attack"
+#name 128 "NAMEPREFIX Serpent Fiend Attack"
 #descr 128 "$BLOOD_INTRO$, the caster binds a serpent fiend to ambush an enemy commander."
 
 #spelltype 4
@@ -95,7 +95,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 140
 
-#name 128 "Send Serpent %Fiend%"
+#name 128 "Send NAMEPREFIX Serpent %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of serpent fiends to attack a distant province."
 
 #spelltype 20

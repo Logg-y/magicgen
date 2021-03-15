@@ -98,7 +98,7 @@
 #paths 64
 #secondarypaths 0
 
-#details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move."
+#details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move. Creatures that are size 4 or larger are only enlarged one stage."
 
 #namecond aoe < 1 64 "Titanic Enlargement"
 

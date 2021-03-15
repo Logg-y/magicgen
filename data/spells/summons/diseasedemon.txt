@@ -68,7 +68,6 @@
 #secondarypaths 128
 
 #name 128 "NAMEPREFIX Disease Demon Attack"
-#name 128 "Infernal NAMEPREFIX Disease"
 #descr 128 "$BLOOD_INTRO$, the caster binds a disease demon to ambush an enemy commander. The disease demon is a powerful combatant, and even if it survives there is a high chance the target will suffer from a disease."
 
 #spelltype 4

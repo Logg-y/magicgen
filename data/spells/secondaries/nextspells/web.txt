@@ -11,7 +11,7 @@
 
 #power 1
 #pathlevel 1
-#explspr 10304
+#explspr 10336
 #sound 114
 #fatiguecost 20
 #range 5025

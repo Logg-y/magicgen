@@ -66,7 +66,7 @@
 #paths 128
 #secondarypaths 64
 
-#name 128 "Vine Attack"
+#name 128 "NAMEPREFIX Dark Vines Attack"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight ambush an enemy commander."
 
 #spelltype 4
@@ -94,7 +94,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 310
 
-#name 128 "Send Vines"
+#name 128 "Send NAMEPREFIX Dark Vines"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines attack a distant province."
 
 #spelltype 20

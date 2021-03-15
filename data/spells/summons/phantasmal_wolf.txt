@@ -16,7 +16,7 @@
 
 #skipchance 97
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Wolf$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Wolf%"
 #descr 2 "Summons ARTICLE phantasmal %Wolf% to fight for the caster. These wolves are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 528
@@ -38,7 +38,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Wolf$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Wolf%"
 #descr 2 "Summons ARTICLE phantasmal %wolf% to fight for the caster. These wolves are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 20

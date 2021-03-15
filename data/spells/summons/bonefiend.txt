@@ -16,7 +16,7 @@
 
 #skipchance 94
 
-#name 128 "Summon Bone %Fiend%"
+#name 128 "Summon NAMEPREFIX Bone %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE bone %fiend% from the underworld to aid him in battle."
 
 #spelltype 528
@@ -41,7 +41,7 @@
 #secondarypaths 32
 #secondarypathchance 80
 
-#name 128 "Bind Bone %Fiend%"
+#name 128 "Bind NAMEPREFIX Bone %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster ARTICLE bone %fiend% from the underworld to aid him in battle."
 
 #spelltype 20
@@ -72,7 +72,7 @@
 #secondarypaths 32
 #secondarypathchance 80
 
-#name 128 "Bone Fiend Attack"
+#name 128 "NAMEPREFIX Bone Fiend Attack"
 #descr 128 "$BLOOD_INTRO$, the caster binds a bone fiend to ambush an enemy commander."
 
 #spelltype 4
@@ -101,7 +101,7 @@
 #scalefatiguemult 200
 #secondarypathchance 80
 
-#name 128 "Send Bone Fiends"
+#name 128 "Send NAMEPREFIX Bone Fiends"
 #descr 128 "$BLOOD_INTRO$, the caster binds a group of bone fiends and sends them to attack a distant province.."
 
 #spelltype 20

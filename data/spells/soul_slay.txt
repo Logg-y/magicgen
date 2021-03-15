@@ -2,7 +2,7 @@
 #copyspell "Soul Slay"
 #effect 2
 #damage 999
-#spec 8540160
+#spec 8540416
 #schools 32
 #aicastmod 10
 
@@ -39,7 +39,7 @@
 #copyspell "Soul Slay"
 #effect 2
 #damage 999
-#spec 25575552
+#spec 25575808
 #schools 32
 
 -- evo, battlefield allowed, scale aoe

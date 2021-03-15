@@ -83,7 +83,7 @@
 #effect 10112
 #damage 9999
 -- MR negates, AN, internal damage
-#spec 36028797018968192
+#spec 36028797018968448
 #schools -1
 #paths -1
 #name 32 "Underworld Spirit Attack"

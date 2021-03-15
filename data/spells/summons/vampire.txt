@@ -12,12 +12,12 @@
 #secondarypaths 32
 #secondarypathchance 95
 
-#name 128 "Summon %Vampire%"
+#name 128 "Summon NAMEPREFIX %Vampire%"
 #descr 128 "$BLOOD_INTRO$, the caster curses ARTICLE %human% with vampirism. They become immortal and highly resistant to normal weapons."
 
 #spelltype 20
 
-#skipchance 91
+#skipchance 85
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 820

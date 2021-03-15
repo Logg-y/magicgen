@@ -16,7 +16,7 @@
 
 #skipchance 94
 
-#name 128 "Summon Frost %Fiend%"
+#name 128 "Summon NAMEPREFIX Frost %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE frost %fiend% from Kokytos to aid him in battle."
 
 #spelltype 528
@@ -39,7 +39,7 @@
 #secondarypaths 4
 #secondarypathchance 80
 
-#name 128 "Summon Frost %Fiend%"
+#name 128 "Summon NAMEPREFIX Frost %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE frost %fiend% from Kokytos to aid him in battle."
 
 #spelltype 20
@@ -70,7 +70,7 @@
 #secondarypaths 4
 #secondarypathchance 80
 
-#name 128 "Frost Fiend Attack"
+#name 128 "NAMEPREFIX Frost Fiend Attack"
 #descr 128 "$BLOOD_INTRO$, the caster binds an frost fiend to ambush an enemy commander."
 
 #spelltype 4
@@ -99,7 +99,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 250
 
-#name 128 "Send Frost %Fiend%"
+#name 128 "Send NAMEPREFIX Frost %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of frost fiends to attack a distant province."
 
 #spelltype 20

@@ -13,7 +13,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Summon Spine %Devil%"
+#name 128 "Summon NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss. They have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 528
@@ -39,7 +39,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 140
 
-#name 128 "Summon Spine %Devil%"
+#name 128 "Summon NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss. They have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 20
@@ -65,7 +65,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Summon Spine %Devil%"
+#name 128 "Summon NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss and sends it to ambush a hostile commander in a distant province. Spine devils have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 4
@@ -93,7 +93,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Send Spine %Devil%"
+#name 128 "Send NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss and sends them to attack a distant province. Spine devils have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 20

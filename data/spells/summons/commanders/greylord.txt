@@ -42,11 +42,11 @@
 #maxpower 4
 #nreff 1
 #pathlevel 3
-#fatiguecost 300
-#chassisvalue 300
+#fatiguecost 700
+#chassisvalue 700
 #scalecost 1.8
 #scalefatigueexponent 0.7
-#scalefatiguemult 300
+#scalefatiguemult 700
 #schools 1
 
 #skipchance 77
