@@ -10,7 +10,7 @@
 #schools 50
 #unique 1
 #paths 1
-#skipchance 80
+#skipchance 90
 #secondarypaths 1
 #secondarypathchance 90
 #eventset "Firegemgen 2d6"
@@ -35,7 +35,7 @@
 #schools 50
 #unique 1
 #paths 1
-#skipchance 80
+#skipchance 90
 #secondarypaths 1
 #secondarypathchance 90
 #eventset "Firegemgen 3d6"
@@ -86,7 +86,7 @@
 #schools 50
 #unique 1
 #paths 1
-#skipchance 80
+#skipchance 90
 #secondarypaths 1
 #secondarypathchance 90
 #eventset "Firegemgen 9d6"
@@ -111,7 +111,7 @@
 #schools 50
 #unique 1
 #paths 1
-#skipchance 80
+#skipchance 90
 #secondarypaths 1
 #secondarypathchance 90
 #eventset "Firegemgen 12d6"

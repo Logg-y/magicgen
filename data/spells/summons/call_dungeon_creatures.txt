@@ -4,8 +4,9 @@
 #damage -14
 #spec 0
 #power 4
+#maxpower 14
 #precision -2
-#nreff 2
+#nreff 3
 #pathlevel 3
 #fatiguecost 100
 #sound 43
@@ -20,6 +21,6 @@
 #spelltype 528
 
 #scalerate 1.4
-#scalefatiguemult 30
+#scalefatiguemult 12
 #skipchance 90
 #end

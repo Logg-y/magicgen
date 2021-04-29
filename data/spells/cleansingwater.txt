@@ -6,6 +6,7 @@
 #spec 138
 #aoe 2001
 #power 6
+#maxpower 14
 #precision 0
 #range 5025
 #pathlevel 2

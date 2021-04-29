@@ -1,0 +1,49 @@
+#neweffect "Insect cloud disrupt casting"
+#effect 4129
+#damage 10
+#spec 128
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#power 1
+#name 1 "Disrupt Spellcasting"
+#name 2 "Disrupt Spellcasting"
+#name 4 "Disrupt Spellcasting"
+#name 8 "Disrupt Spellcasting"
+#name 16 "Disrupt Spellcasting""
+#name 32 "Disrupt Spellcasting"
+#name 64 "Disrupt Spellcasting"
+#name 128 "Disrupt Spellcasting"
+#explspr 10155
+#end
+
+#neweffect "Insect cloud evo"
+-- capped dmg
+#effect 4109
+#damage 10
+#spec 274880004160
+#aoe 1
+#power 1
+-- do NOT allow this to scale, it's way too particle heavy to have a lot of them going on
+#maxpower 1
+#precision 1
+#range 30
+#pathlevel 2
+#fatiguecost 20
+#explspr 10329
+#sound 31
+
+#paths 64
+#secondarypaths 0
+
+#name 64 "Insect Cloud"
+#descr 64 "The caster summons a swarm of angry insects to a location on the battlefield. Those within will be rapidly stung by the insects, though heavy armour reduces the severity of this effect. Additionally, trying to concentrate on spellcasting within the insect swarm is virtually impossible."
+#nextspell "Insect cloud disrupt casting"
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 1
+#end

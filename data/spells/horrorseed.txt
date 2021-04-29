@@ -1,14 +1,48 @@
-#neweffect "Horror Seed Lesser"
+#neweffect "Horror Seed Lesser Real"
 #effect 500
 #damage 289
 #spec 8540160
+
+-- evo
+#spelltype 2
+
+#scalerate 0
+-- #scalecost 1.1
+
+#aoe 1
+#power 4
+#maxpower 11
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 100
+#precision 100
+#range 100
+#schools -1
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 128 "Horror Infestation"
+
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Units afflicted with horrors gradually spread curses and horror marks to units in their province. Eventually they burst into a lesser horror, instantly killing their host and attacking anything in the province."
+#details "Applies a lesser horror seed infection if the spell is not resisted. The unit is 20% to gain a horror mark each turn, and 10% to become cursed. If it has two or more horror marks, there is 10% chance that the unit dies and becomes a lesser horror which immediately attacks its current province."
+
+#end
+
+
+#neweffect "Horror Seed Lesser"
+#effect 2
+#damage 1
+#spec 8540288
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.8
--- #scalecost 1.1
+#scalerate 1
+-- #scalecost 1.6
 
 #aoe 0
 #power 4
@@ -25,23 +59,57 @@
 #secondarypathchance 100
 
 #name 128 "Dormant %Horror%"
+#nextspell "Horror Seed Lesser Real"
 
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Units afflicted with horrors gradually spread curses and horror marks to units in their province. Eventually they burst into a lesser horror, instantly killing their host and attacking anything in the province."
 #details "Applies a lesser horror seed infection if the spell is not resisted. The unit is 20% to gain a horror mark each turn, and 10% to become cursed. If it has two or more horror marks, there is 10% chance that the unit dies and becomes a lesser horror which immediately attacks its current province."
 
 #end
 
-#neweffect "Horror Seed Greater"
+
+#neweffect "Horror Seed Greater Real"
 #effect 501
 #damage 289
 #spec 8540160
+
+-- evo
+#spelltype 2
+
+#scalerate 0
+
+#aoe 1
+#power 8
+#maxpower 16
+#pathlevel 4
+#explspr 10206
+#sound 41
+#fatiguecost 100
+#precision 100
+#range 100
+#schools -1
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 100
+
+#name 128 "Contagious Horror Infestation"
+
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Horrors incited by this spell are infectious, and gradually spread their influence to other units in the same province. The secondary horrors spread only horror marks and curses and do not replicate further, but they will cause the unit to burst into a lesser horror after some time. If the unit housing the primary infectious horror is slain, a greater horror is instantly released to wreak havoc on the battlefield."
+#details "Applies a greater horror seed infection if the spell is not resisted. The unit is 20% to gain a horror mark each turn and 10% to become cursed.\nEach turn, other units in its current province must make a MR check of 15 + DRN vs MR + DRN. A loss or tie results in the unit gaining a horror mark. This process continues until 100 units have been considered or a total of 5 of these MR checks have been made.\Then, units in the province are considered again, and are picked if they have any number of horror marks, no kind of horror seed infection and are not mindless. Being picked means making a normal MR check of 11 + DRN vs MR + DRN. A loss or tie results in gaining a lesser horror seed infection.\n\nUnits with a lesser infection are 20% to gain a horror mark each turn and 10% to become cursed. If they have two or more horror marks, there is 10% chance that the unit dies and becomes a lesser horror which immediately attacks its current province."
+
+#end
+
+#neweffect "Horror Seed Greater"
+#effect 2
+#damage 1
+#spec 8540288
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
 #scalerate 1
--- #scalecost 1.1
+-- #scalecost 1.6
 
 #aoe 0
 #power 8
@@ -57,7 +125,9 @@
 #secondarypaths 16
 #secondarypathchance 100
 
-#name 128 "Horror Infestation"
+#name 128 "Contagious %Horror%"
+#nextspell "Horror Seed Greater Real"
+
 
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to invade the %mind% of SUBJECT. Horrors incited by this spell are infectious, and gradually spread their influence to other units in the same province. The secondary horrors spread only horror marks and curses and do not replicate further, but they will cause the unit to burst into a lesser horror after some time. If the unit housing the primary infectious horror is slain, a greater horror is instantly released to wreak havoc on the battlefield."
 #details "Applies a greater horror seed infection if the spell is not resisted. The unit is 20% to gain a horror mark each turn and 10% to become cursed.\nEach turn, other units in its current province must make a MR check of 15 + DRN vs MR + DRN. A loss or tie results in the unit gaining a horror mark. This process continues until 100 units have been considered or a total of 5 of these MR checks have been made.\Then, units in the province are considered again, and are picked if they have any number of horror marks, no kind of horror seed infection and are not mindless. Being picked means making a normal MR check of 11 + DRN vs MR + DRN. A loss or tie results in gaining a lesser horror seed infection.\n\nUnits with a lesser infection are 20% to gain a horror mark each turn and 10% to become cursed. If they have two or more horror marks, there is 10% chance that the unit dies and becomes a lesser horror which immediately attacks its current province."

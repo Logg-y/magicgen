@@ -69,7 +69,7 @@
 
 #neweffect "Farstrike piercing"
 #effect 2
-#damage 2012
+#damage 2016
 #spec 274886295553
 #schools 4
 
@@ -283,6 +283,7 @@
 
 
 #neweffect "Farstrike draining"
+#copyspell "Leech"
 #effect 2
 #damage 6
 #spec 1153485004326567937
@@ -303,6 +304,8 @@
 #fatiguecost 15
 #precision 5
 #range 50
+
+#skipflightspr 1
 
 #paths 176
 #secondarypaths 176

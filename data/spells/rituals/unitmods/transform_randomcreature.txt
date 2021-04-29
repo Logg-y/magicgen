@@ -1,0 +1,5 @@
+#newunitmod "Transform into Creature"
+-- This will remove phantasms but that's about it
+#req hp >= 5
+#landok 1
+#end

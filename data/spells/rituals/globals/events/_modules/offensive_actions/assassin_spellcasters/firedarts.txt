@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action fire darts"
+#minpowerlevel -1
+#maxpowerlevel -1
+
+#req path1 == 1
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Embers"
+#verb "Glowing"
+
+#moduledescr "SUBJECT may unexpectedly be struck by a shower of large embers."
+#moduledetails "Affected commanders are forced into a battle in which they are the target of a shower of three burning embers (each inflicting 10AP fire damage, as per vanilla Fire Darts). Pretenders are unaffected by this spell."
+
+#usefixedunitid 640
+#allowedunitmod "Offensive Action Fire Darts"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was unexpectedly caught in a shower of large burning embers."
+#nolog

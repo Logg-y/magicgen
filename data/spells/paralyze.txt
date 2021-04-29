@@ -23,10 +23,10 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 1 16 "Paralyze"
+#namecond effectiveaoe < 1 16 "Paralyze"
 
-#namecond2 1 < aoe < 25 16 "Halt Foes"
-#namecond2 26 < aoe < 600 16 "Halt Squad"
+#namecond2 1 < effectiveaoe < 25 16 "Halt Foes"
+#namecond2 26 < effectiveaoe < 600 16 "Halt Squad"
 
 #descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a long time."
 

@@ -23,11 +23,11 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe < 1 64 "Sleep"
+#namecond effectiveaoe < 1 64 "Sleep"
 
-#namecond2 1 < aoe < 5 64 "Wave of Slumber"
-#namecond2 5 < aoe < 600 64 "Slumbering Squadron"
-#namecond2 600 < aoe < 700 64 "Mass Slumber"
+#namecond2 1 < effectiveaoe < 5 64 "Wave of Slumber"
+#namecond2 5 < effectiveaoe < 600 64 "Slumbering Squadron"
+#namecond2 600 < effectiveaoe < 700 64 "Mass Slumber"
 
 #descr 64 "The caster attempts to put SUBJECT into a magically induced sleep."
 

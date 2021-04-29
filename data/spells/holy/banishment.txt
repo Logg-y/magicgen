@@ -81,7 +81,7 @@
 #schools 1
 #banishment 1
 #sound 30
-#skipchance 80
+#skipchance 20
 
 #paths 256
 #secondarypaths 256
@@ -167,7 +167,7 @@
 
 #neweffect "Banishment Chain Lightning"
 #effect 134
-#damage 3001
+#damage 2001
 #maxbounces 6
 #spec 276828296
 #range 5020
@@ -191,6 +191,39 @@
 #name 2 "$Purifying$ Lightning"
 #name 2 "$Purifying$ Charge"
 #descr 256 "With this prayer the priest draws upon the power of his God to fill a point on the battlefield with a holy electrical charge. This charge is then free to leap into any nearby undead, harming all those struck that fail to resist. Due to the divine nature of the electrical charge, shock resistance offers no protection from this effect."
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Falling Water"
+-- for falling projectile effect
+#copyspell "Rain stone"
+#flightspr 10065
+#effect 2
+#damage 3003
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2004
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 4 "Holy Flood"
+#name 4 "Divine Flood"
+#name 4 "$Purifying$ Flood"
+#name 4 "$Purifying$ Streams"
+#descr 256 "With this prayer the priest draws upon the power of his God to bring cleansing waters upon undead foes. The undead will take damage unless they manage to resist the banishment."
 
 #spelltype 2
 #end

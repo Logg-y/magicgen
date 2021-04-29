@@ -87,3 +87,46 @@
 #nameprefix "Woundmirroring"
 #descr "This particular CREATURE has the ability to attempt to redirect any damage taken onto its attacker. The attacker may resist this effect."
 #end
+
+---
+
+#newunitmod "Summon Poisonbarbs 15"
+#req poisonarmor == -1
+#req ethereal == -1
+#set poisonarmor 15
+#nameprefix "Barbed"
+#descr "This particular CREATURE is covered in extremely poisonous barbs. Striking it with a short weapon may be unadvisable."
+#end
+
+#newunitmod "Summon Fireshield 14"
+#req fireshield == -1
+#req aquatic == -1
+#set fireshield 14
+#fireres 6
+#set speciallook 1
+#nameprefix "Flamewreathed"
+#descr "This particular CREATURE is constantly surrounded by magical flames. Trying to strike it will result in being severely burned."
+#end
+
+#newunitmod "Summon Banefireshield 14"
+#req banefireshield == -1
+#req aquatic == -1
+#set banefireshield 14
+#set speciallook 1
+#nameprefix "Darkflame"
+#descr "This particular CREATURE is constantly surrounded by dark magical flames. Trying to strike it will result in being badly burned and decayed. Due to the dark nature of the flames, fire resistance offers no protection."
+#end
+
+#newunitmod "Summon Acidshield 14"
+#req acidshield == -1
+#set acidshield 14
+#nameprefix "Acid"
+#descr "This particular CREATURE is imbued with magical acid. Trying to strike it will release a harmful splash of acid."
+#end
+
+#newunitmod "Summon Overcharge 3"
+#set overcharged 3
+#nameprefix "Overcharged"
+#shockres 6
+#descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a severe jolt."
+#end

@@ -4,3 +4,17 @@
 #nameprefix "Aware"
 #descr "This particular CREATURE has been magically made more aware of its surroundings, making it more effective at defending itself from multiple assailants."
 #end
+
+#newunitmod "Summon Unsurroundable 5"
+#req unsurr == -1
+#set unsurr 5
+#nameprefix "Aware"
+#descr "This particular CREATURE has been magically made more aware of its surroundings, making it much more effective at defending itself from multiple assailants."
+#end
+
+#newunitmod "Summon Unsurroundable 8"
+#req unsurr == -1
+#set unsurr 8
+#nameprefix "Aware"
+#descr "This particular CREATURE has been magically made more aware of its surroundings, making it significantly more effective at defending itself from multiple assailants."
+#end

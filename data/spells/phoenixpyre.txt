@@ -39,11 +39,11 @@
 
 #details "Phoenix Pyre: Explosion damage: 10 AP fire dmg, explosion area 50, fatigue upon death: 30+d20. Also grants +5 fire resistance."
 
-#namecond aoe < 1 1 "Phoenix Pyre"
-#namecond aoe < 1 128 "Demonic Immortality"
+#namecond effectiveaoe < 1 1 "Phoenix Pyre"
+#namecond effectiveaoe < 1 128 "Demonic Immortality"
 
-#namecond aoe >= 1 1 "Gift of the Phoenix"
-#namecond aoe >= 1 128 "Gift of Demonic Immortality"
+#namecond effectiveaoe >= 1 1 "Gift of the Phoenix"
+#namecond effectiveaoe >= 1 128 "Gift of Demonic Immortality"
 
 #descr 1 "SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."

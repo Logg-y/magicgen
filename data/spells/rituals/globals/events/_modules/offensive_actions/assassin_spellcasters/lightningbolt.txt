@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action lightning"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 2
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Lightning"
+#verb "Shocking"
+
+#moduledescr "SUBJECT may unexpectedly be struck by lightning."
+#moduledetails "Affected commanders are forced into a battle in which they have a 14AN lightning bolt cast on them once. Pretenders are unaffected by this spell."
+
+#usefixedunitid 562
+#allowedunitmod "Offensive Action Lightning Bolt"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "Lightning suddenly struck at one of your commanders!"
+#nolog

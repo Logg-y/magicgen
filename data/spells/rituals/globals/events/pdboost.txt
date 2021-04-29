@@ -1,0 +1,17 @@
+#neweventset "PD Boost Global"
+#scaleparam "defence" 1.0
+
+#end
+
+
+#newevent
+#rarity 5
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 6
+#nolog
+#notext
+#msg "PD boost global triggers."
+#defence 2
+#end

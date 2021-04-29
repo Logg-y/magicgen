@@ -1,0 +1,26 @@
+#newunitmod "Concealment"
+#set amphibian 1
+#set landdamage 99
+#set uwdamage 99
+#set immobile 1
+#set homesick 100
+#set hp 10
+#nameprefix "Concealing"
+#set falsearmy -9999
+#descr "This particular phantasm projects magic, making scouts fail to see any units in its province."
+#set illusion 1
+#end
+
+
+#newunitmod "Falsify"
+#set amphibian 1
+#set landdamage 99
+#set uwdamage 99
+#set immobile 1
+#set homesick 100
+#set hp 10
+#nameprefix "Falsifying"
+#set falsearmy 50
+#descr "This particular phantasm projects magic, making scouts see a massive number of images of units in its province."
+#set illusion 1
+#end

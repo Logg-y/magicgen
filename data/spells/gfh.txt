@@ -5,7 +5,7 @@
 #spec 549755813888
 #aoe 1
 #power 4
-#maxpower 9
+#maxpower 14
 #precision -3
 #nreff 1
 #range 100

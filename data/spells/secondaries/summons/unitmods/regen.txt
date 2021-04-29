@@ -5,3 +5,12 @@
 #nameprefix "Regenerating"
 #descr "This particular CREATURE has been filled with magical energy which rapidly heals wounds it suffers."
 #end
+
+
+#newunitmod "Summon Regen 30"
+#req regeneration == -1
+#req hp > 10
+#set regeneration 30
+#nameprefix "Trollblooded"
+#descr "This particular CREATURE has been filled with magical energy which extremely rapidly heals wounds it suffers."
+#end

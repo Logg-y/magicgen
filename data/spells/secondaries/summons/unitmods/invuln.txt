@@ -5,3 +5,11 @@
 #nameprefix "Stygian"
 #descr "This particular CREATURE has been covered in stygian energy, making it highly resistant to mundane weapons."
 #end
+
+#newunitmod "Summon Invuln 25"
+#req invulnerable == -1
+#req prot < 20
+#set invulnerable 25
+#nameprefix "Invulnerable"
+#descr "This particular CREATURE has been covered in deathly energy, making it extremely resistant to mundane weapons."
+#end

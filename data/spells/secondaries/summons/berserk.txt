@@ -14,3 +14,20 @@
 #descr "The summoned %creature% %is% very angry and will go berserk if provoked."
 
 #end
+
+#newsecondary "Summon Berserking 2"
+
+#anysummon 1
+
+#paths 65
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+#magicpathvaluescaling -0.5
+
+#unitmod "Summon Berserking 2"
+#descr "The summoned %creature% %is% extremely angry and will turn violently berserk if provoked."
+
+#end

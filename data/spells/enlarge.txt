@@ -25,11 +25,11 @@
 
 #details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
 
-#namecond aoe < 1 64 "Enlarge Self"
+#namecond effectiveaoe < 1 64 "Enlarge Self"
 
-#namecond2 1 <= aoe < 600 64 "Group Enlargement"
-#namecond aoe > 600 64 "Army of Giants"
-#namecond aoe > 600 64 "Mass Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "Group Enlargement"
+#namecond effectiveaoe > 600 64 "Army of Giants"
+#namecond effectiveaoe > 600 64 "Mass Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
 
@@ -63,11 +63,11 @@
 
 #details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
 
-#namecond aoe < 1 64 "Enlarge Self"
+#namecond effectiveaoe < 1 64 "Enlarge Self"
 
-#namecond2 1 <= aoe < 600 64 "Group Enlargement"
-#namecond aoe > 600 64 "Army of Giants"
-#namecond aoe > 600 64 "Mass Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "Group Enlargement"
+#namecond effectiveaoe > 600 64 "Army of Giants"
+#namecond effectiveaoe > 600 64 "Mass Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
 
@@ -100,12 +100,60 @@
 
 #details "Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move. Creatures that are size 4 or larger are only enlarged one stage."
 
-#namecond aoe < 1 64 "Titanic Enlargement"
+#namecond effectiveaoe < 1 64 "Titanic Enlargement"
 
-#namecond2 1 <= aoe < 600 64 "Group Titanic Enlargement"
-#namecond aoe > 600 64 "Army of Titans"
-#namecond aoe > 600 64 "Mass Titanic Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "Group Titanic Enlargement"
+#namecond effectiveaoe > 600 64 "Army of Titans"
+#namecond effectiveaoe > 600 64 "Mass Titanic Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle. The size changes induced by this spell are radical, turning even an average man into a towering giant."
+
+#end
+
+
+#neweffect "Trample Self"
+#effect 23
+#damage 64
+#spec 8404992
+#schools -1
+#paths -1
+#aoe 0
+#scalerate 0
+#power 6
+#name 64 "Juggernaut's Confidence"
+
+#end
+
+#neweffect "Greater Enlargement and Trample"
+#effect 10
+#damage 1101659111424
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 10
+
+#aoe 0
+#power 6
+#pathlevel 3
+#maxpower 6
+#explspr 10184
+#sound 31
+#range 10
+#fatiguecost 35
+
+
+#paths 64
+#secondarypaths 0
+
+#details "Grants Trample and Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move. Creatures that are size 4 or larger are only enlarged one stage."
+
+#name 64 "Trampling Juggernaut"
+#descr 64 "The caster becomes significantly larger than normal, and gains the confidence to crush those who stand in his way."
+#ainocast 1
+#nextspell "Trample Self"
 
 #end

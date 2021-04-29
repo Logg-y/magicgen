@@ -23,10 +23,10 @@
 #paths 32
 #secondarypaths 32
 
-#namecond aoe == 0 32 "Decay"
+#namecond effectiveaoe == 0 32 "Decay"
 
-#namecond2 0 < aoe < 600 32 "Burden of Age"
-#namecond aoe > 600 32 "Wind of Death"
+#namecond2 0 < effectiveaoe < 600 32 "Burden of Age"
+#namecond effectiveaoe > 600 32 "Wind of Death"
 
 #descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
 
@@ -57,10 +57,10 @@
 #paths 32
 #secondarypaths 32
 
-#namecond aoe == 0 32 "Decay"
+#namecond effectiveaoe == 0 32 "Decay"
 
-#namecond2 0 < aoe < 600 32 "Burden of Age"
-#namecond aoe > 600 32 "Wind of Death"
+#namecond2 0 < effectiveaoe < 600 32 "Burden of Age"
+#namecond effectiveaoe > 600 32 "Wind of Death"
 
 #descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
 

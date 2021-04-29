@@ -25,11 +25,11 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe == 1 8 "Temper Armor"
+#namecond effectiveaoe == 1 8 "Temper Armor"
 
-#namecond2 1 < aoe < 666 8 "Toughen Steel"
+#namecond2 1 < effectiveaoe < 666 8 "Toughen Steel"
 
-#namecond aoe == 666 8 "Legions of Steel"
+#namecond effectiveaoe == 666 8 "Legions of Steel"
 
 #details "+3 protection to all armor parts."
 
@@ -65,11 +65,11 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe == 1 8 "Temper Armor"
+#namecond effectiveaoe == 1 8 "Temper Armor"
 
-#namecond2 1 < aoe < 666 8 "Toughen Steel"
+#namecond2 1 < effectiveaoe < 666 8 "Toughen Steel"
 
-#namecond aoe == 666 8 "Legions of Steel"
+#namecond effectiveaoe == 666 8 "Legions of Steel"
 
 #details "+3 protection to all armor parts."
 

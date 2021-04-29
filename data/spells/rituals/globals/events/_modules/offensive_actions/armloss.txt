@@ -14,7 +14,7 @@
 #verb "Catastrophic"
 
 #moduledescr "SUBJECT may lose arms in catastrophic accidents."
-#moduledetails "Affected commanders lose an arm."
+#moduledetails "Affected commanders lose an arm. Pretenders are unaffected by this spell."
 
 
 #end

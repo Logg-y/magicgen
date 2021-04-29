@@ -1,0 +1,41 @@
+#neweffect "Temp Morale"
+#effect 17
+#damage 10
+#spec 8405120
+-- alt ench
+#schools 18
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.3
+
+#aoe 0
+#power -3
+#maxpower 3
+#pathlevel 1
+#explspr 10203
+#sound 31
+#range 10
+#fatiguecost 5
+#scalefatigueexponent -0.85
+#pathperresearch 0.25
+
+#paths 65
+#secondarypaths 0
+
+#details "Grants +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
+
+#namecond effectiveaoe <= 1 1 "Embolden Self"
+#namecond effectiveaoe <= 1 64 "Embolden Self"
+
+#namecond2 1 < effectiveaoe < 66 1 "Instill Courage"
+#namecond2 1 < effectiveaoe < 66 64 "Remove Fear"
+
+#namecond effectiveaoe == 666 1 "Blazing Courage"
+#namecond effectiveaoe == 666 64 "Mass Courage"
+
+#descr 1 "SUBJECT is briefly granted a warm comforting feeling which eases PRONOUN_POS nerves, raising PRONOUN_POS morale."
+#descr 64 "SUBJECT is briefly instilled with great courage, making PRONOUN less likely to flee the battlefield."
+
+#end

@@ -3,6 +3,7 @@
 #damage 549
 #spec 0
 #power 1
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -28,6 +29,7 @@
 #damage 549
 #spec 0
 #power 1
+#maxpower 14
 #nreff 4005
 #pathlevel 2
 #fatiguecost 100
@@ -83,7 +85,7 @@
 #damage 549
 #spec 0
 #power 4
-#maxpower 9
+#maxpower 14
 -- Yes, this is deliberate, in testing 60 boars would reliably lose vs 6pd
 #nreff 9050
 #pathlevel 3

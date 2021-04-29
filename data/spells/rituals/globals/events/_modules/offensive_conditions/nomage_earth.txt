@@ -1,6 +1,6 @@
 #neweventset "Offensive Global cond not earth"
-#minpowerlevel 1
-#maxpowerlevel 5
+#minpowerlevel 2
+#maxpowerlevel 6
 
 #scaleparam "req_rare" 5
 

@@ -4,6 +4,7 @@
 #damage 2546
 #spec 0
 #power 4
+#maxpower 14
 #precision -100
 #nreff 2
 #pathlevel 3

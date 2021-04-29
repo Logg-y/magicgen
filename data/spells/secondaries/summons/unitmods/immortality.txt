@@ -97,3 +97,16 @@
 #nameprefix "Reforming"
 #descr "This particular CREATURE has the ability to sometimes pull its eviscerated body parts back together and continue fighting."
 #end
+
+
+#newunitmod "Summon Living Reforming"
+#req domimmortal == -1
+#req immortal == -1
+#req secondshape == -1
+#req reform == -1
+#req undead <= 0
+#req inanimate <= 0
+#set reform 50
+#nameprefix "Reforming"
+#descr "This particular CREATURE has the ability to sometimes reform its body and continue fighting."
+#end

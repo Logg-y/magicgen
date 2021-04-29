@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action Farstrike"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Pummel"
+#verb "Pummelling"
+
+#moduledescr "SUBJECT may unexpectedly be struck by an unseen force. This inflicts significant damage."
+#moduledetails "Affected commanders are forced into a battle in which they are the the target of a Farstrike. If the attack hits, the victim takes 31 magical bludgeoning damage, plus 1 per magic scale in the province. Pretenders are unaffected by this spell."
+
+#usefixedunitid 106
+#allowedunitmod "Offensive Action Farstrike"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was unexpectedly struck by an unseen force!"
+#nolog

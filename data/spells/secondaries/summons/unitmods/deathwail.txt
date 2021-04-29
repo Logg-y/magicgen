@@ -5,3 +5,21 @@
 #nameprefix "Vengeful"
 #descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
 #end
+
+
+#newunitmod "Summon Deathwail 2"
+#req deathparalyze == -1
+#req spiritsight == -1
+#set deathparalyze 12
+#nameprefix "Vindictive"
+#descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
+#end
+
+
+#newunitmod "Summon Deathwail 3"
+#req deathparalyze == -1
+#req spiritsight == -1
+#set deathparalyze 30
+#nameprefix "Resentful"
+#descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
+#end

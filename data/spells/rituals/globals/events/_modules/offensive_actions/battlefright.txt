@@ -14,7 +14,7 @@
 #verb "Frightening"
 
 #moduledescr "SUBJECT may be affected by malign magic and suffer from lasting cowardice."
-#moduledetails "Affected commanders gain the battle fright affliction."
+#moduledetails "Affected commanders gain the battle fright affliction. Pretenders are unaffected by this spell."
 
 
 #end

@@ -4,3 +4,10 @@
 #req trample <= 0
 #descr "This particular CREATURE has had its weapons magically sharpened, allowing them to more easily bypass armour."
 #end
+
+#newunitmod "Summon ANweap"
+#weaponmod "ANweap"
+#nameprefix "Supremely Penetrating"
+#req trample <= 0
+#descr "This particular CREATURE has had its weapons magically altered, causing them to bypass all armour, carapaces, and similar protections."
+#end

@@ -43,11 +43,12 @@ class UnitMod(object):
                 return False
 
         # These need only be true for the first shape in the collection
-        if self.landok and len(tested) == 0:
+        # ... except I'm getting bugs from this
+        if self.landok:
             if unitobj.aquatic != -1:
                 return False
 
-        if self.uwok and len(tested) == 0:
+        if self.uwok:
             if unitobj.aquatic != -1 and unitobj.amphibian != -1 and unitobj.pooramphibian != -1:
                 return False
 
@@ -178,7 +179,10 @@ class UnitMod(object):
         for param, val in self.setcommands:
             modcmd = flags_to_mod_cmds.get(param, param)
             if modcmd not in argless_cmds:
-                out += f"#{modcmd} {val}\n"
+                if isinstance(val, str):
+                    out += "#{} {}{}{}\n".format(modcmd, '"', val, '"')
+                else:
+                    out += f"#{modcmd} {val}\n"
             else:
                 out += f"#{modcmd}\n"
 

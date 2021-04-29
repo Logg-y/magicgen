@@ -21,6 +21,7 @@
 #spec 8540288
 #aoe 1
 #power 2
+#maxpower 14
 #precision 1
 #range 50
 #pathlevel 2

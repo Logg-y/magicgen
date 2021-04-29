@@ -41,9 +41,10 @@
 #descr 4 "A gush of highly corrosive fluid flows away from caster. The acid burns the armor of the target as well as his, her or its flesh."
 
 -- evo-like, can have close range variants, scale aoe
-#spelltype 38
+#spelltype 34
 
 #power 3
+#maxpower 14
 #scalerate 1
 #pathlevel 3
 #end
@@ -54,6 +55,7 @@
 #spec 2199023255616
 #aoe 1000
 #power 2
+#maxpower 14
 #precision 3
 #range 30
 #pathlevel 2

@@ -15,3 +15,12 @@
 #nameprefix "Exploding"
 #descr "This particular CREATURE has been imbued by magic that causes it to violently explode on death."
 #end
+
+#newunitmod "Summon Large Explode on Death 2"
+#req deathfire <= 0
+#req secondshape == -1
+#set deathfire 25
+#fireres 11
+#nameprefix "Exploding"
+#descr "This particular CREATURE has been imbued by magic that causes it to extremely violently explode on death."
+#end

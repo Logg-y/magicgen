@@ -10,7 +10,7 @@
 #schools 49
 #unique 1
 #paths 64
-#skipchance 80
+#skipchance 90
 #secondarypaths 64
 #secondarypathchance 90
 #eventset "Naturegemgen 2d6"
@@ -61,7 +61,7 @@
 #schools 50
 #unique 1
 #paths 64
-#skipchance 80
+#skipchance 90
 #secondarypaths 64
 #secondarypathchance 90
 #eventset "Naturegemgen 6d6"
@@ -86,7 +86,7 @@
 #schools 50
 #unique 1
 #paths 64
-#skipchance 80
+#skipchance 90
 #secondarypaths 64
 #secondarypathchance 90
 #eventset "Naturegemgen 9d6"
@@ -111,7 +111,7 @@
 #schools 50
 #unique 1
 #paths 64
-#skipchance 80
+#skipchance 90
 #secondarypaths 64
 #secondarypathchance 90
 #eventset "Naturegemgen 12d6"

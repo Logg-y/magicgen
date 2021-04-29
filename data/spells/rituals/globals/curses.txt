@@ -10,7 +10,7 @@
 #schools 48
 #unique 1
 #paths 32
-#skipchance 60
+#skipchance 30
 #secondarypaths 32
 #secondarypathchance 99
 #eventset "Global Curses"

@@ -14,7 +14,7 @@
 #aoe 0
 #power -2
 #maxpower 2
-#pathperresearch -0.33
+#pathperresearch 0.25
 #pathlevel 1
 #explspr 10053
 #sound 31

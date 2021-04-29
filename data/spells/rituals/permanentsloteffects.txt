@@ -463,7 +463,7 @@
 #secondarypathchance 0
 
 #name 32 "Aura of Reanimation"
-#descr 32 "Through the consumption of magical gems, the caster permanently gains the ability to passively reanimated corpses in his current province as soulless."
+#descr 32 "Through the consumption of magical gems, the caster permanently gains the ability to passively reanimate corpses in his current province as soulless."
 #details "Each turn, the caster passively reanimates up to EFFECTNUMBER_5XX corpses in his current province. Multiple castings of this spell are not cumulative."
 
 #scalerate 5
@@ -510,7 +510,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 300
-#scalefatiguemult 200
+#scalefatiguemult 20
 #schools 18
 #unique 1
 
@@ -633,22 +633,31 @@
 #secondarypaths 0
 #secondarypathchance 0
 
-#name 8 "Artificial %Arm%"
-#descr 8 "The caster forges magical ARTICLE_N %arm% and permanently grafts it to himself. This allows him full use of the additional arm to carry magical items."
+#namecond effect == 10500 8 "Artificial Arm"
+#namecond effect > 10500 8 "Artificial Arms"
+#descrcond effect == 10500 8 "The caster forges a magical arm and permanently grafts it to himself. This allows him full use of the additional arm to carry magical items."
+#descrcond effect > 10500 8 "The caster forges magical arms and permanently grafts them to himself. This allows him full use of the additional arms to carry magical items."
 
 #name 16 "Telekinesis"
-#descr 16 "The caster consumes gems in a ritual to permanently gain limited telekinetic powers. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+#descrcond effect == 10500 16 "The caster consumes gems in a ritual to permanently gain limited telekinetic powers. This allows him to carry an additional item as if he had more arms than normal."
+#descrcond effect > 10500 16 "The caster consumes gems in a ritual to permanently gain limited telekinetic powers. This allows him to carry additional items as if he had more arms than normal."
 
-#name 32 "Undead %Arm%"
-#descr 32 "The caster magically forms ARTICLE undead %arm%, and then attaches %it% to his body permanently. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+#namecond effect == 10500 32 "Undead Arm"
+#namecond effect > 10500 32 "Undead Arms"
+#descrcond effect == 10500 32 "The caster magically forms an undead arm, and then attaches it to his body permanently. This allows him to carry an additional item as if he had more arms than normal."
+#descrcond effect > 10500 32 "The caster magically forms undead arms, and then attaches them to his body permanently. This allows him to carry additional items as if he had more arms than normal."
 
-#name 64 "Grow %Arm%"
-#descr 64 "The caster magically grows ARTICLE_N %arm% from his body. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+#namecond effect == 10500 64 "Grow Arm"
+#namecond effect > 10500 64 "Grow Arms"
+#descrcond effect == 10500 64 "The caster magically grows an extra arm from his body. This allows him to carry an additional item as if he had more arms than normal."
+#descrcond effect > 10500 64 "The caster magically grows extra arms from his body. This allows him to carry additional items as if he had more arms than normal."
 
-#name 128 "Graft %Arm%"
-#descr 128 "The caster magically removes ARTICLE_N arms from sacrificial slaves and grafts %it% permanently to his body. This allows him to carry ARTICLE_N additional %item% as if he had more arms than normal."
+#namecond effect == 10500 128 "Graft Arm"
+#namecond effect > 10500 128 "Graft Arms"
+#descrcond effect == 10500 128 "The caster magically removes an arm from sacrificial slaves and grafts it permanently to his body. This allows him to carry an additional item as if he had more arms than normal."
+#descrcond effect > 10500 128 "The caster magically removes arms from sacrificial slaves and grafts them permanently to his body. This allows him to carry additional items as if he had more arms than normal."
 
-#details "The caster permanently gains EFFECTNUMBER_5XX arms, to a maximum of 6 arms total. Multiple castings of this spell are not cumulative."
+#details "The caster permanently gains EFFECTNUMBER_5XX arm(s), to a maximum of 6 arms total. Multiple castings of this spell are not cumulative."
 
 #scalerate 1
 #skipchance 85

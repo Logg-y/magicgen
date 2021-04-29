@@ -21,11 +21,11 @@
 #paths 129
 #secondarypaths 1
 
-#namecond aoe < 660 1 "Combustion"
-#namecond aoe < 660 128 "Infernal Flames"
+#namecond effectiveaoe < 660 1 "Combustion"
+#namecond effectiveaoe < 660 128 "Infernal Flames"
 
-#namecond aoe >= 660 1 "Conflagration"
-#namecond aoe >= 660 128 "Wind of Inferno"
+#namecond effectiveaoe >= 660 1 "Conflagration"
+#namecond effectiveaoe >= 660 128 "Wind of Inferno"
 
 #details "Burning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 

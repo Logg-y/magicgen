@@ -3,6 +3,7 @@
 #damage 88
 #spec 0
 #power 2
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -12,7 +13,7 @@
 
 #paths 128
 #secondarypaths 128
-#scalefatiguemult 120
+#scalefatiguemult 80
 
 #name 128 "Summon NAMEPREFIX %Fiend% of Darkness"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They fly and become significantly stronger under cover of darkness."
@@ -28,6 +29,7 @@
 #damage 88
 #spec 0
 #power 1
+#maxpower 14
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
@@ -78,7 +80,7 @@
 #damage 88
 #spec 0
 #power 3
-#maxpower 9
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 3200

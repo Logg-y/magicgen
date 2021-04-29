@@ -3,16 +3,18 @@
 #damage 521
 #spec 8388608
 #power 9
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 8
-#fatiguecost 500 
+#fatiguecost 200 
 #sound 31
 #schools 1
 
 #paths 20
 #secondarypaths 20
 #secondarypathchance 100
+#scalefatiguemult 190
 
 #skipchance 97
 
@@ -31,6 +33,7 @@
 #damage 521
 #spec 8388608
 #power 9
+#maxpower 14
 #nreff 1
 #pathlevel 7
 #fatiguecost 1500
@@ -39,6 +42,8 @@
 #paths 20
 #secondarypaths 20
 #secondarypathchance 80
+
+#scalefatiguemult 1200
 
 #skipchance 97
 

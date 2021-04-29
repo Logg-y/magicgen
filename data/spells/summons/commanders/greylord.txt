@@ -4,6 +4,7 @@
 #damage 391
 #spec 0
 #power 3
+#maxpower 14
 #precision -100
 #nreff 1
 #pathlevel 2
@@ -43,7 +44,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 700
-#chassisvalue 700
+#chassisvalue 400
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 700
@@ -56,7 +57,7 @@
 
 
 #name 1 "Call NAMEPREFIX Grey Lord"
-#name 16 "Summons NAMEPREFIX Grey Lord"
+#name 16 "Summon NAMEPREFIX Grey Lord"
 #name 64 "Charm NAMEPREFIX Grey Lord"
 #descr 1 "The Grey mage lets out a call for ARTICLE %Grey Lord%. Grey lords are mounted warrior-mages with some skill in the path of Grey."
 #descr 16 "The caster teleports ARTICLE %Grey Lord% to him and convinces PRONOUN to fight for him. Grey lords are stealthy and ethereal armoured knights."

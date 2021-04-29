@@ -12,3 +12,10 @@
 #reqmage 1
 #descr "This particular CREATURE is able to cast spells significantly faster than normal."
 #end
+
+#newunitmod "Summon Fastcaster 100"
+#set fastcast 100
+#nameprefix "Fastcasting"
+#reqmage 1
+#descr "This particular CREATURE is able to cast spells significantly faster than normal."
+#end

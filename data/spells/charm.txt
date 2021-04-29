@@ -23,9 +23,9 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe < 1 64 "Charm"
+#namecond effectiveaoe < 1 64 "Charm"
 
-#namecond2 1 < aoe < 600 64 "Charming Whispers"
+#namecond2 1 < effectiveaoe < 600 64 "Charming Whispers"
 
 #descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
 

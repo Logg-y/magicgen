@@ -3,7 +3,7 @@
 #damage 17
 #spec 8388608
 #power 5
-#maxpower 8
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 4000
@@ -36,7 +36,7 @@
 #damage 17
 #spec 8388608
 #power 5
-#maxpower 8
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 4000
@@ -70,7 +70,7 @@
 #damage 17
 #spec 8388608
 #power 6
-#maxpower 9
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
@@ -104,7 +104,7 @@
 #damage 17
 #spec 8388608
 #power 6
-#maxpower 9
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
@@ -135,7 +135,7 @@
 #damage 17
 #spec 8388608
 #power 7
-#maxpower 10
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
@@ -169,13 +169,12 @@
 #damage 17
 #spec 8388608
 #power 7
-#maxpower 10
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
 #scalefatiguemult 630
 #schools 32
-#unique 1
 #paths 1
 #skipchance 95
 #secondarypaths 0
@@ -201,7 +200,7 @@
 #damage 17
 #spec 8388608
 #power 8
-#maxpower 11
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 7000
@@ -235,7 +234,7 @@
 #damage 17
 #spec 8388608
 #power 8
-#maxpower 11
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 7000
@@ -269,10 +268,10 @@
 #damage 17
 #spec 8388608
 #power 9
-#maxpower 10
+#maxpower 14
 #nreff 1
 #pathlevel 5
-#fatiguecost 8000
+#fatiguecost 10000
 #scalefatiguemult 900
 #schools 32
 #unique 1
@@ -303,10 +302,10 @@
 #damage 17
 #spec 8388608
 #power 9
-#maxpower 10
+#maxpower 14
 #nreff 1
 #pathlevel 5
-#fatiguecost 8000
+#fatiguecost 10000
 #scalefatiguemult 900
 #schools 32
 #unique 1

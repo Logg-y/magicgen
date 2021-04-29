@@ -23,10 +23,10 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 1 16 "Mind Burn"
+#namecond effectiveaoe < 1 16 "Mind Burn"
 
-#namecond2 1 <= aoe < 25 16 "Mental Blast"
-#namecond2 26 <= aoe < 600 16 "Wave of Agony"
+#namecond2 1 <= effectiveaoe < 25 16 "Mental Blast"
+#namecond2 26 <= effectiveaoe < 600 16 "Wave of Agony"
 
 #descr 16 "The caster overloads the %mind% of SUBJECT. Unless resisted, this results in severe pain."
 

@@ -6,6 +6,7 @@
 #precision -2
 #nreff 1
 #pathlevel 3
+#maxpower 14
 #fatiguecost 60
 #sound 31
 #schools 1
@@ -29,6 +30,7 @@
 #damage 2514
 #spec 8388608
 #power 5
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 700

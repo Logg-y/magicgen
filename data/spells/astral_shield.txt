@@ -23,10 +23,10 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Astral Shield"
+#namecond effectiveaoe < 2 16 "Astral Shield"
 
-#namecond2 2 <= aoe < 40 16 "Group Astral Shield"
-#namecond2 40 <= aoe < 700 16 "Mass Astral Shield"
+#namecond2 2 <= effectiveaoe < 40 16 "Group Astral Shield"
+#namecond2 40 <= effectiveaoe < 700 16 "Mass Astral Shield"
 
 #details "Melee attackers take 12 + astral mage level paralysis damage, reduced by weapon length. Magic resistance negates the effect."
 
@@ -60,10 +60,10 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Astral Shield"
+#namecond effectiveaoe < 2 16 "Astral Shield"
 
-#namecond2 2 <= aoe < 20 16 "Group Astral Shield"
-#namecond2 20 <= aoe < 700 16 "Mass Astral Shield"
+#namecond2 2 <= effectiveaoe < 20 16 "Group Astral Shield"
+#namecond2 20 <= effectiveaoe < 700 16 "Mass Astral Shield"
 
 #details "Melee attackers take 12 + astral mage level paralysis damage, reduced by weapon length. Magic resistance negates the effect."
 

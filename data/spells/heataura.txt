@@ -60,11 +60,11 @@
 #paths 129
 #secondarypaths 1
 
-#namecond aoe < 2 1 "Heat of Summer"
-#namecond aoe < 2 128 "Heat from Inferno"
+#namecond effectiveaoe < 2 1 "Heat of Summer"
+#namecond effectiveaoe < 2 128 "Heat from Inferno"
 
-#namecond aoe >= 2 1 "Warriors of Summer"
-#namecond aoe >= 2 128 "Warriors from Inferno"
+#namecond effectiveaoe >= 2 1 "Warriors of Summer"
+#namecond effectiveaoe >= 2 128 "Warriors from Inferno"
 
 #details "Grants heat aura and +5 fire resistance."
 

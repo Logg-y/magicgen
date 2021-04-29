@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Liquify"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 4
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Dissolution"
+#verb "Liquifying"
+
+#moduledescr "SUBJECT may unexpectedly be affected by magic that causes them to dissolve into a pool of liquid."
+#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that instantly kills, unless an easy magic resistance check is made. Should they survive, the victim becomes crippled unless they succeed a difficult magic resistance check. Pretenders are unaffected by this spell."
+
+#usefixedunitid 449
+#allowedunitmod "Offensive Action Liquify"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was the target of strange magic that attempted to transform them into a pool of liquid!"
+#nolog

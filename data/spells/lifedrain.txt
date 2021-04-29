@@ -13,7 +13,7 @@
 
 #aoe 0
 #power 5
-#maxpower 9
+#maxpower 14
 #pathlevel 4
 #sound 18
 #fatiguecost 10
@@ -51,7 +51,7 @@
 
 #aoe 1
 #power 6
-#maxpower 9
+#maxpower 14
 #pathlevel 4
 #sound 18
 #fatiguecost 20
@@ -86,7 +86,7 @@
 
 #aoe 1
 #power 7
-#maxpower 9
+#maxpower 14
 #pathlevel 1
 #sound 18
 #fatiguecost 100
@@ -121,7 +121,7 @@
 
 #aoe 1
 #power 6
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #sound 18
 #fatiguecost 100
@@ -156,7 +156,7 @@
 
 #aoe 666
 #power 7
-#maxpower 9
+#maxpower 14
 #pathlevel 4
 #sound 18
 #fatiguecost 200
@@ -191,7 +191,7 @@
 
 #aoe 666
 #power 5
-#maxpower 9
+#maxpower 14
 #pathlevel 4
 #sound 18
 #fatiguecost 400

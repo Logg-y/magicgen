@@ -23,9 +23,9 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe < 1 2 "Steal Breath"
+#namecond effectiveaoe < 1 2 "Steal Breath"
 
-#namecond aoe >= 1 2 "Theft of Breath"
+#namecond effectiveaoe >= 1 2 "Theft of Breath"
 
 #descr 2 "The %victim% of this spell will have the breath stolen from them. Catching their breath will require quite an effort and the leave the %victim% exhausted."
 

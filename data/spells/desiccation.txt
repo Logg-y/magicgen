@@ -24,8 +24,8 @@
 
 #details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage."
 
-#namecond aoe >= 0 1 "Dehydrate"
-#namecond aoe >= 0 4 "Dessication"
+#namecond effectiveaoe >= 0 1 "Dehydrate"
+#namecond effectiveaoe >= 0 4 "Dessication"
 
 #descr 1 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 #descr 4 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
@@ -59,8 +59,8 @@
 
 #details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage."
 
-#namecond aoe > 0 1 "Dryness of the Desert"
-#namecond aoe > 0 4 "Curse of the Desert"
+#namecond effectiveaoe > 0 1 "Dryness of the Desert"
+#namecond effectiveaoe > 0 4 "Curse of the Desert"
 
 #descr 1 "The caster afflicts his enemies with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 #descr 4 "The caster afflicts his enemies with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."

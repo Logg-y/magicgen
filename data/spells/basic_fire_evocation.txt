@@ -53,9 +53,10 @@
 #descr 128 "$BLOOD_INTRO$, ARTICLE %$ball$% of fire %is% conjured and launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
 
 -- evo-like, can have close range variants, scale aoe
-#spelltype 38
+#spelltype 34
 
 #power 2
+#maxpower 14
 #scalerate 1
 #pathlevel 2
 #end
@@ -66,6 +67,7 @@
 #spec 96
 #aoe 1000
 #power 3
+#maxpower 14
 #precision 1
 #range 30
 #pathlevel 2
@@ -124,6 +126,7 @@
 #spec 96
 #aoe 1
 #power 5
+#maxpower 14
 #precision 1
 #range 100
 #pathlevel 2

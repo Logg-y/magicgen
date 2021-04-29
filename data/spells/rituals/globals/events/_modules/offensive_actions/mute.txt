@@ -12,7 +12,7 @@
 #verb "Silent"
 
 #moduledescr "SUBJECT may have their voices permanently damaged by malign magic, becoming mute."
-#moduledetails "Affected commanders become mute."
+#moduledetails "Affected commanders become mute. Pretenders are unaffected by this spell."
 
 
 #end

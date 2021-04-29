@@ -25,9 +25,9 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe == 1 64 "Heal"
-#namecond aoe < 660 64 "Heal Area"
-#namecond aoe >= 660 64 "Heal Army"
+#namecond effectiveaoe == 1 64 "Heal"
+#namecond effectiveaoe < 660 64 "Heal Area"
+#namecond effectiveaoe >= 660 64 "Heal Army"
 
 #descr 64 "The wounds of troops across a SIZE area are healed."
 

@@ -1,0 +1,34 @@
+#neweffect "Fey Bolts"
+#effect 3
+#damage 5025
+#spec 4224
+#aoe 0
+#power 0
+#maxpower 15
+#precision 2
+#scalefatigueexponent -0.6
+
+#nreff 2001
+#range 5020
+#pathlevel 1
+#fatiguecost 30
+#flightspr 10256
+#sound 29
+#aicastmod -40
+#skipchance 30
+
+#paths 64
+#secondarypaths 8
+
+#name 64 "Fey Bolts"
+#name 64 "Fey Burst"
+#name 64 "Fey Barrage"
+#descr 64 "The caster conjures a number of strange fey bolts and sends them flying towards his enemies. Those hit by the bolts will become fatigued if they fail to resist."
+
+#spelltype 18
+
+#scalerate 2
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+#end

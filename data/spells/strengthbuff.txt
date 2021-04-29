@@ -23,11 +23,11 @@
 
 #details "Grants +4 strength."
 
-#namecond aoe < 1 8 "$Strength$ of the Earth"
-#namecond aoe < 1 128 "Infernal $Strength$"
+#namecond effectiveaoe < 1 8 "$Strength$ of the Earth"
+#namecond effectiveaoe < 1 128 "Infernal $Strength$"
 
-#namecond aoe >= 1 8 "Earthen $Strength$"
-#namecond aoe >= 1 128 "Infernal $Strength$"
+#namecond effectiveaoe >= 1 8 "Earthen $Strength$"
+#namecond effectiveaoe >= 1 128 "Infernal $Strength$"
 
 #descr 8 "SUBJECT receives increased strength."
 #descr 128 "$BLOOD_INTRO$, SUBJECT receives demonic strength."

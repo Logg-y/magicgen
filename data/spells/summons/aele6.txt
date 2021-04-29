@@ -3,6 +3,7 @@
 #damage 567
 #spec 0
 #power 5
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 3
@@ -13,7 +14,7 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 70
 
 #details "The elementals are size 6."
 #name 2 "Summon NAMEPREFIX Massive Air %Elemental%"
@@ -29,6 +30,7 @@
 #damage 567
 #spec 0
 #power 5
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 1100

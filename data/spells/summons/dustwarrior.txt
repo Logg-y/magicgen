@@ -3,6 +3,7 @@
 #damage 1980
 #spec 0
 #power 5
+#maxpower 14
 #precision -2
 #nreff 3
 #pathlevel 3
@@ -33,6 +34,7 @@
 #power 6
 #nreff 1004
 #pathlevel 5
+#maxpower 14
 #fatiguecost 500
 #schools 16
 

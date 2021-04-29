@@ -133,6 +133,15 @@ def readUnitMod(fp):
 						continue
 					raise ParseError(f"{fp} line {lineno}: bad #mult")
 
+				if line.startswith("#setstr"):
+					m = re.match('#setstr\\W+(.*?)\\W*?"(.*)"', line)
+					if m is None:
+						raise ParseError(f"{fp} line {lineno}: bad #setstr")
+					param = m.groups()[0]
+					val = m.groups()[1]
+					curreff.setcommands.append([param, val])
+					continue
+
 				if line.startswith("#set"):
 					m = re.match('#set\\W+(.*?)\\W*?([-0-9-]+)', line)
 					if m is not None:
@@ -141,6 +150,8 @@ def readUnitMod(fp):
 						curreff.setcommands.append([param, val])
 						continue
 					raise ParseError(f"{fp} line {lineno}: bad #set")
+
+
 
 				if line.startswith("#end"):
 					out[curreff.name] = curreff

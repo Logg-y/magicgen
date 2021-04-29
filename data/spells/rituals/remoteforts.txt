@@ -3,8 +3,8 @@
 #provrange 4
 #damage 1
 #spec 8388608
-#power 4
-#maxpower 4
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 3
 #fatiguecost 2700
@@ -74,8 +74,8 @@
 #provrange 4
 #damage 3
 #spec 8388608
-#power 6
-#maxpower 6
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 4
 #fatiguecost 4500
@@ -109,8 +109,8 @@
 #provrange 4
 #damage 3
 #spec 8388608
-#power 8
-#maxpower 8
+#power 7
+#maxpower 7
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
@@ -144,8 +144,8 @@
 #provrange 4
 #damage 3
 #spec 8388608
-#power 8
-#maxpower 8
+#power 9
+#maxpower 9
 #nreff 1
 #pathlevel 5
 #fatiguecost 6800
@@ -180,8 +180,8 @@
 #provrange 4
 #damage 5
 #spec 8388608
-#power 4
-#maxpower 4
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 3
 #fatiguecost 2700
@@ -247,8 +247,8 @@
 #provrange 4
 #damage 20
 #spec 8388608
-#power 4
-#maxpower 4
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 3
 #fatiguecost 2700
@@ -297,8 +297,8 @@
 #provrange 4
 #damage 22
 #spec 8388608
-#power 6
-#maxpower 6
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 4
 #fatiguecost 4500
@@ -322,8 +322,8 @@
 #provrange 4
 #damage 23
 #spec 8388608
-#power 8
-#maxpower 8
+#power 7
+#maxpower 7
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000

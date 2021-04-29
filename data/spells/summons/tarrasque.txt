@@ -3,6 +3,7 @@
 #damage 925
 #spec 0
 #power 8
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 4
@@ -23,12 +24,14 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatiguemult 65
 #end
 
 #neweffect "tarrasque ritual"
 #effect 10001
 #damage 925
 #power 9
+#maxpower 14
 #nreff 1
 #pathlevel 5
 #fatiguecost 1500
@@ -45,7 +48,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatiguemult 1000
 
 #scalerate 4
 #end

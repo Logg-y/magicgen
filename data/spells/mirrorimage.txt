@@ -22,12 +22,12 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe <= 1 2 "Mirror Image"
-#namecond aoe <= 1 2 "$Illusory$ Images"
+#namecond effectiveaoe <= 1 2 "Mirror Image"
+#namecond effectiveaoe <= 1 2 "$Illusory$ Images"
 
-#namecond2 1 < aoe < 666 2 "$Illusory$ Soldiers"
+#namecond2 1 < effectiveaoe < 666 2 "$Illusory$ Soldiers"
 
-#namecond aoe == 666 2 "$Illusory$ Army"
+#namecond effectiveaoe == 666 2 "$Illusory$ Army"
 
 #details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
 
@@ -61,12 +61,12 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe <= 1 2 "Mirror Image"
-#namecond aoe <= 1 2 "$Illusory$ Images"
+#namecond effectiveaoe <= 1 2 "Mirror Image"
+#namecond effectiveaoe <= 1 2 "$Illusory$ Images"
 
-#namecond2 1 < aoe < 666 2 "$Illusory$ Soldiers"
+#namecond2 1 < effectiveaoe < 666 2 "$Illusory$ Soldiers"
 
-#namecond aoe == 666 2 "$Illusory$ Army"
+#namecond effectiveaoe == 666 2 "$Illusory$ Army"
 
 #details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
 

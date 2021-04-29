@@ -24,11 +24,11 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe < 2 2 "Flight"
+#namecond effectiveaoe < 2 2 "Flight"
 
-#namecond2 2 <= aoe < 666 2 "Group Flight"
+#namecond2 2 <= effectiveaoe < 666 2 "Group Flight"
 
-#namecond aoe == 666 2 "Mass Flight"
+#namecond effectiveaoe == 666 2 "Mass Flight"
 
 #descr 2 "Grants SUBJECT the ability to fly."
 
@@ -62,11 +62,11 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe < 2 2 "Flight"
+#namecond effectiveaoe < 2 2 "Flight"
 
-#namecond2 2 <= aoe < 666 2 "Group Flight"
+#namecond2 2 <= effectiveaoe < 666 2 "Group Flight"
 
-#namecond aoe == 666 2 "Mass Flight"
+#namecond effectiveaoe == 666 2 "Mass Flight"
 
 #descr 2 "Grants SUBJECT the ability to fly."
 

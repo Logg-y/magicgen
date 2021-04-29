@@ -4,6 +4,7 @@
 #damage 998
 #spec 0
 #power 5
+#maxpower 14
 #precision -100
 #nreff 1
 #pathlevel 3
@@ -38,7 +39,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#chassisvalue 1000
+#chassisvalue 500
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

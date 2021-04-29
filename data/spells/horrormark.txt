@@ -27,8 +27,8 @@
 #paths 144
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Horror Mark"
-#namecond aoe < 2 128 "Mark from Beyond"
+#namecond effectiveaoe < 2 16 "Horror Mark"
+#namecond effectiveaoe < 2 128 "Mark from Beyond"
 
 #descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
@@ -76,11 +76,11 @@
 #paths 144
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Horror Mark"
-#namecond aoe < 2 128 "Mark from Beyond"
+#namecond effectiveaoe < 2 16 "Horror Mark"
+#namecond effectiveaoe < 2 128 "Mark from Beyond"
 
-#namecond aoe >= 2 16 "Horror Marks"
-#namecond aoe >= 2 128 "Marks from Beyond"
+#namecond effectiveaoe >= 2 16 "Horror Marks"
+#namecond effectiveaoe >= 2 128 "Marks from Beyond"
 
 #descr 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descr 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
@@ -112,8 +112,8 @@
 #paths 144
 #secondarypaths 16
 
-#namecond aoe >= 2 16 "Horror Marks"
-#namecond aoe >= 2 128 "Marks from Beyond"
+#namecond effectiveaoe >= 2 16 "Horror Marks"
+#namecond effectiveaoe >= 2 128 "Marks from Beyond"
 
 #descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."

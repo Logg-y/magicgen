@@ -23,10 +23,10 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 1 16 "Enslave Mind"
+#namecond effectiveaoe < 1 16 "Enslave Mind"
 
-#namecond2 1 <= aoe < 25 16 "Enslave Group"
-#namecond2 26 <= aoe < 600 16 "Enslave Squad"
+#namecond2 1 <= effectiveaoe < 25 16 "Enslave Group"
+#namecond2 26 <= effectiveaoe < 600 16 "Enslave Squad"
 
 #descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
 

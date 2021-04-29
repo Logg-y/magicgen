@@ -4,6 +4,7 @@
 #damage -13
 #spec 0
 #power 5
+#maxpower 14
 #precision -100
 #nreff 4
 #pathlevel 3

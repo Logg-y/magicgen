@@ -3,6 +3,7 @@
 #damage 189
 #spec 8388608
 #power 3
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -30,6 +31,7 @@
 #damage 189
 #spec 8388608
 #power 3
+#maxpower 14
 #nreff 3006
 #pathlevel 2
 #fatiguecost 400
@@ -80,7 +82,7 @@
 #damage 189
 #spec 8388608
 #power 3
-#maxpower 9
+#maxpower 14
 #nreff 2002
 #pathlevel 3
 #fatiguecost 900
@@ -91,7 +93,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Raise NAMEPREFIX Longdead Horsemen"
+#name 32 "Send NAMEPREFIX Longdead Horsemen"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %horse% and %rider% and sends them to a distant province."
 
 #spelltype 20

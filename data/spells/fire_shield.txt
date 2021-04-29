@@ -23,14 +23,14 @@
 #paths 129
 #secondarypaths 1
 
-#namecond aoe < 2 1 "Fire Shield"
-#namecond aoe < 2 128 "Infernal Shield"
+#namecond effectiveaoe < 2 1 "Fire Shield"
+#namecond effectiveaoe < 2 128 "Infernal Shield"
 
-#namecond aoe >= 2 1 "Barriers of Fire"
-#namecond aoe >= 2 128 "Infernal Barriers"
+#namecond effectiveaoe >= 2 1 "Barriers of Fire"
+#namecond effectiveaoe >= 2 128 "Infernal Barriers"
 
-#namecond aoe >= 660 1 "Burning Army"
-#namecond aoe >= 660 128 "Infernal Army"
+#namecond effectiveaoe >= 660 1 "Burning Army"
+#namecond effectiveaoe >= 660 128 "Infernal Army"
 
 #details "Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
 
@@ -65,14 +65,14 @@
 #paths 129
 #secondarypaths 1
 
-#namecond aoe < 2 1 "Fire Shield"
-#namecond aoe < 2 128 "Infernal Shield"
+#namecond effectiveaoe < 2 1 "Fire Shield"
+#namecond effectiveaoe < 2 128 "Infernal Shield"
 
-#namecond aoe >= 2 1 "Barriers of Fire"
-#namecond aoe >= 2 128 "Infernal Barriers"
+#namecond effectiveaoe >= 2 1 "Barriers of Fire"
+#namecond effectiveaoe >= 2 128 "Infernal Barriers"
 
-#namecond aoe >= 660 1 "Burning Army"
-#namecond aoe >= 660 128 "Infernal Army"
+#namecond effectiveaoe >= 660 1 "Burning Army"
+#namecond effectiveaoe >= 660 128 "Infernal Army"
 
 #details "Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
 

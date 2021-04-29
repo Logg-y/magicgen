@@ -1,0 +1,28 @@
+#neweventset "Offensive Global action Mind Burn"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Mindstrikes"
+#verb "Mindstriking"
+
+#moduledescr "SUBJECT may unexpectedly have their minds assaulted by magical powers."
+#moduledetails "Affected commanders are be forced into a battle, where they must make a magic resistance check or suffer 13 AN magical damage. Mindless beings are immune to this effect. Pretenders are unaffected by this spell."
+
+#usefixedunitid 106
+#allowedunitmod "Offensive Action Mind Burn"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targmindless 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders had their mind attacked by a magical force!"
+#nolog

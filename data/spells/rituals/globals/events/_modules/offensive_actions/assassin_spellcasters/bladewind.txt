@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action Blade Wind"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 8
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Blades"
+#verb "Bladed"
+
+#moduledescr "SUBJECT may unexpectedly be caught in sudden volleys of flying blades."
+#moduledetails "Affected commanders are forced into a battle in which they are the the target of forty nonmagical blades, each inflicting 14 non-magical slashing damage. Pretenders are unaffected by this spell."
+
+#usefixedunitid 561
+#allowedunitmod "Offensive Action Blade Wind"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was suddenly caught in a volley of blades!"
+#nolog

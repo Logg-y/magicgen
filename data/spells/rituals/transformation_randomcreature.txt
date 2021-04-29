@@ -1,0 +1,81 @@
+#neweffect "Transformation Death"
+#copyspell "Soul Slay"
+-- attack caster
+#effect 10112
+#damage 9999
+-- MR negates, AN, internal damage
+#spec 36028797018968448
+#schools -1
+#paths -1
+#name 1 "Transformation Shock"
+#name 2 "Transformation Shock"
+#name 4 "Transformation Shock"
+#name 8 "Transformation Shock"
+#name 16 "Transformation Shock"
+#name 32 "Transformation Shock"
+#name 64 "Transformation Shock"
+#nextspell "Transformation Become Younger"
+#end
+
+
+#neweffect "Transformation Become Younger"
+#effect 10101
+#damage -9000
+#spec 537395200
+#nreff 1
+#fatiguecost 0
+#pathlevel 1
+#schools -1
+#power 3
+#maxpower 13
+#name 1 "Renewing Flames"
+#name 2 "Jolt of Youth"
+#name 4 "Renewing Waters"
+#name 8 "Earthen Renewal"
+#name 16 "Otherworldly Vigour"
+#name 32 "Taste of Undeath"
+#name 64 "Nature's Renewal"
+#end
+
+#neweffect "Transformation Ritual into Magicgen creature"
+#effect 10130
+#damage 0
+#spec 537395200
+#power 3
+#maxpower 13
+#nreff 1
+#pathlevel 2
+#fatiguecost 1000
+-- alt ench thaum
+#schools 50
+
+#eventset "Transform into Creature"
+
+-- not blood
+#paths 127
+#secondarypaths 127
+#secondarypathchance 50
+
+#nextspell "Transformation Death"
+
+#name 1 "Become Beast of Flames"
+#name 2 "Become Beast of Air"
+#name 4 "Become Beast of Waters"
+#name 8 "Become Beast of Earth"
+#name 16 "Become Otherworldly Creature"
+#name 32 "Become Deathly Creature"
+#name 64 "Become Creature of Nature"
+#descr 1 "The caster attempts to transform into a young magical creature of flames. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 2 "The caster attempts to transform into a young magical creature of air. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 4 "The caster attempts to transform into a young magical creature of water. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 8 "The caster attempts to transform into a young magical creature of earth. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 16 "The caster attempts to transform into a young otherworldly creature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 32 "The caster attempts to transform into an undead creature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#descr 64 "The caster attempts to transform into a young creature of nature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
+#details "The caster must pass a special MR check or die, even if immortal. Regardless of the caster's original MR, his base MR is considered to be 15 for the purposes of this check, regardless of the caster's actual MR. The caster becomes 9000 years younger if successful.\nThere are various possible results of this transformation. If the transformation fails, all items will safely be returned to the lab."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end

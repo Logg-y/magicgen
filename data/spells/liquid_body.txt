@@ -26,13 +26,13 @@
 
 #details "Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
 
-#namecond aoe < 2 4 "Liquid Body"
+#namecond effectiveaoe < 2 4 "Liquid Body"
 
-#namecond2 2 <= aoe < 666 4 "Liquid Warriors"
-#namecond2 2 <= aoe < 666 4 "Wave Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Liquid Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Wave Warriors"
 
-#namecond aoe == 666 4 "Liquid Army"
-#namecond aoe == 666 4 "Army of the Waves"
+#namecond effectiveaoe == 666 4 "Liquid Army"
+#namecond effectiveaoe == 666 4 "Army of the Waves"
 
 #descr 4 "The body of SUBJECT is magically converted into a liquid-like substance. This provides considerable protection from physical damage and permanent wounds, but slows PRONOUN down and weakens PRONOUN."
 
@@ -67,13 +67,13 @@
 
 #details "Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
 
-#namecond aoe < 2 4 "Liquid Body"
+#namecond effectiveaoe < 2 4 "Liquid Body"
 
-#namecond2 2 <= aoe < 666 4 "Liquid Warriors"
-#namecond2 2 <= aoe < 666 4 "Wave Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Liquid Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Wave Warriors"
 
-#namecond aoe == 666 4 "Liquid Army"
-#namecond aoe == 666 4 "Army of the Waves"
+#namecond effectiveaoe == 666 4 "Liquid Army"
+#namecond effectiveaoe == 666 4 "Army of the Waves"
 
 #descr 4 "The body of SUBJECT is magically converted into a liquid-like substance. This provides considerable protection from physical damage and permanent wounds, but slows PRONOUN down and weakens PRONOUN."
 

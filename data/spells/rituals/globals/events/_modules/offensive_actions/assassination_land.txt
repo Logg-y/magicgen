@@ -9,13 +9,13 @@
 #verb "Assault"
 
 #moduledescr "SUBJECT may suddenly find themselves attacked by a magical beast."
-#moduledetails "Affected commanders may be attacked by a magical monster. This can only happen in land provinces."
+#moduledetails "Affected commanders may be attacked by a magical monster. This can only happen in land provinces. Pretenders are unaffected by this spell."
 
 #selectunitmod "Land OK"
 #desiredmontagsize 10
 #restrictunitstospellpaths 1
 
-#moduleskipchance 45
+#moduleskipchance 20
 
 #mincreaturepower 0
 #maxcreaturepower 1
@@ -83,7 +83,6 @@
 #allowedunitmod "Summon Paralysisweapon"
 #allowedunitmod "Summon Greaterparalysisweapon"
 #allowedunitmod "Summon Petrifyweapon"
-#allowedunitmod "Summon Plagueweapon"
 #allowedunitmod "Summon Weakpoison"
 #allowedunitmod "Summon Strongpoison"
 #allowedunitmod "Summon Deathpoison"

@@ -41,9 +41,10 @@
 #descr 32 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 
 -- evo-like, can have close range variants, scale aoe
-#spelltype 38
+#spelltype 34
 
 #power 5
+#maxpower 14
 #scalerate 1
 #pathlevel 3
 #end
@@ -54,6 +55,7 @@
 #spec 64
 #aoe 1
 #power 6
+#maxpower 14
 #precision 1
 #range 5030
 #pathlevel 4

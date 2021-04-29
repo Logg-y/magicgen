@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Astral Geyser"
+#minpowerlevel -4
+#maxpowerlevel -4
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Tears"
+#verb "Otherworldly"
+
+#moduledescr "SUBJECT may unexpectedly be struck by energy released from a hole in the fabric of reality."
+#moduledetails "Affected commanders are forced into a battle in which they are the the target of Astral Geyser. A direct hit will add two horror marks, an indirect hit will only inflict 2AN magical damage, with a magic resistance roll to negate the damage. Pretenders are unaffected by this spell."
+
+#usefixedunitid 106
+#allowedunitmod "Offensive Action Astral Geyser"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was unexpectedly exposed to hole in the fabric of reality!"
+#nolog

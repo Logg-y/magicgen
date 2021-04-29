@@ -1,6 +1,6 @@
 from Enums.SpellTypes import SpellTypes
 
-DAMAGING_SPELL_EFFECTS = [2, 103, 74, 73]
+DAMAGING_SPELL_EFFECTS = [2, 103, 74, 73, 3, 109]
 
 class SpellModifier(object):
     def __init__(self):

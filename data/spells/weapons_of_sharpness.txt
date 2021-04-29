@@ -23,11 +23,11 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe == 1 8 "Sharpen Weapons"
+#namecond effectiveaoe == 1 8 "Sharpen Weapons"
 
-#namecond aoe < 666 8 "Sharpened Weapons"
+#namecond effectiveaoe < 666 8 "Sharpened Weapons"
 
-#namecond aoe == 666 8 "Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "Sharpened Weapons"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
@@ -61,11 +61,11 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe == 1 8 "Sharpen Weapons"
+#namecond effectiveaoe == 1 8 "Sharpen Weapons"
 
-#namecond aoe < 666 8 "Sharpened Weapons"
+#namecond effectiveaoe < 666 8 "Sharpened Weapons"
 
-#namecond aoe == 666 8 "Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "Sharpened Weapons"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 

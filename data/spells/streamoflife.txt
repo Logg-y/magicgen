@@ -5,6 +5,7 @@
 #spec 36028797564752000
 #aoe 2
 #power 5
+#maxpower 14
 #precision 2
 #range 5035
 #pathlevel 2
@@ -34,6 +35,7 @@
 #spec 36028797564752000
 #aoe 1
 #power 5
+#maxpower 8
 #precision 2
 #range 5035
 #pathlevel 2
@@ -43,6 +45,7 @@
 #paths 64
 #secondarypaths 64
 #secondarypathchance 0
+#skipchance 33
 #name 64 "%Stream% of Life"
 #name 64 "Overwhelming Life"
 

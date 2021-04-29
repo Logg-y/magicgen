@@ -78,3 +78,86 @@
 
 #end
 
+---
+
+#newsecondary "Summon Coldpower 3"
+
+#anysummon 1
+
+#paths 4
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.7
+
+#unitmod "Summon Coldpower 3"
+#descr "The summoned %creature% %is% much more powerful in colder provinces."
+
+#end
+
+#newsecondary "Summon Heatpower 3"
+
+#anysummon 1
+
+#paths 1
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.7
+
+#unitmod "Summon Heatpower 3"
+#descr "The summoned %creature% %is% more powerful in warmer provinces."
+
+#end
+
+#newsecondary "Summon Deathpower 3"
+
+#anysummon 1
+
+#paths 32
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.1
+
+#unitmod "Summon Deathpower"
+#descr "The summoned %creature% %is% attuned to death, and %is% much stronger in withering lands."
+
+#end
+
+#newsecondary "Summon Growthpower 3"
+
+#anysummon 1
+
+#paths 64
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 3.3
+
+#unitmod "Summon Growthpower 3"
+#descr "The summoned %creature% %is% attuned to life, and %is% much stronger in flourishing lands."
+
+#end
+
+#newsecondary "Summon Darkpower 5"
+
+#anysummon 1
+
+#paths 32
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Darkpower 5"
+#descr "The summoned %creature% %is% accustomed to living in darkness, and becomes much stronger there."
+
+#end
+
+

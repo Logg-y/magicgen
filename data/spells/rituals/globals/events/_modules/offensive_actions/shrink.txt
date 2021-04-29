@@ -15,7 +15,7 @@
 #verb "Shrinking"
 
 #moduledescr "SUBJECT may have their bodies permanently shrunken by malign magic."
-#moduledetails "Affected commanders become shrunken."
+#moduledetails "Affected commanders become shrunken. Pretenders are unaffected by this spell."
 
 
 #end

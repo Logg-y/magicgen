@@ -23,10 +23,10 @@
 #paths 32
 #secondarypaths 4
 
-#namecond aoe < 2 32 "Aura of Terror"
+#namecond effectiveaoe < 2 32 "Aura of Terror"
 
-#namecond2 2 <= aoe < 600 32 "Warriors of Terror"
-#namecond aoe > 600 32 "Army of Terror"
+#namecond2 2 <= effectiveaoe < 600 32 "Warriors of Terror"
+#namecond effectiveaoe > 600 32 "Army of Terror"
 
 #details "Grants +5 Fear."
 

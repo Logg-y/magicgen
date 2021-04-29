@@ -5,3 +5,11 @@
 #set undeadleader 1
 #descr "This particular CREATURE may reanimate living beings it kills as soulless."
 #end
+
+#newunitmod "Summon Raiseonkill 2"
+#req raiseonkill == -1
+#set raiseonkill 100
+#nameprefix "Reanimating"
+#set undeadleader 1
+#descr "This particular CREATURE will reanimate living beings it kills as soulless."
+#end

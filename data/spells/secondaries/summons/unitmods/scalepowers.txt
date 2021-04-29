@@ -43,3 +43,51 @@
 #nameprefix "Cavedwelling"
 #descr "This particular CREATURE is accustomed to living in caves, and fights more effectively in darkness."
 #end
+
+
+
+#newunitmod "Summon Coldpower 3"
+#req firepower == -1
+#req coldpower == -1
+#req winterpower == -1
+#req fallpower == -1
+#req springpower == -1
+#req summerpower == -1
+#set coldpower 3
+#nameprefix "Wintery"
+#descr "This particular CREATURE is accustomed to living in harsh winter lands, and fights much more effectively in colder provinces."
+#end
+
+#newunitmod "Summon Heatpower 3"
+#req firepower == -1
+#req coldpower == -1
+#req winterpower == -1
+#req fallpower == -1
+#req springpower == -1
+#req summerpower == -1
+#set firepower 3
+#nameprefix "Summery"
+#descr "This particular CREATURE is accustomed to living in warmer lands, and fights much less effectively in colder provinces."
+#end
+
+#newunitmod "Summon Deathpower 3"
+#req deathpower == -1
+#set deathpower 3
+#nameprefix "Deathly"
+#descr "This particular CREATURE draws power from dying beings, making it much more effective in provinces with death scales."
+#end
+
+#newunitmod "Summon Growthpower 3"
+#req deathpower == -1
+#set deathpower -3
+#nameprefix "Lifebound"
+#descr "This particular CREATURE draws power from living beings, making it much more effective in provinces where life is flourishing."
+#end
+
+#newunitmod "Summon Darkpower 5"
+#req darkpower == -1
+#set darkpower 5
+#set darkvision 100
+#nameprefix "Abyssdwelling"
+#descr "This particular CREATURE is accustomed to living in caves, and fights much more effectively in darkness."
+#end

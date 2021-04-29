@@ -12,11 +12,11 @@
 
 #aoe 0
 #power 1
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 50
+#fatiguecost 30
 #precision 3
 #range 35
 
@@ -46,11 +46,11 @@
 
 #aoe 0
 #power 1
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 50
+#fatiguecost 30
 #precision 3
 #range 35
 
@@ -79,11 +79,11 @@
 
 #aoe 0
 #power 1
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 50
+#fatiguecost 30
 #precision 3
 #range 35
 

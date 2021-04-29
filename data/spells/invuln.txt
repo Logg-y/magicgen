@@ -27,16 +27,16 @@
 
 #details "Grants Invulnerability 15."
 
-#namecond aoe < 10 32 "Stygian %Skin%"
-#namecond aoe < 10 32 "Stygian Flesh"
-#namecond aoe < 10 4 "Stygian %Skin%"
-#namecond aoe < 10 4 "Stygian Flesh"
+#namecond effectiveaoe < 10 32 "Stygian %Skin%"
+#namecond effectiveaoe < 10 32 "Stygian Flesh"
+#namecond effectiveaoe < 10 4 "Stygian %Skin%"
+#namecond effectiveaoe < 10 4 "Stygian Flesh"
 
-#namecond2 10 <= aoe < 666 32 "Stygian Warriors"
-#namecond2 10 <= aoe < 666 4 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 4 "Stygian Warriors"
 
-#namecond aoe == 666 32 "Stygian Army"
-#namecond aoe == 666 4 "Stygian Army"
+#namecond effectiveaoe == 666 32 "Stygian Army"
+#namecond effectiveaoe == 666 4 "Stygian Army"
 
 
 #descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
@@ -74,16 +74,16 @@
 
 #details "Grants Invulnerability 15."
 
-#namecond aoe < 10 32 "Stygian %Skin%"
-#namecond aoe < 10 32 "Stygian Flesh"
-#namecond aoe < 10 4 "Stygian %Skin%"
-#namecond aoe < 10 4 "Stygian Flesh"
+#namecond effectiveaoe < 10 32 "Stygian %Skin%"
+#namecond effectiveaoe < 10 32 "Stygian Flesh"
+#namecond effectiveaoe < 10 4 "Stygian %Skin%"
+#namecond effectiveaoe < 10 4 "Stygian Flesh"
 
-#namecond2 10 <= aoe < 666 32 "Stygian Warriors"
-#namecond2 10 <= aoe < 666 4 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 4 "Stygian Warriors"
 
-#namecond aoe == 666 32 "Stygian Army"
-#namecond aoe == 666 4 "Stygian Army"
+#namecond effectiveaoe == 666 32 "Stygian Army"
+#namecond effectiveaoe == 666 4 "Stygian Army"
 
 
 #descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
@@ -120,11 +120,11 @@
 
 #details "Grants Invulnerability 25."
 
-#namecond aoe < 10 32 "Invulnerability"
+#namecond effectiveaoe < 10 32 "Invulnerability"
 
-#namecond2 10 <= aoe < 666 32 "Invulnerable Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "Invulnerable Warriors"
 
-#namecond aoe == 666 32 "Invulnerable Army"
+#namecond effectiveaoe == 666 32 "Invulnerable Army"
 
 
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
@@ -161,11 +161,11 @@
 
 #details "Grants Invulnerability 25."
 
-#namecond aoe < 10 32 "Invulnerability"
+#namecond effectiveaoe < 10 32 "Invulnerability"
 
-#namecond2 10 <= aoe < 666 32 "Invulnerable Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "Invulnerable Warriors"
 
-#namecond aoe == 666 32 "Invulnerable Army"
+#namecond effectiveaoe == 666 32 "Invulnerable Army"
 
 
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."

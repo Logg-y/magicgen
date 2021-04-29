@@ -9,6 +9,7 @@
 #givecloudsfx 1
 
 #req effect != 2
+#req effect != 3
 #req effect != 103
 #req effect != 74
 #req effect != 73
@@ -17,6 +18,8 @@
 #req effect < 1000
 -- not magic duel
 #req effect != 27
+-- poison
+#req effect != 7
 #req range > 0
 
 #skipchance 10
@@ -41,6 +44,7 @@
 #givecloudsfx 1
 
 #req effect != 2
+#req effect != 3
 #req effect != 103
 #req effect != 74
 #req effect != 73
@@ -52,6 +56,9 @@
 #req nonscalingaoe < 650
 -- not ritual
 #req spelltype !& 4
+
+-- not reinvigoration
+#req effect != 8
 
 #descr "This spell forms a cloud on the battlefield and applies its effects to those who enter the cloud."
 

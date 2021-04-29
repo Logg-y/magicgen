@@ -22,12 +22,12 @@
 #paths 12
 #secondarypaths 8
 
-#namecond aoe == 0 4 "Soften Earth"
-#namecond aoe == 0 8 "Earth Grip"
-#namecond aoe < 20 4 "Soften Land"
-#namecond aoe < 20 8 "Earth Meld"
-#namecond aoe >= 20 4 "Soften Landscape"
-#namecond aoe >= 20 8 "Opening of the Earth"
+#namecond effectiveaoe == 0 4 "Soften Earth"
+#namecond effectiveaoe == 0 8 "Earth Grip"
+#namecond effectiveaoe < 20 4 "Soften Land"
+#namecond effectiveaoe < 20 8 "Earth Meld"
+#namecond effectiveaoe >= 20 4 "Soften Landscape"
+#namecond effectiveaoe >= 20 8 "Opening of the Earth"
 
 #details "Earth meld: Strength+DRN vs 23 to break free."
 

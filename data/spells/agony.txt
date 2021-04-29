@@ -4,7 +4,7 @@
 #spec 128
 #schools -1
 #paths -1
-#name 188 "Major Fear"
+#name 128 "Major Fear"
 #spelltype 2
 #scalerate 0
 #aoe 1
@@ -27,7 +27,7 @@
 
 #aoe 2001
 #power 2
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #explspr 10043
 #sound 31

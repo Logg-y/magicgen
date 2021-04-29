@@ -1,0 +1,650 @@
+-- FIRE
+
+#newunitmod "Offensive Action Fire Flies"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "This is a sudden and unexpected shower of embers."
+#setstr name "Burning Embers"
+#setstr onebattlespell "Fire Flies"
+#end
+
+#newunitmod "Offensive Action Fire Darts"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "This is a sudden, unexpected, and large shower of embers."
+#setstr name "Burning Embers"
+#setstr onebattlespell "Fire Darts"
+#end
+
+#newunitmod "Offensive Action Flame Bolt"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "This is a sudden, unexpected, and large bolt of flames."
+#setstr name "Bolt of Flame"
+#setstr onebattlespell "Flame Bolt"
+#end
+
+#newunitmod "Offensive Action Flare"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "This is a sudden, unexpected, and large bolt of flames."
+#setstr name "Bolt of Flame"
+#setstr onebattlespell "Flare"
+#end
+
+#newunitmod "Offensive Action Fireball"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "This is a sudden and unexpected bolt of flames."
+#setstr name "Bolt of Flame"
+#setstr onebattlespell "Fireball"
+#end
+
+#newunitmod "Offensive Action Falling Fires"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "These flames struck unexpectedly, burning those in their way."
+#setstr name "Searing Flames"
+#setstr onebattlespell "Falling Fires"
+#end
+
+#newunitmod "Offensive Action Pillar of Fire"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#setstr descr "A gigantic pillar of flame, striking from the skies unexpectedly."
+#setstr name "Pillar of Fire"
+#setstr onebattlespell "Pillar of Fire"
+#end
+
+#newunitmod "Offensive Action Conflagration"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#set prec 30
+#setstr descr "A mysterious force, capable of causing spontaneous combustion."
+#setstr name "Power of Flame"
+#setstr onebattlespell "Conflagration"
+#end
+
+#newunitmod "Offensive Action Incinerate"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set firepower 3
+#set prec 30
+#setstr descr "A mysterious force, capable of causing a victim to be consumed by flames from the inside."
+#setstr name "Power of Flame"
+#setstr onebattlespell "Incinerate"
+#end
+
+
+
+
+
+
+-- AIR
+
+#newunitmod "Offensive Action Lightning Bolt"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set stormpower 5
+#set allrange 10
+#setstr descr "This is a sudden and unexpected bolt of lightning."
+#setstr name "Lightning Bolt"
+#setstr onebattlespell "Lightning Bolt"
+#end
+
+#newunitmod "Offensive Action Thunder Strike"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set stormpower 5
+#set allrange 10
+#setstr descr "This is a sudden, unexpected, and very large bolt of lightning."
+#setstr name "Thunder Strike"
+#setstr onebattlespell "Thunder Strike"
+#end
+
+#newunitmod "Offensive Action Orb Lightning"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set stormpower 5
+#set allrange 10
+#setstr descr "This is a sudden arcing discharge of lightning."
+#setstr name "Arcing Charge"
+#setstr onebattlespell "Orb Lightning"
+#end
+
+#newunitmod "Offensive Action Chain Lightning"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set stormpower 5
+#set allrange 10
+#setstr descr "This is a sudden and violent arcing discharge of lightning."
+#setstr name "Arcing Charge"
+#setstr onebattlespell "Chain Lightning"
+#end
+
+#newunitmod "Offensive Action Shimmering Field"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set stormpower 5
+#set allrange 10
+#setstr descr "This is a sudden discharge of static lightning."
+#setstr name "Static Discharge"
+#setstr onebattlespell "Shimmering Fields"
+#end
+
+
+-- WATER
+
+#newunitmod "Offensive Action Cold Bolt"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a sudden and unexpected bolt of freezing air."
+#setstr name "Cold Bolt"
+#setstr onebattlespell "Cold Bolt"
+#end
+
+#newunitmod "Offensive Action Falling Frost"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a sudden blast of icy frost."
+#setstr name "Falling Frost"
+#setstr onebattlespell "Falling Frost"
+#end
+
+#newunitmod "Offensive Action Ice Strike"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a ball of ice that will explode into sharp shards on impact."
+#setstr name "Icy Explosion"
+#setstr onebattlespell "Ice Strike"
+#end
+
+#newunitmod "Offensive Action Niefel Flames"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a massive icy blast that may freeze its victims to death."
+#setstr name "Icy Blast"
+#setstr onebattlespell "Niefel Flames"
+#end
+
+#newunitmod "Offensive Action Liquify"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a magical force that threatens to turn its victims into pools of molten flesh."
+#setstr name "Liquification"
+#setstr onebattlespell "Liquify"
+#end
+
+#newunitmod "Offensive Action Sailors Death"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set coldpower 3
+#setstr descr "This is a magical force that threatens to drown its victims."
+#setstr name "Drowning"
+#setstr onebattlespell "Sailors' Death"
+#end
+
+-- EARTH
+
+#newunitmod "Offensive Action Flying Shards"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This is a sudden and unexpected volley of rocks."
+#setstr name "Flying Rocks"
+#setstr onebattlespell "Flying Shards"
+#end
+
+-- #newunitmod "Offensive Action Destruction"
+-- #set homesick 100
+-- #set hp 1
+-- #set landdamage 100
+-- #set uwdamage 100
+-- #set homesick 100
+-- #set drawsize -99
+-- #set allrange 10
+-- #set darkvision 100
+-- #setstr descr "This is a sudden buildup of magical energy that threatens the integrity of the armour of those nearby."
+-- #setstr name "Force of Destruction"
+-- #setstr onebattlespell "Destruction"
+-- #end
+
+#newunitmod "Offensive Action Blade Wind"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This is a sudden and unexpected volley of sharp blades."
+#setstr name "Flying Blades"
+#setstr onebattlespell "Blade Wind"
+#end
+
+#newunitmod "Offensive Action Maws of the Earth"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This is a magical and exceptionally deep pothole. Falling into it would almost certainly be extremely painful."
+#setstr name "Unseen Pothole"
+#setstr onebattlespell "Maws of the Earth"
+#end
+
+#newunitmod "Offensive Action Magma Eruption"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This is a rupture in the crust caused by seismic action, allowing magma to spew forth."
+#setstr name "Magma Eruption"
+#setstr onebattlespell "Magma Eruption"
+#end
+
+
+--- ASTRAL
+
+#newunitmod "Offensive Action Star Fires"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set magicpower 3
+#setstr descr "This is an otherworldly beam of stellar light."
+#setstr name "Stellar Beam"
+#setstr onebattlespell "Star Fires"
+#end
+
+#newunitmod "Offensive Action Astral Geyser"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set magicpower 3
+#setstr descr "This is an instantenously existing hole in the fabric of reality. Otherworldly energy is free to flow out of it."
+#setstr name "Astral Hole"
+#setstr onebattlespell "Astral Geyser"
+#end
+
+#newunitmod "Offensive Action Farstrike"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set magicpower 1
+#setstr descr "This is a mysterious force that may mightily strike without warning."
+#setstr name "Unseen Force"
+#setstr onebattlespell "Farstrike"
+#end
+
+#newunitmod "Offensive Action Mind Burn"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set magicpower 1
+#setstr descr "This is a mysterious force that may attack minds without warning."
+#setstr name "Mindstrike"
+#setstr onebattlespell "Mind Burn"
+#end
+
+#newunitmod "Offensive Action Soul Slay"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set magicpower 1
+#setstr descr "This is a mysterious force that may attack souls without warning."
+#setstr name "Soul Rip"
+#setstr onebattlespell "Soul Slay"
+#end
+
+
+--- DEATH
+
+#newunitmod "Offensive Action Enfeeble"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a mysterious force that may permanently weaken victims without warning."
+#setstr name "Enfeebling Power"
+#setstr onebattlespell "Enfeeble"
+#end
+
+#newunitmod "Offensive Action Bone Grinding"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a mysterious force that may break bones and permanently injure."
+#setstr name "Bonebreaking Power"
+#setstr onebattlespell "Bone Grinding"
+#end
+
+#newunitmod "Offensive Action Disintegrate"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a mysterious force that attempts to disintegrate the bodies of its victims."
+#setstr name "Disintegrating Power"
+#setstr onebattlespell "Disintegrate"
+#end
+
+#newunitmod "Offensive Action Shadow Bolt"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a bolt of shadowy energy."
+#setstr name "Shadow Bolt"
+#setstr onebattlespell "Shadow Bolt"
+#end
+
+#newunitmod "Offensive Action Shadow Blast"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a blast of shadowy energy."
+#setstr name "Shadow Blast"
+#setstr onebattlespell "Shadow Blast"
+#end
+
+#newunitmod "Offensive Action Decay"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower 3
+#setstr descr "This is a magical force of decay, causing those affected to age rapidly."
+#setstr name "Force of Decay"
+#setstr onebattlespell "Wind of Death"
+#end
+
+--- NATURE
+
+#newunitmod "Offensive Action Vine Arrow"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower -3
+#set prec 10
+#setstr descr "This is a magical arrow, enchanted to cause overgrowth of vines wherever it lands."
+#setstr name "Vine Arrow"
+#setstr onebattlespell "Vine Arrow"
+#end
+
+#newunitmod "Offensive Action Storm of Thorns"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower -3
+#set prec 10
+#setstr descr "This is a volley of magical arrows, each enchanted to cause overgrowth of vines wherever they land."
+#setstr name "Vine Arrow Volley"
+#setstr onebattlespell "Storm of Thorns"
+#end
+
+#newunitmod "Offensive Action Frog"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower -3
+#set prec 10
+#setstr descr "This wild energy may permanently transform those it affects into frogs."
+#setstr name "Tranformative Energy"
+#setstr onebattlespell "Curse of the Frog Prince"
+#end
+
+#newunitmod "Offensive Action Stream of Life"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower -3
+#set prec 10
+#setstr descr "This potent life energy may overwhelm the body of those it affects, resulting in death."
+#setstr name "Stream of Life"
+#setstr onebattlespell "Stream of Life"
+#end
+
+#newunitmod "Offensive Action Charm"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#set deathpower -3
+#set prec 10
+#setstr descr "This wild energy appeals to the freedom of its victim. If this is not resisted, the victim will become lawless and fight their former allies."
+#setstr name "Call to Chaos"
+#setstr onebattlespell "Charm"
+#end
+
+--- BLOOD
+
+#newunitmod "Offensive Action Bleed"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This magical energy causes its target to begin bleeding."
+#setstr name "Power of Bleeding"
+#setstr onebattlespell "Bleed"
+#end
+
+#newunitmod "Offensive Action Blood Burst"
+#set homesick 100
+#set hp 1
+#set landdamage 100
+#set uwdamage 100
+#set homesick 100
+#set drawsize -99
+#set allrange 10
+#set darkvision 100
+#setstr descr "This magical energy causes its victims' blood to explode."
+#setstr name "Spontaneous Explosion"
+#setstr onebattlespell "Blood Burst"
+#end
+
+

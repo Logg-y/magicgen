@@ -1,0 +1,30 @@
+#neweventset "Offensive Global action Frog"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Caecilians"
+#verb "Caecilian"
+
+#moduledescr "SUBJECT may unexpectedly transform into frogs."
+#moduledetails "Affected commanders are be forced into a battle, where they must make a magic resistance check or be permanently transformed into a frog. Pretenders, mindless, undead, or inanimates will not be targeted by this spell."
+
+#usefixedunitid 361
+#allowedunitmod "Offensive Action Frog"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targmindless 0
+#req_targundead 0
+#req_targinanimate 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was affected by wild energy and may have been transformed into a frog!"
+#nolog

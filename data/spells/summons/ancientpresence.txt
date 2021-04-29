@@ -3,10 +3,11 @@
 #damage 2251
 #spec 0
 #power 8
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 6
-#fatiguecost 100
+#fatiguecost 200
 #scalefatiguemult 90
 #sound 31
 #schools 1
@@ -30,6 +31,7 @@
 #damage 2251
 #spec 0
 #power 9
+#maxpower 14
 #nreff 1
 #pathlevel 7
 #fatiguecost 1500
@@ -47,7 +49,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatiguemult 1200
 
 #scalerate 4
 #end

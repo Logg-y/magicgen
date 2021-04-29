@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Enfeeble"
+#minpowerlevel -3
+#maxpowerlevel -3
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Weakness"
+#verb "Weakening"
+
+#moduledescr "SUBJECT may unexpectedly become permanently weaker."
+#moduledetails "Affected commanders are be forced into a battle, where they become the target of a spell that causes them to lose 2 points of strength if they fail a magic resistance check. Multiple applications of this effect are cumulative. Pretenders are unaffected by this spell."
+
+#usefixedunitid 676
+#allowedunitmod "Offensive Action Enfeeble"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was attacked by a magical force which attempted to steal their strength!"
+#nolog

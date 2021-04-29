@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Maws of the Earth"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 8
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Potholes"
+#verb "Tumbling"
+
+#moduledescr "SUBJECT may unexpectedly fall into magical deep potholes, inflicting serious injuries."
+#moduledetails "Affected commanders are forced into a battle in which non-flying creatures are the the target of a 15AP magical untyped attack. Pretenders are unaffected by this spell."
+
+#usefixedunitid 561
+#allowedunitmod "Offensive Action Maws of the Earth"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders suddenly encountered a massive magical pothole!"
+#nolog

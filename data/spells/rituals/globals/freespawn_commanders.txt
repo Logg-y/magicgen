@@ -43,46 +43,46 @@
 #end
 
 
-#neweffect "Freespawn Commanders UW"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 15
-#nreff 1
-#pathlevel 7
-#fatiguecost 6000
-#scalefatiguemult 450
-#schools 1
-#paths 68
-#skipchance 80
-#secondarypaths 127
-#secondarypathchance 50
-#eventset "Freespawn Commanders UW"
-
-#pathskipchance 128 85
-
--- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
-#secondaryeffectskipchance 80
-
-#name 1 "Commanders of Fire"
-#name 2 "Commanders of Air"
-#name 4 "Commanders of Water"
-#name 8 "Commanders of Earth"
-#name 16 "Otherworldly Commanders"
-#name 32 "Deathly Commanders"
-#name 64 "Gaia's Commanders"
-#name 128 "Infernal Commanders"
-#descr 1 "This enchantment causes fiery portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 2 "This enchantment causes thunderous portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 4 "This enchantment causes watery portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 8 "This enchantment causes earthen portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 16 "This enchantment causes otherworldly portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#details "In each friendly underwater province, there is a 4% chance per point of friendly dominion that a single commander spawns."
-
-#spelltype 4
-#scalerate 1
-#end
+-- #neweffect "Freespawn Commanders UW"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 15
+-- #nreff 1
+-- #pathlevel 7
+-- #fatiguecost 6000
+-- #scalefatiguemult 450
+-- #schools 1
+-- #paths 68
+-- #skipchance 80
+-- #secondarypaths 127
+-- #secondarypathchance 50
+-- #eventset "Freespawn Commanders UW"
+-- 
+-- #pathskipchance 128 85
+-- 
+-- -- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+-- #secondaryeffectskipchance 80
+-- 
+-- #name 1 "Commanders of Fire"
+-- #name 2 "Commanders of Air"
+-- #name 4 "Commanders of Water"
+-- #name 8 "Commanders of Earth"
+-- #name 16 "Otherworldly Commanders"
+-- #name 32 "Deathly Commanders"
+-- #name 64 "Gaia's Commanders"
+-- #name 128 "Infernal Commanders"
+-- #descr 1 "This enchantment causes fiery portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 2 "This enchantment causes thunderous portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 4 "This enchantment causes watery portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 8 "This enchantment causes earthen portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 16 "This enchantment causes otherworldly portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
+-- #details "In each friendly underwater province, there is a 4% chance per point of friendly dominion that a single commander spawns."
+-- 
+-- #spelltype 4
+-- #scalerate 1
+-- #end

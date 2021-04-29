@@ -11,5 +11,25 @@
 
 #unitmod "Summon Regen"
 #descr "The summoned %creature% %is% filled with magic that rapidly closes their wounds."
+#details "Creatures have 10% regeneration."
+
+#end
+
+
+#newsecondary "Summon regen 30"
+
+#anysummon 1
+
+#paths 64
+#power -4
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.4
+
+#unitmod "Summon Regen 30"
+#descr "The summoned %creature% %is% filled with magic that very rapidly closes their wounds."
+#details "Creatures have 30% regeneration."
+
 
 #end

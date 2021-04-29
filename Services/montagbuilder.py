@@ -1,5 +1,6 @@
 from DataObject.MontagResult import MontagResult
 from Services import utils
+from fileparser import unitinbasedatafinder
 import math
 
 class MontagBuilder(object):
@@ -81,10 +82,19 @@ class MontagBuilder(object):
 
             percentage = "{:.1f}%".format(montagweight/weighttotal * 100)
 
+            unittoapplyto = unitinbasedatafinder.get(unitid)
+            woundshape = getattr(unittoapplyto, "secondshape", None)
+            nametowrite = unitmod.lastunitname
+            if woundshape is not None:
+                for sizeindicator in ["Elemental", "Illearth"]:
+                    if sizeindicator in unitmod.lastunitname:
+                        nametowrite += f" (base size {unittoapplyto.size})"
+                        break
+
             if secondary is None or len(unitmod.nameprefix) < 1:
-                out.weightingstring += f"Weighting {montagweight} ({percentage}): {unitmod.lastunitname} ({secondary.name})\n"
+                out.weightingstring += f"Weighting {montagweight} ({percentage}): {nametowrite} ({secondary.name})\n"
             else:
-                out.weightingstring += f"Weighting {montagweight} ({percentage}): {unitmod.lastunitname}\n"
+                out.weightingstring += f"Weighting {montagweight} ({percentage}): {nametowrite}\n"
         out.weightingstring += f"Total creatures: {out.numcreatures}; Sum of weights: {weighttotal}\n\n"
         out.weightingstring = out.weightingstring.replace("Do Nothing", "No Modifier")
         if self.makedummymonster:
@@ -93,6 +103,12 @@ class MontagBuilder(object):
             out.modcmds += "#copystats 284\n"
             out.modcmds += "#copyspr 284\n"
             out.modcmds += f"#firstshape -{out.montagid}\n"
+            # Prevent drowning
+            out.modcmds += "#amphibian\n"
+            # These values allow MRN transformation spells with reasonable odds of failure
+            # as well as preventing any items being dropped while in this form
+            out.modcmds += "#mr 15\n"
+            out.modcmds += "#itemslots 262143\n"
             out.modcmds += f'#name "Dummy Montag {out.montagid}"' + "\n"
             out.modcmds += f'#descr "This unit has no purpose except to spawn in a unit of montag {out.montagid}."' + "\n"
             out.modcmds += "#end\n\n"

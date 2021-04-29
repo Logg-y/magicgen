@@ -3,6 +3,7 @@
 #damage 533
 #spec 8388608
 #power 3
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 3
@@ -28,6 +29,7 @@
 #damage 533
 #spec 8388608
 #power 5
+#maxpower 14
 #nreff 1001
 #pathlevel 3
 #fatiguecost 600
@@ -36,7 +38,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 70
 
 #name 32 "Revive NAMEPREFIX %Wight%"
 #descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."

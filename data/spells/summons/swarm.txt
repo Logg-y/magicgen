@@ -14,8 +14,8 @@
 #paths 64
 #secondarypaths 64
 
-#namecond nreff < 3020 64 "Swarm"
-#namecond nreff >= 3020 64 "Creeping Doom"
+#namecond effectivenreff < 30 64 "Swarm"
+#namecond effectivenreff >= 30 64 "Creeping Doom"
 #descr 64 "The caster magically enlarges a small number of insects."
 
 #spelltype 528
@@ -30,6 +30,7 @@
 #damage -9
 #spec 8388608
 #power 4
+#maxpower 14
 #precision -2
 #nreff 3012
 #pathlevel 1
@@ -40,8 +41,8 @@
 #paths 64
 #secondarypaths 64
 
-#namecond nreff < 3020 64 "Swarm"
-#namecond nreff >= 3020 64 "Creeping Doom"
+#namecond effectivenreff < 30 64 "Swarm"
+#namecond effectivenreff >= 30 64 "Creeping Doom"
 #descr 64 "The caster magically enlarges a large number of insects."
 
 #spelltype 528

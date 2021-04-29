@@ -24,11 +24,11 @@
 #paths 160
 #secondarypaths 32
 
-#namecond aoe < 1 32 "Soul Vortex"
-#namecond aoe < 1 128 "Vampiric Aura"
+#namecond effectiveaoe < 1 32 "Soul Vortex"
+#namecond effectiveaoe < 1 128 "Vampiric Aura"
 
-#namecond aoe >= 1 32 "Soul Vortex"
-#namecond aoe >= 1 128 "Vampiric Aura"
+#namecond effectiveaoe >= 1 32 "Soul Vortex"
+#namecond effectiveaoe >= 1 128 "Vampiric Aura"
 
 #descr 32 "SUBJECT begins to suck in the souls of nearby living creatures, healing and reinvigorating PRONOUN."
 #descr 128 "$BLOOD_INTRO$, SUBJECT is granted a vampiric aura that sucks in the souls of nearby living creatures. The stolen energy is used to heal and reinvigorate PRONOUN."

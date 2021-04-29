@@ -1,6 +1,6 @@
 #neweffect "Reinvigoration"
 #effect 8
-#damage 16512
+#damage 200
 #spec 8404992
 #schools 2
 
@@ -12,6 +12,7 @@
 
 #aoe 0
 #power 1
+#maxpower 1
 #pathlevel 1
 #explspr 10172
 #sound 31
@@ -23,14 +24,14 @@
 #secondarypaths 128
 
 #name 128 "Reinvigoration"
-#descr 128 "By sacrificing one blood slave, the mage will remove all of his fatigue."
+#descr 128 "$BLOOD_INTRO$, the mage will remove all of his fatigue."
 
 #end
 
 
 #neweffect "Reinvigoration AoE"
 #effect 8
-#damage 16512
+#damage 200
 #spec 8404992
 #schools 2
 
@@ -42,6 +43,7 @@
 
 #aoe 5
 #power 4
+#maxpower 13
 #pathlevel 1
 #explspr 10172
 #sound 31
@@ -57,3 +59,33 @@
 
 #end
 
+
+#neweffect "Reinvigoration Cloud"
+#effect 4008
+#damage 200
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 1.6
+
+#aoe 1
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10172
+#sound 31
+#range 0
+#fatiguecost 400
+
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Reinvigoration"
+#descr 128 "$BLOOD_INTRO$, the mage will gain a massive surge of reinvigoration, preventing him from being fatigued for a short time."
+
+#end

@@ -13,8 +13,8 @@
 #nreff 1001
 #aoe 0
 #power 1
+#maxpower 14
 #precision 2
-#maxpower 8
 #pathlevel 1
 #explspr 10306
 #sound 16

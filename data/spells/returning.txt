@@ -22,11 +22,11 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe == 0 16 "Returning"
-#namecond aoe == 1 16 "Teleportation"
+#namecond effectiveaoe == 0 16 "Returning"
+#namecond effectiveaoe == 1 16 "Teleportation"
 
-#namecond2 1 < aoe < 30 16 "Group Teleportation"
-#namecond aoe > 600 16 "Vortex of Returning"
+#namecond2 1 < effectiveaoe < 30 16 "Group Teleportation"
+#namecond effectiveaoe > 600 16 "Vortex of Returning"
 
 #descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death."
 #details "The chance of being lost in the void is 7%."
@@ -48,6 +48,7 @@
 
 #aoe 0
 #power 6
+#maxpower 14
 #pathlevel 3
 #explspr 10251
 #sound 28

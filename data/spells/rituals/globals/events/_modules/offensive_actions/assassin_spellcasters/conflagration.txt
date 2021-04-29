@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action conflagration"
+#minpowerlevel -1
+#maxpowerlevel -1
+
+#req path1 == 1
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Combustion"
+#verb "Combusting"
+
+#moduledescr "SUBJECT may spontaneously combust without warning."
+#moduledetails "Affected commanders are forced into a battle in which they are targeted by burning. Pretenders are unaffected by this spell."
+
+#usefixedunitid 640
+#allowedunitmod "Offensive Action Conflagration"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders has spontaneously combusted!"
+#nolog

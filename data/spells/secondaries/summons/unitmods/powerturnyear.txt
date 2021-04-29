@@ -9,3 +9,15 @@
 #nameprefix "Seasonal"
 #descr "This particular CREATURE is attuned to the four seasons, and becomes more powerful in the height of any season."
 #end
+
+#newunitmod "Summon Power of Turning Year 2"
+#req firepower == -1
+#req coldpower == -1
+#req winterpower == -1
+#req fallpower == -1
+#req springpower == -1
+#req summerpower == -1
+#set yearturn 5
+#nameprefix "Seasonal"
+#descr "This particular CREATURE is attuned to the four seasons, and becomes significantly more powerful in the height of any season."
+#end

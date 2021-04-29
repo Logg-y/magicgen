@@ -112,7 +112,7 @@
 #name 128 "Protection from Cold"
 #descr 1 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
-#descr 4 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
+#descr 32 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 
 #details "Grants +10 cold resistance."
@@ -155,7 +155,7 @@
 #name 128 "Blessing of Kokytos"
 #descr 1 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
-#descr 4 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
+#descr 32 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 
 #details "Grants +10 cold resistance."

@@ -12,12 +12,12 @@
 #unique 1
 -- WS
 #paths 20
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order boost 1"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -26,7 +26,7 @@
 
 #descr 4 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase slightly."
 #descr 16 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase slightly."
-#details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 order. In practice, scales settle around +2-3 of neutral."
+#details "Each friendly province has a 10% chance per point of friendly dominion to gain +1 order."
 #end
 
 #neweffect "Order boost 2"
@@ -43,12 +43,12 @@
 #unique 1
 -- WS
 #paths 20
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order boost 2"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -57,7 +57,7 @@
 
 #descr 4 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase."
 #descr 16 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase."
-#details "Each friendly province has two independent rolls at 40% chance per point of friendly dominion to gain +1 order. In practice, scales settle around +4 of neutral."
+#details "Each friendly province has two independent rolls at 10% chance per point of friendly dominion to gain +1 order."
 #end
 
 
@@ -76,12 +76,12 @@
 #unique 1
 -- WS
 #paths 20
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order boost 3"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -90,7 +90,7 @@
 
 #descr 4 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase significantly."
 #descr 16 "This enchantment calms and relaxes those in friendly dominion, making them less likely to rebel or partake in other rash actions or uprisings. Order scales in friendly dominion increase significantly."
-#details "Each friendly province has three independent rolls at 40% chance per point of friendly dominion to gain +1 order. In practice, scales settle around +5 of neutral."
+#details "Each friendly province has three independent rolls at 10% chance per point of friendly dominion to gain +1 order."
 #end
 
 
@@ -109,7 +109,7 @@
 #unique 1
 -- FS
 #paths 17
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order theft 1"
@@ -140,7 +140,7 @@
 #unique 1
 -- FS
 #paths 17
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order theft 2"
@@ -171,7 +171,7 @@
 #unique 1
 -- FS
 #paths 17
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Order theft 3"

@@ -13,7 +13,7 @@
 -- AKA magic duel, reinvigoration
 #req effect != 8
 #req effect != 27
-#req fatiguecost < 199
+#req fatiguecost < 150
 
 #fatiguecost -70
 

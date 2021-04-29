@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Storm of Thorns"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Thorns"
+#verb "Thorny"
+
+#moduledescr "SUBJECT may unexpectedly become impaled by many sharp thorns."
+#moduledetails "Affected commanders are be forced into a battle, where seven vine arrows are fired at them. Each arrow inflicts 15 magical piercing damage if it hits. Pretenders are unaffected by this spell."
+
+#usefixedunitid 361
+#allowedunitmod "Offensive Action Storm of Thorns"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was targeted by a volley of vine arrow!"
+#nolog

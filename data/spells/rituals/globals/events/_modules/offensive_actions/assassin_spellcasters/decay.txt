@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Decay"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Decay"
+#verb "Decaying"
+
+#moduledescr "SUBJECT may unexpectedly begin to age rapidly, possibly dying in the process."
+#moduledetails "Affected commanders are be forced into a battle, where they become decayed if they fail an easy MR check. Pretenders are unaffected by this spell."
+
+#usefixedunitid 676
+#allowedunitmod "Offensive Action Decay"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was struck by decaying winds!"
+#nolog

@@ -15,7 +15,7 @@
 #verb "Tainted"
 
 #moduledescr "SUBJECT may become marked by otherworldly creatures."
-#moduledetails "Affected commanders gain a horror mark."
+#moduledetails "Affected commanders gain a horror mark. Pretenders are unaffected by this spell."
 
 
 #end

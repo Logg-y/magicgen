@@ -1,6 +1,6 @@
 #neweventset "Offensive Global cond bloodhunter"
-#minpowerlevel -3
-#maxpowerlevel 2
+#minpowerlevel -1
+#maxpowerlevel 4
 
 #scaleparam "req_rare" 5
 
@@ -9,6 +9,9 @@
 
 #noun "Bloodseekers"
 #verb "Bloodseeking"
+
+-- this is very oppressive to blood hunters
+#moduleskipchance 50
 
 #textrepl "SUBJECT" "Blood hunters"
 

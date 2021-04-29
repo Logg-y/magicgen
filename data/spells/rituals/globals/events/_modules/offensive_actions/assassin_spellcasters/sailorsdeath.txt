@@ -1,0 +1,28 @@
+#neweventset "Offensive Global action Drowning"
+#minpowerlevel 1
+#maxpowerlevel 1
+
+#req path1 == 4
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Deluge"
+#verb "Drowning"
+
+#moduledescr "SUBJECT may unexpectedly have their lungs filled with water."
+#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 14 AN internal damage. Undead, inanimates, and water breathers are unaffected. Magic resistance will negate the effect. Pretenders are unaffected by this spell."
+
+#usefixedunitid 449
+#allowedunitmod "Offensive Action Sailors Death"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#req_targundead 0
+#req_targinanimate 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was the victim of some strange magic that attempted to drown him!"
+#nolog

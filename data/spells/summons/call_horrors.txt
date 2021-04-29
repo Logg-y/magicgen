@@ -3,6 +3,7 @@
 #damage -6
 #spec 8388608
 #power 4
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 4
@@ -15,8 +16,8 @@
 #secondarypathchance 70
 
 #name 128 "Call Lesser %Horror%"
-#descrcond nreff < 10 128 "Through blood sacrifice, the caster attracts several lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
-#descrcond nreff >= 10 128 "Through blood sacrifice, the caster attracts many lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts several lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
 
 #spelltype 528
 
@@ -29,6 +30,7 @@
 #damage -7
 #spec 8388608
 #power 6
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 6
@@ -41,8 +43,8 @@
 #secondarypathchance 70
 
 #name 128 "Call %Horror%"
-#descrcond nreff < 10 128 "Through blood sacrifice, the caster attracts horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
-#descrcond nreff >= 10 128 "Through blood sacrifice, the caster attracts many horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
 
 #spelltype 528
 

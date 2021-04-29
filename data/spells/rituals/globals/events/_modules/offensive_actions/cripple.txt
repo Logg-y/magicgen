@@ -13,7 +13,7 @@
 #verb "Catastrophic"
 
 #moduledescr "SUBJECT become very likely to suffer unfortunate and extreme accidents such as tripping over objects or falling off ledges. That resulting injuries result in being crippled."
-#moduledetails "Affected commanders become crippled."
+#moduledetails "Affected commanders become crippled. Pretenders are unaffected by this spell."
 
 
 #end

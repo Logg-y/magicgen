@@ -13,3 +13,20 @@
 #descr "The weapons used by the summoned %creature% %is% unusually sharp and partially bypasses armour."
 
 #end
+
+
+#newsecondary "Summon ANweap"
+
+#anysummon 1
+
+#paths 8
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 5
+
+#unitmod "Summon ANweap"
+#descr "The weapons used by the summoned %creature% %is% altered by magic and completely ignore armour."
+
+#end

@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action niefel flames"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 4
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Chills"
+#verb "Frigid"
+
+#moduledescr "SUBJECT may unexpectedly be struck by a very large blast of frigid air."
+#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 10AN cold damage. Pretenders are unaffected by this spell."
+
+#usefixedunitid 449
+#allowedunitmod "Offensive Action Niefel Flames"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was the target of a massive icy blast!"
+#nolog

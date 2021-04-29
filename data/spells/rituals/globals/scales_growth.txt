@@ -11,12 +11,12 @@
 #schools 32
 #unique 1
 #paths 192
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth boost 1"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -25,7 +25,7 @@
 
 #descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase slightly."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase slightly."
-#details "Each friendly province has a 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +2-3 of neutral."
+#details "Each friendly province has a 10% chance per point of friendly dominion to gain +1 Growth."
 #end
 
 #neweffect "Growth boost 2"
@@ -41,12 +41,12 @@
 #schools 32
 #unique 1
 #paths 192
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth boost 2"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -55,7 +55,7 @@
 
 #descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase."
-#details "Each friendly province has two independent rolls at 40% chance per point of friendly dominion to gain +1 Growth. In practice, scales settle around +4 of neutral."
+#details "Each friendly province has two independent rolls at 10% chance per point of friendly dominion to gain +1 Growth."
 #end
 
 
@@ -73,12 +73,12 @@
 #schools 32
 #unique 1
 #paths 192
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth boost 3"
 
-#basescale 40
+#basescale 10
 #spelltype 4
 #scalerate 0
 
@@ -87,7 +87,7 @@
 
 #descr 64 "This enchantment makes soils in friendly provinces more fertile and improves their yield. Growth scales in friendly dominion increase significantly."
 #descr 128 "Through a massive blood sacrifice, the caster improves the fertility of soil across the land. Growth scales in friendly dominion increase significantly."
-#details "Each friendly province has three independent rolls at 40% chance per point of friendly dominion to gain +1 Growth.  In practice, scales settle around +5 of neutral."
+#details "Each friendly province has three independent rolls at 10% chance per point of friendly dominion to gain +1 Growth."
 #end
 
 
@@ -105,7 +105,7 @@
 #schools 32
 #unique 1
 #paths 32
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth theft 1"
@@ -134,7 +134,7 @@
 #schools 32
 #unique 1
 #paths 32
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth theft 2"
@@ -162,7 +162,7 @@
 #schools 32
 #unique 1
 #paths 32
-#skipchance 95
+#skipchance 92
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Growth theft 3"

@@ -13,3 +13,20 @@
 #descr "The summoned %creature% %is% coated in stygian energy, making %it% highly resistant to mundane weapons."
 
 #end
+
+
+#newsecondary "Summon invuln 25"
+
+#anysummon 1
+
+#paths 32
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Invuln 25"
+#descr "The summoned %creature% %is% coated in deathly energy, making %it% extremely resistant to mundane weapons."
+
+#end

@@ -25,11 +25,11 @@
 #paths 132
 #secondarypaths 4
 
-#namecond aoe < 660 4 "Numbness"
-#namecond aoe < 660 128 "Chill of Kokytos"
+#namecond effectiveaoe < 660 4 "Numbness"
+#namecond effectiveaoe < 660 128 "Chill of Kokytos"
 
-#namecond aoe >= 660 4 "Glacial Wind"
-#namecond aoe >= 660 128 "Wind of Kokytos"
+#namecond effectiveaoe >= 660 4 "Glacial Wind"
+#namecond effectiveaoe >= 660 128 "Wind of Kokytos"
 
 #details "Freezing: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed, and take 2d6 fatigue damage per round. Thawing chance per round is 25% + (6*cold resistance) + (6*heat scale). Having 5 or more cold resistance, a heat aura, or being ethereal prevents the effect."
 

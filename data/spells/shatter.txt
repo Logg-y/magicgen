@@ -4,6 +4,7 @@
 #spec 8405120
 #aoe 0
 #power 5
+#maxpower 14
 #precision 100
 #range 20
 #pathlevel 3

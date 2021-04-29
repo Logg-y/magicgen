@@ -5,6 +5,11 @@
 #paths 16
 #power 0
 
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
 -- not montag
 #req damage > 0
 #fatiguecostpereffect 65
@@ -12,5 +17,49 @@
 #unitmod "Summon Deathwail"
 #descr "The summoned %creature% will release a psychic wail upon death, paralyzing those nearby that fail to resist."
 #details "When the creatures die, they emit a psychic wail over 5 squares. Those in the area of effect must make a magic resistance check or take 20 paralysis damage."
+
+#end
+
+#newsecondary "Summon Deathwail 2"
+
+#anysummon 1
+
+#paths 16
+#power -2
+
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 100
+
+#unitmod "Summon Deathwail 2"
+#descr "The summoned %creature% will release a psychic wail upon death, paralyzing those nearby that fail to resist."
+#details "When the creatures die, they emit a psychic wail over 12 squares. Those in the area of effect must make a magic resistance check or take 20 paralysis damage."
+
+#end
+
+#newsecondary "Summon Deathwail 3"
+
+#anysummon 1
+
+#paths 16
+#power -4
+
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 200
+
+#unitmod "Summon Deathwail 3"
+#descr "The summoned %creature% will release a psychic wail upon death, paralyzing those nearby that fail to resist."
+#details "When the creatures die, they emit a psychic wail over 30 squares. Those in the area of effect must make a magic resistance check or take 20 paralysis damage."
 
 #end

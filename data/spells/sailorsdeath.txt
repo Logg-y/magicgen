@@ -25,8 +25,8 @@
 #secondarypaths 38
 #secondarypathchance 5
 
-#namecond aoe < 1 4 "Sailor's Death"
-#namecond aoe >= 1 4 "Sailors' Death"
+#namecond effectiveaoe < 1 4 "Sailor's Death"
+#namecond effectiveaoe >= 1 4 "Sailors' Death"
 #name 4 "Drown"
 
 #name 2 "Suffocate"

@@ -23,9 +23,9 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe < 666 64 "Fascination"
+#namecond effectiveaoe < 666 64 "Fascination"
 
-#namecond aoe >= 666 64 "Fascinate Army"
+#namecond effectiveaoe >= 666 64 "Fascinate Army"
 
 #descr 64 "The caster tries to project images and scents in the consciousness of SUBJECT. Should it succeed PRONOUN will be distracted for a short while and hopefully enable someone to strike the enemy down."
 #details "Those that fail to resist are stunned for a round."

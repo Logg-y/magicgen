@@ -32,3 +32,21 @@
 #details "When the creatures die, they emit a burst of fire over 10 squares. Those in the area of effect take 10 AP fire damage."
 
 #end
+
+
+#newsecondary "Summon Large Explode on Death 2"
+
+#anysummon 1
+
+#paths 1
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 200
+
+#unitmod "Summon Large Explode on Death 2"
+#descr "The summoned %creature% %is% imbued with fire magic that causes %it% to explode with immense force when killed."
+#details "When the creatures die, they emit a burst of fire over 25 squares. Those in the area of effect take 10 AP fire damage."
+
+#end

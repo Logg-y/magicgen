@@ -3,6 +3,7 @@
 #damage 284
 #spec 0
 #power 1
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -28,6 +29,7 @@
 #damage 284
 #spec 0
 #power 1
+#maxpower 14
 #nreff 5007
 #pathlevel 1
 #fatiguecost 200
@@ -79,7 +81,7 @@
 #damage 284
 #spec 0
 #power 3
-#maxpower 9
+#maxpower 14
 #nreff 7020
 #pathlevel 3
 #fatiguecost 800

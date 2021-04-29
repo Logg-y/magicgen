@@ -50,6 +50,8 @@ class Spell(object):
         # This is used only for storing the unit object for eventsets
         # as they use compounded unitmods, this is where the intermediate goes
         self.globaleventunit = None
+        self.hiddenench = None
+        self.friendlyench = None
 
     def p(self):
         print(f"name {self.name}")
@@ -153,6 +155,10 @@ class Spell(object):
             out += f"#restricted {self.restricted}\n"
         if self.aicastmod != 0:
             out += f"#aicastmod {self.aicastmod}\n"
+        if self.hiddenench is not None:
+            out += f"#hiddenench {self.hiddenench}\n"
+        if self.friendlyench is not None:
+            out += f"#friendlyench {self.friendlyench}\n"
         out += "#end\n\n"
 
         if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):

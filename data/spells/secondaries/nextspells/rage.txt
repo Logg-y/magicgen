@@ -22,8 +22,8 @@
 #paths -1
 #secondarypaths 1
 
-#namecond aoe < 1 1 "Rage"
-#namecond aoe < 1 64 "Rage"
+#namecond effectiveaoe < 1 1 "Rage"
+#namecond effectiveaoe < 1 64 "Rage"
 
 #name 1 "Minor Rage"
 #name 2 "Minor Rage"

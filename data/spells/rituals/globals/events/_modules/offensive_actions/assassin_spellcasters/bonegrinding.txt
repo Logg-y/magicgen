@@ -1,0 +1,26 @@
+#neweventset "Offensive Global action Bone Grinding"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Weakness"
+#verb "Weakening"
+
+#moduledescr "SUBJECT may unexpectedly become injured or crippled for life when their bones suddenly snap without warning."
+#moduledetails "Affected commanders are be forced into a battle, where they become the target of Bone Grinding, inflicting 3AN nonmagical damage, applying a limp (MR negates), and applying crippling (MR negates easily). Pretenders are unaffected by this spell."
+
+#usefixedunitid 676
+#allowedunitmod "Offensive Action Bone Grinding"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "The bones of one of your commanders suddenly shattered!"
+#nolog

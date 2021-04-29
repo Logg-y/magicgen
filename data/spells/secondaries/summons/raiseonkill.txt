@@ -14,3 +14,20 @@
 #descr "The summoned %creature% may reanimate living creatures as soulless."
 
 #end
+
+#newsecondary "Summon Raiseonkill 2"
+
+#anysummon 1
+
+#paths 32
+#power -4
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.1
+#magicpathvaluescaling 0.05
+
+#unitmod "Summon Raiseonkill 2"
+#descr "The summoned %creature% will reanimate living creatures it kills as soulless."
+
+#end

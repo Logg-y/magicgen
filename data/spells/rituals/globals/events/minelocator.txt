@@ -100,7 +100,7 @@
 #req_0popok
 #req_rare 50
 #req_hiddensite 1
-#msg "Magical flooded mines have been located! [Flooded Mine]"
+#msg "Magical flooded mines have been located! [Flooded Mines]"
 #revealsite
 #end
 

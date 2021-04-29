@@ -7,7 +7,7 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 40
+#req_domchance 10
 #req_0popok
 #nolog
 #notext
@@ -20,7 +20,7 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 40
+#req_domchance 10
 #req_0popok
 #nolog
 #notext

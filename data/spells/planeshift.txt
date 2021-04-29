@@ -4,14 +4,14 @@
 #spec 16512
 #schools 2
 
-#spelltype 66
+#spelltype 34
 
-#scalerate 0
+#scalerate 1
 -- #scalecost 1.6
 
 #aoe 0
 #power 9
-#maxpower 9
+#maxpower 19
 #pathlevel 4
 #sound 18
 #explspr 10253
@@ -35,14 +35,14 @@
 #spec 16512
 #schools 2
 
-#spelltype 66
+#spelltype 34
 
-#scalerate 0
+#scalerate 1
 -- #scalecost 1.6
 
 #aoe 0
 #power 9
-#maxpower 9
+#maxpower 19
 #pathlevel 4
 #sound 18
 #explspr 10252
@@ -66,14 +66,14 @@
 #spec 17592186060928
 #schools 32
 
-#spelltype 66
+#spelltype 34
 
-#scalerate 0
+#scalerate 1
 -- #scalecost 1.6
 
 #aoe 0
-#power 9
-#maxpower 9
+#power 8
+#maxpower 19
 #pathlevel 4
 #sound 31
 #explspr 10251

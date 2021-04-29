@@ -11,7 +11,7 @@
 #verb "Wounding"
 
 #moduledescr "SUBJECT become very likely to suffer unfortunate accidents causing permanent injuries."
-#moduledetails "Affected commanders gain a never healing wound."
+#moduledetails "Affected commanders gain a never healing wound. Pretenders are unaffected by this spell."
 
 
 #end

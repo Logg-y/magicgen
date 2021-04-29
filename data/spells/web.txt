@@ -15,7 +15,7 @@
 #aoe 2
 #power 2
 #precision 2
-#maxpower 9
+#maxpower 14
 #pathlevel 1
 #flightspr 10278
 #explspr 10277
@@ -50,7 +50,7 @@
 #aoe 2
 #power 4
 #precision 2
-#maxpower 9
+#maxpower 14
 #pathlevel 3
 #explspr 102787
 #sound 42

@@ -51,6 +51,7 @@ class EventSet(object):
         self.modulebasescale = None
         self.makedummymonster = 1
         self.moduleskipchance = 0
+        self.setspelldamage = 0
 
         self.moduletailingcode = ""
 
@@ -551,8 +552,12 @@ class EventSet(object):
             resultcmds = result.modcmds
             if self.makedummymonster:
                 output = output.replace("UNITID", str(result.dummymonsterid))
+                if self.setspelldamage:
+                    spell.damage = result.dummymonsterid
             else:
                 output = output.replace("UNITID", str(-1*result.montagid))
+                if self.setspelldamage:
+                    spell.damage = -1*result.montagid
             if self.modulegroup is None:
                 output += resultcmds
             else:

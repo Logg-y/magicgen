@@ -20,8 +20,9 @@ ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 proc = None
 nationselection = None
 outputqueue = queue.Queue()
+vanillanations = []
 
-ver = "v2.1.5"
+ver = "v2.1.6"
 
 
 def output_polling_thread(timeout=0.1):
@@ -88,6 +89,7 @@ def display_nationchoice(modstring):
     nationals.nationinfo = {}
     nationals.read_vanilla()
     nationals.read_mods(modstring)
+    vanillanations = []
     # Build layout
     elementlists = {1: [], 2: [], 3: []}
     # Keep the element keys for each category to enable the select/deselect buttons
@@ -112,6 +114,7 @@ def display_nationchoice(modstring):
                 elementlists[eraint] = []
             elementlists[eraint].append(box)
             categorykeys[eraint].append(key)
+            vanillanations.append(int(line["id"]))
     # mod nations
     for natid, modnation in nationals.nations.items():
         uirow = []
@@ -170,6 +173,8 @@ def display_nationchoice(modstring):
         if event is None:
             break
 
+        print(list(nationals.nations.keys()))
+
         # Update selections
         nationselection = []
         for era in range(1, 4):
@@ -180,7 +185,8 @@ def display_nationchoice(modstring):
                     nationid = int(m.groups()[0])
                     # nations without an era set will not appear in the selector
                     # because they aren't full nations! don't make nationals for them!
-                    if nationid not in nationals.nations or nationals.nations[nationid].era is not None:
+                    if nationid in vanillanations or \
+                            (nationid in nationals.nations and nationals.nations[nationid].era is not None):
                         nationselection.append(nationid)
 
         if event == "Close":
@@ -240,9 +246,9 @@ def main():
          sg.InputText(key='-spellsperlevel-', size=(4, 1), default_text=14)],
         [sg.Text(
             'Construction will get only this proportion of the normal number of spells. This is intended to be '
-            'less than 1.0. (0.45)',
+            'less than 1.0. (0.6)',
             size=(50, 2), relief="ridge"),
-            sg.InputText(key='-constructionfactor-', size=(4, 1), default_text=0.45)],
+            sg.InputText(key='-constructionfactor-', size=(4, 1), default_text=0.6)],
         [sg.Text(
             'Number of national spells to try to make per nation. These spells will be directed towards the '
             'paths the nation has access to. (12)',

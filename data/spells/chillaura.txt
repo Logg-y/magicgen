@@ -26,13 +26,13 @@
 #paths 164
 #secondarypaths 4
 
-#namecond aoe < 2 4 "Chill of Winter"
-#namecond aoe < 2 32 "Chill of the Grave"
-#namecond aoe < 2 128 "Chill from Kokytos"
+#namecond effectiveaoe < 2 4 "Chill of Winter"
+#namecond effectiveaoe < 2 32 "Chill of the Grave"
+#namecond effectiveaoe < 2 128 "Chill from Kokytos"
 
-#namecond aoe >= 2 4 "Warriors of Winter"
-#namecond aoe >= 2 32 "Warriors from the Grave"
-#namecond aoe >= 2 128 "Warriors from Kokytos"
+#namecond effectiveaoe >= 2 4 "Warriors of Winter"
+#namecond effectiveaoe >= 2 32 "Warriors from the Grave"
+#namecond effectiveaoe >= 2 128 "Warriors from Kokytos"
 
 #details "Grants chill aura."
 

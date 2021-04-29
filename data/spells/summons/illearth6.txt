@@ -3,6 +3,7 @@
 #damage 2280
 #spec 8388608
 #power 5
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 4
@@ -14,7 +15,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 97
+#skipchance 70
 
 #details "The elementals are size 6."
 #name 128 "Summon NAMEPREFIX Massive %Illearth%"
@@ -31,6 +32,7 @@
 #damage 2280
 #spec 8388608
 #power 5
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 2200
@@ -85,7 +87,7 @@
 #damage 2280
 #spec 8388608
 #power 6
-#maxpower 9
+#maxpower 14
 #nreff 1
 #pathlevel 4
 #fatiguecost 3200

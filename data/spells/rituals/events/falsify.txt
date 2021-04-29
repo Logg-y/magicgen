@@ -1,0 +1,17 @@
+#neweventset "Falsify"
+
+#usefixedunitid 297
+#selectunitmod "Falsify"
+#allowedunitmod "Falsify"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Falsify create unit"
+#nolog
+#notext
+#nation -2
+#req_friendlyench ENCHANTID
+#10d6units UNITID
+#end

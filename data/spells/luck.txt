@@ -23,14 +23,14 @@
 #paths 144
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Luck"
-#namecond aoe < 2 128 "Otherworldly Luck"
+#namecond effectiveaoe < 2 16 "Luck"
+#namecond effectiveaoe < 2 128 "Otherworldly Luck"
 
-#namecond2 2 <= aoe < 666 16 "Fortune"
-#namecond2 2 <= aoe < 666 128 "Otherworldly Fortune"
+#namecond2 2 <= effectiveaoe < 666 16 "Fortune"
+#namecond2 2 <= effectiveaoe < 666 128 "Otherworldly Fortune"
 
-#namecond aoe == 666 16 "Battle Fortune"
-#namecond aoe == 666 128 "Otherworldly Fortune"
+#namecond effectiveaoe == 666 16 "Battle Fortune"
+#namecond effectiveaoe == 666 128 "Otherworldly Fortune"
 
 #details "Luck: 75% chance to negate fatal damage."
 
@@ -66,15 +66,15 @@
 #paths 144
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Luck"
-#namecond aoe < 2 128 "Otherworldly Luck"
+#namecond effectiveaoe < 2 16 "Luck"
+#namecond effectiveaoe < 2 128 "Otherworldly Luck"
 
-#namecond2 2 <= aoe < 666 16 "Fortune"
-#namecond2 2 <= aoe < 666 128 "Otherworldly Fortune"
+#namecond2 2 <= effectiveaoe < 666 16 "Fortune"
+#namecond2 2 <= effectiveaoe < 666 128 "Otherworldly Fortune"
 
-#namecond aoe == 666 16 "Battle Fortune"
-#namecond aoe == 666 128 "Otherworldly Fortune"
-#namecond aoe == 666 16 "Will of the Fates"
+#namecond effectiveaoe == 666 16 "Battle Fortune"
+#namecond effectiveaoe == 666 128 "Otherworldly Fortune"
+#namecond effectiveaoe == 666 16 "Will of the Fates"
 
 #details "Luck: 75% chance to negate fatal damage."
 

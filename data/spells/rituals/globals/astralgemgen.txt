@@ -11,7 +11,7 @@
 -- #schools 17
 -- #unique 1
 -- #paths 8
--- #skipchance 80
+-- #skipchance 90
 -- #secondarypaths 8
 -- #secondarypathchance 90
 -- #eventset "Astralgemgen 2d6"
@@ -36,7 +36,7 @@
 #schools 50
 #unique 1
 #paths 16
-#skipchance 80
+#skipchance 90
 #secondarypaths 16
 #secondarypathchance 90
 #eventset "Astralgemgen 3d6"
@@ -61,7 +61,7 @@
 #schools 50
 #unique 1
 #paths 16
-#skipchance 80
+#skipchance 90
 #secondarypaths 16
 #secondarypathchance 90
 #eventset "Astralgemgen 6d6"
@@ -87,7 +87,7 @@
 #schools 50
 #unique 1
 #paths 16
-#skipchance 80
+#skipchance 90
 #secondarypaths 16
 #secondarypathchance 90
 #eventset "Astralgemgen 9d6"
@@ -113,7 +113,7 @@
 -- #schools 17
 -- #unique 1
 -- #paths 8
--- #skipchance 80
+-- #skipchance 90
 -- #secondarypaths 8
 -- #secondarypathchance 90
 -- #eventset "Astralgemgen 12d6"

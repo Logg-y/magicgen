@@ -1,0 +1,29 @@
+#neweventset "Offensive Global action Blood Burst"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 128
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Explosions"
+#verb "Explosive"
+
+#moduledescr "SUBJECT may experience their blood exploding without warning, inflicting severe wounds."
+#moduledetails "Affected commanders are be forced into a battle, where they are the target of Blood Burst, inflicting 11AN magical damage. Pretenders, undead and inanimates are unaffected by this spell."
+
+#usefixedunitid 303
+#allowedunitmod "Offensive Action Blood Burst"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targundead 0
+#req_targinanimate 0
+#assowner 1
+#assassin UNITID
+#msg "The blood of one of your commanders spontaneously expoded!"
+#nolog

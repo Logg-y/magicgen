@@ -1,0 +1,29 @@
+#neweventset "Offensive Global action Bleed"
+#minpowerlevel -1
+#maxpowerlevel -1
+
+#req path1 == 128
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Bleeding"
+#verb "Bloody"
+
+#moduledescr "SUBJECT may suddenly begin bleeding severely."
+#moduledetails "Affected commanders are be forced into a battle, where they begin bleeding if they fail to resist. Pretenders, undead and inanimates are unaffected by this spell."
+
+#usefixedunitid 303
+#allowedunitmod "Offensive Action Bleed"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targundead 0
+#req_targinanimate 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders suddenly began to bleed severely!"
+#nolog

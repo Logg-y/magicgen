@@ -1,0 +1,28 @@
+#neweventset "Offensive Global action Soul Slay"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 16
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Soulripping"
+#verb "Soulripping"
+
+#moduledescr "SUBJECT may unexpectedly have their souls pulled from their bodies by magical powers."
+#moduledetails "Affected commanders are be forced into a battle, where they must make a magic resistance check or be soul slain. Mindless beings are immune to this effect. Pretenders are unaffected by this spell."
+
+#usefixedunitid 106
+#allowedunitmod "Offensive Action Soul Slay"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targmindless 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders had their soul attacked by a magical force!"
+#nolog

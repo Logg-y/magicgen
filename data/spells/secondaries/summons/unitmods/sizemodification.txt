@@ -88,7 +88,7 @@
 
 #mult hp 0.4551
 #req hp > 3
-#str -6
+#str -8
 #req str > 6
 #def 2
 #mapmove -4

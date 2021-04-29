@@ -22,11 +22,10 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe > 666 8 "Burden of Earth"
+#namecond effectiveaoe < 660 8 "Burden of Earth"
 
-#namecond aoe == 665 8 "Curse of Stones"
+#namecond effectiveaoe >= 660 8 "Curse of Stones"
 
-#namecond aoe == 663 8 "Curse of Stones"
 
 #descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
 #details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3."

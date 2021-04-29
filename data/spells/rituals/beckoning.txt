@@ -4,7 +4,7 @@
 #damage 666
 #spec 8392704
 #power 6
-#maxpower 9
+#maxpower 14
 #provrange 4
 #nreff 5025
 #pathlevel 5

@@ -11,6 +11,7 @@
 
 #unitmod "Summon Poisonbarbs"
 #descr "The %hide% of the summoned %creature% %is% covered in many small poisonous barbs, poisoning those who attack with short weapons."
+#details "Summoned creatures gain poison barbs 5."
 
 #end
 
@@ -27,6 +28,7 @@
 
 #unitmod "Summon Poisonskin"
 #descr "The %hide% of the summoned %creature% %is% magically covered in an ever-refreshing poison. Those who come into direct contact suffer fatigue damage."
+#details "Summoned creatures gain poison skin 20."
 
 #end
 
@@ -43,6 +45,7 @@
 
 #unitmod "Summon Fireshield"
 #descr "The summoned %creature% %is% surrounded by magical flames. These flames harm those trying to attack in melee."
+#details "Summoned creatures gain 8AP fireshield."
 
 #end
 
@@ -59,6 +62,7 @@
 
 #unitmod "Summon Banefireshield"
 #descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
+#details "Summoned creatures gain 8AP banefire shield."
 
 #end
 
@@ -75,6 +79,8 @@
 
 #unitmod "Summon Acidshield"
 #descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and harming the attacker."
+#details "Summoned creatures gain 8AP acid splash."
+
 
 #end
 
@@ -107,6 +113,7 @@
 
 #unitmod "Summon Overcharge"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
+#details "Summoned creatures gain overcharged, dealing 1AN shock damage to melee attackers."
 
 #end
 
@@ -191,4 +198,96 @@
 #descr "When damaged, the summoned %creature% gain the ability to redirect any damage suffered onto their attacker instead. The attacker may attempt to resist this effect."
 
 #end
+
+
+-----
+
+
+#newsecondary "Summon Poisonbarbs 15"
+
+#anysummon 1
+
+#paths 64
+#power -4
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.9
+
+#unitmod "Summon Poisonbarbs 15"
+#descr "The %hide% of the summoned %creature% %is% covered in many small poisonous barbs, poisoning those who attack with short weapons."
+#details "Summoned creatures gain poison barbs 15."
+
+#end
+
+#newsecondary "Summon Fireshield 14"
+
+#anysummon 1
+
+#paths 1
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.1
+
+#unitmod "Summon Fireshield 14"
+#descr "The summoned %creature% %is% surrounded by magical flames. These flames harm those trying to attack in melee."
+#details "Summoned creatures gain 14AP fireshield."
+
+#end
+
+#newsecondary "Summon Banefireshield 14"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.7
+
+#unitmod "Summon Banefireshield 14"
+#descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
+#details "Summoned creatures gain 14AP banefire shield."
+
+#end
+
+#newsecondary "Summon Acidsplash 14"
+
+#anysummon 1
+
+#paths 5
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Acidshield 14"
+#descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and badly harming the attacker."
+#details "Summoned creatures gain 14AP acid splash."
+
+#end
+
+#newsecondary "Summon Overcharge 3"
+
+#anysummon 1
+
+#paths 2
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Overcharge 3"
+#descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
+#details "Summoned creatures gain overcharged, dealing 3AN shock damage to melee attackers."
+
+#end
+
+
+
 

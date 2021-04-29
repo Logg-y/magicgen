@@ -3,6 +3,7 @@
 #damage 393
 #spec 8388608
 #power 4
+#maxpower 14
 #precision -2
 #nreff 3
 #pathlevel 2

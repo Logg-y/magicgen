@@ -13,7 +13,7 @@
 #verb "Accident Inducing"
 
 #moduledescr "SUBJECT become very likely to suffer unfortunate accidents, such as tripping over objects, that leave them with a limp."
-#moduledetails "Affected commanders gain a limp."
+#moduledetails "Affected commanders gain a limp. Pretenders are unaffected by this spell."
 
 
 #end

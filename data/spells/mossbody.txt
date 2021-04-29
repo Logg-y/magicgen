@@ -25,17 +25,17 @@
 
 #details "Mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison cloud dealing 1AN damage with an AoE of 4."
 
-#namecond aoe < 2 4 "Algaebody"
-#namecond aoe < 2 32 "Putrid Flesh"
-#namecond aoe < 2 64 "Mossbody"
+#namecond effectiveaoe < 2 4 "Algaebody"
+#namecond effectiveaoe < 2 32 "Putrid Flesh"
+#namecond effectiveaoe < 2 64 "Mossbody"
 
-#namecond2 2 <= aoe < 666 4 "Algae Warriors"
-#namecond2 2 <= aoe < 666 32 "Putrid Warriors"
-#namecond2 2 <= aoe < 666 64 "Moss Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Algae Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "Putrid Warriors"
+#namecond2 2 <= effectiveaoe < 666 64 "Moss Warriors"
 
-#namecond aoe == 666 4 "Army of Algae"
-#namecond aoe == 666 32 "Putrid Army"
-#namecond aoe == 666 64 "Army of Moss"
+#namecond effectiveaoe == 666 4 "Army of Algae"
+#namecond effectiveaoe == 666 32 "Putrid Army"
+#namecond effectiveaoe == 666 64 "Army of Moss"
 
 
 #descr 4 "The %body% of SUBJECT %is% covered in algae-rich water. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."

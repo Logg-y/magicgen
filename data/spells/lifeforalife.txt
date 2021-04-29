@@ -11,10 +11,10 @@
 
 #aoe 0
 #power 5
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #sound 18
-#fatiguecost 100
+#fatiguecost 150
 #precision 100
 #range 100
 

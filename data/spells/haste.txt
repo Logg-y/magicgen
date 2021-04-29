@@ -19,17 +19,18 @@
 #range 10
 #fatiguecost 10
 #skipchance 30
-#pathperresearch -0.33
+#pathperresearch 0.25
+#scalefatigueexponent -0.33
 
 
 #paths 66
 #secondarypaths 66
 
-#namecond aoe < 2 2 "Swiftness of the Wind"
-#namecond aoe < 2 64 "Swiftness of the Hare"
+#namecond effectiveaoe < 2 2 "Swiftness of the Wind"
+#namecond effectiveaoe < 2 64 "Swiftness of the Hare"
 
-#namecond aoe >= 2 2 "Haste of the Wind"
-#namecond aoe >= 2 64 "Haste"
+#namecond effectiveaoe >= 2 2 "Haste of the Wind"
+#namecond effectiveaoe >= 2 64 "Haste"
 
 #details "Doubles combat speed."
 

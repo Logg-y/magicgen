@@ -24,10 +24,10 @@
 #paths 32
 #secondarypaths 32
 
-#namecond aoe == 1 32 "Frighten"
+#namecond effectiveaoe == 1 32 "Frighten"
 
-#namecond2 1 < aoe < 30 32 "Panic"
-#namecond aoe > 30 32 "Wave of Dread"
+#namecond2 1 < effectiveaoe < 30 32 "Panic"
+#namecond effectiveaoe > 30 32 "Wave of Dread"
 
 #descr 32 "SUBJECT is filled with a dark fear. This may cause PRONOUN to flee in terror."
 

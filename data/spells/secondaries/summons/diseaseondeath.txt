@@ -21,7 +21,7 @@
 #anysummon 1
 
 #paths 32
-#power 0
+#power -1
 
 -- not montag
 #req damage > 0
@@ -30,5 +30,22 @@
 #unitmod "Summon Large Disease on Death"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a large $putrid$ cloud of disease when killed."
 #details "When the creatures die, they emit a burst of disease over 10 squares. Those that fail a magic resistance check in the area of effect become diseased."
+
+#end
+
+#newsecondary "Summon Large Disease on Death 2"
+
+#anysummon 1
+
+#paths 32
+#power -3
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 200
+
+#unitmod "Summon Large Disease on Death 2"
+#descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a gigantic $putrid$ cloud of disease when killed."
+#details "When the creatures die, they emit a burst of disease over 25 squares. Those that fail a magic resistance check in the area of effect become diseased."
 
 #end

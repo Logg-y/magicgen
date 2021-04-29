@@ -27,18 +27,18 @@
 
 #details "Stoneskin: Grants natural protection 15, or +2 if already 14 or higher. Also incurs susceptibility to Cold 5."
 
-#namecond aoe < 2 8 "$Marble$skin"
-#namecond aoe < 2 4 "Iceskin"
-#namecond aoe < 2 4 "Frozen skin"
-#namecond aoe < 2 32 "Boneskin"
+#namecond effectiveaoe < 2 8 "$Marble$skin"
+#namecond effectiveaoe < 2 4 "Iceskin"
+#namecond effectiveaoe < 2 4 "Frozen skin"
+#namecond effectiveaoe < 2 32 "Boneskin"
 
-#namecond2 2 <= aoe < 666 8 "$Marble$ Warriors"
-#namecond2 2 <= aoe < 666 4 "Frozen Warriors"
-#namecond2 2 <= aoe < 666 32 "Bone Warriors"
+#namecond2 2 <= effectiveaoe < 666 8 "$Marble$ Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Frozen Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "Bone Warriors"
 
-#namecond aoe == 666 8 "$Marble$ Army"
-#namecond aoe == 666 4 "Frozen Army"
-#namecond aoe == 666 32 "Bone Army"
+#namecond effectiveaoe == 666 8 "$Marble$ Army"
+#namecond effectiveaoe == 666 4 "Frozen Army"
+#namecond effectiveaoe == 666 32 "Bone Army"
 
 #descr 8 "The skin of SUBJECT is turned into solid $marble$. This provides considerable protection from damage, but makes PRONOUN more susceptible to cold."
 #descr 4 "The skin of SUBJECT is magically converted into a layer of solid ice. This provides considerable protection from damage, but makes PRONOUN more susceptible to cold."
@@ -77,18 +77,18 @@
 
 #details "Stoneskin: Grants natural protection 15, or +2 if already 14 or higher. Also incurs susceptibility to Cold 5."
 
-#namecond aoe < 2 8 "$Marble$skin"
-#namecond aoe < 2 4 "Iceskin"
-#namecond aoe < 2 4 "Frozen skin"
-#namecond aoe < 2 32 "Boneskin"
+#namecond effectiveaoe < 2 8 "$Marble$skin"
+#namecond effectiveaoe < 2 4 "Iceskin"
+#namecond effectiveaoe < 2 4 "Frozen skin"
+#namecond effectiveaoe < 2 32 "Boneskin"
 
-#namecond2 2 <= aoe < 666 8 "$Marble$ Warriors"
-#namecond2 2 <= aoe < 666 4 "Frozen Warriors"
-#namecond2 2 <= aoe < 666 32 "Bone Warriors"
+#namecond2 2 <= effectiveaoe < 666 8 "$Marble$ Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "Frozen Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "Bone Warriors"
 
-#namecond aoe == 666 8 "$Marble$ Army"
-#namecond aoe == 666 4 "Frozen Army"
-#namecond aoe == 666 32 "Bone Army"
+#namecond effectiveaoe == 666 8 "$Marble$ Army"
+#namecond effectiveaoe == 666 4 "Frozen Army"
+#namecond effectiveaoe == 666 32 "Bone Army"
 
 #descr 8 "The skin of SUBJECT is turned into solid $marble$. This provides considerable protection from damage, but makes PRONOUN more susceptible to cold."
 #descr 4 "The skin of SUBJECT is magically converted into a layer of solid ice. This provides considerable protection from damage, but makes PRONOUN more susceptible to cold."

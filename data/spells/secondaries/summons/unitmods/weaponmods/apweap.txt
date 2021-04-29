@@ -7,3 +7,13 @@
 #spec 64
 #nameprefix "Piercing"
 #end
+
+#newweaponmod "ANweap"
+-- weapon not already AP or AN
+#req spec !& 64
+#req spec !& 128
+#req effect == 2
+-- no special effects on weapon already
+#spec 128
+#nameprefix "Supremely Penetrating"
+#end

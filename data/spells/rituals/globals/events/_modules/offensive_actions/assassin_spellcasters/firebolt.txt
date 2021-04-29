@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action fire bolt"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 1
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Flames"
+#verb "Flaming"
+
+#moduledescr "SUBJECT may unexpectedly be struck by a large bolt of flame."
+#moduledetails "Affected commanders are forced into a battle in which they are the target of a large fire bolt which inflicts 22AP fire damage if it hits. Pretenders are unaffected by this spell."
+
+#usefixedunitid 640
+#allowedunitmod "Offensive Action Flame Bolt"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "A large bolt of flame unexpectedly flew towards one of your commanders!"
+#nolog

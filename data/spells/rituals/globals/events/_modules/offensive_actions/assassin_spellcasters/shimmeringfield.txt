@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Shimmering Field"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 2
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Charges"
+#verb "Charged"
+
+#moduledescr "SUBJECT may unexpectedly be struck by an extremely strong static charge."
+#moduledetails "Affected commanders are forced into a battle in which they have a large area 10AN shock spell cast at them. Pretenders are unaffected by this spell."
+
+#usefixedunitid 562
+#allowedunitmod "Offensive Action Shimmering Field"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "A massive static charge was unleashed on one of your commanders!"
+#nolog

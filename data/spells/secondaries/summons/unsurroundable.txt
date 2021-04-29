@@ -13,5 +13,44 @@
 
 #unitmod "Summon Unsurroundable"
 #descr "The summoned %creature% %is% exceptionally aware of %its% surroundings and are better able to deal with being under attack from multiple assailants."
+#details "Summoned creatures gain unsurroundable 2."
+
+#end
+
+#newsecondary "Summon Unsurroundable 5"
+
+#anysummon 1
+
+#paths 18
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.85
+-- uselses in assassinations
+#req effect != 10050
+
+#unitmod "Summon Unsurroundable 5"
+#descr "The summoned %creature% %is% exceptionally aware of %its% surroundings and are better able to deal with being under attack from multiple assailants."
+#details "Summoned creatures gain unsurroundable 5."
+
+#end
+
+#newsecondary "Summon Unsurroundable 8"
+
+#anysummon 1
+
+#paths 18
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.4
+-- uselses in assassinations
+#req effect != 10050
+
+#unitmod "Summon Unsurroundable 8"
+#descr "The summoned %creature% %is% exceptionally aware of %its% surroundings and are better able to deal with being under attack from multiple assailants."
+#details "Summoned creatures gain unsurroundable 8."
 
 #end

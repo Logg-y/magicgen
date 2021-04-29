@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action incinerate"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 1
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Flames"
+#verb "Flaming"
+
+#moduledescr "SUBJECT may unexpectedly be struck internally by flames."
+#moduledetails "Affected commanders are forced into a battle in which they are struck with 18 AN fire damage. Pretenders are unaffected by this spell."
+
+#usefixedunitid 640
+#allowedunitmod "Offensive Action Incinerate"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was suddenly burned from the inside out!"
+#nolog

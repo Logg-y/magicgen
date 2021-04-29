@@ -21,12 +21,12 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe <= 5 64 "Tangle Vines"
-#namecond aoe <= 5 64 "Entanglement"
+#namecond effectiveaoe <= 5 64 "Tangle Vines"
+#namecond effectiveaoe <= 5 64 "Entanglement"
 
 #namecond 5 < aoe < 600 64 "Wild Growth"
 
-#namecond aoe > 600 64 "Relentless Vines"
+#namecond effectiveaoe > 600 64 "Relentless Vines"
 
 #details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 

@@ -3,6 +3,7 @@
 #damage 1224
 #spec 0
 #power 2
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -28,6 +29,7 @@
 #damage 1224
 #spec 0
 #power 3
+#maxpower 14
 #nreff 2001
 #pathlevel 3
 #fatiguecost 300
@@ -99,7 +101,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 20
 
-#name 64 "Summon NAMEPREFIX Dire %Wolf%"
+#name 64 "Send NAMEPREFIX Dire %Wolf%"
 #descr 64 "The caster summons ARTICLE dire %wolf% to attack a distant province. Dire wolves are large and mighty wolves."
 
 

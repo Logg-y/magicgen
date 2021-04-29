@@ -12,6 +12,7 @@
 
 #aoe 0
 #power 5
+#maxpower 14
 #pathlevel 4
 #explspr 10121
 #sound 45
@@ -22,11 +23,11 @@
 #paths 8
 #secondarypaths 8
 
-#namecond aoe == 0 8 "Petrification"
-#namecond2 1 < aoe < 20 8 "Petrify Group"
-#namecond aoe >= 20 8 "Mass Petrification"
+#namecond effectiveaoe == 0 8 "Petrification"
+#namecond2 1 < effectiveaoe < 20 8 "Petrify Group"
+#namecond effectiveaoe >= 20 8 "Mass Petrification"
 
-#details "Petrified targets have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #descr 8 "The caster temporarily turns creatures within a SIZE area to stone. There is no resisting this effect. Instead of reverting to their original form, petrified creatures may crumble to dust."
 

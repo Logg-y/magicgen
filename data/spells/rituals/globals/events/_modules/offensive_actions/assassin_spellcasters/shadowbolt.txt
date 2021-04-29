@@ -1,0 +1,28 @@
+#neweventset "Offensive Global action Shadow Bolt"
+#minpowerlevel 0
+#maxpowerlevel 0
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Shadows"
+#verb "Deathly"
+
+#moduledescr "SUBJECT may unexpectedly be subjected to a dark blast which bypasses their armour."
+#moduledetails "Affected commanders are be forced into a battle, where they become the target of Shadow Bolt, inflicting 10AN magical damage if they fail a MR check. Undead are immune to this effect. Pretenders are unaffected by this spell."
+
+#usefixedunitid 676
+#allowedunitmod "Offensive Action Shadow Bolt"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targundead 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was the target of a shadow bolt!"
+#nolog

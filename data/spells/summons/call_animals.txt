@@ -5,8 +5,9 @@
 #damage -5
 #spec 0
 #power 4
+#maxpower 14
 #precision -2
-#nreff 3
+#nreff 5
 #pathlevel 3
 #fatiguecost 100
 #sound 44
@@ -15,13 +16,13 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "Call Otherwordly Animals"
+#name 64 "Call Otherworldly Animals"
 #descr 64 "The caster calls for animals from other worlds to assist him in battle. The resulting waves of animals rush from the side of the battlefield to attack the caster's enemies, though they will return to their homes after the battle. The nature of the animals summoned is totally random, be it mundane, civilised or magical beasts."
 
 #spelltype 528
 
-#scalerate 1.6
-#scalefatiguemult 18
+#scalerate 1.8
+#scalefatiguemult 2
 #skipchance 90
 #end
 
@@ -31,6 +32,7 @@
 #damage 403
 #spec 0
 #power 1
+#maxpower 14
 #nreff 3005
 #pathlevel 2
 #fatiguecost 300

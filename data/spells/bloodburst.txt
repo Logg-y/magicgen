@@ -12,7 +12,7 @@
 
 #aoe 1
 #power 1
-#maxpower 9
+#maxpower 14
 #pathlevel 2
 #explspr 10118
 #sound 31

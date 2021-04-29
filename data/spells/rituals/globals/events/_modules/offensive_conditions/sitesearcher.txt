@@ -1,6 +1,6 @@
 #neweventset "Offensive Global cond sitesearcher"
-#minpowerlevel -5
-#maxpowerlevel 0
+#minpowerlevel -7
+#maxpowerlevel -2
 
 #scaleparam "req_rare" 5
 

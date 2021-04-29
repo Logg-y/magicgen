@@ -8,3 +8,14 @@
 #nameprefix "Angry"
 #descr "This particular CREATURE is particularly angry and may go berserk with little provocation."
 #end
+
+#newunitmod "Summon Berserking 2"
+#req berserk == -1
+#req mind < 1
+#req mor < 50
+#req hp > 10
+#req immobile == -1
+#set berserk 7
+#nameprefix "Furious"
+#descr "This particular CREATURE is particularly angry and may go berserk with little provocation."
+#end

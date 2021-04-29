@@ -1,6 +1,6 @@
 #neweventset "Offensive Global cond patroller"
-#minpowerlevel -4
-#maxpowerlevel 1
+#minpowerlevel -3
+#maxpowerlevel 2
 
 #scaleparam "req_rare" 5
 
@@ -9,6 +9,9 @@
 
 #noun "Vigilance"
 #verb "Vigilant"
+
+-- this is very oppressive to blood hunters
+#moduleskipchance 30
 
 #textrepl "SUBJECT" "Patrolling commanders"
 

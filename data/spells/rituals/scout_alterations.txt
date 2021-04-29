@@ -1,0 +1,65 @@
+#neweffect "Concealment"
+#effect 10085
+#damage 0
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+-- alt ench thaum
+#schools 50
+
+#eventset "Concealment"
+
+-- not blood
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+#friendlyench 1
+#provrange 5
+#onlyfriendlydst 1
+
+
+#name 2 "Concealment"
+#descr 2 "The caster uses mastery of illusion magic to hide an enormous number of troops from scouts in the targeted province. This effect lasts longer if more gems are used to fuel the spell, and is lost prematurely if the caster dies or the province is taken."
+#details "The targeted province appears to have 9999 fewer units in it for scout reports. This takes effect for units that move into the targeted province in the same turn it was cast."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end
+
+#neweffect "Falsify"
+#effect 10085
+#damage 0
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 300
+-- alt ench thaum
+#schools 50
+
+#eventset "Falsify"
+
+-- not blood
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+#friendlyench 1
+#provrange 5
+#onlyfriendlydst 1
+
+
+#name 2 "Falsify"
+#descr 2 "The caster uses mastery of illusion magic to massively increase the number of units that appear to be in the targeted province, making it virtually impossible for scouts to have any idea how many units are truly there. Due to the massive scale of the interference, it is very obvious that magic is being used to distort the scouts' vision. This effect lasts longer if more gems are used to fuel the spell, and is lost prematurely if the caster dies or the province is taken."
+#details "While the enchantment lasts, spawns 10d6 illusory units in the targeted province each turn. Each of these illusions increases the number of units seen by scouts by 50. The illusions disappear after one turn."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end

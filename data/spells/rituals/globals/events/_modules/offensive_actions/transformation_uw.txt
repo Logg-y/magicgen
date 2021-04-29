@@ -2,14 +2,14 @@
 #minpowerlevel 1
 #maxpowerlevel 1
 
-
-#modulegroup "Offensive Global Effect"
+-- disable
+--#modulegroup "Offensive Global Effect"
 
 #noun "Transformation"
 #verb "Transforming"
 
 #moduledescr "SUBJECT may suddenly find themselves permanently transformed into a magical beast."
-#moduledetails "Affected commanders may be transformed into a magical monster. This can only happen in underwater provinces."
+#moduledetails "Affected commanders may be transformed into a magical monster. This can only happen in underwater provinces. Pretenders are unaffected by this spell."
 
 #selectunitmod "Freespawn Summons lesser UW"
 

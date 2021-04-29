@@ -41,7 +41,7 @@
 #spec 1099578736704
 #aoe 0
 #power 5
-#maxpower 9
+#maxpower 14
 #precision 2
 #nreff 2001
 #range 5020
@@ -56,10 +56,9 @@
 #paths 136
 #secondarypaths 8
 
-#name 8 "$blade$ wind"
-#name 8 "$blade$ shower"
-#name 8 "$blade$ storm"
-#name 128 "$infernal$ blades"
+#name 8 "Shower of Sharpness"
+#name 8 "Storm of Sharpness"
+#name 128 "$infernal$ evisceration"
 #descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
 #descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
 

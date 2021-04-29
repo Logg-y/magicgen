@@ -74,6 +74,8 @@ class SpellEffect(object):
         self.basescale = 0
         self.secondaryeffectskipchance = 0
         self.permanentslotusage = 0
+        self.hiddenench = None
+        self.friendlyench = None
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -267,6 +269,8 @@ class SpellEffect(object):
         s.nolandtrace = self.nolandtrace
         s.onlygeosrc = self.onlygeosrc
         s.aicastmod = self.aicastmod
+        s.hiddenench = self.hiddenench
+        s.friendlyench = self.friendlyench
         s.parenteffect = self
         if s.details is None:
             s.details = ""
@@ -317,11 +321,12 @@ class SpellEffect(object):
                 if len(possibleillwinterpaths) == 0:
                     print(f"Failed to generate: no valid paths")
                     return None
-                s.path1 = 2**possibleillwinterpaths.pop(0)
+                illwinterpath = possibleillwinterpaths.pop(0)
+                s.path1 = 2**illwinterpath
                 if s.path1 == 128 and not allowblood:
                     continue
                 if random.random() * 100 <= self.pathskipchances.get(s.path1, 0) and len(possibleillwinterpaths) > 0:
-                    possibleillwinterpaths.append(s.path1)
+                    possibleillwinterpaths.append(illwinterpath)
                     continue
                 # Effects taking permanent slots need to be limited in number to avoid mechanic abuse
                 if self.permanentslotusage \
@@ -380,7 +385,7 @@ class SpellEffect(object):
             scaleamt = 0
             for x in range(0, actualpowerlvl):
                 scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
-            scaleamt = math.ceil(scaleamt)
+            scaleamt = int(round(scaleamt))
 
             # scale the thing
             if self.spelltype & SpellTypes.POWER_SCALES_AOE:
@@ -490,6 +495,7 @@ class SpellEffect(object):
         # don't make spells uncastable at the minimum level
         if not self.spelltype & SpellTypes.RITUAL:
             if s.fatiguecost > 100 * s.path1level:
+                print(f"Spell is overcosted! Fatigue is {s.fatiguecost} but path level is {s.path1level}")
                 reductionfactor = (100 * s.path1level) / s.fatiguecost
                 if realnumeffects > 1:
                     desirednumeffects = max(1, math.floor(realnumeffects * reductionfactor))
@@ -634,11 +640,6 @@ class SpellEffect(object):
                 else:
                     setattr(s, param, getattr(s, param) + getattr(secondary, param))
 
-        # make fatigue nice round numbers
-        if s.fatiguecost > 100:
-            s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
-        else:
-            s.fatiguecost = int(5 * (s.fatiguecost // 5.0))
 
         # Blood goes in blood magic.
         # And takes slaves.
@@ -663,6 +664,67 @@ class SpellEffect(object):
         # Fatigue cost should not exceed 999 for non rituals
         if not (self.spelltype & SpellTypes.RITUAL):
             s.fatiguecost = min(999, s.fatiguecost)
+
+            # Blood ritual cost multiplier
+            if s.path1 == 128 and (s.effect > 10000 or self.spelltype & SpellTypes.RITUAL):
+                s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
+
+            # Free rituals are a big fat NOPE.
+            if s.effect > 10000 and s.fatiguecost < 100:
+                s.fatiguecost = 100
+
+            # Blood combat spells get more fatigue if they don't cost a slave
+            if s.path1 == 128 and s.fatiguecost < 100:
+                s.fatiguecost *= 2
+
+            # If the spell is now uncastable, rescale number of effects
+            if not self.spelltype & SpellTypes.RITUAL:
+                if s.fatiguecost > 100 * s.path1level:
+                    flatnumeffects = s.nreff % 1000
+                    scalenumeffects = s.nreff // 1000
+                    realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
+                    if realnumeffects > 1:
+                        print(
+                            f"Late overcosted spell check: Fatigue is {s.fatiguecost} but path level is {s.path1level}")
+                        reductionfactor = (100 * s.path1level) / s.fatiguecost
+                        if realnumeffects > 1:
+                            desirednumeffects = max(1, math.floor(realnumeffects * reductionfactor))
+                            numeffectstolose = realnumeffects - desirednumeffects
+                            # Take from scaling first
+                            while 1:
+                                # can't reduce scaling if it would drop below the number to lose
+                                if numeffectstolose < s.path1level:
+                                    break
+                                # don't reduce scaling below 1 if it existed
+                                if (s.nreff // 1000) <= 1:
+                                    break
+                                if numeffectstolose == 0:
+                                    break
+                                s.nreff -= 1000
+                                numeffectstolose -= s.path1level
+
+                            while 1:
+                                # Don't reduce the flat number of effects below 0
+                                if (s.nreff % 1000) == 0:
+                                    break
+                                if numeffectstolose == 0:
+                                    break
+                                s.nreff -= 1
+                                numeffectstolose -= 1
+
+                            s.comments.append(f"Reduce number of effects from {realnumeffects} to fit cost "
+                                              f"reduction scale of {reductionfactor}")
+
+                        s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
+                        s.fatiguecost = min(s.fatiguecost, 100 * s.path1level)
+
+            # make fatigue nice round numbers
+            if s.fatiguecost > 100:
+                s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
+            else:
+                s.fatiguecost = int(5 * (s.fatiguecost // 5.0))
+        else:
+            s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
 
         descrs = []
         for x in self.descrconds.get(s.path1, []):
@@ -708,12 +770,21 @@ class SpellEffect(object):
         if len(moddescrs) > 0:
             s.descr += random.choice(moddescrs)
 
+        # Dynamic scale number of effects
+        self.dynamicScaleParams(s)
+
         if s.effect == 10038:
             s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
 
             s.details = s.details.strip()
+        elif s.effect == 10037:
+            s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level."
+
+            s.details = s.details.strip()
+
 
         s.details += " " + secondary.details
+
 
         s.descr = s.descr.strip()
         s.details = s.details.replace("\\n", "\n")
@@ -774,10 +845,17 @@ class SpellEffect(object):
             if godpath == 256:
                 s.godpathspell = -1
 
+        self.enforceGemCosts(s)
+
+        # Naming needs these variables
+        s.effectiveaoe = s.aoe % 1000 + ((s.aoe // 1000) * s.path1level)
+        s.effectivenreff = s.nreff % 1000 + ((s.nreff // 1000) * s.path1level)
+        # This one will be wrong for nondamaging spells, but shouldn't be used for them
+        s.effectivedamage = s.damage % 1000 + ((s.damage // 1000) * s.path1level)
+
         # see which nameconds, if any, match, and add to the name pool
         for x in self.nameconds.get(s.path1, []):
             if x.test(s):
-                # print("test success")
                 names.append(x.text)
 
         if len(names) > 0:
@@ -864,18 +942,6 @@ class SpellEffect(object):
         s.path1level = min(9, s.path1level)
         s.path2level = min(9, s.path2level)
 
-        # Blood ritual cost multiplier
-        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & SpellTypes.RITUAL):
-            s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
-
-        # Free rituals are a big fat NOPE.
-        if s.effect > 10000 and s.fatiguecost < 100:
-            s.fatiguecost = 100
-
-        # Blood combat spells get more fatigue if they don't cost a slave
-        if s.path1 == 128 and s.fatiguecost < 100:
-            s.fatiguecost *= 2
-
         # Fill in placeholders in modcmdsbefore
         # This is event stuff
         s.modcmdsbefore = s.modcmdsbefore.replace("SPELLNAME", s.name)
@@ -884,9 +950,78 @@ class SpellEffect(object):
         if s.details == "":
             s.details = None
 
+
         # Add to permenant slot taking spell counts if appropriate
         if self.permanentslotusage:
             utils.permanent_slot_spells_by_path[s.path1] = utils.permanent_slot_spells_by_path.get(s.path1, 0) + 1
             print(f"Path {s.path1}: num permanent slots now {utils.permanent_slot_spells_by_path.get(s.path1, 0)}")
 
         return s
+
+    def dynamicScaleParams(self, s):
+        "Dynamically scale attributes of the given spell."
+        # never scale things at their lowest level
+        if s.researchlevel > self.power and s.path1level > 0:
+            for attribToScale in ("nreff", "damage", "aoe"):
+                # Do not try to scale x% battlefield AoE spells
+                if attribToScale == "aoe" and (600 < s.aoe < 700):
+                    continue
+
+                # Only mess with damage values for some effects
+                if attribToScale == "damage" and s.effect not in [2, 3, 7, 8, 13, 24, 32, 33, 10040, 46, 66, 74, 73, 96,
+                                                                  103, 104, 105, 128, 129, 134, 138, 142]:
+                    continue
+
+                attribScaleAmt = getattr(self, attribToScale) // 1000
+                # Do not even think about scaling montags or anything else special
+                if attribScaleAmt < 0:
+                    continue
+                if attribScaleAmt == 0:
+                    # Default to 15% scaling, could add a command line option for this
+                    scaleratio = 0.15
+                    # Do not do this unless the spell naturally scales the attribute with research
+                    if attribToScale == "nreff":
+                        flag = SpellTypes.POWER_SCALES_NREFF
+                    elif attribToScale == "damage":
+                        flag = SpellTypes.POWER_SCALES_DAMAGE
+                    elif attribToScale == "aoe":
+                        flag = SpellTypes.POWER_SCALES_AOE
+                    if not self.spelltype & flag:
+                        print(f"Skip scaling attribute {attribToScale} as no research level progression")
+                        continue
+                else:
+                    basespellvalue = (attribScaleAmt * self.power) + self.nreff % 1000
+                    if basespellvalue == 0:
+                        print(f"Skip scaling attribute {attribToScale} as attribute value is zero")
+                        continue
+                    scaleratio = min(1.0, attribScaleAmt / basespellvalue)
+
+                newspellattrib = getattr(s, attribToScale)
+                newspellvalue = ((newspellattrib // 1000) * s.path1level) + newspellattrib % 1000
+                print(f"Desired scaling ratio for attribute {attribToScale}" \
+                      f" is {scaleratio}; new spell has base value {newspellvalue}")
+                desiredScalingAmount = newspellvalue * scaleratio
+                newscale = max(attribScaleAmt, min(9, math.floor(desiredScalingAmount)))
+                newfixed = newspellvalue - (newscale * s.path1level)
+                print(f"Desired scaling amount = {desiredScalingAmount}, split into {newscale} scaling + {newfixed};"
+                      f" old value was {getattr(s, attribToScale)}, pathlevel={s.path1level}")
+                setattr(s, attribToScale, ((newscale) * 1000) + newfixed)
+                print(f"Final value is {getattr(s, attribToScale)}")
+
+    def enforceGemCosts(self, s):
+        # Certain effects should always have gem costs for safety reasons
+        # These are: reinvigoration, summon commander
+        if s.effect == 8:  # reinvigoration
+            fatiguedifference = 100 - s.fatiguecost
+            if s.fatiguecost < 100:
+                print(f"Gem cost enforcing subtracted {fatiguedifference} from casting time")
+                s.casttime = max(10, s.casttime - fatiguedifference)
+                s.fatiguecost = 100
+        elif s.effect == 21: # summon commander, in battle only
+            if s.fatiguecost < 100:
+                effectmult = 100 / s.fatiguecost
+                scalenreff = (s.nreff // 1000) + (s.path1level * (s.nreff % 1000))
+                print(f"Gem cost enforcing multiplied number of effects by {scalenreff}")
+                s.nreff = math.floor(effectmult * scalenreff)
+                self.dynamicScaleParams(s)
+                s.fatiguecost = 100

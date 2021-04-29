@@ -3,6 +3,7 @@
 #damage -3
 #spec 8388608
 #power 1
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -33,6 +34,7 @@
 #damage -3
 #spec 8388608
 #power 1
+#maxpower 14
 #nreff 3004
 #pathlevel 1
 #fatiguecost 300
@@ -54,5 +56,39 @@
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
-#skipchance 80
+#skipchance 60
+#end
+
+#neweffect "Raise Soulless remote ritual"
+#copyspell "Carrion Reanimation"
+#effect 10037
+#provrange 2
+#onlyfriendlydst 1
+#damage -3
+#spec 8388608
+#power 3
+#maxpower 14
+#nreff 3004
+#pathlevel 2
+#fatiguecost 400
+#explspr 10232
+#sound 43
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Remote Raise Soulless"
+#descr 32 "The caster raises ARTICLE soulless %being% from the recently dead in a distant province. This spell requires corpses in the province to function: dead soldiers produce armed soulless."
+#details "A single commander will be generated along with the troops."
+
+#spelltype 20
+
+#scalefatiguemult 6
+
+#power 1
+#scalerate 2
+-- #scalecost 1.0
+#pathlevel 1
+#schools 16
+#skipchance 60
 #end

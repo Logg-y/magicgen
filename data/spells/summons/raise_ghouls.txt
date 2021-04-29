@@ -3,6 +3,7 @@
 #damage 198
 #spec 8388608
 #power 1
+#maxpower 14
 #nreff 3005
 #pathlevel 1
 #fatiguecost 100

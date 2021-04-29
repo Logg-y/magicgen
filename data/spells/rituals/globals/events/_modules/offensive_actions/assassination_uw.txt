@@ -16,7 +16,7 @@
 #verb "Assault"
 
 #moduledescr "SUBJECT may suddenly find themselves attacked by a magical beast."
-#moduledetails "Affected commanders may be attacked by a magical monster. This can only happen in underwater provinces."
+#moduledetails "Affected commanders may be attacked by a magical monster. This can only happen in underwater provinces.  Pretenders are unaffected by this spell."
 
 #selectunitmod "UW Only"
 #desiredmontagsize 10
@@ -90,7 +90,6 @@
 #allowedunitmod "Summon Paralysisweapon"
 #allowedunitmod "Summon Greaterparalysisweapon"
 #allowedunitmod "Summon Petrifyweapon"
-#allowedunitmod "Summon Plagueweapon"
 #allowedunitmod "Summon Weakpoison"
 #allowedunitmod "Summon Strongpoison"
 #allowedunitmod "Summon Deathpoison"

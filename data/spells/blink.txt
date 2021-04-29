@@ -23,9 +23,9 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Blink %Foe%"
+#namecond effectiveaoe < 2 16 "Blink %Foe%"
 
-#namecond aoe >= 2 16 "Dimensional Instability"
+#namecond effectiveaoe >= 2 16 "Dimensional Instability"
 
 #descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield."
 
@@ -57,9 +57,9 @@
 #paths 16
 #secondarypaths 16
 
-#namecond aoe < 2 16 "Blink"
+#namecond effectiveaoe < 2 16 "Blink"
 
-#namecond aoe >= 2 16 "Friendly Dispersion"
+#namecond effectiveaoe >= 2 16 "Friendly Dispersion"
 
 #descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield, but does not move hostile units."
 

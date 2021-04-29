@@ -19,7 +19,7 @@
 #spec 70368747323456
 #aoe 666
 #power 5
-#maxpower 9
+#maxpower 14
 #nreff 1
 #pathlevel 4
 #fatiguecost 300

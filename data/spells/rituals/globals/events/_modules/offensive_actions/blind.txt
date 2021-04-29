@@ -11,7 +11,7 @@
 #verb "Blinding"
 
 #moduledescr "SUBJECT may be affected by malign magic and become blinded."
-#moduledetails "Affected commanders become blinded."
+#moduledetails "Affected commanders become blinded. Pretenders are unaffected by this spell."
 
 
 #end

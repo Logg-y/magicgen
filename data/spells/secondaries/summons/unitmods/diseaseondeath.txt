@@ -15,3 +15,12 @@
 #nameprefix "Putrid"
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a large putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
 #end
+
+#newunitmod "Summon Large Disease on Death 2"
+#req deathdisease <= 0
+#req secondshape == -1
+#set deathdisease 25
+#set diseaseres 100
+#nameprefix "Putrid"
+#descr "This particular CREATURE has been imbued by magic that causes it to explode with a gigantic putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
+#end

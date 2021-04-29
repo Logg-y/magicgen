@@ -26,11 +26,11 @@
 
 #details "Ethereal: 75% chance to negate non-magical damage. Allows movement through walls."
 
-#namecond aoe < 2 16 "Body Ethereal"
+#namecond effectiveaoe < 2 16 "Body Ethereal"
 
-#namecond2 2 <= aoe < 666 16 "Ethereal Warriors"
+#namecond2 2 <= effectiveaoe < 666 16 "Ethereal Warriors"
 
-#namecond aoe == 666 16 "Ethereal Army"
+#namecond effectiveaoe == 666 16 "Ethereal Army"
 
 
 #descr 16 "The %body% of SUBJECT %is% made transparent and ghostlike."

@@ -9,6 +9,8 @@
 
 -- not global enchantment
 #req effect != 10081
+-- not dispel
+#req effect != 10030
 
 
 #pathlevel -1
@@ -27,6 +29,8 @@
 
 -- not global enchantment
 #req effect != 10081
+-- not dispel
+#req effect != 10030
 
 #pathlevel -2
 #power -4

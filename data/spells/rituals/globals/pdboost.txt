@@ -1,0 +1,30 @@
+#neweffect "PD Boost Global"
+#effect 10081
+#damage 17
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#scalefatiguemult 430
+#schools 32
+#unique 1
+-- F S
+#paths 16
+#skipchance 50
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "PD Boost Global"
+
+#basescale 2
+#spelltype 4
+#scalerate 2
+
+#name 1 "Call to Arms"
+#name 16 "Entice Militia"
+
+#descr 1 "This enchantment causes the populace to be filled with rallied to the cause of its owner. Local defence forces will find they have no shortage of willing recruits to fight for their cause."
+#descr 16 "This enchantment subtly persuades commoners to join their local defence forces. Province defence in the caster's dominion will become stronger over time."
+#details "There is a 6% chance per point of dominion to gain +SCALEAMT province defence in friendly provinces."
+#end

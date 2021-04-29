@@ -3,6 +3,7 @@
 #damage 408
 #spec 8388608
 #power 5
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 3
@@ -13,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 70
 
 #details "The elementals are size 6."
 #name 4 "Summon NAMEPREFIX Massive Water %Elemental%"
@@ -29,6 +30,7 @@
 #damage 408
 #spec 8388608
 #power 5
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 1100

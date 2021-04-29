@@ -3,6 +3,7 @@
 #damage 695
 #spec 8388608
 #power 3
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -16,7 +17,7 @@
 
 #skipchance 97
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Beast$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Beast%"
 #descr 2 "Summons ARTICLE phantasmal %beast% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 528
@@ -30,6 +31,7 @@
 #damage 695
 #spec 8388608
 #power 4
+#maxpower 14
 #nreff 4006
 #pathlevel 2
 #fatiguecost 100
@@ -38,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Beast$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Beast%"
 #descr 2 "Summons ARTICLE phantasmal %beast% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 20

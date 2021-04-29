@@ -1,0 +1,27 @@
+#neweventset "Offensive Global action Shadow Blast"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 32
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Shadows"
+#verb "Deathly"
+
+#moduledescr "SUBJECT may unexpectedly be subjected to a massive dark blast which bypasses their armour."
+#moduledetails "Affected commanders are be forced into a battle, where they become the target of Shadow Blast, inflicting 20AN magical damage if they fail a MR check. Undead are immune to this effect. Pretenders are unaffected by this spell."
+
+#usefixedunitid 676
+#allowedunitmod "Offensive Action Shadow Blast"
+
+#moduleskipchance 0
+
+#end
+
+#req_targgod 0
+#req_targundead 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders was the target of a shadow blast!"
+#nolog

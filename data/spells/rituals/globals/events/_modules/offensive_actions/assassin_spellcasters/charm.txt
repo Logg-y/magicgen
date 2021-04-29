@@ -1,0 +1,28 @@
+#neweventset "Offensive Global action Charm"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 64
+
+#modulegroup "Offensive Global Effect"
+
+#noun "Rebellion"
+#verb "Rebellious"
+
+#moduledescr "SUBJECT may unexpectedly decide to turn against their former allies."
+#moduledetails "Affected commanders are be forced into a battle, where they must succeed at a magic resistance check or become charmed by an independent faction. This results in them attacking their current province. Pretenders and prophets will not be targeted by this spell."
+
+#usefixedunitid 361
+#allowedunitmod "Offensive Action Charm"
+
+#moduleskipchance 0
+
+
+#end
+
+#req_targgod 0
+#req_targprophet 0
+#assowner 1
+#assassin UNITID
+#msg "One of your commanders suddenly experienced a call to turn against your commands!"
+#nolog

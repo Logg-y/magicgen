@@ -1,22 +1,49 @@
 TODO
 
 unique summons
-a flag that makes spells always cost gems under all circumstances for magic explodes style generations
 check mind hunt to see if I can add that back
-make dynamic scaling
 
-mrn buffs
-investigate leprosy with diff damage values for other afflictions
-pd boosting global effect
-pd lowering modular global
-morale boosting spells
+remote summon temp commanders for soaking rituals, maybe with damage reversal for added spice
+site modding support for adding xp/adventure sites, pd adding effects, ritual range increase...
+
+limit antibuild (and maybe antisearch) global research levels
+
+
+v2.1.6:
+
+ADDITIONS:
+
+In battle commander summons and reinvigoration spells will always cost gems, regardless of the global fatigue settings. These spells get improved casting time and numbers of effects to compensate where this would affect them.
+Added many upgraded versions of summon modifiers.
+Added instant transformation spells that transform you into one of a random pool of creatures.
+Added an insect cloud effect that disrupts spellcasting.
+Added a temporary morale increasing spell.
+Added new effects for offensive globals, that force the victim into an assassination setting against a dummy caster that casts some vanilla spell on the victim and then immediately dies.
+Added rituals that temporarily manipulate the scout reports of the targeted province.
+Added a wind blowing air evocation that makes people cold.
+Added a water evocation that tries to freeze people solid.
+Added elfshot style bladewind to nature evocations.
+Added an instant poison burst effect akin to thunder strike.
+Added a self-buff that enlarges the caster and grants them trample.
+Added a projectile spell that produces a damaging dust cloud.
+Added an evocation that cracks open the earth and produces a long-lasting dust cloud.
+Added a remote raise soulless spell.
+
+
+CHANGES:
+
+Increased the maximum research level of many spell effects to 14. This has no effect unless the research level modification option is used: it allows them to generate at higher effective research than 9.
+Rounding for noninteger scaling is now half-to-even instead of always rounding up. This primarily impacts lower level spells, for instance research 3 stoneskin would attempt to generate with AoE 1.2. Before this change it would be rounded up to 2, now it would be rounded down to 1 instead.
+Split ironskin into a self cast version at research 3 and aoe1 at research 5. The AoE version starts at e2.
 
 v2.1.5:
-
 
 ADDITIONS:
 
 Added a spell that permanently gives the caster extra arms
+Added falling cleansing water banishment
+Added an intentional reinvigoration cloud (as well as preventing normal reinvigoration from generating cloud spells).
+Added dynamic path scaling to spells, so that high level mages get more stuff!
 
 DETAILS:
 
@@ -25,7 +52,13 @@ Added yellow text to blood vortex
 
 OTHER CHANGES:
 
-Default setting for construction spell multiplier up to 0.45 from 0.33. This means that with the default 14 spells per level, 6 will generate per level instead of 4.
+Default setting for construction spell multiplier up to 0.6 from 0.33. This means that with the default 14 spells per level, 8 will generate per level instead of 4. While there aren't that many effects currently, this should be much more likely to give access to various fort construction spells.
+Offensive modular globals can now generate at research 4.
+AoE communion master will only come at aoe 1 (research 6).
+Research 6 communion slave now imparts the chorus effect of backing out of communions when unconscious.
+Removed freespawn and transformation globals that only function underwater. These seem useless most if not all of the time for their cost.
+Gem generation globals are half as common.
+Growing Fury is no longer cast by offscript AI.
 
 BALANCE:
 
@@ -36,10 +69,19 @@ Reduced scaling costs for many remote attack spells that became prohibitively ex
 Slightly reduced scaling costs for many in-battle mage summons that got really expensive in high level veersions
 Increased cost of stalker assassination from 3 to 6 gems, it got missed when I did all the others
 Unearth dungeon and call animals are now considerably easier to cast but produce less creatures.
+Dispel cost reduced from 30 to 22, can no longer be pushed up research levels by lowered path modifiers
+Dramatically reduced the effectiveness of positive scale increasing globals (40% per candle to 10% per candle) and made them more likely to show up.
+Slightly reduced effectiveness of modular globals targeting patrollers and blood hunters (-1 power level).
+Plague weapons is no longer a valid modifier for global enchantment assassins.
 
 FIXES:
 
-Removed all instance of lingering battlefield edge summons as they would propagate down communions (thanks Red Rob for telling me this).
+Removed all instance of lingering battlefield edge summons as they would propagate down communions (thanks Red Rob for telling me about this).
+Fixed a bug that would cause the UI's nation selection feature to not work.
+Fixed more causes of in-battle spells costing too many gems (those with gem costs dramatically exceeding their path requirement)
+Fixed in battle horror seeds being ignored by the AI by adding a 1 AN mind burn as an extra effect. In real terms this should be pretty meaningless.
+Fixed poison cloud spells generating from instantaneous poison spells.
+Fixed blood feast having an utterly unnecessary number of effects that would be virtually guaranteed to give a caster cravings for meat.
 
 v2.1.4:
 

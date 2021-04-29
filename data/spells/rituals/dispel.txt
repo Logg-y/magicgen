@@ -7,7 +7,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 3
-#fatiguecost 3000
+#fatiguecost 2200
 #schools 16
 #alwaysgenerate 1
 

@@ -13,3 +13,19 @@
 #descr "The summoned %creature% %is% more powerful in the height of each season."
 
 #end
+
+#newsecondary "Summon Power of the Turning Year 2"
+
+#anysummon 1
+
+#paths 15
+#power -5
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.3
+
+#unitmod "Summon Power of Turning Year 2"
+#descr "The summoned %creature% %is% much more powerful in the height of each season."
+
+#end

@@ -22,14 +22,14 @@
 #paths 2
 #secondarypaths 2
 
-#namecond aoe <= 1 2 "charged body"
-#namecond aoe <= 1 2 "electrified body"
+#namecond effectiveaoe <= 1 2 "charged body"
+#namecond effectiveaoe <= 1 2 "electrified body"
 
-#namecond2 666 > aoe > 1 2 "group charged bodies"
-#namecond2 666 > aoe > 1 2 "group electrified bodies"
+#namecond2 666 > effectiveaoe > 1 2 "group charged bodies"
+#namecond2 666 > effectiveaoe > 1 2 "group electrified bodies"
 
-#namecond aoe == 666 2 "mass charged bodies"
-#namecond aoe == 666 2 "mass electrified bodies"
+#namecond effectiveaoe == 666 2 "mass charged bodies"
+#namecond effectiveaoe == 666 2 "mass electrified bodies"
 
 #details "The first melee attack against charged units inflict 20AN shock damage to both the attacker and the attacked."
 

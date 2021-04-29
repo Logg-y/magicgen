@@ -1,0 +1,27 @@
+-- #neweventset "Offensive Global action Destruction"
+-- #minpowerlevel -4
+-- #maxpowerlevel -4
+-- 
+-- #req path1 == 8
+-- 
+-- #modulegroup "Offensive Global Effect"
+-- 
+-- #noun "Warping"
+-- #verb "Sundering"
+-- 
+-- #moduledescr "SUBJECT may suddenly find their armour damaged or destroyed."
+-- #moduledetails "Affected commanders must be the target of a destruction spell, forcing a roll of 5 + DRN vs 0 + DRN (or 10+DRN if their armour is magical). Failing the roll damages the armour (-20% prot) or destroys it (-50% prot) if it was already damaged. Pretenders are unaffected by this spell."
+-- 
+-- #usefixedunitid 561
+-- #allowedunitmod "Offensive Action Destruction"
+-- 
+-- #moduleskipchance 0
+-- 
+-- 
+-- #end
+-- 
+-- #req_targgod 0
+-- #assowner 1
+-- #assassin UNITID
+-- #msg "One of your commanders was suddenly affected by a strange power that may have damaged their armour!"
+-- #nolog

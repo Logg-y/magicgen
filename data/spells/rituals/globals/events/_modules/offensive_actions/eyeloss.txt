@@ -12,7 +12,7 @@
 #verb "Sightclaiming"
 
 #moduledescr "SUBJECT may be affected by malign magic and lose an eye."
-#moduledetails "Affected commanders lose an eye."
+#moduledetails "Affected commanders lose an eye. Pretenders are unaffected by this spell."
 
 
 #end

@@ -132,7 +132,7 @@
 #scalerate 1
 
 #name 16 "Flow of Otherworldly Power"
-#descr 2 "This enchantment causes commanders in friendly dominion to randomly become engulfed in otherworldly power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with astral magic, even if they had none originally."
+#descr 16 "This enchantment causes commanders in friendly dominion to randomly become engulfed in otherworldly power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with astral magic, even if they had none originally."
 #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 astral magic in each friendly province. The commander's astral path is boosted by 1 permanently."
 #end
 

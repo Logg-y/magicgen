@@ -1,0 +1,17 @@
+#neweventset "Concealment"
+
+#usefixedunitid 297
+#selectunitmod "Concealment"
+#allowedunitmod "Concealment"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Concealment create unit"
+#nolog
+#notext
+#nation -2
+#req_friendlyench ENCHANTID
+#1unit UNITID
+#end

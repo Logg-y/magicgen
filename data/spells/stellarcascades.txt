@@ -5,6 +5,7 @@
 #spec 2305843009213694016
 #aoe 1
 #power 3
+#maxpower 14
 #precision 100
 #range 5025
 #pathlevel 1

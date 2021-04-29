@@ -4,6 +4,7 @@
 #spec 576
 #aoe 1
 #power 2
+#maxpower 14
 #precision 1
 #range 40
 #pathlevel 2
@@ -44,6 +45,7 @@
 #spec 576
 #aoe 1003
 #power 3
+#maxpower 14
 #precision 1
 #range 30
 #pathlevel 2
@@ -72,6 +74,75 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+#end
+
+#neweffect "Deep Freeze"
+#effect 2
+#damage 1006
+#spec 1152921504606847552
+#aoe 0
+#power 3
+#maxpower 14
+#precision 3
+#range 40
+#pathlevel 2
+#fatiguecost 30
+--#explspr 10054
+#explspr 10134
+#sound 21
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Deep Freeze"
+#descr 4 "The caster attempts to freeze all creatures in a SIZE area completely solid. Armour will reduce the harming effect, as well as potentially negate any lingering chill. Magic resistance may prevent victims from being completely frozen and becoming unable to move."
+#details "Inflicts damage. Those taking damage from this initial effect suffer from Numbness, and additionally must make an easy MR roll. Those that fail make a check of 5 + DRN vs cold res + DRN. If the defender loses this roll, they become petrified for 2250-4500 ticks; becoming immobilised, having their defence skill set to 0, their natural protection increased to 20 and gaining Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Inanimate or stone beings cannot be petrified this way, though they may still be harmed by the other components of the spell."
+
+
+#nextspell "Deep Freeze Numbness"
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Deep Freeze Numbness"
+#effect 11
+#damage 268435456
+#spec 8405504
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Lingering Chill"
+#name 2 "Lingering Chill"
+#name 4 "Lingering Chill"
+#name 8 "Lingering Chill"
+#name 16 "Lingering Chill"
+#name 32 "Lingering Chill"
+#name 64 "Lingering Chill"
+#name 128 "Lingering Chill"
+#nextspell "Deep Freeze Petrify"
+#end
+
+#neweffect "Deep Freeze Petrify"
+#effect 99
+#damage 5
+#spec 562053760
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Freeze Solid"
+#name 2 "Freeze Solid"
+#name 4 "Freeze Solid"
+#name 8 "Freeze Solid"
+#name 16 "Freeze Solid"
+#name 32 "Freeze Solid"
+#name 64 "Freeze Solid"
+#name 128 "Freeze Solid"
 #end
 
 

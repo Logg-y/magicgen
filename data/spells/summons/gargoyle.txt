@@ -3,6 +3,7 @@
 #damage 2368
 #spec 8388608
 #power 4
+#maxpower 14
 #nreff 1
 #pathlevel 3
 #fatiguecost 100
@@ -53,7 +54,7 @@
 #damage 2368
 #spec 8388608
 #power 4
-#maxpower 7
+#maxpower 14
 #nreff 1001
 #pathlevel 4
 #fatiguecost 1200

@@ -25,11 +25,11 @@
 #paths 64
 #secondarypaths 64
 
-#namecond aoe < 1 64 "Berserk Rage"
+#namecond effectiveaoe < 1 64 "Berserk Rage"
 
-#namecond2 1 < aoe < 5 64 "Berserk Wave"
-#namecond2 5 < aoe < 600 64 "Berserk Mob"
-#namecond2 600 < aoe < 700 64 "Mass Berserking"
+#namecond2 1 < effectiveaoe < 5 64 "Berserk Wave"
+#namecond2 5 < effectiveaoe < 600 64 "Berserk Mob"
+#namecond2 600 < effectiveaoe < 700 64 "Mass Berserking"
 
 #descr 64 "The caster forces SUBJECT to go berserk."
 

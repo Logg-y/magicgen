@@ -3,6 +3,7 @@
 #damage 531
 #spec 8388608
 #power 7
+#maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 4
@@ -32,6 +33,7 @@
 #damage 531
 #spec 8388608
 #power 9
+#maxpower 14
 #nreff 1
 #pathlevel 7
 #fatiguecost 1100
@@ -51,7 +53,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatiguemult 800
 
 #scalerate 4
 #end

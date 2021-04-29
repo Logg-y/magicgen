@@ -11,7 +11,7 @@
 #schools 32
 #unique 1
 #paths 16
-#skipchance 80
+#skipchance 60
 #secondarypaths 16
 #secondarypathchance 5
 #eventset "Lucky Spirits"

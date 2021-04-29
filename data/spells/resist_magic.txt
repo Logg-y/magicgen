@@ -23,13 +23,13 @@
 #paths 31
 #secondarypaths 0
 
-#namecond aoe == 1 16 "Resist Magic"
+#namecond effectiveaoe == 1 16 "Resist Magic"
 #name 1 "Burning Will"
 #name 2 "Clarity of Thought"
 #name 4 "Swift Resolve"
 #name 8 "Iron Will"
 
-#namecond aoe <= 666 16 "Antimagic"
+#namecond effectiveaoe <= 666 16 "Antimagic"
 
 #details "+4 magic resistance."
 
