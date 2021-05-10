@@ -1,0 +1,64 @@
+#neweffect "Smite Demon"
+#effect 2
+#damage 5005
+#spec 1152921504615780488
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smitedemon 1
+
+#paths 256
+#secondarypaths 255
+#secondarypathchance 0
+
+#name 256 "Smite Demon"
+#name 1 "Scorch Demon"
+#name 1 "Burn Demon"
+#name 2 "Strike Demon"
+#name 2 "Shock Demon"
+#name 2 "Jolt Demon"
+#name 4 "Purging Water"
+#name 8 "Earthen Purge"
+#name 16 "Apotropaic Word"
+#name 32 "Death to Demons"
+#name 64 "Cleanse Demon"
+#name 128 "Banish Demon"
+#descr 256 "This prayer will make a divine bolt strike down from the sky and deliver massive damage to a demon who fails to resist the spell."
+
+#spelltype 2
+#end
+
+#neweffect "Smite Demon Holy Only"
+#effect 2
+#damage 5005
+#spec 8933512
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 2
+#fatiguecost 0
+#explspr 10302
+#precision 100
+#schools 1
+#sound 30
+#smitedemon 1
+
+#paths 256
+#secondarypaths 256
+#secondarypathchance 0
+
+#name 256 "Smite Demon"
+#descr 256 "This prayer will make a divine bolt strike down from the sky and deliver massive damage to a demon who fails to resist the spell."
+
+#spelltype 2
+#end

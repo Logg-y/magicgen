@@ -16,7 +16,6 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_nomonster UNITID
-#req_targmnr UNITID
 -- Province owner in disciples
 #com UNITID
 #end

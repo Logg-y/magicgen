@@ -1,0 +1,57 @@
+#neweventset "Animal Freespawn"
+
+#scaleparam "req_domchance" 1.0
+
+#end
+
+#newevent
+#rarity 5
+#msg "freespawn animal units"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#nation -2
+#notext
+#nolog
+#1d3units -5
+#end
+
+#newevent
+#rarity 5
+#msg "freespawn animal units"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#nation -2
+#notext
+#nolog
+#1d3units -5
+#end
+
+#newevent
+#rarity 5
+#msg "freespawn animal units"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#nation -2
+#notext
+#nolog
+#1d3units -5
+#end
+
+#newevent
+#rarity 5
+#msg "freespawn animal units cmdr"
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 1
+#req_0popok
+#nation -2
+#notext
+#nolog
+#com -5
+#end

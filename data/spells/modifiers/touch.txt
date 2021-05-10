@@ -3,7 +3,7 @@
 -- evo only
 #spelltype 2
 
-#power 2
+#power 0
 #scalefatigueexponent -0.5
 #mult fatiguecost 0.3
 #pathperresearch -0.23
@@ -19,9 +19,12 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 90
+#skipchance 75
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "Despite its lethality, the caster is able to shield himself and his allies from its short range effects."
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -48,13 +51,16 @@
 #nobattlefield
 #aicastmod 40
 
-#skipchance 90
+#skipchance 85
 
 #set flightspr -1
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "Despite its lethality, the caster is able to shield himself and his allies from its short range effects."
 
 #end
 
@@ -81,7 +87,10 @@
 
 #skipchance 90
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "Despite its lethality, the caster is able to shield himself and his allies from its short range effects."
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -110,9 +119,10 @@
 
 #req effect == 66
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
 
--- #descr "This spell has a devastating effect but a shorter range."
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end
 
@@ -140,9 +150,10 @@
 #req effect == 11
 #req damage == 131072
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
 
--- #descr "This spell has a devastating effect but a shorter range."
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end
 
@@ -170,9 +181,10 @@
 #req effect == 11
 #req damage == 16384
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
 
--- #descr "This spell has a devastating effect but a shorter range."
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end
 
@@ -199,9 +211,10 @@
 
 #req effect == 28
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
 
--- #descr "This spell has a devastating effect but a shorter range."
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end
 
@@ -228,9 +241,10 @@
 
 #req effect == 29
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
 
--- #descr "This spell has a devastating effect but a shorter range."
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end
 
@@ -258,7 +272,10 @@
 #req effect == 11
 #req effect == 1024
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -287,7 +304,10 @@
 
 #req effect == 128
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -316,7 +336,10 @@
 #req effect == 15
 #req spec == 17592194711680
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -345,7 +368,9 @@
 #req effect == 20
 #req spec == 8667136
 
-#descrcond spec !& 262144 "This spell can be dangerous to cast as it will hit the caster and friendly troops in the vicinity as well."
+#req spec !& 262144
+#spec 262144
+
 
 -- #descr "This spell has a devastating effect but a shorter range."
 

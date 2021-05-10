@@ -86,3 +86,50 @@
 -- #spelltype 4
 -- #scalerate 1
 -- #end
+
+------------------------------
+-- This would work if paths transferred across montags: another method of spawning would be required
+------------------------------
+-- #neweffect "Freespawn Commanders with mages"
+-- #effect 10081
+-- #damage 17
+-- #spec 0
+-- #power 7
+-- #maxpower 15
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 6500
+-- #scalefatiguemult 450
+-- #schools 1
+-- #paths 255
+-- #skipchance 0
+-- #secondarypaths 127
+-- #secondarypathchance 50
+-- #eventset "Freespawn Commanders with mages"
+-- 
+-- #pathskipchance 128 85
+-- 
+-- -- This can pick up secondary effects which apply to ALL the units it makes, make that rarer
+-- #secondaryeffectskipchance 80
+-- 
+-- #name 1 "Call of Fire"
+-- #name 2 "Call of Air"
+-- #name 4 "Call of Water"
+-- #name 8 "Call of Earth"
+-- #name 16 "Otherworldly Call"
+-- #name 32 "Deathly Call"
+-- #name 64 "Gaia's Call"
+-- #name 128 "Infernal Call"
+-- #descr 1 "This enchantment causes mages and other leaders of fire to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 2 "This enchantment causes mages and other leaders of air to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 4 "This enchantment causes mages and other leaders of water to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 8 "This enchantment causes mages and other leaders of earth to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 16 "This enchantment causes astral mages and otherworldly leaders to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 32 "This enchantment causes mages and other leaders of death to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 64 "This enchantment causes mages and other leaders of nature to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #descr 128 "This enchantment causes mages and other leaders of blood to be lured into the caster's service. The creatures may be touched and altered by the spell's power."
+-- #details "In each friendly land province, there is a 1.5% chance per point of friendly dominion that a single commander spawns."
+-- 
+-- #spelltype 4
+-- #scalerate 1
+-- #end

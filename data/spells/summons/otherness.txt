@@ -1,0 +1,113 @@
+#neweffect "Summonotherness"
+#effect 1
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Otherness"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX %Otherness%"
+#descr 16 "The caster summons ARTICLE_N %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "otherness ritual"
+#effect 10001
+#damage 628
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Otherness"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX %Otherness%"
+#descr 16 "The caster summons ARTICLE_N %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+#newunit "Otherness"
+
+#scalerate 2
+#end
+
+#neweffect "otherness Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 1
+#skipchance 99
+
+#paths 16
+#secondarypaths 16
+#newunit "Otherness"
+
+#skipchance 99
+
+#name 16 "NAMEPREFIX %Otherness% Attack"
+#descr 16 "The caster summons ARTICLE_N %otherness% to ambush a hostile commander in a distant province. Othernesses are swirling masses of dark goo which trample their enemies."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 4
+
+#end
+
+#neweffect "remoteotherness"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 8388608
+#power 6
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 10
+#newunit "Otherness"
+
+#name 16 "Send NAMEPREFIX %Otherness%"
+#descr 16 "The caster summons ARTICLE_N %otherness% to attack a distant province. Othernesses are swirling masses of dark goo which trample their enemies."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 20
+
+#scalerate 2
+#end

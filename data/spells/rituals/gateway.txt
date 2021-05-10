@@ -9,7 +9,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 1000
-#schools 1
+#schools 32
 
 #paths 16
 #secondarypaths 0

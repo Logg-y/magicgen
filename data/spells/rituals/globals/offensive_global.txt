@@ -9,7 +9,7 @@
 #fatiguecost 3000
 #schools 2
 #paths 255
-#skipchance 0
+#skipchance 25
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
@@ -44,7 +44,7 @@
 #fatiguecost 3000
 #schools 16
 #paths 255
-#skipchance 0
+#skipchance 66
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
@@ -79,7 +79,7 @@
 #fatiguecost 3000
 #schools 32
 #paths 255
-#skipchance 0
+#skipchance 66
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"

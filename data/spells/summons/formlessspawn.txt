@@ -1,0 +1,113 @@
+#neweffect "SummonFormless Spawn"
+#effect 1
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Formless Spawn"
+
+#skipchance 95
+
+#name 16 "Summon NAMEPREFIX Formless %Spawn%"
+#descr 16 "The caster summons ARTICLE Formless %Spawn%. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Formless Spawn ritual"
+#effect 10001
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Formless Spawn"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX Formless %Spawn%"
+#descr 16 "The caster summons ARTICLE Formless %Spawn%. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#newunit "Formless Spawn"
+
+#scalerate 2
+#end
+
+#neweffect "Formless Spawn Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#skipchance 99
+
+#paths 16
+#secondarypaths 16
+#newunit "Formless Spawn"
+
+#skipchance 99
+
+#name 16 "NAMEPREFIX Formless %Spawn% Attack"
+#descr 16 "The caster summons ARTICLE Formless %Spawn% to ambush a hostile commander in a distant province. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 4
+
+#end
+
+#neweffect "remoteFormless Spawn"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 8388608
+#power 6
+#maxpower 14
+#nreff 1002
+#pathlevel 4
+#fatiguecost 1200
+#schools 1
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 60
+#newunit "Formless Spawn"
+
+#name 16 "Send NAMEPREFIX Formless %Spawn%"
+#descr 16 "The caster summons ARTICLE Formless %Spawn% to attack a distant province. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 20
+
+#scalerate 2
+#end

@@ -196,7 +196,8 @@
 #msg "freespawn pow4 summons"
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 3
+#req_domchance 6
+#req_lab 1
 #req_0popok
 #req_land 0
 #nation -2

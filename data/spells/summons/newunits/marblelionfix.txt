@@ -1,0 +1,9 @@
+-- In base game these are fully slotted for some reason
+-- this gives them 2 misc like other lions have
+#newunit "Marble Lion fixed slots"
+#baseunit 3065
+#set itemslots 12288
+#raw "#itemslots 12288"
+#end
+
+

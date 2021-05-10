@@ -1,0 +1,60 @@
+#neweventset "Reanimators Global"
+
+#usefixedunitid 194
+#selectunitmod "Reanimator Global"
+#allowedunitmod "Reanimator Global"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Reanimators create unit"
+#nolog
+#notext
+#nation -2
+#req_land 1
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_nomonster UNITID
+-- Province owner in disciples
+#com UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Reanimators destroy due to dispel"
+#nolog
+#notext
+#nation -2
+#req_noench ENCHANTID
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Reanimators destroy due to hostile dom"
+#nolog
+#notext
+#nation -2
+#req_mydominion 0
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "Reanimators destroy due to stolen enchantment"
+#nolog
+#notext
+#nation -2
+#req_hostileench ENCHANTID
+#req_commander 1
+#req_monster UNITID
+#req_targmnr UNITID
+#killcom UNITID
+#end

@@ -1,0 +1,246 @@
+#newunit "Thing from Beyond"
+#baseunit 750
+#raw "#clearspec"
+#raw "#immobile"
+#raw "#poisonres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#ethereal"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Thing from Beyond is an otherworldly being summoned from the Void by Astral magic. It cannot move, but will attack those who come near with its tentacles.""
+#setstr descr "The Thing from Beyond is an otherworldly being summoned from the Void by Astral magic. It cannot move, but will attack those who come near with its tentacles."
+#set sacred 0
+#end
+
+#newunit "Thing That Should Not Be"
+#baseunit 751
+#raw "#clearspec"
+#raw "#fear 5"
+#raw "#coldres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 2200"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Thing That Should Not Be is an otherworldly being summoned from the Void by Astral magic. It is huge, horrible, and can steal life from living beings.""
+#setstr descr "The Thing That Should Not Be is an otherworldly being summoned from the Void by Astral magic. It is huge, horrible, and can steal life from living beings."
+#set sacred 0
+#end
+
+#newunit "Elder Thing"
+#baseunit 752
+#raw "#clearspec"
+#raw "#deathparalyze 10"
+#raw "#poisonres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Elder Thing is an otherworldly being summoned from the Void by Astral magic. It can paralyze living beings and releases a wail of energy upon its death.""
+#setstr descr "The Elder Thing is an otherworldly being summoned from the Void by Astral magic. It can paralyze living beings and releases a wail of energy upon its death."
+#set sacred 0
+#end
+
+#newunit "Thing from the Void"
+#baseunit 753
+#raw "#clearspec"
+#raw "#regeneration 25"
+#raw "#coldres 15"
+#raw "#poisonres 15"
+#raw "#shockres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+
+-- #raw "#descr "The Thing from the Void is an otherworldly being summoned from the Void by Astral magic. Its body heals wounds at an unnatural rate, and it coats creatures in a strange slime.""
+#setstr descr "The Thing from the Void is an otherworldly being summoned from the Void by Astral magic. Its body heals wounds at an unnatural rate, and it coats creatures in a strange slime."
+#set sacred 0
+#end
+
+#newunit "Lesser Otherness"
+#baseunit 756
+#raw "#clearspec"
+#raw "#regeneration 10"
+#raw "#coldres 15"
+#raw "#fireres 15"
+#raw "#poisonres 15"
+#raw "#shockres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#trample"
+#raw "#startage 110"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human.""
+#setstr descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human."
+#set sacred 0
+#end
+
+#newunit "Otherness"
+#baseunit 755
+#raw "#clearspec"
+#raw "#regeneration 10"
+#raw "#coldres 15"
+#raw "#fireres 15"
+#raw "#poisonres 15"
+#raw "#shockres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#trample"
+#raw "#startage 1100"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human.""
+#setstr descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human."
+#set sacred 0
+#end
+
+#newunit "Greater Otherness"
+#baseunit 754
+#raw "#clearspec"
+#raw "#regeneration 10"
+#raw "#coldres 15"
+#raw "#fireres 15"
+#raw "#poisonres 15"
+#raw "#shockres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#trample"
+#raw "#startage 2200"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human.""
+#setstr descr "The Otherness is an otherworldly being summoned from the Void by Astral magic. It appears as a slowly swirling mass of dark goo. Some of these beings have grown to enormous proportions with passing aeons, but most are no larger than a human."
+#set sacred 0
+#end
+
+#newunit "Vile Thing"
+#baseunit 757
+#raw "#clearspec"
+#raw "#poisonres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Vile Thing is an otherworldly being summoned from the Void by Astral magic. It attacks its foes with tentacles.""
+#setstr descr "The Vile Thing is an otherworldly being summoned from the Void by Astral magic. It attacks its foes with tentacles."
+#set sacred 0
+#end
+
+#newunit "Thing of Many Eyes"
+#baseunit 758
+#raw "#clearspec"
+#raw "#fireres 15"
+#raw "#eyes 10"
+#raw "#voidsanity 20"
+#raw "#immobile"
+#raw "#spiritsight"
+#raw "#darkvision 100"
+#raw "#unsurr 5"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Thing of Many Eyes is an otherworldly being summoned from the Void by Astral magic. It is immobile and can weaken living beings from afar.""
+#setstr descr "The Thing of Many Eyes is an otherworldly being summoned from the Void by Astral magic. It is immobile and can weaken living beings from afar."
+#set sacred 0
+#end
+
+#newunit "Dweller-in-the-Deep"
+#baseunit 759
+#raw "#clearspec"
+#raw "#poisonarmor 10"
+#raw "#coldres 15"
+#raw "#poisonres 15"
+#raw "#shockres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#aquatic"
+#raw "#neednoteat"
+#raw "#ethereal"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+#setstr descr "The Dweller-In-The-Deep is an otherworldly being summoned from the Void by Astral magic. It can paralyze its foes with its otherworldly mind, but cannot leave the seas."
+-- #raw "#descr "The Dweller-In-The-Deep is an otherworldly being summoned from the Void by Astral magic. It can paralyze its foes with its otherworldly mind, but cannot leave the seas.""
+#set sacred 0
+#end
+
+#newunit "Formless Spawn"
+#baseunit 966
+#raw "#clearspec"
+#raw "#fireres 5"
+#raw "#poisonres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#slashres"
+#raw "#bluntres"
+#raw "#pierceres"
+#raw "#startage 1800"
+#raw "#maxage 3000"
+#raw "#itemslots 12288"
+-- #raw "#descr "The Formless Spawn is an otherworldly being summoned from the Void by Astral magic. It is a strange, amorphous being that can regenerate wounds.""
+#setstr descr "The Formless Spawn is an otherworldly being summoned from the Void by Astral magic. It is a strange, amorphous being that can regenerate wounds."
+#set sacred 0
+#end
+
+#newunit "Vastness"
+#baseunit 762
+#raw "#clearspec"
+#raw "#coldres 15"
+#raw "#shockres 15"
+#raw "#poisonres 15"
+#raw "#blind"
+#raw "#voidsanity 20"
+#raw "#unsurr 10"
+#raw "#bonusspells 1"
+#raw "#damagerev 2"
+#raw "#woundfend 99"
+#raw "#spiritsight"
+#raw "#amphibian"
+#raw "#neednoteat"
+#raw "#ethereal"
+#raw "#teleport"
+#raw "#stormimmune"
+#raw "#startage 6000"
+#raw "#maxage 10000"
+#raw "#itemslots 1"
+-- #raw "#descr "The Vastness is an otherworldly being of almost godlike power summoned from the Void by Astral magic. It is composed of spheres of stellar lights and shades. The Vastness can blast the minds of lesser beings and its touch steals the strength of living beings. Anyone who strikes at the Vastness is likely to be punished for his arrogance, taking damage himself instead of harming the Vastness.""
+#setstr descr "The Vastness is an otherworldly being of almost godlike power summoned from the Void by Astral magic. It is composed of spheres of stellar lights and shades. The Vastness can blast the minds of lesser beings and its touch steals the strength of living beings. Anyone who strikes at the Vastness is likely to be punished for his arrogance, taking damage himself instead of harming the Vastness."
+#set sacred 0
+#end

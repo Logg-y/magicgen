@@ -1,0 +1,113 @@
+#neweffect "Summon angel warrior"
+#effect 1
+#damage 522
+#spec 0
+#power 5
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 100
+#scalefatiguemult 120
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+
+#skipchance 92
+#newunit "Angel of the Host"
+
+#name 16 "Summon NAMEPREFIX Angel %Warrior%"
+#descr 16 "The caster summons ARTICLE %angel% to fight for him. Angels are highly resistant to mundane weapons, and all but the most brave are afraid to strike at them. Angels summoned with this spell are armed with fiery swords which easily cut demonic and undead creatures to pieces."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "angel host ritual"
+#effect 10001
+#damage 522
+#spec 0
+#power 6
+#nreff 1001
+#pathlevel 4
+#fatiguecost 1200
+#schools 1
+
+#paths 16
+#secondarypaths 16
+
+#skipchance 80
+#newunit "Angel of the Host"
+
+#name 16 "Summon NAMEPREFIX Angel %Warrior%"
+#descr 16 "The caster summons ARTICLE %angel% to fight for him. Angels are highly resistant to mundane weapons, and all but the most brave are afraid to strike at them. Angels summoned with this spell are armed with fiery swords which easily cut demonic and undead creatures to pieces."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 180
+
+#scalerate 2
+#details "Creatures summoned with this spell are not sacred."
+#end
+
+#neweffect "angel host Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 522
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 800
+#schools 1
+#skipchance 98
+#nogeodst 2052
+
+#paths 16
+#secondarypaths 16
+#newunit "Angel of the Host"
+
+#name 16 "NAMEPREFIX Angel Warrior Ambush"
+#descr 16 "The caster summons ARTICLE %angel% to attack a hostile commander in a distant province. Angels are highly resistant to mundane weapons, and all but the most brave are afraid to strike at them. Angels summoned with this spell are armed with fiery swords which easily cut demonic and undead creatures to pieces."
+
+#spelltype 4
+#details "Creatures summoned with this spell are not sacred."
+
+#end
+
+#neweffect "Remote summon angel host"
+#effect 10038
+#provrange 4
+#damage 522
+#spec 0
+#power 6
+#maxpower 13
+#nreff 1000
+#pathlevel 3
+#fatiguecost 1400
+#schools 1
+#nogeodst 2052
+
+#skipchance 99
+
+#paths 16
+#secondarypaths 16
+#newunit "Angel of the Host"
+
+#name 16 "Send NAMEPREFIX Angel %Warrior%"
+#descr 16 "The caster sends ARTICLE %angel% to attack a distant province. Angels are highly resistant to mundane weapons, and all but the most brave are afraid to strike at them. Angels summoned with this spell are armed with fiery swords which easily cut demonic and undead creatures to pieces."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 130
+#details "Creatures summoned with this spell are not sacred."
+#end

@@ -1,0 +1,26 @@
+#neweffect "Animal Freespawn"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 14
+#nreff 1
+#pathlevel 5
+#fatiguecost 5000
+#scalefatiguemult 300
+#schools 49
+#unique 1
+#paths 64
+#skipchance 0
+#secondarypaths 64
+#secondarypathchance 0
+#eventset "Animal Freespawn"
+
+#name 64 "Faunal Control"
+#descr 64 "This enchantment grants the caster control of all kinds of animals, which will gradually gather under his control. This includes otherworldly or other strange animals that are not native to the caster's lands. Some will gain the gift of command and reasoning."
+#details "Each friendly province has three independent chances at SCALEAMT% per point of friendly dominion to spawn 1d3 random animals. There is also a single SCALEAMT% chance per point of dominion that a random animal commander spawns. Animals spawned by this spell are selected from all animals in the game, except that the following tags prevent selection: unique, sacreds, shapechange, firstshape, growhp, pretender chassis, any magic paths. Animals may immediately drown wherever they spawn, however."
+
+#basescale 1
+#spelltype 4
+#scalerate 1
+#end

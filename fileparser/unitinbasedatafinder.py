@@ -7,10 +7,28 @@ from Entities import weapon
 cache = {}
 descriptioncache = {}
 
+csv_keys = []
 
 class UnitInBaseDataFinder(object):
     def __init__(self):
-        pass
+        self.additionalmodcmds = ""
+        self.origid = None
+        self.id = None
+        self.descr = ""
+        # make sure keys are initialised - brand new units otherwise have nothing set
+        if len(csv_keys) == 0:
+            with open("data/BaseU.csv", "r") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                for line in reader:
+                    for k in line.keys():
+                        setattr(self, k, -1)
+                        csv_keys.append(k)
+                    break
+        else:
+            for k in csv_keys:
+                setattr(self,k, -1)
+        self.weapons = []
+
 
     @staticmethod
     def from_id(id):
@@ -51,6 +69,8 @@ class UnitInBaseDataFinder(object):
                 with open(fp, "r") as f:
                     self.descr = f.read()
             descriptioncache[self.id] = copy(self.descr)
+        self.uniqueid = f"vanilla-{self.id}"
+
         return self
 
 

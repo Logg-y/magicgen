@@ -2,12 +2,41 @@ TODO
 
 unique summons
 check mind hunt to see if I can add that back
-
-remote summon temp commanders for soaking rituals, maybe with damage reversal for added spice
 site modding support for adding xp/adventure sites, pd adding effects, ritual range increase...
 
-limit antibuild (and maybe antisearch) global research levels
 
+thing from beyond
+thing that should not be
+elder thing
+thing from the void
+lesser otherness
+otherness
+greater otherness
+vile thing
+thing of many eyes
+dweller in the deep
+formless spawn
+vastness
+
+v2.1.7
+
+Fixed ritual spells not costing gems when they really should.
+Fixed seeking arrow yellow text to correctly display the damage (and not the number of effects).
+Fixed a bug in dynamic scaling that would cause certain spells (most notably vine arrows) to generate with far more scaling damage or AoE than expected.
+Reduced scaling rates for horror marks slightly.
+Reduced scaling rate for numbness slightly.
+Reduced the number of offensive globals that generate.
+Split antimagic effects into two, one for elements and another for sorcery. This should make it more widely available.
+Secondary effects now respect most targeting parameters on the parent spell, for instance a wither bones effect with a secondary of petrification will now only petrify undead creatures, not everyone caught in the area of effect.
+Range 3 spells are now considerably weaker, but will no longer affect friendlies.
+Holy word now gets secondary effects based on pretender paths, and has AoE.
+Smite demon now gains secondary effects based on god paths in much the same way as smite.
+Unit freespawning globals (not commanders) now only create units in labs, and their spawn rates have been doubled to compensate for this. This is an attempt to make them more attractive by removing the need to run around with appropriate leadership and gather them all up.
+Added a global that spawns passive reanimators that convert corpses to soulless in friendly dominion.
+Added a global that spawns random animals all over friendly dominion.
+Added angels, kenzoku, and void critters to the astral summoning pool as it was rather lacking. All of these are no longer sacred when summoned through randomly generated spells (the vanilla means of obtaining them will still produce sacred versions).
+Fixed marble lion commanders having full slots, they now have 2 misc like other non-pretender lions of their size.
+Gateway now correctly generates in thaumaturgy rather than competing heavily for space in conjuration.
 
 v2.1.6:
 

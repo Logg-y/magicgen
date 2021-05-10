@@ -40,7 +40,7 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#skipchance 82
+#skipchance 50
 
 #name 128 "Bind NAMEPREFIX Storm %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE storm %demons% to fight for him. Storm demons are ethereal and unleash blasts of lightning."

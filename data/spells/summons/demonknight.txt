@@ -42,7 +42,7 @@
 #secondarypaths 8
 #secondarypathchance 80
 
-#skipchance 82
+#skipchance 50
 
 #name 128 "Summon NAMEPREFIX Demon %Knight%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE demon %knight%."

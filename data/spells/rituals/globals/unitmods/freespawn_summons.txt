@@ -26,6 +26,10 @@
 #landok 1
 #end
 
+#newunitmod "Freespawn Commanders with mages"
+#landok 1
+#end
+
 #newunitmod "Freespawn Commanders UW"
 #req hp >= 10
 #uwok 1

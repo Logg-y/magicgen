@@ -52,6 +52,7 @@ class EventSet(object):
         self.makedummymonster = 1
         self.moduleskipchance = 0
         self.setspelldamage = 0
+        self.effectnumberforunits = 10001
 
         self.moduletailingcode = ""
 
@@ -311,7 +312,7 @@ class EventSet(object):
             unittouse = None
             effectpool = []
             if self.usefixedunitid > 0:
-                unittouse = self.usefixedunitid
+                unittouse = unitinbasedatafinder.get(self.usefixedunitid)
                 minnreff = 1
                 costper = 1.0
                 # Unitmod
@@ -321,7 +322,7 @@ class EventSet(object):
                 # start by building a pool of spelleffects that we could use
 
                 for effname, effect in utils.spelleffects.items():
-                    if effect.effect == 10001:  # ritual summon
+                    if effect.effect == self.effectnumberforunits:  # ritual summon
                         unitid = effect.damage
                         # no montags
                         if unitid < 0:
@@ -355,9 +356,9 @@ class EventSet(object):
                 if len(effectpool) > 0:
                     chosensummoneffect = effectpool.pop(0)
                     print(f"Consider effect {chosensummoneffect}, {len(effectpool)} remain after this ")
-                    unittouse = chosensummoneffect.damage
-                    if unittouse < 0:
-                        print(f"Discard effect {chosensummoneffect}: it makes montag {unittouse}")
+                    unittouse = chosensummoneffect.getUnit()
+                    if chosensummoneffect.damage < 0:
+                        print(f"Discard effect {chosensummoneffect}: it makes montag {chosensummoneffect.damage}")
                         continue
 
                 elif unittouse is None:
@@ -369,13 +370,13 @@ class EventSet(object):
                     # If rollSpell enforces a secondary effect (unlikely), use that
                     if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
                         realunitmod = utils.unitmods[secondaryeffect.unitmod]
-                        unitobj = unitinbasedatafinder.get(unittouse)
+                        unitobj = unittouse
                         if not realunitmod.compatibility(unitobj):
                             print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
                             unittouse = None
                             continue
                         output = f"-- EventSet {self.name} applied secondary effect unitmod {realunitmod.name} " \
-                                 f"to {unittouse}\n\n" + output
+                                 f"to {unittouse.uniqueid}\n\n" + output
                         secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
                     else:
                         # Find a secondary effect to use for this creature
@@ -399,7 +400,7 @@ class EventSet(object):
                                 secondary = utils.unitmodToSecondary(realunitmod, fallback=True)
 
                                 # Montags are only allowed do nothing
-                                if unittouse < 0 and secondary.name != "Do Nothing":
+                                if unittouse.id < 0 and secondary.name != "Do Nothing":
                                     print(f"Block secondary {secondary.name}: summons montag {unittouse} "
                                           f"so only Do Nothing allowed")
                                     continue
@@ -431,14 +432,14 @@ class EventSet(object):
                                           f"final power was {finalcreaturepower} and desired was between "
                                           f"{minpower} and {maxpower}")
 
-                                unitobj = unitinbasedatafinder.get(unittouse)
+                                unitobj = unittouse
                                 if not realunitmod.compatibility(unitobj):
                                     continue
 
                                 print(f"Successfully picked secondary {secondary.name} for {unittouse}")
 
                                 output = f"-- EventSet {self.name} applied non-secondary effect unitmod " \
-                                         f"{realunitmod.name} to {unittouse}\n\n" + output
+                                         f"{realunitmod.name} to {unittouse.uniqueid}\n\n" + output
                                 break
 
                             if bad:
@@ -447,8 +448,7 @@ class EventSet(object):
                                 continue
 
                     if numtogenerate == 1:
-                        unitcode = realunitmod.applytounitid(None, unittouse)
-                        unittouse = realunitmod.lastparentid
+                        unitcode = realunitmod.applytounit(None, unittouse)
                         self.lastunitname = realunitmod.lastunitname
                         if self.modulegroup is None:
                             output = unitcode + "\n\n" + output
@@ -471,6 +471,7 @@ class EventSet(object):
 
                         # The chassis/paths split for commanders
                         if chosensummoneffect.chassisvalue is not None and secondary is not None:
+                            chosensummoneffect.calcchassisvalues()
                             magiccostmod = chosensummoneffect.magicvaluepercent * basecostper * secondary.magicpathvaluescaling * fatiguemult
                             chassiscostmod = chosensummoneffect.chassisvaluepercent * basecostper * (fatiguemult - 1.0)
                             costper = int(
@@ -489,10 +490,10 @@ class EventSet(object):
                         montag.add(unittouse, secondary, costper)
                         generateokay = True
 
-                if unittouse is not None and numtogenerate == 1:
-                    output = output.replace("UNITID", str(unittouse))
+                if realunitmod.lastparentid is not None and numtogenerate == 1:
+                    output = output.replace("UNITID", str(realunitmod.lastparentid))
                     output = f"-- EventSet {self.name} called by {spelleffect.name} generated with unitid " \
-                             f"{unittouse}\n\n" + output
+                             f"{realunitmod.lastparentid}\n\n" + output
 
                 if generateokay:
                     break

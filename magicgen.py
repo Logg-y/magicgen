@@ -22,11 +22,11 @@ from Services import utils, DebugLogger
 from fileparser import nationals, unitinbasedatafinder
 
 # List of spells to not push to uncastable: these are only divine spells
-spellstokeep = [150, 167, 166, 165, 168, 169, 189, 190]
+spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.6"
+ver = "2.1.7"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -95,6 +95,7 @@ def rollspells(**options):
             fileparser.readUnitModsFromDir(r".\data\spells\rituals\globals\unitmods")
             fileparser.readEventSetsFromDir(r".\data\spells\rituals\events")
             fileparser.readUnitModsFromDir(r".\data\spells\rituals\unitmods")
+            fileparser.readNewUnitsFromDir(r".\data\spells\summons\newunits")
 
             s: Dict[str, fileparser.SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
 
@@ -178,7 +179,7 @@ def rollspells(**options):
             # Make holy spells
             _writetoconsole("Generating holy spells...\n")
             holy = fileparser.readEffectsFromDir(r".\data\spells\holy")
-            for spelltype in ["banishment", "smite"]:
+            for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
                 for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
                     effectpool = copy.copy(holy)
                     effectlist = list(effectpool.keys())
@@ -203,7 +204,7 @@ def rollspells(**options):
                                                                 allowskipchance=False, **options))
                                 else:  # block secondaries on things that DO have a nextspell built in
                                     l.append(
-                                        spelleff.rollSpell(spelleff.power, blocksecondary=True,
+                                        spelleff.rollSpell(spelleff.power, blocksecondary=True, forcesecondaryeff=path,
                                                            blockmodifier=True,
                                                            allowskipchance=False, **options))
                                 break

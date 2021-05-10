@@ -33,7 +33,8 @@
 #nreff 1001
 #pathlevel 3
 #fatiguecost 500
-#schools 16
+#schools 24
+#newunit "Marble Lion fixed slots"
 
 #paths 8
 #secondarypaths 8

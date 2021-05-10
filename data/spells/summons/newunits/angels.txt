@@ -1,0 +1,28 @@
+#newunit "Angel of the Host"
+#baseunit 543
+#raw "#clearspec"
+#raw "#fireres 5"
+#raw "#shockres 5"
+#raw "#awe 5"
+#raw "#invulnerable 15"
+#raw "#flying"
+#raw "#neednoteat"
+#raw "#spiritsight"
+#raw "#nametype 139"
+#set sacred 0
+#end
+
+#newunit "Angel of the Choir"
+#baseunit 1367
+#raw "#clearmagic"
+#raw "#clearspec"
+#raw "#fireres 5"
+#raw "#shockres 5"
+#raw "#awe 5"
+#raw "#invulnerable 15"
+#raw "#flying"
+#raw "#neednoteat"
+#raw "#spiritsight"
+#raw "#nametype 139"
+#set sacred 0
+#end

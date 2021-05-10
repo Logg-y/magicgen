@@ -57,7 +57,7 @@
 #damage 522
 #spec 0
 #power 8
-#maxpower 14
+#maxpower 8
 #nreff 1
 #pathlevel 4
 #fatiguecost 500

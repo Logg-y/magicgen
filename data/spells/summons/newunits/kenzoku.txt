@@ -1,0 +1,9 @@
+#newunit "Kenzoku"
+#baseunit 2096
+#raw "#clearspec"
+#raw "#ethereal"
+#raw "#awe 2"
+#raw "#neednoteat"
+#raw "#spiritsight"
+#set sacred 0
+#end

@@ -7,7 +7,7 @@ from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services.utils import eventsets, eventmodulegroups
 
-secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths", "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel", "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance", "setspelldamage"]
+secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths", "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel", "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance", "setspelldamage", "effectnumberforunits"]
 secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails"]
 secondary_params_float = []
 

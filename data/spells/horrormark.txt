@@ -7,7 +7,7 @@
 -- evo, scale effect number
 #spelltype 258
 
-#scalerate 2
+#scalerate 1.2
 #scalefatigueexponent -0.25
 -- #scalecost 0.6
 
@@ -96,7 +96,7 @@
 -- evo, scale effect number
 #spelltype 258
 
-#scalerate 1.5
+#scalerate 1
 -- #scalecost 1
 
 #aoe 666

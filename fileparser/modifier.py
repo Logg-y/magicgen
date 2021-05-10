@@ -7,7 +7,7 @@ from Exceptions.ParseError import ParseError
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
-                       "aicastmod", "reqdamaging"]
+                       "aicastmod", "reqdamaging", "spec"]
 modifier_params_str = []
 modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent"]
 

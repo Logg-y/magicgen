@@ -1,0 +1,117 @@
+#neweffect "Summon elderthing"
+#effect 1
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 80
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Elder Thing"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX Elder %Thing%"
+#descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "elderthing ritual"
+#effect 10001
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Elder Thing"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX Elder %Thing%"
+#descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
+#details "Creatures summoned with this spell are not sacred."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+#newunit "Elder Thing"
+
+#scalerate 4
+#end
+
+#neweffect "elderthing Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#skipchance 99
+
+#paths 16
+#secondarypaths 16
+#newunit "Elder Thing"
+
+#skipchance 99
+
+#name 16 "NAMEPREFIX Elder Thing Attack"
+#descr 16 "The caster summons ARTICLE elder %thing% to ambush a hostile commander in a distant province. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote elderthing"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 2001
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 10
+#newunit "Elder Thing"
+
+#name 16 "Send NAMEPREFIX Elder %Thing%"
+#descr 16 "The caster summons ARTICLE elder %thing% to attack a distant province. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#scalerate 2
+#end

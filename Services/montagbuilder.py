@@ -10,7 +10,7 @@ class MontagBuilder(object):
         self.makedummymonster = False
         # Dict: <index of unitlist>:<number of times it was added>
         self.numberofcopies = {}
-    def add(self, unitid, secondaryeffect, costratio):
+    def add(self, unitobj, secondaryeffect, costratio):
         """Add a unit to the montag with the given secondary effect. Cost ratio should be a pessimistic estimate of:
 
         gems / number of effects
@@ -18,14 +18,14 @@ class MontagBuilder(object):
         """
 
         for i, data in enumerate(self.unitlist):
-            unitid2 = data[0]
+            unitobj2 = data[0]
             secondaryeffect2 = data[1]
             costratio2 = data[2]
-            if unitid2 == unitid and secondaryeffect2 == secondaryeffect and costratio2 == costratio:
+            if unitobj2.uniqueid == unitobj.uniqueid and secondaryeffect2 == secondaryeffect and costratio2 == costratio:
                 self.numberofcopies[i] = self.numberofcopies.get(i, 1) + 1
                 return
 
-        self.unitlist.append((unitid, secondaryeffect, costratio))
+        self.unitlist.append((unitobj, secondaryeffect, costratio))
         self.maxcostratio = max(self.maxcostratio, costratio)
     def process(self):
         out = MontagResult()
@@ -35,7 +35,7 @@ class MontagBuilder(object):
         maxweight = 0
         # quickly get the weight total, it is useful later
         for i, data in enumerate(self.unitlist):
-            unitid = data[0]
+            unitobj = data[0]
             secondaryeffect = data[1]
             # Adjust for multiple copies of the same thing
             costratio = data[2]
@@ -58,7 +58,7 @@ class MontagBuilder(object):
         utils.MONTAG_ID += 1
         out.weightingstring = f"Details of Montag#{out.montagid}\n\n"
         for i, data in enumerate(self.unitlist):
-            unitid = data[0]
+            unitobj = data[0]
             secondary = data[1]
             # Adjust for multiple copies of the same thing
             costratio = data[2]
@@ -75,14 +75,14 @@ class MontagBuilder(object):
                 unitmod = utils.unitmods[secondary.unitmod]
             else:
                 unitmod = utils.unitmods["Do Nothing"]
-            modcmds = unitmod.applytounitid(None, unitid, additionals_firstshape={"#montagweight":montagweight,
+            modcmds = unitmod.applytounit(None, unitobj, additionals_firstshape={"#montagweight":montagweight,
                                                                         "#montag":out.montagid})
             modcmds = f"-- Montag: costratio was {costratio}, max for this montag was {self.maxcostratio}\n" + modcmds
             out.modcmds += modcmds + "\n"
 
             percentage = "{:.1f}%".format(montagweight/weighttotal * 100)
 
-            unittoapplyto = unitinbasedatafinder.get(unitid)
+            unittoapplyto = unitobj
             woundshape = getattr(unittoapplyto, "secondshape", None)
             nametowrite = unitmod.lastunitname
             if woundshape is not None:

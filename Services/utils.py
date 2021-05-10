@@ -16,6 +16,8 @@ eventsets = {}
 # For storing which eventsets are in each module group
 eventmodulegroups = {}
 
+newunits = {}
+
 # For tracking how many permanent slot taking spells have been made
 # too many means that mechanic abuse from filling all 6 slots is possible
 # this is saved as primary path: number of offending spells generated

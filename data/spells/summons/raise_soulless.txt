@@ -88,7 +88,7 @@
 #power 1
 #scalerate 2
 -- #scalecost 1.0
-#pathlevel 1
+#pathlevel 2
 #schools 16
 #skipchance 60
 #end

@@ -16,3 +16,5 @@ witch	witches
 ker	keres
 khalkotauros	khalkotauroi
 lampad	lampades
+otherness	othernesses
+vastness	vastnesses

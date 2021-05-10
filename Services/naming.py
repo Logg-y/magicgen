@@ -115,7 +115,9 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
             print("Spell seems to be vanilla, add a trailing space")
         parsedname = adjustnameofspell(parsedname, spell)
     elif isspell:
+        print(f"Beginning naming next or national spell {parsedname}...")
         parsedname = padspellname(parsedname)
+        print(f"Name is padded with {len(parsedname) - len(parsedname.strip())} spaces")
 
     if isspell:
         utils.spellnames.append(parsedname)

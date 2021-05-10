@@ -1,0 +1,24 @@
+#neweffect "Reanimators Global"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 7
+#fatiguecost 7000
+#schools 48
+#unique 1
+#paths 32
+#skipchance 0
+#secondarypaths 32
+#secondarypathchance 0
+#eventset "Reanimators Global"
+
+#name 32 "Dominion of Reanimation"
+#descr 32 "This enchantment causes the dead to rise in the caster's dominion. Corpses in friendly provinces will be reanimated and will await direction from a necromancer."
+#details "In friendly provinces with friendly dominon, gives a free longdead commander that passively reanimates up to 10 corpses in the province as soulless. These longdead cannot move and are destroyed when the enchantment ends. Any individual longdead is also destroyed if friendly dominion leaves its province."
+
+#spelltype 4
+#scalerate 0
+#end

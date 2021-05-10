@@ -2,5 +2,6 @@
 #set immobile 1
 #set homesick 100
 #set patrolbonus 50
+#nameprefix "Omnipresent"
 #end
 

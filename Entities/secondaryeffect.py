@@ -138,7 +138,7 @@ class SpellSecondaryEffect(object):
                 return False
 
         if self.unitmod != "":
-            u = unitinbasedatafinder.get(eff.damage)
+            u = eff.getUnit()
             umod = unitmods[self.unitmod]
             if not umod.compatibility(u):
                 return False

@@ -35,7 +35,7 @@ class UnitMod(object):
         # print(f"{self.name} testing against {unit.id} {unit.name}")
         if tested is None:
             tested = []
-        if unitobj.id in tested:
+        if unitobj.uniqueid in tested:
             return True
 
         for r in self.reqs:
@@ -71,7 +71,7 @@ class UnitMod(object):
             wpnmod = utils.weaponmods[self.weaponmod]
             if not wpnmod.compatibilityunit(unitobj):
                 return False
-        tested.append(unitobj.id)
+        tested.append(unitobj.uniqueid)
 
         # Must recursively check for eligibility on all subshapes too
         for x in ["shapechange", "firstshape", "secondshape", "secondtmpshape", "forestshape", "plainshape",
@@ -91,32 +91,22 @@ class UnitMod(object):
         "Apply this unit mod to the given spell of type spelleffect."
         # Globals with events apply this through the eventset instead
         if spelleffect.eventset is None:
-            unitnr = spell.damage
-            return self.applytounitid(spell, unitnr)
+            return self.applytounit(spell, spelleffect.getUnit())
         return ""
 
-    def applytounitid(self, spell, unitnr, extrashapechain=None, additionals_firstshape=None):
-        """Apply this effect to the given unitnr, returning mod code for the new unit.
+    def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None):
+        """Apply this effect to the given unit object, returning mod code for the new unit.
 
-        spell can be None. If given, spell.damage is set to the correct unit ID for the new unit.
-        extrashapechain should not be set manually as it is used to track wounded shapes and make them all
-        join together neatly
+                spell can be None. If given, spell.damage is set to the correct unit ID for the new unit.
+                extrashapechain should not be set manually as it is used to track wounded shapes and make them all
+                join together neatly
 
-        additionals_firstshape should be a dict of {modcommand:value} that is appended to the first shape ONLY.
-        So far this is used for things like adding units to montags and giving them a montagweight.
-        The modcommand given should INCLUDE A HASH.
-        """
-        # Turns out that value given as default arguments are not created fresh every call
-        # which is an interesting bit of python trivia I didn't know before I wrote this
-        # needless to say, this persisting between calls created all kinds of weird abominations
-        # of creatures that would turn into each other
+                additionals_firstshape should be a dict of {modcommand:value} that is appended to the first shape ONLY.
+                So far this is used for things like adding units to montags and giving them a montagweight.
+                The modcommand given should INCLUDE A HASH.
+                """
         if extrashapechain is None:
             extrashapechain = {}
-
-        u = unitinbasedatafinder.get(unitnr)
-        return self.applytounit(spell, u, extrashapechain, additionals_firstshape=additionals_firstshape)
-
-    def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None):
 
         u.descr += " " + self.descr
         u.descr = u.descr.replace("CREATURE", u.name)
@@ -151,10 +141,16 @@ class UnitMod(object):
             else:
                 self.lastparentid = utils.MONSTER_ID
         utils.MONSTER_ID += 1
-        out += f"#copystats {u.origid}\n"
-        out += f"#copyspr {u.origid}\n"
-        out += "#descr {}{}{}\n".format('"', u.descr, '"')
-        out += "#name {}{}{}\n".format('"', u.name, '"')
+        if u.origid is not None:
+            out += f"#copystats {u.origid}\n"
+            out += f"#copyspr {u.origid}\n"
+            out += "#descr {}{}{}\n".format('"', u.descr, '"')
+            out += "#name {}{}{}\n".format('"', u.name, '"')
+
+
+
+        # New unit stuff should go here
+        out += u.additionalmodcmds + "\n"
 
         # Disable transformation
         if hasattr(u, "transformation"):
@@ -208,7 +204,7 @@ class UnitMod(object):
                 if uid not in extrashapechain and uid > 0:
                     extrashapechain[uid] = copy(utils.MONSTER_ID)
                     print(f"UID {uid} is a {x} of {u.name}, applying to that too...")
-                    secondshapeextra += self.applytounitid(spell, uid, extrashapechain)
+                    secondshapeextra += self.applytounit(spell, unitinbasedatafinder.get(uid), extrashapechain)
                 if uid in extrashapechain and uid > 0:
                     # update this creature's secondshape or whatever with the new creature
                     out += f"#{x} {extrashapechain[uid]}\n"
@@ -220,7 +216,9 @@ class UnitMod(object):
         # Special case: Do nothing should firstshape to the original unit
         # This makes montags built with Do Nothing-modified units quickly transform to their normal version
         # which means double click correctly selects all of them amongst other things
-        if self.name == "Do Nothing":
+
+        # ...but not if this is a newunit, as u.id will instead be undefined or whatever we copystats-ed from originally
+        if self.name == "Do Nothing" and u.origid is None:
             out += f"#firstshape {u.id}\n"
 
         out += "#end\n\n"

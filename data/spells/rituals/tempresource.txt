@@ -1,0 +1,99 @@
+#neweffect "Temp Resources 50"
+#effect 10085
+#damage 0
+#spec 8388608
+#power 2
+#maxpower 2
+#nreff 1
+#pathlevel 2
+#fatiguecost 400
+-- thaum
+#schools 32
+
+#eventset "Temp Resources 50"
+
+-- not blood
+#paths 8
+#secondarypaths 8
+#secondarypathchance 0
+#friendlyench 1
+#provrange 5
+#onlyfriendlydst 1
+
+
+#name 8 "Minor Ore Transmutation"
+#descr 8 "The caster converts some rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
+#details "The targeted province gains 50 resources for the duration of the spell. This spell only functions if cast on a fort, otherwise its effects are wasted."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end
+
+#neweffect "Temp Resources 200"
+#effect 10085
+#damage 0
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1000
+-- thaum
+#schools 32
+
+#eventset "Temp Resources 200"
+
+-- not blood
+#paths 8
+#secondarypaths 8
+#secondarypathchance 0
+#friendlyench 1
+#provrange 5
+#onlyfriendlydst 1
+
+
+#name 8 "Ore Transmutation"
+#descr 8 "The caster converts rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
+#details "The targeted province gains 200 resources for the duration of the spell. This spell only functions if cast on a fort, otherwise its effects are wasted."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end
+
+#neweffect "Temp Resources 2000"
+#effect 10085
+#damage 0
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+-- thaum
+#schools 32
+
+#eventset "Temp Resources 2000"
+
+-- not blood
+#paths 8
+#secondarypaths 8
+#secondarypathchance 0
+#friendlyench 1
+#provrange 5
+#onlyfriendlydst 1
+
+
+#name 8 "Major Ore Transmutation"
+#descr 8 "The caster converts a large amount rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
+#details "The targeted province gains 2000 resources for the duration of the spell.  This spell only functions if cast on a fort, otherwise its effects are wasted."
+
+#scalefatiguemult 120
+#scalerate 1
+
+#spelltype 4
+#end
+

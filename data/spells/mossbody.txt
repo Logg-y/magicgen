@@ -23,7 +23,7 @@
 #paths 100
 #secondarypaths 68
 
-#details "Mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison cloud dealing 1AN damage with an AoE of 4."
+#details "Mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
 
 #namecond effectiveaoe < 2 4 "Algaebody"
 #namecond effectiveaoe < 2 32 "Putrid Flesh"

@@ -49,6 +49,7 @@
 
 #newunitmod "Summon Overcharge"
 #set overcharged 1
+#req overcharged == -1
 #nameprefix "Overcharged"
 #shockres 6
 #descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a jolt."
@@ -126,6 +127,7 @@
 
 #newunitmod "Summon Overcharge 3"
 #set overcharged 3
+#req overcharged == -1
 #nameprefix "Overcharged"
 #shockres 6
 #descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a severe jolt."

@@ -263,7 +263,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 2.0
 
 #unitmod "Summon Acidshield 14"
 #descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and badly harming the attacker."
@@ -280,7 +280,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 2.0
 
 #unitmod "Summon Overcharge 3"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."

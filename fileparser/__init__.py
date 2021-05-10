@@ -4,3 +4,4 @@ from .spelleffect import *
 from .unitmod import *
 from .weaponmod import *
 from .eventset import *
+from .newunit import *

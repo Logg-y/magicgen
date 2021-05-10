@@ -17,7 +17,7 @@
 
 #skipchance 97
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Warrior$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Warrior%"
 #descr 2 "Summons ARTICLE phantasmal %warrior% to fight for the caster. These warriors are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 528
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Summon NAMEPREFIX Phantasmal $Warrior$"
+#name 2 "Summon NAMEPREFIX Phantasmal %Warrior%"
 #descr 2 "Summons ARTICLE phantasmal %warrior% to fight for the caster. These warriors are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 20

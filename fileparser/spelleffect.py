@@ -6,8 +6,8 @@ from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services import utils
 
-simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench"]
-simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset"]
+simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench"]
+simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "skipchance"]
 
 

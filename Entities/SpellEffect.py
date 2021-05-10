@@ -7,6 +7,7 @@ from Enums.PathFlags import PathFlags
 from Enums.SchoolFlags import SchoolFlags
 from Enums.SpellTypes import SpellTypes
 from Services import utils, naming
+from fileparser import unitinbasedatafinder
 
 
 # Prevent generation of more than this many effects in a single path that add to permanent slot usage
@@ -69,6 +70,8 @@ class SpellEffect(object):
         self.pathskipchances = {}
         self.banishment = 0
         self.smite = 0
+        self.holyword = 0
+        self.smitedemon = 0
         self.eventset = None
         self.noadditionalnextspells = 0
         self.basescale = 0
@@ -76,6 +79,7 @@ class SpellEffect(object):
         self.permanentslotusage = 0
         self.hiddenench = None
         self.friendlyench = None
+        self.newunit = None
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -283,12 +287,7 @@ class SpellEffect(object):
 
         self.magicvalue = 0.0
         if self.chassisvalue is not None:
-            self.magicvalue = self.fatiguecost - self.chassisvalue
-            self.magicvaluepercent = self.magicvalue / self.fatiguecost
-            self.chassisvaluepercent = self.chassisvalue / self.fatiguecost
-            if self.magicvalue < 0.0:
-                raise ValueError(
-                    f"Can't have a negative (fatiguecost-chassisvalue) of {self.magicvalue} for {self.name}")
+            self.calcchassisvalues()
 
         if self.copyspell is not None:
             s.copyspell = self.copyspell
@@ -604,6 +603,7 @@ class SpellEffect(object):
                 print(f"secondary: Mult: spell {attrib} by {val} to {newval}")
             setattr(s, attrib, newval)
 
+        unitmodApplied = False
         # Apply secondary to the spell
         for param in secondary.params:
             if param == "unitmod":
@@ -611,6 +611,7 @@ class SpellEffect(object):
                 if paramv is not None and paramv != "":
                     realunitmod = utils.unitmods[paramv]
                     s.modcmdsbefore += realunitmod.apply(self, s)
+                    unitmodApplied = True
                     continue
 
             if hasattr(s, param):
@@ -635,11 +636,26 @@ class SpellEffect(object):
                                 if tmp.nextspell is None:
                                     print("ERROR: failed to generate nextspell")
                                     return None
+                                # Copy certain targeting spec values
+                                # 8 - demons/undead only
+                                # 16 - magic beings only
+                                # 32768 - sacreds only
+                                # 131072 - not mindless
+                                # 524288 - not undead
+                                # 268435456 - not demons
+                                # 536870912 - not inanimate
+                                spectocopy = tmp.spec & 0x300a8018
+                                tmp.nextspell.spec |= spectocopy
+                                print(f"Copied target type checking spec values: {spectocopy} to new nextspell")
                                 print(f"set nextspell to {tmp.nextspell.name}")
                                 break
                 else:
                     setattr(s, param, getattr(s, param) + getattr(secondary, param))
 
+        # If the above did not apply a unitmod and we are using a new unit, it needs to be forced
+        # or nothing else will write the mod commands for the new unit
+        if not unitmodApplied and self.newunit is not None:
+            s.modcmdsbefore += utils.unitmods["Do Nothing"].apply(self, s)
 
         # Blood goes in blood magic.
         # And takes slaves.
@@ -790,11 +806,13 @@ class SpellEffect(object):
         s.details = s.details.replace("\\n", "\n")
         scale = s.nreff // 1000
         base = s.nreff % 1000
+        print(f"Nreff breakdown: spell {s.nreff} = {scale} scale + {base} base, path 1 level is {s.path1level}")
         s.details = s.details.replace("EFFECTIVENREFF", str((s.path1level * scale) + base))
         s.details = s.details.replace("NREFFSCALING", str(scale))
         s.details = s.details.replace("NREFF", str(s.nreff))
         scale = s.damage // 1000
         base = s.damage % 1000
+        print(f"Damage breakdown: on spell {s.damage} = {scale} scale + {base} base, path 1 level is {s.path1level}")
         s.details = s.details.replace("EFFECTIVEDAMAGE", str((s.path1level * scale) + base))
         s.details = s.details.replace("DAMAGESCALING", str(scale))
         s.details = s.details.replace("DAMAGE", str(s.damage))
@@ -972,6 +990,10 @@ class SpellEffect(object):
                                                                   103, 104, 105, 128, 129, 134, 138, 142]:
                     continue
 
+                # Leave 999 damage effects as they are
+                elif attribToScale == "damage" and s.damage == 999:
+                    continue
+
                 attribScaleAmt = getattr(self, attribToScale) // 1000
                 # Do not even think about scaling montags or anything else special
                 if attribScaleAmt < 0:
@@ -990,11 +1012,12 @@ class SpellEffect(object):
                         print(f"Skip scaling attribute {attribToScale} as no research level progression")
                         continue
                 else:
-                    basespellvalue = (attribScaleAmt * self.power) + self.nreff % 1000
+                    basespellvalue = (attribScaleAmt * self.power) + getattr(self, attribToScale) % 1000
                     if basespellvalue == 0:
                         print(f"Skip scaling attribute {attribToScale} as attribute value is zero")
                         continue
                     scaleratio = min(1.0, attribScaleAmt / basespellvalue)
+                    print(f"Attribute scale amount is {attribScaleAmt}, base spell value is {basespellvalue}")
 
                 newspellattrib = getattr(s, attribToScale)
                 newspellvalue = ((newspellattrib // 1000) * s.path1level) + newspellattrib % 1000
@@ -1011,6 +1034,9 @@ class SpellEffect(object):
     def enforceGemCosts(self, s):
         # Certain effects should always have gem costs for safety reasons
         # These are: reinvigoration, summon commander
+        if s.effect > 10000 and s.fatiguecost < 100 and self.fatiguecost >= 100:
+            print(f"Increase gem cost of ritaul from {s.fatiguecost} to 100 so it costs a gem")
+            s.fatiguecost = 100
         if s.effect == 8:  # reinvigoration
             fatiguedifference = 100 - s.fatiguecost
             if s.fatiguecost < 100:
@@ -1025,3 +1051,16 @@ class SpellEffect(object):
                 s.nreff = math.floor(effectmult * scalenreff)
                 self.dynamicScaleParams(s)
                 s.fatiguecost = 100
+    def calcchassisvalues(self):
+        self.magicvalue = self.fatiguecost - self.chassisvalue
+        self.magicvaluepercent = self.magicvalue / self.fatiguecost
+        self.chassisvaluepercent = self.chassisvalue / self.fatiguecost
+        if self.magicvalue < 0.0:
+            raise ValueError(
+                f"Can't have a negative (fatiguecost-chassisvalue) of {self.magicvalue} for {self.name}")
+    def getUnit(self) -> unitinbasedatafinder.UnitInBaseDataFinder:
+        if self.newunit is None:
+            return unitinbasedatafinder.get(self.damage)
+        else:
+            newunitobj = utils.newunits[self.newunit]
+            return newunitobj.toUnitBaseData()

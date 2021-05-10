@@ -1,0 +1,17 @@
+#neweventset "Temp Resources 2000"
+
+#usefixedunitid 561
+#selectunitmod "Temp Resources 2000"
+#allowedunitmod "Temp Resources 2000"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Temp resource create unit"
+#nolog
+#notext
+#nation -2
+#req_friendlyench ENCHANTID
+#1unit UNITID
+#end

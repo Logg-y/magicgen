@@ -1,0 +1,35 @@
+#newunitmod "Temp Resources 50"
+#set amphibian 1
+#set landdamage 99
+#set uwdamage 99
+#set immobile 1
+#set resources 50
+#set homesick 100
+#set hp 10
+#nameprefix "Transumuting"
+#descr "This particular spirit is responsible for transmuting mundane rock into useful ore."
+#end+
+
+#newunitmod "Temp Resources 200"
+#set amphibian 1
+#set landdamage 99
+#set uwdamage 99
+#set immobile 1
+#set resources 200
+#set homesick 100
+#set hp 10
+#nameprefix "Transumuting"
+#descr "This particular spirit is responsible for transmuting mundane rock into useful ore."
+#end
+
+#newunitmod "Temp Resources 2000"
+#set amphibian 1
+#set landdamage 99
+#set uwdamage 99
+#set immobile 1
+#set resources 2000
+#set homesick 100
+#set hp 10
+#nameprefix "Transumuting"
+#descr "This particular spirit is responsible for transmuting mundane rock into useful ore."
+#end

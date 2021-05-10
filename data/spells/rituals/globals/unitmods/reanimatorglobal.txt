@@ -1,0 +1,7 @@
+#newunitmod "Reanimator Global"
+#set immobile 1
+#set homesick 100
+#set reanimator 10
+#nameprefix "Reanimating"
+#end
+
