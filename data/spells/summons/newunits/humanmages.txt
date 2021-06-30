@@ -1,0 +1,347 @@
+#newunit "Mage of Flames"
+#baseunit 2328
+#raw "#clearspec"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#itemslots 15494"
+#setstr descr "Mages of Flames are adept users of fire magic, commonly in search of greater knowledge of fire and flames. Their power is outclassed by that of the Adepts of Pyriphlegeton."
+#setstr name "Mage of Flames"
+#set sacred 0
+#end
+
+#newunit "Earthen Initiate"
+#baseunit 1254
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 3 1"
+#raw "#itemslots 15494"
+#setstr descr "Earthen Initiates are students of Earth magic. Their capabilities are at best modest, and they may often be found trying to deepen their knowledge."
+#setstr name "Earthen Initiate"
+#set sacred 0
+#set E 1
+#end
+
+#newunit "Earthen Mage"
+#baseunit 1255
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 3 2"
+#raw "#itemslots 15494"
+#setstr descr "Earthen Mages are adept users of Earth magic, commonly in search of greater knowledge. Their power is outclassed by that of the Geomancers."
+#setstr name "Earthen Mage"
+#set sacred 0
+#set E 2
+#set N 0
+#end
+
+#newunit "Geomancer"
+#baseunit 2988
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#cleararmor"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 3 3"
+#raw "#itemslots 15494"
+#setstr descr "Geomancers are masters of Earth magic, capable of impressive feats of magical power."
+#setstr name "Geomancer"
+#set sacred 0
+#set E 3
+#set N 0
+#set H 0
+#set holy 0
+#end
+
+#newunit "Storm Caller"
+#baseunit 1255
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#cleararmor"
+#raw "#copyspr 250"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#stormimmune"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 1 3"
+#raw "#itemslots 15494"
+#setstr descr "Storm Callers are masters of Air magic, and are capable of destructive displays of lightning. They are also capable of masterfully manipulating the very air."
+#setstr name "Storm Caller"
+#set A 3
+#set D 0
+#set stormimmune 1
+#end
+
+#newunit "Stargazer"
+#baseunit 310
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 1645"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 4 1"
+#raw "#itemslots 15494"
+#setstr descr "Stargazers are habitual observers of Astral bodies, and have learned the very basics of commanding otherworldly powers."
+#setstr name "Stargazer"
+#set sacred 0
+#set S 1
+#set E 0
+#end
+
+#newunit "Star Seer"
+#baseunit 310
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 1848"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 4 2"
+#raw "#itemslots 15494"
+#setstr descr "Star Seers are experienced observers of Astral bodies, and are capable of commanding otherworldly magic."
+#setstr name "Star Seer"
+#set sacred 0
+#set S 2
+#set D 0
+#end
+
+#newunit "Archdruid"
+#baseunit 1255
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 270"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#forestsurvival"
+#raw "#ivylord 2"
+#raw "#magicskill 6 3"
+#raw "#itemslots 15494"
+#setstr descr "Archdruids are masters of forests and their magic. Their magical prowess outclasses that of the Animists."
+#setstr name "Archdruid"
+#set sacred 0
+#set N 3
+#set D 0
+#end
+
+#newunit "Necromantic Initiate"
+#baseunit 310
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 2535"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 5 1"
+#raw "#itemslots 15494"
+#setstr descr "Necromantic Initiates are those beginning a journey of understanding the dark powers of unlife."
+#setstr name "Necromantic Initiate"
+#set sacred 0
+#set D 1
+#end
+
+#newunit "Master Necromancer"
+#baseunit 1255
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 2329"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 5 3"
+#raw "#itemslots 15494"
+#setstr descr "Master Necromancers control dark powers surpassing that of their lesser bretheren."
+#setstr name "Master Necromancer"
+#set sacred 0
+#set D 3
+#end
+
+#newunit "Infernal Dabbler"
+#baseunit 310
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 225"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 7 2"
+#raw "#itemslots 15494"
+#setstr descr "Infernal Dabblers have a small amount of experience in using blood to bargain with infernal powers. This is however a dangerous occupation and few survive to become more skilled."
+#setstr name "Infernal Dabbler"
+#set sacred 0
+#set D 0
+#set B 2
+#end
+
+
+#newunit "Pact Sealer"
+#baseunit 310
+#raw "#clearspec"
+#raw "#clearmagic"
+#raw "#copyspr 224"
+#raw "#gcost 10010"
+#raw "#str 9"
+#raw "#att 8"
+#raw "#def 8"
+#raw "#hp 10"
+#raw "#size 2"
+#raw "#prot 0"
+#raw "#mr 14"
+#raw "#prec 10"
+#raw "#ap 10"
+#raw "#rpcost 10000"
+#raw "#mapmove 16"
+#raw "#enc 3"
+#raw "#startage 22"
+#raw "#maxage 46"
+#raw "#magicskill 7 3"
+#raw "#itemslots 15494"
+#setstr descr "Pact Sealers are masters of Blood magic, and have considerable experience dealing with infernal powers."
+#setstr name "Pact Sealer"
+#set sacred 0
+#set D 0
+#set B 3
+#end
+
+
+

@@ -11,6 +11,7 @@
 #explspr 10275
 #sound 42
 #schools 1
+#aispellmod -60
 
 #paths 2
 #secondarypaths 2

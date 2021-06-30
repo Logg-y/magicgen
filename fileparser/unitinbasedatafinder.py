@@ -29,6 +29,9 @@ class UnitInBaseDataFinder(object):
                 setattr(self,k, -1)
         self.weapons = []
 
+    def __repr__(self):
+        return (f"Unit({self.id}, {getattr(self, 'name', '???')})")
+
 
     @staticmethod
     def from_id(id):

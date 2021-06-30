@@ -14,11 +14,11 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Lioness%"
 #descr 64 "The caster summons ARTICLE %lioness%. These lions are large and ferocious."
-
+#aispellmod -40
 #spelltype 528
 
 #scalerate 1
@@ -38,7 +38,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Lioness%"
 #descr 64 "The caster summons ARTICLE %lioness%. These lions are large and ferocious."

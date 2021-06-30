@@ -1,0 +1,94 @@
+
+#neweffect "Healing Site"
+#effect 10082
+#damage -1
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#scalefatiguemult 20
+#schools 32
+
+#ainocast 1
+#badaispell 1
+
+#eventset "Healing Site"
+
+#scalerate 5
+
+#basescale 10
+
+
+-- ESDB
+#paths 68
+#secondarypaths 64
+#secondarypathchance 50
+
+#name 4 "Healing Spring"
+#name 64 "Plants of Healing"
+#descr 4 "This spell temporarily brings forth healing waters that are magically enchanted to be able to cure all ills. It may take some time for this to happen, however."
+#descr 64 "This spell temporarily brings forth magical plants in the caster's province. These plants produce magical fruit which may cure all ills."
+#details "Lasts 1 month plus 1 month per gem spent. SCALEAMT percent of the units in the province experience a healer check every turn."
+
+#spelltype 4
+#end
+
+
+
+
+
+
+#neweffect "Healing Site Permanent"
+#effect 10082
+#damage 0
+#spec 0
+#fatiguecost 2000
+#schools -1
+
+#eventset "Healing Site Permanent"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 7
+#name 4 "Redirect Flow"
+#name 64 "Create Field"
+#scalerate 5
+#end
+
+
+#neweffect "Healing Site Permanent Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 11
+#nreff 1
+#pathlevel 5
+#fatiguecost 2000
+#schools 32
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Healing Site Permanent"
+#scalerate 5
+
+#basescale 10
+
+-- ESDB
+#paths 68
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 4 "Healing Flow"
+#name 64 "Fields of Healing"
+#descr 4 "This spell brings forth healing waters that are magically enchanted to be able to cure all ills. It may take some time for this to happen, however. The effect of this spell is permanent."
+#descr 64 "This spell brings forth a field of magical plants in the caster's province. These plants produce magical fruit which may cure all ills. The effect of this spell is permanent."
+#details "SCALEAMT percent of the units in the province experience a healer check every turn."
+
+#spelltype 4
+#end

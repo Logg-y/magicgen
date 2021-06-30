@@ -3,14 +3,14 @@
 #effect 1
 #damage 1256
 #spec 0
-#power 3
+#power 5
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 2
-#chassisvalue 60
+#pathlevel 3
+#chassisvalue 90
 #range 6
-#fatiguecost 60
+#fatiguecost 90
 #explspr 10232
 #sound 31
 #schools 1
@@ -39,7 +39,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#chassisvalue 420
+#chassisvalue 600
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300

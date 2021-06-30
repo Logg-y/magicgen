@@ -6,7 +6,7 @@ from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services import utils
 
-simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aicastmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench"]
+simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell"]
 simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "skipchance"]
 
@@ -184,6 +184,8 @@ def readEffectsFromDir(dir):
 				if key in out:
 					raise ParseError(f"Spell named {key} already exists and was redefined in {f}")
 				out[key] = c[key]
+				if c[key].spelltype == -1:
+					raise ParseError(f"{f}: Spell Effect {key} was given no spell type")
 				new.append(key)
 	o = {}
 	for key in new:

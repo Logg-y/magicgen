@@ -2,6 +2,7 @@
 #set fastcast 25
 #nameprefix "Fastcasting"
 #reqmage 1
+#req bonusspells <= 0
 #descr "This particular CREATURE is able to cast spells faster than normal."
 #end
 
@@ -10,6 +11,7 @@
 #set fastcast 50
 #nameprefix "Fastcasting"
 #reqmage 1
+#req bonusspells <= 0
 #descr "This particular CREATURE is able to cast spells significantly faster than normal."
 #end
 
@@ -17,5 +19,6 @@
 #set fastcast 100
 #nameprefix "Fastcasting"
 #reqmage 1
+#req bonusspells <= 0
 #descr "This particular CREATURE is able to cast spells significantly faster than normal."
 #end

@@ -19,7 +19,7 @@
 #paths 240
 #secondarypaths 32
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 
 #name 32 "Call NAMEPREFIX circle master"

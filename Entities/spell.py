@@ -53,6 +53,8 @@ class Spell(object):
         self.hiddenench = None
         self.friendlyench = None
 
+        self.hasgenerated = False
+
     def p(self):
         print(f"name {self.name}")
         print(f"effect {self.effect}")
@@ -67,6 +69,8 @@ class Spell(object):
         print("\n" * 3)
 
     def output(self):
+        if self.hasgenerated:
+            return ""
         # self.p()
         debugmode = False
         if debugmode:
@@ -91,6 +95,13 @@ class Spell(object):
             myid = copy.copy(self.id)
             self.id = firstid
             self.nextspell.id = myid
+            # If your ondamage effect has a nextspell, its nextspell needs to go BEFORE the main spell!
+            # this is so the file arrangement is:
+            # <nextspell chain>
+            # spell with extra effect on damage
+            # on damage spell which calls nextspell chain
+            if self.nextspell.nextspell != "":
+                out += self.nextspell.nextspell.output()
 
         out += f"#newspell {self.id}\n"
         if self.copyspell is not None:
@@ -153,8 +164,8 @@ class Spell(object):
             out += f"#godpathspell {self.godpathspell}\n"
         if self.restricted is not None:
             out += f"#restricted {self.restricted}\n"
-        if self.aicastmod != 0:
-            out += f"#aicastmod {self.aicastmod}\n"
+        if self.aispellmod != 0:
+            out += f"#aispellmod {self.aispellmod}\n"
         if self.hiddenench is not None:
             out += f"#hiddenench {self.hiddenench}\n"
         if self.friendlyench is not None:
@@ -163,6 +174,7 @@ class Spell(object):
 
         if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
             out += self.nextspell.output()
+        self.hasgenerated = True
         return out
 
 

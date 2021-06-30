@@ -16,6 +16,9 @@ eventsets = {}
 # For storing which eventsets are in each module group
 eventmodulegroups = {}
 
+magicsites = {}
+magicsitenames = []
+
 newunits = {}
 
 # For tracking how many permanent slot taking spells have been made
@@ -34,6 +37,7 @@ MONSTER_ID = 3550
 ENCHANTMENT_ID = 500
 EVENT_CODE = -100
 MONTAG_ID = 1001
+SITE_ID = 1510
 
 MONTAG_SCALE = 1.0
 

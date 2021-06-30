@@ -1,0 +1,47 @@
+#newunit "Dragon Water"
+#baseunit 2534
+#raw "#clearspec"
+#raw "#clearweapons"
+#raw "#clearmagic"
+#raw "#copyspr 265"
+#raw "#weapon 534"
+#raw "#weapon 20"
+#raw "#weapon 29"
+#raw "#weapon 532"
+#raw "#coldres 15"
+#raw "#fear 10"
+#raw "#flying"
+#raw "#mountainsurvival"
+#raw "#snow"
+#raw "#magicskill 2 5"
+#raw "#startage 600"
+#raw "#maxage 1000"
+#raw "#itemslots 274560"
+#set F 0
+#set W 5
+#setstr descr "The Frost Dragon is an ancient reptile of tremendous physical and magical power."
+#end
+
+#newunit "Dragon Nature"
+#baseunit 2534
+#raw "#clearspec"
+#raw "#clearweapons"
+#raw "#clearmagic"
+#raw "#copyspr 266"
+#raw "#weapon 535"
+#raw "#weapon 20"
+#raw "#weapon 29"
+#raw "#weapon 532"
+#raw "#poisonres 15"
+#raw "#fear 10"
+#raw "#flying"
+#raw "#swampsurvival"
+#raw "#swimming"
+#raw "#magicskill 6 5"
+#raw "#startage 600"
+#raw "#maxage 1000"
+#raw "#itemslots 274560"
+#set F 0
+#set N 5
+#setstr descr "The Swamp Dragon is an ancient reptile of tremendous physical and magical power."
+#end

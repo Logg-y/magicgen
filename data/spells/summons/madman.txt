@@ -1,0 +1,110 @@
+#neweffect "Summon madman"
+#effect 1
+#damage 284
+#spec 0
+#power 1
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+
+#skipchance 97
+#newunit "Madman"
+#aispellmod -20
+
+#name 16 "Teleport NAMEPREFIX %Madman%"
+#descr 16 "Summons ARTICLE %madman% to fight for the caster. Madmen are untrained and unarmoued, wielding their favourite fish and punching their foes."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Madman ritual"
+#effect 10001
+#damage 284
+#spec 0
+#power 1
+#maxpower 14
+#nreff 5007
+#pathlevel 1
+#fatiguecost 200
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Madman"
+
+#name 16 "Summon NAMEPREFIX %Madman%"
+#descr 16 "Summons raving lunatics to fight for the caster. Madmen are untrained and unarmoued, wielding their favourite fish and punching their foes."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 5
+
+#scalerate 7
+#end
+
+#neweffect "Madman Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+#newunit "Madman"
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "NAMEPREFIX Madman Attack"
+#descr 16 "Sends a madman to ambush a hostile commander in a distant province. The madman is unlikely to succeed at killing even an unarmed human."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon madmen"
+#effect 10038
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 14
+#nreff 7020
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+#newunit "Madman"
+
+--#scalefatigueexponent 0.5
+--#scalefatiguemult 5
+
+#name 16 "Send NAMEPREFIX Madmen"
+#descr 16 "Summons a mob of madmen to attack distant lands. Madmen are untrained and unarmoued, wielding their favourite fish and punching their foes."
+
+#spelltype 20
+
+#scalerate 7
+#end

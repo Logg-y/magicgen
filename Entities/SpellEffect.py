@@ -66,7 +66,7 @@ class SpellEffect(object):
         self.generated = 0
         self.alwaysgenerate = 0
         self.donotsetextraspellpath = 0
-        self.aicastmod = 0
+        self.aispellmod = 0
         self.pathskipchances = {}
         self.banishment = 0
         self.smite = 0
@@ -80,6 +80,7 @@ class SpellEffect(object):
         self.hiddenench = None
         self.friendlyench = None
         self.newunit = None
+        self.badaispell = 0
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -104,6 +105,10 @@ class SpellEffect(object):
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
 		"""
+
+        if self.badaispell and options.get("nobadaispells", 0) > 0:
+            return None
+
         if setparams is None:
             isnational = False
         else:
@@ -272,7 +277,7 @@ class SpellEffect(object):
         s.onlyfriendlydst = self.onlyfriendlydst
         s.nolandtrace = self.nolandtrace
         s.onlygeosrc = self.onlygeosrc
-        s.aicastmod = self.aicastmod
+        s.aispellmod = self.aispellmod
         s.hiddenench = self.hiddenench
         s.friendlyench = self.friendlyench
         s.parenteffect = self
@@ -375,16 +380,23 @@ class SpellEffect(object):
                             if random.random() * 100 > self.pathskipchances.get(s.path2, 0):
                                 break
 
+        # Calc this even if the spell doesn't scale - this is for the sake of SCALEAMT in #details
+        actualpowerlvl = (researchlevel - self.power) + mod.power + secondary.power
+        scaleamt = 0
+        for x in range(0, actualpowerlvl):
+            scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
+        scaleamt = int(round(scaleamt))
+
         # only do this if there is something to scale
         if self.spelltype & SpellTypes.POWER_SCALES_AOE or self.spelltype & SpellTypes.POWER_SCALES_DAMAGE or \
                 self.spelltype & SpellTypes.POWER_SCALES_NREFF or self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES \
                 or self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO or self.eventset is not None:
-            actualpowerlvl = (researchlevel - self.power) + mod.power + secondary.power
 
-            scaleamt = 0
-            for x in range(0, actualpowerlvl):
-                scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
-            scaleamt = int(round(scaleamt))
+            if self.spelltype == -1:
+                raise ValueError(f"Attempting to scale spell effect {self.name}, but no spell type is set!")
+
+
+
 
             # scale the thing
             if self.spelltype & SpellTypes.POWER_SCALES_AOE:
@@ -462,6 +474,8 @@ class SpellEffect(object):
                 print(
                     f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
 
+            s.fatiguecost = max(0, s.fatiguecost)
+
         if self.nextspell != "":
             s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondary.power, forceschool=forceschool,
                                                    forcepath=s.path1, blockmodifier=True, isnextspell=True,
@@ -493,11 +507,12 @@ class SpellEffect(object):
 
         # don't make spells uncastable at the minimum level
         if not self.spelltype & SpellTypes.RITUAL:
-            if s.fatiguecost > 100 * s.path1level:
+            maxfatiguecost = 99 + (100 * s.path1level)
+            if s.fatiguecost > 100 * maxfatiguecost:
                 print(f"Spell is overcosted! Fatigue is {s.fatiguecost} but path level is {s.path1level}")
-                reductionfactor = (100 * s.path1level) / s.fatiguecost
+                reductionfactor = maxfatiguecost / s.fatiguecost
                 if realnumeffects > 1:
-                    desirednumeffects = max(1, math.floor(realnumeffects * reductionfactor))
+                    desirednumeffects = max(1, int(round(realnumeffects * reductionfactor)))
                     numeffectstolose = realnumeffects - desirednumeffects
                     # Take from scaling first
                     while 1:
@@ -525,7 +540,7 @@ class SpellEffect(object):
                                       f"reduction scale of {reductionfactor}")
 
                 s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
-                s.fatiguecost = min(s.fatiguecost, 100 * s.path1level)
+                s.fatiguecost = min(s.fatiguecost, maxfatiguecost)
 
         plural = True if (s.aoe > 0 or s.nreff > 1) else False
         if self.spelltype & SpellTypes.EVOCATION:
@@ -901,6 +916,12 @@ class SpellEffect(object):
                     print("Had to give up on this spell because no names were valid")
                     return None
 
+        if self.copyspell == "Record of Creation":
+            diff = self.fatiguecost - self.nextspell.fatiguecost
+            print(f"This is a record of creation based spell, set nextspell's fatigue cost to defined difference"
+                  f"of {diff}")
+            s.nextspell.fatiguecost = s.fatiguecost + diff
+
         s.comments.append(f"Generated with effect {self.name} at research level {researchlevel}")
         s.comments.append(f"Chosen modifier is {mod.name}")
         s.comments.append(f"Secondary effect is {secondary.name}")
@@ -967,6 +988,8 @@ class SpellEffect(object):
         s.details = s.details.strip()
         if s.details == "":
             s.details = None
+
+        self.calcAISpellMod(s)
 
 
         # Add to permenant slot taking spell counts if appropriate
@@ -1037,7 +1060,7 @@ class SpellEffect(object):
         if s.effect > 10000 and s.fatiguecost < 100 and self.fatiguecost >= 100:
             print(f"Increase gem cost of ritaul from {s.fatiguecost} to 100 so it costs a gem")
             s.fatiguecost = 100
-        if s.effect == 8:  # reinvigoration
+        if s.effect == 8 and self.fatiguecost >= 100:  # reinvigoration
             fatiguedifference = 100 - s.fatiguecost
             if s.fatiguecost < 100:
                 print(f"Gem cost enforcing subtracted {fatiguedifference} from casting time")
@@ -1064,3 +1087,19 @@ class SpellEffect(object):
         else:
             newunitobj = utils.newunits[self.newunit]
             return newunitobj.toUnitBaseData()
+    def calcAISpellMod(self, spell):
+        """Add an appropriate AI modifier to spell to deal with the fact the casting AI doesn't evaluate AoE
+        very effectively. Most importantly, the largest AoE it considers is a 5x5 square once a spell reaches 11 AoE."""
+        realaoe = spell.aoe % 1000 + (spell.path1level * (spell.aoe // 1000))
+        if realaoe >= 15 and realaoe < 600:
+            # but because it only evaluates a 5x5 square, some of the extra AoE could be wasted
+            # this adds a progression at half speed
+            additionalAoE = realaoe - 16
+            additionalAoERatio = additionalAoE / realaoe
+            proportionalIncrease = additionalAoERatio / 2
+            print(f"AoE spell mod: proportional increase is {proportionalIncrease}; old mod was {spell.aispellmod}")
+            currentAIModMultiplicative = spell.aispellmod + 100
+            newAIMod = currentAIModMultiplicative * (1 + proportionalIncrease)
+            #newAIMod = newAIModMultiplicative - 100
+            spell.aispellmod = int(max(-100, min(1000, newAIMod)))
+            print(f"New spell mod is {spell.aispellmod}")

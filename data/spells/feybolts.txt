@@ -6,7 +6,7 @@
 #power 0
 #maxpower 15
 #precision 2
-#scalefatigueexponent -0.6
+#scalefatigueexponent 1.0
 
 #nreff 2001
 #range 5020
@@ -14,7 +14,7 @@
 #fatiguecost 30
 #flightspr 10256
 #sound 29
-#aicastmod -40
+#aispellmod -40
 #skipchance 30
 
 #paths 64

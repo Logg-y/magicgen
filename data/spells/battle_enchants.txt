@@ -224,6 +224,8 @@
 #fatiguecost 100
 #range 0
 
+#alwaysgenerate 1
+
 #paths 2
 #secondarypaths 2
 #secondarypathchance 0

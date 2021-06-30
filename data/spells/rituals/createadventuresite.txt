@@ -1,0 +1,61 @@
+
+
+
+#neweffect "Create Adventure Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 1500
+#schools -1
+
+#eventset "Create Adventure Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 8 "Direct Tunnel"
+#name 16 "Construct Portal"
+#name 32 "Tunnel to Ruins"
+#name 128 "Tunnel to Ruins"
+#end
+
+
+#neweffect "Adventure Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 1500
+#schools 32
+
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Create Adventure Site"
+
+
+#unique 1
+-- ESDB
+#paths 184
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 8 "Delve to Ruins"
+#name 32 "Locate Ruins"
+#name 16 "Portal to Ruins"
+#name 128 "Locate Ruins"
+#descr 8 "Capital cities are almost invariably rich in buried historical sites in various states of disrepair, abandonment, or other neglect. With this spell, the earth mage creates a tunnel to forgotten ruins, long since abandoned and built over. Such ruins are still rich in gold and other treasures for those able to brave their traps, however this has almost certainly attracted monsters that hide in the dark. The further brave adventurers explore in such a place, the greater riches they are likely to find; however the lethality of traps will also likely increase."
+#descr 16 "Capital cities are almost invariably rich in buried historical sites in various states of disrepair, abandonment, or other neglect. With this spell, the astral mage creates a portal to forgotten ruins, long since abandoned. Such ruins are still rich in gold and other treasures for those able to brave their traps, however this has almost certainly attracted monsters that hide in the dark. The further brave adventurers explore in such a place, the greater riches they are likely to find; however the lethality of traps will also likely increase."
+#descr 32 "Capital cities are almost invariably rich in buried historical sites in various states of disrepair, abandonment, or other neglect. With this spell, the death mage locates forgotten ruins, long since abandoned, and digs a tunnel to reach them. Such ruins are still rich in gold and other treasures for those able to brave their traps, however this has almost certainly attracted monsters that hide in the dark. The further brave adventurers explore in such a place, the greater riches they are likely to find; however the lethality of traps will also likely increase."
+#descr 128 "Capital cities are almost invariably rich in buried historical sites in various states of disrepair, abandonment, or other neglect. With this spell, the blood mage contracts demons to locate forgotten ruins, long since abandoned and build over. The demons are also forced to dig a tunnel to reach them. Such ruins are still rich in gold and other treasures for those able to brave their traps, however this has almost certainly attracted monsters that hide in the dark. The further brave adventurers explore in such a place, the greater riches they are likely to find; however the lethality of traps will also likely increase."
+#details "Must be cast in a capital province. Creates a permanent adventure site. This spell will fail if used again on the same province."
+
+#spelltype 4
+#end

@@ -207,3 +207,41 @@
 
 
 #end
+
+
+
+
+#neweffect "Lifedrain soulslay"
+#copyspell "Drain Life"
+#effect 103
+#damage 999
+#spec 545411456
+#schools 2
+
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 1.6
+#skipchance 50
+
+#aoe 0
+#power 6
+#maxpower 14
+#pathlevel 3
+#sound 18
+#fatiguecost 20
+#precision 100
+#range 5020
+
+#skipexplspr 1
+#skipflightspr 1
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Consume %Soul%"
+#descr 32 "The caster attempts to consume the %soul% of SUBJECT. Those that fail die permanently, even for immortals and those employing other means of cheating death."
+
+
+#end

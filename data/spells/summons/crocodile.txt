@@ -14,12 +14,13 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Crocodile%"
 #descr 64 "The caster summons ARTICLE %crocodile%. The crocodile is a large but slow cold-blooded predator."
 
 #spelltype 528
+#aispellmod -33
 
 #scalerate 1
 #end
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Crocodile%"
 #descr 64 "The caster summons ARTICLE %crocodile%. The crocodile is a large but slow cold-blooded predator."

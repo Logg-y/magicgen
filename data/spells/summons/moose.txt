@@ -15,6 +15,7 @@
 
 #paths 64
 #secondarypaths 64
+#aispellmod -40
 
 #name 64 "Call NAMEPREFIX Moose"
 #descr 64 "The caster summons ARTICLE moose to fight for him. Moose are strong and attack with both feet and antlers."
@@ -47,6 +48,7 @@
 #descr 64 "The caster summons ARTICLE moose to fight for him. Moose are strong and attack with both feet and antlers."
 
 #scalerate 2
+#spelltype 20
 #end
 
 #neweffect "moose Remote Assassination"

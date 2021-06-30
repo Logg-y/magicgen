@@ -21,6 +21,33 @@
 #spelltype 4
 #end
 
+#neweffect "Water Movement"
+#copyspell "Cloud Trapeze"
+#effect 10095
+#damage 1
+#spec 8388608
+#provrange 5
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 1
+#fatiguecost 200
+#schools 16
+
+#onlygeosrc 12
+#onlygeodst 12
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 4 "Travel through Fluid"
+#descr 4 "This spell requires the caster's body to be submerged in a natural body of water of considerable size, such as the sea, lake, river, or other such location. The caster becomes one with the water, allowing him to travel to a distant sea or body of water at incredible speeds."
+#details "Immobile units cannot cast this spell. This spell can only be cast from and target seas or provinces with fresh water."
+
+#spelltype 4
+#end
+
 
 
 #neweffect "Cloud Trapeze"
@@ -36,14 +63,18 @@
 #fatiguecost 300
 #schools 16
 
-#paths 10
+#paths 15
 #secondarypaths 0
 #secondarypathchance 0
 
+#name 1 "Travel as Smoke"
 #name 2 "Cloud Trapeze"
+#name 4 "Cloud Walker"
 #name 8 "Tunnel through Earth"
 #descr 8 "The caster burrows into the ground at incredible speed, emerging in a faraway province."
 #descr 2 "The caster swings himself up and away with incredible speed, landing in a province far away. Although much faster than normal flying, the caster does not really teleport and can have the path blocked by impassable mountain ranges or the Sea of Ice global enchantment."
+#descr 4 "The caster transforms his body into a fine mist, allowing him to freely travel upwards into the clouds. He is able to pick a destination across a great distance, reforming his body immediately after arriving."
+#descr 1 "The caster transforms his body into magical smoke, allowing him to travel great distances before returning to his normal form."
 #details "Immobile units cannot cast this spell."
 
 #spelltype 4
@@ -87,6 +118,7 @@
 #schools -1
 #paths -1
 #name 32 "Underworld Spirit Attack"
+#spelltype 4
 #end
 
 #neweffect "Underworld Travel"

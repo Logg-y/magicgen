@@ -4,8 +4,8 @@
 #desiredmontagsize 10
 #restrictunitstospellpaths 1
 
-#mincreaturepower 3
-#maxcreaturepower 4
+#mincreaturepower 4
+#maxcreaturepower 5
 
 #allowedunitmod "Do Nothing"
 #allowedunitmod "Summon Chillaura"
@@ -222,7 +222,7 @@
 #msg "transform commander"
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 5
+#req_domchance 10
 #req_targorder 7
 #req_0popok
 #req_land 1

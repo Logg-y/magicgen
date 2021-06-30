@@ -15,8 +15,11 @@ from Entities.nationalmage import NationalMage
 
 nations: Dict[int, Nation] = {}  # map nation id to nation
 
+vanillamages: Dict[int, NationalMage] = {} # map unit id to NationalMage object
+
 spellids = []
 weaponids = []
+siteids = []
 monsterids: List[int] = []
 eventcodes = []
 montagids = []
@@ -103,13 +106,15 @@ def read_vanilla():
 
                 if mage.is_mage():
                     nations[nationid].add_mage(mage)
+                    vanillamages[unitid] = mage
 
 
 def read_mods(modstring):
-    global monsterids, weaponids, spellids, eventcodes, montagids
+    global monsterids, weaponids, spellids, eventcodes, montagids, siteids
     mods = modstring.strip().split(",")
     monsterids = [3499]
     weaponids = [799]
+    siteids = [1499]
     spellids = [1299]
     eventcodes = [-299]
     montagids = [1000]
@@ -195,6 +200,23 @@ def read_mods(modstring):
                     newid = max(weaponids) + 1
                     weaponids.append(newid)
 
+                m = re.match("#newsite\\W+(\\d+)", line)
+                if m is None:
+                    m = re.match("#selectsite\\W+(\\d+)", line)
+                if m is not None:
+                    newid = int(m.groups()[0])
+                    if newid not in sites:
+                        sites[newid] = Site(newid)
+                        sites[newid].id = newid
+                        siteids.append(newid)
+                    currentsite = sites[newid]
+                elif line.startswith("#newsite"):
+                    newid = max(siteids) + 1
+                    sites[newid] = Site(newid)
+                    sites[newid].id = newid
+                    siteids.append(newid)
+                    currentsite = sites[newid]
+
                 m = re.match("#selectnation (\\d+)", line)
                 if m is not None:
                     nationid = int(m.groups()[0])
@@ -213,13 +235,6 @@ def read_mods(modstring):
                         nations[newid] = Nation(newid)
                     currentnation = nations[newid]
 
-                m = re.match("#newsite (\\d*)", line)
-                if m is not None:
-                    siteid = int(m.groups()[0])
-                    print(f"Parsed newsite {siteid}")
-                    currentsite = Site(siteid)
-                    sites[siteid] = currentsite
-
                 m = re.match("#name [\"](.+)[\"]", line)
                 if m is not None:
                     name = m.groups()[0]
@@ -234,7 +249,7 @@ def read_mods(modstring):
                         print(f"Attach unit name {name} to {currentunit}")
                         currentunit.name = name
 
-                m = re.match("#era\\W*(.+)", line)
+                m = re.match("#era\\W+(.+)", line)
                 if m is not None:
                     currentnation.era = int(m.groups()[0])
                     print(f"Set Era for nation {currentnation.id} to {currentnation.era}")
@@ -242,6 +257,8 @@ def read_mods(modstring):
                 m = re.match("#homecom (\\d+)", line)
                 if m is not None:
                     unitid = int(m.groups()[0])
+                    if currentsite is None:
+                        raise ValueError(f"Attempt to assign home com {unitid} to nonexistent site")
                     if currentsite not in sitecommanders:
                         sitecommanders[currentsite] = []
                     sitecommanders[currentsite].append(unitid)
@@ -260,7 +277,17 @@ def read_mods(modstring):
                 if m is not None:
                     unitid = int(m.groups()[0])
                     print(f"{unitid} is a recruitable commander of {currentnation}")
-                    currentnation.add_mage(units[unitid])
+                    if currentnation is None:
+                        print(f"Warning: {unitid} is set as a recruited commander, but no nation selected - ignored as"
+                              f" this is likely a poptype addition")
+                    else:
+                        if unitid in units:
+                            currentnation.add_mage(units[unitid])
+                        else:
+                            if unitid in vanillamages:
+                                currentnation.add_mage(vanillamages[unitid])
+                            else:
+                                print(f"{unitid} appears to be a non-mage non-modded unit, ignored")
 
                 if line.strip() == "#disableoldnations":
                     print(f"found disableoldnations")
@@ -299,11 +326,22 @@ def read_mods(modstring):
 
             for nation in nationstartsites:
                 for siteid in nationstartsites[nation]:
-                    nation.sites.append(sites[sitenames[siteid]])
+                    if siteid in sitenames:
+                        nation.sites.append(sites[sitenames[siteid]])
+                    else:
+                        if siteid in sites:
+                            nation.sites.append(sites[siteid])
+                        else:
+                            print(f"Nation has start site with ID {siteid}, this site was not found, ignored")
 
             for site in sitecommanders:
                  for unitid in sitecommanders[site]:
+                    if unitid in units:
                         site.mages.append(units[unitid])
+                    elif unitid in vanillamages:
+                        site.mages.append(vanillamages[unitid])
+                    else:
+                        print(f"Site {site} had commander {unitid} added, but this seems to not be a mage: skipped")
 
 
 

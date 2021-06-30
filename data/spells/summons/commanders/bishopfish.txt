@@ -7,13 +7,15 @@
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 2
+#pathlevel 3
 #chassisvalue 25
 #range 6
 #fatiguecost 80
 #explspr 10232
 #sound 31
 #schools 1
+
+#aispellmod 150
 
 #skipchance 95.0
 

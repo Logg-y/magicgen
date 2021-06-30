@@ -20,7 +20,7 @@
 --ASN
 #paths 80
 #secondarypaths 64
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 32 "Call NAMEPREFIX %Animist%"
 #name 16 "Teleport NAMEPREFIX %Animist%"
@@ -52,7 +52,7 @@
 #schools 1
 
 #skipchance 77
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #paths 80
 #secondarypaths 64

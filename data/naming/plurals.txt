@@ -18,3 +18,4 @@ khalkotauros	khalkotauroi
 lampad	lampades
 otherness	othernesses
 vastness	vastnesses
+madman	madmen

@@ -23,7 +23,7 @@
 #power 1
 #skipchance 50
 
-#aicastmod -50
+#aispellmod -50
 
 #mult casttime 2.0
 #mult fatiguecost 1.2
@@ -43,7 +43,7 @@
 -- any
 #spelltype 0
 
-#aicastmod -50
+#aispellmod -50
 
 #power 1
 #skipchance 50

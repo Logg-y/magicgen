@@ -38,6 +38,7 @@
 #descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 
 #end
 
@@ -84,6 +85,9 @@
 #descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 64 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 128 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 
 #end
 
@@ -170,6 +174,9 @@
 #descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 64 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+#descr 128 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 
 #end
 

@@ -1,0 +1,9 @@
+#newunit "Madman"
+#baseunit 962
+-- Add fist
+#addweapon 92
+#raw "#insane 0"
+#set insane 0
+#raw "#weapon 591"
+#raw "#weapon 92"
+#end

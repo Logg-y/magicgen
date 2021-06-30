@@ -6,7 +6,7 @@
 #power 1
 #maxpower 14
 #precision 0
-#range 30
+#range 5025
 #pathlevel 1
 #fatiguecost 20
 #explspr 10209

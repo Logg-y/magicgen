@@ -29,7 +29,7 @@
 #effect 10001
 #damage 498
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #nreff 4001
 #pathlevel 3

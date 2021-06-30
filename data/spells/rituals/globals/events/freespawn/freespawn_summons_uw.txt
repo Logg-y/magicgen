@@ -183,6 +183,28 @@
 #allowedunitmod "Summon Unsurroundable 5"
 #allowedunitmod "Summon Unsurroundable 8"
 
+#allowedunitmod "Summon Fire Flare"
+#allowedunitmod "Summon Fire Breath"
+#allowedunitmod "Summon Bile Breath"
+#allowedunitmod "Summon Mind Blast"
+#allowedunitmod "Summon Frost Breath"
+#allowedunitmod "Summon Poison Breath"
+#allowedunitmod "Summon Gaze of Death"
+#allowedunitmod "Summon Elf Shot"
+#allowedunitmod "Summon Flame Strike"
+#allowedunitmod "Summon Throw Lightning"
+#allowedunitmod "Summon Plague Breath"
+#allowedunitmod "Summon Web Spit"
+#allowedunitmod "Summon Soul Leech"
+#allowedunitmod "Summon Theft of Life"
+#allowedunitmod "Summon Drake Fire"
+#allowedunitmod "Summon Drake Frost"
+#allowedunitmod "Summon Drake Gas"
+#allowedunitmod "Summon Hypnotize"
+#allowedunitmod "Summon Corrosive Spit"
+#allowedunitmod "Summon Water Breath"
+#allowedunitmod "Summon Frost Strike"
+
 
 
 

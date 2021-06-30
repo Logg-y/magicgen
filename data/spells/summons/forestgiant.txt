@@ -13,6 +13,7 @@
 
 #paths 64
 #secondarypaths 64
+#aispellmod -20
 
 #skipchance 97
 

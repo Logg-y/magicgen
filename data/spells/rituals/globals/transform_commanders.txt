@@ -36,7 +36,7 @@
 #descr 32 "This enchantment causes deathly power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
 #descr 64 "This enchantment causes Gaia's power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
 #descr 128 "This enchantment causes infernal power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
-#details "In each friendly land province, there is a 5% chance per point of friendly dominion that a single site searching commander transforms."
+#details "In each friendly land province, there is a 7% chance per point of friendly dominion that a single site searching commander transforms. This can at most affect one commander per province."
 
 #spelltype 4
 #scalerate 1
@@ -81,7 +81,7 @@
 -- #descr 32 "This enchantment causes deathly power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
 -- #descr 64 "This enchantment causes Gaia's power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
 -- #descr 128 "This enchantment causes infernal power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
--- #details "In each friendly underwater province, there is a 5% chance per point of friendly dominion that a single site searching commander transforms."
+-- #details "In each friendly underwater province, there is a 5% chance per point of friendly dominion that a single site searching commander transforms. This can at most affect one commander per province."
 -- 
 -- #spelltype 4
 -- #scalerate 1

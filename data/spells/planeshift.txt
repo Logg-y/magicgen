@@ -72,12 +72,12 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 8
+#power 9
 #maxpower 19
-#pathlevel 4
+#pathlevel 5
 #sound 31
 #explspr 10251
-#fatiguecost 100
+#fatiguecost 30
 #precision 100
 #range 35
 

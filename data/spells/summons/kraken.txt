@@ -6,7 +6,7 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 1
+#pathlevel 2
 #fatiguecost 90
 #scalefatiguemult 70
 #sound 44
@@ -21,6 +21,7 @@
 #descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
 
 #spelltype 528
+#aispellmod -40
 
 #scalerate 1
 #end

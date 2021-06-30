@@ -24,6 +24,7 @@
 #newunitmod "Freespawn Commanders"
 #req hp >= 10
 #landok 1
+#req immobile <= 0
 #end
 
 #newunitmod "Freespawn Commanders with mages"

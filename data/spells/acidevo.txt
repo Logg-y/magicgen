@@ -53,7 +53,7 @@
 #effect 2
 #damage 2006
 #spec 2199023255616
-#aoe 1000
+#aoe 2
 #power 2
 #maxpower 14
 #precision 3

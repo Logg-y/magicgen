@@ -7,7 +7,7 @@
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 60
+#fatiguecost 100
 #scalefatiguemult 20
 #sound 31
 #schools 1
@@ -16,6 +16,7 @@
 #secondarypaths 32
 
 #skipchance 97
+#aispellmod 33
 
 #name 32 "Summon NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."

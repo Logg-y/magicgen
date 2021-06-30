@@ -25,6 +25,8 @@
 #spelltype 528
 
 #scalerate 1
+
+#aispellmod -33
 #end
 
 #neweffect "angel choir ritual"

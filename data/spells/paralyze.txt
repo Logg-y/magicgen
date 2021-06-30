@@ -25,17 +25,53 @@
 
 #namecond effectiveaoe < 1 16 "Paralyze"
 
+#namecond2 1 < effectiveaoe < 25 16 "Paralyze Foes"
+#namecond2 26 < effectiveaoe < 600 16 "Paralyze Squad"
+
+#descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a long time."
+#details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
+
+#end
+
+#neweffect "Paralyze Lesser"
+#effect 66
+#damage 2008
+#spec 8540288
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 7
+#pathlevel 2
+#explspr 10205
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#namecond effectiveaoe < 1 16 "Halt"
+
 #namecond2 1 < effectiveaoe < 25 16 "Halt Foes"
 #namecond2 26 < effectiveaoe < 600 16 "Halt Squad"
 
-#descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a long time."
+#descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a short time."
+#details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
 
 #end
 
 #neweffect "Battlefield Paralyze"
 #effect 66
 #damage 5050
-#spec 25575552
+#spec 25313408
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
@@ -59,6 +95,7 @@
 
 #name 16 "Mass Paralysis"
 
-#descr 16 "The caster attempts to overload the minds of all his enemies. Those that fail to resist are paralysed for a long time."
+#descr 16 "The caster attempts to overload the minds of all living creatures on the battlefield, including himself. Those that fail to resist are paralysed for a long time."
+#details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
 
 #end

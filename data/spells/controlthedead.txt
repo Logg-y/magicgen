@@ -1,0 +1,53 @@
+#neweffect "Control the Dead"
+#effect 29
+#damage 999
+#spec 277090440
+#aoe 1
+#power 1
+#maxpower 7
+#precision 0
+#range 5020
+#pathlevel 1
+#fatiguecost 20
+#explspr 10255
+#sound 41
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+#name 32 "Control the Dead"
+
+#descr 32 "The necromancer attempts to wrest control of undead in a SIZE area. Those that resist serve him instead of their original master."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 32
+#end
+
+#neweffect "Control the Dead Battlefield"
+#effect 2
+#damage 3012
+#spec 293863560
+#aoe 666
+#power 8
+#maxpower 8
+#precision 0
+#range 5020
+#pathlevel 6
+#fatiguecost 300
+#explspr 10255
+#sound 41
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+#name 32 "Control the Dead"
+
+#descr 32 "The necromancer attempts to take control of all undead on the battlefield."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 1
+-- #scalecost 0.3
+#schools 32
+#end

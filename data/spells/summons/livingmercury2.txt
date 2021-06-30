@@ -5,7 +5,7 @@
 #power 4
 #maxpower 14
 #precision -2
-#nreff 1
+#nreff 2
 #pathlevel 2
 #fatiguecost 100
 #sound 31
@@ -35,7 +35,7 @@
 #power 4
 #maxpower 14
 #nreff 2001
-#pathlevel 2
+#pathlevel 3
 #fatiguecost 700
 #schools 1
 

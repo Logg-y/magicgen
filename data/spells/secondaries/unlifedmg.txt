@@ -13,6 +13,9 @@
 -- not ritual
 #req spelltype !& 4
 
+-- don't apply to dummy spells like in battle horror seed
+#req damage > 3
+
 -- not for holy
 #req paths != 256
 

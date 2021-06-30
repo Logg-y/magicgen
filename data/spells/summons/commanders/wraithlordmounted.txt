@@ -54,7 +54,7 @@
 #secondarypaths 32
 
 #name 32 "Summon NAMEPREFIX Wraith Lord"
-#descr 32 "The caster summons ARTICLE mounted %Wraith Lord% to fight for him. This %Wraith Lord% %is% a mighty warrior riding an undead horse, but has no skill in magic. He is immortal and will rapidly "
+#descr 32 "The caster summons ARTICLE mounted %Wraith Lord% to fight for him. This %Wraith Lord% %is% a mighty warrior riding an undead horse, but has no skill in magic. He is immortal and will rapidly reform his body if killed."
 
 #spelltype 20
 

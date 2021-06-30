@@ -32,6 +32,7 @@
 
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 -- holy ok
 
 

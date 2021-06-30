@@ -6,8 +6,8 @@ class SpellModifier(object):
     def __init__(self):
         self.params = ["power", "spelltype", "range", "precision", "damage", "aoe", "casttime", "nreff", "skipchance",
                        "fatiguecost", "maxbounces", "scalecost", "scalerate", "pathperresearch", "scalefatigueexponent",
-                       "effect", "aicastmod", "reqdamaging", "spec"]
-        self.aicastmod = 0
+                       "effect", "aispellmod", "reqdamaging", "spec"]
+        self.aispellmod = 0
         self.power = 0
         self.spelltype = 0
         self.range = 0

@@ -136,6 +136,7 @@
 #name 128 "Blood Fecundity"
 #descr 128 "The mage performs a great blood ceremony in order to increase the fertility of the land. The growth scale of the province will be increased for as long as the ritual lasts."
 #details "Increases growth by 2. Lasts 1 turn, plus an extra turn for every additional slave spent."
+#spelltype 4
 #end
 
 #neweffect "Blood Fecundity nonblood"
@@ -297,7 +298,7 @@
 
 #name 128 "Dome of Corruption"
 #descr 128 "The caster seals a pact with Horrors. The Horrors create a dome that protects the province from most spells that originate from outside the warded province. Trying to cast a spell through this dome is very dangerous and might drive the casting mage insane. A good side effects of the dome is that it exudes magic and will raise the magic scales of the province considerably, making it easy for mages to do their research. The pact has a downside too, which will become apparent to mages living under the dome. The creators of the dome will occasionally attack and consume a mage. The dome will dissolve instantly if the caster of this ritual dies."
-#details "Dome Protection: 75%. Dome Trap: Feeblemind, magic resistance negates. Magic Scale +2. Friendly spells will also be blocked. All units in the province have a (2+sum of all non-holy magic paths)% chance to gain a horror mark every turn. Each commander in the province has a (number of horror marks * 10)% chance to be attacked by a random lesser horror (to a maximum of 50%), in addition to regualr horror mark effects."
+#details "Dome Protection: 75%. Dome Trap: Feeblemind, magic resistance negates. Magic Scale +2. Friendly spells will also be blocked. All units in the province have a (2+sum of all non-holy magic paths)% chance to gain a horror mark every turn. Each commander in the province has a (number of horror marks * 10)% chance to be attacked by a random lesser horror (to a maximum of 50%), in addition to regular horror mark effects."
 
 #spelltype 4
 #end

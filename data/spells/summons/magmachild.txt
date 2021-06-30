@@ -6,11 +6,12 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 2
+#pathlevel 3
 #fatiguecost 50
 #scalefatiguemult 20
 #sound 31
 #schools 1
+
 
 #paths 9
 #secondarypaths 9

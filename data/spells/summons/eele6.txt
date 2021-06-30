@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 70
+#skipchance 30
 #scalefatiguemult 80
 #details "The elementals are size 6."
 #name 8 "Summon NAMEPREFIX Massive Earth %Elemental%"
@@ -31,9 +31,9 @@
 #spec 0
 #power 5
 #maxpower 14
-#nreff 1001
+#nreff 2
 #pathlevel 4
-#fatiguecost 1100
+#fatiguecost 900
 #schools 1
 
 #paths 8
@@ -48,7 +48,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 150
+#scalefatiguemult 250
 
 #scalerate 2
 #end

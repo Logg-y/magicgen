@@ -1,0 +1,66 @@
+#neweffect "Disbelieve Damage"
+#effect 105
+#damage 999
+#spec 8671360
+#schools 32
+#aispellmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 0
+#power 0
+#maxpower 5
+#pathlevel 1
+#explspr 10021
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#skipchance 80
+
+#paths 16
+#secondarypaths 16
+
+#namecond effectiveaoe < 1 16 "Dispel Illusion"
+#namecond effectiveaoe >= 1 16 "Dispel Illusions"
+
+#descr 16 "The caster attempts to dispel ARTICLE_N hostile illusory %creature%. Any illusory creatures that fail to resist the spell's effects are destroyed."
+
+#end
+
+#neweffect "Disbelieve Damage Battlefield"
+#effect 105
+#damage 999
+#spec 8671360
+#schools 32
+#aispellmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 666
+#power 6
+#maxpower 6
+#pathlevel 3
+#explspr 10021
+#sound 41
+#fatiguecost 100
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "True Seeing"
+
+#descr 16 "The caster attempts to see all as it really is. All hostile illusory creatures that fail to resist this spell are destroyed."
+
+#end

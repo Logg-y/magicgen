@@ -48,7 +48,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 100
+#scalefatiguemult 150
 
 #scalerate 2
 #end

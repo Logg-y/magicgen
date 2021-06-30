@@ -1,0 +1,78 @@
+#neweffect "Harness Essence Planeshift"
+#effect 108
+#damage -17
+#spec 4210816
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10200
+#name 1 "Extract Essence"
+#name 2 "Extract Essence"
+#name 4 "Extract Essence"
+#name 8 "Extract Essence"
+#name 16 "Extract Essence"
+#name 32 "Extract Essence"
+#name 64 "Extract Essence"
+#name 128 "Extract Essence"
+#end
+
+#neweffect "Harness Essence Soul Slay"
+#effect 11
+#damage 562949953421312
+#spec 4210816
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10200
+#name 1 "Removal of Life"
+#name 2 "Removal of Life"
+#name 4 "Removal of Life"
+#name 8 "Removal of Life"
+#name 16 "Removal of Life"
+#name 32 "Removal of Life"
+#name 64 "Removal of Life"
+#name 128 "Removal of Life"
+#nextspell "Harness Essence Planeshift"
+#end
+
+#neweffect "Harness Essence"
+#effect 29
+#damage 999
+#spec 1152921505421201536
+#schools 32
+#aispellmod -10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 0
+#power 5
+#maxpower 8
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#nextspell "Harness Essence Soul Slay"
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe < 1 64 "Harness Essence"
+
+#namecond2 1 <= effectiveaoe < 600 64 "Harness Lives"
+
+#descr 64 "The caster tries to separate the body and life force of SUBJECT. Living creatures that fail to resist this spell are permanently slain. There is a small chance that the harvested lifeforce of powerful and experienced mages is mighty enough to allow transfer of their magical abilities to the caster's Pretender God. Prophets and Pretenders have too strong a divine connection for this spell to harm them in any way."
+
+#details "Targets that fail to resist are soul slayed. If the unit affected was a commander, there is an ((xp-50)*2)% chance to pick a random non-holy magic path. If the caster's Pretender's level in this path is less than or equal to the commander's level in the path + a closed d3, the Pretender gains +1 to this path. There is no message when this occurs."
+
+#end

@@ -1,0 +1,18 @@
+#neweventset "Healing Site Permanent"
+
+#magicsite "Healing Site"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Perm healing site create site"
+#nolog
+#notext
+#nation -2
+#req_nositenbr SITEID
+#addsite SITEID
+#req_pop0ok
+#req_ench ENCHANTID
+#req_freesites 1
+#end

@@ -22,7 +22,7 @@
 
 #power -1
 
-#aicastmod 25
+#aispellmod 25
 
 #mult casttime 0.5
 #skipchance 55
@@ -41,7 +41,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #power -3
 
@@ -64,7 +64,7 @@
 -- any
 #spelltype 0
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -86,7 +86,7 @@
 -- any
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -107,7 +107,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 1
 
@@ -131,7 +131,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #power -4
 
@@ -154,7 +154,7 @@
 -- any
 #spelltype 0
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -176,7 +176,7 @@
 -- any
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -197,7 +197,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 1
 
@@ -224,7 +224,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #power -5
 
@@ -248,7 +248,7 @@
 -- any
 #spelltype 0
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -274,7 +274,7 @@
 -- any
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #reqdamaging 0
 
@@ -297,7 +297,7 @@
 -- evo only
 #spelltype 2
 
-#aicastmod 70
+#aispellmod 70
 
 #power -8
 #reqdamaging 1

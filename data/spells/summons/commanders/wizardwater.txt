@@ -16,7 +16,7 @@
 #schools 1
 
 #skipchance 95.0
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 
 --ASN
@@ -56,7 +56,7 @@
 
 #paths 84
 #secondarypaths 4
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 
 

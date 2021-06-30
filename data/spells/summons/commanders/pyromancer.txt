@@ -18,7 +18,7 @@
 #skipchance 95.0
 
 #pathskipchance 64 80
-#pathskipchance 16 80
+#pathskipchance 16 95
 --ASN
 #paths 81
 #secondarypaths 1
@@ -52,7 +52,7 @@
 #scalefatiguemult 300
 #schools 1
 #pathskipchance 64 80
-#pathskipchance 16 80
+#pathskipchance 16 95
 #skipchance 77
 
 #paths 81

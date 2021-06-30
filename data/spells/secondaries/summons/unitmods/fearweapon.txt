@@ -2,7 +2,7 @@
 #weaponmod "Fearweapon"
 #nameprefix "Frightening"
 #req trample <= 0
-#descr "This particular CREATURE frightens those wounded by its attacks, making them more likely to flee."
+#descr "This particular CREATURE frightens those wounded by its attacks, temporarily lowering their morale."
 #end
 
 #newunitmod "Summon Fearweapongreater"

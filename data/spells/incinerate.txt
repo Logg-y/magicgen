@@ -11,9 +11,9 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 5
+#power 6
 #maxpower 14
-#pathlevel 2
+#pathlevel 1
 #explspr 10167
 #sound 16
 #precision 100

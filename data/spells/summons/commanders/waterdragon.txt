@@ -1,0 +1,88 @@
+#neweffect "Call Water Dragon"
+
+#effect 21
+#damage 2534
+#spec 0
+#power 7
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 5
+#chassisvalue 130
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 1
+
+#skipchance 95.0
+#newunit "Dragon Water"
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Summon NAMEPREFIX %Dragon%"
+#descr 4 "The caster summons ARTICLE %Dragon% to fight for him on the battlefield. The %Dragon% is physically mighty and very skilled in Water magic, but will leave once the battle is over."
+
+#scalefatiguemult 60
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "Summon Water Dragon"
+
+#effect 10021
+#damage 2534
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 5500
+#chassisvalue 2000
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+#newunit "Dragon Water"
+
+#skipchance 67
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "Summon NAMEPREFIX Dragon"
+#descr 4 "The caster summons ARTICLE %Dragon% to fight for him. The %Dragon% is physically mighty and very skilled in Water magic."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Water Dragon Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2534
+#spec 0
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 1300
+#chassisvalue 680
+#schools 1
+#nogeodst 2052
+#newunit "Dragon Water"
+
+#skipchance 99
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Dragon Attack"
+#descr 4 "The caster summons ARTICLE %Dragon% to attack a hostile commander in a distant land. The %Dragon% is physically mighty and very skilled in Water magic."
+
+#spelltype 4
+
+#end

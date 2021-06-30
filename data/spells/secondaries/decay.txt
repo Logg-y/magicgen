@@ -36,6 +36,7 @@
 -- various damage types
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4

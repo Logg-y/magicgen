@@ -99,6 +99,8 @@
 #maxpower 4
 #scalefatigueexponent -0.15
 
+#casttime 111
+
 
 #paths 2
 #secondarypaths 2

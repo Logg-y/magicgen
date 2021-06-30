@@ -4,8 +4,8 @@
 #desiredmontagsize 10
 #restrictunitstospellpaths 1
 
-#mincreaturepower 3
-#maxcreaturepower 4
+#mincreaturepower 4
+#maxcreaturepower 5
 
 #allowedunitmod "Do Nothing"
 #allowedunitmod "Summon Chillaura"

@@ -14,12 +14,13 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Leocampus%"
 #descr 64 "The caster summons ARTICLE %leocampus%. The leocampus is an underwater lion, attacking with bites and claws."
 
 #spelltype 528
+#aispellmod -40
 
 #scalerate 1
 #end
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Leocampus%"
 #descr 64 "The caster summons ARTICLE %leocampus%. The leocampus is an underwater lion, attacking with bites and claws."

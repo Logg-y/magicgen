@@ -1,0 +1,76 @@
+#neweffect "Astral Weapons"
+#effect 10
+#damage 1048576
+#spec 12582912
+#schools 8
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 3
+
+#aoe 1
+#power 7
+#maxpower 14
+#pathlevel 5
+#explspr 10266
+#sound 31
+#range 10
+#fatiguecost 80
+
+
+-- ES
+#paths 24
+#secondarypaths 16
+
+#namecond effectiveaoe == 1 8 "Impossible Sharpness"
+
+#namecond effectiveaoe < 666 8 "Impossible Sharpness"
+
+#namecond effectiveaoe == 666 8 "Impossible Sharpness"
+
+#name 16 "Astral Weapons"
+#name 16 "Otherworldly Weapons"
+
+#details "All melee attacks from affected creatures inflict AN damage, if they did not already."
+
+#descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
+#descr 16 "The melee weapons of SUBJECT become attuned to the astral plane. This enables them to bypass any armour as if it did not even exist." 
+
+#end
+
+
+#neweffect "Astral Weapons battlefield"
+#effect 10
+#damage 1048576
+#spec 12582912
+#schools 8
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 3
+
+#aoe 666
+#power 15
+#maxpower 15
+#pathlevel 8
+#explspr 10266
+#sound 31
+#range 10
+#fatiguecost 600
+
+
+-- erf
+#paths 24
+#secondarypaths 16
+
+#name 8 "Impossibly Sharpened Army"
+#name 16 "Mass Astral Weapons"
+
+#details "All melee attacks from affected creatures inflict AN damage, if they did not already."
+
+#descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
+#descr 16 "The melee weapons of SUBJECT become attuned to the astral plane. This enables them to bypass any armour as if it did not even exist." 
+#end
+

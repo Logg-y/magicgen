@@ -7,7 +7,7 @@
 #precision -2
 #nreff 1
 #pathlevel 2
-#fatiguecost 40
+#fatiguecost 60
 #scalefatiguemult 2
 #sound 31
 #schools 1
@@ -20,6 +20,7 @@
 
 #name 2 "Summon NAMEPREFIX %Amphiptere%"
 #descr 2 "The caster summons ARTICLE_N %amphiptere% to fight for him. The amphiptere is a winged serpent which can spit poison."
+#aispellmod -33
 
 #spelltype 528
 

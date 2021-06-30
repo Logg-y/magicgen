@@ -16,6 +16,7 @@
 #scalefatiguemult 20
 
 #skipchance 97
+#aispellmod -20
 
 #name 32 "Summon NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to fight for him. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."

@@ -1,0 +1,66 @@
+#newsite "Range Booster Site Fire"
+
+#name 1 "Pyre of Focusing Flames"
+
+#firerange 1
+#scaleparam "firerange" 1.0
+
+#end
+
+#newsite "Range Booster Site Air"
+
+#name 2 "Tamed Air Currents"
+
+#airrange 2
+#scaleparam "airrange" 1.0
+
+#end
+
+#newsite "Range Booster Site Water"
+
+#name 4 "Pool of Distant Focus"
+
+#waterrange 2
+#scaleparam "waterrange" 1.0
+
+#end
+
+#newsite "Range Booster Site Earth"
+
+#name 8 "Crystal of Distant Focus"
+
+#earthrange 2
+#scaleparam "earthrange" 1.0
+
+#end
+
+#newsite "Range Booster Site Astral"
+
+#name 16 "Astral Focus"
+
+#astralrange 2
+#scaleparam "astralrange" 1.0
+
+#end
+
+#newsite "Range Booster Site Death"
+
+#name 16 "Spirit Guidance"
+
+#deathrange 2
+#scaleparam "deathrange" 1.0
+
+#end
+
+#newsite "Range Booster Site Nature"
+
+#name 16 "Connection of Gaia"
+
+#naturerange 2
+#scaleparam "naturerange" 1.0
+
+#end
+
+
+
+

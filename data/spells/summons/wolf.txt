@@ -16,6 +16,8 @@
 
 #skipchance 97
 
+#aispellmod -40
+
 #name 64 "Summon NAMEPREFIX %Wolf%"
 #descr 64 "Summons ARTICLE %wolf% to fight for the caster."
 

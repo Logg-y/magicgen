@@ -20,6 +20,7 @@
 #name 16 "Summon NAMEPREFIX %Dweller%-in-the-Deep"
 #descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."
 #details "Creatures summoned with this spell are not sacred."
+#aispellmod -20
 #spelltype 528
 
 #scalerate 1

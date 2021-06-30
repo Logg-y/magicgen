@@ -19,6 +19,7 @@
 
 #name 64 "Summon NAMEPREFIX Great %Bear%"
 #descr 64 "The caster summons ARTICLE great %bear%. These bears are mighty but unskilled, and are vulnerable to magic."
+#aispellmod -40
 
 #spelltype 528
 

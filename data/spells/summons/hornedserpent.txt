@@ -5,9 +5,9 @@
 #power 3
 #maxpower 14
 #precision -2
-#nreff 2
+#nreff 1
 #pathlevel 1
-#fatiguecost 100
+#fatiguecost 80
 #sound 44
 #schools 1
 
@@ -17,6 +17,7 @@
 #skipchance 97
 
 #scalefatiguemult 40
+#aispellmod -20
 
 #name 64 "Summon Horned Serpents"
 #descr 64 "The caster summons several horned serpents. Horned serpents are large snakes with thick hides and venomous fangs."

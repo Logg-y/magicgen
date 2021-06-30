@@ -10,6 +10,9 @@
 -- alt ench thaum
 #schools 50
 
+#badaispell 1
+#ainocast 1
+
 #eventset "Concealment"
 
 -- not blood
@@ -42,6 +45,10 @@
 #fatiguecost 300
 -- alt ench thaum
 #schools 50
+
+#badaispell 1
+#ainocast 1
+
 
 #eventset "Falsify"
 

@@ -7,7 +7,7 @@
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 60
+#fatiguecost 80
 #scalefatiguemult 20
 #sound 31
 #schools 1
@@ -16,6 +16,7 @@
 #secondarypaths 32
 
 #skipchance 97
+#aispellmod -20
 
 #name 32 "Summon NAMEPREFIX %hound% of twilight"
 #descr 32 "The caster summons ARTICLE %hound% of twilight to fight for him. The hound of twilight is a large two-headed beast which can halt undead in their tracks."

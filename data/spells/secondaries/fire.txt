@@ -36,6 +36,7 @@
 #req nonscalingaoe >= 1
 -- not ritual
 #req spelltype !& 4
+#offensiveeffect 1
 
 #nextspell "Additional Fire"
 

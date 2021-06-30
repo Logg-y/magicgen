@@ -113,7 +113,7 @@
 
 #unitmod "Summon Overcharge"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
-#details "Summoned creatures gain overcharged, dealing 1AN shock damage to melee attackers."
+#details "Summoned creatures gain overcharged, dealing 1AN capped shock damage to melee attackers."
 
 #end
 
@@ -170,7 +170,7 @@
 #anysummon 1
 
 #paths 128
-#req paths == 128
+--#req paths == 128
 #power -2
 
 -- not montag
@@ -187,7 +187,7 @@
 #anysummon 1
 
 #paths 128
-#req paths == 128
+--#req paths == 128
 #power -3
 
 -- not montag
@@ -280,11 +280,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.0
+#mult fatiguecost 1.6
 
 #unitmod "Summon Overcharge 3"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
-#details "Summoned creatures gain overcharged, dealing 3AN shock damage to melee attackers."
+#details "Summoned creatures gain overcharged, dealing 3AN capped shock damage to melee attackers."
 
 #end
 

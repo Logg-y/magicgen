@@ -1,0 +1,138 @@
+#newunitmod "Summon Fire Flare"
+#fireres 6
+#nameprefix "Blazing"
+#addweapon 350
+#descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
+#end
+
+#newunitmod "Summon Fire Breath"
+#fireres 6
+#nameprefix "Firebreathing"
+#addweapon 61
+#descr "This particular CREATURE is able to breathe blasts of fire onto its enemies."
+#end
+
+#newunitmod "Summon Bile Breath"
+#poisonres 11
+#nameprefix "Vile"
+#addweapon 62
+#descr "This particular CREATURE is able to breathe poisonous bile onto its enemies."
+#end
+
+#newunitmod "Summon Mind Blast"
+#nameprefix "Psychic"
+#addweapon 311
+#descr "This particular CREATURE is able to overload the minds of its enemies, paralyzing them."
+#end
+
+#newunitmod "Summon Frost Breath"
+#coldres 6
+#nameprefix "Frostbreathing"
+#addweapon 226
+#descr "This particular CREATURE is able to breathe blasts of frost onto its enemies."
+#end
+
+#newunitmod "Summon Poison Breath"
+#poisonres 11
+#nameprefix "Poisonbreathing"
+#addweapon 141
+#descr "This particular CREATURE is able to breathe blasts of toxic fluid onto its enemies."
+#end
+
+#newunitmod "Summon Gaze of Death"
+#nameprefix "Deathgaze"
+#addweapon 197
+#descr "This particular CREATURE is able to slay masses of enemies with its mere gaze."
+#end
+
+#newunitmod "Summon Elf Shot"
+#nameprefix "Fey"
+#addweapon 228
+#descr "This particular CREATURE able to conjure green fey blasts that fatigue those they hit."
+#end
+
+#newunitmod "Summon Flame Strike"
+#fireres 6
+#nameprefix "Blazing"
+#addweapon 229
+#descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
+#end
+
+#newunitmod "Summon Throw Lightning"
+#shockres 6
+#nameprefix "Stormthrowing"
+#addweapon 243
+#descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
+#end
+
+#newunitmod "Summon Plague Breath"
+#diseaseres 100
+#nameprefix "Plaguebreathing"
+#addweapon 254
+#descr "This particular CREATURE is able to breathe huge blasts of diseased air at enemies."
+#end
+
+#newunitmod "Summon Web Spit"
+#nameprefix "Webspitting"
+#addweapon 262
+#descr "This particular CREATURE is able to spit entangling messes of webs at enemies."
+#end
+
+#newunitmod "Summon Soul Leech"
+#nameprefix "Leeching"
+#addweapon 269
+#descr "This particular CREATURE is able to leech the souls of its enemies."
+#end
+
+#newunitmod "Summon Theft of Life"
+#nameprefix "Draining"
+#addweapon 371
+#descr "This particular CREATURE is able to drain the life of enemies over a long distance."
+#end
+
+#newunitmod "Summon Drake Fire"
+#nameprefix "Firebreathing"
+#fireres 6
+#addweapon 567
+#descr "This particular CREATURE is able to breathe cones of fire."
+#end
+
+#newunitmod "Summon Drake Frost"
+#coldres 6
+#nameprefix "Frostbreathing"
+#addweapon 568
+#descr "This particular CREATURE is able to breathe cones of frost."
+#end
+
+#newunitmod "Summon Drake Gas"
+#poisonres 10
+#nameprefix "Gasbreathing"
+#addweapon 569
+#descr "This particular CREATURE is able to breathe cones of gas."
+#end
+
+#newunitmod "Summon Hypnotize"
+#nameprefix "Hypnotic"
+#addweapon 595
+#descr "This particular CREATURE is able to hypnotize enemies that approach."
+#end
+
+#newunitmod "Summon Corrosive Spit"
+#nameprefix "Spitting"
+#addweapon 599
+#descr "This particular CREATURE is able to spit corrosive fluid."
+#end
+
+#newunitmod "Summon Water Breath"
+#nameprefix "Waterbreathing"
+#addweapon 709
+#descr "This particular CREATURE is able to breathe a cone of high pressure water."
+#end
+
+#newunitmod "Summon Frost Strike"
+#coldres 6
+#nameprefix "Icebreathing"
+#addweapon 752
+#descr "This particular CREATURE is able to produce a blast of cold air at nearby enemies."
+#end
+

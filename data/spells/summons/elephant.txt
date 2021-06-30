@@ -21,6 +21,7 @@
 #descr 64 "The caster summons ARTICLE_N %elephant% to fight for him. The elephant is a massive wild animal that tramples its enemies underneath its massive legs, but it is vulnerable to magic as well as prone to running away."
 
 #spelltype 528
+#aispellmod -35
 
 #scalerate 1
 #end

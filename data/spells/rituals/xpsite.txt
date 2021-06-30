@@ -1,0 +1,55 @@
+
+#neweffect "XP Site Permanent"
+#effect 10082
+#damage 0
+#spec 0
+#fatiguecost 2000
+#schools -1
+
+#eventset "XP Site Permanent"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 4
+#scalerate 1
+#name 2 "Create Illusions"
+#name 32 "Raise Troops"
+#end
+
+
+#neweffect "XP Site Permanent Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 4
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 2000
+#schools 32
+
+#ainocast 1
+#badaispell 1
+
+#unique 1
+
+#nextspell "XP Site Permanent"
+#scalerate 1
+
+#basescale 5
+
+-- ESDB
+#paths 50
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 32 "School of Ancestors"
+#name 2 "Illusory Training"
+#descr 2 "The caster produces an endless stream of harmless illusions. These illusions are ideal for training a commander and his troops in the ways of combat, in a manner that typical training exercises could not. In order to be successful, this spell requires a great deal of infrastructure, and can therefore only be cast in capitals."
+#descr 32 "The caster raises long dead troops to his service. Troops raised by this spell are unwilling to do much other than sharpen their combat skills. This provides an opportunity for living troops to become more experienced in the ways of combat by training with the dead. Due to the need of loyal trained soldiers, this spell can only be cast in capital."
+#details "Can only be cast in capital provinces. Produces a permanent site, which any commander may spend a turn entering to grant SCALEAMT experience to themselves and all troops under their command. Only one such site can exist per capital province."
+
+#spelltype 4
+#end

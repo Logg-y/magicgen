@@ -121,6 +121,7 @@
 #scalerate 0
 #power 6
 #name 64 "Juggernaut's Confidence"
+#spelltype 41
 
 #end
 

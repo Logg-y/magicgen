@@ -20,6 +20,7 @@
 #descr 4 "The caster summons ARTICLE %kydnid%. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."
 
 #spelltype 528
+#aispellmod 20
 
 #scalerate 1
 #end

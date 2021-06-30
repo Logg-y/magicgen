@@ -16,6 +16,7 @@
 
 #name 32 "Tartarian Gate"
 #descr 32 "The caster opens a gate to Tartarus and releases a dead Titan or Monstrum imprisoned in that horrible place. The Titans were gods in ancient times, but were defeated and imprisoned in Tartarus aeons ago. The dead Titan once had tremendous powers, but the imprisonment in the realm of perpetual pain might have destroyed the mind of the ancient god."
+#details "There is a 20% chance that a tartarian comes as a commander, and a 50% chance that the tartarian comes feeblemind. Tartarians additionally have a 50% chance for additional afflictions: each affliction added this way has equal chances to be a minor or major affliction. There is a then another 50% chance to add another affliction, causing the process to continue until an affliction was not added."
 
 #spelltype 4
 #end

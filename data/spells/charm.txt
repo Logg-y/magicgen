@@ -18,7 +18,7 @@
 #sound 41
 #fatiguecost 30
 #precision 100
-#range 25
+#range 40
 
 #paths 64
 #secondarypaths 64
@@ -28,5 +28,62 @@
 #namecond2 1 < effectiveaoe < 600 64 "Charming Whispers"
 
 #descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
+
+#end
+
+#neweffect "Charm Lesser"
+#effect 29
+#damage 999
+#spec 8540288
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Coercion"
+#name 2 "Coercion"
+#name 4 "Coercion"
+#name 8 "Coercion"
+#name 16 "Coercion"
+#name 32 "Coercion"
+#name 64 "Coercion"
+#name 128 "Coercion"
+#end
+
+
+
+#neweffect "Charm Lesser casting AI dummy"
+#effect 109
+#damage 999
+#spec 1152921504606998656
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 5
+#maxpower 15
+#pathlevel 2
+#explspr 10213
+#sound 41
+#fatiguecost 30
+#precision 100
+#range 40
+
+#nextspell "Charm Lesser"
+
+#paths 64
+#secondarypaths 64
+
+#aispellmod -30
+
+#name 64 "Tempting Whispers"
+
+#descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
+#details "Targets must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also charms them."
 
 #end

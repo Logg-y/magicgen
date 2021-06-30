@@ -1,5 +1,6 @@
 #newunitmod "Transform into Creature"
 -- This will remove phantasms but that's about it
-#req hp >= 5
+-- and winged monkeys
+#req hp >= 10
 #landok 1
 #end

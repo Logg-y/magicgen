@@ -14,7 +14,7 @@
 #paths 66
 #secondarypaths 66
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "Summon NAMEPREFIX Black Hawks"
 #name 64 "Summon NAMEPREFIX Black Hawks"
@@ -40,7 +40,7 @@
 #paths 66
 #secondarypaths 66
 
-#skipchance 97
+#skipchance 99
 
 #name 2 "Summon NAMEPREFIX Black Hawks"
 #name 64 "Summon NAMEPREFIX Black Hawks"

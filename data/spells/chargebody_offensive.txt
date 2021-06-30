@@ -1,0 +1,51 @@
+#neweffect "10AN charge"
+#effect 23
+#damage 137438953472
+#spec 16512
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Charge"
+#name 2 "Charge"
+#name 4 "Charge"
+#name 8 "Charge"
+#name 16 "Charge"
+#name 32 "Charge"
+#name 64 "Charge"
+#name 128 "Charge"
+#end
+
+#neweffect "Shock Evo 10AN charge"
+#effect 109
+#damage 1
+#spec 1152921504606865536
+#aoe 0
+#power 4
+#nreff 1
+#precision 10
+#range 50
+#pathlevel 1
+#fatiguecost 10
+#explspr 10068
+#sound 27
+
+#aispellmod -90
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "Charge %Foe%"
+#descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselvers and the next person to strike them."
+#details "Applies 10AN charged body on damage."
+
+#maxpower 8
+
+#nextspell "10AN charge"
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 1
+#schools 4
+#end

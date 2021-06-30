@@ -10,7 +10,7 @@
 #scalerate 2
 -- #scalecost 1
 
-#scalefatigueexponent -0.5
+#scalefatigueexponent 0.2
 #casttime 25
 #aoe 1
 #power 3
@@ -30,5 +30,40 @@
 #namecond effectiveaoe >= 660 64 "Heal Army"
 
 #descr 64 "The wounds of troops across a SIZE area are healed."
+
+#end
+
+#neweffect "Heal Undead"
+#effect 13
+#damage 5030
+#spec 281018504
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 1
+
+#scalefatigueexponent 0.2
+#casttime 25
+#aoe 1
+#power 1
+#pathlevel 1
+#explspr 10197
+#sound 31
+#fatiguecost 15
+#range 5015
+#precision 5
+
+#skipchance 50
+
+-- only nature
+#paths 32
+#secondarypaths 32
+
+#name 32 "Restore Undead"
+
+#descr 32 "The wounds of undead across a SIZE area are healed."
 
 #end

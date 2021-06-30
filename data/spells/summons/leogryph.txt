@@ -21,6 +21,7 @@
 #descr 64 "The caster summons ARTICLE %leogryph%. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
 
 #spelltype 528
+#aispellmod -33
 
 #scalerate 1
 #end

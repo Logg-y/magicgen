@@ -142,6 +142,14 @@ def readUnitMod(fp):
 					curreff.setcommands.append([param, val])
 					continue
 
+				if line.startswith("#addweapon"):
+					m = re.match('#addweapon\\W+(.*?)\\W*$', line)
+					if m is not None:
+						val = int(m.groups()[0])
+						curreff.addweapons.append(val)
+						continue
+					raise ParseError(f"{fp} line {lineno}: bad #addweapon")
+
 				if line.startswith("#set"):
 					m = re.match('#set\\W+(.*?)\\W*?([-0-9-]+)', line)
 					if m is not None:

@@ -5,7 +5,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -56,7 +56,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -95,7 +95,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -133,7 +133,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -172,7 +172,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -210,7 +210,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -248,7 +248,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -286,7 +286,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -337,7 +337,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -376,7 +376,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100
@@ -427,7 +427,7 @@
 #range 25
 #power 0
 #maxpower 0
-#aoe 1000
+#aoe 1
 #nreff 1
 #pathlevel 2
 #precision 100

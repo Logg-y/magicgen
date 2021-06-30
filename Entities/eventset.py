@@ -3,7 +3,7 @@ import re
 import random
 import math
 from fileparser import unitinbasedatafinder
-from Services import montagbuilder, utils
+from Services import montagbuilder, utils, naming
 
 UNITMOD_TO_SECONDARY_CACHE = {}
 
@@ -50,8 +50,11 @@ class EventSet(object):
         self.moduledetails = ""
         self.modulebasescale = None
         self.makedummymonster = 1
+        self.makebattledummymonster = 0
+        self.dummymonsternames = {}
         self.moduleskipchance = 0
         self.setspelldamage = 0
+        self.magicsite = ""
         self.effectnumberforunits = 10001
 
         self.moduletailingcode = ""
@@ -305,6 +308,10 @@ class EventSet(object):
         if numtogenerate > 1:
             montag = montagbuilder.MontagBuilder()
             montag.makedummymonster = self.makedummymonster
+            montag.makebattledummymonster = self.makebattledummymonster
+            dummynames = self.dummymonsternames.get(spell.path1, [])
+            if len(dummynames) > 0:
+                montag.dummymonstername = naming.parsestring(random.choice(dummynames))
 
         for n in range(0, numtogenerate):
 
@@ -587,10 +594,21 @@ class EventSet(object):
             if not replmade:
                 break
 
+        if len(self.magicsite) > 0:
+            magicsite = utils.magicsites[self.magicsite]
+            sitedata = magicsite.formatdata(spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl)
+            if sitedata is None:
+                return None
+            output += sitedata
+            output = output.replace("SITEID", str(magicsite.lastsiteid))
+            output = output.replace("SITENAME", magicsite.lastsitename)
+
         if self.modulegroup is None:
             output += tailcode
         else:
             self.moduletailingcode += tailcode
+
+
 
         print(f"EventSet {self.name} returning {len(output)} bytes of content")
         print(output)

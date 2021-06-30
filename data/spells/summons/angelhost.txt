@@ -22,6 +22,8 @@
 #descr 16 "The caster summons ARTICLE %angel% to fight for him. Angels are highly resistant to mundane weapons, and all but the most brave are afraid to strike at them. Angels summoned with this spell are armed with fiery swords which easily cut demonic and undead creatures to pieces."
 #details "Creatures summoned with this spell are not sacred."
 
+#aispellmod 100
+
 #spelltype 528
 
 #scalerate 1

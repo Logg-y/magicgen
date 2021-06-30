@@ -1,0 +1,140 @@
+
+#neweffect "Curse of Undeath Heal"
+#effect 13
+#damage 50
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Restore Corpse"
+#name 2 "Restore Corpse"
+#name 4 "Restore Corpse"
+#name 8 "Restore Corpse"
+#name 16 "Restore Corpse"
+#name 32 "Restore Corpse"
+#name 64 "Restore Corpse"
+#name 128 "Restore Corpse"
+#end
+
+#neweffect "Curse of Undeath Reinvigoration"
+#effect 8
+#damage 200
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Tireless Death"
+#name 2 "Tireless Death"
+#name 4 "Tireless Death"
+#name 8 "Tireless Death"
+#name 16 "Tireless Death"
+#name 32 "Tireless Death"
+#name 64 "Tireless Death"
+#name 128 "Tireless Death"
+#nextspell "Curse of Undeath Heal"
+#end
+
+#neweffect "Curse of Undeath Kill"
+#effect 2
+#damage 999
+#spec 18014398522064896
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10200
+#name 1 "Removal of Life"
+#name 2 "Removal of Life"
+#name 4 "Removal of Life"
+#name 8 "Removal of Life"
+#name 16 "Removal of Life"
+#name 32 "Removal of Life"
+#name 64 "Removal of Life"
+#name 128 "Removal of Life"
+#nextspell "Curse of Undeath Reinvigoration"
+#end
+
+#neweffect "Curse of Undeath LaD"
+#effect 10
+#damage 2097152
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10197
+#name 1 "Necromantic Imbuement"
+#name 2 "Necromantic Imbuement"
+#name 4 "Necromantic Imbuement"
+#name 8 "Necromantic Imbuement"
+#name 16 "Necromantic Imbuement"
+#name 32 "Necromantic Imbuement"
+#name 64 "Necromantic Imbuement"
+#name 128 "Necromantic Imbuement"
+#nextspell "Curse of Undeath Kill"
+#end
+
+#neweffect "Curse of Undeath"
+#effect 29
+#damage 999
+#spec 1152921505152913536
+#aoe 0
+#power 6
+#maxpower 9
+#precision 100
+#range 5040
+#pathlevel 3
+#fatiguecost 20
+#explspr 10171
+#sound 22
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Curse of Undeath"
+#descr 32 "The caster attempts to transform SUBJECT into ARTICLE_N undead and bind PRONOUN to his service. Those who fail to resist the spell die, become soulless, and fight against their former allies. Inanimate beings or those that are already dead are unaffected by this spell."
+#details "Those failing a MR check become charmed, given Life after Death and killed, becoming fully healed and reinvigorated in the process. Any victims that survive the battle remain in their new undead state under the caster's control."
+
+#nextspell "Curse of Undeath LaD"
+
+#spelltype 42
+#scalerate 1
+#schools 32
+#end
+
+
+#neweffect "Curse of Undeath 100pc"
+#effect 29
+#damage 999
+#spec 1152921505169686656
+#aoe 666
+#power 10
+#maxpower 10
+#precision 100
+#range 5040
+#pathlevel 8
+#fatiguecost 800
+#explspr 10171
+#sound 22
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "Mass Curse of Undeath"
+#descr 32 "The caster attempts to transform all of his living enemies into undead and bind them to his service. Those who fail to resist the spell die, become soulless, and fight against their former allies."
+#details "Those failing an easy MR check become charmed, given Life after Death and killed, becoming fully healed and reinvigorated in the process. Any victims that survive the battle remain in their new undead state under the caster's control."
+
+#nextspell "Curse of Undeath LaD"
+
+#spelltype 42
+#scalerate 1
+#schools 32
+#end

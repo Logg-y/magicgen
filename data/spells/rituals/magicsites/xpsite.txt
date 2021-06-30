@@ -1,0 +1,10 @@
+#newsite "XP Site Permanent"
+
+#name 2 "Academy of Illusions"
+#name 32 "School of Ancestors"
+
+#xp 5
+
+#scaleparam "xp" 1.0
+
+#end

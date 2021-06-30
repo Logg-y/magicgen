@@ -406,7 +406,7 @@
 
 #name 16 "Astral Snare"
 #descr 16 "Through the consumption of magical gems, the caster permanently projects an astral barrier around him. This prevents most creatures around him from using any means of teleportation by warping space."
-#details "The caster permanently gains the Astral Fetters ability. This prevents all Astral teleportation effects in battle, but has no effect on creatures with Void Sanity. Multiple castings of this spell are not cumulative."
+#details "The caster permanently gains the Astral Fetters ability. This prevents all teleportation and plane banishing effects in battle, but has no effect on creatures with Void Sanity. Multiple castings of this spell are not cumulative."
 
 #scalerate 0
 #skipchance 80
@@ -570,7 +570,7 @@
 #maxpower 9
 #nreff 1
 #pathlevel 6
-#fatiguecost 5000
+#fatiguecost 3500
 #schools 18
 #unique 1
 
@@ -661,6 +661,71 @@
 
 #scalerate 1
 #skipchance 85
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#end
+
+#neweffect "Offscript Spells Horror Marks"
+#effect 10502
+#damage 261
+#spec 8388608
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Otherworldly Attention"
+#name 2 "Otherworldly Attention"
+#name 4 "Otherworldly Attention"
+#name 8 "Otherworldly Attention"
+#name 16 "Otherworldly Attention"
+#name 32 "Otherworldly Attention"
+#name 64 "Otherworldly Attention"
+#name 128 "Otherworldly Attention"
+#end
+
+
+#neweffect "Permanent effect all spells offscript"
+#effect 10508
+#damage 388
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 1400
+#schools 32
+
+-- any path
+#paths 255
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 1 "Forbidden Lore"
+#name 2 "Forbidden Lore"
+#name 4 "Forbidden Lore"
+#name 8 "Forbidden Lore"
+#name 16 "Forbidden Lore"
+#name 32 "Forbidden Lore"
+#name 64 "Forbidden Lore"
+#name 128 "Forbidden Lore"
+
+#descr 1 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 2 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 4 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 8 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 16 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 32 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 64 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+#descr 128 "The caster permanently gains a peculiar understanding of magical lore, allowing him to spontaneously cast advanced magics not known to the nation's scholars and researchers. He is unable to teach others these insights, or draw on them himself in a planned way, but may draw upon them in battle. The process of obtaining this power may attract unwanted attention from otherworldly beings, and their involvement may explain why the caster is unable to fully control his new abilities."
+
+#details "The caster gains the ability to cast spells of all research levels off script in combat, but may not be scripted to cast any of them. This has no effect on ritual spells. The caster also gains 3 horror marks, if they had less than that number beforehand."
+#nextspell "Offscript Spells Horror Marks"
+
+#scalerate 1
+#skipchance 80
 #permanentslotusage 1
 
 -- ritual, power scales effect number!

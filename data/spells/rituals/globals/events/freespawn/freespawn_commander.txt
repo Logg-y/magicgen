@@ -4,8 +4,8 @@
 #desiredmontagsize 10
 #restrictunitstospellpaths 1
 
-#mincreaturepower 2
-#maxcreaturepower 3
+#mincreaturepower 5
+#maxcreaturepower 5
 
 #allowedunitmod "Do Nothing"
 #allowedunitmod "Summon Chillaura"
@@ -215,6 +215,8 @@
 
 
 
+
+
 #end
 
 #newevent
@@ -222,7 +224,7 @@
 #msg "freespawn commander"
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 4
+#req_domchance 2
 #req_0popok
 #req_land 1
 #nation -2

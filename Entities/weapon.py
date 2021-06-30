@@ -40,10 +40,21 @@ class Weapon(object):
                 cache2[self.origid] = copy(line)
 
         self.effect = int(line["effect_number"])
-        self.damage = line["ritual"]
+        self.damage = int(line["raw_argument"])
         self.spec = int(line["modifiers_mask"])
 
-        self.range = line["raw_argument"]
+        self.range = line["range_base"]
+        if self.range == "":
+            self.range = 0
+        else:
+            self.range = int(self.range)
+        self.range_strength = line["range_strength_divisor"]
+        if self.range_strength == "":
+            self.range_strength = 999
+        else:
+            self.range_strength = int(self.range_strength)
+
+        self.estrange = self.range + int(14/self.range_strength)
         # this next thing seems to have values corresponding with strenght based range
         # this can also be stuff like AoE for fear effects
 

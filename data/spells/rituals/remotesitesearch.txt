@@ -80,7 +80,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#schools 33
+#schools 32
 #onlyfriendlydst 1
 
 #paths 8
@@ -103,7 +103,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#schools 33
+#schools 32
 #onlyfriendlydst 1
 
 #paths 16
@@ -149,7 +149,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#schools 33
+#schools 32
 #onlyfriendlydst 1
 
 #paths 64
@@ -172,7 +172,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#schools 33
+#schools 32
 #onlyfriendlydst 1
 
 #paths 128

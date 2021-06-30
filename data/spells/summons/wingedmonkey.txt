@@ -17,6 +17,8 @@
 
 #skipchance 97
 
+#aispellmod -40
+
 #name 16 "Summon NAMEPREFIX Winged Monkies"
 #name 64 "Summon NAMEPREFIX Winged Monkies"
 #descr 16 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."

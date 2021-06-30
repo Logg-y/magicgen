@@ -10,7 +10,7 @@
 #scalerate 3.3
 -- #scalecost 1.6
 
-#aoe 0
+#aoe 1
 #power 3
 #maxpower 7
 #pathlevel 1
@@ -27,10 +27,48 @@
 
 #namecond effectiveaoe < 1 64 "Berserk Rage"
 
-#namecond2 1 < effectiveaoe < 5 64 "Berserk Wave"
-#namecond2 5 < effectiveaoe < 600 64 "Berserk Mob"
+#namecond2 1 <= effectiveaoe < 5 64 "Berserk Wave"
+#namecond2 5 <= effectiveaoe < 600 64 "Berserk Mob"
 #namecond2 600 < effectiveaoe < 700 64 "Mass Berserking"
 
 #descr 64 "The caster forces SUBJECT to go berserk."
+
+#end
+
+#neweffect "Battlefield Berserking"
+#effect 10
+#damage 256
+#spec 562184320
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+
+#scalerate 3.3
+-- #scalecost 1.6
+
+#aoe 666
+#power 8
+#maxpower 8
+#pathlevel 4
+#explspr 10017
+#sound 31
+#fatiguecost 200
+#precision 100
+#range 20
+
+#ainocast 1
+
+#paths 65
+#secondarypaths 64
+
+#aispellmod -70
+
+#name 1 "Seething Rage"
+#name 64 "Unbridled Anger"
+
+#descr 1 "The caster attempts to fill all living beings on the battlefield with berserk rage."
+#descr 64 "The caster attempts to fill all living beings on the battlefield with berserk rage."
 
 #end

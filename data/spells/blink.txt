@@ -27,7 +27,8 @@
 
 #namecond effectiveaoe >= 2 16 "Dimensional Instability"
 
-#descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield."
+#descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield. This spell only affects enemies."
+#details "Applies blink to all affected enemies that fail a MR check."
 
 #end
 
@@ -41,7 +42,7 @@
 #spelltype 41
 
 #scalerate 1
-#scalefatigueexponent -0.66
+#scalefatigueexponent 0
 -- #scalecost 1.3
 
 #aoe 0
@@ -61,6 +62,41 @@
 
 #namecond effectiveaoe >= 2 16 "Friendly Dispersion"
 
-#descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield, but does not move hostile units."
+#descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield. This spell only affects friendlies."
+
+#end
+
+
+#neweffect "Repulsion Field"
+#effect 9020
+#damage 30
+#spec 4398071955456
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+#scalefatigueexponent 0
+-- #scalecost 1.3
+
+#aoe 18
+#power 7
+#maxpower 7
+#pathlevel 2
+#explspr 10095
+#sound 31
+#range 3
+#fatiguecost 40
+#aispellmod 1500
+#casttime 25
+
+#paths 16
+#secondarypaths 16
+
+
+#name 16 "Repulsion Field"
+#descr 16 "The caster creates a strange field of shimmering lights around himself. Enemies in the area may become instantaneously transported elsewhere on the battlefield, making it very difficult to reach the caster in melee while the spell remains in effect. This spell may be resisted, and only affects enemies. Larger and stronger beings are better able to resist this spell."
+#details "Enemies within the area of effect that fail both an easy MR check and a size/strength check suffer blink."
 
 #end

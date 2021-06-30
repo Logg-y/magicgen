@@ -20,7 +20,7 @@
 --ASN
 #paths 81
 #secondarypaths 1
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 
 #name 1 "Call NAMEPREFIX Fire %Lord%"
@@ -53,7 +53,7 @@
 #schools 1
 
 #skipchance 77
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 #paths 81
 #secondarypaths 1

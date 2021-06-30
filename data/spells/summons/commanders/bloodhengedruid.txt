@@ -19,7 +19,7 @@
 #paths 208
 #secondarypaths 64
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 
 #name 128 "Call NAMEPREFIX Bloodhenge Druid"

@@ -15,7 +15,7 @@
 #sound 31
 #schools 1
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #skipchance 90
 
@@ -54,7 +54,7 @@
 
 #skipchance 69
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #paths 64
 #secondarypaths 64

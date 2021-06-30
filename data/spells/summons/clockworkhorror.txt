@@ -24,6 +24,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
+#aispellmod 40
 #end
 
 #neweffect "clockworkhorror Ritual"

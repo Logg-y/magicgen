@@ -54,6 +54,7 @@
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
 #req paths != 256
+#offensiveeffect 1
 
 #nextspell "Minor Paralysis"
 
@@ -72,6 +73,7 @@
 -- not ritual
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
+#offensiveeffect 1
 -- holy ok
 
 #nextspell "Greater Paralysis"

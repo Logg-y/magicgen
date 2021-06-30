@@ -22,7 +22,7 @@
 #secondarypaths 2
 
 #pathskipchance 64 80
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 2 "Call NAMEPREFIX Cloud %Mage%"
 #name 16 "Teleport NAMEPREFIX Cloud %Mage%"
@@ -55,7 +55,7 @@
 
 #skipchance 77
 #pathskipchance 64 80
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #paths 82
 #secondarypaths 2

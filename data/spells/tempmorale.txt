@@ -18,7 +18,7 @@
 #sound 31
 #range 10
 #fatiguecost 5
-#scalefatigueexponent -0.85
+#scalefatigueexponent 0
 #pathperresearch 0.25
 
 #paths 65

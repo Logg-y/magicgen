@@ -19,6 +19,8 @@
 #name 8 "Summon NAMEPREFIX Cave %Cow%"
 #descr 8 "The caster summons ARTICLE cave %cow%. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
 
+#aispellmod -40
+
 #spelltype 528
 
 #scalerate 1

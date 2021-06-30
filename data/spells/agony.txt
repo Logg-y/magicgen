@@ -5,6 +5,13 @@
 #schools -1
 #paths -1
 #name 128 "Major Fear"
+#name 64 "Major Fear"
+#name 32 "Major Fear"
+#name 16 "Major Fear"
+#name 8 "Major Fear"
+#name 4 "Major Fear"
+#name 2 "Major Fear"
+#name 1 "Major Fear"
 #spelltype 2
 #scalerate 0
 #aoe 1

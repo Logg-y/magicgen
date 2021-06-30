@@ -7,17 +7,18 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 25
+#scalerate 6
 
 #aoe 0
 #power 6
+#maxpower 9
 #pathlevel 1
 #explspr 10036
 #sound 40
 #fatiguecost 20
 #range 5015
 #precision 100
-#aicastmod -30
+#aispellmod -30
 
 -- fire + death + blood
 #paths 161

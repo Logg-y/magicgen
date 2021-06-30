@@ -1,0 +1,10 @@
+#newsite "Create Adventure Site"
+
+#name 8 "A Tunnel to Ancient Ruins"
+#name 16 "A Portal to Ancient Ruins"
+#name 32 "A Tunnel to Ancient Ruins"
+#name 128 "A Tunnel to Ancient Ruins"
+
+#adventureruin 7
+
+#end

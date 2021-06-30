@@ -16,6 +16,8 @@
 
 #skipchance 97
 
+#aispellmod -40
+
 #name 64 "Summon NAMEPREFIX Sea %Dog%"
 #descr 64 "The caster summons ARTICLE sea %dog%. Sea dogs are amphibious creatures that bite their enemies."
 

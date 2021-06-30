@@ -52,25 +52,25 @@
 
 #end
 
-#newsecondary "Blink smite"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power 0
-
-#req nonscalingdamage < 15
-#req nonscalingaoe == 0
-#req paths == 256
--- holy ok
-
--- not ritual
-#req spelltype !& 4
-#req effect != 99
-
-#nextspell "Space Warp Smite"
-
-#descr "Residual energy from this spell warps space and may teleport the target another location on the battlefield."
-
-#end
+-- #newsecondary "Blink smite"
+-- 
+-- -- evo only
+-- #spelltype 2
+-- 
+-- #paths 16
+-- #power 0
+-- 
+-- #req nonscalingdamage < 15
+-- #req nonscalingaoe == 0
+-- #req paths == 256
+-- -- holy ok
+-- 
+-- -- not ritual
+-- #req spelltype !& 4
+-- #req effect != 99
+-- 
+-- #nextspell "Space Warp Smite"
+-- 
+-- #descr "Residual energy from this spell warps space and may teleport the target another location on the battlefield."
+-- 
+-- #end

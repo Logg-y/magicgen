@@ -22,6 +22,7 @@
 #spelltype 528
 
 #scalerate 1
+#aispellmod -40
 #end
 
 #neweffect "direwolf ritual"

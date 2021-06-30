@@ -11,6 +11,8 @@
 
 #mult fatiguecost 1.5
 
+#aispellmod 300
+
 #pathlevel 0
 #power -3
 
@@ -22,6 +24,8 @@
 #spelltype 0
 
 #skipchance 30
+
+#aispellmod 500
 
 #req effect < 5000
 #req effect > 1000

@@ -3,7 +3,7 @@
 #effect 27
 #damage 999
 #spec 8536192
-#schools 2
+#schools 4
 
 -- evo-like
 #spelltype 2
@@ -30,3 +30,34 @@
 
 #end
 
+-- this always kills
+--#neweffect "Magic Duel Nonfatal"
+--#copyspell "Magic Duel"
+--#effect 27
+--#damage 1000
+--#spec 8536192
+--#schools 4
+--
+---- evo-like
+--#spelltype 2
+--
+--#scalerate 0
+--
+--#aoe 0
+--#power 3
+--#maxpower 3
+--#pathlevel 1
+--#explspr 10225
+--#sound 31
+--#fatiguecost 20
+--#range 100
+--#precision 20
+--
+--#paths 16
+--#secondarypaths 0
+--
+--#name 16 "Assault Mind"
+--#descr 16 "By use of this spell, the caster attempts to assault the mind of another Astral mage. This forces a struggle between the minds of the caster and the victim. The most powerful Astral mage is also the most likely winner, though a tie is possible. The loser(s) of the encounter experience severe mental pain which may prove fatal."
+--#details "Each mage rolls a d6 (not open ended) and adds his unmodified astral level. The loser (or both participants in the case of a tie) suffer 1 AN magic damage per Astral level of the caster."
+--
+--#end

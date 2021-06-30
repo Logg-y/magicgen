@@ -26,7 +26,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.7"
+ver = "2.1.8"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -44,6 +44,7 @@ def _writetoconsole(line):
 def rollspells(**options):
     global spellstokeep
     utils.WEAPON_ID = options.get("weaponidstart", 800)
+    utils.SITE_ID = options.get("siteidstart", 800)
     utils.MONSTER_ID = options.get("unitidstart", 3500)
     utils.SPELL_ID = options.get("spellidstart", 1300)
     utils.EVENT_CODE = options.get("eventcodestart", -300)
@@ -93,11 +94,15 @@ def rollspells(**options):
             s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\rituals\globals")}
             fileparser.readEventSetsFromDir(r".\data\spells\rituals\globals\events")
             fileparser.readUnitModsFromDir(r".\data\spells\rituals\globals\unitmods")
+            fileparser.readWeaponModsFromDir(r".\data\spells\rituals\unitmods\weaponmods")
+            fileparser.readMagicSitesFromDir(r".\data\spells\rituals\magicsites")
             fileparser.readEventSetsFromDir(r".\data\spells\rituals\events")
             fileparser.readUnitModsFromDir(r".\data\spells\rituals\unitmods")
             fileparser.readNewUnitsFromDir(r".\data\spells\summons\newunits")
 
             s: Dict[str, fileparser.SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
+
+            genericSpellCountsByPath: Dict[int, int] = {}
 
             # Keep track of which effects have been done at which research levels
             # this is because we don't want to duplicate any with national spells
@@ -157,6 +162,7 @@ def rollspells(**options):
                                 if research not in generatedeffectsatlevels:
                                     generatedeffectsatlevels[research] = []
                                 generatedeffectsatlevels[research].append(sp.name)
+                                genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
                                 print(
                                     f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
                                 break
@@ -236,6 +242,9 @@ def rollspells(**options):
                 "#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
                     '"', ver, len(l), '"')
             )
+            f.write("-- Number of generic spells by primary path requirement:\n")
+            for illwinterPathID, numSpells in genericSpellCountsByPath.items():
+                f.write(f"-- {PathFlags(illwinterPathID).name}: {numSpells}\n")
 
             nationalspells = []
 
@@ -393,8 +402,14 @@ def _roll_path_for_national_spell(nation: Nation) -> int:
 
 
 def _select_research_level(researchmod: int, generatedeffectsatlevels: Dict[int, List[str]]) -> int:
-    researchlevelstotry: List[int] = list(
-        filter(lambda x: x in generatedeffectsatlevels, range(1 + researchmod, 10 + researchmod)))
+    researchlevelstotry: List[int] = []
+    for level in range(1, 10):
+        if level in generatedeffectsatlevels:
+            duplicates = 5 - abs(5 - level)
+            realLevel = level + researchmod
+            for i in range(0, duplicates):
+                researchlevelstotry.append(realLevel)
+
     random.shuffle(researchlevelstotry)
     researchlevel = researchlevelstotry.pop(0)
     if len(researchlevelstotry) == 0:
@@ -660,6 +675,11 @@ def main():
                        help="Starting Weapon ID. (Allowed range for modded weapons is 800+)",
                        type=int, default=800))
 
+    opts.append(Option("-siteidstart",
+                       help="Starting Magic Site ID. (Allowed range for modded sites is 1500+)",
+                       type=int, default=1500))
+
+
     opts.append(Option("-eventcodestart",
                        help="Starting Event Code. (Allowed range for these is -300 to -5000)",
                        type=int, default=800))
@@ -685,6 +705,11 @@ def main():
     opts.append(Option("-clearvanillagenericspells",
                        help='If set to 1, vanilla national spells will all be removed. ',
                        type=int, default=1))
+
+    opts.append(Option("-nobadaispells",
+                       help='If set to 1, certain spells which make the AI waste gems stupidly will not be generated.'
+                            ' Use this if planning on playing vs AI.',
+                       type=int, default=0))
 
     opts.append(
         Option("-modname", help="Name of the mod. If left blank a rather unhelpful number will be generated at random.",

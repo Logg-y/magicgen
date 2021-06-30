@@ -11,6 +11,7 @@
 #scalefatiguemult 20
 #sound 31
 #schools 16
+#aispellmod 40
 
 #paths 8
 #secondarypaths 8

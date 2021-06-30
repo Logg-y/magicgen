@@ -19,6 +19,7 @@
 
 #name 2 "Summon NAMEPREFIX Great %Hawk%"
 #descr 2 "The caster summons ARTICLE great %hawk%. The great hawk is large and attacks enemies with its beak and talons."
+#aispellmod -40
 
 #spelltype 528
 

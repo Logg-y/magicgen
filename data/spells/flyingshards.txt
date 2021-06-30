@@ -8,7 +8,7 @@
 #spelltype 18
 
 #scalerate 7
-#scalefatigueexponent -0.5
+#scalefatigueexponent 0.2
 -- #scalecost 0.6
 
 #nreff 3001
@@ -19,6 +19,7 @@
 #flightspr 443
 #sound 45
 #fatiguecost 20
+#aispellmod -66
 #range 5025
 
 #paths 8

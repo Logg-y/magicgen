@@ -1,22 +1,150 @@
-TODO
+TODO [low to high priority]
 
 unique summons
-check mind hunt to see if I can add that back
-site modding support for adding xp/adventure sites, pd adding effects, ritual range increase...
+investigate lammashta spells and how they work
+
+ranged summon with auras
+
+start battle spells on commanders
+
+ench that turns pop into death gems?
+
+item modding support
+	autocasting items:
+		just generally on commanders
+		to make remote attack spells that launch spells and then immediately die
+		to make in battle summons that sit and shocking touch spam etc
+	extralife commanders
+	summon shortlived 100% field auras (modded #heat etc only goes up to 100, 6xx on a start item is needed to do this)
+
+globals that add sites to provinces (fort defenders, healing, scrying, enter to summon X...)
+
+can I make commander (mage) summons out of units?
+secondary that gives mage commanders summon capabilities (summon allies, passive summon etc etc)
+
+mixed damage types
+
+overhaul secondary effects, making them more common for samepath spells
+	drawback secondaries
+	name system for secondaries
+	offensive application of heat (and chill) aura - chill confers immunity, so we're looking at x% aoe MRN
+	
+TEST
+	weapon additions to summons (for balance mostly)
+	
+	disbelieve dmg
+			
+	
+	
+	
+v2.1.8
+
+ADDITIONS
+
+Added water and nature dragon summons, much like the fire dragon from the goat events.
+Added madmen as a summon creature, generating with a fist attack in addition to their cod. They are still really really bad, however. These madmen do not come with insanity, as they are possible transformation candidates!
+Added a little jolt that gives the victim 10AN charged body.
+Added a MRN death spell that does 999 life draining and soul slays.
+Added many new summon creature modifications that involve gaining new weapons.
+Added a new fire spell which tries to add barkskin to enemies, amongst other effects.
+Added new spells which permanently ruin your caster in exchange for immense power in battles.
+Added new human mages to the summoning pool to fill in the gaps left by the ones that exist (azure initiate, pyromancer etc) in vanilla.
+Added a horror seed ritual.
+Added a lesser paralyze effect.
+Added astral weapons as a possible (but difficult to cast) spell effect.
+Added a spell that tries to turn your victims into undead.
+Added a spell that creates a blink enemy cloud around the caster.
+Added a spell that allows a caster to cast high level spells (that they don't have the research levels for) offscript.
+Added a spell that heals undead.
+Added a spell that causes stunning tremors beneath enemies.
+Added a spell that sprays bright colours.
+Added a possible death banishment that instead tries to take control of the undead rather than doing damage.
+Added Astral Torrent, an Astral evocation spell that requires high paths but with limited range and no resistances allowed, much like Drain Life in vanilla.
+Added an easy to resist charm effect.
+Added an easy to resist (and shorter range) enslave effect.
+Added control the dead.
+Added a spell that temporarily gives you extra wall defenders.
+Added range increasing spells like the vanilla blood effect.
+Added magic site support for spells, including the UI ID detection capabilities.
+Added a spell that can make an adventure site in a capital.
+Added spells that make healing sites.
+Added a spell that lets fire magic detonate something's soul.
+Added a spell that is like frozen heart but poisons the victim instead.
+Added a nature soul slay lookalike that carts its victims off to the special reincarnation province.
+Added a spell that creates an xp site in a capital.
+Added new H3 summons to astral, death, and nature.
+Added a battlefield wide spell that makes everyone berserk.
+Added a slow casting spell that recovers some fatigue without using a gem.
 
 
-thing from beyond
-thing that should not be
-elder thing
-thing from the void
-lesser otherness
-otherness
-greater otherness
-vile thing
-thing of many eyes
-dweller in the deep
-formless spawn
-vastness
+CHANGES
+
+Changed the way that unit pools were weighted. Previously, they would favour things based on their cost per unit, now things closer to the mean cost per unit in the entire pool are the most common, with units getting rarer as you move towards either extreme. In practice, this means that having one cheap unit (like a wolf or phantasmal beast) in your unit pool no longer produces pools with very high odds for the cheap unit(s).
+Noted that overcharged damage is capped damage.
+Prevented very large AoE damaging spells at low research getting excessively strong secondary effects (for instance, earthquake + decay at research 5). My previous fix didn't correctly prevent all of these cases for damaging spells.
+Size 6 elemental combat summons are now somewhat more common.
+Most freespawning globals can no longer produce immobile units.
+The code that scales back battlesummons to avoid them costing exorbitant amounts of gems now understands that a spell with 199 fatigue will cost only 1 gem and not two, thus allowing a X1 mage to cast it.
+Astral smite will no longer have blink as a secondary effect.
+Generated .dm files now list the number of generic spells of each path. This is simply so I can try to make the number of spells more equal between paths.
+Paralyze spells now list the amount of paralyze damage done in yellow text.
+Adjusted the AI casting priority of many summoning spells, based on the things the game's algorithm does not consider for these spells.
+Reduced the odds of the AI casting fire flies and flying shards.
+Fixed astral shield generating battlefield wide at both research 8 and 9.
+Storm will now always generate for the sake of storm power.
+Added yellow text for Tartarian Gate (20% are commanders, 50% are feebleminded).
+Opened up mistform to fire.
+Opened up cloud trapeze to fire and water.
+Mind burn effects will now occasionally generate with fire and water path requirements.
+Innate casters are no longer able to get fast casting modifiers.
+In battle horror seed's dummy spell can no longer get the raise-on-kill modifier.
+Updated the listed thawing rate for Numbness effects because apparently the manual has been lying to everyone all this time.
+Living mercuries in unit pools now also denote their size, like elementals did.
+The casting AI now gives clouds the respect they were due.
+Reduced the appearance rate of many mundane nature animal summons as they tended to dominate low level conjuration.
+Research levels for national spells are now somewhat weighted towards the middle of the research range.
+Because it turns out that the casting AI doesn't respect spells with very high AoE very well, added an automatic aispellmod to larger AoE spells.
+
+BALANCE
+
+Battlesummon shura path requirement increased from 2 to 3, fatigue cost from 60 to 90, research level from 3 to 5.
+Transformation global base chance increased from 5% per candle to 7%. Slightly increased creature power (by 1 research level).
+Commander summoning global creature power increased by 2 research levels, spawn chance reduced from 4% per candle to 2%.
+Combat summon soulless base number of effects increased from 1 to 3, base research 0 from 1
+Ritual summon soulless gem cost 3 from 2, reduced cost per additional effect, doubled scale rate
+Remote summon soulless scale rate doubled, reduced cost per additional effect
+Frozen heart research 6 from 5, path level 2 from 1 to match vanilla frozen heart, corrected visual effect (blue from red)
+Incinerate research 6 from 5, path level from 2 to 1 to match frozen heart
+Battlefield mind burn/paralysis/soul slay now hit friendlies as well
+Reduced astral "diversity" summons (mages of other paths) frequency by 75%, now up to 95% total frequency reduction compared to the mages' primary paths
+Blood acashic knowledge slave cost 45 from 25, research level 7 from 6
+Air elemental size 6 ritual number of effects 2 from 5, gem cost 9 from 11, cost per additional increased from 1.5 to 2.5
+Air elemental size 5 ritual number of effects now nonscaling 3, gem cost 9 from 6, cost per additional increased from 1.3 to 2, path requirement increased from 2 to 3
+Air elemental size 4 ritual number of effects now nonscaling 4, gem cost 9 from 6, cost per additional increased from 1 to 1.5
+Air elemental size 3 ritual number of effects now nonscaling 5, gem cost 10 from 7, cost per additional increased from 0.8 to 1
+Air elemental size 2 ritual number of effects now 6+, gem cost 7 from 8, cost per additional increased from 0.5 to 0.75
+Earth elemental size 6 ritual number of effects 2 from 5, gem cost 9 from 11, cost per additional increased from 1.5 to 2.5
+Earth elemental size 5 ritual number of effects 3 from 1+, gem cost 9 from 8, cost per additional increased from 1.3 to 2, path requirement increased from 2 to 3
+Earth elemental size 4 ritual number of effects 4 from 1++, cost per additional increased from 1 to 1.5 
+Earth elemental size 3 ritual number of effects 5 from 1++, gem cost 9 from 7, cost per additional increased from 0.7 to 1
+Earth elemental size 2 ritual number of effects 6+ from 1+++, gem cost 10 from 8, cost per additional increased from 0.5 to 0.75
+Fire elemental size 6 ritual number of effects 2 from 5, gem cost 9 from 11, cost per additional increased from 1.5 to 2.5
+Fire elemental size 5 ritual number of effects 3 from 1+, gem cost 9 from 6, cost per additional increased from 1.3 to 2, path requirement increased from 2 to 3
+Fire elemental size 4 ritual number of effects 4 from 1++, gem cost 9 from 8, cost per additional increased from 1 to 1.5
+Fire elemental size 3 ritual number of effects 5 from 2+, gem cost 9 from 7, cost per additional increaed from 0.7 to 1
+Fire elemental size 2 ritual number of effects 6+ from 1++, gem cost 10 from 7, cost per additional increaed from 0.5 to 0.75
+Illearth size 6 ritual number of effects 2 from 5, slave cost 21 from 22, cost per additioanl increased from 3 to 5
+Illearth size 5 ritual number of effects 3 from 1+, slave cost 21 from 12, cost per additioanl increased from 1.3 to 4, path requirement increased from 2 to 3
+Illearth size 4 ritual number of effects 4 from 1++, slave cost 21 from 16, cost per additional increased from 1 to 3
+Illearth size 3 ritual number of effects 5 from 1++, slave cost 21 from 11, cost per additional increased from 0.7 to 2
+Illearth size 2 ritual number of effects 6+ from 1+++, slave cost 24 from 16, cost per additional increased from 0.5 to 1.25
+Water elemental size 6 ritual number of effects 2 from 5, gem cost 9 from 11, cost per additional increased from 1.5 to 2.5
+Water elemental size 5 ritual number of effects 3 from 1+, gem cost 9 from 6, cost per additional increased from 1.3 to 2, path requirement increased from 2 to 3
+Water elemental size 4 ritual number of effects 4 from 1++, gem cost 9 from 8, cost per additional increased from 1 to 1.5
+Water elemental size 3 ritual number of effects 5 from 4+, gem cost 9 from 11, cost per additional increaed from 0.6 to 1
+Water elemental size 2 ritual number of effects 6+ from 1++, gem cost 10 from 8, cost per additional increaed from 0.5 to 0.75
+Living mercury size 5 ritual gem cost 5 from 4
+Living mercury size 4 ritual gem cost 4 from 3
 
 v2.1.7
 

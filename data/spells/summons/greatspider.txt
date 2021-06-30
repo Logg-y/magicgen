@@ -19,6 +19,7 @@
 
 #name 64 "Summon NAMEPREFIX Great %Spider%"
 #descr 64 "The caster summons ARTICLE great %spider%. The great spider has a venomous bite and can tangle enemies in webs, but has little resistance to magic."
+#aispellmod -20
 
 #spelltype 528
 

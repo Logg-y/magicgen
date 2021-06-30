@@ -11,7 +11,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 600
 #schools 2
 
 #paths 16

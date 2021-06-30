@@ -35,6 +35,7 @@
 #req nonscalingdamage < 15
 #req nonscalingaoe >= 1
 #req paths != 256
+#offensiveeffect 1
 
 #req damage != 268435456
 -- not ritual

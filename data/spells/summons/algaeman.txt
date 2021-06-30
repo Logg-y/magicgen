@@ -18,6 +18,7 @@
 
 #name 64 "Summon NAMEPREFIX Algae %Man%"
 #descr 64 "The caster enchants algae and forms them into ARTICLE humanoid %shape%. The resulting algae %man% will fight for the caster, but will then return to the ground at the end of the battle."
+#aispellmod -33
 
 #spelltype 528
 

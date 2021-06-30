@@ -7,8 +7,11 @@ from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services.utils import eventsets, eventmodulegroups
 
-secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths", "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel", "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance", "setspelldamage", "effectnumberforunits"]
-secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails"]
+secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
+                        "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
+                        "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance",
+                        "setspelldamage", "effectnumberforunits", "makebattledummymonster"]
+secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails", "magicsite"]
 secondary_params_float = []
 
 
@@ -142,6 +145,16 @@ def readEventSet(fp):
                     cond.val = m.groups()[2]
                     cond.text = ""
                     curreff.reqs.append(cond)
+                    continue
+
+                if line.startswith("#dummymonstername"):
+                    m = re.match('#dummymonstername\\W+([0-9]*)\\W+"(.*)"', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #dummymonstername")
+                    path = int(m.groups()[0])
+                    if path not in curreff.dummymonsternames:
+                        curreff.dummymonsternames[path] = []
+                    curreff.dummymonsternames[path].append(m.groups()[1])
                     continue
 
                 if line.startswith("#end"):

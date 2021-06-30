@@ -8,7 +8,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 400
 #schools 32
 
 #paths 112
@@ -35,7 +35,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 2
-#fatiguecost 2000
+#fatiguecost 1000
 #schools 32
 
 #paths 64
@@ -56,8 +56,8 @@
 #power 5
 #maxpower 5
 #nreff 1
-#pathlevel 2
-#fatiguecost 2000
+#pathlevel 3
+#fatiguecost 1000
 #schools 32
 
 #paths 16
@@ -80,7 +80,7 @@
 #maxpower 5
 #nreff 1
 #pathlevel 2
-#fatiguecost 1000
+#fatiguecost 800
 #schools 32
 
 #paths 128

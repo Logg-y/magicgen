@@ -4,7 +4,7 @@
 #damage 999
 #spec 8540416
 #schools 32
-#aicastmod 10
+#aispellmod 10
 
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
@@ -33,13 +33,71 @@
 
 #end
 
+#neweffect "Soul Detonation"
+#effect 2
+#damage 2006
+#spec 96
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 2001
+#power 0
+#name 1 "Detonation"
+#name 2 "Detonation"
+#name 4 "Detonation"
+#name 8 "Detonation"
+#name 16 "Detonation"
+#name 32 "Detonation"
+#name 64 "Detonation"
+#name 128 "Detonation"
+#explspr 10282
+#end
+
+#neweffect "Detonate Soul"
+#copyspell "Soul Slay"
+#effect 2
+#damage 999
+#spec 1152921504615387520
+#schools 32
+#aispellmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#skipchance 33
+
+#aoe 0
+#power 6
+#maxpower 6
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths 1
+#secondarypaths 16
+#secondarypathchance 95
+
+#nextspell "Soul Detonation"
+
+#namecond effectiveaoe < 1 1 "Detonate Soul"
+
+#descr 1 "The caster tries to force the %soul% of SUBJECT to explode. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death, and triggers an explosion that may harm surrounding creatures."
+
+#end
+
 
 
 #neweffect "Battlefield Soul Slay"
 #copyspell "Soul Slay"
 #effect 2
 #damage 999
-#spec 25575808
+#spec 25313664
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
@@ -63,6 +121,6 @@
 
 #name 16 "Mass Soul Rip"
 
-#descr 16 "The caster attempts to rip the souls from all his foes. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
+#descr 16 "The caster attempts to rip the souls from all living creatures on the battlefield, including himself. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
 
 #end

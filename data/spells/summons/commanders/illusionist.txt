@@ -20,7 +20,7 @@
 --ASN
 #paths 82
 #secondarypaths 2
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 
 #name 2 "Call NAMEPREFIX %Illusionist%"
@@ -53,7 +53,7 @@
 #schools 1
 
 #skipchance 77
-#pathskipchance 16 80
+#pathskipchance 16 95
 #pathskipchance 64 80
 
 #paths 82

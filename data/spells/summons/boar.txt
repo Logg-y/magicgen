@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar%. These boar are fairly timid and will not trample opponents."
@@ -22,6 +22,7 @@
 #spelltype 528
 
 #scalerate 1
+#aispellmod -50
 #end
 
 #neweffect "boar ritual"
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar%. These boar are fairly timid and will not trample opponents."

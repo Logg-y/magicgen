@@ -76,11 +76,11 @@
 #provrange 4
 #damage 55
 #spec 8388608
-#power 6
-#maxpower 6
+#power 7
+#maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 2500
+#pathlevel 4
+#fatiguecost 4500
 #schools 1
 #onlyfriendlydst 1
 

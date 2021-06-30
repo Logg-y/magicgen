@@ -23,6 +23,7 @@
 #spelltype 528
 
 #scalerate 0.75
+#aispellmod -20
 #end
 
 #neweffect "draconian ritual"

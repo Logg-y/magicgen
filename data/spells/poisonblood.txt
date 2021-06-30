@@ -1,0 +1,28 @@
+#neweffect "Poison Blood"
+#effect 7
+#damage 3010
+#spec 36028797564248192
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 0.6
+
+#aoe 0
+#power 6
+#maxpower 14
+#pathlevel 1
+#precision 100
+#explspr 10039
+#sound 41
+#fatiguecost 20
+#range 5020
+
+#paths 64
+#secondarypaths 0
+
+#name 64 "Poison Blood"
+#descr 64 "The blood of SUBJECT is instantly poisoned. Armor does not protect against this spell."
+#end

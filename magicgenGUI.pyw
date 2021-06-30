@@ -12,8 +12,10 @@ import PySimpleGUI as sg
 
 CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
           "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
-          "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "montagidstart",
-          "eventcodestart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale"]
+          "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "siteidstart",
+          "montagidstart",
+          "eventcodestart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale",
+          "siteidstart", "nobadaispells"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 
@@ -22,7 +24,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v2.1.7"
+ver = "v2.1.8"
 
 
 def output_polling_thread(timeout=0.1):
@@ -220,11 +222,13 @@ def detectids(window, modlist):
     startspellid = max(nationals.spellids) + 1
     starteventid = min(nationals.eventcodes) - 1
     startmontagid = max(nationals.montagids) + 1
+    startsiteid = max(nationals.siteids) + 1
     window["-spellidstart-"].update(value=str(startspellid))
     window["-weaponidstart-"].update(value=str(startweaponid))
     window["-unitidstart-"].update(value=str(startunitid))
     window["-eventcodestart-"].update(value=str(starteventid))
     window["-montagidstart-"].update(value=str(startmontagid))
+    window["-siteidstart-"].update(value=str(startsiteid))
 
 
 def main():
@@ -260,6 +264,11 @@ def main():
 
             size=(50, 4), relief="ridge"), sg.Multiline(key='-modlist-', size=(50, 5))],
         [sg.Button("Select Nations for National Spells")],
+        [sg.Text(
+            'Set to 1 to avoid generating bad AI spell effects. These are spells that AI nations have no idea how to use '
+            'and will waste gems casting uselessly for no gain. Use this option if playing vs AI nations.',
+            size=(50, 3), relief="ridge"),
+            sg.InputText(key='-nobadaispells-', size=(4, 1), default_text=0)]
 
     ]
 
@@ -344,6 +353,9 @@ def main():
         [sg.Text('Starting Weapon ID. (Allowed range for modded weapons is 800-1999)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-weaponidstart-', size=(4, 1), default_text=800)],
+        [sg.Text('Starting Site ID. (Allowed range for modded sites is 1500-1999)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-siteidstart-', size=(4, 1), default_text=1500)],
         [sg.Text('Starting Montag ID. (Allowed range for these is 1000-100000)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-montagidstart-', size=(4, 1), default_text=1000)],

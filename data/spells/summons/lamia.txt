@@ -21,6 +21,7 @@
 #descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an impressive rate."
 
 #spelltype 528
+#aispellmod 10
 
 #scalerate 1
 #end

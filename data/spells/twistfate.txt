@@ -95,7 +95,8 @@
 #spec 8404992
 #schools -1
 #aoe 1
-
+#spelltype 41
+#scalerate 0
 #name 16 "Fools' Luck"
 #name 128 "Fools' Luck"
 #end

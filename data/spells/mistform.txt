@@ -20,10 +20,17 @@
 #sound 52
 #fatiguecost 10
 
-#paths 150
+#paths 151
 #secondarypaths 6
 
 #details "Mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+
+#namecond effectiveaoe < 1 1 "$smoke$body"
+#namecond effectiveaoe < 1 1 "$smoke$form"
+#namecond2 1 <= effectiveaoe < 600 1 "$smoke$ troops"
+
+#namecond effectiveaoe >= 600 1 "army of $smoke$"
+#namecond effectiveaoe >= 600 1 "$smoke$ warriors"
 
 #namecond effectiveaoe < 1 2 "$mist$body"
 #namecond effectiveaoe < 1 2 "$mist$form"
@@ -50,6 +57,7 @@
 #namecond effectiveaoe >= 600 128 "army of $mist$"
 #namecond effectiveaoe >= 600 128 "$mist$ warriors"
 
+#descr 1 "The %body% of SUBJECT %is% transformed into ARTICLE fine $smoke$-like substance. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 2 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 4 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 16 "The matter comprising the %body% of SUBJECT is tranformed into fine $mist$-like substance. This renders PRONOUN highly resistant to $non-magical$ damage."
@@ -82,10 +90,13 @@
 #fatiguecost 300
 #unique 1
 
-#paths 150
+#paths 151
 #secondarypaths 6
 
 #details "Mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+
+#name 1 "army of smoke"
+#name 1 "smoke warriors"
 
 #namecond effectiveaoe < 1 2 "$mist$body"
 #namecond effectiveaoe < 1 2 "$mist$form"
@@ -112,7 +123,7 @@
 #namecond effectiveaoe >= 600 128 "army of $mist$"
 #namecond effectiveaoe >= 600 128 "$mist$ warriors"
 
-
+#descr 1 "The %body% of SUBJECT %is% transformed into ARTICLE fine $smoke$-like substance. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 2 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 4 "The %body% of SUBJECT %is% transformed into ARTICLE fine $mist$. This $renders$ PRONOUN highly resistant to $non-magical$ damage."
 #descr 16 "The matter comprising the %body% of SUBJECT is tranformed into fine $mist$-like substance. This renders PRONOUN highly resistant to $non-magical$ damage."

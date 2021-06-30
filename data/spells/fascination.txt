@@ -9,7 +9,7 @@
 
 #scalerate 4.3
 -- #scalecost 0.6
-#scalefatigueexponent -0.07
+#scalefatigueexponent 0.2
 
 #aoe 0
 #power -1
@@ -23,11 +23,50 @@
 #paths 64
 #secondarypaths 64
 
+
+#aispellmod -60
+
 #namecond effectiveaoe < 666 64 "Fascination"
 
 #namecond effectiveaoe >= 666 64 "Fascinate Army"
 
 #descr 64 "The caster tries to project images and scents in the consciousness of SUBJECT. Should it succeed PRONOUN will be distracted for a short while and hopefully enable someone to strike the enemy down."
+#details "Those that fail to resist are stunned for a round."
+
+#end
+
+
+#neweffect "Colour Spray"
+#effect 128
+#damage 100
+#spec 8540288
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 4.3
+-- #scalecost 0.6
+#scalefatigueexponent -0.07
+
+#aoe 10
+#power 1
+#maxpower 4
+#pathlevel 1
+#explspr 10272
+#flightspr 10061
+#sound 31
+#fatiguecost 10
+#range 20
+
+#aispellmod -60
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "Colour Spray"
+
+#descr 16 "The caster projects a stream of dazzling coloured lights at enemies. This may briefly dazzle those affected."
 #details "Those that fail to resist are stunned for a round."
 
 #end

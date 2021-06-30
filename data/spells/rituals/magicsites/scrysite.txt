@@ -1,0 +1,11 @@
+#newsite "Scrying Site"
+
+#name 4 "Pool of Scrying"
+#name 16 "Crystal of Scrying"
+#name 64 "Shrine of the Birds"
+
+#scry 1
+#scryrange 3
+#scaleparam "scryrange" 1.0
+
+#end

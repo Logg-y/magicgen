@@ -1,0 +1,4 @@
+#newunitmod "Extra Wall Defenders"
+#weaponmod "Extra Wall Defenders"
+#landok 1
+#end

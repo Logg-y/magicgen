@@ -7,10 +7,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.05
 
+-- This effect does almost nothing
 #unitmod "Summon Fearweapon"
-#descr "Anyone wounded by the weapons of the summoned %creature% becomes slightly frightened and will be more prone to fleeing."
+#descr "Anyone wounded by the weapons of the summoned %creature% becomes slightly frightened and will temporarily suffer reduced morale."
 
 #end
 #newsecondary "Summon Fearweapongreater"

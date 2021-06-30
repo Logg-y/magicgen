@@ -16,7 +16,8 @@
 #secondarypathchance 80
 
 #scalefatiguemult 2
-#skipchance 97
+#skipchance 99
+#aispellmod -20
 
 #name 64 "Summon NAMEPREFIX Killer Mantis"
 #descr 64 "Summons ARTICLE killer mantis to fight for the caster. The killer mantis is an exceptionally large insect."
@@ -46,7 +47,7 @@
 
 #spelltype 20
 
-#skipchance 97
+#skipchance 99
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 40

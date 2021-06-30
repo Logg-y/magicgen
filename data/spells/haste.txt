@@ -20,7 +20,7 @@
 #fatiguecost 10
 #skipchance 30
 #pathperresearch 0.25
-#scalefatigueexponent -0.33
+#scalefatigueexponent 0.2
 
 
 #paths 66

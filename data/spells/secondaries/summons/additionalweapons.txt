@@ -1,0 +1,408 @@
+#newsecondary "Summon Fire Flare"
+
+#anysummon 1
+
+#paths 1
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.8
+#fatiguecostpereffect 20
+
+#req trample <= 0
+#unitmod "Summon Fire Flare"
+#descr "The summoned %creature% %is% able to burn %its% enemies with a magical flame."
+
+#end
+
+#newsecondary "Summon Fire Breath"
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Fire Breath"
+#descr "The summoned %creature% %is% able to breathe blasts of fire onto %its% enemies."
+
+#end
+
+#newsecondary "Summon Bile Breath"
+
+#anysummon 1
+
+#paths 96
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 25
+
+#unitmod "Summon Bile Breath"
+#descr "The summoned %creature% %is% able to breathe poisonous bile onto %its% enemies."
+
+#end
+
+#newsecondary "Summon Mind Blast"
+
+#anysummon 1
+
+#paths 16
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 30
+
+#unitmod "Summon Mind Blast"
+#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
+
+#end
+
+#newsecondary "Summon Frost Breath"
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 20
+
+#unitmod "Summon Frost Breath"
+#descr "The summoned %creature% %is% able to breathe blasts of frost onto %its% enemies."
+
+#end
+
+
+#newsecondary "Summon Poison Breath"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+
+#unitmod "Summon Poison Breath"
+#descr "The summoned %creature% %is% able to breathe blasts of poisonous fluid onto %its% enemies."
+
+#end
+
+#newsecondary "Summon Gaze of Death battle"
+
+#req effect != 10001
+#req effect != 10021
+
+#anysummon 1
+
+#paths 16
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 190
+
+#unitmod "Summon Gaze of Death"
+#descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
+
+#end
+
+#newsecondary "Summon Gaze of Death ritual"
+
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+#anysummon 1
+
+#paths 16
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 550
+
+#unitmod "Summon Gaze of Death"
+#descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
+
+#end
+
+#newsecondary "Summon Elf Shot"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 35
+
+#unitmod "Summon Elf Shot"
+
+#descr "The summoned %creature% %is% able to conjure green fey blasts that fatigue those they hit."
+#end
+
+#newsecondary "Summon Flame Strike"
+
+#anysummon 1
+
+#paths 1
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+#req trample <= 0
+
+#unitmod "Summon Flame Strike"
+
+#descr "The summoned %creature% %is% able to produce blasts of flame at those nearby."
+#end
+
+#newsecondary "Summon Throw Lightning"
+
+#anysummon 1
+
+#paths 2
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+#req trample <= 0
+
+#unitmod "Summon Throw Lightning"
+
+#descr "The summoned %creature% %is% able to throw bolts of lightning at enemies."
+#end
+
+#newsecondary "Summon Plague Breath battle"
+
+#req effect != 10001
+#req effect != 10021
+
+#anysummon 1
+
+#paths 32
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 190
+
+#unitmod "Summon Plague Breath"
+#descr "The summoned %creature% %is% able to breathe ARTICLE massive %blast% of plagued air at enemies."
+
+#end
+
+#newsecondary "Summon Plague Breath ritual"
+
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+#anysummon 1
+
+#paths 32
+#power -4
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 550
+
+#unitmod "Summon Plague Breath"
+#descr "The summoned %creature% %is% able to breathe ARTICLE massive %blast% of plagued air at enemies."
+
+#end
+
+#newsecondary "Summon Web Spit"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+#req trample <= 0
+
+#unitmod "Summon Web Spit"
+
+#descr "The summoned %creature% %is% able to spit sticky masses of web at enemies."
+#end
+
+#newsecondary "Summon Soul Leech"
+
+#anysummon 1
+
+#paths 32
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.6
+#req trample <= 0
+
+#unitmod "Summon Soul Leech"
+
+#descr "The summoned %creature% %is% able to leech the souls of those that get close to it."
+#end
+
+
+#newsecondary "Summon Theft of Life"
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 2.1
+#req trample <= 0
+
+#unitmod "Summon Theft of Life"
+
+#descr "The summoned %creature% %is% able to leech life from enemies over long distances."
+#end
+
+#newsecondary "Summon Drake Fire"
+
+#anysummon 1
+
+#paths 1
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+#fatiguecostpereffect 120
+#req trample <= 0
+
+#unitmod "Summon Drake Fire"
+
+#descr "The summoned %creature% %is% able to breathe cones of flames."
+#end
+
+#newsecondary "Summon Drake Frost"
+
+#anysummon 1
+
+#paths 4
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+#fatiguecostpereffect 120
+#req trample <= 0
+
+#unitmod "Summon Drake Frost"
+
+#descr "The summoned %creature% %is% able to breathe cones of frost."
+#end
+
+#newsecondary "Summon Drake Gas"
+
+#anysummon 1
+
+#paths 64
+#power -3
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.4
+#fatiguecostpereffect 120
+#req trample <= 0
+
+#unitmod "Summon Drake Gas"
+
+#descr "The summoned %creature% %is% able to breathe cones of poison gas."
+#end
+
+#newsecondary "Summon Hypnotize"
+
+#anysummon 1
+
+#paths 64
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.15
+#req trample <= 0
+
+#unitmod "Summon Hypnotize"
+
+#descr "The summoned %creature% %is% able to hypnotize enemies."
+#end
+
+
+#newsecondary "Summon Corrosive Spit"
+
+#anysummon 1
+
+#paths 5
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.3
+#req trample <= 0
+
+#unitmod "Summon Corrosive Spit"
+
+#descr "The summoned %creature% %is% able to spit corrosive fluid."
+#end
+
+
+#newsecondary "Summon Water Breath"
+
+#anysummon 1
+
+#paths 4
+#power -3
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 120
+#req trample <= 0
+
+#unitmod "Summon Water Breath"
+
+#descr "The summoned %creature% %is% able to breathe cones of high pressure water."
+#end
+
+
+#newsecondary "Summon Frost Strike"
+
+#anysummon 1
+
+#paths 4
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+#req trample <= 0
+
+#unitmod "Summon Frost Strike"
+
+#descr "The summoned %creature% %is% able to produce blasts of frost at those nearby."
+#end

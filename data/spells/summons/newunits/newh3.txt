@@ -1,0 +1,18 @@
+#newunit "Bishop"
+#baseunit 1961
+#raw "#coldres 0"
+#setstr descr "This is a bishop that has been magically coerced into service by a follower of a Pretender God. He still retains his considerable priestly abilities."
+#setstr name "Bishop"
+#set coldres 0
+#end
+
+#newunit "Spectral Priest"
+#baseunit 329
+#raw "#clearmagic"
+#raw "#copyspr 253"
+#raw "#magicskill 8 3"
+#setstr descr "This is the spectre of a longdead priest, summoned to spread the faith of a Pretender God."
+#setstr name "Spectral Priest"
+#set D 0
+#set H 3
+#end

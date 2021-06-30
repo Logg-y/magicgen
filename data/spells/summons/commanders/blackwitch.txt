@@ -21,7 +21,7 @@
 #paths 112
 #secondarypaths 32
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 32 "Call NAMEPREFIX Black %Witch%"
 #name 16 "Teleport NAMEPREFIX Black %Witch%"
@@ -53,7 +53,7 @@
 #schools 1
 
 #skipchance 77
-#pathskipchance 16 80
+#pathskipchance 16 95
 #paths 112
 #secondarypaths 32
 

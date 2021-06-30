@@ -10,6 +10,8 @@
 #explspr 10297
 #sound 42
 
+#aispellmod 300
+
 #paths 64
 #secondarypaths 64
 
@@ -35,6 +37,8 @@
 #fatiguecost 30
 #explspr 10162
 #sound 42
+
+#aispellmod 300
 
 #paths 1
 #secondarypaths 1
@@ -62,6 +66,8 @@
 #explspr 10056
 #sound 42
 
+#aispellmod 400
+
 #paths 4
 #secondarypaths 2
 
@@ -88,6 +94,8 @@
 #fatiguecost 20
 #explspr 10160
 #sound 23
+
+#aispellmod 400
 
 #paths 32
 #secondarypaths 0

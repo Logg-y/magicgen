@@ -13,7 +13,6 @@
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
-#alwaysgenerate 1
 
 #name 32 "Some kind of offensive global"
 #descr 1 ""
@@ -29,7 +28,7 @@
 #scalerate 1
 #scalefatiguemult 600
 
-#pathskipchance 128 60
+#pathskipchance 128 80
 
 #end
 
@@ -48,9 +47,8 @@
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
-#alwaysgenerate 1
 
-#pathskipchance 128 60
+#pathskipchance 128 80
 
 #name 32 "Some kind of offensive global"
 #descr 1 ""
@@ -83,9 +81,8 @@
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
-#alwaysgenerate 1
 
-#pathskipchance 128 60
+#pathskipchance 128 80
 
 #name 32 "Some kind of offensive global"
 #descr 1 ""

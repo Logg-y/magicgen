@@ -83,6 +83,8 @@
 #sound 30
 #skipchance 20
 
+#aispellmod 300
+
 #paths 256
 #secondarypaths 256
 #secondarypathchance 0
@@ -134,6 +136,7 @@
 #name 1 "Purifying Eruption"
 #name 256 "Holy Eruption"
 #name 1 "Holy Eruption"
+#spelltype 2
 #end
 
 #neweffect "Banishment Exploding Fire"
@@ -224,6 +227,33 @@
 #name 4 "$Purifying$ Flood"
 #name 4 "$Purifying$ Streams"
 #descr 256 "With this prayer the priest draws upon the power of his God to bring cleansing waters upon undead foes. The undead will take damage unless they manage to resist the banishment."
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Control the Dead"
+#effect 29
+#damage 999
+#spec 293601416
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 32 "Dominate the Dead"
+#descr 256 "With this prayer the priest attempts to bring hostile undead beings under the control of his God. This spell does not grant the priest the ability to lead the undead, which may result in any converted undead immediately fleeing or crumbling if unassisted."
 
 #spelltype 2
 #end

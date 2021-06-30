@@ -7,6 +7,9 @@
 
 #name 1 "Phoenix Resistance"
 #name 128 "Infernal Resistance"
+#spelltype 41
+
+#scalerate 0
 #end
 
 #neweffect "Phoenix Pyre"

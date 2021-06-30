@@ -14,12 +14,13 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX Deer"
 #descr 64 "The caster summons forth ARTICLE deer. Deer are not known for their battlefield prowess, but they can still fight back with their antlers."
 
 #spelltype 528
+#aispellmod -40
 
 #scalerate 2
 #end
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX Deer"
 #descr 64 "The caster summons forth ARTICLE deer. Deer are not known for their battlefield prowess, but they can still fight back with their antlers."

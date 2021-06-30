@@ -21,7 +21,7 @@
 #paths 80
 #secondarypaths 64
 
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 2 "Call NAMEPREFIX Blackrose %Sorceress%"
 #name 16 "Teleport NAMEPREFIX Blackrose %Sorceress%"
@@ -53,7 +53,7 @@
 #schools 1
 
 #skipchance 77
-#pathskipchance 16 80
+#pathskipchance 16 95
 #paths 80
 #secondarypaths 64
 

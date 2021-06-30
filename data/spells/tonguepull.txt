@@ -39,7 +39,7 @@
 #spelltype 66
 
 #scalerate 1
-#scalefatigueexponent -0.33
+#scalefatigueexponent 0
 -- #scalecost 1.6
 #skipchance 50
 

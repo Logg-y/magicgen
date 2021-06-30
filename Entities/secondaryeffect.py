@@ -144,7 +144,8 @@ class SpellSecondaryEffect(object):
                 return False
 
         # aoe limit so that mass rust doesn't get decay/burning etc
-        if self.offensiveeffect != 0:
+        # don't apply to holy spells as (at research 0) they need to be allowed this
+        if self.offensiveeffect != 0 and eff.paths != 256:
             maxbaseaoe = 3 * ((researchlevel * (researchlevel + 1)) / 2)
             finalpower = researchlevel - eff.power
             # this is quadratic, negative power differentials (from slower casting etc) should be considered 0

@@ -20,14 +20,25 @@
 #precision 100
 #range 100
 
-#paths 16
+#paths 21
 #secondarypaths 16
 
+#pathskipchance 1 90
+#pathskipchance 4 90
+
+#namecond effectiveaoe < 1 1 "Mind Burn"
+#namecond effectiveaoe < 1 4 "Mind Freeze"
 #namecond effectiveaoe < 1 16 "Mind Burn"
 
 #namecond2 1 <= effectiveaoe < 25 16 "Mental Blast"
+#namecond2 1 <= effectiveaoe < 25 1 "Burn Minds"
+#namecond2 1 <= effectiveaoe < 25 4 "Freeze Minds"
 #namecond2 26 <= effectiveaoe < 600 16 "Wave of Agony"
+#namecond2 26 <= effectiveaoe < 600 1 "Wave of Agony"
+#namecond2 26 <= effectiveaoe < 600 4 "Wave of Agony"
 
+#descr 1 "The caster overloads the %mind% of SUBJECT with fiery power. Unless resisted, this results in severe pain."
+#descr 4 "The caster freezes the %mind% of SUBJECT. Unless resisted, this results in severe pain."
 #descr 16 "The caster overloads the %mind% of SUBJECT. Unless resisted, this results in severe pain."
 
 #end
@@ -37,7 +48,7 @@
 #neweffect "Battlefield Mind Burn"
 #effect 2
 #damage 1010
-#spec 25575552
+#spec 25313408
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
@@ -56,11 +67,18 @@
 #precision 100
 #range 100
 
-#paths 16
+#paths 21
 #secondarypaths 16
 
-#name 16 "Mass Mental Burn"
+#pathskipchance 1 90
+#pathskipchance 4 90
 
-#descr 16 "The caster attempts to overload the minds of all his enemies. Those that fail to resist experience agony."
+#name 16 "Mass Mental Burn"
+#name 1 "Mass Mental Burn"
+#name 4 "Mass Mental Freeze"
+
+#descr 16 "The caster attempts to overload the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
+#descr 4 "The caster attempts to freeze the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
+#descr 1 "The caster attempts to burn the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 
 #end

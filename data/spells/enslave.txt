@@ -32,6 +32,65 @@
 
 #end
 
+#neweffect "Enslave Lesser"
+#effect 28
+#damage 999
+#spec 8540288
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Domination"
+#name 2 "Domination"
+#name 4 "Domination"
+#name 8 "Domination"
+#name 16 "Domination"
+#name 32 "Domination"
+#name 64 "Domination"
+#name 128 "Domination"
+#end
+
+#neweffect "Enslave Lesser casting AI dummy"
+#effect 109
+#damage 999
+#spec 1152921504606998656
+
+#schools 32
+
+#nextspell "Enslave Lesser"
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 5
+#maxpower 8
+#pathlevel 2
+#explspr 10208
+#sound 41
+#fatiguecost 20
+#precision 100
+#range 40
+
+#aispellmod -33
+
+#paths 16
+#secondarypaths 16
+
+#namecond effectiveaoe < 1 16 "Domination"
+
+#namecond2 1 <= effectiveaoe < 25 16 "Dominate Group"
+#namecond2 26 <= effectiveaoe < 600 16 "Dominate Squad"
+
+#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
+#details "Targets must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also enslaves them."
+
+#end
+
 
 
 #neweffect "Battlefield Enslave"

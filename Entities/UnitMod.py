@@ -2,6 +2,7 @@ from copy import copy
 
 from Services import naming, utils
 from fileparser import unitinbasedatafinder
+from Entities import weapon
 
 # Weaponmods are called only from SecondaryEffects
 # which means they can be a LOT simpler
@@ -25,6 +26,7 @@ class UnitMod(object):
         self.reqs = []
         self.setcommands = []
         self.multcommands = []
+        self.addweapons = []
 
         # The event unitmod code relies on having some way to pull the parent unit id back
         # which this sorts out
@@ -152,6 +154,21 @@ class UnitMod(object):
         # New unit stuff should go here
         out += u.additionalmodcmds + "\n"
 
+        if len(self.addweapons) > 0:
+            out += f"#clearweapons\n"
+            for wpn in u.weapons:
+                out += f"#weapon {wpn.origid}\n"
+
+            for wpn in self.addweapons:
+                out += f"#weapon {wpn}\n"
+                u.weapons.append(weapon.get(wpn))
+
+        # Overwritten weapons will not be any of those commands
+        elif self.weaponmod != "":
+            out += f"#clearweapons\n"
+            for wpn in u.weapons:
+                out += f"#weapon {wpn.origid}\n"
+
         # Disable transformation
         if hasattr(u, "transformation"):
             if u.transformation != 0:
@@ -188,11 +205,7 @@ class UnitMod(object):
             modcmd = flags_to_mod_cmds.get(param, param)
             out += f"#{modcmd} {newparamval}\n"
 
-        # Overwritten weapons will not be any of those commands
-        if self.weaponmod != "":
-            out += f"#clearweapons\n"
-            for wpn in u.weapons:
-                out += f"#weapon {wpn.origid}\n"
+
 
         secondshapeextra = ""
         # Second shape needs to propagate

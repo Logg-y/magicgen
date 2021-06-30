@@ -2,8 +2,8 @@
 #effect 1
 #damage 1560
 #spec 0
-#power 4
-#maxpower 14
+#power 2
+#maxpower 12
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -14,12 +14,14 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Dog%"
 #descr 64 "The caster summons forth ARTICLE %dog% to fight for him. Dogs are small, weak, and not terribly effective combatants."
 
 #spelltype 528
+
+#aispellmod -40
 
 #scalerate 2.5
 #end
@@ -38,7 +40,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Dog%"
 #descr 64 "The caster summons forth ARTICLE %dog% to fight for him. Dogs are small, weak, and not terribly effective combatants."

@@ -4,7 +4,7 @@ import re
 from Entities import NewUnit
 from Exceptions.ParseError import ParseError
 
-modifier_params_int = ["baseunit"]
+modifier_params_int = ["baseunit", "clearweapons"]
 modifier_params_str = []
 modifier_params_float = []
 
@@ -91,6 +91,14 @@ def readNewUnitFile(fp):
                         param = m.groups()[0]
                         val = int(m.groups()[1])
                         curreff.setcmds.append([param, val])
+                        continue
+                    raise ParseError(f"{fp} line {lineno}: bad #set")
+
+                if line.startswith("#addweapon"):
+                    m = re.match('#addweapon\\W+(.*?)\\W*$', line)
+                    if m is not None:
+                        val = int(m.groups()[0])
+                        curreff.addweapons.append(val)
                         continue
                     raise ParseError(f"{fp} line {lineno}: bad #set")
 

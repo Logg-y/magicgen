@@ -12,7 +12,7 @@
 #fatiguecost 30
 #flightspr 304
 #sound 42
-#aicastmod -40
+#aispellmod -50
 #skipchance 30
 
 -- #paths 8+128
@@ -49,7 +49,7 @@
 #fatiguecost 40
 #flightspr 304
 #sound 42
-#aicastmod -40
+#aispellmod -40
 #skipchance 30
 
 -- #paths 8+128

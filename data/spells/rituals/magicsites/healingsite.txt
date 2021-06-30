@@ -1,0 +1,9 @@
+#newsite "Healing Site"
+
+#name 4 "Spring of Healing"
+#name 64 "Healing Plants"
+
+#heal 10
+#scaleparam "heal" 1.0
+
+#end

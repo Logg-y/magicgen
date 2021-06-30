@@ -20,7 +20,7 @@
 --ASN
 #paths 82
 #secondarypaths 2
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 2 "Call NAMEPREFIX Wormwood %Witch%"
 #name 16 "Teleport NAMEPREFIX Wormwood %Witch%"
@@ -55,7 +55,7 @@
 
 #paths 82
 #secondarypaths 2
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 
 #name 2 "Call NAMEPREFIX Wormwood Witch"

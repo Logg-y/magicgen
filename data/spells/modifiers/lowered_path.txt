@@ -3,7 +3,7 @@
 -- both evo and buff
 #spelltype 0
 
-#skipchance 30
+#skipchance 10
 -- not battlesummoned commander
 #req effect != 21
 
@@ -23,7 +23,7 @@
 -- both evo and buff
 #spelltype 0
 
-#skipchance 40
+#skipchance 20
 -- not battlesummoned commander
 #req effect != 21
 

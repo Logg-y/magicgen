@@ -11,10 +11,12 @@
 #sound 31
 #schools 1
 
+#aispellmod -33
+
 #paths 68
 #secondarypaths 68
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Shark%"
 #name 4 "Summon NAMEPREFIX %Shark%"
@@ -41,7 +43,7 @@
 #paths 68
 #secondarypaths 68
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Shark%"
 #name 4 "Summon NAMEPREFIX %Shark%"

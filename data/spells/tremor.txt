@@ -1,0 +1,29 @@
+#neweffect "Tremor"
+#effect 128
+#damage 100
+#spec 70368745242752
+#aoe 1
+#power 0
+#maxpower 6
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 20
+#explspr 10189
+#scalefatigueexponent 0
+#sound 27
+#skipchance 30
+
+#aispellmod -60
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Tremor"
+#descr 8 "The caster shakes the earth beneath SUBJECT. Whilst this does not physically hurt the enemies, the less agile amongst them may trip or stumble and become stunned. Flying or floating creatures are entirely unaffected by this spell."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 2
+#schools 4
+#end

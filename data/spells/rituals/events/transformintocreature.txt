@@ -6,8 +6,8 @@
 
 #setspelldamage 1
 
-#mincreaturepower 2
-#maxcreaturepower 3
+#mincreaturepower 3
+#maxcreaturepower 4
 
 #allowedunitmod "Do Nothing"
 #allowedunitmod "Summon Chillaura"

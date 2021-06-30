@@ -10,6 +10,7 @@
 #fatiguecost 60
 #sound 31
 #schools 1
+#aispellmod -33
 
 #paths 64
 #secondarypaths 64

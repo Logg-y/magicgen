@@ -14,7 +14,7 @@
 #explspr 10232
 #sound 31
 #schools 1
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #skipchance 95.0
 
@@ -50,7 +50,7 @@
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
 #schools 1
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #skipchance 77
 

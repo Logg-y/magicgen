@@ -26,7 +26,11 @@
 #flightspr 10278
 #sound 21
 
+#aispellmod 200
+
 #skipchance 80
+
+#aispellmod 200
 
 -- #paths 1+2+4+16+64+128
 #paths 8
@@ -87,6 +91,8 @@
 #fatiguecost 100
 #explspr 10279
 #sound 21
+
+#aispellmod 200
 
 #skipchance 80
 

@@ -16,6 +16,8 @@
 
 #skipchance 97
 
+#aispellmod -40
+
 #name 64 "Summon NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag%. Sea stags are the underwater equivalent of deer: they attack with their antlers."
 

@@ -20,6 +20,7 @@
 #name 16 "Summon NAMEPREFIX Elder %Thing%"
 #descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
 #details "Creatures summoned with this spell are not sacred."
+#aispellmod -20
 
 #spelltype 528
 

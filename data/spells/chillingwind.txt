@@ -32,11 +32,13 @@
 #explspr 10338
 #sound 52
 
+#aispellmod -95
+
 #paths 2
 #secondarypaths 4
 #secondarypathchance 3
 
-#scalefatigueexponent -0.5
+#scalefatigueexponent 0
 
 #name 2 "Chilling Wind"
 #descr 2 "Cold winds are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
@@ -64,6 +66,8 @@
 #explspr 10338
 #skipchance 50
 #sound 21
+
+#aispellmod -95
 
 #paths 2
 #secondarypaths 4

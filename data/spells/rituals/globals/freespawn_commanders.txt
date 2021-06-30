@@ -36,7 +36,7 @@
 #descr 32 "This enchantment causes deathly portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
 #descr 64 "This enchantment causes portals of nature to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
 #descr 128 "This enchantment causes infernal portals to open randomly across the caster's lands. The enchantment entices a commander to enter the world through the portal, ready to serve the caster. The creatures may be magically altered and somewhat different to their usual states."
-#details "In each friendly land province, there is a 4% chance per point of friendly dominion that a single commander spawns."
+#details "In each friendly land province, there is a 2% chance per point of friendly dominion that a single commander spawns."
 
 #spelltype 4
 #scalerate 1

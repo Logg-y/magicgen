@@ -34,8 +34,8 @@
 #power 4
 #maxpower 14
 #nreff 1001
-#pathlevel 2
-#fatiguecost 1200
+#pathlevel 3
+#fatiguecost 2100
 #schools 1
 
 #paths 128
@@ -52,7 +52,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 130
+#scalefatiguemult 400
 
 #scalerate 2
 #end

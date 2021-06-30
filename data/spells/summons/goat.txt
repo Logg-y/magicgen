@@ -14,10 +14,11 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Goat%"
 #descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
+#aispellmod -60
 
 #spelltype 528
 
@@ -38,7 +39,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 99
 
 #name 64 "Summon NAMEPREFIX %Goat%"
 #descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."

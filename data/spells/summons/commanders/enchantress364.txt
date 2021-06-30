@@ -20,7 +20,7 @@
 --ASN
 #paths 80
 #secondarypaths 64
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 #name 4 "Call NAMEPREFIX %Enchantress%"
 #name 16 "Teleport NAMEPREFIX %Enchantress%"
@@ -55,7 +55,7 @@
 
 #paths 80
 #secondarypaths 64
-#pathskipchance 16 80
+#pathskipchance 16 95
 
 
 #name 4 "Call NAMEPREFIX Enchantress"

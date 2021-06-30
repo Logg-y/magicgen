@@ -10,6 +10,8 @@
 #sound 31
 #schools 1
 
+
+#aispellmod -60
 #paths 68
 #secondarypaths 68
 

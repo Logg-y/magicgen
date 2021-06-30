@@ -2,10 +2,10 @@
 #effect 1
 #damage -3
 #spec 8388608
-#power 1
-#maxpower 14
+#power 0
+#maxpower 13
 #precision -2
-#nreff 1
+#nreff 3
 #pathlevel 1
 #fatiguecost 20
 #explspr 10232
@@ -37,7 +37,7 @@
 #maxpower 14
 #nreff 3004
 #pathlevel 1
-#fatiguecost 300
+#fatiguecost 200
 #explspr 10232
 #sound 43
 
@@ -49,10 +49,10 @@
 
 #spelltype 20
 
-#scalefatiguemult 5
+#scalefatiguemult 2
 
 #power 1
-#scalerate 2
+#scalerate 4
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
@@ -83,10 +83,10 @@
 
 #spelltype 20
 
-#scalefatiguemult 6
+#scalefatiguemult 2
 
 #power 1
-#scalerate 2
+#scalerate 4
 -- #scalecost 1.0
 #pathlevel 2
 #schools 16

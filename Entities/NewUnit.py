@@ -1,4 +1,5 @@
 from fileparser import unitinbasedatafinder
+from Entities import weapon
 import re
 
 class NewUnit(object):
@@ -6,6 +7,8 @@ class NewUnit(object):
         self.name = ""
         self.setcmds = []
         self.rawcmds = []
+        self.clearweapons = 0
+        self.addweapons = []
 
         self.baseunit = None
         self.init = False
@@ -29,8 +32,13 @@ class NewUnit(object):
         #self._init()
         if self.baseunit is not None:
             retval = unitinbasedatafinder.get(self.baseunit)
+            if self.clearweapons != 0:
+                retval.weapons = []
         else:
             retval = unitinbasedatafinder.UnitInBaseDataFinder()
+
+        for wpnid in self.addweapons:
+            retval.weapons.append(weapon.get(wpnid))
 
         for attrib, value in self.setcmds:
             setattr(retval, attrib, value)

@@ -15,6 +15,8 @@
 #name 32 "Transformation Shock"
 #name 64 "Transformation Shock"
 #nextspell "Transformation Become Younger"
+#scalerate 0
+#spelltype 4
 #end
 
 
@@ -35,6 +37,8 @@
 #name 16 "Otherworldly Vigour"
 #name 32 "Taste of Undeath"
 #name 64 "Nature's Renewal"
+#scalerate 0
+#spelltype 4
 #end
 
 #neweffect "Transformation Ritual into Magicgen creature"

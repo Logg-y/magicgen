@@ -18,6 +18,7 @@
 
 #name 2 "Summon NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
+#aispellmod -20
 
 #spelltype 528
 #scalefatiguemult 20
