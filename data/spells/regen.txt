@@ -23,14 +23,17 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 2 64 "Regeneration"
-#namecond2 2 <= effectiveaoe < 600 64 "Regeneration"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Regeneration"
+#namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Regeneration"
 
-#namecond2 600 <= effectiveaoe <= 666 64 "Mass Regeneration"
+#namecond2 600 <= effectiveaoe <= 666 64 "NAMEPREFIX Mass Regeneration"
 
 #details "Grants 10% regeneration."
 
 #descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 
 #end
 
@@ -60,14 +63,17 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 2 64 "Regeneration"
-#namecond2 2 <= effectiveaoe < 600 64 "Regeneration"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Regeneration"
+#namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Regeneration"
 
-#namecond2 20 <= effectiveaoe <= 666 64 "Mass Regeneration"
+#namecond2 20 <= effectiveaoe <= 666 64 "NAMEPREFIX Mass Regeneration"
 
 #details "Grants 10% regeneration."
 
 #descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 
 #end
 
@@ -98,14 +104,17 @@
 #paths 32
 #secondarypaths 32
 
-#namecond effectiveaoe < 2 32 "Reforming Flesh"
-#namecond2 2 <= effectiveaoe < 600 32 "Reforming Flesh"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Reforming Flesh"
+#namecond2 2 <= effectiveaoe < 600 32 "NAMEPREFIX Reforming Flesh"
 
-#namecond2 600 <= effectiveaoe <= 666 32 "Undead Reformation"
+#namecond2 600 <= effectiveaoe <= 666 32 "NAMEPREFIX Undead Reformation"
 
 #details "Grants 10% regeneration to undead, even if they are inanimate."
 
 #descr 32 "Grants all undead in a SIZE area the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of reforming flesh"
 
 #end
 
@@ -137,14 +146,17 @@
 #paths 32
 #secondarypaths 32
 
-#namecond effectiveaoe < 2 32 "Reforming Flesh"
-#namecond2 2 <= effectiveaoe < 20 32 "Reforming Flesh"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Reforming Flesh"
+#namecond2 2 <= effectiveaoe < 20 32 "NAMEPREFIX Reforming Flesh"
 
-#namecond2 20 <= effectiveaoe <= 666 32 "Undead Reformation"
+#namecond2 20 <= effectiveaoe <= 666 32 "NAMEPREFIX Undead Reformation"
 
 #details "Grants 10% regeneration to undead, even if they are inanimate."
 
 #descr 32 "Grants all undead in a SIZE area the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of reforming flesh"
 
 #end
 

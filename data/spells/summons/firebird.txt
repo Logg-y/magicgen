@@ -13,7 +13,7 @@
 
 #paths 1
 #secondarypaths 16
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
 #skipchance 97
 

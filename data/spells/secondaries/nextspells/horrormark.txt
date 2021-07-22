@@ -1,0 +1,132 @@
+#neweffect "Horror Mark Secondary mrne"
+#effect 600
+#damage 261
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10204
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Otherworldly Marking"
+#name 2 "Otherworldly Marking"
+#name 4 "Otherworldly Marking"
+#name 8 "Otherworldly Marking"
+#name 16 "Otherworldly Marking"
+#name 32 "Otherworldly Marking"
+#name 64 "Otherworldly Marking"
+#name 128 "Otherworldly Marking"
+#name 256 "Otherworldly Marking"
+
+#end
+
+#neweffect "Horror Mark Secondary mrn"
+#effect 600
+#damage 261
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10204
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Otherworldly Marking"
+#name 2 "Otherworldly Marking"
+#name 4 "Otherworldly Marking"
+#name 8 "Otherworldly Marking"
+#name 16 "Otherworldly Marking"
+#name 32 "Otherworldly Marking"
+#name 64 "Otherworldly Marking"
+#name 128 "Otherworldly Marking"
+#name 256 "Otherworldly Marking"
+
+#end
+
+#neweffect "Horror Mark Secondary mrne damaging"
+#effect 600
+#damage 261
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10204
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Otherworldly Marking"
+#name 2 "Otherworldly Marking"
+#name 4 "Otherworldly Marking"
+#name 8 "Otherworldly Marking"
+#name 16 "Otherworldly Marking"
+#name 32 "Otherworldly Marking"
+#name 64 "Otherworldly Marking"
+#name 128 "Otherworldly Marking"
+#name 256 "Otherworldly Marking"
+
+#end
+
+
+#neweffect "Horror Mark Secondary mrn damaging"
+#effect 600
+#damage 261
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10204
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Otherworldly Marking"
+#name 2 "Otherworldly Marking"
+#name 4 "Otherworldly Marking"
+#name 8 "Otherworldly Marking"
+#name 16 "Otherworldly Marking"
+#name 32 "Otherworldly Marking"
+#name 64 "Otherworldly Marking"
+#name 128 "Otherworldly Marking"
+#name 256 "Otherworldly Marking"
+
+#end

@@ -1,0 +1,132 @@
+#neweffect "Stun Secondary mrne"
+#effect 128
+#damage 100
+#spec 25313412
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10064
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Stun"
+#name 2 "Stun"
+#name 4 "Stun"
+#name 8 "Stun"
+#name 16 "Stun"
+#name 32 "Stun"
+#name 64 "Stun"
+#name 128 "Stun"
+#name 256 "Stun"
+
+#end
+
+#neweffect "Stun Secondary mrn"
+#effect 128
+#damage 100
+#spec 8540288
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10064
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Stun"
+#name 2 "Stun"
+#name 4 "Stun"
+#name 8 "Stun"
+#name 16 "Stun"
+#name 32 "Stun"
+#name 64 "Stun"
+#name 128 "Stun"
+#name 256 "Stun"
+
+#end
+
+#neweffect "Stun Secondary mrne damaging"
+#effect 128
+#damage 100
+#spec 25313412
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10064
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Stun"
+#name 2 "Stun"
+#name 4 "Stun"
+#name 8 "Stun"
+#name 16 "Stun"
+#name 32 "Stun"
+#name 64 "Stun"
+#name 128 "Stun"
+#name 256 "Stun"
+
+#end
+
+
+#neweffect "Stun Secondary mrn damaging"
+#effect 128
+#damage 100
+#spec 8540288
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10064
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Stun"
+#name 2 "Stun"
+#name 4 "Stun"
+#name 8 "Stun"
+#name 16 "Stun"
+#name 32 "Stun"
+#name 64 "Stun"
+#name 128 "Stun"
+#name 256 "Stun"
+
+#end

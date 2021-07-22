@@ -27,7 +27,7 @@
 #spelltype 528
 
 #scalerate 2
-#scalefatiguemult 5
+--#scalefatiguemult 5
 #end
 
 #neweffect "wingedmonkey ritual"

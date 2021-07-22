@@ -1,0 +1,16 @@
+#newmodifier "Remote Assassin to Manifestation Effect"
+
+#req effect == 10050
+
+#effect 12
+
+#power 0
+
+#skipchance 50
+
+#mult fatiguecost 0.7
+
+#descr "The creature summoned by this spell is selective when choosing targets and may decide to turn on its summoner instead."
+#details "Checks at most 8 random commanders in the targeted province, without replacement. It has a 50% chance to skip over a given commander if they are not horror marked. If no target is successfully selected in the designated province, the creature will instead attack the caster."
+
+#end

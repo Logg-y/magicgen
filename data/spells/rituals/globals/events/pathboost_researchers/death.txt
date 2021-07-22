@@ -11,7 +11,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_targorder 4
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "While reading a magical tome, a researcher suddenly gained deeper knowledge of death!"
 #pathboost 5

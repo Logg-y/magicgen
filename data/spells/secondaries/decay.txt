@@ -1,31 +1,39 @@
-#newsecondary "Decay"
+#newsecondary "Decay nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 32
-#power -1
+#power 0
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req effect != 4
+#req damage != 256
 
-#nextspell "Minor Decay"
+#nameprefix "Rotting"
+#fatiguepersquare 2
 
 
-#descr "Residual energy from this spell causes those affected to start decaying."
+#nextspell "Decay Secondary mrne"
+
+#descr "Dark energy may cause those affected by this spell to start decaying."
+#details "Affected creatures make an easy MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end
 
-#newsecondary "Decay damaging"
+#newsecondary "Decay nondamaging mrn"
 
 -- evo only
 #spelltype 2
@@ -34,21 +42,75 @@
 #power -1
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req effect != 4
+#req damage != 256
 
-#nextspell "Minor Decay"
+#nameprefix "Decaying"
+#nameprefix "Senescent"
+#nameprefix "Baleful"
+#fatiguepersquare 6
 
-#descr "Residual energy from this spell causes those affected to start decaying."
+
+#nextspell "Decay Secondary mrn"
+
+#descr "Dark energy may cause those affected by this spell to start decaying."
+#details "Affected creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end
 
-#newsecondary "Decay smite"
+
+#newsecondary "Decay damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 256
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Rotting"
+#fatiguepersquare 1.6
+
+#nextspell "Decay Secondary mrne damaging"
+
+#descr "Dark energy may cause those wounded by this spell to start decaying."
+#details "Wounded creatures make an easy MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
+#end
+
+#newsecondary "Decay damaging mrn damaging"
 
 -- evo only
 #spelltype 2
@@ -57,17 +119,67 @@
 #power -1
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe == 0
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 256
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Decaying"
+#fatiguepersquare 4
+
+#nextspell "Decay Secondary mrn damaging"
+
+#descr "Dark energy may cause those wounded by this spell to start decaying."
+#details "Wounded creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
+
+#end
+
+#newsecondary "Decay damaging holy only"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
 #req paths == 256
 
 -- not ritual
 #req spelltype !& 4
-#req effect != 4
+#req damage != 256
 
-#nextspell "Minor Decay Smite"
+#nameprefix "Decaying"
+#fatiguepersquare 4
 
-#descr "The deathly energy focused by the priest causes those harmed to start decaying. The decay can be resisted but it is difficult to do so."
+#nextspell "Decay Secondary mrn damaging"
+
+#descr "Dark energy may cause those wounded by this spell to start decaying."
+#details "Wounded creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
 
 #end
-

@@ -1,0 +1,144 @@
+#neweffect "Shrink Secondary mrn"
+#effect 11
+#damage 4294967296
+#spec 8409088
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10335
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Shrinkage"
+#name 2 "$Additional$ Shrinkage"
+#name 4 "$Additional$ Shrinkage"
+#name 8 "$Additional$ Shrinkage"
+#name 16 "$Additional$ Shrinkage"
+#name 32 "$Additional$ Shrinkage"
+#name 64 "$Additional$ Shrinkage"
+#name 128 "$Additional$ Shrinkage"
+#name 256 "$Additional$ Shrinkage"
+
+#end
+
+
+
+#neweffect "Shrink Secondary mrne"
+#effect 11
+#damage 4294967296
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10335
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Shrinkage"
+#name 2 "$Additional$ Shrinkage"
+#name 4 "$Additional$ Shrinkage"
+#name 8 "$Additional$ Shrinkage"
+#name 16 "$Additional$ Shrinkage"
+#name 32 "$Additional$ Shrinkage"
+#name 64 "$Additional$ Shrinkage"
+#name 128 "$Additional$ Shrinkage"
+#name 256 "$Additional$ Shrinkage"
+
+#end
+
+
+#neweffect "Shrink Secondary mrn damaging"
+#effect 11
+#damage 4294967296
+#spec 8409088
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10335
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Shrinkage"
+#name 2 "$Additional$ Shrinkage"
+#name 4 "$Additional$ Shrinkage"
+#name 8 "$Additional$ Shrinkage"
+#name 16 "$Additional$ Shrinkage"
+#name 32 "$Additional$ Shrinkage"
+#name 64 "$Additional$ Shrinkage"
+#name 128 "$Additional$ Shrinkage"
+#name 256 "$Additional$ Shrinkage"
+
+#end
+
+
+
+#neweffect "Shrink Secondary mrne damaging"
+#effect 11
+#damage 4294967296
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10335
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Shrinkage"
+#name 2 "$Additional$ Shrinkage"
+#name 4 "$Additional$ Shrinkage"
+#name 8 "$Additional$ Shrinkage"
+#name 16 "$Additional$ Shrinkage"
+#name 32 "$Additional$ Shrinkage"
+#name 64 "$Additional$ Shrinkage"
+#name 128 "$Additional$ Shrinkage"
+#name 256 "$Additional$ Shrinkage"
+
+#end

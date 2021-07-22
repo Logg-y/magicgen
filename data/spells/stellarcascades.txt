@@ -16,7 +16,7 @@
 #secondarypaths 16
 #secondarypathchance 0
 
-#name 16 "Stellar Cascades"
+#name 16 "NAMEPREFIX Stellar Cascades"
 
 #descr 16 "Light from a stellar body will shower down upon a group of enemies. Everyone caught in the shower of light will become exhausted as the light sucks energy through their skin."
 
@@ -25,4 +25,8 @@
 #scalerate 3
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of strange light"
+
 #end

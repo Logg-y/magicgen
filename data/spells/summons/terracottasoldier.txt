@@ -15,7 +15,7 @@
 #secondarypaths 8
 
 #skipchance 97
-#scalefatiguemult 10
+--#scalefatiguemult 10
 
 #name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."

@@ -1,123 +1,185 @@
-#newsecondary "Petrification"
+#newsecondary "Petrify nondamaging mrne"
 
 -- evo only
 #spelltype 2
-
--- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
-#offensiveeffect 1
-
-#paths 8
-#power 0
-
--- not ritual
-#req spelltype !& 4
-#req effect != 99
-
-#nextspell "Minor Petrification"
-
-#descr "Residual energy from this spell turns creatures in the affected area to stone."
-
-#end
-
-#newsecondary "Greater Petrification"
-
--- evo only
-#spelltype 2
-
--- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
-#offensiveeffect 1
 
 #paths 8
 #power -1
 
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
 -- not ritual
 #req spelltype !& 4
 #req effect != 99
 
-#nextspell "Greater Petrification"
+#nameprefix "Stonetouch"
+#fatiguepersquare 4
 
-#descr "Residual energy from this spell turns creatures in the affected area to stone."
+
+#nextspell "Petrify Secondary mrne"
+
+#descr "This spell is imbued with strange energy that may petrify those affected."
+#details "Affected creatures make an easy MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
 
 #end
 
-
-#newsecondary "Petrification Damaging"
+#newsecondary "Petrify nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
+#paths 8
+#power -2
+
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#nameprefix "Petrifying"
+#fatiguepersquare 7
+
+
+#nextspell "Petrify Secondary mrn"
+
+#descr "This spell is imbued with strange energy that may petrify those affected."
+#details "Affected creatures make an MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#end
+
+
+#newsecondary "Petrify damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 #req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Stonetouch"
+#fatiguepersquare 3
+
+#nextspell "Petrify Secondary mrne damaging"
+
+#descr "This spell is imbued with strange energy that may petrify those it wounds."
+#details "Wounded creatures make an easy MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#end
+
+#newsecondary "Petrify mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 99
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Petrifying"
+#fatiguepersquare 6
+
+#nextspell "Petrify Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may petrify those it wounds."
+#details "Wounded creatures make an MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+
+#end
+
+#newsecondary "Petrify holy only"
+
+-- evo only
+#spelltype 2
 
 #paths 8
 #power 0
 
--- not ritual
-#req spelltype !& 4
-#req effect != 99
 
-#nextspell "Minor Petrification"
-
-#descr "Residual energy from this spell turns creatures in the affected area to stone."
-
-#end
-
-#newsecondary "Greater Petrification damaging"
-
--- evo only
-#spelltype 2
-
--- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
--- okay for holy
-
-#paths 8
-#power -1
-
--- not ritual
-#req spelltype !& 4
-#req effect != 99
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
-
-#nextspell "Greater Petrification"
-
-#descr "Residual energy from this spell turns creatures in the affected area to stone."
-
-#end
-
-#newsecondary "Smite petrification"
-
--- evo only
-#spelltype 2
-
--- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe == 0
+-- holy okay
 #req paths == 256
 
-#paths 8
-#power -1
-
 -- not ritual
 #req spelltype !& 4
 #req effect != 99
 
-#nextspell "Smite Petrification"
 
-#descr "Residual energy from this spell turns creatures in the affected area to stone."
+#nameprefix "Petrifying"
+#fatiguepersquare 6
+
+#nextspell "Petrify Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may petrify those it wounds."
+#details "Wounded creatures make an MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
 
 #end

@@ -3,11 +3,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.4
 
 #unitmod "Summon Sleeptouchweapon"
 #descr "Anyone wounded by attacks from the summoned %creature% becomes suddenly fatigued. This is a magical effect and may be resisted."

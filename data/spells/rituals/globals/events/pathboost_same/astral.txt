@@ -12,7 +12,7 @@
 #req_domchance 1
 #req_rare 40
 #req_targpath1 4
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A mage has suddenly gained deeper knowledge of astral power!"
 #pathboost 4

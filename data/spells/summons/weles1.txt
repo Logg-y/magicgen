@@ -2,7 +2,7 @@
 #effect 1
 #damage 413
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
 #precision -2
 #nreff 1
@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 1."
 #name 4 "Summon NAMEPREFIX Tiny Water %Elemental%"
@@ -29,7 +29,7 @@
 #effect 10001
 #damage 413
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
 #nreff 3001
 #pathlevel 3
@@ -39,7 +39,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 1."
 #name 4 "Summon NAMEPREFIX Tiny Water Elementals"

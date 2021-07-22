@@ -10,8 +10,8 @@
 #scalerate 0.75
 
 #aoe 0
-#power -2
-#maxpower 5
+#power -1
+#maxpower 6
 #pathlevel 1
 #explspr 10224
 #sound 31
@@ -23,17 +23,17 @@
 
 #details "Air shield: 80% of projectiles are blocked. Only affects projectiles with an AoE of one person and that do not ignore shields."
 
-#namecond effectiveaoe <= 1 2 "air $shield$"
-#namecond effectiveaoe <= 1 2 "missile $shield$"
-#namecond effectiveaoe <= 1 128 "protection from missiles"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX air $shield$"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX missile $shield$"
+#namecond effectiveaoe <= 1 128 "NAMEPREFIX protection from missiles"
 
-#namecond2 1 < effectiveaoe < 66 2 "group air $shield$"
-#namecond2 1 < effectiveaoe < 66 2 "group missile $shield$"
-#namecond2 1 < effectiveaoe < 66 128 "group protection from missiles"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX group air $shield$"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX group missile $shield$"
+#namecond2 1 < effectiveaoe < 66 128 "NAMEPREFIX group protection from missiles"
 
-#namecond effectiveaoe == 666 2 "mass air $shield$"
-#namecond effectiveaoe == 666 2 "mass missile $shield$"
-#namecond effectiveaoe == 666 128 "mass protection from missiles"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass air $shield$"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass missile $shield$"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass protection from missiles"
 
 #descr 2 "The air around SUBJECT swirls, providing protection from some missiles."
 #descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from missiles."
@@ -53,8 +53,8 @@
 #scalerate 0.75
 
 #aoe 666
-#power 6
-#maxpower 6
+#power 7
+#maxpower 7
 #pathlevel 3
 #explspr 10224
 #sound 31
@@ -66,20 +66,26 @@
 
 #details "Air shield: 80% of projectiles are blocked. Only affects projectiles with an AoE of one person and that do not ignore shields."
 
-#namecond effectiveaoe <= 1 2 "air $shield$"
-#namecond effectiveaoe <= 1 2 "missile $shield$"
-#namecond effectiveaoe <= 1 128 "protection from missiles"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX air $shield$"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX missile $shield$"
+#namecond effectiveaoe <= 1 128 "NAMEPREFIX protection from missiles"
 
-#namecond2 1 < effectiveaoe < 66 2 "group air $shield$"
-#namecond2 1 < effectiveaoe < 66 2 "group missile $shield$"
-#namecond2 1 < effectiveaoe < 66 128 "group protection from missiles"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX group air $shield$"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX group missile $shield$"
+#namecond2 1 < effectiveaoe < 66 128 "NAMEPREFIX group protection from missiles"
 
-#namecond effectiveaoe == 666 2 "mass air $shield$"
-#namecond effectiveaoe == 666 2 "mass missile $shield$"
-#namecond effectiveaoe == 666 128 "mass protection from missiles"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass air $shield$"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass missile $shield$"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass protection from missiles"
 
 #descr 2 "The air around SUBJECT swirls, providing protection from some missiles."
 #descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from missiles."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of missile warding"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of missile shielding"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of missile warding"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of missile shielding"
 
 #end
 

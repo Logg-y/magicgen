@@ -10,11 +10,11 @@
 #fatiguecost 50
 #sound 31
 #schools 1
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX Cave %Grub%"
 #descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
@@ -39,7 +39,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX Cave %Grub%"
 #descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."

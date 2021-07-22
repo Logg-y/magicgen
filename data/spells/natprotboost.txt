@@ -25,11 +25,15 @@
 
 #details "Grants +5 natural protection to animals, applied before any other protection affecting buffs."
 
-#namecond effectiveaoe < 2 64 "Thickened Hide"
-#namecond2 2 <= effectiveaoe < 666 64 "Sturdy Hides"
-#namecond effectiveaoe == 666 64 "Thickened Horde"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Thickened Hide"
+#namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Sturdy Hides"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Thickened Horde"
 
 #descr 64 "The hides of animals in a SIZE area become thicker. This makes them more resilient to most types of damage."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of thickened hides"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of sturdy hides"
 
 #end
 
@@ -61,9 +65,9 @@
 
 #details "Grants +5 natural protection to animals, applied before any other protection affecting buffs."
 
-#namecond effectiveaoe < 2 64 "Thickened Hide"
-#namecond2 2 <= effectiveaoe < 666 64 "Sturdy Hides"
-#namecond effectiveaoe == 666 64 "Thickened Horde"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Thickened Hide"
+#namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Sturdy Hides"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Thickened Horde"
 
 #descr 64 "The hides of animals in a SIZE area become thicker. This makes them more resilient to most types of damage."
 
@@ -97,11 +101,15 @@
 
 #details "Grants +5 natural protection to undead, applied before any other protection affecting buffs."
 
-#namecond effectiveaoe < 2 32 "Strengthen Bones"
-#namecond2 2 <= effectiveaoe < 666 32 "Sturdy Bones"
-#namecond effectiveaoe == 666 32 "Reinforced Bone Horde"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Strengthen Bones"
+#namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Sturdy Bones"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Reinforced Bone Horde"
 
 #descr 32 "The bones or hides of undead in a SIZE area become thicker. This makes them more resilient to most types of damage."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of strengthened bones"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of sturdy bones"
 
 #end
 
@@ -134,9 +142,9 @@
 
 #details "Grants +5 natural protection to undead, applied before any other protection affecting buffs."
 
-#namecond effectiveaoe < 2 32 "Strengthen Bones"
-#namecond2 2 <= effectiveaoe < 666 32 "Sturdy Bones"
-#namecond effectiveaoe == 666 32 "Reinforced Bone Horde"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Strengthen Bones"
+#namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Sturdy Bones"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Reinforced Bone Horde"
 
 #descr 32 "The bones or hides of undead in a SIZE area become thicker. This makes them more resilient to most types of damage."
 

@@ -1,54 +1,182 @@
-#newsecondary "Slime"
+#newsecondary "Slime nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 4
-#power 0
+#power -1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 134217728
 
+#nameprefix "Sticky"
+#fatiguepersquare 4
 
-#nextspell "Slime Secondary"
 
-#descr "Residual energy from this spell coats those in the affected area in a slimy substance which slows their movement."
+#nextspell "Slime Secondary mrne"
+
+#descr "This spell is imbued with strange energy that may cover those affected in a sticky slime."
+#details "Affected creatures make an easy MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #end
 
-
-#newsecondary "Slime damaging"
+#newsecondary "Slime nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 4
-#power 0
+#power -2
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 134217728
+
+#nameprefix "Slimy"
+#fatiguepersquare 7
+
+
+#nextspell "Slime Secondary mrn"
+
+#descr "This spell is imbued with strange energy that may cover those affected in a sticky slime."
+#details "Affected creatures make an MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+#end
+
+
+#newsecondary "Slime damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 134217728
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Sticky"
+#fatiguepersquare 3
+
+#nextspell "Slime Secondary mrne damaging"
+
+#descr "This spell is imbued with strange energy that may cover those it wounds in a sticky slime."
+#details "Wounded creatures make an easy MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+#end
+
+#newsecondary "Slime mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
 -- holy okay
 
+#req nonscalingdamage < 40
+
 -- not ritual
 #req spelltype !& 4
 #req damage != 134217728
 
+-- not on damage already
+#ondamage 1
 
-#nextspell "Slime Secondary"
+#nameprefix "Slimy"
+#fatiguepersquare 6
 
-#descr "Residual energy from this spell coats those in the affected area in a slimy substance which slows their movement."
+#nextspell "Slime Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may cover those it wounds in a sticky slime."
+#details "Wounded creatures make an MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
 
 #end
 
+#newsecondary "Slime holy only"
 
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+#req paths == 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 134217728
+
+#nameprefix "Slimy"
+#fatiguepersquare 6
+
+#nextspell "Slime Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may cover those it wounds in a sticky slime."
+#details "Wounded creatures make an MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+
+#end

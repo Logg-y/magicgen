@@ -1,26 +1,4 @@
-#newsecondary "Paralysis"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power 0
-
--- not ritual
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
-#offensiveeffect 1
-
-#nextspell "Minor Paralysis"
-
-#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
-
-#end
-
-#newsecondary "Greater Paralysis"
+#newsecondary "Paralysis nondamaging mrne"
 
 -- evo only
 #spelltype 2
@@ -28,76 +6,141 @@
 #paths 16
 #power -1
 
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
 -- not ritual
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#req spelltype !& 4
 
-#nextspell "Greater Paralysis"
+#nameprefix "Halting"
+#fatiguepersquare 4
 
-#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+#req effect != 66
+
+
+#nextspell "Paralysis Secondary mrne"
+
+#descr "This spell is imbued with strange energy that may paralyse those affected."
 
 #end
 
-
-#newsecondary "Paralysis damaging"
+#newsecondary "Paralysis nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 16
-#power 0
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
 
 -- not ritual
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#req spelltype !& 4
+#req effect != 66
+
+#nameprefix "Paralysing"
+#fatiguepersquare 7
+
+
+#nextspell "Paralysis Secondary mrn"
+
+#descr "This spell is imbued with strange energy that may paralyse those affected."
+
+#end
+
+
+#newsecondary "Paralysis damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 #req paths != 256
-#offensiveeffect 1
 
-#nextspell "Minor Paralysis"
+-- not ritual
+#req spelltype !& 4
+#req effect != 66
 
-#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Halting"
+#fatiguepersquare 3
+
+#nextspell "Paralysis Secondary mrne damaging"
+
+#descr "This spell is imbued with strange energy that may paralyse those this spell wounds."
 
 #end
 
-#newsecondary "Greater Paralysis damaging"
+#newsecondary "Paralysis mrn damaging"
 
 -- evo only
 #spelltype 2
 
 #paths 16
-#power -1
+#power -2
 
--- not ritual
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
--- holy ok
+-- holy okay
 
-#nextspell "Greater Paralysis"
-
-#descr "Residual energy from this spell strikes the minds of those in the area, causing paralysis if not resisted."
-
-#end
-
-#newsecondary "Greater Paralysis smite"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power -1
+#req nonscalingdamage < 40
 
 -- not ritual
-#req nonscalingdamage < 15
-#req nonscalingaoe == 0
-#req paths == 256
--- holy ok
+#req spelltype !& 4
+#req effect != 66
 
-#nextspell "Greater Paralysis Smite"
+-- not on damage already
+#ondamage 1
 
-#descr "Residual energy from this spell strikes the minds of those affected, causing paralysis if not resisted."
+#nameprefix "Paralysing"
+#fatiguepersquare 6
+
+#nextspell "Paralysis Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may paralyse those this spell wounds."
+
 
 #end

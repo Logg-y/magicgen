@@ -22,7 +22,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster summons forth ARTICLE massive illearth %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
-#scalefatiguemult 160
+#scalefatiguemult 40
 
 #scalerate 1
 #end
@@ -64,8 +64,8 @@
 #power 8
 #maxpower 8
 #nreff 1
-#pathlevel 5
-#fatiguecost 2000
+#pathlevel 6
+#fatiguecost 3300
 #schools 1
 #skipchance 99
 

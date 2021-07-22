@@ -68,6 +68,14 @@ class Spell(object):
         print(f"fatiguecost {self.fatiguecost}")
         print("\n" * 3)
 
+    def multiplyAISpellMod(self, mult):
+        "Multiply the AI casting priority by the given multiplier, taking into account existing modifiers."
+        print(f"multiply AI spell mod: mult is {mult}; old mod was {self.aispellmod}")
+        currentAIModMultiplicative = (self.aispellmod + 100) / 100
+        newAIMod = 100 * ((currentAIModMultiplicative * mult) - 1)
+        self.aispellmod = int(max(-100, min(1000, newAIMod)))
+        print(f"New spell mod is {self.aispellmod}")
+
     def output(self):
         if self.hasgenerated:
             return ""

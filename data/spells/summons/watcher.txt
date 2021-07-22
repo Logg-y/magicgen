@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalerate 1
-#scalefatiguemult 100
+#scalefatiguemult 20
 #end
 
 #neweffect "watcher ritual"

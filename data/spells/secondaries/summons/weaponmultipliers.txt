@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3
+#mult fatiguecost 2
 
 #unitmod "Summon DmgVsUndead"
 #descr "The weapons used by the summoned %creature% are imbued with holy power and are especially effective against undead or demonic beings."
@@ -39,7 +39,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.5
+#mult fatiguecost 1.8
 
 #unitmod "Summon DmgVsDemonsOnly"
 #descr "The weapons used by the summoned %creature% are imbued with holy power and are especially effective against demonic beings."

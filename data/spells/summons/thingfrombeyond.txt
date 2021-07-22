@@ -23,7 +23,7 @@
 
 #spelltype 528
 
-#scalefatiguemult 20
+#scalefatiguemult 5
 
 #scalerate 1
 #end

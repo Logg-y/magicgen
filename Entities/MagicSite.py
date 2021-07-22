@@ -44,6 +44,7 @@ class MagicSite(object):
         self.makebattledummymonster = 0
         self.dummymonsternames = {}
         self.desiredmontagsize = -1
+        self.unitmodlist = None
         self.names = {}
 
         self.selectunitmod = None
@@ -120,7 +121,7 @@ class MagicSite(object):
                     print(f"ERROR: {self.name} with paths {spell.path1} and {spell.path2} found no valid unit summon")
                     return None
 
-                if len(self.allowedunitmods) > 0 and unittouse is not None:
+                if (self.unitmodlist is not None or len(self.allowedunitmods) > 0) and unittouse is not None:
                     # If rollSpell enforces a secondary effect (unlikely), use that
                     if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
                         realunitmod = utils.unitmods[secondaryeffect.unitmod]
@@ -140,6 +141,8 @@ class MagicSite(object):
                         else:
                             # shallow copy
                             unitmodlist = self.allowedunitmods[:]
+                            if self.unitmodlist is not None:
+                                unitmodlist += utils.unitmodlists[self.unitmodlist]
                             random.shuffle(unitmodlist)
                             bad = False
                             while 1:

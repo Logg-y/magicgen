@@ -6,7 +6,7 @@
 #rarity 5
 #nation -2
 #req_friendlyench ENCHANTID
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "+order from theft"
@@ -18,7 +18,7 @@
 #nation -2
 #req_ench ENCHANTID
 #req_hostileench ENCHANTID
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "Order stolen"

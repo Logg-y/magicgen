@@ -71,7 +71,7 @@
 -- #name 8 "Transformations of Earth"
 -- #name 16 "Otherworldly Transformations"
 -- #name 32 "Deathly Transformations"
--- #name 64 "Gaia's Commanders"
+-- #name 64 "Gaia's Transformations"
 -- #name 128 "Infernal Transformations"
 -- #descr 1 "This enchantment causes fiery power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."
 -- #descr 2 "This enchantment causes thunderous power to randomly affect searching mages in the caster's lands, causing them to transform into random magical creatures. The creatures may be magically altered and somewhat different to their usual states."

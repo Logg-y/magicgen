@@ -23,7 +23,7 @@
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16
-#scalefatiguemult 30
+--#scalefatiguemult 30
 #skipchance 97
 #end
 

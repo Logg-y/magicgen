@@ -23,7 +23,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Reinvigoration"
+#name 128 "NAMEPREFIX Reinvigoration"
 #descr 128 "$BLOOD_INTRO$, the mage will remove all of his fatigue."
 
 #end
@@ -53,20 +53,21 @@
 #scalefatigueexponent 1
 #scalefatiguemult -10
 
-#aispellmod -60
+#aispellmod -30
 
 
 #paths 75
 #secondarypaths 0
 
-#name 1 "Fiery Renewal"
-#name 2 "Renewing Wind"
-#name 8 "Earthen Restoration"
-#name 64 "Natural Restoration"
+#name 1 "NAMEPREFIX Fiery Renewal"
+#name 2 "NAMEPREFIX Renewing Wind"
+#name 8 "NAMEPREFIX Earthen Restoration"
+#name 64 "NAMEPREFIX Natural Restoration"
 #descr 1 "Through mental focus upon flames, the caster is able to remove some of his fatigue. This process takes some time, however."
 #descr 2 "Through the comforting blow of gentle winds, the caster is able to remove some of his fatigue. This process takes some time, however."
 #descr 8 "Through the comforting touch of the earth below, the caster is able to remove some of his fatigue. This process takes some time, however."
 #descr 64 "Through the wondrous touch of surrounding life, the caster is able to remove some of his fatigue. This process takes some time, however."
+#details "This spell recovers EFFECTIVEDAMAGE fatigue."
 
 #end
 
@@ -97,7 +98,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Reinvigoration"
+#name 128 "NAMEPREFIX Reinvigoration"
 #descr 128 "$BLOOD_INTRO$, the caster removes all fatigue of SUBJECT around him."
 
 #end
@@ -129,7 +130,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Reinvigoration"
+#name 128 "NAMEPREFIX Mist of Reinvigoration"
 #descr 128 "$BLOOD_INTRO$, the mage will gain a massive surge of reinvigoration, preventing him from being fatigued for a short time."
 
 #end

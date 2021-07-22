@@ -8,21 +8,21 @@
 #precision 1
 #range 40
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 15
 #explspr 10108
 #flightspr 10068
 #sound 21
 
--- #paths 1+2+4+16+64+128
+-- #paths 4+32+128
 #paths 164
 #secondarypaths 4
 
-#name 1 "$chilling$ %bolt%"
-#name 2 "$chilling$ %bolt%"
-#name 4 "$chilling$ %bolt%"
-#name 16 "$chilling$ %bolt%"
-#name 32 "$chilling$ %bolt%"
-#name 128 "$chilling$ %bolt%"
+#name 1 "NAMEPREFIX $chilling$ %bolt%"
+#name 2 "NAMEPREFIX $chilling$ %bolt%"
+#name 4 "NAMEPREFIX $chilling$ %bolt%"
+#name 16 "NAMEPREFIX $chilling$ %bolt%"
+#name 32 "NAMEPREFIX $chilling$ %bolt%"
+#name 128 "NAMEPREFIX $chilling$ %bolt%"
 #descr 1 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
 #descr 2 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
 #descr 4 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
@@ -36,6 +36,14 @@
 #scalerate 1
 #pathlevel 2
 #schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Touch of Cold"
+#namecond range < 10 32 "NAMEPREFIX Touch of Cold"
+#namecond range < 10 128 "NAMEPREFIX Touch of Cold"
+#descrcond range < 10 4 "The caster's touch radiates chilling bolts that harm those close to the caster."
+#descrcond range < 10 32 "The caster's touch radiates the chill of the grave, producing bolts that harm those close to the caster."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the chill of Kokytos, producing bolts that harm those close to the caster."
 #end
 
 
@@ -49,19 +57,20 @@
 #precision 1
 #range 30
 #pathlevel 2
-#fatiguecost 30
-#explspr 10008
+#fatiguecost 20
+#explspr 10145
 #sound 21
 
 #paths 164
 #secondarypaths 4
 
-#name 1 "Falling $frost$"
-#name 2 "Falling $frost$"
-#name 4 "Falling $frost$"
-#name 16 "Falling $frost$"
-#name 32 "Deathly $frost$"
-#name 128 "Falling $frost$"
+#name 1 "NAMEPREFIX Falling $frost$"
+#name 2 "NAMEPREFIX Falling $frost$"
+#name 4 "NAMEPREFIX Falling $frost$"
+#name 16 "NAMEPREFIX Falling $frost$"
+#name 32 "NAMEPREFIX Deathly $frost$"
+#name 128 "NAMEPREFIX Falling $frost$"
+
 #descr 1 "Heat is drawn out of the air above the targets, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 2 "Heat is drawn out of the air above the targets, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 4 "Heat is drawn out of the air above the targets, causing a rapid chill. This results in damaging creatures in a SIZE area."
@@ -74,6 +83,14 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Cold Burst"
+#namecond range < 10 32 "NAMEPREFIX Cold Burst"
+#namecond range < 10 128 "NAMEPREFIX Cold Burst"
+#descrcond range < 10 4 "The caster unleashes a burst of cold, harming those around him."
+#descrcond range < 10 32 "The caster unleashes the chill of the grave, chilling and harming those around him."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster unleashes the chill of Kokytos, chilling and harming those around him."
 #end
 
 #neweffect "Deep Freeze"
@@ -86,7 +103,7 @@
 #precision 3
 #range 40
 #pathlevel 2
-#fatiguecost 30
+#fatiguecost 20
 --#explspr 10054
 #explspr 10134
 #sound 21
@@ -94,7 +111,7 @@
 #paths 4
 #secondarypaths 4
 
-#name 4 "Deep Freeze"
+#name 4 "NAMEPREFIX Deep Freeze"
 #descr 4 "The caster attempts to freeze all creatures in a SIZE area completely solid. Armour will reduce the harming effect, as well as potentially negate any lingering chill. Magic resistance may prevent victims from being completely frozen and becoming unable to move."
 #details "Inflicts damage. Those taking damage from this initial effect suffer from Numbness, and additionally must make an easy MR roll. Those that fail make a check of 5 + DRN vs cold res + DRN. If the defender loses this roll, they become petrified for 2250-4500 ticks; becoming immobilised, having their defence skill set to 0, their natural protection increased to 20 and gaining Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Inanimate or stone beings cannot be petrified this way, though they may still be harmed by the other components of the spell."
 
@@ -104,6 +121,11 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Freezing Touch"
+#descrcond range < 10 4 "The caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
+
 #end
 
 #neweffect "Deep Freeze Numbness"
@@ -164,12 +186,12 @@
 #paths 164
 #secondarypaths 4
 
-#name 1 "Falling $frost$"
-#name 2 "Falling $frost$"
-#name 4 "Falling $frost$"
-#name 16 "Falling $frost$"
-#name 32 "Deathly $frost$"
-#name 128 "Falling $frost$"
+#name 1 "NAMEPREFIX Falling $frost$"
+#name 2 "NAMEPREFIX Falling $frost$"
+#name 4 "NAMEPREFIX Falling $frost$"
+#name 16 "NAMEPREFIX Falling $frost$"
+#name 32 "NAMEPREFIX Deathly $frost$"
+#name 128 "NAMEPREFIX Falling $frost$"
 #descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
@@ -203,12 +225,12 @@
 #paths 164
 #secondarypaths 4
 
-#name 1 "Falling $frost$"
-#name 2 "Falling $frost$"
-#name 4 "Falling $frost$"
-#name 16 "Falling $frost$"
-#name 32 "Deathly $frost$"
-#name 128 "Falling $frost$"
+#name 1 "NAMEPREFIX Falling $frost$"
+#name 2 "NAMEPREFIX Falling $frost$"
+#name 4 "NAMEPREFIX Falling $frost$"
+#name 16 "NAMEPREFIX Falling $frost$"
+#name 32 "NAMEPREFIX Deathly $frost$"
+#name 128 "NAMEPREFIX Falling $frost$"
 #descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
@@ -242,12 +264,12 @@
 #paths 164
 #secondarypaths 4
 
-#name 1 "Falling $frost$"
-#name 2 "Falling $frost$"
-#name 4 "Falling $frost$"
-#name 16 "Falling $frost$"
-#name 32 "Deathly $frost$"
-#name 128 "Falling $frost$"
+#name 1 "NAMEPREFIX Falling $frost$"
+#name 2 "NAMEPREFIX Falling $frost$"
+#name 4 "NAMEPREFIX Falling $frost$"
+#name 16 "NAMEPREFIX Falling $frost$"
+#name 32 "NAMEPREFIX Deathly $frost$"
+#name 128 "NAMEPREFIX Falling $frost$"
 #descr 1 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 2 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 4 "Heat is drawn out of the air above the battlefield, causing a rapid chill. This results in damaging creatures in a SIZE area."
@@ -262,4 +284,37 @@
 -- #scalecost 0.3
 #schools 4
 #end
+
+#neweffect "Cold Evo Rain"
+#copyspell "Gifts from Heaven"
+#effect 2
+#damage 2009
+#spec 576
+#aoe 1
+#power 8
+#maxpower 17
+#precision -10
+#range 40
+#pathlevel 5
+#fatiguecost 100
+#explspr 10108
+#flightspr 10068
+#sound 21
+#nreff 35
+
+-- #paths 4+32+128
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Rain of Ice"
+#descr 4 "%$ball$% of ice are rained down upon the enemy army. This spell will be able to devastate an unprotected army. Unlucky victims may be struck more than once."
+
+#spelltype 18
+
+#scalerate 3
+#schools 4
+
+
+#end
+
 

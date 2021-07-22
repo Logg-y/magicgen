@@ -18,7 +18,7 @@
 
 #name 4 "Summon NAMEPREFIX Green %Lion%"
 #descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
-#scalefatiguemult 80
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1

@@ -1,0 +1,55 @@
+#newsecondary "Heal Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 13	    -- heal
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Healing"
+#fatiguepersquare 1
+
+
+#nextspell "Heal Secondary mrn"
+
+#descr "This spell may also heal those it affects."
+
+#end
+
+#newsecondary "Heal Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 13	    -- heal
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Restorative"
+#fatiguepersquare 0.5
+
+
+#nextspell "Heal Secondary mrne"
+
+#descr "This spell may also heal those it affects."
+
+#end

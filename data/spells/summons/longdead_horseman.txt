@@ -21,7 +21,7 @@
 
 #spelltype 528
 
-#scalefatiguemult 5
+--#scalefatiguemult 5
 
 #scalerate 0.7
 #end

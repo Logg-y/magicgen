@@ -24,15 +24,19 @@
 #paths 160
 #secondarypaths 32
 
-#namecond effectiveaoe < 1 32 "Soul Vortex"
-#namecond effectiveaoe < 1 128 "Vampiric Aura"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Soul Vortex"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Vampiric Aura"
 
-#namecond effectiveaoe >= 1 32 "Soul Vortex"
-#namecond effectiveaoe >= 1 128 "Vampiric Aura"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Soul Vortex"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Vampiric Aura"
 
 #descr 32 "SUBJECT begins to suck in the souls of nearby living creatures, healing and reinvigorating PRONOUN."
 #descr 128 "$BLOOD_INTRO$, SUBJECT is granted a vampiric aura that sucks in the souls of nearby living creatures. The stolen energy is used to heal and reinvigorate PRONOUN."
 #details "The generated aura strength is 8: this gives a 1/3 chance to generate a pulse every 320 ticks (or 23.4375 times per round). Pulses target random adjacent squares (including diagonals) and force all those in the square to make a magic resistance check or suffer 1 AN life stealing. Inanimate units are immune to this effect."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of soul leeching"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of the vampire"
 
 #end
 

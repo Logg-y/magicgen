@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1.1
-#scalefatiguemult 15
+--#scalefatiguemult 15
 #end
 
 #neweffect "imp ritual"
@@ -39,15 +39,15 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Summon NAMEPREFIX Imps"
+#name 128 "Bind NAMEPREFIX Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons several imps from Inferno to aid him in battle."
 
 #spelltype 20
 
 #skipchance 82
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 100
+#scalefatigueexponent -1.6
+#scalefatiguemult 80
 
 #scalerate 2
 #end

@@ -16,7 +16,7 @@
 
 #skipchance 30
 
-#scalefatiguemult 80
+#scalefatiguemult 25
 
 #details "The elementals are size 6."
 #name 1 "Summon NAMEPREFIX Massive Fire %Elemental%"
@@ -64,7 +64,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 5
-#fatiguecost 1000
+#fatiguecost 1500
 #schools 1
 #skipchance 99
 #nogeodst 2052

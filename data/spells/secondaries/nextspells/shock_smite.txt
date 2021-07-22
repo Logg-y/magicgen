@@ -1,0 +1,33 @@
+#neweffect "Shock Smite"
+#effect 2
+#damage 3
+#spec 8407168
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end

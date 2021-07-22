@@ -24,12 +24,16 @@
 #paths 32
 #secondarypaths 32
 
-#namecond effectiveaoe == 1 32 "Frighten"
+#namecond effectiveaoe == 1 32 "NAMEPREFIX Frighten"
 
-#namecond2 1 < effectiveaoe < 30 32 "Panic"
-#namecond effectiveaoe > 30 32 "Wave of Dread"
+#namecond2 1 < effectiveaoe < 30 32 "NAMEPREFIX Panic"
+#namecond effectiveaoe > 30 32 "NAMEPREFIX Wave of Dread"
 
 #descr 32 "SUBJECT is filled with a dark fear. This may cause PRONOUN to flee in terror."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of fear"
+#namecond range < 10 32 "NAMEPREFIX touch of fear"
 
 #end
 

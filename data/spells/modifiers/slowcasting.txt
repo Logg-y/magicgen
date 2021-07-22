@@ -21,7 +21,7 @@
 #spelltype 0
 
 #power 1
-#skipchance 50
+#skipchance 70
 
 #aispellmod -50
 
@@ -46,7 +46,7 @@
 #aispellmod -50
 
 #power 1
-#skipchance 50
+#skipchance 70
 
 #mult casttime 2.0
 -- not ritual

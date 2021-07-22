@@ -1,0 +1,56 @@
+#newsecondary "Mistform Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 6
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 65536
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Misty"
+#fatiguepersquare 4
+
+
+#nextspell "Mistform Secondary mrn"
+
+#descr "This spell may also transform the body of those it affects into a fine mist."
+#details "Affected creatures make an MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+
+#end
+
+#newsecondary "Mistform Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 6
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 65536
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Foggy"
+#fatiguepersquare 2
+
+
+#nextspell "Mistform Secondary mrne"
+
+#descr "This spell may also transform the body of those it affects into a fine mist."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+#end

@@ -19,7 +19,7 @@
 #descr 64 "The caster summons ARTICLE %spirit% out of nearby trees. Woodland spirits are stunningly beautiful ethereal beings that regenerate wounds at an incredible rate."
 
 #spelltype 528
-#scalefatiguemult 15
+--#scalefatiguemult 15
 #scalerate 0.85
 -- #scalecost 1.0
 #schools 16

@@ -55,19 +55,21 @@
 #schools 32
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 0
 
 #scalerate 1
 -- #scalecost 10
 
 #aoe 1
-#power 6
+#power 8
 #pathlevel 4
-#maxpower 6
+#maxpower 8
 #explspr 10242
 #sound 31
 #range 0
 #fatiguecost 200
+
+#secondaryeffectskipchance 100
 
 
 
@@ -136,20 +138,21 @@
 #schools 32
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 0
 
 #scalerate 1
 -- #scalecost 10
 
 #aoe 1
-#power 6
+#power 8
 #pathlevel 4
-#maxpower 6
+#maxpower 8
 #explspr 10303
 #sound 31
 #range 0
 #fatiguecost 200
 
+#secondaryeffectskipchance 100
 
 
 
@@ -216,21 +219,21 @@
 #schools 32
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 0
 
 #scalerate 1
 -- #scalecost 10
 
 #aoe 1
-#power 6
+#power 8
 #pathlevel 4
-#maxpower 6
+#maxpower 8
 #explspr 10241
 #sound 31
 #range 0
 #fatiguecost 200
 
-
+#secondaryeffectskipchance 100
 
 
 #paths 2
@@ -298,21 +301,21 @@
 #schools 32
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 0
 
 #scalerate 1
 -- #scalecost 10
 
 #aoe 1
-#power 6
+#power 8
 #pathlevel 4
-#maxpower 6
+#maxpower 8
 #explspr 10312
 #sound 31
 #range 0
 #fatiguecost 200
 
-
+#secondaryeffectskipchance 100
 
 
 #paths 8

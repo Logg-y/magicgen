@@ -13,8 +13,8 @@
 
 #paths 2 
 #secondarypaths 2 
-#scalefatiguemult 40
-#skipchance 97
+#scalefatiguemult 10
+#skipchance 50
 
 #details "The elementals are size 4."
 #name 2 "Summon NAMEPREFIX Large Air %Elemental%"
@@ -39,7 +39,7 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 4."
 #name 2 "Summon NAMEPREFIX Large Air Elementals"
@@ -61,8 +61,8 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 700
+#pathlevel 4
+#fatiguecost 1100
 #schools 1
 #skipchance 99
 #nogeodst 2052

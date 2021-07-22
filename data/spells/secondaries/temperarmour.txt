@@ -1,0 +1,57 @@
+#newsecondary "Temparmour Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 64
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Hardening"
+#fatiguepersquare 4
+
+
+#nextspell "Temparmour Secondary mrn"
+
+#descr "This spell may also harden the armour of those it affects."
+#details "Affected creatures make an MR check. Failing this check causes them to gain +3 protection to all armour pieces for the duration of the battle."
+
+#end
+
+#newsecondary "Temparmour Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 64
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Tempering"
+#fatiguepersquare 2
+
+
+#nextspell "Temparmour Secondary mrne"
+
+#descr "This spell may also harden the armour of those it affects."
+#details "Affected creatures make an easy MR check. Failing this check causes them to gain +3 protection to all armour pieces for the duration of the battle."
+
+#end

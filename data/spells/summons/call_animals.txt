@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1.8
-#scalefatiguemult 2
+--#scalefatiguemult 2
 #skipchance 90
 #end
 

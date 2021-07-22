@@ -25,11 +25,14 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe == 1 64 "Heal"
-#namecond effectiveaoe < 660 64 "Heal Area"
-#namecond effectiveaoe >= 660 64 "Heal Army"
+#namecond effectiveaoe == 1 64 "NAMEPREFIX Heal"
+#namecond effectiveaoe < 660 64 "NAMEPREFIX Heal Area"
+#namecond effectiveaoe >= 660 64 "NAMEPREFIX Heal Army"
 
 #descr 64 "The wounds of troops across a SIZE area are healed."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of healing"
 
 #end
 
@@ -62,8 +65,12 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Restore Undead"
+#name 32 "NAMEPREFIX Restore Undead"
 
 #descr 32 "The wounds of undead across a SIZE area are healed."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead restoration"
+
 
 #end

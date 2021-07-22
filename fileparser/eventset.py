@@ -10,8 +10,8 @@ from Services.utils import eventsets, eventmodulegroups
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
                         "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance",
-                        "setspelldamage", "effectnumberforunits", "makebattledummymonster"]
-secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails", "magicsite"]
+                        "setspelldamage", "effectnumberforunits", "makebattledummymonster", "fixedcreaturepower"]
+secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails", "magicsite", "unitmodlist"]
 secondary_params_float = []
 
 

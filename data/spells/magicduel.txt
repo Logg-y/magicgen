@@ -24,7 +24,7 @@
 #paths 16
 #secondarypaths 0
 
-#name 16 "Magic Duel"
+#name 16 "NAMEPREFIX Magic Duel"
 #descr 16 "By use of this spell, one Astral mage challenges another Astral mage to a mental duel. At most one of the mages can survive this duel. The most powerful Astral mage is also the most likely winner. This spell cannot be used by or against mindless beings and it can only be used against Astral mages."
 #details "Each mage rolls a d6 (not open ended) and adds his unmodified astral level. The winner lives and the loser dies, a tie results in both mages dying."
 

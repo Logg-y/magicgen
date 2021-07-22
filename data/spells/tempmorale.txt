@@ -26,16 +26,21 @@
 
 #details "Grants +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
 
-#namecond effectiveaoe <= 1 1 "Embolden Self"
-#namecond effectiveaoe <= 1 64 "Embolden Self"
+#namecond effectiveaoe <= 1 1 "NAMEPREFIX Embolden Self"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Embolden Self"
 
-#namecond2 1 < effectiveaoe < 66 1 "Instill Courage"
-#namecond2 1 < effectiveaoe < 66 64 "Remove Fear"
+#namecond2 1 < effectiveaoe < 66 1 "NAMEPREFIX Instill Courage"
+#namecond2 1 < effectiveaoe < 66 64 "NAMEPREFIX Remove Fear"
 
-#namecond effectiveaoe == 666 1 "Blazing Courage"
-#namecond effectiveaoe == 666 64 "Mass Courage"
+#namecond effectiveaoe == 666 1 "NAMEPREFIX Blazing Courage"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Mass Courage"
 
 #descr 1 "SUBJECT is briefly granted a warm comforting feeling which eases PRONOUN_POS nerves, raising PRONOUN_POS morale."
 #descr 64 "SUBJECT is briefly instilled with great courage, making PRONOUN less likely to flee the battlefield."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of courage"
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of courage"
+
 
 #end

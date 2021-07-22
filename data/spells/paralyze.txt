@@ -23,13 +23,17 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Paralyze"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Paralyze"
 
-#namecond2 1 < effectiveaoe < 25 16 "Paralyze Foes"
-#namecond2 26 < effectiveaoe < 600 16 "Paralyze Squad"
+#namecond2 1 < effectiveaoe < 25 16 "NAMEPREFIX Paralyze Foes"
+#namecond2 26 < effectiveaoe < 600 16 "NAMEPREFIX Paralyze Squad"
 
 #descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a long time."
 #details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of paralysis"
+#namecond range < 10 16 "NAMEPREFIX touch of paralysis"
 
 #end
 
@@ -58,13 +62,17 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Halt"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Halt"
 
-#namecond2 1 < effectiveaoe < 25 16 "Halt Foes"
-#namecond2 26 < effectiveaoe < 600 16 "Halt Squad"
+#namecond2 1 < effectiveaoe < 25 16 "NAMEPREFIX Halt Foes"
+#namecond2 26 < effectiveaoe < 600 16 "NAMEPREFIX Halt Squad"
 
 #descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a short time."
 #details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of halting"
+#namecond range < 10 16 "NAMEPREFIX touch of halting"
 
 #end
 
@@ -93,7 +101,7 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Mass Paralysis"
+#name 16 "NAMEPREFIX Mass Paralysis"
 
 #descr 16 "The caster attempts to overload the minds of all living creatures on the battlefield, including himself. Those that fail to resist are paralysed for a long time."
 #details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."

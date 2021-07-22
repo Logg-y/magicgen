@@ -12,7 +12,7 @@
 #req_domchance 2
 #req_targorder 4
 #req_targgod 0
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "While reading a magical tome, a researcher suddenly gained divine powers!"
 #pathboost 8

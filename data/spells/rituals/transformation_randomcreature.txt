@@ -66,7 +66,7 @@
 #name 2 "Become Beast of Air"
 #name 4 "Become Beast of Waters"
 #name 8 "Become Beast of Earth"
-#name 16 "Become Otherworldly Creature"
+#name 16 "Become Otherworldly Beast"
 #name 32 "Become Deathly Creature"
 #name 64 "Become Creature of Nature"
 #descr 1 "The caster attempts to transform into a young magical creature of flames. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."

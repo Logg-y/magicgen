@@ -23,7 +23,7 @@
 
 #scalerate 1
 #scalefatigueexponent 0.1
-#scalefatiguemult 30
+--#scalefatiguemult 30
 #end
 
 #neweffect "sprite ritual"

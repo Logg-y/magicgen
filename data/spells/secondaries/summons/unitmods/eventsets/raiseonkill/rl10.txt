@@ -1,0 +1,15 @@
+#neweventset "Summon Raise Shape RL10"
+
+#selectunitmod "Summon Raise Shape Custom Selector"
+#desiredmontagsize 10
+#restrictunitstospellpaths 1
+
+#makedummymonster 0
+#fixedcreaturepower 1
+
+
+#mincreaturepower 10
+#maxcreaturepower 10
+
+#unitmodlist "Temporary Unit Summon"
+#end

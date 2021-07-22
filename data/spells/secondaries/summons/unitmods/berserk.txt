@@ -15,7 +15,7 @@
 #req mor < 50
 #req hp > 10
 #req immobile == -1
-#set berserk 7
+#set berserk 9
 #nameprefix "Furious"
 #descr "This particular CREATURE is particularly angry and may go berserk with little provocation."
 #end

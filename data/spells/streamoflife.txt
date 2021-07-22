@@ -15,8 +15,8 @@
 #paths 64
 #secondarypaths 64
 #secondarypathchance 0
-#name 64 "%Stream% of Life"
-#name 64 "Flood of Life"
+#name 64 "NAMEPREFIX %Stream% of Life"
+#name 64 "NAMEPREFIX Flood of Life"
 
 #descr 64 "The caster pours life into the bodies of his enemies in an attempt to overload the body systems of the targets. If targets fail to resist the spell, they will either die or become stronger, healed and overcome by berserker rage."
 #details "Anyone hit must make a MR check. Failure has a chance to kill the target given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
@@ -26,6 +26,10 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of overflowing life"
+
 #end
 
 #neweffect "Stream of Life Single"
@@ -46,8 +50,8 @@
 #secondarypaths 64
 #secondarypathchance 0
 #skipchance 33
-#name 64 "%Stream% of Life"
-#name 64 "Overwhelming Life"
+#name 64 "NAMEPREFIX %Stream% of Life"
+#name 64 "NAMEPREFIX Overwhelming Life"
 
 #descr 64 "The caster pours life into the bodies of his enemies in an attempt to overload the body systems of the targets. If targets fail to resist the spell, they will either die or become stronger, healed and overcome by berserker rage."
 #details "Anyone hit must make a MR check. Failure has a chance to kill the target given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
@@ -58,4 +62,9 @@
 #scalefatigueexponent -0.5
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of overflowing life"
+
+
 #end

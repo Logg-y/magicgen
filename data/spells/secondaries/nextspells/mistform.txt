@@ -1,0 +1,65 @@
+#neweffect "Mistform Secondary mrn"
+#effect 23
+#damage 65536
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10328
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Mist form"
+#name 2 "$Additional$ Mist form"
+#name 4 "$Additional$ Mist form"
+#name 8 "$Additional$ Mist form"
+#name 16 "$Additional$ Mist form"
+#name 32 "$Additional$ Mist form"
+#name 64 "$Additional$ Mist form"
+#name 128 "$Additional$ Mist form"
+#name 256 "$Additional$ Mist form"
+
+#end
+
+#neweffect "Mistform Secondary mrne"
+#effect 23
+#damage 65536
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10328
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Mist form"
+#name 2 "$Additional$ Mist form"
+#name 4 "$Additional$ Mist form"
+#name 8 "$Additional$ Mist form"
+#name 16 "$Additional$ Mist form"
+#name 32 "$Additional$ Mist form"
+#name 64 "$Additional$ Mist form"
+#name 128 "$Additional$ Mist form"
+#name 256 "$Additional$ Mist form"
+
+#end

@@ -14,7 +14,7 @@
 #paths 128
 #secondarypaths 8
 #secondarypathchance 95
-#scalefatiguemult 80
+#scalefatiguemult 20
 #skipchance 97
 
 #details "The elementals are size 4."
@@ -63,8 +63,8 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 1600
+#pathlevel 5
+#fatiguecost 2400
 #schools 1
 #skipchance 99
 

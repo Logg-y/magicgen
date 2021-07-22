@@ -23,11 +23,14 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe < 1 2 "Steal Breath"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Steal Breath"
 
-#namecond effectiveaoe >= 1 2 "Theft of Breath"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Theft of Breath"
 
 #descr 2 "The %victim% of this spell will have the breath stolen from them. Catching their breath will require quite an effort and the leave the %victim% exhausted."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX breathtaking $mist$"
 
 #end
 
@@ -56,8 +59,11 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Mass Breath Theft"
+#name 2 "NAMEPREFIX Mass Breath Theft"
 
 #descr 2 "The caster attempts to steal the breath of all of creatures on the battlefield. Catching their breath will require quite an effort and the leave the %victim% exhausted."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX breathtaking $mist$"
 
 #end

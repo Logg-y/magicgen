@@ -10,16 +10,16 @@
 #fatiguecost 50
 #sound 31
 #schools 16
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
 #paths 36
 #secondarypaths 36
 #secondarypathchance 97
 
-#skipchance 97
+#skipchance 80
 
-#name 32 "Animate Frozen Bones"
-#name 4 "Animate Frozen Bones"
+#name 32 "Animate NAMEPREFIX Frozen Bones"
+#name 4 "Animate NAMEPREFIX Frozen Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 #descr 4 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 
@@ -43,10 +43,10 @@
 #secondarypaths 36
 #secondarypathchance 97
 
-#skipchance 97
+#skipchance 60
 
-#name 32 "Animate Frozen Bones"
-#name 4 "Animate Frozen Bones"
+#name 32 "Animate NAMEPREFIX Frozen Bones"
+#name 4 "Animate NAMEPREFIX Frozen Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 #descr 4 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 
@@ -76,8 +76,8 @@
 #secondarypaths 36
 #secondarypathchance 97
 
-#name 32 "Send Frozen Bones"
-#name 4 "Send Frozen Bones"
+#name 32 "Send NAMEPREFIX Frozen Bones"
+#name 4 "Send NAMEPREFIX Frozen Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice to attack a hostile commander in a distant province. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 #descr 4 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice to attack a hostile commander in a distant province. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 
@@ -104,8 +104,8 @@
 #secondarypaths 36
 #secondarypathchance 97
 
-#name 32 "Send Frozen Bones"
-#name 4 "Send Frozen Bones"
+#name 32 "Send NAMEPREFIX Frozen Bones"
+#name 4 "Send NAMEPREFIX Frozen Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice to attack a distant province. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 #descr 4 "The caster unearths and animates bones of ancient human warriors trapped deep below ancient ice to attack a distant province. These warriors have become filled with frozen power and radiate magical cold. Due to spending millenia trapped in ancient ice, they are more effective in cold provinces."
 

@@ -23,11 +23,15 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Plague"
+#name 32 "NAMEPREFIX Plague"
 
 #details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
 
 #descr 32 "The caster attempts to spread a magical plague to a small number of victims. If any fail to resist, it will rapidly spread to anything living nearby."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of plague"
+#namecond effect > 1000 32 "NAMEPREFIX miasma"
 
 #end
 
@@ -40,7 +44,7 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 2
 -- #scalecost 1.6
 
 #aoe 1
@@ -56,11 +60,15 @@
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves.""
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
 
-#name 32 "Pestilent Plague"
+#name 32 "NAMEPREFIX Pestilent Plague"
 
 #descr 32 "The caster attempts to spread a magical plague to a small number of victims. Resisting it is difficult, upon failure it will rapidly spread to anything living nearby."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of plague"
+#namecond effect > 1000 32 "NAMEPREFIX miasma"
 
 #end
 
@@ -81,19 +89,19 @@
 #aoe 662
 #power 11
 #maxpower 11
-#pathlevel 6
+#pathlevel 7
 #explspr 10211
 #sound 22
-#fatiguecost 600
+#fatiguecost 700
 #precision 100
 #range 30
 
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves.""
+#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
 
-#name 32 "Contagious Spread"
+#name 32 "NAMEPREFIX Contagious Spread"
 
 #descr 32 "The caster attempts to spread a magical plague to the entire battlefield. Those who resist the plague will likely soon catch it from their infected friends."
 

@@ -1,4 +1,4 @@
-#neweffect "Minor Rage"
+#neweffect "Minor Rage mrne"
 #effect 11
 #damage 128
 #spec 25313280
@@ -12,6 +12,134 @@
 
 #aoe 1
 #power 0
+#maxpower 30
+#pathlevel 0
+#explspr 10023
+#sound 9
+#fatiguecost 0
+#precision 100
+#range 5015
+
+#paths -1
+#secondarypaths 1
+
+#namecond effectiveaoe < 1 1 "Rage"
+#namecond effectiveaoe < 1 64 "Rage"
+
+#name 1 "Minor Rage"
+#name 2 "Minor Rage"
+#name 4 "Minor Rage"
+#name 8 "Minor Rage"
+#name 16 "Minor Rage"
+#name 32 "Minor Rage"
+#name 64 "Minor Rage"
+#name 128 "Minor Rage"
+#name 256 "Minor Rage"
+
+
+#end
+
+#neweffect "Minor Rage mrn"
+#effect 11
+#damage 128
+#spec 8540160
+#schools -1
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 2
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 0
+#explspr 10023
+#sound 9
+#fatiguecost 0
+#precision 100
+#range 5015
+
+#paths -1
+#secondarypaths 1
+
+#namecond effectiveaoe < 1 1 "Rage"
+#namecond effectiveaoe < 1 64 "Rage"
+
+#name 1 "Minor Rage"
+#name 2 "Minor Rage"
+#name 4 "Minor Rage"
+#name 8 "Minor Rage"
+#name 16 "Minor Rage"
+#name 32 "Minor Rage"
+#name 64 "Minor Rage"
+#name 128 "Minor Rage"
+#name 256 "Minor Rage"
+
+
+#end
+
+
+
+
+
+#neweffect "Minor Rage mrne damaging"
+#effect 11
+#damage 128
+#spec 25313280
+#schools -1
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 2
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 0
+#explspr 10023
+#sound 9
+#fatiguecost 0
+#precision 100
+#range 5015
+
+#paths -1
+#secondarypaths 1
+
+#namecond effectiveaoe < 1 1 "Rage"
+#namecond effectiveaoe < 1 64 "Rage"
+
+#name 1 "Minor Rage"
+#name 2 "Minor Rage"
+#name 4 "Minor Rage"
+#name 8 "Minor Rage"
+#name 16 "Minor Rage"
+#name 32 "Minor Rage"
+#name 64 "Minor Rage"
+#name 128 "Minor Rage"
+#name 256 "Minor Rage"
+
+
+#end
+
+#neweffect "Minor Rage mrn damaging"
+#effect 11
+#damage 128
+#spec 8540160
+#schools -1
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 2
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 30
 #pathlevel 0
 #explspr 10023
 #sound 9

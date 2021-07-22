@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 5."
 #name 8 "Summon NAMEPREFIX Huge Earth %Elemental%"
@@ -23,6 +23,9 @@
 #spelltype 528
 
 #scalerate 1
+
+#scalefatiguemult 20
+
 #end
 
 #neweffect "eeles5 ritual"
@@ -39,7 +42,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 5."
 #name 8 "Summon NAMEPREFIX Huge Earth Elementals"
@@ -61,8 +64,8 @@
 #power 8
 #maxpower 8
 #nreff 1
-#pathlevel 4
-#fatiguecost 900
+#pathlevel 5
+#fatiguecost 1300
 #schools 1
 #skipchance 99
 #nogeodst 2052

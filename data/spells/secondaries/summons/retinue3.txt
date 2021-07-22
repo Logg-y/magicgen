@@ -1,0 +1,307 @@
+#newsecondary "Summon Retinue 3 RL3"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 5
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 300
+
+#unitmod "Summon Retinue 3 RL3"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL4"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 6
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 600
+
+#unitmod "Summon Retinue 3 RL4"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL5"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 7
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 900
+
+#unitmod "Summon Retinue 3 RL5"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL6"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 8
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 1200
+
+#unitmod "Summon Retinue 3 RL6"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL7"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 9
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 1500
+
+#unitmod "Summon Retinue 3 RL7"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL8"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 10
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 1800
+
+#unitmod "Summon Retinue 3 RL8"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL9"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 11
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 2100
+
+#unitmod "Summon Retinue 3 RL9"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL10"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 12
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 2400
+
+#unitmod "Summon Retinue 3 RL10"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL11"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 13
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 2700
+
+#unitmod "Summon Retinue 3 RL11"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL12"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 14
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 3000
+
+#unitmod "Summon Retinue 3 RL12"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end
+
+#newsecondary "Summon Retinue 3 RL13"
+#anysummon 1
+#paths 255
+#power 0
+#pathlevel 0
+#requiredresearchlevel 15
+#anysummon 1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- commander only
+#req effect != 10001
+#req effect != 1
+-- not in battle
+#req effect > 10000
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 3300
+
+#unitmod "Summon Retinue 3 RL13"
+#descr "The summoned %creature% is always guarded by three magical creatures."
+#details "The summoned commander gains a retinue of three creatures."
+
+#end

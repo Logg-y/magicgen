@@ -1,4 +1,4 @@
-#neweffect "Minor Desiccation"
+#neweffect "Desiccation Secondary mrne"
 #effect 500
 #damage 250
 #spec 554172544
@@ -32,3 +32,111 @@
 #name 256 "Minor Desiccation"
 
 #end
+
+#neweffect "Desiccation Secondary mrn"
+#effect 500
+#damage 250
+#spec 537399424
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#aoe 1
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Desiccation"
+#name 2 "Minor Desiccation"
+#name 4 "Minor Desiccation"
+#name 8 "Minor Desiccation"
+#name 16 "Minor Desiccation"
+#name 32 "Minor Desiccation"
+#name 64 "Minor Desiccation"
+#name 128 "Minor Desiccation"
+#name 256 "Minor Desiccation"
+
+#end
+
+#neweffect "Desiccation Secondary mrne damaging"
+#effect 500
+#damage 250
+#spec 554172544
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#aoe 0
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Desiccation"
+#name 2 "Minor Desiccation"
+#name 4 "Minor Desiccation"
+#name 8 "Minor Desiccation"
+#name 16 "Minor Desiccation"
+#name 32 "Minor Desiccation"
+#name 64 "Minor Desiccation"
+#name 128 "Minor Desiccation"
+#name 256 "Minor Desiccation"
+
+#end
+
+#neweffect "Desiccation Secondary mrn damaging"
+#effect 500
+#damage 250
+#spec 537399424
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#aoe 0
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Desiccation"
+#name 2 "Minor Desiccation"
+#name 4 "Minor Desiccation"
+#name 8 "Minor Desiccation"
+#name 16 "Minor Desiccation"
+#name 32 "Minor Desiccation"
+#name 64 "Minor Desiccation"
+#name 128 "Minor Desiccation"
+#name 256 "Minor Desiccation"
+
+#end
+
+
+

@@ -27,6 +27,9 @@
 
 #aispellmod -66
 
-#name 1 "Fire Flies"
+#name 1 "NAMEPREFIX Fire Flies"
 #descr 1 "Several burning sparks shoot forth from the wizard's hand. The sparks have very limited armor penetration and will be ineffective against armored troops."
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX burst of sparks"
 #end

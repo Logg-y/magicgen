@@ -37,8 +37,14 @@
 #secondarypaths 2
 #secondarypathchance 98
 
-#name 8 "$dust$ %bolt%"
+
+
+#name 8 "NAMEPREFIX $dust$ %bolt%"
 #descr 8 "The caster projects ARTICLE %bolt% of $dust$ at his enemies. The landing %site% %is% briefly filled with a plume of dust, harming and fatiguing any in the affected area that need to breathe."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX $dust$ burst"
+#descrcond range < 10 8 "The caster creates a burst of $dust$ at a nearby location. Any creatures in the affected area the need to breathe are harmed and fatigued if they are exposed to the dust."
 
 #spelltype 34
 #nextspell "Dust Fatigue"
@@ -103,7 +109,7 @@
 
 #nextspell "Dust Fatigue Long"
 
-#name 8 "Dust Eruption"
+#name 8 "NAMEPREFIX Dust Eruption"
 #descr 8 "This spell allows the caster to crack the earth over a SIZE area and release a cloud of dust that harms and induces coughing in creatures that need to breathe. The act of cracking the earth produces small shocks that may cause those in the affected area to stumble and fall, depending on how agile they are."
 #details "This spell produces 80 aftershocks, each of which allows a roll of defence skill (including armour penalties, but not from weapons) vs 3d6 exploding to avoid. Each failed check stuns the unit for a cumulative 100 ticks."
 

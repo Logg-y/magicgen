@@ -15,11 +15,11 @@
 #req spelltype !& 4
 -- something that is instantaneously killy
 #req effect == 2
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 75
+#skipchance 85
 
 #req spec !& 262144
 #spec 262144
@@ -49,11 +49,11 @@
 -- something that is instantaneously killy
 #req effect == 74
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 85
+#skipchance 77
 
-#set flightspr -1
+-- #set flightspr -1
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -81,11 +81,11 @@
 #req spelltype !& 4
 -- something that is instantaneously killy
 #req effect == 103
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 75
 
 #req spec !& 262144
 #spec 262144
@@ -111,11 +111,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 75
 
 #req effect == 66
 
@@ -141,11 +141,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 80
 
 #req effect == 11
 #req damage == 131072
@@ -172,11 +172,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 80
 
 #req effect == 11
 #req damage == 16384
@@ -203,11 +203,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 80
 
 #req effect == 28
 
@@ -233,11 +233,11 @@
 #set precision 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 80
 
 #req effect == 29
 
@@ -263,14 +263,14 @@
 #set precision 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#aispellmod 40
+#aispellmod 200
 
-#skipchance 90
+#skipchance 80
 
 #req effect == 11
-#req effect == 1024
+#req damage == 1024
 
 #req spec !& 262144
 #spec 262144
@@ -297,10 +297,10 @@
 #set precision 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
-#skipchance 70
-#aispellmod 40
+#skipchance 80
+#aispellmod 200
 
 #req effect == 128
 
@@ -324,17 +324,17 @@
 #pathperresearch -0.23
 #set range 3
 #casttime -75
-#aispellmod 40
+#aispellmod 200
 #req2 10 <= nonscalingrange <= 100
 #set precision 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
 #skipchance 70
 
 #req effect == 15
-#req spec == 17592194711680
+#req spec & 17592186044416
 
 #req spec !& 262144
 #spec 262144
@@ -354,24 +354,180 @@
 #scalefatigueexponent -0.5
 #mult fatiguecost 0.3
 #pathperresearch -0.23
+#req range > 3
 #set range 3
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #set precision 100
 -- not ritual
 #req spelltype !& 4
-#set flightspr -1
+-- #set flightspr -1
 #nobattlefield
 #skipchance 70
-#aispellmod 40
+#aispellmod 200
 
 #req effect == 20
-#req spec == 8667136
+#req spec & 4096
 
 #req spec !& 262144
 #spec 262144
 
 
 -- #descr "This spell has a devastating effect but a shorter range."
+
+#end
+
+#newmodifier "Touch Range Bonds of Fire"
+
+-- evo only
+#spelltype 2
+
+#power 1
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- #set flightspr -1
+#nobattlefield
+#aispellmod 200
+
+#skipchance 80
+
+#req effect == 11
+#req damage == 65536
+
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#end
+
+#newmodifier "Touch Range Entangle"
+
+-- evo only
+#spelltype 2
+
+#power 1
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- #set flightspr -1
+#nobattlefield
+#aispellmod 200
+
+#skipchance 80
+
+#req effect == 11
+#req damage == 64
+
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#end
+
+#newmodifier "Touch Range Web"
+
+-- evo only
+#spelltype 2
+
+#power 1
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- #set flightspr -1
+#nobattlefield
+#aispellmod 200
+
+#skipchance 80
+
+#req effect == 11
+#req damage == 536870912
+
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#end
+
+#newmodifier "Touch Range Encase in Ice Lesser"
+
+-- evo only
+#spelltype 2
+
+#power 1
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- #set flightspr -1
+#nobattlefield
+#aispellmod 200
+
+#skipchance 80
+
+#req effect == 603
+#req damage == 299
+
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#end
+
+#newmodifier "Touch Range Encase in Ice"
+
+-- evo only
+#spelltype 2
+
+#power 1
+#scalefatigueexponent -0.5
+#mult fatiguecost 0.3
+#pathperresearch -0.23
+#set precision 100
+#set range 3
+#casttime -75
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- #set flightspr -1
+#nobattlefield
+#aispellmod 200
+
+#skipchance 80
+
+#req effect == 609
+#req damage == 299
+
+#req spec !& 262144
+#spec 262144
+
+#descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
 #end

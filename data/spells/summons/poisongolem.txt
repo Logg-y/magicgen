@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 100
-#scalefatiguemult 60
+#scalefatiguemult 20
 #explspr 10232
 #sound 31
 #schools 8
@@ -26,7 +26,7 @@
 
 #scalerate 0.85
 -- #scalecost 1.0
-#skipchance 97
+#skipchance 90
 #end
 
 #neweffect "poisongolem ritual"

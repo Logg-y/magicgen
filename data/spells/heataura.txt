@@ -60,18 +60,22 @@
 #paths 129
 #secondarypaths 1
 
-#namecond effectiveaoe < 2 1 "Heat of Summer"
-#namecond effectiveaoe < 2 128 "Heat from Inferno"
+#namecond effectiveaoe < 2 1 "NAMEPREFIX Heat of Summer"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Heat from Inferno"
 
-#namecond effectiveaoe >= 2 1 "Warriors of Summer"
-#namecond effectiveaoe >= 2 128 "Warriors from Inferno"
+#namecond effectiveaoe >= 2 1 "NAMEPREFIX Warriors of Summer"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Warriors from Inferno"
 
-#details "Grants heat aura and +5 fire resistance."
+#details "Grants heat aura and +10 fire resistance."
 
 #descr 1 "SUBJECT %is% imbued with the heat of summer, fatiguing and igniting those nearby who are not resistant."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% imbued with the heat of Inferno, fatiguing and igniting those nearby who are not resistant."
 
 #nextspell "Heataura fire Res +10"
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of hot winds"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of hot winds"
 
 #end
 

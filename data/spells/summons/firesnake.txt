@@ -8,14 +8,14 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 60
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #sound 31
 #schools 1
 
 #paths 1
 #secondarypaths 1
 
-#skipchance 97
+#skipchance 50
 
 #name 1 "Summon NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."
@@ -39,7 +39,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 97
+#skipchance 50
 
 #name 1 "Summon NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."

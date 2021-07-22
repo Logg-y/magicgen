@@ -7,12 +7,12 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1
 -- #scalecost 1.6
 
 #aoe 0
 #power 4
-#maxpower 7
+#maxpower 10
 #pathlevel 3
 #explspr 10207
 #sound 31
@@ -23,14 +23,17 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Confusion"
+#namecond effectiveaoe <= 1 16 "NAMEPREFIX Confusion"
 
-#namecond2 1 < effectiveaoe < 5 16 "Wave of Confusion"
-#namecond2 5 < effectiveaoe < 600 16 "Confused Mob"
-#namecond2 600 < effectiveaoe < 700 16 "Mass Confusion"
+#namecond2 1 < effectiveaoe <= 5 16 "NAMEPREFIX Wave of Confusion"
+#namecond2 5 < effectiveaoe < 600 16 "NAMEPREFIX Confused Mob"
+#namecond2 600 < effectiveaoe < 700 16 "NAMEPREFIX Mass Confusion"
 
 #descr 16 "SUBJECT %is% made confused and may attack nearby friendlies."
 #details "There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of confusion"
 
 #end
 
@@ -47,21 +50,24 @@
 -- #scalecost 1.6
 
 #aoe 666
-#power 8
-#maxpower 8
-#pathlevel 6
+#power 11
+#maxpower 11
+#pathlevel 7
 #explspr 10207
 #sound 31
-#fatiguecost 300
+#fatiguecost 500
 #precision 100
 #range 20
 
 #paths 16
 #secondarypaths 16
 
-#name 16 "Mass Confusion"
+#name 16 "NAMEPREFIX Mass Confusion"
 
 #descr 16 "The caster attempts to confuse all of his enemies. This spell should cause massive infighting amongst the caster's enemies."
 #details "There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of confusion"
 
 #end

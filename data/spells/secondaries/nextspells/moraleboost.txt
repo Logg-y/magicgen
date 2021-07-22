@@ -1,0 +1,65 @@
+#neweffect "Morale Boost Secondary mrn"
+#effect 17
+#damage 10
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10190
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Courage"
+#name 2 "$Additional$ Courage"
+#name 4 "$Additional$ Courage"
+#name 8 "$Additional$ Courage"
+#name 16 "$Additional$ Courage"
+#name 32 "$Additional$ Courage"
+#name 64 "$Additional$ Courage"
+#name 128 "$Additional$ Courage"
+#name 256 "$Additional$ Courage"
+
+#end
+
+#neweffect "Morale Boost Secondary mrne"
+#effect 17
+#damage 10
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10190
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Courage"
+#name 2 "$Additional$ Courage"
+#name 4 "$Additional$ Courage"
+#name 8 "$Additional$ Courage"
+#name 16 "$Additional$ Courage"
+#name 32 "$Additional$ Courage"
+#name 64 "$Additional$ Courage"
+#name 128 "$Additional$ Courage"
+#name 256 "$Additional$ Courage"
+
+#end

@@ -51,7 +51,7 @@ class MontagBuilder(object):
         costratio = max(1, costratio / duplicates)
         return costratio
 
-    def process(self):
+    def process(self, spell=None, secondaryeffect=None):
         out = MontagResult()
         out.numcreatures = len(self.unitlist)
         out.montagid = utils.MONTAG_ID
@@ -135,8 +135,9 @@ class MontagBuilder(object):
                 unitmod = utils.unitmods[secondary.unitmod]
             else:
                 unitmod = utils.unitmods["Do Nothing"]
-            modcmds = unitmod.applytounit(None, unitobj, additionals_firstshape={"#montagweight":montagweight,
-                                                                        "#montag":out.montagid})
+            modcmds = unitmod.applytounit(spell, unitobj, additionals_firstshape={"#montagweight":montagweight,
+                                                                        "#montag":out.montagid},
+                                          secondaryeffect=secondaryeffect)
             if self.usemaximumweightingmethod:
                 modcmds = f"-- Montag: costratio was {costratio}, this unit was duplicated {duplicates} times," \
                           f" max for this montag was {self.maxcostratio}\n"  + modcmds
@@ -169,6 +170,9 @@ class MontagBuilder(object):
             out.modcmds += "#copystats 284\n"
             out.modcmds += "#copyspr 284\n"
             out.modcmds += f"#firstshape -{out.montagid}\n"
+            out.modcmds += f"#secondshape -{out.montagid}\n"
+            out.modcmds += f"#hp 1\n"
+            out.modcmds += f"#woundfend 99\n"
             # Prevent drowning
             out.modcmds += "#amphibian\n"
             # These values allow MRN transformation spells with reasonable odds of failure

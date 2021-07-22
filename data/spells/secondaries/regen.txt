@@ -1,0 +1,57 @@
+#newsecondary "Regen Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 32
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Restorative"
+#fatiguepersquare 4
+
+
+#nextspell "Regen Secondary mrn"
+
+#descr "This spell may also make those it affects rapidly heal wounds."
+#details "Affected creatures make an MR check. Failing this check grants 10% regeneration."
+
+#end
+
+#newsecondary "Regen Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 32
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Mending"
+#fatiguepersquare 2
+
+
+#nextspell "Regen Secondary mrne"
+
+#descr "This spell may also make those it affects rapidly heal wounds."
+#details "Affected creatures make an easy MR check. Failing this check grants 10% regeneration."
+
+#end

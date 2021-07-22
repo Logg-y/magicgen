@@ -15,7 +15,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Wyvern%"
 #descr 2 "The caster summons ARTICLE %wyvern% to fight for him. The wyvern is a cold-blooded winged reptile with a highly poisonous tail."
@@ -39,7 +39,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Wyvern%"
 #descr 2 "The caster summons ARTICLE %wyvern% to fight for him. The wyvern is a cold-blooded winged reptile with a highly poisonous tail."

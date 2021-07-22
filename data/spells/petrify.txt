@@ -23,13 +23,17 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 0 8 "Petrification"
-#namecond2 1 < effectiveaoe < 20 8 "Petrify Group"
-#namecond effectiveaoe >= 20 8 "Mass Petrification"
+#namecond effectiveaoe == 0 8 "NAMEPREFIX Petrification"
+#namecond2 1 < effectiveaoe < 20 8 "NAMEPREFIX Petrify Group"
+#namecond effectiveaoe >= 20 8 "NAMEPREFIX Mass Petrification"
 
 #details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #descr 8 "The caster temporarily turns creatures within a SIZE area to stone. There is no resisting this effect. Instead of reverting to their original form, petrified creatures may crumble to dust."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of petrification"
+#namecond range < 10 8 "NAMEPREFIX touch of petrification"
 
 #end
 

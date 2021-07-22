@@ -1,0 +1,167 @@
+#newunitmod "Summon Allies 3 RL3"
+#nameprefix "Levying"
+#eventset "Summon Allies RL3"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL4"
+#nameprefix "Levying"
+#eventset "Summon Allies RL4"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL5"
+#nameprefix "Levying"
+#eventset "Summon Allies RL5"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL6"
+#nameprefix "Levying"
+#eventset "Summon Allies RL6"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL7"
+#nameprefix "Levying"
+#eventset "Summon Allies RL7"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL8"
+#nameprefix "Levying"
+#eventset "Summon Allies RL8"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL9"
+#nameprefix "Levying"
+#eventset "Summon Allies RL9"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL10"
+#nameprefix "Levying"
+#eventset "Summon Allies RL10"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL11"
+#nameprefix "Levying"
+#eventset "Summon Allies RL11"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL12"
+#nameprefix "Levying"
+#eventset "Summon Allies RL12"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL13"
+#nameprefix "Levying"
+#eventset "Summon Allies RL13"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3 RL14"
+#nameprefix "Levying"
+#eventset "Summon Allies RL14"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req summon <= 0
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end

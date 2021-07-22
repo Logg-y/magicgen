@@ -2,13 +2,13 @@
 #effect 1
 #damage 925
 #spec 0
-#power 8
+#power 7
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 4
 #fatiguecost 100 
-#scalefatiguemult 100
+#scalefatiguemult 20
 #sound 31
 #schools 1
 #ainocast 1
@@ -16,7 +16,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 92
 
 #name 64 "Summon NAMEPREFIX %Tarrasque%"
 #descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours. For that reason, casting this spell may not be advisable if the caster or those around him are not poison resistant. The tarrasque leaves after the battle."
@@ -40,7 +40,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 50
 
 #name 64 "Summon NAMEPREFIX %Tarrasque%"
 #descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours."
@@ -64,7 +64,7 @@
 #pathlevel 7
 #fatiguecost 1500
 #schools 1
-#skipchance 99
+#skipchance 97
 #nogeodst 2052
 
 #paths 64
@@ -90,7 +90,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.6
+#skipchance 99
 
 #paths 64
 #secondarypaths 64

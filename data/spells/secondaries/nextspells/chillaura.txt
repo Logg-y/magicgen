@@ -1,0 +1,72 @@
+#neweffect "Chillaura Secondary mrne"
+#effect 10
+#damage 8192
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10015
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Persistent Chill"
+#name 2 "Persistent Chill"
+#name 4 "Persistent Chill"
+#name 8 "Persistent Chill"
+#name 16 "Persistent Chill"
+#name 32 "Persistent Chill"
+#name 64 "Persistent Chill"
+#name 128 "Persistent Chill"
+#name 256 "Persistent Chill"
+
+#end
+
+
+
+
+#neweffect "Chillaura Secondary mrne damaging"
+#effect 10
+#damage 8192
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10015
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Persistent Chill"
+#name 2 "Persistent Chill"
+#name 4 "Persistent Chill"
+#name 8 "Persistent Chill"
+#name 16 "Persistent Chill"
+#name 32 "Persistent Chill"
+#name 64 "Persistent Chill"
+#name 128 "Persistent Chill"
+#name 256 "Persistent Chill"
+
+#end

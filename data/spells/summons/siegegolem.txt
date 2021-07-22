@@ -12,7 +12,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX Siege %Golem%"
 #descr 8 "The caster forms and enchants ARTICLE giant %golem% from stone. The animated %golem% %is% incredibly difficult to harm with physical damage and inflicts immense damage to structures or other inanimate beings."
@@ -36,7 +36,7 @@
 #pathlevel 6
 #fatiguecost 1200
 #schools 8
-#skipchance 99
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

@@ -1,0 +1,13 @@
+#neweventset "Summon Allies RL12"
+
+#selectunitmod "Land OK"
+#desiredmontagsize 10
+#restrictunitstospellpaths 1
+
+#makedummymonster 0
+
+#mincreaturepower 12
+#maxcreaturepower 12
+
+#unitmodlist "Temporary Unit Summon"
+#end

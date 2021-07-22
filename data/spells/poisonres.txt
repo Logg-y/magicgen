@@ -25,12 +25,17 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Resist Poison"
-#name 64 "Resist Poison"
-#name 128 "Resist Poison"
+#name 32 "NAMEPREFIX Resist Poison"
+#name 64 "NAMEPREFIX Resist Poison"
+#name 128 "NAMEPREFIX Resist Poison"
 #descr 32 "SUBJECT %is% made slightly resistant to poisons."
 #descr 64 "SUBJECT %is% made slightly resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer slight resistance to poisons."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of poison resistance"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of poison resistance"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of poison resistance"
 
 #details "Grants +10 poison resistance."
 
@@ -64,14 +69,19 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Reduced Metabolism"
-#name 64 "Poison Fend"
-#name 128 "Poison Fend"
+#name 32 "NAMEPREFIX Reduced Metabolism"
+#name 64 "NAMEPREFIX Poison Fend"
+#name 128 "NAMEPREFIX Poison Fend"
 #descr 32 "SUBJECT %is% made slightly resistant to poisons."
 #descr 64 "SUBJECT %is% made slightly resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer slight resistance to poisons."
 
 #details "Grants +10 poison resistance."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of poison resistance"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of poison resistance"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of poison resistance"
 
 #end
 
@@ -102,12 +112,17 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Protection from Poison"
-#name 64 "Protection from Poison"
-#name 128 "Protection from Poison"
+#name 32 "NAMEPREFIX Protection from Poison"
+#name 64 "NAMEPREFIX Protection from Poison"
+#name 128 "NAMEPREFIX Protection from Poison"
 #descr 32 "SUBJECT %is% made highly resistant to poisons."
 #descr 64 "SUBJECT %is% made highly resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer significant resistance to poisons."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of poison protection"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of poison protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of poison protection"
 
 
 
@@ -142,9 +157,9 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Metabolism of Undeath"
-#name 64 "Serpent's Blessing"
-#name 128 "Serpent's Blessing"
+#name 32 "NAMEPREFIX Metabolism of Undeath"
+#name 64 "NAMEPREFIX Serpent's Blessing"
+#name 128 "NAMEPREFIX Serpent's Blessing"
 #descr 32 "SUBJECT %is% made highly resistant to poisons."
 #descr 64 "SUBJECT %is% made highly resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer significant resistance to poisons."
@@ -152,6 +167,12 @@
 
 
 #details "Grants +15 poison resistance."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of poison protection"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of poison protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of poison protection"
+
 
 #end
 
@@ -185,12 +206,17 @@
 #paths 224
 #secondarypaths 0
 
-#name 32 "Poison Warding"
-#name 64 "Poison Warding"
-#name 128 "Poison Warding"
+#name 32 "NAMEPREFIX Poison Warding"
+#name 64 "NAMEPREFIX Poison Warding"
+#name 128 "NAMEPREFIX Poison Warding"
 #descr 32 "SUBJECT %is% made extremely resistant to poisons."
 #descr 64 "SUBJECT %is% made extremely resistant to poisons."
 #descr 128 "$BLOOD_INTRO$, the blood of SUBJECT is altered to confer exceptional resistance to all kinds of poisons."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of greater poison protection"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of greater poison protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of greater poison protection"
 
 
 #details "Grants +20 poison resistance."

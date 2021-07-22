@@ -23,19 +23,25 @@
 #paths 20
 #secondarypaths 4
 
-#namecond effectiveaoe == 0 16 "Quicken Self"
-#namecond effectiveaoe == 0 4 "Quicken Self"
+#namecond effectiveaoe == 0 16 "NAMEPREFIX Quicken Self"
+#namecond effectiveaoe == 0 4 "NAMEPREFIX Quicken Self"
 
-#namecond2 1 <= effectiveaoe < 666 16 "Quickness"
-#namecond2 1 <= effectiveaoe < 666 4 "Quickness"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX Quickness"
+#namecond2 1 <= effectiveaoe < 666 4 "NAMEPREFIX Quickness"
 
-#namecond effectiveaoe == 666 16 "Quickening"
-#namecond effectiveaoe == 666 4 "Quickening"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Quickening"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
 
 #details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
 
 #descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 #descr 4 "The speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of quickness"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of quickening"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of quickness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of quickening"
 
 #end
 
@@ -65,14 +71,14 @@
 #paths 20
 #secondarypaths 4
 
-#namecond effectiveaoe == 0 16 "Quicken Self"
-#namecond effectiveaoe == 0 4 "Quicken Self"
+#namecond effectiveaoe == 0 16 "NAMEPREFIX Quicken Self"
+#namecond effectiveaoe == 0 4 "NAMEPREFIX Quicken Self"
 
-#namecond2 1 <= effectiveaoe < 666 16 "Quickness"
-#namecond2 1 <= effectiveaoe < 666 4 "Quickness"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX Quickness"
+#namecond2 1 <= effectiveaoe < 666 4 "NAMEPREFIX Quickness"
 
-#namecond effectiveaoe == 666 16 "Quickening"
-#namecond effectiveaoe == 666 4 "Quickening"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Quickening"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
 
 #details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
 

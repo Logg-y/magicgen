@@ -20,8 +20,8 @@ class EventSet(object):
 
         self.restrictunitstospellpaths = -1
 
-        self.mincreaturepower = -1
-        self.maxcreaturepower = -1
+        self.mincreaturepower = None
+        self.maxcreaturepower = None
 
         self.desiredmontagsize = -1
         self.secondaryeffectchance = None
@@ -38,6 +38,8 @@ class EventSet(object):
 
         # For passing the unit name back...
         self.lastunitname = None
+        self.lastunitid = None
+        self.unitmodlist = None
 
         # The below is for module reqs ONLY
         self.reqs = []
@@ -56,6 +58,7 @@ class EventSet(object):
         self.setspelldamage = 0
         self.magicsite = ""
         self.effectnumberforunits = 10001
+        self.fixedcreaturepower = False
 
         self.moduletailingcode = ""
 
@@ -185,7 +188,7 @@ class EventSet(object):
 
 
 
-    def formatdata(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, enchantid=None):
+    def formatdata(self, spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, enchantid=None):
         "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
         print(f"Begin formatdata for {self.name}")
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
@@ -196,7 +199,7 @@ class EventSet(object):
 
         # Get an enchant ID first, as any submodules need to know it
         # These are various local and global enchantment effect IDs
-        if spelleffect.effect in [10081, 10082, 10083, 10084, 10085, 10086]:
+        if spelleffect is not None and spelleffect.effect in [10081, 10082, 10083, 10084, 10085, 10086]:
             # only take an enchant id if the spell actually wants one
             if "ENCHANTID" in output:
                 if enchantid is None:
@@ -218,7 +221,7 @@ class EventSet(object):
 
         modulelist = list(self.modules.values())
 
-        modulepicks = self._pickmodules(spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modulelist)
+        modulepicks = self._pickmodules(spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, modulelist)
         if modulepicks is None:
             print(f"ERROR: No module picks for {self.name}")
             return None
@@ -252,7 +255,7 @@ class EventSet(object):
             powerlevel = powerlevelassignments[module.name]
             moduledata[replacement] = module.formatdata(spelleffect, spell,
                                                         _getscaleamt(powerlevel-module.minpowerlevel, spelleffect.scalerate),
-                                                        secondaryeffect, powerlevel, enchantid)
+                                                        forcedsecondaryeffect, powerlevel, enchantid)
             if moduledata[replacement] is None:
                 print(f"ERROR: formatdata for module {module.name} failed")
                 return None
@@ -303,7 +306,10 @@ class EventSet(object):
                                              count=1)
             output = "\n".join(currlist)
 
-        numtogenerate = max(1, math.floor(self.desiredmontagsize * utils.MONTAG_SCALE))
+        if self.desiredmontagsize == 1:
+            numtogenerate = 1
+        else:
+            numtogenerate = max(1, math.floor(self.desiredmontagsize * utils.MONTAG_SCALE))
 
         if numtogenerate > 1:
             montag = montagbuilder.MontagBuilder()
@@ -356,7 +362,8 @@ class EventSet(object):
             # the power up/down with legal secondaries
             secondary = None
 
-            print(f"Spell paths for this generation are {spell.path1} and {spell.path2}")
+            print(f"Spell paths for this generation are {spell.path1} and {spell.path2}, power level range"
+                  f"is {self.mincreaturepower} to {self.maxcreaturepower}, this powerlevel = {actualpowerlvl}")
 
 
             while 1:
@@ -370,13 +377,13 @@ class EventSet(object):
 
                 elif unittouse is None:
                     # raise Exception(f"EventSet {self.name} called by {spelleffect.name} found no valid unit summon")
-                    print(f"ERROR: {self.name} called by {spelleffect.name} found not valid unit summon")
+                    print(f"ERROR: {self.name} called by {spelleffect.name} found no valid unit summon")
                     return None
 
-                if len(self.allowedunitmods) > 0 and unittouse is not None:
+                if (self.unitmodlist is not None or len(self.allowedunitmods) > 0) and unittouse is not None:
                     # If rollSpell enforces a secondary effect (unlikely), use that
-                    if secondaryeffect.name != "Do Nothing" and len(secondaryeffect.unitmod) > 0:
-                        realunitmod = utils.unitmods[secondaryeffect.unitmod]
+                    if forcedsecondaryeffect is not None and forcedsecondaryeffect.name != "Do Nothing" and len(forcedsecondaryeffect.unitmod) > 0:
+                        realunitmod = utils.unitmods[forcedsecondaryeffect.unitmod]
                         unitobj = unittouse
                         if not realunitmod.compatibility(unitobj):
                             print(f"Forced unitmod {realunitmod.name} not allowed with unit {unittouse}")
@@ -393,6 +400,8 @@ class EventSet(object):
                         else:
                             # shallow copy
                             unitmodlist = self.allowedunitmods[:]
+                            if self.unitmodlist is not None:
+                                unitmodlist += utils.unitmodlists[self.unitmodlist]
                             random.shuffle(unitmodlist)
                             bad = False
                             while 1:
@@ -426,10 +435,14 @@ class EventSet(object):
                                             continue
 
                                 # Enforce power restrictions
-                                if self.mincreaturepower > -1 and self.maxcreaturepower > -1:
+                                if self.mincreaturepower is not None and self.maxcreaturepower is not None:
                                     finalcreaturepower = chosensummoneffect.power - secondary.power
-                                    minpower = self.mincreaturepower + actualpowerlvl
-                                    maxpower = self.maxcreaturepower + actualpowerlvl
+                                    if self.fixedcreaturepower:
+                                        minpower = self.mincreaturepower
+                                        maxpower = self.maxcreaturepower
+                                    else:
+                                        minpower = self.mincreaturepower + actualpowerlvl
+                                        maxpower = self.maxcreaturepower + actualpowerlvl
                                     if finalcreaturepower > maxpower or finalcreaturepower < minpower:
                                         print(f"Discarded {chosensummoneffect.name} + {secondary.name} combo - "
                                               f"final power was {finalcreaturepower} and desired was between "
@@ -457,10 +470,13 @@ class EventSet(object):
                     if numtogenerate == 1:
                         unitcode = realunitmod.applytounit(None, unittouse)
                         self.lastunitname = realunitmod.lastunitname
+                        self.lastunitid = realunitmod.lastparentid
                         if self.modulegroup is None:
                             output = unitcode + "\n\n" + output
                         else:
                             self.moduletailingcode += unitcode + "\n"
+                        if len(effectpool) > 0:
+                            spell.details += f"The creature for this spell is always a {realunitmod.lastunitname}."
 
                         generateokay = True
                     else:
@@ -498,6 +514,7 @@ class EventSet(object):
                         generateokay = True
 
                 if realunitmod.lastparentid is not None and numtogenerate == 1:
+                    self.lastunitid = realunitmod.lastparentid
                     output = output.replace("UNITID", str(realunitmod.lastparentid))
                     output = f"-- EventSet {self.name} called by {spelleffect.name} generated with unitid " \
                              f"{realunitmod.lastparentid}\n\n" + output
@@ -556,7 +573,8 @@ class EventSet(object):
                 spelleffect.descriptions[spell.path1] = spell.descr
 
         if numtogenerate > 1:
-            result = montag.process()
+            result = montag.process(spell=spell, secondaryeffect=forcedsecondaryeffect)
+            self.lastunitid = -1*result.montagid
             resultcmds = result.modcmds
             if self.makedummymonster:
                 output = output.replace("UNITID", str(result.dummymonsterid))
@@ -596,7 +614,7 @@ class EventSet(object):
 
         if len(self.magicsite) > 0:
             magicsite = utils.magicsites[self.magicsite]
-            sitedata = magicsite.formatdata(spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl)
+            sitedata = magicsite.formatdata(spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl)
             if sitedata is None:
                 return None
             output += sitedata

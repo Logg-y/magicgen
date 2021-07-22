@@ -7,7 +7,7 @@
 #req effect != 10038
 #req effect != 21
 #paths 16
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -27,7 +27,7 @@
 #req effect != 10038
 #req effect != 21
 #paths 16
-#power -4
+#power -2
 
 -- not montag
 #req damage > 0

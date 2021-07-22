@@ -23,19 +23,24 @@
 #paths 129
 #secondarypaths 1
 
-#namecond effectiveaoe < 2 1 "Fire Shield"
-#namecond effectiveaoe < 2 128 "Infernal Shield"
+#namecond effectiveaoe < 2 1 "NAMEPREFIX Fire Shield"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Infernal Shield"
 
-#namecond effectiveaoe >= 2 1 "Barriers of Fire"
-#namecond effectiveaoe >= 2 128 "Infernal Barriers"
+#namecond effectiveaoe >= 2 1 "NAMEPREFIX Barriers of Fire"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Infernal Barriers"
 
-#namecond effectiveaoe >= 660 1 "Burning Army"
-#namecond effectiveaoe >= 660 128 "Infernal Army"
+#namecond effectiveaoe >= 660 1 "NAMEPREFIX Burning Army"
+#namecond effectiveaoe >= 660 128 "NAMEPREFIX Infernal Army"
 
-#details "Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
+#details "Fire Shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
 
 #descr 1 "Surrounds SUBJECT with fire, causing melee attackers to be burned."
 #descr 128 "$BLOOD_INTRO$, the caster surrounds SUBJECT with infernal flames, causing melee attackers to be burned."
+
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fire shielding"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal shielding"
 
 #end
 
@@ -65,18 +70,23 @@
 #paths 129
 #secondarypaths 1
 
-#namecond effectiveaoe < 2 1 "Fire Shield"
-#namecond effectiveaoe < 2 128 "Infernal Shield"
+#namecond effectiveaoe < 2 1 "NAMEPREFIX Fire Shield"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Infernal Shield"
 
-#namecond effectiveaoe >= 2 1 "Barriers of Fire"
-#namecond effectiveaoe >= 2 128 "Infernal Barriers"
+#namecond effectiveaoe >= 2 1 "NAMEPREFIX Barriers of Fire"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Infernal Barriers"
 
-#namecond effectiveaoe >= 660 1 "Burning Army"
-#namecond effectiveaoe >= 660 128 "Infernal Army"
+#namecond effectiveaoe >= 660 1 "NAMEPREFIX Burning Army"
+#namecond effectiveaoe >= 660 128 "NAMEPREFIX Infernal Army"
 
-#details "Fire dmg: 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
+#details "Fire Shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra mage level, reduced by weapon length)."
 
 #descr 1 "Surrounds SUBJECT with fire, causing melee attackers to be burned."
 #descr 128 "$BLOOD_INTRO$, the caster surrounds SUBJECT with infernal flames, causing melee attackers to be burned."
+
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fire shielding"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal shielding"
 
 #end

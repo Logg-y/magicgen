@@ -1,7 +1,7 @@
-#neweffect "Additional Fire"
-#effect 2
-#damage 2
-#spec 36028797027369120
+#neweffect "4 capped fire Secondary mrn"
+#effect 109
+#damage 4
+#spec 36028797027373216
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -9,6 +9,7 @@
 #aoe 1
 #scalerate 0
 #power 0
+#maxpower 30
 #explspr 10167
 #sound 24
 
@@ -31,9 +32,44 @@
 
 #end
 
-#neweffect "Additional Fire Holy"
-#effect 2
-#damage 10
+
+#neweffect "4 capped fire Secondary mrne"
+#effect 109
+#damage 4
+#spec 36028797044146336
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+#neweffect "4 capped fire Secondary mrn damaging"
+#effect 109
+#damage 4
 #spec 36028797027369120
 #schools -1
 #paths -1
@@ -42,7 +78,182 @@
 #aoe 0
 #scalerate 0
 #power 0
+#maxpower 30
 #explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+
+#neweffect "4 capped fire Secondary mrne damaging"
+#effect 109
+#damage 4
+#spec 36028797044142240
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10167
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+---
+
+
+#neweffect "10AP fire Secondary mrn"
+#effect 2
+#damage 10
+#spec 4192
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+#neweffect "10AP fire Secondary mrne"
+#effect 2
+#damage 10
+#spec 16777312
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+#neweffect "10AP fire Secondary mrn damaging"
+#effect 2
+#damage 10
+#spec 20576
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end
+
+#neweffect "10AP fire Secondary mrne damaging"
+#effect 2
+#damage 10
+#spec 16793696
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
 #sound 24
 
 #spelltype 2

@@ -1,0 +1,136 @@
+
+#neweffect "fear type 2 Secondary mrn"
+#effect 97
+#damage 5
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 2 Secondary mrne"
+#effect 97
+#damage 5
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 2 Secondary mrn damaging"
+#effect 97
+#damage 5
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 2 Secondary mrne damaging"
+#effect 97
+#damage 5
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end

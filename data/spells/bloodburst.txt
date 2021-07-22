@@ -24,8 +24,11 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Blood Burst"
+#name 128 "NAMEPREFIX Blood Burst"
 #descr 128 "This spell causes the victims' blood to explode. Neither armor nor magic resistance can protect the targets."
 
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of exploding blood"
+#descrcond range < 10 128 "The caster's touch causes the victims' blood to explode. Armor and magic resistance offer no protection against this spell."
 
 #end

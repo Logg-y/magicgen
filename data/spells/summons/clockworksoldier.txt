@@ -18,7 +18,7 @@
 
 #name 8 "Construct NAMEPREFIX Clockwork %Soldier%"
 #descr 8 "The caster quickly forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless."
-#scalefatiguemult 40
+--#scalefatiguemult 40
 #spelltype 528
 
 #scalerate 0.85

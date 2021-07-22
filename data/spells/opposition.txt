@@ -14,7 +14,7 @@
 #paths 16
 #secondarypaths 16
 #secondarypathchance 0
-#name 16 "Opposition"
+#name 16 "NAMEPREFIX Opposition"
 
 #descr 16 "The caster creates a supernatural force diametrically opposed to ARTICLE targeted magical %being%. If the spell is powerful enough, the magical %being% will be disenchanted and cease to exist."
 
@@ -23,4 +23,8 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 16
+
+#priority 1
+#namecond range < 1000 16 "NAMEPREFIX touch of opposition"
+
 #end

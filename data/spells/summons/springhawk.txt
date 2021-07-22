@@ -8,14 +8,14 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 60
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #sound 31
 #schools 1
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
@@ -39,7 +39,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."

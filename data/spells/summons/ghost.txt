@@ -13,9 +13,9 @@
 
 #paths 32
 #secondarypaths 32
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
-#skipchance 97
+#skipchance 60
 #aispellmod -20
 
 #name 32 "Summon NAMEPREFIX %Ghost%"
@@ -38,7 +38,7 @@
 #schools 1
 
 
-#skipchance 97
+#skipchance 40
 
 #paths 32
 #secondarypaths 32

@@ -1,0 +1,78 @@
+-- this goes against my aim to make these only minor tweaks
+
+-- #newsecondary "Plague nondamaging mrne"
+-- 
+-- -- evo only
+-- #spelltype 2
+-- 
+-- #paths 32
+-- #power -6
+-- 
+-- -- various damage types
+-- #reqdamagingeffect 0
+-- 
+-- #req effect != 27	    -- magic duel
+-- #req effect != 15	    -- returning
+-- #req effect != 28	    -- enslave
+-- #req effect != 29	    -- charm
+-- #req effect != 54	    -- polymorph
+-- #req effect != 72	    -- stream of life
+-- 
+-- 
+-- #offensiveeffect 1
+-- 
+-- -- not ritual
+-- #req spelltype !& 4
+-- 
+-- -- not demons/undead only
+-- #req spec !& 8
+-- 
+-- #nextspell "Minor Plague mrne"
+-- 
+-- #nameprefix "Plaguetouched"
+-- #fatiguepersquare 50
+-- 
+-- #descr "Those affected by this spell may also contract a magical plague."
+-- 
+-- #end
+-- 
+-- #newsecondary "Plague damaging mrne"
+-- 
+-- -- evo only
+-- #spelltype 2
+-- 
+-- #paths 65
+-- #power -4
+-- 
+-- #reqdamagingeffect 1
+-- 
+-- #req effect != 27	    -- magic duel
+-- #req effect != 15	    -- returning
+-- #req effect != 28	    -- enslave
+-- #req effect != 29	    -- charm
+-- #req effect != 54	    -- polymorph
+-- #req effect != 72	    -- stream of life
+-- 
+-- -- various damage types
+-- #req paths != 256
+-- #offensiveeffect 1
+-- 
+-- -- not ritual
+-- #req spelltype !& 4
+-- 
+-- #req nonscalingdamage < 40
+-- 
+-- -- not demons/undead only
+-- #req spec !& 8
+-- 
+-- -- not on damage already
+-- #ondamage 1
+-- 
+-- #nameprefix "Plaguetouched"
+-- #fatiguepersquare 30
+-- 
+-- #nextspell "Minor Plague mrne damaging"
+-- 
+-- #descr "Those wounded by this spell may also contract a magical plague."
+-- 
+-- #end

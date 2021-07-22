@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 80
+#scalefatiguemult 20
 
 #scalerate 1
 #end
@@ -32,7 +32,7 @@
 #effect 10001
 #damage 433
 #spec 0
-#power 3
+#power 1
 #maxpower 14
 #nreff 1
 #pathlevel 2
@@ -44,16 +44,16 @@
 #secondarypathchance 80
 
 #name 128 "Bind NAMEPREFIX Bone %Fiend%"
-#descr 128 "$BLOOD_INTRO$, the caster ARTICLE bone %fiend% from the underworld to aid him in battle."
+#descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE bone %fiend% from the underworld to aid him in battle."
 
 #spelltype 20
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -1.8
 #scalefatiguemult 320
 
-#scalerate 2
+#scalerate 1
 #end
 
 #neweffect "bonefiend Remote Assassination"

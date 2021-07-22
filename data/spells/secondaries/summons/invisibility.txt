@@ -3,11 +3,11 @@
 #anysummon 1
 
 #paths 18
-#power -3
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.4
+#mult fatiguecost 1.8
 #magicpathvaluescaling 0.05
 
 #unitmod "Summon Invisibility"

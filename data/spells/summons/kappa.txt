@@ -13,8 +13,8 @@
 
 #paths 4
 #secondarypaths 4
-#scalefatiguemult 20
-#skipchance 97
+--#scalefatiguemult 20
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX %kappa%"
 #descr 4 "The caster summons ARTICLE %kappa%. The kappa is a scaled humanoid with a turtle shell which tires easily on land."
@@ -38,7 +38,7 @@
 #paths 4 
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX %kappa%"
 #descr 4 "The caster summons ARTICLE %kappa%.  The kappa is a scaled humanoid with a turtle shell which tires easily on land."

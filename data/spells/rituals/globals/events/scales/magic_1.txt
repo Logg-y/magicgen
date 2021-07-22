@@ -8,7 +8,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 10
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "Magic boost"
@@ -20,7 +20,7 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_0popok
+#req_pop0ok
 #req_rare 50
 #req_targmindless 0
 #nolog

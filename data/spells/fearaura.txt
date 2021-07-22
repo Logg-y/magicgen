@@ -21,16 +21,19 @@
 
 
 #paths 32
-#secondarypaths 4
+#secondarypaths 0
 
-#namecond effectiveaoe < 2 32 "Aura of Terror"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Aura of Terror"
 
-#namecond2 2 <= effectiveaoe < 600 32 "Warriors of Terror"
-#namecond effectiveaoe > 600 32 "Army of Terror"
+#namecond2 2 <= effectiveaoe < 600 32 "NAMEPREFIX Warriors of Terror"
+#namecond effectiveaoe > 600 32 "NAMEPREFIX Army of Terror"
 
 #details "Grants +5 Fear."
 
 #descr 32 "SUBJECT %is% surrounded by a frightening aura which may cause nearby enemies to flee in terror."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of fearful auras"
 
 #end
 

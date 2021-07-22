@@ -68,3 +68,8 @@ class NameCond(object):
 
         debuglog(f"{descrstring} -> {returnval}", debugkeys.CONDITIONTESTING)
         return returnval
+    def __repr__(self):
+        if self.val2 is None:
+            return(f"NameCond({self.param} {self.op} {self.val})")
+        else:
+            return(f"NameCond({self.val2} {self.op2} {self.param} {self.op} {self.val})")

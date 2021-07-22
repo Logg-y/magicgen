@@ -21,7 +21,7 @@
 
 #spelltype 528
 
-#scalerate 0.7
+#scalerate 1
 #scalefatiguemult 40
 #end
 
@@ -33,7 +33,7 @@
 #maxpower 14
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 200
 #schools 1
 
 #paths 128
@@ -46,10 +46,10 @@
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 220
+#scalefatigueexponent -1.6
+#scalefatiguemult 120
 
-#scalerate 1
+#scalerate 1.6
 #end
 
 #neweffect "serpentfiend Remote Assassination"

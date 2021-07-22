@@ -3,11 +3,11 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.4
 
 #unitmod "Summon Stopthedead"
 #descr "Undead wounded by the attacks of the %creature% may become paralyzed."

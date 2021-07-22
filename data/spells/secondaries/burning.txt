@@ -1,4 +1,4 @@
-#newsecondary "Ignite"
+#newsecondary "Burning nondamaging mrne"
 
 -- evo only
 #spelltype 2
@@ -6,26 +6,72 @@
 #paths 1
 #power 0
 
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
--- no additional burning for burning spells
-#req damage != 512
 -- not ritual
 #req spelltype !& 4
+#req damage != 512
+#req paths != 256
 
-#nextspell "Additional Burning"
+#nameprefix "Fiery"
+#fatiguepersquare 2
 
-#descr "Creatures affected by this also burst into flames."
+
+#nextspell "Burning Secondary mrne"
+
+#descr "A sudden and intense burst of heat may cause those affected by the spell to catch fire."
+#details "Affected creatures make an easy MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
+#end
+
+#newsecondary "Burning nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#req paths != 256
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 512
+
+#nameprefix "Incendiary"
+#fatiguepersquare 6
+
+
+#nextspell "Burning Secondary mrn"
+
+#descr "A sudden and intense burst of heat may cause those affected by the spell to catch fire."
+#details "Affected creatures make an MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 
 #end
 
 
-#newsecondary "Ignite damaging"
+#newsecondary "Burning damaging mrne"
 
 -- evo only
 #spelltype 2
@@ -33,19 +79,74 @@
 #paths 1
 #power 0
 
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
---#req paths != 256
+#req paths != 256
 
-
--- no additional burning for burning spells
-#req damage != 512
 -- not ritual
 #req spelltype !& 4
+#req damage != 512
 
-#nextspell "Additional Burning"
+#req nonscalingdamage < 40
 
-#descr "Creatures affected by this also burst into flames."
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Fiery"
+#fatiguepersquare 1.6
+
+#nextspell "Burning Secondary mrne damaging"
+
+#descr "A sudden and intense burst of heat may cause those wounded by the spell to catch fire."
+#details "Wounded creatures make an easy MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
+#end
+
+#newsecondary "Burning damaging mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- not holy okay
+#req paths != 256
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 512
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Incendiary"
+#fatiguepersquare 4
+
+#nextspell "Burning Secondary mrn damaging"
+
+#descr "A sudden and intense burst of heat may cause those wounded by the spell to catch fire."
+#details "Wounded creatures make an MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
 
 #end

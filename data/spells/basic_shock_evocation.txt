@@ -50,12 +50,20 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE $charge$ down from the $sky$ upon his enemies."
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Lightning"
+#namecond range < 10 16 "NAMEPREFIX Touch of Lightning"
+#namecond range < 10 128 "NAMEPREFIX Touch of Lightning"
+#descrcond range < 10 2 "The caster's touch unleashes lightning upon those close to him."
+#descrcond range < 10 16 "The caster's touch unleashes lightning upon those close to him."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes lightning upon those close to him."
 
 #maxpower 6
 
@@ -110,7 +118,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 50
+#fatiguecost 40
 #explspr 10241
 #sound 27
 
@@ -118,9 +126,9 @@
 #secondarypaths 2
 #pathskipchance 16 95
 
-#name 2 "Thunder Strike"
-#name 16 "Thunder Strike"
-#name 128 "Thunder Strike"
+#name 2 "NAMEPREFIX Thunder Strike"
+#name 16 "NAMEPREFIX Thunder Strike"
+#name 128 "NAMEPREFIX Thunder Strike"
 #descr 2 "A bolt of lightning is called from the $sky$ upon some enemies."
 #descr 16 "A bolt of lightning is called from the $sky$ upon some enemies."
 #descr 128 "$BLOOD_INTRO$, the caster directs a charge down from the $sky$ upon his enemies."
@@ -133,6 +141,14 @@
 #spelltype 66
 #scalerate 1
 #schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Thunderous Touch"
+#namecond range < 10 16 "NAMEPREFIX Thunderous Touch"
+#namecond range < 10 128 "NAMEPREFIX Thunderous Touch"
+#descrcond range < 10 2 "The caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
+#descrcond range < 10 16 "The caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
 #end
 
 
@@ -156,11 +172,11 @@
 
 #paths 138
 #secondarypaths 2
-#pathskipchance 8 80
+#pathskipchance 8 95
 
-#name 2 "Chain Lightning"
-#name 8	"Charge Ground"
-#name 128 "Chain Lightning"
+#name 2 "NAMEPREFIX Chain Lightning"
+#name 8	"NAMEPREFIX Charge Ground"
+#name 128 "NAMEPREFIX Chain Lightning"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby."
 #descr 8 "Electrical charge is brought from $underground$ to the battlefield. This then discharges on its own accord, damaging and arcing to anything nearby."
 #descr 128 "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to sustain an electrical charge. The %charge% then discharges on %its% own accord, damaging and arcing to anything nearby."
@@ -171,6 +187,12 @@
 #scalerate 0.6
 -- #scalecost 1.4
 #schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Leaping Lightning"
+#namecond range < 10 8 "NAMEPREFIX Touch of Leaping Lightning"
+#descrcond range < 10 2 "The caster's touch unleashes chain lightning which leaps to surrounding foes."
+#descrcond range < 10 8 "The caster's touch unleashes a massive electrical charge from $underground$. This unleashes chain lighting on nearby foes."
 #end
 
 #neweffect "Shock Evo Chain Projectile"
@@ -195,7 +217,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Orb Lightning"
+#name 2 "NAMEPREFIX Orb Lightning"
 #descr 2 "The mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 
 
@@ -204,6 +226,10 @@
 #scalerate 0.7
 -- #scalecost 1.4
 #schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Electrocution"
+#descrcond range < 10 2 "The caster's touch orbs of chain lightning which leap to surrounding foes."
 #end
 
 
@@ -228,8 +254,9 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Unending Chain Lightning"
+#name 2 "Unending NAMEPREFIX Chain Lightning"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby. The charge created by this particular spell persists for an exceptionally large number of bounces."
+
 
 
 -- evo, scale numbounces
@@ -238,6 +265,10 @@
 #scalefatigueexponent 1.3
 -- #scalecost 1.4
 #schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Leaping Lightning"
+#descrcond range < 10 2 "The caster's touch unleashes chain lightning which leaps to surrounding foes."
 #end
 
 #neweffect "Shock Evo Chaincloud"
@@ -264,7 +295,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Fountain of Lightning"
+#name 2 "NAMEPREFIX Fountain of Lightning"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. Charges are then free to flow out of this point for some time after its creation, shocking those nearby."
 
 
@@ -273,6 +304,11 @@
 #scalerate 0.7
 -- #scalecost 1.4
 #schools 4
+
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Recurring Shocks"
+#descrcond range < 10 2 "The caster's touch calls a lightning storm that continually releases bursts of chain lightning upon nearby foes."
 #end
 
 
@@ -299,9 +335,9 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
@@ -336,9 +372,9 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
@@ -373,9 +409,9 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
@@ -410,9 +446,9 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."
@@ -447,9 +483,9 @@
 #paths 146
 #secondarypaths 2
 
-#name 2 "Lightning %bolt%"
-#name 16 "Lightning %bolt%"
-#name 128 "Lightning %bolt%"
+#name 2 "NAMEPREFIX Lightning %bolt%"
+#name 16 "NAMEPREFIX Lightning %bolt%"
+#name 128 "NAMEPREFIX Lightning %bolt%"
 #descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ across the whole battlefield."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE charges down from the $sky$ across the whole battlefield."

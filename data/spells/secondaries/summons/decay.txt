@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.4
 
 #unitmod "Summon Decayweapon"
 #descr "Creatures wounded by the summoned %creature% will begin to wither and die if they fail to resist the effect."

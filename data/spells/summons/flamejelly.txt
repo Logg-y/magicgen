@@ -16,7 +16,7 @@
 
 #skipchance 97
 
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
 #name 1 "Summon NAMEPREFIX Flame %Jelly%"
 #descr 1 "The caster calls forth ARTICLE flame %jelly% to attack his enemies. Flame jellies are very resistant to magic and are surrounded by strange heat and flames, but are very vulnerable to physical damage."

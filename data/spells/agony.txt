@@ -46,8 +46,10 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Agony"
+#name 128 "NAMEPREFIX Agony"
 #descr 128 "The mage kills one or more blood slaves in an extremely painful way and transfers their pain onto a large number of enemies. Being struck by this pain is unbearable and has a truly devastating effect on morale. Undead units are not affected by this spell."
 
-
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of Agony"
+#descrcond range < 10 128 "The caster's touch radiates immense pain to those in the vicinity. Being struck by this pain is unbearable and has a truly devastating effect on morale. Undead units are not affected by this spell."
 #end

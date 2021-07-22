@@ -24,13 +24,16 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe < 2 2 "Flight"
+#namecond effectiveaoe < 2 2 "NAMEPREFIX Flight"
 
-#namecond2 2 <= effectiveaoe < 666 2 "Group Flight"
+#namecond2 2 <= effectiveaoe < 666 2 "NAMEPREFIX Group Flight"
 
-#namecond effectiveaoe == 666 2 "Mass Flight"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Mass Flight"
 
 #descr 2 "Grants SUBJECT the ability to fly."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of flight"
 
 #end
 
@@ -62,13 +65,16 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe < 2 2 "Flight"
+#namecond effectiveaoe < 2 2 "NAMEPREFIX Flight"
 
-#namecond2 2 <= effectiveaoe < 666 2 "Group Flight"
+#namecond2 2 <= effectiveaoe < 666 2 "NAMEPREFIX Group Flight"
 
-#namecond effectiveaoe == 666 2 "Mass Flight"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Mass Flight"
 
 #descr 2 "Grants SUBJECT the ability to fly."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of flight"
 
 #end
 

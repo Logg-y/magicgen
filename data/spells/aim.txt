@@ -24,26 +24,31 @@
 
 #details "Grants +5 precision."
 
-#namecond effectiveaoe <= 1 2 "Aim"
-#namecond effectiveaoe <= 1 64 "Eagle Eyes"
-#namecond effectiveaoe <= 1 64 "Hawk Eyes"
-#namecond effectiveaoe <= 1 64 "Keen Eyes"
-#namecond effectiveaoe <= 1 128 "Infernal Accuracy"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX Aim"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Eagle Eyes"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Hawk Eyes"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Keen Eyes"
+#namecond effectiveaoe <= 1 128 "NAMEPREFIX Infernal Accuracy"
 
-#namecond2 1 < effectiveaoe < 66 2 "Group Aim"
-#namecond2 1 < effectiveaoe < 66 64 "Gift of the Eagle"
-#namecond2 1 < effectiveaoe < 66 64 "Gift of the Hawk"
-#namecond2 1 < effectiveaoe < 66 2 "True Shots"
-#namecond2 1 < effectiveaoe < 66 128 "Infernal Accuracy"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX Group Aim"
+#namecond2 1 < effectiveaoe < 66 64 "NAMEPREFIX Gift of the Eagle"
+#namecond2 1 < effectiveaoe < 66 64 "NAMEPREFIX Gift of the Hawk"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX True Shots"
+#namecond2 1 < effectiveaoe < 66 128 "NAMEPREFIX Infernal Accuracy"
 
-#namecond effectiveaoe == 666 2 "Wind Guide"
-#namecond effectiveaoe == 666 64 "Eagle Eyed Army"
-#namecond effectiveaoe == 666 128 "Mass Infernal Accuracy"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Wind Guide"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Eagle Eyed Army"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Mass Infernal Accuracy"
 
 #descr 2 "SUBJECT gains great appreciation of the way the wind is blowing across the battlefield, allowing PRONOUN to be more accurate with ranged attacks."
 #descr 64 "SUBJECT gains the vision of a keen-eyed bird, allowing PRONOUN to be more accurate with ranged attacks."
 #descr 128 "$BLOOD_INTRO$, infernal creatures alter the aim of SUBJECT to make them considerably more accurate."
 
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of aiming"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of eagle eyes"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
 #end
 
 
@@ -71,24 +76,29 @@
 
 #details "Grants +5 precision."
 
-#namecond effectiveaoe <= 1 2 "Aim"
-#namecond effectiveaoe <= 1 64 "Eagle Eyes"
-#namecond effectiveaoe <= 1 64 "Hawk Eyes"
-#namecond effectiveaoe <= 1 64 "Keen Eyes"
-#namecond effectiveaoe <= 1 128 "Infernal Accuracy"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX Aim"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Eagle Eyes"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Hawk Eyes"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Keen Eyes"
+#namecond effectiveaoe <= 1 128 "NAMEPREFIX Infernal Accuracy"
 
-#namecond2 1 < effectiveaoe < 66 2 "Group Aim"
-#namecond2 1 < effectiveaoe < 66 64 "Gift of the Eagle"
-#namecond2 1 < effectiveaoe < 66 64 "Gift of the Hawk"
-#namecond2 1 < effectiveaoe < 66 2 "True Shots"
-#namecond2 1 < effectiveaoe < 66 128 "Infernal Accuracy"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX Group Aim"
+#namecond2 1 < effectiveaoe < 66 64 "NAMEPREFIX Gift of the Eagle"
+#namecond2 1 < effectiveaoe < 66 64 "NAMEPREFIX Gift of the Hawk"
+#namecond2 1 < effectiveaoe < 66 2 "NAMEPREFIX True Shots"
+#namecond2 1 < effectiveaoe < 66 128 "NAMEPREFIX Infernal Accuracy"
 
-#namecond effectiveaoe == 666 2 "Wind Guide"
-#namecond effectiveaoe == 666 64 "Eagle Eyed Army"
-#namecond effectiveaoe == 666 128 "Mass Infernal Accuracy"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Wind Guide"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Eagle Eyed Army"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Mass Infernal Accuracy"
 
 #descr 2 "SUBJECT gains great appreciation of the way the wind is blowing across the battlefield, allowing PRONOUN to be more accurate with ranged attacks."
 #descr 64 "SUBJECT gains the vision of a keen-eyed bird, allowing PRONOUN to be more accurate with ranged attacks."
 #descr 128 "$BLOOD_INTRO$, infernal creatures alter the aim of SUBJECT to make them considerably more accurate."
 
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of aiming"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of eagle eyes"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
 #end

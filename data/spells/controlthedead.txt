@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 #secondarypathchance 0
-#name 32 "Control the Dead"
+#name 32 "NAMEPREFIX Control the Dead"
 
 #descr 32 "The necromancer attempts to wrest control of undead in a SIZE area. Those that resist serve him instead of their original master."
 
@@ -23,6 +23,11 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 32
+
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of undead control"
+#namecond range < 10 32 "NAMEPREFIX Touch of Undead Control"
 #end
 
 #neweffect "Control the Dead Battlefield"
@@ -41,7 +46,7 @@
 #paths 32
 #secondarypaths 32
 #secondarypathchance 0
-#name 32 "Control the Dead"
+#name 32 "NAMEPREFIX Control the Dead"
 
 #descr 32 "The necromancer attempts to take control of all undead on the battlefield."
 
@@ -50,4 +55,7 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 32
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of undead control"
 #end

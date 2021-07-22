@@ -17,7 +17,7 @@
 #ainocast 1
 
 #skipchance 97
-#scalefatiguemult 110
+#scalefatiguemult 15
 
 #details "The elementals are size 4."
 #name 4 "Summon NAMEPREFIX Large Living %Mercury%"
@@ -65,8 +65,8 @@
 #power 8
 #maxpower 8
 #nreff 1
-#pathlevel 4
-#fatiguecost 900
+#pathlevel 5
+#fatiguecost 1300
 #schools 1
 #skipchance 99
 

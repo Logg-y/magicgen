@@ -16,11 +16,15 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Astral Torrent"
+#name 16 "NAMEPREFIX Astral Torrent"
 #descr 16 "The caster brings a torrent of strange energy down upon SUBJECT. It requires a great deal of skill to be able to manipulate energy this way, but the damage caused by the energy cannot be resisted."
 
 -- evo-like, scale aoe
 #spelltype 34
 #scalerate 1
 #schools 4
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Energy"
+#descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #end

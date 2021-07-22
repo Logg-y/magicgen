@@ -29,6 +29,7 @@
 
 #aoe 0
 #power 7
+#maxpower 7
 #pathlevel 2
 #explspr 10034
 #sound 16
@@ -40,16 +41,70 @@
 #paths 129
 #secondarypaths 1
 
-#details "Phoenix Pyre: Explosion damage: 10 AP fire dmg, explosion area 50, fatigue upon death: 30+d20. Also grants +5 fire resistance."
+#details "Phoenix Pyre: Upon death, explode into 10 AP fire dmg with area of effect 50. If the creature's fatigue is less than 100, it respawns at a random location on the battlefield and gains 30+d20 fatigue. Also grants +10 fire resistance."
 
-#namecond effectiveaoe < 1 1 "Phoenix Pyre"
-#namecond effectiveaoe < 1 128 "Demonic Immortality"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Phoenix Pyre"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Demonic Immortality"
 
-#namecond effectiveaoe >= 1 1 "Gift of the Phoenix"
-#namecond effectiveaoe >= 1 128 "Gift of Demonic Immortality"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Gift of the Phoenix"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Gift of Demonic Immortality"
 
 #descr 1 "SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of the phoenix"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of demonic immortality"
+
+#end
+
+
+
+#neweffect "Phoenix Pyre others only"
+#effect 23
+#damage 134217728
+#spec 16384
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+-- #scalecost 10
+
+#nextspell "PPyre fire res"
+
+
+#aoe 0
+#power 8
+#maxpower 16
+#pathlevel 2
+#explspr 10034
+#sound 16
+#range 10
+#fatiguecost 20
+
+#ainocast 1
+
+
+-- fire, blood
+#paths 129
+#secondarypaths 1
+
+#details "Phoenix Pyre: Upon death, explode into 10 AP fire dmg with area of effect 50. If the creature's fatigue is less than 100, it respawns at a random location on the battlefield and gains 30+d20 fatigue. Also grants +10 fire resistance."
+
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Phoenix Pyre"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Demonic Immortality"
+
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Gift of the Phoenix"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Gift of Demonic Immortality"
+
+#descr 1 "SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% granted a form of limited immortality. When killed, they explode and reappear somewhere else on the battlefield, however this is tiring and does not function when exhausted."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of the phoenix"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of demonic immortality"
 
 #end
 

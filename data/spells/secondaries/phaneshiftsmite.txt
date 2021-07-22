@@ -14,7 +14,7 @@
 
 -- not ritual
 #req spelltype !& 4
-#req path == 256
+#req paths == 256
 
 
 #nextspell "Planeshift Smite"

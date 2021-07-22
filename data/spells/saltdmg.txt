@@ -1,0 +1,31 @@
+#neweffect "Salt Evo Instant"
+#effect 142
+#damage 1003
+#spec 16512
+#aoe 1
+#power -2
+#maxpower 7
+#precision 1
+#range 30
+#pathlevel 1
+#fatiguecost 5
+#explspr 10145
+#sound 21
+
+#skipchance 50
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Burst of Salt"
+
+#descr 8 "Salt suddenly falls upon a SIZE area. This spell is harmless to most creatures, however beings vulnerable to salt such as many spectral undead or Jinn may be harmed and stunned by this spell."
+
+#spelltype 42
+#scalerate 1
+#schools 4
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX Touch of Salt"
+
+#end

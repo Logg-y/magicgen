@@ -23,13 +23,13 @@
 
 #details "Summons a random adventurer for the battle. Nine types of adventurer can answer the call, including a nature mage, a fire mage, a death mage, a priest, a shortbowman, and a crossbowman."
 
-#name 1 "Enlist Adventurer"
-#name 2 "Enlist Adventurer"
-#name 4 "Enlist Adventurer"
-#name 8 "Enlist Adventurer"
-#name 16 "Teleport Adventurer"
-#name 32 "Enlist Adventurer"
-#name 64 "Charm Adventurer"
+#name 1 "Enlist %Adventurer%"
+#name 2 "Enlist %Adventurer%"
+#name 4 "Enlist %Adventurer%"
+#name 8 "Enlist %Adventurer%"
+#name 16 "Teleport %Adventurer%"
+#name 32 "Enlist %Adventurer%"
+#name 64 "Charm %Adventurer%"
 #descr 1 "The caster enlists the help of ARTICLE_N %adventurer% to help him for the current battle. The adventurers are magically brought close to the battlefield. They leave after the immediate conflict is over. There is no way to know which adventurers will appear to help in the battle."
 #descr 2 "The caster enlists the help of ARTICLE_N %adventurer% to help him for the current battle. The adventurers are magically brought close to the battlefield. They leave after the immediate conflict is over. There is no way to know which adventurers will appear to help in the battle."
 #descr 4 "The caster enlists the help of ARTICLE_N %adventurer% to help him for the current battle. The adventurers are magically brought close to the battlefield. They leave after the immediate conflict is over. There is no way to know which adventurers will appear to help in the battle."
@@ -38,7 +38,7 @@
 #descr 16 "The caster teleports ARTICLE nearby %adventurer% to the battlefield and alters PRONOUN_POS mind to assist in battle. The spell will wear off after battle if the adventurer survives the conflict."
 #descr 64 "The caster draws ARTICLE nearby %adventurer% to the battlefield and charms PRONOUN to assist in battle. The spell will wear off after battle if the adventurer survives the conflict."
 
-#scalefatiguemult 20
+#scalefatiguemult 5
 #spelltype 528
 
 #scalerate 1

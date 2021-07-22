@@ -23,9 +23,11 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Strike through Space"
+#name 16 "NAMEPREFIX Strike through Space"
 
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a blunt fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
+
+
 
 #end
 
@@ -58,11 +60,15 @@
 #secondarypaths 24
 #secondarypathchance 100
 
-#name 16 "Farstrike"
-#name 8 "Farstrike"
+#name 16 "NAMEPREFIX Farstrike"
+#name 8 "NAMEPREFIX Farstrike"
 
 #descr 8 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a magically hardened fist. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a magically hardened fist. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX nearstrike"
+#namecond range < 10 8 "NAMEPREFIX nearstrike"
 
 #end
 
@@ -95,11 +101,15 @@
 #secondarypaths 24
 #secondarypathchance 100
 
-#name 16 "Farspike"
-#name 8 "Farspike"
+#name 16 "NAMEPREFIX Farspike"
+#name 8 "NAMEPREFIX Farspike"
 
 #descr 8 "The caster opens a rift in space through which he attempts to impale his victim on a magical spike. Stronger casters will hurt their target more severely."
 #descr 16 "The caster opens a rift in space through which he attempts to impale his victim on a magical spike. Stronger casters will hurt their target more severely."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX nearspike"
+#namecond range < 10 8 "NAMEPREFIX nearspike"
 
 #end
 
@@ -150,8 +160,8 @@
 #secondarypathchance 100
 #skipchance 95
 
-#name 1 "Blazing Fist"
-#name 16 "Blazing Fist"
+#name 1 "NAMEPREFIX Blazing Fist"
+#name 16 "NAMEPREFIX Blazing Fist"
 #nextspell "Flaming Fist Effect"
 
 #descr 1 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a burning fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
@@ -204,8 +214,8 @@
 #secondarypathchance 100
 #skipchance 95
 
-#name 4 "Fist of Ice"
-#name 16 "Fist of Ice"
+#name 4 "NAMEPREFIX Fist of Ice"
+#name 16 "NAMEPREFIX Fist of Ice"
 #nextspell "Chilling Fist Effect"
 
 #descr 4 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a frozen fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
@@ -255,8 +265,8 @@
 #secondarypathchance 100
 #skipchance 95
 
-#name 2 "Shocking Fist"
-#name 16 "Shocking Fist"
+#name 2 "NAMEPREFIX Shocking Fist"
+#name 16 "NAMEPREFIX Shocking Fist"
 #nextspell "Shocking Fist Effect"
 
 #descr 2 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a shocking fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
@@ -312,9 +322,9 @@
 #secondarypathchance 100
 #skipchance 92
 
-#name 32 "Draining Fist"
-#name 16 "Draining Fist"
-#name 128 "Draining Fist"
+#name 32 "NAMEPREFIX Draining Fist"
+#name 16 "NAMEPREFIX Draining Fist"
+#name 128 "NAMEPREFIX Draining Fist"
 #nextspell "Draining Fist Effect"
 
 #descr 32 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a shadowy fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely. Should the target be wounded by the initial hit, the caster attempts to drain the target's life force through the brief physical connection."
@@ -366,8 +376,8 @@
 #secondarypathchance 100
 #skipchance 92
 
-#name 64 "Toxic Fist"
-#name 16 "Toxic Fist"
+#name 64 "NAMEPREFIX Toxic Fist"
+#name 16 "NAMEPREFIX Toxic Fist"
 #nextspell "Toxic Fist Effect"
 
 #descr 64 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a poisonous fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely. Should the target be wounded by the initial hit, magical poison discharges into the target."

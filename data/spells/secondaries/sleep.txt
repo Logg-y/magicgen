@@ -1,4 +1,4 @@
-#newsecondary "Sleep"
+#newsecondary "Sleep nondamaging mrne"
 
 -- evo only
 #spelltype 2
@@ -6,30 +6,69 @@
 #paths 64
 #power 0
 
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Drowsy"
+#fatiguepersquare 4
+
+#req damage != 1024
+
+
+#nextspell "Sleep Secondary mrne"
+
+#descr "This spell is imbued with strange energy that may cause those affected to fall asleep."
+
+#end
+
+#newsecondary "Sleep nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 1024
 
--- not demons/undead only
-#req spec !& 8
+#nameprefix "Sleepy"
+#fatiguepersquare 7
 
-#nextspell "Additional Sleep"
 
-#descr "Residual energy from this spell attempts to force those affected into a magical slumber."
+#nextspell "Sleep Secondary mrn"
+
+#descr "This spell is imbued with strange energy that may cause those affected to fall asleep."
 
 #end
 
 
-#newsecondary "Sleep Damaging"
+#newsecondary "Sleep damaging mrne"
 
 -- evo only
 #spelltype 2
@@ -38,25 +77,75 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 #req paths != 256
-#offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req damage != 1024
 
--- not demons/undead only
-#req spec !& 8
 
-#nextspell "Additional Sleep"
+#req nonscalingdamage < 40
 
-#descr "Residual energy from this spell attempts to force those affected into a magical slumber."
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Drowsy"
+#fatiguepersquare 3
+
+#nextspell "Sleep Secondary mrne damaging"
+
+#descr "This spell is imbued with strange energy that may cause those it wounds to fall asleep."
 
 #end
 
-#newsecondary "Sleep Smite"
+#newsecondary "Sleep mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Sleepy"
+#fatiguepersquare 6
+
+#nextspell "Sleep Secondary mrn damaging"
+
+#descr "This spell is imbued with strange energy that may cause those it wounds to fall asleep."
+
+
+#end
+
+#newsecondary "Sleep holy only"
 
 -- evo only
 #spelltype 2
@@ -65,19 +154,27 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe == 0
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
 #req paths == 256
 
 -- not ritual
 #req spelltype !& 4
-#req damage != 1024
 
--- not demons/undead only
-#req spec !& 8
+#nameprefix "Sleepy"
+#fatiguepersquare 6
 
-#nextspell "Additional Sleep Smite"
+#nextspell "Sleep Secondary mrn damaging"
 
-#descr "Residual energy from this spell attempts to force the target into a magical slumber."
+#descr "This spell is imbued with strange energy that may cause those it wounds to fall asleep."
+
 
 #end

@@ -8,9 +8,9 @@
 #precision -100
 #nreff 1
 #pathlevel 3
-#chassisvalue 60
+#chassisvalue 80
 #range 6
-#fatiguecost 60
+#fatiguecost 80
 #explspr 10232
 #sound 31
 #schools 1
@@ -23,7 +23,7 @@
 #name 32 "Summon NAMEPREFIX Bane %Lord%"
 #descr 32 "The caster summons ARTICLE %Bane Lord% to fight for him on the battlefield. The %Bane Lord% %is% ARTICLE powerful undead %general% surrounded by a freezing wind, but will leave once the battle is over."
 
-#scalefatiguemult 40
+#scalefatiguemult 10
 #spelltype 528
 
 #scalerate 1

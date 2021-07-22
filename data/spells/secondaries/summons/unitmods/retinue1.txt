@@ -1,0 +1,107 @@
+#newunitmod "Summon Retinue 1 RL3"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL3"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL4"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL4"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL5"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL5"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL6"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL6"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 1
+#end
+
+#newunitmod "Summon Retinue 1 RL7"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL7"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL8"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL8"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL9"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL9"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL10"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL10"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL11"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL11"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL12"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL12"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL13"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL13"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end
+
+#newunitmod "Summon Retinue 1 RL14"
+#nameprefix "Guarded"
+#eventset "Summon Retinue RL14"
+#attributeforrandomunit "batstartsum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by one magical creature."
+#req batstartsum1 <= 0
+#end

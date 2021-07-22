@@ -96,7 +96,7 @@
 #secondarypaths 0
 #secondarypathchance 0
 
-#skipchance 67
+#skipchance 30
 
 #details "There are six commanders that can be called with this spell."
 #name 128 "Bind Demon Lord"

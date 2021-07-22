@@ -1,7 +1,7 @@
-#neweffect "Web Secondary"
+#neweffect "Web Secondary mrn"
 #effect 11
 #damage 536870912
-#spec 4398058061824
+#spec 10506240
 
 #schools -1
 #paths -1
@@ -9,7 +9,8 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10336
 #sound 114
@@ -32,3 +33,114 @@
 
 
 #end
+
+#neweffect "Web Secondary mrne"
+#effect 11
+#damage 536870912
+#spec 27279360
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10336
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Web"
+#name 2 "$Additional$ Web"
+#name 4 "$Additional$ Web"
+#name 8 "$Additional$ Web"
+#name 16 "$Additional$ Web"
+#name 32 "$Additional$ Web"
+#name 64 "$Additional$ Web"
+#name 128 "$Additional$ Web"
+#name 256 "$Additional$ Web"
+
+
+#end
+
+
+
+#neweffect "Web Secondary mrn damaging"
+#effect 11
+#damage 536870912
+#spec 10506240
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10336
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Web"
+#name 2 "$Additional$ Web"
+#name 4 "$Additional$ Web"
+#name 8 "$Additional$ Web"
+#name 16 "$Additional$ Web"
+#name 32 "$Additional$ Web"
+#name 64 "$Additional$ Web"
+#name 128 "$Additional$ Web"
+#name 256 "$Additional$ Web"
+
+
+#end
+
+#neweffect "Web Secondary mrne damaging"
+#effect 11
+#damage 536870912
+#spec 27279360
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10336
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Web"
+#name 2 "$Additional$ Web"
+#name 4 "$Additional$ Web"
+#name 8 "$Additional$ Web"
+#name 16 "$Additional$ Web"
+#name 32 "$Additional$ Web"
+#name 64 "$Additional$ Web"
+#name 128 "$Additional$ Web"
+#name 256 "$Additional$ Web"
+
+
+#end
+

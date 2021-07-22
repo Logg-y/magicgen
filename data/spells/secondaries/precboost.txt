@@ -1,0 +1,57 @@
+#newsecondary "Precboost Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 66
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 4
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Accurate"
+#fatiguepersquare 1
+
+
+#nextspell "Precboost Secondary mrn"
+
+#descr "This spell may also make those it affects more accurate with ranged attacks."
+#details "Affected creatures make an MR check. Failing this check grants +5 precision."
+
+#end
+
+#newsecondary "Precboost Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 66
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 4
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Precise"
+#fatiguepersquare 0.5
+
+
+#nextspell "Precboost Secondary mrne"
+
+#descr "This spell may also make those it affects more accurate with ranged attacks."
+#details "Affected creatures make an easy MR check. Failing this check grants +5 precision."
+
+#end

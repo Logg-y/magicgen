@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1
-#scalefatiguemult 30
+#scalefatiguemult 10
 #end
 
 #neweffect "seaserpent ritual"
@@ -56,7 +56,7 @@
 #effect 10050
 #provrange 4
 #damage 565
-#spec 41959424
+#spec 8404992
 #power 8
 #maxpower 8
 #nreff 1
@@ -79,7 +79,7 @@
 #effect 10038
 #provrange 4
 #damage 565
-#spec 41959424
+#spec 8404992
 #power 5
 #maxpower 15
 #nreff 1001

@@ -6,8 +6,8 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 1
-#fatiguecost 80
+#pathlevel 2
+#fatiguecost 60
 #sound 44
 #schools 1
 
@@ -16,7 +16,7 @@
 
 #skipchance 97
 
-#scalefatiguemult 40
+--#scalefatiguemult 20
 #aispellmod -20
 
 #name 64 "Summon Horned Serpents"
@@ -51,7 +51,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 50
 
-#scalerate 1
+#scalerate 2
 #end
 
 #neweffect "Hornedserpent Remote Assassination"

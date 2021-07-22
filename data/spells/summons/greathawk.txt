@@ -10,7 +10,7 @@
 #fatiguecost 40
 #sound 31
 #schools 1
-#scalefatiguemult 2
+--#scalefatiguemult 2
 
 #paths 2
 #secondarypaths 2

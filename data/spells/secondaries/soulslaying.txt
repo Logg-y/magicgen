@@ -1,0 +1,29 @@
+#newsecondary "Soul slaying"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+#scalefatigueexponent 0.3
+#pathperresearch 0.1
+#req effect == 2
+-- not ritual
+#req spelltype !& 4
+
+-- don't apply to dummy spells like in battle horror seed
+#req damage > 3
+
+#nameprefix "Soulslaying"
+#mult fatiguecost 1.15
+
+-- not for holy
+#req paths != 256
+
+#req spec !& 256
+
+#spec 256
+
+#descr "This spell is imbued with strange magic that forcefully rips the souls out of creatures it kills."
+
+#end

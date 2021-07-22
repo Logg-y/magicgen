@@ -21,24 +21,28 @@
 #paths 130
 #secondarypaths 2
 
-#namecond effectiveaoe < 660 2 "$illusory$ $fetters$"
-#namecond effectiveaoe < 660 128 "$illusory$ $fetters$"
+#namecond effectiveaoe < 660 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX $illusory$ $fetters$"
 
-#namecond effectiveaoe > 666 2 "$illusory$ $fetters$"
-#namecond effectiveaoe > 666 128 "$illusory$ $fetters$"
+#namecond effectiveaoe > 666 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe > 666 128 "NAMEPREFIX $illusory$ $fetters$"
 
-#namecond effectiveaoe == 665 2 "Shackled Army"
-#namecond effectiveaoe == 665 128 "Shackled Army"
+#namecond effectiveaoe == 665 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 665 128 "NAMEPREFIX Shackled Army"
 
-#namecond effectiveaoe == 666 2 "Shackled Army"
-#namecond effectiveaoe == 666 128 "Shackled Army"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Shackled Army"
 
-#namecond effectiveaoe == 663 2 "Shackled Army"
-#namecond effectiveaoe == 663 128 "Shackled Army"
+#namecond effectiveaoe == 663 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 663 128 "NAMEPREFIX Shackled Army"
 
 #descr 2 "$illusory$ $fetters$ spring into existence around the ankles of SUBJECT. Their magic must be overcome in order to take actions."
 #descr 128 "$BLOOD_INTRO$, infernal powers bind the ankles of SUBJECT with $illusory$ $fetters$. Their magic must be overcome in order to take actions."
 #details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
 
 #end
 

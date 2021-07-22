@@ -22,17 +22,23 @@
 #paths 12
 #secondarypaths 8
 
-#namecond effectiveaoe == 0 4 "Soften Earth"
-#namecond effectiveaoe == 0 8 "Earth Grip"
-#namecond effectiveaoe < 20 4 "Soften Land"
-#namecond effectiveaoe < 20 8 "Earth Meld"
-#namecond effectiveaoe >= 20 4 "Soften Landscape"
-#namecond effectiveaoe >= 20 8 "Opening of the Earth"
+#namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
+#namecond effectiveaoe == 0 8 "NAMEPREFIX Earth Grip"
+#namecond effectiveaoe < 20 4 "NAMEPREFIX Soften Land"
+#namecond effectiveaoe < 20 8 "NAMEPREFIX Earth Meld"
+#namecond effectiveaoe >= 20 4 "NAMEPREFIX Soften Landscape"
+#namecond effectiveaoe >= 20 8 "NAMEPREFIX Opening of the Earth"
 
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
 #descr 4 "The earth is made muddy and soft over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
 #descr 8 "The earth is commanded to open up over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of entombing"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of eagle eyes"
+#namecond range < 10 4 "NAMEPREFIX touch of soft earth"
+#namecond range < 10 8 "NAMEPREFIX touch of entombing"
 
 #end
 

@@ -5,10 +5,10 @@
 #power 3
 #maxpower 14
 #precision -2
-#nreff 2
+#nreff 1
 #pathlevel 3
-#fatiguecost 80
-#scalefatiguemult 40
+#fatiguecost 60
+--#scalefatiguemult 40
 #aispellmod 20
 #sound 31
 #schools 1

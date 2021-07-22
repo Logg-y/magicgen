@@ -6,7 +6,7 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 2
+#pathlevel 3
 #fatiguecost 60
 #sound 31
 #schools 1
@@ -16,7 +16,7 @@
 #secondarypaths 64
 
 #skipchance 97
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
 #name 64 "Summon NAMEPREFIX red cattle"
 #descr 64 "The caster summons ARTICLE red cattle. Red cattle are large bulls touched by the demon lord Geryon, making them resistant to fire and magic."

@@ -40,7 +40,7 @@
 
 #scalefatigueexponent 0
 
-#name 2 "Chilling Wind"
+#name 2 "NAMEPREFIX Chilling Wind"
 #descr 2 "Cold winds are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
 
 #nextspell "Chilling Winds Fatigue"
@@ -49,6 +49,8 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+
 #end
 
 
@@ -73,7 +75,7 @@
 #secondarypaths 4
 #secondarypathchance 3
 
-#name 2 "Chill Battlefield"
+#name 2 "NAMEPREFIX Chill Battlefield"
 #descr 2 "A bitter wind is brought onto the entire battlefield. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
 #nextspell "Chilling Winds Fatigue"
 

@@ -1,7 +1,7 @@
-#neweffect "Grip of the Earth"
+#neweffect "Earthmeld Secondary mrn"
 #effect 11
 #damage 16384
-#spec 70368753631232
+#spec 70368752586752
 
 
 #schools -1
@@ -17,12 +17,12 @@
 #range 5025
 
 
-#paths 4
-#secondarypaths 4
+#paths 12
+#secondarypaths 12
 
 #name 1 "Grip of the Earth"
 #name 2 "Grip of the Earth"
-#name 4 "Grip of the Earth"
+#name 4 "Softened Earth"
 #name 8 "Grip of the Earth"
 #name 16 "Grip of the Earth"
 #name 32 "Grip of the Earth"
@@ -33,12 +33,10 @@
 #end
 
 
-#neweffect "Greater Grip of the Earth"
+#neweffect "Earthmeld Secondary mrne"
 #effect 11
 #damage 16384
-
--- not def negates
-#spec 70368752582656
+#spec 70368769359872
 
 
 #schools -1
@@ -54,12 +52,84 @@
 #range 5025
 
 
-#paths 4
-#secondarypaths 4
+#paths 12
+#secondarypaths 12
 
 #name 1 "Grip of the Earth"
 #name 2 "Grip of the Earth"
-#name 4 "Grip of the Earth"
+#name 4 "Softened Earth"
+#name 8 "Grip of the Earth"
+#name 16 "Grip of the Earth"
+#name 32 "Grip of the Earth"
+#name 64 "Grip of the Earth"
+#name 128 "Grip of the Earth"
+#name 256 "Grip of the Earth"
+
+#end
+
+
+
+
+#neweffect "Earthmeld Secondary mrn damaging"
+#effect 11
+#damage 16384
+#spec 70368752586752
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 12
+#secondarypaths 12
+
+#name 1 "Grip of the Earth"
+#name 2 "Grip of the Earth"
+#name 4 "Softened Earth"
+#name 8 "Grip of the Earth"
+#name 16 "Grip of the Earth"
+#name 32 "Grip of the Earth"
+#name 64 "Grip of the Earth"
+#name 128 "Grip of the Earth"
+#name 256 "Grip of the Earth"
+
+#end
+
+
+#neweffect "Earthmeld Secondary mrne damaging"
+#effect 11
+#damage 16384
+#spec 70368769359872
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 12
+#secondarypaths 12
+
+#name 1 "Grip of the Earth"
+#name 2 "Grip of the Earth"
+#name 4 "Softened Earth"
 #name 8 "Grip of the Earth"
 #name 16 "Grip of the Earth"
 #name 32 "Grip of the Earth"

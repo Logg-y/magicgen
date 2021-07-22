@@ -8,7 +8,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 10
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "Order boost"
@@ -21,7 +21,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 10
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "Order boost"
@@ -34,7 +34,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 10
-#req_0popok
+#req_pop0ok
 #nolog
 #notext
 #msg "Order boost"

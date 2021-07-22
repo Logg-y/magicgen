@@ -23,7 +23,7 @@
 #end
 
 #rarity 5
-#req_0popok
+#req_pop0ok
 #req_ench ENCHANTID
 #req_rare 15
 #req_targorder 20

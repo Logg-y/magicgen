@@ -25,15 +25,18 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 1 8 "Temper Armor"
+#namecond effectiveaoe == 1 8 "NAMEPREFIX Temper Armor"
 
-#namecond2 1 < effectiveaoe < 666 8 "Toughen Steel"
+#namecond2 1 < effectiveaoe < 666 8 "NAMEPREFIX Toughen Steel"
 
-#namecond effectiveaoe == 666 8 "Legions of Steel"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Legions of Steel"
 
 #details "+3 protection to all armor parts."
 
 #descr 8 "The armor of SUBJECT is imbued with magic, making it temporarily stronger." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of tempered steel"
 
 #end
 
@@ -65,15 +68,18 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 1 8 "Temper Armor"
+#namecond effectiveaoe == 1 8 "NAMEPREFIX Temper Armor"
 
-#namecond2 1 < effectiveaoe < 666 8 "Toughen Steel"
+#namecond2 1 < effectiveaoe < 666 8 "NAMEPREFIX Toughen Steel"
 
-#namecond effectiveaoe == 666 8 "Legions of Steel"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Legions of Steel"
 
 #details "+3 protection to all armor parts."
 
 #descr 8 "The armor of SUBJECT is imbued with magic, making it temporarily stronger." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of tempered steel"
 
 #end
 

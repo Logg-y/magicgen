@@ -19,7 +19,7 @@
 #details "The elementals are size 6."
 #name 2 "Summon NAMEPREFIX Massive Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE air water %elemental%. They will fight for him until the battle ends."
-#scalefatiguemult 80
+#scalefatiguemult 25
 #spelltype 528
 
 #scalerate 1
@@ -62,7 +62,7 @@
 #maxpower 8 
 #nreff 1
 #pathlevel 5
-#fatiguecost 1000
+#fatiguecost 1500
 #schools 1
 #skipchance 99
 #nogeodst 2052

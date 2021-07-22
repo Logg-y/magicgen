@@ -21,16 +21,22 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe <= 5 64 "Tangle Vines"
-#namecond effectiveaoe <= 5 64 "Entanglement"
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Tangle Vines"
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Entanglement"
 
-#namecond 5 < aoe < 600 64 "Wild Growth"
+#namecond 5 < aoe < 600 64 "NAMEPREFIX Wild Growth"
 
-#namecond effectiveaoe > 600 64 "Relentless Vines"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Relentless Vines"
 
 #details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 
 #descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and entangle a SIZE area."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of vines"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of growth"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of entanglement"
+#namecond range < 10 64 "NAMEPREFIX touch of entanglement"
 
 #end
 

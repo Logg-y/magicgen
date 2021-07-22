@@ -1,0 +1,136 @@
+
+#neweffect "poison fatigue Secondary mrn"
+#effect 46
+#damage 16
+#spec 12416
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10019
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ poison"
+#name 2 "$Additional$ poison"
+#name 4 "$Additional$ poison"
+#name 8 "$Additional$ poison"
+#name 16 "$Additional$ poison"
+#name 32 "$Additional$ poison"
+#name 64 "$Additional$ poison"
+#name 128 "$Additional$ poison"
+#name 256 "$Additional$ poison"
+
+#end
+
+#neweffect "poison fatigue Secondary mrne"
+#effect 46
+#damage 16
+#spec 16785536
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10019
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ poison"
+#name 2 "$Additional$ poison"
+#name 4 "$Additional$ poison"
+#name 8 "$Additional$ poison"
+#name 16 "$Additional$ poison"
+#name 32 "$Additional$ poison"
+#name 64 "$Additional$ poison"
+#name 128 "$Additional$ poison"
+#name 256 "$Additional$ poison"
+
+#end
+
+#neweffect "poison fatigue Secondary mrn damaging"
+#effect 46
+#damage 16
+#spec 12416
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10019
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ poison"
+#name 2 "$Additional$ poison"
+#name 4 "$Additional$ poison"
+#name 8 "$Additional$ poison"
+#name 16 "$Additional$ poison"
+#name 32 "$Additional$ poison"
+#name 64 "$Additional$ poison"
+#name 128 "$Additional$ poison"
+#name 256 "$Additional$ poison"
+
+#end
+
+#neweffect "poison fatigue Secondary mrne damaging"
+#effect 46
+#damage 16
+#spec 16785536
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10019
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ poison"
+#name 2 "$Additional$ poison"
+#name 4 "$Additional$ poison"
+#name 8 "$Additional$ poison"
+#name 16 "$Additional$ poison"
+#name 32 "$Additional$ poison"
+#name 64 "$Additional$ poison"
+#name 128 "$Additional$ poison"
+#name 256 "$Additional$ poison"
+
+#end

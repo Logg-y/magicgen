@@ -34,8 +34,8 @@
 #secondarypaths 33
 #secondarypathchance 100
 
-#name 32 "Banefire %Ball%"
-#name 1 "Banefire %Ball%"
+#name 32 "NAMEPREFIX Banefire %Ball%"
+#name 1 "NAMEPREFIX Banefire %Ball%"
 
 #descr 1 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
@@ -47,6 +47,12 @@
 #maxpower 14
 #scalerate 1
 #pathlevel 3
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Touch of Banefire"
+#namecond range < 10 32 "NAMEPREFIX Touch of Banefire"
+#descrcond range < 10 1 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
+#descrcond range < 10 32 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
 #end
 
 #neweffect "Banefire Instant"
@@ -68,8 +74,8 @@
 #secondarypathchance 100
 #scalefatiguemult 4
 
-#name 32 "Banefire"
-#name 1 "Banefire"
+#name 32 "NAMEPREFIX Banefire"
+#name 1 "NAMEPREFIX Banefire"
 
 #descr 1 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
@@ -79,4 +85,10 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Banefire Eruption"
+#namecond range < 10 32 "NAMEPREFIX Banefire Eruption"
+#descrcond range < 10 1 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
+#descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #end

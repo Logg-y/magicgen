@@ -7,7 +7,7 @@
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 200
 #sound 32
 #schools 128
 
@@ -22,7 +22,7 @@
 
 #spelltype 528
 
-#scalerate 0.7
+#scalerate 1
 #end
 
 #neweffect "frostfiend ritual"
@@ -41,17 +41,17 @@
 #secondarypaths 4
 #secondarypathchance 80
 
-#name 128 "Summon NAMEPREFIX Frost %Fiend%"
+#name 128 "Bind NAMEPREFIX Frost %Fiend%"
 #descr 128 "$BLOOD_INTRO$, the caster summons ARTICLE frost %fiend% from Kokytos to aid him in battle."
 
 #spelltype 20
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -2
 #scalefatiguemult 400
 
-#scalerate 1
+#scalerate 0.6
 #end
 
 #neweffect "frostfiend Remote Assassination"

@@ -11,11 +11,11 @@
 #sound 31
 #schools 1
 
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX Great %Eagle%"
 #descr 2 "The caster summons ARTICLE great %eagle%. The great eagle is large and attacks enemies with its beak and talons."
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX Great %Eagle%"
 #descr 2 "The caster summons ARTICLE great %eagle%. The great eagle is large and attacks enemies with its beak and talons."

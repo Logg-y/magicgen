@@ -1,0 +1,55 @@
+#newsecondary "Ethereal Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 134217728
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Ethereal"
+#fatiguepersquare 12
+
+
+#nextspell "Ethereal Secondary mrn"
+
+#descr "This spell may also make those it affects ethereal."
+
+#end
+
+#newsecondary "Ethereal Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 134217728
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Incorporeal"
+#fatiguepersquare 6
+
+
+#nextspell "Ethereal Secondary mrne"
+
+#descr "This spell may also make those it affects ethereal."
+
+#end

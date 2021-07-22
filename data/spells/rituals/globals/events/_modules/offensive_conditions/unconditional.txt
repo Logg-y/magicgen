@@ -23,14 +23,14 @@
 
 #rarity 5
 #req_ench ENCHANTID
-#req_0popok
+#req_pop0ok
 #req_rare 5
 EFFECT
 #end
 
 #newevent
 #rarity 5
-#req_0popok
+#req_pop0ok
 #req_ench ENCHANTID
 #req_rare 5
 EFFECT
@@ -38,7 +38,7 @@ EFFECT
 
 #newevent
 #rarity 5
-#req_0popok
+#req_pop0ok
 #req_ench ENCHANTID
 #req_rare 5
 EFFECT
@@ -46,7 +46,7 @@ EFFECT
 
 #newevent
 #rarity 5
-#req_0popok
+#req_pop0ok
 #req_ench ENCHANTID
 #req_rare 5
 EFFECT
@@ -54,6 +54,6 @@ EFFECT
 
 #newevent
 #rarity 5
-#req_0popok
+#req_pop0ok
 #req_ench ENCHANTID
 #req_rare 5

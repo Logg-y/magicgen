@@ -25,11 +25,14 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Bleed"
+#name 128 "NAMEPREFIX Bleeding"
 #descr 128 "This spell causes blood to pour out of the nose, ears and mouth of the %victim%. The effect is a prolonged and painful death. Magic resistance can negate the effect."
 
 
 #details "Bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+#priority 1
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of blood"
 
 #end
 
@@ -61,9 +64,12 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Mass Bleed"
+#name 128 "NAMEPREFIX Mass Bleed"
 #descr 128 "The caster attempts to cause all his enemies to bleed profusely. The effect is a prolonged and painful death."
 
 #details "Bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+#priority 1
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of blood"
 
 #end

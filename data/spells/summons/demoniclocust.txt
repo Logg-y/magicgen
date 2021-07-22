@@ -10,16 +10,15 @@
 #fatiguecost 300
 #sound 31
 #schools 1
-#scalefatiguemult 210
 #paths 128
 #secondarypaths 128
 #secondarypathchance 95
 
 #skipchance 97
 
-#name 128 "Bind NAMEPREFIX Demonic %Locust%"
+#name 128 "Summon NAMEPREFIX Demonic %Locust%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to fight for him. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger. This spell binds the %locust% only weakly and so will allow any surviving locusts to return to their home plane when the battle is over."
-#scalefatiguemult 80
+#scalefatiguemult 60
 #spelltype 528
 
 #scalerate 0.7
@@ -29,7 +28,7 @@
 #effect 10001
 #damage 2794
 #spec 0
-#power 4
+#power 5
 #maxpower 14
 #nreff 1
 #pathlevel 3
@@ -50,7 +49,7 @@
 
 #skipchance 85
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -2
 #scalefatiguemult 640
 
 #scalerate 2

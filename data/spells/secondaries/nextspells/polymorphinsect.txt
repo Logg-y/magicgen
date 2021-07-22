@@ -1,0 +1,71 @@
+#neweffect "polymorph insect Secondary mrne"
+#effect 54
+#damage -9
+#spec 562970624
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10213
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "polymorph"
+#name 2 "polymorph"
+#name 4 "polymorph"
+#name 8 "polymorph"
+#name 16 "polymorph"
+#name 32 "polymorph"
+#name 64 "polymorph"
+#name 128 "polymorph"
+#name 256 "polymorph"
+
+
+#end
+
+#neweffect "polymorph insect Secondary mrne damaging"
+#effect 54
+#damage -9
+#spec 562970624
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10213
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "polymorph"
+#name 2 "polymorph"
+#name 4 "polymorph"
+#name 8 "polymorph"
+#name 16 "polymorph"
+#name 32 "polymorph"
+#name 64 "polymorph"
+#name 128 "polymorph"
+#name 256 "polymorph"
+
+
+#end

@@ -5,7 +5,7 @@
 #schools -1
 -- evo, scale aoe
 #spelltype 2
-#aoe 2
+#aoe 1
 #power 1
 #name 1 "Area Heat Shock"
 #name 2 "Area Heat Shock"
@@ -32,18 +32,18 @@
 #flightspr 10073
 #explspr 10113
 #sound 123
-#fatiguecost 20
+#fatiguecost 15
 
 #paths 129
 #secondarypaths 1
 
-#name 1 "%$ball$% of $fire$"
-#name 1 "$fire$ %$ball$%"
-#name 4 "%blast% of heat"
-#name 2 "%blast% of heat"
-#name 8 "$fire$ %$ball$% from $underground$"
-#name 16 "$fire$ %$ball$% from beyond"
-#name 128 "$infernal$ $fire$ %$ball$%"
+#name 1 "NAMEPREFIX %$ball$% of $fire$"
+#name 1 "NAMEPREFIX $fire$ %$ball$%"
+#name 4 "NAMEPREFIX %blast% of heat"
+#name 2 "NAMEPREFIX %blast% of heat"
+#name 8 "NAMEPREFIX $fire$ %$ball$% from $underground$"
+#name 16 "NAMEPREFIX $fire$ %$ball$% from beyond"
+#name 128 "NAMEPREFIX $infernal$ $fire$ %$ball$%"
 
 #descr 2 "ARTICLE blast of heated air %is% launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
 #descr 4 "ARTICLE blast of heated air %is% created by drawing the cold out of the air. This is inaccurate but may severely burn SUBJECT."
@@ -59,6 +59,12 @@
 #maxpower 14
 #scalerate 1
 #pathlevel 2
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Touch of Flames"
+#namecond range < 10 128 "NAMEPREFIX Touch of Infernal Flames"
+#descrcond range < 10 1 "The caster's touch radiates searing heat which scorches those close to the caster."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the heat of Inferno, producing scorching heat that harms those close to the caster."
 #end
 
 #neweffect "Fire Evo Instant"
@@ -78,12 +84,12 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Falling %$fire$%"
-#name 2 "Falling %$fire$%"
-#name 4 "Falling %$fire$%"
-#name 8 "%$fire$% from $underground$"
-#name 16 "%$fire$% from beyond"
-#name 128 "$infernal$ %$fire$%"
+#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 2 "NAMEPREFIX Falling %$fire$%"
+#name 4 "NAMEPREFIX Falling %$fire$%"
+#name 8 "NAMEPREFIX %$fire$% from $underground$"
+#name 16 "NAMEPREFIX %$fire$% from beyond"
+#name 128 "NAMEPREFIX $infernal$ %$fire$%"
 #descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
 #descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
@@ -96,6 +102,12 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Burst of Flames"
+#namecond range < 10 128 "NAMEPREFIX Burst of Infernal Flames"
+#descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming anyone nearby."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming anyone nearby."
 #end
 
 #neweffect "Scaling Heat Shock"
@@ -137,8 +149,8 @@
 #paths 129
 #secondarypaths 1
 #nextspell "Scaling Heat Shock"
-#name 1 "Pillar of %$fire$%"
-#name 128 "Pillar of $infernal$ %$fire$%"
+#name 1 "NAMEPREFIX Pillar of %$fire$%"
+#name 128 "NAMEPREFIX Pillar of $infernal$ %$fire$%"
 #descr 1 "This spell creates a huge column of fire that strikes from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
 #descr 128 "$BLOOD_INTRO$, the caster creates a huge column of fire that strikes from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
 
@@ -147,6 +159,12 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Burst of Flames"
+#namecond range < 10 128 "NAMEPREFIX Burst of Infernal Flames"
+#descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming those struck and producing heat over a large area."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming those struck and producing heat over a large area`."
 #end
 
 
@@ -168,12 +186,12 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Falling %$fire$%"
-#name 2 "Falling %$fire$%"
-#name 4 "Falling %$fire$%"
-#name 8 "%$fire$% from $underground$"
-#name 16 "%$fire$% from beyond"
-#name 128 "$infernal$ %$fire$%"
+#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 2 "NAMEPREFIX Falling %$fire$%"
+#name 4 "NAMEPREFIX Falling %$fire$%"
+#name 8 "NAMEPREFIX %$fire$% from $underground$"
+#name 16 "NAMEPREFIX %$fire$% from beyond"
+#name 128 "NAMEPREFIX $infernal$ %$fire$%"
 #descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
@@ -206,12 +224,12 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Falling %$fire$%"
-#name 2 "Falling %$fire$%"
-#name 4 "Falling %$fire$%"
-#name 8 "%$fire$% from $underground$"
-#name 16 "%$fire$% from beyond"
-#name 128 "$infernal$ %$fire$%"
+#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 2 "NAMEPREFIX Falling %$fire$%"
+#name 4 "NAMEPREFIX Falling %$fire$%"
+#name 8 "NAMEPREFIX %$fire$% from $underground$"
+#name 16 "NAMEPREFIX %$fire$% from beyond"
+#name 128 "NAMEPREFIX $infernal$ %$fire$%"
 #descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
@@ -244,12 +262,12 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Falling %$fire$%"
-#name 2 "Falling %$fire$%"
-#name 4 "Falling %$fire$%"
-#name 8 "%$fire$% from $underground$"
-#name 16 "%$fire$% from beyond"
-#name 128 "$infernal$ %$fire$%"
+#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 2 "NAMEPREFIX Falling %$fire$%"
+#name 4 "NAMEPREFIX Falling %$fire$%"
+#name 8 "NAMEPREFIX %$fire$% from $underground$"
+#name 16 "NAMEPREFIX %$fire$% from beyond"
+#name 128 "NAMEPREFIX $infernal$ %$fire$%"
 #descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn all those within."
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
@@ -262,4 +280,61 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+#end
+
+
+
+
+
+#neweffect "Medium Heat Shock"
+#effect 3
+#damage 2010
+#spec 160
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 5
+#power 1
+#name 1 "Area Heat Shock"
+#name 2 "Area Heat Shock"
+#name 4 "Area Heat Shock"
+#name 8 "Area Heat Shock"
+#name 16 "Area Heat Shock"
+#name 32 "Area Heat Shock"
+#name 64 "Area Heat Shock"
+#name 128 "Area Heat Shock"
+#end
+
+
+#neweffect "Fire Evo Rain"
+#copyspell "Gifts from Heaven"
+#effect 2
+#damage 2007
+-- firedmg, AP
+#spec 96
+-- evo
+#aoe 1
+#schools 4
+#range 40
+#precision -10
+#nreff 35
+#nextspell "Medium Heat Shock"
+#flightspr 10073
+#explspr 10113
+#sound 123
+#fatiguecost 100
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX rain of $fire$ %$ball$%"
+
+#descr 1 "%$ball$% of fire are rained down upon the enemy army. This spell will be able to devastate an unprotected army. Unlucky victims may be struck more than once. Survivors or those that are not struck may become exhausted from the radiating heat."
+
+#spelltype 18
+
+#power 9
+#maxpower 18
+#scalerate 3
+#pathlevel 5
 #end

@@ -1,56 +1,182 @@
-#newsecondary "Confusion"
+#newsecondary "Confusion nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 16
-#power 0
+#power -2
+
+#pathlevel 1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 17179869184
 
+-- not demons/undead only
+#req spec !& 8
 
-#nextspell "Confusion Secondary"
+#nextspell "Minor Confusion mrne"
 
-#descr "Residual energy from this spell affects the moinds of those in the targeted area, making them confused and prone to fighting their friends."
+#nameprefix "Confusing"
+#fatiguepersquare 5
+
+#aispellmod 20
+
+#descr "Those affected by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Affected creatures make an easy MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
 
-
-#newsecondary "Confusion damaging"
+#newsecondary "Confusion nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 16
-#power 0
+#power -3
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
+#offensiveeffect 1
+
+#pathlevel 2
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 17179869184
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Confusion mrn"
+
+#nameprefix "Bewildering"
+#fatiguepersquare 7
+
+#aispellmod 40
+
+#descr "Those affected by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Affected creatures make an MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+
+#end
+
+
+#newsecondary "Confusion damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -2
+
+#pathlevel 1
+
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+-- various damage types
+-- #req paths != 256
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 17179869184
+
+-- not demons/undead only
+#req spec !& 8
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Confusing"
+#fatiguepersquare 5
+
+#req nonscalingdamage < 40
+
+#aispellmod 15
+
+#nextspell "Minor Confusion mrn damaging"
+
+#descr "Those wounded by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Wounded creatures make an easy MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+
+#end
+
+#newsecondary "Confusion damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+#pathlevel 2
+
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+-- various damage types
 #req paths != 256
 #offensiveeffect 1
--- holy okay
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 17179869184
 
+-- not demons/undead only
+#req spec !& 8
 
-#nextspell "Confusion Secondary"
+#req nonscalingdamage < 40
 
-#descr "Residual energy from this spell affects the moinds of those in the targeted area, making them confused and prone to fighting their friends."
+-- not on damage already
+#ondamage 1
+
+#aispellmod 30
+
+#nameprefix "Bewildering"
+#fatiguepersquare 3
+
+#nextspell "Minor Confusion mrne damaging"
+
+#descr "Those wounded by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Wounded creatures make an MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
+
 
 #newsecondary "Confusion for Banishment only"
 
@@ -62,7 +188,7 @@
 
 -- various damage types
 #req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+
 #req paths == 256
 -- holy okay
 
@@ -71,7 +197,7 @@
 #req damage != 17179869184
 
 
-#nextspell "Confusion Secondary"
+#nextspell "Minor Confusion mrn damaging"
 
 #descr "The holy power unleashed alters the behaviour of the undead, sometimes causing them to act erratically."
 

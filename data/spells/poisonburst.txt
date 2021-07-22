@@ -49,9 +49,9 @@
 #secondarypaths 64
 #secondarypathchance 98
 
-#name 64 "Poison Burst"
-#name 64 "Toxic Burst"
-#name 128 "Toxic Burst"
+#name 64 "NAMEPREFIX Poison Burst"
+#name 64 "NAMEPREFIX Toxic Burst"
+#name 128 "NAMEPREFIX Toxic Burst"
 #descr 64 "The caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
 #descr 128 "$BLOOD_INTRO$, the caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
 
@@ -61,4 +61,5 @@
 #spelltype 66
 #scalerate 1
 #schools 4
+
 #end

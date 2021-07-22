@@ -1,0 +1,14 @@
+#neweventset "Summon Retinue RL7"
+
+#selectunitmod "Land OK"
+#desiredmontagsize 10
+#restrictunitstospellpaths 1
+
+#makedummymonster 0
+#desiredmontagsize 1
+
+#mincreaturepower 7
+#maxcreaturepower 7
+
+#unitmodlist "Temporary Unit Summon"
+#end

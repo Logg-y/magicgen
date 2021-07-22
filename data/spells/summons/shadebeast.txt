@@ -23,7 +23,7 @@
 
 #scalerate 1
 #scalefatigueexponent 0.4
-#scalefatiguemult 10
+--#scalefatiguemult 10
 #end
 
 #neweffect "shadebeast ritual"

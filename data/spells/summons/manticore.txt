@@ -20,7 +20,7 @@
 #descr 64 "The caster summons ARTICLE %manticore% to fight for him. The manticore is a large man-eating beast with a large poisonous stinger. The stinger can also launch poisonous barbs at enemies."
 
 #spelltype 528
-#scalefatiguemult 40
+#scalefatiguemult 20
 
 #scalerate 1
 #end

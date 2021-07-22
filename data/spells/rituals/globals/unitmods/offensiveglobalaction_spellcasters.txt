@@ -9,6 +9,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "This is a sudden and unexpected shower of embers."
 #setstr name "Burning Embers"
 #setstr onebattlespell "Fire Flies"
@@ -23,6 +24,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "This is a sudden, unexpected, and large shower of embers."
 #setstr name "Burning Embers"
 #setstr onebattlespell "Fire Darts"
@@ -37,6 +39,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "This is a sudden, unexpected, and large bolt of flames."
 #setstr name "Bolt of Flame"
 #setstr onebattlespell "Flame Bolt"
@@ -51,6 +54,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "This is a sudden, unexpected, and large bolt of flames."
 #setstr name "Bolt of Flame"
 #setstr onebattlespell "Flare"
@@ -65,6 +69,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "This is a sudden and unexpected bolt of flames."
 #setstr name "Bolt of Flame"
 #setstr onebattlespell "Fireball"
@@ -79,6 +84,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "These flames struck unexpectedly, burning those in their way."
 #setstr name "Searing Flames"
 #setstr onebattlespell "Falling Fires"
@@ -93,6 +99,7 @@
 #set drawsize -99
 #set allrange 10
 #set firepower 3
+#set prec 15
 #setstr descr "A gigantic pillar of flame, striking from the skies unexpectedly."
 #setstr name "Pillar of Fire"
 #setstr onebattlespell "Pillar of Fire"
@@ -144,6 +151,7 @@
 #set drawsize -99
 #set stormpower 5
 #set allrange 10
+#set prec 15
 #setstr descr "This is a sudden and unexpected bolt of lightning."
 #setstr name "Lightning Bolt"
 #setstr onebattlespell "Lightning Bolt"
@@ -158,6 +166,7 @@
 #set drawsize -99
 #set stormpower 5
 #set allrange 10
+#set prec 15
 #setstr descr "This is a sudden, unexpected, and very large bolt of lightning."
 #setstr name "Thunder Strike"
 #setstr onebattlespell "Thunder Strike"
@@ -172,6 +181,7 @@
 #set drawsize -99
 #set stormpower 5
 #set allrange 10
+#set prec 15
 #setstr descr "This is a sudden arcing discharge of lightning."
 #setstr name "Arcing Charge"
 #setstr onebattlespell "Orb Lightning"
@@ -186,6 +196,7 @@
 #set drawsize -99
 #set stormpower 5
 #set allrange 10
+#set prec 15
 #setstr descr "This is a sudden and violent arcing discharge of lightning."
 #setstr name "Arcing Charge"
 #setstr onebattlespell "Chain Lightning"
@@ -200,6 +211,7 @@
 #set drawsize -99
 #set stormpower 5
 #set allrange 10
+#set prec 15
 #setstr descr "This is a sudden discharge of static lightning."
 #setstr name "Static Discharge"
 #setstr onebattlespell "Shimmering Fields"
@@ -217,6 +229,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a sudden and unexpected bolt of freezing air."
 #setstr name "Cold Bolt"
 #setstr onebattlespell "Cold Bolt"
@@ -231,6 +244,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a sudden blast of icy frost."
 #setstr name "Falling Frost"
 #setstr onebattlespell "Falling Frost"
@@ -245,6 +259,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a ball of ice that will explode into sharp shards on impact."
 #setstr name "Icy Explosion"
 #setstr onebattlespell "Ice Strike"
@@ -259,6 +274,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a massive icy blast that may freeze its victims to death."
 #setstr name "Icy Blast"
 #setstr onebattlespell "Niefel Flames"
@@ -273,6 +289,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a magical force that threatens to turn its victims into pools of molten flesh."
 #setstr name "Liquification"
 #setstr onebattlespell "Liquify"
@@ -287,6 +304,7 @@
 #set drawsize -99
 #set allrange 10
 #set coldpower 3
+#set prec 15
 #setstr descr "This is a magical force that threatens to drown its victims."
 #setstr name "Drowning"
 #setstr onebattlespell "Sailors' Death"
@@ -303,6 +321,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This is a sudden and unexpected volley of rocks."
 #setstr name "Flying Rocks"
 #setstr onebattlespell "Flying Shards"
@@ -331,6 +350,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This is a sudden and unexpected volley of sharp blades."
 #setstr name "Flying Blades"
 #setstr onebattlespell "Blade Wind"
@@ -345,6 +365,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This is a magical and exceptionally deep pothole. Falling into it would almost certainly be extremely painful."
 #setstr name "Unseen Pothole"
 #setstr onebattlespell "Maws of the Earth"
@@ -359,6 +380,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This is a rupture in the crust caused by seismic action, allowing magma to spew forth."
 #setstr name "Magma Eruption"
 #setstr onebattlespell "Magma Eruption"
@@ -377,6 +399,7 @@
 #set allrange 10
 #set darkvision 100
 #set magicpower 3
+#set prec 15
 #setstr descr "This is an otherworldly beam of stellar light."
 #setstr name "Stellar Beam"
 #setstr onebattlespell "Star Fires"
@@ -392,6 +415,7 @@
 #set allrange 10
 #set darkvision 100
 #set magicpower 3
+#set prec 15
 #setstr descr "This is an instantenously existing hole in the fabric of reality. Otherworldly energy is free to flow out of it."
 #setstr name "Astral Hole"
 #setstr onebattlespell "Astral Geyser"
@@ -407,6 +431,7 @@
 #set allrange 10
 #set darkvision 100
 #set magicpower 1
+#set prec 15
 #setstr descr "This is a mysterious force that may mightily strike without warning."
 #setstr name "Unseen Force"
 #setstr onebattlespell "Farstrike"
@@ -422,6 +447,7 @@
 #set allrange 10
 #set darkvision 100
 #set magicpower 1
+#set prec 15
 #setstr descr "This is a mysterious force that may attack minds without warning."
 #setstr name "Mindstrike"
 #setstr onebattlespell "Mind Burn"
@@ -437,6 +463,7 @@
 #set allrange 10
 #set darkvision 100
 #set magicpower 1
+#set prec 15
 #setstr descr "This is a mysterious force that may attack souls without warning."
 #setstr name "Soul Rip"
 #setstr onebattlespell "Soul Slay"
@@ -455,6 +482,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a mysterious force that may permanently weaken victims without warning."
 #setstr name "Enfeebling Power"
 #setstr onebattlespell "Enfeeble"
@@ -470,6 +498,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a mysterious force that may break bones and permanently injure."
 #setstr name "Bonebreaking Power"
 #setstr onebattlespell "Bone Grinding"
@@ -485,6 +514,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a mysterious force that attempts to disintegrate the bodies of its victims."
 #setstr name "Disintegrating Power"
 #setstr onebattlespell "Disintegrate"
@@ -500,6 +530,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a bolt of shadowy energy."
 #setstr name "Shadow Bolt"
 #setstr onebattlespell "Shadow Bolt"
@@ -515,6 +546,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a blast of shadowy energy."
 #setstr name "Shadow Blast"
 #setstr onebattlespell "Shadow Blast"
@@ -530,6 +562,7 @@
 #set allrange 10
 #set darkvision 100
 #set deathpower 3
+#set prec 15
 #setstr descr "This is a magical force of decay, causing those affected to age rapidly."
 #setstr name "Force of Decay"
 #setstr onebattlespell "Wind of Death"
@@ -548,6 +581,7 @@
 #set darkvision 100
 #set deathpower -3
 #set prec 10
+#set prec 15
 #setstr descr "This is a magical arrow, enchanted to cause overgrowth of vines wherever it lands."
 #setstr name "Vine Arrow"
 #setstr onebattlespell "Vine Arrow"
@@ -564,6 +598,7 @@
 #set darkvision 100
 #set deathpower -3
 #set prec 10
+#set prec 15
 #setstr descr "This is a volley of magical arrows, each enchanted to cause overgrowth of vines wherever they land."
 #setstr name "Vine Arrow Volley"
 #setstr onebattlespell "Storm of Thorns"
@@ -580,6 +615,7 @@
 #set darkvision 100
 #set deathpower -3
 #set prec 10
+#set prec 15
 #setstr descr "This wild energy may permanently transform those it affects into frogs."
 #setstr name "Tranformative Energy"
 #setstr onebattlespell "Curse of the Frog Prince"
@@ -596,6 +632,7 @@
 #set darkvision 100
 #set deathpower -3
 #set prec 10
+#set prec 15
 #setstr descr "This potent life energy may overwhelm the body of those it affects, resulting in death."
 #setstr name "Stream of Life"
 #setstr onebattlespell "Stream of Life"
@@ -612,6 +649,7 @@
 #set darkvision 100
 #set deathpower -3
 #set prec 10
+#set prec 15
 #setstr descr "This wild energy appeals to the freedom of its victim. If this is not resisted, the victim will become lawless and fight their former allies."
 #setstr name "Call to Chaos"
 #setstr onebattlespell "Charm"
@@ -628,6 +666,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This magical energy causes its target to begin bleeding."
 #setstr name "Power of Bleeding"
 #setstr onebattlespell "Bleed"
@@ -642,6 +681,7 @@
 #set drawsize -99
 #set allrange 10
 #set darkvision 100
+#set prec 15
 #setstr descr "This magical energy causes its victims' blood to explode."
 #setstr name "Spontaneous Explosion"
 #setstr onebattlespell "Blood Burst"

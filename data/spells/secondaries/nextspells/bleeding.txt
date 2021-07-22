@@ -1,0 +1,132 @@
+#neweffect "Bleeding Secondary mrn"
+#effect 11
+#damage 8192
+#spec 545804416
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10144
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 128
+#secondarypaths 1
+
+#name 1 "$Additional$ Bleeding"
+#name 2 "$Additional$ Bleeding"
+#name 4 "$Additional$ Bleeding"
+#name 8 "$Additional$ Bleeding"
+#name 16 "$Additional$ Bleeding"
+#name 32 "$Additional$ Bleeding"
+#name 64 "$Additional$ Bleeding"
+#name 128 "$Additional$ Bleeding"
+#name 256 "$Additional$ Bleeding"
+
+#end
+
+#neweffect "Bleeding Secondary mrne"
+#effect 11
+#damage 8192
+#spec 562577536
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10144
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 128
+#secondarypaths 1
+
+#name 1 "$Additional$ Bleeding"
+#name 2 "$Additional$ Bleeding"
+#name 4 "$Additional$ Bleeding"
+#name 8 "$Additional$ Bleeding"
+#name 16 "$Additional$ Bleeding"
+#name 32 "$Additional$ Bleeding"
+#name 64 "$Additional$ Bleeding"
+#name 128 "$Additional$ Bleeding"
+#name 256 "$Additional$ Bleeding"
+
+#end
+
+
+#neweffect "Bleeding Secondary mrn damaging"
+#effect 11
+#damage 8192
+#spec 545804416
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10144
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 128
+#secondarypaths 1
+
+#name 1 "$Additional$ Bleeding"
+#name 2 "$Additional$ Bleeding"
+#name 4 "$Additional$ Bleeding"
+#name 8 "$Additional$ Bleeding"
+#name 16 "$Additional$ Bleeding"
+#name 32 "$Additional$ Bleeding"
+#name 64 "$Additional$ Bleeding"
+#name 128 "$Additional$ Bleeding"
+#name 256 "$Additional$ Bleeding"
+
+#end
+
+#neweffect "Bleeding Secondary mrne damaging"
+#effect 11
+#damage 8192
+#spec 562577536
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10144
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 128
+#secondarypaths 1
+
+#name 1 "$Additional$ Bleeding"
+#name 2 "$Additional$ Bleeding"
+#name 4 "$Additional$ Bleeding"
+#name 8 "$Additional$ Bleeding"
+#name 16 "$Additional$ Bleeding"
+#name 32 "$Additional$ Bleeding"
+#name 64 "$Additional$ Bleeding"
+#name 128 "$Additional$ Bleeding"
+#name 256 "$Additional$ Bleeding"
+
+#end

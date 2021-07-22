@@ -25,19 +25,24 @@
 #secondarypaths 38
 #secondarypathchance 5
 
-#namecond effectiveaoe < 1 4 "Sailor's Death"
-#namecond effectiveaoe >= 1 4 "Sailors' Death"
-#name 4 "Drown"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Sailor's Death"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Sailors' Death"
+#name 4 "NAMEPREFIX Drown"
 
-#name 2 "Suffocate"
-#name 2 "Asphyxiate"
+#name 2 "NAMEPREFIX Suffocate"
+#name 2 "NAMEPREFIX Asphyxiate"
 
-#name 32 "Suffocate"
-#name 32 "Asphyxiate"
+#name 32 "NAMEPREFIX Suffocate"
+#name 32 "NAMEPREFIX Asphyxiate"
 
 #descr 2 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 4 "The caster attempts to fill the lungs of SUBJECT with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 32 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Drowning"
+#namecond range < 10 2 "NAMEPREFIX Touch of Suffocation"
+#namecond range < 10 32 "NAMEPREFIX Touch of Suffocation"
 
 #end
 
@@ -69,13 +74,13 @@
 #secondarypaths 38
 #secondarypathchance 5
 
-#name 4 "Mass Drowning"
+#name 4 "NAMEPREFIX Mass Drowning"
 
-#name 2 "Mass Suffocation"
-#name 2 "Mass Asphyxiation"
+#name 2 "NAMEPREFIX Mass Suffocation"
+#name 2 "NAMEPREFIX Mass Asphyxiation"
 
-#name 32 "Mass Suffocation"
-#name 32 "Mass Asphyxiation"
+#name 32 "NAMEPREFIX Mass Suffocation"
+#name 32 "NAMEPREFIX Mass Asphyxiation"
 
 #descr 2 "The caster attempts to prevent all living beings on the battlefield from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 4 "The caster attempts to fill the lungs of all living beings on the battlefield with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."

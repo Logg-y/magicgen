@@ -11,7 +11,7 @@
 #explspr 10232
 #sound 31
 #schools 8
-#scalefatiguemult 30
+--#scalefatiguemult 30
 #skipchance 97
 #paths 8
 #secondarypaths 2

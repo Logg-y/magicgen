@@ -22,15 +22,21 @@
 #sound 42
 #fatiguecost 20
 #range 2023
+#skipchance 50
 
 #paths 64
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 64 "Project Web"
-#name 64 "Web %Glob%"
+#name 64 "NAMEPREFIX Project Web"
+#name 64 "NAMEPREFIX Web %Glob%"
 #descr 64 "The mage projects a mass of sticky webs that will trap enemies. Very large or strong beings will not be hindered by the web."
 #details "Str +DRN vs 22 to get free."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
+#namecond range < 10 64 "NAMEPREFIX touch of webs"
+
 #end
 
 
@@ -56,12 +62,18 @@
 #sound 42
 #fatiguecost 20
 #range 2023
+#skipchance 50
 
 #paths 64
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 64 "Weave Web"
+#name 64 "NAMEPREFIX Weave Web"
 #descr 64 "The mage weaves webs around SUBJECT, trapping them. Very large or strong beings will not be hindered by the web."
 #details "Str +DRN vs 22 to get free."
+
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
+#namecond range < 10 64 "NAMEPREFIX touch of webs"
 #end

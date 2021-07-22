@@ -18,6 +18,7 @@
 #fatiguecost -70
 
 #pathlevel 0
-#power -4
+#power -5
+#pathlevel 1
 
 #end

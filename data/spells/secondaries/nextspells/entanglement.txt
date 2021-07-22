@@ -1,7 +1,7 @@
-#neweffect "Entanglement"
+#neweffect "Entanglement Secondary mrn"
 #effect 11
 #damage 64
-#spec 8404992
+#spec 8409088
 
 #schools -1
 #paths -1
@@ -9,7 +9,113 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10189
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Entanglement"
+#name 2 "Entanglement"
+#name 4 "Entanglement"
+#name 8 "Entanglement"
+#name 16 "Entanglement"
+#name 32 "Entanglement"
+#name 64 "Entanglement"
+#name 128 "Entanglement"
+#name 256 "Entanglement"
+
+#end
+
+
+#neweffect "Entanglement Secondary mrne"
+#effect 11
+#damage 64
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10189
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Entanglement"
+#name 2 "Entanglement"
+#name 4 "Entanglement"
+#name 8 "Entanglement"
+#name 16 "Entanglement"
+#name 32 "Entanglement"
+#name 64 "Entanglement"
+#name 128 "Entanglement"
+#name 256 "Entanglement"
+
+#end
+
+
+#neweffect "Entanglement Secondary mrn damaging"
+#effect 11
+#damage 64
+#spec 8409088
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10189
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Entanglement"
+#name 2 "Entanglement"
+#name 4 "Entanglement"
+#name 8 "Entanglement"
+#name 16 "Entanglement"
+#name 32 "Entanglement"
+#name 64 "Entanglement"
+#name 128 "Entanglement"
+#name 256 "Entanglement"
+
+#end
+
+
+#neweffect "Entanglement Secondary mrne damaging"
+#effect 11
+#damage 64
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10189
 #fatiguecost 20

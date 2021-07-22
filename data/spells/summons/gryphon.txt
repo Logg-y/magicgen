@@ -14,14 +14,14 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
 #aispellmod -20
 
 #spelltype 528
-#scalefatiguemult 20
+--#scalefatiguemult 20
 
 #scalerate 1
 #end
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."

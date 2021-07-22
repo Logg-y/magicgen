@@ -6,7 +6,7 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #fatiguecost 200
 #sound 32
 #schools 128
@@ -20,7 +20,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
 
 #spelltype 528
-#scalefatiguemult 160
+#scalefatiguemult 40
 #scalerate 0.7
 #end
 
@@ -31,7 +31,7 @@
 #power 5
 #maxpower 14
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #fatiguecost 500
 #schools 1
 
@@ -45,7 +45,7 @@
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -2
 #scalefatiguemult 420
 
 #scalerate 1

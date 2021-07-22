@@ -23,9 +23,13 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Incinerate"
-#name 128 "Incinerate"
+#name 1 "NAMEPREFIX Incinerate"
+#name 128 "NAMEPREFIX Incinerate"
 #descr 1 "SUBJECT %is% consumed by flames from the inside. Armor does not protect against this spell. It can target victims over long distances and it is one of the very few Fire spells that can be used underwater."
 #descr 128 "$BLOOD_INTRO$, SUBJECT is consumed by flames from the inside. Armor does not protect against this spell. It can target victims over long distances and can be used underwater."
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX touch of incineration"
+#namecond range < 10 128 "NAMEPREFIX touch of incineration"
 
 #end

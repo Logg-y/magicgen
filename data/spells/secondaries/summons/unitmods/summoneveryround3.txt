@@ -1,0 +1,125 @@
+#newunitmod "Summon Every Round 3 RL1"
+#nameprefix "Levying"
+#eventset "Summon Allies RL1"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL2"
+#nameprefix "Levying"
+#eventset "Summon Allies RL2"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL3"
+#nameprefix "Levying"
+#eventset "Summon Allies RL3"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL4"
+#nameprefix "Levying"
+#eventset "Summon Allies RL4"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL5"
+#nameprefix "Levying"
+#eventset "Summon Allies RL5"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL6"
+#nameprefix "Levying"
+#eventset "Summon Allies RL6"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 1
+#end
+
+#newunitmod "Summon Every Round 3 RL7"
+#nameprefix "Levying"
+#eventset "Summon Allies RL7"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL8"
+#nameprefix "Levying"
+#eventset "Summon Allies RL8"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL9"
+#nameprefix "Levying"
+#eventset "Summon Allies RL9"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL10"
+#nameprefix "Levying"
+#eventset "Summon Allies RL10"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL11"
+#nameprefix "Levying"
+#eventset "Summon Allies RL11"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL12"
+#nameprefix "Levying"
+#eventset "Summon Allies RL12"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL13"
+#nameprefix "Levying"
+#eventset "Summon Allies RL13"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 3 RL14"
+#nameprefix "Levying"
+#eventset "Summon Allies RL14"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to rally three magical creatures per combat round."
+#req battlesum3 <= 0
+#end

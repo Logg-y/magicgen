@@ -19,13 +19,19 @@
 #range 5015
 #precision 100
 
+#skipchance 50
+
 -- only nature
 #paths 64
 #secondarypaths 64
 
-#name 64 "Curse of the Frog"
+#name 64 "NAMEPREFIX Curse of the Frog"
 
 #descr 64 "The caster causes SUBJECT to become a frog for the rest of PRONOUN_POS %life%."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of the frog"
+#namecond range < 10 64 "NAMEPREFIX touch of the frog"
 
 #end
 
@@ -41,6 +47,8 @@
 #scalerate 5
 -- #scalecost 2.5
 
+#skipchance 50
+
 #aoe 0
 #power 5
 #pathlevel 3
@@ -54,9 +62,13 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "Curse of the Insect"
+#name 64 "NAMEPREFIX Curse of the Insect"
 
 #descr 64 "The caster causes SUBJECT to become a random bug for the rest of PRONOUN_POS %life%."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of the insect"
+#namecond range < 10 64 "NAMEPREFIX touch of the insect"
 
 #end
 

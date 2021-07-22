@@ -24,8 +24,13 @@
 #secondarypaths 4
 #secondarypathchance 95
 
-#name 4 "Liquify"
-#name 32 "Liquify"
+#name 4 "NAMEPREFIX Liquify"
+#name 32 "NAMEPREFIX Liquify"
 #descr 4 "The caster turns the substance of SUBJECT into an oozing pool of liquid. Death is certain if the spell is not resisted, however ethereal beings are unlikely to be affected."
 #descr 32 "The caster turns the substance of SUBJECT into an oozing pool of liquid. Death is certain if the spell is not resisted, however ethereal beings are unlikely to be affected."
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Touch of Liquification"
+#namecond range < 10 32 "NAMEPREFIX Touch of Liquification"
+
 #end

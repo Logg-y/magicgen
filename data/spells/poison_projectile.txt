@@ -17,9 +17,9 @@
 #paths 100
 #secondarypaths 64
 
-#name 4 "Vile Water"
-#name 32 "Decaying Fluid"
-#name 64 "$poisonous$ %bolt%"
+#name 4 "NAMEPREFIX Vile Water"
+#name 32 "NAMEPREFIX Decomposed Fluid"
+#name 64 "NAMEPREFIX $poisonous$ %bolt%"
 #descr 4 "Projects ARTICLE poisonous %bolt% formed of stale water at enemies. Being hit by the bolts will result in becoming poisoned."
 #descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned."
 #descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
@@ -30,4 +30,12 @@
 #scalerate 1
 #pathlevel 2
 #schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX poison touch"
+#namecond range < 10 32 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+
+
 #end

@@ -1,0 +1,65 @@
+#neweffect "Stoneskin Secondary mrn"
+#effect 10
+#damage 65536
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10058
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Stoneskin"
+#name 2 "$Additional$ Stoneskin"
+#name 4 "$Additional$ Stoneskin"
+#name 8 "$Additional$ Stoneskin"
+#name 16 "$Additional$ Stoneskin"
+#name 32 "$Additional$ Stoneskin"
+#name 64 "$Additional$ Stoneskin"
+#name 128 "$Additional$ Stoneskin"
+#name 256 "$Additional$ Stoneskin"
+
+#end
+
+#neweffect "Stoneskin Secondary mrne"
+#effect 10
+#damage 65536
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10058
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Stoneskin"
+#name 2 "$Additional$ Stoneskin"
+#name 4 "$Additional$ Stoneskin"
+#name 8 "$Additional$ Stoneskin"
+#name 16 "$Additional$ Stoneskin"
+#name 32 "$Additional$ Stoneskin"
+#name 64 "$Additional$ Stoneskin"
+#name 128 "$Additional$ Stoneskin"
+#name 256 "$Additional$ Stoneskin"
+
+#end

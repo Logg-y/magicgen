@@ -26,19 +26,24 @@
 #paths 164
 #secondarypaths 4
 
-#namecond effectiveaoe < 2 4 "Chill of Winter"
-#namecond effectiveaoe < 2 32 "Chill of the Grave"
-#namecond effectiveaoe < 2 128 "Chill from Kokytos"
+#namecond effectiveaoe < 2 4 "NAMEPREFIX Chill of Winter"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Chill of the Grave"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Chill from Kokytos"
 
-#namecond effectiveaoe >= 2 4 "Warriors of Winter"
-#namecond effectiveaoe >= 2 32 "Warriors from the Grave"
-#namecond effectiveaoe >= 2 128 "Warriors from Kokytos"
+#namecond effectiveaoe >= 2 4 "NAMEPREFIX Warriors of Winter"
+#namecond effectiveaoe >= 2 32 "NAMEPREFIX Warriors from the Grave"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Warriors from Kokytos"
 
-#details "Grants chill aura."
+#details "Grants chill aura and 10 cold resistance."
 
 #descr 4 "SUBJECT %is% imbued with the chill of winter, fatiguing and freezing those nearby who are not resistant."
 #descr 32 "SUBJECT %is% imbued with the chill of the grave, fatiguing and freezing those nearby who are not resistant."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% imbued with the cold of Kokytos, fatiguing and freezing those nearby who are not resistant."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of chill winds"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of chill winds"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of chill winds"
 
 #end
 

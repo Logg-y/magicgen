@@ -80,25 +80,27 @@ def rollspells(**options):
         with open(outfp, "w") as f:
             l: List[Spell] = []
             _writetoconsole("Parsing data files...\n")
-            fileparser.readModifiersFromDir(r".\data\spells\modifiers")
-            fileparser.readSecondariesFromDir(r".\data\spells\secondaries")
-            fileparser.readSecondariesFromDir(r".\data\spells\secondaries\summons")
-            fileparser.readUnitModsFromDir(r".\data\spells\secondaries\summons\unitmods")
-            fileparser.readWeaponModsFromDir(r".\data\spells\secondaries\summons\unitmods\weaponmods")
+            fileparser.readModifiersFromDir(r"./data/spells/modifiers")
+            fileparser.readSecondariesFromDir(r"./data/spells/secondaries")
+            fileparser.readSecondariesFromDir(r"./data/spells/secondaries/summons")
+            fileparser.readUnitModsFromDir(r"./data/spells/secondaries/summons/unitmods")
+            fileparser.readEventSetsFromDir(r"./data/spells/secondaries/summons/unitmods/eventsets")
+            fileparser.readWeaponModsFromDir(r"./data/spells/secondaries/summons/unitmods/weaponmods")
+            fileparser.readUnitModListsFromDir(r"./data/spells/unitmodlists")
             # dict merging
             # (or I could upgrade to py3.9 to use |=)
-            s = fileparser.readEffectsFromDir(r".\data\spells\secondaries\nextspells")
-            s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\summons")}
-            s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\summons\commanders")}
-            s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\rituals")}
-            s = {**s, **fileparser.readEffectsFromDir(r".\data\spells\rituals\globals")}
-            fileparser.readEventSetsFromDir(r".\data\spells\rituals\globals\events")
-            fileparser.readUnitModsFromDir(r".\data\spells\rituals\globals\unitmods")
-            fileparser.readWeaponModsFromDir(r".\data\spells\rituals\unitmods\weaponmods")
-            fileparser.readMagicSitesFromDir(r".\data\spells\rituals\magicsites")
-            fileparser.readEventSetsFromDir(r".\data\spells\rituals\events")
-            fileparser.readUnitModsFromDir(r".\data\spells\rituals\unitmods")
-            fileparser.readNewUnitsFromDir(r".\data\spells\summons\newunits")
+            s = fileparser.readEffectsFromDir(r"./data/spells/secondaries/nextspells")
+            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons")}
+            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons/commanders")}
+            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals")}
+            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals/globals")}
+            fileparser.readEventSetsFromDir(r"./data/spells/rituals/globals/events")
+            fileparser.readUnitModsFromDir(r"./data/spells/rituals/globals/unitmods")
+            fileparser.readWeaponModsFromDir(r"./data/spells/rituals/unitmods/weaponmods")
+            fileparser.readMagicSitesFromDir(r"./data/spells/rituals/magicsites")
+            fileparser.readEventSetsFromDir(r"./data/spells/rituals/events")
+            fileparser.readUnitModsFromDir(r"./data/spells/rituals/unitmods")
+            fileparser.readNewUnitsFromDir(r"./data/spells/summons/newunits")
 
             s: Dict[str, fileparser.SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
 
@@ -110,64 +112,86 @@ def rollspells(**options):
 
             researchmod = options.get("researchmodifier", 0)
 
-            for school in [1, 2, 4, 8, 16, 32, 64]:
+            # Randomly decide an order to generate things in
+            # This is mostly for the sake of the path balancing logic, if it were done in a consistent order
+            # then the later schools and higher path levels would always be cut off more and this would not be
+            # easily changed
+            # This list simply stores [research school, research level] pairs
+            remainingSchoolLevelCombos: List[List[int, int]] = []
+            schools = [1, 2, 4, 8, 16, 32, 64]
+            for school in schools:
+                for level in range(0+researchmod, 10+researchmod):
+                    remainingSchoolLevelCombos.append([school, level])
+
+            random.shuffle(remainingSchoolLevelCombos)
+            for index, pair in enumerate(remainingSchoolLevelCombos):
+                school, research = pair
                 schoolname = SchoolFlags(school).name
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
                     spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.45))
-                for research in range(0 + researchmod, 10 + researchmod):
-                    if school == 8 and research in [2, 4, 6, 8]:
-                        # construction crafting levels don't get spells
-                        continue
-                    _writetoconsole(
-                        f"Generating {spellsperlevel} spells at research {research} for school {schoolname}...\n")
-                    sys.stderr.flush()
-                    effectpool = copy.copy(s)
-                    # First do everything with skipchances, if that fails to make all the spells
-                    # do a second run ignoring them
-                    allowskipchance = True
-                    for x in range(0, spellsperlevel):
-                        while 1:
-                            spell = None
-                            if len(effectpool) == 0:
-                                if allowskipchance:
-                                    allowskipchance = False
-                                    effectpool = copy.copy(s)
-                                    continue
-                                print(
-                                    f"WARNING: no valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
-                                _writetoconsole(
-                                    f"No more valid spells at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
-                                break
-                            sp = effectpool[random.choice(list(effectpool.keys()))]
-                            del effectpool[sp.name]
-                            # Prevent duplicartes in the second round of ignoreing skipchances
-                            if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
+                researchorder = list(range(0+researchmod, 10+researchmod))
+                random.shuffle(researchorder)
+                if school == 8 and research in [2, 4, 6, 8]:
+                    # construction crafting levels don't get spells
+                    continue
+                _writetoconsole(
+                    f"Generating {spellsperlevel} spells at research {research} for school {schoolname} "
+                    f"({len(remainingSchoolLevelCombos) - index} remain)...\n")
+                sys.stderr.flush()
+                effectpool = copy.copy(s)
+                # First do everything with skipchances, if that fails to make all the spells
+                # do a second run ignoring them
+                allowskipchance = True
+                for x in range(0, spellsperlevel):
+                    while 1:
+                        spell = None
+                        if len(effectpool) == 0:
+                            if allowskipchance:
+                                allowskipchance = False
+                                effectpool = copy.copy(s)
+                                continue
+                            print(
+                                f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
+                            _writetoconsole(
+                                f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
+                            break
+                        sp = effectpool[random.choice(list(effectpool.keys()))]
+                        del effectpool[sp.name]
+                        # Prevent duplicates in the second round of ignoreing skipchances
+                        if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
+                            continue
+                        # Encourage the less popular paths to get more spells by skipping the more popular ones
+                        if allowskipchance and sp.paths in genericSpellCountsByPath:
+                            mincount = min(genericSpellCountsByPath.values())
+                            thiscount = genericSpellCountsByPath[sp.paths]
+                            if thiscount > 20 and thiscount / mincount > 1.2 and random.random() < 0.75:
+                                print(f"Skip {sp.name} due to popular paths ({thiscount} vs {mincount})")
                                 continue
 
-                            # These are the things used to denote things that should be nextspell ONLY
-                            if sp.paths > 0 and sp.schools > 0:
-                                # Special rules for blood
-                                if school == 64:
-                                    if sp.paths & 128:
-                                        spell = sp.rollSpell(research, forcepath=128, allowblood=True,
-                                                             allowskipchance=allowskipchance, **options)
-
-                                elif sp.schools & school:
-                                    spell = sp.rollSpell(research, forceschool=school, allowblood=False,
+                        # These are the things used to denote things that should be nextspell ONLY
+                        if sp.paths > 0 and sp.schools > 0:
+                            # Special rules for blood
+                            if school == 64:
+                                if sp.paths & 128:
+                                    spell = sp.rollSpell(research, forcepath=128, allowblood=True,
                                                          allowskipchance=allowskipchance, **options)
 
-                            if spell is not None:
-                                l.append(spell)
-                                if research not in generatedeffectsatlevels:
-                                    generatedeffectsatlevels[research] = []
-                                generatedeffectsatlevels[research].append(sp.name)
-                                genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
-                                print(
-                                    f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
-                                break
-                        if len(effectpool) == 0:
+                            elif sp.schools & school:
+                                spell = sp.rollSpell(research, forceschool=school, allowblood=False,
+                                                     allowskipchance=allowskipchance, **options)
+
+                        if spell is not None:
+                            l.append(spell)
+                            if research not in generatedeffectsatlevels:
+                                generatedeffectsatlevels[research] = []
+                            generatedeffectsatlevels[research].append(sp.name)
+                            genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
+                            print(
+                                f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
                             break
+                    if len(effectpool) == 0:
+                        break
 
             # Always generated effects
             if options.get("clearvanillagenericspells", 1):
@@ -628,12 +652,19 @@ def main():
     opts.append(Option("-nationalspells",
                        help="Number of national spells to try to make per nation. These spells will be directed towards the paths the nation has access to.",
                        type=int, default=12))
-    opts.append(Option("-secondarychance",
-                       help="Percentage chance of spells generating with a secondary effect. Does not apply to summoning spells.",
-                       type=int, default=20))
-    opts.append(Option("-summonsecondarychance",
-                       help="Percentage chance of summoning spells generating with a secondary effect. Does not apply to other spells.",
-                       type=int, default=20))
+    opts.append(Option("-samepathsecondarychance",
+                       help="Percentage chance of spells generating with a same path secondary effect. Does not apply to summoning spells.",
+                       type=int, default=40))
+    opts.append(Option("-diffpathsecondarychance",
+                       help="Percentage chance of spells generating with a different path secondary effect, typically producing a crosspath spell. Does not apply to summoning spells.",
+                       type=int, default=10))
+    opts.append(Option("-summonsamepathsecondarychance",
+                       help="Percentage chance of summoning spells generating with a same path secondary effect, typically producing an altered summon without a new crosspath requirement.",
+                       type=int, default=40))
+
+    opts.append(Option("-summondiffpathsecondarychance",
+                       help="Percentage chance of summoning spells generating with a different path secondary effect, typically producing an altered summon with a new crosspath requirement.",
+                       type=int, default=10))
 
     opts.append(Option("-researchmodifier",
                        help="Research modifier: Subtracts this value from the research level of spells generated. Large values will make strong spells available at lower research than normal.",

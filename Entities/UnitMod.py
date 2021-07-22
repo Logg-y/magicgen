@@ -33,6 +33,18 @@ class UnitMod(object):
         self.lastparentid = None
         self.lastunitname = None
 
+        # The base Illwinter AI score for a single unit, calculated as follows:
+        # (att + def + hp + str) * 2
+        # if fire shield: +hp*4
+        # if trample or ethereal: +hp*4
+        # add second shapes, if any
+        # fluff value to 40-160% of the final value
+        self.lastunitAIScore = None
+
+        self.eventset = ""
+        self.attributeforrandomunit = ""
+        self.additionaldetails = None
+
     def compatibility(self, unitobj, tested=None):
         # print(f"{self.name} testing against {unit.id} {unit.name}")
         if tested is None:
@@ -89,14 +101,16 @@ class UnitMod(object):
 
         return True
 
-    def apply(self, spelleffect, spell):
+    def apply(self, spelleffect, spell, actualpowerlvl=None, secondaryeffect=None):
         "Apply this unit mod to the given spell of type spelleffect."
         # Globals with events apply this through the eventset instead
         if spelleffect.eventset is None:
-            return self.applytounit(spell, spelleffect.getUnit())
+            return self.applytounit(spell, spelleffect.getUnit(), spelleffect=spelleffect,
+                                    actualpowerlvl=actualpowerlvl, secondaryeffect=secondaryeffect)
         return ""
 
-    def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None):
+    def applytounit(self, spell, u, extrashapechain=None, additionals_firstshape=None,
+                    spelleffect=None, actualpowerlvl=None, secondaryeffect=None):
         """Apply this effect to the given unit object, returning mod code for the new unit.
 
                 spell can be None. If given, spell.damage is set to the correct unit ID for the new unit.
@@ -109,6 +123,7 @@ class UnitMod(object):
                 """
         if extrashapechain is None:
             extrashapechain = {}
+            self.lastunitAIScore = 0
 
         u.descr += " " + self.descr
         u.descr = u.descr.replace("CREATURE", u.name)
@@ -128,6 +143,18 @@ class UnitMod(object):
                     wpn.origid = wpnreplacements[wpn.origid]
             out += wpnoutput
 
+        # Event set derived attributes, for things like summoning magicgen creatures or actual event set things
+        if self.eventset != "" and self.attributeforrandomunit != "":
+            realeventset = utils.eventsets[self.eventset]
+            # actualpowerlvl is 0 in all current cases - because commander spells do not have any research level
+            # scaling that is not done through secondary effects
+            eventsetdata = realeventset.formatdata(spelleffect, spell, 0, None, actualpowerlvl)
+            if eventsetdata is None:
+                return None
+            out = eventsetdata + "\n" + out
+            setattr(u, self.attributeforrandomunit, realeventset.lastunitid)
+            u.additionalmodcmds += f"#{self.attributeforrandomunit} {realeventset.lastunitid}\n"
+
         if utils.MONSTER_ID >= 9000:
             raise ValueError("New Monster ID is too high for Dominions! Consider lowering montag sizes.")
 
@@ -137,7 +164,7 @@ class UnitMod(object):
         # needless to say, don't do this if the current monster is a secondshape something caused by running in recursive mode1
         # or the spell will be left summoning the last thing in the secondshape chain
         if len(extrashapechain) == 0:
-            if spell is not None:
+            if spell is not None and spell.effect % 1000 in [1, 21, 37, 38, 43, 50, 89, 93, 119, 137, 54, 130]:
                 print("is first pass, fixed spell.damage")
                 spell.damage = utils.MONSTER_ID
             else:
@@ -183,6 +210,7 @@ class UnitMod(object):
                             f"Unit {u.name} didn't have param {param} when affected by unitmod {self.name}, assumed 0")
                         setattr(u, param, 0)
                     newparamval = getattr(u, param) + paramv
+                    setattr(u, param, newparamval)
                     modcmd = flags_to_mod_cmds.get(param, param)
                     if modcmd not in argless_cmds:
                         out += f"#{modcmd} {newparamval}\n"
@@ -202,10 +230,13 @@ class UnitMod(object):
         for param, val in self.multcommands:
             paramv = getattr(u, param)
             newparamval = int(val * paramv)
+            setattr(u, param, newparamval)
             modcmd = flags_to_mod_cmds.get(param, param)
             out += f"#{modcmd} {newparamval}\n"
 
-
+        aiscore = u.calcSummonAIScore()
+        self.lastunitAIScore += aiscore
+        print(f"AIscore for this unit is {aiscore}, total now {self.lastunitAIScore}")
 
         secondshapeextra = ""
         # Second shape needs to propagate
@@ -214,17 +245,24 @@ class UnitMod(object):
                   "wintershape", "landshape", "watershape"]:
             if hasattr(u, x):
                 uid = getattr(u, x)
+                oldscore = copy(self.lastunitAIScore)
                 if uid not in extrashapechain and uid > 0:
                     extrashapechain[uid] = copy(utils.MONSTER_ID)
                     print(f"UID {uid} is a {x} of {u.name}, applying to that too...")
-                    secondshapeextra += self.applytounit(spell, unitinbasedatafinder.get(uid), extrashapechain)
+                    secondshapeextra += self.applytounit(spell, unitinbasedatafinder.get(uid), extrashapechain,
+                                                         spelleffect=spelleffect, actualpowerlvl=actualpowerlvl,
+                                                         secondaryeffect=secondaryeffect)
                 if uid in extrashapechain and uid > 0:
                     # update this creature's secondshape or whatever with the new creature
                     out += f"#{x} {extrashapechain[uid]}\n"
+                # only secondshape counts towards AI scores
+                if x != "secondshape":
+                    self.lastunitAIScore = oldscore
 
         if additionals_firstshape is not None:
             for modcmd, val in additionals_firstshape.items():
                 out += f"{modcmd} {val}\n"
+
 
         # Special case: Do nothing should firstshape to the original unit
         # This makes montags built with Do Nothing-modified units quickly transform to their normal version

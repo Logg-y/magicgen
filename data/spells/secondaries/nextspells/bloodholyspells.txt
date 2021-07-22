@@ -13,7 +13,8 @@
 #spelltype 2
 #aoe 0
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #fatiguecost 0
 #range 5025
@@ -46,7 +47,8 @@
 #spelltype 2
 #scalerate 0
 #aoe 1
-#power 1
+#power 0
+#maxpower 30
 #name 1 "Blood Power"
 #name 2 "Blood Power"
 #name 4 "Blood Power"
@@ -74,7 +76,8 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #fatiguecost 0
 #range 5025

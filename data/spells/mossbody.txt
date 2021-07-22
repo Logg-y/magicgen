@@ -25,21 +25,26 @@
 
 #details "Mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
 
-#namecond effectiveaoe < 2 4 "Algaebody"
-#namecond effectiveaoe < 2 32 "Putrid Flesh"
-#namecond effectiveaoe < 2 64 "Mossbody"
+#namecond effectiveaoe < 2 4 "NAMEPREFIX Algaebody"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Putrid Flesh"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Mossbody"
 
-#namecond2 2 <= effectiveaoe < 666 4 "Algae Warriors"
-#namecond2 2 <= effectiveaoe < 666 32 "Putrid Warriors"
-#namecond2 2 <= effectiveaoe < 666 64 "Moss Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "NAMEPREFIX Algae Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Putrid Warriors"
+#namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Moss Warriors"
 
-#namecond effectiveaoe == 666 4 "Army of Algae"
-#namecond effectiveaoe == 666 32 "Putrid Army"
-#namecond effectiveaoe == 666 64 "Army of Moss"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Army of Algae"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Putrid Army"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Army of Moss"
 
 
 #descr 4 "The %body% of SUBJECT %is% covered in algae-rich water. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
 #descr 32 "Decaying matter is used to coat the %body% of SUBJECT. This foul layer of putrid flesh provides and additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
 #descr 64 "The %body% of SUBJECT %is% covered in moss. This provides an additional layer of protection from blows, but if hit strongly it will burst into a cloud of poison."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of algae"
+#namecond effect > 1000 32 "NAMEPREFIX putrid $mist$"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of moss"
 
 #end

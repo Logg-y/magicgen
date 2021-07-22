@@ -7,15 +7,15 @@
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 50
-#scalefatiguemult 30
+#fatiguecost 60
+--#scalefatiguemult 30
 #sound 31
 #schools 1
 
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
@@ -39,7 +39,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."

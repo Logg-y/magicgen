@@ -13,9 +13,10 @@
 #explspr 10323
 #sound 41
 #paths 16
+#skipchance 50
 #secondarypaths 16
 #secondarypathchance 0
-#name 16 "Solar Rays"
+#name 16 "NAMEPREFIX Solar Rays"
 
 #descr 16 "This spell calls down rays of fire from the sun that set undead targets ablaze."
 
@@ -24,4 +25,8 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX touch of the Sun"
+
 #end

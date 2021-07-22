@@ -1,0 +1,225 @@
+#neweffect "planeshift inferno Secondary mrne"
+#effect 108
+#damage -12
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10043
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+#neweffect "planeshift inferno Secondary mrne damaging"
+#effect 108
+#damage -12
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 1
+#maxpower 30
+#pathlevel 1
+#explspr 10043
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+
+-------
+
+
+#neweffect "planeshift kokytos Secondary mrne"
+#effect 108
+#damage -13
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10045
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+#neweffect "planeshift kokytos Secondary mrne damaging"
+#effect 108
+#damage -13
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 1
+#maxpower 30
+#pathlevel 1
+#explspr 10045
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+-----
+
+
+
+#neweffect "planeshift void Secondary mrne"
+#effect 108
+#damage -11
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10042
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+#neweffect "planeshift void Secondary mrne damaging"
+#effect 108
+#damage -11
+#spec 25182336
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 1
+#maxpower 30
+#pathlevel 1
+#explspr 10042
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "planeshift"
+#name 2 "planeshift"
+#name 4 "planeshift"
+#name 8 "planeshift"
+#name 16 "planeshift"
+#name 32 "planeshift"
+#name 64 "planeshift"
+#name 128 "planeshift"
+#name 256 "planeshift"
+
+
+#end
+
+

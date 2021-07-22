@@ -23,19 +23,24 @@
 #paths 24
 #secondarypaths 16
 
-#namecond effectiveaoe == 1 8 "Impossible Sharpness"
+#namecond effectiveaoe == 1 8 "NAMEPREFIX Impossible Sharpness"
 
-#namecond effectiveaoe < 666 8 "Impossible Sharpness"
+#namecond effectiveaoe < 666 8 "NAMEPREFIX Impossible Sharpness"
 
-#namecond effectiveaoe == 666 8 "Impossible Sharpness"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Impossible Sharpness"
 
-#name 16 "Astral Weapons"
-#name 16 "Otherworldly Weapons"
+#name 16 "NAMEPREFIX Astral Weapons"
+#name 16 "NAMEPREFIX Otherworldly Weapons"
 
 #details "All melee attacks from affected creatures inflict AN damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
-#descr 16 "The melee weapons of SUBJECT become attuned to the astral plane. This enables them to bypass any armour as if it did not even exist." 
+#descr 16 "The melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of impossible sharpness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of astral fire"
+
 
 #end
 
@@ -65,12 +70,16 @@
 #paths 24
 #secondarypaths 16
 
-#name 8 "Impossibly Sharpened Army"
-#name 16 "Mass Astral Weapons"
+#name 8 "NAMEPREFIX Impossibly Sharpened Army"
+#name 16 "NAMEPREFIX Mass Astral Weapons"
 
 #details "All melee attacks from affected creatures inflict AN damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
-#descr 16 "The melee weapons of SUBJECT become attuned to the astral plane. This enables them to bypass any armour as if it did not even exist." 
+#descr 16 "The melee weapons of SUBJECT become wrathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of impossible sharpness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of astral fire"
 #end
 

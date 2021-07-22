@@ -15,7 +15,7 @@
 #secondarypaths 8
 
 #skipchance 30
-#scalefatiguemult 80
+#scalefatiguemult 25
 #details "The elementals are size 6."
 #name 8 "Summon NAMEPREFIX Massive Earth %Elemental%"
 #descr 8 "The caster summons forth ARTICLE earth %elemental%. They will fight for him until the battle ends."
@@ -62,7 +62,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 5
-#fatiguecost 1000
+#fatiguecost 1500
 #schools 1
 #skipchance 99
 #nogeodst 2052

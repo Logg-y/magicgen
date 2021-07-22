@@ -1,4 +1,4 @@
-#neweffect "Minor Decay"
+#neweffect "Decay Secondary mrne"
 #effect 11
 #damage 256
 #spec 25165824
@@ -9,6 +9,7 @@
 #aoe 1
 #scalerate 0
 #power 0
+#maxpower 30
 #explspr 10197
 #sound 31
 
@@ -31,10 +32,46 @@
 
 #end
 
-#neweffect "Minor Decay Smite"
+#neweffect "Decay Secondary mrn"
 #effect 11
 #damage 256
-#spec 17592194433024
+#spec 8392704
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10197
+#sound 31
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Decay"
+#name 2 "$Additional$ Decay"
+#name 4 "$Additional$ Decay"
+#name 8 "$Additional$ Decay"
+#name 16 "$Additional$ Decay"
+#name 32 "$Additional$ Decay"
+#name 64 "$Additional$ Decay"
+#name 128 "$Additional$ Decay"
+#name 256 "$Additional$ Decay"
+
+#end
+
+
+
+#neweffect "Decay Secondary mrne damaging"
+#effect 11
+#damage 256
+#spec 25165824
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -42,6 +79,7 @@
 #aoe 0
 #scalerate 0
 #power 0
+#maxpower 30
 #explspr 10197
 #sound 31
 
@@ -63,3 +101,38 @@
 #name 256 "$Additional$ Decay"
 
 #end
+
+#neweffect "Decay Secondary mrn damaging"
+#effect 11
+#damage 256
+#spec 8392704
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10197
+#sound 31
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Decay"
+#name 2 "$Additional$ Decay"
+#name 4 "$Additional$ Decay"
+#name 8 "$Additional$ Decay"
+#name 16 "$Additional$ Decay"
+#name 32 "$Additional$ Decay"
+#name 64 "$Additional$ Decay"
+#name 128 "$Additional$ Decay"
+#name 256 "$Additional$ Decay"
+
+#end
+

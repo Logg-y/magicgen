@@ -22,10 +22,10 @@
 #spelltype 528
 
 #scalerate 0.85
-#scalefatiguemult 20
+--#scalefatiguemult 20
 -- #scalecost 1.0
 #schools 16
-#skipchance 97
+#skipchance 50
 #end
 
 #neweffect "Raise ogre Ritual"
@@ -39,7 +39,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 97
+#skipchance 50
 
 #paths 8
 #secondarypaths 8

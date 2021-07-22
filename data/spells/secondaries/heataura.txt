@@ -1,0 +1,72 @@
+#newsecondary "Heataura nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Parching"
+#fatiguepersquare 12
+
+
+#nextspell "Heataura Secondary mrne"
+
+#descr "This spell is infused with parching heat that may linger on those affected by it, causing them to radiate heat for the remainder of the battle."
+#details "Affected creatures make an easy MR check. Those that fail to resist become gain a heat aura, but no fire resistance."
+
+#end
+
+#newsecondary "Heataura damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Parching"
+#fatiguepersquare 8
+
+#nextspell "Heataura Secondary mrne damaging"
+
+#descr "This spell is infused with parching heat that may linger on those affected by it, causing them to radiate heat for the remainder of the battle."
+#details "Wounded creatures make an MR check. Those that fail to resist become gain a heat aura, but no fire resistance."
+
+
+#end

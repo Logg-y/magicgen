@@ -14,7 +14,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 2."
 #name 1 "Summon NAMEPREFIX Small Fire %Elemental%"
@@ -39,7 +39,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 2."
 #name 1 "Summon NAMEPREFIX Small Fire Elementals"

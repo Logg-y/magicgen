@@ -1,0 +1,65 @@
+#neweffect "Mirrorimage Secondary mrn"
+#effect 23
+#damage 16777216
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10277
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ False Images"
+#name 2 "$Additional$ False Images"
+#name 4 "$Additional$ False Images"
+#name 8 "$Additional$ False Images"
+#name 16 "$Additional$ False Images"
+#name 32 "$Additional$ False Images"
+#name 64 "$Additional$ False Images"
+#name 128 "$Additional$ False Images"
+#name 256 "$Additional$ False Images"
+
+#end
+
+#neweffect "Mirrorimage Secondary mrne"
+#effect 23
+#damage 16777216
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10277
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ False Images"
+#name 2 "$Additional$ False Images"
+#name 4 "$Additional$ False Images"
+#name 8 "$Additional$ False Images"
+#name 16 "$Additional$ False Images"
+#name 32 "$Additional$ False Images"
+#name 64 "$Additional$ False Images"
+#name 128 "$Additional$ False Images"
+#name 256 "$Additional$ False Images"
+
+#end

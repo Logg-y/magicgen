@@ -14,9 +14,9 @@
 #paths 97
 #secondarypaths 97
 #secondarypathchance 80
-#name 1 "Fever"
-#name 32 "Deathly Fever"
-#name 64 "Deathly Fever"
+#name 1 "NAMEPREFIX Fever"
+#name 32 "NAMEPREFIX Deathly Fever"
+#name 64 "NAMEPREFIX Deathly Fever"
 
 #descr 1 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 32 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
@@ -27,6 +27,12 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 32
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever" 
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence" 
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence" 
+
 #end
 
 #neweffect "Mass Disesae"
@@ -45,9 +51,9 @@
 #paths 97
 #secondarypaths 97
 #secondarypathchance 80
-#name 1 "Mass Fever"
-#name 32 "Mass Deathly Fever"
-#name 64 "Mass Deathly Fever"
+#name 1 "NAMEPREFIX Mass Fever"
+#name 32 "NAMEPREFIX Mass Deathly Fever"
+#name 64 "NAMEPREFIX Mass Deathly Fever"
 
 #descr 1 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 32 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
@@ -58,4 +64,10 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 32
+
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever" 
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence" 
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence" 
 #end

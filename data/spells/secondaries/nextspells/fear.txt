@@ -1,8 +1,8 @@
-#neweffect "Minor Fear"
+
+#neweffect "fear type 1 Secondary mrn"
 #effect 4
 #damage 2
-#spec 8388736
-
+#spec 8392832
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -10,23 +10,127 @@
 #aoe 1
 #scalerate 0
 #power 0
-#explspr 10140
-#sound 22
+#maxpower 30
+#explspr 10060
+#sound 24
 
 #spelltype 2
 
+#pathlevel 1
 
-#paths 32
-#secondarypaths 32
+#paths 1
+#secondarypaths 1
 
-#name 1 "Minor Fear"
-#name 2 "Minor Fear"
-#name 4 "Minor Fear"
-#name 8 "Minor Fear"
-#name 16 "Minor Fear"
-#name 32 "Minor Fear"
-#name 64 "Minor Fear"
-#name 128 "Minor Fear"
-#name 256 "Minor Fear"
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 1 Secondary mrne"
+#effect 4
+#damage 2
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 1 Secondary mrn damaging"
+#effect 4
+#damage 2
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
+
+#end
+
+#neweffect "fear type 1 Secondary mrne damaging"
+#effect 4
+#damage 2
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10060
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ fear"
+#name 2 "$Additional$ fear"
+#name 4 "$Additional$ fear"
+#name 8 "$Additional$ fear"
+#name 16 "$Additional$ fear"
+#name 32 "$Additional$ fear"
+#name 64 "$Additional$ fear"
+#name 128 "$Additional$ fear"
+#name 256 "$Additional$ fear"
 
 #end

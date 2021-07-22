@@ -22,18 +22,22 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe <= 1 2 "charged body"
-#namecond effectiveaoe <= 1 2 "electrified body"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX charged body"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX electrified body"
 
-#namecond2 666 > effectiveaoe > 1 2 "group charged bodies"
-#namecond2 666 > effectiveaoe > 1 2 "group electrified bodies"
+#namecond2 666 > effectiveaoe > 1 2 "NAMEPREFIX group charged bodies"
+#namecond2 666 > effectiveaoe > 1 2 "NAMEPREFIX group electrified bodies"
 
-#namecond effectiveaoe == 666 2 "mass charged bodies"
-#namecond effectiveaoe == 666 2 "mass electrified bodies"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass charged bodies"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX mass electrified bodies"
 
 #details "The first melee attack against charged units inflict 20AN shock damage to both the attacker and the attacked."
 
 #descr 2 "Fills the %body% of SUBJECT with electrical charge. Upon being struck the charge is dissipated, striking both the attacker and the attacked with deadly lightning. As such it is unadvisable to cast this spell on recipients that are not shock resistant."
+
+#priority 1
+
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of charges"
 
 #end
 

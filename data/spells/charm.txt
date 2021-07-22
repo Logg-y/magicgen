@@ -23,11 +23,15 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 1 64 "Charm"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Charm"
 
-#namecond2 1 < effectiveaoe < 600 64 "Charming Whispers"
+#namecond2 1 < effectiveaoe < 600 64 "NAMEPREFIX Charming Whispers"
 
 #descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of charming"
+#namecond range < 10 64 "NAMEPREFIX charming touch"
 
 #end
 
@@ -65,7 +69,7 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 5
+#power 4
 #maxpower 15
 #pathlevel 2
 #explspr 10213
@@ -81,9 +85,14 @@
 
 #aispellmod -30
 
-#name 64 "Tempting Whispers"
+#name 64 "NAMEPREFIX Tempting Whispers"
 
 #descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
 #details "Targets must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also charms them."
+
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of temptation"
+#namecond range < 10 64 "NAMEPREFIX touch of temptation"
 
 #end

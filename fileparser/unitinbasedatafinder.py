@@ -9,6 +9,37 @@ descriptioncache = {}
 
 csv_keys = []
 
+def getMontagSummonAIScore(montagID):
+    if montagID == -2:
+        return 72 # longdead
+    elif montagID == -3:
+        return 77 # average of armed and unarmed soulless
+    elif montagID == -4:
+        return 82 # ghoul, ignoring pischasa for now
+    elif montagID == -5:
+        return 100 # random animal: a guess as it will vary hugely no matter what is done to aispellmod
+    elif montagID == -6:
+        return 208 # lesser horror
+    elif montagID == -7:
+        return 346 # greater horror
+    elif montagID == -8:
+        return 1200 # doom horror
+    elif montagID == -9:
+        return 55 # swarm bugs
+    elif montagID == -10:
+        return 200 # good crossbreed, a guess
+    elif montagID == -11:
+        return 80 # bad crossbreed, a guess
+    elif montagID == -12:
+        return 90 # 3% good crossbreed, 97% bad crossbreed
+    elif montagID == -13:
+        return 95 # adventurers
+    elif montagID == -14:
+        return 120 # random dungeon creature, a guess
+    elif montagID == -15:
+        return 77 # more soulless
+    raise ValueError(f"No summon AI score defined for montag {montagID}")
+
 class UnitInBaseDataFinder(object):
     def __init__(self):
         self.additionalmodcmds = ""
@@ -31,6 +62,22 @@ class UnitInBaseDataFinder(object):
 
     def __repr__(self):
         return (f"Unit({self.id}, {getattr(self, 'name', '???')})")
+
+    def calcSummonAIScore(self):
+        "Return the Illwinter base summon AI score for in an in battle summon of this unit."
+        score = 2 * (getattr(self, "att", 0) + getattr(self, "def", 0) + getattr(self, "str", 0) + getattr(self, "hp", 0))
+        if getattr(self, "fireshield", 0) > 0 or getattr(self, "trample", 0) > 0:
+            score += (getattr(self, "hp") * 4)
+        if getattr(self, "ethereal", 0) > 0:
+            score += (getattr(self, "hp") * 4)
+
+        secondshape = int(getattr(self, "secondshape", -1))
+        if secondshape > 0:
+            unit = get(int(secondshape))
+            score += unit.calcSummonAIScore()
+        return score
+
+
 
 
     @staticmethod

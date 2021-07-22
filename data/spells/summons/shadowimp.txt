@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1.1
-#scalefatiguemult 15
+--#scalefatiguemult 15
 #end
 
 #neweffect "shadowimp ritual"
@@ -46,7 +46,7 @@
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -1.6
 #scalefatiguemult 55
 
 #scalerate 2

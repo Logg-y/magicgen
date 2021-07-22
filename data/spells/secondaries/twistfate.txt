@@ -1,0 +1,54 @@
+#newsecondary "Twistfate Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 1
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Averting"
+#fatiguepersquare 4
+
+
+#nextspell "Twistfate Secondary mrn"
+
+#descr "This spell may also magically protect those it affects from a single attack."
+
+#end
+
+#newsecondary "Twistfate Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 1
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Preventative"
+#fatiguepersquare 2
+
+
+#nextspell "Twistfate Secondary mrne"
+
+#descr "This spell may also magically protect those it affects from a single attack."
+#end

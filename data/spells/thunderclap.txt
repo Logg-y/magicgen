@@ -33,7 +33,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Thunderclap"
+#name 2 "NAMEPREFIX Thunderclap"
 #descr 2 "The caster creates a massive thunderclap around SUBJECT. Whilst this does not physically hurt the enemies, they may be stunned. Additionally, being exposed to the thunderclap is frightening and may permanently affect those of weaker mind who experience it."
 
 #maxpower 8
@@ -44,4 +44,8 @@
 #spelltype 34
 #scalerate 1.2
 #schools 4
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of thunderclaps"
+
 #end

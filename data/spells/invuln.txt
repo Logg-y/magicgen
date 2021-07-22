@@ -27,20 +27,24 @@
 
 #details "Grants Invulnerability 15."
 
-#namecond effectiveaoe < 10 32 "Stygian %Skin%"
-#namecond effectiveaoe < 10 32 "Stygian Flesh"
-#namecond effectiveaoe < 10 4 "Stygian %Skin%"
-#namecond effectiveaoe < 10 4 "Stygian Flesh"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian %Skin%"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian Flesh"
+#namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian %Skin%"
+#namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian Flesh"
 
-#namecond2 10 <= effectiveaoe < 666 32 "Stygian Warriors"
-#namecond2 10 <= effectiveaoe < 666 4 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 4 "NAMEPREFIX Stygian Warriors"
 
-#namecond effectiveaoe == 666 32 "Stygian Army"
-#namecond effectiveaoe == 666 4 "Stygian Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Stygian Army"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Stygian Army"
 
 
 #descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
 #descr 32 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX stygian $mist$"
+#namecond effect > 1000 32 "NAMEPREFIX stygian $mist$"
 
 #end
 
@@ -74,20 +78,24 @@
 
 #details "Grants Invulnerability 15."
 
-#namecond effectiveaoe < 10 32 "Stygian %Skin%"
-#namecond effectiveaoe < 10 32 "Stygian Flesh"
-#namecond effectiveaoe < 10 4 "Stygian %Skin%"
-#namecond effectiveaoe < 10 4 "Stygian Flesh"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian %Skin%"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian Flesh"
+#namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian %Skin%"
+#namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian Flesh"
 
-#namecond2 10 <= effectiveaoe < 666 32 "Stygian Warriors"
-#namecond2 10 <= effectiveaoe < 666 4 "Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 4 "NAMEPREFIX Stygian Warriors"
 
-#namecond effectiveaoe == 666 32 "Stygian Army"
-#namecond effectiveaoe == 666 4 "Stygian Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Stygian Army"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Stygian Army"
 
 
 #descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
 #descr 32 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX stygian $mist$"
+#namecond effect > 1000 32 "NAMEPREFIX stygian $mist$"
 
 #end
 
@@ -120,14 +128,18 @@
 
 #details "Grants Invulnerability 25."
 
-#namecond effectiveaoe < 10 32 "Invulnerability"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Invulnerability"
 
-#namecond2 10 <= effectiveaoe < 666 32 "Invulnerable Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Invulnerable Warriors"
 
-#namecond effectiveaoe == 666 32 "Invulnerable Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Invulnerable Army"
 
 
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of invulnerablility"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of invulnerablility"
 
 #end
 
@@ -161,14 +173,18 @@
 
 #details "Grants Invulnerability 25."
 
-#namecond effectiveaoe < 10 32 "Invulnerability"
+#namecond effectiveaoe < 10 32 "NAMEPREFIX Invulnerability"
 
-#namecond2 10 <= effectiveaoe < 666 32 "Invulnerable Warriors"
+#namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Invulnerable Warriors"
 
-#namecond effectiveaoe == 666 32 "Invulnerable Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Invulnerable Army"
 
 
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of invulnerablility"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of invulnerablility"
 
 #end
 

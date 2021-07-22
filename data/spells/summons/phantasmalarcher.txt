@@ -24,7 +24,7 @@
 #spelltype 528
 
 #scalerate 1.5
-#scalefatiguemult 5
+--#scalefatiguemult 5
 #end
 
 #neweffect "Phantasmal archer ritual"

@@ -10,7 +10,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 1
-#req_0popok
+#req_pop0ok
 #nation -2
 #notext
 #nolog
@@ -23,7 +23,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 1
-#req_0popok
+#req_pop0ok
 #nation -2
 #notext
 #nolog
@@ -36,7 +36,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 1
-#req_0popok
+#req_pop0ok
 #nation -2
 #notext
 #nolog
@@ -49,7 +49,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 1
-#req_0popok
+#req_pop0ok
 #nation -2
 #notext
 #nolog

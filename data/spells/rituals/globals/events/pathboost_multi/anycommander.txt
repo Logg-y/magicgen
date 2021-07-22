@@ -11,7 +11,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of fire!"
 #pathboost 0
@@ -25,7 +25,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of air!"
 #pathboost 1
@@ -39,7 +39,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of water!"
 #pathboost 2
@@ -53,7 +53,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of earth!"
 #pathboost 3
@@ -67,7 +67,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of astral power!"
 #pathboost 4
@@ -81,7 +81,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of necromancy!"
 #pathboost 5
@@ -95,7 +95,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of nature!"
 #pathboost 6
@@ -109,7 +109,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 2
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "A commander has suddenly gained deeper knowledge of blood!"
 #pathboost 7

@@ -23,8 +23,11 @@
 #secondarypaths 4
 #secondarypathchance 100
 
-#name 128 "Claws of Kokytos"
+#name 128 "NAMEPREFIX Claws of Kokytos"
 #descr 128 "A gate is opened and the target is instantly thrown into Kokytos, the icy realm of Devils. This effect cannot be resisted by any means and being sent to Kokytos means certain death for most mortals."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX embrace of kokytos"
 
 
 #end
@@ -54,8 +57,11 @@
 #secondarypaths 1
 #secondarypathchance 100
 
-#name 128 "Infernal Prison"
+#name 128 "NAMEPREFIX Infernal Prison"
 #descr 128 "A gate is opened and the target is instantly thrown into the Inferno, the realm of Devils. This effect cannot be resisted by any means and being sent to the Inferno means certain death for most mortals."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX embrace of inferno"
 
 
 #end
@@ -85,11 +91,15 @@
 #secondarypaths 16
 #secondarypathchance 100
 
-#name 16 "Void Portal"
-#name 128 "Void Portal"
+#name 16 "NAMEPREFIX Void Portal"
+#name 128 "NAMEPREFIX Void Portal"
 #descr 16 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
 #descr 128 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
 #details "This spell offers a difficult MR check to resist its effects."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX embrace of The Void"
+#namecond range < 10 16 "NAMEPREFIX embrace of The Void"
 
 
 #end

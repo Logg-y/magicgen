@@ -23,12 +23,16 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Enslave Mind"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Enslave Mind"
 
-#namecond2 1 <= effectiveaoe < 25 16 "Enslave Group"
-#namecond2 26 <= effectiveaoe < 600 16 "Enslave Squad"
+#namecond2 1 <= effectiveaoe < 25 16 "NAMEPREFIX Enslave Group"
+#namecond2 26 <= effectiveaoe < 600 16 "NAMEPREFIX Enslave Squad"
 
 #descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of enslavement"
+#namecond range < 10 16 "NAMEPREFIX touch of enslavement"
 
 #end
 
@@ -67,7 +71,7 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 5
+#power 4
 #maxpower 8
 #pathlevel 2
 #explspr 10208
@@ -81,13 +85,17 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Domination"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Domination"
 
-#namecond2 1 <= effectiveaoe < 25 16 "Dominate Group"
-#namecond2 26 <= effectiveaoe < 600 16 "Dominate Squad"
+#namecond2 1 <= effectiveaoe < 25 16 "NAMEPREFIX Dominate Group"
+#namecond2 26 <= effectiveaoe < 600 16 "NAMEPREFIX Dominate Squad"
 
 #descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
 #details "Targets must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also enslaves them."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of domination"
+#namecond range < 10 16 "NAMEPREFIX touch of domination"
 
 #end
 
@@ -118,8 +126,11 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Master Enslave"
+#name 16 "NAMEPREFIX Master Enslave"
 
 #descr 16 "The caster attempts to enslave all of his foes at once. Unless resisted, they will lose all command and magical powers they have, and fight for the caster."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of enslavement"
 
 #end

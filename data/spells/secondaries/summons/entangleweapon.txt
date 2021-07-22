@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.8
 
 #unitmod "Summon Entangleweapon"
 #descr "The summoned %creature% %is% able to trap enemies in vines upon being wounded by its attacks."

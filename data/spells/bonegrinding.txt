@@ -52,8 +52,14 @@
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 32 "Break Bones"
+#name 32 "NAMEPREFIX Break Bones"
 #descr 32 "The caster violently snaps the bones of SUBJECT. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
+
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Bonebreak Touch"
+#descrcond range < 10 16 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
+
 #end
 
 
@@ -114,6 +120,6 @@
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 32 "Bone Grinding"
+#name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #end

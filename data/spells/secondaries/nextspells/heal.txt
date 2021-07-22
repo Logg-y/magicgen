@@ -1,0 +1,65 @@
+#neweffect "Heal Secondary mrn"
+#effect 13
+#damage 10
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10004
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Healing"
+#name 2 "$Additional$ Healing"
+#name 4 "$Additional$ Healing"
+#name 8 "$Additional$ Healing"
+#name 16 "$Additional$ Healing"
+#name 32 "$Additional$ Healing"
+#name 64 "$Additional$ Healing"
+#name 128 "$Additional$ Healing"
+#name 256 "$Additional$ Healing"
+
+#end
+
+#neweffect "Heal Secondary mrne"
+#effect 13
+#damage 10
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10004
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Healing"
+#name 2 "$Additional$ Healing"
+#name 4 "$Additional$ Healing"
+#name 8 "$Additional$ Healing"
+#name 16 "$Additional$ Healing"
+#name 32 "$Additional$ Healing"
+#name 64 "$Additional$ Healing"
+#name 128 "$Additional$ Healing"
+#name 256 "$Additional$ Healing"
+
+#end

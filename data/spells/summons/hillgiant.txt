@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 60
 
 #name 8 "Summon NAMEPREFIX Hill %Giant%"
 #descr 8 "The caster summons ARTICLE hill %giant%. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."
@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1
-#scalefatiguemult 60
+#scalefatiguemult 20
 #end
 
 #neweffect "hill ritual"
@@ -39,7 +39,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 60
 
 #name 8 "Summon NAMEPREFIX Hill %Giant%"
 #descr 8 "The caster summons ARTICLE hill %giant%. Hill giants are large humanoids that are physically powerful but are vulnerable to magic."

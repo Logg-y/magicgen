@@ -26,12 +26,16 @@
 
 #aispellmod -60
 
-#namecond effectiveaoe < 666 64 "Fascination"
+#namecond effectiveaoe < 666 64 "NAMEPREFIX Fascination"
 
-#namecond effectiveaoe >= 666 64 "Fascinate Army"
+#namecond effectiveaoe >= 666 64 "NAMEPREFIX Fascinate Army"
 
 #descr 64 "The caster tries to project images and scents in the consciousness of SUBJECT. Should it succeed PRONOUN will be distracted for a short while and hopefully enable someone to strike the enemy down."
 #details "Those that fail to resist are stunned for a round."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of fascination"
+#namecond range < 10 64 "NAMEPREFIX touch of fascination"
 
 #end
 
@@ -64,10 +68,14 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Colour Spray"
+#name 16 "NAMEPREFIX Colour Spray"
 
 #descr 16 "The caster projects a stream of dazzling coloured lights at enemies. This may briefly dazzle those affected."
 #details "Those that fail to resist are stunned for a round."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of dazzling colours"
+#namecond range < 10 64 "NAMEPREFIX touch of dazzling colours"
 
 #end
 

@@ -62,7 +62,7 @@
 #shockres 6
 #nameprefix "Stormthrowing"
 #addweapon 243
-#descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
+#descr "This particular CREATURE is able to hurl balls of lightning at enemies."
 #end
 
 #newunitmod "Summon Plague Breath"

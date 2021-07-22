@@ -1,7 +1,7 @@
-#neweffect "Additional Cold"
-#effect 2
-#damage 2
-#spec 36028797564240512
+#neweffect "4 capped cold Secondary mrn"
+#effect 109
+#damage 4
+#spec 36028797027373696
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -9,7 +9,8 @@
 #aoe 1
 #scalerate 0
 #power 0
-#explspr 10167
+#maxpower 30
+#explspr 10170
 #sound 24
 
 #spelltype 2
@@ -19,22 +20,57 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "$Additional$ $Chill$"
-#name 2 "$Additional$ $Chill$"
-#name 4 "$Additional$ $Chill$"
-#name 8 "$Additional$ $Chill$"
-#name 16 "$Additional$ $Chill$"
-#name 32 "$Additional$ $Chill$"
-#name 64 "$Additional$ $Chill$"
-#name 128 "$Additional$ $Chill$"
-#name 256 "$Additional$ $Chill$"
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
 
 #end
 
-#neweffect "Additional Cold Holy"
-#effect 2
-#damage 10
-#spec 36028797564240512
+
+#neweffect "4 capped cold Secondary mrne"
+#effect 109
+#damage 4
+#spec 36028797044146816
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10170
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+#neweffect "4 capped cold Secondary mrn damaging"
+#effect 109
+#damage 4
+#spec 36028797027373696
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -42,7 +78,8 @@
 #aoe 0
 #scalerate 0
 #power 0
-#explspr 10167
+#maxpower 30
+#explspr 10170
 #sound 24
 
 #spelltype 2
@@ -52,14 +89,188 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "$Additional$ $Chill$"
-#name 2 "$Additional$ $Chill$"
-#name 4 "$Additional$ $Chill$"
-#name 8 "$Additional$ $Chill$"
-#name 16 "$Additional$ $Chill$"
-#name 32 "$Additional$ $Chill$"
-#name 64 "$Additional$ $Chill$"
-#name 128 "$Additional$ $Chill$"
-#name 256 "$Additional$ $Chill$"
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+
+#neweffect "4 capped cold Secondary mrne damaging"
+#effect 109
+#damage 4
+#spec 36028797044146816
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10170
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+---
+
+
+#neweffect "10AP cold Secondary mrn"
+#effect 2
+#damage 10
+#spec 4672
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10145
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+#neweffect "10AP cold Secondary mrne"
+#effect 2
+#damage 10
+#spec 16777792
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10145
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+#neweffect "10AP cold Secondary mrn damaging"
+#effect 2
+#damage 10
+#spec 21056
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10145
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
+
+#end
+
+#neweffect "10AP cold Secondary mrne damaging"
+#effect 2
+#damage 10
+#spec 16794176
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10145
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ cold"
+#name 2 "$Additional$ cold"
+#name 4 "$Additional$ cold"
+#name 8 "$Additional$ cold"
+#name 16 "$Additional$ cold"
+#name 32 "$Additional$ cold"
+#name 64 "$Additional$ cold"
+#name 128 "$Additional$ cold"
+#name 256 "$Additional$ cold"
 
 #end

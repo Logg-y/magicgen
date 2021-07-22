@@ -1,0 +1,65 @@
+#neweffect "Flaming Arrows Secondary mrn"
+#effect 10
+#damage 8388608
+#spec 4214784
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10011
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Ignition"
+#name 2 "$Additional$ Ignition"
+#name 4 "$Additional$ Ignition"
+#name 8 "$Additional$ Ignition"
+#name 16 "$Additional$ Ignition"
+#name 32 "$Additional$ Ignition"
+#name 64 "$Additional$ Ignition"
+#name 128 "$Additional$ Ignition"
+#name 256 "$Additional$ Ignition"
+
+#end
+
+#neweffect "Flaming Arrows Secondary mrne"
+#effect 10
+#damage 8388608
+#spec 20987904
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10011
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Ignition"
+#name 2 "$Additional$ Ignition"
+#name 4 "$Additional$ Ignition"
+#name 8 "$Additional$ Ignition"
+#name 16 "$Additional$ Ignition"
+#name 32 "$Additional$ Ignition"
+#name 64 "$Additional$ Ignition"
+#name 128 "$Additional$ Ignition"
+#name 256 "$Additional$ Ignition"
+
+#end

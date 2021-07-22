@@ -63,8 +63,8 @@
 #power 6
 #maxpower 6
 #nreff 1
-#pathlevel 3
-#fatiguecost 1000
+#pathlevel 4
+#fatiguecost 1300
 #schools 1
 #skipchance 99
 

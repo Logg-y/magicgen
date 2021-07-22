@@ -1,0 +1,33 @@
+#neweffect "Fire Smite"
+#effect 2
+#damage 10
+#spec 8405152
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire"
+#name 2 "$Additional$ Fire"
+#name 4 "$Additional$ Fire"
+#name 8 "$Additional$ Fire"
+#name 16 "$Additional$ Fire"
+#name 32 "$Additional$ Fire"
+#name 64 "$Additional$ Fire"
+#name 128 "$Additional$ Fire"
+#name 256 "$Additional$ Fire"
+
+#end

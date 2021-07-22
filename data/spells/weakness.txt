@@ -22,9 +22,12 @@
 #paths 32
 #secondarypaths 0
 
-#name 32 "Weakness"
+#name 32 "NAMEPREFIX Weakness"
 #descr 32 "The mage damages the life force of the %target% making %it% permanently weaker."
 #details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
 #end
 
@@ -53,9 +56,12 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Mass Weakness"
+#name 32 "NAMEPREFIX Mass Weakness"
 
 #descr 32 "The caster attempts damage the life force of the all his enemies, making them permanently weaker."
 #details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
 #end

@@ -23,15 +23,20 @@
 
 #details "Trying to escape requires a morale check vs 21. Failure results in 3AN fire damage."
 
-#namecond effectiveaoe == 0 1 "$Fetters$ of Fire"
-#namecond effectiveaoe == 0 128 "$Fetters$ from Inferno"
+#namecond effectiveaoe == 0 1 "NAMEPREFIX $Fetters$ of Fire"
+#namecond effectiveaoe == 0 128 "NAMEPREFIX $Fetters$ from Inferno"
 
-#namecond effectiveaoe > 0 1 "Prison of Fire"
-#namecond effectiveaoe > 0 128 "Prison from Inferno"
+#namecond effectiveaoe > 0 1 "NAMEPREFIX Prison of Fire"
+#namecond effectiveaoe > 0 128 "NAMEPREFIX Prison from Inferno"
 
 #descr 1 "Shackles of fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
 #descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap $SUBJECT$. Trying to escape requires high morale, and attempting results in severe burns."
 #details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of imprisonment"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of imprisonment"
+#namecond range < 10 1 "NAMEPREFIX touch of imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 #end
 

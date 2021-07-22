@@ -1,0 +1,56 @@
+#newsecondary "Fearbuff Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 32
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Frightening"
+#fatiguepersquare 8
+
+
+#nextspell "Fearbuff Secondary mrn"
+
+#descr "This spell may also make those it affects frighten nearby enemies."
+#details "Affected creatures make an MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
+
+#end
+
+#newsecondary "Fearbuff Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 32
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Fearful"
+#fatiguepersquare 4
+
+
+#nextspell "Fearbuff Secondary mrne"
+
+#descr "This spell may also make those it affects frighten nearby enemies."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
+#end

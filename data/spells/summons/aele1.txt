@@ -2,7 +2,7 @@
 #effect 1
 #damage 572
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
 #nreff 1
@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 1."
 #name 2 "Summon NAMEPREFIX Tiny Air %Elemental%"
@@ -39,7 +39,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 1."
 #name 2 "Summon NAMEPREFIX Tiny Air Elementals"

@@ -19,10 +19,10 @@
 #paths 136
 #secondarypaths 8
 
-#name 8 "$blade$ wind"
-#name 8 "$blade$ shower"
-#name 8 "$blade$ storm"
-#name 128 "$infernal$ blades"
+#name 8 "NAMEPREFIX $blade$ wind"
+#name 8 "NAMEPREFIX $blade$ shower"
+#name 8 "NAMEPREFIX $blade$ storm"
+#name 128 "NAMEPREFIX $infernal$ blades"
 #descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are not magical and are stopped by most armour."
 #descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are not magical and are stopped by most armour."
 
@@ -32,6 +32,13 @@
 -- #scalecost 0.15
 #pathlevel 2
 #schools 4
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX Touch of Blades"
+#namecond range < 10 128 "NAMEPREFIX Touch of Blades"
+#descrcond range < 10 8 "The caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
+
 #end
 
 #neweffect "Blade Wind AP"
@@ -56,11 +63,17 @@
 #paths 136
 #secondarypaths 8
 
-#name 8 "Shower of Sharpness"
-#name 8 "Storm of Sharpness"
-#name 128 "$infernal$ evisceration"
+#name 8 "NAMEPREFIX Shower of Sharpness"
+#name 8 "NAMEPREFIX Storm of Sharpness"
+#name 128 "NAMEPREFIX $infernal$ evisceration"
 #descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
 #descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX Touch of Piercing Blades"
+#namecond range < 10 128 "NAMEPREFIX Touch of Piercing Blades"
+#descrcond range < 10 8 "The caster hurls an incredible number of sharpened blades at a target very close to him. Being struck by this many blades at point blank range must surely be fatal to any foe."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster hurls an incredible number of sharpened blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
 
 #spelltype 18
 

@@ -1,0 +1,72 @@
+#neweffect "Heataura Secondary mrne"
+#effect 10
+#damage 16384
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10003
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Persistent Heat"
+#name 2 "Persistent Heat"
+#name 4 "Persistent Heat"
+#name 8 "Persistent Heat"
+#name 16 "Persistent Heat"
+#name 32 "Persistent Heat"
+#name 64 "Persistent Heat"
+#name 128 "Persistent Heat"
+#name 256 "Persistent Heat"
+
+#end
+
+
+
+
+#neweffect "Heataura Secondary mrne damaging"
+#effect 10
+#damage 16384
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10003
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Persistent Heat"
+#name 2 "Persistent Heat"
+#name 4 "Persistent Heat"
+#name 8 "Persistent Heat"
+#name 16 "Persistent Heat"
+#name 32 "Persistent Heat"
+#name 64 "Persistent Heat"
+#name 128 "Persistent Heat"
+#name 256 "Persistent Heat"
+
+#end

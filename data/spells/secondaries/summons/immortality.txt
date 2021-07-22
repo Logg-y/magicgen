@@ -7,7 +7,7 @@
 #req effect != 10038
 #req effect != 21
 #paths 1
-#power -3
+#power -2
 #req secondshape == -1
 
 #mult fatiguecost 4
@@ -77,7 +77,7 @@
 #req effect != 21
 #req secondshape == -1
 #paths 96
-#power -3
+#power -2
 
 #mult fatiguecost 4
 #magicpathvaluescaling 0.1
@@ -170,7 +170,7 @@
 #paths 32
 #power 0
 
-#mult fatiguecost 1.9
+#mult fatiguecost 1.6
 #magicpathvaluescaling 0.05
 
 -- not montag
@@ -190,9 +190,9 @@
 #req effect != 10038
 #req effect != 21
 #paths 65
-#power -1
+#power 0
 
-#mult fatiguecost 1.9
+#mult fatiguecost 1.6
 #magicpathvaluescaling 0.05
 
 -- not montag

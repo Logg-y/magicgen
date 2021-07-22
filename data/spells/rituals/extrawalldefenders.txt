@@ -6,9 +6,9 @@
 #maxpower 14
 #nreff 1
 #pathlevel 3
-#fatiguecost 800
+#fatiguecost 1200
 #scalecost 4
-#scalefatiguemult 200
+#scalefatiguemult 300
 #schools 1
 
 -- For now: all

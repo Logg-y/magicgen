@@ -24,13 +24,19 @@
 #paths 129
 #secondarypaths 1
 
-#name 1 "Flaming Arrows"
-#name  128 "Infernal Arrows"
+#name 1 "NAMEPREFIX Flaming Arrows"
+#name 128 "NAMEPREFIX Infernal Arrows"
 
 #details "Projectile weapons deal +8AP magical fire damage."
 
 #descr 1 "Imbues the arrows of SUBJECT with fire magic, causing them to burst into flames when fired."
 #descr 128 "$BLOOD_INTRO$, the caster imbues the arrows of SUBJECT with the power of Inferno, causing them to burst into flames when fired."
+
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of arrow ignition"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of arrow ignition"
+
 
 #end
 

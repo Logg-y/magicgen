@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.8
 
 #unitmod "Summon Dimensionalshiftweapon"
 #descr "The summoned %creature% %is% able to send enemies to the Void with %its% attacks."
@@ -24,7 +24,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.8
 
 #unitmod "Summon Infernobanishweapon"
 #descr "The summoned %creature% %is% able to send enemies to Inferno with %its% attacks."

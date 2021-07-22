@@ -26,8 +26,8 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Dispel Illusion"
-#namecond effectiveaoe >= 1 16 "Dispel Illusions"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Dispel Illusion"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Dispel Illusions"
 
 #descr 16 "The caster attempts to dispel ARTICLE_N hostile illusory %creature%. Any illusory creatures that fail to resist the spell's effects are destroyed."
 
@@ -59,7 +59,7 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "True Seeing"
+#name 16 "NAMEPREFIX True Seeing"
 
 #descr 16 "The caster attempts to see all as it really is. All hostile illusory creatures that fail to resist this spell are destroyed."
 

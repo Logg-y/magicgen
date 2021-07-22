@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 60
 
 #name 32 "Revive NAMEPREFIX %Wight%"
 #descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."
@@ -38,7 +38,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 70
+#skipchance 40
 
 #name 32 "Revive NAMEPREFIX %Wight%"
 #descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."

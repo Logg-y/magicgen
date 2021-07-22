@@ -25,11 +25,14 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe < 1 16 "Soul Slay"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Soul Slay"
 
-#namecond2 1 <= effectiveaoe < 600 16 "Soul Sundering"
+#namecond2 1 <= effectiveaoe < 600 16 "NAMEPREFIX Soul Sundering"
 
 #descr 16 "The caster tries to rip the %soul% of SUBJECT from PRONOUN_POS %body%. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX soulslaying touch"
 
 #end
 
@@ -85,9 +88,12 @@
 
 #nextspell "Soul Detonation"
 
-#namecond effectiveaoe < 1 1 "Detonate Soul"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Detonate Soul"
 
 #descr 1 "The caster tries to force the %soul% of SUBJECT to explode. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death, and triggers an explosion that may harm surrounding creatures."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX souligniting touch"
 
 #end
 
@@ -119,7 +125,7 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Mass Soul Rip"
+#name 16 "NAMEPREFIX Mass Soul Rip"
 
 #descr 16 "The caster attempts to rip the souls from all living creatures on the battlefield, including himself. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
 

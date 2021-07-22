@@ -36,7 +36,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Charge %Foe%"
+#name 2 "NAMEPREFIX Charge %Foe%"
 #descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselvers and the next person to strike them."
 #details "Applies 10AN charged body on damage."
 

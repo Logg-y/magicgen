@@ -89,7 +89,7 @@
 #anysummon 1
 
 #paths 64
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -212,7 +212,7 @@
 #anysummon 1
 
 #paths 64
-#power -4
+#power -3
 
 -- not montag
 #req damage > 0
@@ -336,7 +336,7 @@
 #anysummon 1
 
 #paths 64
-#power -6
+#power -5
 
 -- not montag
 #req damage > 0

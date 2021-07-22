@@ -14,8 +14,8 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
-#scalefatiguemult 60
+#skipchance 50
+#scalefatiguemult 20
 #details "The elementals are size 5."
 #name 2 "Summon NAMEPREFIX Huge Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE very large air %elemental%. They will fight for him until the battle ends."
@@ -39,7 +39,7 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 5."
 #name 2 "Summon NAMEPREFIX Huge Air Elementals"
@@ -61,8 +61,8 @@
 #power 8 
 #maxpower 8
 #nreff 1
-#pathlevel 4
-#fatiguecost 800
+#pathlevel 5
+#fatiguecost 1300
 #schools 1
 #skipchance 99
 #nogeodst 2052

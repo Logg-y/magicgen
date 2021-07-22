@@ -15,7 +15,7 @@
 #secondarypaths 64
 
 #skipchance 97
-#scalefatiguemult 10
+--#scalefatiguemult 10
 
 #name 64 "Summon NAMEPREFIX %Leogryph%"
 #descr 64 "The caster summons ARTICLE %leogryph%. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."

@@ -7,13 +7,13 @@
 #precision -2
 #nreff 1
 #pathlevel 2
-#fatiguecost 50
+#fatiguecost 60
 #sound 31
 #schools 1
 
 #paths 1
 #secondarypaths 1
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #skipchance 97
 
 #name 1 "Summon NAMEPREFIX Will o' the %Wisp%"

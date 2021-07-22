@@ -19,11 +19,16 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "Tremor"
+#name 8 "NAMEPREFIX Tremor"
 #descr 8 "The caster shakes the earth beneath SUBJECT. Whilst this does not physically hurt the enemies, the less agile amongst them may trip or stumble and become stunned. Flying or floating creatures are entirely unaffected by this spell."
 
 -- evo-like, scale aoe
 #spelltype 34
 #scalerate 2
 #schools 4
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of tremors"
+#namecond range < 10 4 "NAMEPREFIX touch of tremors"
+
 #end

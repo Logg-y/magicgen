@@ -13,8 +13,8 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
-#scalefatiguemult 20
+#skipchance 50
+#scalefatiguemult 10
 #details "The elementals are size 3."
 #name 4 "Summon NAMEPREFIX Lesser Water %Elemental%"
 #descr 4 "The caster summons forth ARTICLE moderately sized water %elemental%. They will fight for him until the battle ends."
@@ -37,7 +37,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 3."
 #name 4 "Summon NAMEPREFIX Lesser Water Elementals"
@@ -59,8 +59,8 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 700
+#pathlevel 4
+#fatiguecost 900
 #schools 1
 #skipchance 99
 

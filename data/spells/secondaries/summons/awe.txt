@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.8
 
 #unitmod "Summon Awe"
 #descr "The summoned %creature% %is% surrounded by ARTICLE_N %aura% of splendour that may halt attackers in their tracks."
@@ -56,7 +56,7 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -73,7 +73,7 @@
 #anysummon 1
 
 #paths 64
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -90,11 +90,11 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.8
 
 #unitmod "Summon Sunawe 3"
 #descr "The summoned %creature% %is% surrounded by ARTICLE_N %aura% of splendour that may halt attacking animals in their tracks. This ability is only effective if the sun is visible."

@@ -53,6 +53,7 @@
 #spelltype 2
 #aoe 0
 #power 7
+#maxpower 11
 #name 4 "Redirect Flow"
 #name 64 "Create Field"
 #scalerate 5

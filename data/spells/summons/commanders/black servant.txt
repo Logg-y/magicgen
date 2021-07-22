@@ -3,14 +3,14 @@
 #effect 1
 #damage 434
 #spec 0
-#power 1
+#power 3
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 1
-#chassisvalue 40
+#pathlevel 2
+#chassisvalue 30
 #range 6
-#fatiguecost 50
+#fatiguecost 30
 #sound 31
 #schools 1
 
@@ -23,7 +23,7 @@
 #name 32 "Call NAMEPREFIX Black %Servant%"
 #descr 32 "The death mage summons ARTICLE %Black Servant% to join him in battle. The %Black Servant% will leave once the battle is over."
 
-#scalefatiguemult 35
+--#scalefatiguemult 35
 #spelltype 528
 
 #scalerate 1

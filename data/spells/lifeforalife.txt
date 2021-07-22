@@ -10,7 +10,7 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 5
+#power 7
 #maxpower 14
 #pathlevel 2
 #sound 18
@@ -22,8 +22,12 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Life for a Life"
+#name 128 "NAMEPREFIX Life for a Life"
 #descr 128 "The Blood mage sacrifices a virgin and in exchange one of his foes on the battlefield is slain. Inanimate beings are immune to this spell, everyone else will take severe and irresistible damage from it."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of Slaying"
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch brings death to those he touches."
 
 
 #end

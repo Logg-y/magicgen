@@ -22,7 +22,7 @@
 #spelltype 528
 
 #scalerate 1
-#scalefatiguemult 50
+#scalefatiguemult 5
 #end
 
 #neweffect "shadelord ritual"

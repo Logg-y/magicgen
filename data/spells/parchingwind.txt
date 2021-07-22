@@ -80,7 +80,7 @@
 
 #scalefatigueexponent 0.2
 
-#name 1 "Parching Wind"
+#name 1 "NAMEPREFIX Parching Wind"
 #descr 1 "Hot winds are blown at creatures in a SIZE area. The scorching heat may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or fire resistance may prevent the effect. This spell may dehydrate those affected."
 #details "Those damaged by the initial effect suffer fatigue damage. They must then make a MR check or gain barkskin (natural protection set to 10, +5 fire vulnerability) and make an easy MR check or suffer dessication; making a MR check vs 22 each turn. Success ends the effect, failure means taking 2d8 fatigue damage."
 

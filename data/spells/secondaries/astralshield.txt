@@ -1,0 +1,54 @@
+#newsecondary "Astralshield Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Safeguarding"
+#fatiguepersquare 4
+
+
+#nextspell "Astralshield Secondary mrn"
+
+#descr "This spell may also surround those it affects with swirling astral energy, paralysing those who attack in melee."
+#details "Affected creatures make an MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
+
+#end
+
+#newsecondary "Astralshield Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Screening"
+#fatiguepersquare 2
+
+
+#nextspell "Astralshield Secondary mrne"
+
+#descr "This spell may also surround those it affects with swirling astral energy, paralysing those who attack in melee."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
+#end

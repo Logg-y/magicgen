@@ -1,0 +1,65 @@
+#neweffect "Protforce Secondary mrn"
+#effect 10
+#damage 549755813888
+#spec 12603392
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10118
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Swirling Rocks"
+#name 2 "$Additional$ Swirling Debris"
+#name 4 "$Additional$ Swirling Rocks"
+#name 8 "$Additional$ Swirling Rocks"
+#name 16 "$Additional$ Swirling Rocks"
+#name 32 "$Additional$ Swirling Rocks"
+#name 64 "$Additional$ Swirling Rocks"
+#name 128 "$Additional$ Swirling Rocks"
+#name 256 "$Additional$ Swirling Rocks"
+
+#end
+
+#neweffect "Protforce Secondary mrne"
+#effect 10
+#damage 549755813888
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10118
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Swirling Rocks"
+#name 2 "$Additional$ Swirling Debris"
+#name 4 "$Additional$ Swirling Rocks"
+#name 8 "$Additional$ Swirling Rocks"
+#name 16 "$Additional$ Swirling Rocks"
+#name 32 "$Additional$ Swirling Rocks"
+#name 64 "$Additional$ Swirling Rocks"
+#name 128 "$Additional$ Swirling Rocks"
+#name 256 "$Additional$ Swirling Rocks"
+
+#end

@@ -26,34 +26,34 @@
 #secondarypaths 1
 
 
-#namecond effectiveaoe < 1 1 "Focusing Pyre"
-#namecond effectiveaoe >= 1 1 "Focusing Pyre"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Focusing Pyre"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Focusing Pyre"
 #descr 1 "SUBJECT lights ARTICLE magical %fire%, which can burn even when underwater. The %pyre% may be used as ARTICLE mental %focus% for other mages, allowing those controlling the %pyre% to harness the magical powers of the %one% focusing."
 
-#namecond effectiveaoe < 1 2 "Listener of Wind"
-#namecond effectiveaoe >= 1 2 "Listeners of Winds"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Listener of Wind"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Listeners of Winds"
 #descr 2 "Attunes SUBJECT to the surrounding air, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the atmosphere above."
 
-#namecond effectiveaoe < 1 4 "Sense the Waters"
-#namecond effectiveaoe >= 1 4 "Sensations of Water"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Sense the Waters"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Sensations of Water"
 #descr 4 "Attunes SUBJECT to surrounding water and water vapour, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the liquids of their surroundings."
 
-#namecond effectiveaoe < 1 32 "Spirit Nexus"
-#namecond effectiveaoe >= 1 32 "Spiritual Nexus"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Spirit Nexus"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Nexus"
 #descr 32 "By connecting with the spirits of the dead, SUBJECT may harness the magical power of those who surrender themselves to the spirits."
 
-#namecond effectiveaoe < 1 64 "Focus of Gaia"
-#namecond effectiveaoe >= 1 64 "Focus of Gaia"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Focus of Gaia"
+#namecond effectiveaoe >= 1 64 "NAMEPREFIX Focus of Gaia"
 #descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT may harness the magical power of those who surrender themselves to the presence."
 
-#namecond effectiveaoe < 1 8 "Reader of Earth"
-#namecond effectiveaoe < 1 16 "Communion Master"
-#namecond effectiveaoe < 1 128 "Sabbath Master"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Reader of Earth"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Communion Master"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Sabbath Master"
 
 
-#namecond effectiveaoe >= 1 8 "Readers of Earth"
-#namecond effectiveaoe >= 1 16 "Communion Masters"
-#namecond effectiveaoe >= 1 128 "Sabbath Masters"
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Readers of Earth"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Masters"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Sabbath Masters"
 
 #details "Grants communion master."
 
@@ -92,33 +92,33 @@
 #paths 255
 #secondarypaths 1
 
-#namecond effectiveaoe < 1 1 "Focus upon Flames"
-#namecond effectiveaoe >= 1 1 "Focus upon Flames"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Focus upon Flames"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Focus upon Flames"
 #descr 1 "SUBJECT focuses and searches for magical pyres lit by other mages. This allows those controlling the pyre to harness the magical powers of SUBJECT."
 
-#namecond effectiveaoe < 1 2 "Whisper upon the Wind"
-#namecond effectiveaoe >= 1 2 "Whispers upon the Wind"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Whisper upon the Wind"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Whispers upon the Wind"
 #descr 2 "SUBJECT surrenders PRONOUN_POS mind to the air surrounding the battlefield. This allows their magical power to be harnessed by friendly mages listening to the wind."
 
-#namecond effectiveaoe < 1 4 "Aqueous Connection"
-#namecond effectiveaoe >= 1 4 "Aqueous Connections"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Aqueous Connection"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Aqueous Connections"
 #descr 4 ""SUBJECT surrenders PRONOUN_POS mind to the water and water vapour on the battlefield. This allows their magical power to be harnessed by friendly mages connected to the water."
 
-#namecond effectiveaoe < 1 32 "Spiritual Communion"
-#namecond effectiveaoe >= 1 32 "Spiritual Communion"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Spiritual Communion"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Communion"
 #descr 32 "By connecting with the spirits of the dead, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the spirits."
 
-#namecond effectiveaoe < 1 64 "Supplicant of Gaia"
-#namecond effectiveaoe >= 1 64 "Supplicant of Gaia"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Supplicant of Gaia"
+#namecond effectiveaoe >= 1 64 "NAMEPREFIX Supplicant of Gaia"
 #descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the presence."
 
-#namecond effectiveaoe < 1 8 "Supplicant of Earth"
-#namecond effectiveaoe < 1 16 "Communion Slave"
-#namecond effectiveaoe < 1 128 "Sabbath Slave"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Supplicant of Earth"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Communion Slave"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Sabbath Slave"
 
-#namecond effectiveaoe >= 1 8 "Supplicants of Earth"
-#namecond effectiveaoe >= 1 16 "Communion Slaves"
-#namecond effectiveaoe >= 1 128 "Sabbath Slaves"
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Supplicants of Earth"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Slaves"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Sabbath Slaves"
 
 #details "Grants communion slave."
 
@@ -155,34 +155,34 @@
 #paths 255
 #secondarypaths 1
 
-#namecond effectiveaoe < 1 1 "Focusing Pyre"
-#namecond effectiveaoe >= 1 1 "Focusing Pyre"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Focusing Pyre"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Focusing Pyre"
 #descr 1 "SUBJECT lights ARTICLE magical %fire%, which can burn even when underwater. The %pyre% may be used as ARTICLE mental %focus% for other mages, allowing those controlling the %pyre% to harness the magical powers of the %one% focusing."
 
-#namecond effectiveaoe < 1 2 "Listener of Wind"
-#namecond effectiveaoe >= 1 2 "Listeners of Winds"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Listener of Wind"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Listeners of Winds"
 #descr 2 "Attunes SUBJECT to the surrounding air, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the atmosphere above."
 
-#namecond effectiveaoe < 1 4 "Sense the Waters"
-#namecond effectiveaoe >= 1 4 "Sensations of Water"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Sense the Waters"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Sensations of Water"
 #descr 4 "Attunes SUBJECT to surrounding water and water vapour, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the liquids of their surroundings."
 
-#namecond effectiveaoe < 1 32 "Spirit Nexus"
-#namecond effectiveaoe >= 1 32 "Spiritual Nexus"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Spirit Nexus"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Nexus"
 #descr 32 "By connecting with the spirits of the dead, SUBJECT may harness the magical power of those who surrender themselves to the spirits."
 
-#namecond effectiveaoe < 1 64 "Focus of Gaia"
-#namecond effectiveaoe >= 1 64 "Focus of Gaia"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Focus of Gaia"
+#namecond effectiveaoe >= 1 64 "NAMEPREFIX Focus of Gaia"
 #descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT may harness the magical power of those who surrender themselves to the presence."
 
 
-#namecond effectiveaoe < 1 8 "Reader of Earth"
-#namecond effectiveaoe < 1 16 "Communion Master"
-#namecond effectiveaoe < 1 128 "Sabbath Master"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Reader of Earth"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Communion Master"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Sabbath Master"
 
-#namecond effectiveaoe >= 1 8 "Readers of Earth"
-#namecond effectiveaoe >= 1 16 "Communion Masters"
-#namecond effectiveaoe >= 1 128 "Sabbath Masters"
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Readers of Earth"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Masters"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Sabbath Masters"
 
 #details "Grants communion master."
 
@@ -221,33 +221,33 @@
 #paths 255
 #secondarypaths 1
 
-#namecond effectiveaoe < 1 1 "Conservative Focus upon Flames"
-#namecond effectiveaoe >= 1 1 "Focus upon Flames"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Conservative Focus upon Flames"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Focus upon Flames"
 #descr 1 "SUBJECT focuses and searches for magical pyres lit by other mages. This allows those controlling the pyre to harness the magical powers of SUBJECT. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 2 "Conservative Wind Whispers"
-#namecond effectiveaoe >= 1 2 "Whispers upon the Wind"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Conservative Wind Whispers"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Whispers upon the Wind"
 #descr 2 "SUBJECT surrenders PRONOUN_POS mind to the air surrounding the battlefield. This allows their magical power to be harnessed by friendly mages listening to the wind. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 4 "Conservative Aqueous Connection"
-#namecond effectiveaoe >= 1 4 "Aqueous Connections"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Conservative Aqueous Connection"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Aqueous Connections"
 #descr 4 "SUBJECT surrenders PRONOUN_POS mind to the water and water vapour on the battlefield. This allows their magical power to be harnessed by friendly mages connected to the water. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 32 "Conservative Spiritual Communion"
-#namecond effectiveaoe >= 1 32 "Spiritual Communion"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Conservative Spiritual Communion"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Communion"
 #descr 32 "By connecting with the spirits of the dead, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the spirits. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 64 "Conservative Supplicant of Gaia"
-#namecond effectiveaoe >= 1 64 "Supplicant of Gaia"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Conservative Supplicant of Gaia"
+#namecond effectiveaoe >= 1 64 "NAMEPREFIX Supplicant of Gaia"
 #descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the presence. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 8 "Conservative Supplicant of Earth"
-#namecond effectiveaoe < 1 16 "Conservative Communion Slave"
-#namecond effectiveaoe < 1 128 "Conservative Sabbath Slave"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Conservative Supplicant of Earth"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Conservative Communion Slave"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Conservative Sabbath Slave"
 
-#namecond effectiveaoe >= 1 8 "Supplicants of Earth"
-#namecond effectiveaoe >= 1 16 "Communion Slaves"
-#namecond effectiveaoe >= 1 128 "Sabbath Slaves"
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Supplicants of Earth"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Slaves"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Sabbath Slaves"
 
 #details "Grants communion slave. This effect is removed once the caster passes 100 fatigue."
 

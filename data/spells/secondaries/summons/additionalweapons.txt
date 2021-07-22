@@ -23,6 +23,8 @@
 #paths 1
 #power -1
 
+#req effect != 10050
+
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.4
@@ -38,6 +40,8 @@
 
 #paths 96
 #power -2
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -56,6 +60,8 @@
 #paths 16
 #power -2
 
+#req effect != 10050
+
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.1
@@ -72,6 +78,8 @@
 
 #paths 4
 #power -1
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -90,6 +98,8 @@
 
 #paths 64
 #power -1
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -147,6 +157,8 @@
 #paths 64
 #power -1
 
+#req effect != 10050
+
 -- not montag
 #req damage > 0
 #fatiguecostpereffect 35
@@ -179,6 +191,8 @@
 
 #paths 2
 #power -2
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -237,6 +251,8 @@
 #paths 64
 #power -1
 
+#req effect != 10050
+
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.6
@@ -271,6 +287,8 @@
 
 #paths 32
 #power -2
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -361,6 +379,8 @@
 #paths 5
 #power -1
 
+#req effect != 10050
+
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.3
@@ -396,6 +416,8 @@
 
 #paths 4
 #power -2
+
+#req effect != 10050
 
 -- not montag
 #req damage > 0

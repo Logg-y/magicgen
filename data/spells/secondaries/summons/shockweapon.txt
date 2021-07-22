@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.2
+#mult fatiguecost 2
 
 #req trample <= 0
 #unitmod "Summon Shockweapon"

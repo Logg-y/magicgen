@@ -1,0 +1,242 @@
+#newsecondary "planeshift inferno nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Infernal"
+#fatiguepersquare 10
+
+
+#nextspell "planeshift inferno Secondary mrne"
+
+#descr "This spell may send those it affects to Inferno. This is a certain death for most mortal creatures."
+#details "Affected creatures must make an easy MR check or be sent to Inferno."
+
+#skipchance 50
+
+#end
+
+
+#newsecondary "planeshift inferno damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#req effect != 4	    -- fear
+
+#nameprefix "Infernal"
+#fatiguepersquare 6
+
+#nextspell "planeshift inferno Secondary mrne damaging"
+
+#descr "This spell may send those it affects to Inferno. This is a certain death for most mortal creatures."
+#details "Wounded creatures must make an easy MR check or be sent to Inferno."
+
+#skipchance 50
+
+#end
+
+------
+
+#newsecondary "planeshift kokytos nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Infernal"
+#fatiguepersquare 10
+
+
+#nextspell "planeshift kokytos Secondary mrne"
+
+#descr "This spell may send those it affects to Kokytos. This is a certain death for most mortal creatures."
+#details "Affected creatures must make an easy MR check or be sent to Kokytos."
+
+#skipchance 50
+
+#end
+
+
+#newsecondary "planeshift kokytos damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#req effect != 4	    -- fear
+
+#nameprefix "Infernal"
+#fatiguepersquare 6
+
+#nextspell "planeshift kokytos Secondary mrne damaging"
+
+#descr "This spell may send those it affects to Kokytos. This is a certain death for most mortal creatures."
+#details "Wounded creatures must make an easy MR check or be sent to Kokytos."
+
+#skipchance 50
+
+#end
+
+----
+
+#newsecondary "planeshift void nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Voidtouched"
+#fatiguepersquare 10
+
+
+#nextspell "planeshift void Secondary mrne"
+
+#descr "This spell may send those it affects to the Void. This is a certain death for most mortal creatures."
+#details "Affected creatures must make an easy MR check or be sent to the Void."
+
+
+#end
+
+
+#newsecondary "planeshift void damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#req effect != 4	    -- fear
+
+#nameprefix "Voidtouched"
+#fatiguepersquare 6
+
+#nextspell "planeshift void Secondary mrne damaging"
+
+#descr "This spell may send those it affects to the Void. This is a certain death for most mortal creatures."
+#details "Wounded creatures must make an easy MR check or be sent to the Void."
+
+
+#end
+
+
+
+

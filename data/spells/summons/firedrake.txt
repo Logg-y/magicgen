@@ -8,14 +8,14 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 60
+#scalefatiguemult 20
 #sound 31
 #schools 1
 
 #paths 1
 #secondarypaths 1
 
-#skipchance 97
+#skipchance 50
 
 #name 1 "Summon NAMEPREFIX Fire %Drake%"
 #descr 1 "The caster summons ARTICLE fire %drake% to fight for him. The fire drake is a large cold-blooded beast that breathes fire."
@@ -39,7 +39,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 97
+#skipchance 50
 
 #name 1 "Summon NAMEPREFIX Fire %Drake%"
 #descr 1 "The caster summons ARTICLE fire %drake% to fight for him. The fire drake is a large cold-blooded beast that breathes fire."

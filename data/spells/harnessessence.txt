@@ -67,12 +67,15 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 1 64 "Harness Essence"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Harness Essence"
 
-#namecond2 1 <= effectiveaoe < 600 64 "Harness Lives"
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Harness Lives"
 
 #descr 64 "The caster tries to separate the body and life force of SUBJECT. Living creatures that fail to resist this spell are permanently slain. There is a small chance that the harvested lifeforce of powerful and experienced mages is mighty enough to allow transfer of their magical abilities to the caster's Pretender God. Prophets and Pretenders have too strong a divine connection for this spell to harm them in any way."
 
 #details "Targets that fail to resist are soul slayed. If the unit affected was a commander, there is an ((xp-50)*2)% chance to pick a random non-holy magic path. If the caster's Pretender's level in this path is less than or equal to the commander's level in the path + a closed d3, the Pretender gains +1 to this path. There is no message when this occurs."
+
+#priority 1
+#namecond range < 10 64 "NAMEPREFIX Touch of Harnessing"
 
 #end

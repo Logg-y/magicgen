@@ -16,7 +16,7 @@
 #paths 4
 #secondarypaths 4
 #secondarypathchance 0
-#name 4 "Cleansing Water"
+#name 4 "NAMEPREFIX Cleansing Water"
 
 #descr 4 "The caster projects a torrent of water against undead enemies. The cleansing water will damage undead beings and demons, but not other magical beings."
 
@@ -25,4 +25,8 @@
 #scalerate 2
 -- #scalecost 0.3
 #schools 4
+
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX cleansing touch"
 #end

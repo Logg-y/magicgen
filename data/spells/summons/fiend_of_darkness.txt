@@ -13,14 +13,14 @@
 
 #paths 128
 #secondarypaths 128
-#scalefatiguemult 80
+#scalefatiguemult 40
 
 #name 128 "Summon NAMEPREFIX %Fiend% of Darkness"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %fiend% of darkness from the Abyss. They fly and become significantly stronger under cover of darkness."
 
 #spelltype 528
 
-#scalerate 0.7
+#scalerate 1
 #skipchance 94
 #end
 
@@ -28,17 +28,17 @@
 #effect 10001
 #damage 88
 #spec 0
-#power 1
+#power 2
 #maxpower 14
 #nreff 1
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 500
 #schools 16
 
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.7
+#scalefatigueexponent -2
 #scalefatiguemult 350
 
 #name 128 "Bind NAMEPREFIX %Fiend% of Darkness"
@@ -47,7 +47,7 @@
 #spelltype 20
 
 #skipchance 50
-#scalerate 1
+#scalerate 0.51
 #end
 
 #neweffect "Fiend of Darkness Remote Assassination"

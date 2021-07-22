@@ -7,12 +7,12 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1
 -- #scalecost 1.6
 
 #aoe 0
 #power 3
-#maxpower 8
+#maxpower 9
 #pathlevel 2
 #explspr 10023
 #sound 9
@@ -23,19 +23,23 @@
 #paths 65
 #secondarypaths 65
 
-#namecond effectiveaoe < 1 1 "Rage"
-#namecond effectiveaoe < 1 64 "Rage"
+#namecond effectiveaoe <= 1 1 "NAMEPREFIX Rage"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Rage"
 
-#namecond2 1 < effectiveaoe < 5 1 "Wave of Rage"
-#namecond2 1 < effectiveaoe < 5 64 "Wave of Rage"
-#namecond2 5 < effectiveaoe < 600 1 "Angry Mob"
-#namecond2 5 < effectiveaoe < 600 64 "Angry Mob"
-#namecond2 600 < effectiveaoe < 700 1 "Mass Enrage"
-#namecond2 600 < effectiveaoe < 700 64 "Mass Enrage"
+#namecond2 1 < effectiveaoe <= 5 1 "NAMEPREFIX Wave of Rage"
+#namecond2 1 < effectiveaoe <= 5 64 "NAMEPREFIX Wave of Rage"
+#namecond2 5 < effectiveaoe < 600 1 "NAMEPREFIX Angry Mob"
+#namecond2 5 < effectiveaoe < 600 64 "NAMEPREFIX Angry Mob"
+#namecond2 600 < effectiveaoe < 700 1 "NAMEPREFIX Mass Enrage"
+#namecond2 600 < effectiveaoe < 700 64 "NAMEPREFIX Mass Enrage"
 
 #descr 1 "Heat makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
 #descr 64 "The caster makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
 #details "There is a 50% chance that enraged creatures direct attacks to any adjacent square, picked at random."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of rage"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of rage"
 
 #end
 
@@ -52,23 +56,27 @@
 -- #scalecost 1.6
 
 #aoe 666
-#power 9
-#maxpower 9
-#pathlevel 6
+#power 10
+#maxpower 10
+#pathlevel 7
 #explspr 10023
 #sound 9
-#fatiguecost 300
+#fatiguecost 400
 #precision 100
 #range 5015
 
 #paths 65
 #secondarypaths 65
 
-#name 1 "Mass Enrage"
-#name 64 "Mass Enrage"
+#name 1 "NAMEPREFIX Mass Enrage"
+#name 64 "NAMEPREFIX Mass Enrage"
 
 #descr 1 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
 #descr 64 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
 #details "There is a 50% chance that enraged creatures direct attacks to any adjacent square, picked at random."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of rage"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of rage"
 
 #end

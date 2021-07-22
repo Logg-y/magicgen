@@ -14,7 +14,7 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 2."
 #name 2 "Summon NAMEPREFIX Small Air %Elemental%"
@@ -39,7 +39,7 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 2."
 #name 2 "Summon NAMEPREFIX Small Air Elementals"
@@ -62,7 +62,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 600
 #schools 1
 #skipchance 99
 #nogeodst 2052

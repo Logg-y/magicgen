@@ -32,6 +32,7 @@ def readEffectFile(fp):
 						raise ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
 					curreff = SpellEffect(fp)
 					curreff.name = m.groups()[0]
+					currPriority = 0
 
 				else:
 					if curreff is None:
@@ -70,6 +71,12 @@ def readEffectFile(fp):
 
 					if sorted: continue
 
+					if line.startswith("#priority"):
+						m = re.match("#priority\\W+?([-0-9]*)\\W*$", line)
+						if m is not None:
+							currPriority = int(m.groups()[0])
+							continue
+
 					if line.startswith("#namecond"):
 						m = re.match(
 							'#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
@@ -83,9 +90,12 @@ def readEffectFile(fp):
 							cond.val = m.groups()[4]
 							cond.path = int(m.groups()[5])
 							cond.text = m.groups()[6]
+
 							if cond.path not in curreff.nameconds:
-								curreff.nameconds[cond.path] = []
-							curreff.nameconds[cond.path].append(cond)
+								curreff.nameconds[cond.path] = {}
+							if currPriority not in curreff.nameconds[cond.path]:
+								curreff.nameconds[cond.path][currPriority] = []
+							curreff.nameconds[cond.path][currPriority].append(cond)
 							continue
 
 						m = re.match('#namecond\\W+(.+)[ \t]+([<>=&!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
@@ -97,9 +107,12 @@ def readEffectFile(fp):
 						cond.val = m.groups()[2]
 						cond.path = int(m.groups()[3])
 						cond.text = m.groups()[4]
+
 						if cond.path not in curreff.nameconds:
-							curreff.nameconds[cond.path] = []
-						curreff.nameconds[cond.path].append(cond)
+							curreff.nameconds[cond.path] = {}
+						if currPriority not in curreff.nameconds[cond.path]:
+							curreff.nameconds[cond.path][currPriority] = []
+						curreff.nameconds[cond.path][currPriority].append(cond)
 						continue
 
 					if line.startswith("#descrcond"):
@@ -116,8 +129,10 @@ def readEffectFile(fp):
 							cond.path = int(m.groups()[5])
 							cond.text = m.groups()[6]
 							if cond.path not in curreff.descrconds:
-								curreff.descrconds[cond.path] = []
-							curreff.descrconds[cond.path].append(cond)
+								curreff.descrconds[cond.path] = {}
+							if currPriority not in curreff.descrconds[cond.path]:
+								curreff.descrconds[cond.path][currPriority] = []
+							curreff.descrconds[cond.path][currPriority].append(cond)
 							continue
 
 						m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
@@ -130,8 +145,10 @@ def readEffectFile(fp):
 						cond.path = int(m.groups()[3])
 						cond.text = m.groups()[4]
 						if cond.path not in curreff.descrconds:
-							curreff.descrconds[cond.path] = []
-						curreff.descrconds[cond.path].append(cond)
+							curreff.descrconds[cond.path] = {}
+						if currPriority not in curreff.descrconds[cond.path]:
+							curreff.descrconds[cond.path][currPriority] = []
+						curreff.descrconds[cond.path][currPriority].append(cond)
 						continue
 
 					if line.startswith("#descr"):

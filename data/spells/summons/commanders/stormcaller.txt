@@ -16,7 +16,7 @@
 #schools 1
 #newunit "Storm Caller"
 
-#skipchance 95.0
+#skipchance 90
 
 --ASN
 #paths 82
@@ -54,7 +54,7 @@
 #schools 1
 #newunit "Storm Caller"
 
-#skipchance 77
+#skipchance 50
 #pathskipchance 16 95
 #pathskipchance 64 80
 #paths 82

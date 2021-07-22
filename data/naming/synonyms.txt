@@ -22,6 +22,8 @@ underground	the depths
 mist	mist
 mist	vapor
 mist	fog
+mist	cloud
+mist	haze
 
 shield	shield
 shield	ward

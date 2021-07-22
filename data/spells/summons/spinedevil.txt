@@ -19,7 +19,7 @@
 
 #spelltype 528
 
-#scalerate 0.7
+#scalerate 1
 #scalefatiguemult 20
 #skipchance 97
 #end
@@ -32,16 +32,16 @@
 #maxpower 14
 #nreff 1
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 300
 #schools 16
 
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 140
+#scalefatigueexponent -2
+#scalefatiguemult 180
 
-#name 128 "Summon NAMEPREFIX Spine %Devil%"
+#name 128 "Bind NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss. They have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 20

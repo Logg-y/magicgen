@@ -1,4 +1,4 @@
-#neweffect "Slow Secondary"
+#neweffect "Slow Secondary mrn"
 #effect 11
 #damage 68719476736
 #spec 8392704
@@ -9,7 +9,8 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10304
 #sound 114
@@ -32,3 +33,113 @@
 
 
 #end
+
+#neweffect "Slow Secondary mrne"
+#effect 11
+#damage 68719476736
+#spec 25165824
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10304
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slow"
+#name 2 "$Additional$ Slow"
+#name 4 "$Additional$ Slow"
+#name 8 "$Additional$ Slow"
+#name 16 "$Additional$ Slow"
+#name 32 "$Additional$ Slow"
+#name 64 "$Additional$ Slow"
+#name 128 "$Additional$ Slow"
+#name 256 "$Additional$ Slow"
+
+
+#end
+
+#neweffect "Slow Secondary mrn damaging"
+#effect 11
+#damage 68719476736
+#spec 8392704
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10304
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slow"
+#name 2 "$Additional$ Slow"
+#name 4 "$Additional$ Slow"
+#name 8 "$Additional$ Slow"
+#name 16 "$Additional$ Slow"
+#name 32 "$Additional$ Slow"
+#name 64 "$Additional$ Slow"
+#name 128 "$Additional$ Slow"
+#name 256 "$Additional$ Slow"
+
+
+#end
+
+#neweffect "Slow Secondary mrne damaging"
+#effect 11
+#damage 68719476736
+#spec 25165824
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10304
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slow"
+#name 2 "$Additional$ Slow"
+#name 4 "$Additional$ Slow"
+#name 8 "$Additional$ Slow"
+#name 16 "$Additional$ Slow"
+#name 32 "$Additional$ Slow"
+#name 64 "$Additional$ Slow"
+#name 128 "$Additional$ Slow"
+#name 256 "$Additional$ Slow"
+
+
+#end
+
+

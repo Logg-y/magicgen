@@ -22,7 +22,7 @@
 #spelltype 528
 #ainocast 1
 #scalerate 1
-#scalefatiguemult 40
+--#scalefatiguemult 40
 #end
 
 #neweffect "hydrahatchling ritual"

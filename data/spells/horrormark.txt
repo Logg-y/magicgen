@@ -27,8 +27,8 @@
 #paths 144
 #secondarypaths 16
 
-#namecond effectiveaoe < 2 16 "Horror Mark"
-#namecond effectiveaoe < 2 128 "Mark from Beyond"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX Horror Mark"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Mark from Beyond"
 
 #descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
@@ -45,6 +45,10 @@
 #descrcond effect > 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
 #descrcond effect > 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks.  The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
 #details "The target gains EFFECTNUMBER_ADDITIVE horror mark(s)."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 
 #end
 
@@ -76,15 +80,19 @@
 #paths 144
 #secondarypaths 16
 
-#namecond effectiveaoe < 2 16 "Horror Mark"
-#namecond effectiveaoe < 2 128 "Mark from Beyond"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX Horror Mark"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Mark from Beyond"
 
-#namecond effectiveaoe >= 2 16 "Horror Marks"
-#namecond effectiveaoe >= 2 128 "Marks from Beyond"
+#namecond effectiveaoe >= 2 16 "NAMEPREFIX Horror Marks"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Marks from Beyond"
 
 #descr 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descr 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #details "The targets gain one horror mark."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 #end
 
 #neweffect "Horror Mark AoE Stronger"
@@ -112,8 +120,8 @@
 #paths 144
 #secondarypaths 16
 
-#namecond effectiveaoe >= 2 16 "Horror Marks"
-#namecond effectiveaoe >= 2 128 "Marks from Beyond"
+#namecond effectiveaoe >= 2 16 "NAMEPREFIX Horror Marks"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Marks from Beyond"
 
 #descrcond effect < 605 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
 #descrcond effect < 605 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is weak and will attract little attention on its own."
@@ -130,4 +138,8 @@
 #descrcond effect > 660 16 "Lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks. The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
 #descrcond effect > 660 128 "$BLOOD_INTRO$, the caster lays a permanent otherworldly mark on SUBJECT. Horrors will preferentially attack beings with stronger marks.  The mark placed by this spell is immensely strong: the %victim% should expect otherworldly visits any moment."
 #details "The targets gain EFFECTNUMBER_ADDITIVE horror mark(s)."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 #end

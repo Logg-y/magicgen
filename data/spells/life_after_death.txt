@@ -23,9 +23,13 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Life after Death"
+#name 32 "NAMEPREFIX Life after Death"
 
 #descr 32 "SUBJECT is given a second chance to live if they were to fall in the current battle. They will return as ARTICLE soulless %being%."
+#details "Upon death, units are brought back as an appropriate kind of soulless. Some types of creatures cannot be brought back this way."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undeath"
 
 #end
 
@@ -48,16 +52,19 @@
 #explspr 10317
 #sound 31
 #range 10
-#fatiguecost 300
+#fatiguecost 200
 #unique 1
 
 
 #paths 32
 #secondarypaths 32
 
-#name 32 "Arisen Army"
+#name 32 "NAMEPREFIX Arisen Army"
 
 #descr 32 "SUBJECT is given a second chance to live if they were to fall in the current battle. They will return as ARTICLE soulless %being%."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undeath"
 
 #end
 

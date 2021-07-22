@@ -19,12 +19,16 @@
 #explspr 10306
 #sound 16
 #fatiguecost 20
+#skipchance 50
 #range 5025
 
 #paths 16
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 16 "Star Fires"
+#name 16 "NAMEPREFIX Star Fires"
 #descr 16 "The caster focuses the lights of several stellar bodies and projects them onto his enemies."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX stellar touch"
 #end

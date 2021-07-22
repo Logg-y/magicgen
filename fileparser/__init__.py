@@ -6,3 +6,4 @@ from .weaponmod import *
 from .eventset import *
 from .newunit import *
 from .magicsite import *
+from .unitmodlist import *

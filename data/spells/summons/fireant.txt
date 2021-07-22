@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalerate 1
-#scalefatiguemult 30
+#scalefatiguemult 20
 #end
 
 #neweffect "fireant ritual"

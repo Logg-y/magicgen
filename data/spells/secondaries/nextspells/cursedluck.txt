@@ -1,0 +1,136 @@
+#neweffect "Cursed Luck Secondary mrn"
+#effect 502
+#damage 255
+#spec 8409088
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10061
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Cursed Luck"
+#name 2 "$Additional$ Cursed Luck"
+#name 4 "$Additional$ Cursed Luck"
+#name 8 "$Additional$ Cursed Luck"
+#name 16 "$Additional$ Cursed Luck"
+#name 32 "$Additional$ Cursed Luck"
+#name 64 "$Additional$ Cursed Luck"
+#name 128 "$Additional$ Cursed Luck"
+#name 256 "$Additional$ Cursed Luck"
+
+#end
+
+#neweffect "Cursed Luck Secondary mrne"
+#effect 502
+#damage 255
+#spec 25182208
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10061
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Cursed Luck"
+#name 2 "$Additional$ Cursed Luck"
+#name 4 "$Additional$ Cursed Luck"
+#name 8 "$Additional$ Cursed Luck"
+#name 16 "$Additional$ Cursed Luck"
+#name 32 "$Additional$ Cursed Luck"
+#name 64 "$Additional$ Cursed Luck"
+#name 128 "$Additional$ Cursed Luck"
+#name 256 "$Additional$ Cursed Luck"
+
+#end
+
+
+
+
+
+
+#neweffect "Cursed Luck Secondary mrn damaging"
+#effect 502
+#damage 255
+#spec 8409088
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10061
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Cursed Luck"
+#name 2 "$Additional$ Cursed Luck"
+#name 4 "$Additional$ Cursed Luck"
+#name 8 "$Additional$ Cursed Luck"
+#name 16 "$Additional$ Cursed Luck"
+#name 32 "$Additional$ Cursed Luck"
+#name 64 "$Additional$ Cursed Luck"
+#name 128 "$Additional$ Cursed Luck"
+#name 256 "$Additional$ Cursed Luck"
+
+#end
+
+#neweffect "Cursed Luck Secondary mrne damaging"
+#effect 502
+#damage 255
+#spec 25182208
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10061
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Cursed Luck"
+#name 2 "$Additional$ Cursed Luck"
+#name 4 "$Additional$ Cursed Luck"
+#name 8 "$Additional$ Cursed Luck"
+#name 16 "$Additional$ Cursed Luck"
+#name 32 "$Additional$ Cursed Luck"
+#name 64 "$Additional$ Cursed Luck"
+#name 128 "$Additional$ Cursed Luck"
+#name 256 "$Additional$ Cursed Luck"
+
+#end

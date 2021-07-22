@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 90
-#scalefatiguemult 70
+#scalefatiguemult 10
 #sound 44
 #schools 1
 

@@ -5,7 +5,12 @@
 
 #power -1
 
+#aispellmod 10
+#pathlevel 1
+
 #mult casttime 0.75
+#mult fatiguecost 0.85
+#req fatiguecost < 100
 #skipchance 100
 
 -- not ritual
@@ -21,10 +26,13 @@
 #spelltype 0
 
 #power -1
+#pathlevel 1
 
 #aispellmod 25
 
 #mult casttime 0.5
+#mult fatiguecost 0.66
+#req fatiguecost < 100
 #skipchance 55
 
 -- not ritual
@@ -42,6 +50,7 @@
 #spelltype 2
 
 #aispellmod 70
+#pathlevel 1
 
 #power -3
 
@@ -49,7 +58,7 @@
 
 #req flightspr > 0
 
-#mult fatiguecost 0.75
+#mult fatiguecost 0.33
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.25
@@ -59,7 +68,7 @@
 #end
 
 
-#newmodifier "Faster Casting Not evo"
+#newmodifier "Faster Casting Not evo Not summon"
 
 -- any
 #spelltype 0
@@ -67,10 +76,37 @@
 #aispellmod 70
 
 #reqdamaging 0
+#pathlevel 1
 
 #power -2
 
-#mult fatiguecost 0.75
+#mult fatiguecost 0.33
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#req effect != 1
+
+#end
+
+#newmodifier "Faster Casting summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 70
+
+#reqdamaging 0
+#pathlevel 1
+
+#power -3
+
+#mult fatiguecost 0.5
+#req effect == 1
 -- not evo
 #req spelltype !& 2
 #req fatiguecost > 15
@@ -87,12 +123,13 @@
 #spelltype 2
 
 #aispellmod 70
+#pathlevel 1
 
 #reqdamaging 0
 
 #power -3
 
-#mult fatiguecost 0.75
+#mult fatiguecost 0.33
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.25
@@ -108,12 +145,13 @@
 #spelltype 2
 
 #aispellmod 70
+#pathlevel 1
 
 #reqdamaging 1
 
 #power -4
 
-#mult fatiguecost 0.75
+#mult fatiguecost 0.33
 #req fatiguecost > 15
 #req fatiguecost < 100
 #req flightspr <= -1
@@ -131,7 +169,8 @@
 -- evo only
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 90
+#pathlevel 2
 
 #power -4
 
@@ -139,7 +178,7 @@
 
 #req flightspr > 0
 
-#mult fatiguecost 0.6
+#mult fatiguecost 0.3
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.25
@@ -149,18 +188,19 @@
 #end
 
 
-#newmodifier "16pc cast Not evo"
+#newmodifier "16pc cast Not evo Not summon"
 
 -- any
 #spelltype 0
 
-#aispellmod 70
+#aispellmod 90
+#pathlevel 2
 
 #reqdamaging 0
 
 #power -3
 
-#mult fatiguecost 0.6
+#mult fatiguecost 0.3
 -- not evo
 #req spelltype !& 2
 #req fatiguecost > 15
@@ -169,6 +209,33 @@
 -- not ritual
 #req spelltype !& 4
 
+#req effect != 1
+
+#end
+
+#newmodifier "16pc cast summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 90
+#pathlevel 2
+
+#reqdamaging 0
+
+#power -4
+
+#mult fatiguecost 0.4
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#req effect == 1
+
 #end
 
 #newmodifier "16pc cast Nondamaging Hostile"
@@ -176,13 +243,14 @@
 -- any
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 90
+#pathlevel 2
 
 #reqdamaging 0
 
 #power -4
 
-#mult fatiguecost 0.6
+#mult fatiguecost 0.3
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.25
@@ -197,13 +265,14 @@
 -- evo only
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 90
+#pathlevel 2
 
 #reqdamaging 1
 
 #power -6
 
-#mult fatiguecost 0.6
+#mult fatiguecost 0.3
 #req fatiguecost > 15
 #req fatiguecost < 100
 #req flightspr <= -1
@@ -224,13 +293,14 @@
 -- evo only
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 120
+#pathlevel 2
 
 #power -5
 
 #reqdamaging 1
 
-#mult fatiguecost 0.5
+#mult fatiguecost 0.17
 #req fatiguecost > 15
 #req fatiguecost < 100
 #req flightspr > 0
@@ -243,12 +313,13 @@
 #end
 
 
-#newmodifier "Insanely Fast Casting Not Evo"
+#newmodifier "Insanely Fast Casting Not Evo Not Summon"
 
 -- any
 #spelltype 0
 
-#aispellmod 70
+#aispellmod 120
+#pathlevel 2
 
 #reqdamaging 0
 
@@ -257,7 +328,35 @@
 
 #power -4
 
-#mult fatiguecost 0.5
+#mult fatiguecost 0.17
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#req effect != 1
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end
+
+#newmodifier "Insanely Fast Casting Summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 120
+#pathlevel 2
+
+#reqdamaging 0
+
+-- not evo
+#req spelltype !& 2
+
+#power -5
+
+#mult fatiguecost 0.25
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.1
@@ -265,6 +364,8 @@
 #req spelltype !& 4
 
 #descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#req effect == 1
 
 #end
 
@@ -274,13 +375,14 @@
 -- any
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 120
+#pathlevel 2
 
 #reqdamaging 0
 
 #power -5
 
-#mult fatiguecost 0.5
+#mult fatiguecost 0.17
 #req fatiguecost > 15
 #req fatiguecost < 100
 #mult casttime 0.1
@@ -297,12 +399,13 @@
 -- evo only
 #spelltype 2
 
-#aispellmod 70
+#aispellmod 120
+#pathlevel 3
 
 #power -8
 #reqdamaging 1
 
-#mult fatiguecost 0.5
+#mult fatiguecost 0.17
 #req flightspr <= -1
 #req fatiguecost > 15
 #req fatiguecost < 100

@@ -1,0 +1,149 @@
+#newsecondary "Rust nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 2199023255552
+
+#nameprefix "Corroding"
+#fatiguepersquare 1
+
+
+#nextspell "Rust Secondary mrne"
+
+#descr "The weapons and armour of those affected by this spell may suddenly become extremely rusty."
+#details "Affected creatures make an easy MR check. Failing this check causes their equipment to become rusted."
+
+#end
+
+#newsecondary "Rust nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 2199023255552
+
+#nameprefix "Rusting"
+#fatiguepersquare 3
+
+
+#nextspell "Rust Secondary mrn"
+
+#descr "The weapons and armour of those affected by this spell may suddenly become extremely rusty."
+#details "Affected creatures make an MR check. Failing this check causes their equipment to become rusted."
+
+#end
+
+
+#newsecondary "Rust damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 2199023255552
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Corroding"
+#fatiguepersquare 0.8
+
+#nextspell "Rust Secondary mrne damaging"
+
+#descr "The weapons and armour of those wounded by this spell may suddenly become extremely rusty."
+#details "Wounded creatures make an easy MR check. Failing this check causes their equipment to become rusted."
+
+#end
+
+#newsecondary "Rust damaging mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 2199023255552
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Rusting"
+#fatiguepersquare 2
+
+#nextspell "Rust Secondary mrn damaging"
+
+#descr "The weapons and armour of those wounded by this spell may suddenly become extremely rusty."
+#details "Wounded creatures make an MR check. Failing this check causes their equipment to become rusted."
+
+
+#end

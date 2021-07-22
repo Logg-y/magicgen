@@ -1,0 +1,57 @@
+#newsecondary "Protforce Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 10
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 549755813888
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Guarding"
+#fatiguepersquare 8
+
+
+#nextspell "Protforce Secondary mrn"
+
+#descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
+#details "Affected creatures make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+
+#end
+
+#newsecondary "Protforce Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 10
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 549755813888
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Protecting"
+#fatiguepersquare 4
+
+
+#nextspell "Protforce Secondary mrne"
+
+#descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
+#details "Affected creatures make an easy MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+
+#end

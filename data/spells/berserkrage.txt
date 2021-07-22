@@ -25,13 +25,16 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 1 64 "Berserk Rage"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Berserk Rage"
 
-#namecond2 1 <= effectiveaoe < 5 64 "Berserk Wave"
-#namecond2 5 <= effectiveaoe < 600 64 "Berserk Mob"
-#namecond2 600 < effectiveaoe < 700 64 "Mass Berserking"
+#namecond2 1 <= effectiveaoe < 5 64 "NAMEPREFIX Berserk Wave"
+#namecond2 5 <= effectiveaoe < 600 64 "NAMEPREFIX Berserk Mob"
+#namecond2 600 < effectiveaoe < 700 64 "NAMEPREFIX Mass Berserking"
 
-#descr 64 "The caster forces SUBJECT to go berserk."
+#descr 64 "The caster forces SUBJECT to go berserk. This spell cannot affect the caster, and does not affect enemies."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of berserk rage"
 
 #end
 
@@ -65,10 +68,15 @@
 
 #aispellmod -70
 
-#name 1 "Seething Rage"
-#name 64 "Unbridled Anger"
+#name 1 "NAMEPREFIX Seething Rage"
+#name 64 "NAMEPREFIX Unbridled Anger"
 
 #descr 1 "The caster attempts to fill all living beings on the battlefield with berserk rage."
 #descr 64 "The caster attempts to fill all living beings on the battlefield with berserk rage."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of unbridled anger"
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of seething rage"
+
 
 #end

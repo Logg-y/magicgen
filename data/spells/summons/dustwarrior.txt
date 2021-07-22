@@ -15,10 +15,10 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 97
+#skipchance 80
 
-#name 32 "Desert Bones Attack"
-#name 8 "Desert Bones Attack"
+#name 32 "Animate NAMEPREFIX Desert Bones"
+#name 8 "Animate NAMEPREFIX Desert Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 #descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 
@@ -42,10 +42,10 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 97
+#skipchance 60
 
-#name 32 "Send Desert Bones"
-#name 8 "Send Desert Bones"
+#name 32 "Animate NAMEPREFIX Desert Bones"
+#name 8 "Animate NAMEPREFIX Desert Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 #descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 
@@ -75,8 +75,8 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#name 32 "Animate Desert Bones"
-#name 8 "Animate Desert Bones"
+#name 32 "NAMEPREFIX Desert Bones Attack"
+#name 8 "NAMEPREFIX Desert Bones Attack"
 #descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack an enemy commander in a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 #descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack an enemy commander in a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 
@@ -103,8 +103,8 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#name 32 "Animate Desert Bones"
-#name 8 "Animate Desert Bones"
+#name 32 "Send NAMEPREFIX Desert Bones"
+#name 8 "Send NAMEPREFIX Desert Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 #descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts to attack a distant province. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 

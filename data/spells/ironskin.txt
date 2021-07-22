@@ -26,14 +26,17 @@
 
 #details "Ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
-#namecond effectiveaoe < 1 8 "$Iron$skin"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX $Iron$skin"
 
-#namecond2 1 <= effectiveaoe < 666 8 "$Iron$ Warriors"
+#namecond2 1 <= effectiveaoe < 666 8 "NAMEPREFIX $Iron$ Warriors"
 
-#namecond effectiveaoe == 666 8 "$Iron$ Army"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX $Iron$ Army"
 
 
 #descr 8 "The skin of SUBJECT is converted into solid $iron$. This provides considerable protection from damage, but makes PRONOUN more susceptible to shock."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron"
 
 #end
 
@@ -65,14 +68,19 @@
 
 #details "Ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
-#namecond effectiveaoe < 1 8 "$Iron$skin"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX $Iron$skin"
 
-#namecond2 1 <= effectiveaoe < 666 8 "$Iron$ Warriors"
+#namecond2 1 <= effectiveaoe < 666 8 "NAMEPREFIX $Iron$ Warriors"
 
-#namecond effectiveaoe == 666 8 "$Iron$ Army"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX $Iron$ Army"
+
+
 
 
 #descr 8 "The skin of SUBJECT is converted into solid $iron$. This provides considerable protection from damage, but makes PRONOUN more susceptible to shock."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron"
 
 #end
 
@@ -107,14 +115,17 @@
 
 #details "Ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
-#namecond effectiveaoe < 1 8 "$Iron$skin"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX $Iron$skin"
 
-#namecond2 1 <= effectiveaoe < 666 8 "$Iron$ Warriors"
+#namecond2 1 <= effectiveaoe < 666 8 "NAMEPREFIX $Iron$ Warriors"
 
-#namecond effectiveaoe == 666 8 "$Iron$ Army"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX $Iron$ Army"
 
 
 #descr 8 "The skin of SUBJECT is converted into solid $iron$. This provides considerable protection from damage, but makes PRONOUN more susceptible to shock."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron"
 
 #end
 

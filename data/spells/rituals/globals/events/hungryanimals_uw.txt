@@ -10,7 +10,7 @@
 #msg "Hungry animals create units"
 #nolog
 #notext
-#req_0popok
+#req_pop0ok
 #nation -2
 #req_ench ENCHANTID
 #2d6units UNITID
@@ -21,7 +21,7 @@
 #msg "Hungry Animals destroy"
 #nolog
 #notext
-#req_0popok
+#req_pop0ok
 #nation -2
 #req_noench ENCHANTID
 #req_monster UNITID
@@ -31,7 +31,7 @@
 #newevent
 #rarity 5
 #req_rare 5
-#req_0popok
+#req_pop0ok
 #msg "A hungry animal has attacked one of your commanders!"
 #nolog
 #req_ench ENCHANTID

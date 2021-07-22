@@ -1,0 +1,136 @@
+
+#neweffect "cold fatigue Secondary mrn"
+#effect 3
+#damage 12
+#spec 4736
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10015
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ chill"
+#name 2 "$Additional$ chill"
+#name 4 "$Additional$ chill"
+#name 8 "$Additional$ chill"
+#name 16 "$Additional$ chill"
+#name 32 "$Additional$ chill"
+#name 64 "$Additional$ chill"
+#name 128 "$Additional$ chill"
+#name 256 "$Additional$ chill"
+
+#end
+
+#neweffect "cold fatigue Secondary mrne"
+#effect 3
+#damage 12
+#spec 16777856
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10015
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ chill"
+#name 2 "$Additional$ chill"
+#name 4 "$Additional$ chill"
+#name 8 "$Additional$ chill"
+#name 16 "$Additional$ chill"
+#name 32 "$Additional$ chill"
+#name 64 "$Additional$ chill"
+#name 128 "$Additional$ chill"
+#name 256 "$Additional$ chill"
+
+#end
+
+#neweffect "cold fatigue Secondary mrn damaging"
+#effect 3
+#damage 12
+#spec 4736
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10015
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ chill"
+#name 2 "$Additional$ chill"
+#name 4 "$Additional$ chill"
+#name 8 "$Additional$ chill"
+#name 16 "$Additional$ chill"
+#name 32 "$Additional$ chill"
+#name 64 "$Additional$ chill"
+#name 128 "$Additional$ chill"
+#name 256 "$Additional$ chill"
+
+#end
+
+#neweffect "cold fatigue Secondary mrne damaging"
+#effect 3
+#damage 12
+#spec 16777856
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10015
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ chill"
+#name 2 "$Additional$ chill"
+#name 4 "$Additional$ chill"
+#name 8 "$Additional$ chill"
+#name 16 "$Additional$ chill"
+#name 32 "$Additional$ chill"
+#name 64 "$Additional$ chill"
+#name 128 "$Additional$ chill"
+#name 256 "$Additional$ chill"
+
+#end

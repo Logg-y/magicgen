@@ -15,6 +15,7 @@ weaponmods = {}
 eventsets = {}
 # For storing which eventsets are in each module group
 eventmodulegroups = {}
+unitmodlists = {}
 
 magicsites = {}
 magicsitenames = []
@@ -43,6 +44,27 @@ MONTAG_SCALE = 1.0
 
 
 UNITMOD_TO_SECONDARY_CACHE = {}
+
+DAMAGING_EFFECTS = [2,
+7,
+24,
+32,
+33,
+56,
+73,
+74,
+75,
+96,
+103,
+104,
+105,
+106,
+107,
+109,
+122,
+134,
+139,
+142]
 
 def unitmodToSecondary(unitmod, fallback=True):
     """Return the secondary effect that uses the unitmod. If fallback,

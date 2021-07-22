@@ -1,0 +1,420 @@
+-- avoid various traits that will kill or harm things in a not very useful way
+#newunitmod "Summon Raise Shape Custom Selector"
+#landok 1
+#req cold <= 0
+#req heat <= 0
+#req poisoncloud <= 0
+#req diseasecloud <= 0
+#req mindslime <= 0
+#req deathfire <= 0
+#req deathdisease <= 0
+#req deathparalyze <= 0
+#end
+
+
+
+#newunitmod "Summon Raise Shape RL1"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL1"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL2"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL2"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL3"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL3"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL4"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL4"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL5"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL5"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL6"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL6"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#req raiseshape <= 1
+#end
+
+#newunitmod "Summon Raise Shape RL7"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL7"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL8"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL8"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL9"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL9"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL10"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL10"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL11"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL11"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL12"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL12"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL13"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL13"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end
+
+#newunitmod "Summon Raise Shape RL14"
+#nameprefix "Transforming"
+#eventset "Summon Raise Shape RL14"
+#attributeforrandomunit "raiseshape"
+#req raiseonkill == -1
+#set raiseonkill 100
+#req aquatic <= 0
+#req shapechange <= 0
+#req firstshape <= 0
+#req secondshape <= 0
+#req secondtmpshape <= 0
+#req forestshape <= 0
+#req plainshape <= 0
+#req foreignshape <= 0
+#req homeshape <= 0
+#req domshape <= 0
+#req nodomshape <= 0
+#req springshape <= 0
+#req summershape <= 0
+#req autumnshape <= 0
+#req wintershape <= 0
+#req landshape <= 0
+#req watershape <= 0
+#req growhp <= 0
+#req shrinkhp <= 0
+#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+
+#end

@@ -1,6 +1,5 @@
 from Enums.SpellTypes import SpellTypes
-
-DAMAGING_SPELL_EFFECTS = [2, 103, 74, 73, 3, 109]
+from Services import utils
 
 class SpellModifier(object):
     def __init__(self):
@@ -37,6 +36,7 @@ class SpellModifier(object):
         self.descrconds = []
         self.setcommands = []
         self.multcommands = []
+        self.details = ""
 
     def compatibility(self, eff, researchlevel, isnextspell):
         "Return True if this modifier is compatible with the given SpellEffect."
@@ -54,10 +54,10 @@ class SpellModifier(object):
                 
         if self.reqdamaging != -1:
             if self.reqdamaging > 0:
-                if eff.effect not in DAMAGING_SPELL_EFFECTS:
+                if eff.effect % 1000 not in utils.DAMAGING_EFFECTS:
                     return False
             if self.reqdamaging == 0:
-                if eff.effect in DAMAGING_SPELL_EFFECTS: 
+                if eff.effect % 1000 in utils.DAMAGING_EFFECTS:
                     return False
                 
         for flag in SpellTypes:

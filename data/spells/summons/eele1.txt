@@ -2,19 +2,19 @@
 #effect 1
 #damage 498
 #spec 0
-#power 4
-#maxpower 14
+#power 1
+#maxpower 7
 #precision -2
 #nreff 1
-#pathlevel 2
-#fatiguecost 40
+#pathlevel 1
+#fatiguecost 20
 #sound 31
 #schools 1
 
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 20
 
 #details "The elementals are size 1."
 #name 8 "Summon NAMEPREFIX Tiny Earth %Elemental%"
@@ -29,10 +29,10 @@
 #effect 10001
 #damage 498
 #spec 0
-#power 3
-#maxpower 14
+#power 1
+#maxpower 7
 #nreff 4001
-#pathlevel 3
+#pathlevel 1
 #fatiguecost 300
 #schools 1
 

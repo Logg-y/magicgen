@@ -10,7 +10,7 @@
 #fatiguecost 200
 #sound 31
 #schools 1
-#scalefatiguemult 40
+#scalefatiguemult 10
 #paths 128
 #secondarypaths 8
 #secondarypathchance 95
@@ -62,8 +62,8 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 1300
+#pathlevel 5
+#fatiguecost 2000
 #schools 1
 #skipchance 99
 

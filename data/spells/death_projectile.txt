@@ -17,8 +17,8 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Shadow %bolt%"
-#name 32 "%bolt% of darkness"
+#name 32 "NAMEPREFIX Shadow %bolt%"
+#name 32 "NAMEPREFIX %bolt% of darkness"
 #descr 32 "Hurls ARTICLE deathly %bolt% at enemies. This passes through any armor and strikes at the victims' life force directly, causing them to return as a soulless if killed."
 
 #spelltype 34
@@ -26,4 +26,8 @@
 #scalerate 1
 #pathlevel 2
 #schools 4
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX touch of shadow" 
+#descrcond range < 10 32 "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
 #end

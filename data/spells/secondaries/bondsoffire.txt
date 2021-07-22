@@ -1,32 +1,156 @@
-#newsecondary "Bonds of Fire"
+#newsecondary "Firebonds nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 1
-#power 0
+#power -1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
+#req paths != 256
+
+#nameprefix "Trapping"
+#fatiguepersquare 4
+
+
+#nextspell "Firebonds Secondary mrne"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
+#details "Affected creatures make an easy MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#end
+
+#newsecondary "Firebonds nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 65536
 
+#nameprefix "Ensnaring"
+#fatiguepersquare 7
 
-#nextspell "Bonds of Fire Secondary"
 
-#descr "Residual energy from this spell attempts to form burning $fetters$ around the legs of those affected, making them temporarily unable to move."
+#nextspell "Firebonds Secondary mrn"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
+#details "Affected creatures make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
 #end
 
 
-#newsecondary "Bonds of Fire damaging"
+#newsecondary "Firebonds damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
+
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Trapping"
+#fatiguepersquare 3
+
+#nextspell "Firebonds Secondary mrne damaging"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those this spell wounds."
+#details "Wounded creatures make an easy MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#end
+
+#newsecondary "Firebonds mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Ensnaring"
+#fatiguepersquare 6
+
+#nextspell "Firebonds Secondary mrn damaging"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those this spell wounds."
+#details "Wounded creatures make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+
+#end
+
+#newsecondary "Firebonds holy not smite"
 
 -- evo only
 #spelltype 2
@@ -35,18 +159,35 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
 -- holy okay
+#req paths == 256
+#req aoe > 0
+
+#req nonscalingdamage < 40
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 65536
 
+-- not on damage already
+#ondamage 1
 
-#nextspell "Bonds of Fire Secondary"
+#nameprefix "Ensnaring"
+#fatiguepersquare 6
 
-#descr "Residual energy from this spell attempts to form burning $fetters$ around the legs of those affected, making them temporarily unable to move."
+#nextspell "Firebonds Secondary mrn damaging"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those this spell wounds."
+#details "Wounded creatures make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
 
 #end

@@ -1,4 +1,4 @@
-#newsecondary "Encase in ice smite"
+#newsecondary "Encase in Ice nondamaging mrne"
 
 -- evo only
 #spelltype 2
@@ -7,17 +7,178 @@
 #power 0
 
 -- various damage types
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe == 0
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req path == 256
+
+#nameprefix "Iced"
+#fatiguepersquare 4
+
+#req damage != 299
 
 
-#nextspell "Encase in Ice Smite"
+#nextspell "Encase in Ice Secondary mrne"
 
-#descr "The divine power unleashed allows the priest to surround the target with a cage of ice."
+#descr "This spell is imbued with icy energy that may trap those affected in a cage of ice."
+#details "Affected creatures make an easy MR check. Those that fail to resist suffer 4 points of encase in ice: Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+#end
+
+#newsecondary "Encase in Ice nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 299
+
+#nameprefix "Encasing"
+#fatiguepersquare 7
+
+
+#nextspell "Encase in Ice Secondary mrn"
+
+#descr "This spell is imbued with icy energy that may trap those affected in a cage of ice."
+#details "Affected creatures make an MR check. Those that fail to resist suffer 4 points of encase in ice: Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+#end
+
+
+#newsecondary "Encase in Ice damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Iced"
+#fatiguepersquare 3
+
+#nextspell "Encase in Ice Secondary mrne damaging"
+
+#descr "This spell is imbued with icy energy that may trap those it wounds in a cage of ice."
+#details "Wounded creatures make an easy MR check. Those that fail to resist suffer 4 points of encase in ice: Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+#end
+
+#newsecondary "Encase in Ice mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Encasing"
+#fatiguepersquare 6
+
+#nextspell "Encase in Ice Secondary mrn damaging"
+
+#descr "This spell is imbued with icy energy that may trap those it wounds in a cage of ice."
+#details "Wounded creatures make an MR check. Those that fail to resist suffer 4 points of encase in ice: Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+
+#end
+
+#newsecondary "Encase in Ice holy only"
+
+-- evo only
+#spelltype 2
+
+#paths 4
+#power 0
+
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+#req paths == 256
+
+-- not ritual
+#req spelltype !& 4
+
+
+#nameprefix "Encasing"
+#fatiguepersquare 6
+
+#nextspell "Encase in Ice Secondary mrn damaging"
+
+#descr "This spell is imbued with icy energy that may trap those it wounds in a cage of ice."
+#details "Wounded creatures make an MR check. Those that fail to resist suffer 4 points of encase in ice: Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+
 #end

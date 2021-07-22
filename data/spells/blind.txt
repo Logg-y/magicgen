@@ -24,13 +24,18 @@
 #paths 161
 #secondarypaths 33
 
-#name 1 "Blind"
-#name 32 "Eyeloss"
-#name 128 "Claim eyes"
+#name 1 "NAMEPREFIX Blind"
+#name 32 "NAMEPREFIX Eyeloss"
+#name 128 "NAMEPREFIX Claim eyes"
 
 #descr 1 "Bright sparks render SUBJECT permanently blind, unless they resist the spell."
 #descr 32 "Unless resisted, this spell permanently blinds SUBJECT."
 #descr 128 "$BLOOD_INTRO$, the caster promises the vision of SUBJECT to infernal powers."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of sparks"
+#namecond effect > 1000 32 "NAMEPREFIX eyeclaiming $mist$ "
+#namecond effect > 1000 128 "NAMEPREFIX eyeclaiming $mist$"
 
 #end
 

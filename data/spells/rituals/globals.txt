@@ -29,7 +29,7 @@
 #power 8
 #maxpower 8
 #nreff 1
-#pathlevel 9
+#pathlevel 7
 #fatiguecost 16600
 #schools 16
 #unique 1
@@ -46,6 +46,8 @@
 #end
 
 #neweffect "Blood Vortex"
+-- copyspell for the location recording
+#copyspell "Blood Vortex"
 #effect 10081
 #damage 87
 #spec 0
@@ -665,7 +667,7 @@
 
 #name 16 "Strands of Arcane Power"
 #descr 16 "This mighty enchantment enables the caster to project his mind to many distant places at once, via strands of arcane power. While projected, the caster will only be able to sense and affect magic, but this still makes it possible to search for magic sites and enemy mages. The caster will be able to project himself into all provinces that have a friendly Dominion. Magic sites are more elusive when searching in this way and a very powerful mage is required to find those that are well hidden. Mages are usually able to stay hidden from the projected mind if they have a good magic resistance value. If an Astral mage is found, a battle of the minds will ensue. Only one will leave it with their mind intact. Non-astral mages cannot try to retaliate, but neither do they risk losing their sanity in the process. However, they will be subjected to a minor Mind Burn attack if they are found. If the caster becomes feebleminded the enchantment will dissipate."
-#details "Mind Burn: 10 AN dmg (MR negates), penetration bonuses makes the MR test harder."
+#details "Site searching: In each province that is owned and under friendly dominion, for each path the caster has, roll an exploding d10 and add the caster's path level. Search the province according to the die result:\n\n21+ - search at level 3\n16+ - search at level 2\n11+ - search at level 1\n\nEach turn, every hostile non-mindless mage in the caster's dominion must make a MR check. If they succeed this, nothing further happens to them.\nIf they are not an astral mage, they are attacked with 10 AN magical damage, with another MR roll to negate it. Damage inflicted this way is not attributed to the global caster, and will not trigger Blood Vengeance or similar effects, nor do enemies killed this way add to his kills stat.\nIf they are an astral mage, both parties roll (their current astral level) + closed d6. The caster of this spell wins ties. The loser becomes feebleminded."
 
 #spelltype 4
 #scalerate 0

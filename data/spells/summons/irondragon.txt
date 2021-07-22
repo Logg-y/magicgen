@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
-#scalefatiguemult 270
+#scalefatiguemult 60
 #sound 31
 #schools 8
 
@@ -16,7 +16,7 @@
 #secondarypaths 9
 #secondarypathchance 100
 
-#skipchance 97
+#skipchance 85
 
 #name 8 "Summon NAMEPREFIX Iron %Dragon%"
 #name 1 "Summon NAMEPREFIX Iron %Dragon%"
@@ -43,7 +43,7 @@
 #secondarypaths 9
 #secondarypathchance 100
 
-#skipchance 97
+#skipchance 50
 
 #name 8 "Summon NAMEPREFIX Iron %Dragon%"
 #name 1 "Summon NAMEPREFIX Iron %Dragon%"
@@ -69,7 +69,7 @@
 #pathlevel 7
 #fatiguecost 1100
 #schools 8
-#skipchance 99
+#skipchance 97
 
 #paths 9
 #secondarypaths 9
@@ -96,7 +96,7 @@
 #fatiguecost 1600
 #schools 8
 
-#skipchance 99.6
+#skipchance 99
 
 #paths 9
 #secondarypaths 9

@@ -37,7 +37,10 @@
 #secondarypaths 0
 #secondarypathchance 95
 #nextspell "Vine Arrow Entangle"
-#name 64 "Vine %Arrow%"
+#name 64 "NAMEPREFIX Vine %Arrow%"
 #descrcond effectivenreff == 1 64 "The caster shoots an enchanted Vine Arrow against his enemies. The arrow will come alive and entangle anyone who is hit."
 #descrcond effectivenreff != 1 64 "The caster shoots a several enchanted Vine Arrows against his enemies. The arrows will come alive and entangle anyone who is hit."
+
+#priority 1
+#namecond range < 10 64 "NAMEPREFIX touch of entangling plants"
 #end

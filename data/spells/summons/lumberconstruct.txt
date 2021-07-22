@@ -34,7 +34,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 300
+#fatiguecost 700
 #schools 8
 #skipchance 99
 

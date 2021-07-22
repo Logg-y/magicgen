@@ -10,7 +10,7 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 2
-#req_0popok
+#req_pop0ok
 #nolog
 #msg "Metal at an enchanted forge tranformed itself into a magical item."
 #magicitem 2

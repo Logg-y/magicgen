@@ -19,9 +19,9 @@
 
 #skipflightspr 1
 
-#name 1 "Fiery %Comet%"
-#name 8 "%Rock% from the Heavens"
-#name 16 "%Gift% from Heaven"
+#name 1 "NAMEPREFIX Fiery %Comet%"
+#name 8 "NAMEPREFIX %Rock% from the Heavens"
+#name 16 "NAMEPREFIX %Gift% from Heaven"
 #descr 1 "The caster alters the trajectory of ARTICLE %comet% from above the world, sending the %comet% toward his enemies. Being hit by ARTICLE %comet% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
 #descr 8 "The caster alters the trajectory of ARTICLE %rock% from above the world, sending the %rock% toward his enemies. Being hit by ARTICLE %rock% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
 #descr 16 "The caster alters the trajectory of ARTICLE %meteor% from above the world, sending the %meteor% toward his enemies. Being hit by ARTICLE %meteor% is lethal, but they are incredibly difficult to aim and will typically deviate far from where the caster intended."
@@ -31,4 +31,9 @@
 #scalerate 0.7
 -- #scalecost 0.15
 #schools 4
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Defensive %Comet%"
+#namecond range < 10 8 "NAMEPREFIX Defensive %Meteor%"
+#namecond range < 10 16 "NAMEPREFIX Defensive %Meteor%"
 #end

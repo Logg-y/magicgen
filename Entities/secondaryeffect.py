@@ -1,21 +1,23 @@
 from Enums.PathFlags import PathFlags
 from Enums.SpellTypes import SpellTypes
-from Services.utils import unitmods, eventsets
+from Services.utils import unitmods, eventsets, spelleffects
+from Services import utils
 from fileparser import unitinbasedatafinder
-
+import math
 
 class SpellSecondaryEffect(object):
     def __init__(self):
         self.spelltype = 0
         self.params = ["power", "spelltype", "range", "precision", "damage", "aoe", "casttime", "nreff", "skipchance",
                        "fatiguecost", "maxbounces", "scalecost", "scalerate", "pathperresearch", "scalefatigueexponent",
-                       "nextspell", "unitmod"]
+                       "nextspell", "unitmod", "spec", "aispellmod"]
         self.power = 0
         self.spelltype = 0
         self.range = 0
         self.precision = 0
         self.damage = 0
         self.aoe = 0
+        self.spec = 0
         self.casttime = 0
         self.nreff = 0
         self.skipchance = 0
@@ -25,11 +27,18 @@ class SpellSecondaryEffect(object):
         self.pathlevel = 0
         self.paths = 0
         self.offensiveeffect = 0
+        self.ondamage = 0
+        self.aispellmod = 0
+        self.requiredresearchlevel = None
 
         self.scalecost = 0.0
         self.scalerate = 0.0
         self.pathperresearch = 0.0
         self.scalefatigueexponent = 0.0
+
+        self.fatiguepersquare = 0.0
+
+        self.reqdamagingeffect = None
 
         self.nobattlefield = False
         self.nextspell = ""
@@ -41,6 +50,7 @@ class SpellSecondaryEffect(object):
         self.descrconds = []
         self.multcommands = []
         self.setcommands = []
+        self.nameprefixes = []
         self.magicpathvaluescaling = 0.0
         self.unitmod = ""
 
@@ -55,17 +65,23 @@ class SpellSecondaryEffect(object):
             realeventset = eventsets[eff.eventset]
             if self.unitmod in realeventset.allowedunitmods:
                 return True
+            if realeventset.unitmodlist is not None:
+                unitmodlist = utils.unitmodlists[realeventset.unitmodlist]
+                if self.unitmod in unitmodlist:
+                    return True
 
         # Check reqs to begin with
         for r in self.reqs:
             if not r.test(eff):
                 return False
 
-
-
-				
         if self.nextspell != "" and eff.noadditionalnextspells > 0:
             return False
+
+        if self.requiredresearchlevel is not None and self.requiredresearchlevel != researchlevel:
+            return False
+
+        finalpower = researchlevel + self.power + modifier.power
 
         if self.anysummon:
             if eff.effect in [1, 10001, 10050, 10038, 21, 10021]:
@@ -79,6 +95,15 @@ class SpellSecondaryEffect(object):
                             return False
             else:
                 return False
+            # Calculate what final power this should be, accounting for magic value and chassis value mismatches
+            # This is so squishy human mages don't get pushed up to really high research for simple modifications
+            # that don't really affect their combat ability
+            if eff.chassisvalue is not None:
+                eff.calcchassisvalues()
+                finalpercentage = eff.chassisvaluepercent + (eff.magicvaluepercent * self.magicpathvaluescaling)
+                thispower = round(finalpercentage * self.power, 0)
+                finalpower = researchlevel + thispower + modifier.power
+
         if eff.isnextspell and self.name != "Do Nothing":
             return False
         # do not give nextspells secondary effects as they don't respect the path requirements the way the main spell does
@@ -110,7 +135,7 @@ class SpellSecondaryEffect(object):
         if finalcast < 5:
             return False
 
-        finalpower = researchlevel + self.power + modifier.power
+
         # power extremes don't matter for holy spells
         # do nothing should also always be allowed
         if not eff.isnextspell and self.name != "Do Nothing":
@@ -143,16 +168,44 @@ class SpellSecondaryEffect(object):
             if not umod.compatibility(u):
                 return False
 
+        scaleamt = eff.scalerate * ((finalpower * (finalpower + 1)) / 2)
+        finalaoe = (eff.aoe % 1000) + scaleamt
+
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
         if self.offensiveeffect != 0 and eff.paths != 256:
             maxbaseaoe = 3 * ((researchlevel * (researchlevel + 1)) / 2)
-            finalpower = researchlevel - eff.power
+
             # this is quadratic, negative power differentials (from slower casting etc) should be considered 0
             finalpower = max(0, finalpower)
-            scaleamt = eff.scalerate * ((finalpower * (finalpower + 1)) / 2)
-            finalaoe = (eff.aoe % 1000) + scaleamt
             if finalaoe > maxbaseaoe:
                 return False
+
+        if self.reqdamagingeffect is not None:
+            if self.reqdamagingeffect:
+                if eff.effect % 1000 not in utils.DAMAGING_EFFECTS:
+                    return False
+            else:
+                if eff.effect % 1000 in utils.DAMAGING_EFFECTS:
+                    return False
+
+        if self.ondamage:
+            curr = eff
+            while 1:
+                # look for existing on damage effects, having multiple in the same spell
+                # does not work correctly
+                if isinstance(curr, str):
+                    curr = spelleffects[curr]
+                if curr.spec & 0x1000000000000000:
+                    return False
+                if curr.effect > 1000:
+                    return False
+                if curr.nextspell is not None and curr.nextspell != "":
+                    curr = curr.nextspell
+                    continue
+                # this does currently not work on chain lightning effects (134)
+                if curr.effect % 1000 not in utils.DAMAGING_EFFECTS or curr.effect % 1000 == 134:
+                    return False
+                break
 
         return True

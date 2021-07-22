@@ -3,7 +3,7 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 
 #req effect != 10050
 
@@ -21,7 +21,7 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 #req effect != 10050
 
 -- not montag
@@ -38,7 +38,7 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power 0
 #req effect != 10050
 
 -- not montag
@@ -55,7 +55,7 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power 0
 #req effect != 10050
 
 -- not montag
@@ -72,7 +72,7 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power 0
 #req effect != 10050
 
 -- not montag
@@ -89,7 +89,7 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power -1
 #req effect != 10050
 
 -- not montag
@@ -106,7 +106,7 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power -1
 #req effect != 10050
 
 -- not montag

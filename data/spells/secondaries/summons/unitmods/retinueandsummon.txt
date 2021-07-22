@@ -1,0 +1,120 @@
+#newunitmod "Summon Allies 1"
+#nameprefix "Levying"
+#eventset "Summon Allies 1"
+#attributeforrandomunit "makemonsters1"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon some kind of magical creature."
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 3"
+#nameprefix "Levying"
+#eventset "Summon Allies 3"
+#attributeforrandomunit "makemonsters3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon three magical creatures."
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Allies 5"
+#nameprefix "Levying"
+#eventset "Summon Allies 5"
+#attributeforrandomunit "makemonsters5"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to spend a month to freely summon five magical creatures."
+#req makemonsters1 <= 0
+#req makemonsters2 <= 0
+#req makemonsters3 <= 0
+#req makemonsters4 <= 0
+#req makemonsters5 <= 0
+#end
+
+#newunitmod "Summon Retinue 1d3"
+#eventset "Summon Retinue 1d3"
+#nameprefix "Guarded"
+#attributeforrandomunit "batstartsum1d3"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by several magical creatures."
+#req batstartsum1d3 <= 0
+#end
+
+#newunitmod "Summon Retinue 2d6"
+#eventset "Summon Retinue 2d6"
+#nameprefix "Guarded"
+#attributeforrandomunit "batstartsum2d6"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by magical creatures."
+#req batstartsum2d6 <= 0
+#end
+
+#newunitmod "Summon Retinue 4d6"
+#eventset "Summon Retinue 4d6"
+#nameprefix "Guarded"
+#attributeforrandomunit "batstartsum4d6"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by many magical creatures."
+#req batstartsum4d6 <= 0
+#end
+
+#newunitmod "Summon Retinue 6d6"
+#eventset "Summon Retinue 6d6"
+#nameprefix "Guarded"
+#attributeforrandomunit "batstartsum6d6"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by a huge number of magical creatures."
+#req batstartsum6d6 <= 0
+#end
+
+#newunitmod "Summon Retinue 9d6"
+#eventset "Summon Retinue 9d6"
+#nameprefix "Guarded"
+#attributeforrandomunit "batstartsum9d6"
+#req aquatic <= 0
+#descr "This particular CREATURE is always guarded by an army of magical creatures."
+#req batstartsum9d6 <= 0
+#end
+
+#newunitmod "Summon Every Round 1"
+#eventset "Summon Every Round 1"
+#nameprefix "Levying"
+#attributeforrandomunit "battlesum1"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to summon a magical creature every round in combat."
+#req battlesum1 <= 0
+#end
+
+#newunitmod "Summon Every Round 3"
+#eventset "Summon Every Round 3"
+#nameprefix "Levying"
+#attributeforrandomunit "battlesum3"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to summon three magical creatures every round in combat."
+#req battlesum3 <= 0
+#end
+
+#newunitmod "Summon Every Round 5"
+#eventset "Summon Every Round 5"
+#nameprefix "Levying"
+#attributeforrandomunit "battlesum5"
+#req aquatic <= 0
+#descr "This particular CREATURE is able to summon five magical creatures every round in combat."
+#req battlesum5 <= 0
+#end
+
+#newunitmod "Summon Raiseonkill special"
+#eventset "Summon Raiseonkill special"
+#nameprefix "Transforming"
+#attributeforrandomunit "raiseshape"
+#req aquatic <= 0
+#req raiseonkill == -1
+#set raiseonkill 100
+#descr "This particular CREATURE is able to transform living creatures it kills into some kind of magical beings."
+#end

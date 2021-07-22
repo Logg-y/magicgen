@@ -26,16 +26,20 @@
 #paths 66
 #secondarypaths 66
 
-#namecond effectiveaoe < 2 2 "Swiftness of the Wind"
-#namecond effectiveaoe < 2 64 "Swiftness of the Hare"
+#namecond effectiveaoe < 2 2 "NAMEPREFIX Swiftness of the Wind"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Swiftness of the Hare"
 
-#namecond effectiveaoe >= 2 2 "Haste of the Wind"
-#namecond effectiveaoe >= 2 64 "Haste"
+#namecond effectiveaoe >= 2 2 "NAMEPREFIX Haste of the Wind"
+#namecond effectiveaoe >= 2 64 "NAMEPREFIX Haste"
 
 #details "Doubles combat speed."
 
 #descr 2 "SUBJECT %is% imbued with the swiftness of the wind, allowing them to move faster."
 #descr 64 "SUBJECT %is% imbued with the swiftness of nimble animals, allowing them to move faster."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of swiftness"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of the hare"
 
 #end
 

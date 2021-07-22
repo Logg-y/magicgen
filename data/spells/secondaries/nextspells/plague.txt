@@ -1,0 +1,81 @@
+#neweffect "Minor Plague mrne"
+#effect 11
+#damage 8
+#spec 545787904
+#schools -1
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 2
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 0
+#explspr 10211
+#sound 22
+#fatiguecost 0
+#precision 100
+#range 5015
+
+#paths -1
+#secondarypaths 1
+
+#namecond effectiveaoe < 1 1 "Plague"
+#namecond effectiveaoe < 1 64 "Plague"
+
+#name 1 "Minor Plague"
+#name 2 "Minor Plague"
+#name 4 "Minor Plague"
+#name 8 "Minor Plague"
+#name 16 "Minor Plague"
+#name 32 "Minor Plague"
+#name 64 "Minor Plague"
+#name 128 "Minor Plague"
+#name 256 "Minor Plague"
+
+
+#end
+
+#neweffect "Minor Plague mrne damaging"
+#effect 11
+#damage 8
+#spec 545787904
+#schools -1
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 2
+
+#scalerate 1
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 30
+#pathlevel 0
+#explspr 10211
+#sound 22
+#fatiguecost 0
+#precision 100
+#range 5015
+
+#paths -1
+#secondarypaths 1
+
+#namecond effectiveaoe < 1 1 "Plague"
+#namecond effectiveaoe < 1 64 "Plague"
+
+#name 1 "Minor Plague"
+#name 2 "Minor Plague"
+#name 4 "Minor Plague"
+#name 8 "Minor Plague"
+#name 16 "Minor Plague"
+#name 32 "Minor Plague"
+#name 64 "Minor Plague"
+#name 128 "Minor Plague"
+#name 256 "Minor Plague"
+
+
+#end

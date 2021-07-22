@@ -23,16 +23,21 @@
 #paths 129
 #secondarypaths 1
 
-#namecond effectiveaoe < 660 1 "Combustion"
-#namecond effectiveaoe < 660 128 "Infernal Flames"
+#namecond effectiveaoe < 660 1 "NAMEPREFIX Combustion"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX Infernal Flames"
 
-#namecond effectiveaoe >= 660 1 "Conflagration"
-#namecond effectiveaoe >= 660 128 "Wind of Inferno"
+#namecond effectiveaoe >= 660 1 "NAMEPREFIX Conflagration"
+#namecond effectiveaoe >= 660 128 "NAMEPREFIX Wind of Inferno"
 
 #details "Burning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 
 #descr 1 "A SIZE area is set on fire. This will cause creatures caught within to gradually lose health, though it is unlikely to be fatal, especially in cold or rain."
 #descr 128 "$BLOOD_INTRO$, the heat of Inferno sets a SIZE area on fire. This will cause creatures caught within to gradually lose health, though it is unlikely to be fatal, especially in cold or rain."
 
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of ignition"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of ignition"
+
 #end
+
 

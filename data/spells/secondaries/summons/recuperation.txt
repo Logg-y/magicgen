@@ -7,7 +7,7 @@
 #req effect != 10038
 #req effect != 21
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0

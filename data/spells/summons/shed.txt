@@ -17,12 +17,12 @@
 
 #skipchance 97
 
-#name 128 "Bind NAMEPREFIX %Shed%"
+#name 128 "Summon NAMEPREFIX %Shed%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE %shed% to fight for him. Shedim are able to unleash blasts of lightning. This spell binds the %demon% only weakly and so will allow any surviving demons to return to their home plane when the battle is over."
-#scalefatiguemult 100
+#scalefatiguemult 60
 #spelltype 528
 
-#scalerate 0.7
+#scalerate 1
 #end
 
 #neweffect "shed ritual"
@@ -33,7 +33,7 @@
 #maxpower 14
 #nreff 1
 #pathlevel 4
-#fatiguecost 700
+#fatiguecost 900
 #schools 1
 
 #paths 128
@@ -50,10 +50,10 @@
 
 #skipchance 80
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 620
+#scalefatigueexponent -2
+#scalefatiguemult 720
 
-#scalerate 4
+#scalerate 1
 #end
 
 #neweffect "shed Remote Assassination"

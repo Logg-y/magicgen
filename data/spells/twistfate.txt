@@ -23,23 +23,27 @@
 
 #details "Twist fate: the next instance of damage is prevented."
 
-#namecond effectiveaoe < 1 16 "twist fate"
-#namecond effectiveaoe < 1 16 "averted fate"
-#namecond effectiveaoe < 2 16 "cheat fate"
-#namecond effectiveaoe < 1 128 "infernal protection"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX twist fate"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX averted fate"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX cheat fate"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX infernal protection"
 
-#namecond2 1 <= effectiveaoe < 666 16 "group twisted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group averted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group cheated fate"
-#namecond2 1 <= effectiveaoe < 666 128 "group infernal protection"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group twisted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group averted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group cheated fate"
+#namecond2 1 <= effectiveaoe < 666 128 "NAMEPREFIX group infernal protection"
 
-#namecond effectiveaoe == 666 16 "mass twisted fate"
-#namecond effectiveaoe == 666 16 "mass averted fate"
-#namecond effectiveaoe == 666 16 "mass cheated fate"
-#namecond effectiveaoe == 666 128 "mass infernal protection"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass twisted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass averted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass cheated fate"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass infernal protection"
 
 #descr 16 "Alters the future fate of SUBJECT, protecting PRONOUN from a single strike."
 #descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from a single strike."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of protection"
 
 #end
 
@@ -69,23 +73,27 @@
 
 #details "Twist fate: the next instance of damage is prevented."
 
-#namecond effectiveaoe < 1 16 "twist fate"
-#namecond effectiveaoe < 1 16 "averted fate"
-#namecond effectiveaoe < 2 16 "cheat fate"
-#namecond effectiveaoe < 1 128 "infernal protection"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX twist fate"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX averted fate"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX cheat fate"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX infernal protection"
 
-#namecond2 1 <= effectiveaoe < 666 16 "group twisted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group averted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group cheated fate"
-#namecond2 1 <= effectiveaoe < 666 128 "group infernal protection"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group twisted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group averted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group cheated fate"
+#namecond2 1 <= effectiveaoe < 666 128 "NAMEPREFIX group infernal protection"
 
-#namecond effectiveaoe == 666 16 "mass twisted fate"
-#namecond effectiveaoe == 666 16 "mass averted fate"
-#namecond effectiveaoe == 666 16 "mass cheated fate"
-#namecond effectiveaoe == 666 128 "mass infernal protection"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass twisted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass averted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass cheated fate"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass infernal protection"
 
 #descr 16 "Alters the future fate of SUBJECT, protecting PRONOUN from a single strike."
 #descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from a single strike."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of protection"
 
 #end
 
@@ -128,23 +136,27 @@
 
 #details "Applies both twist fate and fools' luck. Twist fate negates the first successful hit. Fools' luck alternates between preventing and doubling incoming damage."
 
-#namecond effectiveaoe < 1 16 "extended twist fate"
-#namecond effectiveaoe < 1 16 "extended averted fate"
-#namecond effectiveaoe < 2 16 "extended cheat fate"
-#namecond effectiveaoe < 1 128 "extended infernal protection"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX extended twist fate"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX extended averted fate"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX extended cheat fate"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX extended infernal protection"
 
-#namecond2 1 <= effectiveaoe < 666 16 "group extended twisted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group extended averted fate"
-#namecond2 1 <= effectiveaoe < 666 16 "group extended cheated fate"
-#namecond2 1 <= effectiveaoe < 666 128 "group extended infernal protection"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group extended twisted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group extended averted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group extended cheated fate"
+#namecond2 1 <= effectiveaoe < 666 128 "NAMEPREFIX group extended infernal protection"
 
-#namecond effectiveaoe == 666 16 "mass extended twisted fate"
-#namecond effectiveaoe == 666 16 "mass extended averted fate"
-#namecond effectiveaoe == 666 16 "mass extended cheated fate"
-#namecond effectiveaoe == 666 128 "mass extended infernal protection"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass extended twisted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass extended averted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass extended cheated fate"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass extended infernal protection"
 
 #descr 16 "Greatly alters the future fate of SUBJECT, protecting PRONOUN from harm. This is not without risk: although several successful hits are negated, subsequent hits may suddenly appear twice as damaging."
 #descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from harm strike. This is not without risk: although several successful hits are negated, subsequent hits may suddenly appear twice as damaging."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of extended protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of extended protection"
 
 #end
 

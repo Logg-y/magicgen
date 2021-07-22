@@ -8,14 +8,14 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 60
+#scalefatiguemult 20
 #sound 31
 #schools 1
 
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX Ice %Drake%"
 #descr 4 "The caster summons ARTICLE ice %drake% to fight for him. The ice drake is a large cold-blooded beast that breathes freezing $mist$."
@@ -39,7 +39,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX Ice %Drake%"
 #descr 4 "The caster summons ARTICLE ice %drake% to fight for him. The ice drake is a large cold-blooded beast that breathes freezing $mist$."

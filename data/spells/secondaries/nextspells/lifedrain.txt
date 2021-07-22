@@ -1,0 +1,140 @@
+#neweffect "3AN life drain Secondary mrn damaging"
+#copyspell "Leech"
+#effect 103
+#damage 3
+#spec 545280128
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#skipexplspr 1
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ life drain"
+#name 2 "$Additional$ life drain"
+#name 4 "$Additional$ life drain"
+#name 8 "$Additional$ life drain"
+#name 16 "$Additional$ life drain"
+#name 32 "$Additional$ life drain"
+#name 64 "$Additional$ life drain"
+#name 128 "$Additional$ life drain"
+#name 256 "$Additional$ life drain"
+
+#end
+
+#neweffect "3AN life drain Secondary mrne damaging"
+#copyspell "Leech"
+#effect 2
+#damage 10
+#spec 562053248
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#skipexplspr 1
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ life drain"
+#name 2 "$Additional$ life drain"
+#name 4 "$Additional$ life drain"
+#name 8 "$Additional$ life drain"
+#name 16 "$Additional$ life drain"
+#name 32 "$Additional$ life drain"
+#name 64 "$Additional$ life drain"
+#name 128 "$Additional$ life drain"
+#name 256 "$Additional$ life drain"
+
+#end
+
+
+#neweffect "3AN life drain Secondary mrn"
+#copyspell "Leech"
+#effect 103
+#damage 3
+#spec 545280128
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#skipexplspr 1
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ life drain"
+#name 2 "$Additional$ life drain"
+#name 4 "$Additional$ life drain"
+#name 8 "$Additional$ life drain"
+#name 16 "$Additional$ life drain"
+#name 32 "$Additional$ life drain"
+#name 64 "$Additional$ life drain"
+#name 128 "$Additional$ life drain"
+#name 256 "$Additional$ life drain"
+
+#end
+
+#neweffect "3AN life drain Secondary mrne"
+#copyspell "Leech"
+#effect 2
+#damage 10
+#spec 562053248
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#skipexplspr 1
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ life drain"
+#name 2 "$Additional$ life drain"
+#name 4 "$Additional$ life drain"
+#name 8 "$Additional$ life drain"
+#name 16 "$Additional$ life drain"
+#name 32 "$Additional$ life drain"
+#name 64 "$Additional$ life drain"
+#name 128 "$Additional$ life drain"
+#name 256 "$Additional$ life drain"
+
+#end

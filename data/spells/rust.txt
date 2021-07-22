@@ -26,10 +26,16 @@
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 4 "Rust"
-#name 8 "Rust"
+#name 4 "NAMEPREFIX Rust"
+#name 8 "NAMEPREFIX Rust"
 #descr 4 "The caster rusts the armour of SUBJECT. This makes it weaker and more prone to becoming damaged when struck."
 #descr 8 "The caster rusts the armour of SUBJECT. This makes it weaker and more prone to becoming damaged when struck."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of corrosion"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of corrosion"
+
+
 #end
 
 #neweffect "Rust Battlefield"
@@ -58,8 +64,12 @@
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 4 "Mass Rust"
-#name 8 "Mass Rust"
+#name 4 "NAMEPREFIX Mass Rust"
+#name 8 "NAMEPREFIX Mass Rust"
 #descr 4 "The caster rusts the armour of everyone on the battlefield. This makes it weaker and more prone to becoming damaged when struck."
 #descr 8 "The caster rusts the armour of everyone on the battlefield. This makes it weaker and more prone to becoming damaged when struck."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of corrosion"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of corrosion"
 #end

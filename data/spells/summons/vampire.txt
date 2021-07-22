@@ -20,8 +20,8 @@
 
 #skipchance 75
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 820
+#scalefatigueexponent -2
+#scalefatiguemult 760
 
 #scalerate 2
 #end

@@ -75,7 +75,7 @@
 #nogeodst 2052
 #newunit "Dragon Nature"
 
-#skipchance 99
+#skipchance 97
 
 #paths 64
 #secondarypaths 64

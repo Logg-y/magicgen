@@ -14,9 +14,9 @@
 #paths 48
 #secondarypaths 32
 #secondarypathchance 0
-#name 16 "Unravel Undead"
-#name 32 "Wither Bones"
-#name 32 "Dust to Dust"
+#name 16 "NAMEPREFIX Unravel Undead"
+#name 32 "NAMEPREFIX Wither Bones"
+#name 32 "NAMEPREFIX Dust to Dust"
 
 #descr 16 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
 #descr 32 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
@@ -26,4 +26,8 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 32
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX touch of undead unraveling"
+#namecond range < 10 32 "NAMEPREFIX touch of withering bones"
 #end

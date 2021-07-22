@@ -1,0 +1,57 @@
+#newsecondary "Strength Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 128
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Mighty"
+#fatiguepersquare 2.5
+
+
+#nextspell "Strength Secondary mrn"
+
+#descr "This spell may also make those it affects stronger for the duration of the battle."
+#details "Affected creatures make an MR check. Failing this check causes them to gain +4 strength."
+
+#end
+
+#newsecondary "Strength Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 128
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Powerful"
+#fatiguepersquare 1.25
+
+
+#nextspell "Strength Secondary mrne"
+
+#descr "This spell may also make those it affects stronger for the duration of the battle."
+#details "Affected creatures make an easy MR check. Failing this check causes them to gain +4 strength."
+
+#end

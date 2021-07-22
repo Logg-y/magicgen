@@ -26,6 +26,10 @@
 #secondarypaths 0
 #secondarypathchance 95
 
-#name 16 "Arcane Bolt"
-#descr 16 "The caster fires ARTICLE_N astral %bolt% that %is% deadly for magic beings but harmless for most creatures."
+#name 16 "NAMEPREFIX Arcane Bolt"
+#descr 16 "The caster fires ARTICLE_N astral %bolt% that %is% deadly for magic beings, but harmless for most creatures."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Unraveling"
+#descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly for magic beings, but harmless for most creatures."
 #end

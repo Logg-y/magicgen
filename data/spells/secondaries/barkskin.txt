@@ -1,0 +1,59 @@
+#newsecondary "Barkskin Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req damage != 65536
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Barktouched"
+#fatiguepersquare 4
+
+
+#nextspell "Barkskin Secondary mrn"
+
+#descr "This spell may also turn the skin of those it affects to bark, making them more resistant to physical damage. This does however make them more vulnerable to fire."
+#details "Affected creatures make an MR check. Those that fail to resist gain barkskin: Grants natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
+
+#end
+
+#newsecondary "Barkskin Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req damage != 65536
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Woody"
+#fatiguepersquare 2
+
+
+#nextspell "Barkskin Secondary mrne"
+
+#descr "This spell may also turn the skin of those it affects to bark, making them more resistant to physical damage. This does however make them more vulnerable to fire."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain barkskin: Grants natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
+
+#end

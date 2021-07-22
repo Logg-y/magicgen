@@ -41,7 +41,7 @@
 #basescale 5
 
 -- ESDB
-#paths 50
+#paths 34
 #secondarypaths 0
 #secondarypathchance 0
 

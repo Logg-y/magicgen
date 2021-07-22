@@ -45,7 +45,7 @@
 
 #unitmod "Summon Fireshield"
 #descr "The summoned %creature% %is% surrounded by magical flames. These flames harm those trying to attack in melee."
-#details "Summoned creatures gain 8AP fireshield."
+#details "Summoned creatures gain 8 AP fireshield."
 
 #end
 
@@ -62,7 +62,7 @@
 
 #unitmod "Summon Banefireshield"
 #descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
-#details "Summoned creatures gain 8AP banefire shield."
+#details "Summoned creatures gain 8 AP banefire shield."
 
 #end
 
@@ -79,7 +79,7 @@
 
 #unitmod "Summon Acidshield"
 #descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and harming the attacker."
-#details "Summoned creatures gain 8AP acid splash."
+#details "Summoned creatures gain 8 AP acid splash."
 
 
 #end
@@ -89,7 +89,7 @@
 #anysummon 1
 
 #paths 16
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -105,7 +105,7 @@
 #anysummon 1
 
 #paths 2
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -113,7 +113,7 @@
 
 #unitmod "Summon Overcharge"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
-#details "Summoned creatures gain overcharged, dealing 1AN capped shock damage to melee attackers."
+#details "Summoned creatures gain overcharged, dealing 1 AN capped shock damage to melee attackers."
 
 #end
 

@@ -1,56 +1,213 @@
-#newsecondary "Rage"
+#newsecondary "Rage nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
-#paths 1
-#power -1
+#paths 65
+#power -2
+
+#pathlevel 1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req damage != 11
+#req damage != 128
 
 -- not demons/undead only
 #req spec !& 8
 
-#nextspell "Minor Rage"
+#nextspell "Minor Rage mrne"
 
-#descr "Residual heat from this spell may enrage those caught within its area of effect."
+#nameprefix "Aggravating"
+#fatiguepersquare 5
+
+#aispellmod 20
+
+#descr "Those affected by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Affected creatures make an easy MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
 
 #end
 
-
-#newsecondary "Rage damaging"
+#newsecondary "Rage nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
-#paths 1
-#power -1
+#paths 65
+#power -3
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
+#offensiveeffect 1
+
+#pathlevel 2
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 128
+
+-- not demons/undead only
+#req spec !& 8
+
+#nextspell "Minor Rage mrn"
+
+#nameprefix "Infuriating"
+#fatiguepersquare 7
+
+#aispellmod 40
+
+#descr "Those affected by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Affected creatures make an MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
+
+#end
+
+
+#newsecondary "Rage damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 65
+#power -2
+
+#pathlevel 1
+
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+-- various damage types
+-- #req paths != 256
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+-- not demons/undead only
+#req spec !& 8
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Infuriating"
+#fatiguepersquare 5
+
+#req nonscalingdamage < 40
+
+#aispellmod 15
+
+#nextspell "Minor Rage mrn damaging"
+
+#descr "Those wounded by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Wounded creatures make an MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
+
+#end
+
+#newsecondary "Rage damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 65
+#power -1
+
+#pathlevel 2
+
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+-- various damage types
 #req paths != 256
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req damage != 11
 
 -- not demons/undead only
 #req spec !& 8
 
-#nextspell "Minor Rage"
+#req nonscalingdamage < 40
 
-#descr "Residual heat from this spell may enrage those caught within its area of effect."
+-- not on damage already
+#ondamage 1
+
+#aispellmod 30
+
+#nameprefix "Aggravating"
+#fatiguepersquare 3
+
+#nextspell "Minor Rage mrne damaging"
+
+#descr "Those wounded by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Wounded creatures make an easy MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
+
+#end
+
+
+#newsecondary "Rage holy only"
+
+-- evo only
+#spelltype 2
+
+#paths 65
+#power 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+-- various damage types
+#req paths == 256
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+-- not demons/undead only
+#req spec !& 8
+
+
+#nameprefix "Infuriating"
+#fatiguepersquare 5
+
+#nextspell "Minor Rage mrn damaging"
+
+#descr "Those wounded by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
+#details "Wounded creatures make an MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
 
 #end

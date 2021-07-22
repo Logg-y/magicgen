@@ -1,0 +1,206 @@
+#newsecondary "Bleeding nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 8192
+
+-- not undead or inanimates
+#req spec !& 8
+#req effect != 96
+
+#nameprefix "Sanguine"
+#fatiguepersquare 2
+
+
+#nextspell "Bleeding Secondary mrne"
+
+#descr "This spell is filled with a dark energy that may cause those affected to begin bleeding profusely."
+#details "Affected creatures make an easy MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+#end
+
+#newsecondary "Bleeding nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 8192
+
+#nameprefix "Bloody"
+#fatiguepersquare 7
+
+-- not undead or inanimates
+#req spec !& 8
+#req effect != 96
+
+
+#nextspell "Bleeding Secondary mrn"
+
+#descr "This spell is filled with a dark energy that may cause those affected to begin bleeding profusely."
+#details "Affected creatures make an MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+#end
+
+
+#newsecondary "Bleeding damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 8192
+
+-- not undead or inanimates
+#req spec !& 8
+#req effect != 96
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Sanguine"
+#fatiguepersquare 3
+
+#nextspell "Bleeding Secondary mrne damaging"
+
+#descr "This spell is filled with a dark energy that may cause those wounded to begin bleeding profusely."
+#details "Damaged creatures make an easy MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+#end
+
+#newsecondary "Bleeding damaging mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 8192
+
+-- not on damage already
+#ondamage 1
+
+-- not undead or inanimates
+#req spec !& 8
+#req effect != 96
+
+#nameprefix "Bloody"
+#fatiguepersquare 6
+
+#nextspell "Bleeding Secondary mrn damaging"
+
+#descr "This spell is filled with a dark energy that may cause those wounded to begin bleeding profusely."
+#details "Damaged creatures make an MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+
+#end
+
+#newsecondary "Bleeding holy"
+
+-- evo only
+#spelltype 2
+
+#paths 128
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+#req paths == 256
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 8192
+
+-- not undead or inanimates
+#req spec !& 8
+#req effect != 96
+
+#nameprefix "Bloody"
+#fatiguepersquare 6
+
+#nextspell "Bleeding Secondary mrn damaging"
+
+#descr "This spell is filled with a dark energy that may cause those wounded to begin bleeding profusely."
+#details "Damaged creatures make an MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+
+
+#end

@@ -11,7 +11,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of fire!"
@@ -26,7 +26,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of air!"
@@ -41,7 +41,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of water!"
@@ -56,7 +56,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of earth!"
@@ -71,7 +71,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of astral power!"
@@ -86,7 +86,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of necromancy!"
@@ -101,7 +101,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of nature!"
@@ -116,7 +116,7 @@
 #req_enchdom ENCHANTID
 #req_domchance 1
 #req_rare 20
-#req_0popok
+#req_pop0ok
 #req_targorder 4
 #nolog
 #msg "A researcher has suddenly gained deeper knowledge of blood!"

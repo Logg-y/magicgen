@@ -14,8 +14,8 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 97
-#scalefatiguemult 40
+#skipchance 50
+#scalefatiguemult 15
 #details "The elementals are size 4."
 #name 1 "Summon NAMEPREFIX Large Fire %Elemental%"
 #descr 1 "The caster summons forth ARTICLE large fire %elemental%. They will fight for him until the battle ends."
@@ -39,7 +39,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 4."
 #name 1 "Summon NAMEPREFIX Large Fire Elementals"
@@ -61,8 +61,8 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 3
-#fatiguecost 800
+#pathlevel 4
+#fatiguecost 1100
 #schools 1
 #skipchance 99
 #nogeodst 2052

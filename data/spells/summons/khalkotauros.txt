@@ -16,7 +16,7 @@
 #secondarypathchance 90
 
 #skipchance 97
-#scalefatiguemult 80
+#scalefatiguemult 20
 #name 8 "Summon NAMEPREFIX %Khalkotauros%"
 #name 1 "Summon NAMEPREFIX %Khalkotauros%"
 #descr 8 "The caster rapidly constructs ARTICLE %khalkotauros%. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."

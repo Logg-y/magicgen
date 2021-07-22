@@ -93,7 +93,7 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
         words = parsedname.split(" ")
         out = ""
         for pos, word in enumerate(words):
-            if word.lower() not in ["a", "in", "from", "and", "of", "for", "the", "after", "before"] or pos == 0:
+            if word.lower() not in ["a", "in", "from", "and", "of", "for", "the", "after", "before", "to"] or pos == 0:
                 out += word[0].upper() + word[1:]
             else:
                 out += word.lower()
@@ -160,9 +160,13 @@ def adjustnameofspell(parsedname, spell):
 
 
 def attempttomovespellname(spell):
-    utils.spellnames.remove(spell.name)
+    if spell.name in utils.spellnames:
+        utils.spellnames.remove(spell.name)
+    else:
+        print(f"Warning: tried to remove {spell.name} from spell names, but it was not present")
     tmp = replacecurrentqualifier(spell.name)
     if len(tmp) > 35:
+        utils.spellnames.append(spell.name)
         raise NameTooLongException(f"Spell name {tmp} too long")
     spelleffectdict = utils.spellnamesbyeffect[spell.parenteffect]
     print(f"spelleffectdict is {spelleffectdict}")

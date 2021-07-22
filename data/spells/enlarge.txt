@@ -18,20 +18,24 @@
 #sound 31
 #range 10
 #fatiguecost 20
+#skipchance 50
 
 
 #paths 64
-#secondarypaths 1
+#secondarypaths 0
 
 #details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
 
-#namecond effectiveaoe < 1 64 "Enlarge Self"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Enlarge Self"
 
-#namecond2 1 <= effectiveaoe < 600 64 "Group Enlargement"
-#namecond effectiveaoe > 600 64 "Army of Giants"
-#namecond effectiveaoe > 600 64 "Mass Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Group Enlargement"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Army of Giants"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Mass Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of enlargement"
 
 #end
 
@@ -40,6 +44,8 @@
 #damage 2147483648
 #spec 8404992
 #schools 2
+
+#skipchance 50
 
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
@@ -59,17 +65,21 @@
 
 
 #paths 64
-#secondarypaths 1
+#secondarypaths 0
 
 #details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
 
-#namecond effectiveaoe < 1 64 "Enlarge Self"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Enlarge Self"
 
-#namecond2 1 <= effectiveaoe < 600 64 "Group Enlargement"
-#namecond effectiveaoe > 600 64 "Army of Giants"
-#namecond effectiveaoe > 600 64 "Mass Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Group Enlargement"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Army of Giants"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Mass Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of enlargement"
+
 
 #end
 
@@ -94,6 +104,8 @@
 #range 10
 #fatiguecost 20
 
+#skipchance 50
+
 
 #paths 64
 #secondarypaths 0
@@ -102,11 +114,15 @@
 
 #namecond effectiveaoe < 1 64 "Titanic Enlargement"
 
-#namecond2 1 <= effectiveaoe < 600 64 "Group Titanic Enlargement"
-#namecond effectiveaoe > 600 64 "Army of Titans"
-#namecond effectiveaoe > 600 64 "Mass Titanic Enlargement"
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Group Titanic Enlargement"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Army of Titans"
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Mass Titanic Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle. The size changes induced by this spell are radical, turning even an average man into a towering giant."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of greater enlargement"
+
 
 #end
 
@@ -152,9 +168,13 @@
 
 #details "Grants Trample and Greater Enlargement: +2 size, +60% HP, +6 strength, -2 defence, +4 map move. Creatures that are size 4 or larger are only enlarged one stage."
 
-#name 64 "Trampling Juggernaut"
+#name 64 "NAMEPREFIX Trampling Juggernaut"
 #descr 64 "The caster becomes significantly larger than normal, and gains the confidence to crush those who stand in his way."
 #ainocast 1
 #nextspell "Trample Self"
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of the juggernaut"
+
 
 #end

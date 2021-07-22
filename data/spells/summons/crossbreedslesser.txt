@@ -21,7 +21,7 @@
 
 #spelltype 528
 
-#scalerate 0.85
+#scalerate 1
 -- #scalecost 1.0
 #skipchance 97
 #end

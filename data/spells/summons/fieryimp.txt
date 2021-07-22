@@ -23,7 +23,7 @@
 #spelltype 528
 
 #scalerate 1.1
-#scalefatiguemult 15
+--#scalefatiguemult 15
 #end
 
 #neweffect "fieryimp ritual"
@@ -41,7 +41,7 @@
 #secondarypaths 1
 #secondarypathchance 90
 
-#name 128 "Summon NAMEPREFIX Fiery Imps"
+#name 128 "Bind NAMEPREFIX Fiery Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons several fiery imps from Inferno to aid him in battle. These particular imps cannot fly but are surrounded by a shield of flames."
 
 
@@ -49,7 +49,7 @@
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -1.8
 #scalefatiguemult 80
 
 #scalerate 2

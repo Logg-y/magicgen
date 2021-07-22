@@ -1,0 +1,144 @@
+#newsecondary "Shrink nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 4294967296
+
+#nameprefix "Diminishing"
+#fatiguepersquare 4
+
+
+#nextspell "Shrink Secondary mrne"
+
+#descr "Those affected by this spell are affected by strange energy that may permanently shrink them."
+
+#end
+
+#newsecondary "Shrink nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 4294967296
+
+#nameprefix "Shrinking"
+#fatiguepersquare 7
+
+
+#nextspell "Shrink Secondary mrn"
+
+#descr "Those affected by this spell are affected by strange energy that may permanently shrink them."
+#end
+
+
+#newsecondary "Shrink damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 4294967296
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Diminishing"
+#fatiguepersquare 3
+
+#nextspell "Shrink Secondary mrne damaging"
+
+#descr "Those wounded by this spell are affected by strange energy that may permanently shrink them."
+
+#end
+
+#newsecondary "Shrink damaging mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -2
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 4294967296
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Shrinking"
+#fatiguepersquare 6
+
+#nextspell "Shrink Secondary mrn damaging"
+
+#descr "Those wounded by this spell are affected by strange energy that may permanently shrink them."
+
+
+#end

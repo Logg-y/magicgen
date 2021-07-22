@@ -18,11 +18,11 @@
 #skipchance 30
 
 #paths 64
-#secondarypaths 8
+#secondarypaths 0
 
-#name 64 "Fey Bolts"
-#name 64 "Fey Burst"
-#name 64 "Fey Barrage"
+#name 64 "NAMEPREFIX Fey Bolts"
+#name 64 "NAMEPREFIX Fey Burst"
+#name 64 "NAMEPREFIX Fey Barrage"
 #descr 64 "The caster conjures a number of strange fey bolts and sends them flying towards his enemies. Those hit by the bolts will become fatigued if they fail to resist."
 
 #spelltype 18
@@ -31,4 +31,7 @@
 -- #scalecost 0.15
 #pathlevel 2
 #schools 4
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX touch of exhaustion"
 #end

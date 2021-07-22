@@ -23,19 +23,25 @@
 #paths 144
 #secondarypaths 16
 
-#namecond effectiveaoe < 2 16 "Luck"
-#namecond effectiveaoe < 2 128 "Otherworldly Luck"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX Luck"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Otherworldly Luck"
 
-#namecond2 2 <= effectiveaoe < 666 16 "Fortune"
-#namecond2 2 <= effectiveaoe < 666 128 "Otherworldly Fortune"
+#namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Fortune"
+#namecond2 2 <= effectiveaoe < 666 128 "NAMEPREFIX Otherworldly Fortune"
 
-#namecond effectiveaoe == 666 16 "Battle Fortune"
-#namecond effectiveaoe == 666 128 "Otherworldly Fortune"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Battle Fortune"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Otherworldly Fortune"
 
 #details "Luck: 75% chance to negate fatal damage."
 
 #descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 #descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of luck"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of fortune"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of luck"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of fortune"
 
 #end
 
@@ -66,19 +72,25 @@
 #paths 144
 #secondarypaths 16
 
-#namecond effectiveaoe < 2 16 "Luck"
-#namecond effectiveaoe < 2 128 "Otherworldly Luck"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX Luck"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Otherworldly Luck"
 
-#namecond2 2 <= effectiveaoe < 666 16 "Fortune"
-#namecond2 2 <= effectiveaoe < 666 128 "Otherworldly Fortune"
+#namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Fortune"
+#namecond2 2 <= effectiveaoe < 666 128 "NAMEPREFIX Otherworldly Fortune"
 
-#namecond effectiveaoe == 666 16 "Battle Fortune"
-#namecond effectiveaoe == 666 128 "Otherworldly Fortune"
-#namecond effectiveaoe == 666 16 "Will of the Fates"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Battle Fortune"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Otherworldly Fortune"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Will of the Fates"
 
 #details "Luck: 75% chance to negate fatal damage."
 
 #descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 #descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of luck"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of fortune"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of luck"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of fortune"
 
 #end

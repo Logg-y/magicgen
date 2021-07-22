@@ -1,4 +1,4 @@
-#newsecondary "Curse of Stones"
+#newsecondary "Curse of Stones nondamaging mrne"
 
 -- evo only
 #spelltype 2
@@ -7,26 +7,69 @@
 #power 0
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 32
 
+#nameprefix "Weighted"
+#fatiguepersquare 2
 
-#nextspell "Curse of Stones Secondary"
 
-#descr "Residual energy from this spell attempts to burden those affected with the weight of the earth, slowing them and making them quickly become fatigued."
+#nextspell "Curse of Stones Secondary mrne"
+
+#descr "Those affected by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+
+#end
+
+#newsecondary "Curse of Stones nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 32
+
+#nameprefix "Burdening"
+#fatiguepersquare 5
+
+
+#nextspell "Curse of Stones Secondary mrn"
+
+#descr "Those affected by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
+#details "Affected creatures make an MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #end
 
 
-#newsecondary "Curse of Stones damaging"
+#newsecondary "Curse of Stones damaging mrne"
 
 -- evo only
 #spelltype 2
@@ -35,18 +78,71 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
 #offensiveeffect 1
--- holy okay
+#req paths != 256
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 32
 
+#req nonscalingdamage < 40
 
-#nextspell "Curse of Stones Secondary"
+-- not on damage already
+#ondamage 1
 
-#descr "Residual energy from this spell attempts to burden those affected with the weight of the earth, slowing them and making them quickly become fatigued."
+#nameprefix "Weighted"
+#fatiguepersquare 1.6
+
+#nextspell "Curse of Stones Secondary mrne damaging"
+
+#descr "Those wounded by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
+#details "Wounded creatures make an easy MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+
+#end
+
+#newsecondary "Curse of Stones damaging mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 8
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 32
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Burdening"
+#fatiguepersquare 4
+
+#nextspell "Curse of Stones Secondary mrn damaging"
+
+#descr "Those wounded by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
+#details "Wounded creatures make an MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #end

@@ -80,7 +80,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 4
-#fatiguecost 4500
+#fatiguecost 3000
 #schools 1
 #onlyfriendlydst 1
 

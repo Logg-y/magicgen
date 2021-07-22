@@ -6,15 +6,25 @@
 #power -3
 #effect 4000
 
-#aispellmod 300
+#aispellmod 175
 
 #givecloudsfx 1
 
 #req effect != 2
 #req effect != 3
 #req effect != 103
+#req effect != 104
+#req effect != 105
+#req effect != 106
+#req effect != 107
+#req effect != 109
+#req effect != 122
+#req effect != 139
+#req effect != 142
 #req effect != 74
 #req effect != 73
+#req effect != 75
+#req effect != 96
 #req effect != 109
 -- chain lightning
 #req effect != 134
@@ -23,6 +33,10 @@
 #req effect != 27
 -- poison
 #req effect != 7
+#req effect != 24
+#req effect != 32
+#req effect != 33
+#req effect != 56
 #req range > 0
 
 #skipchance 10

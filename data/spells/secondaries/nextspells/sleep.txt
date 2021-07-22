@@ -1,4 +1,4 @@
-#neweffect "Additional Sleep"
+#neweffect "Sleep Secondary mrn"
 #effect 11
 #damage 1024
 #spec 545935488
@@ -9,7 +9,43 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10016
+#sound 29
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Sleep"
+#name 2 "$Additional$ Sleep"
+#name 4 "$Additional$ Sleep"
+#name 8 "$Additional$ Sleep"
+#name 16 "$Additional$ Sleep"
+#name 32 "$Additional$ Sleep"
+#name 64 "$Additional$ Sleep"
+#name 128 "$Additional$ Sleep"
+#name 256 "$Additional$ Sleep"
+
+#end
+
+#neweffect "Sleep Secondary mrne"
+#effect 11
+#damage 1024
+#spec 562708608
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10016
 #sound 29
@@ -33,6 +69,79 @@
 #end
 
 
+
+#neweffect "Sleep Secondary mrn damaging"
+#effect 11
+#damage 1024
+#spec 545935488
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10016
+#sound 29
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Sleep"
+#name 2 "$Additional$ Sleep"
+#name 4 "$Additional$ Sleep"
+#name 8 "$Additional$ Sleep"
+#name 16 "$Additional$ Sleep"
+#name 32 "$Additional$ Sleep"
+#name 64 "$Additional$ Sleep"
+#name 128 "$Additional$ Sleep"
+#name 256 "$Additional$ Sleep"
+
+#end
+
+#neweffect "Sleep Secondary mrne damaging"
+#effect 11
+#damage 1024
+#spec 562708608
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10016
+#sound 29
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Sleep"
+#name 2 "$Additional$ Sleep"
+#name 4 "$Additional$ Sleep"
+#name 8 "$Additional$ Sleep"
+#name 16 "$Additional$ Sleep"
+#name 32 "$Additional$ Sleep"
+#name 64 "$Additional$ Sleep"
+#name 128 "$Additional$ Sleep"
+#name 256 "$Additional$ Sleep"
+
+#end
+
+
+
 #neweffect "Additional Sleep Smite"
 #effect 11
 #damage 1024
@@ -44,7 +153,8 @@
 #spelltype 2
 #aoe 0
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10016
 #sound 29

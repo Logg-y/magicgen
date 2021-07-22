@@ -3,11 +3,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.5
 
 #unitmod "Summon Regen"
 #descr "The summoned %creature% %is% filled with magic that rapidly closes their wounds."
@@ -21,11 +21,11 @@
 #anysummon 1
 
 #paths 64
-#power -4
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.4
+#mult fatiguecost 2
 
 #unitmod "Summon Regen 30"
 #descr "The summoned %creature% %is% filled with magic that very rapidly closes their wounds."

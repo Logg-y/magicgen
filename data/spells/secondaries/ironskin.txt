@@ -1,0 +1,61 @@
+#newsecondary "Ironskin Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req damage != 65536
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Irontouched"
+#fatiguepersquare 12
+
+
+#nextspell "Ironskin Secondary mrn"
+
+#descr "This spell may also turn the skin of those it affects to iron, making them more resistant to physical damage. This does however make them more vulnerable to shocks."
+#details "Affected creatures make an MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
+
+#end
+
+#newsecondary "Ironskin Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16
+#req damage != 65536
+#req damage != 268435456
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Steeled"
+#fatiguepersquare 6
+
+
+#nextspell "Ironskin Secondary mrne"
+
+#descr "This spell may also turn the skin of those it affects to iron, making them more resistant to physical damage. This does however make them more vulnerable to shocks."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
+
+#end

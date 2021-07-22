@@ -27,13 +27,18 @@
 
 #details "Protective Force 20: 50% chance to add 20 protection when hit by attacks."
 
-#name 2 "Protective Force"
-#name 4 "Ice Shield"
-#name 8 "Rock Shield"
+#name 2 "NAMEPREFIX Protective Force"
+#name 4 "NAMEPREFIX Ice Shield"
+#name 8 "NAMEPREFIX Rock Shield"
 
 #descr 2 "The caster surrounds SUBJECT with swirling winds that carry various debris. The debris partially blocks half of attacks."
 #descr 4 "The caster surrounds SUBJECT with swirling winds that carry a large chunk of ice. The ice partially blocks half of attacks."
 #descr 8 "The caster surrounds SUBJECT with swirling winds that carry a large chunk of rock. The rock partially blocks half of attacks."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of swirling winds"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of swirling ice"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of swirling rocks"
 
 #end
 

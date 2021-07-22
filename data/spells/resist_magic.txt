@@ -23,13 +23,13 @@
 #paths 15
 #secondarypaths 0
 
-#namecond effectiveaoe == 1 16 "Resist Magic"
-#name 1 "Burning Will"
-#name 2 "Clarity of Thought"
-#name 4 "Swift Resolve"
-#name 8 "Iron Will"
+#namecond effectiveaoe == 1 16 "NAMEPREFIX Resist Magic"
+#name 1 "NAMEPREFIX Burning Will"
+#name 2 "NAMEPREFIX Clarity of Thought"
+#name 4 "NAMEPREFIX Swift Resolve"
+#name 8 "NAMEPREFIX Iron Will"
 
-#namecond effectiveaoe <= 666 16 "Antimagic"
+#namecond effectiveaoe <= 666 16 "NAMEPREFIX Antimagic"
 
 #details "+4 magic resistance."
 
@@ -39,6 +39,16 @@
 #descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery will"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of clear thought"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of swift resolve"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron will"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic resistance"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead resilience"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of natural resilience"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal resilience"
 
 #end
 
@@ -67,14 +77,14 @@
 #paths 240
 #secondarypaths 0
 
-#namecond effectiveaoe == 1 16 "Resist Magic"
-#name 1 "Burning Will"
-#name 2 "Clarity of Thought"
-#name 4 "Swift Resolve"
-#name 8 "Iron Will"
-#name 32 "Resilience of Undeath"
-#name 64 "Natural Resistance"
-#name 128 "Infernal Resistance"
+#namecond effectiveaoe == 1 16 "NAMEPREFIX Resist Magic"
+#name 1 "NAMEPREFIX Burning Will"
+#name 2 "NAMEPREFIX Clarity of Thought"
+#name 4 "NAMEPREFIX Swift Resolve"
+#name 8 "NAMEPREFIX Iron Will"
+#name 32 "NAMEPREFIX Resilience of Undeath"
+#name 64 "NAMEPREFIX Natural Resistance"
+#name 128 "NAMEPREFIX Infernal Resistance"
 
 #namecond effectiveaoe <= 666 16 "Antimagic"
 
@@ -88,6 +98,17 @@
 #descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 64 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 128 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery will"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of clear thought"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of swift resolve"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron will"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic resistance"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead resilience"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of natural resilience"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal resilience"
+
 
 #end
 
@@ -116,11 +137,11 @@
 #paths 15
 #secondarypaths 0
 
-#name 16 "Antimagic"
-#name 1 "Incendiary Will"
-#name 2 "Perfection of Thought"
-#name 4 "Crystalline Resolve"
-#name 8 "Steel Will"
+#name 16 "NAMEPREFIX Antimagic"
+#name 1 "NAMEPREFIX Incendiary Will"
+#name 2 "NAMEPREFIX Perfection of Thought"
+#name 4 "NAMEPREFIX Crystalline Resolve"
+#name 8 "NAMEPREFIX Steel Will"
 
 #details "+4 magic resistance."
 
@@ -129,6 +150,17 @@
 #descr 4 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 8 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 16 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery will"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of clear thought"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of swift resolve"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron will"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic resistance"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead resilience"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of natural resilience"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal resilience"
+
 
 #end
 
@@ -157,15 +189,15 @@
 #paths 240
 #secondarypaths 0
 
-#name 16 "Antimagic"
-#name 1 "Incendiary Will"
-#name 2 "Perfection of Thought"
-#name 4 "Crystalline Resolve"
-#name 8 "Steel Will"
+#name 16 "NAMEPREFIX Antimagic"
+#name 1 "NAMEPREFIX Incendiary Will"
+#name 2 "NAMEPREFIX Perfection of Thought"
+#name 4 "NAMEPREFIX Crystalline Resolve"
+#name 8 "NAMEPREFIX Steel Will"
 
-#name 32 "Resilience of Undeath"
-#name 64 "Natural Resistance"
-#name 128 "Infernal Resistance"
+#name 32 "NAMEPREFIX Resilience of Undeath"
+#name 64 "NAMEPREFIX Natural Resistance"
+#name 128 "NAMEPREFIX Infernal Resistance"
 
 #details "+4 magic resistance."
 
@@ -177,6 +209,17 @@
 #descr 32 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 64 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
 #descr 128 "The minds of troops in a SIZE area are strengthened with magic, making them more resistant to certain spells."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery will"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of clear thought"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of swift resolve"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron will"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic resistance"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead resilience"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of natural resilience"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal resilience"
+
 
 #end
 

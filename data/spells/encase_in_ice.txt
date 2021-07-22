@@ -22,22 +22,32 @@
 #paths 134
 #secondarypaths 4
 
-#namecond effectiveaoe < 660 1 "Encase in Ice"
-#namecond effectiveaoe < 660 2 "Encase in Ice"
-#namecond effectiveaoe < 660 4 "Encase in Ice"
-#namecond effectiveaoe < 660 128 "Encase in Ice"
+#pathskipchance 2 95
 
-#namecond effectiveaoe > 660 1 "Frozen Prison"
-#namecond effectiveaoe > 660 2 "Frozen Prison"
-#namecond effectiveaoe > 660 4 "Frozen Prison"
-#namecond effectiveaoe > 660 128 "Prison from Kokytos"
+#namecond effectiveaoe < 660 1 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 2 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 4 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX Encase in Ice"
 
-#details "Targets are encased in ice for 4 points. Each point grants +1 prot. Str roll vs 12 reduces the number of encase points. Targets suffer 5 cold fatigue damage each turn while encased."
+#namecond effectiveaoe > 660 1 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 2 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 4 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 128 "NAMEPREFIX Prison from Kokytos"
+
+#details "Targets are encased in ice for 4 points. Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
 
 #descr 1 "Heat is pulled out of the air around SUBJECT. This causes rapid condensation followed by freezing, resulting in those affected becoming trapped in a cage of ice."
 #descr 2 "Heat is pulled out of the air around SUBJECT. This causes rapid condensation followed by freezing, resulting in those affected becoming trapped in a cage of ice."
 #descr 4 "Ice forms around SUBJECT, resulting in those affected becoming trapped in a cage of ice."
 #descr 128 "$BLOOD_INTRO$, the caster brings the cold of Kokytos to the air around SUBJECT, resulting in those affected becoming trapped in a cage of ice."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond range < 10 2 "NAMEPREFIX touch of icy imprisonment"
+#namecond range < 10 4 "NAMEPREFIX touch of icy imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of icy imprisonment"
 
 #end
 
@@ -61,25 +71,36 @@
 #fatiguecost 80
 #range 5015
 
+#pathskipchance 2 95
+
 -- fire + air + water + blood
 #paths 134
 #secondarypaths 4
 
-#namecond effectiveaoe < 660 1 "Encase in Ice"
-#namecond effectiveaoe < 660 2 "Encase in Ice"
-#namecond effectiveaoe < 660 4 "Encase in Ice"
-#namecond effectiveaoe < 660 128 "Encase in Ice"
+#namecond effectiveaoe < 660 1 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 2 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 4 "NAMEPREFIX Encase in Ice"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX Encase in Ice"
 
-#namecond effectiveaoe > 660 1 "Frozen Prison"
-#namecond effectiveaoe > 660 2 "Frozen Prison"
-#namecond effectiveaoe > 660 4 "Frozen Prison"
-#namecond effectiveaoe > 660 128 "Prison from Kokytos"
+#namecond effectiveaoe > 660 1 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 2 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 4 "NAMEPREFIX Frozen Prison"
+#namecond effectiveaoe > 660 128 "NAMEPREFIX Prison from Kokytos"
 
-#details "Targets are encased in ice for 10 points. Each point grants +1 prot. Str roll vs 12 reduces the number of encase points. Targets suffer 5 cold fatigue damage each turn while encased."
+#details "Targets are encased in ice for 10 points. Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
 
 #descr 1 "Heat is pulled out of the air around SUBJECT. This causes rapid condensation followed by freezing, resulting in those affected becoming trapped in a cage of ice."
 #descr 2 "Heat is pulled out of the air around SUBJECT. This causes rapid condensation followed by freezing, resulting in those affected becoming trapped in a cage of ice."
 #descr 4 "Ice forms around SUBJECT, resulting in those affected becoming trapped in a cage of ice."
 #descr 128 "$BLOOD_INTRO$, the caster brings the cold of Kokytos to the air around SUBJECT, resulting in those affected becoming trapped in a cage of ice."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of icy imprisonment"
+#namecond range < 10 2 "NAMEPREFIX touch of icy imprisonment"
+#namecond range < 10 4 "NAMEPREFIX touch of icy imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of icy imprisonment"
+
 
 #end

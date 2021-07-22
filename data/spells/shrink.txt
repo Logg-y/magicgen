@@ -19,15 +19,21 @@
 #fatiguecost 15
 #precision 4
 #range 5025
+#skipchance 50
 
-#paths 64
+#paths 192
 #secondarypaths 64
 #secondarypathchance 0
 
-#name 64 "Shrink"
+#name 64 "NAMEPREFIX Shrink"
+#name 128 "NAMEPREFIX Shrink"
 #descr 64 "This spell causes SUBJECT to become permanently shrunken."
+#descr 128 "$BLOOD_INTRO$, the caster causes SUBJECT to become permanently shrunken."
 #details "Shrunken: -1 Size, -30% HP, -3 Strength, -2 Map Move, +1 Defence Skill."
 
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of shrinkage"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 
 
 #end
@@ -55,12 +61,19 @@
 #fatiguecost 200
 #precision 100
 #range 100
+#skipchance 50
 
-#paths 128
-#secondarypaths 128
+#paths 192
+#secondarypaths 64
 #secondarypathchance 0
 
-#name 128 "Mass Shrinkage"
+#name 64 "NAMEPREFIX Mass Shrinkage"
+#name 128 "NAMEPREFIX Mass Shrinkage"
+#descr 64 "The caster attempts to cause all creatures on the battlefield to become permenantly shrunken."
 #descr 128 "The caster attempts to cause all creatures on the battlefield to become permenantly shrunken."
 #details "Shrunken: -1 Size, -30% HP, -3 Strength, -2 Map Move, +1 Defence Skill."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of shrinkage"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 #end

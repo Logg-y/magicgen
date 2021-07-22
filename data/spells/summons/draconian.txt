@@ -8,14 +8,14 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 50
-#scalefatiguemult 20
+--#scalefatiguemult 20
 #sound 31
 #schools 1
 
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Draconian%"
 #descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 50
 
 #name 2 "Summon NAMEPREFIX %Draconian%"
 #descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."

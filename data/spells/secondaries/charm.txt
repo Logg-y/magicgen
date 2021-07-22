@@ -1,0 +1,77 @@
+#newsecondary "charm nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -3
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Charming"
+#fatiguepersquare 10
+
+
+#nextspell "charm Secondary mrne"
+
+#descr "This spell may additionally invade the mind of those it affects, causing them to shift to the caster's allegiance."
+#details "Affected creatures make an easy MR check. Those that fail to resist are charmed."
+
+#end
+
+
+#newsecondary "charm damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#req effect != 4	    -- fear
+
+#nameprefix "Charming"
+#fatiguepersquare 6
+
+#nextspell "charm Secondary mrne damaging"
+
+#descr "This spell may additionally invade the mind of those it wounds, causing them to shift to the caster's allegiance."
+#details "Wounded creatures make an easy MR check. Those that fail to resist are charmed."
+
+#end
+
+

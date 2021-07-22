@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.1
 
 #unitmod "Summon Weakpoison"
 #descr "The summoned %creature% %is% able to weakly poison enemies with attacks."
@@ -24,7 +24,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.3
 
 #unitmod "Summon Strongpoison"
 #descr "The summoned %creature% %is% able to poison enemies with attacks."
@@ -36,11 +36,11 @@
 #anysummon 1
 
 #paths 64
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.5
 
 #unitmod "Summon Deathpoison"
 #descr "The summoned %creature% %is% able to strongly poison enemies with attacks."
@@ -69,11 +69,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Weakparapoison"
 #descr "The summoned %creature% %is% able to poison enemies with attacks."
@@ -85,11 +85,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 
 #unitmod "Summon Strongparapoison"
 #descr "The summoned %creature% %is% able to strongly poison enemies with attacks. This poison is magical in nature, and may be resisted like other forms of magic."

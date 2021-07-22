@@ -3,15 +3,16 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
-#magicpathvaluescaling 0.05
+#mult fatiguecost 1.3
+#magicpathvaluescaling 0.3
 
 #unitmod "Summon Raiseonkill"
 #descr "The summoned %creature% may reanimate living creatures as soulless."
+#details "The creatures gain 50% reanimation on all creatures they kill."
 
 #end
 
@@ -20,14 +21,15 @@
 #anysummon 1
 
 #paths 32
-#power -4
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.1
-#magicpathvaluescaling 0.05
+#mult fatiguecost 1.8
+#magicpathvaluescaling 0.3
 
 #unitmod "Summon Raiseonkill 2"
 #descr "The summoned %creature% will reanimate living creatures it kills as soulless."
+#details "The creatures gain 100% reanimation on all creatures they kill."
 
 #end

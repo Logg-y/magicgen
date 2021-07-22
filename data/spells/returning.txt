@@ -22,18 +22,22 @@
 #paths 16
 #secondarypaths 16
 
-#namecond effectiveaoe == 0 16 "Returning"
-#namecond effectiveaoe == 1 16 "Teleportation"
+#namecond effectiveaoe == 0 16 "NAMEPREFIX Returning"
+#namecond effectiveaoe == 1 16 "NAMEPREFIX Teleportation"
 
-#namecond2 1 < effectiveaoe < 30 16 "Group Teleportation"
-#namecond effectiveaoe > 600 16 "Vortex of Returning"
+#namecond2 1 < effectiveaoe < 30 16 "NAMEPREFIX Group Teleportation"
+#namecond effectiveaoe > 600 16 "NAMEPREFIX Vortex of Returning"
 
 #descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
 #details "The chance of being lost in the void is 7%."
 
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of returning"
+
+
 #end
 
-#neweffect "Returning Other"
+#neweffect "Returning Offensive"
 #effect 15
 #damage 1
 #spec 17592194711680
@@ -57,9 +61,16 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Forced Returning"
+#name 16 "NAMEPREFIX Forced Returning"
 
 #descr 16 "The caster attempts to force SUBJECT into a rift in space that takes them back to their capital. The travel is instantaneous, but there is a chance that individuals may become lost in the Void. This spell is certain death if the capital of the %victim% is not under their control."
 #details "Each victim is allowed a difficult MR check to avoid the effect. The chance of being lost in the void is 7%."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of forced returning"
+#namecond range < 10 16 "NAMEPREFIX touch of forced recall"
+
+
+
 
 #end

@@ -1,51 +1,70 @@
-#newsecondary "Fire"
+#newsecondary "10AP fire nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 1
-#power 0
+#power -1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 
-#nextspell "Additional Fire"
+#nameprefix "Scorching"
+#fatiguepersquare 4
 
-#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+
+#nextspell "10AP fire Secondary mrne"
+
+#descr "This spell is infused with fire magic that may be discharged on those it affects, severely burning them."
 
 #end
 
-#newsecondary "Fire damaging"
+#newsecondary "10AP fire nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 1
-#power 0
+#power -2
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
--- not ritual
-#req spelltype !& 4
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
-#nextspell "Additional Fire"
+-- not ritual
+#req spelltype !& 4
 
-#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+#nameprefix "Charring"
+#fatiguepersquare 8
+
+
+#nextspell "10AP fire Secondary mrn"
+
+#descr "This spell is infused with fire magic that may be discharged on those it affects, severely burning them."
 
 #end
 
-
-#newsecondary "Fire smite"
+#newsecondary "10AP fire damaging mrne"
 
 -- evo only
 #spelltype 2
@@ -54,15 +73,227 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req aoe == 0
-#req paths == 256
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
 
 -- not ritual
 #req spelltype !& 4
 
-#nextspell "Additional Fire Holy"
+#req nonscalingdamage < 40
 
-#descr "Residual energy from this spell causes a transient increase in temperature inside the bodies of those affected."
+-- not on damage already
+#ondamage 1
+
+-- not fire damage
+#req spec !& 32
+
+#nameprefix "Scorching"
+#fatiguepersquare 3
+
+#nextspell "10AP fire Secondary mrne damaging"
+
+#descr "This spell is infused with fire magic that may be discharged on those it wounds, severely burning them."
 
 #end
+
+#newsecondary "10AP fire damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy ok
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not fire damage
+#req spec !& 32
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Charring"
+#fatiguepersquare 6.5
+
+#nextspell "10AP fire Secondary mrn damaging"
+
+#descr "This spell is infused with fire magic that may be discharged on those it wounds, severely burning them."
+
+#end
+
+
+------
+
+
+#newsecondary "4 capped fire nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Burning"
+#fatiguepersquare 3
+
+
+#nextspell "4 capped fire Secondary mrne"
+
+#descr "This spell is infused with fire magic that may be discharged on those it affects, burning them from the inside."
+
+#end
+
+#newsecondary "4 capped fire nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Incinerating"
+#fatiguepersquare 6
+
+
+#nextspell "4 capped fire Secondary mrn"
+
+#descr "This spell is infused with fire magic that may be discharged on those it affects, burning them from the inside."
+
+#end
+
+#newsecondary "4 capped fire damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+-- not fire damage
+#req spec !& 32
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Burning"
+#fatiguepersquare 2
+
+#nextspell "4 capped fire Secondary mrne damaging"
+
+#descr "This spell is infused with fire magic that may be discharged on those it wounds, burning them from the inside."
+
+#end
+
+#newsecondary "4 capped fire damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not fire damage
+#req spec !& 32
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Incinerating"
+#fatiguepersquare 4.5
+
+#nextspell "4 capped fire Secondary mrn damaging"
+
+#descr "This spell is infused with fire magic that may be discharged on those it wounds, burning them from the inside."
+
+#end
+
+
+
+

@@ -34,8 +34,8 @@
 #secondarypaths 5
 #secondarypathchance 100
 
-#name 1 "Acid %Bolt%"
-#name 4 "Acid %Bolt%"
+#name 1 "NAMEPREFIX Acid %Bolt%"
+#name 4 "NAMEPREFIX Acid %Bolt%"
 
 #descr 1 "A gush of highly corrosive fluid flows away from caster. The acid burns the armor of the target as well as his, her or its flesh."
 #descr 4 "A gush of highly corrosive fluid flows away from caster. The acid burns the armor of the target as well as his, her or its flesh."
@@ -47,6 +47,12 @@
 #maxpower 14
 #scalerate 1
 #pathlevel 3
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Acid Touch"
+#namecond range < 10 4 "NAMEPREFIX Acid Touch"
+#descrcond range < 10 1 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
+#descrcond range < 10 4 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
 #end
 
 #neweffect "Acid Evo Instant"
@@ -67,8 +73,8 @@
 #secondarypaths 5
 #secondarypathchance 100
 
-#name 1 "Acid Rain"
-#name 4 "Acid Rain"
+#name 1 "NAMEPREFIX Acid Rain"
+#name 4 "NAMEPREFIX Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
@@ -78,6 +84,12 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Acid Burst"
+#namecond range < 10 4 "NAMEPREFIX Acid Burst"
+#descrcond range < 10 1 "A gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
+#descrcond range < 10 4 "A gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
 #end
 
 
@@ -100,8 +112,8 @@
 #secondarypaths 5
 #secondarypathchance 100
 
-#name 1 "Acid Rain"
-#name 4 "Acid Rain"
+#name 1 "NAMEPREFIX Acid Rain"
+#name 4 "NAMEPREFIX Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
@@ -132,8 +144,8 @@
 #secondarypaths 5
 #secondarypathchance 100
 
-#name 1 "Acid Rain"
-#name 4 "Acid Rain"
+#name 1 "NAMEPREFIX Acid Rain"
+#name 4 "NAMEPREFIX Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
@@ -164,8 +176,8 @@
 #secondarypaths 5
 #secondarypathchance 100
 
-#name 1 "Acid Rain"
-#name 4 "Acid Rain"
+#name 1 "NAMEPREFIX Acid Rain"
+#name 4 "NAMEPREFIX Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."

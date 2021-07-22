@@ -1,0 +1,57 @@
+#newsecondary "Morale Boost Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 65
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 17
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Courageous"
+#fatiguepersquare 1
+
+
+#nextspell "Morale Boost Secondary mrn"
+
+#descr "This spell may also briefly lift the spirits of those it affects."
+#details "Affected creatures make an MR check. Those that fail to resist gain +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
+
+#end
+
+#newsecondary "Morale Boost Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 65
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 17
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Inspiring"
+#fatiguepersquare 0.5
+
+
+#nextspell "Morale Boost Secondary mrne"
+
+#descr "This spell may also briefly lift the spirits of those it affects."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
+
+#end

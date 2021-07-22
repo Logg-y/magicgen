@@ -1,0 +1,136 @@
+
+#neweffect "fire fatigue Secondary mrn"
+#effect 3
+#damage 12
+#spec 4256
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Heat"
+#name 2 "$Additional$ Heat"
+#name 4 "$Additional$ Heat"
+#name 8 "$Additional$ Heat"
+#name 16 "$Additional$ Heat"
+#name 32 "$Additional$ Heat"
+#name 64 "$Additional$ Heat"
+#name 128 "$Additional$ Heat"
+#name 256 "$Additional$ Heat"
+
+#end
+
+#neweffect "fire fatigue Secondary mrne"
+#effect 3
+#damage 12
+#spec 16777376
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Heat"
+#name 2 "$Additional$ Heat"
+#name 4 "$Additional$ Heat"
+#name 8 "$Additional$ Heat"
+#name 16 "$Additional$ Heat"
+#name 32 "$Additional$ Heat"
+#name 64 "$Additional$ Heat"
+#name 128 "$Additional$ Heat"
+#name 256 "$Additional$ Heat"
+
+#end
+
+#neweffect "fire fatigue Secondary mrn damaging"
+#effect 3
+#damage 12
+#spec 4256
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Heat"
+#name 2 "$Additional$ Heat"
+#name 4 "$Additional$ Heat"
+#name 8 "$Additional$ Heat"
+#name 16 "$Additional$ Heat"
+#name 32 "$Additional$ Heat"
+#name 64 "$Additional$ Heat"
+#name 128 "$Additional$ Heat"
+#name 256 "$Additional$ Heat"
+
+#end
+
+#neweffect "fire fatigue Secondary mrne damaging"
+#effect 3
+#damage 12
+#spec 16777376
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10203
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ Heat"
+#name 2 "$Additional$ Heat"
+#name 4 "$Additional$ Heat"
+#name 8 "$Additional$ Heat"
+#name 16 "$Additional$ Heat"
+#name 32 "$Additional$ Heat"
+#name 64 "$Additional$ Heat"
+#name 128 "$Additional$ Heat"
+#name 256 "$Additional$ Heat"
+
+#end

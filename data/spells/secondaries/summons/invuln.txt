@@ -3,7 +3,7 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -20,7 +20,7 @@
 #anysummon 1
 
 #paths 32
-#power -5
+#power -4
 
 -- not montag
 #req damage > 0

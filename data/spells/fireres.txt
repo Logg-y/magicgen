@@ -25,14 +25,20 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Resist Fire"
-#name 4 "Resist Fire"
-#name 128 "Resist Fire"
+#name 1 "NAMEPREFIX Resist Fire"
+#name 4 "NAMEPREFIX Resist Fire"
+#name 128 "NAMEPREFIX Resist Fire"
 #descr 1 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 4 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 
 #details "Grants +5 fire resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of cooling"
 
 #end
 
@@ -64,12 +70,18 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Fire Fend"
-#name 4 "Inner Chill"
-#name 128 "Fire Fend"
+#name 1 "NAMEPREFIX Fire Fend"
+#name 4 "NAMEPREFIX Inner Chill"
+#name 128 "NAMEPREFIX Fire Fend"
 #descr 1 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 4 "SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to fire and heat effects. This also causes affected units to be extinguished faster if set on fire."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of cooling"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of cooling"
 
 #details "Grants +5 fire resistance."
 
@@ -102,14 +114,20 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Protection from Fire"
-#name 4 "Protection from Fire"
-#name 128 "Protection from Fire"
+#name 1 "NAMEPREFIX Protection from Fire"
+#name 4 "NAMEPREFIX Protection from Fire"
+#name 128 "NAMEPREFIX Protection from Fire"
 #descr 1 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 4 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 
 #details "Grants +10 fire resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 4 ""NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 32 "NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 128 "NAMEPREFIX extinguishing $mist$"
 
 #end
 
@@ -141,14 +159,20 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Incendiary Blessing"
-#name 4 "Warriors of Niefelheim"
-#name 128 "Blessing of Inferno"
+#name 1 "NAMEPREFIX Incendiary Blessing"
+#name 4 "NAMEPREFIX Warriors of Niefelheim"
+#name 128 "NAMEPREFIX Blessing of Inferno"
 #descr 1 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 4 "SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 
 #details "Grants +10 fire resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 4 ""NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 32 "NAMEPREFIX extinguishing $mist$"
+#namecond effect > 1000 128 "NAMEPREFIX extinguishing $mist$"
 
 #end
 
@@ -180,13 +204,19 @@
 #paths 133
 #secondarypaths 0
 
-#name 1 "Fire Warding"
-#name 4 "Fire Warding"
-#name 128 "Fire Warding"
+#name 1 "NAMEPREFIX Fire Warding"
+#name 4 "NAMEPREFIX Fire Warding"
+#name 128 "NAMEPREFIX Fire Warding"
 #descr 1 "SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 4 "SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made extremely resistant to fire and heat effects. This also causes affected units to be extinguished much faster if set on fire."
 
 #details "Grants +15 fire resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX fireproof $mist$"
+#namecond effect > 1000 4 ""NAMEPREFIX fireproof $mist$"
+#namecond effect > 1000 32 "NAMEPREFIX fireproof $mist$"
+#namecond effect > 1000 128 "NAMEPREFIX fireproof $mist$"
 
 #end

@@ -9,7 +9,8 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10251
 #sound 31

@@ -17,7 +17,7 @@ modifier_params_int = ["rarity", "loc", "gold", "res", "level", "decunrest", "su
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "makedummymonster",
                        "effectnumberforunits", "com", "mon", "summon", "summonlvl2", "summonlvl3", "summonlvl4",
                        "wallcom", "wallunit", "wallmult", "makebattledummymonster"]
-modifier_params_str = ["selectunitmod"]
+modifier_params_str = ["selectunitmod", "unitmodlist"]
 modifier_params_float = []
 
 

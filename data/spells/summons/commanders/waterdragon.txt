@@ -75,7 +75,7 @@
 #nogeodst 2052
 #newunit "Dragon Water"
 
-#skipchance 99
+#skipchance 97
 
 #paths 4
 #secondarypaths 4

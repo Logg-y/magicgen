@@ -23,14 +23,18 @@
 
 #details "Grants +4 strength."
 
-#namecond effectiveaoe < 1 8 "$Strength$ of the Earth"
-#namecond effectiveaoe < 1 128 "Infernal $Strength$"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX $Strength$ of the Earth"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Infernal $Strength$"
 
-#namecond effectiveaoe >= 1 8 "Earthen $Strength$"
-#namecond effectiveaoe >= 1 128 "Infernal $Strength$"
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Earthen $Strength$"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Infernal $Strength$"
 
 #descr 8 "SUBJECT receives increased strength."
 #descr 128 "$BLOOD_INTRO$, SUBJECT receives demonic strength."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of earthen might"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
 #end
 
@@ -61,11 +65,15 @@
 
 #details "Grants +4 strength."
 
-#name 8 "Army of Might"
-#name 128 "Rush of Strength"
+#name 8 "NAMEPREFIX Army of Might"
+#name 128 "NAMEPREFIX Rush of Strength"
 
 #descr 8 "SUBJECT receives increased strength."
 #descr 128 "$BLOOD_INTRO$, SUBJECT receives demonic strength."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of earthen might"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
 #end
 

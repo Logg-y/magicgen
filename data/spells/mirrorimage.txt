@@ -22,16 +22,20 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe <= 1 2 "Mirror Image"
-#namecond effectiveaoe <= 1 2 "$Illusory$ Images"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX Mirror Image"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX $Illusory$ Images"
 
-#namecond2 1 < effectiveaoe < 666 2 "$Illusory$ Soldiers"
+#namecond2 1 < effectiveaoe < 666 2 "NAMEPREFIX $Illusory$ Soldiers"
 
-#namecond effectiveaoe == 666 2 "$Illusory$ Army"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX $Illusory$ Army"
 
 #details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
 
 #descr 2 "$Illusory$ images are of SUBJECT are created. The additional images are distracting and may take hits in place of PRONOUN real %body%."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of illusions"
+
 
 #end
 
@@ -61,16 +65,18 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe <= 1 2 "Mirror Image"
-#namecond effectiveaoe <= 1 2 "$Illusory$ Images"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX Mirror Image"
+#namecond effectiveaoe <= 1 2 "NAMEPREFIX $Illusory$ Images"
 
-#namecond2 1 < effectiveaoe < 666 2 "$Illusory$ Soldiers"
+#namecond2 1 < effectiveaoe < 666 2 "NAMEPREFIX $Illusory$ Soldiers"
 
-#namecond effectiveaoe == 666 2 "$Illusory$ Army"
+#namecond effectiveaoe == 666 2 "NAMEPREFIX $Illusory$ Army"
 
 #details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
 
 #descr 2 "$Illusory$ images are of SUBJECT are created. The additional images are distracting and may take hits in place of PRONOUN real %body%."
+
+
 
 #end
 

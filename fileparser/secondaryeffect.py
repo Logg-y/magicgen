@@ -8,9 +8,11 @@ from Services.utils import secondaries
 
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",
-                        "fatiguecostpereffect", "anysummon", "offensiveeffect"]
+                        "fatiguecostpereffect", "anysummon", "offensiveeffect", "reqdamagingeffect", "spec", "ondamage",
+                        "aispellmod", "requiredresearchlevel"]
 secondary_params_str = ["nextspell", "unitmod", "details"]
-secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"]
+secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"
+                          , "fatiguepersquare"]
 
 
 def readSecondaryFile(fp):
@@ -99,6 +101,13 @@ def readSecondaryFile(fp):
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #descr")
                     curreff.descrs.append(m.groups()[0])
+                    continue
+
+                if line.startswith("#nameprefix"):
+                    m = re.match('#nameprefix\\W+"(.*)"', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #nameprefix")
+                    curreff.nameprefixes.append(m.groups()[0])
                     continue
 
                 if line.startswith("#req"):

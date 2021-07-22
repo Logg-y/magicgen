@@ -27,8 +27,11 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "Drain Life"
+#name 32 "NAMEPREFIX Drain Life"
 #descr 32 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX Leeching Touch"
 
 
 #end
@@ -62,8 +65,12 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "Drain Life"
+#name 32 "NAMEPREFIX Drain Life"
 #descr 32 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX Leeching Touch"
+
 
 
 #end
@@ -97,8 +104,12 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Leech Life"
+#name 128 "NAMEPREFIX Leech Life"
 #descr 128 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Leeching Touch"
+
 
 
 #end
@@ -132,8 +143,11 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Leech Life"
+#name 128 "NAMEPREFIX Leech Life"
 #descr 128 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Leeching Touch"
 
 
 #end
@@ -167,7 +181,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "Drain Life"
+#name 32 "NAMEPREFIX Drain Life"
 #descr 32 "The caster drains the life force of everyone on the battlefield, adding it to his own health and endurance."
 
 
@@ -202,7 +216,7 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "Bloodletting"
+#name 128 "NAMEPREFIX Bloodletting"
 #descr 128 "With this arduous spell, the mage tries to drain blood from everyone in the vicinity. All drained blood will be added to the mage's life force."
 
 
@@ -240,8 +254,11 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "Consume %Soul%"
-#descr 32 "The caster attempts to consume the %soul% of SUBJECT. Those that fail die permanently, even for immortals and those employing other means of cheating death."
+#name 32 "NAMEPREFIX Consume %Soul%"
+#descr 32 "The caster attempts to consume the %soul% of SUBJECT. Those that fail to resist die permanently, even for immortals and those employing other means of cheating death."
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX Souldraining Touch"
 
 
 #end

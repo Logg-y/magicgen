@@ -10,12 +10,12 @@
 #explspr 10297
 #sound 42
 
-#aispellmod 300
+#aispellmod 175
 
 #paths 64
 #secondarypaths 64
 
-#name 64 "$poisonous$ cloud"
+#name 64 "NAMEPREFIX $poisonous$ cloud"
 #descr 64 "Creates a cloud of $poisonous$ gas. Spending time within it will quickly prove fatal to most living creatures."
 
 #spelltype 34
@@ -24,6 +24,10 @@
 -- #scalecost 2.0
 #pathlevel 3
 #schools 4
+
+#priority 1
+#namecond effect > 4000 64 "Extended NAMEPREFIX $poisonous$ cloud"
+
 #end
 
 #neweffect "Fire Cloud"
@@ -38,12 +42,12 @@
 #explspr 10162
 #sound 42
 
-#aispellmod 300
+#aispellmod 100
 
 #paths 1
 #secondarypaths 1
 
-#name 1 "$flame$ cloud"
+#name 1 "NAMEPREFIX $flame$ cloud"
 #descr 1 "Creates a cloud of flammable gas and sets it alight. Creatures within it will be rapidly burned by the flames."
 
 #spelltype 34
@@ -52,6 +56,9 @@
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
+
+#priority 1
+#namecond effect > 4000 1 "Extended NAMEPREFIX $flame$ cloud"
 #end
 
 #neweffect "Freezing Cloud"
@@ -66,12 +73,12 @@
 #explspr 10056
 #sound 42
 
-#aispellmod 400
+#aispellmod 200
 
 #paths 4
 #secondarypaths 2
 
-#name 4 "$freezing$ $mist$"
+#name 4 "NAMEPREFIX $freezing$ $mist$"
 #descr 4 "Creates a cloud of icy mist. Creatures within will rapidly be harmed by the cold."
 
 #spelltype 34
@@ -80,6 +87,10 @@
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
+
+
+#priority 1
+#namecond effect > 5000 4 "Extended NAMEPREFIX $freezing$ $mist$"
 #end
 
 
@@ -95,12 +106,12 @@
 #explspr 10160
 #sound 23
 
-#aispellmod 400
+#aispellmod 200
 
 #paths 32
 #secondarypaths 0
 
-#name 32 "$mist$ of Death"
+#name 32 "NAMEPREFIX $mist$ of Death"
 #descr 32 "A deadly grey cloud will form upon the battlefield. Anyone standing in the cloud will wither and die unless able to leave it. The cloud will remain on the battlefield for some time before dissolving."
 
 #spelltype 34
@@ -109,4 +120,8 @@
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
+
+#priority 1
+#namecond effect > 5000 32 "Extended NAMEPREFIX $mist$ of Death"
+
 #end

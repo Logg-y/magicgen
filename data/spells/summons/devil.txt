@@ -21,8 +21,8 @@
 
 #spelltype 528
 
-#scalerate 0.7
-#scalefatiguemult 250
+#scalerate 1
+#scalefatiguemult 60
 #end
 
 #neweffect "devil ritual"
@@ -46,10 +46,10 @@
 
 #skipchance 50
 
-#scalefatigueexponent 0.5
+#scalefatigueexponent -2
 #scalefatiguemult 430
 
-#scalerate 1
+#scalerate 0.6
 #end
 
 #neweffect "Devil Remote Assassination"

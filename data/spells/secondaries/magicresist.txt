@@ -1,0 +1,57 @@
+#newsecondary "Magicresist Secondary mrn"
+
+-- buff only
+#spelltype 1
+
+#paths 127
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 67108864
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Resilient"
+#fatiguepersquare 2.5
+
+
+#nextspell "Magicresist Secondary mrn"
+
+#descr "This spell may also make those it affects more resistant to magic."
+#details "Affected creatures make an MR check. Those that fail to resist gain +4 magic resistance."
+
+#end
+
+#newsecondary "Magicresist Secondary mrne"
+
+-- buff only
+#spelltype 1
+
+#paths 127
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 67108864
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Resistant"
+#fatiguepersquare 1.25
+
+
+#nextspell "Magicresist Secondary mrne"
+
+#descr "This spell may also make those it affects more resistant to magic."
+#details "Affected creatures make an easy MR check. Those that fail to resist gain +4 magic resistance."
+
+#end

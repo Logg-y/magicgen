@@ -1,7 +1,7 @@
-#neweffect "Additional Shock"
-#effect 2
-#damage 2
-#spec 2176
+#neweffect "4 capped shock Secondary mrn"
+#effect 109
+#damage 4
+#spec 36028797027375232
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -9,7 +9,8 @@
 #aoe 1
 #scalerate 0
 #power 0
-#explspr 10244
+#maxpower 30
+#explspr 10028
 #sound 24
 
 #spelltype 2
@@ -19,22 +20,57 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "$Additional$ Shock"
-#name 2 "$Additional$ Shock"
-#name 4 "$Additional$ Shock"
-#name 8 "$Additional$ Shock"
-#name 16 "$Additional$ Shock"
-#name 32 "$Additional$ Shock"
-#name 64 "$Additional$ Shock"
-#name 128 "$Additional$ Shock"
-#name 256 "$Additional$ Shock"
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
 
 #end
 
-#neweffect "Additional Shock Holy"
-#effect 2
-#damage 10
-#spec 2176
+
+#neweffect "4 capped shock Secondary mrne"
+#effect 109
+#damage 4
+#spec 36028797044148352
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+#neweffect "4 capped shock Secondary mrn damaging"
+#effect 109
+#damage 4
+#spec 36028797027375232
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -42,7 +78,8 @@
 #aoe 0
 #scalerate 0
 #power 0
-#explspr 10244
+#maxpower 30
+#explspr 10028
 #sound 24
 
 #spelltype 2
@@ -52,14 +89,188 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "$Additional$ Shock"
-#name 2 "$Additional$ Shock"
-#name 4 "$Additional$ Shock"
-#name 8 "$Additional$ Shock"
-#name 16 "$Additional$ Shock"
-#name 32 "$Additional$ Shock"
-#name 64 "$Additional$ Shock"
-#name 128 "$Additional$ Shock"
-#name 256 "$Additional$ Shock"
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+
+#neweffect "4 capped shock Secondary mrne damaging"
+#effect 109
+#damage 4
+#spec 36028797044148352
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+---
+
+
+#neweffect "3AN shock Secondary mrn"
+#effect 2
+#damage 3
+#spec 22592
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+#neweffect "3AN shock Secondary mrne"
+#effect 2
+#damage 3
+#spec 16795776
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+#neweffect "3AN shock Secondary mrn damaging"
+#effect 2
+#damage 3
+#spec 22592
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
+
+#end
+
+#neweffect "3AN shock Secondary mrne damaging"
+#effect 2
+#damage 3
+#spec 16795776
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10028
+#sound 24
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Additional$ shock"
+#name 2 "$Additional$ shock"
+#name 4 "$Additional$ shock"
+#name 8 "$Additional$ shock"
+#name 16 "$Additional$ shock"
+#name 32 "$Additional$ shock"
+#name 64 "$Additional$ shock"
+#name 128 "$Additional$ shock"
+#name 256 "$Additional$ shock"
 
 #end

@@ -7,7 +7,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.15
 
 #unitmod "Summon Darkvision"
 #descr "The summoned %creature% %is% accustomed to travelling at night and can see very well in the dark."

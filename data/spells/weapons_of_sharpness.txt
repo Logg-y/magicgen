@@ -23,15 +23,18 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 1 8 "Sharpen Weapons"
+#namecond effectiveaoe == 1 8 "NAMEPREFIX Sharpen Weapons"
 
-#namecond effectiveaoe < 666 8 "Sharpened Weapons"
+#namecond effectiveaoe < 666 8 "NAMEPREFIX Sharpened Weapons"
 
-#namecond effectiveaoe == 666 8 "Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Sharpened Weapons"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of sharpening"
 
 #end
 
@@ -61,15 +64,18 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 1 8 "Sharpen Weapons"
+#namecond effectiveaoe == 1 8 "NAMEPREFIX Sharpen Weapons"
 
-#namecond effectiveaoe < 666 8 "Sharpened Weapons"
+#namecond effectiveaoe < 666 8 "NAMEPREFIX Sharpened Weapons"
 
-#namecond effectiveaoe == 666 8 "Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Sharpened Weapons"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor." 
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of sharpening"
 
 #end
 

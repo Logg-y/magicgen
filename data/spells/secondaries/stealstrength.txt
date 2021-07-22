@@ -1,0 +1,150 @@
+#newsecondary "Stealstrength nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Weakening"
+#fatiguepersquare 4
+
+#req effect != 67
+
+
+#nextspell "Stealstrength Secondary mrne"
+
+#descr "This spell is imbued with dark energy that may weaken those affected."
+#details "Affected creatures make an easy MR check. Failing this check causes them to lose 4 points of strength permanently."
+
+#end
+
+#newsecondary "Stealstrength nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 67
+
+#nameprefix "Enfeebling"
+#fatiguepersquare 7
+
+
+#nextspell "Stealstrength Secondary mrn"
+
+#descr "This spell is imbued with dark energy that may weaken those affected."
+#details "Affected creatures make an MR check. Failing this check causes them to lose 4 points of strength permanently."
+
+#end
+
+
+#newsecondary "Stealstrength damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 67
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Weakening"
+#fatiguepersquare 3
+
+#nextspell "Stealstrength Secondary mrne damaging"
+
+#descr "This spell is imbued with dark energy that may weaken those this spell wounds."
+#details "Wounded creatures make an easy MR check. Failing this check causes them to lose 4 points of strength permanently."
+
+#end
+
+#newsecondary "Stealstrength mrn damaging"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+
+#req nonscalingdamage < 40
+
+-- not ritual
+#req spelltype !& 4
+#req effect != 67
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Enfeebling"
+#fatiguepersquare 6
+
+#nextspell "Stealstrength Secondary mrn damaging"
+
+#descr "This spell is imbued with dark energy that may weaken those this spell wounds."
+#details "Wounded creatures make an MR check. Failing this check causes them to lose 4 points of strength permanently."
+
+
+#end

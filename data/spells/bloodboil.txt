@@ -26,8 +26,12 @@
 
 #skipchance 66
 
-#name 128 "Blood Boil"
-#descr 128 "This spell causes the victims' blood to boil. This spell uses much power from the Path of Fire and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+#name 128 "NAMEPREFIX Blood Boil"
+#descr 128 "This spell causes the victims' blood to boil. Those that fail to resist its effects suffer severe damage."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of Boiling blood"
+#descrcond range < 10 128 "The caster's touch causes the victims' blood to boil. Those that fail to resist its effects suffer severe damage."
 
 
 #end
@@ -61,8 +65,12 @@
 #skipchance 66
 
 
-#name 128 "Blood Freeze"
-#descr 128 "This spell causes the victims' blood to freeze. This spell uses much power from the Path of Water and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+#name 128 "NAMEPREFIX Blood Freeze"
+#descr 128 "This spell causes the victims' blood to freeze. Those that fail to resist its effects suffer severe damage."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of Freezing blood"
+#descrcond range < 10 128 "The caster's touch causes the victims' blood to freeze. Those that fail to resist its effects suffer severe damage."
 #end
 
 #neweffect "Blood Shock"
@@ -93,6 +101,10 @@
 
 #skipchance 66
 
-#name 128 "Blood Shock"
-#descr 128 "This spell causes the victims' blood to be suddenly charged with electricity. This spell uses much power from the Path of Air and is one of the few Blood magic spells that doesn't require huge amounts of sacrificial blood."
+#name 128 "NAMEPREFIX Blood Shock"
+#descr 128 "This spell causes the victims' blood to be suddenly charged with electricity. Those that fail to resist its effects suffer severe damage."
+
+#priority 1
+#namecond range < 10 128 "NAMEPREFIX Touch of Charged blood"
+#descrcond range < 10 128 "The caster's touch causes the victims' blood to become charged with electricity. Those that fail to resist its effects suffer severe damage."
 #end

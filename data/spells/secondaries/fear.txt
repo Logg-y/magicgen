@@ -1,33 +1,74 @@
-#newsecondary "Fear"
+#newsecondary "fear type 1 nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
 #paths 32
-#power 0
+#power -1
 
 -- various damage types
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
+
+#req effect != 4	    -- fear
 
 -- not ritual
 #req spelltype !& 4
-#req effect != 4
 
-#nextspell "Minor Fear"
+#nameprefix "Frightening"
+#fatiguepersquare 4
 
--- not demons/undead only
-#req spec !& 8
 
-#descr "Residual energy from this spell strikes fear into the hearts of those in the area."
+#nextspell "fear type 1 Secondary mrne"
+
+#descr "This spell is infused with dark magic that might be able to convince even the most hardened warrior to flee."
 
 #end
 
-#newsecondary "Fear damaging"
+#newsecondary "fear type 1 nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+#req effect != 4	    -- fear
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Terrifying"
+#fatiguepersquare 8
+
+
+#nextspell "fear type 1 Secondary mrn"
+
+#descr "This spell is infused with dark magic that might be able to convince even the most hardened warrior to flee."
+
+#end
+
+#newsecondary "fear type 1 damaging mrne"
 
 -- evo only
 #spelltype 2
@@ -36,20 +77,74 @@
 #power 0
 
 -- various damage types
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 #req paths != 256
-#offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
-#req effect != 4
 
-#nextspell "Minor Fear"
+#req nonscalingdamage < 40
 
--- not demons/undead only
-#req spec !& 8
+-- not on damage already
+#ondamage 1
 
-#descr "Residual energy from this spell strikes fear into the hearts of those in the area."
+#req effect != 4	    -- fear
+
+#nameprefix "Frightening"
+#fatiguepersquare 3
+
+#nextspell "fear type 1 Secondary mrne damaging"
+
+#descr "This spell is infused with dark magic that might be able to convince even the most hardened warrior wounded by it to flee."
 
 #end
+
+#newsecondary "fear type 1 damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy ok
+
+-- not ritual
+#req spelltype !& 4
+
+#req effect != 4	    -- fear
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Terrifying"
+#fatiguepersquare 6.5
+
+#nextspell "fear type 1 Secondary mrn damaging"
+
+#descr "This spell is infused with dark magic that might be able to convince even the most hardened warrior wounded by it to flee."
+
+#end
+
+
+

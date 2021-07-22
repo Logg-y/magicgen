@@ -33,6 +33,13 @@
 #descr "This particular CREATURE has had its weapons magically altered to immediately wound the chest of anyone hurt by them."
 #end
 
+#newunitmod "Summon Bleed"
+#weaponmod "Bleed"
+#nameprefix "Sanguine"
+#req trample <= 0
+#descr "This particular CREATURE has had its weapons magically altered to cause those wounded by them bleed profusely."
+#end
+
 #newunitmod "Summon Feeblemind"
 #weaponmod "Feeblemind"
 #nameprefix "Feebleminding"

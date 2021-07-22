@@ -25,25 +25,31 @@
 
 #details "Barkskin: Grants natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
 
-#namecond effectiveaoe < 2 1 "Desiccated Skin"
-#namecond effectiveaoe < 2 4 "Desiccated Skin"
-#namecond effectiveaoe < 2 32 "Desiccated Skin"
-#namecond effectiveaoe < 2 64 "Barkskin"
+#namecond effectiveaoe < 2 1 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 4 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Barkskin"
 
-#namecond2 2 <= effectiveaoe < 666 1 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 4 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 32 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 64 "Wooden Warriors"
+#namecond2 2 <= effectiveaoe < 666 1 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Wooden Warriors"
 
-#namecond effectiveaoe == 666 1 "Desiccated Army"
-#namecond effectiveaoe == 666 4 "Desiccated Army"
-#namecond effectiveaoe == 666 32 "Desiccated Army"
-#namecond effectiveaoe == 666 64 "Wooden Army"
+#namecond effectiveaoe == 666 1 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Wooden Army"
 
 #descr 1 "Through a harmless but intense burst of heat, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 4 "Through a harmless process of water withdrawal, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 32 "Through a harmless and reversible process, the skin of SUBJECT becomes withered, dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 64 "The skin of SUBJECT becomes thick and tough like bark. This provides some protection from damage, but the bark is also somewhat flammable."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of barkskin"
 
 #end
 
@@ -76,25 +82,31 @@
 
 #details "Barkskin: Grants natural protection 10, or +1 if already 10 or higher. Also incurs susceptibility to Fire 5."
 
-#namecond effectiveaoe < 2 1 "Desiccated Skin"
-#namecond effectiveaoe < 2 4 "Desiccated Skin"
-#namecond effectiveaoe < 2 32 "Desiccated Skin"
-#namecond effectiveaoe < 2 64 "Barkskin"
+#namecond effectiveaoe < 2 1 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 4 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 32 "NAMEPREFIX Desiccated Skin"
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Barkskin"
 
-#namecond2 2 <= effectiveaoe < 666 1 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 4 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 32 "Desiccated Warriors"
-#namecond2 2 <= effectiveaoe < 666 64 "Wooden Warriors"
+#namecond2 2 <= effectiveaoe < 666 1 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 4 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Desiccated Warriors"
+#namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Wooden Warriors"
 
-#namecond effectiveaoe == 666 1 "Desiccated Army"
-#namecond effectiveaoe == 666 4 "Desiccated Army"
-#namecond effectiveaoe == 666 32 "Desiccated Army"
-#namecond effectiveaoe == 666 64 "Wooden Army"
+#namecond effectiveaoe == 666 1 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 32 "NAMEPREFIX Desiccated Army"
+#namecond effectiveaoe == 666 64 "NAMEPREFIX Wooden Army"
 
 #descr 1 "Through a harmless but intense burst of heat, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 4 "Through a harmless process of water withdrawal, the skin of SUBJECT becomes dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 32 "Through a harmless and reversible process, the skin of SUBJECT becomes withered, dried and toughened. This provides some protection from damage, but the dry skin is also somewhat flammable."
 #descr 64 "The skin of SUBJECT becomes thick and tough like bark. This provides some protection from damage, but the bark is also somewhat flammable."
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of desiccated skin"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of barkskin"
 
 #end
 

@@ -1,0 +1,132 @@
+#neweffect "Damagearmour Secondary mrne"
+#effect 138
+#damage 8
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10168
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Destruction"
+#name 2 "Destruction"
+#name 4 "Destruction"
+#name 8 "Destruction"
+#name 16 "Destruction"
+#name 32 "Destruction"
+#name 64 "Destruction"
+#name 128 "Destruction"
+#name 256 "Destruction"
+
+#end
+
+#neweffect "Damagearmour Secondary mrn"
+#effect 138
+#damage 8
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10168
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Destruction"
+#name 2 "Destruction"
+#name 4 "Destruction"
+#name 8 "Destruction"
+#name 16 "Destruction"
+#name 32 "Destruction"
+#name 64 "Destruction"
+#name 128 "Destruction"
+#name 256 "Destruction"
+
+#end
+
+#neweffect "Damagearmour Secondary mrne damaging"
+#effect 138
+#damage 8
+#spec 25165952
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10168
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Destruction"
+#name 2 "Destruction"
+#name 4 "Destruction"
+#name 8 "Destruction"
+#name 16 "Destruction"
+#name 32 "Destruction"
+#name 64 "Destruction"
+#name 128 "Destruction"
+#name 256 "Destruction"
+
+#end
+
+
+#neweffect "Damagearmour Secondary mrn damaging"
+#effect 138
+#damage 8
+#spec 8392832
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10168
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Destruction"
+#name 2 "Destruction"
+#name 4 "Destruction"
+#name 8 "Destruction"
+#name 16 "Destruction"
+#name 32 "Destruction"
+#name 64 "Destruction"
+#name 128 "Destruction"
+#name 256 "Destruction"
+
+#end

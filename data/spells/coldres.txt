@@ -25,16 +25,22 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Resist Cold"
-#name 4 "Resist Cold"
-#name 32 "Resist Cold"
-#name 128 "Resist Cold"
+#name 1 "NAMEPREFIX Resist Cold"
+#name 4 "NAMEPREFIX Resist Cold"
+#name 32 "NAMEPREFIX Resist Cold"
+#name 128 "NAMEPREFIX Resist Cold"
 #descr 1 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 4 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 32 "SUBJECT %is% made slightly resistant to the chill of the grave. This also causes affected units to thaw faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 
 #details "Grants +5 cold resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of warming"
 
 #end
 
@@ -66,17 +72,21 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Inner Heat"
-#name 4 "Frost Fend"
-#name 32 "Frost Fend"
-#name 128 "Frost Fend"
+#name 1 "NAMEPREFIX Inner Heat"
+#name 4 "NAMEPREFIX Frost Fend"
+#name 32 "NAMEPREFIX Frost Fend"
+#name 128 "NAMEPREFIX Frost Fend"
 #descr 1 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 4 "SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 #descr 32 "SUBJECT %is% made slightly resistant to the chill of the grave. This also causes affected units to thaw faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made slightly resistant to cold and chilling effects. This also causes affected units to thaw faster if frozen."
 
 #details "Grants +5 cold resistance."
-
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of warming"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of warming"
 #end
 
 #neweffect "Cold Res +10"
@@ -106,16 +116,22 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Protection from Cold"
-#name 4 "Protection from Cold"
-#name 32 "Protection from Cold"
-#name 128 "Protection from Cold"
+#name 1 "NAMEPREFIX Protection from Cold"
+#name 4 "NAMEPREFIX Protection from Cold"
+#name 32 "NAMEPREFIX Protection from Cold"
+#name 128 "NAMEPREFIX Protection from Cold"
 #descr 1 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 32 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 
 #details "Grants +10 cold resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of thawing"
 
 #end
 
@@ -148,17 +164,23 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Inner Fire"
-#name 1 "Warriors of Muspelheim"
-#name 4 "Glacial Blessing"
-#name 32 "Glacial Blessing"
-#name 128 "Blessing of Kokytos"
+#name 1 "NAMEPREFIX Inner Fire"
+#name 1 "NAMEPREFIX Warriors of Muspelheim"
+#name 4 "NAMEPREFIX Glacial Blessing"
+#name 32 "NAMEPREFIX Glacial Blessing"
+#name 128 "NAMEPREFIX Blessing of Kokytos"
 #descr 1 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 32 "SUBJECT %is% made highly resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made highly resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 
 #details "Grants +10 cold resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of thawing"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of thawing"
 
 #end
 
@@ -191,15 +213,21 @@
 #paths 165
 #secondarypaths 0
 
-#name 1 "Cold Warding"
-#name 4 "Cold Warding"
-#name 32 "Cold Warding"
-#name 128 "Cold Warding"
+#name 1 "NAMEPREFIX Cold Warding"
+#name 4 "NAMEPREFIX Cold Warding"
+#name 32 "NAMEPREFIX Cold Warding"
+#name 128 "NAMEPREFIX Cold Warding"
 #descr 1 "SUBJECT %is% made extremely resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 4 "SUBJECT %is% made extremely resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 #descr 32 "SUBJECT %is% made extremely resistant to the chill of the grave. This also causes affected units to thaw much faster if frozen."
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% made extremely resistant to cold and chilling effects. This also causes affected units to thaw much faster if frozen."
 
 #details "Grants +15 cold resistance."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX greater $mist$ of thawing"
+#namecond effect > 1000 4 "NAMEPREFIX greater $mist$ of thawing"
+#namecond effect > 1000 32 "NAMEPREFIX greater $mist$ of thawing"
+#namecond effect > 1000 128 "NAMEPREFIX greater $mist$ of thawing"
 
 #end

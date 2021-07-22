@@ -21,19 +21,23 @@
 #paths 20
 #secondarypaths 4
 
-#namecond effectiveaoe < 660 4 "Slow"
-#namecond effectiveaoe < 660 16 "Slow"
+#namecond effectiveaoe < 660 4 "NAMEPREFIX Slow"
+#namecond effectiveaoe < 660 16 "NAMEPREFIX Slow"
 
-#namecond effectiveaoe == 665 4 "Slowed Army"
-#namecond effectiveaoe == 665 16 "Slowed Army"
+#namecond effectiveaoe == 665 4 "NAMEPREFIX Slowed Army"
+#namecond effectiveaoe == 665 16 "NAMEPREFIX Slowed Army"
 
-#namecond effectiveaoe == 663 4 "Slowed Army"
-#namecond effectiveaoe == 663 16 "Slowed Army"
+#namecond effectiveaoe == 663 4 "NAMEPREFIX Slowed Army"
+#namecond effectiveaoe == 663 16 "NAMEPREFIX Slowed Army"
 
-#details "Slow 50%, Att -2, Def -2."
+#details "Slowed 50%, Att -2, Def -2."
 
 #descr 4 "SUBJECT becomes slow if the fail to resist this spell's effects."
 #descr 16 "The caster attempts to slow the flow of time around SUBJECT. Creatures may resist this effect."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
 #end
 

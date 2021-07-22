@@ -62,3 +62,54 @@
 
 #spelltype 2
 #end
+
+
+#neweffect "Blood dominate demon"
+#effect 29
+#damage 999
+#spec 9064584
+#schools -1
+-- evo
+#spelltype 2
+#aoe 0
+#power 0
+#name 128 "Dominate Demon"
+#end
+
+#neweffect "Blood dominate demon casting AI dummy"
+#effect 109
+#damage 999
+#spec 1152921504607522952
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 1.6
+
+#aoe 0
+#power 0
+#maxpower 0
+#pathlevel 2
+#explspr 10213
+#sound 30
+#fatiguecost 0
+#precision 100
+#smitedemon 1
+#range 5020
+
+#nextspell "Blood dominate demon"
+
+#paths 256
+#secondarypaths 128
+
+#aispellmod -30
+
+#name 128 "Dominate Demon"
+
+#descr 128 "With this prayer, the priest attempts to use his God's power over the Infernal realms to forcefully change a demon's allegiance."
+#details "Targeted demons must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also charms them."
+
+
+#end

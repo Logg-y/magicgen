@@ -1,0 +1,71 @@
+#neweffect "enslave Secondary mrne"
+#effect 28
+#damage 999
+#spec 25313408
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10208
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "domination"
+#name 2 "domination"
+#name 4 "domination"
+#name 8 "domination"
+#name 16 "domination"
+#name 32 "domination"
+#name 64 "domination"
+#name 128 "domination"
+#name 256 "domination"
+
+
+#end
+
+#neweffect "enslave Secondary mrne damaging"
+#effect 28
+#damage 999
+#spec 25313408
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10208
+#sound 41
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "domination"
+#name 2 "domination"
+#name 4 "domination"
+#name 8 "domination"
+#name 16 "domination"
+#name 32 "domination"
+#name 64 "domination"
+#name 128 "domination"
+#name 256 "domination"
+
+
+#end

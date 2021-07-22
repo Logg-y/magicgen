@@ -1,97 +1,187 @@
-#newsecondary "Earthmeld"
+#newsecondary "Earthmeld nondamaging mrne"
 
 -- evo only
 #spelltype 2
 
-#paths 8
-#power 0
-
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 16384
-
-#nextspell "Grip of the Earth"
-
-#descr "Residual energy from this spell pulls those in the affected area into the ground."
-
-#end
-
-#newsecondary "Earthmeld Greater"
-
--- evo only
-#spelltype 2
-
-#paths 8
+#paths 12
 #power -1
 
-#req effect != 2
-#req effect != 103
-#req effect != 74
-#req effect != 73
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
 #offensiveeffect 1
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 16384
 
-#nextspell "Greater Grip of the Earth"
+#nameprefix "Gripping"
+#fatiguepersquare 4
 
-#descr "Residual energy from this spell pulls those in the affected area into the ground."
+
+#nextspell "Earthmeld Secondary mrne"
+
+#descr "Those affected by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Affected creatures make an easy MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
 
 #end
 
-
-
-
-#newsecondary "Earthmeld damaging"
+#newsecondary "Earthmeld nondamaging mrn"
 
 -- evo only
 #spelltype 2
 
-#paths 8
-#power 0
+#paths 12
+#power -2
 
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+#nameprefix "Grasping"
+#fatiguepersquare 7
+
+
+#nextspell "Earthmeld Secondary mrn"
+
+#descr "Those affected by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Affected creatures make an MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
+
+#end
+
+
+#newsecondary "Earthmeld damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 #req paths != 256
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 16384
 
-#nextspell "Grip of the Earth"
+#req nonscalingdamage < 40
 
-#descr "Residual energy from this spell pulls those in the affected area into the ground."
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Gripping"
+#fatiguepersquare 3
+
+#nextspell "Earthmeld Secondary mrne damaging"
+
+#descr "Those wounded by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Wounded creatures make an easy MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
 
 #end
 
-#newsecondary "Earthmeld Greater damaging"
+#newsecondary "Earthmeld damaging mrn damaging"
 
 -- evo only
 #spelltype 2
 
-#paths 8
-#power -1
+#paths 12
+#power -2
 
-#req nonscalingdamage < 15
-#req nonscalingaoe >= 1
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
 -- holy okay
--- (banishment)
+
+#req nonscalingdamage < 40
 
 -- not ritual
 #req spelltype !& 4
 #req damage != 16384
 
-#nextspell "Greater Grip of the Earth"
+-- not on damage already
+#ondamage 1
 
-#descr "Residual energy from this spell pulls those in the affected area into the ground."
+#nameprefix "Grasping"
+#fatiguepersquare 6
+
+#nextspell "Earthmeld Secondary mrn damaging"
+
+#descr "Those wounded by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Wounded creatures make an MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
+
 
 #end
+
+
+#newsecondary "Earthmeld holy only"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power -2
+
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy okay
+#req paths == 256
+
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
+
+#nameprefix "Grasping"
+#fatiguepersquare 6
+
+#nextspell "Earthmeld Secondary mrn damaging"
+
+#descr "Those wounded by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Wounded creatures make an MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
+
+
+#end
+

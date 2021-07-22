@@ -10,10 +10,11 @@ import traceback
 
 import PySimpleGUI as sg
 
-CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "secondarychance",
-          "summonsecondarychance", "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
+CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "modname", "samepathsecondarychance",
+          "summonsamepathsecondarychance", "summondiffpathsecondarychance",
+          "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
           "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "siteidstart",
-          "montagidstart",
+          "montagidstart", "diffpathsecondarychance",
           "eventcodestart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale",
           "siteidstart", "nobadaispells"]
 
@@ -55,7 +56,10 @@ def spawn_worker_process(**kwargs):
     if os.path.isfile(tmp) and sys.platform.startswith("win"):
         paramlist = [tmp]
     else:
-        paramlist = ["python", "magicgen.py"]
+        if sys.platform.startswith("win"):
+            paramlist = ["python", "magicgen.py"]
+        else:
+            paramlist = ["python3", "magicgen.py"]
 
     paramlist += ["-run", "1"]
 
@@ -272,14 +276,49 @@ def main():
 
     ]
 
-    adv_category = [
-        [sg.Text('What percentage of non-summoning spells will generate with a secondary effect. (20)', size=(50, 2),
+
+
+    adv_category_page1 = [
+        [sg.Text('What percentage of non-summoning spells will generate with a foreign path secondary effect. This'
+                 ' will tend to produce crosspath spells. (10)', size=(50, 3),
                  relief="ridge"),
-         sg.InputText(key='-secondarychance-', size=(4, 1), default_text=20)],
+         sg.InputText(key='-diffpathsecondarychance-', size=(4, 1), default_text=10)],
+        [sg.Text('What percentage of non-summoning spells will generate with a same path secondary effect. This'
+                 ' will tend to produce spells without crosspaths but multiple effects. (40)', size=(50, 3),
+                 relief="ridge"),
+         sg.InputText(key='-samepathsecondarychance-', size=(4, 1), default_text=40)],
         [sg.Text(
-            'What percentage of summoning spells will generate with a secondary effect. (50)',
+            'What percentage of summoning spells will generate with a foreign path secondary effect. This will tend '
+            'to produce altered summon creatures that require crosspaths to summon. (10)',
+            size=(50, 3), relief="ridge"),
+            sg.InputText(key='-summondiffpathsecondarychance-', size=(4, 1), default_text=10)],
+        [sg.Text(
+            'What percentage of summoning spells will generate with a same path secondary effect. This will tend '
+            'to produce altered summon creatures that do not require crosspaths to summon. (40)',
+            size=(50, 3), relief="ridge"),
+            sg.InputText(key='-summonsamepathsecondarychance-', size=(4, 1), default_text=40)],
+        [sg.Text(
+            'Clear Vanilla generic spells: If non-zero, all vanilla non-national spells will be cleared. (1)'
+            ,
             size=(50, 2), relief="ridge"),
-            sg.InputText(key='-summonsecondarychance-', size=(4, 1), default_text=50)],
+            sg.InputText(key='-clearvanillagenericspells-', size=(4, 1), default_text=1)],
+
+        [sg.Text(
+            'Clear Vanilla national spells: If non-zero, all vanilla national spells will be cleared. (1)'
+            ,
+            size=(50, 2), relief="ridge"),
+            sg.InputText(key='-clearvanillanationalspells-', size=(4, 1), default_text=1)],
+
+        [sg.Text(
+            'Blood Ritual slave cost multiplier: Set to a value greater than 1.0 if you think MagicGen blood '
+            'rituals are too cheap and need to have their cost increased proportionally. Values less than '
+            '1.0 will make the blood rituals cheaper. (1.0)'
+            ,
+            size=(50, 4), relief="ridge"),
+            sg.InputText(key='-bloodcostscale-', size=(4, 1), default_text=1.0)],
+
+        ]
+    adv_category_page2 = [
         [sg.Text(
             'Research modifier: This number is subtracted from the research level of all spells, making more powerful '
             'spells appear at lower research. A value of 5 will make spells that are normally research 9 appear at '
@@ -318,25 +357,15 @@ def main():
             size=(50, 5), relief="ridge"),
             sg.InputText(key='-fatiguemodmult-', size=(4, 1), default_text=1.0)],
 
-        [sg.Text(
-            'Clear Vanilla generic spells: If non-zero, all vanilla non-national spells will be cleared. (1)'
-            ,
-            size=(50, 2), relief="ridge"),
-            sg.InputText(key='-clearvanillagenericspells-', size=(4, 1), default_text=1)],
 
-        [sg.Text(
-            'Clear Vanilla national spells: If non-zero, all vanilla national spells will be cleared. (1)'
-            ,
-            size=(50, 2), relief="ridge"),
-            sg.InputText(key='-clearvanillanationalspells-', size=(4, 1), default_text=1)],
+    ]
 
-        [sg.Text(
-            'Blood Ritual slave cost multiplier: Set to a value greater than 1.0 if you think MagicGen blood '
-            'rituals are too cheap and need to have their cost increased proportionally. Values less than '
-            '1.0 will make the blood rituals cheaper. (1.0)'
-            ,
-            size=(50, 4), relief="ridge"),
-            sg.InputText(key='-bloodcostscale-', size=(4, 1), default_text=1.0)],
+    adv_category = [
+        [sg.Button("<", key="AdvOptionsPrev"),
+         sg.Text("Page 1 of 2", key="AdvOptionsPageDisplay"),
+         sg.Button(">", key="AdvOptionsNext")],
+        [sg.pin(sg.Column(adv_category_page1, k="-AdvOptions1-"))],
+        [sg.pin(sg.Column(adv_category_page2, k="-AdvOptions2-", visible=False))]
 
     ]
 
@@ -385,6 +414,9 @@ def main():
 
     visibility = {"BasicOptions": True, "AdvOptions": False, "IDOptions":False}
     window = sg.Window(f"MagicGen {ver}: Generating New Spellbooks Since 1986!", layout)
+    advOptionsPage = 1
+
+    ADV_OPTIONS_MAX_PAGE = 2
 
     # Event Loop to process "events" and get the "values" of the inputs
     generating = False
@@ -432,6 +464,23 @@ def main():
 
         if event == "Autodetect Good Starting IDs":
             detectids(window, values["-modlist-"]);
+
+        if event == "AdvOptionsNext":
+            if advOptionsPage != ADV_OPTIONS_MAX_PAGE:
+                window[f"-AdvOptions{advOptionsPage}-"].update(visible=False)
+                window[f"-AdvOptions{advOptionsPage + 1}-"].update(visible=True)
+                advOptionsPage += 1
+                window["AdvOptionsPageDisplay"].update(f"Page {advOptionsPage} of {ADV_OPTIONS_MAX_PAGE}")
+
+        if event == "AdvOptionsPrev":
+            if advOptionsPage != 0:
+                window[f"-AdvOptions{advOptionsPage}-"].update(visible=False)
+                window[f"-AdvOptions{advOptionsPage - 1}-"].update(visible=True)
+                advOptionsPage -= 1
+                window["AdvOptionsPageDisplay"].update(f"Page {advOptionsPage} of {ADV_OPTIONS_MAX_PAGE}")
+
+
+
 
     window.close()
 

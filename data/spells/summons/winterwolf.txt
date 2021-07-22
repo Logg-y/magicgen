@@ -10,12 +10,12 @@
 #fatiguecost 60
 #sound 31
 #schools 1
-#scalefatiguemult 30
+--#scalefatiguemult 30
 
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX Winter %Wolf%"
 #descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
@@ -39,7 +39,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 50
 
 #name 4 "Summon NAMEPREFIX Winter %Wolf%"
 #descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."

@@ -1,0 +1,314 @@
+#newsecondary "7AN poison nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Poisonous"
+#fatiguepersquare 4
+
+
+#nextspell "7AN poison Secondary mrne"
+
+#descr "This spell is infused with poison that may afflict those it affects."
+#details "Affected creatures must make an easy MR check or suffer 7 AN poison damage."
+
+#end
+
+#newsecondary "7AN poison nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Toxic"
+#fatiguepersquare 8
+
+
+#nextspell "7AN poison Secondary mrn"
+
+#descr "This spell is infused with poison that may afflict those it affects."
+#details "Affected creatures must make an MR check or suffer 7 AN poison damage."
+
+#end
+
+#newsecondary "7AN poison damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+-- not poison damage
+#req spec !& 8192
+
+#nameprefix "Poisonous"
+#fatiguepersquare 3
+
+#nextspell "7AN poison Secondary mrne damaging"
+
+
+#descr "This spell is infused with poison that may afflict those it wounds."
+#details "Wounded creatures must make an easy MR check or suffer 7 AN poison damage."
+
+#end
+
+#newsecondary "7AN poison damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power -1
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy ok
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not poison damage
+#req spec !& 8192
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Toxic"
+#fatiguepersquare 6.5
+
+#nextspell "7AN poison Secondary mrn damaging"
+
+#descr "This spell is infused with poison that may afflict those it wounds."
+#details "Wounded creatures must make an MR check or suffer 7 AN poison damage."
+
+#end
+
+
+------
+
+
+#newsecondary "4 capped poison nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Poisonlaced"
+#fatiguepersquare 3
+
+
+#nextspell "4 capped poison Secondary mrne"
+
+#descr "This spell is infused with poison that may afflict those it affects."
+#details "Affected creatures must make an easy MR check or suffer 4 AN capped poison damage."
+
+#end
+
+#newsecondary "4 capped poison nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Poisonlaced"
+#fatiguepersquare 6
+
+
+#nextspell "4 capped poison Secondary mrn"
+
+#descr "This spell is infused with poison that may afflict those it affects."
+#details "Affected creatures must make an MR check or suffer 4 AN capped poison damage."
+
+#end
+
+#newsecondary "4 capped poison damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+-- not poison damage
+#req spec !& 8192
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+-- not inanimate only
+#req effect != 96
+
+#nameprefix "Poisonlaced"
+#fatiguepersquare 2
+
+#nextspell "4 capped poison Secondary mrne damaging"
+
+#descr "This spell is infused with poison that may afflict those it wounds."
+#details "Wounded creatures must make an easy MR check or suffer 4 AN capped poison damage."
+
+#end
+
+#newsecondary "4 capped poison damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not poison damage
+#req spec !& 8192
+
+-- not on damage already
+#ondamage 1
+
+-- not inanimate only
+#req effect != 96
+
+#nameprefix "Poisonlaced"
+#fatiguepersquare 4.5
+
+#nextspell "4 capped poison Secondary mrn damaging"
+
+#descr "This spell is infused with poison that may afflict those it wounds."
+#details "Wounded creatures must make an MR check or suffer 4 AN capped poison damage."
+
+#end
+
+
+
+

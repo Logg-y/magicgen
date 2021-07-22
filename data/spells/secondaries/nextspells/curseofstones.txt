@@ -1,7 +1,7 @@
-#neweffect "Curse of Stones Secondary"
+#neweffect "Curse of Stones Secondary mrn"
 #effect 11
 #damage 32
-#spec 20480
+#spec 8409088
 
 #schools -1
 #paths -1
@@ -9,7 +9,8 @@
 #spelltype 2
 #aoe 1
 
-#power 1
+#power 0
+#maxpower 30
 #pathlevel 1
 #explspr 10270
 #sound 42
@@ -40,3 +41,139 @@
 #name 256 "Weight of the Land"
 
 #end
+
+#neweffect "Curse of Stones Secondary mrne"
+#effect 11
+#damage 32
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10270
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Weight of the Earth"
+#name 1 "Weight of the Land"
+#name 2 "Weight of the Earth"
+#name 2 "Weight of the Land"
+#name 4 "Weight of the Earth"
+#name 4 "Weight of the Land"
+#name 8 "Weight of the Earth"
+#name 8 "Weight of the Land"
+#name 16 "Weight of the Earth"
+#name 16 "Weight of the Land"
+#name 32 "Weight of the Earth"
+#name 32 "Weight of the Land"
+#name 64 "Weight of the Earth"
+#name 64 "Weight of the Land"
+#name 128 "Weight of the Earth"
+#name 128 "Weight of the Land"
+#name 256 "Weight of the Earth"
+#name 256 "Weight of the Land"
+
+#end
+
+
+
+
+#neweffect "Curse of Stones Secondary mrn damaging"
+#effect 11
+#damage 32
+#spec 8409088
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10270
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Weight of the Earth"
+#name 1 "Weight of the Land"
+#name 2 "Weight of the Earth"
+#name 2 "Weight of the Land"
+#name 4 "Weight of the Earth"
+#name 4 "Weight of the Land"
+#name 8 "Weight of the Earth"
+#name 8 "Weight of the Land"
+#name 16 "Weight of the Earth"
+#name 16 "Weight of the Land"
+#name 32 "Weight of the Earth"
+#name 32 "Weight of the Land"
+#name 64 "Weight of the Earth"
+#name 64 "Weight of the Land"
+#name 128 "Weight of the Earth"
+#name 128 "Weight of the Land"
+#name 256 "Weight of the Earth"
+#name 256 "Weight of the Land"
+
+#end
+
+#neweffect "Curse of Stones Secondary mrne damaging"
+#effect 11
+#damage 32
+#spec 25182208
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10270
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Weight of the Earth"
+#name 1 "Weight of the Land"
+#name 2 "Weight of the Earth"
+#name 2 "Weight of the Land"
+#name 4 "Weight of the Earth"
+#name 4 "Weight of the Land"
+#name 8 "Weight of the Earth"
+#name 8 "Weight of the Land"
+#name 16 "Weight of the Earth"
+#name 16 "Weight of the Land"
+#name 32 "Weight of the Earth"
+#name 32 "Weight of the Land"
+#name 64 "Weight of the Earth"
+#name 64 "Weight of the Land"
+#name 128 "Weight of the Earth"
+#name 128 "Weight of the Land"
+#name 256 "Weight of the Earth"
+#name 256 "Weight of the Land"
+
+#end
+

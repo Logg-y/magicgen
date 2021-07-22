@@ -1,0 +1,65 @@
+#neweffect "Regen Secondary mrn"
+#effect 10
+#damage 32
+#spec 549474304
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10017
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Regeneration"
+#name 2 "$Additional$ Regeneration"
+#name 4 "$Additional$ Regeneration"
+#name 8 "$Additional$ Regeneration"
+#name 16 "$Additional$ Regeneration"
+#name 32 "$Additional$ Regeneration"
+#name 64 "$Additional$ Regeneration"
+#name 128 "$Additional$ Regeneration"
+#name 256 "$Additional$ Regeneration"
+
+#end
+
+#neweffect "Regen Secondary mrne"
+#effect 10
+#damage 32
+#spec 566247424
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10017
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Regeneration"
+#name 2 "$Additional$ Regeneration"
+#name 4 "$Additional$ Regeneration"
+#name 8 "$Additional$ Regeneration"
+#name 16 "$Additional$ Regeneration"
+#name 32 "$Additional$ Regeneration"
+#name 64 "$Additional$ Regeneration"
+#name 128 "$Additional$ Regeneration"
+#name 256 "$Additional$ Regeneration"
+
+#end

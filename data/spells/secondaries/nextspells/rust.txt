@@ -1,0 +1,145 @@
+#neweffect "Rust Secondary mrn"
+#effect 11
+#damage 2199023255552
+#spec 20480
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10089
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Rust"
+#name 2 "$Additional$ Rust"
+#name 4 "$Additional$ Rust"
+#name 8 "$Additional$ Rust"
+#name 16 "$Additional$ Rust"
+#name 32 "$Additional$ Rust"
+#name 64 "$Additional$ Rust"
+#name 128 "$Additional$ Rust"
+#name 256 "$Additional$ Rust"
+
+
+#end
+
+#neweffect "Rust Secondary mrne"
+#effect 11
+#damage 2199023255552
+#spec 16793600
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10089
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Rust"
+#name 2 "$Additional$ Rust"
+#name 4 "$Additional$ Rust"
+#name 8 "$Additional$ Rust"
+#name 16 "$Additional$ Rust"
+#name 32 "$Additional$ Rust"
+#name 64 "$Additional$ Rust"
+#name 128 "$Additional$ Rust"
+#name 256 "$Additional$ Rust"
+
+
+#end
+
+
+#neweffect "Rust Secondary mrn damaging"
+#effect 11
+#damage 2199023255552
+#spec 20480
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10089
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Rust"
+#name 2 "$Additional$ Rust"
+#name 4 "$Additional$ Rust"
+#name 8 "$Additional$ Rust"
+#name 16 "$Additional$ Rust"
+#name 32 "$Additional$ Rust"
+#name 64 "$Additional$ Rust"
+#name 128 "$Additional$ Rust"
+#name 256 "$Additional$ Rust"
+
+
+#end
+
+#neweffect "Rust Secondary mrne damaging"
+#effect 11
+#damage 2199023255552
+#spec 16793600
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10089
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Rust"
+#name 2 "$Additional$ Rust"
+#name 4 "$Additional$ Rust"
+#name 8 "$Additional$ Rust"
+#name 16 "$Additional$ Rust"
+#name 32 "$Additional$ Rust"
+#name 64 "$Additional$ Rust"
+#name 128 "$Additional$ Rust"
+#name 256 "$Additional$ Rust"
+
+
+#end
+

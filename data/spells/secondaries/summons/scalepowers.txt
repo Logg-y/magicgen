@@ -3,11 +3,11 @@
 #anysummon 1
 
 #paths 4
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.2
 
 #unitmod "Summon Coldpower"
 #descr "The summoned %creature% %is% more powerful in colder provinces."
@@ -19,11 +19,11 @@
 #anysummon 1
 
 #paths 1
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.2
 
 #unitmod "Summon Heatpower"
 #descr "The summoned %creature% %is% more powerful in warmer provinces."
@@ -35,7 +35,7 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -51,11 +51,11 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.4
 
 #unitmod "Summon Growthpower"
 #descr "The summoned %creature% %is% attuned to life, and becomes stronger in flourishing lands."
@@ -67,11 +67,11 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.2
 
 #unitmod "Summon Darkpower"
 #descr "The summoned %creature% %is% accustomed to living in darkness, and becomes stronger there."
@@ -85,11 +85,11 @@
 #anysummon 1
 
 #paths 4
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.7
+#mult fatiguecost 1.8
 
 #unitmod "Summon Coldpower 3"
 #descr "The summoned %creature% %is% much more powerful in colder provinces."
@@ -101,11 +101,11 @@
 #anysummon 1
 
 #paths 1
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.7
+#mult fatiguecost 1.8
 
 #unitmod "Summon Heatpower 3"
 #descr "The summoned %creature% %is% more powerful in warmer provinces."
@@ -117,11 +117,11 @@
 #anysummon 1
 
 #paths 32
-#power -5
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.1
+#mult fatiguecost 1.7
 
 #unitmod "Summon Deathpower"
 #descr "The summoned %creature% %is% attuned to death, and %is% much stronger in withering lands."
@@ -133,11 +133,11 @@
 #anysummon 1
 
 #paths 64
-#power -5
+#power -4
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3.3
+#mult fatiguecost 2.0
 
 #unitmod "Summon Growthpower 3"
 #descr "The summoned %creature% %is% attuned to life, and %is% much stronger in flourishing lands."
@@ -149,11 +149,11 @@
 #anysummon 1
 
 #paths 32
-#power -5
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.6
 
 #unitmod "Summon Darkpower 5"
 #descr "The summoned %creature% %is% accustomed to living in darkness, and becomes much stronger there."

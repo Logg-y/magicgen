@@ -23,13 +23,18 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 1 64 "Sleep"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Sleep"
 
-#namecond2 1 < effectiveaoe < 5 64 "Wave of Slumber"
-#namecond2 5 < effectiveaoe < 600 64 "Slumbering Squadron"
-#namecond2 600 < effectiveaoe < 700 64 "Mass Slumber"
+#namecond2 1 < effectiveaoe < 5 64 "NAMEPREFIX Wave of Slumber"
+#namecond2 5 < effectiveaoe < 600 64 "NAMEPREFIX Slumbering Squadron"
+#namecond2 600 < effectiveaoe < 700 64 "NAMEPREFIX Mass Slumber"
 
 #descr 64 "The caster attempts to put SUBJECT into a magically induced sleep."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of slumber"
+#namecond effect > 1000 64 "NAMEPREFIX sleep $mist$"
+#namecond range < 10 64 "NAMEPREFIX touch of slumber"
 
 #end
 
@@ -58,8 +63,13 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "Mass Slumber"
+#name 64 "NAMEPREFIX Mass Slumber"
 
 #descr 64 "The caster attempts to put all his foes into a magically induced sleep."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of slumber"
+#namecond effect > 1000 64 "NAMEPREFIX sleep $mist$"
+#namecond range < 10 64 "NAMEPREFIX touch of slumber"
 
 #end

@@ -9,6 +9,9 @@ start battle spells on commanders
 
 ench that turns pop into death gems?
 
+event id support
+	cast a spell that gives you a ton of a certain item (or random items) at a high cost reduction
+
 item modding support
 	autocasting items:
 		just generally on commanders
@@ -20,22 +23,83 @@ item modding support
 globals that add sites to provinces (fort defenders, healing, scrying, enter to summon X...)
 
 can I make commander (mage) summons out of units?
-secondary that gives mage commanders summon capabilities (summon allies, passive summon etc etc)
 
-mixed damage types
+- push a release, probably about here
 
-overhaul secondary effects, making them more common for samepath spells
-	drawback secondaries
-	name system for secondaries
-	offensive application of heat (and chill) aura - chill confers immunity, so we're looking at x% aoe MRN
+go over remote attack pricing again (eww)
+
+beneficial globals -> modular system
+
+actions:
+	everywhere
+	seasons
+	labs
+	forts
+	temples
+	researchers
+	preachers
+	magic paths
+	site searching
+	blood hunting (req b1+ mage)
 	
+effects:
+	magic items
+	gold
+	gems
+	% tax boost
+	pd boost
+	add sites
+		mines
+		arena
+		gems
+			F
+				enchanted pyre
+				smoulderstone
+			A
+				skysplit oak
+				sparkling fields
+			W
+				well of white water
+				enchanted well
+			E
+				earthroot tower
+				quicksand
+			S
+				enchanted gate
+				starlit pond
+			D
+				enchanted tomb
+				labyrinth of skulls
+			N
+				wolf oak
+				enchanted field
+			
+		
+	commander gains xp
+	commander gets pathboosted
+	spawn lucky spirits
+	
+	
+
+			
 TEST
 	weapon additions to summons (for balance mostly)
-	
 	disbelieve dmg
-			
-	
-	
+	new cloud graphics
+	secondary effects
+	mages with less research adjustment
+	salt dmg
+	battlesummon buffs
+	spectral mage
+	cost changed summon secondary efects
+	retinues (pricing)
+	summon every round in combat (pricing)
+	raise shape (pricing)
+	I NEED TO FIX DYNAMIC SCALING AGAIN - it can try to add more scaling than there is effects to remove, leading to the -8 + 9/level stuff again I TRIED TO FIX THIS BUT WAS SLEEPY, CHECK
+	modular globals to make sure they still work
+	MODIFIER spec modifications passing to nextspells
+	unitmods on edge of field
+	blood dominate demon
 	
 v2.1.8
 
@@ -75,6 +139,13 @@ Added a spell that creates an xp site in a capital.
 Added new H3 summons to astral, death, and nature.
 Added a battlefield wide spell that makes everyone berserk.
 Added a slow casting spell that recovers some fatigue without using a gem.
+Added many new non-summon secondary effects to go with the reworked secondary effect system.
+Added a salt damage spell.
+Added a chance to make remote assassinations use manifestation's effect and have a chance to turn back on the caster. In exchange these spells are a bit cheaper to cast.
+Added spectral mages as summons, as they somehow escaped the initial summon pass.
+Added a summon modifier that makes enemies killed reanimate into a random magic creature appropriate to their paths.
+Added summon modifiers that cause commanders to come with retinues.
+Added summon modifiers that cause commanders to summon a random creature every round.
 
 
 CHANGES
@@ -88,7 +159,7 @@ The code that scales back battlesummons to avoid them costing exorbitant amounts
 Astral smite will no longer have blink as a secondary effect.
 Generated .dm files now list the number of generic spells of each path. This is simply so I can try to make the number of spells more equal between paths.
 Paralyze spells now list the amount of paralyze damage done in yellow text.
-Adjusted the AI casting priority of many summoning spells, based on the things the game's algorithm does not consider for these spells.
+Summoning spell AI priority is now a function of path levels and research levels, and is no longer left to how the game's algorithm (erroneously) calculated this before.
 Reduced the odds of the AI casting fire flies and flying shards.
 Fixed astral shield generating battlefield wide at both research 8 and 9.
 Storm will now always generate for the sake of storm power.
@@ -104,6 +175,18 @@ The casting AI now gives clouds the respect they were due.
 Reduced the appearance rate of many mundane nature animal summons as they tended to dominate low level conjuration.
 Research levels for national spells are now somewhat weighted towards the middle of the research range.
 Because it turns out that the casting AI doesn't respect spells with very high AoE very well, added an automatic aispellmod to larger AoE spells.
+The vast majority of spell effects now get their names changed when converted to cloud or touch range versions.
+Slightly evened out the types of touch range spell types to make it less dominated by damaging spell effects (increased the share of incapacitating spell effects)
+Massively reworked the spell secondary effect system, with the aim of making in battle spells feel a bit more procedural without overdoing the secondary effects. I'd consider "overdoing it" to be when the secondary effects overshadow the original spells.
+Secondary effects are now reflected in spell names, much like how summons were previously.
+Phoenix pyre that is not self-cast is no longer cast offscript, in an attempt to prevent explosive problems.
+Roughly doubled the chance to not have repeated spell effects showing up at different levels.
+Greatly reduced the chance of getting base low level effects at higher research levels. Summoning hundreds of goats at once is nice, but feels a bit lacking at conjuration 8-9.
+Summoned mages no are no longer forced up into high research by effects as if they were frontline fighters. Potentially thuggable chassis however are.
+Changed how secondary path levels are calculated. Before it would be randomly split so that primary + secondary paths = original path level, this was changed to a point system with higher paths being valued more highly. This is because requirements such as x9 was much more difficult to cast than their splits such as x5y4 due to being able to use two paths' boosters together.
+All montag dummies now have 1 hp and secondshape into their intended form, in case they somehow end up in battle before firstshape kicks in.
+Introduced logic to try to balance the number of spells per path slightly.
+Research and school levels now generate in a random order. This is so the path balancing logic doesn't always skip over the same spell effects.
 
 BALANCE
 
@@ -117,7 +200,7 @@ Frozen heart research 6 from 5, path level 2 from 1 to match vanilla frozen hear
 Incinerate research 6 from 5, path level from 2 to 1 to match frozen heart
 Battlefield mind burn/paralysis/soul slay now hit friendlies as well
 Reduced astral "diversity" summons (mages of other paths) frequency by 75%, now up to 95% total frequency reduction compared to the mages' primary paths
-Blood acashic knowledge slave cost 45 from 25, research level 7 from 6
+Blood acashic knowledge slave cost 30 from 25, research level 7 from 6
 Air elemental size 6 ritual number of effects 2 from 5, gem cost 9 from 11, cost per additional increased from 1.5 to 2.5
 Air elemental size 5 ritual number of effects now nonscaling 3, gem cost 9 from 6, cost per additional increased from 1.3 to 2, path requirement increased from 2 to 3
 Air elemental size 4 ritual number of effects now nonscaling 4, gem cost 9 from 6, cost per additional increased from 1 to 1.5
@@ -145,6 +228,8 @@ Water elemental size 3 ritual number of effects 5 from 4+, gem cost 9 from 11, c
 Water elemental size 2 ritual number of effects 6+ from 1++, gem cost 10 from 8, cost per additional increaed from 0.5 to 0.75
 Living mercury size 5 ritual gem cost 5 from 4
 Living mercury size 4 ritual gem cost 4 from 3
+Most elemental remote assassination costs increased.
+Increased lumber construct remote assassination from 3 gems to 7.
 
 v2.1.7
 

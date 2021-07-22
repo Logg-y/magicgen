@@ -1,0 +1,155 @@
+#newsecondary "fear type 2 nondamaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+#req effect != 4	    -- fear
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Unsettling"
+#fatiguepersquare 1
+
+
+#nextspell "fear type 2 Secondary mrne"
+
+#descr "This spell is infused with dark magic that might slightly shake the confidence of those it affects. This effect alone is very unlikely to cause any creature to flee in terror."
+#details "Affected creatures make an easy MR check. Those that fail to resist suffer minor fear, temporarily lowering their morale. This effect is virtually unable to force victims to make morale checks on its own."
+
+#end
+
+#newsecondary "fear type 2 nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+#req effect != 4	    -- fear
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Distressing"
+#fatiguepersquare 2
+
+
+#nextspell "fear type 2 Secondary mrn"
+
+#descr "This spell is infused with dark magic that might slightly shake the confidence of those it affects. This effect alone is very unlikely to cause any creature to flee in terror."
+#details "Affected creatures make an MR check. Those that fail to resist suffer minor fear, temporarily lowering their morale. This effect is virtually unable to force victims to make morale checks on its own."
+
+#end
+
+#newsecondary "fear type 2 damaging mrne"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+#req paths != 256
+
+-- not ritual
+#req spelltype !& 4
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#req effect != 4	    -- fear
+
+#nameprefix "Unsettling"
+#fatiguepersquare 0.5
+
+#nextspell "fear type 2 Secondary mrne damaging"
+
+#descr "This spell is infused with dark magic that might slightly shake the confidence of those it wounds. This effect alone is very unlikely to cause any creature to flee in terror."
+#details "Wounded creatures make an easy MR check. Those that fail to resist suffer minor fear, temporarily lowering their morale. This effect is virtually unable to force victims to make morale checks on its own."
+
+
+#end
+
+#newsecondary "fear type 2 damaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 1
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+#offensiveeffect 1
+-- holy ok
+
+-- not ritual
+#req spelltype !& 4
+
+#req effect != 4	    -- fear
+
+#req nonscalingdamage < 40
+
+-- not on damage already
+#ondamage 1
+
+#nameprefix "Distressing"
+#fatiguepersquare 1
+
+#nextspell "fear type 2 Secondary mrn damaging"
+
+#descr "This spell is infused with dark magic that might slightly shake the confidence of those it wounds. This effect alone is very unlikely to cause any creature to flee in terror."
+#details "Wounded creatures make an MR check. Those that fail to resist suffer minor fear, temporarily lowering their morale. This effect is virtually unable to force victims to make morale checks on its own."
+
+#end
+
+
+

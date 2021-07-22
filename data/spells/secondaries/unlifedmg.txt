@@ -3,8 +3,6 @@
 -- evo only
 #spelltype 2
 
-#skipchance 80
-
 #paths 32
 #power 0
 #scalefatigueexponent 0.3
@@ -15,6 +13,9 @@
 
 -- don't apply to dummy spells like in battle horror seed
 #req damage > 3
+
+#nameprefix "Reanimating"
+#mult fatiguecost 1.15
 
 -- not for holy
 #req paths != 256
