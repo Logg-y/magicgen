@@ -3,7 +3,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 118
 #nameprefix "Cursed"
 #end
@@ -13,7 +12,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 366
 #nameprefix "Fateweaving"
 #end

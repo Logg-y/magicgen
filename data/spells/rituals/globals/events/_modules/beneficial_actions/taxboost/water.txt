@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action taxboost water"
+#minpowerlevel 0
+#maxpowerlevel 10
+
+#req path1 == 4
+
+#scaleparam "tax" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Rains of Fertility"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find fields become watered by unseasonal magical rainstorms, ensuring the effective growth of crops."
+#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+
+
+#end
+
+#taxboost 10
+#msg "Magical rains have ensured that the harvest has been especially bountiful."
+#nolog

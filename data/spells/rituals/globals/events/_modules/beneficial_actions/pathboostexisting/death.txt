@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pathboost death"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 32
+
+#modulegroup "Beneficial Global Effect"
+--#moduleskipchance 20
+
+#noun "Necromantic Power"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may cause someone close to them to be harmlessly enveloped in necromantic power, increasing their ability in death magic."
+#moduledetails "Grants +1 death magic to a random commander in the province, including to commanders who had no death magic to begin with. Paths cannot be raised above 5 in this way."
+
+
+#end
+
+#cleartarg
+#nation -2
+#pathboost 5
+#msg "A commander has gained skill in death magic!"
+#nolog

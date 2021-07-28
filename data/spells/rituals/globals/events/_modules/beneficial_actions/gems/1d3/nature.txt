@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d3 gems nature"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 64
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Gems of Life"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may rarely find magical gems in fruit and plants."
+#moduledetails "Grants 1d3 nature gems."
+
+
+#end
+
+#1d3vis 6
+#msg "Several nature gems have been found whilst harvesting crops."
+#nolog

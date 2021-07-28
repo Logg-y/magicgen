@@ -10,6 +10,7 @@
 
 #newunitmod "Summon Corpseeater Cmdr"
 #set corpseeater 2
+#set deadhp 1
 #nameprefix "Corpse-eating"
 #set hpoverslow 30
 #req hp > 6

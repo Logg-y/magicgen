@@ -18,6 +18,7 @@
 
 #nameprefix "Waterform"
 #fatiguepersquare 4
+#minfinalaoe 3
 
 
 #nextspell "Liquidbody Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Aqueous"
 #fatiguepersquare 2
+#minfinalaoe 7
 
 
 #nextspell "Liquidbody Secondary mrne"

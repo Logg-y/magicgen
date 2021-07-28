@@ -28,6 +28,7 @@
 #name 16 "Teleport NAMEPREFIX %Bishop%"
 #descr 64 "The caster summons ARTICLE %Bishop% to fight for him on the battlefield. The Bishop is a human high priest coerced to serve, and will leave once the battle is over."
 #descr 16 "The caster summons ARTICLE %Bishop% to fight for him on the battlefield. The Bishop is a human high priest coerced to serve, and will leave once the battle is over."
+#details "Bishops are human H3 priests."
 
 #scalefatiguemult 20
 #spelltype 528
@@ -62,6 +63,7 @@
 #name 16 "Summon NAMEPREFIX Bishop"
 #descr 16 "The caster summons ARTICLE Bishop to the service of the Pretender God."
 #descr 64 "The caster summons ARTICLE Bishop to the service of the Pretender God."
+#details "Bishops are human H3 priests."
 
 #spelltype 20
 

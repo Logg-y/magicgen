@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pathboost fire"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 1
+
+#modulegroup "Beneficial Global Effect"
+--#moduleskipchance 20
+
+#noun "Firebound Power"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may cause someone close to them to be harmlessly consumed by magical flames, increasing their ability in fire magic."
+#moduledetails "Grants +1 fire magic to a random commander in the province, including to commanders who had no fire magic to begin with. Paths cannot be raised above 5 in this way."
+
+
+#end
+
+#cleartarg
+#nation -2
+#pathboost 0
+#msg "A commander was gained skill in fire magic after being struck by a magical flames!"
+#nolog

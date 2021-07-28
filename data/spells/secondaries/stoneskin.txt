@@ -20,6 +20,7 @@
 
 #nameprefix "Stonetouched"
 #fatiguepersquare 8
+#minfinalaoe 1
 
 
 #nextspell "Stoneskin Secondary mrn"
@@ -51,6 +52,7 @@
 
 #nameprefix "Stony"
 #fatiguepersquare 4
+#minfinalaoe 5
 
 
 #nextspell "Stoneskin Secondary mrne"

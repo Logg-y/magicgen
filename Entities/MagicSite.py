@@ -267,6 +267,8 @@ class MagicSite(object):
         while formatted in utils.magicsitenames:
             formatted += " "
             if len(formatted) > 35:
+                print(f"Error: site name ({formatted}) is too long")
+                return None
                 raise ValueError("Magic site name too long")
         utils.magicsitenames.append(formatted)
         self.lastsitename = formatted

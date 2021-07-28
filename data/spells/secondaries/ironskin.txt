@@ -51,6 +51,7 @@
 
 #nameprefix "Steeled"
 #fatiguepersquare 6
+#minfinalaoe 5
 
 
 #nextspell "Ironskin Secondary mrne"

@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 3 earth"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Buried Relics"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may suddenly come across buried magical items."
+#moduledetails "Grants a random non-national construction 0-6 item."
+
+
+#end
+
+#magicitem 3
+#msg "A forgotten magical item has been unearthed."
+#nolog

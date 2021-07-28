@@ -95,7 +95,7 @@
 #paths 1
 #secondarypaths 1 
 
-#skipchance 67
+#skipchance 20
 #donotsetextraspellpath 1
 #extraspell "Summon water royal"
 
@@ -126,37 +126,7 @@
 #secondarypaths 33
 #secondarypathchance 100
 
-#skipchance 67
-
-#details "There is only one commander that can be called with this spell."
-#name 1 "King of Banefires"
-#name 32 "King of Banefires"
-#descr 1 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
-#descr 32 "The caster calls upon the supernatural forces of Fire itself and summons Anthrax, the King of Banefires. Anthrax was once one of the Kings of Elemental Fire and known as Catharsis. He has since fallen, earning himself a new name and title in the process. The King is a master of Fire and Death magic and is surrounded by a sickly green blaze of banefire."
-
-#spelltype 4
-
-#scalerate 0
-#end
-
-
-#neweffect "Summon king of banefires"
-#effect 10089
-#damage 9
-#spec 0
-#power 8
-#maxpower 8
-#precision -2
-#nreff 1
-#pathlevel 6
-#fatiguecost 5000
-#schools 1
-
-#paths 33
-#secondarypaths 33
-#secondarypathchance 100
-
-#skipchance 67
+#skipchance 40
 
 #details "There is only one commander that can be called with this spell."
 #name 1 "King of Banefires"
@@ -185,7 +155,7 @@
 #secondarypaths 136
 #secondarypathchance 100
 
-#skipchance 67
+#skipchance 20
 
 #details "There is only one commander that can be called with this spell."
 #name 8 "Father Illearth"

@@ -661,14 +661,15 @@ class SpellEffect(object):
                 paramval = getattr(mod, param)
                 if param == "aispellmod":
                     s.multiplyAISpellMod(1 + (paramval / 100))
-                elif param == "spec":
+                elif param == "spec" and paramval != 0:
                     # Add to nextspells too
                     next = s
                     while 1:
-                        if next is None:
+                        if next is None or next == "":
                             break
                         if next.spec & paramval == 0:
                             print(f"Add spec {paramval} to {next.name}")
+                            next.spec += paramval
                         next = next.nextspell
                 else:
                     setattr(s, param, getattr(s, param) + paramval)
@@ -1061,6 +1062,9 @@ class SpellEffect(object):
             tmp = s.nextspell
             while 1:
                 if tmp is not None and tmp != "":
+                    # nextspell on damage does not need this done to it or anything that follows
+                    if tmp.spec & 1152921504606846976:
+                        break
                     tmp.aoe = s.aoe
                     print(f"Set aoe for nextspell {tmp.name} to {s.aoe}")
                     tmp = tmp.nextspell

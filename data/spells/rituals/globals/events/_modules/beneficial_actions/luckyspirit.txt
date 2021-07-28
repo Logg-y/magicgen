@@ -1,0 +1,29 @@
+#neweventset "Beneficial Global action trigger good events"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 != 1
+#req path1 != 32
+#req path1 != 64
+#req path1 != 2
+#req path1 != 4
+#req path1 != 8
+
+#modulegroup "Beneficial Global Effect"
+
+#usefixedunitid 674
+#allowedunitmod "Lucky Spirits"
+
+#noun "Lucky Omens"
+
+#moduledescr "Affected provinces experience a sudden swing of good luck and fortunate things are very likely to happen there."
+#moduledetails "Affected provinces spawn an invisible lucky spirit that lasts for 3 turns. Each turn, there is a 20% chance that a good event is generated in the province."
+
+
+#end
+
+#msg "lucky spirit spawn"
+#notext
+#nolog
+#nation 2
+#stealthcom UNITID

@@ -89,6 +89,13 @@
 #descr "This particular CREATURE has the ability to attempt to redirect any damage taken onto its attacker. The attacker may resist this effect."
 #end
 
+#newunitmod "Summon Slimer"
+#req slimer == -1
+#set slimer 1
+#nameprefix "Slimy"
+#descr "This particular CREATURE may cover anyone attacking it in melee in a sticky slime."
+#end
+
 ---
 
 #newunitmod "Summon Poisonbarbs 15"

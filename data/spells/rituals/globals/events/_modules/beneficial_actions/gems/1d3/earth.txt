@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d3 gems earth"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Earthen Gems"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may rarely find magical earth gems buried beneath the surface."
+#moduledetails "Grants 1d3 earth gems."
+
+
+#end
+
+#1d3vis 3
+#msg "Several earth gems have been found while working the land."
+#nolog

@@ -138,7 +138,7 @@
 #anysummon 1
 
 #paths 16
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -154,7 +154,7 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -196,6 +196,22 @@
 
 #unitmod "Summon Damagereversal"
 #descr "When damaged, the summoned %creature% gain the ability to redirect any damage suffered onto their attacker instead. The attacker may attempt to resist this effect."
+
+#end
+
+#newsecondary "Summon Slimer"
+
+#anysummon 1
+
+#paths 4
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.7
+
+#unitmod "Summon Slimer"
+#descr "Those attacking the summoned %creature% in melee may become coated in a sticky slime."
 
 #end
 

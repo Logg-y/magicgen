@@ -46,6 +46,7 @@
 
 #nameprefix "Draining"
 #fatiguepersquare 6
+#minfinalaoe 1
 
 
 #nextspell "Soulvortex Secondary mrne"

@@ -10,8 +10,8 @@ from Services.utils import eventsets, eventmodulegroups
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
                         "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance",
-                        "setspelldamage", "effectnumberforunits", "makebattledummymonster", "fixedcreaturepower"]
-secondary_params_str = ["selectunitmod", "modulegroup", "moduledescr", "moduledetails", "magicsite", "unitmodlist"]
+                        "setspelldamage", "makebattledummymonster", "fixedcreaturepower"]
+secondary_params_str = ["modulegroup", "moduledescr", "moduledetails", "magicsite", "unitmodlist"]
 secondary_params_float = []
 
 
@@ -155,6 +155,22 @@ def readEventSet(fp):
                     if path not in curreff.dummymonsternames:
                         curreff.dummymonsternames[path] = []
                     curreff.dummymonsternames[path].append(m.groups()[1])
+                    continue
+
+                if line.startswith("#effectnumberforunits"):
+                    m = re.match('#effectnumberforunits\\W+(.*)', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #effectnumberforunits")
+                    curreff.effectnumberforunits.append(int(m.groups()[0]))
+                    continue
+
+                if line.startswith("#selectunitmod"):
+                    m = re.match('#selectunitmod\\W+"(.*)"', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #selectunitmod")
+                    if curreff.selectunitmod is None:
+                        curreff.selectunitmod = []
+                    curreff.selectunitmod.append(m.groups()[0])
                     continue
 
                 if line.startswith("#end"):

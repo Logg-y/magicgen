@@ -1,0 +1,34 @@
+#neweventset "Beneficial Global action gemsite astral"
+#minpowerlevel 6
+#maxpowerlevel 6
+
+#req path1 == 16
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Stellar Lands"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may discover new otherworldly and stellar objects across the land."
+#moduledetails "Adds a site providing 1 astral pearl to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_rare 50
+#req_land 1
+#nolog
+#msg "A strange otherworldly gate has opened. Within it, magical pearls are often found."
+-- enchanted gate
+#addsite 621
+#end
+
+#newevent
+CONDITION
+#req_land 1
+#req_freesites 1
+#req_rare 50
+#nolog
+#msg "A pond has begun to radiate stellar light. Magical pearls are often found in and around it."
+-- starlit pond
+#addsite 632

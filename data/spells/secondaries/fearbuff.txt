@@ -47,6 +47,7 @@
 
 #nameprefix "Fearful"
 #fatiguepersquare 4
+#minfinalaoe 5
 
 
 #nextspell "Fearbuff Secondary mrne"

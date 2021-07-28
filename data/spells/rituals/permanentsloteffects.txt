@@ -502,14 +502,14 @@
 #end
 
 #neweffect "Permanent effect gift of water breathing"
-#effect 10509
+#effect 10599
 #damage 111
 #spec 8388608
-#power 3
-#maxpower 7
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 800
 #scalefatiguemult 20
 #schools 18
 #unique 1

@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d6 gems astral"
+#minpowerlevel 6
+#maxpowerlevel 6
+
+#req path1 == 16
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Stellar Pearls"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may rarely find magical pearls under beams of moonlight."
+#moduledetails "Grants 1d6 astral pearls."
+
+
+#end
+
+#1d6vis 4
+#msg "Several astral pearls have been found during a starry night."
+#nolog

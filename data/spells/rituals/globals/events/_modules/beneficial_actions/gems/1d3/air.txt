@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d3 gems air"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 2
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Rain of Diamonds"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may rarely find magical diamonds raining from the sky."
+#moduledetails "Grants 1d3 air gems."
+
+
+#end
+
+#1d3vis 1
+#msg "Several air gems have been found falling from the sky."
+#nolog

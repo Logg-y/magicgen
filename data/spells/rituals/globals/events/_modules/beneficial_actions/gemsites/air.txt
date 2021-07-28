@@ -1,0 +1,34 @@
+#neweventset "Beneficial Global action gemsite air"
+#minpowerlevel 6
+#maxpowerlevel 6
+
+#req path1 == 2
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Land of Thunder"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may discover sites across the land touched by stormy power."
+#moduledetails "Adds a site providing 1 air gem to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_rare 50
+#req_land 1
+#nolog
+#msg "An ancient oak tree has been struck by lightning. Magical gems ooze from its torn trunk."
+-- skysplit oak
+#addsite 422
+#end
+
+#newevent
+CONDITION
+#req_land 1
+#req_freesites 1
+#req_rare 50
+#nolog
+#msg "Agricultural land has been struck by lightning. Magical gems can regularly be found amongst the glimmering vegetation that remains there."
+-- sparkling fields
+#addsite 421

@@ -203,6 +203,7 @@
 #raw "#clearspec"
 #raw "#fireres 5"
 #raw "#poisonres 15"
+#raw "#regeneration 10"
 #raw "#blind"
 #raw "#voidsanity 20"
 #raw "#spiritsight"

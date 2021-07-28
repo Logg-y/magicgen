@@ -26,8 +26,9 @@
 #power 4
 #maxpower 8
 #nreff 1
-#pathlevel 5
+#pathlevel 3
 #fatiguecost 2000
+#scalefatiguemult 100
 #schools 32
 
 #ainocast 1
@@ -36,9 +37,9 @@
 #unique 1
 
 #nextspell "XP Site Permanent"
-#scalerate 1
+#scalerate 3
 
-#basescale 5
+#basescale 10
 
 -- ESDB
 #paths 34

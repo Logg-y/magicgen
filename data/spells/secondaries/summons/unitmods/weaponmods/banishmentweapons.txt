@@ -5,7 +5,6 @@
 #setweaponmagic 1
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect442
 -- no special effects on weapon already
 #nameprefix "Dimensional"
@@ -18,7 +17,6 @@
 #setweaponmagic 1
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 441
 -- no special effects on weapon already
 #nameprefix "Infernal"

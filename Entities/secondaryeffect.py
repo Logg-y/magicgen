@@ -39,6 +39,7 @@ class SpellSecondaryEffect(object):
         self.fatiguepersquare = 0.0
 
         self.reqdamagingeffect = None
+        self.minfinalaoe = None
 
         self.nobattlefield = False
         self.nextspell = ""
@@ -54,8 +55,19 @@ class SpellSecondaryEffect(object):
         self.magicpathvaluescaling = 0.0
         self.unitmod = ""
 
+        # Cache combos of (eff, modifier, researchlevel) and result
+        self._cache = {}
+
     def compatibility(self, eff, modifier, researchlevel):
         "Return True if this secondary is compatible with the given SpellEffect."
+        triplet = (eff, modifier, researchlevel)
+        if triplet in self._cache:
+            return self._cache[triplet]
+        retval = self._compatibility(eff, modifier, researchlevel)
+        self._cache[triplet] = retval
+        return retval
+
+    def _compatibility(self, eff, modifier, researchlevel):
         # Skipchance is done by the main processing loop now
         # it makes determining if there are legal modifiers for a spell a LOT better
 
@@ -207,5 +219,15 @@ class SpellSecondaryEffect(object):
                 if curr.effect % 1000 not in utils.DAMAGING_EFFECTS or curr.effect % 1000 == 134:
                     return False
                 break
+
+        if self.minfinalaoe is not None:
+            if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
+                finalaoe = eff.aoe % 1000 + (eff.aoe // 1000 * eff.pathlevel)
+                effectivepower = researchlevel - eff.power - modifier.power - self.power
+                finalaoe += round(eff.scalerate * ((effectivepower*(effectivepower+1))/2), 0)
+            else:
+                finalaoe = eff.aoe
+            if finalaoe < self.minfinalaoe:
+                return False
 
         return True

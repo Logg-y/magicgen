@@ -31,9 +31,9 @@
 #spec 8388608
 #power 5
 #maxpower 14
-#nreff 1001
+#nreff 4
 #pathlevel 3
-#fatiguecost 700
+#fatiguecost 900
 #schools 1
 
 #paths 16
@@ -51,7 +51,7 @@
 #skipchance 97
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatiguemult 1.5
 #newunit "Otherness"
 
 #scalerate 2

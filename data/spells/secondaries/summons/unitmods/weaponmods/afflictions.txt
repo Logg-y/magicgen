@@ -5,7 +5,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 335
 #nameprefix "Armsevering"
 #end
@@ -17,7 +16,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 333
 #nameprefix "Eyeseeking"
 #end
@@ -29,7 +27,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 421
 #nameprefix "Hamstringing"
 #end
@@ -39,7 +36,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 414
 #nameprefix "Pestilent"
 #end
@@ -51,7 +47,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 150
 #nameprefix "Chestseeking"
 #end
@@ -63,7 +58,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 690
 #nameprefix "Bloody"
 #end
@@ -75,7 +69,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 156
 #nameprefix "Feebleminding"
 #end
@@ -86,7 +79,6 @@
 -- no special effects on weapon already
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
-#req aoe == 0
 #set secondaryeffect 544
 #nameprefix "Shrinking"
 #end

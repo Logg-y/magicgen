@@ -19,7 +19,7 @@
 --#scalefatiguemult 20
 #aispellmod -20
 
-#name 64 "Summon Horned Serpents"
+#name 64 "Summon NAMEPREFIX Horned Serpents"
 #descr 64 "The caster summons several horned serpents. Horned serpents are large snakes with thick hides and venomous fangs."
 
 #spelltype 528
@@ -41,7 +41,7 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "Summon Horned Serpents"
+#name 64 "Summon NAMEPREFIX Horned Serpents"
 #descr 64 "The caster summons several horned serpents. Horned serpents are large snakes with thick hides and venomous fangs."
 
 #spelltype 20
@@ -71,7 +71,7 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "Horned Serpent Attack"
+#name 64 "NAMEPREFIX Horned Serpent Attack"
 #descr 64 "The caster summons a horned serpent and directs it to seek out an ambush an enemy commander. Horned serpents are large snakes with thick hides and venomous fangs."
 
 #spelltype 4
@@ -99,7 +99,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 30
 
-#name 64 "Send Horned Serpents"
+#name 64 "NAMEPREFIX Send Horned Serpents"
 #descr 64 "The caster summons horned serpents and directs them to attack a distant province."
 
 #spelltype 20

@@ -49,7 +49,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 72
+#skipchance 40
 
 #paths 72
 #secondarypaths 72

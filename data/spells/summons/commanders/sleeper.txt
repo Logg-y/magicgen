@@ -46,13 +46,14 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 600
-#chassisvalue 600
+#chassisvalue 300
 #scalecost 1.8
 #scalefatigueexponent 0.7
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 20
+#skipchance 0
+#alwaysgenerate 1
 
 #pathskipchance 16 95
 

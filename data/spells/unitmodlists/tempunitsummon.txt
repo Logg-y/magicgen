@@ -78,6 +78,7 @@
 #allowedunitmod "Summon Entangle"
 #allowedunitmod "Summon Bloodvengeance"
 #allowedunitmod "Summon Damagereversal"
+#allowedunitmod "Summon Slimer"
 #allowedunitmod "Summon Shockweapon"
 #allowedunitmod "Summon Chainshockweapon"
 #allowedunitmod "Summon Stoneskin"

@@ -1,326 +1,326 @@
-#neweffect "Find items trinkets"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 5
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 4000
-#scalefatiguemult 430
-#schools 32
-#unique 1
--- E S D
-#paths 56
-#skipchance 85
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items trinkets"
-
-#basescale 2
-#spelltype 4
-#scalerate 2
-
-#name 8 "Forgotten Trinkets"
-#name 16 "Locate Trinkets"
-#name 32 "Trinkets of the Dead"
-
-#descr 8 "This enchantment allows miners and farmers to commonly find magical trinkets as they work the land. Presumably such trinkets date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
-#descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost trinkets. Some of those found will be transported to the lab. Presumably such trinkets date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
-#descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical trinkets. The populace will unearth these and some of the items found will be donated to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0 generic magical item. This only happens in friendly provinces."
-#end
-
-#neweffect "Find items trinkets fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 5
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 4000
-#scalefatiguemult 430
-#schools 32
-#unique 1
-#paths 1
-#skipchance 95
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items trinkets fire"
-
-#basescale 2
-#spelltype 4
-#scalerate 2
-
-#name 1 "Enchanted Forges"
-
-#descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical trinket of some form which is then given to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0 generic magical item. This only happens in friendly provinces."
-#end
-
-
-
---------------
-
-
-
-#neweffect "Find items 0-2"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 6
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 5000
-#scalefatiguemult 580
-#schools 32
-#unique 1
--- E S D
-#paths 56
-#skipchance 85
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-2"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 8 "Forgotten items"
-#name 16 "Locate items"
-#name 32 "items of the Dead"
-
-#descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
-#descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
-#descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-2 generic magical item. This only happens in friendly provinces."
-#end
-
-
-#neweffect "Find items 0-2 fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 6
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 5000
-#scalefatiguemult 580
-#schools 32
-#unique 1
-#paths 1
-#skipchance 95
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-2 fire"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 1 "Enchanted Forges"
-
-#descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-2 generic magical item. This only happens in friendly provinces."
-#end
-
------
-
-
-#neweffect "Find items 0-4"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 6000
-#scalefatiguemult 630
-#schools 32
-#unique 1
--- E S D
-#paths 56
-#skipchance 85
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-4"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 8 "Forgotten items"
-#name 16 "Locate items"
-#name 32 "items of the Dead"
-
-#descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
-#descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
-#descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-4 generic magical item. This only happens in friendly provinces."
-#end
-
-
-#neweffect "Find items 0-4 fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 6000
-#scalefatiguemult 630
-#schools 32
-#paths 1
-#skipchance 95
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-4 fire"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 1 "Enchanted Forges"
-
-#descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-4 generic magical item. This only happens in friendly provinces."
-#end
-
-
----------
-
-
-#neweffect "Find items 0-6"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 8
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 7000
-#scalefatiguemult 780
-#schools 32
-#unique 1
--- E S D
-#paths 56
-#skipchance 85
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-6"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 8 "Forgotten treasures"
-#name 16 "Locate treasures"
-#name 32 "treasures of the Dead"
-
-#descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
-#descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
-#descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-6 generic magical item. This only happens in friendly provinces."
-#end
-
-
-#neweffect "Find items 0-6 fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 8
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 7000
-#scalefatiguemult 780
-#schools 32
-#unique 1
-#paths 1
-#skipchance 95
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 0-6 fire"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 1 "Enchanted Forges"
-
-#descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-6 generic magical item. This only happens in friendly provinces."
-#end
-
-
-
-------
-
-
-
-#neweffect "Find items 4-6"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 9
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 10000
-#scalefatiguemult 900
-#schools 32
-#unique 1
--- E S D
-#paths 56
-#skipchance 85
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 4-6"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 8 "Forgotten artifacts"
-#name 16 "Locate artifacts"
-#name 32 "artifacts of the Dead"
-
-#descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
-#descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
-#descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 4-6 generic magical item. This only happens in friendly provinces."
-#end
-
-
-#neweffect "Find items 4-6 fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 9
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 10000
-#scalefatiguemult 900
-#schools 32
-#unique 1
-#paths 1
-#skipchance 95
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Find items 4-6 fire"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 1 "Enchanted Forges"
-
-#descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
-#details "There is a SCALEAMT% chance per point of dominion to gain a random construction 4-6 generic magical item. This only happens in friendly provinces."
-#end
+-- #neweffect "Find items trinkets"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 5
+-- #maxpower 10
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 4000
+-- #scalefatiguemult 430
+-- #schools 32
+-- #unique 1
+-- -- E S D
+-- #paths 56
+-- #skipchance 85
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items trinkets"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #name 8 "Forgotten Trinkets"
+-- #name 16 "Locate Trinkets"
+-- #name 32 "Trinkets of the Dead"
+-- 
+-- #descr 8 "This enchantment allows miners and farmers to commonly find magical trinkets as they work the land. Presumably such trinkets date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
+-- #descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost trinkets. Some of those found will be transported to the lab. Presumably such trinkets date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
+-- #descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical trinkets. The populace will unearth these and some of the items found will be donated to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- #neweffect "Find items trinkets fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 5
+-- #maxpower 10
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 4000
+-- #scalefatiguemult 430
+-- #schools 32
+-- #unique 1
+-- #paths 1
+-- #skipchance 95
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items trinkets fire"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #name 1 "Enchanted Forges"
+-- 
+-- #descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical trinket of some form which is then given to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- 
+-- --------------
+-- 
+-- 
+-- 
+-- #neweffect "Find items 0-2"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 6
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 5000
+-- #scalefatiguemult 580
+-- #schools 32
+-- #unique 1
+-- -- E S D
+-- #paths 56
+-- #skipchance 85
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-2"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 8 "Forgotten items"
+-- #name 16 "Locate items"
+-- #name 32 "items of the Dead"
+-- 
+-- #descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
+-- #descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
+-- #descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-2 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- #neweffect "Find items 0-2 fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 6
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 5000
+-- #scalefatiguemult 580
+-- #schools 32
+-- #unique 1
+-- #paths 1
+-- #skipchance 95
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-2 fire"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 1 "Enchanted Forges"
+-- 
+-- #descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-2 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- -----
+-- 
+-- 
+-- #neweffect "Find items 0-4"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 6000
+-- #scalefatiguemult 630
+-- #schools 32
+-- #unique 1
+-- -- E S D
+-- #paths 56
+-- #skipchance 85
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-4"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 8 "Forgotten items"
+-- #name 16 "Locate items"
+-- #name 32 "items of the Dead"
+-- 
+-- #descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
+-- #descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
+-- #descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-4 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- #neweffect "Find items 0-4 fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 6000
+-- #scalefatiguemult 630
+-- #schools 32
+-- #paths 1
+-- #skipchance 95
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-4 fire"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 1 "Enchanted Forges"
+-- 
+-- #descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-4 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- ---------
+-- 
+-- 
+-- #neweffect "Find items 0-6"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 8
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 7000
+-- #scalefatiguemult 780
+-- #schools 32
+-- #unique 1
+-- -- E S D
+-- #paths 56
+-- #skipchance 85
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-6"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 8 "Forgotten treasures"
+-- #name 16 "Locate treasures"
+-- #name 32 "treasures of the Dead"
+-- 
+-- #descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
+-- #descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
+-- #descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-6 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- #neweffect "Find items 0-6 fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 8
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 7000
+-- #scalefatiguemult 780
+-- #schools 32
+-- #unique 1
+-- #paths 1
+-- #skipchance 95
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 0-6 fire"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 1 "Enchanted Forges"
+-- 
+-- #descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 0-6 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- 
+-- ------
+-- 
+-- 
+-- 
+-- #neweffect "Find items 4-6"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 9
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 10000
+-- #scalefatiguemult 900
+-- #schools 32
+-- #unique 1
+-- -- E S D
+-- #paths 56
+-- #skipchance 85
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 4-6"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 8 "Forgotten artifacts"
+-- #name 16 "Locate artifacts"
+-- #name 32 "artifacts of the Dead"
+-- 
+-- #descr 8 "This enchantment allows miners and farmers to commonly find magical items as they work the land. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something. Some of the items found will be transported into the lab."
+-- #descr 16 "This enchantment causes those working the land and earth to become incredibly lucky when it comes to finding long-lost items. Some of those found will be transported to the lab. Presumably such items date from ancient battles and were always present, though this enchantment makes it difficult to dig in the ground without finding something."
+-- #descr 32 "This enchantment causes spiritual apparitions to appear and share their knowledge of buried magical items. The populace will unearth these and some of the items found will be donated to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 4-6 generic magical item. This only happens in friendly provinces."
+-- #end
+-- 
+-- 
+-- #neweffect "Find items 4-6 fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 9
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 10000
+-- #scalefatiguemult 900
+-- #schools 32
+-- #unique 1
+-- #paths 1
+-- #skipchance 95
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Find items 4-6 fire"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 1 "Enchanted Forges"
+-- 
+-- #descr 1 "The flames burning in forges across the nation become enchanted. Whilst this does not help with the direct forging of magical items, occasionally a mundane item gains magical potential from the flames. The nature of the flames causes the unfinished piece to rapidly reshape into a magical item of some form which is then given to the lab."
+-- #details "There is a SCALEAMT% chance per point of dominion to gain a random construction 4-6 generic magical item. This only happens in friendly provinces."
+-- #end

@@ -30,6 +30,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Master Necromancer% to join him in battle. The %Master Necromancer% will leave once the battle is over."
 #descr 16 "The caster teleports ARTICLE %Master Necromancer% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Master Necromancer% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Master Necromancer% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Master Necromancer% will leave once the battle is over."
+#details "Master Necromancers are human D3 mages."
 
 #scalefatiguemult 20
 #spelltype 528
@@ -54,7 +55,7 @@
 #schools 1
 #newunit "Master Necromancer"
 
-#skipchance 77
+#skipchance 40
 #pathskipchance 16 95
 #pathskipchance 64 80
 #paths 112
@@ -67,6 +68,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE_N %Master Necromancer%."
 #descr 16 "The caster teleports ARTICLE_N %Master Necromancer% to him and convinces PRONOUN to fight for him."
 #descr 64 "The caster attracts ARTICLE_N %Master Necromancer% to him and convinces PRONOUN to fight for him."
+#details "Master Necromancers are human D3 mages."
 
 #spelltype 20
 

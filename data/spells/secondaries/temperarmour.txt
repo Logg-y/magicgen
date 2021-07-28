@@ -17,7 +17,8 @@
 #req spelltype !& 4
 
 #nameprefix "Hardening"
-#fatiguepersquare 4
+#fatiguepersquare 3
+#minfinalaoe 5
 
 
 #nextspell "Temparmour Secondary mrn"
@@ -46,7 +47,8 @@
 #req spelltype !& 4
 
 #nameprefix "Tempering"
-#fatiguepersquare 2
+#fatiguepersquare 1.5
+#minfinalaoe 15
 
 
 #nextspell "Temparmour Secondary mrne"

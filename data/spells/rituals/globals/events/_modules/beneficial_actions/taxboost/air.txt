@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action taxboost air"
+#minpowerlevel 0
+#maxpowerlevel 10
+
+#req path1 == 2
+
+#scaleparam "tax" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Winds of Productivity"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find the productivity of windmills massively increased by sudden magical winds."
+#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+
+
+#end
+
+#taxboost 10
+#msg "The harvest has been especially bountiful."
+#nolog

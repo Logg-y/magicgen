@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pathboost air"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 2
+
+#modulegroup "Beneficial Global Effect"
+--#moduleskipchance 20
+
+#noun "Stormbound Power"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may cause someone close to them to be harmlessly struck by lightning, increasing their ability in air magic."
+#moduledetails "Grants +1 air magic to a random commander in the province, including to commanders who had no air magic to begin with. Paths cannot be raised above 5 in this way."
+
+
+#end
+
+#cleartarg
+#nation -2
+#pathboost 1
+#msg "A commander was gained skill in air magic after being struck by a bolt of lightning!"
+#nolog

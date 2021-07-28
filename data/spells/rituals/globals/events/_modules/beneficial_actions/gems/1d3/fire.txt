@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d3 gems fire"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 1
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Ruby Embers"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find magical rubies amongst the ashes of extinguished fires."
+#moduledetails "Grants 1d3 fire gems."
+
+
+#end
+
+#1d3vis 0
+#msg "Several fire gems have been found in the remains of a fire."
+#nolog

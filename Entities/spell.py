@@ -114,6 +114,8 @@ class Spell(object):
         out += f"#newspell {self.id}\n"
         if self.copyspell is not None:
             out += '#copyspell "{}"{}'.format(self.copyspell, "\n")
+        if self.restricted is not None:
+            out += f"#restricted {self.restricted}\n"
         out += "#name \"" + self.name + "\"\n"
         out += f"#effect {self.effect}\n"
         out += f"#damage {self.damage}\n"
@@ -170,8 +172,6 @@ class Spell(object):
             out += f"#onlygeosrc {self.onlygeosrc}\n"
         if self.godpathspell is not None:
             out += f"#godpathspell {self.godpathspell}\n"
-        if self.restricted is not None:
-            out += f"#restricted {self.restricted}\n"
         if self.aispellmod != 0:
             out += f"#aispellmod {self.aispellmod}\n"
         if self.hiddenench is not None:

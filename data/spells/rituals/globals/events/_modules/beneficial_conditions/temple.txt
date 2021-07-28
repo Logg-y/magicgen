@@ -1,0 +1,28 @@
+#neweventset "Beneficial Global cond temples"
+#minpowerlevel -3
+#maxpowerlevel 0
+
+#scaleparam "req_domchance" 2
+#modulebasescale 2
+
+#modulegroup "Beneficial Global Condition"
+
+-- #noun ""
+#verb "Enshrined"
+
+#textrepl "SUBJECT" "The local clergy"
+
+#moduledescr "This enchantment affects all friendly provinces containing a temple within the caster's dominion."
+#moduledetails "Every turn, each friendly province with a temple has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+
+
+
+#end
+
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 2
+#req_temple 1

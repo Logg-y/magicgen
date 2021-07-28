@@ -18,6 +18,7 @@
 
 #nameprefix "Courageous"
 #fatiguepersquare 1
+#minfinalaoe 5
 
 
 #nextspell "Morale Boost Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Inspiring"
 #fatiguepersquare 0.5
+#minfinalaoe 15
 
 
 #nextspell "Morale Boost Secondary mrne"

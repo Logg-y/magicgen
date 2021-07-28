@@ -4,6 +4,5 @@
 #req secondaryeffectid == 0
 #req secondaryeffectalwaysid == 0
 #set secondaryeffect 98
-#req aoe == 0
 #nameprefix "Plagued"
 #end

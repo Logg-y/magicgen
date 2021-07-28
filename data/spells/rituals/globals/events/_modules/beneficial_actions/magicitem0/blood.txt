@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 0 blood"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 128
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Infernal Trinkets"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may be given a magical item from demons."
+#moduledetails "Grants a random non-national construction 0 item."
+
+
+#end
+
+#magicitem 0
+#msg "A magical item was offered by a demon."
+#nolog

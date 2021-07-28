@@ -17,6 +17,7 @@
 
 #nameprefix "Shielding"
 #fatiguepersquare 2.5
+#minfinalaoe 5
 
 
 #nextspell "Airshield Secondary mrn"
@@ -45,6 +46,7 @@
 
 #nameprefix "Protective"
 #fatiguepersquare 1.25
+#minfinalaoe 12
 
 
 #nextspell "Airshield Secondary mrne"

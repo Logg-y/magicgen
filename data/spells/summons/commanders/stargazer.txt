@@ -30,6 +30,7 @@
 #descr 8 "The earth mage lets out a call for ARTICLE %Stargazer% to join him in battle. The %Stargazer% will leave once the battle is over."
 #descr 16 "The caster teleports ARTICLE %Stargazer% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Stargazer% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Stargazer% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Stargazer% will leave once the battle is over."
+#details "Stargazers are human S1 mages."
 
 #scalefatiguemult 10
 #spelltype 528
@@ -54,7 +55,7 @@
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 0
-#skipchance 77
+#skipchance 40
 #newunit "Stargazer"
 
 #paths 80
@@ -67,6 +68,7 @@
 #descr 8 "The earth mage lets out a call for ARTICLE %Stargazer%."
 #descr 16 "The caster teleports ARTICLE %Stargazer% to him and convinces PRONOUN to fight for him."
 #descr 64 "The caster attracts ARTICLE %Stargazer% to him and convinces PRONOUN to fight for him."
+#details "Stargazers are human S1 mages."
 
 #spelltype 20
 

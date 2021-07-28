@@ -18,6 +18,7 @@
 
 #nameprefix "Mosscoating"
 #fatiguepersquare 4
+#minfinalaoe 1
 
 
 #nextspell "Mossbody Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Mossy"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Mossbody Secondary mrne"

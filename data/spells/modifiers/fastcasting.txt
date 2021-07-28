@@ -6,7 +6,7 @@
 #power -1
 
 #aispellmod 10
-#pathlevel 1
+#pathlevel 0
 
 #mult casttime 0.75
 #mult fatiguecost 0.85
@@ -26,7 +26,7 @@
 #spelltype 0
 
 #power -1
-#pathlevel 1
+#pathlevel 0
 
 #aispellmod 25
 

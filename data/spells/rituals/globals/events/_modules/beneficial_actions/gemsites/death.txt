@@ -1,0 +1,34 @@
+#neweventset "Beneficial Global action gemsite death"
+#minpowerlevel 6
+#maxpowerlevel 6
+
+#req path1 == 32
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Enchanted Graveyards"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find that existing burial grounds have become enchanted with magical power."
+#moduledetails "Adds a site providing 1 death gem to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_rare 50
+#req_land 1
+#nolog
+#msg "A tomb has become enchanted with magic. Within it, magical gems are often found."
+-- enchanted tomb
+#addsite 694
+#end
+
+#newevent
+CONDITION
+#req_land 1
+#req_freesites 1
+#req_rare 50
+#nolog
+#msg "A burial ground has become enchanted with magic, twisting it into a deathly maze. Within it, magical gems are often found."
+-- labyrinth of skulls
+#addsite 703

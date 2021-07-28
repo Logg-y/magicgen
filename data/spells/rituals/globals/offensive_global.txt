@@ -8,8 +8,8 @@
 #pathlevel 5
 #fatiguecost 3000
 #schools 2
-#paths 255
-#skipchance 25
+#paths 127
+#skipchance 50
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
@@ -32,6 +32,40 @@
 
 #end
 
+#neweffect "Offensive Global in Blood"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 6000
+#schools 2
+#paths 128
+#skipchance 80
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Offensive Global"
+
+#name 32 "Some kind of offensive global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 1200
+
+#pathskipchance 128 80
+
+#end
+
 #neweffect "Offensive Global in Enchantment"
 #effect 10081
 #damage 17
@@ -42,8 +76,8 @@
 #pathlevel 5
 #fatiguecost 3000
 #schools 16
-#paths 255
-#skipchance 66
+#paths 127
+#skipchance 50
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"
@@ -76,8 +110,8 @@
 #pathlevel 5
 #fatiguecost 3000
 #schools 32
-#paths 255
-#skipchance 66
+#paths 127
+#skipchance 50
 #secondarypaths 0
 #secondarypathchance 0
 #eventset "Offensive Global"

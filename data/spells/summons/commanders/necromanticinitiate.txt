@@ -32,6 +32,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Necromantic Initiate% to join him in battle. The %Necromantic Initiate% will leave once the battle is over."
 #descr 16 "The caster teleports ARTICLE %Necromantic Initiate% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Necromantic Initiate% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Necromantic Initiate% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Necromantic Initiate% will leave once the battle is over."
+#details "Necromantic Initiates are human D1 mages."
 
 #scalefatiguemult 10
 #spelltype 528
@@ -56,7 +57,7 @@
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 95
-#skipchance 99
+#skipchance 40
 #newunit "Necromantic Initiate"
 
 #paths 112
@@ -69,6 +70,7 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Necromantic Initiate%."
 #descr 16 "The caster teleports ARTICLE %Necromantic Initiate% to him and convinces PRONOUN to fight for him."
 #descr 64 "The caster attracts ARTICLE %Necromantic Initiate% to him and convinces PRONOUN to fight for him."
+#details "Necromantic Initiates are human D1 mages."
 
 #spelltype 20
 

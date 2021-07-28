@@ -9,6 +9,9 @@ start battle spells on commanders
 
 ench that turns pop into death gems?
 
+new weapon support
+	many new variables on giving summons new/added weapon effects
+
 event id support
 	cast a spell that gives you a ton of a certain item (or random items) at a high cost reduction
 
@@ -20,88 +23,18 @@ item modding support
 	extralife commanders
 	summon shortlived 100% field auras (modded #heat etc only goes up to 100, 6xx on a start item is needed to do this)
 
-globals that add sites to provinces (fort defenders, healing, scrying, enter to summon X...)
-
 can I make commander (mage) summons out of units?
 
-- push a release, probably about here
+what does weapon extra effect drake fire actually do?
+
+secondary effect mrne buff clouds
+
+consider negative exponent on more summons, so that high level bulk summoning spells do not tend towards scalefatiguemult per summon and stop getting cheaper
 
 go over remote attack pricing again (eww)
 
-beneficial globals -> modular system
-
-actions:
-	everywhere
-	seasons
-	labs
-	forts
-	temples
-	researchers
-	preachers
-	magic paths
-	site searching
-	blood hunting (req b1+ mage)
 	
-effects:
-	magic items
-	gold
-	gems
-	% tax boost
-	pd boost
-	add sites
-		mines
-		arena
-		gems
-			F
-				enchanted pyre
-				smoulderstone
-			A
-				skysplit oak
-				sparkling fields
-			W
-				well of white water
-				enchanted well
-			E
-				earthroot tower
-				quicksand
-			S
-				enchanted gate
-				starlit pond
-			D
-				enchanted tomb
-				labyrinth of skulls
-			N
-				wolf oak
-				enchanted field
-			
-		
-	commander gains xp
-	commander gets pathboosted
-	spawn lucky spirits
-	
-	
-
-			
-TEST
-	weapon additions to summons (for balance mostly)
-	disbelieve dmg
-	new cloud graphics
-	secondary effects
-	mages with less research adjustment
-	salt dmg
-	battlesummon buffs
-	spectral mage
-	cost changed summon secondary efects
-	retinues (pricing)
-	summon every round in combat (pricing)
-	raise shape (pricing)
-	I NEED TO FIX DYNAMIC SCALING AGAIN - it can try to add more scaling than there is effects to remove, leading to the -8 + 9/level stuff again I TRIED TO FIX THIS BUT WAS SLEEPY, CHECK
-	modular globals to make sure they still work
-	MODIFIER spec modifications passing to nextspells
-	unitmods on edge of field
-	blood dominate demon
-	
-v2.1.8
+v3.0.0
 
 ADDITIONS
 
@@ -187,6 +120,7 @@ Changed how secondary path levels are calculated. Before it would be randomly sp
 All montag dummies now have 1 hp and secondshape into their intended form, in case they somehow end up in battle before firstshape kicks in.
 Introduced logic to try to balance the number of spells per path slightly.
 Research and school levels now generate in a random order. This is so the path balancing logic doesn't always skip over the same spell effects.
+Sleeper commander ritual spells now always generate for the sake of magic leadership.
 
 BALANCE
 

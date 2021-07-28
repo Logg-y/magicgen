@@ -18,6 +18,7 @@
 
 #nameprefix "Lucky"
 #fatiguepersquare 4
+#minfinalaoe 1
 
 
 #nextspell "Luck Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Fortuitous"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Luck Secondary mrne"

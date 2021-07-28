@@ -18,6 +18,7 @@
 
 #nameprefix "Keen"
 #fatiguepersquare 8
+#minfinalaoe 1
 
 
 #nextspell "WoS Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Sharp"
 #fatiguepersquare 4
+#minfinalaoe 3
 
 
 #nextspell "WoS Secondary mrne"

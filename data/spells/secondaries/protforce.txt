@@ -18,6 +18,7 @@
 
 #nameprefix "Guarding"
 #fatiguepersquare 8
+#minfinalaoe 1
 
 
 #nextspell "Protforce Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Protecting"
 #fatiguepersquare 4
+#minfinalaoe 5
 
 
 #nextspell "Protforce Secondary mrne"

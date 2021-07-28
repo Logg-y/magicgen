@@ -17,8 +17,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL1"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -41,8 +41,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL2"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -65,8 +65,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL3"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -89,8 +89,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL4"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -113,8 +113,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL5"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -136,8 +136,8 @@
 #mult fatiguecost 1.3
 #magicpathvaluescaling 0.3
 #unitmod "Summon Raise Shape RL6"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -160,8 +160,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL7"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -184,8 +184,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL8"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -207,8 +207,8 @@
 #mult fatiguecost 1.3
 #magicpathvaluescaling 0.3
 #unitmod "Summon Raise Shape RL9"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -230,8 +230,8 @@
 #fatiguecostpereffect 2800
 
 #unitmod "Summon Raise Shape RL10"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -254,8 +254,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL11"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -278,8 +278,8 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL12"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end
 
@@ -302,7 +302,7 @@
 #magicpathvaluescaling 0.3
 
 #unitmod "Summon Raise Shape RL13"
-#descr "The summoned %creature% is able to transform living creatures it kills into magical creatures."
-#details "The summoned commander reanimates killed living creatures into a random magical creature."
+#descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
+#details "The summoned creatures reanimate killed living creatures into a random magical creature."
 
 #end

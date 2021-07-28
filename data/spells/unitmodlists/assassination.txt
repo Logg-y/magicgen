@@ -83,6 +83,7 @@
 #allowedunitmod "Summon Horrormark"
 #allowedunitmod "Summon Entangle"
 #allowedunitmod "Summon Bloodvengeance"
+#allowedunitmod "Summon Slimer"
 #allowedunitmod "Summon Damagereversal"
 #allowedunitmod "Summon Shockweapon"
 #allowedunitmod "Summon Chainshockweapon"

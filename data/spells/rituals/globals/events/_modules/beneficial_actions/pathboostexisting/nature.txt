@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pathboost nature"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 64
+
+#modulegroup "Beneficial Global Effect"
+--#moduleskipchance 20
+
+#noun "Gaia's Power"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may cause someone close to them to be harmlessly enveloped in natural power, increasing their ability in nature magic."
+#moduledetails "Grants +1 nature magic to a random commander in the province, including to commanders who had no nature magic to begin with. Paths cannot be raised above 5 in this way."
+
+
+#end
+
+#cleartarg
+#nation -2
+#pathboost 5
+#msg "A commander has gained skill in nature magic!"
+#nolog

@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action gold earth"
+#minpowerlevel -2
+#maxpowerlevel 10
+
+#req path1 == 8
+
+#scaleparam "gold" 10
+
+#modulegroup "Beneficial Global Effect"
+#modulebasescale 20
+
+#noun "Midas Touch"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find that metal objects they touch occasionally become converted to solid gold."
+#moduledetails "Grants SCALEAMT gold."
+
+
+#end
+
+#gold 20
+#msg "With a mere touch, some mundane metal has been turned to gold!"
+#nolog

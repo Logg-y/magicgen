@@ -248,6 +248,7 @@
 #req spec !& 8192
 
 #req nonscalingdamage < 40
+#minfinalaoe 10
 
 -- not on damage already
 #ondamage 1

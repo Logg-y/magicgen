@@ -18,6 +18,7 @@
 
 #nameprefix "Mighty"
 #fatiguepersquare 2.5
+#minfinalaoe 5
 
 
 #nextspell "Strength Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Powerful"
 #fatiguepersquare 1.25
+#minfinalaoe 15
 
 
 #nextspell "Strength Secondary mrne"

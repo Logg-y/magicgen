@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pdboost astral"
+#minpowerlevel -3
+#maxpowerlevel 7
+
+#req path1 == 16
+
+#scaleparam "defence" 1
+#modulebasescale 1
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Entice Militia"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find common folk strangely interested in volunteering for the local militia."
+#moduledetails "Grants SCALEAMT points of PD in affected provinces."
+
+
+#end
+
+#defence 1
+#msg "There have been volunteers to serve in the local militia."
+#nolog

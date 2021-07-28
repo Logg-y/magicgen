@@ -29,6 +29,7 @@
 #descr 8 "The nature mage lets out a call for ARTICLE %Archdruid% to join him in battle. The %Archdruid% will leave once the battle is over."
 #descr 16 "The caster teleports ARTICLE %Archdruid% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Archdruid% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Archdruid% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Archdruid% will leave once the battle is over."
+#details "Archdruids are human N3 mages."
 
 #scalefatiguemult 20
 #spelltype 528
@@ -53,7 +54,7 @@
 #schools 1
 #newunit "Archdruid"
 
-#skipchance 77
+#skipchance 40
 #pathskipchance 16 95
 #paths 80
 #secondarypaths 64
@@ -65,6 +66,7 @@
 #descr 8 "The nature mage lets out a call for ARTICLE_N %Archdruid%."
 #descr 16 "The caster teleports ARTICLE_N %Archdruid% to him and convinces PRONOUN to fight for him."
 #descr 64 "The caster attracts ARTICLE_N %Archdruid% to him and convinces PRONOUN to fight for him."
+#details "Archdruids are human N3 mages."
 
 #spelltype 20
 

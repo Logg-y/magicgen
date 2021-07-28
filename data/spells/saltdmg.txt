@@ -3,10 +3,10 @@
 #damage 1003
 #spec 16512
 #aoe 1
-#power -2
+#power 2
 #maxpower 7
 #precision 1
-#range 30
+#range 20
 #pathlevel 1
 #fatiguecost 5
 #explspr 10145

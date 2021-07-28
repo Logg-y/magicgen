@@ -1,0 +1,24 @@
+#neweventset "Beneficial Global action pdboost fire"
+#minpowerlevel -3
+#maxpowerlevel 7
+
+#req path1 == 1
+
+#scaleparam "defence" 1
+#modulebasescale 1
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Defensive Desire"
+#noun "Call to Arms"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find volunteers to serve in the local militia."
+#moduledetails "Grants SCALEAMT points of PD in affected provinces."
+
+
+#end
+
+#defence 1
+#msg "There have been volunteers to serve in the local militia."
+#nolog

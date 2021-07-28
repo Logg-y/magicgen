@@ -18,6 +18,7 @@
 
 #nameprefix "Resilient"
 #fatiguepersquare 2.5
+#minfinalaoe 3
 
 
 #nextspell "Magicresist Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Resistant"
 #fatiguepersquare 1.25
+#minfinalaoe 8
 
 
 #nextspell "Magicresist Secondary mrne"

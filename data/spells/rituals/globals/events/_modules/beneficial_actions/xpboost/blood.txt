@@ -1,0 +1,26 @@
+#neweventset "Beneficial Global action xpboost blood"
+#minpowerlevel -3
+#maxpowerlevel 6
+
+#req path1 == 128
+
+#scaleparam "xp" 7
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Pact of Infernal Skill"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may call forth demons. These demons will teach a random local commander in the art of war."
+#moduledetails "Grants SCALEAMT experience to a random nonsneaking commander in affected provinces."
+
+
+#end
+
+#cleartarg
+#nation -2
+#req_commander 1
+#xp 10
+#msg "A commander has gained greater understanding of the art of war by consorting with demons."
+#nolog

@@ -15,7 +15,7 @@
 #paths 64
 #secondarypaths 0
 
-#skipchance 67
+#skipchance 40
 
 #details "There are three commanders that can be called with this spell."
 #name 64 "Awaken Treelord"

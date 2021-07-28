@@ -18,6 +18,7 @@
 #sound 31
 #range 10
 #fatiguecost 20
+#aispellmod -92
 
 
 -- water, earth, death
@@ -69,6 +70,7 @@
 #range 10
 #fatiguecost 200
 #unique 1
+#aispellmod -92
 
 
 -- water, earth, death
@@ -120,6 +122,7 @@
 #sound 31
 #range 10
 #fatiguecost 20
+#aispellmod -84
 
 
 -- water, earth, death
@@ -165,6 +168,7 @@
 #range 10
 #fatiguecost 300
 #unique 1
+#aispellmod -84
 
 
 -- water, earth, death

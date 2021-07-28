@@ -18,6 +18,7 @@
 
 #nameprefix "Accurate"
 #fatiguepersquare 1
+#minfinalaoe 5
 
 
 #nextspell "Precboost Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Precise"
 #fatiguepersquare 0.5
+#minfinalaoe 15
 
 
 #nextspell "Precboost Secondary mrne"

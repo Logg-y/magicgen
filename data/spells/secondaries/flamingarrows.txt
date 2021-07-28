@@ -18,6 +18,7 @@
 
 #nameprefix "Blazing"
 #fatiguepersquare 2.5
+#minfinalaoe 5
 
 
 #nextspell "Flaming Arrows Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Flaring"
 #fatiguepersquare 1.25
+#minfinalaoe 15
 
 
 #nextspell "Flaming Arrows Secondary mrne"

@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action taxboost nature"
+#minpowerlevel 0
+#maxpowerlevel 10
+
+#req path1 == 64
+
+#scaleparam "tax" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Rite of Fertility"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find local crop harvests especially bountiful."
+#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+
+
+#end
+
+#taxboost 10
+#msg "The harvest has been especially bountiful."
+#nolog

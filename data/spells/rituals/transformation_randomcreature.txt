@@ -49,7 +49,7 @@
 #maxpower 13
 #nreff 1
 #pathlevel 2
-#fatiguecost 1000
+#fatiguecost 700
 -- alt ench thaum
 #schools 50
 
@@ -76,9 +76,9 @@
 #descr 16 "The caster attempts to transform into a young otherworldly creature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
 #descr 32 "The caster attempts to transform into an undead creature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
 #descr 64 "The caster attempts to transform into a young creature of nature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
-#details "The caster must pass a special MR check or die, even if immortal. Regardless of the caster's original MR, his base MR is considered to be 15 for the purposes of this check, regardless of the caster's actual MR. The caster becomes 9000 years younger if successful.\nThere are various possible results of this transformation. If the transformation fails, all items will safely be returned to the lab."
+#details "Undead and inanimate beings cannot cast this spell. The caster must pass a special MR check or die, even if immortal. Regardless of the caster's original MR, his base MR is considered to be 15 for the purposes of this check, regardless of the caster's actual MR. The caster becomes 9000 years younger if successful.\nThere are various possible results of this transformation. If the transformation fails, all items will safely be returned to the lab."
 
-#scalefatiguemult 120
+#scalefatiguemult 80
 #scalerate 1
 
 #spelltype 4

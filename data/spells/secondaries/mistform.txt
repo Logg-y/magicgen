@@ -47,6 +47,7 @@
 
 #nameprefix "Foggy"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Mistform Secondary mrne"

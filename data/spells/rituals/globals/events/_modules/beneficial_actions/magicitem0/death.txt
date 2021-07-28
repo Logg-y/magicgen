@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 0 death"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 32
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Trinkets of the Dead"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may be approached by long dead spirits which share knowledge of long forgotten magical items."
+#moduledetails "Grants a random non-national construction 0 item."
+
+
+#end
+
+#magicitem 0
+#msg "The location of a magical item was shared by a ghostly apparition. It was subsequently dug up and donated to the laboratory."
+#nolog

@@ -1,0 +1,26 @@
+#neweventset "Beneficial Global action xpboost death"
+#minpowerlevel -3
+#maxpowerlevel 6
+
+#req path1 == 32
+
+#scaleparam "xp" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Experience of the Dead"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may call forth spirits of experienced soldiers. These spirits will teach a random local commander in the art of war."
+#moduledetails "Grants SCALEAMT experience to a random nonsneaking commander in affected provinces."
+
+
+#end
+
+#cleartarg
+#nation -2
+#req_commander 1
+#xp 10
+#msg "A commander has gained greater understanding of the art of war by consorting with the spirits of fallen soldiers."
+#nolog

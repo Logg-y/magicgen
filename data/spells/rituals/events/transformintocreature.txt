@@ -1,8 +1,12 @@
 #neweventset "Transform into Creature"
 
-#selectunitmod "Transform into Creature"
+#selectunitmod "Transform into Creature hp"
+#selectunitmod "Transform into Creature slots"
 #desiredmontagsize 10
 #restrictunitstospellpaths 1
+
+#effectnumberforunits 10001
+#effectnumberforunits 10021
 
 #setspelldamage 1
 

@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 2 air"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 2
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Stormforged Treasures"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may be harmlessly struck by lightning, converting a mundane item they are holding into a magical item."
+#moduledetails "Grants a random non-national construction 0-4 item."
+
+
+#end
+
+#magicitem 2
+#msg "A magical item was formed after a lightning strike."
+#nolog

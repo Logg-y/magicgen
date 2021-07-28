@@ -1,0 +1,238 @@
+#neweffect "Beneficial Global in Alteration"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 2
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+
+#pathskipchance 128 90
+
+#end
+
+#neweffect "Beneficial Global in Enchantment"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 16
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#pathskipchance 128 90
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+#end
+
+
+#neweffect "Beneficial Global in Thaum"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 32
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#pathskipchance 128 90
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+#end
+
+#neweffect "Beneficial Global Blood"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 7000
+#schools 32
+#paths 128
+#skipchance 70
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 600
+#end
+
+
+
+
+
+
+
+#neweffect "Beneficial Global in Alteration2"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 2
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+
+#pathskipchance 128 90
+
+#end
+
+#neweffect "Beneficial Global in Enchantment2"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 16
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#pathskipchance 128 90
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+#end
+
+
+#neweffect "Beneficial Global in Thaum2"
+#effect 10081
+#damage 17
+#spec 0
+#power 4
+#maxpower 15
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#schools 32
+#paths 127
+#skipchance 0
+#secondarypaths 0
+#secondarypathchance 0
+#eventset "Beneficial Global"
+
+#pathskipchance 128 90
+
+#name 32 "Some kind of Beneficial global"
+#descr 1 ""
+#descr 2 ""
+#descr 4 ""
+#descr 8 ""
+#descr 16 ""
+#descr 32 ""
+#descr 64 ""
+#descr 128 ""
+
+#spelltype 4
+#scalerate 1
+#scalefatiguemult 300
+#end

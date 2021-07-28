@@ -1,29 +1,29 @@
-#neweffect "Lucky Spirits"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 6
-#maxpower 15
-#nreff 1
-#pathlevel 5
-#fatiguecost 5000
-#scalefatiguemult 580
-#schools 32
---#unique 1
-#paths 16
-#skipchance 0
-#secondarypaths 16
-#secondarypathchance 5
-#eventset "Lucky Spirits"
-
-#basescale 1
-#spelltype 4
-#scalerate 1
-
-#name 16 "Lucky Omens"
-#name 128 "Infernal Luck"
-#descr 16 "This enchantment alters the fate of the entire nation, making lucky things more likely to happen. Provinces within the god's dominion have a small chance to summon a lucky spirit which persists invisibly for three months. During this time it increases the chance of something fortunate happening to the province it is in. The chance of a spirit appearing increases with the strength of the god's dominion."
-#descr 128 "Through immense blood sacrifice, otherworldly powers are called upon to make good events happen. Provinces within the god's dominion have a small chance to summon a lucky spirit which persists invisibly for three months. During this time it increases the chance of something fortunate happening to the province it is in. The chance of a spirit appearing increases with the strength of the god's dominion."
-#details "There is a SCALEAMT% chance per point of dominion to spawn a lucky spirit in a province. This process is entirely silent, but each lucky spirit has a 20% chance per turn to generate a good event. Spirits persist for 3 turns. Spirits will not appear in hostile provinces."
-#end
+-- #neweffect "Lucky Spirits"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 6
+-- #maxpower 15
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 5000
+-- #scalefatiguemult 580
+-- #schools 32
+-- --#unique 1
+-- #paths 16
+-- #skipchance 0
+-- #secondarypaths 16
+-- #secondarypathchance 5
+-- #eventset "Lucky Spirits"
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 16 "Lucky Omens"
+-- #name 128 "Infernal Luck"
+-- #descr 16 "This enchantment alters the fate of the entire nation, making lucky things more likely to happen. Provinces within the god's dominion have a small chance to summon a lucky spirit which persists invisibly for three months. During this time it increases the chance of something fortunate happening to the province it is in. The chance of a spirit appearing increases with the strength of the god's dominion."
+-- #descr 128 "Through immense blood sacrifice, otherworldly powers are called upon to make good events happen. Provinces within the god's dominion have a small chance to summon a lucky spirit which persists invisibly for three months. During this time it increases the chance of something fortunate happening to the province it is in. The chance of a spirit appearing increases with the strength of the god's dominion."
+-- #details "There is a SCALEAMT% chance per point of dominion to spawn a lucky spirit in a province. This process is entirely silent, but each lucky spirit has a 20% chance per turn to generate a good event. Spirits persist for 3 turns. Spirits will not appear in hostile provinces."
+-- #end
 

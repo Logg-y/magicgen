@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action pathboost earth"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+--#moduleskipchance 20
+
+#noun "Earthbound Power"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may cause someone close to them to be harmlessly caught in a massive magical dust cloud, increasing their ability in earth magic."
+#moduledetails "Grants +1 earth magic to a random commander in the province, including to commanders who had no earth magic to begin with. Paths cannot be raised above 5 in this way."
+
+
+#end
+
+#cleartarg
+#nation -2
+#pathboost 3
+#msg "A commander has gained skill in earth magic!"
+#nolog

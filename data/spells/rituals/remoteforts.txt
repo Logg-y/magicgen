@@ -107,7 +107,7 @@
 #neweffect "Remote Citadel"
 #effect 10063
 #provrange 4
-#damage 3
+#damage 4
 #spec 8388608
 #power 7
 #maxpower 7
@@ -142,7 +142,7 @@
 #neweffect "Remote Grand Citadel"
 #effect 10063
 #provrange 4
-#damage 3
+#damage 19
 #spec 8388608
 #power 9
 #maxpower 9

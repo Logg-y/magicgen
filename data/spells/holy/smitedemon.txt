@@ -73,6 +73,7 @@
 #spelltype 2
 #aoe 0
 #power 0
+#name 256 "Dominate Demon"
 #name 128 "Dominate Demon"
 #end
 
@@ -106,8 +107,10 @@
 
 #aispellmod -30
 
+#name 256 "Dominate Demon"
 #name 128 "Dominate Demon"
 
+#descr 256 "With this prayer, the priest attempts to use his God's power over the Infernal realms to forcefully change a demon's allegiance."
 #descr 128 "With this prayer, the priest attempts to use his God's power over the Infernal realms to forcefully change a demon's allegiance."
 #details "Targeted demons must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also charms them."
 

@@ -163,6 +163,6 @@
 #raw "#researchbonus -20"
 #raw "#magicboost 53 -1"
 #raw "#magicboost 3 2"
-#setstr descr "This spirit is the new form of a air mage of considerable ability that has allowed his body to be consumed by primal energy in pursuit of raw power. While in this form his spellcasting abilities are greatly augmented in battle, allowing him to cast spells very rapidly. This new form is however virtually incapable of casting rituals, forging items or magical research; and will rapidly wither and die in a matter of months should he stray from his home. The amount of energy contained in this form of raw elemental power is sufficient to both frighten commonfolk and attract the attention of otherworldly beings."
+#setstr descr "This spirit is the new form of an earth mage of considerable ability that has allowed his body to be consumed by primal energy in pursuit of raw power. While in this form his spellcasting abilities are greatly augmented in battle, allowing him to cast spells very rapidly. This new form is however virtually incapable of casting rituals, forging items or magical research; and will rapidly wither and die in a matter of months should he stray from his home. The amount of energy contained in this form of raw elemental power is sufficient to both frighten commonfolk and attract the attention of otherworldly beings."
 #setstr name "Spirit of Primal Earth"
 #end

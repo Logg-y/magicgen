@@ -48,7 +48,7 @@
 #scalefatiguemult 300
 #schools 1
 
-#skipchance 50
+#skipchance 40
 #newunit "Vastness"
 
 #paths 16

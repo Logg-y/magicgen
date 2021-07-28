@@ -1,0 +1,22 @@
+#neweventset "Beneficial Global action arenamaker"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 128
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Thirst of Bloodsports"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may suddenly gain an insatiable thirst for blood sports, and may decide to set up arenas. These will increase tax revenue."
+#moduledetails "Adds an arena to the province."
+
+#end
+
+#req_freesites 1
+#nolog
+#msg "A new arena has been established to fill the local desire for blood sports."
+-- gem deposit
+#addsite 830
+#end

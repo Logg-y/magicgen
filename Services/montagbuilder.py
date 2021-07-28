@@ -23,7 +23,7 @@ class MontagBuilder(object):
 
         # duplicates/(ratio**this value), where ratio is is max(mean, this unit)/min(mean, this unit)
         # this is why both 20 and 5 produce a ratio of 2 in the example above
-        self.extremeCostRarity = 2.0
+        self.extremeCostRarity = 1.66
     def add(self, unitobj, secondaryeffect, costratio):
         """Add a unit to the montag with the given secondary effect. Cost ratio should be a pessimistic estimate of:
 

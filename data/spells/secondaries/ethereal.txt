@@ -46,6 +46,7 @@
 
 #nameprefix "Incorporeal"
 #fatiguepersquare 6
+#minfinalaoe 5
 
 
 #nextspell "Ethereal Secondary mrne"

@@ -8,7 +8,7 @@
 #pathlevel 3
 #fatiguecost 1200
 #scalecost 4
-#scalefatiguemult 300
+#scalefatiguemult 100
 #schools 1
 
 -- For now: all

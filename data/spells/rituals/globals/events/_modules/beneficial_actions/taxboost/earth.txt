@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action taxboost earth"
+#minpowerlevel 0
+#maxpowerlevel 10
+
+#req path1 == 8
+
+#scaleparam "tax" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Fertile Soils"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find fields become nourished by magic affecting the fertility of the earth, boosting the harvest."
+#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+
+
+#end
+
+#taxboost 10
+#msg "The harvest has been especially bountiful."
+#nolog

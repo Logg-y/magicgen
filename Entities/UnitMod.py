@@ -44,8 +44,14 @@ class UnitMod(object):
         self.eventset = ""
         self.attributeforrandomunit = ""
         self.additionaldetails = None
-
+        self._cache = {}
     def compatibility(self, unitobj, tested=None):
+        if unitobj in self._cache:
+            return self._cache[unitobj]
+        ret = self._compatibility(unitobj, tested)
+        self._cache[unitobj] = ret
+        return ret
+    def _compatibility(self, unitobj, tested=None):
         # print(f"{self.name} testing against {unit.id} {unit.name}")
         if tested is None:
             tested = []
@@ -95,7 +101,7 @@ class UnitMod(object):
                 uid = getattr(unitobj, x)
                 if uid not in tested and uid > 0:
                     unittottest = unitinbasedatafinder.get(uid)
-                    if not self.compatibility(unittottest, tested=tested):
+                    if not self._compatibility(unittottest, tested=tested):
                         return False
 
 

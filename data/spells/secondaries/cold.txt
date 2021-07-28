@@ -217,6 +217,7 @@
 
 #nameprefix "Frigid"
 #fatiguepersquare 3
+#minfinalaoe 10
 
 
 #nextspell "4 capped cold Secondary mrne"

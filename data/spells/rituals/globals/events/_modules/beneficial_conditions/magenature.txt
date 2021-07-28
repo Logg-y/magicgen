@@ -1,0 +1,31 @@
+#neweventset "Beneficial Global cond naturemage"
+#minpowerlevel -1
+#maxpowerlevel 2
+
+#scaleparam "req_domchance" 2
+#modulebasescale 2
+
+#req path1 == 64
+
+#modulegroup "Beneficial Global Condition"
+
+--#noun "Bloodseekers"
+#verb "Lifebound"
+
+
+#textrepl "SUBJECT" "Nature mages"
+
+#moduledescr "This enchantment affects friendly provinces containing nature mages."
+#moduledetails "Every turn, each friendly province with a nature mage has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+
+
+
+#end
+
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_targpath1 6
+#req_domchance 2

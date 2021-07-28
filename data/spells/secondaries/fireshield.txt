@@ -18,6 +18,7 @@
 
 #nameprefix "Fireshielding"
 #fatiguepersquare 4
+#minfinalaoe 1
 
 
 #nextspell "Fireshield Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Flamebarrier"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Fireshield Secondary mrne"

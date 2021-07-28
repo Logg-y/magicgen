@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 0 earth"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Buried Trinkets"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may suddenly come across buried magical items."
+#moduledetails "Grants a random non-national construction 0 item."
+
+
+#end
+
+#magicitem 0
+#msg "A forgotten magical item has been unearthed."
+#nolog

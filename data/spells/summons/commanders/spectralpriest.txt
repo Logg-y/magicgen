@@ -26,6 +26,7 @@
 
 #name 32 "Charm NAMEPREFIX Spectral %Priest%"
 #descr 32 "The caster summons ARTICLE Spectral %Priest% to fight for him on the battlefield. The Spectral Priest is a ghost of a human high priest coerced to serve, and will leave once the battle is over."
+#details "Spectral Priests are undead H3 priests."
 
 #scalefatiguemult 20
 #spelltype 528
@@ -58,6 +59,7 @@
 
 #name 32 "Summon NAMEPREFIX Spectral Priest"
 #descr 32 "The caster summons ARTICLE Spectral Priest to the service of the Pretender God."
+#details "Spectral Priests are undead H3 priests."
 
 #spelltype 20
 

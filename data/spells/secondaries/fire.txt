@@ -247,6 +247,7 @@
 
 #nameprefix "Burning"
 #fatiguepersquare 2
+#minfinalaoe 10
 
 #nextspell "4 capped fire Secondary mrne damaging"
 

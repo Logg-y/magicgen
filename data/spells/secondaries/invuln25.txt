@@ -51,6 +51,7 @@
 
 #nameprefix "Impervious"
 #fatiguepersquare 4
+#minfinalaoe 5
 
 
 #nextspell "Invuln 25 Secondary mrne"

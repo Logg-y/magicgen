@@ -11,6 +11,9 @@
 -- not ritual
 #req spelltype !& 4
 
+-- not salt damage, this might make magesniping a bit easy
+#req effect != 142
+
 -- #descr "This spell has an exceptionally long reach."
 
 #end

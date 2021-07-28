@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 3 blood"
+#minpowerlevel 5
+#maxpowerlevel 5
+
+#req path1 == 128
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Infernal Relics"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may be given a magical item from demons."
+#moduledetails "Grants a random non-national construction 0-6 item."
+
+
+#end
+
+#magicitem 3
+#msg "A magical item was offered by a demon."
+#nolog

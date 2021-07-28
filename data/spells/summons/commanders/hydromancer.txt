@@ -55,7 +55,7 @@
 #pathskipchance 16 95
 #pathskipchance 64 80
 
-#skipchance 77
+#skipchance 40
 
 #paths 84
 #secondarypaths 4

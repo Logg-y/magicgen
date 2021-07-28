@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 0 fire"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 1
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Enchanted Forges"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find normal items produced in forges suddenly become infused with magical powers."
+#moduledetails "Grants a random non-national construction 0 item."
+
+
+#end
+
+#magicitem 0
+#msg "A mundane item became filled with magical power and was donated to the laboratory."
+#nolog

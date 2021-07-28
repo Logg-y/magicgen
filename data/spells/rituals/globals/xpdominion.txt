@@ -1,26 +1,26 @@
-#neweffect "XP dominion"
-#effect 10081
-#damage 17
-#spec 0
-#power 5
-#maxpower 14
-#nreff 1
-#pathlevel 5
-#fatiguecost 5000
-#scalefatiguemult 50
-#schools 48
-#paths 32
-#skipchance 60
-#secondarypaths 32
-#secondarypathchance 99
-#eventset "XP dominion"
-
-#name 32 "Experience of the Dead"
-#descr 32 "The necromancer calls upon the spirits of the departed to teach commanders in friendly dominion the ways of war. Each month, spirits congregrate in provinces and share their combat experience with random commanders. The resulting tales of newfound skills are likely to cause affected commanders to gain worldwide recognition."
-#details "Makes 4 independent checks per friendly province, each with a chance of success given by 10% per point of dominion. Each success grants SCALEAMT experience to a random commander there."
-
-#basescale 4
-#spelltype 4
-#scalerate 2
-#end
+-- #neweffect "XP dominion"
+-- #effect 10081
+-- #damage 17
+-- #spec 0
+-- #power 5
+-- #maxpower 14
+-- #nreff 1
+-- #pathlevel 5
+-- #fatiguecost 5000
+-- #scalefatiguemult 50
+-- #schools 48
+-- #paths 32
+-- #skipchance 60
+-- #secondarypaths 32
+-- #secondarypathchance 99
+-- #eventset "XP dominion"
+-- 
+-- #name 32 "Experience of the Dead"
+-- #descr 32 "The necromancer calls upon the spirits of the departed to teach commanders in friendly dominion the ways of war. Each month, spirits congregrate in provinces and share their combat experience with random commanders. The resulting tales of newfound skills are likely to cause affected commanders to gain worldwide recognition."
+-- #details "Makes 4 independent checks per friendly province, each with a chance of success given by 10% per point of dominion. Each success grants SCALEAMT experience to a random commander there."
+-- 
+-- #basescale 4
+-- #spelltype 4
+-- #scalerate 2
+-- #end
 

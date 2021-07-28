@@ -1,0 +1,20 @@
+#neweventset "Beneficial Global action 1d3 gems water"
+#minpowerlevel 4
+#maxpowerlevel 4
+
+#req path1 == 4
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Sapphire Pools"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may rarely find magical sapphires in ponds, lakes, puddles and other bodies of water."
+#moduledetails "Grants 1d3 water gems."
+
+
+#end
+
+#1d3vis 2
+#msg "Several water gems have been found after rainfall."
+#nolog

@@ -40,9 +40,6 @@ class SpellModifier(object):
 
     def compatibility(self, eff, researchlevel, isnextspell):
         "Return True if this modifier is compatible with the given SpellEffect."
-        # This is done by the main processing loop now
-        # it makes determining if there are legal modifiers for a spell a LOT better
-
         # Check reqs to begin with
         for r in self.reqs:
             if not r.test(eff):

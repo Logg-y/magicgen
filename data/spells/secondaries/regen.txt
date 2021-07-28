@@ -18,6 +18,7 @@
 
 #nameprefix "Restorative"
 #fatiguepersquare 4
+#minfinalaoe 1
 
 
 #nextspell "Regen Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Mending"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Regen Secondary mrne"

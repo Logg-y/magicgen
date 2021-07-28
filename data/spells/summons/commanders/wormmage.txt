@@ -15,7 +15,7 @@
 #sound 31
 #schools 32
 
-#skipchance 95.0
+#skipchance 20
 
 --ASN
 #paths 64
@@ -46,7 +46,7 @@
 #scalefatiguemult 300
 #schools 32
 
-#skipchance 77
+#skipchance 0
 
 #paths 64
 #secondarypaths 64

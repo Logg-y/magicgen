@@ -69,7 +69,7 @@
 #skipchance 50
 #sound 21
 
-#aispellmod -95
+#aispellmod -99
 
 #paths 2
 #secondarypaths 4

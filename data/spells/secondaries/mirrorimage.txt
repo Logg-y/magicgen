@@ -18,6 +18,7 @@
 
 #nameprefix "Illusionary"
 #fatiguepersquare 4
+#minfinalaoe 3
 
 
 #nextspell "Mirrorimage Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Illusory"
 #fatiguepersquare 2
+#minfinalaoe 7
 
 
 #nextspell "Mirrorimage Secondary mrne"

@@ -1,0 +1,11 @@
+#neweventset "Beneficial Global"
+
+#module "CONDITION" "Beneficial Global Condition"
+#module "EFFECT" "Beneficial Global Effect"
+
+#end
+
+#newevent
+CONDITION
+EFFECT
+#end

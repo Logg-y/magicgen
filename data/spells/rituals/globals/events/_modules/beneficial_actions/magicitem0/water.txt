@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 0 water"
+#minpowerlevel 2
+#maxpowerlevel 2
+
+#req path1 == 4
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Floating Trinkets"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may stumble upon magical trinkets floating in rivers, puddles and other bodies of water."
+#moduledetails "Grants a random non-national construction 0 item."
+
+
+#end
+
+#magicitem 0
+#msg "A magical trinket was found at the edge of a lake."
+#nolog

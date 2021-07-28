@@ -18,6 +18,7 @@
 
 #nameprefix "Hasty"
 #fatiguepersquare 4
+#minfinalaoe 1
 
 
 #nextspell "Quickness Secondary mrn"
@@ -47,6 +48,7 @@
 
 #nameprefix "Quick"
 #fatiguepersquare 2
+#minfinalaoe 5
 
 
 #nextspell "Quickness Secondary mrne"

@@ -26,7 +26,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "2.1.8"
+ver = "3.0.0"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -287,7 +287,7 @@ def rollspells(**options):
                 spellstokeep += nationalspells
 
             _writetoconsole(f"Hiding vanilla spells...\n")
-            for x in range(1, 3501):
+            for x in range(1, utils.SPELL_ID):
                 removespell = x not in spellstokeep
                 if removespell and bool(options.get("clearvanillagenericspells")) == False:
                     if x not in nationalspells:
@@ -731,10 +731,10 @@ def main():
 
     opts.append(Option("-clearvanillanationalspells",
                        help='If set to 1, vanilla national spells will all be removed. ',
-                       type=int, default=1))
+                       type=int, default=0))
 
     opts.append(Option("-clearvanillagenericspells",
-                       help='If set to 1, vanilla national spells will all be removed. ',
+                       help='If set to 1, vanilla generic spells will all be removed. ',
                        type=int, default=1))
 
     opts.append(Option("-nobadaispells",

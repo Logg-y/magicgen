@@ -1,0 +1,23 @@
+#neweventset "Beneficial Global action taxboost fire"
+#minpowerlevel 0
+#maxpowerlevel 10
+
+#req path1 == 1
+
+#scaleparam "tax" 5
+#modulebasescale 10
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Tropical Fertility"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may find that farms suddenly become more bountiful as air in the fields becomes unseasonably warm."
+#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+
+
+#end
+
+#taxboost 10
+#msg "The harvest has been especially bountiful."
+#nolog

@@ -3,6 +3,10 @@
 #newunit "Marble Lion fixed slots"
 #baseunit 3065
 #set itemslots 12288
+#set body 0
+#set head 0
+#set foot 0
+#set hand 0
 #raw "#itemslots 12288"
 #end
 

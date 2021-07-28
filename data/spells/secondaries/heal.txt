@@ -18,6 +18,7 @@
 
 #nameprefix "Healing"
 #fatiguepersquare 1
+#minfinalaoe 5
 
 
 #nextspell "Heal Secondary mrn"
@@ -46,6 +47,7 @@
 
 #nameprefix "Restorative"
 #fatiguepersquare 0.5
+#minfinalaoe 15
 
 
 #nextspell "Heal Secondary mrne"

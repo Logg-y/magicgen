@@ -25,7 +25,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v2.1.8"
+ver = "v3.0.0"
 
 
 def output_polling_thread(timeout=0.1):
@@ -304,10 +304,10 @@ def main():
             sg.InputText(key='-clearvanillagenericspells-', size=(4, 1), default_text=1)],
 
         [sg.Text(
-            'Clear Vanilla national spells: If non-zero, all vanilla national spells will be cleared. (1)'
+            'Clear Vanilla national spells: If non-zero, all vanilla national spells will be cleared. (0)'
             ,
             size=(50, 2), relief="ridge"),
-            sg.InputText(key='-clearvanillanationalspells-', size=(4, 1), default_text=1)],
+            sg.InputText(key='-clearvanillanationalspells-', size=(4, 1), default_text=0)],
 
         [sg.Text(
             'Blood Ritual slave cost multiplier: Set to a value greater than 1.0 if you think MagicGen blood '

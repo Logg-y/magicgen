@@ -67,7 +67,7 @@
 #explspr 10242
 #sound 31
 #range 0
-#fatiguecost 200
+#fatiguecost 300
 
 #secondaryeffectskipchance 100
 
@@ -150,7 +150,7 @@
 #explspr 10303
 #sound 31
 #range 0
-#fatiguecost 200
+#fatiguecost 300
 
 #secondaryeffectskipchance 100
 
@@ -231,7 +231,7 @@
 #explspr 10241
 #sound 31
 #range 0
-#fatiguecost 200
+#fatiguecost 300
 
 #secondaryeffectskipchance 100
 
@@ -313,7 +313,7 @@
 #explspr 10312
 #sound 31
 #range 0
-#fatiguecost 200
+#fatiguecost 300
 
 #secondaryeffectskipchance 100
 

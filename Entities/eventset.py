@@ -57,7 +57,7 @@ class EventSet(object):
         self.moduleskipchance = 0
         self.setspelldamage = 0
         self.magicsite = ""
-        self.effectnumberforunits = 10001
+        self.effectnumberforunits = []
         self.fixedcreaturepower = False
 
         self.moduletailingcode = ""
@@ -196,6 +196,9 @@ class EventSet(object):
 
         self.moduletailingcode = ""
 
+        if len(self.effectnumberforunits) == 0:
+            self.effectnumberforunits.append(10001)
+
 
         # Get an enchant ID first, as any submodules need to know it
         # These are various local and global enchantment effect IDs
@@ -330,26 +333,26 @@ class EventSet(object):
                 costper = 1.0
                 # Unitmod
             elif self.selectunitmod is not None:
-                realunitmod = utils.unitmods[self.selectunitmod]
-                # this unit mod should instead be a picker for a unit to grab
-                # start by building a pool of spelleffects that we could use
-
-                for effname, effect in utils.spelleffects.items():
-                    if effect.effect == self.effectnumberforunits:  # ritual summon
-                        unitid = effect.damage
-                        # no montags
-                        if unitid < 0:
-                            continue
-                        unitobj = unitinbasedatafinder.get(unitid)
-
-                        if self.restrictunitstospellpaths > 0:
-                            if not (effect.paths & spell.path1):
+                for unitmod in self.selectunitmod:
+                    realunitmod = utils.unitmods[unitmod]
+                    # this unit mod should instead be a picker for a unit to grab
+                    # start by building a pool of spelleffects that we could use
+                    for effname, effect in utils.spelleffects.items():
+                        if effect.effect in self.effectnumberforunits:  # ritual summon
+                            unitid = effect.damage
+                            # no montags
+                            if unitid < 0:
                                 continue
-                            if effect.secondarypathchance >= 85 and not (effect.secondarypaths & spell.path2):
-                                continue
+                            unitobj = unitinbasedatafinder.get(unitid)
 
-                        if realunitmod.compatibility(unitobj):
-                            effectpool.append(effect)
+                            if self.restrictunitstospellpaths > 0:
+                                if not (effect.paths & spell.path1):
+                                    continue
+                                if effect.secondarypathchance >= 85 and not (effect.secondarypaths & spell.path2):
+                                    continue
+
+                            if realunitmod.compatibility(unitobj):
+                                effectpool.append(effect)
                 random.shuffle(effectpool)
 
             if numtogenerate == 1 and self.selectunitmod is None and self.usefixedunitid <= 0:
@@ -483,7 +486,12 @@ class EventSet(object):
                         # work out the effective fatigue cost
                         scaleportion = chosensummoneffect.nreff // 1000
                         minnreff = (scaleportion * chosensummoneffect.pathlevel) + chosensummoneffect.nreff % 1000
-                        basecostper = chosensummoneffect.fatiguecost / minnreff
+                        chosensummoneffect.calcchassisvalues()
+                        chassisvalue = chosensummoneffect.chassisvalue
+                        if chassisvalue is None:
+                            chassisvalue = chosensummoneffect.fatiguecost
+                        # there is no way that events can give you the base magic paths of the thing you're turning into
+                        basecostper = chassisvalue / minnreff
 
                         # Secondary modification
                         fatiguemult = 1.0
@@ -556,6 +564,7 @@ class EventSet(object):
                 # the usual shallow copy + pop stuff is probably okay
                 picks = modulepicks[:]
                 random.shuffle(picks)
+                spelleffect.names[spell.path1] = []
                 try:
                     noun = random.choice(picks.pop(0).nouns)
                     print(f"Selected noun is {noun}")
@@ -563,11 +572,71 @@ class EventSet(object):
                     print(f"Selected verb is {verb}")
                     # Write the name into the parent spelleffect
                     # this is necessary so it goes through all the normal name logic that protects against
-                    spelleffect.names[spell.path1] = [f"{verb} {noun}"]
+                    spelleffect.names[spell.path1] = [f"{verb} {noun}".strip()]
                 except IndexError:
                     # random.choice on empty list
-                    print(f"One of the modules in {[x.name for x in modulepicks]} was missing a noun or verb,"
-                          f" skip name assignment")
+                    picks = modulepicks[:]
+                    random.shuffle(picks)
+                    hasnouns = []
+                    hasverbs = []
+                    inboth = []
+                    for pick in picks:
+                        if len(pick.nouns) > 0:
+                            hasnouns.append(pick)
+                        if len(pick.verbs) > 0:
+                            hasverbs.append(pick)
+                        if len(pick.nouns) > 0 and len(pick.verbs) > 0:
+                            inboth.append(pick)
+                    if len(hasnouns) == 0:
+                        print(f"All of the modules in {[x.name for x in modulepicks]} were missing nouns,"
+                              f" skip name assignment")
+                    elif len(hasverbs) == 0:
+                        print(f"All of the modules in {[x.name for x in modulepicks]} were missing verbs,"
+                              f" skip name assignment")
+                    else:
+                        if len(hasnouns) == len(inboth) and len(hasverbs) == len(inboth):
+                            # If this is the case, the simple naming method would have worked
+                            # unless only one module actually HAS name parts assigned
+                            print(f"Only one of the modules in {[x.name for x in modulepicks]} has assigned name parts,"
+                                  f" skip name assignment")
+                        else:
+                            usedalready = []
+                            verb = None
+                            noun = None
+                            if len(hasnouns) == len(inboth):
+                                random.shuffle(hasverbs)
+                                for verbsource in hasverbs:
+                                    if verbsource not in inboth:
+                                        verb = random.choice(verbsource.verbs)
+                                        usedalready.append(verbsource)
+                                        break
+
+
+                            if len(hasverbs) == len(inboth):
+                                random.shuffle(hasnouns)
+                                for nounsource in hasnouns:
+                                    if nounsource not in inboth:
+                                        noun = random.choice(nounsource.nouns)
+                                        usedalready.append(nounsource)
+                                        break
+
+                            if noun is None:
+                                random.shuffle(hasnouns)
+                                for nounsource in hasnouns:
+                                    if nounsource not in usedalready:
+                                        noun = random.choice(nounsource.nouns)
+                                        usedalready.append(nounsource)
+                                        break
+
+                            if verb is None:
+                                random.shuffle(hasverbs)
+                                for verbsource in hasverbs:
+                                    if verbsource not in usedalready:
+                                        verb = random.choice(verbsource.verbs)
+                                        usedalready.append(verbsource)
+                                        break
+
+                            spelleffect.names[spell.path1] = [f"{verb} {noun}".strip()]
                     pass
                 # ONLY do this if modules were picked, other eventset spells set this normally
                 spelleffect.descriptions[spell.path1] = spell.descr

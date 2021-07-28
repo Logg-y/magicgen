@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action magicitem 1 death"
+#minpowerlevel 3
+#maxpowerlevel 3
+
+#req path1 == 32
+
+#modulegroup "Beneficial Global Effect"
+#moduleskipchance 20
+
+#noun "Items of the Dead"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may be approached by long dead spirits which share knowledge of long forgotten magical items."
+#moduledetails "Grants a random non-national construction 0-2 item."
+
+
+#end
+
+#magicitem 1
+#msg "The location of a magical item was shared by a ghostly apparition. It was subsequently dug up and donated to the laboratory."
+#nolog

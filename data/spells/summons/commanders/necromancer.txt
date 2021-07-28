@@ -53,7 +53,7 @@
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 95
-#skipchance 77
+#skipchance 40
 
 #paths 112
 #secondarypaths 32
