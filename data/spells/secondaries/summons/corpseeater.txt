@@ -1,4 +1,5 @@
 #newsecondary "Summon Corpseeater Units"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -29,6 +30,7 @@
 #end
 
 #newsecondary "Summon Corpseeater Cmdr"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -54,6 +56,6 @@
 
 #unitmod "Summon Corpseeater Cmdr"
 #descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
-#details "The creature can eat up to two corpses a turn to gain 1 max HP per corpse."
+#details "The creature can eat up to five corpses a turn to gain 1 max HP per corpse."
 
 #end

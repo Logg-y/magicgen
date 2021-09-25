@@ -50,7 +50,7 @@
 #spelltype 2
 
 #aispellmod 70
-#pathlevel 1
+#pathlevel 0
 
 #power -3
 
@@ -76,7 +76,7 @@
 #aispellmod 70
 
 #reqdamaging 0
-#pathlevel 1
+#pathlevel 0
 
 #power -2
 
@@ -101,7 +101,7 @@
 #aispellmod 70
 
 #reqdamaging 0
-#pathlevel 1
+#pathlevel 0
 
 #power -3
 
@@ -123,7 +123,7 @@
 #spelltype 2
 
 #aispellmod 70
-#pathlevel 1
+#pathlevel 0
 
 #reqdamaging 0
 
@@ -145,7 +145,7 @@
 #spelltype 2
 
 #aispellmod 70
-#pathlevel 1
+#pathlevel 0
 
 #reqdamaging 1
 
@@ -170,7 +170,7 @@
 #spelltype 2
 
 #aispellmod 90
-#pathlevel 2
+#pathlevel 1
 
 #power -4
 
@@ -194,7 +194,7 @@
 #spelltype 0
 
 #aispellmod 90
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -219,7 +219,7 @@
 #spelltype 0
 
 #aispellmod 90
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -244,7 +244,7 @@
 #spelltype 2
 
 #aispellmod 90
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -266,7 +266,7 @@
 #spelltype 2
 
 #aispellmod 90
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 1
 
@@ -294,7 +294,7 @@
 #spelltype 2
 
 #aispellmod 120
-#pathlevel 2
+#pathlevel 1
 
 #power -5
 
@@ -319,7 +319,7 @@
 #spelltype 0
 
 #aispellmod 120
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -347,7 +347,7 @@
 #spelltype 0
 
 #aispellmod 120
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -376,7 +376,7 @@
 #spelltype 2
 
 #aispellmod 120
-#pathlevel 2
+#pathlevel 1
 
 #reqdamaging 0
 
@@ -400,7 +400,7 @@
 #spelltype 2
 
 #aispellmod 120
-#pathlevel 3
+#pathlevel 2
 
 #power -8
 #reqdamaging 1

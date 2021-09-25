@@ -1,4 +1,5 @@
 #newsecondary "Summon Farcaster 25"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -27,6 +28,7 @@
 #end
 
 #newsecondary "Summon Farcaster 50"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -55,6 +57,7 @@
 #end
 
 #newsecondary "Summon Farcaster 100"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

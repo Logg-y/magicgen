@@ -1,6 +1,26 @@
+#neweffect "Small Chill"
+#effect 3
+#damage 2010
+#spec 640
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 5
+#power 1
+#name 1 "Area Chill"
+#name 2 "Area Chill"
+#name 4 "Area Chill"
+#name 8 "Area Chill"
+#name 16 "Area Chill"
+#name 32 "Area Chill"
+#name 64 "Area Chill"
+#name 128 "Area Chill"
+#maxpower 30
+#end
+
 #neweffect "Cold Evo Projectile"
 #effect 2
-#damage 2009
+#damage 2012
 #spec 576
 #aoe 1
 #power 2
@@ -13,8 +33,8 @@
 #flightspr 10068
 #sound 21
 
--- #paths 4+32+128
-#paths 164
+-- #paths 4+128
+#paths 132
 #secondarypaths 4
 
 #name 1 "NAMEPREFIX $chilling$ %bolt%"
@@ -32,7 +52,7 @@
 
 #spelltype 38
 
-#power 1
+#power 2
 #scalerate 1
 #pathlevel 2
 #schools 4
@@ -44,15 +64,17 @@
 #descrcond range < 10 4 "The caster's touch radiates chilling bolts that harm those close to the caster."
 #descrcond range < 10 32 "The caster's touch radiates the chill of the grave, producing bolts that harm those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the chill of Kokytos, producing bolts that harm those close to the caster."
+
+#nextspell "Small Chill"
 #end
 
 
 #neweffect "Cold Evo Instant"
 #effect 2
-#damage 2006
+#damage 2016
 #spec 576
-#aoe 1003
-#power 3
+#aoe 1
+#power 2
 #maxpower 14
 #precision 1
 #range 30
@@ -61,7 +83,7 @@
 #explspr 10145
 #sound 21
 
-#paths 164
+#paths 132
 #secondarypaths 4
 
 #name 1 "NAMEPREFIX Falling $frost$"
@@ -183,7 +205,7 @@
 #skipchance 50
 #sound 21
 
-#paths 164
+#paths 132
 #secondarypaths 4
 
 #name 1 "NAMEPREFIX Falling $frost$"
@@ -222,7 +244,7 @@
 #skipchance 50
 #sound 21
 
-#paths 164
+#paths 132
 #secondarypaths 4
 
 #name 1 "NAMEPREFIX Falling $frost$"
@@ -261,7 +283,7 @@
 #skipchance 50
 #sound 21
 
-#paths 164
+#paths 132
 #secondarypaths 4
 
 #name 1 "NAMEPREFIX Falling $frost$"
@@ -293,14 +315,14 @@
 #aoe 1
 #power 8
 #maxpower 17
-#precision -10
+#precision -20
 #range 40
 #pathlevel 5
 #fatiguecost 100
 #explspr 10108
 #flightspr 10068
 #sound 21
-#nreff 35
+#nreff 40
 
 -- #paths 4+32+128
 #paths 4
@@ -314,6 +336,7 @@
 #scalerate 3
 #schools 4
 
+#nextspell "Small Chill"
 
 #end
 

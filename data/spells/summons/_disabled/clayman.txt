@@ -1,0 +1,139 @@
+#neweffect "Summon clayman"
+#effect 1
+#damage 817
+#spec 8388608
+#power 1
+#maxpower 10
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 4
+
+#skipchance 97
+
+#name 8 "$conjure$ NAMEPREFIX Clay%man%"
+#descr 8 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE clay%man%. Claymen are able to quickly close wounds inflicted on them."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.81
+#scalefatiguemult 15
+#pathperresearch 0.4
+#end
+
+#neweffect "clayman ritual"
+#effect 10001
+#damage 817
+#spec 8388608
+#power 2
+#maxpower 5
+#nreff 2
+#pathlevel 1
+#fatiguecost 120
+#schools 1
+
+#paths 8
+#secondarypaths 4
+
+#skipchance 97
+
+#name 8 "$summon$ NAMEPREFIX Clay%man%"
+#descr 8 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE clay%man%. Claymen are able to quickly close wounds inflicted on them."
+
+
+#spelltype 20
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 35
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+
+#scalerate 3
+#end
+
+#neweffect "clayman chassis dummy"
+#effect 10001
+#damage 817
+#spec 8388608
+#power 2
+#maxpower 2
+#nreff 1
+#pathlevel 1
+#fatiguecost 40
+#schools -1
+
+#paths 8
+#secondarypaths 4
+
+#skipchance 97
+
+#name 8 "Summon NAMEPREFIX Clay%man%"
+#descr 8 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE clay%man%. Claymen are able to quickly close wounds inflicted on them."
+
+
+#spelltype 20
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 35
+#pathperresearch 0.4
+
+#scalerate 3
+#end
+
+#neweffect "clayman Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 817
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 99
+
+#paths 8
+#secondarypaths 4
+
+#name 8 "NAMEPREFIX Clay%man% $ambush$"
+#descr 8 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE clay%man%. The clayman attacks a random hostile commander in the province and then disintegrates back into a normal pile of clay. Claymen are able to quickly close wounds inflicted on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon clayman"
+#effect 10038
+#provrange 4
+#damage 817
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 2001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 4
+
+#name 8 "$Send$ NAMEPREFIX Claymen"
+#descr 8 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE clay%man%. The claymen attack the province where they were created. Claymen are able to quickly close wounds inflicted on them."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 30
+#end

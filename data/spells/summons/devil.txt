@@ -69,7 +69,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "NAMEPREFIX Devil Attack"
+#name 128 "NAMEPREFIX Devil $ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster binds a devil to ambush an enemy commander."
 
 #spelltype 4
@@ -97,7 +97,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 250
 
-#name 128 "Send NAMEPREFIX %Devil%"
+#name 128 "$Send$ NAMEPREFIX %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of devils to attack a distant province."
 
 #spelltype 20

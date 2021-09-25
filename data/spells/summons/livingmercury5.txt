@@ -6,7 +6,7 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #fatiguecost 200
 #sound 31
 #schools 1
@@ -20,7 +20,7 @@
 #scalefatiguemult 30
 
 #details "The elementals are size 5."
-#name 4 "Summon NAMEPREFIX Huge Living %Mercury%"
+#name 4 "$conjure$ NAMEPREFIX Huge Living %Mercury%"
 #descr 4 "The caster summons forth ARTICLE very large living %mercury%. They will fight for him until the battle ends. Living mercuries are surrounded by clouds of toxic fumes that may harm the caster unless he is resistant."
 
 #spelltype 528
@@ -35,7 +35,7 @@
 #power 5
 #maxpower 14
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #fatiguecost 500
 #schools 1
 
@@ -46,7 +46,7 @@
 #skipchance 97
 
 #details "The elementals are size 5."
-#name 4 "Summon NAMEPREFIX Huge Living %Mercury%"
+#name 4 "$Summon$ NAMEPREFIX Huge Living %Mercury%"
 #descr 4 "The caster summons forth ARTICLE very large living %mercury%."
 
 #spelltype 20
@@ -75,7 +75,7 @@
 #secondarypathchance 90
 
 #details "The elementals are size 5."
-#name 4 " NAMEPREFIX Huge Living %Mercury% Attack"
+#name 4 " NAMEPREFIX Huge Living %Mercury% $Attack$"
 #descr 4 "The caster summons forth ARTICLE very large living %mercury% to attack a hostile commander in a distant province."
 
 #spelltype 4
@@ -91,7 +91,7 @@
 #maxpower 16
 #nreff 1
 #pathlevel 4
-#fatiguecost 1100
+#fatiguecost 800
 #schools 1
 
 #skipchance 99.6
@@ -101,7 +101,7 @@
 #secondarypathchance 90
 
 #details "The elementals are size 5."
-#name 4 "Send NAMEPREFIX Huge Living %Mercury%"
+#name 4 "$Send$ NAMEPREFIX Huge Living %Mercury%"
 #descr 4 "The caster summons forth ARTICLE very large living %mercury% to attack a distant province."
 
 #spelltype 20

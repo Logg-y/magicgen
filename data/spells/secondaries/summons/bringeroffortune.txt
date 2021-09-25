@@ -1,4 +1,5 @@
 #newsecondary "Summon Bringeroffortune"
+#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -19,6 +20,7 @@
 #end
 
 #newsecondary "Summon Bringerofmisfortune"
+#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1

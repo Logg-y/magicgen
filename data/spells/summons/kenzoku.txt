@@ -2,13 +2,13 @@
 #effect 1
 #damage 736
 #spec 0
-#power 6
-#maxpower 14
+#power 4
+#maxpower 18
 #precision -2
 #nreff 1
-#pathlevel 4
-#fatiguecost 100
-#scalefatiguemult 20
+#pathlevel 2
+#fatiguecost 110
+#scalefatiguemult 11
 #sound 31
 #schools 1
 
@@ -18,24 +18,26 @@
 
 #skipchance 92
 
-#name 16 "Summon NAMEPREFIX Kenzoku"
+#name 16 "$conjure$ NAMEPREFIX Kenzoku"
 #descr 16 "The caster summons forth ARTICLE kenzoku. Kenzoku are masterful samurai granted immortality for their deeds."
 #details "Units summoned by this spell are not sacred."
 
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
 #end
 
 #neweffect "kenzoku ritual"
 #effect 10001
 #damage 736
 #spec 0
-#power 7
-#maxpower 14
-#nreff 1001
-#pathlevel 4
-#fatiguecost 1200
+#power 4
+#maxpower 20
+#nreff 3
+#pathlevel 2
+#fatiguecost 620
 #schools 1
 
 #paths 16
@@ -44,15 +46,16 @@
 #skipchance 60
 #newunit "Kenzoku"
 
-#name 16 "Summon NAMEPREFIX Kenzoku"
+#name 16 "$Summon$ NAMEPREFIX Kenzoku"
 #descr 16 "The caster summons forth ARTICLE kenzoku. Kenzoku are masterful samurai granted immortality for their deeds."
 #details "Units summoned by this spell are not sacred."
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 180
+#scalefatigueexponent -1.6
+#scalefatiguemult 85
+#pathperresearch 0.4
 
-#scalerate 2
+#scalerate 1
 #end
 
 #neweffect "kenzoku Remote Assassination"
@@ -73,7 +76,7 @@
 #secondarypaths 16
 #newunit "Kenzoku"
 
-#name 16 "NAMEPREFIX Kenzoku Attack"
+#name 16 "NAMEPREFIX Kenzoku $ambush$"
 #descr 16 "The caster summons forth ARTICLE kenzoku in a distant province to attack an enemy commander. Kenzoku are masterful samurai granted immortality for their deeds."
 #details "Units summoned by this spell are not sacred."
 #spelltype 4
@@ -89,7 +92,7 @@
 #maxpower 14
 #nreff 1000
 #pathlevel 4
-#fatiguecost 1400
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -99,7 +102,7 @@
 #secondarypaths 16
 #newunit "Kenzoku"
 
-#name 16 "Send NAMEPREFIX Kenzoku"
+#name 16 "$Send$ NAMEPREFIX Kenzoku"
 #descr 16 "The caster summons forth ARTICLE kenzoku to attack a distant province. Kenzoku are masterful samurai granted immortality for their deeds."
 #details "Units summoned by this spell are not sacred."
 #spelltype 20

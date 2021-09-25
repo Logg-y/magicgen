@@ -18,7 +18,7 @@
 #name 32 "Raven Feast"
 #descr 2 "The caster summons an unkindness of ravens and sends them into a distant province to feast upon the newly dead. The ravens consume the rotting corpses and return to be slaughtered for the raw death essence they then contain. Provinces struck by plagues or containing recent battlefields can give the caster large amounts of Death gems. All unburied dead in a province are consumed. Enemy provinces can be targeted."
 #descr 32 "The caster summons an unkindness of ravens and sends them into a distant province to feast upon the newly dead. The ravens consume the rotting corpses and return to be slaughtered for the raw death essence they then contain. Provinces struck by plagues or containing recent battlefields can give the caster large amounts of Death gems. All unburied dead in a province are consumed. Enemy provinces can be targeted."
-#details "The ravens return sqrt(corpses)/2 death gems."
+#details "The ravens return (sqrt(corpses)+1)/2 death gems."
 #spelltype 4
 
 #end

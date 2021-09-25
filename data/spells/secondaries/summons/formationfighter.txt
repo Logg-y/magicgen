@@ -1,4 +1,5 @@
 #newsecondary "Summon Formationfighter 2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -6,6 +7,9 @@
 #power 0
 
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
+
 
 -- not montag
 #req damage > 0
@@ -17,12 +21,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power 0
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0
@@ -34,12 +41,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 4"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power 0
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0
@@ -51,12 +61,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 5"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power 0
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0
@@ -68,12 +81,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power 0
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0
@@ -85,12 +101,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 2 greater"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power -1
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0
@@ -102,12 +121,15 @@
 #end
 
 #newsecondary "Summon Formationfighter 3 greater"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
 #paths 0
 #power -1
 #req effect != 10050
+#req effect != 21
+#req effect != 10021
 
 -- not montag
 #req damage > 0

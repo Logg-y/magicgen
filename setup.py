@@ -28,7 +28,12 @@ if ver is None:
 
 build_exe_options = {"include_msvcr":False, "excludes":["distutils", "test"]}
 
-cx_Freeze.setup(name="MagicGen", version=ver, description="MagicGen: A procedural spellbook generator for Dominions 5", options={"build_exe":build_exe_options}, executables=[cx_Freeze.Executable("magicgen.py"), cx_Freeze.Executable("magicgengui.pyw", base="Win32GUI")])
+cx_Freeze.setup(name="MagicGen", version=ver,
+				description="MagicGen: A procedural spellbook generator for Dominions 5",
+				options={"build_exe":build_exe_options},
+				executables=[cx_Freeze.Executable("magicgen.py"),
+							 cx_Freeze.Executable("magicgengui.pyw", base="Win32GUI"),
+							 cx_Freeze.Executable("magicgenDevelopmentTools.py", base="Win32GUI")])
 
 # Permissions.
 time.sleep(5)

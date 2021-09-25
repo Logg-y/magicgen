@@ -26,7 +26,7 @@
 #aispellmod -50
 
 #mult casttime 2.0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.1
 -- not ritual
 #req spelltype !& 4
 #req fatiguecost < 100
@@ -51,7 +51,7 @@
 #mult casttime 2.0
 -- not ritual
 #req spelltype !& 4
-#mult fatiguecost 1.4
+#mult fatiguecost 1.1
 #pathlevel 1
 #req fatiguecost >= 100
 

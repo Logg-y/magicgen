@@ -38,12 +38,12 @@
 
 #neweffect "Soul Detonation"
 #effect 2
-#damage 2006
+#damage 2010
 #spec 96
 #schools -1
 -- evo, scale aoe
 #spelltype 2
-#aoe 2001
+#aoe 2003
 #power 0
 #name 1 "Detonation"
 #name 2 "Detonation"
@@ -84,7 +84,7 @@
 
 #paths 1
 #secondarypaths 16
-#secondarypathchance 95
+#secondarypathchance 20
 
 #nextspell "Soul Detonation"
 

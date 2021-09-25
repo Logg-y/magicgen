@@ -2,12 +2,12 @@
 #effect 1
 #damage 677
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 60
+#nreff 4
+#pathlevel 2
+#fatiguecost 110
 #sound 31
 #schools 1
 #ainocast 1
@@ -17,22 +17,26 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX %Apparition%"
+#name 32 "$conjure$ NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch. Casting this spell may disease the caster or anyone nearby."
 
 #spelltype 528
 #ainocast 1
 
-#scalerate 1
+#scalefatiguemult 20
+#scalefatigueexponent -1.6
+#pathperresearch 0.45
+
+#scalerate 2
 #end
 
 #neweffect "apparition ritual"
 #effect 10001
 #damage 677
 #spec 8388608
-#power 5
-#maxpower 14
-#nreff 2001
+#power 3
+#maxpower 10
+#nreff 5
 #pathlevel 2
 #fatiguecost 500
 #schools 1
@@ -42,13 +46,14 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX %Apparition%"
+#name 32 "$Summon$ NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 40
+#scalefatigueexponent -1.5
+#scalefatiguemult 50
+#pathperresearch 0.45
 
 #scalerate 4
 #end
@@ -69,7 +74,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "NAMEPREFIX %Apparition% Attack"
+#name 32 "NAMEPREFIX %Apparition% $ambush$"
 #descr 32 "The caster summons ARTICLE_N %apparition% to attack a hostile commander in a distant province. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
 
 #spelltype 4
@@ -85,7 +90,7 @@
 #maxpower 14
 #nreff 2001
 #pathlevel 3
-#fatiguecost 1600
+#fatiguecost 1000
 #schools 1
 
 #skipchance 99.6
@@ -93,7 +98,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Send NAMEPREFIX %Apparition%"
+#name 32 "$Send$ NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition% to attack a hostile commander in a distant province. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch."
 
 #spelltype 20

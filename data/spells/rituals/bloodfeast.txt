@@ -16,7 +16,7 @@
 
 #name 128 "Blood Feast"
 #descr 128 "The caster has learned the recuperative secrets of cannibalism. In a gruesome ritual lasting a month he consumes the blood and feast of ritually purified sacrifices. The blood feast requires copious amount of flesh and blood of unpurified victims as well however, so the populace in the province where the caster resides is slaughtered in great quantities. The flesh and blood of the victims rejuvenates the caster, healing him of all or at least most afflictions. Bloodmages who partakes too often in blood feasts often develop uncontrollable cravings for human flesh. The ritual does not work on inanimate beings."
-#details "Makes 10 attempts to heal afflictions and kills up to 750 population. 25% chance to develop cravings."
+#details "Makes 10 attempts to heal afflictions and kills up to 750 population. 25% chance to develop cravings, causing the caster to kill 30 population in their current province every turn. If there is no population left, the caster instead gains a random minor affliction."
 
 #spelltype 4
 #end

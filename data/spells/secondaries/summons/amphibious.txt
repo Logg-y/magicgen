@@ -1,4 +1,5 @@
 #newsecondary "Summon Pooramphibian"
+#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -20,6 +21,7 @@
 #end
 
 #newsecondary "Summon fullamphibian"
+#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -41,6 +43,7 @@
 #end
 
 #newsecondary "Summon aquatic on land"
+#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1

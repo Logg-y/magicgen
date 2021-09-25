@@ -83,6 +83,8 @@ class MagicSite(object):
                 for effname, effect in utils.spelleffects.items():
                     if effect.effect == self.effectnumberforunits:  # ritual summon
                         unitid = effect.damage
+                        if effect.siegepatrolchaff > 0:
+                            continue
                         # no montags
                         if unitid < 0:
                             continue

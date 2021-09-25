@@ -1,0 +1,115 @@
+#neweffect "Summon lioness"
+#effect 1
+#damage 2133
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$conjure$ NAMEPREFIX %Lioness%"
+#descr 64 "The caster summons ARTICLE %lioness%. These lions are large and ferocious."
+#aispellmod -10
+#spelltype 528
+
+#scalerate 0.54
+#scalefatigueexponent -1.65
+#pathperresearch 0.4
+#end
+
+#neweffect "lioness ritual"
+#effect 10001
+#damage 2133
+#spec 0
+#power 0
+#maxpower 3
+#nreff 5
+#pathlevel 1
+#fatiguecost 120
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$Summon$ NAMEPREFIX %Lioness%"
+#descr 64 "The caster summons ARTICLE %lioness%. These lions are large and ferocious."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.65
+#scalefatiguemult 12
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+
+#scalerate 4
+#end
+
+#neweffect "lioness Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2133
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX Lioness $ambush$"
+#descr 64 "The caster summons ARTICLE %lioness% to ambush a hostile commander in a distant province. These lions are large and ferocious."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote lioness"
+#effect 10038
+#provrange 4
+#damage 2133
+#spec 0
+#power 4
+#maxpower 14
+#nreff 3004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 10
+
+#name 64 "$Send$ NAMEPREFIX %Lioness%"
+#descr 64 "The caster summons ARTICLE %lioness% to attack a distant province. These lions are large and ferocious."
+
+#spelltype 20
+
+#scalerate 4
+#end

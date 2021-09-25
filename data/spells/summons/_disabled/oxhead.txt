@@ -1,0 +1,108 @@
+#neweffect "Summon oxhead"
+#effect 1
+#damage 2091
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 120
+#scalefatiguemult 30
+#scalefatigueexponent -1.75
+#pathperresearch 0.4	
+
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 97
+
+#name 32 "$conjure$ NAMEPREFIX Ox-%Head%"
+#descr 32 "The caster summons ARTICLE_N Ox-%Head% to fight for him. The ox-head is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
+
+#spelltype 528
+
+#scalerate 0.6
+#end
+
+#neweffect "oxhead ritual"
+#effect 10001
+#damage 2091
+#spec 0
+#power 3
+#maxpower 11
+#nreff 1
+#pathlevel 3
+#fatiguecost 320
+#scalefatigueexponent -2.3
+#scalefatiguemult 150
+#scalerate 1
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 97
+
+#name 32 "$Summon$ NAMEPREFIX Ox-%Head%"
+#descr 32 "The caster summons ARTICLE_N Ox-%Head% to fight for him. The ox-head is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
+
+#spelltype 20
+
+#end
+
+#neweffect "oxhead Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2091
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Ox-head $Ambush$"
+#descr 32 "The caster summons ARTICLE_N Ox-%Head% to ambush a commander in a distant land. The ox-head is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon oxhead"
+#effect 10038
+#provrange 4
+#damage 2091
+#spec 0
+#power 5
+#maxpower 15
+#nreff 1001
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "$Send$ NAMEPREFIX Ox-%Head%"
+#descr 32 "The caster summons ARTICLE_N Ox-%Head% to attack a distant province. The ox-head is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 60
+#end

@@ -1,4 +1,5 @@
 #newsecondary "Summon Armloss"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -15,6 +16,7 @@
 #end
 
 #newsecondary "Summon Eyeloss"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -31,6 +33,7 @@
 #end
 
 #newsecondary "Summon Limp"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -47,6 +50,7 @@
 #end
 
 #newsecondary "Summon Disease"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -63,6 +67,7 @@
 #end
 
 #newsecondary "Summon Chestwound"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -79,6 +84,7 @@
 #end
 
 #newsecondary "Summon Bleed"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -96,6 +102,7 @@
 
 
 #newsecondary "Summon Feeblemind"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -112,6 +119,7 @@
 #end
 
 #newsecondary "Summon Shrink"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

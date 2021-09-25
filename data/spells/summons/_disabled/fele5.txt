@@ -1,0 +1,109 @@
+#neweffect "Summon feles5"
+#effect 1
+#damage 595
+#spec 0
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+
+#skipchance 80
+#scalefatiguemult 20
+#details "The elementals are size 5."
+#name 1 "Summon NAMEPREFIX Huge Fire %Elemental%"
+#descr 1 "The caster summons forth ARTICLE very large fire %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "feles5 ritual"
+#effect 10001
+#damage 595
+#spec 0
+#power 4
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+
+#paths 1 
+#secondarypaths 1 
+
+#skipchance 80
+
+#details "The elementals are size 5."
+#name 1 "Summon NAMEPREFIX Huge Fire Elementals"
+#descr 1 "The caster summons forth very large fire elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 200
+
+#scalerate 2
+#end
+
+#neweffect "feles5 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 595
+#spec 0
+#power 8
+#maxpower 8 
+#nreff 1
+#pathlevel 5
+#fatiguecost 1300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 1 
+#secondarypaths 1 
+
+#details "The elementals are size 5."
+#name 1 "NAMEPREFIX Huge Fire Attack"
+#descr 1 "The caster summons forth a very large fire elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon feles5"
+#effect 10038
+#provrange 4
+#damage 595
+#spec 0
+#power 6
+#maxpower 14
+#nreff 1000
+#pathlevel 4
+#fatiguecost 1600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 1 
+#secondarypaths 1 
+
+#details "The elementals are size 5."
+#name 1 "Send NAMEPREFIX Huge Fire Elementals"
+#descr 1 "The caster summons forth very large fire elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#end

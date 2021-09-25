@@ -1,4 +1,5 @@
 #newsecondary "Summon Power of the Turning Year"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 #end
 
 #newsecondary "Summon Power of the Turning Year 2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

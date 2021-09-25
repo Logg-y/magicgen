@@ -17,12 +17,14 @@
 #skipchance 30
 
 #details "The elementals are size 6."
-#name 2 "Summon NAMEPREFIX Massive Air %Elemental%"
+#name 2 "$conjure$ NAMEPREFIX Massive Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE air water %elemental%. They will fight for him until the battle ends."
 #scalefatiguemult 25
 #spelltype 528
 
 #scalerate 1
+#scalefatiguemult 30
+#scalefatigueexponent -1.9
 #end
 
 #neweffect "aeles6 ritual"
@@ -39,10 +41,10 @@
 #paths 2 
 #secondarypaths 2 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 6."
-#name 2 "Summon NAMEPREFIX Massive Air Elementals"
+#name 2 "$Summon$ NAMEPREFIX Massive Air Elementals"
 #descr 2 "The caster summons forth massive air elementals."
 
 #spelltype 20
@@ -71,7 +73,7 @@
 #secondarypaths 2 
 
 #details "The elementals are size 6."
-#name 2 "NAMEPREFIX Massive Air Attack"
+#name 2 "NAMEPREFIX Massive Air $ambush$"
 #descr 2 "The caster summons forth a massive air elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
 
 #spelltype 4
@@ -97,7 +99,7 @@
 #secondarypaths 2 
 
 #details "The elementals are size 6."
-#name 2 "Send NAMEPREFIX Massive Air Elementals"
+#name 2 "$Send$ NAMEPREFIX Massive Air Elementals"
 #descr 2 "The caster summons forth massive air elementals to attack a distant province."
 
 #spelltype 20

@@ -1,4 +1,5 @@
 #newsecondary "Summon Teleport"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

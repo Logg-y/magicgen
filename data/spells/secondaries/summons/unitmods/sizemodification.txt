@@ -15,6 +15,7 @@
 #nameprefix "Large"
 #graphicsize 75
 #descr "This particular CREATURE is somewhat larger than normal."
+#mor 1
 #end
 
 #newunitmod "Summon Enlarge 2"
@@ -30,6 +31,7 @@
 #size 2
 #nameprefix "Huge"
 #graphicsize 150
+#mor 2
 #descr "This particular CREATURE is significantly larger than normal."
 #end
 
@@ -46,6 +48,7 @@
 #size 3
 #nameprefix "Massive"
 #graphicsize 225
+#mor 3
 #descr "This particular CREATURE is much larger than normal."
 #end
 
@@ -62,6 +65,7 @@
 #size 4
 #nameprefix "Titanic"
 #graphicsize 300
+#mor 4
 #descr "This particular CREATURE dwarfs its peers."
 #end
 

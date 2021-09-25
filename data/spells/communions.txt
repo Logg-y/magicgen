@@ -143,8 +143,8 @@
 -- #scalecost 1
 
 #aoe 1
-#power 6
-#maxpower 6
+#power 4
+#maxpower 4
 #pathlevel 1
 #explspr 10274
 #sound 31
@@ -206,7 +206,7 @@
 -- #scalecost 1
 
 #aoe 0
-#power 6
+#power 4
 #maxpower 50
 #pathlevel 1
 #explspr 10273

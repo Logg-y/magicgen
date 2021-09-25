@@ -10,6 +10,8 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 2
+#req_commander 1
+#req_targminsize 1
 #req_pop0ok
 #nolog
 #msg "A mage has suddenly gained deeper knowledge of astral power!"

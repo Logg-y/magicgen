@@ -1,4 +1,5 @@
 #newsecondary "Summon Berserking"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 #end
 
 #newsecondary "Summon Berserking 2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

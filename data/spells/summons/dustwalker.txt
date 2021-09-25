@@ -2,12 +2,12 @@
 #effect 1
 #damage 1981
 #spec 0
-#power 6
+#power 3
 #maxpower 14
 #precision -2
 #nreff 3
-#pathlevel 3
-#fatiguecost 100
+#pathlevel 2
+#fatiguecost 120
 #sound 31
 #schools 16
 
@@ -24,18 +24,21 @@
 
 #spelltype 528
 
-#scalerate 0.75
+#scalerate 1
+#pathperresearch 0.4
+#scalefatigueexponent -1.4
+#scalefatiguemult 8
 #end
 
 #neweffect "dustwalker ritual"
 #effect 10001
 #damage 1981
 #spec 0
-#power 6
+#power 3
 #maxpower 14
-#nreff 1004
-#pathlevel 5
-#fatiguecost 500
+#nreff 5
+#pathlevel 2
+#fatiguecost 420
 #schools 16
 
 #paths 40
@@ -44,15 +47,16 @@
 
 #skipchance 60
 
-#name 32 "Animate NAMEPREFIX Desert Bones"
-#name 8 "Animate NAMEPREFIX Desert Bones"
+#name 32 "Raise NAMEPREFIX Desert Bones"
+#name 8 "Raise NAMEPREFIX Desert Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 #descr 8 "The caster unearths and animates bones of ancient human warriors who lived in ancient deserts. These warriors have become filled with desert power and radiate magical heat. Due to spending millenia trapped in ancient sands, they are more effective in hot provinces."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 90
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#scalefatiguemult 40
 
 #scalerate 2
 #end
@@ -93,7 +97,7 @@
 #maxpower 16
 #nreff 1006
 #pathlevel 5
-#fatiguecost 1600
+#fatiguecost 800
 #schools 16
 #nogeodst 2052
 

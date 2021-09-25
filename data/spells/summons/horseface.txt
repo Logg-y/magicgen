@@ -2,13 +2,16 @@
 #effect 1
 #damage 2090
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 3
-#fatiguecost 100
+#pathlevel 2
+#fatiguecost 120
 #scalefatiguemult 20
+#scalefatigueexponent -1.6
+#pathperresearch 0.4	
+
 #sound 31
 #schools 1
 
@@ -16,25 +19,27 @@
 #secondarypaths 32
 
 #skipchance 97
-#aispellmod 33
 
-#name 32 "Summon NAMEPREFIX Horse-%Face%"
+#name 32 "$conjure$ NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.6
 #end
 
 #neweffect "horseface ritual"
 #effect 10001
 #damage 2090
 #spec 0
-#power 5
-#maxpower 14
-#nreff 1001
+#power 3
+#maxpower 11
+#nreff 3
 #pathlevel 3
-#fatiguecost 600
+#fatiguecost 920
+#scalefatigueexponent -1.8
+#scalefatiguemult 110
+#scalerate 2
 #schools 1
 
 #paths 32
@@ -42,15 +47,10 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX Horse-%Face%"
+#name 32 "$Summon$ NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
 
 #spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 80
-
-#scalerate 4
 #end
 
 #neweffect "horseface Remote Assassination"
@@ -70,7 +70,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "NAMEPREFIX horse-face Ambush"
+#name 32 "NAMEPREFIX horse-face $Ambush$"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to ambush a commander in a distant land. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
 
 #spelltype 4
@@ -86,7 +86,7 @@
 #maxpower 15
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1600
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -95,7 +95,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Send NAMEPREFIX Horse-%Face%"
+#name 32 "$Send$ NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to attack a distant province. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."
 
 #spelltype 20

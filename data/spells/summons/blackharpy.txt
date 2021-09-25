@@ -2,13 +2,42 @@
 #effect 1
 #damage 430
 #spec 0
-#power 2
-#maxpower 14
+#power 1
+#maxpower 20
 #precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 66
+#secondarypaths 66
+#scalefatigueexponent -1.1
+#scalefatiguemult 1
+#pathperresearch 0.4
+
+#skipchance 99
+
+#name 2 "$Conjure$ NAMEPREFIX Black %Harpy%"
+#name 64 "$Conjure$ NAMEPREFIX Black %Harpy%"
+#descr 2 "The caster summons ARTICLE black %harpy%. Whilst typically used as scouts, they can prove to be annoyances in combat."
+#descr 64 "The caster summons ARTICLE black %harpy%. Whilst typically used as scouts, they can prove to be annoyances in combat."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "blackharpy ritual"
+#effect 10001
+#damage 430
+#spec 0
+#power 1
+#maxpower 4
 #nreff 2003
 #pathlevel 1
-#fatiguecost 100
-#sound 31
+#fatiguecost 120
 #schools 1
 
 #paths 66
@@ -16,26 +45,33 @@
 
 #skipchance 99
 
-#name 2 "Summon NAMEPREFIX Black Harpies"
-#name 64 "Summon NAMEPREFIX Black Harpies"
+#name 2 "$Summon$ NAMEPREFIX Black Harpies"
+#name 64 "$Summon$ NAMEPREFIX Black Harpies"
 #descr 2 "The caster summons some black harpies. Whilst typically used as scouts, they can prove to be annoyances in combat."
 #descr 64 "The caster summons some black harpies. Whilst typically used as scouts, they can prove to be annoyances in combat."
 
-#spelltype 528
+#spelltype 20
 
-#scalerate 4
+#skipchance 97
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 15
+
+#siegepatrolchaff 1
+
+#scalerate 3
 #end
 
-#neweffect "blackharpy ritual"
+#neweffect "blackharpy chassis dummy"
 #effect 10001
 #damage 430
 #spec 0
-#power 2
-#maxpower 14
-#nreff 3007
-#pathlevel 2
-#fatiguecost 300
-#schools 1
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#schools -1
 
 #paths 66
 #secondarypaths 66
@@ -51,10 +87,11 @@
 
 #skipchance 97
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 20
+#scalefatigueexponent -1.4
+#scalefatiguemult 15
 
-#scalerate 4
+
+#scalerate 3
 #end
 
 #neweffect "blackharpy Remote Assassination"
@@ -74,8 +111,8 @@
 #paths 66
 #secondarypaths 66
 
-#name 64 "NAMEPREFIX Black Harpy Attack"
-#name 2 "NAMEPREFIX Black Harpy Attack"
+#name 64 "NAMEPREFIX Black Harpy $Ambush$"
+#name 2 "NAMEPREFIX Black Harpy $Ambush$"
 #descr 64 "The caster summons a black harpy and sends it to seek out an enemy commander in a distant land. It is very unlikely to successfully kill most commanders, serving as little more than an annoyance."
 #descr 2 "The caster summons a black harpy and sends it to seek out an enemy commander in a distant land. It is very unlikely to successfully kill most commanders, serving as little more than an annoyance."
 
@@ -92,7 +129,7 @@
 #maxpower 14
 #nreff 7010
 #pathlevel 3
-#fatiguecost 800
+#fatiguecost 500
 #schools 1
 #nogeodst 2052
 
@@ -104,8 +141,8 @@
 -- #scalefatigueexponent 0.5
 -- #scalefatiguemult 20
 
-#name 64 "Send NAMEPREFIX Black Harpies"
-#name 2 "Send NAMEPREFIX Black Harpies"
+#name 64 "$Send$ NAMEPREFIX Black Harpies"
+#name 2 "$Send$ NAMEPREFIX Black Harpies"
 #descr 64 "The caster summons black harpies and sends them to attack distant lands."
 #descr 2 "The caster summons black harpies and sends them to attack distant lands."
 

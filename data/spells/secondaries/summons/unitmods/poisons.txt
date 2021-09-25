@@ -1,9 +1,9 @@
-#newunitmod "Summon Weakpoison"
-#weaponmod "Weakpoison"
-#nameprefix "Poisonous"
-#req trample <= 0
-#descr "This particular CREATURE has been altered to produce a weak poison that coats its weapons."
-#end
+-- #newunitmod "Summon Weakpoison"
+-- #weaponmod "Weakpoison"
+-- #nameprefix "Poisonous"
+-- #req trample <= 0
+-- #descr "This particular CREATURE has been altered to produce a weak poison that coats its weapons."
+-- #end
 
 #newunitmod "Summon Strongpoison"
 #weaponmod "Strongpoison"

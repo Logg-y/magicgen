@@ -1,6 +1,6 @@
 #neweffect "Natprotboost Animals"
 #effect 10
-#damage 70368744177664
+#damage 70437463654400
 #spec 281474985115648
 #schools 2
 
@@ -10,20 +10,22 @@
 #scalerate 1.5
 
 #aoe 1
-#power 1
-#maxpower 6
+#power 0
+#maxpower 5
 #pathlevel 1
 #explspr 10184
 #sound 31
 #range 10
 #fatiguecost 5
 
+#skipchance 80
+
 
 -- n
 #paths 64
 #secondarypaths 64
 
-#details "Grants +5 natural protection to animals, applied before any other protection affecting buffs."
+#details "Grants slashing resistance and +5 natural protection to animals, applied before any other protection affecting buffs."
 
 #namecond effectiveaoe < 2 64 "NAMEPREFIX Thickened Hide"
 #namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Sturdy Hides"
@@ -39,7 +41,7 @@
 
 #neweffect "Natprotboost Animals battlefield"
 #effect 10
-#damage 70368744177664
+#damage 70437463654400
 #spec 281474985115648
 #schools 2
 
@@ -49,8 +51,8 @@
 #scalerate 1.15
 
 #aoe 666
-#power 7
-#maxpower 7
+#power 6
+#maxpower 6
 #pathlevel 3
 #explspr 10184
 #sound 31
@@ -58,12 +60,14 @@
 #fatiguecost 100
 #unique 1
 
+#skipchance 30
+
 
 -- n
 #paths 64
 #secondarypaths 64
 
-#details "Grants +5 natural protection to animals, applied before any other protection affecting buffs."
+#details "Grants slashing resistance and +5 natural protection to animals, applied before any other protection affecting buffs."
 
 #namecond effectiveaoe < 2 64 "NAMEPREFIX Thickened Hide"
 #namecond2 2 <= effectiveaoe < 666 64 "NAMEPREFIX Sturdy Hides"
@@ -76,7 +80,7 @@
 
 #neweffect "Natprotboost Undead"
 #effect 10
-#damage 70368744177664
+#damage 70506183131136
 #spec 276840456
 #schools 2
 
@@ -87,19 +91,21 @@
 
 #aoe 0
 #power 0
-#maxpower 6
+#maxpower 5
 #pathlevel 1
 #explspr 10197
 #sound 31
 #range 10
 #fatiguecost 5
 
+#skipchance 80
+
 
 -- d
 #paths 32
 #secondarypaths 32
 
-#details "Grants +5 natural protection to undead, applied before any other protection affecting buffs."
+#details "Grants blunt resistance and +5 natural protection to undead, applied before any other protection affecting buffs."
 
 #namecond effectiveaoe < 2 32 "NAMEPREFIX Strengthen Bones"
 #namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Sturdy Bones"
@@ -116,7 +122,7 @@
 
 #neweffect "Natprotboost Undead battlefield"
 #effect 10
-#damage 70368744177664
+#damage 70506183131136
 #spec 276840456
 #schools 2
 
@@ -126,8 +132,8 @@
 #scalerate 1.5
 
 #aoe 666
-#power 7
-#maxpower 7
+#power 6
+#maxpower 6
 #pathlevel 3
 #explspr 10197
 #sound 31
@@ -135,12 +141,14 @@
 #fatiguecost 100
 #unique 1
 
+#skipchance 30
+
 
 -- d
 #paths 32
 #secondarypaths 32
 
-#details "Grants +5 natural protection to undead, applied before any other protection affecting buffs."
+#details "Grants blunt resistance and +5 natural protection to undead, applied before any other protection affecting buffs."
 
 #namecond effectiveaoe < 2 32 "NAMEPREFIX Strengthen Bones"
 #namecond2 2 <= effectiveaoe < 666 32 "NAMEPREFIX Sturdy Bones"

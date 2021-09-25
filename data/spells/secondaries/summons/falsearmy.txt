@@ -1,4 +1,5 @@
 #newsecondary "Summon Falsearmy Large"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -26,6 +27,7 @@
 #end
 
 #newsecondary "Summon Falsearmy Large2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -54,6 +56,7 @@
 #end
 
 #newsecondary "Summon Falsearmy Small"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -83,6 +86,7 @@
 #end
 
 #newsecondary "Summon Falsearmy Small2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

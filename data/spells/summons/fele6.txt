@@ -16,7 +16,7 @@
 
 #skipchance 30
 
-#scalefatiguemult 25
+#scalefatiguemult 20
 
 #details "The elementals are size 6."
 #name 1 "Summon NAMEPREFIX Massive Fire %Elemental%"
@@ -41,7 +41,7 @@
 #paths 1 
 #secondarypaths 1 
 
-#skipchance 97
+#skipchance 50
 
 #details "The elementals are size 6."
 #name 1 "Summon NAMEPREFIX Massive Fire Elementals"

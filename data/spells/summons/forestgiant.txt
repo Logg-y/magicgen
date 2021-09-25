@@ -5,9 +5,9 @@
 #power 4
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 60
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
 #sound 31
 #schools 1
 
@@ -17,24 +17,26 @@
 
 #skipchance 97
 
-#name 64 "Summon NAMEPREFIX Forest %Giant%"
+#name 64 "$conjure$ NAMEPREFIX Forest %Giant%"
 #descr 64 "The caster summons ARTICLE forest %giant%. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."
 
 #spelltype 528
 
 #scalerate 1
---#scalefatiguemult 20
+#scalefatiguemult 8
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
 #end
 
 #neweffect "forestgiant ritual"
 #effect 10001
 #damage 2229
 #spec 0
-#power 6
+#power 3
 #maxpower 14
-#nreff 1001
+#nreff 4
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 420
 #schools 1
 
 #paths 64
@@ -42,17 +44,18 @@
 
 #skipchance 97
 
-#name 64 "Summon NAMEPREFIX Forest %Giant%"
+#name 64 "$Summon$ NAMEPREFIX Forest %Giant%"
 #descr 64 "The caster summons ARTICLE forest %giant%. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."
 
 #spelltype 20
 
 #skipchance 97
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 60
+#scalefatigueexponent -1.6
+#scalefatiguemult 40
+#pathperresearch 0.4
 
-#scalerate 4
+#scalerate 2
 #end
 
 #neweffect "forestgiant Remote Assassination"
@@ -74,7 +77,7 @@
 
 #skipchance 99
 
-#name 64 "NAMEPREFIX Forest Giant Attack"
+#name 64 "NAMEPREFIX Forest Giant $ambush$"
 #descr 64 "The caster summons ARTICLE forest %giant% to attack a hostile commander in a distant province. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."
 
 
@@ -91,7 +94,7 @@
 #maxpower 14
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1400
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -103,7 +106,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 40
 
-#name 64 "Send NAMEPREFIX Forest %Giant%"
+#name 64 "$Send$ NAMEPREFIX Forest %Giant%"
 #descr 64 "The caster summons ARTICLE forest %giant% to attack a hostile commander in a distant province. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."
 
 #spelltype 20

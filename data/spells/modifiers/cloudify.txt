@@ -39,6 +39,11 @@
 #req effect != 56
 #req range > 0
 
+-- enslave and charm effects can crash the game in clouds
+-- specifically when the caster becomes invalid when the spell is still in effect, this may also be a concern with projectile-ified versions if they ever happen
+#req effect != 28
+#req effect != 29
+
 #skipchance 10
 
 #req nonscalingaoe < 650

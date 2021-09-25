@@ -1,4 +1,5 @@
 #newsecondary "Summon Acidweapon"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

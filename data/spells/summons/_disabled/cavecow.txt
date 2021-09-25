@@ -1,0 +1,115 @@
+#neweffect "Summon cavecow"
+#effect 1
+#damage 2512
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 5
+#pathlevel 2
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 8 
+#secondarypaths 8 
+#scalefatiguemult 16
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#skipchance 80
+
+#name 8 "$conjure$ NAMEPREFIX Cave %Cow%"
+#descr 8 "The caster summons ARTICLE cave %cow%. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "cavecow ritual"
+#effect 10001
+#damage 2512
+#spec 0
+#power 3
+#maxpower 14
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 8 
+#secondarypaths 8 
+
+#skipchance 80
+
+#name 8 "$summon$ NAMEPREFIX Cave %Cow%"
+#descr 8 "The caster summons ARTICLE cave %cow%. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 35
+#pathperresearch 0.4
+
+#scalerate 1.8
+#end
+
+#neweffect "cavecow Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2512
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 8 
+#secondarypaths 8 
+
+#skipchance 99
+
+#name 8 "NAMEPREFIX Cave %Cow% $ambush$"
+#descr 8 "The caster summons ARTICLE cave %cow% to attack a hostile commander in a distant province. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote cavecow"
+#effect 10038
+#provrange 4
+#damage 2512
+#spec 0
+#power 4
+#maxpower 14
+#nreff 3005
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 8 
+#secondarypaths 8 
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 30
+
+#name 8 "$Send$ NAMEPREFIX Cave %Cow%"
+#descr 8 "The caster summons ARTICLE cave %cow% to attack a distant province. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
+
+
+
+#spelltype 20
+
+#scalerate 4
+#end

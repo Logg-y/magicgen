@@ -1,6 +1,6 @@
 import csv
 import os
-from copy import copy
+from copy import copy, deepcopy
 
 from Entities import weapon
 
@@ -40,6 +40,8 @@ def getMontagSummonAIScore(montagID):
         return 77 # more soulless
     raise ValueError(f"No summon AI score defined for montag {montagID}")
 
+_badkeys = ["siegebonus", "castledef", "patrolbonus"]
+
 class UnitInBaseDataFinder(object):
     def __init__(self):
         self.additionalmodcmds = ""
@@ -52,8 +54,9 @@ class UnitInBaseDataFinder(object):
                 reader = csv.DictReader(f, delimiter="\t")
                 for line in reader:
                     for k in line.keys():
-                        setattr(self, k, -1)
-                        csv_keys.append(k)
+                        if k not in _badkeys:
+                            setattr(self, k, -1)
+                            csv_keys.append(k)
                     break
         else:
             for k in csv_keys:
@@ -94,6 +97,7 @@ class UnitInBaseDataFinder(object):
         global descriptioncache
         self = UnitInBaseDataFinder()
         self.line = line
+        self.params = ["id", "origid", "weapons", "descr", "uniqueid"]
         id = int(line["id"])
         self.origid = id
         self.id = id
@@ -102,9 +106,12 @@ class UnitInBaseDataFinder(object):
                 val = int(line[k])
             except:
                 val = line[k]
+            if (val is None or val == "") and k in _badkeys:
+                continue
             if val is None: val = -1
             if val == "": val = -1
             setattr(self, k, val)
+            self.params.append(k)
         self.weapons = []
         for x in range(1, 8):
             if getattr(self, f"wpn{x}") > 0:
@@ -122,14 +129,18 @@ class UnitInBaseDataFinder(object):
         self.uniqueid = f"vanilla-{self.id}"
 
         return self
+    def __deepcopy__(self, memo):
+        out = UnitInBaseDataFinder()
+        for param in self.params:
+            setattr(out, param, deepcopy(getattr(self, param, memo)))
+        return out
 
 
 def get(id):
     # The file lookup is slow
-    # but also making deepcopy methods for objects is really annoying
-    # so probably easiest to save the file line
+    # I did just save the file lines, but this was still being slow so deepcopy it is
     if id in cache:
-        return UnitInBaseDataFinder.from_line(copy(cache[id]))
+        return deepcopy(cache[id])
     u = UnitInBaseDataFinder.from_id(id)
-    cache[id] = copy(u.line)
-    return u
+    cache[id] = u
+    return deepcopy(u)

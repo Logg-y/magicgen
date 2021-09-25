@@ -55,7 +55,7 @@
 #schools 1
 #newunit "Master Necromancer"
 
-#skipchance 40
+#skipchance 70
 #pathskipchance 16 95
 #pathskipchance 64 80
 #paths 112

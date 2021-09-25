@@ -2,13 +2,14 @@
 #effect 1
 #damage 523
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+#scalefatiguemult 10
+#scalefatigueexponent -1.4
 #sound 31
 #schools 1
 
@@ -17,7 +18,7 @@
 
 #skipchance 50
 
-#name 1 "Summon NAMEPREFIX Fire %Drake%"
+#name 1 "$conjure$ NAMEPREFIX Fire %Drake%"
 #descr 1 "The caster summons ARTICLE fire %drake% to fight for him. The fire drake is a large cold-blooded beast that breathes fire."
 
 #spelltype 528
@@ -41,7 +42,7 @@
 
 #skipchance 50
 
-#name 1 "Summon NAMEPREFIX Fire %Drake%"
+#name 1 "$Summon$ NAMEPREFIX Fire %Drake%"
 #descr 1 "The caster summons ARTICLE fire %drake% to fight for him. The fire drake is a large cold-blooded beast that breathes fire."
 
 #spelltype 20
@@ -69,7 +70,7 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "NAMEPREFIX Fire Drake Ambush"
+#name 1 "NAMEPREFIX Fire Drake $Ambush$"
 #descr 1 "The caster summons ARTICLE fire %drake% to attack a hostile commander in a distant land. The fire drake is a large cold-blooded beast that breathes fire."
 
 #spelltype 4
@@ -94,7 +95,7 @@
 #paths 1
 #secondarypaths 1
 
-#name 1 "Send NAMEPREFIX Fire %Drake%"
+#name 1 "$Send$ NAMEPREFIX Fire %Drake%"
 #descr 1 "The caster summons ARTICLE fire %drake% to attack a distant land. The fire drake is a large cold-blooded beast with thick scales."
 
 #spelltype 20

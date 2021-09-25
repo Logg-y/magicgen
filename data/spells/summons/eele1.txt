@@ -1,13 +1,13 @@
 #neweffect "Summon eeles1"
 #effect 1
 #damage 498
-#spec 0
-#power 1
-#maxpower 7
+#spec 8388608
+#power 0
+#maxpower 11
 #precision -2
 #nreff 1
 #pathlevel 1
-#fatiguecost 20
+#fatiguecost 22
 #sound 31
 #schools 1
 
@@ -17,24 +17,58 @@
 #skipchance 20
 
 #details "The elementals are size 1."
-#name 8 "Summon NAMEPREFIX Tiny Earth %Elemental%"
+#name 8 "$conjure$ NAMEPREFIX Tiny Earth %Elemental%"
 #descr 8 "The caster summons forth ARTICLE tiny earth %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#scalefatiguemult 2
+#pathperresearch 0.33
 #end
 
 #neweffect "eeles1 ritual"
 #effect 10001
 #damage 498
 #spec 0
-#power 1
-#maxpower 7
-#nreff 4001
+#power 0
+#maxpower 3
+#nreff 5
 #pathlevel 1
-#fatiguecost 300
+#fatiguecost 120
 #schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 20
+
+#details "The elementals are size 1."
+#name 8 "$Summon$ NAMEPREFIX Tiny Earth Elementals"
+#descr 8 "The caster summons forth tiny earth elementals."
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 15
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+
+#scalerate 3
+#end
+
+#neweffect "eeles1 chassis dummy"
+#effect 10001
+#damage 498
+#spec 0
+#power -2
+#maxpower -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 5
+#schools -1
 
 #paths 8
 #secondarypaths 8
@@ -47,11 +81,13 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
+#scalefatigueexponent -1.4
 #scalefatiguemult 15
+#pathperresearch 0.4
 
-#scalerate 4
+#scalerate 3
 #end
+
 
 #neweffect "eeles1 Remote Assassination"
 #effect 10050
@@ -71,7 +107,7 @@
 #secondarypaths 8
 
 #details "The elementals are size 1."
-#name 8 "NAMEPREFIX Tiny Earth Attack"
+#name 8 "NAMEPREFIX Tiny Earth $Ambush$"
 #descr 8 "The caster summons forth a tiny earth elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
 
 #spelltype 4
@@ -87,7 +123,7 @@
 #maxpower 14
 #nreff 4011
 #pathlevel 4
-#fatiguecost 800
+#fatiguecost 600
 #schools 1
 #nogeodst 2052
 
@@ -97,7 +133,7 @@
 #secondarypaths 8
 
 #details "The elementals are size 1."
-#name 8 "Send NAMEPREFIX Tiny Earth Elementals"
+#name 8 "$Send$ NAMEPREFIX Tiny Earth Elementals"
 #descr 8  "The caster summons forth tiny earth elementals to attack a distant province."
 
 #spelltype 20

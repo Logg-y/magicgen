@@ -73,7 +73,7 @@
 #secondarypaths 128
 #secondarypathchance 95
 
-#name 128 "NAMEPREFIX Demonic %Locust% Ambush"
+#name 128 "NAMEPREFIX Demonic %Locust% $Ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to kill an enemy commander in a distant province. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger."
 
 #skipchance 99
@@ -104,7 +104,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 160
 
-#name 128 "Send NAMEPREFIX Demonic %Locust%"
+#name 128 "$Send$ NAMEPREFIX Demonic %Locust%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE demonic %locust% to attack a distant province. Demonic locusts are large locusts with human heads, a thick carapace and mighty stinger."
 
 #spelltype 20

@@ -1,4 +1,5 @@
 #newsecondary "Summon Poisonbarbs"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 #end
 
 #newsecondary "Summon Poisonskin"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -33,6 +35,7 @@
 #end
 
 #newsecondary "Summon Fireshield"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -50,6 +53,7 @@
 #end
 
 #newsecondary "Summon Banefireshield"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -67,6 +71,7 @@
 #end
 
 #newsecondary "Summon Acidsplash"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -85,6 +90,7 @@
 #end
 
 #newsecondary "Summon Fateweaving"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -101,6 +107,7 @@
 #end
 
 #newsecondary "Summon Overcharge"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -118,6 +125,7 @@
 #end
 
 #newsecondary "Summon Eyevengeance"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -134,6 +142,7 @@
 #end
 
 #newsecondary "Summon Horrormark"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -150,6 +159,7 @@
 #end
 
 #newsecondary "Summon Entangle"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -166,6 +176,7 @@
 #end
 
 #newsecondary "Summon Bloodvengeance"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -183,6 +194,7 @@
 #end
 
 #newsecondary "Summon Damagereversal"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -200,6 +212,7 @@
 #end
 
 #newsecondary "Summon Slimer"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -220,6 +233,7 @@
 
 
 #newsecondary "Summon Poisonbarbs 15"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -237,6 +251,7 @@
 #end
 
 #newsecondary "Summon Fireshield 14"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -254,6 +269,7 @@
 #end
 
 #newsecondary "Summon Banefireshield 14"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -271,6 +287,7 @@
 #end
 
 #newsecondary "Summon Acidsplash 14"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -288,6 +305,7 @@
 #end
 
 #newsecondary "Summon Overcharge 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

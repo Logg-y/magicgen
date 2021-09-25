@@ -7,6 +7,21 @@
 #name 32 "Decay"
 #spelltype 2
 #scalerate 0
+#aoe 5
+#power 1
+#name 1 "Banefire Decay"
+#name 32 "Banefire Decay"
+#end
+
+#neweffect "Banefire Decay Small"
+#effect 11
+#damage 256
+#spec 4224
+#schools -1
+#paths -1
+#name 32 "Decay"
+#spelltype 2
+#scalerate 0
 #aoe 1
 #power 1
 #name 1 "Banefire Decay"
@@ -23,7 +38,7 @@
 #aoe 1
 #schools 4
 #range 5030
-#precision 4
+#precision 2
 #nextspell "Banefire Decay"
 #flightspr 10067
 #explspr 10262
@@ -68,7 +83,7 @@
 #fatiguecost 30
 #explspr 10127
 #sound 16
-#nextspell "Banefire Decay"
+#nextspell "Banefire Decay Small"
 #paths 33
 #secondarypaths 33
 #secondarypathchance 100

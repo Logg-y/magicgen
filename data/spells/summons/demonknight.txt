@@ -74,7 +74,7 @@
 #secondarypaths 8
 #secondarypathchance 80
 
-#name 128 "NAMEPREFIX Demon Knight Attack"
+#name 128 "NAMEPREFIX Demon Knight $ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster binds a demon knight to ambush an enemy commander."
 
 #spelltype 4
@@ -103,7 +103,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 270
 
-#name 128 "Send NAMEPREFIX Demon Knights"
+#name 128 "$Send$ NAMEPREFIX Demon Knights"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of demon knights to attack a distant province."
 
 #spelltype 20

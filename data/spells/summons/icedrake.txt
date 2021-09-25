@@ -2,13 +2,14 @@
 #effect 1
 #damage 579
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+#scalefatiguemult 10
+#scalefatigueexponent -1.4
 #sound 31
 #schools 1
 
@@ -17,7 +18,7 @@
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX Ice %Drake%"
+#name 4 "$conjure$ NAMEPREFIX Ice %Drake%"
 #descr 4 "The caster summons ARTICLE ice %drake% to fight for him. The ice drake is a large cold-blooded beast that breathes freezing $mist$."
 
 #spelltype 528
@@ -41,7 +42,7 @@
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX Ice %Drake%"
+#name 4 "$Summon$ NAMEPREFIX Ice %Drake%"
 #descr 4 "The caster summons ARTICLE ice %drake% to fight for him. The ice drake is a large cold-blooded beast that breathes freezing $mist$."
 
 #spelltype 20
@@ -71,7 +72,7 @@
 
 #skipchance 99
 
-#name 4 "NAMEPREFIX Ice %Drake% Attack"
+#name 4 "NAMEPREFIX Ice %Drake% $ambush$"
 #descr 4 "The caster sends ARTICLE ice %drake% to attack a hostile commander in a distant land. The ice drake is a large cold-blooded beast that breathes freezing $mist$."
 
 #spelltype 4
@@ -96,7 +97,7 @@
 #paths 4
 #secondarypaths 4
 
-#name 4 "NAMEPREFIX Ice %Drake% Attack"
+#name 4 "$send$ NAMEPREFIX Ice %Drake%"
 #descr 4 "The caster sends ARTICLE ice %drake% to attack a distant land. The ice drake is a large cold-blooded beast that breathes freezing $mist$."
 
 #spelltype 20

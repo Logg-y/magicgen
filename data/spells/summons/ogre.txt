@@ -2,28 +2,29 @@
 #effect 1
 #damage 2135
 #spec 0
-#power 3
-#maxpower 14
+#power 2
+#maxpower 12
 #precision -2
-#nreff 1
+#nreff 3
 #pathlevel 2
-#fatiguecost 40
+#fatiguecost 110
 #explspr 10232
 #sound 31
 #schools 1
-#aispellmod -40
 
 #paths 8
 #secondarypaths 8
 
-#name 8 "Summon NAMEPREFIX %Ogre%"
-#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+#name 8 "$conjure$ NAMEPREFIX %Ogre%"
+#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are somewhat resistant to cold."
 
 #spelltype 528
 
-#scalerate 0.85
---#scalefatiguemult 20
+#scalerate 1.2
+#scalefatiguemult 12
+#scalefatigueexponent -1.6
 -- #scalecost 1.0
+#pathperresearch 0.4
 #schools 16
 #skipchance 50
 #end
@@ -45,11 +46,13 @@
 #secondarypaths 8
 
 #spelltype 20
+#pathperresearch 0.4
+#scalefatigueexponent -1.6
 
 #scalefatiguemult 40
 
-#name 8 "Summon NAMEPREFIX %Ogre%"
-#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are slightly resistant to cold."
+#name 8 "$Summon$ NAMEPREFIX %Ogre%"
+#descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are somewhat resistant to cold."
 
 #scalerate 2
 #end
@@ -71,7 +74,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "NAMEPREFIX %Ogre% Attack"
+#name 8 "NAMEPREFIX %Ogre% $ambush$"
 #descr 8 "The caster summons ARTICLE_N ogre to attack a hostile commander in a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."
 
 
@@ -89,7 +92,7 @@
 #maxpower 9
 #nreff 2005
 #pathlevel 3
-#fatiguecost 900
+#fatiguecost 700
 #schools 1
 #nogeodst 2052
 
@@ -100,7 +103,7 @@
 
 #scalefatiguemult 22
 
-#name 8 "Send NAMEPREFIX %Ogre%"
+#name 8 "$Send$ NAMEPREFIX %Ogre%"
 #descr 8 "The caster summons ARTICLE_N ogre to attack a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."
 
 #spelltype 20

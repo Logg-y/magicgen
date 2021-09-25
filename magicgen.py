@@ -26,7 +26,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.0.0"
+ver = "3.0.1"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -39,6 +39,35 @@ def _writetoconsole(line):
         line += "\n"
     sys.stderr.write(line)
     sys.stderr.flush()
+
+def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
+    if len(utils.spelleffects) > 0:
+        return
+    "Parse all data files. Return a dict of {spell effect name:SpellEffect instance}."
+    fileparser.readModifiersFromDir(r"./data/spells/modifiers")
+    fileparser.readSecondariesFromDir(r"./data/spells/secondaries")
+    fileparser.readSecondariesFromDir(r"./data/spells/secondaries/summons")
+    fileparser.readUnitModsFromDir(r"./data/spells/secondaries/summons/unitmods")
+    fileparser.readEventSetsFromDir(r"./data/spells/secondaries/summons/unitmods/eventsets")
+    fileparser.readWeaponModsFromDir(r"./data/spells/secondaries/summons/unitmods/weaponmods")
+    fileparser.readUnitModListsFromDir(r"./data/spells/unitmodlists")
+    # dict merging
+    # (or I could upgrade to py3.9 to use |=)
+    s = fileparser.readEffectsFromDir(r"./data/spells/secondaries/nextspells")
+    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons")}
+    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons/commanders")}
+    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals")}
+    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals/globals")}
+    fileparser.readEventSetsFromDir(r"./data/spells/rituals/globals/events")
+    fileparser.readUnitModsFromDir(r"./data/spells/rituals/globals/unitmods")
+    fileparser.readWeaponModsFromDir(r"./data/spells/rituals/unitmods/weaponmods")
+    fileparser.readMagicSitesFromDir(r"./data/spells/rituals/magicsites")
+    fileparser.readEventSetsFromDir(r"./data/spells/rituals/events")
+    fileparser.readUnitModsFromDir(r"./data/spells/rituals/unitmods")
+    fileparser.readNewUnitsFromDir(r"./data/spells/summons/newunits")
+
+    s = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
+    return s
 
 
 def rollspells(**options):
@@ -80,29 +109,7 @@ def rollspells(**options):
         with open(outfp, "w") as f:
             l: List[Spell] = []
             _writetoconsole("Parsing data files...\n")
-            fileparser.readModifiersFromDir(r"./data/spells/modifiers")
-            fileparser.readSecondariesFromDir(r"./data/spells/secondaries")
-            fileparser.readSecondariesFromDir(r"./data/spells/secondaries/summons")
-            fileparser.readUnitModsFromDir(r"./data/spells/secondaries/summons/unitmods")
-            fileparser.readEventSetsFromDir(r"./data/spells/secondaries/summons/unitmods/eventsets")
-            fileparser.readWeaponModsFromDir(r"./data/spells/secondaries/summons/unitmods/weaponmods")
-            fileparser.readUnitModListsFromDir(r"./data/spells/unitmodlists")
-            # dict merging
-            # (or I could upgrade to py3.9 to use |=)
-            s = fileparser.readEffectsFromDir(r"./data/spells/secondaries/nextspells")
-            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons")}
-            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons/commanders")}
-            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals")}
-            s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals/globals")}
-            fileparser.readEventSetsFromDir(r"./data/spells/rituals/globals/events")
-            fileparser.readUnitModsFromDir(r"./data/spells/rituals/globals/unitmods")
-            fileparser.readWeaponModsFromDir(r"./data/spells/rituals/unitmods/weaponmods")
-            fileparser.readMagicSitesFromDir(r"./data/spells/rituals/magicsites")
-            fileparser.readEventSetsFromDir(r"./data/spells/rituals/events")
-            fileparser.readUnitModsFromDir(r"./data/spells/rituals/unitmods")
-            fileparser.readNewUnitsFromDir(r"./data/spells/summons/newunits")
-
-            s: Dict[str, fileparser.SpellEffect] = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
+            s: Dict[str, fileparser.SpellEffect] = _parseDataFiles()
 
             genericSpellCountsByPath: Dict[int, int] = {}
 
@@ -144,10 +151,15 @@ def rollspells(**options):
                 # do a second run ignoring them
                 allowskipchance = True
                 for x in range(0, spellsperlevel):
+                    attempt = 0
                     while 1:
                         spell = None
                         if len(effectpool) == 0:
-                            if allowskipchance:
+                            if attempt < spellsperlevel and allowskipchance:
+                                attempt += 1
+                                effectpool = copy.copy(s)
+                                continue
+                            elif allowskipchance:
                                 allowskipchance = False
                                 effectpool = copy.copy(s)
                                 continue
@@ -158,28 +170,61 @@ def rollspells(**options):
                             break
                         sp = effectpool[random.choice(list(effectpool.keys()))]
                         del effectpool[sp.name]
-                        # Prevent duplicates in the second round of ignoreing skipchances
+                        # Prevent duplicates in the second round of ignoring skipchances
                         if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
                             continue
+                        if not (sp.schools & school) and school != 64:
+                            continue
+                        # usually nextspells
+                        if sp.paths <= 0 or sp.schools <= 0:
+                            continue
+                        print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
+                              f"skipchance allowed = {allowskipchance}, attempt = {attempt}")
                         # Encourage the less popular paths to get more spells by skipping the more popular ones
-                        if allowskipchance and sp.paths in genericSpellCountsByPath:
-                            mincount = min(genericSpellCountsByPath.values())
-                            thiscount = genericSpellCountsByPath[sp.paths]
-                            if thiscount > 20 and thiscount / mincount > 1.2 and random.random() < 0.75:
-                                print(f"Skip {sp.name} due to popular paths ({thiscount} vs {mincount})")
-                                continue
+                        if school != 64:
+                            allowedpaths = utils.breakdownflag(sp.paths)
+                            allowedpaths = [2**x for x in allowedpaths]
+                            random.shuffle(allowedpaths)
+                            forcedpath = None
+                            if len(genericSpellCountsByPath) > 0:
+                                mincount = min(genericSpellCountsByPath.values())
+                                # Ignore blood here
+                                if mincount == genericSpellCountsByPath.get(64, 0) and len(genericSpellCountsByPath) > 2:
+                                    mincount = sorted(list(genericSpellCountsByPath.values()))[1]
+
+                                for path in allowedpaths[:]:
+                                    if random.random() * 100 < sp.pathskipchances.get(path, 0):
+                                        allowedpaths.remove(path)
+                                        continue
+
+                                if len(allowedpaths) > 0:
+                                    lowest = None
+                                    for path in allowedpaths:
+                                        if lowest is None or genericSpellCountsByPath.get(path, 0) < lowest:
+                                            print(f"Least popular path is {path}")
+                                            forcedpath = path
+                                            lowest = genericSpellCountsByPath.get(path, 0)
+                                if allowskipchance:
+                                    if mincount > 10 and (lowest - mincount) >= 5:
+                                        print(f"Skipped as diff to least popular path is {lowest - mincount}")
+                                        continue
 
                         # These are the things used to denote things that should be nextspell ONLY
                         if sp.paths > 0 and sp.schools > 0:
                             # Special rules for blood
                             if school == 64:
                                 if sp.paths & 128:
+                                    print(f"Attempt to generate blood spell")
                                     spell = sp.rollSpell(research, forcepath=128, allowblood=True,
-                                                         allowskipchance=allowskipchance, **options)
+                                                         allowskipchance=allowskipchance,
+                                                         existingspells=generatedeffectsatlevels, **options)
 
                             elif sp.schools & school:
+                                print(f"Attempt to generate non-blood spell")
                                 spell = sp.rollSpell(research, forceschool=school, allowblood=False,
-                                                     allowskipchance=allowskipchance, **options)
+                                                     forcedpath=forcedpath,
+                                                     allowskipchance=allowskipchance,
+                                                     existingspells=generatedeffectsatlevels, **options)
 
                         if spell is not None:
                             l.append(spell)
@@ -190,6 +235,7 @@ def rollspells(**options):
                             print(
                                 f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
                             break
+                        print(f"Failed to generate")
                     if len(effectpool) == 0:
                         break
 
@@ -455,7 +501,7 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
             return spell
         spell = spelleffect.rollSpell(researchlevel, forcepath=primarypath,
                                       blocksecondary=True, allowblood=allowblood,
-                                      allowskipchance=False,
+                                      allowskipchance=False, allowedsecondarypaths=secondarypathoptions,
                                       setparams={"restricted": nation.id}, **options)
         if spell is not None:
             return spell
@@ -549,6 +595,8 @@ def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Di
                              alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
                              nationstogeneratefor: List[int], options: Dict[str, str]):
     _writetoconsole("Generating national spells...\n")
+    if targetnumberofnationalspells < 1:
+        return
 
     # Initialize national mage map
     nationcount = len(nationstogeneratefor)

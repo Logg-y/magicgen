@@ -16,6 +16,7 @@
 #power 0
 #maxpower 4
 #pathlevel 1
+#pathperresearch 0.1
 #flightspr 10146
 #sound 16
 #fatiguecost 20

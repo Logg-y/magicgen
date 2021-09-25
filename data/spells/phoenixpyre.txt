@@ -75,7 +75,7 @@
 #nextspell "PPyre fire res"
 
 
-#aoe 0
+#aoe 1
 #power 8
 #maxpower 16
 #pathlevel 2

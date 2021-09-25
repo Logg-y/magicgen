@@ -2,12 +2,12 @@
 #effect 1
 #damage 330
 #spec 0
-#power 5
+#power 4
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 200
+#fatiguecost 220
 #sound 32
 #schools 128
 
@@ -20,19 +20,21 @@
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
 
 #spelltype 528
-#scalefatiguemult 40
-#scalerate 0.7
+#scalefatiguemult 50
+#scalerate 0.51
+#scalefatigueexponent -2.0
+#pathperresearch 0.4
 #end
 
 #neweffect "darkvines ritual"
 #effect 10001
 #damage 330
 #spec 0
-#power 5
+#power 4
 #maxpower 14
 #nreff 1
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 420
 #schools 1
 
 #paths 128
@@ -45,8 +47,8 @@
 
 #skipchance 50
 
-#scalefatigueexponent -2
-#scalefatiguemult 420
+#scalefatigueexponent -1.8
+#scalefatiguemult 300
 
 #scalerate 1
 #end
@@ -68,7 +70,7 @@
 #paths 128
 #secondarypaths 64
 
-#name 128 "NAMEPREFIX Dark Vines Attack"
+#name 128 "NAMEPREFIX Dark Vines $ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight ambush an enemy commander."
 
 #spelltype 4
@@ -84,7 +86,7 @@
 #maxpower 16
 #nreff 3
 #pathlevel 5
-#fatiguecost 2900
+#fatiguecost 2200
 #schools 1
 #nogeodst 2052
 
@@ -96,7 +98,7 @@
 #scalefatigueexponent 0.5
 #scalefatiguemult 310
 
-#name 128 "Send NAMEPREFIX Dark Vines"
+#name 128 "$Send$ NAMEPREFIX Dark Vines"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines attack a distant province."
 
 #spelltype 20
