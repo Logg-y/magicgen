@@ -202,7 +202,6 @@ def scalingTool():
                                     break
 
                             if line == "#end":
-                                print(changecount)
                                 # Insert all the attributes that we haven't changed yet
                                 for attrib in tochange:
                                     if changecount.get(attrib, 0) == 0:

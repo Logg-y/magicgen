@@ -1,10 +1,10 @@
 #neweffect "Fire Flies"
 #copyspell "Fire Flies"
 
-#effect 2
+#effect 22
 #damage 6
 #spec 96
-#schools 4
+#schools evo
 
 
 #spelltype 18
@@ -35,8 +35,8 @@
 #aispellmod -66
 
 
-#name 1 "NAMEPREFIX Fire Flies"
-#descr 1 "Several burning sparks shoot forth from the wizard's hand. The sparks have very limited armor penetration and will be ineffective against armored troops."
+#name f "NAMEPREFIX Fire Flies"
+#descr f "Several burning sparks shoot forth from the wizard's hand. The sparks have very limited armor penetration and will be ineffective against armored troops."
 
 
 #priority 1

@@ -3,6 +3,7 @@ import re
 
 from Entities import NewUnit
 from Exceptions.ParseError import ParseError
+from . import fileparserutils
 
 modifier_params_int = ["baseunit", "clearweapons"]
 modifier_params_str = []
@@ -36,10 +37,7 @@ def readNewUnitFile(fp):
 
                 # Params to simply copy
                 for simple in modifier_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 

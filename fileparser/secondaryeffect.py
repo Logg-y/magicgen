@@ -5,6 +5,7 @@ from Entities.namecond import NameCond
 from Entities.secondaryeffect import SpellSecondaryEffect
 from Exceptions.ParseError import ParseError
 from Services.utils import secondaries
+from . import fileparserutils
 
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",
@@ -42,10 +43,7 @@ def readSecondaryFile(fp):
 
                 # Params to simply copy
                 for simple in secondary_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 
