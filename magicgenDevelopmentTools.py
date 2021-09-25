@@ -152,6 +152,7 @@ def scalingTool():
                     else:
                         window[f"-scale{flagname}-"].update("0")
                 updated = False
+                lastupdate = 0.0
 
         if event == "-overwritespelldata-":
             spelleffect = magicgen.utils.spelleffects.get(values["-lookupspelleffect-"], None)
@@ -159,7 +160,7 @@ def scalingTool():
                 sg.popup(f"Spell effect {values['-lookupspelleffect-']} not found.")
             else:
                 response = sg.popup_ok_cancel(f"Are you sure you want to overwrite the data of {spelleffect.name}"
-                                              f"with the values currently shown?")
+                                              f" with the values currently shown?")
                 if response.lower() == "ok":
                     tochange = {}
                     changecount = {}
@@ -184,7 +185,7 @@ def scalingTool():
                         if effstartlineindex is None:
                             if not line.startswith("#neweffect"):
                                 continue
-                            m = re.match(f'#neweffect\\W*"{spelleffect.name}"')
+                            m = re.match(f'#neweffect\\W*"{spelleffect.name}"', line)
                             if m is not None:
                                 effstartlineindex = lineindex
                                 continue
@@ -197,19 +198,20 @@ def scalingTool():
                                     print(f"Change value for line: {line}")
                                     newline = f"#{attrib} {getattr(fakespell, attrib)}"
                                     content[lineindex] = newline
-                                    changecount[attrib] = getattr(changecount, attrib, 0) + 1
-                                    continue
+                                    changecount[attrib] = changecount.get(attrib, 0) + 1
+                                    break
 
                             if line == "#end":
+                                print(changecount)
                                 # Insert all the attributes that we haven't changed yet
                                 for attrib in tochange:
-                                    if getattr(changecount, attrib, 0) == 0:
+                                    if changecount.get(attrib, 0) == 0:
                                         content.insert(lineindex, f"#{attrib} {getattr(fakespell, attrib)}")
                                         print(f"Inserted new line for attrib {attrib}")
                                 break
                     with open(spelleffect.fp, "w") as datafile:
                         for line in content:
-                            datafile.write(line + "\r\n")
+                            datafile.write(line.strip() + "\n")
 
 
         haschanged = False

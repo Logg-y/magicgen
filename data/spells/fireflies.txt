@@ -1,9 +1,11 @@
 #neweffect "Fire Flies"
 #copyspell "Fire Flies"
+
 #effect 2
 #damage 6
 #spec 96
 #schools 4
+
 
 #spelltype 18
 
@@ -11,10 +13,12 @@
 #scalefatigueexponent 1.1
 -- #scalecost 0.6
 
+
 #nreff 2004
 #aoe 0
 #power 0
 #maxpower 4
+
 #pathlevel 1
 #pathperresearch 0.1
 #flightspr 10146
@@ -22,15 +26,26 @@
 #fatiguecost 20
 #range 5025
 
+
 #paths 1
 #secondarypaths 0
 #secondarypathchance 95
 
+
 #aispellmod -66
+
 
 #name 1 "NAMEPREFIX Fire Flies"
 #descr 1 "Several burning sparks shoot forth from the wizard's hand. The sparks have very limited armor penetration and will be ineffective against armored troops."
 
+
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX burst of sparks"
 #end
+
+
+
+
+
+
+
