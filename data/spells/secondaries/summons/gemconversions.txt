@@ -1,4 +1,5 @@
 #newsecondary "Summon Pearlcultivator"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -29,6 +30,7 @@
 #end
 
 #newsecondary "Summon Carcasscollector"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

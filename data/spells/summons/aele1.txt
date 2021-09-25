@@ -3,11 +3,11 @@
 #damage 572
 #spec 0
 #power 3
-#maxpower 14
+#maxpower 15
 #precision -2
 #nreff 1
 #pathlevel 2
-#fatiguecost 40
+#fatiguecost 22
 #sound 31
 #schools 1
 
@@ -17,12 +17,17 @@
 #skipchance 50
 
 #details "The elementals are size 1."
-#name 2 "Summon NAMEPREFIX Tiny Air %Elemental%"
+#name 2 "$conjure$ NAMEPREFIX Tiny Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE tiny air %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
+#pathperresearch 0.4
+
 #scalerate 1
+
+#scalefatigueexponent 0.0
+
 #end
 
 #neweffect "aeles1 ritual"
@@ -30,8 +35,8 @@
 #damage 572
 #spec 0
 #power 3
-#maxpower 14
-#nreff 3001
+#maxpower 6
+#nreff 10
 #pathlevel 3
 #fatiguecost 500
 #schools 1
@@ -42,7 +47,36 @@
 #skipchance 50
 
 #details "The elementals are size 1."
-#name 2 "Summon NAMEPREFIX Tiny Air Elementals"
+#name 2 "$Summon$ NAMEPREFIX Tiny Air Elementals"
+#descr 2 "The caster summons forth tiny air elementals."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#siegepatrolchaff 1
+
+#scalerate 2
+#end
+
+#neweffect "aeles1 chassis dummy"
+#effect 10001
+#damage 572
+#spec 0
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 3
+#fatiguecost 10
+#schools -1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 50
+
+#details "The elementals are size 1."
+#name 2 "$Summon$ NAMEPREFIX Tiny Air Elementals"
 #descr 2 "The caster summons forth tiny air elementals."
 
 #spelltype 20
@@ -52,6 +86,7 @@
 
 #scalerate 2
 #end
+
 
 #neweffect "aeles1 Remote Assassination"
 #effect 10050
@@ -71,7 +106,7 @@
 #secondarypaths 2
 
 #details "The elementals are size 1."
-#name 2 "NAMEPREFIX Tiny Air Attack"
+#name 2 "NAMEPREFIX Tiny Air $ambush$"
 #descr 2 "The caster summons forth a tiny air elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
 
 #spelltype 4
@@ -87,7 +122,7 @@
 #maxpower 14
 #nreff 3001
 #pathlevel 4
-#fatiguecost 1000
+#fatiguecost 700
 #schools 1
 #nogeodst 2052
 
@@ -97,7 +132,7 @@
 #secondarypaths 2
 
 #details "The elementals are size 1."
-#name 2 "Send NAMEPREFIX Tiny Air Elementals"
+#name 2 "$Send$ NAMEPREFIX Tiny Air Elementals"
 #descr 2  "The caster summons forth tiny air elementals to attack a distant province."
 
 #spelltype 20

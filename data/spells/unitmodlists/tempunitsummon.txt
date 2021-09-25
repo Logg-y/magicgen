@@ -51,7 +51,7 @@
 #allowedunitmod "Summon Paralysisweapon"
 #allowedunitmod "Summon Greaterparalysisweapon"
 #allowedunitmod "Summon Petrifyweapon"
-#allowedunitmod "Summon Weakpoison"
+--#allowedunitmod "Summon Weakpoison"
 #allowedunitmod "Summon Strongpoison"
 #allowedunitmod "Summon Deathpoison"
 #allowedunitmod "Summon Debilpoison"

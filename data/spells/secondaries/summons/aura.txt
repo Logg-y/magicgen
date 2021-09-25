@@ -1,4 +1,5 @@
 #newsecondary "Summon chillaura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 #end
 
 #newsecondary "Summon heataura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -33,6 +35,7 @@
 #end
 
 #newsecondary "Summon Poisonaura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -50,6 +53,7 @@
 #end
 
 #newsecondary "Summon Diseaseaura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -68,6 +72,7 @@
 
 
 #newsecondary "Summon Mindslime"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -85,6 +90,7 @@
 #end
 
 #newsecondary "Summon Sleepaura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -102,6 +108,7 @@
 #end
 
 #newsecondary "Summon Fearaura"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -122,6 +129,7 @@
 ---------
 
 #newsecondary "Summon chillaura 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -139,6 +147,7 @@
 #end
 
 #newsecondary "Summon heataura 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -156,6 +165,7 @@
 #end
 
 #newsecondary "Summon Poisonaura 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -173,6 +183,7 @@
 #end
 
 #newsecondary "Summon Diseaseaura 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -191,6 +202,7 @@
 
 
 #newsecondary "Summon Mindslime 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -208,6 +220,7 @@
 #end
 
 #newsecondary "Summon Sleepaura 6"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -225,6 +238,7 @@
 #end
 
 #newsecondary "Summon Fearaura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -246,6 +260,7 @@
 
 
 #newsecondary "Summon chillaura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -263,6 +278,7 @@
 #end
 
 #newsecondary "Summon heataura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -280,6 +296,7 @@
 #end
 
 #newsecondary "Summon Poisonaura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -297,6 +314,7 @@
 #end
 
 #newsecondary "Summon Diseaseaura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -315,6 +333,7 @@
 
 
 #newsecondary "Summon Mindslime 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -332,6 +351,7 @@
 #end
 
 #newsecondary "Summon Sleepaura 10"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -349,6 +369,7 @@
 #end
 
 #newsecondary "Summon Fearaura 18"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

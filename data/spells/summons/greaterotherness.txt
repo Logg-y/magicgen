@@ -17,10 +17,13 @@
 
 #skipchance 95
 
-#name 16 "Summon NAMEPREFIX greater %otherness%"
+#name 16 "$conjure$ NAMEPREFIX greater %otherness%"
 #descr 16 "The caster summons ARTICLE_N greater %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 528
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 30
 
 #scalerate 1
 #end
@@ -33,7 +36,7 @@
 #maxpower 14
 #nreff 2
 #pathlevel 4
-#fatiguecost 9
+#fatiguecost 900
 #schools 1
 
 #paths 16
@@ -42,7 +45,7 @@
 
 #skipchance 97
 
-#name 16 "Summon NAMEPREFIX greater %otherness%"
+#name 16 "$Summon$ NAMEPREFIX greater %otherness%"
 #descr 16 "The caster summons ARTICLE_N greater %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."
 #details "Creatures summoned with this spell are not sacred."
 
@@ -76,7 +79,7 @@
 
 #skipchance 99
 
-#name 16 "NAMEPREFIX greater %otherness% Attack"
+#name 16 "NAMEPREFIX greater %otherness% $ambush$"
 #descr 16 "The caster summons ARTICLE_N greater %otherness% to ambush a hostile commander in a distant province. Othernesses are swirling masses of dark goo which trample their enemies."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 4
@@ -104,7 +107,7 @@
 #scalefatiguemult 10
 #newunit "Greater Otherness"
 
-#name 16 "Send NAMEPREFIX greater %otherness%"
+#name 16 "$Send$ NAMEPREFIX greater %otherness%"
 #descr 16 "The caster summons ARTICLE_N greater %otherness% to attack a distant province. Othernesses are swirling masses of dark goo which trample their enemies."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 20

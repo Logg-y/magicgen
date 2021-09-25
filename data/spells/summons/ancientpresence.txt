@@ -3,7 +3,7 @@
 #damage 2251
 #spec 0
 #power 8
-#maxpower 14
+#maxpower 20
 #precision -2
 #nreff 1
 #pathlevel 6
@@ -15,15 +15,15 @@
 #paths 4
 #secondarypaths 64
 #secondarypathchance 95
+#scalefatigueexponent -1.8
+#pathperresearch 0.4
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX Ancient %Presence%"
+#name 4 "$Conjure$ NAMEPREFIX Ancient %Presence%"
 #descr 4 "The caster summons an ancient presence from a dark and distant swamp. It is huge and can devour those who come near."
 
 #spelltype 528
-
-#aispellmod 100
 
 #scalerate 1
 #end
@@ -32,11 +32,11 @@
 #effect 10001
 #damage 2251
 #spec 0
-#power 9
-#maxpower 14
+#power 8
+#maxpower 20
 #nreff 1
-#pathlevel 7
-#fatiguecost 1500
+#pathlevel 5
+#fatiguecost 1000
 #schools 1
 
 #paths 4
@@ -45,15 +45,16 @@
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX Ancient %Presence%"
-#descr 4 "The caster summons an ancient presence from a dark and distant swamp. It is huge and can devour those who come near."
+#name 4 "$Summon$ NAMEPREFIX Ancient %Presence%"
+#descr 4 "The caster summons ARTICLE_N ancient %presence% from a dark and distant swamp. It is huge and can devour those who come near."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 1200
+#scalefatigueexponent -1.8
+#scalefatiguemult 600
+#pathperresearch 0.4
 
-#scalerate 4
+#scalerate 1
 #end
 
 #neweffect "ancientpresence Remote Assassination"
@@ -74,7 +75,7 @@
 #secondarypaths 64
 #secondarypathchance 95
 
-#name 4 "NAMEPREFIX Ancient %Presence% Attack"
+#name 4 "NAMEPREFIX Ancient %Presence% $Ambush$"
 #descr 4 "The caster summons an ancient presence from a dark and distant swamp to attack a hostile commander in a distant land. It is huge and will devour those who come near."
 
 #spelltype 4
@@ -89,8 +90,8 @@
 #power 9
 #maxpower 16
 #nreff 1
-#pathlevel 7
-#fatiguecost 2000
+#pathlevel 5
+#fatiguecost 1500
 #schools 1
 
 #skipchance 99
@@ -99,13 +100,13 @@
 #secondarypaths 64
 #secondarypathchance 95
 
-#name 4 "Send NAMEPREFIX Ancient %Presence%"
+#name 4 "$Send$ NAMEPREFIX Ancient %Presence%"
 #descr 4 "The caster summons an ancient presence from a dark and distant swamp to attack a distant province. It is huge and can devour those who come near."
 
 #spelltype 20
 
 #scalerate 1
 
-#scalefatigueexponent 0.3
+#scalefatigueexponent -1.8
 #scalefatiguemult 800
 #end

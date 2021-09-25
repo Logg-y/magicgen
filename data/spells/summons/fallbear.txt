@@ -2,13 +2,15 @@
 #effect 1
 #damage 512
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 60
---#scalefatiguemult 20
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#scalefatiguemult 8
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
 #sound 31
 #schools 1
 
@@ -17,24 +19,24 @@
 
 #skipchance 50
 
-#name 8 "Summon NAMEPREFIX Fall %Bear%"
+#name 8 "$conjure$ NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
 #aispellmod -40
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.2
 #end
 
 #neweffect "fallbear ritual"
 #effect 10001
 #damage 512
 #spec 0
-#power 5
+#power 3
 #maxpower 14
-#nreff 1001
-#pathlevel 3
-#fatiguecost 500
+#nreff 4
+#pathlevel 2
+#fatiguecost 420
 #schools 1
 
 #paths 8
@@ -42,15 +44,15 @@
 
 #skipchance 50
 
-#name 8 "Summon NAMEPREFIX Fall %Bear%"
+#name 8 "$Summon$ NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 80
-
-#scalerate 4
+#scalefatigueexponent -1.6
+#scalefatiguemult 60
+#pathperresearch 0.4
+#scalerate 2
 #end
 
 #neweffect "fallbear Remote Assassination"
@@ -70,7 +72,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "NAMEPREFIX Fall Bear Ambush"
+#name 8 "NAMEPREFIX Fall Bear $Ambush$"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to ambush a commander in a distant land. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
 
 #spelltype 4
@@ -86,7 +88,7 @@
 #maxpower 14
 #nreff 1000
 #pathlevel 4
-#fatiguecost 1600
+#fatiguecost 1200
 #schools 1
 #nogeodst 2052
 
@@ -95,7 +97,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "Send NAMEPREFIX Fall %Bear%"
+#name 8 "$Send$ NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to attack a distant province. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
 
 #spelltype 20

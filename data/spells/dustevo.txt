@@ -1,6 +1,6 @@
 #neweffect "Dust Fatigue"
 #effect 2003
-#damage 3000
+#damage 2002
 #spec 4398586019968
 #schools -1
 -- evo, scale aoe

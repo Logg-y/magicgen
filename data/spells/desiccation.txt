@@ -25,7 +25,7 @@
 #details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
 
 #namecond effectiveaoe >= 0 1 "NAMEPREFIX Dehydrate"
-#namecond effectiveaoe >= 0 4 "NAMEPREFIX Dessication"
+#namecond effectiveaoe >= 0 4 "NAMEPREFIX Desiccation"
 
 #descr 1 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 #descr 4 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."

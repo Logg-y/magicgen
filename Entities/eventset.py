@@ -339,6 +339,8 @@ class EventSet(object):
                     # start by building a pool of spelleffects that we could use
                     for effname, effect in utils.spelleffects.items():
                         if effect.effect in self.effectnumberforunits:  # ritual summon
+                            if effect.siegepatrolchaff > 0:
+                                continue
                             unitid = effect.damage
                             # no montags
                             if unitid < 0:

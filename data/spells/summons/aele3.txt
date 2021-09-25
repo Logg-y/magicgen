@@ -13,11 +13,12 @@
 
 #paths 2 
 #secondarypaths 2 
---#scalefatiguemult 20
-#skipchance 50
+#scalefatiguemult 6
+#scalefatigueexponent -1.48
+#skipchance 80
 
 #details "The elementals are size 3."
-#name 2 "Summon NAMEPREFIX Lesser Air %Elemental%"
+#name 2 "$conjure$ NAMEPREFIX Lesser Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE moderately sized air %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
@@ -40,10 +41,10 @@
 #secondarypaths 2 
 
 
-#skipchance 50
+#skipchance 80
 
 #details "The elementals are size 3."
-#name 2 "Summon NAMEPREFIX Lesser Air Elementals"
+#name 2 "$Summon$ NAMEPREFIX Lesser Air Elementals"
 #descr 2 "The caster summons forth moderately sized air elementals."
 
 #spelltype 20
@@ -72,7 +73,7 @@
 #secondarypaths 2 
 #nogeodst 2052
 
-#name 2 "NAMEPREFIX Lesser Air Attack"
+#name 2 "NAMEPREFIX Lesser Air $Attack$"
 #descr 2 "The caster summons forth a moderately sized air elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
 
 #spelltype 4
@@ -98,7 +99,7 @@
 #secondarypaths 2 
 
 #details "The elementals are size 3."
-#name 2 "Send Air Elementals"
+#name 2 "$Send$ Air Elementals"
 #descr 2 "The caster summons forth moderately sized air elementals to attack a distant province."
 
 #spelltype 20

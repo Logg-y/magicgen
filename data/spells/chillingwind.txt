@@ -1,7 +1,7 @@
 #neweffect "Chilling Winds Fatigue"
 #effect 3
 #damage 2010
-#spec 16960
+#spec 17024
 #schools -1
 -- evo, scale aoe
 #spelltype 2

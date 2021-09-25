@@ -5,7 +5,7 @@
 #schools -1
 -- evo, scale aoe
 #spelltype 2
-#aoe 1
+#aoe 5
 #power 1
 #name 1 "Area Heat Shock"
 #name 2 "Area Heat Shock"
@@ -15,12 +15,13 @@
 #name 32 "Area Heat Shock"
 #name 64 "Area Heat Shock"
 #name 128 "Area Heat Shock"
+#maxpower 30
 #end
 
 
 #neweffect "Fire Evo Projectile"
 #effect 2
-#damage 2009
+#damage 2012
 -- firedmg, AP
 #spec 96
 -- evo
@@ -69,10 +70,10 @@
 
 #neweffect "Fire Evo Instant"
 #effect 2
-#damage 2006
+#damage 2016
 #spec 96
-#aoe 1000
-#power 3
+#aoe 1
+#power 2
 #maxpower 14
 #precision 1
 #range 30
@@ -129,6 +130,7 @@
 #name 32 "Area Heat Shock"
 #name 64 "Area Heat Shock"
 #name 128 "Area Heat Shock"
+#maxpower 30
 #end
 
 
@@ -316,8 +318,8 @@
 #aoe 1
 #schools 4
 #range 40
-#precision -10
-#nreff 35
+#precision -20
+#nreff 40
 #nextspell "Medium Heat Shock"
 #flightspr 10073
 #explspr 10113
@@ -333,7 +335,7 @@
 
 #spelltype 18
 
-#power 9
+#power 8
 #maxpower 18
 #scalerate 3
 #pathlevel 5

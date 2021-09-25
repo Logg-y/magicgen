@@ -2,13 +2,13 @@
 #effect 1
 #damage 736
 #spec 0
-#power 5
-#maxpower 14
+#power 4
+#maxpower 16
 #precision -2
 #nreff 1
-#pathlevel 4
-#fatiguecost 100
-#scalefatiguemult 20
+#pathlevel 3
+#fatiguecost 120
+#scalefatiguemult 15
 #sound 31
 #schools 1
 
@@ -17,23 +17,25 @@
 
 #skipchance 92
 
-#name 16 "Summon NAMEPREFIX Ether %Warrior%"
+#name 16 "$conjure$ NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.0
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
 #end
 
 #neweffect "etherwarrior ritual"
 #effect 10001
 #damage 736
 #spec 0
-#power 6
+#power 4
 #maxpower 14
-#nreff 1001
-#pathlevel 4
-#fatiguecost 1200
+#nreff 3
+#pathlevel 3
+#fatiguecost 520
 #schools 1
 
 #paths 16
@@ -41,14 +43,14 @@
 
 #skipchance 60
 
-#name 16 "Summon NAMEPREFIX Ether %Warrior%"
+#name 16 "$Summon$ NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 180
-
+#scalefatigueexponent -1.8
+#scalefatiguemult 90
+#pathperresearch 0.4
 #scalerate 2
 #end
 
@@ -69,7 +71,7 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "NAMEPREFIX Ether %Warrior% Attack"
+#name 16 "NAMEPREFIX Ether %Warrior% $ambush$"
 #descr 16 "The caster summons forth ARTICLE ether %warrior% in a distant province to attack an enemy commander. Ether warriors are large, ethereal humanoids that wield moonblades."
 
 #spelltype 4
@@ -83,9 +85,9 @@
 #spec 0
 #power 6
 #maxpower 14
-#nreff 1000
+#nreff 4
 #pathlevel 4
-#fatiguecost 1400
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -94,7 +96,7 @@
 #paths 16
 #secondarypaths 16
 
-#name 16 "Send NAMEPREFIX Ether %Warrior%"
+#name 16 "$Send$ NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior% to attack a distant province. Ether warriors are large, ethereal humanoids that wield moonblades."
 
 #spelltype 20

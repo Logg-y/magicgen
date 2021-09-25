@@ -216,8 +216,19 @@ class UnitMod(object):
                             f"Unit {u.name} didn't have param {param} when affected by unitmod {self.name}, assumed 0")
                         setattr(u, param, 0)
                     newparamval = getattr(u, param) + paramv
+
+                    # do not mess with certain values of morale, they should be done with set commands only
+                    if param == "mor":
+                        oldval = getattr(u, param)
+                        if oldval == 30:
+                            newparamval = 30
+                        if oldval == 50:
+                            newparamval = 50
+
                     setattr(u, param, newparamval)
                     modcmd = flags_to_mod_cmds.get(param, param)
+
+
                     if modcmd not in argless_cmds:
                         out += f"#{modcmd} {newparamval}\n"
                     else:

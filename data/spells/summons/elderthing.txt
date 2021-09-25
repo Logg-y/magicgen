@@ -2,12 +2,12 @@
 #effect 1
 #damage 628
 #spec 8388608
-#power 4
+#power 2
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 2
-#fatiguecost 80
+#fatiguecost 120
 #sound 31
 #schools 1
 
@@ -17,12 +17,15 @@
 
 #skipchance 97
 
-#name 16 "Summon NAMEPREFIX Elder %Thing%"
+#name 16 "$conjure$ NAMEPREFIX Elder %Thing%"
 #descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
 #details "Creatures summoned with this spell are not sacred."
-#aispellmod -20
 
 #spelltype 528
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+#pathperresearch 0.4
 
 #scalerate 1
 #end
@@ -31,11 +34,11 @@
 #effect 10001
 #damage 628
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
-#nreff 1001
-#pathlevel 3
-#fatiguecost 300
+#nreff 5
+#pathlevel 2
+#fatiguecost 520
 #schools 1
 
 #paths 16
@@ -44,7 +47,7 @@
 
 #skipchance 97
 
-#name 16 "Summon NAMEPREFIX Elder %Thing%"
+#name 16 "$Summon$ NAMEPREFIX Elder %Thing%"
 #descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
 #details "Creatures summoned with this spell are not sacred."
 
@@ -53,11 +56,12 @@
 
 #skipchance 97
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
+#scalefatigueexponent 1.6
+#pathperresearch 0.4
+#scalefatiguemult 60
 #newunit "Elder Thing"
 
-#scalerate 4
+#scalerate 1.5
 #end
 
 #neweffect "elderthing Remote Assassination"
@@ -96,7 +100,7 @@
 #maxpower 14
 #nreff 2001
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 800
 #schools 1
 
 #skipchance 99.6
@@ -108,7 +112,7 @@
 #scalefatiguemult 10
 #newunit "Elder Thing"
 
-#name 16 "Send NAMEPREFIX Elder %Thing%"
+#name 16 "$Send$ NAMEPREFIX Elder %Thing%"
 #descr 16 "The caster summons ARTICLE elder %thing% to attack a distant province. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."
 #details "Creatures summoned with this spell are not sacred."
 

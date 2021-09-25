@@ -1,0 +1,136 @@
+#neweffect "Summon false horror"
+#effect 1
+#damage 448
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 22
+#scalefatiguemult 10
+#sound 31
+#schools 2
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$conjure$ NAMEPREFIX False %Horror%"
+#descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#end
+
+#neweffect "false horror ritual"
+#effect 10001
+#damage 448
+#spec 8388608
+#power 2
+#maxpower 5
+#nreff 5
+#pathlevel 2
+#fatiguecost 120
+#schools 2
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$Summon$ NAMEPREFIX False %Horror%"
+#descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
+#pathperresearch 0.4
+#siegepatrolchaff 1
+
+#scalerate 3
+#end
+
+#neweffect "false horror chassis dummy"
+#effect 10001
+#damage 448
+#spec 8388608
+#power -1
+#maxpower -1
+#nreff 1
+#pathlevel 2
+#fatiguecost 10
+#schools -1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$Summon$ NAMEPREFIX False %Horror%"
+#descr 2 "The caster summons ARTICLE phantasmal %horror%. The illusion is difficult to hit and will only harm those who believe it to be real, but a successful hit will instantly destroy it."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
+#pathperresearch 0.4
+
+#scalerate 3
+#end
+
+#neweffect "falsehorror Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 448
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 400
+#schools 2
+#skipchance 99
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX False Horror $Ambush$"
+#descr 2 "The caster summons a phantasmal horror and sends it to ambush an enemy commander. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon falsehorror"
+#effect 10038
+#provrange 4
+#damage 448
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 6003
+#pathlevel 3
+#fatiguecost 600
+#schools 2
+
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "$Send$ NAMEPREFIX False Horrors"
+#descr 2 "The caster summons false horros and sends them to a distant province."
+
+#spelltype 20
+
+#scalerate 3.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 15
+#end

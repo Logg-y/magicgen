@@ -41,7 +41,7 @@
 #neweffect "Parching Wind Fatigue"
 #effect 3
 #damage 2010
-#spec 16480
+#spec 16544
 #schools -1
 -- evo, scale aoe
 #spelltype 2

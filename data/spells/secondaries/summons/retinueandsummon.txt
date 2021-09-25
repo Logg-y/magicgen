@@ -1,4 +1,5 @@
 -- #newsecondary "Summon Allies 1"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -26,6 +27,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Allies 3"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -53,6 +55,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Allies 5"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -80,6 +83,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Retinue 1d3"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -105,6 +109,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Retinue 2d6"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -129,6 +134,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Retinue 4d6"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -154,6 +160,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Retinue 6d6"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -179,6 +186,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Retinue 9d6"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -204,6 +212,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Every Round 1"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -228,6 +237,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Every Round 3"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -252,6 +262,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Every Round 5"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -1
@@ -276,6 +287,7 @@
 -- #end
 -- 
 -- #newsecondary "Summon Raiseonkill special"
+-- #req siegepatrolchaff < 1
 -- #anysummon 1
 -- #paths 255
 -- #power -2

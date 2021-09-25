@@ -1,0 +1,149 @@
+#neweffect "Summon greateagle"
+#effect 1
+#damage 1381
+#spec 0
+#power 3
+#maxpower 11
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#scalefatiguemult 15
+#scalefatigueexponent -1.65
+#pathperresearch 0.4
+#paths 2
+#secondarypaths 2
+
+#skipchance 50
+
+#name 2 "$conjure$ NAMEPREFIX Great %Eagle%"
+#descr 2 "The caster summons ARTICLE great %eagle%. The great eagle is large and attacks enemies with its beak and talons."
+
+#spelltype 528
+
+#scalerate 1.5
+#end
+
+#neweffect "greateagle chassis dummy"
+#effect 10001
+#damage 1381
+#spec 0
+#power 2
+#maxpower 2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#schools -1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 50
+
+#name 2 "$Summon$ NAMEPREFIX Great %Eagle%"
+#descr 2 "The caster summons ARTICLE great %eagle%. The great eagle is large and attacks enemies with its beak and talons."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -2.5
+#pathperresearch 0.4
+#scalefatiguemult 90
+
+#scalerate 1
+#end
+
+#neweffect "greateagle ritual"
+#effect 10001
+#damage 1381
+#spec 0
+#power 3
+#maxpower 6
+#nreff 1
+#pathlevel 2
+#fatiguecost 120
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 50
+
+#name 2 "Summon NAMEPREFIX Great %Eagle%"
+#descr 2 "The caster summons ARTICLE great %eagle%. The great eagle is large and attacks enemies with its beak and talons."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -2.5
+#pathperresearch 0.4
+#scalefatiguemult 90
+
+#siegepatrolchaff 1
+
+#scalerate 1
+#end
+
+#neweffect "greateagle Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1381
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 99
+
+#name 2 "NAMEPREFIX Great Eagle $ambush$"
+#descr 2 "The caster sends ARTICLE great %eagle% to attack a hostile commander in a distant province. The great eagle is large and attacks enemies with its beak and talons."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote greateagle"
+#effect 10038
+#provrange 4
+#damage 1381
+#spec 0
+#power 5
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#name 2 "$Send$ NAMEPREFIX Great %Eagle%"
+#descr 2 "The caster sends ARTICLE great %eagle% to attack a distant province. The great eagle is large and attacks enemies with its beak and talons."
+
+
+#spelltype 20
+
+#scalerate 2
+#end

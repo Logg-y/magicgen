@@ -1,4 +1,5 @@
 #newunitmod "Summon Teleport"
+#req teleport < 1
 #set teleport 1
 #set mapmove 100
 #nameprefix "Teleporting"

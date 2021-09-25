@@ -1,0 +1,53 @@
+#neweffect "Overload Arcing"
+#effect 134
+#damage 1002
+#maxbounces 3
+#nreff 1
+#spec 8390784
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#power 1
+#name 2 "Arcing Discharge"
+#maxpower 30
+#end
+
+
+#neweffect "Overload"
+#effect 2
+#damage 3019
+
+-- an, shock, mrn, extra on damage, ignores shields, uwok
+#spec 1152921504615258240
+-- evo
+#aoe 0
+#schools 4
+#range 40
+#precision 100
+#nextspell "Overload Arcing"
+#explspr 10125
+#sound 27
+#fatiguecost 20
+
+#paths 2
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 2 "NAMEPREFIX Overload"
+
+#descr 2 "The caster attempts to overload a single victim with an electrical charge. The target may attempt to resist this effect. Should they fail, they will be consumed with a massive surge of electricity which unleashes lesser discharges at those nearby."
+#aispellmod 30
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 4
+#maxpower 4
+#scalerate 0
+#pathlevel 2
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Overloading Touch"
+#descrcond range < 10 2 "The caster's touch attempts to overload a single victim with an electrical charge. The target may attempt to resist this effect. Should they fail, they will be consumed with a massive surge of electricity which unleashes lesser discharges at those nearby."
+#end

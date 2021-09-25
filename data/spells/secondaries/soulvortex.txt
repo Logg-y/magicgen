@@ -1,56 +1,56 @@
-#newsecondary "Soulvortex Secondary mrn"
-
--- buff only
-#spelltype 1
-
-#paths 160
-#power -3
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 2048
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Leeching"
-#fatiguepersquare 12
-
-
-#nextspell "Soulvortex Secondary mrn"
-
-#descr "This spell may also surround those it affects with an aura of life leeching."
-
-#end
-
-#newsecondary "Soulvortex Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 160
-#power -2
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 2048
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Draining"
-#fatiguepersquare 6
-#minfinalaoe 1
-
-
-#nextspell "Soulvortex Secondary mrne"
-
-#descr "This spell may also surround those it affects with an aura of life leeching."
-
-#end
+--#newsecondary "Soulvortex Secondary mrn"
+--
+---- buff only
+--#spelltype 1
+--
+--#paths 160
+--#power -3
+--
+---- various damage types
+--#reqdamagingeffect 0
+--
+--#req damage != 2048
+--#req effect != 15	    -- returning
+--
+--
+---- not ritual
+--#req spelltype !& 4
+--
+--#nameprefix "Leeching"
+--#fatiguepersquare 12
+--
+--
+--#nextspell "Soulvortex Secondary mrn"
+--
+--#descr "This spell may also surround those it affects with an aura of life leeching."
+--
+--#end
+--
+--#newsecondary "Soulvortex Secondary mrne"
+--
+---- buff only
+--#spelltype 1
+--
+--#paths 160
+--#power -2
+--
+---- various damage types
+--#reqdamagingeffect 0
+--
+--#req damage != 2048
+--#req effect != 15	    -- returning
+--
+--
+---- not ritual
+--#req spelltype !& 4
+--
+--#nameprefix "Draining"
+--#fatiguepersquare 6
+--#minfinalaoe 1
+--
+--
+--#nextspell "Soulvortex Secondary mrne"
+--
+--#descr "This spell may also surround those it affects with an aura of life leeching."
+--
+--#end

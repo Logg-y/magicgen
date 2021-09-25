@@ -1,4 +1,5 @@
 #newsecondary "Summon Tempfiregems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -27,6 +28,7 @@
 #end
 
 #newsecondary "Summon Tempfiregems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -56,6 +58,7 @@
 
 
 #newsecondary "Summon Tempairgems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -84,6 +87,7 @@
 #end
 
 #newsecondary "Summon Tempairgems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -111,6 +115,7 @@
 #end
 
 #newsecondary "Summon Tempwatergems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -137,6 +142,7 @@
 #end
 
 #newsecondary "Summon Tempwatergems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -163,6 +169,7 @@
 #end
 
 #newsecondary "Summon Tempearthgems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -189,6 +196,7 @@
 #end
 
 #newsecondary "Summon Tempearthgems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -215,6 +223,7 @@
 #end
 
 #newsecondary "Summon Tempastralgems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -241,6 +250,7 @@
 #end
 
 #newsecondary "Summon Tempastralgems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -267,6 +277,7 @@
 #end
 
 #newsecondary "Summon Tempdeathgems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -293,6 +304,7 @@
 #end
 
 #newsecondary "Summon Tempdeathgems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2
@@ -319,6 +331,7 @@
 #end
 
 #newsecondary "Summon Tempnaturegems 1"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -1
@@ -345,6 +358,7 @@
 #end
 
 #newsecondary "Summon Tempnaturegems 2"
+#req siegepatrolchaff < 1
 
 #paths 0
 #power -2

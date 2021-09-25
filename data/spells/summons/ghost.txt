@@ -2,39 +2,40 @@
 #effect 1
 #damage 566
 #spec 8388608
-#power 5
-#maxpower 14
+#power 4
+#maxpower 13
 #precision -2
-#nreff 1
+#nreff 3
 #pathlevel 3
-#fatiguecost 60
+#fatiguecost 120
 #sound 31
 #schools 1
 
 #paths 32
 #secondarypaths 32
---#scalefatiguemult 20
+#scalefatiguemult 10
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 
 #skipchance 60
-#aispellmod -20
 
-#name 32 "Summon NAMEPREFIX %Ghost%"
+#name 32 "$conjure$ NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to fight for him. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.5
 #end
 
 #neweffect "ghost ritual"
 #effect 10001
 #damage 566
 #spec 8388608
-#power 5
+#power 3
 #maxpower 14
-#nreff 1001
-#pathlevel 3
-#fatiguecost 400
+#nreff 4
+#pathlevel 2
+#fatiguecost 420
 #schools 1
 
 
@@ -45,14 +46,15 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX %Ghost%"
+#name 32 "$Summon$ NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to fight for him. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
 
 #spelltype 20
 
-#scalefatiguemult 60
-
-#scalerate 4
+#scalefatiguemult 40
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#scalerate 2
 #end
 
 #neweffect "ghost Remote Assassination"
@@ -71,7 +73,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "NAMEPREFIX %Ghost% Attack"
+#name 32 "NAMEPREFIX %Ghost% $ambush$"
 #descr 32 "The caster summons ARTICLE %ghost% to ambush a hostile commander in a distant province. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
 #spelltype 4
 
@@ -86,7 +88,7 @@
 #maxpower 14
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 700
 #schools 1
 
 #skipchance 99.6
@@ -94,7 +96,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Send NAMEPREFIX %Ghost%"
+#name 32 "$Send$ NAMEPREFIX %Ghost%"
 #descr 32 "The caster summons ARTICLE %ghost% to attack a distant province. Ghosts are dead humans recalled from the underworld that are ethereal, frightening, and can steal the life of the living."
 
 #spelltype 20

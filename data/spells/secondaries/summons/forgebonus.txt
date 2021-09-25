@@ -1,4 +1,5 @@
 #newsecondary "Summon Fixed Forge Bonus"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -28,6 +29,7 @@
 #end
 
 #newsecondary "Summon Percentage Forge Bonus"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

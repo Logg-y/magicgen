@@ -29,7 +29,7 @@
 #nextspell "Freezing Secondary mrne"
 
 #descr "A sudden and intense burst of cold may cause those affected by the spell to become frozen."
-#details "Affected creatures make an easy MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#details "Affected creatures make an easy MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
 
 #end
 
@@ -64,7 +64,7 @@
 #nextspell "Freezing Secondary mrn"
 
 #descr "A sudden and intense burst of cold may cause those affected by the spell to become frozen."
-#details "Affected creatures make an MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#details "Affected creatures make an MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
 
 #end
 
@@ -104,7 +104,7 @@
 #nextspell "Freezing Secondary mrne damaging"
 
 #descr "A sudden and intense burst of cold may cause those wounded by the spell to become frozen."
-#details "Wounded creatures make an easy MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#details "Wounded creatures make an easy MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
 
 #end
 
@@ -143,7 +143,7 @@
 #nextspell "Freezing Secondary mrn damaging"
 
 #descr "A sudden and intense burst of cold may cause those wounded by the spell to become frozen."
-#details "Wounded creatures make an MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#details "Wounded creatures make an MR check. Those that fail to resist become frozen: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
 
 
 #end

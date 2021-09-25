@@ -1,4 +1,5 @@
 #newsecondary "Summon APweap"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 
 
 #newsecondary "Summon ANweap"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

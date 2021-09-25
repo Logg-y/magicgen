@@ -1,0 +1,146 @@
+#neweffect "Summon giantspider"
+#effect 1
+#damage 782
+#spec 0
+#power 1
+#maxpower 12
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "Summon NAMEPREFIX Giant %Spider%"
+#descr 64 "The caster summons ARTICLE giant %spider%. The giant spider has a venomous bite, but has little resistance to magic."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+#pathperresearch 0.33
+#end
+
+#neweffect "giantspider ritual"
+#effect 10001
+#damage 782
+#spec 0
+#power 0
+#maxpower 3
+#nreff 5
+#pathlevel 1
+#fatiguecost 120
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$conjure$ NAMEPREFIX Giant %Spider%"
+#descr 64 "The caster summons ARTICLE giant %spider%. The giant spider has a venomous bite, but has little resistance to magic."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+#scalerate 3
+#end
+
+#neweffect "giantspider chassis dummy"
+#effect 10001
+#damage 782
+#spec 0
+#power 0
+#maxpower 0
+#nreff 1
+#pathlevel 1
+#fatiguecost 10
+#schools -1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$Summon$ NAMEPREFIX Giant %Spider%"
+#descr 64 "The caster summons ARTICLE giant %spider%. The giant spider has a venomous bite, but has little resistance to magic."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
+#pathperresearch 0.4
+
+#scalerate 3
+#end
+
+#neweffect "giantspider Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 782
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX Giant Spider $ambush$"
+#descr 64 "The caster sends ARTICLE giant %spider% to attack a hostile commander in a distant province. The giant spider has a venomous bite, but has little resistance to magic."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote giantspider"
+#effect 10038
+#provrange 4
+#damage 782
+#spec 0
+#power 4
+#maxpower 14
+#nreff 5001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 10
+
+#name 64 "$Send$ NAMEPREFIX Giant %Spider%"
+#descr 64 "The caster sends ARTICLE giant %spider% to attack a distant province. The giant spider has a venomous bite, but has little resistance to magic."
+
+
+#spelltype 20
+
+#scalerate 4
+#end

@@ -7,8 +7,10 @@
 #precision -2
 #nreff 1
 #pathlevel 4
-#fatiguecost 300
-#scalefatiguemult 60
+#fatiguecost 120
+#scalefatiguemult 50
+#scalefatigueexponent -2.1
+#pathperresearch 0.4
 #sound 31
 #schools 8
 
@@ -16,10 +18,10 @@
 #secondarypaths 9
 #secondarypathchance 100
 
-#skipchance 85
+#skipchance 60
 
-#name 8 "Summon NAMEPREFIX Iron %Dragon%"
-#name 1 "Summon NAMEPREFIX Iron %Dragon%"
+#name 8 "$Assemble$ NAMEPREFIX Iron %Dragon%"
+#name 1 "$Assemble$ NAMEPREFIX Iron %Dragon%"
 #descr 8 "The caster rapidly shapes and enchants a dragon from iron below the battlefield. It is huge and breathes fire as a living dragon would, but falls apart at the end of the battle."
 #descr 1 "The caster rapidly shapes and enchants a dragon from iron below the battlefield. It is huge and breathes fire as a living dragon would, but falls apart at the end of the battle."
 
@@ -32,11 +34,11 @@
 #effect 10001
 #damage 531
 #spec 8388608
-#power 9
-#maxpower 14
+#power 7
+#maxpower 15
 #nreff 1
-#pathlevel 7
-#fatiguecost 1100
+#pathlevel 4
+#fatiguecost 720
 #schools 8
 
 #paths 9
@@ -45,17 +47,17 @@
 
 #skipchance 50
 
-#name 8 "Summon NAMEPREFIX Iron %Dragon%"
-#name 1 "Summon NAMEPREFIX Iron %Dragon%"
+#name 8 "$Summon$ NAMEPREFIX Iron %Dragon%"
+#name 1 "$Summon$ NAMEPREFIX Iron %Dragon%"
 #descr 8 "The caster shapes and enchants a dragon from iron. It is huge and breathes fire as a living dragon would."
 #descr 1 "The caster shapes and enchants a dragon from iron. It is huge and breathes fire as a living dragon would."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 800
-
-#scalerate 4
+#scalefatigueexponent -2.25
+#scalefatiguemult 300
+#pathperresearch 0.4
+#scalerate 1
 #end
 
 #neweffect "irondragon Remote Assassination"
@@ -75,8 +77,8 @@
 #secondarypaths 9
 #secondarypathchance 100
 
-#name 8 "NAMEPREFIX Iron Dragon Attack"
-#name 1 "NAMEPREFIX Iron Dragon Attack"
+#name 8 "NAMEPREFIX Iron Dragon $Ambush$"
+#name 1 "NAMEPREFIX Iron Dragon $Ambush$"
 #descr 8 "The caster animates iron in a distant province, forming it into the shape of a dragon that then attacks a hostile commander in a distant province. It is huge and breathes fire, but will fall apart if not destroyed in the battle."
 #descr 1 "The caster animates iron in a distant province, forming it into the shape of a dragon that then attacks a hostile commander in a distant province. It is huge and breathes fire, but will fall apart if not destroyed in the battle."
 
@@ -92,8 +94,8 @@
 #power 9
 #maxpower 19
 #nreff 1
-#pathlevel 7
-#fatiguecost 1600
+#pathlevel 5
+#fatiguecost 1000
 #schools 8
 
 #skipchance 99
@@ -102,8 +104,8 @@
 #secondarypaths 9
 #secondarypathchance 100
 
-#name 8 "Send NAMEPREFIX Iron Dragon"
-#name 1 "Send NAMEPREFIX Iron Dragon"
+#name 8 "$Send$ NAMEPREFIX Iron Dragon"
+#name 1 "$Send$ NAMEPREFIX Iron Dragon"
 #descr 8 "The caster animates iron, forming it into the shape of a dragon that then attacks a distant province. It is huge and breathes fire."
 #descr 1 "The caster animates iron, forming it into the shape of a dragon that then attacks a distant province. It is huge and breathes fire."
 

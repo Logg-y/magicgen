@@ -74,7 +74,7 @@
 #secondarypaths 32
 #secondarypathchance 80
 
-#name 128 "NAMEPREFIX Bone Fiend Attack"
+#name 128 "NAMEPREFIX Bone Fiend $ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster binds a bone fiend to ambush an enemy commander."
 
 #spelltype 4
@@ -103,7 +103,7 @@
 #scalefatiguemult 200
 #secondarypathchance 80
 
-#name 128 "Send NAMEPREFIX Bone Fiends"
+#name 128 "$Send$ NAMEPREFIX Bone Fiends"
 #descr 128 "$BLOOD_INTRO$, the caster binds a group of bone fiends and sends them to attack a distant province.."
 
 #spelltype 20

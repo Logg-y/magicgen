@@ -1,4 +1,5 @@
 #newsecondary "Summon Unsurroundable"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -18,6 +19,7 @@
 #end
 
 #newsecondary "Summon Unsurroundable 5"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -37,6 +39,7 @@
 #end
 
 #newsecondary "Summon Unsurroundable 8"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

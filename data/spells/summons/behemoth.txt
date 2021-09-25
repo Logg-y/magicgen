@@ -3,12 +3,14 @@
 #damage 452
 #spec 8388608
 #power 5
-#maxpower 14
+#maxpower 20
 #precision -2
 #nreff 1
-#pathlevel 4
-#fatiguecost 100
+#pathlevel 3
+#fatiguecost 110
 #scalefatiguemult 20
+#scalefatigueexponent -1.6
+#pathperresearch 0.45
 #sound 43
 #schools 16
 
@@ -17,7 +19,7 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX %Behemoth%"
+#name 32 "$conjure$ NAMEPREFIX %Behemoth%"
 #descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates ARTICLE %behemoth%, ARTICLE giant undead %elephant% that can trample enemies."
 
 #spelltype 528
@@ -31,9 +33,9 @@
 #spec 8388608
 #power 4
 #maxpower 14
-#nreff 1
+#nreff 3
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 500
 #schools 16
 
 #paths 32
@@ -41,15 +43,16 @@
 
 #skipchance 97
 
-#name 32 "Summon NAMEPREFIX %Behemoth%"
+#name 32 "$Summon$ NAMEPREFIX %Behemoth%"
 #descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates a behemoth, a giant undead elephant that tramples enemies."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 220
+#scalefatigueexponent -1.6
+#scalefatiguemult 120
+#pathperresearch 0.45
 
-#scalerate 1
+#scalerate 2
 #end
 
 #neweffect "behemoth Remote Assassination"
@@ -68,7 +71,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "NAMEPREFIX Behemoth Ambush"
+#name 32 "NAMEPREFIX Behemoth $Ambush$"
 #descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates a behemoth, a giant undead elephant that tramples enemies, that is sent to a distant land to ambush an unsuspecting commander."
 
 #spelltype 4
@@ -92,7 +95,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Send NAMEPREFIX %Behemoth%"
+#name 32 "$Send$ NAMEPREFIX %Behemoth%"
 #descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates ARTICLE %behemoth%, ARTICLE giant undead %elephant% that can trample enemies. The %behemoth% %is% sent to a distant province."
 
 #spelltype 20

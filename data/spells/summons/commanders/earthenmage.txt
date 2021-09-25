@@ -56,7 +56,7 @@
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 95
-#skipchance 40
+#skipchance 70
 
 #paths 88
 #secondarypaths 8
@@ -66,7 +66,7 @@
 #name 8 "Call NAMEPREFIX Earthen Mage"
 #name 16 "Teleport NAMEPREFIX Earthen Mage"
 #name 64 "Charm NAMEPREFIX Earthen Mage"
-#descr 8 "The fire mage lets out a call for ARTICLE Earthen %Mage%."
+#descr 8 "The earth mage lets out a call for ARTICLE Earthen %Mage%."
 #descr 16 "The caster teleports ARTICLE Earthen %Mage% to him and convinces PRONOUN to fight for him."
 #descr 64 "The caster attracts ARTICLE Earthen %Mage% to him and convinces PRONOUN to fight for him."
 #details "Earthen Mages are human E2 mages."

@@ -5,3 +5,6 @@ class debugkeys:
 
     # Writes details on the outcome of every single condition test
     CONDITIONTESTING = False
+
+    # Writes the number of effects of summon spells in their name
+    SUMMONSPELLNREFFDISPLAY = True

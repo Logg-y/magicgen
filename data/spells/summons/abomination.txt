@@ -2,24 +2,25 @@
 #effect 1
 #damage 521
 #spec 8388608
-#power 9
+#power 7
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 8
-#fatiguecost 200 
+#pathlevel 5
+#fatiguecost 220
 #sound 31
 #schools 1
 
 #paths 20
 #secondarypaths 20
 #secondarypathchance 100
-#scalefatiguemult 190
+#scalefatiguemult 85
+#scalefatigueexponent -2.2
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX %Abomination%"
-#name 16 "Summon NAMEPREFIX %Abomination%"
+#name 4 "$conjure$ NAMEPREFIX %Abomination%"
+#name 16 "$conjure$ NAMEPREFIX %Abomination%"
 #descr 4 "The caster summons an abomination from the nether planes. It is huge and its gaze spells death to foes in a massive area."
 #descr 16 "The caster summons an abomination from the nether planes. It is huge and its gaze spells death to foes in a massive area."
 
@@ -32,32 +33,31 @@
 #effect 10001
 #damage 521
 #spec 8388608
-#power 9
-#maxpower 14
+#power 7
+#maxpower 15
 #nreff 1
-#pathlevel 7
-#fatiguecost 1500
+#pathlevel 5
+#fatiguecost 900
 #schools 1
 
 #paths 20
 #secondarypaths 20
 #secondarypathchance 80
 
-#scalefatiguemult 1200
+#scalefatiguemult 600
+#scalefatigueexponent -2.6
 
 #skipchance 50
 
-#name 4 "Summon NAMEPREFIX %Abomination%"
-#name 16 "Summon NAMEPREFIX %Abomination%"
+#name 4 "$Summon$ NAMEPREFIX %Abomination%"
+#name 16 "$Summon$ NAMEPREFIX %Abomination%"
 #descr 4 "The caster summons an abomination from the nether planes. It is huge and its gaze spells death to foes in a massive area."
 #descr 16 "The caster summons an abomination from the nether planes. It is huge and its gaze spells death to foes in a massive area."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 70
 
-#scalerate 4
+#scalerate 1
 #end
 
 #neweffect "abomination Remote Assassination"
@@ -77,8 +77,8 @@
 #secondarypaths 20
 #secondarypathchance 100
 
-#name 4 "NAMEPREFIX Abomination Attack"
-#name 16 "NAMEPREFIX Abomination Attack"
+#name 4 "NAMEPREFIX Abomination $ambush$"
+#name 16 "NAMEPREFIX Abomination $ambush$"
 #descr 4 "The caster summons an abomination from the nether planes and sends it to attack a hostile commander in a distant province. It is huge and its gaze spells death to foes in a massive area."
 #descr 16 "The caster summons an abomination from the nether planes and sends it to attack a hostile commander in a distant province. It is huge and its gaze spells death to foes in a massive area."
 
@@ -91,11 +91,11 @@
 #provrange 4
 #damage 521
 #spec 8388608
-#power 9
+#power 7
 #maxpower 19
 #nreff 1
-#pathlevel 7
-#fatiguecost 2000
+#pathlevel 5
+#fatiguecost 1000
 #schools 1
 
 #skipchance 99
@@ -104,8 +104,8 @@
 #secondarypaths 20
 #secondarypathchance 100
 
-#name 4 "Send NAMEPREFIX Abomination"
-#name 16 "Send NAMEPREFIX Abomination"
+#name 4 "$Send$ NAMEPREFIX Abomination"
+#name 16 "$Send$ NAMEPREFIX Abomination"
 #descr 16 "The caster summons an abomination from the nether planes and sends it to attack a distant province. It is huge and its gaze spells death to foes in a massive area."
 #descr 4 "The caster summons an abomination from the nether planes and sends it to attack a distant province. It is huge and its gaze spells death to foes in a massive area."
 
@@ -114,5 +114,5 @@
 #scalerate 1
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 1000
+#scalefatiguemult 500
 #end

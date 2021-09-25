@@ -17,23 +17,25 @@
 
 #skipchance 95
 
-#name 16 "Summon NAMEPREFIX Formless %Spawn%"
+#name 16 "$conjure$ NAMEPREFIX Formless %Spawn%"
 #descr 16 "The caster summons ARTICLE Formless %Spawn%. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
 #end
 
 #neweffect "Formless Spawn ritual"
 #effect 10001
 #damage 628
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
-#nreff 4
+#nreff 1
 #pathlevel 3
-#fatiguecost 900
+#fatiguecost 300
 #schools 1
 
 #paths 16
@@ -42,7 +44,7 @@
 
 #skipchance 97
 
-#name 16 "Summon NAMEPREFIX Formless %Spawn%"
+#name 16 "$Summon$ NAMEPREFIX Formless %Spawn%"
 #descr 16 "The caster summons ARTICLE Formless %Spawn%. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
 #details "Creatures summoned with this spell are not sacred."
 
@@ -50,7 +52,7 @@
 
 #skipchance 97
 
-#scalefatigueexponent 0.3
+#scalefatigueexponent -1.6
 #scalefatiguemult 150
 #newunit "Formless Spawn"
 
@@ -76,7 +78,7 @@
 
 #skipchance 99
 
-#name 16 "NAMEPREFIX Formless %Spawn% Attack"
+#name 16 "NAMEPREFIX Formless %Spawn% $ambush$"
 #descr 16 "The caster summons ARTICLE Formless %Spawn% to ambush a hostile commander in a distant province. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 4
@@ -104,7 +106,7 @@
 #scalefatiguemult 60
 #newunit "Formless Spawn"
 
-#name 16 "Send NAMEPREFIX Formless %Spawn%"
+#name 16 "$Send$NAMEPREFIX Formless %Spawn%"
 #descr 16 "The caster summons ARTICLE Formless %Spawn% to attack a distant province. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 20

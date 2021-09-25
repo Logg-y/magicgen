@@ -14,7 +14,7 @@
 #sound 83
 
 -- #paths 4+32+64
-#paths 100
+#paths 64
 #secondarypaths 64
 
 #name 4 "NAMEPREFIX Vile Water"
@@ -25,6 +25,73 @@
 #descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
 
 #spelltype 34
+
+#power 1
+#scalerate 1
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX poison touch"
+#namecond range < 10 32 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+
+
+#end
+
+
+#neweffect "Poison Projectile Death Fear"
+#effect 4
+#damage 1
+#spec 8388736
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#power 1
+#maxpower 30
+#name 1 "Area Fear"
+#name 2 "Area Fear"
+#name 4 "Area Fear"
+#name 8 "Area Fear"
+#name 16 "Area Fear"
+#name 32 "Area Fear"
+#name 64 "Area Fear"
+#name 128 "Area Fear"
+#end
+
+
+
+#neweffect "Poison Projectile Death Only"
+#effect 7
+#damage 2010
+#spec 8320
+#aoe 1
+#power 4
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 20
+#explspr 10139
+#flightspr 10079
+#sound 83
+
+-- #paths 4+32+64
+#paths 32
+#secondarypaths 64
+
+#name 4 "NAMEPREFIX Vile Water"
+#name 32 "NAMEPREFIX Decomposed Fluid"
+#name 64 "NAMEPREFIX $poisonous$ %bolt%"
+#descr 4 "Projects ARTICLE poisonous %bolt% formed of stale water at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned and repulsed by the foul liquid."
+#descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
+
+#spelltype 34
+
+#nextspell "Poison Projectile Death Fear"
 
 #power 1
 #scalerate 1

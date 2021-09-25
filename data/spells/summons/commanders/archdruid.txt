@@ -54,7 +54,7 @@
 #schools 1
 #newunit "Archdruid"
 
-#skipchance 40
+#skipchance 70
 #pathskipchance 16 95
 #paths 80
 #secondarypaths 64

@@ -3,7 +3,7 @@
 #damage -2
 #spec 8388608
 #power 1
-#maxpower 14
+#maxpower 12
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -21,7 +21,10 @@
 #spelltype 528
 
 #power 1
-#scalerate 0.85
+#scalerate 0.51
+#scalefatiguemult 4
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
@@ -88,7 +91,7 @@
 #maxpower 9
 #nreff 4010
 #pathlevel 3
-#fatiguecost 800
+#fatiguecost 600
 #schools 16
 
 #skipchance 99.6

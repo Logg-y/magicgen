@@ -1,4 +1,5 @@
 #newsecondary "Summon Paralysisweapon"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -15,6 +16,7 @@
 #end
 
 #newsecondary "Summon Greaterparalysisweapon"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

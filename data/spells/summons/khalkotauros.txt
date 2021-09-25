@@ -2,12 +2,12 @@
 #effect 1
 #damage 3171
 #spec 0
-#power 7
+#power 6
 #maxpower 14
 #precision -2
 #nreff 1
 #pathlevel 3
-#fatiguecost 100
+#fatiguecost 120
 #sound 31
 #schools 8
 
@@ -17,25 +17,27 @@
 
 #skipchance 97
 #scalefatiguemult 20
-#name 8 "Summon NAMEPREFIX %Khalkotauros%"
-#name 1 "Summon NAMEPREFIX %Khalkotauros%"
+#name 8 "$assemble$ NAMEPREFIX %Khalkotauros%"
+#name 1 "$assemble$ NAMEPREFIX %Khalkotauros%"
 #descr 8 "The caster rapidly constructs ARTICLE %khalkotauros%. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 #descr 1 "The caster rapidly constructs ARTICLE %khalkotauros%. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.7
+#pathperresearch 0.4
 #end
 
 #neweffect "khalkotauros ritual"
 #effect 10001
 #damage 3171
 #spec 0
-#power 7
-#maxpower 14
+#power 6
+#maxpower 20
 #nreff 1
 #pathlevel 4
-#fatiguecost 800
+#fatiguecost 420
 #schools 8
 
 #paths 9
@@ -52,10 +54,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 150
+#scalefatigueexponent -1.7
+#scalefatiguemult 200
+#pathperresearch 0.4
 
-#scalerate 2
+#scalerate 1
 #end
 
 #neweffect "khalkotauros Remote Assassination"
@@ -76,8 +79,8 @@
 #secondarypaths 9
 #secondarypathchance 90
 
-#name 8 "NAMEPREFIX %Khalkotauros% Attack"
-#name 1 "NAMEPREFIX %Khalkotauros% Attack"
+#name 8 "NAMEPREFIX %Khalkotauros% $ambush$"
+#name 1 "NAMEPREFIX %Khalkotauros% $ambush$"
 #descr 1 "The caster constructs and animates ARTICLE %khalkotauros% from brass in a distant province, where it attacks a random commander there before returning to base metal. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 #descr 8 "The caster constructs and animates ARTICLE %khalkotauros% from brass in a distant province, where it attacks a random commander there before returning to base metal. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 
@@ -94,7 +97,7 @@
 #maxpower 14
 #nreff 1
 #pathlevel 4
-#fatiguecost 1000
+#fatiguecost 800
 #schools 8
 #nogeodst 2052
 
@@ -104,8 +107,8 @@
 #secondarypaths 9
 #secondarypathchance 90
  
-#name 8 "Send NAMEPREFIX %Khalkotauros%"
-#name 1 "Send NAMEPREFIX %Khalkotauros%"
+#name 8 "$Send$ NAMEPREFIX %Khalkotauros%"
+#name 1 "$Send$ NAMEPREFIX %Khalkotauros%"
 #descr 1 "The caster constructs and animates ARTICLE %khalkotauros% in a distant province to attack anything found there. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 #descr 8 "The caster constructs and animates ARTICLE %khalkotauros% in a distant province to attack anything found there. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
 

@@ -3,7 +3,7 @@
 -- both evo and buff
 #spelltype 0
 
-#skipchance 10
+#skipchance 0
 -- not battlesummoned commander
 #req effect != 21
 
@@ -15,10 +15,9 @@
 #req effect != 27
 #req fatiguecost < 150
 
-#fatiguecost -70
+#mult fatiguecost 0.25
 
 #pathlevel 0
-#power -5
-#pathlevel 1
+#power -4
 
 #end

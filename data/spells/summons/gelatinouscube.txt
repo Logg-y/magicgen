@@ -2,12 +2,12 @@
 #effect 1
 #damage 2159
 #spec 8388608
-#power 4
+#power 3
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 100
+#nreff 2
+#pathlevel 2
+#fatiguecost 120
 #sound 31
 #schools 1
 
@@ -17,12 +17,15 @@
 #skipchance 80
 #scalefatiguemult 20
 
-#name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
+#name 4 "$conjure$ NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
 
 #spelltype 528
 
 #scalerate 1
+#scalefatiguemult 12
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "gelatinouscube ritual"
@@ -31,9 +34,9 @@
 #spec 8388608
 #power 4
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 4
-#fatiguecost 200
+#fatiguecost 420
 #schools 1
 
 #paths 4
@@ -41,13 +44,14 @@
 
 #skipchance 60
 
-#name 4 "Summon NAMEPREFIX Gelatinous %Cube%"
+#name 4 "$Summon$ NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 150
+#scalefatigueexponent -1.6
+#scalefatiguemult 50
+#pathperresearch 0.4
 
 #scalerate 2
 #end
@@ -68,7 +72,7 @@
 #paths 4
 #secondarypaths 4
 
-#name 4 "NAMEPREFIX Gelatinous Cube Attack"
+#name 4 "NAMEPREFIX Gelatinous Cube $ambush$"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube% to attack a hostile commander in a distant province. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
 
 #spelltype 4
@@ -84,7 +88,7 @@
 #maxpower 14
 #nreff 1000
 #pathlevel 4
-#fatiguecost 1600
+#fatiguecost 1000
 #schools 1
 
 #skipchance 99.6
@@ -92,7 +96,7 @@
 #paths 4
 #secondarypaths 4
 
-#name 4 "Send NAMEPREFIX Gelatinous %Cube%"
+#name 4 "$Send$ NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube% to attack a hostile commander in a distant province. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
 
 #spelltype 20

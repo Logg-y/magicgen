@@ -10,140 +10,208 @@ Modlist: a list of filepaths, separated by commas. This ONLY scans for new natio
 
 Note that Dominions has a limit on the number of modded spells that can be reached quite easily if the number of national spells is turned up too high. The program will complain if this happens.
 
-# Datafile Documentation
+# Datafile Tutorial
 
 This will assume you have a passing knowledge of how Dominions modding (especially that for spells) works. Even if you do, you might want to refer back to the mod manual sometimes. If you don't, you might do well to understand how Dominions spells are put together and what all the important properties do before messing with a program which is designed to churn lots of them out.
 
-## How magicgen works:
+This is intended to be a relatively quick tour through topics that may not be obvious at a first glance. It is an attempt to give a reader an indication of how the whole thing fits together, without getting too caught up on the finer details. The need to actually write anything from scratch should be unnecessary for most - simply copying and editing an existing similar effect should suffice for most applications. Copying is very much encouraged, and this quick guide will assume a certain level of copying and editing files that already exist.
 
-First it goes and sets nearly all vanilla spells to unresearchable. This means they still exist so vanilla magic items can cast them, and a few generic divine spells are specifically excluded. The fact they still exist means that #copyspell can also be used to transfer unique unmoddable properties such as soul slaying, twiceborn's X gem cost per size, gifts from heaven's special fly sprites, and so on.
+## Spell Effects
 
-Then it goes and generates a bunch of generic spells.
+MagicGen runs off "spell effects", which are essentially templates for spell effects. One spell effect can be used to create spells across a range of spell levels (or just 1 if you so wanted), and describes how all aspects of the spell should change as research level is increased. The syntax used in these (and all other MagicGen structures) is deliberately kept similar to that of Illwinter's .dm format.
 
-Then it generates holy spells for each path.
+A spell is made up of a spell effect, a modifier (which alters the "delivery" of a spell, such as making it touch ranged, higher research but easier to cast, into a cloud effect...), and a secondary effect (such as a fireball that petrifies people it hits). These other things are discussed in further detail later, but being aware that they exist is useful in understanding several aspects of spells.
 
-Then it generates national spells.
-
-Spells are generated from spell effects, defined in the data .txt files. One spell effect will be something like "Falling fires", that specifies the basic parameters all variants of that spell should have (damage, aoe, range, path requirements, names, descriptions...), as well as how to scale it as research levels are increased. In the case of the implementation for falling fires used here, the value that scales with research is the AoE value. This means the file needs to contain the amount of aoe gained as research increases: this is not a linear scale, but more on that later.
-
-Spell effects also have "modifiers" that somehow alter their delivery, such as making a damaging spell into a touch ranged spell or making it cast faster or slower. Naturally these modifiers override parameters of the original spell effect and should only be applied to effects meeting certain requirements, which they can specify.
-
-Spell effects additionally have a "secondary effect" that adds something else to the spell. In the case of most spells this is some extra effect such as setting everything within the area of effect on fire. For summons this instead takes the place of some kind of modification of the base summoned creature such as making it explode on death with #deathfire. A these effects then call a "unitmod" which tests eligibility and is responsible for making the alterations to the creature. The unitmod can then call a weaponmod which does much the same to the unit's weapons.
-
-**NOTE that comments on the end of lines are illegal and will cause errors when parsing these files!**
-
-Perhaps to illustrate how things work, it would be worth walking through a spell effect that makes falling fires:
-
-
-### A broken down example spell effect
+### A broken down example spell effect (Falling Fires)
 ```
--- Define a new effect and its name
-#neweffect "Fire Evo Instant"
--- These are all basic things that are copied over and should be familiar to anyone who has dealt with dominions modding
-#effect 2
-#damage 2010
-#spec 96
-#aoe 1003
--- This sets the minimum research level at which this effect can appear, and it will do so with unscaled numbers (as they are written above)
-#power 4
 
+-- All effects need a unique name
+#neweffect "Fire Evo Instant"
+-- These are simply set as you would if modding a spell in a typical .dm
+#effect 2
+#damage 2016
+#spec 96
+#aoe 1
 #precision 1
 #range 30
--- Nonstandard, but hopefully self explanatory
-#pathlevel 2
 #fatiguecost 20
 #explspr 10011
 #sound 123
+-- "power" here is used to mean "research level". In this case, the spell effect can generate at research level 2-14 inclusive
+#power 2
+#maxpower 14
+-- The path level used to cast the spell
+#pathlevel 2
 
--- Note that THESE ARE NOT THE PATH CONSTANTS USED IN THE MODDING MANUAL. Instead they are 2^n where n is the normal path id
--- Thus this spell is available to fire (1) and blood (128) with a secondary path of fire (1). Formerly it was available to others too
--- (which is why there are names and descriptions for other paths)
+-- Paths that the spell can generate for. Unlike Illwinter's system, these are bitflags: 129 is made up of 1 (fire) and 128 (blood).
+-- The value of any given constant is simply 2^(Illwinter's path value), so:
+-- F=1, A=2, W=4, E=8, S=16, D=32, N=64, B=128
 #paths 129
+-- Paths that the spell can have as a secondary (cross) path. So Blood/Fire is a possible combination
 #secondarypaths 1
 
--- 1: Fire
-#name 1 "Falling %$fire$%"
--- 2: Air
-#name 2 "Falling %$fire$%"
--- 4: Water
-#name 4 "Falling %$fire$%"
--- 8: Earth
-#name 8 "%$fire$% from $underground$"
--- 16: Astral
-#name 16 "%$fire$% from beyond"
--- 128: Blood
-#name 128 "$infernal$ %$fire$%"
-#descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
-#descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
+-- Names and descriptions for the spell. The number indicates the path it is for, hence the need for both 1 (fire) and 128 (blood).
+-- The symbols and words in capitals are variable and are discussed later.
+#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 128 "NAMEPREFIX $infernal$ %$fire$%"
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
-#descr 8 "Heat from the earth is gathered and brought upon a SIZE area of the caster's choosing. The resulting flames may badly burn enemies within."
-#descr 16 "Heat from somewhere in time and space is focused into a SIZE area of the caster's choosing. The resulting flames may badly burn enemies within."
 #descr 128 "$BLOOD_INTRO$, the caster directs infernal flames upon a group of his enemies. This may badly burn SUBJECT."
 
--- This is a bitfield which describes what kind of spell it is as well as what part of it to scale
--- in this case it is evo-like, allows conversion to x% of battlefield, and will increase the aoe
+-- This is a bit field that lists flags for the spells. In this case: evo-like, battlefield allowed, scale aoe with research level
 #spelltype 42
-
--- The base scaling rate. This describes how much to increase the parameter we are scaling (in this case aoe) by per extra research level
-#scalerate 8
-
--- As with the paths, this is a field using 2^n of default school ids, 4 meaning it only goes into evocation
--- but importantly this allows a single spell effect to be placed in multiple research schools
+-- The rate at which spells are scaled, discussed later
+#scalerate 1
+-- #scalecost 0.3
+-- The research schools this spell can go in. This is similar to the paths in that it is a bitflag with values of 2^(Illwinter's constants). These are:
+-- Conj=1, Alt=2, Evo=4, Constr=8, Ench=16, Thaum=32, Blood=64
 #schools 4
+
+-- Priority 1 means that any of these will be used in preference to the names and descriptions above if their conditions are met.
+-- This is used to make "touch" range versions of this spell (which is implemented as a Modifier) get a different name and description to the normal ranged version
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Burst of Flames"
+#namecond range < 10 128 "NAMEPREFIX Burst of Infernal Flames"
+#descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming anyone nearby."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming anyone nearby."
 #end
 ```
 
-## Scaling with research levels
+### Scaling
 
-As mentioned above, power scaling is nonlinear. The total scaling value which is then added to the defined base values, is given by:
+This is quite a mathematical topic which isn't very easy to explain, so I made a program that allows you to mess with the various parameters and see what they would produce, allowing more careful control of spell scaling than simply picking numbers and hoping for the best. The following explanation is intended as a supplement to this, without it these values would be very difficult for an interested reader to follow. Importantly, the scaling utility uses the actual generation code, which means that other features are displayed - such as how it designates dynamic scaling.
 
-L = number of research levels this spell is generating over the minimum the effect allows. So an effect with \#power 4 generating at research 6 would have a value of 2 here.
+It was intended that playing around with the tool should go with this section.
+
+There are various parts of spells that scale. These can be split into fatigue, path level, and other attributes (defined as #spelltype flags, these are currently damage, number of effects, aoe, effect number, maxbounces). Other attributes scale quadratically (the amount added per research level over the base goes up at a graph of x^2 would) with #scalerate determining the steepness of the curve. This is used to calculate a final "scaling amount" which is added to the appropriate attribute(s).
+
+In the case of the Falling Fires spell above, generating at research 5 has a research difference of 3 (5-2 = 3). The total scale amount with a #scalerate of 1 = 6. Therefore, this scale amount of 6 is added to the effect's base AoE of 1, meaning at research 5 it has a final AoE of 1+6 = 7. The actual calculation of scale amount is below in the more formal documentation, but the details of it are not important at this stage. What is important is to realise that it grows at an increasing rate: the falling fires spell (at the time of writing) AoE as research levels increase becomes 1, 2, 4, 7, 16 (here it jumps to costing a gem), 22, 29, 37, 44, 57, 67, 79...
+
+Path level is flat, and is governed by #pathperresearch. The default value for this (which is not overwritten) in falling fires is 0.66. As the name hopefully implies, each extra research level adds this to the path level, and the result is rounded down at the end.
+
+Fatigue is more complex than the others and hinges on a variety of factors. It will seemingly increase on its own - each extra research level adds 10 fatigue, and (scale amount^#scalefatigueexponent) is then added to the cost. #scalefatigueexponent can be negative, which will instead SUBTRACT the result from the fatigue cost (as opposed to the usual mathematical meaning of negative exponents). #scalefatiguemult (not used in falling fires) can be thought of as "fatigue cost per additional effect".
+
+In an attempt to make the jump to gem costing spells better/make more sense, scaling parameters for non-blood combat spells that are not nextspells that cost a gem generate as if they were 1 research level higher, but only if the base effect did not cost a gem. This increase in scale amount is NOT used in the fatigue calculations.
+
+Ultimately, understanding all these factors is quite difficult. This is why the scaling utility was made - in an attempt to make understanding and selecting values easier, by making an instant method of seeing all the non-modified results of setting them.
+
+(After quite a lot of use this utility will start refusing to create any spells. This is because of the way it sits on top of the normal generation code, causing issues with naming and ID usage that cause it to break after a while. Simply restart it when this happens.)
+
+
+### Other attributes of spell effects
+
+There are many other attributes of spell effects. As this is an attempt to be a guide through how things work, it will not cover most of these. Refer to the documentation component for a complete list.
+
+One important attribute is #nextspell. This expects the name of another Spell Effect, and will cause spells generated with the first spell effect to be assigned a nextspell of the given spell effect, generated with the same path requirements and modifiers. This allows chaining effects together such as a fireball into an area heat fatigue effect, and many more combinations.
+
+Another important attribute is #skipchance. This can be used to make spell effects rarer, and is used extensively. A notable use of this is that most summoning spells have a very high skipchance, so that the huge number of ritual and battlesummon spell effects does not swamp other effects such as conjuration globals.
+
+### Modifiers
+
+All spell effects must generate with a modifier, which is intended to alter parameters affecting the delivery of the spell. This could be casting time, fatigue cost, path levels, research level modifiers, spec values, and more. The aim when setting these up is to make them unobtrusive: spell effects should not have to work around possible modifiers. The only reference to them is typically altered names and descriptions if they are being turned into clouds, made into touch range, or similar properties.
+
+As with spell effects, refer to the later section of this document for a list of allowed commands.
+
+
+#### Example Modifier
 
 ```
-scalerate*((L(L+1))/2)
+#newmodifier "Touch Range Damage"
+
+-- can apply to evocation only
+#spelltype 2
+
+-- increases effective research level by 1
+#power 1
+-- reduces one of the fatigue scaling parameters
+#scalefatigueexponent -0.5
+-- multiplies the whole spell's fatigue, at the end, by 0.3
+#mult fatiguecost 0.3
+-- causes path levels to progress at a lesser rate
+#pathperresearch -0.23
+-- sets range to 3, for a touch spell
+#set range 3
+-- set precision to 100, so it won't miss
+#set precision 100
+-- flat -75% cast time
+#casttime -75
+-- require a nonscaling range (ignores scaling from 1000+ values) between 10 and 100
+#req2 10 <= nonscalingrange <= 100
+-- not ritual
+#req spelltype !& 4
+-- apply to damage only
+#req effect == 2
+-- do not allow x% battlefield effects
+#nobattlefield
+-- add to aispellmod, to make the AI like to cast this
+#aispellmod 200
+
+-- chance to be skipped, otherwise touch spells would be very common
+#skipchance 85
+
+-- must not affect enemies only
+#req spec !& 262144
+-- add enemies only spec
+#spec 262144
+
+-- adds to spell's description
+#descr "Despite its lethality, the caster is able to shield himself and his allies from its short range effects."
+
+#end
 ```
 
-Essentially this means that a scalerate of 1 produces scaling values that follow the triangular number series. The defined scalerate is simply a flat multiplier to this.
+### Secondary effects
 
+Much like modifiers, all spells must come with exactly one secondary effect (including the Do Nothing secondary effect). For in battle spells this is typically some kind of nextspell, for instance a mind burn spell that sets its victims on fire. For summons, this is the myriad of modifications that can go on them. I am hopeful that readers can understand these upon reading them in their respective files.
 
-Path level requirement is adjusted by:
+### Network of Objects
 
-P = pathperresearch value (default before modification is 0.66, a value I came up with by messing with numbers)
-L = number of research levels over the minimum
-
-```
-floor(P*L)
-```
-
-Fatigue cost is first modified by:
+After the above explanation, I hope that a more thorough "how does everything fit together" can now be written, along with introducing yet more file types. Listed here are examples of spell effects which perform the listed functions for ease of locating and copying existing examples.
 
 ```
-10*(research levels over the minimum)
+Spell: output, always generated from the combination of SpellEffect + SecondaryEffect + Modifier
+
+SpellEffect:
+	Can call another SpellEffects for nextspells (numerous, eg: fireball)
+	Can call one EventSet (provides access to writing event code, and pulling together montags)
+		Can assemble montags of creature + UnitMod combos (eg: portal globals)
+		Can call one MagicSite (provides access to adding new magic sites) (eg: adventure site spell)
+			Can also assemble their own montags of creature + UnitMod combos (eg: wall defender spell)
+		Supports modular events, allowing a mix and match system for event components (this is complicated, see offensive globals)
+	Can call one NewUnit (provides definitions for new unit types for summon spells, such as nonsacred void critters)
+	
+SecondaryEffect:
+	Can call UnitMods (unit modifiers, for editing the summoned creature)
+		Can call WeaponMods (weapon modifiers, for editing the weapons of the summoned creature)	
 ```
 
-It is next modified by:
+The above will probably sound daunting, but most of these substructures are only required to do certain very specific things:
 
-```
-(total scaling value) * (scalefatiguemult, default value is 0.0)
-```
+ * If a ritual needs events, it needs an EventSet.
+ * If events need to make a new magic site, they need a MagicSite.
+ * If a summoning spell is for a unit not in the base game, it needs a NewUnit.
+ * If a secondary effect is going to edit a summoned creature, it needs a UnitMod, which in turn may need a WeaponMod if it edits or needs to check for certain weapon types.
 
-This means that scalefatiguemult is a flat addition per scaling value, which is useful for effects such as summoning.
+An exception to this are random creature pools, which are more involved and further explanation is warranted.
 
-Next, the fatigue cost is modified by:
+### Random Creature Pools
 
-```
-(total scaling value) ^ (scalefatigueexponent, default 1.6)
-```
+Random creature pools are available through MagicSites and EventSets only. Counterintuitively, a ritual that transforms its caster into a random creature therefore requires an EventSet, even though no event code is required.
 
-Which is responsible for making large scaling values of stuff more expensive.
+\#selectunitmod defines a "Selector UnitMod" for the creature pool. That is to say, any creature must be ALLOWED to have this applied to it in order to be allowed into the pool. This UnitMod is never actually applied to the units in the pool, ONLY used to decide if they are allowed in or not. Weapon requirements (for instance, ensuring that each creature in the pool has a ranged weapon before they get used as a fort wall defender) can also be checked with a linked WeaponMod.
 
-For combat spells only, this is then reduced to 100x the path level of the spell (to make it castable at the level mentioned). For spells with an increased number of effects, the number of effects is reduced proportionally - this stops very expensive modifier summoning spells from desiring >10 gems a cast and being reduced to 2 due to the path level. 
+\#allowedunitmod can be used multiple times, to add the UnitMods that can actually be applied to the units in the pool. For instance, a global that sends assassins after commanders does not want summon secondary effects such as Bringer of Fortune or Inspirational, because those would be pointless. Due to the large amount of reundancy here with very long lists of unitmods that needed to be updated in many different places, #unitmodlist was made to keep lists of modifiers for common purposes.
 
-It is then rounded down to various round values to make some nicer looking numbers on the eyes. Specifically this rounds to a multiple of 100 if the spell is over 100 fatigue, or a multiple of 5 if under.
+Creatures themselves are lifted from SpellEffects. #effectnumberforunits (can be used multiple times) picks which effect numbers are allowed to be considered for this. The strength of creatures is determined with #mincreaturepower and #maxcreaturepower. Each research level over the minimum increases these by 1, as an example:
+
+A spell with #power 4 calling an EventSet with #mincreaturepower 0, generating at research 4, would pull research 0 spell effect creatures. It would however pull research level 2 spell effect creatures at research 6, and so on.
+
+	
 
 # The boring documentation list
 
-Ideally, once understanding the above, readers can probably copy what is already in existence and just look things up here if are confused about something.
+Ideally, once understanding the above, readers can probably copy what is already in existence and just look things up here if confused about something.
+
+END OF LINE COMMENTS ARE NOT SUPPORTED and may cause weirdness.
 
 ## Spell effects
 
@@ -174,7 +242,9 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#onlyfriendlydst
 \#nolandtrace
 \#onlygeosrc
-\#aicastmod
+\#aispellmod
+\#hiddenench
+\#friendlyench
 \#details
  * As the usual, additionally the following strings are replaced in spell details:
 	* EFFECTIVENREFF: the base number of effects for the spell cast at the base path level
@@ -183,16 +253,18 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* EFFECTIVEDAMAGE: the base damage the spell has if cast at the base path level
 	* DAMAGESCALING: the extra damage the spell gains for each extra path level
 	* DAMAGE: the spell's number of effects
-	* EFFECTNUMBER_ADDITIVE: The spells effect number - 599, used for effect numbers 600-699 to show eg how many horror marks a spell adds
+	* EFFECTNUMBER_ADDITIVE: The spell's effect number - 599, used for effect numbers 600-699 to show eg how many horror marks a spell adds
+	* EFFECTNUMBER_5XX: The spell's effect number - 499, used for effect numbers 500-599 to show eg how many extra arms a ritual is giving you
+	* NEXTSPELL_EFFECTNUMBER_5XX: The effectnumber of the spell's nextspell - 499. This is used for the permanent effect spells that rely on using a dummy spell to allow targeting another commander. This is very likely the only use for this string.
 	
-	Practically these are used for things like gem transmutations and remote summons that list no values ingame.
+	Practically these are used for spells with scaling effects not displayed on the ingame UI, such as gem transmutation, seeking arrow, remote summons, horror marks...
 
-\#copyspell
-	This is done at the start of the spell definition. Use to keep unique traits: EG soul slay, twiceborn's x gems per size, special anims on GfH...
+\#copyspell "Spell"
+	This is done at the start of the spell definition. Use to keep unique and unmoddable traits, such as twiceborn's x gems per size, GfH's inaccurate modifier...
 		
 ### New or nonstandard parameters
 
-\#spelltype
+\#spelltype <int>
  * A bitmask with the following:
 	* 1	effect is a buff
 	* 2	effect is an evocation
@@ -208,9 +280,9 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* 1024	unused, formerly a marker to not force blood spells to cost slaves
 	* 2048	battlefield enchantment
 		
-\#schools
+\#schools <int>
  * Ignore the modmanual values, this is now a bitmask for what research schools things are allowed into. Note that these are 2^(the mod manual values)
-	 * -1	(special) unresearchable, use for nextspell stuff
+	 * -1	(special) unresearchable, use for nextspell or other effects that should never generate as standalones
 	 * 1	Conj
 	 * 2	Alt
 	 * 4	Evo
@@ -220,7 +292,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	 * 64	Blood
 	 * 128	Holy
 			
-\#paths
+\#paths <int>
  * The paths this spell can be assigned to. As with research schools these are 2^(the mod manual values).
 	* NONE = -1
 	* FIRE = 1
@@ -231,12 +303,18 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* DEATH = 32
 	* NATURE = 64
 	* BLOOD = 128
-	* HOLY = 256
+	* HOLY = 256 [special, may not act as expected]
+	
+\#pathskipchance <path> <chance>
+ * There is is x% chance that this effect will not generate with the listed primary path. This is used to do things like making Lightning Bolt rarely have an Astral casting requirement.
 			
-\#secondarypaths:
+\#secondarypaths <int>:
  * As #paths, but allowed paths for the secondary path requirement
+ 
+\#secondarypathchance <int> (default=10)
+ * X% chance for this spell to generate with a secondary path.
 			
-\#skipchance
+\#skipchance <float>
  * percentage chance (0-100) to not give a spell of this type when requested and a directive to make something else instead. Note that if not enough spells generate at a given research level, it attempts a second run ignoring skipchances.
 	
 \#nextspell "<spell effect name>"
@@ -244,28 +322,25 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* When this effect is used to create a spell, it will be generated a #nextspell from the given effect name
 	
 \#extraspell "<spell effect name>"
-* When this effect is used to create a spell, a copy of the listed spell effect will also generate with the same pathing at the same research level. This is used to make sure communion spells come in pairs.
+* When this effect is used to create a spell, a copy of the listed spell effect will also generate with the same pathing at the same research level. This is used to make sure communion spells come in pairs, and all the elemental royalty come together, and similar uses.
 			
-\#power
+\#power <int>
  * The "power level" (IE: appropriate research level) of the given numbers. This will be extrapolated to make stronger versions.
 	
-\#maxpower
+\#maxpower <int>
  * The highest allowed research level for this spell effect. This can be greater than 9 in which case the effect can be scaled by modifiers that increase spell power.
 	
-\#fatiguecost
- * Base fatigue, gets increased as power level scales up.
+\#pathlevel <int>
+* The path level suggested to cast this spell at the specified power level. This may be diverted into secondary paths or otherwise messed with.
 	
-\#pathlevel
-* The path level suggested to cast this spell at the specified power level. Naturally this might get tweaked or become a crosspath etc etc.
-	
-\#scalerate N
+\#scalerate <float>
 * The approximate amount of scaling stats per research level of a spell. It adds N if generated with a power level 1 over #power, 3N if generated 2 over, 6N if generated 3 over...
  * This can affect number of effects, aoe, and damage (see #spelltype and the full description above)
 	
-\#pathperresearch N (default=0.66)
+\#pathperresearch <float> (default=0.66)
 * The amount of extra path requirement to add per extra research level. This is rounded DOWN.
 	
-\#scalefatigueexponent N (default=1.7)
+\#scalefatigueexponent <float> (default=1.7)
 * Additional fatigue (added to base) is added equal to (#scalerate total)^this.
 	
 \#scalecost <float>
@@ -295,9 +370,6 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#descrcond2
  * Like #namecond2 but for descriptions instead.
  
-\#secondarypathchance X (default=10)
- * X% chance for this spell to generate with a secondary path.
- 
 \#skipflightspr
  * Using this will not override the flight sprite. This means it will keep special ones such as that from gifts from heaven.
  
@@ -309,10 +381,10 @@ Refer to the modmanual for details on these, unles otherwise noted.
  * For summons. This value is used to denote the fatiguecost of the chassis alone without any leadership or magic traits, which is used as the cost scaling value for most unit modifiers. This is to avoid overpricing human mages that get say heat auras. A human mage with a heat aura is hardly worth more than one without, as the thing that makes him useful is his paths and not the fact he has a heat aura.
  
 \#unique
- * This effect will only be generated once.
+ * This effect will only be used to generate one spell effect.
  
 \#alwaysgenerate
- * This effect is guaranteed to be generated at the end of the generic spell phase if it was not already. Used for dispel.
+ * This effect is guaranteed to be generated at the end of the generic spell phase if it was not already. Used for dispel, bishop fish, and other things that are more or less essential to any spellbook.
  
 \#donotsetextraspellpath
  * If set, extraspells will not follow the pathing of the effect that produced them. This is used to make elemental royalty all show up together with their different path requirements.
@@ -323,15 +395,44 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#noadditionalnextspells (default 0)
  * If greater than zero, secondary effects which confer nextspells are not allowed. This is typically intended for cases where extra nextspells are not desired such as on earthquake (as they will be added after cave collapse and only trigger in caves).
  
-\#eventset "eventset name"
- * Applies the given event set to this spell. This should be used to make global or local enchantments or spells that trigger a remote event. See below for more on event sets.
- 
 \#basescale X
- * For use with globale enchantments with scaling parameters. This should be the base value of the scaling parameters.
+ * For use with globale enchantments with scaling parameters. This should be the base value of the scaling parameters. For instance, a global enchantment that has a (2% + Scale Amount) chance per candle to do something should have this set at 2.
  
 \#secondaryeffectskipchance X
  * An additional X% chance to skip secondary effects for this spell effect.
+ 
+\#banishment 1
+ * This spell is a custom banishment and can be used to replace a generic one. #secondarypaths is used to designate which path(s) it can be used for.
+ 
+\#smite 1
+ * This spell is a custom smite and can be used to replace a generic one. #secondarypaths is used to designate which path(s) it can be used for.
+ 
+\#holyword 1
+ * This spell is a custom holyword and can be used to replace a generic one. #secondarypaths is used to designate which path(s) it can be used for.
+ 
+\#smitedemon 1
+ * This spell is a custom smitedemon and can be used to replace a generic one. #secondarypaths is used to designate which path(s) it can be used for.
+ 
+\#permanentslotusage 1
+ * This spell adds an "unnatural" effect to a unit's six effect slots. This should be used for rituals that add arbitrary effects that are not obtained through other ways. Spells such as horror mark that are found in the base game should not use this. It exists to prevent too many of these spells from being generated.
   
+\#eventset "Event Set Name"
+ * This spell will call the named EventSet, causing whatever additional output it generates to be included with this spell. Used to introduce events or random creature pools to spells.
+
+\#newunit "New Unit Name"
+ * This spell will call the named NewUnit, generating a new unit entry and updating the spell's damage value accordingly. Because of this, the damage value of summoning spells using this does not matter as it will be overwritten at generation.
+ 
+\#badaispell 1
+ * Tag rituals which the AI will have no idea how to cast with this. This is for the single player people out there who want to play vs AI but don't want them wasting gems on rituals that do nothing, such as event driven spells that need to be cast in specific places like capitals.
+ 
+\#noresearchdifferenceskip 1
+ * Ordinarily, spells are less likely to generate the further they are away from their base research level. This command prevents that occuring for the spell effect it is used on.
+ 
+\#siegepatrolchaff 1
+ * Used to mark ritual summoning spells that generate chaff whose intended purpose is not fighting. This can be patrolling, bringer of fortune, sieging, or other roles: it is used to prevent them getting secondary effects.
+ 
+\#priority <int>
+ * All naming and description commands after this line are at the given priority. Default priority is 0. Possible names are always considered from the highest priorities first - this is to allow modified spells such as touch range spells to always get their special names and descriptions if such a modifier is applied to them.
 
 ## Modifiers
 
@@ -348,14 +449,16 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#pathlevel
 \#fatiguecost
 \#maxpower
-\#maxbounes
+\#maxbounces
 \#casttime
 \#effect
-\#aicastmod
+\#aispellmod
 \#scalecost
 \#scalerate
 \#pathperresearch
 \#scalefatigueexponent
+
+\#details - Is appended to the end of the spell details
 
 ### Others
 
@@ -395,6 +498,7 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#damage
 \#power
 \#range
+\#aoe
 \#precision
 \#nreff
 \#pathlevel
@@ -403,6 +507,7 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#casttime
 \#scalecost
 \#scalerate
+\#aispellmod
 \#pathperresearch
 \#scalefatigueexponent
 
@@ -430,6 +535,9 @@ These function the same as the modifiers.
 \#fatiguecostpereffect
  * This adds a flat fatigue cost per effect on the final spell. Good for summon effects that should be charged per unit made, for example death explosions or bringer of fortune.
 
+\#fatiguepersquare
+ * This adds a flat fatigue cost per square the spell affects. Good for adding appropriate costs to secondary battle spell effects.
+
 \#nextspell
  * Adds a nextspell to the main spell effect.
 
@@ -441,6 +549,18 @@ These function the same as the modifiers.
  
 \#offensiveeffect 1
  * If set, this modifier will only apply to spells whose scaling AoE is calculated as less than `3*((L(L+1))/2)` where L is the research level of the spell. This is to stop mass rust getting stronger secondary effects than its primary is!
+ 
+\#ondamage 1
+ * If set, the nextspell conferred by this secondary effect will be set to be on damage. This also makes the secondary effect not allowed on spells that already have an ondamage effect.
+ 
+\#requiredresearchelevel <int>
+ * If set, the research level of the final spell must be this number or higher.
+ 
+\#anysummon 1
+ * If set, the secondary effect can be applied to any kind of summon spell. This can be further limited with #req.
+ 
+\#minfinalaoe <int>
+ * If set, the resulting AoE of the spell must be this value or higher. This can be used to prevent very weak secondary effects, for instance MRNE capped damage, from being applied to spells that hit very small areas.
 
 ## Unit Modifiers
 
@@ -463,7 +583,7 @@ Additionally, the following are supported:
  * This is used as a name prefix for the unit.
 
 \#weaponmod "string"
- * This goes to the named weaponmod and applies it to the unit. The weaponmod must be valid on at least one of the unit's weapons for the unitmod to be considered valid, and in turn this means that everything must be satisfied for a secondary effect to be used. For instance, if a weapon mod specifies it only wants to apply to nonmagical weapons, any modifier that indirectly uses that weapon mod cannot apply it to something with only magical weapons.
+ * This goes to the named weaponmod and applies it to the unit. The weaponmod must be valid on at least one of the unit's weapons for the unitmod to be considered valid, and in turn this means that everything must be satisfied for a secondary effect to be used. For instance, if a weapon mod specifies it only wants to apply to nonmagical weapons, any unitmod that uses the weapon mod cannot apply it to something with only magical weapons.
  
 \#set <param> value
  * This works as above, except it expects unit parameters.
@@ -473,6 +593,15 @@ Additionally, the following are supported:
  
 \#uwok 1
  * If set, only creatures with any kind of amphibiousness or aquatic are allowed.
+ 
+\#eventset "Event Set Name"
+ * If set, loads the named event set. Probably only useful in combination with the below #attributeforrandomunit
+ 
+\#attributeforrandomunit "attributename"
+ * If set, sets attributename to the unit id output from the unitmod's eventset. For instance, having an eventset build a montag and using #attributeforrandomunit "raiseshape" would cause the modified units to raise killed creatures as whatever random magicgen creatures the event set's montag output was.
+ 
+\#addweapon <id>
+ * Creatures modified with this weapon mod gain the weapon ID as an additional weapon.
 
 ## Weapon Modifiers
 
@@ -512,7 +641,7 @@ These files should begin \#neweventset "name". Commands listed below should be u
 Each event set can have at most one unitid associated with it. This can be specified with \#usefixedunitid, \#selectunitmod, or just omitted.
 
 \#requiredcodes X (default 0)
- * This event requires X codes. These are dynamically assigned. To reference codes used, use CODE1 CODE2 CODE3 in the raw event code and they will be replaced accordingly.
+ * This event requires X event codes. These are dynamically assigned. To reference codes used, use CODE1 CODE2 CODE3 etc in the raw event code and they will be replaced accordingly.
  
 \#usefixedunitid X
  * If set, the event will always use X as a base unit ID. Unitmods may still be applied to it.
@@ -522,6 +651,9 @@ Each event set can have at most one unitid associated with it. This can be speci
  
 \#restrictunitstospellpaths 1
  * If set, only units with summoning spells corresponding pathed summoning spells are valid to throw into a montag. The same goes with secondary effects. This is used to make fire globals spawn things that are normally fire summons.
+ 
+\#effectnumberforunits X
+ * Can be used multiple times. Determines which spell effect numbers can be used when building montags.
  
 \#mincreaturepower X
  * Set the minimum research level to take summoned units from. This is increased by 1 for every level over the minimum level the parent spell generated. For instance, a research 5 global with a mincreaturepower of 1 would draw from summoning spells with a research level of 4 when it generates at research 9.
@@ -537,9 +669,219 @@ Each event set can have at most one unitid associated with it. This can be speci
  
 \#allowedunitmod "Unit Mod"
  * The named unit mod can be applied to monsters generated by this event set. This can be used multiple times, and only unitmods included AND that have a corresponding secondary effect can be used.
+
+\#unitmodlist "Unit Mod List"
+ * Adds all unitmods in the named unitmod list as an allowed unit mod.
  
 \#scaleparam "param" 1.0
  * This causes the named param to be scaled with the scale factor of the parent spell. The float value after the named param is a multiplier. For instance, \#scaleparam "req_rare 2.0" will increase the value of all req_rares in the event block by 2 multiplied by the spell scaling rate. This command can be used multiple times.
+ 
+\#makedummymonster 0
+ * If set, a firstshape dummy will not be made by the montag builder.
+ 
+\#makebattledummymonster 1
+ * If set, a dummy monster suitable for battles (that will transform into a random creature after one round) will be made by the montag builder.
+ 
+\#dummymonstername <path> "Name"
+ * Can be used multiple times per path. Gives the given name to dummy monsters. Which names are used depends on the primary spell's path: for instance the blood wall defender spells use #dummymonstername 128 "Infernal Creature"
+ 
+### Module Commands
+
+It is strongly advisable to be familiar with regular event sets and to look at an example of this, such as the beneficial or offensive globals. To annotate this:
+
+#### Example
+
+This is the event set that is called by the spell effect.
+
+```
+#neweventset "Beneficial Global"
+
+#module "CONDITION" "Beneficial Global Condition"
+#module "EFFECT" "Beneficial Global Effect"
+
+#end
+
+#newevent
+CONDITION
+EFFECT
+#end
+```
+
+It asks for a random Beneficial Global Condition, and replaces the text CONDITION with its output, and does the same for effects.
+
+A sample Beneficial Global Condition is the following:
+
+```
+#neweventset "Beneficial Global cond winter"
+-- This describes what power level range this effect can have. The sum of these across all modules must equal (current research - minimum research) of the original spell effect
+#minpowerlevel -2
+#maxpowerlevel 2
+
+-- scaling
+#scaleparam "req_domchance" 2
+#modulebasescale 2
+
+-- allocate this eventset to the group
+#modulegroup "Beneficial Global Condition"
+
+-- The final spell name is made up of two parts: the verb and the noun in that order.
+#noun "Winter"
+#verb "Winterbound"
+
+-- like #skipchance, but for modules only
+#moduleskipchance 50
+
+-- text to replace, this applies to the effects
+#textrepl "SUBJECT" "The common populace"
+
+-- Add to description and detail
+#moduledescr "In winter, this enchantment affects all friendly provinces with the caster's dominion."
+#moduledetails "Every turn in the three months of winter, each friendly province has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+
+-- Raw event code follows. Note the missing #newevent and #end - these are supplied by the eventset that is calling the module group
+#end
+
+
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_season 3
+#req_domchance 2
+```
+
+... and a corresponding Beneficial Global Effect...
+
+```
+#neweventset "Beneficial Global action gold fire"
+-- this half also provides power level values
+#minpowerlevel -2
+#maxpowerlevel 10
+
+-- only allowed if the spell is fire path
+#req path1 == 1
+
+-- scaling
+#scaleparam "gold" 10
+#modulebasescale 20
+
+#modulegroup "Beneficial Global Effect"
+
+-- the other half of the name components
+#noun "Midas Touch"
+#verb "Goldtouch"
+
+-- the other half of description components
+#moduledescr "SUBJECT may find that metal objects they touch occasionally become converted to solid gold."
+#moduledetails "Grants SCALEAMT gold."
+
+-- as before, no #newevent or #end
+#end
+
+#gold 20
+#msg "With a mere touch, some mundane metal has been turned to gold!"
+#nolog
+```
+
+Combined, these effects would result in a global called Winterbound Midas Touch or Goldtouch Winter, which generated gold in the winter.
+
+Offensive globals are currently a more complex example - they make use of the SUBJECT replacement in the effect event set, as well as using multiple events with multiple replacements. As an example of this, a condition can use the EFFECT replacement itself to make multiple checks all with the same randomised effect:
+
+```
+#rarity 5
+#req_pop0ok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 14
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 14
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 14
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 14
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#req_ench ENCHANTID
+#req_rare 5
+#req_targorder 14
+```
+
+#### Documentation
+
+\#module "text to replace" "module group name"
+ * Picks a random legal module from the listed module group, and substitutes "text to replace" with its event code. Can be used multiple times. This is used to make modular globals with mix and match conditions and effects, by having one module group provide conditions such as #req_researcher, and another to provide actions such as #banished -11. Note that "text to replace" occurs even in the module code themselves.
+ 
+\#modulegroup "name"
+ * Adds the current event set to the named module group.
+ 
+\#noun "name"
+\#verb "name"
+ * Together, form parts of a spell's name. The verb comes first, and then the noun.
+ 
+\#textrepl "symbol" "replacement"
+ * Replaces all cases of symbol with replacement in the resulting event code, even if the code is from another module group.
+ 
+\#moduledescr
+\#moduledetails
+ * Adds to the appropriate text of the main spell.
+ 
+\#minpowerlevel
+\#maxpowerlevel
+ * Act similarly to creaturepower for montag builders. Minpowerlevel is the base "research cost" of the module, more may be added for scaling. The total of the "research costs" across all modules must equal (research level spell is generated at - min research level for the spell).
+ 
+## New Units
+
+TODO
+
+## Magic Sites
+
+All mod commands that add site effects may be used.
+
+Additionally, the following work in the same way as the eventset equivalent:
+
+\#effectnumberforunits
+\#usefixedunitid
+\#desiredmontagsize
+\#restrictunitstospellpaths
+\#mincreaturepower
+\#maxcreaturepower
+\#secondaryeffectchance
+\#makedummymonster
+\#makebattledummymonster
+\#dummymonstername
+\#unitmodlist
+\#allowedunitmod
+\#selectunitmod
+
+\#name <path> <name>
+ * Gives a name for the site when the associated spell effect has the given path.
+
  
 		
 # Strings
@@ -558,8 +900,10 @@ The plural-ness has some bearing on the replacements described below.
 
 The following have special meaning and will be replaced:
  * ARTICLE		"a" if singular, removed if plural
+ * ARTICLE_N	"an" if singular, removed if plural
  * PRONOUN_POS	"his" if singular, "their" if plural
- * PRONOUN		"he" if singular, "they" if plural
+ * PRONOUN_SUB	"he" if singular, "they" if plural
+ * PRONOUN		"him" if singular, "them" if plural
  * SUBJECT		Strings such as "one person", "one enemy", "many enemies", "the entire army", "the entire battlefield". The replacement chosen depends on the spell aoe.
  * SIZE		Strings such as "tiny", "small", "moderate", "huge", "massive": single words that describe the spell aoe.
  

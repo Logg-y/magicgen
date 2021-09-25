@@ -1,4 +1,5 @@
 #newsecondary "Summon awe"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -16,6 +17,7 @@
 #end
 
 #newsecondary "Summon animalawe"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -33,6 +35,7 @@
 #end
 
 #newsecondary "Summon Sunawe"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -52,6 +55,7 @@
 
 
 #newsecondary "Summon awe 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -69,6 +73,7 @@
 #end
 
 #newsecondary "Summon animalawe 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -86,6 +91,7 @@
 #end
 
 #newsecondary "Summon Sunawe 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

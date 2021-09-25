@@ -53,10 +53,10 @@
 #schools 1
 #pathskipchance 64 0
 #pathskipchance 16 95
-#skipchance 40
+#skipchance 70
 
 #paths 80
-#secondarypaths +4
+#secondarypaths 4
 
 
 #name 1 "Call NAMEPREFIX Hedge Wizard"

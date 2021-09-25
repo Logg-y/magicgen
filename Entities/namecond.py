@@ -1,7 +1,6 @@
 from Enums.DebugKeys import debugkeys
 from Services.DebugLogger import debuglog
 
-
 class NameCond(object):
     def __init__(self):
         self.param = None
@@ -26,7 +25,10 @@ class NameCond(object):
             self.op2 = self.op2.strip()
             # val2 op2 paramval op1 val1
             # 1 < paramval < 3
-            descrstring = f"test: {val2} ({self.val2}) {self.op2} {paramval} ({self.param}) {self.op} {val} ({self.val})"
+            # py-spy reports that doing the logging even when the logging is turned off is causing
+            # significant slowdown
+            if debugkeys.CONDITIONTESTING:
+                descrstring = f"test: {val2} ({self.val2}) {self.op2} {paramval} ({self.param}) {self.op} {val} ({self.val})"
 
             if self.op2 == ">":
                 good = val2 > paramval
@@ -39,10 +41,12 @@ class NameCond(object):
             else:
                 raise Exception(f"Unknown operator: {self.op2}")
             if not good:
-                debuglog(descrstring + " -> false", debugkeys.CONDITIONTESTING)
+                if debugkeys.CONDITIONTESTING:
+                    debuglog(descrstring + " -> false", debugkeys.CONDITIONTESTING)
                 return False
 
-        descrstring = f"condition test: {paramval} ({self.param}) {self.op} {val}"
+        if debugkeys.CONDITIONTESTING:
+            descrstring = f"condition test: {paramval} ({self.param}) {self.op} {val}"
 
         returnval = None
 
@@ -66,7 +70,8 @@ class NameCond(object):
         if returnval is None:
             raise Exception(f"Unknown operator: {self.op}")
 
-        debuglog(f"{descrstring} -> {returnval}", debugkeys.CONDITIONTESTING)
+        if debugkeys.CONDITIONTESTING:
+            debuglog(f"{descrstring} -> {returnval}", debugkeys.CONDITIONTESTING)
         return returnval
     def __repr__(self):
         if self.val2 is None:

@@ -57,7 +57,7 @@
 
 #neweffect "Acid Evo Instant"
 #effect 2
-#damage 2006
+#damage 2008
 #spec 2199023255616
 #aoe 2
 #power 2

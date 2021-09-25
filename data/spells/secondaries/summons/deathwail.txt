@@ -1,4 +1,5 @@
 #newsecondary "Summon Deathwail"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -21,6 +22,7 @@
 #end
 
 #newsecondary "Summon Deathwail 2"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 
@@ -43,6 +45,7 @@
 #end
 
 #newsecondary "Summon Deathwail 3"
+#req siegepatrolchaff < 1
 
 #anysummon 1
 

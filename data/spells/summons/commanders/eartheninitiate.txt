@@ -55,7 +55,7 @@
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 95
-#skipchance 40
+#skipchance 70
 #newunit "Earthen Initiate"
 
 #paths 88

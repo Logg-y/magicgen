@@ -67,6 +67,14 @@ class SpellSecondaryEffect(object):
         self._cache[triplet] = retval
         return retval
 
+    def calcModifiedPowerForSpellEffect(self, eff):
+        if eff.chassisvalue is not None:
+            eff.calcchassisvalues()
+            finalpercentage = eff.chassisvaluepercent + (eff.magicvaluepercent * self.magicpathvaluescaling)
+            thispower = round(finalpercentage * self.power, 0)
+            return math.floor(thispower)
+        return self.power
+
     def _compatibility(self, eff, modifier, researchlevel):
         # Skipchance is done by the main processing loop now
         # it makes determining if there are legal modifiers for a spell a LOT better
@@ -111,9 +119,7 @@ class SpellSecondaryEffect(object):
             # This is so squishy human mages don't get pushed up to really high research for simple modifications
             # that don't really affect their combat ability
             if eff.chassisvalue is not None:
-                eff.calcchassisvalues()
-                finalpercentage = eff.chassisvaluepercent + (eff.magicvaluepercent * self.magicpathvaluescaling)
-                thispower = round(finalpercentage * self.power, 0)
+                thispower = self.calcModifiedPowerForSpellEffect(eff)
                 finalpower = researchlevel + thispower + modifier.power
 
         if eff.isnextspell and self.name != "Do Nothing":
