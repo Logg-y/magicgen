@@ -6,6 +6,7 @@ from Entities.eventset import EventSet
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services.utils import eventsets, eventmodulegroups
+from . import fileparserutils
 
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
@@ -43,10 +44,7 @@ def readEventSet(fp):
 
                 # Params to simply copy
                 for simple in secondary_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 
@@ -148,13 +146,14 @@ def readEventSet(fp):
                     continue
 
                 if line.startswith("#dummymonstername"):
-                    m = re.match('#dummymonstername\\W+([0-9]*)\\W+"(.*)"', line)
+                    m = re.match('#dummymonstername\\W+(.*?)\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #dummymonstername")
-                    path = int(m.groups()[0])
-                    if path not in curreff.dummymonsternames:
-                        curreff.dummymonsternames[path] = []
-                    curreff.dummymonsternames[path].append(m.groups()[1])
+                    paths = fileparserutils.parsepathalias(m.groups()[0])
+                    for path in utils.breakdownflagcomponents(paths):
+                        if path not in curreff.dummymonsternames:
+                            curreff.dummymonsternames[path] = []
+                        curreff.dummymonsternames[path].append(m.groups()[1])
                     continue
 
                 if line.startswith("#effectnumberforunits"):

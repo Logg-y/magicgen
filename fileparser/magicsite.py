@@ -4,6 +4,8 @@ import re
 from Entities import MagicSite
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
+from . import fileparserutils
+from Services import utils
 
 modifier_params_int = ["rarity", "loc", "gold", "res", "level", "decunrest", "supply",
                         "incscale", "decscale", "conjcost", "altcost", "evocost", "constcost", "enchcost", "thaucost",
@@ -48,10 +50,7 @@ def readMagicSiteFile(fp):
 
                 # Params to simply copy
                 for simple in modifier_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 
@@ -92,23 +91,25 @@ def readMagicSiteFile(fp):
                     continue
 
                 if line.startswith("#name"):
-                    m = re.match('#name\\W+([0-9]*)\\W+"(.*)"', line)
+                    m = re.match('#name\\W+(.*?)\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #name")
-                    path = int(m.groups()[0])
-                    if path not in curreff.names:
-                        curreff.names[path] = []
-                    curreff.names[path].append(m.groups()[1])
+                    paths = fileparserutils.parsepathalias(m.groups()[0])
+                    for path in utils.breakdownflagcomponents(paths):
+                        if path not in curreff.names:
+                            curreff.names[path] = []
+                        curreff.names[path].append(m.groups()[1])
                     continue
 
                 if line.startswith("#dummymonstername"):
-                    m = re.match('#dummymonstername\\W+([0-9]*)\\W+"(.*)"', line)
+                    m = re.match('#dummymonstername\\W+(.*?)\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #dummymonstername")
-                    path = int(m.groups()[0])
-                    if path not in curreff.dummymonsternames:
-                        curreff.dummymonsternames[path] = []
-                    curreff.dummymonsternames[path].append(m.groups()[1])
+                    paths = fileparserutils.parsepathalias(m.groups()[0])
+                    for path in utils.breakdownflagcomponents(paths):
+                        if path not in curreff.dummymonsternames:
+                            curreff.dummymonsternames[path] = []
+                        curreff.dummymonsternames[path].append(m.groups()[1])
                     continue
 
                 if line.startswith("#end"):

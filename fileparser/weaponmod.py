@@ -5,6 +5,7 @@ from Entities.namecond import NameCond
 from Entities.weaponmod import WeaponMod
 from Exceptions.ParseError import ParseError
 from Services.utils import weaponmods
+from . import fileparserutils
 
 secondary_params_int = ["att", "def_", "len", "nratt", "ammo", "secondaryeffectid", "secondaryeffectalwaysid", "effect",
                         "damage", "spec", "range", "aoe", "setweaponmagic"]
@@ -39,10 +40,7 @@ def readWeaponModFile(fp):
 
                 # Params to simply copy
                 for simple in secondary_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 

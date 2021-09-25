@@ -5,6 +5,7 @@ from Entities.SpellEffect import SpellEffect
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services import utils
+from . import fileparserutils
 
 simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "noresearchdifferenceskip", "siegepatrolchaff"]
 simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit"]
@@ -42,10 +43,7 @@ def readEffectFile(fp):
 
 					# Params to simply copy
 					for simple in simple_params_int:
-						m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-						if m is not None:
-							pval = int(m.groups()[0])
-							setattr(curreff, simple, pval)
+						if fileparserutils.parsesimpleint(simple, line, curreff):
 							sorted = True
 							break
 
@@ -79,102 +77,114 @@ def readEffectFile(fp):
 
 					if line.startswith("#namecond"):
 						m = re.match(
-							'#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
+							'#namecond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+(.*?)\\W+"(.*)"',
 							line)
 						if m is not None:
+							paths = fileparserutils.parsepathalias(m.groups()[5])
+							for path in utils.breakdownflagcomponents(paths):
+								cond = NameCond()
+								cond.val2 = m.groups()[0]
+								cond.op2 = m.groups()[1]
+								cond.param = m.groups()[2]
+								cond.op = m.groups()[3]
+								cond.val = m.groups()[4]
+								cond.path = path
+								cond.text = m.groups()[6]
+
+								if cond.path not in curreff.nameconds:
+									curreff.nameconds[cond.path] = {}
+								if currPriority not in curreff.nameconds[cond.path]:
+									curreff.nameconds[cond.path][currPriority] = []
+								curreff.nameconds[cond.path][currPriority].append(cond)
+							continue
+
+						m = re.match('#namecond\\W+(.+)[ \t]+([<>=&!]+)\\W*([0-9]*)\\W+(.*?)\\W+"(.*)"', line)
+						if m is None:
+							raise ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
+						paths = fileparserutils.parsepathalias(m.groups()[3])
+						for path in utils.breakdownflagcomponents(paths):
 							cond = NameCond()
-							cond.val2 = m.groups()[0]
-							cond.op2 = m.groups()[1]
-							cond.param = m.groups()[2]
-							cond.op = m.groups()[3]
-							cond.val = m.groups()[4]
-							cond.path = int(m.groups()[5])
-							cond.text = m.groups()[6]
+							cond.param = m.groups()[0]
+							cond.op = m.groups()[1]
+							cond.val = m.groups()[2]
+							cond.path = path
+							cond.text = m.groups()[4]
 
 							if cond.path not in curreff.nameconds:
 								curreff.nameconds[cond.path] = {}
 							if currPriority not in curreff.nameconds[cond.path]:
 								curreff.nameconds[cond.path][currPriority] = []
 							curreff.nameconds[cond.path][currPriority].append(cond)
-							continue
-
-						m = re.match('#namecond\\W+(.+)[ \t]+([<>=&!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
-						if m is None:
-							raise ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
-						cond = NameCond()
-						cond.param = m.groups()[0]
-						cond.op = m.groups()[1]
-						cond.val = m.groups()[2]
-						cond.path = int(m.groups()[3])
-						cond.text = m.groups()[4]
-
-						if cond.path not in curreff.nameconds:
-							curreff.nameconds[cond.path] = {}
-						if currPriority not in curreff.nameconds[cond.path]:
-							curreff.nameconds[cond.path][currPriority] = []
-						curreff.nameconds[cond.path][currPriority].append(cond)
 						continue
 
 					if line.startswith("#descrcond"):
 						m = re.match(
-							'#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"',
+							'#descrcond2\\W+([0-9]*)[ \t]([<>=!]+)\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+(.*?)\\W+"(.*)"',
 							line)
 						if m is not None:
+							paths = fileparserutils.parsepathalias(m.groups()[5])
+							for path in utils.breakdownflagcomponents(paths):
+								cond = NameCond()
+								cond.val2 = m.groups()[0]
+								cond.op2 = m.groups()[1]
+								cond.param = m.groups()[2]
+								cond.op = m.groups()[3]
+								cond.val = m.groups()[4]
+								cond.path = path
+								cond.text = m.groups()[6]
+								if cond.path not in curreff.descrconds:
+									curreff.descrconds[cond.path] = {}
+								if currPriority not in curreff.descrconds[cond.path]:
+									curreff.descrconds[cond.path][currPriority] = []
+								curreff.descrconds[cond.path][currPriority].append(cond)
+							continue
+
+						m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+(.*?)\\W+"(.*)"', line)
+						if m is None:
+							raise ParseError(f"{fp} line {lineno}: bad #descrcond")
+						paths = fileparserutils.parsepathalias(m.groups()[3])
+						for path in utils.breakdownflagcomponents(paths):
 							cond = NameCond()
-							cond.val2 = m.groups()[0]
-							cond.op2 = m.groups()[1]
-							cond.param = m.groups()[2]
-							cond.op = m.groups()[3]
-							cond.val = m.groups()[4]
-							cond.path = int(m.groups()[5])
-							cond.text = m.groups()[6]
+							cond.param = m.groups()[0]
+							cond.op = m.groups()[1]
+							cond.val = m.groups()[2]
+							cond.path = path
+							cond.text = m.groups()[4]
 							if cond.path not in curreff.descrconds:
 								curreff.descrconds[cond.path] = {}
 							if currPriority not in curreff.descrconds[cond.path]:
 								curreff.descrconds[cond.path][currPriority] = []
 							curreff.descrconds[cond.path][currPriority].append(cond)
-							continue
-
-						m = re.match('#descrcond\\W+(.+)[ \t]+([<>&=!]+)\\W*([0-9]*)\\W+([0-9]*)\\W+"(.*)"', line)
-						if m is None:
-							raise ParseError(f"{fp} line {lineno}: bad #descrcond")
-						cond = NameCond()
-						cond.param = m.groups()[0]
-						cond.op = m.groups()[1]
-						cond.val = m.groups()[2]
-						cond.path = int(m.groups()[3])
-						cond.text = m.groups()[4]
-						if cond.path not in curreff.descrconds:
-							curreff.descrconds[cond.path] = {}
-						if currPriority not in curreff.descrconds[cond.path]:
-							curreff.descrconds[cond.path][currPriority] = []
-						curreff.descrconds[cond.path][currPriority].append(cond)
 						continue
 
 					if line.startswith("#descr"):
-						m = re.match('#descr\\W+([0-9]*)\\W+"(.*)"', line)
+						m = re.match('#descr\\W+(.*?)\\W+"(.*)"', line)
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #descr")
-						curreff.descriptions[int(m.groups()[0])] = m.groups()[1]
+						paths = fileparserutils.parsepathalias(m.groups()[0])
+						for path in utils.breakdownflagcomponents(paths):
+							curreff.descriptions[path] = m.groups()[1]
 						continue
 
 					if line.startswith("#pathskipchance"):
-						m = re.match('#pathskipchance\\W+([0-9]*)\\W+([0-9]*)', line)
+						m = re.match('#pathskipchance\\W+(.*?)\\W+([0-9]*)', line)
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #pathskipchance")
-						path = int(m.groups()[0])
-						skipchance = int(m.groups()[1])
-						curreff.pathskipchances[path] = skipchance
+						paths = fileparserutils.parsepathalias(m.groups()[0])
+						for path in utils.breakdownflagcomponents(paths):
+							skipchance = int(m.groups()[1])
+							curreff.pathskipchances[path] = skipchance
 						continue
 
 					if line.startswith("#name"):
-						m = re.match('#name\\W+([0-9]*)\\W+"(.*)"', line)
+						m = re.match('#name\\W+(.*?)\\W+"(.*)"', line)
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #name")
-						path = int(m.groups()[0])
-						if path not in curreff.names:
-							curreff.names[path] = []
-						curreff.names[path].append(m.groups()[1])
+						paths = fileparserutils.parsepathalias(m.groups()[0])
+						for path in utils.breakdownflagcomponents(paths):
+							if path not in curreff.names:
+								curreff.names[path] = []
+							curreff.names[path].append(m.groups()[1])
 						continue
 
 					if line.startswith("#end"):

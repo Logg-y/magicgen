@@ -104,11 +104,21 @@ def _selectFlag(flagpool, allowed):
 
 
 def breakdownflag(flag):
+    "Split a given bitflag into a list of exponents such that sum([2 ** x for x in breakdownflag(flag)]) == flag"
     n = 0
     out = []
     while 1:
         if 2 ** n > flag: return out
         if flag & 2 ** n: out.append(n)
+        n += 1
+
+def breakdownflagcomponents(flag):
+    "Split a given bitflag into a list of its components, such that sum(breakdownflag(flag)) == flag"
+    n = 0
+    out = []
+    while 1:
+        if 2 ** n > flag: return out
+        if flag & 2 ** n: out.append(2**n)
         n += 1
 
 

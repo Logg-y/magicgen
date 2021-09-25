@@ -4,6 +4,7 @@ import re
 from Entities import SpellModifier
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
+from . import fileparserutils
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
@@ -39,10 +40,7 @@ def readModifierFile(fp):
 
                 # Params to simply copy
                 for simple in modifier_params_int:
-                    m = re.match(f"#{simple}\\W+?([-0-9]*)\\W*$", line)
-                    if m is not None:
-                        pval = int(m.groups()[0])
-                        setattr(curreff, simple, pval)
+                    if fileparserutils.parsesimpleint(simple, line, curreff):
                         sorted = True
                         break
 
