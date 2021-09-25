@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 128
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -43,7 +43,7 @@
 #spelltype 2
 
 #paths 128
-#power -2
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -82,7 +82,7 @@
 #spelltype 2
 
 #paths 128
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -125,7 +125,7 @@
 #spelltype 2
 
 #paths 128
-#power -2
+#power -1
 
 -- various damage types
 #reqdamagingeffect 1
