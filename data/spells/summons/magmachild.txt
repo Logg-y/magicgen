@@ -56,7 +56,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 70
+#scalefatiguemult 10
 
 #scalerate 2
 #end
@@ -119,3 +119,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 50
 #end
+

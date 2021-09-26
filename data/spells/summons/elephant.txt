@@ -51,7 +51,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.8
-#scalefatiguemult 60
+#scalefatiguemult 20
 #pathperresearch 0.4
 
 #scalerate 2
@@ -109,3 +109,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
+

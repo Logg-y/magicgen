@@ -14,7 +14,7 @@ def parseschool(alias):
     ret = 0
     for component in components:
         if component in longform:
-            ret += longform[component]
+            ret |= longform[component]
         else:
             try:
                 ret += int(component)
@@ -38,7 +38,7 @@ def parsepathalias(alias):
         if char not in shortformchars:
             isshortform = False
             break
-        ret += shortformchars[char]
+        ret |= shortformchars[char]
     if isshortform:
         print(f"Shortform paths: {alias} -> {ret}")
         return ret
@@ -47,10 +47,10 @@ def parsepathalias(alias):
     ret = 0
     for component in components:
         if component in shortformchars:
-            ret += shortformchars[component]
+            ret |= shortformchars[component]
         else:
             if component in longform:
-                ret += longform[component]
+                ret |= longform[component]
             else:
                 try:
                     ret += int(component)

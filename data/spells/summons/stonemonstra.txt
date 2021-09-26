@@ -2,11 +2,11 @@
 #effect 10001
 #damage 542
 #spec 8388608
-#power 7
-#maxpower 14
-#nreff 1
+#power 5
+#maxpower 20
+#nreff 2
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 400
 #schools 8
 
 #paths 8
@@ -19,10 +19,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 200
+#scalefatigueexponent -1.9
+#scalefatiguemult 50
 
-#scalerate 4
+#scalerate 1.5
+#pathperresearch 0.4
 #end
 
 #neweffect "stonemonstra Remote Assassination"
@@ -41,7 +42,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "NAMEPREFIX Stone Monstra Ambush"
+#name 8 "NAMEPREFIX Stone Monstra $Ambush$"
 #descr 8 "The caster forms stone in a distant province into a large winged monster and enchants it to attack an enemy commander. The victim will not know who cast this on them, and the monstra crumbles to duet if not destroyed in the encounter."
 
 #spelltype 4
@@ -57,7 +58,7 @@
 #maxpower 15
 #nreff 1
 #pathlevel 4
-#fatiguecost 1000
+#fatiguecost 700
 #schools 8
 
 #skipchance 99.6
@@ -75,3 +76,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 150
 #end
+
+

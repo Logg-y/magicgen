@@ -49,7 +49,7 @@
 #skipchance 60
 
 #scalefatigueexponent -1.7
-#scalefatiguemult 40
+#scalefatiguemult 20
 #pathperresearch 0.4
 
 #scalerate 2
@@ -107,3 +107,5 @@
 
 #scalerate 1
 #end
+
+

@@ -10,7 +10,7 @@
 #fatiguecost 120
 #scalefatiguemult 20
 #scalefatigueexponent -1.6
-#pathperresearch 0.4	
+#pathperresearch 0.4
 
 #sound 31
 #schools 1
@@ -38,7 +38,7 @@
 #pathlevel 3
 #fatiguecost 920
 #scalefatigueexponent -1.8
-#scalefatiguemult 110
+#scalefatiguemult 35
 #scalerate 2
 #schools 1
 
@@ -105,3 +105,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
+

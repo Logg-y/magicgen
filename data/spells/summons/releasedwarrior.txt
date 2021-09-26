@@ -8,7 +8,7 @@
 #nreff 3
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 7
+#scalefatiguemult 12
 #sound 31
 #schools 16
 
@@ -18,25 +18,27 @@
 
 #skipchance 80
 
-#name 32 "Animate NAMEPREFIX Ancient Bones"
-#name 8 "Animate NAMEPREFIX Ancient Bones"
+#name 32 "$Animate$ NAMEPREFIX Ancient Bones"
+#name 8 "$Animate$ NAMEPREFIX Ancient Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 #descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 
 #spelltype 528
 
-#scalerate 0.75
+#scalerate 1.2
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "releasedwarrior ritual"
 #effect 10001
 #damage 2524
 #spec 8388608
-#power 6
+#power 5
 #maxpower 14
-#nreff 1004
-#pathlevel 5
-#fatiguecost 500
+#nreff 1002
+#pathlevel 3
+#fatiguecost 300
 #schools 16
 
 #paths 40
@@ -45,17 +47,18 @@
 
 #skipchance 60
 
-#name 32 "Animate NAMEPREFIX Ancient Bones"
-#name 8 "Animate NAMEPREFIX Ancient Bones"
+#name 32 "$Animate$ NAMEPREFIX Ancient Bones"
+#name 8 "$Animate$ NAMEPREFIX Ancient Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 #descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 90
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
 
-#scalerate 2
+#scalerate 2.5
+#pathperresearch 0.4
 #end
 
 #neweffect "releasedwarrior Remote Assassination"
@@ -75,8 +78,8 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#name 32 "NAMEPREFIX Ancient Bones Attack"
-#name 8 "NAMEPREFIX Ancient Bones Attack"
+#name 32 "NAMEPREFIX Ancient Bones $ambush$"
+#name 8 "NAMEPREFIX Ancient Bones $ambush$"
 #descr 32 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
 #descr 8 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
 
@@ -93,7 +96,7 @@
 #maxpower 14
 #nreff 1003
 #pathlevel 5
-#fatiguecost 900
+#fatiguecost 700
 #schools 16
 
 #skipchance 99.6
@@ -102,8 +105,8 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#name 32 "Send NAMEPREFIX Ancient Bones"
-#name 8 "Send NAMEPREFIX Ancient Bones"
+#name 32 "$Send$ NAMEPREFIX Ancient Bones"
+#name 8 "$Send$ NAMEPREFIX Ancient Bones"
 #descr 32 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 #descr 8 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
 
@@ -114,3 +117,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 50
 #end
+
+
+

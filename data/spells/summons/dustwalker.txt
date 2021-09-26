@@ -56,7 +56,7 @@
 
 #scalefatigueexponent -1.6
 #pathperresearch 0.4
-#scalefatiguemult 40
+#scalefatiguemult 17
 
 #scalerate 2
 #end
@@ -119,3 +119,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 65
 #end
+

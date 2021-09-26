@@ -2,12 +2,12 @@
 #effect 1
 #damage 1940
 #spec 0
-#power 6
+#power 5
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 4
-#fatiguecost 60
+#nreff 3
+#pathlevel 3
+#fatiguecost 110
 --#scalefatiguemult 20
 #explspr 10232
 #sound 31
@@ -21,10 +21,12 @@
 
 #spelltype 528
 
-#scalerate 0.85
+#scalerate 2
 -- #scalecost 1.0
 #schools 16
 #skipchance 97
+#scalefatiguemult 12
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "zmey ritual"
@@ -33,8 +35,8 @@
 #spec 0
 #power 5
 #maxpower 14
-#nreff 1
-#pathlevel 5
+#nreff 3
+#pathlevel 3
 #fatiguecost 300
 #schools 1
 
@@ -47,10 +49,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 180
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
 
 #scalerate 2
+#pathperresearch 0.4
 #end
 
 #neweffect "zmey Remote Assassination"
@@ -104,3 +107,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
+
+

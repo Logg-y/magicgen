@@ -22,6 +22,7 @@
 #scalerate 1
 #scalefatiguemult 20
 #skipchance 97
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "spinedevil ritual"
@@ -67,7 +68,7 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Summon NAMEPREFIX Spine %Devil%"
+#name 128 "NAMEPREFIX Spine %Devil% $ambush$"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss and sends it to ambush a hostile commander in a distant province. Spine devils have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 4
@@ -95,10 +96,11 @@
 #paths 128
 #secondarypaths 128
 
-#name 128 "Send NAMEPREFIX Spine %Devil%"
+#name 128 "$Send$ NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss and sends them to attack a distant province. Spine devils have venomous claws and poisonous barbs that may impale those that strike them."
 
 #spelltype 20
 
 #scalerate 1
 #end
+

@@ -11,8 +11,8 @@
 #sound 31
 #schools 1
 
-#paths 1 
-#secondarypaths 1 
+#paths 1
+#secondarypaths 1
 #scalefatiguemult 13
 #scalefatigueexponent -1.6
 #skipchance 80
@@ -37,8 +37,8 @@
 #fatiguecost 900
 #schools 1
 
-#paths 1 
-#secondarypaths 1 
+#paths 1
+#secondarypaths 1
 
 
 #skipchance 80
@@ -49,8 +49,8 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 100
+#scalefatigueexponent -1.7
+#scalefatiguemult 15
 
 #scalerate 2
 #end
@@ -69,8 +69,8 @@
 #skipchance 99
 
 #details "The elementals are size 3."
-#paths 1 
-#secondarypaths 1 
+#paths 1
+#secondarypaths 1
 #nogeodst 2052
 
 #name 1 "NAMEPREFIX Lesser Fire Attack"
@@ -95,8 +95,8 @@
 
 #skipchance 99.6
 
-#paths 1 
-#secondarypaths 1 
+#paths 1
+#secondarypaths 1
 
 #details "The elementals are size 3."
 #name 1 "Send Fire Elementals"
@@ -109,3 +109,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 55
 #end
+

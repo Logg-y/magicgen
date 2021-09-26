@@ -36,7 +36,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#schools 32
+#schools ench+thaum
 
 #paths 64
 #secondarypaths 0
@@ -58,7 +58,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#schools 32
+#schools ench+thaum
 
 #paths 16
 #secondarypaths 0
@@ -66,6 +66,29 @@
 
 #name 16 "Divine Name"
 #descr 16 "The caster inscribes a divine name on a piece of paper and places it in the head of a mindless being. The being is gifted with an artificial mind and commanding abilities. The caster can also inscribe the name on the forehead of a willing target, increasing his mental faculties and making him a commander."
+
+#spelltype 4
+#end
+
+#neweffect "Divine Name Undead"
+#copyspell "Divine Name"
+#effect 10039
+#damage 1
+#spec 8388608+8+268435456
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools ench+thaum
+
+#paths d
+#secondarypaths 0
+#secondarypathchance 0
+
+#name d "Inspiration of Unlife"
+#descr d "The necromancer fills an undead being with the knowledge and experience of the dead. The designated creature becomes a commander."
+#details "This spell may only target undead, including mindless undead."
 
 #spelltype 4
 #end

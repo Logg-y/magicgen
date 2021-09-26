@@ -35,11 +35,11 @@
 #effect 10001
 #damage -2
 #spec 8388608
-#power 1
-#maxpower 14
+#power 0
+#maxpower 4
 #nreff 3004
 #pathlevel 1
-#fatiguecost 300
+#fatiguecost 120
 #schools 16
 
 #skipchance 60
@@ -52,8 +52,11 @@
 
 #spelltype 20
 
-#scalerate 2
-#scalefatiguemult 7
+#scalerate 3
+#scalefatiguemult 5
+#siegepatrolchaff 1
+#scalefatigueexponent 0.5
+#pathperresearch 0.4
 #end
 
 -- NOT USABLE because it says "suddenly a huge om these attacks. appeared out of nowhere and attacked..."
@@ -70,15 +73,15 @@
 -- #fatiguecost 300
 -- #schools 16
 -- #skipchance 80
--- 
+--
 -- #paths 32
 -- #secondarypaths 32
--- 
+--
 -- #name 32 "Attack of the Dead"
 -- #descr 32 "The caster enchants the bones of the long dead in a distant province, then sends them to ambush a commander found there. "
--- 
+--
 -- #spelltype 4
--- 
+--
 -- #scalerate 0.7
 -- #end
 
@@ -107,3 +110,5 @@
 #scalerate 2.0
 #scalefatiguemult 4
 #end
+
+
