@@ -87,7 +87,7 @@ def rollspells(**options):
         options["nationlist"] = list(map(lambda x: int(x.strip()), options["nationlist"]))
 
 
-    with open("log.txt", "w") as logfile:
+    with open("log.txt", "w", encoding="u8") as logfile:
         sys.stdout = logfile
         with open("data/spells.csv", "r") as f:
             r = csv.DictReader(f, delimiter="\t")

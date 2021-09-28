@@ -18,7 +18,7 @@
 #skipchance 97
 
 #name 64 "$conjure$ NAMEPREFIX Lamias"
-#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an impressive rate."
+#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an incredible rate."
 
 #spelltype 528
 
@@ -42,7 +42,7 @@
 #secondarypaths 64
 
 #name 64 "$Summon$ NAMEPREFIX Lamias"
-#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an impressive rate."
+#descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an incredible rate."
 
 #spelltype 20
 
