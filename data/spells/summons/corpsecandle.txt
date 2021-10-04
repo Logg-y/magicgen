@@ -1,0 +1,156 @@
+#neweffect "Summon corpsecandle"
+#effect 1
+#damage 528
+#spec 0
+#power 2
+#maxpower 13
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 22
+#scalefatiguemult 0
+#sound 31
+#schools 1
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 90
+
+#skipchance 97
+
+#name 1 "$Conjure$ NAMEPREFIX Corpse %Candle%"
+#name 32 "$Conjure$ NAMEPREFIX Corpse %Candle%"
+#descr 1 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+#descr 32 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "corpsecandle ritual"
+#effect 10001
+#damage 528
+#spec 0
+#power 3
+#maxpower 6
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#schools 1
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 90
+
+#skipchance 97
+
+#name 1 "$Summon$ NAMEPREFIX Corpse %Candle%"
+#name 32 "$Summon$ NAMEPREFIX Corpse %Candle%"
+#descr 1 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+#descr 32 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#scalefatiguemult 27
+
+#scalerate 2
+#siegepatrolchaff 1
+
+#end
+
+#neweffect "corpsecandle chassis dummy"
+#effect 10001
+#damage 528
+#spec 0
+#power 0
+#maxpower 0
+#nreff 1
+#pathlevel 2
+#fatiguecost 10
+#schools -1
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 90
+
+#skipchance 97
+
+#name 1 "Summon NAMEPREFIX Corpse %Candle%"
+#name 32 "Summon NAMEPREFIX Corpse %Candle%"
+#descr 1 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+#descr 32 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#scalefatiguemult 27
+
+#scalerate 2
+#end
+
+#neweffect "corpsecandle Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 528
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 400
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 90
+
+#name 1 "NAMEPREFIX Corpse %Candle% $ambush$"
+#name 32 "NAMEPREFIX Corpse %Candle% $ambush$"
+#descr 1 "The caster summons ARTICLE corpse %candle% to ambush a commander in a distant land. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+#descr 32 "The caster summons ARTICLE corpse %candle% to ambush a commander in a distant land. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon corpsecandle"
+#effect 10038
+#provrange 4
+#damage 528
+#spec 0
+#power 5
+#maxpower 13
+#nreff 1004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 90
+
+#name 1 "$Send$ NAMEPREFIX Corpse %Candle%"
+#name 32 "$Send$ NAMEPREFIX Corpse %Candle%"
+#descr 1 "The caster summons ARTICLE corpse %candle% to attack a distant land. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+#descr 33 "The caster summons ARTICLE corpse %candle% to attack a distant land. They are tiny ethereal beings which are difficult to hit and will decay enemies."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end
+
+

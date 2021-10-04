@@ -1,0 +1,50 @@
+--#newmodifier "Minor Fast Casting"
+--
+---- any
+--#spelltype 0
+--
+--#power -1
+--
+--#aispellmod 10
+--#pathlevel 0
+--
+--#mult casttime 0.75
+--#mult fatiguecost 0.85
+--#req fatiguecost < 100
+--#skipchance 100
+--
+---- not ritual
+--#req spelltype !& 4
+--
+--#maxfinalfatiguecost 100
+--
+---- #descr "This spell is somewhat fast to cast."
+--
+--#end
+--
+--#newmodifier "Fast Casting"
+--
+---- any
+--#spelltype 0
+--
+--#power -1
+--#pathlevel 0
+--
+--#aispellmod 25
+--
+--#mult casttime 0.5
+--#mult fatiguecost 0.66
+--#req fatiguecost < 100
+--#skipchance 55
+--
+---- not ritual
+--#req spelltype !& 4
+--
+--#maxfinalfatiguecost 100
+--
+---- #descr "This spell is faster to cast than most other spells."
+--
+--#end
+
+
+

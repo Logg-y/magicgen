@@ -7,12 +7,12 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.5
 -- #scalecost 1.6
 
 #aoe 0
 #power 3
-#maxpower 9
+#maxpower 8
 #pathlevel 2
 #explspr 10023
 #sound 9
@@ -41,12 +41,13 @@
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of rage"
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of rage"
 
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "Mass Rage"
 #effect 11
 #damage 128
-#spec 25575424
+#spec 25313280
 #schools 32
 
 -- evo, battlefield allowed, scale aoe
@@ -56,12 +57,12 @@
 -- #scalecost 1.6
 
 #aoe 666
-#power 10
-#maxpower 10
-#pathlevel 7
+#power 9
+#maxpower 9
+#pathlevel 6
 #explspr 10023
 #sound 9
-#fatiguecost 400
+#fatiguecost 200
 #precision 100
 #range 5015
 
@@ -71,8 +72,8 @@
 #name 1 "NAMEPREFIX Mass Enrage"
 #name 64 "NAMEPREFIX Mass Enrage"
 
-#descr 1 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
-#descr 64 "The caster attempts to make all his enemies angry. This spell should cause massive infighting amongst the caster's enemies."
+#descr 1 "The caster attempts to make everyone on the battlefield angry. This spell should cause massive infighting amongst both armies."
+#descr 64 "The caster attempts to make everyone on the battlefield angry. This spell should cause massive infighting amongst both armies."
 #details "There is a 50% chance that enraged creatures direct attacks to any adjacent square, picked at random."
 
 #priority 1

@@ -17,6 +17,8 @@
 
 #mult fatiguecost 0.25
 
+#maxfinalfatiguecost 100
+
 #pathlevel 0
 #power -4
 

@@ -7,7 +7,7 @@
 #maxpower 6
 #precision 1
 #range 50
-#pathlevel 2
+#pathlevel 1
 #fatiguecost 20
 #explspr 10189
 #scalefatigueexponent 0
@@ -31,4 +31,5 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of tremors"
 #namecond range < 10 4 "NAMEPREFIX touch of tremors"
 
+#pathperresearch 0.4
 #end

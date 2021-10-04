@@ -45,6 +45,12 @@ class UnitMod(object):
         self.attributeforrandomunit = ""
         self.additionaldetails = None
         self._cache = {}
+    def compatibilityWithSpellEffect(self, spelleffect, tested=None):
+        if spelleffect.name in self._cache:
+            return self._cache[spelleffect.name]
+        retval = self.compatibility(spelleffect.getUnit(), tested)
+        self._cache[spelleffect.name] = retval
+        return retval
     def compatibility(self, unitobj, tested=None):
         if unitobj in self._cache:
             return self._cache[unitobj]

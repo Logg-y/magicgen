@@ -1,0 +1,149 @@
+#neweffect "Summon tiger"
+#effect 1
+#damage 1140
+#spec 0
+#power 2
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 20
+--#scalefatiguemult 10
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#aispellmod -40
+
+#skipchance 97
+
+#name 64 "$conjure$ NAMEPREFIX %Tiger%"
+#descr 64 "The caster summons ARTICLE %tiger%. Tigers attack with their teeth and claws."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+
+#neweffect "tiger chassis dummy"
+#effect 10001
+#damage 1140
+#spec 0
+#power 2
+#maxpower 2
+#nreff 1
+#pathlevel 3
+#fatiguecost 10
+#schools -1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX %Tiger%"
+#descr 64 "The caster summons ARTICLE %tiger%. Tigers attack with their teeth and claws."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 35
+
+#scalerate 4
+#end
+
+#neweffect "tiger ritual"
+#effect 10001
+#damage 1140
+#spec 0
+#power 3
+#maxpower 6
+#nreff 1003
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX %Tiger%"
+#descr 64 "The caster summons ARTICLE %tiger%. Tigers attack with their teeth and claws."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 15
+
+#scalerate 3
+#siegepatrolchaff 1
+#end
+
+#neweffect "tiger Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1140
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX %Tiger% $ambush$"
+#descr 64 "The caster summons ARTICLE %tiger% to attack a hostile commander in a distant province. Tigers attack with their teeth and claws."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote tiger"
+#effect 10038
+#provrange 4
+#damage 1140
+#spec 0
+#power 4
+#maxpower 14
+#nreff 1004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 20
+
+#name 64 "$Send$ NAMEPREFIX %Tiger%"
+#descr 64 "The caster summons ARTICLE %tiger% to attack a distant province. Tigers attack with their teeth and claws."
+
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+

@@ -65,7 +65,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "NAMEPREFIX Drain Life"
+#name 32 "NAMEPREFIX Consume Life"
 #descr 32 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
 
 #priority 1
@@ -143,7 +143,7 @@
 #secondarypaths 128
 #secondarypathchance 0
 
-#name 128 "NAMEPREFIX Leech Life"
+#name 128 "NAMEPREFIX Consume Blood"
 #descr 128 "The caster drains the life force of SUBJECT, adding it to his own health and endurance."
 
 #priority 1
@@ -166,7 +166,7 @@
 
 #scalerate 0.75
 -- #scalecost 1.6
-#skipchance 50
+#skipchance 70
 
 #aoe 666
 #power 7
@@ -181,7 +181,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#name 32 "NAMEPREFIX Drain Life"
+#name 32 "NAMEPREFIX Necromantic Drain"
 #descr 32 "The caster drains the life force of everyone on the battlefield, adding it to his own health and endurance."
 
 

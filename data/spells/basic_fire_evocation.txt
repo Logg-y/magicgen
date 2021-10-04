@@ -118,9 +118,9 @@
 #schools -1
 -- evo, scale aoe
 #spelltype 34
-#scalerate 2
+#scalerate 0
 #explspr 10257
-#aoe 2
+#aoe 10
 #power 1
 #name 1 "Area Heat Shock"
 #name 2 "Area Heat Shock"
@@ -140,7 +140,7 @@
 #spec 96
 #aoe 1
 #power 5
-#maxpower 14
+#maxpower 5
 #precision 1
 #range 100
 #pathlevel 2
@@ -170,9 +170,41 @@
 #end
 
 
+#neweffect "Fire Evo Pillar Multi"
+#effect 2
+#damage 2018
+#spec 96
+#aoe 1
+#power 6
+#maxpower 14
+#precision -8
+#nreff 5
+#scalefatigueexponent 1.2
+#range 100
+#pathlevel 3
+#fatiguecost 100
+#explspr 10242
+#sound 123
+
+#paths 1
+#secondarypaths 1
+#nextspell "Scaling Heat Shock"
+#name 1 "NAMEPREFIX Pillars of %$fire$%"
+#descr 1 "This spell creates huge columns of fire that strike from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
+
+-- evo-like, battlefield allowed, scale dmg
+#spelltype 18
+#scalerate 5
+-- #scalecost 0.3
+#schools 4
+
+#end
+
+
+
 #neweffect "Fire Evo 25pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 96
 #aoe 665
 #power 7
@@ -183,7 +215,7 @@
 #fatiguecost 200
 #explspr 10011
 #sound 123
-#skipchance 50
+#skipchance 80
 
 #paths 129
 #secondarypaths 1
@@ -210,7 +242,7 @@
 
 #neweffect "Fire Evo 50pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 96
 #aoe 663
 #power 8
@@ -221,7 +253,7 @@
 #fatiguecost 300
 #explspr 10011
 #sound 123
-#skipchance 50
+#skipchance 80
 
 #paths 129
 #secondarypaths 1
@@ -248,7 +280,7 @@
 
 #neweffect "Fire Evo 100pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 96
 #aoe 666
 #power 10
@@ -259,7 +291,7 @@
 #fatiguecost 400
 #explspr 10011
 #sound 123
-#skipchance 50
+#skipchance 80
 
 #paths 129
 #secondarypaths 1

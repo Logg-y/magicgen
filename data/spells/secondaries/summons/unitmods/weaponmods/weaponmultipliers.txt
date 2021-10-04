@@ -1,7 +1,7 @@
 #newweaponmod "DmgVsUndead"
 -- weapon not already AP or AN
-#req spec !& 64
-#req spec !& 128
+--#req spec !& 64
+--#req spec !& 128
 #setweaponmagic 1
 #req effect == 2
 #extracommand dt_holy
@@ -11,8 +11,8 @@
 
 #newweaponmod "DmgVsMagic"
 -- weapon not already AP or AN
-#req spec !& 64
-#req spec !& 128
+--#req spec !& 64
+--#req spec !& 128
 #setweaponmagic 1
 #req effect == 2
 #extracommand dt_magic
@@ -22,8 +22,8 @@
 
 #newweaponmod "DmgVsDemonsOnly"
 -- weapon not already AP or AN
-#req spec !& 64
-#req spec !& 128
+--#req spec !& 64
+--#req spec !& 128
 #setweaponmagic 1
 #req effect == 2
 #extracommand dt_demon

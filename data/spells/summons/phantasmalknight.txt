@@ -1,0 +1,134 @@
+#neweffect "Summon phantasmal knight"
+#effect 1
+#damage 696
+#spec 8388608
+#power 2
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 10
+#explspr 10275
+#sound 42
+#schools alt
+#aispellmod -50
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$conjure$ NAMEPREFIX Phantasmal $Knight$"
+#descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These knights are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
+
+#spelltype 528
+
+#scalerate 0.8
+--#scalefatiguemult 5
+#scalefatigueexponent -1.3
+#end
+
+
+#neweffect "Phantasmal knight chassis dummy"
+#effect 10001
+#damage 696
+#spec 8388608
+#power -1
+#maxpower -1
+#nreff 1
+#pathlevel 2
+#fatiguecost 15
+#schools -1
+#paths 2
+#secondarypaths 2
+
+#name 2 "Summon NAMEPREFIX Phantasmal $Knight$"
+#descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 8
+
+#scalerate 4
+#end
+
+#neweffect "Phantasmal knight ritual"
+#effect 10001
+#damage 696
+#spec 8388608
+#power 3
+#maxpower 7
+#nreff 4006
+#pathlevel 2
+#fatiguecost 300
+#schools alt
+#paths 2
+#secondarypaths 2
+
+#name 2 "$Summon$ NAMEPREFIX Phantasmal $Knight$"
+#descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 9
+
+#scalerate 4
+#siegepatrolchaff 1
+#end
+
+#neweffect "Phantasmal knight Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 696
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools alt
+#skipchance 99
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Phantasmal knight $ambush$"
+#descr 2 "Summons a phantasmal knight to ambush an enemy commander. This is very unlikely to succeed against anyone who can cast spells or wields magic weapons."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote phantasmal knight"
+#effect 10038
+#provrange 4
+#damage 696
+#spec 8388608
+#power 4
+#maxpower 9
+#nreff 4005
+#pathlevel 3
+#fatiguecost 600
+#schools alt
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 5
+
+#name 2 "$Send$ NAMEPREFIX Phantasmal Knights"
+#descr 2 "Summons a group of phantasmal knights to attack a distant province."
+
+#spelltype 20
+
+#scalerate 4
+#end
+
+

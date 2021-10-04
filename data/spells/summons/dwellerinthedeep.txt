@@ -1,0 +1,121 @@
+#neweffect "Summon Dweller-in-the-Deep"
+#effect 1
+#damage 628
+#spec 41959424
+#power 3
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Dweller-in-the-Deep"
+
+#skipchance 95
+
+#name 16 "$conjure$ NAMEPREFIX %Dweller%-in-the-Deep"
+#descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 12
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#end
+
+#neweffect "Dweller-in-the-Deep ritual"
+#effect 10001
+#damage 628
+#spec 41959424
+#power 3
+#maxpower 14
+#nreff 5
+#pathlevel 2
+#fatiguecost 420
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Dweller-in-the-Deep"
+
+#skipchance 97
+
+#name 16 "$Summon$ NAMEPREFIX %Dweller%-in-the-Deep"
+#descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#scalefatiguemult 10
+#newunit "Dweller-in-the-Deep"
+
+#scalerate 1
+#end
+
+#neweffect "Dweller-in-the-Deep Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 41959424
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#onlygeodst 2052
+
+#paths 16
+#secondarypaths 16
+#newunit "Dweller-in-the-Deep"
+
+#skipchance 99
+
+#name 16 "NAMEPREFIX %Dweller%-in-the-Deep $ambush$"
+#descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep to ambush a hostile commander in a distant province. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 4
+
+#end
+
+#neweffect "remoteDweller-in-the-Deep"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 41959424
+#power 5
+#maxpower 14
+#nreff 2001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#onlygeodst 2052
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 12
+#newunit "Dweller-in-the-Deep"
+
+#name 16 "$Send$ NAMEPREFIX %Dweller%-in-the-Deep"
+#descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep to attack a distant province. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 20
+
+#scalerate 2
+#end
+
+

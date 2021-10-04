@@ -16,7 +16,7 @@
 #maxpower 4
 #pathlevel 1
 #pathperresearch 0.1
-#explspr 10125
+#explspr 10108
 #precision 0
 #sound 27
 #fatiguecost 20

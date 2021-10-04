@@ -1,0 +1,112 @@
+#newmodifier "Fast Casting Summon"
+
+-- any
+#spelltype 0
+
+#power -2
+#pathlevel 0
+
+#aispellmod 25
+
+#req effect == 1
+
+#mult casttime 0.5
+#mult fatiguecost 0.66
+#req fatiguecost < 100
+#skipchance 55
+
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+-- #descr "This spell is faster to cast than most other spells."
+
+#end
+
+
+#newmodifier "Faster Casting summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 70
+
+#reqdamaging 0
+#pathlevel 0
+
+#power -3
+
+#mult fatiguecost 0.5
+#req effect == 1
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+
+#newmodifier "16pc cast summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 90
+#pathlevel 1
+
+#reqdamaging 0
+
+#power -4
+
+#mult fatiguecost 0.4
+-- not evo
+#req spelltype !& 2
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#req effect == 1
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+#newmodifier "Insanely Fast Casting Summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 120
+#pathlevel 1
+
+#reqdamaging 0
+
+-- not evo
+#req spelltype !& 2
+
+#power -5
+
+#mult fatiguecost 0.25
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#req effect == 1
+
+#end

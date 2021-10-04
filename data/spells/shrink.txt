@@ -1,6 +1,6 @@
 #neweffect "Shrinkage"
 #effect 11
-#damage 4294967296	
+#damage 4294967296
 #spec 8671232
 #schools 32
 
@@ -36,13 +36,14 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 
 
+#scalefatigueexponent 1.4
 #end
 
 
 
 #neweffect "Battlefield Shrinkage"
 #effect 11
-#damage 4294967296	
+#damage 4294967296
 #spec 25182208
 #schools 32
 
@@ -77,3 +78,4 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of shrinkage"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 #end
+

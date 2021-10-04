@@ -35,7 +35,7 @@
 #damage 677
 #spec 8388608
 #power 3
-#maxpower 10
+#maxpower 6
 #nreff 5
 #pathlevel 2
 #fatiguecost 500
@@ -55,7 +55,7 @@
 #scalefatiguemult 50
 #pathperresearch 0.45
 
-#scalerate 4
+#scalerate 3
 #end
 
 #neweffect "Apparition Remote Assassination"
@@ -108,3 +108,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
+

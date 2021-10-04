@@ -8,11 +8,11 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 2
 -- #scalecost 0.6
 
-#aoe 1003
-#power 0
+#aoe 0
+#power -2
 #pathlevel 1
 #explspr 10270
 #sound 31
@@ -33,5 +33,86 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
+#scalefatigueexponent 1.2
+#maxpower 3
+#pathperresearch 0.4
 #end
 
+
+#neweffect "Curse of Stones Battlefield mrne"
+#copyspell "Curse of Stones"
+#effect 11
+#damage 32
+#spec 25182208+262144
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 0.6
+
+#aoe 666
+#power 4
+#pathlevel 3
+#explspr 10270
+#sound 31
+#fatiguecost 100
+#range 5020
+
+#paths 8
+#secondarypaths 8
+
+#namecond effectiveaoe < 660 8 "NAMEPREFIX Burden of Earth"
+
+#namecond effectiveaoe >= 660 8 "NAMEPREFIX Curse of Stones"
+
+
+#descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
+#details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
+
+#scalefatigueexponent 1.2
+#maxpower 4
+#end
+
+#neweffect "Curse of Stones Battlefield Regular MR"
+#copyspell "Curse of Stones"
+#effect 11
+#damage 32
+#spec 16384+8388608+4096
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 0.6
+
+#aoe 666
+#power 6
+#pathlevel 4
+#explspr 10270
+#sound 31
+#fatiguecost 200
+#range 5020
+
+#paths 8
+#secondarypaths 8
+
+#namecond effectiveaoe < 660 8 "NAMEPREFIX Burden of Earth"
+
+#namecond effectiveaoe >= 660 8 "NAMEPREFIX Weight of the Earth"
+
+
+#descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
+#details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
+
+#scalefatigueexponent 1.2
+#maxpower 6
+#end

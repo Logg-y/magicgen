@@ -1,0 +1,111 @@
+#neweffect "Summon greatbear"
+#effect 1
+#damage 694
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 4
+#pathlevel 2
+#fatiguecost 120
+#scalefatiguemult 7.0
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$conjure$ NAMEPREFIX Great %Bear%"
+#descr 64 "The caster summons ARTICLE great %bear%. These bears are mighty but unskilled, and are vulnerable to magic."
+#aispellmod -40
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "greatbear ritual"
+#effect 10001
+#damage 694
+#spec 0
+#power 3
+#maxpower 8
+#nreff 5
+#pathlevel 2
+#fatiguecost 520
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX Great %Bear%"
+#descr 64 "The caster summons ARTICLE great %bear%. These bears are mighty but unskilled, and are vulnerable to magic."
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+#pathperresearch 0.4
+
+#scalerate 1.5
+#end
+
+#neweffect "greatbear Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 694
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Great %Bear% $ambush$"
+#descr 64 "The caster summons ARTICLE great %bear% to attack a hostile commander in a distant province. These bears are mighty but unskilled, and are vulnerable to magic."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon greatbear"
+#effect 10038
+#provrange 4
+#damage 694
+#spec 0
+#power 5
+#maxpower 14
+#nreff 2003
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "$Send$ NAMEPREFIX Great %Bear%"
+#descr 64 "The caster summons ARTICLE great %bear% to attack a distant province. These bears are mighty but unskilled, and are vulnerable to magic."
+
+#spelltype 20
+
+#scalerate 3
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 17
+#end
+
+
+

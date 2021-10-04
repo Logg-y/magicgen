@@ -23,11 +23,13 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
+#scalerate 1.5
 -- #scalecost 0.3
 #schools 32
 
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX touch of undead unraveling"
 #namecond range < 10 32 "NAMEPREFIX touch of withering bones"
+#scalefatigueexponent 1.3
+#pathperresearch 0.4
 #end

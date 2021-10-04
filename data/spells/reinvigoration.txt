@@ -14,6 +14,7 @@
 #power 1
 #maxpower 1
 #pathlevel 1
+#alwaysgenerate 1
 #explspr 10172
 #sound 31
 #range 0

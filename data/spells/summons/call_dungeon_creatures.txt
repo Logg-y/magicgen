@@ -1,0 +1,28 @@
+#neweffect "Call Dungeon Creatures"
+
+#effect 43
+#damage -14
+#spec 0
+#power 4
+#maxpower 16
+#precision -2
+#nreff 3
+#pathlevel 3
+#fatiguecost 120
+#sound 43
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Unearth Dungeon"
+#descr 8 "The caster seeks out and opens nearby dungeons, calling the monsters within to his location. The monsters are not happy to be coerced into battle in this way and will return to their homes once the battle is over."
+
+#spelltype 528
+
+#scalerate 1.6
+#scalefatiguemult 8.0
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#skipchance 90
+#end

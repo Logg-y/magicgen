@@ -7,7 +7,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 4
+#scalerate 3
 -- #scalecost 0.6
 
 #aoe 0
@@ -16,7 +16,7 @@
 #explspr 10203
 #sound 16
 #fatiguecost 20
-#range 5025
+#range 5020
 
 #paths 129
 #secondarypaths 1
@@ -38,5 +38,89 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of imprisonment"
 #namecond range < 10 1 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
+#scalefatigueexponent 1.2
+#maxpower 6
 #end
+
+#neweffect "Bonds of Fire Battlefield"
+#effect 11
+#damage 65536
+#spec 16416 + 4096
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 7
+#pathlevel 4
+#explspr 10203
+#sound 16
+#fatiguecost 200
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#details "Trying to escape requires a morale check vs 21. Failure results in 3AN fire damage."
+
+#namecond effectiveaoe == 0 1 "NAMEPREFIX $Fetters$ of Fire"
+#namecond effectiveaoe == 0 128 "NAMEPREFIX $Fetters$ from Inferno"
+
+#namecond effectiveaoe > 0 1 "NAMEPREFIX Burning Imprisonment"
+#namecond effectiveaoe > 0 128 "NAMEPREFIX Infernal Chains"
+
+#descr 1 "Shackles of fire trap everyone on the battlefield. Escaping requires high morale, and succeeding results in severe burns."
+#descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap everyone on the battlefield. Escaping requires high morale, and succeeding results in severe burns."
+#details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#scalefatigueexponent 1.2
+#maxpower 7
+#end
+
+#neweffect "Bonds of Fire Battlefield Hostile Only"
+#effect 11
+#damage 65536
+#spec 16416 + 4096 + 262144
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 9
+#pathlevel 5
+#explspr 10203
+#sound 16
+#fatiguecost 300
+#range 5020
+#skipchance 70
+
+#paths 129
+#secondarypaths 1
+
+#details "Trying to escape requires a morale check vs 21. Failure results in 3AN fire damage."
+
+#namecond effectiveaoe == 0 1 "NAMEPREFIX $Fetters$ of Fire"
+#namecond effectiveaoe == 0 128 "NAMEPREFIX $Fetters$ from Inferno"
+
+#namecond effectiveaoe > 0 1 "NAMEPREFIX Imprison Foes"
+#namecond effectiveaoe > 0 128 "NAMEPREFIX Chain Foes"
+
+#descr 1 "Shackles of fire entangle all of the caster's enemies. Escaping requires high morale, and succeeding results in severe burns."
+#descr 128 "$BLOOD_INTRO$, shackles of Infernal fire all of the caster's enemies. Escaping requires high morale, and succeeding results in severe burns."
+#details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#scalefatigueexponent 1.2
+#maxpower 9
+#end
+
+
+
 

@@ -40,6 +40,8 @@ class SpellSecondaryEffect(object):
 
         self.reqdamagingeffect = None
         self.minfinalaoe = None
+        self.maxfinalfatiguecost = None
+        self.minfinalfatiguecost = None
 
         self.nobattlefield = False
         self.nextspell = ""
@@ -90,11 +92,6 @@ class SpellSecondaryEffect(object):
                 if self.unitmod in unitmodlist:
                     return True
 
-        # Check reqs to begin with
-        for r in self.reqs:
-            if not r.test(eff):
-                return False
-
         if self.nextspell != "" and eff.noadditionalnextspells > 0:
             return False
 
@@ -122,14 +119,16 @@ class SpellSecondaryEffect(object):
                 thispower = self.calcModifiedPowerForSpellEffect(eff)
                 finalpower = researchlevel + thispower + modifier.power
 
+
         if eff.isnextspell and self.name != "Do Nothing":
             return False
+
         # do not give nextspells secondary effects as they don't respect the path requirements the way the main spell does
         # oh and it could chain to ridiculous levels like "add a set on fire effect" "add an entangle to that set on fire" etc etc etc
 
         okay = self.paths == 0
-        for flag in PathFlags:
-            if self.paths & flag and (eff.paths & flag):
+        for flag in utils.breakdownflagcomponents(self.paths):
+            if (eff.paths & flag):
                 okay = True
                 break
         if not okay:
@@ -139,8 +138,13 @@ class SpellSecondaryEffect(object):
             if 660 <= eff.aoe <= 670:
                 return False
 
-        for flag in SpellTypes:
-            if self.spelltype & flag and not (eff.spelltype & flag):
+        for flag in utils.breakdownflagcomponents(self.spelltype):
+            if not (eff.spelltype & flag):
+                return False
+
+        # Check #reqs
+        for r in self.reqs:
+            if not r.test(eff):
                 return False
 
         # Make sure that various things cannot be pushed out of range
@@ -181,13 +185,14 @@ class SpellSecondaryEffect(object):
                 return False
 
         if self.unitmod != "":
-            u = eff.getUnit()
             umod = unitmods[self.unitmod]
-            if not umod.compatibility(u):
+            if not umod.compatibilityWithSpellEffect(eff):
                 return False
 
-        scaleamt = eff.scalerate * ((finalpower * (finalpower + 1)) / 2)
-        finalaoe = (eff.aoe % 1000) + scaleamt
+        extraresearch = finalpower - researchlevel
+        scaleamt = eff.scalerate * ((extraresearch * (extraresearch + 1)) / 2)
+        if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
+            finalaoe = (eff.aoe % 1000) + scaleamt
 
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
@@ -226,11 +231,66 @@ class SpellSecondaryEffect(object):
                     return False
                 break
 
+        # Modifiers cannot check this including the secondary as well, this is
+        # because modifiers come first: secondaries need to also check the modifier value
+        maxfinalfatiguecost = self.maxfinalfatiguecost
+        if modifier.maxfinalfatiguecost is not None:
+            if self.maxfinalfatiguecost is None:
+                maxfinalfatiguecost = modifier.maxfinalfatiguecost
+            else:
+                maxfinalfatiguecost = min(modifier.maxfinalfatiguecost, self.maxfinalfatiguecost)
+
+        minfinalfatiguecost = self.minfinalfatiguecost
+        if modifier.minfinalfatiguecost is not None:
+            if self.minfinalfatiguecost is None:
+                minfinalfatiguecost = modifier.minfinalfatiguecost
+            else:
+                minfinalfatiguecost = max(modifier.minfinalfatiguecost, self.minfinalfatiguecost)
+
+        if maxfinalfatiguecost is not None or minfinalfatiguecost is not None:
+            scaleamt = scaleamt * (eff.scalecost + self.scalecost + modifier.scalecost)
+            finalfatigue = eff.fatiguecost
+            fatiguefromresearch = 10 * extraresearch
+            scaleexponent = self.scalefatigueexponent + eff.scalefatigueexponent + modifier.scalefatigueexponent
+            exponentcomponent = scaleamt ** abs(scaleexponent)
+            finalfatigue += fatiguefromresearch
+            if scaleexponent >= 0.0:
+                finalfatigue += exponentcomponent
+            else:
+                finalfatigue -= exponentcomponent
+            finalfatigue = math.floor(finalfatigue)
+
+            for attrib, mult in self.multcommands:
+                if attrib == "fatiguecost":
+                    finalfatigue *= mult
+            for attrib, mult in modifier.multcommands:
+                if attrib == "fatiguecost":
+                    finalfatigue *= mult
+            finalnreff = eff.nreff
+
+            finalfatigue += (scaleamt * eff.scalefatiguemult)
+
+            if eff.spelltype & SpellTypes.POWER_SCALES_NREFF:
+                finalnreff += scaleamt
+            finalfatigue += (finalnreff * (self.fatiguecostpereffect))
+
+            # blood gets doubled
+            # (this will unfortunately miss blood versions of other paths' spells, but alas)
+            if eff.paths == 128:
+                finalfatigue *= 2
+
+            if maxfinalfatiguecost is not None and finalfatigue >= maxfinalfatiguecost:
+                print(f"maxfinalfatiguecost of {finalfatigue} too high (vs {maxfinalfatiguecost})")
+                return False
+            if minfinalfatiguecost is not None and finalfatigue < minfinalfatiguecost:
+                print(f"minfinalfatiguecost of {finalfatigue} too low (vs {maxfinalfatiguecost})")
+                return False
+
+
         if self.minfinalaoe is not None:
             if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
                 finalaoe = eff.aoe % 1000 + (eff.aoe // 1000 * eff.pathlevel)
-                effectivepower = researchlevel - eff.power - modifier.power - self.power
-                finalaoe += round(eff.scalerate * ((effectivepower*(effectivepower+1))/2), 0)
+                finalaoe += round(eff.scalerate * ((extraresearch*(extraresearch+1))/2), 0)
             else:
                 finalaoe = eff.aoe
             if finalaoe < self.minfinalaoe:

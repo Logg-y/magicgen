@@ -1,0 +1,111 @@
+#neweffect "Summon bukavac"
+#effect 1
+#damage 1948
+#spec 41943040
+#power 6
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+#scalefatiguemult 12
+#pathperresearch 0.4
+#scalefatigueexponent -1.2
+
+#name 4 "$conjure$ NAMEPREFIX %Bukavac%"
+#descr 4 "The caster summons forth ARTICLE %bukavac%. The bukavac is a large sea monster from Rus that tramples its enemies."
+
+#spelltype 528
+
+#scalerate 1
+#end
+
+#neweffect "bukavac ritual"
+#effect 10001
+#damage 1948
+#spec 41943040
+#power 5
+#maxpower 14
+#nreff 1
+#pathlevel 4
+#fatiguecost 320
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+
+#name 4 "$Summon$ NAMEPREFIX %Bukavac%"
+#descr 4 "The caster summons forth ARTICLE %bukavac%. The bukavac is a large sea monster from Rus that tramples its enemies."
+
+#spelltype 20
+
+#scalefatigueexponent -1.66
+#scalefatiguemult 20
+#pathperresearch 0.4
+
+#scalerate 1
+#end
+
+#neweffect "bukavac Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1948
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 900
+#schools 1
+#skipchance 99
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Bukavac $ambush$"
+#descr 4 "The caster summons forth a bukavac to attack a hostile commander in a distant province. The bukavac is a large sea monster from Rus that tramples its enemies. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon bukavac"
+#effect 10038
+#provrange 4
+#damage 1948
+#spec 8388608
+#power 6
+#maxpower 16
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 1
+#onlygeodst 2052
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "$Send$ NAMEPREFIX Bukavacs"
+#descr 4 "The caster summons forth Bukavacs to attack a distant province. The bukavac is a large sea monster from Rus that tramples its enemies."
+
+#spelltype 20
+
+#scalerate 1.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 160
+#end
+
+

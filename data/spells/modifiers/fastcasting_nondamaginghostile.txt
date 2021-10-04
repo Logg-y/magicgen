@@ -1,0 +1,102 @@
+
+#newmodifier "Fast Casting nondamaging hostile"
+
+#spelltype 2
+
+#power -1
+#pathlevel 0
+
+#reqdamaging 0
+
+#aispellmod 25
+
+#mult casttime 0.5
+#mult fatiguecost 0.66
+#req fatiguecost < 100
+#skipchance 55
+
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+-- #descr "This spell is faster to cast than most other spells."
+
+#end
+
+
+
+
+
+#newmodifier "Faster Casting Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aispellmod 70
+#pathlevel 0
+
+#reqdamaging 0
+
+#power -2
+
+#mult fatiguecost 0.33
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+#newmodifier "16pc cast Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aispellmod 90
+#pathlevel 1
+
+#reqdamaging 0
+
+#power -3
+
+#mult fatiguecost 0.3
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+#newmodifier "Insanely Fast Casting Nondamaging Hostile"
+
+-- any
+#spelltype 2
+
+#aispellmod 120
+#pathlevel 1
+
+#reqdamaging 0
+
+#power -4
+
+#mult fatiguecost 0.17
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end

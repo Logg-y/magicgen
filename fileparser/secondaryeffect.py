@@ -10,7 +10,7 @@ from . import fileparserutils
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",
                         "fatiguecostpereffect", "anysummon", "offensiveeffect", "reqdamagingeffect", "spec", "ondamage",
-                        "aispellmod", "requiredresearchlevel", "minfinalaoe"]
+                        "aispellmod", "requiredresearchlevel", "minfinalaoe", "maxfinalfatiguecost", "minfinalfatiguecost"]
 secondary_params_str = ["nextspell", "unitmod", "details"]
 secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"
                           , "fatiguepersquare"]

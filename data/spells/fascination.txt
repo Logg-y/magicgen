@@ -7,9 +7,9 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 4.3
+#scalerate 3
 -- #scalecost 0.6
-#scalefatigueexponent 0.2
+#scalefatigueexponent 1
 
 #aoe 0
 #power -1
@@ -36,6 +36,82 @@
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of fascination"
 #namecond range < 10 64 "NAMEPREFIX touch of fascination"
+
+#pathperresearch 0.4
+
+#end
+
+#neweffect "Fascination Battlefield"
+#effect 128
+#damage 100
+#spec 8540288
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+#scalefatigueexponent 1
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10207
+#sound 42
+#fatiguecost 200
+#range 5010
+
+#paths 64
+#secondarypaths 64
+
+
+#aispellmod -60
+
+#namecond effectiveaoe < 666 64 "NAMEPREFIX Fascination"
+
+#namecond effectiveaoe >= 666 64 "NAMEPREFIX Fascinate Army"
+
+#descr 64 "The caster tries to project images and scents in the consciousness of everyone on the battlefield. Those affected by the spell will be distracted for a short while and hopefully enable someone to strike the enemy down."
+#details "Those that fail to resist are stunned for a round."
+
+#end
+
+#neweffect "Fascination Battlefield Hostile Only"
+#effect 128
+#damage 100
+#spec 8540288+262144
+#schools 32
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+#scalefatigueexponent 1
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 5
+#explspr 10207
+#sound 42
+#fatiguecost 300
+#range 5010
+
+#paths 64
+#secondarypaths 64
+
+
+#aispellmod -60
+
+#namecond effectiveaoe < 666 64 "NAMEPREFIX Fascination"
+
+#namecond effectiveaoe >= 666 64 "NAMEPREFIX Curse of Fascination"
+
+#descr 64 "The caster tries to project images and scents in the consciousness of all his enemies. Those affected by the spell will be distracted for a short while and hopefully enable someone to strike the enemy down."
+#details "Those that fail to resist are stunned for a round."
 
 #end
 
@@ -78,4 +154,5 @@
 #namecond range < 10 64 "NAMEPREFIX touch of dazzling colours"
 
 #end
+
 

@@ -1,0 +1,109 @@
+#neweffect "Summon seaserpent"
+#effect 1
+#damage 565
+#spec 41959424
+#power 4
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 97
+
+#name 4 "$conjure$ NAMEPREFIX Sea %Serpent%"
+#descr 4 "The caster summons ARTICLE sea %serpent% to fight for him. Sea serpents are large and have venomous fangs."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatiguemult 10
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "seaserpent ritual"
+#effect 10001
+#damage 565
+#spec 41959424
+#power 3
+#maxpower 7
+#nreff 1001
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 97
+
+#name 4 "$Summon$ NAMEPREFIX Sea %Serpent%"
+#descr 4 "The caster summons ARTICLE sea %serpent% to fight for him. Sea serpents are large and have venomous fangs."
+
+#spelltype 20
+
+#scalefatigueexponent -1.5
+#scalefatiguemult 13
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "seaserpent Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 565
+#spec 8404992
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#onlygeodst 2052
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Sea %Serpent% $ambush$"
+#descr 4 "The caster summons ARTICLE sea %serpent% to attack a hostile commander in a distant land. Sea serpents are large and have venomous fangs."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon seaserpent"
+#effect 10038
+#provrange 4
+#damage 565
+#spec 8404992
+#power 5
+#maxpower 15
+#nreff 1001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#onlygeodst 2052
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "$Send$ NAMEPREFIX Sea %Serpent%"
+#descr 4 "The caster summons ARTICLE sea %serpent% to attack a distant land. Sea serpents are large and have venomous fangs."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end
+
+

@@ -22,7 +22,70 @@
 #alwaysgenerate 1
 
 
-#paths 255
+#paths fawesdn
+#secondarypaths 1
+
+
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Focusing Pyre"
+#namecond effectiveaoe >= 1 1 "NAMEPREFIX Focusing Pyre"
+#descr 1 "SUBJECT lights ARTICLE magical %fire%, which can burn even when underwater. The %pyre% may be used as ARTICLE mental %focus% for other mages, allowing those controlling the %pyre% to harness the magical powers of the %one% focusing."
+
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Listener of Wind"
+#namecond effectiveaoe >= 1 2 "NAMEPREFIX Listeners of Winds"
+#descr 2 "Attunes SUBJECT to the surrounding air, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the atmosphere above."
+
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Sense the Waters"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Sensations of Water"
+#descr 4 "Attunes SUBJECT to surrounding water and water vapour, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the liquids of their surroundings."
+
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Spirit Nexus"
+#namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Nexus"
+#descr 32 "By connecting with the spirits of the dead, SUBJECT may harness the magical power of those who surrender themselves to the spirits."
+
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Focus of Gaia"
+#namecond effectiveaoe >= 1 64 "NAMEPREFIX Focus of Gaia"
+#descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT may harness the magical power of those who surrender themselves to the presence."
+
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Reader of Earth"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Communion Master"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Sabbath Master"
+
+
+#namecond effectiveaoe >= 1 8 "NAMEPREFIX Readers of Earth"
+#namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Masters"
+#namecond effectiveaoe >= 1 128 "NAMEPREFIX Sabbath Masters"
+
+#details "Grants communion master."
+
+#descr 8 "Connects SUBJECT to the Earth, allowing PRONOUN to harness the magical powers of those who have surrendered their minds to the land below."
+#descr 16 "Connects SUBJECT to the communion, allowing them to harness powers from the minds of their communion slaves."
+#descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
+
+#end
+
+#neweffect "Communion Master Blood Only"
+#effect 10
+#damage 536870912
+#spec 8404992
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 1
+
+#aoe 0
+#power 1
+#maxpower 2
+#pathlevel 1
+#explspr 10274
+#sound 31
+#range 10
+#fatiguecost 20
+#extraspell "Communion Slave"
+
+#paths b
 #secondarypaths 1
 
 

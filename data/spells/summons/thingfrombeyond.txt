@@ -1,0 +1,118 @@
+#neweffect "Summon thing from beyond"
+#effect 1
+#damage 514
+#spec 8388608
+#power 3
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Thing from Beyond"
+
+#skipchance 97
+
+#name 16 "$conjure$ NAMEPREFIX %Thing% from Beyond"
+#descr 16 "The caster summons ARTICLE %thing% from beyond to fight for him. Things from beyond are strange otherworldly creatures that blast their foes' minds."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 528
+
+#scalefatiguemult 5
+
+#scalerate 1.5
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "thing from beyond ritual"
+#effect 10001
+#damage 514
+#spec 8388608
+#power 4
+#maxpower 8
+#nreff 1003
+#pathlevel 2
+#fatiguecost 600
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Thing from Beyond"
+
+#skipchance 97
+
+#name 16 "$Summon$ NAMEPREFIX %Thing% from Beyond"
+#descr 16 "The caster summons ARTICLE %thing% from beyond to fight for him. Things from beyond are strange tentacled beings that blast their foes' minds, but are immobile."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 20
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "thing from beyond Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 514
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#skipchance 99
+#newunit "Thing from Beyond"
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "NAMEPREFIX Thing from Beyond $Ambush$"
+#descr 16 "The caster summons ARTICLE %thing% from beyond to ambush a hostile commander in a distant land. Things from beyond are strange otherworldly creatures that blast their foes' minds."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon thing from beyond"
+#effect 10038
+#provrange 4
+#damage 514
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+#newunit "Thing from Beyond"
+
+#name 16 "$Send$ NAMEPREFIX %Thing% from Beyond"
+#descr 16 "The caster summons ARTICLE %thing% from beyond to attack a distant province. Things from beyond are strange otherworldly creatures that blast their foes' minds."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#scalerate 4
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 45
+#end
+
+

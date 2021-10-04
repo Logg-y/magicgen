@@ -13,7 +13,7 @@
 #aoe 0
 #power 4
 #maxpower 14
-#pathlevel 3
+#pathlevel 2
 #explspr 10121
 #sound 31
 #fatiguecost 20
@@ -33,4 +33,5 @@
 #namecond range < 10 4 "NAMEPREFIX Touch of Liquification"
 #namecond range < 10 32 "NAMEPREFIX Touch of Liquification"
 
+#pathperresearch 0.5
 #end

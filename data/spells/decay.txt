@@ -32,8 +32,9 @@
 #details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #priority 1
-#namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay" 
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
+#scalefatigueexponent 1.3
 #end
 
 #neweffect "Mass Decay"
@@ -50,11 +51,11 @@
 
 #aoe 666
 #power 7
-#pathlevel 6
+#pathlevel 5
 #maxpower 7
 #explspr 10197
 #sound 23
-#fatiguecost 300
+#fatiguecost 200
 #range 5020
 #precision 100
 
@@ -70,7 +71,47 @@
 #details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #priority 1
-#namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay" 
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
 #end
+
+#neweffect "Mass Decay Hostile Only"
+#effect 11
+#damage 256
+#spec 25165824+262144
+#schools 32
+
+-- evo-like
+#spelltype 2
+
+#scalerate 2
+-- #scalecost 0.6
+
+#aoe 666
+#power 9
+#pathlevel 6
+#maxpower 9
+#explspr 10197
+#sound 23
+#fatiguecost 300
+#range 5020
+#precision 100
+#skipchance 40
+
+#paths 32
+#secondarypaths 32
+
+#namecond effectiveaoe == 0 32 "NAMEPREFIX Decay"
+
+#namecond2 0 < effectiveaoe < 600 32 "NAMEPREFIX Burden of Age"
+#namecond effectiveaoe > 600 32 "NAMEPREFIX Curse of Decay"
+
+#descr 32 "The caster curses all of his enemies with foul magic that causes them to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+#details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
+#priority 1
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
+
+#end
+
 

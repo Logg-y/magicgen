@@ -1,0 +1,111 @@
+#neweffect "Summon forest troll"
+#effect 1
+#damage 2219
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$conjure$ NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatiguemult 9
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "forest troll ritual"
+#effect 10001
+#damage 2219
+#spec 0
+#power 3
+#maxpower 7
+#nreff 5
+#pathlevel 2
+#fatiguecost 520
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 20
+
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+#pathperresearch 0.4
+
+#scalerate 2
+#end
+
+#neweffect "forest troll Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2219
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX %forest troll% $ambush$"
+#descr 64 "The caster summons ARTICLE %forest troll% to attack a hostile commander in a distant province. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon forest troll"
+#effect 10038
+#provrange 4
+#damage 2219
+#spec 0
+#power 5
+#maxpower 14
+#nreff 1004
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "$Send$ NAMEPREFIX %forest troll%"
+#descr 64 "The caster summons ARTICLE %forest troll% to attack a distant province. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 25
+#end
+
+
+

@@ -130,11 +130,22 @@ class UnitInBaseDataFinder(object):
 
         return self
     def __deepcopy__(self, memo):
+        # This deepcopy function is ~13% of total runtime
+        # The problem is that a lot of users of unit data don't actually modify anything, which means much
+        # of this could be avoided to cut down on that
         out = UnitInBaseDataFinder()
         for param in self.params:
             setattr(out, param, deepcopy(getattr(self, param, memo)))
         return out
 
+def loadAllUnitData():
+    # precaching these is likely to save ~5% runtime
+    if len(cache) == 0:
+        with open("data/BaseU.csv", "r") as f:
+            reader = csv.DictReader(f, delimiter="\t")
+            for line in reader:
+                id = int(line["id"])
+                cache[id] = UnitInBaseDataFinder.from_line(line)
 
 def get(id):
     # The file lookup is slow

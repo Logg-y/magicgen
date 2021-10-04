@@ -32,10 +32,10 @@
 #damage 628
 #spec 8388608
 #power 3
-#maxpower 14
-#nreff 1
+#maxpower 8
+#nreff 4
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 1000
 #schools 1
 
 #paths 16
@@ -113,4 +113,5 @@
 
 #scalerate 2
 #end
+
 

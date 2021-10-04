@@ -3,7 +3,7 @@
 #damage 430
 #spec 0
 #power 1
-#maxpower 20
+#maxpower 9
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -13,8 +13,8 @@
 
 #paths 66
 #secondarypaths 66
-#scalefatigueexponent -1.1
-#scalefatiguemult 1
+#scalefatigueexponent -1.2
+#scalefatiguemult 0
 #pathperresearch 0.4
 
 #skipchance 99
@@ -150,3 +150,4 @@
 
 #scalerate 4
 #end
+

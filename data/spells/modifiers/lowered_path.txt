@@ -1,25 +1,3 @@
-#newmodifier "Lowered Path"
-
--- both evo and buff
-#spelltype 0
-
-#skipchance 40
--- not battlesummoned commander
-#req effect != 21
-
--- not global enchantment
-#req effect != 10081
--- not dispel
-#req effect != 10030
-
--- trial: not for rituals
-#req effect < 10000
-
-#pathlevel -1
-#power -2
-
-#end
-
 #newmodifier "Lowered Path 2"
 
 -- both evo and buff
@@ -37,7 +15,106 @@
 -- trial: not for rituals
 #req effect < 10000
 
+#req pathlevel == 2
+#pathperresearch -0.4
+#pathlevel -1
+#power -1
+
+#end
+
+#newmodifier "Lowered Path 3"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 40
+-- not battlesummoned commander
+#req effect != 21
+
+-- not global enchantment
+#req effect != 10081
+-- not dispel
+#req effect != 10030
+
+-- trial: not for rituals
+#req effect < 10000
+
+#req pathlevel == 3
+#pathperresearch -0.4
+#pathlevel -1
+#power -1
+
+#end
+
+#newmodifier "Lowered Path 4+"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 40
+-- not battlesummoned commander
+#req effect != 21
+
+-- not global enchantment
+#req effect != 10081
+-- not dispel
+#req effect != 10030
+
+-- trial: not for rituals
+#req effect < 10000
+
+#req pathlevel >= 4
+#pathperresearch -0.4
 #pathlevel -2
-#power -4
+#power -1
+
+#end
+
+
+#newmodifier "Lowered Path greater 3-4"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 40
+-- not battlesummoned commander
+#req effect != 21
+
+-- not global enchantment
+#req effect != 10081
+-- not dispel
+#req effect != 10030
+
+-- trial: not for rituals
+#req effect < 10000
+
+#req pathlevel < 5
+#pathperresearch -0.4
+#pathlevel -2
+#power -2
+
+#end
+
+#newmodifier "Lowered Path greater 5+"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 40
+-- not battlesummoned commander
+#req effect != 21
+
+-- not global enchantment
+#req effect != 10081
+-- not dispel
+#req effect != 10030
+
+-- trial: not for rituals
+#req effect < 10000
+
+#req pathlevel >= 5
+#pathperresearch -0.4
+#pathlevel -3
+#power -2
 
 #end

@@ -3,7 +3,7 @@
 -- evo
 #spelltype 2
 
-#power -3
+#power -2
 #effect 4000
 
 #aispellmod 175

@@ -130,6 +130,10 @@ def scalingTool():
     for attrib in attribs_to_copy:
         lastattribs[attrib] = -1
 
+    lowercaseSpellLookups = {}
+    for spellname in magicgen.utils.spelleffects:
+        lowercaseSpellLookups[spellname.lower()] = spellname
+
     updated = False
     lastupdate = -1
     while True:
@@ -143,6 +147,11 @@ def scalingTool():
 
         if event == "-lookupspellload-":
             spelleffect = magicgen.utils.spelleffects.get(values["-lookupspelleffect-"], None)
+            if spelleffect is None:
+                realeffname = lowercaseSpellLookups.get(values["-lookupspelleffect-"].lower(), None)
+                if realeffname is not None:
+                    spelleffect = magicgen.utils.spelleffects.get(realeffname, None)
+                    window["-lookupspelleffect-"].update(realeffname)
             if spelleffect is not None:
                 for attrib in attribs_to_copy:
                     window[f"-{attrib}-"].update(getattr(spelleffect, attrib))
@@ -264,19 +273,19 @@ def scalingTool():
                             text = f"RL {rl}, x{s.path1level}:"
                             if currflags & flags["aoe"] or s.aoe != int(values["-aoe-"]):
                                 text += f" aoe {s.aoe}"
-                                if s.aoe > 1000:
+                                if s.aoe >= 1000:
                                     real = (s.aoe % 1000) + (s.path1level * (s.aoe // 1000))
                                     text += f" ({real})"
 
                             if currflags & flags["damage"] or s.damage != int(values["-damage-"]):
                                 text += f" damage {s.damage}"
-                                if s.damage > 1000:
+                                if s.damage >= 1000:
                                     real = (s.damage % 1000) + (s.path1level * (s.damage // 1000))
                                     text += f" ({real})"
 
                             if currflags & flags["nreff"] or s.nreff != int(values["-nreff-"]):
                                 text += f" nreff {s.nreff}"
-                                if s.nreff > 1000:
+                                if s.nreff >= 1000:
                                     real = (s.nreff % 1000) + (s.path1level * (s.nreff // 1000))
                                     text += f" ({real})"
 

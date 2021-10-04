@@ -33,7 +33,7 @@
 #damage 2090
 #spec 0
 #power 3
-#maxpower 11
+#maxpower 7
 #nreff 3
 #pathlevel 3
 #fatiguecost 920
@@ -86,7 +86,7 @@
 #maxpower 15
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 800
 #schools 1
 #nogeodst 2052
 
@@ -105,4 +105,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
+
 

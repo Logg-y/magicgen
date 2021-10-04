@@ -1,0 +1,115 @@
+#neweffect "Raise shade"
+#effect 1
+#damage 676
+#spec 8388608
+#power 3
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 20
+#explspr 10232
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX %Shade%"
+#descr 32 "The caster pulls ARTICLE %being% out of the shade lands. These shades are ethereal and can permenantly weaken their victims."
+
+#spelltype 528
+
+#scalerate 0.8
+-- #scalecost 1.0
+#schools 1
+--#scalefatiguemult 30
+#skipchance 97
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "Raise shade Ritual"
+#effect 10001
+#damage 676
+#spec 8388608
+#power 3
+#maxpower 14
+#nreff 2002
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+
+#spelltype 20
+
+#skipchance 97
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Call NAMEPREFIX %Shade%"
+#descr 32 "The caster pulls ARTICLE %being% out of the shade lands. These shades are ethereal and can permenantly weaken their victims."
+
+#scalerate 2
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#end
+
+#neweffect "shade Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 676
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#skipchance 99
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shade Attack"
+#descr 32 "The caster pulls ARTICLE %being% out of the shade lands and sends it to attack a hostile commander in a distant province. These shades are ethereal and can permenantly weaken their victims."
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+
+#spelltype 4
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon shade"
+#effect 10038
+#provrange 4
+#damage 676
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2004
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#skipchance 99.6
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 30
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "Send NAMEPREFIX %Shade%"
+#descr 32 "The caster pulls ARTICLE %being% out of the shade lands and sends them to attack a distant province. These shades are ethereal and can permenantly weaken their victims."
+
+#spelltype 20
+
+#scalerate 2.0
+#end
+
+
+

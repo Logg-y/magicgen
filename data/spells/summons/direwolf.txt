@@ -1,0 +1,146 @@
+#neweffect "Summon direwolf"
+#effect 1
+#damage 1224
+#spec 0
+#power 2
+#maxpower 12
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$conjure$ NAMEPREFIX Dire %Wolf%"
+#descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
+
+#spelltype 528
+
+#scalerate 0.51
+#pathperresearch 0.4
+#scalefatigueexponent -1.3
+#scalefatiguemult 0
+#end
+
+#neweffect "direwolf ritual"
+#effect 10001
+#damage 1224
+#spec 0
+#power 2
+#maxpower 5
+#nreff 4
+#pathlevel 2
+#fatiguecost 120
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX Dire %Wolf%"
+#descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 21
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+
+#scalerate 4
+#end
+
+#neweffect "direwolf chassis dummy"
+#effect 10001
+#damage 1224
+#spec 0
+#power 2
+#maxpower 2
+#nreff 4
+#pathlevel 2
+#fatiguecost 30
+#schools -1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "Summon NAMEPREFIX Dire %Wolf%"
+#descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 21
+#pathperresearch 0.4
+
+#scalerate 4
+#end
+
+
+#neweffect "direwolf Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1224
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX Dire %Wolf% $Ambush$"
+#descr 64 "The caster summons ARTICLE dire %wolf% to attack a hostile commander in a distant province. Dire wolves are large and mighty wolves."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote direwolf"
+#effect 10038
+#provrange 4
+#damage 1224
+#spec 0
+#power 4
+#maxpower 14
+#nreff 2004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 20
+
+#name 64 "$Send$ NAMEPREFIX Dire %Wolf%"
+#descr 64 "The caster summons ARTICLE dire %wolf% to attack a distant province. Dire wolves are large and mighty wolves."
+
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+

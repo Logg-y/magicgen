@@ -1,0 +1,88 @@
+-- This file basically relates to buffs and similar effects like healing
+
+-- #newmodifier "Faster Casting Not evo Not summon"
+-- 
+-- -- any
+-- #spelltype 0
+-- 
+-- #aispellmod 70
+-- 
+-- #reqdamaging 0
+-- #pathlevel 0
+-- 
+-- #power -2
+-- 
+-- #mult fatiguecost 0.33
+-- -- not evo
+-- #req spelltype !& 2
+-- #req fatiguecost > 15
+-- #req fatiguecost < 100
+-- #mult casttime 0.25
+-- -- not ritual
+-- #req spelltype !& 4
+-- 
+-- #req effect != 1
+-- 
+-- #maxfinalfatiguecost 100
+-- 
+-- #end
+
+
+--#newmodifier "16pc cast Not evo Not summon"
+--
+---- any
+--#spelltype 0
+--
+--#aispellmod 90
+--#pathlevel 0
+--
+--#reqdamaging 0
+--
+--#power -1
+--
+--#mult fatiguecost 0.3
+---- not evo
+--#req spelltype !& 2
+--#req fatiguecost > 15
+--#req fatiguecost < 100
+--#mult casttime 0.25
+---- not ritual
+--#req spelltype !& 4
+--
+--#req effect != 1
+--
+--#maxfinalfatiguecost 100
+--
+--#end
+
+
+
+#newmodifier "Insanely Fast Casting Not Evo Not Summon"
+
+-- any
+#spelltype 0
+
+#aispellmod 120
+#pathlevel 0
+
+#reqdamaging 0
+
+-- not evo
+#req spelltype !& 2
+
+#power -1
+
+#mult fatiguecost 0.17
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#req effect != 1
+
+#maxfinalfatiguecost 100
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end

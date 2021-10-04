@@ -1,0 +1,150 @@
+#neweffect "SummonVile thing"
+#effect 1
+#damage 628
+#spec 8388608
+#power 3
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Vile Thing"
+
+#skipchance 95
+
+#name 16 "$conjure$ NAMEPREFIX Vile %Thing%"
+#descr 16 "The caster summons ARTICLE Vile %Thing%. Vile things are strange tentacled creatures."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "Vile thing chassis dummy"
+#effect 10001
+#damage 628
+#spec 8388608
+#power 3
+#maxpower 14
+#nreff 1001
+#pathlevel 2
+#fatiguecost 200
+#schools -1
+
+#paths 16
+#secondarypaths 16
+#newunit "Vile Thing"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX Vile %Thing%"
+#descr 16 "The caster summons ARTICLE Vile %Thing%. Vile things are strange tentacled creatures."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 25
+#newunit "Vile Thing"
+
+#scalerate 2
+#end
+
+#neweffect "Vile thing ritual"
+#effect 10001
+#damage 628
+#spec 8388608
+#power 3
+#maxpower 6
+#nreff 1006
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+
+#paths 16
+#secondarypaths 16
+#newunit "Vile Thing"
+
+#skipchance 97
+
+#name 16 "Summon NAMEPREFIX Vile %Thing%"
+#descr 16 "The caster summons ARTICLE Vile %Thing%. Vile things are strange tentacled creatures."
+#details "Creatures summoned with this spell are not sacred."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 18.0
+#newunit "Vile Thing"
+
+#scalerate 3
+#siegepatrolchaff 1
+#end
+
+#neweffect "Vile thing Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 1
+#skipchance 99
+
+#paths 16
+#secondarypaths 16
+#newunit "Vile Thing"
+
+#skipchance 99
+
+#name 16 "NAMEPREFIX Vile %Thing% $ambush$"
+#descr 16 "The caster summons ARTICLE Vile %Thing% to ambush a hostile commander in a distant province. Vile things are strange tentacled creatures."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 4
+
+#end
+
+#neweffect "remoteVile thing"
+#effect 10038
+#provrange 4
+#damage 628
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+
+#skipchance 99.6
+
+#paths 16
+#secondarypaths 16
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 12
+#newunit "Vile Thing"
+
+#name 16 "$Send$ NAMEPREFIX Vile %Thing%"
+#descr 16 "The caster summons ARTICLE Vile %Thing% to attack a distant province.  Vile things are strange tentacled creatures."
+#details "Creatures summoned with this spell are not sacred."
+#spelltype 20
+
+#scalerate 2
+#end
+
+

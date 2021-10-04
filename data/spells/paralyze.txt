@@ -64,7 +64,7 @@
 
 #namecond effectiveaoe < 1 16 "NAMEPREFIX Halt"
 
-#namecond2 1 < effectiveaoe < 25 16 "NAMEPREFIX Halt Foes"
+#namecond2 1 <= effectiveaoe <= 25 16 "NAMEPREFIX Halt Foes"
 #namecond2 26 < effectiveaoe < 600 16 "NAMEPREFIX Halt Squad"
 
 #descr 16 "The caster overloads the %mind% of SUBJECT and renders PRONOUN unable to move for a short time."
@@ -74,6 +74,7 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of halting"
 #namecond range < 10 16 "NAMEPREFIX touch of halting"
 
+#scalefatigueexponent 1.3
 #end
 
 #neweffect "Battlefield Paralyze"

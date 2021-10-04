@@ -491,6 +491,12 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#reqdamaging
  * If 0, the spell cannot have a damaging effect number. If any value greater than zero, the spell must have a damaging effect number. If left untouched or set to -1, no limit is imposed.
  
+\#minfinalfatiguecost
+ * If set, the spell's final fatigue cost should end up being equal to or higher than this value.
+
+\#maxfinalfatiguecost
+ * If set, the spell's final fatigue cost should end up being less than this value.
+
 ## Secondary Effects
 
 ### Simple additions
@@ -513,7 +519,7 @@ These parameters are just flatly added to the values on the parent spelleffect.
 
 ### Modifier lookalikes
 
-These function the same as the modifiers.
+These function the same as they do when used in modifiers.
 
 \#skipchance
 \#spelltype
@@ -526,6 +532,8 @@ These function the same as the modifiers.
 \#set
 \#mult
 \#nobattlefield
+\#minfinalfatiguecost
+\#maxfinalfatiguecost
 
 ### New effects
 

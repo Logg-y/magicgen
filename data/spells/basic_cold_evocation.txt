@@ -192,7 +192,7 @@
 
 #neweffect "Cold Evo Instant 25pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 576
 #aoe 665
 #power 7
@@ -202,7 +202,7 @@
 #pathlevel 5
 #fatiguecost 200
 #explspr 10008
-#skipchance 50
+#skipchance 80
 #sound 21
 
 #paths 132
@@ -231,7 +231,7 @@
 
 #neweffect "Cold Evo Instant 50pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 576
 #aoe 663
 #power 8
@@ -241,7 +241,7 @@
 #pathlevel 5
 #fatiguecost 300
 #explspr 10008
-#skipchance 50
+#skipchance 80
 #sound 21
 
 #paths 132
@@ -270,7 +270,7 @@
 
 #neweffect "Cold Evo Instant 100pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 576
 #aoe 666
 #power 10
@@ -280,7 +280,7 @@
 #pathlevel 6
 #fatiguecost 400
 #explspr 10008
-#skipchance 50
+#skipchance 80
 #sound 21
 
 #paths 132

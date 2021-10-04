@@ -95,12 +95,12 @@
 
 #neweffect "Acid Evo Instant 25pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 2199023255616
 #aoe 665
 #power 7
 #maxpower 7
-#skipchance 50
+#skipchance 80
 #precision 3
 #range 30
 #pathlevel 6
@@ -127,12 +127,12 @@
 
 #neweffect "Acid Evo Instant 50pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 2199023255616
 #aoe 663
 #power 8
 #maxpower 8
-#skipchance 50
+#skipchance 80
 #precision 3
 #range 30
 #pathlevel 6
@@ -159,12 +159,12 @@
 
 #neweffect "Acid Evo Instant 100pc"
 #effect 2
-#damage 1002
+#damage 1005
 #spec 2199023255616
 #aoe 666
 #power 10
 #maxpower 10
-#skipchance 50
+#skipchance 80
 #precision 3
 #range 30
 #pathlevel 7

@@ -78,7 +78,7 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 9
+#power 7
 #maxpower 19
 #pathlevel 5
 #sound 31

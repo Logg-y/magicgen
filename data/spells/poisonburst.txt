@@ -6,10 +6,11 @@
 #paths -1
 -- evo, scale aoe
 #spelltype 34
-#aoe 1
+#aoe 9
 #explspr 10297
-#scalerate 2
+#scalerate 0
 #power 4
+#maxpower 50
 #name 1 "Spreading Poison"
 #name 2 "Spreading Poison"
 #name 4 "Spreading Poison"
@@ -37,7 +38,7 @@
 #spec 8320
 #aoe 1
 #power 4
-#maxpower 13
+#maxpower 4
 #precision 1
 #range 50
 #pathlevel 3
@@ -60,6 +61,41 @@
 -- evo-like, scale dmg
 #spelltype 66
 #scalerate 1
+#schools 4
+
+#end
+
+#neweffect "Instant Poison Multi"
+#effect 7
+#damage 3010
+#spec 8320
+#aoe 1
+#power 5
+#maxpower 13
+#precision -8
+#nreff 5
+#range 50
+#pathlevel 3
+#fatiguecost 100
+#explspr 10139
+#sound 27
+
+#paths 192
+#secondarypaths 64
+#secondarypathchance 98
+
+#name 64 "NAMEPREFIX Poison Burst"
+#name 64 "NAMEPREFIX Toxic Burst"
+#name 128 "NAMEPREFIX Toxic Burst"
+#descr 64 "The caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
+#descr 128 "$BLOOD_INTRO$, the caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
+
+#nextspell "Instant Poison AoE"
+
+-- evo-like, scale dmg
+#spelltype 18
+#scalerate 5
+#scalefatigueexponent 1.2
 #schools 4
 
 #end

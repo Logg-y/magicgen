@@ -8,14 +8,14 @@
 #spelltype 42
 
 #scalerate 2.5
-#scalefatigueexponent 0.2
+#scalefatigueexponent 1
 
 
 -- #scalecost 0.35
 
 #aoe 0
 #power -1
-#maxpower 8
+#maxpower 6
 #pathlevel 1
 #explspr 10134
 #sound 21
@@ -41,4 +41,100 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of freezing"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of kokytos"
 
+#pathperresearch 0.4
 #end
+
+
+
+#neweffect "Numbness Battlefield"
+#effect 11
+#damage 268435456
+#spec 8405504+4096
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+#scalefatigueexponent 1
+
+
+-- #scalecost 0.35
+
+#aoe 666
+#power 7
+#maxpower 7
+#pathlevel 4
+#explspr 10134
+#sound 21
+#fatiguecost 200
+#range 5020
+
+#paths 132
+#secondarypaths 4
+
+#namecond effectiveaoe < 660 4 "NAMEPREFIX Numbness"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX Chill of Kokytos"
+
+#namecond effectiveaoe >= 660 4 "NAMEPREFIX Glacial Wind"
+#namecond effectiveaoe >= 660 128 "NAMEPREFIX Wind of Kokytos"
+
+
+#details "Freezing: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#descr 4 "Everyone on the battlefield becomes frozen. This will cause creatures caught within to quickly become exhausted, though cold resistance and heat scales will cause them to thaw faster. Some creatures can never be frozen such as ghosts or beings that radiate heat."
+#descr 128 "$BLOOD_INTRO$, glacial %wind% from Kokytos %is% unleashed upon a SIZE area, freezing everyone on the battlefield. This will cause creatures caught within to quickly become exhausted, though cold resistance and heat scales will cause them to thaw faster. Some creatures can never be frozen such as ghosts or beings that radiate heat."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of numbness"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of freezing"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of kokytos"
+
+#end
+
+#neweffect "Numbness Battlefield Hostile Only"
+#effect 11
+#damage 268435456
+#spec 8405504+4096+262144
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+#scalefatigueexponent 1
+
+
+-- #scalecost 0.35
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 5
+#explspr 10134
+#sound 21
+#fatiguecost 300
+#range 5020
+
+#skipchance 70
+
+#paths 132
+#secondarypaths 4
+
+#namecond effectiveaoe < 660 4 "NAMEPREFIX Numbness"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX Chill of Kokytos"
+
+#namecond effectiveaoe >= 660 4 "NAMEPREFIX Glacial Curse"
+#namecond effectiveaoe >= 660 128 "NAMEPREFIX Curse of Kokytos"
+
+
+#details "Freezing: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#descr 4 "All of the caster's enemies become frozen. This will cause creatures caught within to quickly become exhausted, though cold resistance and heat scales will cause them to thaw faster. Some creatures can never be frozen such as ghosts or beings that radiate heat."
+#descr 128 "$BLOOD_INTRO$, glacial %wind% from Kokytos %is% unleashed upon a SIZE area, freezing all of the caster's enemies. This will cause creatures caught within to quickly become exhausted, though cold resistance and heat scales will cause them to thaw faster. Some creatures can never be frozen such as ghosts or beings that radiate heat."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of numbness"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of freezing"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of kokytos"
+
+#end
+

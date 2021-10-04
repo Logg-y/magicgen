@@ -1,0 +1,118 @@
+#neweffect "Call poisongolem"
+#effect 1
+#damage 1099
+#spec 0
+#power 5
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#scalefatiguemult 6
+#explspr 10232
+#sound 31
+#schools 8
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 95
+
+#name 32 "$assemble$ NAMEPREFIX Poison Golem"
+#name 8 "$assemble$ NAMEPREFIX Poison Golem"
+#descr 32 "The caster quickly constructs a golem from metal and imbues it with dark power. The poison golem produced is hard to destroy and surrounded by banefire."
+#descr 8 "The caster quickly constructs a golem from metal and imbues it with dark power. The poison golem produced is hard to destroy and surrounded by banefire."
+
+#spelltype 528
+
+#scalerate 1.5
+-- #scalecost 1.0
+#skipchance 90
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "poisongolem ritual"
+#effect 10001
+#damage 1099
+#spec 8388608
+#power 9
+#maxpower 14
+#nreff 1
+#pathlevel 5
+#fatiguecost 1500
+#schools 8
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 95
+
+#skipchance 97
+
+#name 32 "Construct NAMEPREFIX Poison Golem"
+#name 8 "Construct NAMEPREFIX Poison Golem"
+#descr 32 "The caster constructs a golem from metal and imbues it with dark power. The poison golem produced is hard to destroy, is surrounded by banefire, and causes the land it is in to rapidly wither and die."
+#descr 8 "The caster constructs a golem from metal and imbues it with dark power. The poison golem produced is hard to destroy, is surrounded by banefire, and causes the land it is in to rapidly wither and die."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 250
+
+#scalerate 4
+#end
+
+#neweffect "poisongolem Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1099
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 1000
+#schools 8
+#skipchance 99
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 95
+
+#name 32 "NAMEPREFIX Poison Golem $Ambush$"
+#name 8 "NAMEPREFIX Poison Golem $Ambush$"
+#descr 8 "The caster constructs a golem from metal and imbues it with dark power in a distant province, sending it to attack a hostile commander. If it survives the battle, the golem crumbles back to mundane metal. The poison golem produced is hard to destroy and surrounded by banefire."
+#descr 32 "The caster constructs a golem from metal and imbues it with dark power in a distant province, sending it to attack a hostile commander. If it survives the battle, the golem crumbles back to mundane metal. The poison golem produced is hard to destroy and surrounded by banefire."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon poisongolem"
+#effect 10038
+#provrange 4
+#damage 1099
+#spec 8388608
+#power 7
+#maxpower 17
+#nreff 1
+#pathlevel 4
+#fatiguecost 1000
+#schools 8
+
+#skipchance 99.6
+#paths 40
+#secondarypaths 40
+#secondarypathchance 95
+
+#name 32 "$Send$ NAMEPREFIX Poison Golem"
+#name 8 "$Send$ NAMEPREFIX Poison Golem"
+#descr 8 "The caster constructs a golem from metal and imbues it with dark power in a distant province, causing it to attack anything found there. The poison golem produced is hard to destroy and surrounded by banefire."
+#descr 32 "The caster constructs a golem from metal and imbues it with dark power in a distant province, causing it to attack anything found there. If it survives the battle, the golem crumbles back to mundane metal. The poison golem produced is hard to destroy and surrounded by banefire."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 500
+#end
+

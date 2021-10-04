@@ -16,7 +16,7 @@
 #explspr 10189
 #sound 45
 #fatiguecost 10
-#range 5010
+#range 5020
 #precision 3
 
 #paths 12
@@ -35,10 +35,97 @@
 #descr 8 "The earth is commanded to open up over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
 
 #priority 1
-#namecond effect > 1000 4 "NAMEPREFIX $mist$ of entombing"
-#namecond effect > 1000 8 "NAMEPREFIX $mist$ of eagle eyes"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of softened earth"
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of entombing"
 #namecond range < 10 4 "NAMEPREFIX touch of soft earth"
 #namecond range < 10 8 "NAMEPREFIX touch of entombing"
 
+#maxpower 6
 #end
+
+#neweffect "Earth Grip Battlefield"
+#effect 11
+#damage 16384
+#spec 70368752582656+1048576
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+-- #scalecost 0.7
+
+#aoe 666
+#power 7
+#pathlevel 4
+#explspr 10189
+#sound 45
+#fatiguecost 200
+#range 5020
+#precision 3
+
+#paths 12
+#secondarypaths 8
+
+#namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
+#namecond effectiveaoe == 0 8 "NAMEPREFIX Earth Grip"
+#namecond effectiveaoe < 20 4 "NAMEPREFIX Soften Land"
+#namecond effectiveaoe < 20 8 "NAMEPREFIX Earth Meld"
+#namecond effectiveaoe >= 20 4 "NAMEPREFIX Soften Landscape"
+#namecond effectiveaoe >= 20 8 "NAMEPREFIX Opening of the Earth"
+
+#details "Earth meld: Strength+DRN vs 23 to break free."
+
+#descr 8 "The entire battlefield opens up over a SIZE area. This causes all creatures on the battlefield to fall into the ground and become unable to act."
+#descr 4 "The entire battlefield is made muddy and soft over a SIZE area. This causes all creatures on the battlefield to fall into the ground and become unable to act."
+
+
+#maxpower 7
+#end
+
+#neweffect "Earth Grip Battlefield Enemies Only"
+#effect 11
+#damage 16384
+#spec 70368752582656+1048576+262144
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+-- #scalecost 0.7
+
+#aoe 666
+#power 9
+#pathlevel 5
+#explspr 10189
+#sound 45
+#fatiguecost 300
+#range 5020
+#precision 3
+#skipchance 70
+
+
+#paths 12
+#secondarypaths 8
+
+#namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
+#namecond effectiveaoe == 0 8 "NAMEPREFIX Earth Grip"
+#namecond effectiveaoe < 20 4 "NAMEPREFIX Soften Land"
+#namecond effectiveaoe < 20 8 "NAMEPREFIX Earth Meld"
+#namecond effectiveaoe >= 20 4 "NAMEPREFIX Entomb Foes"
+#namecond effectiveaoe >= 20 8 "NAMEPREFIX Entomb Foes"
+
+#details "Earth meld: Strength+DRN vs 23 to break free."
+
+#descr 8 "The earth opens up beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
+#descr 8 "The earth rapidly softens beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
+
+
+
+#maxpower 9
+#end
+
+
+
 

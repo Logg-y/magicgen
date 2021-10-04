@@ -8,7 +8,7 @@ from . import fileparserutils
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
-                       "aispellmod", "reqdamaging", "spec"]
+                       "aispellmod", "reqdamaging", "spec", "maxfinalfatiguecost", "minfinalfatiguecost"]
 modifier_params_str = ["details"]
 modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent"]
 

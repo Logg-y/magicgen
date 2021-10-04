@@ -1,0 +1,140 @@
+#neweffect "Summon goat"
+#effect 1
+#damage 2227
+#spec 0
+#power -1
+#maxpower 9
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$conjure$ NAMEPREFIX %Goat%"
+#descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
+
+#spelltype 528
+
+#scalerate 0.51
+#pathperresearch 0.25
+#scalefatigueexponent -1.4
+#scalefatiguemult 0
+#end
+
+#neweffect "goat ritual"
+#effect 10001
+#damage 2227
+#spec 0
+#power -1
+#maxpower 3
+#nreff 7
+#pathlevel 1
+#fatiguecost 120
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$summon$ NAMEPREFIX %Goat%"
+#descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
+
+#spelltype 20
+
+#scalefatigueexponent -1.45
+#scalefatiguemult 15
+#pathperresearch 0.25
+
+#siegepatrolchaff 1
+
+#scalerate 5
+#end
+
+#neweffect "goat chassis dummy"
+#effect 10001
+#damage 2227
+#spec 0
+#power -3
+#maxpower -3
+#nreff 1
+#pathlevel 1
+#fatiguecost 5
+#schools -1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$Summon$ NAMEPREFIX %Goat%"
+#descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
+
+#spelltype 20
+
+#scalefatigueexponent -1.45
+#scalefatiguemult 15
+#pathperresearch 0.25
+
+#scalerate 5
+#end
+
+#neweffect "goat Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2227
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX %Goat% $ambush$"
+#descr 64 "The caster directs an ordinary goat to attack a hostile commander in a distant province. The goat is very unlikely to kill anything, however if it somehow survives the encounter it will return to eating grass as a normal goat would."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon goat"
+#effect 10038
+#provrange 4
+#damage 2227
+#spec 0
+#power 3
+#maxpower 9
+#nreff 9015
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "$Send$ NAMEPREFIX %Goat%"
+#descr 64 "The caster summons forth ARTICLE %goat% to attack a distant province. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
+
+#spelltype 20
+
+#scalerate 6
+
+#scalefatigueexponent -0.15
+#end
+
+

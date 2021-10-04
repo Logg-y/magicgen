@@ -66,6 +66,8 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     fileparser.readUnitModsFromDir(r"./data/spells/rituals/unitmods")
     fileparser.readNewUnitsFromDir(r"./data/spells/summons/newunits")
 
+    unitinbasedatafinder.loadAllUnitData()
+
     s = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
     return s
 
@@ -147,6 +149,17 @@ def rollspells(**options):
                     f"({len(remainingSchoolLevelCombos) - index} remain)...\n")
                 sys.stderr.flush()
                 effectpool = copy.copy(s)
+                # It is faster to remove everything that doesn't belong in this school now
+                # than to do it later
+                for effname, eff in list(effectpool.items()):
+                    if not (eff.schools & school) and school != 64:
+                        del effectpool[effname]
+                    # Things that are eliminated by this are mostly nextspells
+                    elif eff.paths <= 0 or eff.schools <= 0:
+                        del effectpool[effname]
+                poolForThisSchoolAndLevel = copy.copy(effectpool)
+                effectNameList = list(effectpool.keys())
+                random.shuffle(effectNameList)
                 # First do everything with skipchances, if that fails to make all the spells
                 # do a second run ignoring them
                 allowskipchance = True
@@ -157,26 +170,25 @@ def rollspells(**options):
                         if len(effectpool) == 0:
                             if attempt < spellsperlevel and allowskipchance:
                                 attempt += 1
-                                effectpool = copy.copy(s)
+                                effectpool = copy.copy(poolForThisSchoolAndLevel)
+                                effectNameList = list(effectpool.keys())
+                                random.shuffle(effectNameList)
                                 continue
                             elif allowskipchance:
                                 allowskipchance = False
-                                effectpool = copy.copy(s)
+                                effectpool = copy.copy(poolForThisSchoolAndLevel)
+                                effectNameList = list(effectpool.keys())
+                                random.shuffle(effectNameList)
                                 continue
                             print(
                                 f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
                             _writetoconsole(
                                 f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
                             break
-                        sp = effectpool[random.choice(list(effectpool.keys()))]
+                        sp = effectpool[effectNameList.pop(0)]
                         del effectpool[sp.name]
                         # Prevent duplicates in the second round of ignoring skipchances
                         if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
-                            continue
-                        if not (sp.schools & school) and school != 64:
-                            continue
-                        # usually nextspells
-                        if sp.paths <= 0 or sp.schools <= 0:
                             continue
                         print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
                               f"skipchance allowed = {allowskipchance}, attempt = {attempt}")

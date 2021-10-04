@@ -1,0 +1,117 @@
+#neweffect "Summon kappa"
+#effect 1
+#damage 1482
+#spec 8388608
+#power 3
+#maxpower 12
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 22
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+--#scalefatiguemult 20
+#skipchance 50
+
+#name 4 "$conjure$ NAMEPREFIX %kappa%"
+#descr 4 "The caster summons ARTICLE %kappa%. The kappa is a scaled humanoid with a turtle shell which tires easily on land."
+
+#spelltype 528
+
+#scalefatiguemult 0
+#pathperresearch 0.4
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "kappa ritual"
+#effect 10001
+#damage 1482
+#spec 8388608
+#power 3
+#maxpower 7
+#nreff 10
+#pathlevel 2
+#fatiguecost 320
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 50
+
+#name 4 "$Summon$ NAMEPREFIX %kappa%"
+#descr 4 "The caster summons ARTICLE %kappa%.  The kappa is a scaled humanoid with a turtle shell which tires easily on land."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 8
+#pathperresearch 0.4
+
+#scalerate 1.5
+#end
+
+#neweffect "kappa Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1482
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#paths 4
+#secondarypaths 4
+
+#skipchance 99
+
+#name 4 "NAMEPREFIX %kappa% $ambush$"
+#descr 4 "The caster summons ARTICLE %kappa% to attack a hostile commander in a distant province. The kappa is a scaled humanoid with a turtle shell which tires easily on land."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote kappa"
+#effect 10038
+#provrange 4
+#damage 1482
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2003
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#name 4 "$Send$ NAMEPREFIX %kappa%"
+#descr 4 "The caster summons ARTICLE %kappa% to attack a distant province. The kappa is a scaled humanoid with a turtle shell which tires easily on land."
+
+
+
+#spelltype 60
+
+#scalerate 4
+#end
+
+
+
+

@@ -7,12 +7,12 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
+#scalerate 1.5
 -- #scalecost 1.4
 
 #aoe 0
-#power 3
-#maxpower 8
+#power 2
+#maxpower 6
 #pathlevel 1
 #explspr 10034
 #sound 16
@@ -57,8 +57,8 @@
 -- #scalecost 1.4
 
 #aoe 666
-#power 9
-#maxpower 9
+#power 7
+#maxpower 7
 #pathlevel 4
 #explspr 10034
 #sound 16
@@ -90,3 +90,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal shielding"
 
 #end
+
+

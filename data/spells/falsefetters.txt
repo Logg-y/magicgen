@@ -7,7 +7,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.2
+#scalerate 1.9
 -- #scalecost 0.6
 
 #aoe 0
@@ -16,7 +16,7 @@
 #explspr 10045
 #sound 42
 #fatiguecost 10
-#range 5010
+#range 5020
 
 #paths 130
 #secondarypaths 2
@@ -44,5 +44,110 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
 #namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
 
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
+#maxpower 6
 #end
+
+#neweffect "False Fetters Battlefield"
+#effect 11
+#damage 131072
+#spec 8404992 + 4096
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.9
+-- #scalecost 0.6
+
+#aoe 666
+#power 7
+#pathlevel 4
+#explspr 10045
+#sound 42
+#fatiguecost 200
+#range 5020
+
+#paths 130
+#secondarypaths 2
+
+#namecond effectiveaoe < 660 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX $illusory$ $fetters$"
+
+#namecond effectiveaoe > 666 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe > 666 128 "NAMEPREFIX $illusory$ $fetters$"
+
+#namecond effectiveaoe == 665 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 665 128 "NAMEPREFIX Shackled Army"
+
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Shackled Army"
+
+#namecond effectiveaoe == 663 2 "NAMEPREFIX Shackled Army"
+#namecond effectiveaoe == 663 128 "NAMEPREFIX Shackled Army"
+
+#descr 2 "$illusory$ $fetters$ spring into existence around the ankles of everyone on the battlefield. Their magic must be overcome in order to take actions."
+#descr 128 "$BLOOD_INTRO$, infernal powers bind the ankles of everyone on the battlefield with $illusory$ $fetters$. Their magic must be overcome in order to take actions."
+#details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
+
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
+#maxpower 7
+#end
+
+#neweffect "False Fetters Battlefield Enemies Only"
+#effect 11
+#damage 131072
+#spec 8404992 + 4096 + 262144
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.9
+-- #scalecost 0.6
+
+#aoe 666
+#power 9
+#pathlevel 5
+#explspr 10045
+#sound 42
+#fatiguecost 300
+#range 5020
+#skipchance 70
+
+
+#paths 130
+#secondarypaths 2
+
+#namecond effectiveaoe < 660 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe < 660 128 "NAMEPREFIX $illusory$ $fetters$"
+
+#namecond effectiveaoe > 666 2 "NAMEPREFIX $illusory$ $fetters$"
+#namecond effectiveaoe > 666 128 "NAMEPREFIX $illusory$ $fetters$"
+
+#namecond effectiveaoe == 666 2 "NAMEPREFIX Shackled Foes"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX Shackled Foes"
+
+
+#descr 2 "$illusory$ $fetters$ spring into existence around the ankles of the entire enemy army. Their magic must be overcome in order to take actions."
+#descr 128 "$BLOOD_INTRO$, infernal powers bind the ankles of the entire enemy army with $illusory$ $fetters$. Their magic must be overcome in order to take actions."
+#details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
+
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
+#maxpower 9
+#end
+
+
+
 

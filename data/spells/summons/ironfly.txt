@@ -1,0 +1,109 @@
+#neweffect "summon ironfly"
+#effect 1
+#damage 3232
+#spec 8388608
+#power 3
+#maxpower 11
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#explspr 10232
+#sound 31
+#schools 8
+#scalefatiguemult 10
+#skipchance 60
+#paths 8
+#secondarypaths 2
+
+#name 8 "$Assemble$ NAMEPREFIX Iron %Fly%"
+#descr 8 "The caster quickly forms ARTICLE_N iron %fly% from metal. The iron fly is difficult to destroy and attacks its foes with an electrical bite."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+-- #scalecost 1.0
+#end
+
+#neweffect "ironfly Ritual"
+#effect 10001
+#damage 3232
+#spec 8388608
+#power 3
+#maxpower 7
+#nreff 3
+#pathlevel 2
+#fatiguecost 520
+#schools 8
+
+#skipchance 60
+#spelltype 20
+
+#paths 8
+#secondarypaths 2
+
+#name 8 "$Summon$ NAMEPREFIX Iron %Fly%"
+#descr 8 "The caster forms ARTICLE_N iron %fly% from metal. The iron fly is difficult to destroy and attacks its foes with an electrical bite."
+
+#scalerate 2
+
+#scalefatiguemult 18
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#end
+
+#neweffect "ironfly Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 3232
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 8
+#skipchance 99
+
+#paths 8
+#secondarypaths 2
+
+#name 8 "NAMEPREFIX Iron Fly $ambush$"
+#descr 8 "The caster forms ARTICLE_N iron %fly% from metal in a distant province. The %fly% then attacks a random enemy commander there, crumbling to useless metal after the battle.  The iron fly is difficult to destroy and attacks its foes with an electrical bite."
+
+#spelltype 4
+
+
+#scalerate 0.7
+#end
+
+#neweffect "Remote summon ironfly"
+#effect 10038
+#provrange 4
+#damage 3232
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1000
+#pathlevel 3
+#fatiguecost 700
+#schools 8
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 2
+
+#name 8 "$Send$ NAMEPREFIX Iron %Fly%"
+#descr 8 "The caster forms ARTICLE_N iron %fly% from metal in a distant province. The %fly% then attack anything there, crumbling to useless metal after the battle. The iron fly is difficult to destroy and attacks its foes with an electrical bite."
+
+#spelltype 20
+
+#scalerate 2.0
+#scalefatiguemult 70
+#end
+
+
+

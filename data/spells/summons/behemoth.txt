@@ -32,7 +32,7 @@
 #damage 452
 #spec 8388608
 #power 4
-#maxpower 14
+#maxpower 8
 #nreff 3
 #pathlevel 3
 #fatiguecost 500
@@ -105,4 +105,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 160
 #end
+
 

@@ -35,5 +35,44 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of petrification"
 #namecond range < 10 8 "NAMEPREFIX touch of petrification"
 
+#scalefatigueexponent 1.4
+#pathperresearch 0.4
 #end
 
+
+#neweffect "Mass Petrification"
+#effect 99
+#damage 999
+#spec 8388736+16777216
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2.5
+-- #scalecost 0.7
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 5
+#explspr 10121
+#sound 45
+#fatiguecost 200
+#range 5010
+#precision 100
+
+#skipchance 70
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "Field of Statues"
+
+#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#descr 8 "The caster attempts to petrify all creatures on the battlefield. There is a chance that they will not survive the recovery process."
+
+#scalefatigueexponent 1.4
+#pathperresearch 0.4
+#end

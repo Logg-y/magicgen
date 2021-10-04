@@ -1,0 +1,114 @@
+#neweffect "Summon mechanicalman"
+#effect 1
+#damage 532
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 6
+#pathlevel 2
+#fatiguecost 100
+--#scalefatiguemult 20
+#sound 31
+#schools 8
+#aispellmod 20
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "$conjure$ NAMEPREFIX Mechanical %Man%"
+#descr 8 "The caster quickly forms and enchants ARTICLE mechanical %man% from the metal below the battlefield. The %man% will crumble back to earth after the battle."
+
+#spelltype 528
+
+#scalerate 2
+#scalefatiguemult 7
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "mechanicalman ritual"
+#effect 10001
+#damage 532
+#spec 8388608
+#power 3
+#maxpower 7
+#nreff 2002
+#pathlevel 3
+#fatiguecost 500
+#schools 8
+
+#paths 8
+#secondarypaths 8
+
+
+#skipchance 97
+
+#name 8 "$Summon$ NAMEPREFIX Mechanical %Man%"
+#descr 8 "The caster forms and enchants ARTICLE mechanical %man% from metal. They are quite resistant to both physical and elemental damage."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "mechanicalman Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 532
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 500
+#schools 16
+#skipchance 99
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Mechanical Man $Ambush$"
+#descr 8 "The caster constructs a mechanical humanoid from metal in a distant province, and sends it to attack an enemy commander. The victim will not know who cast this on them, and the metal reverts to its previous state if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon mechanicalman"
+#effect 10038
+#provrange 4
+#damage 532
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 2007
+#pathlevel 4
+#fatiguecost 600
+#schools 16
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "$Send$ NAMEPREFIX Mechanical %Man%"
+#descr 8 "The caster forms and enchants ARTICLE mechanical %man% from metal in a distant province. The resulting constructs immediately attack whatever is there. They are quite resistant to both physical and elemental damage."
+
+#spelltype 20
+
+#scalerate 3
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 30
+#end
+
+
+
+

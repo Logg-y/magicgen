@@ -20,11 +20,11 @@
 #damage 100
 #spec 8540288
 #aoe 1
-#power 2
-#maxpower 14
+#power 0
+#maxpower 6
 #precision 1
 #range 50
-#pathlevel 2
+#pathlevel 1
 #fatiguecost 20
 #explspr 10102
 #sound 27
@@ -36,7 +36,7 @@
 #name 2 "NAMEPREFIX Thunderclap"
 #descr 2 "The caster creates a massive thunderclap around SUBJECT. Whilst this does not physically hurt the enemies, they may be stunned. Additionally, being exposed to the thunderclap is frightening and may permanently affect those of weaker mind who experience it."
 
-#maxpower 8
+#maxpower 6
 
 #nextspell "Thunderclap Battlefright"
 
@@ -48,4 +48,6 @@
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of thunderclaps"
 
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end

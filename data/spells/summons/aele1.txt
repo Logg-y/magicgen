@@ -3,7 +3,7 @@
 #damage 572
 #spec 0
 #power 3
-#maxpower 15
+#maxpower 9
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -26,7 +26,7 @@
 
 #scalerate 1
 
-#scalefatigueexponent 0.0
+#scalefatigueexponent -1.2
 
 #end
 
@@ -142,3 +142,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 25
 #end
+

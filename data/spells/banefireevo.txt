@@ -41,7 +41,7 @@
 #precision 2
 #nextspell "Banefire Decay"
 #flightspr 10067
-#explspr 10262
+#explspr 10127
 #sound 16
 #fatiguecost 20
 
@@ -107,3 +107,99 @@
 #descrcond range < 10 1 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #end
+
+#neweffect "Banefire Decay Cloud"
+#effect 4011
+#damage 256
+#spec 4224
+#schools -1
+#paths -1
+#name 32 "Decay"
+#spelltype 2
+#scalerate 0
+#aoe 1
+-- no visual
+#explspr 10360
+#power 1
+#name 1 "Banefire Decay"
+#name 32 "Banefire Decay"
+#end
+
+
+#neweffect "Banefire Cloud"
+#effect 4002
+#damage 3030
+#spec 64
+#aoe 5
+#power 8
+#maxpower 14
+#precision 1
+#range 30
+#pathlevel 5
+#fatiguecost 100
+#explspr 10127
+#sound 16
+#nextspell "Banefire Decay Cloud"
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+#scalefatiguemult 4
+
+#name 32 "NAMEPREFIX Banefire Cloud"
+#name 1 "NAMEPREFIX Banefire Cloud"
+
+#descr 1 "The caster creates a cloud of banefire to over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr 32 "The caster creates a cloud of banefire to over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 4
+-- #scalecost 0.3
+#schools 4
+
+#priority 1
+#namecond effect > 5000 d "Extended NAMEPREFIX Banefire Cloud"
+#namecond effect > 5000 f "Extended NAMEPREFIX Banefire Cloud"
+#scalefatigueexponent 1.3
+#end
+
+
+#neweffect "Banefire Rain"
+#copyspell "Gifts from Heaven"
+#effect 2
+#damage 2028
+-- AP
+#spec 64
+-- evo
+#aoe 1
+#schools 4
+#range 5030
+#precision -20
+#nextspell "Banefire Decay"
+#flightspr 10067
+#explspr 10127
+#sound 16
+#fatiguecost 200
+
+#paths 33
+#secondarypaths 33
+#secondarypathchance 100
+
+#name 32 "NAMEPREFIX Rain of Banefire"
+#name 1 "NAMEPREFIX Rain of Banefire"
+
+#descr f "The caster causes many balls of banefire to fall upon his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr d "The caster causes many balls of banefire to fall upon his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+
+
+#spelltype 18
+
+#power 9
+#maxpower 19
+#scalerate 3
+#pathlevel 6
+#nreff 30
+
+#scalefatigueexponent 1.3
+#end
+

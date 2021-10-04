@@ -11,9 +11,9 @@
 -- #scalecost 1.4
 
 #aoe 0
-#power 8
+#power 6
 -- this falls short of 100% field (aoe 21)
-#maxpower 14
+#maxpower 12
 #pathlevel 1
 #explspr 10216
 #sound 31
@@ -29,7 +29,8 @@
 #descr 128 "This spell will bring the ultimate protection for SUBJECT in battle. Whenever PRONOUN is wounded, the damage is transferred to the one who tried to wound him. Magic resistance might prevent this from taking effect, so the mage is not fully invulnerable. This method of protection is also rumored to be used by some of the most powerful and magically attuned beings."
 
 #priority 1
-#namecond effect > 1000 128 "NAMEPREFIX $mist$ of reversal" 
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of reversal"
 
 #end
+
 

@@ -7,12 +7,12 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.75
+#scalerate 0.9
 -- #scalecost 1.6
 
 #aoe 0
-#power 3
-#maxpower 11
+#power 2
+#maxpower 9
 #pathlevel 2
 #explspr 10224
 #sound 31
@@ -40,5 +40,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of swirling ice"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of swirling rocks"
 
+#pathperresearch 0.5
 #end
+
 

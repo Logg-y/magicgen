@@ -1,0 +1,120 @@
+#neweffect "Summon greatboar"
+#effect 1
+#damage 2136
+#spec 0
+#power 3
+#maxpower 11
+#precision -2
+#nreff 4
+#pathlevel 2
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+#scalefatiguemult 10
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+
+#name 64 "$send$ NAMEPREFIX Great %Boar%"
+#descr 64 "The caster summons ARTICLE great %boar%. Great boars are large and trample enemies, but are rather vulnerable to magic."
+#aispellmod -40
+
+#spelltype 528
+
+#scalerate 1.5
+#end
+
+#neweffect "greatboar ritual"
+#effect 10001
+#damage 2136
+#spec 0
+#power 3
+#maxpower 8
+#nreff 5
+#pathlevel 2
+#fatiguecost 420
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "$Summon$ NAMEPREFIX Great %Boar%"
+#descr 64 "The caster summons ARTICLE great %boar%. Great boars are large and trample enemies, but are rather vulnerable to magic."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+#pathperresearch 0.4
+
+#scalerate 1.5
+#end
+
+#neweffect "greatboar Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2136
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX Great %Boar% $ambush$"
+#descr 64 "The caster summons ARTICLE great %boar% to attack a hostile commander in a distant land. Great boars are large and trample enemies, but are rather vulnerable to magic."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote greatboar"
+#effect 10038
+#provrange 4
+#damage 2136
+#spec 0
+#power 4
+#maxpower 14
+#nreff 2002
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 40
+
+#name 64 "$Send$ NAMEPREFIX Great %Boar%"
+#descr 64 "The caster summons ARTICLE great %boar% to attack a distant land. Great boars are large and trample enemies, but are rather vulnerable to magic."
+
+
+#spelltype 20
+
+#scalerate 3
+#end
+
+
+
+

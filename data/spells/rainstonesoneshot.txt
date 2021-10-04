@@ -3,27 +3,26 @@
 #skipflightspr 1
 #effect 2
 #damage 2005
-#spec 549757911040
-#aoe 2010
+#spec 549757911040+562949953421312
+#aoe 0
 #power 3
 #maxpower 14
-#precision 0
+#precision -5
 #range 5025
 #pathlevel 2
 #fatiguecost 20
 #sound 31
-#paths 12
+#paths e
 #secondarypaths 2
 #secondarypathchance 60
 #name 8 "NAMEPREFIX Stone Rain"
 #name 4 "NAMEPREFIX Frozen Rain"
 
-#descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit by hailstones. Due to the speed at which the hail strikes, victims are caught by surprise and shields are no defence. More powerful casters can create larger hailstones."
-#descr 8 "The caster creates a brief shower of large stones over a SIZE area. Being in the area tends to result in getting hit by rocks. Due to the speed at which the stones strike, victims are caught by surprise and shields are no defence. More powerful casters can call larger stones."
+#descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit in the head by hailstones. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the hail."
+#descr 8 "The caster creates a brief shower of large stones over a SIZE area. eing in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
--- evo-like, battlefield allowed, scale aoe
-#spelltype 42
-#scalerate 2
+#spelltype 18
+#scalerate 6
 -- #scalecost 0.3
 #schools 4
 
@@ -31,6 +30,44 @@
 #namecond range < 10 4 "NAMEPREFIX touch of hailstones"
 #namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
 
+#scalefatigueexponent 0.6
+#nreff 20
+#end
+
+#neweffect "Rain Ice oneshot"
+#copyspell "Rain stone"
+#flightspr 98
+#effect 2
+#damage 2005
+#spec 549757911040+562949953421312
+#aoe 0
+#power 3
+#maxpower 14
+#precision -5
+#range 5025
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#paths w
+#secondarypaths 2
+#secondarypathchance 60
+#name 8 "NAMEPREFIX Stone Rain"
+#name 4 "NAMEPREFIX Frozen Rain"
+
+#descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit in the head by hailstones. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the hail."
+#descr 8 "The caster creates a brief shower of large stones over a SIZE area. eing in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
+
+#spelltype 18
+#scalerate 6
+-- #scalecost 0.3
+#schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX touch of hailstones"
+#namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
+
+#scalefatigueexponent 0.6
+#nreff 20
 #end
 
 

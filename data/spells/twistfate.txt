@@ -123,8 +123,8 @@
 #scalerate 1.5
 
 #aoe 0
-#power 4
-#maxpower 9
+#power 2
+#maxpower 7
 #pathlevel 1
 #explspr 10046
 #sound 31
@@ -159,4 +159,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of extended protection"
 
 #end
+
 

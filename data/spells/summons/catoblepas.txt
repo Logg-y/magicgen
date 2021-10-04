@@ -25,7 +25,7 @@
 #scalerate 0.7
 #scalefatigueexponent -1.6
 -- #scalecost 1.0
-#schools 16
+#schools 1
 #skipchance 50
 #end
 
@@ -91,7 +91,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 700
-#schools 16
+#schools 1
 #nogeodst 2052
 
 #skipchance 99.6

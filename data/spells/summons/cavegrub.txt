@@ -3,16 +3,16 @@
 #damage 2526
 #spec 0
 #power 3
-#maxpower 14
+#maxpower 10
 #precision -2
 #nreff 1
 #pathlevel 2
 #fatiguecost 22
 #sound 31
 #schools 1
-#scalefatiguemult 10
+#scalefatiguemult 0
 #pathperresearch 0.4
-#scalefatigueexponent -1.5
+#scalefatigueexponent -1.2
 #paths 8
 #secondarypaths 8
 
@@ -139,3 +139,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
+

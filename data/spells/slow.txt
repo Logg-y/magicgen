@@ -11,7 +11,7 @@
 -- #scalecost 0.6
 
 #aoe 1
-#power 4
+#power 3
 #pathlevel 2
 #explspr 10304
 #sound 114
@@ -32,12 +32,97 @@
 
 #details "Slowed 50%, Att -2, Def -2."
 
-#descr 4 "SUBJECT becomes slow if the fail to resist this spell's effects."
+#descr 4 "SUBJECT becomes slow if they fail to resist this spell's effects."
 #descr 16 "The caster attempts to slow the flow of time around SUBJECT. Creatures may resist this effect."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
+#scalefatigueexponent 1.4
+#maxpower 6
 #end
+
+#neweffect "Slow Battlefield"
+#effect 11
+#damage 68719476736
+#spec 8392704
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 7
+#pathlevel 4
+#explspr 10304
+#sound 114
+#fatiguecost 200
+#range 5015
+
+#paths 20
+#secondarypaths 4
+
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Mass Slow"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Mass Slow"
+
+#details "Slowed 50%, Att -2, Def -2."
+
+#descr 4 "Everyone on battlefield becomes slowed if they fail to resist this spell's effects."
+#descr 16 "The caster attempts to slow the flow of time around everyone on the battlefield. Creatures may resist this effect."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
+
+#scalefatigueexponent 1.4
+#maxpower 7
+#end
+
+
+#neweffect "Slow Battlefield Hostile Only"
+#effect 11
+#damage 68719476736
+#spec 8392704+262144
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#aoe 666
+#power 9
+#pathlevel 5
+#explspr 10304
+#sound 114
+#fatiguecost 300
+#range 5015
+
+#paths 20
+#secondarypaths 4
+
+
+#namecond effectiveaoe == 666 4 "NAMEPREFIX Curse of Slowness"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Curse of Slowness"
+
+#details "Slowed 50%, Att -2, Def -2."
+
+#descr 4 "The caster attempts to slow all of his enemies."
+#descr 16 "The caster attempts to slow the flow of time around all of his enemies. Creatures may resist this effect."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
+
+#scalefatigueexponent 1.4
+#maxpower 9
+#end
+
+
+
 

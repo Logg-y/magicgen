@@ -8,20 +8,20 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 3
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 2
-#power 2
+#power 1
 #precision 2
-#maxpower 14
+#maxpower 4
 #pathlevel 1
 #flightspr 10278
 #explspr 10277
 #sound 42
 #fatiguecost 20
-#range 2023
+#range 5025
 #skipchance 50
 
 #paths 64
@@ -49,19 +49,19 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 3
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 2
-#power 4
+#power 3
 #precision 2
-#maxpower 14
+#maxpower 6
 #pathlevel 3
 #explspr 102787
 #sound 42
 #fatiguecost 20
-#range 2023
+#range 5025
 #skipchance 50
 
 #paths 64
@@ -77,3 +77,73 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
 #namecond range < 10 64 "NAMEPREFIX touch of webs"
 #end
+
+#neweffect "Web Instant Battlefield"
+#effect 11
+#damage 536870912
+#spec 4398057013248+4096
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 666
+#power 7
+#precision 2
+#maxpower 7
+#pathlevel 4
+#explspr 102787
+#sound 42
+#fatiguecost 200
+#range 2023
+#skipchance 50
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 64 "NAMEPREFIX All-Encompassing Web"
+#descr 64 "The mage weaves webs around everyone on the entire battlefield, trapping them. Very large or strong beings will not be hindered by the web."
+#details "Str +DRN vs 22 to get free."
+
+#end
+
+
+#neweffect "Web Instant Hostile Only"
+#effect 11
+#damage 536870912
+#spec 4398057013248+4096
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 3
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 666
+#power 9
+#precision 2
+#maxpower 9
+#pathlevel 4
+#explspr 102787
+#sound 42
+#fatiguecost 300
+#range 2023
+#skipchance 70
+
+#paths 64
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 64 "NAMEPREFIX Curse of Webs"
+#descr 64 "The mage weaves webs around all of his enemies, trapping them. Very large or strong beings will not be hindered by the web."
+#details "Str +DRN vs 22 to get free."
+
+#end
+

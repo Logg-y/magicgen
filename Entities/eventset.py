@@ -345,7 +345,7 @@ class EventSet(object):
                             # no montags
                             if unitid < 0:
                                 continue
-                            unitobj = unitinbasedatafinder.get(unitid)
+                            #unitobj = unitinbasedatafinder.get(unitid)
 
                             if self.restrictunitstospellpaths > 0:
                                 if not (effect.paths & spell.path1):
@@ -353,7 +353,7 @@ class EventSet(object):
                                 if effect.secondarypathchance >= 85 and not (effect.secondarypaths & spell.path2):
                                     continue
 
-                            if realunitmod.compatibility(unitobj):
+                            if realunitmod.compatibilityWithSpellEffect(effect):
                                 effectpool.append(effect)
                 random.shuffle(effectpool)
 

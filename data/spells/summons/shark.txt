@@ -1,0 +1,122 @@
+#neweffect "Summon shark"
+#effect 1
+#damage 816
+#spec 41959424
+#power 3
+#maxpower 9
+#precision -2
+#nreff 4
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#aispellmod -33
+
+#paths 68
+#secondarypaths 68
+
+#skipchance 99
+
+#name 64 "$conjure$ NAMEPREFIX %Shark%"
+#name 4 "$conjure$ NAMEPREFIX %Shark%"
+#descr 4 "The caster summons ARTICLE %shark% to fight for him."
+#descr 64 "The caster summons ARTICLE %shark% to fight for him."
+
+#spelltype 528
+
+#scalerate 3
+--#scalefatiguemult 30
+#scalefatiguemult 5
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "shark ritual"
+#effect 10001
+#damage 816
+#spec 41959424
+#power 2
+#maxpower 5
+#nreff 1001
+#pathlevel 2
+#fatiguecost 300
+#schools 1
+
+#paths 68
+#secondarypaths 68
+
+#skipchance 99
+
+#name 64 "$Summon$ NAMEPREFIX %Shark%"
+#name 4 "$Summon$ NAMEPREFIX %Shark%"
+#descr 4 "The caster summons ARTICLE %shark% to fight for him."
+#descr 64 "The caster summons ARTICLE %shark% to fight for him."
+
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 15
+
+#scalerate 3.0
+#end
+
+#neweffect "shark Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 816
+#spec 41959424
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 1
+#skipchance 99
+#onlygeodst 2052
+
+#paths 68
+#secondarypaths 68
+
+#name 64 "NAMEPREFIX %Shark% $ambush$"
+#name 4 "NAMEPREFIX %Shark% $ambush$"
+#descr 4 "The caster summons ARTICLE %shark% to attack a hostile commander in a distant province."
+#descr 64 "The caster summons ARTICLE small %shark% to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon shark"
+#effect 10038
+#provrange 4
+#damage 816
+#spec 41959424
+#power 4
+#maxpower 14
+#nreff 1003
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#onlygeodst 2052
+
+#skipchance 99.6
+
+#paths 68
+#secondarypaths 68
+
+#name 64 "$Send$ NAMEPREFIX %Shark%"
+#name 4 "$Send$ NAMEPREFIX %Shark%"
+#descr 4 "The caster summons ARTICLE %shark% to attack a distant province."
+#descr 64 "The caster summons ARTICLE %shark% to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end
+
+

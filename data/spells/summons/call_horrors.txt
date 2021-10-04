@@ -1,0 +1,111 @@
+#neweffect "Call Lesser Horror"
+#effect 126
+#damage -6
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#sound 28
+#schools 16
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 70
+
+#name 128 "Call Lesser %Horror%"
+#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts several lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+
+#spelltype 528
+
+#scalerate 1
+#skipchance 97
+#end
+
+#neweffect "Call Horror"
+#effect 126
+#damage -7
+#spec 8388608
+#power 6
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 200
+#sound 28
+#schools 16
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 70
+
+#name 128 "Call %Horror%"
+#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+
+#spelltype 528
+
+#skipchance 97
+#scalerate 1
+#end
+
+
+#neweffect "Send Lesser Horror"
+#effect 10038
+#provrange 4
+#damage -6
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#schools 16
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 200
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 70
+
+#name 128 "Send Lesser %Horror%"
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE lesser %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
+
+#spelltype 20
+#skipchance 99.6
+
+#scalerate 2.0
+#end
+
+#neweffect "Send Horror"
+#effect 10038
+#provrange 4
+#damage -7
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 300
+#schools 16
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 200
+
+#paths 128
+#secondarypaths 16
+#secondarypathchance 70
+
+#name 128 "Send %Horror%"
+#descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
+
+#skipchance 99.6
+#spelltype 20
+
+#scalerate 2.0
+#end
+

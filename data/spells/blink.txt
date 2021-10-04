@@ -81,8 +81,8 @@
 #spec 4398071955456
 #schools 32
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
 
 #scalerate 1
 #scalefatigueexponent 0

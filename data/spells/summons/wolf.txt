@@ -1,0 +1,140 @@
+#neweffect "Summon wolf"
+#effect 1
+#damage 284
+#spec 0
+#power 1
+#maxpower 12
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#sound 26
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#aispellmod -40
+
+#name 64 "$conjure$ NAMEPREFIX %Wolf%"
+#descr 64 "Summons ARTICLE %wolf% to fight for the caster."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "Wolf chassis dummy"
+#effect 10001
+#damage 284
+#spec 0
+#power -2
+#maxpower -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 5
+#schools -1
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Pack of NAMEPREFIX Wolves"
+#descr 64 "Summons wolves to fight for the caster. Though ferocious to unarmed humans, on the battlefield they fare poorly and tend to die quickly to the hands of armed and armoured troops."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 5
+
+#scalerate 7
+#end
+
+
+#neweffect "Wolf ritual"
+#effect 10001
+#damage 284
+#spec 0
+#power -1
+#maxpower 2
+#nreff 5007
+#pathlevel 1
+#fatiguecost 200
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "Pack of NAMEPREFIX Wolves"
+#descr 64 "Summons wolves to fight for the caster. Though ferocious to unarmed humans, on the battlefield they fare poorly and tend to die quickly to the hands of armed and armoured troops."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 5
+
+#scalerate 7
+#siegepatrolchaff 1
+#end
+
+#neweffect "Wolf Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Wolf $ambush$"
+#descr 64 "Summons a wolf to ambush a hostile in a distant lands. The wolf is unlikely to succeed at killing more than an unarmed human."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon wolves"
+#effect 10038
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 14
+#nreff 7020
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+--#scalefatigueexponent 0.5
+--#scalefatiguemult 5
+
+#name 64 "$Send$ NAMEPREFIX Wolves"
+#descr 64 "Summons a pack of wolves to attack distant lands."
+
+#spelltype 20
+
+#scalerate 7
+#end
+
+

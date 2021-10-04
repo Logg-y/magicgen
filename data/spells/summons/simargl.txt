@@ -1,0 +1,149 @@
+#neweffect "Summon simargl"
+#effect 1
+#damage 1947
+#spec 0
+#power 2
+#maxpower 9
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 20
+--#scalefatiguemult 10
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$conjure$ NAMEPREFIX Simargl"
+#descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog."
+
+#spelltype 528
+#scalerate 0.51
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "simargl chassis dummy"
+#effect 10001
+#damage 1947
+#spec 0
+#power 2
+#maxpower 14
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#chassisvalue 20
+#schools -1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "Summon NAMEPREFIX Simargl"
+#descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog that is exceptional at patrolling."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#scalerate 4
+#end
+
+#neweffect "simargl ritual"
+#effect 10001
+#damage 1947
+#spec 0
+#power 1
+#maxpower 4
+#nreff 1
+#pathlevel 1
+#fatiguecost 100
+#chassisvalue 20
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$Summon$ NAMEPREFIX Simargl"
+#descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog that is exceptional at patrolling."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#scalerate 1
+#siegepatrolchaff 1
+#end
+
+#neweffect "simargl Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1947
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 99
+
+#name 2 "NAMEPREFIX Simargl $ambush$"
+#descr 2 "The caster summons ARTICLE simargl to attack a hostile commander in a distant province. The simargl is a small winged dog."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote simargl"
+#effect 10038
+#provrange 4
+#damage 1947
+#spec 0
+#power 4
+#maxpower 9
+#nreff 2004
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 20
+
+#name 2 "$Send$ NAMEPREFIX Simargl"
+#descr 2 "The caster summons ARTICLE simargl to attack a distant province. The simargl is a small winged dog."
+
+
+#spelltype 20
+
+#scalerate 4
+#end
+
+

@@ -1,0 +1,113 @@
+#neweffect "Summon aeles5"
+#effect 1
+#damage 568
+#spec 0
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 80
+#scalefatiguemult 10
+#details "The elementals are size 5."
+#name 2 "$conjure$ NAMEPREFIX Huge Air %Elemental%"
+#descr 2 "The caster summons forth ARTICLE very large air %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "aeles5 ritual"
+#effect 10001
+#damage 568
+#spec 0
+#power 4
+#maxpower 8
+#nreff 3
+#pathlevel 3
+#fatiguecost 900
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 80
+
+#details "The elementals are size 5."
+#name 2 "$Summon$ NAMEPREFIX Huge Air Elementals"
+#descr 2 "The caster summons forth very large air elementals."
+
+#spelltype 20
+
+#scalefatigueexponent -2
+#scalefatiguemult 80
+
+#scalerate 2
+#end
+
+#neweffect "aeles5 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 568
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 1300
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#details "The elementals are size 5."
+#name 2 "NAMEPREFIX Huge Air $ambush$"
+#descr 2 "The caster summons forth a very large air elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon aeles5"
+#effect 10038
+#provrange 4
+#damage 568
+#spec 0
+#power 6
+#maxpower 16
+#nreff 1000
+#pathlevel 4
+#fatiguecost 1600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#details "The elementals are size 5."
+#name 2 "$Send$ NAMEPREFIX Huge Air Elementals"
+#descr 2 "The caster summons forth very large air elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 90
+#end
+
+
+

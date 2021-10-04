@@ -1,0 +1,117 @@
+#neweffect "Summon livingmercury3"
+#effect 1
+#damage 2517
+#spec 8388608
+#power 5
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+#ainocast 1
+#scalefatiguemult 10
+#skipchance 97
+
+
+#details "The elementals are size 3."
+#name 4 "$conjure$ NAMEPREFIX Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE living %mercury%. They will fight for him until the battle ends. Living mercuries are surrounded by clouds of toxic fumes that may harm the caster unless he is resistant."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent -1.6
+#end
+
+#neweffect "livingmercury3 ritual"
+#effect 10001
+#damage 2517
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 5
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#skipchance 97
+
+#details "The elementals are size 3."
+#name 4 "$Summon$ NAMEPREFIX Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE living %mercury%."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+
+#scalerate 2
+#end
+
+#neweffect "livingmercury3 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2517
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 1100
+#schools 1
+#skipchance 99
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 3."
+#name 4 "NAMEPREFIX Living %Mercury% $ambush$"
+#descr 4 "The caster summons forth ARTICLE living %mercury% to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon livingmercury3"
+#effect 10038
+#provrange 4
+#damage 2517
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1000
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 3."
+#name 4 "$Send$ NAMEPREFIX Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE living %mercury% to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 110
+#end
+
+
+

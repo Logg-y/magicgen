@@ -1,0 +1,78 @@
+#neweffect "crusher ritual"
+#effect 10001
+#damage 475
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1
+#pathlevel 2
+#fatiguecost 220
+#schools 8
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "NAMEPREFIX Crusher Construction"
+#descr 8 "The caster forms and enchants ARTICLE giant %statue% from stone. The animated %statue% %is% incredibly difficult to harm with physical damage."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 30
+
+#scalerate 2
+#end
+
+#neweffect "crusher Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 475
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 6
+#fatiguecost 900
+#schools 8
+#skipchance 99
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Crusher $Ambush$"
+#descr 8 "The caster enchants a crusher in a distant province to attack an enemy commander. The victim will not know who cast this on them, and the crusher crumbles to dust if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon crusher"
+#effect 10038
+#provrange 4
+#damage 475
+#spec 8388608
+#power 5
+#maxpower 15
+#nreff 1
+#pathlevel 4
+#fatiguecost 900
+#schools 8
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "$Send$ NAMEPREFIX %Crusher%"
+#descr 8 "The caster forms and enchants ARTICLE %crusher% from stone in a distant province. The %crusher% %is% highly resistant to physical damagee."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#end
+

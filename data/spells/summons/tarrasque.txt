@@ -1,0 +1,112 @@
+#neweffect "Summon tarrasque"
+#effect 1
+#damage 925
+#spec 0
+#power 7
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 4
+#fatiguecost 100
+#scalefatiguemult 60
+#sound 31
+#schools 1
+#ainocast 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 92
+
+#name 64 "$conjure$ NAMEPREFIX %Tarrasque%"
+#descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours. For that reason, casting this spell may not be advisable if the caster or those around him are not poison resistant. The tarrasque leaves after the battle."
+
+#spelltype 528
+
+#scalerate 0.51
+#scalefatiguemult 60
+#scalefatigueexponent -2.5
+#end
+
+#neweffect "tarrasque ritual"
+#effect 10001
+#damage 925
+#power 8
+#maxpower 20
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 50
+
+#name 64 "$Summon$ NAMEPREFIX %Tarrasque%"
+#descr 64 "The caster summons ARTICLE %tarrasque% to help him in battle. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours."
+
+#spelltype 20
+
+#scalefatigueexponent -2.3
+#scalefatiguemult 200
+
+#scalerate 0.51
+#pathperresearch 0.4
+#end
+
+#neweffect "tarrasque Remote Assassination"
+#effect 10050
+#provrange 4
+#spec 0
+#damage 925
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 7
+#fatiguecost 1500
+#schools 1
+#skipchance 97
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX %Tarrasque% $ambush$"
+#descr 64 "The caster sends ARTICLE %tarrasque% to attack an enemy commander in a distant province. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon tarrasque"
+#effect 10038
+#provrange 4
+#damage 925
+#spec 0
+#power 9
+#maxpower 16
+#nreff 1
+#pathlevel 7
+#fatiguecost 1800
+#schools 1
+#nogeodst 2052
+
+#skipchance 99
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "$Send$ NAMEPREFIX %Tarrasque%"
+#descr 64 "The caster sends ARTICLE %tarrasque% to attack a distant province. The tarrasque is a massive poison-breathing dragon that regenerates and is surrounded by poisonous vapours."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 700
+#end
+
+
+

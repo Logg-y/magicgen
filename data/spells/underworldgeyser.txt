@@ -1,0 +1,129 @@
+#neweffect "Geyser of the Underworld Age"
+#effect 4101
+#damage 3
+#spec 128+4096+16384+524288+536870912
+#aoe 10
+#power 3
+#maxpower 3
+#precision 2
+#range 5045
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#paths d
+#secondarypaths d
+#secondarypathchance 0
+#name d "Shortened Lifespan"
+
+#descr d "The caster opens a channel to the underworld and allows deathly energy to pass through it and enter the world. Anyone within the blast area has their life sapped by the deathly energy, becoming soulless should it kill them. Those exposed to its deathly light are aged at a vastly accelerated rate."
+
+-- no visual
+#explspr 10360
+
+#spelltype 18
+#scalerate 0
+#schools -1
+
+#nreff 1
+#end
+
+#neweffect "Geyser of the Underworld Decay"
+#effect 4011
+#damage 256
+#spec 128+4096+16384+524288+536870912
+#aoe 1
+#power 3
+#maxpower 3
+#precision 2
+#range 5045
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#paths d
+#secondarypaths d
+#secondarypathchance 0
+#name d "Decay of the Underworld"
+
+#descr d "The caster opens a channel to the underworld and allows deathly energy to pass through it and enter the world. Anyone within the blast area has their life sapped by the deathly energy, becoming soulless should it kill them. Those exposed to its deathly light are aged at a vastly accelerated rate."
+
+#spelltype 18
+#scalerate 0
+#schools -1
+
+-- no visual
+#explspr 10360
+
+#nreff 1
+#nextspell "Geyser of the Underworld Age"
+#end
+
+#neweffect "Geyser of the Underworld"
+#effect 4074
+#damage 12
+#spec 128+4096+16384+524288+536870912
+#aoe 1
+#power 3
+#maxpower 3
+#precision 2
+#range 5045
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#paths d
+#secondarypaths d
+#secondarypathchance 0
+#name d "NAMEPREFIX Geyser of the Underworld"
+
+#descr d "The caster opens a channel to the underworld and allows deathly energy to pass through it and enter the world. Anyone within the blast area has their life sapped by the deathly energy, becoming soulless should it kill them. Those exposed to its deathly light are aged at a vastly accelerated rate."
+#details "Creates a geyser of deathly energy that damages those who enter it, raising those it kills as soulless. Those in the same square as the geyser must also make a MR check or become decayed. Those in an AoE 10 around the geyser (approximately one square) must make a MR check or be aged three years. Undead and inanimate creatures are entirely unaffected by this spell."
+
+#explspr 10197
+
+#spelltype 18
+#scalerate 0
+#schools evo
+
+#aispellmod 120
+
+#priority 1
+#namecond range < 10 d "NAMEPREFIX touch of underworld geysers"
+
+#nreff 1
+#nextspell "Geyser of the Underworld Decay"
+
+#end
+
+
+#neweffect "Geyser of the Underworld Multi"
+#effect 4074
+#damage 12
+#spec 128+4096+16384+524288+536870912
+#aoe 1
+#power 5
+#maxpower 14
+#precision -8
+#range 5045
+#pathlevel 3
+#fatiguecost 100
+#sound 31
+#paths d
+#secondarypaths d
+#secondarypathchance 0
+#name d "NAMEPREFIX Geysers of the Underworld"
+
+#descr d "The caster opens channels to the underworld and allows deathly energy to pass through it and enter the world. Anyone within the blast area has their life sapped by the deathly energy, becoming soulless should it kill them. Those exposed to its deathly light are aged at a vastly accelerated rate."
+#details "Creates geysers of deathly energy that damages those who enter them, raising those killed as soulless. Those in the same square as a geyser must also make a MR check or become decayed. Those in an AoE 10 around a geyser (approximately one square) must make a MR check or be aged three years. Undead and inanimate creatures are entirely unaffected by this spell."
+
+#explspr 10197
+
+#spelltype 18
+#scalerate 2.5
+#schools evo
+
+#priority 1
+#namecond range < 10 d "NAMEPREFIX touch of underworld geysers"
+
+#nreff 5
+#nextspell "Geyser of the Underworld Decay"
+
+#end

@@ -1,0 +1,121 @@
+#neweffect "Summon releasedone"
+#effect 1
+#damage 2525
+#spec 8388608
+#power 3
+#maxpower 12
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#scalefatiguemult 8
+#sound 31
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 80
+
+#name 32 "Animate NAMEPREFIX Ancient Bones"
+#name 8 "Animate NAMEPREFIX Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "releasedone ritual"
+#effect 10001
+#damage 2525
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1002
+#pathlevel 5
+#fatiguecost 300
+#schools 16
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#skipchance 60
+
+#name 32 "Animate NAMEPREFIX Ancient Bones"
+#name 8 "Animate NAMEPREFIX Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "releasedone Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2525
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 700
+#schools 16
+#skipchance 99
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "NAMEPREFIX Ancient Bones $ambush$"
+#name 8 "NAMEPREFIX Ancient Bones $ambush$"
+#descr 32 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
+#descr 8 "The caster unearths and animates bones of ancient human warriors to attack a hostile commander in a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness. The magic binding the bones will fade after the encounter, though the victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon releasedone"
+#effect 10038
+#provrange 4
+#damage 2525
+#spec 8388608
+#power 6
+#maxpower 9
+#nreff 1005
+#pathlevel 5
+#fatiguecost 700
+#schools 16
+
+#skipchance 99.6
+
+#paths 40
+#secondarypaths 40
+#secondarypathchance 97
+
+#name 32 "$Send$ NAMEPREFIX Ancient Bones"
+#name 8 "$Send$ NAMEPREFIX Ancient Bones"
+#descr 32 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+#descr 8 "The caster unearths and animates bones of ancient human warriors to attack a distant province. These warriors have become hardened with the passage of time and are highly resistant to damage. Due to spending millenia trapped below the earth, they are much more potent in darkness."
+
+#spelltype 20
+
+#scalerate 2.2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end
+
+

@@ -86,7 +86,7 @@
 -- evo, scale aoe
 #spelltype 34
 #aoe 6
-#scalerate 2
+#scalerate 0
 #power 4
 #name 1 "$Additional$ Shock"
 #name 2 "$Additional$ Shock"
@@ -114,7 +114,7 @@
 #spec 2176
 #aoe 1
 #power 5
-#maxpower 14
+#maxpower 5
 #precision 1
 #range 50
 #pathlevel 3
@@ -126,20 +126,19 @@
 #secondarypaths 2
 #pathskipchance 16 95
 
-#name 2 "NAMEPREFIX Thunder Strike"
-#name 16 "NAMEPREFIX Thunder Strike"
-#name 128 "NAMEPREFIX Thunder Strike"
+#name 2 "NAMEPREFIX Thunder %Strike%"
+#name 16 "NAMEPREFIX Thunder %Strike%"
+#name 128 "NAMEPREFIX Thunder %Strike%"
 #descr 2 "A bolt of lightning is called from the $sky$ upon some enemies."
 #descr 16 "A bolt of lightning is called from the $sky$ upon some enemies."
 #descr 128 "$BLOOD_INTRO$, the caster directs a charge down from the $sky$ upon his enemies."
 
-#maxpower 6
 
 #nextspell "Large Shock"
 
 -- evo-like, scale dmg
-#spelltype 66
-#scalerate 1
+#spelltype 18
+#scalerate 2.5
 #schools 4
 
 #priority 1
@@ -149,7 +148,47 @@
 #descrcond range < 10 2 "The caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
 #descrcond range < 10 16 "The caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes a massive burst of thunder upon those close to him, striking everyone around him."
+#scalefatiguemult 15
+#scalefatigueexponent -1.6
 #end
+
+#neweffect "Shock Evo Large Multi"
+#effect 2
+#damage 3017
+#spec 2176
+#aoe 1
+#power 6
+#nreff 5
+#maxpower 14
+#precision -8
+#range 50
+#pathlevel 3
+#fatiguecost 100
+#explspr 10241
+#sound 27
+
+#paths 146
+#secondarypaths 2
+#pathskipchance 16 95
+
+#name 2 "NAMEPREFIX Thunder %Strike%"
+#name 16 "NAMEPREFIX Thunder %Strike%"
+#name 128 "NAMEPREFIX Thunder %Strike%"
+#descr 2 "Bolts of lightning are called from the $sky$ upon some enemies."
+#descr 16 "Bolts of lightning is called from the $sky$ upon some enemies."
+#descr 128 "$BLOOD_INTRO$, the caster directs charges down from the $sky$ upon his enemies."
+
+#maxpower 13
+
+#nextspell "Large Shock"
+
+#spelltype 18
+#scalerate 5
+#schools 4
+
+#scalefatigueexponent 1.2
+#end
+
 
 
 #neweffect "Shock Evo Chain"
@@ -515,29 +554,29 @@
 -- #fatiguecost 200
 -- #sound 114
 -- #nreff 1
--- 
+--
 -- #skipchance 50
--- 
+--
 -- #maxbounces 3
--- 
+--
 -- #paths 138
 -- #secondarypaths 2
 -- #pathskipchance 8 95
--- 
+--
 -- #name 2 "Chain Lightning"
 -- #name 8	"Charge Ground"
 -- #name 128 "Chain Lightning"
 -- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
--- 
+--
 -- -- evo, scale aoe
 -- #spelltype 34
 -- #scalerate 0.6
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
--- 
+--
 -- #neweffect "Shock Evo Chain 10pc"
 -- #effect 134
 -- #damage 2
@@ -551,29 +590,29 @@
 -- #fatiguecost 300
 -- #sound 114
 -- #nreff 1
--- 
+--
 -- #skipchance 50
--- 
+--
 -- #maxbounces 3
--- 
+--
 -- #paths 138
 -- #secondarypaths 2
 -- #pathskipchance 8 95
--- 
+--
 -- #name 2 "Chain Lightning"
 -- #name 8	"Charge Ground"
 -- #name 128 "Chain Lightning"
 -- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
--- 
+--
 -- -- evo, scale aoe
 -- #spelltype 34
 -- #scalerate 0.6
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
--- 
+--
 -- #neweffect "Shock Evo Chain 25pc"
 -- #effect 134
 -- #damage 2
@@ -587,29 +626,29 @@
 -- #fatiguecost 400
 -- #sound 114
 -- #nreff 1
--- 
+--
 -- #skipchance 50
--- 
+--
 -- #maxbounces 3
--- 
+--
 -- #paths 138
 -- #secondarypaths 2
 -- #pathskipchance 8 95
--- 
+--
 -- #name 2 "Chain Lightning"
 -- #name 8	"Charge Ground"
 -- #name 128 "Chain Lightning"
 -- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
--- 
+--
 -- -- evo, scale aoe
 -- #spelltype 34
 -- #scalerate 0.6
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
--- 
+--
 -- #neweffect "Shock Evo Chain 50pc"
 -- #effect 134
 -- #damage 2
@@ -623,29 +662,29 @@
 -- #fatiguecost 600
 -- #sound 114
 -- #nreff 1
--- 
+--
 -- #skipchance 50
--- 
+--
 -- #maxbounces 3
--- 
+--
 -- #paths 138
 -- #secondarypaths 2
 -- #pathskipchance 8 95
--- 
+--
 -- #name 2 "Chain Lightning"
 -- #name 8	"Charge Ground"
 -- #name 128 "Chain Lightning"
 -- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
--- 
+--
 -- -- evo, scale aoe
 -- #spelltype 34
 -- #scalerate 0.6
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
--- 
+--
 -- #neweffect "Shock Evo Chain 100pc"
 -- #effect 134
 -- #damage 2
@@ -659,25 +698,27 @@
 -- #fatiguecost 700
 -- #sound 114
 -- #nreff 1
--- 
+--
 -- #skipchance 50
--- 
+--
 -- #maxbounces 3
--- 
+--
 -- #paths 138
 -- #secondarypaths 2
 -- #pathskipchance 8 95
--- 
+--
 -- #name 2 "Chain Lightning"
 -- #name 8	"Charge Ground"
 -- #name 128 "Chain Lightning"
 -- #descr 2 "Electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 8 "Electrical charges from $underground$ are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
 -- #descr 128 "$BLOOD_INTRO$, electrical charges are unleashed all over the battlefield. They are free to arc to anything standing on the battlefield."
--- 
+--
 -- -- evo, scale aoe
 -- #spelltype 34
 -- #scalerate 0.6
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
+
+

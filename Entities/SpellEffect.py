@@ -236,7 +236,7 @@ class SpellEffect(object):
             mod = None
             while mod is None:
                 m = utils.modifiers[modlist.pop(0)]
-                print(f"Consider: {m.name})")
+                print(f"Consider mod: {m.name}")
                 if m.compatibility(self, researchlevel, isnextspell):
                     if random.random() * 100 < m.skipchance:
                         if m.skipchance < 100.0:
@@ -644,16 +644,6 @@ class SpellEffect(object):
             s.range = 0
 
 
-        # Reasons to try generating again:
-        # if our path level has been reduced below 1 by mods
-        if s.path1level < 1 and self.pathlevel > 0:
-            print(f"Failed to generate, pathlevel has fallen to {s.path1level}")
-            # researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None, blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None
-            return self.rollSpell(researchlevel, forceschool=forceschool, forcepath=forcepath, isnextspell=isnextspell,
-                                  forcesecondaryeff=forcesecondaryeff, blocksecondary=blocksecondary,
-                                  allowblood=allowblood, allowskipchance=allowskipchance, setparams=setparams,
-                                  forcepathlevel=forcepathlevel, forcedmodifier=forcedmodifier, **options)
-
         # Forced modifier overrides
         for attrib, val in mod.setcommands:
             print(f"mod: Set spell {attrib} to {val}")
@@ -663,6 +653,17 @@ class SpellEffect(object):
             newval = int(getattr(s, attrib) * val)
             print(f"mod: Mult: spell {attrib} by {val} to {newval}")
             setattr(s, attrib, newval)
+
+        # Reasons to try generating again:
+        # if our path level has been reduced below 1 by mods
+        if s.path1level < 1 and self.pathlevel > 0:
+            print(f"Failed to generate, pathlevel has fallen to {s.path1level}")
+            # researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None, blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None
+            return self.rollSpell(researchlevel, forceschool=forceschool, forcepath=forcepath,
+                                  isnextspell=isnextspell,
+                                  forcesecondaryeff=forcesecondaryeff, blocksecondary=blocksecondary,
+                                  allowblood=allowblood, allowskipchance=allowskipchance, setparams=setparams,
+                                  forcepathlevel=forcepathlevel, forcedmodifier=forcedmodifier, **options)
 
         # Apply modifier to the spell
         for param in mod.params:
@@ -920,7 +921,7 @@ class SpellEffect(object):
             s.details = s.details.strip()
 
         # Damage clouds
-        if s.effect > 1000 and s.effect % 1000 == 2:
+        if s.effect > 1000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
             s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
             s.details = s.details.strip()
 
@@ -947,7 +948,7 @@ class SpellEffect(object):
         finalglobalscaling = int(self.basescale + scaleamt)
         s.details = s.details.replace("SCALEAMT", str(finalglobalscaling))
 
-        if s.nextspell != "":
+        if s.nextspell != "" and s.nextspell is not None:
             s.details = s.details.replace("NEXTSPELL_EFFECTNUMBER_5XX", str((s.nextspell.effect % 1000) - 499))
         s.details = s.details.replace("EFFECTNUMBER_5XX", str((s.effect % 1000) - 499))
         s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
@@ -1068,6 +1069,9 @@ class SpellEffect(object):
         s.comments.append(f"Chosen modifier is {mod.name}")
         s.comments.append(f"Secondary effect is {secondary.name}")
         s.comments.append(f"Main spell is {s.name}")
+        if setparams is not None:
+            for param, paramval in setparams.items():
+                s.comments.append(f"Set param {param} to {paramval}")
         try:
             s.comments.append(f"Final power level was {actualpowerlvl}")
             s.comments.append(f"Scaleamt was {scaleamt}")
@@ -1080,23 +1084,26 @@ class SpellEffect(object):
             s.flightspr = None
 
         if mod.givecloudsfx == 1:
+            # 10123 may be usable but it's a bit dense
             if s.path1 == 1:
-                s.explspr = 10053
+                s.explspr = random.choice([10053, 10011, 10014, 10203, 10311])
             elif s.path1 == 2:
-                s.explspr = random.choice([10056, 10048, 10018])
+                s.explspr = random.choice([10056, 10048, 10002, 10048, 10228, 10291, 10318, 10338])
             elif s.path1 == 4:
-                s.explspr = random.choice([10045, 10054])
+                s.explspr = random.choice([10045, 10054, 10005, 10008, 10015, 10196, 10230, 10275])
             elif s.path1 == 8:
-                s.explspr = 10058
+                s.explspr = random.choice([10058, 10018, 10051, 10053, 10192, 10193, 10260, 10279])
             elif s.path1 == 16:
-                s.explspr = 10041
+                s.explspr = random.choice([10041, 10001, 10121, 10159, 10207, 10266])
             elif s.path1 == 32:
-                s.explspr = 10060
+                s.explspr = random.choice([10060, 10009, 10020, 10049, 10141, 10142, 10160, 10188, 10212, 10234, 10257,
+                                           10261, 10317])
                 #s.explspr = 10057
             elif s.path1 == 64:
-                s.explspr = random.choice([10044, 10017])
+                s.explspr = random.choice([10044, 10017, 10004, 10007, 10012, 10013, 10016, 10047, 10052, 10055, 10161,
+                                           10184, 10231, 10237, ])
             elif s.path1 == 128:
-                s.explspr = random.choice([10043, 10003])
+                s.explspr = random.choice([10043, 10003, 10259])
 
         self.generated += 1
 
@@ -1350,14 +1357,14 @@ class SpellEffect(object):
             # this is fluffed to 40-160% of the calculated value
 
             # Illwinter formula values for reference:
-            # 1 longdead: 72
-            # 5 longdead (HoS): 360
+            # 1 longdead: ~72
+            # 5 longdead (HoS): ~360
             # phantasmal wolf: 64
             # wight: 124
             # magma child: 162
 
             # Mine:
-            myaiscore = 20 + (0.5 + (self.fatiguecost / 40)) * (spell.path1level + max(0, spell.path2level)) * 20 + (spell.researchlevel * 50)
+            myaiscore = 5 + (0.5 + (self.fatiguecost / 40)) * (spell.path1level + max(0, spell.path2level)) * 10 + ((2 + spell.researchlevel) * 8)
             myaiscore += (spell.fatiguecost / 2)
             proportion = myaiscore/finalaiscore
             spell.multiplyAISpellMod(proportion)
@@ -1371,7 +1378,7 @@ class SpellEffect(object):
             # Do I make it battlefield wide?
             if self.spelltype & SpellTypes.BUFF and self.spelltype & SpellTypes.ALLOW_BATTLEFIELD and not mod.nobattlefield and not secondary.nobattlefield:
                 tmp = s.aoe % 1000
-                if tmp > 25:
+                if tmp > 30:
                     s.aoe = 666
                     # make it friendly only
                     if not self.spec & 4194304:

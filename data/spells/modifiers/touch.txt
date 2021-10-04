@@ -28,6 +28,8 @@
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
+#maxfinalfatiguecost 100
+
 #end
 
 
@@ -62,6 +64,8 @@
 
 #descr "Despite its lethality, the caster is able to shield himself and his allies from its short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Lifedrain"
@@ -94,6 +98,8 @@
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Paralyze"
@@ -123,6 +129,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 #end
 
@@ -155,6 +163,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Earthmeld"
@@ -186,6 +196,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Enslave"
@@ -215,6 +227,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 #end
 
@@ -246,6 +260,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Sleep"
@@ -276,6 +292,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -309,6 +327,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 -- #descr "This spell has a devastating effect but a shorter range."
 
 #end
@@ -340,6 +360,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
@@ -375,6 +397,8 @@
 
 -- #descr "This spell has a devastating effect but a shorter range."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Bonds of Fire"
@@ -405,6 +429,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 #end
 
@@ -437,6 +463,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Web"
@@ -467,6 +495,8 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 #end
 
@@ -499,6 +529,8 @@
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
 
+#maxfinalfatiguecost 100
+
 #end
 
 #newmodifier "Touch Range Encase in Ice"
@@ -529,5 +561,7 @@
 #spec 262144
 
 #descr "The caster is able to shield himself and his allies from this spell's short range effects."
+
+#maxfinalfatiguecost 100
 
 #end

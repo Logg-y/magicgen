@@ -1,0 +1,154 @@
+#neweffect "Summon ziz"
+#effect 1
+#damage 1388
+#spec 0
+#power 5
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 3
+#fatiguecost 100
+#scalefatiguemult 8
+#sound 31
+#schools 16
+
+#paths 32
+#secondarypaths 2
+#secondarypathchance 95
+
+#skipchance 50
+
+#name 32 "$conjure$ NAMEPREFIX Ziz"
+#descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
+
+#spelltype 528
+
+#scalerate 1.4
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+
+#neweffect "ziz chassis dummy"
+#effect 10001
+#damage 1388
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1001
+#pathlevel 3
+#fatiguecost 200
+#schools -1
+
+#paths 32
+#secondarypaths 2
+#secondarypathchance 95
+
+#skipchance 50
+
+#name 32 "$Summon$ NAMEPREFIX Ziz"
+#descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 50
+
+#scalerate 4
+#end
+
+#neweffect "ziz ritual"
+#effect 10001
+#damage 1388
+#spec 0
+#power 4
+#maxpower 7
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 16
+
+#paths 32
+#secondarypaths 2
+#secondarypathchance 95
+
+#skipchance 50
+
+#name 32 "$Summon$ NAMEPREFIX Ziz"
+#descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 20
+#siegepatrolchaff 1
+
+#scalerate 2
+#end
+
+#neweffect "ziz Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1388
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 16
+#skipchance 90
+#nogeodst 2052
+
+#paths 32
+#secondarypaths 2
+#secondarypathchance 95
+#skipchance 90
+
+#name 32 "NAMEPREFIX Ziz $ambush$"
+#descr 32 "The caster enchants the bones of ARTICLE great %eagle% in a distant province and grants them new life. The newly animated ziz attacks a hostile commander there and then returns to its original dead state after the battle. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
+
+
+#spelltype 4
+
+#end
+
+#neweffect "remote ziz"
+#effect 10038
+#provrange 4
+#damage 1388
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 700
+#schools 16
+#nogeodst 2052
+
+#skipchance 90
+
+#paths 32
+#secondarypaths 2
+#secondarypathchance 95
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 35
+
+#name 32 "$Send$ NAMEPREFIX Ziz"
+#descr 32 "The caster enchants the bones of ARTICLE great %eagle% in a distant province, where they attack soon after. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
+
+
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+

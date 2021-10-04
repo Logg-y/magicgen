@@ -1,0 +1,113 @@
+#neweffect "Summon killermantis"
+#effect 1
+#damage 2226
+#spec 0
+#power 2
+#maxpower 12
+#precision -2
+#nreff 8
+#pathlevel 1
+#fatiguecost 120
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 80
+
+#scalefatiguemult 3
+#pathperresearch 0.4
+-- this oddly specific value was needed to keep it costing 1 gem
+#scalefatigueexponent -1.2
+#skipchance 99
+
+#name 64 "$conjure$ NAMEPREFIX Killer Mantis"
+#descr 64 "Summons ARTICLE killer mantis to fight for the caster. The killer mantis is an exceptionally large insect."
+
+#spelltype 528
+
+#scalerate 3
+#end
+
+#neweffect "killermantis ritual"
+#effect 10001
+#damage 2226
+#spec 0
+#power 2
+#maxpower 5
+#nreff 4
+#pathlevel 1
+#fatiguecost 120
+#schools 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 80
+
+#name 64 "$Summon$ NAMEPREFIX Killer Mantis"
+#descr 64 "Summons ARTICLE killer mantis to fight for the caster. The killer mantis is an exceptionally large insect."
+
+#spelltype 20
+
+#skipchance 99
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 22
+
+#scalerate 3
+#end
+
+#neweffect "killermantis Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2226
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 80
+
+#name 64 "NAMEPREFIX Killer Mantis $ambush$"
+#descr 64 "Summons ARTICLE killer mantis to attack a hostile commander in a distant land. The killer mantis is an exceptionally large insect."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon killermantis"
+#effect 10038
+#provrange 4
+#damage 2226
+#spec 0
+#power 3
+#maxpower 14
+#nreff 2002
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 27
+
+#name 64 "$Send$ NAMEPREFIX Killer Mantis"
+#descr 64 "Summons ARTICLE killer mantis to attack a distant land. The killer mantis is an exceptionally large insect."
+
+#spelltype 20
+
+#scalerate 2.0
+#end
+

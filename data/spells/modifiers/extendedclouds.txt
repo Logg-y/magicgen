@@ -14,7 +14,7 @@
 #aispellmod 300
 
 #pathlevel 0
-#power -3
+#power -2
 
 #end
 
@@ -34,6 +34,6 @@
 #mult fatiguecost 1.9
 
 #pathlevel 0
-#power -4
+#power -3
 
 #end

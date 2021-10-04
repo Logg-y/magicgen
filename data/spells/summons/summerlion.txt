@@ -1,0 +1,112 @@
+#neweffect "Summon summerlion"
+#effect 1
+#damage 515
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+--#scalefatiguemult 40
+#schools 1
+
+#paths 1
+#secondarypaths 1
+
+#skipchance 50
+
+#name 1 "$conjure$ NAMEPREFIX Summer %Lion%"
+#descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatiguemult 7
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "summerlion ritual"
+#effect 10001
+#damage 515
+#spec 0
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 1
+#secondarypaths 1
+
+#skipchance 50
+
+#name 1 "$Summon$ NAMEPREFIX Summer %Lion%"
+#descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 12
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "summerlion Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 515
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX Summer Lion $Ambush$"
+#descr 1 "The caster summons ARTICLE spectral summer %lion% to attack a random enemy commander in a distant province. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon summerlion"
+#effect 10038
+#provrange 4
+#damage 515
+#spec 0
+#power 6
+#maxpower 16
+#nreff 1000
+#pathlevel 4
+#fatiguecost 1200
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "$Send$ NAMEPREFIX Summer %Lion%"
+#descr 1 "The caster summons ARTICLE spectral summer %lion% to attack a distant province. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end
+
+

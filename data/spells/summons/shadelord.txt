@@ -1,0 +1,108 @@
+#neweffect "Summon shadelord"
+#effect 1
+#damage 843
+#spec 8388608
+#power 3
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 97
+
+#name 32 "$conjure$ NAMEPREFIX Shade %Lord%"
+#descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to fight for him. Shade lords are powerful ethereal undead which can strike through their victims' armour."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatiguemult 8
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "shadelord ritual"
+#effect 10001
+#damage 843
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+
+#skipchance 97
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 97
+
+#name 32 "$Summon$ NAMEPREFIX Shade %Lord%"
+#descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to fight for him. Shade lords are powerful ethereal undead which can strike through their victims' armour."
+
+#spelltype 20
+
+#scalerate 1.5
+#scalefatiguemult 20
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "shadelord Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 843
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools 1
+#skipchance 99
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shade %Lord% $ambush$"
+#descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to attack a hostile commander in a distant province. Shade lords are powerful ethereal undead which can strike through their victims' armour."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon shadelord"
+#effect 10038
+#provrange 4
+#damage 843
+#spec 8388608
+#power 5
+#maxpower 9
+#nreff 1001
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+
+#skipchance 99.6
+
+#paths 32
+#secondarypaths 32
+
+#name 32 "$Send$ NAMEPREFIX Shade %Lord%"
+#descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to attack a distant province. Shade lords are powerful ethereal undead which can strike through their victims' armour."
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end
+
+

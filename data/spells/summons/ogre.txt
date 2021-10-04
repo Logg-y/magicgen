@@ -25,7 +25,7 @@
 #scalefatigueexponent -1.6
 -- #scalecost 1.0
 #pathperresearch 0.4
-#schools 16
+#schools 1
 #skipchance 50
 #end
 
@@ -34,7 +34,7 @@
 #damage 2135
 #spec 0
 #power 3
-#maxpower 14
+#maxpower 7
 #nreff 2004
 #pathlevel 2
 #fatiguecost 400
@@ -110,4 +110,5 @@
 
 #scalerate 2.0
 #end
+
 

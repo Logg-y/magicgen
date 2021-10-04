@@ -1,0 +1,116 @@
+#neweffect "Summon living statue"
+#effect 1
+#damage 474
+#spec 8388608
+#power 4
+#maxpower 12
+#precision -2
+#nreff 8
+#pathlevel 2
+#fatiguecost 100
+--#scalefatiguemult 20
+#sound 31
+#schools 16
+#aispellmod 40
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "$conjure$ NAMEPREFIX Living %Statue%"
+#descr 8 "The caster quickly forms and enchants ARTICLE living %statue% from the earth. The %statue% will crumble back to earth after the battle."
+
+#spelltype 528
+
+#scalerate 3
+#scalefatiguemult 10
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "livingstatue ritual"
+#effect 10001
+#damage 474
+#spec 8388608
+#power 3
+#maxpower 6
+#nreff 10
+#pathlevel 2
+#fatiguecost 300
+#schools 16
+
+#paths 8
+#secondarypaths 8
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "$Summon$ NAMEPREFIX Living %Statue%"
+#descr 8 "The caster forms and enchants ARTICLE living %statue% from earth. The %statue% %is% highly resistant to physical damage."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 12
+
+#scalerate 3
+#pathperresearch 0.4
+#end
+
+#neweffect "livingstatue Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 474
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 16
+#skipchance 99
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Statue $ambush$"
+#descr 8 "The caster enchants a statue in a distant province to attack an enemy commander. The victim will not know who cast this on them, and the affected statue returns to its mundane inanimate state if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon livingstatue"
+#effect 10038
+#provrange 4
+#damage 474
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 2000
+#pathlevel 4
+#fatiguecost 800
+#schools 16
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "$Send$ NAMEPREFIX Living %Statue%"
+#descr 8 "The caster forms and enchants ARTICLE living %statue% from earth in a distant province. The %statue% %is% highly resistant to physical damagee."
+
+#spelltype 20
+
+#scalerate 3
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end
+
+
+
+

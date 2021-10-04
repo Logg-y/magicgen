@@ -3,7 +3,7 @@
 #damage 2134
 #spec 8388608
 #power 2
-#maxpower 14
+#maxpower 10
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -24,7 +24,7 @@
 
 #scalerate 0.51
 #scalefatigueexponent -1.5
-#scalefatiguemult 4
+#scalefatiguemult 0
 #pathperresearch 0.4
 #end
 
@@ -33,7 +33,7 @@
 #damage 2134
 #spec 8388608
 #power 5
-#maxpower 14
+#maxpower 8
 #nreff 1003
 #pathlevel 1
 #fatiguecost 200
@@ -106,6 +106,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
+
+
 
 
 

@@ -1,0 +1,161 @@
+#neweffect "Summon wingedmonkey"
+#effect 1
+#damage 1199
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 20
+#sound 31
+#schools 1
+
+#paths 80
+#secondarypaths 80
+#secondarypathchance 70
+
+#skipchance 97
+
+#aispellmod -40
+
+#name 16 "$conjure$ NAMEPREFIX Winged Monkies"
+#name 64 "$conjure$ NAMEPREFIX Winged Monkies"
+#descr 16 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+#descr 64 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+
+#spelltype 528
+
+#scalerate 0.51
+--#scalefatiguemult 5
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "wingedmonkey chassis dummy"
+#effect 10001
+#damage 1199
+#spec 0
+#power 0
+#maxpower 0
+#nreff 1
+#pathlevel 2
+#fatiguecost 10
+#schools -1
+
+#paths 80
+#secondarypaths 80
+#secondarypathchance 70
+#scalefatiguemult 10
+
+#skipchance 97
+
+#name 16 "$Summon$ NAMEPREFIX Winged Monkies"
+#name 64 "$Summon$ NAMEPREFIX Winged Monkies"
+#descr 16 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+#descr 64 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 20
+
+#scalerate 4
+#end
+
+#neweffect "wingedmonkey ritual"
+#effect 10001
+#damage 1199
+#spec 0
+#power 1
+#maxpower 4
+#nreff 2003
+#pathlevel 2
+#fatiguecost 200
+#schools 1
+
+#paths 80
+#secondarypaths 80
+#secondarypathchance 70
+#scalefatiguemult 12.0
+
+#skipchance 97
+
+#name 16 "$Summon$ NAMEPREFIX Winged Monkies"
+#name 64 "$Summon$ NAMEPREFIX Winged Monkies"
+#descr 16 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+#descr 64 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 12.0
+
+#scalerate 4
+#siegepatrolchaff 1
+#end
+
+#neweffect "wingedmonkey Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1199
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 80
+#secondarypaths 80
+#secondarypathchance 70
+
+#name 64 "NAMEPREFIX Winged Monkey $ambush$"
+#name 16 "NAMEPREFIX Winged Monkey $ambush$"
+#descr 64 "The caster summons a winged monkey and sends it to seek out an enemy commander in a distant land. It is very unlikely to successfully kill most commanders, serving as little more than an annoyance."
+#descr 16 "The caster summons a winged monkey and sends it to seek out an enemy commander in a distant land. It is very unlikely to successfully kill most commanders, serving as little more than an annoyance."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote wingedmonkey"
+#effect 10038
+#provrange 4
+#damage 1199
+#spec 0
+#power 4
+#maxpower 14
+#nreff 5010
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 80
+#secondarypaths 80
+#secondarypathchance 70
+
+--#scalefatigueexponent 0.5
+#scalefatiguemult 7
+
+#name 64 "$Send$ NAMEPREFIX Winged Monkies"
+#name 16 "$Send$ NAMEPREFIX Winged Monkies"
+#descr 64 "The caster summons Winged Monkies and sends them to attack distant lands."
+#descr 16 "The caster summons Winged Monkies and sends them to attack distant lands."
+
+#spelltype 20
+
+#scalerate 4
+#end
+
+

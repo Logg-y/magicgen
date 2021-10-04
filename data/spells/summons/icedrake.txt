@@ -31,7 +31,7 @@
 #damage 579
 #spec 0
 #power 5
-#maxpower 14
+#maxpower 9
 #nreff 1001
 #pathlevel 3
 #fatiguecost 700
@@ -50,7 +50,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 
-#scalerate 4
+#scalerate 2
 #end
 
 #neweffect "icedrake Remote Assassination"
@@ -107,4 +107,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
+
 

@@ -36,7 +36,7 @@
 #damage 522
 #spec 0
 #power 3
-#maxpower 9
+#maxpower 6
 #nreff 5
 #pathlevel 2
 #fatiguecost 310
@@ -57,7 +57,7 @@
 #scalefatiguemult 10
 #pathperresearch 0.4
 
-#scalerate 4
+#scalerate 3
 #details "Creatures summoned with this spell are not sacred."
 #end
 
@@ -117,4 +117,5 @@
 #scalefatiguemult 40
 #details "Creatures summoned with this spell are not sacred."
 #end
+
 

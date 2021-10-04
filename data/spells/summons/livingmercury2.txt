@@ -1,0 +1,118 @@
+#neweffect "Summon livingmercury2"
+#effect 1
+#damage 2518
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+#scalefatiguemult 11.0
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+#ainocast 1
+
+#skipchance 97
+
+
+#details "The elementals are size 2."
+#name 4 "$conjure$ NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury%. They will fight for him until the battle ends. Living mercuries are surrounded by clouds of toxic fumes that may harm the caster unless he is resistant."
+
+#spelltype 528
+
+#scalerate 1.5
+#scalefatigueexponent -1.6
+#end
+
+#neweffect "livingmercury2 ritual"
+#effect 10001
+#damage 2518
+#spec 8388608
+#power 4
+#maxpower 7
+#nreff 2001
+#pathlevel 3
+#fatiguecost 500
+#schools 1
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#skipchance 97
+
+#details "The elementals are size 2."
+#name 4 "$Summon$ NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury%."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 15
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "livingmercury2 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 2518
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 900
+#schools 1
+#skipchance 99
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 2."
+#name 4 "NAMEPREFIX Small Living %Mercury% $ambush$"
+#descr 4 "The caster summons forth ARTICLE small living %mercury% to attack a hostile commander in a distant province."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon livingmercury2"
+#effect 10038
+#provrange 4
+#damage 2518
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2001
+#pathlevel 2
+#fatiguecost 1000
+#schools 1
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 8
+#secondarypathchance 90
+
+#details "The elementals are size 2."
+#name 4 "$Send$ NAMEPREFIX Small Living %Mercury%"
+#descr 4 "The caster summons forth ARTICLE small living %mercury% to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+#end
+
+
+

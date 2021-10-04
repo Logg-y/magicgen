@@ -1,5 +1,6 @@
 from Enums.SpellTypes import SpellTypes
 from Services import utils
+import math
 
 class SpellModifier(object):
     def __init__(self):
@@ -30,6 +31,8 @@ class SpellModifier(object):
         self.scalefatigueexponent = 0.0
 
         self.nobattlefield = False
+        self.minfinalfatiguecost = None
+        self.maxfinalfatiguecost = None
 
         self.reqs = []
         self.descrs = []
@@ -99,5 +102,36 @@ class SpellModifier(object):
         finalpathlevel = self.pathlevel + eff.pathlevel
         if finalpathlevel <= 0 and eff.pathlevel > 0:
             return False
+
+        if self.maxfinalfatiguecost is not None or self.minfinalfatiguecost is not None:
+            scaleamt = (self.scalerate + eff.scalerate) * ((researchlevel * (researchlevel + 1)) / 2)
+
+            scaleamt = scaleamt * (eff.scalecost + self.scalecost)
+            finalfatigue = eff.fatiguecost
+            fatiguefromresearch = 10 * researchlevel
+            scaleexponent = self.scalefatigueexponent + eff.scalefatigueexponent
+            exponentcomponent = scaleamt ** abs(scaleexponent)
+            finalfatigue += fatiguefromresearch
+            if scaleexponent >= 0.0:
+                finalfatigue += exponentcomponent
+            else:
+                finalfatigue -= exponentcomponent
+            finalfatigue = math.floor(finalfatigue)
+
+            for attrib, mult in self.multcommands:
+                if attrib == "fatiguecost":
+                    finalfatigue *= mult
+
+            # blood gets doubled
+            # (this will unfortunately miss blood versions of other paths' spells, but alas)
+            if eff.paths == 128:
+                finalfatigue *= 2
+
+            if self.maxfinalfatiguecost is not None and finalfatigue >= self.maxfinalfatiguecost:
+                print(f"maxfinalfatiguecost of {finalfatigue} too high (vs {self.maxfinalfatiguecost})")
+                return False
+            if self.minfinalfatiguecost is not None and finalfatigue < self.minfinalfatiguecost:
+                print(f"minfinalfatiguecost of {finalfatigue} too low (vs {self.maxfinalfatiguecost})")
+                return False
 
         return True

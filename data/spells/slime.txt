@@ -8,14 +8,14 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 2
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 1
 #power -1
 #precision 2
-#maxpower 9
+#maxpower 5
 #pathlevel 1
 #flightspr 404
 #explspr 10256
@@ -34,6 +34,7 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 
+#scalefatigueexponent 1.2
 #end
 
 
@@ -46,14 +47,14 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 2
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 1
 #power 1
 #precision 2
-#maxpower 9
+#maxpower 6
 #pathlevel 2
 #explspr 10256
 #sound 107
@@ -70,4 +71,83 @@
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
+#scalefatigueexponent 1.4
 #end
+
+
+#neweffect "Slime Instant Battlefield"
+#effect 11
+#damage 134217728
+#spec 16384+4096
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 666
+#power 7
+#precision 2
+#maxpower 7
+#pathlevel 4
+#explspr 10256
+#sound 107
+#fatiguecost 200
+#range 5025
+#skipchance 70
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "NAMEPREFIX Slimy Battlefield"
+#descr 4 "The caster conjures sticky goo all over the entire battlefield. Creatures stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
+#scalefatigueexponent 1.4
+#end
+
+#neweffect "Slime Instant Battlefield Hostile Only"
+#effect 11
+#damage 134217728
+#spec 16384+4096+262144
+#schools 4
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 2
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 666
+#power 9
+#precision 2
+#maxpower 9
+#pathlevel 5
+#explspr 10256
+#sound 107
+#fatiguecost 300
+#range 5025
+#skipchance 70
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 4 "NAMEPREFIX Curse of Slime"
+#descr 4 "The caster conjures sticky goo over all his enemies. Creatures stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
+#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
+#scalefatigueexponent 1.4
+#end
+
+
+

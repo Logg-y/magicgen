@@ -1,0 +1,108 @@
+#neweffect "Summon sylph"
+#effect 1
+#damage 562
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 1
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$conjure$ NAMEPREFIX %Sylph%"
+#descr 2 "The caster summons ARTICLE %sylph% to fight for him. Sylphs are beings of clouds that serve Nephelle."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent 1.2
+#end
+
+#neweffect "sylph ritual"
+#effect 10001
+#damage 562
+#spec 0
+#power 4
+#maxpower 8
+#nreff 1002
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 2
+#secondarypaths 2
+
+#skipchance 97
+
+#name 2 "$Summon$ NAMEPREFIX %Sylph%"
+#descr 2 "The caster summons ARTICLE %sylph% to fight for him. Sylphs are beings of clouds that serve Nephelle."
+
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 10
+
+#scalerate 2
+#end
+
+#neweffect "sylph Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 562
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Sylph $Ambush$"
+#descr 2 "The caster summons ARTICLE %sylph% to ambush a commander in a distant land. Sylphs are beings of clouds that serve Nephelle."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon sylph"
+#effect 10038
+#provrange 4
+#damage 562
+#spec 0
+#power 4
+#maxpower 9
+#nreff 2001
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "$Send$ NAMEPREFIX %Sylph%"
+#descr 2 "The caster summons ARTICLE %sylph% to attack a distant land. Sylphs are beings of clouds that serve Nephelle."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 40
+#end
+
+

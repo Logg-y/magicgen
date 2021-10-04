@@ -34,6 +34,7 @@
 #priority 1
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of blood"
 
+#scalefatigueexponent 1.4
 #end
 
 
@@ -73,3 +74,4 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of blood"
 
 #end
+

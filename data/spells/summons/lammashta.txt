@@ -1,0 +1,28 @@
+#neweffect "Summon lammashtas"
+#effect 126
+#damage 393
+#spec 8388608
+#power 4
+#maxpower 12
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 32
+#secondarypaths 32
+
+#skipchance 91
+
+#name 32 "Summon NAMEPREFIX Lammashtas"
+#descr 32 "The caster summons some Lammashtas to the battle. These are spirits that serve the Lord of the Underworld and not their summoner, making them hostile to all on the battlefield."
+
+#spelltype 528
+
+#scalerate 2
+#scalefatiguemult 10
+#scalefatigueexponent -1.4
+#end
+

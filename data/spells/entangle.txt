@@ -12,11 +12,11 @@
 #aoe 0
 #power -2
 #pathlevel 1
-#maxpower 8
+#maxpower 6
 #explspr 10189
 #sound 31
 #fatiguecost 10
-#range 5010
+#range 5020
 
 #paths 64
 #secondarypaths 64
@@ -38,5 +38,93 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of entanglement"
 #namecond range < 10 64 "NAMEPREFIX touch of entanglement"
 
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end
+
+#neweffect "Entangle Battlefield"
+#effect 11
+#damage 64
+#spec 8404992+4096
+#schools 1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.5
+
+#aoe 666
+#power 7
+#pathlevel 4
+#maxpower 7
+#explspr 10189
+#sound 31
+#fatiguecost 200
+#range 5020
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Tangle Vines"
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Entanglement"
+
+#namecond 5 < aoe < 600 64 "NAMEPREFIX Wild Growth"
+
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Relentless Vines"
+
+#details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+
+#descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and attempt to entangle everyone on the battlefield."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of vines"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of growth"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of entanglement"
+#namecond range < 10 64 "NAMEPREFIX touch of entanglement"
+
+#scalefatigueexponent 1.2
+#end
+
+#neweffect "Entangle Battlefield Hostile Only"
+#effect 11
+#damage 64
+#spec 8404992+4096+262144
+#schools 1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.5
+
+#aoe 666
+#power 9
+#pathlevel 5
+#maxpower 9
+#explspr 10189
+#sound 31
+#fatiguecost 300
+#range 5020
+
+#skipchance 70
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Tangle Vines"
+#namecond effectiveaoe <= 5 64 "NAMEPREFIX Entanglement"
+
+#namecond 5 < aoe < 600 64 "NAMEPREFIX Wild Growth"
+
+#namecond effectiveaoe > 600 64 "NAMEPREFIX Curse of Vines"
+
+#details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+
+#descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and attempt to entangle all of the caster's enemies."
+
+#scalefatigueexponent 1.2
+#end
+
+
+
+
 

@@ -1,0 +1,105 @@
+#newmodifier "Fast Casting damaging projectile"
+
+-- any
+#spelltype 0
+
+#power -1
+#pathlevel 0
+
+#reqdamaging 1
+
+#req flightspr > 0
+
+#aispellmod 25
+
+#mult casttime 0.5
+#mult fatiguecost 0.66
+#req fatiguecost < 100
+#skipchance 55
+
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+-- #descr "This spell is faster to cast than most other spells."
+
+#end
+
+#newmodifier "Faster Casting Damaging Projectile"
+
+-- evo only
+#spelltype 2
+
+#aispellmod 70
+#pathlevel 0
+
+#power -2
+
+#reqdamaging 1
+
+#req flightspr > 0
+
+#mult fatiguecost 0.33
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+#newmodifier "16pc cast Damaging Projectile"
+
+-- evo only
+#spelltype 2
+
+#aispellmod 90
+#pathlevel 1
+
+#power -3
+
+#reqdamaging 1
+
+#req flightspr > 0
+
+#mult fatiguecost 0.3
+#req fatiguecost > 15
+#req fatiguecost < 100
+#mult casttime 0.25
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#end
+
+
+#newmodifier "Insanely Fast Casting Damaging Projectile"
+
+-- evo only
+#spelltype 2
+
+#aispellmod 120
+#pathlevel 1
+
+#power -4
+
+#reqdamaging 1
+
+#mult fatiguecost 0.17
+#req fatiguecost > 15
+#req fatiguecost < 100
+#req flightspr > 0
+#mult casttime 0.1
+-- not ritual
+#req spelltype !& 4
+
+#maxfinalfatiguecost 100
+
+#descr "Whilst not individually impressive, this spell can be cast at an incredible rate."
+
+#end

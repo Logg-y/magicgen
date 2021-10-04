@@ -1,0 +1,113 @@
+#neweffect "Summon weles2"
+#effect 1
+#damage 412
+#spec 8388608
+#power 3
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 1
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+
+#details "The elementals are size 2."
+#name 4 "$conjure$ NAMEPREFIX Small Water %Elemental%"
+#descr 4 "The caster summons forth ARTICLE small water %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 2
+#scalefatiguemult 6
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
+#end
+
+#neweffect "weles2 ritual"
+#effect 10001
+#damage 412
+#spec 8388608
+#power 3
+#maxpower 6
+#nreff 1006
+#pathlevel 3
+#fatiguecost 1000
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+
+#details "The elementals are size 2."
+#name 4 "$Summon$ NAMEPREFIX Small Water Elementals"
+#descr 4 "The caster summons forth small water elementals."
+
+#spelltype 20
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 10
+
+#scalerate 2
+#pathperresearch 0.4
+#end
+
+#neweffect "weles2 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 412
+#spec 8388608
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 3
+#fatiguecost 600
+#schools 1
+#skipchance 99
+
+#paths 4
+#secondarypaths 4
+
+#details "The elementals are size 2."
+#name 4 "NAMEPREFIX Small Water Attack"
+#descr 4 "The caster summons forth a small water elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon weles2"
+#effect 10038
+#provrange 4
+#damage 412
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 2001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#details "The elementals are size 2."
+#name 4 "Send NAMEPREFIX Small Water Elementals"
+#descr 4 "The caster summons forth small water elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 35
+#end
+
+

@@ -1,0 +1,112 @@
+#neweffect "Summon weles5"
+#effect 1
+#damage 409
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 1
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+#scalefatiguemult 14
+#details "The elementals are size 5."
+#name 4 "$conjure$ NAMEPREFIX Huge Water %Elemental%"
+#descr 4 "The caster summons forth ARTICLE very large water %elemental%. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent -1.7
+#pathperresearch 0.4
+#end
+
+#neweffect "weles5 ritual"
+#effect 10001
+#damage 409
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 3
+#pathlevel 3
+#fatiguecost 900
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 80
+
+#details "The elementals are size 5."
+#name 4 "Summon NAMEPREFIX Huge Water Elementals"
+#descr 4 "The caster summons forth very large water elementals."
+
+#spelltype 20
+
+#scalefatigueexponent -1.5
+#scalefatiguemult 40
+
+#scalerate 1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "weles5 Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 409
+#spec 8388608
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 1300
+#schools 1
+#skipchance 99
+
+#paths 4
+#secondarypaths 4
+
+#details "The elementals are size 5."
+#name 4 "NAMEPREFIX Huge Water Attack"
+#descr 4 "The caster summons forth a very large water elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon weles5"
+#effect 10038
+#provrange 4
+#damage 409
+#spec 8388608
+#power 6
+#maxpower 14
+#nreff 1000
+#pathlevel 4
+#fatiguecost 1300
+#schools 1
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#details "The elementals are size 5."
+#name 4 "Send NAMEPREFIX Huge Water Elementals"
+#descr 4 "The caster summons forth very large water elementals to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2.0
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 100
+#end
+
+

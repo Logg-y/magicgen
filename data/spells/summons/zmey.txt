@@ -23,7 +23,7 @@
 
 #scalerate 2
 -- #scalecost 1.0
-#schools 16
+#schools 1
 #skipchance 97
 #scalefatiguemult 12
 #scalefatigueexponent -1.6
@@ -34,7 +34,7 @@
 #damage 1940
 #spec 0
 #power 5
-#maxpower 14
+#maxpower 9
 #nreff 3
 #pathlevel 3
 #fatiguecost 300
@@ -107,6 +107,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
 
 
 

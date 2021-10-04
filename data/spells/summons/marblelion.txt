@@ -1,0 +1,144 @@
+#neweffect "Summon marblelion"
+#effect 1
+#damage 3065
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 16
+--#scalefatiguemult 40
+#paths 8
+#secondarypaths 8
+#newunit "Marble Lion fixed slots"
+
+#skipchance 97
+
+#name 8 "$conjure$ NAMEPREFIX Marble %Lion%"
+#descr 8 "The caster quickly forms and enchants ARTICLE %statue% of ARTICLE %lion% from the earth. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy. The %statue% will crumble back to earth after the battle."
+
+#spelltype 528
+
+#scalerate 2
+#scalefatiguemult 8
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+
+#neweffect "marblelion chassis dummy"
+#effect 10001
+#damage 3065
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 100
+#schools -1
+#newunit "Marble Lion fixed slots"
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "$Summon$ NAMEPREFIX Marble %Lion%"
+#descr 8 "The caster forms and enchants ARTICLE %statue% of ARTICLE %lion% from stone. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy and that is an exceptionally watchful patroller."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 120
+
+#scalerate 3
+#end
+
+#neweffect "marblelion ritual"
+#effect 10001
+#damage 3065
+#spec 8388608
+#power 3
+#maxpower 6
+#nreff 1001
+#pathlevel 3
+#fatiguecost 500
+#schools 24
+#newunit "Marble Lion fixed slots"
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 97
+
+#name 8 "$Summon$ NAMEPREFIX Marble %Lion%"
+#descr 8 "The caster forms and enchants ARTICLE %statue% of ARTICLE %lion% from stone. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy and that is an exceptionally watchful patroller."
+
+#spelltype 20
+
+#scalefatigueexponent -1.91
+#scalefatiguemult 101.0
+
+#scalerate 2
+#siegepatrolchaff 1
+#end
+
+#neweffect "marblelion Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 3065
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 700
+#schools 16
+#skipchance 99
+#newunit "Marble Lion fixed slots"
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Marble Lion $Ambush$"
+#descr 8 "The caster enchants a statue of a lion in a distant province to attack an enemy commander. The victim will not know who cast this on them, and the affected statue returns to its mundane inanimate state if not destroyed in the encounter."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon marblelion"
+#effect 10038
+#provrange 4
+#damage 3065
+#spec 8388608
+#power 5
+#maxpower 14
+#nreff 1001
+#pathlevel 4
+#fatiguecost 700
+#schools 16
+#newunit "Marble Lion fixed slots"
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "$Send$ NAMEPREFIX Marble %Lion%"
+#descr 8 "The caster forms and enchants ARTICLE %statue% of ARTICLE %lion% from stone in a distant province. The %statue% %is% then animated with magic, attacking the province where they %it% %is% located."
+
+#spelltype 20
+
+#scalerate 2
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 80
+#end
+
+
+
+

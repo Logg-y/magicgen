@@ -1,0 +1,108 @@
+#neweffect "Summon troll moose knight"
+#effect 1
+#damage 1086
+#spec 0
+#power 5
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 3
+#fatiguecost 100
+#scalefatiguemult 12
+#sound 31
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 50
+
+#name 8 "$conjure$ NAMEPREFIX %troll moose knight%"
+#descr 8 "The caster summons ARTICLE %troll moose knight%. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
+
+#spelltype 528
+
+#scalerate 1.2
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#end
+
+#neweffect "troll moose knight ritual"
+#effect 10001
+#damage 1086
+#spec 0
+#power 6
+#maxpower 14
+#nreff 1001
+#pathlevel 2
+#fatiguecost 800
+#schools 1
+
+#paths 8
+#secondarypaths 8
+
+#skipchance 50
+
+#name 8 "$Summon$ NAMEPREFIX %troll moose knight%"
+#descr 8 "The caster summons ARTICLE %troll moose knight%. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
+#spelltype 20
+
+#scalefatigueexponent -1.4
+#scalefatiguemult 20
+
+#scalerate 1.4
+#end
+
+#neweffect "troll moose knight Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 1086
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 600
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX %troll moose knight% $ambush$"
+#descr 8 "The caster summons ARTICLE %troll moose knight% to attack a hostile commander in a distant province. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon troll moose knight"
+#effect 10038
+#provrange 4
+#damage 1086
+#spec 0
+#power 6
+#maxpower 16
+#nreff 1001
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "$Send$ NAMEPREFIX %troll moose knight%"
+#descr 8 "The caster summons ARTICLE %troll moose knight% to attack a distant province. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 50
+#end
+
+

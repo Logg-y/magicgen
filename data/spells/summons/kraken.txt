@@ -1,0 +1,114 @@
+#neweffect "Summon kraken"
+#effect 1
+#damage 438
+#spec 41959424
+#power 3
+#maxpower 11
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 120
+#scalefatiguemult 7
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#sound 44
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 97
+
+#name 4 "$conjure$ NAMEPREFIX Kraken"
+#descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
+
+#spelltype 528
+
+#scalerate 2
+#end
+
+#neweffect "kraken ritual"
+#effect 10001
+#damage 438
+#spec 41959424
+#power 3
+#maxpower 7
+#nreff 5
+#pathlevel 2
+#fatiguecost 520
+#schools 1
+
+#paths 4
+#secondarypaths 4
+
+#skipchance 97
+
+#name 4 "$Summon$ NAMEPREFIX Kraken"
+#descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."
+
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#scalefatiguemult 10.0
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+#neweffect "Kraken Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 438
+#spec 41959424
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#onlygeodst 2052
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Kraken $Ambush$"
+#descr 4 "The caster calls forth a kraken to attack an enemy commander in a distant province. The victim will not know who cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon kraken"
+#effect 10038
+#provrange 4
+#damage 438
+#spec 8388608
+#power 6
+#maxpower 14
+#nreff 1001
+#pathlevel 4
+#fatiguecost 600
+#schools 1
+
+#onlygeodst 2052
+
+#skipchance 99.6
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "$Send$ NAMEPREFIX Kraken"
+#descr 4 "The caster calls forth kraken to attack a distant province."
+
+#spelltype 20
+
+#scalefatigueexponent 0.7
+#scalefatiguemult 80
+
+#scalerate 1
+#end
+
+
+
+

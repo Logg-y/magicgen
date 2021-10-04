@@ -3,7 +3,7 @@
 -- nb	wish strength bonus  291
 -- sb	ALL_PLANE_RETURNING=435,
 -- feb	gold maker 452
--- 
+--
 -- any	FAST_CASTING=613,
 -- f	INSPIRATIONAL=368,
 -- n	beastmaster 369
@@ -1212,7 +1212,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 50
+#scalefatiguemult 40.0
 #schools -1
 #unique 1
 
@@ -1224,7 +1224,7 @@
 #descr 32 "The weapons of this spell's recipient are constantly surrounded by deathly energy. Anyone struck by them may have their life force directly wounded by the magical discharge, and may also become diseased."
 #details "The recipient gains death weapons, inflicting EFFECTNUMBER_5XX AN damage and causing disease. Each effect offers a separate MR roll to negate its effects. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+#scalerate 1.7
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2245,4 +2245,5 @@
 #spelltype 4
 #noresearchdifferenceskip 1
 #end
+
 

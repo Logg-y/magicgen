@@ -1,0 +1,117 @@
+#neweffect "Summon werewolf"
+#effect 1
+#damage 633
+#spec 0
+#power 3
+#maxpower 14
+#precision -2
+#nreff 3
+#pathlevel 2
+#fatiguecost 100
+#sound 31
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$conjure$ NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 528
+
+#scalerate 1.5
+--#scalefatiguemult 30
+#scalefatiguemult 7
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "werewolf ritual"
+#effect 10001
+#damage 633
+#spec 0
+#power 4
+#maxpower 7
+#nreff 1004
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 97
+
+#name 64 "$Summon$ NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf%. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent -1.3
+#scalefatiguemult 16
+
+#scalerate 2.5
+#pathperresearch 0.4
+#end
+
+#neweffect "werewolf Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 628
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 2
+#fatiguecost 500
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 64
+#secondarypaths 64
+
+#skipchance 99
+
+#name 64 "NAMEPREFIX Were%wolf% $ambush$"
+#descr 64 "The caster summons ARTICLE were%wolf% in a distant land to attack an enemy commander. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote werewolf"
+#effect 10038
+#provrange 4
+#damage 633
+#spec 0
+#power 5
+#maxpower 14
+#nreff 1000
+#pathlevel 3
+#fatiguecost 700
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 64
+#secondarypaths 64
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 50
+
+#name 64 "$Send$ NAMEPREFIX Were%wolf%"
+#descr 64 "The caster summons ARTICLE were%wolf% to attack a distant land. Werewolves regenerate and are very difficult to harm with mundane weaponry."
+
+#spelltype 20
+
+#scalerate 2
+#end
+
+
