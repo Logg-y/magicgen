@@ -63,3 +63,36 @@
 #name 256 "$Additional$ Air Shield"
 
 #end
+
+#neweffect "Airshield Secondary mrnh"
+#effect 10
+#damage 8
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10224
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Air Shield"
+#name 2 "$Additional$ Air Shield"
+#name 4 "$Additional$ Air Shield"
+#name 8 "$Additional$ Air Shield"
+#name 16 "$Additional$ Air Shield"
+#name 32 "$Additional$ Air Shield"
+#name 64 "$Additional$ Air Shield"
+#name 128 "$Additional$ Air Shield"
+#name 256 "$Additional$ Air Shield"
+
+#end

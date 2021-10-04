@@ -16,7 +16,7 @@
 #pathlevel 1
 #explspr 10224
 #sound 31
-#range 10
+#range 0
 #fatiguecost 5
 
 #paths 194
@@ -68,7 +68,7 @@
 #pathlevel 3
 #explspr 10224
 #sound 31
-#range 10
+#range 0
 #fatiguecost 100
 
 #paths 194
