@@ -137,7 +137,7 @@
 #mult fatiguecost 1.8
 
 #unitmod "Summon Eyevengeance"
-#descr "The summoned %creature% %is% imbued with magic and gains the ability to emit blinding flashes of light. Those attacking in melee will lose an eye if they fail to resist."
+#descr "The summoned %creature% %is% imbued with magic and gains the ability to emit blinding flashes of light. Those attacking in melee will lose an eye."
 
 #end
 

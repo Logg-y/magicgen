@@ -49,7 +49,7 @@
 #pathperresearch 0.4
 #scalefatigueexponent -1.6
 
-#scalefatiguemult 40
+#scalefatiguemult 10
 
 #name 8 "$Summon$ NAMEPREFIX %Ogre%"
 #descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are somewhat resistant to cold."
@@ -110,3 +110,4 @@
 
 #scalerate 2.0
 #end
+

@@ -46,11 +46,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.8
-#scalefatiguemult 100
+#scalefatigueexponent -1.7
+#scalefatiguemult 30
 #pathperresearch 0.4
 
-#scalerate 1
+#scalerate 2.5
 #end
 
 #neweffect "greenlion Remote Assassination"
@@ -105,3 +105,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 75
 #end
+

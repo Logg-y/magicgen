@@ -54,7 +54,7 @@
 #skipchance 97
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 250
+#scalefatiguemult 100
 #newunit "Greater Otherness"
 
 #scalerate 2
@@ -114,3 +114,4 @@
 
 #scalerate 2
 #end
+

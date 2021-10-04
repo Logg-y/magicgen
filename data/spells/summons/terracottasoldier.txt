@@ -7,7 +7,7 @@
 #precision -2
 #nreff 1
 #pathlevel 2
-#fatiguecost 30
+#fatiguecost 20
 #sound 31
 #schools 1
 
@@ -17,13 +17,15 @@
 #skipchance 97
 --#scalefatiguemult 10
 
-#name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
+#name 1 "$conjure$ NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent 0.4
+#scalerate 0.51
+#scalefatigueexponent -1.5
+#scalefatiguemult 4
+#pathperresearch 0.4
 #end
 
 #neweffect "terracottasoldier ritual"
@@ -33,8 +35,8 @@
 #power 5
 #maxpower 14
 #nreff 1003
-#pathlevel 3
-#fatiguecost 400
+#pathlevel 1
+#fatiguecost 200
 #schools 1
 
 #paths 1
@@ -42,14 +44,14 @@
 
 #skipchance 97
 
-#name 1 "Summon NAMEPREFIX Terracotta %Soldier%"
+#name 1 "$Summon$ NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
 
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 50
+#scalefatigueexponent -1.6
+#scalefatiguemult 10
 
 #scalerate 4
 #end
@@ -70,7 +72,7 @@
 #paths 1
 #secondarypaths 4
 
-#name 1 "NAMEPREFIX Terracotta %Soldier% Attack"
+#name 1 "NAMEPREFIX Terracotta %Soldier% $ambush$"
 #descr 1 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE terracotta %soldier%. The terracotta soldier attacks an enemy commander found there, and then crumbles to dust after the battle. Terracotta soldiers are highly resistant to fire."
 
 #spelltype 4
@@ -86,7 +88,7 @@
 #maxpower 15
 #nreff 1003
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 700
 #schools 1
 
 #skipchance 99.6
@@ -94,7 +96,7 @@
 #paths 1
 #secondarypaths 4
 
-#name 1 "Send NAMEPREFIX Terracotta %Soldier%"
+#name 1 "$Send$ NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster forms ARTICLE %figure% from clay in a distant province and enchants %it% forming ARTICLE terracotta %soldier%. The terracotta soldiers attack anything found there. Terracotta soldiers are highly resistant to fire."
 
 #spelltype 20
@@ -104,3 +106,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
+
+
+

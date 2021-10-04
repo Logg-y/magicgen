@@ -1,20 +1,20 @@
-#newmodifier "Shorter Range"
-
--- evo only
-#spelltype 2
-
-#skipchance 90
-
-#power 1
-#mult fatiguecost 0.5
-#pathperresearch -0.15
-#set range 10
-#precision 3
-#req2 10 < nonscalingrange <= 100
--- not ritual
-#req spelltype !& 4
-#nobattlefield
-
--- #descr "This spell has a devastating effect but a shorter range."
-
-#end
+-- #newmodifier "Shorter Range"
+-- 
+-- -- evo only
+-- #spelltype 2
+-- 
+-- #skipchance 90
+-- 
+-- #power 1
+-- #mult fatiguecost 0.5
+-- #pathperresearch -0.15
+-- #set range 10
+-- #precision 3
+-- #req2 10 < nonscalingrange <= 100
+-- -- not ritual
+-- #req spelltype !& 4
+-- #nobattlefield
+-- 
+-- -- #descr "This spell has a devastating effect but a shorter range."
+-- 
+-- #end

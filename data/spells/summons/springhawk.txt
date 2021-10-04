@@ -5,9 +5,9 @@
 #power 3
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 60
+#nreff 3
+#pathlevel 2
+#fatiguecost 110
 --#scalefatiguemult 20
 #sound 31
 #schools 1
@@ -17,22 +17,24 @@
 
 #skipchance 50
 
-#name 2 "Summon NAMEPREFIX Spring %Hawk%"
+#name 2 "$conjure$ NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 2
+#scalefatiguemult 7
+#scalefatigueexponent -1.4
 #end
 
 #neweffect "springhawk ritual"
 #effect 10001
 #damage 513
 #spec 0
-#power 5
+#power 4
 #maxpower 14
 #nreff 1001
-#pathlevel 3
+#pathlevel 2
 #fatiguecost 400
 #schools 1
 
@@ -41,15 +43,16 @@
 
 #skipchance 50
 
-#name 2 "Summon NAMEPREFIX Spring %Hawk%"
+#name 2 "$Summon$ NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 55
+#scalefatigueexponent -1.6
+#scalefatiguemult 20
 
 #scalerate 4
+#pathperresearch 0.4
 #end
 
 #neweffect "springhawk Remote Assassination"
@@ -69,7 +72,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "NAMEPREFIX Spring Hawk Ambush"
+#name 2 "NAMEPREFIX Spring Hawk $Ambush$"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to attack a hostile commander in a distant land. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
 
 #spelltype 4
@@ -85,7 +88,7 @@
 #maxpower 14
 #nreff 1000
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 700
 #schools 1
 #nogeodst 2052
 
@@ -94,7 +97,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "Send NAMEPREFIX Spring %Hawk%"
+#name 2 "$Send$ NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to attack a distant province. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
 
 #spelltype 20
@@ -104,3 +107,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
+
+
+

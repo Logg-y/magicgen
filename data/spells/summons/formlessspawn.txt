@@ -53,7 +53,7 @@
 #skipchance 97
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 150
+#scalefatiguemult 75
 #newunit "Formless Spawn"
 
 #scalerate 2
@@ -113,3 +113,4 @@
 
 #scalerate 2
 #end
+

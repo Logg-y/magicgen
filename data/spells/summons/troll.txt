@@ -2,12 +2,12 @@
 #effect 1
 #damage 518
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -2
-#nreff 1
-#pathlevel 3
-#fatiguecost 60
+#nreff 3
+#pathlevel 2
+#fatiguecost 110
 --#scalefatiguemult 30
 #sound 31
 #schools 1
@@ -17,12 +17,14 @@
 
 #skipchance 50
 
-#name 8 "Summon NAMEPREFIX %troll%"
+#name 8 "$conjure$ NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 2
+#scalefatiguemult 7.5
+#scalefatigueexponent -1.4
 #end
 
 #neweffect "troll ritual"
@@ -33,7 +35,7 @@
 #maxpower 14
 #nreff 1001
 #pathlevel 2
-#fatiguecost 700
+#fatiguecost 400
 #schools 1
 
 #paths 8
@@ -41,14 +43,15 @@
 
 #skipchance 50
 
-#name 8 "Summon NAMEPREFIX %troll%"
+#name 8 "$Summon$ NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 70
+#scalefatigueexponent -1.6
+#scalefatiguemult 15
 
-#scalerate 4
+#scalerate 2
+#pathperresearch 0.45
 #end
 
 #neweffect "troll Remote Assassination"
@@ -68,7 +71,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "NAMEPREFIX %troll% Attack"
+#name 8 "NAMEPREFIX %troll% $ambush$"
 #descr 8 "The caster summons ARTICLE %troll% to attack a hostile commander in a distant province. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
 #spelltype 4
 
@@ -83,7 +86,7 @@
 #maxpower 14
 #nreff 1003
 #pathlevel 3
-#fatiguecost 1800
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -92,7 +95,7 @@
 #paths 8
 #secondarypaths 8
 
-#name 8 "Send NAMEPREFIX %troll%"
+#name 8 "$Send$ NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll% to attack a distant province. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
 
 #spelltype 20
@@ -102,3 +105,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 50
 #end
+
+
+
+
+

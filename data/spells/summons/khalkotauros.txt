@@ -55,7 +55,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.7
-#scalefatiguemult 200
+#scalefatiguemult 100
 #pathperresearch 0.4
 
 #scalerate 1
@@ -106,7 +106,7 @@
 #paths 9
 #secondarypaths 9
 #secondarypathchance 90
- 
+
 #name 8 "$Send$ NAMEPREFIX %Khalkotauros%"
 #name 1 "$Send$ NAMEPREFIX %Khalkotauros%"
 #descr 1 "The caster constructs and animates ARTICLE %khalkotauros% in a distant province to attack anything found there. The khalkotauros is a magically animated brass statue of a bull which can trample its enemies and breathe fire."
@@ -120,3 +120,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+

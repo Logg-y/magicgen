@@ -34,7 +34,7 @@
 #damage -10
 #spec 0
 #power 5
-#maxpower 20
+#maxpower 15
 #nreff 3
 #pathlevel 3
 #fatiguecost 500
@@ -51,9 +51,9 @@
 
 #scalerate 2
 #scalefatigueexponent -1.6
-#scalefatiguemult 80
+#scalefatiguemult 15
 #end
--- 
+--
 -- #neweffect "Remote summon Greater Foulspawn"
 -- #effect 10038
 -- #provrange 4
@@ -66,16 +66,17 @@
 -- #fatiguecost 1600
 -- #scalefatiguemult 60
 -- #schools 1
--- 
+--
 -- #paths 64
 -- #secondarypaths 64
 -- #skipchance 99.6
--- 
+--
 -- #name 64 "Send Greater Foulspawn"
 -- #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are always the strongest results of crossbreeding."
--- 
+--
 -- #spelltype 20
--- 
+--
 -- #scalefatiguemult 60
 -- #scalerate 1
 -- #end
+

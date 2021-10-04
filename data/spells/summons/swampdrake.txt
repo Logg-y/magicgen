@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+#scalefatiguemult 14.0
 #sound 31
 #schools 1
 
@@ -17,12 +17,14 @@
 
 #skipchance 97
 
-#name 64 "Summon NAMEPREFIX Swamp %Drake%"
+#name 64 "$conjure$ NAMEPREFIX Swamp %Drake%"
 #descr 64 "The caster summons ARTICLE swamp %drake% to fight for him. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
 
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "swampdrake ritual"
@@ -41,15 +43,16 @@
 
 #skipchance 97
 
-#name 64 "Summon NAMEPREFIX Swamp %Drake%"
+#name 64 "$Summon$ NAMEPREFIX Swamp %Drake%"
 #descr 64 "The caster summons ARTICLE swamp %drake% to fight for him. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 80
+#scalefatigueexponent -1.6
+#scalefatiguemult 60
 
-#scalerate 4
+#scalerate 3.0
+#pathperresearch 0.4
 #end
 
 #neweffect "swampdrake Remote Assassination"
@@ -69,7 +72,7 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "NAMEPREFIX Swamp Drake Ambush"
+#name 64 "NAMEPREFIX Swamp Drake $Ambush$"
 #descr 64 "The caster summons ARTICLE swamp %drake% to attack a hostile commander in a distant land. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
 
 #spelltype 4
@@ -85,7 +88,7 @@
 #maxpower 14
 #nreff 1001
 #pathlevel 3
-#fatiguecost 1500
+#fatiguecost 1000
 #schools 1
 #nogeodst 2052
 
@@ -94,7 +97,7 @@
 #paths 32
 #secondarypaths 32
 
-#name 32 "Send NAMEPREFIX Swamp %Drake%"
+#name 32 "$Send$ NAMEPREFIX Swamp %Drake%"
 #descr 32 "The caster summons ARTICLE swamp %drake% to attack a distant land. The swamp drake is a large cold-blooded beast that breathes poisonous gas."
 
 #spelltype 20
@@ -104,3 +107,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
+
+
+
