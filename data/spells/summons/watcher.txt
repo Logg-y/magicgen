@@ -15,7 +15,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 97
+#skipchance 80
 
 #name 2 "$assemble$ NAMEPREFIX %Watcher%"
 #descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting %watcher% %is% difficult to kill and %is% able to blast enemies with lightning."
@@ -28,33 +28,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "watcher chassis dummy"
-#effect 10001
-#damage 768
-#spec 0
-#power 5
-#maxpower 5
-#nreff 1
-#pathlevel 4
-#fatiguecost 400
-#schools -1
-
-#paths 2
-#secondarypaths 8
-#secondarypathchance 95
-
-#skipchance 97
-
-#name 2 "$Construct$ NAMEPREFIX %Watcher%"
-#descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting watcher is difficult to kill and blasts enemies with lightning."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 150
-
-#scalerate 2
-#end
 
 #neweffect "watcher ritual"
 #effect 10001
@@ -71,7 +44,7 @@
 #secondarypaths 8
 #secondarypathchance 95
 
-#skipchance 97
+#skipchance 60
 
 #name 2 "$Construct$ NAMEPREFIX %Watcher%"
 #descr 2 "The caster builds ARTICLE %statue% and imbues %it% with magic. The resulting watcher is difficult to kill and blasts enemies with lightning."

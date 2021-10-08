@@ -77,12 +77,21 @@ def readEventSet(fp):
                     sorted = True
                     continue
 
+                if line.startswith("#scaleparam_mult"):
+                    m = re.match('#scaleparam_mult\\W+"(.*)"\\W+?([0-9-.]*)', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #scaleparam_mult")
+                    curreff.scaleparammults[m.groups()[0]] = float(m.groups()[1])
+                    continue
+
                 if line.startswith("#scaleparam"):
                     m = re.match('#scaleparam\\W+"(.*)"\\W+?([0-9-.]*)', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #scaleparam")
                     curreff.scaleparams[m.groups()[0]] = float(m.groups()[1])
                     continue
+
+
 
                 # the trailing space here is NEEDED
                 # or this trips all the other #module* params and tries to RE them and fails
@@ -167,9 +176,9 @@ def readEventSet(fp):
                     m = re.match('#selectunitmod\\W+"(.*)"', line)
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #selectunitmod")
-                    if curreff.selectunitmod is None:
-                        curreff.selectunitmod = []
-                    curreff.selectunitmod.append(m.groups()[0])
+                    if curreff.selectunitmods is None:
+                        curreff.selectunitmods = []
+                    curreff.selectunitmods.append(m.groups()[0])
                     continue
 
                 if line.startswith("#end"):

@@ -15,7 +15,7 @@
 #secondarypaths 8
 #newunit "Marble Lion fixed slots"
 
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Marble %Lion%"
 #descr 8 "The caster quickly forms and enchants ARTICLE %statue% of ARTICLE %lion% from the earth. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy. The %statue% will crumble back to earth after the battle."
@@ -29,33 +29,6 @@
 #end
 
 
-#neweffect "marblelion chassis dummy"
-#effect 10001
-#damage 3065
-#spec 8388608
-#power 4
-#maxpower 4
-#nreff 1
-#pathlevel 3
-#fatiguecost 100
-#schools -1
-#newunit "Marble Lion fixed slots"
-
-#paths 8
-#secondarypaths 8
-
-#skipchance 97
-
-#name 8 "$Summon$ NAMEPREFIX Marble %Lion%"
-#descr 8 "The caster forms and enchants ARTICLE %statue% of ARTICLE %lion% from stone. The %statue% %is% then animated with magic, producing a combatant that is difficult to destroy and that is an exceptionally watchful patroller."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 120
-
-#scalerate 3
-#end
 
 #neweffect "marblelion ritual"
 #effect 10001

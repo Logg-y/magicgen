@@ -20,7 +20,7 @@
 #scalefatigueexponent -1.45
 #pathperresearch 0.5
 
-#skipchance 97
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX Bog %Beast%"
 #name 64 "$conjure$ NAMEPREFIX Bog %Beast%"
@@ -38,7 +38,7 @@
 #damage 578
 #spec 0
 #power 2
-#maxpower 5
+#maxpower 6
 #nreff 5
 #pathlevel 2
 #fatiguecost 500
@@ -59,9 +59,9 @@
 #spelltype 20
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 30
+#scalefatiguemult 50.0
 
-#scalerate 4
+#scalerate 2
 #end
 
 #neweffect "bogbeast Remote Assassination"
@@ -122,5 +122,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
+
+
 
 

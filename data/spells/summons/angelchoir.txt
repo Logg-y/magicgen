@@ -17,7 +17,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 92
+#skipchance 98
 #newunit "Angel of the Choir"
 
 #name 16 "$conjure$ NAMEPREFIX %Angel%"
@@ -45,7 +45,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 80
+#skipchance 97
 #newunit "Angel of the Choir"
 
 #name 16 "$Summon$ NAMEPREFIX %Angel%"

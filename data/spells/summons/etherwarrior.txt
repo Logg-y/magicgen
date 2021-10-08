@@ -15,7 +15,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 92
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."
@@ -41,7 +41,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 60
+#skipchance 90
 
 #name 16 "$Summon$ NAMEPREFIX Ether %Warrior%"
 #descr 16 "The caster summons forth ARTICLE ether %warrior%. Ether warriors are large, ethereal humanoids that wield moonblades."

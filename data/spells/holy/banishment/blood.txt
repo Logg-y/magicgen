@@ -1,0 +1,90 @@
+
+#neweffect "Blood Banish Dmg"
+#effect 2
+#damage 3
+#spec 8405120
+#schools -1
+#paths -1
+#spelltype 2
+#scalerate 0
+#aoe 0
+#power 0
+#maxpower 30
+#name 1 "Blood Power"
+#name 2 "Blood Power"
+#name 4 "Blood Power"
+#name 8 "Blood Power"
+#name 16 "Blood Power"
+#name 32 "Blood Power"
+#name 64 "Blood Power"
+#name 128 "Blood Power"
+#name 256 "Blood Power"
+#end
+
+
+#neweffect "Blood Banish"
+#nextspell "Blood Banish Dmg"
+#copyspell "Leech"
+#effect 103
+#damage 1
+#spec 536871040
+
+#skipexplspr 1
+#skipflightspr 1
+
+#schools -1
+#paths -1
+#spelltype 2
+#aoe 0
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#fatiguecost 0
+#range 5025
+
+
+#paths 128
+#secondarypaths 128
+
+#name 1 "Life Draining"
+#name 2 "Life Draining"
+#name 4 "Life Draining"
+#name 8 "Life Draining"
+#name 16 "Life Draining"
+#name 32 "Life Draining"
+#name 64 "Life Draining"
+#name 128 "Life Draining"
+#name 256 "Life Draining"
+
+#end
+
+
+#neweffect "Banishment Blood"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 128 "Banish the Bloodless"
+#descr 256 "With this prayer the priest smites undead beings with his God's distaste of the undead. The undead will take damage unless they manage to resist the banishment. The priest may additionally be able to draw on the power of his God to leech some life from affected undead that are not inanimate."
+
+#nextspell "Blood Banish"
+
+#spelltype 2
+#end

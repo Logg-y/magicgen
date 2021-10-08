@@ -1,4 +1,4 @@
--- Guess I am using x**1.3 * 1.15 ** x
+-- Guess I am using x**1.1 * 1.15 ** x
 
 #newsecondary "Summon Enlarge 1"
 #req siegepatrolchaff < 1
@@ -6,7 +6,7 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -24,11 +24,11 @@
 #anysummon 1
 
 #paths 0
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3.25
+#mult fatiguecost 2.83
 #magicpathvaluescaling 0.15
 
 #unitmod "Summon Enlarge 2"
@@ -42,11 +42,11 @@
 #anysummon 1
 
 #paths 0
-#power -3
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 6.34
+#mult fatiguecost 5.09
 #magicpathvaluescaling 0.22
 
 #unitmod "Summon Enlarge 3"
@@ -60,11 +60,11 @@
 #anysummon 1
 
 #paths 0
-#power -4
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 10.6
+#mult fatiguecost 8.03
 #magicpathvaluescaling 0.28
 
 #unitmod "Summon Enlarge 4"

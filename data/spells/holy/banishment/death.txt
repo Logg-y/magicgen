@@ -1,0 +1,82 @@
+
+#neweffect "Banishment Control the Dead"
+#effect 29
+#damage 999
+#spec 293601416
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 32 "Dominate the Dead"
+#descr 256 "With this prayer the priest attempts to bring hostile undead beings under the control of his God. This spell does not grant the priest the ability to lead the undead, which may result in any converted undead immediately fleeing or crumbling if unassisted."
+
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Death Additional Decay"
+#effect 11
+#damage 256
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10197
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Decay"
+#name 32 "Additional Decay"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Death Decay"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 32 "Decay Undead"
+#descr 256 "With this prayer the priest smites undead beings with the deathly power of his God. The undead will take damage and begin decaying unless they manage to resist the banishment."
+#details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
+#nextspell "Banishment Death Additional Decay"
+
+#spelltype 2
+#end

@@ -15,7 +15,7 @@
 #secondarypaths 16
 #newunit "Otherness"
 
-#skipchance 97
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX %Otherness%"
 #descr 16 "The caster summons ARTICLE_N %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."

@@ -1,5 +1,5 @@
 #newsecondary "Summon Fortuneteller"
-#req siegepatrolchaff < 1
+#req siegepatrolchaff >= 1
 
 #anysummon 1
 

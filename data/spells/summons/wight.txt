@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 60
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %Wight%"
 #descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."
@@ -41,7 +41,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 40
+#skipchance 97
 
 #name 32 "Revive NAMEPREFIX %Wight%"
 #descr 32 "The caster summons ARTICLE %wight% to fight for him. Wights are powerful undead wielding bane blades."

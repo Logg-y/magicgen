@@ -1,0 +1,72 @@
+
+#neweffect "Banishment Holy Only"
+#effect 2
+#damage 3001
+#spec 276828296
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 256
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#descr 256 "With this prayer the priest smites undead beings with the power of his God. The undead will take damage unless they manage to resist the banishment."
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Cloud"
+#effect 3002
+#damage 1
+#spec 276828296
+#range 5020
+#power 0
+#maxpower 0
+#aoe 1001
+#explspr 10042
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#banishment 1
+#sound 30
+#skipchance 20
+
+#aispellmod 300
+
+#paths 256
+#secondarypaths 256
+#secondarypathchance 0
+
+#name 256 "Purifying Cloud"
+#name 256 "Banishing Cloud"
+#name 1 "Incineration of the Unclean"
+#name 1 "$Purifying$ Flame"
+#name 1 "Ashes to Ashes"
+#name 2 "$Mist$ of Memories"
+#name 2 "$Purifying$ Strikes"
+#name 4 "$Purifying$ Water"
+#name 8 "Pull from the Grave"
+#name 8 "Bury the Dead"
+#name 16 "Otherworldly Purge"
+#name 16 "Stellar Decree"
+#name 16 "Purifying Power"
+#name 32 "Deathly Deconstruction"
+#name 32 "Decree of the Underworld"
+#name 64 "Final Rest"
+#name 64 "Natural End"
+#name 128 "Banish the Bloodless"
+#descr 256 "With this prayer the priest draws upon the power of his God to create a fine $mist$ on the battlefield. Undead creatures within the mist rapidly suffer damage unless they resist its effect."
+
+#spelltype 2
+#end

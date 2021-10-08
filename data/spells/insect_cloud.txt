@@ -29,10 +29,12 @@
 #maxpower 1
 #precision 1
 #range 30
-#pathlevel 2
+#pathlevel 1
 #fatiguecost 20
 #explspr 10329
 #sound 31
+
+#aispellmod 80
 
 #paths 64
 #secondarypaths 0

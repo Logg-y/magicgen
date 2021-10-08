@@ -1,0 +1,27 @@
+
+#neweffect "Smite Holy Only"
+#effect 2
+#damage 10
+#spec 8409216
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#fatiguecost 0
+#explspr 10302
+#precision 100
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 256
+#secondarypathchance 0
+
+#name 256 "Smite"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt."
+
+#spelltype 2
+#end

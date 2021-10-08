@@ -16,7 +16,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 97
+#skipchance 98
 
 #name 1 "$conjure$ NAMEPREFIX %Salamander%"
 #descr 1 "Summons ARTICLE %salamander% to fight for the caster. The salamander is a red lizard-like being that is surrounded by an aura of heat and burns enemies it encounters, however it does tend to get tired very quickly."

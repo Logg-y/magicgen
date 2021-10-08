@@ -16,7 +16,7 @@
 #scalefatiguemult 7
 #scalefatigueexponent -1.4
 #pathperresearch 0.4
-#skipchance 80
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Cow%"
 #descr 8 "The caster summons ARTICLE cave %cow%. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."
@@ -40,7 +40,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 80
+#skipchance 97
 
 #name 8 "$summon$ NAMEPREFIX Cave %Cow%"
 #descr 8 "The caster summons ARTICLE cave %cow%. The cave cow is a strange being from beneath the earth. Its saliva is highly corrosive."

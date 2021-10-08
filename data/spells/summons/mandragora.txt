@@ -15,7 +15,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX Mandragora"
 #descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."

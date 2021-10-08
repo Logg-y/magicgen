@@ -15,20 +15,9 @@
 #end
 
 #req_freesites 1
-#req_rare 50
 #req_land 1
 #nolog
 #msg "An ancient oak tree has been struck by lightning. Magical gems ooze from its torn trunk."
 -- skysplit oak
 #addsite 422
-#end
 
-#newevent
-CONDITION
-#req_land 1
-#req_freesites 1
-#req_rare 50
-#nolog
-#msg "Agricultural land has been struck by lightning. Magical gems can regularly be found amongst the glimmering vegetation that remains there."
--- sparkling fields
-#addsite 421

@@ -1,0 +1,92 @@
+
+
+#neweffect "Holy Word Paralysis"
+#effect 66
+#damage 2010
+#spec 8573056
+#range 25
+#power 0
+#maxpower 0
+#aoe 1
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#holyword 1
+
+#paths 256
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 256 "Holy Word"
+#name 1 "Burn Heretics"
+#name 1 "Scorch Heretics"
+#name 1 "Incinerate Heretics"
+#name 2 "Shackle Heretics"
+#name 4 "Freeze Heretics"
+#name 4 "Chill Heretics"
+#name 8 "Petrify Heretics"
+#name 16 "Halt Heretics"
+#name 32 "Death to Heretics"
+#name 64 "Ensnare Heretics"
+#name 128 "Bleed Heretics"
+#descr 256 "With a holy word from the next true God the priest is able to halt sacred warriors of a false pretender."
+#details "Inflicts 14 paralysis damage, with an additional 2 per holy level."
+#spelltype 2
+#end
+
+
+#neweffect "Holy Word Astral Additional Slow"
+#effect 11
+#damage 68719476736
+#spec 49184+8388608
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#power 1
+#name 1 "Slowed Time"
+#name 256 "Slowed Time"
+#end
+
+#neweffect "Holy Word Astral Slow"
+#effect 128
+#damage 100
+#spec 8425472+1152921504606846976
+#range 25
+#power 0
+#maxpower 0
+#aoe 1
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#holyword 1
+
+#paths 256
+#secondarypaths 16
+#secondarypathchance 0
+#nextspell "Holy Word Astral Additional Slow"
+
+#name 256 "Holy Word"
+#name 1 "Burn Heretics"
+#name 1 "Scorch Heretics"
+#name 1 "Incinerate Heretics"
+#name 2 "Jolt Heretics"
+#name 4 "Freeze Heretics"
+#name 4 "Chill Heretics"
+#name 8 "Burden Heretics"
+#name 16 "Slow Heretics"
+#name 32 "Death to Heretics"
+#name 64 "Ensnare Heretics"
+#name 128 "Bleed Heretics"
+#descr 256 "With a earthen holy word from the next true God the priest is able to stun and burden sacred warriors of a false pretender."
+#details "Attack rate slowed 50%, Att -2, Def -2.
+#spelltype 2
+#end

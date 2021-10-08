@@ -1,0 +1,130 @@
+
+#neweffect "Smite Air Additional Damage"
+#effect 2
+#damage 10
+#spec 8405120+2048
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Shocking Death"
+#name 2 "Shocking Death"
+#spelltype 2
+#end
+
+#neweffect "Smite Air Damage"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Fire"
+#name 2 "Heavenly Strike"
+#name 2 "Shocking Death"
+#name 2 "$Syllable$ of Lightning"
+#name 4 "$Syllable$ of Rivers"
+#name 4 "Watery Death"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt."
+#nextspell "Smite Air Additional Damage"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Air Additional Bonds"
+#effect 11
+#damage 131072
+#spec 16544+8388608
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Illusionary Entanglement"
+#name 2 "Illusionary Entanglement"
+#spelltype 2
+#end
+
+#neweffect "Smite Air Bonds"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "$Syllable$ of Rivers"
+#name 4 "Watery Death"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding them and trapping them in burning shackles."
+#details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
+#nextspell "Smite Air Additional Bonds"
+#spelltype 2
+#end

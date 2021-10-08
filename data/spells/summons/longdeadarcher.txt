@@ -24,40 +24,12 @@
 #spelltype 528
 
 #scalerate 0.51
-#skipchance 97
+#skipchance 90
 #scalefatigueexponent -1.3
 #pathperresearch 0.4
 #end
 
 
-#neweffect "longdeadarcher chassis dummy"
-#effect 10001
-#damage 535
-#spec 8388608
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 2
-#fatiguecost 20
-#schools -1
-
-#paths 32
-#secondarypaths 1
-#secondarypathchance 40
-
-#name 1 "Raise NAMEPREFIX Longdead %Archer%"
-#name 32 "Raise NAMEPREFIX Longdead %Archer%"
-#descr 1 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
-#descr 32 "The caster raises ARTICLE longdead %archer% to fight for him. Longdead archers wield bows touched by the underworld which cause those wounded to rapidly age."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 40
-
-#skipchance 97
-#scalerate 4
-#end
 
 #neweffect "longdeadarcher ritual"
 #effect 10001
@@ -84,7 +56,7 @@
 #scalefatigueexponent -1.4
 #scalefatiguemult 10
 
-#skipchance 97
+#skipchance 80
 #scalerate 4
 #siegepatrolchaff 1
 #end

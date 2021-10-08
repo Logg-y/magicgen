@@ -17,7 +17,7 @@
 #scalefatiguemult 10
 #scalefatigueexponent -1.6
 #pathperresearch 0.4
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Iron %Pig%"
 #descr 8 "The caster summons ARTICLE_N iron %pig% to fight for him. An iron pig is a normal domestic pig which has had its skin converted to iron: it is hard to hurt, but still is prone to running away and trampling friends in its way."

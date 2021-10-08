@@ -15,7 +15,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX %elephant%"
 #descr 64 "The caster summons ARTICLE_N %elephant% to fight for him. The elephant is a massive wild animal that tramples its enemies underneath its massive legs, but it is vulnerable to magic as well as prone to running away."

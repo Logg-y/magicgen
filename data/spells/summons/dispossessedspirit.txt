@@ -28,7 +28,7 @@
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
-#skipchance 97
+#skipchance 98
 #end
 
 #neweffect "Raise dispossessed Ritual"
@@ -60,32 +60,6 @@
 
 #end
 
-#neweffect "Raise dispossessed chassis dummy"
-#effect 10001
-#damage 674
-#spec 8388608
-#power -2
-#maxpower -2
-#nreff 1
-#pathlevel 1
-#fatiguecost 5
-#schools -1
-
-#skipchance 97
-
-#paths 32
-#secondarypaths 32
-
-#name 32 "Call NAMEPREFIX Dispossessed %Spirit%"
-#descr 32 "The caster traps the %soul% of ARTICLE recently dead %human%, preventing PRONOUN from reaching the underworld. The resulting %spirit% %is% confused and weak, but their touch can still paralyze their victims."
-#spelltype 20
-
-#scalerate 5
-#scalefatiguemult 15
-#pathperresearch 0.4
-#scalefatigueexponent -1.4
-
-#end
 
 
 #neweffect "dispossessed Remote Assassination"

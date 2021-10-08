@@ -15,7 +15,7 @@
 #paths 9
 #secondarypaths 9
 
-#skipchance 97
+#skipchance 98
 
 #name 1 "$conjure$ NAMEPREFIX Scorpion %Beast%"
 #name 8 "$conjure$ NAMEPREFIX Scorpion %Beast%"

@@ -684,6 +684,9 @@ Each event set can have at most one unitid associated with it. This can be speci
 \#scaleparam "param" 1.0
  * This causes the named param to be scaled with the scale factor of the parent spell. The float value after the named param is a multiplier. For instance, \#scaleparam "req_rare 2.0" will increase the value of all req_rares in the event block by 2 multiplied by the spell scaling rate. This command can be used multiple times.
  
+\#scaleparam_mult "param" 1.0
+ * This causes all instances of the named param to have an amount added to them based on the base value of the parameter. Specifically, the amount added is (<base value> * scale amount x <value of this command>). For instance, \#scaleparam_mult "req_rare 0.2" will add (20% * <the spell scaling rate>) to the value of all req_rares in the event block. This command can be used multiple times.
+ 
 \#makedummymonster 0
  * If set, a firstshape dummy will not be made by the montag builder.
  

@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 90
 
 #name 32 "$conjure$ NAMEPREFIX Longdead Horse%man%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %horse% and %rider% and forces them to fight for him. This spell is only temporary and the bones will collapse at the end of the battle."
@@ -43,7 +43,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 80
 
 #name 32 "Raise NAMEPREFIX Longdead Horse%man%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %horse% and %rider% and forces them to fight for him."

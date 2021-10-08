@@ -15,7 +15,7 @@
 #sound 31
 #schools 8
 
-#skipchance 97
+#skipchance 98
 #paths 8
 #secondarypaths 8
 
@@ -61,32 +61,6 @@
 #siegepatrolchaff 1
 #end
 
-#neweffect "clockworkhorror chassis dummy"
-#effect 10001
-#damage 982
-#spec 8388608
-#power 1
-#maxpower 1
-#nreff 2
-#pathlevel 1
-#fatiguecost 10
-#schools -1
-
-#skipchance 97
-#spelltype 20
-
-#paths 8
-#secondarypaths 8
-
-#name 8 "Construct NAMEPREFIX Clockwork %Horror%"
-#descr 8 "The caster forms ARTICLE clockwork %horror% from metal. The clockwork %horror% is difficult to destroy and is quite damaging, but it will quickly run out of power and become motionless on the battlefield."
-
-#scalerate 3
-#scalefatigueexponent -1.3
-#scalefatiguemult 35
-#pathperresearch 0.4
-
-#end
 
 #neweffect "clockworkhorror Remote Assassination"
 #effect 10050

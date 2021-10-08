@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 80
+#skipchance 98
 #scalefatiguemult 10
 #details "The elementals are size 5."
 #name 2 "$conjure$ NAMEPREFIX Huge Air %Elemental%"
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 5."
 #name 2 "$Summon$ NAMEPREFIX Huge Air Elementals"

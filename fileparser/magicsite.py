@@ -17,9 +17,9 @@ modifier_params_int = ["rarity", "loc", "gold", "res", "level", "decunrest", "su
                        "blessshockres", "blesspoisres", "blessairshield", "blessreinvig", "blessdtv", "recallgod",
                        "domwar", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "makedummymonster",
-                       "effectnumberforunits", "com", "mon", "summon", "summonlvl2", "summonlvl3", "summonlvl4",
+                       "com", "mon", "summon", "summonlvl2", "summonlvl3", "summonlvl4",
                        "wallcom", "wallunit", "wallmult", "makebattledummymonster"]
-modifier_params_str = ["selectunitmod", "unitmodlist"]
+modifier_params_str = ["unitmodlist"]
 modifier_params_float = []
 
 
@@ -110,6 +110,22 @@ def readMagicSiteFile(fp):
                         if path not in curreff.dummymonsternames:
                             curreff.dummymonsternames[path] = []
                         curreff.dummymonsternames[path].append(m.groups()[1])
+                    continue
+
+                if line.startswith("#selectunitmod"):
+                    m = re.match('#selectunitmod\\W+"(.*)"', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #selectunitmod")
+                    if curreff.selectunitmods is None:
+                        curreff.selectunitmods = []
+                    curreff.selectunitmods.append(m.groups()[0])
+                    continue
+
+                if line.startswith("#effectnumberforunits"):
+                    m = re.match('#effectnumberforunits\\W+(.*)', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #effectnumberforunits")
+                    curreff.effectnumberforunits.append(int(m.groups()[0]))
                     continue
 
                 if line.startswith("#end"):

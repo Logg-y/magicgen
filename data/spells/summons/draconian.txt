@@ -15,7 +15,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 98
 
 #name 2 "$conjure$ NAMEPREFIX %Draconian%"
 #descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."
@@ -42,7 +42,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 97
 
 #name 2 "$Summon$ NAMEPREFIX %Draconian%"
 #descr 2 "The caster summons ARTICLE %draconian% to fight for him. The draconian is a large, scaly humanoid with wings instead of arms."

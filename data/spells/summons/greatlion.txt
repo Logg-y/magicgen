@@ -60,36 +60,6 @@
 #scalerate 4
 #end
 
-#neweffect "greatlion chassis dummy"
-#effect 10001
-#damage 628
-#spec 0
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 2
-#fatiguecost 20
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#name 64 "Summon NAMEPREFIX Great %Lion%"
-#descr 64 "The caster summons ARTICLE great %lion%. These lions are large and ferocious."
-
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent -1.65
-#scalefatiguemult 20
-#pathperresearch 0.4
-
-#scalerate 4
-#end
 
 
 #neweffect "greatlion Remote Assassination"

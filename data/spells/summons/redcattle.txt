@@ -15,7 +15,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 --#scalefatiguemult 20
 
 #name 64 "$conjure$ NAMEPREFIX red cattle"

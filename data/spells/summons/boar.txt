@@ -60,34 +60,6 @@
 #scalerate 4
 #end
 
-#neweffect "boar chassis dummy"
-#effect 10001
-#damage 549
-#spec 0
-#power 0
-#maxpower 3
-#nreff 1
-#pathlevel 1
-#fatiguecost 20
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
-
-#name 64 "Summon NAMEPREFIX %Boar%"
-#descr 64 "The caster summons ARTICLE wild %boar%. These boar are fairly timid and will not trample opponents."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalerate 4
-#end
 
 
 #neweffect "boar Remote Assassination"

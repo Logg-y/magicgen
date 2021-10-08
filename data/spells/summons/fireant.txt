@@ -15,7 +15,7 @@
 #secondarypaths 64
 #secondarypathchance 80
 
-#skipchance 97
+#skipchance 98
 
 #name 1 "$conjure$ NAMEPREFIX Fire %Ant%"
 #descr 1 "Summons ARTICLE fire %ant% to fight for the caster. Fire ants are extremely large ants with a poisonous stinger."

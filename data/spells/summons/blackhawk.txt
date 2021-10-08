@@ -62,36 +62,6 @@
 #scalerate 4
 #end
 
-#neweffect "blackhawk chassis dummy"
-#effect 10001
-#damage 517
-#spec 0
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 1
-#fatiguecost 20
-#schools -1
-
-#paths 66
-#secondarypaths 66
-
-#skipchance 99
-
-#name 2 "Summon NAMEPREFIX Black Hawks"
-#name 64 "Summon NAMEPREFIX Black Hawks"
-#descr 2 "The caster summons some black hawks. Whilst typically used as scouts, they can prove to be annoyances in combat."
-#descr 64 "The caster summons some black hawks. Whilst typically used as scouts, they can prove to be annoyances in combat."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
-
-#scalerate 4
-#end
 
 #neweffect "blackhawk Remote Assassination"
 #effect 10050

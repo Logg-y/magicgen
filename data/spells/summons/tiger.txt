@@ -30,34 +30,6 @@
 #end
 
 
-#neweffect "tiger chassis dummy"
-#effect 10001
-#damage 1140
-#spec 0
-#power 2
-#maxpower 2
-#nreff 1
-#pathlevel 3
-#fatiguecost 10
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 97
-
-#name 64 "$Summon$ NAMEPREFIX %Tiger%"
-#descr 64 "The caster summons ARTICLE %tiger%. Tigers attack with their teeth and claws."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 35
-
-#scalerate 4
-#end
 
 #neweffect "tiger ritual"
 #effect 10001

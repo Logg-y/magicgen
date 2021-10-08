@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 98
 #scalefatiguemult 8
 #details "The elementals are size 4."
 #name 4 "$conjure$ NAMEPREFIX Large Water %Elemental%"
@@ -41,7 +41,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 4."
 #name 4 "Summon NAMEPREFIX Large Water Elementals"

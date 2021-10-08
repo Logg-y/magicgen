@@ -12,7 +12,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 60
 
 #name 8 "Summon NAMEPREFIX %Gargoyle%"
 #descr 8 "The caster forms and enchants ARTICLE winged %monster% from stone. The animated %statue% can fly and %is% incredibly difficult to harm with physical damage."

@@ -58,35 +58,6 @@
 #scalerate 3
 #end
 
-#neweffect "giantspider chassis dummy"
-#effect 10001
-#damage 782
-#spec 0
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 1
-#fatiguecost 10
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#name 64 "$Summon$ NAMEPREFIX Giant %Spider%"
-#descr 64 "The caster summons ARTICLE giant %spider%. The giant spider has a venomous bite, but has little resistance to magic."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent -1.6
-#scalefatiguemult 20
-#pathperresearch 0.4
-
-#scalerate 3
-#end
 
 #neweffect "giantspider Remote Assassination"
 #effect 10050

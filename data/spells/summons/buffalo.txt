@@ -17,7 +17,7 @@
 #scalefatigueexponent -1.42
 #pathperresearch 0.4
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Buffalo"
 #descr 64 "The caster summons ARTICLE buffalo. Buffalo are large and trample enemies, but are rather vulnerable to magic."

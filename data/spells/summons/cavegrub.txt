@@ -16,7 +16,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Grub%"
 #descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
@@ -41,7 +41,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "$summon$ NAMEPREFIX Cave %Grub%"
 #descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
@@ -58,33 +58,6 @@
 #end
 
 
-#neweffect "cavegrub chassis dummy"
-#effect 10001
-#damage 2526
-#spec 0
-#power 2
-#maxpower 2
-#nreff 1
-#pathlevel 2
-#fatiguecost 60
-#schools -1
-
-#paths 8
-#secondarypaths 8
-
-#skipchance 50
-
-#name 8 "Summon NAMEPREFIX Cave %Grub%"
-#descr 8 "The caster summons forth ARTICLE cave %grub%. Cave grubs can bite their opponents and produce corrosive saliva."
-
-#spelltype 20
-
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
-#scalefatiguemult 70
-
-#scalerate 3
-#end
 
 
 #neweffect "cavegrub Remote Assassination"

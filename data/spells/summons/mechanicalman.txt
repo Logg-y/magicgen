@@ -16,7 +16,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Mechanical %Man%"
 #descr 8 "The caster quickly forms and enchants ARTICLE mechanical %man% from the metal below the battlefield. The %man% will crumble back to earth after the battle."

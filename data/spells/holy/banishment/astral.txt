@@ -1,0 +1,110 @@
+
+#neweffect "Banishment Astral Additional Paralysis"
+#effect 66
+#damage 8
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10272
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Paralysis"
+#name 16 "Additional Paralysis"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Astral Paralysis"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 16 "Halt Undead"
+#descr 256 "With this prayer the priest smites undead beings with the otherworldly power of his God. The undead will take damage and become briefly frozen in time unless they manage to resist the banishment."
+#details "Undead that fail to resist take 8 paralysis damage."
+
+#nextspell "Banishment Astral Additional Paralysis"
+
+#spelltype 2
+#end
+
+
+
+#neweffect "Banishment Astral Additional Slow"
+#effect 11
+#damage 68719476736
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10272
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Slow"
+#name 16 "Additional Slow"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Astral Slow"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 16
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 16 "Slow Undead"
+#descr 256 "With this prayer the priest smites undead beings with the otherworldly power of his God. The undead will take damage and become slowed for the remainder of the battle unless they manage to resist the banishment."
+#details "Attack rate slowed 50%, Att -2, Def -2."
+
+#nextspell "Banishment Astral Additional Slow"
+
+#spelltype 2
+#end

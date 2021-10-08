@@ -189,8 +189,8 @@
 #paths 1
 #secondarypaths 1
 #nextspell "Scaling Heat Shock"
-#name 1 "NAMEPREFIX Pillars of %$fire$%"
-#descr 1 "This spell creates huge columns of fire that strike from the sky. It will kill those who are hit and set fire to anyone who is standing nearby."
+#name 1 "NAMEPREFIX Pillars of $fire$"
+#descr 1 "This spell creates huge columns of fire that strike from the sky. Anyone directly struck is likely immediately killed by the flames, and anyone close the the pillars may be knocked unconscious by the sheer amount of heat released."
 
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 18

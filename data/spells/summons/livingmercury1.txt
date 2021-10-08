@@ -16,7 +16,7 @@
 #secondarypathchance 90
 #ainocast 1
 
-#skipchance 97
+#skipchance 98
 
 
 #details "The elementals are size 1."

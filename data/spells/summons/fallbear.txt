@@ -17,7 +17,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."
@@ -42,7 +42,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "$Summon$ NAMEPREFIX Fall %Bear%"
 #descr 8 "The caster summons ARTICLE spectral fall %bear% to fight for him. The fall bear is an ethereal being which rapidly heals wounds and is strongest in the fall."

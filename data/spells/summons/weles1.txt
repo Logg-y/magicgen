@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 50
+#skipchance 98
 
 #details "The elementals are size 1."
 #name 4 "$conjure$ NAMEPREFIX Tiny Water %Elemental%"
@@ -41,7 +41,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 50
+#skipchance 97
 
 #details "The elementals are size 1."
 #name 4 "$Summon$ NAMEPREFIX Tiny Water Elementals"

@@ -15,7 +15,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 50
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX Winter %Wolf%"
 #descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
@@ -42,7 +42,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 50
+#skipchance 97
 
 #name 4 "$Summon$ NAMEPREFIX Winter %Wolf%"
 #descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."

@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Kithaironic %Lion%"
 #descr 64 "The caster summons ARTICLE kithaironic %lion% to fight for him. The kithaironic lion has a unnaturally thick hide."

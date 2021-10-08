@@ -1,0 +1,85 @@
+
+#neweffect "Banishment Chain Lightning"
+#effect 134
+#damage 2001
+#maxbounces 6
+#spec 276828296
+#range 5020
+#power 0
+#maxpower 0
+#aoe 1000
+#precision 100
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#banishment 1
+#sound 30
+#skipchance 0
+
+#paths 256
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 2 "$Purifying$ Lightning"
+#name 2 "$Purifying$ Charge"
+#descr 256 "With this prayer the priest draws upon the power of his God to fill a point on the battlefield with a holy electrical charge. This charge is then free to leap into any nearby undead, harming all those struck that fail to resist. Due to the divine nature of the electrical charge, shock resistance offers no protection from this effect."
+
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Air Additional Fetters"
+#effect 11
+#damage 65536
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10002
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Addtional $fetters$"
+#name 2 "Addtional $fetters$"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Air Fetters"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 2
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 2 "$Purifying$ Illusionary Shackles"
+#descr 256 "With this prayer the priest smites undead beings with the stormy power of his God. The undead will take damage and become trapped in illusionary shackles unless they manage to resist the banishment."
+#details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
+
+#nextspell "Banishment Air Additional Fetters"
+
+#spelltype 2
+#end

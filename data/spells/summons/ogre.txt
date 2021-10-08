@@ -26,7 +26,7 @@
 -- #scalecost 1.0
 #pathperresearch 0.4
 #schools 1
-#skipchance 50
+#skipchance 98
 #end
 
 #neweffect "Raise ogre Ritual"
@@ -40,7 +40,7 @@
 #fatiguecost 400
 #schools 1
 
-#skipchance 50
+#skipchance 97
 
 #paths 8
 #secondarypaths 8

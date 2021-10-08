@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Large %Lobster%"
 #descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
@@ -60,35 +60,6 @@
 #scalerate 3
 #end
 
-#neweffect "largelobster chassis dummy"
-#effect 10001
-#damage 2273
-#spec 41959424
-#power -2
-#maxpower -2
-#nreff 1
-#pathlevel 1
-#fatiguecost 15
-#schools -1
-
-#paths 64
-#secondarypaths 4
-
-#skipchance 97
-
-#name 64 "Summon NAMEPREFIX Large %Lobster%"
-#descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 1.4
-#pathperresearch 0.4
-#scalefatiguemult 15
-
-#scalerate 3
-#end
 
 #neweffect "largelobster Remote Assassination"
 #effect 10050

@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #aispellmod -40
 
@@ -29,34 +29,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "seastag chassis dummy"
-#effect 10001
-#damage 1062
-#spec 41959424
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 1
-#fatiguecost 10
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 97
-
-#name 64 "$Summon$ NAMEPREFIX Sea %Stag%"
-#descr 64 "The caster summons ARTICLE sea %stag%. Sea stags are the underwater equivalent of deer: they attack with their antlers."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
-
-#scalerate 4
-#end
 
 #neweffect "seastag ritual"
 #effect 10001

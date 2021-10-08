@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 98
 
 #name 2 "$conjure$ NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."
@@ -40,7 +40,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 97
 
 #name 2 "$Summon$ NAMEPREFIX %Gryphon%"
 #descr 2 "The caster summons ARTICLE %gryphon%. Gryphons are magical crosses between lions and eagles which attack with teeth and claws."

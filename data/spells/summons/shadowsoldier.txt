@@ -30,31 +30,6 @@
 #scalefatigueexponent -1.4
 #end
 
-#neweffect "Raise shadowsoldier chassis dummy"
-#effect 10001
-#damage 675
-#spec 8388608
-#power 0
-#maxpower 0
-#nreff 3002
-#pathlevel 1
-#fatiguecost 80
-#schools -1
-
-#skipchance 97
-
-#paths 32
-#secondarypaths 32
-
-#name 32 "$summon$ NAMEPREFIX Shadow %Soldier%"
-#descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm. These shadows are similar to dispossessed spirits, but are considerably more skilled."
-
-#spelltype 20
-#scalerate 2
-#scalefatiguemult 0
-#scalefatigueexponent 1.8
-#pathperresearch 0.3
-#end
 
 
 #neweffect "Raise shadowsoldier Ritual"

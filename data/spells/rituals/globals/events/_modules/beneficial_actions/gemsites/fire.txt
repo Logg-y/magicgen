@@ -15,20 +15,9 @@
 #end
 
 #req_freesites 1
-#req_rare 50
 #req_land 1
 #nolog
 #msg "A magical pyre has been discovered that continuously produces fire gems."
 -- enchanted pyre
 #addsite 345
 #end
-
-#newevent
-CONDITION
-#req_land 1
-#req_freesites 1
-#req_rare 50
-#nolog
-#msg "Strange, permanently hot rocks have been discovered. Magical gems may frequently and regularly be found here."
--- smoulderstone
-#addsite 355

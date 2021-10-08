@@ -6,11 +6,11 @@
 #power 3
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 5
 #pathlevel 2
 #chassisvalue 30
 #range 6
-#fatiguecost 30
+#fatiguecost 100
 #sound 31
 #schools 1
 
@@ -26,7 +26,10 @@
 --#scalefatiguemult 35
 #spelltype 528
 
-#scalerate 1
+#scalerate 2.4
+#scalefatiguemult 6
+#scalefatigueexponent -1.35
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Black Servant"

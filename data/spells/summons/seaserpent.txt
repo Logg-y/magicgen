@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX Sea %Serpent%"
 #descr 4 "The caster summons ARTICLE sea %serpent% to fight for him. Sea serpents are large and have venomous fangs."

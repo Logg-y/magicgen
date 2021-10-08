@@ -17,7 +17,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %Behemoth%"
 #descr 32 "The caster enchants the bones of ARTICLE giant %beast% and binds ARTICLE %mage% to control it. This creates ARTICLE %behemoth%, ARTICLE giant undead %elephant% that can trample enemies."

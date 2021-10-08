@@ -1,9 +1,8 @@
 #neweventset "Beneficial Global cond unconditional"
-#minpowerlevel 1
-#maxpowerlevel 4
+#minpowerlevel -1
+#maxpowerlevel 2
 
-#scaleparam "req_domchance" 2
-#modulebasescale 2
+#scaleparam_mult "req_domchance" 0.2
 
 
 #modulegroup "Beneficial Global Condition"
@@ -15,7 +14,7 @@
 #textrepl "SUBJECT" "The common populace"
 
 #moduledescr "This enchantment affects all friendly provinces with the caster's dominion."
-#moduledetails "Every turn, each friendly province has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+#moduledetails "Every turn, each friendly province has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-3} percent chance to trigger per point of dominion."
 
 
 
@@ -26,4 +25,26 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
+#req_domchance 10
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 5
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_domchance 3

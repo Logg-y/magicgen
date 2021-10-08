@@ -19,6 +19,8 @@
 #newsecondary "Summon heataura"
 #req siegepatrolchaff < 1
 
+#set ainocast 1
+
 #anysummon 1
 
 #paths 1
@@ -50,6 +52,8 @@
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
 #details "Summoned creatures gain poison aura 3."
 
+#set ainocast 1
+
 #end
 
 #newsecondary "Summon Diseaseaura"
@@ -68,6 +72,8 @@
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
 #details "Summoned creatures gain disease aura 3."
 
+
+#set ainocast 1
 #end
 
 
@@ -87,6 +93,7 @@
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
 #details "Summoned creatures gain mind slime 3."
 
+#set ainocast 1
 #end
 
 #newsecondary "Summon Sleepaura"
@@ -134,7 +141,7 @@
 #anysummon 1
 
 #paths 4
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -144,6 +151,7 @@
 #descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
 #details "Summoned creatures gain chill aura 6."
 
+#set ainocast 1
 #end
 
 #newsecondary "Summon heataura 6"
@@ -152,7 +160,7 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -162,6 +170,7 @@
 #descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
 #details "Summoned creatures gain heat aura 6."
 
+#set ainocast 1
 #end
 
 #newsecondary "Summon Poisonaura 6"
@@ -170,7 +179,7 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -180,6 +189,7 @@
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
 #details "Summoned creatures gain poison aura 6."
 
+#set ainocast 1
 #end
 
 #newsecondary "Summon Diseaseaura 6"
@@ -188,7 +198,7 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -198,6 +208,7 @@
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
 #details "Summoned creatures gain disease aura 6."
 
+#set ainocast 1
 #end
 
 
@@ -207,7 +218,7 @@
 #anysummon 1
 
 #paths 16
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -217,6 +228,7 @@
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
 #details "Summoned creatures gain mind slime 6."
 
+#set ainocast 1
 #end
 
 #newsecondary "Summon Sleepaura 6"
@@ -225,7 +237,7 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -243,7 +255,7 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -265,7 +277,7 @@
 #anysummon 1
 
 #paths 4
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -274,7 +286,7 @@
 #unitmod "Summon Chillaura 10"
 #descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
 #details "Summoned creatures gain chill aura 10."
-
+#set ainocast 1
 #end
 
 #newsecondary "Summon heataura 10"
@@ -283,7 +295,7 @@
 #anysummon 1
 
 #paths 1
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -292,7 +304,7 @@
 #unitmod "Summon Heataura 10"
 #descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
 #details "Summoned creatures gain heat aura 10."
-
+#set ainocast 1
 #end
 
 #newsecondary "Summon Poisonaura 10"
@@ -301,7 +313,7 @@
 #anysummon 1
 
 #paths 64
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -310,7 +322,7 @@
 #unitmod "Summon Poisonaura 10"
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
 #details "Summoned creatures gain poison aura 10."
-
+#set ainocast 1
 #end
 
 #newsecondary "Summon Diseaseaura 10"
@@ -319,7 +331,7 @@
 #anysummon 1
 
 #paths 32
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -328,7 +340,7 @@
 #unitmod "Summon Diseaseaura 10"
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
 #details "Summoned creatures gain disease aura 10."
-
+#set ainocast 1
 #end
 
 
@@ -338,7 +350,7 @@
 #anysummon 1
 
 #paths 16
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -347,7 +359,7 @@
 #unitmod "Summon Mindslime 10"
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
 #details "Summoned creatures gain mind slime 10."
-
+#set ainocast 1
 #end
 
 #newsecondary "Summon Sleepaura 10"
@@ -356,7 +368,7 @@
 #anysummon 1
 
 #paths 64
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0
@@ -374,7 +386,7 @@
 #anysummon 1
 
 #paths 32
-#power -5
+#power -3
 
 -- not montag
 #req damage > 0

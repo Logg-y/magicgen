@@ -1,0 +1,111 @@
+
+#neweffect "Banishment Earth Additional Grip"
+#effect 11
+#damage 16384
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10279
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Grip"
+#name 8 "Additional Grip"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Earth Grip"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 8
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 8 "Tomb of $Purifying$ Earth"
+#name 8 "Entomb Undead"
+#descr 256 "With this prayer the priest smites undead beings with the earthen power of his God. The undead will take damage and become trapped in the ground unless they manage to resist the banishment."
+#details "Earth meld: Strength+DRN vs 23 to break free."
+
+#nextspell "Banishment Earth Additional Grip"
+
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Earth Additional Petrify"
+#effect 99
+#damage 999
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10279
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Petrify"
+#name 8 "Additional Petrify"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Earth Petrify"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 8
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 8 "Petrify Undead"
+#name 8 "Purifying Petrification"
+#descr 256 "With this prayer the priest smites undead beings with the earthen power of his God. The undead will take damage and become turned to stone unless they manage to resist the banishment."
+#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#nextspell "Banishment Earth Additional Petrify"
+
+#spelltype 2
+#end

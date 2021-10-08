@@ -26,7 +26,7 @@
 #scalefatigueexponent -1.6
 -- #scalecost 1.0
 #schools 1
-#skipchance 50
+#skipchance 60
 #end
 
 #neweffect "catoblepas ritual"

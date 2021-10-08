@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 #scalefatiguemult 10
-#skipchance 50
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX %kydnid%"
 #descr 4 "The caster summons ARTICLE %kydnid%. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."

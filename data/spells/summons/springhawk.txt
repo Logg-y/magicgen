@@ -15,7 +15,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 98
 
 #name 2 "$conjure$ NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."
@@ -41,7 +41,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 97
 
 #name 2 "$Summon$ NAMEPREFIX Spring %Hawk%"
 #descr 2 "The caster summons ARTICLE spectral spring %hawk% to fight for him. The spring hawk is an ethereal being which shocks foes and is strongest in the spring."

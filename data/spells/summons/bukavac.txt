@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 90
 #scalefatiguemult 12
 #pathperresearch 0.4
 #scalefatigueexponent -1.2

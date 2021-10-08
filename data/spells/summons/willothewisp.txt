@@ -26,32 +26,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "willowisp chassis dummy"
-#effect 10001
-#damage 527
-#spec 0
-#power 2
-#maxpower 2
-#nreff 1
-#pathlevel 3
-#fatiguecost 30
-#schools -1
-
-#paths 1
-#secondarypaths 1
-
-#skipchance 97
-
-#name 1 "$Summon$ NAMEPREFIX Will o' the %Wisp%"
-#descr 1 "The caster summons ARTICLE will o' the %wisp% to fight for him. They are tiny ethereal beings which are difficult to hit and will burn enemies."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 50
-
-#scalerate 4
-#end
 
 #neweffect "willowisp ritual"
 #effect 10001

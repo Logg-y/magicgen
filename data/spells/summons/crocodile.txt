@@ -60,32 +60,6 @@
 #siegepatrolchaff 1
 #end
 
-#neweffect "crocodile chassis dummy"
-#effect 10001
-#damage 2185
-#spec 0
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 2
-#fatiguecost 40
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#name 64 "Summon NAMEPREFIX %Crocodile%"
-#descr 64 "The caster summons ARTICLE %crocodile%. The crocodile is a large but slow cold-blooded predator."
-
-
-#spelltype 20
-
-#skipchance 97
-
-#scalerate 3
-#end
 
 #neweffect "crocodile Remote Assassination"
 #effect 10050

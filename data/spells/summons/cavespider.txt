@@ -16,7 +16,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Spider%"
 #descr 8 "The caster summons ARTICLE cave %spider%. The cave spider is a strange spider from beneath the earth. Much like surface spiders, it can spit webs."
@@ -58,35 +58,6 @@
 #scalerate 4
 #end
 
-#neweffect "cavespider chassis dummy"
-#effect 10001
-#damage 2513
-#spec 0
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 1
-#fatiguecost 60
-#schools -1
-
-#paths 8
-#secondarypaths 8
-
-#skipchance 97
-
-#name 8 "Summon NAMEPREFIX Cave %Spider%"
-#descr 8 "The caster summons ARTICLE cave %spider%. The cave spider is a strange spider from beneath the earth. Much like surface spiders, it can spit webs."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent -1.4
-#scalefatiguemult 40
-#pathperresearch 0.4
-
-#scalerate 4
-#end
 
 #neweffect "cavespider Remote Assassination"
 #effect 10050

@@ -57,34 +57,6 @@
 #scalerate 5
 #end
 
-#neweffect "dog chassis dummy"
-#effect 10001
-#damage 1560
-#spec 0
-#power -2
-#maxpower -2
-#nreff 1
-#pathlevel 1
-#fatiguecost 10
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#name 64 "Summon NAMEPREFIX %Dog%"
-#descr 64 "The caster summons forth ARTICLE %dog% to fight for him. Dogs are small, weak, and not terribly effective combatants."
-
-#spelltype 20
-
-#scalefatigueexponent -1.3
-#scalefatiguemult 10
-#pathperresearch 0.4
-
-
-#scalerate 5
-#end
 
 #neweffect "dog Remote Assassination"
 #effect 10050

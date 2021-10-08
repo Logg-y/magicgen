@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 20
+#skipchance 98
 
 #details "The elementals are size 1."
 #name 8 "$conjure$ NAMEPREFIX Tiny Earth %Elemental%"
@@ -42,7 +42,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 20
+#skipchance 97
 
 #details "The elementals are size 1."
 #name 8 "$Summon$ NAMEPREFIX Tiny Earth Elementals"
@@ -59,34 +59,6 @@
 #scalerate 3
 #end
 
-#neweffect "eeles1 chassis dummy"
-#effect 10001
-#damage 498
-#spec 0
-#power -2
-#maxpower -2
-#nreff 1
-#pathlevel 1
-#fatiguecost 5
-#schools -1
-
-#paths 8
-#secondarypaths 8
-
-#skipchance 97
-
-#details "The elementals are size 1."
-#name 8 "Summon NAMEPREFIX Tiny Earth Elementals"
-#descr 8 "The caster summons forth tiny earth elementals."
-
-#spelltype 20
-
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
-#pathperresearch 0.4
-
-#scalerate 3
-#end
 
 
 #neweffect "eeles1 Remote Assassination"

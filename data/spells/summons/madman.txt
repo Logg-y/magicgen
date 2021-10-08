@@ -14,7 +14,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 97
+#skipchance 98
 #newunit "Madman"
 #aispellmod -20
 

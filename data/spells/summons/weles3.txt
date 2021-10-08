@@ -13,7 +13,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 98
 #scalefatiguemult 10
 #details "The elementals are size 3."
 #name 4 "$conjure$ NAMEPREFIX Lesser Water %Elemental%"
@@ -38,7 +38,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 4 "Summon NAMEPREFIX Lesser Water Elementals"

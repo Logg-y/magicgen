@@ -15,7 +15,7 @@
 #secondarypaths 9
 #secondarypathchance 90
 
-#skipchance 97
+#skipchance 80
 #scalefatiguemult 20
 #name 8 "$assemble$ NAMEPREFIX %Khalkotauros%"
 #name 1 "$assemble$ NAMEPREFIX %Khalkotauros%"
@@ -44,7 +44,7 @@
 #secondarypaths 9
 #secondarypathchance 90
 
-#skipchance 97
+#skipchance 60
 
 #name 8 "Summon NAMEPREFIX %Khalkotauros%"
 #name 1 "Summon NAMEPREFIX %Khalkotauros%"

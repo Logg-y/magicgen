@@ -15,7 +15,7 @@
 #secondarypaths 16
 #newunit "Dweller-in-the-Deep"
 
-#skipchance 95
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX %Dweller%-in-the-Deep"
 #descr 16 "The caster summons ARTICLE %Dweller%-in-the-Deep. Dwellers-in-the-Deep are strange aquatic beings that assault enemies with their minds, but they cannot leave the oceans."

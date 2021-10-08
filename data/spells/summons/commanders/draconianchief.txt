@@ -1,34 +1,34 @@
-#neweffect "Call Draconian Chief"
-
-#effect 1
-#damage 620
-#spec 0
-#power 4
-#maxpower 14
-#precision -100
-#nreff 2
-#pathlevel 3
-#chassisvalue 100
-#range 6
-#fatiguecost 100
-#explspr 10232
-#sound 31
-#schools 1
-
-#skipchance 70
-
---ASN
-#paths 2
-#secondarypaths 2
-
-#name 2 "Call NAMEPREFIX %Draconian Chief%"
-#descr 2 "The caster summons ARTICLE %Draconian Chief% to join him in battle. The %Draconian Chief% will leave once the battle is over."
-
-#scalefatiguemult 35
-#spelltype 528
-
-#scalerate 1
-#end
+-- #neweffect "Call Draconian Chief"
+-- 
+-- #effect 1
+-- #damage 620
+-- #spec 0
+-- #power 4
+-- #maxpower 14
+-- #precision -100
+-- #nreff 2
+-- #pathlevel 3
+-- #chassisvalue 100
+-- #range 6
+-- #fatiguecost 100
+-- #explspr 10232
+-- #sound 31
+-- #schools 1
+-- 
+-- #skipchance 70
+-- 
+-- --ASN
+-- #paths 2
+-- #secondarypaths 2
+-- 
+-- #name 2 "Call NAMEPREFIX %Draconian Chief%"
+-- #descr 2 "The caster summons ARTICLE %Draconian Chief% to join him in battle. The %Draconian Chief% will leave once the battle is over."
+-- 
+-- #scalefatiguemult 35
+-- #spelltype 528
+-- 
+-- #scalerate 1
+-- #end
 
 #neweffect "Summon Draconian Chief"
 

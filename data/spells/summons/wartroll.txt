@@ -15,7 +15,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX %war troll%"
 #descr 8 "The caster summons ARTICLE %war troll%. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
@@ -42,7 +42,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "$Summon$ NAMEPREFIX %war troll%"
 #descr 8 "The caster summons ARTICLE %war troll%. War trolls are mighty armoured beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."

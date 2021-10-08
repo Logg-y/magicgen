@@ -18,7 +18,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX Horse-%Face%"
 #descr 32 "The caster summons ARTICLE Horse-%Face% to fight for him. The horse-face is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."

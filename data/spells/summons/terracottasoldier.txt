@@ -32,8 +32,8 @@
 #effect 10001
 #damage 2134
 #spec 8388608
-#power 5
-#maxpower 8
+#power 3
+#maxpower 6
 #nreff 1003
 #pathlevel 1
 #fatiguecost 200
@@ -106,6 +106,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
+
 
 
 

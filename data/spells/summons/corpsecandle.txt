@@ -16,7 +16,7 @@
 #secondarypaths 33
 #secondarypathchance 90
 
-#skipchance 97
+#skipchance 98
 
 #name 1 "$Conjure$ NAMEPREFIX Corpse %Candle%"
 #name 32 "$Conjure$ NAMEPREFIX Corpse %Candle%"
@@ -63,36 +63,6 @@
 
 #end
 
-#neweffect "corpsecandle chassis dummy"
-#effect 10001
-#damage 528
-#spec 0
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 2
-#fatiguecost 10
-#schools -1
-
-#paths 33
-#secondarypaths 33
-#secondarypathchance 90
-
-#skipchance 97
-
-#name 1 "Summon NAMEPREFIX Corpse %Candle%"
-#name 32 "Summon NAMEPREFIX Corpse %Candle%"
-#descr 1 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
-#descr 32 "The caster summons ARTICLE corpse %candle% to fight for him. They are tiny ethereal beings which are difficult to hit and will decay enemies."
-
-#spelltype 20
-
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
-#scalefatiguemult 27
-
-#scalerate 2
-#end
 
 #neweffect "corpsecandle Remote Assassination"
 #effect 10050

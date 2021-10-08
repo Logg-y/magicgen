@@ -29,7 +29,7 @@
 
 #name 4 "NAMEPREFIX Slime %$Ball$%"
 #descr 4 "The caster hurls ARTICLE %ball% of sticky goo at his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Slimed targets have their att/def/combat speed halved, and their attack interval doubled. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
@@ -67,7 +67,7 @@
 
 #name 4 "NAMEPREFIX Slime"
 #descr 4 "The caster conjures sticky goo all over his enemies. Enemies stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Slimed targets have their att/def/combat speed halved, and their attack interval doubled. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
@@ -105,7 +105,7 @@
 
 #name 4 "NAMEPREFIX Slimy Battlefield"
 #descr 4 "The caster conjures sticky goo all over the entire battlefield. Creatures stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Slimed targets have their att/def/combat speed halved, and their attack interval doubled. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
@@ -142,7 +142,7 @@
 
 #name 4 "NAMEPREFIX Curse of Slime"
 #descr 4 "The caster conjures sticky goo over all his enemies. Creatures stuck in the slime will move and attack more slowly and have trouble defending themselves. The slime effect will wear off more quickly on targets with high magic resistance."
-#details "Slimed targets have their att/def/combat speed halved. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Slimed targets have their att/def/combat speed halved, and their attack interval doubled. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"

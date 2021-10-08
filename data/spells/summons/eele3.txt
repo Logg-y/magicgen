@@ -15,7 +15,7 @@
 #secondarypaths 8
 #scalefatiguemult 40
 #pathperresearch -1.3
-#skipchance 80
+#skipchance 98
 
 #details "The elementals are size 3."
 #name 8 "Summon NAMEPREFIX Lesser Earth %Elemental%"
@@ -41,7 +41,7 @@
 #secondarypaths 8
 
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 8 "Summon NAMEPREFIX Lesser Earth Elementals"

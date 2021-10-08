@@ -17,7 +17,7 @@
 #secondarypathchance 95
 #scalefatigueexponent -1.4
 
-#skipchance 97
+#skipchance 98
 
 #name 2 "$conjure$ NAMEPREFIX %Amphiptere%"
 #descr 2 "The caster summons ARTICLE_N %amphiptere% to fight for him. The amphiptere is a winged serpent which can spit poison."

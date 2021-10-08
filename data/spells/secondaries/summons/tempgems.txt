@@ -2,7 +2,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 
 #anysummon 1
 
@@ -31,7 +31,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 
 #anysummon 1
 
@@ -61,7 +61,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 
 #anysummon 1
 
@@ -90,7 +90,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 
 #anysummon 1
 
@@ -118,7 +118,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -145,7 +145,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -172,7 +172,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -199,7 +199,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -226,7 +226,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -253,7 +253,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -280,7 +280,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -307,7 +307,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -334,7 +334,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -1
+#power 0
 #anysummon 1
 
 -- useless in assassinations
@@ -361,7 +361,7 @@
 #req siegepatrolchaff < 1
 
 #paths 0
-#power -2
+#power 0
 #anysummon 1
 
 -- useless in assassinations

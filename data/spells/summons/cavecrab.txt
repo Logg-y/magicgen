@@ -15,7 +15,7 @@
 #secondarypaths 4
 #secondarypathchance 90
 --#scalefatiguemult 20
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Crab%"
 #descr 8 "The caster summons forth ARTICLE cave %crab%. Cave crabs have massive pincers which will easily cut through any armour, but are very vulnerable to magic."

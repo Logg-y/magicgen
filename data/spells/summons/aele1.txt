@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 97
 
 #details "The elementals are size 1."
 #name 2 "$conjure$ NAMEPREFIX Tiny Air %Elemental%"
@@ -44,7 +44,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 98
 
 #details "The elementals are size 1."
 #name 2 "$Summon$ NAMEPREFIX Tiny Air Elementals"
@@ -59,33 +59,6 @@
 #scalerate 2
 #end
 
-#neweffect "aeles1 chassis dummy"
-#effect 10001
-#damage 572
-#spec 0
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 3
-#fatiguecost 10
-#schools -1
-
-#paths 2
-#secondarypaths 2
-
-#skipchance 50
-
-#details "The elementals are size 1."
-#name 2 "$Summon$ NAMEPREFIX Tiny Air Elementals"
-#descr 2 "The caster summons forth tiny air elementals."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 35
-
-#scalerate 2
-#end
 
 
 #neweffect "aeles1 Remote Assassination"
@@ -99,7 +72,7 @@
 #pathlevel 3
 #fatiguecost 400
 #schools 1
-#skipchance 99
+#skipchance 99.6
 #nogeodst 2052
 
 #paths 2

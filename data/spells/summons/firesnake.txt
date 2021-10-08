@@ -17,7 +17,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 50
+#skipchance 98
 
 #name 1 "$conjure$ NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."
@@ -41,7 +41,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 50
+#skipchance 97
 
 #name 1 "$Summon$ NAMEPREFIX Fire %Snake%"
 #descr 1 "The caster summons ARTICLE fire %snake% to fight for him. The fire snake is serpent with venomous fangs which also badly burn its enemies."

@@ -76,6 +76,8 @@ class SpellSecondaryEffect(object):
             thispower = round(finalpercentage * self.power, 0)
             return math.floor(thispower)
         return self.power
+    def __repr__(self):
+        return f"SecondaryEffect({self.name})"
 
     def _compatibility(self, eff, modifier, researchlevel):
         # Skipchance is done by the main processing loop now

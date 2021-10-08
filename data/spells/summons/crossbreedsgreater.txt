@@ -14,7 +14,7 @@
 
 #paths 64
 #secondarypaths 64
-#skipchance 97
+#skipchance 98
 
 #name 64 "$Conjure$ Greater Foulspawn"
 #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments to fight for him. The creatures summoned by this spell are always the strongest results of crossbreeding."

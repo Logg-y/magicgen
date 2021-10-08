@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 80
+#skipchance 30
 #scalefatiguemult 25
 #details "The elementals are size 6."
 #name 8 "Summon NAMEPREFIX Massive Earth %Elemental%"
@@ -39,7 +39,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 80
+#skipchance 50
 
 #details "The elementals are size 6."
 #name 8 "Summon NAMEPREFIX Massive Earth Elementals"

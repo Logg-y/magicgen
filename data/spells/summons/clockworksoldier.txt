@@ -12,7 +12,7 @@
 #sound 31
 #schools 8
 
-#skipchance 97
+#skipchance 98
 #paths 8
 #secondarypaths 8
 
@@ -57,31 +57,6 @@
 #end
 
 
-#neweffect "clockworksoldier chassis dummy"
-#effect 10001
-#damage 2321
-#spec 8388608
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 1
-#fatiguecost 20
-#schools -1
-
-#skipchance 97
-#spelltype 20
-
-#paths 8
-#secondarypaths 8
-
-#name 8 "Construct NAMEPREFIX Clockwork %Soldier%"
-#descr 8 "The caster forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless on the battlefield."
-
-#scalerate 3
-#scalefatigueexponent -1.3
-#scalefatiguemult 35
-#pathperresearch 0.4
-#end
 
 
 #neweffect "clockworksoldier Remote Assassination"

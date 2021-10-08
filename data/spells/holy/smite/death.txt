@@ -1,0 +1,212 @@
+
+#neweffect "Smite Death Additional Decay"
+#effect 11
+#damage 256
+#spec 16544+8388608
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Deathly Decay"
+#name 64 "Deathly Decay"
+#spelltype 2
+#end
+
+#neweffect "Smite Death Decay"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Decay"
+#name 32 "Decaying $Syllable$"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and decaying the victim."
+#nextspell "Smite Death Additional Decay"
+#spelltype 2
+#end
+
+
+-- This is probably the most ambitious smite I will ever make
+-- 1) MRN 1 capped damage (ondamage spec)
+-- 2) Charm, MRN
+-- 3) All of the become undead stuff, affects friendlies only
+-- 4) 10AN, enemies only (so it hits everyone that either can't be charmed or resists it)
+
+#neweffect "Smite Curse of Undeath Survivor Damage"
+#effect 2
+#damage 10
+#spec 16512+8388608+262144
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Punish the Strong"
+#name 16 "Punish the Strong"
+#spelltype 2
+#end
+
+#neweffect "Smite Curse of Undeath Heal"
+#effect 13
+#damage 50
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 32 "Restore Corpse"
+#name 256 "Restore Corpse"
+#nextspell "Smite Curse of Undeath Survivor Damage"
+#end
+
+#neweffect "Smite Curse of Undeath Reinvigoration"
+#effect 8
+#damage 200
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 32 "Tireless Death"
+#name 256 "Tireless Death"
+#nextspell "Smite Curse of Undeath Heal"
+#end
+
+#neweffect "Smite Curse of Undeath Kill"
+#effect 2
+#damage 999
+#spec 18014398522064896
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10200
+#name 32 "Removal of Life"
+#name 256 "Removal of Life"
+#nextspell "Smite Curse of Undeath Reinvigoration"
+#end
+
+#neweffect "Smite Curse of Undeath LaD"
+#effect 10
+#damage 2097152
+#spec 12582912
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10197
+#name 32 "Necromantic Imbuement"
+#name 256 "Necromantic Imbuement"
+#nextspell "Smite Curse of Undeath Kill"
+#end
+
+#neweffect "Smite Curse of Undeath Charm"
+#effect 29
+#damage 999
+#spec 546066560
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#explspr 10197
+#name 32 "Deathly Curse"
+#name 256 "Deathly Curse"
+#nextspell "Smite Curse of Undeath LaD"
+#end
+
+#neweffect "Smite Curse of Undead"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+#aispellmod -50
+
+#paths 256
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Undeath"
+#name 64 "$Syllable$ of Divine Temptation"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt. Being exposed to the divine deathly energy may kill and raise the target as an undead being under the command of the priest. Those that resist this are struck with divine energy."
+#details "Upon failing the first MR check, victims take at most one point of damage. They they make a second MR check, which will charm them, give them life after death, kill them, then fully heal and reinvigorate their soulless form under the command of the caster. Those who failed the first MR check but were not charmed for any reason take 10 AN damage. This spell does not confer any undead leadership and soulless produced by this spell may immediately dissolve. Any that survive the battle persist under the caster's control."
+#nextspell "Smite Curse of Undeath Charm"
+#spelltype 2
+#end
+
+

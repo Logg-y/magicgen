@@ -29,32 +29,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "Phantasmal warrior chassis dummy"
-#effect 10001
-#damage 297
-#spec 8388608
-#power -2
-#maxpower -2
-#nreff 4006
-#pathlevel 2
-#fatiguecost 2
-#schools -1
-
-#paths 2
-#secondarypaths 2
-
-#name 2 "$Summon$ NAMEPREFIX Phantasmal %Warrior%"
-#descr 2 "Summons ARTICLE phantasmal %warrior% to fight for the caster. These warriors are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
-
-#spelltype 20
-
-#skipchance 20
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 8
-
-#scalerate 4
-#end
 
 #neweffect "Phantasmal warrior ritual"
 #effect 10001

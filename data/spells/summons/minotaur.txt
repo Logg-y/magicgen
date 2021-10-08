@@ -16,7 +16,7 @@
 #secondarypaths 64
 #aispellmod -33
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX %Minotaur%"
 #descr 64 "The caster summons ARTICLE %minotaur%. Minotaurs are mighty forest beasts which trample human enemies."

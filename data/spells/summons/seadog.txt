@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 
 #name 64 "$conjure$ NAMEPREFIX Sea %Dog%"
@@ -26,34 +26,6 @@
 #scalefatigueexponent -1.3
 #end
 
-#neweffect "seadog chassis dummy"
-#effect 10001
-#damage 1064
-#spec 8388608
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 2
-#fatiguecost 10
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 97
-
-#name 64 "$Summon$ NAMEPREFIX Sea %Dog%"
-#descr 64 "The caster summons ARTICLE sea %dog%. Sea dogs are amphibious creatures that bite their enemies."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 15
-
-#scalerate 4
-#end
 
 #neweffect "seadog ritual"
 #effect 10001

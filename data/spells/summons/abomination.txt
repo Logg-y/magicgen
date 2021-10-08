@@ -47,7 +47,7 @@
 #scalefatiguemult 200
 #scalefatigueexponent -2.1
 
-#skipchance 50
+#skipchance 20
 
 #name 4 "$Summon$ NAMEPREFIX %Abomination%"
 #name 16 "$Summon$ NAMEPREFIX %Abomination%"
@@ -71,7 +71,7 @@
 #pathlevel 7
 #fatiguecost 2000
 #schools 1
-#skipchance 97
+#skipchance 90
 
 #paths 20
 #secondarypaths 20

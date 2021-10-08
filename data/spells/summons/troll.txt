@@ -15,7 +15,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."
@@ -41,7 +41,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 50
+#skipchance 97
 
 #name 8 "$Summon$ NAMEPREFIX %troll%"
 #descr 8 "The caster summons ARTICLE %troll%. Trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."

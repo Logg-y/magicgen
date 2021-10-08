@@ -15,20 +15,9 @@
 #end
 
 #req_freesites 1
-#req_rare 50
 #req_land 1
 #nolog
 #msg "A strange well of white water has been discovered. Magical gems can frequently be found in its waters."
 -- well of white water
 #addsite 432
-#end
 
-#newevent
-CONDITION
-#req_land 1
-#req_freesites 1
-#req_rare 50
-#nolog
-#msg "The waters within a village well have become touched by magic. Magical gems can frequently be found in its waters."
--- enchanted well
-#addsite 473

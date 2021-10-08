@@ -16,7 +16,7 @@
 #secondarypaths 16
 #newunit "Kenzoku"
 
-#skipchance 92
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX Kenzoku"
 #descr 16 "The caster summons forth ARTICLE kenzoku. Kenzoku are masterful samurai granted immortality for their deeds."
@@ -43,7 +43,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 60
+#skipchance 97
 #newunit "Kenzoku"
 
 #name 16 "$Summon$ NAMEPREFIX Kenzoku"

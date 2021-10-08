@@ -27,37 +27,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "Vile thing chassis dummy"
-#effect 10001
-#damage 628
-#spec 8388608
-#power 3
-#maxpower 14
-#nreff 1001
-#pathlevel 2
-#fatiguecost 200
-#schools -1
-
-#paths 16
-#secondarypaths 16
-#newunit "Vile Thing"
-
-#skipchance 97
-
-#name 16 "Summon NAMEPREFIX Vile %Thing%"
-#descr 16 "The caster summons ARTICLE Vile %Thing%. Vile things are strange tentacled creatures."
-#details "Creatures summoned with this spell are not sacred."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 25
-#newunit "Vile Thing"
-
-#scalerate 2
-#end
 
 #neweffect "Vile thing ritual"
 #effect 10001

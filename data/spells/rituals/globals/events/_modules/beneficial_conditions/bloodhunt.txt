@@ -1,11 +1,13 @@
 #neweventset "Beneficial Global cond bloodhunter"
-#minpowerlevel -1
-#maxpowerlevel 2
+#minpowerlevel -4
+#maxpowerlevel -2
+
 
 #req path1 == 128
 
-#scaleparam "req_domchance" 2
-#modulebasescale 2
+#scaleparam_mult "req_domchance" 0.2
+
+#moduleskipchance 90
 
 
 #modulegroup "Beneficial Global Condition"
@@ -16,12 +18,12 @@
 
 #textrepl "SUBJECT" "Blood hunters"
 
-#moduledescr "This enchantment affects friendly Blood mages searching for suitable blood slaves."
-#moduledetails "Every turn, each province with a blood hunting B1+ mage has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+#moduledetails "Every turn, each friendly province with a blood hunting B1+ mage has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-3} percent chance to trigger per point of dominion."
 
 
 
 #end
+
 
 #rarity 5
 #req_pop0ok
@@ -30,4 +32,32 @@
 #req_enchdom ENCHANTID
 #req_targorder 8
 #req_targpath1 7
-#req_domchance 2
+#req_domchance 10
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_targorder 8
+#req_targpath1 7
+#req_domchance 5
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_targorder 8
+#req_targpath1 7
+#req_domchance 3
+
+

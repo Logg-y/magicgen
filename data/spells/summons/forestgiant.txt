@@ -15,7 +15,7 @@
 #secondarypaths 64
 #aispellmod -20
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Forest %Giant%"
 #descr 64 "The caster summons ARTICLE forest %giant%. Forest giants are large humanoids that are physically powerful but are vulnerable to magic."

@@ -553,6 +553,8 @@ class SpellEffect(object):
             s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondarypower, forceschool=forceschool,
                                                    forcepath=s.path1, blockmodifier=True, isnextspell=True,
                                                    setparams=setparams, allowskipchance=False)
+            if s.nextspell is None:
+                raise ValueError(f"Failed to generate nextspell {self.nextspell.name}")
         if self.extraspell != "":
             extraspell = utils.spelleffects[self.extraspell]
             if self.donotsetextraspellpath == 0:
@@ -1059,7 +1061,7 @@ class SpellEffect(object):
                     print("Had to give up on this spell because no names were valid")
                     return None
 
-        if self.copyspell == "Record of Creation":
+        if self.copyspell == "Record of Creation" and s.nextspell is not None:
             diff = self.fatiguecost - self.nextspell.fatiguecost
             print(f"This is a record of creation based spell, set nextspell's fatigue cost to defined difference"
                   f"of {diff}")

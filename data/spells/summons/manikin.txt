@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %Manikin%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."
@@ -26,32 +26,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "Manikin chassis dummy"
-#effect 10001
-#damage 313
-#spec 8388608
-#power 2
-#maxpower 2
-#nreff 3006
-#pathlevel 2
-#fatiguecost 60
-#schools -1
-
-#paths 32
-#secondarypaths 64
-
-#skipchance 97
-
-#name 32 "Raise NAMEPREFIX Manikins"
-#descr 32 "The caster enchants the bones of ARTICLE long dead %human% and enchants vines to control them. The resulting beings may put the living to sleep with their magical vines."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 35
-
-#scalerate 2
-#end
 
 #neweffect "Manikin ritual"
 #effect 10001

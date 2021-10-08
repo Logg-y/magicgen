@@ -1,0 +1,51 @@
+#neweffect "Smite Demon Earth Additional Petrification"
+#effect 99
+#damage 999
+#spec 8405120+4096
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Divine Petrification"
+#name 8 "Divine Petrification"
+#spelltype 2
+#end
+
+
+#neweffect "Smite Demon Earth Petrify"
+#effect 2
+#damage 5005
+#spec 8933512+1152921504606846976
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 2
+#fatiguecost 0
+#explspr 10302
+#precision 100
+#schools 1
+#sound 30
+#smitedemon 1
+#nextspell "Smite Demon Earth Additional Petrification"
+
+#paths 256
+#secondarypaths 8
+#secondarypathchance 0
+
+#name 8 "Petrify Demon"
+#name 256 "Smite Demon"
+#descr 256 "This prayer will make a earthen bolt strike down from the sky and deliver massive damage to any demon who fails to resist the spell."
+
+#spelltype 2

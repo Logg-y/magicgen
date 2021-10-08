@@ -42,7 +42,7 @@
 #anysummon 1
 
 #paths 96
-#power -2
+#power -1
 
 #req effect != 10050
 
@@ -125,7 +125,7 @@
 #anysummon 1
 
 #paths 16
-#power -4
+#power -3
 
 -- not montag
 #req damage > 0
@@ -148,7 +148,7 @@
 #anysummon 1
 
 #paths 16
-#power -4
+#power -3
 
 -- not montag
 #req damage > 0
@@ -185,7 +185,7 @@
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -203,7 +203,7 @@
 #anysummon 1
 
 #paths 2
-#power -2
+#power -1
 
 #req effect != 10050
 
@@ -226,7 +226,7 @@
 #anysummon 1
 
 #paths 32
-#power -4
+#power -1
 
 -- not montag
 #req damage > 0
@@ -249,7 +249,7 @@
 #anysummon 1
 
 #paths 32
-#power -4
+#power -1
 
 -- not montag
 #req damage > 0
@@ -306,7 +306,7 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 #req effect != 10050
 
@@ -326,7 +326,7 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -345,7 +345,7 @@
 #anysummon 1
 
 #paths 4
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -364,7 +364,7 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -423,7 +423,7 @@
 #anysummon 1
 
 #paths 4
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -443,7 +443,7 @@
 #anysummon 1
 
 #paths 4
-#power -2
+#power -1
 
 #req effect != 10050
 

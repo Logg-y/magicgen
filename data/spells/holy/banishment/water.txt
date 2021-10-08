@@ -1,0 +1,144 @@
+
+#neweffect "Banishment Falling Water"
+-- for falling projectile effect
+#copyspell "Rain stone"
+#flightspr 10065
+#effect 2
+#damage 3003
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2004
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 4 "Holy Flood"
+#name 4 "Divine Flood"
+#name 4 "$Purifying$ Flood"
+#name 4 "$Purifying$ Streams"
+#descr 256 "With this prayer the priest draws upon the power of his God to bring cleansing waters upon undead foes. The undead will take damage unless they manage to resist the banishment."
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Water Additional Encase"
+#effect 604
+#damage 299
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10275
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Addtional Encasing"
+#name 4 "Addtional Encasing"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Water Encase"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 4 "Prison of $Purifying$ Ice"
+#name 4 "$Purifying$ Ice Prison"
+#descr 256 "With this prayer the priest smites undead beings with the frozen power of his God. The undead will take damage and become trapped in a cage of ice unless they manage to resist the banishment."
+#details "Targets are encased in ice for 5 points. Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+
+#nextspell "Banishment Water Additional Encase"
+
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Water Additional Slime"
+#effect 11
+#damage 134217728
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10275
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Addtional $slime$"
+#name 4 "Addtional $slime$"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Water Slime"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 4 "$Purifying$ Slime"
+#descr 256 "With this prayer the priest smites undead beings with the slimy power of his God. The undead will take damage and become coated in sticky slime unless they manage to resist the banishment."
+#details "Slimed targets have their att/def/combat speed halved, and their attack interval doubled. Each turn, units roll MR + DRN. If this is 22 or higher, the slime effect ends."
+
+#nextspell "Banishment Water Additional Slime"
+
+#spelltype 2
+#end
+

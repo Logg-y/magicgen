@@ -6,11 +6,11 @@
 #power 5
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 3
 #pathlevel 3
 #chassisvalue 90
 #range 6
-#fatiguecost 90
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
@@ -23,10 +23,12 @@
 #name 32 "Summon NAMEPREFIX %Shura%"
 #descr 32 "The caster summons ARTICLE %Shura% to fight for him on the battlefield. The %Shura% %is% ARTICLE powerful undead general surrounded by a freezing wind, but will leave once the battle is over."
 
-#scalefatiguemult 20
+#scalefatiguemult 8
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.4
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Shura"

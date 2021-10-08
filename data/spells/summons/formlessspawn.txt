@@ -15,7 +15,7 @@
 #secondarypaths 16
 #newunit "Formless Spawn"
 
-#skipchance 95
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX Formless %Spawn%"
 #descr 16 "The caster summons ARTICLE Formless %Spawn%. Formless Spawns are strange, amorphus beings from the Void that regenerate wounds."

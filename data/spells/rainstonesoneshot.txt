@@ -19,7 +19,7 @@
 #name 4 "NAMEPREFIX Frozen Rain"
 
 #descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit in the head by hailstones. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the hail."
-#descr 8 "The caster creates a brief shower of large stones over a SIZE area. eing in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
+#descr 8 "The caster creates a brief shower of large stones over a SIZE area. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
 #scalerate 6
@@ -55,7 +55,7 @@
 #name 4 "NAMEPREFIX Frozen Rain"
 
 #descr 4 "The caster creates a brief shower of incredibly violent hail over a SIZE area. Being in the area tends to result in getting hit in the head by hailstones. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the hail."
-#descr 8 "The caster creates a brief shower of large stones over a SIZE area. eing in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
+#descr 8 "The caster creates a brief shower of large stones over a SIZE area. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
 #scalerate 6

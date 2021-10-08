@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 50
+#skipchance 70
 
 #name 64 "$conjure$ NAMEPREFIX Vine %Ogre%"
 #descr 64 "The caster enchants vines and forms them into ARTICLE large humanoid %shape%. The resulting vine %ogre% will fight for the caster, but will then return to the ground at the end of the battle."
@@ -28,33 +28,6 @@
 #end
 
 
-#neweffect "vineogre chassis dummy"
-#effect 10001
-#damage 362
-#spec 8388608
-#power 3
-#maxpower 3
-#nreff 1
-#pathlevel 3
-#fatiguecost 200
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 50
-
-#name 64 "$Summon$ NAMEPREFIX Vine Ogres"
-#descr 64 "The caster enchants vines and forms them into ARTICLE large humanoid %shape%. The resulting vine %ogre% will fight for the caster."
-
-#spelltype 20
-
-#scalefatigueexponent 0.3
-#scalefatiguemult 80
-
-#scalerate 2
-#siegepatrolchaff 1
-#end
 
 #neweffect "vineogre ritual"
 #effect 10001

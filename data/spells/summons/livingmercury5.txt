@@ -16,7 +16,7 @@
 #secondarypathchance 90
 #ainocast 1
 
-#skipchance 97
+#skipchance 90
 #scalefatiguemult 30
 
 #details "The elementals are size 5."
@@ -43,7 +43,7 @@
 #secondarypaths 8
 #secondarypathchance 90
 
-#skipchance 97
+#skipchance 80
 
 #details "The elementals are size 5."
 #name 4 "$Summon$ NAMEPREFIX Huge Living %Mercury%"

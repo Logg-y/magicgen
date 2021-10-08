@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Dire %Wolf%"
 #descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
@@ -57,33 +57,6 @@
 #scalerate 4
 #end
 
-#neweffect "direwolf chassis dummy"
-#effect 10001
-#damage 1224
-#spec 0
-#power 2
-#maxpower 2
-#nreff 4
-#pathlevel 2
-#fatiguecost 30
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 97
-
-#name 64 "Summon NAMEPREFIX Dire %Wolf%"
-#descr 64 "The caster summons ARTICLE dire %wolf%. Dire wolves are large and mighty wolves."
-
-#spelltype 20
-
-#scalefatigueexponent -1.6
-#scalefatiguemult 21
-#pathperresearch 0.4
-
-#scalerate 4
-#end
 
 
 #neweffect "direwolf Remote Assassination"

@@ -1,0 +1,132 @@
+
+#neweffect "Smite Earth Additional Grip"
+#effect 11
+#damage 268435456
+#spec 16544+8388608+70368744177664
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Grip of the Earth"
+#name 8 "Grip of the Earth"
+#spelltype 2
+#end
+
+#neweffect "Smite Earth Grip"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 8
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding them and causing the very earth to reach up and swallow them."
+#details "Earth meld: Strength+DRN vs 23 to break free."
+#nextspell "Smite Earth Additional Grip"
+#spelltype 2
+#end
+
+
+
+
+#neweffect "Smite Earth Additional Petrify"
+#effect 99
+#damage 999
+#spec 16544+8388608
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Divine Petrification"
+#name 8 "Divine Petrification"
+#spelltype 2
+#end
+
+#neweffect "Smite Earth Petrify"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 8
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Stone"
+#name 8 "$Syllable$ of Petrification"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and petrifying them."
+#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#nextspell "Smite Earth Additional Petrify"
+#spelltype 2
+#end

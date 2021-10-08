@@ -1,0 +1,178 @@
+#neweffect "Banishment Fire Explosion"
+#effect 2
+#damage 3002
+#spec 276828296
+#range 5020
+#power 0
+#maxpower 0
+#aoe 3004
+#precision 100
+#explspr 10113
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Purifying Eruption"
+#name 1 "Purifying Eruption"
+#name 256 "Holy Eruption"
+#name 1 "Holy Eruption"
+#spelltype 2
+#end
+
+#neweffect "Banishment Exploding Fire"
+#effect 2
+#damage 5
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#banishment 1
+#skipchance 0
+#sound 30
+#nextspell "Banishment Fire Explosion"
+
+#paths 256
+#secondarypaths 1
+#secondarypathchance 0
+
+#name 1 "$Purifying$ Eruption"
+#descr 256 "With this prayer the priest draws upon the power of his God to fill a hostile undead creature with holy energy. If the target fails to resist, the energy makes the target explode violently in an eruption of holy fire. The divine fire badly burns nearby undead, and due to its divine nature, neither armour nor fire resistance offer any protection."
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Fire Additional Burning"
+#effect 11
+#damage 512
+#spec 16544
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10113
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Ignition"
+#name 1 "Ignition"
+#spelltype 2
+#end
+
+#neweffect "Banishment Fire Burning"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 1
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 1 "Incineration of the Unclean"
+#name 1 "$Purifying$ Flame"
+#name 1 "Ashes to Ashes"
+#name 2 "Wind of Memories"
+#name 2 "$Purifying$ Strikes"
+#name 4 "$Purifying$ Water"
+#name 8 "Pull from the Grave"
+#name 8 "Bury the Dead"
+#name 16 "Otherworldly Purge"
+#name 16 "Stellar Decree"
+#name 16 "Purifying Power"
+#name 32 "Deathly Deconstruction"
+#name 32 "Decree of the Underworld"
+#name 64 "Final Rest"
+#name 64 "Natural End"
+#name 128 "Banish the Bloodless"
+#descr 256 "With this prayer the priest smites undead beings with the fiery power of his God. The undead will take damage and be set on fire unless they manage to resist the banishment."
+#details "Burning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
+#nextspell "Banishment Fire Additional Burning"
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Fire Additional Bonds"
+#effect 11
+#damage 65536
+#spec 16544
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Ignition"
+#name 1 "Ignition"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Fire Bonds"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 1
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 1 "$Purifying$ Shackles of Flame"
+#descr 256 "With this prayer the priest smites undead beings with the fiery power of his God. The undead will take damage and become trapped in shackles of fire unless they manage to resist the banishment."
+#details "Escaping requires that affected undead roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#nextspell "Banishment Fire Additional Bonds"
+
+#spelltype 2
+#end
+
+
+

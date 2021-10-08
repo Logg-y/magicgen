@@ -266,7 +266,11 @@ def rollspells(**options):
 
             # Make holy spells
             _writetoconsole("Generating holy spells...\n")
-            holy = fileparser.readEffectsFromDir(r".\data\spells\holy")
+            holy = fileparser.readEffectsFromDir(r"./data/spells/holy")
+            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/banishment")}
+            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/smite")}
+            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/holyword")}
+            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/smitedemon")}
             for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
                 for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
                     effectpool = copy.copy(holy)

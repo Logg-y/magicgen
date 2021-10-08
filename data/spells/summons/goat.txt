@@ -57,33 +57,6 @@
 #scalerate 5
 #end
 
-#neweffect "goat chassis dummy"
-#effect 10001
-#damage 2227
-#spec 0
-#power -3
-#maxpower -3
-#nreff 1
-#pathlevel 1
-#fatiguecost 5
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#skipchance 99
-
-#name 64 "$Summon$ NAMEPREFIX %Goat%"
-#descr 64 "The caster summons forth ARTICLE %goat%. Goats are not known for their battlefield prowess, but they can still fight back with their horns."
-
-#spelltype 20
-
-#scalefatigueexponent -1.45
-#scalefatiguemult 15
-#pathperresearch 0.25
-
-#scalerate 5
-#end
 
 #neweffect "goat Remote Assassination"
 #effect 10050

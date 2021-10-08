@@ -1,0 +1,78 @@
+
+
+#neweffect "Holy Word Nature Entangle"
+#effect 11
+#damage 64
+#spec 8425472
+#range 25
+#power 0
+#maxpower 0
+#aoe 1
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#holyword 1
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Holy Word"
+#name 1 "Burn Heretics"
+#name 1 "Scorch Heretics"
+#name 1 "Incinerate Heretics"
+#name 2 "Shackle Heretics"
+#name 4 "Freeze Heretics"
+#name 4 "Chill Heretics"
+#name 8 "Entomb Heretics"
+#name 16 "Halt Heretics"
+#name 32 "Death to Heretics"
+#name 64 "Entangle Heretics"
+#name 128 "Bleed Heretics"
+#descr 256 "With a holy word from the next true God the priest is able to trap sacred warriors of a false pretender in vines."
+#details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+#spelltype 2
+#end
+
+
+#neweffect "Holy Word Nature Web"
+#effect 11
+#damage 536870912
+#spec 8425472
+#range 25
+#power 0
+#maxpower 0
+#aoe 1
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#holyword 1
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Holy Word"
+#name 1 "Burn Heretics"
+#name 1 "Scorch Heretics"
+#name 1 "Incinerate Heretics"
+#name 2 "Shackle Heretics"
+#name 4 "Freeze Heretics"
+#name 4 "Chill Heretics"
+#name 8 "Entomb Heretics"
+#name 16 "Halt Heretics"
+#name 32 "Death to Heretics"
+#name 64 "Ensnare Heretics"
+#name 128 "Bleed Heretics"
+#descr 256 "With a holy word from the next true God the priest is able to trap sacred warriors of a false pretender in sticky webs."
+#details "Str +DRN vs 22 to get free."
+#spelltype 2
+#end

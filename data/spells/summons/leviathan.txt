@@ -26,7 +26,7 @@
 #pathperresearch 0.4
 #scalefatigueexponent -1.5
 #schools 16
-#skipchance 80
+#skipchance 98
 #end
 
 #neweffect "leviathan ritual"
@@ -46,7 +46,7 @@
 
 #name 32 "$Summon$ NAMEPREFIX %Leviathan%"
 #descr 32 "The caster summons ARTICLE %leviathan% to fight for him. Leviathans are reanimated sea creatures which are terrifying to behold, and can trample their enemies."
-#skipchance 80
+#skipchance 97
 
 #spelltype 20
 

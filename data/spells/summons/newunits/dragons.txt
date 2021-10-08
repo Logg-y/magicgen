@@ -1,5 +1,10 @@
 #newunit "Dragon Water"
 #baseunit 2534
+#clearweapons 1
+#addweapon 534
+#addweapon 20
+#addweapon 29
+#addweapon 532
 #raw "#clearspec"
 #raw "#clearweapons"
 #raw "#clearmagic"
@@ -24,6 +29,11 @@
 
 #newunit "Dragon Nature"
 #baseunit 2534
+#clearweapons 1
+#addweapon 535
+#addweapon 20
+#addweapon 29
+#addweapon 532
 #raw "#clearspec"
 #raw "#clearweapons"
 #raw "#clearmagic"

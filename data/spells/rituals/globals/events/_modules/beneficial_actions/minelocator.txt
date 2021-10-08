@@ -1,69 +1,71 @@
-#neweventset "Beneficial Global action minelocator"
-#minpowerlevel 6
-#maxpowerlevel 6
+-- Using CONDITION like this creates infinite recursive replacements
 
-#req path1 == 8
-
-#modulegroup "Beneficial Global Effect"
-
-#noun "Mineral Transmutation"
---#verb "Disastrous"
-
-#moduledescr "SUBJECT may discover new ore and gem deposits where there were previously none."
-#moduledetails "Adds either a copper, iron, silver, gold or gem deposit to affected provinces."
-
-#end
-
-#req_freesites 1
-#req_rare 20
-#nolog
-#msg "Where there used to be nothing but rock, gems have been discovered!"
--- gem deposit
-#addsite 511
-#end
-
-#newevent
-CONDITION
-#req_freesites 1
-#req_rare 20
-#nolog
-#msg "Where there used to be nothing but rock, gold has been discovered!"
--- gold deposit
-#addsite 1067
-#end
-
-#newevent
-CONDITION
-#req_freesites 1
-#req_rare 25
-#nolog
-#msg "Where there used to be nothing but rock, iron has been discovered!"
--- iron deposit
-#addsite 1070
-#end
-
-#newevent
-CONDITION
-#req_freesites 1
-#req_rare 25
-#nolog
-#msg "Where there used to be nothing but rock, silver has been discovered!"
--- silver deposit
-#addsite 1068
-#end
-
-#newevent
-CONDITION
-#req_freesites 1
-#req_rare 25
-#nolog
-#msg "Where there used to be nothing but rock, copper has been discovered!"
--- copper deposit
-#addsite 1069
-#end
-
-#newevent
--- dummy for fixing modular stuff
-#req_rare 100
-#nolog
-#notext
+-- #neweventset "Beneficial Global action minelocator"
+-- #minpowerlevel 6
+-- #maxpowerlevel 6
+-- 
+-- #req path1 == 8
+-- 
+-- #modulegroup "Beneficial Global Effect"
+-- 
+-- #noun "Mineral Transmutation"
+-- --#verb "Disastrous"
+-- 
+-- #moduledescr "SUBJECT may discover new ore and gem deposits where there were previously none."
+-- #moduledetails "Adds either a copper, iron, silver, gold or gem deposit to affected provinces."
+-- 
+-- #end
+-- 
+-- #req_freesites 1
+-- #req_rare 20
+-- #nolog
+-- #msg "Where there used to be nothing but rock, gems have been discovered!"
+-- -- gem deposit
+-- #addsite 511
+-- #end
+-- 
+-- #newevent
+-- CONDITION
+-- #req_freesites 1
+-- #req_rare 20
+-- #nolog
+-- #msg "Where there used to be nothing but rock, gold has been discovered!"
+-- -- gold deposit
+-- #addsite 1067
+-- #end
+-- 
+-- #newevent
+-- CONDITION
+-- #req_freesites 1
+-- #req_rare 25
+-- #nolog
+-- #msg "Where there used to be nothing but rock, iron has been discovered!"
+-- -- iron deposit
+-- #addsite 1070
+-- #end
+-- 
+-- #newevent
+-- CONDITION
+-- #req_freesites 1
+-- #req_rare 25
+-- #nolog
+-- #msg "Where there used to be nothing but rock, silver has been discovered!"
+-- -- silver deposit
+-- #addsite 1068
+-- #end
+-- 
+-- #newevent
+-- CONDITION
+-- #req_freesites 1
+-- #req_rare 25
+-- #nolog
+-- #msg "Where there used to be nothing but rock, copper has been discovered!"
+-- -- copper deposit
+-- #addsite 1069
+-- #end
+-- 
+-- #newevent
+-- -- dummy for fixing modular stuff
+-- #req_rare 100
+-- #nolog
+-- #notext

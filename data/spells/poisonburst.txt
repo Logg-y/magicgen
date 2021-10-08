@@ -84,10 +84,10 @@
 #secondarypaths 64
 #secondarypathchance 98
 
-#name 64 "NAMEPREFIX Poison Burst"
-#name 64 "NAMEPREFIX Toxic Burst"
-#name 128 "NAMEPREFIX Toxic Burst"
-#descr 64 "The caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
+#name 64 "NAMEPREFIX Poison Bursts"
+#name 64 "NAMEPREFIX Toxic Bursts"
+#name 128 "NAMEPREFIX Toxic Bursts"
+#descr 64 "The caster creates bursts of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
 #descr 128 "$BLOOD_INTRO$, the caster creates a burst of extremely potent toxins directed at his enemies. Those in the centre of the blast will be severely poisoned, but anyone nearby will also suffer."
 
 #nextspell "Instant Poison AoE"

@@ -16,7 +16,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 80
 
 #name 8 "$conjure$ NAMEPREFIX Living %Statue%"
 #descr 8 "The caster quickly forms and enchants ARTICLE living %statue% from the earth. The %statue% will crumble back to earth after the battle."
@@ -46,7 +46,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 60
 
 #name 8 "$Summon$ NAMEPREFIX Living %Statue%"
 #descr 8 "The caster forms and enchants ARTICLE living %statue% from earth. The %statue% %is% highly resistant to physical damage."

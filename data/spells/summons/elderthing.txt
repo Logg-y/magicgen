@@ -15,7 +15,7 @@
 #secondarypaths 16
 #newunit "Elder Thing"
 
-#skipchance 97
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX Elder %Thing%"
 #descr 16 "The caster summons ARTICLE elder %thing%. Elder Things are Void creatures which may stike at enemies with their minds, but are frail in close combat."

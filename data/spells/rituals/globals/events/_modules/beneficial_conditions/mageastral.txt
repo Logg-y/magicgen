@@ -1,9 +1,10 @@
 #neweventset "Beneficial Global cond astralmage"
-#minpowerlevel -1
-#maxpowerlevel 2
+#minpowerlevel -3
+#maxpowerlevel -1
 
-#scaleparam "req_domchance" 2
-#modulebasescale 2
+
+#scaleparam_mult "req_domchance" 0.2
+#moduleskipchance 80
 
 #req path1 == 16
 
@@ -16,7 +17,7 @@
 #textrepl "SUBJECT" "Astral mages"
 
 #moduledescr "This enchantment affects friendly provinces containing astral mages."
-#moduledetails "Every turn, each friendly province with an astral mage has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+#moduledetails "Every turn, each friendly province with an astral mage has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-3} percent chance to trigger per point of dominion."
 
 
 
@@ -28,4 +29,28 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_targpath1 4
-#req_domchance 2
+#req_domchance 10
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_targpath1 4
+#req_domchance 5
+#req_permonth 3
+EFFECT
+#end
+
+#newevent
+#rarity 5
+#req_pop0ok
+#nation -2
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_targpath1 4
+#req_domchance 3

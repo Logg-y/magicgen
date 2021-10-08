@@ -15,7 +15,7 @@
 #secondarypaths 16
 #newunit "Greater Otherness"
 
-#skipchance 95
+#skipchance 98
 
 #name 16 "$conjure$ NAMEPREFIX greater %otherness%"
 #descr 16 "The caster summons ARTICLE_N greater %otherness%. Othernesses are swirling masses of dark goo which trample their enemies."

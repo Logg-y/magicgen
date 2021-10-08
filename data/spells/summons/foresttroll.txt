@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX %forest troll%"
 #descr 64 "The caster summons ARTICLE %forest troll%. Forest trolls are mighty beasts with hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire."

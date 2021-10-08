@@ -18,7 +18,7 @@
 #secondarypaths 32
 #secondarypathchance 0
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %lampad%"
 #descr 32 "The caster summons ARTICLE %lampad% to fight for him. The lampad is a nymph of the underworld that wields a torch of banefire."

@@ -2,8 +2,8 @@
 
 #selectunitmod "Extra Wall Defenders"
 
-#mincreaturepower 2
-#maxcreaturepower 3
+#mincreaturepower 0
+#maxcreaturepower 1
 
 #makedummymonster 0
 #makebattledummymonster 1 

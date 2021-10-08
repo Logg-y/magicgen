@@ -15,7 +15,7 @@
 #secondarypaths 2
 #scalefatiguemult 6
 #scalefatigueexponent -1.48
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 2 "$conjure$ NAMEPREFIX Lesser Air %Elemental%"
@@ -41,7 +41,7 @@
 #secondarypaths 2
 
 
-#skipchance 80
+#skipchance 98
 
 #details "The elementals are size 3."
 #name 2 "$Summon$ NAMEPREFIX Lesser Air Elementals"
@@ -66,7 +66,7 @@
 #pathlevel 4
 #fatiguecost 900
 #schools 1
-#skipchance 99
+#skipchance 99.6
 
 #details "The elementals are size 3."
 #paths 2

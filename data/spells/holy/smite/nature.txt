@@ -1,0 +1,154 @@
+#neweffect "Smite Nature Additional Charm Damage"
+#effect 2
+#damage 10
+#spec 16512+8388608+262144
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Punish the Strong"
+#name 16 "Punish the Strong"
+#spelltype 2
+#end
+
+#neweffect "Smite Nature Additional Charm"
+#effect 29
+#damage 999
+#spec 16512+8388608+4096+131072
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Divine Temptation"
+#name 64 "Divine Temptation"
+#spelltype 2
+#nextspell "Smite Nature Additional Charm Damage"
+#end
+
+#neweffect "Smite Nature Charm"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+#aispellmod -50
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Divine Temptation"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt. The priest then attempts to use divine influence to alter the allegiance of his target. Should they resist the temptation, the priest punishes them with further divine power."
+#details "Upon failing the first MR check, victims take at most one point of damage. They they make a second MR check, which will charm them if failed. Those who fail the first MR check but are not charmed take the final 10 AN damage."
+#nextspell "Smite Nature Additional Charm"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Nature Additional Poison"
+#effect 7
+#damage 20
+#spec 16544+8388608+8192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Divine Venom"
+#name 64 "Divine Venom"
+#spelltype 2
+#end
+
+#neweffect "Smite Nature Poison"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and poisoning the victim."
+#nextspell "Smite Nature Additional Poison"
+#spelltype 2
+#end

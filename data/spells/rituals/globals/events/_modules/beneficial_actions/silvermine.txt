@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action silver deposit"
+#minpowerlevel 7
+#maxpowerlevel 7
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Silver Transmutation"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may discover mundane rock has been converted to silver."
+#moduledetails "Adds a silver deposit (40 income) to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_land 1
+#nolog
+#msg "A new silver deposit has been located."
+#addsite 1068

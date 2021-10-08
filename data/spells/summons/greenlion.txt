@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 1
 
-#skipchance 70
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX Green %Lion%"
 #descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."
@@ -39,7 +39,7 @@
 #paths 4
 #secondarypaths 1
 
-#skipchance 70
+#skipchance 97
 
 #name 4 "$summon$ NAMEPREFIX Green %Lion%"
 #descr 4 "The caster summons ARTICLE spectral green %lion% to fight for him. The green lion is a manifestation of vitriol, and may destroy metals with its breath."

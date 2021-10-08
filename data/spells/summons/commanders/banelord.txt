@@ -6,11 +6,11 @@
 #power 5
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 80
 #range 6
-#fatiguecost 80
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
@@ -26,7 +26,9 @@
 #scalefatiguemult 10
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.5
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Bane Lord"

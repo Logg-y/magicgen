@@ -1,6 +1,6 @@
 #neweventset "Beneficial Global action arenamaker"
-#minpowerlevel 4
-#maxpowerlevel 4
+#minpowerlevel 6
+#maxpowerlevel 6
 
 #req path1 == 128
 

@@ -17,7 +17,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 60
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Drake%"
 #descr 8 "The caster summons ARTICLE cave %drake% to fight for him. The cave drake is a large cold-blooded beast with thick scales."
@@ -40,7 +40,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 60
+#skipchance 97
 
 #name 8 "$Summon$ NAMEPREFIX Cave %Drake%"
 #descr 8 "The caster summons ARTICLE cave %drake% to fight for him. The cave drake is a large cold-blooded beast with thick scales."

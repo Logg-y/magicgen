@@ -20,6 +20,8 @@
 #req_targorder 7
 #req_pop0ok
 #req_land 0
+#req_targundead 0
+#req_targinanimate 0
 #req_commander 1
 #nation -2
 #notext

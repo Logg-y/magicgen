@@ -10,8 +10,8 @@
 
 #setspelldamage 1
 
-#mincreaturepower 3
-#maxcreaturepower 4
+#mincreaturepower 2
+#maxcreaturepower 3
 
 #unitmodlist "Permanent Commander Summon"
 

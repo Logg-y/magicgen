@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action copper deposit"
+#minpowerlevel 6
+#maxpowerlevel 6
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Copper Transmutation"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may discover mundane rock has been converted to copper."
+#moduledetails "Adds a copper deposit (20 income and resources) to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_land 1
+#nolog
+#msg "A new copper deposit has been located."
+#addsite 1069

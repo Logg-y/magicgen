@@ -1,0 +1,197 @@
+
+#neweffect "Smite Water Additional Damage"
+#effect 2
+#damage 10
+#spec 8405120+512
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Divine Cold"
+#name 4 "Divine Cold"
+#spelltype 2
+#end
+
+#neweffect "Smite Water Damage"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Fire"
+#name 2 "Heavenly Strike"
+#name 2 "Shocking Death"
+#name 2 "$Syllable$ of Lightning"
+#name 4 "$Syllable$ of Ice"
+#name 4 "Frozen Death"
+#name 4 "Icy Death"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt."
+#nextspell "Smite Water Additional Damage"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Water Additional Freeze"
+#effect 11
+#damage 268435456
+#spec 16544+8388608
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Freezing"
+#name 2 "Additional Freezing"
+#spelltype 2
+#end
+
+#neweffect "Smite Water Freeze"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and freezing them."
+#details "Freezing: Frozen creatures suffer -3 to attack and defence skill, have halved combat speed and attack rate, and take 2d6 fatigue damage per round. Thawing chance per round is 25% - (cold resistance + (6*cold scale)), to a minimum thawing rate of 25%. Having 5 or more cold resistance, a cold aura, being undead, having mistform, or being ethereal prevents the effect."
+#nextspell "Smite Water Additional Freeze"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Water Additional Encase"
+#effect 609
+#damage 299
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Frigid Prison"
+#name 2 "Trap in Ice"
+#spelltype 2
+#end
+
+#neweffect "Smite Water Encase"
+#effect 2
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 4
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "$Syllable$ of Chilling Imprisonment"
+#name 8 "$Syllable$ of Stone"
+#name 16 "$Syllable$ of Power"
+#name 32 "$Syllable$ of Death"
+#name 64 "$Syllable$ of Thorns"
+#name 128 "Claim Life"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and freezing them."
+#details "Targets are encased in ice for 10 points. Each point grants +1 prot. Each turn, the number of points is reduced by Strength + DRN - 12. Targets suffer 5 cold fatigue damage each turn while encased."
+#nextspell "Smite Water Additional Encase"
+#spelltype 2
+#end
+

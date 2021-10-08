@@ -5,7 +5,7 @@
 
 -- unitmod requires water
 #paths 16
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -36,7 +36,7 @@
 
 -- unitmod requires nature
 #paths 32
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050

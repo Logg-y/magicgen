@@ -14,7 +14,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Hydra %Hatchling%"
 #descr 64 "The caster summons ARTICLE hydra %hatchling%. Hydra hatchlings are small, weak and young, but are still surrounded by a cloud of noxious vapour. This vapour may make this spell dangerous to cast for mages that are not resistant to poisons."

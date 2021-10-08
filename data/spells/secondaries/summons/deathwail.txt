@@ -27,7 +27,7 @@
 #anysummon 1
 
 #paths 16
-#power -2
+#power -1
 
 #req effect != 1
 #req effect != 10050
@@ -50,7 +50,7 @@
 #anysummon 1
 
 #paths 16
-#power -4
+#power -2
 
 #req effect != 1
 #req effect != 10050

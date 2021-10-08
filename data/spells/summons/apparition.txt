@@ -15,7 +15,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %Apparition%"
 #descr 32 "The caster summons ARTICLE_N %apparition%. Apparitions are spirits of humans that died of disease, and in death they spread deadly diseases to anyone around them or anything they touch. Casting this spell may disease the caster or anyone nearby."

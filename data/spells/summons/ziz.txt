@@ -29,36 +29,6 @@
 #end
 
 
-#neweffect "ziz chassis dummy"
-#effect 10001
-#damage 1388
-#spec 0
-#power 4
-#maxpower 4
-#nreff 1001
-#pathlevel 3
-#fatiguecost 200
-#schools -1
-
-#paths 32
-#secondarypaths 2
-#secondarypathchance 95
-
-#skipchance 50
-
-#name 32 "$Summon$ NAMEPREFIX Ziz"
-#descr 32 "The caster enchants the bones of ARTICLE great %eagle% and grants them new life. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
-
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 50
-
-#scalerate 4
-#end
 
 #neweffect "ziz ritual"
 #effect 10001

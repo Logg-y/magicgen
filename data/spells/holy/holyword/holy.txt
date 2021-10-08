@@ -1,0 +1,37 @@
+#neweffect "Holy Word Holy Only"
+#effect 128
+#damage 100
+#spec 8425472
+#range 25
+#power 0
+#maxpower 0
+#aoe 1
+#nreff 1
+#pathlevel 2
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#holyword 1
+
+#paths 256
+#secondarypaths 256
+#secondarypathchance 0
+
+#name 256 "Holy Word"
+#name 1 "Burn Heretics"
+#name 1 "Scorch Heretics"
+#name 1 "Incinerate Heretics"
+#name 2 "Jolt Heretics"
+#name 4 "Freeze Heretics"
+#name 4 "Chill Heretics"
+#name 8 "Entomb Heretics"
+#name 16 "Halt Heretics"
+#name 32 "Death to Heretics"
+#name 64 "Ensnare Heretics"
+#name 128 "Bleed Heretics"
+#descr 256 "With a holy word from the next true God the priest is able to stun sacred warriors of a false pretender."
+
+#spelltype 2
+#end

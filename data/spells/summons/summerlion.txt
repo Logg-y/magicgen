@@ -15,7 +15,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 50
+#skipchance 98
 
 #name 1 "$conjure$ NAMEPREFIX Summer %Lion%"
 #descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."
@@ -42,7 +42,7 @@
 #paths 1
 #secondarypaths 1
 
-#skipchance 50
+#skipchance 97
 
 #name 1 "$Summon$ NAMEPREFIX Summer %Lion%"
 #descr 1 "The caster summons ARTICLE spectral summer %lion% to fight for him. The summer lion is an ethereal being which radiates heat and is strongest in the summer."

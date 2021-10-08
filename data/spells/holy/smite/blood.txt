@@ -1,0 +1,271 @@
+
+
+#neweffect "Smite Blood Additional Bleed"
+#effect 11
+#damage 8192
+#spec 16544+8388608+524288+536870912
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Bleeding Wounds"
+#name 128 "Bleeding Wounds"
+#spelltype 2
+#end
+
+#neweffect "Smite Blood Bleed"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "Claim Life"
+#name 128 "$Syllable$ of Blood"
+#name 128 "Bloody Death"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and causing the victim the bleed severely."
+#nextspell "Smite Blood Additional Bleed"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Blood Additional Inferno"
+#effect 108
+#damage -12
+#spec 16544+8388608+4096
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Pull of Inferno"
+#name 128 "Pull of Inferno"
+#spelltype 2
+#end
+
+#neweffect "Smite Blood Inferno"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "$Syllable$ of Inferno"
+#name 128 "Infernal $Syllable$"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding the victim. Should the victim survive, divine power attempts to banish him to Inferno, the fiery realm of devils."
+#nextspell "Smite Blood Additional Inferno"
+#spelltype 2
+#end
+
+
+
+#neweffect "Smite Blood Additional Kokytos"
+#effect 108
+#damage -13
+#spec 16544+8388608+4096
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Pull of Kokytos"
+#name 128 "Pull of Kokytos"
+#spelltype 2
+#end
+
+#neweffect "Smite Blood Kokytos"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "$Syllable$ of Kokytos"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding the victim. Should the victim survive, divine power attempts to banish him to Kokytos, the frozen realm of ice devils."
+#nextspell "Smite Blood Additional Kokytos"
+#spelltype 2
+#end
+
+
+#neweffect "Smite Blood Additional Leech"
+#copyspell "Leech"
+#skipexplspr 1
+#skipflightspr 1
+#effect 103
+#damage 5
+#spec 16544+8388608+536870912
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10311
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Drain Blood"
+#name 128 "Drain Blood"
+#spelltype 2
+#end
+
+#neweffect "Smite Blood Leech"
+#effect 109
+#damage 10
+#spec 1152921504615256192
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#nreff 1
+#pathlevel 3
+#precision 100
+#fatiguecost 0
+#explspr 10302
+#schools 1
+#sound 30
+#smite 1
+
+#paths 256
+#secondarypaths 128
+#secondarypathchance 0
+
+#name 256 "Smite"
+#name 1 "Heavenly Fire"
+#name 1 "Burning Death"
+#name 1 "$Syllable$ of Ensnaring Fire"
+#name 2 "Heavenly Snare"
+#name 2 "$Syllable$ of Ensnaring"
+#name 4 "Chilling $Syllable$"
+#name 4 "Chilling Death"
+#name 8 "$Syllable$ of Earth"
+#name 16 "$Syllable$ of Domination"
+#name 32 "$Syllable$ of Death"
+#name 64 "Envenomed $Syllable$"
+#name 64 "$Syllable$ of Poison"
+#name 128 "$Syllable$ of Blood"
+#name 128 "$Syllable$ of Leeching"
+#name 128 "Leeching $Syllable$"
+#descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding the victim and potentially draining some of their life."
+#nextspell "Smite Blood Additional Leech"
+#spelltype 2
+#end
+
+
+
+
+

@@ -4,7 +4,7 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -22,7 +22,7 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -58,11 +58,11 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.7
 
 #unitmod "Summon Banefireshield"
 #descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
@@ -76,7 +76,7 @@
 #anysummon 1
 
 #paths 5
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -95,7 +95,7 @@
 #anysummon 1
 
 #paths 16
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -112,7 +112,7 @@
 #anysummon 1
 
 #paths 2
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -130,7 +130,7 @@
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -147,11 +147,11 @@
 #anysummon 1
 
 #paths 16
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.3
 
 #unitmod "Summon Horrormark"
 #descr "The summoned %creature% %is% imbued with power to attract the attention of otherworldly creatures. Those attacking in melee will become horror marked if they fail to resist."
@@ -164,7 +164,7 @@
 #anysummon 1
 
 #paths 64
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -182,7 +182,7 @@
 
 #paths 128
 --#req paths == 128
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -200,7 +200,7 @@
 
 #paths 128
 --#req paths == 128
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -217,7 +217,7 @@
 #anysummon 1
 
 #paths 4
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
@@ -238,7 +238,7 @@
 #anysummon 1
 
 #paths 64
-#power -4
+#power -1
 
 -- not montag
 #req damage > 0
@@ -256,7 +256,7 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
@@ -310,7 +310,7 @@
 #anysummon 1
 
 #paths 2
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0

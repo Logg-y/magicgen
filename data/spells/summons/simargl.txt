@@ -26,36 +26,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "simargl chassis dummy"
-#effect 10001
-#damage 1947
-#spec 0
-#power 2
-#maxpower 14
-#nreff 1
-#pathlevel 1
-#fatiguecost 20
-#chassisvalue 20
-#schools -1
-
-#paths 2
-#secondarypaths 2
-
-#skipchance 97
-
-#name 2 "Summon NAMEPREFIX Simargl"
-#descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog that is exceptional at patrolling."
-
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 70
-
-#scalerate 4
-#end
 
 #neweffect "simargl ritual"
 #effect 10001

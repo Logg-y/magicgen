@@ -14,7 +14,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 80
+#skipchance 98
 #scalefatiguemult 20
 
 #name 4 "$conjure$ NAMEPREFIX Gelatinous %Cube%"
@@ -42,7 +42,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 60
+#skipchance 97
 
 #name 4 "$Summon$ NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."

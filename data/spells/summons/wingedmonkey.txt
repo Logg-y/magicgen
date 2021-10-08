@@ -32,38 +32,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "wingedmonkey chassis dummy"
-#effect 10001
-#damage 1199
-#spec 0
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 2
-#fatiguecost 10
-#schools -1
-
-#paths 80
-#secondarypaths 80
-#secondarypathchance 70
-#scalefatiguemult 10
-
-#skipchance 97
-
-#name 16 "$Summon$ NAMEPREFIX Winged Monkies"
-#name 64 "$Summon$ NAMEPREFIX Winged Monkies"
-#descr 16 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
-#descr 64 "The caster summons some Winged Monkies. Whilst typically used as scouts, they can prove to be annoyances in combat."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 20
-
-#scalerate 4
-#end
 
 #neweffect "wingedmonkey ritual"
 #effect 10001

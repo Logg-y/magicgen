@@ -86,7 +86,7 @@
 #spec 1152921505152913536
 #aoe 0
 #power 5
-#maxpower 9
+#maxpower 8
 #precision 100
 #range 5040
 #pathlevel 3
@@ -105,7 +105,7 @@
 #nextspell "Curse of Undeath LaD"
 
 #spelltype 42
-#scalerate 1
+#scalerate 1.49
 #schools 32
 
 #priority 1
@@ -120,12 +120,12 @@
 #damage 999
 #spec 1152921505169686656
 #aoe 666
-#power 10
-#maxpower 10
+#power 9
+#maxpower 9
 #precision 100
 #range 5040
-#pathlevel 8
-#fatiguecost 800
+#pathlevel 7
+#fatiguecost 500
 #explspr 10171
 #sound 22
 

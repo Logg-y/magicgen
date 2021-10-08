@@ -3,7 +3,7 @@
 #effect 1
 #damage 491
 #spec 0
-#power 5
+#power 4
 #maxpower 14
 #precision -100
 #nreff 1
@@ -24,10 +24,12 @@
 #name 32 "Call NAMEPREFIX %Harvester% of Sorrows"
 #descr 32 "The death mage summons ARTICLE %Harvester% of Sorrows to join him in battle. The %Harvester% of Sorrows will leave once the battle is over."
 
-#scalefatiguemult 80
+#scalefatiguemult 8
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.3
+#scalefatigueexponent -1.3
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Harvester of Sorrows"

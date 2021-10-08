@@ -18,7 +18,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX Ox-%Head%"
 #descr 32 "The caster summons ARTICLE_N Ox-%Head% to fight for him. The ox-head is a demonic jailer of the underworld which can snare the souls of their victims in their magical polearms."

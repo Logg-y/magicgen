@@ -14,7 +14,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 2."
 #name 2 "$conjure$ NAMEPREFIX Small Air %Elemental%"
@@ -41,7 +41,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 80
+#skipchance 98
 
 #details "The elementals are size 2."
 #name 2 "$Summon$ NAMEPREFIX Small Air Elementals"
@@ -66,7 +66,7 @@
 #pathlevel 3
 #fatiguecost 600
 #schools 1
-#skipchance 99
+#skipchance 99.6
 #nogeodst 2052
 
 #paths 2

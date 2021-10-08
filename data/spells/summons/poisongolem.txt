@@ -26,7 +26,7 @@
 
 #scalerate 1.5
 -- #scalecost 1.0
-#skipchance 90
+#skipchance 80
 #scalefatigueexponent -1.4
 #end
 

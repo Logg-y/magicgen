@@ -28,31 +28,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "Phantasmal beast chassis dummy"
-#effect 10001
-#damage 695
-#spec 8388608
-#power 0
-#maxpower 0
-#nreff 10
-#pathlevel 2
-#fatiguecost 20
-#schools -1
-#paths 2
-#secondarypaths 2
-
-#name 2 "$summon$ NAMEPREFIX Phantasmal %Beast%"
-#descr 2 "Summons ARTICLE phantasmal %beast% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 10
-
-#scalerate 4
-#end
 
 #neweffect "Phantasmal beast ritual"
 #effect 10001

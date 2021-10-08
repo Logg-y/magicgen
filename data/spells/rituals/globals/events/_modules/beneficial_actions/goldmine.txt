@@ -1,0 +1,21 @@
+#neweventset "Beneficial Global action gold deposit"
+#minpowerlevel 8
+#maxpowerlevel 8
+
+#req path1 == 8
+
+#modulegroup "Beneficial Global Effect"
+
+#noun "Gold Transmutation"
+--#verb "Disastrous"
+
+#moduledescr "SUBJECT may discover mundane rock has been converted to gold."
+#moduledetails "Adds a gold deposit (60 income) to affected land provinces."
+
+#end
+
+#req_freesites 1
+#req_land 1
+#nolog
+#msg "A new gold deposit has been located."
+#addsite 1068

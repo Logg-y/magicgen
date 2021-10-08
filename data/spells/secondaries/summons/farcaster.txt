@@ -62,7 +62,7 @@
 #anysummon 1
 
 #paths 0
-#power -3
+#power -2
 
 -- useless in assassinations
 #req effect != 10050

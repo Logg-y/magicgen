@@ -14,7 +14,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 80
+#skipchance 98
 
 #details "The elementals are size 5."
 #name 8 "$conjure$ NAMEPREFIX Huge Earth %Elemental%"
@@ -43,7 +43,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 5."
 #name 8 "$Summon$ NAMEPREFIX Huge Earth Elementals"

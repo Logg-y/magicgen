@@ -19,7 +19,7 @@
 #secondarypaths 9
 #secondarypathchance 50
 
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Magma %Child%"
 #name 1 "$conjure$ NAMEPREFIX Magma %Child%"

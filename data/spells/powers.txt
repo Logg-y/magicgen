@@ -252,11 +252,11 @@
 #aoe 0
 #power 2
 #maxpower 2
-#pathlevel 3
+#pathlevel 2
 #explspr 10172
 #sound 31
 #range 0
-#fatiguecost 300
+#fatiguecost 200
 #ainocast 1
 
 

@@ -15,7 +15,7 @@
 #secondarypaths 1
 #scalefatiguemult 13
 #scalefatigueexponent -1.6
-#skipchance 80
+#skipchance 98
 
 #details "The elementals are size 3."
 #name 1 "Summon NAMEPREFIX Lesser Fire %Elemental%"
@@ -41,7 +41,7 @@
 #secondarypaths 1
 
 
-#skipchance 80
+#skipchance 97
 
 #details "The elementals are size 3."
 #name 1 "Summon NAMEPREFIX Lesser Fire Elementals"

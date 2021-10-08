@@ -17,7 +17,7 @@
 #paths 32
 #secondarypaths 32
 
-#skipchance 97
+#skipchance 98
 
 #name 32 "$conjure$ NAMEPREFIX %hound% of twilight"
 #descr 32 "The caster summons ARTICLE %hound% of twilight to fight for him. The hound of twilight is a large two-headed beast which can halt undead in their tracks."
@@ -57,33 +57,6 @@
 #scalerate 1
 #end
 
-#neweffect "hound of twilight chassis dummy"
-#effect 10001
-#damage 3168
-#spec 0
-#power 4
-#maxpower 4
-#nreff 1
-#pathlevel 2
-#fatiguecost 60
-#schools -1
-
-#paths 32
-#secondarypaths 32
-
-#skipchance 97
-
-#name 32 "Summon NAMEPREFIX %hound% of twilight"
-#descr 32 "The caster summons ARTICLE %hound% of twilight to fight for him. The hound of twilight is a large two-headed beast which can halt undead in their tracks. It is an exceptional patroller."
-
-#spelltype 20
-
-#scalefatigueexponent -3
-#scalefatiguemult 170
-#pathperresearch 0.4
-
-#scalerate 1
-#end
 
 #neweffect "hound of twilight Remote Assassination"
 #effect 10050

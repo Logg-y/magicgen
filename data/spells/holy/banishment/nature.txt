@@ -1,0 +1,109 @@
+
+#neweffect "Banishment Nature Additional Entangle"
+#effect 11
+#damage 64
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10213
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Entanglement"
+#name 64 "Additional Entanglement"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Nature Entangle"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 64 "Entangle the Dead"
+#descr 256 "With this prayer the priest smites undead beings with the natural power of his God. The undead will take damage and become gripped by vines unless they manage to resist the banishment."
+#details "Entanglement: Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+
+#nextspell "Banishment Nature Additional Entangle"
+
+#spelltype 2
+#end
+
+#neweffect "Banishment Nature Additional Web"
+#effect 11
+#damage 536870912
+#spec 8405152
+#range 5020
+#power 0
+#maxpower 0
+#aoe 0
+#precision 100
+#explspr 10213
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools -1
+#skipchance 0
+#paths -1
+#secondarypaths 0
+#secondarypathchance 0
+#name 256 "Additional Web"
+#name 64 "Additional Web"
+#spelltype 2
+#end
+
+
+#neweffect "Banishment Nature Web"
+#effect 2
+#damage 3001
+#spec 1152921504883675272
+#range 5020
+#power 0
+#maxpower 0
+#aoe 2002
+#explspr 10243
+#nreff 1
+#pathlevel 1
+#fatiguecost 0
+#schools 1
+#sound 30
+#banishment 1
+
+#paths 256
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 256 "Banishment"
+#name 64 "Ensnare the Dead"
+#descr 256 "With this prayer the priest smites undead beings with the natural power of his God. The undead will take damage and become trapped in sticky webs unless they manage to resist the banishment."
+#details "Str +DRN vs 22 to get free."
+
+#nextspell "Banishment Nature Additional Web"
+
+#spelltype 2
+#end
+

@@ -17,7 +17,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 97
+#skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX Kraken"
 #descr 4 "The caster calls forth ARTICLE kraken to fight his enemies. The kraken is a mighty beast and attacks with many tentacles, but its mind is very pliable to magic."

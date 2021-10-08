@@ -17,7 +17,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 97
+#skipchance 98
 
 #name 2 "$conjure$ NAMEPREFIX Great %Hawk%"
 #descr 2 "The caster summons ARTICLE great %hawk%. The great hawk is large and attacks enemies with its beak and talons."
@@ -60,36 +60,6 @@
 #scalerate 3
 #end
 
-#neweffect "greathawk chassis dummy"
-#effect 10001
-#damage 1380
-#spec 0
-#power 1
-#maxpower 1
-#nreff 1
-#pathlevel 2
-#fatiguecost 30
-#schools -1
-
-#paths 2
-#secondarypaths 2
-
-#skipchance 97
-
-#name 2 "Summon NAMEPREFIX Great %Hawk%"
-#descr 2 "The caster summons ARTICLE great %hawk%. The great hawk is large and attacks enemies with its beak and talons."
-
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent -1.65
-#scalefatiguemult 30
-#pathperresearch 0.4
-
-#scalerate 3
-#end
 
 #neweffect "greathawk Remote Assassination"
 #effect 10050

@@ -15,7 +15,7 @@
 #paths 64
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 98
 
 #name 64 "$conjure$ NAMEPREFIX Lamias"
 #descr 64 "The caster summons several lamias. Lamias are strange serpent women that regenerate health at an incredible rate."
@@ -46,10 +46,10 @@
 
 #spelltype 20
 
-#skipchance 60
+#skipchance 97
 
 #scalefatigueexponent -1.7
-#scalefatiguemult 20
+#scalefatiguemult 30
 #pathperresearch 0.4
 
 #scalerate 2
@@ -107,6 +107,7 @@
 
 #scalerate 1
 #end
+
 
 
 

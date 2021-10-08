@@ -4,7 +4,7 @@
 #anysummon 1
 
 #paths 4
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0

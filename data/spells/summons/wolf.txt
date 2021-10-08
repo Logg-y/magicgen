@@ -28,32 +28,6 @@
 #pathperresearch 0.4
 #end
 
-#neweffect "Wolf chassis dummy"
-#effect 10001
-#damage 284
-#spec 0
-#power -2
-#maxpower -2
-#nreff 1
-#pathlevel 1
-#fatiguecost 5
-#schools -1
-
-#paths 64
-#secondarypaths 64
-
-#name 64 "Pack of NAMEPREFIX Wolves"
-#descr 64 "Summons wolves to fight for the caster. Though ferocious to unarmed humans, on the battlefield they fare poorly and tend to die quickly to the hands of armed and armoured troops."
-
-#spelltype 20
-
-#skipchance 97
-
-#scalefatigueexponent 0.5
-#scalefatiguemult 5
-
-#scalerate 7
-#end
 
 
 #neweffect "Wolf ritual"

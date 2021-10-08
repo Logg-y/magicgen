@@ -15,7 +15,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 92
+#skipchance 98
 #newunit "Angel of the Host"
 
 #name 16 "$conjure$ NAMEPREFIX Angel %Warrior%"
@@ -45,7 +45,7 @@
 #paths 16
 #secondarypaths 16
 
-#skipchance 80
+#skipchance 97
 #newunit "Angel of the Host"
 
 #name 16 "$summon$ NAMEPREFIX Angel %Warrior%"

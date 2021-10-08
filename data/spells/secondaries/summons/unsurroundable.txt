@@ -24,7 +24,7 @@
 #anysummon 1
 
 #paths 18
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -44,7 +44,7 @@
 #anysummon 1
 
 #paths 18
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0

@@ -15,7 +15,7 @@
 #paths 8
 #secondarypaths 8
 
-#skipchance 97
+#skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Earth %Gnome%"
 #descr 8 "The caster summons ARTICLE earth %gnome% to fight for him. Earth gnomes are beings of stone that serve Oreigenes."
@@ -56,33 +56,6 @@
 #scalerate 3
 #end
 
-#neweffect "earthgnome chassis dummy"
-#effect 10001
-#damage 561
-#spec 0
-#power 2
-#maxpower 2
-#nreff 1
-#pathlevel 2
-#fatiguecost 30
-#schools -1
-
-#paths 8
-#secondarypaths 8
-
-#skipchance 97
-
-#name 8 "$Summon$ NAMEPREFIX Earth %Gnome%"
-#descr 8 "The caster summons ARTICLE earth %gnome% to fight for him. Earth gnomes are beings of stone that serve Oreigenes."
-
-#spelltype 20
-
-#scalefatigueexponent -1.6
-#scalefatiguemult 30
-#pathperresearch 0.4
-
-#scalerate 3
-#end
 
 
 #neweffect "earthgnome Remote Assassination"

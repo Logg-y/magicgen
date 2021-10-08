@@ -27,33 +27,6 @@
 #siegepatrolchaff 1
 #end
 
-#neweffect "Raise Ghoul chassis dummy"
-#effect 10001
-#damage 198
-#spec 8388608
-#power 0
-#maxpower 0
-#nreff 1
-#pathlevel 1
-#fatiguecost 10
-#schools -1
-
-#skipchance 80
-
-#paths 32
-#secondarypaths 32
-
-#scalefatigueexponent 0.4
-#scalefatiguemult 40
-
-#name 32 "Raise NAMEPREFIX Ghouls"
-#descr 32 "The caster transforms several beings into undead ghouls."
-#details "This results in no harm to any living beings or any loss of population."
-
-#spelltype 20
-
-#scalerate 2
-#end
 
 
 #neweffect "ghoul Remote Assassination"
