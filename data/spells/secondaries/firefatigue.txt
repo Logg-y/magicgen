@@ -1,4 +1,4 @@
-#newsecondary "fire fatigue nondamaging mrne"
+#newsecondary "fire fatigue nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -22,10 +22,11 @@
 #req spelltype !& 4
 
 #nameprefix "Stifling"
-#fatiguepersquare 4
+#fatiguepersquare 2
+#scalingaoelimit 2.5
 
 
-#nextspell "fire fatigue Secondary mrne"
+#nextspell "fire fatigue Secondary mrnh"
 
 #descr "This spell is infused with fire magic that may dramatically increase the surrounding air temperature around those it affects to the point of being extremely uncomfortable."
 
@@ -55,7 +56,7 @@
 #req spelltype !& 4
 
 #nameprefix "Sweltering"
-#fatiguepersquare 8
+#fatiguepersquare 4
 
 
 #nextspell "fire fatigue Secondary mrn"
@@ -64,7 +65,7 @@
 
 #end
 
-#newsecondary "fire fatigue damaging mrne"
+#newsecondary "fire fatigue damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -96,49 +97,9 @@
 #req spec !& 32
 
 #nameprefix "Stifling"
-#fatiguepersquare 3
+#fatiguepersquare 2
 
-#nextspell "fire fatigue Secondary mrne damaging"
-
-#descr "This spell is infused with fire magic that may dramatically increase the surrounding air temperature around those it wounds to the point of being extremely uncomfortable."
-
-#end
-
-#newsecondary "fire fatigue damaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 1
-#power -1
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy ok
-
--- not ritual
-#req spelltype !& 4
-
-#req nonscalingdamage < 40
-
--- not fire damage
-#req spec !& 32
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Sweltering"
-#fatiguepersquare 6.5
-
-#nextspell "fire fatigue Secondary mrn damaging"
+#nextspell "fire fatigue Secondary mrnh damaging"
 
 #descr "This spell is infused with fire magic that may dramatically increase the surrounding air temperature around those it wounds to the point of being extremely uncomfortable."
 

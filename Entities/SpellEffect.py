@@ -7,7 +7,7 @@ from Enums.PathFlags import PathFlags
 from Enums.SchoolFlags import SchoolFlags
 from Enums.SpellTypes import SpellTypes
 from Enums.DebugKeys import debugkeys
-from Services import utils, naming
+from Services import utils, naming, DebugLogger
 from fileparser import unitinbasedatafinder
 
 
@@ -1116,19 +1116,21 @@ class SpellEffect(object):
         if 660 < s.aoe < 670:
             tmp = s.nextspell
             attempts = 0
-            while 1:
-                attempts += 1
-                if attempts > 10000:
-                    raise Exception(f"Likely infinite nextspell loop for {self.name}")
-                if tmp is not None and tmp != "":
-                    # nextspell on damage does not need this done to it or anything that follows
-                    if tmp.spec & 1152921504606846976:
+            # not if the primary effect is extra effect on damage
+            if not (s.spec & 1152921504606846976):
+                while 1:
+                    attempts += 1
+                    if attempts > 10000:
+                        raise Exception(f"Likely infinite nextspell loop for {self.name}")
+                    if tmp is not None and tmp != "":
+                        # nextspell on damage does not need this done to it or anything that follows
+                        if tmp.spec & 1152921504606846976:
+                            break
+                        tmp.aoe = s.aoe
+                        print(f"Set aoe for nextspell {tmp.name} to {s.aoe}")
+                        tmp = tmp.nextspell
+                    else:
                         break
-                    tmp.aoe = s.aoe
-                    print(f"Set aoe for nextspell {tmp.name} to {s.aoe}")
-                    tmp = tmp.nextspell
-                else:
-                    break
 
         if utils.SPELL_ID >= 4000:
             raise ValueError("Too many spells. Dominions will reject this mod.")
@@ -1418,3 +1420,57 @@ class SpellEffect(object):
         s.damage = int(math.floor(s.damage))
         s.maxbounces = int(math.floor(s.maxbounces))
         s.effect = int(math.floor(s.effect))
+    def calculateExpectedFinalFatigue(self, researchlevel, modifier, secondary=None):
+        if secondary is None:
+            secondary = utils.secondaries["Do Nothing"]
+
+        actualpowerlvl = (researchlevel - self.power) + secondary.power + modifier.power
+        scaleamt = self.scalerate * ((actualpowerlvl * (actualpowerlvl + 1)) / 2)
+        scaleamt = scaleamt * (self.scalecost + secondary.scalecost + modifier.scalecost)
+        DebugLogger.debuglog(f"Expected final scaleamt: {scaleamt}", debugkeys.FATIGUECOSTCONSTRAINTS)
+
+        finalfatigue = self.fatiguecost
+        fatiguefromresearch = 10 * actualpowerlvl
+        scaleexponent = self.scalefatigueexponent + secondary.scalefatigueexponent + modifier.scalefatigueexponent
+        DebugLogger.debuglog(f"Expected fatigue exponent: {scaleexponent}", debugkeys.FATIGUECOSTCONSTRAINTS)
+        exponentcomponent = scaleamt ** abs(scaleexponent)
+        finalfatigue += fatiguefromresearch
+        DebugLogger.debuglog(f"Expected from RL: {fatiguefromresearch}", debugkeys.FATIGUECOSTCONSTRAINTS)
+        DebugLogger.debuglog(f"Expected from exponentcomponent: {exponentcomponent}", debugkeys.FATIGUECOSTCONSTRAINTS)
+        if scaleexponent >= 0.0:
+            finalfatigue += exponentcomponent
+        else:
+            finalfatigue -= exponentcomponent
+        finalfatigue = math.floor(finalfatigue)
+
+        DebugLogger.debuglog(f"Expected fatigue after exponent: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
+
+        for attrib, mult in secondary.multcommands:
+            if attrib == "fatiguecost":
+                finalfatigue *= mult
+        for attrib, mult in modifier.multcommands:
+            if attrib == "fatiguecost":
+                finalfatigue *= mult
+        finalnreff = self.nreff
+
+        DebugLogger.debuglog(f"Expected after mults: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
+
+        finalfatigue += (scaleamt * self.scalefatiguemult)
+
+        DebugLogger.debuglog(f"Expected after scalefatiguemult: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
+
+        if self.spelltype & SpellTypes.POWER_SCALES_NREFF:
+            finalnreff += scaleamt
+        finalfatigue += (finalnreff * (secondary.fatiguecostpereffect))
+        DebugLogger.debuglog(f"Expected after cost per effect: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
+
+        # blood gets doubled
+        # (this will unfortunately miss blood versions of other paths' spells, but alas)
+        if self.paths == 128:
+            finalfatigue *= 2
+
+        if debugkeys.FATIGUECOSTCONSTRAINTS:
+            print(f"fatiguecalc = {self.fatiguecost} (base) + {fatiguefromresearch} from RL + {exponentcomponent} "
+                  f"from exponent: {scaleamt}**{scaleexponent}")
+
+        return finalfatigue

@@ -45,6 +45,7 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of protection"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of protection"
 
+#scalefatigueexponent 1.3
 #end
 
 
@@ -159,5 +160,6 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of extended protection"
 
 #end
+
 
 

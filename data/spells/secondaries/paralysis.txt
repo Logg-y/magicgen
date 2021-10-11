@@ -1,39 +1,4 @@
-#newsecondary "Paralysis nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Halting"
-#fatiguepersquare 4
-
-#req effect != 66
-
-
-#nextspell "Paralysis Secondary mrne"
-
-#descr "This spell is imbued with strange energy that may paralyse those affected."
-
-#end
-
-#newsecondary "Paralysis nondamaging mrn"
+#newsecondary "Paralysis nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -55,10 +20,49 @@
 
 -- not ritual
 #req spelltype !& 4
+
+#nameprefix "Halting"
+#fatiguepersquare 3
+
+#req effect != 66
+
+#scalingaoelimit 2.0
+
+
+#nextspell "Paralysis Secondary mrnh"
+
+#descr "This spell is imbued with strange energy that may paralyse those affected."
+
+#end
+
+#newsecondary "Paralysis nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 16
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
 #req effect != 66
 
 #nameprefix "Paralysing"
-#fatiguepersquare 7
+#fatiguepersquare 6
+
+#scalingaoelimit 2.5
 
 
 #nextspell "Paralysis Secondary mrn"
@@ -68,7 +72,7 @@
 #end
 
 
-#newsecondary "Paralysis damaging mrne"
+#newsecondary "Paralysis damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -98,9 +102,9 @@
 #ondamage 1
 
 #nameprefix "Halting"
-#fatiguepersquare 3
+#fatiguepersquare 2
 
-#nextspell "Paralysis Secondary mrne damaging"
+#nextspell "Paralysis Secondary mrnh damaging"
 
 #descr "This spell is imbued with strange energy that may paralyse those this spell wounds."
 
@@ -112,7 +116,7 @@
 #spelltype 2
 
 #paths 16
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -136,7 +140,7 @@
 #ondamage 1
 
 #nameprefix "Paralysing"
-#fatiguepersquare 6
+#fatiguepersquare 1
 
 #nextspell "Paralysis Secondary mrn damaging"
 

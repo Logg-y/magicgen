@@ -1,10 +1,10 @@
-#newsecondary "3AN life drain nondamaging mrne"
+#newsecondary "3AN life drain nondamaging mrnh"
 
 -- evo only
 #spelltype 2
 
 #paths 160
-#power -2
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -25,13 +25,15 @@
 #req effect != 96
 
 #nameprefix "Leeching"
-#fatiguepersquare 6
+#fatiguepersquare 8
 
 -- not life drain
 #req effect != 103
 
+#scalingaoelimit 1.5
 
-#nextspell "3AN life drain Secondary mrne"
+
+#nextspell "3AN life drain Secondary mrnh"
 
 #descr "This spell is infused with foul magic that may leech the life of those it affects."
 
@@ -43,7 +45,7 @@
 #spelltype 2
 
 #paths 160
-#power -3
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -61,13 +63,15 @@
 #req spelltype !& 4
 
 #nameprefix "Vampiric"
-#fatiguepersquare 12
+#fatiguepersquare 4
 
 -- not life drain
 #req effect != 103
 
 -- not inanimate only
 #req effect != 96
+
+#scalingaoelimit 2.0
 
 
 #nextspell "3AN life drain Secondary mrn"
@@ -76,13 +80,13 @@
 
 #end
 
-#newsecondary "3AN life drain damaging mrne"
+#newsecondary "3AN life drain damaging mrnh"
 
 -- evo only
 #spelltype 2
 
 #paths 160
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -111,52 +115,9 @@
 #req effect != 96
 
 #nameprefix "Leeching"
-#fatiguepersquare 4.5
+#fatiguepersquare 4
 
-#nextspell "3AN life drain Secondary mrne damaging"
-
-#descr "This spell is infused with foul magic that may leech the life of those it wounds."
-
-#end
-
-#newsecondary "3AN life drain damaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 160
-#power -2
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy ok
-
--- not ritual
-#req spelltype !& 4
-
-#req nonscalingdamage < 40
-
--- not on damage already
-#ondamage 1
-
--- not life drain
-#req effect != 103
-
--- not inanimate only
-#req effect != 96
-
-#nameprefix "Vampiric"
-#fatiguepersquare 9.75
-
-#nextspell "3AN life drain Secondary mrn damaging"
+#nextspell "3AN life drain Secondary mrnh damaging"
 
 #descr "This spell is infused with foul magic that may leech the life of those it wounds."
 

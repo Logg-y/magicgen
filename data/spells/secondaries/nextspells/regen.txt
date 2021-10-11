@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Regen Secondary mrne"
+#neweffect "Regen Secondary mrnh"
 #effect 10
 #damage 32
-#spec 566247424
+#spec 17592735514624
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

@@ -1,38 +1,4 @@
-#newsecondary "Slow nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 20
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 68719476736
-
-#nameprefix "Slowing"
-#fatiguepersquare 4
-
-
-#nextspell "Slow Secondary mrne"
-
-#descr "Those affected by this spell are affected by strange energy that may slow them for the rest of the battle."
-
-#end
-
-#newsecondary "Slow nondamaging mrn"
+#newsecondary "Slow nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -57,16 +23,54 @@
 #req damage != 68719476736
 
 #nameprefix "Slowing"
-#fatiguepersquare 7
+#fatiguepersquare 6
+
+#scalingaoelimit 1.5
+
+
+#nextspell "Slow Secondary mrnh"
+
+#descr "Those affected by this spell are also surrounded by strange energy that may slow them for the rest of the battle."
+
+#end
+
+#newsecondary "Slow nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 20
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 68719476736
+
+#nameprefix "Slowing"
+#fatiguepersquare 3
+
+#scalingaoelimit 2.0
 
 
 #nextspell "Slow Secondary mrn"
 
-#descr "Those affected by this spell are affected by strange energy that may slow them for the rest of the battle."
+#descr "Those affected by this spell are also surrounded by strange energy that may slow them for the rest of the battle."
 #end
 
 
-#newsecondary "Slow damaging mrne"
+#newsecondary "Slow damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -98,7 +102,7 @@
 #nameprefix "Slowing"
 #fatiguepersquare 3
 
-#nextspell "Slow Secondary mrne damaging"
+#nextspell "Slow Secondary mrnh damaging"
 
 #descr "Those wounded by this spell are affected by strange energy that may slow them for the rest of the battle."
 
@@ -110,7 +114,7 @@
 #spelltype 2
 
 #paths 20
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -134,7 +138,7 @@
 #ondamage 1
 
 #nameprefix "Slowing"
-#fatiguepersquare 6
+#fatiguepersquare 1.5
 
 #nextspell "Slow Secondary mrn damaging"
 
@@ -143,36 +147,3 @@
 
 #end
 
-#newsecondary "Slow holy only"
-
--- evo only
-#spelltype 2
-
-#paths 20
-#power 0
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
--- not ritual
-#req spelltype !& 4
-#req damage != 68719476736
-
-
-#nameprefix "Slowing"
-#fatiguepersquare 6
-
-#nextspell "Slow Secondary mrn damaging"
-
-#descr "Those wounded by this spell are affected by strange energy that may slow them for the rest of the battle."
-
-
-#end

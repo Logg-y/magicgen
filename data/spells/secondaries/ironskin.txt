@@ -4,7 +4,7 @@
 #spelltype 1
 
 #paths 8
-#power -3
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -19,7 +19,9 @@
 #req spelltype !& 4
 
 #nameprefix "Irontouched"
-#fatiguepersquare 12
+#fatiguepersquare 5
+#minfinalaoe 6
+#scalingaoelimit 1.5
 
 
 #nextspell "Ironskin Secondary mrn"
@@ -29,7 +31,7 @@
 
 #end
 
-#newsecondary "Ironskin Secondary mrne"
+#newsecondary "Ironskin Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -50,13 +52,14 @@
 #req spelltype !& 4
 
 #nameprefix "Steeled"
-#fatiguepersquare 6
-#minfinalaoe 5
+#fatiguepersquare 10
+#minfinalaoe 3
+#scalingaoelimit 1.2
 
 
-#nextspell "Ironskin Secondary mrne"
+#nextspell "Ironskin Secondary mrnh"
 
 #descr "This spell may also turn the skin of those it affects to iron, making them more resistant to physical damage. This does however make them more vulnerable to shocks."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
 #end

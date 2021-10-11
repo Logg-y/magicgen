@@ -2,6 +2,7 @@ from Enums.PathFlags import PathFlags
 from Enums.SpellTypes import SpellTypes
 from Services.utils import unitmods, eventsets, spelleffects
 from Services import utils
+from Enums.DebugKeys import debugkeys
 from fileparser import unitinbasedatafinder
 import math
 
@@ -30,6 +31,7 @@ class SpellSecondaryEffect(object):
         self.ondamage = 0
         self.aispellmod = 0
         self.requiredresearchlevel = None
+        self.scalingaoelimit = None
 
         self.scalecost = 0.0
         self.scalerate = 0.0
@@ -172,7 +174,7 @@ class SpellSecondaryEffect(object):
         if finalnreff <= 0:
             return False
 
-        finalaoe = self.aoe + modifier.aoe + (eff.aoe % 1000)
+        finalaoe = self.aoe + modifier.aoe + (eff.aoe % 1000) + (eff.aoe // 1000)*eff.pathlevel
         if finalaoe < 0:
             return False
 
@@ -191,18 +193,27 @@ class SpellSecondaryEffect(object):
             if not umod.compatibilityWithSpellEffect(eff):
                 return False
 
-        extraresearch = finalpower - researchlevel
-        scaleamt = eff.scalerate * ((extraresearch * (extraresearch + 1)) / 2)
+        extraresearch = researchlevel - finalpower
+        actualpowerlvl = (researchlevel - eff.power) + self.power + modifier.power
+
+        scaleamt = eff.scalerate * ((actualpowerlvl * (actualpowerlvl + 1)) / 2)
         if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
-            finalaoe = (eff.aoe % 1000) + scaleamt
+            finalaoe += scaleamt
 
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
-        if self.offensiveeffect != 0 and eff.paths != 256:
-            maxbaseaoe = 3 * ((researchlevel * (researchlevel + 1)) / 2)
-
+        if self.scalingaoelimit is None and self.offensiveeffect != 0 and eff.paths != 256:
+            scalingaoelimit = 3
+        else:
+            scalingaoelimit = self.scalingaoelimit
+        if scalingaoelimit is not None:
+            if finalaoe > 600:
+                finalaoe = 50
+            maxbaseaoe = scalingaoelimit * ((researchlevel * (researchlevel + 1)) / 2)
             # this is quadratic, negative power differentials (from slower casting etc) should be considered 0
             finalpower = max(0, finalpower)
+            print(f"scalingaoelimit: {scalingaoelimit} at rl{researchlevel} has maxbaseaoe {maxbaseaoe}, "
+                  f"spell has {finalaoe}, scaleamt was {scaleamt}")
             if finalaoe > maxbaseaoe:
                 return False
 
@@ -250,36 +261,7 @@ class SpellSecondaryEffect(object):
                 minfinalfatiguecost = max(modifier.minfinalfatiguecost, self.minfinalfatiguecost)
 
         if maxfinalfatiguecost is not None or minfinalfatiguecost is not None:
-            scaleamt = scaleamt * (eff.scalecost + self.scalecost + modifier.scalecost)
-            finalfatigue = eff.fatiguecost
-            fatiguefromresearch = 10 * extraresearch
-            scaleexponent = self.scalefatigueexponent + eff.scalefatigueexponent + modifier.scalefatigueexponent
-            exponentcomponent = scaleamt ** abs(scaleexponent)
-            finalfatigue += fatiguefromresearch
-            if scaleexponent >= 0.0:
-                finalfatigue += exponentcomponent
-            else:
-                finalfatigue -= exponentcomponent
-            finalfatigue = math.floor(finalfatigue)
-
-            for attrib, mult in self.multcommands:
-                if attrib == "fatiguecost":
-                    finalfatigue *= mult
-            for attrib, mult in modifier.multcommands:
-                if attrib == "fatiguecost":
-                    finalfatigue *= mult
-            finalnreff = eff.nreff
-
-            finalfatigue += (scaleamt * eff.scalefatiguemult)
-
-            if eff.spelltype & SpellTypes.POWER_SCALES_NREFF:
-                finalnreff += scaleamt
-            finalfatigue += (finalnreff * (self.fatiguecostpereffect))
-
-            # blood gets doubled
-            # (this will unfortunately miss blood versions of other paths' spells, but alas)
-            if eff.paths == 128:
-                finalfatigue *= 2
+            finalfatigue = eff.calculateExpectedFinalFatigue(researchlevel, modifier, self)
 
             if maxfinalfatiguecost is not None and finalfatigue >= maxfinalfatiguecost:
                 print(f"maxfinalfatiguecost of {finalfatigue} too high (vs {maxfinalfatiguecost})")
@@ -289,10 +271,12 @@ class SpellSecondaryEffect(object):
                 return False
 
 
+
+
         if self.minfinalaoe is not None:
             if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
                 finalaoe = eff.aoe % 1000 + (eff.aoe // 1000 * eff.pathlevel)
-                finalaoe += round(eff.scalerate * ((extraresearch*(extraresearch+1))/2), 0)
+                finalaoe += round(eff.scalerate * ((actualpowerlvl*(actualpowerlvl+1))/2), 0)
             else:
                 finalaoe = eff.aoe
             if finalaoe < self.minfinalaoe:

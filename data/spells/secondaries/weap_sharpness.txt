@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 8
-#power -2
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 524288
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Keen"
-#fatiguepersquare 8
-#minfinalaoe 1
-
-
-#nextspell "WoS Secondary mrn"
-
-#descr "This spell may also sharpen the weapons of those it affects."
-#details "Affected creatures make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
-
-#end
-
-#newsecondary "WoS Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 8
 #power -1
 
 -- various damage types
@@ -46,15 +16,49 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Sharp"
+#nameprefix "Keen"
 #fatiguepersquare 4
 #minfinalaoe 3
 
+#scalingaoelimit 1.5
 
-#nextspell "WoS Secondary mrne"
+
+#nextspell "WoS Secondary mrn"
 
 #descr "This spell may also sharpen the weapons of those it affects."
-#details "Affected creatures make an easy MR check. Failing this check causes them to inflict AP damage with melee attacks."
+#details "Affected creatures make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
+
+#end
+
+#newsecondary "WoS Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 8
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 524288
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Sharp"
+#fatiguepersquare 8
+#minfinalaoe 1
+
+#scalingaoelimit 1.2
+
+
+#nextspell "WoS Secondary mrnh"
+
+#descr "This spell may also sharpen the weapons of those it affects."
+#details "Affected creatures make a hard MR check. Failing this check causes them to inflict AP damage with melee attacks."
 
 
 #end

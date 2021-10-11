@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 128
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -31,6 +31,8 @@
 #details "Affected creatures must make an easy MR check or be sent to Inferno."
 
 #skipchance 50
+
+#scalingaoelimit 1.5
 
 #end
 
@@ -85,7 +87,7 @@
 #spelltype 2
 
 #paths 128
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -104,6 +106,8 @@
 
 #nameprefix "Infernal"
 #fatiguepersquare 10
+
+#scalingaoelimit 1.5
 
 
 #nextspell "planeshift kokytos Secondary mrne"
@@ -166,7 +170,7 @@
 #spelltype 2
 
 #paths 16
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -185,6 +189,8 @@
 
 #nameprefix "Voidtouched"
 #fatiguepersquare 10
+
+#scalingaoelimit 1.5
 
 
 #nextspell "planeshift void Secondary mrne"

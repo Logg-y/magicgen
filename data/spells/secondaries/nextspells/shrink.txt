@@ -35,10 +35,10 @@
 
 
 
-#neweffect "Shrink Secondary mrne"
+#neweffect "Shrink Secondary mrnh"
 #effect 11
 #damage 4294967296
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1
@@ -108,10 +108,10 @@
 
 
 
-#neweffect "Shrink Secondary mrne damaging"
+#neweffect "Shrink Secondary mrnh damaging"
 #effect 11
 #damage 4294967296
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1

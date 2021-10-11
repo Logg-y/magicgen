@@ -1,39 +1,4 @@
-#newsecondary "Sleep nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 64
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Drowsy"
-#fatiguepersquare 4
-
-#req damage != 1024
-
-
-#nextspell "Sleep Secondary mrne"
-
-#descr "This spell is imbued with strange energy that may cause those affected to fall asleep."
-
-#end
-
-#newsecondary "Sleep nondamaging mrn"
+#newsecondary "Sleep nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -55,11 +20,49 @@
 
 -- not ritual
 #req spelltype !& 4
+
+#nameprefix "Drowsy"
+#fatiguepersquare 6
+
+#req damage != 1024
+
+#scalingaoelimit 1.5
+
+
+#nextspell "Sleep Secondary mrnh"
+
+#descr "This spell is imbued with strange energy that may cause those affected to fall asleep."
+
+#end
+
+#newsecondary "Sleep nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 64
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
 #req damage != 1024
 
 #nameprefix "Sleepy"
-#fatiguepersquare 7
+#fatiguepersquare 3
 
+#scalingaoelimit 2.0
 
 #nextspell "Sleep Secondary mrn"
 
@@ -68,13 +71,13 @@
 #end
 
 
-#newsecondary "Sleep damaging mrne"
+#newsecondary "Sleep damaging mrnh"
 
 -- evo only
 #spelltype 2
 
 #paths 64
-#power 0
+#power -1
 
 -- various damage types
 #reqdamagingeffect 1
@@ -100,7 +103,7 @@
 #nameprefix "Drowsy"
 #fatiguepersquare 3
 
-#nextspell "Sleep Secondary mrne damaging"
+#nextspell "Sleep Secondary mrnh damaging"
 
 #descr "This spell is imbued with strange energy that may cause those it wounds to fall asleep."
 
@@ -112,7 +115,7 @@
 #spelltype 2
 
 #paths 64
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -136,41 +139,7 @@
 #ondamage 1
 
 #nameprefix "Sleepy"
-#fatiguepersquare 6
-
-#nextspell "Sleep Secondary mrn damaging"
-
-#descr "This spell is imbued with strange energy that may cause those it wounds to fall asleep."
-
-
-#end
-
-#newsecondary "Sleep holy only"
-
--- evo only
-#spelltype 2
-
-#paths 64
-#power 0
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Sleepy"
-#fatiguepersquare 6
+#fatiguepersquare 1.5
 
 #nextspell "Sleep Secondary mrn damaging"
 

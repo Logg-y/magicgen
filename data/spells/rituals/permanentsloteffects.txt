@@ -811,6 +811,38 @@
 #end
 
 
+
+#neweffect "Permanent effect gift of air breathing"
+#effect 10599
+#damage 130
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 2
+#fatiguecost 500
+#scalefatiguemult 20
+#schools 18
+#unique 1
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+
+#name 4 "Sustaining Water"
+#descr 4 "Through the consumption of magical gems, the caster gains the ability to support a limited number of water breathing creatures on land."
+#details "The caster pemanently gains Gift of Air Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
+
+#scalerate 5
+#skipchance 92
+#permanentslotusage 1
+
+-- ritual, power scales effect number!
+#spelltype 260
+#noresearchdifferenceskip 1
+#end
+
+
 #neweffect "Permanent effect siege bonus"
 #effect 10519
 #damage 125

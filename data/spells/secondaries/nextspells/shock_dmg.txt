@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "4 capped shock Secondary mrne"
+#neweffect "4 capped shock Secondary mrnh"
 #effect 109
 #damage 4
-#spec 36028797044148352
+#spec 36046389213415552
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -102,10 +102,10 @@
 #end
 
 
-#neweffect "4 capped shock Secondary mrne damaging"
+#neweffect "4 capped shock Secondary mrnh damaging"
 #effect 109
 #damage 4
-#spec 36028797044148352
+#spec 36046389213415552
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -173,10 +173,10 @@
 
 #end
 
-#neweffect "3AN shock Secondary mrne"
+#neweffect "3AN shock Secondary mrnh"
 #effect 2
 #damage 3
-#spec 16795776
+#spec 17592186062976
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -241,10 +241,10 @@
 
 #end
 
-#neweffect "3AN shock Secondary mrne damaging"
+#neweffect "3AN shock Secondary mrnh damaging"
 #effect 2
 #damage 3
-#spec 16795776
+#spec 17592186062976
 #schools -1
 #paths -1
 -- evo, scale aoe

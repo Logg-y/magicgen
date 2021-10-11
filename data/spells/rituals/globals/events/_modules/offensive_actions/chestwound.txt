@@ -22,5 +22,5 @@
 
 #req_targgod 0
 #gainaff 8388608	
-#msg "One of your commanders was wounded in the chest by foul magic!"
+#msg "##fulltargname## was wounded in the chest by foul magic!"
 #nolog

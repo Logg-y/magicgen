@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Luck Secondary mrne"
+#neweffect "Luck Secondary mrnh"
 #effect 10
 #damage 2
-#spec 29376512
+#spec 17592198643712
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

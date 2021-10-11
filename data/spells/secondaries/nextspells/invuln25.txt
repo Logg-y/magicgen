@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Invuln 25 Secondary mrne"
+#neweffect "Invuln 25 Secondary mrnh"
 #effect 23
 #damage 2
-#spec 29376512
+#spec 17592198643712
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

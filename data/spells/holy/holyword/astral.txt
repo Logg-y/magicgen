@@ -86,7 +86,7 @@
 #name 32 "Death to Heretics"
 #name 64 "Ensnare Heretics"
 #name 128 "Bleed Heretics"
-#descr 256 "With a earthen holy word from the next true God the priest is able to stun and burden sacred warriors of a false pretender."
-#details "Attack rate slowed 50%, Att -2, Def -2.
+#descr 256 "With a holy word from the next true God the priest is able to stun and slow sacred warriors of a false pretender."
+#details "Attack rate slowed 50%, Att -2, Def -2."
 #spelltype 2
 #end

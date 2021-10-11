@@ -1,39 +1,4 @@
-#newsecondary "Earthmeld nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 12
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 16384
-
-#nameprefix "Gripping"
-#fatiguepersquare 4
-
-
-#nextspell "Earthmeld Secondary mrne"
-
-#descr "Those affected by this spell find the earth beneath them suddenly soften, potentially trapping them."
-#details "Affected creatures make an easy MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
-
-#end
-
-#newsecondary "Earthmeld nondamaging mrn"
+#newsecondary "Earthmeld nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -57,8 +22,45 @@
 #req spelltype !& 4
 #req damage != 16384
 
+#nameprefix "Gripping"
+#fatiguepersquare 6
+#scalingaoelimit 1.5
+
+
+#nextspell "Earthmeld Secondary mrnh"
+
+#descr "Those affected by this spell find the earth beneath them suddenly soften, potentially trapping them."
+#details "Affected creatures make a hard MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
+
+#end
+
+#newsecondary "Earthmeld nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 12
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 16384
+
 #nameprefix "Grasping"
-#fatiguepersquare 7
+#fatiguepersquare 3
+#scalingaoelimit 2.0
 
 
 #nextspell "Earthmeld Secondary mrn"
@@ -69,7 +71,7 @@
 #end
 
 
-#newsecondary "Earthmeld damaging mrne"
+#newsecondary "Earthmeld damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -99,12 +101,12 @@
 #ondamage 1
 
 #nameprefix "Gripping"
-#fatiguepersquare 3
+#fatiguepersquare 6
 
-#nextspell "Earthmeld Secondary mrne damaging"
+#nextspell "Earthmeld Secondary mrnh damaging"
 
 #descr "Those wounded by this spell find the earth beneath them suddenly soften, potentially trapping them."
-#details "Wounded creatures make an easy MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
+#details "Wounded creatures make a hard MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
 
 #end
 
@@ -114,7 +116,7 @@
 #spelltype 2
 
 #paths 12
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -138,7 +140,7 @@
 #ondamage 1
 
 #nameprefix "Grasping"
-#fatiguepersquare 6
+#fatiguepersquare 4
 
 #nextspell "Earthmeld Secondary mrn damaging"
 
@@ -148,40 +150,4 @@
 
 #end
 
-
-#newsecondary "Earthmeld holy only"
-
--- evo only
-#spelltype 2
-
-#paths 12
-#power -2
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
-
--- not ritual
-#req spelltype !& 4
-#req damage != 16384
-
-
-#nameprefix "Grasping"
-#fatiguepersquare 6
-
-#nextspell "Earthmeld Secondary mrn damaging"
-
-#descr "Those wounded by this spell find the earth beneath them suddenly soften, potentially trapping them."
-#details "Wounded creatures make an MR check. Those that fail to resist suffer earth meld: Affected creatures become immobile and unable to attack, and roll Strength+DRN vs 23 to break free each round."
-
-
-#end
 

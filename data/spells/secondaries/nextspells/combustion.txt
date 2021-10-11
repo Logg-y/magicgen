@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Burning Secondary mrne"
+#neweffect "Burning Secondary mrnh"
 #effect 11
 #damage 512
-#spec 16793632
+#spec 17592186060832
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe
@@ -99,10 +99,10 @@
 
 #end
 
-#neweffect "Burning Secondary mrne damaging"
+#neweffect "Burning Secondary mrnh damaging"
 #effect 11
 #damage 512
-#spec 16793632
+#spec 17592186060832
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 16
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -23,6 +23,7 @@
 
 #nameprefix "Dominating"
 #fatiguepersquare 10
+#scalingaoelimit 1.5
 
 
 #nextspell "enslave Secondary mrne"
@@ -65,6 +66,7 @@
 
 #nameprefix "Dominating"
 #fatiguepersquare 6
+
 
 #nextspell "enslave Secondary mrne damaging"
 

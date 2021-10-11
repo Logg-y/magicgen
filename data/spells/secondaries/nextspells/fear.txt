@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "fear type 1 Secondary mrne"
+#neweffect "fear type 1 Secondary mrnh"
 #effect 4
 #damage 2
-#spec 25165952
+#spec 17592194433152
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -101,10 +101,10 @@
 
 #end
 
-#neweffect "fear type 1 Secondary mrne damaging"
+#neweffect "fear type 1 Secondary mrnh damaging"
 #effect 4
 #damage 2
-#spec 25165952
+#spec 17592194433152
 #schools -1
 #paths -1
 -- evo, scale aoe

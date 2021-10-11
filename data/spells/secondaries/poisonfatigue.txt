@@ -1,4 +1,4 @@
-#newsecondary "poison fatigue nondamaging mrne"
+#newsecondary "poison fatigue nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -22,13 +22,15 @@
 #req spelltype !& 4
 
 #nameprefix "Exhausting"
-#fatiguepersquare 4
+#fatiguepersquare 6
+
+#scalingaoelimit 2.5
 
 
-#nextspell "poison fatigue Secondary mrne"
+#nextspell "poison fatigue Secondary mrnh"
 
 #descr "This spell is infused with poison magic that may fatigue those affected by this spell."
-#details "Affected creatures must make an easy MR check or suffer 16 AN poison fatigue damage. Creatures that are size 3 or larger have this reduced to 2/size of the original damage."
+#details "Affected creatures must make a hard MR check or suffer 16 AN poison fatigue damage. Creatures that are size 3 or larger have this reduced to 2/size of the original damage."
 
 #end
 
@@ -38,7 +40,7 @@
 #spelltype 2
 
 #paths 64
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -56,7 +58,9 @@
 #req spelltype !& 4
 
 #nameprefix "Debilitating"
-#fatiguepersquare 8
+#fatiguepersquare 3
+
+#scalingaoelimit 3
 
 
 #nextspell "poison fatigue Secondary mrn"
@@ -66,7 +70,7 @@
 
 #end
 
-#newsecondary "poison fatigue damaging mrne"
+#newsecondary "poison fatigue damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -98,12 +102,12 @@
 #req spec !& 8192
 
 #nameprefix "Exhausting"
-#fatiguepersquare 3
+#fatiguepersquare 2
 
-#nextspell "poison fatigue Secondary mrne damaging"
+#nextspell "poison fatigue Secondary mrnh damaging"
 
 #descr "This spell is infused with poison magic that may fatigue those wounded by this spell."
-#details "Wounded creatures must make an easy MR check or suffer 16 AN poison fatigue damage. Creatures that are size 3 or larger have this reduced to 2/size of the original damage."
+#details "Wounded creatures must make a hard MR check or suffer 16 AN poison fatigue damage. Creatures that are size 3 or larger have this reduced to 2/size of the original damage."
 
 #end
 
@@ -113,7 +117,7 @@
 #spelltype 2
 
 #paths 64
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -139,7 +143,7 @@
 #ondamage 1
 
 #nameprefix "Debilitating"
-#fatiguepersquare 6.5
+#fatiguepersquare 4
 
 #nextspell "poison fatigue Secondary mrn damaging"
 

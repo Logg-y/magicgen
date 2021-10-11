@@ -70,10 +70,10 @@
 #damage 3010
 #spec 8320
 #aoe 1
-#power 5
+#power 6
 #maxpower 13
 #precision -8
-#nreff 5
+#nreff 3
 #range 50
 #pathlevel 3
 #fatiguecost 100

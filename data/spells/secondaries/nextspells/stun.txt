@@ -1,7 +1,7 @@
-#neweffect "Stun Secondary mrne"
+#neweffect "Stun Secondary mrnh"
 #effect 128
 #damage 100
-#spec 25313412
+#spec 17592194580612
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -64,10 +64,10 @@
 
 #end
 
-#neweffect "Stun Secondary mrne damaging"
+#neweffect "Stun Secondary mrnh damaging"
 #effect 128
 #damage 100
-#spec 25313412
+#spec 17592194580612
 #schools -1
 #paths -1
 -- evo, scale aoe

@@ -20,5 +20,5 @@
 
 #req_targgod 0
 #gainaff 2
-#msg "One of your commanders was affected by foul magic and became cursed."
+#msg "##fulltargname## was affected by foul magic and became cursed."
 #nolog

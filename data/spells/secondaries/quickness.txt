@@ -4,7 +4,7 @@
 #spelltype 1
 
 #paths 20
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -17,18 +17,19 @@
 #req spelltype !& 4
 
 #nameprefix "Hasty"
-#fatiguepersquare 4
-#minfinalaoe 1
+#fatiguepersquare 3
+#minfinalaoe 8
+#scalingaoelimit 2.5
 
 
 #nextspell "Quickness Secondary mrn"
 
-#descr "This spell may also make those it affects stronger for the duration of the battle."
+#descr "This spell may also make those it affects act faster for the duration of the battle."
 #details "Affected creatures make an MR check. Failing this check grants quickness, doubling attack rate and movement speed."
 
 #end
 
-#newsecondary "Quickness Secondary mrne"
+#newsecondary "Quickness Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -47,13 +48,15 @@
 #req spelltype !& 4
 
 #nameprefix "Quick"
-#fatiguepersquare 2
-#minfinalaoe 5
+#fatiguepersquare 5
+#minfinalaoe 4
+
+#scalingaoelimit 2.0
 
 
-#nextspell "Quickness Secondary mrne"
+#nextspell "Quickness Secondary mrnh"
 
-#descr "This spell may also make those it affects stronger for the duration of the battle."
-#details "Affected creatures make an easy MR check. Failing this check grants quickness, doubling attack rate and movement speed."
+#descr "This spell may also make those it affects act faster for the duration of the battle."
+#details "Affected creatures make a hard MR check. Failing this check grants quickness, doubling attack rate and movement speed."
 
 #end

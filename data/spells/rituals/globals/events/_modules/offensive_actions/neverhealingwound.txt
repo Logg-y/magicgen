@@ -18,5 +18,5 @@
 
 #req_targgod 0
 #gainaff 67108864
-#msg "One of your commanders has been involved in an accident and become wounded."
+#msg "##fulltargname## has been involved in an accident and become wounded."
 #nolog

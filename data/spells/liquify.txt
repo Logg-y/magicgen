@@ -7,7 +7,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 2
 -- #scalecost 0.6
 
 #aoe 0
@@ -33,5 +33,7 @@
 #namecond range < 10 4 "NAMEPREFIX Touch of Liquification"
 #namecond range < 10 32 "NAMEPREFIX Touch of Liquification"
 
-#pathperresearch 0.5
+#pathperresearch 0.4
+#scalefatigueexponent 1.4
 #end
+

@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "Falsefetters Secondary mrne"
+#neweffect "Falsefetters Secondary mrnh"
 #effect 11
 #damage 131072
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1
@@ -104,10 +104,10 @@
 
 #end
 
-#neweffect "Falsefetters Secondary mrne damaging"
+#neweffect "Falsefetters Secondary mrnh damaging"
 #effect 11
 #damage 131072
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1

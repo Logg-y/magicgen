@@ -1,0 +1,49 @@
+#neweffect "Maws Earthgrip"
+#effect 11
+#damage 16384
+#spec 70368752582656
+#schools -1
+#paths -1
+-- evo
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 50
+#name 8 "Grip of the Earth"
+#end
+
+
+#neweffect "Maws of the Earth"
+#effect 2
+#damage 1012
+#spec 70368752566336
+#aoe 3
+#power 3
+#nreff 1
+#maxpower 9
+#precision 1
+#range 5025
+#pathlevel 2
+#fatiguecost 100
+#explspr 10279
+#sound 45
+
+
+#paths e
+#secondarypaths e
+
+#name e "NAMEPREFIX Maw of the Earth"
+#descr e "The earth cringes and heaves and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
+#priority 1
+#namecond range < 10 e "NAMEPREFIX Grip of the Earth"
+#maxpower 9
+
+#nextspell "Maws Earthgrip"
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 1.7
+#schools alt
+#scalefatigueexponent 1.4
+#end

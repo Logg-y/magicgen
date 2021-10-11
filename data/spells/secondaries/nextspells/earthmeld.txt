@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "Earthmeld Secondary mrne"
+#neweffect "Earthmeld Secondary mrnh"
 #effect 11
 #damage 16384
-#spec 70368769359872
+#spec 87960938627072
 
 
 #schools -1
@@ -105,10 +105,10 @@
 #end
 
 
-#neweffect "Earthmeld Secondary mrne damaging"
+#neweffect "Earthmeld Secondary mrnh damaging"
 #effect 11
 #damage 16384
-#spec 70368769359872
+#spec 87960938627072
 
 
 #schools -1

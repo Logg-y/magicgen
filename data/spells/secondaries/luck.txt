@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 16
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 2
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Lucky"
-#fatiguepersquare 4
-#minfinalaoe 1
-
-
-#nextspell "Luck Secondary mrn"
-
-#descr "This spell may also make those it affects unnaturally lucky."
-#details "Affected creatures make an MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
-
-#end
-
-#newsecondary "Luck Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 16
 #power 0
 
 -- various damage types
@@ -46,14 +16,48 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Fortuitous"
+#nameprefix "Lucky"
 #fatiguepersquare 2
-#minfinalaoe 5
+#minfinalaoe 10
+
+#scalingaoelimit 2.0
 
 
-#nextspell "Luck Secondary mrne"
+#nextspell "Luck Secondary mrn"
 
 #descr "This spell may also make those it affects unnaturally lucky."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
+#details "Affected creatures make an MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
+
+#end
+
+#newsecondary "Luck Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 16
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 2
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Fortuitous"
+#fatiguepersquare 4
+#minfinalaoe 5
+
+#scalingaoelimit 1.5
+
+
+#nextspell "Luck Secondary mrnh"
+
+#descr "This spell may also make those it affects unnaturally lucky."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
 
 #end

@@ -131,6 +131,8 @@
 #allowedunitmod "Summon Enlarge 4"
 #allowedunitmod "Summon Shrink 1"
 #allowedunitmod "Summon Shrink 2"
+#allowedunitmod "Summon Shrink 3"
+#allowedunitmod "Summon Shrink 4"
 #allowedunitmod "Summon Teleport"
 
 #allowedunitmod "Summon Falsearmy Large"
@@ -163,7 +165,11 @@
 #allowedunitmod "Summon Fastcaster 50"
 #allowedunitmod "Summon Fastcaster 100"
 
-#allowedunitmod "Summon Corpseeater Cmdr"
+#allowedunitmod "Summon Corpseeater Cmdr size 1-2"
+#allowedunitmod "Summon Corpseeater Cmdr size 3"
+#allowedunitmod "Summon Corpseeater Cmdr size 4"
+#allowedunitmod "Summon Corpseeater Cmdr size 5"
+#allowedunitmod "Summon Corpseeater Cmdr size 6"
 
 #allowedunitmod "Summon Awe 3"
 --#allowedunitmod "Summon Animalawe 3"

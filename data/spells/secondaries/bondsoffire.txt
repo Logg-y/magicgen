@@ -1,40 +1,4 @@
-#newsecondary "Firebonds nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 1
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 65536
-#req paths != 256
-
-#nameprefix "Trapping"
-#fatiguepersquare 4
-
-
-#nextspell "Firebonds Secondary mrne"
-
-#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
-#details "Affected creatures make an easy MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
-
-#end
-
-#newsecondary "Firebonds nondamaging mrn"
+#newsecondary "Firebonds nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -57,9 +21,47 @@
 -- not ritual
 #req spelltype !& 4
 #req damage != 65536
+#req paths != 256
+
+#nameprefix "Trapping"
+#fatiguepersquare 6
+#scalingaoelimit 1.5
+
+
+#nextspell "Firebonds Secondary mrnh"
+
+#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
+#details "Affected creatures make a hard MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+
+#end
+
+#newsecondary "Firebonds nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 1
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 65536
 
 #nameprefix "Ensnaring"
-#fatiguepersquare 7
+#fatiguepersquare 3
+#scalingaoelimit 2.0
 
 
 #nextspell "Firebonds Secondary mrn"
@@ -70,7 +72,7 @@
 #end
 
 
-#newsecondary "Firebonds damaging mrne"
+#newsecondary "Firebonds damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -101,56 +103,16 @@
 #ondamage 1
 
 #nameprefix "Trapping"
-#fatiguepersquare 3
+#fatiguepersquare 4
 
-#nextspell "Firebonds Secondary mrne damaging"
+#nextspell "Firebonds Secondary mrnh damaging"
 
 #descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those this spell wounds."
-#details "Wounded creatures make an easy MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+#details "Wounded creatures make a hard MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
 #end
 
 #newsecondary "Firebonds mrn damaging"
-
--- evo only
-#spelltype 2
-
-#paths 1
-#power -2
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-
-#req nonscalingdamage < 40
-
--- not ritual
-#req spelltype !& 4
-#req damage != 65536
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Ensnaring"
-#fatiguepersquare 6
-
-#nextspell "Firebonds Secondary mrn damaging"
-
-#descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those this spell wounds."
-#details "Wounded creatures make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
-
-
-#end
-
-#newsecondary "Firebonds holy not smite"
 
 -- evo only
 #spelltype 2
@@ -169,8 +131,6 @@
 #req effect != 72	    -- stream of life
 #offensiveeffect 1
 -- holy okay
-#req paths == 256
-#req aoe > 0
 
 #req nonscalingdamage < 40
 
@@ -182,7 +142,7 @@
 #ondamage 1
 
 #nameprefix "Ensnaring"
-#fatiguepersquare 6
+#fatiguepersquare 2
 
 #nextspell "Firebonds Secondary mrn damaging"
 
@@ -191,3 +151,4 @@
 
 
 #end
+

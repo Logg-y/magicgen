@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "4 capped cold Secondary mrne"
+#neweffect "4 capped cold Secondary mrnh"
 #effect 109
 #damage 4
-#spec 36028797044146816
+#spec 36046389213414016
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -102,10 +102,10 @@
 #end
 
 
-#neweffect "4 capped cold Secondary mrne damaging"
+#neweffect "4 capped cold Secondary mrnh damaging"
 #effect 109
 #damage 4
-#spec 36028797044146816
+#spec 36046389213414016
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -173,10 +173,10 @@
 
 #end
 
-#neweffect "10AP cold Secondary mrne"
+#neweffect "10AP cold Secondary mrnh"
 #effect 2
 #damage 10
-#spec 16777792
+#spec 17592186044992
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -241,10 +241,10 @@
 
 #end
 
-#neweffect "10AP cold Secondary mrne damaging"
+#neweffect "10AP cold Secondary mrnh damaging"
 #effect 2
 #damage 10
-#spec 16794176
+#spec 17592186061376
 #schools -1
 #paths -1
 -- evo, scale aoe

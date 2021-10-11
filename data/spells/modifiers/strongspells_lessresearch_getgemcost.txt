@@ -1,0 +1,26 @@
+#newmodifier "Strong Spell at Lower Research w/ gemcost"
+
+-- both evo and buff
+#spelltype 0
+
+#skipchance 40
+-- not battlesummoned commander
+#req effect != 21
+
+-- not global enchantment
+#req effect != 10081
+-- not dispel
+#req effect != 10030
+
+-- not for rituals
+#req effect < 10000
+
+#minfinalfatiguecost 100
+#maxfinalfatiguecost 199
+#req fatiguecost < 100
+
+#mult fatiguecost 2.5
+#pathlevel -1
+#power 3
+
+#end

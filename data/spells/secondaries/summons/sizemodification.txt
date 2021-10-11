@@ -1,4 +1,4 @@
--- Guess I am using x**1.1 * 1.15 ** x
+-- Guess I am using x**1.0 * 1.05 ** x
 
 #newsecondary "Summon Enlarge 1"
 #req siegepatrolchaff < 1
@@ -10,7 +10,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.15
+#mult fatiguecost 1.05
 #magicpathvaluescaling 0.07
 
 #unitmod "Summon Enlarge 1"
@@ -28,7 +28,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.83
+#mult fatiguecost 2.2
 #magicpathvaluescaling 0.15
 
 #unitmod "Summon Enlarge 2"
@@ -46,7 +46,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 5.09
+#mult fatiguecost 3.47
 #magicpathvaluescaling 0.22
 
 #unitmod "Summon Enlarge 3"
@@ -64,7 +64,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 8.03
+#mult fatiguecost 4.86
 #magicpathvaluescaling 0.28
 
 #unitmod "Summon Enlarge 4"
@@ -88,11 +88,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 0.86
+#mult fatiguecost 0.95
 #magicpathvaluescaling 0.07
 
 #unitmod "Summon Shrink 1"
-#descr "The summoned %creature% %is% somewhat smaller than normal."
+#descr "The summoned %creature% %is% slightly smaller than normal."
 
 #end
 
@@ -111,10 +111,57 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 0.308
+#mult fatiguecost 0.45
 #magicpathvaluescaling 0.15
 
 #unitmod "Summon Shrink 2"
+#descr "The summoned %creature% %is% somewhat smaller than normal."
+
+#end
+
+
+#newsecondary "Summon Shrink 3"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+-- NOT in battle summon commander
+#req effect != 21
+
+#paths 0
+#power 3
+
+#skipchance 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 0.28
+#magicpathvaluescaling 0.15
+
+#unitmod "Summon Shrink 3"
+#descr "The summoned %creature% %is% smaller than normal."
+
+#end
+
+#newsecondary "Summon Shrink 4"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+-- NOT in battle summon commander
+#req effect != 21
+
+#paths 0
+#power 4
+
+#skipchance 0
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 0.20
+#magicpathvaluescaling 0.28
+
+#unitmod "Summon Shrink 4"
 #descr "The summoned %creature% %is% much smaller than normal."
 
 #end

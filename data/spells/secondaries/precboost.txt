@@ -18,7 +18,7 @@
 
 #nameprefix "Accurate"
 #fatiguepersquare 1
-#minfinalaoe 5
+#minfinalaoe 12
 
 
 #nextspell "Precboost Secondary mrn"
@@ -28,7 +28,7 @@
 
 #end
 
-#newsecondary "Precboost Secondary mrne"
+#newsecondary "Precboost Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -48,12 +48,12 @@
 
 #nameprefix "Precise"
 #fatiguepersquare 0.5
-#minfinalaoe 15
+#minfinalaoe 6
 
 
-#nextspell "Precboost Secondary mrne"
+#nextspell "Precboost Secondary mrnh"
 
 #descr "This spell may also make those it affects more accurate with ranged attacks."
-#details "Affected creatures make an easy MR check. Failing this check grants +5 precision."
+#details "Affected creatures make a hard MR check. Failing this check grants +5 precision."
 
 #end

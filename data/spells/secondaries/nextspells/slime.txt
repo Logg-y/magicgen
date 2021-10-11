@@ -46,10 +46,10 @@
 
 
 
-#neweffect "Slime Secondary mrne"
+#neweffect "Slime Secondary mrnh"
 #effect 11
 #damage 134217728
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1
@@ -141,10 +141,10 @@
 
 
 
-#neweffect "Slime Secondary mrne damaging"
+#neweffect "Slime Secondary mrnh damaging"
 #effect 11
 #damage 134217728
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1

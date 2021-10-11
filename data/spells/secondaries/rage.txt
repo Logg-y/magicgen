@@ -1,4 +1,4 @@
-#newsecondary "Rage nondamaging mrne"
+#newsecondary "Rage nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -28,15 +28,17 @@
 -- not demons/undead only
 #req spec !& 8
 
-#nextspell "Minor Rage mrne"
+#nextspell "Minor Rage mrnh"
 
 #nameprefix "Aggravating"
-#fatiguepersquare 5
+#fatiguepersquare 10
+
+#scalingaoelimit 1.2
 
 #aispellmod 20
 
 #descr "Those affected by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Affected creatures make an easy MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
+#details "Affected creatures make a hard MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
 
 #end
 
@@ -46,7 +48,7 @@
 #spelltype 2
 
 #paths 65
-#power -3
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -73,7 +75,9 @@
 #nextspell "Minor Rage mrn"
 
 #nameprefix "Infuriating"
-#fatiguepersquare 7
+#fatiguepersquare 5
+
+#scalingaoelimit 1.5
 
 #aispellmod 40
 
@@ -89,7 +93,7 @@
 #spelltype 2
 
 #paths 65
-#power -2
+#power 0
 
 #pathlevel 1
 
@@ -116,7 +120,7 @@
 #ondamage 1
 
 #nameprefix "Infuriating"
-#fatiguepersquare 5
+#fatiguepersquare 2.25
 
 #req nonscalingdamage < 40
 
@@ -129,7 +133,7 @@
 
 #end
 
-#newsecondary "Rage damaging mrne"
+#newsecondary "Rage damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -166,48 +170,12 @@
 #aispellmod 30
 
 #nameprefix "Aggravating"
-#fatiguepersquare 3
+#fatiguepersquare 4.5
 
-#nextspell "Minor Rage mrne damaging"
+#nextspell "Minor Rage mrnh damaging"
 
 #descr "Those wounded by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Wounded creatures make an easy MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
+#details "Wounded creatures make a hard MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
 
 #end
 
-
-#newsecondary "Rage holy only"
-
--- evo only
-#spelltype 2
-
-#paths 65
-#power 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
--- various damage types
-#req paths == 256
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-
--- not demons/undead only
-#req spec !& 8
-
-
-#nameprefix "Infuriating"
-#fatiguepersquare 5
-
-#nextspell "Minor Rage mrn damaging"
-
-#descr "Those wounded by this spell may become enraged by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Wounded creatures make an MR check. Failing this check makes them enraged, causing them to have a 50% chance to direct attacks to a random adjacent square."
-
-#end

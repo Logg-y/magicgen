@@ -34,10 +34,10 @@
 
 #end
 
-#neweffect "Web Secondary mrne"
+#neweffect "Web Secondary mrnh"
 #effect 11
 #damage 536870912
-#spec 27279360
+#spec 10502144+17592186044416
 
 #schools -1
 #paths -1
@@ -108,10 +108,10 @@
 
 #end
 
-#neweffect "Web Secondary mrne damaging"
+#neweffect "Web Secondary mrnh damaging"
 #effect 11
 #damage 536870912
-#spec 27279360
+#spec 17592196546560
 
 #schools -1
 #paths -1

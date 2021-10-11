@@ -279,6 +279,8 @@ def rollspells(**options):
                     # Make a list of effects, go through them in sequence
                     # skipchance not passing just means throwing it to the end
                     while 1:
+                        if len(effectlist) == 0:
+                            raise Exception(f"No holy spell effects for {spelltype} for path {path}")
                         effectname = effectlist.pop(0)
                         spelleff = holy[effectname]
                         if spelleff.secondarypaths & path and (getattr(spelleff, spelltype) > 0):

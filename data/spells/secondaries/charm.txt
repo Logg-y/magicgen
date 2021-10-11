@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 64
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -24,6 +24,7 @@
 
 #nameprefix "Charming"
 #fatiguepersquare 10
+#scalingaoelimit 1.5
 
 
 #nextspell "charm Secondary mrne"

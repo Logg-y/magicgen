@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "fire fatigue Secondary mrne"
+#neweffect "fire fatigue Secondary mrnh"
 #effect 3
 #damage 12
-#spec 16777376
+#spec 17592186044576
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -101,10 +101,10 @@
 
 #end
 
-#neweffect "fire fatigue Secondary mrne damaging"
+#neweffect "fire fatigue Secondary mrnh damaging"
 #effect 3
 #damage 12
-#spec 16777376
+#spec 17592186044576
 #schools -1
 #paths -1
 -- evo, scale aoe

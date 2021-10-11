@@ -1,4 +1,4 @@
-#newsecondary "Summon Corpseeater Units"
+#newsecondary "Summon Corpseeater Units size 1-2"
 #req siegepatrolchaff < 1
 
 #anysummon 1
@@ -23,13 +23,75 @@
 #magicpathvaluescaling 1.0
 #mult fatiguecost 1.6
 
-#unitmod "Summon Corpseeater Units"
+#unitmod "Summon Corpseeater Units size 1-2"
 #descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
 #details "The creatures can eat one corpse a turn to gain 1 max HP per turn."
 
 #end
 
-#newsecondary "Summon Corpseeater Cmdr"
+#newsecondary "Summon Corpseeater Units size 3-4"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not commander
+#req effect != 10021
+#req effect != 21
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Corpseeater Units size 3-4"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creatures can eat up to two corpses a turn to gain +1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Units size 5-6"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -1
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not commander
+#req effect != 10021
+#req effect != 21
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 1.6
+
+#unitmod "Summon Corpseeater Units size 5-6"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creatures can eat up to four corpses a turn to gain +1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Cmdr size 1-2"
 #req siegepatrolchaff < 1
 
 #anysummon 1
@@ -54,8 +116,132 @@
 #magicpathvaluescaling 1.0
 #mult fatiguecost 2.2
 
-#unitmod "Summon Corpseeater Cmdr"
+#unitmod "Summon Corpseeater Cmdr size 1-2"
 #descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
 #details "The creature can eat up to five corpses a turn to gain 1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Cmdr size 3"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not unit
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 2.2
+
+#unitmod "Summon Corpseeater Cmdr size 1-2"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creature can eat up to eight corpses a turn to gain 1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Cmdr size 4"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not unit
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 2.2
+
+#unitmod "Summon Corpseeater Cmdr size 1-2"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creature can eat up to twelve corpses a turn to gain 1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Cmdr size 5"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not unit
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 2.2
+
+#unitmod "Summon Corpseeater Cmdr size 1-2"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creature can eat up to sixteen corpses a turn to gain 1 max HP per corpse."
+
+#end
+
+#newsecondary "Summon Corpseeater Cmdr size 6"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 32
+#power -2
+
+-- useless in assassinations
+#req effect != 10050
+-- useless in remote attacks
+#req effect != 10038
+-- not unit
+#req effect != 10001
+#req effect != 1
+-- useless in non rituals
+#req effect > 10000
+
+
+
+-- not montag
+#req damage > 0
+#magicpathvaluescaling 1.0
+#mult fatiguecost 2.2
+
+#unitmod "Summon Corpseeater Cmdr size 1-2"
+#descr "The summoned %creature% %is% able to consume corpses to permanently increase their life force."
+#details "The creature can eat up to twenty corpses a turn to gain 1 max HP per corpse."
 
 #end

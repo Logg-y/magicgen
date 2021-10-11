@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 1
-#power -3
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -22,7 +22,8 @@
 #req spelltype !& 4
 
 #nameprefix "Parching"
-#fatiguepersquare 12
+#fatiguepersquare 8
+#scalingaoelimit 1.5
 
 
 #nextspell "Heataura Secondary mrne"
@@ -38,7 +39,7 @@
 #spelltype 2
 
 #paths 1
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -61,7 +62,7 @@
 #ondamage 1
 
 #nameprefix "Parching"
-#fatiguepersquare 8
+#fatiguepersquare 4
 
 #nextspell "Heataura Secondary mrne damaging"
 

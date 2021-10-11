@@ -108,6 +108,8 @@
 #allowedunitmod "Summon Enlarge 4"
 #allowedunitmod "Summon Shrink 1"
 #allowedunitmod "Summon Shrink 2"
+#allowedunitmod "Summon Shrink 3"
+#allowedunitmod "Summon Shrink 4"
 #allowedunitmod "Summon Teleport"
 
 #allowedunitmod "Summon Fire Flare"

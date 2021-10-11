@@ -4,37 +4,6 @@
 #spelltype 1
 
 #paths 32
-#power -2
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 17179869184
-#req damage != 268435456
-#req damage != 2
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Invulnerable"
-#fatiguepersquare 8
-
-
-#nextspell "Invuln 25 Secondary mrn"
-
-#descr "This spell may also magically protect those it affects from mundane weaponry."
-#details "Affected creatures make an MR check. Those that fail to resist gain 25 invulnerability."
-
-#end
-
-#newsecondary "Invuln 25 Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 32
 #power -1
 
 -- various damage types
@@ -49,13 +18,47 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Impervious"
-#fatiguepersquare 4
-#minfinalaoe 5
+#nameprefix "Invulnerable"
+#fatiguepersquare 5
+#minfinalaoe 6
+#scalingaoelimit 2.0
 
 
-#nextspell "Invuln 25 Secondary mrne"
+#nextspell "Invuln 25 Secondary mrn"
 
 #descr "This spell may also magically protect those it affects from mundane weaponry."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain 25 invulnerability."
+#details "Affected creatures make an MR check. Those that fail to resist gain 25 invulnerability."
+
+#end
+
+#newsecondary "Invuln 25 Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 32
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 17179869184
+#req damage != 268435456
+#req damage != 2
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Impervious"
+#fatiguepersquare 10
+#minfinalaoe 3
+#scalingaoelimit 1.5
+
+
+#nextspell "Invuln 25 Secondary mrnh"
+
+#descr "This spell may also magically protect those it affects from mundane weaponry."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain 25 invulnerability."
 #end

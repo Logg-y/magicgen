@@ -21,5 +21,5 @@
 
 #req_targgod 0
 #poison 5
-#msg "One of your commanders was bitten by a poisonous creature!"
+#msg "##fulltargname## was bitten by a poisonous creature!"
 #nolog

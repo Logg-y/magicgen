@@ -22,5 +22,5 @@
 
 #req_targgod 0
 #gainaff 4194304	
-#msg "One of your commanders has mysteriously decreased in size!"
+#msg "##fulltargname## has mysteriously decreased in size!"
 #nolog

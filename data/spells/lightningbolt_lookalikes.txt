@@ -1,0 +1,99 @@
+#neweffect "LBolt Heat Shock"
+#effect 3
+#damage 2008
+#spec 160
+#schools -1
+#paths -1
+-- evo
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 50
+#name 1 "Heated Air"
+#end
+
+
+#neweffect "Scorching Air"
+#effect 2
+#damage 2008
+#spec 16544
+#aoe 0
+#power 2
+#nreff 1
+#maxpower 14
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 10
+#explspr 10113
+#sound 27
+
+
+#paths 1
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX Scorching Air"
+#descr 1 "ARTICLE %pocket% of air %is% heated up to extremely high temperatures. The hot air is able to burn the vulnerable parts of those caught in it, such as eyes and lungs."
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Touch of Scorching Air"
+#maxpower 6
+
+#nextspell "LBolt Heat Shock"
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end
+
+
+
+#neweffect "LBolt Cold Shock"
+#effect 3
+#damage 2008
+#spec 640
+#schools -1
+#paths -1
+-- evo
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 50
+#name 4 "Chilled Air"
+#end
+
+
+#neweffect "Frigid Air"
+#effect 2
+#damage 2008
+#spec 17024
+#aoe 0
+#power 2
+#nreff 1
+#maxpower 14
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 10
+#explspr 10132
+#sound 27
+
+
+#paths 4
+#secondarypaths 4
+
+#name 4 "NAMEPREFIX Frigid Air"
+#descr 4 "ARTICLE %pocket% of air %is% chilled to extremely cold temperatures. The frigid air is able to damage the vulnerable parts of those caught in it, such as eyes and lungs."
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Touch of Frigid Air"
+#maxpower 6
+
+#nextspell "LBolt Cold Shock"
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 1
+#schools 4
+#end

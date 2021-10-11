@@ -16,7 +16,7 @@
 
 #skipchance 97
 
-#name 4 "%conjure$ NAMEPREFIX Undines"
+#name 4 "$conjure$ NAMEPREFIX Undines"
 #descr 4 "The caster calls forth several undines to fight for him. Undines are water spirits who serve Thalassa."
 
 #spelltype 528

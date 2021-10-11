@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "4 capped poison Secondary mrne"
+#neweffect "4 capped poison Secondary mrnh"
 #effect 139
 #damage 4
-#spec 25190528
+#spec 17592194457728
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -67,10 +67,10 @@
 
 #end
 
-#neweffect "4 capped poison Secondary mrn damaging"
+#neweffect "4 capped poison Secondary damaging"
 #effect 139
 #damage 4
-#spec 8417408
+#spec 8413312
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -101,40 +101,6 @@
 
 #end
 
-
-#neweffect "4 capped poison Secondary mrne damaging"
-#effect 139
-#damage 4
-#spec 25190528
-#schools -1
-#paths -1
--- evo, scale aoe
-#spelltype 2
-#aoe 0
-#scalerate 0
-#power 0
-#maxpower 30
-#explspr 10019
-#sound 24
-
-#spelltype 2
-
-#pathlevel 1
-
-#paths 1
-#secondarypaths 1
-
-#name 1 "$Additional$ poison"
-#name 2 "$Additional$ poison"
-#name 4 "$Additional$ poison"
-#name 8 "$Additional$ poison"
-#name 16 "$Additional$ poison"
-#name 32 "$Additional$ poison"
-#name 64 "$Additional$ poison"
-#name 128 "$Additional$ poison"
-#name 256 "$Additional$ poison"
-
-#end
 
 ---
 
@@ -173,10 +139,10 @@
 
 #end
 
-#neweffect "7AN poison Secondary mrne"
+#neweffect "7AN poison Secondary mrnh"
 #effect 7
 #damage 7
-#spec 16801920
+#spec 17592186069120
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -241,10 +207,10 @@
 
 #end
 
-#neweffect "7AN poison Secondary mrne damaging"
+#neweffect "7AN poison Secondary mrnh damaging"
 #effect 7
 #damage 7
-#spec 16801920
+#spec 17592186069120
 #schools -1
 #paths -1
 -- evo, scale aoe

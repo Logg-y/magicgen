@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Magicresist Secondary mrne"
+#neweffect "Magicresist Secondary mrnh"
 #effect 10
 #damage 67108864
-#spec 29376512
+#spec 17592198643712
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

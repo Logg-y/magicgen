@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 4
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -23,6 +23,7 @@
 
 #nameprefix "Chillwind"
 #fatiguepersquare 12
+#scalingaoelimit 1.5
 
 
 #nextspell "Chillaura Secondary mrne"
@@ -38,7 +39,7 @@
 #spelltype 2
 
 #paths 4
-#power -2
+#power -1
 
 -- various damage types
 #reqdamagingeffect 1

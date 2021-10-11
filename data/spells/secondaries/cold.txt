@@ -1,4 +1,4 @@
-#newsecondary "10AP cold nondamaging mrne"
+#newsecondary "10AP cold nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -23,10 +23,11 @@
 #req spelltype !& 4
 
 #nameprefix "Frosty"
-#fatiguepersquare 4
+#fatiguepersquare 5
+#scalingaoelimit 2.0
 
 
-#nextspell "10AP cold Secondary mrne"
+#nextspell "10AP cold Secondary mrnh"
 
 #descr "This spell is infused with cold magic that may be discharged on those it affects, severely chilling them."
 
@@ -57,7 +58,8 @@
 #req spelltype !& 4
 
 #nameprefix "Icy"
-#fatiguepersquare 8
+#fatiguepersquare 2.5
+#scalingaoelimit 2.5
 
 
 #nextspell "10AP cold Secondary mrn"
@@ -66,7 +68,7 @@
 
 #end
 
-#newsecondary "10AP cold damaging mrne"
+#newsecondary "10AP cold damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -98,100 +100,20 @@
 #req spec !& 512
 
 #nameprefix "Frosty"
-#fatiguepersquare 3
+#fatiguepersquare 2.5
 
-#nextspell "10AP cold Secondary mrne damaging"
-
-#descr "This spell is infused with cold magic that may be discharged on those it wounds, severely chilling them."
-
-#end
-
-#newsecondary "10AP cold damaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 4
-#power -1
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy ok
-
--- not ritual
-#req spelltype !& 4
-
-#req nonscalingdamage < 40
-
--- not cold damage
-#req spec !& 512
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Icy"
-#fatiguepersquare 6.5
-
-#nextspell "10AP cold Secondary mrn damaging"
+#nextspell "10AP cold Secondary mrnh damaging"
 
 #descr "This spell is infused with cold magic that may be discharged on those it wounds, severely chilling them."
 
 #end
 
-#newsecondary "10AP cold holy not smite"
-
--- evo only
-#spelltype 2
-
-#paths 4
-#power 0
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy ok
-#req paths == 256
-#req effect != 2
-
--- not ritual
-#req spelltype !& 4
-
-
--- not cold damage
-#req spec !& 512
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Icy"
-#fatiguepersquare 6.5
-
-#nextspell "10AP cold Secondary mrn damaging"
-
-#descr "This spell is infused with cold magic that may be discharged on those it wounds, severely chilling them."
-
-#end
 
 
 ------
 
 
-#newsecondary "4 capped cold nondamaging mrne"
+#newsecondary "4 capped cold nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -214,93 +136,19 @@
 
 -- not ritual
 #req spelltype !& 4
-
-#nameprefix "Frigid"
-#fatiguepersquare 3
-#minfinalaoe 10
-
-
-#nextspell "4 capped cold Secondary mrne"
-
-#descr "This spell is infused with cold magic that may be discharged on those it affects, chilling them from the inside."
-
-#end
-
-#newsecondary "4 capped cold nondamaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 4
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-#req paths != 256
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Glacial"
-#fatiguepersquare 6
-
-
-#nextspell "4 capped cold Secondary mrn"
-
-#descr "This spell is infused with cold magic that may be discharged on those it affects, chilling them from the inside."
-
-#end
-
-#newsecondary "4 capped cold damaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 4
-#power 0
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
-#req paths != 256
-
--- not ritual
-#req spelltype !& 4
-
--- not cold damage
-#req spec !& 512
-
-#req nonscalingdamage < 40
-
--- not on damage already
-#ondamage 1
 
 #nameprefix "Frigid"
 #fatiguepersquare 2
+#minfinalaoe 10
 
-#nextspell "4 capped cold Secondary mrne damaging"
 
-#descr "This spell is infused with cold magic that may be discharged on those it wounds, chilling them from the inside."
+#nextspell "4 capped cold Secondary mrnh"
+
+#descr "This spell is infused with cold magic that may be discharged on those it affects, chilling them from the inside."
 
 #end
 
-#newsecondary "4 capped cold damaging mrn"
+#newsecondary "4 capped cold damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -323,23 +171,21 @@
 -- not ritual
 #req spelltype !& 4
 
-#req nonscalingdamage < 40
-
 -- not cold damage
 #req spec !& 512
+
+#req nonscalingdamage < 40
 
 -- not on damage already
 #ondamage 1
 
-#nameprefix "Glacial"
-#fatiguepersquare 4.5
+#nameprefix "Frigid"
+#fatiguepersquare 1
 
-#nextspell "4 capped cold Secondary mrn damaging"
+#nextspell "4 capped cold Secondary mrnh damaging"
 
 #descr "This spell is infused with cold magic that may be discharged on those it wounds, chilling them from the inside."
 
 #end
-
-
 
 

@@ -8,7 +8,7 @@
 #spelltype 41
 
 #scalerate 5
-#scalefatigueexponent 1.1
+#scalefatigueexponent 0.8
 #pathperresearch 0.35
 
 #aoe 1
@@ -82,6 +82,7 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of tempered steel"
 
 #end
+
 
 
 

@@ -19,5 +19,5 @@
 
 #req_targgod 0
 #gainaff 4194304	
-#msg "One of your commanders has mysteriously lost their voice."
+#msg "##fulltargname## has mysteriously lost their voice."
 #nolog

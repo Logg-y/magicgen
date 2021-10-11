@@ -11,8 +11,8 @@
 #sound 31
 #schools 1
 
-#paths 66
-#secondarypaths 66
+#paths a
+#secondarypaths n
 #scalefatigueexponent -1.2
 #pathperresearch 0.4
 
@@ -40,8 +40,8 @@
 #fatiguecost 120
 #schools 1
 
-#paths 66
-#secondarypaths 66
+#paths a
+#secondarypaths n
 
 #skipchance 99
 
@@ -77,8 +77,8 @@
 #skipchance 99
 #nogeodst 2052
 
-#paths 66
-#secondarypaths 66
+#paths a
+#secondarypaths n
 
 #name 64 "NAMEPREFIX Black Hawk $ambush$"
 #name 2 "NAMEPREFIX Black Hawk $ambush$"
@@ -103,8 +103,8 @@
 
 #skipchance 99.6
 
-#paths 66
-#secondarypaths 66
+#paths a
+#secondarypaths n
 
 --#scalefatigueexponent 0.5
 --#scalefatiguemult 20

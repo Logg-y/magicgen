@@ -203,7 +203,7 @@
 #skipflightspr 1
 #effect 103
 #damage 5
-#spec 16544+8388608+536870912
+#spec 16512+8388608+536870912
 #range 5020
 #power 0
 #maxpower 0

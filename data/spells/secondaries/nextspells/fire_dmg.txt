@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "4 capped fire Secondary mrne"
+#neweffect "4 capped fire Secondary mrnh"
 #effect 109
 #damage 4
-#spec 36028797044146336
+#spec 36046389213413536
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -102,10 +102,10 @@
 #end
 
 
-#neweffect "4 capped fire Secondary mrne damaging"
+#neweffect "4 capped fire Secondary mrnh damaging"
 #effect 109
 #damage 4
-#spec 36028797044142240
+#spec 36046389213413536
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -173,10 +173,10 @@
 
 #end
 
-#neweffect "10AP fire Secondary mrne"
+#neweffect "10AP fire Secondary mrnh"
 #effect 2
 #damage 10
-#spec 16777312
+#spec 17592186044512
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -241,10 +241,10 @@
 
 #end
 
-#neweffect "10AP fire Secondary mrne damaging"
+#neweffect "10AP fire Secondary mrnh damaging"
 #effect 2
 #damage 10
-#spec 16793696
+#spec 17592186060896
 #schools -1
 #paths -1
 -- evo, scale aoe

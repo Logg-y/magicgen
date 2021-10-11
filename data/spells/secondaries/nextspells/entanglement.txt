@@ -33,10 +33,10 @@
 #end
 
 
-#neweffect "Entanglement Secondary mrne"
+#neweffect "Entanglement Secondary mrnh"
 #effect 11
 #damage 64
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1
@@ -103,10 +103,10 @@
 #end
 
 
-#neweffect "Entanglement Secondary mrne damaging"
+#neweffect "Entanglement Secondary mrnh damaging"
 #effect 11
 #damage 64
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1

@@ -1,19 +1,88 @@
-#newunitmod "Summon Corpseeater Units"
+#newunitmod "Summon Corpseeater Units size 1-2"
 #set corpseeater 1
 #set deadhp 1
 #set hpoverslow 30
 #nameprefix "Corpse-eating"
 #req hp > 6
 #req inanimate <= 0
+#req size < 3
 #descr "This particular CREATURE is able to permanently increase its life force by eating a corpse every month."
 #end
 
-#newunitmod "Summon Corpseeater Cmdr"
+#newunitmod "Summon Corpseeater Units size 3-4"
+#set corpseeater 2
+#set deadhp 1
+#set hpoverslow 30
+#nameprefix "Corpse-eating"
+#req hp > 6
+#req inanimate <= 0
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to two corpses every month."
+#req size > 2
+#req size < 5
+#end
+
+#newunitmod "Summon Corpseeater Units size 5-6"
+#set corpseeater 4
+#set deadhp 1
+#set hpoverslow 30
+#nameprefix "Corpse-eating"
+#req hp > 6
+#req inanimate <= 0
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to four corpses every month."
+#req size > 4
+#end
+
+#newunitmod "Summon Corpseeater Cmdr size 1-2"
 #set corpseeater 5
 #set deadhp 1
 #nameprefix "Corpse-eating"
 #set hpoverslow 30
 #req hp > 6
 #req inanimate <= 0
+#req size < 3
 #descr "This particular CREATURE is able to permanently increase its life force by eating up to five corpses every month."
+#end
+
+#newunitmod "Summon Corpseeater Cmdr size 3"
+#set corpseeater 8
+#set deadhp 1
+#nameprefix "Corpse-eating"
+#set hpoverslow 30
+#req hp > 6
+#req inanimate <= 0
+#req size == 3
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to eight corpses every month."
+#end
+
+#newunitmod "Summon Corpseeater Cmdr size 4"
+#set corpseeater 12
+#set deadhp 1
+#nameprefix "Corpse-eating"
+#set hpoverslow 30
+#req hp > 6
+#req inanimate <= 0
+#req size == 4
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to twelve corpses every month."
+#end
+
+#newunitmod "Summon Corpseeater Cmdr size 5"
+#set corpseeater 16
+#set deadhp 1
+#nameprefix "Corpse-eating"
+#set hpoverslow 30
+#req hp > 6
+#req inanimate <= 0
+#req size == 5
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to sixteen corpses every month."
+#end
+
+#newunitmod "Summon Corpseeater Cmdr size 6"
+#set corpseeater 20
+#set deadhp 1
+#nameprefix "Corpse-eating"
+#set hpoverslow 30
+#req hp > 6
+#req inanimate <= 0
+#req size == 6
+#descr "This particular CREATURE is able to permanently increase its life force by eating up to twenty corpses every month."
 #end

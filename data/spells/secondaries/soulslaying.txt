@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 16
-#power -1
+#power 0
 #scalefatigueexponent 0.3
 #pathperresearch 0.1
 #req effect == 2

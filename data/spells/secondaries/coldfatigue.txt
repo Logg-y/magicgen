@@ -1,4 +1,4 @@
-#newsecondary "cold fatigue nondamaging mrne"
+#newsecondary "cold fatigue nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -22,10 +22,12 @@
 #req spelltype !& 4
 
 #nameprefix "Chilling"
-#fatiguepersquare 4
+#fatiguepersquare 6
+
+#scalingaoelimit 2.0
 
 
-#nextspell "cold fatigue Secondary mrne"
+#nextspell "cold fatigue Secondary mrnh"
 
 #descr "This spell is infused with cold magic that may dramatically decrease the surrounding air temperature around those it affects to the point of being extremely uncomfortable."
 
@@ -37,7 +39,7 @@
 #spelltype 2
 
 #paths 4
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -55,7 +57,8 @@
 #req spelltype !& 4
 
 #nameprefix "Shivering"
-#fatiguepersquare 8
+#fatiguepersquare 3
+#scalingaoelimit 2.5
 
 
 #nextspell "cold fatigue Secondary mrn"
@@ -64,7 +67,7 @@
 
 #end
 
-#newsecondary "cold fatigue damaging mrne"
+#newsecondary "cold fatigue damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -98,51 +101,10 @@
 #nameprefix "Chilling"
 #fatiguepersquare 3
 
-#nextspell "cold fatigue Secondary mrne damaging"
+#nextspell "cold fatigue Secondary mrnh damaging"
 
 #descr "This spell is infused with cold magic that may dramatically decrease the surrounding air temperature around those it wounds to the point of being extremely uncomfortable."
 
 #end
-
-#newsecondary "cold fatigue damaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 4
-#power -1
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy ok
-
--- not ritual
-#req spelltype !& 4
-
-#req nonscalingdamage < 40
-
--- not cold damage
-#req spec !& 512
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Shivering"
-#fatiguepersquare 6.5
-
-#nextspell "cold fatigue Secondary mrn damaging"
-
-#descr "This spell is infused with cold magic that may dramatically decrease the surrounding air temperature around those it wounds to the point of being extremely uncomfortable."
-
-#end
-
 
 

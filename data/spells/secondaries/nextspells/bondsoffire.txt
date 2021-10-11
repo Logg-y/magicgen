@@ -34,10 +34,10 @@
 #end
 
 
-#neweffect "Firebonds Secondary mrne"
+#neweffect "Firebonds Secondary mrnh"
 #effect 11
 #damage 65536
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1
@@ -107,10 +107,10 @@
 #end
 
 
-#neweffect "Firebonds Secondary mrne damaging"
+#neweffect "Firebonds Secondary mrnh damaging"
 #effect 11
 #damage 65536
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1

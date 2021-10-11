@@ -1,39 +1,4 @@
-#newsecondary "Falsefetters nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 2
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 131072
-
-#nameprefix "Chaining"
-#fatiguepersquare 4
-
-
-#nextspell "Falsefetters Secondary mrne"
-
-#descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those affected."
-#details "Affected creatures make an easy MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
-
-#end
-
-#newsecondary "Falsefetters nondamaging mrn"
+#newsecondary "Falsefetters nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -57,8 +22,45 @@
 #req spelltype !& 4
 #req damage != 131072
 
+#nameprefix "Chaining"
+#fatiguepersquare 6
+#scalingaoelimit 1.5
+
+
+#nextspell "Falsefetters Secondary mrnh"
+
+#descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those affected."
+#details "Affected creatures make a hard MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
+
+#end
+
+#newsecondary "Falsefetters nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 2
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 131072
+
 #nameprefix "Shackling"
-#fatiguepersquare 7
+#fatiguepersquare 3
+#scalingaoelimit 2.0
 
 
 #nextspell "Falsefetters Secondary mrn"
@@ -69,7 +71,7 @@
 #end
 
 
-#newsecondary "Falsefetters damaging mrne"
+#newsecondary "Falsefetters damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -99,12 +101,12 @@
 #ondamage 1
 
 #nameprefix "Chaining"
-#fatiguepersquare 3
+#fatiguepersquare 4
 
-#nextspell "Falsefetters Secondary mrne damaging"
+#nextspell "Falsefetters Secondary mrnh damaging"
 
 #descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those this spell wounds."
-#details "Wounded creatures make an easy MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
+#details "Wounded creatures make a hard MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
 
 #end
 
@@ -114,7 +116,7 @@
 #spelltype 2
 
 #paths 2
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -138,7 +140,7 @@
 #ondamage 1
 
 #nameprefix "Shackling"
-#fatiguepersquare 6
+#fatiguepersquare 2
 
 #nextspell "Falsefetters Secondary mrn damaging"
 
@@ -148,36 +150,3 @@
 
 #end
 
-#newsecondary "Falsefetters holy only"
-
--- evo only
-#spelltype 2
-
-#paths 2
-#power 0
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
--- not ritual
-#req spelltype !& 4
-#req damage != 131072
-
-#nameprefix "Shackling"
-#fatiguepersquare 6
-
-#nextspell "Falsefetters Secondary mrn damaging"
-
-#descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those this spell wounds."
-#details "Wounded creatures make an MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
-
-
-#end

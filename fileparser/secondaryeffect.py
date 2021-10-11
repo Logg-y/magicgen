@@ -13,7 +13,7 @@ secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipc
                         "aispellmod", "requiredresearchlevel", "minfinalaoe", "maxfinalfatiguecost", "minfinalfatiguecost"]
 secondary_params_str = ["nextspell", "unitmod", "details"]
 secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"
-                          , "fatiguepersquare"]
+                          , "fatiguepersquare", "scalingaoelimit"]
 
 
 def readSecondaryFile(fp):

@@ -4,7 +4,7 @@
 #spelltype 2
 
 #paths 64
-#power -3
+#power -2
 
 -- various damage types
 #reqdamagingeffect 0
@@ -22,7 +22,9 @@
 #req spelltype !& 4
 
 #nameprefix "insectoid"
-#fatiguepersquare 10
+#fatiguepersquare 8
+
+#scalingaoelimit 1.5
 
 
 #nextspell "polymorph insect Secondary mrne"
@@ -39,7 +41,7 @@
 #spelltype 2
 
 #paths 64
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -64,7 +66,7 @@
 #req effect != 4	    -- fear
 
 #nameprefix "insectoid"
-#fatiguepersquare 6
+#fatiguepersquare 3
 
 #nextspell "polymorph insect Secondary mrne damaging"
 

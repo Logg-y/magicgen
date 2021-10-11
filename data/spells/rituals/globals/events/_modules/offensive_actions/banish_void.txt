@@ -22,5 +22,5 @@
 
 #req_targgod 0
 #banished -11
-#msg "One of your commanders has slipped into the Void!"
+#msg "##fulltargname## has slipped into the Void!"
 #nolog

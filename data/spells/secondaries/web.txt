@@ -1,4 +1,4 @@
-#newsecondary "Web nondamaging mrne"
+#newsecondary "Web nondamaging mrn"
 
 -- evo only
 #spelltype 2
@@ -23,18 +23,20 @@
 #req damage != 536870912
 
 #nameprefix "Webwoven"
-#fatiguepersquare 4
+#fatiguepersquare 2
+
+#scalingaoelimit 2.0
 
 
-#nextspell "Web Secondary mrne"
+#nextspell "Web Secondary mrn"
 
 #descr "This spell additionally conjures a mass of sticky webs around those affected, which may trap them."
-#details "Affected creatures make an easy MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Affected creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 
 
 #end
 
-#newsecondary "Web nondamaging mrn"
+#newsecondary "Web nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -59,23 +61,25 @@
 #req damage != 536870912
 
 #nameprefix "Webbed"
-#fatiguepersquare 7
+#fatiguepersquare 4
+
+#scalingaoelimit 1.5
 
 
-#nextspell "Web Secondary mrn"
+#nextspell "Web Secondary mrnh"
 
 #descr "This spell additionally conjures a mass of sticky webs around those affected, which may trap them."
-#details "Affected creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Affected creatures make a hard MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 #end
 
 
-#newsecondary "Web damaging mrne"
+#newsecondary "Web damaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 64
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -99,22 +103,22 @@
 #ondamage 1
 
 #nameprefix "Webwoven"
-#fatiguepersquare 3
+#fatiguepersquare 1.5
 
-#nextspell "Web Secondary mrne damaging"
+#nextspell "Web Secondary mrn damaging"
 
 #descr "This spell additionally conjures a mass of sticky webs around those wounded by this spell, which may trap them."
-#details "Wounded creatures make an easy MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Wounded creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 
 #end
 
-#newsecondary "Web damaging mrn damaging"
+#newsecondary "Web damaging mrnh damaging"
 
 -- evo only
 #spelltype 2
 
 #paths 64
-#power -2
+#power -1
 
 -- various damage types
 #reqdamagingeffect 1
@@ -138,46 +142,13 @@
 #ondamage 1
 
 #nameprefix "Webbed"
-#fatiguepersquare 6
+#fatiguepersquare 3
 
-#nextspell "Web Secondary mrn damaging"
+#nextspell "Web Secondary mrnh damaging"
 
 #descr "This spell additionally conjures a mass of sticky webs around those wounded by this spell, which may trap them."
-#details "Wounded creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Wounded creatures make a hard MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 
 
 #end
 
-#newsecondary "Web holy only"
-
--- evo only
-#spelltype 2
-
-#paths 64
-#power 0
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
--- not ritual
-#req spelltype !& 4
-#req damage != 536870912
-
-#nameprefix "Webbed"
-#fatiguepersquare 6
-
-#nextspell "Web Secondary mrn damaging"
-
-#descr "This spell additionally conjures a mass of sticky webs around those wounded by this spell, which may trap them."
-#details "Wounded creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
-
-
-#end

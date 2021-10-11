@@ -1,4 +1,4 @@
-#newsecondary "Shrink nondamaging mrne"
+#newsecondary "Shrink nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -23,10 +23,12 @@
 #req damage != 4294967296
 
 #nameprefix "Diminishing"
-#fatiguepersquare 4
+#fatiguepersquare 6
+
+#scalingaoelimit 1.5
 
 
-#nextspell "Shrink Secondary mrne"
+#nextspell "Shrink Secondary mrnh"
 
 #descr "Those affected by this spell are affected by strange energy that may permanently shrink them."
 
@@ -38,7 +40,7 @@
 #spelltype 2
 
 #paths 64
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -57,7 +59,9 @@
 #req damage != 4294967296
 
 #nameprefix "Shrinking"
-#fatiguepersquare 7
+#fatiguepersquare 3
+
+#scalingaoelimit 2.0
 
 
 #nextspell "Shrink Secondary mrn"
@@ -66,13 +70,13 @@
 #end
 
 
-#newsecondary "Shrink damaging mrne"
+#newsecondary "Shrink damaging mrnh"
 
 -- evo only
 #spelltype 2
 
 #paths 64
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -96,21 +100,21 @@
 #ondamage 1
 
 #nameprefix "Diminishing"
-#fatiguepersquare 3
+#fatiguepersquare 2.25
 
-#nextspell "Shrink Secondary mrne damaging"
+#nextspell "Shrink Secondary mrnh damaging"
 
 #descr "Those wounded by this spell are affected by strange energy that may permanently shrink them."
 
 #end
 
-#newsecondary "Shrink damaging mrn damaging"
+#newsecondary "Shrink damaging mrn"
 
 -- evo only
 #spelltype 2
 
 #paths 64
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -134,7 +138,7 @@
 #ondamage 1
 
 #nameprefix "Shrinking"
-#fatiguepersquare 6
+#fatiguepersquare 1.25
 
 #nextspell "Shrink Secondary mrn damaging"
 

@@ -42,10 +42,10 @@
 
 #end
 
-#neweffect "Curse of Stones Secondary mrne"
+#neweffect "Curse of Stones Secondary mrnh"
 #effect 11
 #damage 32
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1
@@ -133,10 +133,10 @@
 
 #end
 
-#neweffect "Curse of Stones Secondary mrne damaging"
+#neweffect "Curse of Stones Secondary mrnh damaging"
 #effect 11
 #damage 32
-#spec 25182208
+#spec 17592194449408
 
 #schools -1
 #paths -1

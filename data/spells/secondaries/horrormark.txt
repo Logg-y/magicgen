@@ -1,4 +1,4 @@
-#newsecondary "Horror Mark nondamaging mrne"
+#newsecondary "Horror Mark nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -23,55 +23,21 @@
 
 #nameprefix "Horrortouch"
 #fatiguepersquare 2
+#scalingaoelimit 2.5
 
 #req damage != 261
 
 
-#nextspell "Horror Mark Secondary mrne"
+#nextspell "Horror Mark Secondary mrnh"
 
 #descr "This spell is imbued with otherworldly energy that may mark those affected for the attention of otherworldly beings."
-#details "Affected creatures make an easy MR check. Those that fail to resist become gain a horror mark."
+#details "Affected creatures make a hard MR check. Those that fail to resist become gain a horror mark."
 
 
 #end
 
-#newsecondary "Horror Mark nondamaging mrn"
 
--- evo only
-#spelltype 2
-
-#paths 16
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 261
-
-#nameprefix "Marking"
-#fatiguepersquare 3.5
-
-
-#nextspell "Horror Mark Secondary mrn"
-
-#descr "This spell is imbued with otherworldly energy that may mark those affected for the attention of otherworldly beings."
-#details "Affected creatures make an MR check. Those that fail to resist become gain a horror mark."
-
-#end
-
-
-#newsecondary "Horror Mark damaging mrne"
+#newsecondary "Horror Mark damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -101,50 +67,12 @@
 #ondamage 1
 
 #nameprefix "Horrortouch"
-#fatiguepersquare 1
+#fatiguepersquare 0.75
 
-#nextspell "Horror Mark Secondary mrne damaging"
+#nextspell "Horror Mark Secondary mrnh damaging"
 
 #descr "This spell is imbued with otherworldly energy that may mark those it wounds for the attention of otherworldly beings."
-#details "Wounded creatures make an easy MR check. Those that fail to resist become gain a horror mark."
+#details "Wounded creatures make a hard MR check. Those that fail to resist become gain a horror mark."
 
 #end
 
-#newsecondary "Horror Mark mrn damaging"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power 0
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-
-#req nonscalingdamage < 40
-
--- not ritual
-#req spelltype !& 4
-
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Marking"
-#fatiguepersquare 2
-
-#nextspell "Horror Mark Secondary mrn damaging"
-
-#descr "This spell is imbued with otherworldly energy that may mark those it wounds for the attention of otherworldly beings."
-#details "Wounded creatures make an MR check. Those that fail to resist become gain a horror mark."
-
-#end

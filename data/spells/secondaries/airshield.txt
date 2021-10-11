@@ -18,7 +18,7 @@
 #nameprefix "Shielding"
 #fatiguepersquare 1.5
 #minfinalaoe 12
-
+#scalingaoelimit 2.5
 
 #nextspell "Airshield Secondary mrn"
 
@@ -45,9 +45,9 @@
 #req spelltype !& 4
 
 #nameprefix "Protective"
-#fatiguepersquare 0
+#fatiguepersquare 0.5
 #minfinalaoe 5
-
+#scalingaoelimit 2.0
 
 #nextspell "Airshield Secondary mrnh"
 

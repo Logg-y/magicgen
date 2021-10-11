@@ -29,5 +29,5 @@
 #req_targgod 0
 #assassin UNITID
 #req_land 1
-#msg "One of your commanders was suddenly attacked by a strange monster!"
+#msg "##fulltargname## was suddenly attacked by a strange monster!"
 #nolog

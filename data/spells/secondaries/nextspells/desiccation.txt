@@ -1,7 +1,7 @@
-#neweffect "Desiccation Secondary mrne"
+#neweffect "Desiccation Secondary mrnh"
 #effect 500
 #damage 250
-#spec 554172544
+#spec 17592723439744
 
 
 #schools -1
@@ -68,10 +68,10 @@
 
 #end
 
-#neweffect "Desiccation Secondary mrne damaging"
+#neweffect "Desiccation Secondary mrnh damaging"
 #effect 500
 #damage 250
-#spec 554172544
+#spec 17592723439744
 
 
 #schools -1

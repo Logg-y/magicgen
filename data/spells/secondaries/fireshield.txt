@@ -4,7 +4,7 @@
 #spelltype 1
 
 #paths 1
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -17,8 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Fireshielding"
-#fatiguepersquare 4
-#minfinalaoe 1
+#fatiguepersquare 2
+#minfinalaoe 6
+#scalingaoelimit 2.0
 
 
 #nextspell "Fireshield Secondary mrn"
@@ -28,7 +29,7 @@
 
 #end
 
-#newsecondary "Fireshield Secondary mrne"
+#newsecondary "Fireshield Secondary mrng"
 
 -- buff only
 #spelltype 1
@@ -47,12 +48,13 @@
 #req spelltype !& 4
 
 #nameprefix "Flamebarrier"
-#fatiguepersquare 2
-#minfinalaoe 5
+#fatiguepersquare 4
+#minfinalaoe 3
+#scalingaoelimit 1.5
 
 
-#nextspell "Fireshield Secondary mrne"
+#nextspell "Fireshield Secondary mrnh"
 
 #descr "This spell may also surround those it affects in a barrier of flames."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
 #end

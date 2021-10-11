@@ -49,3 +49,4 @@
 #descr 256 "This prayer will make a divine bolt strike down from the sky and deliver massive damage to any demon who fails to resist the spell."
 
 #spelltype 2
+#end

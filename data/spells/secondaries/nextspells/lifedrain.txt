@@ -33,11 +33,11 @@
 
 #end
 
-#neweffect "3AN life drain Secondary mrne damaging"
+#neweffect "3AN life drain Secondary mrnh damaging"
 #copyspell "Leech"
 #effect 2
-#damage 10
-#spec 562053248
+#damage 3
+#spec 17592731320448
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -104,11 +104,11 @@
 
 #end
 
-#neweffect "3AN life drain Secondary mrne"
+#neweffect "3AN life drain Secondary mrnh"
 #copyspell "Leech"
 #effect 2
-#damage 10
-#spec 562053248
+#damage 3
+#spec 17592731320448
 #schools -1
 #paths -1
 -- evo, scale aoe

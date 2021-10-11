@@ -17,8 +17,10 @@
 #req spelltype !& 4
 
 #nameprefix "Restorative"
-#fatiguepersquare 4
-#minfinalaoe 1
+#fatiguepersquare 2
+#minfinalaoe 10
+
+#scalingaoelimit 2.5
 
 
 #nextspell "Regen Secondary mrn"
@@ -28,7 +30,7 @@
 
 #end
 
-#newsecondary "Regen Secondary mrne"
+#newsecondary "Regen Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -47,13 +49,15 @@
 #req spelltype !& 4
 
 #nameprefix "Mending"
-#fatiguepersquare 2
+#fatiguepersquare 4
 #minfinalaoe 5
 
+#scalingaoelimit 2.0
 
-#nextspell "Regen Secondary mrne"
+
+#nextspell "Regen Secondary mrnh"
 
 #descr "This spell may also make those it affects rapidly heal wounds."
-#details "Affected creatures make an easy MR check. Failing this check grants 10% regeneration."
+#details "Affected creatures make a hard MR check. Failing this check grants 10% regeneration."
 
 #end

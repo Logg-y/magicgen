@@ -1,7 +1,7 @@
-#neweffect "Decay Secondary mrne"
+#neweffect "Decay Secondary mrnh"
 #effect 11
 #damage 256
-#spec 25165824
+#spec 17592194433024
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -68,10 +68,10 @@
 
 
 
-#neweffect "Decay Secondary mrne damaging"
+#neweffect "Decay Secondary mrnh damaging"
 #effect 11
 #damage 256
-#spec 25165824
+#spec 17592194433024
 #schools -1
 #paths -1
 -- evo, scale aoe

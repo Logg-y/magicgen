@@ -473,7 +473,7 @@ def main():
                 window["AdvOptionsPageDisplay"].update(f"Page {advOptionsPage} of {ADV_OPTIONS_MAX_PAGE}")
 
         if event == "AdvOptionsPrev":
-            if advOptionsPage != 0:
+            if advOptionsPage != 1:
                 window[f"-AdvOptions{advOptionsPage}-"].update(visible=False)
                 window[f"-AdvOptions{advOptionsPage - 1}-"].update(visible=True)
                 advOptionsPage -= 1

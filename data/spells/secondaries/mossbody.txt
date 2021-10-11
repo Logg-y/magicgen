@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 68
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 8
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Mosscoating"
-#fatiguepersquare 4
-#minfinalaoe 1
-
-
-#nextspell "Mossbody Secondary mrn"
-
-#descr "This spell may also cover those it affects in a protective layer of magical moss."
-#details "Affected creatures make an MR check. Those that fail to resist gain mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
-
-#end
-
-#newsecondary "Mossbody Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 68
 #power 0
 
 -- various damage types
@@ -46,14 +16,47 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Mossy"
+#nameprefix "Mosscoating"
 #fatiguepersquare 2
-#minfinalaoe 5
+#minfinalaoe 1
+
+#scalingaoelimit 2.0
 
 
-#nextspell "Mossbody Secondary mrne"
+#nextspell "Mossbody Secondary mrn"
 
 #descr "This spell may also cover those it affects in a protective layer of magical moss."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
+#details "Affected creatures make an MR check. Those that fail to resist gain mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
+
+#end
+
+#newsecondary "Mossbody Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 68
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Mossy"
+#fatiguepersquare 4
+#minfinalaoe 5
+#scalingaoelimit 1.5
+
+
+#nextspell "Mossbody Secondary mrnh"
+
+#descr "This spell may also cover those it affects in a protective layer of magical moss."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain mossbody: 75% chance to reduce non-internal damage by 15 after protection. If the damage is not reduced to zero, the effect ends and releases a poison burst dealing 1AN damage with an AoE of 4."
 
 #end

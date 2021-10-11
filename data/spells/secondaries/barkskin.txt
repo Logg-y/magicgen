@@ -20,6 +20,7 @@
 #nameprefix "Barktouched"
 #fatiguepersquare 2
 #minfinalaoe 12
+#scalingaoelimit 2.5
 
 
 #nextspell "Barkskin Secondary mrn"
@@ -51,6 +52,7 @@
 #nameprefix "Woody"
 #fatiguepersquare 4
 #minfinalaoe 5
+#scalingaoelimit 2.0
 
 
 #nextspell "Barkskin Secondary mrnh"

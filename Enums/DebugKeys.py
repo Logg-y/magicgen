@@ -8,3 +8,6 @@ class debugkeys:
 
     # Writes the number of effects of summon spells in their name
     SUMMONSPELLNREFFDISPLAY = True
+
+    # Used for debugging #minfinalfatiguecost and #maxfinalfatiguecost
+    FATIGUECOSTCONSTRAINTS = True

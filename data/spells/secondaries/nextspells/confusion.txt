@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "Minor Confusion mrne"
+#neweffect "Minor Confusion mrnh"
 #effect 11
 #damage 17179869184
-#spec 25313280
+#spec 17592194580480
 
 #schools -1
 #paths -1
@@ -104,10 +104,10 @@
 
 #end
 
-#neweffect "Minor Confusion mrne damaging"
+#neweffect "Minor Confusion mrnh damaging"
 #effect 11
 #damage 17179869184
-#spec 25313280
+#spec 17592194580480
 
 #schools -1
 #paths -1

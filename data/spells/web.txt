@@ -12,8 +12,8 @@
 -- #scalecost 0.6
 
 #nreff 1
-#aoe 2
-#power 1
+#aoe 1
+#power 0
 #precision 2
 #maxpower 4
 #pathlevel 1
@@ -37,6 +37,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
 #namecond range < 10 64 "NAMEPREFIX touch of webs"
 
+#scalefatigueexponent 1.4
+#pathperresearch 0.4
 #end
 
 
@@ -53,11 +55,11 @@
 -- #scalecost 0.6
 
 #nreff 1
-#aoe 2
-#power 3
+#aoe 1
+#power 1
 #precision 2
 #maxpower 6
-#pathlevel 3
+#pathlevel 2
 #explspr 102787
 #sound 42
 #fatiguecost 20
@@ -76,6 +78,8 @@
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
 #namecond range < 10 64 "NAMEPREFIX touch of webs"
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
 
 #neweffect "Web Instant Battlefield"
@@ -146,4 +150,6 @@
 #details "Str +DRN vs 22 to get free."
 
 #end
+
+
 

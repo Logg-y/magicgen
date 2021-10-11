@@ -29,7 +29,7 @@
 #newevent
 #rarity 5
 #req_rare 5
-#msg "A hungry animal has attacked one of your commanders!"
+#msg "A hungry animal has attacked ##fulltargname##!"
 #nolog
 #req_ench ENCHANTID
 #req_fort 0

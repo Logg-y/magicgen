@@ -7,12 +7,12 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1.5
 -- #scalecost 0.6
 
 #aoe 1
-#power 3
-#pathlevel 2
+#power 1
+#pathlevel 1
 #explspr 10304
 #sound 114
 #fatiguecost 10
@@ -39,7 +39,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
-#scalefatigueexponent 1.4
+#scalefatigueexponent 1.5
 #maxpower 6
 #end
 
@@ -122,6 +122,7 @@
 #scalefatigueexponent 1.4
 #maxpower 9
 #end
+
 
 
 

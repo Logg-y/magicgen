@@ -194,7 +194,7 @@
 
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 18
-#scalerate 5
+#scalerate 3
 -- #scalecost 0.3
 #schools 4
 
@@ -215,7 +215,7 @@
 #fatiguecost 200
 #explspr 10011
 #sound 123
-#skipchance 80
+#skipchance 90
 
 #paths 129
 #secondarypaths 1
@@ -253,7 +253,7 @@
 #fatiguecost 300
 #explspr 10011
 #sound 123
-#skipchance 80
+#skipchance 90
 
 #paths 129
 #secondarypaths 1
@@ -291,7 +291,7 @@
 #fatiguecost 400
 #explspr 10011
 #sound 123
-#skipchance 80
+#skipchance 90
 
 #paths 129
 #secondarypaths 1

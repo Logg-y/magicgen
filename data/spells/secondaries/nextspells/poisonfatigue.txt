@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "poison fatigue Secondary mrne"
+#neweffect "poison fatigue Secondary mrnh"
 #effect 46
 #damage 16
-#spec 16785536
+#spec 17592186052736
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -101,10 +101,10 @@
 
 #end
 
-#neweffect "poison fatigue Secondary mrne damaging"
+#neweffect "poison fatigue Secondary mrnh damaging"
 #effect 46
 #damage 16
-#spec 16785536
+#spec 17592186052736
 #schools -1
 #paths -1
 -- evo, scale aoe

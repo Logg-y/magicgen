@@ -11,13 +11,13 @@
 #sound 31
 #schools 1
 
-#paths 64
-#secondarypaths 4
+#paths 4
+#secondarypaths 64
 
 #skipchance 98
 
-#name 64 "$conjure$ NAMEPREFIX Large %Lobster%"
-#descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+#name 4 "$conjure$ NAMEPREFIX Large %Lobster%"
+#descr 4 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
 
 #spelltype 528
 
@@ -38,13 +38,13 @@
 #fatiguecost 120
 #schools 1
 
-#paths 64
-#secondarypaths 4
+#paths 4
+#secondarypaths 64
 
 #skipchance 97
 
-#name 64 "$Summon$ NAMEPREFIX Large %Lobster%"
-#descr 64 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+#name 4 "$Summon$ NAMEPREFIX Large %Lobster%"
+#descr 4 "The caster summons ARTICLE large %lobster%. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
 
 #spelltype 20
 
@@ -75,13 +75,13 @@
 #skipchance 99
 #onlygeodst 2052
 
-#paths 64
-#secondarypaths 4
+#paths 4
+#secondarypaths 64
 
 #skipchance 99
 
-#name 64 "NAMEPREFIX Large Lobster $ambush$"
-#descr 64 "The caster summons ARTICLE large %lobster% to attack a hostile commander in a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+#name 4 "NAMEPREFIX Large Lobster $ambush$"
+#descr 4 "The caster summons ARTICLE large %lobster% to attack a hostile commander in a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
 
 #spelltype 4
 
@@ -102,14 +102,14 @@
 
 #skipchance 99.6
 
-#paths 64
-#secondarypaths 4
+#paths 4
+#secondarypaths 64
 
 #scalefatigueexponent 0.5
 #scalefatiguemult 25
 
-#name 64 "$Send$ NAMEPREFIX Large %Lobster%"
-#descr 64 "The caster summons ARTICLE large %lobster% to attack a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
+#name 4 "$Send$ NAMEPREFIX Large %Lobster%"
+#descr 4 "The caster summons ARTICLE large %lobster% to attack a distant province. These lobsters have a tough shell and attack with their pincers, but are very vulnerable to magic."
 
 
 #spelltype 20

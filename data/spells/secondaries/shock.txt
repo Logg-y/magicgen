@@ -1,4 +1,4 @@
-#newsecondary "3AN shock nondamaging mrne"
+#newsecondary "3AN shock nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -22,10 +22,12 @@
 #req spelltype !& 4
 
 #nameprefix "Zapping"
-#fatiguepersquare 4
+#fatiguepersquare 6
+
+#scalingaoelimit 2.0
 
 
-#nextspell "3AN shock Secondary mrne"
+#nextspell "3AN shock Secondary mrnh"
 
 #descr "This spell is infused with electrical energy that may be discharged on those it affects."
 
@@ -37,7 +39,7 @@
 #spelltype 2
 
 #paths 2
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -55,7 +57,9 @@
 #req spelltype !& 4
 
 #nameprefix "Shocking"
-#fatiguepersquare 8
+#fatiguepersquare 3
+
+#scalingaoelimit 2.5
 
 
 #nextspell "3AN shock Secondary mrn"
@@ -64,7 +68,7 @@
 
 #end
 
-#newsecondary "3AN shock damaging mrne"
+#newsecondary "3AN shock damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -96,9 +100,9 @@
 #req spec !& 2048
 
 #nameprefix "Zapping"
-#fatiguepersquare 3
+#fatiguepersquare 4
 
-#nextspell "3AN shock Secondary mrne damaging"
+#nextspell "3AN shock Secondary mrnh damaging"
 
 
 #descr "This spell is infused with electrical energy that may be discharged on those it wounds."
@@ -111,7 +115,7 @@
 #spelltype 2
 
 #paths 2
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -137,7 +141,7 @@
 #ondamage 1
 
 #nameprefix "Shocking"
-#fatiguepersquare 6.5
+#fatiguepersquare 2
 
 #nextspell "3AN shock Secondary mrn damaging"
 
@@ -149,7 +153,7 @@
 ------
 
 
-#newsecondary "4 capped shock nondamaging mrne"
+#newsecondary "4 capped shock nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -176,46 +180,14 @@
 #fatiguepersquare 3
 
 
-#nextspell "4 capped shock Secondary mrne"
+#nextspell "4 capped shock Secondary mrnh"
 
 #descr "This spell is infused with electrical energy that may be discharged on those it wounds."
 
 #end
 
-#newsecondary "4 capped shock nondamaging mrn"
 
--- evo only
-#spelltype 2
-
-#paths 2
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Electrified"
-#fatiguepersquare 6
-
-
-#nextspell "4 capped shock Secondary mrn"
-
-#descr "This spell is infused with electrical energy that may be discharged on those it wounds."
-
-#end
-
-#newsecondary "4 capped shock damaging mrne"
+#newsecondary "4 capped shock damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -247,53 +219,14 @@
 #ondamage 1
 
 #nameprefix "Jolting"
-#fatiguepersquare 2
+#fatiguepersquare 1.5
 
-#nextspell "4 capped shock Secondary mrne damaging"
-
-#descr "This spell is infused with electrical energy that may be discharged on those it wounds."
-
-#end
-
-#newsecondary "4 capped shock damaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 2
-#power 0
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
-#req paths != 256
-
--- not ritual
-#req spelltype !& 4
-
-#req nonscalingdamage < 40
-
--- not shock damage
-#req spec !& 2048
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Electrified"
-#fatiguepersquare 4.5
-
-#nextspell "4 capped shock Secondary mrn damaging"
+#nextspell "4 capped shock Secondary mrnh damaging"
 
 #descr "This spell is infused with electrical energy that may be discharged on those it wounds."
 
 #end
+
 
 
 

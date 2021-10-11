@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 10
-#power -2
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 549755813888
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Guarding"
-#fatiguepersquare 8
-#minfinalaoe 1
-
-
-#nextspell "Protforce Secondary mrn"
-
-#descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Affected creatures make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
-
-#end
-
-#newsecondary "Protforce Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 10
 #power -1
 
 -- various damage types
@@ -46,14 +16,48 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Protecting"
-#fatiguepersquare 4
-#minfinalaoe 5
+#nameprefix "Guarding"
+#fatiguepersquare 3
+#minfinalaoe 8
+
+#scalingaoelimit 2.0
 
 
-#nextspell "Protforce Secondary mrne"
+#nextspell "Protforce Secondary mrn"
 
 #descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Affected creatures make an easy MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+#details "Affected creatures make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+
+#end
+
+#newsecondary "Protforce Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 10
+#power -2
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 549755813888
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Protecting"
+#fatiguepersquare 6
+#minfinalaoe 4
+
+#scalingaoelimit 1.5
+
+
+#nextspell "Protforce Secondary mrnh"
+
+#descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
+#details "Affected creatures make a hard MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
 
 #end

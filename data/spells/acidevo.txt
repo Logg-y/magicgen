@@ -100,7 +100,7 @@
 #aoe 665
 #power 7
 #maxpower 7
-#skipchance 80
+#skipchance 90
 #precision 3
 #range 30
 #pathlevel 6
@@ -132,7 +132,7 @@
 #aoe 663
 #power 8
 #maxpower 8
-#skipchance 80
+#skipchance 90
 #precision 3
 #range 30
 #pathlevel 6
@@ -164,7 +164,7 @@
 #aoe 666
 #power 10
 #maxpower 10
-#skipchance 80
+#skipchance 90
 #precision 3
 #range 30
 #pathlevel 7

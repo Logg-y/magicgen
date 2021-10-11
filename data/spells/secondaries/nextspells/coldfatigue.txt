@@ -33,10 +33,10 @@
 
 #end
 
-#neweffect "cold fatigue Secondary mrne"
+#neweffect "cold fatigue Secondary mrnh"
 #effect 3
 #damage 12
-#spec 16777856
+#spec 17592186045056
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -101,10 +101,10 @@
 
 #end
 
-#neweffect "cold fatigue Secondary mrne damaging"
+#neweffect "cold fatigue Secondary mrnh damaging"
 #effect 3
 #damage 12
-#spec 16777856
+#spec 17592186045056
 #schools -1
 #paths -1
 -- evo, scale aoe

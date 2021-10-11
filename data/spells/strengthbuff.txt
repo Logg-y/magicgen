@@ -7,11 +7,11 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.6
+#scalerate 3.4
 
 #aoe 0
 #power 0
-#maxpower 5
+#maxpower 3
 #pathlevel 1
 #explspr 10058
 #sound 31
@@ -36,6 +36,8 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of earthen might"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
+#scalefatigueexponent 0.5
+#pathperresearch 0.8
 #end
 
 
@@ -51,14 +53,14 @@
 #scalerate 2
 
 #aoe 666
-#power 6
-#maxpower 6
-#pathlevel 4
+#power 4
+#maxpower 4
+#pathlevel 3
 #explspr 10058
 #sound 31
 #range 10
 #unique 1
-#fatiguecost 200
+#fatiguecost 100
 
 #paths 136
 #secondarypaths 8
@@ -76,4 +78,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
 #end
+
 

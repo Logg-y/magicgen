@@ -1,34 +1,4 @@
-#newsecondary "Flaming Arrows Secondary mrn"
-
--- buff only
-#spelltype 1
-
-#paths 1
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 8388608
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Blazing"
-#fatiguepersquare 2.5
-#minfinalaoe 5
-
-
-#nextspell "Flaming Arrows Secondary mrn"
-
-#descr "This spell may also ignite the ranged weapons of those it affects."
-#details "Affected creatures make an MR check. Those that fail to resist gain flaming arrows: non innate ranged weapons do an additional 8 AP fire damage."
-
-#end
-
-#newsecondary "Flaming Arrows Secondary mrne"
+#newsecondary "Flaming Arrows Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -46,14 +16,16 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Flaring"
-#fatiguepersquare 1.25
-#minfinalaoe 15
+#nameprefix "Blazing"
+#fatiguepersquare 2
+#minfinalaoe 8
+
+#scalingaoelimit 3
 
 
-#nextspell "Flaming Arrows Secondary mrne"
+#nextspell "Flaming Arrows Secondary mrnh"
 
 #descr "This spell may also ignite the ranged weapons of those it affects."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain flaming arrows: non innate ranged weapons do an additional 8 AP fire damage."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain flaming arrows: non innate ranged weapons do an additional 8 AP fire damage."
 
 #end

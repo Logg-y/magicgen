@@ -41,6 +41,7 @@
 #namecond range < 10 8 "NAMEPREFIX touch of entombing"
 
 #maxpower 6
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "Earth Grip Battlefield"
@@ -67,12 +68,8 @@
 #paths 12
 #secondarypaths 8
 
-#namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
-#namecond effectiveaoe == 0 8 "NAMEPREFIX Earth Grip"
-#namecond effectiveaoe < 20 4 "NAMEPREFIX Soften Land"
-#namecond effectiveaoe < 20 8 "NAMEPREFIX Earth Meld"
-#namecond effectiveaoe >= 20 4 "NAMEPREFIX Soften Landscape"
-#namecond effectiveaoe >= 20 8 "NAMEPREFIX Opening of the Earth"
+#name 4 "NAMEPREFIX Soften Landscape"
+#name 8 "NAMEPREFIX Opening of the Earth"
 
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
@@ -119,12 +116,13 @@
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
 #descr 8 "The earth opens up beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
-#descr 8 "The earth rapidly softens beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
+#descr 4 "The earth rapidly softens beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
 
 
 
 #maxpower 9
 #end
+
 
 
 

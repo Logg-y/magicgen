@@ -1,4 +1,4 @@
-#newsecondary "Cursed Luck nondamaging mrne"
+#newsecondary "Cursed Luck nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -24,52 +24,18 @@
 
 #nameprefix "Hapless"
 #fatiguepersquare 2
+#scalingaoelimit 3.5
 
 
-#nextspell "Cursed Luck Secondary mrne"
-
-#descr "This spell may also alter the fortunes of those it affects, making them considerably more unlucky for a short time."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
-
-#end
-
-#newsecondary "Cursed Luck nondamaging mrn"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 2
-
-#nameprefix "Unlucky"
-#fatiguepersquare 6
-
-
-#nextspell "Cursed Luck Secondary mrn"
+#nextspell "Cursed Luck Secondary mrnh"
 
 #descr "This spell may also alter the fortunes of those it affects, making them considerably more unlucky for a short time."
-#details "Affected creatures make an MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
 
 #end
 
 
-#newsecondary "Cursed Luck damaging mrne"
+#newsecondary "Cursed Luck damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -99,89 +65,12 @@
 #ondamage 1
 
 #nameprefix "Hapless"
-#fatiguepersquare 1.6
+#fatiguepersquare 0.8
 
-#nextspell "Cursed Luck Secondary mrne damaging"
+#nextspell "Cursed Luck Secondary mrnh damaging"
 
 #descr "This spell may also alter the fortunes of those it wounds, making them considerably more unlucky for a short time."
-#details "Wounded creatures make an easy MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
+#details "Wounded creatures make a hard MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
 
 #end
 
-#newsecondary "Cursed Luck damaging mrn damaging"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power -1
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-
-#req nonscalingdamage < 40
-
--- not ritual
-#req spelltype !& 4
-#req damage != 2
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Unlucky"
-#fatiguepersquare 4
-
-
-#nextspell "Cursed Luck Secondary mrn damaging"
-
-#descr "This spell may also alter the fortunes of those it wounds, making them considerably more unlucky for a short time."
-#details "Wounded creatures make an MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
-
-#end
-
-#newsecondary "Cursed Luck holy not smite"
-
--- evo only
-#spelltype 2
-
-#paths 16
-#power 0
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-#req effect != 2
-
-#req nonscalingdamage < 40
-
--- not ritual
-#req spelltype !& 4
-#req damage != 2
-
-
-#nameprefix "Unlucky"
-#fatiguepersquare 4
-
-
-#nextspell "Cursed Luck Secondary mrn"
-
-#descr "This spell may also alter the fortunes of those it wounds, making them considerably more unlucky for a short time."
-#details "Wounded creatures make an MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
-
-#end

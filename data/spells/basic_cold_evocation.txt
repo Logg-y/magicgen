@@ -120,8 +120,8 @@
 #damage 1006
 #spec 1152921504606847552
 #aoe 0
-#power 3
-#maxpower 14
+#power 1
+#maxpower 12
 #precision 3
 #range 40
 #pathlevel 2
@@ -148,6 +148,8 @@
 #namecond range < 10 4 "NAMEPREFIX Freezing Touch"
 #descrcond range < 10 4 "The caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
 
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end
 
 #neweffect "Deep Freeze Numbness"
@@ -202,7 +204,7 @@
 #pathlevel 5
 #fatiguecost 200
 #explspr 10008
-#skipchance 80
+#skipchance 90
 #sound 21
 
 #paths 132
@@ -241,7 +243,7 @@
 #pathlevel 5
 #fatiguecost 300
 #explspr 10008
-#skipchance 80
+#skipchance 90
 #sound 21
 
 #paths 132
@@ -280,7 +282,7 @@
 #pathlevel 6
 #fatiguecost 400
 #explspr 10008
-#skipchance 80
+#skipchance 90
 #sound 21
 
 #paths 132
@@ -339,5 +341,6 @@
 #nextspell "Small Chill"
 
 #end
+
 
 

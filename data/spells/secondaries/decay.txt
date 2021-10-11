@@ -1,39 +1,4 @@
-#newsecondary "Decay nondamaging mrne"
-
--- evo only
-#spelltype 2
-
-#paths 32
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-
-#offensiveeffect 1
-
--- not ritual
-#req spelltype !& 4
-#req damage != 256
-
-#nameprefix "Rotting"
-#fatiguepersquare 2
-
-
-#nextspell "Decay Secondary mrne"
-
-#descr "Dark energy may cause those affected by this spell to start decaying."
-#details "Affected creatures make an easy MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
-
-#end
-
-#newsecondary "Decay nondamaging mrn"
+#newsecondary "Decay nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -57,10 +22,49 @@
 #req spelltype !& 4
 #req damage != 256
 
+#nameprefix "Rotting"
+#fatiguepersquare 4
+
+#scalingaoelimit 1.5
+
+
+#nextspell "Decay Secondary mrnh"
+
+#descr "Dark energy may cause those affected by this spell to start decaying."
+#details "Affected creatures make a MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+
+#end
+
+#newsecondary "Decay nondamaging mrn"
+
+-- evo only
+#spelltype 2
+
+#paths 32
+#power 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req effect != 27	    -- magic duel
+#req effect != 15	    -- returning
+#req effect != 28	    -- enslave
+#req effect != 29	    -- charm
+#req effect != 54	    -- polymorph
+#req effect != 72	    -- stream of life
+
+#offensiveeffect 1
+
+-- not ritual
+#req spelltype !& 4
+#req damage != 256
+
 #nameprefix "Decaying"
 #nameprefix "Senescent"
 #nameprefix "Baleful"
-#fatiguepersquare 6
+#fatiguepersquare 2
+
+#scalingaoelimit 2.0
 
 
 #nextspell "Decay Secondary mrn"
@@ -71,7 +75,7 @@
 #end
 
 
-#newsecondary "Decay damaging mrne"
+#newsecondary "Decay damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -103,83 +107,9 @@
 #nameprefix "Rotting"
 #fatiguepersquare 1.6
 
-#nextspell "Decay Secondary mrne damaging"
+#nextspell "Decay Secondary mrnh damaging"
 
 #descr "Dark energy may cause those wounded by this spell to start decaying."
-#details "Wounded creatures make an easy MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
-
-#end
-
-#newsecondary "Decay damaging mrn damaging"
-
--- evo only
-#spelltype 2
-
-#paths 32
-#power -1
-
--- various damage types
-#reqdamagingeffect 1
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-
-#req nonscalingdamage < 40
-
--- not ritual
-#req spelltype !& 4
-#req damage != 256
-
--- not on damage already
-#ondamage 1
-
-#nameprefix "Decaying"
-#fatiguepersquare 4
-
-#nextspell "Decay Secondary mrn damaging"
-
-#descr "Dark energy may cause those wounded by this spell to start decaying."
-#details "Wounded creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
-
-
-#end
-
-#newsecondary "Decay damaging holy only"
-
--- evo only
-#spelltype 2
-
-#paths 32
-#power 0
-
-
-#req effect != 27	    -- magic duel
-#req effect != 15	    -- returning
-#req effect != 28	    -- enslave
-#req effect != 29	    -- charm
-#req effect != 54	    -- polymorph
-#req effect != 72	    -- stream of life
-#offensiveeffect 1
--- holy okay
-#req paths == 256
-
--- not ritual
-#req spelltype !& 4
-#req damage != 256
-
-#nameprefix "Decaying"
-#fatiguepersquare 4
-
-#nextspell "Decay Secondary mrn damaging"
-
-#descr "Dark energy may cause those wounded by this spell to start decaying."
-#details "Wounded creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
-
+#details "Wounded creatures make a hard MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end

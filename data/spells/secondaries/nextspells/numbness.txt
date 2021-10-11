@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Freezing Secondary mrne"
+#neweffect "Freezing Secondary mrnh"
 #effect 11
 #damage 268435456
-#spec 25182720
+#spec 17592194449920
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe
@@ -102,10 +102,10 @@
 
 #end
 
-#neweffect "Freezing Secondary mrne damaging"
+#neweffect "Freezing Secondary mrnh damaging"
 #effect 11
 #damage 268435456
-#spec 25182720
+#spec 17592194449920
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

@@ -19,5 +19,5 @@
 
 #req_targgod 0
 #gainaff 1048576	
-#msg "One of your commanders was affected by foul magic and became weakened."
+#msg "##fulltargname## has mysteriously became weakened."
 #nolog

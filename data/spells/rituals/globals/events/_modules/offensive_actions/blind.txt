@@ -18,5 +18,5 @@
 
 #req_targgod 0
 #gainaff 4096
-#msg "One of your commanders was affected by foul magic and became blind."
+#msg "##fulltargname## was affected by foul magic and became blind."
 #nolog

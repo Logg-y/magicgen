@@ -1,7 +1,7 @@
-#neweffect "Paralysis Secondary mrne"
+#neweffect "Paralysis Secondary mrnh"
 #effect 66
 #damage 2008
-#spec 25313412
+#spec 17592194580612
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -64,10 +64,10 @@
 
 #end
 
-#neweffect "Paralysis Secondary mrne damaging"
+#neweffect "Paralysis Secondary mrnh damaging"
 #effect 66
 #damage 2008
-#spec 25313412
+#spec 17592194580612
 #schools -1
 #paths -1
 -- evo, scale aoe

@@ -1,7 +1,7 @@
-#neweffect "Minor Rage mrne"
+#neweffect "Minor Rage mrnh"
 #effect 11
 #damage 128
-#spec 25313280
+#spec 17592194580480
 #schools -1
 
 -- evo, battlefield allowed, scale aoe
@@ -84,10 +84,10 @@
 
 
 
-#neweffect "Minor Rage mrne damaging"
+#neweffect "Minor Rage mrnh damaging"
 #effect 11
 #damage 128
-#spec 25313280
+#spec 17592194580480
 #schools -1
 
 -- evo, battlefield allowed, scale aoe

@@ -130,12 +130,12 @@
 #effect 4002
 #damage 3030
 #spec 64
-#aoe 5
-#power 8
+#aoe 1
+#power 5
 #maxpower 14
 #precision 1
 #range 30
-#pathlevel 5
+#pathlevel 3
 #fatiguecost 100
 #explspr 10127
 #sound 16
@@ -153,7 +153,7 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 4
+#scalerate 0.8
 -- #scalecost 0.3
 #schools 4
 
@@ -202,4 +202,5 @@
 
 #scalefatigueexponent 1.3
 #end
+
 

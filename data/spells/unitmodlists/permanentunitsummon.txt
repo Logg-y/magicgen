@@ -132,8 +132,12 @@
 #allowedunitmod "Summon Enlarge 4"
 #allowedunitmod "Summon Shrink 1"
 #allowedunitmod "Summon Shrink 2"
+#allowedunitmod "Summon Shrink 3"
+#allowedunitmod "Summon Shrink 4"
 #allowedunitmod "Summon Teleport"
-#allowedunitmod "Summon Corpseeater Units"
+#allowedunitmod "Summon Corpseeater Units size 1-2"
+#allowedunitmod "Summon Corpseeater Units size 3-4"
+#allowedunitmod "Summon Corpseeater Units size 5-6"
 
 #allowedunitmod "Summon Awe 3"
 #allowedunitmod "Summon Animalawe 3"

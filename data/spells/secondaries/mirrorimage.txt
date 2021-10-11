@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 2
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 16777216
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Illusionary"
-#fatiguepersquare 4
-#minfinalaoe 3
-
-
-#nextspell "Mirrorimage Secondary mrn"
-
-#descr "This spell may also create false displaced images of those it affects."
-#details "Affected creatures make an MR check. Those that fail to resist gain mirror images."
-
-#end
-
-#newsecondary "Mirrorimage Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 2
 #power 0
 
 -- various damage types
@@ -46,13 +16,47 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Illusory"
+#nameprefix "Illusionary"
 #fatiguepersquare 2
-#minfinalaoe 7
+#minfinalaoe 8
+
+#scalingaoelimit 2.5
 
 
-#nextspell "Mirrorimage Secondary mrne"
+#nextspell "Mirrorimage Secondary mrn"
 
 #descr "This spell may also create false displaced images of those it affects."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain mirror images."
+#details "Affected creatures make an MR check. Those that fail to resist gain mirror images."
+
+#end
+
+#newsecondary "Mirrorimage Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 2
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 16777216
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Illusory"
+#fatiguepersquare 4
+#minfinalaoe 4
+
+#scalingaoelimit 2.0
+
+
+#nextspell "Mirrorimage Secondary mrnh"
+
+#descr "This spell may also create false displaced images of those it affects."
+#details "Affected creatures make a hard MR check. Those that fail to resist gain mirror images."
 #end

@@ -31,10 +31,10 @@
 
 #end
 
-#neweffect "Mirrorimage Secondary mrne"
+#neweffect "Mirrorimage Secondary mrnh"
 #effect 23
 #damage 16777216
-#spec 29376512
+#spec 17592198643712
 #schools -1
 
 -- evo-like, battlefield allowed, scale aoe

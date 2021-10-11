@@ -19,7 +19,7 @@
 #paths 106
 #secondarypaths 0
 #secondarypathchance 0
-#skipchance 80
+#skipchance 60
 #spelltype 4
 
 #name 8 "Construct Palisades"
@@ -45,7 +45,6 @@
 #pathlevel 4
 #fatiguecost 4000
 #schools 8
-#nogeodst 2052
 #onlyfriendlydst 1
 
 -- air
@@ -55,7 +54,7 @@
 #paths 106
 #secondarypaths 0
 #secondarypathchance 0
-#skipchance 80
+#skipchance 60
 
 #name 8 "Construct Fortress"
 #descr 8 "The caster magically and rapidly constructs a fortress from stone in the targeted province."
@@ -80,7 +79,6 @@
 #pathlevel 4
 #fatiguecost 4500
 #schools 8
-#nogeodst 2052
 #onlyfriendlydst 1
 
 -- air
@@ -90,7 +88,7 @@
 #paths 106
 #secondarypaths 0
 #secondarypathchance 0
-#skipchance 80
+#skipchance 60
 
 #name 8 "Construct Castle"
 #descr 8 "The caster magically and rapidly constructs a castle from stone in the targeted province."
@@ -115,7 +113,6 @@
 #pathlevel 5
 #fatiguecost 6000
 #schools 8
-#nogeodst 2052
 #onlyfriendlydst 1
 
 -- air
@@ -125,7 +122,7 @@
 #paths 106
 #secondarypaths 0
 #secondarypathchance 0
-#skipchance 80
+#skipchance 60
 
 #name 8 "Construct Citadel"
 #descr 8 "The caster magically and rapidly constructs a citadel from stone in the targeted province."
@@ -160,7 +157,7 @@
 #paths 106
 #secondarypaths 0
 #secondarypathchance 0
-#skipchance 80
+#skipchance 60
 
 #name 8 "Construct Grand Citadel"
 #descr 8 "The caster magically and rapidly constructs a grand citadel from stone in the targeted province."
@@ -207,38 +204,6 @@
 #spelltype 4
 #end
 
-
-#neweffect "Remote Fortress UW"
-#effect 10063
-#provrange 4
-#damage 6
-#spec 8388608
-#power 5
-#maxpower 5
-#nreff 1
-#pathlevel 4
-#fatiguecost 4000
-#schools 8
-#onlygeodst 2052
-#onlyfriendlydst 1
-
--- earth
--- death
--- nature
-#paths 104
-#secondarypaths 0
-#secondarypathchance 0
-#skipchance 80
-
-#name 8 "Construct Fortress"
-#descr 8 "The caster magically and rapidly constructs a fortress in the targeted province."
-#name 64 "Animal Fortress Construction"
-#descr 64 "The caster directs thousands of local animals to rapidly construct a fortification from stone in the targeted province. The resulting fortress is a serviceable defensive structure. The animals are free to return to their usual activities once the structure is complete."
-#name 32 "Undead Fortress Construction"
-#descr 32 "The caster animates many dead creatures to rapidly construct a fortification from stone in the targeted province. The resulting fortress is a serviceable defensive structure. The undead return to their original dead state once the structure is complete."
-#details "The generated fortress has the following attributes:\n\nAdministration: 30\nCommander point bonus: 1\nRecruitment point bonus:75%\nSupplies: 500\nWall integrity: 250"
-#spelltype 4
-#end
 
 
 

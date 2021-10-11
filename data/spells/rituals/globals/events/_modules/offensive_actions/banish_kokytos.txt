@@ -21,5 +21,5 @@
 
 #req_targgod 0
 #banished -13
-#msg "One of your commanders has slipped into Kokytos!"
+#msg "##fulltargname## has slipped into Kokytos!"
 #nolog

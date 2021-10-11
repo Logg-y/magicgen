@@ -4,36 +4,6 @@
 #spelltype 1
 
 #paths 4
-#power -1
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 2680059592704
-#req effect != 15	    -- returning
-
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Waterform"
-#fatiguepersquare 4
-#minfinalaoe 3
-
-
-#nextspell "Liquidbody Secondary mrn"
-
-#descr "This spell may also transform the bodies of those it affects into a liquid substance, making them more difficult to harm."
-#details "Affected creatures make an MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
-
-#end
-
-#newsecondary "Liquidbody Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 4
 #power 0
 
 -- various damage types
@@ -46,12 +16,46 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Aqueous"
+#nameprefix "Waterform"
 #fatiguepersquare 2
-#minfinalaoe 7
+#minfinalaoe 10
+
+#scalingaoelimit 2.5
 
 
-#nextspell "Liquidbody Secondary mrne"
+#nextspell "Liquidbody Secondary mrn"
+
+#descr "This spell may also transform the bodies of those it affects into a liquid substance, making them more difficult to harm."
+#details "Affected creatures make an MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+
+#end
+
+#newsecondary "Liquidbody Secondary mrnh"
+
+-- buff only
+#spelltype 1
+
+#paths 4
+#power -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 2680059592704
+#req effect != 15	    -- returning
+
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Aqueous"
+#fatiguepersquare 4
+#minfinalaoe 5
+
+#scalingaoelimit 2.0
+
+
+#nextspell "Liquidbody Secondary mrnh"
 
 #descr "This spell may also transform the bodies of those it affects into a liquid substance, making them more difficult to harm."
 #details "Affected creatures make an easy MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."

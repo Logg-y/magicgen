@@ -18,6 +18,7 @@
 #nameprefix "Safeguarding"
 #fatiguepersquare 4
 #minfinalaoe 5
+#scalingaoelimit 1.5
 
 
 #nextspell "Astralshield Secondary mrn"
@@ -47,6 +48,7 @@
 #nameprefix "Screening"
 #fatiguepersquare 0
 #minfinalaoe 12
+#scalingaoelimit 2.0
 
 
 #nextspell "Astralshield Secondary mrne"
@@ -75,6 +77,7 @@
 #nameprefix "Screening"
 #fatiguepersquare 8
 #minfinalaoe 1
+#scalingaoelimit 1.2
 
 
 #nextspell "Astralshield Secondary mrnh"

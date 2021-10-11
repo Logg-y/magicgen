@@ -10,12 +10,12 @@
 #spelltype 41
 --#pathperresearch 0.3
 
-#scalerate 3
+#scalerate 2
 
 #aoe 0
-#power 3
-#maxpower 7
-#pathlevel 2
+#power 2
+#maxpower 6
+#pathlevel 1
 #explspr 10002
 #sound 52
 #fatiguecost 10
@@ -138,4 +138,5 @@
 
 
 #end
+
 

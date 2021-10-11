@@ -558,6 +558,9 @@ These function the same as they do when used in modifiers.
 \#offensiveeffect 1
  * If set, this modifier will only apply to spells whose scaling AoE is calculated as less than `3*((L(L+1))/2)` where L is the research level of the spell. This is to stop mass rust getting stronger secondary effects than its primary is!
  
+\#scalingaoelimit 1.0
+ * If set, this modifier will only apply to spells whose scaling AoE is calculated as less than `X*((L(L+1))/2)` where L is the research level of the spell. This is to limit the effectiveness of secondary effects at lower research levels. Useful values: 2.5: battlefield at RL6+, 2.0: battlefield at RL7+, 1.5: battlefield at RL8+, 1.2: battlefield at RL9
+ 
 \#ondamage 1
  * If set, the nextspell conferred by this secondary effect will be set to be on damage. This also makes the secondary effect not allowed on spells that already have an ondamage effect.
  

@@ -1,4 +1,4 @@
-#newsecondary "Stun nondamaging mrne"
+#newsecondary "Stun nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -26,8 +26,10 @@
 
 #req effect != 128
 
+#scalingaoelimit 2.0
 
-#nextspell "Stun Secondary mrne"
+
+#nextspell "Stun Secondary mrnh"
 
 #descr "This spell is imbued with strange energy that may stun those affected."
 
@@ -39,7 +41,7 @@
 #spelltype 2
 
 #paths 64
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -58,7 +60,8 @@
 #req effect != 128
 
 #nameprefix "Stunning"
-#fatiguepersquare 7
+#fatiguepersquare 2.5
+#scalingaoelimit 2.5
 
 
 #nextspell "Stun Secondary mrn"
@@ -68,7 +71,7 @@
 #end
 
 
-#newsecondary "Stun damaging mrne"
+#newsecondary "Stun damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -100,7 +103,7 @@
 #nameprefix "Dazing"
 #fatiguepersquare 3
 
-#nextspell "Stun Secondary mrne damaging"
+#nextspell "Stun Secondary mrnh damaging"
 
 #descr "This spell is imbued with strange energy that may stun those this spell wounds."
 
@@ -112,7 +115,7 @@
 #spelltype 2
 
 #paths 64
-#power -2
+#power 0
 
 -- various damage types
 #reqdamagingeffect 1
@@ -136,7 +139,7 @@
 #ondamage 1
 
 #nameprefix "Stunning"
-#fatiguepersquare 6
+#fatiguepersquare 1.5
 
 #nextspell "Stun Secondary mrn damaging"
 

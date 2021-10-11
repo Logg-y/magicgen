@@ -4,8 +4,6 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
-Holy spells
-
 v3.0.0
 
 ADDITIONS

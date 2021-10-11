@@ -1,4 +1,4 @@
-#newsecondary "Confusion nondamaging mrne"
+#newsecondary "Confusion nondamaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -28,15 +28,17 @@
 -- not demons/undead only
 #req spec !& 8
 
-#nextspell "Minor Confusion mrne"
+#scalingaoelimit 1.2
+
+#nextspell "Minor Confusion mrnh"
 
 #nameprefix "Confusing"
-#fatiguepersquare 5
+#fatiguepersquare 10
 
 #aispellmod 20
 
 #descr "Those affected by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Affected creatures make an easy MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+#details "Affected creatures make a hard MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
 
@@ -46,7 +48,7 @@
 #spelltype 2
 
 #paths 16
-#power -3
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -58,6 +60,7 @@
 #req effect != 54	    -- polymorph
 #req effect != 72	    -- stream of life
 
+#scalingaoelimit 1.5
 
 #offensiveeffect 1
 
@@ -73,7 +76,7 @@
 #nextspell "Minor Confusion mrn"
 
 #nameprefix "Bewildering"
-#fatiguepersquare 7
+#fatiguepersquare 5
 
 #aispellmod 40
 
@@ -89,7 +92,7 @@
 #spelltype 2
 
 #paths 16
-#power -2
+#power 0
 
 #pathlevel 1
 
@@ -117,7 +120,7 @@
 #ondamage 1
 
 #nameprefix "Confusing"
-#fatiguepersquare 5
+#fatiguepersquare 3
 
 #req nonscalingdamage < 40
 
@@ -130,7 +133,7 @@
 
 #end
 
-#newsecondary "Confusion damaging mrne"
+#newsecondary "Confusion damaging mrnh"
 
 -- evo only
 #spelltype 2
@@ -168,38 +171,12 @@
 #aispellmod 30
 
 #nameprefix "Bewildering"
-#fatiguepersquare 3
+#fatiguepersquare 6
 
-#nextspell "Minor Confusion mrne damaging"
+#nextspell "Minor Confusion mrnh damaging"
 
 #descr "Those wounded by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Wounded creatures make an MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
-
-#end
-
-
-#newsecondary "Confusion for Banishment only"
-
--- evo only
-#spelltype 2
-
-#paths 32
-#power 0
-
--- various damage types
-#req nonscalingdamage < 15
-
-#req paths == 256
--- holy okay
-
--- not ritual
-#req spelltype !& 4
-#req damage != 17179869184
-
-
-#nextspell "Minor Confusion mrn damaging"
-
-#descr "The holy power unleashed alters the behaviour of the undead, sometimes causing them to act erratically."
+#details "Wounded creatures make a hard MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
 

@@ -4,7 +4,7 @@
 #spelltype 1
 
 #paths 16
-#power -1
+#power 0
 
 -- various damage types
 #reqdamagingeffect 0
@@ -17,8 +17,10 @@
 #req spelltype !& 4
 
 #nameprefix "Averting"
-#fatiguepersquare 4
-#minfinalaoe 1
+#fatiguepersquare 2
+#minfinalaoe 10
+
+#scalingaoelimit 2.5
 
 
 #nextspell "Twistfate Secondary mrn"
@@ -28,7 +30,7 @@
 
 #end
 
-#newsecondary "Twistfate Secondary mrne"
+#newsecondary "Twistfate Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -47,12 +49,14 @@
 #req spelltype !& 4
 
 #nameprefix "Preventative"
-#fatiguepersquare 2
+#fatiguepersquare 4
 #minfinalaoe 5
 
+#scalingaoelimit 2.0
 
-#nextspell "Twistfate Secondary mrne"
+
+#nextspell "Twistfate Secondary mrnh"
 
 #descr "This spell may also magically protect those it affects from a single attack."
-#details "Those affected by this spell that fail an easy MR check gain twist fate, preventing the first instance of damage."
+#details "Those affected by this spell that fail a hard MR check gain twist fate, preventing the first instance of damage."
 #end

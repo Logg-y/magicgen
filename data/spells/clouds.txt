@@ -2,8 +2,8 @@
 #effect 3007
 #damage 1
 #spec 8396928
-#aoe 1004
-#power 5
+#aoe 1000
+#power 3
 #precision -1
 #range 5015
 #fatiguecost 30
@@ -20,9 +20,9 @@
 
 #spelltype 34
 
-#scalerate 1
+#scalerate 1.4
 -- #scalecost 2.0
-#pathlevel 3
+#pathlevel 2
 #schools 4
 
 #priority 1
@@ -34,8 +34,8 @@
 #effect 3002
 #damage 1005
 #spec 96
-#aoe 1004
-#power 4
+#aoe 1002
+#power 2
 #precision -1
 #range 5015
 #fatiguecost 30
@@ -54,19 +54,20 @@
 
 #scalerate 1
 -- #scalecost 1.7
-#pathlevel 3
+#pathlevel 2
 #schools 4
 
 #priority 1
 #namecond effect > 4000 1 "Extended NAMEPREFIX $flame$ cloud"
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "Freezing Cloud"
 #effect 4002
 #damage 1
 #spec 640
-#aoe 1003
-#power 4
+#aoe 1001
+#power 3
 #precision -1
 #range 5015
 #fatiguecost 30
@@ -91,6 +92,39 @@
 
 #priority 1
 #namecond effect > 5000 4 "Extended NAMEPREFIX $freezing$ $mist$"
+#end
+
+
+#neweffect "Flame Cloud AN"
+#effect 4002
+#damage 1
+#spec 160
+#aoe 1001
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10203
+#sound 42
+
+#aispellmod 200
+
+#paths 1
+#secondarypaths 2
+
+#name 1 "NAMEPREFIX Scalding $mist$"
+#descr 1 "Creates a cloud of extremely hot air. Entering the cloud will burn victims in any exposed areas, such as in the eyes or inside their lungs."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+
+#priority 1
+#namecond effect > 5000 1 "Extended NAMEPREFIX scalding $mist$"
 #end
 
 
@@ -125,3 +159,37 @@
 #namecond effect > 5000 32 "Extended NAMEPREFIX $mist$ of Death"
 
 #end
+
+
+#neweffect "Shock Cloud"
+#effect 4109
+#damage 1
+#spec 2048+128
+#aoe 1001
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10048
+#sound 42
+
+#aispellmod 100
+
+#paths a
+#secondarypaths a
+
+#name a "NAMEPREFIX static cloud"
+#descr a "The caster charges the air with static electricity. Creatures within it will be rapidly jolted by electrical discharges."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+#priority 1
+#namecond effect > 5000 a "Extended NAMEPREFIX static cloud"
+#end
+
+

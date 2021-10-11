@@ -1,3 +1,6 @@
+-- THIS IS VERY IMPORTANT
+-- do not EVER delete it without fixing all the code references to this explicitly, as it is the "null" secondary effect
+
 #newsecondary "Do Nothing"
 #skipchance 0
 #end

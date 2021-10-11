@@ -4,7 +4,7 @@
 #spelltype 1
 
 #paths 16
-#power -3
+#power -1
 
 -- various damage types
 #reqdamagingeffect 0
@@ -17,7 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Ethereal"
-#fatiguepersquare 12
+#fatiguepersquare 6
+#minfinalaoe 5
+#scalingaoelimit 2.0
 
 
 #nextspell "Ethereal Secondary mrn"
@@ -26,7 +28,7 @@
 
 #end
 
-#newsecondary "Ethereal Secondary mrne"
+#newsecondary "Ethereal Secondary mrnh"
 
 -- buff only
 #spelltype 1
@@ -45,11 +47,12 @@
 #req spelltype !& 4
 
 #nameprefix "Incorporeal"
-#fatiguepersquare 6
-#minfinalaoe 5
+#fatiguepersquare 12
+#minfinalaoe 2
+#scalingaoelimit 1.2
 
 
-#nextspell "Ethereal Secondary mrne"
+#nextspell "Ethereal Secondary mrnh"
 
 #descr "This spell may also make those it affects ethereal."
 

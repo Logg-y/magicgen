@@ -1,7 +1,7 @@
-#neweffect "Stealstrength Secondary mrne"
+#neweffect "Stealstrength Secondary mrnh"
 #effect 67
 #damage 4
-#spec 25182336
+#spec 17592194449536
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -64,10 +64,10 @@
 
 #end
 
-#neweffect "Stealstrength Secondary mrne damaging"
+#neweffect "Stealstrength Secondary mrnh damaging"
 #effect 67
 #damage 4
-#spec 25182336
+#spec 17592194449536
 #schools -1
 #paths -1
 -- evo, scale aoe

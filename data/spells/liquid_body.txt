@@ -5,14 +5,14 @@
 #schools 2
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 33
 
-#scalerate 2.6
+#scalerate 1.6
 
 
 #aoe 0
-#power 4
-#maxpower 7
+#power 0
+#maxpower 5
 #pathlevel 1
 #explspr 10023
 #sound 31
@@ -39,6 +39,7 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of liquidity"
 
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "Liquid Body battlefield"
@@ -54,8 +55,8 @@
 
 
 #aoe 666
-#power 8
-#maxpower 8
+#power 6
+#maxpower 6
 #pathlevel 4
 #explspr 10023
 #sound 31
@@ -84,4 +85,6 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of liquidity"
 
 #end
+
+
 

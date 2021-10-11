@@ -34,10 +34,10 @@
 
 #end
 
-#neweffect "Rust Secondary mrne"
+#neweffect "Rust Secondary mrnh"
 #effect 11
 #damage 2199023255552
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1
@@ -107,10 +107,10 @@
 
 #end
 
-#neweffect "Rust Secondary mrne damaging"
+#neweffect "Rust Secondary mrnh damaging"
 #effect 11
 #damage 2199023255552
-#spec 16793600
+#spec 17592186060800
 
 #schools -1
 #paths -1

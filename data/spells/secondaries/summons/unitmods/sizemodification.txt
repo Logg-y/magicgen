@@ -81,9 +81,9 @@
 #mapmove -2
 #req mapmove > 2
 #size -1
-#nameprefix "Small"
-#descr "This particular CREATURE is somewhat smaller than normal."
-#graphicsize -43
+#nameprefix "Shrunken"
+#descr "This particular CREATURE is slightly smaller than normal."
+#graphicsize -33
 #end
 
 #newunitmod "Summon Shrink 2"
@@ -98,7 +98,41 @@
 #mapmove -4
 #req mapmove > 4
 #size -2
-#nameprefix "Diminutive"
+#nameprefix "Small"
+#graphicsize -50
+#descr "This particular CREATURE is smaller than normal."
+#end
+
+#newunitmod "Summon Shrink 3"
+#req size > 3
+#req woundedshape == -1
+
+#mult hp 0.269
+#req hp > 6
+#str -11
+#req str > 11
+#def 3
+#mapmove -4
+#req mapmove > 6
+#size -3
+#nameprefix "Tiny"
 #graphicsize -60
 #descr "This particular CREATURE is much smaller than normal."
+#end
+
+#newunitmod "Summon Shrink 4"
+#req size > 4
+#req woundedshape == -1
+
+#mult hp 0.15
+#req hp > 10
+#str -14
+#req str > 14
+#def 4
+#mapmove -6
+#req mapmove > 6
+#size -4
+#nameprefix "Diminutive"
+#graphicsize -68
+#descr "This particular CREATURE is extremely tiny."
 #end

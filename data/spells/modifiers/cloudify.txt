@@ -37,6 +37,10 @@
 #req effect != 32
 #req effect != 33
 #req effect != 56
+
+-- encase in ice cloud gets pretty problematic in terms of no save tarpit potential
+#req effect < 600
+
 #req range > 0
 
 -- enslave and charm effects can crash the game in clouds

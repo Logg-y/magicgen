@@ -34,10 +34,10 @@
 
 #end
 
-#neweffect "Slow Secondary mrne"
+#neweffect "Slow Secondary mrnh"
 #effect 11
 #damage 68719476736
-#spec 25165824
+#spec 17592194433024
 
 #schools -1
 #paths -1
@@ -106,10 +106,10 @@
 
 #end
 
-#neweffect "Slow Secondary mrne damaging"
+#neweffect "Slow Secondary mrnh damaging"
 #effect 11
 #damage 68719476736
-#spec 25165824
+#spec 17592194433024
 
 #schools -1
 #paths -1

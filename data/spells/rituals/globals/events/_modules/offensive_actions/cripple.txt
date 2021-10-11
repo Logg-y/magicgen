@@ -20,5 +20,5 @@
 
 #req_targgod 0
 #gainaff 16777216
-#msg "One of your commanders has tripped over, suffering extreme injuries! They have become crippled."
+#msg "##fulltargname## has tripped over, suffering extreme injuries! They have become crippled."
 #nolog

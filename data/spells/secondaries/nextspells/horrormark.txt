@@ -1,7 +1,7 @@
-#neweffect "Horror Mark Secondary mrne"
+#neweffect "Horror Mark Secondary mrnh"
 #effect 600
 #damage 261
-#spec 25165952
+#spec 17592194433152
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -64,10 +64,10 @@
 
 #end
 
-#neweffect "Horror Mark Secondary mrne damaging"
+#neweffect "Horror Mark Secondary mrnh damaging"
 #effect 600
 #damage 261
-#spec 25165952
+#spec 17592194433152
 #schools -1
 #paths -1
 -- evo, scale aoe

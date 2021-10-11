@@ -20,5 +20,5 @@
 
 #req_targgod 0
 #gainaff 262144
-#msg "One of your commanders has tripped over and injured themselves! They are left with a limp."
+#msg "##fulltargname## has tripped over and injured themselves! They are left with a limp."
 #nolog
