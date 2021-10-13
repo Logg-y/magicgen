@@ -7,7 +7,7 @@
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 3
+#pathlevel 4
 #chassisvalue 90
 #range 6
 #fatiguecost 199
@@ -27,10 +27,11 @@
 #descr 32 "The caster summons ARTICLE %Ether Lord% to join him in battle. The %Ether Lord% will leave once the battle is over."
 #descr 16 "The caster summons ARTICLE %Ether Lord% to join him in battle. The %Ether Lord% will leave once the battle is over."
 
-#scalefatiguemult 40
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.8
 #end
 
 #neweffect "Summon Ether Lord"
@@ -64,3 +65,4 @@
 
 #scalerate 1
 #end
+

@@ -4,6 +4,73 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+v3.1.0
+
+Fixed secondary effects not correctly applying to commanders after the previous changes to research level increments. Hopefully invisible sages will generate now.
+Reduced odds of most human mage ritual summons to account for this, as with this fixed they really dominated conjuration.
+Commander corpse eater increased from 2 corpses/turn to 5.
+Size affecting summon modifiers now partially respect a commander's magic paths with pricing. Titan sized versions of human mages used to cost about +10 gems, they are now more expensive based on the path depth of the mage.
+The extra range modifier now only applies to spells with 10+ precision.
+Improved precision now only applies to spells with -5+ precision.
+Wish for strength permanent bonus research level reduced from 7 to 4, gem cost reduced from 10 to 5
+All plane returning permanent bonus cost reduced from 8 to 3.
+Increased the damage of fire and cold projectile evocation from 9++ to 12++.
+Increased the damage of fire and cold instant evocation from 6++ to 16++.
+Fireball fatigue is now aoe 5, from aoe 1.
+Added an analogous cold fatigue effect to cold projectile evos.
+Cold evocations are no longer available to death.
+Banefire projectile decay aoe increased from 1 to 5.
+Many permanent effects can now be targeted at other commanders.
+Added new permanent effects: blood surge, cold weapons, fateweaving, death weapons, withering weapons, fire shield, astral shield, sleep aura, reforming, protective force, awe, acid shield, slimer, banefire shield, thunder weapons, poison weapons, vine shield effect.
+Enlarged creatures now gain a morale bonus, because they should feel big and unstoppable compared to their smaller cousins.
+Natural protection boosting spells now also confer one kind of physical resistance. This will allow the casting AI to know roughly what to do with them, instead of refusing to cast them.
+Alchemy spells now get dynamic scaling rather than always being +1 gold per extra level.
+Rage weapons are no longer a valid modifier for assassination settings.
+Altered summoning casting AI modifier to include the base fatigue of the effect in question.
+The version of phoenix pyre that was intended to be only applied to others (was ainocast) can no longer generate a caster-only version.
+Formation fighter is no longer applied to commanders.
+Removed soul vortex as a buff secondary effect due to friendly fire concerns.
+Remote summon yellow text will no longer state 0 per additional caster level if there is no scaling.
+Added development utility - it will show scaling for most kinds of spell effects (but not those which rely on events or sites)
+Battle spells from effects that did not cost a gem now get a power increase if they generate a form that costs a gem.
+Added a fire spell that melts the earth and tries to trap victims in rock.
+Added a MRN overloading effect that badly shocks the target and spawns chain lightning when it deals damage.
+Added a 1 capped damage shock version of flying shards and fire flies.
+Flying shards and fire flies no longer gain increased path level requirements.
+Fixed a bug that would cause generation to lock up indefinitely.
+Cloud versions of enslave and charm no longer generate as these could crash the game.
+AoE1 communion master/conservative slave pair research 4 from 6.
+Hopefully fixed national spells getting secondary paths that the nation doesn’t have
+Numerous internal changes, many aimed at making writing data files easier.
+Possible fix for reading .dm files containing accented characters on non-English operating systems.
+Optimisations to spell generation, mostly around the creation of creature pools and checking of secondary effects, of which there are now a lot more. All in all, spell generation runs around 40% faster than before.
+Buff spells are no longer penalised as much (increased research level) by faster casting modifiers.
+All spells are no longer penalised as much for lower path modifiers.
+Significantly improved armour breaking effects. The greater effect (that can destroy items) now offers a MR check, but comes at much lower levels and does not require gems.
+Blood reinvigoration now always generates in some form.
+Sabbaths are now much more likely to generate.
+Thunderclap is now better (less fatigue, lower path requirement, lower research requirement)
+Instant rain of stones/hailstones now create a large number of inaccurate effects instead of having area effect. This means that shields now work and they are indeed more likely to hit the head.
+Added banefire cloud.
+Added rain of banefire.
+Added a big lightning spell that has high inaccuracy like the rain of X spells.
+Added Underworld Geyser.
+Pillar of Fire, Thunder Strike, Poison Burst, and Astral Geyser no longer scale the AoE of their secondary effect. Instead, they lose accuracy, produce more primary effects and start costing gems.
+Added many new variations for cloud visual effects.
+Reduced the AI scores for battlesummons.
+Increased the effectiveness of most incapacitating/ailment/debuff effects at higher research levels, where they would tend to come with prohibitive path and gem requirements. Lower levels are more or less unchanged.
+Slight internal refactoring.
+Summons with extra auras that can harm allies are no longer cast offscript.
+Transformation globals can no longer affect undead or inanimate commanders.
+Disabled horror seed effects due to the serious bug that could cause battle reports and replays to not be available to players. If/when this is fixed these can be returned.
+Fix for new dragons getting the wrong breath when altered by an effect that gave them additional weapons.
+Increased the power of nearly all combat spell secondary effects.
+Encase in ice no longer generates in cloud form
+Corpse eater now scales in magnitude based on the size of the chassis
+Fixed error when trying to visit advanced options page 0
+Secondary effects that reduce fatigue cost (for instance, summons becoming smaller) can no longer remove a spell’s gem cost. They will however increase the AoE/number of effects of the spell proportionally.
+
+
 v3.0.0
 
 ADDITIONS

@@ -3,14 +3,14 @@
 #effect 21
 #damage 1978
 #spec 0
-#power 6
+#power 5
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 50
 #range 6
-#fatiguecost 150
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 16
@@ -27,10 +27,11 @@
 #descr 32 "The caster summons ARTICLE %Dust Priest% to join him in battle. The %Dust Priest% will leave once the battle is over."
 #descr 8 "The caster summons ARTICLE %Dust Priest% to join him in battle. The %Dust Priest% will leave once the battle is over."
 
-#scalefatiguemult 35
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Dust Priest"
@@ -64,4 +65,5 @@
 
 #scalerate 1
 #end
+
 

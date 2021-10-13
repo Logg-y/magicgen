@@ -3,11 +3,11 @@
 #effect 21
 #damage 580
 #spec 8388608
-#power 7
+#power 5
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 4
+#pathlevel 3
 #chassisvalue 40
 #range 6
 #fatiguecost 120
@@ -23,10 +23,11 @@
 #name 4 "Summon NAMEPREFIX Sea %King%"
 #descr 4 "The caster summons ARTICLE %Sea King% to fight for him on the battlefield. The %Sea King% is a large sea troll that is skilled in water magic, but will leave once the battle is over."
 
-#scalefatiguemult 50
+#scalefatiguemult 25
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Sea King"
@@ -57,3 +58,4 @@
 
 #scalerate 1
 #end
+

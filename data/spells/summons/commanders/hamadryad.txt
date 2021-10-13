@@ -24,10 +24,11 @@
 #name 64 "Call NAMEPREFIX %Hamadryad%"
 #descr 64 "The caster summons ARTICLE %Hamadryad% onto the battlefield and uses magic to convince PRONOUN to fight for him. Hamadryads are immobile nature mages, but they will leave after the battle."
 
-#scalefatiguemult 60
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.8
 #end
 
 #neweffect "Summon Hamadryad"

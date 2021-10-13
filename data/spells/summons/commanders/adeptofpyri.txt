@@ -34,6 +34,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Adept of Pyriphlegeton"
@@ -70,4 +71,5 @@
 
 #scalerate 1
 #end
+
 

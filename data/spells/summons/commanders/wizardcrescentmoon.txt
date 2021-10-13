@@ -6,7 +6,7 @@
 #power 4
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 25
 #range 6
@@ -33,6 +33,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Wizard of the Crescent Moon"
@@ -69,4 +70,5 @@
 
 #scalerate 1
 #end
+
 

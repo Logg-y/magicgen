@@ -7,7 +7,7 @@
 #maxpower 14
 #precision -100
 #nreff 2
-#pathlevel 3
+#pathlevel 2
 #chassisvalue 25
 #range 6
 #fatiguecost 100
@@ -34,6 +34,8 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Necromancer"
@@ -70,4 +72,5 @@
 
 #scalerate 1
 #end
+
 

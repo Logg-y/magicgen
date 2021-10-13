@@ -6,7 +6,7 @@
 #power 4
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 4
 #chassisvalue 40
 #range 6
@@ -24,10 +24,11 @@
 #name 32 "Call NAMEPREFIX Spectral %Mage%"
 #descr 32 "The death mage summons ARTICLE Spectral %Mage% to join him in battle. The Spectral %Mage% will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 20
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Spectral Mage"
@@ -59,4 +60,5 @@
 
 #scalerate 1
 #end
+
 

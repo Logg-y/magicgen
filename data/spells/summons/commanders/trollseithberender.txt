@@ -3,7 +3,7 @@
 #effect 21
 #damage 2221
 #spec 0
-#power 7
+#power 6
 #maxpower 14
 #precision -100
 #nreff 1
@@ -31,6 +31,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Troll Seithberender"
@@ -65,3 +66,5 @@
 
 #scalerate 1
 #end
+
+

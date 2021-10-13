@@ -7,7 +7,7 @@
 #maxpower 14
 #precision -100
 #nreff 1
-#pathlevel 3
+#pathlevel 4
 #chassisvalue 60
 #range 6
 #fatiguecost 180
@@ -26,10 +26,11 @@
 #descr 2 "The caster summons ARTICLE %Faery Queen% to join him in battle. The %Faery Queen% will leave once the battle is over."
 #descr 64 "The caster summons ARTICLE %Faery Queen% to join him in battle. The %Faery Queen% will leave once the battle is over."
 
-#scalefatiguemult 35
+#scalefatiguemult 30.0
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.8
 #end
 
 #neweffect "Summon Faery Queen"
@@ -62,4 +63,5 @@
 
 #scalerate 1
 #end
+
 

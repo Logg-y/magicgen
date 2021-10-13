@@ -7,7 +7,7 @@ class debugkeys:
     CONDITIONTESTING = False
 
     # Writes the number of effects of summon spells in their name
-    SUMMONSPELLNREFFDISPLAY = True
+    SUMMONSPELLNREFFDISPLAY = False
 
     # Used for debugging #minfinalfatiguecost and #maxfinalfatiguecost
-    FATIGUECOSTCONSTRAINTS = True
+    FATIGUECOSTCONSTRAINTS = False

@@ -27,6 +27,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -2
 #end
 
 #neweffect "Summon Cyclops"
@@ -57,4 +58,5 @@
 
 #scalerate 1
 #end
+
 

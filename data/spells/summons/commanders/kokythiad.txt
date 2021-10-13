@@ -27,10 +27,11 @@
 #descr 4 "The caster summons ARTICLE %Kokythiad% to join him in battle. The %Kokythiad% will leave once the battle is over."
 #descr 32 "The caster summons ARTICLE %Kokythiad% to join him in battle. The %Kokythiad% will leave once the battle is over."
 
-#scalefatiguemult 50
+#scalefatiguemult 30
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Kokythiad"
@@ -63,4 +64,5 @@
 
 #scalerate 1
 #end
+
 

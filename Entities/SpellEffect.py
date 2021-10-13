@@ -695,6 +695,8 @@ class SpellEffect(object):
             print(f"secondary: Set spell {attrib} to {val}")
             setattr(s, attrib, val)
 
+        costedAGemBeforeSecondary = s.fatiguecost >= 100
+
         for attrib, val in secondary.multcommands:
             # Commanders should not get the full mult for these
             if attrib == "fatiguecost" and self.chassisvalue is not None:
@@ -766,6 +768,11 @@ class SpellEffect(object):
                     s.multiplyAISpellMod(1 + (getattr(secondary, param)/100))
                 else:
                     setattr(s, param, getattr(s, param) + getattr(secondary, param))
+
+        # Things that costed a gem before the secondary applied should still cost gems after, scale params appropriately
+        if costedAGemBeforeSecondary and s.fatiguecost < 100:
+            print("Spell is now too cheap, before the secondary it cost a gem and now it doesn't")
+            self.scaleSpellEffectsToFatigue(s, 100)
 
         prev = s
         next = s.nextspell
@@ -926,6 +933,11 @@ class SpellEffect(object):
         if s.effect > 1000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
             s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
             s.details = s.details.strip()
+
+        if s.ainocast > 0 and s.effect < 10000:
+            s.details += " This spell will not be cast unless scripted."
+            s.details = s.details.strip()
+            
 
         s.details = s.details.strip() + "\n" + mod.details
         s.details = s.details.strip() + "\n" + secondary.details
@@ -1231,7 +1243,7 @@ class SpellEffect(object):
         # Certain effects should always have gem costs for safety reasons
         # These are: reinvigoration, summon commander
         if s.effect > 10000 and s.fatiguecost < 100 and self.fatiguecost >= 100:
-            print(f"Increase gem cost of ritaul from {s.fatiguecost} to 100 so it costs a gem")
+            print(f"Increase gem cost of ritual from {s.fatiguecost} to 100 so it costs a gem")
             s.fatiguecost = 100
         if s.effect == 8 and self.fatiguecost >= 100:  # reinvigoration
             fatiguedifference = 100 - s.fatiguecost
@@ -1283,72 +1295,125 @@ class SpellEffect(object):
         elif realaoe == 662: # 5% of field
             spell.multiplyAISpellMod(0.05)
 
+    def scaleSpellEffectsToFatigue(self, s, desiredfatigue):
+        flatnumeffects = s.nreff % 1000
+        scalenumeffects = s.nreff // 1000
+        realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
+        realaoe = s.aoe % 1000 + (s.path1level * (s.aoe // 1000))
 
 
+        if s.fatiguecost > desiredfatigue:
+            print(f"Spell is overcosted! Fatigue is {s.fatiguecost} but path level is {s.path1level}")
+            reductionfactor = desiredfatigue / s.fatiguecost
+            for attri in ["nreff", "aoe"]:
+                print(f"Adjusting attrib: {attri}")
+                if s.fatiguecost <= desiredfatigue:
+                    break
+                reductionfactor = desiredfatigue / s.fatiguecost
+                if attri == "nreff":
+                    attribvalue = realnumeffects
+                else:
+                    attribvalue = realaoe
+                    if 600 < realaoe < 700:
+                        print(f"Skip trying to scale AoE, this is x% of battlefield!")
+                        continue
+                if attribvalue > 1:
+                    desirednumeffects = max(1, int(round(attribvalue * reductionfactor)))
+                    numeffectstolose = attribvalue - desirednumeffects
+                    # Take from scaling first
+                    while 1:
+                        # can't reduce scaling if it would drop below the number to lose
+                        if numeffectstolose < s.path1level:
+                            print(
+                                f"Effects to lose: {numeffectstolose}, less than path level of {s.path1level}, exit scaling changes")
+                            break
+                        # don't reduce scaling below 1 if it doesn't exist
+                        if (getattr(s, attri) // 1000) <= 1:
+                            break
+                        if numeffectstolose <= 0:
+                            break
+                        setattr(s, attri, getattr(s, attri) - 1000)
+                        numeffectstolose -= s.path1level
+                        print(
+                            f"Effects to lose: {numeffectstolose}, drop 1 scaling and {s.path1level} effects, spell attri is {getattr(s, attri)}")
 
+                    while 1:
+                        # Don't reduce the flat number of effects below 0
+                        if (getattr(s, attri) % 1000) == 0:
+                            break
+                        if numeffectstolose <= 0:
+                            break
+                        setattr(s, attri, getattr(s, attri) - 1)
+                        numeffectstolose -= 1
+                        print(f"{numeffectstolose} remaining to lose, spell attri is {getattr(s, attri)}")
+
+                    s.comments.append(f"Reduced attribute {attri} from {attribvalue} to fit cost "
+                                      f"reduction scale of {reductionfactor}")
+
+            reductionfactor = desiredfatigue / s.fatiguecost
+            if reductionfactor > 1.0:
+                s.comments.append(f"Alter cast time by {reductionfactor} to make up remaining reductionfactor")
+                s.casttime = math.floor(min(999, (s.casttime * reductionfactor)))
+
+            s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
+            s.fatiguecost = min(s.fatiguecost, desiredfatigue)
+        else:
+            print(f"Spell is undercosted! Fatigue is {s.fatiguecost} but desired min is {desiredfatigue}")
+            increasefactor = desiredfatigue/s.fatiguecost
+            for attri in ["nreff", "aoe"]:
+                print(f"Adjusting attrib: {attri}")
+                if s.fatiguecost >= desiredfatigue:
+                    break
+                increasefactor = desiredfatigue / s.fatiguecost
+                if attri == "nreff":
+                    attribvalue = realnumeffects
+                else:
+                    attribvalue = realaoe
+                    if 600 < realaoe < 700:
+                        print(f"Skip trying to scale AoE, this is x% of battlefield!")
+                        continue
+                if attribvalue > 1:
+                    desirednumeffects = max(1, int(round(attribvalue * increasefactor)))
+                    numeffectstogain = desirednumeffects - attribvalue
+                    # Take from scaling first
+                    while 1:
+                        # can't increase scaling if it would put spell above the number to gain
+                        if numeffectstogain > s.path1level:
+                            print(
+                                f"Effects to gain: {numeffectstogain}, less than path level of {s.path1level}, exit scaling changes")
+                            break
+                        # don't increase scaling if it doesn't exist
+                        if (getattr(s, attri) // 1000) <= 1:
+                            break
+                        if numeffectstogain <= 0:
+                            break
+                        setattr(s, attri, getattr(s, attri) + 1000)
+                        numeffectstogain -= s.path1level
+                        print(
+                            f"Effects to gain: {numeffectstogain}, add 1 scaling and {s.path1level} effects, spell attri is {getattr(s, attri)}")
+
+                    while 1:
+                        if numeffectstogain <= 0:
+                            break
+                        setattr(s, attri, getattr(s, attri) + 1)
+                        numeffectstogain -= 1
+                        print(f"{numeffectstogain} remaining to gain, spell attri is {getattr(s, attri)}")
+
+                    s.comments.append(f"Increased attribute {attri} from {attribvalue} to fit cost "
+                                      f"increase scale of {increasefactor}")
+
+            s.comments.append(f"Increased fatigue cost from {s.fatiguecost} to meet desired fatigue cost")
+            s.fatiguecost = max(s.fatiguecost, desiredfatigue)
 
     def handleOvercostSpell(self, s):
         if not self.spelltype & SpellTypes.RITUAL and s.effect < 10000 and s.school > -1:
             maxfatiguecost = 99 + (100 * s.path1level)
             if s.fatiguecost > maxfatiguecost:
-                flatnumeffects = s.nreff % 1000
-                scalenumeffects = s.nreff // 1000
-                realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
-                realaoe = s.aoe % 1000 + (s.path1level * (s.aoe // 1000))
+                self.scaleSpellEffectsToFatigue(s, maxfatiguecost)
 
-                print(f"Spell is overcosted! Fatigue is {s.fatiguecost} but path level is {s.path1level}")
-                reductionfactor = maxfatiguecost / s.fatiguecost
-                for attri in ["nreff", "aoe"]:
-                    print(f"Reducing attrib: {attri}")
-                    if s.fatiguecost <= maxfatiguecost:
-                        break
-                    reductionfactor = maxfatiguecost / s.fatiguecost
-                    if attri == "nreff":
-                        attribvalue = realnumeffects
-                    else:
-                        attribvalue = realaoe
-                        if 600 < realaoe < 700:
-                            print(f"Skip trying to scale AoE, this is x% of battlefield!")
-                            continue
-                    if attribvalue > 1:
-                        desirednumeffects = max(1, int(round(attribvalue * reductionfactor)))
-                        numeffectstolose = attribvalue - desirednumeffects
-                        # Take from scaling first
-                        while 1:
-                            # can't reduce scaling if it would drop below the number to lose
-                            if numeffectstolose < s.path1level:
-                                print(f"Effects to lose: {numeffectstolose}, less than path level of {s.path1level}, exit scaling changes")
-                                break
-                            # don't reduce scaling below 1 if it existed
-                            if (getattr(s, attri) // 1000) <= 1:
-                                break
-                            if numeffectstolose <= 0:
-                                break
-                            setattr(s, attri, getattr(s, attri) - 1000)
-                            numeffectstolose -= s.path1level
-                            print(
-                                f"Effects to lose: {numeffectstolose}, drop 1 scaling and {s.path1level} effects, spell attri is {getattr(s, attri)}")
 
-                        while 1:
-                            # Don't reduce the flat number of effects below 0
-                            if (getattr(s, attri) % 1000) == 0:
-                                break
-                            if numeffectstolose <= 0:
-                                break
-                            setattr(s, attri, getattr(s, attri) - 1)
-                            numeffectstolose -= 1
-                            print(f"{numeffectstolose} remaining to lose, spell attri is {getattr(s, attri)}")
 
-                        s.comments.append(f"Reduced attribute {attri} from {attribvalue} to fit cost "
-                                          f"reduction scale of {reductionfactor}")
 
-                reductionfactor = maxfatiguecost / s.fatiguecost
-                if reductionfactor > 1.0:
-                    s.comments.append(f"Alter cast time by {reductionfactor} to make up remaining reductionfactor")
-                    s.casttime = math.floor(min(999, (s.casttime * reductionfactor)))
-
-                s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
-                s.fatiguecost = min(s.fatiguecost, maxfatiguecost)
 
     def calculateSummonAISpellMod(self, spell, aiscore):
         """Fight back against Illwinter's casting AI by calculating an aispellmod to better represent how magicgen

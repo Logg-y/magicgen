@@ -1,10 +1,10 @@
 #neweventset "Beneficial Global action taxboost blood"
-#minpowerlevel 0
+#minpowerlevel 2
 #maxpowerlevel 10
 
 #req path1 == 128
 
-#scaleparam "tax" 5
+#scaleparam "taxboost" 5
 #modulebasescale 10
 
 #modulegroup "Beneficial Global Effect"

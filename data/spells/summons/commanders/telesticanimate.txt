@@ -6,7 +6,7 @@
 #power 3
 #maxpower 14
 #precision -100
-#nreff 1000
+#nreff 3
 #pathlevel 3
 #chassisvalue 33
 #range 6
@@ -27,7 +27,8 @@
 #scalefatiguemult 15
 #spelltype 528
 
-#scalerate 1
+#scalerate 1.5
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Telestic Animate ritual"

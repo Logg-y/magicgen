@@ -7,7 +7,7 @@
 #maxpower 14
 #precision -100
 #nreff 3
-#pathlevel 3
+#pathlevel 2
 #chassisvalue 10
 #range 6
 #fatiguecost 100
@@ -30,10 +30,12 @@
 #descr 16 "The caster teleports ARTICLE %Warrior Mage% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Warrior Mage% will leave once the battle is over."
 #descr 64 "The caster attracts ARTICLE %Warrior Mage% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Warrior Mage% will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 15
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Warrior Mage"
@@ -86,19 +88,19 @@
 -- #schools 1
 -- #skipchance 26
 -- #nogeodst 2052
--- 
+--
 -- #skipchance 31
--- 
+--
 -- #paths 80
 -- #secondarypaths 0
--- 
+--
 -- #name 32 "Call NAMEPREFIX Warrior Mage"
 -- #name 16 "Teleport NAMEPREFIX Warrior Mage"
 -- #name 64 "Charm NAMEPREFIX Warrior Mage"
 -- #descr 32 "The death mage lets out a call for ARTICLE %Warrior Mage%. The Warrior Mage attacks a hostile commander in a distant province."
 -- #descr 16 "The caster teleports ARTICLE %Warrior Mage% to him and convinces PRONOUN to fight for him. The Warrior Mage attacks a hostile commander in a distant province."
 -- #descr 64 "The caster attracts ARTICLE %Warrior Mage% to him and convinces PRONOUN to fight for him. The Warrior Mage attacks a hostile commander in a distant province."
--- 
+--
 -- #spelltype 4
--- 
+--
 -- #end

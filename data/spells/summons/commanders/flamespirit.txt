@@ -24,10 +24,11 @@
 #name 1 "Call NAMEPREFIX Flame %Spirit%"
 #descr 1 "The caster summons ARTICLE Flame %Spirit% onto the battlefield and uses magic to convince PRONOUN to fight for him. Flame Spirits are potent fire mages, but they will leave after the battle."
 
-#scalefatiguemult 40
+#scalefatiguemult 25
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Flame Spirit"
@@ -60,4 +61,5 @@
 
 #scalerate 1
 #end
+
 

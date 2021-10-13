@@ -36,6 +36,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.6
 #end
 
 #neweffect "Summon Master Necromancer"
@@ -74,4 +75,5 @@
 
 #scalerate 1
 #end
+
 

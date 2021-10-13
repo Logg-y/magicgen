@@ -27,6 +27,7 @@
 #spelltype 528
 
 #scalerate 1
+#scalefatigueexponent -1.9
 #end
 
 #neweffect "Summon Fire Dragon"
@@ -83,3 +84,4 @@
 #spelltype 4
 
 #end
+
