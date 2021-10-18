@@ -44,31 +44,32 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     if len(utils.spelleffects) > 0:
         return
     "Parse all data files. Return a dict of {spell effect name:SpellEffect instance}."
-    fileparser.readModifiersFromDir(r"./data/spells/modifiers")
-    fileparser.readSecondariesFromDir(r"./data/spells/secondaries")
-    fileparser.readSecondariesFromDir(r"./data/spells/secondaries/summons")
-    fileparser.readUnitModsFromDir(r"./data/spells/secondaries/summons/unitmods")
-    fileparser.readEventSetsFromDir(r"./data/spells/secondaries/summons/unitmods/eventsets")
-    fileparser.readWeaponModsFromDir(r"./data/spells/secondaries/summons/unitmods/weaponmods")
-    fileparser.readUnitModListsFromDir(r"./data/spells/unitmodlists")
+    base_path = os.path.join('./data', 'spells')
+    fileparser.readModifiersFromDir(os.path.join(base_path, 'modifiers'))
+    fileparser.readSecondariesFromDir(os.path.join(base_path, 'secondaries'))
+    fileparser.readSecondariesFromDir(os.path.join(base_path, 'summons'))
+    fileparser.readUnitModsFromDir(os.path.join(base_path, 'unitmods'))
+    fileparser.readEventSetsFromDir(os.path.join(base_path, 'secondaries', 'summons', 'unitmods', 'eventsets'))
+    fileparser.readWeaponModsFromDir(os.path.join(base_path, 'secondaries', 'summons', 'unitmods', 'weaponmods'))
+    fileparser.readUnitModListsFromDir(os.path.join(base_path, 'unitmodlists'))
     # dict merging
     # (or I could upgrade to py3.9 to use |=)
-    s = fileparser.readEffectsFromDir(r"./data/spells/secondaries/nextspells")
-    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons")}
-    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/summons/commanders")}
-    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals")}
-    s = {**s, **fileparser.readEffectsFromDir(r"./data/spells/rituals/globals")}
-    fileparser.readEventSetsFromDir(r"./data/spells/rituals/globals/events")
-    fileparser.readUnitModsFromDir(r"./data/spells/rituals/globals/unitmods")
-    fileparser.readWeaponModsFromDir(r"./data/spells/rituals/unitmods/weaponmods")
-    fileparser.readMagicSitesFromDir(r"./data/spells/rituals/magicsites")
-    fileparser.readEventSetsFromDir(r"./data/spells/rituals/events")
-    fileparser.readUnitModsFromDir(r"./data/spells/rituals/unitmods")
-    fileparser.readNewUnitsFromDir(r"./data/spells/summons/newunits")
+    s = fileparser.readEffectsFromDir(os.path.join(base_path, 'secondaries', 'nextspells'))
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons'))}
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons', 'commanders'))}
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'rituals'))}
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'rituals', 'globals'))}
+    fileparser.readEventSetsFromDir(os.path.join(base_path, 'rituals', 'globals', 'events'))
+    fileparser.readUnitModsFromDir(os.path.join(base_path, 'rituals', 'globals', 'unitmods'))
+    fileparser.readWeaponModsFromDir(os.path.join(base_path, 'rituals', 'unitmods', 'weaponmods'))
+    fileparser.readMagicSitesFromDir(os.path.join(base_path, 'rituals', 'magicsites'))
+    fileparser.readEventSetsFromDir(os.path.join(base_path, 'rituals', 'events'))
+    fileparser.readUnitModsFromDir(os.path.join(base_path, 'rituals', 'unitmods'))
+    fileparser.readNewUnitsFromDir(os.path.join(base_path, 'summons', 'newunits'))
 
     unitinbasedatafinder.loadAllUnitData()
 
-    s = {**s, **fileparser.readEffectsFromDir(r".\data\spells")}
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join('data', 'spells'))}
     return s
 
 
@@ -266,11 +267,13 @@ def rollspells(**options):
 
             # Make holy spells
             _writetoconsole("Generating holy spells...\n")
-            holy = fileparser.readEffectsFromDir(r"./data/spells/holy")
-            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/banishment")}
-            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/smite")}
-            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/holyword")}
-            holy = {**holy, **fileparser.readEffectsFromDir(r"./data/spells/holy/smitedemon")}
+            base_path = os.path.join("./data", "spells")
+            holy_path = os.path.join(base_path, "holy")
+            holy = fileparser.readEffectsFromDir(holy_path)
+            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "banishment"))}
+            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smite"))}
+            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "holyword"))}
+            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smitedemon"))}
             for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
                 for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
                     effectpool = copy.copy(holy)
