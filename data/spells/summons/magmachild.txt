@@ -35,11 +35,11 @@
 #effect 10001
 #damage 640
 #spec 0
-#power 4
-#maxpower 7
+#power 3
+#maxpower 6
 #nreff 2001
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 400
 #schools 1
 
 #paths 9
@@ -56,7 +56,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 10
+#scalefatiguemult 20.0
 
 #scalerate 2
 #end
@@ -119,5 +119,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 50
 #end
+
 
 
