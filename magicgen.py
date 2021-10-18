@@ -46,25 +46,27 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     "Parse all data files. Return a dict of {spell effect name:SpellEffect instance}."
     base_path = os.path.join('./data', 'spells')
     fileparser.readModifiersFromDir(os.path.join(base_path, 'modifiers'))
-    fileparser.readSecondariesFromDir(os.path.join(base_path, 'secondaries'))
-    fileparser.readSecondariesFromDir(os.path.join(base_path, 'summons'))
-    fileparser.readUnitModsFromDir(os.path.join(base_path, 'unitmods'))
-    fileparser.readEventSetsFromDir(os.path.join(base_path, 'secondaries', 'summons', 'unitmods', 'eventsets'))
-    fileparser.readWeaponModsFromDir(os.path.join(base_path, 'secondaries', 'summons', 'unitmods', 'weaponmods'))
+    secondaries_path = os.path.join(base_path, 'secondaries')
+    fileparser.readSecondariesFromDir(secondaries_path)
+    fileparser.readSecondariesFromDir(os.path.join(secondaries_path, 'summons'))
+    fileparser.readUnitModsFromDir(os.path.join(secondaries_path, 'summons', 'unitmods'))
+    fileparser.readEventSetsFromDir(os.path.join(secondaries_path, 'summons', 'unitmods', 'eventsets'))
+    fileparser.readWeaponModsFromDir(os.path.join(secondaries_path, 'summons', 'unitmods', 'weaponmods'))
     fileparser.readUnitModListsFromDir(os.path.join(base_path, 'unitmodlists'))
     # dict merging
     # (or I could upgrade to py3.9 to use |=)
-    s = fileparser.readEffectsFromDir(os.path.join(base_path, 'secondaries', 'nextspells'))
+    s = fileparser.readEffectsFromDir(os.path.join(secondaries_path, 'nextspells'))
     s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons'))}
     s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons', 'commanders'))}
-    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'rituals'))}
-    s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'rituals', 'globals'))}
-    fileparser.readEventSetsFromDir(os.path.join(base_path, 'rituals', 'globals', 'events'))
-    fileparser.readUnitModsFromDir(os.path.join(base_path, 'rituals', 'globals', 'unitmods'))
-    fileparser.readWeaponModsFromDir(os.path.join(base_path, 'rituals', 'unitmods', 'weaponmods'))
-    fileparser.readMagicSitesFromDir(os.path.join(base_path, 'rituals', 'magicsites'))
-    fileparser.readEventSetsFromDir(os.path.join(base_path, 'rituals', 'events'))
-    fileparser.readUnitModsFromDir(os.path.join(base_path, 'rituals', 'unitmods'))
+    rituals_path = os.path.join(base_path, 'rituals')
+    s = {**s, **fileparser.readEffectsFromDir(rituals_path)}
+    s = {**s, **fileparser.readEffectsFromDir(os.path.join(rituals_path, 'globals'))}
+    fileparser.readEventSetsFromDir(os.path.join(rituals_path, 'globals', 'events'))
+    fileparser.readUnitModsFromDir(os.path.join(rituals_path, 'globals', 'unitmods'))
+    fileparser.readWeaponModsFromDir(os.path.join(rituals_path, 'unitmods', 'weaponmods'))
+    fileparser.readMagicSitesFromDir(os.path.join(rituals_path, 'magicsites'))
+    fileparser.readEventSetsFromDir(os.path.join(rituals_path, 'events'))
+    fileparser.readUnitModsFromDir(os.path.join(rituals_path, 'unitmods'))
     fileparser.readNewUnitsFromDir(os.path.join(base_path, 'summons', 'newunits'))
 
     unitinbasedatafinder.loadAllUnitData()
