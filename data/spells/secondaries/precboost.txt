@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Accurate"
+#nameprefix "Precise"
+#nameprefix "Unerring"
+#nameprefix "Meticulous"
 #fatiguepersquare 1
 #minfinalaoe 12
 
@@ -46,7 +49,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Accurate"
 #nameprefix "Precise"
+#nameprefix "Unerring"
+#nameprefix "Meticulous"
 #fatiguepersquare 0.5
 #minfinalaoe 6
 

@@ -19,7 +19,7 @@
 #range 5025
 #precision 100
 
-#aispellmod -30
+#aispellmod -50
 
 #paths 32
 #secondarypaths 32

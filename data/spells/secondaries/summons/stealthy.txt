@@ -10,11 +10,11 @@
 #req effect != 21
 
 #paths 82
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.3
 #magicpathvaluescaling 0.05
 
 #unitmod "Summon Stealthy"

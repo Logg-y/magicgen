@@ -17,7 +17,7 @@
 
 #name 16 "Imprint Souls"
 #descr 16 "The people of a small village in a remote province will have their minds gradually broken down. When they are entirely lobotomized, their minds will be imprinted with religious zeal towards the rightful Pretender God. When the conversion is complete, they will attack the province in an attempt to conquer it and serve their God to the best of their abilities. This is a very dangerous process, many people die and most of the survivors are not fully restored with the proper religious zeal. A skillful mage and extra penetration skill from magic items will help in successful conversion of the villagers."
-#details "Souls imprinted = 120 + extra level * 4. Success imprint chance: 12% + penetration strength * 6%, Death chance: 50%"
+#details "Fails if there is no population in the targeted province. The total number of units produced is 60, plus 2 per additional level, to a maximum of (province population / 2). Kills twice as much population as the number units that are produced.\nFor each unit made, there is a (astral level + (penetration bonus * 3))% chance that you get a sacred unit, otherwise you get a regular one.\nOne commander is always produced, there is a (10 * (Astral level + penetration bonus) - 50)% chance of getting a second.\nIf the target is a land province, sacred units are Flagellants, regular units are Madmen, and commanders are Mad Priests.\nIf the target is a sea province, sacred units are Fanatic Deep Ones, regular units are Mad Deep Ones, and commanders are Holy Deep Ones."
 
 #spelltype 4
 #end

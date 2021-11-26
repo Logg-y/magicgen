@@ -23,6 +23,12 @@
 #req spelltype !& 4
 
 #nameprefix "Charming"
+#nameprefix "Commanding"
+#nameprefix "Dominating"
+#nameprefix "Controlling"
+#nameprefix "Mesmerising"
+#nameprefix "Hypnotic"
+
 #fatiguepersquare 10
 #scalingaoelimit 1.5
 
@@ -66,6 +72,11 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Charming"
+#nameprefix "Commanding"
+#nameprefix "Dominating"
+#nameprefix "Controlling"
+#nameprefix "Mesmerising"
+#nameprefix "Hypnotic"
 #fatiguepersquare 6
 
 #nextspell "charm Secondary mrne damaging"

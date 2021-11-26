@@ -4,11 +4,11 @@ import re
 from Entities import SpellModifier
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
-from . import fileparserutils
+from Services import fileparserutils
 
 modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
-                       "aispellmod", "reqdamaging", "spec", "maxfinalfatiguecost", "minfinalfatiguecost"]
+                       "aispellmod", "reqdamaging", "spec", "maxfinalfatiguecost", "minfinalfatiguecost", "provrange"]
 modifier_params_str = ["details"]
 modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent"]
 

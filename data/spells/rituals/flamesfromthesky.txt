@@ -17,6 +17,6 @@
 
 #name 1 "Flames from the Sky"
 #descr 1 "With this spell, the mage hurls a maelstrom of flaming spheres towards an enemy province. The flame storm will strike an enemy army camp within the province with enormous force. Most likely, the majority of the units present in the camp will die from this powerful attack, but since the entire army is rarely gathered in one camp at a given time, only half of the target province's army can be expected to be struck by the flames."
-
+#details "Totals up the numbers of nonsneaking commanders of all non-allied nations in the targeted province. Each nation rolls (closed d100 + 49) * number of commanders, the nation with the highest value is the target of this spell. In the event of a tie, the lower nation ID is targeted.\n\nStrikes 50% of all units (including those that are stealthed) belonging to the targeted player in the targeted province with 15 AP fire damage, +1 per additional level of the caster."
 #spelltype 4
 #end

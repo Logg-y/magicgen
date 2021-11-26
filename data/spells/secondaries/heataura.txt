@@ -21,6 +21,13 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Flamewind"
+#nameprefix "Firewind"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Stifling"
+#nameprefix "Sweltering"
 #nameprefix "Parching"
 #fatiguepersquare 8
 #scalingaoelimit 1.5
@@ -61,6 +68,13 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Flamewind"
+#nameprefix "Firewind"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Stifling"
+#nameprefix "Sweltering"
 #nameprefix "Parching"
 #fatiguepersquare 4
 

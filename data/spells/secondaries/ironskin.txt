@@ -19,6 +19,11 @@
 #req spelltype !& 4
 
 #nameprefix "Irontouched"
+#nameprefix "Steeled"
+#nameprefix "Ironcoating"
+#nameprefix "Steelcoating"
+#nameprefix "Steeltouched"
+#nameprefix "Metallic"
 #fatiguepersquare 5
 #minfinalaoe 6
 #scalingaoelimit 1.5
@@ -51,7 +56,12 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Irontouched"
 #nameprefix "Steeled"
+#nameprefix "Ironcoating"
+#nameprefix "Steelcoating"
+#nameprefix "Steeltouched"
+#nameprefix "Metallic"
 #fatiguepersquare 10
 #minfinalaoe 3
 #scalingaoelimit 1.2

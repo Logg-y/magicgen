@@ -6,7 +6,7 @@ from Entities.eventset import EventSet
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
 from Services.utils import eventsets, eventmodulegroups
-from . import fileparserutils
+from Services import fileparserutils
 
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",

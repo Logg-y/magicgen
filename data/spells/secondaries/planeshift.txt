@@ -22,6 +22,7 @@
 #req spelltype !& 4
 
 #nameprefix "Infernal"
+#nameprefix "Hellish"
 #fatiguepersquare 10
 
 
@@ -68,6 +69,7 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Infernal"
+#nameprefix "Hellish"
 #fatiguepersquare 6
 
 #nextspell "planeshift inferno Secondary mrne damaging"
@@ -105,6 +107,7 @@
 #req spelltype !& 4
 
 #nameprefix "Infernal"
+#nameprefix "Hellish"
 #fatiguepersquare 10
 
 #scalingaoelimit 1.5
@@ -151,6 +154,7 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Infernal"
+#nameprefix "Hellish"
 #fatiguepersquare 6
 
 #nextspell "planeshift kokytos Secondary mrne damaging"
@@ -188,6 +192,8 @@
 #req spelltype !& 4
 
 #nameprefix "Voidtouched"
+#nameprefix "Otherworldly"
+#nameprefix "Tenebrous"
 #fatiguepersquare 10
 
 #scalingaoelimit 1.5
@@ -233,6 +239,8 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Voidtouched"
+#nameprefix "Otherworldly"
+#nameprefix "Tenebrous"
 #fatiguepersquare 6
 
 #nextspell "planeshift void Secondary mrne damaging"

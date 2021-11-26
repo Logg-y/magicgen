@@ -135,7 +135,7 @@
 
 #name 4 "NAMEPREFIX Deep Freeze"
 #descr 4 "The caster attempts to freeze all creatures in a SIZE area completely solid. Armour will reduce the harming effect, as well as potentially negate any lingering chill. Magic resistance may prevent victims from being completely frozen and becoming unable to move."
-#details "Inflicts damage. Those taking damage from this initial effect suffer from Numbness, and additionally must make an easy MR roll. Those that fail make a check of 5 + DRN vs cold res + DRN. If the defender loses this roll, they become petrified for 2250-4500 ticks; becoming immobilised, having their defence skill set to 0, their natural protection increased to 20 and gaining Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Inanimate or stone beings cannot be petrified this way, though they may still be harmed by the other components of the spell."
+#details "Inflicts damage. Those taking damage from this initial effect suffer from Numbness, and additionally must make an easy MR roll. Those that fail make a check of 5 + DRN vs cold res + DRN. If the defender loses this roll, they become petrified for 22500-45000 ticks; becoming immobilised, having their defence skill set to 0, their natural protection increased to 20 and gaining Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Inanimate or stone beings cannot be petrified this way, though they may still be harmed by the other components of the spell."
 
 
 #nextspell "Deep Freeze Numbness"

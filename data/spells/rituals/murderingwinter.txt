@@ -17,7 +17,7 @@
 
 #name 4 "Murdering Winter"
 #descr 4 "A sudden, furious blizzard will strike an enemy army camp in a province of the mage's choice. The blizzard is very powerful and will kill most normal men unless they are located in a hot province. The spell will be extremely powerful if it is cast in a very cold province and almost useless if cast in a very hot province. The spell has a very large area of effect and most of the enemy army is likely to be affected. Commanders have access to the good tents and will take reduced damage from the cold."
-#details "Strikes 75% of the army in the targeted province. The damage inflicted is increased by 2 per cold scale in the province. Commanders take 3 less damage."
+#details "Totals up the numbers of nonsneaking commanders of all non-allied nations in the targeted province. Each nation rolls (closed d100 + 49) * number of commanders, the nation with the highest value is the target of this spell. In the event of a tie, the lower nation ID is targeted.\n\nStrikes 75% of all units (including those that are stealthed) belonging to the targeted player in the targeted province with 8 AN cold damage. The damage inflicted is increased by 2 per Cold scale in the province. Commanders take 3 less damage. Fails if cast into a province with Heat 3.\n\nThis spell can only be cast on each province once per player per turn."
 
 #spelltype 4
 #end

@@ -64,7 +64,7 @@
 
 #name 1 "Vafur Flames"
 #descr 1 "This spell recreates the legendary enchantment of Asgård. The fortress is surrounded by a ring wall of enchanted flames. The flames are able to read the intentions of those who approach and will let friends pass safely through. Flying or ethereal beings are able to through the flames."
-#details "If the fort is stormed, creates a wall of flames several squares in front of the walls. Enemies entering squares in the wall take 15AP fire damage. Lasts 1 turn, plus an extra turn for every additional gem spent."
+#details "Creates a wall of flames 3 squares in front of the fortification's walls. If it is raining, there is a 50% chance that a unit entering the wall will not be affected. Creatures that belong to the caster, have 5 or more fire resistance, are ethereal, or have chill auras are entirely unaffected. Affected creatures suffer 10 AP magical fire damage and are set on fire. Creatures can only be affected by the damage component once per battle, but repeated passes through the flames will still set them alight.\n\nBurning creatures suffer a closed d(size) points of true damage each round, with no rolls or resistances applied. The chance of stopping burning each round is (fire res * 2) + ((cold scale + 5) * 5), to a minimum of 1%, where fire vulnerabilities are treated as negative resistance and heat scales are treated as negative cold scales. If it is raining, or the burning creature has 5 or more fire resistance, a chill aura, or etherealness, add 100 to the percentage chance of stopping burning. Lasts 1 turn, plus an extra turn for every additional gem spent."
 
 #spelltype 4
 #end
@@ -78,7 +78,7 @@
 #maxpower 6
 #nreff 1
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 800
 #schools 16
 #skipchance 50
 
@@ -88,7 +88,7 @@
 
 #name 1 "Vafur Flames"
 #descr 1 "This spell recreates the legendary enchantment of Asgård. The fortress is surrounded by a ring wall of enchanted flames. The flames are able to read the intentions of those who approach and will let friends pass safely through. Flying or ethereal beings are able to through the flames. The effect of this spell is permanent."
-#details "If the fort is stormed, creates a wall of flames several squares in front of the walls. Enemies entering squares in the wall take 15AP fire damage."
+#details "Creates a wall of flames 3 squares in front of the fortification's walls. If it is raining, there is a 50% chance that a unit entering the wall will not be affected. Creatures that belong to the caster, have 5 or more fire resistance, are ethereal, or have chill auras are entirely unaffected. Affected creatures suffer 10 AP magical fire damage and are set on fire. Creatures can only be affected by the damage component once per battle, but repeated passes through the flames will still set them alight.\n\nBurning creatures suffer a closed d(size) points of true damage each round, with no rolls or resistances applied. The chance of stopping burning each round is (fire res * 2) + ((cold scale + 5) * 5), to a minimum of 1%, where fire vulnerabilities are treated as negative resistance and heat scales are treated as negative cold scales. If it is raining, or the burning creature has 5 or more fire resistance, a chill aura, or etherealness, add 100 to percentage chance of stopping burning."
 
 #spelltype 4
 #end
@@ -206,7 +206,7 @@
 
 #name 4 "Frost Dome"
 #descr 4 "A frost dome is created over the entire province where the spell is cast. Any spells cast into this dome will trigger the deadly trap. A powerful frost blast will find its way to the enemy mage and freeze him to death. Every spell cast into the dome has a 30 percent chance of being destroyed by the frost dome. The more magic gems put into the spell, the longer it will last. If the mage who cast the dome dies, it will dissolve instantly."
-#details "Dome Protection: 30%. Dome Trap: d15 AN cold dmg. Friendly spells will also be blocked."
+#details "Dome Protection: 30%. Dome Trap: d15 AN cold dmg. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #end
@@ -252,7 +252,7 @@
 
 #name 2 "Dome of Solid Air"
 #descr 2 "A dome made out of air is created over the entire province the mage is in. The dome will protect the province from many spells that originate outside the warded province. While undisturbed, the spell will last indefinitely, but if a spell passes through the dome, or if the mage who cast the dome dies, it will shatter instantly."
-#details "Dome Protection 80%. Destroyed if it fails to block a spell. Friendly spells will also be blocked."
+#details "Dome Protection 80%. Destroyed if it fails to block a spell. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #end
@@ -275,7 +275,7 @@
 
 #name 1 "Dome of Flaming Death"
 #descr 1 "An invisible web of Fire magic is created over the entire province where this spell is cast. Any enemy spells cast into the protected province will trigger the deadly trap. A powerful blast of fire will find its way to the enemy mage and burn him and possibly also the laboratory to cinders. The more magic gems put into the spell, the longer the dome lasts. If the mage who cast the dome dies, the dome dissolves instantly. The dome does not stop enemy spells that pass through it, but it may stop the enemy mage from ever casting spells again."
-#details "Dome Trap: 2d20 AP fire dmg. The chance of burning down the lab is 10% plus 1% per misfortune scale in the targeted province."
+#details "Dome Trap: 2d20 AP fire dmg. The chance of burning down the lab is 10% plus 1% per misfortune scale in the targeted province.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #end
@@ -298,7 +298,7 @@
 
 #name 128 "Dome of Corruption"
 #descr 128 "The caster seals a pact with Horrors. The Horrors create a dome that protects the province from most spells that originate from outside the warded province. Trying to cast a spell through this dome is very dangerous and might drive the casting mage insane. A good side effects of the dome is that it exudes magic and will raise the magic scales of the province considerably, making it easy for mages to do their research. The pact has a downside too, which will become apparent to mages living under the dome. The creators of the dome will occasionally attack and consume a mage. The dome will dissolve instantly if the caster of this ritual dies."
-#details "Dome Protection: 75%. Dome Trap: Feeblemind, magic resistance negates. Magic Scale +2. Friendly spells will also be blocked. All units in the province have a (2+sum of all non-holy magic paths)% chance to gain a horror mark every turn. Each commander in the province has a (number of horror marks * 10)% chance to be attacked by a random lesser horror (to a maximum of 50%), in addition to regular horror mark effects."
+#details "Dome Protection: 75%. Those casting spells against the dome (even if their spell is not blocked) must make a magic resistance check (at +2 penetration) or become feebleminded. The caster's penetration bonuses are ignored. This is considered a Blood effect for the purposes of the victim's magic resistance check. Magic Scale +2. Friendly spells will also be blocked. All units in the province have a (2+sum of all non-holy magic paths)% chance to gain a horror mark every turn. Each commander in the province has a (number of horror marks * 10)% chance to be attacked by a random lesser horror (to a maximum of 50%), in addition to regular horror mark effects.\nThis spell persists even after the province is lost, so long as the caster is not killed. A province's new owner will have no indication that this spell was cast besides inexplicable horror marking and a significantly raised attack rate.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #end
@@ -321,7 +321,7 @@
 
 #name 16 "Dome of Arcane Warding"
 #descr 128 "An astral dome is created over the entire province that the mage is located in. The dome will protect the province from many spells that originate from outside the warded province. The more magic gems put into the spell, the longer it will last. If the mage dies, the dome dissolves instantly. The dome has a 50 percent chance of stopping each spell that tries to pass through it."
-#details "Dome Protection: 50%. Friendly spells will also be blocked."
+#details "Dome Protection: 50%. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #end

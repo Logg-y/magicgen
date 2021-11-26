@@ -4,7 +4,7 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -20,7 +20,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 500
+#fatiguecostpereffect 300
 
 #unitmod "Summon Inspiring Researcher"
 #descr "The summoned %creature% %is% very effective at encouraging researchers around them to work harder."

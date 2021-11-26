@@ -21,7 +21,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 500
+#fatiguecostpereffect 300
 
 #unitmod "Summon Pearlcultivator"
 #descr "The summoned %creature% %is% able to cultivate magical pearls from water gems."
@@ -51,7 +51,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 500
+#fatiguecostpereffect 300
 
 #unitmod "Summon Carcasscollector"
 #descr "The summoned %creature% %is% able to plant nature gems into animals, and then perform a ritual sacrifice. This process converts the nature gems into death gems."

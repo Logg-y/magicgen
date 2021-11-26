@@ -8,11 +8,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.2
 
 #unitmod "Summon Paralysisweapon"
 #descr "Anyone wounded by the weapons of the summoned %creature% becomes paralysed if they fail to resist the effect."
-
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims must make a MR check or suffer 5 paralysis damage. Weapons which already have secondary effects are unaffected."
 #end
 
 #newsecondary "Summon Greaterparalysisweapon"
@@ -25,9 +25,9 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 
 #unitmod "Summon Greaterparalysisweapon"
 #descr "Anyone wounded by the weapons of the summoned %creature% becomes paralysed if they fail to resist the effect."
-
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims must make a MR check or suffer 10 paralysis damage. Weapons which already have secondary effects are unaffected."
 #end

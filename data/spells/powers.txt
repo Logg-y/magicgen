@@ -5,9 +5,9 @@
 #schools 17
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 41+4096
 
-#scalerate 15
+#scalerate 0
 -- #scalecost 0.7
 
 
@@ -31,6 +31,52 @@
 
 #details "Grants +1 fire magic."
 
+#descr 1 "The caster channels the power of fire, allowing the casting of more powerful fire magic." 
+#descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno, allowing the casting of more powerful fire spells."
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery power"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of fiery power"
+
+#aispellmod 50
+
+#nextspell "Fire Power Real"
+
+#end
+
+#neweffect "Fire Power Real"
+#effect 23
+#damage 262144
+#spec 16384
+#schools -1
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10034
+#sound 16
+#range 0
+#fatiguecost 20
+#maxpower 5
+#scalefatigueexponent -0.15
+
+
+-- fire, blood
+#paths 129
+#secondarypaths 1
+
+#name 1 "Channel Fiery Power"
+#name 128 "Channel Fiery Power"
+
+#details "Grants +1 fire magic."
+
 #descr 1 "The power of fire is channeled into SUBJECT, allowing %the% %mage% to cast more powerful fire spells." 
 #descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful fire spells." 
 
@@ -49,9 +95,9 @@
 #schools 17
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 41+4096
 
-#scalerate 15
+#scalerate 0
 -- #scalecost 0.7
 
 #aoe 0
@@ -74,6 +120,52 @@
 
 #details "Grants +1 water magic."
 
+#descr 1 "The caster channels the power of water, allowing the casting of more powerful water magic." 
+#descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos, allowing the casting of more powerful water spells."
+
+#priority 1
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of watery power"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of watery power"
+
+#nextspell "Water Power Real"
+
+#aispellmod 50
+
+#end
+
+
+#neweffect "Water Power Real"
+#effect 23
+#damage 524288
+#spec 8404992
+#schools -1
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 15
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10025
+#sound 9
+#range 0
+#fatiguecost 20
+#maxpower 5
+#scalefatigueexponent -0.15
+
+
+-- water, blood
+#paths 132
+#secondarypaths 4
+
+#name 4 "Channel Water Power"
+#name 128 "Channel Power of Kokytos"
+
+#details "Grants +1 water magic."
+
 #descr 4 "The power of water is channeled into SUBJECT, allowing %the% %mage% to cast more powerful water spells." 
 #descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful water spells." 
 
@@ -89,7 +181,50 @@
 #effect 23
 #damage 8192
 #spec 4210688
-#schools 17
+#schools 17+4096
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0
+-- #scalecost 0.7
+
+#aoe 0
+#power 2
+#pathlevel 1
+#explspr 10216
+#sound 24
+#range 0
+#fatiguecost 20
+#maxpower 4
+#scalefatigueexponent -0.15
+
+#casttime 111
+
+
+#paths 2
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Storm Power"
+
+#details "Grants +1 air magic during a storm."
+
+#descr 1 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present." 
+
+#priority 1
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of stormbound power"
+
+#aispellmod 50
+#nextspell "Storm Power Real"
+
+#end
+
+
+#neweffect "Storm Power Real"
+#effect 23
+#damage 8192
+#spec 4210688
+#schools -1
 
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
@@ -113,7 +248,7 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "NAMEPREFIX Storm Power"
+#name 2 "Channel Storm Power"
 
 #details "Grants +1 air magic during a storm."
 
@@ -131,6 +266,47 @@
 #damage 1048576
 #spec 8404992
 #schools 17
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41+4096
+
+#scalerate 0
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#pathlevel 2
+#explspr 10024
+#sound 29
+#range 0
+#fatiguecost 20
+#maxpower 5
+#scalefatigueexponent -0.15
+
+
+#paths 64
+#secondarypaths 64
+
+#name 64 "NAMEPREFIX Power of Gaia"
+
+#details "Grants +1 nature magic."
+
+#descr 64 "The caster channels the power of Gaia, allowing the casting of more powerful nature magic." 
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of nature's power"
+
+-- for some reason this has half the spell score of the other powers
+#aispellmod 60
+
+#end
+
+
+#neweffect "Nature Power Real"
+#effect 23
+#damage 1048576
+#spec 8404992
+#schools -1
 
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
@@ -152,7 +328,7 @@
 #paths 64
 #secondarypaths 64
 
-#name 64 "NAMEPREFIX Power of Gaia"
+#name 64 "Channel Power of Gaia"
 
 #details "Grants +1 nature magic."
 
@@ -160,6 +336,9 @@
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of nature's power"
+
+-- for some reason this has half the spell mod of the other powers
+#aispellmod 60
 
 #end
 
@@ -227,12 +406,14 @@
 
 #name 16 "NAMEPREFIX Power of the Spheres"
 
-#details "Grants +1 to all schools of magic."
+#details "Grants +1 to all non-holy magic paths that recipients are skilled in."
 
 #descr 16 "This spell makes the caster more powerful in all paths of magic." 
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic power"
+
+#aispellmod 50
 
 #end
 
@@ -267,7 +448,7 @@
 
 #descr 128 "By sacrificing a large number of blood slaves, the caster attracts attention from the Netherworld. Fiends from beyond grant the caster tremendous physical and magical power for one battle. The price for this power is unwanted attention from other Horrors. For every minute the battle lasts, there is a chance that a Horror will materialize in the vicinity of the caster."
 
-#details "Grants magic boost +2, Att +4, Def +4, Str +4, Prec +4, Morale +4, MR +2, Protection +4."
+#details "Applies one horror mark the the caster. Gives +2 in all magic paths, +4 attack and defence skills, +4 precision, +4 morale, +2 magic resistance, +4 natural protection. All of these effects are cumulative with other spells. Has a (20 + horror marks * 2)% per round to summon a random neutral lesser horror. This attempts to spawn in a random square in a 5x5 box around the caster, or to the nearest possible square if filled."
 
 #priority 1
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal power"

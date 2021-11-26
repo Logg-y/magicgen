@@ -4,6 +4,28 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+v3.1.1
+
+Fixed an issue that would prevent the standalone executables working. It seems the standalone is more strict about circular imports than running on a local Python installation...
+Extensive yellow text improvements.
+100% battlefield petrification path level 7 from 5, 4 gems from 2.
+Corrected yellow text of all petrifying effects to reflect the fact that they last 10x as long as I previously thought.
+Somewhat slowed the scaling rate of the unconditional petrification effect.
+Foul Vapors research 7 from 6.
+Implemented scaling aispellmod for high number of effects single target spells to hopefully make the AI love high numbers of fire flies a bit less.
+Lowered cloud aispellmod somewhat.
+All magic power boosting spells (except earth power due to its reinvigoration) are now self targeted with a nextspell of the intended AoE. This means that the casting AI will not repeatedly apply them to get their buff on summoned creatures.
+Gave magic power boosting spells a scaling aispellmod. Hopefully mages will feel like casting these offscript a bit.
+Astral weapons can no longer have Weapons of Sharpness as a secondary effect.
+Communion slave spells no longer gain additional effects.
+XP gain globals now name the commander that received the effect, much like their affliction gain counterpart.
+Added many negative buff secondary effects that make the spell more powerful and/or easier to cast. These spells are all not cast offscript, and all negative effects will not directly damage/kill the units involved, but instead are limited to ailments such as entanglement and slime.
+Added modest site searching modifiers, that might make them X1 to cast, or X3 and cheaper, or longer range…
+Fixed broken values for corpse eater commanders
+Reduced costs and research increases of most summon modifiers, as they would produce things that were funny but not terribly useful.
+Low level early gem spells are +1 research and path levels
+
+
 v3.1.0
 
 Fixed secondary effects not correctly applying to commanders after the previous changes to research level increments. Hopefully invisible sages will generate now.

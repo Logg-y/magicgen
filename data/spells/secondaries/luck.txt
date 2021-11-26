@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Lucky"
+#nameprefix "Fortuitous"
+#nameprefix "Blessed"
+#nameprefix "Serendipitous"
 #fatiguepersquare 2
 #minfinalaoe 10
 
@@ -48,7 +51,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Lucky"
 #nameprefix "Fortuitous"
+#nameprefix "Blessed"
+#nameprefix "Serendipitous"
 #fatiguepersquare 4
 #minfinalaoe 5
 

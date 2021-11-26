@@ -15,9 +15,9 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 20
+#fatiguecostpereffect 10
 
 #unitmod "Summon Fortuneteller"
 #descr "The summoned %creature% %is% able to see into the future and occasionally prevent bad events from happening."
-
+#details "Summoned creatures have 5% fortune teller."
 #end

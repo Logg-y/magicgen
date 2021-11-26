@@ -26,10 +26,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.15
 
 #unitmod "Summon Strongpoison"
 #descr "The summoned %creature% %is% able to poison enemies with attacks."
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims take 15 AN poison damage. Weapons which already have secondary effects are unaffected."
 
 #end
 
@@ -43,10 +44,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.4
 
 #unitmod "Summon Deathpoison"
 #descr "The summoned %creature% %is% able to strongly poison enemies with attacks."
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims take 35 AN poison damage. Weapons which already have secondary effects are unaffected."
 
 #end
 
@@ -61,11 +63,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.15
 
 #unitmod "Summon Debilpoison"
 #descr "The summoned %creature% %is% able to weakly poison enemies with attacks."
-
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims take 20 AN poison fatigue damage. Weapons which already have secondary effects are unaffected."
 #end
 
 #newsecondary "Summon Weakparapoison"
@@ -78,10 +80,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.2
 
 #unitmod "Summon Weakparapoison"
 #descr "The summoned %creature% %is% able to poison enemies with attacks."
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims take 25 AN poison fatigue damage. Weapons which already have secondary effects are unaffected."
 
 #end
 
@@ -95,9 +98,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.2
 
 #unitmod "Summon Strongparapoison"
 #descr "The summoned %creature% %is% able to strongly poison enemies with attacks. This poison is magical in nature, and may be resisted like other forms of magic."
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims must make a MR check take 50 AN poison fatigue damage. Weapons which already have secondary effects are unaffected."
 
 #end

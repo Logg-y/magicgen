@@ -17,7 +17,7 @@
 
 #name 32 "Stygian Paths"
 #descr 32 "All lands are connected to the Underworld and every location in the Underworld corresponds to a location in the lands of the living, but time passes differently in the Underworld. By traveling in the Underworld, great distances can be covered in a short period of time. When this ritual is cast, a gateway into the realm of the dead is opened. The necromancer then leads his followers on dark paths through the Underworld to emerge in a faraway province. The journey, however, is not free from risk: no one is allowed to leave the lands of the dead. Everyone using the Stygian paths risks injury or even death by poisoning, spirit attacks or fates even worse. Stealthy units are less likely to be detected by the guardians of the Underworld."
-#details "Spirit attacks: 1 AN dmg + death MR attack. Stealthy units have only 20% chance of being attacked. Caster can not take advantage of stealth."
+#details "The highest Stygian Guide value of the commander and all units under their command is used for this spell. The commander and all creatures under their command take 1 AN magical damage. Each unit has a (Stygian Guide value)% chance to avoid making a MR check at -1 penetration or taking 999 AN damage. Stealthy units additionally have a (stealth ability value)% chance to avoid the 999 damage check, to a maximum of 90% protection at 90+ stealth.\n\nThe caster also makes these checks, but cannot use their stealth ability to negate the 999 damage check. The MR check is considered a Death effect for the purposes of their MR check."
 
 #spelltype 4
 #end

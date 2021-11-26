@@ -15,7 +15,7 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Safeguarding"
+#nameprefix "Astralfire"
 #fatiguepersquare 4
 #minfinalaoe 5
 #scalingaoelimit 1.5
@@ -45,7 +45,7 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Screening"
+#nameprefix "Astralfire"
 #fatiguepersquare 0
 #minfinalaoe 12
 #scalingaoelimit 2.0
@@ -74,7 +74,7 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Screening"
+#nameprefix "Astralfire"
 #fatiguepersquare 8
 #minfinalaoe 1
 #scalingaoelimit 1.2

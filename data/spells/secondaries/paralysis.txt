@@ -22,6 +22,9 @@
 #req spelltype !& 4
 
 #nameprefix "Halting"
+#nameprefix "Paralysing"
+#nameprefix "Immobilising"
+#nameprefix "Incapacitating"
 #fatiguepersquare 3
 
 #req effect != 66
@@ -59,7 +62,10 @@
 #req spelltype !& 4
 #req effect != 66
 
+#nameprefix "Halting"
 #nameprefix "Paralysing"
+#nameprefix "Immobilising"
+#nameprefix "Incapacitating"
 #fatiguepersquare 6
 
 #scalingaoelimit 2.5
@@ -102,6 +108,9 @@
 #ondamage 1
 
 #nameprefix "Halting"
+#nameprefix "Paralysing"
+#nameprefix "Immobilising"
+#nameprefix "Incapacitating"
 #fatiguepersquare 2
 
 #nextspell "Paralysis Secondary mrnh damaging"
@@ -139,7 +148,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Halting"
 #nameprefix "Paralysing"
+#nameprefix "Immobilising"
+#nameprefix "Incapacitating"
 #fatiguepersquare 1
 
 #nextspell "Paralysis Secondary mrn damaging"

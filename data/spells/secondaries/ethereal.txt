@@ -17,6 +17,13 @@
 #req spelltype !& 4
 
 #nameprefix "Ethereal"
+#nameprefix "Intangible"
+#nameprefix "Tenebrous"
+#nameprefix "Bodiless"
+#nameprefix "Spectral"
+#nameprefix "Ghostly"
+#nameprefix "Unearthly"
+#nameprefix "Incorporeal"
 #fatiguepersquare 6
 #minfinalaoe 5
 #scalingaoelimit 2.0
@@ -46,6 +53,13 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Ethereal"
+#nameprefix "Intangible"
+#nameprefix "Tenebrous"
+#nameprefix "Bodiless"
+#nameprefix "Spectral"
+#nameprefix "Ghostly"
+#nameprefix "Unearthly"
 #nameprefix "Incorporeal"
 #fatiguepersquare 12
 #minfinalaoe 2

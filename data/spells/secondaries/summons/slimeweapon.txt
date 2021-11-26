@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Slimeweapon"
 #descr "The %creature% %is% able to produce magical slime that coats their attacks. Anyone wounded risks being caught in the slime. This is a magical effect and may be resisted."

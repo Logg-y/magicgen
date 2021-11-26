@@ -19,4 +19,5 @@
 #descr 16 "This enchantment enables a mage to destroy an active global enchantment. The power of global enchantments is often boosted with the use of additional gems. This number of gems must be matched in order for the dispel to work."
 
 #spelltype 4
+#details "Rolls (additional caster levels * 5) + (additional pearls spent) + d20 vs (strength of the designated enchantment) + d20. The caster wins ties. Both die rolls are openended. Success removes the selected enchantment. The owner of an enchantment is notified only if the dispel was successful, and receives no information about who cast the dispel.\n\nThe strength of a global enchantment is (additional gems, or slaves / 2 rounded down) + (additional caster levels in primary  path * 5)."
 #end

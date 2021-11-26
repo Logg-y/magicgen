@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 
 #unitmod "Summon Webweapon"
 #descr "Anyone wounded by the attacks of the %creature% may become caught in sticky webs."

@@ -10,7 +10,7 @@
 #explspr 10297
 #sound 42
 
-#aispellmod 175
+#aispellmod 150
 
 #paths 64
 #secondarypaths 64
@@ -42,7 +42,7 @@
 #explspr 10162
 #sound 42
 
-#aispellmod 100
+#aispellmod 60
 
 #paths 1
 #secondarypaths 1
@@ -74,7 +74,7 @@
 #explspr 10056
 #sound 42
 
-#aispellmod 200
+#aispellmod 150
 
 #paths 4
 #secondarypaths 2
@@ -107,7 +107,7 @@
 #explspr 10203
 #sound 42
 
-#aispellmod 200
+#aispellmod 150
 
 #paths 1
 #secondarypaths 2
@@ -140,7 +140,7 @@
 #explspr 10160
 #sound 23
 
-#aispellmod 200
+#aispellmod 150
 
 #paths 32
 #secondarypaths 0
@@ -173,7 +173,7 @@
 #explspr 10048
 #sound 42
 
-#aispellmod 100
+#aispellmod 80
 
 #paths a
 #secondarypaths a

@@ -50,7 +50,7 @@
 
 #name 64 "Howl"
 #descr 64 "The caster summons a pack of wolves to aid him in battle. The wolves will come from all directions and may even attack the enemy from behind."
-#details "Every 320 ticks, 1d3 wolves appear at the edge of the battlefield. If cast in forest or mountain terrain, 1d6 appear instead. These die rolls may explode."
+#details "Every 320 ticks (or 23.4375 times a round), there is a 1 in 12 chance that 1d3 wolves appear at the edge of the battlefield. If cast in forest or mountain terrain, 1d6 appear instead. These die rolls may explode."
 
 #ainocast 1
 
@@ -82,6 +82,7 @@
 #name 64 "Shark Attack"
 #descr 4 "The caster attracts sharks to the smell of blood in the water. For the duration of the battle, there is a chance that a shark will arrive whenever a living being is wounded. The sharks are stupid, but the spell is strong enough to make them attack enemies more often than friends."
 #descr 64 "The caster attracts sharks to the smell of blood in the water. For the duration of the battle, there is a chance that a shark will arrive whenever a living being is wounded. The sharks are stupid, but the spell is strong enough to make them attack enemies more often than friends."
+#details "Every 320 ticks (or 23.4375 times a round), there is a 1 in 24 chance to activate. Every activation adds 1 to a hidden counter. Checks every unit in the battle that is not inanimate, not undead, not a Shark, and that has less hitpoints than their maximum. Has a (25 - (counter * 2))% chance to spawn a Shark at either edge of the battlefield, in line with the wounded unit. There is a 50% chance to spawn a Small Shark instead. Every time the spell is cast, the counter is reset, but this does not allow the spell to be cast again while it is already active."
 
 #ainocast 1
 
@@ -114,7 +115,7 @@
 #name 16 "Solar Eclipse"
 #descr 1 "The spell will blot out the sun, but only for a little while and in a limited area. It is enough to make a battlefield as dark as the night and will impair all units without darkvision."
 #descr 16 "The spell will blot out the sun, but only for a little while and in a limited area. It is enough to make a battlefield as dark as the night and will impair all units without darkvision."
-#details "Darkness: -3 att/def/prec."
+#details "Applies darkness penalties of 3 to attack skill, defence skill, and precision. This does not affect demons, blind beings, those with spirit sight or perfect darkvision. Partial darkvision reduces the penalties. Disables sun awe."
 
 #ainocast 1
 
@@ -145,7 +146,7 @@
 
 #name 32 "Darkness"
 #descr 32 "The battlefield is covered in a blanket of darkness that even render torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
-#details "Darkness: -6 att/def/prec."
+#details "Applies darkness penalties of 6 to attack skill, defence skill, and precision. This does not affect demons, blind beings, those with spirit sight or perfect darkvision. Partial darkvision reduces the penalties. Disables sun awe."
 
 #ainocast 1
 
@@ -177,6 +178,7 @@
 
 #name 4 "Rain"
 #descr 4 "This spell creates a heavy rain upon the battlefield. This makes it harder to fly and the heat effects of Abysians and other hot creatures are severely reduced. Fire magic is more difficult to use during heavy rain, as all non-underwater If it is cold it will snow instead. Snow does not increase the fatigue for fire spells, but it does reduce some heat effects although less so than rain."
+#details "Creates rain, or in any cold scales, instead creates a snow shower. In either case, for creatures without storm immunity or storm power, flying fatigue is increased to (distance * encumbrance)/10, where distance is the sum of the total squares moved along each axis, to a maximum of 20. Additionally, the value of sun awe is reduced by 2, to a minimum of 1. This does not stack with Mist's reduction.\n\nRain reduces the effective value of any heat auras by 2, and reduces the heat fatigue effect of Heat from Hell by 3.\n\nIn any cold scales, instead creates a snow shower. Snow reduces the heat fatigue effect of Heat from Hell by 1.\n\nIf a battle takes place in heat 0-1, there is a (growth * 5 + 5)% chance that there will be natural rain present on the battlefield."
 
 #ainocast 1
 
@@ -210,7 +212,7 @@
 #name 2 "Mist"
 #descr 4 "The caster creates a dense mist across the battle field that makes it difficult to see far. The mist will limit the precision of all spells and missiles."
 #descr 2 "The caster creates a dense mist across the battle field that makes it difficult to see far. The mist will limit the precision of all spells and missiles."
-#details "Base precision is halved."
+#details "Halves base precision, rounded down. This is cumulative with Storm. The value of sun awe is reduced by 2, to a minimum of 1. The effect on sun awe does not stack with that of rain or snow. This does not stack in any way with Mists of Deception."
 
 #ainocast 1
 
@@ -244,7 +246,7 @@
 
 #name 2 "Storm"
 #descr 2 "Creates a rain storm or blizzard on the battlefield. Makes flying impossible and shooting difficult. A rain storm will also make it more difficult to use Fire magic."
-#details "Precision reduced by half, 50% of missiles lost. Storms also incur the effects of the spell Rain."
+#details "There is a 50% chance that missile weapons fail to fire, unless the weapon can be fired underwater. For creatures without storm power or storm immunity, flying is impossible and precision is halved, rounding down. This precision reduction stacks with that of Mist."
 #ainocast 1
 #end
 
@@ -340,7 +342,7 @@
 #name 4 "Acid Storm"
 #descr 1 "The whole battlefield is showered in highly corrosive fluids pouring down from the heavens."
 #descr 4 "The whole battlefield is showered in highly corrosive fluids pouring down from the heavens."
-#details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck for 3 AP acid damage."
+#details "Every 320 ticks (or 23.4375 times a round), 3% of the battlefield is struck for 4 AP acid damage. Upon dealing damage, there is a 16% chance of rusting a victim's equipment. Rusty armour has a (incoming damage roll * 2)% chance of becoming damaged. Rusty weapons have a 25% chance to break when they land a hit, reducing their damage done by 2. Blunt weapons only have their damage reduced by 1."
 #ainocast 1
 #end
 
@@ -400,7 +402,7 @@
 
 #name 8 "Rain of Stones"
 #descr 8 "The sky blackens and rumbling sounds echo over the battlefield. Stones and small rocks begin to fall from the heavens, striking down soldiers. Shield and other things that protect vs arrows will also protect soldiers from getting hit by the rocks. Most of the falling stones will result in head hits."
-#details "Every 320 ticks (or 23.4375 times per round), 1% of the battlefield is struck with a stone that strikes one creature in the square for 5 mundane blunt damage."
+#details "Every 320 ticks (or 23.4375 times a round), 1% of the battlefield is the target of a large stone which inflicts 5 capped nonmagical blunt damage if it hits. Additionally, there is a 10% chance to hit each square on the battlefield that has a unit in it for 5 points of nonmagical blunt damage without the appearance of a falling stone. Despite having no projectile, it acts like a projectile for the purposes of hitting individual units in the square."
 #ainocast 1
 #end
 
@@ -430,7 +432,7 @@
 
 #name 16 "Astral Tempest"
 #descr 16 "The caster unleashes an astral storm upon the battlefield. The storm is physically undetectable, but every unit that is not mindless takes damage as the storm rips the very souls from their bodies. Spellcasting is extra difficult during the astral tempest and all non mindless magic users will have trouble casting spells unless they have very high magic resistance."
-#details "Every 320 ticks (or 23.4375 times per round), 2% of the battlefield is struck with 1 AN magic damage, with a MR check to negate it. Additionally, strikes a different 4% of the battlefield with an effect that interrupts spellcasting, with a difficult MR check to prevent it."
+#details "Every 320 ticks (or 23.4375 times a round), strikes 2% of the battlefield for 1 AN magic damage, with a magic resistance check to negate the damage. Additionally, strikes 4% of the battlefield with an effect that interrupts all non-mindless creatures unless they succeed a magic resistance check."
 #ainocast 1
 #end
 
@@ -462,7 +464,7 @@
 #name 16 "Meteor Shower"
 #descr 16 "This spell should only be cast as a last resort as it will likely kill the friendly forces as well as the enemy ones. After being cast strange whizzing sound will emanate from the heavens and soon nothing but the loud impacts from meteors will be heard."
 #descr 8 "This spell should only be cast as a last resort as it will likely kill the friendly forces as well as the enemy ones. After being cast strange whizzing sound will emanate from the heavens and soon nothing but the loud impacts from meteors will be heard."
-#details "Every 320 ticks (or 23.4375 times per round), makes five independent rolls with a 15% chance for each to succeed. Each success drops a meteor on a random square of the battlefield, striking those in the square for 150 magical blunt damage."
+#details "Every 320 ticks (or 23.4375 times a round), has a 3/4000 chance to spawn a meteor on each square, inflicting 150 magical blunt damage to those hit by it."
 #ainocast 1
 #end
 
@@ -479,8 +481,8 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 6
-#maxpower 6
+#power 7
+#maxpower 7
 #pathlevel 5
 #sound 31
 #fatiguecost 200
@@ -522,6 +524,7 @@
 
 #name 4 "Friendly Currents"
 #descr 4 "This spell makes the water currents aid the caster and all his allies. Those aided by this spell can move further every turn and are less exhausted by fighting. This spell can only be cast underwater."
+#details "Friendly creatures gain +4 combat speed and -2 encumbrance, enemies suffer -4 combat speed and +2 encumbrance."
 #end
 
 #neweffect "Quagmire"
@@ -611,7 +614,7 @@
 
 #name 1 "Heat from Hell"
 #descr 1 "The entire battlefield is struck by heat worse than that of the hottest of deserts. This heat soon renders all units on the battlefield unconscious, after which death is certain. This spell is most effective in warm provinces."
-#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN fire fatigue damage. The damage dealt is 5 + Cold scale, -3 if it is raining. Does nothing if Grip of Winter is active."
+#details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN fire fatigue damage. The damage dealt is 5 + Cold scale, -3 if it is raining, or -1 if it is snowing. Does nothing if Grip of Winter is active."
 #ainocast 1
 #end
 
@@ -641,7 +644,7 @@
 
 #name 16 "Solar Brilliance"
 #descr 16 "The sun starts to shine with a brilliance that destroys the retinas of all soldiers on the battlefield and burns all undead and demonic units to cinders."
-#details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield must make an easy MR check or become blinded. Additionally, undead and demons in a different 5% of the battlefield must make an easy MR check or suffer 5 AP magical damage."
+#details "Every 320 ticks (or 23.4375 times a round), 5% of the battlefield must make an easy MR check or become blinded. Undead and demons in 5% of the battlefield are struck for 5 AP damage, with an easy MR check to negate the damage. Adds 2 to the value of sun awe. Removes all darkness effects. Dark power provides corresponding penalties to the bonuses it would yield in darkness."
 #ainocast 1
 #end
 
@@ -671,7 +674,7 @@
 
 #name 2 "Mists of Deception"
 #descr 2 "This powerful enchantment creates a magic mist on the battlefield. From this mist, phantasmal soldiers and beings will emerge to battle nearby enemies. More phantasms will appear if the caster is very powerful. The mist will limit sight and the range of all spells and missiles."
-#details "Phantasms appearing each turn: 1 per caster level. Also incurs the effects of Mist (halved base precision)."
+#details "Every 320 ticks (or 23.4375 times a round), for each level of Air magic of the caster, there is a 1 in 24 chance to spawn a random phantasm at a random point on the battlefield. Halves base precision, rounded down. This is cumulative with Storm. The value of sun awe is reduced by 2, to a minimum of 1. The effect on sun awe does not stack with that of rain or snow. This does not stack in any way with Mist.\n\nThe phantasms summoned are as follows:\n\n5% - Phantasmal Beast\n5% - Phantasmal Knight\n45% - Phantasmal Warrior\n45% - Phantasmal Wolf"
 #ainocast 1
 #end
 
@@ -778,9 +781,9 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 7
-#maxpower 7
-#pathlevel 5
+#power 6
+#maxpower 6
+#pathlevel 4
 #sound 31
 #fatiguecost 100
 #range 0
@@ -791,6 +794,7 @@
 
 #name 32 "Fields of the Dead"
 #descr 32 "The necromancer releases the powers of the underworld and reanimates bodies and bones across the entire battlefield. Ever more walking dead will emerge from the ground. Recently killed soldiers might reawaken and do battle against their former friends."
+#details "Every 320 ticks (or 23.4375 times a round), there is a 1 in 6 chance to trigger. Reanimates up to a DRN of corpses as soulless, with a 100% chance for armed soulless if there are available corpses. There is a 10% chance for national soulless to be spawned."
 #ainocast 1
 #end
 
@@ -850,7 +854,7 @@
 
 #name 64 "Ravenous Swarm"
 #descr 64 "This spell is sometimes used by nature mages to combat the undead. It is part of the natural order that the living finds sustenance from the dead, and with this spell the nature mage utilizes that and imbues a swarm of bugs with frenzied power and appetite to devour the walking dead. The swarm will consume the undead one after each other until the battle ends. Should the swarm fail to locate the dead it will start to eat the living instead."
-#details "One undead target gets 7 AN holy dmg (x3 vs undead/demons) each combat round. If the target dies a new undead target is randomly chosen. If there are no undead on the battlefield, living creatures are targeted instead."
+#details "Every 5120 ticks (or 1.46484375 times a round), selects a random undead target. If a target had previously been selected, will always be picked in preference to another random undead creature. If there are undead, a random living creature is selected, and as with the undead targets, it will prefer to attack the same target continuously. Inflicts 7 AN nonmagical damage, which is multiplied by 3 if the target is undead or a demon."
 #ainocast 1
 #end
 

@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 80
+#fatiguecostpereffect 60
 
 #unitmod "Summon Deathcurse"
 #descr "Anyone killing the summoned %creature% will suffer %its% curse for the rest of their life."

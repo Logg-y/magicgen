@@ -2,6 +2,7 @@
 #fireres 6
 #nameprefix "Blazing"
 #addweapon 350
+#req trample <= 0
 #descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
 #end
 
@@ -9,6 +10,7 @@
 #fireres 6
 #nameprefix "Firebreathing"
 #addweapon 61
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe blasts of fire onto its enemies."
 #end
 
@@ -16,12 +18,14 @@
 #poisonres 11
 #nameprefix "Vile"
 #addweapon 62
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe poisonous bile onto its enemies."
 #end
 
 #newunitmod "Summon Mind Blast"
 #nameprefix "Psychic"
 #addweapon 311
+#req trample <= 0
 #descr "This particular CREATURE is able to overload the minds of its enemies, paralyzing them."
 #end
 
@@ -29,6 +33,7 @@
 #coldres 6
 #nameprefix "Frostbreathing"
 #addweapon 226
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe blasts of frost onto its enemies."
 #end
 
@@ -36,18 +41,21 @@
 #poisonres 11
 #nameprefix "Poisonbreathing"
 #addweapon 141
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe blasts of toxic fluid onto its enemies."
 #end
 
 #newunitmod "Summon Gaze of Death"
 #nameprefix "Deathgaze"
 #addweapon 197
+#req trample <= 0
 #descr "This particular CREATURE is able to slay masses of enemies with its mere gaze."
 #end
 
 #newunitmod "Summon Elf Shot"
 #nameprefix "Fey"
 #addweapon 228
+#req trample <= 0
 #descr "This particular CREATURE able to conjure green fey blasts that fatigue those they hit."
 #end
 
@@ -55,6 +63,7 @@
 #fireres 6
 #nameprefix "Blazing"
 #addweapon 229
+#req trample <= 0
 #descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
 #end
 
@@ -62,6 +71,7 @@
 #shockres 6
 #nameprefix "Stormthrowing"
 #addweapon 243
+#req trample <= 0
 #descr "This particular CREATURE is able to hurl balls of lightning at enemies."
 #end
 
@@ -69,24 +79,28 @@
 #diseaseres 100
 #nameprefix "Plaguebreathing"
 #addweapon 254
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe huge blasts of diseased air at enemies."
 #end
 
 #newunitmod "Summon Web Spit"
 #nameprefix "Webspitting"
 #addweapon 262
+#req trample <= 0
 #descr "This particular CREATURE is able to spit entangling messes of webs at enemies."
 #end
 
 #newunitmod "Summon Soul Leech"
 #nameprefix "Leeching"
 #addweapon 269
+#req trample <= 0
 #descr "This particular CREATURE is able to leech the souls of its enemies."
 #end
 
 #newunitmod "Summon Theft of Life"
 #nameprefix "Draining"
 #addweapon 371
+#req trample <= 0
 #descr "This particular CREATURE is able to drain the life of enemies over a long distance."
 #end
 
@@ -94,6 +108,7 @@
 #nameprefix "Firebreathing"
 #fireres 6
 #addweapon 567
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe cones of fire."
 #end
 
@@ -101,31 +116,36 @@
 #coldres 6
 #nameprefix "Frostbreathing"
 #addweapon 568
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe cones of frost."
 #end
 
 #newunitmod "Summon Drake Gas"
-#poisonres 10
+#poisonres 11
 #nameprefix "Gasbreathing"
 #addweapon 569
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe cones of gas."
 #end
 
 #newunitmod "Summon Hypnotize"
 #nameprefix "Hypnotic"
 #addweapon 595
+#req trample <= 0
 #descr "This particular CREATURE is able to hypnotize enemies that approach."
 #end
 
 #newunitmod "Summon Corrosive Spit"
 #nameprefix "Spitting"
 #addweapon 599
+#req trample <= 0
 #descr "This particular CREATURE is able to spit corrosive fluid."
 #end
 
 #newunitmod "Summon Water Breath"
 #nameprefix "Waterbreathing"
 #addweapon 709
+#req trample <= 0
 #descr "This particular CREATURE is able to breathe a cone of high pressure water."
 #end
 
@@ -133,6 +153,7 @@
 #coldres 6
 #nameprefix "Icebreathing"
 #addweapon 752
+#req trample <= 0
 #descr "This particular CREATURE is able to produce a blast of cold air at nearby enemies."
 #end
 

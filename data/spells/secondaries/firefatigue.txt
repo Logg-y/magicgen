@@ -21,7 +21,13 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
 #nameprefix "Stifling"
+#nameprefix "Sweltering"
 #fatiguepersquare 2
 #scalingaoelimit 2.5
 
@@ -55,6 +61,12 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
+#nameprefix "Stifling"
 #nameprefix "Sweltering"
 #fatiguepersquare 4
 
@@ -96,7 +108,13 @@
 -- not fire damage
 #req spec !& 32
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
 #nameprefix "Stifling"
+#nameprefix "Sweltering"
 #fatiguepersquare 2
 
 #nextspell "fire fatigue Secondary mrnh damaging"

@@ -26,7 +26,7 @@
 #name 32 "NAMEPREFIX Life after Death"
 
 #descr 32 "SUBJECT is given a second chance to live if they were to fall in the current battle. They will return as ARTICLE soulless %being%."
-#details "Upon death, units are brought back as an appropriate kind of soulless. Some types of creatures cannot be brought back this way."
+#details "Upon death, creatures return as soulless. Many creatures, including but not limited to undead, immortals, demons, inanimates, creatures that are inherently ethereal, pretenders, and many animals, do not return. Those that do have the effects of Plague removed from them, become unblessed, and have their poison pool and fatigue reduced to zero. Damage does overflow onto soulless forms, but will always leave the new form with at least 1 hit point. Commanders will retain their commander status and any magic paths. This does not apply to creatures killed by application of 9000+ damage."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of undeath"
@@ -65,6 +65,7 @@
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of undeath"
+#details "Upon death, creatures return as soulless. Many creatures, including but not limited to undead, immortals, demons, inanimates, creatures that are inherently ethereal, pretenders, and many animals, do not return. Those that do have the effects of Plague removed from them, become unblessed, and have their poison pool and fatigue reduced to zero. Damage does overflow onto soulless forms, but will always leave the new form with at least 1 hit point. Commanders will retain their commander status and any magic paths. This does not apply to creatures killed by application of 9000+ damage."
 
 #end
 

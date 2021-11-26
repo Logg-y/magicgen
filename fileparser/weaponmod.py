@@ -5,7 +5,7 @@ from Entities.namecond import NameCond
 from Entities.weaponmod import WeaponMod
 from Exceptions.ParseError import ParseError
 from Services.utils import weaponmods
-from . import fileparserutils
+from Services import fileparserutils
 
 secondary_params_int = ["att", "def_", "len", "nratt", "ammo", "secondaryeffectid", "secondaryeffectalwaysid", "effect",
                         "damage", "spec", "range", "aoe", "setweaponmagic"]

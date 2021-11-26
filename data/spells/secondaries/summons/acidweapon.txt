@@ -8,9 +8,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.4
 
 #unitmod "Summon Acidweapon"
 #descr "The summoned %creature% are able to coat %its% weapons in highly corrosive acid."
+#details "Weapons that do not already have secondary effects are made magical and inflict 10AP acid on damage."
 
 #end

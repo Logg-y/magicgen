@@ -16,7 +16,8 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Blazing"
+#nameprefix "Flamearrow"
+#nameprefix "Firearrow"
 #fatiguepersquare 2
 #minfinalaoe 8
 

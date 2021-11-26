@@ -24,6 +24,9 @@
 #req spelltype !& 4
 
 #nameprefix "Unsettling"
+#nameprefix "Disturbing"
+#nameprefix "Unnerving"
+#nameprefix "Agitating"
 #fatiguepersquare 1
 
 
@@ -66,6 +69,9 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Unsettling"
+#nameprefix "Disturbing"
+#nameprefix "Unnerving"
+#nameprefix "Agitating"
 #fatiguepersquare 0.5
 
 #nextspell "fear type 2 Secondary mrnh damaging"

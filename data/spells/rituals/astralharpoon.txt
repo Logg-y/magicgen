@@ -18,7 +18,7 @@
 
 #name 16 "Astral Tether"
 #descr 16 "The mage sends out an astral cord through the Void which seeks out a commander in a distant land. Those of strong mind may be able to resist the touch of the cord and escape the effects of the spell. Upon connecting with a victim, the caster attempts to pull back the cord, which is largely a physical effort. The victim may however attempt to pull the other end of the cord, potentially bringing the caster towards him instead."
-#details "Astral Harpoon: A random commander in the targeted province is selected and makes a MR check. Should they fail, they immediately take 5AN magical damage. If the commander is unteleportable or this damage kills them, the spell ends. Otherwise, both the caster and target make rolls of Strength + Astral Level + DRN. The caster wins a tie. The loser is immediately teleported to the winner's location."
+#details "A random commander in the targeted province is selected and makes a MR check. Should they fail, they immediately take 5AN magical damage. If the commander is unteleportable or this damage kills them, the spell ends. Otherwise, both the caster and target make rolls of Strength + Astral Level + DRN. The caster wins a tie. The loser is immediately teleported to the winner's location. Losing this check may move an unteleportable caster. Path levels have no effect on this spell's MR check, but the caster's penetration bonuses are respected."
 
 #spelltype 4
 #end

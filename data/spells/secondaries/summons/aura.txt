@@ -4,7 +4,7 @@
 #anysummon 1
 
 #paths 4
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -12,7 +12,9 @@
 
 #unitmod "Summon Chillaura"
 #descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
-#details "Summoned creatures gain chill aura 3."
+#details "Summoned creatures gain chill aura 3. The summoned creature gains +8 cold resistance, or +7 it it had none originally."
+
+#set ainocast 1
 
 #end
 
@@ -24,7 +26,7 @@
 #anysummon 1
 
 #paths 1
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -32,7 +34,7 @@
 
 #unitmod "Summon Heataura"
 #descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
-#details "Summoned creatures gain heat aura 3."
+#details "Summoned creatures gain heat aura 3. The summoned creature gains +8 fire resistance, or +7 it it had none originally."
 
 #end
 
@@ -50,7 +52,7 @@
 
 #unitmod "Summon Poisonaura"
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
-#details "Summoned creatures gain poison aura 3."
+#details "Summoned creatures gain poison aura 3. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
 
 #set ainocast 1
 
@@ -70,7 +72,7 @@
 
 #unitmod "Summon Diseaseaura"
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
-#details "Summoned creatures gain disease aura 3."
+#details "Summoned creatures gain disease aura 3 and 100% disease resistance."
 
 
 #set ainocast 1
@@ -83,15 +85,15 @@
 #anysummon 1
 
 #paths 16
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.6
 
 #unitmod "Summon Mindslime"
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
-#details "Summoned creatures gain mind slime 3."
+#details "Summoned creatures gain mind slime 3 and +11 Void Sanity."
 
 #set ainocast 1
 #end
@@ -102,11 +104,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.6
 
 #unitmod "Summon Sleepaura"
 #descr "Enemies around the summoned %creature% rapidly fall into a magical slumber. Those that fail to resist fall asleep."
@@ -120,7 +122,7 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -141,15 +143,15 @@
 #anysummon 1
 
 #paths 4
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.6
 
 #unitmod "Summon Chillaura 6"
 #descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
-#details "Summoned creatures gain chill aura 6."
+#details "Summoned creatures gain chill aura 6. The summoned creature gains +8 cold resistance, or +7 it it had none originally."
 
 #set ainocast 1
 #end
@@ -160,15 +162,15 @@
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.6
 
 #unitmod "Summon Heataura 6"
 #descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
-#details "Summoned creatures gain heat aura 6."
+#details "Summoned creatures gain heat aura 6. The summoned creature gains +8 fire resistance, or +7 it it had none originally."
 
 #set ainocast 1
 #end
@@ -183,11 +185,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.4
+#mult fatiguecost 2.2
 
 #unitmod "Summon Poisonaura 6"
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
-#details "Summoned creatures gain poison aura 6."
+#details "Summoned creatures gain poison aura 6. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
 
 #set ainocast 1
 #end
@@ -202,11 +204,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.8
 
 #unitmod "Summon Diseaseaura 6"
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
-#details "Summoned creatures gain disease aura 6."
+#details "Summoned creatures gain disease aura 6 and 100% disease resistance."
 
 #set ainocast 1
 #end
@@ -218,15 +220,15 @@
 #anysummon 1
 
 #paths 16
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.5
+#mult fatiguecost 1.9
 
 #unitmod "Summon Mindslime 6"
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
-#details "Summoned creatures gain mind slime 6."
+#details "Summoned creatures gain mind slime 6 and +11 Void Sanity."
 
 #set ainocast 1
 #end
@@ -237,11 +239,11 @@
 #anysummon 1
 
 #paths 64
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.9
 
 #unitmod "Summon Sleepaura 6"
 #descr "Enemies around the summoned %creature% rapidly fall into a magical slumber. Those that fail to resist fall asleep."
@@ -255,11 +257,11 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.1
+#mult fatiguecost 1.8
 
 #unitmod "Summon Fearaura 10"
 #descr "Enemies around the summoned %creature% become magically frightened and may flee the battle."
@@ -277,15 +279,15 @@
 #anysummon 1
 
 #paths 4
-#power -3
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.6
+#mult fatiguecost 1.9
 
 #unitmod "Summon Chillaura 10"
 #descr "The summoned %creature% %is% surrounded by ARTICLE cold %wind%, chilling all those nearby that are not cold resistant."
-#details "Summoned creatures gain chill aura 10."
+#details "Summoned creatures gain chill aura 10. The summoned creature gains +8 cold resistance, or +7 it it had none originally."
 #set ainocast 1
 #end
 
@@ -295,15 +297,15 @@
 #anysummon 1
 
 #paths 1
-#power -3
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.6
+#mult fatiguecost 1.9
 
 #unitmod "Summon Heataura 10"
 #descr "The summoned %creature% %is% surrounded by ARTICLE hot %wind%, tiring all those nearby that are not heat resistant."
-#details "Summoned creatures gain heat aura 10."
+#details "Summoned creatures gain heat aura 10. The summoned creature gains +8 fire resistance, or +7 it it had none originally."
 #set ainocast 1
 #end
 
@@ -317,11 +319,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3.2
+#mult fatiguecost 2.6
 
 #unitmod "Summon Poisonaura 10"
 #descr "The summoned %creature% %is% surrounded by toxic fumes, poisoning those nearby that are not resistant."
-#details "Summoned creatures gain poison aura 10."
+#details "Summoned creatures gain poison aura 10. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
 #set ainocast 1
 #end
 
@@ -331,15 +333,15 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.6
+#mult fatiguecost 2.1
 
 #unitmod "Summon Diseaseaura 10"
 #descr "The summoned %creature% %is% the carrier of many virulent diseases, spreading to those nearby that fail to resist. The %creature% also become immune to all diseases."
-#details "Summoned creatures gain disease aura 10."
+#details "Summoned creatures gain disease aura 10 and 100% disease resistance."
 #set ainocast 1
 #end
 
@@ -350,15 +352,15 @@
 #anysummon 1
 
 #paths 16
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.5
+#mult fatiguecost 2.2
 
 #unitmod "Summon Mindslime 10"
 #descr "The minds of enemies around the summoned %creature% become assaulted and twisted. Those that fail to resist become slowed."
-#details "Summoned creatures gain mind slime 10."
+#details "Summoned creatures gain mind slime 10 and +11 Void Sanity."
 #set ainocast 1
 #end
 
@@ -368,11 +370,11 @@
 #anysummon 1
 
 #paths 64
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3.2
+#mult fatiguecost 2.2
 
 #unitmod "Summon Sleepaura 10"
 #descr "Enemies around the summoned %creature% rapidly fall into a magical slumber. Those that fail to resist fall asleep."
@@ -386,11 +388,11 @@
 #anysummon 1
 
 #paths 32
-#power -3
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 3.0
+#mult fatiguecost 2.2
 
 #unitmod "Summon Fearaura 18"
 #descr "Enemies around the summoned %creature% become magically frightened and may flee the battle."

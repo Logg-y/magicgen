@@ -24,6 +24,9 @@
 #req spelltype !& 4
 
 #nameprefix "Frightening"
+#nameprefix "Terrifying"
+#nameprefix "Mortifying"
+#nameprefix "Fearsome"
 #fatiguepersquare 3
 #scalingaoelimit 1.5
 
@@ -58,8 +61,10 @@
 
 -- not ritual
 #req spelltype !& 4
-
+#nameprefix "Frightening"
 #nameprefix "Terrifying"
+#nameprefix "Mortifying"
+#nameprefix "Fearsome"
 #fatiguepersquare 6
 #scalingaoelimit 2.0
 
@@ -101,6 +106,9 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Frightening"
+#nameprefix "Terrifying"
+#nameprefix "Mortifying"
+#nameprefix "Fearsome"
 #fatiguepersquare 2
 
 #nextspell "fear type 1 Secondary mrnh damaging"

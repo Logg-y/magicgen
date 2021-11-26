@@ -1,4 +1,4 @@
-#newsecondary "Morale Boost Secondary =="
+#newsecondary "Morale Boost Secondary"
 
 -- buff only
 #spelltype 1
@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Courageous"
+#nameprefix "Uplifting"
+#nameprefix "Inspiring"
+#nameprefix "Enlivening"
 #fatiguepersquare 0.5
 #minfinalaoe 10
 

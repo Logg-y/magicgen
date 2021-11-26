@@ -1,3 +1,4 @@
+
 #neweffect "Petrification"
 #effect 99
 #damage 999
@@ -7,7 +8,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
+#scalerate 1.7
 -- #scalecost 0.7
 
 #aoe 0
@@ -27,7 +28,7 @@
 #namecond2 1 < effectiveaoe < 20 8 "NAMEPREFIX Petrify Group"
 #namecond effectiveaoe >= 20 8 "NAMEPREFIX Mass Petrification"
 
-#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected targets become petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #descr 8 "The caster temporarily turns creatures within a SIZE area to stone. There is no resisting this effect. Instead of reverting to their original form, petrified creatures may crumble to dust."
 
@@ -55,10 +56,10 @@
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10121
 #sound 45
-#fatiguecost 200
+#fatiguecost 400
 #range 5010
 #precision 100
 
@@ -69,7 +70,7 @@
 
 #name 8 "Field of Statues"
 
-#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected targets become petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #descr 8 "The caster attempts to petrify all creatures on the battlefield. There is a chance that they will not survive the recovery process."
 

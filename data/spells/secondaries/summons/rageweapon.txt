@@ -8,9 +8,9 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.4
 
 #unitmod "Summon Rageweapon"
 #descr "The summoned %creature% %is% able to make enemies angry upon wounding them. Angry enemies may strike at nearby friends, but the victim may however resist this effect."
-
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, victims become enraged. Weapons which already have secondary effects are unaffected."
 #end

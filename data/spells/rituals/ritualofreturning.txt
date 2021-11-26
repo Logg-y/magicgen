@@ -15,6 +15,7 @@
 
 #name 16 "Ritual of Returning"
 #descr 16 "The mage will return to the home citadel at once if he is wounded. The spell lasts until the mage actually has been wounded and returned home. This ritual will result in swift death for a mage if the home citadel has been conquered by the enemy."
+#details "The next time the caster takes damage, they are returned to their owner's capital and the effect ends. If a unit on the battlefield has Astral Fetters, does nothing (but is not consumed) unless the caster has Void Sanity. Has no failure chance, and functions even on other planes. This spell is triggered even by damage due to spellcasting fatigue. Activation in this case will cause the spell being casted to fail and any gems used to be lost."
 
 #spelltype 4
 #end

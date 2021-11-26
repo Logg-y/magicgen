@@ -22,7 +22,13 @@
 #req spelltype !& 4
 #req damage != 16384
 
+#nameprefix "Grasping"
 #nameprefix "Gripping"
+#nameprefix "Grabbing"
+#nameprefix "Burying"
+#nameprefix "Entombing"
+#nameprefix "Engulfing"
+#nameprefix "Submerging"
 #fatiguepersquare 6
 #scalingaoelimit 1.5
 
@@ -59,6 +65,12 @@
 #req damage != 16384
 
 #nameprefix "Grasping"
+#nameprefix "Gripping"
+#nameprefix "Grabbing"
+#nameprefix "Burying"
+#nameprefix "Entombing"
+#nameprefix "Engulfing"
+#nameprefix "Submerging"
 #fatiguepersquare 3
 #scalingaoelimit 2.0
 
@@ -100,7 +112,13 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Grasping"
 #nameprefix "Gripping"
+#nameprefix "Grabbing"
+#nameprefix "Burying"
+#nameprefix "Entombing"
+#nameprefix "Engulfing"
+#nameprefix "Submerging"
 #fatiguepersquare 6
 
 #nextspell "Earthmeld Secondary mrnh damaging"

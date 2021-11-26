@@ -33,7 +33,7 @@
 #skipflightspr 1
 #name 8 "NAMEPREFIX Earthquake"
 #descr 8 "With a thundering boom, the ground heaves and erupts, throwing soldiers into crevices that close after a few seconds."
-#details "The defence checking mechanism of this spell causes each affected unit to roll their defence skill, not including weapon modifiers or fatigue, vs 3d6 exploding. The defender wins ties."
+#details "The defence checking mechanism of this spell causes each affected unit to roll their defence skill, not including weapon modifiers or fatigue, vs 3d6 exploding. The defender wins ties. Creatures that cannot currently fly due to a storm are still unaffected by this spell."
 
 
 #spelltype 66

@@ -493,6 +493,9 @@ class SpellEffect(object):
         scaleamt = int(round(scaleamt))
         print(f"scaleamt = {scaleamt}")
 
+        if self.spelltype & SpellTypes.RESEARCH_SCALES_AISPELLMOD:
+            s.aispellmod = (actualpowerlvl + 1) * s.aispellmod
+
         # only do this if there is something to scale
         if self.spelltype & SpellTypes.POWER_SCALES_AOE or self.spelltype & SpellTypes.POWER_SCALES_DAMAGE or \
                 self.spelltype & SpellTypes.POWER_SCALES_NREFF or self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES \
@@ -688,8 +691,11 @@ class SpellEffect(object):
                         if attempts > 10000:
                             raise Exception(f"Likely infinite nextspell recursion in {self.name}")
                 else:
-                    setattr(s, param, getattr(s, param) + paramval)
-                    print(f"mod: Added {paramval} to {param}")
+                    if getattr(s, param) is not None:
+                        setattr(s, param, getattr(s, param) + paramval)
+                        print(f"mod: Added {paramval} to {param}")
+                    elif paramval != 0:
+                        print(f"WARNING: trying to add {paramval} to parameter with value None {param}")
 
         for attrib, val in secondary.setcommands:
             print(f"secondary: Set spell {attrib} to {val}")
@@ -930,9 +936,18 @@ class SpellEffect(object):
             s.details = s.details.strip()
 
         # Damage clouds
-        if s.effect > 1000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
+        if s.effect > 1000 and s.effect < 10000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
             s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
             s.details = s.details.strip()
+        if s.effect > 1000 and s.effect < 10000:
+            dur = s.effect // 1000
+            # Chain lightning clouds want different text really
+            if s.effect % 1000 != 134:
+                s.details += f" The cloud affects those standing within it every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details = s.details.strip()
+            else:
+                s.details += f" The cloud releases chain lightning every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details = s.details.strip()
 
         if s.ainocast > 0 and s.effect < 10000:
             s.details += " This spell will not be cast unless scripted."
@@ -1157,6 +1172,8 @@ class SpellEffect(object):
         # Fill in placeholders in modcmdsbefore
         # This is event stuff
         s.modcmdsbefore = s.modcmdsbefore.replace("SPELLNAME", s.name)
+        # many details contain % which is the pluralisation character - not allowing them is needed to avoid the RE parser being sad over mismatched %
+        s.details = naming.parsestring(s.details, isspell=False, spell=s, dopluralisations=False)
         # the game crashes out if any details are empty strings
         s.details = s.details.strip()
         if s.details == "":
@@ -1294,6 +1311,14 @@ class SpellEffect(object):
             spell.multiplyAISpellMod(0.5)
         elif realaoe == 662: # 5% of field
             spell.multiplyAISpellMod(0.05)
+
+        # Adjust Illwinter AI score for multi projectiles, because 16+ projectiles turns it into a 5x5 aoe consideration
+        # with each square's weight being (nreff*100)/26 (and twice as much for the mid square)
+        realnreff = spell.nreff % 1000 + (spell.path1level * (spell.nreff // 1000))
+        if (realaoe == 0 and realnreff >= 16) or (realaoe == 0 and realnreff > 1):
+            mult = 1.0 / (realnreff / 2.0)
+            spell.multiplyAISpellMod(mult)
+
 
     def scaleSpellEffectsToFatigue(self, s, desiredfatigue):
         flatnumeffects = s.nreff % 1000
@@ -1433,7 +1458,7 @@ class SpellEffect(object):
             # magma child: 162
 
             # Mine:
-            myaiscore = 5 + (0.5 + (self.fatiguecost / 40)) * (spell.path1level + max(0, spell.path2level)) * 10 + ((2 + spell.researchlevel) * 8)
+            myaiscore = 5 + (0.5 + (self.fatiguecost / 40)) * (spell.path1level + max(0, spell.path2level)) * 10 + ((2 + spell.researchlevel) * 10)
             myaiscore += (spell.fatiguecost / 2)
             proportion = myaiscore/finalaiscore
             spell.multiplyAISpellMod(proportion)

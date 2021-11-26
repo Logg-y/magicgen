@@ -1,0 +1,425 @@
+#newsecondary "Buff Paralysis mrn"
+
+-- buff only
+#spelltype 1
+
+#paths fawesdnb
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Overloaded"
+#nameprefix "Unrefined"
+#nameprefix "Crude"
+#nameprefix "Coarse"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#skipchance 40
+
+#minfinalaoe 5
+
+#nextspell "Paralysis Secondary mrn buff"
+
+#descr "This spell is unrefined and may paralyse recipients with raw magical discharge."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer 10 paralysis damage."
+
+#end
+
+#newsecondary "Buff Stun mrn"
+
+-- buff only
+#spelltype 1
+
+#paths fawesdnb
+#power 1
+#pathlevel 0
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Overloaded"
+#nameprefix "Unrefined"
+#nameprefix "Crude"
+#nameprefix "Coarse"
+#set ainocast 1
+#fatiguepersquare -2.5
+
+#skipchance 40
+
+#minfinalaoe 5
+
+#nextspell "Stun Secondary mrn buff"
+
+#descr "This spell is unrefined and may stun recipients with raw magical discharge."
+#details "Affected friendly creatures make an MR check. Those that fail to resist become stunned: they are immobilised for 6500-8500 ticks (86-113% of a round), become unable to attack, move or repel. They also suffer -75% defence skill."
+
+#end
+
+#newsecondary "Buff Falsefetters mrn"
+
+-- buff only
+#spelltype 1
+
+#paths a
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Shackling"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Falsefetters Secondary mrn buff"
+
+#descr "This spell is unrefined and may trap recipients in bonds of magical energy."
+#details "Affected friendly creatures make an MR check. Those that fail to resist are trapped in false fetters, becoming immobilised and unable to attack, move, or repel. They also suffer -75% defence skill. Once a round, they make a check to escape. In order to break free they must roll MR + DRN of at least 21."
+
+#end
+
+
+#newsecondary "Buff Entangle mrn"
+
+-- buff only
+#spelltype 1
+
+#paths n
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Vinegripping"
+#nameprefix "Verdant"
+#nameprefix "Gripping"
+#nameprefix "Grasping"
+#nameprefix "Restraining"
+#nameprefix "Thorny"
+#nameprefix "Entangling"
+#nameprefix "Tangling"
+#nameprefix "Brambled"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Entangle Secondary mrn buff"
+
+#descr "This spell is unrefined and may cause rapid plant growth around those it affects."
+#details "Affected friendly creatures make an MR check. Those that fail to resist are entangled. $entangle_info$"
+
+#end
+
+#newsecondary "Buff Curse of Stones mrn"
+
+-- buff only
+#spelltype 1
+
+#paths e
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Burdening"
+#nameprefix "Encumbering"
+#nameprefix "Hampering"
+#nameprefix "Besetting"
+#nameprefix "Weighted"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Curse of Stones Secondary mrn buff"
+
+#descr "This spell is unrefined and may cause those it affects to suffer the weight of the earth pressing down upon them."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer $curseofstones_info$"
+
+#end
+
+#newsecondary "Buff Desiccation mrn"
+
+-- buff only
+#spelltype 1
+
+#paths fw
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Dehydrating"
+#nameprefix "Desiccating"
+#nameprefix "Parching"
+#nameprefix "Drying"
+#nameprefix "Evaporating"
+
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Desiccation Secondary mrn buff"
+
+#descr "This spell is unrefined and may cause those it affects to have the water pulled out of them."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer desiccation. $desiccation_info$"
+
+#end
+
+#newsecondary "Buff Rust mrn"
+
+-- buff only
+#spelltype 1
+
+#paths we
+#power 0
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Corroding"
+#nameprefix "Corrosive"
+#nameprefix "Rusting"
+#nameprefix "Oxidising"
+#set ainocast 1
+#fatiguepersquare -2
+
+#minfinalaoe 5
+
+#nextspell "Rust Secondary mrn buff"
+
+#descr "This spell is unrefined and may cause the equipment of those it affects to become extremely rusty."
+#details "Affected friendly creatures make an MR check. Those that fail to resist have their equipment rusted. $rust_info$"
+
+#end
+
+
+#newsecondary "Buff Sleep mrn"
+
+-- buff only
+#spelltype 1
+
+#paths n
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Drowsy"
+#nameprefix "Sleepy"
+#nameprefix "Dozing"
+#nameprefix "Groggy"
+#nameprefix "Wearying"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Sleep Secondary mrn buff"
+
+#descr "This spell is unrefined and may awaken a need for deep slumber in those it affects."
+#details "Affected friendly creatures make an MR check. Those that fail to resist fall asleep. $sleep_info$"
+
+#end
+
+#newsecondary "Buff Earthgrip mrn"
+
+-- buff only
+#spelltype 1
+
+#paths we
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Grasping"
+#nameprefix "Gripping"
+#nameprefix "Grabbing"
+#nameprefix "Burying"
+#nameprefix "Entombing"
+#nameprefix "Engulfing"
+#nameprefix "Submerging"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Earthgrip Secondary mrn buff"
+
+#descr "This spell is unrefined and may soften the ground underneath recipients, causing them to become trapped."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer earth grip. $earthgrip_info$"
+
+#end
+
+
+#newsecondary "Buff Slime mrn"
+
+-- buff only
+#spelltype 1
+
+#paths w
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Sticky"
+#nameprefix "Slimy"
+#nameprefix "Viscid"
+#nameprefix "Gooey"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Slime Secondary mrn buff"
+
+#descr "This spell is unrefined and may coat recipients in magical slime."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer slime. $slime_info$"
+
+#end
+
+#newsecondary "Buff Slow mrn"
+
+-- buff only
+#spelltype 1
+
+#paths ws
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Slowing"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Slow Secondary mrn buff"
+
+#descr "This spell is unrefined and may slow the flow of time around recipients."
+#details "Affected friendly creatures make an MR check. Those that fail to resist are slowed. $slow_info$"
+
+#end
+
+#newsecondary "Buff Freezing mrn"
+
+-- buff only
+#spelltype 1
+
+#paths w
+#power 1
+#pathlevel -1
+
+-- various damage types
+#reqdamagingeffect 0
+
+#req damage != 8
+#req effect != 15	    -- returning
+
+-- not ritual
+#req spelltype !& 4
+
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
+#nameprefix "Chilling"
+#set ainocast 1
+#fatiguepersquare -3.5
+
+#minfinalaoe 5
+
+#nextspell "Freezing Secondary mrn buff"
+
+#descr "This spell is unrefined and may severely chill recipients."
+#details "Affected friendly creatures make an MR check. Those that fail to resist suffer numbness. $numbness_info$"
+
+#end

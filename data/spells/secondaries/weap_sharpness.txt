@@ -9,7 +9,11 @@
 -- various damage types
 #reqdamagingeffect 0
 
+-- not astral weapons
+#req damage != 1048576
 #req damage != 524288
+
+
 #req effect != 15	    -- returning
 
 
@@ -17,6 +21,9 @@
 #req spelltype !& 4
 
 #nameprefix "Keen"
+#nameprefix "Sharp"
+#nameprefix "Honed"
+#nameprefix "Edged"
 #fatiguepersquare 4
 #minfinalaoe 3
 
@@ -41,6 +48,8 @@
 -- various damage types
 #reqdamagingeffect 0
 
+-- not astral weapons
+#req damage != 1048576
 #req damage != 524288
 #req effect != 15	    -- returning
 
@@ -48,7 +57,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Keen"
 #nameprefix "Sharp"
+#nameprefix "Honed"
+#nameprefix "Edged"
 #fatiguepersquare 8
 #minfinalaoe 1
 

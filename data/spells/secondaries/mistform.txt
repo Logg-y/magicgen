@@ -17,6 +17,10 @@
 #req spelltype !& 4
 
 #nameprefix "Misty"
+#nameprefix "Foggy"
+#nameprefix "Hazy"
+#nameprefix "Cloudy"
+#nameprefix "Clouded"
 #fatiguepersquare 2
 
 #scalingaoelimit 2.5
@@ -47,7 +51,11 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Misty"
 #nameprefix "Foggy"
+#nameprefix "Hazy"
+#nameprefix "Cloudy"
+#nameprefix "Clouded"
 #fatiguepersquare 4
 #minfinalaoe 5
 

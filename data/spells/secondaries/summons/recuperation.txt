@@ -12,7 +12,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.1
 #magicpathvaluescaling 0.02
 
 #unitmod "Summon Recuperation"

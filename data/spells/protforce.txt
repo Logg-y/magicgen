@@ -11,8 +11,8 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 2
-#maxpower 9
+#power 1
+#maxpower 8
 #pathlevel 2
 #explspr 10224
 #sound 31
@@ -42,5 +42,6 @@
 
 #pathperresearch 0.5
 #end
+
 
 

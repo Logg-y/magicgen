@@ -23,6 +23,10 @@
 #req damage != 256
 
 #nameprefix "Rotting"
+#nameprefix "Scourging"
+#nameprefix "Decaying"
+#nameprefix "Senescent"
+#nameprefix "Baleful"
 #fatiguepersquare 4
 
 #scalingaoelimit 1.5
@@ -59,6 +63,8 @@
 #req spelltype !& 4
 #req damage != 256
 
+#nameprefix "Rotting"
+#nameprefix "Scourging"
 #nameprefix "Decaying"
 #nameprefix "Senescent"
 #nameprefix "Baleful"

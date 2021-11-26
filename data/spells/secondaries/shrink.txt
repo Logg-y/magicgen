@@ -23,6 +23,8 @@
 #req damage != 4294967296
 
 #nameprefix "Diminishing"
+#nameprefix "Deflating"
+#nameprefix "Shrinking"
 #fatiguepersquare 6
 
 #scalingaoelimit 1.5
@@ -58,6 +60,8 @@
 #req spelltype !& 4
 #req damage != 4294967296
 
+#nameprefix "Diminishing"
+#nameprefix "Deflating"
 #nameprefix "Shrinking"
 #fatiguepersquare 3
 
@@ -100,6 +104,8 @@
 #ondamage 1
 
 #nameprefix "Diminishing"
+#nameprefix "Deflating"
+#nameprefix "Shrinking"
 #fatiguepersquare 2.25
 
 #nextspell "Shrink Secondary mrnh damaging"
@@ -137,6 +143,8 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Diminishing"
+#nameprefix "Deflating"
 #nameprefix "Shrinking"
 #fatiguepersquare 1.25
 

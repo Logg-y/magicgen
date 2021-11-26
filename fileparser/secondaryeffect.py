@@ -5,7 +5,7 @@ from Entities.namecond import NameCond
 from Entities.secondaryeffect import SpellSecondaryEffect
 from Exceptions.ParseError import ParseError
 from Services.utils import secondaries
-from . import fileparserutils
+from Services import fileparserutils
 
 secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipchance", "range", "precision", "nreff",
                         "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "paths",

@@ -21,7 +21,12 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Damaging"
+#nameprefix "Sundering"
+#nameprefix "Ripping"
+#nameprefix "Ablating"
+#nameprefix "Ruining"
+#nameprefix "Crumbling"
+#nameprefix "Rupturing"
 #fatiguepersquare 2
 
 #req effect != 138
@@ -67,6 +72,11 @@
 #ondamage 1
 
 #nameprefix "Sundering"
+#nameprefix "Ripping"
+#nameprefix "Ablating"
+#nameprefix "Crumbling"
+#nameprefix "Ruining"
+#nameprefix "Rupturing"
 #fatiguepersquare 1.5
 
 #nextspell "Damagearmour Secondary damaging"

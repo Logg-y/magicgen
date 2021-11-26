@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.3
 
 #unitmod "Summon Regen"
 #descr "The summoned %creature% %is% filled with magic that rapidly closes their wounds."
@@ -27,7 +27,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2
+#mult fatiguecost 1.6
 
 #unitmod "Summon Regen 30"
 #descr "The summoned %creature% %is% filled with magic that very rapidly closes their wounds."

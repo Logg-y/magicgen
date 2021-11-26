@@ -22,6 +22,8 @@
 #req spelltype !& 4
 
 #nameprefix "Exhausting"
+#nameprefix "Debilitating"
+#nameprefix "Enervating"
 #fatiguepersquare 6
 
 #scalingaoelimit 2.5
@@ -57,7 +59,9 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Exhausting"
 #nameprefix "Debilitating"
+#nameprefix "Enervating"
 #fatiguepersquare 3
 
 #scalingaoelimit 3
@@ -102,6 +106,8 @@
 #req spec !& 8192
 
 #nameprefix "Exhausting"
+#nameprefix "Debilitating"
+#nameprefix "Enervating"
 #fatiguepersquare 2
 
 #nextspell "poison fatigue Secondary mrnh damaging"
@@ -142,7 +148,9 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Exhausting"
 #nameprefix "Debilitating"
+#nameprefix "Enervating"
 #fatiguepersquare 4
 
 #nextspell "poison fatigue Secondary mrn damaging"

@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Averting"
+#nameprefix "Preventative"
+#nameprefix "Warding"
+#nameprefix "Precluding"
 #fatiguepersquare 2
 #minfinalaoe 10
 
@@ -48,7 +51,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Averting"
 #nameprefix "Preventative"
+#nameprefix "Warding"
+#nameprefix "Precluding"
 #fatiguepersquare 4
 #minfinalaoe 5
 

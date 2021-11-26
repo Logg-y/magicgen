@@ -13,11 +13,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.15
 
 #unitmod "Summon Formationfighter 2"
 #descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
-
+#details "Summoned creatures have formation fighter 2."
 #end
 
 #newsecondary "Summon Formationfighter 3"
@@ -33,10 +33,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.325
+#mult fatiguecost 1.2
 
 #unitmod "Summon Formationfighter 3"
 #descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
+#details "Summoned creatures have formation fighter 3."
 
 #end
 
@@ -53,9 +54,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.45
+#mult fatiguecost 1.25
 
 #unitmod "Summon Formationfighter 4"
+#details "Summoned creatures have formation fighter 4."
 #descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
 
 #end
@@ -73,9 +75,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.45
+#mult fatiguecost 1.3
 
 #unitmod "Summon Formationfighter 5"
+#details "Summoned creatures have formation fighter 5."
 #descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
 
 #end
@@ -93,9 +96,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.45
+#mult fatiguecost 1.35
 
 #unitmod "Summon Formationfighter 6"
+#details "Summoned creatures have formation fighter 6."
 #descr "The summoned %creature% %is% adept at fighting in proximity with others, and can fit more units into one square."
 
 #end
@@ -106,16 +110,17 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 #req effect != 10050
 #req effect != 21
 #req effect != 10021
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Formationfighter 2 greater"
+#details "Summoned creatures have formation fighter 4."
 #descr "The summoned %creature% %is% very adept at fighting in proximity with others, and can fit more units into one square."
 
 #end
@@ -126,16 +131,17 @@
 #anysummon 1
 
 #paths 0
-#power -1
+#power 0
 #req effect != 10050
 #req effect != 21
 #req effect != 10021
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.45
+#mult fatiguecost 1.35
 
 #unitmod "Summon Formationfighter 3 greater"
+#details "Summoned creatures have formation fighter 6."
 #descr "The summoned %creature% %is% very adept at fighting in proximity with others, and can fit more units into one square."
 
 #end

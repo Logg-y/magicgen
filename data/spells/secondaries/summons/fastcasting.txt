@@ -48,7 +48,7 @@
 -- not montag
 #req damage > 0
 #magicpathvaluescaling 1.0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.4
 
 #unitmod "Summon Fastcaster 50"
 #descr "The summoned %creature% %is% able to cast spells significantly faster than normal."
@@ -62,7 +62,7 @@
 #anysummon 1
 
 #paths 0
-#power -3
+#power -2
 
 -- useless in assassinations
 #req effect != 10050
@@ -77,7 +77,7 @@
 -- not montag
 #req damage > 0
 #magicpathvaluescaling 1.0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.6
 
 #unitmod "Summon Fastcaster 100"
 #descr "The summoned %creature% %is% able to cast spells significantly faster than normal."

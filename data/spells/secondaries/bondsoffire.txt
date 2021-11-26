@@ -23,7 +23,9 @@
 #req damage != 65536
 #req paths != 256
 
-#nameprefix "Trapping"
+#nameprefix "Ensnaring"
+#nameprefix "Firebonding"
+#nameprefix "Imprisoning"
 #fatiguepersquare 6
 #scalingaoelimit 1.5
 
@@ -60,6 +62,8 @@
 #req damage != 65536
 
 #nameprefix "Ensnaring"
+#nameprefix "Firebonding"
+#nameprefix "Imprisoning"
 #fatiguepersquare 3
 #scalingaoelimit 2.0
 
@@ -102,7 +106,9 @@
 -- not on damage already
 #ondamage 1
 
-#nameprefix "Trapping"
+#nameprefix "Ensnaring"
+#nameprefix "Firebonding"
+#nameprefix "Imprisoning"
 #fatiguepersquare 4
 
 #nextspell "Firebonds Secondary mrnh damaging"
@@ -142,6 +148,8 @@
 #ondamage 1
 
 #nameprefix "Ensnaring"
+#nameprefix "Firebonding"
+#nameprefix "Imprisoning"
 #fatiguepersquare 2
 
 #nextspell "Firebonds Secondary mrn damaging"

@@ -26,6 +26,8 @@
 #name 128 "NAMEPREFIX Claws of Kokytos"
 #descr 128 "A gate is opened and the target is instantly thrown into Kokytos, the icy realm of Devils. This effect cannot be resisted by any means and being sent to Kokytos means certain death for most mortals."
 
+#details "The victim is banished to Kokytos. Non-commanders die, without any checks. Every round, creatures take an 1d20 AN cold damage. There is a 50% chance that a commander comes under attack (as below). Battles are under the effects of Grip of Winter. There is then a base 8% chance to return each turn, modified by appropriate planar returning effects. Upon returning, there is a 10% chance to gain +1 water magic, to a maximum of 4. There is a 50% chance that returning creatures return in a random friendly province, otherwise they pick from any province on the map. In any case, they may immediately drown upon returning.\n\nFails if there is a creature with Astral Fetters on the field, and the caster lacks Void Sanity.\n\nAttacks may be from the following:\n\n1/4: 1d20 Unfrozen\n3/16: 1d20 Winter Wolves\n9/16: 1d8 Frost Fiends\n\nAll die rolls above are openended."
+
 #priority 1
 #namecond range < 10 128 "NAMEPREFIX embrace of kokytos"
 
@@ -62,6 +64,8 @@
 
 #priority 1
 #namecond range < 10 128 "NAMEPREFIX embrace of inferno"
+
+#details "The victim is banished to Inferno. Non-commanders die, without any checks. Every round, creatures take an 1d20 AP fire damage. There is a 50% chance that a commander comes under attack by 2d30 Imps or 1d8 Devils. Battles are under the effects of Heat from Hell and are filled with squares that inflict 10 AP fire damage in the same manner as Vafur Flames. There is then a base 8% chance to return each turn, modified by appropriate planar returning effects. Upon returning, there is a 10% chance to gain +1 fire magic, to a maximum of 4. There is a 50% chance that returning creatures return in a random friendly province, otherwise they pick from any province on the map. In any case, they may immediately drown upon returning.\n\nFails if there is a creature with Astral Fetters on the field, and the caster lacks Void Sanity.\n\nAll die rolls above are openended."
 
 
 #end

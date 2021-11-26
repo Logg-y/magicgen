@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.2
+#mult fatiguecost 1.7
 
 #unitmod "Summon Breakarmor"
 #descr "Creatures wounded by the attacks of the %creature% have their armour rapidly warped and damaged by magical discharge, potentially destroying it instantly. This effect is potent enough to affect magical armour forged by mages."

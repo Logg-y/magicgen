@@ -3,7 +3,7 @@ import re
 
 from Entities import NewUnit
 from Exceptions.ParseError import ParseError
-from . import fileparserutils
+from Services import fileparserutils
 
 modifier_params_int = ["baseunit", "clearweapons"]
 modifier_params_str = []

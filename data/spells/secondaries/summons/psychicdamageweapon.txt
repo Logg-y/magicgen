@@ -8,9 +8,9 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.2
 
 #unitmod "Summon Psychicdamageweapon"
 #descr "The summoned %creature% %is% able to launch a psychic blast into the mind of targets wounded by %its% attacks."
-
+#details "Summoned creatures have their weapons made magical. Upon inflicting damage, non-mindless victims must make a MR check or take 1 AN damage in the head. Weapons which already have secondary effects are unaffected."
 #end

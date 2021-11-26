@@ -23,6 +23,13 @@
 #req spelltype !& 4
 
 #nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #fatiguepersquare 5
 #scalingaoelimit 2.0
 
@@ -57,7 +64,15 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Frosty"
 #nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
+
 #fatiguepersquare 2.5
 #scalingaoelimit 2.5
 
@@ -100,6 +115,13 @@
 #req spec !& 512
 
 #nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #fatiguepersquare 2.5
 
 #nextspell "10AP cold Secondary mrnh damaging"
@@ -137,6 +159,14 @@
 -- not ritual
 #req spelltype !& 4
 
+
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
 #nameprefix "Frigid"
 #fatiguepersquare 2
 #minfinalaoe 10
@@ -179,6 +209,14 @@
 -- not on damage already
 #ondamage 1
 
+
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
 #nameprefix "Frigid"
 #fatiguepersquare 1
 

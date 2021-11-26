@@ -279,6 +279,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* 512	effect is a battle summon
 	* 1024	unused, formerly a marker to not force blood spells to cost slaves
 	* 2048	battlefield enchantment
+	* 4096	research scales aispellmod, the spell's aispellmod is added for each additional research level
 		
 \#schools <int>
  * Ignore the modmanual values, this is now a bitmask for what research schools things are allowed into. Note that these are 2^(the mod manual values)

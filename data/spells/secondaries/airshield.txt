@@ -15,7 +15,10 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Shielding"
+#nameprefix "Arrowshielding"
+#nameprefix "Windtouched"
+#nameprefix "Enshrouded"
+#nameprefix "Arrowguarding"
 #fatiguepersquare 1.5
 #minfinalaoe 12
 #scalingaoelimit 2.5
@@ -44,7 +47,10 @@
 -- not ritual
 #req spelltype !& 4
 
-#nameprefix "Protective"
+#nameprefix "Arrowshielding"
+#nameprefix "Windtouched"
+#nameprefix "Enshrouded"
+#nameprefix "Arrowguarding"
 #fatiguepersquare 0.5
 #minfinalaoe 5
 #scalingaoelimit 2.0

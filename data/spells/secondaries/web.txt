@@ -23,6 +23,7 @@
 #req damage != 536870912
 
 #nameprefix "Webwoven"
+#nameprefix "Webbed"
 #fatiguepersquare 2
 
 #scalingaoelimit 2.0
@@ -60,6 +61,7 @@
 #req spelltype !& 4
 #req damage != 536870912
 
+#nameprefix "Webwoven"
 #nameprefix "Webbed"
 #fatiguepersquare 4
 
@@ -103,6 +105,7 @@
 #ondamage 1
 
 #nameprefix "Webwoven"
+#nameprefix "Webbed"
 #fatiguepersquare 1.5
 
 #nextspell "Web Secondary mrn damaging"
@@ -141,6 +144,7 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Webwoven"
 #nameprefix "Webbed"
 #fatiguepersquare 3
 

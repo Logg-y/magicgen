@@ -10,7 +10,7 @@ synonyms = Synonyms()
 pluraliser = Pluraliser()
 
 
-def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell=None, isspell=False):
+def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell=None, isspell=False, dopluralisations=True):
     # This is needed for the variable descriptions in modular globals
     if len(string) == 0:
         return string
@@ -72,22 +72,23 @@ def parsestring(string, plural=False, aoe=0, spelltype=0, titlecase=False, spell
         # print(string)
         parsedname = re.sub(f"[$]{text}[$]", pluralised, parsedname)
     # print(string)
-
-    while 1:
-        m = re.search("%(.+?)%", parsedname)
-        if m is None:
-            break
-        text = m.groups()[0]
-        if plural:
-            pluralised = pluraliser.pluralise(text)
-        else:
-            pluralised = text
-        parsedname = re.sub(f"%{text}%", pluralised, parsedname)
+    if dopluralisations:
+        while 1:
+            m = re.search("%(.+?)%", parsedname)
+            if m is None:
+                break
+            text = m.groups()[0]
+            if plural:
+                pluralised = pluraliser.pluralise(text)
+            else:
+                pluralised = text
+            parsedname = re.sub(f"%{text}%", pluralised, parsedname)
 
     # remove double spaces
     parsedname = parsedname.replace("  ", " ")
     parsedname = parsedname.strip()
-    parsedname = parsedname[0].upper() + parsedname[1:]
+    if len(parsedname) > 1:
+        parsedname = parsedname[0].upper() + parsedname[1:]
 
     if titlecase:
         words = parsedname.split(" ")

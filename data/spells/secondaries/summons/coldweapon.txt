@@ -4,13 +4,13 @@
 #anysummon 1
 
 #paths 4
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.25
 
 #unitmod "Summon Coldfatigueweapon"
 #descr "The summoned %creature% %is% able to chill and fatigue enemies with attacks."
-
+#details "Weapons that do not already have secondary effects are made magical and inflict 10AN cold fatigue on damage."
 #end

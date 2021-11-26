@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Healing"
+#nameprefix "Restorative"
+#nameprefix "Curing"
+#nameprefix "Mending"
 #fatiguepersquare 1
 #minfinalaoe 5
 

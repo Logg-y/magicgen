@@ -16,7 +16,7 @@
 
 #name 8 "Melancholia"
 #descr 8 "The caster curses a province with melancholia. The populace becomes depressed, cynical and listless. Peasants don't care about harvesting and let their livestock wander. Craftsmen only work when they feel like it and soldiers tend to desert unless whipped into obedience. Even the temples are left untended. The Dominion of the local god will decrease."
-#details "Scale of Sloth is set to 3. Dominion is reduced by 1-2. All units in the province must make a MR check vs 10 and a morale check vs 10. If they fail both they desert."
+#details "Sloth scale is set to 3. Removes 1 or 2 points of dominion at equal chances. All units belonging to the province owner make a check of Morale + DRN vs 10 + DRN. The victim wins a tie. Should they fail the morale check, they make a check of MR + DRN vs 10 + DRN, where the caster wins ties. The caster's penetration bonus is not used for this, and the victim's path levels do not confer additional resistance. Those that fail both checks suffer 9999 damage, twice."
 
 #spelltype 4
 #end

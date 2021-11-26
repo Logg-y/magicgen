@@ -1,0 +1,46 @@
+-- Single remote searches are currently RL3 x2 range 4 for two gems
+
+#newmodifier "Remote Search X1 modifier"
+
+#spelltype 4
+
+#power -1
+
+#req effect == 10048
+
+#pathlevel -1
+#fatiguecost 100
+
+-- not multi searching
+#req damage < 50
+
+#end
+
+#newmodifier "Remote Search cheaper modifier"
+
+#spelltype 4
+
+#power -1
+
+#req effect == 10048
+
+#pathlevel 1
+-- X3 and one gem
+#fatiguecost 100
+
+-- not multi searching
+#req damage < 50
+
+#end
+
+#newmodifier "Remote Search longer range"
+
+#spelltype 4
+
+#power -1
+
+#req effect == 10048
+
+#provrange 2
+
+#end

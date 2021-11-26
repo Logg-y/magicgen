@@ -17,6 +17,7 @@
 #req spelltype !& 4
 
 #nameprefix "Mosscoating"
+#nameprefix "Mossy"
 #fatiguepersquare 2
 #minfinalaoe 1
 
@@ -47,7 +48,7 @@
 
 -- not ritual
 #req spelltype !& 4
-
+#nameprefix "Mosscoating"
 #nameprefix "Mossy"
 #fatiguepersquare 4
 #minfinalaoe 5

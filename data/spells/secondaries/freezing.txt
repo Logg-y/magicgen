@@ -22,6 +22,14 @@
 #req spelltype !& 4
 #req damage != 268435456
 
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #nameprefix "Chilling"
 #fatiguepersquare 5
 
@@ -59,7 +67,15 @@
 #req spelltype !& 4
 #req damage != 268435456
 
-#nameprefix "Freezing"
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
+#nameprefix "Chilling"
 #fatiguepersquare 2.5
 #scalingaoelimit 2.0
 
@@ -101,6 +117,14 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #nameprefix "Chilling"
 #fatiguepersquare 1.6
 

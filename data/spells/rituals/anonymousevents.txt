@@ -93,7 +93,7 @@
 #name 2 "Breath of the Desert"
 #descr 1 "The caster curses a distant province with a dramatic rise in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
 #descr 2 "The caster curses a distant province with a dramatic rise in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
-#details "Population -5%, Heat+3."
+#details "Kills 5% population, +3 heat. This effect can only trigger once per province per turn, and the temperature change occurs in the event phase after both magic phase and regular battles have been resolved."
 #end
 
 #neweffect "Hurricane"
@@ -232,7 +232,7 @@
 #spelltype 4
 #name 128 "Send Dream Horror"
 #descr 128 "The caster sends a Defiler of Dreams to attack a distant province. The Dream Horror will project nightmares and feed on the emotional distress of its victims. Unrest will increase in the province until the Horror is found and slain. Dealing with horrors is not without risk however and the caster of this ritual might attract some unwanted attention."
-#details "Unrest +30, summons a stealthy defiler of dreams in the province which causes +20 unrest per turn. Reported as a random event. Casting this spell has a 20% chance of horror marking the caster."
+#details "This spell has a 20% chance to add one horror mark to the caster. +30 unrest, creates a stealthy Defiler of Dreams, which adds 20 unrest a turn. If the targeted province is not a throne province, the defiler has a 5% chance per turn to disappear. If Cataclysm or Astral Corruption are active, it instead has a 75% chance per turn to disappear."
 #end
 
 #neweffect "Tidal Wave"
@@ -305,7 +305,7 @@
 #spelltype 4
 #name 4 "Wolven Winter"
 #descr 4 "The caster curses a distant province with a dramatic fall in temperature. The mage can target any province of his choice and those affected will not know who has cast this spell upon them."
-#details "-5% population, +3 cold."
+#details "Kills 5% population, +3 cold. This effect can only trigger once per province per turn, and the temperature change occurs in the event phase after both magic phase and regular battles have been resolved."
 #end
 
 #neweffect "Wrath of Pazuzu"
@@ -329,5 +329,5 @@
 #spelltype 4
 #name 128 "Wrath of Pazuzu"
 #descr 128 "The caster unleashes an infernal tempest from the realm of Pazuzu upon a province. The storm is anything but natural and Shedim, servants of Pazuzu, can be heard bellowing in the gale. The storm causes unrest and devastation upon a province.."
-#details "Unrest +35, population -4%. Reported as a random event.."
+#details "Unrest +35, population -4%. Reported as a random event."
 #end

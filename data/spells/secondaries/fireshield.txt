@@ -17,6 +17,13 @@
 #req spelltype !& 4
 
 #nameprefix "Fireshielding"
+#nameprefix "Flameshielding"
+#nameprefix "Fireshrouding"
+#nameprefix "Flameshrouding"
+#nameprefix "Firecloaking"
+#nameprefix "Flamecloaking"
+#nameprefix "Firebarrier"
+#nameprefix "Flamebarrier"
 #fatiguepersquare 2
 #minfinalaoe 6
 #scalingaoelimit 2.0
@@ -47,6 +54,13 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fireshielding"
+#nameprefix "Flameshielding"
+#nameprefix "Fireshrouding"
+#nameprefix "Flameshrouding"
+#nameprefix "Firecloaking"
+#nameprefix "Flamecloaking"
+#nameprefix "Firebarrier"
 #nameprefix "Flamebarrier"
 #fatiguepersquare 4
 #minfinalaoe 3

@@ -66,7 +66,7 @@
 
 #name 16 "Divine Name"
 #descr 16 "The caster inscribes a divine name on a piece of paper and places it in the head of a mindless being. The being is gifted with an artificial mind and commanding abilities. The caster can also inscribe the name on the forehead of a willing target, increasing his mental faculties and making him a commander."
-
+#details "Any random magic paths on the recipient will be rerolled upon becoming a commander."
 #spelltype 4
 #end
 
@@ -88,7 +88,7 @@
 
 #name d "Inspiration of Unlife"
 #descr d "The necromancer fills an undead being with the knowledge and experience of the dead. The designated creature becomes a commander."
-#details "This spell may only target undead, including mindless undead."
+#details "Any random magic paths on the recipient will be rerolled upon becoming a commander. This spell may only target undead, including mindless undead."
 
 #spelltype 4
 #end
@@ -112,6 +112,6 @@
 
 #name 128 "Infernal Promotion"
 #descr 128 "The caster makes a demon the subject of a ritual, with much blood sacrifice. The demon is imbued with the powers of command and gains the ability to command troops."
-
+#details "Any random magic paths on the recipient will be rerolled upon becoming a commander. This spell may only target demons."
 #spelltype 4
 #end

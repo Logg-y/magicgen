@@ -21,7 +21,11 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
 #nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
 #fatiguepersquare 5
 #scalingaoelimit 2.0
 
@@ -55,7 +59,11 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fiery"
 #nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
 #fatiguepersquare 2.5
 #scalingaoelimit 2.5
 
@@ -97,7 +105,11 @@
 -- not fire damage
 #req spec !& 32
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
 #nameprefix "Scorching"
+#nameprefix "Searing"
+#nameprefix "Burning"
 #fatiguepersquare 2.5
 
 #nextspell "10AP fire Secondary mrnh damaging"
@@ -133,6 +145,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
 #nameprefix "Burning"
 #fatiguepersquare 3
 
@@ -174,6 +190,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Fiery"
+#nameprefix "Charring"
+#nameprefix "Scorching"
+#nameprefix "Searing"
 #nameprefix "Burning"
 #fatiguepersquare 1
 #minfinalaoe 10

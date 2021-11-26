@@ -23,6 +23,14 @@
 #req damage != 64
 
 #nameprefix "Vinegripping"
+#nameprefix "Verdant"
+#nameprefix "Gripping"
+#nameprefix "Grasping"
+#nameprefix "Restraining"
+#nameprefix "Thorny"
+#nameprefix "Entangling"
+#nameprefix "Tangling"
+#nameprefix "Brambled"
 #fatiguepersquare 6
 #scalingaoelimit 1.5
 
@@ -58,7 +66,15 @@
 #req spelltype !& 4
 #req damage != 64
 
+#nameprefix "Vinegripping"
+#nameprefix "Verdant"
+#nameprefix "Gripping"
+#nameprefix "Grasping"
+#nameprefix "Restraining"
+#nameprefix "Thorny"
 #nameprefix "Entangling"
+#nameprefix "Tangling"
+#nameprefix "Brambled"
 #fatiguepersquare 3
 #scalingaoelimit 2.0
 
@@ -102,6 +118,14 @@
 #ondamage 1
 
 #nameprefix "Vinegripping"
+#nameprefix "Verdant"
+#nameprefix "Gripping"
+#nameprefix "Grasping"
+#nameprefix "Restraining"
+#nameprefix "Thorny"
+#nameprefix "Entangling"
+#nameprefix "Tangling"
+#nameprefix "Brambled"
 #fatiguepersquare 4
 
 #nextspell "Entanglement Secondary mrnh damaging"
@@ -140,7 +164,15 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Vinegripping"
+#nameprefix "Verdant"
+#nameprefix "Gripping"
+#nameprefix "Grasping"
+#nameprefix "Restraining"
+#nameprefix "Thorny"
 #nameprefix "Entangling"
+#nameprefix "Tangling"
+#nameprefix "Brambled"
 #fatiguepersquare 2
 
 #nextspell "Entanglement Secondary mrn damaging"

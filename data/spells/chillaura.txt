@@ -34,7 +34,7 @@
 #namecond effectiveaoe >= 2 32 "NAMEPREFIX Warriors from the Grave"
 #namecond effectiveaoe >= 2 128 "NAMEPREFIX Warriors from Kokytos"
 
-#details "Grants chill aura and 10 cold resistance."
+#details "Grants +6 chill aura and 10 cold resistance."
 
 #descr 4 "SUBJECT %is% imbued with the chill of winter, fatiguing and freezing those nearby who are not resistant."
 #descr 32 "SUBJECT %is% imbued with the chill of the grave, fatiguing and freezing those nearby who are not resistant."

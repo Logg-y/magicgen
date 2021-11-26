@@ -23,6 +23,9 @@
 #req damage != 134217728
 
 #nameprefix "Sticky"
+#nameprefix "Slimy"
+#nameprefix "Viscid"
+#nameprefix "Gooey"
 #fatiguepersquare 6
 
 #scalingaoelimit 1.5
@@ -59,7 +62,10 @@
 #req spelltype !& 4
 #req damage != 134217728
 
+#nameprefix "Sticky"
 #nameprefix "Slimy"
+#nameprefix "Viscid"
+#nameprefix "Gooey"
 #fatiguepersquare 3
 
 #scalingaoelimit 2.0
@@ -103,6 +109,9 @@
 #ondamage 1
 
 #nameprefix "Sticky"
+#nameprefix "Slimy"
+#nameprefix "Viscid"
+#nameprefix "Gooey"
 #fatiguepersquare 4.5
 
 #nextspell "Slime Secondary mrnh damaging"
@@ -141,7 +150,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Sticky"
 #nameprefix "Slimy"
+#nameprefix "Viscid"
+#nameprefix "Gooey"
 #fatiguepersquare 2.25
 
 #nextspell "Slime Secondary mrn damaging"

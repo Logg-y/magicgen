@@ -16,7 +16,7 @@
 
 #name 16 "Arcane Nexus"
 #descr 16 "This mighty enchantment absorbs magical energies worldwide to replenish the caster's magical resources. Half of all magic gems used to cast spells and to create magic items will be absorbed into the Arcane Nexus and converted into astral pearls at a two to one ratio. The purity of Astral and Blood magic makes it impossible for the Nexus to absorb any magic when these types of spells are cast, but all other types of magic will have some of their power absorbed by the Nexus. Even when no spells are cast or no items are forged, the Nexus will absorb some ambient magic energy from the world."
-#details "Gathers Astral pearls equal to a quarter of all magic gems used for rituals and forging. Power from astral pearls and blood slaves are not gathered."
+#details "Each turn, generates pearls based on the number of gems (not including blood slaves and astral pearls) spent on forging and rituals that turn. Does not give income on the turn it was cast. The amount of pearls gathered is (openended d10 + 4 + total spent) / 4, rounded down."
 
 #spelltype 4
 #scalerate 0
@@ -39,7 +39,7 @@
 
 #name 128 "Astral Corruption"
 #descr 128 "This horrible ritual is the cause of Blood magic being banned in ancient times. With an awesome sacrifice, the fabric of astral space becomes tainted with blood. All spell casting uses the tainted Arcana and attracts the attention of Horrors. Every time a non-Blood magic ritual is cast or a magic item is forged, there is a chance that a Horror will follow the arcane flow and attack the mage."
-#details "Increases the impact of most horror-related activities, but does not stack with the Cataclysm. Pretenders have a 0.5% chance per turn to be attacked by the Eater of Gods, even if not horror marked. Heroes (in the Hall of Fame) have a 0.2% chance per turn to be attacked by the Hunter of Heroes.\nForging and ritual attack probability approximately ((Mage's Horror Marks * 20) + 1 - Province's Drain scale + number of gems spent) / 35. Items costing multiple gem types are evaluated separately."
+#details "Dramatically increases the impact of most horror-related activities, but does not stack with the Cataclysm. This includes the chance to upgrade horror types to a stronger version, the chance for horror marked commanders to be attacked, and the chances of the Eater of Gods and Hunter of Heroes attacking Pretenders and commanders in the Hall of Fame, respectively. Additionally, non-mindless commanders that perform rituals and forging gain a chance to be attacked. This effect scales with number of gems used. Rituals from items are not safe from this effect.\n\nFORGING AND RITUALS\n\nForging that includes two different gem types is evaluated twice, separately for each gem type. Blood slave costs in forging are ignored. Blood rituals are also unaffected. The attack probability is approximately ((mage's horror marks * 20) + 1 - Drain scale + number of gems spent) / 35.\n\nHORROR MARK ATTACKS\n\nCompared to normal game state, the chance of attack is multiplied by 10.\n\nHUNTER OF HEROES\n\nRarku becomes able to attack non horror marked heroes. As in a regular game state, checks proceed in order of increasing commander ID, at most one commander can be attacked this way each turn. As with the regular game state, both the 32.5% chance to consider a commander in the Hall of Fame and the additional 10% chance to attack anyone else with a heroic ability with present. The chance of an attack following consideration in percent becomes (2 + marks * 4), to a maximum of 20% at 5 or more horror marks.\n\nEATER OF GODS\n\nUmor becomes able to attack non-horrormarked non-mindless Pretenders. As in a regular game state, checks proceed in order of increasing nation ID, and at most one Pretender can be attacked this way each turn. There is a 50% chance to consider each pretender in turn. The chance of an attack following consideration in percent becomes (1 + marks * 2), to a maximum of 10% at 5 marks."
 
 #spelltype 4
 #scalerate 0
@@ -63,7 +63,7 @@
 
 #name 128 "Blood Vortex"
 #descr 128 "This horrifying ritual creates the blood vortex. A churning pool of polluted blood that roars horrible yet terribly alluring songs. The song of the vortex is heard by all mortals in the world, whispering sweet melodies of death and carnage, beckoning all people to come bask in its crimson presence. Its song is especially strongly felt by those whose blood is suitable for blood rituals, summoning them to the site of the ritual. The mortals that enter its presence stare dumbfounded on the waves and swirls in the vortex, or throw themselves heedlessly to drown in the bloody swirls. The master of the ritual then collects suitable victims to use in other rituals. Eventually, when no life is left in the world around the vortex, it dries out and dies. Provinces with strong influences of order will be less affected by the beckoning and those with strong turmoil influences will be more drawn to the vortex."
-#details "People are drawn from up to three remote provinces per turn. Two of these checks pick any province on the map at random, the third always selects an adjacent province. These provinces contribute (population/200) + d50 (exploding), to a (maximum of population/10). If the province does not have turmoil 2 or 3, this is divided by two. If the province has order 2 or 3, this is divided by two again. Twice the number of people that are contributed this way are deducted from the province's population. Underwater or provinces with no population are not valid.\n\nThe local province also contributes (population/100) + d100 (exploding), to a maximum of (population/10). Scales have no impact unlike remote provinces, but population is still deducted.\n\nThe final amount of slaves gained is equal to (local contribution + total remote contribution + closed d10)/9, rounded down."
+#details "People are drawn from up to three remote provinces per turn. Two of these checks pick any province on the map at random, the third always selects an adjacent province to where the spell was cast. These provinces contribute (population/200) + d50 (exploding), to a maximum of (population/10). If the province does not have turmoil 2 or 3, this is divided by two. If the province has order 2 or 3, this is divided by two again. Twice the number of people that are contributed this way are deducted from the province's population. Underwater or provinces with no population are not valid.\n\nThe local province also contributes (population/100) + d100 (exploding), to a maximum of (population/10). Scales have no impact unlike remote provinces, but population is still deducted.\n\nThe final amount of slaves gained is equal to (local contribution + total remote contribution + closed d10)/9, rounded down."
 
 #spelltype 4
 #scalerate 0
@@ -85,7 +85,7 @@
 
 #name 32 "Burden of Time"
 #descr 32 "This evil enchantment will make everyone in the world age at a highly accelerated rate. Unrest will increase in the entire world and soldiers will soon become crippled and useless. While this enchantment is active, the world will become more and more desolate until everyone dies."
-#details "Worldwide Population loss about -2%, slightly reduced or increased by growth/death scales, worldwide Unrest +d4. Units have a (41 + 4*Death scale)% chance to be aged 1d4 years (non-exploding)."
+#details "Worldwide Population loss about -2%, increased/reduced by about 0.25% per death/growth scale. Adds a closed d4 unrest to all provinces on the map. Units have a (41 + 4*Death scale)% chance to be aged 1d4 years (non-exploding)."
 
 #spelltype 4
 #scalerate 0
@@ -110,7 +110,7 @@
 #name 4 "Celestial Rainbow"
 #descr 4 "This ritual creates a rainbow large enough to be seen from everywhere in the world. The mage can direct where he wants the rainbow to appear and by doing this huge amounts of gold can easily be collected at the base of the rainbow. While the rainbow is in place luck will increase in all the caster's provinces. Once the luck is positive in a province the luck of the rainbow will protect it from hostile spells. The more luck in a province, the greater chance of hostile spells failing."
 #descr 64 "This ritual creates a rainbow large enough to be seen from everywhere in the world. The mage can direct where he wants the rainbow to appear and by doing this huge amounts of gold can easily be collected at the base of the rainbow. While the rainbow is in place luck will increase in all the caster's provinces. Once the luck is positive in a province the luck of the rainbow will protect it from hostile spells. The more luck in a province, the greater chance of hostile spells failing."
-#details "Gold: 4d100 (exploding) + 300. Luck scale +2. Dome Protection: 10% per luck scale level."
+#details "Grants 4d100 (exploding) + 300 gold. Grants +2 luck scales. Hostile spells that target friendly provinces have a (10*luck scale)% chance to be blocked in the same manner as a dome.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
 #scalerate 0
@@ -133,7 +133,7 @@
 
 #name 2 "Dark Skies"
 #descr 2 "Black clouds billow forth and cover the lands of your Dominion. All enemies under your Dominion will perceive the heavens as dark and oppressing. The stronger the Dominion is, the more fearful the skies. The dark skies severely lower the morale of those affected. The darkness also gives slightly lowered attack and defense skills to units without darkvision."
-#details "Enemy morale lowered by 1 for each point of dominion. Slight darkness in battles."
+#details "Enemy morale lowered by 1 for each point of dominion. Applies a darkness penalty of -1 in battles, which is not cumulative with other sources of darkness. This is insufficient to trigger dark power."
 
 #spelltype 4
 #scalerate 0
@@ -179,7 +179,7 @@
 
 #name 64 "Enchanted Forests"
 #descr 64 "All forests will start to whisper the hymns to the pretender that controls this enchantment. This will spread dominion to the places where false pretenders were worshiped. When a forest has the right dominion it will start to attack instead of whispering hymns. Enemies in that province or neighboring provinces will be attacked by creatures of the awakening forest."
-#details "All forests under neutral or enemy dominion act as if they were temples of the caster's pretender. When the dominion has become friendly it stops spreading. Forests with friendly dominion will spontaneously spawn attacks from forest beings in the province or its neighbors if controlled by an enemy. A strong dominion or high Growth scale helps the effectiveness of the attacks and Wastelands are never attacked by the forest creatures."
+#details "All forests under neutral or enemy dominion act as if they were temples of the caster's pretender. When the dominion has become friendly it stops spreading. Each forest under friendly dominion picks makes up to three attempts to pick a random adjacent province, each with a ((candles + 4) * growth * 5)% chance of succeeding. Upon success, the province is attacked if it is a hostile non-wasteland non-sea province.\n\nThere is a 25% chance that an attack is nonexploding 6d4 Forest Trolls under the command of a Troll Shaman.\nOtherwise, the attackers are an openended 6d3 Vine Ogres and an openended 4d20 Vine Men all under the command of an Ivy King. If the province is a forest, this attack type gains an additional 3d6 Woodland Spirits under the command of a Woodland Spirit. These attackers are owned by the caster of this spell, but will disappear after any battles."
 
 #spelltype 4
 #scalerate 0
@@ -212,11 +212,11 @@
 #effect 10081
 #damage 53
 #spec 8388608
-#power 8
-#maxpower 8
+#power 6
+#maxpower 6
 #nreff 1
 #pathlevel 6
-#fatiguecost 9000
+#fatiguecost 5000
 #schools 17
 #unique 1
 #paths 2
@@ -225,7 +225,7 @@
 
 #name 2 "Fata Morgana"
 #descr 2 "Under the fata morgana life seems much easier and everyone is happy. Phantasmal Warriors will assist the local defence in defending the province against invaders. If the entire province should not be hidden from the enemy, enemy scouts will be still be tricked by the illusions and likely give incorrect reports about armies present. All provinces in friendly dominion will be affected by the fata morgana."
-#details "Province Defense 1+: +2 Phantasmal Warriors, +1 Phantasmal Archers. Province Defense 20+: +1 Phantasmal Knight. Unrest -10 per turn. 50% chance to hide all units from scouts in friendly dominion, otherwise the number of units is multiplied by a random number between 0 and 5."
+#details "Adds a Phanatasmal Chief commander to all province defence. Province defence gains two Phantasmal Warriors per point, and one Phantasmal Archer per point. At 20+, each point also adds a Phantasmal Knight. Friendly provices lose 10 unrest per turn. There is a 50% chance to hide all units from scouts in friendly dominion, otherwise the number of units is multiplied by a random number between 0 and 5."
 
 #spelltype 4
 #scalerate 0
@@ -273,7 +273,7 @@
 #name 32 "Foul Air"
 #descr 2 "The air will become polluted by a deadly disease when this enchantment is cast. Anyone who is wounded will instantly become diseased due to the foul air. This enchantment affects all land provinces in the entire world and will last until dispelled or the caster dies. Unrest will increase worldwide while the enchantment is active."
 #descr 32 "The air will become polluted by a deadly disease when this enchantment is cast. Anyone who is wounded will instantly become diseased due to the foul air. This enchantment affects all land provinces in the entire world and will last until dispelled or the caster dies. Unrest will increase worldwide while the enchantment is active."
-#details "Worldwide Unrest +d4."
+#details "Worldwide Unrest +d4. In battles, every 320 ticks (or 23.4375 times a round), all creatures with less hitpoints than their maximum become diseased. Inanimate and demonic creatures are not affected by this."
 
 #spelltype 4
 #scalerate 0
@@ -306,11 +306,11 @@
 #effect 10081
 #damage 43
 #spec 8388608
-#power 7
-#maxpower 7
+#power 6
+#maxpower 6
 #nreff 1
-#pathlevel 7
-#fatiguecost 6000
+#pathlevel 5
+#fatiguecost 5000
 #schools 16
 #unique 1
 #paths 36
@@ -321,6 +321,7 @@
 #name 32 "Ghost Ship Armada"
 #descr 4 "This spell will awaken the dead Admiral Torgrin and make him fight for your cause. The Admiral will attack random coastal provinces controlled by your enemies and plunder it. The gold will be returned to the caster of the enchantment and the dead will be used to build up the armada. Once enough people have been killed the Admiral will create a new ghost armada. If the main armada with Admiral Torgrin is defeated no new armadas will be created. Once all armadas are defeated the enchantment will dissipate."
 #descr 32 "This spell will awaken the dead Admiral Torgrin and make him fight for your cause. The Admiral will attack random coastal provinces controlled by your enemies and plunder it. The gold will be returned to the caster of the enchantment and the dead will be used to build up the armada. Once enough people have been killed the Admiral will create a new ghost armada. If the main armada with Admiral Torgrin is defeated no new armadas will be created. Once all armadas are defeated the enchantment will dissipate."
+#details "Does not function if Sea of Ice is active. Initially creates one (Torgrin's) armada, with additional lesser armadas appearing as gold is pillaged, to a maximum of 5. Provinces are picked at random and considered not eligible and rerolled if any of the following are true:\n\nNot coastal\nOwned by the caster or their team\nContains a sieged fort owned by the caster or their team\nDirectly adjacent to the province hit by Torgrin's component of the armada or the last province targeted by a lesser armada\nPopulation less than 10 * (closed d25 + 24), and the attempt number is less than (number of provinces on the map / 5, rounded down)\nContains a fort, and the attempt number is less than the number of provinces on the map\n\nTorgrin's armada consists of:\n\n32 armoured Damned Buccaneers\n44 unarmoured Damned Buccaneers\nDamned Admiral with The Admiral's Sword scripted to Attack\nTwo Damned Captains, one with Star of Heroes and the other with a Flesh Eater, scripted to Attack Rear\nDamned Captain with an Ice Pebble Staff scripted to cast Spells\nDamned Captain with a Knife of the Damned scripted to Attack\nDamned Boatswain, F2, 2 fire gems, scripted cast Spells\nDamned Boatswain, A2, 1 air gem, scripted cast Spells\n\nLesser armadas consist of:\n\n12 armoured and unarmoured Damned Buccaneers\nTwo Damned Captains scripted to Attack\nDamned Boatswain, random level 2 in AWD\n\nIf any armada loses a battle, it is killed off. If all armadas are defeated, the spell ends and the global enchantment is removed.\n\nOtherwise, the province is pillaged and left empty. The population killed is 10 * openended 2d100, to a maximum of half the province's population. Forts reduce the popkill by 25%. Generates (popkill/20) unarmed corpses. Generates (popkill/5) unrest or 50, whichever is smaller. The last armada generates (popkill/10 - (closed d(popkill/100) - 1)) gold for the enchantment's owner.\nEvery 350 gold obtained this way creates an additional armada, or recreates one that was previously defeated."
 
 #spelltype 4
 #scalerate 0
@@ -343,7 +344,7 @@
 
 #name 64 "Gift of Health"
 #descr 64 "This gift grants excellent health to all loyal subjects inside the God's Dominion. The gifted ones receive extra hit points, grow old more slowly and may even heal permanent afflictions."
-#details "HP +10% per dominion. Chance of healing afflictions: about 10% per dominion. Aging reduced by half."
+#details "Friendly units gain 10% HP per point of friendly dominion. There is a (10*dominion) chance for friendly units to experience a healer check, in the same way as a regular healer, but that affects all units (including inanimates and undead). Aging reduced by half."
 
 #spelltype 4
 #scalerate 0
@@ -379,8 +380,8 @@
 #power 5
 #maxpower 5
 #nreff 1
-#pathlevel 6
-#fatiguecost 6000
+#pathlevel 5
+#fatiguecost 4000
 #schools 1
 #unique 1
 #paths 4
@@ -389,6 +390,7 @@
 
 #name 4 "Guardians of the Deep"
 #descr 4 "Sea monsters will help the local militia defend underwater provinces for as long as this spell is in effect. The defending monsters are dependent on the terrain and type of sea. The monsters require some small degree of leadership and guidance, so a small local defence is required for the enchantment to have any effect, but sometimes a group of monsters can emerge and attack enemy provinces under your dominion. The global enchantment will last until it is dispelled or the caster dies."
+#details "Underwater province defence gains a Sea Troll commander, and a variety of other sea creatures (all die rolls are closed):\n1d4 Sea Serpents\n1d6 Giant Lobsters\n1d6 Sharks\n25% chance for 1d6 Sea Trolls\n\nIn Deep Seas only:\n\n1d8 Krakens\n25% chance for a single Monster Fish\n\nIn underwater provinces that are not Deep Seas:\n\n1d6 Sea Stags\n1d6 Leocampus\n1d6 Sea Dogs\n25% chance for a single Asp Turtle\n\nAdditionally, there is a 25% chance each turn that a single random hostile underwater province under the caster's dominion is attacked by an identical composition of units to those that would appear in the additional province defence due to this spell."
 
 #spelltype 4
 #scalerate 0
@@ -413,7 +415,7 @@
 #name 32 "Haunted Forest"
 #descr 64 "Vines will merge with anyone killed in the God's Dominion, creating an undead Manikin. The Manikin will fight any enemies of the God for a short while before it is totally dissolved by the vines. Undead or inanimate beings are not affected by the spell."
 #descr 32 "Vines will merge with anyone killed in the God's Dominion, creating an undead Manikin. The Manikin will fight any enemies of the God for a short while before it is totally dissolved by the vines. Undead or inanimate beings are not affected by the spell."
-
+#details "When the caster (or a member of their team) fights in friendly dominion, killed non-inanimate non-undead creatures transform into Manikins under the caster's (or team member's) control. These will persist for the remainder of the battle before disappearing."
 #spelltype 4
 #scalerate 0
 #end
@@ -435,7 +437,7 @@
 
 #name 4 "Lure of the Deep"
 #descr 4 "Sirens will start to emerge from the deeps when this powerful enchantment is cast. The Sirens will sing to enemy troops and lure them down to certain death in the deeps. The lure is most persuasive in coastal and sea provinces with strong friendly Dominion. Inland provinces are not affected at all. Nations that can recruit Sirens will find that this is cheaper while this enchantment is in effect. This global enchantment can only be cast in an underwater laboratory."
-#details "The chance of being lured (in percent) is 20 + (strength of caster's dominion * 20). Being lured is an easy MR check to avoid drowning. Creatures that do not breathe air are unaffected. The dominion of other players has a protective effect. This does not function at all if Sea of Ice or Thetis' Blessing are active."
+#details "The chance of being lured (in percent) is 20 + (strength of caster's dominion * 20). Being lured forces an easy MR check to avoid drowning. Creatures that do not drown underwater are unaffected. The dominion of other players has a protective effect. This does not function at all outside of coastal provinces, or if either Sea of Ice or Thetis' Blessing are active. Damage from this spell is considered to have no source, and as such cannot be redirected, and kills do not add to the caster's kill stat. Sirens become 50 gold cheaper."
 
 #spelltype 4
 #scalerate 0
@@ -458,7 +460,7 @@
 
 #name 4 "Maelstrom"
 #descr 4 "A huge magical maelstrom is created in a sea. The maelstrom constantly sucks in huge amounts of water and filters out its magical essence. This results in a huge amount of magic gems for the caster."
-#details "Grants 15 Water, 5 astral, 3 air and 1 of each other gem type each month."
+#details "Grants 15 Water, 5 astral, 3 air and 1 of each other gem type each month."`
 
 #spelltype 4
 #scalerate 0
@@ -472,7 +474,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 5
-#fatiguecost 8000
+#fatiguecost 6000
 #schools 8
 #unique 1
 #paths 8
@@ -481,7 +483,7 @@
 
 #name 8 "Mechanical Militia"
 #descr 8 "Mechanical Men will help the local militia defend their provinces as long as this spell is in effect. The constructs require leadership and guidance, so a small local defence is required for the enchantment to have any effect. The global enchantment will last until it is dispelled or the caster dies."
-#details "Province Defense 1+: +1 Mechanical Man. Province Defense 20+: +1 Iron Fly."
+#details "Adds a Mechanical Man commander to all province defence. Province defence gains two Mechanical Men per point. At 20+, each point also adds an Iron Fly."
 
 #spelltype 4
 #scalerate 0
@@ -529,7 +531,7 @@
 #name 128 "Perpetual Storm"
 #descr 2 "An enormous storm will rage constantly over the entire world. This will reduce the income of all land provinces. Supplies are scarce, as transportation is difficult and sailing and flying is impossible. All mountain passes are unusable during the perpetual storm and shooting in battle is very difficult. Evocations cast upon distant provinces might fail as the magical gale pushes the projectiles out of their trajectory."
 #descr 128 "An enormous storm will rage constantly over the entire world. This will reduce the income of all land provinces. Supplies are scarce, as transportation is difficult and sailing and flying is impossible. All mountain passes are unusable during the perpetual storm and shooting in battle is very difficult. Evocations cast upon distant provinces might fail as the magical gale pushes the projectiles out of their trajectory."
-#details "All battles are affected by storm. Income -20%. Map movement costs are increased by 2. Far-attack spells such as Fires from Afar have a 25% chance of missing their targets. Seeking Arrow has a 75% chance of missing its target. Underwater and cave provinces are not affected."
+#details "All battles are affected by Storm. Income -20%, except underwater and cave provinces are not affected. Map movement costs are increased by 2. Murdering Winter, Flames from the Sky, and Fires from Afar have a 25% chance of failing. Seeking Arrow has a 75% chance of failing. Sailing becomes impossible, and Storm Power or Storm Immunity is required to fly even on the strategic map."
 
 #spelltype 4
 #scalerate 0
@@ -552,7 +554,7 @@
 
 #name 1 "Purgatory"
 #descr 1 "Holy fire will strike undead enemy creatures in the God's Dominion. The more powerful the Dominion, the more undead will be killed."
-#details "All hostile undead beings have Dominion * 10% chance of being hit by 18 AP fire damage."
+#details "All hostile undead beings in the caster's dominion have a (Dominion * 10)% chance of being hit by 6 AP fire damage, multiplied by 3 after resistances and vulnerabilities. Damage from this spell is considered to have no source, and as such cannot be redirected, and kills do not add to the caster's kill stat."
 
 #spelltype 4
 #scalerate 0
@@ -575,7 +577,7 @@
 
 #name 8 "Riches from Beneath"
 #descr 8 "This enchantment transform mining from something harsh and dangerous to a really uplifting experience. The miners can carve out gold and iron with their knives and the stone is extra soft where the valuable ore veins are as if the mountain is trying to guide them. The enchantment only works within friendly dominion and a higher dominion score will make it more effective. The enchantment gives a major boost to resource production and a minor boost to gold production, both increases depend on the resource value of the province. Also all magic sites that are income yielding mines will have their income up to doubled."
-#details "Resources: +20% * dominion (max +100%). Province Income: +4% * resource value * dominion (max dominion 5). Income from mines + 20% * dominion (max +100%)."
+#details "Income for all provinces is increased by (friendly dominion * original income) / 25 + (friendly dominion * mine gold income) / 5. Friendly dominion is capped at 5 for this calculation.\nResources in all provinces are increased by (friendly dominon * 20) percent, to a maximum of doubling at 5 points of friendly dominion.\n\nCasting Gift of Nature's Bounty in conjunction with this spell will additionally cap friendly dominion to 5 for the purposes of Nature's Bounty's calculations."
 
 #spelltype 4
 #scalerate 0
@@ -607,11 +609,11 @@
 #effect 10081
 #damage 41
 #spec 8388608
-#power 8
-#maxpower 8
+#power 7
+#maxpower 7
 #nreff 1
 #pathlevel 8
-#fatiguecost 8000
+#fatiguecost 6000
 #schools 4
 #unique 1
 #paths 1
@@ -620,7 +622,7 @@
 
 #name 1 "Second Sun"
 #descr 1 "The caster creates a huge ball of fire in the sky. This Second Sun will always shine, day and night, resulting in severe effects across the entire world. Provinces will become hotter and drier every turn until the Second Sun is destroyed."
-#details "Each turn increases heat scales throughout the world. Death scales are also increased, but at a slower rate."
+#details "Gradually shifts Growth scales across the world towards Death, at the rate of 1 per six turns. Immediately gives all provinces +1 Heat, and adds 1 more Heat per two turns, to a maximum of +4 Heat after six turns.\nThe effect of Sun Awe is increased by +2 in situations where it is active."
 
 #spelltype 4
 #scalerate 0
@@ -690,6 +692,7 @@
 
 #name 16 "The Eyes of God"
 #descr 16 "This enchantment enables the mage to see all provinces in the world. Dominions can be seen in great detail and so can discovered magic sites, but income cannot be determined exactly. Inside the God's own Dominion troop movements can be seen in great detail and enemy illusions and phantasms are dispelled on the battlefield. Patrolling units will find it much easier to detect enemy scouts and to quell unrest. The historic records for all nations can be accessed and everyone on the Hall of Fame can be inspected."
+#details "Adds +25 patrol strength to every friendly province under friendly dominion, providing that there is positive patrol strength there already. Troop counts from scout reports in all provinces under the caster's dominion have no margin of error. Additionally, all battles in the caster's dominion experience a battle enchantment-like effect: every 320 ticks (or 23.4375 times a round), 6% of the field is selected at random. Illusory creatures that are hostile to the caster struck for 999 AN magical damage, with a MR check to avoid the effect. Damage inflicted this way is considered to be from the spell's caster and will add to their kills stat."
 
 #spelltype 4
 #scalerate 0
@@ -702,7 +705,7 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 7
+#pathlevel 5
 #fatiguecost 4000
 #schools 1
 #unique 1
@@ -712,8 +715,10 @@
 
 #name 1 "The Kindly Ones"
 #name 64 "The Kindly Ones"
-#descr 1 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills those who have killed many people, the seconds one hunts those who use blood magic and the third one hunts people at random. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
-#descr 64 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills those who have killed many people, the seconds one hunts those who use blood magic and the third one hunts people at random. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
+#descr 1 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills enemies of the caster who have killed people, the second and third both hunt any users of blood magic. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
+#descr 64 "The caster unleashes the Erinyes upon the world. The Erinyes are three horrible spirits of vengeance that punish those who slay innocent women. In elder times, they upheld the ban against Blood magic, but they have since returned to the darkness whence they came. They are sometimes called the Eumenides, the Kindly Ones, but their true names are Avenger of Murder, Grudging Anger and The Unrelenting One. Sinners will hear the horrible baying of the sisters and madness will strike them unless they are found and most gruesomely slain by the sisters. The first sister kills enemies of the caster who have killed people, the second and third both hunt any users of blood magic. The Kindly Ones remain in the world until the enchantment is dispelled or the three of them are slain."
+
+#details "All three Erinyes will not attack those underwater. Both Alecto and Megeara each seek out one blood mage completely at random. Tisiphone seeks out any hostile commander that has kills. Upon being cast all three Erinyes are returned to life if they were previously slain. Once killed, they will not return until the spell is recast. Once all three die, the enchantment ends."
 
 #spelltype 4
 #scalerate 0
@@ -736,7 +741,7 @@
 
 #name 128 "The Looming Hell"
 #descr 128 "Devils will appear in the dreams of some unfortunate enemies whenever they try to sleep. These Devils, through various threats, will try to persuade their victims to sell their souls and join in the killing of their own commander. The strength of the threats depends on the strength of the God's Dominion, but extreme courage is always required to defy the Devils. The Devils are totally powerless if they are unable to persuade any victims, which may well happen should the enemy commander be more feared than they are."
-#details "Up to 5 random enemy units inside the dominion will be offered to sell their souls. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear). There is a 5% chance per point of dominion for any given check to not count to the limit of 5."
+#details "Up to 5 random enemy non-commander units inside the dominion will be offered to sell their souls. Mindless units and those not under a leader are not eligible. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear). There is a 5% chance per point of dominion for any given check to not count to the limit of 5. Failing to resist begins an assassination bettle of the deserting unit and a Devil commander against the deserter's original commander."
 
 #spelltype 4
 #scalerate 0
@@ -761,7 +766,7 @@
 #name 2 "The Wrath of God"
 #descr 16 "With this enchantment, lighting will strike the enemies of the God, no matter where they are. However, the lightning bolts strike most powerfully in provinces where the God has a strong Dominion. In provinces with a high turmoil scale more thunderbolts strike and enemies under water or inside caves are not affected."
 #descr 2 "With this enchantment, lighting will strike the enemies of the God, no matter where they are. However, the lightning bolts strike most powerfully in provinces where the God has a strong Dominion. In provinces with a high turmoil scale more thunderbolts strike and enemies under water or inside caves are not affected."
-#details "Hit chance per month: 2% + 2% * dominion + turmoil (minimum 1% chance). Damage: 9 AN."
+#details "Enemy units have a (turmoil + 2 + 2 * caster's dominion in the province)% chance to be struck by lightning, with a minimum strike chance of 1%. Those in underwater provinces and caves are unaffected. Being struck inflicts 9 AN shock damage, which is not attributed to the caster."
 
 #spelltype 4
 #scalerate 0
@@ -784,7 +789,7 @@
 
 #name 4 "Thetis' Blessing"
 #descr 4 "Allows all troops in the world to enter the sea and breathe under water. Fighting below the surface will still be a little awkward for those not used to it, but at least it will be doable."
-#details "Poor Amphibian penalty: -50% combat speed, Att -3, Def -3, Enc +1."
+#details "Non-amphibious units suffer the regular Poor Amphibian penalty: -50% combat speed, Att -3, Def -3, Enc +1. Prevents the drowning of blood slaves underwater, but does not enable underwater blood hunting."
 
 #spelltype 4
 #scalerate 0
@@ -809,7 +814,7 @@
 #unique 1
 #name 32 "Utterdark"
 #descr 32 "The world is covered by a blanket of utter darkness. All living beings must use torches to see even a few feet in front of themselves. During the perpetual night, forces of darkness and roaming shades will attack enemy provinces."
-#details "Worldwide Income and Resources -90%. Caves and deep seas are exempt from the income reduction. All battles are fought under Darkness -6. Demons, blind beings and beings with spirit sight or perfect darkvision are unaffected by this spell."
+#details "Worldwide Income and Resources -90%, except in caves and deep seas. All battles are fought under Darkness -6. Additionally, selects 4 provinces at random to consider attacking. Provinces owned by the caster or their team are skipped. If Purgatory is active, provinces outside the caster's dominion are also skipped. Provinces are attacked by one the following parties, at equal weighting. All die rolls are open ended.\n\n1 Fiend of Darkness commander\n1 Shade Beast commander with 1d6 Shades\n1 Shade Lord commander with 1d4 Shades 1 Shadow Soldier\n\nThese units belong to Special Monsters and the caster does not receieve battle reports for them."
 
 #spelltype 4
 #scalerate 0
@@ -834,7 +839,7 @@
 
 #name 4 "Vengeful Water"
 #descr 4 "Water in friendly dominion will animate and try to kill enemy commanders whenever possible. The elemental is stronger in provinces with a rich water supply than in dry provinces."
-#details "Chance of elemental attacking: 5% + dominion * 2%."
+#details "All hostile commanders in friendly dominion have a  (5 + dominion * 2)% chance to be attacked by some kind of water or ice elemental. The first of the following criteria that are met determines what manner of elemental attacks:\n\nIf underwater, the attacker is a size 5 water elemental\nIf in Cold 2, the attacker is a size 4 ice elemental\nIf in Cold 3, the attacker is a size 5 ice elemental\nIf in a coastal province, the attacker is a size 6 water elemental\nIf in a swamp province, the attacker is a size 6 water elemental\nIf not inanimate or in a freshwater province, the attacker is a size 3 water elemental\nOtherwise, the attacker is a size 2 water elemental."
 
 #spelltype 4
 #scalerate 0
@@ -881,7 +886,7 @@
 #unique 1
 #name 64 "Wild Hunt"
 #descr 64 "The caster unleashes the Wild Hunt upon the world. The Hunt is led by Herne the Lord of the Hunt, an ancient deity of the wild roaming the woodlands in search of those who have offended the wild and its inhabitants. When the Hunt has been called, powerful priests of enemy faiths will be hunted down for as long as the Lord is not slain."
-#details "The Wild Hunt targets enemy priests located in forest provinces. Apart from the main hunt led by Herne the Lord of the Hunt, there are two lesser hunts without the Lord."
+#details "The Wild Hunt targets enemy priests located in forest provinces.\n\nHerne the Lord of the Hunt targets land forest provinces. He will preferentially target the enemy priest with the highest holy magic level found in forests, even if they are sneaking, and is somewhat biased towards low province IDs: this is due to searching in increasing IDs with a 50% chance to skip over any given province. He will only attack the first valid commander he finds. Herne himself attacks victims in assassination settings. He is a E1N5 mage with 2 nature and 1 earth gem, is scripted to cast spells, and is equipped with an Enchanted Spear, Wall Shaker, and Amulet of Resilience. He is always accompanied by 12 Barghests and 17 Wolves, and his retinue of 6d6 Black Dogs. Should he lose an assassination battle, the spell will end and the enchantment will fade.\n\nThis spell also spawns lesser attacks. Unlike Herne, these select land forest provinces entirely at random, and will always attack the nonsneaking hostile priest in the selected province with the lowest commander ID. This makes 210 attempts: failing to find a commander to attack consumes 1 attempt, and successfully attacking a commander consumes 51 attempts, meaning that there are a maximum of 5 such attacks per turn. A single commander can be attacked multiple times by lesser attacks. The failure of a lesser attack does not reduce future attacks, nor does it result in the enchantment ending.\n\nLesser attacks are comprised of one of following, at equal chances. All die rolls are openended.\n\nBarghest commander, 1d6 + 4 Black Dogs\nCu Sidhe commander, 1d4 + 2 Cu Sidhe\nDire Wolf commander, 1d10 + 10 Wolves"
 
 #spelltype 4
 #scalerate 0
@@ -891,20 +896,22 @@
 #effect 10081
 #damage 18
 #spec 8388608
-#power 8
-#maxpower 8
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 5
-#fatiguecost 7000
+#fatiguecost 5000
 #schools 1
 #unique 1
 #paths 4
 #secondarypaths 4
 #secondarypathchance 100
+-- why is this even a spell?
+#skipchance 90
 
 #name 4 "Wrath of the Sea"
 #descr 4 "The sea will rise and flood all coastal provinces. Provinces that are struck by the flood will have their income reduced."
-#details "Coastal provinces and provinces with lakes will get income -30%"
+#details "-30% income in all coastal provinces."
 
 #spelltype 4
 #scalerate 0

@@ -17,7 +17,7 @@
 
 #name 2 "Seeking Arrow"
 #descr 2 "The caster sends an enchanted arrow across the world to find a suitable heart to penetrate. The arrow will target one leader in a province of the caster's choice."
-#details "The arrow inflicts EFFECTIVEDAMAGE AN magical piercing damage, plus DAMAGESCALING per additional caster level, and always hits the chest. Air shield can negate the effect."
+#details "Has a 75% chance to fail if Perpetual Storm is active. Picks a random non-stealthy enemy commander. Air shield (via item, or Air bless, but NOT throne bless effect) may cause the arrow to fail against the target picked. If successful, the victim is hit for EFFECTIVEDAMAGE AN magical damage that always hits the chest, plus DAMAGESCALING per additional caster level. Sneaking commanders are not valid targets for this spell."
 
 #spelltype 68
 #scalerate 0.75

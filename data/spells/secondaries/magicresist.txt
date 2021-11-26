@@ -16,7 +16,9 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Hardy"
 #nameprefix "Resilient"
+#nameprefix "Resistant"
 #fatiguepersquare 1.25
 #minfinalaoe 10
 
@@ -48,6 +50,8 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Hardy"
+#nameprefix "Resilient"
 #nameprefix "Resistant"
 #fatiguepersquare 2.5
 #minfinalaoe 5

@@ -8,10 +8,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 
 #unitmod "Summon Lifedrainweapon"
 #descr "The summoned %creature% %is% able to drain the life of victims with %its% attacks."
+#details "Summoned creatures have their damaging weapons made magical and their damage is converted to partial life drain."
 
 #end
 
@@ -25,9 +26,9 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.5
 
 #unitmod "Summon Lifedrainweapon2"
 #descr "The summoned %creature% %is% able to drain the life of victims with %its% attacks."
-
+#details "Summoned creatures have their damaging weapons made magical and apply 5 AN life drain on damage."
 #end

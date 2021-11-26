@@ -4,15 +4,15 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.5
 
 #unitmod "Summon Invuln"
 #descr "The summoned %creature% %is% coated in stygian energy, making %it% highly resistant to mundane weapons."
-
+#details "Summoned creatures have invulnerability 15."
 #end
 
 
@@ -22,13 +22,13 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.75
 
 #unitmod "Summon Invuln 25"
 #descr "The summoned %creature% %is% coated in deathly energy, making %it% extremely resistant to mundane weapons."
-
+#details "Summoned creatures have invulnerability 25."
 #end

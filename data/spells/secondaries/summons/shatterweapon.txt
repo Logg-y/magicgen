@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2
+#mult fatiguecost 1.8
 
 #unitmod "Summon Shatterweapon"
 #descr "Constructs wounded by the attacks of the %creature% experience massive structural damage."

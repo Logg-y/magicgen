@@ -17,7 +17,7 @@
 
 #name 64 "Faery Trod"
 #descr 64 "The mage leads his army into a magic forest to find a Faery Trod. The army follows this strange path through faery lands and will finally arrive in a distant forest. Both the source and destination provinces must be forests for this spell to work. Navigating on the faery paths is a tricky adventure and the mage may not emerge where they planned."
-#details "Chance of ending up in a neighboring forest province: 50% if completely surrounded by forests, 0% if no neighboring forest provinces."
+#details "Has a 50% chance to select a random adjacent province. If the province picked is a forest, and is not across a water/land boundary, that province becomes the target instead. If the spell's target deviates, domes in the deviated province are respected instead of the original target. Causes magic phase battles to resolve in the targeted province, even if the spell deviates to another forest. The caster and all non-immobile troops under his command are moved to the final province. Immobile creatures cannot cast this spell."
 
 #spelltype 4
 #end

@@ -18,7 +18,7 @@
 
 #name 32 "Tartarian Gate"
 #descr 32 "The caster opens a gate to Tartarus and releases a dead Titan or Monstrum imprisoned in that horrible place. The Titans were gods in ancient times, but were defeated and imprisoned in Tartarus aeons ago. The dead Titan once had tremendous powers, but the imprisonment in the realm of perpetual pain might have destroyed the mind of the ancient god."
-#details "There is a 20% chance that a tartarian comes as a commander, and a 50% chance that the tartarian comes feeblemind. Tartarians additionally have a 50% chance for additional afflictions: each affliction added this way has equal chances to be a minor or major affliction. There is a then another 50% chance to add another affliction, causing the process to continue until an affliction was not added."
+#details "There is a 20% chance that a tartarian comes as a commander, and a 50% chance that the tartarian comes feeblemind. Tartarians additionally have a 50% chance for additional afflictions: each affliction added this way has equal chances to be a minor or major affliction. There is a then another 50% chance to add another affliction, causing the process to continue until an affliction was not added.\n\nFixed magic paths for commander tartarians are as follows:\n\nCyclops (with lightning): A2E3\nCyclops (sword and shield): E4\nSpirit: E3D2\n\nThe following numbers denote randoms among any of the eight paths. For instance, a female Titan may have X3Y2 or rarely X5.\n\nTitan (female): 3, 2\nTitan (male): 3, 2, 2\nMonstrum: 2, 2\nMonstra: 2, 2, 1, 1"\n#end
 
 #spelltype 4
 #end

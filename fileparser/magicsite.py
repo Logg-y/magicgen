@@ -4,7 +4,7 @@ import re
 from Entities import MagicSite
 from Entities.namecond import NameCond
 from Exceptions.ParseError import ParseError
-from . import fileparserutils
+from Services import fileparserutils
 from Services import utils
 
 modifier_params_int = ["rarity", "loc", "gold", "res", "level", "decunrest", "supply",

@@ -25,6 +25,8 @@
 #req effect != 96
 
 #nameprefix "Leeching"
+#nameprefix "Parasitic"
+#nameprefix "Vampiric"
 #fatiguepersquare 8
 
 -- not life drain
@@ -62,6 +64,8 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Leeching"
+#nameprefix "Parasitic"
 #nameprefix "Vampiric"
 #fatiguepersquare 4
 
@@ -115,6 +119,8 @@
 #req effect != 96
 
 #nameprefix "Leeching"
+#nameprefix "Parasitic"
+#nameprefix "Vampiric"
 #fatiguepersquare 4
 
 #nextspell "3AN life drain Secondary mrnh damaging"

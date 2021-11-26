@@ -16,6 +16,7 @@
 
 #unitmod "Summon Bringeroffortune"
 #descr "The summoned %creature% will bring good fortune to the province where they are located."
+#details "The summoned creatures have bringer of fortune 2%."
 
 #end
 
@@ -27,15 +28,18 @@
 #req effect != 1
 #req effect != 10050
 #req effect != 10038
+#req effect != 10021
 #req effect != 21
 #paths 16
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 270
+#fatiguecostpereffect 350
 
 #unitmod "Summon Bringerofmisfortune"
 #descr "The summoned %creature% will bring bad fortune and disaster to the province where they are located."
+
+#details "The summoned creature has bringer of misfortune 10%."
 
 #end

@@ -17,6 +17,11 @@
 #req spelltype !& 4
 
 #nameprefix "Frightening"
+#nameprefix "Fearful"
+#nameprefix "Terrifying"
+#nameprefix "Haunting"
+#nameprefix "Disturbing"
+
 #fatiguepersquare 4
 #minfinalaoe 10
 #scalingaoelimit 2.0
@@ -47,7 +52,11 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Frightening"
 #nameprefix "Fearful"
+#nameprefix "Terrifying"
+#nameprefix "Haunting"
+#nameprefix "Disturbing"
 #fatiguepersquare 8
 #minfinalaoe 5
 #scalingaoelimit 1.5

@@ -18,7 +18,7 @@
 #name 64 "NAMEPREFIX %Stream% of Life"
 
 #descr 64 "The caster pours life into the bodies of his enemies in an attempt to overload the body systems of the targets. If targets fail to resist the spell, they will either die or become stronger, healed and overcome by berserker rage."
-#details "Anyone hit must make a MR check. Failure has a chance to kill the target given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
+#details "Anyone hit must make a MR check. Failure has a chance to inflict 999 AN internal damage to the target, given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
@@ -54,7 +54,7 @@
 #name 64 "NAMEPREFIX Flood of Life"
 
 #descr 64 "The caster pours life onto the battlefield in an attempt to overload the body systems of living creatures there. If targets fail to resist the spell, they will either die or become stronger, healed and overcome by berserker rage."
-#details "Anyone hit must make a MR check. Failure has a chance to kill the target given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
+#details "Anyone hit must make a MR check. Failure has a chance to inflict 999 AN internal damage to the target, given by EFFECTIVEDAMAGE% + DAMAGESCALING% per caster level. Failing the MR check and surviving heals targets, gives them +4 strength and makes them berserk."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42

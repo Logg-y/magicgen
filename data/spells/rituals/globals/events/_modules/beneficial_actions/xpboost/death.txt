@@ -22,5 +22,5 @@
 #nation -2
 #req_commander 1
 #xp 10
-#msg "A commander has gained greater understanding of the art of war by consorting with the spirits of fallen soldiers."
+#msg "##fulltargname## has gained greater understanding of the art of war by consorting with the spirits of fallen soldiers."
 #nolog

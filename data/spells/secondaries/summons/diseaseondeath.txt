@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 60
+#fatiguecostpereffect 20
 
 #unitmod "Summon Disease on Death"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a putrid cloud of disease when killed."
@@ -23,11 +23,11 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 100
+#fatiguecostpereffect 60
 
 #unitmod "Summon Large Disease on Death"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a large $putrid$ cloud of disease when killed."
@@ -41,11 +41,11 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 200
+#fatiguecostpereffect 100
 
 #unitmod "Summon Large Disease on Death 2"
 #descr "The summoned %creature% %is% imbued with death magic that causes %it% to explode into a gigantic $putrid$ cloud of disease when killed."

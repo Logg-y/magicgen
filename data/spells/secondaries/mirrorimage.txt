@@ -17,6 +17,8 @@
 #req spelltype !& 4
 
 #nameprefix "Illusionary"
+#nameprefix "Illusory"
+#nameprefix "Misleading"
 #fatiguepersquare 2
 #minfinalaoe 8
 
@@ -49,6 +51,8 @@
 #req spelltype !& 4
 
 #nameprefix "Illusory"
+#nameprefix "Misleading"
+#nameprefix "Illusionary"
 #fatiguepersquare 4
 #minfinalaoe 4
 

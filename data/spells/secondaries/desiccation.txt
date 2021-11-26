@@ -22,6 +22,11 @@
 #req spelltype !& 4
 
 #nameprefix "Dehydrating"
+#nameprefix "Desiccating"
+#nameprefix "Parching"
+#nameprefix "Drying"
+#nameprefix "Evaporating"
+
 #fatiguepersquare 5
 
 #req damage != 250
@@ -60,7 +65,11 @@
 #req spelltype !& 4
 #req damage != 250
 
+#nameprefix "Dehydrating"
 #nameprefix "Desiccating"
+#nameprefix "Parching"
+#nameprefix "Drying"
+#nameprefix "Evaporating"
 #fatiguepersquare 2.5
 #scalingaoelimit 2.0
 
@@ -103,6 +112,10 @@
 #ondamage 1
 
 #nameprefix "Dehydrating"
+#nameprefix "Desiccating"
+#nameprefix "Parching"
+#nameprefix "Drying"
+#nameprefix "Evaporating"
 #fatiguepersquare 1.5
 
 #nextspell "Desiccation Secondary mrnh damaging"

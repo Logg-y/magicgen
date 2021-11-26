@@ -32,7 +32,11 @@
 
 #nextspell "Minor Confusion mrnh"
 
+#nameprefix "Bewildering"
 #nameprefix "Confusing"
+#nameprefix "Indecisive"
+#nameprefix "Maddening"
+#nameprefix "Muddling"
 #fatiguepersquare 10
 
 #aispellmod 20
@@ -76,6 +80,10 @@
 #nextspell "Minor Confusion mrn"
 
 #nameprefix "Bewildering"
+#nameprefix "Confusing"
+#nameprefix "Indecisive"
+#nameprefix "Maddening"
+#nameprefix "Muddling"
 #fatiguepersquare 5
 
 #aispellmod 40
@@ -119,7 +127,11 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Bewildering"
 #nameprefix "Confusing"
+#nameprefix "Indecisive"
+#nameprefix "Maddening"
+#nameprefix "Muddling"
 #fatiguepersquare 3
 
 #req nonscalingdamage < 40
@@ -171,6 +183,10 @@
 #aispellmod 30
 
 #nameprefix "Bewildering"
+#nameprefix "Confusing"
+#nameprefix "Indecisive"
+#nameprefix "Maddening"
+#nameprefix "Muddling"
 #fatiguepersquare 6
 
 #nextspell "Minor Confusion mrnh damaging"

@@ -4,7 +4,7 @@
 #anysummon 1
 
 #paths 17
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -18,7 +18,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 200
+#fatiguecostpereffect 100
 
 #unitmod "Summon Falsearmy Large"
 #descr "The summoned %creature% %is% able to project illusory images of the army around them, making enemy scouts report a larger army than truly exists."
@@ -32,7 +32,7 @@
 #anysummon 1
 
 #paths 17
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -47,7 +47,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 400
+#fatiguecostpereffect 100
 
 #unitmod "Summon Falsearmy Large2"
 #descr "The summoned %creature% %is% able to project vast numbers of illusory images of the army around them, making enemy scouts report a much larger army than truly exists."
@@ -61,7 +61,7 @@
 #anysummon 1
 
 #paths 17
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -73,7 +73,7 @@
 -- ritual only
 #req effect > 10000
 
-#fatiguecostpereffect 200
+#fatiguecostpereffect 100
 
 
 -- not montag
@@ -91,7 +91,7 @@
 #anysummon 1
 
 #paths 17
-#power -1
+#power 0
 
 -- useless in assassinations
 #req effect != 10050
@@ -106,7 +106,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 400
+#fatiguecostpereffect 100
 
 #unitmod "Summon Falsearmy Small2"
 #descr "The summoned %creature% %is% able to project vast illusions that hide the surrounding army, making enemy scouts report a much smaller army than truly exists."

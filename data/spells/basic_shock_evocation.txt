@@ -129,9 +129,9 @@
 #name 2 "NAMEPREFIX Thunder %Strike%"
 #name 16 "NAMEPREFIX Thunder %Strike%"
 #name 128 "NAMEPREFIX Thunder %Strike%"
-#descr 2 "A bolt of lightning is called from the $sky$ upon some enemies."
-#descr 16 "A bolt of lightning is called from the $sky$ upon some enemies."
-#descr 128 "$BLOOD_INTRO$, the caster directs a charge down from the $sky$ upon his enemies."
+#descr 2 "%Bolt% of lightning %is% called from the $sky$ upon some enemies."
+#descr 16 "%Bolt% of lightning %is% called from the $sky$ upon some enemies."
+#descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE %charge% down from the $sky$ upon his enemies."
 
 
 #nextspell "Large Shock"
@@ -219,6 +219,7 @@
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby."
 #descr 8 "Electrical charge is brought from $underground$ to the battlefield. This then discharges on its own accord, damaging and arcing to anything nearby."
 #descr 128 "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to sustain an electrical charge. The %charge% then discharges on %its% own accord, damaging and arcing to anything nearby."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 
 
 -- evo, scale aoe
@@ -268,7 +269,8 @@
 
 #priority 1
 #namecond range < 10 2 "NAMEPREFIX Touch of Electrocution"
-#descrcond range < 10 2 "The caster's touch orbs of chain lightning which leap to surrounding foes."
+#descrcond range < 10 2 "The caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 #end
 
 
@@ -295,6 +297,7 @@
 
 #name 2 "Unending NAMEPREFIX Chain Lightning"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby. The charge created by this particular spell persists for an exceptionally large number of bounces."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 
 
 
@@ -337,6 +340,7 @@
 
 #name 2 "NAMEPREFIX Fountain of Lightning"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. Charges are then free to flow out of this point for some time after its creation, shocking those nearby."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 
 
 -- evo, scale numbounces

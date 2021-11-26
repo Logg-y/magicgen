@@ -22,6 +22,10 @@
 #req spelltype !& 4
 
 #nameprefix "Zapping"
+#nameprefix "Shocking"
+#nameprefix "Electrified"
+#nameprefix "Jolting"
+
 #fatiguepersquare 6
 
 #scalingaoelimit 2.0
@@ -56,7 +60,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Zapping"
 #nameprefix "Shocking"
+#nameprefix "Electrified"
+#nameprefix "Jolting"
 #fatiguepersquare 3
 
 #scalingaoelimit 2.5
@@ -100,6 +107,9 @@
 #req spec !& 2048
 
 #nameprefix "Zapping"
+#nameprefix "Shocking"
+#nameprefix "Electrified"
+#nameprefix "Jolting"
 #fatiguepersquare 4
 
 #nextspell "3AN shock Secondary mrnh damaging"
@@ -140,7 +150,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Zapping"
 #nameprefix "Shocking"
+#nameprefix "Electrified"
+#nameprefix "Jolting"
 #fatiguepersquare 2
 
 #nextspell "3AN shock Secondary mrn damaging"
@@ -176,6 +189,9 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Zapping"
+#nameprefix "Shocking"
+#nameprefix "Electrified"
 #nameprefix "Jolting"
 #fatiguepersquare 3
 
@@ -218,6 +234,9 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Zapping"
+#nameprefix "Shocking"
+#nameprefix "Electrified"
 #nameprefix "Jolting"
 #fatiguepersquare 1.5
 

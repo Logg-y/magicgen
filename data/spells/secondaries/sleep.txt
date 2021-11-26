@@ -22,6 +22,10 @@
 #req spelltype !& 4
 
 #nameprefix "Drowsy"
+#nameprefix "Sleepy"
+#nameprefix "Dozing"
+#nameprefix "Groggy"
+#nameprefix "Wearying"
 #fatiguepersquare 6
 
 #req damage != 1024
@@ -59,7 +63,11 @@
 #req spelltype !& 4
 #req damage != 1024
 
+#nameprefix "Drowsy"
 #nameprefix "Sleepy"
+#nameprefix "Dozing"
+#nameprefix "Groggy"
+#nameprefix "Wearying"
 #fatiguepersquare 3
 
 #scalingaoelimit 2.0
@@ -101,6 +109,10 @@
 #ondamage 1
 
 #nameprefix "Drowsy"
+#nameprefix "Sleepy"
+#nameprefix "Dozing"
+#nameprefix "Groggy"
+#nameprefix "Wearying"
 #fatiguepersquare 3
 
 #nextspell "Sleep Secondary mrnh damaging"
@@ -138,7 +150,11 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Drowsy"
 #nameprefix "Sleepy"
+#nameprefix "Dozing"
+#nameprefix "Groggy"
+#nameprefix "Wearying"
 #fatiguepersquare 1.5
 
 #nextspell "Sleep Secondary mrn damaging"

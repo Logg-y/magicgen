@@ -13,6 +13,7 @@
 
 #unitmod "Summon Berserking"
 #descr "The summoned %creature% %is% very angry and will go berserk if provoked."
+#details "Summoned creatures have berserker 3."
 
 #end
 
@@ -26,10 +27,11 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.8
 #magicpathvaluescaling -0.5
 
 #unitmod "Summon Berserking 2"
 #descr "The summoned %creature% %is% extremely angry and will turn violently berserk if provoked."
+#details "Summoned creatures have berserker 9."
 
 #end

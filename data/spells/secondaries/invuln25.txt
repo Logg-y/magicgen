@@ -19,6 +19,9 @@
 #req spelltype !& 4
 
 #nameprefix "Invulnerable"
+#nameprefix "Impervious"
+#nameprefix "Impenetrable"
+#nameprefix "Unassailable"
 #fatiguepersquare 5
 #minfinalaoe 6
 #scalingaoelimit 2.0
@@ -51,7 +54,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Invulnerable"
 #nameprefix "Impervious"
+#nameprefix "Impenetrable"
+#nameprefix "Unassailable"
 #fatiguepersquare 10
 #minfinalaoe 3
 #scalingaoelimit 1.5

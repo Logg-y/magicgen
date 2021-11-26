@@ -27,6 +27,10 @@
 #req effect != 96
 
 #nameprefix "Sanguine"
+#nameprefix "Haemorrhaging"
+#nameprefix "Bloody"
+#nameprefix "Crimson"
+#nameprefix "Lacerating"
 #fatiguepersquare 2
 #scalingaoelimit 2.0
 
@@ -61,7 +65,11 @@
 #req spelltype !& 4
 #req damage != 8192
 
+#nameprefix "Sanguine"
+#nameprefix "Haemorrhaging"
 #nameprefix "Bloody"
+#nameprefix "Crimson"
+#nameprefix "Lacerating"
 #fatiguepersquare 7
 
 -- not undead or inanimates
@@ -112,6 +120,10 @@
 #ondamage 1
 
 #nameprefix "Sanguine"
+#nameprefix "Haemorrhaging"
+#nameprefix "Bloody"
+#nameprefix "Crimson"
+#nameprefix "Lacerating"
 #fatiguepersquare 3
 
 #nextspell "Bleeding Secondary mrne damaging"
@@ -154,7 +166,11 @@
 #req spec !& 8
 #req effect != 96
 
+#nameprefix "Sanguine"
+#nameprefix "Haemorrhaging"
 #nameprefix "Bloody"
+#nameprefix "Crimson"
+#nameprefix "Lacerating"
 #fatiguepersquare 6
 
 #nextspell "Bleeding Secondary mrn damaging"

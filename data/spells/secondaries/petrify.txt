@@ -23,6 +23,11 @@
 #req effect != 99
 
 #nameprefix "Stonetouch"
+#nameprefix "Petrifying"
+#nameprefix "Ossifying"
+#nameprefix "Vitrifying"
+#nameprefix "Fossilising"
+#nameprefix "Lapidifying"
 #fatiguepersquare 4
 
 #scalingaoelimit 2.5
@@ -31,7 +36,7 @@
 #nextspell "Petrify Secondary mrne"
 
 #descr "This spell is imbued with strange energy that may petrify those affected."
-#details "Affected creatures make an easy MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected creatures make an easy MR check. Those that fail to resist are petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 
 #end
@@ -60,7 +65,12 @@
 #req spelltype !& 4
 #req effect != 99
 
+#nameprefix "Stonetouch"
 #nameprefix "Petrifying"
+#nameprefix "Ossifying"
+#nameprefix "Vitrifying"
+#nameprefix "Fossilising"
+#nameprefix "Lapidifying"
 #fatiguepersquare 7
 
 #scalingaoelimit 2.0
@@ -69,7 +79,7 @@
 #nextspell "Petrify Secondary mrn"
 
 #descr "This spell is imbued with strange energy that may petrify those affected."
-#details "Affected creatures make an MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected creatures make an MR check. Those that fail to resist are petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #end
 
@@ -109,7 +119,7 @@
 #nextspell "Petrify Secondary mrne damaging"
 
 #descr "This spell is imbued with strange energy that may petrify those it wounds."
-#details "Wounded creatures make an easy MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Wounded creatures make an easy MR check. Those that fail to resist are petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #end
 
@@ -148,7 +158,7 @@
 #nextspell "Petrify Secondary mrn damaging"
 
 #descr "This spell is imbued with strange energy that may petrify those it wounds."
-#details "Wounded creatures make an MR check. Those that fail to resist are petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Wounded creatures make an MR check. Those that fail to resist are petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, have their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 
 #end

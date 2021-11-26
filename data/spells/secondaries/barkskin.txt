@@ -18,6 +18,9 @@
 #req spelltype !& 4
 
 #nameprefix "Barktouched"
+#nameprefix "Woody"
+#nameprefix "Ligneous"
+#nameprefix "Greenwood"
 #fatiguepersquare 2
 #minfinalaoe 12
 #scalingaoelimit 2.5
@@ -49,7 +52,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Barktouched"
 #nameprefix "Woody"
+#nameprefix "Ligneous"
+#nameprefix "Greenwood"
 #fatiguepersquare 4
 #minfinalaoe 5
 #scalingaoelimit 2.0

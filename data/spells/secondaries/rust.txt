@@ -23,6 +23,9 @@
 #req damage != 2199023255552
 
 #nameprefix "Corroding"
+#nameprefix "Corrosive"
+#nameprefix "Rusting"
+#nameprefix "Oxidising"
 #fatiguepersquare 1
 
 
@@ -64,6 +67,9 @@
 #ondamage 1
 
 #nameprefix "Corroding"
+#nameprefix "Corrosive"
+#nameprefix "Rusting"
+#nameprefix "Oxidising"
 #fatiguepersquare 0.5
 
 #nextspell "Rust Secondary mrnh damaging"

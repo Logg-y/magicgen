@@ -4,15 +4,16 @@
 #anysummon 1
 
 #paths 2
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2
+#mult fatiguecost 1.5
 
 #req trample <= 0
 #unitmod "Summon Shockweapon"
 #descr "The summoned %creature% %is% able to shock enemies with attacks."
+#details "Weapons that do not already have secondary effects are made magical and inflict 5AN shock on damage."
 
 #end
 
@@ -27,9 +28,9 @@
 #req trample <= 0
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.6
+#mult fatiguecost 1.8
 
 #unitmod "Summon Chainshockweapon"
 #descr "The summoned %creature% %is% able to shock enemies with attacks. The charge then jumps to other nearby creatures."
-
+#details "Weapons that do not already have secondary effects are made magical and, on inflicting damage, create a 3 bounce 3 AN chain lightning discharge."
 #end

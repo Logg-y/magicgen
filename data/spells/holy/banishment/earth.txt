@@ -103,7 +103,7 @@
 #name 8 "Petrify Undead"
 #name 8 "Purifying Petrification"
 #descr 256 "With this prayer the priest smites undead beings with the earthen power of his God. The undead will take damage and become turned to stone unless they manage to resist the banishment."
-#details "Affected targets become petrified for 2250-4500 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+#details "Affected targets become petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
 #nextspell "Banishment Earth Additional Petrify"
 

@@ -25,7 +25,7 @@
 
 #name 32 "NAMEPREFIX Plague"
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
+#details "Inflicts a closed 1d2 true damage and an open 1d4 fatigue per round. Both of these have no damage or protection rolls associated with them. The victim also gains an aura of value 2: this hits one of the 9 squares in a 3x3 box around the caster approximately two times a round. The same square can be hit multiple times. All those except inanimate beings in affected squares must make a magic resistance check, or gain this effect themselves. This is considered a Death effect for the purposes of the victims' magic resistance checks, but the caster's path levels and penetration bonuses are ignored for the subsequent spread of the plague."
 
 #descr 32 "The caster attempts to spread a magical plague to a small number of victims. If any fail to resist, it will rapidly spread to anything living nearby."
 
@@ -60,7 +60,7 @@
 #paths 32
 #secondarypaths 32
 
-#details "Inflicts 1d2 damage and 1d4 fatigue damage per round. Infected units generate an aura of strength 2 (1/12 to generate a pulse in a random adjacent square, including diagonals, every 320 ticks). Non-inanimates struck by a pulse must make a magic resistance check or become infected themselves."
+#details "Inflicts a closed 1d2 true damage and an open 1d4 fatigue per round. Both of these have no damage or protection rolls associated with them. The victim also gains an aura of value 2: this hits one of the 9 squares in a 3x3 box around the caster approximately two times a round. The same square can be hit multiple times. All those except inanimate beings in affected squares must make a magic resistance check, or gain this effect themselves. This is considered a Death effect for the purposes of the victims' magic resistance checks, but the caster's path levels and penetration bonuses are ignored for the subsequent spread of the plague."
 
 #name 32 "NAMEPREFIX Pestilent Plague"
 

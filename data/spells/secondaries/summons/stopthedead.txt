@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.2
 
 #unitmod "Summon Stopthedead"
 #descr "Undead wounded by the attacks of the %creature% may become paralyzed."

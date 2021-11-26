@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.5
+#mult fatiguecost 2
 
 #unitmod "Summon APweap"
 #descr "The weapons used by the summoned %creature% %is% unusually sharp and partially bypasses armour."
@@ -26,7 +26,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 5
+#mult fatiguecost 4
 
 #unitmod "Summon ANweap"
 #descr "The weapons used by the summoned %creature% %is% altered by magic and completely ignore armour."

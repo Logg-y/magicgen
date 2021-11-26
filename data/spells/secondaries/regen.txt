@@ -17,6 +17,10 @@
 #req spelltype !& 4
 
 #nameprefix "Restorative"
+#nameprefix "Regenerative"
+#nameprefix "Recuperative"
+#nameprefix "Mending"
+#nameprefix "Nourishing"
 #fatiguepersquare 2
 #minfinalaoe 10
 
@@ -48,7 +52,11 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Restorative"
+#nameprefix "Regenerative"
+#nameprefix "Recuperative"
 #nameprefix "Mending"
+#nameprefix "Nourishing"
 #fatiguepersquare 4
 #minfinalaoe 5
 

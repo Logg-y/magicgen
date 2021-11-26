@@ -21,7 +21,16 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #nameprefix "Chilling"
+#nameprefix "Shivering"
 #fatiguepersquare 6
 
 #scalingaoelimit 2.0
@@ -56,6 +65,15 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
+#nameprefix "Chilling"
 #nameprefix "Shivering"
 #fatiguepersquare 3
 #scalingaoelimit 2.5
@@ -98,7 +116,16 @@
 -- not cold damage
 #req spec !& 512
 
+#nameprefix "Frosty"
+#nameprefix "Icy"
+#nameprefix "Glacial"
+#nameprefix "Wintery"
+#nameprefix "Bitter"
+#nameprefix "Boreal"
+#nameprefix "Numbing"
+#nameprefix "Frigid"
 #nameprefix "Chilling"
+#nameprefix "Shivering"
 #fatiguepersquare 3
 
 #nextspell "cold fatigue Secondary mrnh damaging"

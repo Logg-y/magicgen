@@ -1,0 +1,436 @@
+#neweffect "Paralysis Secondary mrn buff"
+#effect 66
+#damage 10
+#spec 12734592
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10205
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Minor Paralysis"
+#name 2 "Minor Paralysis"
+#name 4 "Minor Paralysis"
+#name 8 "Minor Paralysis"
+#name 16 "Minor Paralysis"
+#name 32 "Minor Paralysis"
+#name 64 "Minor Paralysis"
+#name 128 "Minor Paralysis"
+#name 256 "Minor Paralysis"
+
+#end
+
+
+#neweffect "Stun Secondary mrn buff"
+#effect 128
+#damage 100
+#spec 8540288+4194304
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#scalerate 0
+#power 0
+#maxpower 30
+#explspr 10064
+
+#spelltype 2
+
+#pathlevel 1
+
+#paths 16
+#secondarypaths 16
+
+#name 1 "Stun"
+#name 2 "Stun"
+#name 4 "Stun"
+#name 8 "Stun"
+#name 16 "Stun"
+#name 32 "Stun"
+#name 64 "Stun"
+#name 128 "Stun"
+#name 256 "Stun"
+
+#end
+
+#neweffect "Falsefetters Secondary mrn buff"
+#effect 11
+#damage 131072
+#spec 8409088+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10045
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Illusionary $Fetters$"
+#name 2 "Illusionary $Fetters$"
+#name 4 "Illusionary $Fetters$"
+#name 8 "Illusionary $Fetters$"
+#name 16 "Illusionary $Fetters$"
+#name 32 "Illusionary $Fetters$"
+#name 64 "Illusionary $Fetters$"
+#name 128 "Illusionary $Fetters$"
+#name 256 "Illusionary $Fetters$"
+
+#end
+
+#neweffect "Entangle Secondary mrn buff"
+#effect 11
+#damage 64
+#spec 8409088+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10189
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Entanglement"
+#name 2 "Entanglement"
+#name 4 "Entanglement"
+#name 8 "Entanglement"
+#name 16 "Entanglement"
+#name 32 "Entanglement"
+#name 64 "Entanglement"
+#name 128 "Entanglement"
+#name 256 "Entanglement"
+
+#end
+
+#neweffect "Curse of Stones Secondary mrn buff"
+#effect 11
+#damage 32
+#spec 8409088+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10270
+#sound 42
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "Weight of the Earth"
+#name 1 "Weight of the Land"
+#name 2 "Weight of the Earth"
+#name 2 "Weight of the Land"
+#name 4 "Weight of the Earth"
+#name 4 "Weight of the Land"
+#name 8 "Weight of the Earth"
+#name 8 "Weight of the Land"
+#name 16 "Weight of the Earth"
+#name 16 "Weight of the Land"
+#name 32 "Weight of the Earth"
+#name 32 "Weight of the Land"
+#name 64 "Weight of the Earth"
+#name 64 "Weight of the Land"
+#name 128 "Weight of the Earth"
+#name 128 "Weight of the Land"
+#name 256 "Weight of the Earth"
+#name 256 "Weight of the Land"
+
+#end
+
+
+#neweffect "Desiccation Secondary mrn buff"
+#effect 500
+#damage 250
+#spec 537399424+4194304
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#aoe 1
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 4
+#secondarypaths 4
+
+#name 1 "Minor Desiccation"
+#name 2 "Minor Desiccation"
+#name 4 "Minor Desiccation"
+#name 8 "Minor Desiccation"
+#name 16 "Minor Desiccation"
+#name 32 "Minor Desiccation"
+#name 64 "Minor Desiccation"
+#name 128 "Minor Desiccation"
+#name 256 "Minor Desiccation"
+
+#end
+
+#neweffect "Rust Secondary mrn buff"
+#effect 11
+#damage 2199023255552
+#spec 20480+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10089
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Rust"
+#name 2 "$Additional$ Rust"
+#name 4 "$Additional$ Rust"
+#name 8 "$Additional$ Rust"
+#name 16 "$Additional$ Rust"
+#name 32 "$Additional$ Rust"
+#name 64 "$Additional$ Rust"
+#name 128 "$Additional$ Rust"
+#name 256 "$Additional$ Rust"
+
+
+#end
+
+#neweffect "Sleep Secondary mrn buff"
+#effect 11
+#damage 1024
+#spec 545935488+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10016
+#sound 29
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Sleep"
+#name 2 "$Additional$ Sleep"
+#name 4 "$Additional$ Sleep"
+#name 8 "$Additional$ Sleep"
+#name 16 "$Additional$ Sleep"
+#name 32 "$Additional$ Sleep"
+#name 64 "$Additional$ Sleep"
+#name 128 "$Additional$ Sleep"
+#name 256 "$Additional$ Sleep"
+
+#end
+
+#neweffect "Earthgrip Secondary mrn buff"
+#effect 11
+#damage 16384
+#spec 70368752586752+4194304
+
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#pathlevel 1
+#explspr 10196
+#sound 23
+#fatiguecost 20
+#range 5025
+
+
+#paths 12
+#secondarypaths 12
+
+#name 1 "Grip of the Earth"
+#name 2 "Grip of the Earth"
+#name 4 "Softened Earth"
+#name 8 "Grip of the Earth"
+#name 16 "Grip of the Earth"
+#name 32 "Grip of the Earth"
+#name 64 "Grip of the Earth"
+#name 128 "Grip of the Earth"
+#name 256 "Grip of the Earth"
+
+#end
+
+#neweffect "Slime Secondary mrn buff"
+#effect 11
+#damage 134217728+4194304
+#spec 20480
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10256
+#sound 31
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slime"
+#name 2 "$Additional$ Slime"
+#name 4 "$Additional$ Slime"
+#name 8 "$Additional$ Slime"
+#name 16 "$Additional$ Slime"
+#name 32 "$Additional$ Slime"
+#name 64 "$Additional$ Slime"
+#name 128 "$Additional$ Slime"
+#name 256 "$Additional$ Slime"
+
+#name 1 "$Create$ Slime"
+#name 2 "$Create$ Slime"
+#name 4 "$Create$ Slime"
+#name 8 "$Create$ Slime"
+#name 16 "$Create$ Slime"
+#name 32 "$Create$ Slime"
+#name 64 "$Create$ Slime"
+#name 128 "$Create$ Slime"
+#name 256 "$Create$ Slime"
+
+
+#end
+
+#neweffect "Slow Secondary mrn buff"
+#effect 11
+#damage 68719476736
+#spec 8392704+4194304
+
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10304
+#sound 114
+#fatiguecost 20
+#range 5025
+
+
+#paths 64
+#secondarypaths 64
+
+#name 1 "$Additional$ Slow"
+#name 2 "$Additional$ Slow"
+#name 4 "$Additional$ Slow"
+#name 8 "$Additional$ Slow"
+#name 16 "$Additional$ Slow"
+#name 32 "$Additional$ Slow"
+#name 64 "$Additional$ Slow"
+#name 128 "$Additional$ Slow"
+#name 256 "$Additional$ Slow"
+
+
+#end
+
+#neweffect "Freezing Secondary mrn buff"
+#effect 11
+#damage 268435456
+#spec 8409600+4194304
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10134
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Freezing"
+#name 2 "$Additional$ Freezing"
+#name 4 "$Additional$ Freezing"
+#name 8 "$Additional$ Freezing"
+#name 16 "$Additional$ Freezing"
+#name 32 "$Additional$ Freezing"
+#name 64 "$Additional$ Freezing"
+#name 128 "$Additional$ Freezing"
+#name 256 "$Additional$ Freezing"
+
+#end
+

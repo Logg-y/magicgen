@@ -17,6 +17,9 @@
 #req spelltype !& 4
 
 #nameprefix "Hardening"
+#nameprefix "Tempering"
+#nameprefix "Solidifying"
+#nameprefix "Reinforcing"
 #fatiguepersquare 1.5
 #minfinalaoe 10
 
@@ -47,7 +50,10 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Hardening"
 #nameprefix "Tempering"
+#nameprefix "Solidifying"
+#nameprefix "Reinforcing"
 #fatiguepersquare 3
 #minfinalaoe 5
 

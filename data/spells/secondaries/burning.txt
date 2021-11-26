@@ -24,6 +24,9 @@
 #req paths != 256
 
 #nameprefix "Fiery"
+#nameprefix "Igniting"
+#nameprefix "Incendiary"
+#nameprefix "Conflagratory"
 #fatiguepersquare 4
 #scalingaoelimit 2.0
 
@@ -61,7 +64,10 @@
 #req spelltype !& 4
 #req damage != 512
 
+#nameprefix "Fiery"
+#nameprefix "Igniting"
 #nameprefix "Incendiary"
+#nameprefix "Conflagratory"
 #fatiguepersquare 2
 #scalingaoelimit 2.5
 
@@ -104,6 +110,9 @@
 #ondamage 1
 
 #nameprefix "Fiery"
+#nameprefix "Igniting"
+#nameprefix "Incendiary"
+#nameprefix "Conflagratory"
 #fatiguepersquare 1
 
 #nextspell "Burning Secondary mrnh damaging"

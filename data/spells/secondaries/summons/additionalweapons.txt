@@ -1,20 +1,39 @@
-#newsecondary "Summon Fire Flare"
+#newsecondary "Summon Fire Flare battle"
 #req siegepatrolchaff < 1
+
+#req effect < 10000
 
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.5
 #fatiguecostpereffect 20
-
-#req trample <= 0
 #unitmod "Summon Fire Flare"
 #descr "The summoned %creature% %is% able to burn %its% enemies with a magical flame."
+#details "Summoned creatures gain a AoE 1 length 2 attack that inflicts 12 AP fire damage. The summoned creature gains +6 fire resistance, or +5 it it had none originally."
+#end
 
+#newsecondary "Summon Fire Flare ritual"
+#req siegepatrolchaff < 1
+
+#req effect > 10000
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.6
+#fatiguecostpereffect 40
+#unitmod "Summon Fire Flare"
+#descr "The summoned %creature% %is% able to burn %its% enemies with a magical flame."
+#details "Summoned creatures gain a AoE 1 length 2 attack that inflict 12 AP fire damage. The summoned creature gains +6 fire resistance, or +5 it it had none originally."
 #end
 
 #newsecondary "Summon Fire Breath"
@@ -23,16 +42,17 @@
 #anysummon 1
 
 #paths 1
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Fire Breath"
 #descr "The summoned %creature% %is% able to breathe blasts of fire onto %its% enemies."
+#details "Summoned creatures gain a natural ranged fire breath attack. It has range of (strength/2), inflicts Strength points of AP fire damage in an AoE of 1, and has 5 ammunition. The summoned creature gains +6 fire resistance, or +5 it it had none originally."
 
 #end
 
@@ -42,57 +62,108 @@
 #anysummon 1
 
 #paths 96
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.1
-#fatiguecostpereffect 25
+#mult fatiguecost 1.2
 
 #unitmod "Summon Bile Breath"
 #descr "The summoned %creature% %is% able to breathe poisonous bile onto %its% enemies."
+#details "Summoned creatures gain a natural ranged bile breath attack. It has range of (strength/2), inflicts 20 points of AN poison damage in an AoE of 3, and has 5 ammunition. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
 
 #end
 
-#newsecondary "Summon Mind Blast"
+#newsecondary "Summon Mind Blast battle"
 #req siegepatrolchaff < 1
+
+#req effect < 10000
 
 #anysummon 1
 
 #paths 16
-#power -2
-
-#req effect != 10050
-
--- not montag
-#req damage > 0
-#mult fatiguecost 1.1
-#fatiguecostpereffect 30
-
-#unitmod "Summon Mind Blast"
-#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
-
-#end
-
-#newsecondary "Summon Frost Breath"
-#req siegepatrolchaff < 1
-
-#anysummon 1
-
-#paths 4
 #power -1
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.1
 #fatiguecostpereffect 20
+
+#unitmod "Summon Mind Blast"
+#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
+#details "Summoned creatures gain a natural mind blast attack. It does not affect mindless creatures, has a range of 100, and inflicts 10 points of paralysis damage if a MR check is failed. It has 5 ammunition."
+
+#end
+
+#newsecondary "Summon Mind Blast ritual"
+#req siegepatrolchaff < 1
+
+#req effect > 10000
+
+#anysummon 1
+
+#paths 16
+#power -1
+
+#req effect != 10050
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 40
+
+#unitmod "Summon Mind Blast"
+#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
+#details "Summoned creatures gain a natural mind blast attack. It does not affect mindless creatures, has a range of 100, and inflicts 10 points of paralysis damage if a MR check is failed. It has 5 ammunition."
+
+#end
+
+#newsecondary "Summon Frost Breath battle"
+#req siegepatrolchaff < 1
+
+#req effect < 10000
+
+#anysummon 1
+
+#paths 4
+#power 0
+
+#req effect != 10050
+#req effect != 10050
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 12
 
 #unitmod "Summon Frost Breath"
 #descr "The summoned %creature% %is% able to breathe blasts of frost onto %its% enemies."
+#details "Summoned creatures gain a natural ranged frost breath attack. It has a range of 10, inflicts 9 points of AP cold damage in an AoE of 2, and has 5 ammunition. The summoned creature gains +6 cold resistance, or +5 it it had none originally."
+
+#end
+
+#newsecondary "Summon Frost Breath ritual"
+#req siegepatrolchaff < 1
+
+#req effect > 10000
+
+#anysummon 1
+
+#paths 4
+#power 0
+
+#req effect != 10050
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 24
+
+#unitmod "Summon Frost Breath"
+#descr "The summoned %creature% %is% able to breathe blasts of frost onto %its% enemies."
+#details "Summoned creatures gain a natural ranged frost breath attack. It has a range of 10, inflicts 9 points of AP cold damage in an AoE of 2, and has 5 ammunition. The summoned creature gains +6 cold resistance, or +5 it it had none originally."
 
 #end
 
@@ -103,16 +174,17 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.1
 
 #unitmod "Summon Poison Breath"
 #descr "The summoned %creature% %is% able to breathe blasts of poisonous fluid onto %its% enemies."
+#details "Summoned creatures gain a natural ranged poison spit attack. It has a range of 10, inflicts Strength points of AP poison damage that affects one person, and has 5 ammunition. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
 
 #end
 
@@ -130,10 +202,11 @@
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.4
-#fatiguecostpereffect 100
+#fatiguecostpereffect 150
 
 #unitmod "Summon Gaze of Death"
 #descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
+#details "Summoned creatures gain a gaze of death attack. It is a beam weapon with a range of 15, and AoE of 20. It inflicts 10 AN damage to those that fail a MR check, and has 10 ammunition."
 
 #end
 
@@ -153,30 +226,56 @@
 -- not montag
 #req damage > 0
 #mult fatiguecost 1.4
-#fatiguecostpereffect 400
+#fatiguecostpereffect 500
 
 #unitmod "Summon Gaze of Death"
 #descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
+#details "Summoned creatures gain a gaze of death attack. It is a beam weapon with a range of 15, and AoE of 20. It inflicts 10 AN damage to those that fail a MR check, and has 10 ammunition."
 
 #end
 
-#newsecondary "Summon Elf Shot"
+#newsecondary "Summon Elf Shot battle"
 #req siegepatrolchaff < 1
+
+#req effect < 10000
 
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 35
+#fatiguecostpereffect 5
 
 #unitmod "Summon Elf Shot"
 
 #descr "The summoned %creature% %is% able to conjure green fey blasts that fatigue those they hit."
+#details "Summoned creatures gain an elf shot attack. It is a ranged weapon that inflicts 100 fatigue damage on a failed MR check, has 35 range and 10 ammunition."
+#end
+
+#newsecondary "Summon Elf Shot ritual"
+#req siegepatrolchaff < 1
+
+#req effect > 10000
+
+#anysummon 1
+
+#paths 64
+#power 0
+
+#req effect != 10050
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 12
+
+#unitmod "Summon Elf Shot"
+
+#descr "The summoned %creature% %is% able to conjure green fey blasts that fatigue those they hit."
+#details "Summoned creatures gain an elf shot attack. It is a ranged weapon that inflicts 100 fatigue damage on a failed MR check, has 35 range and 10 ammunition."
 #end
 
 #newsecondary "Summon Flame Strike"
@@ -189,12 +288,13 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.6
 #req trample <= 0
 
 #unitmod "Summon Flame Strike"
 
 #descr "The summoned %creature% %is% able to produce blasts of flame at those nearby."
+#details "Summoned creatures gain a flame strike attack. It is a AoE 1 melee weapon that does the user's Strength in AP fire damage. It cannot be repelled, nor be used for repelling. The summoned creature gains +6 fire resistance, or +5 it it had none originally."
 #end
 
 #newsecondary "Summon Throw Lightning"
@@ -203,18 +303,19 @@
 #anysummon 1
 
 #paths 2
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.4
 #req trample <= 0
 
 #unitmod "Summon Throw Lightning"
 
 #descr "The summoned %creature% %is% able to throw bolts of lightning at enemies."
+#details "Summoned creatures gain a lightning attack. It is a ranged weapon that inflicts the user's Strength in AN shock damage on a single target. It has 35 range and 10 ammunition, may be fired underwater, and has +3 precision. Those in the square where the lightning lands take 1 AN capped shock damage. The summoned creature gains +6 shock resistance, or +5 it it had none originally."
 #end
 
 #newsecondary "Summon Plague Breath battle"
@@ -235,6 +336,7 @@
 
 #unitmod "Summon Plague Breath"
 #descr "The summoned %creature% %is% able to breathe ARTICLE massive %blast% of plagued air at enemies."
+#details "Summoned creatures gain a plague breath attack. It is a beam weapon with a range of (Strength/2), and AoE of 10. It inflicts disease on those that fail a MR check, and has 5 ammunition. Additionally, those in the area of effect suffer a fear effect. The summoned creature gains 100% disease resistance to protect itself from its own breath."
 
 #end
 
@@ -257,7 +359,7 @@
 #fatiguecostpereffect 400
 
 #unitmod "Summon Plague Breath"
-#descr "The summoned %creature% %is% able to breathe ARTICLE massive %blast% of plagued air at enemies."
+#details "Summoned creatures gain a plague breath attack. It is a beam weapon with a range of (Strength/2), and AoE of 10. It inflicts disease on those that fail a MR check, and has 5 ammunition. Additionally, those in the area of effect suffer a fear effect. The summoned creature gains 100% disease resistance to protect itself from its own breath."
 
 #end
 
@@ -267,18 +369,19 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.2
 #req trample <= 0
 
 #unitmod "Summon Web Spit"
 
 #descr "The summoned %creature% %is% able to spit sticky masses of web at enemies."
+#details "Summoned creatures gain a web spit attack. It is a ranged weapon that webs those in the hit square, though they are allowed a size and strength check to avoid its effects. It has 8 range and 4 ammunition."
 #end
 
 #newsecondary "Summon Soul Leech"
@@ -287,16 +390,17 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.9
 #req trample <= 0
 
 #unitmod "Summon Soul Leech"
 
 #descr "The summoned %creature% %is% able to leech the souls of those that get close to it."
+#details "Summoned creatures gain a soul leech attack. It is a melee weapon that inflicts the user's Strength as AN life drain damage with an AoE of 1. Victims have a MR check to avoid the damage. Mindless creatures are unaffected. This weapon cannot be repelled nor used to repel."
 #end
 
 
@@ -312,35 +416,63 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.6
+#mult fatiguecost 2.2
 #req trample <= 0
 
 #unitmod "Summon Theft of Life"
 
 #descr "The summoned %creature% %is% able to leech life from enemies over long distances."
+#details "Summoned creatures gain a theft of life attack. It is a range weapon that inflicts the user's Strength as AN life drain damage with an AoE of 1, with perfect precision. Victims have a MR check to avoid the damage. Mindless creatures are unaffected. This weapon has 30 ammunition, and will be used in melee too."
 #end
 
-#newsecondary "Summon Drake Fire"
+#newsecondary "Summon Drake Fire ritual"
 #req siegepatrolchaff < 1
+
+#req effect > 10000
 
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 120
+#mult fatiguecost 1.2
+#fatiguecostpereffect 200
 #req trample <= 0
 
 #unitmod "Summon Drake Fire"
 
-#descr "The summoned %creature% %is% able to breathe cones of flames."
+#descr "The summoned %creature% %is% able to breathe cones of flame."
+#details "Summoned creatures gain a drake fire attack. It is a beam weapon with a range of 6, and AoE of 1. It inflicts 6 AP fire damage (plus half the user's Strength), and has 4 ammunition. This weapon is also used in melee. The summoned creature gains +6 fire resistance, or +5 if they had none previously."
 #end
 
-#newsecondary "Summon Drake Frost"
+#newsecondary "Summon Drake Fire battle"
 #req siegepatrolchaff < 1
+
+#req effect < 10000
+
+#anysummon 1
+
+#paths 1
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#fatiguecostpereffect 80
+#req trample <= 0
+
+#unitmod "Summon Drake Fire"
+
+#descr "The summoned %creature% %is% able to breathe cones of flame."
+#details "Summoned creatures gain a drake fire attack. It is a beam weapon with a range of 6, and AoE of 1. It inflicts 6 AP fire damage (plus half the user's Strength), and has 4 ammunition. This weapon is also used in melee. The summoned creature gains +6 fire resistance, or +5 if they had none previously."
+#end
+
+#newsecondary "Summon Drake Frost ritual"
+#req siegepatrolchaff < 1
+
+#req effect > 10000
 
 #anysummon 1
 
@@ -349,16 +481,43 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 120
+#mult fatiguecost 1.2
+#fatiguecostpereffect 240
 #req trample <= 0
 
 #unitmod "Summon Drake Frost"
 
 #descr "The summoned %creature% %is% able to breathe cones of frost."
+#details "Summoned creatures gain a drake frost attack. It is a beam weapon with a range of 6, and AoE of 2. It creates a cloud inflicting AN cold damage, and has 5 ammunition. This weapon is also used in melee. The summoned creature gains +6 cold resistance, or +5 if they had none previously."
 #end
 
-#newsecondary "Summon Drake Gas"
+#newsecondary "Summon Drake Frost battle"
+#req siegepatrolchaff < 1
+
+#req effect < 10000
+
+#anysummon 1
+
+#paths 4
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#fatiguecostpereffect 80
+#req trample <= 0
+
+#unitmod "Summon Drake Frost"
+
+#descr "The summoned %creature% %is% able to breathe cones of frost."
+#details "Summoned creatures gain a drake frost attack. It is a beam weapon with a range of 6, and AoE of 2. It creates a cloud inflicting AN cold damage, and has 5 ammunition. This weapon is also used in melee. The summoned creature gains +6 cold resistance, or +5 if they had none previously."
+#end
+
+#newsecondary "Summon Drake Gas ritual"
+
+#req effect > 10000
+
+
 #req siegepatrolchaff < 1
 
 #anysummon 1
@@ -368,13 +527,36 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 120
+#mult fatiguecost 1.2
+#fatiguecostpereffect 240
 #req trample <= 0
 
 #unitmod "Summon Drake Gas"
 
 #descr "The summoned %creature% %is% able to breathe cones of poison gas."
+#details "Summoned creatures gain a drake gas attack. It is a beam weapon with a range of 6, and AoE of 4. It creates a cloud inflicting AN poison damage, and has 5 ammunition. This weapon is also used in melee. The summoned creature gains +11 poison resistance, or +10 if they had none previously."
+#end
+
+#newsecondary "Summon Drake Gas battle"
+#req effect < 10000
+
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 64
+#power -2
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#fatiguecostpereffect 80
+#req trample <= 0
+
+#unitmod "Summon Drake Gas"
+
+#descr "The summoned %creature% %is% able to breathe cones of poison gas."
+#details "Summoned creatures gain a drake gas attack. It is a beam weapon with a range of 6, and AoE of 4. It creates a cloud inflicting AN poison damage, and has 5 ammunition. This weapon is also used in melee. The summoned creature gains +11 poison resistance, or +10 if they had none previously."
 #end
 
 #newsecondary "Summon Hypnotize"
@@ -383,7 +565,7 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -393,6 +575,7 @@
 #unitmod "Summon Hypnotize"
 
 #descr "The summoned %creature% %is% able to hypnotize enemies."
+#details "Summoned creatures gain a hypnotize attack. It is a melee weapon with +100 attack bonus that cannot be repelled nor used for repelling. Creatures hit with it must make a MR check or become stunned. Mindless creatures are unaffected. Mindless and blind units are immune to this weapon."
 #end
 
 
@@ -414,26 +597,50 @@
 #unitmod "Summon Corrosive Spit"
 
 #descr "The summoned %creature% %is% able to spit corrosive fluid."
+#details "Summoned creatures gain a corrosive spit attack. It is a ranged weapon which hits one target, has range equal to the user's Strength, and inflicts (Strength - 5) nonmagical AP acid damage. Additionally, all creatures in the hit square suffer rusted equipment."
 #end
 
 
-#newsecondary "Summon Water Breath"
+#newsecondary "Summon Water Breath ritual"
 #req siegepatrolchaff < 1
+#req effect > 10000
 
 #anysummon 1
 
 #paths 4
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 120
+#mult fatiguecost 1.2
+#fatiguecostpereffect 200
 #req trample <= 0
 
 #unitmod "Summon Water Breath"
 
 #descr "The summoned %creature% %is% able to breathe cones of high pressure water."
+#details "Summoned creatures gain a water breath attack. It is a beam weapon with a range of 12, and AoE of 1. Those struck suffer the user's Strength as untyped nonmagical AP damage. This weapon has 6 ammunition. This weapon is also used in melee. Additionally, those struck by the breath must pass a size or strength check or become stunned."
+#end
+
+#newsecondary "Summon Water Breath battle"
+#req siegepatrolchaff < 1
+#req effect < 10000
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.2
+#fatiguecostpereffect 80
+#req trample <= 0
+
+#unitmod "Summon Water Breath"
+
+#descr "The summoned %creature% %is% able to breathe cones of high pressure water."
+#details "Summoned creatures gain a water breath attack. It is a beam weapon with a range of 12, and AoE of 1. Those struck suffer the user's Strength as untyped nonmagical AP damage. This weapon has 6 ammunition. This weapon is also used in melee. Additionally, those struck by the breath must pass a size or strength check or become stunned."
 #end
 
 
@@ -455,4 +662,5 @@
 #unitmod "Summon Frost Strike"
 
 #descr "The summoned %creature% %is% able to produce blasts of frost at those nearby."
+#details "Summoned creatures gain a AoE 1 length 0 attack that inflicts 9 AP cold damage. This cannot be repelled, nor used for repelling. The summoned creature gains +6 cold resistance, or +5 it it had none originally."
 #end

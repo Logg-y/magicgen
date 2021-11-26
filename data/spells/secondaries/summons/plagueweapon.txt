@@ -1,17 +1,17 @@
-#newsecondary "Summon Plagueweapon"
-#req siegepatrolchaff < 1
-
-#anysummon 1
-
-#paths 32
-#power -4
-
--- not montag
-#req damage > 0
-#mult fatiguecost 3.0
-#req trample <= 0
-
-#unitmod "Summon Plagueweapon"
-#descr "Anyone wounded by attacks from the summoned %creature% becomes infected with an extremely virulent magical plague which will quickly spread to anyone nearby."
-
-#end
+-- #newsecondary "Summon Plagueweapon"
+-- #req siegepatrolchaff < 1
+-- 
+-- #anysummon 1
+-- 
+-- #paths 32
+-- #power -4
+-- 
+-- -- not montag
+-- #req damage > 0
+-- #mult fatiguecost 3.0
+-- #req trample <= 0
+-- 
+-- #unitmod "Summon Plagueweapon"
+-- #descr "Anyone wounded by attacks from the summoned %creature% becomes infected with an extremely virulent magical plague which will quickly spread to anyone nearby."
+-- 
+-- #end

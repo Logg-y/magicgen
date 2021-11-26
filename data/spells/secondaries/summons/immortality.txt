@@ -1,5 +1,5 @@
 #newsecondary "Summon Immortality F3"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -8,10 +8,10 @@
 #req effect != 10038
 #req effect != 21
 #paths 1
-#power -2
+#power -1
 #req secondshape == -1
 
-#mult fatiguecost 4
+#mult fatiguecost 2.5
 #magicpathvaluescaling 0.1
 
 -- not montag
@@ -19,11 +19,12 @@
 
 #unitmod "Summon Immortality F3"
 #descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to gradually return from the dead where this spell was cast."
+#details "Summoned creatures have 3 month immortality."
 
 #end
 
 #newsecondary "Summon Immortality F1"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -33,9 +34,9 @@
 #req effect != 21
 #req secondshape == -1
 #paths 1
-#power -4
+#power -2
 
-#mult fatiguecost 6
+#mult fatiguecost 3
 #magicpathvaluescaling 0.1
 
 -- not montag
@@ -43,11 +44,12 @@
 
 #unitmod "Summon Immortality F1"
 #descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to quickly return from the dead where this spell was cast."
+#details "Summoned creatures have 1 month immortality."
 
 #end
 
 #newsecondary "Summon Immortality FDom"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -57,9 +59,9 @@
 #req effect != 21
 #req secondshape == -1
 #paths 1
-#power -2
+#power -1
 
-#mult fatiguecost 3
+#mult fatiguecost 1.8
 #magicpathvaluescaling 0.1
 
 -- not montag
@@ -67,11 +69,12 @@
 
 #unitmod "Summon Immortality FDom"
 #descr "The summoned %creature% %is% filled with the power of a phoenix, allowing %it% to return from the dead where this spell was cast. This effect only works if the %creature% died in friendly dominion."
+#details "Summoned creatures have 3 month dominion immortality."
 
 #end
 
 #newsecondary "Summon Immortality 3"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -81,9 +84,9 @@
 #req effect != 21
 #req secondshape == -1
 #paths 96
-#power -2
+#power -1
 
-#mult fatiguecost 4
+#mult fatiguecost 2.5
 #magicpathvaluescaling 0.1
 
 -- not montag
@@ -91,35 +94,12 @@
 
 #unitmod "Summon Immortality 3"
 #descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast."
+#details "Summoned creatures have 3 month immortality."
 
 #end
 
 #newsecondary "Summon Immortality 1"
-#req siegepatrolchaff < 1
-
--- only permanent unit summons
-#anysummon 1
-#req effect != 1
-#req effect != 10050
-#req effect != 10038
-#req effect != 21
-#req secondshape == -1
-#paths 96
-#power -4
-
-#mult fatiguecost 6
-#magicpathvaluescaling 0.1
-
--- not montag
-#req damage > 0
-
-#unitmod "Summon Immortality 1"
-#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to quickly return from the dead where this spell was cast."
-
-#end
-
-#newsecondary "Summon Immortality Dom"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -137,13 +117,37 @@
 -- not montag
 #req damage > 0
 
+#unitmod "Summon Immortality 1"
+#descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to quickly return from the dead where this spell was cast."
+#details "Summoned creatures have 1 month immortality."
+#end
+
+#newsecondary "Summon Immortality Dom"
+--#req siegepatrolchaff < 1
+
+-- only permanent unit summons
+#anysummon 1
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+#req secondshape == -1
+#paths 96
+#power -1
+
+#mult fatiguecost 2
+#magicpathvaluescaling 0.1
+
+-- not montag
+#req damage > 0
+
 #unitmod "Summon Immortality Dom"
 #descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast. This is only successful if the %creature% died in friendly dominion."
-
+#details "Summoned creatures have 3 month dominion immortality."
 #end
 
 #newsecondary "Summon Immortality Spring"
-#req siegepatrolchaff < 1
+--#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1
@@ -153,9 +157,9 @@
 #req effect != 21
 #req secondshape == -1
 #paths 64
-#power -2
+#power 0
 
-#mult fatiguecost 4
+#mult fatiguecost 1.4
 #magicpathvaluescaling 0.1
 
 -- not montag
@@ -163,7 +167,7 @@
 
 #unitmod "Summon Immortality Spring"
 #descr "The summoned %creature% %is% given the ability to cheat death, allowing %it% to gradually return from the dead where this spell was cast. This reforming process takes place in the spring, when plants and new life flourish across the land."
-
+#details "Summoned creatures have spring immortality."
 #end
 
 #newsecondary "Summon Undead Reforming"
@@ -178,7 +182,7 @@
 #paths 32
 #power 0
 
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 #magicpathvaluescaling 0.05
 
 -- not montag
@@ -186,6 +190,7 @@
 
 #unitmod "Summon Undead Reforming"
 #descr "The summoned %creature% can reform their destroyed undead %body% sometimes when destroyed."
+#details "Summoned creatures have 50% reforming."
 
 #end
 
@@ -201,7 +206,7 @@
 #paths 65
 #power 0
 
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 #magicpathvaluescaling 0.05
 
 -- not montag
@@ -209,6 +214,7 @@
 
 #unitmod "Summon Living Reforming"
 #descr "The summoned %creature% can reform their destroyed %body% sometimes when killed or destroyed."
+#details "Summoned creatures have 50% reforming."
 
 #end
 

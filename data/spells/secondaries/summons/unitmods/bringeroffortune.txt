@@ -9,7 +9,7 @@
 #newunitmod "Summon Bringerofmisfortune"
 #req bringeroffortune == -1
 #req stealthy >= 0
-#set bringeroffortune -2
+#set bringeroffortune -10
 #nameprefix "Malevolent"
 #descr "This particular CREATURE brings bad fortune and disasters to wherever it is located."
 #end

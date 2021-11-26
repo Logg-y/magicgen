@@ -8,9 +8,10 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Fireweapon"
 #descr "The summoned %creature% %is% able to burn enemies with attacks."
+#details "Weapons that do not already have secondary effects are made magical and inflict 10AP fire on damage."
 
 #end

@@ -4,14 +4,14 @@
 #anysummon 1
 
 #paths 2
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.3
 #magicpathvaluescaling 0.05
 
 #unitmod "Summon Glamour"
 #descr "The summoned %creature% %is% imbued with magic that distorts its image, making it difficult to see and hard to hit."
-
+#details "Summoned creatures have glamour."
 #end

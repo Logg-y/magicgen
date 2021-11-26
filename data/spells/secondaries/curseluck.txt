@@ -23,6 +23,8 @@
 #req damage != 2
 
 #nameprefix "Hapless"
+#nameprefix "Ill-fated"
+#nameprefix "Unfortunate"
 #fatiguepersquare 2
 #scalingaoelimit 3.5
 
@@ -65,6 +67,8 @@
 #ondamage 1
 
 #nameprefix "Hapless"
+#nameprefix "Ill-fated"
+#nameprefix "Unfortunate"
 #fatiguepersquare 0.8
 
 #nextspell "Cursed Luck Secondary mrnh damaging"

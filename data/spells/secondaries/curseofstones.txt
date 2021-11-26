@@ -22,6 +22,10 @@
 #req spelltype !& 4
 #req damage != 32
 
+#nameprefix "Burdening"
+#nameprefix "Encumbering"
+#nameprefix "Hampering"
+#nameprefix "Besetting"
 #nameprefix "Weighted"
 #fatiguepersquare 4
 
@@ -60,6 +64,10 @@
 #req damage != 32
 
 #nameprefix "Burdening"
+#nameprefix "Encumbering"
+#nameprefix "Hampering"
+#nameprefix "Besetting"
+#nameprefix "Weighted"
 #fatiguepersquare 2
 
 #scalingaoelimit 2.5
@@ -102,6 +110,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Burdening"
+#nameprefix "Encumbering"
+#nameprefix "Hampering"
+#nameprefix "Besetting"
 #nameprefix "Weighted"
 #fatiguepersquare 1.6
 

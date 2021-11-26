@@ -22,6 +22,10 @@
 #req spelltype !& 4
 
 #nameprefix "Iced"
+#nameprefix "Encasing"
+#nameprefix "Freezing"
+#nameprefix "Engulfing"
+#nameprefix "Icy"
 #fatiguepersquare 6
 #scalingaoelimit 1.5
 
@@ -59,7 +63,11 @@
 #req spelltype !& 4
 #req damage != 299
 
+#nameprefix "Iced"
 #nameprefix "Encasing"
+#nameprefix "Freezing"
+#nameprefix "Engulfing"
+#nameprefix "Icy"
 #fatiguepersquare 3
 #scalingaoelimit 2.0
 
@@ -101,6 +109,10 @@
 #ondamage 1
 
 #nameprefix "Iced"
+#nameprefix "Encasing"
+#nameprefix "Freezing"
+#nameprefix "Engulfing"
+#nameprefix "Icy"
 #fatiguepersquare 4
 
 #nextspell "Encase in Ice Secondary mrnh damaging"
@@ -139,7 +151,11 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Iced"
 #nameprefix "Encasing"
+#nameprefix "Freezing"
+#nameprefix "Engulfing"
+#nameprefix "Icy"
 #fatiguepersquare 2
 
 #nextspell "Encase in Ice Secondary mrn damaging"

@@ -41,7 +41,7 @@
 #paths 129
 #secondarypaths 1
 
-#details "Phoenix Pyre: Upon death, explode into 10 AP fire dmg with area of effect 50. If the creature's fatigue is less than 100, it respawns at a random location on the battlefield and gains 30+d20 fatigue. Also grants +10 fire resistance."
+#details "Upon death, recipients explode in a massive AoE 50 explosion, inflicting 10 AP fire damage to those in the area of effect. If they were not soul slayed and were under 100 fatigue, they reappear at a random location on the battlefield at full health, but gain an openended d20 + 30 fatigue. This effect does not trigger if the damage inflicted was 9000 or higher. Also grants 10 fire resistance."
 
 #namecond effectiveaoe < 1 1 "NAMEPREFIX Phoenix Pyre"
 #namecond effectiveaoe < 1 128 "NAMEPREFIX Demonic Immortality"

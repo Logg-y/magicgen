@@ -31,6 +31,9 @@
 #nextspell "Minor Rage mrnh"
 
 #nameprefix "Aggravating"
+#nameprefix "Infuriating"
+#nameprefix "Angering"
+#nameprefix "Enraging"
 #fatiguepersquare 10
 
 #scalingaoelimit 1.2
@@ -74,7 +77,10 @@
 
 #nextspell "Minor Rage mrn"
 
+#nameprefix "Aggravating"
 #nameprefix "Infuriating"
+#nameprefix "Angering"
+#nameprefix "Enraging"
 #fatiguepersquare 5
 
 #scalingaoelimit 1.5
@@ -119,7 +125,10 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Aggravating"
 #nameprefix "Infuriating"
+#nameprefix "Angering"
+#nameprefix "Enraging"
 #fatiguepersquare 2.25
 
 #req nonscalingdamage < 40
@@ -170,6 +179,9 @@
 #aispellmod 30
 
 #nameprefix "Aggravating"
+#nameprefix "Infuriating"
+#nameprefix "Angering"
+#nameprefix "Enraging"
 #fatiguepersquare 4.5
 
 #nextspell "Minor Rage mrnh damaging"

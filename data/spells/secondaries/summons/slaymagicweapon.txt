@@ -4,11 +4,11 @@
 #anysummon 1
 
 #paths 16
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.5
 
 #unitmod "Summon Slaymagicweapon"
 #descr "The summoned %creature% %is% able to dissolve magic beings upon wounding them. This is a magical effect and may be resisted by the victim."

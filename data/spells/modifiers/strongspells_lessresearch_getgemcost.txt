@@ -20,7 +20,7 @@
 #req fatiguecost < 100
 
 #mult fatiguecost 2.5
-#pathlevel -1
-#power 3
+#pathlevel 0
+#power 2
 
 #end

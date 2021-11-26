@@ -22,6 +22,11 @@
 #req spelltype !& 4
 
 #nameprefix "Poisonous"
+#nameprefix "Toxic"
+#nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 4
 
 #scalingaoelimit 2.0
@@ -57,7 +62,12 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Poisonous"
 #nameprefix "Toxic"
+#nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 2
 
 #scalingaoelimit 2.5
@@ -102,6 +112,11 @@
 #req spec !& 8192
 
 #nameprefix "Poisonous"
+#nameprefix "Toxic"
+#nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 3
 
 #nextspell "7AN poison Secondary mrnh damaging"
@@ -143,7 +158,12 @@
 -- not on damage already
 #ondamage 1
 
+#nameprefix "Poisonous"
 #nameprefix "Toxic"
+#nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 1.5
 
 #nextspell "7AN poison Secondary mrn damaging"
@@ -180,7 +200,12 @@
 -- not ritual
 #req spelltype !& 4
 
+#nameprefix "Poisonous"
+#nameprefix "Toxic"
 #nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 1.5
 
 
@@ -227,7 +252,12 @@
 -- not inanimate only
 #req effect != 96
 
+#nameprefix "Poisonous"
+#nameprefix "Toxic"
 #nameprefix "Poisonlaced"
+#nameprefix "Envenomed"
+#nameprefix "Tainted"
+#nameprefix "Foul"
 #fatiguepersquare 1
 
 #nextspell "4 capped poison Secondary damaging"

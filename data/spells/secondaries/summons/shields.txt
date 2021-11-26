@@ -8,7 +8,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#mult fatiguecost 1.15
 
 #unitmod "Summon Poisonbarbs"
 #descr "The %hide% of the summoned %creature% %is% covered in many small poisonous barbs, poisoning those who attack with short weapons."
@@ -40,7 +40,7 @@
 #anysummon 1
 
 #paths 1
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
@@ -62,7 +62,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.5
 
 #unitmod "Summon Banefireshield"
 #descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
@@ -76,11 +76,11 @@
 #anysummon 1
 
 #paths 5
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.5
 
 #unitmod "Summon Acidshield"
 #descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and harming the attacker."
@@ -99,7 +99,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.4
 
 #unitmod "Summon Fateweaving"
 #descr "The summoned %creature% %is% granted the ability to alter fate. Those striking in melee experience bad luck if they fail to resist."
@@ -116,7 +116,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.3
 
 #unitmod "Summon Overcharge"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
@@ -134,7 +134,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 1.6
 
 #unitmod "Summon Eyevengeance"
 #descr "The summoned %creature% %is% imbued with magic and gains the ability to emit blinding flashes of light. Those attacking in melee will lose an eye."
@@ -151,7 +151,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.3
+#mult fatiguecost 1.1
 
 #unitmod "Summon Horrormark"
 #descr "The summoned %creature% %is% imbued with power to attract the attention of otherworldly creatures. Those attacking in melee will become horror marked if they fail to resist."
@@ -168,7 +168,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.6
 
 #unitmod "Summon Entangle"
 #descr "The summoned %creature% %is% imbued with power to rapidly grow vines. Those attacking in melee will become ensnared in vines if they fail to resist."
@@ -186,7 +186,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.5
 
 #unitmod "Summon Bloodvengeance"
 #descr "When damaged, the summoned %creature% gain the ability to force their %attacker% to suffer their wounds as well. The attacker may attempt to resist this effect."
@@ -204,7 +204,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.3
+#mult fatiguecost 1.8
 
 #unitmod "Summon Damagereversal"
 #descr "When damaged, the summoned %creature% gain the ability to redirect any damage suffered onto their attacker instead. The attacker may attempt to resist this effect."
@@ -221,7 +221,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.5
 
 #unitmod "Summon Slimer"
 #descr "Those attacking the summoned %creature% in melee may become coated in a sticky slime."
@@ -238,11 +238,11 @@
 #anysummon 1
 
 #paths 64
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 1.4
 
 #unitmod "Summon Poisonbarbs 15"
 #descr "The %hide% of the summoned %creature% %is% covered in many small poisonous barbs, poisoning those who attack with short weapons."
@@ -256,11 +256,11 @@
 #anysummon 1
 
 #paths 1
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.1
+#mult fatiguecost 1.6
 
 #unitmod "Summon Fireshield 14"
 #descr "The summoned %creature% %is% surrounded by magical flames. These flames harm those trying to attack in melee."
@@ -274,11 +274,11 @@
 #anysummon 1
 
 #paths 32
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.7
+#mult fatiguecost 1.9
 
 #unitmod "Summon Banefireshield 14"
 #descr "The summoned %creature% %is% surrounded by dark flames. These flames harm and decay those trying to attack in melee. Due to the dark nature of the flames, fire resistance is no defence."
@@ -292,11 +292,11 @@
 #anysummon 1
 
 #paths 5
-#power -2
+#power -1
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 2.0
+#mult fatiguecost 1.9
 
 #unitmod "Summon Acidshield 14"
 #descr "The summoned %creature% %is% imbued with magical acid. The acid is released when struck in melee, splashing and badly harming the attacker."
@@ -310,11 +310,11 @@
 #anysummon 1
 
 #paths 2
-#power -1
+#power 0
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.6
+#mult fatiguecost 1.5
 
 #unitmod "Summon Overcharge 3"
 #descr "The summoned %creature% %is% filled with electrical power. Those striking in melee are shocked."
