@@ -455,6 +455,12 @@ def rollspells(**options):
             if options["nationlist"] is None:
                 options["nationlist"] = list(nationals.nations.keys())
             nationstogeneratefor = options["nationlist"]
+            # Deal with the case where no non-national spells were generated, so there are apparently no existing effects
+            # TODO: maybe make a list of all vanilla non-national spells to use in place of this blank data
+            if len(generatedeffectsatlevels) == 0:
+                for level in range(0 + researchmod, 10 + researchmod):
+                    generatedeffectsatlevels[level] = []
+
             generate_national_spells(
                 targetnumberofnationalspells=options.get("nationalspells", 12),
                 spelleffects=s,

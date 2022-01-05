@@ -27,6 +27,7 @@ Low level early gem spells are +1 research and path levels
 Fixed pathboost globals, previously they would only target mages that had the appropriate path already (thanks to Waylander for pointing this out)
 Changed the details text for pathboost globals to correctly reflect the fact that they can only boost up to X4, not X5 as stated.
 Fixed nature pathboost globals instead providing boosts in Death!
+Fixed error when generating only national spells (thanks to kurtcop for reporting)
 
 v3.1.0
 
