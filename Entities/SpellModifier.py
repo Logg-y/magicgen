@@ -119,3 +119,41 @@ class SpellModifier(object):
 
 
         return True
+    def apply(self, s):
+        "Applies the modifier to the passed Spell object"
+        # Forced modifier overrides
+        for attrib, val in self.setcommands:
+            print(f"mod: Set spell {attrib} to {val}")
+            setattr(s, attrib, val)
+
+        for attrib, val in self.multcommands:
+            newval = int(getattr(s, attrib) * val)
+            print(f"mod: Mult: spell {attrib} by {val} to {newval}")
+            setattr(s, attrib, newval)
+
+        # Apply modifier to the spell
+        for param in self.params:
+            if hasattr(s, param):
+                paramval = getattr(self, param)
+                if param == "aispellmod":
+                    s.multiplyAISpellMod(1 + (paramval / 100))
+                elif param == "spec" and paramval != 0:
+                    # Add to nextspells too
+                    next = s
+                    attempts = 0
+                    while 1:
+                        attempts += 1
+                        if next is None or next == "":
+                            break
+                        if next.spec & paramval == 0:
+                            print(f"Add spec {paramval} to {next.name}")
+                            next.spec += paramval
+                        next = next.nextspell
+                        if attempts > 10000:
+                            raise Exception(f"Likely infinite nextspell recursion in {self.name}")
+                else:
+                    if getattr(s, param) is not None:
+                        setattr(s, param, getattr(s, param) + paramval)
+                        print(f"mod: Added {paramval} to {param}")
+                    elif paramval != 0:
+                        print(f"WARNING: trying to add {paramval} to parameter with value None {param}")

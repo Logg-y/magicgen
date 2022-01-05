@@ -1,5 +1,6 @@
 import math
 import random
+import copy
 
 from Entities.spell import Spell
 from Entities import spell
@@ -89,6 +90,30 @@ class SpellEffect(object):
     def __repr__(self):
         return f"SpellEffect({self.name})"
 
+    def _initvariables(self):
+        "Handles various once-and-done tasks that cannot be done during file parsing for some reason"
+        # the secondary effect code expects secondarypathchance to tell the truth, set it to 0 if it isn't doing anything
+        # (secondary and primary paths being the same is only a problem if they are an exact power of two
+        # ie have only one path flag)
+        if self.secondarypathchance > 0 and (self.secondarypaths == 0 or (
+                self.paths == self.secondarypaths and math.log(self.paths, 2) % 1.0 == 0.0)):
+            print(f"Set secondary path chance of {self.name} to 0 as it is useless")
+            self.secondarypathchance = 0
+        # Convenience for modifiers: set values equal to our nonscaling attributes
+        for x in ["aoe", "damage", "range"]:
+            setattr(self, f"nonscaling{x}", getattr(self, x) % 1000)
+
+        # update nextspell to point to its SpellEffect instance
+        if isinstance(self.nextspell, str) and len(self.nextspell) > 0:
+            self.nextspell = utils.spelleffects[self.nextspell]
+
+        self.calcchassisvalues()
+
+        if self.paths == 0:
+            self.paths = 255  # NOT HOLY unless otherwise stated
+        if self.schools is None:
+            self.schools = 127  # NOT HOLY
+
     def rollSpell(self, researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None,
                   blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None,
                   forcedmodifier=None, forcepathlevel=None, existingspells=None, allowedsecondarypaths=None, **options):
@@ -111,386 +136,42 @@ class SpellEffect(object):
 		secondarychance: int of % chance to roll a secondary effect
 		summonsecondarychance: int of % chance to roll a secondary effect on a summoning spell
 		"""
-
-        if self.badaispell and options.get("nobadaispells", 0) > 0:
-            print(f"Fail {self.name}: is a bad AI spell")
-            return None
+        # Combine named args with the options dict. It's a lot tidier when passing around internal functions
+        args = locals()
+        options = {**options, **args}
+        del options["self"]
 
         if setparams is None:
-            isnational = False
+            options["isnational"] = False
         else:
-            isnational = "restricted" in setparams
+            options["isnational"] = "restricted" in setparams
 
-        if isnational and self.permanentslotusage:
-            print(f"Fail {self.name} as this is a national generation and the effect wants to fill permanent slots")
-            return None
-
-        if isnextspell:
-            print(f"Starting nextspell: {self.name}")
-
-        if random.random() * 100 < self.skipchance and not isnextspell and (allowskipchance or self.skipchance >= 100):
-            print(f"Failed to generate {self.name} at {researchlevel}: random skipchance")
-            return None
-
-        if not isnextspell and (allowskipchance or self.skipchance >= 100) and not self.noresearchdifferenceskip:
-            # if we were passed the dict of spells that already exist, skipchance based on proximity to effects that
-            # already exist - this is the case for non-holy non-national spells
-            if existingspells is not None:
-                smallestdiff = None
-                for rl, effectlist in existingspells.items():
-                    if self.name in effectlist:
-                        thisdiff = abs(rl - researchlevel)
-                        if smallestdiff is None or thisdiff < smallestdiff:
-                            smallestdiff = thisdiff
-                print(f"Smallest research level diff to an already generated spell is {smallestdiff}")
-                if smallestdiff is None:
-                    powerdiff = max(0, researchlevel - self.power)
-                    powerskipchance = min(90, powerdiff * 4)
-                    if random.random() * 100 < powerskipchance:
-                        print(f"Failed to generate {self.name} at {researchlevel}: "
-                               f"base research difference skipchance of {powerskipchance}")
-                        return None
-                else:
-                    tempvalue = (4 - smallestdiff)
-                    powerskipchance = min(100, (tempvalue*tempvalue) * 15)
-                    if random.random() * 100 < powerskipchance:
-                        print(f"Failed to generate {self.name} at {researchlevel}: "
-                              f"research difference to existing spell skipchance of {powerskipchance}")
-                        return None
-            else:
-                powerdiff = max(0, researchlevel - self.power)
-                powerskipchance = min(90, powerdiff * 8)
-                if random.random() * 100 < powerskipchance:
-                    print(f"Failed to generate {self.name} at {researchlevel}: "
-                          f"base research difference skipchance of {powerskipchance}")
-                    return None
-
-        # bypasses allowskipchance
-        if self.effect < 10000 and forcepath == 128 and not isnextspell:
-            # Gimme less combat blood spells
-            if random.random() < 0.85:
-                print(f"Failed as 85% to have less blood combat spells")
-                return None
-            # Even less likely if they have other primary paths
-            if self.paths != 128 and random.random() < 0.95:
-                print(f"Failed as 95% to fail other path combat spells")
-                return None
-
-        if self.unique and self.generated > 0:
-            print(f"Failed to generate {self.name} at {researchlevel}: effect is unique and already exists")
-            return None
-
-        if isinstance(self.nextspell, str) and len(self.nextspell) > 0:
-            self.nextspell = utils.spelleffects[self.nextspell]
-
-        # Don't make lots of generations from the same effect
-        if allowskipchance and not isnextspell and self.generated > 0:
-            repeatedskipchance = 1 - (1/(1+(self.generated*3)))
-            if random.random() < repeatedskipchance:
-                print(f"Skipped based on {self.generated} previous generations")
-                return None
-
-        if forceschool and not (self.schools & forceschool):
-            print(
-                f"Failed to generate {self.name} at {researchlevel}: school is forced to {forceschool} which is incompatible")
-            return None
-
-        # path -1 means nextspells, and they can't be cast normally
-        # so don't generate them if we aren't a next spell or have a forced path for some other reason
-        if self.paths == -1 and not forcepath:
-            print(f"Failed to generate {self.name} at {researchlevel}: spell has no paths")
-            return None
-
-        if self.schools == -1 and not isnextspell:
-            # nextspells go in the unresearchable school!
-            print(f"{self.name} is unresearchable and not next spell, fail this generation")
-            return None
-
-        self.isnextspell = isnextspell
-
-        # Setting this on self allows modifiers to check against it
+        self._initvariables()
         self.researchlevel = researchlevel
-        # Convenience for modifiers: set values equal to our nonscaling attributes
-        for x in ["aoe", "damage", "range"]:
-            setattr(self, f"nonscaling{x}", getattr(self, x) % 1000)
-
-        # the secondary effect code expects this value to tell the truth, set it to 0 if it isn't doing anything
-        # (secondary and primary paths being the same is only a problem if they are an exact power of two
-        # ie have only one path flag)
-        if self.secondarypathchance > 0 and (self.secondarypaths == 0 or (
-                self.paths == self.secondarypaths and math.log(self.paths, 2) % 1.0 == 0.0)):
-            print(f"Set secondary path chance of {self.name} to 0 as it is useless")
-            self.secondarypathchance = 0
+        self.isnextspell = isnextspell
+        if self._shouldNotGenerate(**options):
+            return None
 
         s = Spell()
+        mod = self._rollModifier(**options)
+        secondary = self._rollSecondary(mod, **options)
 
-        # Roll a modifier.
-        mod = None
-        if blockmodifier:
-            mod = utils.modifiers["Do Nothing"]
-        elif forcedmodifier is not None:
-            mod = forcedmodifier
-        else:
-            modlist = list(utils.modifiers.keys())
-            random.shuffle(modlist)
-            mod = None
-            while mod is None:
-                m = utils.modifiers[modlist.pop(0)]
-                print(f"Consider mod: {m.name}")
-                if m.compatibility(self, researchlevel, isnextspell):
-                    if random.random() * 100 < m.skipchance:
-                        if m.skipchance < 100.0:
-                            modlist.append(m.name)
-                    else:
-                        print(f"Using mod {m.name} for {self.name}")
-                        mod = m
-                        break
-                if len(modlist) == 0:
-                    print(f"No valid modifiers for {self.name} at research {researchlevel}")
-                    raise Exception(f"No valid modifiers for {self.name} at research {researchlevel}")
-
-                    raise ValueError(f"No valid modifiers for {self.name}")
-        secondarylist = list(utils.secondaries.keys())
-        random.shuffle(secondarylist)
-        secondary = None
-
-
-        allowOnlySamePathSecondaryEffect = False
-        allowOnlyDiffPathSecondaryEffect = False
-
-        if self.effect in [1, 10001, 10050, 10038, 21, 10021]:
-            diffpathchance = options.get("summondiffpathsecondarychance", 10)
-            samepathchance = options.get("summonsamepathsecondarychance", 40)
-        else:
-            diffpathchance = options.get("diffpathsecondarychance", 10)
-            samepathchance = options.get("samepathsecondarychance", 40)
-
-        if blocksecondary:
-            secondary = utils.secondaries["Do Nothing"]
-            print(f"Secondary effect is blocked for this effect")
-        elif forcesecondaryeff is None and random.random() * 100 <= self.secondaryeffectskipchance:
-            print(f"Secondary effect skipchance of {self.secondaryeffectskipchance}")
-            secondary = utils.secondaries["Do Nothing"]
-        elif forcesecondaryeff is None:
-            # this should stop 100% secondary path spells getting a different offpath secondary effect
-            if random.random() * 100 >= diffpathchance or random.random() * 100 < self.secondarypathchance:
-                if random.random() * 100 >= samepathchance:
-                    print(f"Failed both secondary effect chances of {diffpathchance} and {samepathchance}")
-                    secondary = utils.secondaries["Do Nothing"]
-                else:
-                    print(f"Allowed only same path secondary effect")
-                    allowOnlySamePathSecondaryEffect = True
-            else:
-                print(f"Allowed only diff path secondary effect")
-                allowOnlyDiffPathSecondaryEffect = True
-
-        print("roll secondary")
-
-        if secondary is None:
-            while secondary is None:
-                if len(secondarylist) == 0:
-                    if allowOnlySamePathSecondaryEffect or allowOnlyDiffPathSecondaryEffect:
-                        print("Forced to take Do Nothing as secondary as no others were valid")
-                        secondary = utils.secondaries["Do Nothing"]
-                        break
-                    print(f"Failed to generate {self.name} at {researchlevel}: no valid secondaries")
-                    return None
-                toconsider = utils.secondaries[secondarylist.pop(0)]
-                if toconsider.compatibility(self, mod, researchlevel):
-                    if forcesecondaryeff is None:
-                        # Check path eligibility
-                        if allowOnlySamePathSecondaryEffect and toconsider.paths & self.paths == 0:
-                            # Have a reduced chance to be allowed, if the path is normally a secondary path of the spell
-                            if toconsider.paths & self.secondarypaths != 0 and self.secondarypathchance > 0:
-                                if random.random() * 100 < self.secondarypathchance:
-                                    # Allow it, this time
-                                    pass
-                                else:
-                                    continue
-                            else:
-                                continue
-                        if allowOnlyDiffPathSecondaryEffect and toconsider.paths & self.paths != 0:
-                            continue
-                        if random.random() * 100 < toconsider.skipchance:
-                            if toconsider.skipchance < 100.0:
-                                secondarylist.append(toconsider.name)
-                        else:
-                            secondary = toconsider
-                            break
-                    else:
-                        # Make sure its path matches what was asked for
-                        if toconsider.paths & forcesecondaryeff:
-                            # ignore skipchance for this
-                            print(f"Forced paths: Using secondary {toconsider.name}")
-                            secondary = toconsider
-                            break
-                        else:
-                            print("Bad paths for forced secondary")
-
-
-        print(f"using secondary {secondary.name} for {self.name} with mod {mod.name}")
-
-        # Holy spells need to escape this
-        # Also, Nextspells without a scale rate should still be allowed
-        secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
-
-        if researchlevel + mod.power + secondarypower < self.power and self.paths != 256 and not (
-                isnextspell and self.scalerate == 0):
-            print(f"Failed to generate {self.name} at {researchlevel}: final power level too low")
+        if not self._powerLevelIsValid(mod, secondary):
             return None
 
-        if researchlevel + mod.power + secondarypower > self.maxpower and self.paths != 256 and not (
-                isnextspell and self.scalerate == 0):
-            print(f"Failed to generate {self.name} at {researchlevel}: final power level too high")
-            return None
-
-        s.name = self.name + " " + str(random.randint(-9999, 9999))
-        s.effect = self.effect
-        s.damage = self.damage
-        s.range = self.range
-        s.nreff = self.nreff
-        s.precision = self.precision
-        s.aoe = self.aoe
-        s.spec = self.spec
-        s.details = self.details
-        s.researchlevel = researchlevel
-        s.flightspr = self.flightspr
-        s.explspr = self.explspr
-        s.sound = self.sound
-        s.maxbounces = self.maxbounces
-        s.provrange = self.provrange
-        s.nogeodst = self.nogeodst
-        s.onlygeodst = self.onlygeodst
-        s.ainocast = self.ainocast
-        s.onlyfriendlydst = self.onlyfriendlydst
-        s.nolandtrace = self.nolandtrace
-        s.onlygeosrc = self.onlygeosrc
-        s.aispellmod = self.aispellmod
-        s.hiddenench = self.hiddenench
-        s.friendlyench = self.friendlyench
-        s.parenteffect = self
-        if s.details is None:
-            s.details = ""
-        if self.isnextspell:
-            s.isnextspell = True
-
-        if setparams is not None:
-            for key, val in setparams.items():
-                setattr(s, key, val)
-
-        self.magicvalue = 0.0
-        if self.chassisvalue is not None:
-            self.calcchassisvalues()
-
-        if self.copyspell is not None:
-            s.copyspell = self.copyspell
-        if self.casttime is not None:
-            s.casttime = self.casttime
-
-        if self.paths == 0:
-            self.paths = 255  # NOT HOLY unless otherwise stated
-        if self.schools is None:
-            self.schools = 127  # NOT HOLY
-
-        if self.schools > -1:
-            s.school = utils._selectFlag(SchoolFlags, self.schools)
-            if forceschool is not None:
-                s.school = forceschool
-        else:
-            s.school = -1
+        self._setSpellDefaultValues(s)
+        s.school = self._selectSpellSchool(**options)
 
         # Guard against infinites if blood is the only legal option and we aren't allowed it
-        if self.paths == 128 and not allowblood and not isnextspell:
+        if self.paths == 128 and not allowblood and not self.isnextspell:
             print(f"Failed to generate {self.name} at {researchlevel}: blood guard against infinite loop")
             return None
 
-        possibleillwinterpaths = utils.breakdownflag(511 & self.paths)
-        random.shuffle(possibleillwinterpaths)
-        print(f"Possible path with illwinter ids are {possibleillwinterpaths}")
+        if not self._selectAndApplySpellPathsAndLevels(mod, secondary, s, **options):
+            return None
 
-        # If we are trying to pick a same path secondary, be very biased towards those path(s) as path1
-        if allowOnlySamePathSecondaryEffect:
-            possibleillwinterpaths = utils.breakdownflag(self.paths & secondary.paths) + possibleillwinterpaths
-            print(f"After same path secondary bias: paths with illwinter ids are {possibleillwinterpaths}")
-
-
-
-        if forcepath is None:
-            while 1:
-                if len(possibleillwinterpaths) == 0:
-                    print(f"Failed to generate: no valid paths")
-                    return None
-                illwinterpath = possibleillwinterpaths.pop(0)
-                s.path1 = 2**illwinterpath
-                if s.path1 == 128 and not allowblood:
-                    continue
-                if random.random() * 100 <= self.pathskipchances.get(s.path1, 0) and len(possibleillwinterpaths) > 0:
-                    if self.pathskipchances.get(s.path1, 0) < 100.0:
-                        possibleillwinterpaths.append(illwinterpath)
-                    continue
-                # Effects taking permanent slots need to be limited in number to avoid mechanic abuse
-                if self.permanentslotusage \
-                        and utils.permanent_slot_spells_by_path.get(s.path1, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
-                    print(f"Path {s.path1} not allowed due to permanent slot taking spell limit")
-                    continue
-                print(f"Accepting path {s.path1} (illwinter path {illwinterpath})")
-                break
-
-        if forcepath is not None:
-            if allowskipchance and random.random() * 100 <= self.pathskipchances.get(forcepath, 0):
-                print(f"Forced path was {forcepath}, failed this pathskipchance")
-                return None
-            if self.permanentslotusage \
-                    and utils.permanent_slot_spells_by_path.get(forcepath, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
-                print(f"Attempted to forcepath into a path that has too many permanent spell effects")
-                return None
-            print(f"Forced path to {forcepath}")
-            s.path1 = forcepath
-
-        s.path1level = self.pathlevel + mod.pathlevel + secondary.pathlevel
-        if forcepathlevel is not None:
-            print(f"Calced path level was {s.path1level}, using override {forcepathlevel} instead")
-            s.path1level = forcepathlevel
-        # modifier fatigue cost is added later
-        s.fatiguecost = self.fatiguecost
-
-        scaleamt = 1
-
-        # See if the secondary effect we took has a path requirement that we fail to meet
-        # (decide on offpath here if there will be one!)
-        if secondary.paths > 0:
-            if not (secondary.paths & s.path1):
-                s.path2 = utils._selectFlag(PathFlags, secondary.paths)
-                print(f"Forced to take offpath {s.path2} due to secondary effect:"
-                      f" spell is currently {s.path1} and secondary wants {secondary.paths}")
-
-        # Chance to roll a secondary path (if the secondary effect we picked doesn't demand one)
-        if random.random() * 100 < self.secondarypathchance and s.path2 < 0 and forcesecondaryeff is None:
-            print("Try to roll a secondary path")
-            if self.secondarypaths > 0 and s.path1level >= 2 and self.secondarypaths != s.path1:
-                p = self.secondarypaths
-                if p & s.path1:
-                    p -= s.path1
-                if p > 0:
-                    attempts = 0
-                    while 1:
-                        attempts += 1
-                        s.path2 = utils._selectFlag(PathFlags, p)
-                        if s.path2 != s.path1:
-                            if random.random() * 100 > self.pathskipchances.get(s.path2, 0):
-                                break
-                        if attempts == 1000000:
-                            raise Exception("Failed to select a secondary path, reached attempt limit")
-                if allowedsecondarypaths is not None and allowedsecondarypaths & s.path2 == 0:
-                    print(f"Failed to generate: not allowed selected secondary path of {s.path2}")
-                    return None
-
-        # Calc this even if the spell doesn't scale - this is for the sake of SCALEAMT in #details
-        actualpowerlvl = (researchlevel - self.power) + mod.power + secondarypower
-        scaleamt = 0
-        for x in range(0, actualpowerlvl):
-            scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
-        scaleamt = int(round(scaleamt))
+        actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
+        scaleamt = self.calcScaleamt(mod, secondary, actualpowerlvl)
         print(f"scaleamt = {scaleamt}")
 
         if self.spelltype & SpellTypes.RESEARCH_SCALES_AISPELLMOD:
@@ -504,46 +185,11 @@ class SpellEffect(object):
             if self.spelltype == -1:
                 raise ValueError(f"Attempting to scale spell effect {self.name}, but no spell type is set!")
 
-            self._scaleSpellEffect(s, scaleamt, mod, secondary)
+            self._scaleSpellEffectiveness(s, scaleamt, mod, secondary)
+            self._scaleSpellPath1level(s, mod, secondary, **options)
+            self._scaleFatigueCost(s, scaleamt, mod, secondary)
 
-            scaleamt2 = scaleamt * self.scalecost
-            print(f"scaleamt now {scaleamt2} after being multiplied by scalecost {self.scalecost}")
-
-            s.fatiguecost += scaleamt2 * self.scalefatiguemult
-            print(f"Fatiguemult: Added {scaleamt2 * self.scalefatiguemult} to fatigue cost, it is now {s.fatiguecost}")
-
-            if scaleamt2 > 0:
-                scaleamt2 += 1  # otherwise the case where scaleamt = 1 yields no fatigue increase!
-
-            print(
-                f"Scaling path calc is {mod.pathperresearch + self.pathperresearch + secondary.pathperresearch} * {actualpowerlvl}")
-            print(
-                f"Scaling path level modification is {math.floor((mod.pathperresearch + self.pathperresearch + secondary.pathperresearch) * actualpowerlvl)}")
-            s.path1level += math.floor(
-                (mod.pathperresearch + self.pathperresearch + secondary.pathperresearch) * actualpowerlvl)
-
-            s.path1level += options.get("pathlevelmodflat", 0)
-            s.path1level *= options.get("pathlevelmodmult", 1.0)
-            s.path1level = max(1, s.path1level)
-            s.path1level = math.floor(s.path1level)
-
-            s.fatiguecost += 10 * actualpowerlvl
-            print(f"Power level: Added {10 * actualpowerlvl} to fatigue cost, it is now {s.fatiguecost}")
-
-
-            scaleexponent = (mod.scalefatigueexponent + self.scalefatigueexponent + secondary.scalefatigueexponent)
-            if scaleamt2 != 0.0 and scaleexponent > 0.0:
-                s.fatiguecost += (scaleamt2 ** scaleexponent)
-                print(
-                    f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
-            elif scaleexponent < 0.0 and scaleamt2 != 0:
-                s.fatiguecost -= (scaleamt2 ** (-1 * scaleexponent))
-                print(
-                    f"Exponent: Subtracted {(scaleamt2 ** (-1 * scaleexponent))} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
-
-            s.fatiguecost = max(0, s.fatiguecost)
-
-            # Event set wants the scaleamt before it is messed with
+            # Have the event set generate
             if self.eventset is not None:
                 realeventset = utils.eventsets[self.eventset]
                 eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
@@ -552,542 +198,58 @@ class SpellEffect(object):
                     return None
                 s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
 
-        if self.nextspell != "":
-            s.nextspell = self.nextspell.rollSpell(researchlevel + mod.power + secondarypower, forceschool=forceschool,
-                                                   forcepath=s.path1, blockmodifier=True, isnextspell=True,
-                                                   setparams=setparams, allowskipchance=False)
-            if s.nextspell is None:
-                raise ValueError(f"Failed to generate nextspell {self.nextspell.name}")
-        if self.extraspell != "":
-            extraspell = utils.spelleffects[self.extraspell]
-            if self.donotsetextraspellpath == 0:
-                s.modcmdsbefore += extraspell.rollSpell(researchlevel, forceschool=s.school, forcepath=s.path1,
-                                                        isnextspell=True, blockmodifier=False, setparams=setparams,
-                                                        forcedmodifier=mod, forcepathlevel=s.path1level,
-                                                        allowskipchance=False, **options).output()
-            else:
-                s.modcmdsbefore += extraspell.rollSpell(researchlevel, forceschool=s.school, isnextspell=True,
-                                                        blockmodifier=False, setparams=setparams, forcedmodifier=mod,
-                                                        forcepathlevel=s.path1level, allowskipchance=False,
-                                                        **options).output()
+        secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
+        self._generateNextspell(s, mod, secondary, secondarypower, **options)
 
-            # Remove decimal stuff
-        print(f"before decimals, nreff was {s.nreff}")
-        s.nreff = math.floor(s.nreff)
-        s.damage = math.floor(s.damage)
-        s.aoe = math.floor(s.aoe)
-        s.maxbounces = math.floor(s.maxbounces)
-        s.effect = math.floor(s.effect)
-
-        # scaling fatiguecost per effect
-        flatnumeffects = s.nreff % 1000
-        scalenumeffects = s.nreff // 1000
-        realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
-        # blood gets double, as with most things
-        if s.path1 == 128:
-            s.fatiguecost += (realnumeffects * secondary.fatiguecostpereffect * 2)
-        else:
-            s.fatiguecost += (realnumeffects * secondary.fatiguecostpereffect)
-
-
-        flataoe = s.aoe % 1000
-        scaleaoe = s.aoe // 1000
-        realaoe = (scaleaoe * s.path1level) + flataoe
 
         # Assign cast time
         if s.casttime is None:
             s.casttime = spell.casttimes.get(int(s.fatiguecost / 100), 100)
 
-        # don't make spells uncastable at the minimum level
+        # don't make combat spells uncastable at the minimum level, eg X1 that requires 2+ gems
         self.handleOvercostSpell(s)
-
-        plural = True if (s.aoe > 0 or s.nreff > 1) else False
-        if self.spelltype & SpellTypes.EVOCATION:
-            plural = True if (s.aoe > 1 or s.nreff > 1) else False
-
-        # If we have an offpath, do offpath things
-        if s.path2 > 0:
-            # to be able to have an offpath the path requirement needs to be shifted to 2
-            if s.path1level <= 1:
-                s.path1level = max(2, s.path1level)
-                # this is about all that can be done to compensate
-                if 200 > s.fatiguecost >= 100:  # don't go from 1 gem to 0 gems
-                    s.fatiguecost /= 2
-
-        # Divert levels into secondary path, if applicable
-        if s.path2 >= 0:
-            # How many levels to divert?
-            exponent = 1.9
-            pathpoints = s.path1level ** exponent
-            maxdivert = pathpoints / 2
-            divert = max(1, random.random() * maxdivert)
-            # Avoid the case where for instance x9 -> x8y1 has a lot of leftover points
-            # that could be used to push y1 up higher
-            secondarypathlevel = math.floor(divert ** (1 / exponent))
-            remainingpoints = pathpoints - secondarypathlevel ** exponent
-            primarypathlevel = math.floor(remainingpoints ** (1 / exponent))
-            while 1:
-                remainingpoints2 = pathpoints - (secondarypathlevel**exponent) - (primarypathlevel**exponent)
-                if secondarypathlevel < primarypathlevel:
-                    remainingpointsafteradjust = pathpoints - ((secondarypathlevel+1)**exponent) - (primarypathlevel**exponent)
-                    if remainingpointsafteradjust >= 0.0:
-                        print(f"Increase secondary path level from {secondarypathlevel}: {remainingpointsafteradjust} "
-                              f"after adjustment")
-                        secondarypathlevel += 1
-                        continue
-                break
-
-            print(f"Split into secondary paths: primary was {s.path1level} -> X{primarypathlevel}Y{secondarypathlevel}")
-            print(f"Pathpoints: {pathpoints}, diverted {divert} and had {remainingpoints} for path 1")
-            s.path2level = secondarypathlevel
-            s.path1level = primarypathlevel
-            if not self.spelltype & SpellTypes.RITUAL:
-                s.fatiguecost = min(s.fatiguecost, 100 * s.path1level)
+        self._splitSpellPathLevels(s)
 
         # buffs with aoe 0 should be self only, which means setting range to 0
         if self.spelltype & SpellTypes.BUFF and s.aoe == 0:
             s.range = 0
 
+        mod.apply(s)
 
-        # Forced modifier overrides
-        for attrib, val in mod.setcommands:
-            print(f"mod: Set spell {attrib} to {val}")
-            setattr(s, attrib, val)
-
-        for attrib, val in mod.multcommands:
-            newval = int(getattr(s, attrib) * val)
-            print(f"mod: Mult: spell {attrib} by {val} to {newval}")
-            setattr(s, attrib, newval)
-
-        # Reasons to try generating again:
-        # if our path level has been reduced below 1 by mods
+        # If path level dropped below 1, try to generate again
         if s.path1level < 1 and self.pathlevel > 0:
             print(f"Failed to generate, pathlevel has fallen to {s.path1level}")
-            # researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None, blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None
             return self.rollSpell(researchlevel, forceschool=forceschool, forcepath=forcepath,
                                   isnextspell=isnextspell,
                                   forcesecondaryeff=forcesecondaryeff, blocksecondary=blocksecondary,
                                   allowblood=allowblood, allowskipchance=allowskipchance, setparams=setparams,
                                   forcepathlevel=forcepathlevel, forcedmodifier=forcedmodifier, **options)
 
-        # Apply modifier to the spell
-        for param in mod.params:
-            if hasattr(s, param):
-                paramval = getattr(mod, param)
-                if param == "aispellmod":
-                    s.multiplyAISpellMod(1 + (paramval / 100))
-                elif param == "spec" and paramval != 0:
-                    # Add to nextspells too
-                    next = s
-                    attempts = 0
-                    while 1:
-                        attempts += 1
-                        if next is None or next == "":
-                            break
-                        if next.spec & paramval == 0:
-                            print(f"Add spec {paramval} to {next.name}")
-                            next.spec += paramval
-                        next = next.nextspell
-                        if attempts > 10000:
-                            raise Exception(f"Likely infinite nextspell recursion in {self.name}")
-                else:
-                    if getattr(s, param) is not None:
-                        setattr(s, param, getattr(s, param) + paramval)
-                        print(f"mod: Added {paramval} to {param}")
-                    elif paramval != 0:
-                        print(f"WARNING: trying to add {paramval} to parameter with value None {param}")
-
-        for attrib, val in secondary.setcommands:
-            print(f"secondary: Set spell {attrib} to {val}")
-            setattr(s, attrib, val)
-
-        costedAGemBeforeSecondary = s.fatiguecost >= 100
-
-        for attrib, val in secondary.multcommands:
-            # Commanders should not get the full mult for these
-            if attrib == "fatiguecost" and self.chassisvalue is not None:
-                print(
-                    f"magicvalpercent {self.magicvaluepercent}, magicpathvaluescaling {secondary.magicpathvaluescaling},"
-                    f" chassisvaluepercent {self.chassisvaluepercent}")
-                magiccostmod = self.magicvaluepercent * s.fatiguecost * secondary.magicpathvaluescaling * (val - 1.0)
-                chassiscostmod = self.chassisvaluepercent * s.fatiguecost * (val - 1.0)
-                newval = int(
-                    s.fatiguecost * (self.magicvaluepercent + self.chassisvaluepercent) + magiccostmod + chassiscostmod)
-                print(
-                    f"secondary.magicpathvaluescaling = {secondary.magicpathvaluescaling}: base magic: {self.magicvalue}, magic mod: {magiccostmod}, base chassis: {self.chassisvalue}, chassis mod: {chassiscostmod}, final={newval}, effectfatigue={self.fatiguecost}, oldspellfatigue={s.fatiguecost}")
-            else:
-                newval = int(getattr(s, attrib) * val)
-                print(f"secondary: Mult: spell {attrib} by {val} to {newval}")
-            setattr(s, attrib, newval)
-
-        unitmodApplied = False
-        # Apply secondary to the spell
-        for param in secondary.params:
-            if param == "unitmod":
-                paramv = getattr(secondary, param)
-                if paramv is not None and paramv != "":
-                    realunitmod = utils.unitmods[paramv]
-                    unitmoddata = realunitmod.apply(self, s, actualpowerlvl=actualpowerlvl, secondaryeffect=secondary)
-                    if unitmoddata is None:
-                        print(f"Failed to generate {self.name}: unit mod failed to apply")
-                        return None
-                    s.modcmdsbefore += unitmoddata
-                    unitmodApplied = True
-                    continue
-
-            if hasattr(s, param):
-                print(f"secondary: processing +param {param}")
-                # Nextspell is weird because additions do not play nice
-                # I suppose I could define __add__ or whatever for Spell objects that allows you to just to do this with the same logic
-                # but that would be VERY counterintuitive and hard to follow
-                if param == "nextspell":
-                    if secondary.nextspell != "":
-                        # We'll be walking along the nextspell chains and adding the effect to the end of that
-                        tmp = s
-                        while 1:
-                            if isinstance(tmp.nextspell, Spell):
-                                tmp = tmp.nextspell
-                            else:
-                                tmp.nextspell = utils.spelleffects[secondary.nextspell].rollSpell(researchlevel,
-                                                                                                  forcepath=s.path1,
-                                                                                                  isnextspell=True,
-                                                                                                  blockmodifier=True,
-                                                                                                  setparams=setparams,
-                                                                                                  **options)
-                                if tmp.nextspell is None:
-                                    print("ERROR: failed to generate nextspell")
-                                    return None
-                                # Copy certain targeting spec values
-                                # 8 - demons/undead only
-                                # 16 - magic beings only
-                                # 32768 - sacreds only
-                                # 131072 - not mindless
-                                # 524288 - not undead
-                                # 268435456 - not demons
-                                # 536870912 - not inanimate
-                                spectocopy = tmp.spec & 0x300a8018
-                                tmp.nextspell.spec |= spectocopy
-                                print(f"Copied target type checking spec values: {spectocopy} to new nextspell")
-                                print(f"set nextspell to {tmp.nextspell.name}")
-                                break
-                elif param == "aispellmod":
-                    s.multiplyAISpellMod(1 + (getattr(secondary, param)/100))
-                else:
-                    setattr(s, param, getattr(s, param) + getattr(secondary, param))
-
-        # Things that costed a gem before the secondary applied should still cost gems after, scale params appropriately
-        if costedAGemBeforeSecondary and s.fatiguecost < 100:
-            print("Spell is now too cheap, before the secondary it cost a gem and now it doesn't")
-            self.scaleSpellEffectsToFatigue(s, 100)
-
-        prev = s
-        next = s.nextspell
-        realaoe = (s.path1level * s.aoe // 1000) + s.aoe % 1000
-        # Find the penultimate nextspell
-        if next != "" and next is not None:
-            while 1:
-                realaoe = max(realaoe, (s.path1level * next.aoe // 1000) + next.aoe % 1000)
-                if next.nextspell != "" and next.nextspell is not None:
-                    prev = next
-                    next = next.nextspell
-                else:
-                    break
-
-        if secondary.ondamage:
-            prev.spec += 0x1000000000000000
-            print(f"Added on damage spec to penultimate nextspell {prev.name}")
-
-
-        # Don't add fatigue to holy spells
-        if secondary.fatiguepersquare > 0 and self.paths != 256:
-            realaoe = min(50, realaoe)
-            additionalfatigue = realaoe * secondary.fatiguepersquare
-            s.fatiguecost += additionalfatigue
-            print(f"Added {additionalfatigue} fatigue for +{secondary.fatiguepersquare} per square ({realaoe} squares)")
-
-        # If the above did not apply a unitmod and we are using a new unit, it needs to be forced
-        # or nothing else will write the mod commands for the new unit
-        if not unitmodApplied and self.newunit is not None:
-            s.modcmdsbefore += utils.unitmods["Do Nothing"].apply(self, s)
-
-        # Blood goes in blood magic.
-        # And takes slaves.
-        if s.path1 == PathFlags.BLOOD and s.school != -1:
-            if not (self.spelltype & SpellTypes.ALLOW_NO_SLAVE_COST):
-                pass
-            s.school = SchoolFlags.BLOOD
-            if s.fatiguecost > 100:
-                s.sound = 32  # this is the blood spell sound that they ALL get
-
-            # assume that blood rituals with non-blood primary path possibilities have numbers balanced for
-            # gems and not slaves so multiply by 2
-            if s.effect > 10000:
-                if self.paths != 128:
-                    s.fatiguecost *= 2
-
-        s.fatiguecost += options.get("fatiguemodflat", 0)
-        s.fatiguecost *= options.get("fatiguemodmult", 1.0)
-        s.fatiguecost = math.floor(s.fatiguecost)
-        s.fatiguecost = max(0, s.fatiguecost)
-
-        # Free rituals are a big fat NOPE.
-        if s.effect > 10000 and s.fatiguecost < 100:
-            s.fatiguecost = 100
+        if not secondary.apply(self, s, mod, **options):
+            return None
+        self.setBloodSpellFatigueAndSchool(s, **options)
 
         # Battle effects that cost a gem, but didn't originally cost a gem, get a bit more scaling
         # but not blood effects, and this also won't apply to nextspells as their fatigue doesn't scale
         if s.path1 != 128 and s.effect < 10000 and s.fatiguecost >= 100 and self.fatiguecost < 100:
-            additionalscale = (1+actualpowerlvl) * (mod.scalerate + self.scalerate + secondary.scalerate)
-            self._scaleSpellEffect(s, additionalscale, mod, secondary)
+            additionalscale = (1 + actualpowerlvl) * (mod.scalerate + self.scalerate + secondary.scalerate)
+            self._scaleSpellEffectiveness(s, additionalscale, mod, secondary)
 
-
-        # Blood ritual cost multiplier
-        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & SpellTypes.RITUAL):
-            s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
-
-        # Fatigue cost should not exceed 999 for non rituals
-        if s.effect < 10000:
-            s.fatiguecost = min(999, s.fatiguecost)
-
-            # Blood combat spells get more fatigue if they don't cost a slave
-            if s.path1 == 128 and s.fatiguecost < 100:
-                s.fatiguecost *= 2
-
-            # If the spell is now uncastable, rescale number of effects
-            self.handleOvercostSpell(s)
-
-            # make fatigue nice round numbers
-            if s.fatiguecost > 100:
-                s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
-            else:
-                s.fatiguecost = int(5 * (s.fatiguecost // 5.0))
-        else:
-            s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
-
-        priorities = sorted(list(self.descrconds.get(s.path1, {}).keys()), reverse=True)
-
-        descrs = []
-
-        for priority in priorities:
-            thisPrioValid = False
-            for cond in self.descrconds[s.path1][priority]:
-                if cond.test(s):
-                    # blood description changes if it doesn't require a slave to cast
-                    if s.fatiguecost < 100:
-                        descrs.append(cond.text.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$"))
-                    else:
-                        descrs.append(cond.text)
-                    thisPrioValid = True
-            if thisPrioValid:
-                break
-
-        if len(descrs) == 0:
-            fallbackdescr = self.descriptions.get(s.path1, "This spell and path combination have no description!")
-            if s.fatiguecost < 100:
-                fallbackdescr = fallbackdescr.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$")
-            descrs.append(fallbackdescr)
-
-        # write a description
-        descrchoice = random.choice(descrs)
-        # Fix unit names for stuff created from events
-        if self.eventset is not None:
-            realeventset = utils.eventsets[self.eventset]
-            if realeventset.lastunitname is not None:
-                descrchoice = descrchoice.replace("CREATURE", realeventset.lastunitname)
-
-        s.descr = naming.parsestring(descrchoice, plural=plural, aoe=s.aoe, spelltype=self.spelltype, spell=s)
-
-        s.descr = s.descr.strip() + " "
-        moddescrs = secondary.descrs[:]
-        for cond in secondary.descrconds:
-            if cond.test(s):
-                moddescrs.append(cond.text)
-
-        if len(moddescrs) > 0:
-            s.descr += naming.parsestring(random.choice(moddescrs), plural=plural, aoe=s.aoe, spelltype=self.spelltype,
-                                          spell=s)
-
-        s.descr = s.descr.strip() + " "
-        moddescrs = mod.descrs[:]
-        for cond in mod.descrconds:
-            if cond.test(s):
-                moddescrs.append(cond.text)
-
-        if len(moddescrs) > 0:
-            s.descr += random.choice(moddescrs)
-
-        # Dynamic scale number of effects
+        self._postScalingFatigueAdjustments(s, **options)
+        plural = True if (s.aoe > 0 or s.nreff > 1) else False
+        if self.spelltype & SpellTypes.EVOCATION:
+            plural = True if (s.aoe > 1 or s.nreff > 1) else False
+        self._writeDescription(s, mod, secondary, plural)
+        # Dynamic scale number of effects, damage, etc
         self.dynamicScaleParams(s)
-
-        if s.effect == 10038:
-            if s.nreff > 1000:
-                s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
-            else:
-                s.details += " This spell summons EFFECTIVENREFF creatures, regardless of caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
-
-            s.details = s.details.strip()
-        elif s.effect == 10037:
-            s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level."
-
-            s.details = s.details.strip()
-
-        if s.flightspr is not None and s.flightspr > 0:
-            s.details += " This is a projectile spell."
-            s.details = s.details.strip()
-
-        # Damage clouds
-        if s.effect > 1000 and s.effect < 10000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
-            s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
-            s.details = s.details.strip()
-        if s.effect > 1000 and s.effect < 10000:
-            dur = s.effect // 1000
-            # Chain lightning clouds want different text really
-            if s.effect % 1000 != 134:
-                s.details += f" The cloud affects those standing within it every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
-                s.details = s.details.strip()
-            else:
-                s.details += f" The cloud releases chain lightning every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
-                s.details = s.details.strip()
-
-        if s.ainocast > 0 and s.effect < 10000:
-            s.details += " This spell will not be cast unless scripted."
-            s.details = s.details.strip()
-            
-
-        s.details = s.details.strip() + "\n" + mod.details
-        s.details = s.details.strip() + "\n" + secondary.details
-
-
-        s.descr = s.descr.strip()
-        s.details = s.details.replace("\\n", "\n")
-        scale = s.nreff // 1000
-        base = s.nreff % 1000
-        print(f"Nreff breakdown: spell {s.nreff} = {scale} scale + {base} base, path 1 level is {s.path1level}")
-        s.details = s.details.replace("EFFECTIVENREFF", str((s.path1level * scale) + base))
-        s.details = s.details.replace("NREFFSCALING", str(scale))
-        s.details = s.details.replace("NREFF", str(s.nreff))
-        scale = s.damage // 1000
-        base = s.damage % 1000
-        print(f"Damage breakdown: on spell {s.damage} = {scale} scale + {base} base, path 1 level is {s.path1level}")
-        s.details = s.details.replace("EFFECTIVEDAMAGE", str((s.path1level * scale) + base))
-        s.details = s.details.replace("DAMAGESCALING", str(scale))
-        s.details = s.details.replace("DAMAGE", str(s.damage))
-
-        # for globals: use aoe to denote the base amount
-        finalglobalscaling = int(self.basescale + scaleamt)
-        s.details = s.details.replace("SCALEAMT", str(finalglobalscaling))
-
-        if s.nextspell != "" and s.nextspell is not None:
-            s.details = s.details.replace("NEXTSPELL_EFFECTNUMBER_5XX", str((s.nextspell.effect % 1000) - 499))
-        s.details = s.details.replace("EFFECTNUMBER_5XX", str((s.effect % 1000) - 499))
-        s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
-
-        if s.aoe == 666:
-            s.details += " This spell strikes 100% of the battlefield."
-        elif s.aoe == 663:
-            s.details += " This spell strikes 50% of the battlefield."
-        elif s.aoe == 665:
-            s.details += " This spell strikes 25% of the battlefield."
-        elif s.aoe == 664:
-            s.details += " This spell strikes 10% of the battlefield."
-        elif s.aoe == 662:
-            s.details += " This spell strikes 5% of the battlefield."
-
-        names = []
-
-        # Banishes and smites need to get a name out of their path
-        if self.paths == 256:
-            godpath = forcesecondaryeff
-            if forcesecondaryeff is None:
-                if self.secondarypaths != 0:
-                    godpath = self.secondarypaths
-                else:
-                    raise ValueError(f"Couldn't work out god path for holy spell {self.name} passed "
-                                     f"with forcesecondaryeff {forcesecondaryeff} - probably means this holy effect"
-                                     f" starts with a nextspell and ambiguous secondary paths. To fix"
-                                     f" make secondary path for this effect NOT a compound of multiple paths ")
-
-            names = self.names.get(godpath, [])[:]
-            # The above will have scaled holy stuff which we don't want
-            # override everything for holy spells here
-            s.path1level = self.pathlevel
-            s.path1 = PathFlags.HOLY
-            s.path2 = -1
-            s.researchlevel = 0
-            s.school = SchoolFlags.DIVINE
-            s.godpathspell = int(math.log(godpath, 2))
-            # 256 means pure holy, aka force the backup of -1 so it's used when you have no god paths >=4
-            if godpath == 256:
-                s.godpathspell = -1
-
-        print(f"Enforce gem costs...")
+        self.formatDetails(s, mod, secondary)
         self.enforceGemCosts(s)
+        if not self._nameSpell(s, mod, secondary, plural, **options):
+            return None
 
-        # Naming needs these variables
-        s.effectiveaoe = s.aoe % 1000 + ((s.aoe // 1000) * s.path1level)
-        s.effectivenreff = s.nreff % 1000 + ((s.nreff // 1000) * s.path1level)
-        # This one will be wrong for nondamaging spells, but shouldn't be used for them
-        s.effectivedamage = s.damage % 1000 + ((s.damage // 1000) * s.path1level)
-
-        # see which nameconds, if any, match, and add to the name pool
-        priorities = sorted(list(self.nameconds.get(s.path1, {}).keys()), reverse=True)
-
-        print(f"Priorities: {priorities}; the nameconds: {self.nameconds}")
-
-        for priority in priorities:
-            thisPrioValid = False
-            for cond in self.nameconds[s.path1][priority]:
-                if cond.test(s):
-                    names.append(cond.text)
-                    thisPrioValid = True
-            if priority == 0:
-                # take shallow copy to avoid doing bad things to later spells using the same self
-                names += self.names.get(s.path1, [])[:]
-            if thisPrioValid:
-                break
-        # must add this if there were no nameconds
-        if 0 not in priorities and len(names) == 0:
-            names += self.names.get(s.path1, [])[:]
-
-        print(f"Possible names are {names}")
-
-        if len(names) > 0:
-            print(f"Begin naming for this spell, path is {s.path1}...")
-            while 1:
-                try:
-                    print(f"Pick name: {len(names)} remain...")
-                    name = names.pop(random.randint(0, len(names) - 1))
-                    if secondary.unitmod != "":
-                        um = utils.unitmods[secondary.unitmod]
-                        name = name.replace("NAMEPREFIX", um.nameprefix)
-                    if len(secondary.nameprefixes) > 0:
-                        name = name.replace("NAMEPREFIX", random.choice(secondary.nameprefixes))
-                    name = name.replace("NAMEPREFIX", "")
-
-                    # Fix unit names for stuff created from events
-                    if self.eventset is not None:
-                        realeventset = utils.eventsets[self.eventset]
-                        if realeventset.lastunitname is not None:
-                            name = name.replace("CREATURE", realeventset.lastunitname)
-
-                    if debugkeys.SUMMONSPELLNREFFDISPLAY and s.effect % 1000 in [1, 21, 37, 38, 43, 68]:
-                        basenreff = s.nreff % 1000
-                        scalenreff = (s.path1level * (s.nreff // 1000))
-                        realnreff = basenreff + scalenreff
-                        if scalenreff > 0:
-                            name = f"{realnreff}x ({(s.nreff // 1000)}+) {name}"
-                        else:
-                            name = f"{realnreff}x {name}"
-
-                    s.name = naming.parsestring(name, plural=plural, aoe=s.aoe, spelltype=self.spelltype,
-                                                titlecase=True, isspell=True, spell=s)
-                    break
-                except naming.NameTooLongException:
-                    pass
-                if len(names) == 0:
-                    print("Had to give up on this spell because no names were valid")
-                    return None
-
+        # Spells copied from record of creation allow fixed duration province enchantments
+        # The duration is the difference of cost (in gems) between the primary and secondary spells
+        # As all the fatigue scaling above can break this, put it back
         if self.copyspell == "Record of Creation" and s.nextspell is not None:
             diff = self.fatiguecost - self.nextspell.fatiguecost
             print(f"This is a record of creation based spell, set nextspell's fatigue cost to defined difference"
@@ -1107,61 +269,14 @@ class SpellEffect(object):
         except:
             pass
 
-        if self.skipflightspr == 1:
-            s.flightspr = None
-        if self.skipexplspr == 1:
-            s.flightspr = None
-
-        if mod.givecloudsfx == 1:
-            # 10123 may be usable but it's a bit dense
-            if s.path1 == 1:
-                s.explspr = random.choice([10053, 10011, 10014, 10203, 10311])
-            elif s.path1 == 2:
-                s.explspr = random.choice([10056, 10048, 10002, 10048, 10228, 10291, 10318, 10338])
-            elif s.path1 == 4:
-                s.explspr = random.choice([10045, 10054, 10005, 10008, 10015, 10196, 10230, 10275])
-            elif s.path1 == 8:
-                s.explspr = random.choice([10058, 10018, 10051, 10053, 10192, 10193, 10260, 10279])
-            elif s.path1 == 16:
-                s.explspr = random.choice([10041, 10001, 10121, 10159, 10207, 10266])
-            elif s.path1 == 32:
-                s.explspr = random.choice([10060, 10009, 10020, 10049, 10141, 10142, 10160, 10188, 10212, 10234, 10257,
-                                           10261, 10317])
-                #s.explspr = 10057
-            elif s.path1 == 64:
-                s.explspr = random.choice([10044, 10017, 10004, 10007, 10012, 10013, 10016, 10047, 10052, 10055, 10161,
-                                           10184, 10231, 10237, ])
-            elif s.path1 == 128:
-                s.explspr = random.choice([10043, 10003, 10259])
-
+        self._updateSpellGraphics(s, mod)
         self.generated += 1
-
         # Implement research level modifier options
         s.researchlevel -= options.get("researchmodifier", 0)
-
-        # If aoe is x% of field, nextspells seem to need it too?
-        if 660 < s.aoe < 670:
-            tmp = s.nextspell
-            attempts = 0
-            # not if the primary effect is extra effect on damage
-            if not (s.spec & 1152921504606846976):
-                while 1:
-                    attempts += 1
-                    if attempts > 10000:
-                        raise Exception(f"Likely infinite nextspell loop for {self.name}")
-                    if tmp is not None and tmp != "":
-                        # nextspell on damage does not need this done to it or anything that follows
-                        if tmp.spec & 1152921504606846976:
-                            break
-                        tmp.aoe = s.aoe
-                        print(f"Set aoe for nextspell {tmp.name} to {s.aoe}")
-                        tmp = tmp.nextspell
-                    else:
-                        break
+        self._propagateAoEToNextspells(s)
 
         if utils.SPELL_ID >= 4000:
-            raise ValueError("Too many spells. Dominions will reject this mod.")
-        # print("Too many spells. Dominions will reject this mod.")
+            raise ValueError("Spell ID has reached 4000. Dominions will reject this mod.")
         s.id = utils.SPELL_ID
         utils.SPELL_ID += 1
 
@@ -1170,11 +285,10 @@ class SpellEffect(object):
         s.path2level = min(9, s.path2level)
 
         # Fill in placeholders in modcmdsbefore
-        # This is event stuff
+        # This is from event sets
         s.modcmdsbefore = s.modcmdsbefore.replace("SPELLNAME", s.name)
-        # many details contain % which is the pluralisation character - not allowing them is needed to avoid the RE parser being sad over mismatched %
         s.details = naming.parsestring(s.details, isspell=False, spell=s, dopluralisations=False)
-        # the game crashes out if any details are empty strings
+        # Dominions crashes if any details are left as empty strings
         s.details = s.details.strip()
         if s.details == "":
             s.details = None
@@ -1277,6 +391,8 @@ class SpellEffect(object):
                 self.dynamicScaleParams(s)
                 s.fatiguecost = 100
     def calcchassisvalues(self):
+        "Calculates the mundane and magical chassis values for the summon attached to this effect, if any."
+        self.magicvalue = 0.0
         if self.chassisvalue is not None:
             self.magicvalue = self.fatiguecost - self.chassisvalue
             self.magicvaluepercent = self.magicvalue / self.fatiguecost
@@ -1464,7 +580,9 @@ class SpellEffect(object):
             spell.multiplyAISpellMod(proportion)
             print(f"AI spell mod for summon: Illwinter base = {finalaiscore}, mine={myaiscore}: ratio={proportion}" \
                   f" final spell mod = {spell.aispellmod}")
-    def _scaleSpellEffect(self, s, scaleamt, mod, secondary):
+    def _scaleSpellEffectiveness(self, s, scaleamt, mod, secondary):
+        """Adds scaleamt to the values of the parameters this effect wants to scale, according to its spelltype flags.
+        Also handles other issues such as making spells battlefield wide at very high AoE."""
         # scale the thing
         if self.spelltype & SpellTypes.POWER_SCALES_AOE:
             s.aoe += scaleamt
@@ -1472,7 +590,8 @@ class SpellEffect(object):
             # Do I make it battlefield wide?
             if self.spelltype & SpellTypes.BUFF and self.spelltype & SpellTypes.ALLOW_BATTLEFIELD and not mod.nobattlefield and not secondary.nobattlefield:
                 tmp = s.aoe % 1000
-                if tmp > 30:
+                if tmp > 31:
+                    print("Made buff battlefield wide")
                     s.aoe = 666
                     # make it friendly only
                     if not self.spec & 4194304:
@@ -1564,3 +683,834 @@ class SpellEffect(object):
                   f"from exponent: {scaleamt}**{scaleexponent}")
 
         return finalfatigue
+
+    def _shouldSkipDueToProximityToRelatedSpells(self, **options):
+        existingspells = options.get("existingspells", None)
+        allowskipchance = options.get("allowskipchance", True)
+        if not self.isnextspell and (allowskipchance or self.skipchance >= 100) and not self.noresearchdifferenceskip:
+            # if we were passed the dict of spells that already exist, skipchance based on proximity to effects that
+            # already exist - this is the case for non-holy non-national spells
+            if existingspells is not None:
+                smallestdiff = None
+                for rl, effectlist in existingspells.items():
+                    if self.name in effectlist:
+                        thisdiff = abs(rl - self.researchlevel)
+                        if smallestdiff is None or thisdiff < smallestdiff:
+                            smallestdiff = thisdiff
+                print(f"Smallest research level diff to an already generated spell is {smallestdiff}")
+                if smallestdiff is None:
+                    powerdiff = max(0, self.researchlevel - self.power)
+                    powerskipchance = min(90, powerdiff * 4)
+                    if random.random() * 100 < powerskipchance:
+                        print(f"Failed to generate {self.name} at {self.researchlevel}: "
+                              f"base research difference skipchance of {powerskipchance}")
+                        return True
+                else:
+                    tempvalue = (4 - smallestdiff)
+                    powerskipchance = min(100, (tempvalue * tempvalue) * 15)
+                    if random.random() * 100 < powerskipchance:
+                        print(f"Failed to generate {self.name} at {self.researchlevel}: "
+                              f"research difference to existing spell skipchance of {powerskipchance}")
+                        return True
+            else:
+                powerdiff = max(0, researchlevel - self.power)
+                powerskipchance = min(90, powerdiff * 8)
+                if random.random() * 100 < powerskipchance:
+                    print(f"Failed to generate {self.name} at {self.researchlevel}: "
+                          f"base research difference skipchance of {powerskipchance}")
+                    return True
+        return False
+
+    def _shouldNotGenerate(self, **options):
+        "True if this spell effect should not generate a spell with the passed params for some reason, else False."
+        isnational = options.get("isnational", False)
+        allowskipchance = options.get("allowskipchance", True)
+        forcepath = options.get("forcepath", False)
+        forceschool = options.get("forceschool", False)
+
+        if self.badaispell and options.get("nobadaispells", 0) > 0:
+            print(f"Fail {self.name}: is a bad AI spell")
+            return True
+
+        if isnational and self.permanentslotusage:
+            print(f"Fail {self.name} as this is a national generation and the effect wants to fill permanent slots")
+            return True
+
+        if random.random() * 100 < self.skipchance and not self.isnextspell and (
+                allowskipchance or self.skipchance >= 100):
+            print(f"Failed to generate {self.name} at {self.researchlevel}: random skipchance")
+            return True
+
+        if self._shouldSkipDueToProximityToRelatedSpells(**options):
+            return True
+
+        # less combat blood spells
+        # bypasses allowskipchance
+        if self.effect < 10000 and forcepath == 128 and not self.isnextspell:
+            if random.random() < 0.85:
+                print(f"Failed as 85% to have less blood combat spells")
+                return True
+            # Even less likely if they have other primary paths
+            if self.paths != 128 and random.random() < 0.95:
+                print(f"Failed as 95% to fail other path combat spells")
+                return True
+
+        if self.unique and self.generated > 0:
+            print(f"Failed to generate {self.name} at {self.researchlevel}: effect is unique and already exists")
+            return True
+
+        # Don't make lots of generations from the same effect
+        if allowskipchance and not self.isnextspell and self.generated > 0:
+            repeatedskipchance = 1 - (1 / (1 + (self.generated * 3)))
+            if random.random() < repeatedskipchance:
+                print(f"Skipped based on {self.generated} previous generations")
+                return True
+
+        if forceschool and not (self.schools & forceschool):
+            print(
+                f"Failed to generate {self.name} at {self.researchlevel}: school is forced to {forceschool} which is incompatible")
+            return True
+
+        # path -1 means nextspells, and they can't be cast normally
+        # so don't generate them if we aren't a next spell or have a forced path for some other reason
+        if self.paths == -1 and not forcepath:
+            print(f"Failed to generate {self.name} at {self.researchlevel}: spell has no paths")
+            return True
+
+        if self.schools == -1 and not self.isnextspell:
+            # nextspells go in the unresearchable school!
+            print(f"{self.name} is unresearchable and not next spell, fail this generation")
+            return True
+
+        return False
+
+    def _rollModifier(self, **options):
+        blockmodifier = options.get("blockmodifier", False)
+        forcedmodifier = options.get("forcedmodifier", None)
+        # Roll a modifier.
+        mod = None
+        if blockmodifier:
+            mod = utils.modifiers["Do Nothing"]
+        elif forcedmodifier is not None:
+            mod = forcedmodifier
+        else:
+            modlist = list(utils.modifiers.keys())
+            random.shuffle(modlist)
+            mod = None
+            while mod is None:
+                m = utils.modifiers[modlist.pop(0)]
+                print(f"Consider mod: {m.name}")
+                if m.compatibility(self, self.researchlevel, self.isnextspell):
+                    if random.random() * 100 < m.skipchance:
+                        if m.skipchance < 100.0:
+                            modlist.append(m.name)
+                    else:
+                        print(f"Using mod {m.name} for {self.name}")
+                        mod = m
+                        break
+                if len(modlist) == 0:
+                    print(f"No valid modifiers for {self.name} at research {self.researchlevel}")
+                    raise Exception(f"No valid modifiers for {self.name} at research {self.researchlevel}")
+
+                    raise ValueError(f"No valid modifiers for {self.name}")
+        return mod
+
+    def _decideSecondaryPathLimitations(self, **options):
+        blocksecondary = options.get("blocksecondary", False)
+        forcesecondaryeff = options.get("forcesecondaryeff", None)
+        self.allowSecondary = True
+        self.allowOnlySamePathSecondaryEffect = False
+        self.allowOnlyDiffPathSecondaryEffect = False
+
+        if self.effect in [1, 10001, 10050, 10038, 21, 10021]:
+            diffpathchance = options.get("summondiffpathsecondarychance", 10)
+            samepathchance = options.get("summonsamepathsecondarychance", 40)
+        else:
+            diffpathchance = options.get("diffpathsecondarychance", 10)
+            samepathchance = options.get("samepathsecondarychance", 40)
+
+        if blocksecondary:
+            self.allowSecondary = False
+            print(f"Secondary effect is blocked for this effect")
+        elif forcesecondaryeff is None and random.random() * 100 <= self.secondaryeffectskipchance:
+            print(f"Secondary effect skipchance of {self.secondaryeffectskipchance}")
+            self.allowSecondary = False
+        elif forcesecondaryeff is None:
+            # this should stop 100% secondary path spells getting a different offpath secondary effect
+            if random.random() * 100 >= diffpathchance or random.random() * 100 < self.secondarypathchance:
+                if random.random() * 100 >= samepathchance:
+                    print(f"Failed both secondary effect chances of {diffpathchance} and {samepathchance}")
+                    self.allowSecondary = False
+                else:
+                    print(f"Allowed only same path secondary effect")
+                    self.allowOnlySamePathSecondaryEffect = True
+            else:
+                print(f"Allowed only diff path secondary effect")
+                self.allowOnlyDiffPathSecondaryEffect = True
+
+    def _rollSecondary(self, mod, **options):
+        forcesecondaryeff = options.get("forcesecondaryeff", None)
+        secondarylist = list(utils.secondaries.keys())
+        random.shuffle(secondarylist)
+        secondary = None
+
+
+        self._decideSecondaryPathLimitations()
+        print("roll secondary")
+
+        if self.allowSecondary:
+            while secondary is None:
+                if len(secondarylist) == 0:
+                    if self.allowOnlySamePathSecondaryEffect or self.allowOnlyDiffPathSecondaryEffect:
+                        print("Forced to take Do Nothing as secondary as no others were valid")
+                        secondary = utils.secondaries["Do Nothing"]
+                        break
+                    print(f"Failed to generate {self.name} at {self.researchlevel}: no valid secondaries")
+                    return None
+                toconsider = utils.secondaries[secondarylist.pop(0)]
+                if toconsider.compatibility(self, mod, self.researchlevel):
+                    if forcesecondaryeff is None:
+                        # Check path eligibility
+                        if self.allowOnlySamePathSecondaryEffect and toconsider.paths & self.paths == 0:
+                            # Have a reduced chance to be allowed, if the path is normally a secondary path of the spell
+                            if toconsider.paths & self.secondarypaths != 0 and self.secondarypathchance > 0:
+                                if random.random() * 100 < self.secondarypathchance:
+                                    # Allow it, this time
+                                    pass
+                                else:
+                                    continue
+                            else:
+                                continue
+                        if self.allowOnlyDiffPathSecondaryEffect and toconsider.paths & self.paths != 0:
+                            continue
+                        if random.random() * 100 < toconsider.skipchance:
+                            if toconsider.skipchance < 100.0:
+                                secondarylist.append(toconsider.name)
+                        else:
+                            secondary = toconsider
+                            break
+                    else:
+                        # Make sure its path matches what was asked for
+                        if toconsider.paths & forcesecondaryeff:
+                            # ignore skipchance for this
+                            print(f"Forced paths: Using secondary {toconsider.name}")
+                            secondary = toconsider
+                            break
+                        else:
+                            print("Bad paths for forced secondary")
+        else:
+            secondary = utils.secondaries["Do Nothing"]
+
+
+        print(f"using secondary {secondary.name} for {self.name} with mod {mod.name}")
+        return secondary
+
+    def _powerLevelIsValid(self, mod, secondary):
+        "True if this effect can legally generate with the passed research level, selected modifier, and secondary."
+        # Holy spells need to escape this
+        # Also, Nextspells without a scale rate should still be allowed
+        secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
+
+        if self.researchlevel + mod.power + secondarypower < self.power and self.paths != 256 and not (
+                self.isnextspell and self.scalerate == 0):
+            print(f"Failed to generate {self.name} at {self.researchlevel}: final power level too low")
+            return False
+
+        if self.researchlevel + mod.power + secondarypower > self.maxpower and self.paths != 256 and not (
+                self.isnextspell and self.scalerate == 0):
+            print(f"Failed to generate {self.name} at {self.researchlevel}: final power level too high")
+            return False
+        return True
+
+    def _setSpellDefaultValues(self, s, **options):
+        "Unload base attribute values onto the passed spell object. Deals exclusively with simple copying of data"
+        setparams = options.get("setparams", None)
+        s.name = self.name + " " + str(random.randint(-9999, 9999))
+        s.effect = self.effect
+        s.damage = self.damage
+        s.range = self.range
+        s.nreff = self.nreff
+        s.precision = self.precision
+        s.aoe = self.aoe
+        s.spec = self.spec
+        s.details = self.details
+        s.researchlevel = self.researchlevel
+        s.fatiguecost = self.fatiguecost
+        s.flightspr = self.flightspr
+        s.explspr = self.explspr
+        s.sound = self.sound
+        s.maxbounces = self.maxbounces
+        s.provrange = self.provrange
+        s.nogeodst = self.nogeodst
+        s.onlygeodst = self.onlygeodst
+        s.ainocast = self.ainocast
+        s.onlyfriendlydst = self.onlyfriendlydst
+        s.nolandtrace = self.nolandtrace
+        s.onlygeosrc = self.onlygeosrc
+        s.aispellmod = self.aispellmod
+        s.hiddenench = self.hiddenench
+        s.friendlyench = self.friendlyench
+        s.parenteffect = self
+        if s.details is None:
+            s.details = ""
+        if self.isnextspell:
+            s.isnextspell = True
+
+        if setparams is not None:
+            for key, val in setparams.items():
+                setattr(s, key, val)
+
+        if self.copyspell is not None:
+            s.copyspell = self.copyspell
+        if self.casttime is not None:
+            s.casttime = self.casttime
+        # modifier fatigue cost is added later
+        s.fatiguecost = self.fatiguecost
+    def _selectSpellSchool(self, **options):
+        "Select a valid research school for this spell effect"
+        forceschool = options.get("forceschool", None)
+        if self.schools > -1:
+            if forceschool is not None:
+                return forceschool
+            return utils._selectFlag(SchoolFlags, self.schools)
+        else:
+            return -1
+
+    def _selectAndApplySpellPathsAndLevels(self, mod, secondary, s, **options):
+        "As per the name. Returns False if the task is impossible and spell creation should abort"
+        forcepath = options.get("forcepath", None)
+        allowblood = options.get("allowblood", True)
+        forcepathlevel = options.get("forcepathlevel", None)
+        forcesecondaryeff = options.get("forcesecondaryeff", None)
+        allowedsecondarypaths = options.get("allowedsecondarypaths", None)
+        allowskipchance = options.get("allowskipchance", True)
+
+        possibleillwinterpaths = utils.breakdownflag(511 & self.paths)
+        random.shuffle(possibleillwinterpaths)
+        print(f"Possible path with illwinter ids are {possibleillwinterpaths}")
+
+        # If we are trying to pick a same path secondary, be very biased towards those path(s) as path1
+        if self.allowOnlySamePathSecondaryEffect:
+            possibleillwinterpaths = utils.breakdownflag(self.paths & secondary.paths) + possibleillwinterpaths
+            print(f"After same path secondary bias: paths with illwinter ids are {possibleillwinterpaths}")
+
+        if forcepath is None:
+            while 1:
+                if len(possibleillwinterpaths) == 0:
+                    print(f"Failed to generate: no valid paths")
+                    return False
+                illwinterpath = possibleillwinterpaths.pop(0)
+                s.path1 = 2 ** illwinterpath
+                if s.path1 == 128 and not allowblood:
+                    continue
+                if random.random() * 100 <= self.pathskipchances.get(s.path1, 0) and len(possibleillwinterpaths) > 0:
+                    if self.pathskipchances.get(s.path1, 0) < 100.0:
+                        possibleillwinterpaths.append(illwinterpath)
+                    continue
+                # Effects taking permanent slots need to be limited in number to avoid mechanic abuse
+                if self.permanentslotusage \
+                        and utils.permanent_slot_spells_by_path.get(s.path1, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
+                    print(f"Path {s.path1} not allowed due to permanent slot taking spell limit")
+                    continue
+                print(f"Accepting path {s.path1} (illwinter path {illwinterpath})")
+                break
+
+        if forcepath is not None:
+            if allowskipchance and random.random() * 100 <= self.pathskipchances.get(forcepath, 0):
+                print(f"Forced path was {forcepath}, failed this pathskipchance")
+                return False
+            if self.permanentslotusage \
+                    and utils.permanent_slot_spells_by_path.get(forcepath, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
+                print(f"Attempted to forcepath into a path that has too many permanent spell effects")
+                return False
+            print(f"Forced path to {forcepath}")
+            s.path1 = forcepath
+
+        s.path1level = self.pathlevel + mod.pathlevel + secondary.pathlevel
+        if forcepathlevel is not None:
+            print(f"Calced path level was {s.path1level}, using override {forcepathlevel} instead")
+            s.path1level = forcepathlevel
+
+        # See if the secondary effect we took has a path requirement that we fail to meet
+        # (decide on offpath here if there will be one!)
+        if secondary.paths > 0:
+            if not (secondary.paths & s.path1):
+                s.path2 = utils._selectFlag(PathFlags, secondary.paths)
+                print(f"Forced to take offpath {s.path2} due to secondary effect:"
+                      f" spell is currently {s.path1} and secondary wants {secondary.paths}")
+
+        # Chance to roll a secondary path (if the secondary effect we picked doesn't demand one)
+        if random.random() * 100 < self.secondarypathchance and s.path2 < 0 and forcesecondaryeff is None:
+            print("Try to roll a secondary path")
+            if self.secondarypaths > 0 and s.path1level >= 2 and self.secondarypaths != s.path1:
+                p = self.secondarypaths
+                if p & s.path1:
+                    p -= s.path1
+                if p > 0:
+                    attempts = 0
+                    while 1:
+                        attempts += 1
+                        s.path2 = utils._selectFlag(PathFlags, p)
+                        if s.path2 != s.path1:
+                            if random.random() * 100 > self.pathskipchances.get(s.path2, 0):
+                                break
+                        if attempts == 1000000:
+                            raise Exception("Failed to select a secondary path, reached attempt limit")
+                if allowedsecondarypaths is not None and allowedsecondarypaths & s.path2 == 0:
+                    print(f"Failed to generate: not allowed selected secondary path of {s.path2}")
+                    return False
+        return True
+    def calcActualpowerlvl(self, mod, secondary):
+        """Return the spell's 'actual power level': this is the amount of levels above the
+        minimum research level it is trying to generate at"""
+        # Calc this even if the spell doesn't scale - this is for the sake of SCALEAMT in #details
+        secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
+        actualpowerlvl = (self.researchlevel - self.power) + mod.power + secondarypower
+        return actualpowerlvl
+    def calcScaleamt(self, mod, secondary, actualpowerlvl=None):
+        "Return the spell's scale amount: the amount its scaling attributes should be increased by."
+        if actualpowerlvl is None:
+            actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
+        scaleamt = 0
+        for x in range(0, actualpowerlvl):
+            scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
+        scaleamt = int(round(scaleamt))
+        return scaleamt
+
+
+    def _scaleSpellPath1level(self, s, mod, secondary, **options):
+        actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
+        print(
+            f"Scaling path calc is {mod.pathperresearch + self.pathperresearch + secondary.pathperresearch} * {actualpowerlvl}")
+        print(
+            f"Scaling path level modification is {math.floor((mod.pathperresearch + self.pathperresearch + secondary.pathperresearch) * actualpowerlvl)}")
+        s.path1level += math.floor(
+            (mod.pathperresearch + self.pathperresearch + secondary.pathperresearch) * actualpowerlvl)
+        s.path1level += options.get("pathlevelmodflat", 0)
+        s.path1level *= options.get("pathlevelmodmult", 1.0)
+        s.path1level = max(1, s.path1level)
+        s.path1level = math.floor(s.path1level)
+
+    def _scaleFatigueCost(self, s, scaleamt, mod, secondary, **options):
+        actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
+        scaleamt2 = scaleamt * self.scalecost
+        print(f"scaleamt now {scaleamt2} after being multiplied by scalecost {self.scalecost}")
+
+        s.fatiguecost += scaleamt2 * self.scalefatiguemult
+        print(f"Fatiguemult: Added {scaleamt2 * self.scalefatiguemult} to fatigue cost, it is now {s.fatiguecost}")
+        if scaleamt2 > 0:
+            scaleamt2 += 1  # otherwise the case where scaleamt = 1 yields no fatigue increase!
+
+        s.fatiguecost += 10 * actualpowerlvl
+        print(f"Power level: Added {10 * actualpowerlvl} to fatigue cost, it is now {s.fatiguecost}")
+
+
+        scaleexponent = (mod.scalefatigueexponent + self.scalefatigueexponent + secondary.scalefatigueexponent)
+        if scaleamt2 != 0.0 and scaleexponent > 0.0:
+            s.fatiguecost += (scaleamt2 ** scaleexponent)
+            print(
+                f"Exponent: Added {scaleamt2 ** scaleexponent} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
+        elif scaleexponent < 0.0 and scaleamt2 != 0:
+            s.fatiguecost -= (scaleamt2 ** (-1 * scaleexponent))
+            print(
+                f"Exponent: Subtracted {(scaleamt2 ** (-1 * scaleexponent))} (exponent is {scaleexponent}) to fatigue cost, it is now {s.fatiguecost}")
+
+        s.fatiguecost = max(0, s.fatiguecost)
+
+        # scaling fatiguecost per effect
+        flatnumeffects = s.nreff % 1000
+        scalenumeffects = s.nreff // 1000
+        realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
+        # blood gets double, as with most things
+        if s.path1 == 128:
+            s.fatiguecost += (realnumeffects * secondary.fatiguecostpereffect * 2)
+        else:
+            s.fatiguecost += (realnumeffects * secondary.fatiguecostpereffect)
+    def _generateNextspell(self, s, mod, secondary, secondarypower, **options):
+        forceschool = options.get("forceschool", None)
+        setparams = options.get("setparams", None)
+        optionscopy = copy.copy(options)
+        optionscopy["isnextspell"] = True
+        optionscopy["allowskipchance"] = False
+        if self.nextspell != "":
+            optionscopy["forcepath"] = s.path1
+            optionscopy["blockmodifier"] = True
+            optionscopy["researchlevel"] = self.researchlevel + mod.power + secondarypower
+            s.nextspell = self.nextspell.rollSpell(**optionscopy)
+            if s.nextspell is None:
+                raise ValueError(f"Failed to generate nextspell {self.nextspell.name}")
+        # Extraspell = "hangers on", eg communion master always generates a corresponding communion slave
+        if self.extraspell != "":
+            extraspell = utils.spelleffects[self.extraspell]
+            optionscopy["forcepathlevel"] = s.path1level
+            optionscopy["forceschool"] = s.school
+            optionscopy["blockmodifier"] = False
+            optionscopy["forcedmodifier"] = mod
+            # communions do want to mimic the path of the parent, otherwise the slave might not
+            # have the same path requirement as the master spell (which would be a bit unhelpful!)
+            if self.donotsetextraspellpath == 0:
+                optionscopy["forcepath"] = s.path1
+                s.modcmdsbefore += extraspell.rollSpell(**optionscopy).output()
+            else:
+                # Elemental royalty all come together, and should NOT mimic the paths of the parents
+                s.modcmdsbefore += extraspell.rollSpell(**optionscopy).output()
+    def _splitSpellPathLevels(self, s):
+        "Move some path1levels into path2levels for the given spell"
+        # If we have an offpath, do offpath things
+        if s.path2 > 0:
+            # to be able to have an offpath the path requirement needs to be shifted to 2
+            if s.path1level <= 1:
+                s.path1level = max(2, s.path1level)
+                # this is about all that can be done to compensate
+                if 200 > s.fatiguecost >= 100:  # don't go from 1 gem to 0 gems
+                    s.fatiguecost /= 2
+
+        # Divert levels into secondary path, if applicable
+        if s.path2 >= 0:
+            # How many levels to divert?
+            exponent = 1.9
+            pathpoints = s.path1level ** exponent
+            maxdivert = pathpoints / 2
+            divert = max(1, random.random() * maxdivert)
+            # Avoid the case where for instance x9 -> x8y1 has a lot of leftover points
+            # that could be used to push y1 up higher
+            secondarypathlevel = math.floor(divert ** (1 / exponent))
+            remainingpoints = pathpoints - secondarypathlevel ** exponent
+            primarypathlevel = math.floor(remainingpoints ** (1 / exponent))
+            while 1:
+                remainingpoints2 = pathpoints - (secondarypathlevel**exponent) - (primarypathlevel**exponent)
+                if secondarypathlevel < primarypathlevel:
+                    remainingpointsafteradjust = pathpoints - ((secondarypathlevel+1)**exponent) - (primarypathlevel**exponent)
+                    if remainingpointsafteradjust >= 0.0:
+                        print(f"Increase secondary path level from {secondarypathlevel}: {remainingpointsafteradjust} "
+                              f"after adjustment")
+                        secondarypathlevel += 1
+                        continue
+                break
+
+            print(f"Split into secondary paths: primary was {s.path1level} -> X{primarypathlevel}Y{secondarypathlevel}")
+            print(f"Pathpoints: {pathpoints}, diverted {divert} and had {remainingpoints} for path 1")
+            s.path2level = secondarypathlevel
+            s.path1level = primarypathlevel
+            if not self.spelltype & SpellTypes.RITUAL:
+                s.fatiguecost = min(s.fatiguecost, 100 * s.path1level)
+    def setBloodSpellFatigueAndSchool(self, s, **options):
+        # Blood goes in blood magic.
+        # And takes slaves.
+        if s.path1 == PathFlags.BLOOD and s.school != -1:
+            if not (self.spelltype & SpellTypes.ALLOW_NO_SLAVE_COST):
+                pass
+            s.school = SchoolFlags.BLOOD
+            if s.fatiguecost > 100:
+                s.sound = 32  # this is the blood spell sound that they ALL get
+
+            # assume that blood rituals with non-blood primary path possibilities have numbers balanced for
+            # gems and not slaves so multiply by 2
+            if s.effect > 10000:
+                if self.paths != 128:
+                    s.fatiguecost *= 2
+
+        # Blood ritual cost multiplier
+        if s.path1 == 128 and (s.effect > 10000 or self.spelltype & SpellTypes.RITUAL):
+            s.fatiguecost = int(s.fatiguecost * options.get("bloodcostscale", 1.0))
+    def _postScalingFatigueAdjustments(self, s, **options):
+        s.fatiguecost += options.get("fatiguemodflat", 0)
+        s.fatiguecost *= options.get("fatiguemodmult", 1.0)
+        s.fatiguecost = math.floor(s.fatiguecost)
+        s.fatiguecost = max(0, s.fatiguecost)
+
+        # Block free rituals
+        if s.effect > 10000 and s.fatiguecost < 100:
+            s.fatiguecost = 100
+
+        # Fatigue cost should not exceed 999 for non rituals
+        if s.effect < 10000:
+            s.fatiguecost = min(999, s.fatiguecost)
+
+            # Blood combat spells get more fatigue if they don't cost a slave
+            if s.path1 == 128 and s.fatiguecost < 100:
+                s.fatiguecost *= 2
+
+            # If the spell is now uncastable, rescale number of effects
+            self.handleOvercostSpell(s)
+
+            # make fatigue nice round numbers
+            if s.fatiguecost > 100:
+                s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
+            else:
+                s.fatiguecost = int(5 * (s.fatiguecost // 5.0))
+        else:
+            s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
+    def _writeDescription(self, s, mod, secondary, plural):
+
+
+        priorities = sorted(list(self.descrconds.get(s.path1, {}).keys()), reverse=True)
+
+        descrs = []
+
+        for priority in priorities:
+            thisPrioValid = False
+            for cond in self.descrconds[s.path1][priority]:
+                if cond.test(s):
+                    # blood description changes if it doesn't require a slave to cast
+                    if s.fatiguecost < 100:
+                        descrs.append(cond.text.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$"))
+                    else:
+                        descrs.append(cond.text)
+                    thisPrioValid = True
+            if thisPrioValid:
+                break
+
+        if len(descrs) == 0:
+            fallbackdescr = self.descriptions.get(s.path1, "This spell and path combination have no description!")
+            if s.fatiguecost < 100:
+                fallbackdescr = fallbackdescr.replace("$BLOOD_INTRO$", "$BLOOD_INTRO2$")
+            descrs.append(fallbackdescr)
+
+        # write a description
+        descrchoice = random.choice(descrs)
+        # Fix unit names for stuff created from events
+        if self.eventset is not None:
+            realeventset = utils.eventsets[self.eventset]
+            if realeventset.lastunitname is not None:
+                descrchoice = descrchoice.replace("CREATURE", realeventset.lastunitname)
+
+        s.descr = naming.parsestring(descrchoice, plural=plural, aoe=s.aoe, spelltype=self.spelltype, spell=s)
+
+        s.descr = s.descr.strip() + " "
+        moddescrs = secondary.descrs[:]
+        for cond in secondary.descrconds:
+            if cond.test(s):
+                moddescrs.append(cond.text)
+
+        if len(moddescrs) > 0:
+            s.descr += naming.parsestring(random.choice(moddescrs), plural=plural, aoe=s.aoe, spelltype=self.spelltype,
+                                          spell=s)
+
+        s.descr = s.descr.strip() + " "
+        moddescrs = mod.descrs[:]
+        for cond in mod.descrconds:
+            if cond.test(s):
+                moddescrs.append(cond.text)
+
+        if len(moddescrs) > 0:
+            s.descr += random.choice(moddescrs)
+    def formatDetails(self, s, mod, secondary):
+        if s.effect == 10038:
+            if s.nreff > 1000:
+                s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
+            else:
+                s.details += " This spell summons EFFECTIVENREFF creatures, regardless of caster level. The creatures will attack anything in the target province, including friendlies, and will then disappear."
+
+            s.details = s.details.strip()
+        elif s.effect == 10037:
+            s.details += " This spell summons EFFECTIVENREFF creatures, with an additional NREFFSCALING per additional caster level."
+
+            s.details = s.details.strip()
+
+        if s.flightspr is not None and s.flightspr > 0:
+            s.details += " This is a projectile spell."
+            s.details = s.details.strip()
+
+        # Damage clouds
+        if s.effect > 1000 and s.effect < 10000 and s.effect % 1000 in utils.DAMAGING_EFFECTS:
+            s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
+            s.details = s.details.strip()
+        if s.effect > 1000 and s.effect < 10000:
+            dur = s.effect // 1000
+            # Chain lightning clouds want different text really
+            if s.effect % 1000 != 134:
+                s.details += f" The cloud affects those standing within it every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details = s.details.strip()
+            else:
+                s.details += f" The cloud releases chain lightning every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details = s.details.strip()
+
+        if s.ainocast > 0 and s.effect < 10000:
+            s.details += " This spell will not be cast unless scripted."
+            s.details = s.details.strip()
+
+        s.details = s.details.strip() + "\n" + mod.details
+        s.details = s.details.strip() + "\n" + secondary.details
+
+        s.descr = s.descr.strip()
+        s.details = s.details.replace("\\n", "\n")
+        scale = s.nreff // 1000
+        base = s.nreff % 1000
+        print(f"Nreff breakdown: spell {s.nreff} = {scale} scale + {base} base, path 1 level is {s.path1level}")
+        s.details = s.details.replace("EFFECTIVENREFF", str((s.path1level * scale) + base))
+        s.details = s.details.replace("NREFFSCALING", str(scale))
+        s.details = s.details.replace("NREFF", str(s.nreff))
+        scale = s.damage // 1000
+        base = s.damage % 1000
+        print(f"Damage breakdown: on spell {s.damage} = {scale} scale + {base} base, path 1 level is {s.path1level}")
+        s.details = s.details.replace("EFFECTIVEDAMAGE", str((s.path1level * scale) + base))
+        s.details = s.details.replace("DAMAGESCALING", str(scale))
+        s.details = s.details.replace("DAMAGE", str(s.damage))
+
+        scaleamt = self.calcScaleamt(mod, secondary)
+        # for globals: use aoe to denote the base amount
+        finalglobalscaling = int(self.basescale + scaleamt)
+        s.details = s.details.replace("SCALEAMT", str(finalglobalscaling))
+
+        if s.nextspell != "" and s.nextspell is not None:
+            s.details = s.details.replace("NEXTSPELL_EFFECTNUMBER_5XX", str((s.nextspell.effect % 1000) - 499))
+        s.details = s.details.replace("EFFECTNUMBER_5XX", str((s.effect % 1000) - 499))
+        s.details = s.details.replace("EFFECTNUMBER_ADDITIVE", str((s.effect % 1000) - 599))
+
+        if s.aoe == 666:
+            s.details += " This spell strikes 100% of the battlefield."
+        elif s.aoe == 663:
+            s.details += " This spell strikes 50% of the battlefield."
+        elif s.aoe == 665:
+            s.details += " This spell strikes 25% of the battlefield."
+        elif s.aoe == 664:
+            s.details += " This spell strikes 10% of the battlefield."
+        elif s.aoe == 662:
+            s.details += " This spell strikes 5% of the battlefield."
+
+
+    def _nameSpell(self, s, mod, secondary, plural, **options):
+        "Return True on success, or False on failure"
+        names = []
+        forcesecondaryeff = options.get("forcesecondaryeff", None)
+
+        # Banishes and smites need to get a name out of their path
+        if self.paths == 256:
+            godpath = forcesecondaryeff
+            if forcesecondaryeff is None:
+                if self.secondarypaths != 0:
+                    godpath = self.secondarypaths
+                else:
+                    raise ValueError(f"Couldn't work out god path for holy spell {self.name} passed "
+                                     f"with forcesecondaryeff {forcesecondaryeff} - probably means this holy effect"
+                                     f" starts with a nextspell and ambiguous secondary paths. To fix"
+                                     f" make secondary path for this effect NOT a compound of multiple paths ")
+
+            names = self.names.get(godpath, [])[:]
+            # The above will have scaled holy stuff which we don't want
+            # override everything for holy spells here
+            s.path1level = self.pathlevel
+            s.path1 = PathFlags.HOLY
+            s.path2 = -1
+            s.researchlevel = 0
+            s.school = SchoolFlags.DIVINE
+            s.godpathspell = int(math.log(godpath, 2))
+            # 256 means pure holy, aka force the backup of -1 so it's used when you have no god paths >=4
+            if godpath == 256:
+                s.godpathspell = -1
+
+
+
+        # Naming needs these variables
+        s.effectiveaoe = s.aoe % 1000 + ((s.aoe // 1000) * s.path1level)
+        s.effectivenreff = s.nreff % 1000 + ((s.nreff // 1000) * s.path1level)
+        # This one will be wrong for nondamaging spells, but shouldn't be used for them
+        s.effectivedamage = s.damage % 1000 + ((s.damage // 1000) * s.path1level)
+
+        # see which nameconds, if any, match, and add to the name pool
+        priorities = sorted(list(self.nameconds.get(s.path1, {}).keys()), reverse=True)
+
+        print(f"Priorities: {priorities}; the nameconds: {self.nameconds}")
+
+        for priority in priorities:
+            thisPrioValid = False
+            for cond in self.nameconds[s.path1][priority]:
+                if cond.test(s):
+                    names.append(cond.text)
+                    thisPrioValid = True
+            if priority == 0:
+                # take shallow copy to avoid doing bad things to later spells using the same self
+                names += self.names.get(s.path1, [])[:]
+            if thisPrioValid:
+                break
+        # must add this if there were no nameconds
+        if 0 not in priorities and len(names) == 0:
+            names += self.names.get(s.path1, [])[:]
+
+        print(f"Possible names are {names}")
+
+        if len(names) > 0:
+            print(f"Begin naming for this spell, path is {s.path1}...")
+            while 1:
+                try:
+                    print(f"Pick name: {len(names)} remain...")
+                    name = names.pop(random.randint(0, len(names) - 1))
+                    if secondary.unitmod != "":
+                        um = utils.unitmods[secondary.unitmod]
+                        name = name.replace("NAMEPREFIX", um.nameprefix)
+                    if len(secondary.nameprefixes) > 0:
+                        name = name.replace("NAMEPREFIX", random.choice(secondary.nameprefixes))
+                    name = name.replace("NAMEPREFIX", "")
+
+                    # Fix unit names for stuff created from events
+                    if self.eventset is not None:
+                        realeventset = utils.eventsets[self.eventset]
+                        if realeventset.lastunitname is not None:
+                            name = name.replace("CREATURE", realeventset.lastunitname)
+
+                    if debugkeys.SUMMONSPELLNREFFDISPLAY and s.effect % 1000 in [1, 21, 37, 38, 43, 68]:
+                        basenreff = s.nreff % 1000
+                        scalenreff = (s.path1level * (s.nreff // 1000))
+                        realnreff = basenreff + scalenreff
+                        if scalenreff > 0:
+                            name = f"{realnreff}x ({(s.nreff // 1000)}+) {name}"
+                        else:
+                            name = f"{realnreff}x {name}"
+
+                    s.name = naming.parsestring(name, plural=plural, aoe=s.aoe, spelltype=self.spelltype,
+                                                titlecase=True, isspell=True, spell=s)
+                    break
+                except naming.NameTooLongException:
+                    pass
+                if len(names) == 0:
+                    print("Had to give up on this spell because no names were valid")
+                    return False
+        return True
+    def _updateSpellGraphics(self, s, mod):
+        if self.skipflightspr == 1:
+            s.flightspr = None
+        if self.skipexplspr == 1:
+            s.flightspr = None
+
+        if mod.givecloudsfx == 1:
+            # 10123 may be usable but it's a bit dense
+            if s.path1 == 1:
+                s.explspr = random.choice([10053, 10011, 10014, 10203, 10311])
+            elif s.path1 == 2:
+                s.explspr = random.choice([10056, 10048, 10002, 10048, 10228, 10291, 10318, 10338])
+            elif s.path1 == 4:
+                s.explspr = random.choice([10045, 10054, 10005, 10008, 10015, 10196, 10230, 10275])
+            elif s.path1 == 8:
+                s.explspr = random.choice([10058, 10018, 10051, 10053, 10192, 10193, 10260, 10279])
+            elif s.path1 == 16:
+                s.explspr = random.choice([10041, 10001, 10121, 10159, 10207, 10266])
+            elif s.path1 == 32:
+                s.explspr = random.choice([10060, 10009, 10020, 10049, 10141, 10142, 10160, 10188, 10212, 10234, 10257,
+                                           10261, 10317])
+                #s.explspr = 10057
+            elif s.path1 == 64:
+                s.explspr = random.choice([10044, 10017, 10004, 10007, 10012, 10013, 10016, 10047, 10052, 10055, 10161,
+                                           10184, 10231, 10237, ])
+            elif s.path1 == 128:
+                s.explspr = random.choice([10043, 10003, 10259])
+    def _propagateAoEToNextspells(self, s):
+        # If aoe is x% of field, nextspells seem to need it too?
+        if 660 < s.aoe < 670:
+            tmp = s.nextspell
+            attempts = 0
+            # not if the primary effect is extra effect on damage
+            if not (s.spec & 1152921504606846976):
+                while 1:
+                    attempts += 1
+                    if attempts > 10000:
+                        raise Exception(f"Likely infinite nextspell loop for {self.name}")
+                    if tmp is not None and tmp != "":
+                        # nextspell on damage does not need this done to it or anything that follows
+                        if tmp.spec & 1152921504606846976:
+                            break
+                        tmp.aoe = s.aoe
+                        print(f"Set aoe for nextspell {tmp.name} to {s.aoe}")
+                        tmp = tmp.nextspell
+                    else:
+                        break

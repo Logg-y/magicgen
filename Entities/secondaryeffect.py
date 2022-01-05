@@ -4,6 +4,8 @@ from Services.utils import unitmods, eventsets, spelleffects
 from Services import utils
 from Enums.DebugKeys import debugkeys
 from fileparser import unitinbasedatafinder
+from Entities.spell import Spell
+import copy
 import math
 
 class SpellSecondaryEffect(object):
@@ -282,4 +284,122 @@ class SpellSecondaryEffect(object):
             if finalaoe < self.minfinalaoe:
                 return False
 
+        return True
+    def apply(self, spelleffect, s, mod, **options):
+        "Return True on success, False on failure"
+        setparams = options.get("setparams", None)
+        costedAGemBeforeSecondary = s.fatiguecost >= 100
+
+        for attrib, val in self.setcommands:
+            print(f"secondary: Set spell {attrib} to {val}")
+            setattr(s, attrib, val)
+
+        for attrib, val in self.multcommands:
+            # Commanders should not get the full mult for these
+            if attrib == "fatiguecost" and spelleffect.chassisvalue is not None:
+                print(
+                    f"magicvalpercent {spelleffect.magicvaluepercent}, magicpathvaluescaling {self.magicpathvaluescaling},"
+                    f" chassisvaluepercent {spelleffect.chassisvaluepercent}")
+                magiccostmod = spelleffect.magicvaluepercent * s.fatiguecost * self.magicpathvaluescaling * (val - 1.0)
+                chassiscostmod = spelleffect.chassisvaluepercent * s.fatiguecost * (val - 1.0)
+                newval = int(
+                    s.fatiguecost * (spelleffect.magicvaluepercent + spelleffect.chassisvaluepercent) + magiccostmod + chassiscostmod)
+                print(
+                    f"secondary.magicpathvaluescaling = {self.magicpathvaluescaling}: "
+                    f"base magic: {spelleffect.magicvalue}, magic mod: {magiccostmod}, base chassis: "
+                    f"{spelleffect.chassisvalue}, chassis mod: {chassiscostmod}, final={newval}, "
+                    f"effectfatigue={spelleffect.fatiguecost}, oldspellfatigue={s.fatiguecost}")
+            else:
+                newval = int(getattr(s, attrib) * val)
+                print(f"secondary: Mult: spell {attrib} by {val} to {newval}")
+            setattr(s, attrib, newval)
+
+        unitmodApplied = False
+        # Apply secondary to the spell
+        for param in self.params:
+            if param == "unitmod":
+                paramv = getattr(self, param)
+                if paramv is not None and paramv != "":
+                    realunitmod = utils.unitmods[paramv]
+                    actualpowerlvl = spelleffect.calcActualpowerlvl(mod, self)
+                    unitmoddata = realunitmod.apply(spelleffect, s, actualpowerlvl=actualpowerlvl, secondaryeffect=self)
+                    if unitmoddata is None:
+                        print(f"Failed to generate {spelleffect.name}: unit mod failed to apply")
+                        return False
+                    s.modcmdsbefore += unitmoddata
+                    unitmodApplied = True
+                    continue
+
+            if hasattr(s, param):
+                print(f"secondary: processing +param {param}")
+                # Nextspell is weird because additions do not play nice
+                # I suppose I could define __add__ or whatever for Spell objects that allows you to just to do this with the same logic
+                # but that would be VERY counterintuitive and hard to follow
+                if param == "nextspell":
+                    if self.nextspell != "":
+                        # We'll be walking along the nextspell chains and adding the effect to the end of that
+                        tmp = s
+                        while 1:
+                            if isinstance(tmp.nextspell, Spell):
+                                tmp = tmp.nextspell
+                            else:
+                                optionscopy = copy.copy(options)
+                                optionscopy["isnextspell"] = True
+                                optionscopy["forcepath"] = s.path1
+                                optionscopy["blockmodifier"] = True
+                                tmp.nextspell = utils.spelleffects[self.nextspell].rollSpell(**optionscopy)
+                                if tmp.nextspell is None:
+                                    print("ERROR: failed to generate nextspell")
+                                    return False
+                                # Copy certain targeting spec values
+                                # 8 - demons/undead only
+                                # 16 - magic beings only
+                                # 32768 - sacreds only
+                                # 131072 - not mindless
+                                # 524288 - not undead
+                                # 268435456 - not demons
+                                # 536870912 - not inanimate
+                                spectocopy = tmp.spec & 0x300a8018
+                                tmp.nextspell.spec |= spectocopy
+                                print(f"Copied target type checking spec values: {spectocopy} to new nextspell")
+                                print(f"set nextspell to {tmp.nextspell.name}")
+                                break
+                elif param == "aispellmod":
+                    s.multiplyAISpellMod(1 + (getattr(self, param) / 100))
+                else:
+                    setattr(s, param, getattr(s, param) + getattr(self, param))
+
+        # Things that costed a gem before the secondary applied should still cost gems after, scale params appropriately
+        if costedAGemBeforeSecondary and s.fatiguecost < 100:
+            print("Spell is now too cheap, before the secondary it cost a gem and now it doesn't")
+            spelleffect.scaleSpellEffectsToFatigue(s, 100)
+
+        prev = s
+        next = s.nextspell
+        realaoe = (s.path1level * s.aoe // 1000) + s.aoe % 1000
+        # Find the penultimate nextspell
+        if next != "" and next is not None:
+            while 1:
+                realaoe = max(realaoe, (s.path1level * next.aoe // 1000) + next.aoe % 1000)
+                if next.nextspell != "" and next.nextspell is not None:
+                    prev = next
+                    next = next.nextspell
+                else:
+                    break
+
+        if self.ondamage:
+            prev.spec += 0x1000000000000000
+            print(f"Added on damage spec to penultimate nextspell {prev.name}")
+
+        # Don't add fatigue to holy spells
+        if self.fatiguepersquare > 0 and spelleffect.paths != 256:
+            realaoe = min(50, realaoe)
+            additionalfatigue = realaoe * self.fatiguepersquare
+            s.fatiguecost += additionalfatigue
+            print(f"Added {additionalfatigue} fatigue for +{self.fatiguepersquare} per square ({realaoe} squares)")
+
+        # If the above did not apply a unitmod and we are using a new unit, it needs to be forced
+        # or nothing else will write the mod commands for the new unit
+        if not unitmodApplied and spelleffect.newunit is not None:
+            s.modcmdsbefore += utils.unitmods["Do Nothing"].apply(spelleffect, s)
         return True

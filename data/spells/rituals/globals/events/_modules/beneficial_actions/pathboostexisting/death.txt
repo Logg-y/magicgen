@@ -11,13 +11,13 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may cause someone close to them to be harmlessly enveloped in necromantic power, increasing their ability in death magic."
-#moduledetails "Grants +1 death magic to a random commander in the province, including to commanders who had no death magic to begin with. Paths cannot be raised above 5 in this way."
+#moduledetails "Grants +1 death magic to a random commander in the province, including to commanders who had no death magic to begin with. Paths cannot be raised above 4 in this way."
 
 
 #end
 
-#cleartarg
+#req_targnopath4 5
 #nation -2
 #pathboost 5
-#msg "A commander has gained skill in death magic!"
+#msg "##fulltargname## has gained skill in death magic!"
 #nolog

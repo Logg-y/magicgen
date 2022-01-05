@@ -24,7 +24,9 @@ Added modest site searching modifiers, that might make them X1 to cast, or X3 an
 Fixed broken values for corpse eater commanders
 Reduced costs and research increases of most summon modifiers, as they would produce things that were funny but not terribly useful.
 Low level early gem spells are +1 research and path levels
-
+Fixed pathboost globals, previously they would only target mages that had the appropriate path already (thanks to Waylander for pointing this out)
+Changed the details text for pathboost globals to correctly reflect the fact that they can only boost up to X4, not X5 as stated.
+Fixed nature pathboost globals instead providing boosts in Death!
 
 v3.1.0
 

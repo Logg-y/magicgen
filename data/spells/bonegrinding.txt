@@ -57,8 +57,8 @@
 
 
 #priority 1
-#namecond range < 10 16 "NAMEPREFIX Bonebreak Touch"
-#descrcond range < 10 16 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
+#namecond range < 10 32 "NAMEPREFIX Bonebreak Touch"
+#descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
 #end
 
@@ -94,8 +94,8 @@
 
 
 #priority 1
-#namecond range < 10 16 "NAMEPREFIX Bonecrumbling Touch"
-#descrcond range < 10 16 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
+#namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
+#descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
 #scalefatiguemult 15
 #scalefatigueexponent -1.65

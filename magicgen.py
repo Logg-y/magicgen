@@ -53,8 +53,7 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     fileparser.readEventSetsFromDir(os.path.join(secondaries_path, 'summons', 'unitmods', 'eventsets'))
     fileparser.readWeaponModsFromDir(os.path.join(secondaries_path, 'summons', 'unitmods', 'weaponmods'))
     fileparser.readUnitModListsFromDir(os.path.join(base_path, 'unitmodlists'))
-    # dict merging
-    # (or I could upgrade to py3.9 to use |=)
+    # dict merging: py3.9 apparently allows |= instead of this mess
     s = fileparser.readEffectsFromDir(os.path.join(secondaries_path, 'nextspells'))
     s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons'))}
     s = {**s, **fileparser.readEffectsFromDir(os.path.join(base_path, 'summons', 'commanders'))}
@@ -74,6 +73,294 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     s = {**s, **fileparser.readEffectsFromDir(os.path.join('data', 'spells'))}
     return s
 
+
+def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, generatedeffectsatlevels,
+                                     genericSpellCountsByPath, **options):
+    spellsGenerated = []
+    schoolname = SchoolFlags(school).name
+    sys.stderr.flush()
+    effectpool = copy.copy(s)
+    # It is faster to remove everything that doesn't belong in this school now
+    # than to do it later
+    for effname, eff in list(effectpool.items()):
+        if not (eff.schools & school) and school != 64:
+            del effectpool[effname]
+        # Things that are eliminated by this are mostly nextspells
+        elif eff.paths <= 0 or eff.schools <= 0:
+            del effectpool[effname]
+    poolForThisSchoolAndLevel = copy.copy(effectpool)
+    effectNameList = list(effectpool.keys())
+    random.shuffle(effectNameList)
+    # First do everything with skipchances, if that fails to make all the spells
+    # do a second run ignoring them
+    allowskipchance = True
+    for x in range(0, spellsatthislevel):
+        attempt = 0
+        while 1:
+            spell = None
+            if len(effectpool) == 0:
+                if attempt < spellsatthislevel and allowskipchance:
+                    attempt += 1
+                    effectpool = copy.copy(poolForThisSchoolAndLevel)
+                    effectNameList = list(effectpool.keys())
+                    random.shuffle(effectNameList)
+                    continue
+                elif allowskipchance:
+                    allowskipchance = False
+                    effectpool = copy.copy(poolForThisSchoolAndLevel)
+                    effectNameList = list(effectpool.keys())
+                    random.shuffle(effectNameList)
+                    continue
+                print(
+                    f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully")
+                _writetoconsole(
+                    f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully\n")
+                break
+            sp = effectpool[effectNameList.pop(0)]
+            del effectpool[sp.name]
+            # Prevent duplicates in the second round of ignoring skipchances
+            if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
+                continue
+            print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
+                  f"skipchance allowed = {allowskipchance}, attempt = {attempt}")
+            # Encourage the less popular paths to get more spells by skipping the more popular ones
+            if school != 64:
+                allowedpaths = utils.breakdownflag(sp.paths)
+                allowedpaths = [2 ** x for x in allowedpaths]
+                random.shuffle(allowedpaths)
+                forcedpath = None
+                if len(genericSpellCountsByPath) > 0:
+                    mincount = min(genericSpellCountsByPath.values())
+                    # Ignore blood here
+                    if mincount == genericSpellCountsByPath.get(64, 0) and len(genericSpellCountsByPath) > 2:
+                        mincount = sorted(list(genericSpellCountsByPath.values()))[1]
+
+                    for path in allowedpaths[:]:
+                        if random.random() * 100 < sp.pathskipchances.get(path, 0):
+                            allowedpaths.remove(path)
+                            continue
+
+                    if len(allowedpaths) > 0:
+                        lowest = None
+                        for path in allowedpaths:
+                            if lowest is None or genericSpellCountsByPath.get(path, 0) < lowest:
+                                print(f"Least popular path is {path}")
+                                forcedpath = path
+                                lowest = genericSpellCountsByPath.get(path, 0)
+                    if allowskipchance:
+                        if mincount > 10 and (lowest - mincount) >= 5:
+                            print(f"Skipped as diff to least popular path is {lowest - mincount}")
+                            continue
+
+            # These are the things used to denote things that should be nextspell ONLY
+            if sp.paths > 0 and sp.schools > 0:
+                # Special rules for blood
+                if school == 64:
+                    if sp.paths & 128:
+                        print(f"Attempt to generate blood spell")
+                        spell = sp.rollSpell(research, forcepath=128, allowblood=True,
+                                             allowskipchance=allowskipchance,
+                                             existingspells=generatedeffectsatlevels, **options)
+
+                elif sp.schools & school:
+                    print(f"Attempt to generate non-blood spell")
+                    spell = sp.rollSpell(research, forceschool=school, allowblood=False,
+                                         forcedpath=forcedpath,
+                                         allowskipchance=allowskipchance,
+                                         existingspells=generatedeffectsatlevels, **options)
+
+            if spell is not None:
+                spellsGenerated.append(spell)
+                if research not in generatedeffectsatlevels:
+                    generatedeffectsatlevels[research] = []
+                generatedeffectsatlevels[research].append(sp.name)
+                genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
+                print(
+                    f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
+                break
+            print(f"Failed to generate")
+        if len(effectpool) == 0:
+            break
+    return spellsGenerated
+
+def generateHolySpells(**options):
+    outputSpells = []
+    _writetoconsole("Generating holy spells...\n")
+    base_path = os.path.join("./data", "spells")
+    holy_path = os.path.join(base_path, "holy")
+    holy = fileparser.readEffectsFromDir(holy_path)
+    holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "banishment"))}
+    holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smite"))}
+    holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "holyword"))}
+    holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smitedemon"))}
+    for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
+        for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
+            effectpool = copy.copy(holy)
+            effectlist = list(effectpool.keys())
+            random.shuffle(effectlist)
+            # Make a list of effects, go through them in sequence
+            # skipchance not passing just means throwing it to the end
+            while 1:
+                if len(effectlist) == 0:
+                    raise Exception(f"No holy spell effects for {spelltype} for path {path}")
+                effectname = effectlist.pop(0)
+                spelleff = holy[effectname]
+                if spelleff.secondarypaths & path and (getattr(spelleff, spelltype) > 0):
+                    if random.random() * 100 < spelleff.skipchance:
+                        # failed skipchance, go to the end
+                        effectlist.append(effectname)
+                    else:
+
+                        # force secondary effect on themed spells that don't have a next spell
+                        # these specmasks are extra effect and extra effect on damage
+                        if len(spelleff.nextspell) == 0 and (
+                                (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
+                            outputSpells.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
+                                                        blockmodifier=True,
+                                                        allowskipchance=False, **options))
+                        else:  # block secondaries on things that DO have a nextspell built in
+                            outputSpells.append(
+                                spelleff.rollSpell(spelleff.power, blocksecondary=True, forcesecondaryeff=path,
+                                                   blockmodifier=True,
+                                                   allowskipchance=False, **options))
+                        break
+    return outputSpells
+
+def generateAlwaysPresentSpells(s, **options):
+    spellsGenerated = []
+    # Always generated effects
+    if options.get("clearvanillagenericspells", 1):
+        for name, spelleff in s.items():
+            if spelleff.alwaysgenerate > 0 and not spelleff.generated:
+                print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
+                spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower),
+                                           allowskipchance=False,
+                                           **options)
+                if spell is not None:
+                    spellsGenerated.append(spell)
+            elif spelleff.alwaysgenerate > 0:
+                print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
+    return spellsGenerated
+
+def hideVanillaSpells(f, **options):
+    global spellstokeep
+    nationalspells = []
+
+    with open("Dom5-natspells-list.txt", "r") as natspells:
+        foundheader = False
+        for line in natspells:
+            if not foundheader:
+                if line.startswith("--"):
+                    foundheader = True
+                continue
+            if line.strip() == "":
+                continue
+            nationalspells.append(int(line.strip()))
+
+    if not bool(options.get("clearvanillanationalspells", 1)):
+        spellstokeep += nationalspells
+
+    _writetoconsole(f"Hiding vanilla spells...\n")
+    for x in range(1, utils.SPELL_ID):
+        removespell = x not in spellstokeep
+        if removespell and bool(options.get("clearvanillagenericspells")) == False:
+            if x not in nationalspells:
+                removespell = False
+        if removespell:
+            f.write(f"#selectspell {x}\n")
+            f.write(f"#school -1\n")
+            f.write(f"#researchlevel -1\n")
+            f.write(f"#end\n")
+
+    # add #indepspells to casters
+    copyIndepspells(f, **options)
+
+def copyIndepspells(f, **options):
+    if bool(options.get("clearvanillagenericspells")):
+        # Check crc32 for saved BaseU.csv
+        crcokay = False
+        if os.path.isfile("indepspells.dm"):
+            with open("indepspells.dm", "r") as indepspells:
+                indepspellscontent = indepspells.read()
+                crc = indepspellscontent.split("\n")[0][2:].strip()
+                with open("data/BaseU.csv", "rb") as baseu:
+                    baseucontent = baseu.read()
+                    baseucrc = str(binascii.crc32(baseucontent))
+                if crc == baseucrc:
+                    crcokay = True
+                    indepspells.seek(0)
+                    for line in indepspells:
+                        f.write(line)
+
+        if not crcokay:
+            _writetoconsole(f"BaseU CRC {baseucrc} did not match precalced CRC {crc}!"
+                            f" Regenerating indepspells.dm...\n")
+            generateNewIndepspellsModFile(f)
+
+    def generateNewIndepspellsModFile(f):
+            indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
+                                 f"mod files when MagicGen clears vanilla generic spells.\n" \
+                                 f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
+                                 f"- this is saved as generating this from scratch takes several minutes\n"
+            for unitid in range(0, 3500):
+                if unitid % 100 == 0:
+                    _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
+                try:
+                    unitobj = unitinbasedatafinder.get(unitid)
+                except Exception:
+                    print(f"Error trying to get uid {unitid}")
+                    print(traceback.format_exc());
+                    continue
+                # leave illwinter-set values intact
+                if hasattr(unitobj, "indepspells"):
+                    if int(getattr(unitobj, "indepspells")) > 0:
+                        continue
+                indeplevel = None
+
+                if hasattr(unitobj, "startdom"):
+                    if int(getattr(unitobj, "startdom")) > 0:
+                        indeplevel = 7
+
+                if indeplevel is None:
+                    totalmagiclevel = 0
+                    for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
+                        if getattr(unitobj, path, "") <= 0:
+                            continue
+                        pathval = int(getattr(unitobj, path, 0))
+                        if pathval > 0:
+                            totalmagiclevel += pathval
+                            print(f"Unit {unitid} has {path} level {pathval}")
+
+                    randomaverage = 0
+
+                    for n in range(1, 5):
+                        mask = f"mask{n}"
+
+                        mask = int(getattr(unitobj, mask, 0))
+                        randomchance = int(getattr(unitobj, f"rand{n}", 0))
+                        nbr = max(0, int(getattr(unitobj, f"nbr{n}")))
+                        if randomchance > 0:
+                            randomaverage += nbr * (randomchance / 100)
+                            print(
+                                f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
+                            print(f"\ttotal random path value now {randomaverage}")
+
+                    totalmagiclevel += math.floor(randomaverage)
+
+                    if totalmagiclevel >= 3:
+                        indeplevel = 5
+                    elif totalmagiclevel == 2:
+                        indeplevel = 4
+                    elif totalmagiclevel == 1:
+                        indeplevel = 3
+
+                if indeplevel is not None:
+                    indepspellscontent += f"#selectmonster {unitid}\n"
+                    indepspellscontent += f"#indepspells {indeplevel}\n"
+                    indepspellscontent += f"#end\n"
+            with open("indepspells.dm", "w") as indepspells:
+                indepspells.write(indepspellscontent)
+                f.write(indepspellscontent)
 
 def rollspells(**options):
     global spellstokeep
@@ -112,7 +399,7 @@ def rollspells(**options):
         outfp = os.path.join(outputfolder, f"magicgen-{modname}.dm")
 
         with open(outfp, "w") as f:
-            l: List[Spell] = []
+            spellsToWriteToFile: List[Spell] = []
             _writetoconsole("Parsing data files...\n")
             s: Dict[str, fileparser.SpellEffect] = _parseDataFiles()
 
@@ -150,163 +437,12 @@ def rollspells(**options):
                 _writetoconsole(
                     f"Generating {spellsperlevel} spells at research {research} for school {schoolname} "
                     f"({len(remainingSchoolLevelCombos) - index} remain)...\n")
-                sys.stderr.flush()
-                effectpool = copy.copy(s)
-                # It is faster to remove everything that doesn't belong in this school now
-                # than to do it later
-                for effname, eff in list(effectpool.items()):
-                    if not (eff.schools & school) and school != 64:
-                        del effectpool[effname]
-                    # Things that are eliminated by this are mostly nextspells
-                    elif eff.paths <= 0 or eff.schools <= 0:
-                        del effectpool[effname]
-                poolForThisSchoolAndLevel = copy.copy(effectpool)
-                effectNameList = list(effectpool.keys())
-                random.shuffle(effectNameList)
-                # First do everything with skipchances, if that fails to make all the spells
-                # do a second run ignoring them
-                allowskipchance = True
-                for x in range(0, spellsperlevel):
-                    attempt = 0
-                    while 1:
-                        spell = None
-                        if len(effectpool) == 0:
-                            if attempt < spellsperlevel and allowskipchance:
-                                attempt += 1
-                                effectpool = copy.copy(poolForThisSchoolAndLevel)
-                                effectNameList = list(effectpool.keys())
-                                random.shuffle(effectNameList)
-                                continue
-                            elif allowskipchance:
-                                allowskipchance = False
-                                effectpool = copy.copy(poolForThisSchoolAndLevel)
-                                effectNameList = list(effectpool.keys())
-                                random.shuffle(effectNameList)
-                                continue
-                            print(
-                                f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully")
-                            _writetoconsole(
-                                f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsperlevel} successfully\n")
-                            break
-                        sp = effectpool[effectNameList.pop(0)]
-                        del effectpool[sp.name]
-                        # Prevent duplicates in the second round of ignoring skipchances
-                        if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
-                            continue
-                        print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
-                              f"skipchance allowed = {allowskipchance}, attempt = {attempt}")
-                        # Encourage the less popular paths to get more spells by skipping the more popular ones
-                        if school != 64:
-                            allowedpaths = utils.breakdownflag(sp.paths)
-                            allowedpaths = [2**x for x in allowedpaths]
-                            random.shuffle(allowedpaths)
-                            forcedpath = None
-                            if len(genericSpellCountsByPath) > 0:
-                                mincount = min(genericSpellCountsByPath.values())
-                                # Ignore blood here
-                                if mincount == genericSpellCountsByPath.get(64, 0) and len(genericSpellCountsByPath) > 2:
-                                    mincount = sorted(list(genericSpellCountsByPath.values()))[1]
+                spellsToWriteToFile += generateSpellsInSchoolAtResearch(school, research, s, spellsperlevel,
+                                                                        generatedeffectsatlevels,
+                                                                        genericSpellCountsByPath, **options)
 
-                                for path in allowedpaths[:]:
-                                    if random.random() * 100 < sp.pathskipchances.get(path, 0):
-                                        allowedpaths.remove(path)
-                                        continue
-
-                                if len(allowedpaths) > 0:
-                                    lowest = None
-                                    for path in allowedpaths:
-                                        if lowest is None or genericSpellCountsByPath.get(path, 0) < lowest:
-                                            print(f"Least popular path is {path}")
-                                            forcedpath = path
-                                            lowest = genericSpellCountsByPath.get(path, 0)
-                                if allowskipchance:
-                                    if mincount > 10 and (lowest - mincount) >= 5:
-                                        print(f"Skipped as diff to least popular path is {lowest - mincount}")
-                                        continue
-
-                        # These are the things used to denote things that should be nextspell ONLY
-                        if sp.paths > 0 and sp.schools > 0:
-                            # Special rules for blood
-                            if school == 64:
-                                if sp.paths & 128:
-                                    print(f"Attempt to generate blood spell")
-                                    spell = sp.rollSpell(research, forcepath=128, allowblood=True,
-                                                         allowskipchance=allowskipchance,
-                                                         existingspells=generatedeffectsatlevels, **options)
-
-                            elif sp.schools & school:
-                                print(f"Attempt to generate non-blood spell")
-                                spell = sp.rollSpell(research, forceschool=school, allowblood=False,
-                                                     forcedpath=forcedpath,
-                                                     allowskipchance=allowskipchance,
-                                                     existingspells=generatedeffectsatlevels, **options)
-
-                        if spell is not None:
-                            l.append(spell)
-                            if research not in generatedeffectsatlevels:
-                                generatedeffectsatlevels[research] = []
-                            generatedeffectsatlevels[research].append(sp.name)
-                            genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
-                            print(
-                                f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
-                            break
-                        print(f"Failed to generate")
-                    if len(effectpool) == 0:
-                        break
-
-            # Always generated effects
-            if options.get("clearvanillagenericspells", 1):
-                for name, spelleff in s.items():
-                    if spelleff.alwaysgenerate > 0 and not spelleff.generated:
-                        print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
-                        spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower),
-                                                   allowskipchance=False,
-                                                   **options)
-                        if spell is not None:
-                            l.append(spell)
-                    elif spelleff.alwaysgenerate > 0:
-                        print(f"Spell effect {spelleff.name} has already generated so doesn't need to be forced")
-
-            # Make holy spells
-            _writetoconsole("Generating holy spells...\n")
-            base_path = os.path.join("./data", "spells")
-            holy_path = os.path.join(base_path, "holy")
-            holy = fileparser.readEffectsFromDir(holy_path)
-            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "banishment"))}
-            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smite"))}
-            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "holyword"))}
-            holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smitedemon"))}
-            for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
-                for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
-                    effectpool = copy.copy(holy)
-                    effectlist = list(effectpool.keys())
-                    random.shuffle(effectlist)
-                    # Make a list of effects, go through them in sequence
-                    # skipchance not passing just means throwing it to the end
-                    while 1:
-                        if len(effectlist) == 0:
-                            raise Exception(f"No holy spell effects for {spelltype} for path {path}")
-                        effectname = effectlist.pop(0)
-                        spelleff = holy[effectname]
-                        if spelleff.secondarypaths & path and (getattr(spelleff, spelltype) > 0):
-                            if random.random() * 100 < spelleff.skipchance:
-                                # failed skipchance, go to the end
-                                effectlist.append(effectname)
-                            else:
-
-                                # force secondary effect on themed spells that don't have a next spell
-                                # these specmasks are extra effect and extra effect on damage
-                                if len(spelleff.nextspell) == 0 and (
-                                        (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
-                                    l.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
-                                                                blockmodifier=True,
-                                                                allowskipchance=False, **options))
-                                else:  # block secondaries on things that DO have a nextspell built in
-                                    l.append(
-                                        spelleff.rollSpell(spelleff.power, blocksecondary=True, forcesecondaryeff=path,
-                                                           blockmodifier=True,
-                                                           allowskipchance=False, **options))
-                                break
+            spellsToWriteToFile += generateAlwaysPresentSpells(s, **options)
+            spellsToWriteToFile += generateHolySpells(**options)
 
             # Generate some national spells
             _writetoconsole("Reading vanilla nations\n")
@@ -325,7 +461,7 @@ def rollspells(**options):
                 researchmod=researchmod,
                 options=options,
                 alreadygeneratedeffectsatlevels=generatedeffectsatlevels,
-                generatedspells=l,
+                generatedspells=spellsToWriteToFile,
                 nationstogeneratefor=nationstogeneratefor,
             )
 
@@ -333,126 +469,15 @@ def rollspells(**options):
             f.write('#modname "MagicGen-{}"{}'.format(modname, "\n"))
             f.write(
                 "#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
-                    '"', ver, len(l), '"')
+                    '"', ver, len(spellsToWriteToFile), '"')
             )
             f.write("-- Number of generic spells by primary path requirement:\n")
             for illwinterPathID, numSpells in genericSpellCountsByPath.items():
                 f.write(f"-- {PathFlags(illwinterPathID).name}: {numSpells}\n")
+            hideVanillaSpells(f, **options)
 
-            nationalspells = []
-
-            with open("Dom5-natspells-list.txt", "r") as natspells:
-                foundheader = False
-                for line in natspells:
-                    if not foundheader:
-                        if line.startswith("--"):
-                            foundheader = True
-                        continue
-                    if line.strip() == "":
-                        continue
-                    nationalspells.append(int(line.strip()))
-
-            if not bool(options.get("clearvanillanationalspells", 1)):
-                spellstokeep += nationalspells
-
-            _writetoconsole(f"Hiding vanilla spells...\n")
-            for x in range(1, utils.SPELL_ID):
-                removespell = x not in spellstokeep
-                if removespell and bool(options.get("clearvanillagenericspells")) == False:
-                    if x not in nationalspells:
-                        removespell = False
-                if removespell:
-                    f.write(f"#selectspell {x}\n")
-                    f.write(f"#school -1\n")
-                    f.write(f"#researchlevel -1\n")
-                    f.write(f"#end\n")
-
-            # add #indepspells to casters
-            if bool(options.get("clearvanillagenericspells")):
-                # Check crc32 for saved BaseU.csv
-                crcokay = False
-                if os.path.isfile("indepspells.dm"):
-                    with open("indepspells.dm", "r") as indepspells:
-                        indepspellscontent = indepspells.read()
-                        crc = indepspellscontent.split("\n")[0][2:].strip()
-                        with open("data/BaseU.csv", "rb") as baseu:
-                            baseucontent = baseu.read()
-                            baseucrc = str(binascii.crc32(baseucontent))
-                        if crc == baseucrc:
-                            crcokay = True
-                            indepspells.seek(0)
-                            for line in indepspells:
-                                f.write(line)
-
-                if not crcokay:
-                    _writetoconsole(f"BaseU CRC {baseucrc} did not match precalced CRC {crc}!"
-                                    f" Regenerating indepspells.dm...\n")
-                    indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
-                                         f"mod files when magicgen clears vanilla generic spells.\n" \
-                                         f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
-                                         f"- this is saved as generating this from scratch takes several minutes\n"
-                    for unitid in range(0, 3500):
-                        if unitid % 100 == 0:
-                            _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
-                        try:
-                            unitobj = unitinbasedatafinder.get(unitid)
-                        except Exception:
-                            print(f"Error trying to get uid {unitid}")
-                            print(traceback.format_exc());
-                            continue
-                        # leave illwinter-set values intact
-                        if hasattr(unitobj, "indepspells"):
-                            if int(getattr(unitobj, "indepspells")) > 0:
-                                continue
-                        indeplevel = None
-
-                        if hasattr(unitobj, "startdom"):
-                            if int(getattr(unitobj, "startdom")) > 0:
-                                indeplevel = 7
-
-                        if indeplevel is None:
-                            totalmagiclevel = 0
-                            for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
-                                if getattr(unitobj, path, "") <= 0:
-                                    continue
-                                pathval = int(getattr(unitobj, path, 0))
-                                if pathval > 0:
-                                    totalmagiclevel += pathval
-                                    print(f"Unit {unitid} has {path} level {pathval}")
-
-                            randomaverage = 0
-
-                            for n in range(1, 5):
-                                mask = f"mask{n}"
-
-                                mask = int(getattr(unitobj, mask, 0))
-                                randomchance = int(getattr(unitobj, f"rand{n}", 0))
-                                nbr = max(0, int(getattr(unitobj, f"nbr{n}")))
-                                if randomchance > 0:
-                                    randomaverage += nbr * (randomchance / 100)
-                                    print(
-                                        f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
-                                    print(f"\ttotal random path value now {randomaverage}")
-
-                            totalmagiclevel += math.floor(randomaverage)
-
-                            if totalmagiclevel >= 3:
-                                indeplevel = 5
-                            elif totalmagiclevel == 2:
-                                indeplevel = 4
-                            elif totalmagiclevel == 1:
-                                indeplevel = 3
-
-                        if indeplevel is not None:
-                            indepspellscontent += f"#selectmonster {unitid}\n"
-                            indepspellscontent += f"#indepspells {indeplevel}\n"
-                            indepspellscontent += f"#end\n"
-                    with open("indepspells.dm", "w") as indepspells:
-                        indepspells.write(indepspellscontent)
-                        f.write(indepspellscontent)
-
-            print(f"There are {len(l)} spells to write!")
-            for spell in l:
+            print(f"There are {len(spellsToWriteToFile)} spells to write!")
+            for spell in spellsToWriteToFile:
                 if spell is not None:
                     f.write(spell.output())
             f.flush()

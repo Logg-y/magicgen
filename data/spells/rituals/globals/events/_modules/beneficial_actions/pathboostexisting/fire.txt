@@ -11,13 +11,13 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may cause someone close to them to be harmlessly consumed by magical flames, increasing their ability in fire magic."
-#moduledetails "Grants +1 fire magic to a random commander in the province, including to commanders who had no fire magic to begin with. Paths cannot be raised above 5 in this way."
+#moduledetails "Grants +1 fire magic to a random commander in the province, including to commanders who had no fire magic to begin with. Paths cannot be raised above 4 in this way."
 
 
 #end
 
-#cleartarg
+#req_targnopath4 0
 #nation -2
 #pathboost 0
-#msg "A commander was gained skill in fire magic after being struck by a magical flames!"
+#msg "##fulltargname## gained skill in fire magic after being struck by magical flames!"
 #nolog

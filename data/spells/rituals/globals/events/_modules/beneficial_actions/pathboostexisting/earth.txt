@@ -11,13 +11,13 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may cause someone close to them to be harmlessly caught in a massive magical dust cloud, increasing their ability in earth magic."
-#moduledetails "Grants +1 earth magic to a random commander in the province, including to commanders who had no earth magic to begin with. Paths cannot be raised above 5 in this way."
+#moduledetails "Grants +1 earth magic to a random commander in the province, including to commanders who had no earth magic to begin with. Paths cannot be raised above 4 in this way."
 
 
 #end
 
-#cleartarg
+#req_targnopath4 3
 #nation -2
 #pathboost 3
-#msg "A commander has gained skill in earth magic!"
+#msg "##fulltargname## has gained skill in earth magic!"
 #nolog

@@ -18,7 +18,6 @@
 
 #end
 
-#cleartarg
 #nation -2
 #req_commander 1
 #xp 10
