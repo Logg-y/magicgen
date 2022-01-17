@@ -1,7 +1,7 @@
 #neweffect "Fire Flies"
 #copyspell "Fire Flies"
 
-#effect 22
+#effect 2
 #damage 6
 #spec 96
 #schools evo
