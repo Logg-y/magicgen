@@ -176,7 +176,7 @@ class UnitMod(object):
         # needless to say, don't do this if the current monster is a secondshape something caused by running in recursive mode1
         # or the spell will be left summoning the last thing in the secondshape chain
         if len(extrashapechain) == 0:
-            if spell is not None and spell.effect % 1000 in [1, 21, 37, 38, 43, 50, 89, 93, 119, 137, 54, 130]:
+            if spell is not None and spell.effect % 1000 in [1, 21, 37, 38, 43, 50, 89, 93, 119, 137, 54, 130, 62]:
                 print("is first pass, fixed spell.damage")
                 spell.damage = utils.MONSTER_ID
             else:

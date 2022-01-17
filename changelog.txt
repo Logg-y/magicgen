@@ -4,6 +4,10 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+v3.1.3
+
+Fixed manifestation modified spells calling newunits not correctly referencing the new unit created
+
 v3.1.2
 
 Fixed pathboost globals, previously they would only target mages that had the appropriate path already (thanks to Waylander for pointing this out)
