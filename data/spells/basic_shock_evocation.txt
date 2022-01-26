@@ -87,6 +87,7 @@
 #spelltype 34
 #aoe 6
 #scalerate 0
+#explspr 10285
 #power 4
 #name 1 "$Additional$ Shock"
 #name 2 "$Additional$ Shock"
@@ -192,6 +193,9 @@
 
 
 #neweffect "Shock Evo Chain"
+#copyspell "Leech"
+#flightspr 10285
+#explspr 10082
 #effect 134
 #damage 2001
 #spec 8390784
@@ -275,6 +279,9 @@
 
 
 #neweffect "Shock Evo Multichain"
+#copyspell "Leech"
+#flightspr 10285
+#explspr 10082
 #effect 134
 #damage 2001
 #spec 8390784

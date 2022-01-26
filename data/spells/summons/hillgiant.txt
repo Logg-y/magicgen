@@ -2,8 +2,8 @@
 #effect 1
 #damage 2230
 #spec 0
-#power 3
-#maxpower 14
+#power 5
+#maxpower 16
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -21,9 +21,9 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 10
-#scalefatigueexponent -1.5
+#scalerate 0.7
+#scalefatiguemult 16.0
+#scalefatigueexponent -1.62
 #pathperresearch 0.4
 #end
 
@@ -113,5 +113,6 @@
 
 #scalerate 1
 #end
+
 
 

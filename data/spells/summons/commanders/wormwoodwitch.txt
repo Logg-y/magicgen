@@ -6,7 +6,7 @@
 #power 5
 #maxpower 14
 #precision -100
-#nreff 2
+#nreff 1
 #pathlevel 4
 #chassisvalue 25
 #range 6
@@ -70,4 +70,5 @@
 
 #scalerate 1
 #end
+
 

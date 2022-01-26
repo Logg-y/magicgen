@@ -177,7 +177,7 @@ class UnitMod(object):
         # or the spell will be left summoning the last thing in the secondshape chain
         if len(extrashapechain) == 0:
             if spell is not None and spell.effect % 1000 in [1, 21, 37, 38, 43, 50, 89, 93, 119, 137, 54, 130, 62]:
-                print("is first pass, fixed spell.damage")
+                print(f"unitmod {self.name}: is first pass, fixed spell.damage -> {utils.MONSTER_ID}")
                 spell.damage = utils.MONSTER_ID
             else:
                 self.lastparentid = utils.MONSTER_ID

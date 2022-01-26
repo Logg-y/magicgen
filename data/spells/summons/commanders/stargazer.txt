@@ -6,7 +6,7 @@
 #power 3
 #maxpower 11
 #precision -100
-#nreff 4
+#nreff 2
 #pathlevel 2
 #chassisvalue 25
 #range 6
@@ -32,10 +32,10 @@
 #descr 64 "The caster attracts ARTICLE %Stargazer% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Stargazer% will leave once the battle is over."
 #details "Stargazers are human S1 mages."
 
-#scalefatiguemult 10
+#scalefatiguemult 17
 #spelltype 528
 
-#scalerate 1.6
+#scalerate 1
 #scalefatigueexponent -1.6
 #pathperresearch 0.4
 #end
@@ -76,4 +76,5 @@
 
 #scalerate 1
 #end
+
 

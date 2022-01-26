@@ -2,7 +2,7 @@
 #copyspell "Star Fires"
 #effect 2
 #damage 1004
-#spec 128
+#spec 128+16384
 #schools 4
 
 #spelltype 18
@@ -28,6 +28,7 @@
 
 #name 16 "NAMEPREFIX Star Fires"
 #descr 16 "The caster focuses the lights of several stellar bodies and projects them onto his enemies."
+#details "Air Shield offers no protection from this spell."
 
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX stellar touch"

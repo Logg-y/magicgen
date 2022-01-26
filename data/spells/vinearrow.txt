@@ -43,4 +43,7 @@
 
 #priority 1
 #namecond range < 10 64 "NAMEPREFIX touch of entangling plants"
+#scalefatiguemult 7
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
 #end

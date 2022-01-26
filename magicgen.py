@@ -26,7 +26,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.2"
+ver = "3.1.3"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -193,6 +193,11 @@ def generateHolySpells(**options):
     holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smite"))}
     holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "holyword"))}
     holy = {**holy, **fileparser.readEffectsFromDir(os.path.join(holy_path, "smitedemon"))}
+    options = copy.copy(options)
+    # Holy spells should ignore certain settings
+    options["researchmodifier"] = 0
+    options["pathlevelmodflat"] = 0
+    options["pathlevelmodmult"] = 1.0
     for spelltype in ["banishment", "smite", "holyword", "smitedemon"]:
         for path in [1, 2, 4, 8, 16, 32, 64, 128, 256]:
             effectpool = copy.copy(holy)
@@ -431,7 +436,7 @@ def rollspells(**options):
                     spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.45))
                 researchorder = list(range(0+researchmod, 10+researchmod))
                 random.shuffle(researchorder)
-                if school == 8 and research in [2, 4, 6, 8]:
+                if school == 8 and (research-researchmod) in [2, 4, 6, 8]:
                     # construction crafting levels don't get spells
                     continue
                 _writetoconsole(

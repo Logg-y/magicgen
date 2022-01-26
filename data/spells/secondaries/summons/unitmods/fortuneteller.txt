@@ -1,5 +1,6 @@
 #newunitmod "Summon Fortuneteller"
-#nobadevents 5
+#req nobadevents <= 0
+#set nobadevents 5
 #nameprefix "Fortunetelling"
 #descr "This particular CREATURE can see a short distance into the future, enabling it to occasionally prevent unlucky events in its vicinity."
 #end

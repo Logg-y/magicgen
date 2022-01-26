@@ -9,8 +9,10 @@
 #scalerate 0
 #aoe 5
 #power 1
-#name 1 "Banefire Decay"
-#name 32 "Banefire Decay"
+#name 1 "Area Decay"
+#name 32 "Area Decay"
+#name a "Area Decay"
+#name b "Area Decay"
 #end
 
 #neweffect "Banefire Decay Small"

@@ -10,7 +10,7 @@
 #pathlevel 3
 #chassisvalue 25
 #range 6
-#fatiguecost 100
+#fatiguecost 200
 #explspr 10232
 #sound 31
 #schools 1
@@ -75,5 +75,6 @@
 
 #scalerate 1
 #end
+
 
 

@@ -18,6 +18,9 @@
 #end
 
 #neweffect "Shock Evo 10AN charge"
+#copyspell "Leech"
+#flightspr 10285
+#explspr 10082
 #effect 109
 #damage 1
 #spec 1152921504606865536

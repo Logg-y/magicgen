@@ -1,0 +1,108 @@
+#neweffect "Frostfire Ailments"
+#effect 11
+#damage 512+268435456
+#spec 128
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 1
+#name f "Elemental Exposure"
+#name w "Elemental Exposure"
+#name b "Elemental Exposure"
+#maxpower 30
+#end
+
+
+#neweffect "Frostfire Evo Projectile"
+#effect 2
+#damage 2016
+-- firedmg, AP, cold, nextondamage
+#spec 96+512+1152921504606846976
+-- evo
+#aoe 1
+#schools 4
+#range 40
+#precision 1
+#flightspr 10072
+#explspr 10132
+#sound 123
+#fatiguecost 15
+#skipchance 70
+
+#paths fwb
+#secondarypaths fw
+#secondarypathchance 100
+
+#name f "NAMEPREFIX %$ball$% of $frostfire$"
+#name f "NAMEPREFIX $frostfire$ %$ball$%"
+#name w "NAMEPREFIX %$ball$% of $frostfire$"
+#name w "NAMEPREFIX $frostfire$ %$ball$%"
+#name b "NAMEPREFIX %$ball$% of $frostfire$"
+#name b "NAMEPREFIX $frostfire$ %$ball$%"
+
+#descr f "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr w "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr b "$BLOOD_INTRO$, ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 2
+#maxpower 14
+#scalerate 1
+#pathlevel 2
+
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Frostfire"
+#namecond range < 10 w "NAMEPREFIX Touch of Frostfire"
+#namecond range < 10 128 "NAMEPREFIX Touch of Frostfire"
+#descrcond range < 10 f "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descrcond range < 10 w "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#nextspell "Frostfire Ailments"
+#end
+
+
+
+
+#neweffect "Frostfire Evo Projectile Rain"
+#copyspell "Gifts from Heaven"
+#effect 2
+#damage 2011
+-- firedmg, AP, cold, nextondamage
+#spec 96+512+1152921504606846976
+-- evo
+#aoe 1
+#schools 4
+#nreff 40
+#range 40
+#precision -20
+#flightspr 10072
+#explspr 10132
+#sound 123
+#fatiguecost 100
+#skipchance 70
+
+#paths fwb
+#secondarypaths fw
+#secondarypathchance 100
+
+#name f "NAMEPREFIX rain of $frostfire$"
+#name w "NAMEPREFIX rain of $frostfire$"
+#name b "NAMEPREFIX rain of $frostfire$"
+
+#descr f "Balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr w "Balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr b "$BLOOD_INTRO$, balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+
+#spelltype 18
+
+#power 8
+#maxpower 18
+#scalerate 3
+#pathlevel 5
+
+#nextspell "Frostfire Ailments"
+#scalefatigueexponent 1
+#end

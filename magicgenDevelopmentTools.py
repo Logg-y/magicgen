@@ -256,7 +256,7 @@ def scalingTool():
                 effno = int(values["-effect-"])
                 # need to set ritual flag
                 if effno > 10000:
-                    fakespell.spelltype += 4
+                    fakespell.spelltype |= 4
 
                 for attrib in attribs_to_copy:
                     attribstring = values[f"-{attrib}-"]

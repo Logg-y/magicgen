@@ -1,0 +1,80 @@
+#neweffect "Unholy Power"
+#effect 23
+#damage 33554432
+#spec 8388608+16384+131072
+#schools ench
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+
+#aoe 0
+#power 4
+#maxpower 8
+#pathlevel 1
+#explspr 10051
+#sound 31
+#range 10
+#fatiguecost 20
+
+#paths fb
+#secondarypaths f
+
+
+#namecond effectiveaoe < 100 f "NAMEPREFIX $Skill$ of Heroes"
+#namecond effectiveaoe < 100 f "NAMEPREFIX $Prowess$ of Heroes"
+#namecond effectiveaoe < 100 b "NAMEPREFIX Infernal $Skill$"
+#namecond effectiveaoe < 100 b "NAMEPREFIX Infernal $Prowess$"
+
+#descr f "SUBJECT receives heroic combat prowess."
+#descr b "$BLOOD_INTRO$, SUBJECT receives demonic combat prowess."
+#details "Unholy Power: grants +4 Attack Skill and +4 Combat Speed."
+
+#priority 1
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of heroic skill"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal prowess"
+
+#scalefatigueexponent 0.5
+#pathperresearch 0.8
+#end
+
+
+#neweffect "Unholy Power battlefield"
+#effect 23
+#damage 33554432
+#spec 8388608+16384+131072
+#schools ench
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+
+#aoe 666
+#power 9
+#maxpower 9
+#pathlevel 4
+#explspr 10051
+#sound 31
+#range 10
+#unique 1
+#fatiguecost 200
+
+#paths fb
+#secondarypaths f
+
+#name f "NAMEPREFIX Army of Heroic Prowess"
+#name b "NAMEPREFIX Army of Infernal Prowess"
+
+#descr f "SUBJECT receives heroic combat prowess."
+#descr b "$BLOOD_INTRO$, SUBJECT receives demonic combat prowess."
+#details "Unholy Power: grants +4 Attack Skill and +4 Combat Speed."
+
+#priority 1
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of Heroic Prowess"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of Infernal Prowess"
+
+#end
+
+

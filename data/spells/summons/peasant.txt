@@ -1,0 +1,120 @@
+#neweffect "Summon peasant"
+#effect 1
+#damage 284
+#spec 0
+#power 1
+#maxpower 9
+#precision -2
+#nreff 1
+#pathlevel 1
+#fatiguecost 20
+#sound 31
+#schools thaum
+
+#paths fs
+#secondarypaths 0
+
+#skipchance 98
+#newunit "Peasant"
+#aispellmod -20
+
+#name fs "$Conjure$ NAMEPREFIX %Peasant%"
+#descr f "The caster fills nearby commoners and travellers with a desire to take up arms and protect him. This results in ARTICLE %peasant% entering the battle to fight for the caster. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry."
+#descr s "The caster fills the minds of nearby commoners and travellers with a desire to take up arms and protect him. This results in ARTICLE %peasant% entering the battle to fight for the caster. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry."
+
+#spelltype 528
+#pathperresearch 0.4
+#scalefatigueexponent -1.2
+#scalefatiguemult 0
+
+#scalerate 1
+#end
+
+#neweffect "Peasant ritual"
+#effect 10001
+#damage 284
+#spec 0
+#power -1
+#maxpower 3
+#nreff 5007
+#pathlevel 1
+#fatiguecost 120
+#schools thaum
+
+#paths fs
+#secondarypaths 0
+#newunit "Peasant"
+
+#name fs "Summon NAMEPREFIX %Peasant%"
+#descr f "The caster fills nearby commoners and travellers with a desire to take up arms and fight for him. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry. The magic used in this spell is sufficient to make the peasants demand no pay, making armies of them cost very little to maintain."
+#descr s "The caster fills the minds of nearby commoners and travellers with a desire to take up arms and fight for him. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry. The magic used in this spell is sufficient to make the peasants demand no pay, making armies of them cost very little to maintain."
+
+
+#spelltype 20
+
+#skipchance 97
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 5
+#pathperresearch 0.4
+
+#siegepatrolchaff 1
+
+#scalerate 4
+#end
+
+#neweffect "Peasant Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools thaum
+#skipchance 80
+#nogeodst 2052
+#newunit "Peasant"
+
+#paths fs
+#secondarypaths 0
+
+#name fs "NAMEPREFIX Peasant $ambush$"
+#descr fs "The caster fills the minds of a commoner or traveller in a distant province with a desire to take up arms and attack a hostile commander for him. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon peasant"
+#effect 10038
+#provrange 4
+#damage 284
+#spec 0
+#power 3
+#maxpower 14
+#nreff 5020
+#pathlevel 3
+#fatiguecost 600
+#schools thaum
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths fs
+#secondarypaths 0
+#newunit "Peasant"
+
+--#scalefatigueexponent 0.5
+--#scalefatiguemult 5
+
+#name fs "Send NAMEPREFIX %Peasant%"
+#descr fs "The caster fills the minds of commoners or travellers in a distant province with a desire to take up arms and form an uprising. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry. The effects of this spell are temporary: should they successfully take control of the province, those who survive will continue about their lives."
+
+#spelltype 20
+
+#scalerate 7
+#end
+

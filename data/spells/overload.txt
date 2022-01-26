@@ -15,8 +15,10 @@
 
 
 #neweffect "Overload"
+-- Ray flysprite
+#copyspell "Leech"
 #effect 2
-#damage 3019
+#damage 3016
 
 -- an, shock, mrn, extra on damage, ignores shields, uwok
 #spec 1152921504615258240
@@ -26,6 +28,7 @@
 #range 40
 #precision 100
 #nextspell "Overload Arcing"
+#flightspr 10285
 #explspr 10125
 #sound 27
 #fatiguecost 20

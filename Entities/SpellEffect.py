@@ -155,7 +155,8 @@ class SpellEffect(object):
         s = Spell()
         mod = self._rollModifier(**options)
         secondary = self._rollSecondary(mod, **options)
-
+        if secondary is None:
+            return None
         if not self._powerLevelIsValid(mod, secondary):
             return None
 
@@ -855,7 +856,7 @@ class SpellEffect(object):
         secondary = None
 
 
-        self._decideSecondaryPathLimitations()
+        self._decideSecondaryPathLimitations(**options)
         print("roll secondary")
 
         if self.allowSecondary:

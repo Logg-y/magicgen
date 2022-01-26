@@ -91,8 +91,8 @@
 -- #scalecost 1.0
 
 #aoe 0
-#power 2
-#maxpower 7
+#power 1
+#maxpower 6
 #pathlevel 2
 #explspr 10264
 #sound 31
@@ -132,8 +132,8 @@
 -- #scalecost 1.0
 
 #aoe 666
-#power 8
-#maxpower 8
+#power 7
+#maxpower 7
 #pathlevel 4
 #explspr 10264
 #sound 31
@@ -158,5 +158,100 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of reforming flesh"
 
+#end
+
+
+#neweffect "Greater Regen nextspell"
+#effect 23
+#damage 536870912
+#spec 545275904
+#schools -1
+#aoe 1
+#spelltype 41
+#maxpower 30
+#scalerate 0
+#name 64 "Additional Regeneration"
+#name 128 "Additional Regeneration"
+#end
+
+
+
+#neweffect "Regen Greater"
+#effect 10
+#damage 32
+#spec 545275904
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.8
+-- #scalecost 1.0
+
+#aoe 0
+#power 5
+#maxpower 9
+#pathlevel 3
+#explspr 10027
+#sound 31
+#range 10
+#fatiguecost 30
+
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Greater Regeneration"
+#namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Greater Regeneration"
+
+#namecond2 600 <= effectiveaoe <= 666 64 "NAMEPREFIX Mass Greater Regeneration"
+
+#details "Grants 20% regeneration."
+
+#descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
+#nextspell "Greater Regen nextspell"
+#end
+
+
+#neweffect "Regen battlefield"
+#effect 10
+#damage 32
+#spec 545275904
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1.7
+-- #scalecost 1.0
+
+#aoe 666
+#power 10
+#maxpower 10
+#pathlevel 5
+#explspr 10027
+#sound 31
+#range 10
+#fatiguecost 300
+#unique 1
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe < 2 64 "NAMEPREFIX Greater Regeneration"
+#namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Greater Regeneration"
+
+#namecond2 20 <= effectiveaoe <= 666 64 "NAMEPREFIX Mass Greater Regeneration"
+
+#details "Grants 20% regeneration."
+
+#descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
+#nextspell "Greater Regen nextspell"
 #end
 

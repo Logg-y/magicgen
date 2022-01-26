@@ -13,7 +13,7 @@
 #scalefatigueexponent 0.2
 #casttime 25
 #aoe 1
-#power 3
+#power 1
 #pathlevel 1
 #explspr 10303
 #sound 29
@@ -30,11 +30,101 @@
 #namecond effectiveaoe >= 660 64 "NAMEPREFIX Heal Army"
 
 #descr 64 "The wounds of troops across a SIZE area are healed."
+#details "This spell heals for EFFECTIVEDAMAGE points, plus DAMAGESCALING per additional caster level. This amount is subject to the same DRN rolls as if it were AN damage."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of healing"
 
+#maxpower 6
 #end
+
+#neweffect "Heal Regen 2"
+#effect 23
+#damage 536870912
+#spec 549453952+4398046511104
+#schools -1
+-- buff
+#spelltype 1
+#aoe 1
+#power 1
+#name 1 "Prolonged Regeneration"
+#name 2 "Prolonged Regeneration"
+#name 4 "Prolonged Regeneration"
+#name 8 "Prolonged Regeneration"
+#name 16 "Prolonged Regeneration"
+#name 32 "Prolonged Regeneration"
+#name 64 "Prolonged Regeneration"
+#name 128 "Prolonged Regeneration"
+#maxpower 30
+#end
+
+
+#neweffect "Heal Regen 1"
+#effect 10
+#damage 32
+#spec 549453952+4398046511104
+#schools -1
+-- buff
+#spelltype 1
+#aoe 1
+#power 1
+#name 1 "Lingering Regeneration"
+#name 2 "Lingering Regeneration"
+#name 4 "Lingering Regeneration"
+#name 8 "Lingering Regeneration"
+#name 16 "Lingering Regeneration"
+#name 32 "Lingering Regeneration"
+#name 64 "Lingering Regeneration"
+#name 128 "Lingering Regeneration"
+#maxpower 30
+#nextspell "Heal Regen 2"
+#end
+
+
+#neweffect "Heal Regen Combo"
+#effect 13
+#damage 5030
+#spec 549453952
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 1
+
+#scalefatigueexponent 0.2
+#casttime 25
+#aoe 1
+#power 3
+#pathlevel 1
+#explspr 10303
+#sound 29
+#fatiguecost 15
+#range 5015
+#precision 5
+
+-- only nature
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe == 1 64 "NAMEPREFIX Rejuvenate"
+#namecond effectiveaoe < 660 64 "NAMEPREFIX Rejuvenate Area"
+#namecond effectiveaoe >= 660 64 "NAMEPREFIX Rejuvenate Army"
+
+#descr 64 "The wounds of troops across a SIZE area are healed. Additionally, smaller creatures may be granted temporary regenerative abilities."
+#details "Recipients are healed, and make two strength/size checks. Each check failed grants 10% regeneration. Size 5 and 6 creatures always succeed both checks; size 4 has only a 66% chance to automatically succeed, and size 3 has a 33% chance to be automatically succeed. Those that do not pass checks with their size roll a closed d20 and add 14, if this is less than their strength then they are unaffected."
+-- Cast this over pure heal if possible
+#aispellmod 25
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of healing"
+
+#nextspell "Heal Regen 1"
+-- deliberately not field wide
+#maxpower 7
+#end
+
 
 #neweffect "Heal Undead"
 #effect 13
@@ -51,7 +141,7 @@
 #scalefatigueexponent 0.2
 #casttime 25
 #aoe 1
-#power 1
+#power 0
 #pathlevel 1
 #explspr 10197
 #sound 31
@@ -68,9 +158,71 @@
 #name 32 "NAMEPREFIX Restore Undead"
 
 #descr 32 "The wounds of undead across a SIZE area are healed."
+#details "This spell heals for EFFECTIVEDAMAGE points, plus DAMAGESCALING per additional caster level. This amount is subject to the same DRN rolls as if it were AN damage."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead restoration"
-
+#maxpower 7
 
 #end
+
+#neweffect "Heal Fire Burning"
+#effect 11
+#damage 512
+#spec 549453952
+#schools -1
+-- buff
+#spelltype 1
+#aoe 1
+#power 1
+#name 1 "Cauterisation Ignition"
+#name 2 "Cauterisation Ignition"
+#name 4 "Cauterisation Ignition"
+#name 8 "Cauterisation Ignition"
+#name 16 "Cauterisation Ignition"
+#name 32 "Cauterisation Ignition"
+#name 64 "Cauterisation Ignition"
+#name 128 "Cauterisation Ignition"
+#maxpower 30
+#end
+
+
+#neweffect "Heal Fire"
+#effect 13
+#damage 5010
+#spec 549453952
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 2
+-- #scalecost 1
+
+#scalefatigueexponent 0.2
+#casttime 15
+#aoe 1
+#power 0
+#pathlevel 1
+#explspr 10113
+#sound 123
+#fatiguecost 5
+#range 5025
+#precision 100
+
+#paths f
+#secondarypaths f
+
+#namecond effectiveaoe == 1 f "NAMEPREFIX Cauterise Wounds"
+
+#descr f "The wounds of troops across a SIZE area are rapidly cauterised, allowing the recipients to continue fighting. The process will however ignite those that are not fire resistant."
+#details "This spell heals for EFFECTIVEDAMAGE points, plus DAMAGESCALING per additional caster level. This amount is subject to the same DRN rolls as if it were AN damage.\n\nBurning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+
+#priority 1
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of cauterisation"
+
+#maxpower 0
+#aispellmod 0
+#nextspell "Heal Fire Burning"
+#end
+

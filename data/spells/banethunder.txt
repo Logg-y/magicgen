@@ -1,0 +1,79 @@
+
+
+#neweffect "Banethunder strike"
+#effect 2
+#damage 5040
+#spec 64
+#aoe 1
+#power 6
+#maxpower 6
+#precision 1
+#range 5030
+#pathlevel 4
+#fatiguecost 30
+#explspr 10247
+#sound 27
+
+#skipchance 70
+
+#paths ad
+#secondarypaths ad
+#secondarypathchance 100
+
+#name 2 "NAMEPREFIX Banethunder %Strike%"
+#name 32 "NAMEPREFIX Banethunder %Strike%"
+#descr a "The caster causes banethunder to strike a small number of enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+#descr d "The caster causes banethunder to strike a small number of enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+
+#nextspell "Banefire Decay"
+
+-- evo-like, scale dmg
+#spelltype 18
+#scalerate 2.5
+#schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Banethunder Touch"
+#namecond range < 10 32 "NAMEPREFIX Banethunder Touch"
+#descrcond range < 10 2 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
+#descrcond range < 10 32 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
+#scalefatiguemult 15
+#scalefatigueexponent -1.6
+#end
+
+
+#neweffect "Banethunder strike multi"
+#effect 2
+#damage 5040
+#spec 64
+#aoe 1
+#power 8
+#maxpower 16
+#precision 1
+#range 5030
+#pathlevel 5
+#fatiguecost 100
+#explspr 10247
+#sound 27
+#nreff 5
+
+#skipchance 70
+
+#paths ad
+#secondarypaths ad
+#secondarypathchance 100
+
+#name 2 "NAMEPREFIX Banethunder %Strike%"
+#name 32 "NAMEPREFIX Banethunder %Strike%"
+#descr a "The caster calls multiple strikes of banethunder onto his enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+#descr d "The caster calls multiple strikes of banethunder onto his enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+
+#nextspell "Banefire Decay"
+
+-- evo-like, scale nreff
+#spelltype 18
+#scalerate 3
+#schools 4
+
+#scalefatigueexponent 1.2
+#end

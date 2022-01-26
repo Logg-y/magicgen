@@ -4,9 +4,38 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+banethunder multiple
+
+v3.1.4
+
+Fixed a bug that could cause generation to crash at any point where a valid secondary effect couldn't be found for a spell effect
+Holy spells are no longer affected by global path/research level modifiers, as this could result in weirdness such as the game wiping them from your scripts every turn (thanks, but apologies to the fine people of Randomsquared for this).
+Fortune telling units now correctly have fortune teller 5 (as advertised) and not 4.
+Gem costing vine arrow spells are now lower path/fatigue.
+Heal -2 research levels
+Star fires now ignores shields (so is no longer blocked by air shield). Also explicitly stated this in yellowtext for those who may be used to vanilla
+Added heal plus size/strength resisted regeneration for non-inanimate creatures.
+Added a weaker fire healing spell that also sets recipients on fire
+Added yellow text for the amount healed by healing spells
+Added unholy power effect for fire/blood (as per DE's Skill of Heroes)
+Added 20% regeneration buff spell effect
+Added peasant summons
+Added magma bolts
+Added magma eruption
+Added a massive boulder earth evocation
+Added a spell that rains said massive boulders from the sky
+Reduced the potency of battle summoned mages (mix of increased cost/reduced numbers)
+Added a mixed fire/cold evocation spell
+Added banethunder strike (banefire, but electrical)
+Added a MRN unresistable poison effect (acidify blood)
+Added ray visuals to instant chain lightning and overload
+
 v3.1.3
 
 Fixed manifestation modified spells calling newunits not correctly referencing the new unit created
+Fixed issue from refactor that would cause spells to generate with secondary effects that should not be generating with secondary effects
+Hill giant battlesummon +2 research, reduced scale rate (potentially problematic size 2 swallower, especially with -size modifiers)
+Fixed fires from afar yellow text (thanks Mergele)
 
 v3.1.2
 
