@@ -86,6 +86,7 @@ class SpellEffect(object):
         self.badaispell = 0
         self.noresearchdifferenceskip = 0
         self.siegepatrolchaff = 0
+        self.fixeddurationenchantment = 0
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -159,7 +160,6 @@ class SpellEffect(object):
             return None
         if not self._powerLevelIsValid(mod, secondary):
             return None
-
         self._setSpellDefaultValues(s)
         s.school = self._selectSpellSchool(**options)
 
@@ -251,7 +251,7 @@ class SpellEffect(object):
         # Spells copied from record of creation allow fixed duration province enchantments
         # The duration is the difference of cost (in gems) between the primary and secondary spells
         # As all the fatigue scaling above can break this, put it back
-        if self.copyspell == "Record of Creation" and s.nextspell is not None:
+        if (self.copyspell == "Record of Creation" or self.fixeddurationenchantment) and s.nextspell is not None:
             diff = self.fatiguecost - self.nextspell.fatiguecost
             print(f"This is a record of creation based spell, set nextspell's fatigue cost to defined difference"
                   f"of {diff}")

@@ -129,6 +129,7 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                 allowedpaths = [2 ** x for x in allowedpaths]
                 random.shuffle(allowedpaths)
                 forcedpath = None
+                lowest = 0
                 if len(genericSpellCountsByPath) > 0:
                     mincount = min(genericSpellCountsByPath.values())
                     # Ignore blood here
@@ -300,72 +301,73 @@ def copyIndepspells(f, **options):
         if not crcokay:
             _writetoconsole(f"BaseU CRC {baseucrc} did not match precalced CRC {crc}!"
                             f" Regenerating indepspells.dm...\n")
-            generateNewIndepspellsModFile(f)
+            generateNewIndepspellsModFile(f, baseucrc)
 
-    def generateNewIndepspellsModFile(f):
-            indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
-                                 f"mod files when MagicGen clears vanilla generic spells.\n" \
-                                 f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
-                                 f"- this is saved as generating this from scratch takes several minutes\n"
-            for unitid in range(0, 3500):
-                if unitid % 100 == 0:
-                    _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
-                try:
-                    unitobj = unitinbasedatafinder.get(unitid)
-                except Exception:
-                    print(f"Error trying to get uid {unitid}")
-                    print(traceback.format_exc());
+
+def generateNewIndepspellsModFile(f, baseucrc):
+    indepspellscontent = f"--{baseucrc}\n-- This file (indepspells.dm) is transcluded into generated " \
+                         f"mod files when MagicGen clears vanilla generic spells.\n" \
+                         f"-- The above is the CRC of the BaseU.csv file used to generate this file " \
+                         f"- this is saved as generating this from scratch takes several minutes\n"
+    for unitid in range(0, 3500):
+        if unitid % 100 == 0:
+            _writetoconsole(f"Beginning indepspells for unit {unitid}...\n")
+        try:
+            unitobj = unitinbasedatafinder.get(unitid)
+        except Exception:
+            print(f"Error trying to get uid {unitid}")
+            print(traceback.format_exc());
+            continue
+        # leave illwinter-set values intact
+        if hasattr(unitobj, "indepspells"):
+            if int(getattr(unitobj, "indepspells")) > 0:
+                continue
+        indeplevel = None
+
+        if hasattr(unitobj, "startdom"):
+            if int(getattr(unitobj, "startdom")) > 0:
+                indeplevel = 7
+
+        if indeplevel is None:
+            totalmagiclevel = 0
+            for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
+                if getattr(unitobj, path, "") <= 0:
                     continue
-                # leave illwinter-set values intact
-                if hasattr(unitobj, "indepspells"):
-                    if int(getattr(unitobj, "indepspells")) > 0:
-                        continue
-                indeplevel = None
+                pathval = int(getattr(unitobj, path, 0))
+                if pathval > 0:
+                    totalmagiclevel += pathval
+                    print(f"Unit {unitid} has {path} level {pathval}")
 
-                if hasattr(unitobj, "startdom"):
-                    if int(getattr(unitobj, "startdom")) > 0:
-                        indeplevel = 7
+            randomaverage = 0
 
-                if indeplevel is None:
-                    totalmagiclevel = 0
-                    for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
-                        if getattr(unitobj, path, "") <= 0:
-                            continue
-                        pathval = int(getattr(unitobj, path, 0))
-                        if pathval > 0:
-                            totalmagiclevel += pathval
-                            print(f"Unit {unitid} has {path} level {pathval}")
+            for n in range(1, 5):
+                mask = f"mask{n}"
 
-                    randomaverage = 0
+                mask = int(getattr(unitobj, mask, 0))
+                randomchance = int(getattr(unitobj, f"rand{n}", 0))
+                nbr = max(0, int(getattr(unitobj, f"nbr{n}")))
+                if randomchance > 0:
+                    randomaverage += nbr * (randomchance / 100)
+                    print(
+                        f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
+                    print(f"\ttotal random path value now {randomaverage}")
 
-                    for n in range(1, 5):
-                        mask = f"mask{n}"
+            totalmagiclevel += math.floor(randomaverage)
 
-                        mask = int(getattr(unitobj, mask, 0))
-                        randomchance = int(getattr(unitobj, f"rand{n}", 0))
-                        nbr = max(0, int(getattr(unitobj, f"nbr{n}")))
-                        if randomchance > 0:
-                            randomaverage += nbr * (randomchance / 100)
-                            print(
-                                f"Unit {unitid} has random {n} giving {nbr} paths with {randomchance}% of success")
-                            print(f"\ttotal random path value now {randomaverage}")
+            if totalmagiclevel >= 3:
+                indeplevel = 5
+            elif totalmagiclevel == 2:
+                indeplevel = 4
+            elif totalmagiclevel == 1:
+                indeplevel = 3
 
-                    totalmagiclevel += math.floor(randomaverage)
-
-                    if totalmagiclevel >= 3:
-                        indeplevel = 5
-                    elif totalmagiclevel == 2:
-                        indeplevel = 4
-                    elif totalmagiclevel == 1:
-                        indeplevel = 3
-
-                if indeplevel is not None:
-                    indepspellscontent += f"#selectmonster {unitid}\n"
-                    indepspellscontent += f"#indepspells {indeplevel}\n"
-                    indepspellscontent += f"#end\n"
-            with open("indepspells.dm", "w") as indepspells:
-                indepspells.write(indepspellscontent)
-                f.write(indepspellscontent)
+        if indeplevel is not None:
+            indepspellscontent += f"#selectmonster {unitid}\n"
+            indepspellscontent += f"#indepspells {indeplevel}\n"
+            indepspellscontent += f"#end\n"
+    with open("indepspells.dm", "w") as indepspells:
+        indepspells.write(indepspellscontent)
+        f.write(indepspellscontent)
 
 def rollspells(**options):
     global spellstokeep

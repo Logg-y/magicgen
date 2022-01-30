@@ -4,8 +4,6 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
-banethunder multiple
-
 v3.1.4
 
 Fixed a bug that could cause generation to crash at any point where a valid secondary effect couldn't be found for a spell effect
@@ -29,6 +27,8 @@ Added a mixed fire/cold evocation spell
 Added banethunder strike (banefire, but electrical)
 Added a MRN unresistable poison effect (acidify blood)
 Added ray visuals to instant chain lightning and overload
+Added short remote dome spells
+Added a death instant kill spell (but does not soul slay)
 
 v3.1.3
 

@@ -1,0 +1,311 @@
+
+-- These must copyspell murdering winter.
+-- This is because they need MW's attribute that prevents the same spell being cast multiple times on the same province in a single turn
+
+#neweffect "Short Frost Dome Nextspell"
+#effect 10082
+#damage 62
+#spec 8388608
+#fatiguecost 300
+#schools -1
+
+#friendlyench 1
+#hiddenench 1
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 4 "Ward of Ice"
+#descr 4 "A frost dome is created over the targeted province. Any spells cast into this dome will trigger the deadly trap. A powerful frost blast will find its way to the casting mage and freeze him to death. The dome created by this spell lasts slightly longer than a single month. The protection fades prematurely if the caster is killed."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be cast once per province per turn.\n\nDome Protection: 30%. Dome Trap: d15 AN cold dmg. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+#end
+
+
+#neweffect "Short Frost Dome"
+#copyspell "Murdering Winter"
+#fixeddurationenchantment 1
+#effect 10086
+#provrange 4
+#onlyfriendlydst 1
+
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Short Frost Dome Nextspell"
+
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 16
+
+#paths 4
+#secondarypaths 0
+#secondarypathchance 0
+#unique 1
+
+#name 4 "Ward of Ice"
+#descr 4 "A frost dome is created over the targeted province. Any spells cast into this dome will trigger the deadly trap. A powerful frost blast will find its way to the casting mage and freeze him to death. The dome created by this spell lasts slightly longer than a single month. The protection fades prematurely if the caster is killed."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection: 30%. Dome Trap: d15 AN cold dmg. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+
+#spelltype 4
+
+#end
+
+
+
+
+
+
+#neweffect "Short Forest Dome Nextspell"
+#effect 10082
+#damage 66
+#spec 8388608
+#fatiguecost 300
+#schools -1
+
+#friendlyench 1
+#hiddenench 1
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name n "Ward of Forests"
+#descr n "Vegetation will grow into a dome that covers the targeted province. The dome will protect the province from many spells that originate outside the warded province. If left undisturbed, the forest dome will last slightly longer than a month. However, if a Fire spell is absorbed by the dome, it may catch fire and be destroyed. If the caster dies, the dome will wither and die."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn.  Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection 30%. Destroyed by Fire Spells. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+#end
+
+
+#neweffect "Short Forest Dome"
+#copyspell "Murdering Winter"
+#fixeddurationenchantment 1
+#effect 10086
+#provrange 4
+#onlyfriendlydst 1
+
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Short Forest Dome Nextspell"
+
+#nreff 1
+#pathlevel 3
+#fatiguecost 300
+#schools 16
+
+#paths n
+#secondarypaths 0
+#secondarypathchance 0
+
+#unique 1
+
+#name n "Ward of Forests"
+#descr n "Vegetation will grow into a dome that covers the targeted province. The dome will protect the province from many spells that originate outside the warded province. If left undisturbed, the forest dome will last slightly longer than a month. However, if a Fire spell is absorbed by the dome, it may catch fire and be destroyed. If the caster dies, the dome will wither and die."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection 30%. Destroyed by Fire Spells. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+
+#spelltype 4
+
+#end
+
+
+-- I GOT THIS FAR
+
+
+
+#neweffect "Short Air Dome Nextspell"
+#effect 10082
+#damage 61
+#spec 8388608
+#fatiguecost 400
+#schools -1
+
+#friendlyench 1
+#hiddenench 1
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name a "Ward of Air"
+#descr a "A dome made out of air is created over the targeted province. The dome will protect the province from many spells that originate outside the warded province. While undisturbed, the spell will last slightly longer than a month, but if a spell passes through the dome, or if the mage who cast the dome dies, it will shatter instantly."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection 80%. Destroyed if it fails to protect against a spell. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+#end
+
+
+#neweffect "Short Air Dome"
+#copyspell "Murdering Winter"
+#fixeddurationenchantment 1
+#effect 10086
+#provrange 4
+#onlyfriendlydst 1
+
+#damage -1
+#spec 8388608
+#power 4
+#maxpower 4
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Short Air Dome Nextspell"
+
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools 16
+
+#paths a
+#secondarypaths 0
+#secondarypathchance 0
+
+#unique 1
+
+#name a "Ward of Air"
+#descr a "A dome made out of air is created over the targeted province. The dome will protect the province from many spells that originate outside the warded province. While undisturbed, the spell will last slightly longer than a month, but if a spell passes through the dome, or if the mage who cast the dome dies, it will shatter instantly."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection 80%. Destroyed if it fails to protect against a spell. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+
+#spelltype 4
+
+#end
+
+
+
+
+
+
+
+#neweffect "Short Fire Dome Nextspell"
+#effect 10082
+#damage 60
+#spec 8388608
+#fatiguecost 200
+#schools -1
+
+#friendlyench 1
+#hiddenench 1
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name f "Ward of Flames"
+#descr f "An invisible web of Fire magic is created over the targeted province. Any spells cast into the protected province will trigger the deadly trap. A powerful blast of fire will find its way to the enemy mage and burn him and possibly also the laboratory to cinders. The dome lasts only slightly longer than a month. If the mage who cast the dome dies, the dome dissolves instantly."
+
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Trap: 2d20 AP fire dmg. The chance of burning down the lab is 10% plus 1% per misfortune scale in the targeted province.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+#end
+
+
+#neweffect "Short Fire Dome"
+#copyspell "Murdering Winter"
+#fixeddurationenchantment 1
+#effect 10086
+#provrange 4
+#onlyfriendlydst 1
+
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Short Fire Dome Nextspell"
+
+#nreff 1
+#pathlevel 3
+#fatiguecost 200
+#schools 16
+
+#paths f
+#secondarypaths 0
+#secondarypathchance 0
+
+#unique 1
+
+#name f "Ward of Flames"
+#descr f "An invisible web of Fire magic is created over the targeted province. Any spells cast into the protected province will trigger the deadly trap. A powerful blast of fire will find its way to the enemy mage and burn him and possibly also the laboratory to cinders. The dome lasts only slightly longer than a month. If the mage who cast the dome dies, the dome dissolves instantly."
+
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Trap: 2d20 AP fire dmg. The chance of burning down the lab is 10% plus 1% per misfortune scale in the targeted province.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+
+#spelltype 4
+
+#end
+
+
+
+#neweffect "Short Astral Dome Nextspell"
+#effect 10082
+#damage 64
+#spec 8388608
+#fatiguecost 400
+#schools -1
+
+#friendlyench 1
+#hiddenench 1
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name s "Arcane Ward"
+#descr s "An astral dome is created over the targeted province. The dome will protect the province from many spells that originate from outside the warded province. The dome lasts only slightly longer than a month. If the mage dies, the dome dissolves instantly."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection: 50%. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+#end
+
+
+#neweffect "Short Astral Dome"
+#copyspell "Murdering Winter"
+#fixeddurationenchantment 1
+#effect 10086
+#provrange 4
+#onlyfriendlydst 1
+
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#skipchance 50
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Short Astral Dome Nextspell"
+
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools 16
+
+#paths s
+#secondarypaths 0
+#secondarypathchance 0
+
+#unique 1
+
+#name s "Arcane Ward"
+#descr s "An astral dome is created over the targeted province. The dome will protect the province from many spells that originate from outside the warded province. The dome lasts only slightly longer than a month. If the mage dies, the dome dissolves instantly."
+#details "Has a 50% chance to apply to spells cast into the targeted province on the same turn it is cast, and a 100% chance to apply the following turn. Multiple copies of the same dome in a single province stack, but this spell can only be attempted once per province per turn.\n\nDome Protection: 50%. Friendly spells will also be blocked.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
+
+#spelltype 4
+
+#end
+
+
+
+

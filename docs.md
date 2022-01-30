@@ -434,6 +434,9 @@ Refer to the modmanual for details on these, unles otherwise noted.
  
 \#priority <int>
  * All naming and description commands after this line are at the given priority. Default priority is 0. Possible names are always considered from the highest priorities first - this is to allow modified spells such as touch range spells to always get their special names and descriptions if such a modifier is applied to them.
+ 
+\#fixeddurationenchantment 1
+ * \#copyspell Records of Creation also has this effect. Use this to make spells that create enchantments lasting a fixed number of turns (eg, 1) without offering the user the opportunity to add +1 turn for 1 gem/slave. Do this by splitting into two effects: the first, a dummy with this attribute set and effect 10082 and damage -1, and a nextspell with an enchantment creating effect. The duration of the resulting enchantment is then always (1 + <the difference in gem costs between the dummy and nextspell). Setting this attribute ensures that the cost difference (and therefore duration) is always preserved and not altered by cost scaling, modifiers, or secondary effects. For usage examples: see rituals/domes_singleturn.txt, rituals/createadventuresite.txt, rituals/extrawalldefenders.txt.
 
 ## Modifiers
 
