@@ -1,7 +1,7 @@
 from Enums.PathFlags import PathFlags
 from Enums.SpellTypes import SpellTypes
 from Services.utils import unitmods, eventsets, spelleffects
-from Services import utils
+from Services import utils, DebugLogger
 from Enums.DebugKeys import debugkeys
 from fileparser import unitinbasedatafinder
 from Entities.spell import Spell
@@ -86,22 +86,32 @@ class SpellSecondaryEffect(object):
     def _compatibility(self, eff, modifier, researchlevel):
         # Skipchance is done by the main processing loop now
         # it makes determining if there are legal modifiers for a spell a LOT better
+        DebugLogger.debuglog(f"Begin secondary compatibility for {self.name} and {eff.name} "
+                             f"with mod {modifier.name} at RL {researchlevel}", debugkeys.SECONDARYEFFECTCOMPATIBILITY)
 
         # see if the event list allows this unitmod
         # if yes then we need to be allowed, ignoring all the other reqs
         if eff.eventset is not None:
             realeventset = eventsets[eff.eventset]
             if self.unitmod in realeventset.allowedunitmods:
+                DebugLogger.debuglog(f"Secondary is valid: allowed unit mod for eventset",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return True
             if realeventset.unitmodlist is not None:
                 unitmodlist = utils.unitmodlists[realeventset.unitmodlist]
                 if self.unitmod in unitmodlist:
+                    DebugLogger.debuglog(f"Secondary is valid: this unitmod is in unitmodlist for eventset",
+                                         debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return True
 
         if self.nextspell != "" and eff.noadditionalnextspells > 0:
+            DebugLogger.debuglog(f"Secondary is invalid: this effect does not allow nextspells",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         if self.requiredresearchlevel is not None and self.requiredresearchlevel != researchlevel:
+            DebugLogger.debuglog(f"Secondary is invalid: required research level is {self.requiredresearchlevel}",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         finalpower = researchlevel + self.power + modifier.power
@@ -115,8 +125,13 @@ class SpellSecondaryEffect(object):
                     if self.unitmod != "":
                         unitmod = unitmods[self.unitmod]
                         if unitmod.weaponmod != "":
+                            DebugLogger.debuglog(
+                                f"Secondary is invalid: no weapon mods allowed on permanent summon commanders",
+                                debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                             return False
             else:
+                DebugLogger.debuglog(f"Secondary is invalid: secondary requires summon, but this spell effect is not",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
             # Calculate what final power this should be, accounting for magic value and chassis value mismatches
             # This is so squishy human mages don't get pushed up to really high research for simple modifications
@@ -127,6 +142,8 @@ class SpellSecondaryEffect(object):
 
 
         if eff.isnextspell and self.name != "Do Nothing":
+            DebugLogger.debuglog(f"Secondary is invalid: this is a nextspell, and nextspells are only allowed Do Nothing",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         # do not give nextspells secondary effects as they don't respect the path requirements the way the main spell does
@@ -138,29 +155,41 @@ class SpellSecondaryEffect(object):
                 okay = True
                 break
         if not okay:
+            DebugLogger.debuglog(f"Secondary is invalid: effect paths {eff.paths} do not contain required paths {self.paths}",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         if self.nobattlefield:
             if 660 <= eff.aoe <= 670:
+                DebugLogger.debuglog(f"Secondary is invalid: not allowed on battlefield wide effects",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         for flag in utils.breakdownflagcomponents(self.spelltype):
             if not (eff.spelltype & flag):
+                DebugLogger.debuglog(f"Secondary is invalid: effect's spelltype missing flag {flag}",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         # Check #reqs
         for r in self.reqs:
             if not r.test(eff):
+                DebugLogger.debuglog(f"Secondary is invalid: failed req {str(r)}",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         # Make sure that various things cannot be pushed out of range
         finalrange = self.range + modifier.range + (eff.range % 1000)
         if finalrange < 0:
+            DebugLogger.debuglog(f"Secondary is invalid: final range would be negative",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         cast = (100 if eff.casttime is None else eff.casttime) + modifier.casttime
         finalcast = self.casttime + cast
         if finalcast < 5:
+            DebugLogger.debuglog(f"Secondary is invalid: final cast time would be {finalcast} (<5% cast time)",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
 
@@ -168,31 +197,45 @@ class SpellSecondaryEffect(object):
         # do nothing should also always be allowed
         if not eff.isnextspell and self.name != "Do Nothing":
             if finalpower < max(0, eff.power) and eff.paths != 256:
+                DebugLogger.debuglog(f"Secondary is invalid: final power level of {finalpower} below effect minimum of {eff.power}",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
             if finalpower > eff.maxpower and eff.paths != 256:
+                DebugLogger.debuglog(f"Secondary is invalid: final powerlevel {finalpower} above effect max of {eff.maxpower}",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         finalnreff = self.nreff + modifier.nreff + (eff.nreff % 1000)
         if finalnreff <= 0:
+            DebugLogger.debuglog(f"Secondary is invalid: final number of effects {finalnreff} must be positive",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         finalaoe = self.aoe + modifier.aoe + (eff.aoe % 1000) + (eff.aoe // 1000)*eff.pathlevel
         if finalaoe < 0:
+            DebugLogger.debuglog(f"Secondary is invalid: final aoe {finalaoe} must not be negative",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         finalbounces = self.maxbounces + eff.maxbounces + modifier.maxbounces
         if finalbounces < 0:
+            DebugLogger.debuglog(f"Secondary is invalid: final maxbounces {finalbounces} must not be negative",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         finalpathlevel = self.pathlevel + eff.pathlevel + modifier.pathlevel
         # skip for holy
         if eff.paths != 256:
             if finalpathlevel <= 0 and eff.pathlevel > 0:
+                DebugLogger.debuglog(f"Secondary is invalid: finalpathlevel {finalpathlevel} not positive",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         if self.unitmod != "":
             umod = unitmods[self.unitmod]
             if not umod.compatibilityWithSpellEffect(eff):
+                DebugLogger.debuglog(f"Secondary is invalid: unitmod incompatible with effect",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         extraresearch = researchlevel - finalpower
@@ -217,14 +260,22 @@ class SpellSecondaryEffect(object):
             print(f"scalingaoelimit: {scalingaoelimit} at rl{researchlevel} has maxbaseaoe {maxbaseaoe}, "
                   f"spell has {finalaoe}, scaleamt was {scaleamt}")
             if finalaoe > maxbaseaoe:
+                DebugLogger.debuglog(f"Secondary is invalid: failed scalingaoelimit",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
         if self.reqdamagingeffect is not None:
             if self.reqdamagingeffect:
                 if eff.effect % 1000 not in utils.DAMAGING_EFFECTS:
+                    DebugLogger.debuglog(
+                        f"Secondary is invalid: spell effect is not damaging",
+                        debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
             else:
                 if eff.effect % 1000 in utils.DAMAGING_EFFECTS:
+                    DebugLogger.debuglog(
+                        f"Secondary is invalid: spell effect is damaging",
+                        debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
 
         if self.ondamage:
@@ -235,14 +286,23 @@ class SpellSecondaryEffect(object):
                 if isinstance(curr, str):
                     curr = spelleffects[curr]
                 if curr.spec & 0x1000000000000000:
+                    DebugLogger.debuglog(
+                        f"Secondary is invalid: this spell already has an ondamage effect",
+                        debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
                 if curr.effect > 1000:
+                    DebugLogger.debuglog(
+                        f"Secondary is invalid: ondamage effect not compatible with lingering spell effect",
+                        debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
                 if curr.nextspell is not None and curr.nextspell != "":
                     curr = curr.nextspell
                     continue
                 # this does currently not work on chain lightning effects (134)
                 if curr.effect % 1000 not in utils.DAMAGING_EFFECTS or curr.effect % 1000 == 134:
+                    DebugLogger.debuglog(
+                        f"Secondary is invalid: is ondamage secondary, spell effect chain lightning or nondamaging",
+                        debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
                 break
 
@@ -282,8 +342,12 @@ class SpellSecondaryEffect(object):
             else:
                 finalaoe = eff.aoe
             if finalaoe < self.minfinalaoe:
+                DebugLogger.debuglog(f"Secondary is invalid: finalaoe {finalaoe} below specified min of {self.minfinalaoe}",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
+        DebugLogger.debuglog(f"Secondary is valid!",
+                             debugkeys.SECONDARYEFFECTCOMPATIBILITY)
         return True
     def apply(self, spelleffect, s, mod, **options):
         "Return True on success, False on failure"

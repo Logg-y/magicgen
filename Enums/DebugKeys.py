@@ -11,3 +11,6 @@ class debugkeys:
 
     # Used for debugging #minfinalfatiguecost and #maxfinalfatiguecost
     FATIGUECOSTCONSTRAINTS = False
+
+    # Used for debugging secondary effect compatibility
+    SECONDARYEFFECTCOMPATIBILITY = False

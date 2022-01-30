@@ -7,4 +7,4 @@ def debuglog(line, *debugareas):
     for i in debugareas:
         dolog |= i
     if dolog:
-        print(line)
+        print(line.strip())

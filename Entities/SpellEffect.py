@@ -898,7 +898,7 @@ class SpellEffect(object):
                             secondary = toconsider
                             break
                         else:
-                            print("Bad paths for forced secondary")
+                            print(f"Bad paths for forced secondary: {forcesecondaryeff}")
         else:
             secondary = utils.secondaries["Do Nothing"]
 
@@ -1133,6 +1133,9 @@ class SpellEffect(object):
         optionscopy = copy.copy(options)
         optionscopy["isnextspell"] = True
         optionscopy["allowskipchance"] = False
+        # Nextspells and extraspells can't necessarily get secondaries, trying to force them means they don't generate
+        if optionscopy.get("forcesecondaryeff") is not None:
+            optionscopy["forcesecondaryeff"] = None
         if self.nextspell != "":
             optionscopy["forcepath"] = s.path1
             optionscopy["blockmodifier"] = True
