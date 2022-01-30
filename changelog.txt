@@ -29,6 +29,7 @@ Added a MRN unresistable poison effect (acidify blood)
 Added ray visuals to instant chain lightning and overload
 Added short remote dome spells
 Added a death instant kill spell (but does not soul slay)
+Fixed national spells not correctly being nation restricted (thanks Moggers)
 
 v3.1.3
 
