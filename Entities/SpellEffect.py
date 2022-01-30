@@ -160,7 +160,7 @@ class SpellEffect(object):
             return None
         if not self._powerLevelIsValid(mod, secondary):
             return None
-        self._setSpellDefaultValues(s)
+        self._setSpellDefaultValues(s, **options)
         s.school = self._selectSpellSchool(**options)
 
         # Guard against infinites if blood is the only legal option and we aren't allowed it
