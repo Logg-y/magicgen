@@ -38,7 +38,7 @@
 
 #neweffect "Glass Dust"
 #effect 2
-#damage 5
+#damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 1
 #power 2
@@ -104,7 +104,7 @@
 
 #neweffect "Sharp Thorns"
 #effect 2
-#damage 5
+#damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 1
 #power 2
@@ -187,7 +187,7 @@
 
 #neweffect "Ice Dust"
 #effect 2
-#damage 4
+#damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 1
 #power 2

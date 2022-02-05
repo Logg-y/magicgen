@@ -1,0 +1,84 @@
+#neweffect "Wrack Damage Packet"
+#effect 109
+#damage 999
+#spec 8404992+4096
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 50
+#nreff 15
+#name 1 "Ravaging Spasm"
+#name 2 "Ravaging Spasm"
+#name 4 "Ravaging Spasm"
+#name 8 "Ravaging Spasm"
+#name 16 "Ravaging Spasm"
+#name 32 "Ravaging Spasm"
+#name 64 "Ravaging Spasm"
+#name 128 "Ravaging Spasm"
+#end
+
+#neweffect "Wrack Curse"
+#effect 11
+#damage 2
+#spec 8404992
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 50
+#nreff 1
+#name 1 "Ravaging Spasm"
+#name 2 "Ravaging Spasm"
+#name 4 "Ravaging Spasm"
+#name 8 "Ravaging Spasm"
+#name 16 "Ravaging Spasm"
+#name 32 "Ravaging Spasm"
+#name 64 "Ravaging Spasm"
+#name 128 "Ravaging Spasm"
+#nextspell "Wrack Damage Packet"
+#end
+
+#neweffect "Wrack Main"
+#effect 109
+#damage 999
+#spec 4096 + 16384 + 8388608 + 536870912 + 524288 + 1152921504606846976
+#schools 32
+#aispellmod -30
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.5
+-- #scalecost 1.1
+
+#aoe 0
+#power 4
+#maxpower 7
+#pathlevel 2
+#explspr 10225
+#sound 22
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths d
+#secondarypaths d
+
+#name d "NAMEPREFIX Cursed Ravaging"
+
+#descr d "The caster fills the bodies of SUBJECT with dark power. Those that fail to resist become cursed for the rest of their lives, and suffer wracking spasms with a high chance of suffering permanent ailments."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX ravaging touch"
+
+#nextspell "Wrack Curse"
+
+#end
+

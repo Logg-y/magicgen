@@ -92,7 +92,7 @@
 
 #mult hp 0.4551
 #req hp > 3
-#str -8
+#str -6
 #req str > 6
 #def 2
 #mapmove -4
@@ -109,8 +109,8 @@
 
 #mult hp 0.269
 #req hp > 6
-#str -11
-#req str > 11
+#str -9
+#req str > 9
 #def 3
 #mapmove -4
 #req mapmove > 6
@@ -126,8 +126,8 @@
 
 #mult hp 0.15
 #req hp > 10
-#str -14
-#req str > 14
+#str -12
+#req str > 12
 #def 4
 #mapmove -6
 #req mapmove > 6

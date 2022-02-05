@@ -92,7 +92,7 @@
 #neweffect "Smite Nature Additional Poison"
 #effect 7
 #damage 20
-#spec 16544+8388608+8192
+#spec 16512+8388608+8192
 #range 5020
 #power 0
 #maxpower 0

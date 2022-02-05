@@ -71,6 +71,9 @@
 
 #givecloudsfx 1
 
+-- not twist fate, going to need a special one for that
+#req damage != 1
+
 #req effect != 2
 #req effect != 3
 #req effect != 103

@@ -2,7 +2,7 @@
 #effect 1
 #damage 3232
 #spec 8388608
-#power 3
+#power 5
 #maxpower 11
 #precision -2
 #nreff 3
@@ -33,9 +33,9 @@
 #spec 8388608
 #power 3
 #maxpower 7
-#nreff 3
+#nreff 1
 #pathlevel 2
-#fatiguecost 520
+#fatiguecost 320
 #schools 8
 
 #skipchance 60
@@ -49,7 +49,7 @@
 
 #scalerate 2
 
-#scalefatiguemult 18
+#scalefatiguemult 35.0
 #scalefatigueexponent -1.6
 #pathperresearch 0.4
 #end
@@ -104,6 +104,8 @@
 #scalerate 2.0
 #scalefatiguemult 70
 #end
+
+
 
 
 

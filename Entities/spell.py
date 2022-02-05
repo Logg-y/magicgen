@@ -25,6 +25,7 @@ class Spell(object):
         self.fatiguecost = 0
         self.researchlevel = -1
         self.nextspell = ""
+        self.prevspell = None
         self.details = None
         self.name = "Unnamed"
         self.descr = ""

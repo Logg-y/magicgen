@@ -1,0 +1,39 @@
+#neweventset "Stealthy Creature Ambush Create Dummy"
+#minpowerlevel 4
+#maxpowerlevel 13
+
+
+#selectunitmod "Remote Assassination Hide Dummy"
+#desiredmontagsize 1
+#restrictunitstospellpaths 1
+
+#mincreaturepower 0
+#maxcreaturepower 1
+#makedummymonster 0
+
+-- Requires a submodule. This is because there are two custom creatures:
+-- 1) the dummy that hides in the province
+-- 2) the montag of creatures that attack commanders given the dummy is present
+#module "ASSASSINATION" "Stealthy Creature Ambush Assassination"
+
+#allowedunitmod "Remote Assassination Hide Dummy"
+
+#end
+
+#newevent
+#rarity 5
+#msg "##fulltargname## was suddenly attacked by a strange monster!"
+#nolog
+#req_commander 1
+ASSASSINATION
+#req_pop0ok
+#req_monster UNITID
+#end
+
+#newevent
+#rarity 5
+#msg "There are rumours of a strange magical creature attacking travellers. If not found and dealt with, it will inevitably attack those living in the province."
+#stealthcom UNITID
+#req_pop0ok
+#req_ench ENCHANTID
+#end

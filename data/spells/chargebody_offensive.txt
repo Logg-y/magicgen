@@ -25,7 +25,7 @@
 #damage 1
 #spec 1152921504606865536
 #aoe 0
-#power 2
+#power 0
 #nreff 1
 #precision 10
 #range 50
@@ -43,7 +43,7 @@
 #descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselvers and the next person to strike them."
 #details "Applies 10AN charged body on damage."
 
-#maxpower 6
+#maxpower 4
 
 #nextspell "10AN charge"
 

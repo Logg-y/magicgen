@@ -1,0 +1,147 @@
+#neweffect "Stealthy Creature Ambushing Nextspell"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 1000
+#schools -1
+#hiddenench 1
+
+#eventset "Stealthy Creature Ambush Create Dummy"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Direct Creature"
+#name 2 "Direct Creature"
+#name 4 "Direct Creature"
+#name 8 "Direct Creature"
+#name 16 "Direct Creature"
+#name 32 "Direct Creature"
+#name 64 "Direct Creature"
+#name 128 "Direct Creature"
+#end
+
+
+#neweffect "Stealthy Creature Ambushing"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#provrange 4
+#spec 8388608
+#power 4
+#maxpower 13
+#nreff 1
+#pathlevel 3
+#fatiguecost 1000
+#schools conj
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Stealthy Creature Ambushing Nextspell"
+
+-- ESDB
+#paths fawesdn
+#secondarypaths fawesdn
+#secondarypathchance 0
+
+#name 1 "Ambushes of Flames"
+#name 2 "Ambushes of Air"
+#name 4 "Ambushes of Water"
+#name 8 "Ambushes of Earth"
+#name 16 "Otherworldly Ambushes"
+#name 32 "Ambushes of Death"
+#name 64 "Ambushes of Gaia"
+#name 128 "Infernal Ambushes"
+#descr 1 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 2 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 4 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 8 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 16 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 32 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 64 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 128 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#details "Creates an independent SINGLERANDOMCREATURENAME commander in the targeted province. While it lives, one random non-independent non-sneaking commander in the targeted province will be assassinated by one of the creatures below. Multiple castings of this spell will produce multiple stealthed commanders, but only one attack can occur per turn regardless of how many are present."
+
+#spelltype 4
+#scalefatiguemult 50
+#scalefatigueexponent -1.65
+#scalerate 3
+#end
+
+
+
+
+#neweffect "Stealthy Creature Ambushing Nextspell Blood"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3000
+#schools -1
+#hiddenench 1
+
+#eventset "Stealthy Creature Ambush Create Dummy"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Direct Creature"
+#name 2 "Direct Creature"
+#name 4 "Direct Creature"
+#name 8 "Direct Creature"
+#name 16 "Direct Creature"
+#name 32 "Direct Creature"
+#name 64 "Direct Creature"
+#name 128 "Direct Creature"
+#end
+
+
+#neweffect "Stealthy Creature Ambushing Blood"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#provrange 4
+#spec 8388608
+#power 4
+#maxpower 13
+#nreff 1
+#pathlevel 3
+#fatiguecost 3000
+#schools conj
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Stealthy Creature Ambushing Nextspell Blood"
+
+-- ESDB
+#paths b
+#secondarypaths b
+#secondarypathchance 0
+
+#name 1 "Ambushes of Flames"
+#name 2 "Ambushes of Air"
+#name 4 "Ambushes of Water"
+#name 8 "Ambushes of Earth"
+#name 16 "Otherworldly Ambushes"
+#name 32 "Ambushes of Death"
+#name 64 "Ambushes of Gaia"
+#name 128 "Infernal Ambushes"
+#descr 1 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 2 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 4 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 8 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 16 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 32 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 64 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#descr 128 "The caster summons and directs a stealthy creature to a remote province of his choosing. Every month, one commander affiliated with any pretender gods will be ambushed by random magical creatures. This continues until the sneaking creature is found and killed."
+#details "Creates an independent SINGLERANDOMCREATURENAME commander in the targeted province. While it lives, one random non-independent non-sneaking commander in the targeted province will be assassinated by one of the creatures below. Multiple castings of this spell will produce multiple stealthed commanders, but only one attack can occur per turn regardless of how many are present."
+
+#spelltype 4
+#scalefatiguemult 130
+#scalefatigueexponent -1.75
+#scalerate 3
+#end
+

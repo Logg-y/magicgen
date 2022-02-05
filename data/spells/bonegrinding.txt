@@ -64,14 +64,14 @@
 
 #neweffect "Bone Breaking High Damage"
 #effect 2
-#damage 10
+#damage 6
 #spec 10485888
 #schools 2
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 3
+#scalerate 2
 -- #scalecost 0.6
 
 #aoe 1
@@ -97,7 +97,7 @@
 #namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
-#scalefatiguemult 15
+#scalefatiguemult 20.0
 #scalefatigueexponent -1.65
 #end
 
@@ -162,4 +162,5 @@
 #name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #end
+
 

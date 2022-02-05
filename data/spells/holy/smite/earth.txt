@@ -1,7 +1,7 @@
 
 #neweffect "Smite Earth Additional Grip"
 #effect 11
-#damage 268435456
+#damage 16384
 #spec 16544+8388608+70368744177664
 #range 5020
 #power 0

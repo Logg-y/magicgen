@@ -230,6 +230,12 @@ class EventSet(object):
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
                  + copy.copy(self.rawdata)
 
+        firstspell = spell
+        while True:
+            if firstspell.prevspell is None:
+                break
+            firstspell = firstspell.prevspell
+
         self.moduletailingcode = ""
 
         if len(self.effectnumberforunits) == 0:
@@ -405,7 +411,7 @@ class EventSet(object):
                 # the usual shallow copy + pop stuff is probably okay
                 picks = modulepicks[:]
                 random.shuffle(picks)
-                spelleffect.names[spell.path1] = []
+                #spelleffect.names[spell.path1] = []
                 try:
                     noun = random.choice(picks.pop(0).nouns)
                     print(f"Selected noun is {noun}")
@@ -480,7 +486,9 @@ class EventSet(object):
                             spelleffect.names[spell.path1] = [f"{verb} {noun}".strip()]
                     pass
                 # ONLY do this if modules were picked, other eventset spells set this normally
-                spelleffect.descriptions[spell.path1] = spell.descr
+                if spell.descr is not None and len(spell.descr.strip()) > 0:
+                    print(f"replace description of {spell.name} with {spell.descr}")
+                    spelleffect.descriptions[spell.path1] = spell.descr
 
         if numtogenerate > 1:
             result = montag.process(spell=spell, secondaryeffect=forcedsecondaryeffect)
@@ -503,10 +511,10 @@ class EventSet(object):
                 for line in result.weightingstring.split("\n"):
                     output = output + "--" + line + "\n"
                 output += "\n"
-                spell.details += "\n" + f"For details on the creatures and weightings of this spell, search " \
+                firstspell.details += "\n" + f"For details on the creatures and weightings of this spell, search " \
                                         f"the mod file for 'Montag#{result.montagid}'."
             else:
-                spell.details += "\n" + result.weightingstring
+                firstspell.details += "\n" + result.weightingstring
         elif numtogenerate == 1:
             # Only one creature - don't need montags
             output = output.replace("UNITID", str(self.lastunitid))
@@ -521,10 +529,8 @@ class EventSet(object):
             replmade = False
             for replacement, data in moduledata.items():
                 if replacement in output:
-                    print(output)
                     print(f"Latereplace made one replacement for module symbol {replacement} with length {len(data)}")
                     output = output.replace(replacement, data)
-                    print(output)
                     replmade = True
                     break
             if not replmade:
@@ -547,5 +553,4 @@ class EventSet(object):
 
 
         print(f"EventSet {self.name} returning {len(output)} bytes of content")
-        print(output)
         return output

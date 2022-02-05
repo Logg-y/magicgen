@@ -258,6 +258,12 @@ def _CanUseUnitAndSecondaryCombo(parentobj, unittouse, secondary, realunitmod, s
     return True
 
 def generateUnit(parentobj, numtogenerate, spell, secondaryeffect, actualpowerlvl):
+    # When dealing with nextspell chains, we need to update #details on the first one (the one the players see)
+    firstspell = spell
+    while True:
+        if firstspell.prevspell is None:
+            break
+        firstspell = firstspell.prevspell
     output = ""
     montag = MontagBuilder()
     montag.makedummymonster = parentobj.makedummymonster
@@ -385,7 +391,11 @@ def generateUnit(parentobj, numtogenerate, spell, secondaryeffect, actualpowerlv
                     parentobj.lastunitid = realunitmod.lastparentid
                     parentobj.lastunitname = realunitmod.lastunitname
                     if parentobj.usefixedunitid is None or parentobj.usefixedunitid < 0:
-                        spell.details += f"The creature for this spell is always a {realunitmod.lastunitname}."
+                        if "SINGLERANDOMCREATURENAME" in firstspell.details:
+                            firstspell.details = firstspell.details.replace("SINGLERANDOMCREATURENAME",
+                                                                            realunitmod.lastunitname, 1)
+                        else:
+                            firstspell.details += f"The creature for this spell is always a {realunitmod.lastunitname}."
 
                     generateokay = True
                 else:

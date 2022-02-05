@@ -1,0 +1,60 @@
+#neweffect "Roots of Wrath Entangle"
+#effect 11
+#damage 64
+#spec 8404992 + 1048576
+#schools -1
+#paths -1
+-- evo, scale aoe
+#spelltype 34
+#aoe 0
+#scalerate 0
+#power 0
+#maxpower 50
+#nreff 1
+#name 1 "Grasping Plants"
+#name 2 "Grasping Plants"
+#name 4 "Grasping Plants"
+#name 8 "Grasping Plants"
+#name 16 "Grasping Plants"
+#name 32 "Grasping Plants"
+#name 64 "Grasping Plants"
+#name 128 "Grasping Plants"
+#end
+
+
+#neweffect "Roots of Wrath"
+#nextspell "Roots of Wrath Entangle"
+#effect 2
+#damage 17
+#spec 10485824+549755813888+1048576+1152921504606846976
+#nreff 1
+
+#aoe 1
+#power 2
+#maxpower 7
+#pathlevel 2
+#explspr 10164
+#noadditionalnextspells 1
+#sound 31
+#fatiguecost 60
+#range 5010
+
+
+#paths n
+#secondarypaths n
+
+#name n "NAMEPREFIX Roots of Wrath"
+#descr n "The caster calls vines from the earth to attack and grasp at SUBJECT. Armour offers some protection from the vines, but this spell is quite ineffective against ethereal creatures."
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Touch of Grasping Roots"
+#maxpower 6
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 2
+#schools 4
+#scalefatiguemult 10
+#scalefatigueexponent -1.6
+#end
+
+

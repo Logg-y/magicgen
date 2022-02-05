@@ -48,6 +48,60 @@
 #scalefatigueexponent 1.3
 #end
 
+#neweffect "Twist Fate Cloud"
+#effect 4023
+#damage 1
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 1
+
+#aoe 1
+#power 3
+#maxpower 8
+#pathlevel 2
+#explspr 10046
+#sound 31
+#range 10
+#fatiguecost 10
+
+#skipchance 80
+
+#paths 144
+#secondarypaths 16
+
+#details "Twist fate: the next instance of damage is prevented."
+
+#namecond effectiveaoe < 1 16 "NAMEPREFIX twist fate"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX averted fate"
+#namecond effectiveaoe < 2 16 "NAMEPREFIX cheat fate"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX infernal protection"
+
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group twisted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group averted fate"
+#namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX group cheated fate"
+#namecond2 1 <= effectiveaoe < 666 128 "NAMEPREFIX group infernal protection"
+
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass twisted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass averted fate"
+#namecond effectiveaoe == 666 16 "NAMEPREFIX mass cheated fate"
+#namecond effectiveaoe == 666 128 "NAMEPREFIX mass infernal protection"
+
+#descr 16 "Alters the future fate of SUBJECT, protecting PRONOUN from a single strike."
+#descr 128 "$BLOOD_INTRO$, infernal creatures protect SUBJECT from a single strike."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of protection"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of protection"
+
+#scalefatigueexponent -1.2
+#scalefatiguemult 15
+#pathperresearch 0.3
+#end
+
 
 #neweffect "Twist Fate battlefield"
 #effect 23
@@ -160,6 +214,7 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of extended protection"
 
 #end
+
 
 
 

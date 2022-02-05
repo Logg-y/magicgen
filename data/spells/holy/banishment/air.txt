@@ -32,7 +32,7 @@
 
 #neweffect "Banishment Air Additional Fetters"
 #effect 11
-#damage 65536
+#damage 131072
 #spec 8405152
 #range 5020
 #power 0

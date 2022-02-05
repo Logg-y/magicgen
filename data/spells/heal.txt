@@ -222,7 +222,7 @@
 #namecond effect > 1000 f "NAMEPREFIX $mist$ of cauterisation"
 
 #maxpower 0
-#aispellmod 0
+#aispellmod -35
 #nextspell "Heal Fire Burning"
 #end
 

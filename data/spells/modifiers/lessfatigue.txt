@@ -15,7 +15,7 @@
 #req effect != 27
 #req fatiguecost < 150
 
-#mult fatiguecost 0.25
+#mult fatiguecost 0.4
 
 #maxfinalfatiguecost 100
 

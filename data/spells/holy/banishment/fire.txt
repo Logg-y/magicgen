@@ -138,8 +138,8 @@
 #paths -1
 #secondarypaths 0
 #secondarypathchance 0
-#name 256 "Ignition"
-#name 1 "Ignition"
+#name 256 "Shackles"
+#name 1 "Shackles"
 #spelltype 2
 #end
 

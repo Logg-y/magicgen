@@ -4,6 +4,19 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+
+v3.1.5
+
+Added a spell that makes a stealthy creature, producing assassination attempts in the province until it is patrolled out
+Offensive charge body -2 research levels
+Boulder Evo +2 research levels, base research 0 was not deliberate
+Twist fate no longer gets cloudified, created a separate cloud version with higher requirements
+Paralysis banishment is no longer fire flagged
+Poison smite is no longer fire flagged
+Bond of fire banish secondary effect is no longer named "ignition"
+Strength scaling for smaller units now scales the same way as enlargements (thanks Mergele for pointing this one out)
+Fixed command line default montag ID of 800 which would not work
+
 v3.1.4
 
 Fixed a bug that could cause generation to crash at any point where a valid secondary effect couldn't be found for a spell effect

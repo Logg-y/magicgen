@@ -43,7 +43,7 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 1
+#power 2
 #maxpower 14
 #scalerate 1
 #pathlevel 2
@@ -56,8 +56,8 @@
 #descrcond range < 10 e "The caster's touch releases scorching magma which crushes and burns those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma which crushes and burns those close to the caster."
 #nextspell "Magma Fire"
-#scalefatiguemult 4
-#scalefatigueexponent 1.3
+#scalefatiguemult 12
+#scalefatigueexponent -1.3
 #end
 
 
@@ -109,5 +109,6 @@
 #scalefatiguemult 4
 #scalefatigueexponent 1.2
 #end
+
 
 

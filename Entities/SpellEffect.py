@@ -200,7 +200,9 @@ class SpellEffect(object):
                 s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
 
         secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
-        self._generateNextspell(s, mod, secondary, secondarypower, **options)
+        ret = self._generateNextspell(s, mod, secondary, secondarypower, **options)
+        if ret is None:
+            return None
 
 
         # Assign cast time
@@ -965,6 +967,9 @@ class SpellEffect(object):
             s.copyspell = self.copyspell
         if self.casttime is not None:
             s.casttime = self.casttime
+        if options.get("prevspell", None) is not None:
+            s.prevspell = options.get("prevspell")
+
         # modifier fatigue cost is added later
         s.fatiguecost = self.fatiguecost
     def _selectSpellSchool(self, **options):
@@ -1133,6 +1138,7 @@ class SpellEffect(object):
         optionscopy = copy.copy(options)
         optionscopy["isnextspell"] = True
         optionscopy["allowskipchance"] = False
+        optionscopy["prevspell"] = s
         # Nextspells and extraspells can't necessarily get secondaries, trying to force them means they don't generate
         if optionscopy.get("forcesecondaryeff") is not None:
             optionscopy["forcesecondaryeff"] = None
@@ -1142,7 +1148,8 @@ class SpellEffect(object):
             optionscopy["researchlevel"] = self.researchlevel + mod.power + secondarypower
             s.nextspell = self.nextspell.rollSpell(**optionscopy)
             if s.nextspell is None:
-                raise ValueError(f"Failed to generate nextspell {self.nextspell.name}")
+                print(f"WARNING: Failed to generate nextspell {self.nextspell.name}")
+                return None
         # Extraspell = "hangers on", eg communion master always generates a corresponding communion slave
         if self.extraspell != "":
             extraspell = utils.spelleffects[self.extraspell]
@@ -1158,6 +1165,7 @@ class SpellEffect(object):
             else:
                 # Elemental royalty all come together, and should NOT mimic the paths of the parents
                 s.modcmdsbefore += extraspell.rollSpell(**optionscopy).output()
+        return 1
     def _splitSpellPathLevels(self, s):
         "Move some path1levels into path2levels for the given spell"
         # If we have an offpath, do offpath things
@@ -1299,6 +1307,7 @@ class SpellEffect(object):
 
         if len(moddescrs) > 0:
             s.descr += random.choice(moddescrs)
+        print(f"Final description for spell: {s.descr}")
     def formatDetails(self, s, mod, secondary):
         if s.effect == 10038:
             if s.nreff > 1000:

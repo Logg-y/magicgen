@@ -120,7 +120,7 @@
 
 #details "Grants +1 water magic."
 
-#descr 1 "The caster channels the power of water, allowing the casting of more powerful water magic." 
+#descr 4 "The caster channels the power of water, allowing the casting of more powerful water magic." 
 #descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos, allowing the casting of more powerful water spells."
 
 #priority 1
@@ -209,7 +209,7 @@
 
 #details "Grants +1 air magic during a storm."
 
-#descr 1 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present." 
+#descr 2 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present." 
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of stormbound power"

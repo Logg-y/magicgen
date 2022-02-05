@@ -35,10 +35,10 @@
 #damage 284
 #spec 0
 #power -1
-#maxpower 3
+#maxpower 2
 #nreff 5007
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 220
 #schools thaum
 
 #paths fs
@@ -117,4 +117,5 @@
 
 #scalerate 7
 #end
+
 

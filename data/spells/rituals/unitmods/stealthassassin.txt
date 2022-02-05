@@ -1,0 +1,12 @@
+#newunitmod "Remote Assassination Hide Dummy"
+#landok 1
+#stealthy 10
+#nameprefix "Ambushing"
+#incunrest 30
+-- The dummy mustn't change shape or the event won't see it any more
+#req secondshape <= 0
+#req shrinkhp <= 0
+#req landshape <= 0
+#req landdamage <= 0
+#descr "This particular CREATURE appears to be summoning magical creatures to terrorise the surrounding population and attack travelling forces. Eradicating it should stop further attacks."
+#end

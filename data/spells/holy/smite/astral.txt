@@ -66,7 +66,7 @@
 
 
 #neweffect "Smite Astral Additional Horrormark"
-#effect 602
+#effect 614
 #damage 261
 #spec 16544+8388608+131072
 #range 5020
@@ -124,7 +124,7 @@
 #name 128 "Claim Life"
 #name 128 "Bloody Death"
 #descr 256 "The priest utters a prayer most holy and a heathen is struck by a divine bolt, wounding and making them targets of otherworldly horrors."
-#details "Adds 3 horror marks."
+#details "Adds 15 horror marks."
 #nextspell "Smite Astral Additional Horrormark"
 #spelltype 2
 #end

@@ -1,0 +1,21 @@
+#neweventset "Stealthy Creature Ambush Assassination"
+#minpowerlevel 4
+#maxpowerlevel 13
+
+#modulegroup "Stealthy Creature Ambush Assassination"
+
+#selectunitmod "Land OK"
+#desiredmontagsize 10
+#restrictunitstospellpaths 1
+
+#effectnumberforunits 10050
+
+#mincreaturepower 0
+#maxcreaturepower 1
+#makedummymonster 0
+
+#unitmodlist "Assassination"
+
+#end
+
+#assassin UNITID

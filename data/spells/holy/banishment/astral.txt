@@ -2,7 +2,7 @@
 #neweffect "Banishment Astral Additional Paralysis"
 #effect 66
 #damage 8
-#spec 8405152
+#spec 8405120
 #range 5020
 #power 0
 #maxpower 0
