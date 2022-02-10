@@ -577,8 +577,8 @@ class SpellEffect(object):
             # magma child: 162
 
             # Mine:
-            myaiscore = 5 + (0.5 + (self.fatiguecost / 40)) * (spell.path1level + max(0, spell.path2level)) * 10 + ((2 + spell.researchlevel) * 10)
-            myaiscore += (spell.fatiguecost / 2)
+            myaiscore = 5 + (spell.path1level + max(0, spell.path2level)) * 15 + (spell.researchlevel * 15)
+            myaiscore *= (0.5 + (spell.fatiguecost/100))
             proportion = myaiscore/finalaiscore
             spell.multiplyAISpellMod(proportion)
             print(f"AI spell mod for summon: Illwinter base = {finalaiscore}, mine={myaiscore}: ratio={proportion}" \
