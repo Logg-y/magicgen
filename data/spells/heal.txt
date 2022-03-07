@@ -169,7 +169,7 @@
 #neweffect "Heal Fire Burning"
 #effect 11
 #damage 512
-#spec 549453952
+#spec 549453952+4096
 #schools -1
 -- buff
 #spelltype 1
@@ -222,7 +222,7 @@
 #namecond effect > 1000 f "NAMEPREFIX $mist$ of cauterisation"
 
 #maxpower 0
-#aispellmod -35
+#aispellmod -10
 #nextspell "Heal Fire Burning"
 #end
 

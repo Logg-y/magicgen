@@ -56,7 +56,7 @@
 
 #end
 
-#newsecondary "Summon Bile Breath"
+#newsecondary "Summon Bile Breath battle"
 #req siegepatrolchaff < 1
 
 #anysummon 1
@@ -64,11 +64,35 @@
 #paths 96
 #power 0
 
+#req effect < 10000
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.2
+#fatiguecostpereffect 30
+#mult fatiguecost 1.1
+
+#unitmod "Summon Bile Breath"
+#descr "The summoned %creature% %is% able to breathe poisonous bile onto %its% enemies."
+#details "Summoned creatures gain a natural ranged bile breath attack. It has range of (strength/2), inflicts 20 points of AN poison damage in an AoE of 3, and has 5 ammunition. The summoned creature gains +11 poison resistance, or +10 it it had none originally."
+
+#end
+
+#newsecondary "Summon Bile Breath ritual"
+#req siegepatrolchaff < 1
+
+#anysummon 1
+
+#paths 96
+#power 0
+
+#req effect > 10000
+#req effect != 10050
+
+-- not montag
+#req damage > 0
+#fatiguecostpereffect 60
+#mult fatiguecost 1.1
 
 #unitmod "Summon Bile Breath"
 #descr "The summoned %creature% %is% able to breathe poisonous bile onto %its% enemies."

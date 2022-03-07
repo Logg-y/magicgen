@@ -41,8 +41,10 @@
 #details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
 
 #priority 1
-#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
-#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of $fetters$"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.4
@@ -92,8 +94,10 @@
 #details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
 
 #priority 1
-#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
-#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of $fetters$"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.4
@@ -140,8 +144,10 @@
 #details "Each turn, units roll MR + DRN. If this is 21 or higher, they break free."
 
 #priority 1
-#namecond effect > 1000 16 "NAMEPREFIX $mist$ of $fetters$"
-#namecond range < 10 16 "NAMEPREFIX touch of imprisonment"
+#namecond effect > 1000 2 "NAMEPREFIX $mist$ of $fetters$"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of $fetters$"
+#namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
+#namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.4

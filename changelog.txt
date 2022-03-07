@@ -17,6 +17,9 @@ Bond of fire banish secondary effect is no longer named "ignition"
 Strength scaling for smaller units now scales the same way as enlargements (thanks Mergele for pointing this one out)
 Fixed command line default montag ID of 800 which would not work
 Changed battlesummon casting AI progression again, in an attempt to make higher level spells be cast more frequently than lower level ones
+Fixed short range and cloudified names for false fetters spells
+Cauterise wounds burning now MRN
+Bile breath summon modifier is now +40/80 fatigue for battle/ritual summons respectively
 
 v3.1.4
 

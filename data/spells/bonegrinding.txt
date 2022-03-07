@@ -34,7 +34,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 2.2
+#scalerate 2.0
 -- #scalecost 0.6
 
 #aoe 1
@@ -60,6 +60,8 @@
 #namecond range < 10 32 "NAMEPREFIX Bonebreak Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
+#scalefatiguemult 7
+#scalefatigueexponent 1.5
 #end
 
 #neweffect "Bone Breaking High Damage"
@@ -162,5 +164,6 @@
 #name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #end
+
 
 
