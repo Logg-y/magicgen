@@ -38,7 +38,7 @@
 #nextspell "Bleeding Secondary mrne"
 
 #descr "This spell is filled with a dark energy that may cause those affected to begin bleeding profusely."
-#details "Affected creatures make an easy MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
 
 #end
 
@@ -81,7 +81,7 @@
 #nextspell "Bleeding Secondary mrn"
 
 #descr "This spell is filled with a dark energy that may cause those affected to begin bleeding profusely."
-#details "Affected creatures make an MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist begin bleeding: Bleeding creatures suffer HP/20 damage per round, and gain 10 fatigue. The chance of bleeding stopping is (10 + regeneration percentage)% per turn, halved if underwater. Ethereal units will always stop bleeding without suffering any adverse effects."
 
 #end
 

@@ -20,20 +20,24 @@
 
 
 -- astral, blood
-#paths 144
+#paths sbf
 #secondarypaths 16
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Luck"
+#namecond effectiveaoe < 2 f "NAMEPREFIX Flame of Foresight"
 #namecond effectiveaoe < 2 128 "NAMEPREFIX Otherworldly Luck"
 
 #namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Fortune"
+#namecond2 2 <= effectiveaoe < 666 f "NAMEPREFIX Flames of Foresight"
 #namecond2 2 <= effectiveaoe < 666 128 "NAMEPREFIX Otherworldly Fortune"
 
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Battle Fortune"
+#namecond effectiveaoe == 666 f "NAMEPREFIX Mass Foresight"
 #namecond effectiveaoe == 666 128 "NAMEPREFIX Otherworldly Fortune"
 
 #details "Luck: 75% chance to negate fatal damage."
 
+#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 #descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 #descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 
@@ -42,6 +46,7 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of fortune"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of luck"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of fortune"
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of foresight"
 
 #end
 
@@ -69,7 +74,7 @@
 
 
 -- astral, blood
-#paths 144
+#paths fsb
 #secondarypaths 16
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Luck"
@@ -78,17 +83,19 @@
 #namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Fortune"
 #namecond2 2 <= effectiveaoe < 666 128 "NAMEPREFIX Otherworldly Fortune"
 
-#namecond effectiveaoe == 666 16 "NAMEPREFIX Battle Fortune"
 #namecond effectiveaoe == 666 128 "NAMEPREFIX Otherworldly Fortune"
+#namecond effectiveaoe == 666 f "NAMEPREFIX Mass Foresight"
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Will of the Fates"
 
 #details "Luck: 75% chance to negate fatal damage."
 
 #descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 #descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
+#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of luck"
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of foresight"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of fortune"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of luck"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of fortune"

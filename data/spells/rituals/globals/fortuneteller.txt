@@ -1,0 +1,26 @@
+#neweffect "Fortuneteller Global"
+#effect 10081
+#damage 17
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 7
+#fatiguecost 4500
+#schools 24
+#unique 1
+#paths 10
+#skipchance 0
+#secondarypaths 10
+#secondarypathchance 99
+#eventset "Fortuneteller Global"
+
+#name s "Misfortune Ward"
+#name b "Pact of Foresight"
+#descr s "This enchantment grants provincial rules foresight against unexpected disasters, uprisings, and other negative events. This only functions within the God's dominion, and its effect is more potent where dominion is strong."
+#descr b "$BLOOD_INTRO$, the caster grants provincial rules foresight against unexpected disasters, uprisings, and other negative events. This only functions within the God's dominion, and its effect is more potent where dominion is strong."
+#details "There is a 12% chance per point of dominion to produce fortune telling spirits in each friendly province. Spirits have a 100% chance to prevent normal random negative events in their province."
+
+#spelltype 4
+#scalerate 0
+#end

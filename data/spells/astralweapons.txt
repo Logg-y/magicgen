@@ -20,7 +20,7 @@
 
 
 -- ES
-#paths 24
+#paths esb
 #secondarypaths 16
 
 #namecond effectiveaoe == 1 8 "NAMEPREFIX Impossible Sharpness"
@@ -32,14 +32,18 @@
 #name 16 "NAMEPREFIX Astral Weapons"
 #name 16 "NAMEPREFIX Otherworldly Weapons"
 
+#name b "NAMEPREFIX Weapons of the Void"
+
 #details "All melee attacks from affected creatures inflict AN damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
 #descr 16 "The melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
+#descr 16 "$BLOOD_INTRO$, the caster causes the melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of impossible sharpness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of astral fire"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of void weaponry"
 
 
 #end
@@ -67,19 +71,22 @@
 
 
 -- erf
-#paths 24
+#paths esb
 #secondarypaths 16
 
 #name 8 "NAMEPREFIX Impossibly Sharpened Army"
 #name 16 "NAMEPREFIX Mass Astral Weapons"
+#name b "NAMEPREFIX Mass Weapons of the Void"
 
 #details "All melee attacks from affected creatures inflict AN damage, if they did not already."
 
 #descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
 #descr 16 "The melee weapons of SUBJECT become wrathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
+#descr b "$BLOOD_INTRO$, the caster causes the melee weapons of SUBJECT become wrathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of impossible sharpness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of astral fire"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of void weaponry"
 #end
 

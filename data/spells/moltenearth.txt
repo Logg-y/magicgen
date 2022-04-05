@@ -21,14 +21,14 @@
 -- ap, fire, not flying
 #spec 70368744177760
 -- evo
-#aoe 1
+#aoe 4
 #schools 4
 #range 40
 #precision 1
 #nextspell "Molten Earth Trap"
 #explspr 10194
 #sound 123
-#fatiguecost 30
+#fatiguecost 100
 
 #paths 1
 #secondarypaths 8
@@ -49,4 +49,51 @@
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX Touch of Molten Earth"
 #descrcond range < 10 1 "The caster's touch rapidly melts the earth over a SIZE area. Those entering the resulting lava pool will rapidly become  severely burned by the molten rock. Those in the area to begin with may become permanently trapped as the lava quickly hardens around them, killing them. It is however much more difficult to trap strong, agile, or ethereal beings this way. Creatures that can fly or float are completely unaffected by this spell."
+#scalefatiguemult 8
+#scalefatigueexponent -1.2
+#pathperresearch 0.3
 #end
+
+
+#neweffect "Molten Earth Gemless"
+#effect 2002
+#damage 5035
+
+-- ap, fire, not flying
+#spec 70368744177760
+-- evo
+#aoe 1
+#schools 4
+#range 40
+#precision 1
+#nextspell "Molten Earth Trap"
+#explspr 10194
+#sound 123
+#fatiguecost 15
+
+#paths 1
+#secondarypaths 8
+#secondarypathchance 10
+
+#name 1 "NAMEPREFIX Melt Earth"
+
+#descr 1 "The caster rapidly melts the earth over a SIZE area. Those entering the resulting lava pool will rapidly become  severely burned by the molten rock. Those in the area to begin with may become permanently trapped as the lava quickly hardens around them, killing them. It is however much more difficult to trap strong, agile, or ethereal beings this way. Creatures that can fly or float are completely unaffected by this spell."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 4
+#maxpower 16
+#scalerate 0.2
+#pathlevel 3
+
+#priority 1
+#namecond range < 10 1 "NAMEPREFIX Touch of Molten Earth"
+#descrcond range < 10 1 "The caster's touch rapidly melts the earth over a SIZE area. Those entering the resulting lava pool will rapidly become  severely burned by the molten rock. Those in the area to begin with may become permanently trapped as the lava quickly hardens around them, killing them. It is however much more difficult to trap strong, agile, or ethereal beings this way. Creatures that can fly or float are completely unaffected by this spell."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#end
+
+
+

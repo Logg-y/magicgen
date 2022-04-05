@@ -32,7 +32,7 @@
 #nextspell "Rust Secondary mrnh"
 
 #descr "The weapons and armour of those affected by this spell may suddenly become extremely rusty."
-#details "Affected creatures make a hard MR check. Failing this check causes their equipment to become rusted."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check causes their equipment to become rusted."
 
 #end
 

@@ -107,6 +107,8 @@ def scalingTool():
          sg.InputText("", k="-scalefatigueexponent-", size=(7, 1))],
         [sg.Text("scalefatiguemult: ", size=(15, 1)),
          sg.InputText("", k="-scalefatiguemult-", size=(7, 1))],
+        [sg.Text("fatigueperresearch: ", size=(15, 1)),
+         sg.InputText("", k="-fatigueperresearch-", size=(7, 1))]
     ]
 
     outputarea = []
@@ -122,7 +124,7 @@ def scalingTool():
     window = sg.Window(f"MagicGen Scaling Tool", layout)
 
     attribs_to_copy = ["aoe", "damage", "nreff", "effect", "maxbounces", "pathlevel", "fatiguecost",
-                       "scalerate", "power", "maxpower", "scalecost", "pathperresearch", "scalefatigueexponent", "scalefatiguemult"]
+                       "scalerate", "power", "maxpower", "scalecost", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "fatigueperresearch"]
     flags = {"aoe":32, "damage":64, "maxbounces":128, "effect":256, "nreff":16}
 
     lastflags = -1

@@ -34,6 +34,9 @@
 #namecond range < 10 32 "NAMEPREFIX Leeching Touch"
 
 
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.4
 #end
 
 #neweffect "Lifedrain aoe"
@@ -45,7 +48,7 @@
 
 #spelltype 42
 
-#scalerate 1
+#scalerate 0.4
 -- #scalecost 1.6
 
 #skipexplspr 1
@@ -57,7 +60,7 @@
 #maxpower 14
 #pathlevel 4
 #sound 18
-#fatiguecost 20
+#fatiguecost 10
 #precision 25
 #range 30
 
@@ -73,6 +76,9 @@
 
 
 
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 #neweffect "Lifedrain single target blood"
@@ -262,3 +268,4 @@
 
 
 #end
+

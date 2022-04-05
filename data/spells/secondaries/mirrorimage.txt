@@ -28,7 +28,7 @@
 #nextspell "Mirrorimage Secondary mrn"
 
 #descr "This spell may also create false displaced images of those it affects."
-#details "Affected creatures make an MR check. Those that fail to resist gain mirror images."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain mirror images."
 
 #end
 
@@ -62,5 +62,5 @@
 #nextspell "Mirrorimage Secondary mrnh"
 
 #descr "This spell may also create false displaced images of those it affects."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain mirror images."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain mirror images."
 #end

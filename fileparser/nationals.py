@@ -23,6 +23,7 @@ siteids = []
 monsterids: List[int] = []
 eventcodes = []
 montagids = []
+enchantids = []
 
 
 def _read_vanilla_unit_nation_map_file(path:str, nationalunits):
@@ -118,6 +119,7 @@ def read_mods(modstring):
     spellids = [1299]
     eventcodes = [-299]
     montagids = [1000]
+    enchantids = [500]
     for mod in mods:
         mod = mod.strip()
         if mod == "":
@@ -300,6 +302,12 @@ def read_mods(modstring):
                     currentnation = None
                     currentsite = None
                     currentunit = None
+
+                for enchCommand in ["req_noench", "req_ench", "req_myench", "req_friendlyench", "req_hostileench", "req_enchdom"]:
+                    m = re.match(f"#{enchCommand}\\W+(.*)")
+                    if m is not None:
+                        print(f"Found enchantment ID from event mod command: {line}")
+                        enchantids.append(int(m.groups()[0]))
 
                 m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:

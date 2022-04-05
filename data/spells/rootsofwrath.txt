@@ -29,14 +29,14 @@
 #spec 10485824+549755813888+1048576+1152921504606846976
 #nreff 1
 
-#aoe 1
+#aoe 1002
 #power 2
 #maxpower 7
 #pathlevel 2
 #explspr 10164
 #noadditionalnextspells 1
 #sound 31
-#fatiguecost 60
+#fatiguecost 100
 #range 5010
 
 
@@ -51,10 +51,51 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2
+#scalerate 1.5
 #schools 4
-#scalefatiguemult 10
+#scalefatiguemult 14.0
 #scalefatigueexponent -1.6
+#pathperresearch 0.4
 #end
+
+
+#neweffect "Roots of Wrath Gemless"
+#nextspell "Roots of Wrath Entangle"
+#effect 2
+#damage 17
+#spec 10485824+549755813888+1048576+1152921504606846976
+#nreff 1
+
+#aoe 1
+#power 2
+#maxpower 14
+#pathlevel 2
+#explspr 10164
+#noadditionalnextspells 1
+#sound 31
+#fatiguecost 5
+#range 5010
+
+
+#paths n
+#secondarypaths n
+
+#name n "NAMEPREFIX Grasping Roots"
+#descr n "The caster calls vines from the earth to attack and grasp at SUBJECT. Armour offers some protection from the vines, but this spell is quite ineffective against ethereal creatures."
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX Touch of Grasping Roots"
+#maxpower 14
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 0.12
+#schools 4
+#scalefatiguemult 0
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.3
+#end
+
+
 
 

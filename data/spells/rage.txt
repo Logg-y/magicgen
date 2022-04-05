@@ -20,18 +20,22 @@
 #precision 100
 #range 5015
 
-#paths 65
+#paths nfb
 #secondarypaths 65
 
 #namecond effectiveaoe <= 1 1 "NAMEPREFIX Rage"
 #namecond effectiveaoe <= 1 64 "NAMEPREFIX Rage"
+#namecond effectiveaoe <= 1 b "NAMEPREFIX Blood Rage"
 
 #namecond2 1 < effectiveaoe <= 5 1 "NAMEPREFIX Wave of Rage"
 #namecond2 1 < effectiveaoe <= 5 64 "NAMEPREFIX Wave of Rage"
+#namecond2 1 < effectiveaoe <= 5 b "NAMEPREFIX Wave of Infernal Rage"
 #namecond2 5 < effectiveaoe < 600 1 "NAMEPREFIX Angry Mob"
 #namecond2 5 < effectiveaoe < 600 64 "NAMEPREFIX Angry Mob"
+#namecond2 5 < effectiveaoe < 600 b "NAMEPREFIX Angry Mob"
 #namecond2 600 < effectiveaoe < 700 1 "NAMEPREFIX Mass Enrage"
 #namecond2 600 < effectiveaoe < 700 64 "NAMEPREFIX Mass Enrage"
+#namecond2 600 < effectiveaoe < 700 b "NAMEPREFIX Mass Enrage"
 
 #descr 1 "Heat makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
 #descr 64 "The caster makes SUBJECT angry. The affected %unit% may attack anything nearby, including friends."
@@ -39,6 +43,7 @@
 
 #priority 1
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of rage"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of rage"
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of rage"
 
 #scalefatigueexponent 1.4

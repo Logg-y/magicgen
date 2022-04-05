@@ -10,7 +10,7 @@
 #precision -5
 #range 5025
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 5
 #sound 31
 #paths e
 #secondarypaths 2
@@ -22,7 +22,7 @@
 #descr 8 "The caster creates a brief shower of large stones. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
-#scalerate 6
+#scalerate 2
 -- #scalecost 0.3
 #schools 4
 
@@ -30,8 +30,10 @@
 #namecond range < 10 4 "NAMEPREFIX touch of hailstones"
 #namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
 
-#scalefatigueexponent 0.6
+#scalefatigueexponent 0
 #nreff 20
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
 
 #neweffect "Rain Ice oneshot"
@@ -46,7 +48,7 @@
 #precision -5
 #range 5025
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 5
 #sound 31
 #paths w
 #secondarypaths 2
@@ -58,7 +60,7 @@
 #descr 8 "The caster creates a brief shower of large stones. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
-#scalerate 6
+#scalerate 2
 -- #scalecost 0.3
 #schools 4
 
@@ -66,8 +68,10 @@
 #namecond range < 10 4 "NAMEPREFIX touch of hailstones"
 #namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
 
-#scalefatigueexponent 0.6
+#scalefatigueexponent 0
 #nreff 20
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
 
 
@@ -163,3 +167,5 @@
 ---- #scalecost 0.3
 --#schools 4
 --#end
+
+

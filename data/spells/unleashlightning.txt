@@ -69,7 +69,7 @@
 #nreff 30
 #nextspell "Unleash Lightning Area Shock"
 #explspr 10241
-#fatiguecost 200
+#fatiguecost 300
 
 #paths a
 #secondarypaths a

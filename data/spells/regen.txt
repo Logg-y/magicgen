@@ -20,20 +20,25 @@
 #fatiguecost 20
 
 
-#paths 64
+#paths nb
 #secondarypaths 64
 
 #namecond effectiveaoe < 2 64 "NAMEPREFIX Regeneration"
+#namecond effectiveaoe < 2 b "NAMEPREFIX Troll Blood"
 #namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Regeneration"
+#namecond2 2 <= effectiveaoe < 600 b "NAMEPREFIX Gift of Troll Blood"
 
 #namecond2 600 <= effectiveaoe <= 666 64 "NAMEPREFIX Mass Regeneration"
+#namecond2 600 <= effectiveaoe <= 666 b "NAMEPREFIX Mass Regeneration"
 
 #details "Grants 10% regeneration."
 
 #descr 64 "Grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
+#descr b "$BLOOD_INTRO$, the caster grants SUBJECT the ability to regenerate wounds. They will also have less chance of gaining permanent afflictions."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of regeneration"
 
 #end
 
@@ -216,7 +221,7 @@
 #end
 
 
-#neweffect "Regen battlefield"
+#neweffect "Greater Regen battlefield"
 #effect 10
 #damage 32
 #spec 545275904

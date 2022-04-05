@@ -3,15 +3,54 @@
 #damage 5025
 #spec 4224
 #aoe 0
-#power 0
-#maxpower 15
+#power 3
+#maxpower 6
 #precision 2
 #scalefatigueexponent 1.0
 
-#nreff 2001
+#nreff 5010
 #range 5020
 #pathlevel 1
-#fatiguecost 30
+#fatiguecost 100
+#flightspr 10256
+#sound 29
+#aispellmod -40
+#skipchance 30
+
+#paths 64
+#secondarypaths 0
+
+#name 64 "NAMEPREFIX Fey Blast"
+#name 64 "NAMEPREFIX Fey Barrage"
+#descr 64 "The caster conjures a number of strange fey bolts and sends them flying towards his enemies. Those hit by the bolts will become fatigued if they fail to resist."
+
+#spelltype 18
+
+#scalerate 4
+-- #scalecost 0.15
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond effect > 1000 64 "NAMEPREFIX touch of exhaustion"
+#pathperresearch 0.3
+#end
+
+
+#neweffect "Fey Bolts Gemless"
+#effect 3
+#damage 5025
+#spec 4224
+#aoe 0
+#power 0
+#maxpower 15
+#precision 2
+#scalefatigueexponent 0
+
+#nreff 1
+#range 5020
+#pathlevel 1
+#fatiguecost 5
 #flightspr 10256
 #sound 29
 #aispellmod -40
@@ -22,16 +61,18 @@
 
 #name 64 "NAMEPREFIX Fey Bolts"
 #name 64 "NAMEPREFIX Fey Burst"
-#name 64 "NAMEPREFIX Fey Barrage"
 #descr 64 "The caster conjures a number of strange fey bolts and sends them flying towards his enemies. Those hit by the bolts will become fatigued if they fail to resist."
 
 #spelltype 18
 
-#scalerate 2
+#scalerate 1.3
 -- #scalecost 0.15
-#pathlevel 2
+#pathlevel 1
 #schools 4
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX touch of exhaustion"
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
+

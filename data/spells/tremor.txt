@@ -2,13 +2,13 @@
 #effect 128
 #damage 100
 #spec 70368745242752
-#aoe 1
+#aoe 0
 #power 0
-#maxpower 6
+#maxpower 9
 #precision 1
 #range 50
 #pathlevel 1
-#fatiguecost 20
+#fatiguecost 5
 #explspr 10189
 #scalefatigueexponent 0
 #sound 27
@@ -24,12 +24,14 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 2
+#scalerate 0.4
 #schools 4
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of tremors"
 #namecond range < 10 4 "NAMEPREFIX touch of tremors"
 
-#pathperresearch 0.4
+#pathperresearch 0.15
+#fatigueperresearch 0
 #end
+

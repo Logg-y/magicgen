@@ -4,13 +4,13 @@
 #effect 2
 #damage 2001
 #spec 138
-#aoe 2001
-#power 6
+#aoe 4
+#power 3
 #maxpower 14
 #precision 0
 #range 5025
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10065
 #sound 30
 #paths 4
@@ -22,11 +22,12 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 2
+#scalerate 1.2
 -- #scalecost 0.3
 #schools 4
 
 
 #priority 1
 #namecond range < 10 4 "NAMEPREFIX cleansing touch"
+#pathperresearch 0.4
 #end

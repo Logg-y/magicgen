@@ -30,7 +30,7 @@
 #nextspell "Falsefetters Secondary mrnh"
 
 #descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those affected."
-#details "Affected creatures make a hard MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
 
 #end
 
@@ -66,7 +66,7 @@
 #nextspell "Falsefetters Secondary mrn"
 
 #descr "This spell is imbued with strange energy that may form illusory $fetters$ around the legs of those affected."
-#details "Affected creatures make an MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist become trapped by false fetters: Each turn, they roll MR + DRN. If this is 21 or higher, they break free."
 
 #end
 

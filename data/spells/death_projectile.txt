@@ -2,24 +2,26 @@
 #effect 74
 #damage 1014
 #spec 9048192
-#aoe 1
+#aoe 4
 #power 3
 #maxpower 14
 #precision 1
 #range 5020
 #pathlevel 3
-#fatiguecost 30
+#fatiguecost 100
 #explspr 10143
 #flightspr 10080
 #sound 18
 
 -- #paths 4+32+64
-#paths 32
+#paths db
 #secondarypaths 32
 
-#name 32 "NAMEPREFIX Shadow %bolt%"
-#name 32 "NAMEPREFIX %bolt% of darkness"
+#name 32 "NAMEPREFIX Shadow blast"
+#name 32 "NAMEPREFIX blast of darkness"
+#name 128 "NAMEPREFIX Infernal Darkness"
 #descr 32 "Hurls ARTICLE deathly %bolt% at enemies. This passes through any armor and strikes at the victims' life force directly, causing them to return as a soulless if killed."
+#descr 128 "$BLOOD_INTRO$, the caster hurls ARTICLE deathly %bolt% at enemies. This passes through any armor and strikes at the victims' life force directly, causing them to return as a soulless if killed."
 
 #spelltype 34
 
@@ -28,6 +30,54 @@
 #schools 4
 
 #priority 1
-#namecond range < 10 32 "NAMEPREFIX touch of shadow" 
+#namecond range < 10 32 "NAMEPREFIX touch of shadow"
+#namecond range < 10 b "NAMEPREFIX touch of shadow"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
+#descrcond range < 10 b "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
+
+
+#neweffect "Death Projectile Gemless"
+#effect 74
+#damage 1014
+#spec 9048192
+#aoe 1
+#power 3
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 3
+#fatiguecost 5
+#explspr 10143
+#flightspr 10080
+#sound 18
+
+-- #paths 4+32+64
+#paths db
+#secondarypaths 32
+
+#name 32 "NAMEPREFIX Shadow %bolt%"
+#name 32 "NAMEPREFIX %bolt% of darkness"
+#name 128 "NAMEPREFIX Infernal Blackness"
+#descr 32 "Hurls ARTICLE deathly %bolt% at enemies. This passes through any armor and strikes at the victims' life force directly, causing them to return as a soulless if killed."
+#descr b "Hurls ARTICLE deathly %bolt% at enemies. This passes through any armor and strikes at the victims' life force directly, causing them to return as a soulless if killed."
+
+#spelltype 34
+
+#scalerate 0.2
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX touch of shadow"
+#namecond range < 10 b "NAMEPREFIX touch of shadow"
+#descrcond range < 10 32 "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
+#descrcond range < 10 b "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
+#end
+
+

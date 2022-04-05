@@ -38,7 +38,7 @@
 
 #spelltype 66
 
-#scalerate 1
+#scalerate 2
 #scalefatigueexponent 0
 -- #scalecost 1.6
 #skipchance 50
@@ -48,7 +48,7 @@
 #maxpower 9
 #pathlevel 2
 #sound 18
-#fatiguecost 20
+#fatiguecost 10
 #precision 7
 #range 5025
 
@@ -69,4 +69,7 @@
 #namecond range < 10 64 "NAMEPREFIX Touch of Consumption"
 
 
+#fatigueperresearch 0
+#pathperresearch 0.4
 #end
+

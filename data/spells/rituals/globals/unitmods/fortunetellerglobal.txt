@@ -1,0 +1,12 @@
+#newunitmod "Fortuneteller Global"
+#landdamage 100
+#uwdamage 100
+#set fortuneteller 100
+#set mapmove 0
+#set homesick 100
+#set hp 1
+-- become mindless in case mind hunt somehow makes its way into magicgen
+#set morale 50
+#nameprefix "Foretelling"
+#descr "This particular spirit whispers in the ear of the provincial governor, informing them of disasters about to strike." 
+#end

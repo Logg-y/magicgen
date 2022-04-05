@@ -33,7 +33,7 @@
 #nextspell "Firebonds Secondary mrnh"
 
 #descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
-#details "Affected creatures make a hard MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
 #end
 
@@ -71,7 +71,7 @@
 #nextspell "Firebonds Secondary mrn"
 
 #descr "This spell is imbued with fiery energy that may form $fetters$ around the legs of those affected."
-#details "Affected creatures make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist are trapped in bonds of fire: Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
 #end
 

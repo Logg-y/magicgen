@@ -4,6 +4,14 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+enchant id detection
+nether evo
+petrify mrn + scaling
+slave of belphegor summons
+fortuneteller global
+rebirth enchantment
+flamebody
+
 
 v3.1.5
 
@@ -20,6 +28,19 @@ Changed battlesummon casting AI progression again, in an attempt to make higher 
 Fixed short range and cloudified names for false fetters spells
 Cauterise wounds burning now MRN
 Bile breath summon modifier is now +40/80 fatigue for battle/ritual summons respectively
+Summoned salamanders and black harpies reduced to 1 upkeep
+Disabled travel through fluid as it seems the freshwater terrain mask doesn't work for spells for some reason
+Added detection for enchantment IDs used by other mods to avoid conflicts
+Added damage reversal for other sorcery paths
+Many spell effects can now also show up as blood spells
+Split evocations/most directly damaging/killing/charming effects in two: gemless low fatigue spells, and gem powered high effect spells
+Added nether bolt spell effects
+Added slaves of Belphegor as possible blood summons
+Added a global that shields the caster from negative events
+Added rebirth enchantment
+Added fire path luck
+Added fire path etherealness
+
 
 v3.1.4
 

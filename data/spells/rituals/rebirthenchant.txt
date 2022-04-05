@@ -1,0 +1,25 @@
+#neweffect "Rebirth"
+#copyspell "Twiceborn"
+#effect 10023
+#damage 2199023255552
+#spec 814219264
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 2
+#fatiguecost 800
+#schools 16
+
+#paths ndb
+#secondarypaths 0
+#secondarypathchance 0
+
+#name n "Second Life"
+#name d "Cheat Death"
+#name b "Pact of Life"
+#descr d "With this ritual, the necromancer enchants his own body to protect himself from death. If the necromancer is slain, he returns from death in the province where the ritual was cast, possibly gaining dark insights in the process. For the ritual to work, the province it was cast in must be in friendly hands when the necromancer dies. This spell requires more power to affect large beings and the cost of casting the ritual is increased with the caster's size. Undead, demons, plants or inanimates cannot be affected by this spell."
+#descr n "With this ritual, the caster enchants his own body to protect himself from death. If he is slain, he returns from death in the province where the ritual was cast, possibly gaining dark insights in the process. For the ritual to work, the province it was cast in must be in friendly hands when the caster dies. This spell requires more power to affect large beings and the cost of casting the ritual is increased with the caster's size. Undead, demons, plants or inanimates cannot be affected by this spell."
+#descr b "$BLOOD_INTRO$, the caster purchases limited protection from death. If he is slain, he returns from death in the province where the ritual was cast, possibly gaining dark insights in the process. For the ritual to work, the province it was cast in must be in friendly hands when the caster dies. This spell requires more power to affect large beings and the cost of casting the ritual is increased with the caster's size. Undead, demons, plants or inanimates cannot be affected by this spell."
+#details "When the caster dies, he returns to life in his normal form at the location where the spell was cast. If the lab is not under the caster's control, he is unable to return and dies normally. There is a 20% chance of gaining +1 death magic, to a maximum of 4. Being killed by a soul slaying effect prevents this effect from working. Reforming one's body in this way may heal afflictions in the same manner as a recalled Pretender."
+#spelltype 4
+#end

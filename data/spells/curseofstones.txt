@@ -19,15 +19,17 @@
 #fatiguecost 10
 #range 5020
 
-#paths 8
+#paths eb
 #secondarypaths 8
 
 #namecond effectiveaoe < 660 8 "NAMEPREFIX Burden of Earth"
+#name b "NAMEPREFIX Infernal Burden"
 
 #namecond effectiveaoe >= 660 8 "NAMEPREFIX Curse of Stones"
 
 
 #descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
+#descr b "$BLOOD_INTRO$, the caster causes SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
 #details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #priority 1
@@ -60,15 +62,17 @@
 #fatiguecost 100
 #range 5020
 
-#paths 8
+#paths eb
 #secondarypaths 8
 
 #namecond effectiveaoe < 660 8 "NAMEPREFIX Burden of Earth"
 
+#name b "NAMEPREFIX Infernal Burden"
 #namecond effectiveaoe >= 660 8 "NAMEPREFIX Curse of Stones"
 
 
 #descr 8 "SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
+#descr b "$BLOOD_INTRO$, the caster causes SUBJECT %is% burdened with the weight of the earth. Unless resisted, those affected will become slower and rapidly fatigued from moving or fighting."
 #details "Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #priority 1

@@ -240,6 +240,8 @@ class SpellSecondaryEffect(object):
 
         extraresearch = researchlevel - finalpower
         actualpowerlvl = (researchlevel - eff.power) + self.power + modifier.power
+        if not eff.canGenerateAtPowerlvl(actualpowerlvl, modifier, self):
+            return False
 
         scaleamt = eff.scalerate * ((actualpowerlvl * (actualpowerlvl + 1)) / 2)
         if eff.spelltype & SpellTypes.POWER_SCALES_AOE:

@@ -7,16 +7,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.5
 -- #scalecost 1.6
 
-#aoe 0
-#power 2
-#maxpower 6
+#aoe 3
+#power 3
+#maxpower 7
 #pathlevel 2
 #explspr 10204
 #sound 41
-#fatiguecost 20
+#fatiguecost 100
 #precision 100
 #range 100
 
@@ -46,6 +46,59 @@
 #namecond range < 10 1 "NAMEPREFIX Mindburning Touch"
 #namecond range < 10 4 "NAMEPREFIX Mindfreezing Touch"
 
+#end
+
+#neweffect "Mind Burn Gemless"
+#effect 2
+#damage 1010
+#spec 8540288
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.3
+-- #scalecost 1.6
+
+#aoe 0
+#power 2
+#maxpower 14
+#pathlevel 2
+#explspr 10204
+#sound 41
+#fatiguecost 10
+#precision 100
+#range 100
+
+#paths 21
+#secondarypaths 16
+
+#pathskipchance 1 90
+#pathskipchance 4 90
+
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Mind Burn"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Mind Freeze"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Mind Burn"
+
+#namecond2 1 <= effectiveaoe < 25 16 "NAMEPREFIX Mental Blast"
+#namecond2 1 <= effectiveaoe < 25 1 "NAMEPREFIX Burn Minds"
+#namecond2 1 <= effectiveaoe < 25 4 "NAMEPREFIX Freeze Minds"
+#namecond2 26 <= effectiveaoe < 600 16 "NAMEPREFIX Wave of Agony"
+#namecond2 26 <= effectiveaoe < 600 1 "NAMEPREFIX Wave of Agony"
+#namecond2 26 <= effectiveaoe < 600 4 "NAMEPREFIX Wave of Agony"
+
+#descr 1 "The caster overloads the %mind% of SUBJECT with fiery power. Unless resisted, this results in severe pain."
+#descr 4 "The caster freezes the %mind% of SUBJECT. Unless resisted, this results in severe pain."
+#descr 16 "The caster overloads the %mind% of SUBJECT. Unless resisted, this results in severe pain."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Mindblasting Touch"
+#namecond range < 10 1 "NAMEPREFIX Mindburning Touch"
+#namecond range < 10 4 "NAMEPREFIX Mindfreezing Touch"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0
 #end
 
 
@@ -87,3 +140,5 @@
 #descr 1 "The caster attempts to burn the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 
 #end
+
+

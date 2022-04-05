@@ -35,7 +35,7 @@
 #nextspell "Curse of Stones Secondary mrnh"
 
 #descr "Those affected by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #end
 
@@ -76,7 +76,7 @@
 #nextspell "Curse of Stones Secondary mrn"
 
 #descr "Those affected by this spell may become burdened with the weight of the earth, becoming more easily fatigued."
-#details "Affected creatures make an MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain curse of stones: Combat speed reduced by -25%, causes d4 fatigue per square moved, encumbrance increased by +3. Flying creatures gain a closed 2d6 fatigue every time they fly."
 
 #end
 

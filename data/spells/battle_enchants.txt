@@ -45,11 +45,13 @@
 #fatiguecost 300
 #range 0
 
-#paths 64
+#paths nb
 #secondarypaths 0
 
 #name 64 "Howl"
+#name b "Scent of Blood"
 #descr 64 "The caster summons a pack of wolves to aid him in battle. The wolves will come from all directions and may even attack the enemy from behind."
+#descr b "$BLOOD_INTRO$, the caster calls upon packs of wolves to aid him in battle. The wolves will come from all directions and may even attack the enemy from behind."
 #details "Every 320 ticks (or 23.4375 times a round), there is a 1 in 12 chance that 1d3 wolves appear at the edge of the battlefield. If cast in forest or mountain terrain, 1d6 appear instead. These die rolls may explode."
 
 #ainocast 1
@@ -140,12 +142,14 @@
 #fatiguecost 400
 #range 0
 
-#paths 32
+#paths db
 #secondarypaths 32
-#secondarypathchance 0
+#secondarypathchance 80
 
 #name 32 "Darkness"
-#descr 32 "The battlefield is covered in a blanket of darkness that even render torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
+#name b "Infernal Darkness"
+#descr 32 "The battlefield is covered in a blanket of darkness that even renders torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
+#descr b "$BLOOD_INTRO$$, the battlefield is covered in a blanket of darkness that even renders torches useless. Most ordinary beings will stumble and have great difficulty fighting or shooting in the darkness. The darkness ends if the caster dies."
 #details "Applies darkness penalties of 6 to attack skill, defence skill, and precision. This does not affect demons, blind beings, those with spirit sight or perfect darkvision. Partial darkvision reduces the penalties. Disables sun awe."
 
 #ainocast 1
@@ -366,12 +370,14 @@
 #fatiguecost 300
 #range 0
 
-#paths 1
+#paths fb
 #secondarypaths 1
 #secondarypathchance 0
 
 #name 1 "Fire Storm"
+#name b "Infernal Storm"
 #descr 1 "A massive storm of fire is unleashed on the battlefield. Everyone on the battlefield will be burned to cinders within minutes. The storm lasts for the duration of the battle or until the fire mage dies."
+#descr b "$BLOOD_INTRO$, a massive storm of fire is unleashed on the battlefield. Everyone on the battlefield will be burned to cinders within minutes. The storm lasts for the duration of the battle or until the fire mage dies."
 #details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck for 6 AP fire damage."
 #ainocast 1
 #end
@@ -577,12 +583,14 @@
 #fatiguecost 200
 #range 0
 
-#paths 4
+#paths wb
 #secondarypaths 4
 #secondarypathchance 0
 
 #name 4 "Grip of Winter"
+#name b "Grip of Kokytos"
 #descr 4 "The entire battlefield is harrowed by enormous cold. This cold quickly renders all units on the battlefield unconscious, after which death is certain. The Grip of Winter is most effective in cold provinces."
+#descr b "$BLOOD_INTRO$, the entire battlefield is harrowed by enormous cold. This cold quickly renders all units on the battlefield unconscious, after which death is certain. The Grip of Winter is most effective in cold provinces."
 #details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. The presence of a snow storm (either natural, or through the spell Storm in cold scales) adds 2 to the damage. Does nothing if Heat from Hell is active."
 #ainocast 1
 #end
@@ -608,12 +616,14 @@
 #fatiguecost 200
 #range 0
 
-#paths 1
+#paths fb
 #secondarypaths 1
 #secondarypathchance 0
 
 #name 1 "Heat from Hell"
+#name b "Heat of Inferno"
 #descr 1 "The entire battlefield is struck by heat worse than that of the hottest of deserts. This heat soon renders all units on the battlefield unconscious, after which death is certain. This spell is most effective in warm provinces."
+#descr b "$BLOOD_INTRO$, the entire battlefield is struck by heat worse than that of the hottest of deserts. This heat soon renders all units on the battlefield unconscious, after which death is certain. This spell is most effective in warm provinces."
 #details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN fire fatigue damage. The damage dealt is 5 + Cold scale, -3 if it is raining, or -1 if it is snowing. Does nothing if Grip of Winter is active."
 #ainocast 1
 #end
@@ -818,11 +828,13 @@
 #fatiguecost 100
 #range 0
 
-#paths 64
+#paths nb
 #secondarypaths 64
-#secondarypathchance 0
+#secondarypathchance 10
 
 #name 64 "Growing Fury"
+#name b "Infernal Fury"
+#descr b "$BLOOD_INTRO$, the caster causes a growing fury to affect all friendly units on the battlefield. They will find themselves becoming more and more ferocious and will go berserk at the slightest provocation, even if they are not usually able to do so."
 #descr 64 "A growing fury will affect all friendly units on the battlefield. They will find themselves becoming more and more ferocious and will go berserk at the slightest provocation, even if they are not usually able to do so."
 #details "Affects all friendly units on the field every 320 ticks, or 23.4375 times a round. Units with a berserker value immediately go berserk, as do all those whose current hitpoints are lower than their maximum. Other units are 5% to go berserk each check. As with regular berserking, mindless, slave vessels, and most mounted units are unaffected."
 #ainocast 1

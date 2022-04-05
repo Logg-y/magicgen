@@ -26,7 +26,7 @@
 #nextspell "Airshield Secondary mrn"
 
 #descr "This spell may also make those it affects significantly harder to harm with ranged attacks."
-#details "Affected creatures make an MR check. Those that fail to resist gain 80% air shield."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain 80% air shield."
 
 #end
 
@@ -58,6 +58,6 @@
 #nextspell "Airshield Secondary mrnh"
 
 #descr "This spell may also make those it affects significantly harder to harm with ranged attacks."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain 80% air shield."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain 80% air shield."
 
 #end

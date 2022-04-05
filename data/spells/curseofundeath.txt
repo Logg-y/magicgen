@@ -84,13 +84,13 @@
 #effect 29
 #damage 999
 #spec 1152921505152913536
-#aoe 0
+#aoe 4
 #power 5
-#maxpower 8
+#maxpower 12
 #precision 100
 #range 5040
 #pathlevel 3
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10171
 #sound 22
 
@@ -105,13 +105,51 @@
 #nextspell "Curse of Undeath LaD"
 
 #spelltype 42
-#scalerate 1.49
+#scalerate 1.5
 #schools 32
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of undeath"
 #namecond range < 10 16 "NAMEPREFIX touch of undeath"
 
+#end
+
+
+#neweffect "Curse of Undeath Gemless"
+#effect 29
+#damage 999
+#spec 1152921505152913536
+#aoe 0
+#power 5
+#maxpower 14
+#precision 100
+#range 5040
+#pathlevel 3
+#fatiguecost 10
+#explspr 10171
+#sound 22
+
+#paths 32
+#secondarypaths 32
+#secondarypathchance 0
+
+#name 32 "NAMEPREFIX Curse of Undeath"
+#descr 32 "The caster attempts to transform SUBJECT into ARTICLE_N undead and bind PRONOUN to his service. Those who fail to resist the spell die, become soulless, and fight against their former allies. Inanimate beings or those that are already dead are unaffected by this spell."
+#details "Those failing a MR check become charmed, given Life after Death and killed, becoming fully healed and reinvigorated in the process. Any victims that survive the battle remain in their new undead state under the caster's control."
+
+#nextspell "Curse of Undeath LaD"
+
+#spelltype 42
+#scalerate 0.4
+#schools 32
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of undeath"
+#namecond range < 10 16 "NAMEPREFIX touch of undeath"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 
@@ -143,3 +181,4 @@
 #scalerate 1
 #schools 32
 #end
+

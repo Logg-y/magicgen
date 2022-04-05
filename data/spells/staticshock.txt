@@ -6,20 +6,20 @@
 
 #spelltype 18
 
-#scalerate 7
-#scalefatigueexponent 1.1
+#scalerate 3
+#scalefatigueexponent 0
 -- #scalecost 0.6
 
 #nreff 2004
 #aoe 0
 #power 0
-#maxpower 4
+#maxpower 6
 #pathlevel 1
 #pathperresearch 0.1
 #explspr 10108
 #precision 0
 #sound 27
-#fatiguecost 20
+#fatiguecost 5
 #range 5025
 
 #paths 2
@@ -33,4 +33,5 @@
 
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX touch of sparks"
+#fatigueperresearch 0
 #end

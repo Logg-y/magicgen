@@ -12,13 +12,13 @@
 #scalerate 1
 -- #scalecost 1.1
 
-#aoe 0
+#aoe 3
 #power 5
-#maxpower 8
+#maxpower 12
 #pathlevel 3
 #explspr 10206
 #sound 41
-#fatiguecost 20
+#fatiguecost 100
 #precision 100
 #range 100
 
@@ -34,6 +34,47 @@
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX soulslaying touch"
 
+#end
+
+#neweffect "Soul Slay Gemless"
+#copyspell "Soul Slay"
+#effect 2
+#damage 999
+#spec 8540416
+#schools 32
+#aispellmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.35
+-- #scalecost 1.1
+
+#aoe 0
+#power 5
+#maxpower 14
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 15
+#precision 100
+#range 100
+
+#paths 16
+#secondarypaths 16
+
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Soul Slay"
+
+#namecond2 1 <= effectiveaoe < 600 16 "NAMEPREFIX Soul Sundering"
+
+#descr 16 "The caster tries to rip the %soul% of SUBJECT from PRONOUN_POS %body%. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX soulslaying touch"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 #neweffect "Soul Detonation"
@@ -130,3 +171,6 @@
 #descr 16 "The caster attempts to rip the souls from all living creatures on the battlefield, including himself. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
 
 #end
+
+
+

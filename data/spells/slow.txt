@@ -18,26 +18,31 @@
 #fatiguecost 10
 #range 5015
 
-#paths 20
+#paths wsb
 #secondarypaths 4
 
 #namecond effectiveaoe < 660 4 "NAMEPREFIX Slow"
 #namecond effectiveaoe < 660 16 "NAMEPREFIX Slow"
+#namecond effectiveaoe < 660 b "NAMEPREFIX Slow"
 
 #namecond effectiveaoe == 665 4 "NAMEPREFIX Slowed Army"
 #namecond effectiveaoe == 665 16 "NAMEPREFIX Slowed Army"
+#namecond effectiveaoe == 665 b "NAMEPREFIX Slowed Army"
 
 #namecond effectiveaoe == 663 4 "NAMEPREFIX Slowed Army"
 #namecond effectiveaoe == 663 16 "NAMEPREFIX Slowed Army"
+#namecond effectiveaoe == 663 b "NAMEPREFIX Slowed Army"
 
 #details "Slowed 50%, Att -2, Def -2."
 
 #descr 4 "SUBJECT becomes slow if they fail to resist this spell's effects."
 #descr 16 "The caster attempts to slow the flow of time around SUBJECT. Creatures may resist this effect."
+#descr b "$BLOOD_INTRO$, the caster attempts to slow the flow of time around SUBJECT. Creatures may resist this effect."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of slowness"
 
 #scalefatigueexponent 1.5
 #maxpower 6

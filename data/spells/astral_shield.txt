@@ -20,20 +20,27 @@
 #fatiguecost 20
 
 
-#paths 16
+#paths sb
 #secondarypaths 16
+#secondarypathchance 90
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Astral Shield"
 
 #namecond2 2 <= effectiveaoe < 40 16 "NAMEPREFIX Group Astral Shield"
 #namecond2 40 <= effectiveaoe < 700 16 "NAMEPREFIX Mass Astral Shield"
+#namecond effectiveaoe < 2 b "NAMEPREFIX Void Shield"
+
+#namecond2 2 <= effectiveaoe < 40 b "NAMEPREFIX Group Void Shield"
+#namecond2 40 <= effectiveaoe < 700 b "NAMEPREFIX Mass Void Shield"
 
 #details "Melee attackers take 12 + astral mage level paralysis damage, reduced by weapon length. Magic resistance negates the effect."
 
 #descr 16 "Grants SUBJECT a shield of astral energy. Trying to attack in melee through the shield may apply paralysis to the attacker."
+#descr b "$BLOOD_INTRO$, the caster grants SUBJECT a shield of astral energy. Trying to attack in melee through the shield may apply paralysis to the attacker."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX astral $mist$"
+#namecond effect > 1000 b "NAMEPREFIX astral $mist$"
 
 #end
 
@@ -60,20 +67,24 @@
 #unique 1
 
 
-#paths 16
+#paths sb
 #secondarypaths 16
+#secondarypathchance 90
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Astral Shield"
 
 #namecond2 2 <= effectiveaoe < 20 16 "NAMEPREFIX Group Astral Shield"
 #namecond2 20 <= effectiveaoe < 700 16 "NAMEPREFIX Mass Astral Shield"
+#namecond2 20 <= effectiveaoe < 700 b "NAMEPREFIX Mass Void Shield"
 
 #details "Melee attackers take 12 + astral mage level paralysis damage, reduced by weapon length. Magic resistance negates the effect."
 
 #descr 16 "Grants SUBJECT a shield of astral energy. Trying to attack in melee through the shield may apply paralysis to the attacker."
+#descr 16 "$BLOOD_INTRO$$, the caster grants SUBJECT a shield of astral energy. Trying to attack in melee through the shield may apply paralysis to the attacker."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX astral $mist$"
+#namecond effect > 1000 b "NAMEPREFIX astral $mist$"
 
 #end
 

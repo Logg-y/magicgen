@@ -29,7 +29,7 @@
 #nextspell "planeshift inferno Secondary mrne"
 
 #descr "This spell may send those it affects to Inferno. This is a certain death for most mortal creatures."
-#details "Affected creatures must make an easy MR check or be sent to Inferno."
+#details "Creatures in the area when the spell is cast must make an easy MR check or be sent to Inferno."
 
 #skipchance 50
 
@@ -116,7 +116,7 @@
 #nextspell "planeshift kokytos Secondary mrne"
 
 #descr "This spell may send those it affects to Kokytos. This is a certain death for most mortal creatures."
-#details "Affected creatures must make an easy MR check or be sent to Kokytos."
+#details "Creatures in the area when the spell is cast must make an easy MR check or be sent to Kokytos."
 
 #skipchance 50
 
@@ -202,7 +202,7 @@
 #nextspell "planeshift void Secondary mrne"
 
 #descr "This spell may send those it affects to the Void. This is a certain death for most mortal creatures."
-#details "Affected creatures must make an easy MR check or be sent to the Void."
+#details "Creatures in the area when the spell is cast must make an easy MR check or be sent to the Void."
 
 
 #end

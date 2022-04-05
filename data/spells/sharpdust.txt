@@ -40,13 +40,49 @@
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
-#aoe 1
+#aoe 4
 #power 2
 #nreff 1
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
+#explspr 10229
+#sound 31
+
+
+#paths fe
+#secondarypaths fe
+
+#name f "NAMEPREFIX Burst of Glass"
+#name e "NAMEPREFIX Burst of Glass"
+#descr e "The caster melts tiny amounts of rock or sand into a hard glass-like substance, and launches them upwards on currents of heated air or water. The glass shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that glass may end up in victims' eyes."
+#descr f "The caster melts tiny amounts of rock or sand into a hard glass-like substance, and launches them upwards on currents of heated air or water. The glass shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that glass may end up in victims' eyes."
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Glass Shards"
+#namecond range < 10 e "NAMEPREFIX Touch of Glass Shards"
+#maxpower 8
+
+#nextspell "Glass Eyeloss"
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 1
+#schools alt
+#pathperresearch 0.4
+#end
+
+#neweffect "Glass Dust Gemless"
+#effect 2
+#damage 3
+#spec 128+16384+8388608+1152921504606846976+2097152
+#aoe 0
+#power 1
+#nreff 1
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 10
 #explspr 10229
 #sound 31
 
@@ -61,14 +97,17 @@
 #priority 1
 #namecond range < 10 f "NAMEPREFIX Touch of Glass Shards"
 #namecond range < 10 e "NAMEPREFIX Touch of Glass Shards"
-#maxpower 7
+#maxpower 14
 
 #nextspell "Glass Eyeloss"
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+#scalerate 0.15
 #schools alt
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
 #end
 
 #neweffect "Glass Dust Battlefield"
@@ -90,7 +129,7 @@
 #paths fe
 #secondarypaths fe
 
-#name fe "NAMEPREFIX Glass Dust"
+#name fe "NAMEPREFIX Glass Cascade"
 #descr fe "The caster melts tiny amounts of rock or sand into a hard glass-like substance, and launches them upwards across the battlefield on currents of heated air or water. The glass shards will lacerate the bodies of everyone in the battle, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that glass may end up in victims' eyes."
 
 #nextspell "Glass Eyeloss"
@@ -106,13 +145,48 @@
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
-#aoe 1
+#aoe 4
 #power 2
 #nreff 1
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
+#explspr 10336
+#sound 31
+
+
+#paths n
+#secondarypaths n
+
+#name n "NAMEPREFIX Burst of Thorns"
+#descr n "The caster fills the air with sharp thorns and allows them to fall upon the battlefield. The sharp thorns will lacerate the bodies of everyone caught under them, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that thorns may end up in victims' eyes."
+
+#priority 1
+#namecond range < 10 n "NAMEPREFIX Touch of Thorns"
+#maxpower 8
+
+#nextspell "Glass Eyeloss"
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 1
+#schools evo
+#pathperresearch 0.4
+#end
+
+
+#neweffect "Sharp Thorns Gemless"
+#effect 2
+#damage 3
+#spec 128+16384+8388608+1152921504606846976+2097152
+#aoe 0
+#power 1
+#nreff 1
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 10
 #explspr 10336
 #sound 31
 
@@ -125,14 +199,17 @@
 
 #priority 1
 #namecond range < 10 n "NAMEPREFIX Touch of Thorns"
-#maxpower 7
+#maxpower 14
 
 #nextspell "Glass Eyeloss"
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+#scalerate 0.15
 #schools evo
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
 #end
 
 #neweffect "Sharp Thorns Battlefield"
@@ -189,13 +266,13 @@
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
-#aoe 1
+#aoe 4
 #power 2
 #nreff 1
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10145
 #sound 31
 
@@ -207,16 +284,52 @@
 #descr w "The caster freezes water into thousands of tiny crystals that fall upon the battlefield. The icy shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that ice may end up in victims' eyes. Those that are not resistant will also be chilled by the sudden burst of cold."
 #priority 1
 #namecond range < 10 f "NAMEPREFIX Touch of Ice Shards"
-#maxpower 7
+#maxpower 8
 
 #nextspell "Ice Dust Chill"
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+#scalerate 1
 #schools evo
+#pathperresearch 0.4
 #end
 
+
+#neweffect "Ice Dust Gemless"
+#effect 2
+#damage 3
+#spec 128+16384+8388608+1152921504606846976+2097152
+#aoe 0
+#power 1
+#nreff 1
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 10
+#explspr 10145
+#sound 31
+
+
+#paths w
+#secondarypaths w
+
+#name w "NAMEPREFIX Ice Dust"
+#descr w "The caster freezes water into thousands of tiny crystals that fall upon the battlefield. The icy shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that ice may end up in victims' eyes. Those that are not resistant will also be chilled by the sudden burst of cold."
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Ice Shards"
+#maxpower 14
+
+#nextspell "Ice Dust Chill"
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 0.15
+#schools evo
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
+#end
 
 #neweffect "Ice Dust Battlefield"
 #effect 2
@@ -247,4 +360,11 @@
 #scalerate 2.2
 #schools evo
 #end
+
+
+
+
+
+
+
 

@@ -1,30 +1,73 @@
-#neweffect "Astral Torrent"
+#neweffect "Astral Torrent Gemless"
 #effect 2
 #damage 1010
 #spec 16512
 #aoe 0
+#power 4
+#maxpower 11
+#precision 25
+#range 30
+#pathlevel 4
+#fatiguecost 10
+#explspr 10322
+#sound 41
+#skipchance 30
+
+#paths sb
+#secondarypaths 16
+
+#name 16 "NAMEPREFIX Astral Torrent"
+#name b "NAMEPREFIX Void Torrent"
+#descr 16 "The caster brings a torrent of strange energy down upon SUBJECT. It requires a great deal of skill to be able to manipulate energy this way, but the damage caused by the energy cannot be resisted."
+#descr b "$BLOOD_INTRO$, the caster brings a torrent of strange energy down upon SUBJECT. It requires a great deal of skill to be able to manipulate energy this way, but the damage caused by the energy cannot be resisted."
+
+-- evo-like, scale aoe
+#spelltype 34
+#scalerate 0.2
+#schools 4
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Energy"
+#namecond range < 10 b "NAMEPREFIX Touch of Energy"
+#descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
+#descrcond range < 10 b "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
+#end
+
+#neweffect "Astral Torrent"
+#effect 2
+#damage 1010
+#spec 16512
+#aoe 2
 #power 5
 #maxpower 11
 #precision 25
 #range 30
 #pathlevel 4
-#fatiguecost 30
+#fatiguecost 100
 #explspr 10322
 #sound 41
 #skipchance 30
 
-#paths 16
+#paths sb
 #secondarypaths 16
 
 #name 16 "NAMEPREFIX Astral Torrent"
+#name b "NAMEPREFIX Void Torrent"
 #descr 16 "The caster brings a torrent of strange energy down upon SUBJECT. It requires a great deal of skill to be able to manipulate energy this way, but the damage caused by the energy cannot be resisted."
+#descr b "$BLOOD_INTRO$, caster brings a torrent of strange energy down upon SUBJECT. It requires a great deal of skill to be able to manipulate energy this way, but the damage caused by the energy cannot be resisted."
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
+#scalerate 1.05
 #schools 4
 
 #priority 1
-#namecond range < 10 16 "NAMEPREFIX Touch of Energy"
+#namecond range < 10 16 "NAMEPREFIX Touch of Irradiation"
+#namecond range < 10 b "NAMEPREFIX Touch of Irradiation"
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
+#descrcond range < 10 b "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #end
+

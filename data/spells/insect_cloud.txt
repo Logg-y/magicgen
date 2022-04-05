@@ -36,10 +36,13 @@
 
 #aispellmod 80
 
-#paths 64
-#secondarypaths 0
+#paths nb
+#secondarypaths n
+#secondarypathchance 60
 
+#name 128 "NAMEPREFIX Insect Cloud"
 #name 64 "NAMEPREFIX Insect Cloud"
+#descr b "$BLOOD_INTRO$, the caster summons a swarm of angry insects to a location on the battlefield. Those within will be rapidly stung by the insects, though heavy armour reduces the severity of this effect. Additionally, trying to concentrate on spellcasting within the insect swarm is virtually impossible."
 #descr 64 "The caster summons a swarm of angry insects to a location on the battlefield. Those within will be rapidly stung by the insects, though heavy armour reduces the severity of this effect. Additionally, trying to concentrate on spellcasting within the insect swarm is virtually impossible."
 #nextspell "Insect cloud disrupt casting"
 

@@ -19,7 +19,7 @@
 #range 5020
 #precision 3
 
-#paths 12
+#paths ewb
 #secondarypaths 8
 
 #namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
@@ -29,16 +29,23 @@
 #namecond effectiveaoe >= 20 4 "NAMEPREFIX Soften Landscape"
 #namecond effectiveaoe >= 20 8 "NAMEPREFIX Opening of the Earth"
 
+#namecond effectiveaoe == 0 b "NAMEPREFIX Soften Earth"
+#namecond effectiveaoe < 20 b "NAMEPREFIX Soften Land"
+#namecond effectiveaoe >= 20 b "NAMEPREFIX Opening of the Earth"
+
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
 #descr 4 "The earth is made muddy and soft over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
 #descr 8 "The earth is commanded to open up over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
+#descr b "$BLOOD_INTRO$, the caster commands the earth to open up over a SIZE area. This causes SUBJECT to fall into the ground and become unable to act."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of softened earth"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of entombing"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of entombing"
 #namecond range < 10 4 "NAMEPREFIX touch of soft earth"
 #namecond range < 10 8 "NAMEPREFIX touch of entombing"
+#namecond range < 10 b "NAMEPREFIX touch of entombing"
 
 #maxpower 6
 #scalefatigueexponent 1.4
@@ -65,16 +72,18 @@
 #range 5020
 #precision 3
 
-#paths 12
+#paths ewb
 #secondarypaths 8
 
 #name 4 "NAMEPREFIX Soften Landscape"
 #name 8 "NAMEPREFIX Opening of the Earth"
+#name b "NAMEPREFIX Opening of the Earth"
 
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
 #descr 8 "The entire battlefield opens up over a SIZE area. This causes all creatures on the battlefield to fall into the ground and become unable to act."
-#descr 4 "The entire battlefield is made muddy and soft over a SIZE area. This causes all creatures on the battlefield to fall into the ground and become unable to act."
+#descr 4 "The entire battlefield is made muddy and soft. This causes all creatures on the battlefield to fall into the ground and become unable to act."
+#descr b "$BLOOD_INTRO$, the caster makes the entire battlefield muddy and soft. This causes all creatures on the battlefield to fall into the ground and become unable to act."
 
 
 #maxpower 7
@@ -103,7 +112,7 @@
 #skipchance 70
 
 
-#paths 12
+#paths ewb
 #secondarypaths 8
 
 #namecond effectiveaoe == 0 4 "NAMEPREFIX Soften Earth"
@@ -112,11 +121,13 @@
 #namecond effectiveaoe < 20 8 "NAMEPREFIX Earth Meld"
 #namecond effectiveaoe >= 20 4 "NAMEPREFIX Entomb Foes"
 #namecond effectiveaoe >= 20 8 "NAMEPREFIX Entomb Foes"
+#namecond effectiveaoe >= 20 b "NAMEPREFIX Entomb Foes"
 
 #details "Earth meld: Strength+DRN vs 23 to break free."
 
 #descr 8 "The earth opens up beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
 #descr 4 "The earth rapidly softens beneath all of the caster's enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
+#descr b "$BLOOD_INTRO$, the caster causes the earth to rapidly soften beneath all of his enemies. This causes enemies caught by this spell to fall into the ground and become unable to act."
 
 
 

@@ -7,7 +7,45 @@
 
 #spelltype 18
 
-#scalerate 1.3
+#scalerate 1.51
+--#scalefatigueexponent -0.1
+-- #scalecost 0.6
+
+#nreff 7
+#aoe 0
+#power 3
+#precision 3
+#maxpower 8
+#pathlevel 2
+#flightspr 10068
+#sound 31
+#fatiguecost 100
+#range 5035
+
+#paths 16
+#secondarypaths 0
+#secondarypathchance 95
+
+#name 16 "NAMEPREFIX Arcane Blast"
+#descr 16 "The caster fires ARTICLE_N astral %bolt% that %is% deadly for magic beings, but harmless for most creatures."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Unraveling"
+#descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly for magic beings, but harmless for most creatures."
+#scalefatigueexponent 1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "Arcane Bolt Gemless"
+#copyspell "Arcane Bolt"
+#effect 2
+#damage 1008
+#spec 8388752
+#schools 4
+
+#spelltype 18
+
+#scalerate 0.2
 --#scalefatigueexponent -0.1
 -- #scalecost 0.6
 
@@ -15,11 +53,11 @@
 #aoe 0
 #power 1
 #precision 3
-#maxpower 8
+#maxpower 14
 #pathlevel 2
 #flightspr 10068
 #sound 31
-#fatiguecost 20
+#fatiguecost 5
 #range 5035
 
 #paths 16
@@ -30,6 +68,10 @@
 #descr 16 "The caster fires ARTICLE_N astral %bolt% that %is% deadly for magic beings, but harmless for most creatures."
 
 #priority 1
-#namecond range < 10 16 "NAMEPREFIX Touch of Unraveling"
+#namecond range < 10 16 "NAMEPREFIX Touch of Disenchantment"
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly for magic beings, but harmless for most creatures."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.25
 #end
+

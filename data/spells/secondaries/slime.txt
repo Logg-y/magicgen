@@ -34,7 +34,7 @@
 #nextspell "Slime Secondary mrnh"
 
 #descr "This spell is imbued with strange energy that may cover those affected in a sticky slime."
-#details "Affected creatures make a hard MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #end
 
@@ -74,7 +74,7 @@
 #nextspell "Slime Secondary mrn"
 
 #descr "This spell is imbued with strange energy that may cover those affected in a sticky slime."
-#details "Affected creatures make an MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check causes them to become slimed, havling their att/def/combat speed. Each turn, they roll MR + DRN. If this is 22 or higher, the slime effect ends."
 
 #end
 

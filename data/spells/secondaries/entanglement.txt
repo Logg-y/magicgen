@@ -38,7 +38,7 @@
 #nextspell "Entanglement Secondary mrnh"
 
 #descr "Those affected by this spell may become entangled in a sudden overgrowth of vines."
-#details "Affected creatures make a hard MR check. Those that fail to resist become entangled, becoming immobilised and unable to attack. Each turn they roll Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become entangled, becoming immobilised and unable to attack. Each turn they roll Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 
 #end
 
@@ -83,7 +83,7 @@
 
 
 #descr "Those affected by this spell may become entangled in a sudden overgrowth of vines."
-#details "Affected creatures make an MR check. Those that fail to resist become entangled, becoming immobilised and unable to attack. Each turn they roll Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist become entangled, becoming immobilised and unable to attack. Each turn they roll Str +DRN vs 19 to get free. The difficulty is increased or decreased by the Growth/Death scale of the province and is also increased by +1 in Forests and reduced by -1 in Wastelands."
 
 #end
 

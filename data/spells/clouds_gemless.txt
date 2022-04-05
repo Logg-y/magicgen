@@ -1,0 +1,237 @@
+#neweffect "Poison Cloud Gemless"
+#effect 3007
+#damage 1
+#spec 8396928
+#aoe 3
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10297
+#sound 42
+
+#aispellmod 150
+
+#paths nb
+#secondarypaths 64
+#secondarypathchance 80
+
+#name 64 "NAMEPREFIX $poisonous$ cloud"
+#name b "NAMEPREFIX $poisonous$ cloud"
+#descr 64 "Creates a cloud of $poisonous$ gas. Spending time within it will quickly prove fatal to most living creatures."
+#descr b "$BLOOD_INTRO$, the caster creates a cloud of $poisonous$ gas. Spending time within it will quickly prove fatal to most living creatures."
+
+#spelltype 34
+
+#scalerate 0.2
+-- #scalecost 2.0
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond effect > 4000 64 "Extended NAMEPREFIX $poisonous$ cloud"
+#namecond effect > 4000 b "Extended NAMEPREFIX $poisonous$ cloud"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#end
+
+#neweffect "Fire Cloud Gemless"
+#effect 3002
+#damage 1005
+#spec 96
+#aoe 2
+#power 2
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10162
+#sound 42
+
+#aispellmod 60
+
+#paths fb
+#secondarypaths 1
+#secondarypathchance 80
+
+#name 1 "NAMEPREFIX $flame$ cloud"
+#name b "NAMEPREFIX $flame$ cloud"
+#descr 1 "Creates a cloud of flammable gas and sets it alight. Creatures within it will be rapidly burned by the flames."
+#descr b "Creates a cloud of flammable gas and sets it alight. Creatures within it will be rapidly burned by the flames."
+
+#spelltype 34
+
+#scalerate 0.3
+-- #scalecost 1.7
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond effect > 4000 1 "Extended NAMEPREFIX $flame$ cloud"
+#namecond effect > 4000 b "Extended NAMEPREFIX $flame$ cloud"
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.4
+#end
+
+#neweffect "Freezing Cloud Gemless"
+#effect 4002
+#damage 1
+#spec 640
+#aoe 1001
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10056
+#sound 42
+
+#aispellmod 150
+
+#paths wb
+#secondarypaths aw
+#secondarypathchance 30
+
+#name 4 "NAMEPREFIX $freezing$ $mist$"
+#name b "NAMEPREFIX $mist$ of Kokytos"
+#descr 4 "Creates a cloud of icy mist. Creatures within will rapidly be harmed by the cold."
+#descr b "Creates a cloud of icy mist. Creatures within will rapidly be harmed by the cold."
+
+
+#spelltype 34
+
+#scalerate 0.15
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+
+#priority 1
+#namecond effect > 5000 4 "Extended NAMEPREFIX $freezing$ $mist$"
+#namecond effect > 5000 b "Extended NAMEPREFIX $mist$ of Kokytos"
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.4
+#end
+
+
+#neweffect "Flame Cloud AN Gemless"
+#effect 4002
+#damage 1
+#spec 160
+#aoe 1001
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10203
+#sound 42
+
+#aispellmod 150
+
+#paths fb
+#secondarypaths af
+#secondarypathchance 20
+
+#name 1 "NAMEPREFIX Scalding $mist$"
+#name b "NAMEPREFIX Scalding $mist$"
+#descr 1 "Creates a cloud of extremely hot air. Entering the cloud will burn victims in any exposed areas, such as in the eyes or inside their lungs."
+#descr b "$BLOOD_INTRO$, the caster creates a cloud of extremely hot air. Entering the cloud will burn victims in any exposed areas, such as in the eyes or inside their lungs."
+
+#spelltype 34
+
+#scalerate 1
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+
+#priority 1
+#namecond effect > 5000 1 "Extended NAMEPREFIX scalding $mist$"
+#namecond effect > 5000 b "Extended NAMEPREFIX scalding $mist$"
+#end
+
+
+#neweffect "Cloud of Death Gemless"
+#effect 4002
+#damage 1002
+#spec 528512
+#aoe 1002
+#power 5
+#precision -3
+#range 30
+#fatiguecost 30
+#explspr 10160
+#sound 23
+
+#aispellmod 150
+
+#paths 32
+#secondarypaths 0
+
+#name 32 "NAMEPREFIX $mist$ of Death"
+#descr 32 "A deadly grey cloud will form upon the battlefield. Anyone standing in the cloud will wither and die unless able to leave it. The cloud will remain on the battlefield for some time before dissolving."
+
+#spelltype 34
+
+#scalerate 0.27
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+#priority 1
+#namecond effect > 5000 32 "Extended NAMEPREFIX $mist$ of Death"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.4
+#end
+
+
+#neweffect "Shock Cloud Gemless"
+#effect 4109
+#damage 1
+#spec 2048+128
+#aoe 1001
+#power 3
+#precision -1
+#range 5015
+#fatiguecost 30
+#explspr 10048
+#sound 42
+
+#aispellmod 80
+
+#paths ab
+#secondarypaths a
+#secondarypathchance 30
+
+#name a "NAMEPREFIX static cloud"
+#name b "NAMEPREFIX static cloud"
+#descr a "The caster charges the air with static electricity. Creatures within it will be rapidly jolted by electrical discharges."
+#descr b "$BLOOD_INTRO$, the caster charges the air with static electricity. Creatures within it will be rapidly jolted by electrical discharges."
+
+
+#spelltype 34
+
+#scalerate 0.2
+-- #scalecost 1.7
+#pathlevel 3
+#schools 4
+
+#priority 1
+#namecond effect > 5000 a "Extended NAMEPREFIX static cloud"
+#namecond effect > 5000 b "Extended NAMEPREFIX static cloud"
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.4
+#end
+
+
+
+
+
+
+
+
+

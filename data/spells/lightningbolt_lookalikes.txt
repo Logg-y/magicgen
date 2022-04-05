@@ -11,6 +11,7 @@
 #power 0
 #maxpower 50
 #name 1 "Heated Air"
+#name b "Heated Air"
 #end
 
 
@@ -25,26 +26,33 @@
 #precision 1
 #range 50
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 5
 #explspr 10113
 #sound 27
 
 
-#paths 1
+#paths fb
 #secondarypaths 1
+#secondarypathchance 50
 
 #name 1 "NAMEPREFIX Scorching Air"
+#name b "NAMEPREFIX Scorching Air"
 #descr 1 "ARTICLE %pocket% of air %is% heated up to extremely high temperatures. The hot air is able to burn the vulnerable parts of those caught in it, such as eyes and lungs."
+#descr b "$BLOOD_INTRO$, the caster heats ARTICLE %pocket% of air to extremely high temperatures. The hot air is able to burn the vulnerable parts of those caught in it, such as eyes and lungs."
 #priority 1
+#namecond range < 10 b "NAMEPREFIX Touch of Scorching Air"
 #namecond range < 10 1 "NAMEPREFIX Touch of Scorching Air"
-#maxpower 6
+#maxpower 14
 
 #nextspell "LBolt Heat Shock"
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 1
+#scalerate 0.2
 #schools 4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 
@@ -62,6 +70,7 @@
 #power 0
 #maxpower 50
 #name 4 "Chilled Air"
+#name b "Chilled Air"
 #end
 
 
@@ -76,24 +85,32 @@
 #precision 1
 #range 50
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 5
 #explspr 10132
 #sound 27
 
 
-#paths 4
+#paths wb
 #secondarypaths 4
+#secondarypathchance 50
 
+#name b "NAMEPREFIX Frigid Air"
 #name 4 "NAMEPREFIX Frigid Air"
+#descr b "$BLOOD_INTRO$, the caster chills ARTICLE %pocket% of air to extremely cold temperatures. The frigid air is able to damage the vulnerable parts of those caught in it, such as eyes and lungs."
 #descr 4 "ARTICLE %pocket% of air %is% chilled to extremely cold temperatures. The frigid air is able to damage the vulnerable parts of those caught in it, such as eyes and lungs."
 #priority 1
 #namecond range < 10 4 "NAMEPREFIX Touch of Frigid Air"
-#maxpower 6
+#namecond range < 10 b "NAMEPREFIX Touch of Frigid Air"
+#maxpower 14
 
 #nextspell "LBolt Cold Shock"
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 1
+#scalerate 0.2
 #schools 4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
+

@@ -16,12 +16,14 @@
 #pathlevel 1
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
 
 #paths 16
 #secondarypaths 16
+
+#aispellmod 20
 
 #name 16 "NAMEPREFIX Strike through Space"
 
@@ -50,11 +52,13 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
 
 #skipchance 98
+
+#aispellmod 20
 
 #paths 24
 #secondarypaths 24
@@ -91,11 +95,13 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
 
 #skipchance 98
+
+#aispellmod 20
 
 #paths 24
 #secondarypaths 24
@@ -151,9 +157,11 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
+
+#aispellmod 20
 
 #paths 17
 #secondarypaths 17
@@ -205,9 +213,11 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
+
+#aispellmod 20
 
 #paths 20
 #secondarypaths 20
@@ -256,9 +266,11 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
+
+#aispellmod 20
 
 #paths 18
 #secondarypaths 18
@@ -306,14 +318,16 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 4
-#maxpower 4
+#power 2
+#maxpower 2
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
+
+#aispellmod 20
 
 #skipflightspr 1
 
@@ -367,9 +381,11 @@
 #pathlevel 2
 #explspr 10195
 #sound 41
-#fatiguecost 15
+#fatiguecost 5
 #precision 5
 #range 50
+
+#aispellmod 20
 
 #paths 80
 #secondarypaths 80
@@ -384,4 +400,12 @@
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a poisonous fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely. Should the target be wounded by the initial hit, magical poison discharges into the target."
 
 #end
+
+
+
+
+
+
+
+
 

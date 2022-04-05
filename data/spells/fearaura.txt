@@ -20,20 +20,25 @@
 #fatiguecost 20
 
 
-#paths 32
+#paths db
 #secondarypaths 0
 
 #namecond effectiveaoe < 2 32 "NAMEPREFIX Aura of Terror"
+#namecond effectiveaoe < 2 b "NAMEPREFIX Aura of Terror"
 
 #namecond2 2 <= effectiveaoe < 600 32 "NAMEPREFIX Warriors of Terror"
+#namecond2 2 <= effectiveaoe < 600 b "NAMEPREFIX Warriors of Terror"
 #namecond effectiveaoe > 600 32 "NAMEPREFIX Army of Terror"
+#namecond effectiveaoe > 600 b "NAMEPREFIX Army of Terror"
 
 #details "Grants +5 Fear."
 
 #descr 32 "SUBJECT %is% surrounded by a frightening aura which may cause nearby enemies to flee in terror."
+#descr b "$BLOOD_INTRO$, the caster surrounds SUBJECT with a frightening aura which may cause nearby enemies to flee in terror."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of fearful auras"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of fearful auras"
 
 #end
 

@@ -29,7 +29,7 @@
 #nextspell "Protforce Secondary mrn"
 
 #descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Affected creatures make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
 
 #end
 
@@ -64,6 +64,6 @@
 #nextspell "Protforce Secondary mrnh"
 
 #descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Affected creatures make a hard MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
 
 #end

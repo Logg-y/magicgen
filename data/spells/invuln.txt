@@ -22,7 +22,7 @@
 
 
 -- water, earth, death
-#paths 36
+#paths wdb
 #secondarypaths 36
 #secondarypathchance 99
 
@@ -30,20 +30,26 @@
 
 #namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian %Skin%"
 #namecond effectiveaoe < 10 32 "NAMEPREFIX Stygian Flesh"
+#namecond effectiveaoe < 10 b "NAMEPREFIX Stygian Flesh"
 #namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian %Skin%"
 #namecond effectiveaoe < 10 4 "NAMEPREFIX Stygian Flesh"
+#namecond effectiveaoe < 10 b "NAMEPREFIX Stygian Flesh"
 
 #namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Stygian Warriors"
 #namecond2 10 <= effectiveaoe < 666 4 "NAMEPREFIX Stygian Warriors"
+#namecond2 10 <= effectiveaoe < 666 b "NAMEPREFIX Stygian Warriors"
 
 #namecond effectiveaoe == 666 32 "NAMEPREFIX Stygian Army"
 #namecond effectiveaoe == 666 4 "NAMEPREFIX Stygian Army"
+#namecond effectiveaoe == 666 b "NAMEPREFIX Stygian Army"
 
 
+#descr b "$BLOOD_INTRO$, the caster drenches the skin of SUBJECT in stygian water. This provides considerable protection from non-magical weaponry."
 #descr 4 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
 #descr 32 "The skin of SUBJECT is drenched in stygian water. This provides considerable protection from non-magical weaponry."
 
 #priority 1
+#namecond effect > 1000 b "NAMEPREFIX stygian $mist$"
 #namecond effect > 1000 4 "NAMEPREFIX stygian $mist$"
 #namecond effect > 1000 32 "NAMEPREFIX stygian $mist$"
 
@@ -126,22 +132,27 @@
 
 
 -- water, earth, death
-#paths 32
+#paths db
 #secondarypaths 32
+#secondarypathchance 50
 
 #details "Grants Invulnerability 25."
 
 #namecond effectiveaoe < 10 32 "NAMEPREFIX Invulnerability"
+#namecond effectiveaoe < 10 b "NAMEPREFIX Protection from Weapons"
 
 #namecond2 10 <= effectiveaoe < 666 32 "NAMEPREFIX Invulnerable Warriors"
+#namecond2 10 <= effectiveaoe < 666 b "NAMEPREFIX Invulnerable Warriors"
 
 #namecond effectiveaoe == 666 32 "NAMEPREFIX Invulnerable Army"
+#namecond effectiveaoe == 666 b "NAMEPREFIX Invulnerable Army"
 
 
+#descr b "$BLOOD_INTRO$, the caster makes the skin of SUBJECT almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
 #descr 32 "The skin of SUBJECT is made almost invulnerable to mundane weapons. This provides extensive protection, but does absolutely nothing to lessen the blow of magical weaponry and spells."
 
 #priority 1
-#namecond effect > 1000 4 "NAMEPREFIX $mist$ of invulnerablility"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of invulnerablility"
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of invulnerablility"
 
 #end

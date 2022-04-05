@@ -20,6 +20,54 @@
 -- firedmg, AP, cold, nextondamage
 #spec 96+512+1152921504606846976
 -- evo
+#aoe 4
+#schools 4
+#range 40
+#precision 1
+#flightspr 10072
+#explspr 10132
+#sound 123
+#fatiguecost 100
+#skipchance 70
+
+#paths fwb
+#secondarypaths fw
+#secondarypathchance 100
+
+#name f "NAMEPREFIX Frostfire Blast"
+#name w "NAMEPREFIX Frostfire Blast"
+#name b "NAMEPREFIX Frostfire Blast"
+
+#descr f "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr w "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descr b "$BLOOD_INTRO$, ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 4
+#maxpower 14
+#scalerate 1
+#pathlevel 2
+
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Frostfire"
+#namecond range < 10 w "NAMEPREFIX Touch of Frostfire"
+#namecond range < 10 128 "NAMEPREFIX Touch of Frostfire"
+#descrcond range < 10 f "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descrcond range < 10 w "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
+#nextspell "Frostfire Ailments"
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
+#end
+
+#neweffect "Frostfire Evo Projectile Gemless"
+#effect 2
+#damage 2016
+-- firedmg, AP, cold, nextondamage
+#spec 96+512+1152921504606846976
+-- evo
 #aoe 1
 #schools 4
 #range 40
@@ -28,7 +76,7 @@
 #explspr 10132
 #sound 123
 #fatiguecost 15
-#skipchance 70
+#skipchance 5
 
 #paths fwb
 #secondarypaths fw
@@ -50,7 +98,7 @@
 
 #power 2
 #maxpower 14
-#scalerate 1
+#scalerate 0.2
 #pathlevel 2
 
 #priority 1
@@ -61,6 +109,9 @@
 #descrcond range < 10 w "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #nextspell "Frostfire Ailments"
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 
@@ -106,3 +157,6 @@
 #nextspell "Frostfire Ailments"
 #scalefatigueexponent 1
 #end
+
+
+

@@ -28,6 +28,7 @@
 #power 1
 #name 1 "Banefire Decay"
 #name 32 "Banefire Decay"
+#name b "Banefire Decay"
 #end
 
 
@@ -37,7 +38,7 @@
 -- AP
 #spec 64
 -- evo
-#aoe 1
+#aoe 5
 #schools 4
 #range 5030
 #precision 2
@@ -45,44 +46,50 @@
 #flightspr 10067
 #explspr 10127
 #sound 16
-#fatiguecost 20
+#fatiguecost 200
 
-#paths 33
+#paths fdb
 #secondarypaths 33
 #secondarypathchance 100
 
-#name 32 "NAMEPREFIX Banefire %Ball%"
-#name 1 "NAMEPREFIX Banefire %Ball%"
+#name 32 "NAMEPREFIX Banefire Blast"
+#name 1 "NAMEPREFIX Banefire Blast"
+#name b "NAMEPREFIX Blast of Buer's Flame"
 
 #descr 1 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr b "$BLOOD_INTRO$, the caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
 #power 5
 #maxpower 14
-#scalerate 1
+#scalerate 0.8
 #pathlevel 3
 
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX Touch of Banefire"
 #namecond range < 10 32 "NAMEPREFIX Touch of Banefire"
+#namecond range < 10 b "NAMEPREFIX Touch of Buer"
 #descrcond range < 10 1 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
 #descrcond range < 10 32 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
+#scalefatiguemult 10
+#scalefatigueexponent 1.4
 #end
 
 #neweffect "Banefire Instant"
 #effect 2
 #damage 5040
 #spec 64
-#aoe 1
+#aoe 4
 #power 6
 #maxpower 14
 #precision 1
 #range 5030
 #pathlevel 4
-#fatiguecost 30
+#fatiguecost 200
 #explspr 10127
 #sound 16
 #nextspell "Banefire Decay Small"
@@ -91,23 +98,24 @@
 #secondarypathchance 100
 #scalefatiguemult 4
 
-#name 32 "NAMEPREFIX Banefire"
-#name 1 "NAMEPREFIX Banefire"
+#name 32 "NAMEPREFIX Banefire Explosion"
+#name 1 "NAMEPREFIX Banefire Explosion"
 
 #descr 1 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster causes banefire to erupt over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
+#scalerate 1.1
 -- #scalecost 0.3
 #schools 4
 
 #priority 1
-#namecond range < 10 1 "NAMEPREFIX Banefire Eruption"
-#namecond range < 10 32 "NAMEPREFIX Banefire Eruption"
+#namecond range < 10 1 "NAMEPREFIX Banefire Burst"
+#namecond range < 10 32 "NAMEPREFIX Banefire Burst"
 #descrcond range < 10 1 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
+#scalefatigueexponent 1.2
 #end
 
 #neweffect "Banefire Decay Cloud"
@@ -142,26 +150,29 @@
 #explspr 10127
 #sound 16
 #nextspell "Banefire Decay Cloud"
-#paths 33
+#paths fdb
 #secondarypaths 33
 #secondarypathchance 100
 #scalefatiguemult 4
 
 #name 32 "NAMEPREFIX Banefire Cloud"
 #name 1 "NAMEPREFIX Banefire Cloud"
+#name b "NAMEPREFIX Cloud of Buer's Flame"
 
 #descr 1 "The caster creates a cloud of banefire to over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster creates a cloud of banefire to over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr b "$BLOOD_INTRO$, the caster creates a cloud of banefire to over a SIZE area. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.8
+#scalerate 0.4
 -- #scalecost 0.3
 #schools 4
 
 #priority 1
 #namecond effect > 5000 d "Extended NAMEPREFIX Banefire Cloud"
 #namecond effect > 5000 f "Extended NAMEPREFIX Banefire Cloud"
+#namecond effect > 5000 b "Extended NAMEPREFIX Cloud of Buer"
 #scalefatigueexponent 1.3
 #end
 
@@ -204,5 +215,8 @@
 
 #scalefatigueexponent 1.3
 #end
+
+
+
 
 

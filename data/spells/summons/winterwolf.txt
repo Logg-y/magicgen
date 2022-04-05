@@ -39,13 +39,16 @@
 #fatiguecost 400
 #schools 1
 
-#paths 4
+#paths bw
 #secondarypaths 4
+#secondarypathchance 85
 
 #skipchance 97
 
+#name b "$Bind$ NAMEPREFIX Wolves of Kokytos"
 #name 4 "$Summon$ NAMEPREFIX Winter %Wolf%"
 #descr 4 "The caster summons ARTICLE spectral winter %wolf% to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
+#descr b "$BLOOD_INTRO$, the caster binds ARTICLE spectral winter %wolf% from Kokytos to fight for him. The winter wolf is an ethereal being which emanates cold and is strongest in the winter."
 
 #spelltype 20
 

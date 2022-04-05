@@ -18,24 +18,24 @@
 #damage 2023
 #spec 549755813888
 -- evo
-#aoe 1
+#aoe 4
 #schools 4
 #range 5030
 #precision 3
 #flightspr 10308
 #explspr 10144
 #sound 123
-#fatiguecost 15
+#fatiguecost 100
 
 #paths feb
 #secondarypaths fe
 #secondarypathchance 90
 
-#name f "NAMEPREFIX %$bolt$% of $magma$"
-#name e "NAMEPREFIX %$bolt$% of $magma$"
-#name f "NAMEPREFIX $magma$ %$bolt$%"
-#name e "NAMEPREFIX $magma$ %$bolt$%"
-#name b "NAMEPREFIX $infernal$ $magma$ %$bolt$%"
+#name f "NAMEPREFIX blast of $magma$"
+#name e "NAMEPREFIX blast of $magma$"
+#name f "NAMEPREFIX $magma$ blast"
+#name e "NAMEPREFIX $magma$ blast"
+#name b "NAMEPREFIX $infernal$ $magma$ blast"
 
 #descr fe "ARTICLE blast of heated rock %is% launched towards the enemy. This is inaccurate but will crush and burn those hit by it."
 #descr feb "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
@@ -43,7 +43,7 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 2
+#power 5
 #maxpower 14
 #scalerate 1
 #pathlevel 2
@@ -56,8 +56,9 @@
 #descrcond range < 10 e "The caster's touch releases scorching magma which crushes and burns those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma which crushes and burns those close to the caster."
 #nextspell "Magma Fire"
-#scalefatiguemult 12
-#scalefatigueexponent -1.3
+#scalefatiguemult 1
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
 
 
@@ -69,14 +70,14 @@
 #damage 3018
 #spec 549755813888
 -- evo
-#aoe 1
+#aoe 4
 #schools 4
 #range 5025
 #precision 3
 #flightspr -1
 #explspr 10194
 #sound 123
-#fatiguecost 25
+#fatiguecost 100
 
 #paths feb
 #secondarypaths fe
@@ -96,7 +97,7 @@
 
 #power 4
 #maxpower 14
-#scalerate 1.2
+#scalerate 1.4
 #pathlevel 2
 
 #priority 1
@@ -106,9 +107,118 @@
 #descrcond range < 10 f "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 e "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma from the ground which crushes those close to the caster."
-#scalefatiguemult 4
-#scalefatigueexponent 1.2
+#scalefatiguemult 0
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
+
+
+
+
+
+
+#neweffect "Magma Evo Projectile Gemless"
+#effect 2
+#damage 2023
+#spec 549755813888
+-- evo
+#aoe 1
+#schools 4
+#range 5030
+#precision 3
+#flightspr 10308
+#explspr 10144
+#sound 123
+#fatiguecost 10
+
+#paths feb
+#secondarypaths fe
+#secondarypathchance 90
+
+#name f "NAMEPREFIX %$bolt$% of $magma$"
+#name e "NAMEPREFIX %$bolt$% of $magma$"
+#name f "NAMEPREFIX $magma$ %$bolt$%"
+#name e "NAMEPREFIX $magma$ %$bolt$%"
+#name b "NAMEPREFIX $infernal$ $magma$ %$bolt$%"
+
+#descr fe "ARTICLE blast of heated rock %is% launched towards the enemy. This is inaccurate but will crush and burn those hit by it."
+#descr feb "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 3
+#maxpower 14
+#scalerate 0.2
+#pathlevel 2
+
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Magma"
+#namecond range < 10 e "NAMEPREFIX Touch of Magma"
+#namecond range < 10 b "NAMEPREFIX Touch of Infernal Magma"
+#descrcond range < 10 f "The caster's touch releases scorching magma which crushes and burns those close to the caster."
+#descrcond range < 10 e "The caster's touch releases scorching magma which crushes and burns those close to the caster."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma which crushes and burns those close to the caster."
+#nextspell "Magma Fire"
+#scalefatiguemult 0
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.2
+#end
+
+
+
+#neweffect "Magma Evo Eruption Gemless"
+-- copy for lingering heat
+#copyspell "Magma Eruption"
+#effect 2
+#damage 3018
+#spec 549755813888
+-- evo
+#aoe 1
+#schools 4
+#range 5025
+#precision 3
+#flightspr -1
+#explspr 10194
+#sound 123
+#fatiguecost 10
+
+#paths feb
+#secondarypaths fe
+#secondarypathchance 90
+
+#name f "NAMEPREFIX $eruption$ of $magma$"
+#name e "NAMEPREFIX $eruption$ of $magma$"
+#name f "NAMEPREFIX $magma$ $eruption$"
+#name e "NAMEPREFIX $magma$ $eruption$"
+#name b "NAMEPREFIX $infernal$ $magma$ $eruption$"
+
+#descr fe "A SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
+#descr feb "$BLOOD_INTRO$, a SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#power 3
+#maxpower 14
+#scalerate 0.2
+#pathlevel 2
+
+#priority 1
+#namecond range < 10 f "NAMEPREFIX Touch of Eruptions"
+#namecond range < 10 e "NAMEPREFIX Touch of Eruptions"
+#namecond range < 10 b "NAMEPREFIX Touch of Infernal Eruptions"
+#descrcond range < 10 f "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
+#descrcond range < 10 e "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma from the ground which crushes those close to the caster."
+#scalefatiguemult 0
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.2
+#end
+
+
 
 
 

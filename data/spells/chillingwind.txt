@@ -21,32 +21,34 @@
 #effect 109
 #damage 2006
 #spec 1152921504606863936
-#aoe 0
-#power -3
-#maxpower 7
+#aoe 20
+#power 0
+#maxpower 4
 #precision 1
 #range 5040
 #pathlevel 1
-#pathperresearch 0.33
-#fatiguecost 20
+#pathperresearch 0.4
+#fatiguecost 100
 #explspr 10338
 #sound 52
 
 #aispellmod -95
 
-#paths 2
-#secondarypaths 4
+#paths ab
+#secondarypaths w
 #secondarypathchance 3
 
 #scalefatigueexponent 0
 
-#name 2 "NAMEPREFIX Chilling Wind"
+#name 2 "NAMEPREFIX Chilling Gale"
+#name b "NAMEPREFIX Chilling Gale"
 #descr 2 "Cold winds are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
+#descr b "Cold winds of Kokytos are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
 
 #nextspell "Chilling Winds Fatigue"
 
 #spelltype 42
-#scalerate 1
+#scalerate 4
 -- #scalecost 0.3
 #schools 4
 
@@ -54,13 +56,54 @@
 #end
 
 
+#neweffect "Chilling Winds Gemless"
+#effect 109
+#damage 2006
+#spec 1152921504606863936
+#aoe 0
+#power -3
+#maxpower 4
+#precision 1
+#range 5040
+#pathlevel 1
+#pathperresearch 0.2
+#fatiguecost 5
+#explspr 10338
+#sound 52
+
+#aispellmod -95
+
+#paths ab
+#secondarypaths 4
+#secondarypathchance 3
+
+#scalefatigueexponent 0
+
+#name 2 "NAMEPREFIX Chilling Wind"
+#name b "NAMEPREFIX Chilling Wind"
+#descr 2 "Cold winds are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
+#descr b "Cold winds of Kokytos are blown at creatures in a SIZE area. The bitter cold may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or cold resistance may prevent the effect."
+
+#nextspell "Chilling Winds Fatigue"
+
+#spelltype 42
+#scalerate 0.8
+-- #scalecost 0.3
+#schools 4
+
+
+#fatigueperresearch 0
+#end
+
+
+
 #neweffect "Chilling Winds 100pc"
 #effect 109
 #damage 2006
 #spec 1152921504606863936
 #aoe 666
-#power 8
-#maxpower 8
+#power 6
+#maxpower 6
 #precision 1
 #range 30
 #pathlevel 4
@@ -86,3 +129,4 @@
 -- #scalecost 0.3
 #schools 4
 #end
+

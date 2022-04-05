@@ -21,32 +21,32 @@
 #spelltype 4
 #end
 
-#neweffect "Water Movement"
-#copyspell "Cloud Trapeze"
-#effect 10095
-#damage 1
-#spec 8388608
-#provrange 5
-#power 3
-#maxpower 3
-#nreff 1
-#pathlevel 1
-#fatiguecost 200
-#schools 16
-
-#onlygeosrc 12
-#onlygeodst 12
-
-#paths 4
-#secondarypaths 0
-#secondarypathchance 0
-
-#name 4 "Travel through Fluid"
-#descr 4 "This spell requires the caster's body to be submerged in a natural body of water of considerable size, such as the sea, lake, river, or other such location. The caster becomes one with the water, allowing him to travel to a distant sea or body of water at incredible speeds."
-#details "Immobile units cannot cast this spell. This spell can only be cast from and target seas or provinces with fresh water."
-
-#spelltype 4
-#end
+--#neweffect "Water Movement"
+--#copyspell "Cloud Trapeze"
+--#effect 10095
+--#damage 1
+--#spec 8388608
+--#provrange 5
+--#power 3
+--#maxpower 3
+--#nreff 1
+--#pathlevel 1
+--#fatiguecost 200
+--#schools 16
+--
+--#onlygeosrc 12
+--#onlygeodst 12
+--
+--#paths 4
+--#secondarypaths 0
+--#secondarypathchance 0
+--
+--#name 4 "Travel through Fluid"
+--#descr 4 "This spell requires the caster's body to be submerged in a natural body of water of considerable size, such as the sea, lake, river, or other such location. The caster becomes one with the water, allowing him to travel to a distant sea or body of water at incredible speeds."
+--#details "Immobile units cannot cast this spell. This spell can only be cast from and target seas or provinces with fresh water."
+--
+--#spelltype 4
+--#end
 
 
 

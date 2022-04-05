@@ -87,6 +87,7 @@ class SpellEffect(object):
         self.noresearchdifferenceskip = 0
         self.siegepatrolchaff = 0
         self.fixeddurationenchantment = 0
+        self.fatigueperresearch = 10
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -155,6 +156,8 @@ class SpellEffect(object):
 
         s = Spell()
         mod = self._rollModifier(**options)
+        if mod is None:
+            return None
         secondary = self._rollSecondary(mod, **options)
         if secondary is None:
             return None
@@ -642,7 +645,7 @@ class SpellEffect(object):
         DebugLogger.debuglog(f"Expected final scaleamt: {scaleamt}", debugkeys.FATIGUECOSTCONSTRAINTS)
 
         finalfatigue = self.fatiguecost
-        fatiguefromresearch = 10 * actualpowerlvl
+        fatiguefromresearch = self.fatigueperresearch * actualpowerlvl
         scaleexponent = self.scalefatigueexponent + secondary.scalefatigueexponent + modifier.scalefatigueexponent
         DebugLogger.debuglog(f"Expected fatigue exponent: {scaleexponent}", debugkeys.FATIGUECOSTCONSTRAINTS)
         exponentcomponent = scaleamt ** abs(scaleexponent)
@@ -812,10 +815,8 @@ class SpellEffect(object):
                         mod = m
                         break
                 if len(modlist) == 0:
-                    print(f"No valid modifiers for {self.name} at research {self.researchlevel}")
-                    raise Exception(f"No valid modifiers for {self.name} at research {self.researchlevel}")
-
-                    raise ValueError(f"No valid modifiers for {self.name}")
+                    print(f"Warning: No valid modifiers for {self.name} at research {self.researchlevel}")
+                    return None
         return mod
 
     def _decideSecondaryPathLimitations(self, **options):
@@ -923,7 +924,9 @@ class SpellEffect(object):
                 self.isnextspell and self.scalerate == 0):
             print(f"Failed to generate {self.name} at {self.researchlevel}: final power level too high")
             return False
-        return True
+
+        powerlvl = self.calcActualpowerlvl(mod, secondary)
+        return self.canGenerateAtPowerlvl(powerlvl, mod, secondary)
 
     def _setSpellDefaultValues(self, s, **options):
         "Unload base attribute values onto the passed spell object. Deals exclusively with simple copying of data"
@@ -1073,16 +1076,36 @@ class SpellEffect(object):
         secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
         actualpowerlvl = (self.researchlevel - self.power) + mod.power + secondarypower
         return actualpowerlvl
-    def calcScaleamt(self, mod, secondary, actualpowerlvl=None):
+    def calcScaleamt(self, mod=None, secondary=None, actualpowerlvl=None):
         "Return the spell's scale amount: the amount its scaling attributes should be increased by."
         if actualpowerlvl is None:
             actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
+        modscalerate = mod.scalerate if mod is not None else 0.0
+        secondaryscalerate = secondary.scalerate if secondary is not None else 0.0
         scaleamt = 0
         for x in range(0, actualpowerlvl):
-            scaleamt += (x + 1) * (mod.scalerate + self.scalerate + secondary.scalerate)
+            scaleamt += (x + 1) * (modscalerate + secondaryscalerate + self.scalerate)
         scaleamt = int(round(scaleamt))
         return scaleamt
-
+    def canGenerateAtPowerlvl(self, powerlvl, mod=None, secondary=None):
+        """Return True if this the spell can generate at this power level and mod/secondary combination.
+        This is necessary for some spell effects which scale really slowly, IE have scalerates of <0.5.
+        Without this, it would be possible for identical spells to generate at adjacent research levels."""
+        if self.isnextspell:
+            return True
+        if powerlvl == 0:
+            return True
+        if powerlvl < 0:
+            return False
+        thisScale = self.calcScaleamt(mod, secondary, powerlvl)
+        prevScale = self.calcScaleamt(mod, secondary, powerlvl-1)
+        if thisScale == prevScale:
+            modname = getattr(mod, "name", "None")
+            secondaryname = getattr(secondary, "name", "None")
+            print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
+                  f"thisScale {thisScale} vs prevScale {prevScale}")
+            return False
+        return True
 
     def _scaleSpellPath1level(self, s, mod, secondary, **options):
         actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
@@ -1107,7 +1130,7 @@ class SpellEffect(object):
         if scaleamt2 > 0:
             scaleamt2 += 1  # otherwise the case where scaleamt = 1 yields no fatigue increase!
 
-        s.fatiguecost += 10 * actualpowerlvl
+        s.fatiguecost += self.fatigueperresearch * actualpowerlvl
         print(f"Power level: Added {10 * actualpowerlvl} to fatigue cost, it is now {s.fatiguecost}")
 
 
@@ -1321,7 +1344,7 @@ class SpellEffect(object):
 
             s.details = s.details.strip()
 
-        if s.flightspr is not None and s.flightspr > 0:
+        if s.flightspr is not None and s.flightspr > 0 and s.copyspell not in ["Leech", "Drain Life"]:
             s.details += " This is a projectile spell."
             s.details = s.details.strip()
 

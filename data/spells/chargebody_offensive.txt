@@ -30,7 +30,7 @@
 #precision 10
 #range 50
 #pathlevel 1
-#fatiguecost 10
+#fatiguecost 5
 #explspr 10068
 #sound 27
 
@@ -43,12 +43,16 @@
 #descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselvers and the next person to strike them."
 #details "Applies 10AN charged body on damage."
 
-#maxpower 4
+#maxpower 7
 
 #nextspell "10AN charge"
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
+#scalerate 0.3
 #schools 4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
+

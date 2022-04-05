@@ -22,13 +22,13 @@
 #effect 2
 #damage 2012
 #spec 576
-#aoe 1
-#power 2
+#aoe 4
+#power 3
 #maxpower 14
 #precision 1
 #range 40
 #pathlevel 2
-#fatiguecost 15
+#fatiguecost 100
 #explspr 10108
 #flightspr 10068
 #sound 21
@@ -37,12 +37,12 @@
 #paths 132
 #secondarypaths 4
 
-#name 1 "NAMEPREFIX $chilling$ %bolt%"
-#name 2 "NAMEPREFIX $chilling$ %bolt%"
-#name 4 "NAMEPREFIX $chilling$ %bolt%"
-#name 16 "NAMEPREFIX $chilling$ %bolt%"
-#name 32 "NAMEPREFIX $chilling$ %bolt%"
-#name 128 "NAMEPREFIX $chilling$ %bolt%"
+#name 1 "NAMEPREFIX $chilling$ Blast"
+#name 2 "NAMEPREFIX $chilling$ Blast"
+#name 4 "NAMEPREFIX $chilling$ Blast"
+#name 16 "NAMEPREFIX $chilling$ Blast"
+#name 32 "NAMEPREFIX $chilling$ Blast"
+#name 128 "NAMEPREFIX $chilling$ Blast"
 #descr 1 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
 #descr 2 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
 #descr 4 "ARTICLE $chilling$ %bolt% %is% formed by drawing the heat from the surrounding air, and %is% then fired towards enemies. The %bolt% %is% capable of harming SUBJECT."
@@ -52,20 +52,22 @@
 
 #spelltype 38
 
-#power 2
+#power 3
 #scalerate 1
 #pathlevel 2
 #schools 4
 
 #priority 1
-#namecond range < 10 4 "NAMEPREFIX Touch of Cold"
-#namecond range < 10 32 "NAMEPREFIX Touch of Cold"
-#namecond range < 10 128 "NAMEPREFIX Touch of Cold"
+#namecond range < 10 4 "NAMEPREFIX Cold Eruption"
+#namecond range < 10 32 "NAMEPREFIX Cold Eruption"
+#namecond range < 10 128 "NAMEPREFIX Cold Eruption"
 #descrcond range < 10 4 "The caster's touch radiates chilling bolts that harm those close to the caster."
 #descrcond range < 10 32 "The caster's touch radiates the chill of the grave, producing bolts that harm those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the chill of Kokytos, producing bolts that harm those close to the caster."
 
 #nextspell "Small Chill"
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
 
 
@@ -73,25 +75,25 @@
 #effect 2
 #damage 2016
 #spec 576
-#aoe 1
-#power 2
+#aoe 4
+#power 4
 #maxpower 14
 #precision 1
 #range 30
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10145
 #sound 21
 
 #paths 132
 #secondarypaths 4
 
-#name 1 "NAMEPREFIX Falling $frost$"
-#name 2 "NAMEPREFIX Falling $frost$"
-#name 4 "NAMEPREFIX Falling $frost$"
-#name 16 "NAMEPREFIX Falling $frost$"
-#name 32 "NAMEPREFIX Deathly $frost$"
-#name 128 "NAMEPREFIX Falling $frost$"
+#name 1 "NAMEPREFIX $frost$ Burst"
+#name 2 "NAMEPREFIX $frost$ Burst"
+#name 4 "NAMEPREFIX $frost$ Burst"
+#name 16 "NAMEPREFIX $frost$ Burst"
+#name 32 "NAMEPREFIX $frost$ Burst"
+#name 128 "NAMEPREFIX $frost$ Burst"
 
 #descr 1 "Heat is drawn out of the air above the targets, causing a rapid chill. This results in damaging creatures in a SIZE area."
 #descr 2 "Heat is drawn out of the air above the targets, causing a rapid chill. This results in damaging creatures in a SIZE area."
@@ -113,40 +115,48 @@
 #descrcond range < 10 4 "The caster unleashes a burst of cold, harming those around him."
 #descrcond range < 10 32 "The caster unleashes the chill of the grave, chilling and harming those around him."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster unleashes the chill of Kokytos, chilling and harming those around him."
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end
 
 #neweffect "Deep Freeze"
 #effect 2
 #damage 1006
 #spec 1152921504606847552
-#aoe 0
-#power 1
+#aoe 4
+#power 3
 #maxpower 12
 #precision 3
 #range 40
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 --#explspr 10054
 #explspr 10134
 #sound 21
 
-#paths 4
+#paths wb
 #secondarypaths 4
 
 #name 4 "NAMEPREFIX Deep Freeze"
+#name 128 "NAMEPREFIX Deep Freeze"
 #descr 4 "The caster attempts to freeze all creatures in a SIZE area completely solid. Armour will reduce the harming effect, as well as potentially negate any lingering chill. Magic resistance may prevent victims from being completely frozen and becoming unable to move."
+#descr 128 "$BLOOD_INTRO$, the caster attempts to freeze all creatures in a SIZE area completely solid. Armour will reduce the harming effect, as well as potentially negate any lingering chill. Magic resistance may prevent victims from being completely frozen and becoming unable to move."
 #details "Inflicts damage. Those taking damage from this initial effect suffer from Numbness, and additionally must make an easy MR roll. Those that fail make a check of 5 + DRN vs cold res + DRN. If the defender loses this roll, they become petrified for 22500-45000 ticks; becoming immobilised, having their defence skill set to 0, their natural protection increased to 20 and gaining Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Inanimate or stone beings cannot be petrified this way, though they may still be harmed by the other components of the spell."
+
+#aispellmod 50
 
 
 #nextspell "Deep Freeze Numbness"
 #spelltype 42
-#scalerate 1
+#scalerate 1.2
 -- #scalecost 0.3
 #schools 4
 
 #priority 1
 #namecond range < 10 4 "NAMEPREFIX Freezing Touch"
+#namecond range < 10 b "NAMEPREFIX Freezing Touch"
 #descrcond range < 10 4 "The caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.4
@@ -327,11 +337,13 @@
 #nreff 40
 
 -- #paths 4+32+128
-#paths 4
+#paths wb
 #secondarypaths 4
 
 #name 4 "NAMEPREFIX Rain of Ice"
+#name 128 "NAMEPREFIX Rain from Kokytos"
 #descr 4 "%$ball$% of ice are rained down upon the enemy army. This spell will be able to devastate an unprotected army. Unlucky victims may be struck more than once."
+#descr 128 "$BLOOD_INTRO$, the caster causes %$ball$% of ice are rained down upon the enemy army. This spell will be able to devastate an unprotected army. Unlucky victims may be struck more than once."
 
 #spelltype 18
 
@@ -341,6 +353,9 @@
 #nextspell "Small Chill"
 
 #end
+
+
+
 
 
 

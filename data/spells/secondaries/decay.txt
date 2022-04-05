@@ -35,7 +35,7 @@
 #nextspell "Decay Secondary mrnh"
 
 #descr "Dark energy may cause those affected by this spell to start decaying."
-#details "Affected creatures make a MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+#details "Creatures in the area when the spell is cast make a MR check. Those that fail to resist begin decaying: Creatures in the area when the spell is cast age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end
 
@@ -76,7 +76,7 @@
 #nextspell "Decay Secondary mrn"
 
 #descr "Dark energy may cause those affected by this spell to start decaying."
-#details "Affected creatures make an MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist begin decaying: Creatures in the area when the spell is cast age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end
 
@@ -116,6 +116,6 @@
 #nextspell "Decay Secondary mrnh damaging"
 
 #descr "Dark energy may cause those wounded by this spell to start decaying."
-#details "Wounded creatures make a hard MR check. Those that fail to resist begin decaying: Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
+#details "Wounded creatures make a hard MR check. Those that fail to resist begin decaying: Creatures in the area when the spell is cast age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #end

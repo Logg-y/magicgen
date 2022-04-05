@@ -35,7 +35,7 @@
 #nextspell "7AN poison Secondary mrnh"
 
 #descr "This spell is infused with poison that may afflict those it affects."
-#details "Affected creatures must make a hard MR check or suffer 7 AN poison damage."
+#details "Creatures in the area when the spell is cast must make a hard MR check or suffer 7 AN poison damage."
 
 #end
 
@@ -76,7 +76,7 @@
 #nextspell "7AN poison Secondary mrn"
 
 #descr "This spell is infused with poison that may afflict those it affects."
-#details "Affected creatures must make an MR check or suffer 7 AN poison damage."
+#details "Creatures in the area when the spell is cast must make an MR check or suffer 7 AN poison damage."
 
 #end
 
@@ -212,7 +212,7 @@
 #nextspell "4 capped poison Secondary mrnh"
 
 #descr "This spell is infused with poison that may afflict those it affects."
-#details "Affected creatures must make a hard MR check or suffer 4 AN capped poison damage."
+#details "Creatures in the area when the spell is cast must make a hard MR check or suffer 4 AN capped poison damage."
 
 #end
 

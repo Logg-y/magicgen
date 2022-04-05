@@ -10,6 +10,7 @@
 #fatiguecost 22
 #sound 31
 #schools 1
+#newunit "Black Harpy"
 
 #paths 66
 #secondarypaths 66
@@ -39,6 +40,7 @@
 #pathlevel 1
 #fatiguecost 120
 #schools 1
+#newunit "Black Harpy"
 
 #paths 66
 #secondarypaths 66
@@ -76,6 +78,7 @@
 #schools 1
 #skipchance 99
 #nogeodst 2052
+#newunit "Black Harpy"
 
 #paths 66
 #secondarypaths 66
@@ -101,6 +104,7 @@
 #fatiguecost 500
 #schools 1
 #nogeodst 2052
+#newunit "Black Harpy"
 
 #skipchance 99.6
 

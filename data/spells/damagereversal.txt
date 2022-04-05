@@ -34,4 +34,48 @@
 
 #end
 
+#neweffect "Damage Reversal Nonblood"
+#effect 500
+#damage 202
+#spec 16384
+#schools ench
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+#scalerate 0.7
+-- #scalecost 1.4
+
+#aoe 0
+#power 6
+#maxpower 12
+#pathlevel 1
+#explspr 10216
+#sound 31
+#range 10
+#fatiguecost 20
+
+
+#paths sdn
+#secondarypaths sdnb
+
+#name s "NAMEPREFIX Reversal of Fate"
+#name d "NAMEPREFIX Death Link"
+#name n "NAMEPREFIX Life Link"
+
+#descr s "This spell will bring the ultimate protection for SUBJECT in battle. Whenever PRONOUN is wounded, the damage is transferred to the one who tried to wound him. Magic resistance might prevent this from taking effect, so the mage is not fully invulnerable."
+#descr d "This spell will bring the ultimate protection for SUBJECT in battle. Whenever PRONOUN is wounded, the damage is transferred to the one who tried to wound him. Magic resistance might prevent this from taking effect, so the mage is not fully invulnerable."
+#descr n "This spell will bring the ultimate protection for SUBJECT in battle. Whenever PRONOUN is wounded, the damage is transferred to the one who tried to wound him. Magic resistance might prevent this from taking effect, so the mage is not fully invulnerable."
+#details "Any non-true damage that is less than 9000 may be reversed to the damage dealer, so long as the damage dealer is alive and the damage is not self inflicted. The damager must make a MR check vs +1 penetration (which ignores the caster's penetration bonuses). This is considered a Blood effect for the damager's magic resistance check. If they fail, they take true damage equal to the amount of damage that would have been inflicted. This redirected damage is AN, and rolls DRNs on both sides."
+
+#priority 1
+#namecond effect > 1000 s "NAMEPREFIX $mist$ of reversal"
+#namecond effect > 1000 d "NAMEPREFIX $mist$ of reversal"
+#namecond effect > 1000 n "NAMEPREFIX $mist$ of reversal"
+
+#end
+
+
+
+
 

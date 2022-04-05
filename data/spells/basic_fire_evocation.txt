@@ -25,7 +25,7 @@
 -- firedmg, AP
 #spec 96
 -- evo
-#aoe 1
+#aoe 4
 #schools 4
 #range 40
 #precision 1
@@ -33,18 +33,17 @@
 #flightspr 10073
 #explspr 10113
 #sound 123
-#fatiguecost 15
+#fatiguecost 100
 
 #paths 129
 #secondarypaths 1
 
-#name 1 "NAMEPREFIX %$ball$% of $fire$"
-#name 1 "NAMEPREFIX $fire$ %$ball$%"
+#name 1 "NAMEPREFIX $Fire$ Blast"
 #name 4 "NAMEPREFIX %blast% of heat"
 #name 2 "NAMEPREFIX %blast% of heat"
 #name 8 "NAMEPREFIX $fire$ %$ball$% from $underground$"
 #name 16 "NAMEPREFIX $fire$ %$ball$% from beyond"
-#name 128 "NAMEPREFIX $infernal$ $fire$ %$ball$%"
+#name 128 "NAMEPREFIX $infernal$ $fire$ Blast"
 
 #descr 2 "ARTICLE blast of heated air %is% launched towards the enemy. This is inaccurate but may severely burn SUBJECT."
 #descr 4 "ARTICLE blast of heated air %is% created by drawing the cold out of the air. This is inaccurate but may severely burn SUBJECT."
@@ -56,41 +55,43 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 2
+#power 3
 #maxpower 14
 #scalerate 1
 #pathlevel 2
 
 #priority 1
-#namecond range < 10 1 "NAMEPREFIX Touch of Flames"
-#namecond range < 10 128 "NAMEPREFIX Touch of Infernal Flames"
+#namecond range < 10 1 "NAMEPREFIX Flame Eruption"
+#namecond range < 10 128 "NAMEPREFIX Flame Eruption"
 #descrcond range < 10 1 "The caster's touch radiates searing heat which scorches those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the heat of Inferno, producing scorching heat that harms those close to the caster."
+#scalefatigueexponent 1.35
+#pathperresearch 0.5
 #end
 
 #neweffect "Fire Evo Instant"
 #effect 2
 #damage 2016
 #spec 96
-#aoe 1
-#power 2
+#aoe 4
+#power 4
 #maxpower 14
 #precision 1
 #range 30
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10011
 #sound 123
 
 #paths 129
 #secondarypaths 1
 
-#name 1 "NAMEPREFIX Falling %$fire$%"
+#name 1 "NAMEPREFIX $fire$ Burst"
 #name 2 "NAMEPREFIX Falling %$fire$%"
 #name 4 "NAMEPREFIX Falling %$fire$%"
 #name 8 "NAMEPREFIX %$fire$% from $underground$"
 #name 16 "NAMEPREFIX %$fire$% from beyond"
-#name 128 "NAMEPREFIX $infernal$ %$fire$%"
+#name 128 "NAMEPREFIX $infernal$ Burst"
 #descr 4 "The cold is sucked out of the air above the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
 #descr 2 "The latent heat in the air is focused upon the caster's enemies. A SIZE area is rapidly heated with the potential to badly burn enemies within."
 #descr 1 "Flames fall onto a SIZE area with the potential to badly burn SUBJECT."
@@ -109,6 +110,8 @@
 #namecond range < 10 128 "NAMEPREFIX Burst of Infernal Flames"
 #descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming anyone nearby."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming anyone nearby."
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end
 
 #neweffect "Scaling Heat Shock"
@@ -144,7 +147,7 @@
 #precision 1
 #range 100
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 10
 #explspr 10242
 #sound 123
 
@@ -372,3 +375,5 @@
 #scalerate 3
 #pathlevel 5
 #end
+
+

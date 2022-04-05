@@ -42,7 +42,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 35
+#fatiguecost 10
 #explspr 10139
 #sound 27
 

@@ -20,14 +20,17 @@
 #fatiguecost 10
 
 
-#paths 16
+#paths sb
 #secondarypaths 16
+#secondarypathchance 80
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Blink %Foe%"
 
 #namecond effectiveaoe >= 2 16 "NAMEPREFIX Dimensional Instability"
+#namecond effectiveaoe >= 2 128 "NAMEPREFIX Void Warp"
 
 #descr 16 "The caster creates instabilities in space around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield. This spell only affects enemies."
+#descr b "$BLOOD_INTRO$, the aster creates Void instabilities around SUBJECT. This causes PRONOUN to be harmlessly sucked in and placed in another position on the battlefield. This spell only affects enemies."
 #details "Applies blink to all affected enemies that fail a MR check."
 
 #priority 1

@@ -36,7 +36,7 @@
 #nextspell "charm Secondary mrne"
 
 #descr "This spell may additionally invade the mind of those it affects, causing them to shift to the caster's allegiance."
-#details "Affected creatures make an easy MR check. Those that fail to resist are charmed."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist are charmed."
 
 #end
 

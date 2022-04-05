@@ -20,19 +20,25 @@
 #range 5020
 #precision 100
 
-#paths 32
-#secondarypaths 32
+#paths db
+#secondarypaths d
+#secondarypathchance 50
 
 #namecond effectiveaoe == 0 32 "NAMEPREFIX Decay"
+#namecond effectiveaoe == 0 128 "NAMEPREFIX Decay"
 
 #namecond2 0 < effectiveaoe < 600 32 "NAMEPREFIX Burden of Age"
+#namecond2 0 < effectiveaoe < 600 128 "NAMEPREFIX Burden of Age"
 #namecond effectiveaoe > 600 32 "NAMEPREFIX Wind of Death"
+#namecond effectiveaoe > 600 128 "NAMEPREFIX Wind of Death"
 
 #descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+#descr b "$BLOOD_INFO$, the caster makes SUBJECT begin to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
 #details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of decay"
 
 #scalefatigueexponent 1.3
 #end
@@ -59,18 +65,24 @@
 #range 5020
 #precision 100
 
-#paths 32
-#secondarypaths 32
+#paths db
+#secondarypaths d
+#secondarypathchance 50
 
 #namecond effectiveaoe == 0 32 "NAMEPREFIX Decay"
+#namecond effectiveaoe == 0 128 "NAMEPREFIX Decay"
 
 #namecond2 0 < effectiveaoe < 600 32 "NAMEPREFIX Burden of Age"
+#namecond2 0 < effectiveaoe < 600 128 "NAMEPREFIX Burden of Age"
 #namecond effectiveaoe > 600 32 "NAMEPREFIX Wind of Death"
+#namecond effectiveaoe > 600 128 "NAMEPREFIX Wind of Death"
 
 #descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+#descr b "$BLOOD_INFO$, the caster makes SUBJECT begin to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
 #details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #priority 1
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of decay"
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
 #end

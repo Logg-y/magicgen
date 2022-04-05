@@ -1,0 +1,98 @@
+
+
+#neweffect "Shock Evo Chain Gemless"
+#copyspell "Leech"
+#flightspr 10285
+#explspr 10082
+#effect 134
+#damage 2001
+#spec 8390784
+#aoe 1
+#power 4
+#maxpower 15
+#precision 1
+#range 50
+#pathlevel 3
+#fatiguecost 10
+#sound 114
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 5
+
+#paths 138
+#secondarypaths 2
+#pathskipchance 8 95
+
+#name 2 "NAMEPREFIX Chain Lightning"
+#name 8	"NAMEPREFIX Charge Ground"
+#name 128 "NAMEPREFIX Chain Lightning"
+#descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby."
+#descr 8 "Electrical charge is brought from $underground$ to the battlefield. This then discharges on its own accord, damaging and arcing to anything nearby."
+#descr 128 "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to sustain an electrical charge. The %charge% then discharges on %its% own accord, damaging and arcing to anything nearby."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
+
+
+-- evo, scale aoe
+#spelltype 34
+#scalerate 0.17
+-- #scalecost 1.4
+#schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Leaping Lightning"
+#namecond range < 10 8 "NAMEPREFIX Touch of Leaping Lightning"
+#namecond range < 10 128 "NAMEPREFIX Touch of Leaping Lightning"
+#descrcond range < 10 2 "The caster's touch unleashes chain lightning which leaps to surrounding foes."
+#descrcond range < 10 8 "The caster's touch unleashes a massive electrical charge from $underground$. This unleashes chain lighting on nearby foes."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes chain lightning which leaps to surrounding foes."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.15
+#end
+
+#neweffect "Shock Evo Chain Projectile Gemless"
+#effect 134
+#damage 2001
+#spec 8390784
+#aoe 1
+#power 4
+#maxpower 15
+#precision 1
+#range 50
+#pathlevel 2
+#fatiguecost 10
+#flightspr 10307
+#sound 114
+#nreff 1
+
+#skipchance 30
+
+#maxbounces 5
+
+#paths ab
+#secondarypaths 2
+
+#name 2 "NAMEPREFIX Orb Lightning"
+#descr 2 "The mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
+#descr 128 "$BLOOD_INTRO$, the mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
+
+
+-- evo, scale aoe
+#spelltype 34
+#scalerate 0.1
+-- #scalecost 1.4
+#schools 4
+
+#priority 1
+#namecond range < 10 2 "NAMEPREFIX Touch of Electrocution"
+#namecond range < 10 b "NAMEPREFIX Touch of Electrocution"
+#descrcond range < 10 2 "The caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
+#details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0
+#end
+

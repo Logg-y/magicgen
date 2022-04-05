@@ -32,7 +32,7 @@
 #nextspell "Cursed Luck Secondary mrnh"
 
 #descr "This spell may also alter the fortunes of those it affects, making them considerably more unlucky for a short time."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain 3 rounds of cursed luck: the effects of luck are removed from them, and there is a 50% chance that they subtract an openended 1d6 from their defence and protection rolls made in this time."
 
 #end
 

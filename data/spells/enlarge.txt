@@ -21,21 +21,26 @@
 #skipchance 50
 
 
-#paths 64
+#paths nb
 #secondarypaths 0
 
 #details "Enlargement: +1 size, +30% HP, +3 strength, -1 defence, +2 map move."
 
 #namecond effectiveaoe < 1 64 "NAMEPREFIX Enlarge Self"
+#namecond effectiveaoe < 600 128 "NAMEPREFIX Infernal Enlargement"
 
 #namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Group Enlargement"
 #namecond effectiveaoe > 600 64 "NAMEPREFIX Army of Giants"
+#namecond effectiveaoe > 600 128 "NAMEPREFIX Army of Giants"
 #namecond effectiveaoe > 600 64 "NAMEPREFIX Mass Enlargement"
+#namecond effectiveaoe > 600 128 "NAMEPREFIX Mass Infernal Enlargement"
 
 #descr 64 "SUBJECT %is% magically enlarged for the rest of the battle."
+#descr b "SUBJECT %is% magically enlarged for the rest of the battle."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of enlargement"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal enlargement"
 
 #end
 

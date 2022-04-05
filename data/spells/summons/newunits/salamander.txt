@@ -1,0 +1,6 @@
+#newunit "Salamander"
+#baseunit 213
+#raw "#gcost 1"
+#set gcost 1
+#end
+

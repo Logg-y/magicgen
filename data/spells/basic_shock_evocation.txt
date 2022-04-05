@@ -40,7 +40,7 @@
 #precision 1
 #range 50
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 5
 -- little strike
 #explspr 10219
 #sound 27
@@ -65,14 +65,17 @@
 #descrcond range < 10 16 "The caster's touch unleashes lightning upon those close to him."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes lightning upon those close to him."
 
-#maxpower 6
+#maxpower 14
 
 #nextspell "Small Shock"
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 1
+#scalerate 0.2
 #schools 4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 
@@ -119,7 +122,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 40
+#fatiguecost 10
 #explspr 10241
 #sound 27
 
@@ -161,7 +164,7 @@
 #power 6
 #nreff 5
 #maxpower 14
-#precision -8
+#precision -1
 #range 50
 #pathlevel 3
 #fatiguecost 100
@@ -199,13 +202,13 @@
 #effect 134
 #damage 2001
 #spec 8390784
-#aoe 1
+#aoe 3
 #power 4
 #maxpower 15
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 30
+#fatiguecost 100
 #sound 114
 #nreff 1
 
@@ -217,9 +220,9 @@
 #secondarypaths 2
 #pathskipchance 8 95
 
-#name 2 "NAMEPREFIX Chain Lightning"
+#name 2 "NAMEPREFIX Leaping Discharge"
 #name 8	"NAMEPREFIX Charge Ground"
-#name 128 "NAMEPREFIX Chain Lightning"
+#name 128 "NAMEPREFIX Leaping Discharge"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby."
 #descr 8 "Electrical charge is brought from $underground$ to the battlefield. This then discharges on its own accord, damaging and arcing to anything nearby."
 #descr 128 "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to sustain an electrical charge. The %charge% then discharges on %its% own accord, damaging and arcing to anything nearby."
@@ -228,28 +231,32 @@
 
 -- evo, scale aoe
 #spelltype 34
-#scalerate 0.6
+#scalerate 0.7
 -- #scalecost 1.4
 #schools 4
 
 #priority 1
 #namecond range < 10 2 "NAMEPREFIX Touch of Leaping Lightning"
 #namecond range < 10 8 "NAMEPREFIX Touch of Leaping Lightning"
+#namecond range < 10 128 "NAMEPREFIX Touch of Leaping Lightning"
 #descrcond range < 10 2 "The caster's touch unleashes chain lightning which leaps to surrounding foes."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes chain lightning which leaps to surrounding foes."
 #descrcond range < 10 8 "The caster's touch unleashes a massive electrical charge from $underground$. This unleashes chain lighting on nearby foes."
+#scalefatigueexponent 1.4
+#pathperresearch 0.5
 #end
 
 #neweffect "Shock Evo Chain Projectile"
 #effect 134
 #damage 2001
 #spec 8390784
-#aoe 1
+#aoe 3
 #power 4
 #maxpower 15
 #precision 1
 #range 50
 #pathlevel 2
-#fatiguecost 30
+#fatiguecost 100
 #flightspr 10307
 #sound 114
 #nreff 1
@@ -258,11 +265,13 @@
 
 #maxbounces 5
 
-#paths 2
+#paths ab
 #secondarypaths 2
 
-#name 2 "NAMEPREFIX Orb Lightning"
+#name 2 "NAMEPREFIX Charged Blast"
+#name 128 "NAMEPREFIX Charged Blast"
 #descr 2 "The mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
+#descr b "$BLOOD_INTRO$, the mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 
 
 -- evo, scale aoe
@@ -273,8 +282,12 @@
 
 #priority 1
 #namecond range < 10 2 "NAMEPREFIX Touch of Electrocution"
+#namecond range < 10 b "NAMEPREFIX Touch of Electrocution"
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
 #descrcond range < 10 2 "The caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
 #details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
+#scalefatigueexponent 1.4
+#pathperresearch 0.5
 #end
 
 
@@ -299,10 +312,12 @@
 
 #maxbounces 15
 
-#paths 2
+#paths ab
 #secondarypaths 2
 
 #name 2 "Unending NAMEPREFIX Chain Lightning"
+#name b "Unending NAMEPREFIX Chain Lightning"
+#descr b "$BLOOD_INTRO$, the caster picks ARTICLE %point% on the battlefield to be given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby. The charge created by this particular spell persists for an exceptionally large number of bounces."
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. The %charge% then are free to discharge of %its% own accord, damaging and arcing to anything nearby. The charge created by this particular spell persists for an exceptionally large number of bounces."
 #details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 
@@ -318,6 +333,8 @@
 
 #priority 1
 #namecond range < 10 2 "NAMEPREFIX Touch of Leaping Lightning"
+#namecond range < 10 b "NAMEPREFIX Touch of Leaping Lightning"
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes chain lightning which leaps to surrounding foes."
 #descrcond range < 10 2 "The caster's touch unleashes chain lightning which leaps to surrounding foes."
 #end
 
@@ -331,7 +348,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 100
+#fatiguecost 200
 #explspr 10241
 #sound 27
 #nreff 1
@@ -342,11 +359,13 @@
 
 #maxbounces 4
 
-#paths 2
+#paths ab
 #secondarypaths 2
 
 #name 2 "NAMEPREFIX Fountain of Lightning"
+#name b "NAMEPREFIX Fountain of Pazuzu"
 #descr 2 "ARTICLE %point% on the battlefield %is% given an electrical charge. Charges are then free to flow out of this point for some time after its creation, shocking those nearby."
+#descr b "$BLOOD_INTRO$, the caster designates ARTICLE %point% on the battlefield %is% to be given an electrical charge. Charges are then free to flow out of this point for some time after its creation, shocking those nearby."
 #details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 
 
@@ -731,5 +750,8 @@
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
+
+
+
 
 

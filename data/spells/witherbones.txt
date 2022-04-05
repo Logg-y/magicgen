@@ -2,13 +2,13 @@
 #effect 2
 #damage 3012
 #spec 276824200
-#aoe 1
-#power 1
+#aoe 5
+#power 2
 #maxpower 14
 #precision 0
 #range 5025
 #pathlevel 1
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10209
 #sound 84
 #paths 48
@@ -30,6 +30,46 @@
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX touch of undead unraveling"
 #namecond range < 10 32 "NAMEPREFIX touch of withering bones"
-#scalefatigueexponent 1.3
+#scalefatigueexponent 1.2
 #pathperresearch 0.4
 #end
+
+
+#neweffect "Wither Bones Gemless"
+#effect 2
+#damage 3012
+#spec 276824200
+#aoe 0
+#power 0
+#maxpower 14
+#precision 0
+#range 5025
+#pathlevel 1
+#fatiguecost 10
+#explspr 10209
+#sound 84
+#paths 48
+#secondarypaths 32
+#secondarypathchance 0
+#name 16 "NAMEPREFIX Unravel Undead"
+#name 32 "NAMEPREFIX Wither Bones"
+#name 32 "NAMEPREFIX Dust to Dust"
+
+#descr 16 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+#descr 32 "This spell destroys undead beings by unraveling the magic that holds them together. The spell affects all undead in a SIZE area. Neither magic resistance nor armor offer protection from this spell."
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+#scalerate 0.3
+-- #scalecost 0.3
+#schools 32
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX touch of undead unraveling"
+#namecond range < 10 32 "NAMEPREFIX touch of withering bones"
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#fatigueperresearch 0
+#end
+
+

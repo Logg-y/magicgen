@@ -1,0 +1,21 @@
+#neweventset "Fortuneteller Global"
+
+#usefixedunitid 674
+#allowedunitmod "Fortuneteller Global"
+
+#end
+
+#newevent
+#rarity 5
+#msg "Fortuneteller global create unit"
+#nolog
+#notext
+#nation -2
+#req_land 1
+#req_domchance 12
+#req_friendlyench ENCHANTID
+#req_enchdom ENCHANTID
+#req_nomonster UNITID
+-- Province owner in disciples
+#1unit UNITID
+#end

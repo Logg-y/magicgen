@@ -20,14 +20,16 @@
 
 
 -- water, astral
-#paths 20
+#paths wsb
 #secondarypaths 4
 
 #namecond effectiveaoe == 0 16 "NAMEPREFIX Quicken Self"
 #namecond effectiveaoe == 0 4 "NAMEPREFIX Quicken Self"
+#namecond effectiveaoe == 0 b "NAMEPREFIX Quicken Self"
 
 #namecond2 1 <= effectiveaoe < 666 16 "NAMEPREFIX Quickness"
 #namecond2 1 <= effectiveaoe < 666 4 "NAMEPREFIX Quickness"
+#namecond2 1 <= effectiveaoe <= 666 b "NAMEPREFIX Infernal Alacrity"
 
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Quickening"
 #namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
@@ -35,6 +37,7 @@
 #details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
 
 #descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
+#descr b "$BLOOD_INTRO$, the caster increases the speed of SUBJECT, allowing PRONOUN to attack and act more rapidly." 
 #descr 4 "The speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 
 #priority 1
@@ -42,6 +45,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of quickening"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of quickness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of quickening"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of quickening"
 
 #end
 
@@ -68,7 +72,7 @@
 
 
 -- water, astral
-#paths 20
+#paths wsb
 #secondarypaths 4
 
 #namecond effectiveaoe == 0 16 "NAMEPREFIX Quicken Self"
@@ -79,11 +83,13 @@
 
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Quickening"
 #namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
+#namecond effectiveaoe == 666 b "NAMEPREFIX Mass Infernal Alacrity"
 
 #details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
 
 #descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 #descr 4 "The speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
+#descr b "$BLOOD_INTRO$, the caster increases the speed of SUBJECT, allowing PRONOUN to attack and act more rapidly." 
 
 #end
 

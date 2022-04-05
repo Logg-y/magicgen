@@ -7,29 +7,32 @@
 
 #spelltype 18
 
-#scalerate 7
-#scalefatigueexponent 0.2
+#scalerate 3
+#scalefatigueexponent 0
 -- #scalecost 0.6
 
 #nreff 3001
 #aoe 0
 #power 0
-#maxpower 4
+#maxpower 7
 #pathlevel 1
 #pathperresearch 0.1
 #flightspr 443
 #sound 45
-#fatiguecost 20
+#fatiguecost 5
 #aispellmod -66
 #range 5025
 
-#paths 8
+#paths eb
 #secondarypaths 0
-#secondarypathchance 95
+#secondarypathchance 40
 
 #name 8 "NAMEPREFIX Flying Shards"
+#name b "NAMEPREFIX Flying Shards"
 #descr 8 "The caster hurls several stones towards enemy units. The shards are not very powerful, but can severely injure lightly armored units. The number of shards hurled depends on the skill of the caster."
+#descr b "$BLOOD_INTRO$, the caster hurls several stones towards enemy units. The shards are not very powerful, but can severely injure lightly armored units. The number of shards hurled depends on the skill of the caster."
 
 #priority 1
 #namecond range < 10 8 "NAMEPREFIX touch of shards"
+#fatigueperresearch 0
 #end

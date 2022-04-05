@@ -33,7 +33,7 @@
 #nextspell "WoS Secondary mrn"
 
 #descr "This spell may also sharpen the weapons of those it affects."
-#details "Affected creatures make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
 
 #end
 
@@ -70,7 +70,7 @@
 #nextspell "WoS Secondary mrnh"
 
 #descr "This spell may also sharpen the weapons of those it affects."
-#details "Affected creatures make a hard MR check. Failing this check causes them to inflict AP damage with melee attacks."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check causes them to inflict AP damage with melee attacks."
 
 
 #end

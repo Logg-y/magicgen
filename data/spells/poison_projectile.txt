@@ -2,13 +2,57 @@
 #effect 7
 #damage 2010
 #spec 8320
+#aoe 4
+#power 3
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 100
+#explspr 10139
+#flightspr 10079
+#sound 83
+
+-- #paths 4+32+64
+#paths 64
+#secondarypaths 64
+
+#name 4 "NAMEPREFIX Vile Water"
+#name 32 "NAMEPREFIX Decomposed Fluid"
+#name 64 "NAMEPREFIX $poisonous$ %bolt%"
+#descr 4 "Projects ARTICLE poisonous %bolt% formed of stale water at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
+
+#spelltype 34
+
+#power 3
+#scalerate 1
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX poison touch"
+#namecond range < 10 32 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+
+
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
+#end
+
+#neweffect "Poison Projectile Gemless"
+#effect 7
+#damage 2010
+#spec 8320
 #aoe 1
 #power 3
 #maxpower 14
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 5
 #explspr 10139
 #flightspr 10079
 #sound 83
@@ -27,7 +71,7 @@
 #spelltype 34
 
 #power 1
-#scalerate 1
+#scalerate 0.2
 #pathlevel 2
 #schools 4
 
@@ -38,6 +82,9 @@
 #namecond range < 10 64 "NAMEPREFIX poison touch"
 
 
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 
@@ -67,16 +114,17 @@
 #effect 7
 #damage 2010
 #spec 8320
-#aoe 1
+#aoe 4
 #power 4
 #maxpower 14
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 100
 #explspr 10139
 #flightspr 10079
 #sound 83
+#aispellmod 20
 
 -- #paths 4+32+64
 #paths 32
@@ -93,7 +141,7 @@
 
 #nextspell "Poison Projectile Death Fear"
 
-#power 1
+#power 4
 #scalerate 1
 #pathlevel 2
 #schools 4
@@ -105,4 +153,59 @@
 #namecond range < 10 64 "NAMEPREFIX poison touch"
 
 
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
 #end
+
+
+#neweffect "Poison Projectile Death Only Gemless"
+#effect 7
+#damage 2010
+#spec 8320
+#aoe 1
+#power 2
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 5
+#explspr 10139
+#flightspr 10079
+#sound 83
+#aispellmod 20
+
+-- #paths 4+32+64
+#paths 32
+#secondarypaths 64
+
+#name 4 "NAMEPREFIX Vile Water"
+#name 32 "NAMEPREFIX Decomposed Fluid"
+#name 64 "NAMEPREFIX $poisonous$ %bolt%"
+#descr 4 "Projects ARTICLE poisonous %bolt% formed of stale water at enemies. Being hit by the bolts will result in becoming poisoned."
+#descr 32 "Projects ARTICLE poisonous %bolt% formed of vile fluids at enemies. Being hit by the bolts will result in becoming poisoned and repulsed by the foul liquid."
+#descr 64 "Projects ARTICLE poisonous %bolt% at enemies. Being hit by the bolts will result in becoming poisoned."
+
+#spelltype 34
+
+#nextspell "Poison Projectile Death Fear"
+
+#power 2
+#scalerate 0.2
+#pathlevel 2
+#schools 4
+
+#priority 1
+#namecond range < 10 4 "NAMEPREFIX poison touch"
+#namecond range < 10 32 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+#namecond range < 10 64 "NAMEPREFIX poison touch"
+
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#end
+
+
+
+

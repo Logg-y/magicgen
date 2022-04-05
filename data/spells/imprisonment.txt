@@ -64,6 +64,43 @@
 
 #end
 
+#neweffect "Imprisonment Gemless"
+#effect 109
+#damage 999
+#spec 128+16384+8388608+4096+70368744177664+1152921504606846976
+#schools 32
+#aispellmod 10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1
+-- #scalecost 1.1
+
+#aoe 0
+#power 5
+#maxpower 8
+#pathlevel 3
+#explspr 10279
+#sound 45
+#fatiguecost 20
+#precision 100
+#range 100
+
+#paths 8
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Imprisonment"
+
+#descr 8 "The caster attempts to open a tunnel beneath SUBJECT and imprison PRONOUN deep beneath the earth. There is no hope of escape from beneath the earth, and nothing to eat. Immortal living creatures will be able to find a way back once they starve to death, but undead and inanimate creatures have no such means to end their torment, and will remain trapped for eternity."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX Touch of Imprisonment"
+
+#nextspell "Imprisonment Kill Living"
+
+#end
+
 
 
 

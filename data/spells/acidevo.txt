@@ -6,6 +6,7 @@
 #paths -1
 #name 1 "Rust"
 #name 4 "Rust"
+#name b "Rust"
 -- evo, scale aoe
 #spelltype 2
 #scalerate 0
@@ -20,7 +21,7 @@
 -- firedmg, AP
 #spec 2199023255616
 -- evo
-#aoe 1
+#aoe 5
 #schools 4
 #range 5030
 #precision 3
@@ -28,31 +29,38 @@
 #flightspr 10070
 #explspr 10130
 #sound 16
-#fatiguecost 20
+#fatiguecost 100
 
-#paths 5
+#paths fwb
 #secondarypaths 5
 #secondarypathchance 100
+#pathskipchance b 95
 
-#name 1 "NAMEPREFIX Acid %Bolt%"
-#name 4 "NAMEPREFIX Acid %Bolt%"
+#name 1 "NAMEPREFIX Acid Blast"
+#name 4 "NAMEPREFIX Acid Blast"
+#name b "NAMEPREFIX Infernal Acid Blast"
 
 #descr 1 "A gush of highly corrosive fluid flows away from caster. The acid burns the armor of the target as well as his, her or its flesh."
 #descr 4 "A gush of highly corrosive fluid flows away from caster. The acid burns the armor of the target as well as his, her or its flesh."
+#descr b "$BLOOD_INTRO$, the caster projects a wave of highly corrosive fluids towards enemies."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 3
+#power 4
 #maxpower 14
-#scalerate 1
+#scalerate 1.2
 #pathlevel 3
 
 #priority 1
-#namecond range < 10 1 "NAMEPREFIX Acid Touch"
-#namecond range < 10 4 "NAMEPREFIX Acid Touch"
+#namecond range < 10 1 "NAMEPREFIX Acid Eruption"
+#namecond range < 10 4 "NAMEPREFIX Acid Eruption"
+#namecond range < 10 b "NAMEPREFIX Infernal Acid Eruption"
 #descrcond range < 10 1 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
 #descrcond range < 10 4 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
+#descrcond range < 10 b "$BLOOD_INTRO$, a gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
+#scalefatigueexponent 1.5
+#pathperresearch 0.4
 #end
 
 #neweffect "Acid Evo Instant"
@@ -69,15 +77,18 @@
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
-#paths 5
+#paths fwb
 #secondarypaths 5
 #secondarypathchance 100
+#pathskipchance b 95
 
-#name 1 "NAMEPREFIX Acid Rain"
-#name 4 "NAMEPREFIX Acid Rain"
+#name 1 "NAMEPREFIX Acidic Downpour"
+#name 4 "NAMEPREFIX Acidic Downpour"
+#name b "NAMEPREFIX Infernal Acidic Downpour"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr b "$BLOOD_INTRO$, a gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
@@ -86,10 +97,12 @@
 #schools 4
 
 #priority 1
-#namecond range < 10 1 "NAMEPREFIX Acid Burst"
-#namecond range < 10 4 "NAMEPREFIX Acid Burst"
+#namecond range < 10 1 "NAMEPREFIX Acid Grasp"
+#namecond range < 10 4 "NAMEPREFIX Acid Grasp"
+#namecond range < 10 b "NAMEPREFIX Grasp of Infernal Acid"
 #descrcond range < 10 1 "A gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
 #descrcond range < 10 4 "A gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
+#descrcond range < 10 b "$BLOOD_INTRO$, a gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
 #end
 
 
@@ -108,15 +121,18 @@
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
-#paths 5
+#paths fwb
 #secondarypaths 5
 #secondarypathchance 100
+#pathskipchance b 95
 
 #name 1 "NAMEPREFIX Acid Rain"
 #name 4 "NAMEPREFIX Acid Rain"
+#name 128 "NAMEPREFIX Infernal Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr b "$BLOOD_INTRO$, a gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 
 -- evo-like, scale aoe
 #spelltype 34
@@ -140,15 +156,18 @@
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
-#paths 5
+#paths fwb
+#pathskipchance b 95
 #secondarypaths 5
 #secondarypathchance 100
 
 #name 1 "NAMEPREFIX Acid Rain"
 #name 4 "NAMEPREFIX Acid Rain"
+#name b "NAMEPREFIX Infernal Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr b "$BLOOD_INTRO$, a gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 
 -- evo-like, scale aoe
 #spelltype 34
@@ -172,15 +191,17 @@
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
-#paths 5
+#paths fwb
 #secondarypaths 5
 #secondarypathchance 100
 
 #name 1 "NAMEPREFIX Acid Rain"
 #name 4 "NAMEPREFIX Acid Rain"
+#name b "NAMEPREFIX Infernal Acid Rain"
 
 #descr 1 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 #descr 4 "A gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
+#descr b "$BLOOD_INTRO$ gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 
 -- evo-like, scale aoe
 #spelltype 34
@@ -188,3 +209,4 @@
 -- #scalecost 0.3
 #schools 4
 #end
+

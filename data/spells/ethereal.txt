@@ -21,22 +21,30 @@
 
 
 -- astral
-#paths 16
+#paths sbd
 #secondarypaths 16
 
 #details "Ethereal: 75% chance to negate non-magical damage. Allows movement through walls."
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Body Ethereal"
+#namecond effectiveaoe < 2 d "NAMEPREFIX Spectral Body"
+#name b "NAMEPREFIX Infernal Incorporeality"
 
 #namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Ethereal Warriors"
+#namecond2 2 <= effectiveaoe < 666 d "NAMEPREFIX Spectral Warriors"
 
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Ethereal Army"
+#namecond effectiveaoe == 666 d "NAMEPREFIX Spectral Army"
 
 
 #descr 16 "The %body% of SUBJECT %is% made transparent and ghostlike."
+#descr 32 "The %body% of SUBJECT %is% made transparent and ghostlike."
+#descr b "$BLOOD_INTRO$, the %body% of SUBJECT %is% made transparent and ghostlike."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of etherealness"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of etherealness"
+#namecond effect > 1000 d "NAMEPREFIX $mist$ of etherealness"
 
 #pathperresearch 0.6
 #end

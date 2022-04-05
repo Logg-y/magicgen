@@ -15,13 +15,57 @@
 #effect 2109
 #damage 1
 #spec 539508864
-#aoe 1
+#aoe 3
 #power 4
 #maxpower 14
 #precision 1
 #range 40
 #pathlevel 3
-#fatiguecost 40
+#fatiguecost 100
+#explspr 10279
+#flightspr 10278
+#sound 21
+
+#aispellmod 200
+
+#skipchance 80
+
+#aispellmod 200
+
+-- #paths 1+2+4+16+64+128
+#paths 8
+#secondarypaths 2
+#secondarypathchance 98
+
+
+
+#name 8 "NAMEPREFIX $dust$ Blast"
+#descr 8 "The caster projects ARTICLE %bolt% of $dust$ at his enemies. The landing %site% %is% briefly filled with a plume of dust, harming and fatiguing any in the affected area that need to breathe."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX $dust$ burst"
+#descrcond range < 10 8 "The caster creates a burst of $dust$ at a nearby location. Any creatures in the affected area the need to breathe are harmed and fatigued if they are exposed to the dust."
+
+#spelltype 34
+#nextspell "Dust Fatigue"
+
+#power 4
+#scalerate 1.4
+#pathlevel 2
+#schools 4
+#end
+
+#neweffect "Dust Projectile Gemless"
+#effect 2109
+#damage 1
+#spec 539508864
+#aoe 1
+#power 3
+#maxpower 14
+#precision 1
+#range 40
+#pathlevel 3
+#fatiguecost 10
 #explspr 10279
 #flightspr 10278
 #sound 21
@@ -49,10 +93,13 @@
 #spelltype 34
 #nextspell "Dust Fatigue"
 
-#power 4
-#scalerate 1
+#power 3
+#scalerate 0.2
 #pathlevel 2
 #schools 4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
 #end
 
 #neweffect "Dust Fatigue Long"
@@ -88,7 +135,7 @@
 #effect 6109
 #damage 1
 #spec 539508864
-#aoe 1005
+#aoe 1004
 #power 4
 #maxpower 14
 #precision 1
@@ -119,3 +166,5 @@
 #pathlevel 2
 #schools 4
 #end
+
+

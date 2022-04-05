@@ -1,0 +1,5 @@
+#newunit "Black Harpy"
+#baseunit 430
+#raw "#gcost 1"
+#set gcost 1
+#end

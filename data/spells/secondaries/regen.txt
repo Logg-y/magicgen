@@ -30,7 +30,7 @@
 #nextspell "Regen Secondary mrn"
 
 #descr "This spell may also make those it affects rapidly heal wounds."
-#details "Affected creatures make an MR check. Failing this check grants 10% regeneration."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants 10% regeneration."
 
 #end
 
@@ -66,6 +66,6 @@
 #nextspell "Regen Secondary mrnh"
 
 #descr "This spell may also make those it affects rapidly heal wounds."
-#details "Affected creatures make a hard MR check. Failing this check grants 10% regeneration."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check grants 10% regeneration."
 
 #end

@@ -1,0 +1,5 @@
+#newunit "Slave of Belphegor"
+#baseunit 993
+#raw "#gcost 2"
+#set gcost 2
+#end

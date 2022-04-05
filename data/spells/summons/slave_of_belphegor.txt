@@ -1,0 +1,83 @@
+
+#neweffect "slave of belphegor ritual"
+#newunit "Slave of Belphegor"
+#effect 10001
+#damage 303
+#spec 0
+#power 2
+#maxpower 14
+#nreff 1002
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "Bind NAMEPREFIX %Slave% of Belphegor"
+#descr 128 "$BLOOD_INTRO$, the caster bargains for the services of several of Belphegor's human slaves. As they have already sold their souls to Belphegor, they require no payment and only very little in the way of upkeep."
+
+#spelltype 20
+
+#skipchance 82
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 80
+
+#scalerate 2
+#end
+
+#neweffect "Slave of Belphegor Remote Assassination"
+#newunit "Slave of Belphegor"
+#effect 10050
+#provrange 4
+#damage 303
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#paths 128
+#secondarypaths 128
+
+#name 128 "NAMEPREFIX Slave of Belphegor Attack"
+#descr 128 "$BLOOD_INTRO$, the caster bargains for the services of one of Belphegor's human slaves, who is sent to ambush an enemy commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "slave of belphegor remote"
+#newunit "Slave of Belphegor"
+#effect 10038
+#provrange 4
+#damage 303
+#spec 0
+#power 3
+#maxpower 14
+#nreff 2004
+#pathlevel 3
+#fatiguecost 2900
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#paths 128
+#secondarypaths 128
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#name 128 "Send NAMEPREFIX Slaves of Belphegor"
+#descr 128 "$BLOOD_INTRO$, the caster bargains for a group of Belphegor's human slaves to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2
+#end

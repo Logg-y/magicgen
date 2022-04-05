@@ -34,7 +34,7 @@
 #nextspell "Burning Secondary mrnh"
 
 #descr "A sudden and intense burst of heat may cause those affected by the spell to catch fire."
-#details "Affected creatures make a hard MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 
 #end
 
@@ -75,7 +75,7 @@
 #nextspell "Burning Secondary mrn"
 
 #descr "A sudden and intense burst of heat may cause those affected by the spell to catch fire."
-#details "Affected creatures make an MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist are catch fire: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 
 #end
 

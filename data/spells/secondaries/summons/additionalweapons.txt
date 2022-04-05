@@ -69,7 +69,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 30
+#fatiguecostpereffect 40
 #mult fatiguecost 1.1
 
 #unitmod "Summon Bile Breath"
@@ -91,7 +91,7 @@
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 60
+#fatiguecostpereffect 80
 #mult fatiguecost 1.1
 
 #unitmod "Summon Bile Breath"

@@ -210,12 +210,14 @@
 #range 5025
 #precision 100
 
-#paths f
+#paths bf
 #secondarypaths f
 
 #namecond effectiveaoe == 1 f "NAMEPREFIX Cauterise Wounds"
+#namecond effectiveaoe == 1 b "NAMEPREFIX Cauterise Wounds"
 
-#descr f "The wounds of troops across a SIZE area are rapidly cauterised, allowing the recipients to continue fighting. The process will however ignite those that are not fire resistant."
+#descr f "The wounds of troops across a SIZE area are rapidly cauterised, allowing the recipients to continue fighting. The process may however ignite those that are not fire resistant."
+#descr b "$BLOOD_INTRO$, the caster cauterises the wounds of troops across a SIZE area, allowing the recipients to continue fighting. The process may however ignite those that are not fire resistant."
 #details "This spell heals for EFFECTIVEDAMAGE points, plus DAMAGESCALING per additional caster level. This amount is subject to the same DRN rolls as if it were AN damage.\n\nBurning: Creatures set on fire lose health per turn equal to a closed d(size). The chance of fire going out per round is 25% + (5*Fire resistance) + (5*cold scale) + 100% if raining. There is always a 1% chance for fires to be extinguished."
 
 #priority 1

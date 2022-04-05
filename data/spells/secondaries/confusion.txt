@@ -42,7 +42,7 @@
 #aispellmod 20
 
 #descr "Those affected by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Affected creatures make a hard MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
 
@@ -89,7 +89,7 @@
 #aispellmod 40
 
 #descr "Those affected by this spell may become confused by its strange magic, which can make them inclined to attack anyone close to them."
-#details "Affected creatures make an MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist become confused: There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #end
 

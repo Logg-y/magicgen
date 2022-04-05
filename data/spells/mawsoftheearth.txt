@@ -11,6 +11,7 @@
 #power 0
 #maxpower 50
 #name 8 "Grip of the Earth"
+#name b "Grip of the Earth"
 #end
 
 
@@ -30,12 +31,16 @@
 #sound 45
 
 
-#paths e
+#paths eb
 #secondarypaths e
+#secondarypathchance 90
 
-#name e "NAMEPREFIX Maw of the Earth"
+#name e "NAMEPREFIX Maws of the Earth"
+#name b "NAMEPREFIX Maws of the Lower Planes"
 #descr e "The earth cringes and heaves and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
+#descr b "$BLOOD_INTRO$, the caster causes the earth to cringe and heave and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
 #priority 1
+#namecond range < 10 b "NAMEPREFIX Grip of the Lower Planes"
 #namecond range < 10 e "NAMEPREFIX Grip of the Earth"
 #maxpower 9
 
@@ -46,4 +51,45 @@
 #scalerate 1.7
 #schools alt
 #scalefatigueexponent 1.4
+#end
+
+
+#neweffect "Maws of the Earth Gemless"
+#effect 2
+#damage 1012
+#spec 70368752566336
+#aoe 0
+#power 3
+#nreff 1
+#maxpower 14
+#precision 1
+#range 5025
+#pathlevel 2
+#fatiguecost 10
+#explspr 10279
+#sound 45
+
+
+#paths eb
+#secondarypaths e
+#secondarypathchance 90
+
+#name e "NAMEPREFIX Maws of the Earth"
+#name b "NAMEPREFIX Maws of the Lower Planes"
+#descr b "$BLOOD_INTRO$, the caster makes the earth cringe and heave and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
+#descr e "The earth cringes and heaves and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
+#priority 1
+#namecond range < 10 e "NAMEPREFIX Grip of the Earth"
+#namecond range < 10 e "NAMEPREFIX Grip of the Lower Planes"
+#maxpower 14
+
+#nextspell "Maws Earthgrip"
+
+-- evo-like, scale nreff
+#spelltype 42
+#scalerate 0.33
+#schools alt
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end

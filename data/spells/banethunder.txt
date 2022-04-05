@@ -16,14 +16,16 @@
 
 #skipchance 70
 
-#paths ad
+#paths adb
 #secondarypaths ad
 #secondarypathchance 100
 
 #name 2 "NAMEPREFIX Banethunder %Strike%"
 #name 32 "NAMEPREFIX Banethunder %Strike%"
+#name b "Pazuzu's NAMEPREFIX Lightning"
 #descr a "The caster causes banethunder to strike a small number of enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
 #descr d "The caster causes banethunder to strike a small number of enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+#descr b "$BLOOD_INTRO$, the caster causes banethunder to strike a small number of enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
 
 #nextspell "Banefire Decay"
 
@@ -35,8 +37,10 @@
 #priority 1
 #namecond range < 10 2 "NAMEPREFIX Banethunder Touch"
 #namecond range < 10 32 "NAMEPREFIX Banethunder Touch"
+#namecond range < 10 b "NAMEPREFIX Touch of Pazuzu's Lightning"
 #descrcond range < 10 2 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
 #descrcond range < 10 32 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
+#descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
 #scalefatiguemult 15
 #scalefatigueexponent -1.6
 #end
@@ -59,14 +63,16 @@
 
 #skipchance 70
 
-#paths ad
+#paths adb
 #secondarypaths ad
 #secondarypathchance 100
 
 #name 2 "NAMEPREFIX Banethunder %Strike%"
 #name 32 "NAMEPREFIX Banethunder %Strike%"
+#name b "Pazuzu's NAMEPREFIX Bolts"
 #descr a "The caster calls multiple strikes of banethunder onto his enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
 #descr d "The caster calls multiple strikes of banethunder onto his enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
+#descr b "$BLOOD_INTRO$, the caster calls multiple strikes of banethunder onto his enemies. Banethunder is sickly greenish thunder said to be touched by the Underworld."
 
 #nextspell "Banefire Decay"
 

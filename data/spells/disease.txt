@@ -11,16 +11,18 @@
 #fatiguecost 30
 #explspr 10199
 #sound 42
-#paths 97
+#paths fndb
 #secondarypaths 97
 #secondarypathchance 80
 #name 1 "NAMEPREFIX Fever"
 #name 32 "NAMEPREFIX Deathly Fever"
 #name 64 "NAMEPREFIX Deathly Fever"
+#name 128 "NAMEPREFIX Infernal Fever"
 
 #descr 1 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 32 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 64 "The caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr b "$BLOOD_RITUAL$, the caster afflicts SUBJECT with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
@@ -48,16 +50,18 @@
 #fatiguecost 200
 #explspr 10199
 #sound 42
-#paths 97
+#paths fndb
 #secondarypaths 97
 #secondarypathchance 80
 #name 1 "NAMEPREFIX Mass Fever"
 #name 32 "NAMEPREFIX Mass Deathly Fever"
 #name 64 "NAMEPREFIX Mass Deathly Fever"
+#name b "NAMEPREFIX Mass Infernal Fever"
 
 #descr 1 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 32 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 #descr 64 "The caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
+#descr b "$BLOOD_RITUAL$, the caster afflicts everyone on the battlefield with a deadly fever. Whilst this will not have much effect in battle, it will gradually kill the %victim%."
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42

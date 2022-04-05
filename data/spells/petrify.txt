@@ -40,6 +40,45 @@
 #pathperresearch 0.4
 #end
 
+#neweffect "Petrify MRN"
+#effect 99
+#damage 999
+#spec 8388736+4096
+#schools 2
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 1.7
+-- #scalecost 0.7
+
+#aoe 0
+#power 3
+#maxpower 12
+#pathlevel 3
+#explspr 10121
+#sound 45
+#fatiguecost 20
+#range 5010
+#precision 100
+
+#paths 8
+#secondarypaths 8
+
+#namecond effectiveaoe == 0 8 "NAMEPREFIX Lesser Petrification"
+
+#details "Affected targets become petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
+
+#descr 8 "The caster temporarily turns creatures within a SIZE area to stone. This effect may be resisted. Instead of reverting to their original form, petrified creatures may crumble to dust."
+
+#priority 1
+#namecond effect > 1000 8 "NAMEPREFIX $mist$ of lesser petrification"
+#namecond range < 10 8 "NAMEPREFIX touch of lesser petrification"
+
+#scalefatigueexponent 1.4
+#pathperresearch 0.4
+#end
+
 
 #neweffect "Mass Petrification"
 #effect 99

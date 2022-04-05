@@ -9,14 +9,14 @@
 #nreff 4010
 #range 5020
 #pathlevel 2
-#fatiguecost 30
+#fatiguecost 10
 #flightspr 304
 #sound 42
 #aispellmod -50
 #skipchance 30
 
 -- #paths 8+128
-#paths 136
+#paths eb
 #secondarypaths 8
 
 #name 8 "NAMEPREFIX $blade$ wind"
@@ -39,7 +39,8 @@
 #descrcond range < 10 8 "The caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
 
-#scalefatigueexponent 1.4
+#scalefatigueexponent 0
+#fatigueperresearch 0
 #end
 
 #neweffect "Blade Wind AP"
@@ -51,17 +52,17 @@
 #power 5
 #maxpower 14
 #precision 2
-#nreff 2001
+#nreff 5015
 #range 5020
-#pathlevel 2
-#fatiguecost 40
+#pathlevel 3
+#fatiguecost 100
 #flightspr 304
 #sound 42
 #aispellmod -40
 #skipchance 30
 
 -- #paths 8+128
-#paths 136
+#paths eb
 #secondarypaths 8
 
 #name 8 "NAMEPREFIX Shower of Sharpness"
@@ -78,11 +79,58 @@
 
 #spelltype 18
 
-#scalerate 3
+#scalerate 2.5
+-- #scalecost 0.15
+#pathlevel 3
+#schools 4
+#scalefatigueexponent 1.1
+#scalefatiguemult 1
+#end
+
+#neweffect "Blade Wind AP Gemless"
+#effect 2
+#damage 1012
+-- AP, slash, iron
+#spec 1099578736704
+#aoe 0
+#power 5
+#maxpower 14
+#precision 2
+#nreff 2001
+#range 5020
+#pathlevel 2
+#fatiguecost 20
+#flightspr 304
+#sound 42
+#aispellmod -40
+#skipchance 30
+
+-- #paths 8+128
+#paths 136
+#secondarypaths 8
+
+#name 8 "NAMEPREFIX Burst of Sharpness"
+#name 128 "NAMEPREFIX $infernal$ evisceration"
+#descr 8 "The caster creates a number of blades and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
+#descr 128 "$BLOOD_INTRO$, the caster creates blades of infernal iron and sends them flying towards his enemies. These blades are enchanted and sharpened with magic, enabling them to bypass some armour."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX Touch of Piercing Blades"
+#namecond range < 10 128 "NAMEPREFIX Touch of Piercing Blades"
+#descrcond range < 10 8 "The caster hurls an incredible number of sharpened blades at a target very close to him. Being struck by this many blades at point blank range must surely be fatal to any foe."
+#descrcond range < 10 128 "$BLOOD_INTRO$, the caster hurls an incredible number of sharpened blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
+
+#spelltype 18
+
+#scalerate 2
 -- #scalecost 0.15
 #pathlevel 2
 #schools 4
-#scalefatigueexponent 1.2
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.4
 #end
+
+
 
 

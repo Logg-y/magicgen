@@ -7,32 +7,76 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#scalerate 1
-#scalefatigueexponent -1
+#scalerate 1.1
+#scalefatigueexponent 1.2
+-- #scalecost 0.6
+
+#nreff 1
+#aoe 5
+#power 3
+#maxpower 14
+#pathlevel 2
+#pathperresearch 0.3
+#flightspr 101
+#explspr 10312
+#sound 45
+#fatiguecost 100
+#range 5025
+
+#paths eb
+#secondarypaths e
+#secondarypathchance 50
+
+#name 8 "Wave of NAMEPREFIX Boulders"
+#name b "Wave of NAMEPREFIX Boulders"
+#descr 8 "The caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+#descr b "$BLOOD_INTRO$, the caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+
+#priority 1
+#namecond range < 10 8 "NAMEPREFIX touch of boulders"
+#namecond range < 10 b "NAMEPREFIX touch of boulders"
+#scalefatiguemult 0
+#end
+
+#neweffect "Boulder Evo Gemless"
+#effect 2
+#damage 3016
+#spec 2097152+549755813888
+#schools 4
+
+-- evo-like, can have close range variants, scale aoe
+#spelltype 34
+
+#scalerate 0.2
+#scalefatigueexponent 0
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 1
-#power 2
-#maxpower 10
+#power 1
+#maxpower 12
 #pathlevel 2
-#pathperresearch 0.5
+#pathperresearch 0.2
 #flightspr 101
 #explspr 10312
 #sound 45
-#fatiguecost 20
+#fatiguecost 5
 #range 5025
 
-#paths 8
-#secondarypaths 0
-#secondarypathchance 95
+#paths eb
+#secondarypaths e
+#secondarypathchance 50
 
-#name 8 "NAMEPREFIX Hurl %Boulder%"
-#descr 8 "The caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+#name 8 "Hurl NAMEPREFIX %Boulder%"
+#name b "Hurl NAMEPREFIX %Boulder%"
+#descr b "The caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+#descr 8 "$BLOOD_INTRO$, the caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
 
 #priority 1
+#namecond range < 10 b "NAMEPREFIX touch of boulders"
 #namecond range < 10 8 "NAMEPREFIX touch of boulders"
-#scalefatiguemult 6
+#scalefatiguemult 0
+#fatigueperresearch 0
 #end
 
 
@@ -67,5 +111,7 @@
 #pathlevel 5
 #scalefatigueexponent 1
 #end
+
+
 
 

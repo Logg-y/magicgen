@@ -15,7 +15,7 @@ CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "
           "researchmodifier", "fatiguemodflat", "fatiguemodmult", "pathlevelmodflat",
           "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "siteidstart",
           "montagidstart", "diffpathsecondarychance",
-          "eventcodestart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale",
+          "eventcodestart", "enchantidstart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale",
           "siteidstart", "nobadaispells"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
@@ -227,10 +227,12 @@ def detectids(window, modlist):
     starteventid = min(nationals.eventcodes) - 1
     startmontagid = max(nationals.montagids) + 1
     startsiteid = max(nationals.siteids) + 1
+    startenchantaid = max(nationals.enchantids) + 1
     window["-spellidstart-"].update(value=str(startspellid))
     window["-weaponidstart-"].update(value=str(startweaponid))
     window["-unitidstart-"].update(value=str(startunitid))
     window["-eventcodestart-"].update(value=str(starteventid))
+    window["-enchantidstart-"].update(value=str(startenchantid))
     window["-montagidstart-"].update(value=str(startmontagid))
     window["-siteidstart-"].update(value=str(startsiteid))
 
@@ -391,6 +393,9 @@ def main():
         [sg.Text('Starting Event Code. (Allowed range for these is -300 to -5000)', size=(50, 2),
                  relief="ridge"),
          sg.InputText(key='-eventcodestart-', size=(4, 1), default_text=-300)],
+        [sg.Text('Starting Enchantment ID. (Allowed range for these is 500+)', size=(50, 2),
+                 relief="ridge"),
+         sg.InputText(key='-enchantidstart-', size=(4, 1), default_text=500)],
         [sg.Button("Autodetect Good Starting IDs")],
         [sg.Text('Scale the number of units in montags. Lower this if experiencing "monster ID too high" errors. '
                  'Increase to make random unit pools larger.', size=(50, 3),

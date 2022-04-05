@@ -20,7 +20,7 @@
 
 #spelltype 18
 
-#scalerate 1.5
+#scalerate 0.8
 -- #scalecost 0.6
 
 #nreff 1
@@ -30,20 +30,26 @@
 #pathlevel 1
 #flightspr 419
 #sound 31
-#fatiguecost 20
+#fatiguecost 5
 #range 5025
 
-#paths 64
-#secondarypaths 0
-#secondarypathchance 95
+#paths nb
+#secondarypaths n
+#secondarypathchance 20
 #nextspell "Vine Arrow Entangle"
 #name 64 "NAMEPREFIX Vine %Arrow%"
+#name b "NAMEPREFIX Hellvine %Arrow%"
 #descrcond effectivenreff == 1 64 "The caster shoots an enchanted Vine Arrow against his enemies. The arrow will come alive and entangle anyone who is hit."
+#descrcond effectivenreff == 1 b "$BLOOD_INTRO$, the caster shoots an enchanted Vine Arrow against his enemies. The arrow will come alive and entangle anyone who is hit."
 #descrcond effectivenreff != 1 64 "The caster shoots a several enchanted Vine Arrows against his enemies. The arrows will come alive and entangle anyone who is hit."
+#descrcond effectivenreff != 1 b "$BLOOD_INTRO$, the caster shoots a several enchanted Vine Arrows against his enemies. The arrows will come alive and entangle anyone who is hit."
 
 #priority 1
 #namecond range < 10 64 "NAMEPREFIX touch of entangling plants"
-#scalefatiguemult 7
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
+#namecond range < 10 b "NAMEPREFIX touch of entangling plants"
+#scalefatiguemult 0
+#scalefatigueexponent 0
+#pathperresearch 0.22
+#fatigueperresearch 0
 #end
+

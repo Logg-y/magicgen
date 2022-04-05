@@ -127,7 +127,7 @@
 
 #scalerate 4.3
 -- #scalecost 0.6
-#scalefatigueexponent -0.07
+#scalefatigueexponent 0
 
 #aoe 10
 #power 1
@@ -136,7 +136,7 @@
 #explspr 10272
 #flightspr 10061
 #sound 31
-#fatiguecost 10
+#fatiguecost 5
 #range 20
 
 #aispellmod -60
@@ -153,6 +153,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of dazzling colours"
 #namecond range < 10 64 "NAMEPREFIX touch of dazzling colours"
 
+#fatigueperresearch 0
 #end
+
 
 

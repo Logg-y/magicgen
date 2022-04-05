@@ -22,19 +22,30 @@
 
 #ainocast 1
 
-#paths 64
+#paths fnb
 #secondarypaths 64
 
+#namecond effectiveaoe < 1 f "NAMEPREFIX Berserk Rage"
 #namecond effectiveaoe < 1 64 "NAMEPREFIX Berserk Rage"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Infernal Rage"
 
+#namecond2 1 <= effectiveaoe < 5 f "NAMEPREFIX Berserk Wave"
 #namecond2 1 <= effectiveaoe < 5 64 "NAMEPREFIX Berserk Wave"
+#namecond2 1 <= effectiveaoe < 600 b "NAMEPREFIX Wave of Infernal Rage"
+#namecond2 5 <= effectiveaoe < 600 f "NAMEPREFIX Berserk Mob"
 #namecond2 5 <= effectiveaoe < 600 64 "NAMEPREFIX Berserk Mob"
+#namecond2 600 < effectiveaoe < 700 f "NAMEPREFIX Mass Berserking"
 #namecond2 600 < effectiveaoe < 700 64 "NAMEPREFIX Mass Berserking"
+#namecond2 600 < effectiveaoe < 700 b "NAMEPREFIX Mass Berserking"
 
+#descr f "The caster forces SUBJECT to go berserk. This spell cannot affect the caster, and does not affect enemies."
 #descr 64 "The caster forces SUBJECT to go berserk. This spell cannot affect the caster, and does not affect enemies."
+#descr b "$BLOOD_INTRO$, the caster forces SUBJECT to go berserk. This spell cannot affect the caster, and does not affect enemies."
 
 #priority 1
+#namecond effect > 1000 f "NAMEPREFIX $mist$ of berserk rage"
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of berserk rage"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal rage"
 
 #end
 
@@ -63,19 +74,22 @@
 
 #ainocast 1
 
-#paths 65
+#paths fnb
 #secondarypaths 64
 
 #aispellmod -70
 
 #name 1 "NAMEPREFIX Seething Rage"
 #name 64 "NAMEPREFIX Unbridled Anger"
+#name b "NAMEPREFIX Infernal Anger"
 
 #descr 1 "The caster attempts to fill all living beings on the battlefield with berserk rage."
 #descr 64 "The caster attempts to fill all living beings on the battlefield with berserk rage."
+#descr b "$BLOOD_INTRO$, the caster attempts to fill all living beings on the battlefield with berserk rage."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of unbridled anger"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal anger"
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of seething rage"
 
 

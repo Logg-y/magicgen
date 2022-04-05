@@ -7,7 +7,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 6
+#scalerate 3
 
 #aoe 0
 #power 6

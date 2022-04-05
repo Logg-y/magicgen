@@ -32,7 +32,7 @@
 #nextspell "Web Secondary mrn"
 
 #descr "This spell additionally conjures a mass of sticky webs around those affected, which may trap them."
-#details "Affected creatures make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 
 
 #end
@@ -71,7 +71,7 @@
 #nextspell "Web Secondary mrnh"
 
 #descr "This spell additionally conjures a mass of sticky webs around those affected, which may trap them."
-#details "Affected creatures make a hard MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
+#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check causes them to be snared in webs, immobilising them. Each turn they roll Str + DRN, a result of 22 or higher causes them to break free."
 #end
 
 

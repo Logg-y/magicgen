@@ -37,7 +37,7 @@
 #nextspell "Desiccation Secondary mrnh"
 
 #descr "This spell is imbued with energy that may severely dehydrate those affected."
-#details "Affected creatures make a hard MR check. Those that fail to resist become desiccated: Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become desiccated: Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
 
 #end
 
@@ -77,7 +77,7 @@
 #nextspell "Desiccation Secondary mrn"
 
 #descr "This spell is imbued with energy that may severely dehydrate those affected."
-#details "Affected creatures make an MR check. Those that fail to resist become desiccated: Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist become desiccated: Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
 
 #end
 

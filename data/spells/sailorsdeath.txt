@@ -7,21 +7,74 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.5
 -- #scalecost 1.6
 
-#aoe 0
+#aoe 4
 #power 2
-#maxpower 6
+#maxpower 8
 #pathlevel 2
 #explspr 10125
 #sound 31
-#fatiguecost 20
+#fatiguecost 100
 #precision 1
 #range 100
 
 -- AWD
-#paths 38
+#paths awdb
+#secondarypaths 38
+#secondarypathchance 5
+
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Sailor's Death"
+#namecond effectiveaoe >= 1 4 "NAMEPREFIX Sailors' Death"
+#name 4 "NAMEPREFIX Drown"
+#name b "NAMEPREFIX Suffocate"
+
+#name 2 "NAMEPREFIX Suffocate"
+#name 2 "NAMEPREFIX Asphyxiate"
+
+#name 32 "NAMEPREFIX Suffocate"
+#name 32 "NAMEPREFIX Asphyxiate"
+
+#descr 2 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr b "$BLOOD_INTRO$, the caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 4 "The caster attempts to fill the lungs of SUBJECT with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr 32 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+
+#priority 1
+#namecond range < 10 16 "NAMEPREFIX Touch of Drowning"
+#namecond range < 10 2 "NAMEPREFIX Touch of Suffocation"
+#namecond range < 10 b "NAMEPREFIX Touch of Suffocation"
+#namecond range < 10 32 "NAMEPREFIX Touch of Suffocation"
+
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
+#end
+
+#neweffect "Sailor's Death gemless"
+#effect 2
+#damage 3005
+#spec 36028797556428928
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.3
+-- #scalecost 1.6
+
+#aoe 0
+#power 2
+#maxpower 14
+#pathlevel 2
+#explspr 10125
+#sound 31
+#fatiguecost 10
+#precision 1
+#range 100
+
+-- AWD
+#paths awdb
 #secondarypaths 38
 #secondarypathchance 5
 
@@ -31,11 +84,13 @@
 
 #name 2 "NAMEPREFIX Suffocate"
 #name 2 "NAMEPREFIX Asphyxiate"
+#name b "NAMEPREFIX Asphyxiate"
 
 #name 32 "NAMEPREFIX Suffocate"
 #name 32 "NAMEPREFIX Asphyxiate"
 
 #descr 2 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
+#descr b "$BLOOD_INTRO$, the caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 4 "The caster attempts to fill the lungs of SUBJECT with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 32 "The caster attempts to prevent SUBJECT from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 
@@ -44,6 +99,9 @@
 #namecond range < 10 2 "NAMEPREFIX Touch of Suffocation"
 #namecond range < 10 32 "NAMEPREFIX Touch of Suffocation"
 
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#fatigueperresearch 0
 #end
 
 
@@ -87,3 +145,5 @@
 #descr 32 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 
 #end
+
+

@@ -1,0 +1,103 @@
+#neweffect "Nether Feeblemind"
+#effect 11
+#damage 33554432
+#spec  	4224
+#schools -1
+-- evo, scale aoe
+#spelltype 2
+#aoe 1
+#power 1
+#name s "Area Feeblemind"
+#name d "Area Feeblemind"
+#name b "Area Feeblemind"
+#maxpower 30
+#end
+
+
+#neweffect "Nether Bolt"
+#effect 74
+#damage 1014
+#spec 9048192
+#aoe 4
+#power 3
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 2
+#fatiguecost 100
+#explspr 10107
+#flightspr 10080
+#sound 18
+
+-- #paths 4+32+64
+#paths sd
+#secondarypaths sd
+#secondarypathchance 90
+
+#name 32 "NAMEPREFIX Nether blast"
+#name 16 "NAMEPREFIX Nether blast"
+#descr 16 "The caster fires dark energies at enemies. Those who survive the bolt may become feebleminded by the strange energies it releases."
+#descr 32 "The caster fires dark energies at enemies. Those who survive the bolt may become feebleminded by the strange energies it releases."
+
+#spelltype 34
+
+#scalerate 1
+#pathlevel 2
+#schools 4
+
+#nextspell "Nether Feeblemind"
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX touch of the Nether"
+#namecond range < 10 b "NAMEPREFIX touch of the Nether"
+#descrcond range < 10 d "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
+#descrcond range < 10 s "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
+#scalefatigueexponent 1.35
+#pathperresearch 0.4
+#end
+
+
+#neweffect "Nether Bolt Gemless"
+#effect 74
+#damage 1014
+#spec 9048192
+#aoe 1
+#power 3
+#maxpower 14
+#precision 1
+#range 5020
+#pathlevel 3
+#fatiguecost 5
+#explspr 10148
+#flightspr 10147
+#sound 18
+
+#paths sd
+#secondarypaths sd
+#secondarypathchance 90
+
+
+#name 32 "NAMEPREFIX Nether bolt"
+#name 16 "NAMEPREFIX Nether bolt"
+#descr 16 "The caster fires dark energies at enemies. Those who survive the bolt may become feebleminded by the strange energies it releases."
+#descr 32 "The caster fires dark energies at enemies. Those who survive the bolt may become feebleminded by the strange energies it releases."
+
+#spelltype 34
+
+#scalerate 0.2
+#pathlevel 2
+#schools 4
+
+#nextspell "Nether Feeblemind"
+
+#priority 1
+#namecond range < 10 32 "NAMEPREFIX touch of the Nether"
+#namecond range < 10 b "NAMEPREFIX touch of the Nether"
+#descrcond range < 10 d "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
+#descrcond range < 10 s "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.3
+#end
+
+

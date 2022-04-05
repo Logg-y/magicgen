@@ -27,6 +27,6 @@
 #nextspell "Flaming Arrows Secondary mrnh"
 
 #descr "This spell may also ignite the ranged weapons of those it affects."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain flaming arrows: non innate ranged weapons do an additional 8 AP fire damage."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain flaming arrows: non innate ranged weapons do an additional 8 AP fire damage."
 
 #end

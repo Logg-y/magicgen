@@ -35,7 +35,7 @@
 #nextspell "Horror Mark Secondary mrnh"
 
 #descr "This spell is imbued with otherworldly energy that may mark those affected for the attention of otherworldly beings."
-#details "Affected creatures make a hard MR check. Those that fail to resist become gain a horror mark."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become gain a horror mark."
 
 
 #end

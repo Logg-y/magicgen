@@ -25,7 +25,8 @@
 #nextspell "Bonebreak Cripple"
 #end
 
-#neweffect "Bone Breaking"
+
+#neweffect "Bone Breaking Gemless"
 #effect 2
 #damage 5
 #spec 10485888
@@ -34,17 +35,17 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 2.0
+#scalerate 0.2
 -- #scalecost 0.6
 
-#aoe 1
+#aoe 0
 #power 2
 #maxpower 7
 #pathlevel 2
 #explspr 10122
 #noadditionalnextspells 1
 #sound 31
-#fatiguecost 20
+#fatiguecost 10
 #range 5020
 
 
@@ -60,31 +61,33 @@
 #namecond range < 10 32 "NAMEPREFIX Bonebreak Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
-#scalefatiguemult 7
-#scalefatigueexponent 1.5
+#scalefatiguemult 0
+#scalefatigueexponent 0
+#fatigueperresearch 0
+#pathperresearch 0.3
 #end
 
-#neweffect "Bone Breaking High Damage"
+#neweffect "Bone Breaking"
 #effect 2
-#damage 6
+#damage 5
 #spec 10485888
 #schools 2
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 2
+#scalerate 0.51
 -- #scalecost 0.6
 
-#aoe 1
+#aoe 3
 #power 2
 #maxpower 7
 #pathlevel 2
 #explspr 10122
 #noadditionalnextspells 1
 #sound 31
-#fatiguecost 60
-#range 5010
+#fatiguecost 100
+#range 5020
 
 
 #paths 32
@@ -92,16 +95,57 @@
 #secondarypathchance 95
 
 #name 32 "NAMEPREFIX Crumble Bones"
-#descr 32 "The caster violently snaps many bones of SUBJECT. This has little effect on ethereal beings, but may prove fatal to others. Those hurt this way may find themselves with limps or become permanently crippled."
+#descr 32 "The caster violently snaps the bones of SUBJECT. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 
 
 #priority 1
 #namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
-#scalefatiguemult 20.0
-#scalefatigueexponent -1.65
+#scalefatiguemult 1
+#scalefatigueexponent 1.2
+#fatigueperresearch 10
+#pathperresearch 0.4
 #end
+
+--#neweffect "Bone Breaking High Damage"
+--#effect 2
+--#damage 6
+--#spec 10485888
+--#schools 2
+--
+---- evo-like, battlefield allowed, scale aoe
+--#spelltype 42
+--#nextspell "Bonebreak Limp"
+--#scalerate 2
+---- #scalecost 0.6
+--
+--#aoe 1
+--#power 2
+--#maxpower 7
+--#pathlevel 2
+--#explspr 10122
+--#noadditionalnextspells 1
+--#sound 31
+--#fatiguecost 60
+--#range 5010
+--
+--
+--#paths 32
+--#secondarypaths 0
+--#secondarypathchance 95
+--
+--#name 32 "NAMEPREFIX Crumble Bones"
+--#descr 32 "The caster violently snaps many bones of SUBJECT. This has little effect on ethereal beings, but may prove fatal to others. Those hurt this way may find themselves with limps or become permanently crippled."
+--
+--
+--#priority 1
+--#namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
+--#descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
+--
+--#scalefatiguemult 20.0
+--#scalefatigueexponent -1.65
+--#end
 
 
 
@@ -164,6 +208,8 @@
 #name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #end
+
+
 
 
 

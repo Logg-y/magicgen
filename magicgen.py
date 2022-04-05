@@ -378,6 +378,7 @@ def rollspells(**options):
     utils.EVENT_CODE = options.get("eventcodestart", -300)
     utils.MONTAG_ID = options.get("montagidstart", 1001)
     utils.MONTAG_SCALE = options.get("montagscale", 1.0)
+    utils.ENCHANTMENT_ID = options.get("enchantidstart", 500)
 
     if options.get("nationlist", "") == "":
         options["nationlist"] = None

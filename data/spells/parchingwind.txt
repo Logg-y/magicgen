@@ -62,35 +62,75 @@
 #effect 109
 #damage 2006
 #spec 1152921504606863456
-#aoe 0
-#power -1
+#aoe 1007
+#power 1
 #maxpower 8
 #precision 1
 #range 5040
 #pathlevel 1
-#pathperresearch 0.33
-#fatiguecost 20
+#pathperresearch 0.4
+#fatiguecost 100
 #explspr 10338
 #sound 52
 #aispellmod -95
 
-#paths 1
-#secondarypaths 2
-#secondarypathchance 2
+#paths fb
+#secondarypaths fa
+#secondarypathchance 20
 
 #scalefatigueexponent 0.2
 
+#name 1 "NAMEPREFIX Parching Gale"
+#name b "NAMEPREFIX Parching Gale"
+#descr 1 "Hot winds are blown at creatures in a SIZE area. The scorching heat may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or fire resistance may prevent the effect. This spell may dehydrate those affected."
+#descr b "$BLOOD_INTRO$, the caster blows hot winds at creatures in a SIZE area. The scorching heat may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or fire resistance may prevent the effect. This spell may dehydrate those affected."
+#details "Those damaged by the initial effect suffer fatigue damage. They must then make a MR check or gain barkskin (natural protection set to 10, +5 fire vulnerability) and make an easy MR check or suffer dessication; making a MR check vs 22 each turn. Success ends the effect, failure means taking 2d8 fatigue damage."
+
+#nextspell "Parching Wind Fatigue"
+
+#spelltype 42
+#scalerate 3
+-- #scalecost 0.3
+#schools 4
+#end
+
+#neweffect "Parching Winds Gemless"
+#effect 109
+#damage 2006
+#spec 1152921504606863456
+#aoe 0
+#power -2
+#maxpower 8
+#precision 1
+#range 5040
+#pathlevel 1
+#pathperresearch 0.2
+#fatiguecost 5
+#explspr 10338
+#sound 52
+#aispellmod -95
+
+#paths fb
+#secondarypaths fa
+#secondarypathchance 20
+
+#scalefatigueexponent 0
+
 #name 1 "NAMEPREFIX Parching Wind"
+#name b "NAMEPREFIX Parching Wind"
+#descr b "$BLOOD_INTRO$, the caster blows hot winds at creatures in a SIZE area. The scorching heat may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or fire resistance may prevent the effect. This spell may dehydrate those affected."
 #descr 1 "Hot winds are blown at creatures in a SIZE area. The scorching heat may cause minor injuries. Being exposed to such temperatures is fatiguing, though armour or fire resistance may prevent the effect. This spell may dehydrate those affected."
 #details "Those damaged by the initial effect suffer fatigue damage. They must then make a MR check or gain barkskin (natural protection set to 10, +5 fire vulnerability) and make an easy MR check or suffer dessication; making a MR check vs 22 each turn. Success ends the effect, failure means taking 2d8 fatigue damage."
 
 #nextspell "Parching Wind Fatigue"
 
 #spelltype 42
-#scalerate 1
+#scalerate 0.4
 -- #scalecost 0.3
 #schools 4
+#fatigueperresearch 0
 #end
+
 
 
 #neweffect "Parching Winds 100pc"
@@ -98,8 +138,8 @@
 #damage 2006
 #spec 1152921504606863456
 #aoe 666
-#power 9
-#maxpower 9
+#power 8
+#maxpower 8
 #precision 1
 #range 30
 #pathlevel 4
@@ -125,3 +165,4 @@
 -- #scalecost 0.3
 #schools 4
 #end
+

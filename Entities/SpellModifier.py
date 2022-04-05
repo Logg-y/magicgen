@@ -107,6 +107,10 @@ class SpellModifier(object):
 
         actualpowerlvl = (researchlevel - eff.power) + self.power
 
+        if not eff.canGenerateAtPowerlvl(actualpowerlvl, self, None):
+            print(f"Can't generate due to potential for identical spells to one at rl {researchlevel - 1}")
+            return False
+
         if self.maxfinalfatiguecost is not None or self.minfinalfatiguecost is not None:
             finalfatigue = eff.calculateExpectedFinalFatigue(researchlevel, self, None)
 

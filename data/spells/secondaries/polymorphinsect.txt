@@ -30,7 +30,7 @@
 #nextspell "polymorph insect Secondary mrne"
 
 #descr "This spell may polymorph those it affects into insects."
-#details "Affected creatures must make an easy MR check or be transformed into a random insect."
+#details "Creatures in the area when the spell is cast must make an easy MR check or be transformed into a random insect."
 
 #end
 

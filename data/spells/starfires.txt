@@ -18,7 +18,7 @@
 #pathlevel 1
 #explspr 10306
 #sound 16
-#fatiguecost 20
+#fatiguecost 10
 #skipchance 50
 #range 5025
 

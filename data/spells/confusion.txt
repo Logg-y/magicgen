@@ -20,20 +20,24 @@
 #precision 100
 #range 5015
 
-#paths 16
+#paths sb
 #secondarypaths 16
+#secondarypathchance 80
 
 #namecond effectiveaoe <= 1 16 "NAMEPREFIX Confusion"
+#name 128 "NAMEPREFIX Void Confusion"
 
 #namecond2 1 < effectiveaoe <= 5 16 "NAMEPREFIX Wave of Confusion"
 #namecond2 5 < effectiveaoe < 600 16 "NAMEPREFIX Confused Mob"
 #namecond2 600 < effectiveaoe < 700 16 "NAMEPREFIX Mass Confusion"
 
 #descr 16 "SUBJECT %is% made confused and may attack nearby friendlies."
+#descr 128 "$BLOOD_INTRO$, the caster touches SUBJECT with the madness of the Void, making PRONOUN confused. Confused creatures may attack nearby friendlies."
 #details "Confused creatures have a 30% chance to stand and do nothing for 10000 ticks (133% of a round). If they pass this check, there is a further 20% chance that they direct their attacks into a random adjacent square, including into friendlies."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of confusion"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of confusion"
 
 #end
 
@@ -59,15 +63,19 @@
 #precision 100
 #range 20
 
-#paths 16
+#paths sb
 #secondarypaths 16
+#secondarypathchance 80
 
 #name 16 "NAMEPREFIX Mass Confusion"
+#name 128 "NAMEPREFIX Mass Void Confusion"
 
 #descr 16 "The caster attempts to confuse everyone on the battlefield. This will result in massive infighting amongst all forces."
+#descr 128 "$BLOOD_INTRO$, the caster attempts to touch everyone on the battlefield with the madness of the Void. This will result in massive infighting amongst all forces."
 #details "There is a 30% chance that confused creatures stand and do nothing, and a 20% chance that they direct their attacks into a random adjacent square."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of confusion"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of confusion"
 
 #end

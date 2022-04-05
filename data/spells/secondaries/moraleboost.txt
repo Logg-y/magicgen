@@ -27,6 +27,6 @@
 #nextspell "Morale Boost Secondary"
 
 #descr "This spell will also briefly lift the spirits of those it affects."
-#details "Affected creatures gain +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
+#details "Creatures in the area when the spell is cast gain +10 temporary morale. This will completely counteract the morale lowering effects of fear, and set the recipients' current morale modifier to the maximum value of +5. As with fear, the total morale modification applied this way is halved (and rounded down) every combat round."
 
 #end

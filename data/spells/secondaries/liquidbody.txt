@@ -30,7 +30,7 @@
 #nextspell "Liquidbody Secondary mrn"
 
 #descr "This spell may also transform the bodies of those it affects into a liquid substance, making them more difficult to harm."
-#details "Affected creatures make an MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
 
 #end
 
@@ -66,5 +66,5 @@
 #nextspell "Liquidbody Secondary mrnh"
 
 #descr "This spell may also transform the bodies of those it affects into a liquid substance, making them more difficult to harm."
-#details "Affected creatures make an easy MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain Liquid body: Grants Slash, Blunt and Pierce Resistance, +1 Wound Fend, -4 Str, -25% combat speed."
 #end

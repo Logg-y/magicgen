@@ -29,7 +29,7 @@
 #nextspell "Luck Secondary mrn"
 
 #descr "This spell may also make those it affects unnaturally lucky."
-#details "Affected creatures make an MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
 
 #end
 
@@ -64,6 +64,6 @@
 #nextspell "Luck Secondary mrnh"
 
 #descr "This spell may also make those it affects unnaturally lucky."
-#details "Affected creatures make a hard MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
+#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain luck: a 75% chance to negate otherwise fatal damage."
 
 #end
