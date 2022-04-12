@@ -31,7 +31,7 @@
 #scalefatiguemult 20
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.7
 #scalefatigueexponent -1.6
 #end
 
@@ -68,6 +68,7 @@
 
 #scalerate 1
 #end
+
 
 
 

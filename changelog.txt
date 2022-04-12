@@ -2,13 +2,10 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
-To test:
-
-enchant id detection
-
-
 v3.1.5
 
+Attempted fix for crashing when parsing unit descriptions on non-English operating systems
+Updated base unit data to 5.57 (thanks Larz!)
 Added a spell that makes a stealthy creature, producing assassination attempts in the province until it is patrolled out
 Offensive charge body -2 research levels
 Boulder Evo +2 research levels, base research 0 was not deliberate
@@ -37,6 +34,8 @@ Added fire path etherealness
 Added a global that puts all battlefields under the effects of grip of winter
 Added a permanent regen spell that targets commanders
 Greater foulspawn can now show up in random montags
+Slightly slowed the scaling rate of most battle mage summons at higher research levels
+Poison cloud unit modifiers now give +20 poison resistance, as the +10 they used to give still caused them to kill themselves
 
 
 

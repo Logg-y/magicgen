@@ -20,8 +20,6 @@ def scalingToolEffectLookup(text):
     updatedlistbox = False
     while 1:
         event, values = window.read(timeout=100)
-        #print(event, values)
-
 
 
         if event == sg.WIN_CLOSED or event == 'Quit':
@@ -55,10 +53,6 @@ def scalingToolEffectLookup(text):
 
 
 def bulkEditConfigWindow(selectedAttributes):
-    if selectedAttributes is None:
-        selectedAttributes = {"damage":False, "effect":True, "spec":False, "power":False, "maxpower":False, "fatiguecost":True,
-                              "scalerate":True, "nreff":True, "pathlevel":False, "scalecost":True, "scalefatigueexponent":True,
-                              "scalefatiguemult":True, "schools":False, "scalerate":True, "spelltype":True, "aoe":False}
 
     rows = []
     for attrib, default in selectedAttributes.items():
@@ -217,14 +211,19 @@ def scalingTool():
                 [sg.Button("Select All", k="-bulkeditselall-"),
                  sg.Button("Select None", k="-bulkeditselnone-"),
                  sg.Button("Config", k="-bulkeditconfig-")],
-                [sg.Column([], k="-bulkeditlist-", scrollable=True, vertical_scroll_only=True)]]
+                [sg.Column([], k="-bulkeditlist-", scrollable=True, expand_y=True, expand_x=False, vertical_scroll_only=True)]]
 
 
-    layout = [sg.vtop([sg.pin(sg.Column(mainlayout, k="-main-")),
-              sg.pin(sg.vtop(sg.Frame("Bulk Edit", bulkedit, k="-bulkedit-")))])]
+    layout = [sg.vtop([sg.Column(mainlayout, k="-main-"),
+              sg.Frame("Bulk Edit", bulkedit, k="-bulkedit-", size=(300, 500))])]
 
 
     window = sg.Window(f"MagicGen Scaling Tool", layout)
+    window.finalize()
+
+    #window["-main-"].expand(False, False, False)
+    #window["-bulkedit-"].expand(True, True, True)
+    #window["-bulkeditlist-"].expand(True, False, False)
 
     attribs_to_copy = ["aoe", "damage", "nreff", "effect", "maxbounces", "pathlevel", "fatiguecost",
                        "scalerate", "power", "maxpower", "scalecost", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "fatigueperresearch"]
@@ -245,7 +244,7 @@ def scalingTool():
     bulkEditSelectedAttributes = {"damage":False, "effect":True, "spec":False, "power":False, "maxpower":False,
                                   "fatiguecost":True, "scalerate":True, "nreff":True, "pathlevel":False, "scalecost":True,
                                   "scalefatigueexponent":True, "scalefatiguemult":True, "schools":False, "scalerate":True,
-                                  "spelltype":True, "aoe":False}
+                                  "aoe":False}
     bulkEditCheckboxIndexesToEffectNames = {}
     while True:
         event, values = window.read(timeout=100)
@@ -268,7 +267,7 @@ def scalingTool():
                     if isSimilar:
                         similar.append(eff.name)
                 i = 0
-                bulkEditCheckboxIndexesToEffectNames
+                bulkEditCheckboxIndexesToEffectNames = {}
                 while 1:
                     key = f"Checkbox{i}"
                     if key not in values:
@@ -278,17 +277,19 @@ def scalingTool():
                 newlayout = []
                 similar = sorted(similar)
                 for i, similarEffName in enumerate(similar):
-                    key = k=f"Checkbox{i}"
+                    key = f"Checkbox{i}"
                     if key in values:
                         window[key].update(text=similarEffName, visible=True)
                         window[key].update(True)
                     else:
-                        row = [sg.Checkbox(similarEffName, default=True, k=f"Checkbox{i}")]
+                        row = [sg.Checkbox(similarEffName, default=True, k=key)]
                         newlayout.append(row)
                     bulkEditCheckboxIndexesToEffectNames[key] = similarEffName
                 scroll = i >= 10
+                window["-bulkeditlist-"].expand(True, True, True)
                 window.extend_layout(window["-bulkeditlist-"], newlayout)
                 window["-bulkeditlist-"].contents_changed()
+                print(f"There are {len(similar)} matches!")
 
         if event in ["-bulkeditselall-", "-bulkeditselnone-"]:
             val = "all" in event
@@ -299,6 +300,7 @@ def scalingTool():
                     break
                 window[key].update(val)
                 i += 1
+            window["-bulkeditlist-"].contents_changed()
 
         if event == "-bulkeditsave-":
             if bulkEditSelectedAttributes is not None:

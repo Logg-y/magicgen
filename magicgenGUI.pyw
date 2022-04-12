@@ -25,7 +25,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v3.1.4"
+ver = "v3.1.5"
 
 
 def output_polling_thread(timeout=0.1):
@@ -227,7 +227,7 @@ def detectids(window, modlist):
     starteventid = min(nationals.eventcodes) - 1
     startmontagid = max(nationals.montagids) + 1
     startsiteid = max(nationals.siteids) + 1
-    startenchantaid = max(nationals.enchantids) + 1
+    startenchantid = max(nationals.enchantids) + 1
     window["-spellidstart-"].update(value=str(startspellid))
     window["-weaponidstart-"].update(value=str(startweaponid))
     window["-unitidstart-"].update(value=str(startunitid))
@@ -435,8 +435,8 @@ def main():
                 while 1:
                     try:
                         new = outputqueue.get_nowait().strip()
-                        old = window["-OUTPUT-"].Get()
-                        window["-OUTPUT-"].update(old + new)
+                        old = window["-OUTPUT-"].Get().strip()
+                        window["-OUTPUT-"].update(old + "\n" + new)
                     except queue.Empty:
                         break
 

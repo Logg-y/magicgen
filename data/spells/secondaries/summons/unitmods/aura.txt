@@ -21,7 +21,7 @@
 #newunitmod "Summon Poisonaura"
 #req poisoncloud == -1
 #set poisoncloud 3
-#poisonres 11
+#poisonres 21
 #nameprefix "Noxious"
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end
@@ -84,7 +84,7 @@
 #newunitmod "Summon Poisonaura 6"
 #req poisoncloud == -1
 #set poisoncloud 6
-#poisonres 11
+#poisonres 21
 #nameprefix "Noxious"
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end
@@ -146,7 +146,7 @@
 #newunitmod "Summon Poisonaura 10"
 #req poisoncloud == -1
 #set poisoncloud 10
-#poisonres 11
+#poisonres 21
 #nameprefix "Noxious"
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end

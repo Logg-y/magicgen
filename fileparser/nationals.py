@@ -111,7 +111,7 @@ def read_vanilla():
 
 
 def read_mods(modstring):
-    global monsterids, weaponids, spellids, eventcodes, montagids, siteids
+    global monsterids, weaponids, spellids, eventcodes, montagids, siteids, enchantids
     mods = modstring.strip().split(",")
     monsterids = [3499]
     weaponids = [799]
@@ -304,7 +304,7 @@ def read_mods(modstring):
                     currentunit = None
 
                 for enchCommand in ["req_noench", "req_ench", "req_myench", "req_friendlyench", "req_hostileench", "req_enchdom"]:
-                    m = re.match(f"#{enchCommand}\\W+(.*)")
+                    m = re.match(f"#{enchCommand}\\W+(.*)", line)
                     if m is not None:
                         print(f"Found enchantment ID from event mod command: {line}")
                         enchantids.append(int(m.groups()[0]))

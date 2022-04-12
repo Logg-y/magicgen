@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pysimplegui = "*"
 cx-freeze = "*"
+pysimplegui = "*"
 
 [dev-packages]
 

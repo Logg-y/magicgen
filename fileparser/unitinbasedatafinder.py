@@ -123,7 +123,7 @@ class UnitInBaseDataFinder(object):
         else:
             fp = os.path.join("./unitdescr", f"{str(self.origid).zfill(4)}.txt")
             if os.path.isfile(fp):
-                with open(fp, "r") as f:
+                with open(fp, "r", encoding="utf-8") as f:
                     self.descr = f.read()
             descriptioncache[self.id] = copy(self.descr)
         self.uniqueid = f"vanilla-{self.id}"
