@@ -73,11 +73,11 @@ def bulkEditConfigWindow(selectedAttributes):
     while 1:
         event, values = window.read(timeout=100)
 
-        for attribute in selectedAttributes:
-            selectedAttributes[attribute] = values[f"{attribute}Checkbox"]
-
         if event == sg.WIN_CLOSED:
             return selectedAttributes
+
+        for attribute in selectedAttributes:
+            selectedAttributes[attribute] = values[f"{attribute}Checkbox"]
 
         if event == "OK":
             window.close()
@@ -242,7 +242,10 @@ def scalingTool():
     updated = False
     lastupdate = -1
     fakespell = None
-    bulkEditSelectedAttributes = None
+    bulkEditSelectedAttributes = {"damage":False, "effect":True, "spec":False, "power":False, "maxpower":False,
+                                  "fatiguecost":True, "scalerate":True, "nreff":True, "pathlevel":False, "scalecost":True,
+                                  "scalefatigueexponent":True, "scalefatiguemult":True, "schools":False, "scalerate":True,
+                                  "spelltype":True, "aoe":False}
     bulkEditCheckboxIndexesToEffectNames = {}
     while True:
         event, values = window.read(timeout=100)
@@ -285,6 +288,7 @@ def scalingTool():
                     bulkEditCheckboxIndexesToEffectNames[key] = similarEffName
                 scroll = i >= 10
                 window.extend_layout(window["-bulkeditlist-"], newlayout)
+                window["-bulkeditlist-"].contents_changed()
 
         if event in ["-bulkeditselall-", "-bulkeditselnone-"]:
             val = "all" in event
