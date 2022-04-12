@@ -48,10 +48,10 @@ os.rename(f"build/{buildfilename}", f"build/magicgen-{ver}")
 for root, dirs, files in os.walk(f"build/magicgen-{ver}"):
 	for file in files:
 		if file.startswith("api-ms") or file in ["ucrtbase.dll", "vcruntime140.dll"]:
-			print(f"Strip file {file} from output")
-			os.unlink(os.path.join(f"build/magicgen-{ver}", file))
+			print(f"Strip file {file} from output...")
+			os.unlink(os.path.join(root, file))
 		elif "api-ms" in file:
-			print(file)
+			print(f"Not stripping {file}, but maybe should be?")
 
 shutil.copy("LICENSE", f"build/magicgen-{ver}/LICENSE")
 shutil.copy("docs.md", f"build/magicgen-{ver}/docs.md")
