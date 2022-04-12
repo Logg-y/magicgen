@@ -5,12 +5,6 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 To test:
 
 enchant id detection
-nether evo
-petrify mrn + scaling
-slave of belphegor summons
-fortuneteller global
-rebirth enchantment
-flamebody
 
 
 v3.1.5
@@ -40,6 +34,10 @@ Added a global that shields the caster from negative events
 Added rebirth enchantment
 Added fire path luck
 Added fire path etherealness
+Added a global that puts all battlefields under the effects of grip of winter
+Added a permanent regen spell that targets commanders
+Greater foulspawn can now show up in random montags
+
 
 
 v3.1.4

@@ -15,14 +15,14 @@
 
 
 #neweffect "Nether Bolt"
-#effect 74
+#effect 2
 #damage 1014
 #spec 9048192
 #aoe 4
 #power 3
 #maxpower 14
 #precision 1
-#range 5020
+#range 5030
 #pathlevel 2
 #fatiguecost 100
 #explspr 10107
@@ -58,14 +58,14 @@
 
 
 #neweffect "Nether Bolt Gemless"
-#effect 74
+#effect 2
 #damage 1014
 #spec 9048192
 #aoe 1
 #power 3
 #maxpower 14
 #precision 1
-#range 5020
+#range 5030
 #pathlevel 3
 #fatiguecost 5
 #explspr 10148

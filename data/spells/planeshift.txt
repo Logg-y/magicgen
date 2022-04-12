@@ -73,7 +73,7 @@
 #neweffect "Planeshift Void"
 #effect 108
 #damage -11
-#spec 17592186060928
+#spec 128+16384+8388608+4096
 #schools 32
 
 #spelltype 34
@@ -82,9 +82,9 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 7
+#power 6
 #maxpower 19
-#pathlevel 5
+#pathlevel 4
 #sound 31
 #explspr 10251
 #fatiguecost 30
@@ -99,7 +99,7 @@
 #name 128 "NAMEPREFIX Void Portal"
 #descr 16 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
 #descr 128 "A gate is opened and the target is instantly thrown into the Void, unless the victim successfully resists the pull. Being sent to the Void means certain death for most, but even those who survive will likely suffer permanent insanity."
-#details "This spell offers a difficult MR check to resist its effects."
+#details "This spell offers a MR check to resist its effects."
 
 #priority 1
 #namecond range < 10 128 "NAMEPREFIX embrace of The Void"

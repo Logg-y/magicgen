@@ -1,0 +1,136 @@
+
+#neweffect "cockatrice chassis dummy"
+#effect 10001
+#damage 466
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 400
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "chimera chassis dummy"
+#effect 10001
+#damage 487
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "ettin chassis dummy"
+#effect 10001
+#damage 488
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "large foulspawn chassis dummy"
+#effect 10001
+#damage 530
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "basilisk chassis dummy"
+#effect 10001
+#damage 636
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "dracolion chassis dummy"
+#effect 10001
+#damage 637
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 500
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "grotesque chassis dummy"
+#effect 10001
+#damage 659
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 700
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end
+
+#neweffect "foul beast chassis dummy"
+#effect 10001
+#damage 467
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 500
+#schools -1
+
+#paths nb
+#secondarypaths nb
+
+#spelltype 20
+#end

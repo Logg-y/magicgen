@@ -49,7 +49,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.7
+#scalerate 1
 -- #scalecost 0.7
 
 #aoe 0
@@ -65,7 +65,7 @@
 #paths 8
 #secondarypaths 8
 
-#namecond effectiveaoe == 0 8 "NAMEPREFIX Lesser Petrification"
+#name 8 "NAMEPREFIX Lesser Petrification"
 
 #details "Affected targets become petrified for 22500-45000 ticks, in which time they are immobilised, have defence skill 0, their natural protection increased to 20 and are granted Slash and Pierce resistance. They must make a MR check vs 13 or die when reverting to their original form. Stone beings, such as living statues, are immune to the spell."
 
@@ -116,3 +116,4 @@
 #scalefatigueexponent 1.4
 #pathperresearch 0.4
 #end
+

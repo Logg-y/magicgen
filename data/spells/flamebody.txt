@@ -1,7 +1,7 @@
 #neweffect "Flamebody"
 #effect 10
 #damage 134217728+1024
-#spec 8404992
+#spec 16384
 #schools 2
 
 -- buff, battlefield allowed, scale aoe

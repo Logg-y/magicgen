@@ -11,7 +11,6 @@
 #nolog
 #notext
 #nation -2
-#req_land 1
 #req_domchance 12
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID

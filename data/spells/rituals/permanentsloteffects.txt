@@ -72,7 +72,7 @@
 #descr 16 "This ritual permanently displaces part of the recipient's body to the Astral plane. When he is made ethereal by any means, this displacement makes him harder to hit with any magical effect in addition to the usual protections conferred by etherealness."
 #details "Permanently grants NEXTSPELL_EFFECTNUMBER_5XX% True Ethereal: when the unit also possesses regular etherealness, there is an independently rolled NEXTSPELL_EFFECTNUMBER_5XX% chance to negate any damage that is not prevented by the regular ethereal check. Damage from melee weapons and Astral sources bypasses this effect. Multiple castings of this spell are not cumulative. The recipient of this spell must be a commander."
 
-#skipchance 92
+#skipchance 75
 #permanentslotusage 1
 
 #nextspell "Permanent effect true ethereal"
@@ -128,7 +128,7 @@
 #descr 8 "This ritual permanently grants the recipient the ability the to petrify those who attempt to attack him in melee."
 #details "Those attacking in melee are struck by a MRN petrification effect. Those attacking from behind have only a 25% chance to be affected. Multiple castings of this spell are not cumulative. The recipient of this spell must be a commander."
 
-#skipchance 80
+#skipchance 50
 #permanentslotusage 1
 
 #spelltype 4
@@ -196,7 +196,7 @@
 #descr 128 "$BLOOD_INTRO$, the recipient permanently gains immense physical power. They will become stronger, much harder to kill, and slightly more proficient at fighting."
 #details "Applies NEXTSPELL_EFFECTNUMBER_5XX points of the Wish strength buff to the recipient. Each point grants +5 max HP, +2 strength, +0.5 attack and defence skills, and +0.5 precision. Fractional bonuses are rounded down. Multiple castings of this spell are not cumulative. The recipient of this spell must be a commander."
 
-#skipchance 92
+#skipchance 80
 #permanentslotusage 1
 #scalerate 1
 
@@ -261,7 +261,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster gains understanding that allows him of converting base metal into gold. This is a slow and complex process however and only a certain amount may be produced each month."
 #details "The caster permanently produces +EFFECTNUMBER_5XX gold per turn. Multiple castings of this spell are not cumulative."
 
-#skipchance 92
+#skipchance 85
 #permanentslotusage 1
 #scalerate 5
 
@@ -306,7 +306,7 @@
 #details "The recipient permanently casts combat spells EFFECTNUMBER_5XX percent faster. Multiple castings of this spell are not cumulative. Recipients of this spell must be a commander."
 
 #scalerate 5
-#skipchance 97
+#skipchance 90
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -349,7 +349,7 @@
 #details "The recipient permanently casts combat spells NEXTSPELL_EFFECTNUMBER_5XX percent faster. Multiple castings of this spell are not cumulative. The receipient of this spell must be a commander."
 
 #scalerate 5
-#skipchance 97
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -380,7 +380,7 @@
 #details "The caster permanently gains inspirational +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
 #scalerate 0.5
-#skipchance 97
+#skipchance 90
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -410,7 +410,7 @@
 #details "The recipient permanently gains inspirational +NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. This recipient of this spell must be a commander."
 
 #scalerate 0.5
-#skipchance 92
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -440,7 +440,7 @@
 #details "The caster permanently gains beastmaster +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
 #scalerate 0.6
-#skipchance 97
+#skipchance 90
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -470,7 +470,7 @@
 #details "The recipient permanently gains beastmaster +NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. The recipient of this spell must be a commander."
 
 #scalerate 0.6
-#skipchance 97
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -500,7 +500,7 @@
 #details "The caster permanently gains healer EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
 #scalerate 1
-#skipchance 97
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -564,7 +564,7 @@
 #details "Creatures wounded by the recipient are twice as likely to suffer an affliction. Multiple castings of this spell are not cumulative. The recipient must be a commander."
 
 #scalerate 1
-#skipchance 97
+#skipchance 95
 #permanentslotusage 1
 
 -- ritual
@@ -621,7 +621,7 @@
 #details "Creatures killed by the recipient become reanimated as soulless. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 0
-#skipchance 90
+#skipchance 50
 #permanentslotusage 1
 
 -- ritual
@@ -653,7 +653,7 @@
 #details "The caster permanently gains +EFFECTNUMBER_5XX reinvigoration. Multiple castings of this spell are not cumulative."
 
 #scalerate 1
-#skipchance 95
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -682,7 +682,7 @@
 #details "The caster permanently gains the Astral Fetters ability. This prevents all teleportation and plane banishing effects in battle, but has no effect on creatures with Void Sanity. Multiple castings of this spell are not cumulative."
 
 #scalerate 0
-#skipchance 80
+#skipchance 50
 #permanentslotusage 1
 
 #spelltype 4
@@ -712,7 +712,7 @@
 #details "The caster permanently gains Recuperation."
 
 #scalerate 0
-#skipchance 92
+#skipchance 80
 #permanentslotusage 1
 
 #spelltype 4
@@ -742,7 +742,7 @@
 #details "Each turn, the caster passively reanimates up to EFFECTNUMBER_5XX corpses in his current province. Multiple castings of this spell are not cumulative."
 
 #scalerate 5
-#skipchance 92
+#skipchance 80
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -802,7 +802,7 @@
 #details "The caster pemanently gains Gift of Water Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
 
 #scalerate 5
-#skipchance 92
+#skipchance 50
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -834,7 +834,7 @@
 #details "The caster pemanently gains Gift of Air Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
 
 #scalerate 5
-#skipchance 92
+#skipchance 50
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -894,7 +894,7 @@
 #details "The caster permanently becomes a Mason."
 
 #scalerate 0
-#skipchance 97
+#skipchance 80
 #permanentslotusage 1
 
 #spelltype 4
@@ -922,7 +922,7 @@
 #details "The caster permanently gains Disbelieve 100, causing them to very rapidly hit neary squares with a MRN effect that does 999 damage to illusory creatures. Multiple casts of this spell are not cumulative."
 
 #scalerate 0
-#skipchance 90
+#skipchance 85
 #permanentslotusage 1
 
 #spelltype 4
@@ -973,7 +973,7 @@
 #details "The caster permanently gains EFFECTNUMBER_5XX arm(s), to a maximum of 6 arms total. Multiple castings of this spell are not cumulative."
 
 #scalerate 1
-#skipchance 85
+#skipchance 90
 #permanentslotusage 1
 
 -- ritual, power scales effect number!
@@ -1967,7 +1967,7 @@
 #details "The recipient permanently gains slimer, forcing those that attack him to make a MR check or become slimed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 2
-#skipchance 80
+#skipchance 50
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -2000,7 +2000,7 @@
 #details "The recipient permanently gains slimer, forcing those that attack him to make a MR check or become slimed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 1
-#skipchance 80
+#skipchance 50
 
 -- ritual, power scales effect number!
 #spelltype 4
@@ -2238,7 +2238,7 @@
 #details "The recipient permanently gains the vine shield's effect of entangling melee attackers unless they fail a MR check. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 3
-#skipchance 80
+#skipchance 50
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -2271,11 +2271,77 @@
 #details "The recipient permanently gains the vine shield's effect of entangling melee attackers unless they fail a MR check. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 3
-#skipchance 80
+#skipchance 50
 
 -- ritual, power scales effect number!
 #spelltype 4
 #noresearchdifferenceskip 1
 #end
 
+
+#neweffect "Permanent effect regen"
+#effect 10509
+#damage 462
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#scalefatiguemult 0
+#schools -1
+#unique 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Gift of Troll Blood"
+#name b "Pact of Troll Blood"
+#descr 64 "The recipient gains troll-like blood, allowing them to rapidly regenerate wounds."
+#descr b "$BLOOD_INTRO$, the caster grants a single recipient troll-like blood, allowing them to rapidly regenerate wounds."
+#details "The recipient permanently gains +EFFECTNUMBER_5XX% limited regeneration. This spell has no effect on inanimate beings. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+
+#scalerate 3
+#skipchance 50
+
+-- ritual, power scales effect number!
+#spelltype 260
+#noresearchdifferenceskip 1
+#end
+
+
+#neweffect "Permanent effect regen dummy"
+#nextspell "Permanent effect regen"
+#effect 10131
+#damage 0
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#scalefatiguemult 0
+#schools 16
+#unique 1
+
+#permanentslotusage 1
+
+#paths 64
+#secondarypaths 64
+#secondarypathchance 0
+
+#name 64 "Gift of Troll Blood"
+#name b "Pact of Troll Blood"
+#descr 64 "The recipient gains troll-like blood, allowing them to rapidly regenerate wounds."
+#descr b "$BLOOD_INTRO$, the caster grants a single recipient troll-like blood, allowing them to rapidly regenerate wounds."
+#details "The recipient permanently gains +NEXTSPELL_EFFECTNUMBER_5XX% limited regeneration. This spell has no effect on inanimate beings. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+
+#scalerate 3
+#skipchance 50
+
+-- ritual, power scales effect number!
+#spelltype 4
+#noresearchdifferenceskip 1
+#end
 

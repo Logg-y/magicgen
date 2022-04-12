@@ -816,6 +816,10 @@ def main():
                        help="Starting Weapon ID. (Allowed range for modded weapons is 800+)",
                        type=int, default=800))
 
+    opts.append(Option("-enchantidstart",
+                       help="Starting Enchantment ID. (Suggested range for modded enchantments is 500+)",
+                       type=int, default=500))
+
     opts.append(Option("-siteidstart",
                        help="Starting Magic Site ID. (Allowed range for modded sites is 1500+)",
                        type=int, default=1500))

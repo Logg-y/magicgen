@@ -99,7 +99,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 9
-#fatiguecost 8000
+#fatiguecost 6500
 #schools 4
 #unique 1
 #paths 68
@@ -170,7 +170,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 7
-#fatiguecost 9000
+#fatiguecost 800
 #schools 17
 #unique 1
 #paths 64
@@ -212,11 +212,11 @@
 #effect 10081
 #damage 53
 #spec 8388608
-#power 6
-#maxpower 6
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 6
-#fatiguecost 5000
+#fatiguecost 4500
 #schools 17
 #unique 1
 #paths 2
@@ -239,7 +239,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 5
-#fatiguecost 8000
+#fatiguecost 6000
 #schools 8
 #unique 1
 #paths 8
@@ -306,11 +306,11 @@
 #effect 10081
 #damage 43
 #spec 8388608
-#power 6
-#maxpower 6
+#power 5
+#maxpower 5
 #nreff 1
 #pathlevel 5
-#fatiguecost 5000
+#fatiguecost 4000
 #schools 16
 #unique 1
 #paths 36
@@ -404,7 +404,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 6
-#fatiguecost 6000
+#fatiguecost 5000
 #schools 16
 #unique 1
 #paths 96
@@ -428,7 +428,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 6
-#fatiguecost 7000
+#fatiguecost 5500
 #schools 32
 #unique 1
 #paths 4
@@ -474,7 +474,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 5
-#fatiguecost 6000
+#fatiguecost 5000
 #schools 8
 #unique 1
 #paths 8
@@ -896,18 +896,18 @@
 #effect 10081
 #damage 18
 #spec 8388608
-#power 5
-#maxpower 5
+#power 4
+#maxpower 4
 #nreff 1
 #pathlevel 5
-#fatiguecost 5000
+#fatiguecost 3500
 #schools 1
 #unique 1
 #paths 4
 #secondarypaths 4
 #secondarypathchance 100
 -- why is this even a spell?
-#skipchance 90
+#skipchance 60
 
 #name 4 "Wrath of the Sea"
 #descr 4 "The sea will rise and flood all coastal provinces. Provinces that are struck by the flood will have their income reduced."
@@ -915,4 +915,35 @@
 
 #spelltype 4
 #scalerate 0
+#end
+
+#neweffect "Grip of Winter Global"
+#effect 10081
+#damage 9
+#spec 8388608
+#schools 16
+#unique 1
+#spelltype 4
+
+#scalerate 0
+-- #scalecost 0.6
+
+#aoe 0
+#power 7
+#maxpower 7
+#pathlevel 6
+#sound 31
+#fatiguecost 5000
+#range 0
+
+#paths wb
+#secondarypaths 4
+#secondarypathchance 100
+
+#name 4 "Grasp of Winter"
+#name b "Grasp of Kokytos"
+#descr 4 "All battlefields across the entire world are harrowed by enormous cold. Those fighting in battles will be heavily fatigued by the cold, especially in colder provinces. Strangely, this effect is limited to sites of conflict and so it does not adversely affect civilian life."
+#descr b "$BLOOD_INTRO$, the caster unleashes the bitter cold of Kokytos upon the battlefields of the world. Those fighting in battles will be heavily fatigued by the cold, especially in colder provinces. Strangely, this effect is limited to sites of conflict and so it does not adversely affect civilian life."
+#details "All battles globally are under the effects of Grip of Winter: Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. The presence of a snow storm (either natural, or through the spell Storm in cold scales) adds 2 to the damage. Does nothing if Heat from Hell is active."
+#ainocast 1
 #end

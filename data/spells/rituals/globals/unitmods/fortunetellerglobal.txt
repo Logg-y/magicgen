@@ -1,10 +1,10 @@
 #newunitmod "Fortuneteller Global"
-#landdamage 100
-#uwdamage 100
-#set fortuneteller 100
+#set landdamage 50
+#set uwdamage 50
+#set nobadevents 100
 #set mapmove 0
 #set homesick 100
-#set hp 1
+#set hp 2
 -- become mindless in case mind hunt somehow makes its way into magicgen
 #set morale 50
 #nameprefix "Foretelling"

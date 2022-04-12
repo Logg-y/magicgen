@@ -53,6 +53,97 @@ def scalingToolEffectLookup(text):
             return retval
     return ""
 
+
+def bulkEditConfigWindow(selectedAttributes):
+    if selectedAttributes is None:
+        selectedAttributes = {"damage":False, "effect":True, "spec":False, "power":False, "maxpower":False, "fatiguecost":True,
+                              "scalerate":True, "nreff":True, "pathlevel":False, "scalecost":True, "scalefatigueexponent":True,
+                              "scalefatiguemult":True, "schools":False, "scalerate":True, "spelltype":True, "aoe":False}
+
+    rows = []
+    for attrib, default in selectedAttributes.items():
+        rows.append([sg.Checkbox(attrib, k=f"{attrib}Checkbox", default=default)])
+
+    layout = [[sg.Text("Attributes to match/update: ")],
+        *rows,
+        [sg.Button("OK")]
+    ]
+    window = sg.Window("Bulk Edit Config", layout)
+
+    while 1:
+        event, values = window.read(timeout=100)
+
+        for attribute in selectedAttributes:
+            selectedAttributes[attribute] = values[f"{attribute}Checkbox"]
+
+        if event == sg.WIN_CLOSED:
+            return selectedAttributes
+
+        if event == "OK":
+            window.close()
+            print(selectedAttributes)
+            return selectedAttributes
+
+def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True):
+    if not giveconfirm:
+        response = "ok"
+    else:
+        response = sg.popup_ok_cancel(f"Are you sure you want to overwrite the data of {spelleffect.name}"
+                                  f" with the values currently shown?")
+
+    if fakespell is None:
+        return
+    if response.lower() == "ok":
+        tochange = {}
+        changecount = {}
+        for attrib in attribs_to_copy:
+            if getattr(fakespell, attrib) != getattr(spelleffect, attrib):
+                setattr(spelleffect, attrib, getattr(fakespell, attrib))
+                tochange[attrib] = getattr(fakespell, attrib)
+        with open(spelleffect.fp, "r") as datafile:
+            content = datafile.read().split("\n")
+        effstartlineindex = None
+        effendlineindex = None
+        lineindex = -1
+        while True:
+            lineindex += 1
+            line = content[lineindex]
+            if line.strip().startswith("--"):
+                continue
+            if line.strip() == "":
+                continue
+            line = line.strip()
+            # Locate the start of this spell effect.
+            if effstartlineindex is None:
+                if not line.startswith("#neweffect"):
+                    continue
+                m = re.match(f'#neweffect\\W*"{spelleffect.name}"', line)
+                if m is not None:
+                    effstartlineindex = lineindex
+                    continue
+            else:
+                # Check to see if this line contains one of the attribs we want to change
+                # Importantly, this will change ALL instances of an attribute, as there is nothing illegal
+                # about having two values for the same one, the second will take precedence
+                for attrib in tochange:
+                    if line.startswith(f"#{attrib}"):
+                        print(f"Change value for line: {line}")
+                        newline = f"#{attrib} {getattr(fakespell, attrib)}"
+                        content[lineindex] = newline
+                        changecount[attrib] = changecount.get(attrib, 0) + 1
+                        break
+
+                if line == "#end":
+                    # Insert all the attributes that we haven't changed yet
+                    for attrib in tochange:
+                        if changecount.get(attrib, 0) == 0:
+                            content.insert(lineindex, f"#{attrib} {getattr(fakespell, attrib)}")
+                            print(f"Inserted new line for attrib {attrib}")
+                    break
+        with open(spelleffect.fp, "w") as datafile:
+            for line in content:
+                datafile.write(line.strip() + "\n")
+
 def scalingTool():
     sg.theme("DarkBrown")
 
@@ -115,11 +206,23 @@ def scalingTool():
     for x in range(0, OUTPUT_AREA_SIZE):
         outputarea.append([sg.Text("", k=f"-output{x}-", visible=False, size=(50, 1))])
 
-    layout = [ lookuprow,
+    mainlayout = [ lookuprow,
               [sg.Column(basicattrib_col), sg.Column(scalebool_col), sg.Column(scaleparam_col)],
               [sg.HorizontalSeparator()],
               [sg.Column(outputarea, k="-outputarea-")]
             ]
+
+    bulkedit = [[sg.Button("Find Analogous", k="-bulkeditfindanalogous-"),
+                 sg.Button("Save Selected", k="-bulkeditsave-")],
+                [sg.Button("Select All", k="-bulkeditselall-"),
+                 sg.Button("Select None", k="-bulkeditselnone-"),
+                 sg.Button("Config", k="-bulkeditconfig-")],
+                [sg.Column([], k="-bulkeditlist-", scrollable=True, vertical_scroll_only=True)]]
+
+
+    layout = [sg.vtop([sg.pin(sg.Column(mainlayout, k="-main-")),
+              sg.pin(sg.vtop(sg.Frame("Bulk Edit", bulkedit, k="-bulkedit-")))])]
+
 
     window = sg.Window(f"MagicGen Scaling Tool", layout)
 
@@ -138,10 +241,86 @@ def scalingTool():
 
     updated = False
     lastupdate = -1
+    fakespell = None
+    bulkEditSelectedAttributes = None
+    bulkEditCheckboxIndexesToEffectNames = {}
     while True:
         event, values = window.read(timeout=100)
         if event == sg.WIN_CLOSED or event == 'Quit':
             break
+
+        if event == "-bulkeditfindanalogous-":
+            selectedeffect = magicgen.utils.spelleffects.get(values["-lookupspelleffect-"], None)
+            print(f"Sel: {selectedeffect}")
+            if selectedeffect is not None and bulkEditSelectedAttributes is not None:
+                similar = []
+                for name, eff in magicgen.utils.spelleffects.items():
+                    isSimilar = True
+                    for param, matched in bulkEditSelectedAttributes.items():
+                        if not matched:
+                            continue
+                        if getattr(selectedeffect, param) != getattr(eff, param):
+                            isSimilar = False
+                            break
+                    if isSimilar:
+                        similar.append(eff.name)
+                i = 0
+                bulkEditCheckboxIndexesToEffectNames
+                while 1:
+                    key = f"Checkbox{i}"
+                    if key not in values:
+                        break
+                    window[key].update(False, text="", visible=False)
+                    i += 1
+                newlayout = []
+                similar = sorted(similar)
+                for i, similarEffName in enumerate(similar):
+                    key = k=f"Checkbox{i}"
+                    if key in values:
+                        window[key].update(text=similarEffName, visible=True)
+                        window[key].update(True)
+                    else:
+                        row = [sg.Checkbox(similarEffName, default=True, k=f"Checkbox{i}")]
+                        newlayout.append(row)
+                    bulkEditCheckboxIndexesToEffectNames[key] = similarEffName
+                scroll = i >= 10
+                window.extend_layout(window["-bulkeditlist-"], newlayout)
+
+        if event in ["-bulkeditselall-", "-bulkeditselnone-"]:
+            val = "all" in event
+            i = 0
+            while 1:
+                key = f"Checkbox{i}"
+                if key not in values:
+                    break
+                window[key].update(val)
+                i += 1
+
+        if event == "-bulkeditsave-":
+            if bulkEditSelectedAttributes is not None:
+                response = sg.popup_ok_cancel(f"Are you sure you want to overwrite the data of all ticked effects"
+                                          f" with the values currently shown?")
+
+                if response.lower() == "ok":
+                    i = 0
+                    bulkEditAttribs = []
+                    for attrib, shouldcopy in bulkEditSelectedAttributes.items():
+                        if shouldcopy:
+                            bulkEditAttribs.append(attrib)
+                    while 1:
+                        key = f"Checkbox{i}"
+                        if key not in values:
+                            break
+                        i += 1
+                        if not values[key]:
+                            continue
+                        spelleffect = magicgen.utils.spelleffects.get(bulkEditCheckboxIndexesToEffectNames[key], None)
+                        if spelleffect is not None:
+                            print(f"Set {bulkEditAttribs} for {spelleffect.name}")
+                            overwriteSpellData(bulkEditAttribs, fakespell, spelleffect, giveconfirm=False)
+
+        if event == "-bulkeditconfig-":
+            bulkEditSelectedAttributes = bulkEditConfigWindow(bulkEditSelectedAttributes)
 
         if event == "-lookupspellfind-":
             val = scalingToolEffectLookup(values["-lookupspelleffect-"])
@@ -170,58 +349,7 @@ def scalingTool():
             if spelleffect is None:
                 sg.popup(f"Spell effect {values['-lookupspelleffect-']} not found.")
             else:
-                response = sg.popup_ok_cancel(f"Are you sure you want to overwrite the data of {spelleffect.name}"
-                                              f" with the values currently shown?")
-                if response.lower() == "ok":
-                    tochange = {}
-                    changecount = {}
-                    for attrib in attribs_to_copy:
-                        if getattr(fakespell, attrib) != getattr(spelleffect, attrib):
-                            setattr(spelleffect, attrib, getattr(fakespell, attrib))
-                            tochange[attrib] = getattr(fakespell, attrib)
-                    with open(spelleffect.fp, "r") as datafile:
-                        content = datafile.read().split("\n")
-                    effstartlineindex = None
-                    effendlineindex = None
-                    lineindex = -1
-                    while True:
-                        lineindex += 1
-                        line = content[lineindex]
-                        if line.strip().startswith("--"):
-                            continue
-                        if line.strip() == "":
-                            continue
-                        line = line.strip()
-                        # Locate the start of this spell effect.
-                        if effstartlineindex is None:
-                            if not line.startswith("#neweffect"):
-                                continue
-                            m = re.match(f'#neweffect\\W*"{spelleffect.name}"', line)
-                            if m is not None:
-                                effstartlineindex = lineindex
-                                continue
-                        else:
-                            # Check to see if this line contains one of the attribs we want to change
-                            # Importantly, this will change ALL instances of an attribute, as there is nothing illegal
-                            # about having two values for the same one, the second will take precedence
-                            for attrib in tochange:
-                                if line.startswith(f"#{attrib}"):
-                                    print(f"Change value for line: {line}")
-                                    newline = f"#{attrib} {getattr(fakespell, attrib)}"
-                                    content[lineindex] = newline
-                                    changecount[attrib] = changecount.get(attrib, 0) + 1
-                                    break
-
-                            if line == "#end":
-                                # Insert all the attributes that we haven't changed yet
-                                for attrib in tochange:
-                                    if changecount.get(attrib, 0) == 0:
-                                        content.insert(lineindex, f"#{attrib} {getattr(fakespell, attrib)}")
-                                        print(f"Inserted new line for attrib {attrib}")
-                                break
-                    with open(spelleffect.fp, "w") as datafile:
-                        for line in content:
-                            datafile.write(line.strip() + "\n")
+                overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True)
 
 
         haschanged = False

@@ -1097,14 +1097,20 @@ class SpellEffect(object):
             return True
         if powerlvl < 0:
             return False
-        thisScale = self.calcScaleamt(mod, secondary, powerlvl)
-        prevScale = self.calcScaleamt(mod, secondary, powerlvl-1)
-        if thisScale == prevScale:
-            modname = getattr(mod, "name", "None")
-            secondaryname = getattr(secondary, "name", "None")
-            print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
-                  f"thisScale {thisScale} vs prevScale {prevScale}")
-            return False
+        if self.scalerate <= 0:
+            return True
+        # Only apply the logic if there is something to actually scale
+        if self.spelltype & SpellTypes.POWER_SCALES_AOE or self.spelltype & SpellTypes.POWER_SCALES_DAMAGE or \
+        self.spelltype & SpellTypes.POWER_SCALES_NREFF or self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES \
+        or self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO:
+            thisScale = self.calcScaleamt(mod, secondary, powerlvl)
+            prevScale = self.calcScaleamt(mod, secondary, powerlvl-1)
+            if thisScale == prevScale:
+                modname = getattr(mod, "name", "None")
+                secondaryname = getattr(secondary, "name", "None")
+                print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
+                      f"thisScale {thisScale} vs prevScale {prevScale}")
+                return False
         return True
 
     def _scaleSpellPath1level(self, s, mod, secondary, **options):
