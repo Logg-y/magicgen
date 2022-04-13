@@ -2,6 +2,12 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
+v3.1.6
+
+Increased the cost of greater othernesses somewhat
+Slightly increased the fatigue scaling for the etherealness buff
+Fixed conservative communion spells not generating because their resulting names were too long
+
 v3.1.5
 
 Attempted fix for crashing when parsing unit descriptions on non-English operating systems

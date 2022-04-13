@@ -26,7 +26,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.5"
+ver = "3.1.6"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -41,9 +41,9 @@ def _writetoconsole(line):
     sys.stderr.flush()
 
 def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
+    "Parse all data files. Return a dict of {spell effect name:SpellEffect instance}."
     if len(utils.spelleffects) > 0:
         return
-    "Parse all data files. Return a dict of {spell effect name:SpellEffect instance}."
     base_path = os.path.join('./data', 'spells')
     fileparser.readModifiersFromDir(os.path.join(base_path, 'modifiers'))
     secondaries_path = os.path.join(base_path, 'secondaries')

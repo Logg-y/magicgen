@@ -288,29 +288,29 @@
 #paths 255
 #secondarypaths 1
 
-#namecond effectiveaoe < 1 1 "NAMEPREFIX Conservative Focus upon Flames"
+#namecond effectiveaoe < 1 1 "NAMEPREFIX Careful Flame Focus"
 #namecond effectiveaoe >= 1 1 "NAMEPREFIX Focus upon Flames"
 #descr 1 "SUBJECT focuses and searches for magical pyres lit by other mages. This allows those controlling the pyre to harness the magical powers of SUBJECT. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 2 "NAMEPREFIX Conservative Wind Whispers"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Careful Wind Whispers"
 #namecond effectiveaoe >= 1 2 "NAMEPREFIX Whispers upon the Wind"
 #descr 2 "SUBJECT surrenders PRONOUN_POS mind to the air surrounding the battlefield. This allows their magical power to be harnessed by friendly mages listening to the wind. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 4 "NAMEPREFIX Conservative Aqueous Connection"
+#namecond effectiveaoe < 1 4 "NAMEPREFIX Careful Aqueous Link"
 #namecond effectiveaoe >= 1 4 "NAMEPREFIX Aqueous Connections"
 #descr 4 "SUBJECT surrenders PRONOUN_POS mind to the water and water vapour on the battlefield. This allows their magical power to be harnessed by friendly mages connected to the water. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 32 "NAMEPREFIX Conservative Spiritual Communion"
+#namecond effectiveaoe < 1 32 "NAMEPREFIX Careful Spiritual Link"
 #namecond effectiveaoe >= 1 32 "NAMEPREFIX Spiritual Communion"
 #descr 32 "By connecting with the spirits of the dead, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the spirits. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 64 "NAMEPREFIX Conservative Supplicant of Gaia"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Careful Supplication"
 #namecond effectiveaoe >= 1 64 "NAMEPREFIX Supplicant of Gaia"
 #descr 64 "By connecting with the the surrounding presence of Gaia, SUBJECT offers PRONOUN_POS magical powers to other friendly mages which connect to the presence. Connections formed by this spell persist only until the caster becomes unconscious."
 
-#namecond effectiveaoe < 1 8 "NAMEPREFIX Conservative Supplicant of Earth"
-#namecond effectiveaoe < 1 16 "NAMEPREFIX Conservative Communion Slave"
-#namecond effectiveaoe < 1 128 "NAMEPREFIX Conservative Sabbath Slave"
+#namecond effectiveaoe < 1 8 "NAMEPREFIX Careful Supplication"
+#namecond effectiveaoe < 1 16 "NAMEPREFIX Careful Communion"
+#namecond effectiveaoe < 1 128 "NAMEPREFIX Careful Sabbath"
 
 #namecond effectiveaoe >= 1 8 "NAMEPREFIX Supplicants of Earth"
 #namecond effectiveaoe >= 1 16 "NAMEPREFIX Communion Slaves"

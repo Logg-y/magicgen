@@ -36,7 +36,7 @@
 #maxpower 14
 #nreff 2
 #pathlevel 4
-#fatiguecost 900
+#fatiguecost 1100
 #schools 1
 
 #paths 16
@@ -54,7 +54,7 @@
 #skipchance 97
 
 #scalefatigueexponent 0.5
-#scalefatiguemult 100
+#scalefatiguemult 240.0
 #newunit "Greater Otherness"
 
 #scalerate 2
@@ -114,4 +114,7 @@
 
 #scalerate 2
 #end
+
+
+
 

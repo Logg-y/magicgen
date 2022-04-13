@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.16
+#scalerate 1
 -- #scalecost 2.2
 
 #aoe 0
@@ -47,6 +47,11 @@
 #namecond effect > 1000 d "NAMEPREFIX $mist$ of etherealness"
 
 #pathperresearch 0.6
+#scalefatiguemult 7
+#scalefatigueexponent 1.1
 #end
+
+
+
 
 
