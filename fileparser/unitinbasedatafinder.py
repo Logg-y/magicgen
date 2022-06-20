@@ -47,6 +47,7 @@ class UnitInBaseDataFinder(object):
         self.additionalmodcmds = ""
         self.origid = None
         self.id = None
+        self.newunit = None
         self.descr = ""
         # make sure keys are initialised - brand new units otherwise have nothing set
         if len(csv_keys) == 0:
@@ -127,6 +128,12 @@ class UnitInBaseDataFinder(object):
                     self.descr = f.read()
             descriptioncache[self.id] = copy(self.descr)
         self.uniqueid = f"vanilla-{self.id}"
+        if self.mapmove < 6:
+            self.mapmove = self.mapmove * 6 + 2
+            if self.flying > 0:
+                self.mapmove += 6
+            if self.slave > 0:
+                self.mapmove -= 2
 
         return self
     def __deepcopy__(self, memo):

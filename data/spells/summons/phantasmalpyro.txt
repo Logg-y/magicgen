@@ -1,0 +1,116 @@
+#neweffect "Summon phantasmal pyro"
+#effect 1
+#damage 569
+#spec 0
+#power 4
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#newunit "Phantasmal Pyromancer"
+#sound 31
+#schools 1
+
+#paths af
+#secondarypaths af
+#secondarypathchance 100
+#scalefatiguemult 10
+#skipchance 97
+
+#name af "$conjure$ NAMEPREFIX Phantasmal %Pyromancer%"
+#descr af "The caster summons forth ARTICLE phantasmal %pyromancer%. Phantasmal pyromancers are illusory mages that cast false 'spells' that harm only those that believe them to be real. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "phantasmal pyro ritual"
+#effect 10001
+#damage 569
+#spec 8388608
+#power 4
+#maxpower 8
+#nreff 4
+#pathlevel 3
+#fatiguecost 900
+#schools 1
+#newunit "Phantasmal Pyromancer"
+
+#paths af
+#secondarypaths af
+#secondarypathchance 100
+
+#skipchance 95
+
+#name af "$Summon$ NAMEPREFIX Phantasmal %Pyromancer%"
+#descr af "The caster summons forth ARTICLE phantasmal %pyromancer%. Phantasmal pyromancers are illusory mages that cast false 'spells' that harm only those that believe them to be real."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 10
+
+#scalerate 2
+#end
+
+#neweffect "phantasmal pyro Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 569
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 1100
+#schools 1
+#skipchance 99
+#nogeodst 2052
+#newunit "Phantasmal Pyromancer"
+#paths af
+#secondarypaths af
+#secondarypathchance 100
+
+#name af "NAMEPREFIX Phantasmal Pyromancer $ambush$"
+#descr af "The caster summons forth a phantasmal pyromancer to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon phantasmal pyro"
+#effect 10038
+#provrange 4
+#damage 569
+#spec 0
+#power 6
+#maxpower 14
+#nreff 1002
+#pathlevel 4
+#fatiguecost 1400
+#schools 1
+#nogeodst 2052
+#newunit "Phantasmal Pyromancer"
+
+#skipchance 99.6
+
+#paths af
+#secondarypaths af
+#secondarypathchance 100
+
+#name af "$Send$ NAMEPREFIX Phantasmal Pyromancers"
+#descr af "The caster summons forth phantasmal pyromancers to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1.5
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+#end
+
+
+

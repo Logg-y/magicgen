@@ -1,0 +1,37 @@
+#newunit "Storm Drake"
+#baseunit 523
+#raw "#clear"
+#clearweapons 1
+#spr1 "MagicGen/stormdrake.tga"
+#spr2 "MagicGen/stormdrake_2.tga"
+#raw "#str 15"
+#raw "#att 10"
+#raw "#def 8"
+#raw "#hp 28"
+#raw "#size 3"
+#raw "#prot 10"
+#raw "#mr 13"
+#raw "#prec 8"
+#raw "#ap 9"
+#raw "#rpcost 10000"
+#raw "#mapmove 8"
+#raw "#enc 4"
+#raw "#startage 22"
+#raw "#maxage 50"
+#raw "#itemslots 12288"
+#raw "#animal"
+#raw "#drake"
+#raw "#coldblood"
+#raw "#undisciplined"
+#set fireres 0
+#set shockres 15
+#raw "#shockres 15"
+#raw "#airattuned 50"
+#raw "#dungeon"
+#raw "#stormimmune"
+#set stormimmune 1
+#addnewweapon "Storm Drake Breath"
+#addweapon 20
+#setstr descr "Storm drakes are huge, scaly reptiles capable of breathing electricity like dragons."
+#setstr name "Storm Drake"
+#end

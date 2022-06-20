@@ -26,8 +26,8 @@
 #effect 10083
 #damage -1
 #spec 8388608
-#power 4
-#maxpower 4
+#power 2
+#maxpower 2
 #nreff 1
 #pathlevel 3
 #fatiguecost 2500

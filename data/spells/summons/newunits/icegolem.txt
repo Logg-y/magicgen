@@ -1,0 +1,28 @@
+-- Design intent: It's an icy golem
+
+-- NOTE TO SELF - mention the lack of slots (crown and two misc) in yellowtext
+
+#newunit "Ice Golem"
+#baseunit 760
+#clearweapons 1
+#addweapon 69
+#addweapon 69
+#set mr 18
+#raw "#mr 18"
+#set spreadcold 1
+#raw "#incscale 2"
+#raw "#iceprot 4"
+#raw "#cold 10"
+#raw "#coldres 25"
+#set coldres 25
+#set iceprot 4
+#set cold 10
+#set coldpower 2
+#raw "#coldpower 2"
+#setstr descr "An ice golem is a frozen giant with gigantic icicles for fists, given true life and moderate magical power by the divine names inscribed on its surface. It exudes cold, and rapidly chills the whole province where it is located. With its tremendous strength, it also has no issue crushing fortification walls to powder. Being made of magical ice without hands, it is unable to wear enclosing armour or wield other weapons."
+#setstr name "Ice Golem"
+#spr1 "MagicGen/icegolem.tga"
+#spr2 "MagicGen/icegolem_2.tga"
+#set W 2
+#raw "#magicskill 2 2""
+#end

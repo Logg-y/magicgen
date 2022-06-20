@@ -27,7 +27,7 @@
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.4
 #end
 
 #neweffect "irondragon ritual"
@@ -116,4 +116,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 600
 #end
+
 

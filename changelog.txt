@@ -2,6 +2,37 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
+v3.1.7
+
+SUMMONS
+
+Human mages are no longer summoned directly with spells (or summoned in battles). Added many new spell effects which build sites allowing their recruitment for gold instead.
+Added ritual and battlesummoned versions of various nonhuman mage creatures with custom sprites. (I am not an artist!)
+The intent with the new summons was mostly to have a mage that is consistently quite useful, with a small chance to have more paths than the reason you would likely be summoning it.
+Added storm drakes
+Added storm dragons
+Added ice imps
+Added vine man archers
+Added ether archers
+
+OTHER
+
+Battle spell fatigue no longer always gets rounded down to zero when below 5.
+Updated detection of whether a spell is damaging or not for modifiers (thanks to Neighter for picking up on this one)
+Fixed missing returning spell name
+Added support for new sprites!
+Added a mod banner!
+The utility now generates a .zip file with all the required sprites, ready for uploading onto certain popular game hosting platforms
+(Alternatively, you can make a copy of MagicGen/data/sprites, rename it simply to "MagicGen" and put it in your dom5 mods folder and not have to worry about copying sprites for each generated file)
+Fixed unmodified montag units not firstshaping into their original forms
+Increased default constructionfactor from 0.6 to 0.8 due to the build-a-site spells
+Added ritual of rebirth
+Added many kinds of phantasmal mages that cast "spells" at victims
+Fixed field-wide control the dead doing damage instead of controlling
+Reduced the fast casting of the elemental spirit transformations to double
+Fix towards error generating nextspells involving the generator trying to make an infinitely long secondary effect chain
+
+
 v3.1.6
 
 Increased the cost of greater othernesses somewhat

@@ -39,8 +39,8 @@
 #provrange 4
 #damage 2
 #spec 8388608
-#power 5
-#maxpower 5
+#power 4
+#maxpower 4
 #nreff 1
 #pathlevel 4
 #fatiguecost 4000
@@ -237,8 +237,8 @@
 #provrange 4
 #damage 21
 #spec 8388608
-#power 5
-#maxpower 5
+#power 4
+#maxpower 4
 #nreff 1
 #pathlevel 4
 #fatiguecost 4000

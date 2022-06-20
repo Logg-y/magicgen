@@ -1,0 +1,75 @@
+#neweffect "Call Gargoyle Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 8
+
+#newunit "Gargoyle Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths ae
+#secondarypaths ae
+#secondarypathchance 90
+
+#name ae "Conjure NAMEPREFIX Gargoyle %Sculptor%"
+#descr ae "The caster summons ARTICLE Gargoyle %Sculptor% to join him in battle. The Gargoyle %Sculptor% will leave once the battle is over."
+#details "Gargoyle Sculptors are A2E2 mages with the following random paths:\n20% AE"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Gargoyle Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1800
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 8
+
+#skipchance 70
+
+#newunit "Gargoyle Mage"
+
+#paths ae
+#secondarypaths ae
+#secondarypathchance 90
+
+
+#name ae "Summon NAMEPREFIX Gargoyle Sculptor"
+#descr ae "The caster summons a Gargoyle Sculptor to serve him. The Gargoyle has skill in Earth and Air, and may spend a month to produce lesser gargoyles."
+#details "Gargoyle Sculptors are A2E2 mages with the following random paths:\n20% AE"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+

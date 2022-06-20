@@ -8,6 +8,8 @@ import binascii
 import sys
 import math
 import traceback
+import shutil
+import zipfile
 from typing import Dict, List, Union
 
 import fileparser
@@ -26,7 +28,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.6"
+ver = "3.1.7"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -67,6 +69,7 @@ def _parseDataFiles() -> Dict[str, fileparser.SpellEffect]:
     fileparser.readEventSetsFromDir(os.path.join(rituals_path, 'events'))
     fileparser.readUnitModsFromDir(os.path.join(rituals_path, 'unitmods'))
     fileparser.readNewUnitsFromDir(os.path.join(base_path, 'summons', 'newunits'))
+    fileparser.readNewWeaponsFromDir(os.path.join(base_path, 'summons', 'newweapons'))
 
     unitinbasedatafinder.loadAllUnitData()
 
@@ -239,7 +242,7 @@ def generateAlwaysPresentSpells(s, **options):
         for name, spelleff in s.items():
             if spelleff.alwaysgenerate > 0 and not spelleff.generated:
                 print(f"Trying to generate a spell of effect {spelleff.name} as it hasn't generated yet")
-                spell = spelleff.rollSpell(random.randint(spelleff.power, spelleff.maxpower),
+                spell = spelleff.rollSpell(random.randint(spelleff.power, min(9, spelleff.maxpower)),
                                            allowskipchance=False,
                                            **options)
                 if spell is not None:
@@ -369,6 +372,28 @@ def generateNewIndepspellsModFile(f, baseucrc):
         indepspells.write(indepspellscontent)
         f.write(indepspellscontent)
 
+def handleSpriteDependences(outputfolder, dmname):
+    utils._writetoconsole("Collecting required sprites...\n")
+    spritefolder = os.path.join(outputfolder, "MagicGen")
+    if os.path.isdir(spritefolder):
+        shutil.rmtree(spritefolder)
+    os.mkdir(spritefolder)
+    for dmspritepath in utils.spritedependencies:
+        sprite = os.path.basename(dmspritepath)
+        spritepath = os.path.join("./data/sprites", sprite)
+        shutil.copy(spritepath, os.path.join(spritefolder, sprite))
+    utils._writetoconsole("Writing .zip archive...\n")
+    oldcwd = os.getcwd()
+    os.chdir(outputfolder)
+    zipf = zipfile.ZipFile(dmname[:-3] + ".zip", "w", zipfile.ZIP_DEFLATED)
+    zipf.write(dmname)
+    for file in os.listdir("./MagicGen"):
+        if os.path.isdir(os.path.join("./MagicGen", file)):
+            continue
+        zipf.write(os.path.join("./MagicGen", file))
+    os.chdir(oldcwd)
+
+
 def rollspells(**options):
     global spellstokeep
     utils.WEAPON_ID = options.get("weaponidstart", 800)
@@ -436,7 +461,7 @@ def rollspells(**options):
                 schoolname = SchoolFlags(school).name
                 spellsperlevel = options.get("spellsperlevel", 14)
                 if school == 8:
-                    spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.45))
+                    spellsperlevel = int(spellsperlevel * options.get("constructionfactor", 0.8))
                 researchorder = list(range(0+researchmod, 10+researchmod))
                 random.shuffle(researchorder)
                 if school == 8 and (research-researchmod) in [2, 4, 6, 8]:
@@ -485,6 +510,7 @@ def rollspells(**options):
                 "#description {}A MagicGen pack, generated with version {}. This pack contains {} spells.{}\n".format(
                     '"', ver, len(spellsToWriteToFile), '"')
             )
+            f.write('#icon "MagicGen/magicgenlogo.tga"' + "\n")
             f.write("-- Number of generic spells by primary path requirement:\n")
             for illwinterPathID, numSpells in genericSpellCountsByPath.items():
                 f.write(f"-- {PathFlags(illwinterPathID).name}: {numSpells}\n")
@@ -497,6 +523,9 @@ def rollspells(**options):
             f.flush()
             f.close()
             _writetoconsole(f"Finished writing magicgen-{modname}.dm!\n")
+        utils.spritedependencies.add("magicgenlogo.tga")
+        handleSpriteDependences(outputfolder, f"magicgen-{modname}.dm")
+        _writetoconsole("Complete!\n")
     sys.stdout = sys.stderr
 
 
@@ -554,7 +583,7 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
                                       researchlevel: int, primarypath, allowblood: bool, secondarypathoptions: int,
                                       options: Dict[str, str]) -> Union[Spell, None]:
     # Roll for spell
-    for creationattempts in range(0, 20):
+    for creationattempts in range(0, 5):
         spell: Union[Spell, None] = spelleffect.rollSpell(researchlevel, forcepath=primarypath,
                                                           forcesecondaryeff=secondarypathoptions,
                                                           allowblood=allowblood, allowskipchance=False,
@@ -755,7 +784,7 @@ def main():
                default=14))
     opts.append(Option("-constructionfactor",
                        help="Construction will get only this proportion of the normal number of spells. This is intended to be less than 1.0.",
-                       type=float, default=0.45))
+                       type=float, default=0.8))
     opts.append(Option("-modlist",
                        help="A list of .dm file paths, separated by commas. Files in the list will be scanned and nations defined in them will get national spells.",
                        type=str, default=""))

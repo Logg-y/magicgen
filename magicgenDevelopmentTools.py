@@ -320,6 +320,9 @@ def scalingTool():
                         i += 1
                         if not values[key]:
                             continue
+                        if key not in bulkEditCheckboxIndexesToEffectNames:
+                            print(f"Checkbox {key} doesn't have a corresponding effect, skipped")
+                            continue
                         spelleffect = magicgen.utils.spelleffects.get(bulkEditCheckboxIndexesToEffectNames[key], None)
                         if spelleffect is not None:
                             print(f"Set {bulkEditAttribs} for {spelleffect.name}")

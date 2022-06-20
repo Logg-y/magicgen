@@ -1,0 +1,150 @@
+#neweffect "Call Earth Gnome Lesser Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 2
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#newunit "Earth Gnome Lesser Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths e
+#secondarypaths e
+#secondarypathchance 90
+
+#name e "Conjure NAMEPREFIX %Student% of Oreigenes"
+#descr e "$The caster summons ARTICLE %Student% of Oreigenes to join him in battle. The %Student% of Oreigenes will leave once the battle is over."
+#details "Students of Oreigenes are E2 mages."
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Earth Gnome Lesser Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 2
+#fatiguecost 1400
+#chassisvalue 200
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 70
+
+#newunit "Earth Gnome Lesser Mage"
+
+#paths e
+#secondarypaths e
+#secondarypathchance 90
+
+#name e "Summon NAMEPREFIX %Student% of Oreigenes"
+#descr e "$The caster summons ARTICLE %Student% of Oreigenes to serve him. The student is an Earth Gnome which possesses skill in Earth magic."
+#details "Students of Oreigenes are E2 mages. They cannot wear magical boots."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+-------
+
+#neweffect "Call Earth Gnome Greater Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#newunit "Earth Gnome Greater Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths e
+#secondarypaths e
+#secondarypathchance 90
+
+#name e "Conjure NAMEPREFIX %Adept% of Oreigenes"
+#descr e "$The caster summons ARTICLE_N %Adept% of Oreigenes to join him in battle. The %Adept% of Oreigenes will leave once the battle is over."
+#details "Adepts of Oreigenes are E3 mages."
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Earth Gnome Greater Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1900
+#chassisvalue 200
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools conj
+
+#skipchance 70
+
+#newunit "Earth Gnome Greater Mage"
+
+#paths e
+#secondarypaths e
+#secondarypathchance 90
+
+
+#name e "Summon NAMEPREFIX %Adept% of Oreigenes"
+#descr e "$The caster summons ARTICLE %Adept% of Oreigenes to serve him. The adept is an Earth Gnome which possesses great skill in Earth magic."
+#details "Adepts of Oreigenes are E3 mages. They cannot wear magical boots."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+
+

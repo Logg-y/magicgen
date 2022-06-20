@@ -51,11 +51,11 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.0
 -- #scalecost 1.6
 
 #aoe 0
-#power 7
+#power 6
 #maxpower 14
 #pathlevel 3
 #explspr 10213
@@ -70,8 +70,8 @@
 #namecond effectiveaoe < 1 64 "NAMEPREFIX Charm"
 #namecond effectiveaoe < 1 128 "NAMEPREFIX Hellbind Heart"
 
-#namecond2 1 < effectiveaoe < 600 64 "NAMEPREFIX Charming Whispers"
-#namecond2 1 < effectiveaoe < 600 128 "NAMEPREFIX Hellbind Hearts"
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Charming Whispers"
+#namecond2 1 <= effectiveaoe < 600 128 "NAMEPREFIX Hellbind Hearts"
 
 #descr 64 "The caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
 #descr b "$BLOOD_INTRO$, the caster attempts to magically convince SUBJECT to fight for his cause. If not resisted, this will change the allegiance of the %target%, with their magical items and spellcasting prowess intact."
@@ -155,6 +155,8 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 
 
 

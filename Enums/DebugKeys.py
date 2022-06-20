@@ -1,6 +1,6 @@
 class debugkeys:
-    NATIONALSPELLGENERATIONWEIGHTING = False
-    NATIONALSPELLGENERATION = False
+    NATIONALSPELLGENERATIONWEIGHTING = True
+    NATIONALSPELLGENERATION = True
     MAGESELECTIONFORPATHFORNATIONALSPELL = False
 
     # Writes details on the outcome of every single condition test

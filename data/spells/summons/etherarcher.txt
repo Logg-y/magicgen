@@ -1,0 +1,119 @@
+#neweffect "Summon etherarcher"
+#effect 1
+#damage 736
+#spec 0
+#power 3
+#maxpower 15
+#precision -2
+#nreff 2
+#pathlevel 3
+#fatiguecost 120
+#scalefatiguemult 15
+#sound 31
+#schools 1
+
+#newunit "Ether Archer"
+
+#paths 16
+#secondarypaths 16
+
+#skipchance 98
+
+#name 16 "$conjure$ NAMEPREFIX Ether %Archer%"
+#descr 16 "The caster summons forth ARTICLE_N ether %archer%. Ether archers are large, ethereal humanoids that wield moon bows."
+
+#spelltype 528
+
+#scalerate 1.25
+#scalefatigueexponent -1.5
+#pathperresearch 0.4
+#end
+
+#neweffect "etherarcher ritual"
+#effect 10001
+#damage 736
+#spec 0
+#power 3
+#maxpower 14
+#nreff 3
+#pathlevel 3
+#fatiguecost 420
+#schools 1
+
+#paths 16
+#secondarypaths 16
+
+#newunit "Ether Archer"
+
+#skipchance 90
+
+#name 16 "$Summon$ NAMEPREFIX Ether %archer%"
+#descr 16 "The caster summons forth ARTICLE ether %archer%. Ether archers are large, ethereal humanoids that wield moon bows."
+
+#spelltype 20
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 30.0
+#pathperresearch 0.4
+#scalerate 2
+#end
+
+#neweffect "etherarcher Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 736
+#spec 0
+#power 8
+#maxpower 8
+#nreff 1
+#pathlevel 5
+#fatiguecost 800
+#schools 1
+#skipchance 97
+#nogeodst 2052
+
+#newunit "Ether Archer"
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "NAMEPREFIX Ether %archer% $ambush$"
+#descr 16 "The caster summons forth ARTICLE ether %archer% in a distant province to attack an enemy commander. Ether warriors are large, ethereal humanoids that wield moon bows."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon etherarcher"
+#effect 10038
+#provrange 4
+#damage 736
+#spec 0
+#power 6
+#maxpower 14
+#nreff 4
+#pathlevel 4
+#fatiguecost 1000
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+
+#newunit "Ether Archer"
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "$Send$ NAMEPREFIX Ether %archer%"
+#descr 16 "The caster summons forth ARTICLE ether %archer% to attack a distant province. Ether archer are large, ethereal humanoids that wield moon bows."
+
+#spelltype 20
+
+#scalerate 1
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 130
+#end
+
+
+

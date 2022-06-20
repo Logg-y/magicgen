@@ -268,13 +268,13 @@ class SpellSecondaryEffect(object):
 
         if self.reqdamagingeffect is not None:
             if self.reqdamagingeffect:
-                if eff.effect % 1000 not in utils.DAMAGING_EFFECTS:
+                if not utils.isDamagingSpellEffect(eff):
                     DebugLogger.debuglog(
                         f"Secondary is invalid: spell effect is not damaging",
                         debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                     return False
             else:
-                if eff.effect % 1000 in utils.DAMAGING_EFFECTS:
+                if utils.isDamagingSpellEffect(eff):
                     DebugLogger.debuglog(
                         f"Secondary is invalid: spell effect is damaging",
                         debugkeys.SECONDARYEFFECTCOMPATIBILITY)
@@ -301,7 +301,7 @@ class SpellSecondaryEffect(object):
                     curr = curr.nextspell
                     continue
                 # this does currently not work on chain lightning effects (134)
-                if curr.effect % 1000 not in utils.DAMAGING_EFFECTS or curr.effect % 1000 == 134:
+                if (not utils.isDamagingSpellEffect(curr)) or curr.effect % 1000 == 134:
                     DebugLogger.debuglog(
                         f"Secondary is invalid: is ondamage secondary, spell effect chain lightning or nondamaging",
                         debugkeys.SECONDARYEFFECTCOMPATIBILITY)
@@ -412,7 +412,9 @@ class SpellSecondaryEffect(object):
                                 optionscopy = copy.copy(options)
                                 optionscopy["isnextspell"] = True
                                 optionscopy["forcepath"] = s.path1
+                                # Secondary nextspells cannot themselves get modifiers/secondaries
                                 optionscopy["blockmodifier"] = True
+                                optionscopy["blocksecondary"] = True
                                 tmp.nextspell = utils.spelleffects[self.nextspell].rollSpell(**optionscopy)
                                 if tmp.nextspell is None:
                                     print("ERROR: failed to generate nextspell")

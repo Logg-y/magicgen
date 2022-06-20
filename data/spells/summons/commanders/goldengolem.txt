@@ -1,0 +1,66 @@
+#neweffect "Summon Golden Golem"
+
+#effect 10021
+#damage 471
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 3000
+#chassisvalue 1500
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 8
+
+#skipchance 40
+
+#newunit "Golden Golem"
+
+#paths fs
+#secondarypaths fs
+#secondarypathchance 99
+
+
+#name f "Construct NAMEPREFIX Golden Golem"
+#name s "Construct NAMEPREFIX Golden Golem"
+#descr f "The caster constructs a Golem from gold and magically animates it. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it. It is very effective against fortifications."
+#descr s "The caster constructs a Golem from gold and magically animates it. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it. It is very effective against fortifications."
+#details "The Golden Golem is a huge F2S1 or F1S2 mage. It can only wear magical crowns and carry two miscellenous items."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+#neweffect "Golden Golem Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 471
+#spec 0
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 8
+#fatiguecost 1400
+#chassisvalue 300
+#schools 8
+#skipchance 99
+#nogeodst 2052
+
+#skipchance 97
+
+#newunit "Golden Golem"
+
+#paths fs
+#secondarypaths fs
+#secondarypathchance 99
+
+#name f "NAMEPREFIX Golden Golem Attack"
+#name s "NAMEPREFIX Golden Golem Attack"
+#descr f "The caster constructs a Golem from gold in a distant province and magically animates it. The golem attacks a commander found there, before reverting back to regular gold. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it."
+#descr s "The caster constructs a Golem from gold in a distant province and magically animates it. The golem attacks a commander found there, before reverting back to regular gold. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it."
+#spelltype 4
+
+#end

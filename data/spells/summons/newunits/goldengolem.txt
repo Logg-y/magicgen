@@ -1,0 +1,32 @@
+-- Design intent: It's a bigger, nasty golem which doesn't take armour or feet
+-- ... but is size 6, has good natprot and a bigger hp pool
+-- And some sun awe, because a huge statue of gold would glimmer aggressively under sunlight 
+-- (but not be so impressive in the dark)
+
+-- NOTE TO SELF - mention the lack of slots (crown and two misc) in yellowtext
+
+#newunit "Golden Golem"
+#baseunit 760
+#set mr 18
+#raw "#mr 18"
+#set sunawe 3
+#set awe 1
+#raw "#awe 1"
+#raw "#sunawe 3"
+#setstr descr "A golden golem is a metal giant with fists enchanted to shatter steel and stone, given true life and moderate magical power by the divine names inscribed on its surface. It is tremendously strong and can crush stone walls to powder. Many of weaker mind find it difficult to bring themselves to strike at such a massive statue of gold, especially when it glitters under the presence of direct sunlight. Despite being made of a relatively soft metal, its body is magically reinforced to make it as strong as steel. Unfortunately, this process prevents it from being able to wear other enclosing armour."
+#setstr name "Golden Golem"
+#spr1 "MagicGen/goldgolem.tga"
+#spr2 "MagicGen/goldgolem_2.tga"
+-- f1s1, 100% fs
+
+
+#set F 1
+#set S 1
+#raw "#magicskill 0 1"
+#raw "#magicskill 4 1"
+#set mask1 2176
+#set rand1 100
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 2176 100"
+#end

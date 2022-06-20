@@ -1,0 +1,21 @@
+#newunit "Ether Archer"
+#baseunit 736
+#clearweapons 1
+#addnewweapon "Moon Bow"
+#addnewweapon "Moon Dagger"
+#raw "#cleararmor"
+#raw "#armor 6"
+#raw "#armor 118"
+#set att 12
+#set str 14
+#raw "#str 14"
+#set def 11
+#raw "#att 12"
+#raw "#def 11"
+#set hp 17
+#raw "#hp 17"
+#setstr descr "Ether Warriors are members of a race of large, humanoid beings that were banished from this world in ancient times. Their wars drained the world of Arcana and they were forced to enter other realms of existence in order to continue their clan wars. The lesser races and their gods sealed the astral gates behind the Ether Warriors to ensure the safety of the world. Ether Warriors are powerful beings and can live for centuries unless slain in battle. All members of the race are ethereal and very difficult to harm with non-magical weapons. Ether Archers use Moon Bows, magical bows that cause additional damage to magical beings. Ether Archers are magical beings and cannot be commanded by mere mortals."
+#setstr name "Ether Archer"
+#spr1 "MagicGen/etherarcher.tga"
+#spr2 "MagicGen/etherarcher_2.tga"
+#end

@@ -18,7 +18,7 @@
 #eventset "Summon Raise Shape RL1"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -47,7 +47,7 @@
 #eventset "Summon Raise Shape RL2"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -76,7 +76,7 @@
 #eventset "Summon Raise Shape RL3"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -105,7 +105,7 @@
 #eventset "Summon Raise Shape RL4"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -134,7 +134,7 @@
 #eventset "Summon Raise Shape RL5"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -163,7 +163,7 @@
 #eventset "Summon Raise Shape RL6"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -192,7 +192,7 @@
 #eventset "Summon Raise Shape RL7"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -221,7 +221,7 @@
 #eventset "Summon Raise Shape RL8"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -250,7 +250,7 @@
 #eventset "Summon Raise Shape RL9"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -279,7 +279,7 @@
 #eventset "Summon Raise Shape RL10"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -308,7 +308,7 @@
 #eventset "Summon Raise Shape RL11"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -337,7 +337,7 @@
 #eventset "Summon Raise Shape RL12"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -366,7 +366,7 @@
 #eventset "Summon Raise Shape RL13"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -395,7 +395,7 @@
 #eventset "Summon Raise Shape RL14"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 100
+#set raiseonkill 25
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0

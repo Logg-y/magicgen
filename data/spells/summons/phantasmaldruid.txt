@@ -1,0 +1,115 @@
+#neweffect "Summon phantasmal druid"
+#effect 1
+#damage 569
+#spec 8388608
+#power 4
+#maxpower 14
+#precision -2
+#nreff 2
+#pathlevel 2
+#fatiguecost 100
+#newunit "Phantasmal Druid"
+#sound 31
+#schools 1
+
+#paths an
+#secondarypaths an
+#secondarypathchance 100
+#scalefatiguemult 10
+#skipchance 97
+
+#name an "$conjure$ NAMEPREFIX Phantasmal %Druid%"
+#descr an "The caster summons forth ARTICLE phantasmal %Druid%. Phantasmal druids are illusory mages that cast false 'spells' that harm only those that believe them to be real. They will fight for him until the battle ends."
+
+#spelltype 528
+
+#scalerate 1
+#scalefatigueexponent -1.4
+#end
+
+#neweffect "phantasmal druid ritual"
+#effect 10001
+#damage 569
+#spec 8388608
+#power 4
+#maxpower 8
+#nreff 4
+#pathlevel 3
+#fatiguecost 900
+#schools 1
+#newunit "Phantasmal Druid"
+
+#paths an
+#secondarypaths an
+#secondarypathchance 100
+#scalefatiguemult 10
+
+#skipchance 95
+
+#name an "$Summon$ NAMEPREFIX Phantasmal %Druid%"
+#descr an "The caster summons forth ARTICLE phantasmal %Druid%. Phantasmal druids are illusory mages that cast false 'spells' that harm only those that believe them to be real."
+
+#spelltype 20
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 10
+
+#scalerate 2
+#end
+
+#neweffect "phantasmal druid Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 569
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 1100
+#schools 1
+#skipchance 99
+#newunit "Phantasmal Druid"
+#paths an
+#secondarypaths an
+#secondarypathchance 100
+
+#name an "NAMEPREFIX Phantasmal Druid $ambush$"
+#descr an "The caster summons forth a phantasmal druid to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
+
+#spelltype 4
+
+#end
+
+#neweffect "Remote summon phantasmal druid"
+#effect 10038
+#provrange 4
+#damage 569
+#spec 8388608
+#power 6
+#maxpower 14
+#nreff 1002
+#pathlevel 4
+#fatiguecost 1400
+#schools 1
+#newunit "Phantasmal Druid"
+
+#skipchance 99.6
+
+#paths an
+#secondarypaths an
+#secondarypathchance 100
+
+#name an "$Send$ NAMEPREFIX Phantasmal Druids"
+#descr an "The caster summons forth phantasmal druids to attack a distant province."
+
+#spelltype 20
+
+#scalerate 1.5
+
+#scalefatigueexponent 0.3
+#scalefatiguemult 70
+#end
+
+
+

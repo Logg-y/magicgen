@@ -1,0 +1,49 @@
+#newweapon "Storm Drake Breath"
+#setstr name "Storm Drake Breath"
+#set range 6
+#raw "#copyweapon 696"
+#raw "#range 6"
+#raw "#ammo 5"
+#set ammo 5
+#raw "#att 0"
+#set att 0
+#raw "#sound 24"
+#set aoe 2
+#raw "#aoe 2"
+-- 128 + 2048 + 2**32 + 2**34 + 2**57 + 1 + 2**56
+-- #armornegating + #shock + #beam + #range050 + #groundprojectile + #nostr + #magic
+#set spec 216172803588622465
+#raw "#shock"
+#raw "#nostr"
+#raw "#dt_bouncekill"
+#raw "#dmg 3"
+#set dmg 3
+#set effect 134
+#raw "#explspr 10062"
+#raw "#flyspr 10307"
+#end
+
+#newweapon "Storm Dragon Breath"
+#setstr name "Storm Dragon Breath"
+#set range -3
+#raw "#copyweapon 696"
+#raw "#range -3"
+#raw "#ammo 5"
+#set ammo 5
+#raw "#att 0"
+#set att 0
+#raw "#sound 24"
+#set aoe 4
+#raw "#aoe 4"
+-- 128 + 2048 + 2**32 + 2**34 + 2**57 + 1 + 2**56
+-- #armornegating + #shock + #beam + #range050 + #groundprojectile + #nostr + #magic
+#set spec 216172803588622465
+#raw "#shock"
+#raw "#nostr"
+#raw "#dt_bouncekill"
+#raw "#dmg 3"
+#set dmg 3
+#set effect 134
+#raw "#explspr 10062"
+#raw "#flyspr 10307"
+#end

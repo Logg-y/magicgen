@@ -1,0 +1,35 @@
+-- Design intent: Nature access. The crosspaths might give you something else you want, as a nice extra
+-- but shouldn't be worth fishing for
+
+#newunit "Werewolf Mage"
+#baseunit 633
+#clearweapons 1
+#addweapon 20
+#addweapon 29
+#addweapon 163
+#setstr descr "Most werewolves are cursed with lycanthropy. Some werewolves called skinshifters have voluntarily taken wolven form with the aid of a wolf skin. All werewolves regenerate. Despite their lycanthropy, any magical knowledge from their past form is retained. In fact, the process of transformation is often especially revealing about the facets of Nature, and occasionally the magic of the other seasons."
+#setstr name "Werewolf Mage"
+#spr1 "MagicGen/werewolfmage.tga"
+#spr2 "MagicGen/werewolfmage_2.tga"
+-- n3, 50% fawed, 50% fawed
+
+
+#set N 3
+#raw "#magicskill 6 3"
+#set mask1 6016
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 6016 50"
+#set mask2 6016
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 6016 50"
+#set mask3 6016
+#set rand3 50
+#set nbr3 1
+#set link3 1
+#raw "#custommagic 6016 50"
+#end
+

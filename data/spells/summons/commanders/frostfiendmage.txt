@@ -1,0 +1,153 @@
+#neweffect "Call Frost Fiend Lesser Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 4
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 16
+
+#newunit "Frost Fiend Lesser Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths b
+#secondarypaths w
+#secondarypathchance 90
+
+#name b "Call NAMEPREFIX Frost Fiend %Iceweaver%"
+#descr b "$BLOOD_INTRO$, the blood mage summons ARTICLE Frost Fiend %Iceweaver% to join him in battle. The Frost Fiend %Iceweaver% will leave once the battle is over."
+#details "Frost Fiend Iceweavers are W2B1 mages with the following random paths:\n30% B\n50% ASDN"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.5
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#ainocast 1
+#end
+
+#neweffect "Summon Frost Fiend Lesser Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 6000
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 16
+
+#skipchance 70
+
+#newunit "Frost Fiend Lesser Mage"
+
+#paths b
+#secondarypaths w
+#secondarypathchance 90
+
+
+#name b "Bind NAMEPREFIX Frost Fiend Iceweaver"
+#descr b "$BLOOD_INTRO$, the blood mage binds a Frost Fiend Iceweaver to serve him. The fiend has skill in Death magic, and sometimes also in Blood magic."
+#details "Frost Fiend Iceweavers are W2B1 mages with the following random paths:\n30% B\n50% ASDN"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+-------
+
+#neweffect "Call Frost Fiend Greater Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 70
+#range 6
+#fatiguecost 300
+#explspr 10232
+#sound 31
+#schools 16
+
+#newunit "Frost Fiend Greater Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths b
+#secondarypaths w
+#secondarypathchance 50
+
+#name b "Call NAMEPREFIX Frost Fiend %Planefreezer%"
+#descr b "$BLOOD_INTRO$, the blood mage summons ARTICLE %Frost Fiend Planefreezer% to join him in battle. The %Frost Fiend Planefreezer% will leave once the battle is over."
+#details "Frost Fiend Planefreezers are W3B1 mages with the following random paths:\n30% B\n30% B\n50% ASDN\n50% ASDN"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.4
+#scalefatigueexponent -1.2
+#pathperresearch 0.5
+#ainocast 1
+#end
+
+#neweffect "Summon Frost Fiend Greater Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 9000
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 16
+
+#skipchance 70
+
+#newunit "Frost Fiend Greater Mage"
+
+#paths b
+#secondarypaths w
+#secondarypathchance 90
+
+
+#name b "Bind NAMEPREFIX Frost Fiend Planefreezer"
+#descr b "$BLOOD_INTRO$, the blood mage binds an  Frost Fiend Planefreezer to serve him. The fiend has great skill in Death magic, and sometimes also Blood magic."
+#details "Frost Fiend Planefreezers are W3B1 mages with the following random paths:\n30% B\n30% B\n50% ASDN\n50% ASDN"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+
+

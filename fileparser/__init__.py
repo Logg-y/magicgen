@@ -7,3 +7,4 @@ from .eventset import *
 from .newunit import *
 from .magicsite import *
 from .unitmodlist import *
+from .newweapon import *

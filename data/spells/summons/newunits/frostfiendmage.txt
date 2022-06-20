@@ -1,0 +1,72 @@
+-- Design intent: Water access. Could be better than empowering scouts in blood for hunting if you wanted to do that
+-- 50% asdn crosspaths are intended to be too rare to be a reason to make lots of these
+
+#newunit "Frost Fiend Lesser Mage"
+#baseunit 449
+#clearweapons 1
+#addweapon 172
+#addweapon 131
+#setstr descr "Frost fiends are devils of the icy reaches of the demon realms. In the constant wars of Inferno, the frost fiends are feared by all fiery devils. They wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies. They can only be summoned if human blood has been sacrificed. Their powers increase in cold lands. Frost Fiend Iceweavers are usually users of blood and water. Some have gained skill in other paths of magic, such as dabbling in mist, the Void, or horrific crossbreeding experimentation."
+#setstr name "Frost Fiend Iceweaver"
+#spr1 "MagicGen/frostfiend_lessermage.tga"
+#spr2 "MagicGen/frostfiend_lessermage_2.tga"
+-- f2b1, 30% b, 50% asdn
+
+
+#set W 2
+#set B 1
+#raw "#magicskill 2 2"
+#raw "#magicskill 7 1"
+#set mask1 16384
+#set rand1 30
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 16384 30"
+#set mask2 14592
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 14592 50"
+#end
+
+-- Design intent: Big water mage, with chance at something else useful on top
+-- but unless you have All The Blood you probably aren't going to be able to afford to fish these randoms for something you really want
+-- feels a bit weird going light on the blood here, but I guess that's what the spine devil is for
+
+#newunit "Frost Fiend Greater Mage"
+#baseunit 449
+#clearweapons 1
+#addweapon 238
+#addweapon 131
+#setstr descr "Frost fiends are devils of the icy reaches of the demon realms. In the constant wars of Inferno, the frost fiends are feared by all fiery devils. They wear robes of woven ice and are constantly surrounded by an icy wind. They wield ice rods and can unleash blasts of infernal cold upon their enemies. They can only be summoned if human blood has been sacrificed. Their powers increase in cold lands. Frost Fiend Planefreezers are masters of water magic, and lesser users of blood magic. Some have gained skill in other paths of magic, such as dabbling in mist, the Void, or horrific crossbreeding experimentation."
+#setstr name "Frost Fiend Planefreezer"
+#spr1 "MagicGen/frostfiend_greatermage.tga"
+#spr2 "MagicGen/frostfiend_greatermage_2.tga"
+-- w3b1, 30% b, 30% b, 50% asdn, 50% asdn
+
+
+#set W 3
+#set B 1
+#raw "#magicskill 2 3"
+#raw "#magicskill 7 1"
+#set mask1 16384
+#set rand1 30
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 16384 30"
+#set mask2 16384
+#set rand2 30
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 16384 30"
+#set mask3 14592
+#set rand3 50
+#set nbr3 1
+#set link3 1
+#raw "#custommagic 14592 50"
+#set mask4 14592
+#set rand4 50
+#set nbr4 1
+#set link4 1
+#raw "#custommagic 14592 50"
+#end

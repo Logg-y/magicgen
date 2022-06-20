@@ -1,0 +1,41 @@
+-- Design intent: Guarantee a w2e2 mage. I would have done w1e1 100% we but it's really hard to justify buying that
+-- F randoms will be too rare to fish for actively but nice if you get lucky
+-- Making claymen seems like a neat thing for a magical clayman to be able to do, so why not? Not terribly useful unless you're sitting on/in a fort or something though
+
+#newunit "Clayman Mage"
+#baseunit 817
+#clearweapons 1
+#addweapon 172
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#makemonsters2 817"
+#set summon 817
+#set summon_n 2
+#raw "#prec 10"
+#set prec 10
+#raw "#okmagicleader"
+#set magicleader 40
+#setstr descr "A clayman is an enchanted clay figure that regenerates wounds. This clayman is possessed by magical spirits which allow it to cast spells. Additionally, it can sculpt two mundane claymen by itself every month."
+#setstr name "Clayman Sculptor"
+#spr1 "MagicGen/claymanmage.tga"
+#spr2 "MagicGen/claymanmage_2.tga"
+-- e2w2, 50% f, 50% f
+
+
+#set E 2
+#set W 2
+#raw "#magicskill 2 2"
+#raw "#magicskill 3 2"
+#set mask2 128
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 128 50"
+#set mask1 128
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 128 50"
+#end

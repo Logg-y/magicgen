@@ -1,0 +1,36 @@
+-- Design intent: Guarantee a a2e2 mage. I would have done a1e1 100% ae but it's really hard to justify buying that
+-- Making gargoyles seems like a neat thing for a magical gargoyle to be able to do, so why not? Not terribly useful unless you're sitting on/in a fort or something though
+
+#newunit "Gargoyle Mage"
+#baseunit 2368
+#clearweapons 1
+#addweapon 172
+#addweapon 29
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#prec 10"
+#set prec 10
+#raw "#makemonsters2 2368"
+#set summon 2368
+#set summon_n 2
+#raw "#okmagicleader"
+#set magicleader 40
+#setstr descr "A winged stone monster given false life by a powerful enchantment, the gargoyle is quite difficult to destroy. This gargoyle is possessed by magical spirits which allow it to cast spells. Additionally, it can sculpt two mundane gargoyles by itself every month."
+#setstr name "Gargoyle Sculptor"
+#spr1 "MagicGen/gargoylemage.tga"
+#spr2 "MagicGen/gargoylemage_2.tga"
+-- a2e2, 20% ad
+
+
+#set E 2
+#set A 2
+#raw "#magicskill 1 2"
+#raw "#magicskill 3 2"
+#set mask1 768
+#set rand1 20
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 768 20"
+#end

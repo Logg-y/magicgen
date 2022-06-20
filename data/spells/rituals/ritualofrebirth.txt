@@ -1,0 +1,21 @@
+#neweffect "Ritual of Rebirth"
+#effect 10026
+#damage 398
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1000
+#schools 16
+
+#paths d
+#secondarypaths 0
+#secondarypathchance 0
+
+#name d "Ritual of Rebirth"
+#descr d "The caster of this spell revives a previously slain hero via the ancient Ritual of Rebirth. The ritual mummifies the dead hero before bringing him or her back to life. Only great heroes from the Hall of Fame can be resurrected by this ritual. The ritual can be performed multiple times on a single hero. Inanimate or undead beings are not affected by this spell"
+#details "Selects the first valid dead commander in the Hall of Fame that is owned by the caster's nation. Commanders that are inanimate that are not already one of the three kinds of mummies produced by this spell are not valid targets.\nIf the unit has a resource size, consider that. Otherwise, use a unit's regular size.\nIf the unit is size 3 or smaller, and innately flying, return as a Caelian Mummy.\nIf the unit is size 4 or larger, return as a Giant Mummy.\nOtherwise, return as a Mummy.\nIf the hero was a prophet, and another prophet has since been appointed, the returned mummy loses its prophet status, but retains its holy magic."
+
+#spelltype 4
+#end

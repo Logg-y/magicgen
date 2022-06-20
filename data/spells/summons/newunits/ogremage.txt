@@ -1,0 +1,75 @@
+-- Design intent: Earth access. The crosspaths might give you something else you want, as a nice extra
+-- but shouldn't be worth fishing for
+
+#newunit "Ogre Lesser Mage"
+#baseunit 2135
+#clearweapons 1
+#addweapon 172
+#setstr descr "Ogres are large, strong and usually stupid humanoids that inhabit wild mountain regions. They are not as strong as trolls, but can be a real threat to travelers and remote villages. Ogres are known to eat human flesh. A few of them have the aptitude to take up magic, and typically rule lesser ogres or expand their knowledge in solitude."
+#setstr name "Ogre Mage"
+#spr1 "MagicGen/ogremagewand.tga"
+#spr2 "MagicGen/ogremagewand_2.tga"
+-- e2, 50% fawnd, 50% fawnd
+
+#set maxage 100
+#raw "#maxage 100"
+#set startage 25
+#raw "#startage 25"
+#set prec 10
+#raw "#prec 10"
+#set mr 14
+#raw "#mr 14"
+
+#set E 2
+#raw "#magicskill 3 2"
+#set mask1 13184
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 13184 50"
+#set mask2 13184
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 13184 50"
+#end
+
+-- Design intent: Big earth mage, with chance at something else useful on top
+
+#newunit "Ogre Greater Mage"
+#baseunit 2135
+#clearweapons 1
+#addweapon 238
+#setstr descr "Ogres are large, strong and usually stupid humanoids that inhabit wild mountain regions. They are not as strong as trolls, but can be a real threat to travelers and remote villages. Ogres are known to eat human flesh. A few of them have the aptitude to take up magic, and typically rule lesser ogres or expand their knowledge in solitude."
+#setstr name "Ogre Geomancer"
+#spr1 "MagicGen/ogremagestaff.tga"
+#spr2 "MagicGen/ogremagestaff_2.tga"
+-- e3, 50% fawnd, 50% fawnd, 50% fawnd
+
+#set maxage 100
+#raw "#maxage 100"
+#set startage 30
+#raw "#startage 30"
+#set prec 10
+#raw "#prec 10"
+#set mr 14
+#raw "#mr 14"
+
+#set E 3
+#raw "#magicskill 3 3"
+#set mask1 13184
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 13184 50"
+#set mask2 16384
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 13184 50"
+#set mask3 14592
+#set rand3 50
+#set nbr3 1
+#set link3 1
+#raw "#custommagic 13184 50"
+#end

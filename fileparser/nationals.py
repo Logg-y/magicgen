@@ -82,36 +82,41 @@ def read_vanilla():
         for line in reader:
             unitdata[int(line["id"])] = copy.copy(line)
 
+    for unitid in unitdata:
+        dataline = unitdata[unitid]
+        mage: NationalMage = NationalMage()
+        for index, key in enumerate(["F", "A", "W", "E", "S", "D", "N", "B"]):
+            if dataline[key] != "":
+                mage.add_magic_path(2 ** index, int(dataline[key]))
+
+        for n in range(1, 7):
+            if dataline[f"mask{n}"] == "":
+                break
+            mask = int(dataline[f"mask{n}"]) >> 7
+            chance = int(dataline[f"rand{n}"])
+            instances = int(dataline[f"nbr{n}"])
+            link = int(dataline[f"link{n}"])
+            for i in range(instances):
+                mage.add_magic_random(MagePathRandom(chance=chance, link=link, paths=mask))
+
+        mage.name = dataline[f"name"]
+
+        if mage.is_mage():
+            vanillamages[unitid] = mage
+
     for nationid, units in nationalunits.items():
         if nationid not in nations:
             nations[nationid] = Nation(nationid)
         for unitid in units:
-            if unitid in unitdata:
-                dataline = unitdata[unitid]
-                mage: NationalMage = NationalMage()
-                for index, key in enumerate(["F", "A", "W", "E", "S", "D", "N", "B"]):
-                    if dataline[key] != "":
-                        mage.add_magic_path(2 ** index, int(dataline[key]))
-
-                for n in range(1, 7):
-                    if dataline[f"mask{n}"] == "":
-                        break
-                    mask = int(dataline[f"mask{n}"]) >> 7
-                    chance = int(dataline[f"rand{n}"])
-                    instances = int(dataline[f"nbr{n}"])
-                    link = int(dataline[f"link{n}"])
-                    for i in range(instances):
-                        mage.add_magic_random(MagePathRandom(chance=chance, link=link, paths=mask))
-
-                mage.name = dataline[f"name"]
-
+            if unitid in vanillamages:
+                mage = vanillamages[unitid]
                 if mage.is_mage():
                     nations[nationid].add_mage(mage)
-                    vanillamages[unitid] = mage
+
 
 
 def read_mods(modstring):
-    global monsterids, weaponids, spellids, eventcodes, montagids, siteids, enchantids
+    global monsterids, weaponids, spellids, eventcodes, montagids, siteids, enchantids, vanillamages
     mods = modstring.strip().split(",")
     monsterids = [3499]
     weaponids = [799]
@@ -309,6 +314,14 @@ def read_mods(modstring):
                         print(f"Found enchantment ID from event mod command: {line}")
                         enchantids.append(int(m.groups()[0]))
 
+                m = re.match("#copystats (\\d+)", line)
+                if m is not None:
+                    uid = int(m.groups()[0])
+                    print(f"Found #copystats {uid} for unit")
+                    if uid in vanillamages and vanillamages[uid] is not None:
+                        vanillamages[uid].copystats(currentunit)
+                        print(f"Successfully copied over paths: {currentunit}")
+
                 m = re.match("#magicskill (\\d+) (\\d+)", line)
                 if m is not None:
                     # In normal dominions modding, path flags are 0-7, just for this I converted them into their
@@ -339,6 +352,7 @@ def read_mods(modstring):
                     else:
                         if siteid in sites:
                             nation.sites.append(sites[siteid])
+                            print(f"Added start site {site} to nation {nation}")
                         else:
                             print(f"Nation has start site with ID {siteid}, this site was not found, ignored")
 

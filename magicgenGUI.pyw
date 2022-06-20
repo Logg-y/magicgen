@@ -25,7 +25,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v3.1.6"
+ver = "v3.1.7"
 
 
 def output_polling_thread(timeout=0.1):
@@ -256,9 +256,9 @@ def main():
          sg.InputText(key='-spellsperlevel-', size=(4, 1), default_text=14)],
         [sg.Text(
             'Construction will get only this proportion of the normal number of spells. This is intended to be '
-            'less than 1.0. (0.6)',
+            'less than 1.0. (0.8)',
             size=(50, 2), relief="ridge"),
-            sg.InputText(key='-constructionfactor-', size=(4, 1), default_text=0.6)],
+            sg.InputText(key='-constructionfactor-', size=(4, 1), default_text=0.8)],
         [sg.Text(
             'Number of national spells to try to make per nation. These spells will be directed towards the '
             'paths the nation has access to. (12)',

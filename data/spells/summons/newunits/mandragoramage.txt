@@ -1,0 +1,39 @@
+-- Design intent: Guarantee a n3d3 mage.
+
+#newunit "Mandragora Mage"
+#baseunit 314
+#clearweapons 1
+#addweapon 163
+#addweapon 71
+#addweapon 71
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#prec 10"
+#set prec 10
+#raw "#makemonsters2 314"
+#set summon 314
+#set summon_n 2
+#setstr descr "A human skeleton reanimated by living vines and roots and possessed by a dark spirit. Its vines strike like whips and their touch can make men fall asleep, and it wields the magic of Nature and Death."
+#setstr name "Possessed Mandragora"
+#spr1 "MagicGen/mandragoramage.tga"
+#spr2 "MagicGen/mandragoramage_2.tga"
+-- n3d3, 50% fw, 50% fw
+
+
+#set N 3
+#set D 3
+#raw "#magicskill 5 3"
+#raw "#magicskill 6 3"
+#set mask1 640
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 640 50"
+#set mask2 640
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 640 50"
+#end

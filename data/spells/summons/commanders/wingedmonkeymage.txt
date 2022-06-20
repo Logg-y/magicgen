@@ -1,0 +1,75 @@
+#neweffect "Call Winged Monkey Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 4
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#newunit "Winged Monkey Mage"
+
+#skipchance 90
+
+--ASN
+#paths sn
+#secondarypaths sn
+#secondarypathchance 90
+
+#name sn "Conjure NAMEPREFIX Winged Monkey %Mage%"
+#descr sn "The caster summons ARTICLE Winged Monkey %Mage% to join him in battle. The Winged Monkey %Mage% will leave once the battle is over."
+#details "Winged Monkey Mages are S2N1 mages with the following random paths:\n20% N"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Winged Monkey Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 1400
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 60
+
+#newunit "Winged Monkey Mage"
+
+#paths sn
+#secondarypaths sn
+#secondarypathchance 30
+
+
+#name sn "Summon NAMEPREFIX Winged Monkey Mage"
+#descr sn "The caster summons a Winged Monkey Mage to serve him. The Winged Monkey is skilled in Astral magic, and additionally has some control of Nature."
+#details "Winged Monkey Mages are S2N1 mages with the following random paths:\n20% N"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+

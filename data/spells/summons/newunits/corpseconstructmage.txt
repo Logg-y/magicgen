@@ -1,0 +1,32 @@
+-- Design intent: Guarantee a a2d2 mage, any less and why would you cast this
+-- Other randoms will be too rare to fish for actively but nice if you get lucky
+-- Rejects can at least make more constructs or something, it's not exactly good but it's something I guess
+
+#newunit "Corpse Construct Mage"
+#baseunit 534
+#clearweapons 1
+#addweapon 172
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#makemonsters3 534"
+#set summon 534
+#set summon_n 3
+#setstr descr "A construct made from the body parts of several dead humans, it is reanimated by channeling lightning through its body. The corpse construct resembles a soulless but is larger and stronger. Anyone striking it in melee risks getting affected by the high energy running through the construct. This construct is possessed by a spirit that was killed by being struck by lightning, allowing it to perform some magical tasks. Additionally, it can produce three mundane corpse constructs by itself every month."
+#setstr name "Corpse Construct Reanimator"
+#spr1 "MagicGen/corpseconstructmage.tga"
+#spr2 "MagicGen/corpseconstructmage_2.tga"
+-- a1d1, 100% ad, 20% a, 20% d
+
+
+#set A 2
+#set D 2
+#raw "#magicskill 1 2"
+#raw "#magicskill 5 2"
+#set mask1 4352
+#set rand1 20
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 4352 20"
+#end

@@ -1,0 +1,22 @@
+#newunit "Vine Archer"
+#baseunit 361
+#clearweapons 1
+#addnewweapon "Lesser Vine Bow"
+#addweapon 92
+#set prec 10
+#raw "#prec 10"
+#set str 9
+#raw "#str 9"
+#set att 8
+#raw "#att 8"
+#set def 7
+#raw "#def 7"
+#set hp 9
+#raw "#hp 9"
+#set prot 4
+#raw "#prot 4"
+#setstr descr "Vine men are strange beings composed of vines, roots and moss. They resemble humans but are totally mindless. They live in deep forest thickets and do not venture far unless summoned by magic. These particular vine men wield bows that entangle those they wound in magical vines, but the effort of producing them with such a weapon makes them considerably less sturdy than their unarmed relatives."
+#setstr name "Vine Archer"
+#spr1 "MagicGen/vinearcher.tga"
+#spr2 "MagicGen/vinearcher_2.tga"
+#end

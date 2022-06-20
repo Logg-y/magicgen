@@ -1,0 +1,28 @@
+-- Design intent: Guarantee a a3e3 mage, it flies around and is fully slotted and generally terrifying
+
+#newunit "Stone Monstra Mage"
+#baseunit 542
+#clearweapons 1
+#addweapon 172
+#addweapon 29
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#set prec 12
+#raw "#prec 12"
+#raw "#makemonsters2 542"
+#set summon 2368
+#set summon_n 2
+#raw "#okmagicleader"
+#set magicleader 40
+#setstr descr "A winged stone monster given false life by a powerful enchantment, the gargoyle is quite difficult to destroy. This gargoyle is possessed by magical spirits which allow it to cast powerful spells. Additionally, it can sculpt a mundane stone monstra by itself every month."
+#setstr name "Possessed Stone Monstra"
+#spr1 "MagicGen/stonemonstramage.tga"
+#spr2 "MagicGen/stonemonstramage_2.tga"
+
+#set E 3
+#set A 3
+#raw "#magicskill 1 3"
+#raw "#magicskill 3 3"
+#end

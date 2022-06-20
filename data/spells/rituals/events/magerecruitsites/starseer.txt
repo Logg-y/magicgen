@@ -1,0 +1,40 @@
+#neweventset "Starseer Site"
+
+#magicsite "Starseer Site"
+
+#end
+
+
+
+#newevent
+#rarity 5
+#msg "Attempts to build another SITENAME here were unsuccessful. Building two identical sites so close together would be pointless. [SITENAME]"
+#nolog
+#nation -2
+#req_pop0ok
+#req_site 1
+#req_ench ENCHANTID
+#end
+
+#newevent
+#rarity 5
+#msg "Starseer create site"
+#nolog
+#notext
+#nation -2
+#req_nositenbr SITEID
+#addsite SITEID
+#req_pop0ok
+#req_ench ENCHANTID
+#req_freesites 1
+#end
+
+#newevent
+#rarity 5
+#msg "Attempts to build the SITENAME here were unsuccessful. The land seems to be too saturated with magic for further magical features to be built successfully."
+#nolog
+#nation -2
+#req_nositenbr SITEID
+#req_pop0ok
+#req_ench ENCHANTID
+#end

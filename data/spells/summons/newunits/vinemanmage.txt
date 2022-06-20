@@ -1,0 +1,28 @@
+-- Design intent: Nature access. The crosspaths might give you something else you want, as a nice extra
+-- but shouldn't be worth fishing for
+
+#newunit "Vine Man Mage"
+#baseunit 361
+#clearweapons 1
+#addweapon 163
+#setstr descr "Vine men are strange beings composed of vines, roots and moss. They resemble humans but are totally mindless. They live in deep forest thickets and do not venture far unless summoned by magic. This is especially the case for those possessing magical ability: whilst their primary focus is Nature, some to explore the magic of the other seasons."
+#setstr name "Vine Man Mage"
+#spr1 "MagicGen/vinemanmage.tga"
+#spr2 "MagicGen/vinemanmage_2.tga"
+-- n2, 50% fawed, 50% fawed
+
+
+#set N 2
+#raw "#magicskill 6 2"
+#set mask1 6016
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 6016 50"
+#set mask2 6016
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 6016 50"
+#end
+

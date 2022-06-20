@@ -1,0 +1,72 @@
+-- Design intent: Fire access. Could be better than empowering scouts in blood for hunting if you wanted to do that
+-- 50% desn crosspaths are intended to be too rare to be a reason to make lots of these
+
+#newunit "Devil Lesser Mage"
+#baseunit 304
+#clearweapons 1
+#addweapon 172
+#addweapon 68
+#setstr descr "Devils are infernal beings of great strength. Only with human sacrifice is it possible to summon and bind these evil beings. Devils are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devil Bloodhands are usually inexperienced users of blood and fire. Some have gained skill in other paths of magic, such as dabbling in magma, the Void, or horrific crossbreeding experimentation."
+#setstr name "Devil Bloodhand"
+#spr1 "MagicGen/devil_lessermage.tga"
+#spr2 "MagicGen/devil_lessermage_2.tga"
+-- f2b1, 30% b, 50% desn
+
+
+#set F 2
+#set B 1
+#raw "#magicskill 0 2"
+#raw "#magicskill 7 1"
+#set mask1 16384
+#set rand1 30
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 16384 30"
+#set mask2 15360
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 15360 50"
+#end
+
+-- Design intent: Big fire mage, with chance at something else useful on top
+-- but unless you have All The Blood you probably aren't going to be able to afford to fish these randoms for something you really want
+-- feels a bit weird going light on the blood here, but I guess that's what the spine devil is for
+
+#newunit "Devil Greater Mage"
+#baseunit 304
+#clearweapons 1
+#addweapon 238
+#addweapon 68
+#setstr descr "Devils are infernal beings of great strength. Only with human sacrifice is it possible to summon and bind these evil beings. Devils are born in the fires of the Inferno and are impervious to heat and flame. Their glowing bodies radiate heat and bat-like wings grow from their shoulders. Devil Hellburners are masters of fire magic, and most have skills in other magic paths by practicing acts such as reanimating their victims, crossbreeding, dabbling in the Void, or mastery of magma."
+#setstr name "Devil Hellburner"
+#spr1 "MagicGen/devil_greatermage.tga"
+#spr2 "MagicGen/devil_greatermage_2.tga"
+-- f3b1, 30% b, 30% b, 50% desn, 50% desn
+
+
+#set F 3
+#set B 1
+#raw "#magicskill 0 3"
+#raw "#magicskill 7 1"
+#set mask1 16384
+#set rand1 30
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 16384 30"
+#set mask2 16384
+#set rand2 30
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 16384 30"
+#set mask3 15360
+#set rand3 50
+#set nbr3 1
+#set link3 1
+#raw "#custommagic 15360 50"
+#set mask4 15360
+#set rand4 50
+#set nbr4 1
+#set link4 1
+#raw "#custommagic 15360 50"
+#end

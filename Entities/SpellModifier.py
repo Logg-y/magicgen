@@ -56,10 +56,10 @@ class SpellModifier(object):
                 
         if self.reqdamaging != -1:
             if self.reqdamaging > 0:
-                if eff.effect % 1000 not in utils.DAMAGING_EFFECTS:
+                if not utils.isDamagingSpellEffect(eff):
                     return False
             if self.reqdamaging == 0:
-                if eff.effect % 1000 in utils.DAMAGING_EFFECTS:
+                if utils.isDamagingSpellEffect(eff):
                     return False
                 
         for flag in SpellTypes:

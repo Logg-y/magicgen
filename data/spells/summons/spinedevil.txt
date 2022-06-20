@@ -40,7 +40,7 @@
 #secondarypaths 128
 
 #scalefatigueexponent -2
-#scalefatiguemult 180
+#scalefatiguemult 280.0
 
 #name 128 "Bind NAMEPREFIX Spine %Devil%"
 #descr 128 "$BLOOD_INTRO$, the caster binds ARTICLE spine %devils% from the Abyss. They have venomous claws and poisonous barbs that may impale those that strike them."
@@ -103,4 +103,5 @@
 
 #scalerate 1
 #end
+
 

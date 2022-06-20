@@ -6,7 +6,7 @@ from Exceptions.ParseError import ParseError
 from Services import fileparserutils
 
 modifier_params_int = ["baseunit", "clearweapons"]
-modifier_params_str = []
+modifier_params_str = ["spr1", "spr2"]
 modifier_params_float = []
 
 
@@ -98,7 +98,15 @@ def readNewUnitFile(fp):
                         val = int(m.groups()[0])
                         curreff.addweapons.append(val)
                         continue
-                    raise ParseError(f"{fp} line {lineno}: bad #set")
+                    raise ParseError(f"{fp} line {lineno}: bad #addweapon")
+
+                if line.startswith("#addnewweapon"):
+                    m = re.match('#addnewweapon\\W+"(.*)"\\W*', line)
+                    if m is not None:
+                        val = m.groups()[0]
+                        curreff.addnewweapons.append(val)
+                        continue
+                    raise ParseError(f"{fp} line {lineno}: bad #addnewweapon")
 
                 if line.startswith("#end"):
                     out[curreff.name] = curreff

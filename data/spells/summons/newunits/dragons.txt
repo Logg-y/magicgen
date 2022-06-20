@@ -9,10 +9,6 @@
 #raw "#clearweapons"
 #raw "#clearmagic"
 #raw "#copyspr 265"
-#raw "#weapon 534"
-#raw "#weapon 20"
-#raw "#weapon 29"
-#raw "#weapon 532"
 #raw "#coldres 15"
 #raw "#fear 10"
 #raw "#flying"
@@ -38,10 +34,6 @@
 #raw "#clearweapons"
 #raw "#clearmagic"
 #raw "#copyspr 266"
-#raw "#weapon 535"
-#raw "#weapon 20"
-#raw "#weapon 29"
-#raw "#weapon 532"
 #raw "#poisonres 15"
 #raw "#fear 10"
 #raw "#flying"
@@ -55,3 +47,31 @@
 #set N 5
 #setstr descr "The Swamp Dragon is an ancient reptile of tremendous physical and magical power."
 #end
+
+#newunit "Dragon Storm"
+#baseunit 2534
+#clearweapons 1
+#addnewweapon "Storm Dragon Breath"
+#addweapon 20
+#addweapon 29
+#addweapon 532
+#set stormimmune 1
+#raw "#clearspec"
+#raw "#clearweapons"
+#raw "#clearmagic"
+#spr1 "MagicGen/stormdragon.tga"
+#spr2 "MagicGen/stormdragon_2.tga"
+#raw "#shockres 15"
+#raw "#fear 10"
+#raw "#flying"
+#raw "#stormimmune"
+#raw "#swimming"
+#raw "#magicskill 1 5"
+#raw "#startage 600"
+#raw "#maxage 1000"
+#raw "#itemslots 274560"
+#set F 0
+#set A 5
+#setstr descr "The Storm Dragon is an ancient reptile of tremendous physical and magical power."
+#end
+

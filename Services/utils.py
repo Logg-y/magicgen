@@ -16,11 +16,14 @@ eventsets = {}
 # For storing which eventsets are in each module group
 eventmodulegroups = {}
 unitmodlists = {}
+newweapons = {}
 
 magicsites = {}
 magicsitenames = []
 
 newunits = {}
+
+spritedependencies = set()
 
 # For tracking how many permanent slot taking spells have been made
 # too many means that mechanic abuse from filling all 6 slots is possible
@@ -65,6 +68,18 @@ DAMAGING_EFFECTS = [2,
 134,
 139,
 142]
+
+def isDamagingSpellEffect(eff):
+    if isinstance(eff, str):
+        eff = spelleffects[eff]
+    if eff.effect % 1000 in DAMAGING_EFFECTS:
+        return True
+    # Go down the nextspell chain until you find extra effect on damage
+    if eff.nextspell != "" and (eff.spec & 1152921504606846976) == 0:
+        return isDamagingSpellEffect(eff.nextspell)
+    return False
+
+
 
 def unitmodToSecondary(unitmod, fallback=True):
     """Return the secondary effect that uses the unitmod. If fallback,

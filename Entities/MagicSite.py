@@ -39,6 +39,8 @@ class MagicSite(object):
         self.mincreaturepower = -1
         self.maxcreaturepower = -1
         self.secondaryeffectchance = None
+        # A list of (mod command, new unit name) pairs to resolve
+        self.newuniteffects = []
 
         self.makedummymonster = 1
         self.makebattledummymonster = 0
@@ -89,6 +91,16 @@ class MagicSite(object):
                 paramval = getattr(self, param)
                 if paramval is not None and paramval != 0:
                     output += f"#{param} {getattr(self, param)}\n"
+
+        # Resolve newunits
+        for pair in self.newuniteffects:
+            modcmd = pair[0]
+            newunitname = pair[1]
+            newunitobj = utils.newunits[newunitname]
+            unitmod = utils.unitmods["Do Nothing"]
+            modcode = unitmod.applytounit(None, newunitobj.toUnitBaseData())
+            output = modcode + output
+            output += f"{modcmd} {utils.MONSTER_ID - 1}\n"
 
         # Unit params
         generatedunitid = None

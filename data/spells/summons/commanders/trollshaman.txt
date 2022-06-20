@@ -40,7 +40,7 @@
 #maxpower 7
 #nreff 1
 #pathlevel 2
-#fatiguecost 3000
+#fatiguecost 2000
 #chassisvalue 700
 #scalecost 1.8
 #scalefatigueexponent 0.7

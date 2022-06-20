@@ -1,0 +1,31 @@
+-- Design intent: Guarantee a s2 mage, with chance at n2
+
+#newunit "Winged Monkey Mage"
+#baseunit 1199
+#clearweapons 1
+#addweapon 172
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 14"
+#set mor 14
+#set prec 10
+#raw "#prec 10"
+#set maxage 50
+#raw "#maxage 50"
+#setstr descr "Winged monkeys are strange beings that are often used as messengers and carriers. Sometimes mages summon them to snatch people away, and sometimes they turn out to be mages themselves."
+#setstr name "Winged Monkey Mage"
+#spr1 "MagicGen/wingedmonkeymage.tga"
+#spr2 "MagicGen/wingedmonkeymage_2.tga"
+-- s2n1, 20% n
+
+
+#set S 2
+#set N 1
+#raw "#magicskill 6 1"
+#raw "#magicskill 4 2"
+#set mask1 8192
+#set rand1 20
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 8192 20"
+#end

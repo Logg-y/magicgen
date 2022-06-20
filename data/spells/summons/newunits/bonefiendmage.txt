@@ -1,0 +1,72 @@
+-- Design intent: "I have blood but I want death"
+-- blood path is largely incidental and probably not terribly useful
+-- unless you get lucky and roll a lot of it
+
+#newunit "Bone Fiend Lesser Mage"
+#baseunit 433
+#clearweapons 1
+#addweapon 238
+#set hp 19
+#raw "#hp 19"
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#raw "#prec 10"
+#set prec 10
+#set mor 30
+#setstr descr "Bone fiends are skeletal demons summoned from the Underworld. They are believed to be the remains of dead devils bound by the Laws of Death. This bone fiend is possessed by an underworld spirit with magical ability. The fiend's demonic ancestry may also offer some ability in blood magic."
+#setstr name "Bone Fiend Reanimator"
+#spr1 "MagicGen/bonefiend_lessermage.tga"
+#spr2 "MagicGen/bonefiend_lessermage_2.tga"
+-- d2, 50% b, 50% b
+
+#set mask1 16384
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#set mask2 16384
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#set D 2
+#raw "#magicskill 5 2"
+#raw "#custommagic 16384 50"
+#raw "#custommagic 16384 50"
+#end
+
+#newunit "Bone Fiend Greater Mage"
+#baseunit 433
+#clearweapons 1
+#addweapon 238
+#set hp 19
+#raw "#hp 19"
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#prec 11"
+#set prec 11
+#setstr descr "Bone fiends are skeletal demons summoned from the Underworld. They are believed to be the remains of dead devils bound by the Laws of Death. This bone fiend is possessed by an underworld spirit with potent magical ability. The fiend's demonic ancestry may also offer some ability in blood magic."
+#setstr name "Bone Fiend Deathlord"
+#spr1 "MagicGen/bonefiend_greatermage.tga"
+#spr2 "MagicGen/bonefiend_greatermage_2.tga"
+-- d3, 50% b, 50% b, 50% b
+
+#set mask1 16384
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#set mask2 16384
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#set mask3 16384
+#set rand3 50
+#set nbr3 1
+#set link3 1
+#set D 3
+#raw "#magicskill 5 3"
+#raw "#custommagic 16384 50"
+#raw "#custommagic 16384 50"
+#raw "#custommagic 16384 50"
+#end

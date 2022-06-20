@@ -319,6 +319,8 @@ class SpellEffect(object):
             utils.permanent_slot_spells_by_path[s.path1] = utils.permanent_slot_spells_by_path.get(s.path1, 0) + 1
             print(f"Path {s.path1}: num permanent slots now {utils.permanent_slot_spells_by_path.get(s.path1, 0)}")
 
+        print(f"Finished generation of {self.name} -> {s.name}")
+
         return s
 
     def dynamicScaleParams(self, s):
@@ -805,7 +807,6 @@ class SpellEffect(object):
             mod = None
             while mod is None:
                 m = utils.modifiers[modlist.pop(0)]
-                print(f"Consider mod: {m.name}")
                 if m.compatibility(self, self.researchlevel, self.isnextspell):
                     if random.random() * 100 < m.skipchance:
                         if m.skipchance < 100.0:
@@ -860,7 +861,7 @@ class SpellEffect(object):
 
 
         self._decideSecondaryPathLimitations(**options)
-        print("roll secondary")
+        print("rolling secondary...")
 
         if self.allowSecondary:
             while secondary is None:
@@ -1175,6 +1176,7 @@ class SpellEffect(object):
             optionscopy["forcepath"] = s.path1
             optionscopy["blockmodifier"] = True
             optionscopy["researchlevel"] = self.researchlevel + mod.power + secondarypower
+            print(f"Beginning generation of nextspell {self.nextspell.name} of parent {self.name}...")
             s.nextspell = self.nextspell.rollSpell(**optionscopy)
             if s.nextspell is None:
                 print(f"WARNING: Failed to generate nextspell {self.nextspell.name}")
@@ -1188,12 +1190,16 @@ class SpellEffect(object):
             optionscopy["forcedmodifier"] = mod
             # communions do want to mimic the path of the parent, otherwise the slave might not
             # have the same path requirement as the master spell (which would be a bit unhelpful!)
+            print(f"Begin generating nextspell {extraspell.name} of parent {self.name}")
             if self.donotsetextraspellpath == 0:
                 optionscopy["forcepath"] = s.path1
-                s.modcmdsbefore += extraspell.rollSpell(**optionscopy).output()
+                extraspelloutput = extraspell.rollSpell(**optionscopy).output()
             else:
                 # Elemental royalty all come together, and should NOT mimic the paths of the parents
-                s.modcmdsbefore += extraspell.rollSpell(**optionscopy).output()
+                extraspelloutput = extraspell.rollSpell(**optionscopy).output()
+            if extraspelloutput is None:
+                print(f"WARNING: Failed to generate extraspell {extraspell.name} of parent {self.name}")
+            s.modcmdsbefore += extraspelloutput
         return 1
     def _splitSpellPathLevels(self, s):
         "Move some path1levels into path2levels for the given spell"
@@ -1278,8 +1284,10 @@ class SpellEffect(object):
             # make fatigue nice round numbers
             if s.fatiguecost > 100:
                 s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
-            else:
+            elif s.fatiguecost > 5:
                 s.fatiguecost = int(5 * (s.fatiguecost // 5.0))
+            else:
+                s.fatiguecost = int(s.fatiguecost)
         else:
             s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
     def _writeDescription(self, s, mod, secondary, plural):

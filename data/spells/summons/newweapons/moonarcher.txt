@@ -1,0 +1,35 @@
+#newweapon "Moon Bow"
+#setstr name "Moon Bow"
+#raw "#copyweapon 613"
+#set range 40
+#raw "#range 40"
+#raw "#ammo 12"
+#set ammo 12
+#raw "#att 3"
+#set att 3
+-- 1 + 2 + 274877906944	+ 2**56
+-- #twohanded + #pierce + #bowstr + #magic
+#set spec 72057868915834883
+#raw "#dmg 9"
+#set dmg 9
+#raw "#dt_magic"
+#set effect 73
+#end
+
+#newweapon "Moon Dagger"
+#setstr name "Moon Dagger"
+#raw "#copyweapon 9"
+#raw "#att 2"
+#set att 2
+#raw "#len 0"
+#set len 0
+#raw "#def 0"
+#set def 0
+-- 1 + 274877906944	+ 2**56
+-- #pierce + #magic
+#set spec 72057868915834881
+#raw "#dmg 3"
+#set dmg 3
+#raw "#dt_magic"
+#set effect 73
+#end

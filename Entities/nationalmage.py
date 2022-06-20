@@ -7,6 +7,7 @@ from DataObject.MagePathRandom import MagePathRandom
 from Enums.DebugKeys import debugkeys
 from Enums.PathFlags import PathFlags
 from Services import DebugLogger, utils
+from copy import deepcopy
 
 
 class NationalMage(object):
@@ -23,6 +24,14 @@ class NationalMage(object):
         for i in range(0, 8):
             self.pathweights[2 ** i] = 0
         self.pathweightsinitialised: bool = False
+
+    def copystats(self, other):
+        other.pathmask = deepcopy(self.pathmask)
+        other.pathlevels = deepcopy(self.pathlevels)
+        other.randoms = deepcopy(self.randoms)
+        other.name = deepcopy(self.name)
+        other.pathweights = deepcopy(self.pathweights)
+        other.pathweightsinitialised = deepcopy(self.pathweightsinitialised)
 
     def add_magic_random(self, random: MagePathRandom):
         self.randoms.append(random)

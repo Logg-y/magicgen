@@ -1,0 +1,16 @@
+#newweapon "Lesser Vine Bow"
+#setstr name "Lesser Vine Bow"
+#raw "#copyweapon 23"
+#set range 40
+#raw "#range 40"
+#raw "#ammo 12"
+#set ammo 12
+#raw "#dmg 5"
+#set dmg 3
+-- 2 + 274877906944	+ 4611686018427387904 + 2097152
+-- #twohanded + #pierce + #bowstr + nonmagical
+#set spec 4611686293307392002
+#set secondaryeffectalways -1
+#set secondaryeffect 137
+#raw "#secondaryeffect 137"
+#end

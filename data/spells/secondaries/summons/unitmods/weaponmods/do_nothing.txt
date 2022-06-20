@@ -1,0 +1,4 @@
+-- The special do nothing weapon mod. Don't delete this, it's needed and referred to directly by name in code
+
+#newweaponmod "Do Nothing"
+#end

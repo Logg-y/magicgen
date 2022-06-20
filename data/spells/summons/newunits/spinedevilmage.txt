@@ -1,0 +1,25 @@
+-- Design intent: B access, no more, no less.
+
+#newunit "Spine Devil Mage"
+#baseunit 638
+#clearweapons 1
+#addweapon 238
+#setstr descr "Spine devils are spine-covered demons summoned from the Abyss with human sacrifice. The spines covering their bodies are poisonous and anyone attacking them with short weapons may get pricked and poisoned. They usually fight with two venomous claws, but their practitioners of Blood magic instead favour magic staffs."
+#setstr name "Spine Devil Bloodcurdler"
+#spr1 "MagicGen/spinedevilmage.tga"
+#spr2 "MagicGen/spinedevilmage_2.tga"
+#set B 3
+#set prec 12
+#raw "#prec 12"
+#raw "#magicskill 7 2"
+#set mask1 8192
+#set rand1 20
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 8192 20"
+#set mask2 8192
+#set rand2 20
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 8192 20"
+#end

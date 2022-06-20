@@ -1,0 +1,25 @@
+-- Design intent: A access, no more, no less.
+
+#newunit "Sylph Lesser Mage"
+#baseunit 562
+#clearweapons 1
+#addweapon 172
+#setstr descr "Sylphs are Air spirits who serve Nephele. They manifest themselves as female bodies composed of mist and clouds. This Sylph has gained skill in Air magic."
+#setstr name "Student of Nephele"
+#spr1 "MagicGen/slyphmagewand.tga"
+#spr2 "MagicGen/slyphmagewand_2.tga"
+#set A 2
+#raw "#magicskill 1 2"
+#end
+
+#newunit "Sylph Greater Mage"
+#baseunit 562
+#clearweapons 1
+#addweapon 238
+#setstr descr "Sylphs are Air spirits who serve Nephele. They manifest themselves as female bodies composed of mist and clouds. This Sylph has gained great skill in Air magic."
+#setstr name "Adept of Nephele"
+#spr1 "MagicGen/slyphmagestaff.tga"
+#spr2 "MagicGen/slyphmagestaff_2.tga"
+#set A 3
+#raw "#magicskill 1 3"
+#end

@@ -1,0 +1,75 @@
+#neweffect "Call Clayman Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools 1
+
+#newunit "Clayman Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths ew
+#secondarypaths ew
+#secondarypathchance 90
+
+#name ew "Conjure NAMEPREFIX Clayman %Sculptor%"
+#descr ew "The caster summons ARTICLE Clayman %Sculptor% to join him in battle. The Clayman %Sculptor% will leave once the battle is over."
+#details "Clayman Sculptors are W2E2 mages with the following random paths:\n50% F\n50% F"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Clayman Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 1800
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 1
+
+#skipchance 70
+
+#newunit "Clayman Mage"
+
+#paths ew
+#secondarypaths ew
+#secondarypathchance 90
+
+
+#name ew "Summon NAMEPREFIX Clayman Sculptor"
+#descr ew "The caster summons a Clayman Sculptor to serve him. The clayman has skill in Earth and Water, and sometimes also in Fire magic."
+#details "Clayman Sculptors are W2E2 mages with the following random paths:\n50% F\n50% F"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+

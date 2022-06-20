@@ -1,5 +1,6 @@
 from fileparser import unitinbasedatafinder
 from Entities import weapon
+from Services import utils
 import re
 
 class NewUnit(object):
@@ -9,6 +10,9 @@ class NewUnit(object):
         self.rawcmds = []
         self.clearweapons = 0
         self.addweapons = []
+        self.addnewweapons = []
+        self.spr1 = None
+        self.spr2 = None
 
         self.baseunit = None
         self.init = False
@@ -39,13 +43,22 @@ class NewUnit(object):
 
         for wpnid in self.addweapons:
             retval.weapons.append(weapon.get(wpnid))
+        for newwpnname in self.addnewweapons:
+            newwpn = utils.newweapons[newwpnname].toWeapon()
+            retval.weapons.append(newwpn)
+
 
         for attrib, value in self.setcmds:
             setattr(retval, attrib, value)
 
         retval.additionalmodcmds += f"\n-- Generated from NewUnit {self.name}\n"
-        retval.additionalmodcmds += "\n".join(self.rawcmds)
+        retval.additionalmodcmds += "\n".join(self.rawcmds) + "\n"
+        if self.spr1 is not None:
+            retval.additionalmodcmds += '#spr1 "{}"'.format(self.spr1) + "\n"
+        if self.spr2 is not None:
+            retval.additionalmodcmds += '#spr2 "{}"'.format(self.spr2) + "\n"
         retval.additionalmodcmds += "\n"
         retval.uniqueid = f"newunit-{self.name}"
+        retval.newunit = self
 
         return retval

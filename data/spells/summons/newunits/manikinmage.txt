@@ -1,0 +1,38 @@
+-- Design intent: Guarantee a n2d2 mage.
+
+#newunit "Manikin Mage"
+#baseunit 313
+#clearweapons 1
+#addweapon 163
+#addweapon 71
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set mor 30
+#raw "#prec 10"
+#set prec 10
+#raw "#makemonsters2 313"
+#set summon 313
+#set summon_n 2
+#setstr descr "A human skeleton reanimated by living vines and roots and possessed by a dark spirit. Its vines strike like whips and their touch can make men fall asleep, and it wields the magic of Nature and Death."
+#setstr name "Possessed Manikin"
+#spr1 "MagicGen/manikinmage.tga"
+#spr2 "MagicGen/manikinmage_2.tga"
+-- n2d2, 50% fw, 50% fw
+
+
+#set N 2
+#set D 2
+#raw "#magicskill 5 2"
+#raw "#magicskill 6 2"
+#set mask1 640
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 640 50"
+#set mask2 640
+#set rand2 50
+#set nbr2 1
+#set link2 1
+#raw "#custommagic 640 50"
+#end

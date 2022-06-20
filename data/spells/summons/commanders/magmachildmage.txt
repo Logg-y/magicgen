@@ -1,0 +1,153 @@
+#neweffect "Call Magma Child Lesser Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools conj
+
+#newunit "Magma Child Lesser Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths fe
+#secondarypaths fe
+#secondarypathchance 90
+
+#name fe "Conjure NAMEPREFIX %Student% of Rhuax"
+#descr fe "The caster summons ARTICLE %Student% of Rhuax to join him in battle. The %Student% of Rhuax will leave once the battle is over."
+#details "Students of Rhuax are F2E2 mages with the following random paths:\n20% FE"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Magma Child Lesser Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 3
+#fatiguecost 1900
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools conj
+
+#skipchance 70
+
+#newunit "Magma Child Lesser Mage"
+
+#paths fe
+#secondarypaths fe
+#secondarypathchance 90
+
+
+#name fe "Summon NAMEPREFIX Student of Rhuax"
+#descr fe "The caster summons a Student of Rhuax to serve him. The Student of Rhuax has skill in Earth and Fire."
+#details "Students of Rhuax are F2E2 mages with the following random paths:\n20% FE\n\nThey cannot wear magical boots."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+------
+
+
+#neweffect "Call Magma Child Greater Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 6
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools conj
+
+#newunit "Magma Child Greater Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths fe
+#secondarypaths fe
+#secondarypathchance 90
+
+#name fe "Conjure NAMEPREFIX %Acolyte% of Rhuax"
+#descr fe "The caster summons ARTICLE %Acolyte% of Rhuax to join him in battle. The %Acolyte% of Rhuax will leave once the battle is over."
+#details "Acolytes of Rhuax are F3E3 mages."
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Magma Child Greater Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 3200
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools conj
+
+#skipchance 70
+
+#newunit "Magma Child Greater Mage"
+
+#paths fe
+#secondarypaths fe
+#secondarypathchance 90
+
+
+#name fe "Summon NAMEPREFIX Acolyte of Rhuax"
+#descr fe "The caster summons an Acolyte of Rhuax to serve him. The Acolyte of Rhuax has great skill in Earth and Fire."
+#details "Acolyte of Rhuax are F3E3 mages. They cannot wear magical boots."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+
+

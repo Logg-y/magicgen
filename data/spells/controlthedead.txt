@@ -31,8 +31,8 @@
 #end
 
 #neweffect "Control the Dead Battlefield"
-#effect 2
-#damage 3012
+#effect 29
+#damage 999
 #spec 293863560
 #aoe 666
 #power 8

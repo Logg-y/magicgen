@@ -1,0 +1,110 @@
+#newunit "Phantasmal Pyromancer"
+#baseunit 297
+#raw "#copyspr 98"
+#raw "#gcost 0"
+#raw "#fireres 5"
+#set gcost 0
+#set fireres 5
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Fireball"
+#addnewweapon "Phantasmal Combustion"
+#addnewweapon "Phantasmal Falling Fires"
+#setstr name "Phantasmal Pyromancer"
+#setstr descr "The phantasmal pyromancer is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal pyromancers are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater; however, their 'spells' are useless underwater as it is trivial to understad that fire magic does not burn underwater."
+#end
+
+#newunit "Phantasmal Wind Master"
+#baseunit 297
+#raw "#copyspr 93"
+#raw "#gcost 0"
+#raw "#shockres 5"
+#set gcost 0
+#set shockres 5
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Lightning Bolt"
+#addnewweapon "Phantasmal False Fetters"
+#addnewweapon "Phantasmal Orb Lightning"
+#setstr name "Phantasmal Wind Master"
+#setstr descr "The phantasmal wind master is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal wind masters are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater."
+#end
+
+#newunit "Phantasmal Hydromancer"
+#baseunit 297
+#raw "#copyspr 103"
+#raw "#gcost 0"
+#raw "#coldres 5"
+#set gcost 0
+#set coldres 5
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Cold Bolt"
+#addnewweapon "Phantasmal Numbness"
+#addnewweapon "Phantasmal Falling Frost"
+#setstr name "Phantasmal Hydromancer"
+#setstr descr "The phantasmal hydromancer is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal hydromancers are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater; though some of their 'spells' cannot be used there."
+#end
+
+#newunit "Phantasmal Geomancer"
+#baseunit 297
+#raw "#copyspr 2988"
+#raw "#gcost 0"
+#set gcost 0
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Boulder"
+#addnewweapon "Phantasmal Earth Meld"
+#addnewweapon "Phantasmal Blade Wind"
+#setstr name "Phantasmal Geomancer"
+#setstr descr "The phantasmal geomancer is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal geomancers are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater; though some of their 'spells' cannot be used there."
+#end
+
+#newunit "Phantasmal Star Seer"
+#baseunit 297
+#raw "#copyspr 310"
+#raw "#gcost 0"
+#set gcost 0
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Mind Burn"
+#addnewweapon "Phantasmal Paralyze"
+#addnewweapon "Phantasmal Enslave"
+#setstr name "Phantasmal Star Seer"
+#setstr descr "The phantasmal star seer is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal star seers are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater."
+#end
+
+#newunit "Phantasmal Necromancer"
+#baseunit 297
+#raw "#copyspr 310"
+#raw "#gcost 0"
+#set gcost 0
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Shadow Bolt"
+#addnewweapon "Phantasmal Decay"
+#addnewweapon "Phantasmal Bolts of Unlife"
+#setstr name "Phantasmal Necromancer"
+#setstr descr "The phantasmal necromancer is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal necromancers are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater."
+#end
+
+#newunit "Phantasmal Druid"
+#baseunit 297
+#raw "#copyspr 552"
+#raw "#gcost 0"
+#set gcost 0
+#clearweapons 1
+#raw "#clearweapons"
+#addweapon 67
+#addnewweapon "Phantasmal Poison Bolt"
+#addnewweapon "Phantasmal Entangle"
+#addnewweapon "Phantasmal Poison Cloud"
+#setstr name "Phantasmal Druid"
+#setstr descr "The phantasmal druid is an illusion of a mage. The phantasm is elusive and difficult to hit, but once hit, it will be destroyed. Phantasmal druids are not mages in their own right, and they project their false 'spells' at enemies. As these too are illusionary, they harm only those who believe them to be real. As they are not truly casting spells, their imitations do not fatigue them, nor can they be interrupted. As they are not living, phantasms may travel underwater."
+#end

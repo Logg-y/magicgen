@@ -1,0 +1,3221 @@
+
+#neweffect "Adept of Golden Order Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Adept of Golden Order Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Adept of Golden Order Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 70
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Adept of Golden Order Site"
+
+
+#unique 1
+-- ESDB
+#paths fs
+#secondarypaths fs
+#secondarypathchance 100
+
+#name f "Construct Golden Tower"
+#name s "Construct Golden Tower"
+
+#descr s "The caster constructs a large tower from gold and imbues it with power. This ostentatious structure attracts the interest of those that devoted their lives to the study of gold and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr f "The caster constructs a large tower from gold and imbues it with power. This ostentatious structure attracts the interest of those that devoted their lives to the study of gold and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Alchemists and Adepts of the Golden Order. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+
+
+-------
+
+
+
+#neweffect "Adept of Iron Order Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Adept of Iron Order Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Adept of Iron Order Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Adept of Iron Order Site"
+
+
+#unique 1
+-- ESDB
+#paths es
+#secondarypaths es
+#secondarypathchance 100
+
+#name e "Construct Iron Tower"
+#name s "Construct Iron Tower"
+
+#descr s "The caster constructs a large tower from iron and imbues it with power. This structure attracts the interest of those that devoted their lives to the study of iron and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr e "The caster constructs a large tower from iron and imbues it with power. This structure attracts the interest of those that devoted their lives to the study of iron and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Adepts of the Iron Order. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+-----
+
+#neweffect "Adept of Pyri Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Adept of Pyri Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Adept of Pyri Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Adept of Pyri Site"
+
+
+#unique 1
+-- ESDB
+#paths f
+#secondarypaths f
+#secondarypathchance 100
+
+#name f "Construct Tower of Flame"
+
+#descr f "The caster constructs a large tower and imbues it with fiery power, topped with a gigantic everburning flame. This structure attracts the interest of those that devoted their lives to the study of fire and its manipulation. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Adepts of Pyriphlegeton, Mages of Flames (human F2 mages), and Pyromancers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-------
+
+#neweffect "Adept of Silver Order Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Adept of Silver Order Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Adept of Silver Order Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Adept of Silver Order Site"
+
+
+#unique 1
+-- ESDB
+#paths as
+#secondarypaths as
+#secondarypathchance 100
+
+#name a "Construct Silver Tower"
+#name s "Construct Silver Tower"
+
+#descr a "The caster constructs a large tower from silver and imbues it with power. This structure attracts the interest of those that devoted their lives to the study of silver and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr s "The caster constructs a large tower from silver and imbues it with power. This structure attracts the interest of those that devoted their lives to the study of silver and its properties. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Adepts of the Silver Order. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+---------
+
+#neweffect "Animist Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Animist Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Animist Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Animist Site"
+
+
+#unique 1
+-- ESDB
+#paths n
+#secondarypaths n
+#secondarypathchance 100
+
+#name n "Construct Ivy Tower"
+
+#descr n "The caster constructs a large tower and covers it entirely with magical vines. This structure attracts the interest of those that devoted their lives to studying vines and vine creatures. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Animists. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----
+
+#neweffect "Archdruid Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Archdruid Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Archdruid Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 70
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Archdruid Site"
+
+
+#unique 1
+-- ESDB
+#paths n
+#secondarypaths n
+#secondarypathchance 100
+
+#name n "Construct Tower of Nature"
+
+#descr n "The caster constructs a large tower and covers it entirely with magical vines. This structure attracts the interest of those that devoted their lives to studying nature and living beings. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Archdruids (human N3 mages), Animists and Hedge Wizards. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Azure Initiate Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Azure Initiate Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Azure Initiate Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Azure Initiate Site"
+
+
+#unique 1
+-- ESDB
+#paths w
+#secondarypaths w
+#secondarypathchance 100
+
+#name w "Construct Azure Statue"
+
+#descr w "The caster constructs a statue and imbues it with watery power. This structure attracts the interest of those early in their study of Water magic. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Azure Initiates. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Azure Mage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Azure Mage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Azure Mage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Azure Mage Site"
+
+
+#unique 1
+-- ESDB
+#paths w
+#secondarypaths w
+#secondarypathchance 100
+
+#name w "Construct Azure Library"
+
+#descr w "The caster constructs a library and fills it with many tomes of water magic. This structure attracts the interest of those devoted to their study of Water magic. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Azure Mages and Azure Initiates. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Blackrose Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Blackrose Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Blackrose Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Blackrose Site"
+
+
+#unique 1
+-- ESDB
+#paths n
+#secondarypaths db
+#secondarypathchance 100
+
+#name n "Construct Blackrose Statue"
+
+#descr n "The caster constructs a statue and attunes it to the ancient entity of the Blackrose Tower. This structure attracts both prospective and fully fledged Blackrose Sorceresses. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Blackrose Sorceresses. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Black Witch Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Black Witch Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Black Witch Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Black Witch Site"
+
+
+#unique 1
+#paths nd
+#secondarypaths nd
+#secondarypathchance 100
+
+#name n "Construct Tower of Black Vines"
+#name d "Construct Tower of Black Vines"
+
+#descr d "The caster constructs a tower and covers it entirely in darkened vines. This structure attracts Black Witches, those who practice the art of reanimating corpses with vines. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#descr n "The caster constructs a tower and covers it entirely in darkened vines. This structure attracts Black Witches, those who practice the art of reanimating corpses with vines. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Black Witches. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+
+#neweffect "Bloodhenge Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 12000
+#schools -1
+
+#eventset "Bloodhenge Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Bloodhenge Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 4
+#fatiguecost 12000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Bloodhenge Site"
+
+
+#unique 1
+#paths b
+#secondarypaths n
+#secondarypathchance 100
+
+#name b "Construct Bloodhenge"
+
+#descr b "The caster constructs a henge of stone and ritually defiles it with massive amounts of sacrifical blood. The resulting structure attracts Bloodhenge Druids. Their services may then be hired for an appropriate price in gold. Construction of the henge will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Bloodhenge Druids. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Circlemaster Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 14000
+#schools -1
+
+#eventset "Circlemaster Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Circlemaster Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 14000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Circlemaster Site"
+
+
+#unique 1
+#paths b
+#secondarypaths d
+#secondarypathchance 100
+
+#name b "Construct Black Circle"
+
+#descr b "The caster constructs a large sacrifical circle and ritually defiles it with massive amounts of sacrifical blood. The resulting structure attracts students of Death and Blood. Their services may then be hired for an appropriate price in gold. Construction of the circle will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Conjurers and Circle Masters. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Cloudmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Cloudmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Cloudmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Cloudmage Site"
+
+
+#unique 1
+#paths a
+#secondarypaths a
+#secondarypathchance 100
+
+#name a "Construct Cloud Statue"
+
+#descr a "The caster constructs a magical statue that always seems to be at the centre of interesting cloud formations. The resulting structure attracts those early in their journey of Air magic. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Cloud Mages. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Crystalmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Crystalmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Crystalmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Crystalmage Site"
+
+
+#unique 1
+#paths es
+#secondarypaths es
+#secondarypathchance 100
+
+#name e "Construct Crystal Spire"
+#name s "Construct Crystal Spire"
+
+#descr s "The caster constructs a large spire of brilliant crystal. Those who spend their lives studying crystals are enticed to visit the new formation. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#descr e "The caster constructs a large spire of brilliant crystal. Those who spend their lives studying crystals are enticed to visit the new formation. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Crystal Mages. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+
+#neweffect "Eartheninitiate Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Eartheninitiate Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Eartheninitiate Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Eartheninitiate Site"
+
+
+#unique 1
+#paths e
+#secondarypaths e
+#secondarypathchance 100
+
+#name e "Construct Stone Statue"
+
+#descr e "The caster constructs a large stone statue, and traps earthen power inside. Those early in their study of Earth magic are enticed to visit the new formation. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Earthen Initiates (human E1 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Earthenmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Earthenmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Earthenmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Earthenmage Site"
+
+
+#unique 1
+#paths e
+#secondarypaths e
+#secondarypathchance 100
+
+#name e "Construct Library of Stone"
+
+#descr e "The caster constructs a library filled with tomes of Earthen knowledge. Those that study Earth magic frequently visit the library in pursuit of new knowledge. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Earthen Initiates (human E1 mages) and Earthen Mages (human E2 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Elludianmoonmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Elludianmoonmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Elludianmoonmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Elludianmoonmage Site"
+
+
+#unique 1
+#paths sd
+#secondarypaths sd
+#secondarypathchance 100
+
+#name s "Construct Tower of the Moon"
+#name d "Construct Tower of the Moon"
+
+#descr s "The caster constructs a large tower, above which the moon is always clearly visible at night. Travellers will visit such a site in order to observe the moon without interruptions from inclement weather. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr d "The caster constructs a large tower, above which the moon is always clearly visible at night. Travellers will visit such a site in order to observe the moon without interruptions from inclement weather. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of regular Moon Mages and Elludian Moon Mages. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Enchanter Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Enchanter Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Enchanter Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Enchanter Site"
+
+
+#unique 1
+#paths ns
+#secondarypaths ns
+#secondarypathchance 100
+
+#name s "Construct Moonvine Tower"
+#name n "Construct Moonvine Tower"
+
+#descr n "The caster constructs a tower covered in magical vines. When night falls and moonlight shines upon the tower, the Moonvines rapidly bloom. Travellers will visit such a site in order to observe and study moonvines. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr s "The caster constructs a tower covered in magical vines. When night falls and moonlight shines upon the tower, the Moonvines rapidly bloom. Travellers will visit such a site in order to observe and study moonvines. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Enchanters. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Enchantress Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Enchantress Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Enchantress Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools ench
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Enchantress Site"
+
+
+#unique 1
+#paths n
+#secondarypaths fawe
+#secondarypathchance 50
+
+#name n "Enchanted Grove"
+
+#descr n "The caster enchants a grove of trees with powerful Nature magic, causing it to beautifully bloom and blossom perennially. Enchantresses frequently visit such places to further their knowledge of the natural world, and enjoy the beauty found there. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Enchantresses. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Geomancer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Geomancer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Geomancer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Geomancer Site"
+
+
+#unique 1
+#paths e
+
+#secondarypathchance 100
+
+#name e "Construct Tower of Mountains"
+
+#descr e "The caster constructs an earthen tower of enormous proportions. Those of all levels of skill in Earth magic will visit such a site in order to learn more. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Earthen Initiates (human E1 mages), Earthen Mages (human E2 mages), and Geomancers (human E3 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-----
+
+#neweffect "Highmagus Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Highmagus Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Highmagus Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Highmagus Site"
+
+
+#unique 1
+#paths fs
+
+#secondarypathchance 100
+#secondarypaths fs
+
+#name f "Construct Tower of the Magi"
+#name s "Construct Tower of the Magi"
+
+#descr f "The caster constructs a huge tower of the sun. This attracts those who worship at temples of the magi to the newly built tower, where their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#descr s "The caster constructs a huge tower of the sun. This attracts those who worship at temples of the magi to the newly built tower, where their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of the Magus and High Magus. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Hydromancer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Hydromancer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Hydromancer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Hydromancer Site"
+
+
+#unique 1
+#paths w
+
+#secondarypathchance 100
+
+#name w "Construct Tower of the Seas"
+
+#descr w "The caster constructs a tower of enormous proportions, surrounded by a moat filled by perpetual rain. Those of all levels of skill in Water magic will visit such a site in order to learn more. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Azure Initiates, Azure Mages, and Hydromancers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Icedruid Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Icedruid Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Icedruid Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools ench
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Icedruid Site"
+
+
+#unique 1
+#paths wn
+#secondarypaths wn
+#secondarypathchance 100
+
+#name n "Grove of Perpetual Winter"
+#name w "Grove of Perpetual Winter"
+
+#descr w "The caster enchants a grove of trees with powerful magic, causing it to be forever trapped in snowy winter. Ice Druids frequently visit such places to further their knowledge of winter and enjoy their favourite season at all times of the year. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#descr n "The caster enchants a grove of trees with powerful magic, causing it to be forever trapped in snowy winter. Ice Druids frequently visit such places to further their knowledge of winter and enjoy their favourite season at all times of the year. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Ice Druids. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Illusionist Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Illusionist Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Illusionist Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools alt
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Illusionist Site"
+
+
+#unique 1
+#paths a
+#secondarypaths a
+#secondarypathchance 100
+
+#name a "Tower of Illusions"
+
+#descr a "The caster creates a modest tower perpetually shrouded in ever-shifting grandiose illusions. Students of the art of illusions will gather here to further their craft. Their services may then be hired for an appropriate price in gold. Enchantment of the tower  will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Illusionists. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Loremaster Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Loremaster Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Loremaster Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Loremaster Site"
+
+
+#unique 1
+#paths s
+
+#secondarypathchance 100
+
+#name s "Construct Grand Library"
+
+#descr s "The caster constructs an enormous arcane library filled with all manner of obscure tomes. Such a place of mystical learning will be visited by many travelling sages in search of magical lore. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Sages and Lore Masters. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Springmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Springmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Springmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools const
+
+#skipchance 92
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Springmage Site"
+
+
+#unique 1
+#paths a
+#secondarypaths n
+
+#secondarypathchance 100
+
+#name a "Construct Tower of Spring"
+
+#descr a "The caster constructs a magical tower which traps the surrounding area in perpetual spring. Such a place of will be visited by those who draw their powers from the season. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Mages of Spring. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Summermage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Summermage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Summermage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools const
+
+#skipchance 92
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Summermage Site"
+
+
+#unique 1
+#paths f
+#secondarypaths n
+
+#secondarypathchance 100
+
+#name f "Construct Tower of Summer"
+
+#descr f "The caster constructs a magical tower which traps the surrounding area in perpetual summer. Such a place of will be visited by those who draw their powers from the season. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Mages of Summer. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Autumnmage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Autumnmage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Autumnmage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools const
+
+#skipchance 92
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Autumnmage Site"
+
+
+#unique 1
+#paths e
+#secondarypaths d
+
+#secondarypathchance 100
+
+#name e "Construct Tower of Autumn"
+
+#descr e "The caster constructs a magical tower which traps the surrounding area in perpetual autumn. Such a place of will be visited by those who draw their powers from the season. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Mages of Autumn. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Wintermage Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4000
+#schools -1
+
+#eventset "Wintermage Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Wintermage Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4000
+#schools const
+
+#skipchance 92
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Wintermage Site"
+
+
+#unique 1
+#paths w
+#secondarypaths d
+
+#secondarypathchance 100
+
+#name w "Construct Tower of Winter"
+
+#descr w "The caster constructs a magical tower which traps the surrounding area in perpetual winter. Such a place of will be visited by those who draw their powers from the season. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Mages of Winter. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Mageofflames Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Mageofflames Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Mageofflames Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Mageofflames Site"
+
+
+#unique 1
+-- ESDB
+#paths f
+#secondarypaths f
+#secondarypathchance 100
+
+#name f "Construct Library of Flame"
+
+#descr f "The caster constructs a library and fills it with many tomes of fire magic. This structure attracts the interest of those devoted to their study of Fire magic. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Pyromancers and Mages of Flames (human F2 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-------
+
+
+#neweffect "magus Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Magus Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "magus Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 4
+#fatiguecost 3500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "magus Site"
+
+
+#unique 1
+#paths fs
+
+#secondarypathchance 100
+#secondarypaths fs
+
+#name f "Construct Temple of the Magi"
+#name s "Construct Temple of the Magi"
+
+#descr f "The caster constructs a temple of the sun. A new order of magi will soon move into the temple, where their services may then be hired for an appropriate price in gold. Construction of the temple will fail in a province where the land is already too saturated with magic."
+#descr s "The caster constructs a temple of the sun. A new order of magi will soon move into the temple, where their services may then be hired for an appropriate price in gold. Construction of the temple will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of the Magus. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Masternecromancer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Masternecromancer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Masternecromancer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Masternecromancer Site"
+
+
+#unique 1
+#paths d
+
+#secondarypathchance 100
+
+#name d "Construct Tower of Darkness"
+
+#descr d "The caster constructs a black tower of enormous proportions, which covers the surrounding area in unnatural darkness. Those of all levels of skill in Death magic will visit such a site in order to learn more. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Necromantic Initiates (human D1 mages), Necromancers, and Master Necromancers (human D3 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-------
+
+#neweffect "Necromancer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Necromancer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Necromancer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Necromancer Site"
+
+
+#unique 1
+-- ESDB
+#paths d
+#secondarypaths d
+#secondarypathchance 100
+
+#name d "Construct Black Library"
+
+#descr d "The caster constructs a library and fills it with many tomes of dark magic. This structure attracts the interest of those devoted to their study of necromancy. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Necromantic Initiates (human D1 mages) and Necromancers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-------
+
+#neweffect "Necroinitiate Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Necroinitiate Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Necroinitiate Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Necroinitiate Site"
+
+
+#unique 1
+-- ESDB
+#paths d
+#secondarypaths d
+#secondarypathchance 100
+
+#name d "Construct Haunted Statue"
+
+#descr d "The caster constructs a statue and binds dead spirits to it. The forbidden whisperings of the statue may attract the interest of those early in their study of necromancy. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Necromantic Initiates (human D1 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-------
+
+#neweffect "Pyromancer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Pyromancer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Pyromancer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Pyromancer Site"
+
+
+#unique 1
+-- ESDB
+#paths f
+#secondarypaths f
+#secondarypathchance 100
+
+#name f "Construct Everburning Candle"
+
+#descr f "The caster constructs a shrine to fire, and lights an everburning candle in it. Those early in their study of fire magic often visit to study the everburning flame. Their services may then be hired for an appropriate price in gold. Construction of the shrine will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Pyromancers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Sorcerer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 13000
+#schools -1
+
+#eventset "Sorcerer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Sorcerer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 5
+#fatiguecost 13000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Sorcerer Site"
+
+
+#unique 1
+#paths b
+#secondarypaths d
+#secondarypathchance 100
+
+#name b "Construct Forbidden Tower"
+
+#descr b "The caster constructs a large black tower, and ritually defiles it with large amounts of sacrifical blood. The resulting structure attracts students of Death and Blood. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Sorcerers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+---------------
+
+#neweffect "SorcSands Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "SorcSands Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "SorcSands Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools ench
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "SorcSands Site"
+
+
+#unique 1
+-- ESDB
+#paths fae
+#secondarypaths fae
+#secondarypathchance 100
+
+#name f "Create Enchanted Desert"
+#name a "Create Enchanted Desert"
+#name e "Create Enchanted Desert"
+
+#descr f "The caster enchants a small area of land, trapping it in a perpetual desert. Mages of the desert elements may visit this place to further their knowledge. Their services may then be hired for an appropriate price in gold. Enchantment of the desert will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Sorcerers of the Sands. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+---------------
+
+#neweffect "Sorceress Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Sorceress Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Sorceress Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools ench
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Sorceress Site"
+
+
+#unique 1
+-- ESDB
+#paths s
+
+#name s "Construct Sorceresses' Tower"
+
+#descr s "The caster constructs a large tower and founds an order of sorceresses. The sorceresses practice a wide variety of magical skills, and their services may then be hired for an appropriate price in gold. Enchantment of the desert will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Sorceresses and Black Sorceresses. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+-----
+
+#neweffect "Shadowseer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Shadowseer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Shadowseer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Shadowseer Site"
+
+
+#unique 1
+#paths s
+
+#secondarypathchance 100
+
+#name s "Construct Tower of the Stars"
+
+#descr s "The caster constructs a tower of enormous proportions, reaching far up into the stars. Those of all levels of skill in Astral magic will visit such a site in order to learn more. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Stargazers (human S1 mages), Star Seers (human S2 mages), and Shadow Seers. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+
+#neweffect "Stargazer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 2000
+#schools -1
+
+#eventset "Stargazer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Stargazer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 1
+#maxpower 1
+#nreff 1
+#pathlevel 2
+#fatiguecost 2000
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Stargazer Site"
+
+
+#unique 1
+#paths s
+#secondarypaths s
+#secondarypathchance 100
+
+#name s "Construct Starlit Statue"
+
+#descr e "The caster constructs a large stone statue under the light of the stars. A statue constructed in this way is bound to the stars that shone upon it during its construction, and the same stars will continue to shine upon it forever. Those early in their study of Astral magic are enticed to gaze upon these stars. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Stargazers (human S1 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Starseer Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Starseer Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Starseer Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 8388608
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Starseer Site"
+
+
+#unique 1
+-- ESDB
+#paths s
+#secondarypaths s
+#secondarypathchance 100
+
+#name s "Construct Library of the Stars"
+
+#descr s "The caster constructs a library and fills it with many startouched tomes. This structure attracts the interest of those devoted to their study of Astral magic. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Stargazers (human S1 mages) and Star Seers (human S2 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Stormcaller Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Stormcaller Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Stormcaller Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 4
+#fatiguecost 4500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Stormcaller Site"
+
+
+#unique 1
+#paths a
+
+#secondarypathchance 100
+
+#name a "Construct Tower of Storms"
+
+#descr a "The caster constructs a magical tower of enormous proportions, located in the eye of a perpetual storm. Those of all levels of skill in Air magic will visit such a site in order to learn more. Their services may then be hired for an appropriate price in gold. Construction of the tower will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Cloud Mages, Wind Masters, and Storm Callers (human A3 mages). Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Wizard Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Wizard Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Wizard Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Wizard Site"
+
+
+#unique 1
+#paths fawe
+#secondarypaths fawe
+#secondarypathchance 100
+
+#name f "Construct Arcane Academy"
+#name a "Construct Arcane Academy"
+#name w "Construct Arcane Academy"
+#name e "Construct Arcane Academy"
+
+#descr f "The caster constructs an academy and founds an order of wizards. The wizards here study all manner of elemental magics, and some also study the art of war. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#descr a "The caster constructs an academy and founds an order of wizards. The wizards here study all manner of elemental magics, and some also study the art of war. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#descr w "The caster constructs an academy and founds an order of wizards. The wizards here study all manner of elemental magics, and some also study the art of war. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#descr e "The caster constructs an academy and founds an order of wizards. The wizards here study all manner of elemental magics, and some also study the art of war. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Wizards and Warrior Mages. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+
+#neweffect "Windmaster Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 3500
+#schools -1
+
+#eventset "Windmaster Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Windmaster Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 3
+#maxpower 3
+#nreff 1
+#pathlevel 3
+#fatiguecost 3500
+#schools const
+
+#skipchance 80
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Windmaster Site"
+
+
+#unique 1
+#paths a
+#secondarypaths a
+#secondarypathchance 100
+
+#name a "Construct Library of the Winds"
+
+#descr a "The caster constructs a library filled with tomes of airbound knowledge. Those that study Air magic frequently visit the library in pursuit of new knowledge. Their services may then be hired for an appropriate price in gold. Construction of the library will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Cloud Mages and Wind Masters. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+----------
+
+#neweffect "Wizardcrescentmoon Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4200
+#schools -1
+
+#eventset "Wizardcrescentmoon Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Wizardcrescentmoon Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 5
+#maxpower 5
+#nreff 1
+#pathlevel 5
+#fatiguecost 4200
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+#nextspell "Wizardcrescentmoon Site"
+
+
+#unique 1
+#paths ws
+#secondarypaths ws
+#secondarypathchance 100
+
+#name w "Construct Crescent Tower"
+#name s "Construct Crescent Tower"
+
+#descr s "The caster constructs a large tower in the shape of the crescent moon. Wizards from a namesake academy travel here in order to further their studies. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#descr w "The caster constructs a large tower in the shape of the crescent moon. Wizards from a namesake academy travel here in order to further their studies. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Wizards of the Crescent Moon. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+----------
+
+#neweffect "Wormwoodwitch Site"
+#effect 10082
+#damage 0
+#spec 8388608
+#fatiguecost 4500
+#schools -1
+
+#eventset "Wormwoodwitch Site"
+
+-- evo, scale aoe
+#spelltype 2
+#aoe 0
+#power 0
+#name 1 "Imbue with Magic"
+#name 1 "Fill with Magic"
+#name 2 "Imbue with Magic"
+#name 2 "Fill with Magic"
+#name 4 "Imbue with Magic"
+#name 4 "Fill with Magic"
+#name 8 "Imbue with Magic"
+#name 8 "Fill with Magic"
+#name 16 "Imbue with Magic"
+#name 16 "Fill with Magic"
+#name 32 "Imbue with Magic"
+#name 32 "Fill with Magic"
+#name 64 "Imbue with Magic"
+#name 64 "Fill with Magic"
+#name 128 "Imbue with Magic"
+#name 128 "Fill with Magic"
+#end
+
+
+#neweffect "Wormwoodwitch Site Dummy"
+#copyspell "Record of Creation"
+#effect 10083
+#damage -1
+#spec 0
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 4500
+#schools const
+
+#skipchance 90
+
+#ainocast 1
+#badaispell 1
+
+-- BE CAREFUL what this site gets named
+#nextspell "Wormwoodwitch Site"
+
+
+#unique 1
+#paths a
+#secondarypaths dn
+#secondarypathchance 100
+
+#name a "Construct Wormwood Tower"
+
+#descr a "The caster constructs a huge tower from wormwood in an attempt to entice witches of a secluded coven. Their services may then be hired for an appropriate price in gold. Enchantment of the grove will fail in a province where the land is already too saturated with magic."
+#details "Creates a permanent magic site which allows the recruitment of Wormwood Witches. Fails if used in a province with 8 magic sites."
+
+#spelltype 4
+#end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

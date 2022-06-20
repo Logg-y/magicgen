@@ -1,0 +1,31 @@
+-- Design intent: W access, no more, no less.
+
+#newunit "Undine Lesser Mage"
+#baseunit 360
+#clearweapons 1
+#addweapon 172
+#raw "#amphibian"
+#set aquatic 0
+#set amphibian 1
+#setstr descr "Undines are water spirits who serve Thalassa. They manifest themselves as female bodies composed of water. Undines cannot leave the sea. This Undine has gained skill in Water magic, which additionally allows it to sustain its form above the waves."
+#setstr name "Student of Thalassa"
+#spr1 "MagicGen/undinemagewand.tga"
+#spr2 "MagicGen/undinemagewand_2.tga"
+#set W 2
+#raw "#magicskill 2 2"
+#end
+
+#newunit "Undine Greater Mage"
+#baseunit 360
+#clearweapons 1
+#addweapon 238
+#raw "#amphibian"
+#set aquatic 0
+#set amphibian 1
+#setstr descr "Undines are water spirits who serve Thalassa. They manifest themselves as female bodies composed of water. Undines cannot leave the sea. This Undine has gained great skill in Water magic, which additionally allows it to sustain its form above the waves."
+#setstr name "Adept of Thalassa"
+#spr1 "MagicGen/undinemagestaff.tga"
+#spr2 "MagicGen/undinemagestaff_2.tga"
+#set W 3
+#raw "#magicskill 2 3"
+#end

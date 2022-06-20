@@ -1,0 +1,149 @@
+#neweffect "Call Ice Imp Lesser Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 3
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 2
+#chassisvalue 35
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 16
+
+#newunit "Ice Imp Lesser Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths b
+#secondarypaths w
+
+#name b "Call NAMEPREFIX Ice Imp %Dabbler%"
+#descr b "$BLOOD_INTRO$, the blood mage summons ARTICLE_N Ice Imp %Dabbler% to join him in battle. The Ice Imp %Dabbler% will leave once the battle is over."
+#details "Ice Imp Dabblers are W1B1 mages with the following random path:\n50% WDB"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.7
+#scalefatigueexponent -1.6
+#pathperresearch 0.4
+#ainocast 1
+#end
+
+#neweffect "Summon Ice Imp Lesser Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 4000
+#chassisvalue 110
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 16
+
+#skipchance 70
+
+#newunit "Ice Imp Lesser Mage"
+
+#paths b
+#secondarypaths w
+
+
+#name b "Bind NAMEPREFIX Ice Imp Dabbler"
+#descr b "$BLOOD_INTRO$, the blood mage binds an Ice Imp Dabbler to serve him. The imp has some skill in Water and Blood magic."
+#details "Ice Imp Dabblers are W1B1 mages with the following random path:\n50% WDB"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+-------
+
+#neweffect "Call Ice Imp Greater Mage"
+
+#effect 21
+#damage 3350
+#spec 0
+#power 5
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 3
+#chassisvalue 35
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 16
+
+#newunit "Ice Imp Greater Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths b
+#secondarypaths w
+
+#name b "Call NAMEPREFIX Ice Imp %Sorcerer%"
+#descr b "$BLOOD_INTRO$, the blood mage summons ARTICLE_N Ice Imp %Sorcerer% to join him in battle. The Ice Imp %Sorcerer% will leave once the battle is over."
+#details "Ice Imp Sorcerers are W2B2 mages with the following random paths:\n50% D\n50% D"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.7
+#scalefatigueexponent -1.6
+#pathperresearch 0.5
+#ainocast 1
+#end
+
+#neweffect "Summon Ice Imp Greater Mage"
+
+#effect 10021
+#damage 3350
+#spec 0
+#power 6
+#maxpower 6
+#nreff 1
+#pathlevel 4
+#fatiguecost 6500
+#chassisvalue 110
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 16
+
+#skipchance 70
+
+#newunit "Ice Imp Greater Mage"
+
+#paths b
+#secondarypaths b
+
+
+#name b "Bind NAMEPREFIX Ice Imp Sorcerer"
+#descr b "$BLOOD_INTRO$, the blood mage binds an Ice Imp Sorcerer to serve him. The imp is skilled in Water and Blood magic, and sometimes also Death magic."
+#details "Ice Imp Sorcerers are W2B2 mages with the following random paths:\n50% D\n50% D"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+
+

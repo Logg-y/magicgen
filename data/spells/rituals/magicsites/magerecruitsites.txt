@@ -1,0 +1,285 @@
+#newsite "Adept of Golden Order Site"
+
+#name f "Golden Tower"
+#name s "Golden Tower"
+#name e "Golden Tower"
+
+-- alchemist and adept of gold order
+#com 551
+#com 101
+
+#end
+
+#newsite "Adept of Iron Order Site"
+
+#name s "Iron Tower"
+#name e "Iron Tower"
+
+-- alchemist and adept of gold order
+#com 477
+#end
+
+#newsite "Adept of Pyri Site"
+
+#name f "Tower of Flames"
+
+#com 99
+#com 98
+#newunit "#com" "Mage of Flames"
+#end
+
+#newsite "Adept of Silver Order Site"
+#name a "Silver Tower"
+#name s "Silver Tower"
+#com 100
+#end
+
+#newsite "Animist Site"
+#name n "Ivy Tower"
+#com 552
+#end
+
+#newsite "Archdruid Site"
+#name n "Tower of Nature"
+#newunit "#com" "Archdruid"
+#com 552
+#com 1182
+#end
+
+#newsite "Azure Initiate Site"
+#name w "Azure Statue"
+#com 96
+#end
+
+#newsite "Azure Mage Site"
+#name w "Azure Library"
+#com 97
+#com 96
+#end
+
+#newsite "Blackrose Site"
+#name n "Blackrose Statue"
+#com 2362
+#end
+
+#newsite "Black Witch Site"
+#name n "Tower of Black Vines"
+#name d "Tower of Black Vines"
+#com 2361
+#end
+
+#newsite "Bloodhenge Site"
+#name b "Tower of Black Vines"
+#com 122
+#end
+
+#newsite "Circlemaster Site"
+#name b "Black Circle"
+#com 95
+#com 94
+#end
+
+#newsite "Cloudmage Site"
+#name a "Cloud Statue"
+#com 92
+#end
+
+#newsite "Crystalmage Site"
+#name e "Crystal Spire"
+#name s "Crystal Spire"
+#com 340
+#end
+
+#newsite "Eartheninitiate Site"
+#name e "Stone Statue"
+#newunit "#com" "Earthen Initiate"
+#end
+
+#newsite "Earthenmage Site"
+#name e "Library of Stone"
+#newunit "#com" "Earthen Initiate"
+#newunit "#com" "Earthen Mage"
+#end
+
+#newsite "Elludianmoonmage Site"
+#name s "Tower of the Moon"
+#name d "Tower of the Moon"
+#com 630
+#end
+
+#newsite "Enchanter Site"
+#name s "Moonvine Tower"
+#name n "Moonvine Tower"
+#com 338
+#end
+
+#newsite "Enchantress Site"
+#name n "Enchanted Grove"
+#com 363
+#com 364
+#end
+
+#newsite "Geomancer Site"
+#name e "Tower of Mountains"
+#newunit "#com" "Earthen Initiate"
+#newunit "#com" "Earthen Mage"
+#newunit "#com" "Geomancer"
+#end
+
+#newsite "Highmagus Site"
+#name f "Tower of the Magi"
+#name s "Tower of the Magi"
+#com 480
+#com 481
+#end
+
+#newsite "Hydromancer Site"
+#name w "Tower of the Seas"
+#com 103
+#com 97
+#com 96
+#end
+
+#newsite "Icedruid Site"
+#name w "Grove of Perpetual Winter"
+#name n "Grove of Perpetual Winter"
+#com 309
+#end
+
+#newsite "Illusionist Site"
+#name a "Tower of Illusions"
+#com 341
+#end
+
+#newsite "Loremaster Site"
+#name s "Grand Library"
+#com 479
+#com 478
+#end
+
+#newsite "Springmage Site"
+#name a "Tower of Spring"
+#com 2543
+#end
+
+#newsite "Summermage Site"
+#name f "Tower of Summer"
+#com 2544
+#end
+
+#newsite "Autumnmage Site"
+#name e "Tower of Autumn"
+#com 2545
+#end
+
+#newsite "Wintermage Site"
+#name w "Tower of Winter"
+#com 2546
+#end
+
+#newsite "Mageofflames Site"
+#name f "Library of Flame"
+#newunit "#com" "Mage of Flames"
+#end
+
+#newsite "Magus Site"
+#name f "Temple of the Magi"
+#name s "Temple of the Magi"
+#com 480
+#end
+
+#newsite "Masternecromancer Site"
+#name d "Tower of Darkness"
+#newunit "#com" "Master Necromancer"
+#newunit "#com" "Necromantic Initiate"
+#com 310
+#end
+
+#newsite "Necromancer Site"
+#name d "Black Library"
+#newunit "#com" "Necromantic Initiate"
+#com 310
+#end
+
+#newsite "Necroinitiate Site"
+#name d "Haunted Statue"
+#newunit "#com" "Necromantic Initiate"
+#end
+
+#newsite "Pyromancer Site"
+#name f "Everburning Candle"
+#com 98
+#end
+
+#newsite "Sorcerer Site"
+#name b "Forbidden Tower"
+#com 339
+#end
+
+#newsite "SorcSands Site"
+#name f "Enchanted Desert"
+#name a "Enchanted Desert"
+#name e "Enchanted Desert"
+#com 2245
+#end
+
+#newsite "Sorceress Site"
+#name s "Sorceresses' Tower"
+#com 343
+#com 344
+#end
+
+#newsite "Shadowseer Site"
+#name s "Tower of the Stars"
+#com 106
+#newunit "#com" "Stargazer"
+#newunit "#com" "Star Seer"
+#end
+
+#newsite "Stargazer Site"
+#name s "Starlit Statue"
+#newunit "#com" "Stargazer"
+#end
+
+#newsite "Starseer Site"
+#name s "Library of the Stars"
+#newunit "#com" "Stargazer"
+#newunit "#com" "Star Seer"
+#end
+
+#newsite "Stormcaller Site"
+#name a "Tower of Storms"
+#newunit "#com" "Storm Caller"
+#com 92
+#com 93
+#end
+
+#newsite "Wizard Site"
+#name f "Arcane Academy"
+#name a "Arcane Academy"
+#name w "Arcane Academy"
+#name e "Arcane Academy"
+#com 312
+#com 302
+#com 875
+#end
+
+#newsite "Windmaster Site"
+#name a "Library of the Winds"
+#com 92
+#com 93
+#end
+
+#newsite "Wizardcrescentmoon Site"
+#name s "Crescent Tower"
+#name w "Crescent Tower"
+#com 999
+#end
+
+
+#newsite "Wormwoodwitch Site"
+#name a "Wormwood Tower"
+#com 2358
+#end
+
+

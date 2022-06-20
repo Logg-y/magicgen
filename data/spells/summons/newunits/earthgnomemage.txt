@@ -1,0 +1,27 @@
+-- Design intent: Earth access, no more, no less.
+
+#newunit "Earth Gnome Lesser Mage"
+#baseunit 561
+#clearweapons 1
+#addweapon 172
+#setstr descr "Earth gnomes are Earth spirits who serve Oreigenes. They manifest themselves in their King's image and are composed of earth and stone. This gnome has gained skill in Earth magic."
+#setstr name "Student of Oreigenes"
+#spr1 "MagicGen/earthgnomemagewand.tga"
+#spr2 "MagicGen/earthgnomemagewand_2.tga"
+-- e2
+#set E 2
+#raw "#magicskill 3 2"
+#end
+
+#newunit "Earth Gnome Greater Mage"
+#baseunit 561
+#clearweapons 1
+#addweapon 238
+#setstr descr "Earth gnomes are Earth spirits who serve Oreigenes. They manifest themselves in their King's image and are composed of earth and stone. This gnome has gained great skill in Earth magic."
+#setstr name "Adept of Oreigenes"
+#spr1 "MagicGen/earthgnomemagestaff.tga"
+#spr2 "MagicGen/earthgnomemagestaff_2.tga"
+-- 3
+#set E 3
+#raw "#magicskill 3 3"
+#end

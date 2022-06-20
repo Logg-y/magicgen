@@ -25,6 +25,7 @@
 #secondarypathchance 80
 
 #namecond effectiveaoe < 2 16 "NAMEPREFIX Blink %Foe%"
+#namecond effectiveaoe < 2 128 "NAMEPREFIX Blink %Foe%"
 
 #namecond effectiveaoe >= 2 16 "NAMEPREFIX Dimensional Instability"
 #namecond effectiveaoe >= 2 128 "NAMEPREFIX Void Warp"

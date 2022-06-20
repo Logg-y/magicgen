@@ -1,0 +1,79 @@
+-- All are MRN unless noted
+
+#newweapon "Additional Burning"
+#setstr name "Burning"
+#raw "#copyweapon 64"
+#set damage 512
+#raw "#damage 512"
+#end
+
+#newweapon "Additional Sleep"
+#setstr name "Sleep"
+#raw "#copyweapon 64"
+#set damage 1024
+#raw "#damage 1024"
+#end
+
+#newweapon "Additional Earth Grip"
+#setstr name "Earth Grip"
+#raw "#copyweapon 64"
+#set damage 16384
+#raw "#damage 16384"
+#end
+
+#newweapon "Additional Fire Bonds"
+#setstr name "Fire Bonds"
+#raw "#copyweapon 64"
+#set damage 65536
+#raw "#damage 65536"
+#end
+
+#newweapon "Additional False Fetters"
+#setstr name "False Fetters"
+#raw "#copyweapon 64"
+#set damage 131072
+#raw "#damage 131072"
+#end
+
+#newweapon "Additional Confusion"
+#setstr name "Confusion"
+#raw "#copyweapon 64"
+#set damage 17179869184
+#raw "#damage 17179869184"
+#end
+
+-- This one is unconditional
+#newweapon "Additional Curse of Stones"
+#setstr name "Weight of the Earth"
+#raw "#copyweapon 64"
+#set damage 32
+#raw "#damage 32"
+#end
+
+#newweapon "Additional Slow"
+#setstr name "Slow"
+#raw "#copyweapon 64"
+#set damage 68719476736
+#raw "#damage 68719476736"
+#end
+
+#newweapon "Additional Freeze"
+#setstr name "Freeze"
+#raw "#copyweapon 64"
+#set damage 268435456
+#raw "#damage 268435456"
+#end
+
+#newweapon "Banish to Kokyos"
+#setstr name "Banish to Kokytos"
+#raw "#copyweapon 441"
+#set damage -13
+#raw "#damage -13"
+#end
+
+#newweapon "Forced Returning"
+#setstr name "Forced Returning"
+#raw "#copyweapon 441"
+#set damage -15
+#raw "#damage -15"
+#end

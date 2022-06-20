@@ -1,0 +1,75 @@
+#neweffect "Call Stone Monstra Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 8
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 5
+#chassisvalue 35
+#range 6
+#fatiguecost 200
+#explspr 10232
+#sound 31
+#schools 8
+
+#newunit "Stone Monstra Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths ae
+#secondarypaths ae
+#secondarypathchance 90
+
+#name ae "Conjure NAMEPREFIX Possessed Stone Monstra"
+#descr ae "The caster summons ARTICLE Possessed Stone Monstra to join him in battle. The Stone Monstra will leave once the battle is over."
+#details "Possessed Stone Monstra are A3E3 mages."
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Stone Monstra Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 9
+#maxpower 9
+#nreff 1
+#pathlevel 5
+#fatiguecost 4000
+#chassisvalue 1000
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools 8
+
+#skipchance 70
+
+#newunit "Stone Monstra Mage"
+
+#paths ae
+#secondarypaths ae
+#secondarypathchance 90
+
+
+#name ae "Summon NAMEPREFIX Posssessed Stone Monstra"
+#descr ae "The caster summons a Stone Monstra Sculptor to serve him. The Stone Monstra has great skill in Earth and Air, and may spend a month to produce lesser Stone Monstra."
+#details "Possessed Stone Monstra are A3E3 mages. They have normal humanoid slots."
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
+

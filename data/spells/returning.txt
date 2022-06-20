@@ -24,14 +24,14 @@
 
 #namecond effectiveaoe == 0 16 "NAMEPREFIX Returning"
 #namecond effectiveaoe == 1 16 "NAMEPREFIX Teleportation"
-#namecond effectiveaoe == 1 b "NAMEPREFIX Infernal Paths"
+#namecond effectiveaoe <= 0 b "NAMEPREFIX Infernal Paths"
 
-#namecond2 1 < effectiveaoe < 30 16 "NAMEPREFIX Group Teleportation"
-#namecond2 1 < effectiveaoe < 30 b "NAMEPREFIX Infernal Expedition"
+#namecond2 1 <= effectiveaoe < 40 16 "NAMEPREFIX Group Teleportation"
+#namecond2 1 <= effectiveaoe < 40 b "NAMEPREFIX Infernal Expedition"
 #namecond effectiveaoe > 600 16 "NAMEPREFIX Vortex of Returning"
 #namecond effectiveaoe > 600 b "NAMEPREFIX Vortex to Inferno"
 
-#descr b "$BLOOD_INTRO$, the caster opens a portal to othe realms, though which SUBJECT attempts to travel home safely. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
+#descr b "$BLOOD_INTRO$, the caster opens a portal to the infernal realms, though which SUBJECT attempts to travel home safely. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
 #descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
 #details "The chance of being lost in the void is 7%."
 

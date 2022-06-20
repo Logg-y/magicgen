@@ -1,0 +1,57 @@
+-- Design intent: Guarantee a f2e2 mage, any less and why would you cast this
+-- Other randoms will be too rare to fish for actively but nice if you get lucky
+
+#newunit "Magma Child Lesser Mage"
+#baseunit 640
+#clearweapons 1
+#addweapon 172
+#addweapon 229
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set maxage 100
+#raw "#maxage 100"
+#set startage 25
+#raw "#startage 25"
+#set mor 30
+#setstr descr "Magma children are beings composed of fire and molten rock. They serve Rhuax, one of the Kings of Elemental Fire. This child is a student of Rhuax and has some skill in the magic of magma."
+#setstr name "Student of Rhuax"
+#spr1 "MagicGen/magmachildmagewand.tga"
+#spr2 "MagicGen/magmachildmagewand_2.tga"
+-- f2e2, 20% fe
+
+
+#set F 2
+#set E 2
+#raw "#magicskill 0 2"
+#raw "#magicskill 3 2"
+#set mask1 1152
+#set rand1 20
+#set nbr1 1
+#set link1 1
+#raw "#custommagic 1152 20"
+#end
+
+#newunit "Magma Child Greater Mage"
+#baseunit 640
+#clearweapons 1
+#addweapon 238
+#addweapon 229
+#set mr 14
+#raw "#mr 14"
+#raw "#mor 30"
+#set maxage 100
+#raw "#maxage 100"
+#set startage 28
+#raw "#startage 28"
+#set mor 30
+#setstr descr "Magma children are beings composed of fire and molten rock. They serve Rhuax, one of the Kings of Elemental Fire. This child is a student of Rhuax and has great skill in the magic of magma."
+#setstr name "Adept of Rhuax"
+#spr1 "MagicGen/magmachildmagestaff.tga"
+#spr2 "MagicGen/magmachildmagestaff_2.tga"
+
+#set F 3
+#set E 3
+#raw "#magicskill 0 3"
+#raw "#magicskill 3 3"
+#end

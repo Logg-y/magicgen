@@ -1,0 +1,458 @@
+#newweapon "Phantasmal Fireball"
+#setstr name "Phantasmal Fireball"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 2"
+#set att 2
+#raw "#sound 123"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 5 + 2**6 + 2 ** 12 + 2 ** 43
+-- #bonus + #fire + #armorpiercing + #mrnegates + #melee50
+#set spec 8796227244128
+#raw "#dmg 16"
+#set dmg 16
+#raw "#skip2"
+#raw "#explspr 10113"
+#raw "#flyspr 10073"
+#end
+
+#newweapon "Phantasmal Combustion"
+#setstr name "Phantasmal Combustion"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 100"
+#set att 100
+#set effect 11
+#raw "#dt_aff"
+#raw "#sound 16"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 5 + 2**7 + 2 ** 12 + 2 ** 43
+-- #bonus + #fire + #armornegating + #mrnegates + #melee50
+#set spec 8796227244192
+#raw "#dmg 512"
+#set dmg 512
+#raw "#skip"
+#raw "#explspr 10131"
+#end
+
+
+#newweapon "Phantasmal Falling Fires"
+#setstr name "Phantasmal Falling Fires"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 1"
+#set att 1
+#raw "#sound 123"
+#set aoe 3
+#raw "#aoe 3"
+-- 2 ** 27 + 2 ** 5 + 2**6 + 2 ** 12
+-- #bonus + #fire + #armorpiercing + #mrnegates + #melee50
+#set spec 134221920
+#raw "#dmg 15"
+#set dmg 15
+#raw "#explspr 10011"
+#end
+
+
+---- air
+
+#newweapon "Phantasmal Lightning Bolt"
+#setstr name "Phantasmal Lightning Bolt"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 4"
+#set att 4
+#raw "#sound 27"
+#set aoe 0
+#raw "#aoe 0"
+-- 2 ** 27 + 2 ** 11 + 2**7 + 2 ** 12 + 2 ** 43 + 2 ** 23
+-- #bonus + #shock + #armornegating + #nostr + #melee50 + #uwok
+#set spec 8796235634816
+#raw "#dmg 12"
+#set dmg 12
+#raw "#skip2"
+#raw "#explspr 10219"
+#end
+
+#newweapon "Phantasmal False Fetters"
+#setstr name "Phantasmal False Fetters"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 0"
+#set att 0
+#set effect 11
+#raw "#dt_aff"
+#set aoe 2
+#raw "#aoe 2"
+-- 2 ** 27 + 2**7 + 2 ** 24 + 2 ** 43 + 2 ** 23
+-- #bonus + + #armornegating + #mrnegateseasily + #melee50 + #uwok
+#set spec 8796252405888
+#raw "#dmg 131072"
+#set dmg 131072
+#raw "#skip"
+#raw "#explspr 10045"
+#end
+
+#newweapon "Phantasmal Orb Lightning"
+#setstr name "Phantasmal Orb Lightning"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 0"
+#set att 0
+#raw "#dt_bouncekill"
+#set effect 134
+#raw "#sound 114"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 11 + 2**7 + 2 ** 12 + 2 ** 23
+-- #bonus + #shock + #armornegating + #nostr + #uwok
+#set spec 142612608
+#raw "#dmg 5"
+#set dmg 5
+#raw "#flyspr 10307"
+#end
+
+---- water
+
+#newweapon "Phantasmal Cold Bolt"
+#setstr name "Phantasmal Cold Bolt"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 2"
+#set att 2
+#raw "#sound 39"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 9 + 2**6 + 2 ** 12 + 2 ** 43
+-- #bonus + #cold + #armorpiercing + #mrnegates + #melee50
+#set spec 8796227244608
+#raw "#dmg 16"
+#set dmg 16
+#raw "#skip2"
+#raw "#explspr 10132"
+#raw "#flyspr 10068"
+#end
+
+
+#newweapon "Phantasmal Numbness"
+#setstr name "Phantasmal Numbness"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 2"
+#set att 2
+#set effect 11
+#raw "#dt_aff"
+#raw "#sound 39"
+#set aoe 3
+#raw "#aoe 3"
+-- 2 ** 27 + 2 ** 9 + 2**7 + 2 ** 12 + 2 ** 43 + 2 ** 23
+-- #bonus + #cold + #armornegating + #mrnegates + #melee50 +  #uwok
+#set spec 8796235633280
+#raw "#dmg 268435456"
+#set dmg 268435456
+#raw "#skip"
+#raw "#explspr 10132"
+#end
+
+#newweapon "Phantasmal Falling Frost"
+#setstr name "Phantasmal Falling Frost"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 1"
+#set att 1
+#raw "#sound 39"
+#set aoe 3
+#raw "#aoe 3"
+-- 2 ** 27 + 2 ** 9 + 2**6 + 2 ** 12
+-- #bonus + #cold + #armorpiercing + #mrnegates
+#set spec 134222400
+#raw "#dmg 15"
+#set dmg 15
+#raw "#explspr 10145"
+#end
+
+---- earth
+
+#newweapon "Phantasmal Boulder"
+#setstr name "Phantasmal Boulder"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 2"
+#set att 2
+#raw "#sound 45"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 12 + 2 ** 43 + 2 **39
+-- #bonus + #mrnegates + #melee50 + #blunt
+#set spec 9345983057920
+#raw "#dmg 20"
+#set dmg 20
+#raw "#skip2"
+#raw "#explspr 10312"
+#raw "#flyspr 101"
+#end
+
+#newweapon "Phantasmal Earth Meld"
+#setstr name "Phantasmal Earth Meld"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 0"
+#set att 0
+#set effect 11
+#raw "#dt_aff"
+#raw "#sound 45"
+#set aoe 2
+#raw "#aoe 2"
+-- 2 ** 27 + 2**7 + 2 ** 12 + 2 ** 43 + 2 ** 23 + 2 ** 46
+-- #bonus + #armornegating + #mrnegates + #melee50 +  #uwok + #flyingimmune
+#set spec 79164979810432
+#raw "#dmg 16384"
+#set dmg 16384
+#raw "#skip"
+#raw "#explspr 10189"
+#end
+
+#newweapon "Phantasmal Blade Wind"
+#setstr name "Phantasmal Blade Burst"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 0"
+#set att 0
+#raw "#nratt 14"
+#set nratt 14
+#raw "#sound 45"
+#set aoe 0
+#raw "#aoe 0"
+-- 2 ** 27 + + 2 ** 12 + 2 ** 40
+-- #bonus + #mrnegates + #slash
+#set spec 1099645849600
+#raw "#dmg 14"
+#set dmg 14
+#raw "#flyspr 304 4"
+#end
+
+----- astral
+
+#newweapon "Phantasmal Mind Burn"
+#setstr name "Phantasmal Mental Blast"
+#set range 100
+#raw "#range 100"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 100"
+#set att 100
+#raw "#sound 41"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 43 + 2 ** 7 + 2**17 + 2**24 + 2**23
+-- #bonus + #melee50 + #AN     + #mind + easymr + uwok
+#set spec 8796252536960
+#raw "#dmg 12"
+#set dmg 12
+#raw "#skip2"
+#raw "#explspr 10204"
+#end
+
+
+#newweapon "Phantasmal Paralyze"
+#setstr name "Phantasmal Paralysis"
+#set range 100
+#raw "#range 100"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 100"
+#set att 100
+#raw "#sound 41"
+#set aoe 1
+#raw "#aoe 1"
+#raw "#dt_paralyze"
+#set effect 66
+-- 2 ** 27 + 2 ** 43 + 2 ** 7 + 2**17 + 2**24 + 2**23
+-- #bonus + #melee50 + #AN     + #mind + easymr + uwok
+#set spec 8796252536960
+#raw "#dmg 40"
+#set dmg 40
+#raw "#skip"
+#raw "#explspr 10205"
+#end
+
+#newweapon "Phantasmal Enslave"
+#setstr name "Phantasmal Enslavement"
+#baseweapon 189
+#set range 100
+#raw "#range 100"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 100"
+#set att 100
+#raw "#sound 41"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 7 + 2**17 + 2**24 + 2**23
+-- #bonus + + #AN     + #mind + easymr + uwok
+#set spec 159514752
+#raw "#explspr 10208"
+#end
+
+
+---- death
+
+#newweapon "Phantasmal Shadow Bolt"
+#setstr name "Phantasmal Shadow Bolt"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 3"
+#set att 3
+#raw "#sound 107"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 43 + 2 ** 7 + 2**19 + 2**24 + 2**23
+-- #bonus + #melee50 + #AN   + not undead + easymr + uwok
+#set spec 8796252930176
+#raw "#dmg 12"
+#set dmg 12
+#raw "#skip2"
+#raw "#explspr 10080"
+#raw "#flyspr 10149"
+#end
+
+#newweapon "Phantasmal Decay"
+#setstr name "Phantasmal Decay"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 100"
+#set att 100
+#set effect 11
+#raw "#dt_aff"
+#raw "#sound 23"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2**7 + 2 ** 24 + 2 ** 43 + 2**23
+-- #bonus + #armornegating + easymr + #melee50 + uwok
+#set spec 8796252405888
+#raw "#dmg 256"
+#set dmg 256
+#raw "#skip"
+#raw "#explspr 10197"
+#end
+
+#newweapon "Phantasmal Bolts of Unlife"
+#setstr name "Phantasmal Bolts of Unlife"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 0"
+#set att 0
+#raw "#nratt 8"
+#set nratt 8
+#raw "#dt_raise"
+#set effect 74
+#raw "#sound 23"
+#set aoe 0
+#raw "#aoe 0"
+-- 2 ** 27 + + 2 ** 12 + 2 ** 7 + 2**24 + 2 ** 19 +     2**17 + 2**23
+-- #bonus + #mrnegates + AN +    easymr + not undead + notmindless + uwok
+#set spec 160043136
+#raw "#dmg 14"
+#set dmg 14
+#raw "#flyspr 10149"
+#raw "#explspr 10076"
+#end
+
+
+---- nature
+
+#newweapon "Phantasmal Poison Bolt"
+#setstr name "Phantasmal Poison Bolt"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 3"
+#set att 3
+#raw "#sound 83"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2 ** 43 + 2 ** 7 + 2**12 + 2 ** 13
+-- #bonus + #melee50 + #AN   +  mrn   + poison
+#set spec 8796227252352
+#raw "#dmg 12"
+#set dmg 12
+#raw "#skip2"
+#raw "#explspr 10139"
+#raw "#flyspr 10079"
+#end
+
+#newweapon "Phantasmal Entangle"
+#setstr name "Phantasmal Entangle"
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 3"
+#set att 3
+#set effect 11
+#raw "#dt_aff"
+#raw "#sound 83"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2**7 + 2 ** 12 + 2 ** 43 + 2**23
+-- #bonus + #armornegating + mr + #melee50 +uwok
+#set spec 8796235632768
+#raw "#dmg 64"
+#set dmg 64
+#raw "#skip"
+#raw "#explspr 10189"
+#end
+
+#newweapon "Phantasmal Poison Cloud"
+#setstr name "Phantasmal Poison Cloud"
+#baseweapon 342
+#set range 35
+#raw "#range 35"
+#raw "#ammo 20"
+#set ammo 20
+#raw "#att 5"
+#set att 5
+#raw "#sound 83"
+#set aoe 1
+#raw "#aoe 1"
+-- 2 ** 27 + 2**7 + 2 ** 24 + 2 ** 13 + 2**23
+-- #bonus + #armornegating + easy mr + poison + uwok
+#set spec 159391872
+#raw "#dmg 1"
+#set dmg 1
+#raw "#explspr 10297"
+#end
+

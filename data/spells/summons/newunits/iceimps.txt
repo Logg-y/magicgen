@@ -1,0 +1,81 @@
+#newunit "Ice Imp"
+#baseunit 303
+#clearweapons 1
+#addweapon 124
+#set fireres -5
+#set coldres 15
+#raw "#fireres -5"
+#raw "#coldres 15"
+#raw "#snow"
+#setstr descr "Ice Imps are lowly devils summoned from Kokytos with blood sacrifice. Born in infernal cold, they are chill resistant but do not radiate the freezing cold of more powerful devils."
+#setstr name "Ice Imp"
+#spr1 "MagicGen/iceimp.tga"
+#spr2 "MagicGen/iceimp_2.tga"
+#end
+
+-- Design intent: "I have blood but I want water"
+-- or "I want things that can blood hunt for me"
+-- frost fiend mages should cover bigger paths that are not economical blood hunters
+-- Small chance of reaching higher paths (big guy can get w3 or b3) but too rare to fish for
+
+#newunit "Ice Imp Lesser Mage"
+#baseunit 303
+#clearweapons 1
+#addweapon 124
+#set fireres -5
+#set coldres 15
+#raw "#fireres -5"
+#raw "#coldres 15"
+#raw "#snow"
+#raw "#mor 14"
+#set mor 13
+#setstr descr "Ice Imps are lowly devils summoned from Kokytos with blood sacrifice. Born in infernal cold, they are chill resistant but do not radiate the freezing cold of more powerful devils. A rare few are able to dabble in the magical arts; fewer still manage to reach any level of mastery."
+#setstr name "Ice Imp Dabbler"
+#spr1 "MagicGen/iceimp_lessermage.tga"
+#spr2 "MagicGen/iceimp_lessermage_2.tga"
+-- w1b1, 50% wbd
+
+#set mask1 20532
+#set rand1 50
+#set nbr1 1
+#set link1 1
+#set W 1
+#set B 1
+#raw "#magicskill 2 1"
+#raw "#magicskill 7 1"
+#raw "#custommagic 20532 50"
+#end
+
+#newunit "Ice Imp Greater Mage"
+#baseunit 303
+#clearweapons 1
+#addweapon 124
+#set fireres -5
+#set coldres 15
+#raw "#fireres -5"
+#raw "#coldres 15"
+#raw "#snow"
+#raw "#mor 14"
+#set mor 14
+#setstr descr "Ice Imps are lowly devils summoned from Kokytos with blood sacrifice. Born in infernal cold, they are chill resistant but do not radiate the freezing cold of more powerful devils. A rare few are able to dabble in the magical arts; fewer still manage to reach any level of mastery."
+#setstr name "Ice Imp Sorcerer"
+#spr1 "MagicGen/iceimp_greatermage.tga"
+#spr2 "MagicGen/iceimp_greatermage_2.tga"
+
+
+-- w2b2, 50% d, 50% d
+#set mask1 4608
+#set rand1 100
+#set nbr1 1
+#set link1 1
+#set nbr2 1
+#set link2 1
+#set mask2 20532
+#set rand2 50
+#set W 2
+#set B 2
+#raw "#magicskill 2 2"
+#raw "#magicskill 7 2"
+#raw "#custommagic 4906 50"
+#raw "#custommagic 4906 50"
+#end

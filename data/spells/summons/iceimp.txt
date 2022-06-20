@@ -1,0 +1,114 @@
+#neweffect "Summon iceimp"
+#effect 1
+#damage 303
+#spec 0
+#power 1
+#maxpower 14
+#precision -2
+#nreff 2003
+#pathlevel 1
+#fatiguecost 100
+#sound 32
+#schools 128
+
+#paths 128
+#secondarypaths w
+
+#newunit "Ice Imp"
+
+#skipchance 88
+
+#name 128 "Summon NAMEPREFIX Ice Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several ice imps from Kokytos to aid him in battle."
+
+#spelltype 528
+
+#scalerate 1.1
+--#scalefatiguemult 15
+#end
+
+#neweffect "iceimp ritual"
+#effect 10001
+#damage 303
+#spec 0
+#power 2
+#maxpower 14
+#nreff 1002
+#pathlevel 2
+#fatiguecost 400
+#schools 1
+
+#newunit "Ice Imp"
+
+#paths 128
+#secondarypaths w
+
+#name 128 "Bind NAMEPREFIX Ice Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons several ice imps from Kokytos to aid him in battle."
+
+#spelltype 20
+
+#skipchance 82
+
+#scalefatigueexponent -1.6
+#scalefatiguemult 80
+
+#scalerate 2
+#end
+
+#neweffect "iceimp Remote Assassination"
+#effect 10050
+#provrange 4
+#damage 303
+#spec 0
+#power 4
+#maxpower 4
+#nreff 1
+#pathlevel 3
+#fatiguecost 800
+#schools 1
+#skipchance 99
+#nogeodst 2052
+
+#newunit "Ice Imp"
+
+#paths 128
+#secondarypaths w
+
+#name 128 "NAMEPREFIX Ice Imp Attack"
+#descr 128 "$BLOOD_INTRO$, the caster binds an ice imp to ambush an enemy commander."
+
+#spelltype 4
+
+#end
+
+#neweffect "remote iceimps"
+#effect 10038
+#provrange 4
+#damage 303
+#spec 0
+#power 3
+#maxpower 14
+#nreff 2004
+#pathlevel 3
+#fatiguecost 2900
+#schools 1
+#nogeodst 2052
+
+#skipchance 99.6
+#newunit "Ice Imp"
+
+
+#paths 128
+#secondarypaths w
+
+#scalefatigueexponent 0.5
+#scalefatiguemult 70
+
+#name 128 "Send NAMEPREFIX Ice Imps"
+#descr 128 "$BLOOD_INTRO$, the caster summons a group of ice imps to attack a distant province."
+
+#spelltype 20
+
+#scalerate 2
+#end

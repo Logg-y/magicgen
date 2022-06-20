@@ -128,6 +128,16 @@ def readMagicSiteFile(fp):
                     curreff.effectnumberforunits.append(int(m.groups()[0]))
                     continue
 
+                if line.startswith("#newunit"):
+                    m = re.match('#newunit\\W+"(.*?)"\\W+?"(.*)"', line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #newunit")
+                    command = m.groups()[0]
+                    newunitname = m.groups()[1]
+                    curreff.newuniteffects.append((command, newunitname))
+                    continue
+
+
                 if line.startswith("#end"):
                     out[curreff.name] = curreff
                     curreff = None

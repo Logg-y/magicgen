@@ -1,0 +1,75 @@
+
+#neweffect "Call Mandragora Mage"
+
+#effect 21
+#damage 3350
+#spec 8388608
+#power 6
+#maxpower 14
+#precision -100
+#nreff 1
+#pathlevel 4
+#chassisvalue 35
+#range 6
+#fatiguecost 100
+#explspr 10232
+#sound 31
+#schools conj
+
+#newunit "Mandragora Mage"
+
+#skipchance 95.0
+
+--ASN
+#paths nd
+#secondarypaths nd
+#secondarypathchance 90
+
+#name nd "Conjure NAMEPREFIX Possessed Mandragora"
+#descr nd "The caster summons ARTICLE Possessed Mandragora to join him in battle. The Possessed Mandragora will leave once the battle is over."
+#details "Possessed Mandragora are N3D3 mages with the following random paths:\n50% FW\n50% FW"
+
+
+#scalefatiguemult 15
+#spelltype 528
+
+#scalerate 0.51
+#scalefatigueexponent -1.4
+#pathperresearch 0.4
+#end
+
+#neweffect "Summon Mandragora Mage"
+
+#effect 10021
+#damage 3350
+#spec 8388608
+#power 7
+#maxpower 7
+#nreff 1
+#pathlevel 5
+#fatiguecost 3500
+#chassisvalue 300
+#scalecost 1.8
+#scalefatigueexponent 0.7
+#scalefatiguemult 300
+#schools conj
+
+#skipchance 70
+
+#newunit "Mandragora Mage"
+
+#paths nd
+#secondarypaths nd
+#secondarypathchance 90
+
+
+#name nd "Summon NAMEPREFIX Possessed Mandragora"
+#descr nd "The caster summons a Possessed Mandragora to serve him. The Possessed Mandragora has great skill in Death and Nature magic, and occasionally some skill in Water or Fire magic as well."
+#details "Possessed Mandragora are N3D3 mages with the following random paths:\n50% FW\n50% FW"
+
+#spelltype 20
+
+#scalerate 1
+#end
+
+
