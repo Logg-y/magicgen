@@ -25,7 +25,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v3.1.7"
+ver = "v3.1.8"
 
 
 def output_polling_thread(timeout=0.1):
