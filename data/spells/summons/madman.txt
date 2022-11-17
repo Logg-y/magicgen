@@ -35,7 +35,7 @@
 #spec 0
 #power -1
 #maxpower 3
-#nreff 5007
+#nreff 3010
 #pathlevel 1
 #fatiguecost 120
 #schools 1

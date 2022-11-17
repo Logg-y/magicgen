@@ -7,7 +7,7 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 2.0
 -- #scalecost 1.6
 
 #aoe 1
@@ -56,7 +56,7 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1.5
 #scalefatiguemult 0
 -- #scalecost 1.6
 
@@ -96,5 +96,7 @@
 #scalefatigueexponent 0
 #pathperresearch 0.33
 #end
+
+
 
 

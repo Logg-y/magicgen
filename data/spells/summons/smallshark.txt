@@ -35,7 +35,7 @@
 #damage 815
 #spec 41959424
 #power 1
-#nreff 6005
+#nreff 3010
 #pathlevel 1
 #fatiguecost 100
 #schools 1

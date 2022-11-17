@@ -2,6 +2,16 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
+v3.1.8
+
+Powerful gem-costing buff spells no longer generate at lower levels. The intent of this was to allow early ways to turn gems into power for instance to deal with sacreds that troops don't work against. I didn't consider that the force multiplication effect of buffs would only get worse once used on the problematic sacreds. This means that they will now all be offensive in nature, which means that counterplay should always exist in the form of target baiting.
+Slightly reduced the scaling rate of astral shield.
+Fixed a few cases of placeholder descriptions being used.
+Slightly reduced the scaling rate of armour destruction spells.
+All spells that create sites should now explicitly say that they fail if used in a province containing 8 sites.
+Reduced the scaling rate for various "trash" summons.
+Some sizes of ritual summon illearths no longer say they leave after battle.
+
 v3.1.7
 
 SUMMONS

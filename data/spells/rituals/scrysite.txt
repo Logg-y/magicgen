@@ -34,7 +34,7 @@
 #descr 4 "This spell temporarily enchants a pool with magic, allowing it to be used to view distant lands."
 #descr 16 "This spell temporarily enchants a crystal with magic, allowing it to be used to view distant lands."
 #descr 64 "This spell temporarily creates a shrine upon which birds will gather every month. The birds can be directed to scout distant lands and report back to the mage."
-#details "Lasts 1 month plus 1 month per gem spent. Generates a scrying site which may be used to scry lands up to SCALEAMT provinces away."
+#details "Lasts 1 month plus 1 month per gem spent. Generates a scrying site which may be used to scry lands up to SCALEAMT provinces away. Fails if there are already 8 magic sites in the province."
 
 #spelltype 4
 #end
@@ -95,7 +95,7 @@
 #descr 4 "This spell permenantly enchants a pool with magic, allowing it to be used to view distant lands."
 #descr 16 "This spell permenantly enchants a crystal with magic, allowing it to be used to view distant lands."
 #descr 64 "This spell permenantly creates a shrine upon which birds will gather every month. The birds can be directed to scout distant lands and report back to the mage."
-#details "Generates a scrying site which may be used to scry lands up to SCALEAMT provinces away."
+#details "Generates a scrying site which may be used to scry lands up to SCALEAMT provinces away.  Fails if there are already 8 magic sites in the province."
 
 #spelltype 4
 #end

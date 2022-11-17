@@ -38,7 +38,7 @@
 
 #descr 8 "The melee weapons of SUBJECT undergo tremendous magical sharpening, making them unnaturally sharp. This enables them to bypass any armour as if it did not even exist." 
 #descr 16 "The melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
-#descr 16 "$BLOOD_INTRO$, the caster causes the melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
+#descr b "$BLOOD_INTRO$, the caster causes the melee weapons of SUBJECT become wreathed in astral fire. This enables them to bypass any armour as if it did not even exist." 
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of impossible sharpness"

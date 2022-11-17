@@ -1,7 +1,14 @@
 #newmodifier "Strong Spell at Lower Research w/ gemcost"
 
--- both evo and buff
-#spelltype 0
+-- This used to be both evo and buff...
+-- Half the intention of this is to give people tools to fight off certain dominant blesses
+-- at the cost of having to throw gems at the problem
+
+-- ... unfortunately people employing typical rainbow blesses would get buffs that would turn their sacreds up to stupidity
+-- limiting it to offensive effects also means that the sacred user can potentially gembait/evobait their way out of some of these
+
+-- so this is evo only now
+#spelltype 2
 
 #skipchance 40
 -- not battlesummoned commander

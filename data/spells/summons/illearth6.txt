@@ -46,7 +46,7 @@
 
 #details "The elementals are size 6."
 #name 128 "Summon NAMEPREFIX Massive %Illearth%"
-#descr 128 "$BLOOD_INTRO$, the caster summons forth ARTICLE massive illearth %elemental%. They will fight for him until the battle ends."
+#descr 128 "$BLOOD_INTRO$, the caster summons forth ARTICLE massive illearth %elemental%."
 
 #spelltype 20
 

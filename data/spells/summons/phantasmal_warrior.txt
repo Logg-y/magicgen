@@ -36,7 +36,7 @@
 #spec 8388608
 #power 1
 #maxpower 4
-#nreff 4006
+#nreff 3008
 #pathlevel 2
 #fatiguecost 300
 #schools alt

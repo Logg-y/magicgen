@@ -36,7 +36,7 @@
 #spec 0
 #power -1
 #maxpower 2
-#nreff 5007
+#nreff 3010
 #pathlevel 1
 #fatiguecost 220
 #schools thaum
