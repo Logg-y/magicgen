@@ -24,6 +24,9 @@
 #spelltype 528
 
 #scalerate 1
+
+-- Drake frost doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "icedrake ritual"
@@ -51,6 +54,8 @@
 #scalefatiguemult 60
 
 #scalerate 2
+-- Drake frost doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "icedrake Remote Assassination"

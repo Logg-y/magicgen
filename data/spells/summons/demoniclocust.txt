@@ -53,6 +53,9 @@
 #scalefatiguemult 640
 
 #scalerate 2
+
+-- Heretic.
+#nocostreduction 1
 #end
 
 #neweffect "demonlocust Remote Assassination"

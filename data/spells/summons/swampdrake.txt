@@ -53,6 +53,8 @@
 
 #scalerate 3.0
 #pathperresearch 0.4
+-- Drake gas doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "swampdrake Remote Assassination"

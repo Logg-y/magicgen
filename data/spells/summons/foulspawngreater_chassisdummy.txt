@@ -14,6 +14,9 @@
 #secondarypaths nb
 
 #spelltype 20
+
+-- Petrifyig gas doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "chimera chassis dummy"
@@ -82,6 +85,9 @@
 #secondarypaths nb
 
 #spelltype 20
+
+-- Death gaze doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "dracolion chassis dummy"

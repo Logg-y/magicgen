@@ -27,6 +27,9 @@
 -- #scalecost 1.0
 #schools 1
 #skipchance 60
+
+-- Death gaze doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "catoblepas ritual"
@@ -54,6 +57,9 @@
 #scalefatiguemult 65
 
 #scalerate 2
+
+-- Death gaze doesn't really get changed if you become small or anything like that
+#nocostreduction 1
 #end
 
 #neweffect "catoblepas Remote Assassination"
