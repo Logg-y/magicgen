@@ -16,7 +16,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 40
+#skipchance 90
 
 #name 2 "$conjure$ NAMEPREFIX Phantasmal %Archer%"
 #descr 2 "Summons ARTICLE phantasmal %archer% to fight for the caster. These archers are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
@@ -34,8 +34,8 @@
 #effect 10001
 #damage 3233
 #spec 8388608
-#power 4
-#maxpower 7
+#power 2
+#maxpower 5
 #nreff 4002
 #pathlevel 2
 #fatiguecost 300
@@ -49,7 +49,7 @@
 
 #spelltype 20
 
-#skipchance 20
+#skipchance 90
 
 #scalefatigueexponent -1.3
 #scalefatiguemult 8
@@ -70,7 +70,7 @@
 #pathlevel 3
 #fatiguecost 300
 #schools alt
-#skipchance 60
+#skipchance 97
 
 #paths 2
 #secondarypaths 2
@@ -94,7 +94,7 @@
 #fatiguecost 600
 #schools alt
 
-#skipchance 80
+#skipchance 99
 
 #paths 2
 #secondarypaths 2

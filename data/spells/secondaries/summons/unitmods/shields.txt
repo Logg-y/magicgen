@@ -3,6 +3,7 @@
 #req ethereal == -1
 #set poisonarmor 5
 #nameprefix "Barbed"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is covered in poisonous barbs. Striking it with a short weapon may be unadvisable."
 #end
 
@@ -12,6 +13,7 @@
 #req ethereal == -1
 #set poisonskin 20
 #nameprefix "Foulskinned"
+#reqfightsinmelee 1
 #descr "This particular CREATURE continuously produces a toxin on its skin. Coming into direct contact with it may be unadvisable."
 #end
 
@@ -22,6 +24,7 @@
 #fireres 6
 #set speciallook 1
 #nameprefix "Flamewreathed"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is constantly surrounded by magical flames. Trying to strike it will result in being burned."
 #end
 
@@ -31,6 +34,7 @@
 #set banefireshield 8
 #set speciallook 1
 #nameprefix "Darkflame"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is constantly surrounded by dark magical flames. Trying to strike it will result in being burned and decayed. Due to the dark nature of the flames, fire resistance offers no protection."
 #end
 
@@ -38,12 +42,14 @@
 #req acidshield == -1
 #set acidshield 8
 #nameprefix "Acid"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is imbued with magical acid. Trying to strike it will release a harmful splash of acid."
 #end
 
 #newunitmod "Summon Fateweaving"
 #set curseluckshield 1
 #nameprefix "Fateweaving"
+#reqfightsinmelee 1
 #descr "This particular CREATURE can alter the fates of those that try to strike it. Attackers that fail to resist suffer cursed luck for a few rounds of battle."
 #end
 
@@ -52,6 +58,7 @@
 #req overcharged == -1
 #nameprefix "Overcharged"
 #shockres 6
+#reqfightsinmelee 1
 #descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a jolt."
 #end
 
@@ -59,12 +66,14 @@
 #req eyeloss == -1
 #set eyeloss 1
 #nameprefix "Sightclaiming"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is imbued with magic and has the ability to emit blinding flashes of light. Those attacking in melee will lose an eye if they fail to resist."
 #end
 
 #newunitmod "Summon Horrormark"
 #set horrormark 1
 #nameprefix "Horrormarking"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has the ability to attract the attention of horrors. Those attacking in melee will gain a horror mark if they fail to resist."
 #end
 
@@ -72,6 +81,7 @@
 #req entangle == -1
 #set entangle 1
 #nameprefix "Vineweaving"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has the ability to rapidly call vines from the earth. Those attacking in melee will become entangled if they fail to resist."
 #end
 
@@ -93,6 +103,7 @@
 #req slimer == -1
 #set slimer 1
 #nameprefix "Slimy"
+#reqfightsinmelee 1
 #descr "This particular CREATURE may cover anyone attacking it in melee in a sticky slime."
 #end
 
@@ -103,6 +114,7 @@
 #req ethereal == -1
 #set poisonarmor 15
 #nameprefix "Barbed"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is covered in extremely poisonous barbs. Striking it with a short weapon may be unadvisable."
 #end
 
@@ -112,6 +124,7 @@
 #set fireshield 14
 #fireres 6
 #set speciallook 1
+#reqfightsinmelee 1
 #nameprefix "Flamewreathed"
 #descr "This particular CREATURE is constantly surrounded by magical flames. Trying to strike it will result in being severely burned."
 #end
@@ -122,6 +135,7 @@
 #set banefireshield 14
 #set speciallook 1
 #nameprefix "Darkflame"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is constantly surrounded by dark magical flames. Trying to strike it will result in being badly burned and decayed. Due to the dark nature of the flames, fire resistance offers no protection."
 #end
 
@@ -129,6 +143,7 @@
 #req acidshield == -1
 #set acidshield 14
 #nameprefix "Acid"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is imbued with magical acid. Trying to strike it will release a harmful splash of acid."
 #end
 
@@ -137,5 +152,6 @@
 #req overcharged == -1
 #nameprefix "Overcharged"
 #shockres 6
+#reqfightsinmelee 1
 #descr "This particular CREATURE is magically charged with electricity. Anyone striking it in melee will recieve a severe jolt."
 #end

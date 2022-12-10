@@ -50,6 +50,16 @@ class SpellModifier(object):
             if not r.test(eff):
                 return False
 
+        if eff.noresearchreduction and self.power < 0:
+            return False
+
+        if eff.nocostreduction:
+            if self.fatiguecost < 0:
+                return False
+            for attrib, mult in self.multcommands:
+                if attrib == "fatiguecost" and mult < 1.0:
+                    return False
+
         if self.nobattlefield:
             if 660 <= eff.aoe <= 670:
                 return False
@@ -108,7 +118,7 @@ class SpellModifier(object):
         actualpowerlvl = (researchlevel - eff.power) + self.power
 
         if not eff.canGenerateAtPowerlvl(actualpowerlvl, self, None):
-            print(f"Can't generate due to potential for identical spells to one at rl {researchlevel - 1}")
+            print(f"Can't generate {eff.name} + {self.name} at power lvl {actualpowerlvl}")
             return False
 
         if self.maxfinalfatiguecost is not None or self.minfinalfatiguecost is not None:

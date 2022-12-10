@@ -142,7 +142,7 @@
 #neweffect "3AN shock Secondary mrn"
 #effect 2
 #damage 3
-#spec 22592
+#spec 8407168+4096
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -176,7 +176,7 @@
 #neweffect "3AN shock Secondary mrnh"
 #effect 2
 #damage 3
-#spec 17592186062976
+#spec 8407168+17592186044416
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -210,7 +210,7 @@
 #neweffect "3AN shock Secondary mrn damaging"
 #effect 2
 #damage 3
-#spec 22592
+#spec 8407168+4096
 #schools -1
 #paths -1
 -- evo, scale aoe
@@ -244,7 +244,7 @@
 #neweffect "3AN shock Secondary mrnh damaging"
 #effect 2
 #damage 3
-#spec 17592186062976
+#spec 8407168+17592186044416
 #schools -1
 #paths -1
 -- evo, scale aoe

@@ -23,8 +23,8 @@
 #scalefatigueexponent 0
 
 #name 2 "NAMEPREFIX Sudden Gale"
-#descr 2 "The caster unleashed violent winds upon the battlefield. These winds are strong enough to carry and blow small creatures away from the battlefield, where they will become lost and seek familiar surroundings. Larger and stronger creatures are better able to resist the wind, and more agile creatures may be able to save themselves by grabbing onto nearby objects."
-#details "All creatures on the battlefield must pass either a size/strength check or a defence check or be forced into the retreated state.\nThe defence check is an openended 3d6 vs defence skill (without weapon modifiers).\nThe strength check is a closed d20 + 14 vs the victim's strength.\nCreatures have a 33% chance to negate this effect for each size point larger than size 2."
+#descr 2 "The caster unleashes violent winds upon the battlefield. These winds are strong enough to carry and blow small creatures away from the battlefield, where they will become lost and seek familiar surroundings. Larger and stronger creatures are better able to resist the wind, and more agile creatures may be able to save themselves by grabbing onto nearby objects."
+#details "All creatures on the battlefield must pass either a size/strength check or a defence check or be removed from the battlefield and forced into the retreated state.\nThe defence check is an openended 3d6 vs defence skill (without weapon modifiers).\nThe strength check is a closed d20 + 14 vs the victim's strength.\nCreatures have a 33% chance to negate this effect for each size point larger than size 2."
 
 #spelltype 42
 #scalerate 1

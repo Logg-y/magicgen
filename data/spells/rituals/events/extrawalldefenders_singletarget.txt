@@ -1,6 +1,6 @@
-#neweventset "Extra Wall Defenders Numerous"
+#neweventset "Extra Wall Defenders Single"
 
-#magicsite "Extra Wall Defenders Numerous"
+#magicsite "Extra Wall Defenders Single"
 
 #end
 

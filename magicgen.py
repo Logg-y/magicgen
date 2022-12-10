@@ -28,7 +28,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.8"
+ver = "3.1.9"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -97,6 +97,7 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
     # First do everything with skipchances, if that fails to make all the spells
     # do a second run ignoring them
     allowskipchance = True
+    numSuccessfullyGenerated = 0
     for x in range(0, spellsatthislevel):
         attempt = 0
         while 1:
@@ -114,24 +115,26 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                     effectNameList = list(effectpool.keys())
                     random.shuffle(effectNameList)
                     continue
-                print(
-                    f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully")
-                _writetoconsole(
-                    f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully\n")
+                allowskipchance = True
                 break
             sp = effectpool[effectNameList.pop(0)]
             del effectpool[sp.name]
             # Prevent duplicates in the second round of ignoring skipchances
-            if research in generatedeffectsatlevels and sp.name in generatedeffectsatlevels[research]:
+            # Before this, different primary path versions of the same effect will be allowed!
+            if not allowskipchance and research in generatedeffectsatlevels and sp in generatedeffectsatlevels[research]:
                 continue
+
             print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
                   f"skipchance allowed = {allowskipchance}, attempt = {attempt}")
             # Encourage the less popular paths to get more spells by skipping the more popular ones
             if school != 64:
-                allowedpaths = utils.breakdownflag(sp.paths)
+                allowedpaths = utils.bitmaskToExponents(sp.paths)
                 allowedpaths = [2 ** x for x in allowedpaths]
+                # This is dealing with non-blood only
+                if 128 in allowedpaths:
+                    allowedpaths.remove(128)
                 random.shuffle(allowedpaths)
-                forcedpath = None
+                forcepath = None
                 lowest = 0
                 if len(genericSpellCountsByPath) > 0:
                     mincount = min(genericSpellCountsByPath.values())
@@ -149,7 +152,7 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                         for path in allowedpaths:
                             if lowest is None or genericSpellCountsByPath.get(path, 0) < lowest:
                                 print(f"Least popular path is {path}")
-                                forcedpath = path
+                                forcepath = path
                                 lowest = genericSpellCountsByPath.get(path, 0)
                     if allowskipchance:
                         if mincount > 10 and (lowest - mincount) >= 5:
@@ -169,7 +172,7 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                 elif sp.schools & school:
                     print(f"Attempt to generate non-blood spell")
                     spell = sp.rollSpell(research, forceschool=school, allowblood=False,
-                                         forcedpath=forcedpath,
+                                         forcepath=forcepath,
                                          allowskipchance=allowskipchance,
                                          existingspells=generatedeffectsatlevels, **options)
 
@@ -177,14 +180,21 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                 spellsGenerated.append(spell)
                 if research not in generatedeffectsatlevels:
                     generatedeffectsatlevels[research] = []
-                generatedeffectsatlevels[research].append(sp.name)
+                generatedeffectsatlevels[research].append(sp)
                 genericSpellCountsByPath[spell.path1] = genericSpellCountsByPath.get(spell.path1, 0) + 1
                 print(
                     f"Successfully generated spell {spell.name} from effect {sp.name} at research level {research}")
+                numSuccessfullyGenerated += 1
                 break
             print(f"Failed to generate")
-        if len(effectpool) == 0:
-            break
+        #if len(effectpool) == 0:
+        #    break
+    if numSuccessfullyGenerated < spellsatthislevel:
+        print(
+            f"WARNING: no valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully")
+        _writetoconsole(
+            f"No more valid effects at research {research} for school {schoolname}, generated {x}/{spellsatthislevel} successfully\n")
+
     return spellsGenerated
 
 def generateHolySpells(**options):
@@ -440,7 +450,7 @@ def rollspells(**options):
 
             # Keep track of which effects have been done at which research levels
             # this is because we don't want to duplicate any with national spells
-            generatedeffectsatlevels: Dict[int, List[str]] = {}
+            generatedeffectsatlevels: Dict[int, List[SpellEffect]] = {}
 
             researchmod = options.get("researchmodifier", 0)
 
@@ -474,8 +484,9 @@ def rollspells(**options):
                                                                         generatedeffectsatlevels,
                                                                         genericSpellCountsByPath, **options)
 
-            spellsToWriteToFile += generateAlwaysPresentSpells(s, **options)
-            spellsToWriteToFile += generateHolySpells(**options)
+            if bool(options.get("clearvanillagenericspells", 1)):
+                spellsToWriteToFile += generateAlwaysPresentSpells(s, **options)
+                spellsToWriteToFile += generateHolySpells(**options)
 
             # Generate some national spells
             _writetoconsole("Reading vanilla nations\n")
@@ -562,7 +573,7 @@ def _roll_path_for_national_spell(nation: Nation) -> int:
                      f"{totalweights}\n  Weights: {pprint.pformat(pathweights)}\n")
 
 
-def _select_research_level(researchmod: int, generatedeffectsatlevels: Dict[int, List[str]]) -> int:
+def _select_research_level(researchmod: int, generatedeffectsatlevels: Dict[int, List[SpellEffect]]) -> int:
     researchlevelstotry: List[int] = []
     for level in range(1, 10):
         if level in generatedeffectsatlevels:
@@ -600,10 +611,10 @@ def _try_to_generate_a_national_spell(nation: Nation, spelleffect: SpellEffect,
     return None
 
 
-def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, alreadygeneratedeffectsatlevels: Dict[int, List[str]],
+def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, alreadygeneratedeffectsatlevels: Dict[int, List[SpellEffect]],
                    researchlevel: int) -> SpellEffect:
     availableeffects = list(filter(lambda x: ((primarypath & x.paths) != 0) and  # Matching path
-                                             (x.name not in alreadygeneratedeffectsatlevels[researchlevel]),
+                                             (x not in alreadygeneratedeffectsatlevels[researchlevel]),
                                    # generic with same effect not already existing in same researchlevel
                                    effectpool.values()))
     if len(availableeffects) == 0:
@@ -618,7 +629,7 @@ def _choose_effect(effectpool: Dict[str, SpellEffect], primarypath: int, already
 
 
 def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: Dict[str, SpellEffect],
-                                alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                                alreadygeneratedeffectsatlevels: Dict[int, List[SpellEffect]], generatedspells: List[Spell],
                                 targetnumberofnationalspells: int, options: Dict[str, str]):
     DebugLogger.debuglog(f"Generating spells for nation: {nation.to_text()}",
                          debugkeys.NATIONALSPELLGENERATION)
@@ -683,7 +694,7 @@ def _generate_spells_for_nation(nation: Nation, researchmod: int, spelleffects: 
 
 def generate_national_spells(targetnumberofnationalspells: int, spelleffects: Dict[str, SpellEffect],
                              researchmod: int,
-                             alreadygeneratedeffectsatlevels: Dict[int, List[str]], generatedspells: List[Spell],
+                             alreadygeneratedeffectsatlevels: Dict[int, List[SpellEffect]], generatedspells: List[Spell],
                              nationstogeneratefor: List[int], options: Dict[str, str]):
     _writetoconsole("Generating national spells...\n")
     if targetnumberofnationalspells < 1:

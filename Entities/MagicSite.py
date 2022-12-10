@@ -36,8 +36,8 @@ class MagicSite(object):
         self.usefixedunitid = -1
         self.desiredmontagsize = 0
         self.restrictunitstospellpaths = True
-        self.mincreaturepower = -1
-        self.maxcreaturepower = -1
+        self.mincreaturepower = -999
+        self.maxcreaturepower = 999
         self.secondaryeffectchance = None
         # A list of (mod command, new unit name) pairs to resolve
         self.newuniteffects = []

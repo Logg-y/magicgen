@@ -4,6 +4,7 @@
 #req animalawe == -1
 #set awe 1
 #nameprefix "Awesome"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks."
 #end
 
@@ -13,6 +14,7 @@
 #req animalawe == -1
 #set animalawe 1
 #nameprefix "Primal"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attacking animals in their tracks."
 #end
 
@@ -22,6 +24,7 @@
 #req animalawe == -1
 #set sunawe 1
 #nameprefix "Suntouched"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks. This ability is only active when the sun is visible."
 #end
 
@@ -32,6 +35,7 @@
 #req animalawe == -1
 #set awe 3
 #nameprefix "Awesome"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks."
 #end
 
@@ -41,6 +45,7 @@
 #req animalawe == -1
 #set animalawe 3
 #nameprefix "Primal"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attacking animals in their tracks."
 #end
 
@@ -50,5 +55,6 @@
 #req animalawe == -1
 #set sunawe 3
 #nameprefix "Suntouched"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by an aura of splendour which may stop attackers in their tracks. This ability is only active when the sun is visible."
 #end

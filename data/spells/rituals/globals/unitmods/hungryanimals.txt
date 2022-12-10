@@ -6,12 +6,12 @@
 #req prot < 10
 #set incunrest 1
 #set supplybonus -8
+#set patrolbonus -1
 #landok 1
 -- no more winged monkeys, they'd be too hard for most nations to send to death
 #req magicbeing <= 0
 -- please don't actually make USEFUL things (simargl)
 #req patrolbonus <= 0
-#set homesick 30
 #nameprefix "Ravenous"
 #end
 
@@ -26,6 +26,6 @@
 #uwok 1
 #req magicbeing <= 0
 #req patrolbonus <= 0
-#set homesick 30
+#set patrolbonus -1
 #nameprefix "Ravenous"
 #end

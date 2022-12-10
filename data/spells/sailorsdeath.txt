@@ -17,7 +17,7 @@
 #explspr 10125
 #sound 31
 #fatiguecost 100
-#precision 1
+#precision 100
 #range 100
 
 -- AWD
@@ -70,7 +70,7 @@
 #explspr 10125
 #sound 31
 #fatiguecost 10
-#precision 1
+#precision 100
 #range 100
 
 -- AWD

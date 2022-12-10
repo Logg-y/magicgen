@@ -27,4 +27,7 @@
 #priority 1
 #namecond range < 1000 16 "NAMEPREFIX touch of opposition"
 
+#fatigueperresearch 0
+#scalefatigueexponent 0.1
+#pathperresearch 0.2
 #end

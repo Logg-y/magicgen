@@ -43,7 +43,7 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 5
+#power 4
 #maxpower 14
 #scalerate 1
 #pathlevel 2
@@ -217,6 +217,7 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
 
 
 

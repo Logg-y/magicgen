@@ -22,7 +22,7 @@
 #name 16 "NAMEPREFIX Otherworldly Compression"
 #descr 16 "The caster draws on otherworldly forces to crush SUBJECT. Armour offers some protection from the strange forces, but this spell is quite ineffective against ethereal creatures."
 #priority 1
-#namecond range < 10 4 "NAMEPREFIX Crushing Touch"
+#namecond range < 10 16 "NAMEPREFIX Crushing Touch"
 #maxpower 6
 
 -- evo-like, scale nreff
@@ -58,7 +58,7 @@
 #name 16 "NAMEPREFIX Cosmic Crush"
 #descr 16 "The caster draws on otherworldly forces to crush SUBJECT. Armour offers some protection from the strange forces, but this spell is quite ineffective against ethereal creatures."
 #priority 1
-#namecond range < 10 4 "NAMEPREFIX Crushing Touch"
+#namecond range < 10 16 "NAMEPREFIX Crushing Touch"
 #maxpower 14
 
 -- evo-like, scale nreff

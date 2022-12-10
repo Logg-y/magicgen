@@ -5,7 +5,7 @@
 #power 4
 #maxpower 14
 #precision -2
-#nreff 2
+#nreff 1
 #pathlevel 2
 #fatiguecost 100
 #sound 31
@@ -13,7 +13,7 @@
 
 #paths 2
 #secondarypaths 2
-#scalefatiguemult 10
+#scalefatiguemult 28.0
 #skipchance 97
 
 #details "The elementals are size 4."
@@ -22,8 +22,8 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.4
+#scalerate 0.46
+#scalefatigueexponent -1.8
 #end
 
 #neweffect "aeles4 ritual"
@@ -32,7 +32,7 @@
 #spec 0
 #power 4
 #maxpower 8
-#nreff 4
+#nreff 1004
 #pathlevel 3
 #fatiguecost 900
 #schools 1
@@ -48,8 +48,8 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 10
+#scalefatigueexponent -1.2
+#scalefatiguemult 50.0
 
 #scalerate 2
 #end
@@ -108,6 +108,9 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 70
 #end
+
+
+
 
 
 

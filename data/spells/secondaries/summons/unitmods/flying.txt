@@ -3,6 +3,18 @@
 #req aquatic == -1
 #set flying 1
 #req immobile <= 0
+#reqfightsinmelee 1
+#nameprefix "Flying"
+#descr "This particular CREATURE has been imbued by magic that allows it to fly."
+#end
+
+
+#newunitmod "Summon Flying for Mages"
+#req flying == -1
+#req aquatic == -1
+#set flying 1
+#req immobile <= 0
+#reqmage 1
 #nameprefix "Flying"
 #descr "This particular CREATURE has been imbued by magic that allows it to fly."
 #end

@@ -48,6 +48,9 @@
 #req effect != 28
 #req effect != 29
 
+-- stream of life becomes much much more dangerous
+#req effect != 72
+
 #skipchance 10
 
 #req nonscalingaoe < 650

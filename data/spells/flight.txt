@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.6
+#scalerate 1.0
 -- #scalecost 0.7
 -- #scalefatigueexponent 1.8
 
@@ -24,7 +24,8 @@
 #paths 2
 #secondarypaths 2
 
-#namecond effectiveaoe < 2 2 "NAMEPREFIX Flight"
+#namecond effectiveaoe < 1 2 "NAMEPREFIX Personal Flight"
+#namecond2 1 <= effectiveaoe < 2 2 "NAMEPREFIX Flight"
 
 #namecond2 2 <= effectiveaoe < 666 2 "NAMEPREFIX Group Flight"
 
@@ -77,4 +78,5 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of flight"
 
 #end
+
 

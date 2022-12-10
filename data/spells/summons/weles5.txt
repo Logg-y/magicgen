@@ -15,14 +15,14 @@
 #secondarypaths 4
 
 #skipchance 98
-#scalefatiguemult 14
+#scalefatiguemult 40.0
 #details "The elementals are size 5."
 #name 4 "$conjure$ NAMEPREFIX Huge Water %Elemental%"
 #descr 4 "The caster summons forth ARTICLE very large water %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.4
 #scalefatigueexponent -1.7
 #pathperresearch 0.4
 #end
@@ -32,7 +32,7 @@
 #damage 409
 #spec 8388608
 #power 4
-#maxpower 14
+#maxpower 8
 #nreff 3
 #pathlevel 3
 #fatiguecost 900
@@ -49,11 +49,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.5
-#scalefatiguemult 40
+#scalefatigueexponent -2.0
+#scalefatiguemult 120.0
 
-#scalerate 1.5
-#pathperresearch 0.4
+#scalerate 2.0
+#pathperresearch 0.66
 #end
 
 #neweffect "weles5 Remote Assassination"
@@ -108,5 +108,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
+
+
 
 

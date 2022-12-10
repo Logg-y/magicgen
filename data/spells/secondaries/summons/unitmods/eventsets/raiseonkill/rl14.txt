@@ -8,8 +8,8 @@
 #fixedcreaturepower 1
 
 
-#mincreaturepower 14
-#maxcreaturepower 14
+#mincreaturepower 5
+#maxcreaturepower 5
 
 #unitmodlist "Temporary Unit Summon"
 #end

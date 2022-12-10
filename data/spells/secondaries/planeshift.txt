@@ -23,7 +23,7 @@
 
 #nameprefix "Infernal"
 #nameprefix "Hellish"
-#fatiguepersquare 10
+#fatiguepersquare 14
 
 
 #nextspell "planeshift inferno Secondary mrne"
@@ -70,7 +70,7 @@
 
 #nameprefix "Infernal"
 #nameprefix "Hellish"
-#fatiguepersquare 6
+#fatiguepersquare 8
 
 #nextspell "planeshift inferno Secondary mrne damaging"
 
@@ -108,7 +108,7 @@
 
 #nameprefix "Infernal"
 #nameprefix "Hellish"
-#fatiguepersquare 10
+#fatiguepersquare 14
 
 #scalingaoelimit 1.5
 
@@ -155,7 +155,7 @@
 
 #nameprefix "Infernal"
 #nameprefix "Hellish"
-#fatiguepersquare 6
+#fatiguepersquare 8
 
 #nextspell "planeshift kokytos Secondary mrne damaging"
 
@@ -194,7 +194,7 @@
 #nameprefix "Voidtouched"
 #nameprefix "Otherworldly"
 #nameprefix "Tenebrous"
-#fatiguepersquare 10
+#fatiguepersquare 14
 
 #scalingaoelimit 1.5
 
@@ -241,7 +241,7 @@
 #nameprefix "Voidtouched"
 #nameprefix "Otherworldly"
 #nameprefix "Tenebrous"
-#fatiguepersquare 6
+#fatiguepersquare 8
 
 #nextspell "planeshift void Secondary mrne damaging"
 

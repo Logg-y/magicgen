@@ -3,5 +3,15 @@
 #set teleport 1
 #set mapmove 100
 #nameprefix "Teleporting"
+#reqfightsinmelee 1
+#descr "This particular CREATURE has been magically granted the ability the instantaneously teleport great distances."
+#end
+
+#newunitmod "Summon Teleport for Mages"
+#req teleport < 1
+#set teleport 1
+#set mapmove 100
+#nameprefix "Teleporting"
+#reqmage 1
 #descr "This particular CREATURE has been magically granted the ability the instantaneously teleport great distances."
 #end

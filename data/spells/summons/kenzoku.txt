@@ -5,7 +5,7 @@
 #power 4
 #maxpower 18
 #precision -2
-#nreff 1
+#nreff 2
 #pathlevel 2
 #fatiguecost 110
 #scalefatiguemult 11
@@ -112,4 +112,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 130
 #end
+
 

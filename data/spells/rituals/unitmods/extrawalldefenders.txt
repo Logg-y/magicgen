@@ -1,4 +1,19 @@
-#newunitmod "Extra Wall Defenders"
-#weaponmod "Extra Wall Defenders"
+#newunitmod "Extra Wall Defenders Small AoE"
+#weaponmod "Extra Wall Defenders Small AoE"
+#landok 1
+#end
+
+#newunitmod "Extra Wall Defenders Large AoE"
+#weaponmod "Extra Wall Defenders Large AoE"
+#landok 1
+#end
+
+#newunitmod "Extra Wall Defenders Beam"
+#weaponmod "Extra Wall Defenders Beam"
+#landok 1
+#end
+
+#newunitmod "Extra Wall Defenders Single"
+#weaponmod "Extra Wall Defenders Single"
 #landok 1
 #end

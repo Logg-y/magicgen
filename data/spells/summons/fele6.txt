@@ -16,7 +16,7 @@
 
 #skipchance 30
 
-#scalefatiguemult 20
+#scalefatiguemult 20.0
 
 #details "The elementals are size 6."
 #name 1 "Summon NAMEPREFIX Massive Fire %Elemental%"
@@ -24,7 +24,8 @@
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.16
+#pathperresearch 0.4
 #end
 
 #neweffect "feles6 ritual"
@@ -50,7 +51,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 70
+#scalefatiguemult 150.0
 
 #scalerate 2
 #end
@@ -109,5 +110,11 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
+
+
+
+
+
+
 
 

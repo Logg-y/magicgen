@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.6
+#scalerate 1.3
 -- #scalecost 1.0
 
 #aoe 0
@@ -23,8 +23,8 @@
 #paths nb
 #secondarypaths 64
 
-#namecond effectiveaoe < 2 64 "NAMEPREFIX Regeneration"
-#namecond effectiveaoe < 2 b "NAMEPREFIX Troll Blood"
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Personal Regeneration"
+#namecond effectiveaoe < 1 b "NAMEPREFIX Troll Blood"
 #namecond2 2 <= effectiveaoe < 600 64 "NAMEPREFIX Regeneration"
 #namecond2 2 <= effectiveaoe < 600 b "NAMEPREFIX Gift of Troll Blood"
 
@@ -40,6 +40,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of regeneration"
 
+#scalefatigueexponent 1.4
+#pathperresearch 0.3
 #end
 
 
@@ -259,4 +261,5 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 #nextspell "Greater Regen nextspell"
 #end
+
 

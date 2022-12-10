@@ -29,7 +29,7 @@
 
 #namecond effectiveaoe == 666 2 "NAMEPREFIX $Illusory$ Army"
 
-#details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
+#details "Mirror image: creates two images for each of the recipient's Air level, or 1 additional image if they have no Air skill. Each image has an equal chance of being struck by a non-AoE attack. Attacks striking false images are negated, though images are not destroyed when hit. The effect ends once the true subject is damaged by a non-poison source."
 
 #descr 2 "$Illusory$ images are of SUBJECT are created. The additional images are distracting and may take hits in place of PRONOUN real %body%."
 
@@ -73,7 +73,7 @@
 
 #namecond effectiveaoe == 666 2 "NAMEPREFIX $Illusory$ Army"
 
-#details "Mirror image: creates two images per Air level. Each image has an equal chance of being struck by an attack. Attacks striking false images are negated; the effect ends once the true subject is hit."
+#details "Mirror image: creates two images for each of the recipient's Air level, or 1 additional image if they have no Air skill. Each image has an equal chance of being struck by a non-AoE attack. Attacks striking false images are negated, though images are not destroyed when hit. The effect ends once the true subject is damaged by a non-poison source."
 
 #descr 2 "$Illusory$ images are of SUBJECT are created. The additional images are distracting and may take hits in place of PRONOUN real %body%."
 

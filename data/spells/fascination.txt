@@ -150,8 +150,8 @@
 #details "Those that fail to resist are stunned for a round."
 
 #priority 1
-#namecond effect > 1000 64 "NAMEPREFIX $mist$ of dazzling colours"
-#namecond range < 10 64 "NAMEPREFIX touch of dazzling colours"
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of dazzling colours"
+#namecond range < 10 16 "NAMEPREFIX touch of dazzling colours"
 
 #fatigueperresearch 0
 #end

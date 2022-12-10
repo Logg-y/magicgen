@@ -4,6 +4,7 @@
 #set diseaseres 100
 #req secondshape == -1
 #nameprefix "Putrid"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
 #end
 
@@ -13,6 +14,7 @@
 #set deathdisease 10
 #set diseaseres 100
 #nameprefix "Putrid"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a large putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
 #end
 
@@ -22,5 +24,6 @@
 #set deathdisease 25
 #set diseaseres 100
 #nameprefix "Putrid"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to explode with a gigantic putrid cloud of disease on death. Those nearby will become diseased if they fail to resist."
 #end

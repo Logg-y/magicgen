@@ -40,6 +40,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of cooling"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of cooling"
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Fire Res +5 battlefield"
@@ -96,18 +97,18 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.1
+#scalerate 1
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 2
-#pathlevel 2
+#power 0
+#pathlevel 1
 #explspr 10014
 #sound 31
 #range 15
-#fatiguecost 20
-#maxpower 8
+#fatiguecost 10
+#maxpower 6
 
 
 -- fire, blood, water
@@ -129,6 +130,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX extinguishing $mist$"
 #namecond effect > 1000 128 "NAMEPREFIX extinguishing $mist$"
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Fire Res +10 battlefield"
@@ -145,7 +147,7 @@
 
 
 #aoe 666
-#power 9
+#power 7
 #pathlevel 4
 #explspr 10014
 #sound 31
@@ -185,19 +187,19 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.9
+#scalerate 0.6
 #scalefatiguemult 3
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 4
+#power 1
 #pathlevel 2
 #explspr 10014
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 11
+#maxpower 8
 
 
 -- fire, blood, water
@@ -219,4 +221,17 @@
 #namecond effect > 1000 32 "NAMEPREFIX fireproof $mist$"
 #namecond effect > 1000 128 "NAMEPREFIX fireproof $mist$"
 
+#scalefatigueexponent 1.5
 #end
+
+
+
+
+
+
+
+
+
+
+
+

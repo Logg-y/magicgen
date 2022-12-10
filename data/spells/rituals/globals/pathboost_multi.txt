@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 8000
-#scalefatiguemult 880
+#scalefatiguemult 1000
 #schools 32
 
 #paths 144
@@ -18,13 +18,13 @@
 
 #basescale 1
 #spelltype 4
-#scalerate 1
+#scalerate 1.8
 
 #name 128 "Tomes from Beyond"
 #name 16 "Tomes from Beyond"
 #descr 16 "This enchantment causes researchers in friendly dominion to be occasionally infused with knowledge of otherworldly beings. This causes them to become more knowledgeable in some aspect of magic, but may leave them with a permanent mark that attracts horrors from beyond."
 #descr 128 "This enchantment causes researchers in friendly dominion to be occasionally infused with knowledge of otherworldly beings. This causes them to become more knowledgeable in some aspect of magic, but may leave them with a permanent mark that attracts horrors from beyond."
-#details "For each of the 8 magic paths per friendly province, there is a SCALEAMT% chance per point of dominion to pick a random researchers of level 0-4 in the respective path. Even if successful, there is a further 80% chance to do nothing. Success boosts the mage's path in the respective magic type by 1 permanently. They also gain a horror mark."
+#details "For each of the 8 magic paths per friendly province, there is a SCALEAMT% chance per point of dominion to pick a random researcher of level 0-4 in the respective path. Even if successful, there is a further 60% chance to do nothing. Success boosts the mage's path in the respective magic type by 1 permanently. They also gain a horror mark."
 #end
 
 
@@ -32,12 +32,12 @@
 #effect 10081
 #damage 17
 #spec 8388608
-#power 9
-#maxpower 17
+#power 7
+#maxpower 16
 #nreff 1
 #pathlevel 6
-#fatiguecost 12000
-#scalefatiguemult 1200
+#fatiguecost 8500
+#scalefatiguemult 1080
 #schools 32
 
 #paths 144
@@ -46,13 +46,13 @@
 #secondarypathchance 30
 #eventset "Pathboosts multi anycommander"
 
-#basescale 2
+#basescale 1
 #spelltype 4
-#scalerate 1
+#scalerate 1.15
 
 #name 128 "Insights from Beyond"
 #name 16 "Insights from Beyond"
 #descr 16 "This enchantment causes any commander in friendly dominion to be occasionally infused with knowledge of otherworldly beings. This causes them to become more knowledgeable in some aspect of magic, but may leave them with a permanent mark that attracts horrors from beyond. Any commander may be affected by this, even those without any skill in magic."
 #descr 128 "This enchantment causes any commander in friendly dominion to be occasionally infused with knowledge of otherworldly beings. This causes them to become more knowledgeable in some aspect of magic, but may leave them with a permanent mark that attracts horrors from beyond. Any commander may be affected by this, even those without any skill in magic."
-#details "For each of the 8 magic paths per friendly province, there is a SCALEAMT% chance per point of dominion to pick a random commander of level 0-4 in the respective path. Even if successful, there is a further 80% chance to do nothing. Success boosts the commander's path in the respective magic type by 1 permanently. They also gain a horror mark."
+#details "For each of the 8 magic paths per friendly province, there is a SCALEAMT% chance per point of dominion to pick a random commander of level 0-4 in the respective path. Even if successful, there is a further 70% chance to do nothing. Success boosts the commander's path in the respective magic type by 1 permanently. They also gain a horror mark."
 #end

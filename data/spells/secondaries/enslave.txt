@@ -22,7 +22,7 @@
 #req spelltype !& 4
 
 #nameprefix "Dominating"
-#fatiguepersquare 10
+#fatiguepersquare 14
 #scalingaoelimit 1.5
 
 
@@ -65,7 +65,7 @@
 #req effect != 4	    -- fear
 
 #nameprefix "Dominating"
-#fatiguepersquare 6
+#fatiguepersquare 8
 
 
 #nextspell "enslave Secondary mrne damaging"

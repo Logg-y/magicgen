@@ -54,14 +54,17 @@
 #allowedunitmod "Summon DmgVsDemonsOnly"
 #allowedunitmod "Summon Webweapon"
 
-#allowedunitmod "Summon Enlarge 1"
-#allowedunitmod "Summon Enlarge 2"
-#allowedunitmod "Summon Enlarge 3"
-#allowedunitmod "Summon Enlarge 4"
-#allowedunitmod "Summon Shrink 1"
-#allowedunitmod "Summon Shrink 2"
-#allowedunitmod "Summon Shrink 3"
-#allowedunitmod "Summon Shrink 4"
+-- For many weapons, this changes literally nothing
+-- And smaller versions just make lower research get stuff like tiny cockatrice 
+-- ... that still have full strength petrify beams, etc etc
+-- #allowedunitmod "Summon Enlarge 1"
+-- #allowedunitmod "Summon Enlarge 2"
+-- #allowedunitmod "Summon Enlarge 3"
+-- #allowedunitmod "Summon Enlarge 4"
+-- #allowedunitmod "Summon Shrink 1"
+-- #allowedunitmod "Summon Shrink 2"
+-- #allowedunitmod "Summon Shrink 3"
+-- #allowedunitmod "Summon Shrink 4"
 
 #allowedunitmod "Summon Fire Breath"
 #allowedunitmod "Summon Bile Breath"

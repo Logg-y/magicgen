@@ -20,7 +20,7 @@
 
 #basescale 3
 
-#skipchance 30
+#skipchance 60
 
 
 -- ESDB
@@ -75,6 +75,8 @@
 #pathlevel 5
 #fatiguecost 1200
 #schools 32
+
+#skipchance 30
 
 #ainocast 1
 #badaispell 1

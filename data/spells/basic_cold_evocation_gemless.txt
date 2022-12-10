@@ -106,7 +106,7 @@
 #effect 2
 #damage 1006
 #spec 1152921504606847552
-#aoe 0
+#aoe 1
 #power 1
 #maxpower 12
 #precision 3
@@ -146,6 +146,7 @@
 #aispellmod 50
 #fatigueperresearch 0
 #end
+
 
 
 

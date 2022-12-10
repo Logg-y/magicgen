@@ -33,7 +33,7 @@
 #effect 10001
 #damage 3171
 #spec 0
-#power 6
+#power 7
 #maxpower 20
 #nreff 1
 #pathlevel 4
@@ -54,11 +54,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.7
-#scalefatiguemult 100
+#scalefatigueexponent -1.9
+#scalefatiguemult 250.0
 #pathperresearch 0.4
 
-#scalerate 1
+#scalerate 2
 #end
 
 #neweffect "khalkotauros Remote Assassination"
@@ -120,5 +120,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
 
 

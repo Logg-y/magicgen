@@ -16,7 +16,7 @@
 
 #neweffect "Frostfire Evo Projectile"
 #effect 2
-#damage 2016
+#damage 2019
 -- firedmg, AP, cold, nextondamage
 #spec 96+512+1152921504606846976
 -- evo
@@ -64,7 +64,7 @@
 
 #neweffect "Frostfire Evo Projectile Gemless"
 #effect 2
-#damage 2016
+#damage 2019
 -- firedmg, AP, cold, nextondamage
 #spec 96+512+1152921504606846976
 -- evo
@@ -75,7 +75,7 @@
 #flightspr 10072
 #explspr 10132
 #sound 123
-#fatiguecost 15
+#fatiguecost 5
 #skipchance 5
 
 #paths fwb

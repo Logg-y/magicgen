@@ -21,9 +21,9 @@
 #descr 4 "The caster summons forth ARTICLE massive water %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
-#scalefatiguemult 18
-#scalerate 1
-#scalefatigueexponent -1.7
+#scalefatiguemult 20.0
+#scalerate 0.16
+#scalefatigueexponent 1.6
 #pathperresearch 0.4
 #end
 
@@ -108,6 +108,11 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
+
+
+
+
+
 
 
 

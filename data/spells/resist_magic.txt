@@ -18,6 +18,7 @@
 #sound 41
 #range 10
 #fatiguecost 20
+#skipchance 50
 
 --FAWES
 #paths 15
@@ -72,6 +73,8 @@
 #sound 41
 #range 10
 #fatiguecost 20
+
+#skipchance 50
 
 --FAWES
 #paths 240
@@ -184,6 +187,7 @@
 #sound 41
 #range 10
 #fatiguecost 100
+#alwaysgenerate 1
 
 --FAWES
 #paths 240

@@ -31,7 +31,7 @@
 #nameprefix "Bloody"
 #nameprefix "Crimson"
 #nameprefix "Lacerating"
-#fatiguepersquare 2
+#fatiguepersquare 4
 #scalingaoelimit 2.0
 
 
@@ -70,7 +70,7 @@
 #nameprefix "Bloody"
 #nameprefix "Crimson"
 #nameprefix "Lacerating"
-#fatiguepersquare 7
+#fatiguepersquare 10
 
 -- not undead or inanimates
 #req spec !& 8

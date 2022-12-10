@@ -32,19 +32,19 @@
 #neweffect "Reinvigoration Gemless"
 #effect 8
 #damage 15
-#spec 8404992
+#spec 8404992+128
 #schools 32
 #casttime 275
 
 -- buff, scale dmg
 #spelltype 65
 
-#scalerate 3
+#scalerate 5
 -- #scalecost 1.6
 
 #aoe 0
 #power 5
-#maxpower 12
+#maxpower 10
 #pathlevel 2
 #explspr 10277
 #sound 31
@@ -72,6 +72,7 @@
 #descr 64 "Through the wondrous touch of surrounding life, the caster is able to remove some of his fatigue. This process takes some time, however."
 #details "This spell recovers EFFECTIVEDAMAGE fatigue."
 
+#pathperresearch 0.4
 #end
 
 
@@ -79,7 +80,7 @@
 #neweffect "Reinvigoration AoE"
 #effect 8
 #damage 200
-#spec 8404992
+#spec 8404992+128
 #schools 2
 
 -- buff, battlefield allowed, scale aoe
@@ -110,7 +111,7 @@
 #neweffect "Reinvigoration Cloud"
 #effect 4008
 #damage 200
-#spec 8404992
+#spec 8404992+128
 #schools 2
 
 -- buff, battlefield allowed, scale aoe
@@ -137,3 +138,4 @@
 #descr 128 "$BLOOD_INTRO$, the mage will gain a massive surge of reinvigoration, preventing him from being fatigued for a short time."
 
 #end
+

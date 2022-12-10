@@ -3,6 +3,7 @@
 #req spiritsight == -1
 #set deathparalyze 5
 #nameprefix "Vengeful"
+#reqfightsinmelee 1
 #descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
 #end
 
@@ -12,6 +13,7 @@
 #req spiritsight == -1
 #set deathparalyze 12
 #nameprefix "Vindictive"
+#reqfightsinmelee 1
 #descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
 #end
 
@@ -21,5 +23,6 @@
 #req spiritsight == -1
 #set deathparalyze 30
 #nameprefix "Resentful"
+#reqfightsinmelee 1
 #descr "This particular CREATURE emits a psychic wail upon death, paralyzing those nearby that fail to resist."
 #end

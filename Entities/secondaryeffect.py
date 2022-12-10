@@ -114,6 +114,21 @@ class SpellSecondaryEffect(object):
                                  debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
+        if eff.noresearchreduction and self.power < 0:
+            return False
+
+        if eff.nocostreduction:
+            if self.fatiguepersquare < 0.0:
+                return False
+            if self.fatiguecostpereffect < 0.0:
+                return False
+            if self.fatiguecost < 0:
+                return False
+            for attrib, mult in self.multcommands:
+                if attrib == "fatiguecost" and mult < 1.0:
+                    return False
+
+
         finalpower = researchlevel + self.power + modifier.power
 
         if self.anysummon:
@@ -150,7 +165,7 @@ class SpellSecondaryEffect(object):
         # oh and it could chain to ridiculous levels like "add a set on fire effect" "add an entangle to that set on fire" etc etc etc
 
         okay = self.paths == 0
-        for flag in utils.breakdownflagcomponents(self.paths):
+        for flag in utils.bitmaskToComponents(self.paths):
             if (eff.paths & flag):
                 okay = True
                 break
@@ -165,7 +180,7 @@ class SpellSecondaryEffect(object):
                                      debugkeys.SECONDARYEFFECTCOMPATIBILITY)
                 return False
 
-        for flag in utils.breakdownflagcomponents(self.spelltype):
+        for flag in utils.bitmaskToComponents(self.spelltype):
             if not (eff.spelltype & flag):
                 DebugLogger.debuglog(f"Secondary is invalid: effect's spelltype missing flag {flag}",
                                      debugkeys.SECONDARYEFFECTCOMPATIBILITY)

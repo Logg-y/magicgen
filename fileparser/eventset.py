@@ -159,7 +159,7 @@ def readEventSet(fp):
                     if m is None:
                         raise ParseError(f"{fp} line {lineno}: bad #dummymonstername")
                     paths = fileparserutils.parsepathalias(m.groups()[0])
-                    for path in utils.breakdownflagcomponents(paths):
+                    for path in utils.bitmaskToComponents(paths):
                         if path not in curreff.dummymonsternames:
                             curreff.dummymonsternames[path] = []
                         curreff.dummymonsternames[path].append(m.groups()[1])

@@ -1,3 +1,20 @@
-#newweaponmod "Extra Wall Defenders"
+#newweaponmod "Extra Wall Defenders Small AoE"
 #req estrange > 5
+#req aoe <= 2
+#req aoe > 0
+#end
+
+#newweaponmod "Extra Wall Defenders Large AoE"
+#req estrange > 5
+#req aoe >= 2
+#end
+
+#newweaponmod "Extra Wall Defenders Beam"
+#req estrange > 5
+#req spec & 4294967296
+#end
+
+#newweaponmod "Extra Wall Defenders Single"
+#req estrange > 5
+#req aoe < 1
 #end

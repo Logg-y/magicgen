@@ -59,8 +59,8 @@
 
 #name 32 "NAMEPREFIX Mass Weakness"
 
-#descr 32 "The caster attempts damage the life force of the all his enemies, making them permanently weaker."
-#details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+#descr 32 "The caster attempts damage the life force of everyone on the battlefield, making them permanently weaker."
+#details "If the effect is not resisted, targets' strength is lowered by DAMAGE permanently."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"

@@ -73,8 +73,8 @@
 #namecond2 1 <= effectiveaoe < 25 16 "NAMEPREFIX Enslave Group"
 #namecond2 26 <= effectiveaoe < 600 16 "NAMEPREFIX Enslave Squad"
 
-#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
-#descr b "$BLOOD_INTRO$, the caster sends demons to invade the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
+#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power they had."
+#descr b "$BLOOD_INTRO$, the caster sends demons to invade the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power they had."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of enslavement"
@@ -142,8 +142,8 @@
 #namecond2 1 <= effectiveaoe < 25 16 "NAMEPREFIX Dominate Group"
 #namecond2 26 <= effectiveaoe < 600 16 "NAMEPREFIX Dominate Squad"
 
-#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
-#descr b "$BLOOD_INTRO$, the caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, PRONOUN will become little more than ARTICLE %thrall%, losing any command and magical power PRONOUN had."
+#descr 16 "The caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, they will become little more than ARTICLE %thrall%, losing any command and magical power they had."
+#descr b "$BLOOD_INTRO$, the caster invades and alters the allegiance of the %mind% of SUBJECT. Unless resisted, they will become little more than ARTICLE %thrall%, losing any command and magical power they had."
 #details "Targets must make two MR checks. Failing the first inflicts 1 point of damage. Failing both also enslaves them."
 
 #priority 1

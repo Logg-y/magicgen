@@ -67,6 +67,7 @@ class SpellEffect(object):
         self.onlygeosrc = 0
         self.unique = 0
         self.generated = 0
+        self.genericchildspells: List[Spell] = []
         self.alwaysgenerate = 0
         self.donotsetextraspellpath = 0
         self.aispellmod = 0
@@ -88,6 +89,8 @@ class SpellEffect(object):
         self.siegepatrolchaff = 0
         self.fixeddurationenchantment = 0
         self.fatigueperresearch = 10
+        self.nocostreduction = 0
+        self.noresearchreduction = 0
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -132,7 +135,7 @@ class SpellEffect(object):
 		allowblood: if True, can assign blood paths and to the blood school
 		allowskipchance: if False, skipchances of any value less than 100 (IE: 100% skip) will be ignored. Blood combat spell skipping bypasses this
 		setparams: a dict of params to set on the created Spell object
-		existingspells: a dict of RL:[list of effect NAMES] that have already been made as generic spells.
+		existingspells: a dict of RL:[list of effects] that have already been made as generic spells.
 		allowedsecondarypaths: if set, an integer of flags that dictates the secondary paths this spell is allowed. This is used to stop "natural" secondary paths like B/A for storm demons appearing inappropriately in national spells
 
 		secondarychance: int of % chance to roll a secondary effect
@@ -213,7 +216,8 @@ class SpellEffect(object):
             s.casttime = spell.casttimes.get(int(s.fatiguecost / 100), 100)
 
         # don't make combat spells uncastable at the minimum level, eg X1 that requires 2+ gems
-        self.handleOvercostSpell(s)
+        if not self.handleOvercostSpell(s):
+            return None
         self._splitSpellPathLevels(s)
 
         # buffs with aoe 0 should be self only, which means setting range to 0
@@ -241,7 +245,8 @@ class SpellEffect(object):
             additionalscale = (1 + actualpowerlvl) * (mod.scalerate + self.scalerate + secondary.scalerate)
             self._scaleSpellEffectiveness(s, additionalscale, mod, secondary)
 
-        self._postScalingFatigueAdjustments(s, **options)
+        if not self._postScalingFatigueAdjustments(s, **options):
+            return None
         plural = True if (s.aoe > 0 or s.nreff > 1) else False
         if self.spelltype & SpellTypes.EVOCATION:
             plural = True if (s.aoe > 1 or s.nreff > 1) else False
@@ -277,6 +282,8 @@ class SpellEffect(object):
 
         self._updateSpellGraphics(s, mod)
         self.generated += 1
+        if not options.get("isnational", False):
+            self.genericchildspells.append(s)
         # Implement research level modifier options
         s.researchlevel -= options.get("researchmodifier", 0)
         self._propagateAoEToNextspells(s)
@@ -364,6 +371,9 @@ class SpellEffect(object):
                         print(f"Skip scaling attribute {attribToScale} as attribute value is zero")
                         continue
                     scaleratio = min(1.0, attribScaleAmt / basespellvalue)
+                    if scaleratio > 0.3:
+                        print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > 0.3)")
+                        scaleratio = 0.3
                     print(f"Attribute scale amount is {attribScaleAmt}, base spell value is {basespellvalue}")
 
                 newspellattrib = getattr(s, attribToScale)
@@ -379,7 +389,7 @@ class SpellEffect(object):
                 print(f"Final value is {getattr(s, attribToScale)}")
 
     def enforceGemCosts(self, s):
-        # Certain effects should always have gem costs for safety reasons
+        # Certain effects that started having gem costs should always keem them for safety reasons
         # These are: reinvigoration, summon commander
         if s.effect > 10000 and s.fatiguecost < 100 and self.fatiguecost >= 100:
             print(f"Increase gem cost of ritual from {s.fatiguecost} to 100 so it costs a gem")
@@ -445,14 +455,16 @@ class SpellEffect(object):
 
 
     def scaleSpellEffectsToFatigue(self, s, desiredfatigue):
+        "Scale s's effects to desiredfatigue from whatever it is already. Return True on success or False on failure"
         flatnumeffects = s.nreff % 1000
         scalenumeffects = s.nreff // 1000
         realnumeffects = (scalenumeffects * s.path1level) + flatnumeffects
         realaoe = s.aoe % 1000 + (s.path1level * (s.aoe // 1000))
-
+        print(f"scaleSpellEffectsToFatigue: initial spell = {s.fatiguecost}, target = {desiredfatigue}")
 
         if s.fatiguecost > desiredfatigue:
             print(f"Spell is overcosted! Fatigue is {s.fatiguecost} but path level is {s.path1level}")
+            s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to meet desired fatigue {desiredfatigue}")
             reductionfactor = desiredfatigue / s.fatiguecost
             for attri in ["nreff", "aoe"]:
                 print(f"Adjusting attrib: {attri}")
@@ -469,6 +481,8 @@ class SpellEffect(object):
                 if attribvalue > 1:
                     desirednumeffects = max(1, int(round(attribvalue * reductionfactor)))
                     numeffectstolose = attribvalue - desirednumeffects
+                    if numeffectstolose < 1:
+                        continue
                     # Take from scaling first
                     while 1:
                         # can't reduce scaling if it would drop below the number to lose
@@ -498,16 +512,30 @@ class SpellEffect(object):
 
                     s.comments.append(f"Reduced attribute {attri} from {attribvalue} to fit cost "
                                       f"reduction scale of {reductionfactor}")
+                    percentageremaining = numeffectstolose / (attribvalue - desirednumeffects)
+                    percentagecomplete = 1 - percentageremaining
+                    totalfatiguetolose = s.fatiguecost - desiredfatigue
+                    print(f"Scaling {attri} met {percentagecomplete*100}% of the required scaling, fatigue {s.fatiguecost} lowered by {totalfatiguetolose * percentagecomplete}")
+                    s.fatiguecost = s.fatiguecost - (totalfatiguetolose * percentagecomplete)
 
-            reductionfactor = desiredfatigue / s.fatiguecost
+            reductionfactor = s.fatiguecost / desiredfatigue
             if reductionfactor > 1.0:
                 s.comments.append(f"Alter cast time by {reductionfactor} to make up remaining reductionfactor")
                 s.casttime = math.floor(min(999, (s.casttime * reductionfactor)))
+                if reductionfactor > 1.5:
+                    print(f"Would have to mult cast time by {reductionfactor}, abort")
+                    return False
+                # Set to a round number
+                if s.casttime > 100:
+                    s.casttime = 5 * (s.casttime // 5)
+                print(f"Mult cast time by {reductionfactor} to match scale, now {s.casttime}")
 
-            s.comments.append(f"Reduced fatigue cost from {s.fatiguecost} to make it actually castable")
+
             s.fatiguecost = min(s.fatiguecost, desiredfatigue)
+            return True
         else:
             print(f"Spell is undercosted! Fatigue is {s.fatiguecost} but desired min is {desiredfatigue}")
+            s.comments.append(f"Increase fatigue cost from {s.fatiguecost} to meet desired fatigue cost {desiredfatigue}")
             increasefactor = desiredfatigue/s.fatiguecost
             for attri in ["nreff", "aoe"]:
                 print(f"Adjusting attrib: {attri}")
@@ -524,6 +552,8 @@ class SpellEffect(object):
                 if attribvalue > 1:
                     desirednumeffects = max(1, int(round(attribvalue * increasefactor)))
                     numeffectstogain = desirednumeffects - attribvalue
+                    if numeffectstogain < 1:
+                        continue
                     # Take from scaling first
                     while 1:
                         # can't increase scaling if it would put spell above the number to gain
@@ -550,19 +580,23 @@ class SpellEffect(object):
 
                     s.comments.append(f"Increased attribute {attri} from {attribvalue} to fit cost "
                                       f"increase scale of {increasefactor}")
+                    percentageremaining = numeffectstogain / (desirednumeffects - attribvalue)
+                    percentagecomplete = 1 - percentageremaining
+                    totalfatiguetoadd = desiredfatigue - s.fatiguecost
+                    print(
+                        f"Scaling {attri} met {percentagecomplete * 100}% of the required scaling, fatigue {s.fatiguecost} increased by {totalfatiguetoadd * percentagecomplete}")
+                    s.fatiguecost = s.fatiguecost + (totalfatiguetoadd * percentagecomplete)
 
-            s.comments.append(f"Increased fatigue cost from {s.fatiguecost} to meet desired fatigue cost")
+
             s.fatiguecost = max(s.fatiguecost, desiredfatigue)
+            return True
 
     def handleOvercostSpell(self, s):
         if not self.spelltype & SpellTypes.RITUAL and s.effect < 10000 and s.school > -1:
-            maxfatiguecost = 99 + (100 * s.path1level)
+            maxfatiguecost = (100 * s.path1level)
             if s.fatiguecost > maxfatiguecost:
-                self.scaleSpellEffectsToFatigue(s, maxfatiguecost)
-
-
-
-
+                return self.scaleSpellEffectsToFatigue(s, maxfatiguecost)
+        return True
 
     def calculateSummonAISpellMod(self, spell, aiscore):
         """Fight back against Illwinter's casting AI by calculating an aispellmod to better represent how magicgen
@@ -695,38 +729,40 @@ class SpellEffect(object):
     def _shouldSkipDueToProximityToRelatedSpells(self, **options):
         existingspells = options.get("existingspells", None)
         allowskipchance = options.get("allowskipchance", True)
+        forcepath = options.get("forcepath", None)
         if not self.isnextspell and (allowskipchance or self.skipchance >= 100) and not self.noresearchdifferenceskip:
             # if we were passed the dict of spells that already exist, skipchance based on proximity to effects that
             # already exist - this is the case for non-holy non-national spells
-            if existingspells is not None:
-                smallestdiff = None
-                for rl, effectlist in existingspells.items():
-                    if self.name in effectlist:
-                        thisdiff = abs(rl - self.researchlevel)
-                        if smallestdiff is None or thisdiff < smallestdiff:
-                            smallestdiff = thisdiff
-                print(f"Smallest research level diff to an already generated spell is {smallestdiff}")
-                if smallestdiff is None:
-                    powerdiff = max(0, self.researchlevel - self.power)
-                    powerskipchance = min(90, powerdiff * 4)
-                    if random.random() * 100 < powerskipchance:
-                        print(f"Failed to generate {self.name} at {self.researchlevel}: "
-                              f"base research difference skipchance of {powerskipchance}")
-                        return True
+
+            for spell in self.genericchildspells:
+                print(f"Compare: {spell.name}, rl={spell.researchlevel}, path1={spell.path1}, path2={spell.path2}, forcepath={forcepath}")
+                # If we have a forced path, care a bit less about other spells here
+                if forcepath is not None:
+                    if spell.path1 == forcepath:
+                        pathsimilarity = 4.0
+                    elif spell.path2 == forcepath:
+                        pathsimilarity = 2.0
+                    else:
+                        pathsimilarity = 0.0
                 else:
-                    tempvalue = (4 - smallestdiff)
-                    powerskipchance = min(100, (tempvalue * tempvalue) * 15)
-                    if random.random() * 100 < powerskipchance:
-                        print(f"Failed to generate {self.name} at {self.researchlevel}: "
-                              f"research difference to existing spell skipchance of {powerskipchance}")
-                        return True
-            else:
-                powerdiff = max(0, researchlevel - self.power)
-                powerskipchance = min(90, powerdiff * 8)
-                if random.random() * 100 < powerskipchance:
-                    print(f"Failed to generate {self.name} at {self.researchlevel}: "
-                          f"base research difference skipchance of {powerskipchance}")
+                    # The more possible paths are allowed, the less similarity there is...
+                    # It's just up to the pathpicker to roll something different
+                    pathsimilarity = 4.0/len(utils.bitmaskToExponents(self.paths))
+                    if self.secondarypaths > 0 and spell.path2 > 0:
+                        pathsimilarity += 1.0/len(utils.bitmaskToExponents(self.secondarypaths))
+                rldiff = abs(spell.researchlevel - self.researchlevel)
+                chance = ((max(0, 4 - rldiff) * pathsimilarity)**2) * 6
+                print(f"rldiff = {rldiff}, pathsimilarity to {spell.name} = {pathsimilarity}, chance={chance}")
+                if random.random() * 100 < chance:
                     return True
+
+            powerdiff = max(0, self.researchlevel - self.power)
+            powerskipchance = min(90, powerdiff * 5)
+            if random.random() * 100 < powerskipchance:
+                print(f"Failed to generate {self.name} at {self.researchlevel}: "
+                      f"base research difference skipchance of {powerskipchance}")
+                return True
+
         return False
 
     def _shouldNotGenerate(self, **options):
@@ -744,13 +780,25 @@ class SpellEffect(object):
             print(f"Fail {self.name} as this is a national generation and the effect wants to fill permanent slots")
             return True
 
+        if isnational and self.extraspell != "" and self.extraspell is not None:
+            # Some things that come together (notably, elemental royalty) have different path requirements
+            # The national spell generator will only pick one of these, so...
+            mypaths = self.paths
+            extraspell = self
+            while extraspell is not None and extraspell != "":
+                if extraspell.donotsetextraspellpath:
+                    print(f"National generation of {self.name} not allowed due to forbidden forced paths")
+                    return True
+                extraspell = extraspell.extraspell
+                if isinstance(extraspell, str) and extraspell != "":
+                    extraspell = utils.spelleffects[extraspell]
+
+
         if random.random() * 100 < self.skipchance and not self.isnextspell and (
                 allowskipchance or self.skipchance >= 100):
             print(f"Failed to generate {self.name} at {self.researchlevel}: random skipchance")
             return True
 
-        if self._shouldSkipDueToProximityToRelatedSpells(**options):
-            return True
 
         # less combat blood spells
         # bypasses allowskipchance
@@ -767,13 +815,6 @@ class SpellEffect(object):
             print(f"Failed to generate {self.name} at {self.researchlevel}: effect is unique and already exists")
             return True
 
-        # Don't make lots of generations from the same effect
-        if allowskipchance and not self.isnextspell and self.generated > 0:
-            repeatedskipchance = 1 - (1 / (1 + (self.generated * 3)))
-            if random.random() < repeatedskipchance:
-                print(f"Skipped based on {self.generated} previous generations")
-                return True
-
         if forceschool and not (self.schools & forceschool):
             print(
                 f"Failed to generate {self.name} at {self.researchlevel}: school is forced to {forceschool} which is incompatible")
@@ -788,6 +829,9 @@ class SpellEffect(object):
         if self.schools == -1 and not self.isnextspell:
             # nextspells go in the unresearchable school!
             print(f"{self.name} is unresearchable and not next spell, fail this generation")
+            return True
+
+        if self._shouldSkipDueToProximityToRelatedSpells(**options):
             return True
 
         return False
@@ -995,13 +1039,13 @@ class SpellEffect(object):
         allowedsecondarypaths = options.get("allowedsecondarypaths", None)
         allowskipchance = options.get("allowskipchance", True)
 
-        possibleillwinterpaths = utils.breakdownflag(511 & self.paths)
+        possibleillwinterpaths = utils.bitmaskToExponents(511 & self.paths)
         random.shuffle(possibleillwinterpaths)
         print(f"Possible path with illwinter ids are {possibleillwinterpaths}")
 
         # If we are trying to pick a same path secondary, be very biased towards those path(s) as path1
         if self.allowOnlySamePathSecondaryEffect:
-            possibleillwinterpaths = utils.breakdownflag(self.paths & secondary.paths) + possibleillwinterpaths
+            possibleillwinterpaths = utils.bitmaskToExponents(self.paths & secondary.paths) + possibleillwinterpaths
             print(f"After same path secondary bias: paths with illwinter ids are {possibleillwinterpaths}")
 
         if forcepath is None:
@@ -1091,7 +1135,8 @@ class SpellEffect(object):
     def canGenerateAtPowerlvl(self, powerlvl, mod=None, secondary=None):
         """Return True if this the spell can generate at this power level and mod/secondary combination.
         This is necessary for some spell effects which scale really slowly, IE have scalerates of <0.5.
-        Without this, it would be possible for identical spells to generate at adjacent research levels."""
+        Without this, it would be possible for identical spells to generate at adjacent research levels,
+        as it is silly to have increased research requirement spells that offer no advantage over earlier versions."""
         if self.isnextspell:
             return True
         if powerlvl == 0:
@@ -1193,10 +1238,10 @@ class SpellEffect(object):
             print(f"Begin generating nextspell {extraspell.name} of parent {self.name}")
             if self.donotsetextraspellpath == 0:
                 optionscopy["forcepath"] = s.path1
-                extraspelloutput = extraspell.rollSpell(**optionscopy).output()
             else:
                 # Elemental royalty all come together, and should NOT mimic the paths of the parents
-                extraspelloutput = extraspell.rollSpell(**optionscopy).output()
+                del optionscopy["forcepath"]
+            extraspelloutput = extraspell.rollSpell(**optionscopy).output()
             if extraspelloutput is None:
                 print(f"WARNING: Failed to generate extraspell {extraspell.name} of parent {self.name}")
             s.modcmdsbefore += extraspelloutput
@@ -1279,7 +1324,8 @@ class SpellEffect(object):
                 s.fatiguecost *= 2
 
             # If the spell is now uncastable, rescale number of effects
-            self.handleOvercostSpell(s)
+            if not self.handleOvercostSpell(s):
+                return False
 
             # make fatigue nice round numbers
             if s.fatiguecost > 100:
@@ -1290,6 +1336,7 @@ class SpellEffect(object):
                 s.fatiguecost = int(s.fatiguecost)
         else:
             s.fatiguecost = int(100 * (s.fatiguecost // 100.0))
+        return True
     def _writeDescription(self, s, mod, secondary, plural):
 
 
@@ -1367,13 +1414,15 @@ class SpellEffect(object):
             s.details += " The cloud created by this spell inflicts a third of the final damage, rounded up."
             s.details = s.details.strip()
         if s.effect > 1000 and s.effect < 10000:
-            dur = s.effect // 1000
+            lingering = s.effect // 1000
+            activations = lingering * 3
+            dur = (1280 * activations)/7500
             # Chain lightning clouds want different text really
             if s.effect % 1000 != 134:
-                s.details += f" The cloud affects those standing within it every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details += f" The cloud affects those standing within it every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {activations} total activations."
                 s.details = s.details.strip()
             else:
-                s.details += f" The cloud releases chain lightning every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {dur * 3} total activations."
+                s.details += f" The cloud releases chain lightning every 1280 ticks (or 5.859375 times a round). It lasts for approximately {dur:.1f} rounds, for a total of {activations} total activations."
                 s.details = s.details.strip()
 
         if s.ainocast > 0 and s.effect < 10000:

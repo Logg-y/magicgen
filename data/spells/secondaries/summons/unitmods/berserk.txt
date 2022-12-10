@@ -5,6 +5,7 @@
 #req hp > 10
 #req immobile == -1
 #set berserk 3
+#reqfightsinmelee 1
 #nameprefix "Angry"
 #descr "This particular CREATURE is particularly angry and may go berserk with little provocation."
 #end
@@ -16,6 +17,7 @@
 #req hp > 10
 #req immobile == -1
 #set berserk 9
+#reqfightsinmelee 1
 #nameprefix "Furious"
 #descr "This particular CREATURE is particularly angry and may go berserk with little provocation."
 #end

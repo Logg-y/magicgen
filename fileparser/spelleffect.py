@@ -7,7 +7,7 @@ from Exceptions.ParseError import ParseError
 from Services import utils
 from Services import fileparserutils
 
-simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "noresearchdifferenceskip", "siegepatrolchaff", "fixeddurationenchantment", "fatigueperresearch"]
+simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "noresearchdifferenceskip", "siegepatrolchaff", "fixeddurationenchantment", "fatigueperresearch", "nocostreduction", "noresearchreduction"]
 simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "skipchance"]
 
@@ -81,7 +81,7 @@ def readEffectFile(fp):
 							line)
 						if m is not None:
 							paths = fileparserutils.parsepathalias(m.groups()[5])
-							for path in utils.breakdownflagcomponents(paths):
+							for path in utils.bitmaskToComponents(paths):
 								cond = NameCond()
 								cond.val2 = m.groups()[0]
 								cond.op2 = m.groups()[1]
@@ -102,7 +102,7 @@ def readEffectFile(fp):
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #namecond or #namecond2")
 						paths = fileparserutils.parsepathalias(m.groups()[3])
-						for path in utils.breakdownflagcomponents(paths):
+						for path in utils.bitmaskToComponents(paths):
 							cond = NameCond()
 							cond.param = m.groups()[0]
 							cond.op = m.groups()[1]
@@ -123,7 +123,7 @@ def readEffectFile(fp):
 							line)
 						if m is not None:
 							paths = fileparserutils.parsepathalias(m.groups()[5])
-							for path in utils.breakdownflagcomponents(paths):
+							for path in utils.bitmaskToComponents(paths):
 								cond = NameCond()
 								cond.val2 = m.groups()[0]
 								cond.op2 = m.groups()[1]
@@ -143,7 +143,7 @@ def readEffectFile(fp):
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #descrcond")
 						paths = fileparserutils.parsepathalias(m.groups()[3])
-						for path in utils.breakdownflagcomponents(paths):
+						for path in utils.bitmaskToComponents(paths):
 							cond = NameCond()
 							cond.param = m.groups()[0]
 							cond.op = m.groups()[1]
@@ -162,7 +162,7 @@ def readEffectFile(fp):
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #descr")
 						paths = fileparserutils.parsepathalias(m.groups()[0])
-						for path in utils.breakdownflagcomponents(paths):
+						for path in utils.bitmaskToComponents(paths):
 							curreff.descriptions[path] = m.groups()[1]
 						continue
 
@@ -171,7 +171,7 @@ def readEffectFile(fp):
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #pathskipchance")
 						paths = fileparserutils.parsepathalias(m.groups()[0])
-						for path in utils.breakdownflagcomponents(paths):
+						for path in utils.bitmaskToComponents(paths):
 							skipchance = int(m.groups()[1])
 							curreff.pathskipchances[path] = skipchance
 						continue
@@ -181,7 +181,7 @@ def readEffectFile(fp):
 						if m is None:
 							raise ParseError(f"{fp} line {lineno}: bad #name")
 						paths = fileparserutils.parsepathalias(m.groups()[0])
-						for path in utils.breakdownflagcomponents(paths):
+						for path in utils.bitmaskToComponents(paths):
 							if path not in curreff.names:
 								curreff.names[path] = []
 							curreff.names[path].append(m.groups()[1])

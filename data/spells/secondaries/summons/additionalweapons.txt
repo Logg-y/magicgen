@@ -1,7 +1,12 @@
+-- Preventing extra ranged weapons from being given in assassination settings is deliberate
+-- They tend to stand back and spam them rather than get into melee, which on good melee chassis is sad
+-- They also don't have the benefit of casting AI and will spam them even if they are completely ineffective (eg high elemental resistance)
+
 #newsecondary "Summon Fire Flare battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
 
 #anysummon 1
 
@@ -20,7 +25,10 @@
 #newsecondary "Summon Fire Flare ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 #anysummon 1
 
@@ -64,12 +72,14 @@
 #paths 96
 #power 0
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
+-- this thing is going to be really fatal in assassination settings
 #req effect != 10050
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 40
+#fatiguecostpereffect 60
 #mult fatiguecost 1.1
 
 #unitmod "Summon Bile Breath"
@@ -86,12 +96,14 @@
 #paths 96
 #power 0
 
-#req effect > 10000
+#req effect != 1
 #req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 80
+#fatiguecostpereffect 120
 #mult fatiguecost 1.1
 
 #unitmod "Summon Bile Breath"
@@ -103,18 +115,18 @@
 #newsecondary "Summon Mind Blast battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
+#req effect != 10050
 
 #anysummon 1
 
 #paths 16
 #power -1
 
-#req effect != 10050
-
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 20
+#fatiguecostpereffect 30
 
 #unitmod "Summon Mind Blast"
 #descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
@@ -125,18 +137,19 @@
 #newsecondary "Summon Mind Blast ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
-
 #anysummon 1
 
 #paths 16
 #power -1
 
+#req effect != 1
+#req effect != 10038
 #req effect != 10050
+#req effect != 21
 
 -- not montag
 #req damage > 0
-#fatiguecostpereffect 40
+#fatiguecostpereffect 60
 
 #unitmod "Summon Mind Blast"
 #descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
@@ -147,14 +160,13 @@
 #newsecondary "Summon Frost Breath battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
-
 #anysummon 1
 
 #paths 4
 #power 0
 
-#req effect != 10050
+#req effect != 10001
+#req effect != 10021
 #req effect != 10050
 
 -- not montag
@@ -171,14 +183,15 @@
 #newsecondary "Summon Frost Breath ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
-
 #anysummon 1
 
 #paths 4
 #power 0
 
+#req effect != 1
 #req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 -- not montag
 #req damage > 0
@@ -199,6 +212,7 @@
 
 #paths 64
 #power 0
+
 
 #req effect != 10050
 
@@ -261,7 +275,8 @@
 #newsecondary "Summon Elf Shot battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
 
 #anysummon 1
 
@@ -283,14 +298,16 @@
 #newsecondary "Summon Elf Shot ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 #anysummon 1
 
 #paths 64
 #power 0
 
-#req effect != 10050
 
 -- not montag
 #req damage > 0
@@ -351,7 +368,9 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power -2
+
+#set ainocast 1
 
 -- not montag
 #req damage > 0
@@ -375,7 +394,7 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power -2
 
 -- not montag
 #req damage > 0
@@ -452,7 +471,10 @@
 #newsecondary "Summon Drake Fire ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 #anysummon 1
 
@@ -474,8 +496,10 @@
 #newsecondary "Summon Drake Fire battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
 
+#req effect != 10050
 #anysummon 1
 
 #paths 1
@@ -496,7 +520,10 @@
 #newsecondary "Summon Drake Frost ritual"
 #req siegepatrolchaff < 1
 
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 #anysummon 1
 
@@ -518,7 +545,9 @@
 #newsecondary "Summon Drake Frost battle"
 #req siegepatrolchaff < 1
 
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
+#req effect != 10050
 
 #anysummon 1
 
@@ -539,7 +568,10 @@
 
 #newsecondary "Summon Drake Gas ritual"
 
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 
 #req siegepatrolchaff < 1
@@ -562,7 +594,9 @@
 #end
 
 #newsecondary "Summon Drake Gas battle"
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
+#req effect != 10050
 
 #req siegepatrolchaff < 1
 
@@ -627,7 +661,10 @@
 
 #newsecondary "Summon Water Breath ritual"
 #req siegepatrolchaff < 1
-#req effect > 10000
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
 
 #anysummon 1
 
@@ -648,7 +685,9 @@
 
 #newsecondary "Summon Water Breath battle"
 #req siegepatrolchaff < 1
-#req effect < 10000
+#req effect != 10001
+#req effect != 10021
+#req effect != 10050
 
 #anysummon 1
 
@@ -668,19 +707,48 @@
 #end
 
 
-#newsecondary "Summon Frost Strike"
+#newsecondary "Summon Frost Strike battle"
 #req siegepatrolchaff < 1
+
+#req effect != 10001
+#req effect != 10021
 
 #anysummon 1
 
 #paths 4
 #power -1
 
-#req effect != 10050
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.7
+#mult fatiguecost 1.1
+#fatiguecostpereffect 35
+#req trample <= 0
+
+#unitmod "Summon Frost Strike"
+
+#descr "The summoned %creature% %is% able to produce blasts of frost at those nearby."
+#details "Summoned creatures gain a AoE 1 length 0 attack that inflicts 9 AP cold damage. This cannot be repelled, nor used for repelling. The summoned creature gains +6 cold resistance, or +5 it it had none originally."
+#end
+
+#newsecondary "Summon Frost Strike ritual"
+#req siegepatrolchaff < 1
+
+#req effect != 1
+#req effect != 10050
+#req effect != 10038
+#req effect != 21
+
+#anysummon 1
+
+#paths 4
+#power -1
+
+
+-- not montag
+#req damage > 0
+#mult fatiguecost 1.1
+#fatiguecostpereffect 70
 #req trample <= 0
 
 #unitmod "Summon Frost Strike"

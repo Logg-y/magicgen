@@ -185,7 +185,7 @@ class MontagBuilder(object):
                 out.modcmds += f'#name "Dummy Montag {out.montagid}"' + "\n"
             else:
                 out.modcmds += f'#name "{self.dummymonstername}"' + "\n"
-            out.modcmds += f'#descr "This unit has no purpose except to spawn in a unit of montag {out.montagid}."' + "\n"
+            out.modcmds += f'#descr "This unit has no purpose except to spawn in a unit of montag {out.montagid}, which it will do after battle or if this form is killed."' + "\n"
             out.modcmds += "#end\n\n"
             out.dummymonsterid = utils.MONSTER_ID
             utils.MONSTER_ID += 1
@@ -212,7 +212,7 @@ class MontagBuilder(object):
                 out.modcmds += f'#name "Dummy Montag {out.montagid}"' + "\n"
             else:
                 out.modcmds += f'#name "{self.dummymonstername}"' + "\n"
-            out.modcmds += f'#descr "This unit has no purpose except to spawn in a unit of montag {out.montagid}."' + "\n"
+            out.modcmds += f'#descr "This unit has no purpose except to spawn in a unit of montag {out.montagid}, which it will rapidly do once in combat."' + "\n"
             out.modcmds += "#end\n\n"
             out.dummymonsterid = utils.MONSTER_ID
             utils.MONSTER_ID += 1
@@ -239,7 +239,7 @@ def _CanUseUnitAndSecondaryCombo(parentobj, unittouse, secondary, realunitmod, s
                 return False
 
     # Enforce power restrictions
-    if parentobj.mincreaturepower > -1 and parentobj.maxcreaturepower > -1 and chosensummoneffect is not None:
+    if chosensummoneffect is not None:
         finalcreaturepower = chosensummoneffect.power - secondary.power
         minpower = parentobj.mincreaturepower + actualpowerlvl
         maxpower = parentobj.maxcreaturepower + actualpowerlvl

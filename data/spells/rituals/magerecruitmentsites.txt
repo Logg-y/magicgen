@@ -2728,7 +2728,7 @@
 
 #name s "Construct Starlit Statue"
 
-#descr e "The caster constructs a large stone statue under the light of the stars. A statue constructed in this way is bound to the stars that shone upon it during its construction, and the same stars will continue to shine upon it forever. Those early in their study of Astral magic are enticed to gaze upon these stars. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
+#descr s "The caster constructs a large stone statue under the light of the stars. A statue constructed in this way is bound to the stars that shone upon it during its construction, and the same stars will continue to shine upon it forever. Those early in their study of Astral magic are enticed to gaze upon these stars. Their services may then be hired for an appropriate price in gold. Construction of the statue will fail in a province where the land is already too saturated with magic."
 #details "Creates a permanent magic site which allows the recruitment of Stargazers (human S1 mages). Fails if used in a province with 8 magic sites."
 
 #spelltype 4

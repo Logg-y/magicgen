@@ -2,6 +2,38 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
+TODO (rip internet)
+
+stream of life cloud
+gemmed versions of:
+	lesser enslave/charm
+	life drain? at least check the scaling of the base version
+	
+	
+
+To test:
+
+More global power checking
+Wall defenders
+
+Rebalanced elemental summoning, again. The major change this time is that it is no longer possible to summon two size 6 elementals in combat with one gem at level 6.
+Enforced a cap on the maximum scaling rate of spells.
+Previously, the fatigue of combat spells was reduced to 100x the primary path level if it exceeded that, with some not-terribly punishing compensations. The amount of punishing has been increased considerably, and any that can't be done by adjusting aoe/number of effects now affects the cast time. Rather than make spells with extremely long cast times, the generation fails instead.
+Removed the "200% cast time" modifier. This would typically appear extremely frequently at lower levels and make many spells feel awful and not worth mage time to use.
+Numerous lesser balance tweaks (not mentioned here).
+Significantly increased the cost of Send Horror spells which were accidentally priced absurdly cheaply.
+Fixed assorted typo and description mistakes.
+Added more comprehensive handling to the extra wall defenders spells and recosted them. Hopefully these are more useful at all research levels now, rather than being only extremely powerful (and expensive) at very high levels.
+Effect "declustering" (stopping the same effect generating many times at close research levels) has been relaxed if the path requirements are different.
+Adjusted the costs of additional weapons when given to summons in certain single-battle settings, such as remote attacks (which would previously get the cost increase as if they were permanent units)
+Somewhat increased the power of higher level resist spells.
+Fixed cloud spell yellowtext, which previously claimed cloud durations were double what they really are.
+Many unit modifications that are entirely or mostly relevant to units that are likely to end up in melee have been forbidden for units that are likely to spend a lot of time firing or otherwise far away from enemies.
+Unit modifications should no longer be possible if they would change affect only the melee weapons of a creature that is likely to spend most of its time firing a ranged weapon.
+Aquatic units should no longer be able gain modifications that would add ranged weapons that cannot be fired underwater.
+Updated to use selectspell as it always should have done, because #newspell <id> actually ignored the passed id.
+Fixed some randomised globals' yellowtext numbers being incorrect (they were being inherited from things using the same condition/action set as a global that generated before...)
+
 v3.1.8
 
 Powerful gem-costing buff spells no longer generate at lower levels. The intent of this was to allow early ways to turn gems into power for instance to deal with sacreds that troops don't work against. I didn't consider that the force multiplication effect of buffs would only get worse once used on the problematic sacreds. This means that they will now all be offensive in nature, which means that counterplay should always exist in the form of target baiting.

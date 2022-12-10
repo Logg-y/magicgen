@@ -13,8 +13,8 @@
 
 #paths 1
 #secondarypaths 1
-#scalefatiguemult 13
-#scalefatigueexponent -1.6
+#scalefatiguemult 10.0
+#scalefatigueexponent -1.5
 #skipchance 98
 
 #details "The elementals are size 3."
@@ -23,7 +23,7 @@
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.4
 #end
 
 #neweffect "feles3 ritual"
@@ -32,9 +32,9 @@
 #spec 0
 #power 5
 #maxpower 9
-#nreff 5
+#nreff 2001
 #pathlevel 3
-#fatiguecost 900
+#fatiguecost 700
 #schools 1
 
 #paths 1
@@ -49,10 +49,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.7
-#scalefatiguemult 15
+#scalefatigueexponent -1.4
+#scalefatiguemult 20.0
 
 #scalerate 2
+#pathperresearch 0.4
 #end
 
 #neweffect "feles3 Remote Assassination"
@@ -109,5 +110,9 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 55
 #end
+
+
+
+
 
 

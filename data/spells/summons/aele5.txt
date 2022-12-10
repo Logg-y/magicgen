@@ -15,15 +15,16 @@
 #secondarypaths 2
 
 #skipchance 98
-#scalefatiguemult 10
+#scalefatiguemult 40.0
 #details "The elementals are size 5."
 #name 2 "$conjure$ NAMEPREFIX Huge Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE very large air %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.4
+#scalerate 0.4
+#scalefatigueexponent -1.7
+#pathperresearch 0.51
 #end
 
 #neweffect "aeles5 ritual"
@@ -49,7 +50,7 @@
 #spelltype 20
 
 #scalefatigueexponent -2
-#scalefatiguemult 80
+#scalefatiguemult 120.0
 
 #scalerate 2
 #end
@@ -108,6 +109,10 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 90
 #end
+
+
+
+
 
 
 

@@ -52,13 +52,13 @@
 #scalerate 1
 -- #scalecost 1.1
 
-#aoe 0
+#aoe 3
 #power 5
-#maxpower 8
+#maxpower 12
 #pathlevel 3
 #explspr 10206
 #sound 41
-#fatiguecost 20
+#fatiguecost 100
 #precision 100
 #range 100
 
@@ -79,3 +79,50 @@
 #namecond range < 10 64 "NAMEPREFIX Touch of Harnessing"
 
 #end
+
+
+#neweffect "Harness Essence Gemless"
+#effect 29
+#damage 999
+#spec 1152921505421201536
+#schools 32
+#aispellmod -10
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.35
+-- #scalecost 1.1
+
+#aoe 0
+#power 5
+#maxpower 14
+#pathlevel 3
+#explspr 10206
+#sound 41
+#fatiguecost 10
+#precision 100
+#range 100
+
+#nextspell "Harness Essence Soul Slay"
+
+#paths 64
+#secondarypaths 64
+
+#namecond effectiveaoe < 1 64 "NAMEPREFIX Harness Essence"
+
+#namecond2 1 <= effectiveaoe < 600 64 "NAMEPREFIX Harness Lives"
+
+#descr 64 "The caster tries to separate the body and life force of SUBJECT. Living creatures that fail to resist this spell are permanently slain. There is a small chance that the harvested lifeforce of powerful and experienced mages is mighty enough to allow transfer of their magical abilities to the caster's Pretender God. Prophets and Pretenders have too strong a divine connection for this spell to harm them in any way."
+
+#details "Targets that fail to resist are soul slayed. If the unit affected was a commander, there is an ((xp-50)*2)% chance to pick a random non-holy magic path. If the caster's Pretender's level in this path is less than or equal to the commander's level in the path + a closed d3, the Pretender gains +1 to this path. There is no message when this occurs."
+
+#priority 1
+#namecond range < 10 64 "NAMEPREFIX Touch of Harnessing"
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.1
+#end
+
+

@@ -15,7 +15,7 @@
 #secondarypathchance 0
 
 #name 128 "Rejuvenate"
-#descr 128 "The mage drenches himself in the blood of ten young girls in an attempt to become younger. Each offered girl will make the caster ten years younger."
+#descr 128 "The mage drenches himself in the blood of five young girls in an attempt to become younger. Each offered girl will make the caster ten years younger."
 
 #spelltype 4
 #end

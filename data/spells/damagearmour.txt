@@ -85,7 +85,7 @@
 #descr b "$BLOOD_INTRO$, the caster calls upon infernal powers to create massive fractures in the armour of SUBJECT, causing it to become damaged and potentially destroyed. This does not harm the %victim%, but may damage or destroy PRONOUN_POS armour, even if it was forged by mages."
 
 
-#details "Those that fail to resist roll 10+DRN vs 10+(construction*2), the defender gets no roll. The defender wins ties. If the defender loses, magic items in the hit area are destroyed. Nonmagical armour in the hit area is also destroyed (-50% protection) without any checks."
+#details "Those that fail to resist roll 10+DRN vs 10+(armour's construction level*2), the defender gets no roll. The defender wins ties. If the defender loses, magic items in the hit area are destroyed. Nonmagical armour in the hit area is also destroyed (-50% protection) without any checks."
 
 #priority 1
 #namecond effect > 1000 1 "NAMEPREFIX sundering $mist$"

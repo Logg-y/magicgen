@@ -4,6 +4,7 @@
 #req secondshape == -1
 #fireres 11
 #nameprefix "Exploding"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to explode on death."
 #end
 
@@ -13,6 +14,7 @@
 #set deathfire 10
 #fireres 11
 #nameprefix "Exploding"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to violently explode on death."
 #end
 
@@ -22,5 +24,6 @@
 #set deathfire 25
 #fireres 11
 #nameprefix "Exploding"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has been imbued by magic that causes it to extremely violently explode on death."
 #end

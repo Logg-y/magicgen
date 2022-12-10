@@ -30,7 +30,7 @@
 #descr f "The caster attempts to transmute some of the blood of SUBJECT to acid. If successful, it takes some time for the acid to circulate and damage the victim."
 #descr w "The caster attempts to transmute some of the blood of SUBJECT to acid. If successful, it takes some time for the acid to circulate and damage the victim."
 #descr b "$BLOOD_INTRO$, the caster attempts to transmute some of the blood of SUBJECT to acid. If successful, it takes some time for the acid to circulate and damage the victim."
-#details "If this spell is not resisted, it functions as an unresistable poison effect."
+#details "If this spell is not resisted, it functions as an unresistable poison effect: its damage is not instantaneous and it instead goes into the target's poison pool, but poison resistance offers no protection against it."
 
 #priority 1
 #namecond range < 10 w "NAMEPREFIX touch of acid blood"
@@ -59,7 +59,7 @@
 #precision 100
 #explspr 10170
 #sound 31
-#fatiguecost 10
+#fatiguecost 5
 #range 5020
 
 #paths fwb

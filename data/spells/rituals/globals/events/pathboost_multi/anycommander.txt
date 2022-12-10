@@ -9,13 +9,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of fire!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of fire!"
 #pathboost 0
 #gainmark
 #end
@@ -25,13 +25,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of air!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of air!"
 #pathboost 1
 #gainmark
 #end
@@ -41,13 +41,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of water!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of water!"
 #pathboost 2
 #gainmark
 #end
@@ -57,13 +57,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of earth!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of earth!"
 #pathboost 3
 #gainmark
 #end
@@ -73,13 +73,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of astral power!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of astral power!"
 #pathboost 4
 #gainmark
 #end
@@ -89,13 +89,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of necromancy!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of necromancy!"
 #pathboost 5
 #gainmark
 #end
@@ -105,13 +105,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of nature!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of nature!"
 #pathboost 6
 #gainmark
 #end
@@ -121,13 +121,13 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
-#req_rare 20
+#req_domchance 1
+#req_rare 30
 #req_pop0ok
 #req_commander 1
 #req_targminsize 1
 #nolog
-#msg "A commander has suddenly gained deeper knowledge of blood!"
+#msg "##fulltargname## has suddenly gained deeper knowledge of blood!"
 #pathboost 7
 #gainmark
 #end

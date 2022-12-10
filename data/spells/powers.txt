@@ -31,7 +31,7 @@
 
 #details "Grants +1 fire magic."
 
-#descr 1 "The caster channels the power of fire, allowing the casting of more powerful fire magic." 
+#descr 1 "The caster channels the power of fire, allowing the casting of more powerful fire magic."
 #descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno, allowing the casting of more powerful fire spells."
 
 #priority 1
@@ -53,7 +53,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 15
+#scalerate 3.2
 -- #scalecost 0.7
 
 
@@ -77,8 +77,8 @@
 
 #details "Grants +1 fire magic."
 
-#descr 1 "The power of fire is channeled into SUBJECT, allowing %the% %mage% to cast more powerful fire spells." 
-#descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful fire spells." 
+#descr 1 "The power of fire is channeled into SUBJECT, allowing %the% %mage% to cast more powerful fire spells."
+#descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful fire spells."
 
 #priority 1
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of fiery power"
@@ -120,7 +120,7 @@
 
 #details "Grants +1 water magic."
 
-#descr 4 "The caster channels the power of water, allowing the casting of more powerful water magic." 
+#descr 4 "The caster channels the power of water, allowing the casting of more powerful water magic."
 #descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos, allowing the casting of more powerful water spells."
 
 #priority 1
@@ -143,7 +143,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 15
+#scalerate 3.2
 -- #scalecost 0.7
 
 #aoe 0
@@ -166,8 +166,8 @@
 
 #details "Grants +1 water magic."
 
-#descr 4 "The power of water is channeled into SUBJECT, allowing %the% %mage% to cast more powerful water spells." 
-#descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful water spells." 
+#descr 4 "The power of water is channeled into SUBJECT, allowing %the% %mage% to cast more powerful water spells."
+#descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful water spells."
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of watery power"
@@ -209,7 +209,7 @@
 
 #details "Grants +1 air magic during a storm."
 
-#descr 2 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present." 
+#descr 2 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present."
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of stormbound power"
@@ -229,7 +229,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 15
+#scalerate 3.2
 -- #scalecost 0.7
 
 #aoe 0
@@ -252,7 +252,7 @@
 
 #details "Grants +1 air magic during a storm."
 
-#descr 2 "The power of storms is channeled into SUBJECT, allowing %the% %mage% to cast more powerful air spells during a storm." 
+#descr 2 "The power of storms is channeled into SUBJECT, allowing %the% %mage% to cast more powerful air spells during a storm."
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of stormbound power"
@@ -291,13 +291,15 @@
 
 #details "Grants +1 nature magic."
 
-#descr 64 "The caster channels the power of Gaia, allowing the casting of more powerful nature magic." 
+#descr 64 "The caster channels the power of Gaia, allowing the casting of more powerful nature magic."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of nature's power"
 
 -- for some reason this has half the spell score of the other powers
 #aispellmod 60
+
+#nextspell "Nature Power Real"
 
 #end
 
@@ -311,7 +313,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 15
+#scalerate 3.2
 -- #scalecost 0.7
 
 #aoe 0
@@ -332,7 +334,7 @@
 
 #details "Grants +1 nature magic."
 
-#descr 64 "The power of Gaia is channeled into SUBJECT, allowing %the% %mage% to cast more powerful nature spells." 
+#descr 64 "The power of Gaia is channeled into SUBJECT, allowing %the% %mage% to cast more powerful nature spells."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of nature's power"
@@ -351,7 +353,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 15
+#scalerate 3.2
 -- #scalecost 0.7
 
 #aoe 0
@@ -372,7 +374,7 @@
 
 #details "Grants +1 earth magic and +4 reinvigoration. The reinvigoration is still applied to affected non-mages."
 
-#descr 8 "The power of Earth is channeled into SUBJECT, allowing %the% %mage% to cast more powerful earth spells and be continuously reinvigorated by the earth's power." 
+#descr 8 "The power of Earth is channeled into SUBJECT, allowing %the% %mage% to cast more powerful earth spells and be continuously reinvigorated by the earth's power."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of earthen power"
@@ -388,17 +390,17 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
+#scalerate 0.49
 -- #scalecost 0.7
 
 #aoe 0
 #power 3
-#maxpower 3
+#maxpower 9
 #pathlevel 1
 #explspr 10190
 #sound 31
 #range 0
-#fatiguecost 150
+#fatiguecost 100
 
 
 #paths 16
@@ -408,13 +410,14 @@
 
 #details "Grants +1 to all non-holy magic paths that recipients are skilled in."
 
-#descr 16 "This spell makes the caster more powerful in all paths of magic." 
+#descr 16 "This spell makes the caster more powerful in all paths of magic."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic power"
 
 #aispellmod 50
 
+#scalefatigueexponent 1
 #end
 
 
@@ -454,4 +457,14 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal power"
 
 #end
+
+
+
+
+
+
+
+
+
+
 

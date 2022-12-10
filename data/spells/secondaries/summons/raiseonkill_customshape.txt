@@ -19,7 +19,7 @@
 
 #unitmod "Summon Raise Shape RL1"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -44,7 +44,7 @@
 
 #unitmod "Summon Raise Shape RL2"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -69,7 +69,7 @@
 
 #unitmod "Summon Raise Shape RL3"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -94,7 +94,7 @@
 
 #unitmod "Summon Raise Shape RL4"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -119,7 +119,7 @@
 
 #unitmod "Summon Raise Shape RL5"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -143,7 +143,7 @@
 #magicpathvaluescaling 0.3
 #unitmod "Summon Raise Shape RL6"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -168,7 +168,7 @@
 
 #unitmod "Summon Raise Shape RL7"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -193,7 +193,7 @@
 
 #unitmod "Summon Raise Shape RL8"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -217,7 +217,7 @@
 #magicpathvaluescaling 0.3
 #unitmod "Summon Raise Shape RL9"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -241,7 +241,7 @@
 
 #unitmod "Summon Raise Shape RL10"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -266,7 +266,7 @@
 
 #unitmod "Summon Raise Shape RL11"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -291,7 +291,7 @@
 
 #unitmod "Summon Raise Shape RL12"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end
 
@@ -316,6 +316,6 @@
 
 #unitmod "Summon Raise Shape RL13"
 #descr "The summoned %creature% %is% able to transform killed victims into magical creatures."
-#details "The summoned creatures have a 25% chance to reanimate killed creatures into a random magical creature."
+#details "The summoned creatures have a 10% chance to reanimate killed creatures into a random magical creature."
 
 #end

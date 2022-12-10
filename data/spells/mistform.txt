@@ -12,6 +12,7 @@
 
 #scalerate 2
 
+#range 10
 #aoe 0
 #power 2
 #maxpower 6

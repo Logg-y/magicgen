@@ -70,6 +70,8 @@
 #scalerate 1
 #schools alt
 #pathperresearch 0.4
+
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 #neweffect "Glass Dust Gemless"
@@ -108,6 +110,7 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.3
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 #neweffect "Glass Dust Battlefield"
@@ -138,6 +141,7 @@
 #spelltype 42
 #scalerate 2.2
 #schools alt
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 
@@ -173,6 +177,7 @@
 #scalerate 1
 #schools evo
 #pathperresearch 0.4
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 
@@ -210,6 +215,7 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.3
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 #neweffect "Sharp Thorns Battlefield"
@@ -241,6 +247,7 @@
 #spelltype 42
 #scalerate 2.2
 #schools evo
+#details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
 
 
@@ -293,6 +300,7 @@
 #scalerate 1
 #schools evo
 #pathperresearch 0.4
+#details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #end
 
 
@@ -329,6 +337,7 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.3
+#details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #end
 
 #neweffect "Ice Dust Battlefield"
@@ -351,6 +360,7 @@
 
 #name w "NAMEPREFIX Ice Dust"
 #descr w "The caster freezes water into thousands of tiny crystals that fall upon the battlefield. The icy shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that ice may end up in victims' eyes. Those that are not resistant will also be chilled by the sudden burst of cold."
+#details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #maxpower 9
 
 #nextspell "Ice Dust Chill"

@@ -35,6 +35,7 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of insulation"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of grounding"
 
+#pathperresearch 0.4
 #end
 
 
@@ -88,18 +89,18 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.1
+#scalerate 1
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 2
-#pathlevel 2
+#power 0
+#pathlevel 1
 #explspr 10015
 #sound 31
 #range 15
-#fatiguecost 20
-#maxpower 8
+#fatiguecost 10
+#maxpower 6
 
 
 -- air, earth
@@ -118,6 +119,7 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of greater insulation"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of greater grounding"
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Shock Res +10 battlefield"
@@ -135,7 +137,7 @@
 
 
 #aoe 666
-#power 9
+#power 7
 #pathlevel 4
 #explspr 10015
 #sound 31
@@ -171,19 +173,19 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.9
+#scalerate 0.6
 #scalefatiguemult 3
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 4
+#power 1
 #pathlevel 2
 #explspr 10015
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 11
+#maxpower 8
 
 
 -- air, earth
@@ -202,4 +204,19 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of lightning warding"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of lightning warding"
 
+#scalefatigueexponent 1.5
+#pathperresearch 0.2
 #end
+
+
+
+
+
+
+
+
+
+
+
+
+

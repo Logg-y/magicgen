@@ -118,7 +118,7 @@ def _selectFlag(flagpool, allowed):
     return random.choice(l)
 
 
-def breakdownflag(flag):
+def bitmaskToExponents(flag):
     "Split a given bitflag into a list of exponents such that sum([2 ** x for x in breakdownflag(flag)]) == flag"
     n = 0
     out = []
@@ -127,7 +127,7 @@ def breakdownflag(flag):
         if flag & 2 ** n: out.append(n)
         n += 1
 
-def breakdownflagcomponents(flag):
+def bitmaskToComponents(flag):
     "Split a given bitflag into a list of its components, such that sum(breakdownflag(flag)) == flag"
     n = 0
     out = []

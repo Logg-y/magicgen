@@ -264,7 +264,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 		
 ### New or nonstandard parameters
 
-\#spelltype <int>
+\#spelltype (int)
  * A bitmask with the following:
 	* 1	effect is a buff
 	* 2	effect is an evocation
@@ -281,7 +281,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* 2048	battlefield enchantment
 	* 4096	research scales aispellmod, the spell's aispellmod is added for each additional research level
 		
-\#schools <int>
+\#schools (int)
  * Ignore the modmanual values, this is now a bitmask for what research schools things are allowed into. Note that these are 2^(the mod manual values)
 	 * -1	(special) unresearchable, use for nextspell or other effects that should never generate as standalones
 	 * 1	Conj
@@ -293,7 +293,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	 * 64	Blood
 	 * 128	Holy
 			
-\#paths <int>
+\#paths (int)
  * The paths this spell can be assigned to. As with research schools these are 2^(the mod manual values).
 	* NONE = -1
 	* FIRE = 1
@@ -306,61 +306,61 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	* BLOOD = 128
 	* HOLY = 256 [special, may not act as expected]
 	
-\#pathskipchance <path> <chance>
+\#pathskipchance (path) (chance)
  * There is is x% chance that this effect will not generate with the listed primary path. This is used to do things like making Lightning Bolt rarely have an Astral casting requirement.
 			
-\#secondarypaths <int>:
+\#secondarypaths (int):
  * As #paths, but allowed paths for the secondary path requirement
  
-\#secondarypathchance <int> (default=10)
+\#secondarypathchance (int) (default=10)
  * X% chance for this spell to generate with a secondary path.
 			
-\#skipchance <float>
+\#skipchance (float)
  * percentage chance (0-100) to not give a spell of this type when requested and a directive to make something else instead. Note that if not enough spells generate at a given research level, it attempts a second run ignoring skipchances.
 	
-\#nextspell "<spell effect name>"
+\#nextspell "(spell effect name)"
  * This is NOT what the mod manual normally uses for nextspell!
 	* When this effect is used to create a spell, it will be generated a #nextspell from the given effect name
 	
-\#extraspell "<spell effect name>"
+\#extraspell "(spell effect name)"
 * When this effect is used to create a spell, a copy of the listed spell effect will also generate with the same pathing at the same research level. This is used to make sure communion spells come in pairs, and all the elemental royalty come together, and similar uses.
 			
-\#power <int>
+\#power (int)
  * The "power level" (IE: appropriate research level) of the given numbers. This will be extrapolated to make stronger versions.
 	
-\#maxpower <int>
+\#maxpower (int)
  * The highest allowed research level for this spell effect. This can be greater than 9 in which case the effect can be scaled by modifiers that increase spell power.
 	
-\#pathlevel <int>
+\#pathlevel (int)
 * The path level suggested to cast this spell at the specified power level. This may be diverted into secondary paths or otherwise messed with.
 	
-\#scalerate <float>
+\#scalerate (float)
 * The approximate amount of scaling stats per research level of a spell. It adds N if generated with a power level 1 over #power, 3N if generated 2 over, 6N if generated 3 over...
  * This can affect number of effects, aoe, and damage (see #spelltype and the full description above)
 	
-\#pathperresearch <float> (default=0.66)
+\#pathperresearch (float) (default=0.66)
 * The amount of extra path requirement to add per extra research level. This is rounded DOWN.
 	
-\#scalefatigueexponent <float> (default=1.7)
+\#scalefatigueexponent (float) (default=1.7)
 * Additional fatigue (added to base) is added equal to (#scalerate total)^this.
 	
-\#scalecost <float>
-* This multiplies the calculated scale rate for the purposes of calculating fatigue (and gem counts) and path level. Use <1 if spells come out too high path and expensive, or >1 if they are too low. This option is a bit more of a sledgehammer and I preferred using the other things if at all possible.
+\#scalecost (float)
+* This multiplies the calculated scale rate for the purposes of calculating fatigue (and gem counts) and path level. Use less than 1 if spells come out too high path and expensive, or greater than 1 if they are too low. This option is a bit more of a sledgehammer and I preferred using the other things if at all possible.
 	
-\#descr <pathflag> "description"
+\#descr (pathflag) "description"
 * Set the description for when the primary path is as specified. This can (and should) be used multiple times, one for each path.
 	
-\#name <pathflag> "name"
+\#name (pathflag) "name"
  * Set a possible name for specified primary path. Unlike #descr this can be used multiple times on one path to create a list of names to draw from.
 	
-\#namecond <attrib> <comparison> <comparison value> <pathflag> "name"
-* Like #name, but sets a possible name only when some conditions are met. <attrib> should be a spell parameter. Comparison should be a comparison operator such as < > <= >=. Value is the value to test against.
+\#namecond (attrib) (comparison) (comparison value) (pathflag) "name"
+* Like #name, but sets a possible name only when some conditions are met. (attrib) should be a spell parameter. Comparison should be a comparison operator such as < > <= >=. Value is the value to test against.
  * Example:
  * #namecond aoe < 1 2 "mistform"
  * #namecond aoe > 0 2 "fog warriors"
  * This combination will give the name "mistform" when the effect is aoe 0 (IE: self) and "fog warriors" if the aoe is larger. Both are set to the air path (2).
 	
-\#namecond2 <val1> <op1> <spell value> <op2> <val2> <pathflag> "name"
+\#namecond2 (val1) (op1) (spell value) (op2) (val2) (pathflag) "name"
  * Like #namecond, except it is only true for things within a range.
  * #namecond2 1 < aoe < 10 2 "fog warriors"
  * This condition is only true if the spell aoe is between 1 and 10, and only applies to the air path.
@@ -432,7 +432,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#siegepatrolchaff 1
  * Used to mark ritual summoning spells that generate chaff whose intended purpose is not fighting. This can be patrolling, bringer of fortune, sieging, or other roles: it is used to prevent them getting secondary effects.
  
-\#priority <int>
+\#priority (int)
  * All naming and description commands after this line are at the given priority. Default priority is 0. Possible names are always considered from the highest priorities first - this is to allow modified spells such as touch range spells to always get their special names and descriptions if such a modifier is applied to them.
  
 \#fixeddurationenchantment 1
@@ -475,15 +475,15 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#desrcond2
  * Both function similarly to the effects of the same name on spell effects. The exception is that this is appended to the end of the normal description.
 
-\#req <param> <op> <value>
+\#req (param) (op) (value)
 
-\#req2 <val2> <op1> <param> <op2> <val2>
+\#req2 (val2) (op1) (param) (op2) (val2)
  * Functions in much the same way as \#descrcond and similar functions. All requirements must be satisfied for a modifier to be considered valid.
 
-\#set <param> <value>
+\#set (param) (value)
  * Sets the specified parameter on the FINAL SPELL to the given value. For instance, \#set range 1 would give the spell a range of 1, regardless of whatever range or range scaling the original effect had.
 
-\#mult <param> <value>
+\#mult (param) (value)
  * Multiplies the specified parameter on the final spell by the given value. \#mult range 1.5 would increase range by 1.5 times.
 
 \#nobattlefield
@@ -568,13 +568,13 @@ These function the same as they do when used in modifiers.
 \#ondamage 1
  * If set, the nextspell conferred by this secondary effect will be set to be on damage. This also makes the secondary effect not allowed on spells that already have an ondamage effect.
  
-\#requiredresearchelevel <int>
+\#requiredresearchelevel (int)
  * If set, the research level of the final spell must be this number or higher.
  
 \#anysummon 1
  * If set, the secondary effect can be applied to any kind of summon spell. This can be further limited with #req.
  
-\#minfinalaoe <int>
+\#minfinalaoe (int)
  * If set, the resulting AoE of the spell must be this value or higher. This can be used to prevent very weak secondary effects, for instance MRNE capped damage, from being applied to spells that hit very small areas.
 
 ## Unit Modifiers
@@ -589,9 +589,9 @@ Additionally, the following are supported:
 
 \#descr "String"
 
-\#descrcond <param> <op> <value> "String"
+\#descrcond (param) (op) (value) "String"
 
-\#descrcond2 <val1> <op> <param> <op2> <val2> "String"
+\#descrcond2 (val1) (op) (param) (op2) (val2) "String"
  * This appends to the modified unit's description. Note that path identifiers need not be used here.
  
 \#nameprefix "string"
@@ -600,7 +600,7 @@ Additionally, the following are supported:
 \#weaponmod "string"
  * This goes to the named weaponmod and applies it to the unit. The weaponmod must be valid on at least one of the unit's weapons for the unitmod to be considered valid, and in turn this means that everything must be satisfied for a secondary effect to be used. For instance, if a weapon mod specifies it only wants to apply to nonmagical weapons, any unitmod that uses the weapon mod cannot apply it to something with only magical weapons.
  
-\#set <param> value
+\#set (param) value
  * This works as above, except it expects unit parameters.
  
 \#landok 1
@@ -615,7 +615,7 @@ Additionally, the following are supported:
 \#attributeforrandomunit "attributename"
  * If set, sets attributename to the unit id output from the unitmod's eventset. For instance, having an eventset build a montag and using #attributeforrandomunit "raiseshape" would cause the modified units to raise killed creatures as whatever random magicgen creatures the event set's montag output was.
  
-\#addweapon <id>
+\#addweapon (id)
  * Creatures modified with this weapon mod gain the weapon ID as an additional weapon.
 
 ## Weapon Modifiers
@@ -692,7 +692,7 @@ Each event set can have at most one unitid associated with it. This can be speci
  * This causes the named param to be scaled with the scale factor of the parent spell. The float value after the named param is a multiplier. For instance, \#scaleparam "req_rare 2.0" will increase the value of all req_rares in the event block by 2 multiplied by the spell scaling rate. This command can be used multiple times.
  
 \#scaleparam_mult "param" 1.0
- * This causes all instances of the named param to have an amount added to them based on the base value of the parameter. Specifically, the amount added is (<base value> * scale amount x <value of this command>). For instance, \#scaleparam_mult "req_rare 0.2" will add (20% * <the spell scaling rate>) to the value of all req_rares in the event block. This command can be used multiple times.
+ * This causes all instances of the named param to have an amount added to them based on the base value of the parameter. Specifically, the amount added is ((base value) * scale amount x (value of this command)). For instance, \#scaleparam_mult "req_rare 0.2" will add (20% * (the spell scaling rate) * (the req_rare's base value)) to the value of each instance of req_rare in the event block. This command can be used multiple times.
  
 \#makedummymonster 0
  * If set, a firstshape dummy will not be made by the montag builder.
@@ -700,7 +700,7 @@ Each event set can have at most one unitid associated with it. This can be speci
 \#makebattledummymonster 1
  * If set, a dummy monster suitable for battles (that will transform into a random creature after one round) will be made by the montag builder.
  
-\#dummymonstername <path> "Name"
+\#dummymonstername (path) "Name"
  * Can be used multiple times per path. Gives the given name to dummy monsters. Which names are used depends on the primary spell's path: for instance the blood wall defender spells use #dummymonstername 128 "Infernal Creature"
  
 ### Module Commands
@@ -897,7 +897,7 @@ Additionally, the following work in the same way as the eventset equivalent:
 \#allowedunitmod
 \#selectunitmod
 
-\#name <path> <name>
+\#name (path) (name)
  * Gives a name for the site when the associated spell effect has the given path.
 
  
@@ -929,7 +929,7 @@ The following have special meaning and will be replaced:
 	
 Words can also be autopluralised and replaced with a defined list of synonyms. These are in /data/naming. Each line should be in the format:
 
-<Word to Replace><tab><Replacement>
+(Word to Replace)(tab)(Replacement)
 
 The replacement can be omitted, but the tab is always required.
 

@@ -9,7 +9,8 @@
 #nation -2
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
-#req_domchance 2
+#req_domchance 1
+#req_rare 80
 #req_commander 1
 #req_targminsize 1
 #req_pop0ok

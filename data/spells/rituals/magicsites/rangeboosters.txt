@@ -45,7 +45,7 @@
 
 #newsite "Range Booster Site Death"
 
-#name 16 "Spirit Guidance"
+#name 32 "Spirit Guidance"
 
 #deathrange 2
 #scaleparam "deathrange" 1.0
@@ -54,7 +54,7 @@
 
 #newsite "Range Booster Site Nature"
 
-#name 16 "Connection of Gaia"
+#name 64 "Connection of Gaia"
 
 #naturerange 2
 #scaleparam "naturerange" 1.0

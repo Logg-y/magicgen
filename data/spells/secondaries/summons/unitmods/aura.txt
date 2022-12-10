@@ -3,6 +3,7 @@
 #req heat == -1
 #req aquatic == -1
 #set cold 3
+#reqfightsinmelee 1
 #coldres 8
 #nameprefix "Glacial"
 #descr "This particular CREATURE is surrounded by magical chilling winds. Nearby creatures may become fatigued from the cold."
@@ -13,6 +14,7 @@
 #req heat == -1
 #req aquatic == -1
 #set heat 3
+#reqfightsinmelee 1
 #fireres 8
 #nameprefix "Hot"
 #descr "This particular CREATURE is surrounded by dry, hot winds. Nearby creatures may become fatigued from the heat."
@@ -22,6 +24,7 @@
 #req poisoncloud == -1
 #set poisoncloud 3
 #poisonres 21
+#reqfightsinmelee 1
 #nameprefix "Noxious"
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end
@@ -32,6 +35,7 @@
 #req secondshape == -1
 #set diseasecloud 3
 #set diseaseres 100
+#reqfightsinmelee 1
 #nameprefix "Infectious"
 #descr "This particular CREATURE carries many virulent diseases which it is immune to. Nearby creatures will become diseased unless they successfully resist."
 #end
@@ -40,6 +44,7 @@
 #req mindslime == -1
 #set mindslime 3
 #voidsanity 11
+#reqfightsinmelee 1
 #nameprefix "Invasive"
 #descr "This particular CREATURE attacks the minds of those nearby, slowing them if they fail to resist."
 #end
@@ -47,6 +52,7 @@
 #newunitmod "Summon Sleepaura"
 #req sleepaura == -1
 #set sleepaura 3
+#reqfightsinmelee 1
 #nameprefix "Wearying"
 #descr "This particular CREATURE is surrounded by sleeping fog, putting nearby enemies into a magical sleep unless they resist."
 #end
@@ -54,6 +60,7 @@
 #newunitmod "Summon Fearaura"
 #req fear == -1
 #set fear 5
+#reqfightsinmelee 1
 #nameprefix "Terrifying"
 #descr "This particular CREATURE is magically terrifying, which may cause enemies nearby to flee in terror."
 #end
@@ -66,6 +73,7 @@
 #req heat == -1
 #req aquatic == -1
 #set cold 6
+#reqfightsinmelee 1
 #coldres 8
 #nameprefix "Glacial"
 #descr "This particular CREATURE is surrounded by magical chilling winds. Nearby creatures may become fatigued from the cold."
@@ -76,6 +84,7 @@
 #req heat == -1
 #req aquatic == -1
 #set heat 6
+#reqfightsinmelee 1
 #fireres 8
 #nameprefix "Hot"
 #descr "This particular CREATURE is surrounded by dry, hot winds. Nearby creatures may become fatigued from the heat."
@@ -85,6 +94,7 @@
 #req poisoncloud == -1
 #set poisoncloud 6
 #poisonres 21
+#reqfightsinmelee 1
 #nameprefix "Noxious"
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end
@@ -95,6 +105,7 @@
 #req secondshape == -1
 #set diseasecloud 6
 #set diseaseres 100
+#reqfightsinmelee 1
 #nameprefix "Infectious"
 #descr "This particular CREATURE carries many virulent diseases which it is immune to. Nearby creatures will become diseased unless they successfully resist."
 #end
@@ -103,6 +114,7 @@
 #req mindslime == -1
 #set mindslime 6
 #voidsanity 11
+#reqfightsinmelee 1
 #nameprefix "Invasive"
 #descr "This particular CREATURE attacks the minds of those nearby, slowing them if they fail to resist."
 #end
@@ -111,6 +123,7 @@
 #req sleepaura == -1
 #set sleepaura 6
 #nameprefix "Wearying"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by sleeping fog, putting nearby enemies into a magical sleep unless they resist."
 #end
 
@@ -118,6 +131,7 @@
 #req fear == -1
 #set fear 10
 #nameprefix "Terrifying"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is magically terrifying, which may cause enemies nearby to flee in terror."
 #end
 
@@ -130,6 +144,7 @@
 #set cold 10
 #coldres 8
 #nameprefix "Glacial"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by magical chilling winds. Nearby creatures may become fatigued from the cold."
 #end
 
@@ -140,6 +155,7 @@
 #set heat 10
 #fireres 8
 #nameprefix "Hot"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by dry, hot winds. Nearby creatures may become fatigued from the heat."
 #end
 
@@ -148,6 +164,7 @@
 #set poisoncloud 10
 #poisonres 21
 #nameprefix "Noxious"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by magical poisonous gas. Nearby creatures will become poisoned unless they are resistant."
 #end
 
@@ -158,6 +175,7 @@
 #set diseasecloud 10
 #set diseaseres 100
 #nameprefix "Infectious"
+#reqfightsinmelee 1
 #descr "This particular CREATURE carries many virulent diseases which it is immune to. Nearby creatures will become diseased unless they successfully resist."
 #end
 
@@ -166,6 +184,7 @@
 #set mindslime 10
 #voidsanity 11
 #nameprefix "Invasive"
+#reqfightsinmelee 1
 #descr "This particular CREATURE attacks the minds of those nearby, slowing them if they fail to resist."
 #end
 
@@ -173,6 +192,7 @@
 #req sleepaura == -1
 #set sleepaura 10
 #nameprefix "Wearying"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is surrounded by sleeping fog, putting nearby enemies into a magical sleep unless they resist."
 #end
 
@@ -180,5 +200,6 @@
 #req fear == -1
 #set fear 18
 #nameprefix "Terrifying"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is magically terrifying, which may cause enemies nearby to flee in terror."
 #end

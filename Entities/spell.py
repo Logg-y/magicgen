@@ -93,26 +93,53 @@ class Spell(object):
         out += self.modcmdsbefore
 
         # this spec is "next effect on damage" which ALWAYS calls the next spell id and not the thing you ask for
-        if self.nextspell != "" and self.nextspell is not None and not (self.spec & 1152921504606846976):
+        #if self.nextspell != "" and self.nextspell is not None and not (self.spec & 1152921504606846976):
+        #    out += self.nextspell.output()
+
+        # Nextspells and file/id arrangement.
+        # Each spell currently tries put its nextspells before it
+        # Meaning doing this top-down from parent to child yields:
+        # on damage effect nextspell, X+3
+        # on damage effect, X+2
+        # main spell nextspell, X+1
+        # Main spell, X
+
+        # Which is probably fine and perfectly okay?
+        if self.nextspell != "" and self.nextspell is not None:
+            # Because nextspells are technically made before the main spell is finalised, their IDs
+            # will decrease down the chain instead of increase
+            # Just switching IDs at each level should fix that...
+            nextspell = self
+            depth = 0
+            minid = None
+            maxid = None
+            while nextspell is not None and nextspell != "":
+                print(f"Nextspell stack: depth={depth} {nextspell.name} -> {nextspell.id}")
+                depth += 1
+                if minid is None or minid > nextspell.id:
+                    minid = copy.copy(nextspell.id)
+                if maxid is None or maxid < nextspell.id:
+                    maxid = copy.copy(nextspell.id)
+                nextspell = nextspell.nextspell
+
+            print(f"minid = {minid}, maxid = {maxid}")
+
+            nextspell = self
+            depth = 0
+            while nextspell is not None and nextspell != "":
+                print(f"Nextspell stack: depth={depth} {nextspell.name} -> {nextspell.id}")
+                depth += 1
+                if nextspell.id > maxid:
+                    print(f"ERROR: Nextspell {nextspell.name} at depth {depth} in chain had too high id {nextspell.id} > expected max {maxid}")
+                    return ""
+                nextspell.id = minid
+                print(f"Assigned {nextspell.name} at depth {depth} id {minid}")
+                minid += 1
+                nextspell = nextspell.nextspell
+
             out += self.nextspell.output()
-
-        # They MUST have consecutive IDs
-        # because of the way I generate them they are normally backwards
-        # so this swaps them back round the right way
-        if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
-            firstid = copy.copy(self.nextspell.id)
-            myid = copy.copy(self.id)
-            self.id = firstid
-            self.nextspell.id = myid
-            # If your ondamage effect has a nextspell, its nextspell needs to go BEFORE the main spell!
-            # this is so the file arrangement is:
-            # <nextspell chain>
-            # spell with extra effect on damage
-            # on damage spell which calls nextspell chain
-            if self.nextspell.nextspell != "":
-                out += self.nextspell.nextspell.output()
-
-        out += f"#newspell {self.id}\n"
+        print(f"Writing: {self.name} -> {self.id}")
+        out += f"#selectspell {self.id}\n"
         if self.copyspell is not None:
             out += '#copyspell "{}"{}'.format(self.copyspell, "\n")
         if self.restricted is not None:
@@ -181,8 +208,8 @@ class Spell(object):
             out += f"#friendlyench {self.friendlyench}\n"
         out += "#end\n\n"
 
-        if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
-            out += self.nextspell.output()
+        #if self.nextspell != "" and self.nextspell is not None and (self.spec & 1152921504606846976):
+        #    out += self.nextspell.output()
         self.hasgenerated = True
         return out
 

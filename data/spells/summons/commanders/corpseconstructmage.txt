@@ -6,7 +6,7 @@
 #power 5
 #maxpower 14
 #precision -100
-#nreff 1
+#nreff 2
 #pathlevel 3
 #chassisvalue 35
 #range 6
@@ -63,13 +63,14 @@
 
 
 #name ad "Summon NAMEPREFIX Corpse Construct Reanimator"
-#descr ad "The caster summons a Corpse Construct Reanimator to serve him. The Corpse Construct has skill in Earth and Water, and sometimes also in Fire magic."
+#descr ad "The caster summons a Corpse Construct Reanimator to serve him. The Corpse Construct has skill in Air and Death magic."
 #details "Corpse Construct Reanimators are A2D2 mages with the following random paths:\n20% AD"
 
 #spelltype 20
 
 #scalerate 1
 #end
+
 
 
 

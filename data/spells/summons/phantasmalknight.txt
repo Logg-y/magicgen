@@ -15,9 +15,9 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 50
+#skipchance 90
 
-#name 2 "$conjure$ NAMEPREFIX Phantasmal $Knight$"
+#name 2 "$conjure$ NAMEPREFIX Phantasmal %Knight%"
 #descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These knights are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 528
@@ -33,8 +33,8 @@
 #effect 10001
 #damage 696
 #spec 8388608
-#power 3
-#maxpower 7
+#power 2
+#maxpower 6
 #nreff 3008
 #pathlevel 2
 #fatiguecost 300
@@ -42,12 +42,12 @@
 #paths 2
 #secondarypaths 2
 
-#name 2 "$Summon$ NAMEPREFIX Phantasmal $Knight$"
+#name 2 "$Summon$ NAMEPREFIX Phantasmal %Knight%"
 #descr 2 "Summons ARTICLE phantasmal %knight% to fight for the caster. These beasts are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
 
 #spelltype 20
 
-#skipchance 50
+#skipchance 90
 
 #scalefatigueexponent -1.3
 #scalefatiguemult 9
@@ -67,7 +67,7 @@
 #pathlevel 3
 #fatiguecost 300
 #schools alt
-#skipchance 99
+#skipchance 97
 
 #paths 2
 #secondarypaths 2
@@ -90,7 +90,7 @@
 #pathlevel 3
 #fatiguecost 600
 #schools alt
-#skipchance 99.6
+#skipchance 99
 
 #paths 2
 #secondarypaths 2

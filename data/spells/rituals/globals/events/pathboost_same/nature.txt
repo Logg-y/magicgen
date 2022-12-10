@@ -10,7 +10,6 @@
 #req_friendlyench ENCHANTID
 #req_enchdom ENCHANTID
 #req_domchance 1
-#req_rare 40
 #req_targpath1 6
 #req_pop0ok
 #nolog

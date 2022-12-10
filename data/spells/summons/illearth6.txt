@@ -24,7 +24,7 @@
 #spelltype 528
 #scalefatiguemult 40
 
-#scalerate 1
+#scalerate 0.4
 #end
 
 #neweffect "illearth6 ritual"
@@ -110,3 +110,4 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 210
 #end
+

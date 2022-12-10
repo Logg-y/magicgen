@@ -13,13 +13,18 @@
 
 #aoe 0
 #power 0
-#maxpower 5
+#maxpower 8
 #pathlevel 1
 #explspr 10021
 #sound 41
-#fatiguecost 20
+#fatiguecost 5
 #precision 100
 #range 100
+
+#scalerate 0.4
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.1
 
 #skipchance 80
 

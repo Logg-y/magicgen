@@ -4,6 +4,7 @@
 #set prot 15
 #coldres -4
 #nameprefix "Stone"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has had its skin turned to stone, making it difficult to harm with physical damage but more vulnerable to cold."
 #end
 
@@ -13,6 +14,7 @@
 #set prot 20
 #shockres -4
 #nameprefix "Iron"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has had its skin turned to iron, making it very difficult to harm with physical damage but more vulnerable to shock."
 #end
 
@@ -22,5 +24,6 @@
 #set prot 10
 #fireres -4
 #nameprefix "Bark"
+#reqfightsinmelee 1
 #descr "This particular CREATURE has had its skin turned to bark, making it somewhat difficult to harm with physical damage but more vulnerable to fire."
 #end

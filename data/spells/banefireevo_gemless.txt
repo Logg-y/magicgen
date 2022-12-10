@@ -25,6 +25,7 @@
 
 #descr 1 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 #descr 32 "The caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
+#descr b "$BLOOD_INTRO$, the caster throws ARTICLE %ball% of banefire at his enemies. Banefire is a sickly greenish flame said to burn in the braziers of the Underworld. The green flame consumes the life force of those burnt by it, even after the flames themselves have subsided."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34

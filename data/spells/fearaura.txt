@@ -13,8 +13,8 @@
 
 #aoe 0
 #power 3
-#maxpower 9
-#pathlevel 3
+#maxpower 8
+#pathlevel 2
 #explspr 10022
 #sound 31
 #fatiguecost 20
@@ -40,5 +40,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of fearful auras"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of fearful auras"
 
+#pathperresearch 0.4
 #end
+
 

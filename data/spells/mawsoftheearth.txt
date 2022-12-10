@@ -40,8 +40,8 @@
 #descr e "The earth cringes and heaves and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
 #descr b "$BLOOD_INTRO$, the caster causes the earth to cringe and heave and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
 #priority 1
-#namecond range < 10 b "NAMEPREFIX Grip of the Lower Planes"
-#namecond range < 10 e "NAMEPREFIX Grip of the Earth"
+#namecond range < 10 b "NAMEPREFIX Touch of the Lower Planes"
+#namecond range < 10 e "NAMEPREFIX Touch of the Earth"
 #maxpower 9
 
 #nextspell "Maws Earthgrip"
@@ -79,8 +79,8 @@
 #descr b "$BLOOD_INTRO$, the caster makes the earth cringe and heave and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
 #descr e "The earth cringes and heaves and a great maw with teeth of rock opens and swallows those unfortunate to be standing in the area. Those who survive will be partially buried in the ground and immobilized."
 #priority 1
-#namecond range < 10 e "NAMEPREFIX Grip of the Earth"
-#namecond range < 10 e "NAMEPREFIX Grip of the Lower Planes"
+#namecond range < 10 e "NAMEPREFIX Touch of the Earth"
+#namecond range < 10 e "NAMEPREFIX Touch of the Lower Planes"
 #maxpower 14
 
 #nextspell "Maws Earthgrip"

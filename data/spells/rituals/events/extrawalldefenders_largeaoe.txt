@@ -1,6 +1,6 @@
-#neweventset "Extra Wall Defenders"
+#neweventset "Extra Wall Defenders Large AoE"
 
-#magicsite "Extra Wall Defenders"
+#magicsite "Extra Wall Defenders Large AoE"
 
 #end
 

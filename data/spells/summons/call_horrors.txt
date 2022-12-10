@@ -16,8 +16,10 @@
 #secondarypathchance 70
 
 #name 128 "Call Lesser %Horror%"
-#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts several lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond effectivenreff == 1 128 "Through blood sacrifice, the caster attracts a lesser horror to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond2 1 < effectivenreff < 10 128 "Through blood sacrifice, the caster attracts several lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
 #descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many lesser horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#details "This spell summons EFFECTIVENREFF lesser horror(s) to the battle."
 
 #spelltype 528
 
@@ -43,8 +45,11 @@
 #secondarypathchance 70
 
 #name 128 "Call %Horror%"
-#descrcond effectivenreff < 10 128 "Through blood sacrifice, the caster attracts horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+
+#descrcond effectivenreff == 1 128 "Through blood sacrifice, the caster attracts a horror to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#descrcond2 1 < effectivenreff < 10 128 "Through blood sacrifice, the caster attracts several horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
 #descrcond effectivenreff >= 10 128 "Through blood sacrifice, the caster attracts many horrors to the edge of the battlefield. They will attack friend and foe alike, but will prefer beings previously marked by horrors."
+#details "This spell summons EFFECTIVENREFF greater horror(s) to the battle."
 
 #spelltype 528
 
@@ -58,11 +63,11 @@
 #provrange 4
 #damage -6
 #spec 8388608
-#power 5
-#maxpower 5
+#power 6
+#maxpower 6
 #nreff 1
 #pathlevel 5
-#fatiguecost 300
+#fatiguecost 2000
 #schools 16
 
 #scalefatigueexponent 0.7
@@ -90,7 +95,7 @@
 #maxpower 8
 #nreff 1
 #pathlevel 5
-#fatiguecost 300
+#fatiguecost 2500
 #schools 16
 
 #scalefatigueexponent 0.7

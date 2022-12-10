@@ -5,7 +5,7 @@
 #power 9
 #maxpower 9
 #nreff 1
-#pathlevel 8
+#pathlevel 7
 #fatiguecost 15000
 #schools 16
 
@@ -98,7 +98,7 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 9
+#pathlevel 7
 #fatiguecost 6500
 #schools 4
 #unique 1
@@ -754,7 +754,7 @@
 #power 6
 #maxpower 6
 #nreff 1
-#pathlevel 7
+#pathlevel 6
 #fatiguecost 7000
 #schools 4
 #unique 1

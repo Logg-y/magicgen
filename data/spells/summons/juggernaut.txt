@@ -23,6 +23,13 @@
 #scalefatiguemult 300
 
 #scalerate 1
+
+-- This might seem like a very odd thing on first glance, but the big reason these need to be limited is dominion printing
+-- Turns out that globals that churn out tons of Tiny Juggernauts gets problematic
+#siegepatrolchaff 1
+
+#nocostreduction 1
+#noresearchreduction 1
 #end
 
 #neweffect "juggernaut Remote Assassination"

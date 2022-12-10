@@ -16,7 +16,7 @@
 
 #eventset "Range Booster Site Fire"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -30,7 +30,7 @@
 
 #name 1 "Pyre of Distant Focus"
 #descr 1 "The caster lights a magical pyre that is able to focus power to distant provinces. While it burns, the pyre allows fire spells to be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Fire rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Fire rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -52,7 +52,7 @@
 
 #eventset "Range Booster Site Water"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -66,7 +66,7 @@
 
 #name 4 "Pool of Distant Focus"
 #descr 4 "The caster enchants a pool of water that is able to focus power to distant provinces. While the enchantment persists, the pool allowss water spells to be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Water rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Water rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -89,7 +89,7 @@
 
 #eventset "Range Booster Site Air"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -103,7 +103,7 @@
 
 #name 2 "Tamed Air Currents"
 #descr 2 "The caster enchants air currents that facilitate the projection of power to distant lands. While the enchantment persists, air spells can be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Air rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Air rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -126,7 +126,7 @@
 
 #eventset "Range Booster Site Earth"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -140,7 +140,7 @@
 
 #name 8 "Crystal of Focus"
 #descr 8 "The caster enchants a large crystal with magical power, causing it to act as a focus. While the enchantment persists, earth spells can be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Earth rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Earth rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -162,7 +162,7 @@
 
 #eventset "Range Booster Site Astral"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -176,7 +176,7 @@
 
 #name 16 "Astral Focus"
 #descr 16 "The caster forms an enchanted focus of pure magic. While the enchantment persists, astral spells can be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Astral rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Astral rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -198,7 +198,7 @@
 
 #eventset "Range Booster Site Death"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -212,7 +212,7 @@
 
 #name 32 "Spiritual Guidance"
 #descr 32 "The caster raises long dead necromancers to assist with projecting necromantic spells further. While the enchantment persists, death spells can be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Death rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Death rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end
@@ -234,7 +234,7 @@
 
 #eventset "Range Booster Site Nature"
 
-#skipchance 90
+#skipchance 96
 
 #scalerate 1
 
@@ -248,7 +248,7 @@
 
 #name 64 "Roots of the World"
 #descr 64 "The caster temporarily creates a local connection to Gaia's roots that span the world. While this enchantment persists, nature spells can be projected further than normal."
-#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Nature rituals by SCALEAMT provinces."
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Nature rituals by SCALEAMT provinces. Fails if cast in a province with 8 magic sites already."
 
 #spelltype 4
 #end

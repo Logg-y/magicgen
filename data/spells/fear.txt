@@ -27,7 +27,7 @@
 #namecond effectiveaoe == 1 32 "NAMEPREFIX Frighten"
 
 #namecond2 1 < effectiveaoe < 30 32 "NAMEPREFIX Panic"
-#namecond effectiveaoe > 30 32 "NAMEPREFIX Wave of Dread"
+#namecond effectiveaoe >= 30 32 "NAMEPREFIX Wave of Dread"
 
 #descr 32 "SUBJECT is filled with a dark fear. This may cause PRONOUN to flee in terror."
 

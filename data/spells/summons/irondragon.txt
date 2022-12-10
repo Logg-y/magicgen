@@ -6,8 +6,8 @@
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 4
-#fatiguecost 120
+#pathlevel 3
+#fatiguecost 220
 #scalefatiguemult 50
 #scalefatigueexponent -2.1
 #pathperresearch 0.4
@@ -116,5 +116,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 600
 #end
+
+
 
 

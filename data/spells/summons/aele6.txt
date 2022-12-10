@@ -19,12 +19,13 @@
 #details "The elementals are size 6."
 #name 2 "$conjure$ NAMEPREFIX Massive Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE air water %elemental%. They will fight for him until the battle ends."
-#scalefatiguemult 25
+#scalefatiguemult 20.0
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 30
-#scalefatigueexponent -1.9
+#scalerate 0.16
+#scalefatiguemult 20.0
+#scalefatigueexponent 1.6
+#pathperresearch 0.4
 #end
 
 #neweffect "aeles6 ritual"
@@ -50,7 +51,7 @@
 #spelltype 20
 
 #scalefatigueexponent -1.6
-#scalefatiguemult 70
+#scalefatiguemult 150.0
 
 #scalerate 2
 #end
@@ -109,5 +110,10 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
+
+
+
+
+
 
 

@@ -40,13 +40,13 @@
 #scalerate 1
 -- #scalecost 1.1
 
-#aoe 0
+#aoe 3
 #power 5
-#maxpower 8
+#maxpower 12
 #pathlevel 3
 #explspr 10279
 #sound 45
-#fatiguecost 20
+#fatiguecost 100
 #precision 100
 #range 100
 
@@ -74,16 +74,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 0.35
 -- #scalecost 1.1
 
 #aoe 0
 #power 5
-#maxpower 8
+#maxpower 14
 #pathlevel 3
 #explspr 10279
 #sound 45
-#fatiguecost 20
+#fatiguecost 15
 #precision 100
 #range 100
 
@@ -99,7 +99,11 @@
 
 #nextspell "Imprisonment Kill Living"
 
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#fatigueperresearch 0
 #end
+
 
 
 
@@ -137,3 +141,5 @@
 #nextspell "Imprisonment Kill Living"
 
 #end
+
+

@@ -3,6 +3,7 @@
 #nameprefix "Blazing"
 #addweapon 350
 #req trample <= 0
+#reqfightsinmelee 1
 #descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
 #end
 
@@ -11,6 +12,7 @@
 #nameprefix "Firebreathing"
 #addweapon 61
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe blasts of fire onto its enemies."
 #end
 
@@ -19,6 +21,7 @@
 #nameprefix "Vile"
 #addweapon 62
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe poisonous bile onto its enemies."
 #end
 
@@ -34,6 +37,7 @@
 #nameprefix "Frostbreathing"
 #addweapon 226
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe blasts of frost onto its enemies."
 #end
 
@@ -42,6 +46,7 @@
 #nameprefix "Poisonbreathing"
 #addweapon 141
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe blasts of toxic fluid onto its enemies."
 #end
 
@@ -56,6 +61,7 @@
 #nameprefix "Fey"
 #addweapon 228
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE able to conjure green fey blasts that fatigue those they hit."
 #end
 
@@ -64,6 +70,7 @@
 #nameprefix "Blazing"
 #addweapon 229
 #req trample <= 0
+#reqfightsinmelee 1
 #descr "This particular CREATURE is able to conjure blasts of flame to strike those close to it."
 #end
 
@@ -80,6 +87,8 @@
 #nameprefix "Plaguebreathing"
 #addweapon 254
 #req trample <= 0
+#reqfightsinmelee 1
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe huge blasts of diseased air at enemies."
 #end
 
@@ -87,6 +96,7 @@
 #nameprefix "Webspitting"
 #addweapon 262
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to spit entangling messes of webs at enemies."
 #end
 
@@ -94,6 +104,7 @@
 #nameprefix "Leeching"
 #addweapon 269
 #req trample <= 0
+#reqfightsinmelee 1
 #descr "This particular CREATURE is able to leech the souls of its enemies."
 #end
 
@@ -109,6 +120,8 @@
 #fireres 6
 #addweapon 567
 #req trample <= 0
+#reqfightsinmelee 1
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe cones of fire."
 #end
 
@@ -117,6 +130,8 @@
 #nameprefix "Frostbreathing"
 #addweapon 568
 #req trample <= 0
+#reqfightsinmelee 1
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe cones of frost."
 #end
 
@@ -125,6 +140,8 @@
 #nameprefix "Gasbreathing"
 #addweapon 569
 #req trample <= 0
+#reqfightsinmelee 1
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe cones of gas."
 #end
 
@@ -132,6 +149,7 @@
 #nameprefix "Hypnotic"
 #addweapon 595
 #req trample <= 0
+#reqfightsinmelee 1
 #descr "This particular CREATURE is able to hypnotize enemies that approach."
 #end
 
@@ -139,6 +157,7 @@
 #nameprefix "Spitting"
 #addweapon 599
 #req trample <= 0
+#req aquatic <= 0
 #descr "This particular CREATURE is able to spit corrosive fluid."
 #end
 
@@ -146,6 +165,8 @@
 #nameprefix "Waterbreathing"
 #addweapon 709
 #req trample <= 0
+#reqfightsinmelee 1
+#req aquatic <= 0
 #descr "This particular CREATURE is able to breathe a cone of high pressure water."
 #end
 
@@ -154,6 +175,7 @@
 #nameprefix "Icebreathing"
 #addweapon 752
 #req trample <= 0
+#reqfightsinmelee 1
 #descr "This particular CREATURE is able to produce a blast of cold air at nearby enemies."
 #end
 

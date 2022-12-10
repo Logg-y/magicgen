@@ -78,7 +78,7 @@
 #namecond effectiveaoe > 600 128 "NAMEPREFIX Wind of Death"
 
 #descr 32 "SUBJECT begins to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
-#descr b "$BLOOD_INFO$, the caster makes SUBJECT begin to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
+#descr b "$BLOOD_INTRO$, the caster makes SUBJECT begin to age at an incredible rate. Regeneration may save the %victim% from death, but the years of life lost are permanent."
 #details "Affected creatures age at a rate of 5 years per combat round, which is modified by any age rate modifiers such as quickness. There is a 1% chance that they are allowed a difficult MR check each round to end the effect. Being aged by this spell may also cause additional damage, the chance of which is increased the older the victim has or the faster they age."
 
 #priority 1

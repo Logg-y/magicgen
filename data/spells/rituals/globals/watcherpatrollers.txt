@@ -2,11 +2,11 @@
 #effect 10081
 #damage 17
 #spec 0
-#power 8
+#power 7
 #maxpower 8
 #nreff 1
-#pathlevel 7
-#fatiguecost 7000
+#pathlevel 6
+#fatiguecost 5000
 #schools 24
 #unique 1
 #paths 10

@@ -3,6 +3,7 @@
 #req size == 2
 #set formationfighter 2
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -11,6 +12,7 @@
 #req size == 3
 #set formationfighter 3
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -19,6 +21,7 @@
 #req size == 4
 #set formationfighter 4
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -27,6 +30,7 @@
 #req size == 5
 #set formationfighter 5
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -35,6 +39,7 @@
 #req size == 6
 #set formationfighter 6
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -43,6 +48,7 @@
 #req size == 2
 #set formationfighter 4
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is extremely adept at fighting when surrounded by its comrades and can form more dense formations."
 #end
 
@@ -51,5 +57,6 @@
 #req size == 3
 #set formationfighter 6
 #nameprefix "Organised"
+#reqfightsinmelee 1
 #descr "This particular CREATURE is extremely adept at fighting when surrounded by its comrades and can form more dense formations."
 #end

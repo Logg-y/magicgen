@@ -18,7 +18,7 @@
 #sound 31
 #range 15
 #fatiguecost 10
-#maxpower 5
+#maxpower 4
 
 
 -- death, nature, blood
@@ -39,6 +39,7 @@
 
 #details "Grants +10 poison resistance."
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Poison Res +10 battlefield"
@@ -94,18 +95,18 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.1
+#scalerate 1
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 2
-#pathlevel 2
+#power 0
+#pathlevel 1
 #explspr 10017
 #sound 31
 #range 15
-#fatiguecost 20
-#maxpower 8
+#fatiguecost 10
+#maxpower 6
 
 
 -- air, earth
@@ -128,6 +129,7 @@
 
 #details "Grants +15 poison resistance."
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Poison Res +15 battlefield"
@@ -144,13 +146,13 @@
 
 
 #aoe 666
-#power 9
+#power 7
 #pathlevel 4
 #explspr 10017
 #sound 31
 #range 15
 #fatiguecost 200
-#maxpower 9
+#maxpower 7
 #unique 1
 
 -- air, earth
@@ -187,19 +189,19 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.9
+#scalerate 0.6
 #scalefatiguemult 3
 -- #scalecost 0.7
 
 
 #aoe 0
-#power 4
+#power 1
 #pathlevel 2
 #explspr 10017
 #sound 31
 #range 15
 #fatiguecost 20
-#maxpower 11
+#maxpower 8
 
 
 -- air, earth
@@ -221,4 +223,18 @@
 
 #details "Grants +20 poison resistance."
 
+#scalefatigueexponent 1.5
+#pathperresearch 0.2
 #end
+
+
+
+
+
+
+
+
+
+
+
+

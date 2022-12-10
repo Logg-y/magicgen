@@ -1,7 +1,7 @@
 from copy import copy
 
 from Services import utils
-from Services.utils import breakdownflag
+from Services.utils import bitmaskToExponents
 
 # Weaponmods are called only from UnitMods which in turn come from SecondaryEffects
 # which means they can be a LOT simpler, in fact the only thing that really needs checking
@@ -108,7 +108,7 @@ class WeaponMod(object):
             if spec & 2097152:
                 spec -= 2097152
 
-        breakdown = breakdownflag(spec)
+        breakdown = bitmaskToExponents(spec)
 
         print(breakdown)
 

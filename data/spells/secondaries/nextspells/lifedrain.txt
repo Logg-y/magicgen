@@ -35,7 +35,7 @@
 
 #neweffect "3AN life drain Secondary mrnh damaging"
 #copyspell "Leech"
-#effect 2
+#effect 103
 #damage 3
 #spec 17592731320448
 #schools -1
@@ -106,7 +106,7 @@
 
 #neweffect "3AN life drain Secondary mrnh"
 #copyspell "Leech"
-#effect 2
+#effect 103
 #damage 3
 #spec 17592731320448
 #schools -1

@@ -22,6 +22,7 @@ class UnitMod(object):
         self.landok = 0
         self.uwok = 0
         self.reqmage = 0
+        self.reqfightsinmelee = 0
 
         self.reqs = []
         self.setcommands = []
@@ -78,7 +79,25 @@ class UnitMod(object):
             if unitobj.aquatic != -1 and unitobj.amphibian != -1 and unitobj.pooramphibian != -1:
                 return False
 
-        if self.reqmage and len(tested) == 0:
+        reqmage = self.reqmage
+        longrangeweapons = []
+        if self.reqfightsinmelee or self.weaponmod != "Do Nothing":
+            # Check for a high ammo long range weapon where an aura won't be useful.
+            hasLongRangeWeapon = False
+            for wp in unitobj.weapons:
+                if wp.range >= 15 and wp.ammo >= 4:
+                    hasLongRangeWeapon = True
+                    longrangeweapons.append(wp)
+            if hasLongRangeWeapon and self.reqfightsinmelee:
+                # If one is present, allow only if a mage and a decent size
+                # (this might potentially be thuggable regardless)
+                if getattr(unitobj, "size", 2) >= 4:
+                    reqmage = True
+                else:
+                    return False
+
+
+        if reqmage and len(tested) == 0:
             haspaths = False
             for path in ["F", "A", "W", "E", "S", "D", "N", "B"]:
                 if hasattr(unitobj, path) and getattr(unitobj, path, 0) > 0:
@@ -86,6 +105,8 @@ class UnitMod(object):
                     break
             if not haspaths:
                 return False
+
+
 
         # I cannot support shrink or growhp
         if unitobj.shrinkhp != -1:
@@ -96,6 +117,17 @@ class UnitMod(object):
         wpnmod = utils.weaponmods.get(self.weaponmod, utils.weaponmods.get("Do Nothing"))
         if not wpnmod.compatibilityunit(unitobj):
             return False
+        # Things like banefire archers have a bad melee attack
+        # and a weapon with a secondary effect
+        # Most weapon mods affect only things without secondary effects, namely their melee attack
+        # ... which would be really pointless
+        if len(longrangeweapons) > 0:
+            okay = False
+            for wpn in longrangeweapons:
+                if wpnmod.compatibility(wpn):
+                    okay = True
+            if not okay:
+                return False
         tested.append(unitobj.uniqueid)
 
         # Must recursively check for eligibility on all subshapes too

@@ -51,17 +51,17 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 9
+#scalerate 1
 -- #scalecost 1.5
 #range 5020
 
-#aoe 0
-#power 6
-#maxpower 14
+#aoe 3
+#power 5
+#maxpower 12
 #pathlevel 3
 #explspr 10251
 #sound 28
-#fatiguecost 20
+#fatiguecost 100
 
 #paths 16
 #secondarypaths 16
@@ -79,3 +79,45 @@
 
 
 #end
+
+#neweffect "Returning Offensive Gemless"
+#effect 15
+#damage 1
+#spec 17592194711680
+#schools 32
+
+-- evo, battlefield allowed, scale aoe
+#spelltype 42
+
+#scalerate 0.35
+-- #scalecost 1.5
+#range 5020
+
+#aoe 0
+#power 5
+#maxpower 14
+#pathlevel 3
+#explspr 10251
+#sound 28
+#fatiguecost 10
+
+#paths 16
+#secondarypaths 16
+
+#name 16 "NAMEPREFIX Forced Returning"
+
+#descr 16 "The caster attempts to force SUBJECT into a rift in space that takes them back to their capital. The travel is instantaneous, but there is a chance that individuals may become lost in the Void. This spell is certain death if the capital of the %victim% is not under their control."
+#details "Each victim is allowed a difficult MR check to avoid the effect. The chance of being lost in the void is 7%."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of forced returning"
+#namecond range < 10 16 "NAMEPREFIX touch of forced recall"
+
+
+
+
+#fatigueperresearch 0
+#scalefatigueexponent 0
+#pathperresearch 0.2
+#end
+

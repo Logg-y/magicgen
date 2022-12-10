@@ -17,7 +17,7 @@
 #explspr 10265
 #sound 52
 #fatiguecost 20
-#precision 5
+#precision 100
 #range 5020
 
 #paths 2

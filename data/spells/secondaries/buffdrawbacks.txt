@@ -235,7 +235,7 @@
 #nameprefix "Rusting"
 #nameprefix "Oxidising"
 #set ainocast 1
-#fatiguepersquare -2
+#fatiguepersquare -3
 
 #minfinalaoe 5
 

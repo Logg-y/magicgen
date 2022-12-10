@@ -1,14 +1,14 @@
-#neweffect "Extra Wall Defenders"
+#neweffect "Extra Wall Defenders Large AoE"
 #effect 10085
 #damage 1
 #spec 8388608
-#power 3
+#power 4
 #maxpower 14
 #nreff 1
-#pathlevel 3
-#fatiguecost 900
+#pathlevel 4
+#fatiguecost 1500
 #scalecost 4
-#scalefatiguemult 100
+#fatigueperresearch 250
 #schools 1
 
 -- For now: all
@@ -21,15 +21,127 @@
 --#onlyfriendlydst 1
 #friendlyench 1
 
-#skipchance 45
+#skipchance 70
 
-#scalerate 0.25
-#basescale 8
+#scalerate 0.01
+#basescale 10
 
 -- on the offchance that this will one day be supported
 #ainocast 1
 
-#eventset "Extra Wall Defenders"
+#eventset "Extra Wall Defenders Large AoE"
+
+#name 1 "Guardians of Fire"
+#name 2 "Guardians of Air"
+#name 4 "Guardians of Water"
+#name 8 "Guardians of Earth"
+#name 16 "Otherworldly Guardians"
+#name 32 "Guardians of Death"
+#name 64 "Guardians of Gaia"
+#name 128 "Infernal Guardians"
+#descr 1 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of fire will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 2 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of air will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 4 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of water will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 8 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of earth will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 16 "This spell allows the mage to designate a distant allied fortification. In times of need, otherworldly portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
+
+#spelltype 4
+#end
+
+#neweffect "Extra Wall Defenders Small AoE"
+#effect 10085
+#damage 1
+#spec 8388608
+#power 4
+#maxpower 14
+#nreff 1
+#pathlevel 4
+#fatiguecost 900
+#scalecost 4
+#scalefatiguemult 100
+#schools 1
+
+#fatigueperresearch 150
+
+-- For now: all
+#paths 255
+#secondarypaths 255
+#secondarypathchance 30
+
+#nogeodst 2052
+#provrange 4
+--#onlyfriendlydst 1
+#friendlyench 1
+
+#skipchance 70
+
+#scalerate 0.01
+#basescale 15
+
+-- on the offchance that this will one day be supported
+#ainocast 1
+
+#eventset "Extra Wall Defenders Small AoE"
+
+#name 1 "Protectors of Fire"
+#name 2 "Protectors of Air"
+#name 4 "Protectors of Water"
+#name 8 "Protectors of Earth"
+#name 16 "Otherworldly Protectors"
+#name 32 "Protectors of Death"
+#name 64 "Protectors of Gaia"
+#name 128 "Infernal Protectors"
+#descr 1 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of fire will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 2 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of air will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 4 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of water will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 8 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of earth will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 16 "This spell allows the mage to designate a distant allied fortification. In times of need, otherworldly portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
+#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
+
+#spelltype 4
+#end
+
+
+#neweffect "Extra Wall Defenders Single Target"
+#effect 10085
+#damage 1
+#spec 8388608
+#power 2
+#maxpower 12
+#nreff 1
+#pathlevel 4
+#fatiguecost 300
+#scalefatiguemult 50
+#schools 1
+
+#fatigueperresearch 200
+
+-- For now: all
+#paths 255
+#secondarypaths 255
+#secondarypathchance 30
+
+#nogeodst 2052
+#provrange 4
+--#onlyfriendlydst 1
+#friendlyench 1
+
+#skipchance 70
+
+#scalerate 0.01
+#basescale 30
+
+-- on the offchance that this will one day be supported
+#ainocast 1
+
+#eventset "Extra Wall Defenders Single"
 
 #name 1 "Defenders of Fire"
 #name 2 "Defenders of Air"
@@ -47,61 +159,7 @@
 #descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
-#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
+#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm."
 
 #spelltype 4
 #end
-
-
--- #neweffect "Extra Wall Defenders Numerous"
--- #effect 10085
--- #damage 1
--- #spec 8388608
--- #power 7
--- #maxpower 18
--- #nreff 1
--- #pathlevel 4
--- #fatiguecost 2000
--- #scalefatiguemult 200
--- #schools 1
--- 
--- -- For now: all
--- #paths 255
--- #secondarypaths 255
--- #secondarypathchance 30
--- 
--- #nogeodst 2052
--- #provrange 4
--- --#onlyfriendlydst 1
--- #friendlyench 1
--- 
--- #skipchance 45
--- 
--- #scalerate 0.25
--- #basescale 30
--- 
--- -- on the offchance that this will one day be supported
--- #ainocast 1
--- 
--- #eventset "Extra Wall Defenders Numerous"
--- 
--- #name 1 "Greater Defenders of Fire"
--- #name 2 "Greater Defenders of Air"
--- #name 4 "Greater Defenders of Water"
--- #name 8 "Greater Defenders of Earth"
--- #name 16 "Greater Otherworldly Defenders"
--- #name 32 "Greater Defenders of Death"
--- #name 64 "Greater Defenders of Gaia"
--- #name 128 "Greater Infernal Defenders"
--- #descr 1 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of fire will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 2 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of air will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 4 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of water will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 8 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of earth will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 16 "This spell allows the mage to designate a distant allied fortification. In times of need, otherworldly portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
--- #details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm."
--- 
--- #spelltype 4
--- #end

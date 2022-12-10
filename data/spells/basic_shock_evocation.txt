@@ -133,8 +133,8 @@
 #name 2 "NAMEPREFIX Thunder %Strike%"
 #name 16 "NAMEPREFIX Thunder %Strike%"
 #name 128 "NAMEPREFIX Thunder %Strike%"
-#descr 2 "%Bolt% of lightning %is% called from the $sky$ upon some enemies."
-#descr 16 "%Bolt% of lightning %is% called from the $sky$ upon some enemies."
+#descr 2 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
+#descr 16 "ARTICLE %bolt% of lightning %is% called from the $sky$ upon some enemies."
 #descr 128 "$BLOOD_INTRO$, the caster directs ARTICLE %charge% down from the $sky$ upon his enemies."
 
 
@@ -310,7 +310,7 @@
 
 #skipchance 30
 
-#maxbounces 15
+#maxbounces 20
 
 #paths ab
 #secondarypaths 2
@@ -325,7 +325,7 @@
 
 -- evo, scale numbounces
 #spelltype 130
-#scalerate 6
+#scalerate 7.5
 #scalefatigueexponent 1.0
 #scalefatiguemult 2
 -- #scalecost 1.4
@@ -750,6 +750,7 @@
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
+
 
 
 

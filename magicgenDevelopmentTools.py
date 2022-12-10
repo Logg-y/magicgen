@@ -111,7 +111,7 @@ def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True
             if effstartlineindex is None:
                 if not line.startswith("#neweffect"):
                     continue
-                m = re.match(f'#neweffect\\W*"{spelleffect.name}"', line)
+                m = re.match(f'#neweffect\\W*"{re.escape(spelleffect.name)}"', line)
                 if m is not None:
                     effstartlineindex = lineindex
                     continue

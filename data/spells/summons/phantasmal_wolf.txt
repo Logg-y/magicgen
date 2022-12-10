@@ -17,7 +17,7 @@
 #paths 2
 #secondarypaths 2
 
-#skipchance 20
+#skipchance 90
 
 #name 2 "$conjure$ NAMEPREFIX Phantasmal %Wolf%"
 #descr 2 "Summons ARTICLE phantasmal %Wolf% to fight for the caster. These wolves are difficult to hit and can only hurt those who believe them to be real, but are killed by any successful hit."
@@ -49,7 +49,7 @@
 
 #spelltype 20
 
-#skipchance 97
+#skipchance 90
 
 #scalefatigueexponent -1.3
 #scalefatiguemult 8
@@ -69,7 +69,7 @@
 #pathlevel 3
 #fatiguecost 300
 #schools alt
-#skipchance 50
+#skipchance 97
 
 #paths 2
 #secondarypaths 2
@@ -93,7 +93,7 @@
 #fatiguecost 600
 #schools alt
 
-#skipchance 70
+#skipchance 99
 
 #paths 2
 #secondarypaths 2

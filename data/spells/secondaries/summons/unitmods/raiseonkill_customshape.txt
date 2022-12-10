@@ -18,7 +18,7 @@
 #eventset "Summon Raise Shape RL1"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -38,7 +38,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -47,7 +47,7 @@
 #eventset "Summon Raise Shape RL2"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -67,7 +67,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -76,7 +76,7 @@
 #eventset "Summon Raise Shape RL3"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -96,7 +96,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -105,7 +105,7 @@
 #eventset "Summon Raise Shape RL4"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -125,7 +125,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -134,7 +134,7 @@
 #eventset "Summon Raise Shape RL5"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -154,7 +154,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -163,7 +163,7 @@
 #eventset "Summon Raise Shape RL6"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -183,7 +183,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 #req raiseshape <= 1
 #end
 
@@ -192,7 +192,7 @@
 #eventset "Summon Raise Shape RL7"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -212,7 +212,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -221,7 +221,7 @@
 #eventset "Summon Raise Shape RL8"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -241,7 +241,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -250,7 +250,7 @@
 #eventset "Summon Raise Shape RL9"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -270,7 +270,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -279,7 +279,7 @@
 #eventset "Summon Raise Shape RL10"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -299,7 +299,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -308,7 +308,7 @@
 #eventset "Summon Raise Shape RL11"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -328,7 +328,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -337,7 +337,7 @@
 #eventset "Summon Raise Shape RL12"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -357,7 +357,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -366,7 +366,7 @@
 #eventset "Summon Raise Shape RL13"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -386,7 +386,7 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end
 
@@ -395,7 +395,7 @@
 #eventset "Summon Raise Shape RL14"
 #attributeforrandomunit "raiseshape"
 #req raiseonkill == -1
-#set raiseonkill 25
+#set raiseonkill 10
 #req aquatic <= 0
 #req shapechange <= 0
 #req firstshape <= 0
@@ -415,6 +415,6 @@
 #req watershape <= 0
 #req growhp <= 0
 #req shrinkhp <= 0
-#descr "This particular CREATURE is able to transform living creatures it slays into some kind of magical being."
+#descr "This particular CREATURE is able to transform creatures it slays into some kind of magical being."
 
 #end

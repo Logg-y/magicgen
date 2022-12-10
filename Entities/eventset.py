@@ -136,7 +136,6 @@ class EventSet(object):
     def _assignPowerLevels(self, modulepicks, modulesbypowerlevel, powerlevelsleft, picksleft=None):
         # Start with smallest deviations, as there is less chance to backtrack on a choice
 
-
         powerlevels = list(modulesbypowerlevel.keys())
         powerlevels.sort()
 
@@ -154,12 +153,15 @@ class EventSet(object):
             if done:
                 break
 
+        print(f"assignPowerLevels: picked module: {module.name}")
+
         # Sanity
         if not done:
             raise ValueError(f"Eventset {self.name} can't find a module in the list! {modulepicks}")
         print(f"There are {powerlevelsleft} power levels left")
         powerlevelrange = list(range(0, powerlevel+1))
         random.shuffle(powerlevelrange)
+        print(f"powerlevelrange = {powerlevelrange}")
 
         nextassignment = modulepicks[:]
         nextassignment.remove(module)
@@ -226,7 +228,7 @@ class EventSet(object):
 
     def formatdata(self, spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, enchantid=None):
         "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
-        print(f"Begin formatdata for {self.name}")
+        print(f"Begin formatdata for {self.name}, scaleamt = {scaleamt}, powerlvel = {actualpowerlvl}")
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
                  + copy.copy(self.rawdata)
 
@@ -345,7 +347,7 @@ class EventSet(object):
                     oldparamval = int(m.groups()[0])
                     # I don't THINK there are any legal float params for events
                     # but could be mistaken here...
-                    newparamval = int((scaleweight * scaleamt) + oldparamval)
+                    newparamval = round((scaleweight * scaleamt) + oldparamval, 0)
                     print(f"Scaled event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
                     currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line,
                                              count=1)
@@ -362,7 +364,7 @@ class EventSet(object):
                     # I don't THINK there are any legal float params for events
                     # but could be mistaken here...
                     newparamval = int(oldparamval + (oldparamval * scaleweight * scaleamt))
-                    print(f"Scaled event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
+                    print(f"Scaled (mult) event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
                     currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line,
                                              count=1)
             output = "\n".join(currlist)
@@ -384,20 +386,21 @@ class EventSet(object):
 
         if self.modulegroup is not None:
             print(f"Writing module description for {self.name}")
+            workingdetails = copy.copy(self.moduledetails)
             while 1:
-                m = re.search("[{]SCALEAMT-([0-9]*)[}]", self.moduledetails)
+                m = re.search("[{]SCALEAMT-([0-9]*)[}]", workingdetails)
                 if m is None:
                     break
                 base = int(m.groups()[0])
                 replamt = self._getScaleAmountForBase(base, scaleamt)
                 stringtoreplace = "{SCALEAMT-" + str(base) + "}"
-                self.moduledetails = self.moduledetails.replace(stringtoreplace, replamt)
+                workingdetails = workingdetails.replace(stringtoreplace, replamt)
                 print(f"Replace {stringtoreplace} with {replamt}")
 
             realscaleamt = self._getScaleAmountForBase(self.modulebasescale, scaleamt)
 
             spell.descr = spell.descr + " " + self.moduledescr
-            spell.details = spell.details + " " + self.moduledetails.replace("SCALEAMT", str(realscaleamt))
+            spell.details = spell.details + " " + workingdetails.replace("SCALEAMT", str(realscaleamt))
             print(f"Replace SCALEAMT with {realscaleamt}")
         else:
             # do module textrepl stuff
@@ -554,3 +557,6 @@ class EventSet(object):
 
         print(f"EventSet {self.name} returning {len(output)} bytes of content")
         return output
+
+    def __repr__(self):
+        return f"EventSet({self.name})"
