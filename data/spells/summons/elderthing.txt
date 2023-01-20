@@ -27,7 +27,7 @@
 #scalefatiguemult 10
 #pathperresearch 0.4
 
-#scalerate 1
+#scalerate 0.8
 #end
 
 #neweffect "elderthing ritual"
@@ -103,7 +103,7 @@
 #fatiguecost 800
 #schools 1
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 16
 #secondarypaths 16
@@ -120,5 +120,6 @@
 
 #scalerate 2
 #end
+
 
 

@@ -228,7 +228,14 @@ class WeaponMod(object):
         replacements = {}
         for wpn in unit.weapons:
             # No need to make multiple replacements if a unit has multiple of the same eligible weapon
-            if self.compatibility(wpn) and wpn.uniqueid not in replacements:
+            compat = self.compatibility(wpn)
+            if compat and wpn.uniqueid not in replacements:
                 out += self._applytoweapon(wpn, replacements)
+            elif not compat and wpn.isnewweapon and wpn.uniqueid not in replacements:
+                # New weapons want Do Nothing applied to them to make them work
+                # otherwise this will just ignore newweapons that are not compatible
+                # and they don't get put on the unit!
+                out += utils.weaponmods["Do Nothing"]._applytoweapon(wpn, replacements)
+
 
         return replacements, out

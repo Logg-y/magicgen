@@ -2,7 +2,7 @@
 #effect 1
 #damage 2159
 #spec 8388608
-#power 3
+#power 4
 #maxpower 14
 #precision -2
 #nreff 2
@@ -91,7 +91,7 @@
 #fatiguecost 1000
 #schools 1
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 4
 #secondarypaths 4
@@ -106,5 +106,6 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
 
 

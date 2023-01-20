@@ -22,7 +22,7 @@
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.8
 #scalefatiguemult 12
 #scalefatigueexponent -1.6
 #pathperresearch 0.4
@@ -101,7 +101,7 @@
 #schools 1
 #onlygeodst 2052
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 16
 #secondarypaths 16
@@ -117,5 +117,6 @@
 
 #scalerate 2
 #end
+
 
 

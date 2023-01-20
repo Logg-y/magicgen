@@ -191,6 +191,12 @@
 #schools 4
 
 #scalefatigueexponent 1.2
+
+
+#namecond range < 10 2 "NAMEPREFIX Thunderous Touch"
+#namecond range < 10 16 "NAMEPREFIX Thunderous Touch"
+#namecond range < 10 128 "NAMEPREFIX Thunderous Touch"
+
 #end
 
 

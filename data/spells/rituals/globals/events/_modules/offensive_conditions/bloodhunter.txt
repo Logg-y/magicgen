@@ -13,7 +13,7 @@
 -- this is very oppressive to blood hunters
 #moduleskipchance 50
 
-#textrepl "SUBJECT" "##fulltargname##"
+#textrepl "SUBJECT" "Blood hunters"
 
 #moduledescr "This enchantment affects all those searching for appropriate blood sacrifices."
 #moduledetails "Every turn, each province makes three checks for a blood hunting commander, each with a SCALEAMT percent chance of occuring."

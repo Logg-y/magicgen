@@ -81,7 +81,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE lesser %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
 
 #spelltype 20
-#skipchance 20
+#skipchance 73.33333333333333
 
 #scalerate 2.0
 #end
@@ -108,7 +108,7 @@
 #name 128 "Send %Horror%"
 #descr 128 "$BLOOD_INTRO$, the caster sends ARTICLE %horror% to the targeted province, where it will attack any patrolling forces, and then return back to the Void."
 
-#skipchance 20
+#skipchance 73.33333333333333
 #spelltype 20
 
 #scalerate 2.0

@@ -55,7 +55,7 @@
 -- #scalecost 1.5
 #range 5020
 
-#aoe 3
+#aoe 5
 #power 5
 #maxpower 12
 #pathlevel 3
@@ -120,4 +120,5 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
 

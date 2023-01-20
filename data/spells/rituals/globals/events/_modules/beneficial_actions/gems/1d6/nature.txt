@@ -5,6 +5,7 @@
 #req path1 == 64
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Gems of Life"
 --#verb "Disastrous"

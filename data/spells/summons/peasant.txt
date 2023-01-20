@@ -101,7 +101,7 @@
 #schools thaum
 #nogeodst 2052
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths fs
 #secondarypaths 0

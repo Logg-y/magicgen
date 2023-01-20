@@ -5,6 +5,7 @@
 #req path1 == 32
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 #moduleskipchance 20
 
 #noun "Items of the Dead"

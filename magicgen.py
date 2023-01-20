@@ -84,48 +84,44 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
     sys.stderr.flush()
     effectpool = copy.copy(s)
     # It is faster to remove everything that doesn't belong in this school now
-    # than to do it later
+    # than to iterate over it multiple times and discard it each time
     for effname, eff in list(effectpool.items()):
         if not (eff.schools & school) and school != 64:
             del effectpool[effname]
         # Things that are eliminated by this are mostly nextspells
         elif eff.paths <= 0 or eff.schools <= 0:
             del effectpool[effname]
+        # Blood effects in non-blood schools
+        elif school != 64 and eff.paths == 128:
+            del effectpool[effname]
     poolForThisSchoolAndLevel = copy.copy(effectpool)
     effectNameList = list(effectpool.keys())
     random.shuffle(effectNameList)
     # First do everything with skipchances, if that fails to make all the spells
     # do a second run ignoring them
-    allowskipchance = True
+
+    # attempt 0-10: enforce even path spellcount and skipchances. Relax even path spellcount gradually
+    # attempt 11: ignore event path spellcount, but respect skipchance
+    # attempt 12: ignore everything, just try to fill the spell list
+
     numSuccessfullyGenerated = 0
     for x in range(0, spellsatthislevel):
         attempt = 0
         while 1:
             spell = None
             if len(effectpool) == 0:
-                if attempt < spellsatthislevel and allowskipchance:
+                if attempt <= 12:
                     attempt += 1
                     effectpool = copy.copy(poolForThisSchoolAndLevel)
                     effectNameList = list(effectpool.keys())
                     random.shuffle(effectNameList)
                     continue
-                elif allowskipchance:
-                    allowskipchance = False
-                    effectpool = copy.copy(poolForThisSchoolAndLevel)
-                    effectNameList = list(effectpool.keys())
-                    random.shuffle(effectNameList)
-                    continue
-                allowskipchance = True
                 break
             sp = effectpool[effectNameList.pop(0)]
             del effectpool[sp.name]
-            # Prevent duplicates in the second round of ignoring skipchances
-            # Before this, different primary path versions of the same effect will be allowed!
-            if not allowskipchance and research in generatedeffectsatlevels and sp in generatedeffectsatlevels[research]:
-                continue
 
             print(f"Consider effect: {sp.name}, {len(effectpool)} effects are left; "
-                  f"skipchance allowed = {allowskipchance}, attempt = {attempt}")
+                  f"attempt = {attempt}")
             # Encourage the less popular paths to get more spells by skipping the more popular ones
             if school != 64:
                 allowedpaths = utils.bitmaskToExponents(sp.paths)
@@ -154,13 +150,14 @@ def generateSpellsInSchoolAtResearch(school, research, s, spellsatthislevel, gen
                                 print(f"Least popular path is {path}")
                                 forcepath = path
                                 lowest = genericSpellCountsByPath.get(path, 0)
-                    if allowskipchance:
-                        if mincount > 10 and (lowest - mincount) >= 5:
-                            print(f"Skipped as diff to least popular path is {lowest - mincount}")
+                    if attempt < 11:
+                        if mincount > 10 and (lowest - mincount) >= (5 + attempt):
+                            print(f"Skipped as diff to least popular path is {lowest - mincount} (vs max allowed {5 + attempt})")
                             continue
 
             # These are the things used to denote things that should be nextspell ONLY
             if sp.paths > 0 and sp.schools > 0:
+                allowskipchance = attempt <= 12
                 # Special rules for blood
                 if school == 64:
                     if sp.paths & 128:
@@ -499,6 +496,8 @@ def rollspells(**options):
             if options["nationlist"] is None:
                 options["nationlist"] = list(nationals.nations.keys())
             nationstogeneratefor = options["nationlist"]
+            # Do this in a random order. There are a few reasons why this might matter...
+            random.shuffle(nationstogeneratefor)
             # Deal with the case where no non-national spells were generated, so there are apparently no existing effects
             # TODO: maybe make a list of all vanilla non-national spells to use in place of this blank data
             if len(generatedeffectsatlevels) == 0:

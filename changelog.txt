@@ -2,37 +2,32 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
-TODO (rip internet)
-
-stream of life cloud
-gemmed versions of:
-	lesser enslave/charm
-	life drain? at least check the scaling of the base version
-	
-	
-
 To test:
 
-More global power checking
-Wall defenders
+v3.1.9
 
 Rebalanced elemental summoning, again. The major change this time is that it is no longer possible to summon two size 6 elementals in combat with one gem at level 6.
 Enforced a cap on the maximum scaling rate of spells.
 Previously, the fatigue of combat spells was reduced to 100x the primary path level if it exceeded that, with some not-terribly punishing compensations. The amount of punishing has been increased considerably, and any that can't be done by adjusting aoe/number of effects now affects the cast time. Rather than make spells with extremely long cast times, the generation fails instead.
 Removed the "200% cast time" modifier. This would typically appear extremely frequently at lower levels and make many spells feel awful and not worth mage time to use.
-Numerous lesser balance tweaks (not mentioned here).
+Numerous lesser balance tweaks.
 Significantly increased the cost of Send Horror spells which were accidentally priced absurdly cheaply.
 Fixed assorted typo and description mistakes.
-Added more comprehensive handling to the extra wall defenders spells and recosted them. Hopefully these are more useful at all research levels now, rather than being only extremely powerful (and expensive) at very high levels.
+Added more comprehensive handling to the extra wall defenders spells and recosted them. Hopefully these are more useful at all research levels now, rather than being extremely powerful (and expensive) at very high levels and uselessly overcosted at lower levels.
 Effect "declustering" (stopping the same effect generating many times at close research levels) has been relaxed if the path requirements are different.
+The "improved" name prefixes now only follow spells that have the same primary paths.
 Adjusted the costs of additional weapons when given to summons in certain single-battle settings, such as remote attacks (which would previously get the cost increase as if they were permanent units)
 Somewhat increased the power of higher level resist spells.
 Fixed cloud spell yellowtext, which previously claimed cloud durations were double what they really are.
 Many unit modifications that are entirely or mostly relevant to units that are likely to end up in melee have been forbidden for units that are likely to spend a lot of time firing or otherwise far away from enemies.
-Unit modifications should no longer be possible if they would change affect only the melee weapons of a creature that is likely to spend most of its time firing a ranged weapon.
+Unit modifications should no longer be possible if they would affect only the melee weapons of a creature that is likely to spend most of its time firing a ranged weapon.
 Aquatic units should no longer be able gain modifications that would add ranged weapons that cannot be fired underwater.
 Updated to use selectspell as it always should have done, because #newspell <id> actually ignored the passed id.
-Fixed some randomised globals' yellowtext numbers being incorrect (they were being inherited from things using the same condition/action set as a global that generated before...)
+Fixed some randomised globals' yellowtext numbers being incorrect (they were being incorrectly being inherited from things using the same condition/action set as a global that generated before...)
+Fixed phantasmal mage weapons not generating when they were ineligible for the weapon modifier being given to the summon
+Ice Imps now have Ice Maces instead of the +4 defence Ice Rods that frost fiends have, which unintentionally turned them into repel monsters
+Fixed "Haunted Forest" actually applying Gift of Nature's Bounty, despite the fact that I distinctly remember going over all of the vanilla enchantment IDs to check for exactly this kind of issue multiple times
+Montag weights should now be slightly more variable, with creatures to either cost extreme relative to the average being rarer than they were before.
 
 v3.1.8
 

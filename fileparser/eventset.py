@@ -11,7 +11,7 @@ from Services import fileparserutils
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
                         "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance",
-                        "setspelldamage", "makebattledummymonster", "fixedcreaturepower"]
+                        "setspelldamage", "makebattledummymonster", "fixedcreaturepower", "uniquemodule"]
 secondary_params_str = ["modulegroup", "moduledescr", "moduledetails", "magicsite", "unitmodlist"]
 secondary_params_float = []
 

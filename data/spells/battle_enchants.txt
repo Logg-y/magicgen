@@ -866,7 +866,7 @@
 
 #name 64 "Ravenous Swarm"
 #descr 64 "This spell is sometimes used by nature mages to combat the undead. It is part of the natural order that the living finds sustenance from the dead, and with this spell the nature mage utilizes that and imbues a swarm of bugs with frenzied power and appetite to devour the walking dead. The swarm will consume the undead one after each other until the battle ends. Should the swarm fail to locate the dead it will start to eat the living instead."
-#details "Every 5120 ticks (or 1.46484375 times a round), selects a random undead target. If a target had previously been selected, will always be picked in preference to another random undead creature. If there are undead, a random living creature is selected, and as with the undead targets, it will prefer to attack the same target continuously. Inflicts 7 AN nonmagical damage, which is multiplied by 3 if the target is undead or a demon."
+#details "Every 5120 ticks (or 1.46484375 times a round), selects a random undead target. If a target had previously been selected, will always be picked in preference to another random undead creature. If there are no undead, a random living creature is selected, and as with the undead targets, it will prefer to attack the same target continuously. Inflicts 7 AN nonmagical damage, which is multiplied by 3 if the target is undead or a demon."
 #ainocast 1
 #end
 

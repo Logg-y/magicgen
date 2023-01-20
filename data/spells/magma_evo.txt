@@ -18,7 +18,7 @@
 #damage 2023
 #spec 549755813888
 -- evo
-#aoe 4
+#aoe 5
 #schools 4
 #range 5030
 #precision 3
@@ -70,7 +70,7 @@
 #damage 3018
 #spec 549755813888
 -- evo
-#aoe 4
+#aoe 5
 #schools 4
 #range 5025
 #precision 3
@@ -97,7 +97,7 @@
 
 #power 4
 #maxpower 14
-#scalerate 1.4
+#scalerate 1
 #pathlevel 2
 
 #priority 1
@@ -217,6 +217,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
+
 
 
 

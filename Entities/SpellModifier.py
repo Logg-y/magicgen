@@ -141,7 +141,7 @@ class SpellModifier(object):
             setattr(s, attrib, val)
 
         for attrib, val in self.multcommands:
-            newval = int(getattr(s, attrib) * val)
+            newval = int(round(getattr(s, attrib) * val, 0))
             print(f"mod: Mult: spell {attrib} by {val} to {newval}")
             setattr(s, attrib, newval)
 

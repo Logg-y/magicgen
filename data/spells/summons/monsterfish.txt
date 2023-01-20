@@ -96,7 +96,7 @@
 #paths 4
 #secondarypaths 4
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #name 4 "$Send$ NAMEPREFIX Monster Fish"
 #descr 4 "The caster summons ARTICLE monster fish to attack a hostile commander in a distant land. Monster fish are gigantic fish which can swallow smaller creatures."

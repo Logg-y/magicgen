@@ -51,7 +51,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 10
+#scalefatiguemult 90.0
 
 #scalerate 2
 #end
@@ -93,7 +93,7 @@
 #schools 1
 #newunit "Phantasmal Wind Master"
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths a
 #secondarypaths a
@@ -109,6 +109,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 70
 #end
+
 
 
 

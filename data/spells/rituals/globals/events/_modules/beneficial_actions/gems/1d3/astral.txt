@@ -5,6 +5,7 @@
 #req path1 == 16
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Stellar Pearls"
 --#verb "Disastrous"

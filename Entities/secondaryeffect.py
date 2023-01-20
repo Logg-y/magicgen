@@ -114,19 +114,26 @@ class SpellSecondaryEffect(object):
                                  debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
-        if eff.noresearchreduction and self.power < 0:
+        if eff.noresearchreduction and self.power > 0:
+            DebugLogger.debuglog(f"Secondary is invalid: research level reduction is forbidden for this effect",
+                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
         if eff.nocostreduction:
+            valid = True
             if self.fatiguepersquare < 0.0:
-                return False
+                valid =  False
             if self.fatiguecostpereffect < 0.0:
-                return False
+                valid = False
             if self.fatiguecost < 0:
-                return False
+                valid = False
             for attrib, mult in self.multcommands:
                 if attrib == "fatiguecost" and mult < 1.0:
-                    return False
+                    valid = False
+                    break
+            if not valid:
+                DebugLogger.debuglog(f"Secondary is invalid: cost reduction is forbidden for this effect",
+                                     debugkeys.SECONDARYEFFECTCOMPATIBILITY)
 
 
         finalpower = researchlevel + self.power + modifier.power

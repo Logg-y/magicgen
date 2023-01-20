@@ -73,7 +73,7 @@
 #effect 2
 #damage 2016
 #spec 96
-#aoe 4
+#aoe 5
 #power 4
 #maxpower 14
 #precision 1
@@ -375,5 +375,10 @@
 #scalerate 3
 #pathlevel 5
 #end
+
+
+
+
+
 
 

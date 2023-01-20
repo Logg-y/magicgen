@@ -5,6 +5,7 @@
 #req path1 == 16
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 --#moduleskipchance 20
 
 #noun "Otherwordly Power"

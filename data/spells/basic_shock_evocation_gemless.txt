@@ -75,6 +75,7 @@
 #secondarypaths 2
 
 #name 2 "NAMEPREFIX Orb Lightning"
+#name b "NAMEPREFIX Orb Lightning"
 #descr 2 "The mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 #descr 128 "$BLOOD_INTRO$, the mage hurls ARTICLE_N %orb% of pure lightning towards the enemies. The charge in the %orb% will be unleashed on a nearby unit and continue to travel to other nearby units until it eventually dissipates."
 

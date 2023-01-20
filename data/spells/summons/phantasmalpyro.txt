@@ -51,7 +51,7 @@
 #spelltype 20
 
 #scalefatigueexponent 0.3
-#scalefatiguemult 10
+#scalefatiguemult 90.0
 
 #scalerate 2
 #end
@@ -95,7 +95,7 @@
 #nogeodst 2052
 #newunit "Phantasmal Pyromancer"
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths af
 #secondarypaths af
@@ -111,6 +111,7 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 70
 #end
+
 
 
 

@@ -5,6 +5,7 @@
 #req path1 == 128
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Thirst of Bloodsports"
 --#verb "Disastrous"

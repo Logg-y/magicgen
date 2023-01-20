@@ -12,8 +12,6 @@ from Services import utils, naming, DebugLogger
 from fileparser import unitinbasedatafinder
 
 
-# Prevent generation of more than this many effects in a single path that add to permanent slot usage
-PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH = 2
 
 class SpellEffect(object):
     def __init__(self, fp=None):
@@ -85,12 +83,13 @@ class SpellEffect(object):
         self.friendlyench = None
         self.newunit = None
         self.badaispell = 0
-        self.noresearchdifferenceskip = 0
         self.siegepatrolchaff = 0
         self.fixeddurationenchantment = 0
         self.fatigueperresearch = 10
         self.nocostreduction = 0
         self.noresearchreduction = 0
+        # This is changed when required, but should probably default to false
+        self.isnextspell = False
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -250,6 +249,13 @@ class SpellEffect(object):
         plural = True if (s.aoe > 0 or s.nreff > 1) else False
         if self.spelltype & SpellTypes.EVOCATION:
             plural = True if (s.aoe > 1 or s.nreff > 1) else False
+
+        # Naming needs these variables
+        s.effectiveaoe = s.aoe % 1000 + ((s.aoe // 1000) * s.path1level)
+        s.effectivenreff = s.nreff % 1000 + ((s.nreff // 1000) * s.path1level)
+        # This one will be wrong for nondamaging spells, but shouldn't be used for them
+        s.effectivedamage = s.damage % 1000 + ((s.damage // 1000) * s.path1level)
+
         self._writeDescription(s, mod, secondary, plural)
         # Dynamic scale number of effects, damage, etc
         self.dynamicScaleParams(s)
@@ -323,8 +329,7 @@ class SpellEffect(object):
 
         # Add to permenant slot taking spell counts if appropriate
         if self.permanentslotusage:
-            utils.permanent_slot_spells_by_path[s.path1] = utils.permanent_slot_spells_by_path.get(s.path1, 0) + 1
-            print(f"Path {s.path1}: num permanent slots now {utils.permanent_slot_spells_by_path.get(s.path1, 0)}")
+            utils.addPermanentSpellEffect(s.path1, self.permanentslotusage)
 
         print(f"Finished generation of {self.name} -> {s.name}")
 
@@ -371,9 +376,9 @@ class SpellEffect(object):
                         print(f"Skip scaling attribute {attribToScale} as attribute value is zero")
                         continue
                     scaleratio = min(1.0, attribScaleAmt / basespellvalue)
-                    if scaleratio > 0.3:
-                        print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > 0.3)")
-                        scaleratio = 0.3
+                    if scaleratio > 0.15:
+                        print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > 0.15)")
+                        scaleratio = 0.15
                     print(f"Attribute scale amount is {attribScaleAmt}, base spell value is {basespellvalue}")
 
                 newspellattrib = getattr(s, attribToScale)
@@ -730,7 +735,7 @@ class SpellEffect(object):
         existingspells = options.get("existingspells", None)
         allowskipchance = options.get("allowskipchance", True)
         forcepath = options.get("forcepath", None)
-        if not self.isnextspell and (allowskipchance or self.skipchance >= 100) and not self.noresearchdifferenceskip:
+        if not self.isnextspell:
             # if we were passed the dict of spells that already exist, skipchance based on proximity to effects that
             # already exist - this is the case for non-holy non-national spells
 
@@ -753,15 +758,22 @@ class SpellEffect(object):
                 rldiff = abs(spell.researchlevel - self.researchlevel)
                 chance = ((max(0, 4 - rldiff) * pathsimilarity)**2) * 6
                 print(f"rldiff = {rldiff}, pathsimilarity to {spell.name} = {pathsimilarity}, chance={chance}")
-                if random.random() * 100 < chance:
+                if random.random() * 100 < chance and allowskipchance:
+                    return True
+                # If random skipchances are not allowed, only block this spell if
+                # it would result in an absolute duplicate, and do so without any randomness
+                if rldiff == 0 and pathsimilarity > 0.0 and not self.isnextspell:
+                    print(f"This would result in an absolute duplicate, block generation despite skipchance setting {allowskipchance}")
                     return True
 
             powerdiff = max(0, self.researchlevel - self.power)
             powerskipchance = min(90, powerdiff * 5)
-            if random.random() * 100 < powerskipchance:
+            if random.random() * 100 < powerskipchance and allowskipchance:
                 print(f"Failed to generate {self.name} at {self.researchlevel}: "
                       f"base research difference skipchance of {powerskipchance}")
                 return True
+        else:
+            print(f"Is next spell, do not skip due to proximity to related")
 
         return False
 
@@ -794,21 +806,22 @@ class SpellEffect(object):
                     extraspell = utils.spelleffects[extraspell]
 
 
-        if random.random() * 100 < self.skipchance and not self.isnextspell and (
-                allowskipchance or self.skipchance >= 100):
-            print(f"Failed to generate {self.name} at {self.researchlevel}: random skipchance")
-            return True
-
+        if not self.isnextspell and (allowskipchance or self.skipchance >= 100.0):
+            if random.random() * 100 < self.skipchance:
+                print(f"Failed to generate {self.name} at {self.researchlevel}: random skipchance")
+                return True
+            else:
+                print(f"Passed random skipchance of {self.skipchance} percent")
 
         # less combat blood spells
         # bypasses allowskipchance
         if self.effect < 10000 and forcepath == 128 and not self.isnextspell:
-            if random.random() < 0.85:
-                print(f"Failed as 85% to have less blood combat spells")
+            if random.random() < 0.90:
+                print(f"Failed as 90% to have less blood combat spells")
                 return True
             # Even less likely if they have other primary paths
-            if self.paths != 128 and random.random() < 0.95:
-                print(f"Failed as 95% to fail other path combat spells")
+            if self.paths != 128 and random.random() < 0.98:
+                print(f"Failed as 98% to fail other path combat spells")
                 return True
 
         if self.unique and self.generated > 0:
@@ -1062,10 +1075,10 @@ class SpellEffect(object):
                         possibleillwinterpaths.append(illwinterpath)
                     continue
                 # Effects taking permanent slots need to be limited in number to avoid mechanic abuse
-                if self.permanentslotusage \
-                        and utils.permanent_slot_spells_by_path.get(s.path1, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
-                    print(f"Path {s.path1} not allowed due to permanent slot taking spell limit")
-                    continue
+                if self.permanentslotusage:
+                    if not utils.canPermanentEffectSpellGenerate(s.path1, self.permanentslotusage):
+                        print(f"Path {s.path1} not allowed due to permanent slot taking spell limit")
+                        continue
                 print(f"Accepting path {s.path1} (illwinter path {illwinterpath})")
                 break
 
@@ -1073,11 +1086,10 @@ class SpellEffect(object):
             if allowskipchance and random.random() * 100 <= self.pathskipchances.get(forcepath, 0):
                 print(f"Forced path was {forcepath}, failed this pathskipchance")
                 return False
-            if self.permanentslotusage \
-                    and utils.permanent_slot_spells_by_path.get(forcepath, 0) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
-                print(f"Attempted to forcepath into a path that has too many permanent spell effects")
-                return False
-            print(f"Forced path to {forcepath}")
+            if self.permanentslotusage:
+                if not utils.canPermanentEffectSpellGenerate(s.path1, self.permanentslotusage):
+                    print(f"Attempted to forcepath into a path that has too many permanent spell effects")
+                    return False
             s.path1 = forcepath
 
         s.path1level = self.pathlevel + mod.pathlevel + secondary.pathlevel
@@ -1500,12 +1512,6 @@ class SpellEffect(object):
                 s.godpathspell = -1
 
 
-
-        # Naming needs these variables
-        s.effectiveaoe = s.aoe % 1000 + ((s.aoe // 1000) * s.path1level)
-        s.effectivenreff = s.nreff % 1000 + ((s.nreff // 1000) * s.path1level)
-        # This one will be wrong for nondamaging spells, but shouldn't be used for them
-        s.effectivedamage = s.damage % 1000 + ((s.damage // 1000) * s.path1level)
 
         # see which nameconds, if any, match, and add to the name pool
         priorities = sorted(list(self.nameconds.get(s.path1, {}).keys()), reverse=True)

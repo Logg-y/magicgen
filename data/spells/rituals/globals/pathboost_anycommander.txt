@@ -1,228 +1,232 @@
-#neweffect "Pathboosts anycommander fire"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
+-- These are in the general beneficial global pool now
+-- This could probably be deleted but while global balance remains on the "to watch" list
+-- the hand balanced values may be of value to have to hand without digging through old commits
 
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-
-#paths 1
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander fire"
-
-
-#name 1 "Sparks of Burning Power"
-#descr 1 "This enchantment causes commanders in friendly dominion to randomly become engulfed in magical sparks. The sparks are harmless, and are absorbed into the commander's body, permanently giving them increased ability with fire magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 fire magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's fire path is boosted by 1 permanently."
-#end
-
-#neweffect "Pathboosts anycommander air"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 2
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander air"
-
-
-#name 2 "Sparks of Stormbound Power"
-#descr 2 "This enchantment causes commanders in friendly dominion to randomly become engulfed in electrical charge. The charge is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with air magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 air magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's air path is boosted by 1 permanently."
-#end
-
-#neweffect "Pathboosts anycommander water"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 4
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander water"
-
-
-#name 4 "Torrent of Iceborne Power"
-#descr 4 "This enchantment causes commanders in friendly dominion to randomly become engulfed in magical ice. The ice is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with water magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 water magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's water path is boosted by 1 permanently."
-#end
-
-
-
-#neweffect "Pathboosts anycommander earth"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#paths 8
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander earth"
-
-#basescale 2
-#spelltype 4
-#scalerate 1
-
-#name 8 "Waves of Earthen Power"
-#descr 8 "This enchantment causes commanders in friendly dominion to randomly become engulfed in earthen energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with earth magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 earth magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's earth path is boosted by 1 permanently."
-#end
-
-
-#neweffect "Pathboosts anycommander astral"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 9
-#maxpower 15
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 16
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander astral"
-
-
-#name 16 "Flow of Otherworldly Power"
-#descr 16 "This enchantment causes commanders in friendly dominion to randomly become engulfed in otherworldly power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with astral magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 astral magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's astral path is boosted by 1 permanently."
-#end
-
-#neweffect "Pathboosts anycommander death"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 32
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander death"
-
-
-#name 32 "Pulses of Necromantic Power"
-#descr 32 "This enchantment causes commanders in friendly dominion to randomly become engulfed in deathly energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased necromantic ability, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 death magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's death path is boosted by 1 permanently."
-#end
-
-#neweffect "Pathboosts anycommander nature"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 8500
-#scalefatiguemult 1080
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 64
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander nature"
-
-#name 64 "Flow of Gaia's Power"
-#descr 64 "This enchantment causes commanders in friendly dominion to randomly become engulfed in Gaia's energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with nature magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 nature magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's nature path is boosted by 1 permanently."
-#end
-
-#neweffect "Pathboosts anycommander blood"
-#effect 10081
-#damage 17
-#spec 8388608
-#power 7
-#maxpower 11
-#nreff 1
-#pathlevel 6
-#fatiguecost 17000
-#scalefatiguemult 2160
-#schools 48
-
-#basescale 1
-#spelltype 4
-#scalerate 2
-
-#paths 128
-#skipchance 98
-#secondarypaths 0
-#secondarypathchance 0
-#eventset "Pathboosts anycommander blood"
-
-
-#name 128 "Waves of Infernal Power"
-#descr 128 "This enchantment causes commanders in friendly dominion to randomly become engulfed in infernal power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with blood magic, even if they had none originally."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 blood magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's blood path is boosted by 1 permanently."
-#end
+-- #neweffect "Pathboosts anycommander fire"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- 
+-- #paths 1
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander fire"
+-- 
+-- 
+-- #name 1 "Sparks of Burning Power"
+-- #descr 1 "This enchantment causes commanders in friendly dominion to randomly become engulfed in magical sparks. The sparks are harmless, and are absorbed into the commander's body, permanently giving them increased ability with fire magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 fire magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's fire path is boosted by 1 permanently."
+-- #end
+-- 
+-- #neweffect "Pathboosts anycommander air"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 2
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander air"
+-- 
+-- 
+-- #name 2 "Sparks of Stormbound Power"
+-- #descr 2 "This enchantment causes commanders in friendly dominion to randomly become engulfed in electrical charge. The charge is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with air magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 air magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's air path is boosted by 1 permanently."
+-- #end
+-- 
+-- #neweffect "Pathboosts anycommander water"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 4
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander water"
+-- 
+-- 
+-- #name 4 "Torrent of Iceborne Power"
+-- #descr 4 "This enchantment causes commanders in friendly dominion to randomly become engulfed in magical ice. The ice is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with water magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 water magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's water path is boosted by 1 permanently."
+-- #end
+-- 
+-- 
+-- 
+-- #neweffect "Pathboosts anycommander earth"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #paths 8
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander earth"
+-- 
+-- #basescale 2
+-- #spelltype 4
+-- #scalerate 1
+-- 
+-- #name 8 "Waves of Earthen Power"
+-- #descr 8 "This enchantment causes commanders in friendly dominion to randomly become engulfed in earthen energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with earth magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 earth magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's earth path is boosted by 1 permanently."
+-- #end
+-- 
+-- 
+-- #neweffect "Pathboosts anycommander astral"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 9
+-- #maxpower 15
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 16
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander astral"
+-- 
+-- 
+-- #name 16 "Flow of Otherworldly Power"
+-- #descr 16 "This enchantment causes commanders in friendly dominion to randomly become engulfed in otherworldly power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with astral magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 astral magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's astral path is boosted by 1 permanently."
+-- #end
+-- 
+-- #neweffect "Pathboosts anycommander death"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 32
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander death"
+-- 
+-- 
+-- #name 32 "Pulses of Necromantic Power"
+-- #descr 32 "This enchantment causes commanders in friendly dominion to randomly become engulfed in deathly energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased necromantic ability, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 death magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's death path is boosted by 1 permanently."
+-- #end
+-- 
+-- #neweffect "Pathboosts anycommander nature"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 8500
+-- #scalefatiguemult 1080
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 64
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander nature"
+-- 
+-- #name 64 "Flow of Gaia's Power"
+-- #descr 64 "This enchantment causes commanders in friendly dominion to randomly become engulfed in Gaia's energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with nature magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 nature magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's nature path is boosted by 1 permanently."
+-- #end
+-- 
+-- #neweffect "Pathboosts anycommander blood"
+-- #effect 10081
+-- #damage 17
+-- #spec 8388608
+-- #power 7
+-- #maxpower 11
+-- #nreff 1
+-- #pathlevel 6
+-- #fatiguecost 17000
+-- #scalefatiguemult 2160
+-- #schools 48
+-- 
+-- #basescale 1
+-- #spelltype 4
+-- #scalerate 2
+-- 
+-- #paths 128
+-- #skipchance 98
+-- #secondarypaths 0
+-- #secondarypathchance 0
+-- #eventset "Pathboosts anycommander blood"
+-- 
+-- 
+-- #name 128 "Waves of Infernal Power"
+-- #descr 128 "This enchantment causes commanders in friendly dominion to randomly become engulfed in infernal power. The power is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with blood magic, even if they had none originally."
+-- #details "There is a SCALEAMT% chance per point of dominion to pick a random commander with level 0-4 blood magic in each friendly province. There is a 20% chance that nothing then happens, otherwise the commander's blood path is boosted by 1 permanently."
+-- #end
 

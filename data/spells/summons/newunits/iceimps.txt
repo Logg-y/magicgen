@@ -1,7 +1,7 @@
 #newunit "Ice Imp"
 #baseunit 303
 #clearweapons 1
-#addweapon 124
+#addweapon 44
 #set fireres -5
 #set coldres 15
 #raw "#fireres -5"
@@ -21,7 +21,7 @@
 #newunit "Ice Imp Lesser Mage"
 #baseunit 303
 #clearweapons 1
-#addweapon 124
+#addweapon 44
 #set fireres -5
 #set coldres 15
 #raw "#fireres -5"
@@ -49,7 +49,7 @@
 #newunit "Ice Imp Greater Mage"
 #baseunit 303
 #clearweapons 1
-#addweapon 124
+#addweapon 44
 #set fireres -5
 #set coldres 15
 #raw "#fireres -5"

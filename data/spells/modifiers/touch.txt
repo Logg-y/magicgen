@@ -15,10 +15,11 @@
 #req spelltype !& 4
 -- something that is instantaneously killy
 #req effect == 2
+#mult path1level 0.66
 #req pathlevel <= 3
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 95
 
@@ -55,9 +56,10 @@
 #req spelltype !& 4
 -- something that is instantaneously killy
 #req effect == 74
+#mult path1level 0.66
 #req pathlevel <= 3
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 90
 
@@ -95,10 +97,11 @@
 #req spelltype !& 4
 -- something that is instantaneously killy
 #req effect == 103
+#mult path1level 0.66
 #req pathlevel <= 3
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 85
 
@@ -128,10 +131,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
+#mult path1level 0.66
 #req pathlevel <= 3
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 75
 
@@ -161,10 +165,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req spelltype !& 4
+#mult path1level 0.66
 #req pathlevel <= 3
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -195,10 +200,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req pathlevel <= 3
+#mult path1level 0.66
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -229,10 +235,11 @@
 #req2 10 <= nonscalingrange <= 100
 -- not ritual
 #req pathlevel <= 3
+#mult path1level 0.66
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -264,12 +271,13 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 #set precision 100
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -301,12 +309,13 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 #set precision 100
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -338,13 +347,14 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 #set precision 100
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
 #skipchance 80
-#aispellmod 200
+#aispellmod 150
 
 #req effect == 128
 
@@ -370,9 +380,10 @@
 #pathperresearch -0.23
 #set range 3
 #casttime -75
-#aispellmod 200
+#aispellmod 150
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 #set precision 100
 -- not ritual
 #req spelltype !& 4
@@ -408,13 +419,14 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 #set precision 100
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
 #skipchance 70
-#aispellmod 200
+#aispellmod 150
 
 #req effect == 20
 #req spec & 4096
@@ -447,11 +459,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -481,11 +494,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -515,11 +529,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -549,11 +564,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -583,11 +599,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 
@@ -619,11 +636,12 @@
 #casttime -75
 #req2 10 <= nonscalingrange <= 100
 #req pathlevel <= 3
+#mult path1level 0.66
 -- not ritual
 #req spelltype !& 4
 -- #set flightspr -1
 #nobattlefield
-#aispellmod 200
+#aispellmod 150
 
 #skipchance 80
 

@@ -10,7 +10,7 @@
 #fatiguecost 120
 #scalefatiguemult 10
 #scalefatigueexponent -1.6
-#pathperresearch 40
+#pathperresearch 0.4
 #sound 31
 #schools 1
 
@@ -95,7 +95,7 @@
 #schools 1
 #nogeodst 2052
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 32
 #secondarypaths 32

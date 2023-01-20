@@ -60,6 +60,8 @@ class EventSet(object):
         self.magicsite = ""
         self.effectnumberforunits = []
         self.fixedcreaturepower = False
+        self.uniquemodule = 0
+        self.generated = 0
 
         self.moduletailingcode = ""
 
@@ -69,6 +71,10 @@ class EventSet(object):
         islast = False
         if len(selection) + 1 == len(self.modules):
             islast = True
+
+        if current.uniquemodule and current.generated > 0:
+            print(f"Module {current} is unique and has already been used")
+            return False
 
         for req in current.reqs:
             if not req.test(spell):
@@ -228,7 +234,7 @@ class EventSet(object):
 
     def formatdata(self, spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, enchantid=None):
         "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
-        print(f"Begin formatdata for {self.name}, scaleamt = {scaleamt}, powerlvel = {actualpowerlvl}")
+        print(f"Begin formatdata for {self.name}, scaleamt = {scaleamt}, powerlevel = {actualpowerlvl}")
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
                  + copy.copy(self.rawdata)
 
@@ -553,7 +559,8 @@ class EventSet(object):
         else:
             self.moduletailingcode += tailcode
 
-
+        for module in modulepicks:
+            module.generated += 1
 
         print(f"EventSet {self.name} returning {len(output)} bytes of content")
         return output

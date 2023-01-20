@@ -27,7 +27,7 @@
 #name s "Construct NAMEPREFIX Golden Golem"
 #descr f "The caster constructs a Golem from gold and magically animates it. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it. It is very effective against fortifications."
 #descr s "The caster constructs a Golem from gold and magically animates it. The Golem is immensely strong and has some skill in fire and astral magic, as well as halting those of lesser mind that try to strike at it. It is very effective against fortifications."
-#details "The Golden Golem is a huge F2S1 or F1S2 mage. It can only wear magical crowns and carry two miscellenous items."
+#details "The Golden Golem is a huge F2S1 or F1S2 mage. It can wield items in its two hands, but can only wear crowns and carry two miscellaneous items."
 
 #spelltype 20
 

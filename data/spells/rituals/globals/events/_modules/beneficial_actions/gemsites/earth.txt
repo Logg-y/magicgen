@@ -5,6 +5,7 @@
 #req path1 == 8
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Enchanted Earth"
 --#verb "Disastrous"

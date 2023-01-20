@@ -180,6 +180,7 @@ class UnitMod(object):
         # Weapon mod
         wpnmod = utils.weaponmods[self.weaponmod]
         wpnreplacements, wpnoutput = wpnmod.apply(u)
+        print(f"Weapon mod output: {wpnreplacements}, {wpnoutput}")
         for wpn in u.weapons:
             if wpn.uniqueid in wpnreplacements:
                 wpn.origid = wpnreplacements[wpn.uniqueid]

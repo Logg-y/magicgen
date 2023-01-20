@@ -132,7 +132,7 @@ def readModifierFile(fp):
                     raise ParseError(f"{fp} line {lineno}: bad #set")
 
                 if line.startswith("#mult"):
-                    m = re.match('#mult\\W+(.*?)\\W*?([-0-9.]+)', line)
+                    m = re.match('#mult\\W+(.*?)\\W*?([-0-9.]+)\\W*$', line)
                     if m is not None:
                         param = m.groups()[0]
                         val = float(m.groups()[1])

@@ -7,6 +7,7 @@
 #scaleparam "gold" 10
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 #modulebasescale 20
 
 #noun "Pact of Gold"

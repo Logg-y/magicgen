@@ -10,6 +10,7 @@
 #req path1 != 8
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #usefixedunitid 674
 #allowedunitmod "Lucky Spirits"

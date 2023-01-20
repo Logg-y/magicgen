@@ -25,10 +25,13 @@ newunits = {}
 
 spritedependencies = set()
 
+# Prevent generation of more than this many effects in a single path that add to permanent slot usage
+PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH = 2
+
 # For tracking how many permanent slot taking spells have been made
 # too many means that mechanic abuse from filling all 6 slots is possible
-# this is saved as primary path: number of offending spells generated
-permanent_slot_spells_by_path: Dict[int, int] = {}
+# this is saved as primary path: [list of ids that can be made with this path]
+permanent_slot_spells_by_path: Dict[int, List[int]] = {}
 
 spellnames = []
 spellnamesbyeffect = {}
@@ -176,3 +179,16 @@ def normalizemapkeys(mapin: Dict) -> map:
     for i in mapin:
         mapin[i] = mapin[i] / acc
     return mapin
+
+def canPermanentEffectSpellGenerate(path: int, effectid: int) -> bool:
+    if path in permanent_slot_spells_by_path:
+        if effectid not in permanent_slot_spells_by_path[path]:
+            if len(permanent_slot_spells_by_path[path]) >= PERMANENT_SPELL_EFFECT_LIMIT_BY_PATH:
+                return False
+    return True
+
+def addPermanentSpellEffect(path: int, effectid: int):
+    if path not in permanent_slot_spells_by_path:
+        permanent_slot_spells_by_path[path] = []
+    if effectid not in permanent_slot_spells_by_path[path]:
+        permanent_slot_spells_by_path[path].append(effectid)

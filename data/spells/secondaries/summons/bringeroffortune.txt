@@ -21,7 +21,6 @@
 #end
 
 #newsecondary "Summon Bringerofmisfortune"
-#req siegepatrolchaff < 1
 
 -- only permanent unit summons
 #anysummon 1

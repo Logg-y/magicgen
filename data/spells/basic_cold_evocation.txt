@@ -123,7 +123,7 @@
 #effect 2
 #damage 1006
 #spec 1152921504606847552
-#aoe 4
+#aoe 5
 #power 3
 #maxpower 12
 #precision 3
@@ -353,6 +353,11 @@
 #nextspell "Small Chill"
 
 #end
+
+
+
+
+
 
 
 

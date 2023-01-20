@@ -5,6 +5,7 @@
 #req path1 == 4
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Sapphire Pools"
 --#verb "Disastrous"

@@ -106,7 +106,7 @@
 #nogeodst 2052
 #newunit "Black Harpy"
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 66
 #secondarypaths 66

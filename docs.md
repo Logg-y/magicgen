@@ -425,10 +425,7 @@ Refer to the modmanual for details on these, unles otherwise noted.
  
 \#badaispell 1
  * Tag rituals which the AI will have no idea how to cast with this. This is for the single player people out there who want to play vs AI but don't want them wasting gems on rituals that do nothing, such as event driven spells that need to be cast in specific places like capitals.
- 
-\#noresearchdifferenceskip 1
- * Ordinarily, spells are less likely to generate the further they are away from their base research level. This command prevents that occuring for the spell effect it is used on.
- 
+  
 \#siegepatrolchaff 1
  * Used to mark ritual summoning spells that generate chaff whose intended purpose is not fighting. This can be patrolling, bringer of fortune, sieging, or other roles: it is used to prevent them getting secondary effects.
  

@@ -7,10 +7,10 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 1.2
 -- #scalecost 0.6
 
-#aoe 3
+#aoe 5
 #power 4
 #maxpower 14
 #pathlevel 2
@@ -83,6 +83,7 @@
 #scalefatigueexponent 0
 #fatigueperresearch 0
 #end
+
 
 
 

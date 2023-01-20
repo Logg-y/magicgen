@@ -5,6 +5,7 @@
 #req path1 == 2
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 --#moduleskipchance 20
 
 #noun "Stormbound Power"

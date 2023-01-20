@@ -25,7 +25,7 @@ class MontagBuilder(object):
         # duplicates/(ratio**this value), where ratio is is max(mean, this unit)/min(mean, this unit)
         # this is why both 20 and 5 produce a ratio of 2 in the example above
         # Reducing this value will make the cost extremes of the montag less rare
-        self.extremeCostRarity = 1.0
+        self.extremeCostRarity = 1.5
     def add(self, unitobj, secondaryeffect, costratio):
         """Add a unit to the montag with the given secondary effect. Cost ratio should be a pessimistic estimate of:
 
@@ -253,8 +253,14 @@ def _CanUseUnitAndSecondaryCombo(parentobj, unittouse, secondary, realunitmod, s
               f"{minpower} and {maxpower}")
 
     unitobj = unittouse
+    # Unitmod and secondary modifier should agree with the unit and its parent effect
+    # before being allowed!
     if not realunitmod.compatibility(unitobj):
         return False
+    if chosensummoneffect is not None:
+        if not secondary.compatibility(chosensummoneffect, modifier=utils.modifiers["Do Nothing"], researchlevel=chosensummoneffect.power+secondary.power):
+            return False
+
     return True
 
 def generateUnit(parentobj, numtogenerate, spell, secondaryeffect, actualpowerlvl):

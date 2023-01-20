@@ -95,7 +95,7 @@
 #fatiguecost 600
 #schools 16
 
-#skipchance 90
+#skipchance 96.66666666666667
 
 #newunit "Vine Archer"
 

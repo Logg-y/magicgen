@@ -101,7 +101,7 @@
 #fatiguecost 800
 #schools 1
 
-#skipchance 99.6
+#skipchance 99.86666666666666
 
 #paths 16
 #secondarypaths 16

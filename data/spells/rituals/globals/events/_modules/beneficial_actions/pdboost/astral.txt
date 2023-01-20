@@ -8,6 +8,7 @@
 #modulebasescale 1
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Entice Militia"
 --#verb "Disastrous"

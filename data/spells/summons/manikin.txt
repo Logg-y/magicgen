@@ -14,7 +14,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 98
+#skipchance 40
 
 #name 32 "$conjure$ NAMEPREFIX %Manikin%"
 #descr 32 "The caster enchants the bones of ARTICLE long dead human and enchants vines to control them. This spell is only temporary and the bones will collapse at the end of the battle."
@@ -41,7 +41,7 @@
 #paths 32
 #secondarypaths 64
 
-#skipchance 97
+#skipchance 40
 
 #name 32 "$summon$ NAMEPREFIX Manikins"
 #descr 32 "The caster enchants the bones of ARTICLE long dead %human% and enchants vines to control them. The resulting beings may put the living to sleep with their magical vines."
@@ -90,7 +90,7 @@
 #fatiguecost 600
 #schools 16
 
-#skipchance 99.6
+#skipchance 99
 
 #paths 32
 #secondarypaths 32

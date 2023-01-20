@@ -290,7 +290,7 @@
 #name w "NAMEPREFIX Ice Dust"
 #descr w "The caster freezes water into thousands of tiny crystals that fall upon the battlefield. The icy shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that ice may end up in victims' eyes. Those that are not resistant will also be chilled by the sudden burst of cold."
 #priority 1
-#namecond range < 10 f "NAMEPREFIX Touch of Ice Shards"
+#namecond range < 10 w "NAMEPREFIX Touch of Ice Shards"
 #maxpower 8
 
 #nextspell "Ice Dust Chill"
@@ -325,7 +325,7 @@
 #name w "NAMEPREFIX Ice Dust"
 #descr w "The caster freezes water into thousands of tiny crystals that fall upon the battlefield. The icy shards will lacerate the bodies of all those in the area, and living creatures will inhale them, causing internal bleeding. Additionally, there is a small chance that ice may end up in victims' eyes. Those that are not resistant will also be chilled by the sudden burst of cold."
 #priority 1
-#namecond range < 10 f "NAMEPREFIX Touch of Ice Shards"
+#namecond range < 10 w "NAMEPREFIX Touch of Ice Shards"
 #maxpower 14
 
 #nextspell "Ice Dust Chill"

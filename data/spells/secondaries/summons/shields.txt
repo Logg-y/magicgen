@@ -186,7 +186,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.5
+#mult fatiguecost 1.8
 
 #unitmod "Summon Bloodvengeance"
 #descr "When damaged, the summoned %creature% gain the ability to force their %attacker% to suffer their wounds as well. The attacker may attempt to resist this effect."
@@ -204,7 +204,7 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.8
+#mult fatiguecost 2.2
 
 #unitmod "Summon Damagereversal"
 #descr "When damaged, the summoned %creature% gain the ability to redirect any damage suffered onto their attacker instead. The attacker may attempt to resist this effect."

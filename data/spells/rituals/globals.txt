@@ -398,7 +398,7 @@
 
 #neweffect "Haunted Forest"
 #effect 10081
-#damage 27
+#damage 55
 #spec 0
 #power 7
 #maxpower 7

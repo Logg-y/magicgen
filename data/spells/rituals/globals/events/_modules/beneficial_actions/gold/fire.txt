@@ -8,6 +8,7 @@
 #modulebasescale 20
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Midas Touch"
 --#verb "Disastrous"

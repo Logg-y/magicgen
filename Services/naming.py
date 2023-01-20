@@ -130,7 +130,7 @@ def padspellname(name):
         name = name + " "
         if len(name) > 35:
             raise NameTooLongException(f"Tried to pad spell name {name} over 35 characters")
-    return(name)
+    return name
 
 def adjustnameofspell(parsedname, spell):
     if len(parsedname) > 35:
@@ -144,12 +144,14 @@ def adjustnameofspell(parsedname, spell):
         # Adjust name
         comparespell = spelleffectdict[parsedname]
 
-        if comparespell.researchlevel > spell.researchlevel:
+        if comparespell.researchlevel > spell.researchlevel and comparespell.path1 == spell.path1:
             print(f"existing '{comparespell.name}' is higher research level than this {spell.name}, try moving it")
             attempttomovespellname(comparespell)
             break
-        else:
+        elif comparespell.path1 == spell.path1:
             parsedname = replacecurrentqualifier(parsedname)
+        else:
+            break
 
         if len(parsedname) > 35:
             raise NameTooLongException(f"Spell name {parsedname} too long")
@@ -175,15 +177,17 @@ def attempttomovespellname(spell):
     try:
         while tmp in spelleffectdict:
             comparespell = spelleffectdict[tmp]
-            if comparespell.researchlevel > spell.researchlevel:
+            if comparespell.researchlevel > spell.researchlevel and comparespell.path1 == spell.path1:
                 print(f"'{comparespell.name}' is higher research level than this {spell.name}, try moving it")
                 attempttomovespellname(comparespell)
                 break
             # should this be checking if research levels are the same and matching names?
             # probably, but doing so would be wonky
-            else:
+            elif comparespell.path1 == spell.path1:
                 # Raises NameTooLongException on failure
                 tmp = replacecurrentqualifier(tmp)
+            else:
+                break
         tmp = padspellname(tmp)
         if len(tmp) > 35:
             print(f"Error trying to find a new name for {spell.name}: propsed name {tmp} was too long!")

@@ -5,6 +5,7 @@
 #req path1 == 1
 
 #modulegroup "Beneficial Global Effect"
+#uniquemodule 1
 
 #noun "Ruby Embers"
 --#verb "Disastrous"

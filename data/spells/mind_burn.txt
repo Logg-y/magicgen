@@ -7,12 +7,12 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 1
 -- #scalecost 1.6
 
-#aoe 3
+#aoe 5
 #power 3
-#maxpower 7
+#maxpower 9
 #pathlevel 2
 #explspr 10204
 #sound 41
@@ -46,6 +46,8 @@
 #namecond range < 10 1 "NAMEPREFIX Mindburning Touch"
 #namecond range < 10 4 "NAMEPREFIX Mindfreezing Touch"
 
+#scalefatigueexponent 1.2
+#pathperresearch 0.4
 #end
 
 #neweffect "Mind Burn Gemless"
@@ -140,6 +142,9 @@
 #descr 1 "The caster attempts to burn the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 
 #end
+
+
+
 
 
 

@@ -49,6 +49,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of eagle eyes"
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
+#scalefatigueexponent 1.3
+#pathperresearch 0.2
 #end
 
 
@@ -102,3 +104,4 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
 #end
+
