@@ -1,4 +1,5 @@
 #neweffect "Rage"
+#scalingset "evo"
 #effect 11
 #damage 128
 #spec 8540160
@@ -11,12 +12,12 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 3
-#maxpower 8
+#power 1
+#maxpower 14
 #pathlevel 2
 #explspr 10023
 #sound 9
-#fatiguecost 20
+#fatiguecost 10
 #precision 100
 #range 5015
 
@@ -86,3 +87,4 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of rage"
 
 #end
+

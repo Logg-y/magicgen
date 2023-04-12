@@ -1,4 +1,5 @@
 #neweffect "Death Instakill"
+#scalingset "evo"
 #effect 2
 #damage 999
 #spec 4096 + 16384 + 8388608 + 536870912 + 524288
@@ -12,7 +13,7 @@
 -- #scalecost 1.1
 
 #aoe 3
-#power 4
+#power 5
 #maxpower 14
 #pathlevel 3
 #explspr 10225
@@ -43,6 +44,7 @@
 #end
 
 #neweffect "Death Instakill Gemless"
+#scalingset "evo"
 #effect 2
 #damage 999
 #spec 4096 + 16384 + 8388608 + 536870912 + 524288
@@ -61,7 +63,7 @@
 #pathlevel 3
 #explspr 10225
 #sound 22
-#fatiguecost 15
+#fatiguecost 10
 #precision 100
 #range 100
 
@@ -86,5 +88,7 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 
 

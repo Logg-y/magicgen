@@ -1,4 +1,5 @@
 #neweffect "Slow"
+#scalingset "disabling"
 #effect 11
 #damage 68719476736
 #spec 8392704
@@ -7,10 +8,10 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 0.6
 -- #scalecost 0.6
 
-#aoe 1
+#aoe 0
 #power 1
 #pathlevel 1
 #explspr 10304
@@ -45,7 +46,7 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of slowness"
 
 #scalefatigueexponent 1.5
-#maxpower 6
+#maxpower 9
 #end
 
 #neweffect "Slow Battlefield"
@@ -127,6 +128,7 @@
 #scalefatigueexponent 1.4
 #maxpower 9
 #end
+
 
 
 

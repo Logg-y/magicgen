@@ -1,12 +1,13 @@
 #neweffect "Blade Wind"
+#scalingset "evo"
 #effect 2
 #damage 1012
 #spec 1099513724928
 #aoe 0
-#power 3
-#maxpower 5
+#power 2
+#maxpower 6
 #precision 2
-#nreff 4010
+#nreff 2010
 #range 5020
 #pathlevel 2
 #fatiguecost 10
@@ -28,7 +29,7 @@
 
 #spelltype 18
 
-#scalerate 3
+#scalerate 3.5
 -- #scalecost 0.15
 #pathlevel 2
 #schools 4
@@ -44,6 +45,7 @@
 #end
 
 #neweffect "Blade Wind AP"
+#scalingset "evo"
 #effect 2
 #damage 1012
 -- AP, slash, iron
@@ -88,6 +90,7 @@
 #end
 
 #neweffect "Blade Wind AP Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1012
 -- AP, slash, iron
@@ -130,6 +133,7 @@
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end
+
 
 
 

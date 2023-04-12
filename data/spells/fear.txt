@@ -1,4 +1,5 @@
 #neweffect "Fear"
+#scalingset "evo"
 #effect 4
 #damage 5
 #spec 8388736
@@ -7,11 +8,11 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 4
+#scalerate 0.25
 -- #scalecost 0.25
 
 #aoe 1
-#power 1
+#power -1
 #pathlevel 1
 #explspr 10140
 #sound 22
@@ -36,4 +37,5 @@
 #namecond range < 10 32 "NAMEPREFIX touch of fear"
 
 #end
+
 

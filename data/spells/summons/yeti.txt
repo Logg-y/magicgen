@@ -1,4 +1,5 @@
 #neweffect "Summon yeti"
+#scalingset "battlesummon"
 #effect 1
 #damage 2231
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 3
 #pathlevel 2
 #fatiguecost 100
---#scalefatiguemult 20
 #sound 31
 #schools 1
 
@@ -22,13 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
-#scalefatiguemult 8
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "yeti ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2231
 #spec 0
@@ -51,13 +49,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 12
 
-#scalerate 2.5
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "yeti Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote yeti"
 #effect 10038
 #provrange 4
@@ -111,5 +107,5 @@
 
 #scalerate 4
 #end
-
-
+
+

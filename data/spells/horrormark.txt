@@ -61,7 +61,7 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 8
+#scalerate 1
 -- #scalecost 0.1
 
 #aoe 1
@@ -93,6 +93,7 @@
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
+#scalingset ""
 #end
 
 #neweffect "Horror Mark AoE Stronger"
@@ -114,7 +115,7 @@
 #explspr 10201
 #sound 28
 #range 50
-#fatiguecost 100
+#fatiguecost 200
 
 
 #paths 144
@@ -142,4 +143,7 @@
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
+#scalingset ""
 #end
+
+

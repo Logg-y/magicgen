@@ -1,4 +1,5 @@
 #neweffect "Summon flamejelly"
+#scalingset "battlesummon"
 #effect 1
 #damage 2854
 #spec 41959424
@@ -16,19 +17,17 @@
 
 #skipchance 98
 
-#scalefatiguemult 10
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 
 #name 1 "$conjure$ NAMEPREFIX Flame %Jelly%"
 #descr 1 "The caster calls forth ARTICLE flame %jelly% to attack his enemies. Flame jellies are very resistant to magic and are surrounded by strange heat and flames, but are very vulnerable to physical damage."
 
 #spelltype 528
 
-#scalerate 1.3
 #end
-
+
+
 #neweffect "flamejelly ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2854
 #spec 41959424
@@ -47,15 +46,12 @@
 #name 1 "$Summon$ NAMEPREFIX Flame %Jelly%"
 #descr 1 "The caster calls forth ARTICLE flame %jelly% to fight for him. Flame jellies are very resistant to magic and are surrounded by strange heat and flames, but are very vulnerable to physical damage."
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
 
 #spelltype 20
 
-#scalerate 2
 #end
-
+
+
 #neweffect "Flamejelly Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon flamejelly"
 #effect 10038
 #provrange 4
@@ -108,8 +105,5 @@
 
 #scalerate 2.0
 #end
-
-
-
-
-
+
+

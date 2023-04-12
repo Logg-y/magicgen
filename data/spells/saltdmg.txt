@@ -1,4 +1,5 @@
 #neweffect "Salt Evo Instant"
+#scalingset "evo"
 #effect 142
 #damage 1003
 #spec 16512
@@ -19,7 +20,7 @@
 
 #name 8 "Burst of Salt"
 
-#descr 8 "Salt suddenly falls upon a SIZE area. This spell is harmless to most creatures, however beings vulnerable to salt such as many spectral undead or Jinn may be harmed and stunned by this spell."
+#descr 8 "Salt suddenly falls upon a SIZE area. This spell is harmless to most creatures, however beings vulnerable to salt such as Jinn and certain kinds of spectral undead may be harmed and stunned by this spell."
 
 #spelltype 42
 #scalerate 0.25

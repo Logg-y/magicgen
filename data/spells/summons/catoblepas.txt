@@ -1,4 +1,6 @@
 #neweffect "Call catoblepas"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1290
 #spec 0
@@ -8,7 +10,6 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 100
-#scalefatiguemult 40
 #sound 31
 #schools 1
 
@@ -22,8 +23,6 @@
 
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.6
 -- #scalecost 1.0
 #schools 1
 #skipchance 60
@@ -32,13 +31,18 @@
 #nocostreduction 1
 #end
 
+
+
+
 #neweffect "catoblepas ritual"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1290
 #spec 0
 #power 5
 #maxpower 20
-#nreff 3
+#nreff 2
 #pathlevel 4
 #fatiguecost 520
 #schools 1
@@ -53,14 +57,16 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.8
-#scalefatiguemult 65
 
-#scalerate 2
 
 -- Death gaze doesn't really get changed if you become small or anything like that
 #nocostreduction 1
+#scalefatiguemult 169.0
+#scalerate 0.4
 #end
+
+
+
 
 #neweffect "catoblepas Remote Assassination"
 #effect 10050
@@ -86,6 +92,9 @@
 #spelltype 4
 
 #end
+
+
+
 
 #neweffect "Remote summon catoblepas"
 #effect 10038
@@ -115,4 +124,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 320
 #end
+
+
+
+
 

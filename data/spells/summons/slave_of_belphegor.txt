@@ -1,14 +1,15 @@
-
 #neweffect "slave of belphegor ritual"
 #newunit "Slave of Belphegor"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 303
 #spec 0
 #power 2
 #maxpower 14
-#nreff 1002
+#nreff 1003
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 300
 #schools 1
 
 #paths 128
@@ -21,11 +22,13 @@
 
 #skipchance 82
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 80
 
-#scalerate 2
+#scalefatiguemult 42.0
+#scalerate 1.0
 #end
+
+
+
 
 #neweffect "Slave of Belphegor Remote Assassination"
 #newunit "Slave of Belphegor"
@@ -51,6 +54,9 @@
 #spelltype 4
 
 #end
+
+
+
 
 #neweffect "slave of belphegor remote"
 #newunit "Slave of Belphegor"
@@ -81,3 +87,8 @@
 
 #scalerate 2
 #end
+
+
+
+
+

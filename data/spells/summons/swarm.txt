@@ -1,11 +1,13 @@
 #neweffect "Lesser Swarm"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -9
 #spec 8388608
 #power 0
-#maxpower 2
+#maxpower 7
 #precision -2
-#nreff 2
+#nreff 1
 #pathlevel 1
 #fatiguecost 20
 #sound 44
@@ -20,20 +22,24 @@
 
 #spelltype 528
 
-#scalerate 2
 -- #scalecost 1.0
 #skipchance 20
-#scalefatigueexponent -1.2
+#scalerate 0.16
 #end
 
+
+
+
 #neweffect "Swarm"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -9
 #spec 8388608
 #power 4
 #maxpower 14
 #precision -2
-#nreff 3012
+#nreff 3017
 #pathlevel 1
 #fatiguecost 100
 #sound 44
@@ -48,10 +54,13 @@
 
 #spelltype 528
 
-#scalerate 7
-#scalefatigueexponent -0.4
 #skipchance 20
 -- #scalecost 1.0
-#pathperresearch 0.4
+#scalerate 3.2
 #end
+
+
+
+
+
 

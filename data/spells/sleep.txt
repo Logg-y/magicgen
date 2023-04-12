@@ -1,4 +1,5 @@
 #neweffect "Sleep"
+#scalingset "disabling"
 #effect 11
 #damage 1024
 #spec 545935488

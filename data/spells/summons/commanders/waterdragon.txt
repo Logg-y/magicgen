@@ -24,11 +24,11 @@
 #name 4 "Summon NAMEPREFIX %Dragon%"
 #descr 4 "The caster summons ARTICLE %Dragon% to fight for him on the battlefield. The %Dragon% is physically mighty and very skilled in Water magic, but will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 140
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.9
+#scalerate 0.3
+#scalefatigueexponent 0
 #end
 
 #neweffect "Summon Water Dragon"
@@ -87,3 +87,4 @@
 #spelltype 4
 
 #end
+

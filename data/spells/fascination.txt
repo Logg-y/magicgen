@@ -1,4 +1,5 @@
 #neweffect "Fascination"
+#scalingset "disabling"
 #effect 128
 #damage 100
 #spec 8540288
@@ -12,12 +13,12 @@
 #scalefatigueexponent 1
 
 #aoe 0
-#power -1
+#power -2
 #maxpower 6
 #pathlevel 1
 #explspr 10207
 #sound 42
-#fatiguecost 10
+#fatiguecost 5
 #range 5010
 
 #paths 64
@@ -117,6 +118,7 @@
 
 
 #neweffect "Colour Spray"
+#scalingset "disabling"
 #effect 128
 #damage 100
 #spec 8540288
@@ -155,6 +157,7 @@
 
 #fatigueperresearch 0
 #end
+
 
 
 

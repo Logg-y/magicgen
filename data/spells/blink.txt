@@ -1,4 +1,5 @@
 #neweffect "Blink Foes"
+#scalingset "disabling"
 #effect 20
 #damage 30
 #spec 8671232

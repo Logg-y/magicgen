@@ -1,4 +1,5 @@
 #neweffect "Summon weles4"
+#scalingset "battlesummon"
 #effect 1
 #damage 410
 #spec 8388608
@@ -15,19 +16,17 @@
 #secondarypaths 4
 
 #skipchance 98
-#scalefatiguemult 28.0
 #details "The elementals are size 4."
 #name 4 "$conjure$ NAMEPREFIX Large Water %Elemental%"
 #descr 4 "The caster summons forth ARTICLE large water %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 0.46
-#scalefatigueexponent -1.8
-#pathperresearch 0.66
 #end
-
+
+
 #neweffect "weles4 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 410
 #spec 8388608
@@ -49,13 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.2
-#scalefatiguemult 50.0
 
-#scalerate 2
-#pathperresearch 0.66
 #end
-
+
+
 #neweffect "weles4 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +75,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon weles4"
 #effect 10038
 #provrange 4
@@ -108,9 +105,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 70
 #end
-
-
-
-
-
-
+
+

@@ -23,9 +23,16 @@
 
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.16
 #skipchance 20
+#scalingset "battlesummon"
+#fatigueperresearch 0
+#scalefatigueexponent 0.0
+#pathperresearch 0.28
 #end
+
+
+
 
 #neweffect "Call Horror"
 #effect 126
@@ -54,8 +61,14 @@
 #spelltype 528
 
 #skipchance 20
-#scalerate 1
+#scalerate 0.16
+#scalingset "battlesummon"
+#fatigueperresearch 0
+#scalefatigueexponent 0.0
+#pathperresearch 0.28
 #end
+
+
 
 
 #neweffect "Send Lesser Horror"
@@ -86,6 +99,9 @@
 #scalerate 2.0
 #end
 
+
+
+
 #neweffect "Send Horror"
 #effect 10038
 #provrange 4
@@ -113,4 +129,9 @@
 
 #scalerate 2.0
 #end
+
+
+
+
+
 

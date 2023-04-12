@@ -1,4 +1,5 @@
 #neweffect "Planeshift Kokytos"
+#scalingset "evo"
 #effect 108
 #damage -13
 #spec 16512
@@ -35,6 +36,7 @@
 #end
 
 #neweffect "Planeshift Inferno"
+#scalingset "evo"
 #effect 108
 #damage -12
 #spec 16512
@@ -71,6 +73,7 @@
 #end
 
 #neweffect "Planeshift Void"
+#scalingset "evo"
 #effect 108
 #damage -11
 #spec 128+16384+8388608+4096

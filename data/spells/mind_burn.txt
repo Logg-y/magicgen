@@ -1,4 +1,5 @@
 #neweffect "Mind Burn"
+#scalingset "evo"
 #effect 2
 #damage 1010
 #spec 8540288
@@ -7,11 +8,11 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.0
 -- #scalecost 1.6
 
-#aoe 5
-#power 3
+#aoe 4
+#power 4
 #maxpower 9
 #pathlevel 2
 #explspr 10204
@@ -51,6 +52,7 @@
 #end
 
 #neweffect "Mind Burn Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1010
 #spec 8540288
@@ -142,6 +144,8 @@
 #descr 1 "The caster attempts to burn the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 
 #end
+
+
 
 
 

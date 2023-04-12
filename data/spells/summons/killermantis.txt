@@ -1,4 +1,5 @@
 #neweffect "Summon killermantis"
+#scalingset "battlesummon"
 #effect 1
 #damage 2226
 #spec 0
@@ -15,10 +16,7 @@
 #secondarypaths 64
 #secondarypathchance 80
 
-#scalefatiguemult 3
-#pathperresearch 0.4
 -- this oddly specific value was needed to keep it costing 1 gem
-#scalefatigueexponent -1.2
 #skipchance 99
 
 #name 64 "$conjure$ NAMEPREFIX Killer Mantis"
@@ -26,10 +24,11 @@
 
 #spelltype 528
 
-#scalerate 3
 #end
-
+
+
 #neweffect "killermantis ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2226
 #spec 0
@@ -51,12 +50,10 @@
 
 #skipchance 99
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 22
 
-#scalerate 3
 #end
-
+
+
 #neweffect "killermantis Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon killermantis"
 #effect 10038
 #provrange 4
@@ -110,4 +108,5 @@
 
 #scalerate 2.0
 #end
-
+
+

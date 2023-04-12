@@ -81,6 +81,7 @@
 #end
 
 #neweffect "Curse of Undeath"
+#scalingset "evo"
 #effect 29
 #damage 999
 #spec 1152921505152913536
@@ -116,6 +117,7 @@
 
 
 #neweffect "Curse of Undeath Gemless"
+#scalingset "evo"
 #effect 29
 #damage 999
 #spec 1152921505152913536

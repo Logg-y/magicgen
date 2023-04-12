@@ -618,7 +618,7 @@
 
 #name 32 "Raise the Slain"
 #descr 32 "Through the consumption of magical gems, the recipient permanently gains an understanding of how to raise living beings he kills as soulless."
-#details "Creatures killed by the recipient become reanimated as soulless. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+#details "Creatures killed by the recipient become reanimated as soulless. This does not offer the recipient any ability to command the undead, which may cause any raised soulless to rapidly crumble. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 #scalerate 0
 #skipchance 50

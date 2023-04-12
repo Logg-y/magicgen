@@ -33,12 +33,13 @@
 
 
 #neweffect "Banefire Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2028
 -- AP
 #spec 64
 -- evo
-#aoe 5
+#aoe 4
 #schools 4
 #range 5030
 #precision 2
@@ -65,7 +66,7 @@
 
 #power 5
 #maxpower 14
-#scalerate 0.8
+#scalerate 1.0
 #pathlevel 3
 
 #priority 1
@@ -80,6 +81,7 @@
 #end
 
 #neweffect "Banefire Instant"
+#scalingset "evo"
 #effect 2
 #damage 5040
 #spec 64
@@ -137,6 +139,7 @@
 
 
 #neweffect "Banefire Cloud"
+#scalingset "evo"
 #effect 4002
 #damage 3030
 #spec 64
@@ -178,6 +181,7 @@
 
 
 #neweffect "Banefire Rain"
+#scalingset "evo"
 #copyspell "Gifts from Heaven"
 #effect 2
 #damage 2028
@@ -192,7 +196,7 @@
 #flightspr 10067
 #explspr 10127
 #sound 16
-#fatiguecost 200
+#fatiguecost 300
 
 #paths 33
 #secondarypaths 33
@@ -209,12 +213,15 @@
 
 #power 9
 #maxpower 19
-#scalerate 3
+#scalerate 5.0
 #pathlevel 6
-#nreff 30
+#nreff 20
 
 #scalefatigueexponent 1.3
 #end
+
+
+
 
 
 

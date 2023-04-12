@@ -1,5 +1,6 @@
 #neweffect "Cleansing Water"
 #copyspell "Cleansing Water"
+#scalingset "evo"
 #skipflightspr 1
 #effect 2
 #damage 2001

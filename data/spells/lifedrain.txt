@@ -1,4 +1,5 @@
 #neweffect "Lifedrain single target"
+#scalingset ""
 #copyspell "Drain Life"
 #effect 103
 #damage 1010
@@ -40,6 +41,7 @@
 #end
 
 #neweffect "Lifedrain aoe"
+#scalingset "evo"
 #copyspell "Drain Life"
 #effect 103
 #damage 1010
@@ -82,6 +84,7 @@
 #end
 
 #neweffect "Lifedrain single target blood"
+#scalingset ""
 #copyspell "Leech"
 #effect 103
 #damage 1020
@@ -121,6 +124,7 @@
 #end
 
 #neweffect "Lifedrain aoe blood"
+#scalingset "evo"
 #copyspell "Leech"
 #effect 103
 #damage 1010
@@ -232,6 +236,7 @@
 
 
 #neweffect "Lifedrain soulslay"
+#scalingset "evo"
 #copyspell "Drain Life"
 #effect 103
 #damage 999
@@ -249,7 +254,7 @@
 #maxpower 14
 #pathlevel 3
 #sound 18
-#fatiguecost 20
+#fatiguecost 10
 #precision 100
 #range 5020
 
@@ -268,4 +273,7 @@
 
 
 #end
+
+
+
 

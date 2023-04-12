@@ -37,11 +37,12 @@
 #end
 
 #neweffect "Glass Dust"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 4
-#power 2
+#power 3
 #nreff 1
 #precision 1
 #range 5020
@@ -75,6 +76,7 @@
 #end
 
 #neweffect "Glass Dust Gemless"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
@@ -146,11 +148,12 @@
 
 
 #neweffect "Sharp Thorns"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 4
-#power 2
+#power 3
 #nreff 1
 #precision 1
 #range 5020
@@ -182,6 +185,7 @@
 
 
 #neweffect "Sharp Thorns Gemless"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
@@ -270,11 +274,12 @@
 
 
 #neweffect "Ice Dust"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
 #aoe 4
-#power 2
+#power 3
 #nreff 1
 #precision 1
 #range 5020
@@ -305,6 +310,7 @@
 
 
 #neweffect "Ice Dust Gemless"
+#scalingset "evo"
 #effect 2
 #damage 3
 #spec 128+16384+8388608+1152921504606846976+2097152
@@ -370,6 +376,9 @@
 #scalerate 2.2
 #schools evo
 #end
+
+
+
 
 
 

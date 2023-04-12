@@ -1,4 +1,5 @@
 #neweffect "Summon shadelord"
+#scalingset "battlesummon"
 #effect 1
 #damage 843
 #spec 8388608
@@ -21,12 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
-#scalefatiguemult 8
-#scalefatigueexponent -1.4
 #end
-
+
+
 #neweffect "shadelord ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 843
 #spec 8388608
@@ -50,12 +50,9 @@
 
 #spelltype 20
 
-#scalerate 1.5
-#scalefatiguemult 20
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "shadelord Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon shadelord"
 #effect 10038
 #provrange 4
@@ -104,5 +102,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
-
-
+
+

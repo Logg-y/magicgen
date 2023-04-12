@@ -1,4 +1,5 @@
 #neweffect "juggernaut ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 781
 #spec 8388608
@@ -19,10 +20,7 @@
 
 #spelltype 20
 
-#scalefatigueexponent -2.3
-#scalefatiguemult 300
 
-#scalerate 1
 
 -- This might seem like a very odd thing on first glance, but the big reason these need to be limited is dominion printing
 -- Turns out that globals that churn out tons of Tiny Juggernauts gets problematic
@@ -31,7 +29,8 @@
 #nocostreduction 1
 #noresearchreduction 1
 #end
-
+
+
 #neweffect "juggernaut Remote Assassination"
 #effect 10050
 #provrange 4
@@ -59,5 +58,5 @@
 #scalerate 2
 
 #end
-
-
+
+

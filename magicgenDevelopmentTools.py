@@ -78,7 +78,7 @@ def bulkEditConfigWindow(selectedAttributes):
             print(selectedAttributes)
             return selectedAttributes
 
-def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True):
+def overwriteSpellData(attribs_to_copy, str_attribs_to_copy, fakespell, spelleffect, giveconfirm=True):
     if not giveconfirm:
         response = "ok"
     else:
@@ -90,7 +90,7 @@ def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True
     if response.lower() == "ok":
         tochange = {}
         changecount = {}
-        for attrib in attribs_to_copy:
+        for attrib in attribs_to_copy + str_attribs_to_copy:
             if getattr(fakespell, attrib) != getattr(spelleffect, attrib):
                 setattr(spelleffect, attrib, getattr(fakespell, attrib))
                 tochange[attrib] = getattr(fakespell, attrib)
@@ -122,7 +122,10 @@ def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True
                 for attrib in tochange:
                     if line.startswith(f"#{attrib}"):
                         print(f"Change value for line: {line}")
-                        newline = f"#{attrib} {getattr(fakespell, attrib)}"
+                        if attrib not in str_attribs_to_copy:
+                            newline = f"#{attrib} {getattr(fakespell, attrib)}"
+                        else:
+                            newline = f"#{attrib} \"{getattr(fakespell, attrib)}\""
                         content[lineindex] = newline
                         changecount[attrib] = changecount.get(attrib, 0) + 1
                         break
@@ -131,7 +134,10 @@ def overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True
                     # Insert all the attributes that we haven't changed yet
                     for attrib in tochange:
                         if changecount.get(attrib, 0) == 0:
-                            content.insert(lineindex, f"#{attrib} {getattr(fakespell, attrib)}")
+                            if attrib not in str_attribs_to_copy:
+                                content.insert(lineindex, f"#{attrib} {getattr(fakespell, attrib)}")
+                            else:
+                                content.insert(lineindex, f"#{attrib} \"{getattr(fakespell, attrib)}\"")
                             print(f"Inserted new line for attrib {attrib}")
                     break
         with open(spelleffect.fp, "w") as datafile:
@@ -175,6 +181,8 @@ def scalingTool():
          sg.InputText("", k="-scaleeffect-", size=(1, 1))],
         [sg.Text("Scale maxbounces: ", size=(12, 1)),
          sg.InputText("", k="-scalemaxbounces-", size=(1, 1))],
+        [sg.Text("scaleset: ", size=(8, 1)),
+         sg.InputText("", k="-scalingset-", size=(8, 1))],
     ]
 
     scaleparam_col = [
@@ -227,12 +235,15 @@ def scalingTool():
 
     attribs_to_copy = ["aoe", "damage", "nreff", "effect", "maxbounces", "pathlevel", "fatiguecost",
                        "scalerate", "power", "maxpower", "scalecost", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "fatigueperresearch"]
+    str_attribs_to_copy = ["scalingset"]
     flags = {"aoe":32, "damage":64, "maxbounces":128, "effect":256, "nreff":16}
 
     lastflags = -1
     lastattribs = {}
     for attrib in attribs_to_copy:
         lastattribs[attrib] = -1
+    for attrib in str_attribs_to_copy:
+        lastattribs[attrib] = ""
 
     lowercaseSpellLookups = {}
     for spellname in magicgen.utils.spelleffects:
@@ -310,9 +321,13 @@ def scalingTool():
                 if response.lower() == "ok":
                     i = 0
                     bulkEditAttribs = []
+                    bulkEditAttribsStr = []
                     for attrib, shouldcopy in bulkEditSelectedAttributes.items():
                         if shouldcopy:
-                            bulkEditAttribs.append(attrib)
+                            if attrib in str_attribs_to_copy:
+                                bulkEditAttribsStr.append(attrib)
+                            else:
+                                bulkEditAttribs.append(attrib)
                     while 1:
                         key = f"Checkbox{i}"
                         if key not in values:
@@ -326,7 +341,7 @@ def scalingTool():
                         spelleffect = magicgen.utils.spelleffects.get(bulkEditCheckboxIndexesToEffectNames[key], None)
                         if spelleffect is not None:
                             print(f"Set {bulkEditAttribs} for {spelleffect.name}")
-                            overwriteSpellData(bulkEditAttribs, fakespell, spelleffect, giveconfirm=False)
+                            overwriteSpellData(bulkEditAttribs, bulkEditAttribsStr, fakespell, spelleffect, giveconfirm=False)
 
         if event == "-bulkeditconfig-":
             bulkEditSelectedAttributes = bulkEditConfigWindow(bulkEditSelectedAttributes)
@@ -343,7 +358,7 @@ def scalingTool():
                     spelleffect = magicgen.utils.spelleffects.get(realeffname, None)
                     window["-lookupspelleffect-"].update(realeffname)
             if spelleffect is not None:
-                for attrib in attribs_to_copy:
+                for attrib in attribs_to_copy + str_attribs_to_copy:
                     window[f"-{attrib}-"].update(getattr(spelleffect, attrib))
                 for flagname, flagvalue in flags.items():
                     if spelleffect.spelltype & flagvalue:
@@ -358,7 +373,7 @@ def scalingTool():
             if spelleffect is None:
                 sg.popup(f"Spell effect {values['-lookupspelleffect-']} not found.")
             else:
-                overwriteSpellData(attribs_to_copy, fakespell, spelleffect, giveconfirm=True)
+                overwriteSpellData(attribs_to_copy, str_attribs_to_copy, fakespell, spelleffect, giveconfirm=True)
 
 
         haschanged = False
@@ -372,7 +387,7 @@ def scalingTool():
             haschanged = True
             lastflags = currflags
 
-        for attrib in attribs_to_copy:
+        for attrib in attribs_to_copy + str_attribs_to_copy:
             if lastattribs[attrib] != values[f"-{attrib}-"]:
                 lastattribs[attrib] = values[f"-{attrib}-"]
                 haschanged = True
@@ -403,6 +418,9 @@ def scalingTool():
                         setattr(fakespell, attrib, float(attribstring))
                     else:
                         setattr(fakespell, attrib, int(attribstring))
+                for attrib in str_attribs_to_copy:
+                    attribstring = values[f"-{attrib}-"]
+                    setattr(fakespell, attrib, attribstring)
                 for rl in range(minresearch, maxresearch+1):
                     try:
                         s = fakespell.rollSpell(researchlevel=rl, allowskipchance=False, allowblood=False, blockmodifier=True,
@@ -444,12 +462,14 @@ def scalingTool():
                         else:
                             text = f"RL{rl}: <spell failed to generate>"
                     except:
-                        print(f"Failed to generate spell: {traceback.print_exc()}")
-                        text = f"RL{rl}: <exception while generating spell, consider restarting this utility>"
+                        print(f"Failed to generate spell: {traceback.format_exc()}")
+                        info = sys.exc_info()
+                        text = f"RL{rl}: <exception {traceback.format_exception_only(info[0], info[1])}>"
                     outputdata.append(text)
             except ValueError:
                 # likely a conversion from the string fields into some kind of number failed
-                outputdata.append("Probably failed to convert text above to a numeric value")
+                info = sys.exc_info()
+                outputdata.append(traceback.format_exception_only(info[0], info[1]))
 
             for x in range(0, OUTPUT_AREA_SIZE):
                 window[f"-output{x}-"].update(visible=False)

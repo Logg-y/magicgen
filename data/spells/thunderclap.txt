@@ -16,6 +16,7 @@
 #end
 
 #neweffect "Thunderclap"
+#scalingset "disabling"
 #effect 128
 #damage 100
 #spec 8540288

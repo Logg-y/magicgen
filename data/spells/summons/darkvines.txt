@@ -1,4 +1,5 @@
 #neweffect "Summon darkvines"
+#scalingset "battlesummon"
 #effect 1
 #damage 330
 #spec 0
@@ -20,13 +21,11 @@
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines fight for the caster."
 
 #spelltype 528
-#scalefatiguemult 50
-#scalerate 0.51
-#scalefatigueexponent -2.0
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "darkvines ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 330
 #spec 0
@@ -47,12 +46,10 @@
 
 #skipchance 50
 
-#scalefatigueexponent -1.8
-#scalefatiguemult 300
 
-#scalerate 1
 #end
-
+
+
 #neweffect "darkvines Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,7 +73,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote darkvines"
 #effect 10038
 #provrange 4
@@ -105,3 +103,5 @@
 
 #scalerate 1
 #end
+
+

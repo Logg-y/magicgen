@@ -1,4 +1,5 @@
 #neweffect "gargoyle ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2368
 #spec 8388608
@@ -19,13 +20,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
 
-#scalerate 1
 #end
-
+
+
 #neweffect "gargoyle Remote Assassination"
 #effect 10050
 #provrange 4
@@ -48,7 +46,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon gargoyle"
 #effect 10038
 #provrange 4
@@ -76,4 +75,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
-
+
+

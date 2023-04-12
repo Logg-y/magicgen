@@ -20,9 +20,18 @@
 
 #spelltype 528
 
-#scalerate 1.6
-#scalefatiguemult 8.0
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
+#scalerate 0.48
+#scalefatiguemult 0
+#scalefatigueexponent 0.0
+#pathperresearch 0.28
 #skipchance 90
+#scalingset "battlesummon"
+#fatigueperresearch 0
 #end
+
+
+
+
+
+
+

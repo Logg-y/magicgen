@@ -1,8 +1,9 @@
 #neweffect "Wither Bones"
+#scalingset "evo"
 #effect 2
 #damage 3012
 #spec 276824200
-#aoe 5
+#aoe 3
 #power 2
 #maxpower 14
 #precision 0
@@ -23,7 +24,7 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.5
+#scalerate 0.75
 -- #scalecost 0.3
 #schools 32
 
@@ -36,11 +37,12 @@
 
 
 #neweffect "Wither Bones Gemless"
+#scalingset "evo"
 #effect 2
 #damage 3012
 #spec 276824200
 #aoe 0
-#power 0
+#power -1
 #maxpower 14
 #precision 0
 #range 5025
@@ -71,6 +73,8 @@
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
+
+
 
 
 

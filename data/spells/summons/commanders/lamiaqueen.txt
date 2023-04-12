@@ -10,7 +10,7 @@
 #pathlevel 4
 #chassisvalue 50
 #range 6
-#fatiguecost 160
+#fatiguecost 100
 #explspr 10232
 #sound 31
 #schools 1
@@ -29,11 +29,14 @@
 #descr 32 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 #descr 64 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 
-#scalefatiguemult 30
+#scalefatiguemult 60
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.6
+#scalerate 0.2
+#scalefatigueexponent 0
+#scalingset ""
+#fatigueperresearch 0
+#pathperresearch 0.4
 #end
 
 #neweffect "Summon Lamia Queen"
@@ -70,5 +73,6 @@
 
 #scalerate 1
 #end
+
 
 

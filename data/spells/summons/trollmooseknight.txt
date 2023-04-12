@@ -1,4 +1,5 @@
 #neweffect "Summon troll moose knight"
+#scalingset "battlesummon"
 #effect 1
 #damage 1086
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 2
 #pathlevel 3
 #fatiguecost 100
-#scalefatiguemult 12
 #sound 31
 #schools 1
 
@@ -22,12 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.2
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "troll moose knight ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1086
 #spec 0
@@ -47,12 +46,10 @@
 #descr 8 "The caster summons ARTICLE %troll moose knight%. Troll moose knights have hard skin and an unnatural capacity to regenerate wounds, but they strongly dislike fire. They ride into battle atop a large moose."
 #spelltype 20
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 20
 
-#scalerate 1.4
 #end
-
+
+
 #neweffect "troll moose knight Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,7 +72,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon troll moose knight"
 #effect 10038
 #provrange 4
@@ -104,5 +102,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 50
 #end
-
-
+
+

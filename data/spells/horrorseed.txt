@@ -1,4 +1,5 @@
 -- Disabled due to horror seed's gamebreaking battle report bug (makes battle reports and replays both unable to be viewed under certain circumstances)
+-- I can't find a way to make this break the game any more... but... is this fun to play with?
 
 -- #neweffect "Horror Seed Lesser Real"
 -- #effect 500

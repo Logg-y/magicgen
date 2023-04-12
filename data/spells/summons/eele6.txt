@@ -1,4 +1,5 @@
 #neweffect "Summon eeles6"
+#scalingset "battlesummon"
 #effect 1
 #damage 493
 #spec 0
@@ -15,18 +16,17 @@
 #secondarypaths 8
 
 #skipchance 30
-#scalefatiguemult 20.0
 #details "The elementals are size 6."
 #name 8 "Summon NAMEPREFIX Massive Earth %Elemental%"
 #descr 8 "The caster summons forth ARTICLE earth %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 0.16
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "eeles6 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 493
 #spec 0
@@ -48,12 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 150.0
 
-#scalerate 2
 #end
-
+
+
 #neweffect "eeles6 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon eeles6"
 #effect 10038
 #provrange 4
@@ -108,8 +107,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
-
-
-
-
-
+
+

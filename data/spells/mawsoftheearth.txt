@@ -16,6 +16,7 @@
 
 
 #neweffect "Maws of the Earth"
+#scalingset "evo"
 #effect 2
 #damage 1012
 #spec 70368752566336
@@ -55,6 +56,7 @@
 
 
 #neweffect "Maws of the Earth Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1012
 #spec 70368752566336

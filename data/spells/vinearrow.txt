@@ -12,6 +12,7 @@
 #end
 
 #neweffect "Vine Arrow"
+#scalingset "evo"
 #copyspell "Vine Arrow"
 #effect 2
 #damage 2013
@@ -25,7 +26,7 @@
 
 #nreff 1
 #aoe 0
-#power 1
+#power 0
 #maxpower 14
 #pathlevel 1
 #flightspr 419
@@ -52,4 +53,5 @@
 #pathperresearch 0.22
 #fatigueperresearch 0
 #end
+
 

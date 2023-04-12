@@ -4,6 +4,16 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+v3.1.10
+
+Implemented enforced standardised research level progression for most offensive and unit summoning spells.
+In general, this should have resulted in:
+	Evocation being about the same as it was before.
+	Disabling effects being weaker than before.
+	Ritual summons being less efficient than before.
+
+Somewhat reduced the amount of mages that are summoned in battle, primarily for the more powerful mage types.
+
 v3.1.9
 
 Rebalanced elemental summoning, again. The major change this time is that it is no longer possible to summon two size 6 elementals in combat with one gem at level 6.

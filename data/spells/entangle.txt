@@ -1,4 +1,5 @@
 #neweffect "Entangle"
+#scalingset "disabling"
 #effect 11
 #damage 64
 #spec 8404992
@@ -10,9 +11,9 @@
 #scalerate 1.5
 
 #aoe 0
-#power -2
+#power 0
 #pathlevel 1
-#maxpower 6
+#maxpower 9
 #explspr 10189
 #sound 31
 #fatiguecost 10
@@ -129,6 +130,7 @@
 
 #scalefatigueexponent 1.2
 #end
+
 
 
 

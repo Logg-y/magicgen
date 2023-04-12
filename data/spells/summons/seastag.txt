@@ -1,4 +1,5 @@
 #neweffect "Summon seastag"
+#scalingset "battlesummon"
 #effect 1
 #damage 1062
 #spec 41959424
@@ -23,14 +24,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
---#scalefatiguemult 5
-#scalefatigueexponent -1.3
-#pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "seastag ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1062
 #spec 41959424
@@ -53,13 +51,11 @@
 
 #skipchance 97
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 23
 
-#scalerate 3
 #siegepatrolchaff 1
 #end
-
+
+
 #neweffect "seastag Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +81,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote seastag"
 #effect 10038
 #provrange 4
@@ -114,5 +111,5 @@
 
 #scalerate 4
 #end
-
-
+
+

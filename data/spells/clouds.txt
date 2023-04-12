@@ -1,9 +1,10 @@
 #neweffect "Poison Cloud"
+#scalingset "evo"
 #effect 3007
 #damage 1
 #spec 8396928
-#aoe 1003
-#power 3
+#aoe 3
+#power 2
 #precision -1
 #range 5015
 #fatiguecost 100
@@ -23,7 +24,7 @@
 
 #spelltype 34
 
-#scalerate 1
+#scalerate 0.75
 -- #scalecost 2.0
 #pathlevel 2
 #schools 4
@@ -33,14 +34,16 @@
 #namecond effect > 4000 b "Extended NAMEPREFIX $poisonous$ cloud"
 
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 #neweffect "Fire Cloud"
+#scalingset "evo"
 #effect 3002
 #damage 1005
 #spec 96
-#aoe 1003
-#power 2
+#aoe 3
+#power 1
 #precision -1
 #range 5015
 #fatiguecost 100
@@ -60,7 +63,7 @@
 
 #spelltype 34
 
-#scalerate 1.3
+#scalerate 0.75
 -- #scalecost 1.7
 #pathlevel 2
 #schools 4
@@ -73,10 +76,11 @@
 #end
 
 #neweffect "Freezing Cloud"
+#scalingset "evo"
 #effect 4002
 #damage 1
 #spec 640
-#aoe 1004
+#aoe 3
 #power 3
 #precision -1
 #range 5015
@@ -97,9 +101,9 @@
 
 #spelltype 34
 
-#scalerate 1.2
+#scalerate 0.75
 -- #scalecost 1.7
-#pathlevel 3
+#pathlevel 2
 #schools 4
 
 
@@ -107,14 +111,16 @@
 #namecond effect > 5000 4 "Extended NAMEPREFIX $freezing$ $mist$"
 #namecond effect > 5000 b "Extended NAMEPREFIX $mist$ of Kokytos"
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 
 #neweffect "Flame Cloud AN"
+#scalingset "evo"
 #effect 4002
 #damage 1
 #spec 160
-#aoe 1004
+#aoe 3
 #power 3
 #precision -1
 #range 5015
@@ -135,7 +141,7 @@
 
 #spelltype 34
 
-#scalerate 1
+#scalerate 0.75
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
@@ -145,15 +151,17 @@
 #namecond effect > 5000 1 "Extended NAMEPREFIX scalding $mist$"
 #namecond effect > 5000 b "Extended NAMEPREFIX scalding $mist$"
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 
 #neweffect "Cloud of Death"
+#scalingset "evo"
 #effect 4002
 #damage 1002
 #spec 528512
-#aoe 1004
-#power 4
+#aoe 3
+#power 3
 #precision -3
 #range 30
 #fatiguecost 100
@@ -170,7 +178,7 @@
 
 #spelltype 34
 
-#scalerate 1.7
+#scalerate 0.75
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
@@ -180,14 +188,16 @@
 
 #scalefatigueexponent 1.4
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 
 #neweffect "Shock Cloud"
+#scalingset "evo"
 #effect 4109
 #damage 1
 #spec 2048+128
-#aoe 1003
+#aoe 3
 #power 2
 #precision -1
 #range 5015
@@ -208,7 +218,7 @@
 
 #spelltype 34
 
-#scalerate 1.5
+#scalerate 0.75
 -- #scalecost 1.7
 #pathlevel 2
 #schools 4
@@ -218,7 +228,16 @@
 #namecond effect > 5000 b "Extended NAMEPREFIX static cloud"
 #scalefatigueexponent 1.3
 #pathperresearch 0.4
+#maxpower 14
 #end
+
+
+
+
+
+
+
+
 
 
 

@@ -27,6 +27,7 @@
 
 
 #neweffect "Bone Breaking Gemless"
+#scalingset "evo"
 #effect 2
 #damage 5
 #spec 10485888
@@ -39,8 +40,8 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 2
-#maxpower 7
+#power 1
+#maxpower 14
 #pathlevel 2
 #explspr 10122
 #noadditionalnextspells 1
@@ -68,6 +69,7 @@
 #end
 
 #neweffect "Bone Breaking"
+#scalingset "evo"
 #effect 2
 #damage 5
 #spec 10485888
@@ -80,8 +82,8 @@
 -- #scalecost 0.6
 
 #aoe 3
-#power 2
-#maxpower 7
+#power 4
+#maxpower 14
 #pathlevel 2
 #explspr 10122
 #noadditionalnextspells 1
@@ -208,6 +210,8 @@
 #name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #end
+
+
 
 
 

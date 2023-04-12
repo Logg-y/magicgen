@@ -1,4 +1,5 @@
 #neweffect "Summon irondragon"
+#scalingset "battlesummon"
 #effect 1
 #damage 531
 #spec 8388608
@@ -8,9 +9,6 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 220
-#scalefatiguemult 50
-#scalefatigueexponent -2.1
-#pathperresearch 0.4
 #sound 31
 #schools 8
 
@@ -27,10 +25,11 @@
 
 #spelltype 528
 
-#scalerate 0.4
 #end
-
+
+
 #neweffect "irondragon ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 531
 #spec 8388608
@@ -54,12 +53,9 @@
 
 #spelltype 20
 
-#scalefatigueexponent -2
-#scalefatiguemult 100
-#pathperresearch 0.4
-#scalerate 1
 #end
-
+
+
 #neweffect "irondragon Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +81,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon irondragon"
 #effect 10038
 #provrange 4
@@ -116,7 +113,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 600
 #end
-
-
-
-
+
+

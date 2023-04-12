@@ -1,4 +1,5 @@
 #neweffect "Acid Evo Projectile Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2009
 -- firedmg, AP
@@ -29,7 +30,7 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 1
+#power 3
 #maxpower 14
 #scalerate 0.19
 #pathlevel 2
@@ -47,11 +48,12 @@
 #end
 
 #neweffect "Acid Evo Instant Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 2199023255616
 #aoe 1
-#power 2
+#power 3
 #maxpower 14
 #precision 3
 #range 30
@@ -90,4 +92,7 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
+
 

@@ -410,7 +410,8 @@
 
 #details "Grants +1 to all non-holy magic paths that recipients are skilled in."
 
-#descr 16 "This spell makes the caster more powerful in all paths of magic."
+#descrcond aoe == 0 16 "This spell makes the caster more powerful in all paths of magic."
+#descrcond aoe > 0 16 "This spell makes the caster and those near him more powerful in all paths of magic."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of magic power"

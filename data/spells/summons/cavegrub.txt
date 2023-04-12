@@ -1,4 +1,5 @@
 #neweffect "Summon cavegrub"
+#scalingset "battlesummon"
 #effect 1
 #damage 2526
 #spec 0
@@ -10,9 +11,6 @@
 #fatiguecost 22
 #sound 31
 #schools 1
-#scalefatiguemult 0
-#pathperresearch 0.4
-#scalefatigueexponent -1.2
 #paths 8
 #secondarypaths 8
 
@@ -23,11 +21,12 @@
 
 #spelltype 528
 
-#scalerate 1
 #aispellmod -50
 #end
-
+
+
 #neweffect "cavegrub ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2526
 #spec 0
@@ -48,18 +47,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
-#scalefatiguemult 60
 
 #siegepatrolchaff 1
 
-#scalerate 3
 #end
-
-
-
-
+
+
 #neweffect "cavegrub Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon cavegrub"
 #effect 10038
 #provrange 4
@@ -112,4 +106,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
-
+
+

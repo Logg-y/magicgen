@@ -1,4 +1,5 @@
 #neweffect "Summon greatboar"
+#scalingset "battlesummon"
 #effect 1
 #damage 2136
 #spec 0
@@ -15,9 +16,6 @@
 #secondarypaths 64
 
 #skipchance 99
-#scalefatiguemult 10
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 
 #name 64 "$send$ NAMEPREFIX Great %Boar%"
 #descr 64 "The caster summons ARTICLE great %boar%. Great boars are large and trample enemies, but are rather vulnerable to magic."
@@ -25,10 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "greatboar ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2136
 #spec 0
@@ -51,13 +50,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "greatboar Remote Assassination"
 #effect 10050
 #provrange 4
@@ -84,7 +80,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote greatboar"
 #effect 10038
 #provrange 4
@@ -114,7 +111,5 @@
 
 #scalerate 3
 #end
-
-
-
-
+
+

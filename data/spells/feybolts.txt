@@ -1,4 +1,5 @@
 #neweffect "Fey Bolts"
+#scalingset "evo"
 #effect 3
 #damage 5025
 #spec 4224
@@ -38,6 +39,7 @@
 
 
 #neweffect "Fey Bolts Gemless"
+#scalingset "evo"
 #effect 3
 #damage 5025
 #spec 4224

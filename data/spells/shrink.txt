@@ -1,4 +1,5 @@
 #neweffect "Shrinkage"
+#scalingset "disabling"
 #effect 11
 #damage 4294967296
 #spec 8671232
@@ -16,7 +17,7 @@
 #pathlevel 2
 #explspr 10041
 #sound 31
-#fatiguecost 15
+#fatiguecost 10
 #precision 4
 #range 5025
 #skipchance 50
@@ -78,4 +79,5 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of shrinkage"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 #end
+
 

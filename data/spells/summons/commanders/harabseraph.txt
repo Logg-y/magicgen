@@ -26,12 +26,14 @@
 #descr 32 "The death mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 #descr 2 "The air mage lets out a call for ARTICLE %Harab Seraph% to join him in battle. The %Harab Seraph% will leave once the battle is over."
 
-#scalefatiguemult 20.0
+#scalefatiguemult 70
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.6
+#scalerate 0.3
+#scalefatigueexponent 0
 #pathperresearch 0.1
+#scalingset ""
+#fatigueperresearch 0
 #end
 
 #neweffect "Summon Harab Seraph"
@@ -66,6 +68,7 @@
 
 #scalerate 1
 #end
+
 
 
 

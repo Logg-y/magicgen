@@ -59,12 +59,13 @@
 #end
 
 #neweffect "Parching Winds"
+#scalingset "disabling"
 #effect 109
 #damage 2006
 #spec 1152921504606863456
 #aoe 1007
 #power 1
-#maxpower 8
+#maxpower 4
 #precision 1
 #range 5040
 #pathlevel 1
@@ -95,6 +96,7 @@
 #end
 
 #neweffect "Parching Winds Gemless"
+#scalingset "disabling"
 #effect 109
 #damage 2006
 #spec 1152921504606863456
@@ -165,4 +167,6 @@
 -- #scalecost 0.3
 #schools 4
 #end
+
+
 

@@ -20,6 +20,7 @@
 
 
 #neweffect "Fire Evo Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2012
 -- firedmg, AP
@@ -70,10 +71,11 @@
 #end
 
 #neweffect "Fire Evo Instant"
+#scalingset "evo"
 #effect 2
 #damage 2016
 #spec 96
-#aoe 5
+#aoe 4
 #power 4
 #maxpower 14
 #precision 1
@@ -101,7 +103,7 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
+#scalerate 1.0
 -- #scalecost 0.3
 #schools 4
 
@@ -138,6 +140,7 @@
 
 
 #neweffect "Fire Evo Pillar"
+#scalingset "evo"
 #effect 2
 #damage 2018
 #spec 96
@@ -174,6 +177,7 @@
 
 
 #neweffect "Fire Evo Pillar Multi"
+#scalingset "evo"
 #effect 2
 #damage 2018
 #spec 96
@@ -181,7 +185,7 @@
 #power 6
 #maxpower 14
 #precision -8
-#nreff 5
+#nreff 4
 #scalefatigueexponent 1.2
 #range 100
 #pathlevel 3
@@ -197,7 +201,7 @@
 
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 18
-#scalerate 3
+#scalerate 1.0
 -- #scalecost 0.3
 #schools 4
 
@@ -344,6 +348,7 @@
 
 
 #neweffect "Fire Evo Rain"
+#scalingset "evo"
 #copyspell "Gifts from Heaven"
 #effect 2
 #damage 2007
@@ -354,12 +359,12 @@
 #schools 4
 #range 40
 #precision -20
-#nreff 40
+#nreff 20
 #nextspell "Medium Heat Shock"
 #flightspr 10073
 #explspr 10113
 #sound 123
-#fatiguecost 100
+#fatiguecost 200
 
 #paths 1
 #secondarypaths 1
@@ -370,11 +375,15 @@
 
 #spelltype 18
 
-#power 8
+#power 7
 #maxpower 18
-#scalerate 3
+#scalerate 5.0
 #pathlevel 5
 #end
+
+
+
+
 
 
 

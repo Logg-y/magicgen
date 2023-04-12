@@ -1,4 +1,5 @@
 #neweffect "Raise Greater Foulspawn"
+#scalingset "battlesummon"
 #effect 1
 #damage -10
 #spec 0
@@ -21,15 +22,13 @@
 
 #spelltype 528
 
-#scalerate 1.5
-#scalefatigueexponent -1.42
-#scalefatiguemult 9
-#pathperresearch 0.5
 -- #scalecost 1.0
 #skipchance 97
 #end
-
+
+
 #neweffect "Raise Greater Foulspawn Ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage -10
 #spec 0
@@ -49,34 +48,6 @@
 
 #spelltype 20
 
-#scalerate 2
-#scalefatigueexponent -1.6
-#scalefatiguemult 15
 #end
---
--- #neweffect "Remote summon Greater Foulspawn"
--- #effect 10038
--- #provrange 4
--- #damage -10
--- #spec 0
--- #power 6
--- #maxpower 16
--- #nreff 1000
--- #pathlevel 4
--- #fatiguecost 1600
--- #scalefatiguemult 60
--- #schools 1
---
--- #paths 64
--- #secondarypaths 64
--- #skipchance 99.6
---
--- #name 64 "Send Greater Foulspawn"
--- #descr 64 "The caster summons ARTICLE %victim% of vile crossbreeding experiments in a distance province. The creatures summoned by this spell are always the strongest results of crossbreeding."
---
--- #spelltype 20
---
--- #scalefatiguemult 60
--- #scalerate 1
--- #end
-
+
+

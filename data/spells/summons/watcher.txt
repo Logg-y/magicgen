@@ -1,4 +1,5 @@
 #neweffect "Summon watcher"
+#scalingset "battlesummon"
 #effect 1
 #damage 768
 #spec 0
@@ -22,14 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 7
-#scalefatigueexponent -1.3
-#pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "watcher ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 768
 #spec 0
@@ -51,14 +49,11 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 18
 
-#scalerate 2
 #siegepatrolchaff 1
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "watcher Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon watcher"
 #effect 10038
 #provrange 4
@@ -114,5 +110,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
-
-
+
+

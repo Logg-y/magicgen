@@ -1,4 +1,5 @@
 #neweffect "Summon eeles1"
+#scalingset "battlesummon"
 #effect 1
 #damage 498
 #spec 8388608
@@ -22,13 +23,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
-#scalefatigueexponent -1.3
-#scalefatiguemult 0
-#pathperresearch 0.33
 #end
-
+
+
 #neweffect "eeles1 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 498
 #spec 0
@@ -50,17 +49,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
-#pathperresearch 0.4
 
 #siegepatrolchaff 1
 
-#scalerate 3
 #end
-
-
-
+
+
 #neweffect "eeles1 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +79,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon eeles1"
 #effect 10038
 #provrange 4
@@ -115,4 +110,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 2
 #end
-
+
+

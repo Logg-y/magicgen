@@ -1,4 +1,5 @@
 #neweffect "Summon lamia"
+#scalingset "battlesummon"
 #effect 1
 #damage 394
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 6
 #pathlevel 2
 #fatiguecost 130
-#scalefatiguemult 10
 #sound 44
 #schools 1
 
@@ -22,12 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.7
-#scalefatigueexponent -1.53
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "lamia ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 394
 #spec 0
@@ -48,13 +47,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.7
-#scalefatiguemult 30
-#pathperresearch 0.4
 
-#scalerate 2
 #end
-
+
+
 #neweffect "Lamia Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote lamias"
 #effect 10038
 #provrange 4
@@ -107,7 +104,5 @@
 
 #scalerate 1
 #end
-
-
-
-
+
+

@@ -1,4 +1,5 @@
 #neweffect "Shatter"
+#scalingset "evo"
 #effect 96
 #damage 5020
 #spec 8405120
@@ -29,11 +30,12 @@
 #end
 
 #neweffect "Shatter Gemless"
+#scalingset "evo"
 #effect 96
 #damage 5020
 #spec 8405120
 #aoe 0
-#power 2
+#power 0
 #maxpower 14
 #precision 5
 #range 5010
@@ -58,4 +60,5 @@
 #scalefatigueexponent 0
 #pathperresearch 0.1
 #end
+
 

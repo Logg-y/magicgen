@@ -1,4 +1,5 @@
 #neweffect "Summon lioness"
+#scalingset "battlesummon"
 #effect 1
 #damage 2133
 #spec 0
@@ -21,13 +22,11 @@
 #aispellmod -10
 #spelltype 528
 
-#scalerate 0.54
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
-#scalefatiguemult 0
 #end
-
+
+
 #neweffect "lioness ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2133
 #spec 0
@@ -51,15 +50,12 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.65
-#scalefatiguemult 12
-#pathperresearch 0.4
 
 #siegepatrolchaff 1
 
-#scalerate 4
 #end
-
+
+
 #neweffect "lioness Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +81,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote lioness"
 #effect 10038
 #provrange 4
@@ -114,5 +111,5 @@
 
 #scalerate 4
 #end
-
-
+
+

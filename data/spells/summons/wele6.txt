@@ -1,4 +1,5 @@
 #neweffect "Summon weles6"
+#scalingset "battlesummon"
 #effect 1
 #damage 408
 #spec 8388608
@@ -21,13 +22,11 @@
 #descr 4 "The caster summons forth ARTICLE massive water %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
-#scalefatiguemult 20.0
-#scalerate 0.16
-#scalefatigueexponent 1.6
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "weles6 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 408
 #spec 8388608
@@ -49,13 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.8
-#scalefatiguemult 50
 
-#scalerate 1
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "weles6 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +75,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon weles6"
 #effect 10038
 #provrange 4
@@ -108,11 +105,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
-
-
-
-
-
-
-
-
+
+

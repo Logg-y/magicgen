@@ -1,4 +1,5 @@
 #neweffect "Call Animals"
+#scalingset "battlesummon"
 
 #effect 43
 #damage -5
@@ -20,14 +21,10 @@
 
 #spelltype 528
 
-#scalerate 2
-#scalefatiguemult 10
-#scalefatigueexponent -1.5
-#pathperresearch 0.4
 #skipchance 90
 #end
-
--- This is the rather more boring summon local animals effect
+
+
 #neweffect "summonanimals ritual"
 #effect 10068
 #damage 403
@@ -49,12 +46,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 10
+#scalingset "ritualsummon"
 
 #siegepatrolchaff 1
 
-#scalerate 4
 #end
-
-
+
+

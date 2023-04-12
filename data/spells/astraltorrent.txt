@@ -1,4 +1,5 @@
 #neweffect "Astral Torrent Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1010
 #spec 16512
@@ -37,10 +38,11 @@
 #end
 
 #neweffect "Astral Torrent"
+#scalingset "evo"
 #effect 2
 #damage 1010
 #spec 16512
-#aoe 2
+#aoe 1
 #power 5
 #maxpower 11
 #precision 25
@@ -61,7 +63,7 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1.05
+#scalerate 0.375
 #schools 4
 
 #priority 1
@@ -70,4 +72,5 @@
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #descrcond range < 10 b "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #end
+
 

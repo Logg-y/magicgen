@@ -1,4 +1,5 @@
 #neweffect "Summon aeles5"
+#scalingset "battlesummon"
 #effect 1
 #damage 568
 #spec 0
@@ -15,19 +16,17 @@
 #secondarypaths 2
 
 #skipchance 98
-#scalefatiguemult 40.0
 #details "The elementals are size 5."
 #name 2 "$conjure$ NAMEPREFIX Huge Air %Elemental%"
 #descr 2 "The caster summons forth ARTICLE very large air %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 0.4
-#scalefatigueexponent -1.7
-#pathperresearch 0.51
 #end
-
+
+
 #neweffect "aeles5 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 568
 #spec 0
@@ -49,12 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -2
-#scalefatiguemult 120.0
 
-#scalerate 2
 #end
-
+
+
 #neweffect "aeles5 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon aeles5"
 #effect 10038
 #provrange 4
@@ -109,10 +107,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 90
 #end
-
-
-
-
-
-
-
+
+

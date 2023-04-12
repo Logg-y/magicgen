@@ -1,4 +1,5 @@
 #neweffect "Paralyze"
+#scalingset "disabling"
 #effect 66
 #damage 5050
 #spec 8540288
@@ -11,8 +12,8 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 4
-#maxpower 6
+#power 5
+#maxpower 9
 #pathlevel 2
 #explspr 10205
 #sound 41
@@ -38,6 +39,7 @@
 #end
 
 #neweffect "Paralyze Lesser"
+#scalingset "disabling"
 #effect 66
 #damage 2008
 #spec 8540288
@@ -108,3 +110,6 @@
 #details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
 
 #end
+
+
+

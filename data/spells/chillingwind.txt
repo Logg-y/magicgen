@@ -18,6 +18,7 @@
 #end
 
 #neweffect "Chilling Winds"
+#scalingset "evo"
 #effect 109
 #damage 2006
 #spec 1152921504606863936
@@ -57,12 +58,13 @@
 
 
 #neweffect "Chilling Winds Gemless"
+#scalingset "disabling"
 #effect 109
 #damage 2006
 #spec 1152921504606863936
 #aoe 0
 #power -3
-#maxpower 4
+#maxpower 8
 #precision 1
 #range 5040
 #pathlevel 1
@@ -87,7 +89,7 @@
 #nextspell "Chilling Winds Fatigue"
 
 #spelltype 42
-#scalerate 0.8
+#scalerate 0.30000000000000004
 -- #scalecost 0.3
 #schools 4
 
@@ -129,4 +131,5 @@
 -- #scalecost 0.3
 #schools 4
 #end
+
 

@@ -1,4 +1,5 @@
 #neweffect "Bonds of Fire"
+#scalingset "disabling"
 #effect 11
 #damage 65536
 #spec 16416
@@ -11,11 +12,11 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 1
+#power 0
 #pathlevel 1
 #explspr 10203
 #sound 16
-#fatiguecost 20
+#fatiguecost 5
 #range 5020
 
 #paths 129
@@ -39,7 +40,7 @@
 #namecond range < 10 1 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 #scalefatigueexponent 1.2
-#maxpower 6
+#maxpower 9
 #end
 
 #neweffect "Bonds of Fire Battlefield"
@@ -120,6 +121,8 @@
 #scalefatigueexponent 1.2
 #maxpower 9
 #end
+
+
 
 
 

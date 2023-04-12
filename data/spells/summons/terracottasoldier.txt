@@ -1,4 +1,5 @@
 #neweffect "Summon terracotta soldier"
+#scalingset "battlesummon"
 #effect 1
 #damage 2134
 #spec 8388608
@@ -15,20 +16,17 @@
 #secondarypaths 8
 
 #skipchance 97
---#scalefatiguemult 10
 
 #name 1 "$conjure$ NAMEPREFIX Terracotta %Soldier%"
 #descr 1 "The caster quickly forms ARTICLE %figure% from clay and enchants %it% forming ARTICLE terracotta %soldier%. Terracotta soldiers are highly resistant to fire."
 
 #spelltype 528
 
-#scalerate 0.51
-#scalefatigueexponent -1.5
-#scalefatiguemult 0
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "terracottasoldier ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2134
 #spec 8388608
@@ -50,12 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
 
-#scalerate 4
 #end
-
+
+
 #neweffect "terracottasoldier Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon terracottasoldier"
 #effect 10038
 #provrange 4
@@ -106,9 +103,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 30
 #end
-
-
-
-
-
-
+
+

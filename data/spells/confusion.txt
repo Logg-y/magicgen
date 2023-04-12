@@ -1,4 +1,5 @@
 #neweffect "Confusion"
+#scalingset "evo"
 #effect 11
 #damage 17179869184
 #spec 8540160
@@ -7,16 +8,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 0.125
 -- #scalecost 1.6
 
 #aoe 0
-#power 4
-#maxpower 8
+#power 1
+#maxpower 14
 #pathlevel 2
 #explspr 10207
 #sound 31
-#fatiguecost 20
+#fatiguecost 10
 #precision 100
 #range 5015
 
@@ -79,3 +80,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of confusion"
 
 #end
+
+

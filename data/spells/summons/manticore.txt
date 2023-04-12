@@ -1,4 +1,5 @@
 #neweffect "Summon manticore"
+#scalingset "battlesummon"
 #effect 1
 #damage 2130
 #spec 0
@@ -20,14 +21,12 @@
 #descr 64 "The caster summons ARTICLE %manticore% to fight for him. The manticore is a large man-eating beast with a large poisonous stinger. The stinger can also launch poisonous barbs at enemies."
 
 #spelltype 528
-#scalefatiguemult 10
 
-#scalerate 1
-#scalefatigueexponent -1.6
-#pathperresearch 0.5
 #end
-
+
+
 #neweffect "manticore ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2130
 #spec 0
@@ -48,13 +47,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 10
 
-#scalerate 2
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "manticore Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon manticore"
 #effect 10038
 #provrange 4
@@ -107,6 +104,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
-
-
-
+
+

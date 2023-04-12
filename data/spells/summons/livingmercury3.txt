@@ -1,4 +1,5 @@
 #neweffect "Summon livingmercury3"
+#scalingset "battlesummon"
 #effect 1
 #damage 2517
 #spec 8388608
@@ -15,7 +16,6 @@
 #secondarypaths 8
 #secondarypathchance 90
 #ainocast 1
-#scalefatiguemult 10
 #skipchance 98
 
 
@@ -25,11 +25,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.6
 #end
-
+
+
 #neweffect "livingmercury3 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2517
 #spec 8388608
@@ -52,12 +52,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
 
-#scalerate 2
 #end
-
+
+
 #neweffect "livingmercury3 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,7 +80,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon livingmercury3"
 #effect 10038
 #provrange 4
@@ -112,6 +111,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 110
 #end
-
-
-
+
+

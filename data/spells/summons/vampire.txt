@@ -1,4 +1,5 @@
 #neweffect "vampire ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 405
 #spec 0
@@ -20,9 +21,7 @@
 
 #skipchance 75
 
-#scalefatigueexponent -2
-#scalefatiguemult 760
 
-#scalerate 2
 #end
-
+
+

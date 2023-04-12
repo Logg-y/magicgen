@@ -46,6 +46,7 @@
 #end
 
 #neweffect "Wrack Main"
+#scalingset "evo"
 #effect 109
 #damage 999
 #spec 4096 + 16384 + 8388608 + 536870912 + 524288 + 1152921504606846976
@@ -60,7 +61,7 @@
 
 #aoe 0
 #power 4
-#maxpower 7
+#maxpower 9
 #pathlevel 2
 #explspr 10225
 #sound 22
@@ -81,4 +82,5 @@
 #nextspell "Wrack Curse"
 
 #end
+
 

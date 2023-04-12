@@ -24,12 +24,14 @@
 #name 32 "Call NAMEPREFIX Spectral %Mage%"
 #descr 32 "The death mage summons ARTICLE Spectral %Mage% to join him in battle. The Spectral %Mage% will leave once the battle is over."
 
-#scalefatiguemult 20
+#scalefatiguemult 60
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.6
+#scalerate 0.4
+#scalefatigueexponent 0
 #pathperresearch 0.1
+#scalingset ""
+#fatigueperresearch 0
 #end
 
 #neweffect "Summon Spectral Mage"
@@ -61,6 +63,7 @@
 
 #scalerate 1
 #end
+
 
 
 

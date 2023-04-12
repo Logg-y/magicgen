@@ -1,6 +1,7 @@
 
 
 #neweffect "Shock Evo Chain Gemless"
+#scalingset "evo"
 #copyspell "Leech"
 #flightspr 10285
 #explspr 10082
@@ -8,7 +9,7 @@
 #damage 2001
 #spec 8390784
 #aoe 1
-#power 4
+#power 5
 #maxpower 15
 #precision 1
 #range 50
@@ -53,6 +54,7 @@
 #end
 
 #neweffect "Shock Evo Chain Projectile Gemless"
+#scalingset "evo"
 #effect 134
 #damage 2001
 #spec 8390784
@@ -96,4 +98,6 @@
 #scalefatigueexponent 0
 #pathperresearch 0
 #end
+
+
 

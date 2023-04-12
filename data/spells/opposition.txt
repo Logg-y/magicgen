@@ -1,14 +1,15 @@
 #neweffect "Opposition"
+#scalingset "evo"
 #effect 2
 #damage 999
 #spec 8409104
 #aoe 0
-#power 6
+#power 4
 #maxpower 14
 #precision 100
 #range 5020
 #pathlevel 3
-#fatiguecost 20
+#fatiguecost 10
 #explspr 10233
 #sound 41
 #paths 16
@@ -31,3 +32,4 @@
 #scalefatigueexponent 0.1
 #pathperresearch 0.2
 #end
+

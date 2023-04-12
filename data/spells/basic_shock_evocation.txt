@@ -30,6 +30,7 @@
 
 
 #neweffect "Shock Evo Small"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 8407168
@@ -113,6 +114,7 @@
 
 
 #neweffect "Shock Evo Large"
+#scalingset "evo"
 #effect 2
 #damage 3017
 #spec 2176
@@ -122,7 +124,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 10
+#fatiguecost 15
 #explspr 10241
 #sound 27
 
@@ -157,12 +159,13 @@
 #end
 
 #neweffect "Shock Evo Large Multi"
+#scalingset "evo"
 #effect 2
 #damage 3017
 #spec 2176
 #aoe 1
 #power 6
-#nreff 5
+#nreff 3
 #maxpower 14
 #precision -1
 #range 50
@@ -187,7 +190,7 @@
 #nextspell "Large Shock"
 
 #spelltype 18
-#scalerate 3
+#scalerate 0.75
 #schools 4
 
 #scalefatigueexponent 1.2
@@ -202,6 +205,7 @@
 
 
 #neweffect "Shock Evo Chain"
+#scalingset "evo"
 #copyspell "Leech"
 #flightspr 10285
 #explspr 10082
@@ -209,7 +213,7 @@
 #damage 2001
 #spec 8390784
 #aoe 3
-#power 4
+#power 5
 #maxpower 15
 #precision 1
 #range 50
@@ -253,6 +257,7 @@
 #end
 
 #neweffect "Shock Evo Chain Projectile"
+#scalingset "evo"
 #effect 134
 #damage 2001
 #spec 8390784
@@ -298,6 +303,7 @@
 
 
 #neweffect "Shock Evo Multichain"
+#scalingset "evo"
 #copyspell "Leech"
 #flightspr 10285
 #explspr 10082
@@ -345,6 +351,7 @@
 #end
 
 #neweffect "Shock Evo Chaincloud"
+#scalingset ""
 #effect 9134
 #damage 1003
 #spec 8390784
@@ -377,7 +384,7 @@
 
 -- evo, scale numbounces
 #spelltype 130
-#scalerate 0.7
+#scalerate 0.15
 -- #scalecost 1.4
 #schools 4
 
@@ -756,6 +763,10 @@
 -- -- #scalecost 1.4
 -- #schools 4
 -- #end
+
+
+
+
 
 
 

@@ -1,4 +1,5 @@
 #neweffect "Summon goat"
+#scalingset "battlesummon"
 #effect 1
 #damage 2227
 #spec 0
@@ -21,13 +22,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
-#pathperresearch 0.25
-#scalefatigueexponent -1.4
-#scalefatiguemult 0
 #end
-
+
+
 #neweffect "goat ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2227
 #spec 0
@@ -48,16 +47,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.45
-#scalefatiguemult 15
-#pathperresearch 0.25
 
 #siegepatrolchaff 1
 
-#scalerate 5
 #end
-
-
+
+
 #neweffect "goat Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon goat"
 #effect 10038
 #provrange 4
@@ -109,5 +105,5 @@
 
 #scalefatigueexponent -0.15
 #end
-
-
+
+

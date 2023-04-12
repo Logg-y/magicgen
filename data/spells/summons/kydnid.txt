@@ -1,4 +1,5 @@
 #neweffect "Summon kydnid"
+#scalingset "battlesummon"
 #effect 1
 #damage 1227
 #spec 8388608
@@ -13,7 +14,6 @@
 
 #paths 4
 #secondarypaths 4
-#scalefatiguemult 10
 #skipchance 98
 
 #name 4 "$conjure$ NAMEPREFIX %kydnid%"
@@ -21,12 +21,11 @@
 
 #spelltype 528
 
-#scalerate 1.7
-#scalefatigueexponent -1.53
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "kydnid ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1227
 #spec 8388608
@@ -49,13 +48,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.53
-#scalefatiguemult 10
-#pathperresearch 0.4
 
-#scalerate 2
 #end
-
+
+
 #neweffect "kydnid Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote kydnid"
 #effect 10038
 #provrange 4
@@ -110,4 +107,5 @@
 
 #scalerate 4
 #end
-
+
+

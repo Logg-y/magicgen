@@ -18,6 +18,7 @@
 #end
 
 #neweffect "Shock Evo 10AN charge"
+#scalingset "evo"
 #copyspell "Leech"
 #flightspr 10285
 #explspr 10082
@@ -25,7 +26,7 @@
 #damage 1
 #spec 1152921504606865536
 #aoe 0
-#power 0
+#power -4
 #nreff 1
 #precision 10
 #range 50
@@ -40,10 +41,10 @@
 #secondarypaths 2
 
 #name 2 "NAMEPREFIX Charge %Foe%"
-#descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselvers and the next person to strike them."
+#descr 2 "The caster unleashes a small jolt upon SUBJECT. Those affected by the jolt become charged, unleashing electricity on both themselves and the next person to strike them."
 #details "Applies 10AN charged body on damage."
 
-#maxpower 7
+#maxpower 14
 
 #nextspell "10AN charge"
 
@@ -55,4 +56,5 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
 

@@ -1,4 +1,5 @@
 #neweffect "Poison Projectile"
+#scalingset "evo"
 #effect 7
 #damage 2010
 #spec 8320
@@ -43,11 +44,12 @@
 #end
 
 #neweffect "Poison Projectile Gemless"
+#scalingset "evo"
 #effect 7
 #damage 2010
 #spec 8320
 #aoe 1
-#power 3
+#power 2
 #maxpower 14
 #precision 1
 #range 5020
@@ -70,7 +72,7 @@
 
 #spelltype 34
 
-#power 1
+#power 2
 #scalerate 0.2
 #pathlevel 2
 #schools 4
@@ -111,6 +113,7 @@
 
 
 #neweffect "Poison Projectile Death Only"
+#scalingset "evo"
 #effect 7
 #damage 2010
 #spec 8320
@@ -159,11 +162,12 @@
 
 
 #neweffect "Poison Projectile Death Only Gemless"
+#scalingset "evo"
 #effect 7
 #damage 2010
 #spec 8320
 #aoe 1
-#power 2
+#power 3
 #maxpower 14
 #precision 1
 #range 5020
@@ -189,7 +193,7 @@
 
 #nextspell "Poison Projectile Death Fear"
 
-#power 2
+#power 3
 #scalerate 0.2
 #pathlevel 2
 #schools 4
@@ -205,6 +209,8 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 
 
 

@@ -1,4 +1,5 @@
 #neweffect "Stealbreath"
+#scalingset "evo"
 #effect 3
 #damage 5035
 #spec 537481344
@@ -11,12 +12,12 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 2
-#maxpower 6
+#power 0
+#maxpower 9
 #pathlevel 1
 #explspr 10265
 #sound 52
-#fatiguecost 20
+#fatiguecost 5
 #precision 100
 #range 5020
 
@@ -35,6 +36,7 @@
 #end
 
 #neweffect "Battlefield Stealbreath"
+#scalingset "evo"
 #effect 3
 #damage 5035
 #spec 554254464

@@ -1,5 +1,6 @@
 
 #neweffect "Encase in Ice Lesser"
+#scalingset "disabling"
 #effect 603
 #damage 299
 #spec 8404992
@@ -8,14 +9,14 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 0.6
 
-#aoe 1
-#power 3
+#aoe 0
+#power 2
 #pathlevel 2
 #explspr 10134
 #sound 21
-#fatiguecost 40
+#fatiguecost 30
 #range 5015
 
 -- fire + air + water + blood
@@ -53,6 +54,7 @@
 
 
 #neweffect "Encase in Ice"
+#scalingset "disabling"
 #effect 609
 #damage 299
 #spec 8404992
@@ -68,7 +70,7 @@
 #pathlevel 3
 #explspr 10134
 #sound 21
-#fatiguecost 80
+#fatiguecost 30
 #range 5015
 
 #pathskipchance 2 95
@@ -104,3 +106,4 @@
 
 
 #end
+

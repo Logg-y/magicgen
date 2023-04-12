@@ -25,11 +25,11 @@
 #name a "Summon NAMEPREFIX Storm %Dragon%"
 #descr a "The caster summons ARTICLE %Storm Dragon% to fight for him on the battlefield. The %Storm Dragon% is physically mighty and very skilled in air magic, but will leave once the battle is over."
 
-#scalefatiguemult 60
+#scalefatiguemult 140
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.9
+#scalerate 0.3
+#scalefatigueexponent 0
 #end
 
 #neweffect "Summon Storm Dragon"
@@ -90,4 +90,5 @@
 #spelltype 4
 
 #end
+
 

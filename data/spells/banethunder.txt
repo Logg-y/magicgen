@@ -1,6 +1,7 @@
 
 
 #neweffect "Banethunder strike"
+#scalingset "evo"
 #effect 2
 #damage 5040
 #spec 64
@@ -47,11 +48,12 @@
 
 
 #neweffect "Banethunder strike multi"
+#scalingset "evo"
 #effect 2
 #damage 5040
 #spec 64
 #aoe 1
-#power 8
+#power 6
 #maxpower 16
 #precision 1
 #range 5030
@@ -59,7 +61,7 @@
 #fatiguecost 100
 #explspr 10247
 #sound 27
-#nreff 5
+#nreff 3
 
 #skipchance 70
 
@@ -78,7 +80,7 @@
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 3
+#scalerate 0.75
 #schools 4
 
 #scalefatigueexponent 1.2

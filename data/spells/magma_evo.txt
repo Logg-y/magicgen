@@ -14,11 +14,12 @@
 #end
 
 #neweffect "Magma Evo Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2023
 #spec 549755813888
 -- evo
-#aoe 5
+#aoe 4
 #schools 4
 #range 5030
 #precision 3
@@ -38,14 +39,14 @@
 #name b "NAMEPREFIX $infernal$ $magma$ blast"
 
 #descr fe "ARTICLE blast of heated rock %is% launched towards the enemy. This is inaccurate but will crush and burn those hit by it."
-#descr feb "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
+#descr b "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
 #power 4
 #maxpower 14
-#scalerate 1
+#scalerate 1.0
 #pathlevel 2
 
 #priority 1
@@ -64,13 +65,14 @@
 
 
 #neweffect "Magma Evo Eruption"
+#scalingset "evo"
 -- copy for lingering heat
 #copyspell "Magma Eruption"
 #effect 2
 #damage 3018
 #spec 549755813888
 -- evo
-#aoe 5
+#aoe 4
 #schools 4
 #range 5025
 #precision 3
@@ -90,14 +92,14 @@
 #name b "NAMEPREFIX $infernal$ $magma$ $eruption$"
 
 #descr fe "A SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
-#descr feb "$BLOOD_INTRO$, a SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
+#descr b "$BLOOD_INTRO$, a SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
 #power 4
 #maxpower 14
-#scalerate 1
+#scalerate 1.0
 #pathlevel 2
 
 #priority 1
@@ -118,6 +120,7 @@
 
 
 #neweffect "Magma Evo Projectile Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2023
 #spec 549755813888
@@ -142,7 +145,7 @@
 #name b "NAMEPREFIX $infernal$ $magma$ %$bolt$%"
 
 #descr fe "ARTICLE blast of heated rock %is% launched towards the enemy. This is inaccurate but will crush and burn those hit by it."
-#descr feb "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
+#descr b "$BLOOD_INTRO$, ARTICLE %$ball$% of heated rock %is% conjured and launched towards the enemy. This is inaccurate but may severely crush and burn SUBJECT."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
@@ -169,6 +172,7 @@
 
 
 #neweffect "Magma Evo Eruption Gemless"
+#scalingset "evo"
 -- copy for lingering heat
 #copyspell "Magma Eruption"
 #effect 2
@@ -195,7 +199,7 @@
 #name b "NAMEPREFIX $infernal$ $magma$ $eruption$"
 
 #descr fe "A SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
-#descr feb "$BLOOD_INTRO$, a SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
+#descr b "$BLOOD_INTRO$, a SIZE area of earth erupts into a shower of rocks and magma. Those in the affected area may be badly crushed by the rocks, and the residual heat may fatigue those that are not resistant."
 
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
@@ -217,6 +221,9 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
+
+
 
 
 

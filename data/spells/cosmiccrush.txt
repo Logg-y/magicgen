@@ -1,13 +1,14 @@
 
 #neweffect "Cosmic Crush"
+#scalingset "evo"
 #effect 2
 #damage 17
 #spec 10485824 + 549755813888
 #nreff 1
 
-#aoe 1002
-#power 2
-#maxpower 7
+#aoe 3
+#power 3
+#maxpower 9
 #pathlevel 2
 #explspr 10272
 #noadditionalnextspells 1
@@ -23,11 +24,11 @@
 #descr 16 "The caster draws on otherworldly forces to crush SUBJECT. Armour offers some protection from the strange forces, but this spell is quite ineffective against ethereal creatures."
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX Crushing Touch"
-#maxpower 6
+#maxpower 9
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 1.5
+#scalerate 0.75
 #schools 4
 #scalefatiguemult 14
 #scalefatigueexponent -1.6
@@ -36,13 +37,14 @@
 
 
 #neweffect "Cosmic Crush Gemless"
+#scalingset "evo"
 #effect 2
 #damage 17
 #spec 10485824 + 549755813888
 #nreff 1
 
 #aoe 0
-#power 2
+#power 3
 #maxpower 14
 #pathlevel 2
 #explspr 10272
@@ -70,6 +72,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
+
 
 
 

@@ -1,4 +1,5 @@
 #neweffect "Summon simargl"
+#scalingset "battlesummon"
 #effect 1
 #damage 1947
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 20
---#scalefatiguemult 10
 #sound 31
 #schools 1
 
@@ -21,13 +21,11 @@
 #descr 2 "The caster summons ARTICLE simargl. The simargl is a small winged dog."
 
 #spelltype 528
-#scalerate 0.51
-#scalefatigueexponent -1.3
-#pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "simargl ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1947
 #spec 0
@@ -52,13 +50,11 @@
 
 #skipchance 97
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 70
 
-#scalerate 1
 #siegepatrolchaff 1
 #end
-
+
+
 #neweffect "simargl Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +81,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote simargl"
 #effect 10038
 #provrange 4
@@ -115,5 +112,5 @@
 
 #scalerate 4
 #end
-
-
+
+

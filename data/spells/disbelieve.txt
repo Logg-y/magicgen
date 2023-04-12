@@ -1,4 +1,5 @@
 #neweffect "Disbelieve Damage"
+#scalingset "evo"
 #effect 105
 #damage 999
 #spec 8671360
@@ -12,7 +13,7 @@
 -- #scalecost 1.1
 
 #aoe 0
-#power 0
+#power -2
 #maxpower 8
 #pathlevel 1
 #explspr 10021

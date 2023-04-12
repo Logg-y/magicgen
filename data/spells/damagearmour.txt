@@ -1,4 +1,5 @@
 #neweffect "Damage Armor"
+#scalingset "disabling"
 #effect 138
 #damage 10
 #spec 8388736
@@ -7,16 +8,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.0
+#scalerate 0.6
 -- #scalecost 1.6
 
-#aoe 1
+#aoe 0
 #power -1
-#maxpower 5
+#maxpower 7
 #pathlevel 1
 #explspr 10058
 #sound 31
-#fatiguecost 20
+#fatiguecost 5
 #precision 3
 #range 30
 
@@ -48,6 +49,7 @@
 
 
 #neweffect "Damage Armor Greater"
+#scalingset "evo"
 #effect 123
 #damage 10
 #spec 8392832
@@ -56,13 +58,13 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 0.25
 #scalefatiguemult 0
 -- #scalecost 1.6
 
-#aoe 0
-#power 1
-#maxpower 6
+#aoe 1
+#power 3
+#maxpower 14
 #pathlevel 2
 #explspr 10058
 #sound 31
@@ -96,6 +98,8 @@
 #scalefatigueexponent 0
 #pathperresearch 0.33
 #end
+
+
 
 
 

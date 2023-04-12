@@ -3,10 +3,10 @@
 #effect 1
 #damage 434
 #spec 0
-#power 3
+#power 2
 #maxpower 14
 #precision -100
-#nreff 5
+#nreff 3
 #pathlevel 2
 #chassisvalue 30
 #range 6
@@ -26,10 +26,12 @@
 --#scalefatiguemult 35
 #spelltype 528
 
-#scalerate 2.4
-#scalefatiguemult 6
-#scalefatigueexponent -1.35
-#pathperresearch 0.4
+#scalerate 0.75
+#scalefatiguemult 0
+#scalefatigueexponent 0.0
+#pathperresearch 0.0
+#scalingset "evo"
+#fatigueperresearch 0
 #end
 
 #neweffect "Summon Black Servant"
@@ -88,3 +90,4 @@
 #spelltype 4
 
 #end
+

@@ -1,4 +1,5 @@
 #neweffect "Summon fireant"
+#scalingset "battlesummon"
 #effect 1
 #damage 2225
 #spec 0
@@ -22,13 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
-#scalefatiguemult 10
 #end
-
+
+
 #neweffect "fireant ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2225
 #spec 0
@@ -50,13 +49,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 20
-#pathperresearch 0.4
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "fireant Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,7 +77,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon fireants"
 #effect 10038
 #provrange 4
@@ -110,5 +107,5 @@
 
 #scalerate 2.0
 #end
-
-
+
+

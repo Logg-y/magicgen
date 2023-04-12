@@ -28,6 +28,7 @@
 
 
 #neweffect "Imprisonment"
+#scalingset "evo"
 #effect 109
 #damage 999
 #spec 128+16384+8388608+4096+70368744177664+1152921504606846976
@@ -65,6 +66,7 @@
 #end
 
 #neweffect "Imprisonment Gemless"
+#scalingset "evo"
 #effect 109
 #damage 999
 #spec 128+16384+8388608+4096+70368744177664+1152921504606846976

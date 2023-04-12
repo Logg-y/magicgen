@@ -13,6 +13,7 @@
 
 
 #neweffect "Curse"
+#scalingset "disabling"
 #effect 11
 #damage 2
 #spec 8404992

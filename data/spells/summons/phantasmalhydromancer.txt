@@ -1,4 +1,5 @@
 #neweffect "Summon phantasmal hydromancer"
+#scalingset "battlesummon"
 #effect 1
 #damage 569
 #spec 8388608
@@ -15,7 +16,6 @@
 #paths aw
 #secondarypaths aw
 #secondarypathchance 100
-#scalefatiguemult 10
 #skipchance 97
 
 #name aw "$conjure$ NAMEPREFIX Phantasmal %Hydromancer%"
@@ -23,11 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.4
 #end
-
+
+
 #neweffect "phantasmal hydromancer ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 569
 #spec 8388608
@@ -42,7 +42,6 @@
 #paths aw
 #secondarypaths aw
 #secondarypathchance 100
-#scalefatiguemult 90.0
 
 #skipchance 95
 
@@ -51,12 +50,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 90.0
 
-#scalerate 2
 #end
-
+
+
 #neweffect "phantasmal hydromancer Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,7 +77,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon phantasmal hydromancer"
 #effect 10038
 #provrange 4
@@ -110,7 +108,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 70
 #end
-
-
-
-
+
+

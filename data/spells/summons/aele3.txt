@@ -1,4 +1,5 @@
 #neweffect "Summon aeles3"
+#scalingset "battlesummon"
 #effect 1
 #damage 570
 #spec 0
@@ -13,8 +14,6 @@
 
 #paths 2
 #secondarypaths 2
-#scalefatiguemult 10
-#scalefatigueexponent -1.5
 #skipchance 97
 
 #details "The elementals are size 3."
@@ -23,10 +22,11 @@
 
 #spelltype 528
 
-#scalerate 0.4
 #end
-
+
+
 #neweffect "aeles3 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 570
 #spec 0
@@ -49,13 +49,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 20.0
 
-#scalerate 2
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "aeles3 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,7 +77,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon aeles3"
 #effect 10038
 #provrange 4
@@ -110,8 +108,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
-
-
-
-
-
+
+

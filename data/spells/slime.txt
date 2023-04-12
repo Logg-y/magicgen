@@ -1,4 +1,5 @@
 #neweffect "Slime Projectile"
+#scalingset "disabling"
 #copyspell "Slime"
 #effect 11
 #damage 134217728
@@ -13,14 +14,14 @@
 
 #nreff 1
 #aoe 1
-#power -1
+#power 1
 #precision 2
-#maxpower 5
+#maxpower 7
 #pathlevel 1
 #flightspr 404
 #explspr 10256
 #sound 106
-#fatiguecost 20
+#fatiguecost 10
 #range 5025
 
 #paths 4
@@ -39,6 +40,7 @@
 
 
 #neweffect "Slime Instant"
+#scalingset "disabling"
 #effect 11
 #damage 134217728
 #spec 20480
@@ -52,13 +54,13 @@
 
 #nreff 1
 #aoe 1
-#power 1
+#power 2
 #precision 2
-#maxpower 6
+#maxpower 8
 #pathlevel 2
 #explspr 10256
 #sound 107
-#fatiguecost 20
+#fatiguecost 15
 #range 5025
 
 #paths 4
@@ -148,6 +150,10 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 #scalefatigueexponent 1.4
 #end
+
+
+
+
 
 
 

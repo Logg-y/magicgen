@@ -1,4 +1,5 @@
 #neweffect "Summon buffalo"
+#scalingset "battlesummon"
 #effect 1
 #damage 3009
 #spec 0
@@ -10,12 +11,9 @@
 #fatiguecost 120
 #sound 31
 #schools 1
-#scalefatiguemult 8
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent -1.42
-#pathperresearch 0.4
 
 #skipchance 98
 
@@ -24,10 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "buffalo ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 3009
 #spec 0
@@ -50,13 +49,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "buffalo Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +79,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote buffalo"
 #effect 10038
 #provrange 4
@@ -113,7 +110,5 @@
 
 #scalerate 3
 #end
-
-
-
-
+
+

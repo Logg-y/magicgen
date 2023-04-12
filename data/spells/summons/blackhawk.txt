@@ -1,4 +1,5 @@
 #neweffect "Summon blackhawk"
+#scalingset "battlesummon"
 #effect 1
 #damage 517
 #spec 0
@@ -13,8 +14,6 @@
 
 #paths a
 #secondarypaths n
-#scalefatigueexponent -1.2
-#pathperresearch 0.4
 
 #skipchance 99
 
@@ -25,11 +24,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 0
 #end
-
+
+
 #neweffect "blackhawk ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 517
 #spec 0
@@ -54,15 +53,12 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
 
 #siegepatrolchaff 1
 
-#scalerate 4
 #end
-
-
+
+
 #neweffect "blackhawk Remote Assassination"
 #effect 10050
 #provrange 4
@@ -87,7 +83,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote blackhawk"
 #effect 10038
 #provrange 4
@@ -118,6 +115,5 @@
 
 #scalerate 4
 #end
-
-
-
+
+

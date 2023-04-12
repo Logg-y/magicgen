@@ -1,11 +1,11 @@
 #neweffect "Stellar Cascades"
-
+#scalingset "evo"
 #effect 3
 #damage 35
 #spec 2305843009213694016
 #aoe 10
 #power 3
-#maxpower 14
+#maxpower 8
 #precision 100
 #range 5025
 #pathlevel 2
@@ -34,12 +34,12 @@
 #end
 
 #neweffect "Stellar Cascades Gemless"
-
+#scalingset "evo"
 #effect 3
 #damage 35
 #spec 2305843009213694016
 #aoe 1
-#power 2
+#power 0
 #maxpower 14
 #precision 100
 #range 5025
@@ -68,4 +68,6 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 

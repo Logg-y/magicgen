@@ -1,4 +1,5 @@
 #neweffect "Numbness"
+#scalingset "disabling"
 #effect 11
 #damage 268435456
 #spec 8405504

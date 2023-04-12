@@ -1,4 +1,5 @@
 #neweffect "Summon firebird"
+#scalingset "battlesummon"
 #effect 1
 #damage 1946
 #spec 0
@@ -13,7 +14,6 @@
 
 #paths 1
 #secondarypaths 16
-#scalefatiguemult 0
 
 #skipchance 98
 
@@ -22,14 +22,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
 #end
-
-
-
+
+
 #neweffect "firebird ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1946
 #spec 0
@@ -51,14 +48,11 @@
 
 #skipchance 97
 
-#scalefatigueexponent -2.3
-#scalefatiguemult 100
-#pathperresearch 0.4
 #siegepatrolchaff 1
 
-#scalerate 1
 #end
-
+
+
 #neweffect "firebird Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon firebird"
 #effect 10038
 #provrange 4
@@ -111,7 +106,5 @@
 
 #scalerate 4.0
 #end
-
-
-
-
+
+

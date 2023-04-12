@@ -16,6 +16,7 @@
 
 
 #neweffect "Scorching Air"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 16544
@@ -75,6 +76,7 @@
 
 
 #neweffect "Frigid Air"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 17024

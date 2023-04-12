@@ -1,4 +1,5 @@
 #neweffect "Fire Flies"
+#scalingset "evo"
 #copyspell "Fire Flies"
 
 #effect 2
@@ -16,7 +17,7 @@
 
 #nreff 2004
 #aoe 0
-#power 0
+#power -1
 #maxpower 6
 
 #pathlevel 1
@@ -46,6 +47,7 @@
 #namecond range < 10 b "NAMEPREFIX burst of sparks"
 #fatigueperresearch 0
 #end
+
 
 
 

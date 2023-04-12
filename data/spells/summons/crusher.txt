@@ -1,4 +1,5 @@
 #neweffect "crusher ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 475
 #spec 8388608
@@ -19,12 +20,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 30
 
-#scalerate 2
 #end
-
+
+
 #neweffect "crusher Remote Assassination"
 #effect 10050
 #provrange 4
@@ -47,7 +46,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon crusher"
 #effect 10038
 #provrange 4
@@ -75,4 +75,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
-
+
+

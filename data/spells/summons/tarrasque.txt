@@ -1,4 +1,5 @@
 #neweffect "Summon tarrasque"
+#scalingset "battlesummon"
 #effect 1
 #damage 925
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 100
-#scalefatiguemult 60
 #sound 31
 #schools 1
 #ainocast 1
@@ -23,12 +23,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
-#scalefatiguemult 60
-#scalefatigueexponent -2.5
 #end
-
+
+
 #neweffect "tarrasque ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 925
 #power 8
@@ -48,13 +47,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -2.3
-#scalefatiguemult 200
 
-#scalerate 0.51
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "tarrasque Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon tarrasque"
 #effect 10038
 #provrange 4
@@ -107,6 +104,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 700
 #end
-
-
-
+
+

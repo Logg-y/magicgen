@@ -19,6 +19,7 @@
 #end
 
 #neweffect "Cold Evo Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2012
 #spec 576
@@ -72,6 +73,7 @@
 
 
 #neweffect "Cold Evo Instant"
+#scalingset "evo"
 #effect 2
 #damage 2016
 #spec 576
@@ -120,6 +122,7 @@
 #end
 
 #neweffect "Deep Freeze"
+#scalingset "evo"
 #effect 2
 #damage 1006
 #spec 1152921504606847552
@@ -320,21 +323,22 @@
 #end
 
 #neweffect "Cold Evo Rain"
+#scalingset "evo"
 #copyspell "Gifts from Heaven"
 #effect 2
 #damage 2009
 #spec 576
 #aoe 1
-#power 8
+#power 7
 #maxpower 17
 #precision -20
 #range 40
 #pathlevel 5
-#fatiguecost 100
+#fatiguecost 200
 #explspr 10108
 #flightspr 10068
 #sound 21
-#nreff 40
+#nreff 20
 
 -- #paths 4+32+128
 #paths wb
@@ -347,12 +351,13 @@
 
 #spelltype 18
 
-#scalerate 3
+#scalerate 5.0
 #schools 4
 
 #nextspell "Small Chill"
 
 #end
+
 
 
 

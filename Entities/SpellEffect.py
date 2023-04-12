@@ -88,8 +88,11 @@ class SpellEffect(object):
         self.fatigueperresearch = 10
         self.nocostreduction = 0
         self.noresearchreduction = 0
+        self.scalingset = None
         # This is changed when required, but should probably default to false
         self.isnextspell = False
+
+        self._init = False
 
     def __repr__(self):
         return f"SpellEffect({self.name})"
@@ -108,15 +111,98 @@ class SpellEffect(object):
             setattr(self, f"nonscaling{x}", getattr(self, x) % 1000)
 
         # update nextspell to point to its SpellEffect instance
+        # Can't do this during parsing. There is no guarantee the nextspell is in the same file
         if isinstance(self.nextspell, str) and len(self.nextspell) > 0:
-            self.nextspell = utils.spelleffects[self.nextspell]
+            if self.nextspell in utils.spelleffects:
+                self.nextspell = utils.spelleffects[self.nextspell]
 
-        self.calcchassisvalues()
 
-        if self.paths == 0:
-            self.paths = 255  # NOT HOLY unless otherwise stated
-        if self.schools is None:
-            self.schools = 127  # NOT HOLY
+        if not self._init:
+            self._init = True
+            self.calcchassisvalues()
+
+            if self.paths == 0:
+                self.paths = 255  # NOT HOLY unless otherwise stated
+            if self.schools is None:
+                self.schools = 127  # NOT HOLY
+
+            if self.scalingset is not None and self.scalingset.strip() != "":
+                self.scalingset = self.scalingset.lower()
+                # This logic doesn't work on scaling effect number!
+                basescalequantity = 1
+                if self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO == 0:
+                    scaleparam = None
+                    numscales = 0
+                    scaletypes = (SpellTypes.POWER_SCALES_AOE, SpellTypes.POWER_SCALES_NREFF, SpellTypes.POWER_SCALES_DAMAGE, SpellTypes.POWER_SCALES_MAXBOUNCES)
+                    params = ("aoe", "nreff", "damage", "maxbounces")
+                    for i, scaletype in enumerate(scaletypes):
+                        if self.spelltype & scaletype:
+                            numscales += 1
+                            scaleparam = params[i]
+                    if numscales != 1:
+                        raise ValueError(f"Spelleffect {self.name} is trying to use a scaling set to scale {numscales} parameters")
+                    basescalequantity = getattr(self, scaleparam)
+                    basescalequantity = basescalequantity % 1000 + ((basescalequantity // 1000) * self.pathlevel)
+
+                basenreff = self.nreff % 1000 + ((self.nreff // 1000) * self.pathlevel)
+                if self.scalingset == "evo":
+                    # Rationale: cost stays flat.
+                    # Path also stays flat
+                    # Killiness increases with research but slowly! (relative to the spell's base aoe)
+
+                    # I tried turning up killiness a lot. But it made critical mass of evos too easy to reach
+                    # and lets players delete armies really fast with a fairly modest mage investment
+                    # The game then becomes all about trying to mitigate the insane amount of destruction mages cause
+                    # Avoiding this was the major factor behind the "slow burn" low fatigue idea
+                    # that should make evo somewhat better than vanilla. While it does more over a battle
+                    # its damage isn't heavily frontloaded... unless you spend gems
+
+                    # Gemmed evo is significantly more powerful. My ballpark is 3-4x as much as the gemless stuff
+                    # It can wipe rapidly, but mages will be sleepy afterwards and it costs.
+                    self.scalefatiguemult = 0
+                    self.pathperresearch = 0.0
+                    self.scalefatigueexponent = 0.0
+                    self.fatigueperresearch = 0
+                    basescalequantity = max(0.5, basescalequantity)
+                    self.scalerate = basescalequantity * 0.25
+                elif self.scalingset == "disabling":
+                    self.scalefatiguemult = 0
+                    self.pathperresearch = 0.0
+                    self.scalefatigueexponent = 0.0
+                    self.fatigueperresearch = 0
+                    basescalequantity = max(0.5, basescalequantity)
+                    self.scalerate = basescalequantity * 1.2
+
+                elif self.scalingset == "ritualsummon":
+                    # Rationale: higher levels get you a lot more mage turn efficiency
+                    # and a somewhat better cost per creature made
+                    # ... but will need a bigger caster
+
+                    # Things seemed to get a bit silly once the high level spells were making
+                    # creatures at half the cost to make them at the lower level. I'm hoping
+                    # something around the 65% mark is probably about right for this
+                    # (this works out to be roughly the same as vanilla demon summoning, from the singles to the b9 versions)
+                    basecost = self.fatiguecost/basenreff
+                    self.scalefatiguemult = basecost * 0.65
+                    self.pathperresearch = 0.34
+                    self.scalerate = basescalequantity * 0.2
+                    self.scalefatigueexponent = 0.0
+                    self.fatigueperresearch = 0
+                elif self.scalingset == "battlesummon":
+                    # Rationale: making more of a creature per cast gets pretty powerful quite quickly.
+                    # Number of things made per cast should therefore go quite slowly
+
+                    # Fatigue can probably stay static. Path level should go up a bit
+                    # or all high research versions risk turning into tarpit fests
+                    self.pathperresearch = 0.28
+                    self.scalerate = basenreff * 0.16
+                    self.scalefatiguemult = 0
+                    self.scalefatigueexponent = 0.0
+                    self.fatigueperresearch = 0
+                else:
+                    raise ValueError(f"Spelleffect {self.name} has unknown scaling set {self.scalingset}")
+
+
 
     def rollSpell(self, researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None,
                   blockmodifier=False, blocksecondary=False, allowblood=True, allowskipchance=True, setparams=None,

@@ -43,6 +43,7 @@
 #end
 
 #neweffect "Returning Offensive"
+#scalingset "evo"
 #effect 15
 #damage 1
 #spec 17592194711680
@@ -51,11 +52,11 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
+#scalerate 1.0
 -- #scalecost 1.5
 #range 5020
 
-#aoe 5
+#aoe 4
 #power 5
 #maxpower 12
 #pathlevel 3
@@ -81,6 +82,7 @@
 #end
 
 #neweffect "Returning Offensive Gemless"
+#scalingset "evo"
 #effect 15
 #damage 1
 #spec 17592194711680
@@ -94,7 +96,7 @@
 #range 5020
 
 #aoe 0
-#power 5
+#power 4
 #maxpower 14
 #pathlevel 3
 #explspr 10251
@@ -120,5 +122,7 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 
 

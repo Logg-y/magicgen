@@ -1,4 +1,5 @@
 #neweffect "Boulder Evo"
+#scalingset "evo"
 #effect 2
 #damage 3016
 #spec 2097152+549755813888
@@ -39,6 +40,7 @@
 #end
 
 #neweffect "Boulder Evo Gemless"
+#scalingset "evo"
 #effect 2
 #damage 3016
 #spec 2097152+549755813888
@@ -53,7 +55,7 @@
 
 #nreff 1
 #aoe 1
-#power 1
+#power 3
 #maxpower 12
 #pathlevel 2
 #pathperresearch 0.2
@@ -69,8 +71,8 @@
 
 #name 8 "Hurl NAMEPREFIX %Boulder%"
 #name b "Hurl NAMEPREFIX %Boulder%"
-#descr b "The caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
-#descr 8 "$BLOOD_INTRO$, the caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+#descr e "The caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
+#descr b "$BLOOD_INTRO$, the caster hurls ARTICLE massive %boulder% towards enemy units. The boulders are rather powerful and will crush those they hit to death unless they wear very heavy armour."
 
 #priority 1
 #namecond range < 10 b "NAMEPREFIX touch of boulders"
@@ -81,6 +83,7 @@
 
 
 #neweffect "Boulder Evo Rain"
+#scalingset "evo"
 #copyspell "Gifts from Heaven"
 #effect 2
 #damage 2014
@@ -90,7 +93,7 @@
 #schools 4
 #range 40
 #precision -20
-#nreff 40
+#nreff 20
 #flightspr 101
 #explspr 10312
 #sound 45
@@ -105,12 +108,14 @@
 
 #spelltype 18
 
-#power 8
+#power 7
 #maxpower 18
-#scalerate 3
+#scalerate 5.0
 #pathlevel 5
 #scalefatigueexponent 1
 #end
+
+
 
 
 

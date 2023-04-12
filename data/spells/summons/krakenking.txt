@@ -1,4 +1,5 @@
 #neweffect "Summon krakenking"
+#scalingset "battlesummon"
 #effect 1
 #damage 639
 #spec 41959424
@@ -8,9 +9,6 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 120
-#scalefatiguemult 12.0
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 #sound 44
 #schools 1
 
@@ -24,10 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.3
 #end
-
+
+
 #neweffect "krakenking ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 639
 #spec 41959424
@@ -47,15 +46,12 @@
 #descr 4 "The caster calls forth ARTICLE kraken %king% to fight his enemies. The kraken king is a mighty beast of the oceans."
 
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
 
 #spelltype 20
 
-#scalerate 3
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "Krakenking Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +75,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon krakenking"
 #effect 10038
 #provrange 4
@@ -109,7 +106,5 @@
 
 #scalerate 1
 #end
-
-
-
-
+
+

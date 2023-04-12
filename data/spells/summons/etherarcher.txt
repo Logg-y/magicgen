@@ -1,4 +1,6 @@
 #neweffect "Summon etherarcher"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 736
 #spec 0
@@ -8,7 +10,6 @@
 #nreff 2
 #pathlevel 3
 #fatiguecost 120
-#scalefatiguemult 15
 #sound 31
 #schools 1
 
@@ -24,20 +25,22 @@
 
 #spelltype 528
 
-#scalerate 1.25
-#scalefatigueexponent -1.5
-#pathperresearch 0.4
 #end
 
+
+
+
 #neweffect "etherarcher ritual"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 736
 #spec 0
 #power 3
 #maxpower 14
-#nreff 3
+#nreff 2
 #pathlevel 3
-#fatiguecost 420
+#fatiguecost 520
 #schools 1
 
 #paths 16
@@ -52,11 +55,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 30.0
-#pathperresearch 0.4
-#scalerate 2
+#scalefatiguemult 169.0
+#scalerate 0.4
 #end
+
+
+
 
 #neweffect "etherarcher Remote Assassination"
 #effect 10050
@@ -83,6 +87,9 @@
 #spelltype 4
 
 #end
+
+
+
 
 #neweffect "Remote summon etherarcher"
 #effect 10038
@@ -114,6 +121,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 130
 #end
+
+
 
 
 

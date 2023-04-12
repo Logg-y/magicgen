@@ -29,8 +29,9 @@
 #scalefatiguemult 30.0
 #spelltype 528
 
-#scalerate 1
+#scalerate 0.4
 #scalefatigueexponent -1.8
+#scalingset ""
 #end
 
 #neweffect "Summon Faery Queen"
@@ -63,5 +64,6 @@
 
 #scalerate 1
 #end
+
 
 

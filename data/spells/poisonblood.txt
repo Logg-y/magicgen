@@ -1,4 +1,5 @@
 #neweffect "Poison Blood"
+#scalingset "evo"
 #effect 7
 #damage 3010
 #spec 36028797564248192
@@ -17,7 +18,7 @@
 #precision 100
 #explspr 10039
 #sound 41
-#fatiguecost 20
+#fatiguecost 10
 #range 5020
 
 #paths nb
@@ -37,5 +38,6 @@
 #scalefatigueexponent 0
 #pathperresearch 0.3
 #end
+
 
 

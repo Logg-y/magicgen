@@ -1,4 +1,5 @@
 #neweffect "Summon phantasmal knight"
+#scalingset "battlesummon"
 #effect 1
 #damage 696
 #spec 8388608
@@ -22,14 +23,11 @@
 
 #spelltype 528
 
-#scalerate 0.8
---#scalefatiguemult 5
-#scalefatigueexponent -1.3
 #end
-
-
-
+
+
 #neweffect "Phantasmal knight ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 696
 #spec 8388608
@@ -49,13 +47,11 @@
 
 #skipchance 90
 
-#scalefatigueexponent -1.3
-#scalefatiguemult 9
 
-#scalerate 4
 #siegepatrolchaff 1
 #end
-
+
+
 #neweffect "Phantasmal knight Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote phantasmal knight"
 #effect 10038
 #provrange 4
@@ -105,5 +102,5 @@
 
 #scalerate 4
 #end
-
-
+
+

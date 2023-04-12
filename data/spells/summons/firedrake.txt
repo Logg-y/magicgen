@@ -1,4 +1,5 @@
 #neweffect "Summon firedrake"
+#scalingset "battlesummon"
 #effect 1
 #damage 523
 #spec 0
@@ -8,8 +9,6 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 10
-#scalefatigueexponent -1.4
 #sound 31
 #schools 1
 
@@ -23,10 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1
 #end
-
+
+
 #neweffect "firedrake ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 523
 #spec 0
@@ -47,12 +47,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 60
 
-#scalerate 4
 #end
-
+
+
 #neweffect "firedrake Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,7 +74,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon firedrake"
 #effect 10038
 #provrange 4
@@ -105,5 +104,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
-
-
+
+

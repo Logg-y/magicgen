@@ -1,4 +1,5 @@
 #neweffect "Summon livingmercury2"
+#scalingset "battlesummon"
 #effect 1
 #damage 2518
 #spec 8388608
@@ -10,7 +11,6 @@
 #fatiguecost 100
 #sound 31
 #schools 1
-#scalefatiguemult 11.0
 #paths 4
 #secondarypaths 8
 #secondarypathchance 90
@@ -25,11 +25,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
-#scalefatigueexponent -1.6
 #end
-
+
+
 #neweffect "livingmercury2 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2518
 #spec 8388608
@@ -52,13 +52,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 15
 
-#scalerate 2
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "livingmercury2 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +80,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon livingmercury2"
 #effect 10038
 #provrange 4
@@ -113,6 +111,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 80
 #end
-
-
-
+
+

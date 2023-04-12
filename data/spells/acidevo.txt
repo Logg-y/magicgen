@@ -16,12 +16,13 @@
 
 
 #neweffect "Acid Evo Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2009
 -- firedmg, AP
 #spec 2199023255616
 -- evo
-#aoe 5
+#aoe 4
 #schools 4
 #range 5030
 #precision 3
@@ -47,9 +48,9 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 4
+#power 3
 #maxpower 14
-#scalerate 1.2
+#scalerate 1.0
 #pathlevel 3
 
 #priority 1
@@ -64,16 +65,17 @@
 #end
 
 #neweffect "Acid Evo Instant"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 2199023255616
-#aoe 2
-#power 2
+#aoe 4
+#power 3
 #maxpower 14
 #precision 3
 #range 30
 #pathlevel 2
-#fatiguecost 30
+#fatiguecost 100
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
@@ -92,7 +94,7 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
+#scalerate 1.0
 -- #scalecost 0.3
 #schools 4
 
@@ -209,4 +211,9 @@
 -- #scalecost 0.3
 #schools 4
 #end
+
+
+
+
+
 

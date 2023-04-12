@@ -1,4 +1,5 @@
 #neweffect "Acidify Blood"
+#scalingset "evo"
 #effect 7
 #damage 2015
 #spec 545276032+4096
@@ -41,6 +42,7 @@
 #end
 
 #neweffect "Acidify Blood Gemless"
+#scalingset "evo"
 #effect 7
 #damage 2015
 #spec 545276032+4096

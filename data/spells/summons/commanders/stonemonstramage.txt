@@ -29,12 +29,14 @@
 #details "Possessed Stone Monstra are A3E3 mages."
 
 
-#scalefatiguemult 15
+#scalefatiguemult 120
 #spelltype 528
 
-#scalerate 0.51
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
+#scalerate 0.2
+#scalefatigueexponent 0
+#pathperresearch 0.3
+#scalingset ""
+#fatigueperresearch 0
 #end
 
 #neweffect "Summon Stone Monstra Mage"
@@ -62,7 +64,7 @@
 #secondarypathchance 90
 
 
-#name ae "Summon NAMEPREFIX Posssessed Stone Monstra"
+#name ae "Summon NAMEPREFIX Possessed Stone Monstra"
 #descr ae "The caster summons a Stone Monstra Sculptor to serve him. The Stone Monstra has great skill in Earth and Air, and may spend a month to produce lesser Stone Monstra."
 #details "Possessed Stone Monstra are A3E3 mages. They have normal humanoid slots."
 
@@ -70,6 +72,7 @@
 
 #scalerate 1
 #end
+
 
 
 

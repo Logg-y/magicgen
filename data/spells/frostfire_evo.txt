@@ -15,6 +15,7 @@
 
 
 #neweffect "Frostfire Evo Projectile"
+#scalingset "evo"
 #effect 2
 #damage 2019
 -- firedmg, AP, cold, nextondamage
@@ -63,6 +64,7 @@
 #end
 
 #neweffect "Frostfire Evo Projectile Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2019
 -- firedmg, AP, cold, nextondamage
@@ -96,7 +98,7 @@
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
-#power 2
+#power 3
 #maxpower 14
 #scalerate 0.2
 #pathlevel 2
@@ -118,6 +120,7 @@
 
 
 #neweffect "Frostfire Evo Projectile Rain"
+#scalingset "evo"
 #copyspell "Gifts from Heaven"
 #effect 2
 #damage 2011
@@ -126,7 +129,7 @@
 -- evo
 #aoe 1
 #schools 4
-#nreff 40
+#nreff 20
 #range 40
 #precision -20
 #flightspr 10072
@@ -149,14 +152,18 @@
 
 #spelltype 18
 
-#power 8
+#power 7
 #maxpower 18
-#scalerate 3
+#scalerate 5.0
 #pathlevel 5
 
 #nextspell "Frostfire Ailments"
 #scalefatigueexponent 1
 #end
+
+
+
+
 
 
 

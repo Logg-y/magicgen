@@ -58,6 +58,7 @@
 #end
 
 #neweffect "Geyser of the Underworld"
+#scalingset "evo"
 #effect 4074
 #damage 12
 #spec 128+4096+16384+524288+536870912
@@ -95,6 +96,7 @@
 
 
 #neweffect "Geyser of the Underworld Multi"
+#scalingset "evo"
 #effect 4074
 #damage 12
 #spec 128+4096+16384+524288+536870912
@@ -117,14 +119,15 @@
 #explspr 10197
 
 #spelltype 18
-#scalerate 1.5
+#scalerate 1.0
 #schools evo
 
 #priority 1
 #namecond range < 10 d "NAMEPREFIX touch of underworld geysers"
 
-#nreff 5
+#nreff 4
 #nextspell "Geyser of the Underworld Decay"
 
 #end
+
 

@@ -1,4 +1,5 @@
 #neweffect "Frozen Heart"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 36028797564240512
@@ -7,10 +8,10 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+#scalerate 1.0
 -- #scalecost 0.6
 
-#aoe 5
+#aoe 4
 #power 5
 #maxpower 14
 #pathlevel 2
@@ -36,6 +37,7 @@
 #end
 
 #neweffect "Frozen Heart Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 36028797564240512
@@ -72,6 +74,7 @@
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end
+
 
 
 

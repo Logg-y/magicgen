@@ -1,4 +1,5 @@
 #neweffect "Desiccation"
+#scalingset "disabling"
 #effect 500
 #damage 250
 #spec 537399424
@@ -11,12 +12,12 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power -1
-#maxpower 6
+#power 1
+#maxpower 9
 #pathlevel 1
 #explspr 10196
 #sound 23
-#fatiguecost 20
+#fatiguecost 10
 #range 5025
 
 #paths fwb
@@ -34,9 +35,9 @@
 #descr 128 "$BLOOD_INTRO$, the caster curses SUBJECT %is% with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 
 #priority 1
-#namecond effect > 1000 1 "NAMEPREFIX $mist$ of dehydration" 
-#namecond effect > 1000 4 "NAMEPREFIX $mist$ of dehydration" 
-#namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration" 
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of dehydration"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of dehydration"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration"
 
 #end
 
@@ -77,10 +78,11 @@
 #descr 128 "$BLOOD_INTRO$, the caster curses SUBJECT %is% with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 
 #priority 1
-#namecond effect > 1000 1 "NAMEPREFIX $mist$ of dehydration" 
-#namecond effect > 1000 4 "NAMEPREFIX $mist$ of dehydration" 
-#namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration" 
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of dehydration"
+#namecond effect > 1000 4 "NAMEPREFIX $mist$ of dehydration"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration"
 
 
 #end
+
 

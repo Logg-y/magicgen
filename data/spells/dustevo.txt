@@ -12,6 +12,7 @@
 #end
 
 #neweffect "Dust Projectile"
+#scalingset "evo"
 #effect 2109
 #damage 1
 #spec 539508864
@@ -56,6 +57,7 @@
 #end
 
 #neweffect "Dust Projectile Gemless"
+#scalingset "evo"
 #effect 2109
 #damage 1
 #spec 539508864
@@ -132,10 +134,11 @@
 
 
 #neweffect "Dust Eruption"
+#scalingset "evo"
 #effect 6109
 #damage 1
 #spec 539508864
-#aoe 1004
+#aoe 3
 #power 4
 #maxpower 14
 #precision 1
@@ -162,9 +165,10 @@
 
 #spelltype 34
 
-#scalerate 1
+#scalerate 0.75
 #pathlevel 2
 #schools 4
 #end
+
 
 

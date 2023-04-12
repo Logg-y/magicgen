@@ -20,6 +20,7 @@
 
 
 #neweffect "Agony"
+#scalingset "evo"
 #nextspell "Agony Fear"
 #effect 2
 #damage 1

@@ -1,4 +1,5 @@
 #neweffect "Summon horseface"
+#scalingset "battlesummon"
 #effect 1
 #damage 2090
 #spec 0
@@ -8,9 +9,6 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 120
-#scalefatiguemult 20
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 
 #sound 31
 #schools 1
@@ -25,10 +23,11 @@
 
 #spelltype 528
 
-#scalerate 0.6
 #end
-
+
+
 #neweffect "horseface ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2090
 #spec 0
@@ -37,9 +36,6 @@
 #nreff 3
 #pathlevel 3
 #fatiguecost 920
-#scalefatigueexponent -1.8
-#scalefatiguemult 35
-#scalerate 2
 #schools 1
 
 #paths 32
@@ -52,7 +48,8 @@
 
 #spelltype 20
 #end
-
+
+
 #neweffect "horseface Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,7 +73,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon horseface"
 #effect 10038
 #provrange 4
@@ -105,5 +103,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
-
-
+
+

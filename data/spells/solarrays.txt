@@ -1,4 +1,5 @@
 #neweffect "Solar Rays"
+#scalingset "evo"
 #copyspell "Solar Rays"
 #effect 2
 #damage 3008
@@ -34,6 +35,7 @@
 #end
 
 #neweffect "Solar Rays Gemless"
+#scalingset "evo"
 #copyspell "Solar Rays"
 #effect 2
 #damage 3008

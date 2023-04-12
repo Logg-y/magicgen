@@ -1,4 +1,5 @@
 #neweffect "Summon abomination"
+#scalingset "battlesummon"
 #effect 1
 #damage 521
 #spec 8388608
@@ -14,8 +15,6 @@
 #paths 20
 #secondarypaths 20
 #secondarypathchance 100
-#scalefatiguemult 85
-#scalefatigueexponent -2.2
 
 #skipchance 50
 
@@ -26,13 +25,14 @@
 
 #spelltype 528
 
-#scalerate 1
 
 -- Death gaze doesn't really get changed if you become small or anything like that
 #nocostreduction 1
 #end
-
+
+
 #neweffect "abomination ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 521
 #spec 8388608
@@ -47,8 +47,6 @@
 #secondarypaths 20
 #secondarypathchance 80
 
-#scalefatiguemult 200
-#scalefatigueexponent -2.1
 
 #skipchance 20
 
@@ -62,9 +60,9 @@
 -- Death gaze doesn't really get changed if you become small or anything like that
 #nocostreduction 1
 
-#scalerate 1
 #end
-
+
+
 #neweffect "abomination Remote Assassination"
 #effect 10050
 #provrange 4
@@ -90,7 +88,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon abomination"
 #effect 10038
 #provrange 4
@@ -121,4 +120,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 500
 #end
-
+
+

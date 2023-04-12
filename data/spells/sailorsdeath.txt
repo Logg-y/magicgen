@@ -1,4 +1,5 @@
 #neweffect "Sailor's Death"
+#scalingset "evo"
 #effect 2
 #damage 3005
 #spec 36028797556428928
@@ -52,6 +53,7 @@
 #end
 
 #neweffect "Sailor's Death gemless"
+#scalingset "evo"
 #effect 2
 #damage 3005
 #spec 36028797556428928

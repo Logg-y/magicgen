@@ -1,7 +1,5 @@
--- these don't look much better than clockwork soldiers, but they ARE size 1
--- which makes them have way more murder density than might be expected
-
 #neweffect "summon clockworkhorror"
+#scalingset "battlesummon"
 #effect 1
 #damage 982
 #spec 8388608
@@ -22,18 +20,16 @@
 #name 8 "Assemble NAMEPREFIX Clockwork %Horror%"
 #descr 8 "The caster quickly forms ARTICLE clockwork %horror% from metal. The clockwork %horror% is difficult to destroy and is quite damaging, but it will quickly run out of power and become motionless."
 
-#scalefatiguemult 0
-#scalefatigueexponent -1.25
-#pathperresearch 0.4
 #spelltype 528
 
-#scalerate 0.51
 -- #scalecost 1.0
 #schools 8
 #aispellmod 40
 #end
-
+
+
 #neweffect "clockworkhorror Ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 982
 #spec 8388608
@@ -53,15 +49,11 @@
 #name 8 "Construct NAMEPREFIX Clockwork %Horror%"
 #descr 8 "The caster forms ARTICLE clockwork %horror% from metal. The clockwork %horror% is difficult to destroy and is quite damaging, but it will quickly run out of power and become motionless on the battlefield."
 
-#scalerate 3
-#scalefatigueexponent -1.3
-#scalefatiguemult 35
-#pathperresearch 0.4
 
 #siegepatrolchaff 1
 #end
-
-
+
+
 #neweffect "clockworkhorror Remote Assassination"
 #effect 10050
 #provrange 4
@@ -86,7 +78,8 @@
 
 #scalerate 0.7
 #end
-
+
+
 #neweffect "Remote summon clockworkhorror"
 #effect 10038
 #provrange 4
@@ -112,5 +105,5 @@
 #scalerate 2.0
 #scalefatiguemult 40
 #end
-
-
+
+

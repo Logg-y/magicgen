@@ -1,10 +1,11 @@
 
 #neweffect "Cold Evo Projectile Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2012
 #spec 576
 #aoe 1
-#power 2
+#power 3
 #maxpower 14
 #precision 3
 #range 40
@@ -33,7 +34,7 @@
 
 #spelltype 38
 
-#power 2
+#power 3
 #scalerate 0.233
 #pathlevel 2
 #schools 4
@@ -54,6 +55,7 @@
 
 
 #neweffect "Cold Evo Instant Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2016
 #spec 576
@@ -103,6 +105,7 @@
 #end
 
 #neweffect "Deep Freeze Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1006
 #spec 1152921504606847552
@@ -146,6 +149,8 @@
 #aispellmod 50
 #fatigueperresearch 0
 #end
+
+
 
 
 

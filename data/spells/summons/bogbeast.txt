@@ -1,4 +1,5 @@
 #neweffect "Summon bogbeast"
+#scalingset "battlesummon"
 #effect 1
 #damage 578
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 5
 #pathlevel 2
 #fatiguecost 120
---#scalefatiguemult 20
 #sound 31
 #schools 1
 
@@ -16,9 +16,6 @@
 #secondarypaths 68
 #secondarypathchance 80
 
-#scalefatiguemult 10
-#scalefatigueexponent -1.45
-#pathperresearch 0.5
 
 #skipchance 98
 
@@ -29,11 +26,12 @@
 
 #spelltype 528
 
-#scalerate 2
 #ainocast 1
 #end
-
+
+
 #neweffect "bogbeast ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 578
 #spec 0
@@ -47,7 +45,6 @@
 #paths 68
 #secondarypaths 68
 #secondarypathchance 80
-#pathperresearch 0.4
 
 #skipchance 97
 
@@ -58,12 +55,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 50.0
 
-#scalerate 2
 #end
-
+
+
 #neweffect "bogbeast Remote Assassination"
 #effect 10050
 #provrange 4
@@ -90,7 +85,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon bogbeast"
 #effect 10038
 #provrange 4
@@ -122,7 +118,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
-
-
-
-
+
+

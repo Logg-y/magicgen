@@ -1,4 +1,5 @@
 #neweffect "Summon leogryph"
+#scalingset "battlesummon"
 #effect 1
 #damage 2132
 #spec 0
@@ -15,19 +16,16 @@
 #secondarypaths 64
 
 #skipchance 98
---#scalefatiguemult 10
 
 #name 64 "$conjure$ NAMEPREFIX %Leogryph%"
 #descr 64 "The caster summons ARTICLE %leogryph%. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
 
 #spelltype 528
-#scalerate 0.51
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
-#scalefatiguemult 0
 #end
-
+
+
 #neweffect "leogryph ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2132
 #spec 0
@@ -51,16 +49,12 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.65
-#scalefatiguemult 20
-#pathperresearch 0.4
 
 #siegepatrolchaff 1
 
-#scalerate 4
 #end
-
-
+
+
 #neweffect "leogryph Remote Assassination"
 #effect 10050
 #provrange 4
@@ -87,7 +81,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote leogryph"
 #effect 10038
 #provrange 4
@@ -117,5 +112,5 @@
 
 #scalerate 4
 #end
-
-
+
+

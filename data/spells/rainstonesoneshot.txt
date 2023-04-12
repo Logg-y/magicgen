@@ -1,11 +1,12 @@
 #neweffect "Rain Stones oneshot"
+#scalingset "evo"
 #copyspell "Rain stone"
 #skipflightspr 1
 #effect 2
 #damage 2005
 #spec 549757911040+562949953421312
 #aoe 0
-#power 3
+#power 0
 #maxpower 14
 #precision -5
 #range 5025
@@ -22,7 +23,7 @@
 #descr 8 "The caster creates a brief shower of large stones. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
-#scalerate 2
+#scalerate 2.0
 -- #scalecost 0.3
 #schools 4
 
@@ -31,19 +32,20 @@
 #namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
 
 #scalefatigueexponent 0
-#nreff 20
+#nreff 8
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
 
 #neweffect "Rain Ice oneshot"
+#scalingset "evo"
 #copyspell "Rain stone"
 #flightspr 98
 #effect 2
 #damage 2005
 #spec 549757911040+562949953421312
 #aoe 0
-#power 3
+#power 0
 #maxpower 14
 #precision -5
 #range 5025
@@ -60,7 +62,7 @@
 #descr 8 "The caster creates a brief shower of large stones. Being in the area tends to result in getting hit in the head by rocks. Unlucky victims may be hit more than once, but shields and helmets are effective in reducing the impact of the stones."
 
 #spelltype 18
-#scalerate 2
+#scalerate 2.0
 -- #scalecost 0.3
 #schools 4
 
@@ -69,7 +71,7 @@
 #namecond range < 10 8 "NAMEPREFIX touch of raining rocks"
 
 #scalefatigueexponent 0
-#nreff 20
+#nreff 8
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
@@ -167,5 +169,8 @@
 ---- #scalecost 0.3
 --#schools 4
 --#end
+
+
+
 
 

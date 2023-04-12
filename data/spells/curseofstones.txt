@@ -1,4 +1,5 @@
 #neweffect "Curse of Stones"
+#scalingset "disabling"
 #copyspell "Curse of Stones"
 #effect 11
 #damage 32

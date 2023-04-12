@@ -30,6 +30,7 @@
 #end
 
 #neweffect "Tongue Spell"
+#scalingset ""
 #copyspell "Leech"
 #effect 2
 #damage 1010
@@ -38,7 +39,7 @@
 
 #spelltype 66
 
-#scalerate 1.5
+#scalerate 2
 #scalefatigueexponent 0
 -- #scalecost 1.6
 #skipchance 50
@@ -72,5 +73,6 @@
 #fatigueperresearch 0
 #pathperresearch 0.1
 #end
+
 
 

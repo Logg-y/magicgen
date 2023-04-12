@@ -1,4 +1,5 @@
 #neweffect "Summon hydrahatchling"
+#scalingset "battlesummon"
 #effect 1
 #damage 1840
 #spec 0
@@ -21,14 +22,11 @@
 
 #spelltype 528
 #ainocast 1
-#scalerate 1.5
-#scalefatiguemult 7
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
---#scalefatiguemult 40
 #end
-
+
+
 #neweffect "hydrahatchling ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1840
 #spec 0
@@ -51,12 +49,9 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
-#scalerate 1.5
 #end
-
+
+
 #neweffect "hydrahatchling Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote hydrahatchling"
 #effect 10038
 #provrange 4
@@ -113,6 +109,5 @@
 
 #scalerate 2
 #end
-
-
-
+
+

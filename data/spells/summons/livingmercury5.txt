@@ -1,4 +1,5 @@
 #neweffect "Summon livingmercury5"
+#scalingset "battlesummon"
 #effect 1
 #damage 2515
 #spec 8388608
@@ -17,7 +18,6 @@
 #ainocast 1
 
 #skipchance 90
-#scalefatiguemult 30
 
 #details "The elementals are size 5."
 #name 4 "$conjure$ NAMEPREFIX Huge Living %Mercury%"
@@ -25,10 +25,11 @@
 
 #spelltype 528
 
-#scalerate 1
 #end
-
+
+
 #neweffect "livingmercury5 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2515
 #spec 8388608
@@ -51,12 +52,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 80
 
-#scalerate 2
 #end
-
+
+
 #neweffect "livingmercury5 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,7 +80,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon livingmercury5"
 #effect 10038
 #provrange 4
@@ -111,4 +111,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 170
 #end
-
+
+

@@ -1,4 +1,5 @@
 #neweffect "Call zmey"
+#scalingset "battlesummon"
 #effect 1
 #damage 1940
 #spec 0
@@ -8,7 +9,6 @@
 #nreff 3
 #pathlevel 3
 #fatiguecost 110
---#scalefatiguemult 20
 #explspr 10232
 #sound 31
 #schools 1
@@ -21,15 +21,14 @@
 
 #spelltype 528
 
-#scalerate 2
 -- #scalecost 1.0
 #schools 1
 #skipchance 97
-#scalefatiguemult 12
-#scalefatigueexponent -1.6
 #end
-
+
+
 #neweffect "zmey ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 1940
 #spec 0
@@ -49,13 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 20
 
-#scalerate 2
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "zmey Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +75,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon zmey"
 #effect 10038
 #provrange 4
@@ -107,7 +104,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
-
-
-
-
+
+

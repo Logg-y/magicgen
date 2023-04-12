@@ -1,4 +1,5 @@
 #neweffect "stonemonstra ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 542
 #spec 8388608
@@ -19,13 +20,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.9
-#scalefatiguemult 50
 
-#scalerate 1.5
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "stonemonstra Remote Assassination"
 #effect 10050
 #provrange 4
@@ -48,7 +46,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon stonemonstra"
 #effect 10038
 #provrange 4
@@ -76,5 +75,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 150
 #end
-
-
+
+

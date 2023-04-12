@@ -33,6 +33,7 @@
 
 
 #neweffect "Instant Poison"
+#scalingset "evo"
 #effect 7
 #damage 3010
 #spec 8320
@@ -42,7 +43,7 @@
 #precision 1
 #range 50
 #pathlevel 3
-#fatiguecost 10
+#fatiguecost 15
 #explspr 10139
 #sound 27
 
@@ -66,6 +67,7 @@
 #end
 
 #neweffect "Instant Poison Multi"
+#scalingset "evo"
 #effect 7
 #damage 3010
 #spec 8320

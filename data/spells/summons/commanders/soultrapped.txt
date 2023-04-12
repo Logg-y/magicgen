@@ -26,12 +26,14 @@
 #name 32 "Soul Trap"
 #descr 32 "The caster traps the %soul% of ARTICLE %hero% from the realm of the dead and pulls PRONOUN into the battle. Souls trapped by this spell could have belonged to either a warrior or a mage, but will return to the realm of the dead after the battle."
 
-#scalefatiguemult 15
+#scalefatiguemult 35
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.6
+#scalerate 0.6
+#scalefatigueexponent 0
 #pathperresearch 0.4
+#scalingset ""
+#fatigueperresearch 0
 #end
 
 #neweffect "Summon Soultrapped"
@@ -85,4 +87,5 @@
 -- #spelltype 4
 --
 -- #end
+
 

@@ -1,4 +1,5 @@
 #neweffect "Enslave"
+#scalingset "evo"
 #effect 28
 #damage 999
 #spec 8540288
@@ -43,6 +44,7 @@
 #end
 
 #neweffect "Enslave Gemless"
+#scalingset "evo"
 #effect 28
 #damage 999
 #spec 8540288
@@ -56,7 +58,7 @@
 
 #aoe 0
 #power 6
-#maxpower 11
+#maxpower 14
 #pathlevel 4
 #explspr 10208
 #sound 41
@@ -114,6 +116,7 @@
 #schools 32
 
 #nextspell "Enslave Lesser"
+#scalingset "evo"
 
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
@@ -122,12 +125,12 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 3
-#maxpower 8
+#power 1
+#maxpower 14
 #pathlevel 2
 #explspr 10208
 #sound 41
-#fatiguecost 15
+#fatiguecost 10
 #precision 100
 #range 40
 
@@ -193,6 +196,9 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of enslavement"
 
 #end
+
+
+
 
 
 

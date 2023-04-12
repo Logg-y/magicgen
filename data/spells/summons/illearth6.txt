@@ -1,4 +1,5 @@
 #neweffect "Summon illearth6"
+#scalingset "battlesummon"
 #effect 1
 #damage 2280
 #spec 8388608
@@ -22,12 +23,12 @@
 #descr 128 "$BLOOD_INTRO$, the caster summons forth ARTICLE massive illearth %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
-#scalefatiguemult 40
 
-#scalerate 0.4
 #end
-
+
+
 #neweffect "illearth6 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2280
 #spec 8388608
@@ -50,12 +51,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 500
 
-#scalerate 2
 #end
-
+
+
 #neweffect "illearth6 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,7 +79,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon illearth6"
 #effect 10038
 #provrange 4
@@ -110,4 +110,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 210
 #end
-
+
+

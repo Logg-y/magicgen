@@ -1,34 +1,34 @@
-#neweffect "Call Lord of Fertility"
-
-#effect 21
-#damage 964
-#spec 0
-#power 6
-#maxpower 14
-#precision -100
-#nreff 1
-#pathlevel 4
-#chassisvalue 100
-#range 6
-#fatiguecost 140
-#explspr 10232
-#sound 31
-#schools 1
-
-#skipchance 95.0
-
-#paths 64
-#secondarypaths 64
-
-#name 64 "Summon NAMEPREFIX %Lord% of Fertility"
-#descr 64 "The caster summons ARTICLE %Lord of Fertility% to fight for him on the battlefield. The %Lord of Fertility% %is% physically large and strong, and %is% skilled in earth and nature magic; but will leave once the battle is over."
-
-#scalefatiguemult 20
-#spelltype 528
-
-#scalerate 1
-#scalefatigueexponent -1.6
-#end
+--#neweffect "Call Lord of Fertility"
+--
+--#effect 21
+--#damage 964
+--#spec 0
+--#power 6
+--#maxpower 14
+--#precision -100
+--#nreff 1
+--#pathlevel 4
+--#chassisvalue 100
+--#range 6
+--#fatiguecost 140
+--#explspr 10232
+--#sound 31
+--#schools 1
+--
+--#skipchance 95.0
+--
+--#paths 64
+--#secondarypaths 64
+--
+--#name 64 "Summon NAMEPREFIX %Lord% of Fertility"
+--#descr 64 "The caster summons ARTICLE %Lord of Fertility% to fight for him on the battlefield. The %Lord of Fertility% %is% physically large and strong, and %is% skilled in earth and nature magic; but will leave once the battle is over."
+--
+--#scalefatiguemult 20
+--#spelltype 528
+--
+--#scalerate 1
+--#scalefatigueexponent -1.6
+--#end
 
 #neweffect "Summon Lord of Fertility"
 

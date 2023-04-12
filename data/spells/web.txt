@@ -1,4 +1,5 @@
 #neweffect "Web Projectile"
+#scalingset "disabling"
 #copyspell "Web"
 #effect 11
 #damage 536870912
@@ -8,14 +9,14 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1.2
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 1
-#power 0
+#power 2
 #precision 2
-#maxpower 4
+#maxpower 6
 #pathlevel 1
 #flightspr 10278
 #explspr 10277
@@ -43,6 +44,7 @@
 
 
 #neweffect "Web Instant"
+#scalingset "disabling"
 #effect 11
 #damage 536870912
 #spec  	4398057013248
@@ -51,14 +53,14 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 1.2
 -- #scalecost 0.6
 
 #nreff 1
 #aoe 1
-#power 1
+#power 3
 #precision 2
-#maxpower 6
+#maxpower 7
 #pathlevel 2
 #explspr 102787
 #sound 42
@@ -150,6 +152,8 @@
 #details "Str +DRN vs 22 to get free."
 
 #end
+
+
 
 
 

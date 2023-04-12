@@ -1,6 +1,7 @@
 #neweffect "Weakness"
+#scalingset "disabling"
 #effect 67
-#damage 3
+#damage 1002
 #spec 8409216
 #schools 2
 
@@ -12,7 +13,7 @@
 
 #aoe 0
 #power 2
-#maxpower 6
+#maxpower 9
 #pathlevel 1
 #explspr 10197
 #sound 31
@@ -24,7 +25,7 @@
 
 #name 32 "NAMEPREFIX Weakness"
 #descr 32 "The mage damages the life force of the %target% making %it% permanently weaker."
-#details "If the effect is not resisted, the targets' strength is lowered by DAMAGE permanently."
+#details "If the effect is not resisted, the targets' strength is permanently lowered by EFFECTIVEDAMAGE plus DAMAGESCALING per additional caster level."
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
@@ -66,4 +67,6 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
 #end
+
+
 

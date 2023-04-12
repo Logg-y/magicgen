@@ -1,4 +1,5 @@
 #neweffect "Summon boar"
+#scalingset "battlesummon"
 #effect 1
 #damage 549
 #spec 0
@@ -14,10 +15,7 @@
 #paths 64
 #secondarypaths 64
 
-#pathperresearch 0.4
 
-#scalefatigueexponent -1.2
-#scalefatiguemult 0.0
 
 #skipchance 99
 
@@ -26,10 +24,11 @@
 
 #spelltype 528
 
-#scalerate 0.51
 #end
-
+
+
 #neweffect "boar ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 549
 #spec 0
@@ -45,8 +44,6 @@
 
 #skipchance 99
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 15
 
 #siegepatrolchaff 1
 
@@ -57,11 +54,9 @@
 
 #skipchance 97
 
-#scalerate 4
 #end
-
-
-
+
+
 #neweffect "boar Remote Assassination"
 #effect 10050
 #provrange 4
@@ -87,7 +82,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote boar"
 #effect 10038
 #provrange 4
@@ -117,5 +113,5 @@
 
 #scalerate 4
 #end
-
-
+
+

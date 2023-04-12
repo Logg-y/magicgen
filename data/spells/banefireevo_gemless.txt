@@ -1,5 +1,6 @@
 
 #neweffect "Banefire Projectile Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2028
 -- AP
@@ -47,6 +48,7 @@
 #end
 
 #neweffect "Banefire Instant Gemless"
+#scalingset "evo"
 #effect 2
 #damage 5040
 #spec 64
@@ -90,4 +92,5 @@
 #scalefatigueexponent 0
 #pathperresearch 0.4
 #end
+
 

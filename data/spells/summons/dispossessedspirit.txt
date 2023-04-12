@@ -1,4 +1,5 @@
 #neweffect "Raise dispossessed"
+#scalingset "battlesummon"
 #effect 1
 #damage 674
 #spec 8388608
@@ -21,17 +22,15 @@
 #spelltype 528
 
 #power 1
-#scalerate 0.51
-#scalefatigueexponent -1.6
-#scalefatiguemult 6.0
-#pathperresearch 0.4
 -- #scalecost 1.0
 #pathlevel 1
 #schools 16
 #skipchance 98
 #end
-
+
+
 #neweffect "Raise dispossessed Ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 674
 #spec 8388608
@@ -51,17 +50,12 @@
 #descr 32 "The caster traps the %soul% of ARTICLE recently dead %human%, preventing PRONOUN from reaching the underworld. The resulting %spirit% %is% confused and weak, but their touch can still paralyze their victims."
 #spelltype 20
 
-#scalerate 5
-#scalefatiguemult 15
-#pathperresearch 0.4
-#scalefatigueexponent -1.4
 
 #siegepatrolchaff 1
 
 #end
-
-
-
+
+
 #neweffect "dispossessed Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +79,8 @@
 
 #scalerate 0.7
 #end
-
+
+
 #neweffect "Remote summon dispossessed"
 #effect 10038
 #provrange 4
@@ -110,5 +105,5 @@
 
 #scalerate 4
 #end
-
-
+
+

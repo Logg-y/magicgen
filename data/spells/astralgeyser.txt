@@ -14,7 +14,7 @@
 #end
 
 #neweffect "Astral Geyser"
-
+#scalingset "evo"
 #effect 600
 #damage 261
 #spec 8519808
@@ -24,7 +24,7 @@
 #precision 3
 #range 5035
 #pathlevel 2
-#fatiguecost 20
+#fatiguecost 10
 #explspr 10251
 #sound 41
 #paths sb
@@ -46,13 +46,13 @@
 #end
 
 #neweffect "Astral Geyser Multi"
-
+#scalingset "evo"
 #effect 600
 #damage 261
 #spec 8519808
 #aoe 1
-#power 6
-#nreff 5
+#power 4
+#nreff 3
 #maxpower 13
 #precision -8
 #range 5035
@@ -72,10 +72,13 @@
 
 -- evo-like, scale effect number
 #spelltype 18
-#scalerate 2
+#scalerate 0.75
 #scalefatigueexponent 1.2
 #schools 4
 
 #scalefatiguemult 10
 #pathperresearch 0.4
 #end
+
+
+

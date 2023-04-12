@@ -1,4 +1,5 @@
 #neweffect "Raise Ghoul Ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 198
 #spec 8388608
@@ -14,8 +15,6 @@
 #paths 32
 #secondarypaths 32
 
-#scalefatigueexponent 0.4
-#scalefatiguemult 10
 
 #name 32 "Raise NAMEPREFIX Ghouls"
 #descr 32 "The caster transforms several beings into undead ghouls."
@@ -23,12 +22,10 @@
 
 #spelltype 20
 
-#scalerate 3
 #siegepatrolchaff 1
 #end
-
-
-
+
+
 #neweffect "ghoul Remote Assassination"
 #effect 10050
 #provrange 4
@@ -52,7 +49,8 @@
 
 #scalerate 0.7
 #end
-
+
+
 #neweffect "Remote summon ghouls"
 #effect 10038
 #provrange 4
@@ -82,4 +80,5 @@
 
 #scalerate 2.0
 #end
-
+
+

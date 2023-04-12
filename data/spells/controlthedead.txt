@@ -1,4 +1,5 @@
 #neweffect "Control the Dead"
+#scalingset "evo"
 #effect 29
 #damage 999
 #spec 277090440
@@ -8,7 +9,7 @@
 #precision 0
 #range 5020
 #pathlevel 1
-#fatiguecost 20
+#fatiguecost 10
 #explspr 10255
 #sound 41
 #paths 32

@@ -1,4 +1,5 @@
 #neweffect "Polymorph Frog"
+#scalingset "evo"
 #effect 54
 #damage 2222
 #spec 546197504
@@ -15,7 +16,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 20
+#fatiguecost 10
 #range 5015
 #precision 100
 
@@ -33,9 +34,11 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of the frog"
 #namecond range < 10 64 "NAMEPREFIX touch of the frog"
 
+#maxpower 15
 #end
 
 #neweffect "Polymorph Insect"
+#scalingset "evo"
 #effect 54
 #damage -9
 #spec 546197504
@@ -54,7 +57,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 20
+#fatiguecost 10
 #range 5015
 #precision 100
 
@@ -70,5 +73,9 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of the insect"
 #namecond range < 10 64 "NAMEPREFIX touch of the insect"
 
+#maxpower 15
 #end
+
+
+
 

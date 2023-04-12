@@ -1,4 +1,5 @@
 #neweffect "Summon draconian"
+#scalingset "battlesummon"
 #effect 1
 #damage 593
 #spec 0
@@ -22,13 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1
-#pathperresearch 0.4
-#scalefatigueexponent -1.4
-#scalefatiguemult 8
 #end
-
+
+
 #neweffect "draconian ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 593
 #spec 0
@@ -49,13 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
-#scalefatiguemult 12
 
-#scalerate 2
 #end
-
+
+
 #neweffect "draconian Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,7 +75,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon draconian"
 #effect 10038
 #provrange 4
@@ -108,5 +105,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 60
 #end
-
-
+
+

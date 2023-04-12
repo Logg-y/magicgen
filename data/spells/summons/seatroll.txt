@@ -1,4 +1,5 @@
 #neweffect "Summon seatroll"
+#scalingset "battlesummon"
 #effect 1
 #damage 564
 #spec 8388608
@@ -20,15 +21,12 @@
 #descr 4 "The caster summons ARTICLE sea %troll% to fight for him. Sea trolls are a variant of trolls with softer skin but increased regenerative capability when underwater."
 
 #spelltype 528
---#scalefatiguemult 30
 
-#scalerate 1.5
-#scalefatiguemult 12
-#scalefatigueexponent -1.5
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "seatroll ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 564
 #spec 8388608
@@ -49,13 +47,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 60
 
-#scalerate 2
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "seatroll Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +73,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon seatroll"
 #effect 10038
 #provrange 4
@@ -106,7 +102,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 40
 #end
-
-
-
-
+
+

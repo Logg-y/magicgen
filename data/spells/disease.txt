@@ -1,14 +1,15 @@
-#neweffect "DiseaseThings"
+#neweffect "Diseases"
+#scalingset "evo"
 #effect 11
 #damage 1
 #spec 545796096
 #aoe 1
 #power 1
-#maxpower 7
+#maxpower 9
 #precision 2
 #range 30
 #pathlevel 1
-#fatiguecost 30
+#fatiguecost 20
 #explspr 10199
 #sound 42
 #paths fndb
@@ -31,9 +32,9 @@
 #schools 32
 
 #priority 1
-#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever" 
-#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence" 
-#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence" 
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence"
 
 #end
 
@@ -71,7 +72,9 @@
 
 
 #priority 1
-#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever" 
-#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence" 
-#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence" 
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of fever"
+#namecond effect > 1000 32 "NAMEPREFIX $mist$ of pestilence"
+#namecond effect > 1000 64 "NAMEPREFIX $mist$ of pestilence"
 #end
+
+

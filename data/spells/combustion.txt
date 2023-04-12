@@ -1,4 +1,5 @@
 #neweffect "Combustion"
+#scalingset "disabling"
 #effect 11
 #damage 512
 #spec 16416
@@ -7,7 +8,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
+#scalerate 0.30000000000000004
 -- #scalecost 0.35
 
 #aoe 0
@@ -39,7 +40,7 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of ignition"
 
 #scalefatiguemult 1
-#maxpower 6
+#maxpower 14
 #pathperresearch 0.4
 #end
 
@@ -132,4 +133,5 @@
 #scalefatiguemult 1
 #maxpower 9
 #end
+
 

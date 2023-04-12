@@ -1,4 +1,5 @@
 #neweffect "Summon cavecow"
+#scalingset "battlesummon"
 #effect 1
 #damage 2512
 #spec 0
@@ -13,9 +14,6 @@
 
 #paths 8
 #secondarypaths 8
-#scalefatiguemult 7
-#scalefatigueexponent -1.4
-#pathperresearch 0.4
 #skipchance 98
 
 #name 8 "$conjure$ NAMEPREFIX Cave %Cow%"
@@ -23,10 +21,11 @@
 
 #spelltype 528
 
-#scalerate 2
 #end
-
+
+
 #neweffect "cavecow ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2512
 #spec 0
@@ -49,13 +48,10 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 12
-#pathperresearch 0.4
 
-#scalerate 1.8
 #end
-
+
+
 #neweffect "cavecow Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote cavecow"
 #effect 10038
 #provrange 4
@@ -113,6 +110,5 @@
 
 #scalerate 4
 #end
-
-
-
+
+

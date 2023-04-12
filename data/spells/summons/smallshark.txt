@@ -1,4 +1,5 @@
 #neweffect "Summon smallshark"
+#scalingset "battlesummon"
 #effect 1
 #damage 815
 #spec 41959424
@@ -24,13 +25,11 @@
 
 #spelltype 528
 
-#scalerate 7
-#scalefatiguemult 1
-#scalefatigueexponent -1
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "smallshark ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 815
 #spec 41959424
@@ -53,14 +52,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 3
 
-#scalerate 4
 #siegepatrolchaff 1
 #maxpower 4
 #end
-
+
+
 #neweffect "smallshark Remote Assassination"
 #effect 10050
 #provrange 4
@@ -86,7 +83,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon smallshark"
 #effect 10038
 #provrange 4
@@ -117,6 +115,5 @@
 --#scalefatigueexponent 0.3
 --#scalefatiguemult 3
 #end
-
-
-
+
+

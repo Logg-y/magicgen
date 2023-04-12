@@ -1,12 +1,13 @@
 #neweffect "Poison Cloud Gemless"
+#scalingset "evo"
 #effect 3007
 #damage 1
 #spec 8396928
-#aoe 3
-#power 3
+#aoe 1
+#power 2
 #precision -1
 #range 5015
-#fatiguecost 30
+#fatiguecost 5
 #explspr 10297
 #sound 42
 
@@ -23,7 +24,7 @@
 
 #spelltype 34
 
-#scalerate 0.2
+#scalerate 0.25
 -- #scalecost 2.0
 #pathlevel 2
 #schools 4
@@ -34,17 +35,19 @@
 
 #fatigueperresearch 0
 #scalefatigueexponent 0
+#maxpower 14
 #end
 
 #neweffect "Fire Cloud Gemless"
+#scalingset "evo"
 #effect 3002
 #damage 1005
 #spec 96
-#aoe 2
-#power 2
+#aoe 1
+#power 1
 #precision -1
 #range 5015
-#fatiguecost 30
+#fatiguecost 10
 #explspr 10162
 #sound 42
 
@@ -61,7 +64,7 @@
 
 #spelltype 34
 
-#scalerate 0.3
+#scalerate 0.25
 -- #scalecost 1.7
 #pathlevel 2
 #schools 4
@@ -75,14 +78,15 @@
 #end
 
 #neweffect "Freezing Cloud Gemless"
+#scalingset "evo"
 #effect 4002
 #damage 1
 #spec 640
-#aoe 1001
+#aoe 1
 #power 3
 #precision -1
 #range 5015
-#fatiguecost 30
+#fatiguecost 10
 #explspr 10056
 #sound 42
 
@@ -100,9 +104,9 @@
 
 #spelltype 34
 
-#scalerate 0.15
+#scalerate 0.25
 -- #scalecost 1.7
-#pathlevel 3
+#pathlevel 2
 #schools 4
 
 
@@ -112,18 +116,20 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 
 #neweffect "Flame Cloud AN Gemless"
+#scalingset "evo"
 #effect 4002
 #damage 1
 #spec 160
-#aoe 1001
+#aoe 1
 #power 3
 #precision -1
 #range 5015
-#fatiguecost 30
+#fatiguecost 10
 #explspr 10203
 #sound 42
 
@@ -140,7 +146,7 @@
 
 #spelltype 34
 
-#scalerate 1
+#scalerate 0.25
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
@@ -149,18 +155,20 @@
 #priority 1
 #namecond effect > 5000 1 "Extended NAMEPREFIX scalding $mist$"
 #namecond effect > 5000 b "Extended NAMEPREFIX scalding $mist$"
+#maxpower 14
 #end
 
 
 #neweffect "Cloud of Death Gemless"
+#scalingset "evo"
 #effect 4002
 #damage 1002
 #spec 528512
-#aoe 1002
-#power 5
+#aoe 1
+#power 3
 #precision -3
 #range 30
-#fatiguecost 30
+#fatiguecost 10
 #explspr 10160
 #sound 23
 
@@ -174,7 +182,7 @@
 
 #spelltype 34
 
-#scalerate 0.27
+#scalerate 0.25
 -- #scalecost 1.7
 #pathlevel 3
 #schools 4
@@ -185,18 +193,20 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.4
+#maxpower 14
 #end
 
 
 #neweffect "Shock Cloud Gemless"
+#scalingset "evo"
 #effect 4109
 #damage 1
 #spec 2048+128
-#aoe 1001
-#power 3
+#aoe 1
+#power 2
 #precision -1
 #range 5015
-#fatiguecost 30
+#fatiguecost 5
 #explspr 10048
 #sound 42
 
@@ -214,9 +224,9 @@
 
 #spelltype 34
 
-#scalerate 0.2
+#scalerate 0.25
 -- #scalecost 1.7
-#pathlevel 3
+#pathlevel 2
 #schools 4
 
 #priority 1
@@ -225,7 +235,18 @@
 #fatigueperresearch 0
 #scalefatigueexponent 0
 #pathperresearch 0.4
+#maxpower 14
 #end
+
+
+
+
+
+
+
+
+
+
 
 
 

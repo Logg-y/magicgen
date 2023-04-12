@@ -1,4 +1,5 @@
 #neweffect "Summonotherness"
+#scalingset "battlesummon"
 #effect 1
 #damage 628
 #spec 8388608
@@ -22,13 +23,11 @@
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 8
-#scalefatigueexponent -1.55
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "otherness ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 628
 #spec 8388608
@@ -53,13 +52,11 @@
 
 #skipchance 97
 
-#scalefatigueexponent -1.45
-#scalefatiguemult 7
 #newunit "Otherness"
 
-#scalerate 1.5
 #end
-
+
+
 #neweffect "otherness Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,7 +82,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remoteotherness"
 #effect 10038
 #provrange 4
@@ -114,5 +112,5 @@
 
 #scalerate 2
 #end
-
-
+
+

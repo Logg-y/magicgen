@@ -1,4 +1,5 @@
 #neweffect "Summon feles4"
+#scalingset "battlesummon"
 #effect 1
 #damage 596
 #spec 0
@@ -15,18 +16,17 @@
 #secondarypaths 1
 
 #skipchance 98
-#scalefatiguemult 28.0
 #details "The elementals are size 4."
 #name 1 "$conjure$ NAMEPREFIX Large Fire %Elemental%"
 #descr 1 "The caster summons forth ARTICLE large fire %elemental%. They will fight for him until the battle ends."
 
 #spelltype 528
 
-#scalerate 0.46
-#scalefatigueexponent -1.8
 #end
-
+
+
 #neweffect "feles4 ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 596
 #spec 0
@@ -48,12 +48,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.2
-#scalefatiguemult 50.0
 
-#scalerate 2
 #end
-
+
+
 #neweffect "feles4 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +76,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon feles4"
 #effect 10038
 #provrange 4
@@ -108,12 +107,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 80
 #end
-
-
-
-
-
-
-
-
-
+
+

@@ -1,4 +1,5 @@
 #neweffect "False Fetters"
+#scalingset "disabling"
 #effect 11
 #damage 131072
 #spec 8409088
@@ -11,7 +12,7 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power -1
+#power 0
 #pathlevel 1
 #explspr 10045
 #sound 42
@@ -48,7 +49,7 @@
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.4
-#maxpower 6
+#maxpower 9
 #end
 
 #neweffect "False Fetters Battlefield"
@@ -153,6 +154,7 @@
 #pathperresearch 0.4
 #maxpower 9
 #end
+
 
 
 

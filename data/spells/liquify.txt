@@ -1,4 +1,5 @@
 #neweffect "Liquify"
+#scalingset "evo"
 #effect 2
 #damage 999
 #spec 10489856
@@ -10,7 +11,7 @@
 #scalerate 1.2
 -- #scalecost 0.6
 
-#aoe 5
+#aoe 4
 #power 4
 #maxpower 14
 #pathlevel 2
@@ -42,6 +43,7 @@
 #end
 
 #neweffect "Liquify Gemless"
+#scalingset "evo"
 #effect 2
 #damage 999
 #spec 10489856
@@ -59,7 +61,7 @@
 #pathlevel 2
 #explspr 10121
 #sound 31
-#fatiguecost 15
+#fatiguecost 10
 #range 5010
 
 -- W, D
@@ -83,6 +85,8 @@
 #scalefatigueexponent 0
 #fatigueperresearch 0
 #end
+
+
 
 
 

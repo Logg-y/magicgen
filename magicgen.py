@@ -28,7 +28,7 @@ spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.9"
+ver = "3.1.10"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -229,7 +229,7 @@ def generateHolySpells(**options):
 
                         # force secondary effect on themed spells that don't have a next spell
                         # these specmasks are extra effect and extra effect on damage
-                        if len(spelleff.nextspell) == 0 and (
+                        if (not isinstance(spelleff.nextspell, SpellEffect)) and (
                                 (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
                             outputSpells.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
                                                         blockmodifier=True,

@@ -15,6 +15,7 @@
 
 
 #neweffect "Nether Bolt"
+#scalingset "evo"
 #effect 2
 #damage 1014
 #spec 9048192
@@ -58,6 +59,7 @@
 
 
 #neweffect "Nether Bolt Gemless"
+#scalingset "evo"
 #effect 2
 #damage 1014
 #spec 9048192

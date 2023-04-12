@@ -1,4 +1,5 @@
 #neweffect "Death Projectile"
+#scalingset "evo"
 #effect 74
 #damage 1014
 #spec 9048192
@@ -40,6 +41,7 @@
 
 
 #neweffect "Death Projectile Gemless"
+#scalingset "evo"
 #effect 74
 #damage 1014
 #spec 9048192

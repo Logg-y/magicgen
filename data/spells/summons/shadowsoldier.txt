@@ -1,4 +1,5 @@
 #neweffect "Raise shadowsoldier"
+#scalingset "battlesummon"
 #effect 1
 #damage 675
 #spec 8388608
@@ -20,19 +21,15 @@
 
 #spelltype 528
 
-#scalerate 0.51
 -- #scalecost 1.0
 #pathlevel 1
 #schools 1
---#scalefatiguemult 20
 #skipchance 97
-#scalefatiguemult 0
-#scalefatigueexponent -1.4
 #end
-
-
-
+
+
 #neweffect "Raise shadowsoldier Ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 675
 #spec 8388608
@@ -52,13 +49,10 @@
 #descr 32 "The caster pulls the remains of ARTICLE dead %soldier% out of the shadow realm. These shadows are similar to dispossessed spirits, but are considerably more skilled."
 
 #spelltype 20
-#scalerate 2
-#scalefatiguemult 0
-#scalefatigueexponent 1.8
-#pathperresearch 0.3
 #siegepatrolchaff 1
 #end
-
+
+
 #neweffect "shadowsoldier Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,7 +77,8 @@
 
 #scalerate 0.7
 #end
-
+
+
 #neweffect "Remote summon shadowsoldier"
 #effect 10038
 #provrange 4
@@ -109,6 +104,5 @@
 #scalerate 2.0
 #scalefatiguemult 25
 #end
-
-
-
+
+

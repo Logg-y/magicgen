@@ -1,12 +1,13 @@
 #neweffect "Life for a Life"
+#scalingset "evo"
 #effect 2
-#damage 5005
+#damage 5015
 #spec 536887424
 #schools 2
 
 #spelltype 66
 
-#scalerate 3
+#scalerate 6.25
 -- #scalecost 1.6
 
 #aoe 0

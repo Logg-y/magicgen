@@ -1,4 +1,5 @@
 #neweffect "Summon behemoth"
+#scalingset "battlesummon"
 #effect 1
 #damage 452
 #spec 8388608
@@ -8,9 +9,6 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 110
-#scalefatiguemult 20
-#scalefatigueexponent -1.6
-#pathperresearch 0.45
 #sound 43
 #schools 16
 
@@ -24,10 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1
 #end
-
+
+
 #neweffect "behemoth ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 452
 #spec 8388608
@@ -48,13 +47,10 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 70
-#pathperresearch 0.45
 
-#scalerate 2
 #end
-
+
+
 #neweffect "behemoth Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,7 +73,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon behemoth"
 #effect 10038
 #provrange 4
@@ -105,5 +102,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 160
 #end
-
-
+
+

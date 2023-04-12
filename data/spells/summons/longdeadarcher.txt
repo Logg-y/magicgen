@@ -1,4 +1,5 @@
 #neweffect "Summon longdead archer"
+#scalingset "battlesummon"
 #effect 1
 #damage 535
 #spec 8388608
@@ -23,15 +24,12 @@
 
 #spelltype 528
 
-#scalerate 0.51
 #skipchance 40
-#scalefatigueexponent -1.3
-#pathperresearch 0.4
 #end
-
-
-
+
+
 #neweffect "longdeadarcher ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 535
 #spec 8388608
@@ -53,14 +51,12 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.4
-#scalefatiguemult 10
 
 #skipchance 80
-#scalerate 4
 #siegepatrolchaff 1
 #end
-
+
+
 #neweffect "longdeadarcher Remote Assassination"
 #effect 10050
 #provrange 4
@@ -86,7 +82,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon longdeadarcher"
 #effect 10038
 #provrange 4
@@ -117,5 +114,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 20
 #end
-
-
+
+

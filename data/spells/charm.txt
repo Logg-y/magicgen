@@ -1,4 +1,5 @@
 #neweffect "Charm"
+#scalingset "evo"
 #effect 29
 #damage 999
 #spec 8540288
@@ -43,6 +44,7 @@
 #end
 
 #neweffect "Charm Gemless"
+#scalingset "evo"
 #effect 29
 #damage 999
 #spec 8540288
@@ -88,6 +90,7 @@
 #end
 
 #neweffect "Charm Lesser"
+
 #effect 29
 #damage 999
 #spec 8540288
@@ -109,6 +112,7 @@
 
 
 #neweffect "Charm Lesser casting AI dummy"
+#scalingset "evo"
 #effect 109
 #damage 999
 #spec 1152921504606998656
@@ -121,7 +125,7 @@
 -- #scalecost 1.6
 
 #aoe 0
-#power 2
+#power 1
 #maxpower 15
 #pathlevel 2
 #explspr 10213
@@ -155,6 +159,8 @@
 #scalefatigueexponent 0
 #pathperresearch 0.2
 #end
+
+
 
 
 

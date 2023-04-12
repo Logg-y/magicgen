@@ -11,9 +11,9 @@
 -- #scalecost 1.4
 
 #aoe 0
-#power 7
+#power 8
 -- this falls short of 100% field (aoe 21)
-#maxpower 12
+#maxpower 13
 #pathlevel 1
 #explspr 10216
 #sound 31
@@ -47,8 +47,8 @@
 -- #scalecost 1.4
 
 #aoe 0
-#power 7
-#maxpower 12
+#power 8
+#maxpower 13
 #pathlevel 3
 #explspr 10216
 #sound 31

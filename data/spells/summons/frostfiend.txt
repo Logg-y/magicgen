@@ -1,4 +1,5 @@
 #neweffect "Summon frostfiend"
+#scalingset "battlesummon"
 #effect 1
 #damage 449
 #spec 0
@@ -22,10 +23,11 @@
 
 #spelltype 528
 
-#scalerate 1
 #end
-
+
+
 #neweffect "frostfiend ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 449
 #spec 0
@@ -48,12 +50,10 @@
 
 #skipchance 50
 
-#scalefatigueexponent -2
-#scalefatiguemult 350
 
-#scalerate 0.6
 #end
-
+
+
 #neweffect "frostfiend Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,7 +78,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote frostfiend"
 #effect 10038
 #provrange 4
@@ -108,3 +109,5 @@
 
 #scalerate 1
 #end
+
+

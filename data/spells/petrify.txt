@@ -1,5 +1,6 @@
 
 #neweffect "Petrification"
+#scalingset "disabling"
 #effect 99
 #damage 999
 #spec 8388736
@@ -41,6 +42,7 @@
 #end
 
 #neweffect "Petrify MRN"
+#scalingset "disabling"
 #effect 99
 #damage 999
 #spec 8388736+4096

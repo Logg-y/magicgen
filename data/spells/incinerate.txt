@@ -1,4 +1,5 @@
 #neweffect "Incinerate"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 36028797027369120
@@ -37,6 +38,7 @@
 #end
 
 #neweffect "Incinerate Gemless"
+#scalingset "evo"
 #effect 2
 #damage 2008
 #spec 36028797027369120

@@ -1,4 +1,6 @@
 #neweffect "Summon gelatinouscube"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2159
 #spec 8388608
@@ -15,26 +17,26 @@
 #secondarypaths 4
 
 #skipchance 98
-#scalefatiguemult 20
 
 #name 4 "$conjure$ NAMEPREFIX Gelatinous %Cube%"
 #descr 4 "The caster summons forth ARTICLE gelantinous %cube%. The cube tramples enemies, causing them to be swallowed up and quickly dissolved in the cube's acidity."
 
 #spelltype 528
 
-#scalerate 1
-#scalefatiguemult 12
-#scalefatigueexponent -1.6
-#pathperresearch 0.4
 #end
 
+
+
+
 #neweffect "gelatinouscube ritual"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2159
 #spec 8388608
 #power 4
 #maxpower 8
-#nreff 4
+#nreff 3
 #pathlevel 4
 #fatiguecost 420
 #schools 1
@@ -49,12 +51,13 @@
 
 #spelltype 20
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 20
-#pathperresearch 0.4
 
-#scalerate 2
+#scalefatiguemult 91.0
+#scalerate 0.6000000000000001
 #end
+
+
+
 
 #neweffect "gelatinouscube Remote Assassination"
 #effect 10050
@@ -78,6 +81,9 @@
 #spelltype 4
 
 #end
+
+
+
 
 #neweffect "Remote summon gelatinouscube"
 #effect 10038
@@ -106,6 +112,8 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 100
 #end
+
+
 
 
 

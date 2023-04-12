@@ -1,4 +1,5 @@
 #neweffect "Blood Burst"
+#scalingset "evo"
 #effect 2
 #damage 1010
 #spec 537411712

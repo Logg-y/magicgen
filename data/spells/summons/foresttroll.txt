@@ -1,4 +1,5 @@
 #neweffect "Summon forest troll"
+#scalingset "battlesummon"
 #effect 1
 #damage 2219
 #spec 0
@@ -21,13 +22,11 @@
 
 #spelltype 528
 
-#scalerate 1.5
-#scalefatiguemult 9
-#scalefatigueexponent -1.5
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "forest troll ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 2219
 #spec 0
@@ -48,13 +47,10 @@
 #spelltype 20
 
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 10
-#pathperresearch 0.4
 
-#scalerate 2
 #end
-
+
+
 #neweffect "forest troll Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,7 +73,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "Remote summon forest troll"
 #effect 10038
 #provrange 4
@@ -106,6 +103,5 @@
 #scalefatigueexponent 0.3
 #scalefatiguemult 25
 #end
-
-
-
+
+

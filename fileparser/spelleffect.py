@@ -8,7 +8,7 @@ from Services import utils
 from Services import fileparserutils
 
 simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "siegepatrolchaff", "fixeddurationenchantment", "fatigueperresearch", "nocostreduction", "noresearchreduction"]
-simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit"]
+simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit", "scalingset"]
 simple_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "skipchance"]
 
 
@@ -210,6 +210,7 @@ def readEffectsFromDir(dir):
 			for key in c:
 				if key in out:
 					raise ParseError(f"Spell named {key} already exists and was redefined in {f}")
+				c[key]._initvariables()
 				out[key] = c[key]
 				if c[key].spelltype == -1:
 					raise ParseError(f"{f}: Spell Effect {key} was given no spell type")

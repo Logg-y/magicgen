@@ -1,4 +1,5 @@
 #neweffect "Summon iceimp"
+#scalingset "battlesummon"
 #effect 1
 #damage 303
 #spec 0
@@ -23,11 +24,11 @@
 
 #spelltype 528
 
-#scalerate 1.1
---#scalefatiguemult 15
 #end
-
+
+
 #neweffect "iceimp ritual"
+#scalingset "ritualsummon"
 #effect 10001
 #damage 303
 #spec 0
@@ -50,12 +51,10 @@
 
 #skipchance 82
 
-#scalefatigueexponent -1.6
-#scalefatiguemult 80
 
-#scalerate 2
 #end
-
+
+
 #neweffect "iceimp Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,7 +80,8 @@
 #spelltype 4
 
 #end
-
+
+
 #neweffect "remote iceimps"
 #effect 10038
 #provrange 4
@@ -112,3 +112,5 @@
 
 #scalerate 2
 #end
+
+

@@ -1,4 +1,5 @@
 #neweffect "Decay"
+#scalingset "evo"
 #effect 11
 #damage 256
 #spec 8392704
@@ -11,12 +12,12 @@
 -- #scalecost 0.6
 
 #aoe 0
-#power 0
+#power -2
 #pathlevel 1
-#maxpower 6
+#maxpower 14
 #explspr 10197
 #sound 23
-#fatiguecost 20
+#fatiguecost 10
 #range 5020
 #precision 100
 
@@ -125,6 +126,8 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
 #end
+
+
 
 
 
