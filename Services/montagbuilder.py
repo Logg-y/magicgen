@@ -177,6 +177,8 @@ class MontagBuilder(object):
             out.modcmds += f"#woundfend 99\n"
             # Prevent drowning
             out.modcmds += "#amphibian\n"
+            # Prevent anything built this way enters the vanilla transformation pool (as it's a wolf it defaults to included)
+            out.modcmds += "#transformation 0\n"
             # These values allow MRN transformation spells with reasonable odds of failure
             # as well as preventing any items being dropped while in this form
             out.modcmds += "#mr 15\n"

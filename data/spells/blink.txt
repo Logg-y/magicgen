@@ -44,7 +44,7 @@
 #neweffect "Blink"
 #effect 20
 #damage 30
-#spec 12599269
+#spec 12599296
 #schools 32
 
 -- buff, battlefield allowed, scale aoe

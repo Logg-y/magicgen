@@ -63,7 +63,7 @@
 
 #name n "Summon NAMEPREFIX Vine Man %Mage%"
 #descr n "$The caster summons ARTICLE_N Vine Man %Mage% to serve him. The Vine Man Mage possesses skill in Nature magic, and often also in other aspects of the natural world."
-#details "Vine Man Mages are E2 mages with the following random paths:\n50% FAWED\n50% FAWED"
+#details "Vine Man Mages are N2 mages with the following random paths:\n50% FAWED\n50% FAWED"
 
 #spelltype 20
 

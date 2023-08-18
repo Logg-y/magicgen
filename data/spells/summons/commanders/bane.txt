@@ -37,8 +37,8 @@
 #effect 10021
 #damage 185
 #spec 0
-#power 8
-#maxpower 8
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 2
 #fatiguecost 600
@@ -62,6 +62,7 @@
 #spelltype 20
 
 #scalerate 1
+#scalingset ""
 #end
 
 #neweffect "Bane Remote Assassination"
@@ -89,3 +90,4 @@
 #spelltype 4
 
 #end
+
