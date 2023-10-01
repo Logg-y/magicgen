@@ -57,10 +57,10 @@
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10207
 #sound 31
-#fatiguecost 300
+#fatiguecost 500
 #precision 100
 #range 20
 
@@ -79,6 +79,8 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of confusion"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of confusion"
 
+#scalingset ""
 #end
+
 
 

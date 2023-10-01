@@ -52,15 +52,15 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 166.5
 -- #scalecost 0.6
 
 #aoe 666
-#power 7
-#pathlevel 4
+#power 8
+#pathlevel 6
 #explspr 10203
 #sound 16
-#fatiguecost 200
+#fatiguecost 300
 #range 5020
 
 #paths 129
@@ -78,8 +78,11 @@
 #descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap everyone on the battlefield. Escaping requires high morale, and succeeding results in severe burns."
 #details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
-#scalefatigueexponent 1.2
-#maxpower 7
+#scalefatigueexponent 0.0
+#maxpower 8
+#scalingset "evo"
+#fatigueperresearch 0
+#pathperresearch 0.0
 #end
 
 #neweffect "Bonds of Fire Battlefield Hostile Only"
@@ -96,10 +99,10 @@
 
 #aoe 666
 #power 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10203
 #sound 16
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 #skipchance 70
 
@@ -120,7 +123,12 @@
 
 #scalefatigueexponent 1.2
 #maxpower 9
+#scalingset ""
 #end
+
+
+
+
 
 
 

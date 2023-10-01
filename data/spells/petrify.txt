@@ -100,7 +100,7 @@
 #pathlevel 7
 #explspr 10121
 #sound 45
-#fatiguecost 400
+#fatiguecost 500
 #range 5010
 #precision 100
 
@@ -117,5 +117,7 @@
 
 #scalefatigueexponent 1.4
 #pathperresearch 0.4
+#scalingset ""
 #end
+
 

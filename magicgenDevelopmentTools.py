@@ -359,7 +359,11 @@ def scalingTool():
                     window["-lookupspelleffect-"].update(realeffname)
             if spelleffect is not None:
                 for attrib in attribs_to_copy + str_attribs_to_copy:
-                    window[f"-{attrib}-"].update(getattr(spelleffect, attrib))
+                    val = getattr(spelleffect, attrib, "")
+                    if val is None:
+                        val = ""
+                    window[f"-{attrib}-"].update(val)
+                    print(f"Update {attrib} to {val}")
                 for flagname, flagvalue in flags.items():
                     if spelleffect.spelltype & flagvalue:
                         window[f"-scale{flagname}-"].update("1")

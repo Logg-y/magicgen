@@ -51,7 +51,7 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 4
+#pathlevel 5
 #explspr 10265
 #sound 52
 #fatiguecost 200
@@ -69,3 +69,5 @@
 #namecond effect > 1000 2 "NAMEPREFIX breathtaking $mist$"
 
 #end
+
+

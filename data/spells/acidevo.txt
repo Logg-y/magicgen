@@ -183,8 +183,8 @@
 #damage 1005
 #spec 2199023255616
 #aoe 666
-#power 10
-#maxpower 10
+#power 8
+#maxpower 14
 #skipchance 90
 #precision 3
 #range 30
@@ -206,11 +206,17 @@
 #descr b "$BLOOD_INTRO$ gush of highly corrosive fluid falls onto SUBJECT. The acid burns the armor of the targets as well as their flesh."
 
 -- evo-like, scale aoe
-#spelltype 34
+#spelltype 66
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+#scalingset ""
+#fatigueperresearch 50
 #end
+
+
+
+
 
 
 

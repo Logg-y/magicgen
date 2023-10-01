@@ -125,8 +125,8 @@
 #maxpower 9
 #precision 1
 #range 5020
-#pathlevel 6
-#fatiguecost 300
+#pathlevel 7
+#fatiguecost 500
 #explspr 10229
 #sound 31
 
@@ -144,6 +144,7 @@
 #scalerate 2.2
 #schools alt
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
+#scalingset ""
 #end
 
 
@@ -231,8 +232,8 @@
 #nreff 1
 #precision 1
 #range 5020
-#pathlevel 6
-#fatiguecost 300
+#pathlevel 7
+#fatiguecost 500
 #explspr 10336
 #sound 31
 
@@ -252,6 +253,7 @@
 #scalerate 2.2
 #schools evo
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
+#scalingset ""
 #end
 
 
@@ -355,8 +357,8 @@
 #nreff 1
 #precision 1
 #range 5020
-#pathlevel 6
-#fatiguecost 300
+#pathlevel 7
+#fatiguecost 500
 #explspr 10145
 #sound 31
 
@@ -375,7 +377,11 @@
 #spelltype 42
 #scalerate 2.2
 #schools evo
+#scalingset ""
 #end
+
+
+
 
 
 

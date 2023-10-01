@@ -53,12 +53,12 @@
 -- #scalecost 0
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 5
+#power 9
+#maxpower 9
+#pathlevel 7
 #explspr 10123
 #sound 41
-#fatiguecost 200
+#fatiguecost 500
 #precision 100
 #range 100
 
@@ -74,7 +74,9 @@
 #priority 1
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of blood"
 
+#scalingset ""
 #end
+
 
 
 

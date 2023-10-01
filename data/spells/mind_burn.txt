@@ -120,12 +120,12 @@
 -- #scalecost 0
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 5
+#power 8
+#maxpower 8
+#pathlevel 7
 #explspr 10204
 #sound 41
-#fatiguecost 200
+#fatiguecost 400
 #precision 100
 #range 100
 
@@ -143,7 +143,10 @@
 #descr 4 "The caster attempts to freeze the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 #descr 1 "The caster attempts to burn the minds of all living creatures on the battlefield, including himself. Those that fail to resist experience agony."
 
+#scalingset ""
 #end
+
+
 
 
 

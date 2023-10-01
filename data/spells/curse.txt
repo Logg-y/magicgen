@@ -72,8 +72,8 @@
 -- #scalecost 0.5
 
 #aoe 666
-#power 6
-#maxpower 6
+#power 7
+#maxpower 7
 #pathlevel 4
 #explspr 10200
 #sound 23
@@ -96,4 +96,6 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of curses"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of curses"
 
+#scalingset ""
 #end
+

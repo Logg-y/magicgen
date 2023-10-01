@@ -110,12 +110,12 @@
 
 #aoe 666
 #power 5
-#maxpower 9
-#pathlevel 4
+#maxpower 14
+#pathlevel 5
 #explspr 10201
 #sound 28
 #range 50
-#fatiguecost 200
+#fatiguecost 300
 
 
 #paths 144
@@ -144,6 +144,9 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 #scalingset ""
+#scalefatigueexponent 1.33
+#pathperresearch 0.4
 #end
+
 
 

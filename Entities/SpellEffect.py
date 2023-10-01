@@ -444,8 +444,8 @@ class SpellEffect(object):
                 if attribScaleAmt < 0:
                     continue
                 if attribScaleAmt == 0:
-                    # Default to 15% scaling, could add a command line option for this
-                    scaleratio = 0.15
+                    # Default scaling, could add a command line option for this
+                    scaleratio = 0.20
                     # Do not do this unless the spell naturally scales the attribute with research
                     if attribToScale == "nreff":
                         flag = SpellTypes.POWER_SCALES_NREFF
@@ -462,16 +462,17 @@ class SpellEffect(object):
                         print(f"Skip scaling attribute {attribToScale} as attribute value is zero")
                         continue
                     scaleratio = min(1.0, attribScaleAmt / basespellvalue)
-                    if scaleratio > 0.15:
-                        print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > 0.15)")
-                        scaleratio = 0.15
+                    if scaleratio > 0.20:
+                        print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > 0.20)")
+                        scaleratio = 0.20
                     print(f"Attribute scale amount is {attribScaleAmt}, base spell value is {basespellvalue}")
 
                 newspellattrib = getattr(s, attribToScale)
                 newspellvalue = ((newspellattrib // 1000) * s.path1level) + newspellattrib % 1000
                 print(f"Desired scaling ratio for attribute {attribToScale}" \
                       f" is {scaleratio}; new spell has base value {newspellvalue}")
-                desiredScalingAmount = newspellvalue * scaleratio
+                desiredScalingAmountPerPathLevel = newspellvalue * scaleratio
+                desiredScalingAmount = desiredScalingAmountPerPathLevel * s.path1level
                 newscale = math.floor(max(attribScaleAmt, min(newspellvalue/s.path1level, min(9, math.floor(desiredScalingAmount)))))
                 newfixed = newspellvalue - (newscale * s.path1level)
                 print(f"Desired scaling amount = {desiredScalingAmount}, split into {newscale} scaling + {newfixed};"

@@ -65,11 +65,11 @@
 -- #scalecost 0.7
 
 #aoe 666
-#power 7
-#pathlevel 4
+#power 8
+#pathlevel 6
 #explspr 10189
 #sound 45
-#fatiguecost 200
+#fatiguecost 300
 #range 5020
 #precision 3
 
@@ -87,7 +87,8 @@
 #descr b "$BLOOD_INTRO$, the caster makes the entire battlefield muddy and soft. This causes all creatures on the battlefield to fall into the ground and become unable to act."
 
 
-#maxpower 7
+#maxpower 8
+#scalingset ""
 #end
 
 #neweffect "Earth Grip Battlefield Enemies Only"
@@ -104,10 +105,10 @@
 
 #aoe 666
 #power 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10189
 #sound 45
-#fatiguecost 300
+#fatiguecost 500
 #range 5020
 #precision 3
 #skipchance 70
@@ -133,7 +134,10 @@
 
 
 #maxpower 9
+#scalingset ""
 #end
+
+
 
 
 

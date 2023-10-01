@@ -91,13 +91,13 @@
 
 #nreff 1
 #aoe 666
-#power 7
+#power 8
 #precision 2
-#maxpower 7
-#pathlevel 4
+#maxpower 8
+#pathlevel 6
 #explspr 10256
 #sound 107
-#fatiguecost 200
+#fatiguecost 300
 #range 5025
 #skipchance 70
 
@@ -112,6 +112,7 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 #scalefatigueexponent 1.4
+#scalingset ""
 #end
 
 #neweffect "Slime Instant Battlefield Hostile Only"
@@ -131,10 +132,10 @@
 #power 9
 #precision 2
 #maxpower 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10256
 #sound 107
-#fatiguecost 300
+#fatiguecost 400
 #range 5025
 #skipchance 70
 
@@ -149,7 +150,10 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 #scalefatigueexponent 1.4
+#scalingset ""
 #end
+
+
 
 
 

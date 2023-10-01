@@ -16,7 +16,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 10
+#fatiguecost 15
 #range 5015
 #precision 100
 
@@ -57,7 +57,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 10
+#fatiguecost 15
 #range 5015
 #precision 100
 
@@ -75,6 +75,8 @@
 
 #maxpower 15
 #end
+
+
 
 
 

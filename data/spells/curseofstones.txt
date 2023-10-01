@@ -56,11 +56,11 @@
 -- #scalecost 0.6
 
 #aoe 666
-#power 4
-#pathlevel 3
+#power 8
+#pathlevel 6
 #explspr 10270
 #sound 31
-#fatiguecost 100
+#fatiguecost 300
 #range 5020
 
 #paths eb
@@ -80,7 +80,8 @@
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
 #scalefatigueexponent 1.2
-#maxpower 4
+#maxpower 8
+#scalingset ""
 #end
 
 #neweffect "Curse of Stones Battlefield Regular MR"
@@ -97,11 +98,11 @@
 -- #scalecost 0.6
 
 #aoe 666
-#power 6
-#pathlevel 4
+#power 8
+#pathlevel 6
 #explspr 10270
 #sound 31
-#fatiguecost 200
+#fatiguecost 300
 #range 5020
 
 #paths 8
@@ -119,5 +120,10 @@
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
 #scalefatigueexponent 1.2
-#maxpower 6
+#maxpower 8
+#scalingset ""
 #end
+
+
+
+

@@ -124,9 +124,9 @@
 -- #scalecost 1.1
 
 #aoe 666
-#power 8
-#maxpower 8
-#pathlevel 6
+#power 9
+#maxpower 9
+#pathlevel 7
 #explspr 10279
 #sound 45
 #fatiguecost 500
@@ -142,6 +142,8 @@
 
 #nextspell "Imprisonment Kill Living"
 
+#scalingset ""
 #end
+
 
 

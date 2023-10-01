@@ -46,12 +46,12 @@
 -- #scalecost 1.6
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 4
+#power 8
+#maxpower 8
+#pathlevel 6
 #explspr 10197
 #sound 31
-#fatiguecost 200
+#fatiguecost 300
 #precision 100
 #range 20
 
@@ -66,7 +66,9 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
+#scalingset ""
 #end
+
 
 
 

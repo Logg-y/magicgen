@@ -290,8 +290,8 @@
 #damage 1005
 #spec 96
 #aoe 666
-#power 10
-#maxpower 10
+#power 8
+#maxpower 8
 #precision 1
 #range 30
 #pathlevel 6
@@ -321,6 +321,7 @@
 #scalerate 1
 -- #scalecost 0.3
 #schools 4
+#scalingset ""
 #end
 
 
@@ -380,6 +381,7 @@
 #scalerate 5.0
 #pathlevel 5
 #end
+
 
 
 

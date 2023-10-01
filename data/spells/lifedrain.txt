@@ -181,9 +181,9 @@
 #aoe 666
 #power 7
 #maxpower 14
-#pathlevel 4
+#pathlevel 5
 #sound 18
-#fatiguecost 200
+#fatiguecost 300
 #precision 25
 #range 30
 
@@ -195,6 +195,7 @@
 #descr 32 "The caster drains the life force of everyone on the battlefield, adding it to his own health and endurance."
 
 
+#scalingset ""
 #end
 
 #neweffect "Lifedrain battlefield blood"
@@ -216,9 +217,9 @@
 #aoe 666
 #power 5
 #maxpower 14
-#pathlevel 4
+#pathlevel 5
 #sound 18
-#fatiguecost 400
+#fatiguecost 300
 #precision 25
 #range 30
 
@@ -230,6 +231,7 @@
 #descr 128 "With this arduous spell, the mage tries to drain blood from everyone in the vicinity. All drained blood will be added to the mage's life force."
 
 
+#scalingset ""
 #end
 
 
@@ -273,6 +275,8 @@
 
 
 #end
+
+
 
 
 

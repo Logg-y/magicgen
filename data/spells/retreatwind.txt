@@ -8,9 +8,9 @@
 #maxpower 9
 #precision 1
 #range 5040
-#pathlevel 6
+#pathlevel 7
 #pathperresearch 0.33
-#fatiguecost 300
+#fatiguecost 500
 #explspr 10338
 #sound 52
 
@@ -32,4 +32,6 @@
 #schools 4
 
 
+#scalingset ""
 #end
+

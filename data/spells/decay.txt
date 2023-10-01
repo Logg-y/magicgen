@@ -57,12 +57,12 @@
 -- #scalecost 0.6
 
 #aoe 666
-#power 7
-#pathlevel 5
-#maxpower 7
+#power 8
+#pathlevel 6
+#maxpower 8
 #explspr 10197
 #sound 23
-#fatiguecost 200
+#fatiguecost 400
 #range 5020
 #precision 100
 
@@ -86,6 +86,7 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of decay"
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
+#scalingset ""
 #end
 
 #neweffect "Mass Decay Hostile Only"
@@ -102,11 +103,11 @@
 
 #aoe 666
 #power 9
-#pathlevel 6
+#pathlevel 7
 #maxpower 9
 #explspr 10197
 #sound 23
-#fatiguecost 300
+#fatiguecost 500
 #range 5020
 #precision 100
 #skipchance 40
@@ -125,7 +126,10 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 
+#scalingset ""
 #end
+
+
 
 
 

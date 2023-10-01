@@ -162,7 +162,7 @@
 #pathlevel 7
 #explspr 10206
 #sound 41
-#fatiguecost 500
+#fatiguecost 400
 #precision 100
 #range 100
 
@@ -173,7 +173,9 @@
 
 #descr 16 "The caster attempts to rip the souls from all living creatures on the battlefield, including himself. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death."
 
+#scalingset ""
 #end
+
 
 
 

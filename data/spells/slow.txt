@@ -62,11 +62,11 @@
 -- #scalecost 0.6
 
 #aoe 666
-#power 7
-#pathlevel 4
+#power 8
+#pathlevel 6
 #explspr 10304
 #sound 114
-#fatiguecost 200
+#fatiguecost 300
 #range 5015
 
 #paths 20
@@ -85,7 +85,8 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
 #scalefatigueexponent 1.4
-#maxpower 7
+#maxpower 8
+#scalingset ""
 #end
 
 
@@ -103,10 +104,10 @@
 
 #aoe 666
 #power 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10304
 #sound 114
-#fatiguecost 300
+#fatiguecost 400
 #range 5015
 
 #paths 20
@@ -127,7 +128,10 @@
 
 #scalefatigueexponent 1.4
 #maxpower 9
+#scalingset ""
 #end
+
+
 
 
 

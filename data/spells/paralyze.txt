@@ -92,12 +92,12 @@
 -- #scalecost 0
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 6
+#power 9
+#maxpower 9
+#pathlevel 7
 #explspr 10205
 #sound 41
-#fatiguecost 300
+#fatiguecost 500
 #precision 100
 #range 100
 
@@ -109,7 +109,12 @@
 #descr 16 "The caster attempts to overload the minds of all living creatures on the battlefield, including himself. Those that fail to resist are paralysed for a long time."
 #details "This spell inflicts EFFECTIVEDAMAGE paralysis damage, plus DAMAGESCALING per additional caster level."
 
+#scalingset ""
 #end
+
+
+
+
 
 
 

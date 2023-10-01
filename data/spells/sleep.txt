@@ -53,12 +53,12 @@
 -- #scalecost 0
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 4
+#power 8
+#maxpower 8
+#pathlevel 6
 #explspr 10016
 #sound 29
-#fatiguecost 200
+#fatiguecost 300
 #precision 100
 #range 100
 
@@ -74,6 +74,7 @@
 #namecond effect > 1000 64 "NAMEPREFIX sleep $mist$"
 #namecond range < 10 64 "NAMEPREFIX touch of slumber"
 
+#scalingset ""
 #end
 
 #neweffect "Battlefield Sleep Enemies Only"
@@ -91,10 +92,10 @@
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10016
 #sound 29
-#fatiguecost 300
+#fatiguecost 400
 #precision 100
 #range 100
 #skipchance 70
@@ -111,5 +112,10 @@
 #namecond effect > 1000 64 "NAMEPREFIX sleep $mist$"
 #namecond range < 10 64 "NAMEPREFIX touch of slumber"
 
+#scalingset ""
 #end
+
+
+
+
 

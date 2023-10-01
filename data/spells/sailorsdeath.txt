@@ -121,12 +121,12 @@
 -- #scalecost 0
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 5
+#power 8
+#maxpower 8
+#pathlevel 7
 #explspr 10204
 #sound 41
-#fatiguecost 200
+#fatiguecost 500
 #precision 100
 #range 100
 
@@ -146,6 +146,8 @@
 #descr 4 "The caster attempts to fill the lungs of all living beings on the battlefield with water. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 #descr 32 "The caster attempts to prevent all his enemies from breathing. Unless resisted, this results in severe internal damage. Creatures that do not breathe air are unaffected by this spell."
 
+#scalingset ""
 #end
+
 
 

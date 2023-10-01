@@ -47,7 +47,7 @@
 #precision 2
 #range 5035
 #pathlevel 2
-#fatiguecost 5
+#fatiguecost 15
 #explspr 10067
 #sound 41
 #paths 64
@@ -76,15 +76,15 @@
 #neweffect "Stream of Life battlefield"
 
 #effect 72
-#damage 5025
+#damage 5015
 #spec 36028797564752000
 #aoe 666
-#power 7
-#maxpower 7
+#power 8
+#maxpower 8
 #precision 2
 #range 5035
-#pathlevel 4
-#fatiguecost 200
+#pathlevel 7
+#fatiguecost 400
 #explspr 10067
 #sound 41
 #paths 64
@@ -106,7 +106,11 @@
 
 #scalefatigueexponent 1.2
 #pathperresearch 0.0
+#scalingset ""
 #end
+
+
+
 
 
 

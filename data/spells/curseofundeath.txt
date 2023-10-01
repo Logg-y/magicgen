@@ -164,8 +164,8 @@
 #maxpower 9
 #precision 100
 #range 5040
-#pathlevel 7
-#fatiguecost 500
+#pathlevel 8
+#fatiguecost 600
 #explspr 10171
 #sound 22
 
@@ -182,6 +182,9 @@
 #spelltype 42
 #scalerate 1
 #schools 32
+#scalingset ""
 #end
+
+
 
 

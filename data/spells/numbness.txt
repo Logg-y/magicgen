@@ -65,7 +65,7 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 4
+#pathlevel 5
 #explspr 10134
 #sound 21
 #fatiguecost 200
@@ -90,6 +90,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of freezing"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of kokytos"
 
+#scalingset ""
 #end
 
 #neweffect "Numbness Battlefield Hostile Only"
@@ -110,7 +111,7 @@
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 5
+#pathlevel 6
 #explspr 10134
 #sound 21
 #fatiguecost 300
@@ -137,5 +138,8 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of freezing"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of kokytos"
 
+#scalingset ""
 #end
+
+
 

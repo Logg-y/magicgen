@@ -36,3 +36,33 @@
 #namecond range < 10 1 "NAMEPREFIX touch of sparks"
 #fatigueperresearch 0
 #end
+
+#neweffect "Static Shock Battlefield"
+#effect 109
+#damage -1
+#spec 18560+70368744177664
+#schools 4
+
+#spelltype 18
+#nreff 1
+#aoe 666
+#pathlevel 4
+#power 6
+#maxpower 6
+#explspr 10108
+#sound 27
+#fatiguecost 100
+
+#paths a
+#secondarypaths e
+#secondarypathchance 95
+
+#aispellmod -66
+
+#name 2 "NAMEPREFIX Charged Earth"
+#descr 2 "The caster charges the entire battlefield with a surge of electrical energy. Everyone on the battlefield that cannot escape the surface will suffer a minor jolt."
+
+
+#scalingset ""
+#end
+

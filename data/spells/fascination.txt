@@ -58,7 +58,7 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 4
+#pathlevel 5
 #explspr 10207
 #sound 42
 #fatiguecost 200
@@ -77,6 +77,7 @@
 #descr 64 "The caster tries to project images and scents in the consciousness of everyone on the battlefield. Those affected by the spell will be distracted for a short while and hopefully enable someone to strike the enemy down."
 #details "Those that fail to resist are stunned for a round."
 
+#scalingset ""
 #end
 
 #neweffect "Fascination Battlefield Hostile Only"
@@ -93,9 +94,9 @@
 #scalefatigueexponent 1
 
 #aoe 666
-#power 9
-#maxpower 9
-#pathlevel 5
+#power 8
+#maxpower 8
+#pathlevel 6
 #explspr 10207
 #sound 42
 #fatiguecost 300
@@ -114,6 +115,7 @@
 #descr 64 "The caster tries to project images and scents in the consciousness of all his enemies. Those affected by the spell will be distracted for a short while and hopefully enable someone to strike the enemy down."
 #details "Those that fail to resist are stunned for a round."
 
+#scalingset ""
 #end
 
 
@@ -157,6 +159,8 @@
 
 #fatigueperresearch 0
 #end
+
+
 
 
 

@@ -98,13 +98,13 @@
 
 #nreff 1
 #aoe 666
-#power 7
+#power 8
 #precision 2
-#maxpower 7
-#pathlevel 4
+#maxpower 8
+#pathlevel 6
 #explspr 102787
 #sound 42
-#fatiguecost 200
+#fatiguecost 300
 #range 2023
 #skipchance 50
 
@@ -116,6 +116,7 @@
 #descr 64 "The mage weaves webs around everyone on the entire battlefield, trapping them. Very large or strong beings will not be hindered by the web."
 #details "Str +DRN vs 22 to get free."
 
+#scalingset ""
 #end
 
 
@@ -136,10 +137,10 @@
 #power 9
 #precision 2
 #maxpower 9
-#pathlevel 4
+#pathlevel 7
 #explspr 102787
 #sound 42
-#fatiguecost 300
+#fatiguecost 400
 #range 2023
 #skipchance 70
 
@@ -151,7 +152,10 @@
 #descr 64 "The mage weaves webs around all of his enemies, trapping them. Very large or strong beings will not be hindered by the web."
 #details "Str +DRN vs 22 to get free."
 
+#scalingset ""
 #end
+
+
 
 
 

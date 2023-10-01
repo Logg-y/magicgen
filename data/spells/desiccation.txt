@@ -44,7 +44,7 @@
 #neweffect "Mass Dessication"
 #effect 500
 #damage 250
-#spec 554434688
+#spec 554172544
 #schools 32
 
 -- evo-like, battlefield allowed, scale aoe
@@ -54,8 +54,8 @@
 -- #scalecost 0.6
 
 #aoe 666
-#power 7
-#maxpower 7
+#power 8
+#maxpower 8
 #pathlevel 6
 #explspr 10196
 #sound 23
@@ -69,9 +69,9 @@
 
 #details "Each turn, affected units make a MR check vs 22. Success ends the effect, failure means taking 2d8 fatigue damage and the effect persists."
 
-#namecond effectiveaoe >= 0 1 "NAMEPREFIX Dehydrate"
-#namecond effectiveaoe >= 0 4 "NAMEPREFIX Desiccation"
-#name 128 "NAMEPREFIX Infernal Desiccation"
+#namecond effectiveaoe >= 0 1 "NAMEPREFIX Mass Dehydrate"
+#namecond effectiveaoe >= 0 4 "NAMEPREFIX Mass Desiccation"
+#name 128 "NAMEPREFIX Mass Infernal Desiccation"
 
 #descr 1 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
 #descr 4 "SUBJECT %is% affected with severe dehydration. The affected targets become gradually more exhausted and may become unconscious."
@@ -83,6 +83,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration"
 
 
+#scalingset ""
 #end
+
 
 

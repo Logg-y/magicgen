@@ -189,13 +189,13 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
+#scalerate 166.5
 -- #scalecost 0.6
 
 #aoe 666
 #power 8
 #maxpower 8
-#pathlevel 6
+#pathlevel 7
 #explspr 10122
 #sound 31
 #fatiguecost 200
@@ -209,7 +209,12 @@
 
 #name 32 "NAMEPREFIX Bone Grinding"
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
+#scalingset "evo"
+#fatigueperresearch 0
+#scalefatigueexponent 0.0
+#pathperresearch 0.0
 #end
+
 
 
 

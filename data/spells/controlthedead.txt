@@ -40,8 +40,8 @@
 #maxpower 8
 #precision 0
 #range 5020
-#pathlevel 6
-#fatiguecost 300
+#pathlevel 7
+#fatiguecost 400
 #explspr 10255
 #sound 41
 #paths 32
@@ -59,4 +59,7 @@
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of undead control"
+#scalingset ""
 #end
+
+

@@ -59,12 +59,12 @@
 #scalerate 1.5
 
 #aoe 666
-#power 7
-#pathlevel 4
-#maxpower 7
+#power 8
+#pathlevel 6
+#maxpower 8
 #explspr 10189
 #sound 31
-#fatiguecost 200
+#fatiguecost 300
 #range 5020
 
 #paths nb
@@ -90,6 +90,7 @@
 #namecond range < 10 64 "NAMEPREFIX touch of entanglement"
 
 #scalefatigueexponent 1.2
+#scalingset ""
 #end
 
 #neweffect "Entangle Battlefield Hostile Only"
@@ -105,11 +106,11 @@
 
 #aoe 666
 #power 9
-#pathlevel 5
+#pathlevel 7
 #maxpower 9
 #explspr 10189
 #sound 31
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 
 #skipchance 70
@@ -129,7 +130,10 @@
 #descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and attempt to entangle all of the caster's enemies."
 
 #scalefatigueexponent 1.2
+#scalingset ""
 #end
+
+
 
 
 
