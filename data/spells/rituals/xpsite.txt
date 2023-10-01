@@ -12,7 +12,7 @@
 #spelltype 2
 #aoe 0
 #power 4
-#scalerate 1
+
 #name 2 "Create Illusions"
 #name 32 "Raise Troops"
 #end
@@ -28,7 +28,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 2000
-#scalefatiguemult 100
+
 #schools 32
 
 #ainocast 1
@@ -37,7 +37,7 @@
 #unique 1
 
 #nextspell "XP Site Permanent"
-#scalerate 3
+
 
 #basescale 10
 

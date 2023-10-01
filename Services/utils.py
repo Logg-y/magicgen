@@ -192,3 +192,9 @@ def addPermanentSpellEffect(path: int, effectid: int):
         permanent_slot_spells_by_path[path] = []
     if effectid not in permanent_slot_spells_by_path[path]:
         permanent_slot_spells_by_path[path].append(effectid)
+
+def unpackIllwinterScaling(val: int, pathlevel: int) -> int:
+    "Unpack Illwinter's scaling, eg 2001 = 1 plus 2 per caster level"
+    scaling = ((val // 1000) * pathlevel)
+    static = val % 1000
+    return scaling + static

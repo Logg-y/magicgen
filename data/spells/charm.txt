@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 
 #aoe 4
 #power 7
@@ -39,8 +39,8 @@
 #namecond range < 10 64 "NAMEPREFIX charming touch"
 #namecond range < 10 b "NAMEPREFIX hellbinding touch"
 
-#scalefatiguemult 2
-#scalefatigueexponent 1.2
+
+
 #end
 
 #neweffect "Charm Gemless"
@@ -53,8 +53,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.0
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -85,7 +85,7 @@
 #namecond range < 10 b "NAMEPREFIX hellbinding touch"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -121,8 +121,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.51
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 1
@@ -156,7 +156,7 @@
 #namecond range < 10 128 "NAMEPREFIX touch of temptation"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

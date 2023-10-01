@@ -20,7 +20,7 @@
 #details "Generates 2d6 earth gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Earthgengem 3d6"
@@ -45,7 +45,7 @@
 #details "Generates 3d6 earth gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 -- This is basically eternal pyre kinda power
@@ -71,7 +71,7 @@
 -- #details "Generates 1d6 fire gems per month, so long as there is a friendly province that is not under siege."
 -- 
 -- #spelltype 4
--- #scalerate 0
+-- 
 -- #end
 
 #neweffect "Earthgengem 9d6"
@@ -96,7 +96,7 @@
 #details "Generates 9d6 earth gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Earthgengem 12d6"
@@ -121,5 +121,5 @@
 #details "Generates 12d6 earth gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end

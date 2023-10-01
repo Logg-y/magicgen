@@ -97,15 +97,15 @@
 #paths 64
 #secondarypaths 64
 
---#scalefatigueexponent 0.5
---#scalefatiguemult 5
+--
+--
 
 #name 64 "$Send$ NAMEPREFIX Wolves"
 #descr 64 "Summons a pack of wolves to attack distant lands."
 
 #spelltype 20
 
-#scalerate 7
+
 #end
 
 

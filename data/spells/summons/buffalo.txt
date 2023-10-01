@@ -99,8 +99,8 @@
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 30
+
+
 
 #name 64 "$Send$ NAMEPREFIX Buffalo"
 #descr 64 "The caster summons ARTICLE buffalo to attack a distant land. Buffalo are large and trample enemies, but are rather vulnerable to magic."
@@ -108,7 +108,7 @@
 
 #spelltype 20
 
-#scalerate 3
+
 #end
 
 

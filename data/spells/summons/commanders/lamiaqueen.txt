@@ -29,11 +29,11 @@
 #descr 32 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 #descr 64 "The caster summons ARTICLE %Lamia Queen% to join him in battle. The %Lamia Queen% will leave once the battle is over."
 
-#scalefatiguemult 60
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent 0
+
+
 #scalingset ""
 #fatigueperresearch 0
 #pathperresearch 0.4
@@ -50,9 +50,9 @@
 #pathlevel 2
 #fatiguecost 2500
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 40
@@ -71,7 +71,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

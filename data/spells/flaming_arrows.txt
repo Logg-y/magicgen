@@ -7,9 +7,9 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 7
-#scalefatigueexponent 1.3
--- #scalecost 1.1
+
+
+-- 
 
 #aoe 1
 #power 1

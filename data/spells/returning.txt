@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 2
@@ -52,8 +52,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.0
--- #scalecost 1.5
+
+-- 
 #range 5020
 
 #aoe 4
@@ -91,8 +91,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 1.5
+
+-- 
 #range 5020
 
 #aoe 0
@@ -119,7 +119,7 @@
 
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

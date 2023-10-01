@@ -79,7 +79,7 @@
 #secondarypaths fa
 #secondarypathchance 20
 
-#scalefatigueexponent 0.2
+
 
 #name 1 "NAMEPREFIX Parching Gale"
 #name b "NAMEPREFIX Parching Gale"
@@ -90,8 +90,8 @@
 #nextspell "Parching Wind Fatigue"
 
 #spelltype 42
-#scalerate 3
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -116,7 +116,7 @@
 #secondarypaths fa
 #secondarypathchance 20
 
-#scalefatigueexponent 0
+
 
 #name 1 "NAMEPREFIX Parching Wind"
 #name b "NAMEPREFIX Parching Wind"
@@ -127,8 +127,8 @@
 #nextspell "Parching Wind Fatigue"
 
 #spelltype 42
-#scalerate 0.4
--- #scalecost 0.3
+
+-- 
 #schools 4
 #fatigueperresearch 0
 #end
@@ -163,8 +163,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 

@@ -38,8 +38,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 3
 #power 5
@@ -76,8 +76,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 1.1
+
+-- 
 
 #aoe 0
 #power 5
@@ -101,7 +101,7 @@
 
 #nextspell "Imprisonment Kill Living"
 
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
@@ -120,8 +120,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 666
 #power 9

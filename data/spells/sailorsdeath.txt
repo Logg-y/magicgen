@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
--- #scalecost 1.6
+
+-- 
 
 #aoe 4
 #power 2
@@ -48,7 +48,7 @@
 #namecond range < 10 b "NAMEPREFIX Touch of Suffocation"
 #namecond range < 10 32 "NAMEPREFIX Touch of Suffocation"
 
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -62,8 +62,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.3
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 2
@@ -101,7 +101,7 @@
 #namecond range < 10 2 "NAMEPREFIX Touch of Suffocation"
 #namecond range < 10 32 "NAMEPREFIX Touch of Suffocation"
 
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
@@ -117,8 +117,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
 #power 8

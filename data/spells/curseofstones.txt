@@ -9,8 +9,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power -2
@@ -36,7 +36,7 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
-#scalefatigueexponent 1.2
+
 #maxpower 3
 #pathperresearch 0.4
 #end
@@ -52,15 +52,15 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
-#pathlevel 6
+#pathlevel 7
 #explspr 10270
 #sound 31
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 
 #paths eb
@@ -79,7 +79,7 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
-#scalefatigueexponent 1.2
+
 #maxpower 8
 #scalingset ""
 #end
@@ -94,15 +94,15 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
-#pathlevel 6
+#pathlevel 7
 #explspr 10270
 #sound 31
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 
 #paths 8
@@ -119,11 +119,9 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
-#scalefatigueexponent 1.2
+
 #maxpower 8
 #scalingset ""
 #end
-
-
 
 

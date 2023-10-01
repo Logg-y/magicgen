@@ -101,8 +101,8 @@
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
+
+
 
 #name 64 "$Send$ NAMEPREFIX %Leogryph%"
 #descr 64 "The caster summons ARTICLE %leogryph% to attack a distant land. The leogryph is cross between a lion and eagle but cannot fly, however it has a considerably greater resistance to magic than regular lions."
@@ -110,7 +110,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

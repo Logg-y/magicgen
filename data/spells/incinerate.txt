@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
--- #scalecost 0.6
+
+-- 
 
 #aoe 3
 #power 5
@@ -33,7 +33,7 @@
 #namecond range < 10 1 "NAMEPREFIX touch of incineration"
 #namecond range < 10 128 "NAMEPREFIX touch of incineration"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -47,8 +47,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.4
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 4
@@ -72,7 +72,7 @@
 #namecond range < 10 1 "NAMEPREFIX touch of incineration"
 #namecond range < 10 128 "NAMEPREFIX touch of incineration"
 
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end

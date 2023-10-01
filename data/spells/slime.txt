@@ -9,8 +9,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 1
@@ -35,7 +35,7 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 
-#scalefatigueexponent 1.2
+
 #end
 
 
@@ -49,8 +49,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 1
@@ -73,7 +73,7 @@
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
-#scalefatigueexponent 1.4
+
 #end
 
 
@@ -86,8 +86,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 666
@@ -111,7 +111,7 @@
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
-#scalefatigueexponent 1.4
+
 #scalingset ""
 #end
 
@@ -124,8 +124,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 666
@@ -149,7 +149,7 @@
 
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
-#scalefatigueexponent 1.4
+
 #scalingset ""
 #end
 

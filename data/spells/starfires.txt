@@ -8,8 +8,8 @@
 
 #spelltype 18
 
-#scalerate 1
--- #scalecost 0.6
+
+-- 
 
 #nreff 1001
 #aoe 0

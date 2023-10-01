@@ -97,15 +97,15 @@
 #paths 1
 #secondarypaths 1
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
+
+
 
 #name 1 "$Send$ NAMEPREFIX Fire Ants"
 #descr 1 "Summons ARTICLE fire %ant% to attack a distant province. Fire ants are extremely large ants with a poisonous stinger."
 
 #spelltype 20
 
-#scalerate 2.0
+
 #end
 
 

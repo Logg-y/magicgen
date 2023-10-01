@@ -98,10 +98,10 @@
 
 #spelltype 20
 
-#scalerate 2.5
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 22
+
+
+
 #end
 
 

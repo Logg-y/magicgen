@@ -102,8 +102,8 @@
 #paths 16
 #secondarypaths 16
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 10
+
+
 #newunit "Greater Otherness"
 
 #name 16 "$Send$ NAMEPREFIX greater %otherness%"
@@ -111,7 +111,7 @@
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

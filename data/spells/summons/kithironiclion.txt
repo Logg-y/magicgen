@@ -100,10 +100,10 @@
 
 #spelltype 20
 
-#scalerate 4
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 45
+
+
+
 #end
 
 

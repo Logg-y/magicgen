@@ -7,10 +7,10 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
--- #scalecost 1
 
-#scalefatigueexponent 0.2
+-- 
+
+
 #casttime 25
 #aoe 1
 #power 1
@@ -90,10 +90,10 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
--- #scalecost 1
 
-#scalefatigueexponent 0.2
+-- 
+
+
 #casttime 25
 #aoe 1
 #power 3
@@ -135,10 +135,10 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
--- #scalecost 1
 
-#scalefatigueexponent 0.2
+-- 
+
+
 #casttime 25
 #aoe 1
 #power 0
@@ -196,10 +196,10 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
--- #scalecost 1
 
-#scalefatigueexponent 0.2
+-- 
+
+
 #casttime 15
 #aoe 1
 #power 0

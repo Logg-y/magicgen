@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.6
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power -1
@@ -43,7 +43,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX warping $mist$"
 #namecond effect > 1000 8 "NAMEPREFIX warping $mist$"
 #namecond effect > 1000 b "NAMEPREFIX warping $mist$"
-#scalefatigueexponent -1
+
 #pathperresearch 0.2
 #end
 
@@ -58,9 +58,9 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.25
-#scalefatiguemult 0
--- #scalecost 1.6
+
+
+-- 
 
 #aoe 1
 #power 3
@@ -95,7 +95,7 @@
 #namecond effect > 1000 8 "NAMEPREFIX sundering $mist$"
 #namecond effect > 1000 b "NAMEPREFIX sundering $mist$"
 
-#scalefatigueexponent 0
+
 #pathperresearch 0.33
 #end
 

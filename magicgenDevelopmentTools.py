@@ -186,20 +186,14 @@ def scalingTool():
     ]
 
     scaleparam_col = [
-        [sg.Text("scalerate: ", size=(15, 1)),
-         sg.InputText("", k="-scalerate-", size=(7, 1))],
         [sg.Text("minpower: ", size=(15, 1)),
          sg.InputText("", k="-power-", size=(7, 1))],
         [sg.Text("maxpower: ", size=(15, 1)),
          sg.InputText("", k="-maxpower-", size=(7, 1))],
-        [sg.Text("scalecost: ", size=(15, 1)),
-         sg.InputText("", k="-scalecost-", size=(7, 1))],
         [sg.Text("pathperresearch: ", size=(15, 1)),
          sg.InputText("", k="-pathperresearch-", size=(7, 1))],
-        [sg.Text("scalefatigueexponent: ", size=(15, 1)),
-         sg.InputText("", k="-scalefatigueexponent-", size=(7, 1))],
-        [sg.Text("scalefatiguemult: ", size=(15, 1)),
-         sg.InputText("", k="-scalefatiguemult-", size=(7, 1))],
+        [sg.Text("fatigueperextraeffect: ", size=(15, 1)),
+         sg.InputText("", k="-fatigueperextraeffect-", size=(7, 1))],
         [sg.Text("fatigueperresearch: ", size=(15, 1)),
          sg.InputText("", k="-fatigueperresearch-", size=(7, 1))]
     ]
@@ -234,7 +228,7 @@ def scalingTool():
     #window["-bulkeditlist-"].expand(True, False, False)
 
     attribs_to_copy = ["aoe", "damage", "nreff", "effect", "maxbounces", "pathlevel", "fatiguecost",
-                       "scalerate", "power", "maxpower", "scalecost", "pathperresearch", "scalefatigueexponent", "scalefatiguemult", "fatigueperresearch"]
+                       "power", "maxpower", "pathperresearch", "fatigueperextraeffect", "fatigueperresearch"]
     str_attribs_to_copy = ["scalingset"]
     flags = {"aoe":32, "damage":64, "maxbounces":128, "effect":256, "nreff":16}
 
@@ -253,8 +247,8 @@ def scalingTool():
     lastupdate = -1
     fakespell = None
     bulkEditSelectedAttributes = {"damage":False, "effect":True, "spec":False, "power":False, "maxpower":False,
-                                  "fatiguecost":True, "scalerate":True, "nreff":True, "pathlevel":False, "scalecost":True,
-                                  "scalefatigueexponent":True, "scalefatiguemult":True, "schools":False, "scalerate":True,
+                                  "fatiguecost":True, "nreff":True, "pathlevel":False,
+                                  "fatigueperextraeffect":True, "schools":False,
                                   "aoe":False}
     bulkEditCheckboxIndexesToEffectNames = {}
     while True:

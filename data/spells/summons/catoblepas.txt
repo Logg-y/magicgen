@@ -23,7 +23,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 1
 #skipchance 60
 
@@ -61,8 +61,8 @@
 
 -- Death gaze doesn't really get changed if you become small or anything like that
 #nocostreduction 1
-#scalefatiguemult 169.0
-#scalerate 0.4
+
+
 #end
 
 
@@ -119,10 +119,10 @@
 
 #spelltype 20
 
-#scalerate 1
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 320
+
+
+
 #end
 
 

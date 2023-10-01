@@ -23,8 +23,8 @@
 #skipchance 82
 
 
-#scalefatiguemult 42.0
-#scalerate 1.0
+
+
 #end
 
 
@@ -77,15 +77,15 @@
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 70
+
+
 
 #name 128 "Send NAMEPREFIX Slaves of Belphegor"
 #descr 128 "$BLOOD_INTRO$, the caster bargains for a group of Belphegor's human slaves to attack a distant province."
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

@@ -8,9 +8,9 @@
 
 #spelltype 18
 
-#scalerate 3
-#scalefatigueexponent 0
--- #scalecost 0.6
+
+
+-- 
 
 #nreff 3001
 #aoe 0

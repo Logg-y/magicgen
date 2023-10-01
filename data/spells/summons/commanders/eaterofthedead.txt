@@ -26,5 +26,5 @@
 
 #details "Upon eating 51 corpses, the eater grows in power and gains a Touch of Leprosy.\nUpon eating 101 corpses, the eater grows in power again and gains a second Crush attack.\nUpon eating 151 corpses, the eater has a 20% chance per turn to transform into the Unfettered, become a commander, and become owned by Special Monsters, immediately attacking the province. Should the Unfettered become controlled by a player, it has a 20% chance per turn to break free.\nWhen resummoned, it always appears in its base form and loses all past corpse eating bonuses."
 
-#scalerate 0
+
 #end

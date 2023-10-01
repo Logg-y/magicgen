@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.3
+
 
 #aoe 0
 #power 2
@@ -60,7 +60,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.3
+
 
 #aoe 666
 #power 8

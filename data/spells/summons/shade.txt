@@ -21,7 +21,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 1
 #skipchance 98
 #end
@@ -72,12 +72,12 @@
 #name 32 "NAMEPREFIX Shade Attack"
 #descr 32 "The caster pulls ARTICLE %being% out of the shade lands and sends it to attack a hostile commander in a distant province. These shades are ethereal and can permenantly weaken their victims."
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 50
+
+
 
 #spelltype 4
 
-#scalerate 0.7
+
 #end
 
 
@@ -95,8 +95,8 @@
 
 #skipchance 99.86666666666666
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 30
+
+
 
 #paths 32
 #secondarypaths 32
@@ -106,7 +106,7 @@
 
 #spelltype 20
 
-#scalerate 2.0
+
 #end
 
 

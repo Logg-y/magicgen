@@ -20,5 +20,5 @@
 #details "Hostile provinces in the caster's dominion have 5% of their units cursed per point of dominion. Every turn, there is a 50% chance per province that 1% of units there also become cursed."
 
 #spelltype 4
-#scalerate 0
+
 #end

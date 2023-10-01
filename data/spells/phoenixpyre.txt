@@ -9,7 +9,7 @@
 #name 128 "Infernal Resistance"
 #spelltype 41
 
-#scalerate 0
+
 #end
 
 #neweffect "Phoenix Pyre"
@@ -21,8 +21,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #nextspell "PPyre fire res"
 
@@ -69,8 +69,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #nextspell "PPyre fire res"
 

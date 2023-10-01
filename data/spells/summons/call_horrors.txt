@@ -23,11 +23,11 @@
 
 #spelltype 528
 
-#scalerate 0.16
+
 #skipchance 20
 #scalingset "battlesummon"
 #fatigueperresearch 0
-#scalefatigueexponent 0.0
+
 #pathperresearch 0.28
 #end
 
@@ -61,10 +61,10 @@
 #spelltype 528
 
 #skipchance 20
-#scalerate 0.16
+
 #scalingset "battlesummon"
 #fatigueperresearch 0
-#scalefatigueexponent 0.0
+
 #pathperresearch 0.28
 #end
 
@@ -83,8 +83,8 @@
 #fatiguecost 2000
 #schools 16
 
-#scalefatigueexponent 0.7
-#scalefatiguemult 200
+
+
 
 #paths 128
 #secondarypaths 16
@@ -96,7 +96,7 @@
 #spelltype 20
 #skipchance 73.33333333333333
 
-#scalerate 2.0
+
 #end
 
 
@@ -114,8 +114,8 @@
 #fatiguecost 2500
 #schools 16
 
-#scalefatigueexponent 0.7
-#scalefatiguemult 200
+
+
 
 #paths 128
 #secondarypaths 16
@@ -127,7 +127,7 @@
 #skipchance 73.33333333333333
 #spelltype 20
 
-#scalerate 2.0
+
 #end
 
 

@@ -58,7 +58,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 1
+
 #pathlevel 2
 
 #priority 1
@@ -66,7 +66,7 @@
 #namecond range < 10 128 "NAMEPREFIX Flame Eruption"
 #descrcond range < 10 1 "The caster's touch radiates searing heat which scorches those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the heat of Inferno, producing scorching heat that harms those close to the caster."
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.5
 #end
 
@@ -103,8 +103,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.0
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -112,7 +112,7 @@
 #namecond range < 10 128 "NAMEPREFIX Burst of Infernal Flames"
 #descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming anyone nearby."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming anyone nearby."
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -123,7 +123,7 @@
 #schools -1
 -- evo, scale aoe
 #spelltype 34
-#scalerate 0
+
 #explspr 10257
 #aoe 10
 #power 1
@@ -164,8 +164,8 @@
 
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 66
-#scalerate 2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -186,7 +186,7 @@
 #maxpower 14
 #precision -8
 #nreff 4
-#scalefatigueexponent 1.2
+
 #range 100
 #pathlevel 3
 #fatiguecost 100
@@ -201,8 +201,8 @@
 
 -- evo-like, battlefield allowed, scale dmg
 #spelltype 18
-#scalerate 1.0
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #end
@@ -242,8 +242,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -280,8 +280,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -318,8 +318,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #scalingset ""
 #end
@@ -378,7 +378,7 @@
 
 #power 7
 #maxpower 18
-#scalerate 5.0
+
 #pathlevel 5
 #end
 

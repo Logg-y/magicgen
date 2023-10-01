@@ -101,15 +101,15 @@
 #paths 64
 #secondarypaths 64
 
---#scalefatigueexponent 0.5
--- #scalefatiguemult 30
+--
+-- 
 
 #name 64 "$Send$ NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag% to attack a distant province. Sea stags are the underwater equivalent of deer: they attack with their antlers."
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

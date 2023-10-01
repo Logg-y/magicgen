@@ -9,9 +9,9 @@
 #pathlevel 5
 #fatiguecost 7700
 #chassisvalue 2000
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 55
@@ -26,5 +26,5 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end

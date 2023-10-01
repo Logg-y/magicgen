@@ -31,7 +31,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 2000
-#scalefatiguemult 150
+
 #schools -1
 
 
@@ -46,7 +46,7 @@
 
 -- ritual, power scales effect number!
 #spelltype 260
-#scalerate 5
+
 
 #end
 
@@ -60,7 +60,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#scalefatiguemult 150
+
 #schools 18
 
 
@@ -78,7 +78,7 @@
 #nextspell "Permanent effect true ethereal"
 
 #spelltype 4
-#scalerate 5
+
 
 #end
 
@@ -148,7 +148,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 150
+
 #schools -1
 
 
@@ -164,7 +164,7 @@
 #details "Applies EFFECTNUMBER_5XX points of the Wish strength buff to the recipient. Each point grants +5 max HP, +2 strength, +0.5 attack and defence skills, and +0.5 precision. Fractional bonuses are rounded down. Multiple castings of this spell are not cumulative."
 
 #skipchance 92
-#scalerate 1
+
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -181,7 +181,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 150
+
 #schools 18
 
 
@@ -198,7 +198,7 @@
 
 #skipchance 80
 #permanentslotusage 291
-#scalerate 1
+
 
 -- ritual, power scales effect number!
 #spelltype 4
@@ -244,7 +244,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 800
-#scalefatiguemult 70
+
 #schools 18
 
 
@@ -263,7 +263,7 @@
 
 #skipchance 85
 #permanentslotusage 452
-#scalerate 5
+
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -279,7 +279,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
-#scalefatiguemult 30
+
 #schools -1
 
 
@@ -305,7 +305,7 @@
 #descr 128 "$BLOOD_INTRO$, the recipient becomes faster at weaving magic and casting spells."
 #details "The recipient permanently casts combat spells EFFECTNUMBER_5XX percent faster. Multiple castings of this spell are not cumulative. Recipients of this spell must be a commander."
 
-#scalerate 5
+
 #skipchance 90
 
 -- ritual, power scales effect number!
@@ -322,7 +322,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
-#scalefatiguemult 30
+
 #schools 18
 
 
@@ -348,7 +348,7 @@
 #descr 128 "$BLOOD_INTRO$, the recipient becomes faster at weaving magic and casting spells."
 #details "The recipient permanently casts combat spells NEXTSPELL_EFFECTNUMBER_5XX percent faster. Multiple castings of this spell are not cumulative. The receipient of this spell must be a commander."
 
-#scalerate 5
+
 #skipchance 90
 #permanentslotusage 613
 
@@ -367,7 +367,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
-#scalefatiguemult 300
+
 #schools -1
 
 
@@ -379,7 +379,7 @@
 #descr 1 "Through the consumption of magical gems, the caster permanently radiates an aura of inspiration that causes troops under his command to be less likely to rout."
 #details "The caster permanently gains inspirational +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
-#scalerate 0.5
+
 #skipchance 90
 
 -- ritual, power scales effect number!
@@ -397,7 +397,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
-#scalefatiguemult 300
+
 #schools 18
 
 
@@ -409,7 +409,7 @@
 #descr 1 "Through the consumption of magical gems, the recipient permanently radiates an aura of inspiration that causes troops under his command to be less likely to rout."
 #details "The recipient permanently gains inspirational +NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. This recipient of this spell must be a commander."
 
-#scalerate 0.5
+
 #skipchance 90
 #permanentslotusage 368
 
@@ -427,7 +427,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 300
-#scalefatiguemult 200
+
 #schools -1
 
 
@@ -439,7 +439,7 @@
 #descr 64 "Through the consumption of magical gems, the caster permanently gains a connection to animals of all kinds. He can inspire them to become braver and less likely to rout in battle."
 #details "The caster permanently gains beastmaster +EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
-#scalerate 0.6
+
 #skipchance 90
 
 -- ritual, power scales effect number!
@@ -457,7 +457,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 300
-#scalefatiguemult 200
+
 #schools 18
 
 
@@ -469,7 +469,7 @@
 #descr 64 "Through the consumption of magical gems, the recipient permanently gains a connection to animals of all kinds. He can inspire them to become braver and less likely to rout in battle."
 #details "The recipient permanently gains beastmaster +NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. The recipient of this spell must be a commander."
 
-#scalerate 0.6
+
 #skipchance 90
 #permanentslotusage 369
 
@@ -487,7 +487,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1800
-#scalefatiguemult 1500
+
 #schools 18
 
 
@@ -499,7 +499,7 @@
 #descr 64 "Through the consumption of magical gems, the caster permanently gains an understanding of how to heal the wounded with magic."
 #details "The caster permanently gains healer EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative."
 
-#scalerate 1
+
 #skipchance 90
 #permanentslotusage 354
 
@@ -517,7 +517,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#scalefatiguemult 100
+
 #schools -1
 
 
@@ -531,7 +531,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster permanently gains an understanding of how to cruelly inflict more afflictions upon foes he wounds."
 #details "Creatures wounded by the caster are twice as likely to suffer an affliction. Multiple castings of this spell are not cumulative."
 
-#scalerate 1
+
 #skipchance 90
 
 -- ritual
@@ -549,7 +549,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#scalefatiguemult 100
+
 #schools 18
 
 
@@ -563,7 +563,7 @@
 #descr 128 "$BLOOD_INTRO$, the recipient permanently gains an understanding of how to cruelly inflict more afflictions upon foes he wounds."
 #details "Creatures wounded by the recipient are twice as likely to suffer an affliction. Multiple castings of this spell are not cumulative. The recipient must be a commander."
 
-#scalerate 1
+
 #skipchance 95
 #permanentslotusage 301
 
@@ -592,7 +592,7 @@
 #descr 32 "Through the consumption of magical gems, the caster permanently gains an understanding of how to raise living beings he kills as soulless."
 #details "Creatures killed by the caster become reanimated as soulless. This is a permanent effect and multiple castings of this spell are not cumulative."
 
-#scalerate 0
+
 #skipchance 90
 -- ritual
 #spelltype 4
@@ -620,7 +620,7 @@
 #descr 32 "Through the consumption of magical gems, the recipient permanently gains an understanding of how to raise living beings he kills as soulless."
 #details "Creatures killed by the recipient become reanimated as soulless. This does not offer the recipient any ability to command the undead, which may cause any raised soulless to rapidly crumble. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 0
+
 #skipchance 50
 #permanentslotusage 514
 
@@ -638,7 +638,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 180
+
 #schools 18
 
 
@@ -652,7 +652,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster becomes tireless and very resistant to fatigue."
 #details "The caster permanently gains +EFFECTNUMBER_5XX reinvigoration. Multiple castings of this spell are not cumulative."
 
-#scalerate 1
+
 #skipchance 90
 #permanentslotusage 117
 
@@ -681,7 +681,7 @@
 #descr 16 "Through the consumption of magical gems, the caster permanently projects an astral barrier around him. This prevents most creatures around him from using any means of teleportation by warping space."
 #details "The caster permanently gains the Astral Fetters ability. This prevents all teleportation and plane banishing effects in battle, but has no effect on creatures with Void Sanity. Multiple castings of this spell are not cumulative."
 
-#scalerate 0
+
 #skipchance 50
 #permanentslotusage 563
 
@@ -711,7 +711,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster's body gains an unbelievable ability to heal otherwise permanent afflictions and ailments. This ability does however fail to function if the caster is old."
 #details "The caster permanently gains Recuperation."
 
-#scalerate 0
+
 #skipchance 80
 #permanentslotusage 568
 
@@ -729,7 +729,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 40
+
 #schools 18
 
 
@@ -741,7 +741,7 @@
 #descr 32 "Through the consumption of magical gems, the caster permanently gains the ability to passively reanimate corpses in his current province as soulless."
 #details "Each turn, the caster passively reanimates up to EFFECTNUMBER_5XX corpses in his current province. Multiple castings of this spell are not cumulative."
 
-#scalerate 5
+
 #skipchance 80
 #permanentslotusage 466
 
@@ -770,7 +770,7 @@
 #descr 2 "Through the consumption of magical gems, the caster permanently gains an understanding of storms and their turbulent effects on air flow."
 #details "The caster permanently gains Storm Immunity, allowing flight in storms, removing the precision penalty, and preventing the double fatigue cost usually incurred by flying in rain or snow."
 
-#scalerate 0
+
 #skipchance 92
 #permanentslotusage 175
 
@@ -787,7 +787,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 700
-#scalefatiguemult 20
+
 #schools 18
 
 
@@ -801,7 +801,7 @@
 #descr 4 "Through the consumption of magical gems, the caster gains the ability to support a limited number of air breathing creatures underwater."
 #details "The caster pemanently gains Gift of Water Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
 
-#scalerate 5
+
 #skipchance 50
 #permanentslotusage 111
 
@@ -821,7 +821,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 20
+
 #schools 18
 
 
@@ -833,7 +833,7 @@
 #descr 4 "Through the consumption of magical gems, the caster gains the ability to support a limited number of water breathing creatures on land."
 #details "The caster pemanently gains Gift of Air Breathing for EFFECTNUMBER_5XX size points. Multiple castings of this spell are not cumulative."
 
-#scalerate 5
+
 #skipchance 50
 #permanentslotusage 130
 
@@ -852,7 +852,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 300
-#scalefatiguemult 20
+
 #schools 18
 
 
@@ -864,7 +864,7 @@
 #descr 8 "Through the consumption of magical gems, the caster gains the ability to greatly damage stone structures in his vicinity."
 #details "The caster pemanently gains +EFFECTNUMBER_5XX siege bonus. Multiple castings of this spell are not cumulative."
 
-#scalerate 5
+
 #skipchance 92
 #permanentslotusage 125
 
@@ -893,7 +893,7 @@
 #descr 8 "Through the consumption of magical gems, the caster permanently gains great insights into construction that allow him to build bigger and mightier forts than would otherwise be possible."
 #details "The caster permanently becomes a Mason."
 
-#scalerate 0
+
 #skipchance 80
 #permanentslotusage 594
 
@@ -921,7 +921,7 @@
 #descr 16 "Through the consumption of magical gems, the caster's presence permanently projects a magical power that attempts to unravel all illusions."
 #details "The caster permanently gains Disbelieve 100, causing them to very rapidly hit neary squares with a MRN effect that does 999 damage to illusory creatures. Multiple casts of this spell are not cumulative."
 
-#scalerate 0
+
 #skipchance 85
 #permanentslotusage 295
 
@@ -938,7 +938,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1100
-#scalefatiguemult 500
+
 #schools 32
 
 -- esdnb
@@ -972,7 +972,7 @@
 
 #details "The caster permanently gains EFFECTNUMBER_5XX arm(s), to a maximum of 6 arms total. Multiple castings of this spell are not cumulative."
 
-#scalerate 1
+
 #skipchance 90
 #permanentslotusage 361
 
@@ -1039,7 +1039,7 @@
 #details "The caster gains the ability to cast spells of all research levels off script in combat, but may not be scripted to cast any of them. This has no effect on ritual spells. The caster also gains 3 horror marks, if they had less than that number beforehand."
 #nextspell "Offscript Spells Horror Marks"
 
-#scalerate 1
+
 #skipchance 80
 #permanentslotusage 388
 
@@ -1058,7 +1058,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 200
+
 #schools -1
 
 
@@ -1070,7 +1070,7 @@
 #descr 128 "$BLOOD_INTRO$, the caster experiences a surge of energy upon spilling the blood of his foes."
 #details "The caster pemanently gains EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to reinvigoration and defence skill. Multiple castings of this spell are not cumulative."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1088,7 +1088,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 200
+
 #schools 18
 
 
@@ -1100,7 +1100,7 @@
 #descr 128 "$BLOOD_INTRO$, the recipient experiences a surge of energy upon spilling the blood of his foes."
 #details "The recipient pemanently gains NEXTSPELL_EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are NEXTSPELL_EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to reinvigoration and defence skill. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 #permanentslotusage 554
 
@@ -1119,7 +1119,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+
 #schools -1
 
 
@@ -1131,7 +1131,7 @@
 #descr 4 "The recipient's weapons become permanently coated in magical frost, chilling those they strike."
 #details "All of the recipient's attacks except natural ranged weapons and AoE attacks inflict an additional NEXTSPELL_EFFECTNUMBER_5XX magical cold damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1.5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1150,7 +1150,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+
 #schools 8
 
 
@@ -1163,7 +1163,7 @@
 #descr 4 "The recipient's weapons are empowered and become permanently coated in magical frost, chilling those they strike."
 #details "All of the recipient's attacks except natural ranged weapons and AoE attacks inflict an additional NEXTSPELL_EFFECTNUMBER_5XX magical cold damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1.5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1181,7 +1181,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 100
+
 #schools -1
 
 
@@ -1193,7 +1193,7 @@
 #descr 16 "The recipient of this spell is constantly surrounded by strange energy that causes those attacking in melee to become extremely unlucky in combat."
 #details "The recipient gains fateweaving. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1212,7 +1212,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 100
+
 #schools 32
 
 
@@ -1225,7 +1225,7 @@
 #descr 16 "The recipient of this spell is constantly surrounded by strange energy that causes those attacking in melee to become extremely unlucky in combat."
 #details "The recipient gains fateweaving, with a base penetration bonus of NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1243,7 +1243,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 40.0
+
 #schools -1
 
 
@@ -1255,7 +1255,7 @@
 #descr 32 "The weapons of this spell's recipient are constantly surrounded by deathly energy. Anyone struck by them may have their life force directly wounded by the magical discharge, and may also become diseased."
 #details "The recipient gains death weapons, inflicting EFFECTNUMBER_5XX AN damage and causing disease. Each effect offers a separate MR roll to negate its effects. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1.7
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1274,7 +1274,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 50
+
 #schools 8
 
 
@@ -1287,7 +1287,7 @@
 #descr 32 "The weapons of this spell's recipient are constantly surrounded by deathly energy. Anyone struck by them may have their life force directly wounded by the magical discharge, and may also become diseased."
 #details "The recipient gains death weapons, inflicting NEXTSPELL_EFFECTNUMBER_5XX AN damage and causing disease with all attacks that are not natural ranged weapons or AoE attacks. Each effect offers a separate MR roll to negate its effects. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1305,7 +1305,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 60
+
 #schools -1
 
 
@@ -1317,7 +1317,7 @@
 #descr 32 "The weapons of this spell's recipient are constantly surrounded by deathly energy. Anyone struck by them may begin to rapidly wither and die."
 #details "The recipient gains withering weapons. Upon successfully inflicting damage, all attacks that are not natural ranged weapons or AoE attacks cause the target to make a MR check or start decaying. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1336,7 +1336,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 60
+
 #schools 8
 
 
@@ -1349,7 +1349,7 @@
 #descr 32 "The weapons of this spell's recipient are constantly surrounded by deathly energy. Anyone struck by them may begin to rapidly wither and die."
 #details "The recipient gains withering weapons. Upon successfully inflicting damage, all attacks that are not natural ranged weapons or AoE attacks cause the target to make a MR check or start decaying. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1368,7 +1368,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
-#scalefatiguemult 60
+
 #schools -1
 
 
@@ -1380,7 +1380,7 @@
 #descr 1 "The recipient of this spell is constantly surrounded by searing flames. Anyone attempting to strike him in melee will be scorched by the flames, especially if their weapon is shorter."
 #details "The recipient gains fire shield EFFECTNUMBER_5XX, causing melee attackers to take (EFFECTNUMBER_5XX - their weapon's length) points of AP fire damage upon successfully making a melee atack. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1399,7 +1399,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 800
-#scalefatiguemult 60
+
 #schools 16
 
 
@@ -1413,7 +1413,7 @@
 #descr 1 "The recipient of this spell is constantly surrounded by searing flames. Anyone attempting to strike him in melee will be scorched by the flames, especially if their weapon is shorter."
 #details "The recipient gains fire shield NEXTSPELL_EFFECTNUMBER_5XX, causing melee attackers to take (NEXTSPELL_EFFECTNUMBER_5XX - their weapon's length) points of AP fire damage upon successfully making a melee atack. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1431,7 +1431,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+
 #schools -1
 
 
@@ -1443,7 +1443,7 @@
 #descr 1 "The recipient's weapons are made permenantly ablaze with magical fires, burning those they strike."
 #details "All of the recipient's attacks except natural ranged weapons and AoE attacks inflict an additional EFFECTNUMBER_5XX magical AP fire damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1.5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1462,7 +1462,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 20
+
 #schools 8
 
 
@@ -1476,7 +1476,7 @@
 #descr 1 "The recipient's weapons are set permenantly ablaze with magical fire, burning those they strike."
 #details "All of the recipient's attacks except natural ranged weapons and AoE attacks inflict an additional NEXTSPELL_EFFECTNUMBER_5XX magical AP fire damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1.5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1493,7 +1493,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 20
+
 #schools -1
 
 
@@ -1505,7 +1505,7 @@
 #descr 16 "The recipient becomes permanently shrouded with astral energy. Those attempting to attack in melee may have their minds overloaded with otheworldly energy and become paralysed."
 #details "The recipient permanently gains an astral shield that inflicts 11 + EFFECTNUMBER_5XX - (attacker's weapon length * 2) paralysis damage. Attackers are allowed a MR check to avoid the paralysis. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1524,7 +1524,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
-#scalefatiguemult 20
+
 #schools 16
 
 
@@ -1538,7 +1538,7 @@
 #descr 16 "The recipient becomes permanently shrouded with astral energy. Those attempting to attack in melee may have their minds overloaded with otheworldly energy and become paralysed."
 #details "The recipient permanently gains an astral shield that inflicts 11 + NEXTSPELL_EFFECTNUMBER_5XX - (attacker's weapon length * 2) paralysis damage. Attackers are allowed a MR check to avoid the paralysis. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1556,7 +1556,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 20
+
 #schools -1
 
 
@@ -1568,7 +1568,7 @@
 #descr 64 "The recipient is permanently surrounded by sleeping magic. Enemies that approach may find themselves forced into a deep slumber."
 #details "The recipient permanently gains sleep aura EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1587,7 +1587,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 40
+
 #schools 32
 
 
@@ -1601,7 +1601,7 @@
 #descr 64 "The recipient is permanently surrounded by sleeping magic. Enemies that approach may find themselves forced into a deep slumber."
 #details "The recipient permanently gains sleep aura NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1619,7 +1619,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 40
+
 #schools -1
 
 
@@ -1631,7 +1631,7 @@
 #descr 64 "The recipient becomes permanently able to reform their body when killed. There is a chance that this process may fail, and it is fatiguing for the creature to perform."
 #details "The recipient permanently gains reforming, giving them a EFFECTNUMBER_5XX% chance to reform their body, gaining 6 + openended d6 fatigue in the process. This always fail if they have 100+ fatigue already, or they are soul slayed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1650,7 +1650,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 40
+
 #schools 32
 
 
@@ -1665,7 +1665,7 @@
 #details "The recipient permanently gains reforming, giving them a NEXTSPELL_EFFECTNUMBER_5XX% chance to reform their body, gaining 6 + openended d6 fatigue in the process. This always fails if they have 100+ fatigue already, or they are soul slayed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1682,7 +1682,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 40
+
 #schools -1
 
 
@@ -1698,7 +1698,7 @@
 #descr 8 "The recipient becomes permanently surrounded by a vortex of swirling wind that carries chunks of rock. The rock may shield them from incoming attacks."
 #details "The recipient permanently gains protective force EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1717,7 +1717,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
-#scalefatiguemult 40
+
 #schools 16
 
 
@@ -1736,7 +1736,7 @@
 #details "The recipient permanently gains protective force NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#scalerate 5
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1753,7 +1753,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
-#scalefatiguemult 80
+
 #schools -1
 
 
@@ -1765,7 +1765,7 @@
 #descr 1 "The recipient permenantly gains an aura of splendour which may halt attacking foes in their tracks."
 #details "The recipient permanently gains awe EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1784,7 +1784,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
-#scalefatiguemult 80
+
 #schools 16
 
 
@@ -1799,7 +1799,7 @@
 #details "The recipient permanently gains awe NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1818,7 +1818,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 40
+
 #schools -1
 
 
@@ -1832,7 +1832,7 @@
 #descr 4 "The recipient permenantly gains an aura of acid which harms those that attempt to attack him in melee."
 #details "The recipient permanently gains acid shield EFFECTNUMBER_5XX. Melee attackers take EFFECTNUMBER_5XX - (weapon length * 3) points of AP magical acid damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1851,7 +1851,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
-#scalefatiguemult 40
+
 #schools 16
 
 
@@ -1868,7 +1868,7 @@
 #details "The recipient permanently gains acid shield NEXTSPELL_EFFECTNUMBER_5XX. Melee attackers take NEXTSPELL_EFFECTNUMBER_5XX - (weapon length * 3) points of AP magical acid damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1889,7 +1889,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 700
-#scalefatiguemult 40
+
 #schools -1
 
 
@@ -1901,7 +1901,7 @@
 #descr 4 "The recipient is granted the ability to cover those that attempt to attack him in slime."
 #details "The recipient permanently gains slimer, forcing those that attack him to make a MR check or become slimed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 2
+
 #skipchance 50
 
 -- ritual, power scales effect number!
@@ -1920,7 +1920,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 700
-#scalefatiguemult 40
+
 #schools 16
 
 
@@ -1934,7 +1934,7 @@
 #descr 4 "The recipient is granted the ability to cover those that attempt to attack him in slime."
 #details "The recipient permanently gains slimer, forcing those that attack him to make a MR check or become slimed. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 50
 
 -- ritual, power scales effect number!
@@ -1954,7 +1954,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#scalefatiguemult 80
+
 #schools -1
 
 
@@ -1968,7 +1968,7 @@
 #descr 32 "The recipient becomes permanently surrounded by the dark flames of the underworld. Those attempting to attack him in melee will become burned by the dark fire, and may begin to rapidly wither and die. Due to the nature of the flames, fire resistance offers no protection from this effect."
 #details "The recipient permanently gains banefire shield EFFECTNUMBER_5XX. Those who hit in melee take EFFECTNUMBER_5XX - weapon length points of untyped AP magical damage, and must make a MR check or suffer decay. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -1987,7 +1987,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#scalefatiguemult 80
+
 #schools 16
 
 
@@ -2005,7 +2005,7 @@
 
 
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2024,7 +2024,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 80
+
 #schools -1
 
 
@@ -2036,7 +2036,7 @@
 #descr 2 "The recipient's weapons becomes permanently charged with electricity, which will discharge into those struck."
 #details "The recipient permanently gains thunder weapons. All weapons except natural ranged and AoE attacks will deal an additional 1 capped AN magical shock damage, and 3 AN magical shock fatigue damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2055,7 +2055,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 100
-#scalefatiguemult 80
+
 #schools 8
 
 
@@ -2071,7 +2071,7 @@
 
 
 
-#scalerate 1
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2091,8 +2091,8 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 0
-#scalefatigueexponent 1.5
+
+
 #schools -1
 
 
@@ -2104,7 +2104,7 @@
 #descr 64 "The recipient's weapons becomes permanently poisoned, affecting anyone they successfully wound."
 #details "The recipient permanently gains poison weapons. All weapons except natural ranged and AoE attacks will deal an additional EFFECTNUMBER_5XX AN magical poison damage. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 3
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2123,8 +2123,8 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
-#scalefatiguemult 0
-#scalefatigueexponent 1.5
+
+
 #schools 8
 
 
@@ -2140,7 +2140,7 @@
 
 
 
-#scalerate 3
+
 #skipchance 92
 
 -- ritual, power scales effect number!
@@ -2160,7 +2160,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#scalefatiguemult 0
+
 #schools -1
 
 
@@ -2172,7 +2172,7 @@
 #descr 64 "The recipient becomes protected by plantlife around him. Those attempting to strike him in melee may become entangled in the vines."
 #details "The recipient permanently gains the vine shield's effect of entangling melee attackers unless they fail a MR check. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 3
+
 #skipchance 50
 
 -- ritual, power scales effect number!
@@ -2191,7 +2191,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
-#scalefatiguemult 0
+
 #schools 16
 
 
@@ -2205,7 +2205,7 @@
 #descr 64 "The recipient becomes protected by plantlife around him. Those attempting to strike him in melee may become entangled in the vines."
 #details "The recipient permanently gains the vine shield's effect of entangling melee attackers unless they fail a MR check. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 3
+
 #skipchance 50
 
 -- ritual, power scales effect number!
@@ -2223,7 +2223,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 800
-#scalefatiguemult 0
+
 #schools -1
 
 
@@ -2237,7 +2237,7 @@
 #descr b "$BLOOD_INTRO$, the caster grants a single recipient troll-like blood, allowing them to rapidly regenerate wounds."
 #details "The recipient permanently gains +EFFECTNUMBER_5XX% limited regeneration. This spell has no effect on inanimate beings. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 3
+
 #skipchance 50
 
 -- ritual, power scales effect number!
@@ -2256,7 +2256,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 800
-#scalefatiguemult 0
+
 #schools 16
 
 
@@ -2272,7 +2272,7 @@
 #descr b "$BLOOD_INTRO$, the caster grants a single recipient troll-like blood, allowing them to rapidly regenerate wounds."
 #details "The recipient permanently gains +NEXTSPELL_EFFECTNUMBER_5XX% limited regeneration. This spell has no effect on inanimate beings. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
-#scalerate 3
+
 #skipchance 50
 
 -- ritual, power scales effect number!

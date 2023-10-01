@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -18,7 +18,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -44,7 +44,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -54,7 +54,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -81,7 +81,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -91,7 +91,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -118,7 +118,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -128,7 +128,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -154,7 +154,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -164,7 +164,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -190,7 +190,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -200,7 +200,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 
@@ -226,7 +226,7 @@
 #nreff 1
 #pathlevel 3
 #fatiguecost 200
-#scalefatiguemult 300
+
 #schools 32
 
 #ainocast 1
@@ -236,7 +236,7 @@
 
 #skipchance 96
 
-#scalerate 1
+
 
 #basescale 1
 

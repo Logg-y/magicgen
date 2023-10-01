@@ -8,7 +8,7 @@
 #spelltype 34
 #aoe 9
 #explspr 10297
-#scalerate 0
+
 #power 4
 #maxpower 50
 #name 1 "Spreading Poison"
@@ -61,7 +61,7 @@
 
 -- evo-like, scale dmg
 #spelltype 66
-#scalerate 1
+
 #schools 4
 
 #end
@@ -96,8 +96,8 @@
 
 -- evo-like, scale dmg
 #spelltype 18
-#scalerate 5
-#scalefatigueexponent 1.2
+
+
 #schools 4
 
 #end

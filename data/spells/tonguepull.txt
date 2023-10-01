@@ -6,8 +6,8 @@
 
 #spelltype 66
 
-#scalerate 0
--- #scalecost 1.6
+
+-- 
 #skipchance 0
 
 #aoe 0
@@ -39,9 +39,9 @@
 
 #spelltype 66
 
-#scalerate 2
-#scalefatigueexponent 0
--- #scalecost 1.6
+
+
+-- 
 #skipchance 50
 
 #aoe 0

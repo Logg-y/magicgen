@@ -20,5 +20,5 @@
 #details "In friendly provinces with friendly dominon, gives a free longdead commander that passively reanimates up to 10 corpses in the province as soulless. These longdead cannot move and are destroyed when the enchantment ends. Any individual longdead is also destroyed if friendly dominion leaves its province."
 
 #spelltype 4
-#scalerate 0
+
 #end

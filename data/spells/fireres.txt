@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.4
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 0
@@ -52,8 +52,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.4
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 666
@@ -97,8 +97,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 0
@@ -142,8 +142,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.1
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 666
@@ -187,9 +187,9 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.6
-#scalefatiguemult 3
--- #scalecost 0.7
+
+
+-- 
 
 
 #aoe 0
@@ -221,7 +221,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX fireproof $mist$"
 #namecond effect > 1000 128 "NAMEPREFIX fireproof $mist$"
 
-#scalefatigueexponent 1.5
+
 #end
 
 

@@ -22,7 +22,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 1
 #skipchance 98
 #end
@@ -76,7 +76,7 @@
 
 #spelltype 4
 
-#scalerate 0.7
+
 #end
 
 
@@ -102,9 +102,9 @@
 #descr 64 "The caster calls ARTICLE moose to attack a distant land. Moose are strong and attack with both feet and antlers."
 
 #spelltype 20
-#scalefatiguemult 20
 
-#scalerate 2.0
+
+
 #end
 
 

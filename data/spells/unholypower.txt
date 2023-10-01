@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.8
+
 
 #aoe 0
 #power 2
@@ -35,9 +35,9 @@
 #namecond effect > 1000 f "NAMEPREFIX $mist$ of heroic skill"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal prowess"
 
-#scalefatigueexponent 1.8
+
 #pathperresearch 0.8
-#scalefatiguemult -5
+
 #end
 
 
@@ -50,7 +50,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
+
 
 #aoe 666
 #power 9

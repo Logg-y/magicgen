@@ -101,8 +101,8 @@
 #paths 2
 #secondarypaths 2
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 20
+
+
 
 #name 2 "$Send$ NAMEPREFIX Simargl"
 #descr 2 "The caster summons ARTICLE simargl to attack a distant province. The simargl is a small winged dog."
@@ -110,7 +110,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

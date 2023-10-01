@@ -21,7 +21,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 1
 #skipchance 98
 #end
@@ -76,7 +76,7 @@
 
 #spelltype 4
 
-#scalerate 0.7
+
 #end
 
 
@@ -98,14 +98,14 @@
 #paths 8
 #secondarypaths 8
 
-#scalefatiguemult 22
+
 
 #name 8 "$Send$ NAMEPREFIX %Ogre%"
 #descr 8 "The caster summons ARTICLE_N ogre to attack a distant province. Ogres are strong and attack with a large club. They are slightly resistant to cold."
 
 #spelltype 20
 
-#scalerate 2.0
+
 #end
 
 

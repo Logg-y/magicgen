@@ -10,8 +10,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.0
--- #scalecost 1.1
+
+-- 
 
 #aoe 4
 #power 6
@@ -49,8 +49,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 1.1
+
+-- 
 
 #aoe 0
 #power 5
@@ -75,7 +75,7 @@
 #namecond range < 10 16 "NAMEPREFIX soulslaying touch"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -111,8 +111,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #skipchance 33
 
@@ -153,8 +153,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
 #power 8

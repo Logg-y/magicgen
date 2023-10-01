@@ -47,7 +47,7 @@
 
 #spelltype 4
 
-#scalerate 0.7
+
 #end
 
 
@@ -64,8 +64,8 @@
 #fatiguecost 800
 #schools 2
 
--- #scalefatigueexponent 0.4
-#scalefatiguemult 10
+-- 
+
 
 #skipchance 99.86666666666666
 
@@ -78,7 +78,7 @@
 
 #spelltype 20
 
-#scalerate 2.0
+
 #end
 
 

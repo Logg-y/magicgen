@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 450
+
 #schools 1
 #paths 255
 #skipchance 0
@@ -39,7 +39,7 @@
 #details "In each friendly land province, there is a 7% chance per point of friendly dominion that a single site searching commander transforms. This can at most affect one commander per province. Undead or inanimate commanders cannot be transformed by this spell."
 
 #spelltype 4
-#scalerate 1
+
 #end
 
 
@@ -52,7 +52,7 @@
 -- #nreff 1
 -- #pathlevel 7
 -- #fatiguecost 6000
--- #scalefatiguemult 450
+-- 
 -- #schools 1
 -- #paths 68
 -- #skipchance 97
@@ -84,5 +84,5 @@
 -- #details "In each friendly underwater province, there is a 5% chance per point of friendly dominion that a single site searching commander transforms. This can at most affect one commander per province. Undead or inanimate commanders cannot be transformed by this spell."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end

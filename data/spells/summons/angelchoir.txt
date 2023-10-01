@@ -108,10 +108,10 @@
 
 #spelltype 20
 
-#scalerate 2
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 40
+
+
+
 #details "Creatures summoned with this spell are not sacred."
 #end
 

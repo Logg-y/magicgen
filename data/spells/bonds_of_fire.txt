@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 0
@@ -39,7 +39,7 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of imprisonment"
 #namecond range < 10 1 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
-#scalefatigueexponent 1.2
+
 #maxpower 9
 #end
 
@@ -52,15 +52,15 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 166.5
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
 #pathlevel 6
 #explspr 10203
 #sound 16
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 
 #paths 129
@@ -78,7 +78,7 @@
 #descr 128 "$BLOOD_INTRO$, shackles of Infernal fire trap everyone on the battlefield. Escaping requires high morale, and succeeding results in severe burns."
 #details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
-#scalefatigueexponent 0.0
+
 #maxpower 8
 #scalingset "evo"
 #fatigueperresearch 0
@@ -94,15 +94,15 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 9
-#pathlevel 7
+#pathlevel 5
 #explspr 10203
 #sound 16
-#fatiguecost 400
+#fatiguecost 300
 #range 5020
 #skipchance 70
 
@@ -121,12 +121,9 @@
 #descr 128 "$BLOOD_INTRO$, shackles of Infernal fire all of the caster's enemies. Escaping requires high morale, and succeeding results in severe burns."
 #details "Escaping requires that affected units roll Morale + DRN of 21 or higher. Successfully escaping inflicts 3 AN fire damage."
 
-#scalefatigueexponent 1.2
+
 #maxpower 9
-#scalingset ""
 #end
-
-
 
 
 

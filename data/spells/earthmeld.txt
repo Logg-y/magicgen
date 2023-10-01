@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.7
+
+-- 
 
 #aoe 0
 #power 0
@@ -49,7 +49,7 @@
 #namecond range < 10 b "NAMEPREFIX touch of entombing"
 
 #maxpower 9
-#scalefatigueexponent 1.4
+
 #end
 
 #neweffect "Earth Grip Battlefield"
@@ -61,8 +61,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.7
+
+-- 
 
 #aoe 666
 #power 8
@@ -100,8 +100,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.7
+
+-- 
 
 #aoe 666
 #power 9

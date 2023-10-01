@@ -4,7 +4,7 @@
 #spec 27263104
 #schools -1
 #paths -1
-#scalerate 0
+
 #aoe 1
 #spelltype 42
 #name 32 "Cripple"
@@ -17,7 +17,7 @@
 #spec 27263104
 #schools -1
 #paths -1
-#scalerate 0
+
 #aoe 1
 #spelltype 42
 #name 32 "Limp"
@@ -36,8 +36,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 0.2
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 1
@@ -62,8 +62,8 @@
 #namecond range < 10 32 "NAMEPREFIX Bonebreak Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
-#scalefatiguemult 0
-#scalefatigueexponent 0
+
+
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end
@@ -78,8 +78,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 #nextspell "Bonebreak Limp"
-#scalerate 0.51
--- #scalecost 0.6
+
+-- 
 
 #aoe 3
 #power 4
@@ -104,8 +104,8 @@
 #namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 
-#scalefatiguemult 1
-#scalefatigueexponent 1.2
+
+
 #fatigueperresearch 10
 #pathperresearch 0.4
 #end
@@ -119,8 +119,8 @@
 ---- evo-like, battlefield allowed, scale aoe
 --#spelltype 42
 --#nextspell "Bonebreak Limp"
---#scalerate 2
----- #scalecost 0.6
+--
+---- 
 --
 --#aoe 1
 --#power 2
@@ -145,8 +145,8 @@
 --#namecond range < 10 32 "NAMEPREFIX Bonecrumbling Touch"
 --#descrcond range < 10 32 "The caster's touch radiates deathly energy that shatters the bones of surrounding creatures."
 --
---#scalefatiguemult 20.0
---#scalefatigueexponent -1.65
+--
+--
 --#end
 
 
@@ -158,7 +158,7 @@
 #spec 27263104
 #schools -1
 #paths -1
-#scalerate 0
+
 #aoe 663
 #spelltype 42
 #name 32 "Cripple"
@@ -171,7 +171,7 @@
 #spec 27263104
 #schools -1
 #paths -1
-#scalerate 0
+
 #aoe 666
 #spelltype 42
 #name 32 "Limp"
@@ -189,8 +189,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 166.5
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
@@ -211,7 +211,7 @@
 #descr 32 "The caster violently snaps the bones of everyone on the battlefield. This has little effect on ethereal beings, but others may find themselves with limps or become permanently crippled."
 #scalingset "evo"
 #fatigueperresearch 0
-#scalefatigueexponent 0.0
+
 #pathperresearch 0.0
 #end
 

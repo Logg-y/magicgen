@@ -7,7 +7,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 4000
--- #scalefatiguemult 430
+-- 
 -- #schools 32
 -- #unique 1
 -- -- E S D
@@ -19,7 +19,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #name 8 "Forgotten Trinkets"
 -- #name 16 "Locate Trinkets"
@@ -40,7 +40,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 4000
--- #scalefatiguemult 430
+-- 
 -- #schools 32
 -- #unique 1
 -- #paths 1
@@ -51,7 +51,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #name 1 "Enchanted Forges"
 -- 
@@ -74,7 +74,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 5000
--- #scalefatiguemult 580
+-- 
 -- #schools 32
 -- #unique 1
 -- -- E S D
@@ -86,7 +86,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Forgotten items"
 -- #name 16 "Locate items"
@@ -108,7 +108,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 5000
--- #scalefatiguemult 580
+-- 
 -- #schools 32
 -- #unique 1
 -- #paths 1
@@ -119,7 +119,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 1 "Enchanted Forges"
 -- 
@@ -139,7 +139,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 6000
--- #scalefatiguemult 630
+-- 
 -- #schools 32
 -- #unique 1
 -- -- E S D
@@ -151,7 +151,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Forgotten items"
 -- #name 16 "Locate items"
@@ -173,7 +173,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 6000
--- #scalefatiguemult 630
+-- 
 -- #schools 32
 -- #paths 1
 -- #skipchance 95
@@ -183,7 +183,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 1 "Enchanted Forges"
 -- 
@@ -204,7 +204,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 7000
--- #scalefatiguemult 780
+-- 
 -- #schools 32
 -- #unique 1
 -- -- E S D
@@ -216,7 +216,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Forgotten treasures"
 -- #name 16 "Locate treasures"
@@ -238,7 +238,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 7000
--- #scalefatiguemult 780
+-- 
 -- #schools 32
 -- #unique 1
 -- #paths 1
@@ -249,7 +249,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 1 "Enchanted Forges"
 -- 
@@ -272,7 +272,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 10000
--- #scalefatiguemult 900
+-- 
 -- #schools 32
 -- #unique 1
 -- -- E S D
@@ -284,7 +284,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Forgotten artifacts"
 -- #name 16 "Locate artifacts"
@@ -306,7 +306,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 10000
--- #scalefatiguemult 900
+-- 
 -- #schools 32
 -- #unique 1
 -- #paths 1
@@ -317,7 +317,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 1 "Enchanted Forges"
 -- 

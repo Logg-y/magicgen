@@ -21,7 +21,7 @@
 #explspr 10360
 
 #spelltype 18
-#scalerate 0
+
 #schools -1
 
 #nreff 1
@@ -47,7 +47,7 @@
 #descr d "The caster opens a channel to the underworld and allows deathly energy to pass through it and enter the world. Anyone within the blast area has their life sapped by the deathly energy, becoming soulless should it kill them. Those exposed to its deathly light are aged at a vastly accelerated rate."
 
 #spelltype 18
-#scalerate 0
+
 #schools -1
 
 -- no visual
@@ -81,7 +81,7 @@
 #explspr 10197
 
 #spelltype 18
-#scalerate 0
+
 #schools evo
 
 #aispellmod 120
@@ -119,7 +119,7 @@
 #explspr 10197
 
 #spelltype 18
-#scalerate 1.0
+
 #schools evo
 
 #priority 1

@@ -24,8 +24,8 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 2.0
+
+-- 
 #pathlevel 2
 #schools 4
 
@@ -34,7 +34,7 @@
 #namecond effect > 4000 b "Extended NAMEPREFIX $poisonous$ cloud"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #maxpower 14
 #end
 
@@ -64,15 +64,15 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 1.7
+
+-- 
 #pathlevel 2
 #schools 4
 
 #priority 1
 #namecond effect > 4000 1 "Extended NAMEPREFIX $flame$ cloud"
 #namecond effect > 4000 b "Extended NAMEPREFIX $flame$ cloud"
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end
@@ -104,8 +104,8 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 1.7
+
+-- 
 #pathlevel 2
 #schools 4
 
@@ -114,7 +114,7 @@
 #namecond effect > 5000 4 "Extended NAMEPREFIX $freezing$ $mist$"
 #namecond effect > 5000 b "Extended NAMEPREFIX $mist$ of Kokytos"
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.4
 #maxpower 14
 #end
@@ -146,8 +146,8 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 1.7
+
+-- 
 #pathlevel 3
 #schools 4
 
@@ -182,8 +182,8 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 1.7
+
+-- 
 #pathlevel 3
 #schools 4
 
@@ -191,7 +191,7 @@
 #namecond effect > 5000 32 "Extended NAMEPREFIX $mist$ of Death"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.4
 #maxpower 14
 #end
@@ -224,8 +224,8 @@
 
 #spelltype 34
 
-#scalerate 0.25
--- #scalecost 1.7
+
+-- 
 #pathlevel 2
 #schools 4
 
@@ -233,7 +233,7 @@
 #namecond effect > 5000 a "Extended NAMEPREFIX static cloud"
 #namecond effect > 5000 b "Extended NAMEPREFIX static cloud"
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.4
 #maxpower 14
 #end

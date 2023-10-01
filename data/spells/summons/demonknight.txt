@@ -100,15 +100,15 @@
 #secondarypaths 8
 #secondarypathchance 80
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 270
+
+
 
 #name 128 "$Send$ NAMEPREFIX Demon Knights"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of demon knights to attack a distant province."
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

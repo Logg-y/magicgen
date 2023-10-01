@@ -8,7 +8,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+
 
 #aoe 0
 #power 0
@@ -43,7 +43,7 @@
 #namecond range < 10 64 "NAMEPREFIX touch of entanglement"
 #namecond range < 10 b "NAMEPREFIX touch of growth"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -56,7 +56,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+
 
 #aoe 666
 #power 8
@@ -89,7 +89,7 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of entanglement"
 #namecond range < 10 64 "NAMEPREFIX touch of entanglement"
 
-#scalefatigueexponent 1.2
+
 #scalingset ""
 #end
 
@@ -102,7 +102,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
+
 
 #aoe 666
 #power 9
@@ -129,7 +129,7 @@
 
 #descr 64 "At the caster's command, vines and other plantlife rapidly spring to life and attempt to entangle all of the caster's enemies."
 
-#scalefatigueexponent 1.2
+
 #scalingset ""
 #end
 

@@ -101,15 +101,15 @@
 #secondarypaths 16
 #newunit "Madman"
 
---#scalefatigueexponent 0.5
---#scalefatiguemult 5
+--
+--
 
 #name 16 "$Send$ NAMEPREFIX Madmen"
 #descr 16 "Summons a mob of madmen to attack distant lands. Madmen are untrained and unarmoued, wielding their favourite fish and punching their foes."
 
 #spelltype 20
 
-#scalerate 7
+
 #end
 
 

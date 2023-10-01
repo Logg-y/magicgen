@@ -22,5 +22,5 @@
 #details "Gives a free watcher commander in provinces with friendly dominion. These watchers are destroyed when the enchantment ends. Any individual watcher is also destroyed if friendly dominion leaves its province."
 
 #spelltype 4
-#scalerate 0
+
 #end

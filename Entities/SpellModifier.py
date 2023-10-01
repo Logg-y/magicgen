@@ -6,7 +6,7 @@ import math
 class SpellModifier(object):
     def __init__(self):
         self.params = ["power", "spelltype", "range", "precision", "damage", "aoe", "casttime", "nreff", "skipchance",
-                       "fatiguecost", "maxbounces", "scalecost", "scalerate", "pathperresearch", "scalefatigueexponent",
+                       "fatiguecost", "maxbounces", "pathperresearch",
                        "effect", "aispellmod", "reqdamaging", "spec", "provrange"]
         self.aispellmod = 0
         self.power = 0
@@ -27,10 +27,7 @@ class SpellModifier(object):
         self.spec = 0
         self.provrange = 0
 
-        self.scalecost = 0.0
-        self.scalerate = 0.0
         self.pathperresearch = 0.0
-        self.scalefatigueexponent = 0.0
 
         self.nobattlefield = False
         self.minfinalfatiguecost = None

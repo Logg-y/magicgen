@@ -109,8 +109,8 @@
 #secondarypaths 80
 #secondarypathchance 70
 
---#scalefatigueexponent 0.5
-#scalefatiguemult 7
+--
+
 
 #name 64 "$Send$ NAMEPREFIX Winged Monkies"
 #name 16 "$Send$ NAMEPREFIX Winged Monkies"
@@ -119,7 +119,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

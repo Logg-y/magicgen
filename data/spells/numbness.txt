@@ -8,11 +8,11 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
-#scalefatigueexponent 1
 
 
--- #scalecost 0.35
+
+
+-- 
 
 #aoe 0
 #power -1
@@ -56,11 +56,11 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
-#scalefatigueexponent 1
 
 
--- #scalecost 0.35
+
+
+-- 
 
 #aoe 666
 #power 7
@@ -102,11 +102,11 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
-#scalefatigueexponent 1
 
 
--- #scalecost 0.35
+
+
+-- 
 
 #aoe 666
 #power 9

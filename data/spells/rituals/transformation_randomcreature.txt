@@ -15,7 +15,7 @@
 #name 32 "Transformation Shock"
 #name 64 "Transformation Shock"
 #nextspell "Transformation Become Younger"
-#scalerate 0
+
 #spelltype 4
 #end
 
@@ -37,7 +37,7 @@
 #name 16 "Otherworldly Vigour"
 #name 32 "Taste of Undeath"
 #name 64 "Nature's Renewal"
-#scalerate 0
+
 #spelltype 4
 #end
 
@@ -78,8 +78,8 @@
 #descr 64 "The caster attempts to transform into a young creature of nature. There is a chance that he will not survive the transformation. In his new form, the caster retains all original spellcasting abilities."
 #details "Undead and inanimate beings cannot cast this spell. The caster must pass a special MR check or die, even if immortal. Regardless of the caster's original MR, his base MR is considered to be 15 for the purposes of this check, regardless of the caster's actual MR. The caster becomes 9000 years younger if successful.\nThere are various possible results of this transformation. If the transformation fails, all items will safely be returned to the lab."
 
-#scalefatiguemult 80
-#scalerate 1
+
+
 
 #spelltype 4
 #end

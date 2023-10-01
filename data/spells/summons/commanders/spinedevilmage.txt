@@ -29,11 +29,11 @@
 #details "Bone Fiend Reanimators are D2 mages with the following random paths:\n50% B\n50% B"
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.4
+
+
 #pathperresearch 0.4
 #ainocast 1
 #end
@@ -49,9 +49,9 @@
 #pathlevel 3
 #fatiguecost 6500
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 16
 
 #skipchance 70
@@ -69,5 +69,5 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end

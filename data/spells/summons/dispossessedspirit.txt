@@ -22,7 +22,7 @@
 #spelltype 528
 
 #power 1
--- #scalecost 1.0
+-- 
 #pathlevel 1
 #schools 16
 #skipchance 98
@@ -77,7 +77,7 @@
 
 #spelltype 4
 
-#scalerate 0.7
+
 #end
 
 
@@ -103,7 +103,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

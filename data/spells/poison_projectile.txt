@@ -28,7 +28,7 @@
 #spelltype 34
 
 #power 3
-#scalerate 1
+
 #pathlevel 2
 #schools 4
 
@@ -39,7 +39,7 @@
 #namecond range < 10 64 "NAMEPREFIX poison touch"
 
 
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -73,7 +73,7 @@
 #spelltype 34
 
 #power 2
-#scalerate 0.2
+
 #pathlevel 2
 #schools 4
 
@@ -85,7 +85,7 @@
 
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -145,7 +145,7 @@
 #nextspell "Poison Projectile Death Fear"
 
 #power 4
-#scalerate 1
+
 #pathlevel 2
 #schools 4
 
@@ -156,7 +156,7 @@
 #namecond range < 10 64 "NAMEPREFIX poison touch"
 
 
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -194,7 +194,7 @@
 #nextspell "Poison Projectile Death Fear"
 
 #power 3
-#scalerate 0.2
+
 #pathlevel 2
 #schools 4
 
@@ -206,7 +206,7 @@
 
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

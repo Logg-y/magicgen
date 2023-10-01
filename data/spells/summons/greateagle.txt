@@ -101,8 +101,8 @@
 #paths 2
 #secondarypaths 2
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 70
+
+
 
 #name 2 "$Send$ NAMEPREFIX Great %Eagle%"
 #descr 2 "The caster sends ARTICLE great %eagle% to attack a distant province. The great eagle is large and attacks enemies with its beak and talons."
@@ -110,7 +110,7 @@
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

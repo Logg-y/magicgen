@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 1
@@ -39,8 +39,8 @@
 -- buff, scale dmg
 #spelltype 65
 
-#scalerate 5
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -51,8 +51,8 @@
 #range 0
 #fatiguecost 0
 
-#scalefatigueexponent 1
-#scalefatiguemult -10
+
+
 
 #aispellmod 0
 
@@ -86,8 +86,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 
 #aoe 5
 #power 4
@@ -117,8 +117,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1.6
+
+-- 
 
 #aoe 1
 #power 7

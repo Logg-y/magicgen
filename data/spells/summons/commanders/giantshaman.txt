@@ -24,11 +24,11 @@
 #name 64 "Call NAMEPREFIX Giant %Shaman%"
 #descr 64 "The caster summons ARTICLE %Giant Shaman% onto the battlefield and uses magic to convince PRONOUN to fight for him. Giant Shamans are potent nature mages and physically powerful, but they will leave after the battle."
 
-#scalefatiguemult 100
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent 0
+
+
 #scalingset ""
 #fatigueperresearch 0
 #pathperresearch 0.3
@@ -45,9 +45,9 @@
 #fatiguecost 3100
 #pathlevel 5
 #chassisvalue 800
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 70
@@ -62,7 +62,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
--- #scalecost 1.0
+
+-- 
 
 #aoe 0
 #power -2
@@ -20,7 +20,7 @@
 #fatiguecost 10
 #skipchance 30
 #pathperresearch 0.25
-#scalefatigueexponent 0.2
+
 
 
 #paths 66

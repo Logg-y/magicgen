@@ -27,11 +27,11 @@
 #descr 8 "The earth mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
 #descr 64 "The nature mage lets out a call for ARTICLE %Gnome% to join him in battle. The %Gnome% will leave once the battle is over."
 
-#scalefatiguemult 20
+
 #spelltype 528
 
-#scalerate 0.3
-#scalefatigueexponent -1.6
+
+
 #end
 
 #neweffect "Summon Gnome"
@@ -45,9 +45,9 @@
 #pathlevel 3
 #fatiguecost 2400
 #chassisvalue 160
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 70
@@ -63,7 +63,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

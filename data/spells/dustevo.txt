@@ -51,7 +51,7 @@
 #nextspell "Dust Fatigue"
 
 #power 4
-#scalerate 1.4
+
 #pathlevel 2
 #schools 4
 #end
@@ -96,11 +96,11 @@
 #nextspell "Dust Fatigue"
 
 #power 3
-#scalerate 0.2
+
 #pathlevel 2
 #schools 4
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -165,7 +165,7 @@
 
 #spelltype 34
 
-#scalerate 0.75
+
 #pathlevel 2
 #schools 4
 #end

@@ -9,8 +9,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 1
@@ -38,7 +38,7 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
 #namecond range < 10 64 "NAMEPREFIX touch of webs"
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.4
 #end
 
@@ -53,8 +53,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.2
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 1
@@ -80,7 +80,7 @@
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of webs"
 #namecond range < 10 64 "NAMEPREFIX touch of webs"
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -93,8 +93,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 666
@@ -129,8 +129,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 666

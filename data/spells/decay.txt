@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.5
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power -2
@@ -41,7 +41,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of decay"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of decay"
 
-#scalefatigueexponent 1.3
+
 #end
 
 #neweffect "Mass Decay"
@@ -53,8 +53,8 @@
 -- evo-like
 #spelltype 2
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
@@ -98,8 +98,8 @@
 -- evo-like
 #spelltype 2
 
-#scalerate 2
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 9

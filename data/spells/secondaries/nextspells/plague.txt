@@ -7,8 +7,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 2
 
-#scalerate 1
--- #scalecost 1.6
+
+-- 
 
 #aoe 1
 #power 0
@@ -48,8 +48,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 2
 
-#scalerate 1
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 0

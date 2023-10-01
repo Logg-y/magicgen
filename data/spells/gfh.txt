@@ -28,8 +28,8 @@
 #details "In addition to usual inaccuracy applied by precision, meteors will strike anywhere in a 3x3 box centred on where the caster intended."
 #spelltype 18
 
-#scalerate 0.7
--- #scalecost 0.15
+
+-- 
 #schools 4
 
 #priority 1

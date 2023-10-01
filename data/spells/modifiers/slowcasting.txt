@@ -7,7 +7,7 @@
 -- #skipchance 50
 -- 
 -- #casttime 100
--- #scalefatigueexponent 0.4
+-- 
 -- -- not ritual
 -- #req spelltype !& 4
 -- 

@@ -24,11 +24,11 @@
 #name 8 "Call NAMEPREFIX Giant %Sorcerer%"
 #descr 8 "The caster summons ARTICLE %Giant Sorcerer% onto the battlefield and uses magic to convince PRONOUN to fight for him. Giant Sorcerers are potent earth mages and physically powerful, but they will leave after the battle."
 
-#scalefatiguemult 120
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent 0
+
+
 #scalingset ""
 #fatigueperresearch 0
 #pathperresearch 0.3
@@ -45,9 +45,9 @@
 #fatiguecost 4100
 #pathlevel 5
 #chassisvalue 1600
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 50
@@ -62,7 +62,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

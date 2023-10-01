@@ -106,10 +106,10 @@
 
 #spelltype 20
 
-#scalerate 2.0
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 110
+
+
+
 #end
 
 

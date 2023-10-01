@@ -54,7 +54,7 @@
 #spelltype 38
 
 #power 3
-#scalerate 1
+
 #pathlevel 2
 #schools 4
 
@@ -67,7 +67,7 @@
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the chill of Kokytos, producing bolts that harm those close to the caster."
 
 #nextspell "Small Chill"
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -106,8 +106,8 @@
 
 
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -117,7 +117,7 @@
 #descrcond range < 10 4 "The caster unleashes a burst of cold, harming those around him."
 #descrcond range < 10 32 "The caster unleashes the chill of the grave, chilling and harming those around him."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster unleashes the chill of Kokytos, chilling and harming those around him."
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -151,8 +151,8 @@
 
 #nextspell "Deep Freeze Numbness"
 #spelltype 42
-#scalerate 1.2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -161,7 +161,7 @@
 #descrcond range < 10 4 "The caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes a burst of cold, harming and potentially freezing those struck solid."
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -239,8 +239,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -278,8 +278,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -292,8 +292,8 @@
 #maxpower 14
 #precision 1
 #range 30
-#pathlevel 6
-#fatiguecost 400
+#pathlevel 7
+#fatiguecost 500
 #explspr 10008
 #skipchance 90
 #sound 21
@@ -317,8 +317,8 @@
 
 -- evo-like, scale aoe
 #spelltype 66
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #scalingset ""
 #fatigueperresearch 50
@@ -353,13 +353,12 @@
 
 #spelltype 18
 
-#scalerate 5.0
+
 #schools 4
 
 #nextspell "Small Chill"
 
 #end
-
 
 
 

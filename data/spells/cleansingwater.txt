@@ -23,8 +23,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 

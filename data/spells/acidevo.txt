@@ -9,7 +9,7 @@
 #name b "Rust"
 -- evo, scale aoe
 #spelltype 2
-#scalerate 0
+
 #aoe 1
 #power 1
 #end
@@ -50,7 +50,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 1.0
+
 #pathlevel 3
 
 #priority 1
@@ -60,7 +60,7 @@
 #descrcond range < 10 1 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
 #descrcond range < 10 4 "A gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
 #descrcond range < 10 b "$BLOOD_INTRO$, a gush of highly corrosive fluid streams from the caster's hand. The acid burns the armor of the target as well as his, her or its flesh."
-#scalefatigueexponent 1.5
+
 #pathperresearch 0.4
 #end
 
@@ -94,8 +94,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.0
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -138,8 +138,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -173,8 +173,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 
@@ -183,13 +183,13 @@
 #damage 1005
 #spec 2199023255616
 #aoe 666
-#power 8
+#power 9
 #maxpower 14
 #skipchance 90
 #precision 3
 #range 30
 #pathlevel 7
-#fatiguecost 400
+#fatiguecost 500
 #explspr 10180
 #sound 16
 #nextspell "Acid Rust"
@@ -207,13 +207,12 @@
 
 -- evo-like, scale aoe
 #spelltype 66
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #scalingset ""
 #fatigueperresearch 50
 #end
-
 
 
 

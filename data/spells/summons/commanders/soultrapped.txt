@@ -26,11 +26,11 @@
 #name 32 "Soul Trap"
 #descr 32 "The caster traps the %soul% of ARTICLE %hero% from the realm of the dead and pulls PRONOUN into the battle. Souls trapped by this spell could have belonged to either a warrior or a mage, but will return to the realm of the dead after the battle."
 
-#scalefatiguemult 35
+
 #spelltype 528
 
-#scalerate 0.6
-#scalefatigueexponent 0
+
+
 #pathperresearch 0.4
 #scalingset ""
 #fatigueperresearch 0
@@ -47,9 +47,9 @@
 #pathlevel 4
 #fatiguecost 1500
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #paths 32
@@ -62,7 +62,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 -- #neweffect "soultrapped Remote Assassination"

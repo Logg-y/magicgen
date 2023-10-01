@@ -94,15 +94,15 @@
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 350
+
+
 
 #name 128 "$Send$ NAMEPREFIX Disease %Demon%"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of disease demons to attack a distant province."
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

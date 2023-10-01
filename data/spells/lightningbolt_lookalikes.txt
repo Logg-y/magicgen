@@ -7,7 +7,7 @@
 -- evo
 #spelltype 2
 #aoe 1
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 1 "Heated Air"
@@ -49,10 +49,10 @@
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 0.2
+
 #schools 4
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -67,7 +67,7 @@
 -- evo
 #spelltype 2
 #aoe 1
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 4 "Chilled Air"
@@ -109,10 +109,10 @@
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 0.2
+
 #schools 4
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

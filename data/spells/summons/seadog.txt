@@ -100,15 +100,15 @@
 #paths 4
 #secondarypaths 4
 
---#scalefatigueexponent 0.5
--- #scalefatiguemult 15
+--
+-- 
 
 #name 4 "$Send$ NAMEPREFIX Sea %Dog%"
 #descr 4 "The caster summons ARTICLE sea %dog% to attack a distant province. Sea dogs are amphibious creatures that bite their enemies."
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

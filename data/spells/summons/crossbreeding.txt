@@ -19,10 +19,10 @@
 #details "The caster's Adept Crossbreeder value is added to the number of effects. Each crossbreed has a (((Luck * 5) + 17 + Adept Crossbreeder)/10)% chance to be a strong crossbreed, otherwise it is a weak crossbreed."
 
 #spelltype 20
-#scalefatiguemult 50
-#scalerate 5
+
+
 #skipchance 0
-#scalefatigueexponent -1.6
+
 #end
 
 

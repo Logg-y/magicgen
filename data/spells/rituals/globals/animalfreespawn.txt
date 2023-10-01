@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 5000
-#scalefatiguemult 300
+
 #schools 49
 #unique 1
 #paths 64
@@ -22,5 +22,5 @@
 
 #basescale 1
 #spelltype 4
-#scalerate 1
+
 #end

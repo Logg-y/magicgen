@@ -37,8 +37,8 @@
 
 -- evo, scale aoe
 #spelltype 34
-#scalerate 0.17
--- #scalecost 1.4
+
+-- 
 #schools 4
 
 #priority 1
@@ -49,7 +49,7 @@
 #descrcond range < 10 8 "The caster's touch unleashes a massive electrical charge from $underground$. This unleashes chain lighting on nearby foes."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch unleashes chain lightning which leaps to surrounding foes."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.15
 #end
 
@@ -84,8 +84,8 @@
 
 -- evo, scale aoe
 #spelltype 34
-#scalerate 0.1
--- #scalecost 1.4
+
+-- 
 #schools 4
 
 #priority 1
@@ -95,7 +95,7 @@
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes orbs of chain lightning which leap to surrounding foes."
 #details "The lightning will pick a random target within a radius of 1 square, if there are any. If there are not, it can travel up to total Euclidean distance of 2 (rounding down results) in search of another target. It cannot hit the same target twice in a row, and will stop prematurely if there are no valid targets in range."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0
 #end
 

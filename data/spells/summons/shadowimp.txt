@@ -94,15 +94,15 @@
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
+
+
 
 #name 128 "Send NAMEPREFIX Shadow Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of shadow imps to attack a distant province. These imps cannot fly, but become more powerful in darkness."
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

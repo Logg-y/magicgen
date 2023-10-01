@@ -7,7 +7,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 33
 
-#scalerate 1.6
+
 
 
 #aoe 0
@@ -39,7 +39,7 @@
 #priority 1
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of liquidity"
 
-#scalefatigueexponent 1.4
+
 #end
 
 #neweffect "Liquid Body battlefield"
@@ -51,7 +51,7 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 2.6
+
 
 
 #aoe 666

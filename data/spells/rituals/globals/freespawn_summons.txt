@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 3500
-#scalefatiguemult 500
+
 #schools 1
 #paths fawe
 #skipchance 0
@@ -40,7 +40,7 @@
 
 
 #spelltype 4
-#scalerate 1
+
 #end
 
 #neweffect "Freespawn Summons Sorcery"
@@ -52,7 +52,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 3500
-#scalefatiguemult 500
+
 #schools 1
 #paths sdnb
 #skipchance 0
@@ -84,7 +84,7 @@
 #details "In each friendly land province with a lab, there are three independent chances to spawn 4d3 random creatures. Each chance is rolled individually for each province.\nThe first chance has a 5 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a 3 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a 1 percent chance to trigger per point of dominion."
 
 #spelltype 4
-#scalerate 1
+
 #end
 
 -- #neweffect "Freespawn Summons pow4"
@@ -96,7 +96,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 3500
--- #scalefatiguemult 300
+-- 
 -- #schools 1
 -- -- Water currently has no legal summons for this spell
 -- #paths 251
@@ -129,7 +129,7 @@
 -- #details "In each friendly land province with a lab, there is a 6% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end
 -- 
 -- #neweffect "Freespawn Summons pow5"
@@ -141,7 +141,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 4200
--- #scalefatiguemult 400
+-- 
 -- #schools 1
 -- #paths 235
 -- #skipchance 0
@@ -183,7 +183,7 @@
 -- #details "In each friendly land province with a lab, there is an 8% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end
 -- 
 -- 
@@ -201,7 +201,7 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 6000
--- #scalefatiguemult 500
+-- 
 -- #schools 1
 -- #paths 68
 -- #skipchance 80
@@ -233,7 +233,7 @@
 -- #details "In each friendly underwater province with a lab, there is a 10% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end
 -- 
 -- #neweffect "Freespawn Summons pow4 UW"
@@ -245,7 +245,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 3500
--- #scalefatiguemult 300
+-- 
 -- #schools 1
 -- #paths 68
 -- #skipchance 80
@@ -278,7 +278,7 @@
 -- #details "In each friendly underwater province with a lab, there is a 6% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end
 -- 
 -- #neweffect "Freespawn Summons pow5 UW"
@@ -290,7 +290,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 4200
--- #scalefatiguemult 400
+-- 
 -- #schools 1
 -- #paths 68
 -- #skipchance 80
@@ -323,5 +323,5 @@
 -- #details "In each friendly underwater province with a lab, there is an 8% chance per point of friendly dominion that 1d6 random creatures spawn. There is no chance that any come with a commander."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end

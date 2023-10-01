@@ -10,7 +10,7 @@
 #spelltype 41
 --#pathperresearch 0.3
 
-#scalerate 2
+
 
 #range 10
 #aoe 0
@@ -87,7 +87,7 @@
 #spelltype 41
 --#pathperresearch 0.15
 
-#scalerate 3
+
 
 #aoe 666
 #power 8

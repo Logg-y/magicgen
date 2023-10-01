@@ -4,7 +4,7 @@
 #spec 10502272
 #schools -1
 #paths -1
-#scalerate 0
+
 #aoe 0
 #spelltype 42
 #name 64 "Entangle"
@@ -21,8 +21,8 @@
 
 #spelltype 18
 
-#scalerate 0.8
--- #scalecost 0.6
+
+-- 
 
 #nreff 1
 #aoe 0
@@ -48,8 +48,8 @@
 #priority 1
 #namecond range < 10 64 "NAMEPREFIX touch of entangling plants"
 #namecond range < 10 b "NAMEPREFIX touch of entangling plants"
-#scalefatiguemult 0
-#scalefatigueexponent 0
+
+
 #pathperresearch 0.22
 #fatigueperresearch 0
 #end

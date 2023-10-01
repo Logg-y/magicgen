@@ -19,7 +19,7 @@
 #details "Each turn, generates pearls based on the number of gems (not including blood slaves and astral pearls) spent on forging and rituals that turn. Does not give income on the turn it was cast. The amount of pearls gathered is (openended d10 + 4 + total spent) / 4, rounded down."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Astral Corruption"
@@ -42,7 +42,7 @@
 #details "Dramatically increases the impact of most horror-related activities, but does not stack with the Cataclysm. This includes the chance to upgrade horror types to a stronger version, the chance for horror marked commanders to be attacked, and the chances of the Eater of Gods and Hunter of Heroes attacking Pretenders and commanders in the Hall of Fame, respectively. Additionally, non-mindless commanders that perform rituals and forging gain a chance to be attacked. This effect scales with number of gems used. Rituals from items are not safe from this effect.\n\nFORGING AND RITUALS\n\nForging that includes two different gem types is evaluated twice, separately for each gem type. Blood slave costs in forging are ignored. Blood rituals are also unaffected. The attack probability is approximately ((mage's horror marks * 20) + 1 - Drain scale + number of gems spent) / 35.\n\nHORROR MARK ATTACKS\n\nCompared to normal game state, the chance of attack is multiplied by 10.\n\nHUNTER OF HEROES\n\nRarku becomes able to attack non horror marked heroes. As in a regular game state, checks proceed in order of increasing commander ID, at most one commander can be attacked this way each turn. As with the regular game state, both the 32.5% chance to consider a commander in the Hall of Fame and the additional 10% chance to attack anyone else with a heroic ability with present. The chance of an attack following consideration in percent becomes (2 + marks * 4), to a maximum of 20% at 5 or more horror marks.\n\nEATER OF GODS\n\nUmor becomes able to attack non-horrormarked non-mindless Pretenders. As in a regular game state, checks proceed in order of increasing nation ID, and at most one Pretender can be attacked this way each turn. There is a 50% chance to consider each pretender in turn. The chance of an attack following consideration in percent becomes (1 + marks * 2), to a maximum of 10% at 5 marks."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Blood Vortex"
@@ -66,7 +66,7 @@
 #details "People are drawn from up to three remote provinces per turn. Two of these checks pick any province on the map at random, the third always selects an adjacent province to where the spell was cast. These provinces contribute (population/200) + d50 (exploding), to a maximum of (population/10). If the province does not have turmoil 2 or 3, this is divided by two. If the province has order 2 or 3, this is divided by two again. Twice the number of people that are contributed this way are deducted from the province's population. Underwater or provinces with no population are not valid.\n\nThe local province also contributes (population/100) + d100 (exploding), to a maximum of (population/10). Scales have no impact unlike remote provinces, but population is still deducted.\n\nThe final amount of slaves gained is equal to (local contribution + total remote contribution + closed d10)/9, rounded down."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Burden of Time"
@@ -88,7 +88,7 @@
 #details "Worldwide Population loss about -2%, increased/reduced by about 0.25% per death/growth scale. Adds a closed d4 unrest to all provinces on the map. Units have a (41 + 4*Death scale)% chance to be aged 1d4 years (non-exploding)."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Celestial Rainbow"
@@ -113,7 +113,7 @@
 #details "Grants 4d100 (exploding) + 300 gold. Grants +2 luck scales. Hostile spells that target friendly provinces have a (10*luck scale)% chance to be blocked in the same manner as a dome.\n\nThe order of dome protection is as follows:\n\nCelestial Rainbow\nDome of Flaming Death\nFrost Dome\nDome of Corruption\nDome of Arcane Warding\nDome of Solid Air\nForest Dome"
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Dark Skies"
@@ -136,7 +136,7 @@
 #details "Enemy morale lowered by 1 for each point of dominion. Applies a darkness penalty of -1 in battles, which is not cumulative with other sources of darkness. This is insufficient to trigger dark power."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Earth Blood Deep Well"
@@ -159,7 +159,7 @@
 #details "Generates 20 earth gems per month."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Enchanted Forests"
@@ -182,7 +182,7 @@
 #details "All forests under neutral or enemy dominion act as if they were temples of the caster's pretender. When the dominion has become friendly it stops spreading. Each forest under friendly dominion picks makes up to three attempts to pick a random adjacent province, each with a ((candles + 4) * growth * 5)% chance of succeeding. Upon success, the province is attacked if it is a hostile non-wasteland non-sea province.\n\nThere is a 25% chance that an attack is nonexploding 6d4 Forest Trolls under the command of a Troll Shaman.\nOtherwise, the attackers are an openended 6d3 Vine Ogres and an openended 4d20 Vine Men all under the command of an Ivy King. If the province is a forest, this attack type gains an additional 3d6 Woodland Spirits under the command of a Woodland Spirit. These attackers are owned by the caster of this spell, but will disappear after any battles."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Eternal Pyre"
@@ -205,7 +205,7 @@
 #details "Generates 20 fire gems per month."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Fata Morgana"
@@ -228,7 +228,7 @@
 #details "Adds a Phanatasmal Chief commander to all province defence. Province defence gains two Phantasmal Warriors per point, and one Phantasmal Archer per point. At 20+, each point also adds a Phantasmal Knight. Friendly provices lose 10 unrest per turn. There is a 50% chance to hide all units from scouts in friendly dominion, otherwise the number of units is multiplied by a random number between 0 and 5."
 
 #spelltype 4
-#scalerate 0
+
 #end	
 
 #neweffect "Forge of the Ancients"
@@ -251,7 +251,7 @@
 #details "All magic items forged have their gem cost reduced by 20%. All mages craft items as if they had the ability Master smith +1."
 
 #spelltype 4
-#scalerate 0
+
 #end	
 
 #neweffect "Foul Air"
@@ -276,7 +276,7 @@
 #details "Worldwide Unrest +d4. In battles, every 320 ticks (or 23.4375 times a round), all creatures with less hitpoints than their maximum become diseased. Inanimate and demonic creatures are not affected by this."
 
 #spelltype 4
-#scalerate 0
+
 #end	
 
 #neweffect "Gale Gate"
@@ -299,7 +299,7 @@
 #details "Grants 20 air gems per turn."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Ghost Ship Armada"
@@ -324,7 +324,7 @@
 #details "Does not function if Sea of Ice is active. Initially creates one (Torgrin's) armada, with additional lesser armadas appearing as gold is pillaged, to a maximum of 5. Provinces are picked at random and considered not eligible and rerolled if any of the following are true:\n\nNot coastal\nOwned by the caster or their team\nContains a sieged fort owned by the caster or their team\nDirectly adjacent to the province hit by Torgrin's component of the armada or the last province targeted by a lesser armada\nPopulation less than 10 * (closed d25 + 24), and the attempt number is less than (number of provinces on the map / 5, rounded down)\nContains a fort, and the attempt number is less than the number of provinces on the map\n\nTorgrin's armada consists of:\n\n32 armoured Damned Buccaneers\n44 unarmoured Damned Buccaneers\nDamned Admiral with The Admiral's Sword scripted to Attack\nTwo Damned Captains, one with Star of Heroes and the other with a Flesh Eater, scripted to Attack Rear\nDamned Captain with an Ice Pebble Staff scripted to cast Spells\nDamned Captain with a Knife of the Damned scripted to Attack\nDamned Boatswain, F2, 2 fire gems, scripted cast Spells\nDamned Boatswain, A2, 1 air gem, scripted cast Spells\n\nLesser armadas consist of:\n\n12 armoured and unarmoured Damned Buccaneers\nTwo Damned Captains scripted to Attack\nDamned Boatswain, random level 2 in AWD\n\nIf any armada loses a battle, it is killed off. If all armadas are defeated, the spell ends and the global enchantment is removed.\n\nOtherwise, the province is pillaged and left empty. The population killed is 10 * openended 2d100, to a maximum of half the province's population. Forts reduce the popkill by 25%. Generates (popkill/20) unarmed corpses. Generates (popkill/5) unrest or 50, whichever is smaller. The last armada generates (popkill/10 - (closed d(popkill/100) - 1)) gold for the enchantment's owner.\nEvery 350 gold obtained this way creates an additional armada, or recreates one that was previously defeated."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Gift of Health"
@@ -347,7 +347,7 @@
 #details "Friendly units gain 10% HP per point of friendly dominion. There is a (10*dominion) chance for friendly units to experience a healer check, in the same way as a regular healer, but that affects all units (including inanimates and undead). Aging reduced by half."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Gift of Nature's Bounty"
@@ -370,7 +370,7 @@
 #details "Income: +20% per dominion."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Guardians of the Deep"
@@ -393,7 +393,7 @@
 #details "Underwater province defence gains a Sea Troll commander, and a variety of other sea creatures (all die rolls are closed):\n1d4 Sea Serpents\n1d6 Giant Lobsters\n1d6 Sharks\n25% chance for 1d6 Sea Trolls\n\nIn Deep Seas only:\n\n1d8 Krakens\n25% chance for a single Monster Fish\n\nIn underwater provinces that are not Deep Seas:\n\n1d6 Sea Stags\n1d6 Leocampus\n1d6 Sea Dogs\n25% chance for a single Asp Turtle\n\nAdditionally, there is a 25% chance each turn that a single random hostile underwater province under the caster's dominion is attacked by an identical composition of units to those that would appear in the additional province defence due to this spell."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Haunted Forest"
@@ -417,7 +417,7 @@
 #descr 32 "Vines will merge with anyone killed in the God's Dominion, creating an undead Manikin. The Manikin will fight any enemies of the God for a short while before it is totally dissolved by the vines. Undead or inanimate beings are not affected by the spell."
 #details "When the caster (or a member of their team) fights in friendly dominion, killed non-inanimate non-undead creatures transform into Manikins under the caster's (or team member's) control. These will persist for the remainder of the battle before disappearing."
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Lure of the Deep"
@@ -440,7 +440,7 @@
 #details "The chance of being lured (in percent) is 20 + (strength of caster's dominion * 20). Being lured forces an easy MR check to avoid drowning. Creatures that do not drown underwater are unaffected. The dominion of other players has a protective effect. This does not function at all outside of coastal provinces, or if either Sea of Ice or Thetis' Blessing are active. Damage from this spell is considered to have no source, and as such cannot be redirected, and kills do not add to the caster's kill stat. Sirens become 50 gold cheaper."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Maelstrom"
@@ -463,7 +463,7 @@
 #details "Grants 15 Water, 5 astral, 3 air and 1 of each other gem type each month."`
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Mechanical Militia"
@@ -486,7 +486,7 @@
 #details "Adds a Mechanical Man commander to all province defence. Province defence gains two Mechanical Men per point. At 20+, each point also adds an Iron Fly."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Mother Oak"
@@ -509,7 +509,7 @@
 #details "Generates 10 nature gems per turn."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Perpetual Storm"
@@ -534,7 +534,7 @@
 #details "All battles are affected by Storm. Income -20%, except underwater and cave provinces are not affected. Map movement costs are increased by 2. Murdering Winter, Flames from the Sky, and Fires from Afar have a 25% chance of failing. Seeking Arrow has a 75% chance of failing. Sailing becomes impossible, and Storm Power or Storm Immunity is required to fly even on the strategic map."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Purgatory"
@@ -557,7 +557,7 @@
 #details "All hostile undead beings in the caster's dominion have a (Dominion * 10)% chance of being hit by 6 AP fire damage, multiplied by 3 after resistances and vulnerabilities. Damage from this spell is considered to have no source, and as such cannot be redirected, and kills do not add to the caster's kill stat."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Riches from Beneath"
@@ -580,7 +580,7 @@
 #details "Income for all provinces is increased by (friendly dominion * original income) / 25 + (friendly dominion * mine gold income) / 5. Friendly dominion is capped at 5 for this calculation.\nResources in all provinces are increased by (friendly dominon * 20) percent, to a maximum of doubling at 5 points of friendly dominion.\n\nCasting Gift of Nature's Bounty in conjunction with this spell will additionally cap friendly dominion to 5 for the purposes of Nature's Bounty's calculations."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Sea of Ice"
@@ -602,7 +602,7 @@
 #descr 4 "All lakes, seas and rivers in the world are frozen by this powerful enchantment. This makes travel between land and sea impossible, except by magical means such as teleportation. The frozen seas also prevent all means of sailing."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Second Sun"
@@ -625,7 +625,7 @@
 #details "Gradually shifts Growth scales across the world towards Death, at the rate of 1 per six turns. Immediately gives all provinces +1 Heat, and adds 1 more Heat per two turns, to a maximum of +4 Heat after six turns.\nThe effect of Sun Awe is increased by +2 in situations where it is active."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 
@@ -649,7 +649,7 @@
 #details "Generates 5 astral pearls per month."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Strands of Arcane Power"
@@ -672,7 +672,7 @@
 #details "Site searching: In each province that is owned and under friendly dominion, for each path the caster has, roll an exploding d10 and add the caster's path level. Search the province according to the die result:\n\n21+ - search at level 3\n16+ - search at level 2\n11+ - search at level 1\n\nEach turn, every hostile non-mindless mage in the caster's dominion must make a MR check, unaffected by the caster's pen boosters or Astral level. If they succeed this, nothing further happens to them.\nIf they are not an astral mage, they are attacked with 10 AN magical damage, with another MR roll to negate it. This MR roll does use the caster's penetration bonus from items, and adds (their astral level/2) rounded down to the penetration value. Damage inflicted this way is not attributed to the global caster, and will not trigger Blood Vengeance or similar effects, nor do enemies killed this way add to his kills stat.\nIf they are an astral mage, both parties roll (their current astral level) + closed d6. The caster of this spell wins ties. The loser becomes feebleminded."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Eyes of God"
@@ -695,7 +695,7 @@
 #details "Adds +25 patrol strength to every friendly province under friendly dominion, providing that there is positive patrol strength there already. Troop counts from scout reports in all provinces under the caster's dominion have no margin of error. Additionally, all battles in the caster's dominion experience a battle enchantment-like effect: every 320 ticks (or 23.4375 times a round), 6% of the field is selected at random. Illusory creatures that are hostile to the caster struck for 999 AN magical damage, with a MR check to avoid the effect. Damage inflicted this way is considered to be from the spell's caster and will add to their kills stat."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Kindly Ones"
@@ -721,7 +721,7 @@
 #details "All three Erinyes will not attack those underwater. Both Alecto and Megeara each seek out one blood mage completely at random. Tisiphone seeks out any hostile commander that has kills. Upon being cast all three Erinyes are returned to life if they were previously slain. Once killed, they will not return until the spell is recast. Once all three die, the enchantment ends."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Looming Hell"
@@ -744,7 +744,7 @@
 #details "Up to 5 random enemy non-commander units inside the dominion will be offered to sell their souls. Mindless units and those not under a leader are not eligible. They get a Morale check vs 10 + dominion to resist (4 easier to resist if their commander has fear). There is a 5% chance per point of dominion for any given check to not count to the limit of 5. Failing to resist begins an assassination bettle of the deserting unit and a Devil commander against the deserter's original commander."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Wrath of God"
@@ -769,7 +769,7 @@
 #details "Enemy units have a (turmoil + 2 + 2 * caster's dominion in the province)% chance to be struck by lightning, with a minimum strike chance of 1%. Those in underwater provinces and caves are unaffected. Being struck inflicts 9 AN shock damage, which is not attributed to the caster."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Thetis Blessing"
@@ -792,7 +792,7 @@
 #details "Non-amphibious units suffer the regular Poor Amphibian penalty: -50% combat speed, Att -3, Def -3, Enc +1. Prevents the drowning of blood slaves underwater, but does not enable underwater blood hunting."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 
@@ -817,7 +817,7 @@
 #details "Worldwide Income and Resources -90%, except in caves and deep seas. All battles are fought under Darkness -6. Additionally, selects 4 provinces at random to consider attacking. Provinces owned by the caster or their team are skipped. If Purgatory is active, provinces outside the caster's dominion are also skipped. Provinces are attacked by one the following parties, at equal weighting. All die rolls are open ended.\n\n1 Fiend of Darkness commander\n1 Shade Beast commander with 1d6 Shades\n1 Shade Lord commander with 1d4 Shades 1 Shadow Soldier\n\nThese units belong to Special Monsters and the caster does not receieve battle reports for them."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 
@@ -842,7 +842,7 @@
 #details "All hostile commanders in friendly dominion have a  (5 + dominion * 2)% chance to be attacked by some kind of water or ice elemental. The first of the following criteria that are met determines what manner of elemental attacks:\n\nIf underwater, the attacker is a size 5 water elemental\nIf in Cold 2, the attacker is a size 4 ice elemental\nIf in Cold 3, the attacker is a size 5 ice elemental\nIf in a coastal province, the attacker is a size 6 water elemental\nIf in a swamp province, the attacker is a size 6 water elemental\nIf not inanimate or in a freshwater province, the attacker is a size 3 water elemental\nOtherwise, the attacker is a size 2 water elemental."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 
@@ -866,7 +866,7 @@
 #details "Generates 21 Death gems each month. Increases income worldwide by +10%."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Wild Hunt"
@@ -889,7 +889,7 @@
 #details "The Wild Hunt targets enemy priests located in forest provinces.\n\nHerne the Lord of the Hunt targets land forest provinces. He will preferentially target the enemy priest with the highest holy magic level found in forests, even if they are sneaking, and is somewhat biased towards low province IDs: this is due to searching in increasing IDs with a 50% chance to skip over any given province. He will only attack the first valid commander he finds. Herne himself attacks victims in assassination settings. He is a E1N5 mage with 2 nature and 1 earth gem, is scripted to cast spells, and is equipped with an Enchanted Spear, Wall Shaker, and Amulet of Resilience. He is always accompanied by 12 Barghests and 17 Wolves, and his retinue of 6d6 Black Dogs. Should he lose an assassination battle, the spell will end and the enchantment will fade.\n\nThis spell also spawns lesser attacks. Unlike Herne, these select land forest provinces entirely at random, and will always attack the nonsneaking hostile priest in the selected province with the lowest commander ID. This makes 210 attempts: failing to find a commander to attack consumes 1 attempt, and successfully attacking a commander consumes 51 attempts, meaning that there are a maximum of 5 such attacks per turn. A single commander can be attacked multiple times by lesser attacks. The failure of a lesser attack does not reduce future attacks, nor does it result in the enchantment ending.\n\nLesser attacks are comprised of one of following, at equal chances. All die rolls are openended.\n\nBarghest commander, 1d6 + 4 Black Dogs\nCu Sidhe commander, 1d4 + 2 Cu Sidhe\nDire Wolf commander, 1d10 + 10 Wolves"
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Wrath of the Sea"
@@ -914,7 +914,7 @@
 #details "-30% income in all coastal provinces."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Grip of Winter Global"
@@ -925,8 +925,8 @@
 #unique 1
 #spelltype 4
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 7

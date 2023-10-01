@@ -7,8 +7,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 1.6
+
+-- 
 
 #aoe 1
 #power 7
@@ -44,8 +44,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 
 #aoe 1
 #power 9
@@ -81,8 +81,8 @@
 -- evo
 #spelltype 2
 
-#scalerate 3
--- #scalecost 1.6
+
+-- 
 
 
 -- even 5% of field may be too strong

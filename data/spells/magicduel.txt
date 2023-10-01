@@ -8,7 +8,7 @@
 -- evo-like
 #spelltype 2
 
-#scalerate 0
+
 
 #aoe 0
 #power 3
@@ -41,7 +41,7 @@
 ---- evo-like
 --#spelltype 2
 --
---#scalerate 0
+--
 --
 --#aoe 0
 --#power 3

@@ -23,11 +23,11 @@
 #name 8 "Summon NAMEPREFIX Troll %King%"
 #descr 8 "The caster summons ARTICLE %Troll King% to fight for him on the battlefield. The %Troll King% is large, strong, and skilled in earth magic, but will leave once the battle is over."
 
-#scalefatiguemult 40
+
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.8
+
+
 #end
 
 #neweffect "Summon Troll King"
@@ -41,9 +41,9 @@
 #pathlevel 4
 #fatiguecost 3500
 #chassisvalue 1000
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 40
@@ -56,7 +56,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

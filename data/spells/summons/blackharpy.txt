@@ -108,8 +108,8 @@
 #paths 66
 #secondarypaths 66
 
--- #scalefatigueexponent 0.5
--- #scalefatiguemult 20
+-- 
+-- 
 
 #name 64 "$Send$ NAMEPREFIX Black Harpies"
 #name 2 "$Send$ NAMEPREFIX Black Harpies"
@@ -118,7 +118,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

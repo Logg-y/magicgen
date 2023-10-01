@@ -95,8 +95,8 @@
 #paths 4
 #secondarypaths 4
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 27
+
+
 
 #name 4 "$Send$ NAMEPREFIX %kydnid%"
 #descr 4 "The caster summons ARTICLE %kydnid% to attack a distant province. The kydnid is a warrior naiad that is prepared to leave her home to fight for the caster. They are stunningly beautiful and may halt attackers in their tracks."
@@ -105,7 +105,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

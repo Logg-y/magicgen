@@ -44,14 +44,14 @@
 
 #power 4
 #maxpower 16
-#scalerate 0.75
+
 #pathlevel 3
 
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX Touch of Molten Earth"
 #descrcond range < 10 1 "The caster's touch rapidly melts the earth over a SIZE area. Those entering the resulting lava pool will rapidly become  severely burned by the molten rock. Those in the area to begin with may become permanently trapped as the lava quickly hardens around them, killing them. It is however much more difficult to trap strong, agile, or ethereal beings this way. Creatures that can fly or float are completely unaffected by this spell."
-#scalefatiguemult 8
-#scalefatigueexponent -1.2
+
+
 #pathperresearch 0.3
 #end
 
@@ -86,14 +86,14 @@
 
 #power 4
 #maxpower 16
-#scalerate 0.2
+
 #pathlevel 3
 
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX Touch of Molten Earth"
 #descrcond range < 10 1 "The caster's touch rapidly melts the earth over a SIZE area. Those entering the resulting lava pool will rapidly become  severely burned by the molten rock. Those in the area to begin with may become permanently trapped as the lava quickly hardens around them, killing them. It is however much more difficult to trap strong, agile, or ethereal beings this way. Creatures that can fly or float are completely unaffected by this spell."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

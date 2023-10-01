@@ -89,8 +89,8 @@
 
 #skipchance 99.86666666666666
 
-#scalefatigueexponent 0.7
-#scalefatiguemult 120
+
+
 
 #paths 128
 #secondarypaths 128
@@ -100,7 +100,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

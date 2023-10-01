@@ -21,7 +21,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon earth royal"
@@ -49,7 +49,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon water royal"
@@ -77,7 +77,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon fire royal"
@@ -105,7 +105,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 
@@ -136,7 +136,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon father illearth"
@@ -165,5 +165,5 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end

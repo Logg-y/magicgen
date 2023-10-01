@@ -25,8 +25,8 @@
 #descr 8 "The caster converts some rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
 #details "The targeted province gains 50 resources for the duration of the spell. This spell only functions if cast on a fort, otherwise its effects are wasted."
 
-#scalefatiguemult 120
-#scalerate 1
+
+
 
 #spelltype 4
 #end
@@ -58,8 +58,8 @@
 #descr 8 "The caster converts rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
 #details "The targeted province gains 200 resources for the duration of the spell. This spell only functions if cast on a fort, otherwise its effects are wasted."
 
-#scalefatiguemult 120
-#scalerate 1
+
+
 
 #spelltype 4
 #end
@@ -91,8 +91,8 @@
 #descr 8 "The caster converts a large amount rock in the targeted province to ore, ready to be forged into military equipment. While the enchantment lasts, more resources will be available in the targeted province."
 #details "The targeted province gains 2000 resources for the duration of the spell.  This spell only functions if cast on a fort, otherwise its effects are wasted."
 
-#scalefatiguemult 120
-#scalerate 1
+
+
 
 #spelltype 4
 #end

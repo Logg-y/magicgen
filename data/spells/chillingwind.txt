@@ -39,7 +39,7 @@
 #secondarypaths w
 #secondarypathchance 3
 
-#scalefatigueexponent 0
+
 
 #name 2 "NAMEPREFIX Chilling Gale"
 #name b "NAMEPREFIX Chilling Gale"
@@ -49,8 +49,8 @@
 #nextspell "Chilling Winds Fatigue"
 
 #spelltype 42
-#scalerate 4
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 
@@ -79,7 +79,7 @@
 #secondarypaths 4
 #secondarypathchance 3
 
-#scalefatigueexponent 0
+
 
 #name 2 "NAMEPREFIX Chilling Wind"
 #name b "NAMEPREFIX Chilling Wind"
@@ -89,8 +89,8 @@
 #nextspell "Chilling Winds Fatigue"
 
 #spelltype 42
-#scalerate 0.30000000000000004
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 
@@ -127,8 +127,8 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 #end
 

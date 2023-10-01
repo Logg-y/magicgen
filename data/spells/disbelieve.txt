@@ -9,8 +9,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 0
 #power -2
@@ -22,9 +22,9 @@
 #precision 100
 #range 100
 
-#scalerate 0.4
+
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.1
 
 #skipchance 80
@@ -49,8 +49,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 666
 #power 6

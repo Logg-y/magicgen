@@ -23,7 +23,7 @@
 
 
 #power 1
--- #scalecost 1.0
+-- 
 #pathlevel 1
 #schools 16
 #skipchance 60
@@ -54,7 +54,7 @@
 
 
 #power 1
--- #scalecost 1.0
+-- 
 #pathlevel 1
 #schools 16
 #skipchance 60
@@ -86,11 +86,11 @@
 
 #spelltype 20
 
-#scalefatiguemult 2
+
 
 #power 1
-#scalerate 4
--- #scalecost 1.0
+
+-- 
 #pathlevel 2
 #schools 16
 #skipchance 60

@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 4000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 144
@@ -18,7 +18,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Magical Permeation"
 #name 128 "Magical Permeation"
@@ -37,7 +37,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 5500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 144
@@ -48,7 +48,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Channels to the Void"
 #name 128 "Channels to the Void"

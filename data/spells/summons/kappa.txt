@@ -95,8 +95,8 @@
 #paths 4
 #secondarypaths 4
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 40
+
+
 
 #name 4 "$Send$ NAMEPREFIX %kappa%"
 #descr 4 "The caster summons ARTICLE %kappa% to attack a distant province. The kappa is a scaled humanoid with a turtle shell which tires easily on land."
@@ -105,7 +105,7 @@
 
 #spelltype 60
 
-#scalerate 4
+
 #end
 
 

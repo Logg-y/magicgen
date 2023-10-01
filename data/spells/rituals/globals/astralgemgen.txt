@@ -21,7 +21,7 @@
 -- #details "Generates 2d6 earth gems per month, so long as there is a friendly province that is not under siege."
 -- 
 -- #spelltype 4
--- #scalerate 0
+-- 
 -- #end
 
 #neweffect "Astralgengem 3d6"
@@ -46,7 +46,7 @@
 #details "Generates 3d6 astral pearls per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Astralgengem 6d6"
@@ -71,7 +71,7 @@
 #details "Generates 6d6 astral pearls per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 
@@ -97,7 +97,7 @@
 #details "Generates 9d6 astral pearls per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 -- nexus is fine
@@ -123,5 +123,5 @@
 -- #details "Generates 12d6 earth gems per month, so long as there is a friendly province that is not under siege."
 -- 
 -- #spelltype 4
--- #scalerate 0
+-- 
 -- #end

@@ -29,11 +29,11 @@
 #details "Students of Rhuax are F2E2 mages with the following random paths:\n20% FE"
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.4
+
+
 #pathperresearch 0.4
 #end
 
@@ -48,9 +48,9 @@
 #pathlevel 3
 #fatiguecost 1900
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools conj
 
 #skipchance 70
@@ -68,7 +68,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 
@@ -106,11 +106,11 @@
 #details "Acolytes of Rhuax are F3E3 mages."
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.4
+
+
 #pathperresearch 0.4
 #end
 
@@ -125,9 +125,9 @@
 #pathlevel 5
 #fatiguecost 3200
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools conj
 
 #skipchance 70
@@ -145,7 +145,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

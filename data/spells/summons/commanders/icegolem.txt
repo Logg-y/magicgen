@@ -9,9 +9,9 @@
 #pathlevel 5
 #fatiguecost 3000
 #chassisvalue 1500
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 8
 
 #skipchance 40
@@ -29,7 +29,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 #neweffect "Ice Golem Remote Assassination"

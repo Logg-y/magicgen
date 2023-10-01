@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 8000
-#scalefatiguemult 1000
+
 #schools 32
 
 #paths 144
@@ -18,7 +18,7 @@
 
 #basescale 1
 #spelltype 4
-#scalerate 1.8
+
 
 #name 128 "Tomes from Beyond"
 #name 16 "Tomes from Beyond"
@@ -37,7 +37,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 8500
-#scalefatiguemult 1080
+
 #schools 32
 
 #paths 144
@@ -48,7 +48,7 @@
 
 #basescale 1
 #spelltype 4
-#scalerate 1.15
+
 
 #name 128 "Insights from Beyond"
 #name 16 "Insights from Beyond"

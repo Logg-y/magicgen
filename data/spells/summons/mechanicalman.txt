@@ -99,10 +99,10 @@
 
 #spelltype 20
 
-#scalerate 3
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 30
+
+
+
 #end
 
 

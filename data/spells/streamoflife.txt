@@ -23,16 +23,16 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.0
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of overflowing life"
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.4
-#scalefatiguemult 1
+
 #end
 
 #neweffect "Stream of Life Gemless"
@@ -47,7 +47,7 @@
 #precision 2
 #range 5035
 #pathlevel 2
-#fatiguecost 15
+#fatiguecost 5
 #explspr 10067
 #sound 41
 #paths 64
@@ -60,14 +60,14 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of overflowing life"
 
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
@@ -76,15 +76,15 @@
 #neweffect "Stream of Life battlefield"
 
 #effect 72
-#damage 5015
+#damage 5010
 #spec 36028797564752000
 #aoe 666
-#power 8
-#maxpower 8
+#power 7
+#maxpower 7
 #precision 2
 #range 5035
-#pathlevel 7
-#fatiguecost 400
+#pathlevel 6
+#fatiguecost 100
 #explspr 10067
 #sound 41
 #paths 64
@@ -97,20 +97,16 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 3
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of overflowing life"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.0
-#scalingset ""
 #end
-
-
-
 
 
 

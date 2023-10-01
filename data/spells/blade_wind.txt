@@ -29,8 +29,8 @@
 
 #spelltype 18
 
-#scalerate 3.5
--- #scalecost 0.15
+
+-- 
 #pathlevel 2
 #schools 4
 
@@ -40,7 +40,7 @@
 #descrcond range < 10 8 "The caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster hurls an incredible number of blades at a target very close to him. Being struck by this many blades at point blank range will be fatal to all but the most armoured foes."
 
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #end
 
@@ -81,12 +81,12 @@
 
 #spelltype 18
 
-#scalerate 2.5
--- #scalecost 0.15
+
+-- 
 #pathlevel 3
 #schools 4
-#scalefatigueexponent 1.1
-#scalefatiguemult 1
+
+
 #end
 
 #neweffect "Blade Wind AP Gemless"
@@ -125,11 +125,11 @@
 
 #spelltype 18
 
-#scalerate 2
--- #scalecost 0.15
+
+-- 
 #pathlevel 2
 #schools 4
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end

@@ -96,15 +96,15 @@
 #paths 1
 #secondarypaths 16
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 25
+
+
 
 #name 1 "$Send$ NAMEPREFIX Firebirds"
 #descr 1 "Summons ARTICLE %firebird% to attack a distant province. The firebird is a glowing bird that can create small bursts of flames."
 
 #spelltype 20
 
-#scalerate 4.0
+
 #end
 
 

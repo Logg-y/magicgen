@@ -50,10 +50,10 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 0.3
+
 #schools 4
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

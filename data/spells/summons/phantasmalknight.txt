@@ -92,15 +92,15 @@
 #paths 2
 #secondarypaths 2
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 5
+
+
 
 #name 2 "$Send$ NAMEPREFIX Phantasmal Knights"
 #descr 2 "Summons a group of phantasmal knights to attack a distant province."
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

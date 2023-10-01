@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.2
--- #scalecost 0.6
+
+-- 
 
 #aoe 4
 #power 4
@@ -38,8 +38,8 @@
 #namecond range < 10 b "NAMEPREFIX Touch of Liquification"
 
 #pathperresearch 0.4
-#scalefatigueexponent 1
-#scalefatiguemult 3
+
+
 #end
 
 #neweffect "Liquify Gemless"
@@ -52,8 +52,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 4
@@ -82,7 +82,7 @@
 #namecond range < 10 b "NAMEPREFIX Touch of Liquification"
 
 #pathperresearch 0.2
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #end
 

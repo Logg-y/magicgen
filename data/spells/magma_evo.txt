@@ -46,7 +46,7 @@
 
 #power 4
 #maxpower 14
-#scalerate 1.0
+
 #pathlevel 2
 
 #priority 1
@@ -57,8 +57,8 @@
 #descrcond range < 10 e "The caster's touch releases scorching magma which crushes and burns those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma which crushes and burns those close to the caster."
 #nextspell "Magma Fire"
-#scalefatiguemult 1
-#scalefatigueexponent 1.35
+
+
 #pathperresearch 0.4
 #end
 
@@ -99,7 +99,7 @@
 
 #power 4
 #maxpower 14
-#scalerate 1.0
+
 #pathlevel 2
 
 #priority 1
@@ -109,8 +109,8 @@
 #descrcond range < 10 f "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 e "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma from the ground which crushes those close to the caster."
-#scalefatiguemult 0
-#scalefatigueexponent 1.35
+
+
 #pathperresearch 0.4
 #end
 
@@ -152,7 +152,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 0.2
+
 #pathlevel 2
 
 #priority 1
@@ -163,8 +163,8 @@
 #descrcond range < 10 e "The caster's touch releases scorching magma which crushes and burns those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma which crushes and burns those close to the caster."
 #nextspell "Magma Fire"
-#scalefatiguemult 0
-#scalefatigueexponent 0
+
+
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
@@ -206,7 +206,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 0.2
+
 #pathlevel 2
 
 #priority 1
@@ -216,8 +216,8 @@
 #descrcond range < 10 f "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 e "The caster's touch releases scorching magma from the ground which crushes those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch releases scorching magma from the ground which crushes those close to the caster."
-#scalefatiguemult 0
-#scalefatigueexponent 0
+
+
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end

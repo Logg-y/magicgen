@@ -23,5 +23,5 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end

@@ -4,7 +4,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set range 3
@@ -45,7 +45,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -86,7 +86,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -122,7 +122,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -156,7 +156,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -191,7 +191,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -226,7 +226,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -264,7 +264,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set range 3
@@ -302,7 +302,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set range 3
@@ -340,7 +340,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set range 3
@@ -375,7 +375,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set range 3
@@ -411,7 +411,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #req range > 3
@@ -451,7 +451,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -486,7 +486,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -521,7 +521,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -556,7 +556,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -591,7 +591,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100
@@ -628,7 +628,7 @@
 #spelltype 2
 
 #power 1
-#scalefatigueexponent -0.5
+
 #mult fatiguecost 0.3
 #pathperresearch -0.23
 #set precision 100

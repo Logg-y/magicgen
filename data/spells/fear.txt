@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.25
--- #scalecost 0.25
+
+-- 
 
 #aoe 1
 #power -1

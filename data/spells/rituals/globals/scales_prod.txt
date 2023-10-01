@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -18,7 +18,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Productive Populace"
 
@@ -35,7 +35,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 4500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -46,7 +46,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Productive Populace"
 
@@ -65,7 +65,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -76,7 +76,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Productive Populace"
 
@@ -95,7 +95,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -105,7 +105,7 @@
 #eventset "Productivity theft 1"
 
 #spelltype 4
-#scalerate 0
+
 
 
 #name 16 "Redirect Sloth"
@@ -124,7 +124,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 8000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -134,7 +134,7 @@
 #eventset "Productivity theft 2"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Redirect Sloth"
 
@@ -152,7 +152,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 10000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 16
@@ -162,7 +162,7 @@
 #eventset "Productivity theft 3"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 16 "Redirect Sloth"
 

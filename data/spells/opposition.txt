@@ -21,15 +21,15 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 16
 
 #priority 1
 #namecond range < 1000 16 "NAMEPREFIX touch of opposition"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0.1
+
 #pathperresearch 0.2
 #end
 

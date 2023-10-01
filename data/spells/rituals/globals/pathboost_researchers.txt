@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 1400
+
 #schools 48
 
 #paths 1
@@ -18,7 +18,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 1 "Tomes of Burning Power"
 #descr 1 "This enchantment causes research tomes to occasionally become enchanted with fiery power, causing the researcher reading them to absorb the power and gain power in fire magic. This affects even researchers that were not fire mages to begin with."
@@ -34,7 +34,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 2
@@ -45,7 +45,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 2 "Tomes of Windborne Power"
 #descr 2 "This enchantment causes research tomes to occasionally become enchanted with stormy power, causing the researcher reading them to absorb the power and gain power in air magic. This affects even researchers that were not air mages to begin with."
@@ -61,7 +61,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 4
@@ -72,7 +72,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 4 "Tomes of Iceborne Power"
 #descr 4 "This enchantment causes research tomes to occasionally become enchanted with watery power, causing the researcher reading them to absorb the power and gain power in water magic. This affects even researchers that were not water mages to begin with."
@@ -89,7 +89,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 8
@@ -100,7 +100,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 8 "Tomes of Earthbound Power"
 #descr 8 "This enchantment causes research tomes to occasionally become enchanted with earthen power, causing the researcher reading them to absorb the power and gain power in earth magic. This affects even researchers that were not earth mages to begin with."
@@ -116,7 +116,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 16
@@ -127,7 +127,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 16 "Tomes of Otherworldly Power"
 #descr 16 "This enchantment causes research tomes to occasionally become enchanted with astral power, causing the researcher reading them to absorb the power and gain power in astral magic. This affects even researchers that were not astral mages to begin with."
@@ -143,7 +143,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 32
@@ -154,7 +154,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 32 "Tomes of Necromantic Power"
 #descr 32 "This enchantment causes research tomes to occasionally become enchanted with deathly power, causing the researcher reading them to absorb the power and gain power in death magic. This affects even researchers that were not necromancers to begin with."
@@ -170,7 +170,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 7000
-#scalefatiguemult 880
+
 #schools 48
 
 #paths 64
@@ -181,7 +181,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 64 "Tomes of Gaia's Power"
 #descr 64 "This enchantment causes research tomes to occasionally become enchanted with natural power, causing the researcher reading them to absorb the power and gain power in nature magic. This affects even researchers that were not nature mages to begin with."
@@ -197,7 +197,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 14000
-#scalefatiguemult 1760
+
 #schools 48
 
 #paths 128
@@ -208,7 +208,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 128 "Tomes of Infernal Power"
 #descr 128 "This enchantment causes research tomes to occasionally become enchanted with infernal power, causing the researcher reading them to absorb the power and gain power in blood magic. This affects even researchers that were not blood mages to begin with."
@@ -225,7 +225,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 8000
-#scalefatiguemult 1000
+
 #schools 48
 
 #paths 17
@@ -236,7 +236,7 @@
 
 #basescale 2
 #spelltype 4
-#scalerate 1
+
 
 #name 1 "Scriptures of Radiant Power"
 #name 16 "Scriptures of Radiant Power"

@@ -33,7 +33,7 @@
 
 #power 5
 #maxpower 14
-#scalerate 0.1
+
 #pathlevel 3
 
 #priority 1
@@ -65,7 +65,7 @@
 #paths fdb
 #secondarypaths 33
 #secondarypathchance 100
-#scalefatiguemult 0
+
 
 #name 32 "NAMEPREFIX Banefire"
 #name 1 "NAMEPREFIX Banefire"
@@ -77,8 +77,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.25
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -89,7 +89,7 @@
 #descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.4
 #end
 

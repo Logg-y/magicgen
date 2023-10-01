@@ -12,7 +12,7 @@ class SpellSecondaryEffect(object):
     def __init__(self):
         self.spelltype = 0
         self.params = ["power", "spelltype", "range", "precision", "damage", "aoe", "casttime", "nreff", "skipchance",
-                       "fatiguecost", "maxbounces", "scalecost", "scalerate", "pathperresearch", "scalefatigueexponent",
+                       "fatiguecost", "maxbounces", "pathperresearch",
                        "nextspell", "unitmod", "spec", "aispellmod"]
         self.power = 0
         self.spelltype = 0
@@ -35,10 +35,7 @@ class SpellSecondaryEffect(object):
         self.requiredresearchlevel = None
         self.scalingaoelimit = None
 
-        self.scalecost = 0.0
-        self.scalerate = 0.0
         self.pathperresearch = 0.0
-        self.scalefatigueexponent = 0.0
 
         self.fatiguepersquare = 0.0
 
@@ -265,9 +262,9 @@ class SpellSecondaryEffect(object):
         if not eff.canGenerateAtPowerlvl(actualpowerlvl, modifier, self):
             return False
 
-        scaleamt = eff.scalerate * ((actualpowerlvl * (actualpowerlvl + 1)) / 2)
+        scaleamt = eff.calcScaleamt(modifier, self, actualpowerlvl, "aoe")
         if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
-            finalaoe += scaleamt
+            finalaoe = scaleamt
 
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
@@ -282,7 +279,7 @@ class SpellSecondaryEffect(object):
             # this is quadratic, negative power differentials (from slower casting etc) should be considered 0
             finalpower = max(0, finalpower)
             print(f"scalingaoelimit: {scalingaoelimit} at rl{researchlevel} has maxbaseaoe {maxbaseaoe}, "
-                  f"spell has {finalaoe}, scaleamt was {scaleamt}")
+                  f"spell has {finalaoe}")
             if finalaoe > maxbaseaoe:
                 DebugLogger.debuglog(f"Secondary is invalid: failed scalingaoelimit",
                                      debugkeys.SECONDARYEFFECTCOMPATIBILITY)

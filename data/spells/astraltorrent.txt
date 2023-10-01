@@ -24,7 +24,7 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 0.2
+
 #schools 4
 
 #priority 1
@@ -33,7 +33,7 @@
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #descrcond range < 10 b "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #end
 
@@ -63,7 +63,7 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 0.375
+
 #schools 4
 
 #priority 1

@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 800
-#scalefatiguemult 20
+
 #schools 32
 
 #ainocast 1
@@ -16,7 +16,7 @@
 
 #eventset "Healing Site"
 
-#scalerate 5
+
 
 #basescale 10
 
@@ -56,7 +56,7 @@
 #maxpower 11
 #name 4 "Redirect Flow"
 #name 64 "Create Field"
-#scalerate 5
+
 #end
 
 
@@ -76,7 +76,7 @@
 #badaispell 1
 
 #nextspell "Healing Site Permanent"
-#scalerate 5
+
 
 #basescale 10
 

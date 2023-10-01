@@ -9,8 +9,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.7
--- #scalecost 0.7
+
+-- 
 
 #aoe 0
 #power 5
@@ -37,7 +37,7 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of petrification"
 #namecond range < 10 8 "NAMEPREFIX touch of petrification"
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.4
 #end
 
@@ -51,8 +51,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 0.7
+
+-- 
 
 #aoe 0
 #power 3
@@ -77,7 +77,7 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of lesser petrification"
 #namecond range < 10 8 "NAMEPREFIX touch of lesser petrification"
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.4
 #end
 
@@ -91,8 +91,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.7
+
+-- 
 
 #aoe 666
 #power 9
@@ -115,7 +115,7 @@
 
 #descr 8 "The caster attempts to petrify all creatures on the battlefield. There is a chance that they will not survive the recovery process."
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.4
 #scalingset ""
 #end

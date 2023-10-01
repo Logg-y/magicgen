@@ -22,9 +22,9 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #skipchance 20
-#scalerate 0.16
+
 #end
 
 
@@ -55,8 +55,8 @@
 #spelltype 528
 
 #skipchance 20
--- #scalecost 1.0
-#scalerate 3.2
+-- 
+
 #end
 
 

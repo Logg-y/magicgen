@@ -100,8 +100,8 @@
 #paths 8
 #secondarypaths 8
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 25
+
+
 
 #name 8 "$Send$ NAMEPREFIX Cave %Spider%"
 #descr 8 "The caster summons ARTICLE cave %spider% to attack a distant province. The cave spider is a strange spider from beneath the earth. Much like surface spiders, it can spit webs."
@@ -110,7 +110,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

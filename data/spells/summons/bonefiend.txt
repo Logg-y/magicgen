@@ -98,8 +98,8 @@
 #paths 128
 #secondarypaths 32
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 200
+
+
 #secondarypathchance 80
 
 #name 128 "$Send$ NAMEPREFIX Bone Fiends"
@@ -107,7 +107,7 @@
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

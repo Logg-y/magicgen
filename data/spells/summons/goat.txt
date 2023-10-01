@@ -101,9 +101,9 @@
 
 #spelltype 20
 
-#scalerate 6
 
-#scalefatigueexponent -0.15
+
+
 #end
 
 

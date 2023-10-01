@@ -6,8 +6,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 4
@@ -34,8 +34,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -66,8 +66,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -98,8 +98,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -131,8 +131,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -165,8 +165,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -197,8 +197,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 3
@@ -231,8 +231,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -263,8 +263,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 8
@@ -296,8 +296,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -327,8 +327,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -359,8 +359,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -391,8 +391,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 4
@@ -421,8 +421,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 7
@@ -451,8 +451,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 8
@@ -483,8 +483,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 7
@@ -513,8 +513,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -542,8 +542,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -572,8 +572,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -605,8 +605,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -637,8 +637,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 7
@@ -667,8 +667,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -697,8 +697,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -727,8 +727,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -757,8 +757,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 9
@@ -787,8 +787,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 6
@@ -817,8 +817,8 @@
 
 #spelltype 2048
 #unique 1
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -849,8 +849,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 5
@@ -879,8 +879,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 8
@@ -911,8 +911,8 @@
 #unique 1
 #spelltype 2048
 
-#scalerate 0
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 7

@@ -34,11 +34,11 @@
 #descr 64 "The caster attracts ARTICLE %Necromantic Initiate% onto the battlefield and uses magic to convince PRONOUN to fight for him. The %Necromantic Initiate% will leave once the battle is over."
 #details "Necromantic Initiates are human D1 mages."
 
-#scalefatiguemult 17
+
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.6
+
+
 #pathperresearch 0.4
 #end
 
@@ -53,9 +53,9 @@
 #pathlevel 2
 #fatiguecost 700
 #chassisvalue 100
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 #pathskipchance 64 80
 #pathskipchance 16 95
@@ -76,7 +76,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

@@ -9,8 +9,8 @@
 -- -- evo
 -- #spelltype 2
 -- 
--- #scalerate 0
--- -- #scalecost 1.1
+-- 
+-- -- 
 -- 
 -- #aoe 1
 -- #power 4
@@ -44,8 +44,8 @@
 -- -- evo, battlefield allowed, scale aoe
 -- #spelltype 42
 -- 
--- #scalerate 1
--- -- #scalecost 1.6
+-- 
+-- -- 
 -- 
 -- #aoe 0
 -- #power 4
@@ -81,7 +81,7 @@
 -- -- evo
 -- #spelltype 2
 -- 
--- #scalerate 0
+-- 
 -- 
 -- #aoe 1
 -- #power 8
@@ -114,8 +114,8 @@
 -- -- evo, battlefield allowed, scale aoe
 -- #spelltype 42
 -- 
--- #scalerate 1
--- -- #scalecost 1.6
+-- 
+-- -- 
 -- 
 -- #aoe 0
 -- #power 8

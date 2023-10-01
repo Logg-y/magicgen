@@ -102,15 +102,15 @@
 #paths 128
 #secondarypaths w
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 70
+
+
 
 #name 128 "Send NAMEPREFIX Ice Imps"
 #descr 128 "$BLOOD_INTRO$, the caster summons a group of ice imps to attack a distant province."
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

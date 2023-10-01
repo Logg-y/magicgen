@@ -6,7 +6,7 @@
 #paths -1
 #name 32 "Decay"
 #spelltype 2
-#scalerate 0
+
 #aoe 5
 #power 1
 #name 1 "Area Decay"
@@ -23,7 +23,7 @@
 #paths -1
 #name 32 "Decay"
 #spelltype 2
-#scalerate 0
+
 #aoe 1
 #power 1
 #name 1 "Banefire Decay"
@@ -66,7 +66,7 @@
 
 #power 5
 #maxpower 14
-#scalerate 1.0
+
 #pathlevel 3
 
 #priority 1
@@ -76,8 +76,8 @@
 #descrcond range < 10 1 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
 #descrcond range < 10 32 "The caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates the sickly greenish flames of the underworld. The flames consume the life force of those affected by them."
-#scalefatiguemult 10
-#scalefatigueexponent 1.4
+
+
 #end
 
 #neweffect "Banefire Instant"
@@ -98,7 +98,7 @@
 #paths 33
 #secondarypaths 33
 #secondarypathchance 100
-#scalefatiguemult 4
+
 
 #name 32 "NAMEPREFIX Banefire Explosion"
 #name 1 "NAMEPREFIX Banefire Explosion"
@@ -108,8 +108,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1.1
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -117,7 +117,7 @@
 #namecond range < 10 32 "NAMEPREFIX Banefire Burst"
 #descrcond range < 10 1 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 #descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
-#scalefatigueexponent 1.2
+
 #end
 
 #neweffect "Banefire Decay Cloud"
@@ -128,7 +128,7 @@
 #paths -1
 #name 32 "Decay"
 #spelltype 2
-#scalerate 0
+
 #aoe 1
 -- no visual
 #explspr 10360
@@ -156,7 +156,7 @@
 #paths fdb
 #secondarypaths 33
 #secondarypathchance 100
-#scalefatiguemult 4
+
 
 #name 32 "NAMEPREFIX Banefire Cloud"
 #name 1 "NAMEPREFIX Banefire Cloud"
@@ -168,15 +168,15 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.4
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 5000 d "Extended NAMEPREFIX Banefire Cloud"
 #namecond effect > 5000 f "Extended NAMEPREFIX Banefire Cloud"
 #namecond effect > 5000 b "Extended NAMEPREFIX Cloud of Buer"
-#scalefatigueexponent 1.3
+
 #end
 
 
@@ -213,11 +213,11 @@
 
 #power 9
 #maxpower 19
-#scalerate 5.0
+
 #pathlevel 6
 #nreff 20
 
-#scalefatigueexponent 1.3
+
 #end
 
 

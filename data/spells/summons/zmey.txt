@@ -21,7 +21,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 1
 #skipchance 97
 #end
@@ -99,10 +99,10 @@
 
 #spelltype 20
 
-#scalerate 1.5
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 100
+
+
+
 #end
 
 

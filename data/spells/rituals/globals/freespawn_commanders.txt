@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 450
+
 #schools 1
 #paths fawe
 #skipchance 0
@@ -39,7 +39,7 @@
 #details "In each friendly land province, there are three independent chances to spawn 1 random commander. Each chance is rolled individually for each province.\nThe first chance has a 5 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a 3 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a 1 percent chance to trigger per point of dominion."
 
 #spelltype 4
-#scalerate 1
+
 #end
 
 #neweffect "Freespawn Commanders Sorcery"
@@ -51,7 +51,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 450
+
 #schools 1
 #paths sdnb
 #skipchance 0
@@ -83,7 +83,7 @@
 #details "In each friendly land province, there are three independent chances to spawn 1 random commander. Each chance is rolled individually for each province.\nThe first chance has a 5 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a 3 percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a 1 percent chance to trigger per point of dominion."
 
 #spelltype 4
-#scalerate 1
+
 #end
 
 
@@ -96,7 +96,7 @@
 -- #nreff 1
 -- #pathlevel 7
 -- #fatiguecost 6000
--- #scalefatiguemult 450
+-- 
 -- #schools 1
 -- #paths 68
 -- #skipchance 80
@@ -128,7 +128,7 @@
 -- #details "In each friendly underwater province, there is a 4% chance per point of friendly dominion that a single commander spawns."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end
 
 ------------------------------
@@ -143,7 +143,7 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 6500
--- #scalefatiguemult 450
+-- 
 -- #schools 1
 -- #paths 255
 -- #skipchance 0
@@ -175,5 +175,5 @@
 -- #details "In each friendly land province, there is a 1.5% chance per point of friendly dominion that a single commander spawns."
 -- 
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- #end

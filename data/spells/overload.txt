@@ -48,7 +48,7 @@
 
 #power 4
 #maxpower 4
-#scalerate 0
+
 #pathlevel 2
 
 #priority 1

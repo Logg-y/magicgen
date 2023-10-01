@@ -94,15 +94,15 @@
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 25
+
+
 
 #name 64 "$Send$ NAMEPREFIX Lamias"
 #descr 64 "The caster summons lamias and directs them to attack a distant province."
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

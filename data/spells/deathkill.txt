@@ -9,8 +9,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 3
 #power 5
@@ -39,8 +39,8 @@
 #namecond range < 10 d "NAMEPREFIX slaying touch"
 #namecond range < 10 b "NAMEPREFIX slaying touch"
 
-#scalefatiguemult 5
-#scalefatigueexponent 1
+
+
 #end
 
 #neweffect "Death Instakill Gemless"
@@ -54,8 +54,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 1.1
+
+-- 
 
 #aoe 0
 #power 4
@@ -85,7 +85,7 @@
 #namecond range < 10 b "NAMEPREFIX slaying touch"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

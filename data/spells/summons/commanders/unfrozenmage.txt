@@ -27,11 +27,11 @@
 #descr 32 "The caster summons ARTICLE %Unfrozen Mage% to join him in battle. The %Unfrozen Mage% will leave once the battle is over."
 #descr 4 "The caster summons ARTICLE %Unfrozen Mage% to join him in battle. The %Unfrozen Mage% will leave once the battle is over."
 
-#scalefatiguemult 80
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent 0
+
+
 #scalingset ""
 #fatigueperresearch 0
 #pathperresearch 0.3
@@ -48,9 +48,9 @@
 #pathlevel 5
 #fatiguecost 4000
 #chassisvalue 330
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 16
 
 #skipchance 40
@@ -66,7 +66,7 @@
 #descr 4 "The caster summons an %Unfrozen Mage%. An %Unfrozen Mage% is the reanimated remains of a long-frozen human which can possess skill in death, water and earth magic."
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

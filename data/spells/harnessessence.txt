@@ -49,8 +49,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.1
+
+-- 
 
 #aoe 3
 #power 5
@@ -91,8 +91,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.35
--- #scalecost 1.1
+
+-- 
 
 #aoe 0
 #power 5
@@ -121,7 +121,7 @@
 #namecond range < 10 64 "NAMEPREFIX Touch of Harnessing"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.1
 #end
 

@@ -24,11 +24,11 @@
 #name 64 "Call NAMEPREFIX %Hamadryad%"
 #descr 64 "The caster summons ARTICLE %Hamadryad% onto the battlefield and uses magic to convince PRONOUN to fight for him. Hamadryads are immobile nature mages, but they will leave after the battle."
 
-#scalefatiguemult 30
+
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.8
+
+
 #end
 
 #neweffect "Summon Hamadryad"
@@ -42,9 +42,9 @@
 #fatiguecost 3100
 #pathlevel 5
 #chassisvalue 1200
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 70
@@ -59,7 +59,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 #neweffect "Hamadryad Remote Assassination"

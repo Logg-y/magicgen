@@ -65,9 +65,9 @@
 #details "Creates an independent SINGLERANDOMCREATURENAME commander in the targeted province. While it lives, one random non-independent non-sneaking commander in the targeted province will be assassinated by one of the creatures below. Multiple castings of this spell will produce multiple stealthed commanders, but only one attack can occur per turn regardless of how many are present."
 
 #spelltype 4
-#scalefatiguemult 50
-#scalefatigueexponent -1.65
-#scalerate 3
+
+
+
 #end
 
 
@@ -140,8 +140,8 @@
 #details "Creates an independent SINGLERANDOMCREATURENAME commander in the targeted province. While it lives, one random non-independent non-sneaking commander in the targeted province will be assassinated by one of the creatures below. Multiple castings of this spell will produce multiple stealthed commanders, but only one attack can occur per turn regardless of how many are present."
 
 #spelltype 4
-#scalefatiguemult 130
-#scalefatigueexponent -1.75
-#scalerate 3
+
+
+
 #end
 

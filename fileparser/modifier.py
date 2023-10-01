@@ -10,7 +10,7 @@ modifier_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipch
                        "pathlevel", "fatiguecost", "maxpower", "maxbounces", "casttime", "effect", "givecloudsfx",
                        "aispellmod", "reqdamaging", "spec", "maxfinalfatiguecost", "minfinalfatiguecost", "provrange"]
 modifier_params_str = ["details"]
-modifier_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent"]
+modifier_params_float = ["pathperresearch"]
 
 
 def readModifierFile(fp):

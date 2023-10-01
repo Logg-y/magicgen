@@ -11,12 +11,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- 
 -- #paths 1
@@ -40,12 +40,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 2
 -- #skipchance 98
@@ -68,12 +68,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 4
 -- #skipchance 98
@@ -98,7 +98,7 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #paths 8
@@ -109,7 +109,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Waves of Earthen Power"
 -- #descr 8 "This enchantment causes commanders in friendly dominion to randomly become engulfed in earthen energy. The energy is harmless, and becomes absorbed into the commander's body, permanently giving them increased ability with earth magic, even if they had none originally."
@@ -128,12 +128,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 16
 -- #skipchance 98
@@ -156,12 +156,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 32
 -- #skipchance 98
@@ -184,12 +184,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 8500
--- #scalefatiguemult 1080
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 64
 -- #skipchance 98
@@ -211,12 +211,12 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 17000
--- #scalefatiguemult 2160
+-- 
 -- #schools 48
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #paths 128
 -- #skipchance 98

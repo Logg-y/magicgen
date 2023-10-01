@@ -7,9 +7,9 @@
 -- evo, scale effect number
 #spelltype 258
 
-#scalerate 1.2
-#scalefatigueexponent 0.2
--- #scalecost 0.6
+
+
+-- 
 
 #aoe 0
 #power 1
@@ -61,8 +61,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1
--- #scalecost 0.1
+
+-- 
 
 #aoe 1
 #power 2
@@ -105,8 +105,8 @@
 -- evo, scale effect number
 #spelltype 258
 
-#scalerate 1
--- #scalecost 1
+
+-- 
 
 #aoe 666
 #power 5
@@ -144,7 +144,7 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 #scalingset ""
-#scalefatigueexponent 1.33
+
 #pathperresearch 0.4
 #end
 

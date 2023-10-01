@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 1500
-#scalecost 4
+
 #fatigueperresearch 250
 #schools 1
 
@@ -23,7 +23,7 @@
 
 #skipchance 70
 
-#scalerate 0.01
+
 #basescale 10
 
 -- on the offchance that this will one day be supported
@@ -62,8 +62,8 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 900
-#scalecost 4
-#scalefatiguemult 100
+
+
 #schools 1
 
 #fatigueperresearch 150
@@ -80,7 +80,7 @@
 
 #skipchance 70
 
-#scalerate 0.01
+
 #basescale 15
 
 -- on the offchance that this will one day be supported
@@ -120,7 +120,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
-#scalefatiguemult 50
+
 #schools 1
 
 #fatigueperresearch 200
@@ -137,7 +137,7 @@
 
 #skipchance 70
 
-#scalerate 0.01
+
 #basescale 30
 
 -- on the offchance that this will one day be supported

@@ -24,11 +24,11 @@
 #name 32 "Call NAMEPREFIX %Revenant%"
 #descr 32 "The death mage summons ARTICLE %Revenant% to join him in battle. The %Revenant% will leave once the battle is over."
 
-#scalefatiguemult 17
+
 #spelltype 528
 
-#scalerate 0.7
-#scalefatigueexponent -1.6
+
+
 #pathperresearch 0.4
 #end
 
@@ -43,9 +43,9 @@
 #pathlevel 2
 #fatiguecost 700
 #chassisvalue 100
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 70
@@ -59,7 +59,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

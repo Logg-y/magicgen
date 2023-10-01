@@ -22,5 +22,5 @@
 #details "There is a 12% chance per point of dominion to produce fortune telling spirits in each friendly province. Spirits have a 100% chance to prevent normal random negative events in their province."
 
 #spelltype 4
-#scalerate 0
+
 #end

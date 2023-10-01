@@ -99,8 +99,8 @@
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 27
+
+
 
 #name 64 "$Send$ NAMEPREFIX Great %Spider%"
 #descr 64 "The caster sends ARTICLE great %spider% to attack a distant province. The great spider has a venomous bite and can tangle enemies in webs, but has little resistance to magic."
@@ -108,7 +108,7 @@
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

@@ -57,8 +57,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 0
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #aoe 1
 #power 8
@@ -140,8 +140,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 0
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #aoe 1
 #power 8
@@ -221,8 +221,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 0
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #aoe 1
 #power 8
@@ -303,8 +303,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 0
 
-#scalerate 1
--- #scalecost 10
+
+-- 
 
 #aoe 1
 #power 8

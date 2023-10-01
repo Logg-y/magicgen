@@ -104,15 +104,15 @@
 #secondarypaths 0
 #newunit "Peasant"
 
---#scalefatigueexponent 0.5
---#scalefatiguemult 5
+--
+--
 
 #name fs "Send NAMEPREFIX %Peasant%"
 #descr fs "The caster fills the minds of commoners or travellers in a distant province with a desire to take up arms and form an uprising. Peasants are untrained and unarmoued, wielding pitchforks or similar makeshift weaponry. The effects of this spell are temporary: should they successfully take control of the province, those who survive will continue about their lives."
 
 #spelltype 20
 
-#scalerate 7
+
 #end
 
 

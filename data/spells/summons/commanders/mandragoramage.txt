@@ -30,11 +30,11 @@
 #details "Possessed Mandragora are N3D3 mages with the following random paths:\n50% FW\n50% FW"
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.4
+
+
 #pathperresearch 0.4
 #end
 
@@ -49,9 +49,9 @@
 #pathlevel 5
 #fatiguecost 3500
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools conj
 
 #skipchance 70
@@ -69,7 +69,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

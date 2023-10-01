@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 2
@@ -30,7 +30,7 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
-#scalefatigueexponent 1.2
+
 #end
 
 #neweffect "Mass Weakness"
@@ -42,16 +42,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 1.6
+
+-- 
 
 #aoe 666
-#power 8
-#maxpower 8
-#pathlevel 6
+#power 7
+#maxpower 7
+#pathlevel 4
 #explspr 10197
 #sound 31
-#fatiguecost 300
+#fatiguecost 200
 #precision 100
 #range 20
 
@@ -66,9 +66,7 @@
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
-#scalingset ""
 #end
-
 
 
 

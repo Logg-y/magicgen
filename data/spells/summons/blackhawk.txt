@@ -103,8 +103,8 @@
 #paths a
 #secondarypaths n
 
---#scalefatigueexponent 0.5
---#scalefatiguemult 20
+--
+--
 
 #name 64 "$Send$ NAMEPREFIX Black Hawks"
 #name 2 "$Send$ NAMEPREFIX Black Hawks"
@@ -113,7 +113,7 @@
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

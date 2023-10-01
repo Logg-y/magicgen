@@ -5,7 +5,6 @@
 
 #paths 32
 #power 0
-#scalefatigueexponent 0.3
 #pathperresearch 0.1
 #req effect == 2
 -- not ritual

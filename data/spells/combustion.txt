@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.30000000000000004
--- #scalecost 0.35
+
+-- 
 
 #aoe 0
 #power 0
@@ -19,7 +19,7 @@
 #fatiguecost 10
 #range 5020
 
-#scalefatigueexponent 1.2
+
 
 #paths 129
 #secondarypaths 1
@@ -39,7 +39,7 @@
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of ignition"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of ignition"
 
-#scalefatiguemult 1
+
 #maxpower 14
 #pathperresearch 0.4
 #end
@@ -53,8 +53,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.35
+
+-- 
 
 #aoe 666
 #power 7
@@ -64,7 +64,7 @@
 #fatiguecost 200
 #range 5020
 
-#scalefatigueexponent 1.2
+
 
 #paths 129
 #secondarypaths 1
@@ -84,7 +84,7 @@
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of ignition"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of ignition"
 
-#scalefatiguemult 1
+
 #maxpower 7
 #scalingset ""
 #end
@@ -100,8 +100,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.5
--- #scalecost 0.35
+
+-- 
 
 #aoe 666
 #power 8
@@ -111,7 +111,7 @@
 #fatiguecost 300
 #range 5020
 
-#scalefatigueexponent 1.2
+
 
 #paths 129
 #secondarypaths 1
@@ -131,7 +131,7 @@
 #namecond effect > 1000 1 "NAMEPREFIX $mist$ of ignition"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of ignition"
 
-#scalefatiguemult 1
+
 #maxpower 8
 #scalingset ""
 #end

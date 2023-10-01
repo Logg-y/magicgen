@@ -8,9 +8,9 @@
 
 #spelltype 18
 
-#scalerate 1.25
---#scalefatigueexponent -0.1
--- #scalecost 0.6
+
+--
+-- 
 
 #nreff 5
 #aoe 0
@@ -33,7 +33,7 @@
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX Touch of Unraveling"
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly for magic beings, but harmless for most creatures."
-#scalefatigueexponent 1.5
+
 #pathperresearch 0.4
 #end
 
@@ -47,9 +47,9 @@
 
 #spelltype 18
 
-#scalerate 0.2
---#scalefatigueexponent -0.1
--- #scalecost 0.6
+
+--
+-- 
 
 #nreff 1
 #aoe 0
@@ -73,7 +73,7 @@
 #namecond range < 10 16 "NAMEPREFIX Touch of Disenchantment"
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly for magic beings, but harmless for most creatures."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.25
 #end
 

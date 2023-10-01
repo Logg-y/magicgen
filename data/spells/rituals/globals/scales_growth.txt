@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 192
@@ -18,7 +18,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
@@ -37,7 +37,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 4500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 192
@@ -48,7 +48,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
@@ -69,7 +69,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 192
@@ -80,7 +80,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 64 "Gift of Fertility"
 #name 128 "Fertility of Blood"
@@ -101,7 +101,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 32
@@ -111,7 +111,7 @@
 #eventset "Growth theft 1"
 
 #spelltype 4
-#scalerate 0
+
 
 
 #name 32 "Theft of Growth"
@@ -130,7 +130,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 8000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 32
@@ -140,7 +140,7 @@
 #eventset "Growth theft 2"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 32 "Theft of Growth"
 
@@ -158,7 +158,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 10000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 #paths 32
@@ -168,7 +168,7 @@
 #eventset "Growth theft 3"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 32 "Theft of Growth"
 

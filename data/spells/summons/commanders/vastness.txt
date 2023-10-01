@@ -26,11 +26,11 @@
 #descr 16 "The caster summons ARTICLE %Vastness% onto the battlefield. Vastnesses are strange Void beings which command Astral power, but will leave after the battle."
 #details "Creatures summoned with this spell are not sacred."
 
-#scalefatiguemult 120
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent 0
+
+
 #scalingset ""
 #fatigueperresearch 0
 #pathperresearch 0.2
@@ -47,9 +47,9 @@
 #pathlevel 5
 #fatiguecost 3000
 #chassisvalue 800
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 40
@@ -66,7 +66,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

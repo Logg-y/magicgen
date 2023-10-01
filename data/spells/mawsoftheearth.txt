@@ -7,7 +7,7 @@
 -- evo
 #spelltype 2
 #aoe 1
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 8 "Grip of the Earth"
@@ -49,9 +49,9 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 1.7
+
 #schools alt
-#scalefatigueexponent 1.4
+
 #end
 
 
@@ -89,9 +89,9 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.33
+
 #schools alt
-#scalefatigueexponent 0
+
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end

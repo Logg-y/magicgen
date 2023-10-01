@@ -9,7 +9,7 @@
 -- evo, scale aoe
 #spelltype 34
 #aoe 1
-#scalerate 0
+
 #power 2
 #name 2 "Shake Nerves"
 #name 2 "Additional Fright"
@@ -43,14 +43,14 @@
 
 -- evo-like, scale aoe
 #spelltype 34
-#scalerate 0.4
+
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of thunderclaps"
 #namecond range < 10 2 "NAMEPREFIX Thunderous Touch"
 
-#scalefatigueexponent 0
+
 #pathperresearch 0.15
 #fatigueperresearch 0
 #end

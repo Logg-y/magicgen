@@ -20,8 +20,8 @@
 #secondarypaths 0
 #secondarypathchance 0
 
-#scalerate 0.75
-#scalefatigueexponent 0
+
+
 #pathperresearch 0.34
 
 #name 1 "Transmute Fire"

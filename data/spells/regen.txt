@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.3
--- #scalecost 1.0
+
+-- 
 
 #aoe 0
 #power 2
@@ -40,7 +40,7 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of regeneration"
 
-#scalefatigueexponent 1.4
+
 #pathperresearch 0.3
 #end
 
@@ -54,8 +54,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
--- #scalecost 1.0
+
+-- 
 
 #aoe 666
 #power 8
@@ -94,8 +94,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
--- #scalecost 1.0
+
+-- 
 
 #aoe 0
 #power 1
@@ -135,8 +135,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
--- #scalecost 1.0
+
+-- 
 
 #aoe 666
 #power 7
@@ -176,7 +176,7 @@
 #aoe 1
 #spelltype 41
 #maxpower 30
-#scalerate 0
+
 #name 64 "Additional Regeneration"
 #name 128 "Additional Regeneration"
 #end
@@ -192,8 +192,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.8
--- #scalecost 1.0
+
+-- 
 
 #aoe 0
 #power 5
@@ -232,8 +232,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.7
--- #scalecost 1.0
+
+-- 
 
 #aoe 666
 #power 10

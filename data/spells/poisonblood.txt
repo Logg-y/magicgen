@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.4
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 4
@@ -35,7 +35,7 @@
 #namecond range < 10 32 "NAMEPREFIX poison touch"
 #namecond range < 10 64 "NAMEPREFIX poison touch"
 #namecond range < 10 b "NAMEPREFIX poison touch"
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #end
 

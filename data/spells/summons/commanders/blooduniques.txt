@@ -22,7 +22,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon arch devil"
@@ -49,7 +49,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end
 
 #neweffect "Summon heliophagus"
@@ -76,7 +76,7 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end	
 
 
@@ -104,5 +104,5 @@
 
 #spelltype 4
 
-#scalerate 0
+
 #end	

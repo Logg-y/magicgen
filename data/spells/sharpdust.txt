@@ -7,7 +7,7 @@
 -- evo
 #spelltype 2
 #aoe 0
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 1 "Internal Bleeding"
@@ -26,7 +26,7 @@
 -- evo
 #spelltype 2
 #aoe 0
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 1 "Irritate Eyes"
@@ -68,7 +68,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 1
+
 #schools alt
 #pathperresearch 0.4
 
@@ -107,10 +107,10 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.15
+
 #schools alt
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
@@ -141,7 +141,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+
 #schools alt
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #scalingset ""
@@ -178,7 +178,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 1
+
 #schools evo
 #pathperresearch 0.4
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
@@ -215,10 +215,10 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.15
+
 #schools evo
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
@@ -250,7 +250,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+
 #schools evo
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #scalingset ""
@@ -267,7 +267,7 @@
 -- evo
 #spelltype 2
 #aoe 0
-#scalerate 0
+
 #power 0
 #maxpower 50
 #name 4 "Rapid Chill"
@@ -304,7 +304,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 1
+
 #schools evo
 #pathperresearch 0.4
 #details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
@@ -340,10 +340,10 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.15
+
 #schools evo
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #end
@@ -375,7 +375,7 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 2.2
+
 #schools evo
 #scalingset ""
 #end

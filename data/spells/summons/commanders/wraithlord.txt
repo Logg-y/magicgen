@@ -23,11 +23,11 @@
 #name 32 "Summon NAMEPREFIX Wraith %Lord%"
 #descr 32 "The caster summons ARTICLE %Wraith Lord% to fight for him on the battlefield. The %Wraith Lord% %is% ARTICLE powerful undead warrior with knowledge of death magic, but will leave once the battle is over."
 
-#scalefatiguemult 20
+
 #spelltype 528
 
-#scalerate 1
-#scalefatigueexponent -1.6
+
+
 #end
 
 #neweffect "Summon Wraith Lord"
@@ -41,9 +41,9 @@
 #pathlevel 5
 #fatiguecost 4900
 #chassisvalue 2400
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 40
@@ -59,7 +59,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

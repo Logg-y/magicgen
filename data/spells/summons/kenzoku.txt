@@ -104,10 +104,10 @@
 #details "Units summoned by this spell are not sacred."
 #spelltype 20
 
-#scalerate 1
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 130
+
+
+
 #end
 
 

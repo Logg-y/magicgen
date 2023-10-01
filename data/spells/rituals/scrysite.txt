@@ -8,7 +8,7 @@
 #nreff 1
 #pathlevel 4
 #fatiguecost 300
-#scalefatiguemult 20
+
 #schools 32
 
 #ainocast 1
@@ -16,7 +16,7 @@
 
 #eventset "Scrying Site"
 
-#scalerate 1
+
 
 #basescale 3
 
@@ -60,7 +60,7 @@
 #name 4 "Pool of Scrying"
 #name 16 "Crystal of Scrying"
 #name 64 "Shrine of Bird Communion"
-#scalerate 1
+
 #end
 
 
@@ -82,7 +82,7 @@
 #badaispell 1
 
 #nextspell "Scrying Site Permanent"
-#scalerate 1
+
 
 #basescale 3
 

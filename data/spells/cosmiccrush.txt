@@ -28,10 +28,10 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.75
+
 #schools 4
-#scalefatiguemult 14
-#scalefatigueexponent -1.6
+
+
 #pathperresearch 0.4
 #end
 
@@ -65,10 +65,10 @@
 
 -- evo-like, scale nreff
 #spelltype 42
-#scalerate 0.12
+
 #schools 4
-#scalefatiguemult 0
-#scalefatigueexponent 0
+
+
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end

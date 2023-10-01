@@ -48,7 +48,7 @@
 
 #power 4
 #maxpower 14
-#scalerate 1
+
 #pathlevel 2
 
 #priority 1
@@ -59,7 +59,7 @@
 #descrcond range < 10 w "The caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #nextspell "Frostfire Ailments"
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -100,7 +100,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 0.2
+
 #pathlevel 2
 
 #priority 1
@@ -112,7 +112,7 @@
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch radiates frostfire at those close to him. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #nextspell "Frostfire Ailments"
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -154,11 +154,11 @@
 
 #power 7
 #maxpower 18
-#scalerate 5.0
+
 #pathlevel 5
 
 #nextspell "Frostfire Ailments"
-#scalefatigueexponent 1
+
 #end
 
 

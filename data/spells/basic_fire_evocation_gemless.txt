@@ -39,7 +39,7 @@
 
 #power 3
 #maxpower 14
-#scalerate 0.233
+
 #pathlevel 2
 
 #priority 1
@@ -48,7 +48,7 @@
 #descrcond range < 10 1 "The caster's touch radiates searing heat which scorches those close to the caster."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster's touch radiates the heat of Inferno, producing scorching heat that harms those close to the caster."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.62
 #end
 
@@ -85,8 +85,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.19
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
@@ -95,7 +95,7 @@
 #descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming anyone nearby."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming anyone nearby."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #end
 

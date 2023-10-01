@@ -103,8 +103,8 @@
 #secondarypaths 2
 #secondarypathchance 95
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 35
+
+
 
 #name 32 "$Send$ NAMEPREFIX Ziz"
 #descr 32 "The caster enchants the bones of ARTICLE great %eagle% in a distant province, where they attack soon after. The ziz is a reanimated great eagle which is terrifying and can fly in storms."
@@ -113,7 +113,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

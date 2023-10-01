@@ -103,8 +103,8 @@
 #paths 16
 #secondarypaths 16
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 12
+
+
 #newunit "Dweller-in-the-Deep"
 
 #name 16 "$Send$ NAMEPREFIX %Dweller%-in-the-Deep"
@@ -112,7 +112,7 @@
 #details "Creatures summoned with this spell are not sacred."
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

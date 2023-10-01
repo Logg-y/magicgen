@@ -21,8 +21,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 32
 
 
@@ -53,8 +53,8 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 32
 
 #priority 1

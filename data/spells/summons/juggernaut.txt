@@ -52,10 +52,10 @@
 
 #spelltype 4
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 800
 
-#scalerate 2
+
+
+
 
 #end
 

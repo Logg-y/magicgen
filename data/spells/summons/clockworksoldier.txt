@@ -21,7 +21,7 @@
 #descr 8 "The caster quickly forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless."
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #schools 8
 #end
 
@@ -74,7 +74,7 @@
 #spelltype 4
 
 
-#scalerate 0.7
+
 #end
 
 
@@ -100,8 +100,8 @@
 
 #spelltype 20
 
-#scalerate 3.0
-#scalefatiguemult 40
+
+
 #end
 
 

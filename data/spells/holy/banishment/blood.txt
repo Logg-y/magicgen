@@ -6,7 +6,7 @@
 #schools -1
 #paths -1
 #spelltype 2
-#scalerate 0
+
 #aoe 0
 #power 0
 #maxpower 30

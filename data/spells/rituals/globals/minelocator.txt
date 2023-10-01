@@ -7,7 +7,7 @@
 -- #nreff 1
 -- #pathlevel 6
 -- #fatiguecost 7000
--- #scalefatiguemult 1350
+-- 
 -- #schools 50
 -- 
 -- #paths 8
@@ -18,7 +18,7 @@
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 8 "Mineral Transmutation"
 -- #descr 8 "The very land is enchanted by this enchantment. Valuable and useful mundane materials will form from mundane rock and soil, allowing the construction of new mines for material where there was none before. Additionally, miners also seem to be drawn to the locations of valuable ores and materials, meaning that various undiscovered natural minerals will be also very rapidly become discovered by this enchantment."

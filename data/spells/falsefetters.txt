@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.9
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 0
@@ -47,7 +47,7 @@
 #namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #maxpower 9
 #end
@@ -61,8 +61,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.9
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 7
@@ -100,7 +100,7 @@
 #namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #maxpower 7
 #end
@@ -114,8 +114,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.9
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 9
@@ -150,7 +150,7 @@
 #namecond range < 10 2 "NAMEPREFIX touch of imprisonment"
 #namecond range < 10 128 "NAMEPREFIX touch of imprisonment"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #maxpower 9
 #end

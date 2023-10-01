@@ -59,9 +59,6 @@ A spell is made up of a spell effect, a modifier (which alters the "delivery" of
 
 -- This is a bit field that lists flags for the spells. In this case: evo-like, battlefield allowed, scale aoe with research level
 #spelltype 42
--- The rate at which spells are scaled, discussed later
-#scalerate 1
--- #scalecost 0.3
 -- The research schools this spell can go in. This is similar to the paths in that it is a bitflag with values of 2^(Illwinter's constants). These are:
 -- Conj=1, Alt=2, Evo=4, Constr=8, Ench=16, Thaum=32, Blood=64
 #schools 4
@@ -82,15 +79,13 @@ This is quite a mathematical topic which isn't very easy to explain, so I made a
 
 It was intended that playing around with the tool should go with this section.
 
-There are various parts of spells that scale. These can be split into fatigue, path level, and other attributes (defined as #spelltype flags, these are currently damage, number of effects, aoe, effect number, maxbounces). Other attributes scale quadratically (the amount added per research level over the base goes up at a graph of x^2 would) with #scalerate determining the steepness of the curve. This is used to calculate a final "scaling amount" which is added to the appropriate attribute(s).
+There are various parts of spells that scale. These can be split into fatigue, path level, and other attributes (defined as #spelltype flags, these are currently damage, number of effects, aoe, effect number, maxbounces). Other attributes scale exponentially with the amount of the attribute doubling every 4 research levels increased.
 
-In the case of the Falling Fires spell above, generating at research 5 has a research difference of 3 (5-2 = 3). The total scale amount with a #scalerate of 1 = 6. Therefore, this scale amount of 6 is added to the effect's base AoE of 1, meaning at research 5 it has a final AoE of 1+6 = 7. The actual calculation of scale amount is below in the more formal documentation, but the details of it are not important at this stage. What is important is to realise that it grows at an increasing rate: the falling fires spell (at the time of writing) AoE as research levels increase becomes 1, 2, 4, 7, 16 (here it jumps to costing a gem), 22, 29, 37, 44, 57, 67, 79...
+In the case of the Falling Fires spell above, generating at research 5 has a research difference of 3 (5-2 = 3). The total amount the aoe is multiplied by is based on the global scaling rate (currently doubling every 4 levels).
 
 Path level is flat, and is governed by #pathperresearch. The default value for this (which is not overwritten) in falling fires is 0.66. As the name hopefully implies, each extra research level adds this to the path level, and the result is rounded down at the end.
 
-Fatigue is more complex than the others and hinges on a variety of factors. It will seemingly increase on its own - each extra research level adds 10 fatigue, and (scale amount^#scalefatigueexponent) is then added to the cost. #scalefatigueexponent can be negative, which will instead SUBTRACT the result from the fatigue cost (as opposed to the usual mathematical meaning of negative exponents). #scalefatiguemult (not used in falling fires) can be thought of as "fatigue cost per additional effect".
-
-In an attempt to make the jump to gem costing spells better/make more sense, scaling parameters for non-blood combat spells that are not nextspells that cost a gem generate as if they were 1 research level higher, but only if the base effect did not cost a gem. This increase in scale amount is NOT used in the fatigue calculations.
+Fatigue is more complex than the others and hinges on a variety of factors. It will seemingly increase on its own - each extra research level adds 10 fatigue. #fatigueperextraeffect (not used in falling fires) can be thought of as "fatigue cost per additional effect".
 
 Ultimately, understanding all these factors is quite difficult. This is why the scaling utility was made - in an attempt to make understanding and selecting values easier, by making an instant method of seeing all the non-modified results of setting them.
 
@@ -122,8 +117,6 @@ As with spell effects, refer to the later section of this document for a list of
 
 -- increases effective research level by 1
 #power 1
--- reduces one of the fatigue scaling parameters
-#scalefatigueexponent -0.5
 -- multiplies the whole spell's fatigue, at the end, by 0.3
 #mult fatiguecost 0.3
 -- causes path levels to progress at a lesser rate
@@ -333,19 +326,9 @@ Refer to the modmanual for details on these, unles otherwise noted.
 	
 \#pathlevel (int)
 * The path level suggested to cast this spell at the specified power level. This may be diverted into secondary paths or otherwise messed with.
-	
-\#scalerate (float)
-* The approximate amount of scaling stats per research level of a spell. It adds N if generated with a power level 1 over #power, 3N if generated 2 over, 6N if generated 3 over...
- * This can affect number of effects, aoe, and damage (see #spelltype and the full description above)
-	
+		
 \#pathperresearch (float) (default=0.66)
 * The amount of extra path requirement to add per extra research level. This is rounded DOWN.
-	
-\#scalefatigueexponent (float) (default=1.7)
-* Additional fatigue (added to base) is added equal to (#scalerate total)^this.
-	
-\#scalecost (float)
-* This multiplies the calculated scale rate for the purposes of calculating fatigue (and gem counts) and path level. Use less than 1 if spells come out too high path and expensive, or greater than 1 if they are too low. This option is a bit more of a sledgehammer and I preferred using the other things if at all possible.
 	
 \#descr (pathflag) "description"
 * Set the description for when the primary path is as specified. This can (and should) be used multiple times, one for each path.
@@ -390,14 +373,14 @@ Refer to the modmanual for details on these, unles otherwise noted.
 \#donotsetextraspellpath
  * If set, extraspells will not follow the pathing of the effect that produced them. This is used to make elemental royalty all show up together with their different path requirements.
  
-\#scalefatiguemult X (default 0)
- * Adds X fatigue for each total scaling value. Typically used for summoning spells to make their cost scale sensibly.
+\#fatigueperextraeffect X (default 0)
+ * Adds X fatigue for each nreff added via scaling. Typically used for summoning spells to make their cost scale sensibly.
  
 \#noadditionalnextspells (default 0)
  * If greater than zero, secondary effects which confer nextspells are not allowed. This is typically intended for cases where extra nextspells are not desired such as on earthquake (as they will be added after cave collapse and only trigger in caves).
  
 \#basescale X
- * For use with globale enchantments with scaling parameters. This should be the base value of the scaling parameters. For instance, a global enchantment that has a (2% + Scale Amount) chance per candle to do something should have this set at 2.
+ * For use with global enchantments with scaling parameters. This should be the base value of the scaling parameters. For instance, a global enchantment that has a (2% + Scale Amount) chance per candle to do something should have this set at 2.
  
 \#secondaryeffectskipchance X
  * An additional X% chance to skip secondary effects for this spell effect.
@@ -454,10 +437,7 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#casttime
 \#effect
 \#aispellmod
-\#scalecost
-\#scalerate
 \#pathperresearch
-\#scalefatigueexponent
 
 \#details - Is appended to the end of the spell details
 
@@ -512,11 +492,8 @@ These parameters are just flatly added to the values on the parent spelleffect.
 \#fatiguecost
 \#maxbounces
 \#casttime
-\#scalecost
-\#scalerate
 \#aispellmod
 \#pathperresearch
-\#scalefatigueexponent
 
 ### Modifier lookalikes
 

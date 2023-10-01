@@ -8,8 +8,8 @@
 
 #spelltype 66
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 #skipchance 50
 
 #aoe 0
@@ -36,7 +36,7 @@
 
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.4
 #end
 
@@ -50,8 +50,8 @@
 
 #spelltype 42
 
-#scalerate 0.4
--- #scalecost 1.6
+
+-- 
 
 #skipexplspr 1
 #skipflightspr 1
@@ -79,7 +79,7 @@
 
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 
@@ -93,8 +93,8 @@
 
 #spelltype 66
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 
 #skipexplspr 1
 #skipflightspr 1
@@ -133,8 +133,8 @@
 
 #spelltype 42
 
-#scalerate 1
--- #scalecost 1.6
+
+-- 
 
 #skipexplspr 1
 #skipflightspr 1
@@ -174,8 +174,8 @@
 
 #spelltype 66
 
-#scalerate 0.75
--- #scalecost 1.6
+
+-- 
 #skipchance 70
 
 #aoe 666
@@ -207,8 +207,8 @@
 
 #spelltype 66
 
-#scalerate 0.75
--- #scalecost 1.6
+
+-- 
 
 #skipexplspr 1
 #skipflightspr 1
@@ -247,8 +247,8 @@
 
 #spelltype 42
 
-#scalerate 2
--- #scalecost 1.6
+
+-- 
 #skipchance 50
 
 #aoe 0

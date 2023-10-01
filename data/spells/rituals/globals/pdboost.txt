@@ -7,7 +7,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 4000
--- #scalefatiguemult 430
+-- 
 -- #schools 32
 -- #unique 1
 -- -- F S
@@ -19,7 +19,7 @@
 -- 
 -- #basescale 2
 -- #spelltype 4
--- #scalerate 2
+-- 
 -- 
 -- #name 1 "Call to Arms"
 -- #name 16 "Entice Militia"

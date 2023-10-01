@@ -22,14 +22,14 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of strange light"
 
-#scalefatigueexponent 1.3
+
 #pathperresearch 0.4
 #end
 
@@ -57,15 +57,15 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.6
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of strange light"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

@@ -23,10 +23,10 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 32
-#scalefatigueexponent 1.2
+
 #end
 
 #neweffect "Shatter Gemless"
@@ -52,12 +52,12 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
--- #scalecost 0.3
+-- 
 #schools 32
 
-#scalerate 0.19
+
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.1
 #end
 

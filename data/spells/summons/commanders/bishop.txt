@@ -30,11 +30,11 @@
 #descr 16 "The caster summons ARTICLE %Bishop% to fight for him on the battlefield. The Bishop is a human high priest coerced to serve, and will leave once the battle is over."
 #details "Bishops are human H3 priests."
 
-#scalefatiguemult 10
+
 #spelltype 528
 
-#scalerate 2
-#scalefatigueexponent -1.6
+
+
 #end
 
 #neweffect "Summon Bishop Ritual"
@@ -48,9 +48,9 @@
 #pathlevel 2
 #fatiguecost 1500
 #chassisvalue 100
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 0
@@ -68,7 +68,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

@@ -7,7 +7,7 @@
 #name 16 "Astral Geyser Burst"
 #name b "Void Burst"
 #spelltype 42
-#scalerate 0
+
 #aoe 6
 #power 4
 #maxpower 50
@@ -39,8 +39,8 @@
 
 -- evo-like, scale effect number
 #spelltype 258
-#scalerate 2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #end
@@ -72,11 +72,11 @@
 
 -- evo-like, scale effect number
 #spelltype 18
-#scalerate 0.75
-#scalefatigueexponent 1.2
+
+
 #schools 4
 
-#scalefatiguemult 10
+
 #pathperresearch 0.4
 #end
 

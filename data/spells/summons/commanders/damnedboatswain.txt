@@ -24,11 +24,11 @@
 #name 32 "Call NAMEPREFIX Damned %Boatswain%"
 #descr 32 "The death mage reanimates ARTICLE %Damned Boatswain% to join him in battle. The %Damned Boatswain% will leave once the battle is over."
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.6
+
+
 #pathperresearch 0.4
 #scalingset ""
 #end
@@ -44,9 +44,9 @@
 #pathlevel 3
 #fatiguecost 1600
 #chassisvalue 110
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 16
 
 #skipchance 70
@@ -60,7 +60,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

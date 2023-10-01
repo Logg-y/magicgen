@@ -7,7 +7,7 @@
 -- #nreff 1
 -- #pathlevel 5
 -- #fatiguecost 5000
--- #scalefatiguemult 580
+-- 
 -- #schools 32
 -- --#unique 1
 -- #paths 16
@@ -18,7 +18,7 @@
 -- 
 -- #basescale 1
 -- #spelltype 4
--- #scalerate 1
+-- 
 -- 
 -- #name 16 "Lucky Omens"
 -- #name 128 "Infernal Luck"

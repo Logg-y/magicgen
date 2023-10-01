@@ -22,7 +22,7 @@
 
 #spelltype 528
 
--- #scalecost 1.0
+-- 
 #skipchance 97
 #end
 

@@ -22,5 +22,5 @@
 #details "Affects up to EFFECTIVENREFF random enemies in the target province, plus NREFFSCALING per additional caster level. Only units belonging to the fort's owner, or province owner in the case of an unforted province, are targeted. If a picked unit has forest survival, it is completely unaffected. Otherwise, units must make a morale check of Morale + DRN vs 10 + DRN, with the victim winning ties. If they fail that, they must make a normal MR check, using the caster's penetration values and respecting bonuses from additional paths, or suffer 999 magical damage. This damage is attributed to the caster."
 
 #spelltype 20
-#scalerate 5
+
 #end

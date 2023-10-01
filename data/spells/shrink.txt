@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.3
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 0
@@ -37,7 +37,7 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 
 
-#scalefatigueexponent 1.4
+
 #end
 
 
@@ -51,8 +51,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
 #power 7

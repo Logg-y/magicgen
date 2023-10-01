@@ -71,7 +71,7 @@
 
 #paths 8
 #secondarypaths 8
-#scalefatiguemult 60
+
 #details "The elementals are size 5."
 #name 8 "NAMEPREFIX Huge Earth Attack"
 #descr 8 "The caster summons forth a very large earth elemental to attack a hostile commander in a distant province. The victim will not know who has cast this spell on them."
@@ -105,10 +105,10 @@
 
 #spelltype 20
 
-#scalerate 1.0
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 100
+
+
+
 #end
 
 

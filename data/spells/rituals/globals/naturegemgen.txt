@@ -20,7 +20,7 @@
 #details "Generates 2d6 nature gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 -- too close to moak
@@ -46,7 +46,7 @@
 -- #details "Generates 3d6 death gems per month, so long as there is a friendly province that is not under siege."
 -- 
 -- #spelltype 4
--- #scalerate 0
+-- 
 -- #end
 
 #neweffect "Naturegengem 6d6"
@@ -71,7 +71,7 @@
 #details "Generates 6d6 nature gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Naturegengem 9d6"
@@ -96,7 +96,7 @@
 #details "Generates 9d6 nature gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end
 
 #neweffect "Naturegengem 12d6"
@@ -121,5 +121,5 @@
 #details "Generates 12d6 nature gems per month, so long as there is a friendly province that is not under siege."
 
 #spelltype 4
-#scalerate 0
+
 #end

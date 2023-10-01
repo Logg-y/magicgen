@@ -42,7 +42,7 @@
 
 #spelltype 34
 
-#scalerate 1
+
 #pathlevel 2
 #schools 4
 
@@ -53,7 +53,7 @@
 #namecond range < 10 b "NAMEPREFIX touch of the Nether"
 #descrcond range < 10 d "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
 #descrcond range < 10 s "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -86,7 +86,7 @@
 
 #spelltype 34
 
-#scalerate 0.2
+
 #pathlevel 2
 #schools 4
 
@@ -98,7 +98,7 @@
 #descrcond range < 10 d "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
 #descrcond range < 10 s "The caster's touch radiates dark energy that bypasses any armor and may feeblemind victims."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #end
 

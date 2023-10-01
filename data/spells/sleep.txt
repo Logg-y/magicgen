@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 2
@@ -37,7 +37,7 @@
 #namecond effect > 1000 64 "NAMEPREFIX sleep $mist$"
 #namecond range < 10 64 "NAMEPREFIX touch of slumber"
 
-#scalefatigueexponent 1.2
+
 #end
 
 #neweffect "Battlefield Sleep"
@@ -49,16 +49,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
-#power 8
-#maxpower 8
-#pathlevel 6
+#power 7
+#maxpower 7
+#pathlevel 5
 #explspr 10016
 #sound 29
-#fatiguecost 300
+#fatiguecost 200
 #precision 100
 #range 100
 
@@ -86,16 +86,16 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 7
+#pathlevel 6
 #explspr 10016
 #sound 29
-#fatiguecost 400
+#fatiguecost 500
 #precision 100
 #range 100
 #skipchance 70
@@ -114,8 +114,6 @@
 
 #scalingset ""
 #end
-
-
 
 
 

@@ -23,14 +23,14 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 1
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX touch of the Sun"
 
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -59,15 +59,15 @@
 
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
-#scalerate 0.2
--- #scalecost 0.3
+
+-- 
 #schools 4
 
 #priority 1
 #namecond range < 10 16 "NAMEPREFIX touch of the Sun"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end
 

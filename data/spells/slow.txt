@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.6
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 1
@@ -45,7 +45,7 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of slowness"
 
-#scalefatigueexponent 1.5
+
 #maxpower 9
 #end
 
@@ -58,8 +58,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8
@@ -84,7 +84,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
-#scalefatigueexponent 1.4
+
 #maxpower 8
 #scalingset ""
 #end
@@ -99,8 +99,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 9
@@ -126,7 +126,7 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slowness"
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of slowness"
 
-#scalefatigueexponent 1.4
+
 #maxpower 9
 #scalingset ""
 #end

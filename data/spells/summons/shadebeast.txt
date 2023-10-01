@@ -97,10 +97,10 @@
 
 #spelltype 20
 
-#scalerate 2
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 30
+
+
+
 #end
 
 

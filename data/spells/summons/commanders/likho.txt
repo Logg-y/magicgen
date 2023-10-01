@@ -9,9 +9,9 @@
 #pathlevel 2
 #fatiguecost 400
 #chassisvalue 100
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 1
 
 #skipchance 67
@@ -24,7 +24,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 #neweffect "Likho Remote Assassination"

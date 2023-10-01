@@ -29,11 +29,11 @@
 #details "Frost Fiend Iceweavers are W2B1 mages with the following random paths:\n30% B\n50% ASDN"
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.2
-#scalefatigueexponent -1.4
+
+
 #pathperresearch 0.4
 #ainocast 1
 #end
@@ -49,9 +49,9 @@
 #pathlevel 3
 #fatiguecost 6000
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 16
 
 #skipchance 70
@@ -69,7 +69,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 -------
@@ -105,11 +105,11 @@
 #details "Frost Fiend Planefreezers are W3B1 mages with the following random paths:\n30% B\n30% B\n50% ASDN\n50% ASDN"
 
 
-#scalefatiguemult 15
+
 #spelltype 528
 
-#scalerate 0.3
-#scalefatigueexponent -1.2
+
+
 #pathperresearch 0.5
 #ainocast 1
 #end
@@ -125,9 +125,9 @@
 #pathlevel 4
 #fatiguecost 9000
 #chassisvalue 300
-#scalecost 1.8
-#scalefatigueexponent 0.7
-#scalefatiguemult 300
+
+
+
 #schools 16
 
 #skipchance 70
@@ -145,7 +145,7 @@
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

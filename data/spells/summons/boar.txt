@@ -103,15 +103,15 @@
 #paths 64
 #secondarypaths 64
 
---#scalefatigueexponent 0.5
---#scalefatiguemult 3
+--
+--
 
 #name 64 "$Send$ NAMEPREFIX %Boar%"
 #descr 64 "The caster summons ARTICLE wild %boar% to attack a distant province. These boar are fairly timid and will not trample opponents."
 
 #spelltype 20
 
-#scalerate 4
+
 #end
 
 

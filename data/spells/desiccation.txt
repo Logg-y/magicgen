@@ -8,8 +8,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 2.3
--- #scalecost 0.6
+
+-- 
 
 #aoe 0
 #power 1
@@ -50,8 +50,8 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3
--- #scalecost 0.6
+
+-- 
 
 #aoe 666
 #power 8

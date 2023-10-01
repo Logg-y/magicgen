@@ -110,10 +110,10 @@
 
 #spelltype 20
 
-#scalerate 7
 
---#scalefatigueexponent 0.3
---#scalefatiguemult 3
+
+--
+--
 #end
 
 

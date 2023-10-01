@@ -7,8 +7,8 @@
 
 #spelltype 66
 
-#scalerate 6.25
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 7

@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1
+
+-- 
 
 #aoe 0
 #power 1
@@ -72,8 +72,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1
+
+-- 
 
 #aoe 0
 #power 1
@@ -135,8 +135,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1
+
+-- 
 
 #pathperresearch 0.0
 
@@ -204,8 +204,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 6
--- #scalecost 1
+
+-- 
 
 #aoe 1
 #power 4
@@ -267,8 +267,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0
--- #scalecost 1
+
+-- 
 
 #aoe 0
 #power 4

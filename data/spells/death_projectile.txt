@@ -26,7 +26,7 @@
 
 #spelltype 34
 
-#scalerate 1
+
 #pathlevel 2
 #schools 4
 
@@ -35,7 +35,7 @@
 #namecond range < 10 b "NAMEPREFIX touch of shadow"
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
 #descrcond range < 10 b "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
-#scalefatigueexponent 1.35
+
 #pathperresearch 0.4
 #end
 
@@ -68,7 +68,7 @@
 
 #spelltype 34
 
-#scalerate 0.2
+
 #pathlevel 2
 #schools 4
 
@@ -78,7 +78,7 @@
 #descrcond range < 10 32 "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
 #descrcond range < 10 b "The caster's touch radiates deathly energy that bypasses any armor and strikes at the victims' life force directly."
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.3
 #end
 

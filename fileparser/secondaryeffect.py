@@ -12,7 +12,7 @@ secondary_params_int = ["damage", "schools", "spelltype", "aoe", "power", "skipc
                         "fatiguecostpereffect", "anysummon", "offensiveeffect", "reqdamagingeffect", "spec", "ondamage",
                         "aispellmod", "requiredresearchlevel", "minfinalaoe", "maxfinalfatiguecost", "minfinalfatiguecost"]
 secondary_params_str = ["nextspell", "unitmod", "details"]
-secondary_params_float = ["scalecost", "scalerate", "pathperresearch", "scalefatigueexponent", "magicpathvaluescaling"
+secondary_params_float = ["pathperresearch", "magicpathvaluescaling"
                           , "fatiguepersquare", "scalingaoelimit"]
 
 

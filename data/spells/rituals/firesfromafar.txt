@@ -20,8 +20,8 @@
 #details "There are EFFECTIVENREFF bolts. The chance of each bolt hitting is 20% or (25 * number of units in the targeted province)/number of bolts, whichever is higher. Those who are hit suffer 7 points of armor-piercing fire damage, plus one per level of fire magic. The caster will not get a report on the results of the attack without a spy in the province."
 
 #spelltype 20
-#scalerate 2
-#scalefatiguemult 40
+
+
 #end
 
 #neweffect "Fires from Afar scale damage"
@@ -47,6 +47,6 @@
 #details "There are 10 bolts. Those who are hit suffer DAMAGE points of armor-piercing fire damage. The chance of each bolt hitting is 20% or (25 * number of units in the targeted province)/number of bolts, whichever is higher. The caster will not get a report on the results of the attack without a spy in the province."
 
 #spelltype 68
-#scalerate 1
-#scalefatiguemult 40
+
+
 #end

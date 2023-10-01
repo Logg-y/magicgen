@@ -101,15 +101,15 @@
 #paths 64
 #secondarypaths 64
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 10
+
+
 
 #name 64 "$Send$ NAMEPREFIX Great %Lion%"
 #descr 64 "The caster summons ARTICLE great %lion% to attack a distant province. These lions are large and ferocious."
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

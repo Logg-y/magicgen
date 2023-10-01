@@ -8,8 +8,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 1.0
--- #scalecost 1.6
+
+-- 
 
 #aoe 4
 #power 4
@@ -47,7 +47,7 @@
 #namecond range < 10 1 "NAMEPREFIX Mindburning Touch"
 #namecond range < 10 4 "NAMEPREFIX Mindfreezing Touch"
 
-#scalefatigueexponent 1.2
+
 #pathperresearch 0.4
 #end
 
@@ -61,8 +61,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0.3
--- #scalecost 1.6
+
+-- 
 
 #aoe 0
 #power 2
@@ -101,7 +101,7 @@
 #namecond range < 10 4 "NAMEPREFIX Mindfreezing Touch"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0
 #end
 
@@ -116,8 +116,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 0
--- #scalecost 0
+
+-- 
 
 #aoe 666
 #power 8

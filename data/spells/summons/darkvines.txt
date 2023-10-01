@@ -93,15 +93,15 @@
 #paths 128
 #secondarypaths 128
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 310
+
+
 
 #name 128 "$Send$ NAMEPREFIX Dark Vines"
 #descr 128 "$BLOOD_INTRO$, the caster animates and enlarges vines to massive proportions. The resulting dark vines attack a distant province."
 
 #spelltype 20
 
-#scalerate 1
+
 #end
 
 

@@ -32,7 +32,7 @@
 
 -- evo-like, scale dmg
 #spelltype 18
-#scalerate 2.5
+
 #schools 4
 
 #priority 1
@@ -42,8 +42,8 @@
 #descrcond range < 10 2 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
 #descrcond range < 10 32 "The caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
 #descrcond range < 10 b "$BLOOD_INTRO$, the caster's touch unleashes a massive burst of banethunder upon those close to him, striking everyone around him."
-#scalefatiguemult 15
-#scalefatigueexponent -1.6
+
+
 #end
 
 
@@ -80,8 +80,8 @@
 
 -- evo-like, scale nreff
 #spelltype 18
-#scalerate 0.75
+
 #schools 4
 
-#scalefatigueexponent 1.2
+
 #end

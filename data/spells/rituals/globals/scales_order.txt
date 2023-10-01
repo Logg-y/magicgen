@@ -7,7 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- WS
@@ -19,7 +19,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 4 "Calming Whispers"
 #name 16 "Order Populace"
@@ -38,7 +38,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 4500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- WS
@@ -50,7 +50,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 4 "Calm of Still Waters"
 #name 16 "Order Populace"
@@ -71,7 +71,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- WS
@@ -83,7 +83,7 @@
 
 #basescale 10
 #spelltype 4
-#scalerate 0
+
 
 #name 4 "Calm of Still Waters"
 #name 16 "Order Populace"
@@ -104,7 +104,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- FS
@@ -115,7 +115,7 @@
 #eventset "Order theft 1"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 1 "Project Turmoil"
 #name 16 "Redirect Turmoil"
@@ -135,7 +135,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 8000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- FS
@@ -146,7 +146,7 @@
 #eventset "Order theft 2"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 1 "Project Turmoil"
 #name 16 "Redirect Turmoil"
@@ -166,7 +166,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 10000
-#scalefatiguemult 430
+
 #schools 32
 #unique 1
 -- FS
@@ -177,7 +177,7 @@
 #eventset "Order theft 3"
 
 #spelltype 4
-#scalerate 0
+
 
 #name 1 "Project Turmoil"
 #name 16 "Redirect Turmoil"

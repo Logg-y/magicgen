@@ -23,13 +23,13 @@
 #descr 8 "Salt suddenly falls upon a SIZE area. This spell is harmless to most creatures, however beings vulnerable to salt such as Jinn and certain kinds of spectral undead may be harmed and stunned by this spell."
 
 #spelltype 42
-#scalerate 0.25
+
 #schools 4
 
 #priority 1
 #namecond range < 10 8 "NAMEPREFIX Touch of Salt"
 
 #fatigueperresearch 0
-#scalefatigueexponent 0
+
 #pathperresearch 0.2
 #end

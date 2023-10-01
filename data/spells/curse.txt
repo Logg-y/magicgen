@@ -7,7 +7,7 @@
 #damage 255
 #name 16 "Cursed Luck"
 #name 128 "Cursed Luck"
-#scalerate 0
+
 #spelltype 42
 #end
 
@@ -22,8 +22,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 3.7
--- #scalecost 0.6
+
+-- 
 
 #aoe 1
 #power 2
@@ -68,8 +68,8 @@
 -- evo, battlefield allowed, scale aoe
 #spelltype 42
 
-#scalerate 4
--- #scalecost 0.5
+
+-- 
 
 #aoe 666
 #power 7

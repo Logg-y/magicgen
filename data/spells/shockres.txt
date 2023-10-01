@@ -7,8 +7,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.4
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 0
@@ -48,8 +48,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.4
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 666
@@ -89,8 +89,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 0
@@ -132,8 +132,8 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 1.1
--- #scalecost 0.7
+
+-- 
 
 
 #aoe 666
@@ -173,9 +173,9 @@
 -- buff, battlefield allowed, scale aoe
 #spelltype 41
 
-#scalerate 0.6
-#scalefatiguemult 3
--- #scalecost 0.7
+
+
+-- 
 
 
 #aoe 0
@@ -204,7 +204,7 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of lightning warding"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of lightning warding"
 
-#scalefatigueexponent 1.5
+
 #pathperresearch 0.2
 #end
 

@@ -105,8 +105,8 @@
 #paths 16
 #secondarypaths 16
 
-#scalefatigueexponent 0.5
-#scalefatiguemult 10
+
+
 #newunit "Elder Thing"
 
 #name 16 "$Send$ NAMEPREFIX Elder %Thing%"
@@ -115,7 +115,7 @@
 
 #spelltype 20
 
-#scalerate 2
+
 #end
 
 

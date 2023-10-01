@@ -97,10 +97,10 @@
 #descr 32 "The caster summons ARTICLE shade %lord% from the shade lands to attack a distant province. Shade lords are powerful ethereal undead which can strike through their victims' armour."
 #spelltype 20
 
-#scalerate 2
 
-#scalefatigueexponent 0.3
-#scalefatiguemult 40
+
+
+
 #end
 
 
