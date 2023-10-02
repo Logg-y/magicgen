@@ -1,5 +1,6 @@
 #neweffect "Summon stormdrake"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 579
 #spec 0
@@ -28,7 +29,8 @@
 
 
 #neweffect "stormdrake ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 579
 #spec 0
@@ -85,6 +87,7 @@
 
 
 #neweffect "Remote summon stormdrake"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 579

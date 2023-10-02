@@ -17,8 +17,8 @@
 #name 128 "Area Heat Shock"
 #maxpower 30
 #end
-
-
+
+
 #neweffect "Fire Evo Projectile"
 #scalingset "evo"
 #effect 2
@@ -69,7 +69,8 @@
 
 #pathperresearch 0.5
 #end
-
+
+
 #neweffect "Fire Evo Instant"
 #scalingset "evo"
 #effect 2
@@ -115,7 +116,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Scaling Heat Shock"
 #effect 3
 #damage 2010
@@ -137,8 +139,8 @@
 #name 128 "Area Heat Shock"
 #maxpower 30
 #end
-
-
+
+
 #neweffect "Fire Evo Pillar"
 #scalingset "evo"
 #effect 2
@@ -174,8 +176,8 @@
 #descrcond range < 10 1 "The caster causes searing flames to erupt around him, harming those struck and producing heat over a large area."
 #descrcond range < 10 128 "$BLOOD_INTRO$, the caster causes the searing flames of Inferno to erupt around him, harming those struck and producing heat over a large area`."
 #end
-
-
+
+
 #neweffect "Fire Evo Pillar Multi"
 #scalingset "evo"
 #effect 2
@@ -206,9 +208,8 @@
 #schools 4
 
 #end
-
-
-
+
+
 #neweffect "Fire Evo 25pc"
 #effect 2
 #damage 1005
@@ -246,7 +247,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Fire Evo 50pc"
 #effect 2
 #damage 1005
@@ -284,7 +286,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Fire Evo 100pc"
 #effect 2
 #damage 1005
@@ -323,11 +326,8 @@
 #schools 4
 #scalingset ""
 #end
-
-
-
-
-
+
+
 #neweffect "Medium Heat Shock"
 #effect 3
 #damage 2010
@@ -346,8 +346,8 @@
 #name 64 "Area Heat Shock"
 #name 128 "Area Heat Shock"
 #end
-
-
+
+
 #neweffect "Fire Evo Rain"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -381,15 +381,5 @@
 
 #pathlevel 5
 #end
-
-
-
-
-
-
-
-
-
-
-
-
+
+

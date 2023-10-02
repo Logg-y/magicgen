@@ -1,9 +1,11 @@
+-- This set is just as penalising as instantdamage...
+-- because most of the things it does are just as unpleasant (eg polymorph/enslave/charm)
 
 #newmodifier "Fast Casting nondamaging hostile"
 
 #spelltype 2
 
-#power -1
+#power -2
 #pathlevel 0
 
 #reqdamaging 0
@@ -38,7 +40,7 @@
 
 #reqdamaging 0
 
-#power -2
+#power -6
 
 #mult fatiguecost 0.33
 #req fatiguecost > 15
@@ -62,7 +64,7 @@
 
 #reqdamaging 0
 
-#power -3
+#power -8
 
 #mult fatiguecost 0.3
 #req fatiguecost > 15
@@ -86,7 +88,7 @@
 
 #reqdamaging 0
 
-#power -4
+#power -10
 
 #mult fatiguecost 0.17
 #req fatiguecost > 15

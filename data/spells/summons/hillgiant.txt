@@ -1,5 +1,6 @@
 #neweffect "Summon hillgiant"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2230
 #spec 0
@@ -23,10 +24,13 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "hill giant ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2230
 #spec 0
@@ -34,7 +38,7 @@
 #maxpower 14
 #nreff 5
 #pathlevel 2
-#fatiguecost 220
+#fatiguecost 820
 #schools 1
 
 #paths 8
@@ -51,9 +55,12 @@
 #skipchance 97
 
 
+#fatigueperextraeffect 164.0
 #end
-
-
+
+
+
+
 #neweffect "hillgiant Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote hillgiant"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2230
@@ -110,5 +121,8 @@
 
 
 #end
-
-
+
+
+
+
+

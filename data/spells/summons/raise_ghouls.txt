@@ -1,13 +1,14 @@
 #neweffect "Raise Ghoul Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 198
 #spec 8388608
 #power 1
-#maxpower 4
-#nreff 3006
+#maxpower 7
+#nreff 30
 #pathlevel 1
-#fatiguecost 200
+#fatiguecost 600
 #schools 2
 
 #skipchance 80
@@ -23,9 +24,12 @@
 #spelltype 20
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 20.0
 #end
-
-
+
+
+
+
 #neweffect "ghoul Remote Assassination"
 #effect 10050
 #provrange 4
@@ -49,9 +53,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon ghouls"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #nogeodst 2052
@@ -64,7 +72,7 @@
 #fatiguecost 800
 #schools 2
 
--- 
+--
 
 
 #skipchance 99.86666666666666
@@ -80,5 +88,8 @@
 
 
 #end
-
-
+
+
+
+
+

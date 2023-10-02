@@ -1,5 +1,6 @@
 #neweffect "Summon demonknight"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 489
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "demonknight ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 489
 #spec 0
 #power 3
-#maxpower 14
-#nreff 1
+#maxpower 9
+#nreff 3
 #pathlevel 4
-#fatiguecost 800
+#fatiguecost 2400
 #schools 1
 
 #paths 128
@@ -53,8 +57,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "demonknight Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,9 +85,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote demonknight"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 489
@@ -110,5 +120,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

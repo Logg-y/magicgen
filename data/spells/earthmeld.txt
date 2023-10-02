@@ -51,7 +51,8 @@
 #maxpower 9
 
 #end
-
+
+
 #neweffect "Earth Grip Battlefield"
 #effect 11
 #damage 16384
@@ -90,7 +91,8 @@
 #maxpower 8
 #scalingset ""
 #end
-
+
+
 #neweffect "Earth Grip Battlefield Enemies Only"
 #effect 11
 #damage 16384
@@ -136,11 +138,5 @@
 #maxpower 9
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
+
+

@@ -43,7 +43,8 @@
 
 
 
-#pathperresearch 0.5
+#pathperresearch 0.34
+#scalingset ""
 #end
 
 #neweffect "Summon Adventurer"
@@ -78,6 +79,7 @@
 
 
 #end
+
 
 
 

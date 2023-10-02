@@ -1,5 +1,6 @@
 #neweffect "Summon phantasmal warrior"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 297
 #spec 8388608
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal warrior ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 297
 #spec 8388608
 #power 1
-#maxpower 4
-#nreff 3008
+#maxpower 7
+#nreff 25
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 600
 #schools alt
 
 #paths 2
@@ -51,9 +55,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 24.0
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal Warrior Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote phantasmal warriors"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 297
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

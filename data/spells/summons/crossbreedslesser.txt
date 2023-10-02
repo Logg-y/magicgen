@@ -1,10 +1,11 @@
 #neweffect "Raise Lesser Foulspawn"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -11
 #spec 0
-#power 1
-#maxpower 10
+#power -1
+#maxpower 11
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -22,9 +23,12 @@
 
 #spelltype 528
 
--- 
+--
 #skipchance 97
 
 #end
-
-
+
+
+
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon yeti"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2231
 #spec 0
@@ -26,7 +27,8 @@
 
 
 #neweffect "yeti ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2231
 #spec 0
@@ -81,6 +83,7 @@
 
 
 #neweffect "remote yeti"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 2231

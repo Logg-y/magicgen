@@ -33,7 +33,7 @@
 #nameprefix "Chilling"
 #fatiguepersquare 5
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Freezing Secondary mrnh"
@@ -77,7 +77,7 @@
 #nameprefix "Frigid"
 #nameprefix "Chilling"
 #fatiguepersquare 2.5
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Freezing Secondary mrn"

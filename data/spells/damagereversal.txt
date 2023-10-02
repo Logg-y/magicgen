@@ -8,7 +8,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 8
@@ -32,7 +32,13 @@
 #priority 1
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of reversal"
 
+#scalingset "buff"
+#fatigueperresearch 0
+#pathperresearch 0.5
 #end
+
+
+
 
 #neweffect "Damage Reversal Nonblood"
 #effect 500
@@ -44,7 +50,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 8
@@ -73,11 +79,9 @@
 #namecond effect > 1000 d "NAMEPREFIX $mist$ of reversal"
 #namecond effect > 1000 n "NAMEPREFIX $mist$ of reversal"
 
-
+#scalingset "buff"
 
 #end
-
-
 
 
 

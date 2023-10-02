@@ -23,7 +23,7 @@
 
 #nameprefix "Dominating"
 #fatiguepersquare 14
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "enslave Secondary mrne"

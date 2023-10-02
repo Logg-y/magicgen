@@ -36,9 +36,9 @@
 #spec 8388608
 #power 4
 #maxpower 8
-#nreff 3
+#nreff 6
 #pathlevel 4
-#fatiguecost 420
+#fatiguecost 820
 #schools 1
 
 #paths 4
@@ -54,6 +54,7 @@
 
 
 
+#fatigueperextraeffect 136.66666666666666
 #end
 
 
@@ -86,6 +87,8 @@
 
 
 #neweffect "Remote summon gelatinouscube"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2159

@@ -1,9 +1,10 @@
 #neweffect "Summon vinearcher"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 361
 #spec 8388608
-#power 1
+#power 0
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -26,17 +27,20 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "vinearcher ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 361
 #spec 8388608
 #power 1
-#nreff 2003
+#nreff 18
 #pathlevel 1
-#fatiguecost 200
+#fatiguecost 600
 #schools 16
 
 #paths 64
@@ -52,11 +56,14 @@
 
 #newunit "Vine Archer"
 
-#maxpower 4
+#maxpower 7
 #siegepatrolchaff 1
+#fatigueperextraeffect 33.333333333333336
 #end
-
-
+
+
+
+
 #neweffect "vinearcher Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,9 +86,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon vinearcher"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 361
@@ -110,5 +121,8 @@
 
 
 #end
-
-
+
+
+
+
+

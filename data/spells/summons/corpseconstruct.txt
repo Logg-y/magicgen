@@ -1,13 +1,14 @@
 #neweffect "Summon corpse construct"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 534
 #spec 8388608
-#power 1
+#power -1
 #precision -2
 #nreff 1
 #pathlevel 1
-#maxpower 14
+#maxpower 11
 #fatiguecost 22
 #sound 43
 #schools 8
@@ -27,10 +28,13 @@
 #skipchance 98
 
 #end
-
-
+
+
+
+
 #neweffect "corpse construct ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 534
 #spec 8388608
@@ -59,8 +63,10 @@
 #siegepatrolchaff 1
 
 #end
-
-
+
+
+
+
 #neweffect "corpseconstruct Remote Assassination"
 #effect 10050
 #provrange 4
@@ -86,9 +92,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon corpseconstruct"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 534
@@ -118,5 +128,8 @@
 
 
 #end
-
-
+
+
+
+
+

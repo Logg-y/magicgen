@@ -1,4 +1,3 @@
-
 #neweffect "Parching Wind Desiccation"
 #effect 500
 #damage 250
@@ -17,8 +16,10 @@
 #name 64 "Dehydration"
 #name 128 "Dehydration"
 #end
-
+
+
 #neweffect "Parching Wind Barkskin"
+#scalingset "buff"
 #effect 10
 #damage 16
 #spec 20544
@@ -37,7 +38,8 @@
 #name 128 "Dry Skin"
 #nextspell "Parching Wind Desiccation"
 #end
-
+
+
 #neweffect "Parching Wind Fatigue"
 #effect 3
 #damage 2010
@@ -57,7 +59,8 @@
 #name 128 "Fatiguing Heat"
 #nextspell "Parching Wind Barkskin"
 #end
-
+
+
 #neweffect "Parching Winds"
 #scalingset "disabling"
 #effect 109
@@ -94,7 +97,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Parching Winds Gemless"
 #scalingset "disabling"
 #effect 109
@@ -132,9 +136,8 @@
 #schools 4
 #fatigueperresearch 0
 #end
-
-
-
+
+
 #neweffect "Parching Winds 100pc"
 #effect 109
 #damage 2006
@@ -167,6 +170,5 @@
 -- 
 #schools 4
 #end
-
-
-
+
+

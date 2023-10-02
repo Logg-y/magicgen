@@ -1,4 +1,6 @@
 #neweffect "Mossbody"
+#scalingset "buff"
+
 #effect 23
 #damage 8
 #spec 8404992
@@ -8,10 +10,10 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
-#power 4
+#power 3
 #pathlevel 2
 #explspr 10005
 #sound 31
@@ -47,4 +49,10 @@
 #namecond effect > 1000 32 "NAMEPREFIX putrid $mist$"
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of moss"
 
+#maxpower 8
 #end
+
+
+
+
+

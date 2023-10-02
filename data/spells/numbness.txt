@@ -44,9 +44,8 @@
 
 #pathperresearch 0.4
 #end
-
-
-
+
+
 #neweffect "Numbness Battlefield"
 #effect 11
 #damage 268435456
@@ -92,7 +91,8 @@
 
 #scalingset ""
 #end
-
+
+
 #neweffect "Numbness Battlefield Hostile Only"
 #effect 11
 #damage 268435456
@@ -140,6 +140,5 @@
 
 #scalingset ""
 #end
-
-
-
+
+

@@ -36,7 +36,7 @@
 #nameprefix "Enraging"
 #fatiguepersquare 10
 
-#scalingaoelimit 1.2
+#scalingaoelimit 0.7
 
 #aispellmod 20
 
@@ -83,7 +83,7 @@
 #nameprefix "Enraging"
 #fatiguepersquare 5
 
-#scalingaoelimit 1.5
+#scalingaoelimit 1.0
 
 #aispellmod 40
 

@@ -27,7 +27,7 @@
 #nameprefix "Bitterwind"
 #nameprefix "Hailbringing"
 #fatiguepersquare 12
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Chillaura Secondary mrne"

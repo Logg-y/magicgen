@@ -1,5 +1,6 @@
 #neweffect "Raise Greater Foulspawn"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -10
 #spec 0
@@ -22,21 +23,24 @@
 
 #spelltype 528
 
--- 
+--
 #skipchance 97
 #end
-
-
+
+
+
+
 #neweffect "Raise Greater Foulspawn Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage -10
 #spec 0
 #power 5
 #maxpower 15
-#nreff 3
+#nreff 4
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -48,6 +52,10 @@
 
 #spelltype 20
 
+#fatigueperextraeffect 250.0
 #end
-
-
+
+
+
+
+

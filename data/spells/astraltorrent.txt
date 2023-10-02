@@ -9,7 +9,7 @@
 #precision 25
 #range 30
 #pathlevel 4
-#fatiguecost 10
+#fatiguecost 30
 #explspr 10322
 #sound 41
 #skipchance 30
@@ -37,14 +37,17 @@
 #pathperresearch 0.3
 #end
 
+
+
+
 #neweffect "Astral Torrent"
 #scalingset "evo"
 #effect 2
 #damage 1010
 #spec 16512
-#aoe 1
+#aoe 2
 #power 5
-#maxpower 11
+#maxpower 21
 #precision 25
 #range 30
 #pathlevel 4
@@ -72,5 +75,9 @@
 #descrcond range < 10 16 "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #descrcond range < 10 b "The caster's touch radiates astral energy that is deadly to all kinds of creatures."
 #end
+
+
+
+
 
 

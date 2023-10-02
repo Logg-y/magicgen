@@ -1,5 +1,6 @@
 #neweffect "Summon fallbear"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 512
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "fallbear ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 512
 #spec 0
 #power 3
-#maxpower 7
-#nreff 4
+#maxpower 9
+#nreff 10
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 1020
 #schools 1
 
 #paths 8
@@ -48,9 +52,12 @@
 
 #spelltype 20
 
+#fatigueperextraeffect 102.0
 #end
-
-
+
+
+
+
 #neweffect "fallbear Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon fallbear"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 512
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

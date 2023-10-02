@@ -36,7 +36,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
+
+
 #neweffect "Fire Cloud"
 #scalingset "evo"
 #effect 3002
@@ -74,7 +75,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Freezing Cloud"
 #scalingset "evo"
 #effect 4002
@@ -113,8 +115,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Flame Cloud AN"
 #scalingset "evo"
 #effect 4002
@@ -153,8 +155,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Cloud of Death"
 #scalingset "evo"
 #effect 4002
@@ -190,8 +192,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Shock Cloud"
 #scalingset "evo"
 #effect 4109
@@ -230,19 +232,5 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

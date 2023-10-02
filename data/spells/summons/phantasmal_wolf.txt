@@ -1,9 +1,10 @@
 #neweffect "Summon phantasmal wolf"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 298
 #spec 8388608
-#power 1
+#power 0
 #maxpower 8
 #precision -2
 #nreff 1
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal wolf ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 298
 #spec 8388608
 #power 1
-#maxpower 4
-#nreff 3008
+#maxpower 7
+#nreff 25
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 600
 #schools alt
 
 #paths 2
@@ -52,9 +56,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 24.0
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal wolf Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,9 +84,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote phantasmal wolves"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 298
@@ -106,5 +117,8 @@
 
 
 #end
-
-
+
+
+
+
+

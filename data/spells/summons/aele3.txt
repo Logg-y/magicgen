@@ -1,5 +1,6 @@
 #neweffect "Summon aeles3"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 570
 #spec 0
@@ -26,7 +27,8 @@
 
 
 #neweffect "aeles3 ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 570
 #spec 0
@@ -80,6 +82,7 @@
 
 
 #neweffect "Remote summon aeles3"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 570

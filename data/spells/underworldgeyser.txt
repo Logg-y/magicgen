@@ -26,7 +26,8 @@
 
 #nreff 1
 #end
-
+
+
 #neweffect "Geyser of the Underworld Decay"
 #effect 4011
 #damage 256
@@ -56,7 +57,8 @@
 #nreff 1
 #nextspell "Geyser of the Underworld Age"
 #end
-
+
+
 #neweffect "Geyser of the Underworld"
 #scalingset "evo"
 #effect 4074
@@ -93,8 +95,8 @@
 #nextspell "Geyser of the Underworld Decay"
 
 #end
-
-
+
+
 #neweffect "Geyser of the Underworld Multi"
 #scalingset "evo"
 #effect 4074
@@ -129,5 +131,5 @@
 #nextspell "Geyser of the Underworld Decay"
 
 #end
-
-
+
+

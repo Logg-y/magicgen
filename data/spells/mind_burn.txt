@@ -50,7 +50,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Mind Burn Gemless"
 #scalingset "evo"
 #effect 2
@@ -104,9 +105,8 @@
 
 #pathperresearch 0
 #end
-
-
-
+
+
 #neweffect "Battlefield Mind Burn"
 #effect 2
 #damage 1010
@@ -145,16 +145,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

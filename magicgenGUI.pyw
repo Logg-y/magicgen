@@ -282,18 +282,18 @@ def main():
 
     adv_category_page1 = [
         [sg.Text('What percentage of non-summoning spells will generate with a foreign path secondary effect. This'
-                 ' will tend to produce crosspath spells. (10)', size=(50, 3),
+                 ' will tend to produce crosspath spells. (15)', size=(50, 3),
                  relief="ridge"),
-         sg.InputText(key='-diffpathsecondarychance-', size=(4, 1), default_text=10)],
+         sg.InputText(key='-diffpathsecondarychance-', size=(4, 1), default_text=15)],
         [sg.Text('What percentage of non-summoning spells will generate with a same path secondary effect. This'
                  ' will tend to produce spells without crosspaths but multiple effects. (40)', size=(50, 3),
                  relief="ridge"),
          sg.InputText(key='-samepathsecondarychance-', size=(4, 1), default_text=40)],
         [sg.Text(
             'What percentage of summoning spells will generate with a foreign path secondary effect. This will tend '
-            'to produce altered summon creatures that require crosspaths to summon. (10)',
+            'to produce altered summon creatures that require crosspaths to summon. (15)',
             size=(50, 3), relief="ridge"),
-            sg.InputText(key='-summondiffpathsecondarychance-', size=(4, 1), default_text=10)],
+            sg.InputText(key='-summondiffpathsecondarychance-', size=(4, 1), default_text=15)],
         [sg.Text(
             'What percentage of summoning spells will generate with a same path secondary effect. This will tend '
             'to produce altered summon creatures that do not require crosspaths to summon. (40)',

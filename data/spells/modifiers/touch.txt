@@ -286,6 +286,11 @@
 #req spec !& 262144
 #spec 262144
 
+-- This breaks horribly on the fancy effects that piggyback charm
+-- namely Harness Essence and Curse of Undeath
+-- So don't allow this if nextspellondamage is set
+#req spec !& 1152921504606846976
+
 -- only effects that cost a gem originally
 -- the "gemless" evo effects work out to be a lot weaker with this applied, and allowing both is...
 #req fatiguecost >= 100

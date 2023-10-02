@@ -18,6 +18,9 @@
 #name 128 "Extract Essence"
 #end
 
+
+
+
 #neweffect "Harness Essence Soul Slay"
 #effect 11
 #damage 562949953421312
@@ -39,6 +42,9 @@
 #nextspell "Harness Essence Planeshift"
 #end
 
+
+
+
 #neweffect "Harness Essence"
 #effect 29
 #damage 999
@@ -50,11 +56,11 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 3
 #power 5
-#maxpower 12
+#maxpower 19
 #pathlevel 3
 #explspr 10206
 #sound 41
@@ -78,7 +84,12 @@
 #priority 1
 #namecond range < 10 64 "NAMEPREFIX Touch of Harnessing"
 
+#scalingset "evo"
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
+
+
 
 
 #neweffect "Harness Essence Gemless"
@@ -92,15 +103,15 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 0
 #power 5
-#maxpower 14
+#maxpower 25
 #pathlevel 3
 #explspr 10206
 #sound 41
-#fatiguecost 10
+#fatiguecost 20
 #precision 100
 #range 100
 
@@ -122,7 +133,13 @@
 
 #fatigueperresearch 0
 
-#pathperresearch 0.1
+#pathperresearch 0.2
+#scalingset "evo"
 #end
+
+
+
+
+
 
 

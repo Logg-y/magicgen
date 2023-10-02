@@ -34,7 +34,8 @@
 
 
 #end
-
+
+
 #neweffect "Planeshift Inferno"
 #scalingset "evo"
 #effect 108
@@ -71,7 +72,8 @@
 
 
 #end
-
+
+
 #neweffect "Planeshift Void"
 #scalingset "evo"
 #effect 108
@@ -109,4 +111,5 @@
 #namecond range < 10 16 "NAMEPREFIX embrace of The Void"
 
 
-#end
+#end
+

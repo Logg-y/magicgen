@@ -21,7 +21,8 @@
 #name 64 "$Additional$ Arcing"
 #name 128 "$Additional$ Arcing"
 #end
-
+
+
 #neweffect "Unleash Lightning Area Shock"
 #effect 2
 #damage 2
@@ -52,8 +53,8 @@
 #name 128 "$Additional$ Jolt"
 #nextspell "Unleash Lightning Chain"
 #end
-
-
+
+
 #neweffect "Unleash Lightning"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -87,4 +88,5 @@
 #pathlevel 6
 
 #end
-
+
+

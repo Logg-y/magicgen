@@ -1,4 +1,6 @@
 #neweffect "Temp Morale"
+#scalingset "buff"
+
 #effect 17
 #damage 10
 #spec 8405120
@@ -10,16 +12,15 @@
 
 
 
-#aoe 0
-#power -3
-#maxpower 3
+#aoe 5
+#power -1
+#maxpower 2
 #pathlevel 1
 #explspr 10203
 #sound 31
 #range 10
-#fatiguecost 5
+#fatiguecost 2
 
-#pathperresearch 0.25
 
 #paths 65
 #secondarypaths 0
@@ -44,3 +45,7 @@
 
 
 #end
+
+
+
+

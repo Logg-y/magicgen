@@ -1,5 +1,6 @@
 #neweffect "Summon ker"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3127
 #spec 0
@@ -19,7 +20,7 @@
 
 #name 32 "$conjure$ NAMEPREFIX %ker%"
 #descr 32 "The caster summons ARTICLE %ker% to fight for him. The ker is a demon of the underworld that can fly, is invisible and may halt the undead in their tracks."
-
+#details "Keres summoned with this spell are not commanders, and cannot cast spells."
 #spelltype 528
 
 #end
@@ -84,6 +85,7 @@
 
 
 #neweffect "Remote summon ker"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 3127

@@ -1,4 +1,6 @@
 #neweffect "Flight"
+#scalingset "buff"
+
 #effect 10
 #damage 131072
 #spec 16384
@@ -8,11 +10,11 @@
 #spelltype 41
 
 
--- 
--- 
+--
+--
 
 #aoe 0
-#power 0
+#power 1
 #maxpower 6
 #pathlevel 1
 #explspr 10005
@@ -39,7 +41,12 @@
 #end
 
 
+
+
 #neweffect "Flight battlefield"
+#fieldwidecontinuation "Flight"
+#scalingset "buff"
+
 #effect 10
 #damage 131072
 #spec 16384
@@ -49,8 +56,8 @@
 #spelltype 41
 
 
--- 
--- 
+--
+--
 
 #aoe 666
 #power 7
@@ -78,5 +85,9 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of flight"
 
 #end
+
+
+
+
 
 

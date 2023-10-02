@@ -36,7 +36,8 @@
 #namecond range < 10 1 "NAMEPREFIX touch of sparks"
 #fatigueperresearch 0
 #end
-
+
+
 #neweffect "Static Shock Battlefield"
 #effect 109
 #damage -1
@@ -65,4 +66,5 @@
 
 #scalingset ""
 #end
-
+
+

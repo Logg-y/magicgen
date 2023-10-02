@@ -1,10 +1,11 @@
 #neweffect "Summon clayman"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 817
 #spec 8388608
-#power 1
-#maxpower 10
+#power 0
+#maxpower 12
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "clayman ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 817
 #spec 8388608
 #power 2
-#maxpower 5
-#nreff 2
+#maxpower 9
+#nreff 15
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 1000
 #schools 1
 
 #paths 8
@@ -51,9 +55,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 66.66666666666667
 #end
-
-
+
+
+
+
 #neweffect "clayman Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon clayman"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 817
@@ -105,5 +116,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

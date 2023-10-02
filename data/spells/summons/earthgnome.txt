@@ -1,10 +1,11 @@
 #neweffect "Summon earthgnome"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 561
 #spec 0
-#power 1
-#maxpower 12
+#power -1
+#maxpower 7
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -22,18 +23,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "earthgnome ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 561
 #spec 0
 #power 1
-#maxpower 5
-#nreff 3
+#maxpower 7
+#nreff 20
 #pathlevel 2
-#fatiguecost 120
+#fatiguecost 1020
 #schools 1
 
 #paths 8
@@ -49,9 +53,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 51.0
 #end
-
-
+
+
+
+
 #neweffect "earthgnome Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon earthgnome"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 561
@@ -105,5 +116,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

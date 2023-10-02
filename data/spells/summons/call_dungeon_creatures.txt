@@ -28,10 +28,5 @@
 #scalingset "battlesummon"
 #fatigueperresearch 0
 #end
-
-
-
-
-
-
-
+
+

@@ -4,10 +4,10 @@
 #effect 1
 #damage -9
 #spec 8388608
-#power 0
-#maxpower 7
+#power -2
+#maxpower 6
 #precision -2
-#nreff 1
+#nreff 2
 #pathlevel 1
 #fatiguecost 20
 #sound 44
@@ -22,7 +22,7 @@
 
 #spelltype 528
 
--- 
+--
 #skipchance 20
 
 #end
@@ -55,10 +55,9 @@
 #spelltype 528
 
 #skipchance 20
--- 
+--
 
 #end
-
 
 
 

@@ -1,5 +1,6 @@
 #neweffect "Summon kenzoku"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 736
 #spec 0
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "kenzoku ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 736
 #spec 0
 #power 4
-#maxpower 20
-#nreff 3
+#maxpower 11
+#nreff 4
 #pathlevel 2
-#fatiguecost 620
+#fatiguecost 820
 #schools 1
 
 #paths 16
@@ -51,9 +55,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 205.0
 #end
-
-
+
+
+
+
 #neweffect "kenzoku Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon kenzoku"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 736
@@ -109,5 +120,8 @@
 
 
 #end
-
-
+
+
+
+
+

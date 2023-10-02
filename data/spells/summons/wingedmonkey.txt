@@ -1,9 +1,10 @@
 #neweffect "Summon wingedmonkey"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1199
 #spec 0
-#power 3
+#power 2
 #maxpower 14
 #precision -2
 #nreff 1
@@ -31,15 +32,16 @@
 
 
 #neweffect "wingedmonkey ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1199
 #spec 0
 #power 1
 #maxpower 4
-#nreff 2003
+#nreff 20
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 700
 #schools 1
 
 #paths 80
@@ -91,6 +93,7 @@
 
 
 #neweffect "remote wingedmonkey"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 1199

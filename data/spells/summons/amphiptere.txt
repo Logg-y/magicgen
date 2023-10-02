@@ -1,5 +1,6 @@
 #neweffect "Summon amphiptere"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1412
 #spec 0
@@ -26,18 +27,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "amphiptere ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1412
 #spec 0
 #power 3
 #maxpower 7
-#nreff 4
+#nreff 8
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 820
 #schools 1
 
 #paths 2
@@ -54,10 +58,11 @@
 
 #skipchance 97
 
-
 #end
-
-
+
+
+
+
 #neweffect "amphiptere Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote amphiptere"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1412
@@ -118,5 +127,8 @@
 
 
 #end
-
-
+
+
+
+
+

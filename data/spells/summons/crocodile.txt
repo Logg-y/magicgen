@@ -1,10 +1,11 @@
 #neweffect "Summon crocodile"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2185
 #spec 0
-#power 1
-#maxpower 14
+#power -1
+#maxpower 11
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -24,18 +25,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "crocodile ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2185
 #spec 0
 #power 1
-#maxpower 5
-#nreff 3
+#maxpower 8
+#nreff 18
 #pathlevel 2
-#fatiguecost 120
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -53,9 +57,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 55.55555555555556
 #end
-
-
+
+
+
+
 #neweffect "crocodile Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +88,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote crocodile"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2185
@@ -111,5 +122,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

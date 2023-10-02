@@ -32,8 +32,8 @@
 
 
 #end
-
-
+
+
 #neweffect "Farstrike normal"
 #effect 2
 #damage 2012
@@ -75,8 +75,8 @@
 #namecond range < 10 8 "NAMEPREFIX nearstrike"
 
 #end
-
-
+
+
 #neweffect "Farstrike piercing"
 #effect 2
 #damage 2016
@@ -118,7 +118,8 @@
 #namecond range < 10 8 "NAMEPREFIX nearspike"
 
 #end
-
+
+
 #neweffect "Flaming Fist Effect"
 #effect 2
 #damage 16
@@ -135,10 +136,8 @@
 #name 16 "Burning Fist"
 #name 16 "Flaming Fist"
 #end
-
-
-
-
+
+
 #neweffect "Farstrike fire"
 #effect 2
 #damage 6
@@ -176,9 +175,8 @@
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a burning fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
 
 #end
-
-
-
+
+
 #neweffect "Chilling Fist Effect"
 #effect 2
 #damage 16
@@ -193,8 +191,8 @@
 #name 16 "Chilling Fist"
 #name 16 "Frozen Fist"
 #end
-
-
+
+
 #neweffect "Farstrike water"
 #effect 2
 #damage 6
@@ -232,8 +230,8 @@
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a frozen fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
 
 #end
-
-
+
+
 #neweffect "Shocking Fist Effect"
 #effect 2
 #damage 7
@@ -246,8 +244,8 @@
 #name 2 "Shocking Discharge"
 #name 16 "Shocking Discharge"
 #end
-
-
+
+
 #neweffect "Farstrike air"
 #effect 2
 #damage 6
@@ -285,9 +283,8 @@
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a shocking fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely."
 
 #end
-
-
-
+
+
 #neweffect "Draining Fist Effect"
 #copyspell "Leech"
 #effect 2
@@ -302,8 +299,8 @@
 #name 128 "Life Draining"
 #name 16 "Life Draining"
 #end
-
-
+
+
 #neweffect "Farstrike draining"
 #copyspell "Leech"
 #effect 2
@@ -346,9 +343,8 @@
 #descr 128 "$BLOOD_INTRO$, the caster opens a rift in space through which he attempts to physically strike his victim on the head with a shadowy fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely. Should the target be wounded by the initial hit, the caster attempts to drain the target's life force through the brief physical connection."
 
 #end
-
-
-
+
+
 #neweffect "Toxic Fist Effect"
 #effect 7
 #damage 18
@@ -361,8 +357,8 @@
 #name 16 "Toxic Coating"
 #name 64 "Toxic Coating"
 #end
-
-
+
+
 #neweffect "Farstrike nature"
 #effect 2
 #damage 6
@@ -400,12 +396,5 @@
 #descr 16 "The caster opens a rift in space through which he attempts to physically strike his victim on the head with a poisonous fist or similar appendage. The strike is somewhat surprising but may still be stopped by shields or helmets. Stronger casters will hurt their target more severely. Should the target be wounded by the initial hit, magical poison discharges into the target."
 
 #end
-
-
-
-
-
-
-
-
-
+
+

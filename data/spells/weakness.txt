@@ -32,7 +32,8 @@
 
 
 #end
-
+
+
 #neweffect "Mass Weakness"
 #effect 67
 #damage 2
@@ -48,7 +49,7 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 4
+#pathlevel 6
 #explspr 10197
 #sound 31
 #fatiguecost 200
@@ -67,6 +68,5 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of weakness"
 
 #end
-
-
-
+
+

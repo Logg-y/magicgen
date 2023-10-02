@@ -37,7 +37,8 @@
 #namecond range < 10 16 "NAMEPREFIX touch of paralysis"
 
 #end
-
+
+
 #neweffect "Paralyze Lesser"
 #scalingset "disabling"
 #effect 66
@@ -78,7 +79,8 @@
 
 
 #end
-
+
+
 #neweffect "Battlefield Paralyze"
 #effect 66
 #damage 5050
@@ -111,10 +113,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
+
+

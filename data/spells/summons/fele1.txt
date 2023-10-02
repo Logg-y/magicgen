@@ -1,10 +1,11 @@
 #neweffect "Summon feles1"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 599
 #spec 0
-#power 2
-#maxpower 14
+#power 0
+#maxpower 8
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -24,10 +25,13 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "feles1 ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 599
 #spec 0
@@ -51,8 +55,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "feles1 Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon feles1"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 599
@@ -108,5 +118,8 @@
 
 
 #end
-
-
+
+
+
+
+

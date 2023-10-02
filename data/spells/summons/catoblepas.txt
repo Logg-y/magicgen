@@ -23,7 +23,7 @@
 
 #spelltype 528
 
--- 
+--
 #schools 1
 #skipchance 60
 
@@ -42,9 +42,9 @@
 #spec 0
 #power 5
 #maxpower 20
-#nreff 2
+#nreff 3
 #pathlevel 4
-#fatiguecost 520
+#fatiguecost 1000
 #schools 1
 
 #paths 4
@@ -63,6 +63,7 @@
 #nocostreduction 1
 
 
+#fatigueperextraeffect 333.3333333333333
 #end
 
 
@@ -97,6 +98,8 @@
 
 
 #neweffect "Remote summon catoblepas"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1290

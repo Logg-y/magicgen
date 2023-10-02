@@ -1,9 +1,10 @@
 #neweffect "Summon madman"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 284
 #spec 0
-#power 1
+#power -2
 #maxpower 9
 #precision -2
 #nreff 1
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Madman ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 284
 #spec 0
 #power -1
-#maxpower 3
-#nreff 3010
+#maxpower 5
+#nreff 38
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 600
 #schools 1
 
 #paths 16
@@ -53,9 +57,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 15.789473684210526
 #end
-
-
+
+
+
+
 #neweffect "Madman Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon madmen"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 284
@@ -111,5 +122,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

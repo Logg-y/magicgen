@@ -40,8 +40,10 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of dehydration"
 
 #end
-
+
+
 #neweffect "Mass Dessication"
+#fieldwidecontinuation "Desiccation"
 #effect 500
 #damage 250
 #spec 554172544
@@ -85,6 +87,5 @@
 
 #scalingset ""
 #end
-
-
-
+
+

@@ -33,7 +33,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Solar Rays Gemless"
 #scalingset "evo"
 #copyspell "Solar Rays"
@@ -70,6 +71,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
+
+

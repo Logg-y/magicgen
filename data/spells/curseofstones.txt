@@ -40,8 +40,8 @@
 #maxpower 3
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Curse of Stones Battlefield mrne"
 #copyspell "Curse of Stones"
 #effect 11
@@ -83,7 +83,8 @@
 #maxpower 8
 #scalingset ""
 #end
-
+
+
 #neweffect "Curse of Stones Battlefield Regular MR"
 #copyspell "Curse of Stones"
 #effect 11
@@ -123,5 +124,5 @@
 #maxpower 8
 #scalingset ""
 #end
-
-
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon lesserotherness"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 8388608
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "lesserotherness ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 8388608
 #power 4
 #maxpower 7
-#nreff 8
+#nreff 17
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 900
 #schools 1
 
 #paths 16
@@ -54,9 +58,12 @@
 
 #newunit "Lesser Otherness"
 
+#fatigueperextraeffect 52.94117647058823
 #end
-
-
+
+
+
+
 #neweffect "lesserotherness Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +89,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote lesserotherness"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 628
@@ -112,5 +123,8 @@
 
 
 #end
-
-
+
+
+
+
+

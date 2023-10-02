@@ -1,9 +1,10 @@
 #neweffect "Summon peasant"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 284
 #spec 0
-#power 1
+#power -2
 #maxpower 9
 #precision -2
 #nreff 1
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Peasant ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 284
 #spec 0
 #power -1
-#maxpower 2
-#nreff 3010
+#maxpower 5
+#nreff 35
 #pathlevel 1
-#fatiguecost 220
+#fatiguecost 620
 #schools thaum
 
 #paths fs
@@ -56,9 +60,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 17.714285714285715
 #end
-
-
+
+
+
+
 #neweffect "Peasant Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon peasant"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 284
@@ -114,5 +125,8 @@
 
 
 #end
-
-
+
+
+
+
+

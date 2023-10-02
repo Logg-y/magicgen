@@ -1,4 +1,6 @@
 #neweffect "Twist Fate"
+#scalingset "buff"
+
 #effect 23
 #damage 1
 #spec 8404992
@@ -48,6 +50,9 @@
 
 #end
 
+
+
+
 #neweffect "Twist Fate Cloud"
 #effect 4023
 #damage 1
@@ -60,13 +65,13 @@
 
 
 #aoe 1
-#power 3
-#maxpower 8
+#power 4
+#maxpower 9
 #pathlevel 2
 #explspr 10046
 #sound 31
 #range 10
-#fatiguecost 10
+#fatiguecost 20
 
 #skipchance 80
 
@@ -99,11 +104,18 @@
 
 
 
-#pathperresearch 0.3
+#pathperresearch 0.34
+#scalingset "buff"
+#fatigueperresearch 0
 #end
 
 
+
+
 #neweffect "Twist Fate battlefield"
+#fieldwidecontinuation "Twist Fate"
+#scalingset "buff"
+
 #effect 23
 #damage 1
 #spec 8404992
@@ -117,11 +129,11 @@
 #aoe 666
 #power 6
 #maxpower 6
-#pathlevel 3
+#pathlevel 4
 #explspr 10046
 #sound 31
 #range 10
-#fatiguecost 100
+#fatiguecost 200
 
 #paths 144
 #secondarypaths 16
@@ -152,7 +164,12 @@
 
 #end
 
+
+
+
 #neweffect "Foolsluck nextspell"
+#scalingset "buff"
+
 #effect 23
 #damage 4294967296
 #spec 8404992
@@ -165,7 +182,11 @@
 #end
 
 
+
+
 #neweffect "Twist Fate foolsluck combo"
+#scalingset "buff"
+
 #effect 23
 #damage 1
 #spec 8404992
@@ -214,6 +235,7 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of extended protection"
 
 #end
+
 
 
 

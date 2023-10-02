@@ -46,8 +46,8 @@
 
 #pathperresearch 0.2
 #end
-
-
+
+
 #neweffect "Damage Armor Greater"
 #scalingset "evo"
 #effect 123
@@ -98,9 +98,5 @@
 
 #pathperresearch 0.33
 #end
-
-
-
-
-
-
+
+

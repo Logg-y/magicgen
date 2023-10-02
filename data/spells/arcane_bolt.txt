@@ -10,13 +10,13 @@
 
 
 --
--- 
+--
 
-#nreff 5
-#aoe 0
+#nreff 1
+#aoe 5
 #power 2
 #precision 3
-#maxpower 14
+#maxpower 13
 #pathlevel 2
 #flightspr 10068
 #sound 31
@@ -37,6 +37,9 @@
 #pathperresearch 0.4
 #end
 
+
+
+
 #neweffect "Arcane Bolt Gemless"
 #scalingset "evo"
 #copyspell "Arcane Bolt"
@@ -49,17 +52,17 @@
 
 
 --
--- 
+--
 
 #nreff 1
-#aoe 0
+#aoe 1
 #power 1
 #precision 3
-#maxpower 14
+#maxpower 21
 #pathlevel 2
 #flightspr 10068
 #sound 31
-#fatiguecost 5
+#fatiguecost 15
 #range 5035
 
 #paths 16
@@ -76,5 +79,9 @@
 
 #pathperresearch 0.25
 #end
+
+
+
+
 
 

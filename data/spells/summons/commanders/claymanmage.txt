@@ -3,10 +3,10 @@
 #effect 21
 #damage 3350
 #spec 8388608
-#power 5
+#power 4
 #maxpower 14
 #precision -100
-#nreff 2
+#nreff 1
 #pathlevel 3
 #chassisvalue 35
 #range 6
@@ -35,6 +35,7 @@
 
 
 #pathperresearch 0.4
+#scalingset ""
 #end
 
 #neweffect "Summon Clayman Mage"
@@ -70,6 +71,7 @@
 
 
 #end
+
 
 
 

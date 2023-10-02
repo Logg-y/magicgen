@@ -1,4 +1,5 @@
 #neweffect "BerserkRage"
+#scalingset "buff"
 #effect 10
 #damage 256
 #spec 140738037940352
@@ -48,8 +49,10 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal rage"
 
 #end
-
+
+
 #neweffect "Battlefield Berserking"
+#scalingset "buff"
 #effect 10
 #damage 256
 #spec 562184320
@@ -65,10 +68,10 @@
 #aoe 666
 #power 8
 #maxpower 8
-#pathlevel 4
+#pathlevel 6
 #explspr 10017
 #sound 31
-#fatiguecost 200
+#fatiguecost 300
 #precision 100
 #range 20
 
@@ -86,6 +89,7 @@
 #descr 1 "The caster attempts to fill all living beings on the battlefield with berserk rage."
 #descr 64 "The caster attempts to fill all living beings on the battlefield with berserk rage."
 #descr b "$BLOOD_INTRO$, the caster attempts to fill all living beings on the battlefield with berserk rage."
+#details "Attempts to make all living creatures on the battlefield go berserk. Mages may refuse to cast this spell even when it is scripted. This is less likely to happen against an enemy force with more mages."
 
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of unbridled anger"
@@ -94,3 +98,5 @@
 
 
 #end
+
+

@@ -35,7 +35,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Frozen Heart Gemless"
 #scalingset "evo"
 #effect 2
@@ -74,13 +75,5 @@
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end
-
-
-
-
-
-
-
-
-
-
+
+

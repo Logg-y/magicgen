@@ -1,5 +1,6 @@
 #neweffect "Call leviathan"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1235
 #spec 8388608
@@ -25,18 +26,21 @@
 #schools 16
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "leviathan ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1235
 #spec 8388608
 #power 5
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 3
-#fatiguecost 220
+#fatiguecost 920
 #schools 16
 
 #paths 32
@@ -50,9 +54,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 230.0
 #end
-
-
+
+
+
+
 #neweffect "leviathan Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon leviathan"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1235
@@ -106,5 +117,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

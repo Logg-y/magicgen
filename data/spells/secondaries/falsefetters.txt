@@ -24,7 +24,7 @@
 
 #nameprefix "Chaining"
 #fatiguepersquare 6
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Falsefetters Secondary mrnh"
@@ -60,7 +60,7 @@
 
 #nameprefix "Shackling"
 #fatiguepersquare 3
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Falsefetters Secondary mrn"

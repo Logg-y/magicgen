@@ -1,5 +1,6 @@
 #neweffect "Summon kydnid"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1227
 #spec 8388608
@@ -22,18 +23,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "kydnid ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1227
 #spec 8388608
 #power 3
 #maxpower 7
-#nreff 5
+#nreff 15
 #pathlevel 2
-#fatiguecost 220
+#fatiguecost 820
 #schools 1
 
 #paths 4
@@ -49,9 +53,12 @@
 #skipchance 97
 
 
+#fatigueperextraeffect 54.666666666666664
 #end
-
-
+
+
+
+
 #neweffect "kydnid Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote kydnid"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1227
@@ -107,5 +118,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon longdead horseman"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 189
 #spec 8388608
@@ -24,18 +25,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Longdead horseman ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 189
 #spec 8388608
 #power 3
 #maxpower 6
-#nreff 2004
+#nreff 20
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 900
 #schools 16
 
 #paths 32
@@ -49,9 +53,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 45.0
 #end
-
-
+
+
+
+
 #neweffect "Longdead Horseman Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon longdead horseman"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 189
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

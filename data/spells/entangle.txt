@@ -46,7 +46,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Entangle Battlefield"
 #effect 11
 #damage 64
@@ -92,7 +93,8 @@
 
 #scalingset ""
 #end
-
+
+
 #neweffect "Entangle Battlefield Hostile Only"
 #effect 11
 #damage 64
@@ -132,11 +134,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
+
+

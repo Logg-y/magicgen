@@ -1,5 +1,6 @@
 #neweffect "Summon mechanicalman"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 532
 #spec 8388608
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "mechanicalman ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 532
 #spec 8388608
 #power 3
 #maxpower 7
-#nreff 2002
+#nreff 11
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 800
 #schools 8
 
 #paths 8
@@ -50,9 +54,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 72.72727272727273
 #end
-
-
+
+
+
+
 #neweffect "mechanicalman Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon mechanicalman"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 532
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

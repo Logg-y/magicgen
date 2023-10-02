@@ -1,5 +1,6 @@
 #neweffect "summon clockworkhorror"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 982
 #spec 8388608
@@ -7,7 +8,7 @@
 #maxpower 11
 #precision -2
 #nreff 1
-#pathlevel 1
+#pathlevel 2
 #fatiguecost 22
 #explspr 10232
 #sound 31
@@ -22,22 +23,25 @@
 
 #spelltype 528
 
--- 
+--
 #schools 8
 #aispellmod 40
 #end
-
-
+
+
+
+
 #neweffect "clockworkhorror Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 982
 #spec 8388608
 #power 2
-#maxpower 5
-#nreff 2
-#pathlevel 1
-#fatiguecost 100
+#maxpower 9
+#nreff 15
+#pathlevel 2
+#fatiguecost 1000
 #schools 8
 
 #skipchance 97
@@ -51,9 +55,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 66.66666666666667
 #end
-
-
+
+
+
+
 #neweffect "clockworkhorror Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon clockworkhorror"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 982
@@ -105,5 +116,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

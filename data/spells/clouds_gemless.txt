@@ -37,7 +37,8 @@
 
 #maxpower 14
 #end
-
+
+
 #neweffect "Fire Cloud Gemless"
 #scalingset "evo"
 #effect 3002
@@ -76,7 +77,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Freezing Cloud Gemless"
 #scalingset "evo"
 #effect 4002
@@ -118,8 +120,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Flame Cloud AN Gemless"
 #scalingset "evo"
 #effect 4002
@@ -157,8 +159,8 @@
 #namecond effect > 5000 b "Extended NAMEPREFIX scalding $mist$"
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Cloud of Death Gemless"
 #scalingset "evo"
 #effect 4002
@@ -195,8 +197,8 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
+
+
 #neweffect "Shock Cloud Gemless"
 #scalingset "evo"
 #effect 4109
@@ -237,22 +239,5 @@
 #pathperresearch 0.4
 #maxpower 14
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

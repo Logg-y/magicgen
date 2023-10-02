@@ -1,5 +1,6 @@
 #neweffect "Summon sylph"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 562
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "sylph ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 562
 #spec 0
 #power 4
-#maxpower 8
-#nreff 1002
+#maxpower 10
+#nreff 8
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths 2
@@ -49,8 +53,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "sylph Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon sylph"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 562
@@ -104,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

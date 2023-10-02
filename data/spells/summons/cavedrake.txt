@@ -1,5 +1,6 @@
 #neweffect "Summon cavedrake"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 522
 #spec 0
@@ -23,17 +24,20 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "cavedrake ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 522
 #spec 0
 #power 3
-#nreff 3
+#nreff 9
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 1220
 #schools 1
 
 #paths 8
@@ -48,9 +52,12 @@
 
 
 #maxpower 7
+#fatigueperextraeffect 135.55555555555554
 #end
-
-
+
+
+
+
 #neweffect "cavedrake Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon cavedrake"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 522
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -1,9 +1,10 @@
 #neweffect "Summon sprite"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 592
 #spec 8388608
-#power 4
+#power 1
 #maxpower 14
 #precision -2
 #nreff 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "sprite ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 592
 #spec 8388608
 #power 2
-#maxpower 5
-#nreff 2004
+#maxpower 8
+#nreff 20
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths 64
@@ -51,8 +55,10 @@
 
 #siegepatrolchaff 1
 #end
-
-
+
+
+
+
 #neweffect "sprite Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon sprite"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 592
@@ -104,5 +114,8 @@
 --
 --
 #end
-
-
+
+
+
+
+

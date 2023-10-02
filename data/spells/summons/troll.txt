@@ -1,5 +1,6 @@
 #neweffect "Summon troll"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 518
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "troll ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 518
 #spec 0
 #power 5
 #maxpower 14
-#nreff 1001
+#nreff 6
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths 8
@@ -48,8 +52,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "troll Remote Assassination"
 #effect 10050
 #provrange 4
@@ -72,9 +78,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon troll"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 518
@@ -102,5 +112,8 @@
 
 
 #end
-
-
+
+
+
+
+

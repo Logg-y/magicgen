@@ -1,5 +1,6 @@
 #neweffect "Summon seadog"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1064
 #spec 8388608
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "seadog ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1064
 #spec 8388608
 #power 0
-#maxpower 3
-#nreff 3005
+#maxpower 6
+#nreff 30
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 700
 #schools 1
 
 #paths 4
@@ -52,9 +56,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 23.333333333333332
 #end
-
-
+
+
+
+
 #neweffect "seadog Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote seadog"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1064
@@ -101,7 +112,7 @@
 #secondarypaths 4
 
 --
--- 
+--
 
 #name 4 "$Send$ NAMEPREFIX Sea %Dog%"
 #descr 4 "The caster summons ARTICLE sea %dog% to attack a distant province. Sea dogs are amphibious creatures that bite their enemies."
@@ -110,5 +121,8 @@
 
 
 #end
-
-
+
+
+
+
+

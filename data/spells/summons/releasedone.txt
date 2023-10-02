@@ -1,5 +1,6 @@
 #neweffect "Summon releasedone"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2525
 #spec 8388608
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "releasedone ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2525
 #spec 8388608
 #power 5
 #maxpower 14
-#nreff 1002
+#nreff 14
 #pathlevel 5
-#fatiguecost 300
+#fatiguecost 600
 #schools 16
 
 #paths 40
@@ -55,8 +59,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "releasedone Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +88,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon releasedone"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2525
@@ -114,5 +124,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -30,8 +30,8 @@
 #name 128 "Spreading Toxicity"
 
 #end
-
-
+
+
 #neweffect "Instant Poison"
 #scalingset "evo"
 #effect 7
@@ -65,7 +65,8 @@
 #schools 4
 
 #end
-
+
+
 #neweffect "Instant Poison Multi"
 #scalingset "evo"
 #effect 7
@@ -101,3 +102,5 @@
 #schools 4
 
 #end
+
+

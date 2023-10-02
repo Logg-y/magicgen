@@ -1,5 +1,6 @@
 #neweffect "Summon red cattle"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3177
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "red cattle ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3177
 #spec 0
 #power 3
 #maxpower 7
-#nreff 1001
+#nreff 6
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 600
 #schools 1
 
 #paths 64
@@ -52,8 +56,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "red cattle Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +86,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote red cattle"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3177
@@ -111,5 +121,8 @@
 
 
 #end
-
-
+
+
+
+
+

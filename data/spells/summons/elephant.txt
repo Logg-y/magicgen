@@ -1,5 +1,6 @@
 #neweffect "Summon elephant"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2398
 #spec 0
@@ -24,18 +25,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "elephant ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2398
 #spec 0
 #power 3
 #maxpower 7
-#nreff 5
+#nreff 10
 #pathlevel 2
-#fatiguecost 520
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -49,9 +53,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 100.0
 #end
-
-
+
+
+
+
 #neweffect "elephant Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon elephant"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2398
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

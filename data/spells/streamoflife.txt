@@ -5,8 +5,8 @@
 #damage 5025
 #spec 36028797564752000
 #aoe 4
-#power 2
-#maxpower 6
+#power 4
+#maxpower 13
 #precision 2
 #range 5035
 #pathlevel 2
@@ -24,7 +24,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
--- 
+--
 #schools 4
 
 #priority 1
@@ -35,6 +35,9 @@
 
 #end
 
+
+
+
 #neweffect "Stream of Life Gemless"
 #scalingset "evo"
 
@@ -42,12 +45,12 @@
 #damage 5025
 #spec 36028797564752000
 #aoe 0
-#power 1
-#maxpower 14
+#power 4
+#maxpower 19
 #precision 2
 #range 5035
 #pathlevel 2
-#fatiguecost 5
+#fatiguecost 20
 #explspr 10067
 #sound 41
 #paths 64
@@ -61,7 +64,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
--- 
+--
 #schools 4
 
 #priority 1
@@ -71,6 +74,8 @@
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
+
+
 
 
 #neweffect "Stream of Life battlefield"
@@ -98,7 +103,7 @@
 -- evo-like, battlefield allowed, scale aoe
 #spelltype 42
 
--- 
+--
 #schools 4
 
 #priority 1
@@ -107,6 +112,7 @@
 
 #pathperresearch 0.0
 #end
+
 
 
 

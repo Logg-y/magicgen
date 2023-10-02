@@ -1,4 +1,3 @@
-
 #neweffect "Encase in Ice Lesser"
 #scalingset "disabling"
 #effect 603
@@ -51,8 +50,8 @@
 #namecond range < 10 128 "NAMEPREFIX touch of icy imprisonment"
 
 #end
-
-
+
+
 #neweffect "Encase in Ice"
 #scalingset "disabling"
 #effect 609
@@ -106,4 +105,5 @@
 
 
 #end
-
+
+

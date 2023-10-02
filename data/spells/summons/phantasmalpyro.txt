@@ -1,5 +1,6 @@
 #neweffect "Summon phantasmal pyro"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 569
 #spec 0
@@ -27,7 +28,8 @@
 
 
 #neweffect "phantasmal pyro ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 569
 #spec 8388608
@@ -81,6 +83,7 @@
 
 
 #neweffect "Remote summon phantasmal pyro"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 569

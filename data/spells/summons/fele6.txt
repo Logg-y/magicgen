@@ -1,5 +1,6 @@
 #neweffect "Summon feles6"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 594
 #spec 0
@@ -28,7 +29,8 @@
 
 
 #neweffect "feles6 ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 594
 #spec 0
@@ -81,6 +83,7 @@
 
 
 #neweffect "Remote summon feles6"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 594

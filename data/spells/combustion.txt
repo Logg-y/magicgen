@@ -43,7 +43,8 @@
 #maxpower 14
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Combustion Battlefield"
 #effect 11
 #damage 512
@@ -88,9 +89,8 @@
 #maxpower 7
 #scalingset ""
 #end
-
-
-
+
+
 #neweffect "Combustion Battlefield Hostile Only"
 #effect 11
 #damage 512
@@ -135,9 +135,5 @@
 #maxpower 8
 #scalingset ""
 #end
-
-
-
-
-
-
+
+

@@ -32,7 +32,7 @@
 -- not life drain
 #req effect != 103
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "3AN life drain Secondary mrnh"
@@ -75,7 +75,7 @@
 -- not inanimate only
 #req effect != 96
 
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "3AN life drain Secondary mrn"

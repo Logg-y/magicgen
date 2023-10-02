@@ -34,8 +34,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Wither Bones Gemless"
 #scalingset "evo"
 #effect 2
@@ -73,10 +73,5 @@
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
-
-
-
-
-
-
-
+
+

@@ -17,7 +17,7 @@
 #pathlevel 2
 #explspr 10123
 #sound 31
-#fatiguecost 20
+#fatiguecost 40
 #precision 0
 #range 5025
 
@@ -37,9 +37,8 @@
 
 
 #end
-
-
-
+
+
 #neweffect "Battlefield Bleed"
 #effect 11
 #damage 8192
@@ -76,7 +75,5 @@
 
 #scalingset ""
 #end
-
-
-
-
+
+

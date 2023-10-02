@@ -16,7 +16,8 @@
 #name 64 "Fatiguing Chill"
 #name 128 "Fatiguing Chill"
 #end
-
+
+
 #neweffect "Chilling Winds"
 #scalingset "evo"
 #effect 109
@@ -55,8 +56,8 @@
 
 
 #end
-
-
+
+
 #neweffect "Chilling Winds Gemless"
 #scalingset "disabling"
 #effect 109
@@ -96,9 +97,8 @@
 
 #fatigueperresearch 0
 #end
-
-
-
+
+
 #neweffect "Chilling Winds 100pc"
 #effect 109
 #damage 2006
@@ -131,5 +131,5 @@
 -- 
 #schools 4
 #end
-
-
+
+

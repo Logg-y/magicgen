@@ -38,7 +38,8 @@
 #namecond range < 10 b "NAMEPREFIX touch of boulders"
 
 #end
-
+
+
 #neweffect "Boulder Evo Gemless"
 #scalingset "evo"
 #effect 2
@@ -80,8 +81,8 @@
 
 #fatigueperresearch 0
 #end
-
-
+
+
 #neweffect "Boulder Evo Rain"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -114,9 +115,5 @@
 #pathlevel 5
 
 #end
-
-
-
-
-
-
+
+

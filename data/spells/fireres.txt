@@ -1,4 +1,5 @@
 #neweffect "Fire Res +5"
+#scalingset "buff"
 #effect 10
 #damage 1024
 #spec 12582912
@@ -40,10 +41,12 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of cooling"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of cooling"
 
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "Fire Res +5 battlefield"
+#fieldwidecontinuation "Fire Res +5"
+#scalingset "buff"
 #effect 10
 #damage 1024
 #spec 12582912
@@ -87,8 +90,10 @@
 #details "Grants +5 fire resistance."
 
 #end
-
+
+
 #neweffect "Fire Res +10"
+#scalingset "buff"
 #effect 509
 #damage 198
 #spec 12599296
@@ -132,8 +137,10 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Fire Res +10 battlefield"
+#fieldwidecontinuation "Fire Res +10"
 #effect 509
 #damage 198
 #spec 12599296
@@ -177,8 +184,10 @@
 #namecond effect > 1000 128 "NAMEPREFIX extinguishing $mist$"
 
 #end
-
+
+
 #neweffect "Fire Res +15"
+#scalingset "buff"
 #effect 514
 #damage 198
 #spec 12599296
@@ -223,15 +232,5 @@
 
 
 #end
-
-
-
-
-
-
-
-
-
-
-
-
+
+

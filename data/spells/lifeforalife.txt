@@ -8,12 +8,12 @@
 #spelltype 66
 
 
--- 
+--
 
 #aoe 0
 #power 7
-#maxpower 14
-#pathlevel 2
+#maxpower 12
+#pathlevel 3
 #sound 18
 #fatiguecost 150
 #precision 100
@@ -32,3 +32,9 @@
 
 
 #end
+
+
+
+
+
+

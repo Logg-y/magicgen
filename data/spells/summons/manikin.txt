@@ -1,5 +1,6 @@
 #neweffect "Summon manikin"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 313
 #spec 8388608
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Manikin ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 313
 #spec 8388608
 #power 2
-#maxpower 6
-#nreff 3006
+#maxpower 8
+#nreff 20
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 800
 #schools 16
 
 #paths 32
@@ -49,9 +53,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 40.0
 #end
-
-
+
+
+
+
 #neweffect "Manikin Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon manikin"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 313
@@ -103,5 +114,8 @@
 --
 
 #end
-
-
+
+
+
+
+

@@ -42,7 +42,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Poison Projectile Gemless"
 #scalingset "evo"
 #effect 7
@@ -88,8 +89,8 @@
 
 #pathperresearch 0.2
 #end
-
-
+
+
 #neweffect "Poison Projectile Death Fear"
 #effect 4
 #damage 1
@@ -109,9 +110,8 @@
 #name 64 "Area Fear"
 #name 128 "Area Fear"
 #end
-
-
-
+
+
 #neweffect "Poison Projectile Death Only"
 #scalingset "evo"
 #effect 7
@@ -159,8 +159,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Poison Projectile Death Only Gemless"
 #scalingset "evo"
 #effect 7
@@ -209,9 +209,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
-
-
+
+

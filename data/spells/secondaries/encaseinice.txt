@@ -27,7 +27,7 @@
 #nameprefix "Engulfing"
 #nameprefix "Icy"
 #fatiguepersquare 6
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 #req damage != 299
 
@@ -69,7 +69,7 @@
 #nameprefix "Engulfing"
 #nameprefix "Icy"
 #fatiguepersquare 3
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 #nextspell "Encase in Ice Secondary mrn"
 

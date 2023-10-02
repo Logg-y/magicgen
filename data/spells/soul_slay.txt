@@ -36,7 +36,8 @@
 #namecond range < 10 16 "NAMEPREFIX soulslaying touch"
 
 #end
-
+
+
 #neweffect "Soul Slay Gemless"
 #scalingset "evo"
 #copyspell "Soul Slay"
@@ -58,7 +59,7 @@
 #pathlevel 3
 #explspr 10206
 #sound 41
-#fatiguecost 15
+#fatiguecost 20
 #precision 100
 #range 100
 
@@ -78,7 +79,8 @@
 
 #pathperresearch 0.2
 #end
-
+
+
 #neweffect "Soul Detonation"
 #effect 2
 #damage 2010
@@ -98,7 +100,8 @@
 #name 128 "Detonation"
 #explspr 10282
 #end
-
+
+
 #neweffect "Detonate Soul"
 #scalingset "evo"
 #copyspell "Soul Slay"
@@ -122,7 +125,7 @@
 #pathlevel 3
 #explspr 10206
 #sound 41
-#fatiguecost 15
+#fatiguecost 20
 #precision 100
 #range 100
 
@@ -132,7 +135,7 @@
 
 #nextspell "Soul Detonation"
 
-#namecond effectiveaoe < 1 1 "NAMEPREFIX Detonate Soul"
+#namecond effectiveaoe <= 1 1 "NAMEPREFIX Detonate Soul"
 
 #descr 1 "The caster tries to force the %soul% of SUBJECT to explode. Failing to resist this spell is fatal, even for immortals and those employing other means of cheating death, and triggers an explosion that may harm surrounding creatures."
 
@@ -140,9 +143,8 @@
 #namecond range < 10 16 "NAMEPREFIX souligniting touch"
 
 #end
-
-
-
+
+
 #neweffect "Battlefield Soul Slay"
 #copyspell "Soul Slay"
 #effect 2
@@ -175,11 +177,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
+
+

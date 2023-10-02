@@ -1,5 +1,6 @@
 #neweffect "Summon seaserpent"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 565
 #spec 41959424
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "seaserpent ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 565
 #spec 41959424
 #power 3
 #maxpower 7
-#nreff 1001
+#nreff 4
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 8
 #schools 1
 
 #paths 4
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 2.0
 #end
-
-
+
+
+
+
 #neweffect "seaserpent Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon seaserpent"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 565
@@ -102,5 +113,8 @@
 
 
 #end
-
-
+
+
+
+
+

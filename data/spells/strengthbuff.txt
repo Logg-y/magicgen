@@ -1,4 +1,6 @@
 #neweffect "Strength Buff"
+#scalingset "buff"
+
 #effect 10
 #damage 128
 #spec 8388608
@@ -11,12 +13,12 @@
 
 #aoe 0
 #power 0
-#maxpower 3
+#maxpower 5
 #pathlevel 1
 #explspr 10058
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 #paths 136
 #secondarypaths 8
@@ -37,11 +39,15 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
 
-#pathperresearch 0.8
 #end
 
 
+
+
 #neweffect "Strength Buff battlefield"
+#fieldwidecontinuation "Strength Buff"
+#scalingset "buff"
+
 #effect 10
 #damage 128
 #spec 8388608
@@ -78,5 +84,9 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal might"
 
 #end
+
+
+
+
 
 

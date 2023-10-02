@@ -1,5 +1,6 @@
 #neweffect "Summon mandragora"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 314
 #spec 8388608
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "mandragora ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 314
 #spec 8388608
 #power 5
 #maxpower 8
-#nreff 1004
+#nreff 8
 #pathlevel 3
-#fatiguecost 600
+#fatiguecost 1000
 #schools 16
 
 #paths 32
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 125.0
 #end
-
-
+
+
+
+
 #neweffect "mandragora Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon Mandragora"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 314
@@ -102,5 +113,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -1,4 +1,6 @@
-#neweffect "Ironskin self"
+#neweffect "Ironskin"
+#scalingset "buff"
+
 #effect 10
 #damage 268435456
 #spec 8404992
@@ -8,7 +10,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 3
@@ -17,7 +19,7 @@
 #explspr 10188
 #sound 31
 #range 10
-#fatiguecost 10
+#fatiguecost 20
 
 
 -- water, earth, death
@@ -40,53 +42,13 @@
 
 #end
 
-#neweffect "Ironskin aoe"
-#effect 10
-#damage 268435456
-#spec 8404992
-#schools 2
-
--- buff, battlefield allowed, scale aoe
-#spelltype 41
-
-
--- 
-
-#aoe 1
-#power 5
-#maxpower 8
-#pathlevel 2
-#explspr 10188
-#sound 31
-#range 10
-#fatiguecost 10
-
-
--- water, earth, death
-#paths 8
-#secondarypaths 8
-
-#details "Ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
-
-#namecond effectiveaoe < 1 8 "NAMEPREFIX $Iron$skin"
-
-#namecond2 1 <= effectiveaoe < 666 8 "NAMEPREFIX $Iron$ Warriors"
-
-#namecond effectiveaoe == 666 8 "NAMEPREFIX $Iron$ Army"
-
-
-
-
-#descr 8 "The skin of SUBJECT is converted into solid $iron$. This provides considerable protection from damage, but makes PRONOUN more susceptible to shock."
-
-#priority 1
-#namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron"
-
-#end
 
 
 
 #neweffect "Ironskin battlefield"
+#fieldwidecontinuation "Ironskin"
+#scalingset "buff"
+
 #effect 10
 #damage 268435456
 #spec 8404992
@@ -96,7 +58,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 9
@@ -128,4 +90,8 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of iron"
 
 #end
+
+
+
+
 

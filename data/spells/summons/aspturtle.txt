@@ -1,5 +1,6 @@
 #neweffect "Call aspturtle"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1234
 #spec 41959424
@@ -21,22 +22,25 @@
 
 #spelltype 528
 
--- 
+--
 #schools 16
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "aspturtle ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1234
 #spec 41959424
 #power 6
 #maxpower 10
-#nreff 3
+#nreff 5
 #pathlevel 4
-#fatiguecost 600
+#fatiguecost 1000
 #schools 1
 
 #paths 4
@@ -50,8 +54,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "aspturtle Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon aspturtle"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1234
@@ -104,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

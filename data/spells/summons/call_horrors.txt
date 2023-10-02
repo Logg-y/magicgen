@@ -30,10 +30,8 @@
 
 #pathperresearch 0.28
 #end
-
-
-
-
+
+
 #neweffect "Call Horror"
 #effect 126
 #damage -7
@@ -67,11 +65,10 @@
 
 #pathperresearch 0.28
 #end
-
-
-
-
+
+
 #neweffect "Send Lesser Horror"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage -6
@@ -98,11 +95,10 @@
 
 
 #end
-
-
-
-
+
+
 #neweffect "Send Horror"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage -7
@@ -129,9 +125,5 @@
 
 
 #end
-
-
-
-
-
-
+
+

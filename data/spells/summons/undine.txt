@@ -1,5 +1,6 @@
 #neweffect "Summon undine"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 360
 #spec 41959424
@@ -26,15 +27,16 @@
 
 
 #neweffect "undine ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 360
 #spec 41959424
 #power 3
 #maxpower 7
-#nreff 1004
+#nreff 12
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths 4
@@ -76,6 +78,7 @@
 
 
 #neweffect "Remote summon undine"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 360

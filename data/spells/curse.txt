@@ -10,8 +10,8 @@
 
 #spelltype 42
 #end
-
-
+
+
 #neweffect "Curse"
 #scalingset "disabling"
 #effect 11
@@ -58,7 +58,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of curses"
 
 #end
-
+
+
 #neweffect "Curse Battlefield"
 #effect 11
 #damage 2
@@ -98,4 +99,5 @@
 
 #scalingset ""
 #end
-
+
+

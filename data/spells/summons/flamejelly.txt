@@ -1,5 +1,6 @@
 #neweffect "Summon flamejelly"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2854
 #spec 41959424
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "flamejelly ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2854
 #spec 41959424
 #power 2
 #maxpower 6
-#nreff 5
+#nreff 15
 #pathlevel 2
-#fatiguecost 320
+#fatiguecost 920
 #schools 1
 
 #paths 1
@@ -49,9 +53,12 @@
 
 #spelltype 20
 
+#fatigueperextraeffect 61.333333333333336
 #end
-
-
+
+
+
+
 #neweffect "Flamejelly Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon flamejelly"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2854
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -56,8 +56,10 @@ class SpellEffect(object):
         self.secondarypathchance = 10
         # Each nreff adds this much fatigue
         self.fatigueperextraeffect = 0.0
+        self.fatigueperextraaoe = 0.0
         # The amount fatigueperextraeffect adds is multiplied by (this ** power level)
         self.fatigueperextraeffectscaling = 1.0
+        self.fatigueperextraaoescaling = 1.0
         # ... more modding command copies
         self.nogeodst = None
         self.onlygeodst = None
@@ -103,6 +105,13 @@ class SpellEffect(object):
         self.scalingset = None
         # This is changed when required, but should probably default to false
         self.isnextspell = False
+        # Dynamically set self.maxpower based on parameters
+        self.stopatfieldwide = None
+        # ... at a certain nreff
+        self.stopatnreff = None
+        # If set, we are a field wide version of this effect
+        # and will generate at its maxpower + 1
+        self.fieldwidecontinuation = None
 
         self._init = False
 
@@ -149,10 +158,13 @@ class SpellEffect(object):
                         if self.spelltype & scaletype:
                             numscales += 1
                             scaleparam = params[i]
-                    if numscales != 1:
+                    if numscales > 1:
                         raise ValueError(f"Spelleffect {self.name} is trying to use a scaling set to scale {numscales} parameters")
-
+                    if numscales == 0:
+                        self.scalingset = None
+                        return
                 basenreff = utils.unpackIllwinterScaling(self.nreff, self.pathlevel)
+                baseaoe = utils.unpackIllwinterScaling(self.aoe, self.pathlevel)
                 if self.scalingset == "evo":
                     # Rationale: cost stays flat.
                     # Path also stays flat
@@ -170,50 +182,61 @@ class SpellEffect(object):
                     self.fatigueperextraeffect = 0
                     self.pathperresearch = 0.2
                     self.fatigueperresearch = 0
+                    self.scaledoubletime["aoe"] = 3
                     self.attribscalingperpathlevels["damage"] = 0.08
-                    self.attribscalingperpathlevels["aoe"] = 0.2
-                    self.attribscalingperpathlevels["nreff"] = 0.15
+                    self.attribscalingperpathlevels["aoe"] = 0.25
+                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    if baseaoe < 600 and self.stopatfieldwide is None:
+                        self.stopatfieldwide = True
                 elif self.scalingset == "disabling":
                     self.fatigueperextraeffect = 0
                     self.pathperresearch = 0.2
                     self.fatigueperresearch = 0
                     self.attribscalingperpathlevels["damage"] = 0.08
-                    self.attribscalingperpathlevels["aoe"] = 0.2
-                    self.attribscalingperpathlevels["nreff"] = 0.15
-
+                    self.attribscalingperpathlevels["aoe"] = 0.25
+                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    self.scaledoubletime["aoe"] = 2.2
+                    if baseaoe < 600 and self.stopatfieldwide is None:
+                        self.stopatfieldwide = True
                 elif self.scalingset == "ritualsummon":
                     # Rationale: higher levels get you a lot more mage turn efficiency
                     # and a somewhat better cost per creature made
                     # ... but will need a bigger caster
-
-                    # Things seemed to get a bit silly once the high level spells were making
-                    # creatures at half the cost to make them at the lower level. I'm hoping
-                    # something around the 65% mark is probably about right for this
-                    # (this works out to be roughly the same as vanilla demon summoning, from the singles to the b9 versions)
                     basecost = self.fatiguecost/basenreff
                     self.pathperresearch = 0.34
                     self.fatigueperresearch = 0
                     self.scaledoubletime["nreff"] = 4.0
                     # This makes fatigue cost stay roughly constant (well it creeps up slowly, but only quite slowly)
                     self.fatigueperextraeffect = basecost
-                    self.fatigueperextraeffectscaling = 0.5 ** 0.25
+                    self.fatigueperextraeffectscaling = 0.3 ** 0.25
                     #self.scalelinear["nreff"] = 0.49
-                    self.attribscalingperpathlevels["nreff"] = 0.1
-                elif self.scalingset == "remoteattack":
+                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    # High level spells that are more efficient ways to summon goats are not useful
+                    if self.siegepatrolchaff:
+                        self.stopatnreff = basenreff * 2.2
+                    else:
+                        self.stopatnreff = basenreff * 3.3
+                elif self.scalingset == "remotesummon":
                     basecost = self.fatiguecost/basenreff
                     self.pathperresearch = 0.34
                     self.fatigueperresearch = 0
                     self.scaledoubletime["nreff"] = 4.0
                     self.fatigueperextraeffect = basecost
                     self.fatigueperextraeffectscaling = 0.5 ** 0.25
-                    self.attribscalingperpathlevels["nreff"] = 0.1
+                    self.attribscalingperpathlevels["nreff"] = 0.25
                 elif self.scalingset == "buff":
                     self.fatigueperextraeffect = 0
-                    self.pathperresearch = 0.2
-                    self.fatigueperresearch = 15
-                    self.attribscalingperpathlevels["damage"] = 0.2
-                    self.attribscalingperpathlevels["aoe"] = 0.2
-                    self.attribscalingperpathlevels["nreff"] = 0.2
+                    self.pathperresearch = 0.34
+                    self.fatigueperresearch = 0
+                    self.attribscalingperpathlevels["damage"] = 0.25
+                    self.attribscalingperpathlevels["aoe"] = 0.25
+                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    self.scaledoubletime["aoe"] = 1.3
+                    basecost = self.fatiguecost/max(1, baseaoe)
+                    self.fatigueperextraaoe = basecost * 0.7
+                    self.fatigueperextraaoescaling = 1.0
+                    if baseaoe < 600 and self.stopatfieldwide is None:
+                        self.stopatfieldwide = True
                 elif self.scalingset == "battlesummon":
                     # Rationale: making more of a creature per cast gets pretty powerful quite quickly.
                     # Number of things made per cast should therefore go quite slowly
@@ -223,12 +246,50 @@ class SpellEffect(object):
                     self.pathperresearch = 0.28
                     self.fatigueperextraeffect = 0
                     self.fatigueperresearch = 0
-                    self.scaledoubletime["nreff"] = 4.0
-                    self.scalelinear["nreff"] = 0.49
-                    self.attribscalingperpathlevels["nreff"] = 0.1
+                    self.scaledoubletime["nreff"] = 3.0
+                    #self.scalelinear["nreff"] = 0.49
+                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    self.stopatnreff = basenreff * 8
+                elif self.scalingset == "permanenteffect":
+                    # For permanent slot effects: they scale very slowly without a bit of help
+                    self.pathperresearch = 0.4
+                    self.scaledoubletime["effect"] = 2.5
                 else:
                     raise ValueError(f"Spelleffect {self.name} has unknown scaling set {self.scalingset}")
 
+            if self.stopatnreff is not None:
+                if self.spelltype & SpellTypes.POWER_SCALES_NREFF > 0:
+                    maxpower = self.power
+                    powerlevel = 0
+                    while maxpower < 100:
+                        thisamount = self.calcScaleamt(None, None, powerlevel, "nreff")
+                        if thisamount >= self.stopatnreff:
+                            print(f"stopatrneff: max power for {self.name} = {maxpower-1} ({thisamount})")
+                            self.maxpower = maxpower-1
+                            break
+                        maxpower += 1
+                        powerlevel += 1
+            if self.stopatfieldwide:
+                if self.spelltype & SpellTypes.POWER_SCALES_AOE > 0:
+                    maxpower = self.power
+                    powerlevel = 0
+                    while maxpower < 100:
+                        thisamount = self.calcScaleamt(None, None, powerlevel, "aoe")
+                        if thisamount >= 35:
+                            print(f"stopatfieldwide: max power for {self.name} = {maxpower-1} ({thisamount})")
+                            self.maxpower = maxpower-1
+                            break
+                        maxpower += 1
+                        powerlevel += 1
+
+            if self.fieldwidecontinuation is not None:
+                continuedEffect = utils.spelleffects.get(self.fieldwidecontinuation, None)
+                if continuedEffect is None:
+                    raise ValueError(f"{self.name}: #fieldwidecontinuation {self.fieldwidecontinuation} does not exist")
+                continuedEffect._initvariables()
+                self.power = continuedEffect.maxpower + 1
+                self.maxpower = continuedEffect.maxpower + 1
+                print(f"{self.name}: field wide continuation power set to {self.power}")
 
 
     def rollSpell(self, researchlevel, forceschool=None, forcepath=None, isnextspell=False, forcesecondaryeff=None,
@@ -305,17 +366,19 @@ class SpellEffect(object):
                 raise ValueError(f"Attempting to scale spell effect {self.name}, but no spell type is set!")
 
             self._scaleSpellEffectiveness(s, actualpowerlvl, mod, secondary)
-            self._scaleSpellPath1level(s, mod, secondary, **options)
-            self._scaleFatigueCost(s, mod, secondary)
+        # These two used to be intended, unsure if undoing that may cause problems
+        # but being able to scale spell fatigue for nextspells that scale is pretty important
+        self._scaleSpellPath1level(s, mod, secondary, **options)
+        self._scaleFatigueCost(s, mod, secondary)
 
-            # Have the event set generate
-            if self.eventset is not None:
-                realeventset = utils.eventsets[self.eventset]
-                eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
-                if eventsetcmds is None:
-                    print(f"Failed to generate {self.name}: event set failed to generate")
-                    return None
-                s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
+        # Have the event set generate
+        if self.eventset is not None:
+            realeventset = utils.eventsets[self.eventset]
+            eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
+            if eventsetcmds is None:
+                print(f"Failed to generate {self.name}: event set failed to generate")
+                return None
+            s.modcmdsbefore = eventsetcmds + "\n\n" + s.modcmdsbefore
 
         secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
         ret = self._generateNextspell(s, mod, secondary, secondarypower, **options)
@@ -444,8 +507,7 @@ class SpellEffect(object):
 
     def dynamicScaleParams(self, s):
         "Dynamically scale attributes of the given spell."
-        # never scale things at their lowest level
-        if s.researchlevel > self.power and s.path1level > 0:
+        if s.path1level > 0:
             for attribToScale in ("nreff", "damage", "aoe"):
                 # Do not try to scale x% battlefield AoE spells
                 if attribToScale == "aoe" and (600 < s.aoe < 700):
@@ -461,7 +523,7 @@ class SpellEffect(object):
                     continue
 
                 attribScaleAmt = getattr(self, attribToScale) // 1000
-                maxscalingratio = self.attribscalingperpathlevels.get(attribToScale, 0.15)
+                maxscalingratio = self.attribscalingperpathlevels.get(attribToScale, 0.25)
                 # Do not even think about scaling montags or anything else special
                 if attribScaleAmt < 0:
                     continue
@@ -488,13 +550,18 @@ class SpellEffect(object):
                         print(f"Warning: scale ratio for {self.name} was too high ({scaleratio} > {maxscalingratio})")
                         scaleratio = maxscalingratio
                     print(f"Attribute scale amount is {attribScaleAmt}, base spell value is {basespellvalue}")
-
+                # This calc is confusing.
+                # Scaleratio = 0.1 means that each extra caster level should get 10% more out of the spell
+                # If x1, 100 effects: target scaling is 10
+                # If x5, 100 effects: target scaling is still 10
                 newspellattrib = getattr(s, attribToScale)
                 newspellvalue = utils.unpackIllwinterScaling(newspellattrib, s.path1level)
+                # Make the scale ratio go up... slightly with path level
+                # X1 -> X2 is easy, X5 -> X6 less so
+                scaleratio *= (1.08 ** s.path1level)
                 print(f"Desired scaling ratio for attribute {attribToScale}" \
                       f" is {scaleratio}; new spell has base value {newspellvalue}")
-                desiredScalingAmountPerPathLevel = newspellvalue * scaleratio
-                desiredScalingAmount = desiredScalingAmountPerPathLevel * s.path1level
+                desiredScalingAmount = newspellvalue * scaleratio
                 newscale = math.floor(max(attribScaleAmt, min(newspellvalue/s.path1level, min(9, math.floor(desiredScalingAmount)))))
                 newfixed = newspellvalue - (newscale * s.path1level)
                 print(f"Desired scaling amount = {desiredScalingAmount}, split into {newscale} scaling + {newfixed};"
@@ -737,11 +804,10 @@ class SpellEffect(object):
     def _scaleSpellEffectiveness(self, s, actualpowerlvl, mod, secondary):
         """Adds scaleamt to the values of the parameters this effect wants to scale, according to its spelltype flags.
         Also handles other issues such as making spells battlefield wide at very high AoE."""
-        # scale the thing
+
         if self.spelltype & SpellTypes.POWER_SCALES_AOE:
             scaleamt = self.calcScaleamt(mod, secondary, actualpowerlvl, "aoe")
             s.aoe = scaleamt
-
             # Do I make it battlefield wide?
             if self.spelltype & SpellTypes.BUFF and self.spelltype & SpellTypes.ALLOW_BATTLEFIELD and not mod.nobattlefield and not secondary.nobattlefield:
                 tmp = s.aoe % 1000
@@ -764,6 +830,7 @@ class SpellEffect(object):
                         s.aoe = 663
                     elif tmp >= 80:
                         s.aoe = 665
+            print(f"scaled aoe: {self.aoe} ->  {s.aoe}")
 
         if self.spelltype & SpellTypes.POWER_SCALES_DAMAGE:
             scaleamt = self.calcScaleamt(mod, secondary, actualpowerlvl, "damage")
@@ -776,11 +843,11 @@ class SpellEffect(object):
         if self.spelltype & SpellTypes.POWER_SCALES_MAXBOUNCES:
             scaleamt = self.calcScaleamt(mod, secondary, actualpowerlvl, "maxbounces")
             s.maxbounces = scaleamt
-            print(f"scaled damage: {self.maxbounces} ->  {s.maxbounces}")
+            print(f"scaled maxbounces: {self.maxbounces} ->  {s.maxbounces}")
         if self.spelltype & SpellTypes.POWER_SCALES_EFFECTNO:
             scaleamt = self.calcScaleamt(mod, secondary, actualpowerlvl, "effect")
             s.effect = scaleamt
-            print(f"scaled damage: {self.effect} ->  {s.effect}")
+            print(f"scaled effectno: {self.effect} ->  {s.effect}")
 
         # Remove decimal stuff
         s.nreff = int(math.floor(s.nreff))
@@ -791,8 +858,17 @@ class SpellEffect(object):
     def calculateExpectedFinalFatigue(self, researchlevel, modifier, secondary=None):
         if secondary is None:
             secondary = utils.secondaries["Do Nothing"]
+        if modifier is None:
+            modifier = utils.secondaries["Do Nothing"]
 
         actualpowerlvl = (researchlevel - self.power) + secondary.power + modifier.power
+        return self.calculatedExpectedFinalFatigueAtPowerLevel(actualpowerlvl, modifier, secondary)
+
+    def calculatedExpectedFinalFatigueAtPowerLevel(self, actualpowerlvl, modifier, secondary):
+        if secondary is None:
+            secondary = utils.secondaries["Do Nothing"]
+        if modifier is None:
+            modifier = utils.secondaries["Do Nothing"]
 
         finalfatigue = self.fatiguecost
         fatiguefromresearch = self.fatigueperresearch * actualpowerlvl
@@ -816,7 +892,7 @@ class SpellEffect(object):
         DebugLogger.debuglog(f"Expected after fatigueperadditionaleffect: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
 
         if self.spelltype & SpellTypes.POWER_SCALES_NREFF:
-            finalnreff = self.calcScaleamt(modifier, secondary, actualpowerlvl, "nreff")
+            finalnreff = self.calcScaleamt(modifier, secondary, actualpowerlvl, "nreff", includeGemCostMult=False)
         finalfatigue += (finalnreff * (secondary.fatiguecostpereffect))
         DebugLogger.debuglog(f"Expected after cost per effect: {finalfatigue}", debugkeys.FATIGUECOSTCONSTRAINTS)
 
@@ -1017,7 +1093,7 @@ class SpellEffect(object):
 
 
         self._decideSecondaryPathLimitations(**options)
-        print("rolling secondary...")
+        print("Rolling secondary...")
 
         if self.allowSecondary:
             while secondary is None:
@@ -1030,6 +1106,7 @@ class SpellEffect(object):
                     return None
                 toconsider = utils.secondaries[secondarylist.pop(0)]
                 if toconsider.compatibility(self, mod, self.researchlevel):
+                    print(f"Secondary {toconsider.name} is compatible!")
                     if forcesecondaryeff is None:
                         # Check path eligibility
                         if self.allowOnlySamePathSecondaryEffect and toconsider.paths & self.paths == 0:
@@ -1043,11 +1120,18 @@ class SpellEffect(object):
                             else:
                                 continue
                         if self.allowOnlyDiffPathSecondaryEffect and toconsider.paths & self.paths != 0:
+                            print(f"Reject secondary {toconsider.name}: path overlap = {toconsider.paths & self.paths}")
                             continue
                         if random.random() * 100 < toconsider.skipchance:
                             if toconsider.skipchance < 100.0:
-                                secondarylist.append(toconsider.name)
+                                #secondarylist.append(toconsider.name)
+                                print(f"Secondary {toconsider.name} failed skipchance")
+                                continue
                         else:
+                            # Take Do Nothing only if we really have to.
+                            #if toconsider.name == "Do Nothing" and len(secondarylist) > 0:
+                            #    secondarylist.append(toconsider.name)
+                            #    continue
                             secondary = toconsider
                             break
                     else:
@@ -1230,20 +1314,37 @@ class SpellEffect(object):
         secondarypower = secondary.calcModifiedPowerForSpellEffect(self)
         actualpowerlvl = (self.researchlevel - self.power) + mod.power + secondarypower
         return actualpowerlvl
-    def calcScaleamt(self, mod=None, secondary=None, actualpowerlvl=None, attribname=None) -> int:
+    def calcScaleamt(self, mod=None, secondary=None, actualpowerlvl=None, attribname=None, includeGemCostMult=True) -> int:
         "Return the spell's scale amount: the amount the base value of its scaling attributes should be multiplied by."
         if actualpowerlvl is None:
             actualpowerlvl = self.calcActualpowerlvl(mod, secondary)
         if attribname is None:
             basevalue = 1.0
             scalerate = 4.0
+        elif attribname == "effect":
+            basevalue = 1 + (self.effect % 100)
+            scalerate = self.scaledoubletime.get(attribname, 4.0)
         else:
             basevalue = utils.unpackIllwinterScaling(getattr(self, attribname), self.pathlevel)
             scalerate = self.scaledoubletime.get(attribname, 4.0)
+        if basevalue == 0 and actualpowerlvl > 0:
+            basevalue = 1
         exponential = 2**(actualpowerlvl/scalerate)
         scaleamt = basevalue * exponential
         linear = self.scalelinear.get(attribname, 0.0) * actualpowerlvl
         scaleamt += linear
+
+        if includeGemCostMult:
+            expectedFinalFatigue = self.calculatedExpectedFinalFatigueAtPowerLevel(actualpowerlvl, mod, secondary)
+            passedGemThreshold = expectedFinalFatigue > 100 and self.fatiguecost < 100
+            additionalMult = 1.6 if passedGemThreshold else 1.0
+            scaleamt *= additionalMult
+
+        if attribname == "effect":
+            # -1 is because eff500 is +1 already, we had to add 1 for the exponential scaling already
+            scaleamt += self.effect - (basevalue)
+            print(f"Scale effect: base was {basevalue}, powerlvl is {actualpowerlvl}, result is {scaleamt}")
+
         scaleamt = int(round(scaleamt))
         return scaleamt
     def canGenerateAtPowerlvl(self, powerlvl, mod=None, secondary=None):
@@ -1261,16 +1362,24 @@ class SpellEffect(object):
         pairs = [(SpellTypes.POWER_SCALES_AOE, "aoe"), (SpellTypes.POWER_SCALES_DAMAGE, "damage"),
                  (SpellTypes.POWER_SCALES_NREFF, "nreff"), (SpellTypes.POWER_SCALES_MAXBOUNCES, "maxbounces"),
                  (SpellTypes.POWER_SCALES_EFFECTNO, "effect")]
+        modname = getattr(mod, "name", "None")
+        secondaryname = getattr(secondary, "name", "None")
         for flag, attribname in pairs:
             if self.spelltype & flag:
                 base = getattr(self, attribname)
                 thisScale = self.calcScaleamt(mod, secondary, powerlvl, attribname)
                 prevScale = self.calcScaleamt(mod, secondary, powerlvl-1, attribname)
                 if thisScale == prevScale:
-                    modname = getattr(mod, "name", "None")
-                    secondaryname = getattr(secondary, "name", "None")
                     print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
                           f"attribute {attribname} has same thisScale {thisScale} vs prevScale {prevScale}")
+                    return False
+                if attribname == "nreff" and self.stopatnreff is not None and thisScale >= self.stopatnreff:
+                    print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
+                          f"nreff {thisScale} exceeds max allowed {self.stopatnreff}")
+                    return False
+                if attribname == "aoe" and self.stopatfieldwide is not None and thisScale >= 35:
+                    print(f"Block {self.name} at powerlvl {powerlvl} with {modname} and {secondaryname}: "
+                          f"aoe {thisScale} exceeds field wide threshold")
                     return False
         return True
 
@@ -1289,10 +1398,15 @@ class SpellEffect(object):
 
     def _calcFatigueFromAdditionalEffects(self, actualpowerlvl):
         basenreff = utils.unpackIllwinterScaling(self.nreff, self.pathlevel)
-        finalnreff = self.calcScaleamt(actualpowerlvl=actualpowerlvl, attribname="nreff")
+        finalnreff = self.calcScaleamt(actualpowerlvl=actualpowerlvl, attribname="nreff", includeGemCostMult=False)
         fatigueperextra = self.fatigueperextraeffect * (self.fatigueperextraeffectscaling ** actualpowerlvl)
         total = fatigueperextra * max(0, finalnreff - basenreff)
-        print(f"Fatigue from additional effects: {total}")
+
+        baseaoe = utils.unpackIllwinterScaling(self.aoe, self.pathlevel)
+        finalaoe = self.calcScaleamt(actualpowerlvl=actualpowerlvl, attribname="aoe", includeGemCostMult=False)
+        fatigueperextra = self.fatigueperextraaoe * (self.fatigueperextraaoescaling ** actualpowerlvl)
+        total += fatigueperextra * max(0, finalaoe - baseaoe)
+
         return total
     def _scaleFatigueCost(self, s, mod, secondary, **options):
         actualpowerlvl = self.calcActualpowerlvl(mod, secondary)

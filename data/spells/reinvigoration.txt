@@ -1,4 +1,6 @@
 #neweffect "Reinvigoration"
+#scalingset ""
+
 #effect 8
 #damage 200
 #spec 8404992
@@ -8,17 +10,17 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 1
-#maxpower 1
+#maxpower 9
 #pathlevel 1
 #alwaysgenerate 1
 #explspr 10172
 #sound 31
 #range 0
-#fatiguecost 199
+#fatiguecost 100
 
 
 #paths 128
@@ -27,11 +29,18 @@
 #name 128 "NAMEPREFIX Reinvigoration"
 #descr 128 "$BLOOD_INTRO$, the mage will remove all of his fatigue."
 
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
 
+
+
+
 #neweffect "Reinvigoration Gemless"
+#scalingset "buff"
+
 #effect 8
-#damage 15
+#damage 20
 #spec 8404992+128
 #schools 32
 #casttime 275
@@ -40,7 +49,7 @@
 #spelltype 65
 
 
--- 
+--
 
 #aoe 0
 #power 5
@@ -72,40 +81,12 @@
 #descr 64 "Through the wondrous touch of surrounding life, the caster is able to remove some of his fatigue. This process takes some time, however."
 #details "This spell recovers EFFECTIVEDAMAGE fatigue."
 
-#pathperresearch 0.4
 #end
 
 
 
-#neweffect "Reinvigoration AoE"
-#effect 8
-#damage 200
-#spec 8404992+128
-#schools 2
-
--- buff, battlefield allowed, scale aoe
-#spelltype 41
 
 
--- 
-
-#aoe 5
-#power 4
-#maxpower 13
-#pathlevel 1
-#explspr 10172
-#sound 31
-#range 0
-#fatiguecost 199
-
-
-#paths 128
-#secondarypaths 128
-
-#name 128 "NAMEPREFIX Reinvigoration"
-#descr 128 "$BLOOD_INTRO$, the caster removes all fatigue of SUBJECT around him."
-
-#end
 
 
 #neweffect "Reinvigoration Cloud"
@@ -118,7 +99,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 1
 #power 7
@@ -138,4 +119,10 @@
 #descr 128 "$BLOOD_INTRO$, the mage will gain a massive surge of reinvigoration, preventing him from being fatigued for a short time."
 
 #end
+
+
+
+
+
+
 

@@ -29,7 +29,7 @@
 
 #req effect != 66
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Paralysis Secondary mrnh"
@@ -68,7 +68,7 @@
 #nameprefix "Incapacitating"
 #fatiguepersquare 6
 
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Paralysis Secondary mrn"

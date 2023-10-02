@@ -32,4 +32,5 @@
 #namecond range < 10 128 "NAMEPREFIX Touch of exploding blood"
 #descrcond range < 10 128 "The caster's touch causes the victims' blood to explode. Armor and magic resistance offer no protection against this spell."
 
-#end
+#end
+

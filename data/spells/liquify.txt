@@ -41,7 +41,8 @@
 
 
 #end
-
+
+
 #neweffect "Liquify Gemless"
 #scalingset "evo"
 #effect 2
@@ -61,7 +62,7 @@
 #pathlevel 2
 #explspr 10121
 #sound 31
-#fatiguecost 10
+#fatiguecost 20
 #range 5010
 
 -- W, D
@@ -85,11 +86,5 @@
 
 #fatigueperresearch 0
 #end
-
-
-
-
-
-
-
-
+
+

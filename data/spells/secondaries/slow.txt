@@ -25,7 +25,7 @@
 #nameprefix "Slowing"
 #fatiguepersquare 6
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Slow Secondary mrnh"
@@ -61,7 +61,7 @@
 #nameprefix "Slowing"
 #fatiguepersquare 3
 
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Slow Secondary mrn"

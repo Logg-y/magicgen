@@ -30,7 +30,7 @@
 #nameprefix "Hypnotic"
 
 #fatiguepersquare 14
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "charm Secondary mrne"

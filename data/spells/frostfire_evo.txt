@@ -12,8 +12,8 @@
 #name b "Elemental Exposure"
 #maxpower 30
 #end
-
-
+
+
 #neweffect "Frostfire Evo Projectile"
 #scalingset "evo"
 #effect 2
@@ -42,7 +42,7 @@
 #descr f "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descr w "ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descr b "$BLOOD_INTRO$, ARTICLE %$ball$% of frostfire %is% launched towards the enemy. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
-
+#details "Both fire and cold resistance apply to the effects of this spell."
 -- evo-like, can have close range variants, scale aoe
 #spelltype 34
 
@@ -62,7 +62,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Frostfire Evo Projectile Gemless"
 #scalingset "evo"
 #effect 2
@@ -102,7 +103,7 @@
 #maxpower 14
 
 #pathlevel 2
-
+#details "Both fire and cold resistance apply to the effects of this spell."
 #priority 1
 #namecond range < 10 f "NAMEPREFIX Touch of Frostfire"
 #namecond range < 10 w "NAMEPREFIX Touch of Frostfire"
@@ -115,10 +116,8 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
+
+
 #neweffect "Frostfire Evo Projectile Rain"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -149,7 +148,7 @@
 #descr f "Balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descr w "Balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
 #descr b "$BLOOD_INTRO$, balls of frostfire are rained down upon the enemy army. Frostfire is a strange combination of fire and frost which is somehow both hot and cold at the same time, and those wounded by it are simultaneously frozen and set on fire."
-
+#details "Both fire and cold resistance apply to the effects of this spell."
 #spelltype 18
 
 #power 7
@@ -160,11 +159,5 @@
 #nextspell "Frostfire Ailments"
 
 #end
-
-
-
-
-
-
-
-
+
+

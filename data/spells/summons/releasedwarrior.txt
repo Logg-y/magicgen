@@ -1,5 +1,6 @@
 #neweffect "Summon releasedwarrior"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2524
 #spec 8388608
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "releasedwarrior ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2524
 #spec 8388608
 #power 5
 #maxpower 14
-#nreff 1002
+#nreff 12
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 600
 #schools 16
 
 #paths 40
@@ -54,9 +58,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 50.0
 #end
-
-
+
+
+
+
 #neweffect "releasedwarrior Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +89,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon releasedwarrior"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2524
@@ -114,5 +125,8 @@
 
 
 #end
-
-
+
+
+
+
+

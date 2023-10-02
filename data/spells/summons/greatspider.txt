@@ -1,5 +1,6 @@
 #neweffect "Summon greatspider"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 884
 #spec 0
@@ -23,18 +24,21 @@
 
 #spelltype 528
 #end
-
-
+
+
+
+
 #neweffect "greatspider ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 884
 #spec 0
 #power 2
 #maxpower 6
-#nreff 8
+#nreff 16
 #pathlevel 1
-#fatiguecost 420
+#fatiguecost 820
 #schools 1
 
 #paths 64
@@ -50,9 +54,12 @@
 #skipchance 97
 
 
+#fatigueperextraeffect 51.25
 #end
-
-
+
+
+
+
 #neweffect "greatspider Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,9 +86,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote greatspider"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 884
@@ -110,5 +121,8 @@
 
 
 #end
-
-
+
+
+
+
+

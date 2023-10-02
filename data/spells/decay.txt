@@ -43,7 +43,8 @@
 
 
 #end
-
+
+
 #neweffect "Mass Decay"
 #effect 11
 #damage 256
@@ -88,7 +89,8 @@
 
 #scalingset ""
 #end
-
+
+
 #neweffect "Mass Decay Hostile Only"
 #effect 11
 #damage 256
@@ -128,10 +130,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
+
+

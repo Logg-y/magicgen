@@ -1,4 +1,6 @@
 #neweffect "Luck"
+#scalingset "buff"
+
 #effect 10
 #damage 2
 #spec 545800192
@@ -11,11 +13,11 @@
 
 #aoe 0
 #power 2
-#pathlevel 1
+#pathlevel 2
 #explspr 10001
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 18
 #maxpower 7
 
 
@@ -37,9 +39,9 @@
 
 #details "Luck: 75% chance to negate fatal damage."
 
-#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
-#descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
-#descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
+#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
+#descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
+#descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of luck"
@@ -51,7 +53,12 @@
 #end
 
 
+
+
 #neweffect "Luck battlefield"
+#fieldwidecontinuation "Luck"
+#scalingset "buff"
+
 #effect 10
 #damage 2
 #spec 545800192
@@ -89,9 +96,9 @@
 
 #details "Luck: 75% chance to negate fatal damage."
 
-#descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
-#descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
-#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells." 
+#descr 16 "The fate of SUBJECT is twisted, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
+#descr 128 "$BLOOD_INTRO$, the fate of SUBJECT is twisted by demonic beings, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
+#descr f "SUBJECT %is% given the ability to glimpses of the immediate future, granting PRONOUN a very good chance to escape otherwise fatal attacks and spells."
 
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of luck"
@@ -101,3 +108,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of fortune"
 
 #end
+
+
+
+
+

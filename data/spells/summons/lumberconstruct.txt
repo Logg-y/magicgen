@@ -1,13 +1,14 @@
 #neweffect "lumberconstruct ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 476
 #spec 8388608
 #power 3
-#maxpower 7
-#nreff 5
+#maxpower 9
+#nreff 12
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 700
 #schools 8
 
 #paths 64
@@ -22,9 +23,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 58.333333333333336
 #end
-
-
+
+
+
+
 #neweffect "lumberconstruct Remote Assassination"
 #effect 10050
 #provrange 4
@@ -47,9 +51,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon lumberconstruct"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 476
@@ -76,5 +84,8 @@
 
 
 #end
-
-
+
+
+
+
+

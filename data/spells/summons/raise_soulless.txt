@@ -1,9 +1,10 @@
 #neweffect "Raise Soulless"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -3
 #spec 8388608
-#power 0
+#power -3
 #maxpower 9
 #precision -2
 #nreff 3
@@ -31,7 +32,8 @@
 
 
 #neweffect "Raise Soulless ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage -3
 #spec 8388608
@@ -64,6 +66,8 @@
 
 #neweffect "Raise Soulless remote ritual"
 #copyspell "Carrion Reanimation"
+#scalingset "remotesummon"
+
 #effect 10037
 #provrange 2
 #onlyfriendlydst 1

@@ -22,6 +22,8 @@
 #spelltype 20
 
 
+#scalingset ""
+#fatigueperextraeffect 30
 #end
 
 #neweffect "Fires from Afar scale damage"
@@ -29,7 +31,7 @@
 #effect 10091
 #damage 15
 #spec 96
-#power 4
+#power 6
 #maxpower 14
 #nreff 10
 #pathlevel 3
@@ -49,4 +51,6 @@
 #spelltype 68
 
 
+#scalingset ""
 #end
+

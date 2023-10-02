@@ -1,5 +1,6 @@
 #neweffect "Summon ghost"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 566
 #spec 8388608
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "ghost ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 566
 #spec 8388608
 #power 3
-#maxpower 7
-#nreff 4
+#maxpower 9
+#nreff 8
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 820
 #schools 1
 
 
@@ -50,9 +54,12 @@
 
 #spelltype 20
 
+#fatigueperextraeffect 102.5
 #end
-
-
+
+
+
+
 #neweffect "ghost Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon ghost"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 566
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

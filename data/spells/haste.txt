@@ -1,4 +1,6 @@
 #neweffect "Haste"
+#scalingset "buff"
+
 #effect 23
 #damage 4
 #spec 549453952
@@ -8,18 +10,17 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power -2
-#maxpower 6
+#maxpower 4
 #pathlevel 1
 #explspr 10231
 #sound 31
 #range 10
-#fatiguecost 10
+#fatiguecost 2
 #skipchance 30
-#pathperresearch 0.25
 
 
 
@@ -42,4 +43,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of the hare"
 
 #end
+
+
+
+
 

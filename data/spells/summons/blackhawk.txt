@@ -1,10 +1,11 @@
 #neweffect "Summon blackhawk"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 517
 #spec 0
-#power 0
-#maxpower 9
+#power -1
+#maxpower 11
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -25,10 +26,13 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "blackhawk ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 517
 #spec 0
@@ -57,8 +61,10 @@
 #siegepatrolchaff 1
 
 #end
-
-
+
+
+
+
 #neweffect "blackhawk Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +89,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote blackhawk"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 517
@@ -115,5 +125,8 @@
 
 
 #end
-
-
+
+
+
+
+

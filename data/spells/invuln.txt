@@ -1,4 +1,6 @@
 #neweffect "Stygian Skins"
+#scalingset "buff"
+
 #effect 23
 #damage 17179869184
 #spec 8404992
@@ -8,10 +10,10 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
-#power 0
+#power 1
 #maxpower 6
 #pathlevel 1
 #explspr 10168
@@ -55,7 +57,13 @@
 
 #end
 
+
+
+
 #neweffect "Stygian Skins battlefield"
+#fieldwidecontinuation "Stygian Skins"
+#scalingset "buff"
+
 #effect 23
 #damage 17179869184
 #spec 8404992
@@ -65,12 +73,12 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 3
+#pathlevel 4
 #explspr 10168
 #sound 31
 #range 10
@@ -108,7 +116,11 @@
 #end
 
 
+
+
 #neweffect "Invuln"
+#scalingset "buff"
+
 #effect 23
 #damage 2
 #spec 8404992
@@ -118,7 +130,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 4
@@ -158,7 +170,12 @@
 #end
 
 
+
+
 #neweffect "Invuln battlefield"
+#fieldwidecontinuation "Invuln"
+#scalingset "buff"
+
 #effect 23
 #damage 2
 #spec 8404992
@@ -168,16 +185,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 10
 #maxpower 10
-#pathlevel 5	
+#pathlevel 6
 #explspr 10168
 #sound 31
 #range 10
-#fatiguecost 300
+#fatiguecost 400
 #unique 1
 #aispellmod -84
 
@@ -202,4 +219,8 @@
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of invulnerablility"
 
 #end
+
+
+
+
 

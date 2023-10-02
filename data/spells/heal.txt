@@ -1,4 +1,6 @@
 #neweffect "Heal"
+#scalingset "buff"
+
 #effect 13
 #damage 5030
 #spec 549453952
@@ -8,7 +10,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #casttime 25
@@ -17,7 +19,7 @@
 #pathlevel 1
 #explspr 10303
 #sound 29
-#fatiguecost 15
+#fatiguecost 5
 #range 5015
 #precision 5
 
@@ -35,10 +37,15 @@
 #priority 1
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of healing"
 
-#maxpower 6
+#maxpower 7
 #end
 
+
+
+
 #neweffect "Heal Regen 2"
+#scalingset "buff"
+
 #effect 23
 #damage 536870912
 #spec 549453952+4398046511104
@@ -59,7 +66,11 @@
 #end
 
 
+
+
 #neweffect "Heal Regen 1"
+#scalingset "buff"
+
 #effect 10
 #damage 32
 #spec 549453952+4398046511104
@@ -81,7 +92,11 @@
 #end
 
 
+
+
 #neweffect "Heal Regen Combo"
+#scalingset "buff"
+
 #effect 13
 #damage 5030
 #spec 549453952
@@ -91,7 +106,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #casttime 25
@@ -126,7 +141,11 @@
 #end
 
 
+
+
 #neweffect "Heal Undead"
+#scalingset "buff"
+
 #effect 13
 #damage 5030
 #spec 281018504
@@ -136,7 +155,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #casttime 25
@@ -145,7 +164,7 @@
 #pathlevel 1
 #explspr 10197
 #sound 31
-#fatiguecost 15
+#fatiguecost 5
 #range 5015
 #precision 5
 
@@ -162,9 +181,12 @@
 
 #priority 1
 #namecond effect > 1000 32 "NAMEPREFIX $mist$ of undead restoration"
-#maxpower 7
+#maxpower 6
 
 #end
+
+
+
 
 #neweffect "Heal Fire Burning"
 #effect 11
@@ -187,7 +209,11 @@
 #end
 
 
+
+
 #neweffect "Heal Fire"
+#scalingset "buff"
+
 #effect 13
 #damage 5010
 #spec 549453952
@@ -197,7 +223,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #casttime 15
@@ -206,7 +232,7 @@
 #pathlevel 1
 #explspr 10113
 #sound 123
-#fatiguecost 5
+#fatiguecost 2
 #range 5025
 #precision 100
 
@@ -227,4 +253,10 @@
 #aispellmod -10
 #nextspell "Heal Fire Burning"
 #end
+
+
+
+
+
+
 

@@ -1,4 +1,5 @@
 #neweffect "Shock Res +5"
+#scalingset "buff"
 #effect 10
 #damage 2048
 #spec 12582912
@@ -35,11 +36,12 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of insulation"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of grounding"
 
-#pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Shock Res +5 battlefield"
+#fieldwidecontinuation "Shock Res +5"
+#scalingset "buff"
 #effect 10
 #damage 2048
 #spec 12582912
@@ -79,8 +81,10 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of grounding"
 
 #end
-
+
+
 #neweffect "Shock Res +10"
+#scalingset "buff"
 #effect 509
 #damage 199
 #spec 12599296
@@ -121,8 +125,10 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Shock Res +10 battlefield"
+#fieldwidecontinuation "Shock Res +10"
 #effect 509
 #damage 199
 #spec 12599296
@@ -163,8 +169,10 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of greater grounding"
 
 #end
-
+
+
 #neweffect "Shock Res +15"
+#scalingset "buff"
 #effect 514
 #damage 199
 #spec 12599296
@@ -207,16 +215,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

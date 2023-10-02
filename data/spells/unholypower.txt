@@ -1,4 +1,6 @@
 #neweffect "Unholy Power"
+#scalingset "buff"
+
 #effect 23
 #damage 33554432
 #spec 8388608+16384+131072
@@ -16,7 +18,7 @@
 #explspr 10051
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 #paths fb
 #secondarypaths f
@@ -36,12 +38,16 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of infernal prowess"
 
 
-#pathperresearch 0.8
 
 #end
 
 
+
+
 #neweffect "Unholy Power battlefield"
+#fieldwidecontinuation "Unholy Power"
+#scalingset "buff"
+
 #effect 23
 #damage 33554432
 #spec 8388608+16384+131072
@@ -77,6 +83,7 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of Infernal Prowess"
 
 #end
+
 
 
 

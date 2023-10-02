@@ -1,9 +1,10 @@
 #neweffect "Summon phantasmal archer"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3233
 #spec 8388608
-#power 2
+#power 0
 #maxpower 10
 #precision -2
 #nreff 1
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal archer ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3233
 #spec 8388608
 #power 2
-#maxpower 5
-#nreff 4002
+#maxpower 8
+#nreff 22
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 600
 #schools alt
 
 #paths 2
@@ -51,9 +55,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 27.272727272727273
 #end
-
-
+
+
+
+
 #neweffect "Phantasmal archer Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote phantasmal archer"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3233
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

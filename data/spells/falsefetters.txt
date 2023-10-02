@@ -51,7 +51,8 @@
 #pathperresearch 0.4
 #maxpower 9
 #end
-
+
+
 #neweffect "False Fetters Battlefield"
 #effect 11
 #damage 131072
@@ -104,7 +105,8 @@
 #pathperresearch 0.4
 #maxpower 7
 #end
-
+
+
 #neweffect "False Fetters Battlefield Enemies Only"
 #effect 11
 #damage 131072
@@ -154,8 +156,5 @@
 #pathperresearch 0.4
 #maxpower 9
 #end
-
-
-
-
-
+
+

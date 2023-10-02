@@ -18,7 +18,7 @@
 #req pathlevel == 2
 #pathperresearch -0.4
 #pathlevel -1
-#power -1
+#power -2
 
 #end
 
@@ -42,7 +42,7 @@
 #req pathlevel == 3
 #pathperresearch -0.4
 #pathlevel -1
-#power -1
+#power -2
 
 #end
 
@@ -66,34 +66,10 @@
 #req pathlevel >= 4
 #pathperresearch -0.4
 #pathlevel -2
-#power -1
+#power -3
 
 #end
 
-
-#newmodifier "Lowered Path greater 3-4"
-
--- both evo and buff
-#spelltype 0
-
-#skipchance 40
--- not battlesummoned commander
-#req effect != 21
-
--- not global enchantment
-#req effect != 10081
--- not dispel
-#req effect != 10030
-
--- trial: not for rituals
-#req effect < 10000
-
-#req pathlevel < 5
-#pathperresearch -0.4
-#pathlevel -2
-#power -2
-
-#end
 
 #newmodifier "Lowered Path greater 5+"
 
@@ -115,6 +91,6 @@
 #req pathlevel >= 5
 #pathperresearch -0.4
 #pathlevel -3
-#power -2
+#power -6
 
 #end

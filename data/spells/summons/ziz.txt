@@ -1,5 +1,6 @@
 #neweffect "Summon ziz"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1388
 #spec 0
@@ -27,7 +28,8 @@
 
 
 #neweffect "ziz ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1388
 #spec 0
@@ -85,6 +87,7 @@
 
 
 #neweffect "remote ziz"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 1388

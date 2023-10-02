@@ -1,4 +1,6 @@
 #neweffect "Toughened Armor"
+#scalingset "buff"
+
 #effect 10
 #damage 64
 #spec 12582912
@@ -9,16 +11,15 @@
 
 
 
-#pathperresearch 0.35
 
 #aoe 1
-#power 1
+#power -1
 #pathlevel 1
-#maxpower 4
+#maxpower 5
 #explspr 10193
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 2
 
 
 -- erf
@@ -40,7 +41,11 @@
 
 #end
 
+
+
+-- deliberately no #fieldwidecontinuation because construction spell levels are what they are
 #neweffect "Toughened Armor battlefield"
+
 #effect 10
 #damage 64
 #spec 12582912
@@ -51,12 +56,11 @@
 
 
 
-#pathperresearch 0.35
 
 #aoe 666
-#power 5
+#power 7
 #pathlevel 4
-#maxpower 5
+#maxpower 7
 #explspr 10193
 #sound 31
 #range 10
@@ -82,6 +86,7 @@
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of tempered steel"
 
 #end
+
 
 
 

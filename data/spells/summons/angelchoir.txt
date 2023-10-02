@@ -1,10 +1,11 @@
 #neweffect "Summon angel of the choir"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 522
 #spec 0
-#power 4
-#maxpower 12
+#power 3
+#maxpower 15
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -27,18 +28,21 @@
 
 #aispellmod -33
 #end
-
-
+
+
+
+
 #neweffect "angel choir ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 522
 #spec 0
 #power 3
 #maxpower 6
-#nreff 5
+#nreff 15
 #pathlevel 2
-#fatiguecost 310
+#fatiguecost 910
 #schools 1
 
 #paths 16
@@ -54,9 +58,12 @@
 
 
 #details "Creatures summoned with this spell are not sacred."
+#fatigueperextraeffect 60.666666666666664
 #end
-
-
+
+
+
+
 #neweffect "angel choir Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +89,13 @@
 
 #details "Creatures summoned with this spell are not sacred."
 #end
-
-
+
+
+
+
 #neweffect "Remote summon angel choir"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 522
@@ -114,5 +125,9 @@
 
 #details "Creatures summoned with this spell are not sacred."
 #end
-
-
+
+
+
+
+
+

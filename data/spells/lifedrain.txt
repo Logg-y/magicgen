@@ -39,7 +39,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Lifedrain aoe"
 #scalingset "evo"
 #copyspell "Drain Life"
@@ -82,7 +83,8 @@
 
 #pathperresearch 0.2
 #end
-
+
+
 #neweffect "Lifedrain single target blood"
 #scalingset ""
 #copyspell "Leech"
@@ -122,7 +124,8 @@
 
 
 #end
-
+
+
 #neweffect "Lifedrain aoe blood"
 #scalingset "evo"
 #copyspell "Leech"
@@ -161,7 +164,8 @@
 
 
 #end
-
+
+
 #neweffect "Lifedrain battlefield"
 #copyspell "Drain Life"
 #effect 103
@@ -197,7 +201,8 @@
 
 #scalingset ""
 #end
-
+
+
 #neweffect "Lifedrain battlefield blood"
 #copyspell "Leech"
 #effect 103
@@ -233,10 +238,8 @@
 
 #scalingset ""
 #end
-
-
-
-
+
+
 #neweffect "Lifedrain soulslay"
 #scalingset "evo"
 #copyspell "Drain Life"
@@ -256,7 +259,7 @@
 #maxpower 14
 #pathlevel 3
 #sound 18
-#fatiguecost 10
+#fatiguecost 20
 #precision 100
 #range 5020
 
@@ -275,9 +278,5 @@
 
 
 #end
-
-
-
-
-
-
+
+

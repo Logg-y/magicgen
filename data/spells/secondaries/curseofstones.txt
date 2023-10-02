@@ -29,7 +29,7 @@
 #nameprefix "Weighted"
 #fatiguepersquare 4
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Curse of Stones Secondary mrnh"
@@ -70,7 +70,7 @@
 #nameprefix "Weighted"
 #fatiguepersquare 2
 
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Curse of Stones Secondary mrn"

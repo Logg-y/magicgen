@@ -27,7 +27,7 @@
 #nameprefix "Firebonding"
 #nameprefix "Imprisoning"
 #fatiguepersquare 6
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Firebonds Secondary mrnh"
@@ -65,7 +65,7 @@
 #nameprefix "Firebonding"
 #nameprefix "Imprisoning"
 #fatiguepersquare 3
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Firebonds Secondary mrn"

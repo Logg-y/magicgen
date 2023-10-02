@@ -28,7 +28,8 @@
 #schools 32
 
 #end
-
+
+
 #neweffect "Shatter Gemless"
 #scalingset "evo"
 #effect 96
@@ -60,5 +61,5 @@
 
 #pathperresearch 0.1
 #end
-
-
+
+

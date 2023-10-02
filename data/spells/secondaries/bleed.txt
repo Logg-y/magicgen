@@ -32,7 +32,7 @@
 #nameprefix "Crimson"
 #nameprefix "Lacerating"
 #fatiguepersquare 4
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Bleeding Secondary mrne"
@@ -75,7 +75,7 @@
 -- not undead or inanimates
 #req spec !& 8
 #req effect != 96
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Bleeding Secondary mrn"

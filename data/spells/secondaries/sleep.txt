@@ -30,7 +30,7 @@
 
 #req damage != 1024
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Sleep Secondary mrnh"
@@ -70,7 +70,7 @@
 #nameprefix "Wearying"
 #fatiguepersquare 3
 
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 #nextspell "Sleep Secondary mrn"
 

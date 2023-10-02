@@ -1,4 +1,3 @@
-
 #neweffect "Fire Evo Projectile Gemless"
 #scalingset "evo"
 #effect 2
@@ -51,7 +50,8 @@
 
 #pathperresearch 0.62
 #end
-
+
+
 #neweffect "Fire Evo Instant Gemless"
 #scalingset "evo"
 #effect 2
@@ -98,7 +98,5 @@
 
 #pathperresearch 0.3
 #end
-
-
-
-
+
+

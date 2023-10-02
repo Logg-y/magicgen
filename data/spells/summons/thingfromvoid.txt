@@ -1,5 +1,6 @@
 #neweffect "Summon thingfromvoid"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 8388608
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "thingfromvoid ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 8388608
 #power 4
 #maxpower 7
-#nreff 1002
+#nreff 9
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 700
 #schools 1
 
 #paths 16
@@ -56,9 +60,12 @@
 
 #newunit "Thing from the Void"
 
+#fatigueperextraeffect 77.77777777777777
 #end
-
-
+
+
+
+
 #neweffect "thingfromvoid Remote Assassination"
 #effect 10050
 #provrange 4
@@ -84,9 +91,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote thingfromvoid"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 628
@@ -114,5 +125,8 @@
 
 
 #end
-
-
+
+
+
+
+

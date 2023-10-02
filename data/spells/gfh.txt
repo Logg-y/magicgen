@@ -7,10 +7,10 @@
 #power 4
 #maxpower 14
 #precision -3
-#nreff 1
+#nreff 2
 #range 100
 #pathlevel 3
-#fatiguecost 40
+#fatiguecost 50
 #sound 89
 
 -- F S E
@@ -29,11 +29,18 @@
 #spelltype 18
 
 
--- 
+--
 #schools 4
 
 #priority 1
 #namecond range < 10 1 "NAMEPREFIX Defensive %Comet%"
 #namecond range < 10 8 "NAMEPREFIX Defensive %Meteor%"
 #namecond range < 10 16 "NAMEPREFIX Defensive %Meteor%"
+#scalingset "evo"
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
+
+
+
+

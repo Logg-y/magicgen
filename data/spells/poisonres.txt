@@ -1,4 +1,5 @@
 #neweffect "Poison Res +10"
+#scalingset "buff"
 #effect 10
 #damage 16777216
 #spec 12582912
@@ -39,10 +40,12 @@
 
 #details "Grants +10 poison resistance."
 
-#pathperresearch 0.4
 #end
-
+
+
 #neweffect "Poison Res +10 battlefield"
+#fieldwidecontinuation "Poison Res +10"
+#scalingset "buff"
 #effect 10
 #damage 16777216
 #spec 12582912
@@ -85,8 +88,10 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of poison resistance"
 
 #end
-
+
+
 #neweffect "Poison Res +15"
+#scalingset "buff"
 #effect 514
 #damage 200
 #spec 12599296
@@ -131,8 +136,10 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Poison Res +15 battlefield"
+#fieldwidecontinuation "Poison Res +15"
 #effect 514
 #damage 200
 #spec 12599296
@@ -177,10 +184,10 @@
 
 
 #end
-
-
-
+
+
 #neweffect "Poison Res +20"
+#scalingset "buff"
 #effect 519
 #damage 200
 #spec 12599296
@@ -226,15 +233,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
-
-
-
-
-
-
-
-
+
+

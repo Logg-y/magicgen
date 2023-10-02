@@ -1,5 +1,5 @@
 #neweffect "Confusion"
-#scalingset "evo"
+#scalingset "disabling"
 #effect 11
 #damage 17179869184
 #spec 8540160
@@ -41,8 +41,10 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of confusion"
 
 #end
-
+
+
 #neweffect "Mass Confusion"
+#fieldwidecontinuation "Confusion"
 #effect 11
 #damage 17179869184
 #spec 25313280
@@ -81,6 +83,5 @@
 
 #scalingset ""
 #end
-
-
-
+
+

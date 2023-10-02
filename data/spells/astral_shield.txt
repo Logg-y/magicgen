@@ -1,4 +1,6 @@
 #neweffect "Astral Shield"
+#scalingset "buff"
+
 #effect 23
 #damage 268435456
 #spec 8404992
@@ -8,16 +10,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
-#power 3
-#maxpower 8
-#pathlevel 1
+#power 4
+#maxpower 9
+#pathlevel 2
 #explspr 10022
 #sound 41
 #range 10
-#fatiguecost 20
+#fatiguecost 25
 
 
 #paths sb
@@ -46,7 +48,14 @@
 
 #end
 
+
+
+
 #neweffect "Astral Shield battlefield"
+#scalingset "buff"
+
+#fieldwidecontinuation "Astral Shield"
+
 #effect 23
 #damage 268435456
 #spec 8404992
@@ -56,7 +65,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 9
@@ -89,6 +98,7 @@
 #namecond effect > 1000 b "NAMEPREFIX astral $mist$"
 
 #end
+
 
 
 

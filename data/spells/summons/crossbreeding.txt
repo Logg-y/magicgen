@@ -4,7 +4,7 @@
 #damage 1
 #spec 0
 #power 3
-#maxpower 14
+#maxpower 10
 #nreff 3017
 #pathlevel 2
 #fatiguecost 1500
@@ -23,6 +23,13 @@
 
 #skipchance 0
 
+#scalingset "ritualsummon"
+#fatigueperresearch 0
+#fatigueperextraeffect 65.21739130434783
+#pathperresearch 0.34
 #end
-
-
+
+
+
+
+

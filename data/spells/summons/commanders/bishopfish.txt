@@ -6,7 +6,7 @@
 #power 4
 #maxpower 11
 #precision -100
-#nreff 4
+#nreff 3
 #pathlevel 2
 #chassisvalue 25
 #range 6
@@ -31,6 +31,7 @@
 
 
 #pathperresearch 0.4
+#scalingset ""
 #end
 
 #neweffect "Summon Bishop Fish"
@@ -62,6 +63,7 @@
 
 
 #end
+
 
 
 

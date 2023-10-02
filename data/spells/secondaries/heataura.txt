@@ -30,7 +30,7 @@
 #nameprefix "Sweltering"
 #nameprefix "Parching"
 #fatiguepersquare 8
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Heataura Secondary mrne"

@@ -1,4 +1,5 @@
 #neweffect "Ethereal"
+#scalingset "buff"
 #effect 10
 #damage 134217728
 #spec 8404992
@@ -11,9 +12,9 @@
 -- 
 
 #aoe 0
-#power 3
-#maxpower 8
-#pathlevel 1
+#power 4
+#maxpower 9
+#pathlevel 2
 #explspr 10002
 #sound 31
 #range 10
@@ -46,12 +47,60 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of etherealness"
 #namecond effect > 1000 d "NAMEPREFIX $mist$ of etherealness"
 
-#pathperresearch 0.6
 
 
 #end
+
+#neweffect "Ethereal Battlefield"
+#fieldwidecontinuation "Ethereal"
+#scalingset "buff"
+
+#effect 10
+#damage 134217728
+#spec 8404992
+#schools 2
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
 
 
+-- 
+
+#aoe 999
+#power 10
+#maxpower 10
+#pathlevel 5
+#explspr 10002
+#sound 31
+#range 10
+#fatiguecost 400
 
 
+-- astral
+#paths sbd
+#secondarypaths 16
 
+#details "Ethereal: 75% chance to negate non-magical damage. Allows movement through walls."
+
+#namecond effectiveaoe < 2 16 "NAMEPREFIX Body Ethereal"
+#namecond effectiveaoe < 2 d "NAMEPREFIX Spectral Body"
+#name b "NAMEPREFIX Infernal Incorporeality"
+
+#namecond2 2 <= effectiveaoe < 666 16 "NAMEPREFIX Ethereal Warriors"
+#namecond2 2 <= effectiveaoe < 666 d "NAMEPREFIX Spectral Warriors"
+
+#namecond effectiveaoe == 666 16 "NAMEPREFIX Ethereal Army"
+#namecond effectiveaoe == 666 d "NAMEPREFIX Spectral Army"
+
+
+#descr 16 "The %body% of SUBJECT %is% made transparent and ghostlike."
+#descr 32 "The %body% of SUBJECT %is% made transparent and ghostlike."
+#descr b "$BLOOD_INTRO$, the %body% of SUBJECT %is% made transparent and ghostlike."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of etherealness"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of etherealness"
+#namecond effect > 1000 d "NAMEPREFIX $mist$ of etherealness"
+
+
+#end

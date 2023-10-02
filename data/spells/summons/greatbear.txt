@@ -1,5 +1,6 @@
 #neweffect "Summon greatbear"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 694
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "greatbear ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 694
 #spec 0
 #power 3
 #maxpower 8
-#nreff 5
+#nreff 9
 #pathlevel 2
-#fatiguecost 520
+#fatiguecost 920
 #schools 1
 
 #paths 64
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 102.22222222222223
 #end
-
-
+
+
+
+
 #neweffect "greatbear Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon greatbear"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 694
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

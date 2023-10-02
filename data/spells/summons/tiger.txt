@@ -1,9 +1,10 @@
 #neweffect "Summon tiger"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1140
 #spec 0
-#power 2
+#power 1
 #maxpower 14
 #precision -2
 #nreff 1
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "tiger ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1140
 #spec 0
 #power 3
-#maxpower 6
-#nreff 1003
+#maxpower 9
+#nreff 12
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 700
 #schools 1
 
 #paths 64
@@ -53,9 +57,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 58.333333333333336
 #end
-
-
+
+
+
+
 #neweffect "tiger Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +89,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote tiger"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1140
@@ -113,5 +124,8 @@
 
 
 #end
-
-
+
+
+
+
+

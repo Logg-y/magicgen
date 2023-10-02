@@ -10,7 +10,8 @@
 #explspr 10265
 #name 8 "Coughing Fits"
 #end
-
+
+
 #neweffect "Dust Projectile"
 #scalingset "evo"
 #effect 2109
@@ -55,7 +56,8 @@
 #pathlevel 2
 #schools 4
 #end
-
+
+
 #neweffect "Dust Projectile Gemless"
 #scalingset "evo"
 #effect 2109
@@ -103,7 +105,8 @@
 
 #pathperresearch 0.2
 #end
-
+
+
 #neweffect "Dust Fatigue Long"
 #effect 6003
 #damage 3000
@@ -117,7 +120,8 @@
 #name 8 "Coughing Fits"
 #nextspell "Dust Eruption Aftershocks"
 #end
-
+
+
 #neweffect "Dust Eruption Aftershocks"
 #effect 699
 #damage 578
@@ -131,8 +135,8 @@
 #explspr 10279
 #name 8 "Tremors"
 #end
-
-
+
+
 #neweffect "Dust Eruption"
 #scalingset "evo"
 #effect 6109
@@ -169,6 +173,5 @@
 #pathlevel 2
 #schools 4
 #end
-
-
-
+
+

@@ -1,4 +1,6 @@
 #neweffect "Resist Magic elem"
+#scalingset "buff"
+
 #effect 10
 #damage 67108864
 #spec 12582912
@@ -8,16 +10,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 1
-#power 1
-#maxpower 3
+#power -1
+#maxpower 4
 #pathlevel 1
 #explspr 10236
 #sound 41
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 #skipchance 50
 
 --FAWES
@@ -53,7 +55,12 @@
 
 #end
 
+
+
+
 #neweffect "Resist Magic sorc"
+#scalingset "buff"
+
 #effect 10
 #damage 67108864
 #spec 12582912
@@ -63,16 +70,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 1
-#power 1
+#power -1
 #maxpower 3
 #pathlevel 1
 #explspr 10236
 #sound 41
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 #skipchance 50
 
@@ -115,7 +122,13 @@
 
 #end
 
+
+
+
 #neweffect "Resist Magic battlefield elem"
+#fieldwidecontinuation "Resist Magic elem"
+#scalingset "buff"
+
 #effect 10
 #damage 67108864
 #spec 12582912
@@ -125,7 +138,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 4
@@ -167,7 +180,13 @@
 
 #end
 
+
+
+
 #neweffect "Resist Magic battlefield sorc"
+#fieldwidecontinuation "Resist Magic sorc"
+#scalingset "buff"
+
 #effect 10
 #damage 67108864
 #spec 12582912
@@ -177,7 +196,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 4

@@ -29,7 +29,7 @@
 
 #req effect != 128
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Stun Secondary mrnh"
@@ -67,7 +67,7 @@
 #nameprefix "Staggering"
 #nameprefix "Stupefying"
 #fatiguepersquare 2.5
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Stun Secondary mrn"

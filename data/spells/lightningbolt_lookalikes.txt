@@ -13,8 +13,8 @@
 #name 1 "Heated Air"
 #name b "Heated Air"
 #end
-
-
+
+
 #neweffect "Scorching Air"
 #scalingset "evo"
 #effect 2
@@ -55,9 +55,8 @@
 
 #pathperresearch 0.2
 #end
-
-
-
+
+
 #neweffect "LBolt Cold Shock"
 #effect 3
 #damage 2008
@@ -73,8 +72,8 @@
 #name 4 "Chilled Air"
 #name b "Chilled Air"
 #end
-
-
+
+
 #neweffect "Frigid Air"
 #scalingset "evo"
 #effect 2
@@ -115,4 +114,5 @@
 
 #pathperresearch 0.2
 #end
-
+
+

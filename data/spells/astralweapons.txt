@@ -1,4 +1,5 @@
 #neweffect "Astral Weapons"
+#scalingset "buff"
 #effect 10
 #damage 1048576
 #spec 12582912
@@ -47,9 +48,12 @@
 
 
 #end
-
-
+
+
 #neweffect "Astral Weapons battlefield"
+#scalingset "buff"
+#fieldwidecontinuation "Astral Weapons"
+
 #effect 10
 #damage 1048576
 #spec 12582912
@@ -89,4 +93,5 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of astral fire"
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of void weaponry"
 #end
-
+
+

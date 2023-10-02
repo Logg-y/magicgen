@@ -1,5 +1,6 @@
 #neweffect "Summon ironpig"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 924
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "ironpig ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 924
 #spec 0
 #power 3
 #maxpower 8
-#nreff 5
+#nreff 15
 #pathlevel 2
-#fatiguecost 230
+#fatiguecost 630
 #schools 1
 
 #paths 8
@@ -49,9 +53,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 42.0
 #end
-
-
+
+
+
+
 #neweffect "ironpig Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon ironpig"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 924
@@ -109,5 +120,8 @@
 
 
 #end
-
-
+
+
+
+
+

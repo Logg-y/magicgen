@@ -15,8 +15,8 @@
 #name 8 "Internal Bleeding"
 #name 64 "Internal Bleeding"
 #end
-
-
+
+
 #neweffect "Glass Eyeloss"
 #effect 11
 #damage 524288
@@ -35,7 +35,8 @@
 #name 64 "Irritate Eyes"
 #nextspell "Sharp Object Bleeding"
 #end
-
+
+
 #neweffect "Glass Dust"
 #scalingset "evo"
 #effect 2
@@ -74,7 +75,8 @@
 
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
-
+
+
 #neweffect "Glass Dust Gemless"
 #scalingset "evo"
 #effect 2
@@ -86,7 +88,7 @@
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 15
 #explspr 10229
 #sound 31
 
@@ -114,7 +116,8 @@
 #pathperresearch 0.3
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
-
+
+
 #neweffect "Glass Dust Battlefield"
 #effect 2
 #damage 3
@@ -146,8 +149,8 @@
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #scalingset ""
 #end
-
-
+
+
 #neweffect "Sharp Thorns"
 #scalingset "evo"
 #effect 2
@@ -183,8 +186,8 @@
 #pathperresearch 0.4
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
-
-
+
+
 #neweffect "Sharp Thorns Gemless"
 #scalingset "evo"
 #effect 2
@@ -196,7 +199,7 @@
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 15
 #explspr 10336
 #sound 31
 
@@ -222,7 +225,8 @@
 #pathperresearch 0.3
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #end
-
+
+
 #neweffect "Sharp Thorns Battlefield"
 #effect 2
 #damage 3
@@ -255,9 +259,8 @@
 #details "Those that are wounded by this spell bleed, and lose an eye if they fail an easy magic resistance check.\n\nBleeding: $bleed_info$"
 #scalingset ""
 #end
-
-
-
+
+
 #neweffect "Ice Dust Chill"
 #effect 11
 #damage 268435456
@@ -273,8 +276,8 @@
 #name 4 "Rapid Chill"
 #nextspell "Glass Eyeloss"
 #end
-
-
+
+
 #neweffect "Ice Dust"
 #scalingset "evo"
 #effect 2
@@ -309,8 +312,8 @@
 #pathperresearch 0.4
 #details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #end
-
-
+
+
 #neweffect "Ice Dust Gemless"
 #scalingset "evo"
 #effect 2
@@ -322,7 +325,7 @@
 #precision 1
 #range 5020
 #pathlevel 2
-#fatiguecost 10
+#fatiguecost 15
 #explspr 10145
 #sound 31
 
@@ -347,7 +350,8 @@
 #pathperresearch 0.3
 #details "Those that are wounded by this spell are frozen and begin bleeding, and also lose an eye if they fail an easy magic resistance check.\n\nFreezing: $numbness_info$\n\nBleeding: $bleed_info$"
 #end
-
+
+
 #neweffect "Ice Dust Battlefield"
 #effect 2
 #damage 3
@@ -379,17 +383,5 @@
 #schools evo
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

@@ -1,9 +1,10 @@
 #neweffect "Summon terracotta soldier"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2134
 #spec 8388608
-#power 2
+#power 1
 #maxpower 10
 #precision -2
 #nreff 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "terracottasoldier ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2134
 #spec 8388608
 #power 3
-#maxpower 6
-#nreff 1003
+#maxpower 9
+#nreff 9
 #pathlevel 1
-#fatiguecost 200
+#fatiguecost 500
 #schools 1
 
 #paths 1
@@ -49,9 +53,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 55.55555555555556
 #end
-
-
+
+
+
+
 #neweffect "terracottasoldier Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon terracottasoldier"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2134
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

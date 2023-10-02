@@ -1,5 +1,6 @@
 #neweffect "Summon marblelion"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3065
 #spec 8388608
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "marblelion ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3065
 #spec 8388608
 #power 3
-#maxpower 6
-#nreff 1001
+#maxpower 9
+#nreff 7
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 800
 #schools 24
 #newunit "Marble Lion fixed slots"
 
@@ -50,9 +54,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 114.28571428571429
 #end
-
-
+
+
+
+
 #neweffect "marblelion Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon marblelion"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3065
@@ -106,5 +117,8 @@
 
 
 #end
-
-
+
+
+
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon demonlocust"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2794
 #spec 0
@@ -8,7 +9,7 @@
 #precision -2
 #nreff 1
 #pathlevel 4
-#fatiguecost 300
+#fatiguecost 200
 #sound 31
 #schools 1
 #paths 128
@@ -22,18 +23,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "demonlocust ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2794
 #spec 0
 #power 5
-#maxpower 14
-#nreff 1
+#maxpower 11
+#nreff 2
 #pathlevel 3
-#fatiguecost 700
+#fatiguecost 1400
 #schools 1
 
 #paths 128
@@ -55,8 +59,10 @@
 -- Heretic.
 #nocostreduction 1
 #end
-
-
+
+
+
+
 #neweffect "demonlocust Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +89,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote demonlocust"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2794
@@ -114,5 +124,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

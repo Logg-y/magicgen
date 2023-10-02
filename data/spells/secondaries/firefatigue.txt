@@ -29,7 +29,7 @@
 #nameprefix "Stifling"
 #nameprefix "Sweltering"
 #fatiguepersquare 2
-#scalingaoelimit 2.5
+#scalingaoelimit 0.7
 
 
 #nextspell "fire fatigue Secondary mrnh"

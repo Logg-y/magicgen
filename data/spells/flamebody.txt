@@ -1,4 +1,6 @@
 #neweffect "Flamebody"
+#scalingset "buff"
+
 #effect 10
 #damage 134217728+1024
 #spec 16384
@@ -8,11 +10,11 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
-#power 3
-#maxpower 8
+#power 4
+#maxpower 9
 #pathlevel 1
 #explspr 10002
 #sound 31
@@ -37,5 +39,8 @@
 #priority 1
 #namecond effect > 1000 f "NAMEPREFIX $mist$ of flamebody"
 
-#pathperresearch 0.6
 #end
+
+
+
+

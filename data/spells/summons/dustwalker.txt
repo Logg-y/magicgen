@@ -1,5 +1,6 @@
 #neweffect "Summon dustwalker"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1981
 #spec 0
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "dustwalker ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1981
 #spec 0
 #power 3
 #maxpower 7
-#nreff 5
+#nreff 15
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 1220
 #schools 16
 
 #paths 40
@@ -54,9 +58,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 81.33333333333333
 #end
-
-
+
+
+
+
 #neweffect "dustwalker Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon dustwalker"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1981
@@ -116,5 +127,8 @@
 
 
 #end
-
-
+
+
+
+
+

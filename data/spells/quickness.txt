@@ -1,4 +1,5 @@
 #neweffect "Quickness"
+#scalingset "buff"
 #effect 10
 #damage 262144
 #spec 8404992
@@ -34,7 +35,7 @@
 #namecond effectiveaoe == 666 16 "NAMEPREFIX Quickening"
 #namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
 
-#details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
+#details "Quickness: Doubles combat speed and melee attack rate. Decay's age rate is doubled. +2 Attack and Defence skill."
 
 #descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 #descr b "$BLOOD_INTRO$, the caster increases the speed of SUBJECT, allowing PRONOUN to attack and act more rapidly." 
@@ -48,8 +49,11 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of quickening"
 
 #end
-
+
+
 #neweffect "Quickness battlefield"
+#fieldwidecontinuation "Quickness"
+#scalingset "buff"
 #effect 10
 #damage 262144
 #spec 8404992
@@ -85,11 +89,12 @@
 #namecond effectiveaoe == 666 4 "NAMEPREFIX Quickening"
 #namecond effectiveaoe == 666 b "NAMEPREFIX Mass Infernal Alacrity"
 
-#details "Quickness: Doubles combat speed and melee attack rate. Decay ticks at double the speed. +2 Attack and Defence skill."
+#details "Quickness: Doubles combat speed and melee attack rate. Decay's age rate is doubled. +2 Attack and Defence skill."
 
 #descr 16 "By twisting time the speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 #descr 4 "The speed of SUBJECT is increased, allowing PRONOUN to attack and act more rapidly." 
 #descr b "$BLOOD_INTRO$, the caster increases the speed of SUBJECT, allowing PRONOUN to attack and act more rapidly." 
 
 #end
-
+
+

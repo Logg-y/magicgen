@@ -1,10 +1,11 @@
 #neweffect "Summon largelobster"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2273
 #spec 41959424
-#power 1
-#maxpower 12
+#power 0
+#maxpower 8
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "largelobster ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2273
 #spec 41959424
 #power 0
-#maxpower 3
-#nreff 2003
+#maxpower 6
+#nreff 35
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 1020
 #schools 1
 
 #paths 4
@@ -53,9 +57,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 29.142857142857142
 #end
-
-
+
+
+
+
 #neweffect "largelobster Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +88,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote largelobster"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2273
@@ -112,5 +123,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

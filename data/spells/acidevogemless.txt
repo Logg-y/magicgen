@@ -46,7 +46,8 @@
 
 #pathperresearch 0.2
 #end
-
+
+
 #neweffect "Acid Evo Instant Gemless"
 #scalingset "evo"
 #effect 2
@@ -92,7 +93,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
+
+

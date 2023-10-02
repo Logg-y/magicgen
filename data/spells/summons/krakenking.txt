@@ -1,5 +1,6 @@
 #neweffect "Summon krakenking"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 639
 #spec 41959424
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "krakenking ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 639
 #spec 41959424
 #power 6
-#maxpower 14
-#nreff 1001
+#maxpower 12
+#nreff 8
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 1000
 #schools 1
 
 #paths 4
@@ -50,8 +54,10 @@
 #spelltype 20
 
 #end
-
-
+
+
+
+
 #neweffect "Krakenking Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon krakenking"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 639
@@ -106,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

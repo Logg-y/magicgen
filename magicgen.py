@@ -806,14 +806,14 @@ def main():
                        type=int, default=40))
     opts.append(Option("-diffpathsecondarychance",
                        help="Percentage chance of spells generating with a different path secondary effect, typically producing a crosspath spell. Does not apply to summoning spells.",
-                       type=int, default=10))
+                       type=int, default=15))
     opts.append(Option("-summonsamepathsecondarychance",
                        help="Percentage chance of summoning spells generating with a same path secondary effect, typically producing an altered summon without a new crosspath requirement.",
                        type=int, default=40))
 
     opts.append(Option("-summondiffpathsecondarychance",
                        help="Percentage chance of summoning spells generating with a different path secondary effect, typically producing an altered summon with a new crosspath requirement.",
-                       type=int, default=10))
+                       type=int, default=15))
 
     opts.append(Option("-researchmodifier",
                        help="Research modifier: Subtracts this value from the research level of spells generated. Large values will make strong spells available at lower research than normal.",

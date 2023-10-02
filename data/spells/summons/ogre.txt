@@ -1,5 +1,6 @@
 #neweffect "summon ogre"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2135
 #spec 0
@@ -21,22 +22,25 @@
 
 #spelltype 528
 
--- 
+--
 #schools 1
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "Raise ogre Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2135
 #spec 0
 #power 3
 #maxpower 7
-#nreff 2004
+#nreff 14
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #skipchance 97
@@ -50,9 +54,12 @@
 #name 8 "$Summon$ NAMEPREFIX %Ogre%"
 #descr 8 "The caster summons ARTICLE_N ogre to fight for him. Ogres are strong and attack with a large club. They are somewhat resistant to cold."
 
+#fatigueperextraeffect 57.142857142857146
 #end
-
-
+
+
+
+
 #neweffect "ogre Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon ogre"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2135
@@ -107,5 +118,8 @@
 
 
 #end
-
-
+
+
+
+
+

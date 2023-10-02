@@ -38,7 +38,8 @@
 #descr 16 "The caster attempts to dispel ARTICLE_N hostile illusory %creature%. Any illusory creatures that fail to resist the spell's effects are destroyed."
 
 #end
-
+
+
 #neweffect "Disbelieve Damage Battlefield"
 #effect 105
 #damage 999
@@ -70,3 +71,5 @@
 #descr 16 "The caster attempts to see all as it really is. All hostile illusory creatures that fail to resist this spell are destroyed."
 
 #end
+
+

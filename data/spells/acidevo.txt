@@ -13,8 +13,8 @@
 #aoe 1
 #power 1
 #end
-
-
+
+
 #neweffect "Acid Evo Projectile"
 #scalingset "evo"
 #effect 2
@@ -63,7 +63,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Acid Evo Instant"
 #scalingset "evo"
 #effect 2
@@ -106,8 +107,8 @@
 #descrcond range < 10 4 "A gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
 #descrcond range < 10 b "$BLOOD_INTRO$, a gush of highly corrosive fluid erupts at a location directly next to the caster. The acid burns the armor of the target as well as his, her or its flesh."
 #end
-
-
+
+
 #neweffect "Acid Evo Instant 25pc"
 #effect 2
 #damage 1005
@@ -142,7 +143,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Acid Evo Instant 50pc"
 #effect 2
 #damage 1005
@@ -177,7 +179,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Acid Evo Instant 100pc"
 #effect 2
 #damage 1005
@@ -213,12 +216,5 @@
 #scalingset ""
 #fatigueperresearch 50
 #end
-
-
-
-
-
-
-
-
-
+
+

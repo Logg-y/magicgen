@@ -1,5 +1,6 @@
 #neweffect "Summon bukavac"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1948
 #spec 41943040
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "bukavac ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1948
 #spec 41943040
 #power 5
-#maxpower 14
-#nreff 1
+#maxpower 11
+#nreff 3
 #pathlevel 4
-#fatiguecost 320
+#fatiguecost 920
 #schools 1
 
 #paths 4
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 306.6666666666667
 #end
-
-
+
+
+
+
 #neweffect "bukavac Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon bukavac"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1948
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

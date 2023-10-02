@@ -1,4 +1,5 @@
 #neweffect "Lesser Plague"
+#scalingset "evo"
 #effect 11
 #damage 8
 #spec 545787904
@@ -8,11 +9,11 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 1
-#power 7
-#maxpower 8
+#power 6
+#maxpower 26
 #pathlevel 4
 #explspr 10211
 #sound 22
@@ -35,44 +36,53 @@
 
 #end
 
-#neweffect "Greater Plague"
-#effect 11
-#damage 8
-#spec 17592731828224
-#schools 32
-
--- evo, battlefield allowed, scale aoe
-#spelltype 42
 
 
--- 
 
-#aoe 1
-#power 9
-#maxpower 10
-#pathlevel 5
-#explspr 10211
-#sound 22
-#fatiguecost 200
-#precision 100
-#range 30
+-- #neweffect "Greater Plague"
+-- #effect 11
+-- #damage 8
+-- #spec 17592731828224
+-- #schools 32
+--
+-- -- evo, battlefield allowed, scale aoe
+-- #spelltype 42
+--
+--
+-- --
+--
+-- #aoe 1
+-- #power 9
+-- #maxpower 10
+-- #pathlevel 5
+-- #explspr 10211
+-- #sound 22
+-- #fatiguecost 200
+-- #precision 100
+-- #range 30
+--
+-- #paths 32
+-- #secondarypaths 32
+--
+-- #details "Inflicts a closed 1d2 true damage and an open 1d4 fatigue per round. Both of these have no damage or protection rolls associated with them. The victim also gains an aura of value 2: this hits one of the 9 squares in a 3x3 box around the caster approximately two times a round. The same square can be hit multiple times. All those except inanimate beings in affected squares must make a magic resistance check, or gain this effect themselves. This is considered a Death effect for the purposes of the victims' magic resistance checks, but the caster's path levels and penetration bonuses are ignored for the subsequent spread of the plague."
+--
+-- #name 32 "NAMEPREFIX Pestilent Plague"
+--
+-- #descr 32 "The caster attempts to spread a magical plague to a small number of victims. Resisting it is difficult, upon failure it will rapidly spread to anything living nearby."
+--
+-- #priority 1
+-- #namecond effect > 1000 32 "NAMEPREFIX $mist$ of plague"
+-- #namecond effect > 1000 32 "NAMEPREFIX miasma"
+--
+-- #end
 
-#paths 32
-#secondarypaths 32
 
-#details "Inflicts a closed 1d2 true damage and an open 1d4 fatigue per round. Both of these have no damage or protection rolls associated with them. The victim also gains an aura of value 2: this hits one of the 9 squares in a 3x3 box around the caster approximately two times a round. The same square can be hit multiple times. All those except inanimate beings in affected squares must make a magic resistance check, or gain this effect themselves. This is considered a Death effect for the purposes of the victims' magic resistance checks, but the caster's path levels and penetration bonuses are ignored for the subsequent spread of the plague."
 
-#name 32 "NAMEPREFIX Pestilent Plague"
 
-#descr 32 "The caster attempts to spread a magical plague to a small number of victims. Resisting it is difficult, upon failure it will rapidly spread to anything living nearby."
-
-#priority 1
-#namecond effect > 1000 32 "NAMEPREFIX $mist$ of plague"
-#namecond effect > 1000 32 "NAMEPREFIX miasma"
-
-#end
-
+-- This will probably never be seen by anyone, ever, because of the incredible research level lock
+-- to continue from the lesser version
 #neweffect "Mass Plague"
+#fieldwidecontinuation "Lesser Plague"
 #effect 11
 #damage 8
 #spec 562561024
@@ -82,17 +92,17 @@
 #spelltype 2
 
 
--- 
+--
 
 
 -- even 5% of field may be too strong
 #aoe 662
 #power 11
 #maxpower 11
-#pathlevel 7
+#pathlevel 9
 #explspr 10211
 #sound 22
-#fatiguecost 700
+#fatiguecost 900
 #precision 100
 #range 30
 
@@ -105,4 +115,11 @@
 
 #descr 32 "The caster attempts to spread a magical plague to the entire battlefield. Those who resist the plague will likely soon catch it from their infected friends."
 
+#scalingset ""
 #end
+
+
+
+
+
+

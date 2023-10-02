@@ -1,5 +1,6 @@
 #neweffect "Summon fiend of darkness"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 88
 #spec 0
@@ -22,18 +23,21 @@
 
 #skipchance 94
 #end
-
-
+
+
+
+
 #neweffect "Fiend of Darkness ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 88
 #spec 0
 #power 2
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 3000
 #schools 16
 
 #paths 128
@@ -46,9 +50,12 @@
 #spelltype 20
 
 #skipchance 50
+#fatigueperextraeffect 750.0
 #end
-
-
+
+
+
+
 #neweffect "Fiend of Darkness Remote Assassination"
 #effect 10050
 #provrange 4
@@ -72,9 +79,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon fiends"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 88
@@ -102,5 +113,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

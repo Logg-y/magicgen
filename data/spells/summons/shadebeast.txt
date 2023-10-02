@@ -1,9 +1,10 @@
 #neweffect "Summon shade beast"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 442
 #spec 8388608
-#power 3
+#power 1
 #maxpower 12
 #precision -2
 #nreff 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "shadebeast ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 442
 #spec 8388608
 #power 4
 #maxpower 7
-#nreff 1003
+#nreff 14
 #pathlevel 2
-#fatiguecost 320
+#fatiguecost 920
 #schools 1
 
 #paths 32
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 65.71428571428571
 #end
-
-
+
+
+
+
 #neweffect "shadebeast Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon shadebeast"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 442
@@ -102,5 +113,8 @@
 
 
 #end
-
-
+
+
+
+
+

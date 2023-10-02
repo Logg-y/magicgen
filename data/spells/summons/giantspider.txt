@@ -1,10 +1,11 @@
 #neweffect "Summon giantspider"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 782
 #spec 0
-#power 1
-#maxpower 10
+#power -1
+#maxpower 7
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "giantspider ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 782
 #spec 0
 #power 0
-#maxpower 3
-#nreff 5
+#maxpower 6
+#nreff 25
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 1020
 #schools 1
 
 #paths 64
@@ -51,9 +55,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 40.8
 #end
-
-
+
+
+
+
 #neweffect "giantspider Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote giantspider"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 782
@@ -111,5 +122,10 @@
 
 
 #end
-
-
+
+
+
+
+
+
+

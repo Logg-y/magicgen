@@ -1,5 +1,6 @@
 #neweffect "Summon wyvern"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 520
 #spec 0
@@ -26,7 +27,8 @@
 
 
 #neweffect "wyvern ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 520
 #spec 0
@@ -77,6 +79,7 @@
 
 
 #neweffect "Remote summon wyvern"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 520

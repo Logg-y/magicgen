@@ -1,4 +1,6 @@
 #neweffect "Flaming Arrows"
+#scalingset "buff"
+
 #effect 10
 #damage 8388608
 #spec 4194304
@@ -9,16 +11,16 @@
 
 
 
--- 
+--
 
 #aoe 1
-#power 1
+#power -2
 #maxpower 4
 #pathlevel 1
 #explspr 10051
 #sound 31
 #range 10
-#fatiguecost 30
+#fatiguecost 10
 
 
 #paths 129
@@ -39,4 +41,52 @@
 
 
 #end
+
+
+#neweffect "Flaming Arrows Battlefield"
+#fieldwidecontinuation "Flaming Arrows"
+#scalingset "buff"
+
+#effect 10
+#damage 8388608
+#spec 4194304
+#schools 16
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+
+
+--
+
+#aoe 666
+#power 5
+#maxpower 5
+#pathlevel 4
+#explspr 10051
+#sound 31
+#range 10
+#fatiguecost 100
+
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "NAMEPREFIX Mass Flaming Arrows"
+#name 128 "NAMEPREFIX Mass Infernal Arrows"
+
+#details "Projectile weapons deal +8AP magical fire damage."
+
+#descr 1 "Imbues the arrows of SUBJECT with fire magic, causing them to burst into flames when fired."
+#descr 128 "$BLOOD_INTRO$, the caster imbues the arrows of SUBJECT with the power of Inferno, causing them to burst into flames when fired."
+
+
+#priority 1
+#namecond effect > 1000 1 "NAMEPREFIX $mist$ of arrow ignition"
+#namecond effect > 1000 128 "NAMEPREFIX $mist$ of arrow ignition"
+
+
+#end
+
+
 

@@ -51,7 +51,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Sailor's Death gemless"
 #scalingset "evo"
 #effect 2
@@ -71,7 +72,7 @@
 #pathlevel 2
 #explspr 10125
 #sound 31
-#fatiguecost 10
+#fatiguecost 15
 #precision 100
 #range 100
 
@@ -105,9 +106,8 @@
 #pathperresearch 0.2
 #fatigueperresearch 0
 #end
-
-
-
+
+
 #neweffect "Battlefield Sailor's death"
 #effect 2
 #damage 1010
@@ -148,6 +148,5 @@
 
 #scalingset ""
 #end
-
-
-
+
+

@@ -1,9 +1,10 @@
 #neweffect "Summon simargl"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1947
 #spec 0
-#power 2
+#power 1
 #maxpower 9
 #precision -2
 #nreff 1
@@ -22,18 +23,21 @@
 
 #spelltype 528
 #end
-
-
+
+
+
+
 #neweffect "simargl ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1947
 #spec 0
 #power 1
-#maxpower 4
-#nreff 1
+#maxpower 7
+#nreff 5
 #pathlevel 1
-#fatiguecost 100
+#fatiguecost 500
 #chassisvalue 20
 #schools 1
 
@@ -53,8 +57,10 @@
 
 #siegepatrolchaff 1
 #end
-
-
+
+
+
+
 #neweffect "simargl Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote simargl"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1947
@@ -112,5 +122,8 @@
 
 
 #end
-
-
+
+
+
+
+

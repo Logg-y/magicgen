@@ -1,5 +1,6 @@
 #neweffect "Summon shark"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 816
 #spec 41959424
@@ -27,18 +28,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "shark ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 816
 #spec 41959424
 #power 2
 #maxpower 5
-#nreff 1001
+#nreff 8
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 8
 #schools 1
 
 #paths 68
@@ -55,9 +59,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 1.0
 #end
-
-
+
+
+
+
 #neweffect "shark Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon shark"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 816
@@ -115,5 +126,8 @@
 
 
 #end
-
-
+
+
+
+
+

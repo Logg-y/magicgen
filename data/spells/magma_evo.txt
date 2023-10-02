@@ -12,7 +12,8 @@
 #name b "Heated Magma"
 #maxpower 30
 #end
-
+
+
 #neweffect "Magma Evo Projectile"
 #scalingset "evo"
 #effect 2
@@ -61,9 +62,8 @@
 
 #pathperresearch 0.4
 #end
-
-
-
+
+
 #neweffect "Magma Evo Eruption"
 #scalingset "evo"
 -- copy for lingering heat
@@ -113,12 +113,8 @@
 
 #pathperresearch 0.4
 #end
-
-
-
-
-
-
+
+
 #neweffect "Magma Evo Projectile Gemless"
 #scalingset "evo"
 #effect 2
@@ -168,9 +164,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
-
-
-
+
+
 #neweffect "Magma Evo Eruption Gemless"
 #scalingset "evo"
 -- copy for lingering heat
@@ -221,14 +216,5 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
-
-
-
-
-
-
-
-
-
-
-
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon diseasedemon"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1662
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "diseasedemon ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1662
 #spec 0
 #power 3
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 4
-#fatiguecost 500
+#fatiguecost 2000
 #schools 1
 
 #paths 128
@@ -49,8 +53,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "diseasedemon Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote diseasedemon"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1662
@@ -104,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

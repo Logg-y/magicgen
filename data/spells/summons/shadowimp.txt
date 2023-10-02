@@ -1,5 +1,6 @@
 #neweffect "Summon shadowimp"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2287
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "shadowimp ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2287
 #spec 0
 #power 2
 #maxpower 14
-#nreff 1001
+#nreff 6
 #pathlevel 2
-#fatiguecost 600
+#fatiguecost 1200
 #schools 1
 
 #paths 128
@@ -49,8 +53,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "shadowimp Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote shadowimps"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2287
@@ -104,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

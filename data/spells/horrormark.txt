@@ -9,7 +9,7 @@
 
 
 
--- 
+--
 
 #aoe 0
 #power 1
@@ -50,7 +50,13 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
 
+#scalingset "evo"
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
+
+
+
 
 #neweffect "Horror Mark AoE"
 #effect 600
@@ -62,11 +68,11 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 1
 #power 2
-#maxpower 4
+#maxpower 22
 #pathlevel 2
 #explspr 10201
 #sound 28
@@ -93,8 +99,13 @@
 #priority 1
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of horrors"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of horrors"
-#scalingset ""
+#scalingset "evo"
+#fatigueperresearch 0
+#pathperresearch 0.2
 #end
+
+
+
 
 #neweffect "Horror Mark AoE Stronger"
 #effect 600
@@ -106,7 +117,7 @@
 #spelltype 258
 
 
--- 
+--
 
 #aoe 666
 #power 5
@@ -147,6 +158,9 @@
 
 #pathperresearch 0.4
 #end
+
+
+
 
 
 

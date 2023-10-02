@@ -38,8 +38,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Death Projectile Gemless"
 #scalingset "evo"
 #effect 74
@@ -81,5 +81,5 @@
 
 #pathperresearch 0.3
 #end
-
-
+
+

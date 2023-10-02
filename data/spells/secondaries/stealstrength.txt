@@ -27,7 +27,7 @@
 #nameprefix "Incapacitating"
 #fatiguepersquare 4
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 #req effect != 67
 
@@ -69,7 +69,7 @@
 #nameprefix "Incapacitating"
 #fatiguepersquare 2
 
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Stealstrength Secondary mrn"

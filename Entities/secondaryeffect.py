@@ -159,24 +159,26 @@ class SpellSecondaryEffect(object):
                 thispower = self.calcModifiedPowerForSpellEffect(eff)
                 finalpower = researchlevel + thispower + modifier.power
 
+        # do not give nextspells secondary effects as they don't respect the path requirements the way the main spell does
+        # oh and it could chain to ridiculous levels like "add a set on fire effect" "add an entangle to that set on fire" etc etc etc
 
         if eff.isnextspell and self.name != "Do Nothing":
             DebugLogger.debuglog(f"Secondary is invalid: this is a nextspell, and nextspells are only allowed Do Nothing",
                                  debugkeys.SECONDARYEFFECTCOMPATIBILITY)
             return False
 
-        # do not give nextspells secondary effects as they don't respect the path requirements the way the main spell does
-        # oh and it could chain to ridiculous levels like "add a set on fire effect" "add an entangle to that set on fire" etc etc etc
 
-        okay = self.paths == 0
-        for flag in utils.bitmaskToComponents(self.paths):
-            if (eff.paths & flag):
-                okay = True
-                break
-        if not okay:
-            DebugLogger.debuglog(f"Secondary is invalid: effect paths {eff.paths} do not contain required paths {self.paths}",
-                                 debugkeys.SECONDARYEFFECTCOMPATIBILITY)
-            return False
+        # I think the SpellEffect secondary picker should handle the path requirements now
+        # This looks like it's actively preventing nearly all the crosspath secondary combinations appearing
+        #okay = self.paths == 0
+        #for flag in utils.bitmaskToComponents(self.paths):
+        #    if (eff.paths & flag):
+        #        okay = True
+        #        break
+        #if not okay:
+        #    DebugLogger.debuglog(f"Secondary is invalid: effect paths {eff.paths} do not contain required paths {self.paths}",
+        #                         debugkeys.SECONDARYEFFECTCOMPATIBILITY)
+        #    return False
 
         if self.nobattlefield:
             if 660 <= eff.aoe <= 670:
@@ -269,7 +271,7 @@ class SpellSecondaryEffect(object):
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
         if self.scalingaoelimit is None and self.offensiveeffect != 0 and eff.paths != 256:
-            scalingaoelimit = 3
+            scalingaoelimit = 1.0
         else:
             scalingaoelimit = self.scalingaoelimit
         if scalingaoelimit is not None:
@@ -359,7 +361,7 @@ class SpellSecondaryEffect(object):
         if self.minfinalaoe is not None:
             if eff.spelltype & SpellTypes.POWER_SCALES_AOE:
                 finalaoe = eff.aoe % 1000 + (eff.aoe // 1000 * eff.pathlevel)
-                finalaoe += round(eff.scalerate * ((actualpowerlvl*(actualpowerlvl+1))/2), 0)
+                finalaoe = eff.calcScaleamt(modifier, self, None, "aoe")
             else:
                 finalaoe = eff.aoe
             if finalaoe < self.minfinalaoe:

@@ -1,9 +1,10 @@
 #neweffect "Summon willowisp"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 527
 #spec 0
-#power 3
+#power 2
 #maxpower 14
 #precision -2
 #nreff 1
@@ -25,15 +26,16 @@
 
 
 #neweffect "willowisp ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 527
 #spec 0
 #power 3
 #maxpower 6
-#nreff 1001
+#nreff 8
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 600
 #schools 1
 
 #paths 1
@@ -77,6 +79,7 @@
 
 
 #neweffect "Remote summon willowisp"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 527

@@ -48,7 +48,8 @@
 
 #maxpower 9
 #end
-
+
+
 #neweffect "Slow Battlefield"
 #effect 11
 #damage 68719476736
@@ -88,8 +89,8 @@
 #maxpower 8
 #scalingset ""
 #end
-
-
+
+
 #neweffect "Slow Battlefield Hostile Only"
 #effect 11
 #damage 68719476736
@@ -130,11 +131,5 @@
 #maxpower 9
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
+
+

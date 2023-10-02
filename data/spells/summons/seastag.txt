@@ -1,13 +1,14 @@
 #neweffect "Summon seastag"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1062
 #spec 41959424
-#power 3
+#power -2
 #maxpower 14
 #precision -2
 #nreff 1
-#pathlevel 2
+#pathlevel 1
 #fatiguecost 20
 #sound 31
 #schools 1
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "seastag ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1062
 #spec 41959424
 #power 1
-#maxpower 4
-#nreff 2003
+#maxpower 7
+#nreff 40
 #pathlevel 1
-#fatiguecost 300
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -53,9 +57,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 25.0
 #end
-
-
+
+
+
+
 #neweffect "seastag Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +88,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote seastag"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1062
@@ -102,7 +113,7 @@
 #secondarypaths 64
 
 --
--- 
+--
 
 #name 64 "$Send$ NAMEPREFIX Sea %Stag%"
 #descr 64 "The caster summons ARTICLE sea %stag% to attack a distant province. Sea stags are the underwater equivalent of deer: they attack with their antlers."
@@ -111,5 +122,8 @@
 
 
 #end
-
-
+
+
+
+
+

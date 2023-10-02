@@ -1,5 +1,6 @@
-
 #neweffect "Curse of Undeath Heal"
+#scalingset "buff"
+
 #effect 13
 #damage 50
 #spec 12582912
@@ -18,7 +19,12 @@
 #name 128 "Restore Corpse"
 #end
 
+
+
+
 #neweffect "Curse of Undeath Reinvigoration"
+#scalingset "buff"
+
 #effect 8
 #damage 200
 #spec 12582912
@@ -37,6 +43,9 @@
 #name 128 "Tireless Death"
 #nextspell "Curse of Undeath Heal"
 #end
+
+
+
 
 #neweffect "Curse of Undeath Kill"
 #effect 2
@@ -59,7 +68,12 @@
 #nextspell "Curse of Undeath Reinvigoration"
 #end
 
+
+
+
 #neweffect "Curse of Undeath LaD"
+#scalingset "buff"
+
 #effect 10
 #damage 2097152
 #spec 12582912
@@ -79,6 +93,9 @@
 #name 128 "Necromantic Imbuement"
 #nextspell "Curse of Undeath Kill"
 #end
+
+
+
 
 #neweffect "Curse of Undeath"
 #scalingset "evo"
@@ -116,6 +133,8 @@
 #end
 
 
+
+
 #neweffect "Curse of Undeath Gemless"
 #scalingset "evo"
 #effect 29
@@ -127,7 +146,7 @@
 #precision 100
 #range 5040
 #pathlevel 3
-#fatiguecost 10
+#fatiguecost 20
 #explspr 10171
 #sound 22
 
@@ -153,6 +172,8 @@
 
 #pathperresearch 0.2
 #end
+
+
 
 
 #neweffect "Curse of Undeath 100pc"
@@ -184,6 +205,7 @@
 #schools 32
 #scalingset ""
 #end
+
 
 
 

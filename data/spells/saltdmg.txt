@@ -3,7 +3,7 @@
 #effect 142
 #damage 1003
 #spec 16512
-#aoe 0
+#aoe 1
 #power 0
 #maxpower 9
 #precision 1
@@ -33,3 +33,8 @@
 
 #pathperresearch 0.2
 #end
+
+
+
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon apparition"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 677
 #spec 8388608
@@ -26,18 +27,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "apparition ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 677
 #spec 8388608
 #power 3
 #maxpower 6
-#nreff 5
+#nreff 7
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 1000
 #schools 1
 
 #paths 32
@@ -51,9 +55,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 142.85714285714286
 #end
-
-
+
+
+
+
 #neweffect "Apparition Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon apparition"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 677
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

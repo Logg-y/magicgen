@@ -1,5 +1,3 @@
-
-
 #neweffect "Shock Evo Chain Gemless"
 #scalingset "evo"
 #copyspell "Leech"
@@ -52,7 +50,8 @@
 
 #pathperresearch 0.15
 #end
-
+
+
 #neweffect "Shock Evo Chain Projectile Gemless"
 #scalingset "evo"
 #effect 134
@@ -98,6 +97,5 @@
 
 #pathperresearch 0
 #end
-
-
-
+
+

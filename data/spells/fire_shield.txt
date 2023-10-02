@@ -1,4 +1,5 @@
 #neweffect "Fire Shield"
+#scalingset "buff"
 #effect 23
 #damage 32768
 #spec 16384
@@ -43,8 +44,11 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal shielding"
 
 #end
-
+
+
 #neweffect "Fire Shield battlefield"
+#fieldwidecontinuation "Fire Shield"
+#scalingset "buff"
 #effect 23
 #damage 32768
 #spec 16384
@@ -90,5 +94,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal shielding"
 
 #end
-
-
+
+

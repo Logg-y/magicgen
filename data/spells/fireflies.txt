@@ -47,12 +47,5 @@
 #namecond range < 10 b "NAMEPREFIX burst of sparks"
 #fatigueperresearch 0
 #end
-
-
-
-
-
-
-
-
-
+
+

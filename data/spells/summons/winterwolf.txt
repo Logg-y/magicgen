@@ -1,5 +1,6 @@
 #neweffect "Summon winter wolf"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 511
 #spec 0
@@ -26,15 +27,16 @@
 
 
 #neweffect "winterwolf ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 511
 #spec 0
 #power 3
 #maxpower 7
-#nreff 1001
+#nreff 8
 #pathlevel 3
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths bw
@@ -80,6 +82,7 @@
 
 
 #neweffect "Remote summon winterwolf"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 511

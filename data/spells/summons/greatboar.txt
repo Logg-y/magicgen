@@ -1,5 +1,6 @@
 #neweffect "Summon greatboar"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2136
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "greatboar ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2136
 #spec 0
 #power 3
 #maxpower 8
-#nreff 5
+#nreff 12
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 1020
 #schools 1
 
 #paths 64
@@ -51,9 +55,12 @@
 #skipchance 97
 
 
+#fatigueperextraeffect 85.0
 #end
-
-
+
+
+
+
 #neweffect "greatboar Remote Assassination"
 #effect 10050
 #provrange 4
@@ -80,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote greatboar"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2136
@@ -111,5 +122,8 @@
 
 
 #end
-
-
+
+
+
+
+

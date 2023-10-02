@@ -1,5 +1,6 @@
 #neweffect "Summon hound of twilight"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3168
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "hound of twilight ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3168
 #spec 0
 #power 4
-#maxpower 7
-#nreff 1
+#maxpower 11
+#nreff 4
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 800
 #schools 1
 
 #paths 32
@@ -51,8 +55,10 @@
 #siegepatrolchaff 1
 
 #end
-
-
+
+
+
+
 #neweffect "hound of twilight Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon hound of twilight"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3168
@@ -106,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

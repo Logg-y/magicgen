@@ -1,5 +1,6 @@
 #neweffect "Summon stormdemon"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 632
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "stormdemon ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 632
 #spec 0
 #power 4
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 4
-#fatiguecost 1000
+#fatiguecost 4000
 #schools 1
 
 #paths 128
@@ -53,8 +57,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "stormdemon Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +87,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote stormdemon"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 632
@@ -112,5 +122,8 @@
 
 
 #end
-
-
+
+
+
+
+

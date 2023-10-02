@@ -24,7 +24,7 @@
 #nameprefix "insectoid"
 #fatiguepersquare 8
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "polymorph insect Secondary mrne"

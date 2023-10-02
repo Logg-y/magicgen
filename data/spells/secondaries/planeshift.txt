@@ -33,7 +33,7 @@
 
 #skipchance 50
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 #end
 
@@ -110,7 +110,7 @@
 #nameprefix "Hellish"
 #fatiguepersquare 14
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "planeshift kokytos Secondary mrne"
@@ -196,7 +196,7 @@
 #nameprefix "Tenebrous"
 #fatiguepersquare 14
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "planeshift void Secondary mrne"

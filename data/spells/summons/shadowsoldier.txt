@@ -1,9 +1,10 @@
 #neweffect "Raise shadowsoldier"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 675
 #spec 8388608
-#power 2
+#power 1
 #maxpower 11
 #precision -2
 #nreff 1
@@ -21,23 +22,26 @@
 
 #spelltype 528
 
--- 
+--
 #pathlevel 1
 #schools 1
 #skipchance 97
 #end
-
-
+
+
+
+
 #neweffect "Raise shadowsoldier Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 675
 #spec 8388608
-#power 0
-#maxpower 4
-#nreff 3002
+#power 2
+#maxpower 8
+#nreff 14
 #pathlevel 1
-#fatiguecost 100
+#fatiguecost 700
 #schools 1
 
 #skipchance 97
@@ -50,9 +54,12 @@
 
 #spelltype 20
 #siegepatrolchaff 1
+#fatigueperextraeffect 50.0
 #end
-
-
+
+
+
+
 #neweffect "shadowsoldier Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,9 +84,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon shadowsoldier"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 675
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

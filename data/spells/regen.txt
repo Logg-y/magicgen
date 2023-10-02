@@ -1,4 +1,6 @@
 #neweffect "Regen"
+#scalingset "buff"
+
 #effect 10
 #damage 32
 #spec 545275904
@@ -8,7 +10,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 2
@@ -17,7 +19,7 @@
 #explspr 10027
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 18
 
 
 #paths nb
@@ -41,11 +43,15 @@
 #namecond effect > 1000 b "NAMEPREFIX $mist$ of regeneration"
 
 
-#pathperresearch 0.3
 #end
 
 
+
+
 #neweffect "Regen battlefield"
+#fieldwidecontinuation "Regen"
+#scalingset "buff"
+
 #effect 10
 #damage 32
 #spec 545275904
@@ -55,7 +61,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 8
@@ -85,7 +91,11 @@
 #end
 
 
+
+
 #neweffect "Regen Undead only"
+#scalingset "buff"
+
 #effect 23
 #damage 536870912
 #spec 276840456
@@ -95,7 +105,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 1
@@ -104,7 +114,7 @@
 #explspr 10264
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 18
 #skipchance 70
 
 
@@ -126,7 +136,12 @@
 #end
 
 
+
+
 #neweffect "Regen Undead only battlefield"
+#fieldwidecontinuation "Regen Undead only"
+#scalingset "buff"
+
 #effect 23
 #damage 536870912
 #spec 276840456
@@ -136,7 +151,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 7
@@ -168,7 +183,11 @@
 #end
 
 
+
+
 #neweffect "Greater Regen nextspell"
+#scalingset "buff"
+
 #effect 23
 #damage 536870912
 #spec 545275904
@@ -183,7 +202,10 @@
 
 
 
+
 #neweffect "Regen Greater"
+#scalingset "buff"
+
 #effect 10
 #damage 32
 #spec 545275904
@@ -193,7 +215,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 5
@@ -223,7 +245,12 @@
 #end
 
 
+
+
 #neweffect "Greater Regen battlefield"
+#fieldwidecontinuation "Regen Greater"
+#scalingset "buff"
+
 #effect 10
 #damage 32
 #spec 545275904
@@ -233,7 +260,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 10
@@ -261,5 +288,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of regeneration"
 #nextspell "Greater Regen nextspell"
 #end
+
+
+
 
 

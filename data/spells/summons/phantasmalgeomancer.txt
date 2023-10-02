@@ -1,5 +1,6 @@
 #neweffect "Summon phantasmal geomancer"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 569
 #spec 8388608
@@ -27,7 +28,8 @@
 
 
 #neweffect "phantasmal geomancer ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 569
 #spec 8388608
@@ -80,6 +82,7 @@
 
 
 #neweffect "Remote summon phantasmal geomancer"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 569

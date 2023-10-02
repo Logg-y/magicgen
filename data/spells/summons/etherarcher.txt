@@ -37,10 +37,10 @@
 #damage 736
 #spec 0
 #power 3
-#maxpower 14
-#nreff 2
+#maxpower 10
+#nreff 7
 #pathlevel 3
-#fatiguecost 520
+#fatiguecost 1000
 #schools 1
 
 #paths 16
@@ -57,6 +57,7 @@
 
 
 
+#fatigueperextraeffect 250.0
 #end
 
 
@@ -92,6 +93,8 @@
 
 
 #neweffect "Remote summon etherarcher"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 736

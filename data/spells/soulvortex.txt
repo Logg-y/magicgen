@@ -1,4 +1,4 @@
-#neweffect "Soul Vortex"
+#neweffect "Soul Vortex"
 #effect 23
 #damage 2048
 #spec 8404992
@@ -13,6 +13,7 @@
 
 #aoe 0
 #power 6
+#maxpower 6
 #pathlevel 3
 #explspr 10122
 #sound 31
@@ -39,4 +40,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of the vampire"
 
 #end
-
+
+

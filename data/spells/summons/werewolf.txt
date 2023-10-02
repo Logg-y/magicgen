@@ -1,5 +1,6 @@
 #neweffect "Summon werewolf"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 633
 #spec 0
@@ -26,15 +27,16 @@
 
 
 #neweffect "werewolf ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 633
 #spec 0
 #power 4
 #maxpower 7
-#nreff 1004
+#nreff 12
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #paths 64
@@ -82,6 +84,7 @@
 
 
 #neweffect "remote werewolf"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 633

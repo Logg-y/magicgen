@@ -1,4 +1,6 @@
 #neweffect "Aim"
+#scalingset "buff"
+
 #effect 10
 #damage 4
 #spec 8404992
@@ -12,7 +14,7 @@
 
 #aoe 0
 #power -2
-#maxpower 3
+#maxpower 4
 #pathlevel 1
 #explspr 10224
 #sound 31
@@ -50,11 +52,14 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
 
-#pathperresearch 0.2
 #end
 
 
+
+
 #neweffect "Aim Battlefield"
+#scalingset "buff"
+
 #effect 10
 #damage 4
 #spec 8404992
@@ -65,8 +70,8 @@
 #spelltype 41
 
 #aoe 666
-#power 4
-#maxpower 4
+#power 5
+#maxpower 5
 #pathlevel 3
 #explspr 10224
 #sound 31
@@ -75,6 +80,7 @@
 
 #paths 194
 #secondarypaths 2
+#fieldwidecontinuation "Aim"
 
 #details "Grants +5 precision."
 
@@ -104,4 +110,9 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of keen eyes"
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal accuracy"
 #end
+
+
+
+
+
 

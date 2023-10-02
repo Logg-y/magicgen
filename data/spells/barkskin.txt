@@ -1,4 +1,6 @@
 #neweffect "Barkskin"
+#scalingset "buff"
+
 #effect 10
 #damage 16
 #spec 8404992
@@ -10,13 +12,13 @@
 
 
 #aoe 0
-#power 0
+#power 1
 #maxpower 6
 #pathlevel 1
 #explspr 10184
 #sound 31
 #range 10
-#fatiguecost 5
+#fatiguecost 10
 
 
 -- fire, water, nature, death
@@ -54,7 +56,13 @@
 #end
 
 
+
+
 #neweffect "Barkskin battlefield"
+#fieldwidecontinuation "Barkskin"
+
+#scalingset "buff"
+
 #effect 10
 #damage 16
 #spec 8404992
@@ -68,11 +76,11 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 3
+#pathlevel 4
 #explspr 10184
 #sound 31
 #range 10
-#fatiguecost 100
+#fatiguecost 200
 #unique 1
 
 
@@ -109,5 +117,8 @@
 #namecond effect > 1000 64 "NAMEPREFIX $mist$ of barkskin"
 
 #end
+
+
+
 
 

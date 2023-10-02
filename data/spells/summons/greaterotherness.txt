@@ -1,5 +1,6 @@
 #neweffect "Summongreaterotherness"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 8388608
@@ -28,7 +29,8 @@
 
 
 #neweffect "greaterotherness ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 8388608
@@ -86,6 +88,7 @@
 
 
 #neweffect "remotegreaterotherness"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 628

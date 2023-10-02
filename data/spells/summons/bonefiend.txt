@@ -1,10 +1,11 @@
 #neweffect "Summon bone fiend"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 433
 #spec 0
-#power 2
-#maxpower 14
+#power 1
+#maxpower 13
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -25,18 +26,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "bonefiend ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 433
 #spec 0
 #power 1
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 1600
 #schools 1
 
 #paths 128
@@ -52,8 +56,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "bonefiend Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +84,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote bonefiends"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 433
@@ -109,5 +119,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

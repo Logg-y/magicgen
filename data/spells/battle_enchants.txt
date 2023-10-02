@@ -25,7 +25,8 @@
 #details "Astral magic bonus +1 to the entire battlefield."
 
 #end
-
+
+
 #neweffect "Howl"
 #effect 81
 #damage 88
@@ -57,7 +58,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Shark Attack"
 #effect 81
 #damage 78
@@ -89,7 +91,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Solar Eclipse"
 #effect 81
 #damage 97
@@ -122,7 +125,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Darkness"
 #effect 81
 #damage 77
@@ -155,7 +159,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Rain"
 #copyspell "Rain"
 #effect 81
@@ -187,7 +192,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Mist"
 #copyspell "Mist"
 #effect 81
@@ -221,7 +227,8 @@
 #ainocast 1
 
 #end
-
+
+
 #neweffect "Storm"
 #copyspell "Storm"
 #effect 81
@@ -253,7 +260,8 @@
 #details "There is a 50% chance that missile weapons fail to fire, unless the weapon can be fired underwater. For creatures without storm power or storm immunity, flying is impossible and precision is halved, rounding down. This precision reduction stacks with that of Mist."
 #ainocast 1
 #end
-
+
+
 #neweffect "Wailing Winds"
 #copyspell "Wailing Winds"
 #effect 81
@@ -284,9 +292,8 @@
 #descr 32 "The necromancer releases a wind of horrible screams and sighs. All enemies hearing the wailing will feel their spirits sink and have their hearts gripped with fear. The spell affects the whole battlefield until the battle is over or the caster is killed."
 #details "Every 320 ticks (or 23.4375 times per round), 5% of the battlefield is struck by a strength 1 fear spell that only affects enemies."
 #end
-
-
-
+
+
 #neweffect "Wrathful Skies"
 #copyspell "Wrathful Skies"
 #effect 81
@@ -316,8 +323,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), 0.3% of the battlefield is struck for 15AN shock damage. An active storm doubles the area struck."
 #ainocast 1
 #end
-
-
+
+
 #neweffect "Acid Storm"
 #copyspell "Acid Storm"
 #effect 81
@@ -349,7 +356,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), 3% of the battlefield is struck for 4 AP acid damage. Upon dealing damage, there is a 16% chance of rusting a victim's equipment. Rusty armour has a (incoming damage roll * 2)% chance of becoming damaged. Rusty weapons have a 25% chance to break when they land a hit, reducing their damage done by 2. Blunt weapons only have their damage reduced by 1."
 #ainocast 1
 #end
-
+
+
 #neweffect "Fire Storm"
 #copyspell "Fire Storm"
 #effect 81
@@ -381,7 +389,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck for 6 AP fire damage."
 #ainocast 1
 #end
-
+
+
 #neweffect "Rain of Stones"
 #copyspell "Rain of Stones"
 #effect 81
@@ -411,7 +420,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), 1% of the battlefield is the target of a large stone which inflicts 5 capped nonmagical blunt damage if it hits. Additionally, there is a 10% chance to hit each square on the battlefield that has a unit in it for 5 points of nonmagical blunt damage without the appearance of a falling stone. Despite having no projectile, it acts like a projectile for the purposes of hitting individual units in the square."
 #ainocast 1
 #end
-
+
+
 #neweffect "Astral Tempest"
 #copyspell "Astral Tempest"
 #effect 81
@@ -441,7 +451,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), strikes 2% of the battlefield for 1 AN magic damage, with a magic resistance check to negate the damage. Additionally, strikes 4% of the battlefield with an effect that interrupts all non-mindless creatures unless they succeed a magic resistance check."
 #ainocast 1
 #end
-
+
+
 #neweffect "Meteor Shower"
 #copyspell "Meteor Shower"
 #effect 81
@@ -473,7 +484,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), has a 3/4000 chance to spawn a meteor on each square, inflicting 150 magical blunt damage to those hit by it."
 #ainocast 1
 #end
-
+
+
 #neweffect "Foul Vapors"
 #copyspell "Foul Vapors"
 #effect 81
@@ -503,7 +515,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), strikes 1% of the battlefield with 5 AN poison damage."
 #ainocast 1
 #end
-
+
+
 #neweffect "Friendly Currents"
 #copyspell "Friendly Currents"
 #effect 81
@@ -532,7 +545,8 @@
 #descr 4 "This spell makes the water currents aid the caster and all his allies. Those aided by this spell can move further every turn and are less exhausted by fighting. This spell can only be cast underwater."
 #details "Friendly creatures gain +4 combat speed and -2 encumbrance, enemies suffer -4 combat speed and +2 encumbrance."
 #end
-
+
+
 #neweffect "Quagmire"
 #copyspell "Quagmire"
 #effect 81
@@ -562,7 +576,8 @@
 #details "All units without Swamp Survival suffer -1 Att, -1 Def, +2 Enc and -20% combat speed."
 #ainocast 1
 #end
-
+
+
 #neweffect "Grip of Winter"
 #copyspell "Grip of Winter"
 #effect 81
@@ -594,8 +609,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN cold fatigue damage. The damage dealt is 4 + Cold scale. The presence of a snow storm (either natural, or through the spell Storm in cold scales) adds 2 to the damage. Does nothing if Heat from Hell is active."
 #ainocast 1
 #end
-
-
+
+
 #neweffect "Heat from Hell"
 #copyspell "Heat from Hell"
 #effect 81
@@ -627,7 +642,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), strikes 3% of the battlefield with AN fire fatigue damage. The damage dealt is 5 + Cold scale, -3 if it is raining, or -1 if it is snowing. Does nothing if Grip of Winter is active."
 #ainocast 1
 #end
-
+
+
 #neweffect "Solar Brilliance"
 #copyspell "Solar Brilliance"
 #effect 81
@@ -657,7 +673,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), 5% of the battlefield must make an easy MR check or become blinded. Undead and demons in 5% of the battlefield are struck for 5 AP damage, with an easy MR check to negate the damage. Adds 2 to the value of sun awe. Removes all darkness effects. Dark power provides corresponding penalties to the bonuses it would yield in darkness."
 #ainocast 1
 #end
-
+
+
 #neweffect "Mists of Deception"
 #copyspell "Mists of Deception"
 #effect 81
@@ -687,7 +704,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), for each level of Air magic of the caster, there is a 1 in 24 chance to spawn a random phantasm at a random point on the battlefield. Halves base precision, rounded down. This is cumulative with Storm. The value of sun awe is reduced by 2, to a minimum of 1. The effect on sun awe does not stack with that of rain or snow. This does not stack in any way with Mist.\n\nThe phantasms summoned are as follows:\n\n5% - Phantasmal Beast\n5% - Phantasmal Knight\n45% - Phantasmal Warrior\n45% - Phantasmal Wolf"
 #ainocast 1
 #end
-
+
+
 #neweffect "Rigor Mortis"
 #copyspell "Rigor Mortis"
 #effect 81
@@ -717,7 +735,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck with 10AN magical fatigue damage. Undead and inanimates are immune to this effect."
 #ainocast 1
 #end
-
+
+
 #neweffect "Relief"
 #copyspell "Relief"
 #effect 81
@@ -746,8 +765,8 @@
 #descr 64 "This battle enchantment reduces the fatigue of all friendly units on the battlefield. It lasts until the battle ends or the caster is killed."
 #details "Every 320 ticks (or 23.4375 times a round), 6% of alied units get a AN fatigue reduction roll of 1."
 #end
-
-
+
+
 #neweffect "Demon Cleansing"
 #copyspell "Demon Cleansing"
 #effect 81
@@ -777,7 +796,8 @@
 #details "The damage is doubled before protection rolls."
 #ainocast 1
 #end
-
+
+
 #neweffect "Fields of the Dead"
 #copyspell "Fields of the Dead"
 #effect 81
@@ -807,7 +827,8 @@
 #details "Every 320 ticks (or 23.4375 times a round), there is a 1 in 6 chance to trigger. Reanimates up to a DRN of corpses as soulless, with a 100% chance for armed soulless if there are available corpses. There is a 10% chance for national soulless to be spawned."
 #ainocast 1
 #end
-
+
+
 #neweffect "Growing Fury"
 #copyspell "Growing Fury"
 #effect 81
@@ -839,7 +860,8 @@
 #details "Affects all friendly units on the field every 320 ticks, or 23.4375 times a round. Units with a berserker value immediately go berserk, as do all those whose current hitpoints are lower than their maximum. Other units are 5% to go berserk each check. As with regular berserking, mindless, slave vessels, and most mounted units are unaffected."
 #ainocast 1
 #end
-
+
+
 #neweffect "The Ravenous Swarm"
 #copyspell "The Ravenous Swarm"
 #effect 81
@@ -869,7 +891,8 @@
 #details "Every 5120 ticks (or 1.46484375 times a round), selects a random undead target. If a target had previously been selected, will always be picked in preference to another random undead creature. If there are no undead, a random living creature is selected, and as with the undead targets, it will prefer to attack the same target continuously. Inflicts 7 AN nonmagical damage, which is multiplied by 3 if the target is undead or a demon."
 #ainocast 1
 #end
-
+
+
 #neweffect "Soul Drain"
 #copyspell "Soul Drain"
 #effect 81
@@ -901,7 +924,8 @@
 #details "Every 320 ticks (or 23.4375 times per round), 3% of the battlefield is struck with 2 AN magical life stealing. A successful MR check negates the damage."
 #ainocast 1
 #end
-
+
+
 #neweffect "Blood Rain"
 #copyspell "Blood Rain"
 #effect 81
@@ -931,6 +955,5 @@
 #details "Morale -4 for everyone on the battlefield"
 #ainocast 1
 #end
-
-
-
+
+

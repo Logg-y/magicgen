@@ -9,7 +9,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 0
 #power 2
@@ -24,7 +24,7 @@
 #paths 64
 #secondarypaths 64
 
-#namecond effectiveaoe < 1 64 "NAMEPREFIX Sleep"
+#namecond effectiveaoe <= 1 64 "NAMEPREFIX Sleep"
 
 #namecond2 1 < effectiveaoe < 5 64 "NAMEPREFIX Wave of Slumber"
 #namecond2 5 < effectiveaoe < 600 64 "NAMEPREFIX Slumbering Squadron"
@@ -40,6 +40,9 @@
 
 #end
 
+
+
+
 #neweffect "Battlefield Sleep"
 #effect 11
 #damage 1024
@@ -50,12 +53,12 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 5
+#pathlevel 6
 #explspr 10016
 #sound 29
 #fatiguecost 200
@@ -77,6 +80,9 @@
 #scalingset ""
 #end
 
+
+
+
 #neweffect "Battlefield Sleep Enemies Only"
 #effect 11
 #damage 1024
@@ -87,7 +93,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 666
 #power 9
@@ -114,6 +120,8 @@
 
 #scalingset ""
 #end
+
+
 
 
 

@@ -1,14 +1,16 @@
 #neweffect "Fire Power"
+
+
 #effect 23
 #damage 262144
 #spec 16384
 #schools 17
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41+4096
+-- buff, research scales aispellmod
+#spelltype 1+4096
 
 
--- 
+--
 
 
 #aoe 0
@@ -18,7 +20,7 @@
 #sound 16
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -29,7 +31,7 @@
 #name 1 "NAMEPREFIX Phoenix Power"
 #name 128 "NAMEPREFIX Infernal Power"
 
-#details "Grants +1 fire magic."
+#details "Grants +1 fire magic.  This spell produces any AoE around the caster, which makes the casting AI unable to try applying it to ordinary troops, which it would unfortunately try to do without this peculiar looking spell chain."
 
 #descr 1 "The caster channels the power of fire, allowing the casting of more powerful fire magic."
 #descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno, allowing the casting of more powerful fire spells."
@@ -42,9 +44,15 @@
 
 #nextspell "Fire Power Real"
 
+#scalingset ""
 #end
 
+
+
+
 #neweffect "Fire Power Real"
+#scalingset "buff"
+
 #effect 23
 #damage 262144
 #spec 16384
@@ -54,7 +62,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #aoe 0
@@ -64,7 +72,7 @@
 #sound 16
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -75,7 +83,7 @@
 #name 1 "Channel Fiery Power"
 #name 128 "Channel Fiery Power"
 
-#details "Grants +1 fire magic."
+#details "Grants +1 fire magic.  This spell produces any AoE around the caster, which makes the casting AI unable to try applying it to ordinary troops, which it would unfortunately try to do without this peculiar looking spell chain."
 
 #descr 1 "The power of fire is channeled into SUBJECT, allowing %the% %mage% to cast more powerful fire spells."
 #descr 128 "$BLOOD_INTRO$, knowledge of fire magic is temporarily brought from Inferno and channeled into SUBJECT,  allowing %the% %mage% to cast more powerful fire spells."
@@ -88,17 +96,19 @@
 
 
 
+
 #neweffect "Water Power"
+
 #effect 23
 #damage 524288
 #spec 8404992
 #schools 17
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41+4096
+-- buff, research scales aispellmod
+#spelltype 1+4096
 
 
--- 
+--
 
 #aoe 0
 #power 3
@@ -107,7 +117,7 @@
 #sound 9
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -118,7 +128,7 @@
 #name 4 "NAMEPREFIX Water Power"
 #name 128 "NAMEPREFIX Power from Kokytos"
 
-#details "Grants +1 water magic."
+#details "Grants +1 water magic. This spell functions on land as well.  This spell produces any AoE around the caster, which makes the casting AI unable to try applying it to ordinary troops, which it would unfortunately try to do without this peculiar looking spell chain."
 
 #descr 4 "The caster channels the power of water, allowing the casting of more powerful water magic."
 #descr 128 "$BLOOD_INTRO$, knowledge of water magic is temporarily brought from Kokytos, allowing the casting of more powerful water spells."
@@ -134,7 +144,11 @@
 #end
 
 
+
+
 #neweffect "Water Power Real"
+#scalingset "buff"
+
 #effect 23
 #damage 524288
 #spec 8404992
@@ -144,7 +158,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 3
@@ -153,7 +167,7 @@
 #sound 9
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -177,17 +191,20 @@
 
 
 
+
 #neweffect "Storm Power"
+
 #effect 23
 #damage 8192
 #spec 4210688
 #schools 17+4096
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41
+-- buff, research scales aispellmod
+#spelltype 1+4096
 
 
--- 
+
+--
 
 #aoe 0
 #power 2
@@ -196,7 +213,7 @@
 #sound 24
 #range 0
 #fatiguecost 20
-#maxpower 4
+#maxpower 8
 
 
 #casttime 111
@@ -207,7 +224,7 @@
 
 #name 2 "NAMEPREFIX Storm Power"
 
-#details "Grants +1 air magic during a storm."
+#details "Grants +1 air magic during a storm.  This spell produces any AoE around the caster, which makes the casting AI unable to try applying it to ordinary troops, which it would unfortunately try to do without this peculiar looking spell chain."
 
 #descr 2 "The caster channels the power of storms, allowing the casting of more powerful air magic if a storm is present."
 
@@ -220,7 +237,11 @@
 #end
 
 
+
+
 #neweffect "Storm Power Real"
+#scalingset "buff"
+
 #effect 23
 #damage 8192
 #spec 4210688
@@ -230,7 +251,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 2
@@ -239,7 +260,7 @@
 #sound 24
 #range 0
 #fatiguecost 20
-#maxpower 4
+#maxpower 8
 
 
 #casttime 111
@@ -261,17 +282,20 @@
 
 
 
+
 #neweffect "Nature Power"
+
 #effect 23
 #damage 1048576
 #spec 8404992
 #schools 17
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41+4096
+-- buff, research scales aispellmod
+#spelltype 1+4096
 
 
--- 
+
+--
 
 #aoe 0
 #power 3
@@ -280,7 +304,7 @@
 #sound 29
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -289,7 +313,7 @@
 
 #name 64 "NAMEPREFIX Power of Gaia"
 
-#details "Grants +1 nature magic."
+#details "Grants +1 nature magic. This spell produces any AoE around the caster, which makes the casting AI unable to try applying it to ordinary troops, which it would unfortunately try to do without this peculiar looking spell chain."
 
 #descr 64 "The caster channels the power of Gaia, allowing the casting of more powerful nature magic."
 
@@ -304,7 +328,11 @@
 #end
 
 
+
+
 #neweffect "Nature Power Real"
+#scalingset "buff"
+
 #effect 23
 #damage 1048576
 #spec 8404992
@@ -314,7 +342,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 3
@@ -323,7 +351,7 @@
 #sound 29
 #range 0
 #fatiguecost 20
-#maxpower 5
+#maxpower 8
 
 
 
@@ -344,7 +372,12 @@
 
 #end
 
+
+
+
 #neweffect "Earth Power"
+#scalingset "buff"
+
 #effect 23
 #damage 4096
 #spec 8404992
@@ -354,7 +387,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 3
@@ -362,8 +395,8 @@
 #explspr 10192
 #sound 45
 #range 0
-#fatiguecost 20
-#maxpower 5
+#fatiguecost 5
+#maxpower 8
 
 
 
@@ -381,7 +414,11 @@
 
 #end
 
+
+
+
 #neweffect "Power of the Spheres"
+
 #effect 23
 #damage 128
 #spec 8404992
@@ -391,11 +428,11 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 3
-#maxpower 9
+#maxpower 3
 #pathlevel 1
 #explspr 10190
 #sound 31
@@ -422,7 +459,10 @@
 #end
 
 
+
+
 #neweffect "Hellpower"
+
 #effect 23
 #damage 131072
 #spec 16384
@@ -432,7 +472,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 2
@@ -458,12 +498,6 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of infernal power"
 
 #end
-
-
-
-
-
-
 
 
 

@@ -8,8 +8,9 @@ from Services import montagbuilder, utils, naming
 UNITMOD_TO_SECONDARY_CACHE = {}
 
 
-def _getscaleamt(L, rate):
-    return rate * ((L*(L + 1)) / 2)
+def _getscaleamt(L, rate=4.0):
+    #return rate * ((L*(L + 1)) / 2)
+    return rate * (2**(L/rate))
 
 
 class EventSet(object):
@@ -307,7 +308,8 @@ class EventSet(object):
             replacement = replacements[i]
             powerlevel = powerlevelassignments[module.name]
             moduledata[replacement] = module.formatdata(spelleffect, spell,
-                                                        _getscaleamt(powerlevel-module.minpowerlevel, spelleffect.scalerate),
+                                                        #_getscaleamt(powerlevel-module.minpowerlevel, spelleffect.scalerate),
+                                                        _getscaleamt(powerlevel-module.minpowerlevel, 4.0),
                                                         forcedsecondaryeffect, powerlevel, enchantid)
             if moduledata[replacement] is None:
                 print(f"ERROR: formatdata for module {module.name} failed")

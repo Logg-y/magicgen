@@ -1,5 +1,6 @@
 #neweffect "Summon weles2"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 412
 #spec 8388608
@@ -27,7 +28,8 @@
 
 
 #neweffect "weles2 ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 412
 #spec 8388608
@@ -79,6 +81,7 @@
 
 
 #neweffect "Remote summon weles2"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 412

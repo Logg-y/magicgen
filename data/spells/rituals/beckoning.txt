@@ -4,7 +4,7 @@
 #damage 666
 #spec 8392704
 #power 6
-#maxpower 14
+#maxpower 11
 #provrange 4
 #nreff 5025
 #pathlevel 5
@@ -23,4 +23,7 @@
 
 #spelltype 20
 
+#scalingset ""
+#fatigueperextraeffect 15
 #end
+

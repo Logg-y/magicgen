@@ -8,7 +8,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 2
@@ -34,7 +34,11 @@
 #end
 
 
+
+
 #neweffect "Heat Aura"
+#scalingset "buff"
+
 #effect 10
 #damage 16384
 #spec 12599296
@@ -44,16 +48,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
-#power 2
-#maxpower 8
+#power 1
+#maxpower 6
 #pathlevel 1
 #explspr 10142
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 #ainocast 1
 
@@ -78,4 +82,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of hot winds"
 
 #end
+
+
+
+
 

@@ -39,6 +39,7 @@ class SpellModifier(object):
         self.setcommands = []
         self.multcommands = []
         self.details = ""
+        self.incompatibility = []
 
     def compatibility(self, eff, researchlevel, isnextspell):
         "Return True if this modifier is compatible with the given SpellEffect."
@@ -49,6 +50,10 @@ class SpellModifier(object):
 
         if eff.noresearchreduction and self.power < 0:
             return False
+
+        for item in self.incompatibility:
+            if eff.name.lower() == item.lower():
+                return False
 
         if eff.nocostreduction:
             if self.fatiguecost < 0:

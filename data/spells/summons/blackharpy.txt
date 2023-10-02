@@ -1,10 +1,11 @@
 #neweffect "Summon blackharpy"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 430
 #spec 0
-#power 1
-#maxpower 9
+#power 0
+#maxpower 12
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -26,10 +27,13 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "blackharpy ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 430
 #spec 0
@@ -59,8 +63,10 @@
 #siegepatrolchaff 1
 
 #end
-
-
+
+
+
+
 #neweffect "blackharpy Remote Assassination"
 #effect 10050
 #provrange 4
@@ -87,9 +93,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote blackharpy"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 430
@@ -108,8 +118,8 @@
 #paths 66
 #secondarypaths 66
 
--- 
--- 
+--
+--
 
 #name 64 "$Send$ NAMEPREFIX Black Harpies"
 #name 2 "$Send$ NAMEPREFIX Black Harpies"
@@ -120,5 +130,8 @@
 
 
 #end
-
-
+
+
+
+
+

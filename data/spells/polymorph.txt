@@ -16,7 +16,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 15
+#fatiguecost 20
 #range 5015
 #precision 100
 
@@ -36,7 +36,8 @@
 
 #maxpower 15
 #end
-
+
+
 #neweffect "Polymorph Insect"
 #scalingset "evo"
 #effect 54
@@ -57,7 +58,7 @@
 #pathlevel 3
 #explspr 10001
 #sound 29
-#fatiguecost 15
+#fatiguecost 20
 #range 5015
 #precision 100
 
@@ -75,9 +76,5 @@
 
 #maxpower 15
 #end
-
-
-
-
-
-
+
+

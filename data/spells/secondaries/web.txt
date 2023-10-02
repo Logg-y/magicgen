@@ -26,7 +26,7 @@
 #nameprefix "Webbed"
 #fatiguepersquare 2
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Web Secondary mrn"
@@ -65,7 +65,7 @@
 #nameprefix "Webbed"
 #fatiguepersquare 4
 
-#scalingaoelimit 1.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Web Secondary mrnh"

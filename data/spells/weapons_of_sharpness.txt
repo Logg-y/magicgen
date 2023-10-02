@@ -1,4 +1,6 @@
 #neweffect "Weapons of Sharpness"
+#scalingset "buff"
+
 #effect 10
 #damage 524288
 #spec 12582912
@@ -9,14 +11,14 @@
 
 
 
-#aoe 1
+#aoe 5
 #power 5
-#maxpower 8
-#pathlevel 2
+#maxpower 7
+#pathlevel 3
 #explspr 10270
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 50
 
 
 -- erf
@@ -31,7 +33,7 @@
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
-#descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor." 
+#descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor."
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of sharpening"
@@ -39,7 +41,11 @@
 #end
 
 
+
+-- deliberately not using #fieldwidecontinuation because of const spell levels
 #neweffect "Weapons of Sharpness battlefield"
+#scalingset "buff"
+
 #effect 10
 #damage 524288
 #spec 12582912
@@ -72,10 +78,15 @@
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
-#descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor." 
+#descr 8 "The melee weapons of SUBJECT are imbued with magic, making them easily slice through even the thickest armor."
 
 #priority 1
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of sharpening"
 
 #end
+
+
+
+
+
 

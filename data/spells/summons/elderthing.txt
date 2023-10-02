@@ -1,5 +1,6 @@
 #neweffect "Summon elderthing"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 8388608
@@ -26,18 +27,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "elderthing ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 8388608
 #power 3
 #maxpower 7
-#nreff 5
+#nreff 10
 #pathlevel 2
-#fatiguecost 520
+#fatiguecost 1020
 #schools 1
 
 #paths 16
@@ -57,9 +61,12 @@
 
 #newunit "Elder Thing"
 
+#fatigueperextraeffect 102.0
 #end
-
-
+
+
+
+
 #neweffect "elderthing Remote Assassination"
 #effect 10050
 #provrange 4
@@ -86,9 +93,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote elderthing"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 628
@@ -117,5 +128,8 @@
 
 
 #end
-
-
+
+
+
+
+

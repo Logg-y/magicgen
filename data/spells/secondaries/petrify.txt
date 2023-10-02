@@ -30,7 +30,7 @@
 #nameprefix "Lapidifying"
 #fatiguepersquare 4
 
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Petrify Secondary mrne"
@@ -73,7 +73,7 @@
 #nameprefix "Lapidifying"
 #fatiguepersquare 7
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Petrify Secondary mrn"

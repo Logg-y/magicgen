@@ -1,4 +1,6 @@
 #neweffect "Life after Death"
+#scalingset "buff"
+
 #effect 10
 #damage 2097152
 #spec 12713984
@@ -8,16 +10,16 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 1
 #power 2
 #maxpower 6
-#pathlevel 1
+#pathlevel 2
 #explspr 10317
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 
 #paths 32
@@ -33,7 +35,13 @@
 
 #end
 
+
+
+
 #neweffect "Life after Death battlefield"
+#fieldwidecontinuation "Life after Death"
+#scalingset "buff"
+
 #effect 10
 #damage 2097152
 #spec 12713984
@@ -43,7 +51,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 7
@@ -68,4 +76,9 @@
 #details "Upon death, creatures return as soulless. Many creatures, including but not limited to undead, immortals, demons, inanimates, creatures that are inherently ethereal, pretenders, and many animals, do not return. Those that do have the effects of Plague removed from them, become unblessed, and have their poison pool and fatigue reduced to zero. Damage does overflow onto soulless forms, but will always leave the new form with at least 1 hit point. Commanders will retain their commander status and any magic paths. This does not apply to creatures killed by application of 9000+ damage."
 
 #end
+
+
+
+
+
 

@@ -9,16 +9,16 @@
 #spelltype 42
 
 
--- 
+--
 
 
 #aoe 0
-#power -2
-#maxpower 6
+#power 0
+#maxpower 11
 #pathlevel 1
 #explspr 10207
 #sound 42
-#fatiguecost 5
+#fatiguecost 15
 #range 5010
 
 #paths 64
@@ -42,6 +42,9 @@
 
 #end
 
+
+
+
 #neweffect "Fascination Battlefield"
 #effect 128
 #damage 100
@@ -52,7 +55,7 @@
 #spelltype 42
 
 
--- 
+--
 
 
 #aoe 666
@@ -80,6 +83,9 @@
 #scalingset ""
 #end
 
+
+
+
 #neweffect "Fascination Battlefield Hostile Only"
 #effect 128
 #damage 100
@@ -90,7 +96,7 @@
 #spelltype 42
 
 
--- 
+--
 
 
 #aoe 666
@@ -119,6 +125,8 @@
 #end
 
 
+
+
 #neweffect "Colour Spray"
 #scalingset "disabling"
 #effect 128
@@ -130,7 +138,7 @@
 #spelltype 42
 
 
--- 
+--
 
 
 #aoe 10
@@ -159,7 +167,6 @@
 
 #fatigueperresearch 0
 #end
-
 
 
 

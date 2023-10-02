@@ -28,7 +28,7 @@
 #nameprefix "Incendiary"
 #nameprefix "Conflagratory"
 #fatiguepersquare 4
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "Burning Secondary mrnh"
@@ -69,7 +69,7 @@
 #nameprefix "Incendiary"
 #nameprefix "Conflagratory"
 #fatiguepersquare 2
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "Burning Secondary mrn"

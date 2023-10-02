@@ -1,5 +1,6 @@
 #neweffect "Summon darkvines"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 330
 #spec 0
@@ -22,18 +23,21 @@
 
 #spelltype 528
 #end
-
-
+
+
+
+
 #neweffect "darkvines ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 330
 #spec 0
 #power 4
 #maxpower 14
-#nreff 1
+#nreff 3
 #pathlevel 3
-#fatiguecost 420
+#fatiguecost 1220
 #schools 1
 
 #paths 128
@@ -47,9 +51,12 @@
 #skipchance 50
 
 
+#fatigueperextraeffect 406.6666666666667
 #end
-
-
+
+
+
+
 #neweffect "darkvines Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote darkvines"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 330
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

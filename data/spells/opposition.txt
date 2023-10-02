@@ -9,7 +9,7 @@
 #precision 100
 #range 5020
 #pathlevel 3
-#fatiguecost 10
+#fatiguecost 20
 #explspr 10233
 #sound 41
 #paths 16
@@ -32,4 +32,5 @@
 
 #pathperresearch 0.2
 #end
-
+
+

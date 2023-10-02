@@ -1,10 +1,11 @@
 #neweffect "Raise Longdead"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -2
 #spec 8388608
-#power 1
-#maxpower 9
+#power -1
+#maxpower 11
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -21,8 +22,8 @@
 
 #spelltype 528
 
-#power 1
--- 
+#power -1
+--
 #pathlevel 1
 #schools 16
 #skipchance 0
@@ -30,18 +31,21 @@
 #details "Has a 10% chance of drawing from the national longdead pool, if available.\n\nThe following nations have national longdead:\nJotunheim, Utgard: 50% default, 25% chain Longdead Giant, 25% ringmail Longdead Giant\nNiefelheim: 50% default, 50% ringmail Longdead Giant\nEA, MA Ermor, Sceleria: equal chances of Longdead Legionnaire, Velite, Principe, Triarius\nMA, LA Arcoscephale, MA Machaka: equal chances of spear Longdead, spear and scale mail Longdead, Longdead Hoplite\nMA Ulm, MA, LA Marignon, LA Abysia: equal chance of scale mail and great sword Longdead, or plate and great sword Longdead\nLA Ulm: 75% plate and great sword Longdead, 25% default\nEA Ulm: 15% scale and great sword Longdead, 42.5% unarmoured sword and axe Longdead, 42.5% scale mail sword and axe Longdead\nEA, MA Vanheim, Midgard: 25% scale mail sword and axe Longdead, 75% default\nC'tis, any age: Any of the three Longdead of C'tis or two Longdead Warriors, at equal chance\nHinnom, Ashdod: 50% default, 50% a Longdead Rephiate. May be unarmoured, scale mail only, or scale mail and iron cap\nMA Man: 15% plate mail and great sword, otherwise as Berytos\nBerytos: 25% spear and shield, 25% spear, shield, scale mail and helmet, 50% long spear, shield and scale mail\nLanka, Kailasa, Bandar Log, Patala:\n2/7 chance of a Longdead Bandar: unarmoured with mace, scalemail with mace and buckler, or scale mail with cudgel\n1/7 chance of a Longdead Vanara: unarmed and unarmoured, unarmoured with mace, or scale mail with mace\n4/7 chance of unarmed and unarmoured Longdead Markata"
 
 #end
-
-
+
+
+
+
 #neweffect "Raise Longdead Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage -2
 #spec 8388608
 #power 0
-#maxpower 4
-#nreff 3004
+#maxpower 6
+#nreff 38
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 720
 #schools 16
 
 #skipchance 60
@@ -58,10 +62,15 @@
 
 
 #details "Has a 100% chance of drawing from the national longdead pool, if available.\n\nThe following nations have national longdead:\nJotunheim, Utgard: 50% default, 25% chain Longdead Giant, 25% ringmail Longdead Giant\nNiefelheim: 50% default, 50% ringmail Longdead Giant\nEA, MA Ermor, Sceleria: equal chances of Longdead Legionnaire, Velite, Principe, Triarius\nMA, LA Arcoscephale, MA Machaka: equal chances of spear Longdead, spear and scale mail Longdead, Longdead Hoplite\nMA Ulm, MA, LA Marignon, LA Abysia: equal chance of scale mail and great sword Longdead, or plate and great sword Longdead\nLA Ulm: 75% plate and great sword Longdead, 25% default\nEA Ulm: 15% scale and great sword Longdead, 42.5% unarmoured sword and axe Longdead, 42.5% scale mail sword and axe Longdead\nEA, MA Vanheim, Midgard: 25% scale mail sword and axe Longdead, 75% default\nC'tis, any age: Any of the three Longdead of C'tis or two Longdead Warriors, at equal chance\nHinnom, Ashdod: 50% default, 50% a Longdead Rephiate. May be unarmoured, scale mail only, or scale mail and iron cap\nMA Man: 15% plate mail and great sword, otherwise as Berytos\nBerytos: 25% spear and shield, 25% spear, shield, scale mail and helmet, 50% long spear, shield and scale mail\nLanka, Kailasa, Bandar Log, Patala:\n2/7 chance of a Longdead Bandar: unarmoured with mace, scalemail with mace and buckler, or scale mail with cudgel\n1/7 chance of a Longdead Vanara: unarmed and unarmoured, unarmoured with mace, or scale mail with mace\n4/7 chance of unarmed and unarmoured Longdead Markata"
+#fatigueperextraeffect 18.94736842105263
 #end
-
-
+
+
+
+
 #neweffect "Remote summon longdead"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage -2
@@ -86,5 +95,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

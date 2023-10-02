@@ -1,13 +1,3 @@
--- This can be revisited if there is a way to polymorph in battle into a unit with ID over 1000
--- technically this could be achieved by making use of the unused IDs but that suddenly adds
--- compatibility excitement and requries more groundwork for an issue that should not even be
--- an issue in the first place!
-
--- Turns out (from code diving) that aoe 1 will prevent this from happening
--- hence burning everyone else in the same square to a crisp
-
-
-
 #neweffect "Super Caster Soul Slay"
 #effect 11
 #damage 562949953421568
@@ -26,7 +16,8 @@
 #name 64 "Embrace Mortality"
 #name 128 "Embrace Mortality"
 #end
-
+
+
 #neweffect "Super Caster Remove Fatigue"
 #effect 8
 #damage 200
@@ -46,9 +37,9 @@
 #name 128 "Remove Fatigue"
 #nextspell "Super Caster Soul Slay"
 #end
-
-
-#neweffect "Become Super Caster Fire"
+
+
+#neweffect "Become Super Caster Fire"
 #effect 23
 #damage 274878201861
 #spec 16384
@@ -85,7 +76,8 @@
 #nextspell "Super Caster Explosion Fire"
 
 #end
-
+
+
 #neweffect "Super Caster Explosion Fire"
 #effect 2
 #damage 999
@@ -106,7 +98,8 @@
 #name 128 "Released Power"
 #nextspell "Super Caster Transformation Fire"
 #end
-
+
+
 #neweffect "Super Caster Transformation Fire"
 #effect 54
 #damage 0
@@ -127,11 +120,9 @@
 #name 128 "Embodiment of Flames"
 #nextspell "Super Caster Remove Fatigue"
 #end
-
-
----
-
-#neweffect "Become Super Caster Water"
+
+
+#neweffect "Become Super Caster Water"
 #effect 23
 #damage 274878431269
 #spec 8404992
@@ -167,7 +158,8 @@
 #nextspell "Super Caster Explosion Water"
 
 #end
-
+
+
 #neweffect "Super Caster Explosion Water"
 #effect 2
 #damage 999
@@ -188,7 +180,8 @@
 #name 128 "Released Power"
 #nextspell "Super Caster Transformation Water"
 #end
-
+
+
 #neweffect "Super Caster Transformation Water"
 #effect 54
 #damage 0
@@ -209,9 +202,8 @@
 #name 128 "Embodiment of Water"
 #nextspell "Super Caster Remove Fatigue"
 #end
-
----
-
+
+
 #neweffect "Become Super Caster Air"
 #effect 23
 #damage 274877980677
@@ -247,7 +239,8 @@
 #nextspell "Super Caster Explosion Air"
 
 #end
-
+
+
 #neweffect "Super Caster Explosion Air"
 #effect 2
 #damage 999
@@ -268,7 +261,8 @@
 #name 128 "Released Power"
 #nextspell "Super Caster Transformation Air"
 #end
-
+
+
 #neweffect "Super Caster Transformation Air"
 #effect 54
 #damage 0
@@ -289,12 +283,9 @@
 #name 128 "Embodiment of Storms"
 #nextspell "Super Caster Remove Fatigue"
 #end
-
----
-
-
-
-#neweffect "Become Super Caster Earth"
+
+
+#neweffect "Become Super Caster Earth"
 #effect 23
 #damage 274877911045
 #spec 16384
@@ -329,7 +320,8 @@
 #nextspell "Super Caster Explosion Earth"
 
 #end
-
+
+
 #neweffect "Super Caster Explosion Earth"
 #effect 2
 #damage 999
@@ -350,7 +342,8 @@
 #name 128 "Released Power"
 #nextspell "Super Caster Transformation Earth"
 #end
-
+
+
 #neweffect "Super Caster Transformation Earth"
 #effect 54
 #damage 0
@@ -371,3 +364,5 @@
 #name 128 "Embodiment of Earth"
 #nextspell "Super Caster Remove Fatigue"
 #end
+
+

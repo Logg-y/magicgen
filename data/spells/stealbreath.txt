@@ -17,7 +17,7 @@
 #pathlevel 1
 #explspr 10265
 #sound 52
-#fatiguecost 5
+#fatiguecost 10
 #precision 100
 #range 5020
 
@@ -34,7 +34,8 @@
 #namecond effect > 1000 2 "NAMEPREFIX breathtaking $mist$"
 
 #end
-
+
+
 #neweffect "Battlefield Stealbreath"
 #scalingset "evo"
 #effect 3
@@ -69,5 +70,5 @@
 #namecond effect > 1000 2 "NAMEPREFIX breathtaking $mist$"
 
 #end
-
-
+
+

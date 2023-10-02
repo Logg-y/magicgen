@@ -27,7 +27,7 @@
 #nameprefix "Shrinking"
 #fatiguepersquare 6
 
-#scalingaoelimit 1.5
+#scalingaoelimit 0.7
 
 
 #nextspell "Shrink Secondary mrnh"
@@ -65,7 +65,7 @@
 #nameprefix "Shrinking"
 #fatiguepersquare 3
 
-#scalingaoelimit 2.0
+#scalingaoelimit 1.0
 
 
 #nextspell "Shrink Secondary mrn"

@@ -1,9 +1,10 @@
 #neweffect "Summon khalkotauros"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3171
 #spec 0
-#power 6
+#power 7
 #maxpower 14
 #precision -2
 #nreff 1
@@ -25,10 +26,13 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "khalkotauros ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3171
 #spec 0
@@ -36,7 +40,7 @@
 #maxpower 20
 #nreff 1
 #pathlevel 4
-#fatiguecost 420
+#fatiguecost 520
 #schools 8
 
 #paths 9
@@ -54,9 +58,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 520.0
 #end
-
-
+
+
+
+
 #neweffect "khalkotauros Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon khalkotauros"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3171
@@ -117,5 +128,8 @@
 
 
 #end
-
-
+
+
+
+
+

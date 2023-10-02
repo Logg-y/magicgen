@@ -20,8 +20,8 @@
 #name 64 "Grasping Plants"
 #name 128 "Grasping Plants"
 #end
-
-
+
+
 #neweffect "Roots of Wrath"
 #scalingset "evo"
 #nextspell "Roots of Wrath Entangle"
@@ -58,8 +58,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Roots of Wrath Gemless"
 #scalingset "evo"
 #nextspell "Roots of Wrath Entangle"
@@ -97,10 +97,5 @@
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end
-
-
-
-
-
-
-
+
+

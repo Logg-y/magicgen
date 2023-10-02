@@ -23,6 +23,7 @@
 -- all	cast any spells offscript
 
 #neweffect "Permanent effect true ethereal"
+#scalingset "permanenteffect"
 #effect 10524
 #damage 260
 #spec 8388608
@@ -80,9 +81,12 @@
 #spelltype 4
 
 
+#scalingset ""
+#fatigueperresearch 200
 #end
 
 #neweffect "Permanent effect petrify attackers"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 104
 #spec 8388608
@@ -169,6 +173,8 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#scalingset "permanenteffect"
+#pathperresearch 0.4
 #end
 
 #neweffect "Permanent effect wish strength bonus dummy"
@@ -203,10 +209,13 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 250
 #end
 
 
 #neweffect "Permanent effect all plane returning"
+#scalingset "permanenteffect"
 #effect 10569
 #damage 435
 #spec 8388608
@@ -236,11 +245,12 @@
 #end
 
 #neweffect "Permanent effect gold maker"
+#scalingset "permanenteffect"
 #effect 10509
 #damage 452
 #spec 8388608
 #power 4
-#maxpower 8
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 800
@@ -268,14 +278,16 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 220
 #end
 
 #neweffect "Permanent effect fast casting"
+#scalingset "permanenteffect"
 #effect 10509
 #damage 613
 #spec 8388608
 #power 4
-#maxpower 8
+#maxpower 9
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
@@ -318,7 +330,7 @@
 #damage 0
 #spec 8388608
 #power 4
-#maxpower 8
+#maxpower 9
 #nreff 1
 #pathlevel 3
 #fatiguecost 500
@@ -356,13 +368,16 @@
 #spelltype 4
 #nextspell "Permanent effect fast casting"
 
+#scalingset ""
+#fatigueperresearch 300
 #end
 
 #neweffect "Permanent effect inspirational"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 368
 #spec 8388608
-#power 4
+#power 2
 #maxpower 9
 #nreff 1
 #pathlevel 3
@@ -392,7 +407,7 @@
 #effect 10131
 #damage 0
 #spec 8388608
-#power 4
+#power 2
 #maxpower 9
 #nreff 1
 #pathlevel 3
@@ -416,13 +431,16 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 100
 #end
 
 #neweffect "Permanent effect beastmaster"
-#effect 10500
+#scalingset "permanenteffect"
+#effect 10501
 #damage 369
 #spec 8388608
-#power 4
+#power 1
 #maxpower 9
 #nreff 1
 #pathlevel 3
@@ -452,7 +470,7 @@
 #effect 10131
 #damage 0
 #spec 8388608
-#power 4
+#power 1
 #maxpower 9
 #nreff 1
 #pathlevel 3
@@ -476,14 +494,17 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 60
 #end
 
 #neweffect "Permanent effect autohealer"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 354
 #spec 8388608
 #power 5
-#maxpower 8
+#maxpower 9
 #nreff 1
 #pathlevel 3
 #fatiguecost 1800
@@ -506,14 +527,16 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 100
 #end
 
 #neweffect "Permanent effect afflictionchanceboost"
+#scalingset "permanenteffect"
 #effect 10599
 #damage 301
 #spec 8388608
-#power 4
-#maxpower 4
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
@@ -544,8 +567,8 @@
 #effect 10131
 #damage 0
 #spec 8388608
-#power 4
-#maxpower 4
+#power 3
+#maxpower 3
 #nreff 1
 #pathlevel 2
 #fatiguecost 200
@@ -573,11 +596,12 @@
 #end
 
 #neweffect "Permanent effect reanimate on kill"
-#effect 10599
+#scalingset "permanenteffect"
+#effect 10524
 #damage 514
 #spec 8388608
-#power 5
-#maxpower 5
+#power 1
+#maxpower 6
 #nreff 1
 #pathlevel 2
 #fatiguecost 800
@@ -593,10 +617,11 @@
 #details "Creatures killed by the caster become reanimated as soulless. This is a permanent effect and multiple castings of this spell are not cumulative."
 
 
-#skipchance 90
+#skipchance 80
 -- ritual
 #spelltype 4
 
+#pathperresearch 0.4
 #end
 
 #neweffect "Permanent effect reanimate on kill dummy"
@@ -604,11 +629,11 @@
 #effect 10131
 #damage 0
 #spec 8388608
-#power 5
-#maxpower 5
+#power 1
+#maxpower 6
 #nreff 1
 #pathlevel 2
-#fatiguecost 800
+#fatiguecost 600
 #schools 18
 
 
@@ -618,23 +643,26 @@
 
 #name 32 "Raise the Slain"
 #descr 32 "Through the consumption of magical gems, the recipient permanently gains an understanding of how to raise living beings he kills as soulless."
-#details "Creatures killed by the recipient become reanimated as soulless. This does not offer the recipient any ability to command the undead, which may cause any raised soulless to rapidly crumble. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+#details "NEXTSPELL_EFFECTNUMBER_5XX percent of creatures killed by the recipient become reanimated as soulless, if they have a soulless form. This does not offer the recipient any ability to command the undead, which may cause any raised soulless to rapidly crumble. This is a permanent effect and multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#skipchance 50
+#skipchance 40
 #permanentslotusage 514
 
 -- ritual
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 100
 #end
 
 #neweffect "Permanent effect reinvigoration"
+#scalingset "permanenteffect"
 #effect 10504
 #damage 117
 #spec 8388608
-#power 5
-#maxpower 15
+#power 4
+#maxpower 13
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
@@ -659,9 +687,11 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 150
 #end
 
 #neweffect "Permanent effect astral fetters"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 563
 #spec 8388608
@@ -690,6 +720,7 @@
 #end
 
 #neweffect "Permanent effect recuperation"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 568
 #spec 8388608
@@ -721,11 +752,12 @@
 
 
 #neweffect "Permanent effect passive reanimator"
-#effect 10509
+#scalingset "permanenteffect"
+#effect 10514
 #damage 466
 #spec 8388608
 #power 4
-#maxpower 7
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
@@ -748,9 +780,11 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 150
 #end
 
 #neweffect "Permanent effect storm immunity"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 175
 #spec 8388608
@@ -779,6 +813,7 @@
 #end
 
 #neweffect "Permanent effect gift of water breathing"
+#scalingset "permanenteffect"
 #effect 10599
 #damage 111
 #spec 8388608
@@ -813,6 +848,7 @@
 
 
 #neweffect "Permanent effect gift of air breathing"
+#scalingset "permanenteffect"
 #effect 10599
 #damage 130
 #spec 8388608
@@ -844,6 +880,7 @@
 
 
 #neweffect "Permanent effect siege bonus"
+#scalingset "permanenteffect"
 #effect 10519
 #damage 125
 #spec 8388608
@@ -871,9 +908,11 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 80
 #end
 
 #neweffect "Permanent effect mason"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 594
 #spec 8388608
@@ -894,7 +933,7 @@
 #details "The caster permanently becomes a Mason."
 
 
-#skipchance 80
+#skipchance 70
 #permanentslotusage 594
 
 #spelltype 4
@@ -902,6 +941,7 @@
 #end
 
 #neweffect "Permanent effect disbelieve"
+#scalingset "permanenteffect"
 #effect 10599
 #damage 295
 #spec 8388608
@@ -930,11 +970,12 @@
 #end
 
 #neweffect "Permanent effect extra arms"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 361
 #spec 8388608
 #power 5
-#maxpower 7
+#maxpower 10
 #nreff 1
 #pathlevel 2
 #fatiguecost 1100
@@ -979,6 +1020,7 @@
 -- ritual, power scales effect number!
 #spelltype 260
 
+#fatigueperresearch 300
 #end
 
 #neweffect "Offscript Spells Horror Marks"
@@ -1003,6 +1045,7 @@
 
 
 #neweffect "Permanent effect all spells offscript"
+#scalingset "permanenteffect"
 #effect 10508
 #damage 388
 #spec 8388608
@@ -1050,6 +1093,7 @@
 
 
 #neweffect "Permanent effect blood surge"
+#scalingset "permanenteffect"
 #effect 10502
 #damage 554
 #spec 0
@@ -1068,7 +1112,7 @@
 
 #name 128 "Pact of Bloodlust"
 #descr 128 "$BLOOD_INTRO$, the caster experiences a surge of energy upon spilling the blood of his foes."
-#details "The caster pemanently gains EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to reinvigoration and defence skill. Multiple castings of this spell are not cumulative."
+#details "The caster pemanently gains EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to Defence skill and Reinvigoration. Multiple castings of this spell are not cumulative."
 
 
 #skipchance 92
@@ -1098,7 +1142,7 @@
 
 #name 128 "Pact of Bloodlust"
 #descr 128 "$BLOOD_INTRO$, the recipient experiences a surge of energy upon spilling the blood of his foes."
-#details "The recipient pemanently gains NEXTSPELL_EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are NEXTSPELL_EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to reinvigoration and defence skill. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+#details "The recipient pemanently gains NEXTSPELL_EFFECTNUMBER_5XX points of blood surge bonus. As with typical blood surge effects, this is applied after killing a living victim and has a 20% chance to end every round. The bonuses applied are NEXTSPELL_EFFECTNUMBER_5XX to Strength and Attack skill, and half this (rounded down) to Reinvigoration and Defence skill. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
 #skipchance 92
@@ -1107,15 +1151,18 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 250
 #end
 
 
 #neweffect "Permanent effect frost weapons"
-#effect 10517
+#scalingset "permanenteffect"
+#effect 10508
 #damage 549
 #spec 0
 #power 3
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -1146,7 +1193,7 @@
 #damage 0
 #spec 0
 #power 3
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -1169,15 +1216,18 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 70
 #end
 
 
 #neweffect "Permanent effect fateweaving"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 601
 #spec 0
 #power 4
-#maxpower 7
+#maxpower 8
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
@@ -1208,7 +1258,7 @@
 #damage 0
 #spec 0
 #power 4
-#maxpower 7
+#maxpower 8
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
@@ -1223,22 +1273,25 @@
 
 #name 16 "Ward of Misfortune"
 #descr 16 "The recipient of this spell is constantly surrounded by strange energy that causes those attacking in melee to become extremely unlucky in combat."
-#details "The recipient gains fateweaving, with a base penetration bonus of NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
+#details "The recipient gains Fateweaving, with a base penetration bonus of NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#skipchance 92
+#skipchance 60
 
 -- ritual, power scales effect number!
 #spelltype 4
+#scalingset ""
+#fatigueperresearch 100
 #end
 
 
 
 #neweffect "Permanent effect deathweapons"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 540
 #spec 0
-#power 5
+#power 1
 #maxpower 13
 #nreff 1
 #pathlevel 2
@@ -1269,7 +1322,7 @@
 #effect 10131
 #damage 0
 #spec 0
-#power 5
+#power 1
 #maxpower 13
 #nreff 1
 #pathlevel 2
@@ -1293,10 +1346,13 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 20
 #end
 
 
 #neweffect "Permanent effect witherweapons"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 539
 #spec 0
@@ -1360,7 +1416,8 @@
 
 
 #neweffect "Permanent effect fireshield"
-#effect 10507
+#scalingset "permanenteffect"
+#effect 10503
 #damage 652
 #spec 0
 #power 3
@@ -1398,7 +1455,7 @@
 #maxpower 11
 #nreff 1
 #pathlevel 2
-#fatiguecost 800
+#fatiguecost 400
 
 #schools 16
 
@@ -1419,15 +1476,18 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 250
 #end
 
 
 #neweffect "Permanent effect flamingweapons"
-#effect 10510
+#scalingset "permanenteffect"
+#effect 10505
 #damage 545
 #spec 0
 #power 3
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -1458,7 +1518,7 @@
 #damage 0
 #spec 0
 #power 3
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -1482,14 +1542,17 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 70
 #end
 
 #neweffect "Permanent effect astralshield"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 321
 #spec 0
 #power 6
-#maxpower 11
+#maxpower 6
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
@@ -1520,10 +1583,10 @@
 #damage 0
 #spec 0
 #power 6
-#maxpower 11
+#maxpower 6
 #nreff 1
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 800
 
 #schools 16
 
@@ -1539,7 +1602,7 @@
 #details "The recipient permanently gains an astral shield that inflicts 11 + NEXTSPELL_EFFECTNUMBER_5XX - (attacker's weapon length * 2) paralysis damage. Attackers are allowed a MR check to avoid the paralysis. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#skipchance 92
+#skipchance 80
 
 -- ritual, power scales effect number!
 #spelltype 4
@@ -1548,6 +1611,7 @@
 
 
 #neweffect "Permanent effect sleepaura"
+#scalingset "permanenteffect"
 #effect 10504
 #damage 306
 #spec 0
@@ -1569,7 +1633,7 @@
 #details "The recipient permanently gains sleep aura EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#skipchance 92
+#skipchance 80
 
 -- ritual, power scales effect number!
 #spelltype 260
@@ -1602,7 +1666,7 @@
 #details "The recipient permanently gains sleep aura NEXTSPELL_EFFECTNUMBER_5XX. Multiple castings of this spell are not cumulative. Recipients of this spell must be commanders."
 
 
-#skipchance 92
+#skipchance 80
 
 -- ritual, power scales effect number!
 #spelltype 4
@@ -1611,10 +1675,11 @@
 
 
 #neweffect "Permanent effect reforming"
+#scalingset "permanenteffect"
 #effect 10549
 #damage 337
 #spec 0
-#power 3
+#power 7
 #maxpower 9
 #nreff 1
 #pathlevel 2
@@ -1645,11 +1710,11 @@
 #effect 10131
 #damage 0
 #spec 0
-#power 3
+#power 7
 #maxpower 9
 #nreff 1
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 800
 
 #schools 32
 
@@ -1666,19 +1731,22 @@
 
 
 
-#skipchance 92
+#skipchance 80
 
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 1000
 #end
 
 #neweffect "Permanent effect protforce"
-#effect 10514
+#scalingset "permanenteffect"
+#effect 10507
 #damage 383
 #spec 8388608
 #power 2
-#maxpower 4
+#maxpower 6
 #nreff 1
 #pathlevel 2
 #fatiguecost 500
@@ -1713,10 +1781,10 @@
 #damage 0
 #spec 8388608
 #power 2
-#maxpower 4
+#maxpower 6
 #nreff 1
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 400
 
 #schools 16
 
@@ -1737,19 +1805,22 @@
 
 
 
-#skipchance 92
+#skipchance 87
 
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 100
 #end
 
 #neweffect "Permanent effect awe"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 105
 #spec 8388608
 #power 4
-#maxpower 17
+#maxpower 12
 #nreff 1
 #pathlevel 2
 #fatiguecost 400
@@ -1780,10 +1851,10 @@
 #damage 0
 #spec 8388608
 #power 4
-#maxpower 17
+#maxpower 12
 #nreff 1
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 600
 
 #schools 16
 
@@ -1800,21 +1871,24 @@
 
 
 
-#skipchance 92
+#skipchance 87
 
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 70
 #end
 
 
 
 #neweffect "Permanent effect acidshield"
-#effect 10508
+#scalingset "permanenteffect"
+#effect 10505
 #damage 497
 #spec 8388608
 #power 4
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
 #fatiguecost 1000
@@ -1847,10 +1921,10 @@
 #damage 0
 #spec 8388608
 #power 4
-#maxpower 13
+#maxpower 9
 #nreff 1
 #pathlevel 2
-#fatiguecost 1000
+#fatiguecost 700
 
 #schools 16
 
@@ -1874,6 +1948,8 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 240
 #end
 
 
@@ -1881,6 +1957,7 @@
 
 
 #neweffect "Permanent effect slimer"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 412
 #spec 8388608
@@ -1946,11 +2023,12 @@
 
 
 #neweffect "Permanent effect banefireshield"
-#effect 10507
+#scalingset "permanenteffect"
+#effect 10504
 #damage 222
 #spec 8388608
 #power 5
-#maxpower 17
+#maxpower 12
 #nreff 1
 #pathlevel 3
 #fatiguecost 1000
@@ -1983,10 +2061,10 @@
 #damage 0
 #spec 8388608
 #power 5
-#maxpower 17
+#maxpower 12
 #nreff 1
 #pathlevel 3
-#fatiguecost 1000
+#fatiguecost 800
 
 #schools 16
 
@@ -2011,11 +2089,14 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 90
 #end
 
 
 
 #neweffect "Permanent effect thunderweapons"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 546
 #spec 8388608
@@ -2072,7 +2153,7 @@
 
 
 
-#skipchance 92
+#skipchance 86
 
 -- ritual, power scales effect number!
 #spelltype 4
@@ -2083,11 +2164,12 @@
 
 
 #neweffect "Permanent effect poisonweapons"
+#scalingset "permanenteffect"
 #effect 10514
 #damage 538
 #spec 8388608
 #power 1
-#maxpower 8
+#maxpower 5
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -2119,7 +2201,7 @@
 #damage 0
 #spec 8388608
 #power 1
-#maxpower 8
+#maxpower 5
 #nreff 1
 #pathlevel 2
 #fatiguecost 100
@@ -2146,12 +2228,15 @@
 -- ritual, power scales effect number!
 #spelltype 4
 
+#scalingset ""
+#fatigueperresearch 49
 #end
 
 
 
 
 #neweffect "Permanent effect vineshield"
+#scalingset "permanenteffect"
 #effect 10500
 #damage 128
 #spec 8388608
@@ -2215,6 +2300,7 @@
 
 
 #neweffect "Permanent effect regen"
+#scalingset "permanenteffect"
 #effect 10509
 #damage 462
 #spec 8388608
@@ -2279,4 +2365,50 @@
 #spelltype 4
 
 #end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

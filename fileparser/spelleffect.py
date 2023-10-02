@@ -7,9 +7,9 @@ from Exceptions.ParseError import ParseError
 from Services import utils
 from Services import fileparserutils
 
-simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "siegepatrolchaff", "fixeddurationenchantment", "fatigueperresearch", "nocostreduction", "noresearchreduction"]
-simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit", "scalingset"]
-simple_params_float = ["pathperresearch", "scalefatiguemult", "skipchance"]
+simple_params_int = ["effect", "damage", "spec", "schools", "paths", "spelltype", "aoe", "power", "range", "precision", "nreff", "pathlevel", "fatiguecost", "flightspr", "explspr", "paths", "secondarypaths","maxpower","sound","maxbounces","casttime", "provrange", "secondarypathchance", "nogeodst", "onlygeodst", "ainocast", "onlyfriendlydst", "nolandtrace", "onlygeosrc", "skipflightspr", "skipexplspr", "chassisvalue", "unique", "alwaysgenerate", "donotsetextraspellpath", "aispellmod", "banishment", "holyword", "smitedemon", "smite", "noadditionalnextspells", "basescale", "secondaryeffectskipchance", "permanentslotusage", "friendlyench", "hiddenench", "badaispell", "siegepatrolchaff", "fixeddurationenchantment", "fatigueperresearch", "nocostreduction", "noresearchreduction", "stopatfieldwide", "stopatnreff"]
+simple_params_str = ["nextspell", "details","copyspell", "extraspell", "eventset", "newunit", "scalingset", "fieldwidecontinuation"]
+simple_params_float = ["pathperresearch", "scalefatiguemult", "skipchance", "fatigueperextraeffect"]
 
 
 def readEffectFile(fp):

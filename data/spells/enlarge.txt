@@ -1,4 +1,6 @@
 #neweffect "Enlargement"
+#scalingset "buff"
+
 #effect 10
 #damage 2147483648
 #spec 8404992
@@ -8,7 +10,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 1
@@ -17,7 +19,7 @@
 #explspr 10184
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 15
 #skipchance 50
 
 
@@ -44,7 +46,13 @@
 
 #end
 
+
+
+
 #neweffect "Enlargement Battlefield"
+#fieldwidecontinuation "Enlargement"
+#scalingset "buff"
+
 #effect 10
 #damage 2147483648
 #spec 8404992
@@ -56,7 +64,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 666
 #power 7
@@ -88,7 +96,12 @@
 
 #end
 
+
+
+
 #neweffect "Enlargement Greater"
+#scalingset "buff"
+
 #effect 10
 #damage 1101659111424
 #spec 8404992
@@ -98,7 +111,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #aoe 0
 #power 4
@@ -132,7 +145,10 @@
 #end
 
 
+
+
 #neweffect "Trample Self"
+
 #effect 23
 #damage 64
 #spec 8404992
@@ -142,21 +158,25 @@
 
 #power 6
 #name 64 "Juggernaut's Confidence"
-#spelltype 41
+#spelltype 9
 
 #end
 
+
+
+
 #neweffect "Greater Enlargement and Trample"
+
 #effect 10
 #damage 1101659111424
 #spec 8404992
 #schools 2
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 9
 
 
--- 
+--
 
 #aoe 0
 #power 6
@@ -183,3 +203,7 @@
 
 
 #end
+
+
+
+

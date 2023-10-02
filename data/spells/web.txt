@@ -41,8 +41,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Web Instant"
 #scalingset "disabling"
 #effect 11
@@ -83,7 +83,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Web Instant Battlefield"
 #effect 11
 #damage 536870912
@@ -118,8 +119,8 @@
 
 #scalingset ""
 #end
-
-
+
+
 #neweffect "Web Instant Hostile Only"
 #effect 11
 #damage 536870912
@@ -154,10 +155,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
+
+

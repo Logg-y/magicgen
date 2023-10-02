@@ -1,5 +1,6 @@
 #neweffect "cockatrice chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 466
 #spec 8388608
@@ -21,7 +22,8 @@
 
 
 #neweffect "chimera chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 487
 #spec 8388608
@@ -40,7 +42,8 @@
 
 
 #neweffect "ettin chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 488
 #spec 8388608
@@ -59,7 +62,8 @@
 
 
 #neweffect "large foulspawn chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 530
 #spec 8388608
@@ -78,7 +82,8 @@
 
 
 #neweffect "basilisk chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 636
 #spec 8388608
@@ -100,7 +105,8 @@
 
 
 #neweffect "dracolion chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 637
 #spec 8388608
@@ -119,7 +125,8 @@
 
 
 #neweffect "grotesque chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 659
 #spec 8388608
@@ -138,7 +145,8 @@
 
 
 #neweffect "foul beast chassis dummy"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 467
 #spec 8388608

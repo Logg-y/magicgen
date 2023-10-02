@@ -1,9 +1,10 @@
 #neweffect "Summon corpsecandle"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 528
 #spec 0
-#power 2
+#power 1
 #maxpower 13
 #precision -2
 #nreff 1
@@ -26,18 +27,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "corpsecandle ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 528
 #spec 0
 #power 3
-#maxpower 6
-#nreff 3
+#maxpower 10
+#nreff 25
 #pathlevel 2
-#fatiguecost 100
+#fatiguecost 1000
 #schools 1
 
 #paths 33
@@ -56,9 +60,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 40.0
 #end
-
-
+
+
+
+
 #neweffect "corpsecandle Remote Assassination"
 #effect 10050
 #provrange 4
@@ -85,9 +92,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon corpsecandle"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 528
@@ -118,5 +129,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon illearth2"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2284
 #spec 8388608
@@ -28,7 +29,8 @@
 
 
 #neweffect "illearth2 ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2284
 #spec 8388608
@@ -82,6 +84,7 @@
 
 
 #neweffect "Remote summon illearth2"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 2284

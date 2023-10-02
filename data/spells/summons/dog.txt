@@ -1,10 +1,11 @@
 #neweffect "Summon dog"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1560
 #spec 0
-#power 0
-#maxpower 10
+#power -2
+#maxpower 6
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "dog ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1560
 #spec 0
 #power -1
-#maxpower 3
-#nreff 5
+#maxpower 5
+#nreff 40
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -50,9 +54,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 25.0
 #end
-
-
+
+
+
+
 #neweffect "dog Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon dog"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1560
@@ -106,5 +117,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

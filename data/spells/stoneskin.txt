@@ -1,4 +1,6 @@
 #neweffect "Stoneskin"
+#scalingset "buff"
+
 #effect 10
 #damage 65536
 #spec 8404992
@@ -8,7 +10,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #aoe 0
@@ -18,7 +20,7 @@
 #explspr 10185
 #sound 31
 #range 10
-#fatiguecost 5
+#fatiguecost 15
 
 
 -- water, earth, death
@@ -52,7 +54,12 @@
 #end
 
 
+
+
 #neweffect "Stoneskin battlefield"
+#fieldwidecontinuation "Stoneskin"
+#scalingset "buff"
+
 #effect 10
 #damage 65536
 #spec 8404992
@@ -62,7 +69,7 @@
 #spelltype 41
 
 
--- 
+--
 
 
 #aoe 666
@@ -106,4 +113,8 @@
 
 
 #end
+
+
+
+
 

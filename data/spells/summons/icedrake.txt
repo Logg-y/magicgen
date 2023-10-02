@@ -1,5 +1,6 @@
 #neweffect "Summon icedrake"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 579
 #spec 0
@@ -29,7 +30,8 @@
 
 
 #neweffect "icedrake ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 579
 #spec 0
@@ -84,6 +86,7 @@
 
 
 #neweffect "Remote summon icedrake"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 579

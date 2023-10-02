@@ -1,5 +1,6 @@
 #neweffect "Summon manticore"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2130
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "manticore ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2130
 #spec 0
 #power 4
 #maxpower 8
-#nreff 1001
+#nreff 7
 #pathlevel 2
-#fatiguecost 500
+#fatiguecost 1000
 #schools 1
 
 #paths 64
@@ -48,9 +52,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 142.85714285714286
 #end
-
-
+
+
+
+
 #neweffect "manticore Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon manticore"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2130
@@ -104,5 +115,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

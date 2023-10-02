@@ -12,7 +12,8 @@
 #power 4
 #maxpower 50
 #end
-
+
+
 #neweffect "Astral Geyser"
 #scalingset "evo"
 #effect 600
@@ -44,7 +45,8 @@
 #schools 4
 
 #end
-
+
+
 #neweffect "Astral Geyser Multi"
 #scalingset "evo"
 #effect 600
@@ -79,6 +81,5 @@
 
 #pathperresearch 0.4
 #end
-
-
-
+
+

@@ -1,5 +1,6 @@
 #neweffect "Summon angel warrior"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 522
 #spec 0
@@ -27,18 +28,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "angel host ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 522
 #spec 0
 #power 5
 #maxpower 9
-#nreff 3
+#nreff 4
 #pathlevel 3
-#fatiguecost 710
+#fatiguecost 1000
 #schools 1
 
 #paths 16
@@ -54,9 +58,12 @@
 
 
 #details "Creatures summoned with this spell are not sacred."
+#fatigueperextraeffect 250.0
 #end
-
-
+
+
+
+
 #neweffect "angel host Remote Assassination"
 #effect 10050
 #provrange 4
@@ -82,9 +89,13 @@
 #details "Creatures summoned with this spell are not sacred."
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon angel host"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 522
@@ -114,5 +125,8 @@
 
 #details "Creatures summoned with this spell are not sacred."
 #end
-
-
+
+
+
+
+

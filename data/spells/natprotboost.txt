@@ -1,4 +1,6 @@
 #neweffect "Natprotboost Animals"
+#scalingset "buff"
+
 #effect 10
 #damage 70437463654400
 #spec 281474985115648
@@ -10,7 +12,7 @@
 
 
 #aoe 1
-#power 0
+#power -1
 #maxpower 5
 #pathlevel 1
 #explspr 10184
@@ -39,7 +41,13 @@
 
 #end
 
+
+
+
 #neweffect "Natprotboost Animals battlefield"
+#fieldwidecontinuation "Natprotboost Animals"
+#scalingset "buff"
+
 #effect 10
 #damage 70437463654400
 #spec 281474985115648
@@ -78,7 +86,11 @@
 #end
 
 
+
+
 #neweffect "Natprotboost Undead"
+#scalingset "buff"
+
 #effect 10
 #damage 70506183131136
 #spec 276840456
@@ -90,7 +102,7 @@
 
 
 #aoe 0
-#power 0
+#power -1
 #maxpower 5
 #pathlevel 1
 #explspr 10197
@@ -120,7 +132,12 @@
 #end
 
 
+
+
 #neweffect "Natprotboost Undead battlefield"
+#fieldwidecontinuation "Natprotboost Undead"
+#scalingset "buff"
+
 #effect 10
 #damage 70506183131136
 #spec 276840456
@@ -157,3 +174,9 @@
 #descr 32 "The bones or hides of undead in a SIZE area become thicker. This makes them more resilient to most types of damage."
 
 #end
+
+
+
+
+
+

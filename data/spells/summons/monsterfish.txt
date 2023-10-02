@@ -1,5 +1,6 @@
 #neweffect "Call monsterfish"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1664
 #spec 41959424
@@ -21,22 +22,25 @@
 
 #spelltype 528
 
--- 
+--
 #schools 1
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "monsterfish ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1664
 #spec 41959424
 #power 5
-#maxpower 14
-#nreff 1
+#maxpower 11
+#nreff 2
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 600
 #schools 1
 
 #paths 4
@@ -50,8 +54,10 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "monsterfish Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon monsterfish"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1664
@@ -105,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

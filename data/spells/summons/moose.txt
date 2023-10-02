@@ -1,10 +1,11 @@
 #neweffect "Call moose"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1084
 #spec 0
-#power 2
-#maxpower 14
+#power 1
+#maxpower 9
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -22,22 +23,25 @@
 
 #spelltype 528
 
--- 
+--
 #schools 1
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "Raise moose Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1084
 #spec 0
 #power 2
-#maxpower 5
-#nreff 2006
+#maxpower 8
+#nreff 18
 #pathlevel 2
-#fatiguecost 400
+#fatiguecost 800
 #schools 1
 
 #skipchance 97
@@ -50,9 +54,12 @@
 
 #spelltype 20
 #siegepatrolchaff 1
+#fatigueperextraeffect 44.44444444444444
 #end
-
-
+
+
+
+
 #neweffect "moose Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon moose"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 1084
@@ -106,5 +117,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

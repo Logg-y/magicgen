@@ -43,7 +43,8 @@
 
 #fatigueperresearch 0
 #end
-
+
+
 #neweffect "Blade Wind AP"
 #scalingset "evo"
 #effect 2
@@ -88,7 +89,8 @@
 
 
 #end
-
+
+
 #neweffect "Blade Wind AP Gemless"
 #scalingset "evo"
 #effect 2
@@ -133,8 +135,5 @@
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end
-
-
-
-
-
+
+

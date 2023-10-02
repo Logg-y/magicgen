@@ -1,4 +1,3 @@
-
 #neweffect "Cold Evo Projectile Gemless"
 #scalingset "evo"
 #effect 2
@@ -52,8 +51,8 @@
 
 #pathperresearch 0.2
 #end
-
-
+
+
 #neweffect "Cold Evo Instant Gemless"
 #scalingset "evo"
 #effect 2
@@ -103,7 +102,8 @@
 
 #pathperresearch 0.3
 #end
-
+
+
 #neweffect "Deep Freeze Gemless"
 #scalingset "evo"
 #effect 2
@@ -149,10 +149,5 @@
 #aispellmod 50
 #fatigueperresearch 0
 #end
-
-
-
-
-
-
-
+
+

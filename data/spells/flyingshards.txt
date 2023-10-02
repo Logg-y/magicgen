@@ -37,4 +37,5 @@
 #namecond range < 10 8 "NAMEPREFIX touch of shards"
 #fatigueperresearch 0
 #end
-
+
+

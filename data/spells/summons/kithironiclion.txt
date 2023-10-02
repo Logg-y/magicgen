@@ -1,5 +1,6 @@
 #neweffect "Summon kithironic lion"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 514
 #spec 0
@@ -24,18 +25,21 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "kithironic ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 514
 #spec 0
 #power 2
 #maxpower 7
-#nreff 5
+#nreff 7
 #pathlevel 2
-#fatiguecost 520
+#fatiguecost 720
 #schools 1
 
 #paths 64
@@ -49,9 +53,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 102.85714285714286
 #end
-
-
+
+
+
+
 #neweffect "kithironic Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon kithironic"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 514
@@ -105,5 +116,8 @@
 
 
 #end
-
-
+
+
+
+
+

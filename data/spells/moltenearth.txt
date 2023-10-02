@@ -12,8 +12,8 @@
 #maxpower 30
 #explspr 10283
 #end
-
-
+
+
 #neweffect "Molten Earth"
 #scalingset "evo"
 #effect 2002
@@ -54,8 +54,8 @@
 
 #pathperresearch 0.3
 #end
-
-
+
+
 #neweffect "Molten Earth Gemless"
 #scalingset "evo"
 #effect 2002
@@ -71,7 +71,7 @@
 #nextspell "Molten Earth Trap"
 #explspr 10194
 #sound 123
-#fatiguecost 10
+#fatiguecost 15
 
 #paths 1
 #secondarypaths 8
@@ -96,8 +96,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
-
+
+

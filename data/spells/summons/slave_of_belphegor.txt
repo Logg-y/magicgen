@@ -7,9 +7,9 @@
 #spec 0
 #power 2
 #maxpower 14
-#nreff 1003
+#nreff 15
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 1200
 #schools 1
 
 #paths 128
@@ -25,6 +25,7 @@
 
 
 
+#fatigueperextraeffect 80.0
 #end
 
 
@@ -60,6 +61,8 @@
 
 #neweffect "slave of belphegor remote"
 #newunit "Slave of Belphegor"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 303

@@ -5,7 +5,7 @@
 #spec 4224
 #aoe 0
 #power 3
-#maxpower 6
+#maxpower 14
 #precision 2
 
 
@@ -28,7 +28,7 @@
 #spelltype 18
 
 
--- 
+--
 #pathlevel 2
 #schools 4
 
@@ -38,18 +38,20 @@
 #end
 
 
+
+
 #neweffect "Fey Bolts Gemless"
 #scalingset "evo"
 #effect 3
 #damage 5025
 #spec 4224
 #aoe 0
-#power 0
+#power -3
 #maxpower 15
 #precision 2
 
 
-#nreff 1
+#nreff 2
 #range 5020
 #pathlevel 1
 #fatiguecost 5
@@ -68,7 +70,7 @@
 #spelltype 18
 
 
--- 
+--
 #pathlevel 1
 #schools 4
 
@@ -77,4 +79,9 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
+
+
+
+
 

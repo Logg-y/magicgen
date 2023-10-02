@@ -12,7 +12,11 @@
 
 #end
 
+
+
+
 #neweffect "Phoenix Pyre"
+
 #effect 23
 #damage 134217728
 #spec 16384
@@ -22,7 +26,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #nextspell "PPyre fire res"
 
@@ -60,7 +64,10 @@
 
 
 
+
 #neweffect "Phoenix Pyre others only"
+#scalingset "buff"
+
 #effect 23
 #damage 134217728
 #spec 16384
@@ -70,7 +77,7 @@
 #spelltype 41
 
 
--- 
+--
 
 #nextspell "PPyre fire res"
 
@@ -82,7 +89,7 @@
 #explspr 10034
 #sound 16
 #range 10
-#fatiguecost 20
+#fatiguecost 40
 
 #ainocast 1
 
@@ -107,4 +114,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of demonic immortality"
 
 #end
+
+
+
+
 

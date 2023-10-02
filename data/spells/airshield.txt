@@ -1,4 +1,6 @@
 #neweffect "Air Shield"
+#scalingset "buff"
+
 #effect 10
 #damage 8
 #spec 16384
@@ -10,13 +12,13 @@
 
 
 #aoe 0
-#power -1
+#power 0
 #maxpower 6
 #pathlevel 1
 #explspr 10224
 #sound 31
 #range 10
-#fatiguecost 5
+#fatiguecost 10
 
 #paths 130
 #secondarypaths 2
@@ -41,7 +43,13 @@
 #end
 
 
+
+
 #neweffect "Air Shield Battlefield"
+#scalingset "buff"
+
+#fieldwidecontinuation "Air Shield"
+
 #effect 10
 #damage 8
 #spec 16384
@@ -88,4 +96,8 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of missile shielding"
 
 #end
+
+
+
+
 

@@ -1,5 +1,6 @@
 #neweffect "summon clockworksoldier"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2321
 #spec 8388608
@@ -7,7 +8,7 @@
 #maxpower 10
 #precision -2
 #nreff 1
-#pathlevel 1
+#pathlevel 2
 #fatiguecost 22
 #explspr 10232
 #sound 31
@@ -21,21 +22,24 @@
 #descr 8 "The caster quickly forms ARTICLE clockwork %soldier% from metal. The clockwork %soldier% is difficult to destroy, but it will quickly run out of power and become motionless."
 #spelltype 528
 
--- 
+--
 #schools 8
 #end
-
-
+
+
+
+
 #neweffect "clockworksoldier Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2321
 #spec 8388608
 #power 1
-#maxpower 4
-#nreff 8
+#maxpower 8
+#nreff 15
 #pathlevel 2
-#fatiguecost 320
+#fatiguecost 1000
 #schools 8
 
 #skipchance 97
@@ -49,9 +53,12 @@
 
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 66.66666666666667
 #end
-
-
+
+
+
+
 #neweffect "clockworksoldier Remote Assassination"
 #effect 10050
 #provrange 4
@@ -76,9 +83,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon clockworksoldier"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2321
@@ -103,5 +114,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

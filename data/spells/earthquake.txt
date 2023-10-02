@@ -12,6 +12,9 @@
 #power 1
 #end
 
+
+
+
 #neweffect "Earthquake"
 #copyspell "Earthquake"
 #effect 2
@@ -42,7 +45,13 @@
 #spelltype 66
 
 
--- 
+--
 #schools 4
+#scalingset ""
+#fatigueperresearch 50
 #end
+
+
+
+
 

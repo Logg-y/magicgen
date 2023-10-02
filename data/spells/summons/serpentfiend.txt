@@ -1,5 +1,6 @@
 #neweffect "Summon serpentfiend"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 526
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "serpentfiend ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 526
 #spec 0
 #power 2
 #maxpower 14
-#nreff 1
+#nreff 4
 #pathlevel 2
-#fatiguecost 200
+#fatiguecost 1200
 #schools 1
 
 #paths 128
@@ -48,9 +52,12 @@
 #skipchance 50
 
 
+#fatigueperextraeffect 300.0
 #end
-
-
+
+
+
+
 #neweffect "serpentfiend Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote serpentfiends"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 526
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

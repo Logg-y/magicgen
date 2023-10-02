@@ -1,4 +1,6 @@
 #neweffect "Returning"
+#scalingset "buff"
+
 #effect 15
 #damage 1
 #spec 12599424
@@ -8,19 +10,21 @@
 #spelltype 41
 
 
--- 
+--
 
-#aoe 0
+#aoe 5
 #power 2
 #pathlevel 2
-#maxpower 7
+#maxpower 5
 #explspr 10159
 #sound 1
-#fatiguecost 200
+#fatiguecost 100
 #range 0
 
 #paths sb
 #secondarypaths 16
+
+#ainocast 1
 
 #namecond effectiveaoe == 0 16 "NAMEPREFIX Returning"
 #namecond effectiveaoe == 1 16 "NAMEPREFIX Teleportation"
@@ -42,8 +46,60 @@
 
 #end
 
+#neweffect "Returning Self Only"
+
+#effect 15
+#damage 1
+#spec 12599424
+#schools 32
+
+-- buff, battlefield allowed, scale aoe
+#spelltype 41
+
+
+--
+
+#aoe 0
+#power 2
+#pathlevel 2
+#maxpower 2
+#explspr 10159
+#sound 1
+#fatiguecost 100
+#range 0
+
+#paths sb
+#secondarypaths 16
+
+#ainocast 1
+
+#namecond effectiveaoe == 0 16 "NAMEPREFIX Returning"
+#namecond effectiveaoe == 1 16 "NAMEPREFIX Teleportation"
+#namecond effectiveaoe <= 0 b "NAMEPREFIX Infernal Paths"
+
+#namecond2 1 <= effectiveaoe < 40 16 "NAMEPREFIX Group Teleportation"
+#namecond2 1 <= effectiveaoe < 40 b "NAMEPREFIX Infernal Expedition"
+#namecond effectiveaoe > 600 16 "NAMEPREFIX Vortex of Returning"
+#namecond effectiveaoe > 600 b "NAMEPREFIX Vortex to Inferno"
+
+#descr b "$BLOOD_INTRO$, the caster opens a portal to the infernal realms, though which SUBJECT attempts to travel home safely. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
+#descr 16 "SUBJECT is rapidly teleported to the capital fort through a rift in space. Whilst travel should be instantaneous, there is a chance that any creature brought along will become lost in the Void. Being lost will result in attacks from otherworldly creatures, and possibly insanity. If the capital's fortress is controlled by an enemy, this results in certain death. This spell affects only friendly units."
+#details "The chance of being lost in the void is 7%."
+
+#priority 1
+#namecond effect > 1000 16 "NAMEPREFIX $mist$ of returning"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of returning"
+
+
+#end
+
+
+
+
 #neweffect "Returning Offensive"
 #scalingset "evo"
+#scalingset "buff"
+
 #effect 15
 #damage 1
 #spec 17592194711680
@@ -53,7 +109,7 @@
 #spelltype 42
 
 
--- 
+--
 #range 5020
 
 #aoe 4
@@ -81,8 +137,13 @@
 
 #end
 
+
+
+
 #neweffect "Returning Offensive Gemless"
 #scalingset "evo"
+#scalingset "buff"
+
 #effect 15
 #damage 1
 #spec 17592194711680
@@ -92,7 +153,7 @@
 #spelltype 42
 
 
--- 
+--
 #range 5020
 
 #aoe 0
@@ -101,7 +162,7 @@
 #pathlevel 3
 #explspr 10251
 #sound 28
-#fatiguecost 10
+#fatiguecost 20
 
 #paths 16
 #secondarypaths 16
@@ -118,10 +179,10 @@
 
 
 
-#fatigueperresearch 0
 
-#pathperresearch 0.2
 #end
+
+
 
 
 

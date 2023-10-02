@@ -17,7 +17,7 @@
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 30
+#fatiguecost 40
 #precision 3
 #range 35
 
@@ -36,7 +36,8 @@
 
 
 #end
-
+
+
 #neweffect "Blood Freeze"
 #scalingset "evo"
 #effect 2
@@ -56,7 +57,7 @@
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 30
+#fatiguecost 40
 #precision 3
 #range 35
 
@@ -74,7 +75,8 @@
 #namecond range < 10 128 "NAMEPREFIX Touch of Freezing blood"
 #descrcond range < 10 128 "The caster's touch causes the victims' blood to freeze. Those that fail to resist its effects suffer severe damage."
 #end
-
+
+
 #neweffect "Blood Shock"
 #scalingset "evo"
 #effect 2
@@ -94,7 +96,7 @@
 #pathlevel 2
 #explspr 10255
 #sound 31
-#fatiguecost 30
+#fatiguecost 40
 #precision 3
 #range 35
 
@@ -110,4 +112,5 @@
 #priority 1
 #namecond range < 10 128 "NAMEPREFIX Touch of Charged blood"
 #descrcond range < 10 128 "The caster's touch causes the victims' blood to become charged with electricity. Those that fail to resist its effects suffer severe damage."
-#end
+#end
+

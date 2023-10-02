@@ -39,9 +39,8 @@
 
 
 #end
-
-
-
+
+
 #neweffect "Battlefield Shrinkage"
 #effect 11
 #damage 4294967296
@@ -80,6 +79,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of shrinkage"
 #scalingset ""
 #end
-
-
-
+
+

@@ -2,7 +2,18 @@
 NOTE TO SELF: USE THE GDOC FOR TODO LIST
 ===============================================================================================
 
+
 To test:
+
+
+v3.1.11
+
+Redid scaling so most things aren't quadratic any more, but instead use an exponential that's much more easily configured and gets less extreme.
+Nerfed many offensive field wide effects.
+Fixed an oversight which caused spells with "foreign" secondary effects (those where the spell's normal effect and the secondary's path preferences have no overlap) to to never generate at all, regardless of the generation setting.
+Nerfed certain offensive fast casting modifiers.
+Increased the default foreign secondary effect chances from 10 to 15%.
+
 
 v3.1.10
 

@@ -1,9 +1,10 @@
 #neweffect "SummonVile thing"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 8388608
-#power 3
+#power 2
 #maxpower 14
 #precision -2
 #nreff 1
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Vile thing ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 8388608
 #power 3
-#maxpower 6
-#nreff 1006
+#maxpower 9
+#nreff 14
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 600
 #schools 1
 
 #paths 16
@@ -55,9 +59,12 @@
 #newunit "Vile Thing"
 
 #siegepatrolchaff 1
+#fatigueperextraeffect 42.857142857142854
 #end
-
-
+
+
+
+
 #neweffect "Vile thing Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remoteVile thing"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 628
@@ -113,5 +124,8 @@
 
 
 #end
-
-
+
+
+
+
+

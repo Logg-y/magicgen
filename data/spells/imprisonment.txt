@@ -12,6 +12,8 @@
 #end
 
 
+
+
 #neweffect "Imprisonment Kill Living"
 #effect 2
 #damage 999
@@ -27,6 +29,8 @@
 #end
 
 
+
+
 #neweffect "Imprisonment"
 #scalingset "evo"
 #effect 109
@@ -39,7 +43,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 3
 #power 5
@@ -65,6 +69,9 @@
 
 #end
 
+
+
+
 #neweffect "Imprisonment Gemless"
 #scalingset "evo"
 #effect 109
@@ -77,7 +84,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 0
 #power 5
@@ -85,7 +92,7 @@
 #pathlevel 3
 #explspr 10279
 #sound 45
-#fatiguecost 15
+#fatiguecost 20
 #precision 100
 #range 100
 
@@ -109,7 +116,6 @@
 
 
 
-
 #neweffect "Imprisonment Battlefield"
 #effect 109
 #damage 999
@@ -121,7 +127,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 666
 #power 9
@@ -144,6 +150,8 @@
 
 #scalingset ""
 #end
+
+
 
 
 

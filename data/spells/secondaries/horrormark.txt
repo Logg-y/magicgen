@@ -27,7 +27,7 @@
 #nameprefix "Baleful"
 #nameprefix "Malicious"
 #fatiguepersquare 2
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 #req damage != 261
 

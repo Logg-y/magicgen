@@ -13,8 +13,8 @@
 #name 8 "Grip of the Earth"
 #name b "Grip of the Earth"
 #end
-
-
+
+
 #neweffect "Maws of the Earth"
 #scalingset "evo"
 #effect 2
@@ -53,8 +53,8 @@
 #schools alt
 
 #end
-
-
+
+
 #neweffect "Maws of the Earth Gemless"
 #scalingset "evo"
 #effect 2
@@ -95,3 +95,5 @@
 #fatigueperresearch 0
 #pathperresearch 0.2
 #end
+
+

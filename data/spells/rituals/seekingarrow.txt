@@ -22,4 +22,6 @@
 #spelltype 68
 
 
+#scalingset ""
+#pathperresearch 0.4
 #end

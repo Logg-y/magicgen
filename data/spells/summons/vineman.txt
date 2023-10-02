@@ -1,9 +1,10 @@
 #neweffect "Summon vineman"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 361
 #spec 8388608
-#power 1
+#power -1
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -24,17 +25,20 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "vineman ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 361
 #spec 8388608
 #power 0
-#nreff 3005
+#nreff 20
 #pathlevel 1
-#fatiguecost 200
+#fatiguecost 600
 #schools 16
 
 #paths 64
@@ -48,11 +52,14 @@
 #spelltype 20
 
 
-#maxpower 3
+#maxpower 6
 #siegepatrolchaff 1
+#fatigueperextraeffect 30.0
 #end
-
-
+
+
+
+
 #neweffect "vineman Remote Assassination"
 #effect 10050
 #provrange 4
@@ -75,9 +82,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon vinemen"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 361
@@ -104,5 +115,8 @@
 
 
 #end
-
-
+
+
+
+
+

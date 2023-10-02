@@ -28,7 +28,7 @@
 -- not demons/undead only
 #req spec !& 8
 
-#scalingaoelimit 1.2
+#scalingaoelimit 0.7
 
 #nextspell "Minor Confusion mrnh"
 
@@ -64,7 +64,7 @@
 #req effect != 54	    -- polymorph
 #req effect != 72	    -- stream of life
 
-#scalingaoelimit 1.5
+#scalingaoelimit 1.0
 
 #offensiveeffect 1
 

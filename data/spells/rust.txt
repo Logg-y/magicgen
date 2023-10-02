@@ -9,12 +9,12 @@
 #spelltype 42
 
 
--- 
+--
 
 
 #aoe 0
-#power -2
-#maxpower 5
+#power -5
+#maxpower 6
 #pathperresearch 0.25
 #pathlevel 1
 #explspr 10053
@@ -39,6 +39,9 @@
 
 #end
 
+
+
+
 #neweffect "Rust Battlefield"
 #effect 11
 #damage 2199023255552
@@ -49,7 +52,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 666
 #power 3
@@ -74,4 +77,8 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of corrosion"
 #namecond effect > 1000 8 "NAMEPREFIX $mist$ of corrosion"
 #end
+
+
+
+
 

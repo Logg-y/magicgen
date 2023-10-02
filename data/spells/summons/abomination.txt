@@ -1,5 +1,6 @@
 #neweffect "Summon abomination"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 521
 #spec 8388608
@@ -32,7 +33,8 @@
 
 
 #neweffect "abomination ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 521
 #spec 8388608
@@ -91,6 +93,7 @@
 
 
 #neweffect "Remote summon abomination"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 521

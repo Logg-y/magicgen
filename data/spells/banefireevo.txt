@@ -14,7 +14,8 @@
 #name a "Area Decay"
 #name b "Area Decay"
 #end
-
+
+
 #neweffect "Banefire Decay Small"
 #effect 11
 #damage 256
@@ -30,8 +31,8 @@
 #name 32 "Banefire Decay"
 #name b "Banefire Decay"
 #end
-
-
+
+
 #neweffect "Banefire Projectile"
 #scalingset "evo"
 #effect 2
@@ -79,7 +80,8 @@
 
 
 #end
-
+
+
 #neweffect "Banefire Instant"
 #scalingset "evo"
 #effect 2
@@ -119,7 +121,8 @@
 #descrcond range < 10 32 "The caster unleashes a burst of sickly greenish flames around him. The flames consume the life force of those affected by them."
 
 #end
-
+
+
 #neweffect "Banefire Decay Cloud"
 #effect 4011
 #damage 256
@@ -136,8 +139,8 @@
 #name 1 "Banefire Decay"
 #name 32 "Banefire Decay"
 #end
-
-
+
+
 #neweffect "Banefire Cloud"
 #scalingset "evo"
 #effect 4002
@@ -178,8 +181,8 @@
 #namecond effect > 5000 b "Extended NAMEPREFIX Cloud of Buer"
 
 #end
-
-
+
+
 #neweffect "Banefire Rain"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -219,11 +222,5 @@
 
 
 #end
-
-
-
-
-
-
-
-
+
+

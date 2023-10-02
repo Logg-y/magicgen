@@ -3,10 +3,10 @@
 #effect 21
 #damage 3350
 #spec 0
-#power 4
+#power 3
 #maxpower 14
 #precision -100
-#nreff 2
+#nreff 1
 #pathlevel 2
 #chassisvalue 35
 #range 6
@@ -77,10 +77,10 @@
 #effect 21
 #damage 3350
 #spec 0
-#power 5
+#power 4
 #maxpower 14
 #precision -100
-#nreff 2
+#nreff 1
 #pathlevel 3
 #chassisvalue 35
 #range 6
@@ -144,6 +144,8 @@
 
 
 #end
+
+
 
 
 

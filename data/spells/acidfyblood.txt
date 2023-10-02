@@ -9,7 +9,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 4
 #power 4
@@ -41,6 +41,9 @@
 #pathperresearch 0.4
 #end
 
+
+
+
 #neweffect "Acidify Blood Gemless"
 #scalingset "evo"
 #effect 7
@@ -52,7 +55,7 @@
 #spelltype 42
 
 
--- 
+--
 
 #aoe 0
 #power 4
@@ -61,7 +64,7 @@
 #precision 100
 #explspr 10170
 #sound 31
-#fatiguecost 5
+#fatiguecost 15
 #range 5020
 
 #paths fwb
@@ -84,6 +87,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.4
 #end
+
+
 
 
 

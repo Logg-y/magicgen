@@ -1,10 +1,11 @@
 #neweffect "Raise dispossessed"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 674
 #spec 8388608
-#power 0
-#maxpower 9
+#power -1
+#maxpower 7
 #precision -2
 #nreff 1
 #pathlevel 1
@@ -21,24 +22,27 @@
 
 #spelltype 528
 
-#power 1
--- 
+#power -1
+--
 #pathlevel 1
 #schools 16
 #skipchance 98
 #end
-
-
+
+
+
+
 #neweffect "Raise dispossessed Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 674
 #spec 8388608
-#power -1
-#maxpower 3
-#nreff 6
+#power 0
+#maxpower 6
+#nreff 20
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 500
 #schools 1
 
 #skipchance 97
@@ -53,9 +57,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 25.0
 #end
-
-
+
+
+
+
 #neweffect "dispossessed Remote Assassination"
 #effect 10050
 #provrange 4
@@ -79,9 +86,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon dispossessed"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 674
@@ -105,5 +116,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

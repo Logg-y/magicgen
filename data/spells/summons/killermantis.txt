@@ -1,5 +1,6 @@
 #neweffect "Summon killermantis"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2226
 #spec 0
@@ -25,18 +26,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "killermantis ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2226
 #spec 0
 #power 2
-#maxpower 5
-#nreff 4
+#maxpower 8
+#nreff 20
 #pathlevel 1
-#fatiguecost 120
+#fatiguecost 1020
 #schools 1
 
 #paths 64
@@ -51,9 +55,12 @@
 #skipchance 99
 
 
+#fatigueperextraeffect 51.0
 #end
-
-
+
+
+
+
 #neweffect "killermantis Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon killermantis"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2226
@@ -108,5 +119,8 @@
 
 
 #end
-
-
+
+
+
+
+

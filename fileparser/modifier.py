@@ -144,6 +144,12 @@ def readModifierFile(fp):
                     curreff.nobattlefield = True
                     continue
 
+                if line.startswith("#incompatibility"):
+                    m = re.match(f"#incompatibility" + "\\W+?\"(.*)\"\\W*", line)
+                    if m is None:
+                        raise ParseError(f"{fp} line {lineno}: bad #incompatibility")
+                    curreff.incompatibility.append(m.groups()[0])
+
                 if line.startswith("#end"):
                     out[curreff.name] = curreff
                     curreff = None

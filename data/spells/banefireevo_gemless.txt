@@ -1,4 +1,3 @@
-
 #neweffect "Banefire Projectile Gemless"
 #scalingset "evo"
 #effect 2
@@ -46,7 +45,8 @@
 #fatigueperresearch 0
 #pathperresearch 0.3
 #end
-
+
+
 #neweffect "Banefire Instant Gemless"
 #scalingset "evo"
 #effect 2
@@ -92,5 +92,5 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+

@@ -17,7 +17,8 @@
 #name 128 "Area Chill"
 #maxpower 30
 #end
-
+
+
 #neweffect "Cold Evo Projectile"
 #scalingset "evo"
 #effect 2
@@ -70,8 +71,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Cold Evo Instant"
 #scalingset "evo"
 #effect 2
@@ -120,7 +121,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Deep Freeze"
 #scalingset "evo"
 #effect 2
@@ -164,7 +166,8 @@
 
 #pathperresearch 0.4
 #end
-
+
+
 #neweffect "Deep Freeze Numbness"
 #effect 11
 #damage 268435456
@@ -184,7 +187,8 @@
 #name 128 "Lingering Chill"
 #nextspell "Deep Freeze Petrify"
 #end
-
+
+
 #neweffect "Deep Freeze Petrify"
 #effect 99
 #damage 5
@@ -203,8 +207,8 @@
 #name 64 "Freeze Solid"
 #name 128 "Freeze Solid"
 #end
-
-
+
+
 #neweffect "Cold Evo Instant 25pc"
 #effect 2
 #damage 1005
@@ -243,7 +247,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Cold Evo Instant 50pc"
 #effect 2
 #damage 1005
@@ -282,7 +287,8 @@
 -- 
 #schools 4
 #end
-
+
+
 #neweffect "Cold Evo Instant 100pc"
 #effect 2
 #damage 1005
@@ -323,7 +329,8 @@
 #scalingset ""
 #fatigueperresearch 50
 #end
-
+
+
 #neweffect "Cold Evo Rain"
 #scalingset "evo"
 #copyspell "Gifts from Heaven"
@@ -359,17 +366,5 @@
 #nextspell "Small Chill"
 
 #end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+
+

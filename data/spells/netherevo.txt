@@ -12,8 +12,8 @@
 #name b "Area Feeblemind"
 #maxpower 30
 #end
-
-
+
+
 #neweffect "Nether Bolt"
 #scalingset "evo"
 #effect 2
@@ -56,8 +56,8 @@
 
 #pathperresearch 0.4
 #end
-
-
+
+
 #neweffect "Nether Bolt Gemless"
 #scalingset "evo"
 #effect 2
@@ -101,6 +101,5 @@
 
 #pathperresearch 0.3
 #end
-
-
-
+
+

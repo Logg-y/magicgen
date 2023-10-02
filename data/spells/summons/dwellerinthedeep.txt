@@ -1,5 +1,6 @@
 #neweffect "Summon Dweller-in-the-Deep"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 628
 #spec 41959424
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "Dweller-in-the-Deep ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 628
 #spec 41959424
 #power 3
 #maxpower 14
-#nreff 5
+#nreff 10
 #pathlevel 2
-#fatiguecost 420
+#fatiguecost 1020
 #schools 1
 
 #paths 16
@@ -54,9 +58,12 @@
 
 #newunit "Dweller-in-the-Deep"
 
+#fatigueperextraeffect 102.0
 #end
-
-
+
+
+
+
 #neweffect "Dweller-in-the-Deep Remote Assassination"
 #effect 10050
 #provrange 4
@@ -83,9 +90,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remoteDweller-in-the-Deep"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 628
@@ -114,5 +125,8 @@
 
 
 #end
-
-
+
+
+
+
+

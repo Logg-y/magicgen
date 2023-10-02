@@ -1,5 +1,6 @@
 #neweffect "Summon gryphon"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2131
 #spec 0
@@ -22,18 +23,21 @@
 
 #spelltype 528
 #end
-
-
+
+
+
+
 #neweffect "gryphon ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2131
 #spec 0
 #power 3
 #maxpower 6
-#nreff 2001
+#nreff 12
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 1000
 #schools 1
 
 #paths 2
@@ -49,9 +53,12 @@
 #skipchance 97
 
 
+#fatigueperextraeffect 83.33333333333333
 #end
-
-
+
+
+
+
 #neweffect "gryphon Remote Assassination"
 #effect 10050
 #provrange 4
@@ -78,9 +85,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote gryphon"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2131
@@ -109,5 +120,8 @@
 
 
 #end
-
-
+
+
+
+
+

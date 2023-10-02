@@ -1,4 +1,5 @@
 #neweffect "Chill Aura"
+#scalingset "buff"
 #effect 10
 #damage 8192
 #spec 12599296
@@ -46,4 +47,5 @@
 #namecond effect > 1000 128 "NAMEPREFIX $mist$ of chill winds"
 
 #end
-
+
+

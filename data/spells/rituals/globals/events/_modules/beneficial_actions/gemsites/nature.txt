@@ -7,7 +7,7 @@
 #modulegroup "Beneficial Global Effect"
 #uniquemodule 1
 
-#noun "Enchanted Graveyards"
+#noun "Enchanted Growth"
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find that plants and fields have become enchanted with magical power."

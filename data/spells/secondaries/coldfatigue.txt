@@ -33,7 +33,7 @@
 #nameprefix "Shivering"
 #fatiguepersquare 6
 
-#scalingaoelimit 2.0
+#scalingaoelimit 0.7
 
 
 #nextspell "cold fatigue Secondary mrnh"
@@ -76,7 +76,7 @@
 #nameprefix "Chilling"
 #nameprefix "Shivering"
 #fatiguepersquare 3
-#scalingaoelimit 2.5
+#scalingaoelimit 1.0
 
 
 #nextspell "cold fatigue Secondary mrn"

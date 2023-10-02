@@ -1,5 +1,6 @@
 #neweffect "Summon unfrozen"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1203
 #spec 0
@@ -29,15 +30,16 @@
 
 
 #neweffect "unfrozen ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1203
 #spec 0
 #power 4
 #maxpower 8
-#nreff 1002
+#nreff 10
 #pathlevel 3
-#fatiguecost 500
+#fatiguecost 1000
 #schools 16
 
 #paths 36
@@ -86,6 +88,7 @@
 
 
 #neweffect "Remote summon unfrozen"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 1203

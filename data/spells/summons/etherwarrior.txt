@@ -1,5 +1,6 @@
 #neweffect "Summon etherwarrior"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 736
 #spec 0
@@ -23,18 +24,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "etherwarrior ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 736
 #spec 0
 #power 4
 #maxpower 14
-#nreff 3
+#nreff 6
 #pathlevel 3
-#fatiguecost 520
+#fatiguecost 1000
 #schools 1
 
 #paths 16
@@ -47,9 +51,12 @@
 
 #spelltype 20
 
+#fatigueperextraeffect 166.66666666666666
 #end
-
-
+
+
+
+
 #neweffect "etherwarrior Remote Assassination"
 #effect 10050
 #provrange 4
@@ -73,9 +80,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon etherwarrior"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 736
@@ -103,5 +114,8 @@
 
 
 #end
-
-
+
+
+
+
+

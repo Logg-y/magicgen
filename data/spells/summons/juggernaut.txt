@@ -1,5 +1,6 @@
 #neweffect "juggernaut ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 781
 #spec 8388608

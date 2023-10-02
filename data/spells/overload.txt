@@ -12,10 +12,9 @@
 #name 2 "Arcing Discharge"
 #maxpower 30
 #end
-
-
+
+
 #neweffect "Overload"
-#scalingset "evo"
 -- Ray flysprite
 #copyspell "Leech"
 #effect 2
@@ -55,5 +54,5 @@
 #namecond range < 10 2 "NAMEPREFIX Overloading Touch"
 #descrcond range < 10 2 "The caster's touch attempts to overload a single victim with an electrical charge. The target may attempt to resist this effect. Should they fail, they will be consumed with a massive surge of electricity which unleashes lesser discharges at those nearby."
 #end
-
-
+
+

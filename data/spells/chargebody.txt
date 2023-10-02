@@ -1,4 +1,6 @@
 #neweffect "Charged Body"
+#scalingset "buff"
+
 #effect 23
 #damage 16384
 #spec 8404992
@@ -11,12 +13,12 @@
 
 #aoe 0
 #power -1
-#maxpower 9
+#maxpower 4
 #pathlevel 1
 #explspr 10028
 #sound 24
 #range 10
-#fatiguecost 5
+#fatiguecost 10
 #skipchance 20
 
 #paths 2
@@ -40,4 +42,8 @@
 #namecond effect > 1000 2 "NAMEPREFIX $mist$ of charges"
 
 #end
+
+
+
+
 

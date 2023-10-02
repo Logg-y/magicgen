@@ -42,7 +42,8 @@
 
 
 #end
-
+
+
 #neweffect "Death Instakill Gemless"
 #scalingset "evo"
 #effect 2
@@ -63,7 +64,7 @@
 #pathlevel 3
 #explspr 10225
 #sound 22
-#fatiguecost 10
+#fatiguecost 20
 #precision 100
 #range 100
 
@@ -88,7 +89,5 @@
 
 #pathperresearch 0.2
 #end
-
-
-
-
+
+

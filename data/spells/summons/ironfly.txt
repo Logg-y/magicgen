@@ -1,5 +1,6 @@
 #neweffect "summon ironfly"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3232
 #spec 8388608
@@ -21,20 +22,23 @@
 
 #spelltype 528
 
--- 
+--
 #end
-
-
+
+
+
+
 #neweffect "ironfly Ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3232
 #spec 8388608
-#power 3
-#maxpower 7
-#nreff 1
+#power 5
+#maxpower 11
+#nreff 3
 #pathlevel 2
-#fatiguecost 320
+#fatiguecost 920
 #schools 8
 
 #skipchance 60
@@ -47,9 +51,12 @@
 #descr 8 "The caster forms ARTICLE_N iron %fly% from metal. The iron fly is difficult to destroy and attacks its foes with an electrical bite."
 
 
+#fatigueperextraeffect 306.6666666666667
 #end
-
-
+
+
+
+
 #neweffect "ironfly Remote Assassination"
 #effect 10050
 #provrange 4
@@ -74,9 +81,13 @@
 
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon ironfly"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3232
@@ -101,5 +112,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

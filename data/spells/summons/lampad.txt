@@ -1,5 +1,6 @@
 #neweffect "Summon lampad"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 3210
 #spec 0
@@ -24,18 +25,21 @@
 #spelltype 528
 
 #end
-
-
+
+
+
+
 #neweffect "lampad ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 3210
 #spec 0
 #power 3
 #maxpower 7
-#nreff 5
+#nreff 8
 #pathlevel 2
-#fatiguecost 300
+#fatiguecost 800
 #schools 1
 
 #paths 32
@@ -50,9 +54,12 @@
 #spelltype 20
 
 
+#fatigueperextraeffect 100.0
 #end
-
-
+
+
+
+
 #neweffect "lampad Remote Assassination"
 #effect 10050
 #provrange 4
@@ -77,9 +84,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "Remote summon lampad"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 3210
@@ -108,5 +119,8 @@
 
 
 #end
-
-
+
+
+
+
+

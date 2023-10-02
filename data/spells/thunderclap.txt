@@ -14,7 +14,8 @@
 #name 2 "Shake Nerves"
 #name 2 "Additional Fright"
 #end
-
+
+
 #neweffect "Thunderclap"
 #scalingset "disabling"
 #effect 128
@@ -54,4 +55,5 @@
 #pathperresearch 0.15
 #fatigueperresearch 0
 #end
-
+
+

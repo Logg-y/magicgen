@@ -1,9 +1,10 @@
 #neweffect "Raise Foulspawn"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage -12
 #spec 0
-#power 2
+#power 0
 #maxpower 12
 #precision -2
 #nreff 1
@@ -23,8 +24,11 @@
 
 #spelltype 528
 
--- 
+--
 
 #end
-
-
+
+
+
+
+

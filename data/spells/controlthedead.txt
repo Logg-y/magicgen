@@ -30,7 +30,8 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of undead control"
 #namecond range < 10 32 "NAMEPREFIX Touch of Undead Control"
 #end
-
+
+
 #neweffect "Control the Dead Battlefield"
 #effect 29
 #damage 999
@@ -61,5 +62,5 @@
 #namecond effect > 1000 16 "NAMEPREFIX $mist$ of undead control"
 #scalingset ""
 #end
-
-
+
+

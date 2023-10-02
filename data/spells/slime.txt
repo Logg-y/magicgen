@@ -37,8 +37,8 @@
 
 
 #end
-
-
+
+
 #neweffect "Slime Instant"
 #scalingset "disabling"
 #effect 11
@@ -75,8 +75,8 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of slime"
 
 #end
-
-
+
+
 #neweffect "Slime Instant Battlefield"
 #effect 11
 #damage 134217728
@@ -114,7 +114,8 @@
 
 #scalingset ""
 #end
-
+
+
 #neweffect "Slime Instant Battlefield Hostile Only"
 #effect 11
 #damage 134217728
@@ -152,12 +153,5 @@
 
 #scalingset ""
 #end
-
-
-
-
-
-
-
-
-
+
+

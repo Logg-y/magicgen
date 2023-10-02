@@ -1,4 +1,5 @@
 #neweffect "Communion Master"
+#stopatfieldwide 0
 #effect 10
 #damage 536870912
 #spec 8404992
@@ -62,22 +63,23 @@
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
 
 #end
-
+
+
 #neweffect "Communion Master Blood Only"
+#stopatfieldwide 0
 #effect 10
 #damage 536870912
 #spec 8404992
 #schools 32
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 1
 
 
 -- 
 
 #aoe 0
 #power 1
-#maxpower 2
+#maxpower 1
 #pathlevel 1
 #explspr 10274
 #sound 31
@@ -125,20 +127,21 @@
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
 
 #end
-
+
+
 #neweffect "Communion Slave"
+#stopatfieldwide 0
 #effect 10
 #damage 1073741824
 #spec 8404992
 #schools 32
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41
+-- buff
+#spelltype 1
 
 
 -- 
 
-#pathperresearch 0.0
 
 
 #aoe 0
@@ -192,17 +195,17 @@
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% forced into becoming ARTICLE %slaves% for the Sabbath. Sabbath masters can then draw power from the minds of their slaves."
 
 #end
-
-
-
+
+
 #neweffect "Communion Master AoE"
+#stopatfieldwide 0
 #effect 10
 #damage 536870912
 #spec 8404992
 #schools 32
 
 -- buff, battlefield allowed, scale aoe
-#spelltype 41
+#spelltype 1
 
 
 -- 
@@ -256,16 +259,17 @@
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% appointed ARTICLE %leader% of the Sabbath, causing them to draw power from the minds of their slaves."
 
 #end
-
-
+
+
 #neweffect "Communion Slave Type2"
+#stopatfieldwide 0
 #effect 10
 #damage 35433480192
 #spec 8404992
 #schools 32
 
--- buff, battlefield allowed, scale aoe
-#spelltype 41
+-- buff
+#spelltype 1
 
 
 -- 
@@ -283,7 +287,6 @@
 #noadditionalnextspells 1
 
 
-#pathperresearch 0.0
 
 #paths 255
 #secondarypaths 1
@@ -323,3 +326,5 @@
 #descr 128 "$BLOOD_INTRO$, SUBJECT %is% forced into becoming ARTICLE %slaves% for the Sabbath. Sabbath masters can then draw power from the minds of their slaves. Connections formed by this spell persist only until the caster becomes unconscious."
 
 #end
+
+

@@ -1,10 +1,11 @@
 #neweffect "Summon leogryph"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 2132
 #spec 0
-#power 2
-#maxpower 12
+#power 1
+#maxpower 9
 #precision -2
 #nreff 1
 #pathlevel 2
@@ -22,18 +23,21 @@
 
 #spelltype 528
 #end
-
-
+
+
+
+
 #neweffect "leogryph ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 2132
 #spec 0
 #power 1
-#maxpower 4
-#nreff 5
+#maxpower 7
+#nreff 30
 #pathlevel 2
-#fatiguecost 120
+#fatiguecost 1020
 #schools 1
 
 #paths 64
@@ -52,9 +56,12 @@
 
 #siegepatrolchaff 1
 
+#fatigueperextraeffect 34.0
 #end
-
-
+
+
+
+
 #neweffect "leogryph Remote Assassination"
 #effect 10050
 #provrange 4
@@ -81,9 +88,13 @@
 #spelltype 4
 
 #end
-
-
+
+
+
+
 #neweffect "remote leogryph"
+#scalingset "remotesummon"
+
 #effect 10038
 #provrange 4
 #damage 2132
@@ -112,5 +123,9 @@
 
 
 #end
-
-
+
+
+
+
+
+

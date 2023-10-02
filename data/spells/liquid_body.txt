@@ -1,4 +1,6 @@
 #neweffect "Liquid Body"
+#scalingset "buff"
+
 #effect 10
 #damage 2680059592704
 #spec 8404992
@@ -17,7 +19,7 @@
 #explspr 10023
 #sound 31
 #range 10
-#fatiguecost 20
+#fatiguecost 10
 
 
 -- water
@@ -42,7 +44,13 @@
 
 #end
 
+
+
+
 #neweffect "Liquid Body battlefield"
+#fieldwidecontinuation "Liquid Body"
+#scalingset "buff"
+
 #effect 10
 #damage 2680059592704
 #spec 8404992
@@ -85,6 +93,8 @@
 #namecond effect > 1000 4 "NAMEPREFIX $mist$ of liquidity"
 
 #end
+
+
 
 
 

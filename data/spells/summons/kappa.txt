@@ -1,5 +1,6 @@
 #neweffect "Summon kappa"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1482
 #spec 8388608
@@ -25,7 +26,8 @@
 
 
 #neweffect "kappa ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1482
 #spec 8388608
@@ -79,6 +81,7 @@
 
 
 #neweffect "remote kappa"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 1482
@@ -103,7 +106,7 @@
 
 
 
-#spelltype 60
+#spelltype 20
 
 
 #end

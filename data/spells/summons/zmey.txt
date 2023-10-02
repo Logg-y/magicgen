@@ -1,5 +1,6 @@
 #neweffect "Call zmey"
-#scalingset "battlesummon"
+#scalingset "battlesummon"
+
 #effect 1
 #damage 1940
 #spec 0
@@ -28,15 +29,16 @@
 
 
 #neweffect "zmey ritual"
-#scalingset "ritualsummon"
+#scalingset "ritualsummon"
+
 #effect 10001
 #damage 1940
 #spec 0
 #power 5
 #maxpower 9
-#nreff 3
+#nreff 6
 #pathlevel 3
-#fatiguecost 300
+#fatiguecost 600
 #schools 1
 
 #paths 1
@@ -78,6 +80,7 @@
 
 
 #neweffect "Remote summon zmey"
+#scalingset "remotesummon"
 #effect 10038
 #provrange 4
 #damage 1940
