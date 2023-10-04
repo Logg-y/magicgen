@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may cause someone close to them to be harmlessly caught in stellar lights, increasing their ability in astral magic."
-#moduledetails "Grants +1 astral magic to a random commander in the province, including to commanders who had no astral magic to begin with. Paths cannot be raised above 4 in this way."
+#details "Grants +1 astral magic to a random commander in the province, including to commanders who had no astral magic to begin with. Paths cannot be raised above 4 in this way."
 
 
 #end

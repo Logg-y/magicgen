@@ -1,4 +1,5 @@
 #neweventset "Scrying Site"
+#details "Lasts 1 month plus 1 month per gem spent. Generates a scrying site which may be used to scry lands up to {SITESCALEAMT-scryrange-3} provinces away. Fails if there are already 8 magic sites in the province."
 
 #magicsite "Scrying Site"
 

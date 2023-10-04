@@ -10,7 +10,7 @@
 #verb "Otherworldly"
 
 #moduledescr "SUBJECT may unexpectedly be struck by energy released from a hole in the fabric of reality."
-#moduledetails "Affected commanders are forced into a battle in which they are the the target of Astral Geyser. A direct hit will add two horror marks, an indirect hit will only inflict 2AN magical damage, with a magic resistance roll to negate the damage. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the the target of Astral Geyser. A direct hit will add two horror marks, an indirect hit will only inflict 2AN magical damage, with a magic resistance roll to negate the damage. Pretenders are unaffected by this spell."
 
 #usefixedunitid 106
 #allowedunitmod "Offensive Action Astral Geyser"

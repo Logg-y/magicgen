@@ -24,6 +24,7 @@
 
 
 #neweffect "Stealthy Creature Ambushing"
+#hiddenench 1
 #copyspell "Record of Creation"
 #effect 10083
 #damage -1
@@ -99,6 +100,7 @@
 
 
 #neweffect "Stealthy Creature Ambushing Blood"
+#hiddenench 1
 #copyspell "Record of Creation"
 #effect 10083
 #damage -1

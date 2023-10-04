@@ -1,4 +1,4 @@
-#newsecondary "Mistform Secondary mrn"
+#newsecondary "Mistform Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -26,14 +26,14 @@
 #scalingaoelimit 2.5
 
 
-#nextspell "Mistform Secondary mrn"
+#nextspell "Mistform Secondary mrne"
 
 #descr "This spell may also transform the body of those it affects into a fine mist."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
 
 #end
 
-#newsecondary "Mistform Secondary mrnh"
+#newsecondary "Mistform Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -62,8 +62,8 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Mistform Secondary mrnh"
+#nextspell "Mistform Secondary mrn"
 
 #descr "This spell may also transform the body of those it affects into a fine mist."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain mistform: Any damage is reduced to 1 (max 25 points of reduction). A hit that would have dealt 25+ damage, or a hit from any magical source, cancels the mistform after the damage reduction. There is also a 1% chance that the enchantment will expire whenever protecting against an attack."
 #end

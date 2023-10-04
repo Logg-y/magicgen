@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may be approached by long dead spirits which share knowledge of long forgotten magical items."
-#moduledetails "Grants a random non-national construction 0-6 item."
+#details "Grants a random non-national construction 0-6 item."
 
 
 #end

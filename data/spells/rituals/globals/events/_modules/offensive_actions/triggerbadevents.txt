@@ -17,7 +17,7 @@
 #noun "Misfortune"
 
 #moduledescr "Affected provinces experience a sudden swing of bad luck and disasters may happen there."
-#moduledetails "Affected provinces spawn an invisible disastrous spirit that lasts for 3 turns. Each turn, there is a 20% chance that a bad event is generated in the province."
+#details "Affected provinces spawn an invisible disastrous spirit that lasts for 3 turns. Each turn, there is a 20% chance that a bad event is generated in the province."
 
 
 #end

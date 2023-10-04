@@ -1,4 +1,4 @@
-#newsecondary "Magicresist Secondary mrn"
+#newsecondary "Magicresist Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -25,14 +25,14 @@
 #scalingaoelimit 3
 
 
-#nextspell "Magicresist Secondary mrn"
+#nextspell "Magicresist Secondary mrne"
 
 #descr "This spell may also make those it affects more resistant to magic."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain +4 magic resistance."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain +4 magic resistance."
 
 #end
 
-#newsecondary "Magicresist Secondary mrnh"
+#newsecondary "Magicresist Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -59,9 +59,9 @@
 #scalingaoelimit 2.5
 
 
-#nextspell "Magicresist Secondary mrnh"
+#nextspell "Magicresist Secondary mrn"
 
 #descr "This spell may also make those it affects more resistant to magic."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain +4 magic resistance."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain +4 magic resistance."
 
 #end

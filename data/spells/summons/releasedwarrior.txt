@@ -17,7 +17,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 80
+#skipchance 90
 
 #name 32 "$Animate$ NAMEPREFIX Ancient Bones"
 #name 8 "$Animate$ NAMEPREFIX Ancient Bones"
@@ -48,7 +48,7 @@
 #secondarypaths 40
 #secondarypathchance 97
 
-#skipchance 60
+#skipchance 80
 
 #name 32 "$Animate$ NAMEPREFIX Ancient Bones"
 #name 8 "$Animate$ NAMEPREFIX Ancient Bones"

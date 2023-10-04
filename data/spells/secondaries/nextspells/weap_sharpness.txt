@@ -31,6 +31,39 @@
 
 #end
 
+#neweffect "WoS Secondary mrne"
+#effect 10
+#damage 524288
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10203
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Sharpness"
+#name 2 "$Additional$ Sharpness"
+#name 4 "$Additional$ Sharpness"
+#name 8 "$Additional$ Sharpness"
+#name 16 "$Additional$ Sharpness"
+#name 32 "$Additional$ Sharpness"
+#name 64 "$Additional$ Sharpness"
+#name 128 "$Additional$ Sharpness"
+#name 256 "$Additional$ Sharpness"
+
+#end
+
 #neweffect "WoS Secondary mrnh"
 #effect 10
 #damage 524288

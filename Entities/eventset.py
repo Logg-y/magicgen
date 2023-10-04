@@ -8,9 +8,9 @@ from Services import montagbuilder, utils, naming
 UNITMOD_TO_SECONDARY_CACHE = {}
 
 
-def _getscaleamt(L, rate=4.0):
+def _getscaleamt(L):
     #return rate * ((L*(L + 1)) / 2)
-    return rate * (2**(L/rate))
+    return (2**(L/1.7))
 
 
 class EventSet(object):
@@ -31,7 +31,6 @@ class EventSet(object):
 
         self.requiredcodes = 0
         self.scaleparams = {}
-        self.scaleparammults = {}
         self.modules = {}
         self.modulegroup = None
         self.incompatibilities = []
@@ -51,8 +50,7 @@ class EventSet(object):
         self.verbs = []
         self.textrepls = {}
         self.moduledescr = ""
-        self.moduledetails = ""
-        self.modulebasescale = None
+        self.details = ""
         self.makedummymonster = 1
         self.makebattledummymonster = 0
         self.dummymonsternames = {}
@@ -66,8 +64,62 @@ class EventSet(object):
 
         self.moduletailingcode = ""
 
+    def _replaceDetailsFromMatch(self, workingdetails, match, targetobject, scaleamt):
+        attribName = match.group("attribName")
+        baseValue = match.group("baseValue")
+        if baseValue == "" or baseValue is None:
+            baseValue = 1
+        else:
+            baseValue = int(baseValue)
+        token = match.group(0)
+        print(f"token= {token}, -> {attribName}, {baseValue}")
+        replacement = str(targetobject.getScaleParamValue(attribName, baseValue, scaleamt))
 
-    def moduleCompatibility(self, current, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modules,
+        print(f"EventSet details formatting: replacing {token} with {replacement}")
+        workingdetails = workingdetails.replace(token, replacement)
+        return workingdetails
+
+
+    def _getMagicSiteObject(self):
+        return utils.magicsites.get(self.magicsite, None)
+
+    def formatDetails(self, spell, scaleamt):
+        "Format this event set or module's details and add it to the spell's details."
+        # Previously:
+        # Non-module event set scaled paramters could be referenced in the SpellEffect's details
+        # Module event sets did their own thing which was filled and appended to the spell description directly
+        # ... and they both had their own handling for pretty much the same thing.
+
+        # It would be much tidier just to take the more demanding case (modules) and make everything use it.
+
+        # Recognise and replace the following tokens:
+        # {SCALEAMT-AttributeName-BaseValue}
+        # {SCALEAMT-AttributeName} (assume base value = 1)
+        # {SITESCALEAMT-AttributeName-BaseValue}
+        # {SITESCALEAMT-AttributeName} (assume base value = 1)
+        workingdetails = copy.copy(self.details)
+
+        for type in range(0, 2):
+            if type == 0:
+                prefix = ""
+                targetobject = self
+            elif type == 1:
+                prefix = "SITE"
+                targetobject = self._getMagicSiteObject()
+            if targetobject is None:
+                continue
+            pattern = "[{]" + prefix + r"SCALEAMT-(?P<attribName>[a-zA-Z0-9_ ]+)(?:-(?P<baseValue>[0-9]*))?[}]"
+            for i in range(0, 10000):
+                if i > 9000:
+                    raise ValueError(f"EventSet {self.name} formatDetails seems stuck in an infinite loop of replacing {pattern}")
+                m = re.search(pattern, workingdetails)
+                if m is None:
+                    break
+                workingdetails = self._replaceDetailsFromMatch(workingdetails, m, targetobject, scaleamt)
+        return workingdetails
+
+
+    def moduleCompatibility(self, current, spelleffect, spell, secondaryeffect, actualpowerlvl, modules,
                            selection):
         islast = False
         if len(selection) + 1 == len(self.modules):
@@ -106,7 +158,7 @@ class EventSet(object):
         return True
 
 
-    def _pickmodules(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl, modules, selection=None):
+    def _pickmodules(self, spelleffect, spell, secondaryeffect, actualpowerlvl, modules, selection=None):
         "Recursive module picker."
         if selection is None:
             selection = []
@@ -126,15 +178,14 @@ class EventSet(object):
                     considerations.append(current)
                     continue
 
-            if self.moduleCompatibility(current, spelleffect, spell, scaleamt,
-                                        secondaryeffect, actualpowerlvl, modules, selection):
+            if self.moduleCompatibility(current, spelleffect, spell, secondaryeffect, actualpowerlvl, modules, selection):
                 if len(remainingmodules) == 0:
                     return [current]
                 else:
                     proposedselection = selection[:]
                     proposedselection.append(current)
                     print(f"Pick {current.name}, begin recursive with {[x.name for x in proposedselection]}")
-                    remainder = self._pickmodules(spelleffect, spell, scaleamt,
+                    remainder = self._pickmodules(spelleffect, spell,
                                              secondaryeffect, actualpowerlvl, remainingmodules, proposedselection)
                     if remainder is not None:
                         return [current] + remainder
@@ -196,45 +247,13 @@ class EventSet(object):
 
         return None
 
-    def _getScaleAmountForBase(self, realscaleamt, scaleamt):
-        """Return the scale amount for a property with the passed base value and spell scale amount.
-        Assumes only one scale rate for all properties."""
-        if realscaleamt is not None:
-            # bit of a dodge, assume that you only have one scale param
-            val = None
-            for key, value in self.scaleparams.items():
-                if val is None:
-                    val = value
-                if val != value:
-                    raise NotImplementedError(f"Module {self.name} has more than one "
-                                              f"different parameter scale rate - unsupported operation")
+    def getScaleParamValue(self, paramname, paramvalue, scaleamt):
+        scaleweight = self.scaleparams[paramname]
+        return int(scaleamt * scaleweight * paramvalue)
 
-            if val is not None:
-                realscaleamt += (val * scaleamt)
-                realscaleamt = int(realscaleamt)
-                print(f"Flat scale addition: {val} * scale amount {scaleamt} -> {realscaleamt}")
-            val = None
-
-            for key, value in self.scaleparammults.items():
-                if val is None:
-                    val = value
-                if val != value:
-                    raise NotImplementedError(f"Module {self.name} has a more than one "
-                                              f"different parameter scale rate - unsupported operation")
-
-            if val is not None and scaleamt != 0:
-                print(f"Multiplicative scale addition: {val} * scale amount {scaleamt} * {realscaleamt}")
-                realscaleamt += realscaleamt * val * scaleamt
-                print(f"Multiplicative scale addition: result is {realscaleamt}")
-            realscaleamt = int(realscaleamt)
-
-        else:
-            realscaleamt = f"[Missing modulebasescale for module {self.name}]"
-        print(f"Final replacement is {realscaleamt}")
-        return str(realscaleamt)
-
-    def formatdata(self, spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, enchantid=None):
+    def formatdata(self, spelleffect, spell, forcedsecondaryeffect, actualpowerlvl, enchantid=None):
         "Format the data of this EventSet for the given parameters. Returns None on failure (and the spell should be aborted)"
+        scaleamt = _getscaleamt(actualpowerlvl)
         print(f"Begin formatdata for {self.name}, scaleamt = {scaleamt}, powerlevel = {actualpowerlvl}")
         output = f"-- Generated from EventSet {self.name}, scaleamt = {scaleamt}; powerlevel = {actualpowerlvl}\n" \
                  + copy.copy(self.rawdata)
@@ -275,7 +294,7 @@ class EventSet(object):
 
         modulelist = list(self.modules.values())
 
-        modulepicks = self._pickmodules(spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl, modulelist)
+        modulepicks = self._pickmodules(spelleffect, spell, forcedsecondaryeffect, actualpowerlvl, modulelist)
         if modulepicks is None:
             print(f"ERROR: No module picks for {self.name}")
             return None
@@ -306,10 +325,9 @@ class EventSet(object):
 
         for i, module in enumerate(modulepicks):
             replacement = replacements[i]
-            powerlevel = powerlevelassignments[module.name]
+            powerlevel = powerlevelassignments[module.name]-module.minpowerlevel
             moduledata[replacement] = module.formatdata(spelleffect, spell,
                                                         #_getscaleamt(powerlevel-module.minpowerlevel, spelleffect.scalerate),
-                                                        _getscaleamt(powerlevel-module.minpowerlevel, 4.0),
                                                         forcedsecondaryeffect, powerlevel, enchantid)
             if moduledata[replacement] is None:
                 print(f"ERROR: formatdata for module {module.name} failed")
@@ -353,29 +371,12 @@ class EventSet(object):
                 m = re.search(f"#{paramname}\\W+?([-0-9]*)", line)
                 if m is not None:
                     oldparamval = int(m.groups()[0])
-                    # I don't THINK there are any legal float params for events
-                    # but could be mistaken here...
-                    newparamval = round((scaleweight * scaleamt) + oldparamval, 0)
+                    newparamval = self.getScaleParamValue(paramname, oldparamval, scaleamt)
                     print(f"Scaled event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
                     currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line,
                                              count=1)
             output = "\n".join(currlist)
 
-        for paramname, scaleweight in self.scaleparammults.items():
-            output = f"-- Scaling param (multiplicative) {paramname} with weight {scaleweight}\n" + output
-            currlist = output.split("\n")
-            # Need to guarantee that each one only gets processed once
-            for index, line in enumerate(currlist):
-                m = re.search(f"#{paramname}\\W+?([-0-9]*)", line)
-                if m is not None:
-                    oldparamval = int(m.groups()[0])
-                    # I don't THINK there are any legal float params for events
-                    # but could be mistaken here...
-                    newparamval = int(oldparamval + (oldparamval * scaleweight * scaleamt))
-                    print(f"Scaled (mult) event param {paramname} with weight {scaleweight} by {scaleweight * scaleamt}")
-                    currlist[index] = re.sub(f"#{paramname}\\W+?([-0-9]*)", f"#{paramname} {newparamval}", line,
-                                             count=1)
-            output = "\n".join(currlist)
 
         if self.desiredmontagsize == 1:
             numtogenerate = 1
@@ -391,25 +392,13 @@ class EventSet(object):
 
                 return None
             unitcode, montag = retval
-
+        # Make sure we add the details to the spell that the player will actually see, at the top of the nextspell chain
+        topspell = spell
+        while getattr(topspell, "parent", None) is not None:
+            topspell = getattr(topspell, "parent")
+        topspell.details = topspell.details + "\n" + self.formatDetails(spell, scaleamt)
         if self.modulegroup is not None:
-            print(f"Writing module description for {self.name}")
-            workingdetails = copy.copy(self.moduledetails)
-            while 1:
-                m = re.search("[{]SCALEAMT-([0-9]*)[}]", workingdetails)
-                if m is None:
-                    break
-                base = int(m.groups()[0])
-                replamt = self._getScaleAmountForBase(base, scaleamt)
-                stringtoreplace = "{SCALEAMT-" + str(base) + "}"
-                workingdetails = workingdetails.replace(stringtoreplace, replamt)
-                print(f"Replace {stringtoreplace} with {replamt}")
-
-            realscaleamt = self._getScaleAmountForBase(self.modulebasescale, scaleamt)
-
             spell.descr = spell.descr + " " + self.moduledescr
-            spell.details = spell.details + " " + workingdetails.replace("SCALEAMT", str(realscaleamt))
-            print(f"Replace SCALEAMT with {realscaleamt}")
         else:
             # do module textrepl stuff
             for module in modulepicks:
@@ -548,7 +537,7 @@ class EventSet(object):
                 break
 
         if len(self.magicsite) > 0:
-            magicsite = utils.magicsites[self.magicsite]
+            magicsite = self._getMagicSiteObject()
             sitedata = magicsite.formatdata(spelleffect, spell, scaleamt, forcedsecondaryeffect, actualpowerlvl)
             if sitedata is None:
                 return None

@@ -22,7 +22,7 @@
 
 #name 1 "Tomes of Burning Power"
 #descr 1 "This enchantment causes research tomes to occasionally become enchanted with fiery power, causing the researcher reading them to absorb the power and gain power in fire magic. This affects even researchers that were not fire mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 fire magic in each friendly province. The researcher's fire path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers air"
@@ -49,7 +49,7 @@
 
 #name 2 "Tomes of Windborne Power"
 #descr 2 "This enchantment causes research tomes to occasionally become enchanted with stormy power, causing the researcher reading them to absorb the power and gain power in air magic. This affects even researchers that were not air mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 air magic in each friendly province. The researcher's air path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers water"
@@ -76,7 +76,7 @@
 
 #name 4 "Tomes of Iceborne Power"
 #descr 4 "This enchantment causes research tomes to occasionally become enchanted with watery power, causing the researcher reading them to absorb the power and gain power in water magic. This affects even researchers that were not water mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 water magic in each friendly province. The researcher's water path is boosted by 1 permanently."
+
 #end
 
 
@@ -104,7 +104,7 @@
 
 #name 8 "Tomes of Earthbound Power"
 #descr 8 "This enchantment causes research tomes to occasionally become enchanted with earthen power, causing the researcher reading them to absorb the power and gain power in earth magic. This affects even researchers that were not earth mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 earth magic in each friendly province. The researcher's earth path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers astral"
@@ -131,7 +131,7 @@
 
 #name 16 "Tomes of Otherworldly Power"
 #descr 16 "This enchantment causes research tomes to occasionally become enchanted with astral power, causing the researcher reading them to absorb the power and gain power in astral magic. This affects even researchers that were not astral mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 astral magic in each friendly province. The researcher's astral path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers death"
@@ -158,7 +158,7 @@
 
 #name 32 "Tomes of Necromantic Power"
 #descr 32 "This enchantment causes research tomes to occasionally become enchanted with deathly power, causing the researcher reading them to absorb the power and gain power in death magic. This affects even researchers that were not necromancers to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 death magic in each friendly province. The researcher's death path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers nature"
@@ -185,7 +185,7 @@
 
 #name 64 "Tomes of Gaia's Power"
 #descr 64 "This enchantment causes research tomes to occasionally become enchanted with natural power, causing the researcher reading them to absorb the power and gain power in nature magic. This affects even researchers that were not nature mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 nature magic in each friendly province. The researcher's nature path is boosted by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts researchers blood"
@@ -212,7 +212,7 @@
 
 #name 128 "Tomes of Infernal Power"
 #descr 128 "This enchantment causes research tomes to occasionally become enchanted with infernal power, causing the researcher reading them to absorb the power and gain power in blood magic. This affects even researchers that were not blood mages to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 blood magic in each friendly province. The researcher's blood path is boosted by 1 permanently."
+
 #end
 
 
@@ -242,5 +242,5 @@
 #name 16 "Scriptures of Radiant Power"
 #descr 1 "This enchantment causes research tomes to occasionally become enchanted with divine power, causing the researcher reading them to absorb the energy and gain priestly power. This affects even researchers that were not sacred or priests to begin with."
 #descr 16 "This enchantment causes research tomes to occasionally become enchanted with divine power, causing the researcher reading them to absorb the energy and gain priestly power. This affects even researchers that were not sacred or priests to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random researcher with level 0-4 holy magic in each friendly province. The researcher's holy path is boosted by 1 permanently. Pretenders and disciples cannot be affected."
+
 #end

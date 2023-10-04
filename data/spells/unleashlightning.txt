@@ -4,8 +4,8 @@
 #spec 2176
 #schools -1
 #paths -1
--- evo, scale aoe
-#spelltype 34
+-- evo
+#spelltype 2
 #aoe 1
 
 #power 4
@@ -29,8 +29,8 @@
 #spec 2176
 #schools -1
 #paths -1
--- evo, scale aoe
-#spelltype 34
+-- evo
+#spelltype 2
 #aoe 6
 
 #power 4

@@ -50,12 +50,12 @@
 -- 
 
 #aoe 666
-#power 7
-#maxpower 7
-#pathlevel 5
+#power 8
+#maxpower 8
+#pathlevel 7
 #explspr 10265
 #sound 52
-#fatiguecost 200
+#fatiguecost 300
 #precision 100
 #range 100
 

@@ -11,7 +11,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find magical rubies amongst the ashes of extinguished fires."
-#moduledetails "Grants 1d6 fire gems."
+#details "Grants 1d6 fire gems."
 
 
 #end

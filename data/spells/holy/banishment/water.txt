@@ -5,7 +5,7 @@
 #flightspr 10065
 #effect 2
 #damage 3003
-#spec 1152921504883675272
+#spec 276828296
 #range 5020
 #power 0
 #maxpower 0

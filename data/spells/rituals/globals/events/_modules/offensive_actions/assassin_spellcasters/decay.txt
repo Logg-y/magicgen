@@ -10,7 +10,7 @@
 #verb "Decaying"
 
 #moduledescr "SUBJECT may unexpectedly begin to age rapidly, possibly dying in the process."
-#moduledetails "Affected commanders are be forced into a battle, where they become decayed if they fail an easy MR check. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they become decayed if they fail an easy MR check. Pretenders are unaffected by this spell."
 
 #usefixedunitid 676
 #allowedunitmod "Offensive Action Decay"

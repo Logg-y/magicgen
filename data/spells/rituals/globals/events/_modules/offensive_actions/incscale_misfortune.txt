@@ -15,7 +15,7 @@
 #verb "Unfortunate"
 
 #moduledescr "The land in affected provinces is twisted by the enchantment, making it become more unlucky."
-#moduledetails "Increases the misfortune scale of the province by 1."
+#details "Increases the misfortune scale of the province by 1."
 
 
 #end

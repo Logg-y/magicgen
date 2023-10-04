@@ -10,7 +10,7 @@
 #verb "Frigid"
 
 #moduledescr "SUBJECT may unexpectedly be struck by a very large blast of frigid air."
-#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 10AN cold damage. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 10AN cold damage. Pretenders are unaffected by this spell."
 
 #usefixedunitid 449
 #allowedunitmod "Offensive Action Niefel Flames"

@@ -31,6 +31,39 @@
 
 #end
 
+#neweffect "Mossbody Secondary mrne"
+#effect 23
+#damage 8
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10336
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Moss"
+#name 2 "$Additional$ Moss"
+#name 4 "$Additional$ Moss"
+#name 8 "$Additional$ Moss"
+#name 16 "$Additional$ Moss"
+#name 32 "$Additional$ Moss"
+#name 64 "$Additional$ Moss"
+#name 128 "$Additional$ Moss"
+#name 256 "$Additional$ Moss"
+
+#end
+
 #neweffect "Mossbody Secondary mrnh"
 #effect 23
 #damage 8

@@ -1,5 +1,6 @@
 
 #neweffect "XP Site Permanent"
+#hiddenench 1
 #effect 10082
 #damage 0
 #spec 0
@@ -19,6 +20,7 @@
 
 
 #neweffect "XP Site Permanent Dummy"
+#hiddenench 1
 #copyspell "Record of Creation"
 #effect 10083
 #damage -1
@@ -50,7 +52,7 @@
 #name 2 "Illusory Training"
 #descr 2 "The caster produces an endless stream of harmless illusions. These illusions are ideal for training a commander and his troops in the ways of combat, in a manner that typical training exercises could not. In order to be successful, this spell requires a great deal of infrastructure, and can therefore only be cast in capitals."
 #descr 32 "The caster raises long dead troops to his service. Troops raised by this spell are unwilling to do much other than sharpen their combat skills. This provides an opportunity for living troops to become more experienced in the ways of combat by training with the dead. Due to the need of loyal trained soldiers, this spell can only be cast in capital."
-#details "Can only be cast in capital provinces. Produces a permanent site, which any commander may spend a turn entering to grant SCALEAMT experience to themselves and all troops under their command. Only one such site can exist per capital province."
+
 
 #spelltype 4
 #end

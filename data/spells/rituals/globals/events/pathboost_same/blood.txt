@@ -1,4 +1,5 @@
 #neweventset "Pathboosts samepath blood"
+#details "There is a {SCALEAMT-req_domchance-1}% chance per point of dominion to pick a random level 1-4 blood mage in each friendly province. Success boosts the mage's blood path by 1 permanently."
 #scaleparam "req_domchance" 1.0
 
 #end

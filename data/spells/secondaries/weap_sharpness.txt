@@ -1,4 +1,4 @@
-#newsecondary "WoS Secondary mrn"
+#newsecondary "WoS Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -30,14 +30,14 @@
 #scalingaoelimit 1.3
 
 
-#nextspell "WoS Secondary mrn"
+#nextspell "WoS Secondary mrne"
 
 #descr "This spell may also sharpen the weapons of those it affects."
-#details "Creatures in the area when the spell is cast make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
+#details "Creatures in the area when the spell is cast make an easy MR check. Failing this check causes them to inflict AP damage with melee attacks."
 
 #end
 
-#newsecondary "WoS Secondary mrnh"
+#newsecondary "WoS Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -67,10 +67,10 @@
 #scalingaoelimit 1
 
 
-#nextspell "WoS Secondary mrnh"
+#nextspell "WoS Secondary mrn"
 
 #descr "This spell may also sharpen the weapons of those it affects."
-#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check causes them to inflict AP damage with melee attacks."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check causes them to inflict AP damage with melee attacks."
 
 
 #end

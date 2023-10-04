@@ -59,7 +59,7 @@
 
 --
 
-#aoe 0
+#aoe 666
 #power 8
 #maxpower 8
 #pathlevel 5

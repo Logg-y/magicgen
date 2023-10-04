@@ -1,4 +1,4 @@
-#newsecondary "Invuln 15 Secondary mrn"
+#newsecondary "Invuln 15 Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -29,14 +29,14 @@
 #scalingaoelimit 2.5
 
 
-#nextspell "Invuln 15 Secondary mrn"
+#nextspell "Invuln 15 Secondary mrne"
 
 #descr "This spell may also magically protect those it affects from mundane weaponry."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain 15 invulnerability."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain 15 invulnerability."
 
 #end
 
-#newsecondary "Invuln 15 Secondary mrnh"
+#newsecondary "Invuln 15 Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -66,8 +66,8 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Invuln 15 Secondary mrnh"
+#nextspell "Invuln 15 Secondary mrn"
 
 #descr "This spell may also magically protect those it affects from mundane weaponry."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist become gain 15 invulnerability."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist become gain 15 invulnerability."
 #end

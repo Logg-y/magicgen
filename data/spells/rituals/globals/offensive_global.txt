@@ -7,6 +7,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3000
+#fatigueperresearch 1100
 #schools 2
 #paths 127
 #skipchance 50
@@ -41,6 +42,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 6000
+#fatigueperresearch 2200
 #schools 2
 #paths 128
 #skipchance 80
@@ -75,6 +77,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3000
+#fatigueperresearch 1100
 #schools 16
 #paths 127
 #skipchance 50
@@ -109,6 +112,7 @@
 #nreff 1
 #pathlevel 5
 #fatiguecost 3000
+#fatigueperresearch 1100
 #schools 32
 #paths 127
 #skipchance 50

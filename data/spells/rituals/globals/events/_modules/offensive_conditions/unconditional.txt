@@ -2,7 +2,7 @@
 #minpowerlevel 3
 #maxpowerlevel 8
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -14,9 +14,9 @@
 #textrepl "SUBJECT" "Random commanders"
 
 #moduledescr "This enchantment affects commanders across the world."
-#moduledetails "Every turn, each province makes five checks for any commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes five checks for any commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

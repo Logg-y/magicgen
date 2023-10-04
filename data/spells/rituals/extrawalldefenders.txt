@@ -47,7 +47,7 @@
 #descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
-#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
+
 
 #spelltype 4
 #pathperresearch 0.2
@@ -104,7 +104,6 @@
 #descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
-#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
 
 #spelltype 4
 #pathperresearch 0.2
@@ -161,7 +160,6 @@
 #descr 32 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of death will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 64 "This spell allows the mage to designate a distant allied fortification. In times of need, portals of Gaia will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
 #descr 128 "This spell allows the mage to designate a distant allied fortification. In times of need, infernal portals will open there and spill out various magical creatures onto the walls in time to assist the defenders of any siege. The number of defenders produced depends on the quality of the fortification."
-#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons SCALEAMT creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm."
 
 #spelltype 4
 #pathperresearch 0.2

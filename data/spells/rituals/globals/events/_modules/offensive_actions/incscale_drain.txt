@@ -15,7 +15,7 @@
 #verb "Mundane"
 
 #moduledescr "The land in affected provinces has magic sucked out of it."
-#moduledetails "Increases the drain scale of the province by 1."
+#details "Increases the drain scale of the province by 1."
 
 
 #end

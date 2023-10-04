@@ -12,7 +12,7 @@
 #verb "Weakening"
 
 #moduledescr "SUBJECT may be affected by malign magic and become weakened."
-#moduledetails "Affected commanders gain the weakness affliction. Pretenders are unaffected by this spell."
+#details "Affected commanders gain the weakness affliction. Pretenders are unaffected by this spell."
 
 
 #end

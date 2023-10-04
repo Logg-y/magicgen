@@ -1,4 +1,4 @@
-#newsecondary "Twistfate Secondary mrn"
+#newsecondary "Twistfate Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -26,14 +26,14 @@
 #scalingaoelimit 2.5
 
 
-#nextspell "Twistfate Secondary mrn"
+#nextspell "Twistfate Secondary mrne"
 
 #descr "This spell may also magically protect those it affects from a single attack."
-#details "Those affected by this spell that fail a MR check gain twist fate, preventing the first instance of damage."
+#details "Those affected by this spell that fail an easy MR check gain twist fate, preventing the first instance of damage."
 
 #end
 
-#newsecondary "Twistfate Secondary mrnh"
+#newsecondary "Twistfate Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -61,8 +61,8 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Twistfate Secondary mrnh"
+#nextspell "Twistfate Secondary mrn"
 
 #descr "This spell may also magically protect those it affects from a single attack."
-#details "Those affected by this spell that fail a hard MR check gain twist fate, preventing the first instance of damage."
+#details "Those affected by this spell that fail an MR check gain twist fate, preventing the first instance of damage."
 #end

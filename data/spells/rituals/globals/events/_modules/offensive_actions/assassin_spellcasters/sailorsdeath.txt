@@ -10,7 +10,7 @@
 #verb "Drowning"
 
 #moduledescr "SUBJECT may unexpectedly have their lungs filled with water."
-#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 14 AN internal damage. Undead, inanimates, and water breathers are unaffected. Magic resistance will negate the effect. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the target of an attack that inflicts 14 AN internal damage. Undead, inanimates, and water breathers are unaffected. Magic resistance will negate the effect. Pretenders are unaffected by this spell."
 
 #usefixedunitid 449
 #allowedunitmod "Offensive Action Sailors Death"

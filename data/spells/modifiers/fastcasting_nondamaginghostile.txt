@@ -5,7 +5,7 @@
 
 #spelltype 2
 
-#power -2
+#power -3
 #pathlevel 0
 
 #reqdamaging 0
@@ -40,7 +40,7 @@
 
 #reqdamaging 0
 
-#power -6
+#power -4
 
 #mult fatiguecost 0.33
 #req fatiguecost > 15
@@ -64,7 +64,7 @@
 
 #reqdamaging 0
 
-#power -8
+#power -6
 
 #mult fatiguecost 0.3
 #req fatiguecost > 15
@@ -88,7 +88,7 @@
 
 #reqdamaging 0
 
-#power -10
+#power -8
 
 #mult fatiguecost 0.17
 #req fatiguecost > 15

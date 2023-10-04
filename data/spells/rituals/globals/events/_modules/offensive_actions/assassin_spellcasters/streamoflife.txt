@@ -10,7 +10,7 @@
 #verb "Thorny"
 
 #moduledescr "SUBJECT may unexpectedly become overwhelmed by life energy, which has the potential to be fatal."
-#moduledetails "Affected commanders are be forced into a battle, where Stream of Life is cast at them. If it hits and the victim fails a magic resistance check, there is a 40% chance that they die, otherwise they are fully healed. Undead, inanimates, and pretenders will not be targeted by this spell."
+#details "Affected commanders are be forced into a battle, where Stream of Life is cast at them. If it hits and the victim fails a magic resistance check, there is a 40% chance that they die, otherwise they are fully healed. Undead, inanimates, and pretenders will not be targeted by this spell."
 
 #usefixedunitid 361
 #allowedunitmod "Offensive Action Stream of Life"

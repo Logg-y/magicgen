@@ -16,6 +16,7 @@
 
 #eventset "Healing Site"
 
+#skipchance 85
 
 
 #basescale 10
@@ -30,7 +31,7 @@
 #name 64 "Plants of Healing"
 #descr 4 "This spell temporarily brings forth healing waters that are magically enchanted to be able to cure all ills. It may take some time for this to happen, however."
 #descr 64 "This spell temporarily brings forth magical plants in the caster's province. These plants produce magical fruit which may cure all ills."
-#details "Lasts 1 month plus 1 month per gem spent. SCALEAMT percent of the units in the province experience a healer check every turn. Fails if there are already 8 magic sites in the province."
+
 
 #spelltype 4
 #end
@@ -62,6 +63,7 @@
 
 #neweffect "Healing Site Permanent Dummy"
 #copyspell "Record of Creation"
+#hiddenench 1
 #effect 10083
 #damage -1
 #spec 0
@@ -77,6 +79,7 @@
 
 #nextspell "Healing Site Permanent"
 
+#skipchance 85
 
 #basescale 10
 
@@ -89,7 +92,7 @@
 #name 64 "Fields of Healing"
 #descr 4 "This spell brings forth healing waters that are magically enchanted to be able to cure all ills. It may take some time for this to happen, however. The effect of this spell is permanent."
 #descr 64 "This spell brings forth a field of magical plants in the caster's province. These plants produce magical fruit which may cure all ills. The effect of this spell is permanent."
-#details "SCALEAMT percent of the units in the province experience a healer check every turn. Fails if there are already 8 magic sites in the province."
+
 
 #spelltype 4
 #end

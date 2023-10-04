@@ -27,7 +27,7 @@
 #name 1 "Transmute Fire"
 #descr 1 "The caster converts fire gems to gold. The more skilled the mage, the more gold is produced."
 #name 2 "Transmute Air"
-#descr 2 "The caster converts fire air to gold. The more skilled the mage, the more gold is produced."
+#descr 2 "The caster converts air gems to gold. The more skilled the mage, the more gold is produced."
 #name 4 "Transmute Water"
 #descr 4 "The caster converts water gems to gold. The more skilled the mage, the more gold is produced."
 #name 8 "Alchemical Transmutation"

@@ -16,7 +16,7 @@
 #verb "Withering"
 
 #moduledescr "The land in affected provinces withers and becomes less able to sustain life."
-#moduledetails "Increases the death scale of the province by 1."
+#details "Increases the death scale of the province by 1."
 
 
 #end

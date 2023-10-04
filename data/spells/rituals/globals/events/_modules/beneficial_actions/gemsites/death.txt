@@ -11,7 +11,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find that existing burial grounds have become enchanted with magical power."
-#moduledetails "Adds a site providing 1 death gem to affected land provinces."
+#details "Adds a site providing 1 death gem to affected land provinces."
 
 #end
 

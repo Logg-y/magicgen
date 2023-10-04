@@ -50,6 +50,7 @@
 #nreff 1
 #pathlevel 2
 #fatiguecost 700
+#fatigueperresearch 200
 -- alt ench thaum
 #schools 50
 

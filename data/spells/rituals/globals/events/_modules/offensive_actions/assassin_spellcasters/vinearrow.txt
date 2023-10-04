@@ -10,7 +10,7 @@
 #verb "Barbed"
 
 #moduledescr "SUBJECT may unexpectedly become impaled by sharp thorns."
-#moduledetails "Affected commanders are be forced into a battle, where a single vine arrow is fired at them. It inflicts 14 magical piercing damage if it hits. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where a single vine arrow is fired at them. It inflicts 14 magical piercing damage if it hits. Pretenders are unaffected by this spell."
 
 #usefixedunitid 361
 #allowedunitmod "Offensive Action Vine Arrow"

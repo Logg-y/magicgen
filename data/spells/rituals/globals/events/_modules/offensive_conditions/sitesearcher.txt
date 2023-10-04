@@ -2,7 +2,7 @@
 #minpowerlevel -7
 #maxpowerlevel -2
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -15,9 +15,9 @@
 #textrepl "SUBJECT" "Site searchers"
 
 #moduledescr "This enchantment affects all those looking for sites of magical power."
-#moduledetails "Every turn, each province makes three checks for a site searching commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes three checks for a site searching commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

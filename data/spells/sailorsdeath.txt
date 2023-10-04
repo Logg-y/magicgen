@@ -121,8 +121,8 @@
 -- 
 
 #aoe 666
-#power 8
-#maxpower 8
+#power 9
+#maxpower 9
 #pathlevel 7
 #explspr 10204
 #sound 41

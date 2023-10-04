@@ -128,7 +128,7 @@
 #maxpower 9
 #precision 1
 #range 5020
-#pathlevel 7
+#pathlevel 8
 #fatiguecost 500
 #explspr 10229
 #sound 31
@@ -236,7 +236,7 @@
 #nreff 1
 #precision 1
 #range 5020
-#pathlevel 7
+#pathlevel 8
 #fatiguecost 500
 #explspr 10336
 #sound 31
@@ -361,7 +361,7 @@
 #nreff 1
 #precision 1
 #range 5020
-#pathlevel 7
+#pathlevel 8
 #fatiguecost 500
 #explspr 10145
 #sound 31

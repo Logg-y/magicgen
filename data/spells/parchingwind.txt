@@ -147,7 +147,7 @@
 #maxpower 8
 #precision 1
 #range 30
-#pathlevel 4
+#pathlevel 5
 #fatiguecost 100
 #explspr 10338
 #skipchance 50

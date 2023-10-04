@@ -7,7 +7,7 @@
 #power 3
 #maxpower 10
 #precision -2
-#nreff 8
+#nreff 5
 #pathlevel 2
 #fatiguecost 130
 #sound 31
@@ -119,6 +119,7 @@
 
 
 #end
+
 
 
 

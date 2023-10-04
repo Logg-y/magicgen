@@ -1,5 +1,6 @@
 #neweventset "Pathboosts samepath water"
 #scaleparam "req_domchance" 1.0
+#details "There is a {SCALEAMT-req_domchance-1}% chance per point of dominion to pick a random level 1-4 water mage in each friendly province. Success boosts the mage's water path by 1 permanently."
 
 #end
 

@@ -1,5 +1,6 @@
 #neweventset "Pathboosts researchers death"
 #scaleparam "req_domchance" 1.0
+#details "There is a {SCALEAMT-req_domchance-2}% chance per point of dominion to pick a random researcher with level 0-4 death magic in each friendly province. The researcher's death path is boosted by 1 permanently."
 
 #end
 

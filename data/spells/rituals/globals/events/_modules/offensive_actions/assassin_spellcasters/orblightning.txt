@@ -10,7 +10,7 @@
 #verb "Arcing"
 
 #moduledescr "SUBJECT may unexpectedly be struck by an arcing discharge of lightning."
-#moduledetails "Affected commanders are forced into a battle in which they have a 5AN chain lightning cast on them, which bounces up to 5 times. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they have a 5AN chain lightning cast on them, which bounces up to 5 times. Pretenders are unaffected by this spell."
 
 #usefixedunitid 562
 #allowedunitmod "Offensive Action Orb Lightning"

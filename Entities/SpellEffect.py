@@ -210,7 +210,18 @@ class SpellEffect(object):
                     self.fatigueperextraeffect = basecost
                     self.fatigueperextraeffectscaling = 0.3 ** 0.25
                     #self.scalelinear["nreff"] = 0.49
-                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    # Scaling ritual summons work out to be especially problematic.
+                    # All you need is one huge caster (a X10 god, maybe with a booster or two) and it gets REALLY problematic
+                    # because that one caster working flat out can dump your entire gem income into super efficient summons
+                    # Even worse if it's a trinity with a path split that means all three of them can do it.
+
+                    # With a more "normal" scaling factor of ~0.2, it means that taking a pretender for something
+                    # can summon things at ~3x the gem efficiency of the base version
+                    # Which is especially bad when it's a bringer of fortune modified summon, but even for regulars
+                    # it works out a bit much
+
+                    # The other kinds of spells don't have quite the same problem.
+                    self.attribscalingperpathlevels["nreff"] = 0.05
                     # High level spells that are more efficient ways to summon goats are not useful
                     if self.siegepatrolchaff:
                         self.stopatnreff = basenreff * 2.2
@@ -223,7 +234,8 @@ class SpellEffect(object):
                     self.scaledoubletime["nreff"] = 4.0
                     self.fatigueperextraeffect = basecost
                     self.fatigueperextraeffectscaling = 0.5 ** 0.25
-                    self.attribscalingperpathlevels["nreff"] = 0.25
+                    # See ritualsummon for why I'm doing this
+                    self.attribscalingperpathlevels["nreff"] = 0.05
                 elif self.scalingset == "buff":
                     self.fatigueperextraeffect = 0
                     self.pathperresearch = 0.34
@@ -374,7 +386,7 @@ class SpellEffect(object):
         # Have the event set generate
         if self.eventset is not None:
             realeventset = utils.eventsets[self.eventset]
-            eventsetcmds = realeventset.formatdata(self, s, scaleamt, secondary, actualpowerlvl)
+            eventsetcmds = realeventset.formatdata(self, s, secondary, actualpowerlvl)
             if eventsetcmds is None:
                 print(f"Failed to generate {self.name}: event set failed to generate")
                 return None
@@ -417,7 +429,7 @@ class SpellEffect(object):
         if not self._postScalingFatigueAdjustments(s, **options):
             return None
         plural = True if (s.aoe > 0 or s.nreff > 1) else False
-        if self.spelltype & SpellTypes.EVOCATION:
+        if self.spelltype & SpellTypes.EVOCATION and self.flightspr > 0:
             plural = True if (s.aoe > 1 or s.nreff > 1) else False
 
         # Naming needs these variables
@@ -967,6 +979,20 @@ class SpellEffect(object):
             print(f"Fail {self.name} as this is a national generation and the effect wants to fill permanent slots")
             return True
 
+        if options.get("nofieldwidespells", False):
+            if self.aoe > 660 and self.aoe < 700:
+                print(f"Fail {self.name}: field wide spells are banned")
+                return True
+            # Flames from the sky/murdering winter, Leprosy
+            if self.effect in (10041, 10064):
+                print(f"Fail {self.name}: field wide spells should stop x% of army hits as well")
+                return True
+            if self.effect == 81: # Battle enchantment
+                if self.damage != 1: # storm, it's forced to generate and storm power makes no sense without it
+                    print(f"Fail {self.name}: non-storm battle enchantment")
+                    return True
+
+
         if isnational and self.extraspell != "" and self.extraspell is not None:
             # Some things that come together (notably, elemental royalty) have different path requirements
             # The national spell generator will only pick one of these, so...
@@ -1196,6 +1222,7 @@ class SpellEffect(object):
         s.hiddenench = self.hiddenench
         s.friendlyench = self.friendlyench
         s.parenteffect = self
+        s.parent = options.get("parent", None)
         if s.details is None:
             s.details = ""
         if self.isnextspell:
@@ -1438,6 +1465,7 @@ class SpellEffect(object):
             optionscopy["forcepath"] = s.path1
             optionscopy["blockmodifier"] = True
             optionscopy["researchlevel"] = self.researchlevel + mod.power + secondarypower
+            optionscopy["parent"] = self
             print(f"Beginning generation of nextspell {self.nextspell.name} of parent {self.name}...")
             s.nextspell = self.nextspell.rollSpell(**optionscopy)
             if s.nextspell is None:

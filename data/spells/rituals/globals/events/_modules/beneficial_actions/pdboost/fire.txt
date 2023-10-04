@@ -5,7 +5,7 @@
 #req path1 == 1
 
 #scaleparam "defence" 1
-#modulebasescale 1
+
 
 #modulegroup "Beneficial Global Effect"
 #uniquemodule 1
@@ -15,7 +15,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find volunteers to serve in the local militia."
-#moduledetails "Grants SCALEAMT points of PD in affected provinces."
+#details "Grants {SCALEAMT-defence-1} points of PD in affected provinces."
 
 
 #end

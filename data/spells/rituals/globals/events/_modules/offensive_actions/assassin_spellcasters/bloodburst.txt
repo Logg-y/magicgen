@@ -10,7 +10,7 @@
 #verb "Explosive"
 
 #moduledescr "SUBJECT may experience their blood exploding without warning, inflicting severe wounds."
-#moduledetails "Affected commanders are be forced into a battle, where they are the target of Blood Burst, inflicting 11AN magical damage. Pretenders, undead and inanimates are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they are the target of Blood Burst, inflicting 11AN magical damage. Pretenders, undead and inanimates are unaffected by this spell."
 
 #usefixedunitid 303
 #allowedunitmod "Offensive Action Blood Burst"

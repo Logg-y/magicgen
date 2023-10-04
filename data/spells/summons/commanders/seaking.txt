@@ -41,7 +41,7 @@
 #power 7
 #maxpower 7
 #nreff 1
-#pathlevel 2
+#pathlevel 4
 #fatiguecost 4000
 #chassisvalue 2000
 

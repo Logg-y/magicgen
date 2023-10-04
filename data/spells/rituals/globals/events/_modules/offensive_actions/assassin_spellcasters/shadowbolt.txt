@@ -10,7 +10,7 @@
 #verb "Deathly"
 
 #moduledescr "SUBJECT may unexpectedly be subjected to a dark blast which bypasses their armour."
-#moduledetails "Affected commanders are be forced into a battle, where they become the target of Shadow Bolt, inflicting 10AN magical damage if they fail a MR check. Undead are immune to this effect. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they become the target of Shadow Bolt, inflicting 10AN magical damage if they fail a MR check. Undead are immune to this effect. Pretenders are unaffected by this spell."
 
 #usefixedunitid 676
 #allowedunitmod "Offensive Action Shadow Bolt"

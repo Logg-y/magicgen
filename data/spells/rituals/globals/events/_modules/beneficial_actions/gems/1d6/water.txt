@@ -11,7 +11,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may rarely find magical sapphires in ponds, lakes, puddles and other bodies of water."
-#moduledetails "Grants 1d6 water gems."
+#details "Grants 1d6 water gems."
 
 
 #end

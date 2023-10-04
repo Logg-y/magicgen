@@ -1,5 +1,7 @@
 #neweventset "Healing Site Permanent"
 
+#details "{SITESCALEAMT-heal-10} percent of the units in the province experience a healer check every turn. Fails if there are already 8 magic sites in the province."
+
 #magicsite "Healing Site"
 
 #end

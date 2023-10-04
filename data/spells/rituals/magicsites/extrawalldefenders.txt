@@ -33,9 +33,7 @@
 
 #wallcom 0
 #wallunit 0
-#wallmult 10
-
-#scaleparam "wallmult" 1.0
+#wallmult 3
 
 #end
 
@@ -73,9 +71,7 @@
 
 #wallcom 0
 #wallunit 0
-#wallmult 15
-
-#scaleparam "wallmult" 1.0
+#wallmult 5
 
 #end
 
@@ -114,8 +110,6 @@
 
 #wallcom 0
 #wallunit 0
-#wallmult 30
-
-#scaleparam "wallmult" 1.0
+#wallmult 10
 
 #end

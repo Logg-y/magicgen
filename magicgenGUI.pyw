@@ -16,7 +16,7 @@ CLARGS = ["spellsperlevel", "constructionfactor", "modlist", "nationalspells", "
           "pathlevelmodmult", "outputfolder", "unitidstart", "spellidstart", "weaponidstart", "siteidstart",
           "montagidstart", "diffpathsecondarychance",
           "eventcodestart", "enchantidstart", "montagscale", "clearvanillanationalspells", "clearvanillagenericspells", "bloodcostscale",
-          "siteidstart", "nobadaispells"]
+          "siteidstart", "nobadaispells", "nofieldwidespells"]
 
 ERA_PREFIXES = {1: "EA", 2: "MA", 3: "LA"}
 
@@ -25,7 +25,7 @@ nationselection = None
 outputqueue = queue.Queue()
 vanillanations = []
 
-ver = "v3.1.10"
+ver = "v3.1.11"
 
 
 def output_polling_thread(timeout=0.1):
@@ -87,7 +87,7 @@ DOWN_ARROW = "˅"
 defaultfolder = os.path.join(os.getcwd(), "output")
 
 NATIONS_PER_ROW = 3
-
+ADV_OPTIONS_MAX_PAGE = 3
 
 def display_nationchoice(modstring):
     global nationselection
@@ -358,16 +358,23 @@ def main():
             ,
             size=(50, 5), relief="ridge"),
             sg.InputText(key='-fatiguemodmult-', size=(4, 1), default_text=1.0)],
+    ]
 
-
+    adv_category_page3 = [
+        [sg.Text('Disable army wide spells. This is an experimental idea which might change lategame dynamics a lot.'
+                 ' This includes the vast majority of battle enchantments, and effects like Flames from the Sky. '
+                 '(0)', size=(50, 3),
+                 relief="ridge"),
+         sg.InputText(key='-nofieldwidespells-', size=(4, 1), default_text=0)],
     ]
 
     adv_category = [
         [sg.Button("<", key="AdvOptionsPrev"),
-         sg.Text("Page 1 of 2", key="AdvOptionsPageDisplay"),
+         sg.Text(f"Page 1 of {ADV_OPTIONS_MAX_PAGE}", key="AdvOptionsPageDisplay"),
          sg.Button(">", key="AdvOptionsNext")],
         [sg.pin(sg.Column(adv_category_page1, k="-AdvOptions1-"))],
-        [sg.pin(sg.Column(adv_category_page2, k="-AdvOptions2-", visible=False))]
+        [sg.pin(sg.Column(adv_category_page2, k="-AdvOptions2-", visible=False))],
+        [sg.pin(sg.Column(adv_category_page3, k="-AdvOptions3-", visible=False))]
 
     ]
 
@@ -421,7 +428,7 @@ def main():
     window = sg.Window(f"MagicGen {ver}: Generating New Spellbooks Since 1986!", layout)
     advOptionsPage = 1
 
-    ADV_OPTIONS_MAX_PAGE = 2
+
 
     # Event Loop to process "events" and get the "values" of the inputs
     generating = False

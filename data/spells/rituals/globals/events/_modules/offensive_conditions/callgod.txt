@@ -2,7 +2,7 @@
 #minpowerlevel -6
 #maxpowerlevel -1
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -13,9 +13,9 @@
 #textrepl "SUBJECT" "Priests calling their god"
 
 #moduledescr "This enchantment affects all those calling fallen Pretenders back to the world."
-#moduledetails "Every turn, each province makes five checks for a commander recalling their god, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes five checks for a commander recalling their god, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

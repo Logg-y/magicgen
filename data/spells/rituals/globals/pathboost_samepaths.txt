@@ -22,7 +22,7 @@
 
 #name 1 "Burning Insights"
 #descr 1 "This enchantment causes fire mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in fire magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 fire mage in each friendly province. Success boosts the mage's fire path by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts samepath air"
@@ -49,7 +49,7 @@
 
 #name 2 "Insightful Jolts"
 #descr 2 "This enchantment causes air mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in air magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 air mage in each friendly province. Success boosts the mage's air path by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts samepath water"
@@ -76,7 +76,7 @@
 
 #name 4 "Streams of Insight"
 #descr 4 "This enchantment causes water mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in water magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 water mage in each friendly province. Success boosts the mage's water path by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts samepath earth"
@@ -103,7 +103,7 @@
 
 #name 8 "Earthen Insight"
 #descr 8 "This enchantment causes earth mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in earth magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 earth mage in each friendly province. Success boosts the mage's earth path by 1 permanently."
+
 #end
 
 
@@ -131,7 +131,7 @@
 
 #name 16 "Otherworldly Insights"
 #descr 16 "This enchantment causes astral mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in astral magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 astral mage in each friendly province. Success boosts the mage's astral path by 1 permanently."
+
 #end
 
 
@@ -159,7 +159,7 @@
 
 #name 32 "Insight of the Dead"
 #descr 32 "This enchantment causes death mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in death magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 death mage in each friendly province. Success boosts the mage's death path by 1 permanently."
+
 #end
 
 #neweffect "Pathboosts samepath nature"
@@ -186,7 +186,7 @@
 
 #name 64 "Natural Insight"
 #descr 64 "This enchantment causes nature mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in nature magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 nature mage in each friendly province. Success boosts the mage's nature path by 1 permanently."
+
 #end
 
 
@@ -214,5 +214,5 @@
 
 #name 128 "Insight of Blood"
 #descr 128 "This enchantment causes blood mages in friendly dominion to occasionally gain sparks of insight that increase their magical skill. This affects only those who had some skill in blood magic to begin with."
-#details "There is a SCALEAMT% chance per point of dominion to pick a random level 1-4 blood mage in each friendly province. Success boosts the mage's blood path by 1 permanently."
+
 #end

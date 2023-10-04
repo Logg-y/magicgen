@@ -191,7 +191,7 @@
 #skipchance 90
 #precision 3
 #range 30
-#pathlevel 7
+#pathlevel 8
 #fatiguecost 500
 #explspr 10180
 #sound 16

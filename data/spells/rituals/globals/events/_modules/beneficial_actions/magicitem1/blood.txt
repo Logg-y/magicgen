@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may be given a magical item from demons."
-#moduledetails "Grants a random non-national construction 0-2 item."
+#details "Grants a random non-national construction 0-2 item."
 
 
 #end

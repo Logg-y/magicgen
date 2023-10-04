@@ -10,7 +10,7 @@
 #verb "Glowing"
 
 #moduledescr "SUBJECT may unexpectedly be struck by a shower of large embers."
-#moduledetails "Affected commanders are forced into a battle in which they are the target of a shower of three burning embers (each inflicting 10AP fire damage, as per vanilla Fire Darts). Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the target of a shower of three burning embers (each inflicting 10AP fire damage, as per vanilla Fire Darts). Pretenders are unaffected by this spell."
 
 #usefixedunitid 640
 #allowedunitmod "Offensive Action Fire Darts"

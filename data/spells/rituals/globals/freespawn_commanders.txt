@@ -7,6 +7,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
+#fatigueperresearch 700
 
 #schools 1
 #paths fawe
@@ -51,6 +52,7 @@
 #nreff 1
 #pathlevel 6
 #fatiguecost 5500
+#fatigueperresearch 700
 
 #schools 1
 #paths sdnb

@@ -2,7 +2,7 @@
 
 #name 1 "Pyre of Focusing Flames"
 
-#firerange 1
+#firerange 2
 #scaleparam "firerange" 1.0
 
 #end

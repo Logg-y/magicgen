@@ -4,8 +4,8 @@
 
 #req path1 == 128
 
-#scaleparam "xp" 7
-#modulebasescale 10
+#scaleparam "xp" 1.0
+
 
 #modulegroup "Beneficial Global Effect"
 #uniquemodule 1
@@ -14,7 +14,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may call forth demons. These demons will teach a random local commander in the art of war."
-#moduledetails "Grants SCALEAMT experience to a random nonsneaking commander in affected provinces."
+#details "Grants {SCALEAMT-xp-10} experience to a random nonsneaking commander in affected provinces."
 
 
 #end

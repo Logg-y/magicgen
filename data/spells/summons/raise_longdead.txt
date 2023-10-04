@@ -43,7 +43,7 @@
 #spec 8388608
 #power 0
 #maxpower 6
-#nreff 38
+#nreff 30
 #pathlevel 1
 #fatiguecost 720
 #schools 16

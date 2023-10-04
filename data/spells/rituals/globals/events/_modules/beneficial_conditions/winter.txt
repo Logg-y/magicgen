@@ -3,7 +3,7 @@
 #maxpowerlevel -4
 
 
-#scaleparam_mult "req_domchance" 0.2
+#scaleparam "req_domchance" 1.0
 
 
 #modulegroup "Beneficial Global Condition"
@@ -18,7 +18,7 @@
 #textrepl "SUBJECT" "The common populace"
 
 #moduledescr "In winter, this enchantment affects all friendly provinces with the caster's dominion."
-#moduledetails "Every turn in the three months of winter, each friendly province has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-3} percent chance to trigger per point of dominion."
+#details "Every turn in the three months of winter, each friendly province has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-req_domchance-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-req_domchance-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-req_domchance-3} percent chance to trigger per point of dominion."
 
 
 

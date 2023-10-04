@@ -59,7 +59,7 @@
 
 #aoe 666
 #power 7
-#pathlevel 5
+#pathlevel 6
 #explspr 10131
 #sound 16
 #fatiguecost 200

@@ -47,7 +47,7 @@
 #spelltype 18
 #nreff 1
 #aoe 666
-#pathlevel 4
+#pathlevel 5
 #power 6
 #maxpower 6
 #explspr 10108

@@ -1,4 +1,4 @@
-#newsecondary "Protforce Secondary mrn"
+#newsecondary "Protforce Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -26,14 +26,14 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Protforce Secondary mrn"
+#nextspell "Protforce Secondary mrne"
 
 #descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+#details "Creatures in the area when the spell is cast make an easy MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
 
 #end
 
-#newsecondary "Protforce Secondary mrnh"
+#newsecondary "Protforce Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -61,9 +61,9 @@
 #scalingaoelimit 1.5
 
 
-#nextspell "Protforce Secondary mrnh"
+#nextspell "Protforce Secondary mrn"
 
 #descr "This spell may also surround those it affects with swirling stones, blocking some attacks made against them."
-#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants protective force 20, giving them a 50% chance to gain +20 protection whenever damaged."
 
 #end

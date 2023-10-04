@@ -10,7 +10,7 @@
 #verb "Rebellious"
 
 #moduledescr "SUBJECT may unexpectedly decide to turn against their former allies."
-#moduledetails "Affected commanders are be forced into a battle, where they must succeed at a magic resistance check or become charmed by an independent faction. This results in them attacking their current province. Pretenders and prophets will not be targeted by this spell."
+#details "Affected commanders are be forced into a battle, where they must succeed at a magic resistance check or become charmed by an independent faction. This results in them attacking their current province. Pretenders and prophets will not be targeted by this spell."
 
 #usefixedunitid 361
 #allowedunitmod "Offensive Action Charm"

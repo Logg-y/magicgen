@@ -10,7 +10,7 @@
 #verb "Mindstriking"
 
 #moduledescr "SUBJECT may unexpectedly have their minds assaulted by magical powers."
-#moduledetails "Affected commanders are be forced into a battle, where they must make a magic resistance check or suffer 13 AN magical damage. Mindless beings are immune to this effect. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they must make a magic resistance check or suffer 13 AN magical damage. Mindless beings are immune to this effect. Pretenders are unaffected by this spell."
 
 #usefixedunitid 106
 #allowedunitmod "Offensive Action Mind Burn"

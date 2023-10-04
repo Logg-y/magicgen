@@ -239,8 +239,8 @@
 #paths bf
 #secondarypaths f
 
-#namecond effectiveaoe == 1 f "NAMEPREFIX Cauterise Wounds"
-#namecond effectiveaoe == 1 b "NAMEPREFIX Cauterise Wounds"
+#name f "NAMEPREFIX Cauterise Wounds"
+#name b "NAMEPREFIX Cauterise Wounds"
 
 #descr f "The wounds of troops across a SIZE area are rapidly cauterised, allowing the recipients to continue fighting. The process may however ignite those that are not fire resistant."
 #descr b "$BLOOD_INTRO$, the caster cauterises the wounds of troops across a SIZE area, allowing the recipients to continue fighting. The process may however ignite those that are not fire resistant."
@@ -248,6 +248,7 @@
 
 #priority 1
 #namecond effect > 1000 f "NAMEPREFIX $mist$ of cauterisation"
+#namecond effect > 1000 b "NAMEPREFIX $mist$ of cauterisation"
 
 #maxpower 0
 #aispellmod -10

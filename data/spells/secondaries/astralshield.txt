@@ -1,4 +1,4 @@
-#newsecondary "Astralshield Secondary mrn"
+#newsecondary "Astralshield Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -21,43 +21,15 @@
 #scalingaoelimit 1.5
 
 
-#nextspell "Astralshield Secondary mrn"
-
-#descr "This spell may also surround those it affects with swirling astral energy, paralysing those who attack in melee."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
-
-#end
-
-#newsecondary "Astralshield Secondary mrne"
-
--- buff only
-#spelltype 1
-
-#paths 16
-#power 0
-
--- various damage types
-#reqdamagingeffect 0
-
-#req damage != 268435456
-#req effect != 15	    -- returning
-
--- not ritual
-#req spelltype !& 4
-
-#nameprefix "Astralfire"
-#fatiguepersquare 0
-#minfinalaoe 12
-#scalingaoelimit 2.0
-
-
 #nextspell "Astralshield Secondary mrne"
 
 #descr "This spell may also surround those it affects with swirling astral energy, paralysing those who attack in melee."
 #details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
+
 #end
 
-#newsecondary "Astralshield Secondary mrnh"
+
+#newsecondary "Astralshield Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -80,8 +52,8 @@
 #scalingaoelimit 1.2
 
 
-#nextspell "Astralshield Secondary mrnh"
+#nextspell "Astralshield Secondary mrn"
 
 #descr "This spell may also surround those it affects with swirling astral energy, paralysing those who attack in melee."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain astral shield: melee attackers take 12 + astral level paralysis damage, reduced by weapon length. Magic resistance negates the paralysis."
 #end

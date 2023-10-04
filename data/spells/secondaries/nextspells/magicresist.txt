@@ -31,6 +31,39 @@
 
 #end
 
+#neweffect "Magicresist Secondary mrne"
+#effect 10
+#damage 67108864
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10277
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Resistance"
+#name 2 "$Additional$ Resistance"
+#name 4 "$Additional$ Resistance"
+#name 8 "$Additional$ Resistance"
+#name 16 "$Additional$ Resistance"
+#name 32 "$Additional$ Resistance"
+#name 64 "$Additional$ Resistance"
+#name 128 "$Additional$ Resistance"
+#name 256 "$Additional$ Resistance"
+
+#end
+
 #neweffect "Magicresist Secondary mrnh"
 #effect 10
 #damage 67108864

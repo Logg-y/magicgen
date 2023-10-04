@@ -2,7 +2,7 @@
 #minpowerlevel 2
 #maxpowerlevel 6
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 #req path1 == 1
 
@@ -14,9 +14,9 @@
 #textrepl "SUBJECT" "Random commanders"
 
 #moduledescr "This enchantment affects commanders across the world, but its effects cannot touch those where a fire mage is present."
-#moduledetails "Every turn, each province without a fire mage makes five checks for any commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province without a fire mage makes five checks for any commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

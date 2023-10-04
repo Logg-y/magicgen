@@ -33,6 +33,8 @@ def readEffectFile(fp):
 						raise ParseError(f"{fp} line {lineno}: Expected an effect name, none was found")
 					curreff = SpellEffect(fp)
 					curreff.name = m.groups()[0]
+					if curreff.name in out:
+						raise ParseError(f"{fp} line {lineno}: {curreff.name} is already defined in this file!")
 					currPriority = 0
 
 				else:

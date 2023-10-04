@@ -2,7 +2,7 @@
 #minpowerlevel -8
 #maxpowerlevel -3
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -16,9 +16,9 @@
 #textrepl "SUBJECT" "Those constructing fortifications"
 
 #moduledescr "This enchantment affects all those directing construction of large fortifications."
-#moduledetails "Every turn, each province makes one check for a commander building or upgrading a fort, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes one check for a commander building or upgrading a fort, each with a {SCALEAMT-req_rare-15} percent chance of occuring."
 
-#modulebasescale 15
+
 
 #end
 

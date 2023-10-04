@@ -13,7 +13,7 @@
 -- --#verb "Disastrous"
 -- 
 -- #moduledescr "SUBJECT may discover new ore and gem deposits where there were previously none."
--- #moduledetails "Adds either a copper, iron, silver, gold or gem deposit to affected provinces."
+-- #details "Adds either a copper, iron, silver, gold or gem deposit to affected provinces."
 -- 
 -- #end
 -- 

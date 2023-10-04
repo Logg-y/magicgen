@@ -185,9 +185,9 @@
 #aoe 666
 #power 7
 #maxpower 14
-#pathlevel 5
+#pathlevel 7
 #sound 18
-#fatiguecost 300
+#fatiguecost 500
 #precision 25
 #range 30
 

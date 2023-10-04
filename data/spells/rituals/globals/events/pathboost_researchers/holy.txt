@@ -1,4 +1,5 @@
 #neweventset "Pathboosts researchers holy"
+#details "There is a {SCALEAMT-req_domchance-2}% chance per point of dominion to pick a random researcher with level 0-4 holy magic in each friendly province. The researcher's holy path is boosted by 1 permanently. Pretenders and disciples cannot be affected."
 #scaleparam "req_domchance" 1.0
 
 #end

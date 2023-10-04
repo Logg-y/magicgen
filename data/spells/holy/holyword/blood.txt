@@ -2,7 +2,7 @@
 
 #neweffect "Holy Word Bleed apply"
 #effect 11
-#damage 256
+#damage 8192
 #spec 49152
 #schools -1
 -- evo, scale aoe

@@ -2,7 +2,7 @@
 #minpowerlevel -5
 #maxpowerlevel 0
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -15,9 +15,9 @@
 #textrepl "SUBJECT" "Preachers"
 
 #moduledescr "This enchantment affects all those spreading the word of the Pretenders."
-#moduledetails "Every turn, each province makes five checks for a preaching commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes five checks for a preaching commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

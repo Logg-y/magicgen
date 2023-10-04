@@ -10,7 +10,7 @@
 #verb "Charged"
 
 #moduledescr "SUBJECT may unexpectedly be struck by an extremely strong static charge."
-#moduledetails "Affected commanders are forced into a battle in which they have a large area 10AN shock spell cast at them. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they have a large area 10AN shock spell cast at them. Pretenders are unaffected by this spell."
 
 #usefixedunitid 562
 #allowedunitmod "Offensive Action Shimmering Field"

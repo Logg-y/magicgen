@@ -15,7 +15,7 @@
 #verb "Burning"
 
 #moduledescr "The ambient temperature in affected provinces mysteriously increases."
-#moduledetails "Increases the heat scale of the province by 1."
+#details "Increases the heat scale of the province by 1."
 
 
 #end

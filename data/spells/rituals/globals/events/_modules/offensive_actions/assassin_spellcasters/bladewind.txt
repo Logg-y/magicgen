@@ -10,7 +10,7 @@
 #verb "Bladed"
 
 #moduledescr "SUBJECT may unexpectedly be caught in sudden volleys of flying blades."
-#moduledetails "Affected commanders are forced into a battle in which they are the the target of forty nonmagical blades, each inflicting 14 non-magical slashing damage. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the the target of forty nonmagical blades, each inflicting 14 non-magical slashing damage. Pretenders are unaffected by this spell."
 
 #usefixedunitid 561
 #allowedunitmod "Offensive Action Blade Wind"

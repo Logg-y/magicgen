@@ -31,6 +31,40 @@
 
 #end
 
+#neweffect "Fireshield Secondary mrne"
+#effect 23
+#damage 32768
+#spec 20987904
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10203
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Fire Shield"
+#name 2 "$Additional$ Fire Shield"
+#name 4 "$Additional$ Fire Shield"
+#name 8 "$Additional$ Fire Shield"
+#name 16 "$Additional$ Fire Shield"
+#name 32 "$Additional$ Fire Shield"
+#name 64 "$Additional$ Fire Shield"
+#name 128 "$Additional$ Fire Shield"
+#name 256 "$Additional$ Fire Shield"
+
+#end
+
+
 #neweffect "Fireshield Secondary mrnh"
 #effect 23
 #damage 32768

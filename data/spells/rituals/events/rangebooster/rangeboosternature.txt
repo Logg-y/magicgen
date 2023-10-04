@@ -1,5 +1,7 @@
 #neweventset "Range Booster Site Nature"
 
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Nature rituals by {SITESCALEAMT-naturerange-2} provinces. Fails if cast in a province with 8 magic sites already."
+
 #magicsite "Range Booster Site Nature"
 
 #end

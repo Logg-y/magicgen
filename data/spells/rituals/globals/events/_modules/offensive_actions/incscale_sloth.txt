@@ -17,7 +17,7 @@
 #verb "Slothful"
 
 #moduledescr "The populace of affected provinces becomes filled with laziness."
-#moduledetails "Increases the sloth scale of the province by 1."
+#details "Increases the sloth scale of the province by 1."
 
 
 #end

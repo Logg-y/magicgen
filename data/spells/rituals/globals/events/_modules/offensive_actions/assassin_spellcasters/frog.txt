@@ -10,7 +10,7 @@
 #verb "Caecilian"
 
 #moduledescr "SUBJECT may unexpectedly transform into frogs."
-#moduledetails "Affected commanders are be forced into a battle, where they must make a magic resistance check or be permanently transformed into a frog. Pretenders, mindless, undead, or inanimates will not be targeted by this spell."
+#details "Affected commanders are be forced into a battle, where they must make a magic resistance check or be permanently transformed into a frog. Pretenders, mindless, undead, or inanimates will not be targeted by this spell."
 
 #usefixedunitid 361
 #allowedunitmod "Offensive Action Frog"

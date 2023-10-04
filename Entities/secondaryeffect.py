@@ -270,11 +270,11 @@ class SpellSecondaryEffect(object):
 
         # aoe limit so that mass rust doesn't get decay/burning etc
         # don't apply to holy spells as (at research 0) they need to be allowed this
-        if self.scalingaoelimit is None and self.offensiveeffect != 0 and eff.paths != 256:
+        if self.scalingaoelimit is None and self.offensiveeffect != 0 and eff.paths != PathFlags.HOLY:
             scalingaoelimit = 1.0
         else:
             scalingaoelimit = self.scalingaoelimit
-        if scalingaoelimit is not None:
+        if scalingaoelimit is not None and eff.paths != PathFlags.HOLY:
             if finalaoe > 600:
                 finalaoe = 50
             maxbaseaoe = scalingaoelimit * ((researchlevel * (researchlevel + 1)) / 2)

@@ -4,8 +4,8 @@
 
 #req path1 == 64
 
-#scaleparam "taxboost" 5
-#modulebasescale 10
+#scaleparam "taxboost" 1.0
+
 
 #modulegroup "Beneficial Global Effect"
 #uniquemodule 1
@@ -14,7 +14,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find local crop harvests especially bountiful."
-#moduledetails "Grants SCALEAMT percent more tax in affected provinces."
+#details "Grants {SCALEAMT-taxboost-10} percent more tax in affected provinces."
 
 
 #end

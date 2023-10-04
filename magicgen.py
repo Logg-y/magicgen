@@ -23,12 +23,12 @@ from Enums.SchoolFlags import SchoolFlags
 from Services import utils, DebugLogger
 from fileparser import nationals, unitinbasedatafinder
 
-# List of spells to not push to uncastable: these are only divine spells
+# List of spells to not push to uncastable: these are basic divine spells (Blessing, Sermon, Divine Channeling, etc)
 spellstokeep = [150, 165, 168, 169, 189, 190]
 
 # All spells below this ID get moved to unresearchable
 START_ID = 1300
-ver = "3.1.10"
+ver = "3.1.11"
 
 ALL_PATH_FLAGS = [PathFlags(2 ** x) for x in range(0, 8)]
 
@@ -231,14 +231,16 @@ def generateHolySpells(**options):
                         # these specmasks are extra effect and extra effect on damage
                         if (not isinstance(spelleff.nextspell, SpellEffect)) and (
                                 (spelleff.spec & 576460752303423488) or (spelleff.spec & 1152921504606846976)):
-                            outputSpells.append(spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
+                            thisSpell = spelleff.rollSpell(spelleff.power, forcesecondaryeff=path,
                                                         blockmodifier=True,
-                                                        allowskipchance=False, **options))
+                                                        allowskipchance=False, **options)
                         else:  # block secondaries on things that DO have a nextspell built in
-                            outputSpells.append(
-                                spelleff.rollSpell(spelleff.power, blocksecondary=True, forcesecondaryeff=path,
+                            thisSpell = spelleff.rollSpell(spelleff.power, blocksecondary=True, forcesecondaryeff=path,
                                                    blockmodifier=True,
-                                                   allowskipchance=False, **options))
+                                                   allowskipchance=False, **options)
+                        if thisSpell is None:
+                            raise ValueError(f"Holy spell effect {spelleff} failed to generate!")
+                        outputSpells.append(thisSpell)
                         break
     return outputSpells
 
@@ -893,6 +895,11 @@ def main():
     opts.append(Option("-nobadaispells",
                        help='If set to 1, certain spells which make the AI waste gems stupidly will not be generated.'
                             ' Use this if planning on playing vs AI.',
+                       type=int, default=0))
+
+    opts.append(Option("-nofieldwidespells",
+                       help='If set to 1, spells that hit a percentage of an army will not generate.'
+                            ' This includes the vast majority of battle enchantments.',
                        type=int, default=0))
 
     opts.append(

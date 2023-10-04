@@ -61,7 +61,7 @@
 
 #aoe 666
 #power 8
-#pathlevel 6
+#pathlevel 7
 #maxpower 8
 #explspr 10189
 #sound 31

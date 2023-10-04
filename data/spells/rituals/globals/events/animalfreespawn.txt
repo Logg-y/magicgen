@@ -1,5 +1,7 @@
 #neweventset "Animal Freespawn"
 
+#details "Each friendly province has three independent chances at {SCALEAMT-req_domchance-1}% per point of friendly dominion to spawn 1d3 random animals. There is also a single {SCALEAMT-req_domchance-1}% chance per point of dominion that a random animal commander spawns. Animals spawned by this spell are selected from all animals in the game, except that the following tags prevent selection: unique, sacreds, shapechange, firstshape, growhp, pretender chassis, any magic paths. Animals may immediately drown wherever they spawn, however."
+
 #scaleparam "req_domchance" 1.0
 
 #end

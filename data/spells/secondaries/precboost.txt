@@ -1,4 +1,4 @@
-#newsecondary "Precboost Secondary mrn"
+#newsecondary "Precboost Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -24,14 +24,14 @@
 #minfinalaoe 12
 
 
-#nextspell "Precboost Secondary mrn"
+#nextspell "Precboost Secondary mrne"
 
 #descr "This spell may also make those it affects more accurate with ranged attacks."
-#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants +5 precision."
+#details "Creatures in the area when the spell is cast make an easy MR check. Failing this check grants +5 precision."
 
 #end
 
-#newsecondary "Precboost Secondary mrnh"
+#newsecondary "Precboost Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -57,9 +57,9 @@
 #minfinalaoe 6
 
 
-#nextspell "Precboost Secondary mrnh"
+#nextspell "Precboost Secondary mrn"
 
 #descr "This spell may also make those it affects more accurate with ranged attacks."
-#details "Creatures in the area when the spell is cast make a hard MR check. Failing this check grants +5 precision."
+#details "Creatures in the area when the spell is cast make an MR check. Failing this check grants +5 precision."
 
 #end

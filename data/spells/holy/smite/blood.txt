@@ -24,7 +24,7 @@
 #end
 
 #neweffect "Smite Blood Bleed"
-#effect 109
+#effect 2
 #damage 10
 #spec 1152921504615256192
 #range 5020
@@ -91,7 +91,7 @@
 #end
 
 #neweffect "Smite Blood Inferno"
-#effect 109
+#effect 2
 #damage 10
 #spec 1152921504615256192
 #range 5020
@@ -157,7 +157,7 @@
 #end
 
 #neweffect "Smite Blood Kokytos"
-#effect 109
+#effect 2
 #damage 10
 #spec 1152921504615256192
 #range 5020

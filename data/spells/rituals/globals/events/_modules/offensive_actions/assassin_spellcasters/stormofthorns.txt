@@ -10,7 +10,7 @@
 #verb "Thorny"
 
 #moduledescr "SUBJECT may unexpectedly become impaled by many sharp thorns."
-#moduledetails "Affected commanders are be forced into a battle, where seven vine arrows are fired at them. Each arrow inflicts 15 magical piercing damage if it hits. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where seven vine arrows are fired at them. Each arrow inflicts 15 magical piercing damage if it hits. Pretenders are unaffected by this spell."
 
 #usefixedunitid 361
 #allowedunitmod "Offensive Action Storm of Thorns"

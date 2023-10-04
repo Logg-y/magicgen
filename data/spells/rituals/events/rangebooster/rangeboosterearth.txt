@@ -1,5 +1,7 @@
 #neweventset "Range Booster Site Earth"
 
+#details "Lasts 1 month plus 1 month per gem spent. Increases the range of Earth rituals by {SITESCALEAMT-earthrange-2} provinces. Fails if cast in a province with 8 magic sites already."
+
 #magicsite "Range Booster Site Earth"
 
 #end

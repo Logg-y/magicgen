@@ -16,7 +16,7 @@
 #verb "Chilling"
 
 #moduledescr "The ambient temperature in affected provinces mysteriously decreases."
-#moduledetails "Increases the cold scale of the province by 1."
+#details "Increases the cold scale of the province by 1."
 
 
 #end

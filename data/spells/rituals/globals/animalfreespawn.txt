@@ -18,7 +18,7 @@
 
 #name 64 "Faunal Control"
 #descr 64 "This enchantment grants the caster control of all kinds of animals, which will gradually gather under his control. This includes otherworldly or other strange animals that are not native to the caster's lands. Some will gain the gift of command and reasoning."
-#details "Each friendly province has three independent chances at SCALEAMT% per point of friendly dominion to spawn 1d3 random animals. There is also a single SCALEAMT% chance per point of dominion that a random animal commander spawns. Animals spawned by this spell are selected from all animals in the game, except that the following tags prevent selection: unique, sacreds, shapechange, firstshape, growhp, pretender chassis, any magic paths. Animals may immediately drown wherever they spawn, however."
+
 
 #basescale 1
 #spelltype 4

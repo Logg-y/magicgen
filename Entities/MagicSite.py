@@ -57,6 +57,10 @@ class MagicSite(object):
         for param in UNITPARAMS:
             setattr(self, param, None)
 
+    def getScaleParamValue(self, paramname, paramvalue, scaleamt):
+        scaleweight = self.scaleparams[paramname]
+        return int(scaleamt * scaleweight * paramvalue)
+
     def formatdata(self, spelleffect, spell, scaleamt, secondaryeffect, actualpowerlvl):
         siteid = copy.copy(utils.SITE_ID)
         utils.SITE_ID += 1
@@ -85,7 +89,7 @@ class MagicSite(object):
             if param in self.scaleparams:
                 scaleweight = self.scaleparams[param]
                 output += f"-- Scaling param {param} with weight {scaleweight}\n"
-                newparamval = int((scaleweight * scaleamt) + getattr(self, param))
+                newparamval = self.getScaleParamValue(param, getattr(self, param), scaleamt)
                 output += f"#{param} {newparamval}\n"
             else:
                 paramval = getattr(self, param)

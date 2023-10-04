@@ -48,7 +48,7 @@
 #maxpower 8
 #precision 2
 #range 30
-#pathlevel 5
+#pathlevel 7
 #fatiguecost 200
 #explspr 10199
 #sound 42

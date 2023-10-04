@@ -13,7 +13,7 @@
 #verb "Cursed"
 
 #moduledescr "SUBJECT may be affected by malign magic and become cursed."
-#moduledetails "Affected commanders become cursed."
+#details "Affected commanders become cursed."
 
 
 #end

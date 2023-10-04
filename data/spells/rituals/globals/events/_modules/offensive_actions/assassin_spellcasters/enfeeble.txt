@@ -10,7 +10,7 @@
 #verb "Weakening"
 
 #moduledescr "SUBJECT may unexpectedly become permanently weaker."
-#moduledetails "Affected commanders are be forced into a battle, where they become the target of a spell that causes them to lose 2 points of strength if they fail a magic resistance check. Multiple applications of this effect are cumulative. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they become the target of a spell that causes them to lose 2 points of strength if they fail a magic resistance check. Multiple applications of this effect are cumulative. Pretenders are unaffected by this spell."
 
 #usefixedunitid 676
 #allowedunitmod "Offensive Action Enfeeble"

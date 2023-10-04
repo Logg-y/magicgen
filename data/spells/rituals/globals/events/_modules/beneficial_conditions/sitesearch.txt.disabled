@@ -3,8 +3,8 @@
 #minpowerlevel -2
 #maxpowerlevel 1
 
-#scaleparam "req_domchance" 2
-#modulebasescale 2
+#scaleparam "req_domchance" 1.0
+
 
 
 #modulegroup "Beneficial Global Condition"
@@ -17,7 +17,7 @@
 #textrepl "SUBJECT" "Site searchers"
 
 #moduledescr "This enchantment affects friendly priests and mages searching for magical sites."
-#moduledetails "Every turn, each province with any site searching commander has a SCALEAMT percent chance to be affected per point of friendly dominion in the province."
+#details "Every turn, each province with any site searching commander has a {SCALEAMT-req_domchance-2} percent chance to be affected per point of friendly dominion in the province."
 
 
 

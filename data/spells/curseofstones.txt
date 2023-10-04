@@ -56,11 +56,11 @@
 -- 
 
 #aoe 666
-#power 8
-#pathlevel 7
+#power 5
+#pathlevel 4
 #explspr 10270
 #sound 31
-#fatiguecost 400
+#fatiguecost 200
 #range 5020
 
 #paths eb
@@ -80,7 +80,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
 
-#maxpower 8
+#maxpower 5
 #scalingset ""
 #end
 
@@ -99,11 +99,11 @@
 -- 
 
 #aoe 666
-#power 8
-#pathlevel 7
+#power 6
+#pathlevel 5
 #explspr 10270
 #sound 31
-#fatiguecost 400
+#fatiguecost 200
 #range 5020
 
 #paths 8
@@ -121,7 +121,7 @@
 #namecond effect > 1000 32 "NAMEPREFIX burdensome $mist$"
 
 
-#maxpower 8
+#maxpower 6
 #scalingset ""
 #end
 

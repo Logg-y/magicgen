@@ -54,6 +54,8 @@ class Spell(object):
         self.hiddenench = None
         self.friendlyench = None
 
+        self.parent: Spell = None
+
         self.hasgenerated = False
 
     def p(self):

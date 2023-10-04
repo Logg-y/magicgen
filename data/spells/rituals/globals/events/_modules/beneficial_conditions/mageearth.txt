@@ -3,7 +3,7 @@
 #maxpowerlevel -1
 
 
-#scaleparam_mult "req_domchance" 0.2
+#scaleparam "req_domchance" 1.0
 #moduleskipchance 80
 
 #req path1 == 8
@@ -17,7 +17,7 @@
 #textrepl "SUBJECT" "Earth mages"
 
 #moduledescr "This enchantment affects friendly provinces containing earth mages."
-#moduledetails "Every turn, each friendly province with an earth mage has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-3} percent chance to trigger per point of dominion."
+#details "Every turn, each friendly province with an earth mage has three independent chances to be affected. Each chance is rolled individually for each province.\nThe first chance has a {SCALEAMT-req_domchance-10} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe second chance has a {SCALEAMT-req_domchance-5} percent chance to trigger per point of dominion, to a limit of three per turn.\nThe third chance has a {SCALEAMT-req_domchance-3} percent chance to trigger per point of dominion."
 
 
 

@@ -31,6 +31,40 @@
 
 #end
 
+#neweffect "Ironskin Secondary mrne"
+#effect 10
+#damage 268435456
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10058
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Ironskin"
+#name 2 "$Additional$ Ironskin"
+#name 4 "$Additional$ Ironskin"
+#name 8 "$Additional$ Ironskin"
+#name 16 "$Additional$ Ironskin"
+#name 32 "$Additional$ Ironskin"
+#name 64 "$Additional$ Ironskin"
+#name 128 "$Additional$ Ironskin"
+#name 256 "$Additional$ Ironskin"
+
+#end
+
+
 #neweffect "Ironskin Secondary mrnh"
 #effect 10
 #damage 268435456

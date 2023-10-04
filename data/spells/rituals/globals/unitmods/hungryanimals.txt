@@ -12,6 +12,8 @@
 #req magicbeing <= 0
 -- please don't actually make USEFUL things (simargl)
 #req patrolbonus <= 0
+-- no cockatrice
+#req dungeon < 1
 #nameprefix "Ravenous"
 #end
 

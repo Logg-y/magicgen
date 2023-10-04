@@ -1,5 +1,7 @@
 #neweventset "XP Site Permanent"
 
+#details "Can only be cast in capital provinces. Produces a permanent site, which any commander may spend a turn entering to grant {SITESCALEAMT-xp-10} experience to themselves and all troops under their command. Only one such site can exist per capital province."
+
 #magicsite "XP Site Permanent"
 
 #end

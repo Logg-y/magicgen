@@ -4,8 +4,8 @@
 
 #req path1 == 1
 
-#scaleparam "gold" 10
-#modulebasescale 20
+#scaleparam "gold" 1.0
+
 
 #modulegroup "Beneficial Global Effect"
 #uniquemodule 1
@@ -14,11 +14,11 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find that metal objects they touch occasionally become converted to solid gold."
-#moduledetails "Grants SCALEAMT gold."
+#details "Grants {SCALEAMT-gold-30} gold."
 
 
 #end
 
-#gold 20
+#gold 30
 #msg "With a mere touch, some mundane metal has been turned to gold!"
 #nolog

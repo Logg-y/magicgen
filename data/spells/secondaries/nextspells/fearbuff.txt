@@ -31,6 +31,40 @@
 
 #end
 
+#neweffect "Fearbuff Secondary mrne"
+#effect 23
+#damage 16
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10197
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Fear Aura"
+#name 2 "$Additional$ Fear Aura"
+#name 4 "$Additional$ Fear Aura"
+#name 8 "$Additional$ Fear Aura"
+#name 16 "$Additional$ Fear Aura"
+#name 32 "$Additional$ Fear Aura"
+#name 64 "$Additional$ Fear Aura"
+#name 128 "$Additional$ Fear Aura"
+#name 256 "$Additional$ Fear Aura"
+
+#end
+
+
 #neweffect "Fearbuff Secondary mrnh"
 #effect 23
 #damage 16

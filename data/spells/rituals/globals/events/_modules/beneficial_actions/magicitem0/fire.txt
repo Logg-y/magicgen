@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find normal items produced in forges suddenly become infused with magical powers."
-#moduledetails "Grants a random non-national construction 0 item."
+#details "Grants a random non-national construction 0 item."
 
 
 #end

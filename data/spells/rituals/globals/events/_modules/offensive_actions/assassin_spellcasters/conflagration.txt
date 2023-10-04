@@ -10,7 +10,7 @@
 #verb "Combusting"
 
 #moduledescr "SUBJECT may spontaneously combust without warning."
-#moduledetails "Affected commanders are forced into a battle in which they are targeted by burning. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are targeted by burning. Pretenders are unaffected by this spell."
 
 #usefixedunitid 640
 #allowedunitmod "Offensive Action Conflagration"

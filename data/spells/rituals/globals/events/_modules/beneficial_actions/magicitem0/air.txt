@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may be harmlessly struck by lightning, converting a mundane item they are holding into a magical item."
-#moduledetails "Grants a random non-national construction 0 item."
+#details "Grants a random non-national construction 0 item."
 
 
 #end

@@ -1,4 +1,5 @@
 #neweventset "Pathboosts multi anycommander"
+#details "For each of the 8 magic paths per friendly province, there is a {SCALEAMT-req_domchance-1}% chance per point of dominion to pick a random commander of level 0-4 in the respective path. Even if successful, there is a further 70% chance to do nothing. Success boosts the commander's path in the respective magic type by 1 permanently. They also gain a horror mark."
 #scaleparam "req_domchance" 1.0
 
 #end

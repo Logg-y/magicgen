@@ -25,6 +25,7 @@
 #neweffect "Short Frost Dome"
 #copyspell "Murdering Winter"
 #fixeddurationenchantment 1
+#hiddenench 1
 #effect 10086
 #provrange 4
 #onlyfriendlydst 1
@@ -85,6 +86,7 @@
 
 #neweffect "Short Forest Dome"
 #copyspell "Murdering Winter"
+#hiddenench 1
 #fixeddurationenchantment 1
 #effect 10086
 #provrange 4
@@ -121,8 +123,6 @@
 #end
 
 
--- I GOT THIS FAR
-
 
 
 #neweffect "Short Air Dome Nextspell"
@@ -147,6 +147,7 @@
 
 #neweffect "Short Air Dome"
 #copyspell "Murdering Winter"
+#hiddenench 1
 #fixeddurationenchantment 1
 #effect 10086
 #provrange 4
@@ -210,6 +211,7 @@
 
 
 #neweffect "Short Fire Dome"
+#hiddenench 1
 #copyspell "Murdering Winter"
 #fixeddurationenchantment 1
 #effect 10086
@@ -271,6 +273,7 @@
 
 #neweffect "Short Astral Dome"
 #copyspell "Murdering Winter"
+#hiddenench 1
 #fixeddurationenchantment 1
 #effect 10086
 #provrange 4

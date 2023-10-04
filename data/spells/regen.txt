@@ -193,7 +193,7 @@
 #spec 545275904
 #schools -1
 #aoe 1
-#spelltype 41
+#spelltype 1
 #maxpower 30
 
 #name 64 "Additional Regeneration"

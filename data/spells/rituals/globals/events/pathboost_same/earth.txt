@@ -1,5 +1,6 @@
 #neweventset "Pathboosts samepath earth"
 #scaleparam "req_domchance" 1.0
+#details "There is a {SCALEAMT-req_domchance-1}% chance per point of dominion to pick a random level 1-4 earth mage in each friendly province. Success boosts the mage's earth path by 1 permanently."
 
 #end
 

@@ -10,7 +10,7 @@
 #verb "Thunderous"
 
 #moduledescr "SUBJECT may unexpectedly be struck by a huge bolt of lightning."
-#moduledetails "Affected commanders are forced into a battle in which they have a 26AN thunder strike cast on them once. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they have a 26AN thunder strike cast on them once. Pretenders are unaffected by this spell."
 
 #usefixedunitid 562
 #allowedunitmod "Offensive Action Thunder Strike"

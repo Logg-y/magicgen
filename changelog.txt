@@ -12,7 +12,11 @@ Redid scaling so most things aren't quadratic any more, but instead use an expon
 Nerfed many offensive field wide effects.
 Fixed an oversight which caused spells with "foreign" secondary effects (those where the spell's normal effect and the secondary's path preferences have no overlap) to to never generate at all, regardless of the generation setting.
 Nerfed certain offensive fast casting modifiers.
+Reduced the maximum allowed aoe on offensive additional effects.
+Cloudification of offensive MRN effects now offers an easy MR check as well. Passing either will negate the effect.
+Nerfed many "additional" buff effects. In general the MR checks are now 4 "easier" to pass (MRNH->regular, MRN->easy, etc).
 Increased the default foreign secondary effect chances from 10 to 15%.
+Added option that prevents army wide effects from generating.
 
 
 v3.1.10

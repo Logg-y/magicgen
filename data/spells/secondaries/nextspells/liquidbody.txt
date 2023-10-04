@@ -31,6 +31,40 @@
 
 #end
 
+#neweffect "Liquidbody Secondary mrne"
+#effect 10
+#damage 2680059592704
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10054
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Liquid Form"
+#name 2 "$Additional$ Liquid Form"
+#name 4 "$Additional$ Liquid Form"
+#name 8 "$Additional$ Liquid Form"
+#name 16 "$Additional$ Liquid Form"
+#name 32 "$Additional$ Liquid Form"
+#name 64 "$Additional$ Liquid Form"
+#name 128 "$Additional$ Liquid Form"
+#name 256 "$Additional$ Liquid Form"
+
+#end
+
+
 #neweffect "Liquidbody Secondary mrnh"
 #effect 10
 #damage 2680059592704

@@ -23,7 +23,7 @@
 #end
 
 #neweffect "Smite Death Decay"
-#effect 109
+#effect 2
 #damage 10
 #spec 1152921504615256192
 #range 5020

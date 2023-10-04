@@ -31,6 +31,39 @@
 
 #end
 
+#neweffect "Temparmour Secondary mrne"
+#effect 10
+#damage 64
+#spec 29376512
+#schools -1
+
+-- evo-like, battlefield allowed, scale aoe
+#spelltype 2
+
+#aoe 1
+#power 0
+#maxpower 30
+#pathlevel 1
+#explspr 10058
+#sound 16
+#fatiguecost 10
+#range 5020
+
+#paths 129
+#secondarypaths 1
+
+#name 1 "$Additional$ Strengthened Armour"
+#name 2 "$Additional$ Strengthened Armour"
+#name 4 "$Additional$ Strengthened Armour"
+#name 8 "$Additional$ Strengthened Armour"
+#name 16 "$Additional$ Strengthened Armour"
+#name 32 "$Additional$ Strengthened Armour"
+#name 64 "$Additional$ Strengthened Armour"
+#name 128 "$Additional$ Strengthened Armour"
+#name 256 "$Additional$ Strengthened Armour"
+
+#end
+
 #neweffect "Temparmour Secondary mrnh"
 #effect 10
 #damage 64

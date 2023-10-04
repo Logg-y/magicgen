@@ -1,4 +1,4 @@
-#newsecondary "Fearbuff Secondary mrn"
+#newsecondary "Fearbuff Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -27,14 +27,14 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Fearbuff Secondary mrn"
+#nextspell "Fearbuff Secondary mrne"
 
 #descr "This spell may also make those it affects frighten nearby enemies."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
 
 #end
 
-#newsecondary "Fearbuff Secondary mrnh"
+#newsecondary "Fearbuff Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -62,8 +62,8 @@
 #scalingaoelimit 1.5
 
 
-#nextspell "Fearbuff Secondary mrnh"
+#nextspell "Fearbuff Secondary mrn"
 
 #descr "This spell may also make those it affects frighten nearby enemies."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain +5 fear for the remainder of the battle."
 #end

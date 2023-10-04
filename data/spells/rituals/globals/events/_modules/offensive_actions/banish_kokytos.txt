@@ -15,7 +15,7 @@
 #verb "Misled"
 
 #moduledescr "SUBJECT may suddenly find themselves lost in Kokytos."
-#moduledetails "Affected commanders become banished to Kokytos. Pretenders are unaffected by this spell."
+#details "Affected commanders become banished to Kokytos. Pretenders are unaffected by this spell."
 
 #end
 

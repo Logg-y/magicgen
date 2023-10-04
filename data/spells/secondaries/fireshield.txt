@@ -1,4 +1,4 @@
-#newsecondary "Fireshield Secondary mrn"
+#newsecondary "Fireshield Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -29,14 +29,14 @@
 #scalingaoelimit 2.0
 
 
-#nextspell "Fireshield Secondary mrn"
+#nextspell "Fireshield Secondary mrne"
 
 #descr "This spell may also surround those it affects in a barrier of flames."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
 
 #end
 
-#newsecondary "Fireshield Secondary mrng"
+#newsecondary "Fireshield Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -67,8 +67,8 @@
 #scalingaoelimit 1.5
 
 
-#nextspell "Fireshield Secondary mrnh"
+#nextspell "Fireshield Secondary mrn"
 
 #descr "This spell may also surround those it affects in a barrier of flames."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain fire shield: those striking in melee take 9 AP fire dmg (increased by +1 per extra fire magic level, reduced by weapon length)."
 #end

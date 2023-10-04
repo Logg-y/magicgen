@@ -11,10 +11,10 @@
 #verb "Poisonous"
 
 #scaleparam "poison" 1
-#modulebasescale 5
+
 
 #moduledescr "SUBJECT may be bitten by some kind of poisonous creature."
-#moduledetails "Affected commanders suffer SCALEAMT AN poison damage. Pretenders are unaffected by this spell."
+#details "Affected commanders suffer {SCALEAMT-poison-5} AN poison damage. Pretenders are unaffected by this spell."
 
 
 #end

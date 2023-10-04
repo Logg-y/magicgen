@@ -4,8 +4,8 @@
 #spec 8404992+4096
 #schools -1
 #paths -1
--- evo, scale aoe
-#spelltype 34
+-- evo
+#spelltype 2
 #aoe 0
 
 #power 0
@@ -28,8 +28,8 @@
 #spec 8404992
 #schools -1
 #paths -1
--- evo, scale aoe
-#spelltype 34
+-- evo
+#spelltype 2
 #aoe 0
 
 #power 0

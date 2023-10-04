@@ -2,7 +2,7 @@
 #minpowerlevel -1
 #maxpowerlevel 4
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -16,9 +16,9 @@
 #textrepl "SUBJECT" "Blood hunters"
 
 #moduledescr "This enchantment affects all those searching for appropriate blood sacrifices."
-#moduledetails "Every turn, each province makes three checks for a blood hunting commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province makes three checks for a blood hunting commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

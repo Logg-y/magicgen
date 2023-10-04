@@ -5,7 +5,7 @@
 -- any
 #spelltype 0
 
-#power -2
+#power -3
 #pathlevel 0
 
 #reqdamaging 1
@@ -41,7 +41,7 @@
 
 #reqdamaging 1
 
-#power -6
+#power -4
 
 #mult fatiguecost 0.33
 #req fatiguecost > 15
@@ -72,7 +72,7 @@
 #reqdamaging 1
 #req flightspr <= -1
 
-#power -8
+#power -6
 
 #mult fatiguecost 0.3
 #req fatiguecost > 15
@@ -103,7 +103,7 @@
 #aispellmod 120
 #pathlevel 2
 
-#power -10
+#power -8
 #reqdamaging 1
 
 #mult fatiguecost 0.05

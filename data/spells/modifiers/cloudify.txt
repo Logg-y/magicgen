@@ -1,4 +1,6 @@
-#newmodifier "Cloud"
+#newmodifier "Cloud for non-MRN"
+
+#req spec !& 17592202825728
 
 -- evo
 #spelltype 2
@@ -59,6 +61,75 @@
 
 #descr "This spell forms a cloud on the battlefield and all those within it are rapidly subjected to the spell's effects."
 
+#end
+
+
+#newmodifier "Cloud for MRN"
+
+#req spec !& 17592186044416
+#req spec !& 16777216
+#req spec & 4096
+#spec 16777216
+
+-- evo
+#spelltype 2
+
+#power -2
+#effect 4000
+
+#aispellmod 175
+
+#givecloudsfx 1
+
+#req effect != 2
+#req effect != 3
+#req effect != 103
+#req effect != 104
+#req effect != 105
+#req effect != 106
+#req effect != 107
+#req effect != 109
+#req effect != 122
+#req effect != 139
+#req effect != 142
+#req effect != 74
+#req effect != 73
+#req effect != 75
+#req effect != 96
+#req effect != 109
+-- chain lightning
+#req effect != 134
+#req effect < 1000
+-- not magic duel
+#req effect != 27
+-- poison
+#req effect != 7
+#req effect != 24
+#req effect != 32
+#req effect != 33
+#req effect != 56
+
+-- encase in ice cloud gets pretty problematic in terms of no save tarpit potential
+#req effect < 600
+
+#req range > 0
+
+-- enslave and charm effects can crash the game in clouds
+-- specifically when the caster becomes invalid when the spell is still in effect, this may also be a concern with projectile-ified versions if they ever happen
+#req effect != 28
+#req effect != 29
+
+-- stream of life becomes much much more dangerous
+#req effect != 72
+
+#skipchance 10
+
+#req nonscalingaoe < 650
+-- not ritual
+#req spelltype !& 4
+
+#descr "This spell forms a cloud on the battlefield and all those within it are rapidly subjected to the spell's effects."
+#details "Creatures in the cloud make both a regular and easy MR check. Succeeding at either negates the effect."
 #end
 
 

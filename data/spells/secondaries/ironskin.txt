@@ -1,4 +1,4 @@
-#newsecondary "Ironskin Secondary mrn"
+#newsecondary "Ironskin Secondary mrne"
 
 -- buff only
 #spelltype 1
@@ -29,14 +29,14 @@
 #scalingaoelimit 1.5
 
 
-#nextspell "Ironskin Secondary mrn"
+#nextspell "Ironskin Secondary mrne"
 
 #descr "This spell may also turn the skin of those it affects to iron, making them more resistant to physical damage. This does however make them more vulnerable to shocks."
-#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
+#details "Creatures in the area when the spell is cast make an easy MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
 #end
 
-#newsecondary "Ironskin Secondary mrnh"
+#newsecondary "Ironskin Secondary mrn"
 
 -- buff only
 #spelltype 1
@@ -67,9 +67,9 @@
 #scalingaoelimit 1.2
 
 
-#nextspell "Ironskin Secondary mrnh"
+#nextspell "Ironskin Secondary mrn"
 
 #descr "This spell may also turn the skin of those it affects to iron, making them more resistant to physical damage. This does however make them more vulnerable to shocks."
-#details "Creatures in the area when the spell is cast make a hard MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
+#details "Creatures in the area when the spell is cast make an MR check. Those that fail to resist gain ironskin: Grants natural protection 20, or +3 if already 18 or higher. Also incurs susceptibility to Shock 5."
 
 #end

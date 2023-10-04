@@ -12,11 +12,11 @@
 #noun "Unrest"
 #verb "Enraging"
 
-#scaleparam "unrest" 3
-#modulebasescale 5
+#scaleparam "unrest" 1.0
+
 
 #moduledescr "The populace of affected provinces becomes enraged and disorderly."
-#moduledetails "Increases the unrest of the province by SCALEAMT."
+#details "Increases the unrest of the province by {SCALEAMT-unrest-5}."
 
 
 #end

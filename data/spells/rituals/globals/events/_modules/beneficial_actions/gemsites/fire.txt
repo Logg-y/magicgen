@@ -11,7 +11,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may discover sites across the land touched by fiery power."
-#moduledetails "Adds a site providing 1 fire gem to affected land provinces."
+#details "Adds a site providing 1 fire gem to affected land provinces."
 
 #end
 

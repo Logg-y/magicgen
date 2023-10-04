@@ -16,7 +16,7 @@
 #verb "Tumultuous"
 
 #moduledescr "The populace of affected provinces becomes filled with chaos and turmoil."
-#moduledetails "Increases the turmoil scale of the province by 1."
+#details "Increases the turmoil scale of the province by 1."
 
 
 #end

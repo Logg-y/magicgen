@@ -10,7 +10,7 @@
 #verb "Disintegrating"
 
 #moduledescr "SUBJECT may unexpectedly be subjected to vile magic that immediately disintegrates their bodies."
-#moduledetails "Affected commanders are be forced into a battle, where they become the target of Disintegrate, inflicting 999AN magical internal damage if they fail a MR check. Pretenders are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they become the target of Disintegrate, inflicting 999AN magical internal damage if they fail a MR check. Pretenders are unaffected by this spell."
 
 #usefixedunitid 676
 #allowedunitmod "Offensive Action Disintegrate"

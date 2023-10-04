@@ -191,7 +191,7 @@ class UnitMod(object):
             realeventset = utils.eventsets[self.eventset]
             # actualpowerlvl is 0 in all current cases - because commander spells do not have any research level
             # scaling that is not done through secondary effects
-            eventsetdata = realeventset.formatdata(spelleffect, spell, 0, None, actualpowerlvl)
+            eventsetdata = realeventset.formatdata(spelleffect, spell, None, actualpowerlvl)
             if eventsetdata is None:
                 return None
             out = eventsetdata + "\n" + out

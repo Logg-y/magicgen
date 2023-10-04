@@ -23,6 +23,7 @@
 
 #neweffect "Adventure Site Dummy"
 #copyspell "Record of Creation"
+#hiddenench 1
 #effect 10083
 #damage -1
 #spec 8388608

@@ -403,7 +403,8 @@ def generateUnit(parentobj, numtogenerate, spell, secondaryeffect, actualpowerlv
                             firstspell.details = firstspell.details.replace("SINGLERANDOMCREATURENAME",
                                                                             realunitmod.lastunitname, 1)
                         else:
-                            firstspell.details += f"The creature for this spell is always a {realunitmod.lastunitname}."
+                            firstspell.details += f" The creature for this spell is always a {realunitmod.lastunitname}."
+                            firstspell.details = firstspell.details.strip()
 
                     generateokay = True
                 else:

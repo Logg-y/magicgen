@@ -9,7 +9,7 @@
 #verb "Transforming"
 
 #moduledescr "SUBJECT may suddenly find themselves permanently transformed into a magical beast."
-#moduledetails "Affected commanders may be transformed into a magical monster. This can only happen in underwater provinces. Pretenders are unaffected by this spell."
+#details "Affected commanders may be transformed into a magical monster. This can only happen in underwater provinces. Pretenders are unaffected by this spell."
 
 #selectunitmod "Freespawn Summons lesser UW"
 

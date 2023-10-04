@@ -29,7 +29,8 @@
 
 #namecond effectiveaoe < 666 8 "NAMEPREFIX Sharpened Weapons"
 
-#namecond effectiveaoe == 666 8 "NAMEPREFIX Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Legion of Sharpness"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Army of Sharpness"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 
@@ -74,7 +75,8 @@
 
 #namecond effectiveaoe < 666 8 "NAMEPREFIX Sharpened Weapons"
 
-#namecond effectiveaoe == 666 8 "NAMEPREFIX Sharpened Weapons"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Army of Sharpness"
+#namecond effectiveaoe == 666 8 "NAMEPREFIX Legion of Sharpness"
 
 #details "All melee attacks from affected creatures inflict AP damage, if they did not already."
 

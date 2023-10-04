@@ -11,7 +11,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may find that plants and fields have become enchanted with magical power."
-#moduledetails "Adds a site providing 1 nature gem to affected land provinces."
+#details "Adds a site providing 1 nature gem to affected land provinces."
 
 #end
 

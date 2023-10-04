@@ -14,7 +14,7 @@
 #verb "Pestilent"
 
 #moduledescr "SUBJECT may be affected by malign magic and become diseased."
-#moduledetails "Affected commanders become diseased. Pretenders are unaffected by this spell."
+#details "Affected commanders become diseased. Pretenders are unaffected by this spell."
 
 
 #end

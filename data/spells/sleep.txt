@@ -58,10 +58,10 @@
 #aoe 666
 #power 7
 #maxpower 7
-#pathlevel 6
+#pathlevel 7
 #explspr 10016
 #sound 29
-#fatiguecost 200
+#fatiguecost 300
 #precision 100
 #range 100
 
@@ -98,7 +98,7 @@
 #aoe 666
 #power 9
 #maxpower 9
-#pathlevel 6
+#pathlevel 7
 #explspr 10016
 #sound 29
 #fatiguecost 500

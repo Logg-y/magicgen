@@ -2,7 +2,7 @@
 #minpowerlevel -3
 #maxpowerlevel 2
 
-#scaleparam "req_rare" 5
+#scaleparam "req_rare" 1.0
 
 
 #modulegroup "Offensive Global Condition"
@@ -16,9 +16,9 @@
 #textrepl "SUBJECT" "Patrolling commanders"
 
 #moduledescr "This enchantment affects commanders that are searching and patrolling their lands for spies and uprisings."
-#moduledetails "Every turn, each province has five checks for a patrolling commander, each with a SCALEAMT percent chance of occuring."
+#details "Every turn, each province has five checks for a patrolling commander, each with a {SCALEAMT-req_rare-5} percent chance of occuring."
 
-#modulebasescale 5
+
 
 #end
 

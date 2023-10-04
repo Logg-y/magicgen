@@ -1,5 +1,7 @@
 #neweventset "Extra Wall Defenders Single"
 
+#details "This spell lasts 1 month, plus one month per additional gem spent. The magical defenders begin fort storming battles on the walls, and will stay there whilst attacking with their ranged weapons. This spell summons 5 creatures, multiplied by the fort defender value, which roughly corresponds to the upgrade level of the fort. The effect ends prematurely if the province is lost or the caster is killed. If this spell is cast on a province before it is besieged, any sieger will be aware of its presence. This spell does not function if cast on the same turn as a storm. Fails if there are already 8 magic sites in the province."
+
 #magicsite "Extra Wall Defenders Single"
 
 #end

@@ -10,7 +10,7 @@
 #verb "Liquifying"
 
 #moduledescr "SUBJECT may unexpectedly be affected by magic that causes them to dissolve into a pool of liquid."
-#moduledetails "Affected commanders are forced into a battle in which they are the target of an attack that instantly kills, unless an easy magic resistance check is made. Should they survive, the victim becomes crippled unless they succeed a difficult magic resistance check. Pretenders are unaffected by this spell."
+#details "Affected commanders are forced into a battle in which they are the target of an attack that instantly kills, unless an easy magic resistance check is made. Should they survive, the victim becomes crippled unless they succeed a difficult magic resistance check. Pretenders are unaffected by this spell."
 
 #usefixedunitid 449
 #allowedunitmod "Offensive Action Liquify"

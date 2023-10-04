@@ -10,7 +10,7 @@
 #verb "Bloody"
 
 #moduledescr "SUBJECT may suddenly begin bleeding severely."
-#moduledetails "Affected commanders are be forced into a battle, where they begin bleeding if they fail to resist. Pretenders, undead and inanimates are unaffected by this spell."
+#details "Affected commanders are be forced into a battle, where they begin bleeding if they fail to resist. Pretenders, undead and inanimates are unaffected by this spell."
 
 #usefixedunitid 303
 #allowedunitmod "Offensive Action Bleed"

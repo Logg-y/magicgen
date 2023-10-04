@@ -10,9 +10,9 @@ from Services import fileparserutils
 
 secondary_params_int = ["requiredcodes", "usefixedunitid", "desiredmontagsize", "restrictunitstospellpaths",
                         "mincreaturepower", "maxcreaturepower", "secondaryeffectchance", "minpowerlevel",
-                        "maxpowerlevel", "modulebasescale", "makedummymonster", "moduleskipchance",
+                        "maxpowerlevel", "makedummymonster", "moduleskipchance",
                         "setspelldamage", "makebattledummymonster", "fixedcreaturepower", "uniquemodule"]
-secondary_params_str = ["modulegroup", "moduledescr", "moduledetails", "magicsite", "unitmodlist"]
+secondary_params_str = ["modulegroup", "moduledescr", "details", "magicsite", "unitmodlist"]
 secondary_params_float = []
 
 
@@ -77,12 +77,6 @@ def readEventSet(fp):
                     sorted = True
                     continue
 
-                if line.startswith("#scaleparam_mult"):
-                    m = re.match('#scaleparam_mult\\W+"(.*)"\\W+?([0-9-.]*)', line)
-                    if m is None:
-                        raise ParseError(f"{fp} line {lineno}: bad #scaleparam_mult")
-                    curreff.scaleparammults[m.groups()[0]] = float(m.groups()[1])
-                    continue
 
                 if line.startswith("#scaleparam"):
                     m = re.match('#scaleparam\\W+"(.*)"\\W+?([0-9-.]*)', line)

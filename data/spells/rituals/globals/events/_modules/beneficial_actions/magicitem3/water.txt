@@ -12,7 +12,7 @@
 --#verb "Disastrous"
 
 #moduledescr "SUBJECT may stumble upon magical items floating in rivers, puddles and other bodies of water."
-#moduledetails "Grants a random non-national construction 0-6 item."
+#details "Grants a random non-national construction 0-6 item."
 
 
 #end

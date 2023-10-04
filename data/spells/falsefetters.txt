@@ -66,11 +66,11 @@
 -- 
 
 #aoe 666
-#power 7
-#pathlevel 4
+#power 8
+#pathlevel 7
 #explspr 10045
 #sound 42
-#fatiguecost 200
+#fatiguecost 300
 #range 5020
 
 #paths 130
@@ -103,7 +103,7 @@
 
 
 #pathperresearch 0.4
-#maxpower 7
+#maxpower 8
 #end
 
 
@@ -121,10 +121,10 @@
 
 #aoe 666
 #power 9
-#pathlevel 5
+#pathlevel 7
 #explspr 10045
 #sound 42
-#fatiguecost 300
+#fatiguecost 400
 #range 5020
 #skipchance 70
 
