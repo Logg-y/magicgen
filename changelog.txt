@@ -5,6 +5,11 @@ NOTE TO SELF: USE THE GDOC FOR TODO LIST
 
 To test:
 
+v3.1.12
+
+Removed some problematic summon modifiers that added new weapons or fundamentally changed a unit (eg giving mind blast, which made melee centric summons stand at the back and shoot all day instead of what they normally do).
+Increased the cost of adding soul leech.
+
 
 v3.1.11
 
