@@ -77,7 +77,7 @@
 #newunitmod "Summon Throw Lightning"
 #shockres 6
 #nameprefix "Stormthrowing"
-#addweapon 243
+#addweapon 584
 #req trample <= 0
 #descr "This particular CREATURE is able to hurl balls of lightning at enemies."
 #end

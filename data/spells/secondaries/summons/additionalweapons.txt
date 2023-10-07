@@ -112,50 +112,6 @@
 
 #end
 
-#newsecondary "Summon Mind Blast battle"
-#req siegepatrolchaff < 1
-
-#req effect != 10001
-#req effect != 10021
-#req effect != 10050
-
-#anysummon 1
-
-#paths 16
-#power -1
-
--- not montag
-#req damage > 0
-#fatiguecostpereffect 30
-
-#unitmod "Summon Mind Blast"
-#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
-#details "Summoned creatures gain a natural mind blast attack. It does not affect mindless creatures, has a range of 100, and inflicts 10 points of paralysis damage if a MR check is failed. It has 5 ammunition."
-
-#end
-
-#newsecondary "Summon Mind Blast ritual"
-#req siegepatrolchaff < 1
-
-#anysummon 1
-
-#paths 16
-#power -1
-
-#req effect != 1
-#req effect != 10038
-#req effect != 10050
-#req effect != 21
-
--- not montag
-#req damage > 0
-#fatiguecostpereffect 60
-
-#unitmod "Summon Mind Blast"
-#descr "The summoned %creature% %is% able to overload the minds of %its% enemies."
-#details "Summoned creatures gain a natural mind blast attack. It does not affect mindless creatures, has a range of 100, and inflicts 10 points of paralysis damage if a MR check is failed. It has 5 ammunition."
-
-#end
 
 #newsecondary "Summon Frost Breath battle"
 #req siegepatrolchaff < 1
@@ -226,99 +182,6 @@
 
 #end
 
-#newsecondary "Summon Gaze of Death battle"
-#req siegepatrolchaff < 1
-
-#req effect != 10001
-#req effect != 10021
-
-#anysummon 1
-
-#paths 16
-#power -3
-
--- not montag
-#req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 150
-
-#unitmod "Summon Gaze of Death"
-#descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
-#details "Summoned creatures gain a gaze of death attack. It is a beam weapon with a range of 15, and AoE of 20. It inflicts 10 AN damage to those that fail a MR check, and has 10 ammunition."
-
-#end
-
-#newsecondary "Summon Gaze of Death ritual"
-#req siegepatrolchaff < 1
-
-#req effect != 1
-#req effect != 10050
-#req effect != 10038
-#req effect != 21
-
-#anysummon 1
-
-#paths 16
-#power -3
-
--- not montag
-#req damage > 0
-#mult fatiguecost 1.4
-#fatiguecostpereffect 500
-
-#unitmod "Summon Gaze of Death"
-#descr "The summoned %creature% %is% able to slay masses of enemies with %its% very %gaze%."
-#details "Summoned creatures gain a gaze of death attack. It is a beam weapon with a range of 15, and AoE of 20. It inflicts 10 AN damage to those that fail a MR check, and has 10 ammunition."
-
-#end
-
-#newsecondary "Summon Elf Shot battle"
-#req siegepatrolchaff < 1
-
-#req effect != 10001
-#req effect != 10021
-
-#anysummon 1
-
-#paths 64
-#power 0
-
-#req effect != 10050
-
--- not montag
-#req damage > 0
-#fatiguecostpereffect 5
-
-#unitmod "Summon Elf Shot"
-
-#descr "The summoned %creature% %is% able to conjure green fey blasts that fatigue those they hit."
-#details "Summoned creatures gain an elf shot attack. It is a ranged weapon that inflicts 100 fatigue damage on a failed MR check, has 35 range and 10 ammunition."
-#end
-
-#newsecondary "Summon Elf Shot ritual"
-#req siegepatrolchaff < 1
-
-#req effect != 1
-#req effect != 10050
-#req effect != 10038
-#req effect != 21
-
-#anysummon 1
-
-#paths 64
-#power 0
-
-
--- not montag
-#req damage > 0
-#fatiguecostpereffect 12
-
-#unitmod "Summon Elf Shot"
-
-#descr "The summoned %creature% %is% able to conjure green fey blasts that fatigue those they hit."
-#details "Summoned creatures gain an elf shot attack. It is a ranged weapon that inflicts 100 fatigue damage on a failed MR check, has 35 range and 10 ammunition."
-#end
-
 #newsecondary "Summon Flame Strike"
 #req siegepatrolchaff < 1
 
@@ -350,60 +213,13 @@
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.4
+#mult fatiguecost 1.2
 #req trample <= 0
 
 #unitmod "Summon Throw Lightning"
 
 #descr "The summoned %creature% %is% able to throw bolts of lightning at enemies."
-#details "Summoned creatures gain a lightning attack. It is a ranged weapon that inflicts the user's Strength in AN shock damage on a single target. It has 35 range and 10 ammunition, may be fired underwater, and has +3 precision. Those in the square where the lightning lands take 1 AN capped shock damage. The summoned creature gains +6 shock resistance, or +5 it it had none originally."
-#end
-
-#newsecondary "Summon Plague Breath battle"
-#req siegepatrolchaff < 1
-
-#req effect != 10001
-#req effect != 10021
-
-#anysummon 1
-
-#paths 32
-#power -2
-
-#set ainocast 1
-
--- not montag
-#req damage > 0
-#mult fatiguecost 1.2
-#fatiguecostpereffect 100
-
-#unitmod "Summon Plague Breath"
-#descr "The summoned %creature% %is% able to breathe ARTICLE massive %blast% of plagued air at enemies."
-#details "Summoned creatures gain a plague breath attack. It is a beam weapon with a range of (Strength/2), and AoE of 10. It inflicts disease on those that fail a MR check, and has 5 ammunition. Additionally, those in the area of effect suffer a fear effect. The summoned creature gains 100% disease resistance to protect itself from its own breath."
-
-#end
-
-#newsecondary "Summon Plague Breath ritual"
-#req siegepatrolchaff < 1
-
-#req effect != 1
-#req effect != 10050
-#req effect != 10038
-#req effect != 21
-
-#anysummon 1
-
-#paths 32
-#power -2
-
--- not montag
-#req damage > 0
-#mult fatiguecost 1.2
-#fatiguecostpereffect 400
-
-#unitmod "Summon Plague Breath"
-#details "Summoned creatures gain a plague breath attack. It is a beam weapon with a range of (Strength/2), and AoE of 10. It inflicts disease on those that fail a MR check, and has 5 ammunition. Additionally, those in the area of effect suffer a fear effect. The summoned creature gains 100% disease resistance to protect itself from its own breath."
-
+#details "Summoned creatures gain a lightning attack. It is a ranged weapon that inflicts the user's Strength in AN shock damage on a single target. It has 35 range and 3 ammunition, may be fired underwater, and has +3 precision. Those in the square where the lightning lands take 1 AN capped shock damage. The summoned creature gains +6 shock resistance, or +5 it it had none originally."
 #end
 
 #newsecondary "Summon Web Spit"
@@ -433,11 +249,11 @@
 #anysummon 1
 
 #paths 32
-#power -1
+#power -2
 
 -- not montag
 #req damage > 0
-#mult fatiguecost 1.9
+#mult fatiguecost 2.5
 #req trample <= 0
 
 #unitmod "Summon Soul Leech"
@@ -446,27 +262,6 @@
 #details "Summoned creatures gain a soul leech attack. It is a melee weapon that inflicts the user's Strength as AN life drain damage with an AoE of 1. Victims have a MR check to avoid the damage. Mindless creatures are unaffected. This weapon cannot be repelled nor used to repel."
 #end
 
-
-#newsecondary "Summon Theft of Life"
-#req siegepatrolchaff < 1
-
-#anysummon 1
-
-#paths 32
-#power -2
-
-#req effect != 10050
-
--- not montag
-#req damage > 0
-#mult fatiguecost 2.2
-#req trample <= 0
-
-#unitmod "Summon Theft of Life"
-
-#descr "The summoned %creature% %is% able to leech life from enemies over long distances."
-#details "Summoned creatures gain a theft of life attack. It is a range weapon that inflicts the user's Strength as AN life drain damage with an AoE of 1, with perfect precision. Victims have a MR check to avoid the damage. Mindless creatures are unaffected. This weapon has 30 ammunition, and will be used in melee too."
-#end
 
 #newsecondary "Summon Drake Fire ritual"
 #req siegepatrolchaff < 1
@@ -655,7 +450,7 @@
 #unitmod "Summon Corrosive Spit"
 
 #descr "The summoned %creature% %is% able to spit corrosive fluid."
-#details "Summoned creatures gain a corrosive spit attack. It is a ranged weapon which hits one target, has range equal to the user's Strength, and inflicts (Strength - 5) nonmagical AP acid damage. Additionally, all creatures in the hit square suffer rusted equipment."
+#details "Summoned creatures gain a corrosive spit attack. It is a ranged weapon which hits one target, has range equal to the user's Strength, and inflicts (Strength - 5) nonmagical AP acid damage with 5 ammunition. Additionally, all creatures in the hit square suffer rusted equipment."
 #end
 
 
